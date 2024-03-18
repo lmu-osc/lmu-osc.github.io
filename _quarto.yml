@@ -4,11 +4,49 @@ project:
 website:
   title: "LMU OSC Resources"
   favicon: assets/img/lmu_osc_logo.jpg
+  reader-mode: true
+  search: true
+  page-navigation: true
+  page-footer: "Copyright LMU Open Science Center, 2024"
+  repo-url: https://github.com/lmu-osc/resources
+  repo-actions: [edit, issue]
   navbar:
     left:
       - href: index.qmd
         text: Home
       - about.qmd
+      - sidebar:rtutorials
+      - sidebar:gittutorials
+      - sidebar:quartotutorials
+
+      
+  sidebar:
+    - id: rtutorials
+      title: "R Tutorials"
+      style: "docked"
+      background: light
+      collapse-level: 2
+      contents: 
+        - qmd_one.qmd
+        - qmd_two.qmd
+
+    - id: gittutorials
+      title: "Git Tutorials"
+      style: "docked"
+      background: light
+      collapse-level: 2
+      contents: 
+        - qmd_one.qmd
+        - qmd_two.qmd
+        
+    - id: quartotutorials
+      title: "Quarto Tutorials"
+      style: "docked"
+      background: light
+      collapse-level: 2
+      contents: 
+        - qmd_one.qmd
+        - qmd_two.qmd
 
 format:
   html:
