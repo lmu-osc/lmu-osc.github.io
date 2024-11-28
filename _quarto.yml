@@ -1,5 +1,6 @@
 project:
   type: website
+  pre-render: curl https://raw.githubusercontent.com/lmu-osc/branding-resources/refs/heads/main/lmu-osc-custom.scss -o lmu-osc-custom.scss
 
 website:
   title: "LMU Open Science Center"
@@ -51,8 +52,11 @@ website:
 
 format:
   html:
-    theme: cosmo
-    css: styles.css
+    theme:
+      - cosmo
+      - custom.scss
+    css: 
+      - https://raw.githubusercontent.com/lmu-osc/branding-resources/refs/heads/main/styles.css
     toc: true
 
 
