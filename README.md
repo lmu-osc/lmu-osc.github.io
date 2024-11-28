@@ -1,8 +1,8 @@
-# LMU Open Science Center Resources Page
+# LMU Open Science Center Home Page
 
 ## Overview
 
-This repository hosts the OSC's Resources webpage where content from workshops, other websites, and related information is organized/linked to.
+This repository hosts the OSC's home webpage where content from workshops, other websites, and related information is organized/linked to.
 
 ## Updating this Page
 
@@ -17,7 +17,7 @@ High-level: the GitHub Action is configured to automatically rebuild and redeplo
 If you don't already have the repository on your system, clone a copy.
 
 ```
-git clone git@github.com:lmu-osc/resources.git
+git clone git@github.com:lmu-osc/lmu-osc.github.io.git
 ```
 
 If you cloned a while ago or your copy is otherwise likely to be behind the code on GitHub, you'll want to pull the changes to your computer. (This is equivalent to fetching the changes *and* merging them.)

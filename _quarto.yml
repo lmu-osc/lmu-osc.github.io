@@ -2,13 +2,13 @@ project:
   type: website
 
 website:
-  title: "LMU OSC Resources"
+  title: "LMU Open Science Center"
   favicon: assets/img/lmu_osc_logo.jpg
   reader-mode: true
   search: true
   page-navigation: true
   page-footer: "Copyright LMU Open Science Center, 2024"
-  repo-url: https://github.com/lmu-osc/resources
+  repo-url: https://github.com/lmu-osc/lmu-osc.github.io
   repo-actions: [edit, issue]
 
   navbar:
