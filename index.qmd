@@ -1,7 +1,10 @@
 ---
 title: "LMU Open Science Center"
+page-navigation: false
+toc: false
 listing:
   type: grid
+  grid-columns: 4
   grid-item-align: center
   grid-item-border: true
   max-description-length: 175
@@ -30,7 +33,7 @@ include-in-header:
       <style>
       .quarto-title-block .quarto-title-banner {
         background-position-y: center;
-        height: 300px;
+        height: 400px;
       }
       </style>
 ---
@@ -44,8 +47,4 @@ include-in-header:
 </style>
 ```
 
-This is a Quarto website.
-
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
-
-Example text change
+## Our Tutorials
