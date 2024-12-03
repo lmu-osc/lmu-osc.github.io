@@ -1,5 +1,23 @@
 ---
 title: "LMU Open Science Center"
+listing:
+  type: grid
+  grid-item-align: center
+  grid-item-border: false
+  max-description-length: 175
+  date-format: long
+  categories: true
+  contents: 
+    - tutorials
+    # - path: "www.google.com"
+    #   image: "../assets/img/lmu_osc_logo.jpg"
+    #   title: "Google"
+    #   description: "Search the web"
+    #   date: "2021-01-01"
+    #   categories: 
+    #     - search
+  image-placeholder: "../assets/img/lmu_osc_logo.jpg"
+  
 ---
 
 This is a Quarto website.
