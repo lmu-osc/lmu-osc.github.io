@@ -17,6 +17,13 @@ website:
       - href: index.qmd
         text: Home
       - about.qmd
+      - href: members.qmd
+        text: Members
+      - href: events.qmd
+        text: Events
+      - href: news.qmd
+        text: News
+    right: 
       - sidebar:rtutorials
       - sidebar:gittutorials
       - sidebar:quartotutorials
