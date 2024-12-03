@@ -24,6 +24,15 @@ format:
       body-width: 1050px
       margin-width: 150px
       gutter-width: 2em
+title-block-banner: "tutorials/images/pupholder.png"
+include-in-header:
+  - text: |
+      <style>
+      .quarto-title-block .quarto-title-banner {
+        background-position-y: center;
+        height: 300px;
+      }
+      </style>
 ---
 
 ```{=html}
