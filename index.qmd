@@ -30,7 +30,7 @@ format:
 <style>
 .card {
 	--bs-card-border-width: 4px !important;
-	--bs-card-border-color: #009933 !important;
+	--bs-card-border-color: rgba(0, 153, 51, 0.3) !important;
 }
 </style>
 ```
