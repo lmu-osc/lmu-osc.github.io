@@ -3,7 +3,7 @@ title: "LMU Open Science Center"
 listing:
   type: grid
   grid-item-align: center
-  grid-item-border: false
+  grid-item-border: true
   max-description-length: 175
   date-format: long
   categories: true
@@ -17,8 +17,23 @@ listing:
     #   categories: 
     #     - search
   image-placeholder: "../assets/img/lmu_osc_logo.jpg"
-  
+format:
+  html:
+    grid:
+      sidebar-width: 100px
+      body-width: 1050px
+      margin-width: 150px
+      gutter-width: 2em
 ---
+
+```{=html}
+<style>
+.card {
+	--bs-card-border-width: 4px !important;
+	--bs-card-border-color: #009933 !important;
+}
+</style>
+```
 
 This is a Quarto website.
 
