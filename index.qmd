@@ -1,9 +1,50 @@
 ---
 title: "LMU Open Science Center"
+page-navigation: false
+toc: false
+listing:
+  type: grid
+  grid-columns: 4
+  grid-item-align: center
+  grid-item-border: true
+  max-description-length: 175
+  date-format: long
+  categories: true
+  contents: 
+    - tutorials
+    # - path: "www.google.com"
+    #   image: "../assets/img/lmu_osc_logo.jpg"
+    #   title: "Google"
+    #   description: "Search the web"
+    #   date: "2021-01-01"
+    #   categories: 
+    #     - search
+  image-placeholder: "../assets/img/lmu_osc_logo.jpg"
+format:
+  html:
+    grid:
+      sidebar-width: 100px
+      body-width: 1050px
+      margin-width: 150px
+      gutter-width: 2em
+title-block-banner: "tutorials/images/pupholder.png"
+include-in-header:
+  - text: |
+      <style>
+      .quarto-title-block .quarto-title-banner {
+        background-position-y: center;
+        height: 400px;
+      }
+      </style>
 ---
 
-This is a Quarto website.
+```{=html}
+<style>
+.card {
+	--bs-card-border-width: 4px !important;
+	--bs-card-border-color: rgba(0, 153, 51, 0.3) !important;
+}
+</style>
+```
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
-
-Example text change
+## Our Tutorials
