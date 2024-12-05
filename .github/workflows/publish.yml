@@ -43,7 +43,6 @@ jobs:
           mkdir -p ~/.ssh
           echo "$SSH_PRIVATE_KEY" > ~/.ssh/lmu_osc_server_gh_action_key
           chmod 600 ~/.ssh/lmu_osc_server_gh_action_key
-          ssh -i ~/.ssh/lmu_osc_server_gh_action_key
           ssh-keyscan -H "$REMOTE_HOSTNAME" >> ~/.ssh/known_hosts
           sshpass -p '$REMOTE_PASSWORD' scp -i ~/.ssh/lmu_osc_server_gh_action_key -r ./* "$REMOTE_USERNAME"@"$REMOTE_HOSTNAME":~/website
 
