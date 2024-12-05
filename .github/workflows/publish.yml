@@ -27,7 +27,8 @@ jobs:
       - name: Push to Remote
         run: |
           pwd
-          ls -a
           git status
+          git branch
+          git checkout gh-pages
           git branch
     
