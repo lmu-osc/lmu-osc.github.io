@@ -1,13 +1,10 @@
 [
   {
-    "objectID": "qmd_two.html",
-    "href": "qmd_two.html",
-    "title": "Another Title",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "LMU Open Science Center",
     "section": "",
-    "text": "Another Title\nHello again",
-    "crumbs": [
-      "Another Title"
-    ]
+    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\nExample text change"
   },
   {
     "objectID": "qmd_one.html",
@@ -17,6 +14,16 @@
     "text": "Hello\nHello this is some more content.\nEven more content.",
     "crumbs": [
       "Hello"
+    ]
+  },
+  {
+    "objectID": "qmd_two.html",
+    "href": "qmd_two.html",
+    "title": "Another Title",
+    "section": "",
+    "text": "Another Title\nHello again",
+    "crumbs": [
+      "Another Title"
     ]
   },
   {
