@@ -29,6 +29,7 @@ jobs:
           REMOTE_USERNAME: ${{ secrets.RemoteUsername }}
           REMOTE_HOSTNAME: ${{ secrets.RemoteHostname }}
           REMOTE_PASSWORD: ${{ secrets.RemotePassword }}
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
         run: |
           pwd
           git status
@@ -36,6 +37,9 @@ jobs:
           git checkout gh-pages
           git branch
           ls -a
+          mkdir -p ~/.ssh
+          echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
           sshpass -p '$REMOTE_PASSWORD' scp -r ./* "$REMOTE_USERNAME"@"$REMOTE_HOSTNAME":~/website
 
     
