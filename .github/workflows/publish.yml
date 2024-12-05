@@ -36,6 +36,6 @@ jobs:
           git checkout gh-pages
           git branch
           ls -a
-          git remote add website_server ssh://$REMOTE_USERNAME@$REMOTE_HOSTNAME:~/website/repo.git
-          sshpass -p '$REMOTE_PASSWORD' git push origin gh-pages
+          sshpass -p '$REMOTE_PASSWORD' scp -r ./* $REMOTE_USERNAME@$REMOTE_HOSTNAME:~/website
+
     
