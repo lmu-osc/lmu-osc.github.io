@@ -38,8 +38,8 @@ jobs:
           git branch
           ls -a
           mkdir -p ~/.ssh
-          echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
+          echo '$SSH_PRIVATE_KEY' > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
-          scp -r ./* "$REMOTE_USERNAME"@"$REMOTE_HOSTNAME":~/website
+          sshpass -p '$REMOTE_PASSWORD' scp -r ./* '$REMOTE_USERNAME'@'$REMOTE_HOSTNAME':~/website
 
     
