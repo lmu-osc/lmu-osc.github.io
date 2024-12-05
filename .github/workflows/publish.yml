@@ -24,6 +24,15 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       
+      - name: Check contents
+        run: |
+            pwd
+            git status
+            git branch
+            git checkout gh-pages
+            git branch
+            ls -a
+            
       - name: Push to Remote
         env:
           REMOTE_USERNAME: ${{ secrets.RemoteUsername }}
@@ -31,16 +40,11 @@ jobs:
           REMOTE_PASSWORD: ${{ secrets.RemotePassword }}
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
         run: |
-          pwd
-          git status
-          git branch
-          git checkout gh-pages
-          git branch
-          ls -a
           mkdir -p ~/.ssh
           echo "$SSH_PRIVATE_KEY" > ~/.ssh/lmu_osc_server_gh_action_key
           chmod 600 ~/.ssh/lmu_osc_server_gh_action_key
+          ssh -i ~/.ssh/lmu_osc_server_gh_action_key
           ssh-keyscan -H "$REMOTE_HOSTNAME" >> ~/.ssh/known_hosts
-          sshpass -p '$REMOTE_PASSWORD' scp -r ./* "$REMOTE_USERNAME"@"$REMOTE_HOSTNAME":~/website
+          sshpass -p '$REMOTE_PASSWORD' scp -i ~/.ssh/lmu_osc_server_gh_action_key -r ./* "$REMOTE_USERNAME"@"$REMOTE_HOSTNAME":~/website
 
     
