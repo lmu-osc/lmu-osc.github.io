@@ -35,7 +35,6 @@ jobs:
           git branch
           git checkout gh-pages
           git branch
-          sudo apt-get install sshpass
-          git remote add origin ssh://$REMOTE_USERNAME@$REMOTE_HOSTNAME:/website/repo.git
+          git remote add website_server ssh://$REMOTE_USERNAME@$REMOTE_HOSTNAME:/website/repo.git
           sshpass -p '$REMOTE_PASSWORD' git push origin gh-pages
     
