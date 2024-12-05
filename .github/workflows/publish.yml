@@ -23,3 +23,11 @@ jobs:
           target: gh-pages
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Push to Remote
+        run: |
+          pwd
+          ls -a
+          git status
+          git branch
+    
