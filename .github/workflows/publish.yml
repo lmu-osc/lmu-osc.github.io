@@ -25,10 +25,17 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       
       - name: Push to Remote
+        env:
+          REMOTE_USERNAME: ${{ secrets.RemoteUsername }}
+          REMOTE_HOSTNAME: ${{ secrets.RemoteHostname }}
+          REMOTE_PASSWORD: ${{ secrets.RemotePassword }}
         run: |
           pwd
           git status
           git branch
           git checkout gh-pages
           git branch
+          sudo apt-get install sshpass
+          git remote add origin ssh://$REMOTE_USERNAME@$REMOTE_HOSTNAME:/website/repo.git
+          sshpass -p '$REMOTE_PASSWORD' git push origin gh-pages
     
