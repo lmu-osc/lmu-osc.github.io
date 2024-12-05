@@ -38,11 +38,9 @@ jobs:
           git branch
           ls -a
           mkdir -p ~/.ssh
-          echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa
-          chmod 600 ~/.ssh/id_rsa
+          echo "$SSH_PRIVATE_KEY" > ~/.ssh/lmu_osc_server_gh_action_key
+          chmod 600 ~/.ssh/lmu_osc_server_gh_action_key
           ssh-keyscan -H "$REMOTE_HOSTNAME" >> ~/.ssh/known_hosts
-          # Test SSH connection first to make sure authentication works
-          ssh -o StrictHostKeyChecking=no -i ~/.ssh/id_rsa "$REMOTE_USERNAME"@"$REMOTE_HOSTNAME" "echo SSH authentication successful"
           sshpass -p '$REMOTE_PASSWORD' scp -r ./* "$REMOTE_USERNAME"@"$REMOTE_HOSTNAME":~/website
 
     
