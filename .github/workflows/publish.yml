@@ -36,6 +36,6 @@ jobs:
           git checkout gh-pages
           git branch
           ls -a
-          sshpass -p '$REMOTE_PASSWORD' scp -r ./* $REMOTE_USERNAME@$REMOTE_HOSTNAME:~/website
+          sshpass -p '$REMOTE_PASSWORD' scp -r ./* "$REMOTE_USERNAME"@"$REMOTE_HOSTNAME":~/website
 
     
