@@ -10,6 +10,8 @@ listing:
   max-description-length: 175
   date-format: long
   categories: true
+  sort:
+    - "tutorial-home-order"
   contents: 
     - tutorials
     # - path: "www.google.com"
@@ -25,7 +27,7 @@ format:
     grid:
       sidebar-width: 100px
       body-width: 1050px
-      margin-width: 150px
+      margin-width: 200px
       gutter-width: 2em
 title-block-banner: "tutorials/images/pupholder.png"
 include-in-header:
@@ -47,4 +49,9 @@ include-in-header:
 </style>
 ```
 
-## Our Tutorials
+## Tutorial Categories
+
+
+## All Tutorials
+
+<!-- {{< include _index_partial.qmd >}} -->

@@ -1,12 +1,16 @@
 ---
-title: "Example 1"
-description: "This is th description field"
-author: "Author Name"
-date: "2021-01-01"
+title: "Reproducible Workflows"
+description: "Something about reproducible workflow. Two sentences I suppose."
+# author: "Author Name"
+# date: "2021-01-01"
 image: "images/pupholder.png"
+tutorial-home-order: 01
 categories:
-  - quarto
-  - test
+  - R
+  - renv
+  - git
+  - Quarto
+  - Zotero
 ---
 
 
