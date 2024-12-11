@@ -3,26 +3,35 @@ title: "LMU Open Science Center"
 page-navigation: false
 toc: false
 listing:
-  type: grid
-  grid-columns: 3
-  grid-item-align: center
-  grid-item-border: true
-  max-description-length: 175
-  date-format: long
-  categories: true
-  sort:
-    - "tutorial-home-order"
-  contents: 
-    - tutorials
-    # - path: "www.google.com"
-    #   image: "../assets/img/lmu_osc_logo.jpg"
-    #   title: "Google"
-    #   description: "Search the web"
-    #   date: "2021-01-01"
-    #   categories: 
-    #     - search
-  image-placeholder: "../assets/img/lmu_osc_logo.jpg"
-  image-height: 200px
+  - id: tutorial_categories
+    type: grid
+    grid-columns: 3
+    grid-item-align: center
+    grid-item-border: true
+    max-description-length: 175
+    date-format: long
+    categories: unnumbered
+    sort:
+      - "tutorial-home-order"
+    contents: 
+      - tutorials
+      # - path: "www.google.com"
+      #   image: "../assets/img/lmu_osc_logo.jpg"
+      #   title: "Google"
+      #   description: "Search the web"
+      #   date: "2021-01-01"
+      #   categories: 
+      #     - search
+    image-placeholder: "../assets/img/lmu_osc_logo.jpg"
+    image-height: 200px
+  - id: all_tutorials
+    type: table
+    contents:
+      - tutorials
+    fields: 
+      - title
+      - description
+      - categories
 format:
   html:
     grid:
@@ -78,4 +87,10 @@ h5, .h5 {
 
 ## Tutorial Categories
 
-<!-- {{< include _index_partial.qmd >}} -->
+:::{#tutorial_categories}
+:::
+
+## All Tutorials
+
+:::{#all_tutorials}
+:::
