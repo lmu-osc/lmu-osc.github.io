@@ -13,49 +13,53 @@ website:
   repo-actions: [edit, issue]
 
   navbar:
+    tools:
+      - icon: github
+        href: https://github.com/lmu-osc
     left:
       - href: index.qmd
-        text: Home
-      - about.qmd
+        text: Tutorials
+      - href: about.qmd
+        text: About
       - href: members.qmd
         text: Members
       - href: events.qmd
         text: Events
       - href: news.qmd
         text: News
-    right: 
-      - sidebar:rtutorials
-      - sidebar:gittutorials
-      - sidebar:quartotutorials
-
-      
-  sidebar:
-    - id: rtutorials
-      title: "R Tutorials"
-      style: "docked"
-      background: light
-      collapse-level: 2
-      contents: 
-        - qmd_one.qmd
-        - qmd_two.qmd
-
-    - id: gittutorials
-      title: "Git Tutorials"
-      style: "docked"
-      background: light
-      collapse-level: 2
-      contents: 
-        - qmd_one.qmd
-        - qmd_two.qmd
-        
-    - id: quartotutorials
-      title: "Quarto Tutorials"
-      style: "docked"
-      background: light
-      collapse-level: 2
-      contents: 
-        - qmd_one.qmd
-        - qmd_two.qmd
+  #   right: 
+  #     - sidebar:rtutorials
+  #     - sidebar:gittutorials
+  #     - sidebar:quartotutorials
+  # 
+  #     
+  # sidebar:
+  #   - id: rtutorials
+  #     title: "R Tutorials"
+  #     style: "docked"
+  #     background: light
+  #     collapse-level: 2
+  #     contents: 
+  #       - qmd_one.qmd
+  #       - qmd_two.qmd
+  # 
+  #   - id: gittutorials
+  #     title: "Git Tutorials"
+  #     style: "docked"
+  #     background: light
+  #     collapse-level: 2
+  #     contents: 
+  #       - qmd_one.qmd
+  #       - qmd_two.qmd
+  #       
+  #   - id: quartotutorials
+  #     title: "Quarto Tutorials"
+  #     style: "docked"
+  #     background: light
+  #     collapse-level: 2
+  #     contents: 
+  #       - qmd_one.qmd
+  #       - qmd_two.qmd
 
 format:
   html:
