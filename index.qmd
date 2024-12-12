@@ -1,9 +1,90 @@
 ---
 title: "LMU Open Science Center"
+page-navigation: false
+toc: false
+listing:
+  - id: tutorial_categories
+    type: grid
+    grid-columns: 3
+    grid-item-align: center
+    grid-item-border: true
+    max-description-length: 175
+    date-format: long
+    categories: unnumbered
+    sort:
+      - "tutorial-home-order"
+    contents: 
+      - "tutorials"
+      - "!tutorials/*/**"
+    image-placeholder: "../assets/img/lmu_osc_logo.jpg"
+    image-height: 200px
+  - id: all_tutorials
+    type: table
+    contents:
+      - tutorials/*/*
+    fields: 
+      - title
+      - description
+      - categories
+format:
+  html:
+    grid:
+      sidebar-width: 100px
+      body-width: 1050px
+      margin-width: 200px
+      gutter-width: 2em
+title-block-banner: "tutorials/images/pupholder.png"
+include-in-header:
+  - text: |
+      <style>
+      .quarto-title-block .quarto-title-banner {
+        background-position-y: center;
+        height: 400px;
+      }
+      </style>
 ---
 
-This is a Quarto website.
+```{=html}
+<style>
+.card {
+	--bs-card-border-width: 4px !important;
+	--bs-card-border-color: rgba(0, 153, 51, 0.3) !important;
+}
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+h5, .h5 {
+	font-size: 2.3rem;
+}
 
-Example text change
+.quarto-grid-item .listing-categories .listing-category {
+	color: #009FE3;
+	border: solid 1px #009FE3;
+	border-radius: .25rem;
+	text-transform: uppercase;
+	font-size: .85em;
+	padding-left: .5em;
+	padding-right: .5em;
+	padding-top: .15em;
+	padding-bottom: .15em;
+	cursor: pointer;
+	margin-right: 8px;
+	margin-bottom: 8px;
+}
+
+.quarto-grid-item .card-text {
+	font-size: 1.2em;
+}
+
+</style>
+
+
+```
+
+## Tutorial Categories
+
+:::{#tutorial_categories}
+:::
+
+## All Tutorials
+
+:::{#all_tutorials}
+:::
