@@ -16,13 +16,6 @@ listing:
     contents: 
       - "tutorials"
       - "!tutorials/*/**"
-      # - path: "www.google.com"
-      #   image: "../assets/img/lmu_osc_logo.jpg"
-      #   title: "Google"
-      #   description: "Search the web"
-      #   date: "2021-01-01"
-      #   categories: 
-      #     - search
     image-placeholder: "../assets/img/lmu_osc_logo.jpg"
     image-height: 200px
   - id: all_tutorials
