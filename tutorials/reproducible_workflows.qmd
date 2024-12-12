@@ -1,10 +1,8 @@
 ---
 title: "Reproducible Workflows"
 description: "Something about reproducible workflow. Two sentences I suppose."
-# author: "Author Name"
-# date: "2021-01-01"
-image: "images/pupholder.png"
 tutorial-home-order: 01
+image: "images/pupholder.png"
 categories:
   - R
   - "{renv}"
@@ -17,10 +15,3 @@ listing:
     - reproducible_workflows
 ---
 
-
-<!-- ```{=html} -->
-<!-- <!DOCTYPE html> -->
-<!-- <meta charset="utf-8"> -->
-<!-- <meta http-equiv="refresh" content="0; URL=https://example.org"> -->
-<!-- <link rel="canonical" href="https://example.org"> -->
-<!-- ``` -->
