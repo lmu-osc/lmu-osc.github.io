@@ -14,7 +14,8 @@ listing:
     sort:
       - "tutorial-home-order"
     contents: 
-      - tutorials
+      - "tutorials"
+      - "!tutorials/*/**"
       # - path: "www.google.com"
       #   image: "../assets/img/lmu_osc_logo.jpg"
       #   title: "Google"
@@ -27,7 +28,7 @@ listing:
   - id: all_tutorials
     type: table
     contents:
-      - tutorials
+      - tutorials/*/*
     fields: 
       - title
       - description
