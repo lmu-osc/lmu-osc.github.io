@@ -23,3 +23,50 @@ jobs:
           target: gh-pages
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+         
+  push-to-lrz-gitlab:
+    needs: build-deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          
+      - name: Set up SSH
+        uses: webfactory/ssh-agent@v0.9.0
+        with:
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+          
+      - name: Add GitLab to known hosts
+        run: |
+          mkdir -p ~/.ssh
+          ssh-keyscan gitlab.lrz.de >> ~/.ssh/known_hosts
+          # You can also verify the fingerprint manually (optional)
+          # ssh-keyscan gitlab.lrz.de | tee -a ~/.ssh/known_hosts
+          
+      - name: Check LRZ connection
+        run: |
+          ssh -T git@gitlab.lrz.de
+          
+      - name: Add LRZ GitLab remote
+        run: |
+          git remote add lrz_gitlab_remote git@gitlab.lrz.de:lmu-open-science-center/lmu-osc-website.git
+          git remote -v
+          
+      - name: Fetch and checkout branch
+        run: |
+          git status
+          git branch
+          git fetch origin gh-pages
+          git branch
+          git checkout -b gh-pages origin/gh-pages
+          git branch
+          git status
+        
+      - name: Push gh-pages to LRZ
+        run: |
+          # push gh-pages
+          git push --force lrz_gitlab_remote gh-pages
+        
+      
