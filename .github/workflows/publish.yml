@@ -39,6 +39,10 @@ jobs:
           chmod 600 ~/.ssh/id_github_gitlab_connection
           ssh-keyscan -t ed25519 gitlab.lrz.de >> ~/.ssh/known_hosts
           
+      - name: Check LRZ connection
+        run: |
+          ssh -T git@gitlab.lrz.de
+          
       - name: Add LRZ GitLab remote
         run: |
           git remote add lrz_gitlab_remote git@gitlab.lrz.de:lmu-open-science-center/lmu-osc-website.git
