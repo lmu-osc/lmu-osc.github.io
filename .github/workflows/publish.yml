@@ -57,7 +57,7 @@ jobs:
       - name: Fetch and push all branches to new remote
         run: |
           # list branches
-          git fetch --all
+          git pull origin gh-pages
           git branch
           # push them
           git push lrz_gitlab_remote --all
