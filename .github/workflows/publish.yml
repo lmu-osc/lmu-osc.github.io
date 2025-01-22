@@ -60,6 +60,6 @@ jobs:
           git pull origin gh-pages
           git branch
           # push them
-          git push lrz_gitlab_remote --all
+          git push --force lrz_gitlab_remote --gh-pages
         
       
