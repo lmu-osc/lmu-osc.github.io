@@ -39,13 +39,6 @@ jobs:
           # You can also verify the fingerprint manually (optional)
           # ssh-keyscan gitlab.lrz.de | tee -a ~/.ssh/known_hosts
           
-      # - name: Set up SSH key
-      #   run: |
-      #     mkdir -p ~/.ssh
-      #     echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_github_gitlab_connection
-      #     chmod 600 ~/.ssh/id_github_gitlab_connection
-      #     ssh-keyscan -t ed25519 gitlab.lrz.de >> ~/.ssh/known_hosts
-          
       - name: Check LRZ connection
         run: |
           ssh -T git@gitlab.lrz.de
@@ -61,9 +54,13 @@ jobs:
           
       - name: Push all branches to new remote
         run: |
+          # list branches
+          git branch
+          # push them
+          git push lrz_gitlab_remote --all
           # Loop through all local branches and push them to lrz_gitlab_remote
-          for branch in $(git branch -r | grep -v '\->' | sed 's/  origin\///'); do
-            git push lrz_gitlab_remote origin/$branch:$branch
-          done
+          # for branch in $(git branch -r | grep -v '\->' | sed 's/  origin\///'); do
+          #   git push lrz_gitlab_remote origin/$branch:$branch
+          # done
         
       
