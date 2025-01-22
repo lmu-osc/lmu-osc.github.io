@@ -32,6 +32,13 @@ jobs:
         with:
           ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
           
+      - name: Add GitLab to known hosts
+        run: |
+          mkdir -p ~/.ssh
+          ssh-keyscan gitlab.lrz.de >> ~/.ssh/known_hosts
+          # You can also verify the fingerprint manually (optional)
+          # ssh-keyscan gitlab.lrz.de | tee -a ~/.ssh/known_hosts
+          
       # - name: Set up SSH key
       #   run: |
       #     mkdir -p ~/.ssh
