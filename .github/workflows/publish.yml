@@ -37,7 +37,7 @@ jobs:
           
       - name: Fetch and push all branches to remote
         run: |
-          git fetch origin --all
+          git fetch --all
           
       - name: Push all branches to new remote
         run: |
