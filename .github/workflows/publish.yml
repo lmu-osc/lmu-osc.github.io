@@ -54,11 +54,15 @@ jobs:
           git remote add lrz_gitlab_remote git@gitlab.lrz.de:lmu-open-science-center/lmu-osc-website.git
           git remote -v
           
-      - name: Fetch and push all branches to new remote
+      - name: Fetch branches
         run: |
-          # list branches
-          git pull origin gh-pages
+          git status
+          git fetch origin gh-pages
           git branch
+          git status
+        
+      - name: Push branches
+        run: |
           # push them
           git push --force lrz_gitlab_remote --gh-pages
         
