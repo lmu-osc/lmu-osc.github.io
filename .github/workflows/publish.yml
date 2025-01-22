@@ -26,7 +26,10 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
          
-          
+  push-to-lrz-gitlab:
+    needs: build-deploy
+    runs-on: ubuntu-latest
+    steps:
       - name: Set up SSH
         uses: webfactory/ssh-agent@v0.9.0
         with:
@@ -48,19 +51,12 @@ jobs:
           git remote add lrz_gitlab_remote git@gitlab.lrz.de:lmu-open-science-center/lmu-osc-website.git
           git remote -v
           
-      - name: Fetch all branches from origin
-        run: |
-          git fetch --all
-          
-      - name: Push all branches to new remote
+      - name: Fetch and push all branches to new remote
         run: |
           # list branches
+          git fetch --all
           git branch
           # push them
           git push lrz_gitlab_remote --all
-          # Loop through all local branches and push them to lrz_gitlab_remote
-          # for branch in $(git branch -r | grep -v '\->' | sed 's/  origin\///'); do
-          #   git push lrz_gitlab_remote origin/$branch:$branch
-          # done
         
       
