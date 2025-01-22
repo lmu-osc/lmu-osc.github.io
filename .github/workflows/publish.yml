@@ -64,6 +64,6 @@ jobs:
       - name: Push branches
         run: |
           # push them
-          git push --force lrz_gitlab_remote --gh-pages
+          git push --force lrz_gitlab_remote gh-pages
         
       
