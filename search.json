@@ -1,13 +1,24 @@
 [
   {
-    "objectID": "qmd_one.html",
-    "href": "qmd_one.html",
-    "title": "Hello",
+    "objectID": "tutorials/credibility_revolution.html",
+    "href": "tutorials/credibility_revolution.html",
+    "title": "Credibility Revolution",
     "section": "",
-    "text": "Hello\nHello this is some more content.\nEven more content.",
-    "crumbs": [
-      "Hello"
-    ]
+    "text": "Cred Rev Example Post 1\n\n\n\n\n\nSomething about credibility and prereg. Two sentences I suppose.\n\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "tutorials/data_management.html",
+    "href": "tutorials/data_management.html",
+    "title": "Data Management",
+    "section": "",
+    "text": "No matching items"
+  },
+  {
+    "objectID": "tutorials/simulation_of_data.html",
+    "href": "tutorials/simulation_of_data.html",
+    "title": "Simulation of Data",
+    "section": "",
+    "text": "No matching items"
   },
   {
     "objectID": "about.html",
@@ -21,16 +32,55 @@
     "href": "qmd_two.html",
     "title": "Another Title",
     "section": "",
-    "text": "Another Title\nHello again",
-    "crumbs": [
-      "Another Title"
-    ]
+    "text": "Another Title\nHello again"
+  },
+  {
+    "objectID": "qmd_one.html",
+    "href": "qmd_one.html",
+    "title": "Hello",
+    "section": "",
+    "text": "Hello\nHello this is some more content.\nEven more content."
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "LMU Open Science Center",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\nExample text change"
+    "text": "R\n\n\n{renv}\n\n\nGit\n\n\nQuarto\n\n\nZotero\n\n\n\nSomething about reproducible workflow. Two sentences I suppose.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFAIR\n\n\nData Anonymity\n\n\n\nSomething about data management\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPreregistration\n\n\nPower Analysis\n\n\n\nSomething about simulation of data\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAnonymization\n\n\nSynthetic Data\n\n\n\nSomething about sensitive data handling\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nReplicability Crisis\n\n\nPreregistration\n\n\n\nSomething about credibility and prereg. Two sentences I suppose.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOpen Access\n\n\nPublishing\n\n\n\nSomething about open access\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "index.html#tutorial-categories",
+    "href": "index.html#tutorial-categories",
+    "title": "LMU Open Science Center",
+    "section": "",
+    "text": "R\n\n\n{renv}\n\n\nGit\n\n\nQuarto\n\n\nZotero\n\n\n\nSomething about reproducible workflow. Two sentences I suppose.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFAIR\n\n\nData Anonymity\n\n\n\nSomething about data management\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPreregistration\n\n\nPower Analysis\n\n\n\nSomething about simulation of data\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAnonymization\n\n\nSynthetic Data\n\n\n\nSomething about sensitive data handling\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nReplicability Crisis\n\n\nPreregistration\n\n\n\nSomething about credibility and prereg. Two sentences I suppose.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOpen Access\n\n\nPublishing\n\n\n\nSomething about open access\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "index.html#all-tutorials",
+    "href": "index.html#all-tutorials",
+    "title": "LMU Open Science Center",
+    "section": "All Tutorials",
+    "text": "All Tutorials\n\n\n   \n     \n     \n       Order By\n       Default\n         \n          Title\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\nTitle\n\n\nDescription\n\n\nCategories\n\n\n\n\n\n\nCred Rev Example Post 1\n\n\nSomething about credibility and prereg. Two sentences I suppose.\n\n\nReplicability Crisis, Preregistration\n\n\n\n\nIntroduction to R\n\n\nBrief description of the tutorial, ideally the same description used in the tutorial itself.\n\n\nR\n\n\n\n\nIntroduction to Version Control within RStudio\n\n\nBrief description of the tutorial, ideally the same description used in the tutorial itself.\n\n\nR\n\n\n\n\nIntroduction to Version Control within RStudio\n\n\nBrief description of the tutorial, ideally the same description used in the tutorial itself.\n\n\nR\n\n\n\n\nIntroduction to {renv}\n\n\nBrief description of the tutorial, ideally the same description used in the tutorial itself.\n\n\nR\n\n\n\n\n \n\n\n \n\n\n \n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "tutorials/open_access.html",
+    "href": "tutorials/open_access.html",
+    "title": "Open Access Publishing",
+    "section": "",
+    "text": "No matching items"
+  },
+  {
+    "objectID": "tutorials/sensitive_data_processing.html",
+    "href": "tutorials/sensitive_data_processing.html",
+    "title": "Sensitive Data Processing",
+    "section": "",
+    "text": "No matching items"
+  },
+  {
+    "objectID": "tutorials/reproducible_workflows.html",
+    "href": "tutorials/reproducible_workflows.html",
+    "title": "Reproducible Workflows",
+    "section": "",
+    "text": "Introduction to R\n\n\n\n\n\nBrief description of the tutorial, ideally the same description used in the tutorial itself.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIntroduction to Version Control within RStudio\n\n\n\n\n\nBrief description of the tutorial, ideally the same description used in the tutorial itself.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIntroduction to Version Control within RStudio\n\n\n\n\n\nBrief description of the tutorial, ideally the same description used in the tutorial itself.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIntroduction to {renv}\n\n\n\n\n\nBrief description of the tutorial, ideally the same description used in the tutorial itself.\n\n\n\n\n\n\n\n\n\nNo matching items"
   }
 ]
