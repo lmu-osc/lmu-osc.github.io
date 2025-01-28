@@ -19,6 +19,8 @@ listing:
     image-placeholder: "../assets/img/lmu_osc_logo.jpg"
     image-height: 200px
   - id: all_tutorials
+    sort:
+      - "content_category"
     type: table
     contents:
       - tutorials/*/**.qmd
