@@ -21,7 +21,7 @@ listing:
   - id: all_tutorials
     type: table
     contents:
-      - tutorials/*/*
+      - tutorials/*/**.qmd
     fields: 
       - content_category
       - title
