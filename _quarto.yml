@@ -16,17 +16,17 @@ website:
     tools:
       - icon: github
         href: https://github.com/lmu-osc
-    left:
-      - href: index.qmd
-        text: Tutorials
-      - href: about.qmd
-        text: About
-      - href: members.qmd
-        text: Members
-      - href: events.qmd
-        text: Events
-      - href: news.qmd
-        text: News
+    # left:
+    #   - href: index.qmd
+    #     text: Tutorials
+    #   - href: about.qmd
+    #     text: About
+    #   - href: members.qmd
+    #     text: Members
+    #   - href: events.qmd
+    #     text: Events
+    #   - href: news.qmd
+    #     text: News
   #   right: 
   #     - sidebar:rtutorials
   #     - sidebar:gittutorials
