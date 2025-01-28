@@ -1,0 +1,42 @@
+---
+title: "TEMPLATE TITLE"
+description: "Brief description of the video, ideally the same description used in the tutorial itself."
+image: "../images/pupholder.png"
+categories:
+  - Included Categories
+format:
+  html: 
+    grid:
+      body-width: 1000px
+      sidebar-width: 200px
+---
+
+<!-- Comments can be added/deleted with Cmd+Shift+C -->
+
+
+
+<!-- If the content is available as part of a bigger project or is part of an e.g. OSF or Zenodo repository, then include that link in the section below. Otherwise, you can delete the section -->
+
+# {OTHER} Link
+
+
+# Presentation
+
+<!-- Depending on where the video is from, use the appropriate option below. Delete the unusued option. -->
+
+## Youtube, other media players
+
+<!-- {{< video LINK >}} -->
+
+
+## OSF Website
+
+<!-- <iframe src="OBTAIN FROM OSF WEBSITE BY COPYING THE HTML IFRAME OPTION" -->
+<!--     width="100%" -->
+<!--     scrolling="yes" -->
+<!--     height="480px" -->
+<!--     marginheight="0" -->
+<!--     frameborder="0" -->
+<!--     allowfullscreen -->
+<!--     webkitallowfullscreen -->
+<!-- > -->
