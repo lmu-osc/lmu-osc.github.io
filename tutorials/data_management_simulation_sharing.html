@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="Something about sensitive data handling">
+<meta name="description" content="Something about data management">
 
-<title>Sensitive Data Processing – LMU Open Science Center</title>
+<title>Data Management – LMU Open Science Center</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -80,9 +80,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: [{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: [],
+      searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -144,35 +144,7 @@ window.Quarto = {
     <span class="navbar-title">LMU Open Science Center</span>
     </a>
   </div>
-            <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-  <span class="navbar-toggler-icon"></span>
-</button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="../index.html"> 
-<span class="menu-text">Tutorials</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../about.html"> 
-<span class="menu-text">About</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../members.html"> 
-<span class="menu-text">Members</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../events.html"> 
-<span class="menu-text">Events</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../news.html"> 
-<span class="menu-text">News</span></a>
-  </li>  
-</ul>
-          </div> <!-- /navcollapse -->
-            <div class="quarto-navbar-tools">
+        <div class="quarto-navbar-tools tools-end">
     <a href="https://github.com/lmu-osc" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-github"></i></a>
   <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
   <div class="quarto-reader-toggle-btn">
@@ -180,6 +152,7 @@ window.Quarto = {
   </div>
 </a>
 </div>
+          <div id="quarto-search" class="" title="Search"></div>
       </div> <!-- /container-fluid -->
     </nav>
 </header>
@@ -195,16 +168,16 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Sensitive Data Processing</h1>
+<h1 class="title">Data Management</h1>
   <div class="quarto-categories">
-    <div class="quarto-category">Anonymization</div>
-    <div class="quarto-category">Synthetic Data</div>
+    <div class="quarto-category">FAIR</div>
+    <div class="quarto-category">Data Anonymity</div>
   </div>
   </div>
 
 <div>
   <div class="description">
-    Something about sensitive data handling
+    Something about data management
   </div>
 </div>
 
@@ -227,7 +200,138 @@ window.Quarto = {
 
 <div class="quarto-listing quarto-listing-container-default" id="listing-listing">
 <div class="list quarto-listing-default">
-
+<div class="quarto-post image-right" data-index="0" data-categories="SW5jbHVkZWQlMjBDYXRlZ29yaWVz" data-listing-file-modified-sort="1738078263826" data-listing-reading-time-sort="1" data-listing-word-count-sort="30">
+<div class="thumbnail">
+<p><a href="../tutorials/data_management_simulation_sharing/fair_data_management.html" class="no-external"></a></p><a href="../tutorials/data_management_simulation_sharing/fair_data_management.html" class="no-external">
+<p><img loading="lazy" src="../tutorials/images/pupholder.png" class="thumbnail-image"></p>
+</a><p><a href="../tutorials/data_management_simulation_sharing/fair_data_management.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../tutorials/data_management_simulation_sharing/fair_data_management.html" class="no-external">FAIR Data Management</a>
+</h3>
+<div class="listing-subtitle">
+<a href="../tutorials/data_management_simulation_sharing/fair_data_management.html" class="no-external"></a>
+</div>
+<div class="listing-description">
+<a href="../tutorials/data_management_simulation_sharing/fair_data_management.html" class="no-external">Brief description of the tutorial, ideally the same description used in the tutorial itself.</a>
+</div>
+</div>
+<div class="metadata">
+<p><a href="../tutorials/data_management_simulation_sharing/fair_data_management.html" class="no-external"></a></p><a href="../tutorials/data_management_simulation_sharing/fair_data_management.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-categories="SW5jbHVkZWQlMjBDYXRlZ29yaWVz" data-listing-file-modified-sort="1738078263826" data-listing-reading-time-sort="1" data-listing-word-count-sort="49">
+<div class="thumbnail">
+<p><a href="../tutorials/data_management_simulation_sharing/fair_data_sharing.html" class="no-external"></a></p><a href="../tutorials/data_management_simulation_sharing/fair_data_sharing.html" class="no-external">
+<p><img loading="lazy" src="../tutorials/images/pupholder.png" class="thumbnail-image"></p>
+</a><p><a href="../tutorials/data_management_simulation_sharing/fair_data_sharing.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../tutorials/data_management_simulation_sharing/fair_data_sharing.html" class="no-external">FAIR Data Sharing</a>
+</h3>
+<div class="listing-subtitle">
+<a href="../tutorials/data_management_simulation_sharing/fair_data_sharing.html" class="no-external"></a>
+</div>
+<div class="listing-description">
+<a href="../tutorials/data_management_simulation_sharing/fair_data_sharing.html" class="no-external">Brief description of the tutorial, ideally the same description used in the tutorial itself.</a>
+</div>
+</div>
+<div class="metadata">
+<p><a href="../tutorials/data_management_simulation_sharing/fair_data_sharing.html" class="no-external"></a></p><a href="../tutorials/data_management_simulation_sharing/fair_data_sharing.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="2" data-categories="SW5jbHVkZWQlMjBDYXRlZ29yaWVz" data-listing-file-modified-sort="1738078263826" data-listing-reading-time-sort="1" data-listing-word-count-sort="46">
+<div class="thumbnail">
+<p><a href="../tutorials/data_management_simulation_sharing/introduction_to_open_research_data.html" class="no-external"></a></p><a href="../tutorials/data_management_simulation_sharing/introduction_to_open_research_data.html" class="no-external">
+<p><img loading="lazy" src="../tutorials/images/pupholder.png" class="thumbnail-image"></p>
+</a><p><a href="../tutorials/data_management_simulation_sharing/introduction_to_open_research_data.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../tutorials/data_management_simulation_sharing/introduction_to_open_research_data.html" class="no-external">Introduction to Open Research Data</a>
+</h3>
+<div class="listing-subtitle">
+<a href="../tutorials/data_management_simulation_sharing/introduction_to_open_research_data.html" class="no-external"></a>
+</div>
+<div class="listing-description">
+<a href="../tutorials/data_management_simulation_sharing/introduction_to_open_research_data.html" class="no-external">Brief description of the tutorial, ideally the same description used in the tutorial itself.</a>
+</div>
+</div>
+<div class="metadata">
+<p><a href="../tutorials/data_management_simulation_sharing/introduction_to_open_research_data.html" class="no-external"></a></p><a href="../tutorials/data_management_simulation_sharing/introduction_to_open_research_data.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="3" data-categories="SW5jbHVkZWQlMjBDYXRlZ29yaWVz" data-listing-file-modified-sort="1738078263826" data-listing-reading-time-sort="1" data-listing-word-count-sort="30">
+<div class="thumbnail">
+<p><a href="../tutorials/data_management_simulation_sharing/introduction_to_simulations_in_r.html" class="no-external"></a></p><a href="../tutorials/data_management_simulation_sharing/introduction_to_simulations_in_r.html" class="no-external">
+<p><img loading="lazy" src="../tutorials/images/pupholder.png" class="thumbnail-image"></p>
+</a><p><a href="../tutorials/data_management_simulation_sharing/introduction_to_simulations_in_r.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../tutorials/data_management_simulation_sharing/introduction_to_simulations_in_r.html" class="no-external">Introduction to Simulations in R</a>
+</h3>
+<div class="listing-subtitle">
+<a href="../tutorials/data_management_simulation_sharing/introduction_to_simulations_in_r.html" class="no-external"></a>
+</div>
+<div class="listing-description">
+<a href="../tutorials/data_management_simulation_sharing/introduction_to_simulations_in_r.html" class="no-external">Brief description of the tutorial, ideally the same description used in the tutorial itself.</a>
+</div>
+</div>
+<div class="metadata">
+<p><a href="../tutorials/data_management_simulation_sharing/introduction_to_simulations_in_r.html" class="no-external"></a></p><a href="../tutorials/data_management_simulation_sharing/introduction_to_simulations_in_r.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="4" data-categories="SW5jbHVkZWQlMjBDYXRlZ29yaWVz" data-listing-file-modified-sort="1738078263826" data-listing-reading-time-sort="1" data-listing-word-count-sort="46">
+<div class="thumbnail">
+<p><a href="../tutorials/data_management_simulation_sharing/maintaining_privacy_with_open_data.html" class="no-external"></a></p><a href="../tutorials/data_management_simulation_sharing/maintaining_privacy_with_open_data.html" class="no-external">
+<p><img loading="lazy" src="../tutorials/images/pupholder.png" class="thumbnail-image"></p>
+</a><p><a href="../tutorials/data_management_simulation_sharing/maintaining_privacy_with_open_data.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../tutorials/data_management_simulation_sharing/maintaining_privacy_with_open_data.html" class="no-external">Maintaining Privacy with Open Data</a>
+</h3>
+<div class="listing-subtitle">
+<a href="../tutorials/data_management_simulation_sharing/maintaining_privacy_with_open_data.html" class="no-external"></a>
+</div>
+<div class="listing-description">
+<a href="../tutorials/data_management_simulation_sharing/maintaining_privacy_with_open_data.html" class="no-external">Brief description of the tutorial, ideally the same description used in the tutorial itself.</a>
+</div>
+</div>
+<div class="metadata">
+<p><a href="../tutorials/data_management_simulation_sharing/maintaining_privacy_with_open_data.html" class="no-external"></a></p><a href="../tutorials/data_management_simulation_sharing/maintaining_privacy_with_open_data.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="5" data-categories="SW5jbHVkZWQlMjBDYXRlZ29yaWVz" data-listing-file-modified-sort="1738078263826" data-listing-reading-time-sort="1" data-listing-word-count-sort="55">
+<div class="thumbnail">
+<p><a href="../tutorials/data_management_simulation_sharing/synthetic_data_commision.html" class="no-external"></a></p><a href="../tutorials/data_management_simulation_sharing/synthetic_data_commision.html" class="no-external">
+<p><img loading="lazy" src="../tutorials/images/pupholder.png" class="thumbnail-image"></p>
+</a><p><a href="../tutorials/data_management_simulation_sharing/synthetic_data_commision.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../tutorials/data_management_simulation_sharing/synthetic_data_commision.html" class="no-external">TBD: Generating Synthetic Data</a>
+</h3>
+<div class="listing-subtitle">
+<a href="../tutorials/data_management_simulation_sharing/synthetic_data_commision.html" class="no-external"></a>
+</div>
+<div class="listing-description">
+<a href="../tutorials/data_management_simulation_sharing/synthetic_data_commision.html" class="no-external">Brief description of the tutorial, ideally the same description used in the tutorial itself.</a>
+</div>
+</div>
+<div class="metadata">
+<p><a href="../tutorials/data_management_simulation_sharing/synthetic_data_commision.html" class="no-external"></a></p><a href="../tutorials/data_management_simulation_sharing/synthetic_data_commision.html" class="no-external">
+</a>
+</div>
+</div>
 </div>
 <div class="listing-no-matching d-none">
 No matching items
@@ -658,7 +762,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>   
     <div class="nav-footer-center">
 <p>Copyright LMU Open Science Center, 2024</p>
-<div class="toc-actions"><ul><li><a href="https://github.com/lmu-osc/lmu-osc.github.io/edit/main/tutorials/sensitive_data_processing.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lmu-osc/lmu-osc.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+<div class="toc-actions"><ul><li><a href="https://github.com/lmu-osc/lmu-osc.github.io/edit/main/tutorials/data_management_simulation_sharing.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lmu-osc/lmu-osc.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       &nbsp;
     </div>

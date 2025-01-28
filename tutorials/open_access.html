@@ -80,9 +80,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: [{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: [],
+      searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -144,35 +144,7 @@ window.Quarto = {
     <span class="navbar-title">LMU Open Science Center</span>
     </a>
   </div>
-            <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-  <span class="navbar-toggler-icon"></span>
-</button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="../index.html"> 
-<span class="menu-text">Tutorials</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../about.html"> 
-<span class="menu-text">About</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../members.html"> 
-<span class="menu-text">Members</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../events.html"> 
-<span class="menu-text">Events</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../news.html"> 
-<span class="menu-text">News</span></a>
-  </li>  
-</ul>
-          </div> <!-- /navcollapse -->
-            <div class="quarto-navbar-tools">
+        <div class="quarto-navbar-tools tools-end">
     <a href="https://github.com/lmu-osc" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-github"></i></a>
   <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
   <div class="quarto-reader-toggle-btn">
@@ -180,6 +152,7 @@ window.Quarto = {
   </div>
 </a>
 </div>
+          <div id="quarto-search" class="" title="Search"></div>
       </div> <!-- /container-fluid -->
     </nav>
 </header>
@@ -227,7 +200,28 @@ window.Quarto = {
 
 <div class="quarto-listing quarto-listing-container-default" id="listing-listing">
 <div class="list quarto-listing-default">
-
+<div class="quarto-post image-right" data-index="0" data-categories="SW5jbHVkZWQlMjBDYXRlZ29yaWVz" data-listing-file-modified-sort="1738078263827" data-listing-reading-time-sort="1" data-listing-word-count-sort="46">
+<div class="thumbnail">
+<p><a href="../tutorials/open_access/open_access_preprints_postprints.html" class="no-external"></a></p><a href="../tutorials/open_access/open_access_preprints_postprints.html" class="no-external">
+<p><img loading="lazy" src="../tutorials/images/pupholder.png" class="thumbnail-image"></p>
+</a><p><a href="../tutorials/open_access/open_access_preprints_postprints.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../tutorials/open_access/open_access_preprints_postprints.html" class="no-external">Open access, preprints, postprints</a>
+</h3>
+<div class="listing-subtitle">
+<a href="../tutorials/open_access/open_access_preprints_postprints.html" class="no-external"></a>
+</div>
+<div class="listing-description">
+<a href="../tutorials/open_access/open_access_preprints_postprints.html" class="no-external">Brief description of the video, ideally the same description used in the tutorial itself.</a>
+</div>
+</div>
+<div class="metadata">
+<p><a href="../tutorials/open_access/open_access_preprints_postprints.html" class="no-external"></a></p><a href="../tutorials/open_access/open_access_preprints_postprints.html" class="no-external">
+</a>
+</div>
+</div>
 </div>
 <div class="listing-no-matching d-none">
 No matching items
