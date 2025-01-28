@@ -19,13 +19,21 @@ listing:
     image-placeholder: "../assets/img/lmu_osc_logo.jpg"
     image-height: 200px
   - id: all_tutorials
+    sort:
+      - "content_category"
     type: table
     contents:
-      - tutorials/*/*
+      - tutorials/*/**.qmd
     fields: 
+      - content_category
       - title
       - description
       - categories
+    field-display-names:
+      content_category: "Topic"
+      title: "Tutorial"
+      description: "Description"
+      categories: "Tags"
 format:
   html:
     grid:
