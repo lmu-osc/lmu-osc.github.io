@@ -23,9 +23,15 @@ listing:
     contents:
       - tutorials/*/*
     fields: 
+      - content_category
       - title
       - description
       - categories
+    field-display-names:
+      content_category: "Topic"
+      title: "Tutorial"
+      description: "Description"
+      categories: "Tags"
 format:
   html:
     grid:
