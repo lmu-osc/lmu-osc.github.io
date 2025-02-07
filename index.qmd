@@ -43,7 +43,6 @@ format:
       gutter-width: 2em
 title-block-banner: "tutorials/images/pupholder.png"
 include-in-header:
-  # - file: clear_filter_button.js
   - text: |
       <script src="clear_filter_button.js" defer></script>
       <style>
@@ -93,8 +92,6 @@ h5, .h5 {
 
 :::{#tutorial_categories}
 :::
-
-## 
 
 
 ## All Tutorials
