@@ -52,6 +52,9 @@ include-in-header:
     
           // Create a new div to insert
           const newDiv = document.createElement('div');
+          
+          // Add a margin-top to the div to give space above the button
+          newDiv.style.marginTop = '20px';
     
           // Create a new button inside the div
           const button = document.createElement('button');
@@ -125,11 +128,6 @@ h5, .h5 {
 
 ## 
 
-::: {.column-margin}
-We know from *the first fundamental theorem of calculus* that for $x$ in $[a, b]$:
-
-$$\frac{d}{dx}\left( \int_{a}^{x} f(u)\,du\right)=f(x).$$
-:::
 
 ## All Tutorials
 
