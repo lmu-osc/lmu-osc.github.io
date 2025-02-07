@@ -43,7 +43,38 @@ format:
       gutter-width: 2em
 title-block-banner: "tutorials/images/pupholder.png"
 include-in-header:
+  # - file: clear_filter_button.js
   - text: |
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          // Find the target div by class name
+          const targetDiv = document.querySelector('.quarto-listing-category.category-unnumbered');
+    
+          // Create a new div to insert
+          const newDiv = document.createElement('div');
+    
+          // Create a new button inside the div
+          const button = document.createElement('button');
+          button.classList.add('btn', 'btn-primary');  // Add Bootstrap button styles
+          button.innerHTML = 'Reset Filter';
+    
+          // Add an event listener to the button to simulate a click on the h5 when clicked
+          button.addEventListener('click', function() {
+            const targetH5 = document.querySelector('.quarto-listing-category-title');
+            if (targetH5) {
+              targetH5.click(); // Simulate a click on the h5
+            }
+          });
+    
+          // Append the button to the new div
+          newDiv.appendChild(button);
+    
+          // Insert the new div after the target div
+          if (targetDiv) {
+            targetDiv.insertAdjacentElement('afterend', newDiv);
+          }
+        });
+      </script>
       <style>
       .quarto-title-block .quarto-title-banner {
         background-position-y: center;
@@ -90,6 +121,14 @@ h5, .h5 {
 ## Tutorial Categories
 
 :::{#tutorial_categories}
+:::
+
+## 
+
+::: {.column-margin}
+We know from *the first fundamental theorem of calculus* that for $x$ in $[a, b]$:
+
+$$\frac{d}{dx}\left( \int_{a}^{x} f(u)\,du\right)=f(x).$$
 :::
 
 ## All Tutorials
