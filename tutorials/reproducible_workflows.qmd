@@ -13,5 +13,7 @@ listing:
   type: default
   contents:
     - reproducible_workflows
+  sort:
+    - within_cat_order
 ---
 
