@@ -44,6 +44,7 @@ format:
 title-block-banner: "tutorials/images/pupholder.png"
 include-in-header:
   - text: |
+      <script src="clear_filter_button.js" defer></script>
       <style>
       .quarto-title-block .quarto-title-banner {
         background-position-y: center;
@@ -91,6 +92,7 @@ h5, .h5 {
 
 :::{#tutorial_categories}
 :::
+
 
 ## All Tutorials
 
