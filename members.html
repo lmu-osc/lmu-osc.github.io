@@ -71,10 +71,9 @@ ul.task-list li input[type="checkbox"] {
 <script>
   var _paq = window._paq = window._paq || [];
   /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-  _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
-  _paq.push(["setDoNotTrack", true]);
   _paq.push(['trackPageView']);
   _paq.push(['enableLinkTracking']);
+  _paq.push(['trackAllContentImpressions']);
   (function() {
     var u="//analytics.lmu-osc.com/";
     _paq.push(['setTrackerUrl', u+'matomo.php']);
@@ -83,15 +82,14 @@ ul.task-list li input[type="checkbox"] {
     g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
   })();
 </script>
-<noscript></noscript></head><body class="nav-fixed"><p><img referrerpolicy="no-referrer-when-downgrade" src="//analytics.lmu-osc.com/matomo.php?idsite=1&amp;rec=1" style="border:0;" alt=""></p>
 <!-- End Matomo Code -->
 
 
 
 <link rel="stylesheet" href="https://raw.githubusercontent.com/lmu-osc/branding-resources/refs/heads/main/styles.css">
+</head>
 
-
-
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
