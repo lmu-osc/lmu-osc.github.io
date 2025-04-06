@@ -1,5 +1,45 @@
 [
   {
+    "listing": "/tutorials/preregistration.html",
+    "items": [
+      "/tutorials/preregistration/preregistration_why_how.html",
+      "/tutorials/preregistration/introduction_to_simulations_in_r.html",
+      "/tutorials/preregistration/simulations_for_advanced_power_analyses.html"
+    ]
+  },
+  {
+    "listing": "/tutorials/reproducible_workflows.html",
+    "items": [
+      "/tutorials/reproducible_workflows/introduction_to_r.html",
+      "/tutorials/reproducible_workflows/introduction_to_version_control_within_rstudio.html",
+      "/tutorials/reproducible_workflows/collaborative_coding_with_github_and_rstudio.html",
+      "/tutorials/reproducible_workflows/advanced_git.html",
+      "/tutorials/reproducible_workflows/introduction_to_renv.html",
+      "/tutorials/reproducible_workflows/introduction_to_zotero.html",
+      "/tutorials/reproducible_workflows/introduction_to_quarto.html",
+      "/tutorials/reproducible_workflows/code_publishing.html"
+    ]
+  },
+  {
+    "listing": "/tutorials/data_management_simulation_sharing.html",
+    "items": [
+      "/tutorials/data_management_simulation_sharing/introduction_to_open_research_data.html",
+      "/tutorials/data_management_simulation_sharing/fair_data_management.html",
+      "/tutorials/data_management_simulation_sharing/fair_data_sharing.html",
+      "/tutorials/data_management_simulation_sharing/maintaining_privacy_with_open_data.html",
+      "/tutorials/data_management_simulation_sharing/introduction_to_simulations_in_r.html",
+      "/tutorials/data_management_simulation_sharing/synthetic_data_commision.html"
+    ]
+  },
+  {
+    "listing": "/tutorials/replicability_crisis_and_credibility_revolution.html",
+    "items": [
+      "/tutorials/replicability_crisis_and_credibility_revolution/from_replicability_crisis_to_credible_science.html",
+      "/tutorials/replicability_crisis_and_credibility_revolution/credibility_revolution.html",
+      "/tutorials/replicability_crisis_and_credibility_revolution/how_to_make_your_science_credible.html"
+    ]
+  },
+  {
     "listing": "/index.html",
     "items": [
       "/tutorials/replicability_crisis_and_credibility_revolution.html",
@@ -28,46 +68,6 @@
       "/tutorials/reproducible_workflows/introduction_to_renv.html",
       "/tutorials/reproducible_workflows/introduction_to_version_control_within_rstudio.html",
       "/tutorials/reproducible_workflows/introduction_to_zotero.html"
-    ]
-  },
-  {
-    "listing": "/tutorials/data_management_simulation_sharing.html",
-    "items": [
-      "/tutorials/data_management_simulation_sharing/introduction_to_open_research_data.html",
-      "/tutorials/data_management_simulation_sharing/fair_data_management.html",
-      "/tutorials/data_management_simulation_sharing/fair_data_sharing.html",
-      "/tutorials/data_management_simulation_sharing/maintaining_privacy_with_open_data.html",
-      "/tutorials/data_management_simulation_sharing/introduction_to_simulations_in_r.html",
-      "/tutorials/data_management_simulation_sharing/synthetic_data_commision.html"
-    ]
-  },
-  {
-    "listing": "/tutorials/preregistration.html",
-    "items": [
-      "/tutorials/preregistration/preregistration_why_how.html",
-      "/tutorials/preregistration/introduction_to_simulations_in_r.html",
-      "/tutorials/preregistration/simulations_for_advanced_power_analyses.html"
-    ]
-  },
-  {
-    "listing": "/tutorials/replicability_crisis_and_credibility_revolution.html",
-    "items": [
-      "/tutorials/replicability_crisis_and_credibility_revolution/from_replicability_crisis_to_credible_science.html",
-      "/tutorials/replicability_crisis_and_credibility_revolution/credibility_revolution.html",
-      "/tutorials/replicability_crisis_and_credibility_revolution/how_to_make_your_science_credible.html"
-    ]
-  },
-  {
-    "listing": "/tutorials/reproducible_workflows.html",
-    "items": [
-      "/tutorials/reproducible_workflows/introduction_to_r.html",
-      "/tutorials/reproducible_workflows/introduction_to_version_control_within_rstudio.html",
-      "/tutorials/reproducible_workflows/collaborative_coding_with_github_and_rstudio.html",
-      "/tutorials/reproducible_workflows/advanced_git.html",
-      "/tutorials/reproducible_workflows/introduction_to_renv.html",
-      "/tutorials/reproducible_workflows/introduction_to_zotero.html",
-      "/tutorials/reproducible_workflows/introduction_to_quarto.html",
-      "/tutorials/reproducible_workflows/code_publishing.html"
     ]
   },
   {
