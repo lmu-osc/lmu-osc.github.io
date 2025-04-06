@@ -5,9 +5,6 @@ project:
 website:
   title: "LMU Open Science Center"
   favicon: assets/img/lmu_osc_logo.jpg
-  cookie-consent:
-    type: express
-    style: headline
   reader-mode: true
   search: true
   page-navigation: true
