@@ -1,0 +1,98 @@
+name: Auto-Add Issues to User Project
+
+on:
+  issues:
+    types:
+      - assigned
+
+jobs:
+  add-to-project:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check out the repo
+      uses: actions/checkout@v3
+
+    - name: Get assignees from the issue
+      id: get_assignees
+      run: |
+        # Extract the assignees from the issue and format as a space-separated string
+        ASSIGNEES=$(jq --raw-output '.issue.assignees[].login' $GITHUB_EVENT_PATH)
+        echo "::set-output name=assignees::${ASSIGNEES}"
+        echo "${ASSIGNEES}"
+        mapfile -t ASSIGNEES_ARRAY <<< "$ASSIGNEES"
+        # Output the array as a space-separated string
+        echo "::set-output name=assignees_array::${ASSIGNEES_ARRAY[*]}"
+        # Print the assignees for debugging
+        echo "Assignees array: ${ASSIGNEES_ARRAY[*]}. Assignees original: $ASSIGNEES"
+        
+        
+
+    - name: Add Issue to each User's Project Board
+      env:
+        GITHUB_TOKEN: ${{ secrets.PROJECT_ISSUES_PAT }}
+      run: |
+        # Fetch the list of assignees from the previous step
+        ASSIGNEES_ARRAY=(${{ steps.get_assignees.outputs.assignees_array }})
+
+        # Get the repository information
+        # Extract the repository name and owner from the GITHUB_REPOSITORY environment variable
+        # The GITHUB_REPOSITORY variable is in the format "owner/repo"
+        # The GITHUB_EVENT_PATH variable contains the path to the event payload file
+        REPO_INFO=$(echo $GITHUB_REPOSITORY)
+        REPO_NAME=$(echo $GITHUB_REPOSITORY | cut -d '/' -f 2)
+        REPO_OWNER=$(echo $GITHUB_REPOSITORY | cut -d '/' -f 1)
+        ISSUE_NUMBER=$(jq --raw-output .issue.number $GITHUB_EVENT_PATH)
+        
+        # Get Node ID for the issue
+        NODE_ID_RESULTS=$(curl -X POST \
+          -H "Authorization: bearer $GITHUB_TOKEN" \
+          -d "{\"query\": \"query { repository(owner: \\\"$REPO_OWNER\\\", name: \\\"$REPO_NAME\\\") { issue(number: $ISSUE_NUMBER) { id } } }\"}" \
+          https://api.github.com/graphql | jq -r '.data.repository.issue.id')
+
+        echo "The results of getting the node ID are: $NODE_ID_RESULTS"
+
+        # Loop through each assignee
+        for USER in "${ASSIGNEES_ARRAY[@]}"; do
+          # Construct the project name dynamically based on the user
+          PROJECT_NAME="${USER}'s Tasks"
+          
+          echo "Looking for project: $PROJECT_NAME"
+          
+          # Define the GraphQL query to retrieve the project ID
+          QUERY="{\"query\": \"query { organization(login: \\\"$REPO_OWNER\\\") {projectsV2(first: 20) {nodes {id title}}}}\"}"
+
+          # Send the GraphQL query to GitHub API and parse the response
+          PROJECT_ID=$(curl -s \
+            -H "Authorization: bearer $GITHUB_TOKEN" \
+            -X POST \
+            -d "$QUERY" \
+            "https://api.github.com/graphql" | \
+            jq -r --arg PROJECT_NAME "$PROJECT_NAME" '.data.organization.projectsV2.nodes[] | select(.title == $PROJECT_NAME) | .id')
+
+          echo "Project ID: $PROJECT_ID"
+
+          # Check if project exists
+          if [ "$PROJECT_ID" == "null" ]; then
+            echo "Project '$PROJECT_NAME' not found. Skipping."
+            continue
+          fi
+
+
+          # List info before getting node ID
+
+          echo "The repo owner is $REPO_OWNER, the repo name is $REPO_NAME, and the issue number is $ISSUE_NUMBER." 
+
+
+          # Add the issue to the project board
+          curl --request POST \
+            --url https://api.github.com/graphql \
+            -H "Authorization: bearer $GITHUB_TOKEN" \
+            --data "{\"query\":\"mutation {addProjectV2ItemById(input: {projectId: \\\"$PROJECT_ID\\\" contentId: \\\"$NODE_ID_RESULTS\\\"}) {item {id}}}\"}"
+
+          echo "Issue #$ISSUE_NUMBER with Node ID $NODE_ID_RESULTS added to $PROJECT_NAME for user $USER."
+        done
+
+
+
+
