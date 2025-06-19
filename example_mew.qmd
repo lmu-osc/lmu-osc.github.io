@@ -1,0 +1,50 @@
+---
+title: "Dr. Felix Schönbrodt"
+format: 
+  html:
+    css: 
+      - styles.css
+      - members.css
+
+# Member parameters
+name: "Dr. Felix Schönbrodt"
+position: "Managing Director of OSC"
+photo: "felix.jpeg"
+email: "Felix.Schoenbrodt@psy.lmu.de"
+personal_website: "https://nicebread.de"
+faculty_website: "https://www.osc.uni-muenchen.de/index.html"
+
+# Social media links - variable number
+social_media:
+  Bluesky: "https://bsky.app/profile/lmu-osc.bsky.social"
+  LinkedIn: "https://www.linkedin.com/in/felixschoenbrodt"
+  GitHub: "https://github.com/nicebread"
+  ORCID: "https://orcid.org/0000-0002-8282-3910"
+
+# Mission statement paragraphs - variable number
+mission_statement:
+  - "I am principal investigator for Psychological Methods and Assessment at the Department of Psychology. The reproducibility of research findings is a core criterion of science, which however, has been challenged by the failure of recent large-scale replication projects."
+  - "Together with the board of the German Psychological Society (DGPs) I developed the society's recommendations for data sharing in psychology."
+
+# Research interests - variable number
+research_interests:
+  - "Open Science"
+  - "Psychology"
+  - "Psychological Methods"
+  - "Data Sharing"
+
+# Publications - variable number
+publications:
+  - year: 2024
+    title: "Machine Learning Applications in Organizational Behavior"
+    authors: "Smith, J., Johnson, A., & Williams, R."
+    journal: "Journal of Applied Research, 42(3), 256-278"
+    doi_url: "#"
+  - year: 2023
+    title: "Open Methods in Psychology"
+    authors: "Schönbrodt, F."
+    journal: "Psychological Methods, 15(2), 112-143"
+    doi_url: "#"
+---
+
+{{< include memberprofile_template.qmd >}}
