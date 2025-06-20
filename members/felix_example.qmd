@@ -41,52 +41,6 @@ publications:
 ---
 
 
-```{r}
-#| echo: false
-
-library(htmltools)
-
-# Get parameters from the parent document
-member <- rmarkdown::metadata
-
-# Helper function to safely get parameter values with defaults
-get_param <- function(param_name, default = "") {
-  if (is.null(member[[param_name]])) {
-    return(default)
-  } else {
-    return(member[[param_name]])
-  }
-}
-
-# Extract member information
-name <- get_param("name", NULL)
-position <- get_param("position", "")
-photo <- get_param("photo", "default-profile.jpg")
-email <- get_param("email", "")
-personal_website <- get_param("personal_website", NULL)
-faculty_website <- get_param("faculty_website", NULL)
-social_media <- get_param("social_media", list())
-mission_paragraphs <- get_param("mission_statement", list())
-research_interests <- get_param("research_interests", list())
-publications <- get_param("publications", list())
-
-# Map platform names to Bootstrap icons
-icon_map <- list(
-  "bluesky" = "fa-brands fa-bluesky", 
-  "linkedin" = "fa-brands fa-linkedin",
-  "github" = "fa-brands fa-github",
-  "orcid" = "fa-brands fa-orcid",
-  "mastodon" = "fa-brands fa-mastodon",
-  "scholar" = "fa-solid fa-graduation-cap",
-  "researchgate" = "fa-brands fa-researchgate",
-  "academia" = "fa-solid fa-book",
-  "youtube" = "fa-brands fa-youtube",
-  "instagram" = "fa-brands fa-instagram",
-  "facebook" = "fa-brands fa-facebook"
-)
-```
-
-
 <!-- The "includes" below are templates for the different sections of the
 member profile pages. Each document returns an R object that contains the
 necessary HTML elements to render the section.
@@ -95,6 +49,7 @@ necessary HTML elements to render the section.
  3. If you want to add some custom content for an individual member, you can do so directly in the member's .QMD file, outside of the includes. You will then need to insert the new R object containing HTML into the `profile` object below.
 -->
 
+{{< include templates/_setup.qmd >}}
 {{< include templates/_contact_items.qmd >}}
 {{< include templates/_social_links.qmd >}}
 {{< include templates/_mission_statement.qmd >}}
