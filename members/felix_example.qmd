@@ -119,7 +119,7 @@ profile <- div(class = "member-profile",
     )
   ),
   mission_block,
-  # custom content would most likely go here, right after the mission statement
+  # custom content would most likely go here, right after the mission_block
   div(class = "member-content",
     interests_block,
     publications_block
