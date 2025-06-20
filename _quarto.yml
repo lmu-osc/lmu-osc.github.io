@@ -1,5 +1,6 @@
 project:
   type: website
+  output-dir: _site
   pre-render: curl https://raw.githubusercontent.com/lmu-osc/branding-resources/refs/heads/main/lmu-osc-custom.scss -o lmu-osc-custom.scss
 
 website:
@@ -16,21 +17,21 @@ website:
     tools:
       - icon: github
         href: https://github.com/lmu-osc
-    # left:
-    #   - href: index.qmd
-    #     text: Tutorials
-    #   - href: about.qmd
-    #     text: About
-    #   - href: members.qmd
-    #     text: Members
-    #   - href: events.qmd
-    #     text: Events
-    #   - href: news.qmd
-    #     text: News
-  #   right: 
-  #     - sidebar:rtutorials
-  #     - sidebar:gittutorials
-  #     - sidebar:quartotutorials
+    left:
+      - href: index.qmd
+        text: Tutorials
+      - href: about.qmd
+        text: About
+      - href: members.qmd
+        text: Members
+      - href: events.qmd
+        text: Events
+      - href: news.qmd
+        text: News
+    right: 
+      - sidebar:rtutorials
+      - sidebar:gittutorials
+      - sidebar:quartotutorials
   # 
   #     
   # sidebar:

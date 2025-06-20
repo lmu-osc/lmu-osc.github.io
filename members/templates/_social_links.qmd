@@ -1,0 +1,18 @@
+```{r}
+social_links <- NULL
+if (length(social_media) > 0) {
+  social_links <- div(class = "member-socials",
+    lapply(names(social_media), function(platform) {
+      platform_lower <- tolower(platform)
+      icon <- if (platform_lower %in% names(icon_map)) icon_map[[platform_lower]] else "fa-solid fa-link"
+      a(
+        href = social_media[[platform]],
+        title = platform,
+        target = "_blank",
+        class = "social-link",
+        tags$i(class = icon)
+      )
+    })
+  )
+}
+```

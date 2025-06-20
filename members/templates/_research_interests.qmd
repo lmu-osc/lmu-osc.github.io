@@ -1,0 +1,13 @@
+```{r}
+interests_block <- NULL
+if (length(research_interests) > 0) {
+  interests_block <- tagList(
+    h2("Research Interests"),
+    div(class = "interests-container",
+      lapply(research_interests, function(interest) {
+        div(class = "interest-tag", interest)
+      })
+    )
+  )
+}
+```
