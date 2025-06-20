@@ -1,13 +1,23 @@
 ---
-title: "Dr. Felix Schönbrodt"
 format: 
   html:
     css: 
       - ../styles.css
       - ../members.css
+    page-layout: full
+    toc: false
+    include-in-header: 
+      - text: |
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+          <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"> 
+execute: 
+  echo: false   
+
+# DO NOT EDIT ABOVE THIS LINE
 
 # Member parameters
-name: "Dr. Felix Schönbrodt"
+title: "Dr. Felix Schönbrodt"
 position: "Managing Director of OSC"
 photo: "felix.jpeg"
 email: "Felix.Schoenbrodt@psy.lmu.de"
@@ -47,5 +57,93 @@ publications:
     doi_url: "#"
 ---
 
-{{< include _memberprofile_template.qmd >}}
+
+```{r}
+#| echo: false
+
+library(htmltools)
+
+# Get parameters from the parent document
+member <- rmarkdown::metadata
+
+# Helper function to safely get parameter values with defaults
+get_param <- function(param_name, default = "") {
+  if (is.null(member[[param_name]])) {
+    return(default)
+  } else {
+    return(member[[param_name]])
+  }
+}
+
+# Extract member information
+name <- get_param("name", NULL)
+position <- get_param("position", "")
+photo <- get_param("photo", "default-profile.jpg")
+email <- get_param("email", "")
+personal_website <- get_param("personal_website", NULL)
+faculty_website <- get_param("faculty_website", NULL)
+social_media <- get_param("social_media", list())
+mission_paragraphs <- get_param("mission_statement", list())
+research_interests <- get_param("research_interests", list())
+publications <- get_param("publications", list())
+
+# Map platform names to Bootstrap icons
+icon_map <- list(
+  "bluesky" = "fa-brands fa-bluesky", 
+  "linkedin" = "fa-brands fa-linkedin",
+  "github" = "fa-brands fa-github",
+  "orcid" = "fa-brands fa-orcid",
+  "mastodon" = "fa-brands fa-mastodon",
+  "scholar" = "fa-solid fa-graduation-cap",
+  "researchgate" = "fa-brands fa-researchgate",
+  "academia" = "fa-solid fa-book",
+  "youtube" = "fa-brands fa-youtube",
+  "instagram" = "fa-brands fa-instagram",
+  "facebook" = "fa-brands fa-facebook"
+)
+```
+
+
+<!-- The "includes" below are templates for the different sections of the
+member profile pages. Each document returns an R object that contains the
+necessary HTML elements to render the section.
+ 1. You can modify these templates to change the layout or content of each section. This will change the layout of all member profiles the next time the site is built.
+ 2. You can also create new templates for additional sections if needed.
+ 3. If you want to add some custom content for an individual member, you can do so directly in the member's .QMD file, outside of the includes. You will then need to insert the new R object containing HTML into the `profile` object below.
+-->
+
+{{< include templates/_contact_items.qmd >}}
+{{< include templates/_social_links.qmd >}}
+{{< include templates/_mission_statement.qmd >}}
+{{< include templates/_research_interests.qmd >}}
+{{< include templates/_selected_publications.qmd >}}
+
+
+
+```{r}
+#| echo: false
+
+# Compose the full profile
+profile <- div(class = "member-profile",
+  div(class = "member-header",
+    div(class = "member-photo",
+      img(src = photo)
+    ),
+    div(class = "member-info",
+      h1(name),
+      p(class = "member-position", position),
+      div(class = "member-contact", contact_items, social_links)
+    )
+  ),
+  mission_block,
+  # custom content would most likely go here, right after the mission statement
+  div(class = "member-content",
+    interests_block,
+    publications_block
+  )
+)
+
+# Render the profile
+browsable(profile)  
+```
 
