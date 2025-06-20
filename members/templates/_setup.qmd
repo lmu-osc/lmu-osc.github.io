@@ -16,7 +16,7 @@ get_param <- function(param_name, default = "") {
 }
 
 # Extract member information
-name <- get_param("name", NULL)
+name <- get_param("title", NULL)
 position <- get_param("position", "")
 photo <- get_param("photo", "default-profile.jpg")
 email <- get_param("email", "")
@@ -25,6 +25,7 @@ mission_paragraphs <- get_param("mission_statement", list())
 research_interests <- get_param("research_interests", list())
 publications <- get_param("publications", list())
 website <- get_param("website", list())
+faculty <- get_param("faculty", "")
 
 # Map platform names to Bootstrap icons
 icon_map <- list(

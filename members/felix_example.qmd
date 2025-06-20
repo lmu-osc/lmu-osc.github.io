@@ -2,6 +2,7 @@
 # Member parameters
 title: "Dr. Felix Schönbrodt"
 position: "Managing Director of OSC"
+faculty: "Psychology"
 photo: "images/felix.jpeg"
 email: "Felix.Schoenbrodt@psy.lmu.de"
 website:
@@ -73,8 +74,8 @@ profile <- div(class = "member-profile",
       img(src = photo)
     ),
     div(class = "member-info",
-      h1(name),
       p(class = "member-position", position),
+      p(class = "member-faculty", paste0("Department of ", faculty)),
       div(class = "member-contact", contact_items, social_links)
     )
   ),

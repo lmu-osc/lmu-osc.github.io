@@ -46,6 +46,12 @@
 
 .member-position {
   font-size: 1.25rem;
+  color: #272727;
+  margin-bottom: 1rem;
+}
+
+.member-faculty {
+  font-size: 1.05rem;
   color: #555;
   margin-bottom: 1rem;
 }
