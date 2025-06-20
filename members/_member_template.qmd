@@ -4,8 +4,12 @@ title: "Dr. Felix Schönbrodt"
 position: "Managing Director of OSC"
 photo: "images/felix.jpeg"
 email: "Felix.Schoenbrodt@psy.lmu.de"
-personal_website: "https://nicebread.de"
-faculty_website: "https://www.osc.uni-muenchen.de/index.html"
+website:
+  - label: "Personal Website"
+    url: "https://nicebread.de"
+  - label: "Faculty Website"
+    url: "https://www.osc.uni-muenchen.de/index.html"
+
 
 # Social media links - variable number
 social_media:

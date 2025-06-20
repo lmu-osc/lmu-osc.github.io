@@ -8,20 +8,16 @@ if (email != "") {
     )
   )
 }
-if (!is.null(personal_website)) {
-  contact_items <- tagAppendChild(contact_items,
-    div(class = "contact-item",
-      tags$i(class = "bi bi-globe"),
-      a(href = personal_website, target = "_blank", "Personal Website")
+if (length(website) > 0) {
+  for (site in website) {
+    label <- if (!is.null(site$label)) site$label else "Website"
+    url <- if (!is.null(site$url)) site$url else "#"
+    contact_items <- tagAppendChild(contact_items,
+      div(class = "contact-item",
+        tags$i(class = "bi bi-globe"),
+        a(href = url, target = "_blank", label)
+      )
     )
-  )
-}
-if (!is.null(faculty_website)) {
-  contact_items <- tagAppendChild(contact_items,
-    div(class = "contact-item",
-      tags$i(class = "bi bi-globe"),
-      a(href = faculty_website, target = "_blank", "Faculty Website")
-    )
-  )
+  }
 }
 ```

@@ -20,12 +20,11 @@ name <- get_param("name", NULL)
 position <- get_param("position", "")
 photo <- get_param("photo", "default-profile.jpg")
 email <- get_param("email", "")
-personal_website <- get_param("personal_website", NULL)
-faculty_website <- get_param("faculty_website", NULL)
 social_media <- get_param("social_media", list())
 mission_paragraphs <- get_param("mission_statement", list())
 research_interests <- get_param("research_interests", list())
 publications <- get_param("publications", list())
+website <- get_param("website", list())
 
 # Map platform names to Bootstrap icons
 icon_map <- list(
