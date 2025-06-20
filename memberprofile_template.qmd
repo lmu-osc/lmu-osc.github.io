@@ -18,9 +18,10 @@ format:
 #| results: 'asis'
 #| echo: false
 
+library(htmltools)
+
 # Get parameters from the parent document
 member <- rmarkdown::metadata
-
 
 # Helper function to safely get parameter values with defaults
 get_param <- function(param_name, default = "") {
@@ -43,7 +44,6 @@ mission_paragraphs <- get_param("mission_statement", list())
 research_interests <- get_param("research_interests", list())
 publications <- get_param("publications", list())
 
-
 # Map platform names to Bootstrap icons
 icon_map <- list(
   "bluesky" = "fa-brands fa-bluesky", 
@@ -59,167 +59,122 @@ icon_map <- list(
   "facebook" = "fa-brands fa-facebook"
 )
 
-
-# Generate HTML content
-cat(
-glue::glue('
-<div class="member-profile">
-<div class="member-header">
-<div class="member-photo">
-<img src="{photo}">
-</div>
-<div class="member-info">
-<h1>{name}</h1>
-<p class="member-position">{position}</p>
-<div class="member-contact">
-'))
-
-# Email
+# Contact items
+contact_items <- tagList()
 if (email != "") {
-cat('
-<div class="contact-item">
-<i class="bi bi-envelope"></i>
-<a href="mailto:',email,'">',email,'</a>
-</div>
-')
+  contact_items <- tagAppendChild(contact_items,
+    div(class = "contact-item",
+      tags$i(class = "bi bi-envelope"),
+      a(href = paste0("mailto:", email), email)
+    )
+  )
 }
-
-# Personal website
 if (!is.null(personal_website)) {
-cat('
-<div class="contact-item">
-<i class="bi bi-globe"></i>
-<a href="',personal_website,'" target="_blank">Personal Website</a>
-</div>
-')
+  contact_items <- tagAppendChild(contact_items,
+    div(class = "contact-item",
+      tags$i(class = "bi bi-globe"),
+      a(href = personal_website, target = "_blank", "Personal Website")
+    )
+  )
 }
-
-# Faculty website
 if (!is.null(faculty_website)) {
-cat('
-<div class="contact-item">
-<i class="bi bi-globe"></i>
-<a href="',faculty_website,'" target="_blank">Faculty Website</a>
-</div>
-')
+  contact_items <- tagAppendChild(contact_items,
+    div(class = "contact-item",
+      tags$i(class = "bi bi-globe"),
+      a(href = faculty_website, target = "_blank", "Faculty Website")
+    )
+  )
 }
 
-# Social media links - using a for loop
+# Social media links
+social_links <- NULL
 if (length(social_media) > 0) {
-cat('
-<div class="member-socials">
-')
-
-
-# Iterate through each social media platform
-for (platform in names(social_media)) {
-platform_lower <- tolower(platform)
-icon <- if (platform_lower %in% names(icon_map)) icon_map[[platform_lower]] else "fa-solid fa-link"
-
-cat('
-<a href="', social_media[[platform]], '" title="', platform, '" target="_blank" class="social-link">
-<i class="', icon, '"></i>
-</a>
-')
+  social_links <- div(class = "member-socials",
+    lapply(names(social_media), function(platform) {
+      platform_lower <- tolower(platform)
+      icon <- if (platform_lower %in% names(icon_map)) icon_map[[platform_lower]] else "fa-solid fa-link"
+      a(
+        href = social_media[[platform]],
+        title = platform,
+        target = "_blank",
+        class = "social-link",
+        tags$i(class = icon)
+      )
+    })
+  )
 }
-
-cat('
-</div>
-')
-}
-
-cat('
-</div>
-</div>
-</div>
-')
 
 # Mission statement
+mission_block <- NULL
 if (length(mission_paragraphs) > 0) {
-cat('
-<div class="member-mission">
-<h2>Mission Statement</h2>
-')
-
-# Iterate through each paragraph in the mission statement
-for (paragraph in mission_paragraphs) {
-cat('<p>', paragraph, '</p>')
+  mission_block <- div(class = "member-mission",
+    h2("Mission Statement"),
+    lapply(mission_paragraphs, function(paragraph) p(paragraph))
+  )
 }
 
-cat('
-</div>
-')
-}
-
-cat('
-<div class="member-content">
-')
-
-# Research interests - using a for loop
+# Research interests
+interests_block <- NULL
 if (length(research_interests) > 0) {
-cat('
-<h2>Research Interests</h2>
-<div class="interests-container">
-')
-
-# Iterate through each research interest
-for (interest in research_interests) {
-cat('<div class="interest-tag">', interest, '</div>')
+  interests_block <- tagList(
+    h2("Research Interests"),
+    div(class = "interests-container",
+      lapply(research_interests, function(interest) {
+        div(class = "interest-tag", interest)
+      })
+    )
+  )
 }
 
-cat('
-</div>
-')
-}
-
-# Publications - using a for loop
+# Publications
+publications_block <- NULL
 if (length(publications) > 0) {
-cat('
-<h2>Selected Publications</h2>
-<div class="publications-list">
-')
-
-# Iterate through each publication
-for (i in 1:length(publications)) {
-pub <- publications[[i]]
-
-# Safely get publication details with defaults
-year <- if (is.null(pub$year)) "" else pub$year
-title <- if (is.null(pub$title)) "" else pub$title
-authors <- if (is.null(pub$authors)) "" else pub$authors
-journal <- if (is.null(pub$journal)) "" else pub$journal
-doi_url <- pub$doi_url  # This will be NULL if not present
-
-cat('
-<div class="publication-item">
-<div class="publication-year">', year, '</div>
-<div class="publication-content">
-<h3>"', title, '"</h3>
-<p class="publication-authors">', authors, '</p>
-<p class="publication-journal"><em>', journal, '</em></p>
-')
-
-if (!is.null(doi_url)) {
-cat('
-<div class="publication-links">
-<a href="', doi_url, '" class="pub-link"><i class="bi bi-box-arrow-up-right"></i> DOI</a>
-</div>
-')
+  publications_block <- tagList(
+    h2("Selected Publications"),
+    div(class = "publications-list",
+      lapply(publications, function(pub) {
+        year <- if (is.null(pub$year)) "" else pub$year
+        title <- if (is.null(pub$title)) "" else pub$title
+        authors <- if (is.null(pub$authors)) "" else pub$authors
+        journal <- if (is.null(pub$journal)) "" else pub$journal
+        doi_url <- pub$doi_url
+        div(class = "publication-item",
+          div(class = "publication-year", year),
+          div(class = "publication-content",
+            h3(sprintf('"%s"', title)),
+            p(class = "publication-authors", authors),
+            p(class = "publication-journal", tags$em(journal)),
+            if (!is.null(doi_url)) {
+              div(class = "publication-links",
+                a(href = doi_url, class = "pub-link", tags$i(class = "bi bi-box-arrow-up-right"), " DOI")
+              )
+            }
+          )
+        )
+      })
+    )
+  )
 }
 
-cat('
-</div>
-</div>
-')
-}
+# Compose the full profile
+profile <- div(class = "member-profile",
+  div(class = "member-header",
+    div(class = "member-photo",
+      img(src = photo)
+    ),
+    div(class = "member-info",
+      h1(name),
+      p(class = "member-position", position),
+      div(class = "member-contact", contact_items, social_links)
+    )
+  ),
+  mission_block,
+  div(class = "member-content",
+    interests_block,
+    publications_block
+  )
+)
 
-cat('
-</div>
-')
-}
-
-cat('
-</div>
-</div>
-')
+# Render the profile
+browsable(profile)
 ```
