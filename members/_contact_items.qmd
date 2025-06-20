@@ -1,0 +1,27 @@
+```{r}
+contact_items <- tagList()
+if (email != "") {
+  contact_items <- tagAppendChild(contact_items,
+    div(class = "contact-item",
+      tags$i(class = "bi bi-envelope"),
+      a(href = paste0("mailto:", email), email)
+    )
+  )
+}
+if (!is.null(personal_website)) {
+  contact_items <- tagAppendChild(contact_items,
+    div(class = "contact-item",
+      tags$i(class = "bi bi-globe"),
+      a(href = personal_website, target = "_blank", "Personal Website")
+    )
+  )
+}
+if (!is.null(faculty_website)) {
+  contact_items <- tagAppendChild(contact_items,
+    div(class = "contact-item",
+      tags$i(class = "bi bi-globe"),
+      a(href = faculty_website, target = "_blank", "Faculty Website")
+    )
+  )
+}
+```
