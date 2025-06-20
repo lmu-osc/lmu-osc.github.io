@@ -1,5 +1,6 @@
 project:
   type: website
+  output-dir: _site
   pre-render: curl https://raw.githubusercontent.com/lmu-osc/branding-resources/refs/heads/main/lmu-osc-custom.scss -o lmu-osc-custom.scss
 
 website:
