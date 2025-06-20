@@ -3,13 +3,13 @@ title: "Dr. Felix Schönbrodt"
 format: 
   html:
     css: 
-      - styles.css
-      - members.css
+      - ../styles.css
+      - ../members.css
 
 # Member parameters
 name: "Dr. Felix Schönbrodt"
 position: "Managing Director of OSC"
-photo: "felix.jpeg"
+photo: "./felix.jpeg"
 email: "Felix.Schoenbrodt@psy.lmu.de"
 personal_website: "https://nicebread.de"
 faculty_website: "https://www.osc.uni-muenchen.de/index.html"

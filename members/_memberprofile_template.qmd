@@ -1,10 +1,9 @@
 ---
-title: "Member Profile"
 format: 
   html:
     css: 
-      - styles.css
-      - members.css
+      - ../styles.css
+      - ../members.css
     page-layout: full
     toc: false
     include-in-header: 

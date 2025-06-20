@@ -3,8 +3,8 @@ title: "Dr. Felix Schönbrodt"
 format: 
   html:
     css: 
-      - styles.css
-      - members.css
+      - ../styles.css
+      - ../members.css
 
 # Member parameters
 name: "Dr. Felix Schönbrodt"
@@ -23,7 +23,7 @@ social_media:
 
 # Mission statement paragraphs - variable number
 mission_statement:
-  - "I am principal investigator for Psychological Methods and Assessment at the Department of Psychology. The reproducibility of research findings is a core criterion of science, which however, has been challenged by the failure of recent large-scale replication projects."
+  - "HELLO THERE. I am principal investigator for <strong>Psychological Methods and Assessment</strong> at the Department of Psychology. The reproducibility of research findings is a core criterion of science, which *however*, has been challenged by the failure of recent large-scale replication projects."
   - "Together with the board of the German Psychological Society (DGPs) I developed the society's recommendations for data sharing in psychology."
 
 # Research interests - variable number
@@ -47,4 +47,5 @@ publications:
     doi_url: "#"
 ---
 
-{{< include memberprofile_template.qmd >}}
+{{< include _memberprofile_template.qmd >}}
+
