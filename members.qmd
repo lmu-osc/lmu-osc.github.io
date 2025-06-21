@@ -1,6 +1,8 @@
 ---
 format: 
   html:
+    toc: true
+    toc-depth: 1
     css:
       - members.css
     page-layout: full
@@ -20,21 +22,27 @@ listing:
       template: member-listing.ejs
       include:
         membertype: staff
-    - id: advisory-board-listing
+    - id: current-advisory-board-listing
       contents: members
       template: member-listing.ejs
       include:
-        membertype: "advisory board"
+        membertype: "current advisory board"
     - id: current-scientific-board-listing
       contents: members
       template: member-listing.ejs
       include:
         membertype: "current scientific board"
     - id: lmu-individual-listing
+      categories: true
       contents: members
       template: member-listing.ejs
       include:
         membertype: "lmu-individual"
+    - id: associated-member-listing
+      contents: members
+      template: member-listing.ejs
+      include:
+        membertype: "associate"
     - id: fellow-listing
       contents: members
       template: member-listing.ejs
@@ -44,7 +52,12 @@ listing:
       contents: members
       template: member-listing.ejs
       include:
-        membertype: "previous scientific board"
+        membertype: "past scientific board"
+    - id: past-advisory-board-listing
+      contents: members
+      template: member-listing.ejs
+      include:
+        membertype: "past advisory board"
     - id: previous-member-listing
       contents: members
       template: member-listing.ejs
@@ -55,8 +68,7 @@ listing:
 
 
 
-# Directors
-
+# Managing Director & Scientific Coordinator
 ::: {#director-listing}
 :::
 
@@ -64,26 +76,36 @@ listing:
 ::: {#staff-listing}
 :::
 
-# Advisory Board
-::: {#advisory-board-listing}
-:::
-
-# Current Scientific Board
+# Scientific Board
 ::: {#current-scientific-board-listing}
 :::
 
-# LMU Individual Members
+# Advisory Board
+::: {#current-advisory-board-listing}
+:::
+
+# LMU Members
 ::: {#lmu-individual-listing}
+:::
+
+# Associated Members
+::: {#associated-member-listing}
 :::
 
 # Fellows
 ::: {#fellow-listing}
 :::
 
-# Previous Scientific Board
+# Previous 
+
+## Previous Scientific Board
 ::: {#past-scientific-board-listing}
 :::
 
-# Previous Members
+## Previous Advisory Board
+::: {#past-advisory-board-listing}
+:::
+
+## Previous Members
 ::: {#previous-member-listing}
 :::
