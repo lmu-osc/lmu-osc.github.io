@@ -4,6 +4,9 @@ format:
     css:
       - members.css
     page-layout: full
+    include-in-header: 
+      - text: |
+          <script src="assets/javascript/display_name_hover.js" defer></script>
 title: "Members"
 editor: source
 listing:
