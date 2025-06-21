@@ -1,81 +1,86 @@
 ---
 format: 
   html:
+    css:
+      - members.css
     page-layout: full
 title: "Members"
 editor: source
 listing:
-    contents: members
-    template: member-listing.ejs
+    - id: director-listing
+      contents: members
+      template: member-listing.ejs
+      include:
+        membertype: director
+    - id: staff-listing
+      contents: members
+      template: member-listing.ejs
+      include:
+        membertype: staff
+    - id: advisory-board-listing
+      contents: members
+      template: member-listing.ejs
+      include:
+        membertype: "advisory board"
+    - id: current-scientific-board-listing
+      contents: members
+      template: member-listing.ejs
+      include:
+        membertype: "current scientific board"
+    - id: lmu-individual-listing
+      contents: members
+      template: member-listing.ejs
+      include:
+        membertype: "lmu-individual"
+    - id: fellow-listing
+      contents: members
+      template: member-listing.ejs
+      include:
+        membertype: fellow
+    - id: past-scientific-board-listing
+      contents: members
+      template: member-listing.ejs
+      include:
+        membertype: "previous scientific board"
+    - id: previous-member-listing
+      contents: members
+      template: member-listing.ejs
+      include:
+        membertype: "former"
 ---
 
-<style>
-.member-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 0.8rem;
-  margin-top: 2rem;
-  max-width: 100%;
-}
 
-.member-img-link {
-  flex: 1 1 110px;
-  max-width: 110px;
-  width: 110px;
-  height: 110px;
-  display: block;
-}
 
-.member-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 3px solid #eee;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
-  transition: box-shadow 0.2s;
-}
 
-.member-img-link:hover .member-img {
-  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
-}
+# Directors
 
-.member-tooltip {
-  position: fixed;
-  pointer-events: none;
-  background: rgba(0,0,0,0.85);
-  color: #fff;
-  padding: 6px 14px;
-  border-radius: 6px;
-  font-size: 1rem;
-  z-index: 1000;
-  white-space: nowrap;
-  opacity: 0;
-  transition: opacity 0.15s;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.18);
-}
-</style>
+::: {#director-listing}
+:::
 
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  const tooltip = document.createElement('div');
-  tooltip.className = 'member-tooltip';
-  document.body.appendChild(tooltip);
+# Staff
+::: {#staff-listing}
+:::
 
-  document.querySelectorAll('.member-img-link').forEach(link => {
-    link.addEventListener('mouseenter', e => {
-      tooltip.textContent = link.getAttribute('data-title');
-      tooltip.style.opacity = '1';
-    });
-    link.addEventListener('mousemove', e => {
-      tooltip.style.left = (e.clientX + 16) + 'px';
-      tooltip.style.top = (e.clientY + 8) + 'px';
-    });
-    link.addEventListener('mouseleave', e => {
-      tooltip.style.opacity = '0';
-    });
-  });
-});
-</script>
+# Advisory Board
+::: {#advisory-board-listing}
+:::
 
+# Current Scientific Board
+::: {#current-scientific-board-listing}
+:::
+
+# LMU Individual Members
+::: {#lmu-individual-listing}
+:::
+
+# Fellows
+::: {#fellow-listing}
+:::
+
+# Previous Scientific Board
+::: {#past-scientific-board-listing}
+:::
+
+# Previous Members
+::: {#previous-member-listing}
+:::
