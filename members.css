@@ -296,3 +296,66 @@
   transition: opacity 0.15s;
   box-shadow: 0 2px 8px rgba(0,0,0,0.18);
 }
+
+
+
+/* Large member grid variation */
+.member-grid-large {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2.8rem;
+  margin-top: 2rem;
+}
+
+.member-img-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 210px; /* Increased width for name and image */
+}
+
+.member-img-link-large {
+  width: 180px;
+  height: 180px;
+  aspect-ratio: 1 / 1;
+  display: block;
+  max-width: 180px;
+  max-height: 180px;
+}
+
+.member-img-large {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 50% !important;
+  border: 3px solid #eee;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  transition: box-shadow 0.2s;
+  display: block;
+}
+
+.member-img-link-large:hover .member-img-large {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+
+.member-img-name {
+  margin-top: 0.7rem;
+  font-size: 1.22rem;
+  font-weight: bold;
+  color: #2D3748;
+  text-align: center;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-decoration: none;
+  display: block;
+}
+
+.member-img-name:hover,
+.member-img-name:focus {
+  color: #0056b3; /* or your preferred hover color */
+  text-decoration: underline;
+}

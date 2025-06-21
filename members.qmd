@@ -12,7 +12,7 @@ editor: source
 listing:
     - id: director-listing
       contents: members
-      template: member-listing.ejs
+      template: member-listing-large.ejs
       include:
         membertype: director
     - id: staff-listing
