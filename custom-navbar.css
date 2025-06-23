@@ -34,7 +34,7 @@
   white-space: nowrap;
   display: flex;
   align-items: center;
-  gap: 0.7em;
+  gap: 0.1em;
 }
 
 .navbar-nav .nav-link:hover, .quarto-navbar .nav-link:hover,
