@@ -8,6 +8,12 @@
     ]
   },
   {
+    "listing": "/tutorials/open_access.html",
+    "items": [
+      "/tutorials/open_access/open_access_preprints_postprints.html"
+    ]
+  },
+  {
     "listing": "/tutorials/reproducible_workflows.html",
     "items": [
       "/tutorials/reproducible_workflows/introduction_to_r.html",
@@ -21,22 +27,10 @@
     ]
   },
   {
-    "listing": "/tutorials/data_management_simulation_sharing.html",
+    "listing": "/people.html",
     "items": [
-      "/tutorials/data_management_simulation_sharing/introduction_to_open_research_data.html",
-      "/tutorials/data_management_simulation_sharing/fair_data_management.html",
-      "/tutorials/data_management_simulation_sharing/fair_data_sharing.html",
-      "/tutorials/data_management_simulation_sharing/maintaining_privacy_with_open_data.html",
-      "/tutorials/data_management_simulation_sharing/introduction_to_simulations_in_r.html",
-      "/tutorials/data_management_simulation_sharing/synthetic_data_commision.html"
-    ]
-  },
-  {
-    "listing": "/tutorials/replicability_crisis_and_credibility_revolution.html",
-    "items": [
-      "/tutorials/replicability_crisis_and_credibility_revolution/from_replicability_crisis_to_credible_science.html",
-      "/tutorials/replicability_crisis_and_credibility_revolution/credibility_revolution.html",
-      "/tutorials/replicability_crisis_and_credibility_revolution/how_to_make_your_science_credible.html"
+      "/people/felix_example.html",
+      "/people/malika_ihle.html"
     ]
   },
   {
@@ -71,9 +65,22 @@
     ]
   },
   {
-    "listing": "/tutorials/open_access.html",
+    "listing": "/tutorials/replicability_crisis_and_credibility_revolution.html",
     "items": [
-      "/tutorials/open_access/open_access_preprints_postprints.html"
+      "/tutorials/replicability_crisis_and_credibility_revolution/from_replicability_crisis_to_credible_science.html",
+      "/tutorials/replicability_crisis_and_credibility_revolution/credibility_revolution.html",
+      "/tutorials/replicability_crisis_and_credibility_revolution/how_to_make_your_science_credible.html"
+    ]
+  },
+  {
+    "listing": "/tutorials/data_management_simulation_sharing.html",
+    "items": [
+      "/tutorials/data_management_simulation_sharing/introduction_to_open_research_data.html",
+      "/tutorials/data_management_simulation_sharing/fair_data_management.html",
+      "/tutorials/data_management_simulation_sharing/fair_data_sharing.html",
+      "/tutorials/data_management_simulation_sharing/maintaining_privacy_with_open_data.html",
+      "/tutorials/data_management_simulation_sharing/introduction_to_simulations_in_r.html",
+      "/tutorials/data_management_simulation_sharing/synthetic_data_commision.html"
     ]
   }
 ]
