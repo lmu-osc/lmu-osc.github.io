@@ -1,5 +1,5 @@
-/* Member Profile Styling */
-.member-profile {
+/* people Profile Styling */
+.people-profile {
   max-width: 1200px;
   margin: 0 auto;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
@@ -10,7 +10,7 @@
   box-shadow: 0 10px 25px rgba(0,0,0,0.05);
 }
 
-.member-header {
+.people-header {
   display: flex;
   align-items: flex-start;
   gap: 2rem;
@@ -18,11 +18,11 @@
   padding-bottom: 2rem;
 }
 
-.member-photo {
+.people-photo {
   flex: 0 0 250px;
 }
 
-.member-photo img {
+.people-photo img {
   width: 100%;
   height: auto;
   border-radius: 12px;
@@ -30,33 +30,33 @@
   transition: transform 0.5s ease;
 }
 
-.member-photo:hover {
+.people-photo:hover {
   transform: scale(1.025);
 }
 
-.member-info {
+.people-info {
   flex: 1;
 }
 
-.member-info h1 {
+.people-info h1 {
   margin-top: 0;
   margin-bottom: 0.5rem;
   font-size: 2.5rem;
 }
 
-.member-position {
+.people-position {
   font-size: 1.25rem;
   color: #272727;
   margin-bottom: 1rem;
 }
 
-.member-faculty {
+.people-faculty {
   font-size: 1.05rem;
   color: #555;
   margin-bottom: 1rem;
 }
 
-.member-contact {
+.people-contact {
   margin-top: 1.5rem;
 }
 
@@ -76,7 +76,7 @@
   text-decoration: underline;
 }
 
-.member-socials {
+.people-socials {
   display: flex;
   gap: 1rem;
   margin-top: 2rem;
@@ -112,24 +112,24 @@
   transform: translateY(-2px);
 }
 
-.member-mission {
+.people-mission {
   background-color: #f7fcf8;
   border-radius: 5px;
   margin-bottom: 2rem;
 }
 
-.member-mission h2 {
+.people-mission h2 {
   margin-top: 0;
   font-size: 1.5rem;
 }
 
-.member-mission p {
+.people-mission p {
   margin-bottom: 1rem;
   color: #555;
   line-height: 1.6;
 }
 
-.member-content h2 {
+.people-content h2 {
   border-bottom: 2px solid #eaeaea;
   padding-bottom: 0.5rem;
   margin-top: 2rem;
@@ -225,13 +225,13 @@
 
 /* Responsive design */
 @media (max-width: 768px) {
-  .member-header {
+  .people-header {
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
   
-  .member-photo {
+  .people-photo {
     flex: 0 0 200px;
     margin-bottom: 1.5rem;
   }
@@ -251,7 +251,7 @@
 }
 
 
-.member-grid {
+.people-grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -260,7 +260,7 @@
   max-width: 100%;
 }
 
-.member-img-link {
+.people-img-link {
   flex: 1 1 110px;
   max-width: 110px;
   width: 110px;
@@ -268,7 +268,7 @@
   display: block;
 }
 
-.member-img {
+.people-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -278,11 +278,11 @@
   transition: box-shadow 0.2s;
 }
 
-.member-img-link:hover .member-img {
+.people-img-link:hover .people-img {
   box-shadow: 0 4px 16px rgba(0,0,0,0.15);
 }
 
-.member-tooltip {
+.people-tooltip {
   position: fixed;
   pointer-events: none;
   background: rgba(0,0,0,0.85);
@@ -299,8 +299,8 @@
 
 
 
-/* Large member grid variation */
-.member-grid-large {
+/* Large people grid variation */
+.people-grid-large {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -308,14 +308,14 @@
   margin-top: 2rem;
 }
 
-.member-img-block {
+.people-img-block {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 210px; /* Increased width for name and image */
 }
 
-.member-img-link-large {
+.people-img-link-large {
   width: 180px;
   height: 180px;
   aspect-ratio: 1 / 1;
@@ -324,7 +324,7 @@
   max-height: 180px;
 }
 
-.member-img-large {
+.people-img-large {
   width: 100%;
   height: 100%;
   aspect-ratio: 1 / 1;
@@ -336,11 +336,11 @@
   display: block;
 }
 
-.member-img-link-large:hover .member-img-large {
+.people-img-link-large:hover .people-img-large {
   box-shadow: 0 4px 16px rgba(0,0,0,0.15);
 }
 
-.member-img-name {
+.people-img-name {
   margin-top: 0.7rem;
   font-size: 1.22rem;
   font-weight: bold;
@@ -354,8 +354,8 @@
   display: block;
 }
 
-.member-img-name:hover,
-.member-img-name:focus {
+.people-img-name:hover,
+.people-img-name:focus {
   color: #0056b3; /* or your preferred hover color */
   text-decoration: underline;
 }

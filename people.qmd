@@ -4,63 +4,63 @@ format:
     toc: true
     toc-depth: 1
     css:
-      - members.css
+      - people.css
     page-layout: full
     include-in-header: 
       - text: |
           <script src="assets/javascript/display_name_hover.js" defer></script>
-title: "Members"
+title: "People"
 editor: source
 listing:
     - id: director-listing
-      contents: members
-      template: member-listing-large.ejs
+      contents: people
+      template: people-listing-large.ejs
       include:
         membertype: director
     - id: staff-listing
-      contents: members
-      template: member-listing.ejs
+      contents: people
+      template: people-listing.ejs
       include:
         membertype: staff
     - id: current-advisory-board-listing
-      contents: members
-      template: member-listing.ejs
+      contents: people
+      template: people-listing.ejs
       include:
         membertype: "current advisory board"
     - id: current-scientific-board-listing
-      contents: members
-      template: member-listing.ejs
+      contents: people
+      template: people-listing.ejs
       include:
         membertype: "current scientific board"
     - id: lmu-individual-listing
       categories: true
-      contents: members
-      template: member-listing.ejs
+      contents: people
+      template: people-listing.ejs
       include:
         membertype: "lmu-individual"
     - id: associated-member-listing
-      contents: members
-      template: member-listing.ejs
+      contents: people
+      template: people-listing.ejs
       include:
         membertype: "associate"
     - id: fellow-listing
-      contents: members
-      template: member-listing.ejs
+      contents: people
+      template: people-listing.ejs
       include:
         membertype: fellow
     - id: past-scientific-board-listing
-      contents: members
-      template: member-listing.ejs
+      contents: people
+      template: people-listing.ejs
       include:
         membertype: "past scientific board"
     - id: past-advisory-board-listing
-      contents: members
-      template: member-listing.ejs
+      contents: people
+      template: people-listing.ejs
       include:
         membertype: "past advisory board"
     - id: previous-member-listing
-      contents: members
-      template: member-listing.ejs
+      contents: people
+      template: people-listing.ejs
       include:
         membertype: "former"
 ---
