@@ -1,7 +1,7 @@
 ```{r}
 mission_block <- NULL
 if (length(mission_paragraphs) > 0) {
-  mission_block <- div(class = "member-mission",
+  mission_block <- div(class = "people-mission",
     h2("Mission Statement"),
     lapply(mission_paragraphs, function(paragraph) p(htmltools::HTML(shiny::markdown(paragraph))))
   )
