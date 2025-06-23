@@ -9,7 +9,7 @@ website:
   reader-mode: true
   search: true
   page-navigation: true
-  page-footer: "Copyright LMU Open Science Center, 2024"
+  page-footer: "Copyright LMU Open Science Center, 2025"
   repo-url: https://github.com/lmu-osc/lmu-osc.github.io
   repo-actions: [edit, issue]
 
@@ -19,30 +19,29 @@ website:
         href: https://github.com/lmu-osc
     left:
       - href: index.qmd
-        text: Tutorials
+        text: Home
       - href: about.qmd
         text: About
+      - sidebar:training
       - href: people.qmd
         text: People
       - href: events.qmd
         text: Events
       - href: news.qmd
         text: News
-    right: 
-      - sidebar:rtutorials
-      - sidebar:gittutorials
-      - sidebar:quartotutorials
-  # 
-  #     
-  # sidebar:
-  #   - id: rtutorials
-  #     title: "R Tutorials"
-  #     style: "docked"
-  #     background: light
-  #     collapse-level: 2
-  #     contents: 
-  #       - qmd_one.qmd
-  #       - qmd_two.qmd
+    
+  
+      
+  sidebar:
+    - id: training
+      title: "Training"
+      style: "docked"
+      background: light
+      collapse-level: 2
+      contents: 
+        - self-training.qmd
+        - train-the-trainer.qmd
+        - open-research-cycle.qmd
   # 
   #   - id: gittutorials
   #     title: "Git Tutorials"
