@@ -31,6 +31,10 @@
   padding: 0.7rem 1.1rem;
   border-radius: 6px;
   transition: background 0.2s, color 0.2s;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 0.7em;
 }
 
 .navbar-nav .nav-link:hover, .quarto-navbar .nav-link:hover,
