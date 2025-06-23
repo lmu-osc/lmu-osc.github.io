@@ -14,25 +14,37 @@ website:
   repo-actions: [edit, issue]
 
   navbar:
+    background: "#2b864b"
+    foreground: "#fff"
+    logo: assets/img/osc_image_assets/TutorialCardCard.png
+    collapse-below: lg
     tools:
       - icon: github
         href: https://github.com/lmu-osc
+        aria-label: "GitHub"
     left:
       - href: index.qmd
+        icon: house-door
         text: Home
       - href: about.qmd
+        icon: info-circle
         text: About
       - sidebar:training
       - text: People
+        icon: people
         menu: 
           - people.qmd
           - leadership.qmd
           - boards.qmd
           - members.qmd
       - href: events.qmd
+        icon: calendar-event
         text: Events
       - href: news.qmd
         text: News
+    right:
+      - icon: search
+        aria-label: "Search"
     
   
       
@@ -40,6 +52,7 @@ website:
     - id: training
       title: "Training"
       style: "docked"
+      icon: mortarboard
       background: light
       collapse-level: 2
       contents: 
