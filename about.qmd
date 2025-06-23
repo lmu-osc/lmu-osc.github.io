@@ -1,5 +1,14 @@
 ---
 title: "About"
+page-navigation: false
+toc: false
+format:
+  html:
+    grid:
+      sidebar-width: 100px
+      body-width: 1050px
+      margin-width: 200px
+      gutter-width: 2em
 ---
 
 About this site
