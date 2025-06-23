@@ -1,6 +1,112 @@
 ---
+format: 
+  html:
+    toc: true
+    toc-depth: 1
+    css:
+      - members.css
+    page-layout: full
+    include-in-header: 
+      - text: |
+          <script src="assets/javascript/display_name_hover.js" defer></script>
 title: "Members"
 editor: source
 listing:
-    contents: members
+    - id: director-listing
+      contents: members
+      template: member-listing-large.ejs
+      include:
+        membertype: director
+    - id: staff-listing
+      contents: members
+      template: member-listing.ejs
+      include:
+        membertype: staff
+    - id: current-advisory-board-listing
+      contents: members
+      template: member-listing.ejs
+      include:
+        membertype: "current advisory board"
+    - id: current-scientific-board-listing
+      contents: members
+      template: member-listing.ejs
+      include:
+        membertype: "current scientific board"
+    - id: lmu-individual-listing
+      categories: true
+      contents: members
+      template: member-listing.ejs
+      include:
+        membertype: "lmu-individual"
+    - id: associated-member-listing
+      contents: members
+      template: member-listing.ejs
+      include:
+        membertype: "associate"
+    - id: fellow-listing
+      contents: members
+      template: member-listing.ejs
+      include:
+        membertype: fellow
+    - id: past-scientific-board-listing
+      contents: members
+      template: member-listing.ejs
+      include:
+        membertype: "past scientific board"
+    - id: past-advisory-board-listing
+      contents: members
+      template: member-listing.ejs
+      include:
+        membertype: "past advisory board"
+    - id: previous-member-listing
+      contents: members
+      template: member-listing.ejs
+      include:
+        membertype: "former"
 ---
+
+
+
+
+# Managing Director & Scientific Coordinator
+::: {#director-listing}
+:::
+
+# Staff
+::: {#staff-listing}
+:::
+
+# Scientific Board
+::: {#current-scientific-board-listing}
+:::
+
+# Advisory Board
+::: {#current-advisory-board-listing}
+:::
+
+# LMU Members
+::: {#lmu-individual-listing}
+:::
+
+# Associated Members
+::: {#associated-member-listing}
+:::
+
+# Fellows
+::: {#fellow-listing}
+:::
+
+# Previous 
+
+## Previous Scientific Board
+::: {#past-scientific-board-listing}
+:::
+
+## Previous Advisory Board
+::: {#past-advisory-board-listing}
+:::
+
+## Previous Members
+::: {#previous-member-listing}
+:::
+
