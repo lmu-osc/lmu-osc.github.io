@@ -29,7 +29,13 @@ website:
       - href: about.qmd
         icon: info-circle
         text: About
-      - sidebar:training
+      # - sidebar:training
+      - icon: mortarboard
+        text: Training
+        menu:
+          - self-training.qmd
+          - train-the-trainer.qmd
+          - open-research-cycle.qmd
       - text: People
         icon: people
         menu: 
@@ -41,6 +47,7 @@ website:
         icon: calendar-event
         text: Events
       - href: news.qmd
+        icon: rss
         text: News
     right:
       - icon: search
@@ -51,8 +58,8 @@ website:
   sidebar:
     - id: training
       title: "Training"
-      style: "docked"
       icon: mortarboard
+      style: "docked"
       background: light
       collapse-level: 2
       contents: 
