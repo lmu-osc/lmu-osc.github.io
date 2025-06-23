@@ -16,7 +16,7 @@ website:
   navbar:
     background: "#2b864b"
     foreground: "#fff"
-    logo: assets/img/osc_image_assets/TutorialCardCard.png
+    # logo: assets/img/osc_image_assets/TutorialCardCard.png
     collapse-below: lg
     tools:
       - icon: github
