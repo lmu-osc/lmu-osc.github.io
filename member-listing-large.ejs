@@ -1,0 +1,10 @@
+<div class="member-grid member-grid-large">
+<% for (const item of items) { %>
+<div class="member-img-block">
+  <a class="member-img-link member-img-link-large" href="<%= item.path %>" data-title="<%= item.title %>">
+    <img class="member-img member-img-large" src="members/<%= item.photo %>" alt="<%= item.title %>">
+  </a>
+  <a class="member-img-name" href="<%= item.path %>"><%= item.title %></a>
+</div>
+<% } %>
+</div>

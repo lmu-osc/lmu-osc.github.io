@@ -1,0 +1,30 @@
+```{r}
+publications_block <- NULL
+if (length(publications) > 0) {
+  publications_block <- tagList(
+    h2("Selected Publications"),
+    div(class = "publications-list",
+      lapply(publications, function(pub) {
+        year <- if (is.null(pub$year)) "" else pub$year
+        title <- if (is.null(pub$title)) "" else pub$title
+        authors <- if (is.null(pub$authors)) "" else pub$authors
+        journal <- if (is.null(pub$journal)) "" else pub$journal
+        doi_url <- pub$doi_url
+        div(class = "publication-item",
+          div(class = "publication-year", year),
+          div(class = "publication-content",
+            h3(sprintf('"%s"', title)),
+            p(class = "publication-authors", authors),
+            p(class = "publication-journal", tags$em(journal)),
+            if (!is.null(doi_url)) {
+              div(class = "publication-links",
+                a(href = doi_url, class = "pub-link", tags$i(class = "bi bi-box-arrow-up-right"), " DOI")
+              )
+            }
+          )
+        )
+      })
+    )
+  )
+}
+```
