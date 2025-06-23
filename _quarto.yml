@@ -20,6 +20,8 @@ website:
     left:
       - href: index.qmd
         text: Home
+      - href: about.qmd
+        text: About
       - sidebar:training
       - text: People
         menu: 
