@@ -15,6 +15,8 @@ listing:
     - id: director-listing
       contents: people
       template: people-listing-large.ejs
+      sort: 
+        - "display_weight"
       include:
         membertype: director
     - id: staff-listing

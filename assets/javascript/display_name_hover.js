@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() {
   const tooltip = document.createElement('div');
-  tooltip.className = 'member-tooltip';
+  tooltip.className = 'people-tooltip';
   document.body.appendChild(tooltip);
 
-  document.querySelectorAll('.member-img-link').forEach(link => {
+  document.querySelectorAll('.people-img-link').forEach(link => {
     link.addEventListener('mouseenter', e => {
       tooltip.textContent = link.getAttribute('data-title');
       tooltip.style.opacity = '1';

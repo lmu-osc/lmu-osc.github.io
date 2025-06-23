@@ -6,6 +6,7 @@ faculty: "Medicine"
 membertype: ["director", "lmu-individual"]
 photo: "images/malika.JPG"
 email: "malika.ihle@psy.lmu.de"
+display_weight: 2
 website:
   - label: "Personal Website"
     url: "https://nicebread.de"
@@ -69,20 +70,20 @@ necessary HTML elements to render the section.
 #| echo: false
 
 # Compose the full profile
-profile <- div(class = "member-profile",
-  div(class = "member-header",
-    div(class = "member-photo",
+profile <- div(class = "people-profile",
+  div(class = "people-header",
+    div(class = "people-photo",
       img(src = photo)
     ),
-    div(class = "member-info",
-      p(class = "member-position", position),
-      p(class = "member-faculty", paste0("Department of ", faculty)),
-      div(class = "member-contact", contact_items, social_links)
+    div(class = "people-info",
+      p(class = "people-position", position),
+      p(class = "people-faculty", paste0("Department of ", faculty)),
+      div(class = "people-contact", contact_items, social_links)
     )
   ),
   mission_block,
   # custom content would most likely go here, right after the mission_block
-  div(class = "member-content",
+  div(class = "people-content",
     interests_block,
     publications_block
   )
