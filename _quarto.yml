@@ -20,11 +20,13 @@ website:
     left:
       - href: index.qmd
         text: Home
-      - href: about.qmd
-        text: About
       - sidebar:training
-      - href: people.qmd
-        text: People
+      - text: People
+        menu: 
+          - people.qmd
+          - leadership.qmd
+          - boards.qmd
+          - members.qmd
       - href: events.qmd
         text: Events
       - href: news.qmd
