@@ -14,16 +14,16 @@ listing:
     sort:
       - "tutorial-home-order"
     contents: 
-      - "tutorials"
-      - "!tutorials/*/**"
-    image-placeholder: "../assets/img/lmu_osc_logo.jpg"
+      - "training"
+      - "!training/*/**"
+    image-placeholder: "assets/img/lmu_osc_logo.jpg"
     image-height: 200px
   - id: all_tutorials
     sort:
       - "content_category"
     type: table
     contents:
-      - tutorials/*/**.qmd
+      - training/*/**.qmd
     fields: 
       - content_category
       - title
@@ -34,23 +34,9 @@ listing:
       title: "Tutorial"
       description: "Description"
       categories: "Tags"
-format:
-  html:
-    grid:
-      sidebar-width: 100px
-      body-width: 1050px
-      margin-width: 200px
-      gutter-width: 2em
-title-block-banner: "assets/img/osc_image_assets/Banner1.jpg"
 include-in-header:
   - text: |
       <script src="assets/javascript/clear_filter_button.js" defer></script>
-      <style>
-      .quarto-title-block .quarto-title-banner {
-        background-position-y: center;
-        height: 400px;
-      }
-      </style>
 ---
 
 

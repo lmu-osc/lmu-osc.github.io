@@ -39,9 +39,9 @@ website:
       background: light
       collapse-level: 2
       contents: 
-        - training/self-training.qmd
-        - training/train-the-trainer.qmd
-        - training/open-research-cycle.qmd
+        - self-training.qmd
+        - train-the-trainer.qmd
+        - open-research-cycle.qmd
   # 
   #   - id: gittutorials
   #     title: "Git Tutorials"
