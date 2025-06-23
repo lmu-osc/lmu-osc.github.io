@@ -2,38 +2,6 @@
 title: "LMU Open Science Center"
 page-navigation: false
 toc: false
-listing:
-  - id: tutorial_categories
-    type: grid
-    grid-columns: 3
-    grid-item-align: center
-    grid-item-border: true
-    max-description-length: 175
-    date-format: long
-    categories: unnumbered
-    sort:
-      - "tutorial-home-order"
-    contents: 
-      - "tutorials"
-      - "!tutorials/*/**"
-    image-placeholder: "../assets/img/lmu_osc_logo.jpg"
-    image-height: 200px
-  - id: all_tutorials
-    sort:
-      - "content_category"
-    type: table
-    contents:
-      - tutorials/*/**.qmd
-    fields: 
-      - content_category
-      - title
-      - description
-      - categories
-    field-display-names:
-      content_category: "Topic"
-      title: "Tutorial"
-      description: "Description"
-      categories: "Tags"
 format:
   html:
     grid:
