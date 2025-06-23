@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="description" content="Something about reproducible workflow. Two sentences I suppose.">
 
-<title>Dr.&nbsp;Felix Schönbrodt – LMU Open Science Center</title>
+<title>Reproducible Workflow – LMU Open Science Center</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -31,6 +32,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
 <link href="../assets/img/lmu_osc_logo.jpg" rel="icon" type="image/jpeg">
+<script src="../site_libs/quarto-listing/list.min.js"></script>
+<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
@@ -40,7 +43,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-2fdf26e506e481348edb78e4832d536b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-57f1d53e688439529cb765c96e8a7755.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -68,6 +71,35 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
 <!-- Matomo -->
 <script>
   var _paq = window._paq = window._paq || [];
@@ -83,14 +115,38 @@ ul.task-list li input[type="checkbox"] {
   })();
 </script>
 <!-- End Matomo Code -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"> 
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="https://raw.githubusercontent.com/lmu-osc/branding-resources/refs/heads/main/styles.css">
-<link rel="stylesheet" href="../styles.css">
-<link rel="stylesheet" href="../people.css">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -163,21 +219,35 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
+    </div>
 <!-- main -->
-<main class="content column-page" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Dr.&nbsp;Felix Schönbrodt</h1>
+<h1 class="title">Reproducible Workflow</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">R</div>
+    <div class="quarto-category">{renv}</div>
+    <div class="quarto-category">Git</div>
+    <div class="quarto-category">Quarto</div>
+    <div class="quarto-category">Zotero</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    Something about reproducible workflow. Two sentences I suppose.
+  </div>
 </div>
 
 
-
-<div class="quarto-title-meta column-page">
+<div class="quarto-title-meta">
 
     
   
@@ -189,115 +259,167 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<!-- The "includes" below are templates for the different sections of the
-member profile pages. Each document returns an R object that contains the
-necessary HTML elements to render the section.
- 1. You can modify these templates to change the layout or content of each section. This will change the layout of all member profiles the next time the site is built.
- 2. You can also create new templates for additional sections if needed.
- 3. If you want to add some custom content for an individual member, you can do so directly in the member's .QMD file, outside of the includes. You will then need to insert the new R object containing HTML into the `profile` object below.
--->
-<div class="cell">
-<div class="cell-output-display">
-<div class="member-profile">
-<div class="member-header">
-<div class="member-photo">
-<img src="images/felix.jpeg">
-</div>
-<div class="member-info">
-<p class="member-position">Managing Director of OSC</p>
-<p class="member-faculty">Department of Psychology</p>
-<div class="member-contact">
-<div class="contact-item">
-<i class="bi bi-envelope"></i>
-<a href="mailto:Felix.Schoenbrodt@psy.lmu.de">Felix.Schoenbrodt@psy.lmu.de</a>
-</div>
-<div class="contact-item">
-<i class="bi bi-globe"></i>
-<a href="https://nicebread.de" target="_blank">Personal Website</a>
-</div>
-<div class="contact-item">
-<i class="bi bi-globe"></i>
-<a href="https://www.osc.uni-muenchen.de/index.html" target="_blank">Faculty Website</a>
-</div>
-<div class="contact-item">
-<i class="bi bi-globe"></i>
-<a href="https://www.psy.lmu.de/" target="_blank">Department of Psychology</a>
-</div>
-<div class="people-socials">
-<a href="https://bsky.app/profile/lmu-osc.bsky.social" title="Bluesky" target="_blank" class="social-link">
-<i class="fa-brands fa-bluesky"></i>
-</a>
-<a href="https://www.linkedin.com/in/felixschoenbrodt" title="LinkedIn" target="_blank" class="social-link">
-<i class="fa-brands fa-linkedin"></i>
-</a>
-<a href="https://github.com/nicebread" title="GitHub" target="_blank" class="social-link">
-<i class="fa-brands fa-github"></i>
-</a>
-<a href="https://orcid.org/0000-0002-8282-3910" title="ORCID" target="_blank" class="social-link">
-<i class="fa-brands fa-orcid"></i>
-</a>
-</div>
-</div>
-</div>
-</div>
-<div class="people-mission">
-<h2 class="anchored">Mission Statement</h2>
-<p></p><p>HELLO THERE. I am principal investigator for <strong>Psychological Methods and Assessment</strong> at the Department of Psychology. The reproducibility of research findings is a core criterion of science, which <em>however</em>, has been challenged by the failure of recent large-scale replication projects.</p>
-<p></p>
-<p></p><p>Together with the board of the German Psychological Society (DGPs) I developed the society's recommendations for data sharing in psychology.</p>
-<p></p>
-</div>
-<div class="member-content">
-<h2 class="anchored">Research Interests</h2>
-<div class="interests-container">
-<div class="interest-tag">Open Science</div>
-<div class="interest-tag">Psychology</div>
-<div class="interest-tag">Psychological Methods</div>
-<div class="interest-tag">Data Sharing</div>
-</div>
-<h2 class="anchored">Selected Publications</h2>
-<div class="publications-list">
-<div class="publication-item">
-<div class="publication-year">2024</div>
-<div class="publication-content">
-<h3 class="anchored">"Machine Learning Applications in Organizational Behavior"</h3>
-<p class="publication-authors">Smith, J., Johnson, A., &amp; Williams, R.</p>
-<p class="publication-journal">
-<em>Journal of Applied Research, 42(3), 256-278</em>
-</p>
-<div class="publication-links">
-<a href="#" class="pub-link">
-<i class="bi bi-box-arrow-up-right"></i>
- DOI
-</a>
-</div>
-</div>
-</div>
-<div class="publication-item">
-<div class="publication-year">2023</div>
-<div class="publication-content">
-<h3 class="anchored">"Open Methods in Psychology"</h3>
-<p class="publication-authors">Schönbrodt, F.</p>
-<p class="publication-journal">
-<em>Psychological Methods, 15(2), 112-143</em>
-</p>
-<div class="publication-links">
-<a href="#" class="pub-link">
-<i class="bi bi-box-arrow-up-right"></i>
- DOI
-</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
 
 
 
-</main> <!-- /main -->
+
+<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-categories="Ug==" data-listing-file-modified-sort="1750695903213" data-listing-reading-time-sort="1" data-listing-word-count-sort="30">
+<div class="thumbnail"><a href="../training/reproducible_workflows/introduction_to_r.html" class="no-external">
+
+<img loading="lazy" src="../training/images/pupholder.png" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../training/reproducible_workflows/introduction_to_r.html" class="no-external">Introduction to R</a>
+</h3>
+<div class="delink listing-description"><a href="../training/reproducible_workflows/introduction_to_r.html" class="no-external">
+<p>Learn the basics of the R programming language</p>
+</a></div>
+</div>
+<div class="metadata">
+<a href="../training/reproducible_workflows/introduction_to_r.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-categories="Ug==" data-listing-file-modified-sort="1750695903213" data-listing-reading-time-sort="1" data-listing-word-count-sort="30">
+<div class="thumbnail"><a href="../training/reproducible_workflows/introduction_to_version_control_within_rstudio.html" class="no-external">
+
+<img loading="lazy" src="../training/images/pupholder.png" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../training/reproducible_workflows/introduction_to_version_control_within_rstudio.html" class="no-external">Introduction to Version Control within RStudio</a>
+</h3>
+<div class="delink listing-description"><a href="../training/reproducible_workflows/introduction_to_version_control_within_rstudio.html" class="no-external">
+<p>Explore the git version control software and its integrations with the popular RStudio interactive development environment</p>
+</a></div>
+</div>
+<div class="metadata">
+<a href="../training/reproducible_workflows/introduction_to_version_control_within_rstudio.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="2" data-categories="Ug==" data-listing-file-modified-sort="1750695903213" data-listing-reading-time-sort="1" data-listing-word-count-sort="30">
+<div class="thumbnail"><a href="../training/reproducible_workflows/collaborative_coding_with_github_and_rstudio.html" class="no-external">
+
+<img loading="lazy" src="../training/images/pupholder.png" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../training/reproducible_workflows/collaborative_coding_with_github_and_rstudio.html" class="no-external">Collaborative coding with GitHub and RStudio</a>
+</h3>
+<div class="delink listing-description"><a href="../training/reproducible_workflows/collaborative_coding_with_github_and_rstudio.html" class="no-external">
+<p>After learning the basics of git, apply your skills in an interactive tutorial</p>
+</a></div>
+</div>
+<div class="metadata">
+<a href="../training/reproducible_workflows/collaborative_coding_with_github_and_rstudio.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="3" data-categories="SW5jbHVkZWQlMjBDYXRlZ29yaWVz" data-listing-file-modified-sort="1750695903213" data-listing-reading-time-sort="1" data-listing-word-count-sort="53">
+<div class="thumbnail"><a href="../training/reproducible_workflows/advanced_git.html" class="no-external">
+
+<img loading="lazy" src="../training/images/pupholder.png" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../training/reproducible_workflows/advanced_git.html" class="no-external">Advanced git</a>
+</h3>
+<div class="delink listing-description"><a href="../training/reproducible_workflows/advanced_git.html" class="no-external">
+<p>Learn git features like branching and gitflow, and how to take advantage of issues, pull requests, and more on GitHub</p>
+</a></div>
+</div>
+<div class="metadata">
+<a href="../training/reproducible_workflows/advanced_git.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="4" data-categories="Ug==" data-listing-file-modified-sort="1750695903213" data-listing-reading-time-sort="1" data-listing-word-count-sort="30">
+<div class="thumbnail"><a href="../training/reproducible_workflows/introduction_to_renv.html" class="no-external">
+
+<img loading="lazy" src="../training/images/pupholder.png" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../training/reproducible_workflows/introduction_to_renv.html" class="no-external">Introduction to {renv}</a>
+</h3>
+<div class="delink listing-description"><a href="../training/reproducible_workflows/introduction_to_renv.html" class="no-external">
+<p>Make your projects reproducible by learning how to (easily) manage your R packages</p>
+</a></div>
+</div>
+<div class="metadata">
+<a href="../training/reproducible_workflows/introduction_to_renv.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="5" data-categories="SW5jbHVkZWQlMjBDYXRlZ29yaWVz" data-listing-file-modified-sort="1750695903213" data-listing-reading-time-sort="1" data-listing-word-count-sort="30">
+<div class="thumbnail"><a href="../training/reproducible_workflows/introduction_to_zotero.html" class="no-external">
+
+<img loading="lazy" src="../training/images/pupholder.png" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../training/reproducible_workflows/introduction_to_zotero.html" class="no-external">Introduction to Zotero</a>
+</h3>
+<div class="delink listing-description"><a href="../training/reproducible_workflows/introduction_to_zotero.html" class="no-external">
+<p>Easily save your sources to the Zotero software, and learn how to insert these citations into your documents</p>
+</a></div>
+</div>
+<div class="metadata">
+<a href="../training/reproducible_workflows/introduction_to_zotero.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="6" data-categories="SW5jbHVkZWQlMjBDYXRlZ29yaWVz" data-listing-file-modified-sort="1750695903213" data-listing-reading-time-sort="1" data-listing-word-count-sort="30">
+<div class="thumbnail"><a href="../training/reproducible_workflows/introduction_to_quarto.html" class="no-external">
+
+<img loading="lazy" src="../training/images/pupholder.png" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../training/reproducible_workflows/introduction_to_quarto.html" class="no-external">Introduction to Quarto</a>
+</h3>
+<div class="delink listing-description"><a href="../training/reproducible_workflows/introduction_to_quarto.html" class="no-external">
+<p>Discover the basics of setting up Quarto projects, documents, and presentations</p>
+</a></div>
+</div>
+<div class="metadata">
+<a href="../training/reproducible_workflows/introduction_to_quarto.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="7" data-categories="SW5jbHVkZWQlMjBDYXRlZ29yaWVz" data-listing-file-modified-sort="1750695903213" data-listing-reading-time-sort="1" data-listing-word-count-sort="30">
+<div class="thumbnail"><a href="../training/reproducible_workflows/code_publishing.html" class="no-external">
+
+<img loading="lazy" src="../training/images/pupholder.png" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../training/reproducible_workflows/code_publishing.html" class="no-external">Code Publishing</a>
+</h3>
+<div class="delink listing-description"><a href="../training/reproducible_workflows/code_publishing.html" class="no-external">
+<p>Tie together your skills and publish your work</p>
+</a></div>
+</div>
+<div class="metadata">
+<a href="../training/reproducible_workflows/code_publishing.html" class="no-external">
+</a>
+</div>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -370,7 +492,7 @@ necessary HTML elements to render the section.
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/lmu-osc\.github\.io\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
@@ -705,7 +827,7 @@ necessary HTML elements to render the section.
     </div>   
     <div class="nav-footer-center">
 <p>Copyright LMU Open Science Center, 2025</p>
-<div class="toc-actions"><ul><li><a href="https://github.com/lmu-osc/lmu-osc.github.io/edit/main/people/felix_example copy 2.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lmu-osc/lmu-osc.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+<div class="toc-actions"><ul><li><a href="https://github.com/lmu-osc/lmu-osc.github.io/edit/main/training/reproducible_workflows.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lmu-osc/lmu-osc.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       &nbsp;
     </div>
