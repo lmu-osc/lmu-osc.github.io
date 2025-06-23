@@ -312,7 +312,39 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 210px; /* Increased width for name and image */
+  width: 210px;
+}
+
+.people-img-link-large,
+.people-img-name {
+  display: block;
+  width: 180px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.people-img-name {
+  margin-top: 0.7rem;
+  font-size: 1.22rem;
+  font-weight: bold;
+  color: #2D3748;
+  text-align: center;
+  width: 180px;
+  height: 3.2em; /* Enough for two lines of text */
+  display: flex;
+  align-items: center;   /* Vertical centering */
+  justify-content: center; /* Horizontal centering */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal;   /* Allow wrapping */
+  text-decoration: none;
+  box-sizing: border-box;
+  border-radius: 8px;
+  background: #f7fcf8;
+  /* Optional: add a subtle border or shadow for clarity */
+  /* border: 1px solid #e0e0e0; */
+  /* box-shadow: 0 1px 3px rgba(0,0,0,0.03); */
 }
 
 .people-img-link-large {
@@ -338,24 +370,4 @@
 
 .people-img-link-large:hover .people-img-large {
   box-shadow: 0 4px 16px rgba(0,0,0,0.15);
-}
-
-.people-img-name {
-  margin-top: 0.7rem;
-  font-size: 1.22rem;
-  font-weight: bold;
-  color: #2D3748;
-  text-align: center;
-  width: 100%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  text-decoration: none;
-  display: block;
-}
-
-.people-img-name:hover,
-.people-img-name:focus {
-  color: #0056b3; /* or your preferred hover color */
-  text-decoration: underline;
 }
