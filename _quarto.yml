@@ -14,6 +14,7 @@ website:
   repo-actions: [edit, issue]
 
   navbar:
+    title: false
     background: "#2b864b"
     foreground: "#fff"
     # logo: assets/img/osc_image_assets/TutorialCardCard.png
