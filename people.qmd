@@ -11,6 +11,7 @@ format:
           <script src="assets/javascript/display_name_hover.js" defer></script>
 title: "People"
 editor: source
+repo-actions: false
 listing:
     - id: director-listing
       contents: people
