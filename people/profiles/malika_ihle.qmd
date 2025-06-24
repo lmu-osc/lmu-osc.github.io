@@ -4,7 +4,7 @@ title: "Dr. Malika Ihle"
 position: "Scientific Coordinator of the OSC"
 faculty: "Medicine"
 membertype: ["director", "lmu-individual"]
-photo: "images/malika.JPG"
+photo: "../images/malika.JPG"
 email: "malika.ihle@psy.lmu.de"
 display_weight: 2
 website:
@@ -57,12 +57,12 @@ necessary HTML elements to render the section.
  3. If you want to add some custom content for an individual member, you can do so directly in the member's .QMD file, outside of the includes. You will then need to insert the new R object containing HTML into the `profile` object below.
 -->
 
-{{< include templates/_setup.qmd >}}
-{{< include templates/_contact_items.qmd >}}
-{{< include templates/_social_links.qmd >}}
-{{< include templates/_mission_statement.qmd >}}
-{{< include templates/_research_interests.qmd >}}
-{{< include templates/_selected_publications.qmd >}}
+{{< include ../templates/_setup.qmd >}}
+{{< include ../templates/_contact_items.qmd >}}
+{{< include ../templates/_social_links.qmd >}}
+{{< include ../templates/_mission_statement.qmd >}}
+{{< include ../templates/_research_interests.qmd >}}
+{{< include ../templates/_selected_publications.qmd >}}
 
 
 

@@ -40,10 +40,10 @@ website:
       - text: People
         icon: people
         menu: 
-          - people.qmd
-          - leadership.qmd
-          - boards.qmd
-          - members.qmd
+          - people/people.qmd
+          - people/leadership.qmd
+          - people/boards.qmd
+          - people/members.qmd
       - href: events.qmd
         icon: calendar-event
         text: Events
