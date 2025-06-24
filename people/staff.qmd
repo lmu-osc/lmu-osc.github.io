@@ -9,22 +9,21 @@ format:
     include-in-header: 
       - text: |
           <script src="../assets/javascript/display_name_hover.js" defer></script>
-title: "Leadership"
+title: "Staff"
 editor: source
 repo-actions: false
 listing:
-    - id: director-listing
+    - id: staff-listing
       contents: profiles
-      template: people-listing-large.ejs
-      sort: 
-        - "display_weight"
+      template: people-listing.ejs
       include:
-        membertype: director
+        membertype: staff
 ---
 
 
 
 
-# Managing Director & Scientific Coordinator
-::: {#director-listing}
+# Staff
+::: {#staff-listing}
 :::
+

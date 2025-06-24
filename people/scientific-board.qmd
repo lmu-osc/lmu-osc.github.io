@@ -1,0 +1,37 @@
+---
+format: 
+  html:
+    toc: true
+    toc-depth: 1
+    css:
+      - people.css
+    page-layout: full
+    include-in-header: 
+      - text: |
+          <script src="../assets/javascript/display_name_hover.js" defer></script>
+title: "Scientific Board"
+editor: source
+repo-actions: false
+listing:
+    - id: current-scientific-board-listing
+      contents: profiles
+      template: people-listing.ejs
+      include:
+        membertype: "current scientific board"
+    - id: past-scientific-board-listing
+      contents: profiles
+      template: people-listing.ejs
+      include:
+        membertype: "past scientific board"
+---
+
+
+
+
+# Scientific Board
+::: {#current-scientific-board-listing}
+:::
+
+# Previous Scientific Board
+::: {#past-scientific-board-listing}
+:::
