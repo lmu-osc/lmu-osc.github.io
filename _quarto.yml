@@ -40,10 +40,12 @@ website:
       - text: People
         icon: people
         menu: 
-          - people.qmd
-          - leadership.qmd
-          - boards.qmd
-          - members.qmd
+          - people/overview.qmd
+          - people/leadership.qmd
+          - people/staff.qmd
+          - people/scientific-board.qmd
+          - people/advisory-board.qmd
+          - people/members.qmd
       - href: events.qmd
         icon: calendar-event
         text: Events
@@ -94,6 +96,7 @@ format:
     css: 
       - https://raw.githubusercontent.com/lmu-osc/branding-resources/refs/heads/main/styles.css
       - custom-navbar.css
+      - styles.css
     toc: true
     include-in-header:
       - file: matomo_analytics.html

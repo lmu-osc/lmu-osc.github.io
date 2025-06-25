@@ -8,61 +8,61 @@ format:
     page-layout: full
     include-in-header: 
       - text: |
-          <script src="assets/javascript/display_name_hover.js" defer></script>
+          <script src="../assets/javascript/display_name_hover.js" defer></script>
 title: "People"
 editor: source
 repo-actions: false
 listing:
     - id: director-listing
-      contents: people
+      contents: profiles
       template: people-listing-large.ejs
       sort: 
         - "display_weight"
       include:
         membertype: director
     - id: staff-listing
-      contents: people
+      contents: profiles
       template: people-listing.ejs
       include:
         membertype: staff
     - id: current-advisory-board-listing
-      contents: people
+      contents: profiles
       template: people-listing.ejs
       include:
         membertype: "current advisory board"
     - id: current-scientific-board-listing
-      contents: people
+      contents: profiles
       template: people-listing.ejs
       include:
         membertype: "current scientific board"
     - id: lmu-individual-listing
       categories: true
-      contents: people
+      contents: profiles
       template: people-listing.ejs
       include:
         membertype: "lmu-individual"
     - id: associated-member-listing
-      contents: people
+      contents: profiles
       template: people-listing.ejs
       include:
         membertype: "associate"
     - id: fellow-listing
-      contents: people
+      contents: profiles
       template: people-listing.ejs
       include:
         membertype: fellow
     - id: past-scientific-board-listing
-      contents: people
+      contents: profiles
       template: people-listing.ejs
       include:
         membertype: "past scientific board"
     - id: past-advisory-board-listing
-      contents: people
+      contents: profiles
       template: people-listing.ejs
       include:
         membertype: "past advisory board"
     - id: previous-member-listing
-      contents: people
+      contents: profiles
       template: people-listing.ejs
       include:
         membertype: "former"
