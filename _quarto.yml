@@ -34,6 +34,7 @@ website:
       - icon: mortarboard
         text: Training
         menu:
+          - training-overview.qmd
           - self-training.qmd
           - train-the-trainer.qmd
           - open-research-cycle.qmd
@@ -64,6 +65,7 @@ website:
       background: light
       collapse-level: 2
       contents: 
+        - training-overview.qmd
         - self-training.qmd
         - train-the-trainer.qmd
         - open-research-cycle.qmd

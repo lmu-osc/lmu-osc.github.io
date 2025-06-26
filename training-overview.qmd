@@ -1,0 +1,17 @@
+---
+title: "Training Overview"
+page-navigation: false
+title-block-banner: "assets/img/Foundations.svg"
+toc: false
+include-in-header:
+  - text: |
+      <style>
+      .quarto-title-block .quarto-title-banner {
+        background-position-y: center;
+        height: 400px;
+      }
+      .quarto-title > h1.title {
+        opacity: 0 !important;
+        }   
+      </style>
+---
