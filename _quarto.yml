@@ -99,6 +99,8 @@ format:
     toc: true
     include-in-header:
       - file: matomo_analytics.html
+    include-after-body:
+      - file: navbar-dropdown-script.html
 
 
 
