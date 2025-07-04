@@ -1,0 +1,311 @@
+---
+title: ""
+format: 
+  html:
+    css: styles.css
+    page-layout: full
+    toc: false
+    include-in-header: 
+      - text: |
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+---
+```{=html}
+
+<style>
+:root {
+  --theme-main: #2b864b;
+  --theme-bg: #f5f6fa;
+  --theme-card-bg: #fff;
+  --theme-card-shadow: 0 2px 10px rgba(43,134,75,0.10);
+  --theme-border: #e3e7ed;
+}
+
+body {
+  background: var(--theme-bg);
+  margin: 0;
+  min-height: 100vh;
+}
+
+.header-section {
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: #2b864b;
+  margin-bottom: 1.1rem;
+  letter-spacing: -0.5px;
+}
+
+.member-grid {
+  display: grid;
+  grid-template-columns: 320px 800px;
+  grid-template-rows: auto;
+  gap: 1rem;
+}
+
+.member-grid-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background: var(--theme-card-bg);
+  border-radius: 10px;
+  box-shadow: var(--theme-card-shadow);
+  border: 1.5px solid var(--theme-border);
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.13s, box-shadow 0.13s;
+  cursor: pointer;
+  height: 500px; /* Fixed height for all cards */
+  min-width: 200px;
+  max-width: 320px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.member-grid-item:hover {
+  transform: translateY(-5px) scale(1.025);
+  box-shadow: 0 8px 32px rgba(43,134,75,0.15);
+  border-color: var(--theme-main);
+}
+
+.profile-link {
+  display: contents;
+  text-decoration: none;
+  color: inherit;
+  height: 100%;
+}
+
+.member-grid-image {
+  width: 128px;
+  height: 128px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 0 auto 0.8rem auto;
+  border: 3px solid var(--theme-main);
+  background: #d5f5e3;
+  box-shadow: 0 1px 6px rgba(43,134,75,0.12);
+  flex-shrink: 0;
+}
+
+.member-grid-title {
+  font-size: 1.1rem;
+  color: #70877c;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.member-grid-position {
+  font-size: 1.2rem;
+  color: var(--theme-main);
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.member-grid-name {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #212c2b;
+  margin-bottom: 0.3rem;
+  line-height: 1.4;
+  min-height: 3em;
+  max-height: 3em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.member-grid-org {
+  font-size: 1.1rem;
+  color: #45695f;
+  margin-bottom: 0.2rem;
+}
+
+.member-grid-faculty {
+  font-size: 1.1rem;
+  color: #70877c;
+  margin-bottom: 0.2rem;
+}
+
+.member-socials {
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  padding-top: 1rem;
+}
+
+.social-link {
+  display: inline-flex;         
+  align-items: center;
+  justify-content: center;
+  background: none;              
+  box-shadow: none;               
+  color: #2b864b;                 
+  text-decoration: none;
+  font-size: 1.4rem;              
+  width: auto;                  
+  height: auto;                 
+  border: none;                  
+  border-radius: 0;              
+  padding: 0;                   
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.social-link i {
+  display: block; 
+  line-height: 1;      
+  margin: 0; 
+  vertical-align: middle; 
+  font-size: 1.2rem;
+}
+
+.social-link:hover {
+  background-color: #BEE3F8;
+  color: white;
+  transform: translateY(-2px);
+}
+
+.description-text {
+  font-size: 1.2rem;
+  color: #4a5568;
+  line-height: 1.85;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.read-more-btn {
+  margin-top: 0.5rem;
+  align-self: flex-start;
+  display: inline-block;
+  padding: 0.4em 1.1em;
+  background: var(--theme-main);
+  color: #fff !important;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none !important;
+  box-shadow: 0 2px 8px rgba(43,134,75,0.08);
+  transition: background 0.13s, box-shadow 0.13s;
+  border: none;
+  cursor: pointer;
+}
+
+.read-more-btn:hover {
+  background: #256b3e;
+  color: #fff !important;
+}
+
+hr {
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5));
+    margin: 20px 0;
+    grid-column: 1 / -1; 
+  }
+
+</style>
+
+<div class="header-section">Directors</div>
+
+<div class="member-grid">
+    <div class="profile-link" onclick="window.location='profile-felix.html'">
+        <div class="member-grid-item">
+            <img src="felix.jpeg" class="member-grid-image" alt="Felix Schönbrodt">
+            <div class="member-grid-position">Director</div>
+            <div class="member-grid-name">Felix Schönbrodt</div>
+            <div class="member-grid-title">Prof. Dr.</div>
+            <div class="member-grid-org">LMU</div>
+            <div class="member-grid-faculty">Faculty of Psychology</div>
+            <div class="member-socials">
+                <a href="https://bsky.app/profile/lmu-osc.bsky.social" title="Bluesky" target="_blank" class="social-link">
+                    <i class="fa-brands fa-bluesky"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/felixschoenbrodt" title="LinkedIn" target="_blank" class="social-link">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="https://orchid.org" title="OrcID" target="_blank" class="social-link">
+                    <i class="fa-brands fa-orcid"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="description-text">
+        <p>
+            Professor at the Department of Psychology, Ludwig-Maximilians-Universität München, Germany. Managing director of the LMU Open Science Center and board member of the META-REP priority program ("A meta-scientific research program to analyse and optimise replicability in the behavioral, social, and cognitive Sciences"). Interested in Open Science, Metascience, implicit motives, machine learning, responsible research assessment (CoARA), solarpunk, piano, and cooking.
+        </p>
+        <a href="profile-felix.html" class="read-more-btn">Read more</a>
+    </div>
+
+    <hr>
+
+    <div class="profile-link" onclick="window.location='profile-malika.html'">
+        <div class="member-grid-item">
+            <img src="malika.jpeg" class="member-grid-image" alt="Malika Ihle">
+            <div class="member-grid-position">Director</div>
+            <div class="member-grid-name">Malika Ihle</div>
+            <div class="member-grid-title">Dr.</div>
+            <div class="member-grid-org">LMU</div>
+            <div class="member-grid-faculty">Faculty of Psychology</div>
+            <div class="member-socials">
+                <a href="https://bsky.app/profile/lmu-osc.bsky.social" title="Bluesky" target="_blank" class="social-link">
+                    <i class="fa-brands fa-bluesky"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/felixschoenbrodt" title="LinkedIn" target="_blank" class="social-link">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="https://orchid.org" title="OrcID" target="_blank" class="social-link">
+                    <i class="fa-brands fa-orcid"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="description-text">
+        <p>
+            Malika Ihle is the LMU Open Science Center Coordinator, supporting the scientific board in developing a comprehensive approach to open research that extends across all disciplines, using both bottom-up and top-down strategies. Her role is to provide peer-to-peer training and develop an open research curriculum, coordinate grassroots initiatives and organise various events such as seminars and conferences, support meta-research collaborations, liaise with local, national (e.g. the German Reproducibility Network (GRN)), and international stakeholders to inform the design of incentives and policies, and co-develop a strategic plan to make the LMU Open Science Center a sustainable entity.
+        </p>
+        <a href="profile-malika.html" class="read-more-btn">Read more</a>
+    </div>
+
+    <hr>
+
+    <div class="profile-link" onclick="window.location='profile-sarah.html'">
+        <div class="member-grid-item">
+            <img src="sarah.jpeg" class="member-grid-image" alt="Sarah">
+            <div class="member-grid-position">Vice-Director</div>
+            <div class="member-grid-name">Sarah von Grebmer zu Wolfsthurn</div>
+            <div class="member-grid-title">Dr.</div>
+            <div class="member-grid-org">LMU</div>
+            <div class="member-grid-faculty">Faculty of Psychology</div>
+            <div class="member-socials">
+                <a href="https://bsky.app/profile/lmu-osc.bsky.social" title="Bluesky" target="_blank" class="social-link">
+                    <i class="fa-brands fa-bluesky"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/felixschoenbrodt" title="LinkedIn" target="_blank" class="social-link">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="https://orchid.org" title="OrcID" target="_blank" class="social-link">
+                    <i class="fa-brands fa-orcid"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="description-text">
+        <p>
+          Sarah von Grebmer zu Wolfsthurn is one of the two Open Science coordinators at the LMU Open Science Centre (OSC). She coordinates the “Train-the-trainer” programme. She is involved in:
+          Coordinating, developing and delivering the "Train-the-Trainer" program at LMU to train future Open Science ambassadors and Open Science trainers
+          Collaborating with the other scientific coordinator to develop and deliver a "Switch-to-Open" program
+          Facilitating interdisciplinary workshops, seminars, and networking events to engage and support participants in adopting open research practices.
+          Before her work at the LMU Open Science Centre, Sarah was a Marie Skłodowska-Curie PhD Fellow within the Horizon2020 programme at Leiden University (NL). She has a PhD in Cognitive Psychology and Neurolinguistics and was a lecturer in experimental methods and psycho- and neurolinguistics during and after her PhD at Leiden University.
+        </p>
+        <a href="profile-sarah.html" class="read-more-btn">Read more</a>
+    </div>
+
+</div>
+```
