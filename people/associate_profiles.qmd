@@ -61,7 +61,7 @@ body {
   text-align: center;
   transition: transform 0.13s, box-shadow 0.13s;
   cursor: pointer;
-  height: 260px;              
+  height: 280px;              
   width: 170px;
   box-sizing: border-box;
   overflow: hidden;
@@ -161,22 +161,11 @@ body {
 
 <div class="profile-link" onclick="window.location='profile-felix.html'">
   <div class="member-grid-item">
-    <img src="images/felix.jpeg" class="member-grid-image" alt="Felix Schönbrodt">
-    <div class="member-grid-name">Felix Schönbrodt</div>
-    <div class="member-grid-position">Prof. Dr.</div>
-    <div class="member-grid-org">Max Planck Institute for Biological Intelligence</div>
-  </div>
-
-<div class="profile-link" onclick="window.location='profile-felix.html'">
-  <div class="member-grid-item">
-    <img src="images/felix.jpeg" class="member-grid-image" alt="Felix Schönbrodt">
-    <div class="member-grid-name">Felix Schönbrodt</div>
-    <div class="member-grid-position">Prof. Dr.</div>
-    <div class="member-grid-org">Max Planck Institute for Biological Intelligence</div>
-  </div>
-
-  <div class="profile-link" onclick="window.location='profile-felix.html'">
-  <div class="member-grid-item">
+      <div class="member-socials">
+      <a href="https://orchid.org" title="OrcID" target="_blank" class="social-link" onclick="event.stopPropagation()">
+        <i class="fa-brands fa-orcid"></i>
+      </a>
+    </div>
     <img src="images/felix.jpeg" class="member-grid-image" alt="Felix Schönbrodt">
     <div class="member-grid-name">Felix Schönbrodt</div>
     <div class="member-grid-position">Prof. Dr.</div>
@@ -185,6 +174,11 @@ body {
 
   <div class="profile-link" onclick="window.location='profile-felix.html'">
   <div class="member-grid-item">
+      <div class="member-socials">
+      <a href="https://orchid.org" title="OrcID" target="_blank" class="social-link" onclick="event.stopPropagation()">
+        <i class="fa-brands fa-orcid"></i>
+      </a>
+    </div>
     <img src="images/felix.jpeg" class="member-grid-image" alt="Felix Schönbrodt">
     <div class="member-grid-name">Felix Schönbrodt</div>
     <div class="member-grid-position">Prof. Dr.</div>
@@ -193,6 +187,11 @@ body {
 
   <div class="profile-link" onclick="window.location='profile-felix.html'">
   <div class="member-grid-item">
+      <div class="member-socials">
+      <a href="https://orchid.org" title="OrcID" target="_blank" class="social-link" onclick="event.stopPropagation()">
+        <i class="fa-brands fa-orcid"></i>
+      </a>
+    </div>
     <img src="images/felix.jpeg" class="member-grid-image" alt="Felix Schönbrodt">
     <div class="member-grid-name">Felix Schönbrodt</div>
     <div class="member-grid-position">Prof. Dr.</div>
@@ -201,6 +200,11 @@ body {
 
   <div class="profile-link" onclick="window.location='profile-felix.html'">
   <div class="member-grid-item">
+      <div class="member-socials">
+      <a href="https://orchid.org" title="OrcID" target="_blank" class="social-link" onclick="event.stopPropagation()">
+        <i class="fa-brands fa-orcid"></i>
+      </a>
+    </div>
     <img src="images/felix.jpeg" class="member-grid-image" alt="Felix Schönbrodt">
     <div class="member-grid-name">Felix Schönbrodt</div>
     <div class="member-grid-position">Prof. Dr.</div>
@@ -209,30 +213,16 @@ body {
 
   <div class="profile-link" onclick="window.location='profile-felix.html'">
   <div class="member-grid-item">
+      <div class="member-socials">
+      <a href="https://orchid.org" title="OrcID" target="_blank" class="social-link" onclick="event.stopPropagation()">
+        <i class="fa-brands fa-orcid"></i>
+      </a>
+    </div>
     <img src="images/felix.jpeg" class="member-grid-image" alt="Felix Schönbrodt">
     <div class="member-grid-name">Felix Schönbrodt</div>
     <div class="member-grid-position">Prof. Dr.</div>
     <div class="member-grid-org">Max Planck Institute for Biological Intelligence</div>
   </div>
-
-  <div class="profile-link" onclick="window.location='profile-felix.html'">
-  <div class="member-grid-item">
-    <img src="images/felix.jpeg" class="member-grid-image" alt="Felix Schönbrodt">
-    <div class="member-grid-name">Felix Schönbrodt</div>
-    <div class="member-grid-position">Prof. Dr.</div>
-    <div class="member-grid-org">Max Planck Institute for Biological Intelligence</div>
-  </div>
-
-  <div class="profile-link" onclick="window.location='profile-felix.html'">
-  <div class="member-grid-item">
-    <img src="images/felix.jpeg" class="member-grid-image" alt="Felix Schönbrodt">
-    <div class="member-grid-name">Felix Schönbrodt</div>
-    <div class="member-grid-position">Prof. Dr.</div>
-    <div class="member-grid-org">Max Planck Institute for Biological Intelligence</div>
-  </div>
-
-</div>
-
 
 </div>
 ```

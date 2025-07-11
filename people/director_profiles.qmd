@@ -53,7 +53,7 @@ body {
   text-align: center;
   transition: transform 0.13s, box-shadow 0.13s;
   cursor: pointer;
-  height: 500px; /* Fixed height for all cards */
+  height: 500px; 
   min-width: 200px;
   max-width: 320px;
   box-sizing: border-box;
@@ -74,11 +74,11 @@ body {
 }
 
 .member-grid-image {
-  width: 128px;
-  height: 128px;
+  width: 158px;
+  height: 158px;
   object-fit: cover;
   border-radius: 50%;
-  margin: 0 auto 0.8rem auto;
+  margin: 0.5rem auto 0.8rem auto;
   border: 3px solid var(--theme-main);
   background: #d5f5e3;
   box-shadow: 0 1px 6px rgba(43,134,75,0.12);
@@ -214,7 +214,7 @@ hr {
 <div class="member-grid">
     <div class="profile-link" onclick="window.location='profile-felix.html'">
         <div class="member-grid-item">
-            <img src="felix.jpeg" class="member-grid-image" alt="Felix Schönbrodt">
+            <img src="images/felix.jpeg" class="member-grid-image" alt="Felix Schönbrodt">
             <div class="member-grid-position">Director</div>
             <div class="member-grid-name">Felix Schönbrodt</div>
             <div class="member-grid-title">Prof. Dr.</div>
@@ -245,12 +245,12 @@ hr {
 
     <div class="profile-link" onclick="window.location='profile-malika.html'">
         <div class="member-grid-item">
-            <img src="malika.jpeg" class="member-grid-image" alt="Malika Ihle">
-            <div class="member-grid-position">Director</div>
+            <img src="images/malika.jpeg" class="member-grid-image" alt="Malika Ihle">
+            <div class="member-grid-position">Scientific Coordinator</div>
             <div class="member-grid-name">Malika Ihle</div>
             <div class="member-grid-title">Dr.</div>
             <div class="member-grid-org">LMU</div>
-            <div class="member-grid-faculty">Faculty of Psychology</div>
+            <div class="member-grid-faculty">Open Science Center</div>
             <div class="member-socials">
                 <a href="https://bsky.app/profile/lmu-osc.bsky.social" title="Bluesky" target="_blank" class="social-link">
                     <i class="fa-brands fa-bluesky"></i>
@@ -276,12 +276,12 @@ hr {
 
     <div class="profile-link" onclick="window.location='profile-sarah.html'">
         <div class="member-grid-item">
-            <img src="sarah.jpeg" class="member-grid-image" alt="Sarah">
-            <div class="member-grid-position">Vice-Director</div>
+            <img src="images/sarah.jpeg" class="member-grid-image" alt="Sarah">
+            <div class="member-grid-position">Train-the-Trainer Program Coordinator</div>
             <div class="member-grid-name">Sarah von Grebmer zu Wolfsthurn</div>
             <div class="member-grid-title">Dr.</div>
             <div class="member-grid-org">LMU</div>
-            <div class="member-grid-faculty">Faculty of Psychology</div>
+            <div class="member-grid-faculty">Open Science Center</div>
             <div class="member-socials">
                 <a href="https://bsky.app/profile/lmu-osc.bsky.social" title="Bluesky" target="_blank" class="social-link">
                     <i class="fa-brands fa-bluesky"></i>
