@@ -1,0 +1,117 @@
+---
+format: 
+    html:
+        table-of-contents: false
+        css: styles.css
+page-layout: full
+categories: ["Workshop", "Professional Instruction"]
+
+# Event Information
+event:
+  title: "Software Carpentry - R flavored - Philologicum"
+  date: "July 15, 2025"
+  time: "14:00 - 17:00 CET"
+  location:
+    name: "Philologicum room (Veranstaltungsraum)"
+    address: "Ludwigstraße 25, 80539 Munich"
+    map_url: "https://www.google.com/maps/place/Ludwigstraße+25,+80539+München,+Germany"
+  format:
+    type: "Hybrid Event"
+    detail: "In-person & Online"
+  language:
+    primary: "English"
+    detail: "(German Transcript)"
+  
+# Registration and Materials
+links:
+  registration: "https://www.pretix.osc.lmu.de/lmu-osc/swc-20250324-Hum/"
+  materials: "https://www.pretix.osc.lmu.de/lmu-osc/swc-20250324-Hum/"
+  workshop_website: "https://lmu-osc.github.io/2025-03-24-LMU-Humanities/"
+
+# Event Description
+event_description: "In this Software Carpentry Workshop you will learn the **Unix Shell**, **Git** and **R**. This example-driven **two-day workshop** will teach core computing skills that will help you be more productive and effective. We'll alternate short tutorials with hands-on practical exercises. Participants are encouraged to help one another and to apply what they are learning to their own research problems during the workshop."
+
+# Add more instructors in the same format if needed. Will need to add a new line in the html below as well
+instructors:
+  - name: "Laura Meier"
+    url: "https://www.osc.uni-muenchen.de/members/individual_members/fellows/meier/index.html"
+  - name: "Maximilian Frank"
+    url: "https://www.osc.uni-muenchen.de/members/individual_members/fellows/frank/index.html"
+  - name: "Florian Kohrt"
+    url: "https://www.osc.uni-muenchen.de/members/individual_members/fellows/kohrt/index.html"
+
+
+# Helpers
+helpers: "Pat Callahan, Sarah von Grebmer zu Wolfsthurn"
+
+# Contact Information
+contact:
+  name: "Mahlika Ihle"
+  email: "malika.ihle@lmu.de"
+---
+
+<link rel = "stylesheet"  href = "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.css">
+
+```{=html}
+<div class="event-heading"> {{< meta event.title >}} </div>
+<div class = "event-detail">
+        <div class="meta-item">
+            <i class="bi bi-calendar-event"></i>
+            <div class="meta-label">Date & Time</div>
+            <div class="meta-value">{{< meta event.date >}}<br>{{< meta event.time >}}</div>
+        </div>
+        <div class="meta-item">
+            <i class="bi bi-geo-alt"></i>
+            <div class="meta-label"> Location</div>
+            <div class="location-text">
+            <a href="{{< meta event.location.map_url >}}" target="_blank" style="text-decoration: none; color: inherit;">
+            <div class="meta-value">{{< meta event.location.name >}}<br>{{< meta event.location.address >}}</div>
+            </a>
+            </div>
+        </div>
+        <div class="meta-item">
+            <i class="bi bi-laptop"></i>
+            <div class="meta-label">Format</div>
+            <div class="meta-value">{{< meta event.format.type >}}<br>{{< meta event.format.detail >}}</div>
+        </div>
+        <div class="meta-item">
+            <i class="bi bi-translate"></i>
+            <div class="meta-label">Language</div>
+            <div class="meta-value">{{< meta event.language.primary >}}<br>{{< meta event.language.detail >}}</div>
+        </div>
+</div>
+<div class = "register-box">
+<div class = "register-button">
+        <a href="{{< meta links.registration >}}" target = "_blank"><i class="bi bi-box-arrow-up-left"></i> Register </a>
+    </div>
+<div class = "materials-button">
+        <a href="{{< meta links.materials >}}" target = "_blank"><i class="bi bi-download"></i> Materials </a>
+    </div>
+</div>
+
+<div class="event_description">
+    <h4>Overview</h4>
+    <p>{{< meta event_description >}}</p>
+    <p>See the <a href="{{< meta links.workshop_website >}}" target="_blank">workshop website</a> for more details.</p>
+</div>
+
+<div class="instructors">
+    <h4>Instructors</h4>
+    <ul>
+        <li><a href="{{< meta instructors.1.url >}}" target="_blank">{{< meta instructors.1.name >}}</a></li>
+        <li><a href="{{< meta instructors.2.url >}}" target="_blank">{{< meta instructors.2.name >}}</a></li>
+        <li><a href="{{< meta instructors.3.url >}}" target="_blank">{{< meta instructors.3.name >}}</a></li>
+
+    </ul>
+</div>
+
+<div class="helpers">
+    <h4>Helpers</h4>
+    <p>{{< meta helpers >}}</p>
+</div>
+
+<div class="contact_name">
+    <h4>Questions?</h4>
+    <p>If you have any questions, please contact <span class="instructor-links"><a href="mailto:{{< meta contact.email >}}">{{< meta contact.name >}}</a></span>.</p>
+</div>
+```
