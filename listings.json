@@ -19,10 +19,9 @@
     ]
   },
   {
-    "listing": "/people.html",
+    "listing": "/training/open_access.html",
     "items": [
-      "/people/felix_example.html",
-      "/people/malika_ihle.html"
+      "/training/open_access/open_access_preprints_postprints.html"
     ]
   },
   {
@@ -39,17 +38,18 @@
     ]
   },
   {
-    "listing": "/training/open_access.html",
-    "items": [
-      "/training/open_access/open_access_preprints_postprints.html"
-    ]
-  },
-  {
     "listing": "/training/preregistration.html",
     "items": [
       "/training/preregistration/preregistration_why_how.html",
       "/training/preregistration/introduction_to_simulations_in_r.html",
       "/training/preregistration/simulations_for_advanced_power_analyses.html"
+    ]
+  },
+  {
+    "listing": "/people.html",
+    "items": [
+      "/people/felix_example.html",
+      "/people/malika_ihle.html"
     ]
   },
   {
