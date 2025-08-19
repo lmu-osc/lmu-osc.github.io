@@ -1,0 +1,10 @@
+project:
+  type: website
+
+format:
+  html:
+    theme:
+      - cosmo
+      - brand
+    css: styles1.css
+    toc: true
