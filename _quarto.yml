@@ -39,13 +39,16 @@ website:
           - open-research-cycle.qmd
       - text: People
         icon: people
+        # href: people/overview.qmd
         menu: 
           - people/overview.qmd
-          - people/leadership.qmd
+          - people/management.qmd
           - people/staff.qmd
           - people/scientific-board.qmd
           - people/advisory-board.qmd
           - people/members.qmd
+          - people/fellows.qmd
+          - people/alumnae.qmd
       - href: events.qmd
         icon: calendar-event
         text: Events
