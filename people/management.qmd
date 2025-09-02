@@ -12,7 +12,6 @@ format:
   html:
     css: 
       - ../styles.css
-      # - css/management.css
     page-layout: full
     toc: false
     include-in-header: 
