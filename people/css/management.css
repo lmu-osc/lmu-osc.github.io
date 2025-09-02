@@ -54,7 +54,7 @@ body {
 }
 
 .profile-link {
-  display: contents;
+  display: block;
   text-decoration: none;
   color: inherit;
   height: 100%;
@@ -140,13 +140,13 @@ body {
   transition: color 0.2s;
 }
 
-.social-link i {
+/* .social-link i {
   display: block; 
   line-height: 1;      
   margin: 0; 
   vertical-align: middle; 
   font-size: 1.2rem;
-}
+} */
 
 .social-link:hover {
   background-color: #BEE3F8;

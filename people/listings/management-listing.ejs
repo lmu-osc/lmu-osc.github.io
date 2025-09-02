@@ -1,42 +1,45 @@
-
 <div class="member-grid">
 <% for (const item of items) { %>
 <hr></hr>
-<div class="profile-link" onclick="window.location='<%= item.path %>'">
+
 <div class="member-grid-item">
-<img src="<%= item.photo || 'images/placeholder.jpg' %>" class="member-grid-image" alt="<%= item.title %>">
+<!-- Main clickable profile block -->
+<a class="profile-link" href="<%= item.path || '#' %>">
+<img src="<%= item.photo || 'images/placeholder.jpg' %>" class="member-grid-image" alt="<%= item.title || 'Profile photo' %>">
 <div class="member-grid-position"><%= item.position || 'Director' %></div>
 <div class="member-grid-name"><%= item.title ? item.title.replace(/^(Dr\.|Prof\. Dr\.) /, '') : 'Name' %></div>
 <div class="member-grid-title"><%= item.title && item.title.match(/^(Dr\.|Prof\. Dr\.)/) ? item.title.match(/^(Dr\.|Prof\. Dr\.)/)[0] : '' %></div>
 <div class="member-grid-org"><%= item.organization || 'LMU' %></div>
 <div class="member-grid-faculty"><%= item.faculty || '' %></div>
+</a>
+
+<!-- Socials are part of the card (inside member-grid-item) but OUTSIDE the main <a> to avoid nested anchors -->
 <div class="member-socials">
 <% if (item.social_media) { %>
 <% if (item.social_media.Bluesky) { %>
-<a href="<%= item.social_media.Bluesky %>" title="Bluesky" target="_blank" class="social-link">
+<a href="<%= item.social_media.Bluesky %>" title="Bluesky" target="_blank" rel="noopener noreferrer" class="social-link">
 <i class="fa-brands fa-bluesky"></i>
 </a>
 <% } %>
 <% if (item.social_media.Linkedin) { %>
-<a href="<%= item.social_media.Linkedin %>" title="Linkedin" target="_blank" class="social-link">
+<a href="<%= item.social_media.Linkedin %>" title="Linkedin" target="_blank" rel="noopener noreferrer" class="social-link">
 <i class="fa-brands fa-linkedin"></i>
 </a>
 <% } %>
 <% if (item.social_media.ORCID) { %>
-<a href="<%= item.social_media.ORCID %>" title="OrcID" target="_blank" class="social-link">
+<a href="<%= item.social_media.ORCID %>" title="OrcID" target="_blank" rel="noopener noreferrer" class="social-link">
 <i class="fa-brands fa-orcid"></i>
 </a>
 <% } %>
 <% if (item.social_media.GitHub) { %>
-<a href="<%= item.social_media.GitHub %>" title="GitHub" target="_blank" class="social-link">
+<a href="<%= item.social_media.GitHub %>" title="GitHub" target="_blank" rel="noopener noreferrer" class="social-link">
 <i class="fa-brands fa-github"></i>
 </a>
 <% } %>
 <% } %>
 </div>
-</div>
-</div>
 
+<!-- Description text -->
 <div class="description-text">
 <% if (item.personal) { %>
 <p><%= item.personal %></p>
@@ -47,7 +50,8 @@
 <% } %>
 <a href="<%= item.path || '#' %>" class="read-more-btn">Read more</a>
 </div>
-
+</div>
 
 <% } %>
 </div>
+
