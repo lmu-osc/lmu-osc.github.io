@@ -1,0 +1,158 @@
+/* css styles */
+*{
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+.event-heading{
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2b864b;
+  margin: 1em 0 0.5em;
+  position: relative;
+  text-align: center;
+  line-height: 1.2;
+  padding-bottom: 0.5em;
+}
+
+.event-detail{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 0.5em;
+    gap: 10px;
+}
+
+.meta-item {
+    background: white;
+    flex: 1;
+    padding: 20px;
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    border: 2px solid #028c3e;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.meta-item:hover {
+    background: rgba(21, 130, 68, 0.1);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    border: 2px solid #09b54e;
+}
+
+.meta-label {
+    font-weight: 600;
+    margin-bottom: 5px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    opacity: 1;
+}
+
+.meta-value {
+    font-size: 1.1em;
+    font-weight: 400;
+}
+
+.event-item {
+    display: flex;
+    align-items: center;
+    gap: 0.8em;
+    margin: 0.3em 0;
+}
+
+.event-item i {
+    font-size: 1.2em;
+  }
+
+.event-item span{
+  padding-left: 8px;
+  font-weight: 400;
+}
+.event-item p {
+    margin: 0;
+    font-weight: 400;
+  }
+
+.event-item .bi{
+    font-size: larger;
+}
+
+a{
+    color: #006633;
+    text-decoration: none;
+}
+
+
+.location-text:hover {
+  transform: scale(1.02);
+  color: #06793f;; 
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+
+.register-box {
+  display: inline-block;
+  width: 100%; 
+  text-align: center; 
+}
+
+.register-button {
+  display: inline-block;    
+  padding: 0.75rem 1.5rem;    
+  font-size: 1.25rem;           
+  min-width: 160px;             
+  text-align: center;
+  background-color: #028c3e;
+  border-radius: 8px;
+  font-weight: 600;
+  margin: 0.7em auto 0;
+  transition: transform 0.3s ease, background-color 0.3s;
+}
+
+.register-button a {
+  display: block;            
+  color: white;
+  text-decoration: none;
+  line-height: 1;      
+}
+
+.register-button:hover {
+  background-color: #045f32;
+  transform: scale(1.03);
+  transition: transform 0.3s ease, background-color 0.3s;
+}
+
+.materials-button {
+  display: inline-block;    
+  padding: 0.75rem 1.5rem;    
+  font-size: 1.25rem;           
+  min-width: 160px;             
+  text-align: center;
+  background-color: #02658c;
+  border-radius: 8px;
+  font-weight: 600;
+  margin: 0.7em auto 0;
+  transition: transform 0.3s ease, background-color 0.3s;
+}
+
+.materials-button a {
+  display: block;            
+  color: white;
+  text-decoration: none;
+  line-height: 1;      
+}
+
+.materials-button:hover {
+  background-color: #025575;
+  transform: scale(1.03);
+  transition: transform 0.3s ease, background-color 0.3s;
+}
+
+
+.instructor-links a:hover {
+  color: #0077cc;
+  text-decoration: underline;
+  transition: color 0.2s ease;
+}
