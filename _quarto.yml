@@ -46,11 +46,16 @@ website:
           - open-research-cycle.qmd
       - text: People
         icon: people
+        # href: people/overview.qmd
         menu: 
-          - people.qmd
-          - leadership.qmd
-          - boards.qmd
-          - members.qmd
+          - people/overview.qmd
+          - people/management.qmd
+          - people/staff.qmd
+          - people/scientific-board.qmd
+          - people/advisory-board.qmd
+          - people/members.qmd
+          - people/fellows.qmd
+          - people/alumnae.qmd
       - href: events.qmd
         icon: calendar-event
         text: Events
@@ -101,6 +106,7 @@ format:
     css: 
       - https://raw.githubusercontent.com/lmu-osc/branding-resources/refs/heads/main/styles.css
       - custom-navbar.css
+      - styles.css
     toc: true
     include-in-header:
       - file: matomo_analytics.html
