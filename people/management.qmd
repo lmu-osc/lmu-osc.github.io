@@ -1,12 +1,15 @@
 ---
-title: "Directors"
+title: "Management"
 listing:
-  - id: directors
+  - id: management
     contents: 
       - felix_example.qmd
       - malika_ihle.qmd
     template: templates/management-listing.ejs
-    sort: "display_weight"
+    sort: "display_weight asc"
+    filter-ui: true
+    include: 
+      membertype: "management"
 format: 
   html:
     css: 
@@ -19,5 +22,5 @@ format:
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 ---
 
-::: {#directors}
+::: {#management}
 :::
