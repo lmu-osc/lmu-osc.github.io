@@ -3,9 +3,8 @@ title: "Management"
 listing:
   - id: management
     contents: 
-      - felix_example.qmd
-      - malika_ihle.qmd
-    template: templates/management-listing.ejs
+      - people
+    template: listings/management-listing.ejs
     sort: "display_weight asc"
     filter-ui: true
     include: 
