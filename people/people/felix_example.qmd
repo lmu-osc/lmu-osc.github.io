@@ -1,12 +1,16 @@
 ---
 # Member parameters
-title: "Dr. Malika Ihle"
-position: "Scientific Coordinator of the OSC"
-faculty: "Medicine"
-membertype: ["director", "lmu-individual"]
-photo: "../images/malika.JPG"
-email: "malika.ihle@psy.lmu.de"
-display_weight: 2
+title: "Prof. Dr. Felix Schönbrodt"
+academic_title: "Prof. Dr."
+name: "Felix Schönbrodt"
+position: "Managing Director of OSC"
+faculty: "Psychology"
+membertype: ["staff", "lmu-individual", "fellow", "associated", "alumni", "current advisory board", "past advisory board", "past scientific board", "current scientific board", "management"]
+categories: ["management"]
+photo: "images/felix.jpeg"
+email: "Felix.Schoenbrodt@psy.lmu.de"
+display_weight: 1
+personal: "Professor at the Department of Psychology, Ludwig-Maximilians-Universität München, Germany. Managing director of the LMU Open Science Center and board member of the META-REP priority program ('A meta-scientific research program to analyse and optimise replicability in the behavioral, social, and cognitive Sciences'). Interested in Open Science, Metascience, implicit motives, machine learning, responsible research assessment (CoARA), solarpunk, piano, and cooking." 
 website:
   - label: "Personal Website"
     url: "https://nicebread.de"
@@ -18,7 +22,7 @@ website:
 # Social media links - variable number
 social_media:
   Bluesky: "https://bsky.app/profile/lmu-osc.bsky.social"
-  LinkedIn: "https://www.linkedin.com/in/felixschoenbrodt"
+  Linkedin: "https://www.linkedin.com/in/felixschoenbrodt"
   GitHub: "https://github.com/nicebread"
   ORCID: "https://orcid.org/0000-0002-8282-3910"
 
@@ -57,12 +61,12 @@ necessary HTML elements to render the section.
  3. If you want to add some custom content for an individual member, you can do so directly in the member's .QMD file, outside of the includes. You will then need to insert the new R object containing HTML into the `profile` object below.
 -->
 
-{{< include ../templates/_setup.qmd >}}
-{{< include ../templates/_contact_items.qmd >}}
-{{< include ../templates/_social_links.qmd >}}
-{{< include ../templates/_mission_statement.qmd >}}
-{{< include ../templates/_research_interests.qmd >}}
-{{< include ../templates/_selected_publications.qmd >}}
+{{< include templates/_setup.qmd >}}
+{{< include templates/_contact_items.qmd >}}
+{{< include templates/_social_links.qmd >}}
+{{< include templates/_mission_statement.qmd >}}
+{{< include templates/_research_interests.qmd >}}
+{{< include templates/_selected_publications.qmd >}}
 
 
 
@@ -77,7 +81,7 @@ profile <- div(class = "people-profile",
     ),
     div(class = "people-info",
       p(class = "people-position", position),
-      p(class = "people-faculty", paste0("Department of ", faculty)),
+      p(class = "people-faculty", paste0("Faculty of ", faculty)),
       div(class = "people-contact", contact_items, social_links)
     )
   ),

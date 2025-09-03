@@ -1,13 +1,15 @@
 ---
 # Member parameters
-title: "Prof. Dr. Felix Schönbrodt"
-position: "Managing Director of OSC"
-faculty: "Psychology"
-membertype: ["staff", "lmu-individual", "fellow", "associated", "former", "current advisory board", "past advisory board", "past scientific board", "current scientific board", "director"]
-categories: ["director"]
-photo: "../images/felix.jpeg"
-email: "Felix.Schoenbrodt@psy.lmu.de"
-display_weight: 1
+title: "Dr. Malika Ihle"
+name: "Malika Ihle"
+academic_title: "Dr."
+position: "Scientific Coordinator of the OSC"
+faculty: "Medicine"
+membertype: ["management", "lmu-individual"]
+photo: "images/malika.JPG"
+email: "malika.ihle@psy.lmu.de"
+display_weight: 2
+personal: "Malika Ihle is the LMU Open Science Center Coordinator, supporting the scientific board in developing a comprehensive approach to open research that extends across all disciplines, using both bottom-up and top-down strategies. Her role is to provide peer-to-peer training and develop an open research curriculum, coordinate grassroots initiatives and organise various events such as seminars and conferences, support meta-research collaborations, liaise with local, national (e.g. the German Reproducibility Network (GRN)), and international stakeholders to inform the design of incentives and policies, and co-develop a strategic plan to make the LMU Open Science Center a sustainable entity."
 website:
   - label: "Personal Website"
     url: "https://nicebread.de"
@@ -19,7 +21,7 @@ website:
 # Social media links - variable number
 social_media:
   Bluesky: "https://bsky.app/profile/lmu-osc.bsky.social"
-  LinkedIn: "https://www.linkedin.com/in/felixschoenbrodt"
+  Linkedin: "https://www.linkedin.com/in/felixschoenbrodt" 
   GitHub: "https://github.com/nicebread"
   ORCID: "https://orcid.org/0000-0002-8282-3910"
 
@@ -58,12 +60,12 @@ necessary HTML elements to render the section.
  3. If you want to add some custom content for an individual member, you can do so directly in the member's .QMD file, outside of the includes. You will then need to insert the new R object containing HTML into the `profile` object below.
 -->
 
-{{< include ../templates/_setup.qmd >}}
-{{< include ../templates/_contact_items.qmd >}}
-{{< include ../templates/_social_links.qmd >}}
-{{< include ../templates/_mission_statement.qmd >}}
-{{< include ../templates/_research_interests.qmd >}}
-{{< include ../templates/_selected_publications.qmd >}}
+{{< include templates/_setup.qmd >}}
+{{< include templates/_contact_items.qmd >}}
+{{< include templates/_social_links.qmd >}}
+{{< include templates/_mission_statement.qmd >}}
+{{< include templates/_research_interests.qmd >}}
+{{< include templates/_selected_publications.qmd >}}
 
 
 
@@ -78,7 +80,7 @@ profile <- div(class = "people-profile",
     ),
     div(class = "people-info",
       p(class = "people-position", position),
-      p(class = "people-faculty", paste0("Faculty of ", faculty)),
+      p(class = "people-faculty", paste0("Department of ", faculty)),
       div(class = "people-contact", contact_items, social_links)
     )
   ),

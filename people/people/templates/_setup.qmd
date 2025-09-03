@@ -18,7 +18,7 @@ get_param <- function(param_name, default = "") {
 # Extract member information
 name <- get_param("title", NULL)
 position <- get_param("position", "")
-photo <- get_param("photo", "default-profile.jpg")
+photo <- get_param("photo", "images/default.svg")
 email <- get_param("email", "")
 social_media <- get_param("social_media", list())
 mission_paragraphs <- get_param("mission_statement", list())

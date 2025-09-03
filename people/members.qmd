@@ -1,58 +1,29 @@
 ---
-format: 
-  html:
-    toc: true
-    toc-depth: 1
-    css:
-      - people.css
-    page-layout: full
-    include-in-header: 
-      - text: |
-          <script src="../assets/javascript/display_name_hover.js" defer></script>
 title: "Members"
-editor: source
-repo-actions: false
 listing:
-    - id: lmu-individual-listing
-      categories: true
-      contents: profiles
-      template: people-listing.ejs
-      include:
-        membertype: "lmu-individual"
-    - id: associated-member-listing
-      contents: profiles
-      template: people-listing.ejs
-      include:
-        membertype: "associate"
-    - id: fellow-listing
-      contents: profiles
-      template: people-listing.ejs
-      include:
-        membertype: fellow
-    - id: previous-member-listing
-      contents: profiles
-      template: people-listing.ejs
-      include:
-        membertype: "former"
+  - id: lmu-members
+    contents: 
+      - people
+    template: listings/general-listing.ejs
+    sort: "display_weight asc"
+    include: 
+      membertype: ["lmu-individual"]
+  - id: associated-members
+    contents: 
+      - people
+    template: listings/general-listing.ejs
+    sort: "display_weight asc"
+    include: 
+      membertype: ["associated"]
+
 ---
 
+## LMU Members
 
-
-
-
-# LMU Members
-::: {#lmu-individual-listing}
+::: {#lmu-members}
 :::
 
-# Associated Members
-::: {#associated-member-listing}
-:::
+## Associated Members
 
-# Fellows
-::: {#fellow-listing}
-:::
-
-
-## Previous Members
-::: {#previous-member-listing}
+::: {#associated-members}
 :::

@@ -1,5 +1,14 @@
 ---
 title: "Fellows"
-format: html
+listing:
+  - id: fellows
+    contents: 
+      - people
+    template: listings/general-listing.ejs
+    sort: "display_weight asc"
+    include: 
+      membertype: "fellow"
 ---
 
+::: {#fellows}
+:::

@@ -1,30 +1,14 @@
 ---
-format: 
-  html:
-    toc: true
-    toc-depth: 1
-    css:
-      - people.css
-    page-layout: full
-    include-in-header: 
-      - text: |
-          <script src="../assets/javascript/display_name_hover.js" defer></script>
-title: "Leadership"
-editor: source
-repo-actions: false
+title: "Management"
 listing:
-    - id: director-listing
-      contents: profiles
-      template: people-listing-large.ejs
-      sort: 
-        - "display_weight"
-      include:
-        membertype: director
+  - id: management
+    contents: 
+      - people
+    template: listings/management-listing.ejs
+    sort: "display_weight asc"
+    include: 
+      membertype: "management"
 ---
 
-
-
-
-# Managing Director & Scientific Coordinator
-::: {#director-listing}
+::: {#management}
 :::
