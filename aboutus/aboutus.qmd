@@ -1,0 +1,239 @@
+---
+title: ""
+format:
+  html:
+    css: styles.css
+    include-in-header:
+      text: |
+        <!-- Font Awesome for icons on buttons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" referrerpolicy="no-referrer">
+page-layout: full
+---
+
+```{=html}
+
+<!-- Hero -->
+<section class="hero">
+  <div class="container">
+    <h1 class="title">About Us</h1>
+    <p class="lead">The interdisciplinary LMU Open Science Center (OSC) has the mission to promote and to foster open science practices at LMU Munich and beyond.</p>
+
+    <p class= "lead"> Transparency and reproducibility lie at the core of scientific integrity. Pursuing these goals through open practices, for example by preregistering studies, and by providing open data, open materials, analysis scripts for computational reproducibility, and open access versions of the published results increases the efficiency, validity, and credibility of research. We subsume these practices under the term “Open Science”. Furthermore, independent replications are vital to establish the robustness and generalizability of research findings.
+    </p>
+
+    <!-- Principles badges -->
+    <div class="principles mt-4" role="list" aria-label="Open Science principles">
+      <div class="principle-card" role="listitem" tabindex="0">
+        <img src="images/opendata.png" alt="Open Data" loading="lazy" decoding="async">
+        <p class="principle-pop">Open Data: Share de-identified datasets, metadata, and documentation so others can verify, reuse, and build on results.</p>
+      </div>
+      <div class="principle-card" role="listitem" tabindex="0">
+        <img src="images/openmat.png" alt="Open Materials" loading="lazy" decoding="async">
+        <p class="principle-pop">Open Materials: Publish study materials, protocols, and analysis code to enable transparent methods and replication.</p>
+      </div>
+      <div class="principle-card" role="listitem" tabindex="0">
+        <img src="images/prereg.png" alt="Preregistration" loading="lazy" decoding="async">
+        <p class="principle-pop">Preregistration: Time-stamp hypotheses and analysis plans in advance to reduce bias and improve credibility.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- About navigation -->
+<section id="about-nav" class="section section--alt">
+  <div class="container">
+    <h2>Staff and Governance</h2>
+    <div class="grid grid-3 mt-4">
+      <div class="card">
+        <h3>Governance</h3>
+        <p class="m0 mt-2" style="color:var(--text-muted)">Oversight and advisory structures.</p>
+        <div class="btn-row mt-4">
+          <a class="btn btn--primary" href="scientific-board.html">
+            <i class="fa-solid fa-microscope" aria-hidden="true"></i> Scientific Board
+          </a>
+          <a class="btn btn--ghost" href="advisory-board.html">
+            <i class="fa-solid fa-users" aria-hidden="true"></i> Advisory Board
+          </a>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Leadership</h3>
+        <p class="m0 mt-2" style="color:var(--text-muted)">Executive and scientific direction.</p>
+        <div class="btn-row mt-4">
+          <a class="btn btn--primary" href="managing-director.html">
+            <i class="fa-solid fa-user-tie" aria-hidden="true"></i> Managing Director
+          </a>
+          <a class="btn btn--ghost" href="scientific-coordinator.html">
+            <i class="fa-solid fa-user-gear" aria-hidden="true"></i> Scientific Coordinator
+          </a>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Team & Materials</h3>
+        <p class="m0 mt-2" style="color:var(--text-muted)">People directory and publications.</p>
+        <div class="btn-row mt-4">
+          <a class="btn btn--primary" href="staff.html">
+            <i class="fa-solid fa-people-group" aria-hidden="true"></i> OSC Staff
+          </a>
+          <a class="btn btn--ghost" href="past-newsletters.html">
+            <i class="fa-regular fa-newspaper" aria-hidden="true"></i> Past Newsletters
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <p class="lead">
+  
+  We seek to promote open science by offering advanced training programs and workshops for early career researchers and senior faculty members, public talks, the development of core curricula on open research practices, and original research on meta-science and reproducibility. Even more, we seek to develop and implement alternative incentive structures in science that support the adoption of open science practices.
+
+  The OSC aims to be a central knowledge hub for all practical questions surrounding open science, including questions on intellectual property rights, data privacy, consent forms, and software solutions.
+
+  Finally, the center’s mission includes connecting existing initiatives at LMU institutions and beyond, as well as initiating an (inter)national dialog with funding agencies, publishers, service providers, and other external stakeholders to drive open science policies forward.
+
+  These steps promise to lead to a faster accumulation of knowledge and the potential to provide substantial benefits for science – and for society.
+  </p>
+
+<!-- Overview -->
+<section id="overview" class="section">
+  <div class="container">
+    <div class="grid grid-3">
+      <div class="card">
+        <div class="feature">
+          <div class="icon" aria-hidden="true"><i class="fa-solid fa-lock-open"></i></div>
+          <div>
+            <h3>Open by design</h3>
+            <p>Open data, code, and protocols are our defaults, enabling verification and reuse.</p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="feature">
+          <div class="icon" aria-hidden="true"><i class="fa-solid fa-eye"></i></div>
+          <div>
+            <h3>Transparency</h3>
+            <p>Pre-registration, honest and open methodology.</p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="feature">
+          <div class="icon" aria-hidden="true"><i class="fa-solid fa-circle-nodes"></i></div>
+          <div>
+            <h3>Collaborative networks</h3>
+            <p>We connect labs, disciplines, and communities to accelerate trustworthy discovery.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="hr" />
+
+    <!-- Stats with icons -->
+    <div class="stats stats--icons" aria-label="Key figures">
+      <div class="stat">
+        <div class="stat-icon" aria-hidden="true">
+          <i class="fa-solid fa-book-open"></i>
+        </div>
+        <div class="stat-body">
+          <div class="num">25+</div>
+          <div class="label">Open science tutorials</div>
+        </div>
+      </div>
+      <div class="stat">
+        <div class="stat-icon" aria-hidden="true">
+          <i class="fa-solid fa-user-graduate"></i>
+        </div>
+        <div class="stat-body">
+          <div class="num">300+</div>
+          <div class="label">Researchers trained</div>
+        </div>
+      </div>
+      <div class="stat">
+        <div class="stat-icon" aria-hidden="true">
+          <i class="fa-solid fa-handshake"></i>
+        </div>
+        <div class="stat-body">
+          <div class="num">15+</div>
+          <div class="label">Active collaborations</div>
+        </div>
+      </div>
+      <div class="stat">
+        <div class="stat-icon" aria-hidden="true">
+          <i class="fa-solid fa-code-branch"></i>
+        </div>
+        <div class="stat-body">
+          <div class="num">100%</div>
+          <div class="label">Methods openly shared</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Who we are / What we do -->
+<section id="about" class="section section--alt">
+  <div class="container">
+    <div class="grid grid-2">
+      <div>
+        <h2>Who we are</h2>
+        <p class="lead">We are scientists, engineers, and educators building an open ecosystem for reliable research. Our teams operate across domains, uniting basic science with practical impact.</p>
+        <ul class="kv mt-4">
+          <li><strong>Focus areas:</strong> Open methods, research software, data stewardship, reproducibility</li>
+          <li><strong>Approach:</strong> Transparent design, community review, continuous improvement</li>
+          <li><strong>Commitment:</strong> Accessibility, equity, and shared scientific infrastructure</li>
+        </ul>
+        <div class="btn-row">
+          <a class="btn btn--primary" href="statute.html">
+            Read our statute <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+      <div>
+        <h2>What we do</h2>
+        <div class="grid grid-2">
+          <div class="card">
+            <h3>Open Coding Tutorials</h3>
+            <p>Standards, tooling, and cloud-ready platforms that make open workflows practical.</p>
+          </div>
+          <div class="card">
+            <h3>Inter-Institute Networking</h3>
+            <p>Communication between institutions and departments to encourage openess.</p>
+          </div>
+          <div class="card">
+            <h3>Training and Outreach</h3>
+            <p>Workshops, curricula, and fellowships to grow open science skills.</p>
+          </div>
+          <div class="card">
+            <h3>Community programs</h3>
+            <p>Collaborative initiatives that align incentives around openness and rigor.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Principles -->
+<section id="principles" class="section">
+  <div class="container">
+    <h2>Principles that guide us</h2>
+    <div class="grid grid-3 mt-4">
+      <div class="card">
+        <h3>Transparency</h3>
+        <p>Share plans, code, data, and decisions as early as possible.</p>
+      </div>
+      <div class="card">
+        <h3>Reproducibility</h3>
+        <p>Make results verifiable through documented, automated workflows.</p>
+      </div>
+      <div class="card">
+        <h3>Inclusivity</h3>
+        <p>Design with diverse contributors and equitable access in mind.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+```
