@@ -54,4 +54,24 @@ After the PR has been completed, the GH Action will take effect and the website 
 
 Finally, you'll want to update your own local copy of this repository by returning to the beginning of these instructions (i.e. run `git pull`).
 
+## Troubleshooting
+
+If you're having issues with your changes not appearing on the website, you have two options:
+
+### Quick Diagnostic
+Run the diagnostic script to check your current status:
+```bash
+./check-deployment-status.sh
+```
+
+### Detailed Troubleshooting
+See the [Deployment Troubleshooting Guide](TROUBLESHOOTING_DEPLOYMENTS.md) for common issues and solutions.
+
+### Quick Checklist
+- ✅ Are you working on a feature branch (not `main`)?
+- ✅ Did you open a pull request to merge into `main`?
+- ✅ Has your PR been merged?
+- ✅ Have you waited 5-10 minutes after merge?
+- ✅ Have you tried force-refreshing your browser?
+
 
