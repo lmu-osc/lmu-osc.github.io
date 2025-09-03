@@ -1,0 +1,76 @@
+/* Initiative page specific styles */
+.initiative-container {
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 0 1.5rem;
+}
+
+.initiative-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  gap: 1.5rem;
+}
+
+.initiative-logo {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.initiative-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.initiative-title {
+  color: #2b864b;
+  margin: 0;
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.initiative-content {
+  line-height: 1.7;
+  color: #333;
+}
+
+.initiative-content p {
+  margin-bottom: 1.5rem;
+}
+
+.back-link {
+  margin-top: 3rem;
+}
+
+.back-button {
+  display: inline-flex;
+  align-items: center;
+  color: #2b864b;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.back-button:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .initiative-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  
+  .initiative-title {
+    font-size: 1.8rem;
+  }
+  
+  .initiative-logo {
+    width: 80px;
+    height: 80px;
+  }
+}

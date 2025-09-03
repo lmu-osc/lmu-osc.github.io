@@ -1,0 +1,432 @@
+---
+title: ""
+format: 
+  html:
+    page-layout: full
+    toc: false
+    include-in-header: 
+      - text: |
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+---
+
+<style>
+:root {
+  --theme-main: #2b864b;
+  --theme-bg: #f5f6fa;
+  --theme-card-bg: #fff;
+  --theme-card-shadow: 0 2px 10px rgba(43,134,75,0.10);
+  --theme-border: #e3e7ed;
+}
+
+body {
+  background: var(--theme-bg);
+  margin: 0;
+  min-height: 100vh;
+}
+
+.header-section {
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: #2b864b;
+  margin-bottom: 1.1rem;
+  letter-spacing: -0.5px;
+}
+
+.member-grid {
+  display: grid;
+  grid-template-columns: 280px 800px;
+  grid-template-rows: auto;
+  gap: 1rem;
+}
+
+.member-grid-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background: var(--theme-card-bg);
+  border-radius: 5px;
+  box-shadow: var(--theme-card-shadow);
+  border: 1.5px solid var(--theme-border);
+  padding: 0.5rem;
+  text-align: center;
+  transition: transform 0.13s, box-shadow 0.13s;
+  cursor: pointer;
+  height: 410px; 
+  min-width: 200px;
+  max-width: 320px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.member-grid-item:hover {
+  transform: translateY(-5px) scale(1.025);
+  box-shadow: 0 8px 32px rgba(43,134,75,0.15);
+  border-color: var(--theme-main);
+}
+
+.profile-link {
+  display: contents;
+  text-decoration: none;
+  color: inherit;
+  height: 100%;
+}
+
+.member-grid-image {
+  max-width: 158px;
+  min-height: 110px;
+  max-height: 158px;
+  object-fit: contain;
+  border-radius: 0;
+  top-margin: 20px;
+  margin: 0.5rem auto 0.8rem auto;
+  border: none;
+  background: #d5f5e3;
+  box-shadow: 0 1px 6px rgba(43,134,75,0.12);
+  flex-shrink: 0;
+}
+
+.member-grid-title {
+  font-size: 1.1rem;
+  color: #70877c;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.member-grid-position {
+  font-size: 1.2rem;
+  color: var(--theme-main);
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.member-grid-name {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #212c2b;
+  margin-bottom: 0.3rem;
+  line-height: 1.4;
+  min-height: 2.9em;
+  max-height: 4.2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.member-grid-org {
+  font-size: 1.1rem;
+  color: #45695f;
+  margin-bottom: 0.2rem;
+}
+
+.member-grid-faculty {
+  font-size: 1.1rem;
+  color: #70877c;
+  margin-bottom: 0.2rem;
+}
+
+.member-socials {
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.social-link {
+  display: inline-flex;         
+  align-items: center;
+  gap: 0.4rem;
+  background: none;              
+  box-shadow: none;               
+  color: #2b864b;                 
+  text-decoration: none;
+  font-size: 0.9rem;              
+  width: auto;                  
+  height: auto;                 
+  border: 1px solid #e3e7ed;                  
+  border-radius: 4px;              
+  padding: 0.3rem 0.6rem;                   
+  cursor: pointer;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.social-link i {
+  font-size: 1rem;
+  line-height: 1;      
+  margin: 0; 
+}
+
+.social-link:hover {
+  background-color: #BEE3F8;
+  color: white;
+  border-color: #2b864b;
+  transform: translateY(-2px);
+}
+
+.contact-link {
+  color: var(--theme-main);
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.contact-link:hover {
+  color: #256b3e;
+  text-decoration: underline;
+}
+
+.member-socials {
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  padding-top: 1rem;
+}
+
+.description-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.description-text {
+  font-size: 1.2rem;
+  color: #4a5568;
+  line-height: 1.85;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  max-height: calc(1.2rem * 1.85 * 5);
+  width: 100%;
+}
+
+.read-more-btn {
+  margin-top: 0.5rem;
+  display: inline-block;
+  padding: 0.4em 1.1em;
+  background: var(--theme-main);
+  color: #fff !important;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none !important;
+  box-shadow: 0 2px 8px rgba(43,134,75,0.08);
+  transition: background 0.13s, box-shadow 0.13s;
+  border: none;
+  cursor: pointer;
+}
+
+.read-more-btn:hover {
+  background: #256b3e;
+  color: #fff !important;
+}
+
+hr {
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5));
+    margin: 20px 0;
+    grid-column: 1 / -1; 
+  }
+
+</style>
+
+```{=html}
+
+<div class="header-section">Institutional Members</div>
+
+<div class="member-grid">
+    <div class="profile-link" onclick="window.location='institution1.html'">
+        <div class="member-grid-item">
+            <img src="images/coe.jpeg" class="member-grid-image" alt="Cluster of Excellence">
+            <div class="member-grid-name">Cluster of Excellence: Origins</div>
+            <div class="member-grid-faculty">Contact Person: </div>
+            <a href="profile-thomas-kuhr.html" class="contact-link">Prof. Dr. Thomas Kuhr</a>
+            <div class="member-socials">
+                <a href="https://www.origins-cluster.de/en/" title="Website" target="_blank" class="social-link"><i class="fa-solid fa-globe"></i>  Website</a>
+            </div>
+        </div>
+    </div>
+
+<div class="description-container">
+  <div class="description-text">
+    The Excellence Cluster ORIGINS: "From the Origins of the Universe to the First Building Blocks of Life" is an interdisciplinary research network based in Munich and Garching. Building on the previous Excellence Cluster Universe, a very fruitful collaboration between astro-, particle- and nuclear physicists, ORIGINS is exploring the conjecture of modern cosmology that the Universe and the emergence of life have naturally unfolded from the initial conditions laid out in the Big Bang. Open Science under FAIR (Findability, Accessibility, Interoperability, and Reuse of digital assets) principles has a long tradition in astrophysics and is showing increased activity in particle physics. The ORIGINS Data Science Lab (ODSL) was founded as a pillar for novel statistical data analysis and artificial intelligence in all ORIGINS (bio-)physics and chemistry disciplines. As a part of ODSL, the Dark Matter Data Centre (DMDC) provides an open science repository for dark matter-related experimental data, numerical simulations and related software to improve accessibility within the dark matter community.
+  </div>
+  <a href="institution1.html" class="read-more-btn">
+    Read More <i class="fa-solid fa-arrow-right"></i>
+  </a>
+</div>
+
+<hr>
+
+<div class="profile-link" onclick="window.location='institution1.html'">
+    <div class="member-grid-item">
+        <img src="images/lmu_logo.jpg" class="member-grid-image" alt="LMU">
+        <div class="member-grid-name">Department of Psychology</div>
+        <div class="member-grid-faculty">Contact Person: </div>
+        <a href="profile-felix-schonbrodt.html" class="contact-link">Prof. Dr. Felix Schönbrodt</a>
+        <div class="member-socials">
+            <a href="https://www.origins-cluster.de/en/" title="Website" target="_blank" class="social-link"><i class="fa-solid fa-globe"></i>  Website</a>
+        </div>
+    </div>
+</div>
+
+<div class="description-container">
+    <div class="description-text">
+        Psychological science has seen a substantial replication crisis in the last years, with many large scale projects failing to replicate apparently well established findings. With the goal to increase the awareness and the adoption of open science practices, in July 2015 an Open Science Committee was established at the Department Psychology. Its project on the Open Science Framework (OSF) provides different documents and presentations that are used in research and teaching. Furthermore, since 2016 all job descriptions for professorship positions at our department included an "Open Science track record" as desirable characteristic of an applicant. Additionally, we decided to require a PhD/Dissertation agreement between all PhD students and their supervisors that includes planned open science practices. A template for this kind of agreement is provided on our website.
+    </div>
+      <a href="institution1.html" class="read-more-btn">
+    Read More <i class="fa-solid fa-arrow-right"></i>
+      </a>
+</div>
+
+<hr>
+
+<div class="profile-link" onclick="window.location='institution1.html'">
+    <div class="member-grid-item">
+        <img src="images/synergy.jpg" class="member-grid-image" alt="Cluster of Excellence">
+        <div class="member-grid-name">Cluster of Excellence: SyNergy</div>
+        <div class="member-grid-faculty">Contact Person: </div>
+        <a href="profile-martin-dichgans.html" class="contact-link">Prof. Dr. Martin Dichgans</a>
+        <div class="member-socials">
+            <a href="https://www.synergy-munich.de/synergy" title="Website" target="_blank" class="social-link"><i class="fa-solid fa-globe"></i>  Website</a>
+        </div>
+    </div>
+</div>
+
+<div class="description-container">
+  <div class="description-text">
+    The Munich Cluster for Systems Neurology (SyNergy) investigates how complex neurological diseases such as Alzheimer's disease, stroke, and multiple sclerosis develop. Using systems neurology as a new interdisciplinary approach, researchers can decipher the shared disease mechanisms of neurovascular, neurodegenerative, and neuroimmunological diseases and on this basis develop novel diagnostic and therapeutic approaches. SyNergy has expressed its commitment to promoting research transparency and reproducibility in both quantitative and qualitative research endeavors. We view the ability to replicate and reproduce research findings, whether quantitative or qualitative, as fundamental pillars supporting the generalizability and reliability of scientific knowledge.
+  </div>
+  <a href="institution1.html" class="read-more-btn">
+    Read More <i class="fa-solid fa-arrow-right"></i>
+  </a>
+</div>
+
+<hr>
+
+<div class="profile-link" onclick="window.location='institution1.html'">
+    <div class="member-grid-item">
+        <img src="images/lmu_logo.jpg" class="member-grid-image" alt="LMU">
+        <div class="member-grid-name">Faculty of Biology</div>
+        <div class="member-grid-faculty">Contact Person: </div>
+        <a href="profile-niels-dingermanse.html" class="contact-link">Prof. Dr. Niels Dingemanse</a>
+        <div class="member-socials">
+            <a href="https://www.bio.lmu.de/en/" title="Website" target="_blank" class="social-link"><i class="fa-solid fa-globe"></i>  Website</a>
+        </div>
+    </div>
+</div>
+
+<div class="description-container">
+    <div class="description-text">
+    </div>
+      <a href="institution1.html" class="read-more-btn">
+    Read More <i class="fa-solid fa-arrow-right"></i>
+      </a>
+</div>
+
+<hr>
+
+<div class="profile-link" onclick="window.location='institution1.html'">
+    <div class="member-grid-item">
+        <img src="images/som.jpeg" class="member-grid-image" alt="LMU">
+        <div class="member-grid-name">Munich School of Management</div>
+        <div class="member-grid-faculty">Contact Person: </div>
+        <a href="profile-ralf-elsas.html" class="contact-link">Prof. Dr. Ralf Elsas</a>
+        <div class="member-socials">
+            <a href="https://www.som.lmu.de/en/" title="Website" target="_blank" class="social-link"><i class="fa-solid fa-globe"></i>  Website</a>
+        </div>
+    </div>
+</div>
+
+<div class="description-container">
+    <div class="description-text">
+       The LMU Munich School of Management is committed to advancing the principles of open science and research transparency. By becoming an institutional member of the LMU's Open Science Center, we aim to foster a culture of openness, collaboration, and integrity in our research community. We believe that promoting open access to data, methodologies, and findings will enhance the quality and reproducibility of research in business studies, ultimately contributing to innovative and impactful solutions for global business challenges.
+    </div>
+      <a href="institution1.html" class="read-more-btn">
+    Read More <i class="fa-solid fa-arrow-right"></i>
+      </a>
+</div>
+
+</div>
+
+<hr>
+
+<div class="header-section">Affiliated Institutional Members</div>
+
+<div class="member-grid">
+<div class="profile-link" onclick="window.location='institution1.html'">
+    <div class="member-grid-item">
+        <img src="images/lmu_logo.jpg" class="member-grid-image" alt="LMU">
+        <div class="member-grid-name">Department of Statistics</div>
+        <div class="member-grid-faculty">Contact Person: </div>
+        <a href="profile-ralf-elsas.html" class="contact-link">?</a>
+        <div class="member-socials">
+            <a href="https://www.stat.lmu.de/en/" title="Website" target="_blank" class="social-link"><i class="fa-solid fa-globe"></i>  Website</a>
+        </div>
+    </div>
+</div>
+
+<div class="description-container">
+    <div class="description-text">
+       The LMU department of statistics supports the goals of the OSC and wants to take on a leading role in fostering good research practices and promoting open science. We believe that statistics as a subject plays a major role in solving the reproducibility crisis and in working towards better, open research.
+    </div>
+      <a href="institution1.html" class="read-more-btn">
+    Read More <i class="fa-solid fa-arrow-right"></i>
+      </a>
+</div>
+
+<hr>
+
+<div class="profile-link" onclick="window.location='institution1.html'">
+    <div class="member-grid-item">
+        <img src="images/bmc.jpeg" class="member-grid-image" alt="BMC">
+        <div class="member-grid-name">BMC</div>
+        <div class="member-grid-faculty">Contact Person: </div>
+        <a href="profile-tobias-straub.html" class="contact-link">Dr. Tobias Straub</a>
+        <div class="member-socials">
+            <a href="https://www.med.lmu.de/bmc/en/" title="Website" target="_blank" class="social-link"><i class="fa-solid fa-globe"></i>  Website</a>
+        </div>
+    </div>
+</div>
+
+<div class="description-container">
+    <div class="description-text">
+       The Biomedical Center Munich (BMC) is striving to enhance the quality and reproducibility of its research through the adoption of Open Science practices. With a focus on improving experimental design, documentation, and data management, BMC aims to adhere to FAIR principles (Findable, Accessible, Interoperable, Re-usable). Initial efforts include raising awareness among researchers, training in doctoral programs, and evaluating the effectiveness of these measures. Current activities involve participation in Responsible Research Days and integration of Open Science concepts into doctoral programs. Looking ahead, BMC plans to implement Open Science practices institute-wide over the next five years, including creating guidelines and checklists for researchers. Collaboration with other biomedical institutes and the Open Science Center (OSC) is key to sharing experiences and fostering a campus-wide Open Science initiative.
+    </div>
+      <a href="institution1.html" class="read-more-btn">
+    Read More <i class="fa-solid fa-arrow-right"></i>
+      </a>
+</div>
+
+<hr>
+
+<div class="profile-link" onclick="window.location='institution1.html'">
+    <div class="member-grid-item">
+        <img src="images/itg.png" class="member-grid-image" alt="BMC">
+        <div class="member-grid-name">Digital Humanities Center - IT-Gruppe Geisteswisssenschaften </div>
+        <div class="member-grid-faculty">Contact Person: </div>
+        <a href="profile-stephan-luecke.html" class="contact-link">Dr. Stephan Lücke</a>
+        <div class="member-socials">
+            <a href="https://www.med.lmu.de/bmc/en/" title="Website" target="_blank" class="social-link"><i class="fa-solid fa-globe"></i>  Website</a>
+        </div>
+    </div>
+</div>
+
+<div class="description-container">
+    <div class="description-text">
+       The Biomedical Center Munich (BMC) is striving to enhance the quality and reproducibility of its research through the adoption of Open Science practices. With a focus on improving experimental design, documentation, and data management, BMC aims to adhere to FAIR principles (Findable, Accessible, Interoperable, Re-usable). Initial efforts include raising awareness among researchers, training in doctoral programs, and evaluating the effectiveness of these measures. Current activities involve participation in Responsible Research Days and integration of Open Science concepts into doctoral programs. Looking ahead, BMC plans to implement Open Science practices institute-wide over the next five years, including creating guidelines and checklists for researchers. Collaboration with other biomedical institutes and the Open Science Center (OSC) is key to sharing experiences and fostering a campus-wide Open Science initiative.
+    </div>
+      <a href="institution1.html" class="read-more-btn">
+    Read More <i class="fa-solid fa-arrow-right"></i>
+      </a>
+</div>
+
+</div>
+```
