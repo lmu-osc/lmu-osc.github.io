@@ -36,8 +36,15 @@
 <% } %>
 <% if (item.social_media.Linkedin) { %>
 <li>
-<a href="<%= item.social_media.Linkedin %>" target="_blank" aria-label="LinkedIn">
+<a href="<%= item.social_media.Linkedin %>" target="_blank" aria-label="Linkedin">
 <i class="fa-brands fa-linkedin fa-2xl" aria-hidden="true"></i>
+</a>
+</li>
+<% } %>
+<% if (item.social_media.Mastodon) { %>
+<li>
+<a href="<%= item.social_media.Mastodon %>" target="_blank" aria-label="Mastodon">
+<i class="fa-brands fa-mastodon fa-2xl" aria-hidden="true"></i>
 </a>
 </li>
 <% } %>
