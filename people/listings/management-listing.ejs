@@ -5,7 +5,7 @@
 <!-- Profile Image Column -->
 <div class="col-md-3 d-flex justify-content-center align-items-center">
 <a href="<%= item.path %>">
-<img src="<%= item.photo %>" class="profile-image" alt="Profile photo of <%= item.name %>">
+<img src="people/<%= item.photo || '/images/default.svg' %>" class="profile-image" alt="Profile photo of <%= item.name %>">
 </a>
 </div>
 

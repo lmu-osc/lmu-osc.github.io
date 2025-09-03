@@ -11,7 +11,7 @@
 </a>
 <% } %>
 <a href="<%= item.path %>" class="profile-image-wrapper">
-<img src="<%= item.photo || 'people/images/default.jpg' %>" alt="Profile" class="profile-image">
+<img src="people/<%= item.photo || '/images/default.svg' %>" alt="Profile" class="profile-image">
 </a>
 <div class="card-body flex-column text-center">
 <a href="<%= item.path %>" class="card-title"><%= item.name %></a>

@@ -7,7 +7,7 @@ format:
       gutter-width: 1.5rem
     css: 
       - ../styles.css
-      - ../people.css
+      - people.css
     page-layout: full
     toc: false
     include-in-header: 
