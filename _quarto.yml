@@ -40,10 +40,14 @@ website:
       - text: People
         icon: people
         menu: 
-          - people.qmd
-          - leadership.qmd
-          - boards.qmd
-          - members.qmd
+          - people/overview.qmd
+          - people/management.qmd
+          - people/staff.qmd
+          - people/scientific-board.qmd
+          - people/advisory-board.qmd
+          - people/members.qmd
+          - people/fellows.qmd
+          - people/alumnae.qmd
       - href: events.qmd
         icon: calendar-event
         text: Events
