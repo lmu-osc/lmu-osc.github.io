@@ -42,7 +42,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-c8ad9e5dbd60b7b70b38521ab19b7da4.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-1cc13a31bf0bd57f95156345b5732d77.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-425c1d20e4c47e18d4446d588061641d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -73,20 +73,20 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-lmu-individual-listing .list');
+    const listingTargetEl = window.document.querySelector('#listing-lmu-members .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
     }
 
     const options = {
-      valueNames: ['listing-project','listing-website','listing-format','listing-language','listing-execute','listing-title','listing-position','listing-faculty','listing-membertype','listing-photo','listing-email','listing-display_weight','listing-social_media','listing-mission_statement','listing-research_interests','listing-publications','listing-path','listing-outputHref','listing-author','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-word-count','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
+      valueNames: ['listing-project','listing-website','listing-format','listing-language','listing-execute','listing-title','listing-name','listing-academic_title','listing-position','listing-faculty','listing-membertype','listing-photo','listing-email','listing-display_weight','listing-personal','listing-social_media','listing-mission_statement','listing-research_interests','listing-publications','listing-path','listing-outputHref','listing-author','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-word-count','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
       
-      searchColumns: ["listing-project","listing-website","listing-format","listing-language","listing-execute","listing-title","listing-position","listing-faculty","listing-membertype","listing-photo","listing-email","listing-display_weight","listing-social_media","listing-mission_statement","listing-research_interests","listing-publications","listing-path","listing-outputHref","listing-author","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count","listing-categories"],
+      searchColumns: ["listing-project","listing-website","listing-format","listing-language","listing-execute","listing-title","listing-name","listing-academic_title","listing-position","listing-faculty","listing-membertype","listing-photo","listing-email","listing-display_weight","listing-personal","listing-social_media","listing-mission_statement","listing-research_interests","listing-publications","listing-path","listing-outputHref","listing-author","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count","listing-categories"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-lmu-individual-listing'] = new List('listing-lmu-individual-listing', options);
+    window['quarto-listings']['listing-lmu-members'] = new List('listing-lmu-members', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -101,76 +101,20 @@ ul.task-list li input[type="checkbox"] {
   
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-associated-member-listing .list');
+    const listingTargetEl = window.document.querySelector('#listing-associated-members .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
     }
 
     const options = {
-      valueNames: [{ data: ['index'] },{ data: ['categories'] }],
+      valueNames: ['listing-project','listing-website','listing-format','listing-language','listing-execute','listing-title','listing-academic_title','listing-name','listing-position','listing-faculty','listing-membertype','listing-categories','listing-photo','listing-email','listing-display_weight','listing-personal','listing-social_media','listing-mission_statement','listing-research_interests','listing-publications','listing-path','listing-outputHref','listing-author','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-word-count',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
       
-      searchColumns: [],
+      searchColumns: ["listing-project","listing-website","listing-format","listing-language","listing-execute","listing-title","listing-academic_title","listing-name","listing-position","listing-faculty","listing-membertype","listing-categories","listing-photo","listing-email","listing-display_weight","listing-personal","listing-social_media","listing-mission_statement","listing-research_interests","listing-publications","listing-path","listing-outputHref","listing-author","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-associated-member-listing'] = new List('listing-associated-member-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-fellow-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-project','listing-website','listing-format','listing-language','listing-execute','listing-title','listing-position','listing-faculty','listing-membertype','listing-categories','listing-photo','listing-email','listing-display_weight','listing-social_media','listing-mission_statement','listing-research_interests','listing-publications','listing-path','listing-outputHref','listing-author','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-word-count',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
-      
-      searchColumns: ["listing-project","listing-website","listing-format","listing-language","listing-execute","listing-title","listing-position","listing-faculty","listing-membertype","listing-categories","listing-photo","listing-email","listing-display_weight","listing-social_media","listing-mission_statement","listing-research_interests","listing-publications","listing-path","listing-outputHref","listing-author","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-fellow-listing'] = new List('listing-fellow-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-previous-member-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-project','listing-website','listing-format','listing-language','listing-execute','listing-title','listing-position','listing-faculty','listing-membertype','listing-categories','listing-photo','listing-email','listing-display_weight','listing-social_media','listing-mission_statement','listing-research_interests','listing-publications','listing-path','listing-outputHref','listing-author','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-word-count',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
-      
-      searchColumns: ["listing-project","listing-website","listing-format","listing-language","listing-execute","listing-title","listing-position","listing-faculty","listing-membertype","listing-categories","listing-photo","listing-email","listing-display_weight","listing-social_media","listing-mission_statement","listing-research_interests","listing-publications","listing-path","listing-outputHref","listing-author","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-previous-member-listing'] = new List('listing-previous-member-listing', options);
+    window['quarto-listings']['listing-associated-members'] = new List('listing-associated-members', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -200,8 +144,8 @@ ul.task-list li input[type="checkbox"] {
 <!-- End Matomo Code -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"> 
-<script src="../assets/javascript/display_name_hover.js" defer=""></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -236,7 +180,6 @@ window.Quarto = {
 <link rel="stylesheet" href="https://raw.githubusercontent.com/lmu-osc/branding-resources/refs/heads/main/styles.css">
 <link rel="stylesheet" href="../custom-navbar.css">
 <link rel="stylesheet" href="../styles.css">
-<link rel="stylesheet" href="../people.css">
 <link rel="stylesheet" href="people.css">
 </head>
 
@@ -296,7 +239,7 @@ window.Quarto = {
   </li>  
         <li>
     <a class="dropdown-item" href="../people/management.html">
- <span class="dropdown-text">Leadership</span></a>
+ <span class="dropdown-text">Management</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../people/staff.html">
@@ -356,19 +299,9 @@ window.Quarto = {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#lmu-members" id="toc-lmu-members" class="nav-link active" data-scroll-target="#lmu-members">LMU Members</a></li>
-  <li><a href="#associated-members" id="toc-associated-members" class="nav-link" data-scroll-target="#associated-members">Associated Members</a></li>
-  <li><a href="#fellows" id="toc-fellows" class="nav-link" data-scroll-target="#fellows">Fellows</a></li>
-  </ul>
-</nav>
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(4)</span></div><div class="category" data-category="ZGlyZWN0b3I=">director <span class="quarto-category-count">(3)</span></div></div></div>
+    
 <!-- main -->
-<main class="content column-page-left" id="quarto-document-content">
+<main class="content column-page" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -377,7 +310,7 @@ window.Quarto = {
 
 
 
-<div class="quarto-title-meta column-page-left">
+<div class="quarto-title-meta column-page">
 
     
   
@@ -389,45 +322,256 @@ window.Quarto = {
 </header>
 
 
-<section id="lmu-members" class="level1">
-<h1>LMU Members</h1>
-<div id="listing-lmu-individual-listing" class="quarto-listing quarto-listing-container-custom">
-<div class="people-grid">
-<p><a class="people-img-link" href="../people/profiles/malika_ihle.html" data-title="Dr. Malika Ihle"> <img class="people-img" src="people/../images/malika.JPG" alt="Dr. Malika Ihle"> </a></p>
-<p><a class="people-img-link" href="../people/profiles/felix_example.html" data-title="Prof. Dr. Felix Schönbrodt"> <img class="people-img" src="people/../images/felix.jpeg" alt="Prof. Dr. Felix Schönbrodt"> </a></p>
+<section id="lmu-members" class="level2">
+<h2 class="anchored" data-anchor-id="lmu-members">LMU Members</h2>
+<div id="listing-lmu-members" class="quarto-listing quarto-listing-container-custom">
+<div class="container py-4">
+<div class="d-flex flex-wrap justify-content-center gap-4">
+<div class="card d-flex flex-column align-items-center" style="width: 185px;">
+<!-- ORCID icon container -->
+<p><a href="https://orcid.org/0000-0002-8282-3910" target="_blank" class="orcid-icon"> <i class="fa-brands fa-orcid fa-lg"></i> </a></p>
+<a href="../people/people/felix_example.html" class="profile-image-wrapper"> <img src="people/images/felix.jpeg" alt="Profile" class="profile-image"> </a>
+<div class="card-body flex-column text-center">
+<a href="../people/people/felix_example.html" class="card-title">Felix Schönbrodt</a>
+<div class="card-subtitle mt-auto text-muted">
+Prof.&nbsp;Dr.
 </div>
+<p class="card-text mt-auto">
+Psychology
+</p>
+</div>
+</div>
+<div class="card d-flex flex-column align-items-center" style="width: 185px;">
+<!-- ORCID icon container -->
+<p><a href="https://orcid.org/0000-0002-8282-3910" target="_blank" class="orcid-icon"> <i class="fa-brands fa-orcid fa-lg"></i> </a></p>
+<a href="../people/people/malika_ihle.html" class="profile-image-wrapper"> <img src="people/images/malika.JPG" alt="Profile" class="profile-image"> </a>
+<div class="card-body flex-column text-center">
+<a href="../people/people/malika_ihle.html" class="card-title">Malika Ihle</a>
+<div class="card-subtitle mt-auto text-muted">
+Dr.
+</div>
+<p class="card-text mt-auto">
+Medicine
+</p>
+</div>
+</div>
+</div>
+</div>
+<style>
+:root {
+  --theme-main: #2b864b;
+  --theme-bg: #f5f6fa;
+  --theme-card-bg: #fff;
+  --theme-card-shadow: 0 2px 10px rgba(43,134,75,0.10);
+  --theme-border: #fff;
+}
+
+.card {
+  transition: all 0.4s ease;  /* adjust speed here */
+}
+
+.card:hover {
+  transform: translateY(-5px) scale(1.025);
+  box-shadow: 0 8px 32px rgba(43,134,75,0.15);
+  border-color: var(--theme-main);
+}
+
+.card-title {
+  display: -webkit-box;
+  line-clamp: 2;
+  -webkit-line-clamp: 2; /* Clamp to 2 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+
+  line-height: 1.2rem;          /* adjust based on your font-size */
+  height: calc(1.2rem * 2);     /* 3 lines of space */
+  margin-bottom: 0.5rem;   
+}
+
+.card-subtitle {
+  display: -webkit-box;
+  line-clamp: 1;
+  -webkit-line-clamp: 1; /* Clamp to 1 line */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 0.25rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.card-text {
+  display: -webkit-box;
+  line-clamp: 3;
+  -webkit-line-clamp: 3; /* Clamp to 3 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  line-height: 1.2rem;          /* adjust based on your font-size */
+  height: calc(1.2rem * 3);     /* 3 lines of space */
+  margin-bottom: 0;   
+}
+
+.profile-image-wrapper {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-image {
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid var(--theme-main);
+  flex-shrink: 0;
+}
+
+.card-body {
+  padding: 0.5rem 0.5rem;  /* smaller padding than default 1rem */
+}
+
+.orcid-icon {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  font-size: 1.2rem;      /* adjust size */
+  color: #A6CE39;         /* ORCID green */
+  z-index: 10;
+  text-decoration: none;   /* remove underline */
+}
+
+</style>
 <div class="listing-no-matching d-none">No matching items</div>
 </div>
 </section>
-<section id="associated-members" class="level1">
-<h1>Associated Members</h1>
-<div id="listing-associated-member-listing" class="quarto-listing quarto-listing-container-custom">
-<div class="people-grid">
-
+<section id="associated-members" class="level2">
+<h2 class="anchored" data-anchor-id="associated-members">Associated Members</h2>
+<div id="listing-associated-members" class="quarto-listing quarto-listing-container-custom">
+<div class="container py-4">
+<div class="d-flex flex-wrap justify-content-center gap-4">
+<div class="card d-flex flex-column align-items-center" style="width: 185px;">
+<!-- ORCID icon container -->
+<p><a href="https://orcid.org/0000-0002-8282-3910" target="_blank" class="orcid-icon"> <i class="fa-brands fa-orcid fa-lg"></i> </a></p>
+<a href="../people/people/felix_example.html" class="profile-image-wrapper"> <img src="people/images/felix.jpeg" alt="Profile" class="profile-image"> </a>
+<div class="card-body flex-column text-center">
+<a href="../people/people/felix_example.html" class="card-title">Felix Schönbrodt</a>
+<div class="card-subtitle mt-auto text-muted">
+Prof.&nbsp;Dr.
 </div>
+<p class="card-text mt-auto">
+Psychology
+</p>
+</div>
+</div>
+</div>
+</div>
+<style>
+:root {
+  --theme-main: #2b864b;
+  --theme-bg: #f5f6fa;
+  --theme-card-bg: #fff;
+  --theme-card-shadow: 0 2px 10px rgba(43,134,75,0.10);
+  --theme-border: #fff;
+}
+
+.card {
+  transition: all 0.4s ease;  /* adjust speed here */
+}
+
+.card:hover {
+  transform: translateY(-5px) scale(1.025);
+  box-shadow: 0 8px 32px rgba(43,134,75,0.15);
+  border-color: var(--theme-main);
+}
+
+.card-title {
+  display: -webkit-box;
+  line-clamp: 2;
+  -webkit-line-clamp: 2; /* Clamp to 2 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+
+  line-height: 1.2rem;          /* adjust based on your font-size */
+  height: calc(1.2rem * 2);     /* 3 lines of space */
+  margin-bottom: 0.5rem;   
+}
+
+.card-subtitle {
+  display: -webkit-box;
+  line-clamp: 1;
+  -webkit-line-clamp: 1; /* Clamp to 1 line */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 0.25rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.card-text {
+  display: -webkit-box;
+  line-clamp: 3;
+  -webkit-line-clamp: 3; /* Clamp to 3 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  line-height: 1.2rem;          /* adjust based on your font-size */
+  height: calc(1.2rem * 3);     /* 3 lines of space */
+  margin-bottom: 0;   
+}
+
+.profile-image-wrapper {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-image {
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid var(--theme-main);
+  flex-shrink: 0;
+}
+
+.card-body {
+  padding: 0.5rem 0.5rem;  /* smaller padding than default 1rem */
+}
+
+.orcid-icon {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  font-size: 1.2rem;      /* adjust size */
+  color: #A6CE39;         /* ORCID green */
+  z-index: 10;
+  text-decoration: none;   /* remove underline */
+}
+
+</style>
 <div class="listing-no-matching d-none">No matching items</div>
 </div>
-</section>
-<section id="fellows" class="level1">
-<h1>Fellows</h1>
-<div id="listing-fellow-listing" class="quarto-listing quarto-listing-container-custom">
-<div class="people-grid">
-<p><a class="people-img-link" href="../people/profiles/felix_example.html" data-title="Prof. Dr. Felix Schönbrodt"> <img class="people-img" src="people/../images/felix.jpeg" alt="Prof. Dr. Felix Schönbrodt"> </a></p>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div>
-<section id="previous-members" class="level2">
-<h2 class="anchored" data-anchor-id="previous-members">Previous Members</h2>
-<div id="listing-previous-member-listing" class="quarto-listing quarto-listing-container-custom">
-<div class="people-grid">
-<p><a class="people-img-link" href="../people/profiles/felix_example.html" data-title="Prof. Dr. Felix Schönbrodt"> <img class="people-img" src="people/../images/felix.jpeg" alt="Prof. Dr. Felix Schönbrodt"> </a></p>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div>
 
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
@@ -838,7 +982,7 @@ window.Quarto = {
     </div>   
     <div class="nav-footer-center">
 <p>Copyright LMU Open Science Center, 2025</p>
-</div>
+<div class="toc-actions"><ul><li><a href="https://github.com/lmu-osc/lmu-osc.github.io/edit/main/people/members.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lmu-osc/lmu-osc.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       &nbsp;
     </div>
