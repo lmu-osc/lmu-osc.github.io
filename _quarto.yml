@@ -13,6 +13,13 @@ website:
   repo-url: https://github.com/lmu-osc/lmu-osc.github.io
   repo-actions: [edit, issue]
 
+  announcement: 
+    icon: info-circle
+    dismissable: true
+    content: "**Thanks for visiting the LMU Open Science Center--our site is still under construction for now, but we'll be live soon!**"
+    type: primary
+    position: below-navbar
+
   navbar:
     title: false
     background: "#2b864b"
@@ -39,6 +46,7 @@ website:
           - open-research-cycle.qmd
       - text: People
         icon: people
+        # href: people/overview.qmd
         menu: 
           - people/overview.qmd
           - people/management.qmd
@@ -98,6 +106,7 @@ format:
     css: 
       - https://raw.githubusercontent.com/lmu-osc/branding-resources/refs/heads/main/styles.css
       - custom-navbar.css
+      - styles.css
     toc: true
     include-in-header:
       - file: matomo_analytics.html
