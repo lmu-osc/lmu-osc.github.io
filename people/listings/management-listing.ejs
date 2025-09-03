@@ -12,26 +12,36 @@
 <!-- Social Icons Column -->
 <div class="col-md-1 d-flex justify-content-center align-items-center">
 <ul class="d-flex flex-row flex-md-column list-unstyled gap-3">
+<% if (item.social_media) { %>
+<% if (item.social_media.ORCID) { %>
 <li>
-<a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
-<i class="fa-brands fa-linkedin fa-2xl" aria-hidden="true"></i>
-</a>
-</li>
-<li>
-<a href="https://github.com" target="_blank" aria-label="GitHub">
-<i class="fa-brands fa-github fa-2xl" aria-hidden="true"></i>
-</a>
-</li>
-<li>
-<a href="https://bluesky.com" target="_blank" aria-label="Bluesky">
-<i class="fa-brands fa-bluesky fa-2xl" aria-hidden="true"></i>
-</a>
-</li>
-<li>
-<a href="https://orcid.org" target="_blank" aria-label="ORCID">
+<a href="<%= item.social_media.ORCID %>" target="_blank" aria-label="ORCID">
 <i class="fa-brands fa-orcid fa-2xl" aria-hidden="true"></i>
 </a>
 </li>
+<% } %>
+<% if (item.social_media.GitHub) { %>
+<li>
+<a href="<%= item.social_media.GitHub %>" target="_blank" aria-label="GitHub">
+<i class="fa-brands fa-github fa-2xl" aria-hidden="true"></i>
+</a>
+</li>
+<% } %>
+<% if (item.social_media.Bluesky) { %>
+<li>
+<a href="<%= item.social_media.Bluesky %>" target="_blank" aria-label="Bluesky">
+<i class="fa-brands fa-bluesky fa-2xl" aria-hidden="true"></i>
+</a>
+</li>
+<% } %>
+<% if (item.social_media.Linkedin) { %>
+<li>
+<a href="<%= item.social_media.Linkedin %>" target="_blank" aria-label="LinkedIn">
+<i class="fa-brands fa-linkedin fa-2xl" aria-hidden="true"></i>
+</a>
+</li>
+<% } %>
+<% } %>
 </ul>
 </div>
 
@@ -74,6 +84,7 @@
 
 .card-text {
   display: -webkit-box;
+  line-clamp: 5;
   -webkit-line-clamp: 5; /* number of lines to show */
   -webkit-box-orient: vertical;
   overflow: hidden;
