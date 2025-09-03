@@ -26,6 +26,7 @@ research_interests <- get_param("research_interests", list())
 publications <- get_param("publications", list())
 website <- get_param("website", list())
 faculty <- get_param("faculty", "")
+phone <- get_param("phone", "")
 
 # Map platform names to Bootstrap icons
 icon_map <- list(

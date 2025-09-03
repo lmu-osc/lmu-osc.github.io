@@ -8,6 +8,14 @@ if (email != "") {
     )
   )
 }
+if (phone != "") {
+  contact_items <- tagAppendChild(contact_items,
+    div(class = "contact-item",
+      tags$i(class = "bi bi-telephone"),
+      a(href = paste0("tel:", phone), phone)
+    )
+  ) 
+}
 if (length(website) > 0) {
   for (site in website) {
     label <- if (!is.null(site$label)) site$label else "Website"
