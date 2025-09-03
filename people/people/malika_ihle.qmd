@@ -4,7 +4,7 @@ title: "Dr. Malika Ihle"
 name: "Malika Ihle"
 academic_title: "Dr."
 position: "Scientific Coordinator of the OSC"
-faculty: "Medicine"
+faculty: "Open Science Center"
 membertype: ["management", "lmu-individual"]
 photo: "images/malika.JPG"
 email: "malika.ihle@psy.lmu.de"
@@ -12,23 +12,21 @@ display_weight: 2
 personal: "Malika Ihle is the LMU Open Science Center Coordinator, supporting the scientific board in developing a comprehensive approach to open research that extends across all disciplines, using both bottom-up and top-down strategies. Her role is to provide peer-to-peer training and develop an open research curriculum, coordinate grassroots initiatives and organise various events such as seminars and conferences, support meta-research collaborations, liaise with local, national (e.g. the German Reproducibility Network (GRN)), and international stakeholders to inform the design of incentives and policies, and co-develop a strategic plan to make the LMU Open Science Center a sustainable entity."
 website:
   - label: "Personal Website"
-    url: "https://nicebread.de"
-  - label: "Faculty Website"
-    url: "https://www.osc.uni-muenchen.de/index.html"
-  - label: "Department of Psychology"
-    url: "https://www.psy.lmu.de/"
+    url: "https://malikaihle.github.io"
+  - label: "LMU Official Website"
+    url: "https://www.osc.uni-muenchen.de/about_us/coordinator/index.html"
+
 
 # Social media links - variable number
 social_media:
   Bluesky: "https://bsky.app/profile/lmu-osc.bsky.social"
-  Linkedin: "https://www.linkedin.com/in/felixschoenbrodt" 
-  GitHub: "https://github.com/nicebread"
-  ORCID: "https://orcid.org/0000-0002-8282-3910"
+  Linkedin: "https://www.linkedin.com/malika-ihle"
+  GitHub: "https://github.com/malikaihle"
+  ORCID: "https://orcid.org/0000-0002-3242-5981"
 
 # Mission statement paragraphs - variable number
 mission_statement:
-  - "HELLO THERE. I am principal investigator for <strong>Psychological Methods and Assessment</strong> at the Department of Psychology. The reproducibility of research findings is a core criterion of science, which *however*, has been challenged by the failure of recent large-scale replication projects."
-  - "Together with the board of the German Psychological Society (DGPs) I developed the society's recommendations for data sharing in psychology."
+  - "Malika Ihle is the LMU Open Science Center Coordinator, supporting the scientific board in developing a comprehensive approach to open research that extends across all disciplines, using both bottom-up and top-down strategies. Her role is to provide peer-to-peer training and develop an open research curriculum, coordinate grassroots initiatives and organise various events such as seminars and conferences, support meta-research collaborations, liaise with local, national (e.g. the German Reproducibility Network (GRN)), and international stakeholders to inform the design of incentives and policies, and co-develop a strategic plan to make the LMU Open Science Center a sustainable entity."
 
 # Research interests - variable number
 research_interests:
@@ -38,17 +36,7 @@ research_interests:
   - "Data Sharing"
 
 # Publications - variable number
-publications:
-  - year: 2024
-    title: "Machine Learning Applications in Organizational Behavior"
-    authors: "Smith, J., Johnson, A., & Williams, R."
-    journal: "Journal of Applied Research, 42(3), 256-278"
-    doi_url: "#"
-  - year: 2023
-    title: "Open Methods in Psychology"
-    authors: "Schönbrodt, F."
-    journal: "Psychological Methods, 15(2), 112-143"
-    doi_url: "#"
+publications: NULL
 ---
 
 
