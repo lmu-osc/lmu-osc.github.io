@@ -1,0 +1,110 @@
+.socials-card{
+    background-color:#2b864b;
+    color: white;
+    width: 100%;
+}
+.contact-email{
+    display: flex;
+    flex-direction: column;
+}
+.contact-list strong{
+    font-size: 20px;
+}
+
+.socials-links{
+    display: flex;
+    width: 100%;
+    padding:inherit;
+    flex-wrap: wrap;
+    gap:1rem;
+
+}
+
+.socials-links > div {
+    flex: 1;         
+    padding: 0.7rem; 
+    box-sizing: border-box;
+}
+
+.socials-icons{
+    margin-top: 0;
+    display: flex;
+    gap: 0.7em;
+    justify-content: flex-end;
+}
+
+.social-icon a {
+    color: white;
+    text-decoration: none;
+}
+
+.contact-list a{
+    color: white;
+    text-decoration: none;
+    margin: 0, im !important;
+    
+}
+.contact-list p{
+    color: white;
+}
+
+.newsletter-link a{
+    color:white;
+
+}
+.matrix-link{
+    width:fit-content;
+}
+.matrix-link img{
+    height:40px;
+    width:40px;
+    color:white;
+}
+
+.matrix-link a{
+    color: white;
+}
+.contact-list{
+    display: block;
+    justify-content:center;
+}
+
+.contact-list i {
+    font-size: 1.1rem;
+}
+
+.extra-links {
+    padding:inherit;
+    padding-left: 1.3rem;
+    display: flex;
+    padding-bottom: 3rem;
+    gap:1rem;
+    width: fit-content;
+}
+
+.extra-links > div{
+    flex:1;
+   
+}
+
+.socials-card hr{
+    margin: 0 1.3rem;
+    margin-bottom: 0.5px;
+    border-top: 2px solid white;
+    
+}
+
+
+
+.extra-links a{
+    color:white;
+}
+
+.divider {
+    width: 2px;
+    background-color: white;
+    align-self: stretch;
+    margin: 0.3em 0.1em;
+  }
+
+
