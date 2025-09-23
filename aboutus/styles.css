@@ -1,0 +1,49 @@
+
+/* Layout */
+.container { max-width: var(--max-w); margin-inline: auto; padding-inline: var(--space-5); }
+.section { padding-block: clamp(var(--space-6), 6vw, var(--space-8)); }
+
+
+/* Buttons */
+.btn-pop {
+  transition: transform .15s ease;
+}
+.btn-pop:hover {
+  transform: scale(1.05);
+}
+
+.hero {
+  padding-block: clamp(var(--space-7), 8vw, calc(var(--space-8) + 1rem));
+  background: #fff;
+}
+
+.staff-governance-rail {
+
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.staff-governance-rail::-webkit-scrollbar {
+  height: .6rem;
+}
+.staff-governance-rail .card {
+  flex: 0 0 auto;
+  min-width: 18rem;
+  max-width: 22rem;
+  overflow: hidden;
+}
+.staff-governance-rail .card-body {
+  padding: 1.25rem 1.25rem 1.5rem;
+}
+.staff-governance-rail .actions .btn {
+  white-space: nowrap;
+}
+
+
+/* PDF thumbnail card  */
+.card-img-top { width: 100%; display: block; }
+.card-body { padding: var(--space-4); }
+.card-title { margin-bottom: var(--space-3); font-size: 1.25rem; }
+.card-text { margin-bottom: var(--space-4); }
+
+
+
