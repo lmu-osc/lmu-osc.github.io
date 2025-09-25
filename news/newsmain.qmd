@@ -4,170 +4,115 @@ format:
   html:
     css: newsmain_styles.css
     page-layout: full
-
 ---
-
-<!-- Font Awesome CDN for icons -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
 
 ```{=html}
 <div class="container">
-  
-<!-- Year Filter -->
-  <div class="year-filter-bar" id="year-filter-bar"></div>
+
+  <!-- Year filter buttons -->
+  <div class="row mb-3">
+    <div class="col-12">
+      <div id="yearFilter" class="btn-group btn-group-sm flex-wrap" role="group" aria-label="Filter by year">
+        <button type="button" class="btn btn-outline-primary active" data-year="all">All</button>
+      </div>
+    </div>
+  </div>
 
   <div class="news-list">
 
     <!-- Workshop -->
-    <a class="news-link" href="google.com">
-      <div class="news-card" data-year="2025">
-        <div class="icon-image-wrap" title="Workshop">
-          <i class="fa-solid fa-laptop-code" aria-hidden="true"></i>
-        </div>
-        <div class="news-content">
-          <div class="news-meta-row">
-            <span class="news-type-label">Workshop</span>
-            <span class="news-meta">Sept 20, 2025</span>
-            <span class="news-location"></span>
+    <div class="news-card" data-year="2025">
+      <div class="card mb-3 btn-pop border border-2 border-primary">
+        <div class="d-flex align-items-stretch">
+          <div class="d-flex align-items-center justify-content-center bg-light px-4" title="Workshop" style="min-width: 96px;">
+            <i class="fa-solid fa-laptop-code fs-1" aria-hidden="true"></i>
+            <span class="visually-hidden">Workshop</span>
           </div>
-          <div class="news-title">Workshop: "Software Carpentry - R flavored - Philologicum"</div>
-          <div class="news-desc">In this Software Carpentry Workshop you will learn the Unix Shell, Git and R.
-          This example-driven two-day workshop will teach core computing skills that will help you be more productive and effective. We'll alternate short tutorials with hands-on practical exercises. Participants are encouraged to help one another and to apply what they are learning to their own research problems during the workshop.
+          <div class="card-body">
+            <div class="d-flex flex-wrap gap-3 small text-muted mb-1">
+              <span class="fw-semibold">Workshop</span>
+              <span>Sept 20, 2025</span>
+              <span class="text-truncate"></span>
+            </div>
+            <h5 class="card-title mb-2">Workshop: "Software Carpentry - R flavored - Philologicum"</h5>
+            <p class="card-text mb-2">
+              In this Software Carpentry Workshop you will learn the Unix Shell, Git and R.
+              This example-driven two-day workshop will teach core computing skills that will help you be more productive and effective. We'll alternate short tutorials with hands-on practical exercises. Participants are encouraged to help one another and to apply what they are learning to their own research problems during the workshop.
+            </p>
+            <a href="r_flavored.html" class="btn btn-sm btn-outline-primary position-relative">
+              Read More <i class="fa-regular fa-circle-right"></i>
+            </a>
           </div>
-          <div class="read-more-btn">Read More <i class="fa-regular fa-circle-right"></i> </div>
-        </div>
-      </div>
-    </a>
-
-    <!-- Symposium -->
-    <a class="news-link" href="google.com">
-      <div class="news-card" data-year="2024">
-        <div class="icon-image-wrap" title="Symposium">
-          <i class="fa-solid fa-users" aria-hidden="true"></i>
-        </div>
-        <div class="news-content">
-          <div class="news-meta-row">
-            <span class="news-type-label">Symposium</span>
-            <span class="news-meta">Oct 4, 2024</span>
-            <span class="news-location"></span>
-          </div>
-          <div class="news-title">Von "DEAL" zu "Diamond"?</div>
-          <div class="news-desc">Seit Abschluss der DEAL-Verträge mit Elsevier, SpringerNature und Wiley sind die Publikationskosten für viele Fachbereiche gestiegen. Für manche ist Publizieren zu einer finanziellen Herausforderung geworden. An vielen Fakultäten wird daher intensiv über den Umgang mit diesen Kosten und über das kommerzielle Publikationssystem im Allgemeinen diskutiert. Das LMU Open Science Center möchte mit dieser Veranstaltung eine Plattform bieten, um drei Aspekte zu beleuchten und zu diskutieren:
-          </div>
-          <div class="read-more-btn">Read More <i class="fa-regular fa-circle-right"></i> </div>
         </div>
       </div>
-    </a>
+    </div>
 
-
-    <!-- Lecture -->
-    <a class="news-link" href="google.com">
-      <div class="news-card" data-year="2023">
-        <div class="icon-image-wrap" title="Lecture">
-          <i class="fa-solid fa-person-chalkboard" aria-hidden="true"></i>
-        </div>
-        <div class="news-content">
-          <div class="news-meta-row">
-            <span class="news-type-label">Lecture</span>
-            <span class="news-meta">Aug 18, 2023</span>
-            <span class="news-location"></span>
+    <div class="news-card" data-year="2024">
+      <div class="card mb-3 btn-pop border border-2 border-primary">
+        <div class="d-flex align-items-stretch">
+          <div class="d-flex align-items-center justify-content-center bg-light px-4" title="Workshop" style="min-width: 96px;">
+            <i class="fa-solid fa-users fs-1" aria-hidden="true"></i>
+            <span class="visually-hidden">Workshop</span>
           </div>
-          <div class="news-title">Helmholtz Open Science Strategy</div>
-          <div class="news-desc">We will welcome the Head of Helmholtz Open Science Office, Dr. Mathijs Vleugel, to present the Helmholtz open science strategy and the activities of his office. This will be followed by discussions about possible strategies that can be implemented at the LMU.
-          The meeting can be followed by the LMU Open Science Center's annual member's meeting. All invited.
+          <div class="card-body">
+            <div class="d-flex flex-wrap gap-3 small text-muted mb-1">
+              <span class="fw-semibold">Symposium</span>
+              <span>Oct 4, 2024</span>
+              <span class="text-truncate"></span>
+            </div>
+            <h5 class="card-title mb-2">Von "DEAL" zu "Diamond"?</h5>
+            <p class="card-text mb-2">
+              Seit Abschluss der DEAL-Verträge mit Elsevier, SpringerNature und Wiley sind die Publikationskosten für viele Fachbereiche gestiegen. Für manche ist Publizieren zu einer finanziellen Herausforderung geworden. An vielen Fakultäten wird daher intensiv über den Umgang mit diesen Kosten und über das kommerzielle Publikationssystem im Allgemeinen diskutiert. Das LMU Open Science Center möchte mit dieser Veranstaltung eine Plattform bieten, um drei Aspekte zu beleuchten und zu diskutieren:
+            </p>
+            <a href="r_flavored.html" class="btn btn-sm btn-outline-primary position-relative">
+              Read More <i class="fa-regular fa-circle-right"></i>
+            </a>
           </div>
-          <div class="read-more-btn">Read More <i class="fa-regular fa-circle-right"></i> </div>
         </div>
       </div>
-    </a>
-
-    <!-- Report -->
-    <a class="news-link" href="google.com">
-      <div class="news-card" data-year="2025">
-        <div class="icon-image-wrap" title="Report">
-          <i class="fa-solid fa-newspaper" aria-hidden="true"></i>
-        </div>
-        <div class="news-content">
-          <div class="news-meta-row">
-            <span class="news-type-label">OSC Report</span>
-            <span class="news-meta">July 30, 2025</span>
-            <span class="news-location"></span>
-          </div>
-          <div class="news-title">Report about open research at the Biomedical Center of LMU Munich published</div>
-          <div class="news-desc">In order to find out about researchers' current awareness, perceived barriers, and need for support related to open research practices and responsible research assessment, the LMU Open Science Center (OSC) conducted a survey among researchers at the Biomedical Center (BMC) of LMU Munich between December 2024 and January 2025. Findings show a high level of awareness of open research practices and strong favorable opinion about them, but a rather low level of adoption. To understand this implementation gap, we asked about downsides associated with the adoption of open research practices and about barriers such as lack of infrastructure, training, support, incentives, or policies. Downsides were infrequent and mitigatable, but barriers were numerous. A majority of respondents expressed a very high demand for training, especially guidance on reproducible workflow, and FAIR data and code sharing, and a need for support through expert consultations, and peer networks. Finally, there also was a misalignment between current assessment criteria (focusing on publication volume and the journal's reputation) and indicators perceived as more meaningful by researchers, such as research quality, mentorship and teaching, and engagement with open research.
-          </div>
-          <div class="read-more-btn">Read More <i class="fa-regular fa-circle-right"></i> </div>
-        </div>
-      </div>
-    </a>
-
-    <!-- Update -->
-    <a class="news-link" href="google.com">
-      <div class="news-card" data-year="2024">
-        <div class="icon-image-wrap" title="Workshop">
-          <img src="extra/osclogo.png" alt="Workshop Image Icon">
-        </div>
-        <div class="news-content">
-          <div class="news-meta-row">
-            <span class="news-type-label">Update</span>
-            <span class="news-meta">July 12, 2024</span>
-            <span class="news-location"></span>
-          </div>
-          <div class="news-title">11 strategies for making reproducible research the norm at LMU Munich</div>
-          <div class="news-desc">In an age where trust in science is critical, making research open and reproducible is not just ideal—it is essential. Some members of the LMU Open Science Center have contributed to the publication "Eleven strategies for making reproducible research and open science training the norm at research institutions", which provides a detailed roadmap for implementing transparent and reproducible research at institutions. At LMU Munich, many of these strategies have already been put into practice.
-          </div>
-          <div class="read-more-btn">Read More <i class="fa-regular fa-circle-right"></i> </div>
-        </div>
-      </div>
-    </a>
+    </div>
 
   </div>
 </div>
 
 
-
-<!-- Year Button Script -->
-
+<!-- Year Filter Script -->
 <script>
-(function() {
-  // Get all news cards
-  const newsCards = document.querySelectorAll('.news-card');
-  // Extract all years from data-year attributes
-  const years = Array.from(newsCards)
-    .map(card => card.getAttribute('data-year'))
-    .filter(year => year) // remove undefined/null
-    .filter((year, i, arr) => arr.indexOf(year) === i) // unique
-    .sort((a, b) => b - a); // descending
+  document.addEventListener('DOMContentLoaded', () => {
+    const filter = document.getElementById('yearFilter');
+    const cards = Array.from(document.querySelectorAll('.news-card'));
 
-  // Build year filter bar
-  const bar = document.getElementById('year-filter-bar');
-  // Add "All" button
-  const allBtn = document.createElement('button');
-  allBtn.textContent = 'All';
-  allBtn.className = 'year-filter-btn active';
-  allBtn.onclick = function() {
-    document.querySelectorAll('.year-filter-btn').forEach(b => b.classList.remove('active'));
-    allBtn.classList.add('active');
-    newsCards.forEach(card => card.parentElement.style.display = '');
-  };
-  bar.appendChild(allBtn);
+    // Build year buttons (unique, sorted desc)
+    const years = [...new Set(cards.map(c => c.dataset.year))].sort((a, b) => b - a);
+    const frag = document.createDocumentFragment();
+    for (const y of years) {
+      const btn = document.createElement('button');
+      btn.type = 'button';
+      btn.className = 'btn btn-outline-primary';
+      btn.dataset.year = y;
+      btn.textContent = y;
+      frag.appendChild(btn);
+    }
+    filter.appendChild(frag);
 
-  // Add year buttons
-  years.forEach(year => {
-    const btn = document.createElement('button');
-    btn.textContent = year;
-    btn.className = 'year-filter-btn';
-    btn.onclick = function() {
-      document.querySelectorAll('.year-filter-btn').forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      newsCards.forEach(card => {
-        card.parentElement.style.display = (card.getAttribute('data-year') === year) ? '' : 'none';
-      });
-    };
-    bar.appendChild(btn);
+    // Delegate clicks to filter buttons
+    filter.addEventListener('click', (e) => {
+      const btn = e.target.closest('button[data-year]');
+      if (!btn) return;
+      const y = btn.dataset.year;
+
+      // Toggle active state
+      filter.querySelectorAll('button').forEach(b => b.classList.toggle('active', b === btn));
+
+      // Show/Hide cards
+      if (y === 'all') {
+        cards.forEach(c => c.classList.remove('d-none'));
+      } else {
+        cards.forEach(c => c.classList.toggle('d-none', c.dataset.year !== y));
+      }
+    }, { passive: true });
   });
-})();
 </script>
-
-
 ```
