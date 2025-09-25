@@ -1,0 +1,26 @@
+.container {
+  max-width: 1200px;
+}
+
+.page-columns {
+  margin: 0 auto !important;
+}
+
+.container {
+  margin: 0 auto !important;
+}
+
+.btn-pop {
+  transition: transform .15s ease;
+}
+.btn-pop:hover {
+  transform: scale(1.05);
+}
+
+.news-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 1.8rem;
+  width: 100%;
+}
