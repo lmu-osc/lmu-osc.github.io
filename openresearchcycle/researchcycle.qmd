@@ -1,0 +1,187 @@
+<style>
+.header-section {
+  max-width: 850px;
+  margin: 0 auto 2.5rem auto;
+  text-align: center;
+  padding: 0 1rem;
+}
+.header-section h1 {
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: #2b864b;
+  margin-bottom: 1.1rem;
+  letter-spacing: -0.5px;
+}
+.header-section p {
+  font-size: 1.2rem;
+  color: #4a5568;
+  line-height: 1.65;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.modern-training-links {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 2.5rem; 
+  margin-top: 3rem;
+}
+
+.training-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 520px;
+  min-height: 120px;
+  padding: 1.2rem 2.2rem;
+  background: #2b864b;
+  color: #fff;
+  border-radius: 1rem;
+  font-size: 1.18rem;
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: 0.01em;
+  box-shadow: 0 2px 12px 0 rgba(40,60,120,0.04);
+  transition: 
+    transform 0.13s cubic-bezier(.49,1.74,.36,1.01),
+    box-shadow 0.13s,
+    background 0.15s;
+  cursor: pointer;
+  will-change: transform;
+  border: none;
+  outline: none;
+  white-space: nowrap;
+}
+
+.training-link:hover,
+.training-link:focus-visible {
+  background: #355fae;
+  color: #fff;
+  transform: scale(1.065);
+  box-shadow: 0 10px 36px 0 #2196f333, 0 2px 8px 0 #355fae44;
+  z-index: 1;
+}
+
+@media (max-width: 700px) {
+  .modern-training-links {
+    flex-direction: column;
+    gap: 1.2rem;
+    margin-top: 2rem;
+  }
+  .training-link {
+    width: 100%;
+    min-width: 0;
+    justify-content: flex-start;
+    padding: 1.2rem 1.5rem;
+    font-size: 1.03rem;
+  }
+}
+</style>
+
+<div class="header-section">
+  <h1>Open Research Cycle</h1>
+  <p>
+    The open research cycle encompasses every phase in the process of conducting transparent, collaborative, and reproducible research. Explore each step of the cycle below to discover tools, strategies, and resources that can help you plan, manage, analyze, and share your work effectively.
+  </p>
+</div>
+
+
+
+<svg
+  viewBox="0 0 4375 2515"
+  width="100%"
+  height="100%"
+  style="display:block;max-width:100%;height:auto;overflow:visible;"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <!-- Center arrow, non-interactive, bottom layer -->
+  <image
+    href="circle.png"
+    x="0"
+    y="0"
+    width="4375"
+    height="2515"
+    style="pointer-events:none;"
+  />
+  <!-- Quadrant 1 -->
+  <g>
+    <image id="img1" href="quad1.png" x="0" y="0" width="4375" height="2515"
+      style="pointer-events:none;transition:filter 0.15s,transform 0.15s;" />
+    <a xlink:href="plan-design.html" aria-label="Plan & Design">
+      <path
+        d="M2187.5,1257.5
+           L2887.5,557.5
+           A900,900 0 0,1 3587.5,1257.5
+           Z"
+        fill="transparent"
+        style="cursor:pointer;"
+        onmouseover="document.getElementById('img1').setAttribute('filter','url(#pop)');document.getElementById('img1').setAttribute('transform','translate(50.5,-45.3) scale(1.01)');"
+        onmouseout="document.getElementById('img1').setAttribute('filter','');document.getElementById('img1').setAttribute('transform','');"
+      />
+    </a>
+  </g>
+  <!-- Quadrant 2 -->
+  <g>
+    <image id="img2" href="quad2.png" x="0" y="0" width="4375" height="2515"
+      style="pointer-events:none;transition:filter 0.15s,transform 0.15s;" />
+    <a xlink:href="collect-manage.html" aria-label="Collect & Manage">
+      <path
+        d="M2187.5,1257.5
+           L3587.5,1257.5
+           A900,900 0 0,1 2187.5,2157.5
+           Z"
+        fill="transparent"
+        style="cursor:pointer;"
+        onmouseover="document.getElementById('img2').setAttribute('filter','url(#pop)');document.getElementById('img2').setAttribute('transform','translate(40.5,30.3) scale(1.01)');"
+        onmouseout="document.getElementById('img2').setAttribute('filter','');document.getElementById('img2').setAttribute('transform','');"
+      />
+    </a>
+  </g>
+  <!-- Quadrant 3 -->
+  <g>
+    <image id="img3" href="quad3.png" x="0" y="0" width="4375" height="2515"
+      style="pointer-events:none;transition:filter 0.15s,transform 0.15s;" />
+    <a xlink:href="analyse-collaborate.html" aria-label="Analyse & Collaborate">
+      <path
+        d="M2187.5,1257.5
+           L2187.5,2157.5
+           A900,900 0 0,1 787.5,1257.5
+           Z"
+        fill="transparent"
+        style="cursor:pointer;"
+        onmouseover="document.getElementById('img3').setAttribute('filter','url(#pop)');document.getElementById('img3').setAttribute('transform','translate(-87.5, 50.3) scale(1.02)');"
+        onmouseout="document.getElementById('img3').setAttribute('filter','');document.getElementById('img3').setAttribute('transform','');"
+      />
+    </a>
+  </g>
+  <!-- Quadrant 4 -->
+  <g>
+    <image id="img4" href="quad4.png" x="0" y="0" width="4375" height="2515"
+      style="pointer-events:none;transition:filter 0.15s,transform 0.15s;" />
+    <a xlink:href="preserve-share.html" aria-label="Preserve & Share">
+      <path
+        d="M2187.5,1257.5
+           L787.5,1257.5
+           A900,900 0 0,1 2187.5,557.5
+           Z"
+        fill="transparent"
+        style="cursor:pointer;"
+        onmouseover="document.getElementById('img4').setAttribute('filter','url(#pop)');document.getElementById('img4').setAttribute('transform','translate(-97.5,-90.3) scale(1.03)');"
+        onmouseout="document.getElementById('img4').setAttribute('filter','');document.getElementById('img4').setAttribute('transform','');"
+      />
+    </a>
+  </g>
+  <defs>
+    <filter id="pop" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="0" stdDeviation="16" flood-color="#5cc" flood-opacity="0"/>
+    </filter>
+  </defs>
+</svg>
+
+<div class="modern-training-links">
+  <a href="other-training-1.html" class="training-link" title="Other Training 1">Other Training 1</a>
+</div>
+  <div class="modern-training-links">
+  <a href="other-training-2.html" class="training-link" title="Other Training 2">Other Training 2</a>
+</div>
