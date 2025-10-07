@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.34">
+<meta name="generator" content="quarto-1.8.25">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -35,14 +35,15 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-c8ad9e5dbd60b7b70b38521ab19b7da4.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-1cc13a31bf0bd57f95156345b5732d77.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-684896a913d6eb157f12cd18f2074edd.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -158,7 +159,7 @@ const typesetMath = (el) => {
     var macros = [];
     for (var i = 0; i < mathElements.length; i++) {
       var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
         window.katex.render(texText.data, mathElements[i], {
           displayMode: mathElements[i].classList.contains('display'),
           throwOnError: false,
@@ -185,6 +186,10 @@ window.Quarto = {
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    </a>
+  </div>
             <div id="quarto-search" class="" title="Search"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
@@ -192,7 +197,7 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> <i class="bi bi-house-door" role="img">
+    <a class="nav-link active" href="./index.html" aria-current="page"> <i class="bi bi-house-door" role="img">
 </i> 
 <span class="menu-text">Home</span></a>
   </li>  
@@ -305,6 +310,10 @@ window.Quarto = {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+      <a href="./index.html" class="sidebar-logo-link">
+      </a>
+      </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
@@ -331,7 +340,7 @@ window.Quarto = {
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-unnumbered"><div class="category" data-category="JTdCcmVudiU3RA==">{renv}</div><div class="category" data-category="QW5vbnltaXphdGlvbg==">Anonymization</div><div class="category" data-category="Q2F0ZWdvcnk=">Category</div><div class="category" data-category="RGF0YSUyMEFub255bWl0eQ==">Data Anonymity</div><div class="category" data-category="RkFJUg==">FAIR</div><div class="category" data-category="R2l0">Git</div><div class="category" data-category="SW5jbHVkZWQlMjBDYXRlZ29yaWVz">Included Categories</div><div class="category" data-category="T3BlbiUyMEFjY2Vzcw==">Open Access</div><div class="category" data-category="T3BlbiUyMERhdGE=">Open Data</div><div class="category" data-category="T3BlbiUyMFJlc2VhcmNo">Open Research</div><div class="category" data-category="UHVibGlzaGluZw==">Publishing</div><div class="category" data-category="UXVhcnRv">Quarto</div><div class="category" data-category="Ug==">R</div><div class="category" data-category="UmVwbGljYWJpbGl0eSUyMENyaXNpcw==">Replicability Crisis</div><div class="category" data-category="c2ltdWxhdGlvbnM=">simulations</div><div class="category" data-category="U3ludGhldGljJTIwRGF0YQ==">Synthetic Data</div><div class="category" data-category="Wm90ZXJv">Zotero</div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-unnumbered"><div class="category" data-category="JTdCcmVudiU3RA==">{renv}</div><div class="category" data-category="Q2F0ZWdvcnk=">Category</div><div class="category" data-category="Q29kZSUyMHB1Ymxpc2hpbmc=">Code publishing</div><div class="category" data-category="RGF0YSUyMGFub255bWl0eQ==">Data anonymity</div><div class="category" data-category="RGF0YSUyMHNpbXVsYXRpb24=">Data simulation</div><div class="category" data-category="RkFJUg==">FAIR</div><div class="category" data-category="RkFJUiUyMGRhdGE=">FAIR data</div><div class="category" data-category="R2l0">Git</div><div class="category" data-category="SW5jbHVkZWQlMjBDYXRlZ29yaWVz">Included Categories</div><div class="category" data-category="T3BlbiUyMEFjY2Vzcw==">Open Access</div><div class="category" data-category="T3BlbiUyMGRhdGE=">Open data</div><div class="category" data-category="T3BlbiUyMERhdGE=">Open Data</div><div class="category" data-category="T3BlbiUyMFJlc2VhcmNo">Open Research</div><div class="category" data-category="T3BlbiUyMHJlc2VhcmNoJTIwcHJhY3RpY2Vz">Open research practices</div><div class="category" data-category="UG93ZXIlMjBhbmFseXNlcw==">Power analyses</div><div class="category" data-category="UHJlcmVnaXN0cmF0aW9u">Preregistration</div><div class="category" data-category="UXVhcnRv">Quarto</div><div class="category" data-category="Ug==">R</div><div class="category" data-category="UmVkYWJsZSUyMGNvZGU=">Redable code</div><div class="category" data-category="UmVwbGljYWJpbGl0eSUyMGNyaXNpcw==">Replicability crisis</div><div class="category" data-category="UmVwcm9kdWNpYmxlJTIwcHJvdG9jb2xz">Reproducible protocols</div><div class="category" data-category="c2ltdWxhdGlvbnM=">simulations</div><div class="category" data-category="U3ludGhldGljJTIwZGF0YQ==">Synthetic data</div><div class="category" data-category="Wm90ZXJv">Zotero</div></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -390,23 +399,25 @@ h5, .h5 {
 <h2 class="anchored" data-anchor-id="tutorial-categories">Tutorial Categories</h2>
 <div id="listing-tutorial_categories" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="UmVwbGljYWJpbGl0eSUyMENyaXNpcw==" data-listing-file-modified-sort="1757146299549" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
-<a href="./training/replicability_crisis_and_credibility_revolution.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="0" data-categories="UmVwbGljYWJpbGl0eSUyMGNyaXNpcyUyQ09wZW4lMjByZXNlYXJjaCUyMHByYWN0aWNlcw==" data-listing-file-modified-sort="1759834043073" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+<a href="./training/principles.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-center">
 <p class="card-img-top">
-<img loading="lazy" src="./training/images/pupholder.png" class="thumbnail-image card-img" style="height: 200px;">
+<img loading="lazy" src="./training/images/principles.png" class="thumbnail-image card-img" style="height: 200px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
-Replicabity Crisis &amp; Credibility Revolution
+Principles
 </h5>
 <div class="listing-categories">
 
-<div class="listing-category" onclick="window.quartoListingCategory('UmVwbGljYWJpbGl0eSUyMENyaXNpcw=='); return false;">Replicability Crisis</div>
+<div class="listing-category" onclick="window.quartoListingCategory('UmVwbGljYWJpbGl0eSUyMGNyaXNpcw=='); return false;">Replicability crisis</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('T3BlbiUyMHJlc2VhcmNoJTIwcHJhY3RpY2Vz'); return false;">Open research practices</div>
 
 </div>
 <div class="card-text listing-description delink">
-<p>Something about credibility and prereg. Two sentences I suppose.</p>
+<p>From the replicability crisis to the credibility revolution</p>
 </div>
 <div class="card-attribution card-text-small start">
 <div class="listing-author">
@@ -416,25 +427,27 @@ Replicabity Crisis &amp; Credibility Revolution
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="QW5vbnltaXphdGlvbiUyQ1N5bnRoZXRpYyUyMERhdGE=" data-listing-file-modified-sort="1757146299549" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
-<a href="./training/preregistration.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="1" data-categories="UHJlcmVnaXN0cmF0aW9uJTJDRGF0YSUyMHNpbXVsYXRpb24lMkNQb3dlciUyMGFuYWx5c2Vz" data-listing-file-modified-sort="1759834043074" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+<a href="./training/study_planning.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-center">
 <p class="card-img-top">
-<img loading="lazy" src="./training/images/pupholder.png" class="thumbnail-image card-img" style="height: 200px;">
+<img loading="lazy" src="./training/images/study planning.png" class="thumbnail-image card-img" style="height: 200px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
-Preregistration
+Study planning
 </h5>
 <div class="listing-categories">
 
-<div class="listing-category" onclick="window.quartoListingCategory('QW5vbnltaXphdGlvbg=='); return false;">Anonymization</div>
+<div class="listing-category" onclick="window.quartoListingCategory('UHJlcmVnaXN0cmF0aW9u'); return false;">Preregistration</div>
 
-<div class="listing-category" onclick="window.quartoListingCategory('U3ludGhldGljJTIwRGF0YQ=='); return false;">Synthetic Data</div>
+<div class="listing-category" onclick="window.quartoListingCategory('RGF0YSUyMHNpbXVsYXRpb24='); return false;">Data simulation</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('UG93ZXIlMjBhbmFseXNlcw=='); return false;">Power analyses</div>
 
 </div>
 <div class="card-text listing-description delink">
-<p>Something about sensitive data handling</p>
+<p>From data simulation to power analyses and preregistration</p>
 </div>
 <div class="card-attribution card-text-small start">
 <div class="listing-author">
@@ -444,25 +457,29 @@ Preregistration
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="RkFJUiUyQ0RhdGElMjBBbm9ueW1pdHk=" data-listing-file-modified-sort="1757146299548" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
-<a href="./training/data_management_simulation_sharing.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="2" data-categories="T3BlbiUyMGRhdGElMkNGQUlSJTIwZGF0YSUyQ0RhdGElMjBhbm9ueW1pdHklMkNTeW50aGV0aWMlMjBkYXRh" data-listing-file-modified-sort="1759834043070" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+<a href="./training/data_management.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-center">
 <p class="card-img-top">
-<img loading="lazy" src="./training/images/pupholder.png" class="thumbnail-image card-img" style="height: 200px;">
+<img loading="lazy" src="./training/images/data management.png" class="thumbnail-image card-img" style="height: 200px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
-Data Management, Simulation, &amp; Sharing
+Data management
 </h5>
 <div class="listing-categories">
 
-<div class="listing-category" onclick="window.quartoListingCategory('RkFJUg=='); return false;">FAIR</div>
+<div class="listing-category" onclick="window.quartoListingCategory('T3BlbiUyMGRhdGE='); return false;">Open data</div>
 
-<div class="listing-category" onclick="window.quartoListingCategory('RGF0YSUyMEFub255bWl0eQ=='); return false;">Data Anonymity</div>
+<div class="listing-category" onclick="window.quartoListingCategory('RkFJUiUyMGRhdGE='); return false;">FAIR data</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('RGF0YSUyMGFub255bWl0eQ=='); return false;">Data anonymity</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('U3ludGhldGljJTIwZGF0YQ=='); return false;">Synthetic data</div>
 
 </div>
 <div class="card-text listing-description delink">
-<p>Something about data management</p>
+<p>From preserving anonymity to FAIR data sharing</p>
 </div>
 <div class="card-attribution card-text-small start">
 <div class="listing-author">
@@ -472,15 +489,15 @@ Data Management, Simulation, &amp; Sharing
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="3" data-categories="UiUyQyU3QnJlbnYlN0QlMkNHaXQlMkNRdWFydG8lMkNab3Rlcm8=" data-listing-file-modified-sort="1757146299549" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
-<a href="./training/reproducible_workflows.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="3" data-categories="UiUyQyU3QnJlbnYlN0QlMkNHaXQlMkNRdWFydG8lMkNab3Rlcm8lMkNSZWRhYmxlJTIwY29kZSUyQ1JlcHJvZHVjaWJsZSUyMHByb3RvY29scw==" data-listing-file-modified-sort="1759834043073" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+<a href="./training/reproducible_processes.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-center">
 <p class="card-img-top">
-<img loading="lazy" src="./training/images/pupholder.png" class="thumbnail-image card-img" style="height: 200px;">
+<img loading="lazy" src="./training/images/reproducible processes.png" class="thumbnail-image card-img" style="height: 200px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
-Reproducible Workflow
+Reproducible processes
 </h5>
 <div class="listing-categories">
 
@@ -494,9 +511,13 @@ Reproducible Workflow
 
 <div class="listing-category" onclick="window.quartoListingCategory('Wm90ZXJv'); return false;">Zotero</div>
 
+<div class="listing-category" onclick="window.quartoListingCategory('UmVkYWJsZSUyMGNvZGU='); return false;">Redable code</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('UmVwcm9kdWNpYmxlJTIwcHJvdG9jb2xz'); return false;">Reproducible protocols</div>
+
 </div>
 <div class="card-text listing-description delink">
-<p>Something about reproducible workflow. Two sentences I suppose.</p>
+<p>From programming to reproducible mansucripts</p>
 </div>
 <div class="card-attribution card-text-small start">
 <div class="listing-author">
@@ -506,25 +527,25 @@ Reproducible Workflow
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="4" data-categories="T3BlbiUyMEFjY2VzcyUyQ1B1Ymxpc2hpbmc=" data-listing-file-modified-sort="1757146299549" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
-<a href="./training/open_access.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="4" data-categories="T3BlbiUyMEFjY2VzcyUyQ0NvZGUlMjBwdWJsaXNoaW5n" data-listing-file-modified-sort="1759834043073" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+<a href="./training/publishing_outputs.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-center">
 <p class="card-img-top">
-<img loading="lazy" src="./training/images/pupholder.png" class="thumbnail-image card-img" style="height: 200px;">
+<img loading="lazy" src="./training/images/publishing outputs.png" class="thumbnail-image card-img" style="height: 200px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
-Open Access
+Publishing outputs
 </h5>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('T3BlbiUyMEFjY2Vzcw=='); return false;">Open Access</div>
 
-<div class="listing-category" onclick="window.quartoListingCategory('UHVibGlzaGluZw=='); return false;">Publishing</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Q29kZSUyMHB1Ymxpc2hpbmc='); return false;">Code publishing</div>
 
 </div>
 <div class="card-text listing-description delink">
-<p>Something about open access</p>
+<p>Sharing data, code, and article</p>
 </div>
 <div class="card-attribution card-text-small start">
 <div class="listing-author">
@@ -581,12 +602,12 @@ Tags
 </thead>
 <tbody class="list">
 
-<tr data-index="0" data-categories="RkFJUg==" data-listing-file-modified-sort="1757146299548" data-listing-reading-time-sort="1" data-listing-word-count-sort="30" data-listing-title-sort="FAIR Data Management" data-listing-filename-sort="fair_data_management.qmd">
+<tr data-index="0" data-categories="RkFJUg==" data-listing-file-modified-sort="1759834043070" data-listing-reading-time-sort="1" data-listing-word-count-sort="30" data-listing-title-sort="FAIR Data Management" data-listing-filename-sort="fair_data_management.qmd">
 <td>
 <span class="listing-content_category">Data Management, Simulation, &amp; Sharing</span>
 </td>
 <td>
-<a href="./training/data_management_simulation_sharing/fair_data_management.html" class="title listing-title">FAIR Data Management</a>
+<a href="./training/data_management/fair_data_management.html" class="title listing-title">FAIR Data Management</a>
 </td>
 <td>
 <span class="listing-description">Take steps towards making your data FAIR: <strong>F</strong>indable, <strong>A</strong>ccessible, <strong>I</strong>nteroperable, <strong>R</strong>eusable</span>
@@ -597,12 +618,12 @@ Tags
 
 </tr>
 
-<tr data-index="1" data-categories="RkFJUg==" data-listing-file-modified-sort="1757146299548" data-listing-reading-time-sort="1" data-listing-word-count-sort="49" data-listing-title-sort="FAIR Data Sharing" data-listing-filename-sort="fair_data_sharing.qmd">
+<tr data-index="1" data-categories="RkFJUg==" data-listing-file-modified-sort="1759834043070" data-listing-reading-time-sort="1" data-listing-word-count-sort="49" data-listing-title-sort="FAIR Data Sharing" data-listing-filename-sort="fair_data_sharing.qmd">
 <td>
 <span class="listing-content_category">Data Management, Simulation, &amp; Sharing</span>
 </td>
 <td>
-<a href="./training/data_management_simulation_sharing/fair_data_sharing.html" class="title listing-title">FAIR Data Sharing</a>
+<a href="./training/data_management/fair_data_sharing.html" class="title listing-title">FAIR Data Sharing</a>
 </td>
 <td>
 <span class="listing-description">Tutorial in progresss…</span>
@@ -613,12 +634,12 @@ Tags
 
 </tr>
 
-<tr data-index="2" data-categories="T3BlbiUyMFJlc2VhcmNo" data-listing-file-modified-sort="1757146299548" data-listing-reading-time-sort="1" data-listing-word-count-sort="46" data-listing-title-sort="Introduction to Open Research Data" data-listing-filename-sort="introduction_to_open_research_data.qmd">
+<tr data-index="2" data-categories="T3BlbiUyMFJlc2VhcmNo" data-listing-file-modified-sort="1759834043070" data-listing-reading-time-sort="1" data-listing-word-count-sort="46" data-listing-title-sort="Introduction to Open Research Data" data-listing-filename-sort="introduction_to_open_research_data.qmd">
 <td>
 <span class="listing-content_category">Data Management, Simulation, &amp; Sharing</span>
 </td>
 <td>
-<a href="./training/data_management_simulation_sharing/introduction_to_open_research_data.html" class="title listing-title">Introduction to Open Research Data</a>
+<a href="./training/data_management/introduction_to_open_research_data.html" class="title listing-title">Introduction to Open Research Data</a>
 </td>
 <td>
 <span class="listing-description">An introductory presentation on the what, why, and how of making research data open</span>
@@ -629,12 +650,12 @@ Tags
 
 </tr>
 
-<tr data-index="3" data-categories="c2ltdWxhdGlvbnM=" data-listing-file-modified-sort="1757146299548" data-listing-reading-time-sort="1" data-listing-word-count-sort="30" data-listing-title-sort="Introduction to Simulations in R" data-listing-filename-sort="introduction_to_simulations_in_r.qmd">
+<tr data-index="3" data-categories="c2ltdWxhdGlvbnM=" data-listing-file-modified-sort="1759834043070" data-listing-reading-time-sort="1" data-listing-word-count-sort="30" data-listing-title-sort="Introduction to Simulations in R" data-listing-filename-sort="introduction_to_simulations_in_r.qmd">
 <td>
 <span class="listing-content_category">Data Management, Simulation, &amp; Sharing</span>
 </td>
 <td>
-<a href="./training/data_management_simulation_sharing/introduction_to_simulations_in_r.html" class="title listing-title">Introduction to Simulations in R</a>
+<a href="./training/data_management/introduction_to_simulations_in_r.html" class="title listing-title">Introduction to Simulations in R</a>
 </td>
 <td>
 <span class="listing-description">A self-paced tutorial on why you should use simulations for your studies, and how to set them up in R</span>
@@ -645,12 +666,12 @@ Tags
 
 </tr>
 
-<tr data-index="4" data-categories="T3BlbiUyMERhdGE=" data-listing-file-modified-sort="1757146299548" data-listing-reading-time-sort="1" data-listing-word-count-sort="46" data-listing-title-sort="Maintaining Privacy with Open Data" data-listing-filename-sort="maintaining_privacy_with_open_data.qmd">
+<tr data-index="4" data-categories="T3BlbiUyMERhdGE=" data-listing-file-modified-sort="1759834043070" data-listing-reading-time-sort="1" data-listing-word-count-sort="46" data-listing-title-sort="Maintaining Privacy with Open Data" data-listing-filename-sort="maintaining_privacy_with_open_data.qmd">
 <td>
 <span class="listing-content_category">Data Management, Simulation, &amp; Sharing</span>
 </td>
 <td>
-<a href="./training/data_management_simulation_sharing/maintaining_privacy_with_open_data.html" class="title listing-title">Maintaining Privacy with Open Data</a>
+<a href="./training/data_management/maintaining_privacy_with_open_data.html" class="title listing-title">Maintaining Privacy with Open Data</a>
 </td>
 <td>
 <span class="listing-description">A presentation on how to make data open to the public without revealing sensitive information</span>
@@ -661,12 +682,12 @@ Tags
 
 </tr>
 
-<tr data-index="5" data-categories="c2ltdWxhdGlvbnM=" data-listing-file-modified-sort="1757146299548" data-listing-reading-time-sort="1" data-listing-word-count-sort="55" data-listing-title-sort="TBD: Generating Synthetic Data" data-listing-filename-sort="synthetic_data_commision.qmd">
+<tr data-index="5" data-categories="c2ltdWxhdGlvbnM=" data-listing-file-modified-sort="1759834043070" data-listing-reading-time-sort="1" data-listing-word-count-sort="55" data-listing-title-sort="TBD: Generating Synthetic Data" data-listing-filename-sort="synthetic_data_commision.qmd">
 <td>
 <span class="listing-content_category">Data Management, Simulation, &amp; Sharing</span>
 </td>
 <td>
-<a href="./training/data_management_simulation_sharing/synthetic_data_commision.html" class="title listing-title">TBD: Generating Synthetic Data</a>
+<a href="./training/data_management/synthetic_data_commision.html" class="title listing-title">TBD: Generating Synthetic Data</a>
 </td>
 <td>
 <span class="listing-description">Tutorial in progress…</span>
@@ -677,12 +698,12 @@ Tags
 
 </tr>
 
-<tr data-index="6" data-categories="T3BlbiUyMEFjY2Vzcw==" data-listing-file-modified-sort="1757146299549" data-listing-reading-time-sort="1" data-listing-word-count-sort="46" data-listing-title-sort="Open access, preprints, postprints" data-listing-filename-sort="open_access_preprints_postprints.qmd">
+<tr data-index="6" data-categories="T3BlbiUyMEFjY2Vzcw==" data-listing-file-modified-sort="1759834043073" data-listing-reading-time-sort="1" data-listing-word-count-sort="46" data-listing-title-sort="Open access, preprints, postprints" data-listing-filename-sort="open_access_preprints_postprints.qmd">
 <td>
 <span class="listing-content_category">Open Access Publishing</span>
 </td>
 <td>
-<a href="./training/open_access/open_access_preprints_postprints.html" class="title listing-title">Open access, preprints, postprints</a>
+<a href="./training/publishing_outputs/open_access_preprints_postprints.html" class="title listing-title">Open access, preprints, postprints</a>
 </td>
 <td>
 <span class="listing-description">Watch this presentation on why pre- and postprinting procedures are important to open science and how to accomplish them</span>
@@ -693,12 +714,12 @@ Tags
 
 </tr>
 
-<tr data-index="7" data-categories="SW5jbHVkZWQlMjBDYXRlZ29yaWVz" data-listing-file-modified-sort="1757146299549" data-listing-reading-time-sort="1" data-listing-word-count-sort="28" data-listing-title-sort="Introduction to Simulations in R" data-listing-filename-sort="introduction_to_simulations_in_r.qmd">
+<tr data-index="7" data-categories="SW5jbHVkZWQlMjBDYXRlZ29yaWVz" data-listing-file-modified-sort="1759834043074" data-listing-reading-time-sort="1" data-listing-word-count-sort="28" data-listing-title-sort="Introduction to Simulations in R" data-listing-filename-sort="introduction_to_simulations_in_r.qmd">
 <td>
 <span class="listing-content_category">Preregistration</span>
 </td>
 <td>
-<a href="./training/preregistration/introduction_to_simulations_in_r.html" class="title listing-title">Introduction to Simulations in R</a>
+<a href="./training/study_planning/introduction_to_simulations_in_r.html" class="title listing-title">Introduction to Simulations in R</a>
 </td>
 <td>
 <span class="listing-description">A self-paced tutorial on why you should use simulations for your studies, and how to set them up in R</span>
@@ -709,12 +730,12 @@ Tags
 
 </tr>
 
-<tr data-index="8" data-categories="SW5jbHVkZWQlMjBDYXRlZ29yaWVz" data-listing-file-modified-sort="1757146299549" data-listing-reading-time-sort="1" data-listing-word-count-sort="55" data-listing-title-sort="Preregistration: Why and How?" data-listing-filename-sort="preregistration_why_how.qmd">
+<tr data-index="8" data-categories="SW5jbHVkZWQlMjBDYXRlZ29yaWVz" data-listing-file-modified-sort="1759834043074" data-listing-reading-time-sort="1" data-listing-word-count-sort="55" data-listing-title-sort="Preregistration: Why and How?" data-listing-filename-sort="preregistration_why_how.qmd">
 <td>
 <span class="listing-content_category">Preregistration</span>
 </td>
 <td>
-<a href="./training/preregistration/preregistration_why_how.html" class="title listing-title">Preregistration: Why and How?</a>
+<a href="./training/study_planning/preregistration_why_how.html" class="title listing-title">Preregistration: Why and How?</a>
 </td>
 <td>
 <span class="listing-description">Tutorial in progress…</span>
@@ -725,12 +746,12 @@ Tags
 
 </tr>
 
-<tr data-index="9" data-categories="SW5jbHVkZWQlMjBDYXRlZ29yaWVz" data-listing-file-modified-sort="1757146299549" data-listing-reading-time-sort="1" data-listing-word-count-sort="8" data-listing-title-sort="Simulations for Advanced Power Analyses" data-listing-filename-sort="simulations_for_advanced_power_analyses.qmd">
+<tr data-index="9" data-categories="SW5jbHVkZWQlMjBDYXRlZ29yaWVz" data-listing-file-modified-sort="1759834043074" data-listing-reading-time-sort="1" data-listing-word-count-sort="8" data-listing-title-sort="Simulations for Advanced Power Analyses" data-listing-filename-sort="simulations_for_advanced_power_analyses.qmd">
 <td>
 <span class="listing-content_category">Preregistration</span>
 </td>
 <td>
-<a href="./training/preregistration/simulations_for_advanced_power_analyses.html" class="title listing-title">Simulations for Advanced Power Analyses</a>
+<a href="./training/study_planning/simulations_for_advanced_power_analyses.html" class="title listing-title">Simulations for Advanced Power Analyses</a>
 </td>
 <td>
 <span class="listing-description">This tutorial provides a deeper dive into simulations in R, with emphasis on GLMs, LMEs, and SEMs</span>
@@ -741,12 +762,12 @@ Tags
 
 </tr>
 
-<tr data-index="10" data-categories="Q2F0ZWdvcnk=" data-listing-file-modified-sort="1757146299549" data-listing-reading-time-sort="1" data-listing-word-count-sort="11" data-listing-title-sort="The Credibility Revolution" data-listing-filename-sort="credibility_revolution.qmd">
+<tr data-index="10" data-categories="Q2F0ZWdvcnk=" data-listing-file-modified-sort="1759834043073" data-listing-reading-time-sort="1" data-listing-word-count-sort="11" data-listing-title-sort="The Credibility Revolution" data-listing-filename-sort="credibility_revolution.qmd">
 <td>
 <span class="listing-content_category">Replicability Crisis &amp; Credibility Revolution</span>
 </td>
 <td>
-<a href="./training/replicability_crisis_and_credibility_revolution/credibility_revolution.html" class="title listing-title">The Credibility Revolution</a>
+<a href="./training/principles/credibility_revolution.html" class="title listing-title">The Credibility Revolution</a>
 </td>
 <td>
 <span class="listing-description">Tutorial in progress…</span>
@@ -757,12 +778,12 @@ Tags
 
 </tr>
 
-<tr data-index="11" data-categories="SW5jbHVkZWQlMjBDYXRlZ29yaWVz" data-listing-file-modified-sort="1757146299549" data-listing-reading-time-sort="1" data-listing-word-count-sort="46" data-listing-title-sort="From the Replicability Crisis to Credible Science" data-listing-filename-sort="from_replicability_crisis_to_credible_science.qmd">
+<tr data-index="11" data-categories="SW5jbHVkZWQlMjBDYXRlZ29yaWVz" data-listing-file-modified-sort="1759834043073" data-listing-reading-time-sort="1" data-listing-word-count-sort="46" data-listing-title-sort="From the Replicability Crisis to Credible Science" data-listing-filename-sort="from_replicability_crisis_to_credible_science.qmd">
 <td>
 <span class="listing-content_category">Replicability Crisis &amp; Credibility Revolution</span>
 </td>
 <td>
-<a href="./training/replicability_crisis_and_credibility_revolution/from_replicability_crisis_to_credible_science.html" class="title listing-title">From the Replicability Crisis to Credible Science</a>
+<a href="./training/principles/from_replicability_crisis_to_credible_science.html" class="title listing-title">From the Replicability Crisis to Credible Science</a>
 </td>
 <td>
 <span class="listing-description">A presentation on the replication shortcomings of science and how researchers can improve</span>
@@ -773,12 +794,12 @@ Tags
 
 </tr>
 
-<tr data-index="12" data-categories="SW5jbHVkZWQlMjBDYXRlZ29yaWVz" data-listing-file-modified-sort="1757146299549" data-listing-reading-time-sort="1" data-listing-word-count-sort="46" data-listing-title-sort="How to make your science credible" data-listing-filename-sort="how_to_make_your_science_credible.qmd">
+<tr data-index="12" data-categories="SW5jbHVkZWQlMjBDYXRlZ29yaWVz" data-listing-file-modified-sort="1759834043073" data-listing-reading-time-sort="1" data-listing-word-count-sort="46" data-listing-title-sort="How to make your science credible" data-listing-filename-sort="how_to_make_your_science_credible.qmd">
 <td>
 <span class="listing-content_category">Replicability Crisis &amp; Credibility Revolution</span>
 </td>
 <td>
-<a href="./training/replicability_crisis_and_credibility_revolution/how_to_make_your_science_credible.html" class="title listing-title">How to make your science credible</a>
+<a href="./training/principles/how_to_make_your_science_credible.html" class="title listing-title">How to make your science credible</a>
 </td>
 <td>
 <span class="listing-description">Learn the ins and outs of creating high quality, reproducible, and open research project</span>
@@ -789,12 +810,12 @@ Tags
 
 </tr>
 
-<tr data-index="13" data-categories="SW5jbHVkZWQlMjBDYXRlZ29yaWVz" data-listing-file-modified-sort="1757146299549" data-listing-reading-time-sort="1" data-listing-word-count-sort="53" data-listing-title-sort="Advanced git" data-listing-filename-sort="advanced_git.qmd">
+<tr data-index="13" data-categories="SW5jbHVkZWQlMjBDYXRlZ29yaWVz" data-listing-file-modified-sort="1759834043073" data-listing-reading-time-sort="1" data-listing-word-count-sort="53" data-listing-title-sort="Advanced git" data-listing-filename-sort="advanced_git.qmd">
 <td>
 <span class="listing-content_category">Reproducible Workflow</span>
 </td>
 <td>
-<a href="./training/reproducible_workflows/advanced_git.html" class="title listing-title">Advanced git</a>
+<a href="./training/reproducible_processes/advanced_git.html" class="title listing-title">Advanced git</a>
 </td>
 <td>
 <span class="listing-description">Learn git features like branching and gitflow, and how to take advantage of issues, pull requests, and more on GitHub</span>
@@ -805,12 +826,12 @@ Tags
 
 </tr>
 
-<tr data-index="14" data-categories="SW5jbHVkZWQlMjBDYXRlZ29yaWVz" data-listing-file-modified-sort="1757146299549" data-listing-reading-time-sort="1" data-listing-word-count-sort="30" data-listing-title-sort="Code Publishing" data-listing-filename-sort="code_publishing.qmd">
+<tr data-index="14" data-categories="SW5jbHVkZWQlMjBDYXRlZ29yaWVz" data-listing-file-modified-sort="1759834043073" data-listing-reading-time-sort="1" data-listing-word-count-sort="30" data-listing-title-sort="Code Publishing" data-listing-filename-sort="code_publishing.qmd">
 <td>
 <span class="listing-content_category">Reproducible Workflow</span>
 </td>
 <td>
-<a href="./training/reproducible_workflows/code_publishing.html" class="title listing-title">Code Publishing</a>
+<a href="./training/reproducible_processes/code_publishing.html" class="title listing-title">Code Publishing</a>
 </td>
 <td>
 <span class="listing-description">Tie together your skills and publish your work</span>
@@ -821,12 +842,12 @@ Tags
 
 </tr>
 
-<tr data-index="15" data-categories="Ug==" data-listing-file-modified-sort="1757146299549" data-listing-reading-time-sort="1" data-listing-word-count-sort="30" data-listing-title-sort="Collaborative coding with GitHub and RStudio" data-listing-filename-sort="collaborative_coding_with_github_and_rstudio.qmd">
+<tr data-index="15" data-categories="Ug==" data-listing-file-modified-sort="1759834043073" data-listing-reading-time-sort="1" data-listing-word-count-sort="30" data-listing-title-sort="Collaborative coding with GitHub and RStudio" data-listing-filename-sort="collaborative_coding_with_github_and_rstudio.qmd">
 <td>
 <span class="listing-content_category">Reproducible Workflow</span>
 </td>
 <td>
-<a href="./training/reproducible_workflows/collaborative_coding_with_github_and_rstudio.html" class="title listing-title">Collaborative coding with GitHub and RStudio</a>
+<a href="./training/reproducible_processes/collaborative_coding_with_github_and_rstudio.html" class="title listing-title">Collaborative coding with GitHub and RStudio</a>
 </td>
 <td>
 <span class="listing-description">After learning the basics of git, apply your skills in an interactive tutorial</span>
@@ -837,12 +858,12 @@ Tags
 
 </tr>
 
-<tr data-index="16" data-categories="SW5jbHVkZWQlMjBDYXRlZ29yaWVz" data-listing-file-modified-sort="1757146299549" data-listing-reading-time-sort="1" data-listing-word-count-sort="30" data-listing-title-sort="Introduction to Quarto" data-listing-filename-sort="introduction_to_quarto.qmd">
+<tr data-index="16" data-categories="SW5jbHVkZWQlMjBDYXRlZ29yaWVz" data-listing-file-modified-sort="1759834043074" data-listing-reading-time-sort="1" data-listing-word-count-sort="30" data-listing-title-sort="Introduction to Quarto" data-listing-filename-sort="introduction_to_quarto.qmd">
 <td>
 <span class="listing-content_category">Reproducible Workflow</span>
 </td>
 <td>
-<a href="./training/reproducible_workflows/introduction_to_quarto.html" class="title listing-title">Introduction to Quarto</a>
+<a href="./training/reproducible_processes/introduction_to_quarto.html" class="title listing-title">Introduction to Quarto</a>
 </td>
 <td>
 <span class="listing-description">Discover the basics of setting up Quarto projects, documents, and presentations</span>
@@ -853,12 +874,12 @@ Tags
 
 </tr>
 
-<tr data-index="17" data-categories="Ug==" data-listing-file-modified-sort="1757146299549" data-listing-reading-time-sort="1" data-listing-word-count-sort="30" data-listing-title-sort="Introduction to R" data-listing-filename-sort="introduction_to_r.qmd">
+<tr data-index="17" data-categories="Ug==" data-listing-file-modified-sort="1759834043074" data-listing-reading-time-sort="1" data-listing-word-count-sort="30" data-listing-title-sort="Introduction to R" data-listing-filename-sort="introduction_to_r.qmd">
 <td>
 <span class="listing-content_category">Reproducible Workflow</span>
 </td>
 <td>
-<a href="./training/reproducible_workflows/introduction_to_r.html" class="title listing-title">Introduction to R</a>
+<a href="./training/reproducible_processes/introduction_to_r.html" class="title listing-title">Introduction to R</a>
 </td>
 <td>
 <span class="listing-description">Learn the basics of the R programming language</span>
@@ -869,12 +890,12 @@ Tags
 
 </tr>
 
-<tr data-index="18" data-categories="Ug==" data-listing-file-modified-sort="1757146299549" data-listing-reading-time-sort="1" data-listing-word-count-sort="30" data-listing-title-sort="Introduction to {renv}" data-listing-filename-sort="introduction_to_renv.qmd">
+<tr data-index="18" data-categories="Ug==" data-listing-file-modified-sort="1759834043074" data-listing-reading-time-sort="1" data-listing-word-count-sort="30" data-listing-title-sort="Introduction to {renv}" data-listing-filename-sort="introduction_to_renv.qmd">
 <td>
 <span class="listing-content_category">Reproducible Workflow</span>
 </td>
 <td>
-<a href="./training/reproducible_workflows/introduction_to_renv.html" class="title listing-title">Introduction to {renv}</a>
+<a href="./training/reproducible_processes/introduction_to_renv.html" class="title listing-title">Introduction to {renv}</a>
 </td>
 <td>
 <span class="listing-description">Make your projects reproducible by learning how to (easily) manage your R packages</span>
@@ -885,12 +906,12 @@ Tags
 
 </tr>
 
-<tr data-index="19" data-categories="Ug==" data-listing-file-modified-sort="1757146299549" data-listing-reading-time-sort="1" data-listing-word-count-sort="30" data-listing-title-sort="Introduction to Version Control within RStudio" data-listing-filename-sort="introduction_to_version_control_within_rstudio.qmd">
+<tr data-index="19" data-categories="Ug==" data-listing-file-modified-sort="1759834043074" data-listing-reading-time-sort="1" data-listing-word-count-sort="30" data-listing-title-sort="Introduction to Version Control within RStudio" data-listing-filename-sort="introduction_to_version_control_within_rstudio.qmd">
 <td>
 <span class="listing-content_category">Reproducible Workflow</span>
 </td>
 <td>
-<a href="./training/reproducible_workflows/introduction_to_version_control_within_rstudio.html" class="title listing-title">Introduction to Version Control within RStudio</a>
+<a href="./training/reproducible_processes/introduction_to_version_control_within_rstudio.html" class="title listing-title">Introduction to Version Control within RStudio</a>
 </td>
 <td>
 <span class="listing-description">Explore the git version control software and its integrations with the popular RStudio interactive development environment</span>
@@ -901,12 +922,12 @@ Tags
 
 </tr>
 
-<tr data-index="20" data-categories="SW5jbHVkZWQlMjBDYXRlZ29yaWVz" data-listing-file-modified-sort="1757146299549" data-listing-reading-time-sort="1" data-listing-word-count-sort="30" data-listing-title-sort="Introduction to Zotero" data-listing-filename-sort="introduction_to_zotero.qmd">
+<tr data-index="20" data-categories="SW5jbHVkZWQlMjBDYXRlZ29yaWVz" data-listing-file-modified-sort="1759834043074" data-listing-reading-time-sort="1" data-listing-word-count-sort="30" data-listing-title-sort="Introduction to Zotero" data-listing-filename-sort="introduction_to_zotero.qmd">
 <td>
 <span class="listing-content_category">Reproducible Workflow</span>
 </td>
 <td>
-<a href="./training/reproducible_workflows/introduction_to_zotero.html" class="title listing-title">Introduction to Zotero</a>
+<a href="./training/reproducible_processes/introduction_to_zotero.html" class="title listing-title">Introduction to Zotero</a>
 </td>
 <td>
 <span class="listing-description">Easily save your sources to the Zotero software, and learn how to insert these citations into your documents</span>
@@ -978,13 +999,14 @@ Tags
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy

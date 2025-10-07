@@ -1,52 +1,85 @@
 [
   {
-    "listing": "/training/reproducible_workflows.html",
+    "listing": "/people/scientific-board.html",
     "items": [
-      "/training/reproducible_workflows/introduction_to_r.html",
-      "/training/reproducible_workflows/introduction_to_version_control_within_rstudio.html",
-      "/training/reproducible_workflows/collaborative_coding_with_github_and_rstudio.html",
-      "/training/reproducible_workflows/advanced_git.html",
-      "/training/reproducible_workflows/introduction_to_renv.html",
-      "/training/reproducible_workflows/introduction_to_zotero.html",
-      "/training/reproducible_workflows/introduction_to_quarto.html",
-      "/training/reproducible_workflows/code_publishing.html"
+      "/people/people/felix_example.html"
     ]
+  },
+  {
+    "listing": "/people/staff.html",
+    "items": [
+      "/people/people/felix_example.html"
+    ]
+  },
+  {
+    "listing": "/people/alumnae.html",
+    "items": [
+      "/people/people/felix_example.html"
+    ]
+  },
+  {
+    "listing": "/people/members.html",
+    "items": [
+      "/people/people/felix_example.html",
+      "/people/people/malika_ihle.html"
+    ]
+  },
+  {
+    "listing": "/training/reproducible_processes.html",
+    "items": []
+  },
+  {
+    "listing": "/training/publishing_outputs.html",
+    "items": []
+  },
+  {
+    "listing": "/training/study_planning.html",
+    "items": []
   },
   {
     "listing": "/self-training.html",
     "items": [
-      "/training/replicability_crisis_and_credibility_revolution.html",
-      "/training/preregistration.html",
-      "/training/data_management_simulation_sharing.html",
-      "/training/reproducible_workflows.html",
-      "/training/open_access.html",
-      "/training/data_management_simulation_sharing/fair_data_management.html",
-      "/training/data_management_simulation_sharing/fair_data_sharing.html",
-      "/training/data_management_simulation_sharing/introduction_to_open_research_data.html",
-      "/training/data_management_simulation_sharing/introduction_to_simulations_in_r.html",
-      "/training/data_management_simulation_sharing/maintaining_privacy_with_open_data.html",
-      "/training/data_management_simulation_sharing/synthetic_data_commision.html",
-      "/training/open_access/open_access_preprints_postprints.html",
-      "/training/preregistration/introduction_to_simulations_in_r.html",
-      "/training/preregistration/preregistration_why_how.html",
-      "/training/preregistration/simulations_for_advanced_power_analyses.html",
-      "/training/replicability_crisis_and_credibility_revolution/credibility_revolution.html",
-      "/training/replicability_crisis_and_credibility_revolution/from_replicability_crisis_to_credible_science.html",
-      "/training/replicability_crisis_and_credibility_revolution/how_to_make_your_science_credible.html",
-      "/training/reproducible_workflows/advanced_git.html",
-      "/training/reproducible_workflows/code_publishing.html",
-      "/training/reproducible_workflows/collaborative_coding_with_github_and_rstudio.html",
-      "/training/reproducible_workflows/introduction_to_quarto.html",
-      "/training/reproducible_workflows/introduction_to_r.html",
-      "/training/reproducible_workflows/introduction_to_renv.html",
-      "/training/reproducible_workflows/introduction_to_version_control_within_rstudio.html",
-      "/training/reproducible_workflows/introduction_to_zotero.html"
+      "/training/principles.html",
+      "/training/study_planning.html",
+      "/training/data_management.html",
+      "/training/reproducible_processes.html",
+      "/training/publishing_outputs.html",
+      "/training/data_management/fair_data_management.html",
+      "/training/data_management/fair_data_sharing.html",
+      "/training/data_management/introduction_to_open_research_data.html",
+      "/training/data_management/introduction_to_simulations_in_r.html",
+      "/training/data_management/maintaining_privacy_with_open_data.html",
+      "/training/data_management/synthetic_data_commision.html",
+      "/training/publishing_outputs/open_access_preprints_postprints.html",
+      "/training/study_planning/introduction_to_simulations_in_r.html",
+      "/training/study_planning/preregistration_why_how.html",
+      "/training/study_planning/simulations_for_advanced_power_analyses.html",
+      "/training/principles/credibility_revolution.html",
+      "/training/principles/from_replicability_crisis_to_credible_science.html",
+      "/training/principles/how_to_make_your_science_credible.html",
+      "/training/reproducible_processes/advanced_git.html",
+      "/training/reproducible_processes/code_publishing.html",
+      "/training/reproducible_processes/collaborative_coding_with_github_and_rstudio.html",
+      "/training/reproducible_processes/introduction_to_quarto.html",
+      "/training/reproducible_processes/introduction_to_r.html",
+      "/training/reproducible_processes/introduction_to_renv.html",
+      "/training/reproducible_processes/introduction_to_version_control_within_rstudio.html",
+      "/training/reproducible_processes/introduction_to_zotero.html"
     ]
   },
   {
-    "listing": "/people/scientific-board.html",
+    "listing": "/training/data_management.html",
+    "items": []
+  },
+  {
+    "listing": "/training/principles.html",
+    "items": []
+  },
+  {
+    "listing": "/people/management.html",
     "items": [
-      "/people/people/felix_example.html"
+      "/people/people/felix_example.html",
+      "/people/people/malika_ihle.html"
     ]
   },
   {
@@ -59,65 +92,6 @@
     "listing": "/people/fellows.html",
     "items": [
       "/people/people/felix_example.html"
-    ]
-  },
-  {
-    "listing": "/people/alumnae.html",
-    "items": [
-      "/people/people/felix_example.html"
-    ]
-  },
-  {
-    "listing": "/people/staff.html",
-    "items": [
-      "/people/people/felix_example.html"
-    ]
-  },
-  {
-    "listing": "/people/management.html",
-    "items": [
-      "/people/people/felix_example.html",
-      "/people/people/malika_ihle.html"
-    ]
-  },
-  {
-    "listing": "/people/members.html",
-    "items": [
-      "/people/people/felix_example.html",
-      "/people/people/malika_ihle.html"
-    ]
-  },
-  {
-    "listing": "/training/open_access.html",
-    "items": [
-      "/training/open_access/open_access_preprints_postprints.html"
-    ]
-  },
-  {
-    "listing": "/training/data_management_simulation_sharing.html",
-    "items": [
-      "/training/data_management_simulation_sharing/introduction_to_open_research_data.html",
-      "/training/data_management_simulation_sharing/fair_data_management.html",
-      "/training/data_management_simulation_sharing/fair_data_sharing.html",
-      "/training/data_management_simulation_sharing/maintaining_privacy_with_open_data.html",
-      "/training/data_management_simulation_sharing/introduction_to_simulations_in_r.html",
-      "/training/data_management_simulation_sharing/synthetic_data_commision.html"
-    ]
-  },
-  {
-    "listing": "/training/replicability_crisis_and_credibility_revolution.html",
-    "items": [
-      "/training/replicability_crisis_and_credibility_revolution/from_replicability_crisis_to_credible_science.html",
-      "/training/replicability_crisis_and_credibility_revolution/credibility_revolution.html",
-      "/training/replicability_crisis_and_credibility_revolution/how_to_make_your_science_credible.html"
-    ]
-  },
-  {
-    "listing": "/training/preregistration.html",
-    "items": [
-      "/training/preregistration/preregistration_why_how.html",
-      "/training/preregistration/introduction_to_simulations_in_r.html",
-      "/training/preregistration/simulations_for_advanced_power_analyses.html"
     ]
   }
 ]

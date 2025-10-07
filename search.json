@@ -1,5 +1,12 @@
 [
   {
+    "objectID": "qmd_two.html",
+    "href": "qmd_two.html",
+    "title": "Another Title",
+    "section": "",
+    "text": "Another Title\nHello again"
+  },
+  {
     "objectID": "tutorials.html",
     "href": "tutorials.html",
     "title": "Tutorials Landing",
@@ -7,97 +14,11 @@
     "text": "You shouldn’t be here!"
   },
   {
-    "objectID": "training/reproducible_workflows.html",
-    "href": "training/reproducible_workflows.html",
-    "title": "Reproducible Workflow",
+    "objectID": "qmd_one.html",
+    "href": "qmd_one.html",
+    "title": "Hello",
     "section": "",
-    "text": "Introduction to R\n\n\nLearn the basics of the R programming language\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIntroduction to Version Control within RStudio\n\n\nExplore the git version control software and its integrations with the popular RStudio interactive development environment\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCollaborative coding with GitHub and RStudio\n\n\nAfter learning the basics of git, apply your skills in an interactive tutorial\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAdvanced git\n\n\nLearn git features like branching and gitflow, and how to take advantage of issues, pull requests, and more on GitHub\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIntroduction to {renv}\n\n\nMake your projects reproducible by learning how to (easily) manage your R packages\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIntroduction to Zotero\n\n\nEasily save your sources to the Zotero software, and learn how to insert these citations into your documents\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIntroduction to Quarto\n\n\nDiscover the basics of setting up Quarto projects, documents, and presentations\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCode Publishing\n\n\nTie together your skills and publish your work\n\n\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "training/open_access/open_access_preprints_postprints.html",
-    "href": "training/open_access/open_access_preprints_postprints.html",
-    "title": "Open access, preprints, postprints",
-    "section": "",
-    "text": "OSM Link\nThe Open Science Framework page for this video and the associated slides are available at https://osf.io/k52ny/.\n\n\nPresentation"
-  },
-  {
-    "objectID": "training/replicability_crisis_and_credibility_revolution/from_replicability_crisis_to_credible_science.html",
-    "href": "training/replicability_crisis_and_credibility_revolution/from_replicability_crisis_to_credible_science.html",
-    "title": "From the Replicability Crisis to Credible Science",
-    "section": "",
-    "text": "OSF Link\nThe Open Science Framework page for this video and the associated slides are available at https://osf.io/mguqj/.\n\n\nPresentation"
-  },
-  {
-    "objectID": "training/replicability_crisis_and_credibility_revolution/credibility_revolution.html",
-    "href": "training/replicability_crisis_and_credibility_revolution/credibility_revolution.html",
-    "title": "The Credibility Revolution",
-    "section": "",
-    "text": "This is a placeholder page for future content in this category."
-  },
-  {
-    "objectID": "training/data_management_simulation_sharing/maintaining_privacy_with_open_data.html",
-    "href": "training/data_management_simulation_sharing/maintaining_privacy_with_open_data.html",
-    "title": "Maintaining Privacy with Open Data",
-    "section": "",
-    "text": "OSF Link\nThe Open Science Framework page for this video and the associated slides are available at https://osf.io/6sdcw/.\n\n\nPresentation"
-  },
-  {
-    "objectID": "training/data_management_simulation_sharing/introduction_to_open_research_data.html",
-    "href": "training/data_management_simulation_sharing/introduction_to_open_research_data.html",
-    "title": "Introduction to Open Research Data",
-    "section": "",
-    "text": "OSF Link\nThe Open Science Framework page for this video and the associated slides are available at https://osf.io/wv6zy/.\n\n\nPresentation"
-  },
-  {
-    "objectID": "training/preregistration/preregistration_why_how.html",
-    "href": "training/preregistration/preregistration_why_how.html",
-    "title": "Preregistration: Why and How?",
-    "section": "",
-    "text": "This tutorial is currently being converted from a PPT slide deck to a website."
-  },
-  {
-    "objectID": "training/preregistration/introduction_to_simulations_in_r.html",
-    "href": "training/preregistration/introduction_to_simulations_in_r.html",
-    "title": "Introduction to Simulations in R",
-    "section": "",
-    "text": "The HTML code block below should be uncommented, and the URL and href fields replaced with the link to the tutorial"
-  },
-  {
-    "objectID": "training/reproducible_workflows/advanced_git.html",
-    "href": "training/reproducible_workflows/advanced_git.html",
-    "title": "Advanced git",
-    "section": "",
-    "text": "This is a placeholder page for an advanced tutorial on using git."
-  },
-  {
-    "objectID": "self-training.html",
-    "href": "self-training.html",
-    "title": "Self-Training",
-    "section": "",
-    "text": "Replicability Crisis\n\n\n\nSomething about credibility and prereg. Two sentences I suppose.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAnonymization\n\nSynthetic Data\n\n\n\nSomething about sensitive data handling\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFAIR\n\nData Anonymity\n\n\n\nSomething about data management\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nR\n\n{renv}\n\nGit\n\nQuarto\n\nZotero\n\n\n\nSomething about reproducible workflow. Two sentences I suppose.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOpen Access\n\nPublishing\n\n\n\nSomething about open access\n\n\n\n\n\n\n\n\n\n\nNo matching items",
-    "crumbs": [
-      "Self-Training"
-    ]
-  },
-  {
-    "objectID": "self-training.html#tutorial-categories",
-    "href": "self-training.html#tutorial-categories",
-    "title": "Self-Training",
-    "section": "",
-    "text": "Replicability Crisis\n\n\n\nSomething about credibility and prereg. Two sentences I suppose.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAnonymization\n\nSynthetic Data\n\n\n\nSomething about sensitive data handling\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFAIR\n\nData Anonymity\n\n\n\nSomething about data management\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nR\n\n{renv}\n\nGit\n\nQuarto\n\nZotero\n\n\n\nSomething about reproducible workflow. Two sentences I suppose.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOpen Access\n\nPublishing\n\n\n\nSomething about open access\n\n\n\n\n\n\n\n\n\n\nNo matching items",
-    "crumbs": [
-      "Self-Training"
-    ]
-  },
-  {
-    "objectID": "self-training.html#all-tutorials",
-    "href": "self-training.html#all-tutorials",
-    "title": "Self-Training",
-    "section": "All Tutorials",
-    "text": "All Tutorials\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Tutorial\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTopic\n\n\n\nTutorial\n\n\n\nDescription\n\n\n\nTags\n\n\n\n\n\n\n\n\nData Management, Simulation, & Sharing\n\n\nFAIR Data Management\n\n\nTake steps towards making your data FAIR: Findable, Accessible, Interoperable, Reusable\n\n\nFAIR\n\n\n\n\n\n\nData Management, Simulation, & Sharing\n\n\nFAIR Data Sharing\n\n\nTutorial in progresss…\n\n\nFAIR\n\n\n\n\n\n\nData Management, Simulation, & Sharing\n\n\nIntroduction to Open Research Data\n\n\nAn introductory presentation on the what, why, and how of making research data open\n\n\nOpen Research\n\n\n\n\n\n\nData Management, Simulation, & Sharing\n\n\nIntroduction to Simulations in R\n\n\nA self-paced tutorial on why you should use simulations for your studies, and how to set them up in R\n\n\nsimulations\n\n\n\n\n\n\nData Management, Simulation, & Sharing\n\n\nMaintaining Privacy with Open Data\n\n\nA presentation on how to make data open to the public without revealing sensitive information\n\n\nOpen Data\n\n\n\n\n\n\nData Management, Simulation, & Sharing\n\n\nTBD: Generating Synthetic Data\n\n\nTutorial in progress…\n\n\nsimulations\n\n\n\n\n\n\nOpen Access Publishing\n\n\nOpen access, preprints, postprints\n\n\nWatch this presentation on why pre- and postprinting procedures are important to open science and how to accomplish them\n\n\nOpen Access\n\n\n\n\n\n\nPreregistration\n\n\nIntroduction to Simulations in R\n\n\nA self-paced tutorial on why you should use simulations for your studies, and how to set them up in R\n\n\nIncluded Categories\n\n\n\n\n\n\nPreregistration\n\n\nPreregistration: Why and How?\n\n\nTutorial in progress…\n\n\nIncluded Categories\n\n\n\n\n\n\nPreregistration\n\n\nSimulations for Advanced Power Analyses\n\n\nThis tutorial provides a deeper dive into simulations in R, with emphasis on GLMs, LMEs, and SEMs\n\n\nIncluded Categories\n\n\n\n\n\n\nReplicability Crisis & Credibility Revolution\n\n\nThe Credibility Revolution\n\n\nTutorial in progress…\n\n\nCategory\n\n\n\n\n\n\nReplicability Crisis & Credibility Revolution\n\n\nFrom the Replicability Crisis to Credible Science\n\n\nA presentation on the replication shortcomings of science and how researchers can improve\n\n\nIncluded Categories\n\n\n\n\n\n\nReplicability Crisis & Credibility Revolution\n\n\nHow to make your science credible\n\n\nLearn the ins and outs of creating high quality, reproducible, and open research project\n\n\nIncluded Categories\n\n\n\n\n\n\nReproducible Workflow\n\n\nAdvanced git\n\n\nLearn git features like branching and gitflow, and how to take advantage of issues, pull requests, and more on GitHub\n\n\nIncluded Categories\n\n\n\n\n\n\nReproducible Workflow\n\n\nCode Publishing\n\n\nTie together your skills and publish your work\n\n\nIncluded Categories\n\n\n\n\n\n\nReproducible Workflow\n\n\nCollaborative coding with GitHub and RStudio\n\n\nAfter learning the basics of git, apply your skills in an interactive tutorial\n\n\nR\n\n\n\n\n\n\nReproducible Workflow\n\n\nIntroduction to Quarto\n\n\nDiscover the basics of setting up Quarto projects, documents, and presentations\n\n\nIncluded Categories\n\n\n\n\n\n\nReproducible Workflow\n\n\nIntroduction to R\n\n\nLearn the basics of the R programming language\n\n\nR\n\n\n\n\n\n\nReproducible Workflow\n\n\nIntroduction to {renv}\n\n\nMake your projects reproducible by learning how to (easily) manage your R packages\n\n\nR\n\n\n\n\n\n\nReproducible Workflow\n\n\nIntroduction to Version Control within RStudio\n\n\nExplore the git version control software and its integrations with the popular RStudio interactive development environment\n\n\nR\n\n\n\n\n\n\nReproducible Workflow\n\n\nIntroduction to Zotero\n\n\nEasily save your sources to the Zotero software, and learn how to insert these citations into your documents\n\n\nIncluded Categories\n\n\n\n\n\n\nNo matching items",
-    "crumbs": [
-      "Self-Training"
-    ]
+    "text": "Hello\nHello this is some more content.\nEven more content."
   },
   {
     "objectID": "people/scientific-board.html",
@@ -114,67 +35,11 @@
     "text": "Professor at the Department of Psychology, Ludwig-Maximilians-Universität München, Germany. Managing director of the LMU Open Science Center and board member of the META-REP priority program (‘A meta-scientific research program to analyse and optimise replicability in the behavioral, social, and cognitive Sciences’). Interested in Open Science, Metascience, implicit motives, machine learning, responsible research assessment (CoARA), solarpunk, piano, and cooking.\n\nRead More!\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "people/associate_profiles.html",
-    "href": "people/associate_profiles.html",
-    "title": "LMU Open Science Center",
+    "objectID": "people/people/malika_ihle.html",
+    "href": "people/people/malika_ihle.html",
+    "title": "Dr. Malika Ihle",
     "section": "",
-    "text": "Associated Members\n\n\n\n\n  \n      \n      \n        \n      \n    \n    \n    Felix Schönbrodt\n    Prof. Dr.\n    Max Planck Institute for Biological Intelligence\n  \n\n  \n  \n      \n      \n        \n      \n    \n    \n    Felix Schönbrodt\n    Prof. Dr.\n    Max Planck Institute for Biological Intelligence\n  \n\n  \n  \n      \n      \n        \n      \n    \n    \n    Felix Schönbrodt\n    Prof. Dr.\n    Max Planck Institute for Biological Intelligence\n  \n\n  \n  \n      \n      \n        \n      \n    \n    \n    Felix Schönbrodt\n    Prof. Dr.\n    Max Planck Institute for Biological Intelligence\n  \n\n  \n  \n      \n      \n        \n      \n    \n    \n    Felix Schönbrodt\n    Prof. Dr.\n    Max Planck Institute for Biological Intelligence"
-  },
-  {
-    "objectID": "people/people/felix_example.html",
-    "href": "people/people/felix_example.html",
-    "title": "Prof. Dr. Felix Schönbrodt",
-    "section": "",
-    "text": "Managing Director of OSC\nFaculty of Psychology\n\n\n\nFelix.Schoenbrodt@psy.lmu.de\n\n\n\nPersonal Website\n\n\n\nFaculty Website\n\n\n\nDepartment of Psychology\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMission Statement\nHELLO THERE. I am principal investigator for Psychological Methods and Assessment at the Department of Psychology. The reproducibility of research findings is a core criterion of science, which however, has been challenged by the failure of recent large-scale replication projects.\n\nTogether with the board of the German Psychological Society (DGPs) I developed the society's recommendations for data sharing in psychology.\n\n\n\nResearch Interests\n\nOpen Science\nPsychology\nPsychological Methods\nData Sharing\n\nSelected Publications\n\n\n2024\n\n\"Machine Learning Applications in Organizational Behavior\"\nSmith, J., Johnson, A., & Williams, R.\n\nJournal of Applied Research, 42(3), 256-278\n\n\n\n\n DOI\n\n\n\n\n\n2023\n\n\"Open Methods in Psychology\"\nSchönbrodt, F.\n\nPsychological Methods, 15(2), 112-143\n\n\n\n\n DOI"
-  },
-  {
-    "objectID": "people/overview.html",
-    "href": "people/overview.html",
-    "title": "Overview",
-    "section": "",
-    "text": "This page will have some graphics and information about how many members we have, how many are active, etc. It will also link to the leadership, staff, etc. pages"
-  },
-  {
-    "objectID": "people/advisory-board.html",
-    "href": "people/advisory-board.html",
-    "title": "Advisory Board",
-    "section": "",
-    "text": "Professor at the Department of Psychology, Ludwig-Maximilians-Universität München, Germany. Managing director of the LMU Open Science Center and board member of the META-REP priority program (‘A meta-scientific research program to analyse and optimise replicability in the behavioral, social, and cognitive Sciences’). Interested in Open Science, Metascience, implicit motives, machine learning, responsible research assessment (CoARA), solarpunk, piano, and cooking.\n\nRead More!\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "people/advisory-board.html#current-advisory-board",
-    "href": "people/advisory-board.html#current-advisory-board",
-    "title": "Advisory Board",
-    "section": "",
-    "text": "Professor at the Department of Psychology, Ludwig-Maximilians-Universität München, Germany. Managing director of the LMU Open Science Center and board member of the META-REP priority program (‘A meta-scientific research program to analyse and optimise replicability in the behavioral, social, and cognitive Sciences’). Interested in Open Science, Metascience, implicit motives, machine learning, responsible research assessment (CoARA), solarpunk, piano, and cooking.\n\nRead More!\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "people/fellows.html",
-    "href": "people/fellows.html",
-    "title": "Fellows",
-    "section": "",
-    "text": "Felix Schönbrodt\n\nProf. Dr.\n\n\nPsychology\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "qmd_one.html",
-    "href": "qmd_one.html",
-    "title": "Hello",
-    "section": "",
-    "text": "Hello\nHello this is some more content.\nEven more content."
-  },
-  {
-    "objectID": "qmd_two.html",
-    "href": "qmd_two.html",
-    "title": "Another Title",
-    "section": "",
-    "text": "Another Title\nHello again"
-  },
-  {
-    "objectID": "people/alumnae.html",
-    "href": "people/alumnae.html",
-    "title": "Alumnae",
-    "section": "",
-    "text": "Felix Schönbrodt\n\nProf. Dr.\n\n\nPsychology\n\n\n\n\n\n\nNo matching items"
+    "text": "Scientific Coordinator of the OSC\nDepartment of Open Science Center\n\n\n\nmalika.ihle@psy.lmu.de\n\n\n\nPersonal Website\n\n\n\nLMU Official Website\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMission Statement\nMalika Ihle is the LMU Open Science Center Coordinator, supporting the scientific board in developing a comprehensive approach to open research that extends across all disciplines, using both bottom-up and top-down strategies. Her role is to provide peer-to-peer training and develop an open research curriculum, coordinate grassroots initiatives and organise various events such as seminars and conferences, support meta-research collaborations, liaise with local, national (e.g. the German Reproducibility Network (GRN)), and international stakeholders to inform the design of incentives and policies, and co-develop a strategic plan to make the LMU Open Science Center a sustainable entity.\n\n\n\nResearch Interests\n\nOpen Science\nPsychology\nPsychological Methods\nData Sharing"
   },
   {
     "objectID": "people/staff.html",
@@ -184,25 +49,18 @@
     "text": "Managing Director of OSC\n\n\n\n\n  \n\n\n\n\n\n  \n\n\n  \n\n\n  \n\n\n  \n\n\n\n\n\n\n\nFelix Schönbrodt\n\n\n\nProf. Dr.\n\n\nLMU Psychology\n\n\n\nProfessor at the Department of Psychology, Ludwig-Maximilians-Universität München, Germany. Managing director of the LMU Open Science Center and board member of the META-REP priority program (‘A meta-scientific research program to analyse and optimise replicability in the behavioral, social, and cognitive Sciences’). Interested in Open Science, Metascience, implicit motives, machine learning, responsible research assessment (CoARA), solarpunk, piano, and cooking.\n\nRead More!\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "people/people/malika_ihle.html",
-    "href": "people/people/malika_ihle.html",
-    "title": "Dr. Malika Ihle",
-    "section": "",
-    "text": "Scientific Coordinator of the OSC\nDepartment of Open Science Center\n\n\n\nmalika.ihle@psy.lmu.de\n\n\n\nPersonal Website\n\n\n\nLMU Official Website\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMission Statement\nMalika Ihle is the LMU Open Science Center Coordinator, supporting the scientific board in developing a comprehensive approach to open research that extends across all disciplines, using both bottom-up and top-down strategies. Her role is to provide peer-to-peer training and develop an open research curriculum, coordinate grassroots initiatives and organise various events such as seminars and conferences, support meta-research collaborations, liaise with local, national (e.g. the German Reproducibility Network (GRN)), and international stakeholders to inform the design of incentives and policies, and co-develop a strategic plan to make the LMU Open Science Center a sustainable entity.\n\n\n\nResearch Interests\n\nOpen Science\nPsychology\nPsychological Methods\nData Sharing"
-  },
-  {
-    "objectID": "people/management.html",
-    "href": "people/management.html",
-    "title": "Management",
-    "section": "",
-    "text": "Managing Director of OSC\n\n\n\n\n  \n\n\n\n\n\n  \n\n\n  \n\n\n  \n\n\n  \n\n\n\n\n\n\n\nFelix Schönbrodt\n\n\n\nProf. Dr.\n\n\nLMU Psychology\n\n\n\nProfessor at the Department of Psychology, Ludwig-Maximilians-Universität München, Germany. Managing director of the LMU Open Science Center and board member of the META-REP priority program (‘A meta-scientific research program to analyse and optimise replicability in the behavioral, social, and cognitive Sciences’). Interested in Open Science, Metascience, implicit motives, machine learning, responsible research assessment (CoARA), solarpunk, piano, and cooking.\n\nRead More!\n\n\n\n\n\n\nScientific Coordinator of the OSC\n\n\n\n\n  \n\n\n\n\n\n  \n\n\n  \n\n\n  \n\n\n  \n\n\n\n\n\n\n\nMalika Ihle\n\n\n\nDr.\n\n\nLMU Psychology\n\n\n\nMalika Ihle is the LMU Open Science Center Coordinator, supporting the scientific board in developing a comprehensive approach to open research that extends across all disciplines, using both bottom-up and top-down strategies. Her role is to provide peer-to-peer training and develop an open research curriculum, coordinate grassroots initiatives and organise various events such as seminars and conferences, support meta-research collaborations, liaise with local, national (e.g. the German Reproducibility Network (GRN)), and international stakeholders to inform the design of incentives and policies, and co-develop a strategic plan to make the LMU Open Science Center a sustainable entity.\n\nRead More!\n\n\n\n\n\nNo matching items"
-  },
-  {
     "objectID": "people/member_profiles.html",
     "href": "people/member_profiles.html",
     "title": "LMU Open Science Center",
     "section": "",
     "text": "Members\n\n\n  \n    \n      \n        \n      \n    \n    \n    Felix Schönbrodt\n    Prof. Dr.\n    Faculty of Psychology\n  \n\n\n\n  \n    \n      \n        \n      \n    \n    \n    Malika Ihle\n    Dr.\n    Faculty of Psychology\n  \n\n\n\n  \n    \n      \n        \n      \n    \n    \n    Sarah von Grebmer zu Wolfsthurn\n    Dr.\n    Faculty of Psychology\n  \n\n\n\n  \n    \n      \n        \n      \n    \n    \n    Felix Schönbrodt\n    Prof. Dr.\n    Faculty of Psychology\n  \n\n\n\n  \n    \n      \n        \n      \n    \n    \n    Felix Schönbrodt\n    Prof. Dr.\n    Faculty of Psychology\n  \n\n\n\n  \n    \n      \n        \n      \n    \n    \n    Felix Schönbrodt\n    Prof. Dr.\n    Faculty of Psychology\n  \n\n\n\n  \n    \n      \n        \n      \n    \n    \n    Felix Schönbrodt\n    Prof. Dr.\n    Faculty of Psychology\n  \n\n\n\n\n  \n    \n      \n        \n      \n    \n    \n    Felix Schönbrodt\n    Prof. Dr.\n    Faculty of Psychology\n  \n\n\n\n\n  \n    \n      \n        \n      \n    \n    \n    Felix Schönbrodt\n    Prof. Dr.\n    Faculty of Psychology\n  \n\n\n\n\n  \n    \n      \n        \n      \n    \n    \n    Felix Schönbrodt\n    Prof. Dr.\n    Faculty of Psychology\n  \n\n\n\n\n  \n    \n      \n        \n      \n    \n    \n    Felix Schönbrodt\n    Prof. Dr.\n    Faculty of Psychology\n  \n\n\n\n  \n    \n      \n        \n      \n    \n    \n    Felix Schönbrodt\n    Prof. Dr.\n    Faculty of Psychology"
+  },
+  {
+    "objectID": "people/alumnae.html",
+    "href": "people/alumnae.html",
+    "title": "Alumnae",
+    "section": "",
+    "text": "Felix Schönbrodt\n\nProf. Dr.\n\n\nPsychology\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "people/members.html",
@@ -226,6 +84,148 @@
     "text": "Associated Members\n\n\n\n\n\n  \n  \n\nFelix Schönbrodt\n\nProf. Dr.\n\n\nPsychology\n\n\n\n\n\n\nNo matching items"
   },
   {
+    "objectID": "training/principles/from_replicability_crisis_to_credible_science.html",
+    "href": "training/principles/from_replicability_crisis_to_credible_science.html",
+    "title": "From the Replicability Crisis to Credible Science",
+    "section": "",
+    "text": "OSF Link\nThe Open Science Framework page for this video and the associated slides are available at https://osf.io/mguqj/.\n\n\nPresentation"
+  },
+  {
+    "objectID": "training/principles/credibility_revolution.html",
+    "href": "training/principles/credibility_revolution.html",
+    "title": "The Credibility Revolution",
+    "section": "",
+    "text": "This is a placeholder page for future content in this category."
+  },
+  {
+    "objectID": "training/data_management/introduction_to_open_research_data.html",
+    "href": "training/data_management/introduction_to_open_research_data.html",
+    "title": "Introduction to Open Research Data",
+    "section": "",
+    "text": "OSF Link\nThe Open Science Framework page for this video and the associated slides are available at https://osf.io/wv6zy/.\n\n\nPresentation"
+  },
+  {
+    "objectID": "training/data_management/synthetic_data_commision.html",
+    "href": "training/data_management/synthetic_data_commision.html",
+    "title": "TBD: Generating Synthetic Data",
+    "section": "",
+    "text": "This page is currently a placeholder for an in-progress tutorial about generating synthetic data."
+  },
+  {
+    "objectID": "training/reproducible_processes.html",
+    "href": "training/reproducible_processes.html",
+    "title": "Reproducible processes",
+    "section": "",
+    "text": "No matching items"
+  },
+  {
+    "objectID": "training/study_planning/preregistration_why_how.html",
+    "href": "training/study_planning/preregistration_why_how.html",
+    "title": "Preregistration: Why and How?",
+    "section": "",
+    "text": "This tutorial is currently being converted from a PPT slide deck to a website."
+  },
+  {
+    "objectID": "training/publishing_outputs.html",
+    "href": "training/publishing_outputs.html",
+    "title": "Publishing outputs",
+    "section": "",
+    "text": "No matching items"
+  },
+  {
+    "objectID": "training/study_planning.html",
+    "href": "training/study_planning.html",
+    "title": "Study planning",
+    "section": "",
+    "text": "No matching items"
+  },
+  {
+    "objectID": "self-training.html",
+    "href": "self-training.html",
+    "title": "Self-Training",
+    "section": "",
+    "text": "Replicability crisis\n\nOpen research practices\n\n\n\nFrom the replicability crisis to the credibility revolution\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPreregistration\n\nData simulation\n\nPower analyses\n\n\n\nFrom data simulation to power analyses and preregistration\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOpen data\n\nFAIR data\n\nData anonymity\n\nSynthetic data\n\n\n\nFrom preserving anonymity to FAIR data sharing\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nR\n\n{renv}\n\nGit\n\nQuarto\n\nZotero\n\nRedable code\n\nReproducible protocols\n\n\n\nFrom programming to reproducible mansucripts\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOpen Access\n\nCode publishing\n\n\n\nSharing data, code, and article\n\n\n\n\n\n\n\n\n\n\nNo matching items",
+    "crumbs": [
+      "Self-Training"
+    ]
+  },
+  {
+    "objectID": "self-training.html#tutorial-categories",
+    "href": "self-training.html#tutorial-categories",
+    "title": "Self-Training",
+    "section": "",
+    "text": "Replicability crisis\n\nOpen research practices\n\n\n\nFrom the replicability crisis to the credibility revolution\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPreregistration\n\nData simulation\n\nPower analyses\n\n\n\nFrom data simulation to power analyses and preregistration\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOpen data\n\nFAIR data\n\nData anonymity\n\nSynthetic data\n\n\n\nFrom preserving anonymity to FAIR data sharing\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nR\n\n{renv}\n\nGit\n\nQuarto\n\nZotero\n\nRedable code\n\nReproducible protocols\n\n\n\nFrom programming to reproducible mansucripts\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOpen Access\n\nCode publishing\n\n\n\nSharing data, code, and article\n\n\n\n\n\n\n\n\n\n\nNo matching items",
+    "crumbs": [
+      "Self-Training"
+    ]
+  },
+  {
+    "objectID": "self-training.html#all-tutorials",
+    "href": "self-training.html#all-tutorials",
+    "title": "Self-Training",
+    "section": "All Tutorials",
+    "text": "All Tutorials\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Tutorial\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTopic\n\n\n\nTutorial\n\n\n\nDescription\n\n\n\nTags\n\n\n\n\n\n\n\n\nData Management, Simulation, & Sharing\n\n\nFAIR Data Management\n\n\nTake steps towards making your data FAIR: Findable, Accessible, Interoperable, Reusable\n\n\nFAIR\n\n\n\n\n\n\nData Management, Simulation, & Sharing\n\n\nFAIR Data Sharing\n\n\nTutorial in progresss…\n\n\nFAIR\n\n\n\n\n\n\nData Management, Simulation, & Sharing\n\n\nIntroduction to Open Research Data\n\n\nAn introductory presentation on the what, why, and how of making research data open\n\n\nOpen Research\n\n\n\n\n\n\nData Management, Simulation, & Sharing\n\n\nIntroduction to Simulations in R\n\n\nA self-paced tutorial on why you should use simulations for your studies, and how to set them up in R\n\n\nsimulations\n\n\n\n\n\n\nData Management, Simulation, & Sharing\n\n\nMaintaining Privacy with Open Data\n\n\nA presentation on how to make data open to the public without revealing sensitive information\n\n\nOpen Data\n\n\n\n\n\n\nData Management, Simulation, & Sharing\n\n\nTBD: Generating Synthetic Data\n\n\nTutorial in progress…\n\n\nsimulations\n\n\n\n\n\n\nOpen Access Publishing\n\n\nOpen access, preprints, postprints\n\n\nWatch this presentation on why pre- and postprinting procedures are important to open science and how to accomplish them\n\n\nOpen Access\n\n\n\n\n\n\nPreregistration\n\n\nIntroduction to Simulations in R\n\n\nA self-paced tutorial on why you should use simulations for your studies, and how to set them up in R\n\n\nIncluded Categories\n\n\n\n\n\n\nPreregistration\n\n\nPreregistration: Why and How?\n\n\nTutorial in progress…\n\n\nIncluded Categories\n\n\n\n\n\n\nPreregistration\n\n\nSimulations for Advanced Power Analyses\n\n\nThis tutorial provides a deeper dive into simulations in R, with emphasis on GLMs, LMEs, and SEMs\n\n\nIncluded Categories\n\n\n\n\n\n\nReplicability Crisis & Credibility Revolution\n\n\nThe Credibility Revolution\n\n\nTutorial in progress…\n\n\nCategory\n\n\n\n\n\n\nReplicability Crisis & Credibility Revolution\n\n\nFrom the Replicability Crisis to Credible Science\n\n\nA presentation on the replication shortcomings of science and how researchers can improve\n\n\nIncluded Categories\n\n\n\n\n\n\nReplicability Crisis & Credibility Revolution\n\n\nHow to make your science credible\n\n\nLearn the ins and outs of creating high quality, reproducible, and open research project\n\n\nIncluded Categories\n\n\n\n\n\n\nReproducible Workflow\n\n\nAdvanced git\n\n\nLearn git features like branching and gitflow, and how to take advantage of issues, pull requests, and more on GitHub\n\n\nIncluded Categories\n\n\n\n\n\n\nReproducible Workflow\n\n\nCode Publishing\n\n\nTie together your skills and publish your work\n\n\nIncluded Categories\n\n\n\n\n\n\nReproducible Workflow\n\n\nCollaborative coding with GitHub and RStudio\n\n\nAfter learning the basics of git, apply your skills in an interactive tutorial\n\n\nR\n\n\n\n\n\n\nReproducible Workflow\n\n\nIntroduction to Quarto\n\n\nDiscover the basics of setting up Quarto projects, documents, and presentations\n\n\nIncluded Categories\n\n\n\n\n\n\nReproducible Workflow\n\n\nIntroduction to R\n\n\nLearn the basics of the R programming language\n\n\nR\n\n\n\n\n\n\nReproducible Workflow\n\n\nIntroduction to {renv}\n\n\nMake your projects reproducible by learning how to (easily) manage your R packages\n\n\nR\n\n\n\n\n\n\nReproducible Workflow\n\n\nIntroduction to Version Control within RStudio\n\n\nExplore the git version control software and its integrations with the popular RStudio interactive development environment\n\n\nR\n\n\n\n\n\n\nReproducible Workflow\n\n\nIntroduction to Zotero\n\n\nEasily save your sources to the Zotero software, and learn how to insert these citations into your documents\n\n\nIncluded Categories\n\n\n\n\n\n\nNo matching items",
+    "crumbs": [
+      "Self-Training"
+    ]
+  },
+  {
+    "objectID": "training/reproducible_processes/advanced_git.html",
+    "href": "training/reproducible_processes/advanced_git.html",
+    "title": "Advanced git",
+    "section": "",
+    "text": "This is a placeholder page for an advanced tutorial on using git."
+  },
+  {
+    "objectID": "training/data_management.html",
+    "href": "training/data_management.html",
+    "title": "Data management",
+    "section": "",
+    "text": "No matching items"
+  },
+  {
+    "objectID": "training/principles.html",
+    "href": "training/principles.html",
+    "title": "Principles",
+    "section": "",
+    "text": "No matching items"
+  },
+  {
+    "objectID": "training/study_planning/introduction_to_simulations_in_r.html",
+    "href": "training/study_planning/introduction_to_simulations_in_r.html",
+    "title": "Introduction to Simulations in R",
+    "section": "",
+    "text": "The HTML code block below should be uncommented, and the URL and href fields replaced with the link to the tutorial"
+  },
+  {
+    "objectID": "training/data_management/fair_data_sharing.html",
+    "href": "training/data_management/fair_data_sharing.html",
+    "title": "FAIR Data Sharing",
+    "section": "",
+    "text": "This is a placeholder for a yet-to-be-created tutorial."
+  },
+  {
+    "objectID": "training/data_management/maintaining_privacy_with_open_data.html",
+    "href": "training/data_management/maintaining_privacy_with_open_data.html",
+    "title": "Maintaining Privacy with Open Data",
+    "section": "",
+    "text": "OSF Link\nThe Open Science Framework page for this video and the associated slides are available at https://osf.io/6sdcw/.\n\n\nPresentation"
+  },
+  {
+    "objectID": "training/publishing_outputs/open_access_preprints_postprints.html",
+    "href": "training/publishing_outputs/open_access_preprints_postprints.html",
+    "title": "Open access, preprints, postprints",
+    "section": "",
+    "text": "OSM Link\nThe Open Science Framework page for this video and the associated slides are available at https://osf.io/k52ny/.\n\n\nPresentation"
+  },
+  {
+    "objectID": "training/principles/how_to_make_your_science_credible.html",
+    "href": "training/principles/how_to_make_your_science_credible.html",
+    "title": "How to make your science credible",
+    "section": "",
+    "text": "OSF Link\nThe Open Science Framework page for this video and the associated slides are available at https://osf.io/rhtgn/.\n\n\nPresentation"
+  },
+  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
@@ -233,52 +233,52 @@
     "text": "About this site"
   },
   {
-    "objectID": "training/open_access.html",
-    "href": "training/open_access.html",
-    "title": "Open Access",
+    "objectID": "people/management.html",
+    "href": "people/management.html",
+    "title": "Management",
     "section": "",
-    "text": "Open access, preprints, postprints\n\n\nWatch this presentation on why pre- and postprinting procedures are important to open science and how to accomplish them\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Managing Director of OSC\n\n\n\n\n  \n\n\n\n\n\n  \n\n\n  \n\n\n  \n\n\n  \n\n\n\n\n\n\n\nFelix Schönbrodt\n\n\n\nProf. Dr.\n\n\nLMU Psychology\n\n\n\nProfessor at the Department of Psychology, Ludwig-Maximilians-Universität München, Germany. Managing director of the LMU Open Science Center and board member of the META-REP priority program (‘A meta-scientific research program to analyse and optimise replicability in the behavioral, social, and cognitive Sciences’). Interested in Open Science, Metascience, implicit motives, machine learning, responsible research assessment (CoARA), solarpunk, piano, and cooking.\n\nRead More!\n\n\n\n\n\n\nScientific Coordinator of the OSC\n\n\n\n\n  \n\n\n\n\n\n  \n\n\n  \n\n\n  \n\n\n  \n\n\n\n\n\n\n\nMalika Ihle\n\n\n\nDr.\n\n\nLMU Psychology\n\n\n\nMalika Ihle is the LMU Open Science Center Coordinator, supporting the scientific board in developing a comprehensive approach to open research that extends across all disciplines, using both bottom-up and top-down strategies. Her role is to provide peer-to-peer training and develop an open research curriculum, coordinate grassroots initiatives and organise various events such as seminars and conferences, support meta-research collaborations, liaise with local, national (e.g. the German Reproducibility Network (GRN)), and international stakeholders to inform the design of incentives and policies, and co-develop a strategic plan to make the LMU Open Science Center a sustainable entity.\n\nRead More!\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "training/data_management_simulation_sharing.html",
-    "href": "training/data_management_simulation_sharing.html",
-    "title": "Data Management, Simulation, & Sharing",
+    "objectID": "people/advisory-board.html",
+    "href": "people/advisory-board.html",
+    "title": "Advisory Board",
     "section": "",
-    "text": "Introduction to Open Research Data\n\n\nAn introductory presentation on the what, why, and how of making research data open\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFAIR Data Management\n\n\nTake steps towards making your data FAIR: Findable, Accessible, Interoperable, Reusable\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFAIR Data Sharing\n\n\nTutorial in progresss…\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMaintaining Privacy with Open Data\n\n\nA presentation on how to make data open to the public without revealing sensitive information\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIntroduction to Simulations in R\n\n\nA self-paced tutorial on why you should use simulations for your studies, and how to set them up in R\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTBD: Generating Synthetic Data\n\n\nTutorial in progress…\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Professor at the Department of Psychology, Ludwig-Maximilians-Universität München, Germany. Managing director of the LMU Open Science Center and board member of the META-REP priority program (‘A meta-scientific research program to analyse and optimise replicability in the behavioral, social, and cognitive Sciences’). Interested in Open Science, Metascience, implicit motives, machine learning, responsible research assessment (CoARA), solarpunk, piano, and cooking.\n\nRead More!\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "training/data_management_simulation_sharing/synthetic_data_commision.html",
-    "href": "training/data_management_simulation_sharing/synthetic_data_commision.html",
-    "title": "TBD: Generating Synthetic Data",
+    "objectID": "people/advisory-board.html#current-advisory-board",
+    "href": "people/advisory-board.html#current-advisory-board",
+    "title": "Advisory Board",
     "section": "",
-    "text": "This page is currently a placeholder for an in-progress tutorial about generating synthetic data."
+    "text": "Professor at the Department of Psychology, Ludwig-Maximilians-Universität München, Germany. Managing director of the LMU Open Science Center and board member of the META-REP priority program (‘A meta-scientific research program to analyse and optimise replicability in the behavioral, social, and cognitive Sciences’). Interested in Open Science, Metascience, implicit motives, machine learning, responsible research assessment (CoARA), solarpunk, piano, and cooking.\n\nRead More!\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "training/data_management_simulation_sharing/fair_data_sharing.html",
-    "href": "training/data_management_simulation_sharing/fair_data_sharing.html",
-    "title": "FAIR Data Sharing",
+    "objectID": "people/associate_profiles.html",
+    "href": "people/associate_profiles.html",
+    "title": "LMU Open Science Center",
     "section": "",
-    "text": "This is a placeholder for a yet-to-be-created tutorial."
+    "text": "Associated Members\n\n\n\n\n  \n      \n      \n        \n      \n    \n    \n    Felix Schönbrodt\n    Prof. Dr.\n    Max Planck Institute for Biological Intelligence\n  \n\n  \n  \n      \n      \n        \n      \n    \n    \n    Felix Schönbrodt\n    Prof. Dr.\n    Max Planck Institute for Biological Intelligence\n  \n\n  \n  \n      \n      \n        \n      \n    \n    \n    Felix Schönbrodt\n    Prof. Dr.\n    Max Planck Institute for Biological Intelligence\n  \n\n  \n  \n      \n      \n        \n      \n    \n    \n    Felix Schönbrodt\n    Prof. Dr.\n    Max Planck Institute for Biological Intelligence\n  \n\n  \n  \n      \n      \n        \n      \n    \n    \n    Felix Schönbrodt\n    Prof. Dr.\n    Max Planck Institute for Biological Intelligence"
   },
   {
-    "objectID": "training/replicability_crisis_and_credibility_revolution/how_to_make_your_science_credible.html",
-    "href": "training/replicability_crisis_and_credibility_revolution/how_to_make_your_science_credible.html",
-    "title": "How to make your science credible",
+    "objectID": "people/people/felix_example.html",
+    "href": "people/people/felix_example.html",
+    "title": "Prof. Dr. Felix Schönbrodt",
     "section": "",
-    "text": "OSF Link\nThe Open Science Framework page for this video and the associated slides are available at https://osf.io/rhtgn/.\n\n\nPresentation"
+    "text": "Managing Director of OSC\nFaculty of Psychology\n\n\n\nFelix.Schoenbrodt@psy.lmu.de\n\n\n\nPersonal Website\n\n\n\nFaculty Website\n\n\n\nDepartment of Psychology\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMission Statement\nHELLO THERE. I am principal investigator for Psychological Methods and Assessment at the Department of Psychology. The reproducibility of research findings is a core criterion of science, which however, has been challenged by the failure of recent large-scale replication projects.\n\nTogether with the board of the German Psychological Society (DGPs) I developed the society's recommendations for data sharing in psychology.\n\n\n\nResearch Interests\n\nOpen Science\nPsychology\nPsychological Methods\nData Sharing\n\nSelected Publications\n\n\n2024\n\n\"Machine Learning Applications in Organizational Behavior\"\nSmith, J., Johnson, A., & Williams, R.\n\nJournal of Applied Research, 42(3), 256-278\n\n\n\n\n DOI\n\n\n\n\n\n2023\n\n\"Open Methods in Psychology\"\nSchönbrodt, F.\n\nPsychological Methods, 15(2), 112-143\n\n\n\n\n DOI"
   },
   {
-    "objectID": "training/replicability_crisis_and_credibility_revolution.html",
-    "href": "training/replicability_crisis_and_credibility_revolution.html",
-    "title": "Replicabity Crisis & Credibility Revolution",
+    "objectID": "people/fellows.html",
+    "href": "people/fellows.html",
+    "title": "Fellows",
     "section": "",
-    "text": "From the Replicability Crisis to Credible Science\n\n\nA presentation on the replication shortcomings of science and how researchers can improve\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThe Credibility Revolution\n\n\nTutorial in progress…\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nHow to make your science credible\n\n\nLearn the ins and outs of creating high quality, reproducible, and open research project\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "Felix Schönbrodt\n\nProf. Dr.\n\n\nPsychology\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "training/preregistration.html",
-    "href": "training/preregistration.html",
-    "title": "Preregistration",
+    "objectID": "people/overview.html",
+    "href": "people/overview.html",
+    "title": "Overview",
     "section": "",
-    "text": "Preregistration: Why and How?\n\n\nTutorial in progress…\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIntroduction to Simulations in R\n\n\nA self-paced tutorial on why you should use simulations for your studies, and how to set them up in R\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSimulations for Advanced Power Analyses\n\n\nThis tutorial provides a deeper dive into simulations in R, with emphasis on GLMs, LMEs, and SEMs\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "This page will have some graphics and information about how many members we have, how many are active, etc. It will also link to the leadership, staff, etc. pages"
   }
 ]
