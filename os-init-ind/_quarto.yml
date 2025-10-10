@@ -1,0 +1,17 @@
+project:
+  type: website
+
+website:
+  title: ""
+
+
+format:
+  html:
+    theme:
+      - minty
+      - brand
+    css: styles.css
+    toc: true
+
+
+

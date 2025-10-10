@@ -1,0 +1,104 @@
+---
+title: ""
+page-layout: full
+---
+
+```{=html}
+<head>
+    <div class="header">
+        <div class ="header-title">
+                <p class = "title-first">ReproducibiliTea</<p>
+                <p class = "title-last">Journal Club</p>
+
+        </div>
+        <div class="about">
+            <div class="about-text">
+                <p>
+                Founded in December 2019, the interdisciplinary journal club "ReproducibiliTea" is taking place regularly to explore main questions and current topics concerning Open Science and the credibility of research findings. This concept, which originated in Great Britain, has gained widespread recognition and adoption in numerous countries under the same name. 
+                
+                <h4 class="activities">What we do?</h4>
+                <ul class="activities-list">
+                    <li> Open discussions on open science, reproducibility, and related topics</li>
+                    <li> Foster exchange of diverse ideas across participants from all academic levels, fields and institutions</li>
+                    <li>In person meetings, and everyone is encouraged to bring their own snacks and drinks.
+                </ul>
+                </p>
+                <p>As an example of our previous activities, please see:
+ReproducibiliTea München – Sommersemester 2024 <a href="https://www.osc.uni-muenchen.de/meetups/reproducibilitea/reprot_programm_sose2024.pdf" target="_blank"><i class="bi bi-filetype-pdf"></i></a></p>
+            </div>
+            <div class ="header-logo">
+                <img class="logo-img" src ="images/reproducibilitea_logo1.jpeg">
+            </div>
+        </div>
+        <div class = "header-note">
+            <div class = "note-logo">
+                <i class="bi bi-info-circle"></i>
+            </div>
+            <div class = "note-text"> 
+                <i>The ReproducibiliTea Journal Club was active from December 2019 to July 2024. Any interested parties wanting support to revive it or support for a one-off event may contact the LMU Open Science Center coordinator, <a href = "mailto:malika.ihle@lmu.de" class = "note-contact">Dr. Malika Ihle</a></i>
+            </div>
+
+        </div>
+        <hr>
+        <div class="organizers">
+            <h2 class="section-title"><i class="bi bi-people"></i> Past Organizers</h2>
+                <ul class="organizer-list">
+                <li class="organizer-item" data-start="2019" data-end="2024"><a href="#">Laura Goetz</a>, 2019–2024</li>
+                <li class="organizer-item" data-start="2022" data-end="2024"><a href="#">Viktoria Wiedemann</a>, 2022–2024</li>
+                <li class="organizer-item" data-start="2022" data-end="2024"><a href="#">Gracia Prüm</a>, 2022–2024</li>
+                <li class="organizer-item" data-start="2022" data-end="2024"><a>Finia Loeb</a>, 2022–2024</li>
+                <li class="organizer-item" data-start="2022" data-end="2024"><a>Alp Kaan Aksu</a>, 2022–2024</li>
+                <li class="organizer-item" data-start="2023" data-end="2024"><a href="#">Julian Lange</a>, 2023–2024</li>
+                <li class="organizer-item" data-start="2019" data-end="2022"><a href="#">Stephan Nuding</a>, 2019–2022</li>
+                <li class="organizer-item" data-start="2019" data-end="2023"><a href="#">Leonhard Schramm</a>, 2019–2023</li>
+                <li class="organizer-item" data-start="2022" data-end="2023"><a href="#">Franka Etzel</a>, 2022–2023</li>
+                </ul>
+        </div>
+        <hr>
+        <div class="get-involved">
+            <h2 class="section-title">Get Involved</h2>
+            <p class="involved-text">
+            You are cordially invited to attend our upcoming meetings! Stay updated and receive notifications about these gatherings and the selected papers.
+            </p>
+            <div class="involved-links">
+                <div class="first-button"><a href="mailto:reproducibilitea.munich@gmail.com" ><i class="bi bi-envelope"></i> ReproducibiliTea team</a></div>
+                <div class="second-button"><a href="https://lists.lrz.de/mailman/listinfo/reproducibilitea)" > <i class="bi bi-box-arrow-up-right"></i> Newsletter</a></div>
+            </div>
+        </div>
+
+    </div>
+
+
+</head>
+
+
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const list = document.querySelector(".organizer-list");
+  const items = Array.from(list.querySelectorAll("li"));
+
+  items.sort((a, b) => {
+    const endA = parseInt(a.dataset.end, 10);
+    const endB = parseInt(b.dataset.end, 10);
+
+    // Active members first (those ending in 2024)
+    if (endA === 2024 && endB !== 2024) return -1;
+    if (endB === 2024 && endA !== 2024) return 1;
+
+    // Within active group, sort by start year (earliest first)
+    if (endA === 2024 && endB === 2024) {
+      return parseInt(a.dataset.start, 10) - parseInt(b.dataset.start, 10);
+    }
+
+    // For past members, sort by end year (most recent first)
+    return endB - endA;
+  });
+
+  // Rebuild list
+  list.innerHTML = "";
+  items.forEach(item => list.appendChild(item));
+});
+</script>
+
+```

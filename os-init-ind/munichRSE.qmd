@@ -1,0 +1,52 @@
+---
+title: ""
+page-layout: full
+---
+
+```{=html}
+<head>
+    <div class="header">
+        <div class ="header-title">
+                <p class = "title-first">Munich RSE</<p>
+                <p class = "title-last">Community</p>
+
+        </div>
+        <div class="about">
+            <div class="about-text">
+                <p>
+                Munich RSE is the place to meet other research software engineers in Munich. We aim for a meeting every two months, followed by dinner and networking. Our meetings include short talks about anything related to RSE (research data management, software development, teaching/training, and more), as well as open discussions on topics brought into the agenda by any attendee.
+                <h4 class="activities">Next meeting:</h4>
+                <ul class="activities-list">
+                    <li>October 16, 2025, 17:00-18:45 at the LMU University Library.</li>
+ 
+                </ul>
+                </p>
+            </div>
+            <div class ="header-logo">
+                <img class="logo-img" src ="images/rse.png">
+            </div>
+        </div>
+        <hr>
+        <div class="get-involved">
+            <h2 class="section-title">Get Involved</h2>
+            <p class="involved-text">
+            For questions regarding the group, feel free to contact, for example:    
+            <ul class="contact-list">
+                <li class="contact-item" ><a href="https://www.mpdl.mpg.de/en/about-us/team.html">Larissa Leiminger</a>, MPDL</li>
+                <li class="contact-item" ><a href="https://www.ub.uni-muenchen.de/ueber-die-ub/kontakt/personen/spenger/index.html">Martin Spenger</a>, LMU</li>
+                <li class="contact-item" ><a href="https://www.cs.cit.tum.de/en/sccs/people/gerasimos-chourdakis/">Gerasimos Chourdakis</a>, Univ. Stuttgart / TUM</li>
+            </ul>
+            We organize ourselves mainly over the mailing list and a matrix channel. Definitely join us there to learn about upcoming events and other activities.
+            </p>
+            <div class="involved-links">
+                <div class="first-button"><a href="https://matrix.to/#/#derse-chapter-muc:gitter.im"><img src="images/idgGdCNeTC_logos-removebg-preview.png" style="height:35px;">RSE matrix</a></div>
+                <div class="second-button"><a href="https://lists.lrz.de/mailman/listinfo/rse" > <i class="bi bi-box-arrow-up-right"></i> Newsletter</a></div>
+            </div>
+        </div>
+
+    </div>
+
+
+</head>
+
+```

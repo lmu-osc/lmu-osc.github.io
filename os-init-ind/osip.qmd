@@ -1,0 +1,55 @@
+---
+title: ""
+page-layout: full
+---
+
+```{=html}
+<head>
+    <div class="header">
+        <div class ="header-title">
+                <p class = "title-first">LMU</<p>
+                <p class = "title-last">Open Science Initiative in Psychology</p>
+
+        </div>
+        <div class="about">
+            <div class="about-text">
+                <p>
+                The LMU Open Science Initiative in Psychology (OSIP) aims to promote Open Science at the Department Psychology and beyond by monitoring international developments, organizing workshops, adapting hiring policies and channeling the discussion about standards of research quality and transparency. Currently it consists of 40 members including every research unit of the department and all status groups from students to full professors. Together with the LMU Open Science Center its goal is to improve scientific practices and reproducibility in psychological research at LMU and beyond.
+                
+                <br>
+                More information is available on the initiative’s <a href="https://osf.io/mgwk8/" target = "_blank">OSF project<i class="bi bi-box-arrow-up-right" style="font-size:14px;"></i></a>, which also provides educational resources, workshop slides, andconsent form templates.
+                </p>
+            </div>
+            <div class ="header-logo">
+                <img class="logo-img" src ="images/osip.png" style="height:150px;">
+            </div>
+        </div>
+        <div class = "header-note">
+            <div class = "note-logo">
+                <i class="bi bi-info-circle"></i>
+            </div>
+            <div class = "note-text"> 
+                <i>OSIP was active from July 2015 to July 2024. Any interested parties wanting support to revive it or support for a one-of event can contact the LMU Open Science Center coordinator, <a href = "mailto:malika.ihle@lmu.de" class = "note-contact">Dr. Malika Ihle</a></i>
+            </div>
+
+        </div>
+
+        <hr>
+        <div class="get-involved">
+            <h2 class="section-title">Get Involved</h2>
+            <p class="involved-text">
+            If you are a member of the psychology  department and want to join the initiative, do not hesitate to contact us. We gladly welcome all psychologists interested in making research at our department more transparent.
+            </p>
+            <div class="involved-links">
+                <div class="first-button"><a href="mailto:osip@psy.lmu.de" ><i class="bi bi-envelope"></i> OSIP team</a></div>
+                <div class="second-button"><a href="https://lists.lrz.de/mailman/listinfo/osip" > <i class="bi bi-box-arrow-up-right"></i> Newsletter</a></div>
+            </div>
+        </div>
+
+    </div>
+
+
+</head>
+
+
+```
