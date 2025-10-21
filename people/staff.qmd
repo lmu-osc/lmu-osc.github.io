@@ -1,0 +1,16 @@
+---
+title: "Staff"
+listing:
+  - id: staff
+    contents: 
+      - people
+    template: listings/management-listing.ejs
+    sort: "display_weight asc"
+    include: 
+      membertype: "staff"
+
+---
+
+::: {#staff}
+:::
+

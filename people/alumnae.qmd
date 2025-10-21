@@ -1,0 +1,14 @@
+---
+title: "Alumnae"
+listing:
+  - id: alumnae
+    contents: 
+      - people
+    template: listings/general-listing.ejs
+    sort: "display_weight asc"
+    include: 
+      membertype: "alumni"
+---
+
+::: {#alumnae}
+:::
