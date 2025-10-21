@@ -1,120 +1,118 @@
 
-```{=html}
 <div class = "content-wrapper">
-  <div class="card-grid list">
-    <% for (const item of items) { %>
-      <div class="card" <%= metadataAttrs(item) %>>
-        <a href="<%- item.path %>" class="card-link">
-          <div class="card-content-wrapper">
+<div class="card-grid list">
+<% for (const item of items) { %>
+<div class="card" <%= metadataAttrs(item) %>>
+<a href="<%- item.path %>" class="card-link">
+<div class="card-content-wrapper">
 
-            <div class="event-category listing-categories">
-              <%- (item.categories?.[0] || 'EVENT').toUpperCase() %>
-            </div>
-
-            <div class="card-metadata">
-              <div class="event-date listing-date">
-                <% 
-                  const startDate = new Date(item.date);
-                  const startDay = startDate.getDate();
-                  const startMonth = startDate.toLocaleString('en-GB', { month: 'short' });
-                  const startYear = startDate.getFullYear();
-                  
-                  let dateDisplay = '';
-              
-                  if (item.end_date && !isNaN(new Date(item.end_date))) {
-                    const endDate = new Date(item.end_date);
-                    const endDay = endDate.getDate();
-                    const endMonth = endDate.toLocaleString('en-GB', { month: 'short' });
-                    const endYear = endDate.getFullYear();
-              
-                    if (startMonth === endMonth && startYear === endYear) {
-                      if (startDay === endDay) {
-                        dateDisplay = `${startDay} ${startMonth}, ${startYear}`;
-                      } else {
-                        dateDisplay = `${startDay}-${endDay} ${startMonth}, ${startYear}`;
-                      }
-                    } else if (startYear === endYear) {
-                      dateDisplay = `${startDay} ${startMonth}-${endDay} ${endMonth}, ${startYear}`;
-                    } else {
-                      dateDisplay = `${startDay} ${startMonth}, ${startYear}-${endDay} ${endMonth}, ${endYear}`;
-                    }
-                  } else {
-                    dateDisplay = `${startDay} ${startMonth}, ${startYear}`;
-                  }
-                %>
-                <%= dateDisplay %>
-              </div>
-              
-
-              <div class="event-time-loc">
-                <div class="event-time listing-time">
-                  <i class="bi bi-clock"></i>
-                  <%- item.time || '' %>
-                </div>
-                <div class="divider"></div>
-                <div class="event-location listing-location">
-                  <i class="bi bi-geo-alt-fill"></i>
-                  <%- item.location || ''%>
-                </div>
-                
-                <div class="divider"></div>
-                <div class="event-form listing-form">
-                    <%
-                      let formIcon = '';
-                      if (item.form?.toLowerCase().includes('in-person')) {
-                        formIcon = '<i class="bi bi-person"></i>';
-                      } else if (item.form?.toLowerCase().includes('hybrid')) {
-                        formIcon = '<i class="bi bi-person-video3"></i>';
-                      } else if (item.form?.toLowerCase().includes('online')) {
-                        formIcon = '<i class="bi bi-laptop"></i>';
-                      }
-                    %>
-                    <%= formIcon %> <%- item.form || '' %>
-                </div>
-                <% if (item['event-lang']) { %>
-                  <div class="divider"></div>
-                  <div class="event-language listing-language">
-                    <i class="bi bi-translate"></i>
-                    <%- (typeof item['event-lang'] === 'string' ? item['event-lang'] : '').toUpperCase() %>
-                  </div>
-                <% } %>
-              </div>
-            </div>
-
-            <div class="title listing-title"><%- item.title %></div>
-            <div class="separator"></div>
-
-            <p class="description listing-description"><%- item.description %></p>
-
-            <div class="footer">
-              <div class="event-host-info-group">
-                <div class="event-host-info">
-                  Hosted by: <%- item.host %>
-                </div>
-                <% if (item.contact && item.contact.name && item.contact.email) { %>
-                <div class="divider"></div>
-                <div class="event-contact-info">
-                  <i class="bi bi-envelope"></i>
-                  <a href="mailto:<%- item.contact.email %>?subject=Regarding <%- item.title %>">
-                    <%- item.contact.name %>
-                  </a>
-                </div>
-                <% } %>
-              </div>
-
-              <div class="read-more-button">
-                <i class="bi bi-arrow-right"></i> 
-              </div>
-              
-            </div>
-
-              
-
-          </div>
-        </a>
-      </div>
-    <% } %>
-  </div>
+<div class="event-category listing-categories">
+<%- (item.categories?.[0] || 'EVENT').toUpperCase() %>
 </div>
 
-```
+<div class="card-metadata">
+<div class="event-date listing-date">
+<% 
+const startDate = new Date(item.date);
+const startDay = startDate.getDate();
+const startMonth = startDate.toLocaleString('en-GB', { month: 'short' });
+const startYear = startDate.getFullYear();
+
+let dateDisplay = '';
+
+if (item.end_date && !isNaN(new Date(item.end_date))) {
+const endDate = new Date(item.end_date);
+const endDay = endDate.getDate();
+const endMonth = endDate.toLocaleString('en-GB', { month: 'short' });
+const endYear = endDate.getFullYear();
+
+if (startMonth === endMonth && startYear === endYear) {
+if (startDay === endDay) {
+dateDisplay = `${startDay} ${startMonth}, ${startYear}`;
+} else {
+dateDisplay = `${startDay}-${endDay} ${startMonth}, ${startYear}`;
+}
+} else if (startYear === endYear) {
+dateDisplay = `${startDay} ${startMonth}-${endDay} ${endMonth}, ${startYear}`;
+} else {
+dateDisplay = `${startDay} ${startMonth}, ${startYear}-${endDay} ${endMonth}, ${endYear}`;
+}
+} else {
+dateDisplay = `${startDay} ${startMonth}, ${startYear}`;
+}
+%>
+<%= dateDisplay %>
+</div>
+
+
+<div class="event-time-loc">
+<div class="event-time listing-time">
+<i class="bi bi-clock"></i>
+<%- item.time || '' %>
+</div>
+<div class="divider"></div>
+<div class="event-location listing-location">
+<i class="bi bi-geo-alt-fill"></i>
+<%- item.location || ''%>
+</div>
+
+<div class="divider"></div>
+<div class="event-form listing-form">
+<%
+let formIcon = '';
+if (item.form?.toLowerCase().includes('in-person')) {
+formIcon = '<i class="bi bi-person"></i>';
+} else if (item.form?.toLowerCase().includes('hybrid')) {
+formIcon = '<i class="bi bi-person-video3"></i>';
+} else if (item.form?.toLowerCase().includes('online')) {
+formIcon = '<i class="bi bi-laptop"></i>';
+}
+%>
+<%= formIcon %> <%- item.form || '' %>
+</div>
+<% if (item['event-lang']) { %>
+<div class="divider"></div>
+<div class="event-language listing-language">
+<i class="bi bi-translate"></i>
+<%- (typeof item['event-lang'] === 'string' ? item['event-lang'] : '').toUpperCase() %>
+</div>
+<% } %>
+</div>
+</div>
+
+<div class="title listing-title"><%- item.title %></div>
+<div class="separator"></div>
+
+<p class="description listing-description"><%- item.description %></p>
+
+<div class="footer">
+<div class="event-host-info-group">
+<div class="event-host-info">
+Hosted by: <%- item.host %>
+</div>
+<% if (item.contact && item.contact.name && item.contact.email) { %>
+<div class="divider"></div>
+<div class="event-contact-info">
+<i class="bi bi-envelope"></i>
+<a href="mailto:<%- item.contact.email %>?subject=Regarding <%- item.title %>">
+<%- item.contact.name %>
+</a>
+</div>
+<% } %>
+</div>
+
+<div class="read-more-button">
+<i class="bi bi-arrow-right"></i> 
+</div>
+
+</div>
+
+
+
+</div>
+</a>
+</div>
+<% } %>
+</div>
+</div>
+
