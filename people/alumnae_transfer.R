@@ -43,7 +43,7 @@ quarto_page <- alumni_table %>%
       "surname: {Surname}\n",
       "first_name: {First_name}\n",
       "position: {Position}\n",
-      "faculty: {Faculty}\n",
+      "faculty: ''\n",
       "membertype: ['alumni']\n",
       "email: {email}\n"
     )
