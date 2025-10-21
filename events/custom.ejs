@@ -1,7 +1,29 @@
-
-<div class = "content-wrapper">
+<div class="content-wrapper">
 <div class="card-grid list">
-<% for (const item of items) { %>
+<% 
+const today = new Date();
+today.setHours(0, 0, 0, 0); // normalize to midnight
+
+const parseEventDate = (dateStr) => {
+if (!dateStr) return null;
+// Expected format: "19 Sep, 2025"
+const parts = dateStr.replace(',', '').split(' ');
+if (parts.length !== 3) return new Date(dateStr); // fallback
+const [day, monthStr, year] = parts;
+const month = new Date(`${monthStr} 1, 2000`).getMonth();
+return new Date(year, month, parseInt(day));
+};
+
+// Filter to include only future or ongoing events
+const futureItems = items.filter(item => {
+const startDate = parseEventDate(item.date);
+const endDate = item.end_date ? parseEventDate(item.end_date) : startDate;
+if (!startDate) return false;
+return endDate >= today; // show events happening today or later
+});
+
+for (const item of futureItems) { 
+%>
 <div class="card" <%= metadataAttrs(item) %>>
 <a href="<%- item.path %>" class="card-link">
 <div class="card-content-wrapper">
@@ -44,7 +66,6 @@ dateDisplay = `${startDay} ${startMonth}, ${startYear}`;
 <%= dateDisplay %>
 </div>
 
-
 <div class="event-time-loc">
 <div class="event-time listing-time">
 <i class="bi bi-clock"></i>
@@ -53,7 +74,7 @@ dateDisplay = `${startDay} ${startMonth}, ${startYear}`;
 <div class="divider"></div>
 <div class="event-location listing-location">
 <i class="bi bi-geo-alt-fill"></i>
-<%- item.location || ''%>
+<%- item.location || '' %>
 </div>
 
 <div class="divider"></div>
@@ -104,10 +125,7 @@ Hosted by: <%- item.host %>
 <div class="read-more-button">
 <i class="bi bi-arrow-right"></i> 
 </div>
-
 </div>
-
-
 
 </div>
 </a>
@@ -115,4 +133,5 @@ Hosted by: <%- item.host %>
 <% } %>
 </div>
 </div>
+
 
