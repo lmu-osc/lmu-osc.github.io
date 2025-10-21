@@ -1,0 +1,55 @@
+---
+title: Maximilian Frank
+academic_title: MSc
+name: Maximilian Frank
+surname: Frank
+first_name: Maximilian
+position: PhD Candidate
+faculty: Psychology & Education
+membertype: ['fellow']
+photo: NULL
+email: maximilian.frank@psy.lmu.de
+website:
+  - label: 'Website 1'
+    url: https://www.meta-rep.uni-muenchen.de/people/team_heene/index.html
+social_media:
+  ORCID: 'https://orcid.org/0000-0000-0000-0000'
+mission_statement:
+  - My name is Maximilian Frank and I am a doctoral candidate at the Ludwig-Maximilians-University of Munich in the DFG priority program "META-REP" and conduct research on heterogeneity estimations in meta-analyses. Back the time of my psychology studies, I was lucky to be assigned to emprical course (EmPra) in which we conducted a replication of an existing study. This was my first point of contact with the topic replication crisis and the many proposals for reforming science that can be summarized under the term "Open Science". Since then, the topic has stuck with me and I have consequently become involved in several Open Science initiatives. Personally, in addition to a transparent and reproducible work process in my own research, I am engaged in teaching Open Science practices to students and early career researchers. They are the scientists of the future, which is why we owe them a state-of-the-art education which covers these important topics to benefit science as a whole.
+---
+{{< include templates/_setup.qmd >}}
+{{< include templates/_contact_items.qmd >}}
+{{< include templates/_social_links.qmd >}}
+{{< include templates/_mission_statement.qmd >}}
+{{< include templates/_research_interests.qmd >}}
+{{< include templates/_selected_publications.qmd >}}
+
+
+
+```{r}
+#| echo: false
+
+# Compose the full profile
+profile <- div(class = "people-profile",
+  div(class = "people-header",
+    div(class = "people-photo",
+      img(src = photo)
+    ),
+    div(class = "people-info",
+      p(class = "people-position", position),
+      p(class = "people-faculty", paste0("Faculty of ", faculty)),
+      div(class = "people-contact", contact_items, social_links)
+    )
+  ),
+  mission_block,
+  # custom content would most likely go here, right after the mission_block
+  div(class = "people-content",
+    interests_block,
+    publications_block
+  )
+)
+
+# Render the profile
+browsable(profile)  
+```
+

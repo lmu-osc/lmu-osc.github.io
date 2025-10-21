@@ -1,0 +1,56 @@
+---
+title: Julian Lange
+academic_title: MSc
+name: Julian Lange
+surname: Lange
+first_name: Julian
+position: PhD Candidate
+faculty: Medicine
+membertype: ['fellow']
+photo: NULL
+email: julian.lange@ibe.med.uni-muenchen.de
+website:
+  - label: 'Website 1'
+    url: https://www.en.ibe.med.uni-muenchen.de/mitarbeiter/mitarbeiter/julian-lange/index.html
+social_media:
+  ORCID: 'https://orcid.org/0000-0000-0000-0000'
+mission_statement:
+  - I am a PhD student in statistics at the Institute for Medical Information Processing, Biometry, and Epidemiology (IBE) as part of the Munich Center for Machine Learning (MCML). My research interests include meta-scientific issues within the fields of statistics and machine learning, such as researcher degrees of freedom and questionable research practices in method comparison studies. In this context, I am examining how preregistration and related ideas could be adopted from applied disciplines to improve the transparency and credibility of computational methodological research.
+  - I am also a co-organizer of the ReproducibiliTea journal club, where we discuss and promote Open Science, reproducibility, and related topics.
+---
+{{< include templates/_setup.qmd >}}
+{{< include templates/_contact_items.qmd >}}
+{{< include templates/_social_links.qmd >}}
+{{< include templates/_mission_statement.qmd >}}
+{{< include templates/_research_interests.qmd >}}
+{{< include templates/_selected_publications.qmd >}}
+
+
+
+```{r}
+#| echo: false
+
+# Compose the full profile
+profile <- div(class = "people-profile",
+  div(class = "people-header",
+    div(class = "people-photo",
+      img(src = photo)
+    ),
+    div(class = "people-info",
+      p(class = "people-position", position),
+      p(class = "people-faculty", paste0("Faculty of ", faculty)),
+      div(class = "people-contact", contact_items, social_links)
+    )
+  ),
+  mission_block,
+  # custom content would most likely go here, right after the mission_block
+  div(class = "people-content",
+    interests_block,
+    publications_block
+  )
+)
+
+# Render the profile
+browsable(profile)  
+```
+
