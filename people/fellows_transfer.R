@@ -172,7 +172,8 @@ pmap(list(quarto_page, fellows_table$First_name, fellows_table$Surname), ~{
     str_replace_all("ä", "ae") %>%
     str_replace_all("ö", "oe") %>%
     str_replace_all("ü", "ue") %>%
-    str_replace_all("ß", "ss")
+    str_replace_all("ß", "ss") %>%
+    stringi::stri_trans_general("Latin-ASCII")
 
   
   writeLines(..1, file_name)
