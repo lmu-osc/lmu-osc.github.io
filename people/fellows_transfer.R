@@ -7,11 +7,10 @@ library(purrr)
 library(magrittr)
 
 
-fellows_raw_url <- "https://raw.githubusercontent.com/lmu-osc/osc-website-transfer/refs/heads/main/fellow_members.csv?token=GHSAT0AAAAAADNSJCJN27JINPKVSEU3HAME2HXHRYQ"
+fellows_raw_url <- "https://raw.githubusercontent.com/lmu-osc/osc-website-transfer/refs/heads/main/fellow_members.csv?token=GHSAT0AAAAAADNSJCJM2J2Y2IVCMODKVVSS2HXJ3QQ"
 
 fellows_table <- read_csv(fellows_raw_url) %>%
   mutate(email = str_remove(email, "mailto:")) %>%
-  tidyr::separate('Surname, First name', into = c('surname', 'first_name'), sep = ', ') %>%
   mutate(description_section_2 = if_else(
     description_section_1 != "<em><strong>Mission Statement:</strong></em>",
     description_section_1,
@@ -21,10 +20,10 @@ fellows_table <- read_csv(fellows_raw_url) %>%
 
 fellows_table %<>%
   mutate(
-    Position = if_else(first_name == "Maximilian" & surname == "Kristen",
+    Position = if_else(First_name == "Maximilian" & Surname == "Kristen",
                        "MSc Student",
                        Position),
-    Position = if_else(first_name == "Leonhard" & surname == "Schramm",
+    Position = if_else(First_name == "Leonhard" & Surname == "Schramm",
                        "MSc Student",
                        Position),
     Position = if_else(str_detect(Position, "PhD"),
@@ -45,27 +44,34 @@ template_body[64:99] %>%
   paste(collapse = "\n")
 
 
-temp <- fellows_table %>%
-  select(surname, first_name, Title, Position, Faculty, Department, email,
-         matches("website"), matches("description")) %>%
-  pmap(function(surname, first_name, Title, Position, Faculty, Department, email,
+quarto_page <- fellows_table %>%
+  select(Surname, First_name, Title, Position, Faculty, Department, email,
+         matches("website"), matches("description"), new_image_name) %>%
+  pmap(function(Surname, First_name, Title, Position, Faculty, Department, email,
                 website_1, website_2, description_section_1, description_section_2,
-                description_section_3, description_section_4, description_section_5) {
+                description_section_3, description_section_4, description_section_5,
+                new_image_name) {
   
   
   yaml <- glue::glue(
     "---\n",
-    "title: {first_name} {surname}\n",
+    "title: {First_name} {Surname}\n",
     "academic_title: {Title}\n",
-    "name: {first_name} {surname}\n",
-    "surname: {surname}\n",
-    "first_name: {first_name}\n",
+    "name: {First_name} {Surname}\n",
+    "surname: {Surname}\n",
+    "first_name: {First_name}\n",
     "position: {Position}\n",
     "faculty: {Faculty}\n",
     "membertype: ['fellow']\n",
-    "photo: NULL\n",
     "email: {email}\n"
   )
+  
+  if (!is.na(new_image_name)) {
+    yaml <- glue::glue(
+      yaml, "\n",
+      "photo: 'images/{new_image_name}'\n"
+    )
+  }
   
   if (!is.na(website_1)) {
     yaml <- glue::glue(
@@ -136,7 +142,7 @@ temp <- fellows_table %>%
 
 
 
-# temp[[1]] %>%
+# quarto_page[[1]] %>%
 #   writeLines("./people/people/00003_example_fellow.qmd")
 # 
 # 
@@ -150,7 +156,7 @@ temp <- fellows_table %>%
 
 
 
-pmap(list(temp, fellows_table$first_name, fellows_table$surname), ~{
+pmap(list(quarto_page, fellows_table$First_name, fellows_table$Surname), ~{
   
   current_max_id <- list.files("./people/people") %>%
     grep("^\\d{5}_", ., value = TRUE) %>%
