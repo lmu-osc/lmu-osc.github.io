@@ -2,6 +2,7 @@
 title: "LMU OSC Events"
 css: styles.css
 listing:
+  - id: upcoming-events
     template: custom.ejs
     contents: events
     sort-ui: [title, date]
@@ -18,5 +19,8 @@ repo-actions: false
 
 ## Upcoming Events
 
-::: {#events}
+::: {#upcoming-events}
 :::
+
+
+## Past Events
