@@ -1,8 +1,9 @@
 ---
-title: "Upcoming Events"
+title: "LMU OSC Events"
+css: styles.css
 listing:
     template: custom.ejs
-    contents: events.yml
+    contents: events
     sort-ui: [title, date]
     sort: "date desc"
     filter-ui: true
@@ -13,3 +14,7 @@ title-block-banner: "#2b864b"
 ---
 
 
+## Upcoming Events
+
+::: {#events}
+:::
