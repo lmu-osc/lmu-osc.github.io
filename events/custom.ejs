@@ -1,28 +1,61 @@
 <div class="content-wrapper">
 <div class="card-grid list">
 <% 
+// --- Helpers: normalize and parse dates safely ---
 const today = new Date();
-today.setHours(0, 0, 0, 0); // normalize to midnight
+today.setHours(0, 0, 0, 0); // midnight for comparisons
 
+// Robust parser for "19 Sep, 2025" (and similar)
 const parseEventDate = (dateStr) => {
 if (!dateStr) return null;
-// Expected format: "19 Sep, 2025"
-const parts = dateStr.replace(',', '').split(' ');
-if (parts.length !== 3) return new Date(dateStr); // fallback
-const [day, monthStr, year] = parts;
-const month = new Date(`${monthStr} 1, 2000`).getMonth();
-return new Date(year, month, parseInt(day));
+const cleaned = String(dateStr).replace(',', '').trim();
+const parts = cleaned.split(/\s+/);
+
+// Try the expected pattern "19 Sep 2025" or "19 Sep, 2025"
+if (parts.length >= 3) {
+const day = parseInt(parts[0], 10);
+const monthStr = parts[1].toLowerCase().slice(0, 3);
+const year = parseInt(parts[2], 10);
+const months = ['jan','feb','mar','apr','may','jun','jul','aug','sep','oct','nov','dec'];
+const monthIndex = months.indexOf(monthStr);
+if (!isNaN(day) && monthIndex !== -1 && !isNaN(year)) {
+return new Date(year, monthIndex, day);
+}
+}
+
+// Fallback to Date constructor; return null if invalid
+const fallback = new Date(dateStr);
+return isNaN(fallback.getTime()) ? null : fallback;
 };
 
-// Filter to include only future or ongoing events
-const futureItems = items.filter(item => {
+const normalizeToMidnight = (d) => {
+if (!d) return null;
+const copy = new Date(d.getTime());
+copy.setHours(0, 0, 0, 0);
+return copy;
+};
+
+// --- Filtering logic ---
+const futureItems = (items || []).filter(item => {
+// item.date is guaranteed to exist per your statement
 const startDate = parseEventDate(item.date);
-const endDate = item.end_date ? parseEventDate(item.end_date) : startDate;
-if (!startDate) return false;
-return endDate >= today; // show events happening today or later
+if (!startDate) return false; // skip malformed start date
+
+const endDate = item.end_date ? parseEventDate(item.end_date) : null;
+
+// Use endDate for comparison when it exists and is valid; otherwise use startDate
+const comparisonDate = endDate ? endDate : startDate;
+
+const cmp = normalizeToMidnight(comparisonDate);
+if (!cmp) return false;
+
+return cmp >= today;
 });
 
-for (const item of futureItems) { 
+// (Optional) If you want the soonest events first, uncomment the next line:
+// futureItems.sort((a,b) => parseEventDate(a.date) - parseEventDate(b.date));
+
+for (const item of futureItems) {
 %>
 <div class="card" <%= metadataAttrs(item) %>>
 <a href="<%- item.path %>" class="card-link">
@@ -35,15 +68,17 @@ for (const item of futureItems) {
 <div class="card-metadata">
 <div class="event-date listing-date">
 <% 
-const startDate = new Date(item.date);
-const startDay = startDate.getDate();
-const startMonth = startDate.toLocaleString('en-GB', { month: 'short' });
-const startYear = startDate.getFullYear();
+// Use the same parser for display to keep things consistent
+const startDate = parseEventDate(item.date);
+const startDay = startDate ? startDate.getDate() : '';
+const startMonth = startDate ? startDate.toLocaleString('en-GB', { month: 'short' }) : '';
+const startYear = startDate ? startDate.getFullYear() : '';
 
 let dateDisplay = '';
 
-if (item.end_date && !isNaN(new Date(item.end_date))) {
-const endDate = new Date(item.end_date);
+if (item.end_date) {
+const endDate = parseEventDate(item.end_date);
+if (endDate) {
 const endDay = endDate.getDate();
 const endMonth = endDate.toLocaleString('en-GB', { month: 'short' });
 const endYear = endDate.getFullYear();
@@ -58,6 +93,10 @@ dateDisplay = `${startDay}-${endDay} ${startMonth}, ${startYear}`;
 dateDisplay = `${startDay} ${startMonth}-${endDay} ${endMonth}, ${startYear}`;
 } else {
 dateDisplay = `${startDay} ${startMonth}, ${startYear}-${endDay} ${endMonth}, ${endYear}`;
+}
+} else {
+// end_date provided but invalid -> show start date only
+dateDisplay = `${startDay} ${startMonth}, ${startYear}`;
 }
 } else {
 dateDisplay = `${startDay} ${startMonth}, ${startYear}`;
@@ -91,6 +130,7 @@ formIcon = '<i class="bi bi-laptop"></i>';
 %>
 <%= formIcon %> <%- item.form || '' %>
 </div>
+
 <% if (item['event-lang']) { %>
 <div class="divider"></div>
 <div class="event-language listing-language">
@@ -133,5 +173,7 @@ Hosted by: <%- item.host %>
 <% } %>
 </div>
 </div>
+
+
 
 
