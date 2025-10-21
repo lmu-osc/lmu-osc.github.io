@@ -1,0 +1,56 @@
+---
+title: Rusche Saskia
+academic_title: Dr.
+name: Rusche Saskia
+surname: Saskia
+first_name: Rusche
+position: Researcher
+faculty: Medicine
+membertype: ['lmu-individual']
+email: sarstedt@lmu.de
+photo: 'images/saskia_rusche.png'
+website:
+  - label: 'Website 1'
+    url: https://www.en.marketing.bwl.uni-muenchen.de/team/professoren/prof_-dr_-marko-sarstedt/index.html
+social_media:
+  ORCID: 'https://orcid.org/0000-0000-0000-0000'
+mission_statement:
+  - <em><strong>Mission Statement:</strong></em>
+  - I’m a professor of marketing at the LMU Munich School of Management. While my main research interest is in the advancement of research methods to further the understanding of consumer behavior, I have gained interest in transferring principles of metrology—measurement science in the physical sciences—into the social sciences in an effort to improve replicability.
+---
+{{< include templates/_setup.qmd >}}
+{{< include templates/_contact_items.qmd >}}
+{{< include templates/_social_links.qmd >}}
+{{< include templates/_mission_statement.qmd >}}
+{{< include templates/_research_interests.qmd >}}
+{{< include templates/_selected_publications.qmd >}}
+
+
+
+```{r}
+#| echo: false
+
+# Compose the full profile
+profile <- div(class = "people-profile",
+  div(class = "people-header",
+    div(class = "people-photo",
+      img(src = photo)
+    ),
+    div(class = "people-info",
+      p(class = "people-position", position),
+      p(class = "people-faculty", paste0("Faculty of ", faculty)),
+      div(class = "people-contact", contact_items, social_links)
+    )
+  ),
+  mission_block,
+  # custom content would most likely go here, right after the mission_block
+  div(class = "people-content",
+    interests_block,
+    publications_block
+  )
+)
+
+# Render the profile
+browsable(profile)  
+```
+

@@ -1,0 +1,59 @@
+---
+title: Enrico Schulz
+academic_title: Dr.
+name: Enrico Schulz
+surname: Schulz
+first_name: Enrico
+position: Researcher
+faculty: University hospital
+membertype: ['lmu-individual']
+email: es@pain.sc
+photo: 'images/schulz_enrico.jpg'
+website:
+  - label: 'Website 1'
+    url: https://www.mcn.uni-muenchen.de/members/associate/schulz/index.html
+  - label: 'Website 2'
+    url: http://www.pain.sc
+social_media:
+  ORCID: 'https://orcid.org/0000-0000-0000-0000'
+mission_statement:
+  - <em><strong></strong></em><em><strong>Mission Statement:</strong></em>
+  - I am a Principle Investigator at the Department of Neurology in Klinikum Großhadern. My primary research interest is in how pain is processed in the human brain.
+  - I have observed that not all study participants exhibited the effects that are reported in group statistics, indicating that results reported in publications are highly dependent on the study sample. In my experience results have been withheld because they were not in line with previously published findings.<br>Therefore I am planning to make my data and my code publicly available.
+---
+{{< include templates/_setup.qmd >}}
+{{< include templates/_contact_items.qmd >}}
+{{< include templates/_social_links.qmd >}}
+{{< include templates/_mission_statement.qmd >}}
+{{< include templates/_research_interests.qmd >}}
+{{< include templates/_selected_publications.qmd >}}
+
+
+
+```{r}
+#| echo: false
+
+# Compose the full profile
+profile <- div(class = "people-profile",
+  div(class = "people-header",
+    div(class = "people-photo",
+      img(src = photo)
+    ),
+    div(class = "people-info",
+      p(class = "people-position", position),
+      p(class = "people-faculty", paste0("Faculty of ", faculty)),
+      div(class = "people-contact", contact_items, social_links)
+    )
+  ),
+  mission_block,
+  # custom content would most likely go here, right after the mission_block
+  div(class = "people-content",
+    interests_block,
+    publications_block
+  )
+)
+
+# Render the profile
+browsable(profile)  
+```
+

@@ -1,0 +1,57 @@
+---
+title: Niels Dingemanse
+academic_title: Prof. Dr.
+name: Niels Dingemanse
+surname: Dingemanse
+first_name: Niels
+position: Chair
+faculty: Biology
+membertype: ['lmu-individual']
+email: n.dingemanse@lmu.de
+photo: 'images/dingemanse_niels.jpeg'
+website:
+  - label: 'Website 1'
+    url: https://www.behavioural-ecology.bio.lmu.de/people/professor/dingemanse/index.html
+social_media:
+  ORCID: 'https://orcid.org/0000-0000-0000-0000'
+mission_statement:
+  - <em><strong>Mission Statement:</strong></em>
+  - I am professor for Behavioural Ecology at the Faculty of Biology
+  - I specialize on biodiversity in the broad sense, with a focus on understanding patterns of variation (among genotypes, individuals) within single populations, particularly in the context of behaviour. Much of our work is starting to involve large-scale collaborations to perform study replications to understand whether study-specific results are generally applicable, for example through the SPI-Birds Network. Open and reproducible science are important for making such enterprises successful. My work also involves developing and teaching complex statistics, particularly mixed-model analyses. I am have many years of editorial experience for high-quality journals, and because of such experiences am convinced we need to move our community to conduct transparent, reproducible, and open science.
+---
+{{< include templates/_setup.qmd >}}
+{{< include templates/_contact_items.qmd >}}
+{{< include templates/_social_links.qmd >}}
+{{< include templates/_mission_statement.qmd >}}
+{{< include templates/_research_interests.qmd >}}
+{{< include templates/_selected_publications.qmd >}}
+
+
+
+```{r}
+#| echo: false
+
+# Compose the full profile
+profile <- div(class = "people-profile",
+  div(class = "people-header",
+    div(class = "people-photo",
+      img(src = photo)
+    ),
+    div(class = "people-info",
+      p(class = "people-position", position),
+      p(class = "people-faculty", paste0("Faculty of ", faculty)),
+      div(class = "people-contact", contact_items, social_links)
+    )
+  ),
+  mission_block,
+  # custom content would most likely go here, right after the mission_block
+  div(class = "people-content",
+    interests_block,
+    publications_block
+  )
+)
+
+# Render the profile
+browsable(profile)  
+```
+

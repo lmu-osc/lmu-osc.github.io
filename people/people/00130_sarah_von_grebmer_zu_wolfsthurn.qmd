@@ -1,0 +1,56 @@
+---
+title: Sarah von Grebmer zu Wolfsthurn
+academic_title: Dr.
+name: Sarah von Grebmer zu Wolfsthurn
+surname: von Grebmer zu Wolfsthurn
+first_name: Sarah
+position: Research Support
+faculty: NA
+membertype: ['lmu-individual']
+email: NA
+photo: 'images/von_grebmer_zu_wolfsthurn_sarah.jpg'
+social_media:
+  ORCID: 'https://orcid.org/0000-0000-0000-0000'
+mission_statement:
+  - Sarah von Grebmer zu Wolfsthurn is one of the two Open Science coordinators at the LMU Open Science Centre (OSC). She coordinates the “Train-the-trainer” programme. She is involved in:
+  # - Before her work at the LMU Open Science Centre, Sarah was a Marie Skłodowska-Curie PhD Fellow within the <a href="https://research-and-innovation.ec.europa.eu/funding/funding-opportunities/funding-programmes-and-open-calls/horizon-2020_en" target="_blank">Horizon2020</a> programme at Leiden University (NL). She has a PhD in Cognitive Psychology and Neurolinguistics and was a lecturer in experimental methods and psycho- and neurolinguistics during and after her PhD at Leiden University.
+  # - Please get in touch with Sarah at <a class="g-link-mail" href="mailto:s.grebmer@lmu.de" title="Send email to: s.grebmer@lmu.de">s.grebmer@lmu.de</a> if you have any questions, thoughts or ideas connected to her role or Open Science at LMU 
+  # - <strong>Links:</strong><br>BlueSky: @sarahvongrebmer.bsky.social<br>LinkedIn: <a href="http://www.linkedin.com/in/svongrebmer">www.linkedin.com/in/svongrebmer</a>
+  # - <strong>Contact:</strong><br>Email: <a class="g-link-mail" href="mailto:s.grebmer@lmu.de" title="Send email to: s.grebmer@lmu.de">s.grebmer@lmu.de</a><br>Phone: +49 89 2180 5872<br>In-person working days: Tuesdays and Wednesdays
+---
+{{< include templates/_setup.qmd >}}
+{{< include templates/_contact_items.qmd >}}
+{{< include templates/_social_links.qmd >}}
+{{< include templates/_mission_statement.qmd >}}
+{{< include templates/_research_interests.qmd >}}
+{{< include templates/_selected_publications.qmd >}}
+
+
+
+```{r}
+#| echo: false
+
+# Compose the full profile
+profile <- div(class = "people-profile",
+  div(class = "people-header",
+    div(class = "people-photo",
+      img(src = photo)
+    ),
+    div(class = "people-info",
+      p(class = "people-position", position),
+      p(class = "people-faculty", paste0("Faculty of ", faculty)),
+      div(class = "people-contact", contact_items, social_links)
+    )
+  ),
+  mission_block,
+  # custom content would most likely go here, right after the mission_block
+  div(class = "people-content",
+    interests_block,
+    publications_block
+  )
+)
+
+# Render the profile
+browsable(profile)  
+```
+

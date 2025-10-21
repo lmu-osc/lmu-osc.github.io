@@ -1,0 +1,56 @@
+---
+title: Reka Kugyelka
+academic_title: Dr.
+name: Reka Kugyelka
+surname: Kugyelka
+first_name: Reka
+position: Researcher
+faculty: University hospital
+membertype: ['lmu-individual']
+email: anna.kuempel@ifkw.lmu.de
+photo: 'images/kugyelka_reka.jpg'
+website:
+  - label: 'Website 1'
+    url: https://anna-kuempel.de/
+social_media:
+  ORCID: 'https://orcid.org/0000-0000-0000-0000'
+mission_statement:
+  - <em><strong>Mission Statement:</strong></em>
+  - I am a Professor of Communication at the Department of Media and Communication. My field faces many of the same challenges seen in other disciplines, such as low replicability and declining trust in research findings. I firmly believe that adopting Open Science (OS) practices is a vital step towards addressing these issues. To this end, I actively adhere to and promote OS principles, continuously exploring ways to enhance transparency and accessibility in my (and our) research.<br><br>As a co-author of the paper <em><a href="https://academic.oup.com/joc/article/71/1/1/5803422">An Agenda for Open Science in Communication</a></em>, I have contributed to identifying key strategies and recommendations to advance OS within the communication discipline. Moreover, as an advocate of mixed methods research, I emphasize the importance of considering both quantitative and qualitative research designs when thinking about and developing OS practices.
+---
+{{< include templates/_setup.qmd >}}
+{{< include templates/_contact_items.qmd >}}
+{{< include templates/_social_links.qmd >}}
+{{< include templates/_mission_statement.qmd >}}
+{{< include templates/_research_interests.qmd >}}
+{{< include templates/_selected_publications.qmd >}}
+
+
+
+```{r}
+#| echo: false
+
+# Compose the full profile
+profile <- div(class = "people-profile",
+  div(class = "people-header",
+    div(class = "people-photo",
+      img(src = photo)
+    ),
+    div(class = "people-info",
+      p(class = "people-position", position),
+      p(class = "people-faculty", paste0("Faculty of ", faculty)),
+      div(class = "people-contact", contact_items, social_links)
+    )
+  ),
+  mission_block,
+  # custom content would most likely go here, right after the mission_block
+  div(class = "people-content",
+    interests_block,
+    publications_block
+  )
+)
+
+# Render the profile
+browsable(profile)  
+```
+
