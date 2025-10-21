@@ -15,7 +15,6 @@ website:
 social_media:
   ORCID: 'https://orcid.org/0000-0000-0000-0000'
 mission_statement:
-  - <em><strong>Mission Statement:</strong></em>
   - I am a clinician-scientist specializing in the development of non-invasive brain stimulation interventions for the treatment of mental health disorders. In my field, there are still many reservations and prejudices against open science practices. To address this, I am committed to establishing FAIR data principles and promoting transparent research practices within my working group and collaborations.
 ---
 {{< include templates/_setup.qmd >}}

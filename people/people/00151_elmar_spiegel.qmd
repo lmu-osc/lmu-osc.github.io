@@ -15,7 +15,6 @@ website:
 social_media:
   ORCID: 'https://orcid.org/0000-0000-0000-0000'
 mission_statement:
-  - <em><strong>Mission Statement:</strong></em>
 ---
 {{< include templates/_setup.qmd >}}
 {{< include templates/_contact_items.qmd >}}

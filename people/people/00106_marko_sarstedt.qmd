@@ -15,7 +15,6 @@ website:
 social_media:
   ORCID: 'https://orcid.org/0000-0000-0000-0000'
 mission_statement:
-  - <em><strong>Mission Statement:</strong></em>
   - I am passionate about open science because it advances knowledge and democratizes research. By making scientific data, methodologies, and findings freely accessible to everyone, open science fosters transparency, reproducibility, and collaboration across disciplines and borders. This collaborative approach is essential for producing excellent research, as it brings together diverse perspectives and expertise, accelerating scientific progress and innovation.
 ---
 {{< include templates/_setup.qmd >}}

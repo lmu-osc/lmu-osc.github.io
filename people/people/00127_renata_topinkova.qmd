@@ -15,7 +15,6 @@ website:
 social_media:
   ORCID: 'https://orcid.org/0000-0000-0000-0000'
 mission_statement:
-  - <em><strong>Mission Statement:</strong></em>
   - I believe in democratizing science through the adoption of open-source software, as it opens doors for diverse communities to engage in scientific inquiry and innovation. I'm passionate about teaching R programming, which is also reflected in my role as a The Carpentries instructor.
 ---
 {{< include templates/_setup.qmd >}}

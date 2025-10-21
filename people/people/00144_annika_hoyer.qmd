@@ -15,7 +15,6 @@ website:
 social_media:
   ORCID: 'https://orcid.org/0000-0000-0000-0000'
 mission_statement:
-  - <em><strong>Mission Statement:</strong></em>
   - I am a professor for Biostatistics and Medical Biometry at the University of Bielefeld. My research focuses on meta-analyses, compartment models and their application in medicine where I also want to strengthen replicability and reproducibility. I am also part of the reproducibility team of the Biometrical Journal to support transparency in statistical methodology.
 ---
 {{< include templates/_setup.qmd >}}

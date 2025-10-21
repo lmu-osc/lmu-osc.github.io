@@ -15,7 +15,6 @@ website:
 social_media:
   ORCID: 'https://orcid.org/0000-0000-0000-0000'
 mission_statement:
-  - <em><strong>Mission Statement:</strong></em>
   - My research aims at understanding how genetic and epigenetic mechanisms of gene regulation, such as differential gene expression, DNA methylation or post-translational modifications, influence how animals adapt and react to changing or stressful environments. As research group leader at the faculty of biology, I am training many undergraduate and graduate students. Naturally, undergraduate projects have a high turn-over and I am working towards the implementation of Open Science practices in my own research group allowing for transparent and systematic handling of student projects, e.g. by creating github repositories, providing reproducible code for analyses or training ressources for future students and collaborators.
 ---
 {{< include templates/_setup.qmd >}}

@@ -15,7 +15,6 @@ website:
 social_media:
   ORCID: 'https://orcid.org/0000-0000-0000-0000'
 mission_statement:
-  - <em><strong>Mission Statement:</strong></em>
   - In clinical psychology, Open Science, reproducibility, and replicability may still be improved. Especially sensitive clinical data requires additional steps to guarantee anonymization. I make reproducible analysis code and data available for every publication, see the "<a href="http://www.researchtransparency.org/signatories/">Commitment to Research Transparency and Open Science</a>" .
 ---
 {{< include templates/_setup.qmd >}}

@@ -15,7 +15,6 @@ website:
 social_media:
   ORCID: 'https://orcid.org/0000-0000-0000-0000'
 mission_statement:
-  - <em><strong>Mission Statement:</strong></em>
   - I am a professor of Computational Social Sciences at the Department of Sociology. For computational research, two major challenges related to open science are a) the inability to share data, which is often proprietary and b) complexity of computing environments, which makes it difficult to replicate results across systems. I am interested in research opportunities that can help to address both of these challenges.
 ---
 {{< include templates/_setup.qmd >}}

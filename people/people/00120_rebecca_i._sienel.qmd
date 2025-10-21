@@ -12,7 +12,6 @@ photo: 'images/sienel_rebecca_i..jpg'
 social_media:
   ORCID: 'https://orcid.org/0000-0000-0000-0000'
 mission_statement:
-  - <em><strong>Mission Statement:</strong></em>
   - I believe Open Science is essential for improving transparency and reproducibility, both of which are fundamental to credible and impactful research. I care deeply about making collaboration more efficient, trackable, and inclusive—so that scientific progress becomes easier to share, verify, and build upon. I am particularly interested in helping foster practical approaches to Open Science within research teams and collaborative projects.
 ---
 {{< include templates/_setup.qmd >}}
