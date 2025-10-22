@@ -1,0 +1,27 @@
+.event-detail-cards > .col {
+  flex: 0 0 14rem; 
+  max-width: 14rem;
+}
+.event-detail-cards .card {
+  width: 100%;
+}
+
+.location-text:hover {
+  transform: scale(1.02);
+  color: #06793f;; 
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+
+.btn-pop {
+  transition: transform .15s ease;
+}
+.btn-pop:hover {
+  transform: scale(1.05);
+}
+
+.instructor-links a:hover {
+  color: #0077cc;
+  text-decoration: underline;
+  transition: color 0.2s ease;
+}
