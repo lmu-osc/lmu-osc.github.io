@@ -1,0 +1,26 @@
+---
+title: "LMU OSC Events"
+css: styles.css
+listing:
+  - id: upcoming-events
+    template: custom.ejs
+    contents: events
+    sort-ui: [title, date]
+    sort: "date desc"
+    filter-ui: true
+    page-size: 5
+toc: false
+page-layout: full
+title-block-banner: "#2b864b"
+repo-actions: false
+
+---
+
+
+## Upcoming Events
+
+::: {#upcoming-events}
+:::
+
+
+## Past Events
