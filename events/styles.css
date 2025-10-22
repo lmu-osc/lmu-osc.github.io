@@ -49,6 +49,7 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      transition: all 0.3s ease;
     }
     .card-content-wrapper{
       margin: 0.5em;
@@ -123,6 +124,7 @@
       border-bottom-left-radius:7px;
       font-size: 0.70rem;
       font-weight: bold;
+      height: 2rem;
     }
     
     .event-date{
@@ -162,6 +164,13 @@
       font-size: 0.86rem;
       font-weight: 400;
       color: #858584; 
+    }
+
+    .event-time p,
+    .event-location p,
+    .event-form p,
+    .event-language p{
+      margin-bottom: 0;
     }
     
     .divider {
