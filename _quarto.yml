@@ -9,7 +9,6 @@ website:
   reader-mode: true
   search: true
   page-navigation: true
-  # page-footer: "./footer/footer.qmd"
   repo-url: https://github.com/lmu-osc/lmu-osc.github.io
   repo-actions: [edit, issue]
 
@@ -112,7 +111,7 @@ format:
     include-in-header:
       - file: matomo_analytics.html
     include-after-body:
-      - file: footer/footer_temp.html
+      - file: footer/footer.html
 
 
 
