@@ -9,7 +9,7 @@ website:
   reader-mode: true
   search: true
   page-navigation: true
-  page-footer: "Copyright LMU Open Science Center, 2025"
+  # page-footer: "./footer/footer.qmd"
   repo-url: https://github.com/lmu-osc/lmu-osc.github.io
   repo-actions: [edit, issue]
 
@@ -107,9 +107,12 @@ format:
       - https://raw.githubusercontent.com/lmu-osc/branding-resources/refs/heads/main/styles.css
       - custom-navbar.css
       - styles.css
+      - footer/footer-style.css
     toc: true
     include-in-header:
       - file: matomo_analytics.html
+    include-after-body:
+      - file: footer/footer_temp.html
 
 
 
