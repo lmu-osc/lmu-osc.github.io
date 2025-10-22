@@ -1,0 +1,53 @@
+---
+title: "Past Events"
+listing: 
+    - id: year_24-25
+      contents: year_24-25.yml 
+      sort: "date desc"
+      template: template.ejs
+    - id: year_23-24
+      contents: year_23-24.yml 
+      sort: "date desc"
+      template: template.ejs
+    - id: year_22-23
+      contents: year_22-23.yml 
+      sort: "date desc"
+      template: template.ejs
+    - id: year_21-21
+      contents: year_21-22.yml 
+      sort: "date desc"
+      template: template.ejs
+page-layout: full
+title-block-banner: "#2b864b"
+toc: true
+toc-location: right
+toc-title: Academic Year
+---
+### 2024–25
+---
+
+
+::: {#year_24-25}
+:::
+
+### 2023–24
+--- 
+
+
+::: {#year_23-24}
+:::
+
+### 2022–23
+---
+
+
+
+::: {#year_22-23}
+:::
+
+
+### 2021-22
+--- 
+
+::: {#year_21-22 collapse="true"}
+:::
