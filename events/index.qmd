@@ -10,6 +10,7 @@ listing:
     sort: "date desc"
     filter-ui: true
     page-size: 5
+    categories: true
   - id: year_2025
     contents: events/ 
     sort: "date desc"
@@ -43,6 +44,7 @@ listing:
 toc: true
 toc-depth: 3
 toc-expand: 3
+toc-location: left
 page-layout: full #right
 title-block-banner: "#2b864b"
 repo-actions: false
