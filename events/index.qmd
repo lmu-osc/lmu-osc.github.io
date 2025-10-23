@@ -1,6 +1,7 @@
 ---
 title: "LMU OSC Events"
-css: styles.css
+css: 
+  - past-events-styles.css
 listing:
   - id: upcoming-events
     template: custom.ejs
@@ -9,11 +10,42 @@ listing:
     sort: "date desc"
     filter-ui: true
     page-size: 5
-toc: false
-page-layout: full
+  - id: year_2025
+    contents: events/ 
+    sort: "date desc"
+    template: past-events-template.ejs
+    template-params:
+      year: 2025
+  - id: year_2024
+    contents: events/ 
+    sort: "date desc"
+    template: past-events-template.ejs
+    template-params:
+      year: 2024
+  - id: year_2023
+    contents: events/ 
+    sort: "date desc"
+    template: past-events-template.ejs
+    template-params:
+      year: 2023
+  - id: year_2022
+    contents: events/ 
+    sort: "date desc"
+    template: past-events-template.ejs
+    template-params:
+      year: 2022
+  - id: year_2021
+    contents: events/ 
+    sort: "date desc"
+    template: past-events-template.ejs
+    template-params:
+      year: 2021
+toc: true
+toc-depth: 3
+toc-expand: 3
+page-layout: full #right
 title-block-banner: "#2b864b"
 repo-actions: false
-
 ---
 
 
@@ -24,3 +56,28 @@ repo-actions: false
 
 
 ## Past Events
+
+
+### 2025
+
+::: {#year_2025}
+:::
+
+### 2024
+
+::: {#year_2024}
+:::
+
+### 2023
+
+::: {#year_2023}
+:::
+
+### 2022
+
+::: {#year_2022}
+:::
+
+### 2021
+::: {#year_2021}
+:::
