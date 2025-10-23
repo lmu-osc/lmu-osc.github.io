@@ -1,8 +1,53 @@
-
 ```{=html}
+<h3><%= templateParams.year %></h3>
 <div class = "content-wrapper">
   <div class="card-grid list">
-    <% for (const item of items) { %>
+    <% 
+      // Filter items to:
+      // 1) occur in the year == templateParams.year
+      // 2) have end_date (if present) older than now, otherwise date older than now
+      const yearNum = Number(templateParams.year);
+      const now = new Date();
+
+      const filteredItems = (items || []).filter(item => {
+        if (!item || !item.date) return false;
+        const startDate = new Date(item.date);
+        if (isNaN(startDate)) return false;
+        const startYear = startDate.getFullYear();
+
+        let endDate = null;
+        let endYear = null;
+        if (item.end_date) {
+          const parsedEnd = new Date(item.end_date);
+          if (!isNaN(parsedEnd)) {
+            endDate = parsedEnd;
+            endYear = endDate.getFullYear();
+          }
+        }
+
+        // Determine whether the event occurs in the target year.
+        let occursInYear = false;
+        if (endDate) {
+          // event spans from startDate to endDate: check if target year is within span
+          if (startYear <= yearNum && endYear >= yearNum) occursInYear = true;
+        } else {
+          // single-date event: year must match exactly
+          occursInYear = (startYear === yearNum);
+        }
+        if (!occursInYear) return false;
+
+        // Determine whether event is older than now.
+        if (endDate) {
+          if (!(endDate.getTime() < now.getTime())) return false;
+        } else {
+          if (!(startDate.getTime() < now.getTime())) return false;
+        }
+
+        return true;
+      });
+    %>
+
+    <% for (const item of filteredItems) { %>
       <div class="card" <%= metadataAttrs(item) %>>
         <a href="<%- item.path %>" class="card-link">
           <div class="card-content-wrapper">
@@ -52,7 +97,7 @@
             <% if (item.trainingurl){ %>
               <div class = "trainingurl listing-training">
                 <i class="bi bi-folder2"></i>
-                <a href = "<%- item.trainingurl %>">
+                <a href = "<%- item.trainingurl %>" target="_blank">
                   Training Material
                 </a>
               </div>
