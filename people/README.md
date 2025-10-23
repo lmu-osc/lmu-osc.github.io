@@ -1,0 +1,2 @@
+
+This file describes the structure of the `people/` directory.

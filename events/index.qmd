@@ -1,51 +1,26 @@
 ---
-title: "Past Events"
-listing: 
-    - id: year_24-25
-      contents: year_24-25.yml 
-      sort: "date desc"
-      template: template.ejs
-    - id: year_23-24
-      contents: year_23-24.yml 
-      sort: "date desc"
-      template: template.ejs
-    - id: year_22-23
-      contents: year_22-23.yml 
-      sort: "date desc"
-      template: template.ejs
-    - id: year_21-21
-      contents: year_21-22.yml 
-      sort: "date desc"
-      template: template.ejs
+title: "LMU OSC Events"
+css: styles.css
+listing:
+  - id: upcoming-events
+    template: custom.ejs
+    contents: events
+    sort-ui: [title, date]
+    sort: "date desc"
+    filter-ui: true
+    page-size: 5
+toc: false
 page-layout: full
 title-block-banner: "#2b864b"
-toc: true
-toc-location: right
-toc-title: Academic Year
+repo-actions: false
+
 ---
 
 
-### 2024–25
+## Upcoming Events
 
-::: {#year_24-25}
-:::
-
-### 2023–24
-
-
-::: {#year_23-24}
-:::
-
-### 2022–23
-
-
-
-::: {#year_22-23}
+::: {#upcoming-events}
 :::
 
 
-### 2021-22
-
-
-::: {#year_21-22 collapse="true"}
-:::
+## Past Events

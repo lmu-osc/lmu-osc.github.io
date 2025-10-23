@@ -9,9 +9,15 @@ website:
   reader-mode: true
   search: true
   page-navigation: true
-  page-footer: "Copyright LMU Open Science Center, 2025"
   repo-url: https://github.com/lmu-osc/lmu-osc.github.io
   repo-actions: [edit, issue]
+
+  announcement: 
+    icon: info-circle
+    dismissable: true
+    content: "**Thanks for visiting the LMU Open Science Center--our site is still under construction for now, but we'll be live soon!**"
+    type: primary
+    position: below-navbar
 
   navbar:
     title: false
@@ -39,12 +45,17 @@ website:
           - open-research-cycle.qmd
       - text: People
         icon: people
+        # href: people/overview.qmd
         menu: 
-          - people.qmd
-          - leadership.qmd
-          - boards.qmd
-          - members.qmd
-      - href: events.qmd
+          - people/overview.qmd
+          - people/management.qmd
+          - people/staff.qmd
+          - people/scientific-board.qmd
+          - people/advisory-board.qmd
+          - people/members.qmd
+          - people/fellows.qmd
+          - people/alumnae.qmd
+      - href: events/index.qmd
         icon: calendar-event
         text: Events
       - href: news.qmd
@@ -94,9 +105,13 @@ format:
     css: 
       - https://raw.githubusercontent.com/lmu-osc/branding-resources/refs/heads/main/styles.css
       - custom-navbar.css
+      - styles.css
+      - footer/footer-style.css
     toc: true
     include-in-header:
       - file: matomo_analytics.html
+    include-after-body:
+      - file: footer/footer.html
 
 
 
