@@ -10,7 +10,7 @@ listing:
     sort: "date desc"
     filter-ui: true
     page-size: 5
-    categories: true
+    categories: unnumbered
   - id: year_2025
     contents: events/ 
     sort: "date desc"
