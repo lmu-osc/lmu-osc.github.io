@@ -44,9 +44,8 @@
       box-sizing: border-box;
       padding: 1.2em;
       flex: 1 1 100%;
+      min-height: 200px;
       line-height: 1.6;
-      min-height: 12.8em;
-      max-height: 13em;
       border-color: 1px #b3b4b2;
     }
 
