@@ -4,7 +4,7 @@ css:
   - past-events-styles.css
 listing:
   - id: upcoming-events
-    template: custom.ejs
+    template: upcoming-events-template.ejs
     contents: events
     sort-ui: [title, date]
     sort: "date desc"
