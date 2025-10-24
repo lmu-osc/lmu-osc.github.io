@@ -5,7 +5,7 @@ listing:
     contents: 
       - people
     template: listings/general-listing.ejs
-    sort: "display_weight asc"
+    sort: "surname asc"
     include: 
       membertype: "fellow"
 ---

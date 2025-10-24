@@ -5,14 +5,14 @@ listing:
     contents: 
       - people
     template: listings/general-listing.ejs
-    sort: "display_weight asc"
+    sort: "surname asc"
     include: 
       membertype: ["lmu-individual"]
   - id: associated-members
     contents: 
       - people
     template: listings/general-listing.ejs
-    sort: "display_weight asc"
+    sort: "surname asc"
     include: 
       membertype: ["associated"]
 

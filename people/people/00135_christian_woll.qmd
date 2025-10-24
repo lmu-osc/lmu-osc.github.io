@@ -1,0 +1,55 @@
+---
+title: Christian Woll
+academic_title: Dr.
+name: Christian Woll
+surname: Woll
+first_name: Christian
+position: Researcher
+faculty: Psychology & Education
+membertype: ['lmu-individual']
+email: ewolf@lmb.uni-muenchen.de
+photo: 'images/woll_christian.jpg'
+website:
+  - label: 'Website 1'
+    url: https://www.en.gen.vetmed.uni-muenchen.de/people/professors/wolf/index.html
+social_media:
+  ORCID: 'https://orcid.org/0000-0000-0000-0000'
+mission_statement:
+  - I am professor for Molecular Animal Breeding and Biotechnology at the Department of Veterinary Sciences.
+---
+{{< include templates/_setup.qmd >}}
+{{< include templates/_contact_items.qmd >}}
+{{< include templates/_social_links.qmd >}}
+{{< include templates/_mission_statement.qmd >}}
+{{< include templates/_research_interests.qmd >}}
+{{< include templates/_selected_publications.qmd >}}
+
+
+
+```{r}
+#| echo: false
+
+# Compose the full profile
+profile <- div(class = "people-profile",
+  div(class = "people-header",
+    div(class = "people-photo",
+      img(src = photo)
+    ),
+    div(class = "people-info",
+      p(class = "people-position", position),
+      p(class = "people-faculty", paste0("Faculty of ", faculty)),
+      div(class = "people-contact", contact_items, social_links)
+    )
+  ),
+  mission_block,
+  # custom content would most likely go here, right after the mission_block
+  div(class = "people-content",
+    interests_block,
+    publications_block
+  )
+)
+
+# Render the profile
+browsable(profile)  
+```
+

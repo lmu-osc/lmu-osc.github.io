@@ -1,0 +1,52 @@
+---
+title: Stephan Nuding
+academic_title: MSc
+name: Stephan Nuding
+surname: Nuding
+first_name: Stephan
+position: PhD Candidate
+faculty: Psychology & Education
+membertype: ['fellow']
+email: stephan.nuding@psy.lmu.de
+photo: 'images/nuding_stephan.jpg'
+social_media:
+  ORCID: 'https://orcid.org/0000-0000-0000-0000'
+mission_statement:
+  - Open Science is essential to enable scientists to conduct interrelated and more credible research with a set of common standards as a foundation, thus improving their own individual research. Within the Journal Club I support the process of finding new presenters as well as the discussion sessions. So far, I conduct especially preregistration, open data and materials.
+---
+{{< include templates/_setup.qmd >}}
+{{< include templates/_contact_items.qmd >}}
+{{< include templates/_social_links.qmd >}}
+{{< include templates/_mission_statement.qmd >}}
+{{< include templates/_research_interests.qmd >}}
+{{< include templates/_selected_publications.qmd >}}
+
+
+
+```{r}
+#| echo: false
+
+# Compose the full profile
+profile <- div(class = "people-profile",
+  div(class = "people-header",
+    div(class = "people-photo",
+      img(src = photo)
+    ),
+    div(class = "people-info",
+      p(class = "people-position", position),
+      p(class = "people-faculty", paste0("Faculty of ", faculty)),
+      div(class = "people-contact", contact_items, social_links)
+    )
+  ),
+  mission_block,
+  # custom content would most likely go here, right after the mission_block
+  div(class = "people-content",
+    interests_block,
+    publications_block
+  )
+)
+
+# Render the profile
+browsable(profile)  
+```
+
