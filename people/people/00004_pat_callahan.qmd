@@ -13,6 +13,7 @@ social_media:
   GitHub: "https://github.com/NeuroShepherd"
 mission_statement:
   - I am a MSc student in Epidemiology at the Institute for Medical Information Processing, Biometry, and Epidemiology (IBE). My interests lie particularly in improving scientific reproducibility by teaching software development practices, and in creating data analysis tools which can be used to assess replicability of research findings. I believe treating scientific analyses as if they were software development projects helps facilitate standard, understandable frameworks which can play a large role in addressing issues of reproducibility and replicability of research findings.
+  - test new content
 ---
 {{< include templates/_setup.qmd >}}
 {{< include templates/_contact_items.qmd >}}
