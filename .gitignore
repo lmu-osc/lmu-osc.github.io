@@ -51,6 +51,7 @@ rsconnect/
 # Quarto
 /.quarto/
 _site/
+_freeze/
 
 # Quarto LMU Open Science Center templates
 lmu-osc-custom.scss

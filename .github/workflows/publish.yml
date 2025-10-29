@@ -28,6 +28,15 @@ jobs:
 
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
+        
+      - name: Restore Quarto _freeze/ cache
+        uses: actions/cache@v3
+        id: quarto-cache
+        with:
+          path: _freeze
+          key: ${{ runner.os }}-quarto-freeze-${{ hashFiles('**/*.qmd') }}
+          restore-keys: |
+            ${{ runner.os }}-quarto-freeze-
 
       - name: Render and Publish
         uses: quarto-dev/quarto-actions/publish@v2
