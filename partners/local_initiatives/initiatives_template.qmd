@@ -1,0 +1,37 @@
+---
+title: ""
+format: 
+  html:
+    css: [styles.css, initiative-styles.css]
+    page-layout: full
+---
+
+```{=html}
+<div class="initiative-container">
+  <div class="initiative-header">
+    <div class="initiative-logo">
+      <img src="../images/osip.png" alt="Initiative Logo">
+    </div>
+    <h1 class="initiative-title">LMU Open Science Initiative Psychology</h1>
+  </div>
+  
+  <div class="initiative-content">
+    <p>
+      OSIP was active from July 2015 to July 2024. Any interested parties wanting support to revive it or support for a one-of event can contact the LMU Open Science Center coordinator, Dr Malika Ihle at malika.ihle@lmu.de.
+
+    The LMU Open Science Initiative in Psychology (OSIP) aims to promote Open Science at the Department Psychology and beyond by monitoring international developments, organizing workshops, adapting hiring policies and channeling the discussion about standards of research quality and transparency. Currently it consists of 40 members including every research unit of the department and all status groups from students to full professors.
+
+    Together with the LMU Open Science Center its goal is to improve scientific practices and reproducibility in psychological research at LMU and beyond.
+
+    If you are a member of the Department Psychology and want to join the initiative, do not hesitate to contact us. More information can be found at the initiative's homepage or its osf-project where it provides different kind of materials from educational ressources to workshop slides and templates for consent forms.
+
+    The OSIP has an open mailing list for our latest announcements, including invitations to our quarterly meetings, reminders for upcoming OSIP events and open-science related surveys. The list is open to all members of the Department of Psychology, ranging from students to postdocs to professors. We gladly welcome all psychologists interested in making research at our Department more transparent.
+
+    To receive regular updates on the OSIP’s latest news, sign up to our mailing list here:https://lists.lrz.de/mailman/listinfo/osip !
+    </p>
+  
+  <div class="back-link">
+    <a href="university-partners2.html" class="back-button">← Back to Partners</a>
+  </div>
+</div>
+```

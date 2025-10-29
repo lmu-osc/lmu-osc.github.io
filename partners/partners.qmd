@@ -1,0 +1,103 @@
+---
+title: ""
+format: 
+  html:
+    css: styles.css
+    page-layout: full
+---
+
+```{=html}
+
+<div class="partner-container">
+  <h1>University Partners & Initiatives</h1>
+  <p class="intro-text">We collaborate with various institutions and support local open science initiatives to advance research and innovation.</p>
+  
+  <div class="partners-grid">
+    <div class="partner-card" id="funding-members">
+      <div class="card-header">
+        <h2>Funding Institutional Members</h2>
+      </div>
+      <div class="card-content">
+        <p>Our funding institutional members provide essential support for our research activities and programs.</p>
+        <a href="institutions/institution_profiles.html" class="partner-button">View Funding Members</a>
+      </div>
+    </div>
+    
+    <div class="partner-card" id="associate-members">
+      <div class="card-header">
+        <h2>Associate Institutional Members</h2>
+      </div>
+      <div class="card-content">
+        <p>Associate members collaborate with us on various projects and initiatives to enhance academic excellence.</p>
+        <a href="#" class="partner-button">View Associate Members</a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="local-initiatives">
+    <h2>Local OS Initiatives</h2>
+    <p>We proudly support several open science initiatives that promote transparency, collaboration, and innovation in research.</p>
+    
+    <div class="initiatives-grid">
+      <div class="initiative-card">
+        <div class="initiative-img">
+          <img src="images/osim.png" alt="OSIM logo">
+        </div>
+        <h3>OSIM</h3>
+        <p>Open Science Initiative in Mathematics</p>
+        <a href="#" class="initiative-button">Learn More</a>
+      </div>
+      
+      <div class="initiative-card">
+        <div class="initiative-img">
+          <img src="images/osis.png" alt="OSIS logo">
+        </div>
+        <h3>OSIS</h3>
+        <p>Open Science Initiative in Statistics</p>
+        <a href="#" class="initiative-button">Learn More</a>
+      </div>
+      
+      <div class="initiative-card">
+        <div class="initiative-img">
+          <img src="images/osip.png" alt="OSIP logo">
+        </div>
+        <h3>OSIP</h3>
+        <p>Open Science Intitiative in Psychology</p>
+        <a href="#" class="initiative-button">Learn More</a>
+      </div>
+      
+      <div class="initiative-card">
+        <div class="initiative-img">
+          <img src="images/reproducibilitea.jpeg" alt="ReproducibiliTea logo">
+        </div>
+        <h3>ReproducibiliTea</h3>
+        <p>Journal club initiative that promotes reproducible research practices through regular discussions.</p>
+        <a href="#" class="initiative-button">Learn More</a>
+      </div>
+      
+      <div class="initiative-card">
+        <div class="initiative-img">
+          <img src="images/hackyhour.svg" alt="Hacky Hour logo">
+        </div>
+        <h3>Hacky Hour</h3>
+        <p>Regular informal meetups where researchers can discuss coding, data analysis, and research tools.</p>
+        <a href="#" class="initiative-button">Learn More</a>
+      </div>
+      
+      <div class="initiative-card">
+        <div class="initiative-img">
+          <img src="images/rse.png" alt="Munich RSE logo">
+        </div>
+        <h3>Munich RSE</h3>
+        <p>Research Software Engineering group supporting high-quality research software development.</p>
+        <a href="#" class="initiative-button">Learn More</a>
+      </div>
+    </div>
+    
+    <div class="find-help-section">
+      <p>Need assistance with open science practices or looking to connect with our initiatives?</p>
+      <a href="#" class="help-button">Find Help</a>
+    </div>
+  </div>
+</div>
+```
