@@ -34,7 +34,7 @@ jobs:
         id: quarto-cache
         with:
           path: _freeze
-          key: ${{ runner.os }}-quarto-freeze-${{ hashFiles('**/*.qmd') }}
+          key: ${{ runner.os }}-quarto-freeze-${{ hashFiles('_freeze/**') }}
           restore-keys: |
             ${{ runner.os }}-quarto-freeze-
 
