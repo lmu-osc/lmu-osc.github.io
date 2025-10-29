@@ -1,0 +1,56 @@
+---
+title: Laura Seelkopf
+academic_title: Prof. Dr.
+name: Laura Seelkopf
+surname: Seelkopf
+first_name: Laura
+position: Chair
+faculty: Social Sciences
+membertype: ['lmu-individual']
+email: Laura.Seelkopf@gsi.uni-muenchen.de
+photo: 'images/seelkopf_laura.JPG'
+website:
+  - label: 'Website 1'
+    url: https://www.gsi.uni-muenchen.de/personen/professoren/laura-seelkopf/index.html
+social_media:
+  ORCID: 'https://orcid.org/0000-0000-0000-0000'
+mission_statement:
+  - I am Professor of International Comparative Public Policy at the Geschwister Scholl Institute of Political Science.
+  - I am an elected member of the German Data Forum (RatSWD, 2020-2023) advising the government on expanding and improving the research data infrastructure for the empirical social, behavioural and economic sciences. My own discipline, political science, is becoming much more open, but compared to some other disciplines there is still a long way to go. I hope to positively contribute to this journey.
+---
+{{< include templates/_setup.qmd >}}
+{{< include templates/_contact_items.qmd >}}
+{{< include templates/_social_links.qmd >}}
+{{< include templates/_mission_statement.qmd >}}
+{{< include templates/_research_interests.qmd >}}
+{{< include templates/_selected_publications.qmd >}}
+
+
+
+```{r}
+#| echo: false
+
+# Compose the full profile
+profile <- div(class = "people-profile",
+  div(class = "people-header",
+    div(class = "people-photo",
+      img(src = photo)
+    ),
+    div(class = "people-info",
+      p(class = "people-position", position),
+      p(class = "people-faculty", paste0("Faculty of ", faculty)),
+      div(class = "people-contact", contact_items, social_links)
+    )
+  ),
+  mission_block,
+  # custom content would most likely go here, right after the mission_block
+  div(class = "people-content",
+    interests_block,
+    publications_block
+  )
+)
+
+# Render the profile
+browsable(profile)  
+```
+

@@ -1,0 +1,56 @@
+---
+title: Gitta Kutyniok
+academic_title: Prof. Dr.
+name: Gitta Kutyniok
+surname: Kutyniok
+first_name: Gitta
+position: Chair
+faculty: Math, Informatics & Stats
+membertype: ['lmu-individual']
+email: kutyniok@math.lmu.de
+photo: 'images/kutyniok_gitta.jpeg'
+website:
+  - label: 'Website 1'
+    url: https://www.ai.math.lmu.de/kutyniok
+social_media:
+  ORCID: 'https://orcid.org/0000-0000-0000-0000'
+mission_statement:
+  - I am head of the Bavarian AI Chair for Mathematical Foundations of Artificial Intelligence. In our research we aim for ensuring reliability of AI-based methods through a profound mathematical understanding and providing possibilites to explain the results. Recently, we detected theoretically that digital hardware causes serious limitations for AI, leading to research in the direction of software-solutions for analog hardware such as neuromorphic computing and quantum computing. Finally, we apply artificial intelligence in a trustworthy manner to problems from medical imaging, robotics, and telecommunication.
+  - Research in the area of artificial Intelligence requires extensive amounts of data. From my viewpoint, reproducibility of experiments is not sufficiently considered at present. Hence I am a strong supporter of incorporating more open science practices into AI research.
+---
+{{< include templates/_setup.qmd >}}
+{{< include templates/_contact_items.qmd >}}
+{{< include templates/_social_links.qmd >}}
+{{< include templates/_mission_statement.qmd >}}
+{{< include templates/_research_interests.qmd >}}
+{{< include templates/_selected_publications.qmd >}}
+
+
+
+```{r}
+#| echo: false
+
+# Compose the full profile
+profile <- div(class = "people-profile",
+  div(class = "people-header",
+    div(class = "people-photo",
+      img(src = photo)
+    ),
+    div(class = "people-info",
+      p(class = "people-position", position),
+      p(class = "people-faculty", paste0("Faculty of ", faculty)),
+      div(class = "people-contact", contact_items, social_links)
+    )
+  ),
+  mission_block,
+  # custom content would most likely go here, right after the mission_block
+  div(class = "people-content",
+    interests_block,
+    publications_block
+  )
+)
+
+# Render the profile
+browsable(profile)  
+```
+

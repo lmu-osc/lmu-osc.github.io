@@ -1,0 +1,52 @@
+---
+title: Marlene Altenmüller
+academic_title: Dr.
+name: Marlene Altenmüller
+surname: Altenmüller
+first_name: Marlene
+position: Researcher
+faculty: Psychology & Education
+membertype: ['lmu-individual']
+email: marlene.altenmueller@psy.lmu.de
+photo: 'images/altenmueller_marlene.jpg'
+social_media:
+  ORCID: 'https://orcid.org/0000-0000-0000-0000'
+mission_statement:
+  - I am a postdoctoral researcher with the Social Psychology group at LMU Munich. My research focuses on trust in and within science. As my and others’ research in this area shows, the ideas of Open Science are important for (re)building trust in science – both the public’s trust in science as well as trust among researchers. I am committed to implementing openness and transparency in every step of my own research, I encourage it in my reviews, as well as in cooperation with colleagues and students, and I make it a topic while teaching the next generation of psychologists.
+---
+{{< include templates/_setup.qmd >}}
+{{< include templates/_contact_items.qmd >}}
+{{< include templates/_social_links.qmd >}}
+{{< include templates/_mission_statement.qmd >}}
+{{< include templates/_research_interests.qmd >}}
+{{< include templates/_selected_publications.qmd >}}
+
+
+
+```{r}
+#| echo: false
+
+# Compose the full profile
+profile <- div(class = "people-profile",
+  div(class = "people-header",
+    div(class = "people-photo",
+      img(src = photo)
+    ),
+    div(class = "people-info",
+      p(class = "people-position", position),
+      p(class = "people-faculty", paste0("Faculty of ", faculty)),
+      div(class = "people-contact", contact_items, social_links)
+    )
+  ),
+  mission_block,
+  # custom content would most likely go here, right after the mission_block
+  div(class = "people-content",
+    interests_block,
+    publications_block
+  )
+)
+
+# Render the profile
+browsable(profile)  
+```
+
