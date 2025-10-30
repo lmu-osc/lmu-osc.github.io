@@ -23,6 +23,7 @@ get_param <- function(param_name, default = "") {
 event_param <- get_param("event")
 event_title <- event_param$title
 event_date <- event_param$date
+event_end_date <- event_param$end_date
 event_time <- event_param$time
 event_location_name <- event_param$location$name
 event_location_address <- event_param$location$address
@@ -31,6 +32,9 @@ event_format_type <- event_param$format$type
 event_format_detail <- event_param$format$detail
 event_language_primary <- event_param$language$primary
 event_language_detail <- event_param$language$detail
+
+
+has_end_date <- if (is.null(event_end_date)) {FALSE} else if (nchar(trimws(event_end_date)) == 0) {FALSE} else {TRUE}
 
 
 links_param <- get_param("links", list())
