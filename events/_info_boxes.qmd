@@ -1,0 +1,75 @@
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+
+
+tags$div(
+  class = "d-flex flex-nowrap justify-content-center overflow-auto gap-3 py-2 px-1",
+
+  tags$div(
+    class = "card flex-shrink-0 border border-primary border-2",
+    style = "width:14rem;",
+    tags$div(
+      class = "card-body",
+      tags$h5(class = "card-title", HTML('<i class="bi bi-calendar-event"></i> Date &amp; Time')),
+      tags$p(class = "card-text",
+             event_date,
+             tags$br(),
+             event_time
+      )
+    )
+  ),
+
+  tags$div(
+    class = "card flex-shrink-0 border border-primary border-2",
+    style = "width:14rem;",
+    tags$div(
+      class = "card-body",
+      tags$h5(class = "card-title", HTML('<i class="bi bi-geo-alt"></i> Location')),
+      tags$div(
+        class = "location-text",
+        tags$a(
+          href = event_map_url,
+          target = "_blank",
+          style = "text-decoration:none;color:inherit;",
+          tags$div(class = "meta-value",
+                  event_location_name,
+                   tags$br(),
+                   (event_location_address)
+          )
+        )
+      )
+    )
+  ),
+
+  tags$div(
+    class = "card flex-shrink-0 border border-primary border-2",
+    style = "width:14rem;",
+    tags$div(
+      class = "card-body",
+      tags$h5(class = "card-title", HTML('<i class="bi bi-laptop"></i> Format')),
+      tags$p(class = "card-text",
+             event_format_type,
+             tags$br(),
+            event_format_detail
+      )
+    )
+  ),
+
+  tags$div(
+    class = "card flex-shrink-0 border border-primary border-2",
+    style = "width:14rem;",
+    tags$div(
+      class = "card-body",
+      tags$h5(class = "card-title", HTML('<i class="bi bi-translate"></i> Language')),
+      tags$p(class = "card-text",
+             event_language_primary,
+             tags$br(),
+             event_language_detail
+      )
+    )
+  )
+)
+```
+
