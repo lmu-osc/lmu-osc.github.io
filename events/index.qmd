@@ -2,6 +2,7 @@
 title: "LMU OSC Events"
 css: 
   - past-events-styles.css
+  - upcoming-events-styles.css 
 listing:
   - id: upcoming-events
     template: upcoming-events-template.ejs
