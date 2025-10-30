@@ -1,0 +1,72 @@
+---
+format:
+    html:
+        table-of-contents: false
+        css: event-page-styles.css
+page-layout: full
+pagetitle: 'Workshop: "Software Carpentry - Python flavored - Martinsried"'
+
+# Event categories
+event:
+  title: 'Workshop: "Software Carpentry - Python flavored - Martinsried"'
+  description: ""
+  categories:  'Workshop'
+  date: "August 01, 2024"
+  end_date: "August 01, 2024"
+  time: "NA"
+  location:
+    name: "LMU Biozentrum, Großhaderner Str. 2, 82152 Planegg-Martinsried"
+    address: ""
+    map_url: ""
+  host: "LMU Open Science Center"
+  format:
+    type: 'Workshop'
+    detail: ""
+  language:
+    primary: "English"
+    primary-code: "en"
+    detail: ""
+links:
+  registration: ""
+  materials: ""
+  workshop_website: ""
+
+event_description:
+  - ""
+
+instructors:
+  - name: ""
+    url: ""
+
+helpers:
+  - name: ""
+
+contact:
+  name: ""
+  email: ""
+---
+<!-- MANDAORY SECTION START  -->
+<link rel = "stylesheet"  href = "https://cdn.jsdelivr.net/npm/bootstrap-icons@5.6.2/font/bootstrap-icons.css">
+
+<h1 class="fs-1 text-primary"> {{< meta event.title >}} </h1>
+
+{{< include templates/_setup.qmd >}}
+{{< include templates/_info_boxes.qmd >}}
+{{< include templates/_register_button.qmd >}}
+<!-- MANDAORY SECTION END  -->
+
+<br>
+
+<!-- DETAILED EVENT DESCRIPTION HERE OR USE THE TEMPLATE BELOW TO INCLUDE THE STANDARD DESCRIPTION SECTION -->
+<!-- {{< include templates/_event_description.qmd >}} -->
+
+<p>The workshop will cover the <strong>Unix shell</strong>, version control in <strong>git</strong>, and programming in <strong>Python</strong>.<br>It is free and open to researchers, staff, and students.</p><p>This workshop teaches c<strong>ore computing skills</strong> that will help you be <strong>more productive and effective</strong>. We will alternate short tutorials with hands-on practical exercises. Participants will be encouraged to help one another and to apply what they have learned to their own research problems.</p><p>See the workshop website for <strong>more details</strong>: <a href="https://lmu-osc.github.io/2024-08-01-LMU/">https://lmu-osc.github.io/2024-08-01-LMU/</a></p><p><strong>Instructors:</strong> Dr. Sonja Grath, Felix Henninger, Dr. Luisa F. Jiménez-Soto</p><p>Registration is mandatory, and participation requires setting up the software in advance by following the provided instructions (a help desk session will also take place the day prior to the workshop). Please register only if you are available for the whole course.</p><ul style="list-style-type: square;"><li>
+</li></ul>
+<div class="g-clear"></div>
+
+
+
+<!-- MANDAORY SECTION START  -->
+<!-- _event_description.qmd template should always be at bottom -->
+{{< include templates/_instructors_helpers_contact.qmd >}}
+<!-- MANDAORY SECTION END  -->

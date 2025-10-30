@@ -1,0 +1,80 @@
+---
+format:
+    html:
+        table-of-contents: false
+        css: event-page-styles.css
+page-layout: full
+pagetitle: 'Journal Club: "ReproducibiliTea: Doing good research should not be bad for your career"'
+
+# Event categories
+event:
+  title: 'Journal Club: "ReproducibiliTea: Doing good research should not be bad for your career"'
+  description: ""
+  categories:  'ReproducibiliTea Journal Club'
+  date: "July 09, 2021"
+  end_date: "July 09, 2021"
+  time: "14:30-16:00"
+  location:
+    name: "Online (Zoom)"
+    address: ""
+    map_url: ""
+  host: "LMU Open Science Center"
+  format:
+    type: 'ReproducibiliTea Journal Club'
+    detail: ""
+  language:
+    primary: "English"
+    primary-code: "en"
+    detail: ""
+links:
+  registration: ""
+  materials: ""
+  workshop_website: ""
+
+event_description:
+  - ""
+
+instructors:
+  - name: ""
+    url: ""
+
+helpers:
+  - name: ""
+
+contact:
+  name: ""
+  email: ""
+---
+<!-- MANDAORY SECTION START  -->
+<link rel = "stylesheet"  href = "https://cdn.jsdelivr.net/npm/bootstrap-icons@5.6.2/font/bootstrap-icons.css">
+
+<h1 class="fs-1 text-primary"> {{< meta event.title >}} </h1>
+
+{{< include templates/_setup.qmd >}}
+{{< include templates/_info_boxes.qmd >}}
+{{< include templates/_register_button.qmd >}}
+<!-- MANDAORY SECTION END  -->
+
+<br>
+
+<!-- DETAILED EVENT DESCRIPTION HERE OR USE THE TEMPLATE BELOW TO INCLUDE THE STANDARD DESCRIPTION SECTION -->
+<!-- {{< include templates/_event_description.qmd >}} -->
+
+<p>After a longer break, the Journal Club: “ReproJuicebiliTea” at LMU Munich will be relaunched with its third meeting to discuss a current pre-print about quality standards and incentive structures in science and possible ways to bring them together. The organisation team is happy to announce that one of the paper’s authors, Daniel Leising, will give an introductory talk to this session and participate in the open discussion afterwards:</p><p>Participants can use the following <strong>key questions</strong> to prepare for the discussion:</p><ul>
+<li>Which aspects should be part of a high-quality scientific article in general, regarding empirical research as well as any kind of review?</li>
+<li>Which are the main problems in the current incentive structures in science and how can they be addressed most effectively? You can think about the suggestions from the paper, but also bring in your own ideas.</li>
+<li>Which types of consensus building do already exist (in your discipline) and do they meet the requirements suggested in the paper? You can think about the different aspects mentioned in the paper (e. g. common terminology, research questions), but also about how the consensus is built (e. g. special types of reviews, position papers by expert groups).</li>
+</ul>
+<p><br>You can find a short abstract for the introductory talk by Daniel Leising (TU Dresden) below:</p><h3>Doing good research should not be bad for your career</h3><p>Many of the now well-documented problems with research integrity are rooted in the current incentive structure in academia: We earn rewards by publishing a lot, getting cited a lot, and acquiring lots of grant money. All of this is possible, however, without contributing much to scientific knowledge. The question of whether we actually help solve important intellectual or even practical problems is at risk of becoming irrelevant. Moreover, the current system is easily gamed by those whose motives are not primarily scientific in nature. Being diligent in your research may easily mean the end of your career. Given that most of our work is tax-funded, and tax-payers rightfully expect some credible return on their investment, I argue that we need a radical overhaul of our incentive system: Scientists need to be explicitly rewarded for doing good work, not just lots of work.</p><h2>Concept of the Journal Club</h2><p>The interdisciplinary journal club “ReproJucibiliTea” is launched every 3-4 weeks and addresses main questions and current topics concerning Open Science and the credibility of research findings. The idea - originated from Great Britain - was already developed in many other countries using the name "ReproducibiliTea". The slogan of the Journal-Club at LMU Munich is "ReproJuicebiliTea" matching the covered topics (Reproducibility &amp; Open Science) and the extended selection of drinks. During on-site meetings tea, juice and small snacks are provided to live up to the slogan. However, the first meetings after relaunching the event series will be hold online until it is possible to do them on site. No matter where the sessions take place, everybody is welcome to bring their own food and drinks and thus connect the journal club with their lunch break.</p><p>As before, the Journal Club will consist of open talk sessions for discussing Open Science, reproducibility, and other related issues and will be explicitly open to all disciplines and institutions to create the most interesting interchange. Each session will start with a short talk about the paper and then continue with an open discussion in which you can contribute your own thoughts and questions.</p><p>During a longer break, the concept was slightly revised, and the organisation team intends to invite the speaker(s) of the respective paper that will be discussed in each session. From now on, the author herself/himself will start with the introductory talk including a short summary of the paper. Afterwards, there will be enough time for direct interaction with the author(s) and, as before, an open discussion with all of the participants.</p><p>You are warmly welcome to join the next meetings. You can simply send an e-mail to <a class="g-link-mail" href="mailto:reproducibilitea.munich@gmail.com" title="Send email to: reproducibilitea.munich@gmail.com">reproducibilitea.munich@gmail.com</a> to join the mailing list to get information about the next meetings and chosen papers. For each session it would be helpful to have read the announced paper, but there is no obligation to do so.</p><p>The organisation team is looking forward to seeing you at one of the next Journal Club sessions.</p><p>Organisation team:</p><ul style="list-style-type: square;">
+<li>Laura Goetz, Medical Student at LMU Munich</li>
+<li>Stephan Nuding, Psychology Student at LMU Munich</li>
+<li>Leonhard Schramm, Psychology Student at LMU Munich</li>
+</ul>
+<p> </p><div class="g-clear"></div>
+
+
+
+<!-- MANDAORY SECTION START  -->
+<!-- _event_description.qmd template should always be at bottom -->
+{{< include templates/_instructors_helpers_contact.qmd >}}
+<!-- MANDAORY SECTION END  -->

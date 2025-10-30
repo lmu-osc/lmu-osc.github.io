@@ -1,0 +1,102 @@
+---
+format:
+    html:
+        table-of-contents: false
+        css: event-page-styles.css
+page-layout: full
+pagetitle: 'Summer school: 5-day Open Research Summer School 2023'
+
+# Event categories
+event:
+  title: 'Summer school: 5-day Open Research Summer School 2023'
+  description: ""
+  categories:  'Summer school'
+  date: "March 30, 2023"
+  end_date: "March 30, 2023"
+  time: "NA"
+  location:
+    name: "Hybrid (Ludwigstraße 25, Munich and via Zoom)"
+    address: ""
+    map_url: ""
+  host: "LMU Open Science Center"
+  format:
+    type: 'Summer school'
+    detail: ""
+  language:
+    primary: "English"
+    primary-code: "en"
+    detail: ""
+links:
+  registration: ""
+  materials: ""
+  workshop_website: ""
+
+event_description:
+  - ""
+
+instructors:
+  - name: ""
+    url: ""
+
+helpers:
+  - name: ""
+
+contact:
+  name: ""
+  email: ""
+---
+<!-- MANDAORY SECTION START  -->
+<link rel = "stylesheet"  href = "https://cdn.jsdelivr.net/npm/bootstrap-icons@5.6.2/font/bootstrap-icons.css">
+
+<h1 class="fs-1 text-primary"> {{< meta event.title >}} </h1>
+
+{{< include templates/_setup.qmd >}}
+{{< include templates/_info_boxes.qmd >}}
+{{< include templates/_register_button.qmd >}}
+<!-- MANDAORY SECTION END  -->
+
+<br>
+
+<!-- DETAILED EVENT DESCRIPTION HERE OR USE THE TEMPLATE BELOW TO INCLUDE THE STANDARD DESCRIPTION SECTION -->
+<!-- {{< include templates/_event_description.qmd >}} -->
+
+<p>The LMU Open Science Center organises this hybrid open research summer school to allow early-career researchers to gain more trust in the research that they do, and make it as credible as it can be in the eyes of their peers, the public, and funding agencies.</p><p>By joining (or accessing the material after the school), you will learn how to:</p><ul style="list-style-type: square;">
+<li>plan your statistical plans in advance of collecting data to prevent biases in analyses, with the help of <strong>preregistration</strong> and <strong>data simulation</strong>;</li>
+<li>create computationally reproducible workflows so you can be more efficient and spot mistakes in data wrangling or analyses, through <strong>programming</strong>, creating <strong>dynamic</strong> <strong>reports</strong>, and <strong>version</strong> <strong>controlling</strong> scripts;</li>
+<li>share <strong>data</strong>, <strong>materials</strong>, <strong>codes</strong>, and <strong>articles</strong> appropriately (using <strong>Findable</strong>, <strong>Accessible</strong>, <strong>Interoperable</strong>, <strong>Reusable</strong> <strong>principles</strong>, sensible data <strong>anonymisation</strong> <strong>techniques</strong>, adequate <strong>repositories</strong> and <strong>licences</strong>) for your research to have more impact, by allowing others to build upon or replicate your work;</li>
+<li>follow <strong>guidelines to report results</strong> adequately and conduct <strong>systematic reviews</strong>
+</li>
+</ul>
+<p>The summer school will consist of public lectures and workshops for selected applicants.</p><p>Some keynote presenters:</p><ul>
+<li>Prof Uli Dirnagl, Director of QUEST Center for Responsible Research</li>
+<li>Prof Stephan Hartmann, Co-Director of Munich Center for Mathematical Philosophy</li>
+<li>Dr Tony Ross-Hellauer, Leader of Open and Reproducible Research Group</li>
+<li>Prof Richard McElreath, Department Director at MPI Evolutionary Anthropology</li>
+<li>Dr Joachim Wuttke, Leader of Scientific Computing Group</li>
+<li>Dr Tim Errington, Senior Director of Research at Center for Open Science</li>
+<li>Dr Verena Heise, Open Science Freelancer</li>
+<li>Valérie Labonté, Researcher in Evidence in Medicine</li>
+<li>Dr Raphael Ritz, Head of Data Division at Max Planck Computing and Data Facility</li>
+<li>Prof Denis Kenji Kipker, Professor for IT Security Law</li>
+<li>Sofija Vojvodic, Researcher at Berlin Institute of Health</li>
+<li>Prof Felix Schönbrodt, Director of LMU Open Science Center</li>
+<li>Dr Malika Ihle, Coordinator of LMU Open Science Center</li>
+</ul>
+<p>...and many more instructors!</p><p>You can find the <strong>programme</strong> and more information on the <strong>lectures</strong> and <strong>workshops</strong> here: <a href="https://malikaihle.github.io/OSC-Open-Research-Summer-School-2023/">https://malikaihle.github.io/OSC-Open-Research-Summer-School-2023/</a></p><h2>Apply to attend the whole summer school (in-person or online)</h2><p>To attend the whole school, i.e. both public lectures and workshops for selected applicants, in person or online, you must apply before <strong>17 July 2023, 12:00 noon</strong>.</p><p>The summer school is targeted at PhD students of all scientific disciplines (Medical sciences, Social Sciences, Life Sciences, etc. as opposed to research fields in the Humanities). Master students and early post docs are also welcome to apply. It will be held in a hybrid format and you will be able to choose your preferred mode of participation (online or in-person). By applying, we expect you to attend all sessions of the school (with exception possible).</p><div>
+<p>During the application process, you will be asked about your motivation and experience. We will prioritize novices with a clear ideas about where to integrate these news skills in their own research. At equal score, we will prioritize members of the LMU, and maximize the diversity of applicants background in terms of discipline, career stage, and gender.</p>
+<p>We will not provide travel grants. The in-person part of the school will take place in UB der LMU - Fachbibliothek Philologicum, Ludwigstraße 25, 80539 München, Germany. The online part will be on Zoom.</p>
+<p>Apply here: <a href="https://tellmi.psy.lmu.de/formr/OSC-Summer-School-2023">https://tellmi.psy.lmu.de/formr/OSC-Summer-School-2023</a></p>
+<h2>Join one or several of the public lectures (online)</h2>
+<p>Anyone can register at any time before the end of the summer school to attend one, multiple, or all lectures online.</p>
+<p>Register here: <a href="https://www.pretix.osc.lmu.de/lmu-osc/lectures/">https://www.pretix.osc.lmu.de/lmu-osc/lectures/</a></p>
+<h2>Funding Note</h2>
+<p>The <a href="../../about_us/coordinator/index.html" title="Scientific Coordinator">LMU Open Science Center coordinator</a>, Dr Malika Ihle, organising the summer school, is funded by the <strong>Frontier Fund of LMU Munich</strong>. The summer school is funded by the <strong>Fund for the Promotion of Teaching of LMU Munich</strong>. The <strong>LMU University Library</strong> provides in-kind support.</p>
+<p> </p>
+</div><p><img height="300" width="535" src="flyer.png" alt="Flyer Summer School 2023"> </p><div class="g-clear"></div>
+
+
+
+<!-- MANDAORY SECTION START  -->
+<!-- _event_description.qmd template should always be at bottom -->
+{{< include templates/_instructors_helpers_contact.qmd >}}
+<!-- MANDAORY SECTION END  -->

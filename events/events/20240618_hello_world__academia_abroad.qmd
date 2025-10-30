@@ -1,0 +1,78 @@
+---
+format:
+    html:
+        table-of-contents: false
+        css: event-page-styles.css
+page-layout: full
+pagetitle: 'Panel Discussion Series: "Making Tacit Knowledge Open - Part II: Hello World - Academia Abroad"'
+
+# Event categories
+event:
+  title: 'Panel Discussion Series: "Making Tacit Knowledge Open - Part II: Hello World - Academia Abroad"'
+  description: ""
+  categories:  'Panel Discussion Series'
+  date: "June 18, 2024"
+  end_date: "June 18, 2024"
+  time: "16:00-18:00"
+  location:
+    name: "Online (Zoom)"
+    address: ""
+    map_url: ""
+  host: "LMU Open Science Center"
+  format:
+    type: 'Panel Discussion Series'
+    detail: ""
+  language:
+    primary: "English"
+    primary-code: "en"
+    detail: ""
+links:
+  registration: ""
+  materials: ""
+  workshop_website: ""
+
+event_description:
+  - ""
+
+instructors:
+  - name: ""
+    url: ""
+
+helpers:
+  - name: ""
+
+contact:
+  name: ""
+  email: ""
+---
+<!-- MANDAORY SECTION START  -->
+<link rel = "stylesheet"  href = "https://cdn.jsdelivr.net/npm/bootstrap-icons@5.6.2/font/bootstrap-icons.css">
+
+<h1 class="fs-1 text-primary"> {{< meta event.title >}} </h1>
+
+{{< include templates/_setup.qmd >}}
+{{< include templates/_info_boxes.qmd >}}
+{{< include templates/_register_button.qmd >}}
+<!-- MANDAORY SECTION END  -->
+
+<br>
+
+<!-- DETAILED EVENT DESCRIPTION HERE OR USE THE TEMPLATE BELOW TO INCLUDE THE STANDARD DESCRIPTION SECTION -->
+<!-- {{< include templates/_event_description.qmd >}} -->
+
+<p>MAKING TACIT KNOWLEDGE OPEN – A Panel Discussion Series<br>Academia is full of tacit knowledge that is difficult to access for early career researchers and first-generation academics who do not (yet) have large academic networks. In our new panel discussion series, we try to make this tacit knowledge open by asking the relevant questions to a diverse set of experts.</p><p>HELLO WORLD: ACADEMIA ABROAD<br>More than any other field of work, academia is a global industry. We collaborate in international teams, have colleagues who worked abroad, and are expected to gain international experience for career progression. But what is it like to work in other countries? How do their systems, their incentive structures, and research environments differ from German academia? This will be the topic of our second panel discussion with a range of psychology researchers who have experience working in Germany and abroad.</p><p><strong>Panel Members:</strong></p><ul>
+<li>Prof. Dr. Christopher Donkin (Computational Modeling in Psychology, LMU)</li>
+<li>Dr. Nathan Evans (Computational Modeling in Psychology, LMU)</li>
+<li>Prof. Dr. Friederike Funk (Social Psychology, LMU)</li>
+<li>Prof. Dr. David Goretzko (Methodology &amp; Statistics, Utrecht University)</li>
+<li>Dr. Malika Ihle (LMU Open Science Center)</li>
+<li>Prof. Dr. Clemens Stachl (Behavioral Science and Technology, University of St. Gallen)</li>
+</ul>
+<p><strong>Target audience:</strong> Anyone curious about how academia works outside of Germany</p><p><strong>Prerequisites:</strong> None</p><p><strong>Max. number of participants:</strong> No maximum</p><p> </p><div class="g-clear"></div>
+
+
+
+<!-- MANDAORY SECTION START  -->
+<!-- _event_description.qmd template should always be at bottom -->
+{{< include templates/_instructors_helpers_contact.qmd >}}
+<!-- MANDAORY SECTION END  -->

@@ -1,0 +1,70 @@
+---
+format:
+    html:
+        table-of-contents: false
+        css: event-page-styles.css
+page-layout: full
+pagetitle: 'Workshop: "Open Access"'
+
+# Event categories
+event:
+  title: 'Workshop: "Open Access"'
+  description: ""
+  categories:  'Workshop'
+  date: "June 08, 2022"
+  end_date: "June 08, 2022"
+  time: "15:00–16:00"
+  location:
+    name: "Hybrid (Leopoldstraße 13, room 3322, Munich and via Zoom)"
+    address: ""
+    map_url: ""
+  host: "LMU Open Science Center"
+  format:
+    type: 'Workshop'
+    detail: ""
+  language:
+    primary: "German/English"
+    primary-code: "de"
+    detail: ""
+links:
+  registration: ""
+  materials: ""
+  workshop_website: ""
+
+event_description:
+  - ""
+
+instructors:
+  - name: ""
+    url: ""
+
+helpers:
+  - name: ""
+
+contact:
+  name: ""
+  email: ""
+---
+<!-- MANDAORY SECTION START  -->
+<link rel = "stylesheet"  href = "https://cdn.jsdelivr.net/npm/bootstrap-icons@5.6.2/font/bootstrap-icons.css">
+
+<h1 class="fs-1 text-primary"> {{< meta event.title >}} </h1>
+
+{{< include templates/_setup.qmd >}}
+{{< include templates/_info_boxes.qmd >}}
+{{< include templates/_register_button.qmd >}}
+<!-- MANDAORY SECTION END  -->
+
+<br>
+
+<!-- DETAILED EVENT DESCRIPTION HERE OR USE THE TEMPLATE BELOW TO INCLUDE THE STANDARD DESCRIPTION SECTION -->
+<!-- {{< include templates/_event_description.qmd >}} -->
+
+<p>The Open Science Initiative Psychology (OSIP), in collaboration with the LMU Open Science Center, offers a practice-oriented workshop for scientists at all career levels on the topic of "Open Access" (speakers: Prof. Dr. Felix Schönbrodt and Maximilian Frank). We explain the different types of Open Access and and their advantages and show what different ways there are to make your own publications freely accessible. We also go into the business models of scientific publishers and take a critical look at their increasing activities as data analysis companies.</p><p>The event will take place in German or in English depending on the composition of the audience.</p><p> </p><p> </p><div class="g-clear"></div>
+
+
+
+<!-- MANDAORY SECTION START  -->
+<!-- _event_description.qmd template should always be at bottom -->
+{{< include templates/_instructors_helpers_contact.qmd >}}
+<!-- MANDAORY SECTION END  -->

@@ -1,0 +1,72 @@
+---
+format:
+    html:
+        table-of-contents: false
+        css: event-page-styles.css
+page-layout: full
+pagetitle: 'Workshop: "A Co-creation Workshop to Democratize Open Science at LMU"'
+
+# Event categories
+event:
+  title: 'Workshop: "A Co-creation Workshop to Democratize Open Science at LMU"'
+  description: ""
+  categories:  'Workshop'
+  date: "May 15, 2024"
+  end_date: "May 15, 2024"
+  time: "09:00-14:00"
+  location:
+    name: "Leopoldstraße 13, room 3322"
+    address: ""
+    map_url: ""
+  host: "LMU Open Science Center"
+  format:
+    type: 'Workshop'
+    detail: ""
+  language:
+    primary: "English"
+    primary-code: "en"
+    detail: ""
+links:
+  registration: ""
+  materials: ""
+  workshop_website: ""
+
+event_description:
+  - ""
+
+instructors:
+  - name: ""
+    url: ""
+
+helpers:
+  - name: ""
+
+contact:
+  name: ""
+  email: ""
+---
+<!-- MANDAORY SECTION START  -->
+<link rel = "stylesheet"  href = "https://cdn.jsdelivr.net/npm/bootstrap-icons@5.6.2/font/bootstrap-icons.css">
+
+<h1 class="fs-1 text-primary"> {{< meta event.title >}} </h1>
+
+{{< include templates/_setup.qmd >}}
+{{< include templates/_info_boxes.qmd >}}
+{{< include templates/_register_button.qmd >}}
+<!-- MANDAORY SECTION END  -->
+
+<br>
+
+<!-- DETAILED EVENT DESCRIPTION HERE OR USE THE TEMPLATE BELOW TO INCLUDE THE STANDARD DESCRIPTION SECTION -->
+<!-- {{< include templates/_event_description.qmd >}} -->
+
+<p>During this workshop Iris Lechner will provide an interactive co-creation workshop to explore ideas on how Open Science can be democratized at LMU. We raise questions such as, how can we change the perceptions of open science? How can we foster institutional change and rewards? What are barriers towards Open Science at the university, and how can we overcome them? What can you as an individual researcher or student, do to foster Open Science practices? During the workshop we will do several interactive exercises to think about out-of-the-box solutions to democratize Open Science. We will focus on exploring ideas, identifying barriers and how to overcome them to strengthen Open Science for individual researchers and in a team setting.</p><p><strong>Target audience: </strong>The workshop is open to all levels of career stages: students, PhD candidates, post-docs, lecturers and professors.</p><p><strong>Logistics:</strong> Due to the interactive nature of the workshop it will be held in-person</p><p><strong>Instructor: </strong>Iris Lechner is PhD candidate at the philosophy department of the Vrije Universiteit Amsterdam. Her thesis focuses on the question ‘what is a good university?’. After obtaining a bachelor's degree in liberal arts and sciences she studied health sciences and bioethics. Recently, her interests have geared to social epistemology, philosophy of higher education, research integrity and the application of qualitative research methods in these fields.</p><ul style="list-style-type: square;"><li>
+</li></ul>
+<div class="g-clear"></div>
+
+
+
+<!-- MANDAORY SECTION START  -->
+<!-- _event_description.qmd template should always be at bottom -->
+{{< include templates/_instructors_helpers_contact.qmd >}}
+<!-- MANDAORY SECTION END  -->

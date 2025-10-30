@@ -1,0 +1,74 @@
+---
+format:
+    html:
+        table-of-contents: false
+        css: event-page-styles.css
+page-layout: full
+pagetitle: 'Workshop: "Open Science - Reproduciblity, Data Sharing, Practical Aspects"'
+
+# Event categories
+event:
+  title: 'Workshop: "Open Science - Reproduciblity, Data Sharing, Practical Aspects"'
+  description: ""
+  categories:  'Workshop'
+  date: "July 02, 2020"
+  end_date: "July 02, 2020"
+  time: "10:30-12:15"
+  location:
+    name: "Online (Zoom)"
+    address: ""
+    map_url: ""
+  host: "LMU Open Science Center"
+  format:
+    type: 'Workshop'
+    detail: ""
+  language:
+    primary: "English"
+    primary-code: "en"
+    detail: ""
+links:
+  registration: ""
+  materials: ""
+  workshop_website: ""
+
+event_description:
+  - ""
+
+instructors:
+  - name: ""
+    url: ""
+
+helpers:
+  - name: ""
+
+contact:
+  name: ""
+  email: ""
+---
+<!-- MANDAORY SECTION START  -->
+<link rel = "stylesheet"  href = "https://cdn.jsdelivr.net/npm/bootstrap-icons@5.6.2/font/bootstrap-icons.css">
+
+<h1 class="fs-1 text-primary"> {{< meta event.title >}} </h1>
+
+{{< include templates/_setup.qmd >}}
+{{< include templates/_info_boxes.qmd >}}
+{{< include templates/_register_button.qmd >}}
+<!-- MANDAORY SECTION END  -->
+
+<br>
+
+<!-- DETAILED EVENT DESCRIPTION HERE OR USE THE TEMPLATE BELOW TO INCLUDE THE STANDARD DESCRIPTION SECTION -->
+<!-- {{< include templates/_event_description.qmd >}} -->
+
+<p> </p><p>We are incredibly excited to announce the second workshop held by the LMU Open Science Initiative in Medicine (OSIM):</p><p style="text-align: center;"><strong>"Open Science - Reproduciblity, Data Sharing, Practical Aspects"</strong></p><p>This time the workshop will be online, consisting of two parts:</p><ul>
+<li><a href="https://t1p.de/j6fr">Input videos on YouTube </a></li>
+<li>An exciting <strong><em>Keynote</em></strong> ("Open Science for Research Questions, Data, and Analyses")  by Professor of Clinical Biostatistics and Medical Decision Making Ewout Steyerberg on <a href="https://t1p.de/87p0">Zoom</a> (July 2nd 2020)</li>
+</ul>
+<p>Detailed information can be found in the following flyer:</p><p><img src="../../images/workshop_osim.jpg" alt="online_workshop_osim"><br><br></p><p> </p><div class="g-clear"></div>
+
+
+
+<!-- MANDAORY SECTION START  -->
+<!-- _event_description.qmd template should always be at bottom -->
+{{< include templates/_instructors_helpers_contact.qmd >}}
+<!-- MANDAORY SECTION END  -->

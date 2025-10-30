@@ -1,0 +1,76 @@
+---
+format:
+    html:
+        table-of-contents: false
+        css: event-page-styles.css
+page-layout: full
+pagetitle: 'Hacky Hour: "Peer code review"'
+
+# Event categories
+event:
+  title: 'Hacky Hour: "Peer code review"'
+  description: ""
+  categories:  'Hacky Hour'
+  date: "June 24, 2024"
+  end_date: "June 24, 2024"
+  time: "16:30-18:00"
+  location:
+    name: "Wikipedia Munich, Angertorstraße 3"
+    address: ""
+    map_url: ""
+  host: "LMU Open Science Center"
+  format:
+    type: 'Hacky Hour'
+    detail: ""
+  language:
+    primary: "English"
+    primary-code: "en"
+    detail: ""
+links:
+  registration: ""
+  materials: ""
+  workshop_website: ""
+
+event_description:
+  - ""
+
+instructors:
+  - name: ""
+    url: ""
+
+helpers:
+  - name: ""
+
+contact:
+  name: ""
+  email: ""
+---
+<!-- MANDAORY SECTION START  -->
+<link rel = "stylesheet"  href = "https://cdn.jsdelivr.net/npm/bootstrap-icons@5.6.2/font/bootstrap-icons.css">
+
+<h1 class="fs-1 text-primary"> {{< meta event.title >}} </h1>
+
+{{< include templates/_setup.qmd >}}
+{{< include templates/_info_boxes.qmd >}}
+{{< include templates/_register_button.qmd >}}
+<!-- MANDAORY SECTION END  -->
+
+<br>
+
+<!-- DETAILED EVENT DESCRIPTION HERE OR USE THE TEMPLATE BELOW TO INCLUDE THE STANDARD DESCRIPTION SECTION -->
+<!-- {{< include templates/_event_description.qmd >}} -->
+
+<p>In this session, Vera Karlbauer will walk us through an example of how to review the code of a colleague. We will then discuss best practices surrounding code review and brainstorm around the possibility of creating a code review network in Munich.</p><p><strong>Possible resource to prepare your session’s hack:</strong> <a href="https://github.com/OxfordCodeReviewNet/forum">https://github.com/OxfordCodeReviewNet/forum</a></p><p><strong>Sessions’ agenda:</strong></p><ul>
+<li>Brief round of introductions and description of the problems you’ll be working on during that session</li>
+<li>Formation of possible groups or tandems, if participants have tips to exchange on certain topics</li>
+<li>Hack</li>
+<li>Wrap-up: progress and next steps</li>
+</ul>
+<p>Learn more about the Hacky Hour initiative <a href="../../meetups/hackyhour/index.html" title="Hacky Hour">here</a>.</p><div class="g-clear"></div>
+
+
+
+<!-- MANDAORY SECTION START  -->
+<!-- _event_description.qmd template should always be at bottom -->
+{{< include templates/_instructors_helpers_contact.qmd >}}
+<!-- MANDAORY SECTION END  -->

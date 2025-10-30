@@ -1,0 +1,70 @@
+---
+format:
+    html:
+        table-of-contents: false
+        css: event-page-styles.css
+page-layout: full
+pagetitle: 'German Reproducibility Day'
+
+# Event categories
+event:
+  title: 'German Reproducibility Day'
+  description: ""
+  categories:  'German Reproducibility Day by the German Reproducibility Network (GRN) [more...]'
+  date: "November 16, 2021"
+  end_date: "November 16, 2021"
+  time: "13:00-17:00"
+  location:
+    name: "Online (Zoom)"
+    address: ""
+    map_url: ""
+  host: "LMU Open Science Center"
+  format:
+    type: 'German Reproducibility Day by the German Reproducibility Network (GRN) [more...]'
+    detail: ""
+  language:
+    primary: "English"
+    primary-code: "en"
+    detail: ""
+links:
+  registration: ""
+  materials: ""
+  workshop_website: ""
+
+event_description:
+  - ""
+
+instructors:
+  - name: ""
+    url: ""
+
+helpers:
+  - name: ""
+
+contact:
+  name: ""
+  email: ""
+---
+<!-- MANDAORY SECTION START  -->
+<link rel = "stylesheet"  href = "https://cdn.jsdelivr.net/npm/bootstrap-icons@5.6.2/font/bootstrap-icons.css">
+
+<h1 class="fs-1 text-primary"> {{< meta event.title >}} </h1>
+
+{{< include templates/_setup.qmd >}}
+{{< include templates/_info_boxes.qmd >}}
+{{< include templates/_register_button.qmd >}}
+<!-- MANDAORY SECTION END  -->
+
+<br>
+
+<!-- DETAILED EVENT DESCRIPTION HERE OR USE THE TEMPLATE BELOW TO INCLUDE THE STANDARD DESCRIPTION SECTION -->
+<!-- {{< include templates/_event_description.qmd >}} -->
+
+<p><img style="display: block; margin-left: auto; margin-right: auto;" src="../../images/germanreproday_header.png" alt="germanreproday_header"></p><p>The <a href="https://reproducibilitynetwork.de/">German Reproducibility Network (GRN)</a> invites to the first German Reproducibility Day<strong>:<br></strong></p><p>The German Reproducibility Day is dedicated to all stakeholders of the scientific landscape in Germany and beyond. The first event aims to raise awareness and discuss the relevance of reproducible and robust research, why a strong network of initiatives working towards open research in Germany is needed, and what this network's role and mission should be. Specific examples from GRN members will be used to show how to implement and promote reproducibility. There will also be enough space for social interaction and exchange.</p><p>The event will be held in English and will be conducted via the video conferencing tool Zoom. The seminar will not be recorded. Anyone interested is cordially inivited to join.</p><p>To participate in the event (free of charge), please register in advance:<br><a href="https://gfz-potsdam-de.zoom.us/meeting/register/tJMocuiqrTgtH9dFDk7lSZ8m-mLp8c3rEpZR">https://gfz-potsdam-de.zoom.us/meeting/register/tJMocuiqrTgtH9dFDk7lSZ8m-mLp8c3rEpZR</a></p><p>More information and the (preliminary) program can be found on the <a href="https://reproducibilitynetwork.de/germanreproday">homepage of the GRN</a>.</p><h2>About the German Reproducibilty Network</h2><p>Today, it seems more important than ever that research results are trustworthy and based on robust research. This includes transparency and openness to enable the reproducibility of research results as a key quality indicator in research, which is also in line with established principles of good scientific practice. With this background eight key Open Science actors in Germany founded the <a href="https://reproducibilitynetwork.de/">German Reproducibility Network (GRN</a><a>)</a> in January 2021. The LMU Open Science Center was one of them. As a peer-led cross-disciplinary consortium the GRN is dedicated to promote reproducible and robust research on a national level in Germany. Therefore,  it focuses on activities like supporting researchers in educating themselves about open science practices, connecting local and topic-centered Reproducibility Initiatives or advise institutions on how to embed open science practices in their work. Moreover, it represents the open science community toward other stakeholders in the wider scientific landscape.</p><div class="g-clear"></div>
+
+
+
+<!-- MANDAORY SECTION START  -->
+<!-- _event_description.qmd template should always be at bottom -->
+{{< include templates/_instructors_helpers_contact.qmd >}}
+<!-- MANDAORY SECTION END  -->

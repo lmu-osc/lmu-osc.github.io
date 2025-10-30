@@ -8,17 +8,55 @@
       const yearNum = Number(templateParams.year);
       const now = new Date();
 
+      // parseEventDate: accepts "July 04, 2025" (month-day-year) and "19 Sep, 2025" (day-month-year)
+      const parseEventDate = (dateStr) => {
+        if (!dateStr) return null;
+        const cleaned = String(dateStr).replace(/,/g, '').trim();
+        const parts = cleaned.split(/\s+/);
+        const months = ['jan','feb','mar','apr','may','jun','jul','aug','sep','oct','nov','dec'];
+
+        const build = (day, monthKey, year) => {
+          const monthIndex = months.indexOf(monthKey.toLowerCase().slice(0,3));
+          if (!isNaN(day) && monthIndex !== -1 && !isNaN(year)) {
+            return new Date(Number(year), monthIndex, Number(day));
+          }
+          return null;
+        };
+
+        // Case: day-month-year (e.g. "19 Sep 2025")
+        if (/^\d{1,2}$/.test(parts[0]) && parts.length >= 3) {
+          const day = parseInt(parts[0], 10);
+          const monthKey = parts[1];
+          const year = parseInt(parts[2], 10);
+          const d = build(day, monthKey, year);
+          if (d && !isNaN(d.getTime())) return d;
+        }
+
+        // Case: month-day-year (e.g. "July 04 2025")
+        if (/^[A-Za-z]+$/.test(parts[0]) && parts.length >= 3) {
+          const monthKey = parts[0];
+          const day = parseInt(parts[1], 10);
+          const year = parseInt(parts[2], 10);
+          const d = build(day, monthKey, year);
+          if (d && !isNaN(d.getTime())) return d;
+        }
+
+        // fallback
+        const fallback = new Date(dateStr);
+        return isNaN(fallback.getTime()) ? null : fallback;
+      };
+
       const filteredItems = (items || []).filter(item => {
-        if (!item || !item.date) return false;
-        const startDate = new Date(item.date);
-        if (isNaN(startDate)) return false;
+        if (!item || !item.event.date) return false;
+        const startDate = parseEventDate(item.event.date);
+        if (!startDate) return false;
         const startYear = startDate.getFullYear();
 
         let endDate = null;
         let endYear = null;
-        if (item.end_date) {
-          const parsedEnd = new Date(item.end_date);
-          if (!isNaN(parsedEnd)) {
+        if (item.event.end_date) {
+          const parsedEnd = parseEventDate(item.event.end_date);
+          if (parsedEnd) {
             endDate = parsedEnd;
             endYear = endDate.getFullYear();
           }
@@ -53,15 +91,15 @@
             
             <div class="event-date listing-date">
               <% 
-                const startDate = new Date(item.date);
+                const startDate = parseEventDate(item.event.date);
                 const startDay = startDate.getDate();
                 const startMonth = startDate.toLocaleString('en-GB', { month: 'short' });
                 const startYear = startDate.getFullYear();
                 
                 let dateDisplay = '';
             
-                if (item.end_date && !isNaN(new Date(item.end_date))) {
-                  const endDate = new Date(item.end_date);
+                if (item.event.end_date && parseEventDate(item.event.end_date)) {
+                  const endDate = parseEventDate(item.event.end_date);
                   const endDay = endDate.getDate();
                   const endMonth = endDate.toLocaleString('en-GB', { month: 'short' });
                   const endYear = endDate.getFullYear();
@@ -86,13 +124,13 @@
 
             <div class="event-labels">
               <div class="event-category listing-categories">
-                <%- (item.categories?.[0] || 'EVENT').toUpperCase() %>
+                <%- (item.event.categories?.[0] || 'EVENT').toUpperCase() %>
               </div>
 
             </div>
-            <div class="title listing-title"><%- item.title %></div>
+            <div class="title listing-title"><%- item.event.title %></div>
             <div class="separator"></div>
-            <p class="description listing-description"><%- item.description %></p>
+            <p class="description listing-description"><%- item.event.description %></p>
             <% if (item.trainingurl){ %>
               <div class = "trainingurl listing-training">
                 <i class="bi bi-folder2"></i>
@@ -104,7 +142,7 @@
             <div class="event-footer">
               <div class="event-host-info-group">
                 <div class="event-host-info">
-                  Hosted by: <%- item.host %>
+                  Hosted by: <%- item.event.host %>
                 </div>
               </div>
               

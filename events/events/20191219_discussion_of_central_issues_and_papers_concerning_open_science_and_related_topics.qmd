@@ -1,0 +1,80 @@
+---
+format:
+    html:
+        table-of-contents: false
+        css: event-page-styles.css
+page-layout: full
+pagetitle: 'Journal Club: "ReproducibiliTea: Discussion of central issues and papers concerning Open Science and related topics"'
+
+# Event categories
+event:
+  title: 'Journal Club: "ReproducibiliTea: Discussion of central issues and papers concerning Open Science and related topics"'
+  description: ""
+  categories:  'ReproducibiliTea Journal Club'
+  date: "December 19, 2019"
+  end_date: "December 19, 2019"
+  time: "12:30"
+  location:
+    name: "Leopoldstr. 13, Room 1407"
+    address: ""
+    map_url: ""
+  host: "LMU Open Science Center"
+  format:
+    type: 'ReproducibiliTea Journal Club'
+    detail: ""
+  language:
+    primary: "English"
+    primary-code: "en"
+    detail: ""
+links:
+  registration: ""
+  materials: ""
+  workshop_website: ""
+
+event_description:
+  - ""
+
+instructors:
+  - name: ""
+    url: ""
+
+helpers:
+  - name: ""
+
+contact:
+  name: ""
+  email: ""
+---
+<!-- MANDAORY SECTION START  -->
+<link rel = "stylesheet"  href = "https://cdn.jsdelivr.net/npm/bootstrap-icons@5.6.2/font/bootstrap-icons.css">
+
+<h1 class="fs-1 text-primary"> {{< meta event.title >}} </h1>
+
+{{< include templates/_setup.qmd >}}
+{{< include templates/_info_boxes.qmd >}}
+{{< include templates/_register_button.qmd >}}
+<!-- MANDAORY SECTION END  -->
+
+<br>
+
+<!-- DETAILED EVENT DESCRIPTION HERE OR USE THE TEMPLATE BELOW TO INCLUDE THE STANDARD DESCRIPTION SECTION -->
+<!-- {{< include templates/_event_description.qmd >}} -->
+
+<p>The interdisciplinary journal club “ReproJucibiliTea” will be launched every 3-4 weeks and address main questions and current topics concerning Open Science and the credibility of research findings. The idea - originated from Great Britain - was already developed in many other countries using the name "ReproducibiliTea". The slogan of the new Journal-Club at LMU Munich is "ReproJuicebiliTea" matching the covered topics (Reproducibility &amp; Open Science) and the extended selection of drinks. Tea, juice and small snacks are provided to live up to the slogan. Everybody is welcome to bring their own food and drinks and thus connect the journal club with their lunch break.</p><p><br>On December 18th, 2019, the first session of the ReproJucibiliTea took place at Leopoldstrasse 13. Around 15 participants from different scientific fields (e.g. psychology, statistics, political sciences) including students, doctoral candidates and professors met to discuss the following chosen paper as a typical introduction to problems of credibility in science:</p><p><br>Ioannidis, J. P. A. (2005). Why Most Published Research Findings Are<br>False. PLoS Medicine, 2(8), 6. <a href="https://doi.org/10.1371/journal.pmed.0020124">https://doi.org/10.1371/journal.pmed.0020124</a></p><p><br>If you are interested, you are cordially welcome to join the next meetings. You can simply send an e-mail to <a class="g-link-mail" href="mailto:stephan.nuding@yahoo.de" title="Send email to: stephan.nuding@yahoo.de">stephan.nuding@yahoo.de</a> to join the mailing list to get information about the next meetings and chosen papers.</p><p><br>For each session it would be helpful to have read the announced paper (but there will always a short summary to bring everyone on the same page). Then there is a discussion about the paper and related topics, in which you are able to bring in your own comments, questions or criticism.</p><p>Organizational team:</p><ul style="list-style-type: square;">
+<li>PD Dr. Felix Schönbrodt, <a href="../../home_boxes/index.html" title="Welcome to the Open Science Center">LMU Open Science Center (OSC)</a>
+</li>
+<li>Laura Goetz, <a href="http://www.psy.lmu.de/fachpsy/index.html">students council of Psychology</a>
+</li>
+<li>Stephan Nuding, <a href="http://www.psy.lmu.de/fachpsy/index.html">students council of Psychology</a>
+</li>
+<li>Leonhard Schramm, <a href="http://www.psy.lmu.de/fachpsy/index.html">students council of Psychology</a>
+</li>
+</ul>
+<p> </p><div class="g-clear"></div>
+
+
+
+<!-- MANDAORY SECTION START  -->
+<!-- _event_description.qmd template should always be at bottom -->
+{{< include templates/_instructors_helpers_contact.qmd >}}
+<!-- MANDAORY SECTION END  -->

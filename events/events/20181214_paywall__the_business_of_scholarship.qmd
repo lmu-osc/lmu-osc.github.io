@@ -1,0 +1,77 @@
+---
+format:
+    html:
+        table-of-contents: false
+        css: event-page-styles.css
+page-layout: full
+pagetitle: 'Symposium: "Paywall - The Business of Scholarship"'
+
+# Event categories
+event:
+  title: 'Symposium: "Paywall - The Business of Scholarship"'
+  description: ""
+  categories:  'Symposium'
+  date: "December 14, 2018"
+  end_date: "December 14, 2018"
+  time: "NA"
+  location:
+    name: "Geschwister-Scholl-Platz 1,Lecture Hall M 018"
+    address: ""
+    map_url: ""
+  host: "LMU Open Science Center"
+  format:
+    type: 'Symposium'
+    detail: ""
+  language:
+    primary: "English"
+    primary-code: "en"
+    detail: ""
+links:
+  registration: ""
+  materials: ""
+  workshop_website: ""
+
+event_description:
+  - ""
+
+instructors:
+  - name: ""
+    url: ""
+
+helpers:
+  - name: ""
+
+contact:
+  name: ""
+  email: ""
+---
+<!-- MANDAORY SECTION START  -->
+<link rel = "stylesheet"  href = "https://cdn.jsdelivr.net/npm/bootstrap-icons@5.6.2/font/bootstrap-icons.css">
+
+<h1 class="fs-1 text-primary"> {{< meta event.title >}} </h1>
+
+{{< include templates/_setup.qmd >}}
+{{< include templates/_info_boxes.qmd >}}
+{{< include templates/_register_button.qmd >}}
+<!-- MANDAORY SECTION END  -->
+
+<br>
+
+<!-- DETAILED EVENT DESCRIPTION HERE OR USE THE TEMPLATE BELOW TO INCLUDE THE STANDARD DESCRIPTION SECTION -->
+<!-- {{< include templates/_event_description.qmd >}} -->
+
+<p>We are happy to announce that a collaboration of <a href="https://www.leibniz-psychology.org/">ZPID</a>, LMU OSC, and LMU University Library will present the movie "<a href="https://paywallthemovie.com/">Paywall - The Business of Scholarship</a>" in Munich.</p><p>The movie is a documentary which focuses on the need for open access to research and science. It questions the rationale behind the $25.2 billion a year that flows into for-profit academic publishers, examines the 35-40% profit margin associated with the top academic publishers, and looks at the factors impeding global academic innovation.</p><p>We will live-screen the movie, and have a <strong>subsequent panel discussion</strong>, featuring the following panelists:</p><ul>
+<li>Prof. Jason Schmitt (Director and producer of the movie; Clarkson University, USA)</li>
+<li>Prof. Michael Bosnjak (Leibniz Institute for Psychology Information, ZPID, Trier)</li>
+<li>Volker Schallehn (Head of Open Access Publishing, University Library, LMU)</li>
+<li>
+<a href="../../members/individual_members/lmu-members/plesnila/index.html" title="Plesnila">Prof. Nikolaus Plesnila</a> (LMU Open Science Center; University Hospital of Munich)</li>
+</ul>
+<div>The event will start by a short opening speech by our speaker, <a href="../../members/individual_members/lmu-members/auspurg/index.html" title="Auspurg">Prof. Katrin Auspurg</a>, and will be moderated by OSC member <a href="https://www.ibe.med.uni-muenchen.de/mitarbeiter/mitarbeiter/hoffmann/index.html">Dr. Sabine Hoffmann</a>.</div><p>See the <strong>trailer</strong> here: <a href="https://www.youtube.com/watch?v=YaHlcwyn2Jk&amp;feature=youtu.be">https://www.youtube.com/watch?v=YaHlcwyn2Jk&amp;feature=youtu.be</a></p><p>The event will take place on <strong>Friday, Dec 14, 2018 from 14:30 to 16:30 in Lecture Hall M 018, Geschwister-Scholl-Platz 1, LMU Munich</strong>.</p><p><strong>Claim your (free!) ticket here</strong>: <a>http://www.leibniz-psychology.org/paywall/</a></p><p><img height="73" style="display: block; margin-left: auto; margin-right: auto;" width="73" class="left" src="../../images/paywall_qr.png" alt="paywall_qr"></p><p><strong><br></strong></p><p><strong><br></strong></p><p><strong><br></strong></p><p><strong>Organized by:</strong></p><p><a href="../../index.html" title="eOpen Science Center"><strong><img height="55" width="175" class="left" src="../../images/lmu-osc_logo_large.jpg" alt="LMU-OSC_logo_large"></strong></a></p><p> </p><p> </p><p>  <a href="http://www.leibniz-psychology.org/paywall/"><strong><img height="55" width="223" class="left" src="../../images/zpid.png" alt="zpid"></strong></a></p><p> </p><p> </p><p> <strong><a href="https://www.en.ub.uni-muenchen.de/index.html">University Library of the LMU</a><br></strong></p><p><strong><br></strong></p><p style="text-align: left;"> <a href="paywall_poster.jpg" title="paywall_poster"><img height="580" style="display: block; margin-left: auto; margin-right: auto;" width="415" class="left" src="paywall_poster.jpg" alt="paywall_poster"></a></p><div class="g-clear"></div>
+
+
+
+<!-- MANDAORY SECTION START  -->
+<!-- _event_description.qmd template should always be at bottom -->
+{{< include templates/_instructors_helpers_contact.qmd >}}
+<!-- MANDAORY SECTION END  -->

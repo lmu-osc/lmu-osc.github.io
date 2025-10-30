@@ -1,0 +1,75 @@
+---
+format:
+    html:
+        table-of-contents: false
+        css: event-page-styles.css
+page-layout: full
+pagetitle: 'Open Science in der Promotion'
+
+# Event categories
+event:
+  title: 'Open Science in der Promotion'
+  description: ""
+  categories:  'Workshop'
+  date: "November 25, 2019"
+  end_date: "November 25, 2019"
+  time: "16:00"
+  location:
+    name: "Rooms announced after registration"
+    address: ""
+    map_url: ""
+  host: "LMU Open Science Center"
+  format:
+    type: 'Workshop'
+    detail: ""
+  language:
+    primary: "German"
+    primary-code: "de"
+    detail: ""
+links:
+  registration: ""
+  materials: ""
+  workshop_website: ""
+
+event_description:
+  - ""
+
+instructors:
+  - name: ""
+    url: ""
+
+helpers:
+  - name: ""
+
+contact:
+  name: ""
+  email: ""
+---
+<!-- MANDAORY SECTION START  -->
+<link rel = "stylesheet"  href = "https://cdn.jsdelivr.net/npm/bootstrap-icons@5.6.2/font/bootstrap-icons.css">
+
+<h1 class="fs-1 text-primary"> {{< meta event.title >}} </h1>
+
+{{< include templates/_setup.qmd >}}
+{{< include templates/_info_boxes.qmd >}}
+{{< include templates/_register_button.qmd >}}
+<!-- MANDAORY SECTION END  -->
+
+<br>
+
+<!-- DETAILED EVENT DESCRIPTION HERE OR USE THE TEMPLATE BELOW TO INCLUDE THE STANDARD DESCRIPTION SECTION -->
+<!-- {{< include templates/_event_description.qmd >}} -->
+
+<p>We are glad to announce an event from the series "Kurz &amp; bündig" of the GraduateCenterLMU</p><p>In discussions about the quality of scientific work, the term "Open Science" has been appearing again and again for several years. What does this term mean, and why should doctoral students deal with it as part of their research project?</p><p><br>Topics:</p><ul style="list-style-type: square;">
+<li>"Everything new and everything different? - Origin and Location of Open Science</li>
+<li>Fields of action - central topics of Open Science</li>
+<li>The actors - the LMU Open Science Center and other institutions</li>
+<li>"And what does that have to do with my dissertation?" - Discussion of possible challenges for one's own research activities</li>
+</ul><p><br><a href="https://www.graduatecenter.uni-muenchen.de/veranstaltungen/kurzbuendig/open_science/index.html">Registration for the workshop</a><br><a>Frequently Asked Questions (short &amp; concise)</a></p><div class="g-clear"></div>
+
+
+
+<!-- MANDAORY SECTION START  -->
+<!-- _event_description.qmd template should always be at bottom -->
+{{< include templates/_instructors_helpers_contact.qmd >}}
+<!-- MANDAORY SECTION END  -->

@@ -1,0 +1,83 @@
+---
+format:
+    html:
+        table-of-contents: false
+        css: event-page-styles.css
+page-layout: full
+pagetitle: 'Hacky Hour: "Code documentation"'
+
+# Event categories
+event:
+  title: 'Hacky Hour: "Code documentation"'
+  description: ""
+  categories:  'Hacky Hour'
+  date: "May 27, 2024"
+  end_date: "May 27, 2024"
+  time: "16:30-18:00"
+  location:
+    name: "Wikipedia Munich, Angertorstraße 3"
+    address: ""
+    map_url: ""
+  host: "LMU Open Science Center"
+  format:
+    type: 'Hacky Hour'
+    detail: ""
+  language:
+    primary: "English"
+    primary-code: "en"
+    detail: ""
+links:
+  registration: ""
+  materials: ""
+  workshop_website: ""
+
+event_description:
+  - ""
+
+instructors:
+  - name: ""
+    url: ""
+
+helpers:
+  - name: ""
+
+contact:
+  name: ""
+  email: ""
+---
+<!-- MANDAORY SECTION START  -->
+<link rel = "stylesheet"  href = "https://cdn.jsdelivr.net/npm/bootstrap-icons@5.6.2/font/bootstrap-icons.css">
+
+<h1 class="fs-1 text-primary"> {{< meta event.title >}} </h1>
+
+{{< include templates/_setup.qmd >}}
+{{< include templates/_info_boxes.qmd >}}
+{{< include templates/_register_button.qmd >}}
+<!-- MANDAORY SECTION END  -->
+
+<br>
+
+<!-- DETAILED EVENT DESCRIPTION HERE OR USE THE TEMPLATE BELOW TO INCLUDE THE STANDARD DESCRIPTION SECTION -->
+<!-- {{< include templates/_event_description.qmd >}} -->
+
+<p>In this session, we will discuss the differences between code commenting and documenting and exchange tips on best practices!</p><p><strong>Possible resources to prepare your session’s hack:</strong></p><ul>
+<li>
+<a href="https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes">How to write good READMEs for your code repositories</a> to tell others why your project is useful and what they can do with it</li>
+<li>
+<a href="https://docs.github.com/en/communities/documenting-your-project-with-wikis/about-wikis">How to write good WIKIs for your projects</a> so that others can use and contribute to your project.</li>
+<li><a href="https://realpython.com/documenting-python-code/" target="_blank">Python Documentation techniques</a></li>
+</ul>
+<div></div><p><strong>Sessions’ agenda:</strong></p><ul>
+<li>Brief round of introductions and description of the problems you’ll be working on during that session</li>
+<li>Formation of possible groups or tandems, if participants have tips to exchange on certain topics</li>
+<li>Hack</li>
+<li>Wrap-up: progress and next steps</li>
+</ul>
+<p>Learn more about the Hacky Hour initiative <a href="../../meetups/hackyhour/index.html" title="Hacky Hour">here</a>.</p><div class="g-clear"></div>
+
+
+
+<!-- MANDAORY SECTION START  -->
+<!-- _event_description.qmd template should always be at bottom -->
+{{< include templates/_instructors_helpers_contact.qmd >}}
+<!-- MANDAORY SECTION END  -->

@@ -1,0 +1,78 @@
+---
+format:
+    html:
+        table-of-contents: false
+        css: event-page-styles.css
+page-layout: full
+pagetitle: 'Workshop: "Tips and tools for a reproducible workflow"'
+
+# Event categories
+event:
+  title: 'Workshop: "Tips and tools for a reproducible workflow"'
+  description: ""
+  categories:  'Workshop'
+  date: "November 10, 2021"
+  end_date: "November 10, 2021"
+  time: "14:00–17:00 & 24.11.2021"
+  location:
+    name: "Online (Zoom-Meeting)"
+    address: ""
+    map_url: ""
+  host: "LMU Open Science Center"
+  format:
+    type: 'Workshop'
+    detail: ""
+  language:
+    primary: "German"
+    primary-code: "de"
+    detail: ""
+links:
+  registration: ""
+  materials: ""
+  workshop_website: ""
+
+event_description:
+  - ""
+
+instructors:
+  - name: ""
+    url: ""
+
+helpers:
+  - name: ""
+
+contact:
+  name: ""
+  email: ""
+---
+<!-- MANDAORY SECTION START  -->
+<link rel = "stylesheet"  href = "https://cdn.jsdelivr.net/npm/bootstrap-icons@5.6.2/font/bootstrap-icons.css">
+
+<h1 class="fs-1 text-primary"> {{< meta event.title >}} </h1>
+
+{{< include templates/_setup.qmd >}}
+{{< include templates/_info_boxes.qmd >}}
+{{< include templates/_register_button.qmd >}}
+<!-- MANDAORY SECTION END  -->
+
+<br>
+
+<!-- DETAILED EVENT DESCRIPTION HERE OR USE THE TEMPLATE BELOW TO INCLUDE THE STANDARD DESCRIPTION SECTION -->
+<!-- {{< include templates/_event_description.qmd >}} -->
+
+<p>The <a>LMU Open Science Initiative in Psychology (OSIP)</a> cordially invites to the online workshop "Tips and tools for a reproducible workflow?" led and organized by <a href="../../members/individual_members/lmu-members/zygar-hoffmann/index.html" title="Zygar-Hoffmann">Dr. Caroline Hygar-Hoffmann</a> and <a>Moritz Fischer</a>.</p><p>In a mix of input and hand-on sessions you can learn more about how to design your workflow in research projects in a way that you as well as everyone who will be involved with your projects (e.g. project members, reviewers, or your research community) will be able to reproduce it later and you will work more efficiently.</p><p>The workshop will take place as an online-meeting on Zoom and consist of two afternoons on November 10th (Day 1) and November 24th (Day 2), 2021. On each day the session will last around three hours, starting from 2pm and ending around 5pm.</p><p>The sessions cover an introduction and practical sessions on the following topics:</p><ul style="list-style-type: square;">
+<li>Traceable and reproducible data management (Day 1)</li>
+<li>Versioning with Git (Day 1)</li>
+<li>Reproducible writing with Rmarkdown (Day 1)</li>
+<li>Experiences &amp; Stumbling Blocks (Day 2)</li>
+<li>Tools for reproducible collaboration (Day 2)</li>
+<li>Outlook on next possible steps (Day 2)</li>
+</ul>
+<p>The workshop is currently planned in German, but the slides are in English. Basic knowledge of R is advantageous. The workshop is free of charge.</p><p>If you want to participate, please sign up for one or both days with your email address at this <a href="https://terminplaner4.dfn.de/cyRX2UvyLwasfO3S">link</a> by November 5th, 2021, if possible. Places will be allocated on a first-come, first-served basis. Access data and details will be sent to all registered participants before the first date.</p><p>Additional online information on good data management can be found in this <a href="https://www.teaguehenry.com/strings-not-factors/2021/2/21/eight-principles-of-good-data-management">blog post by Dr. Teague Henry</a>.</p><div class="g-clear"></div>
+
+
+
+<!-- MANDAORY SECTION START  -->
+<!-- _event_description.qmd template should always be at bottom -->
+{{< include templates/_instructors_helpers_contact.qmd >}}
+<!-- MANDAORY SECTION END  -->

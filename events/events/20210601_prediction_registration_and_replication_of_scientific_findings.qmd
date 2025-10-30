@@ -1,0 +1,76 @@
+---
+format:
+    html:
+        table-of-contents: false
+        css: event-page-styles.css
+page-layout: full
+pagetitle: 'Workshop: "Prediction, Registration, and Replication of Scientific Findings"'
+
+# Event categories
+event:
+  title: 'Workshop: "Prediction, Registration, and Replication of Scientific Findings"'
+  description: ""
+  categories:  'Workshop'
+  date: "June 01, 2021"
+  end_date: "June 01, 2021"
+  time: "14:00-02.06.2021"
+  location:
+    name: "Online (Zoom)"
+    address: ""
+    map_url: ""
+  host: "LMU Open Science Center"
+  format:
+    type: 'Workshop'
+    detail: ""
+  language:
+    primary: "English"
+    primary-code: "en"
+    detail: ""
+links:
+  registration: ""
+  materials: ""
+  workshop_website: ""
+
+event_description:
+  - ""
+
+instructors:
+  - name: ""
+    url: ""
+
+helpers:
+  - name: ""
+
+contact:
+  name: ""
+  email: ""
+---
+<!-- MANDAORY SECTION START  -->
+<link rel = "stylesheet"  href = "https://cdn.jsdelivr.net/npm/bootstrap-icons@5.6.2/font/bootstrap-icons.css">
+
+<h1 class="fs-1 text-primary"> {{< meta event.title >}} </h1>
+
+{{< include templates/_setup.qmd >}}
+{{< include templates/_info_boxes.qmd >}}
+{{< include templates/_register_button.qmd >}}
+<!-- MANDAORY SECTION END  -->
+
+<br>
+
+<!-- DETAILED EVENT DESCRIPTION HERE OR USE THE TEMPLATE BELOW TO INCLUDE THE STANDARD DESCRIPTION SECTION -->
+<!-- {{< include templates/_event_description.qmd >}} -->
+
+<p>We are incredibly excited to announce an interdisciplinary workshop by the <a>LMU Center for Advanced Studies (CAS)</a> which is co-organized by the <a href="../../index.html" title="eOpen Science Center">LMU Open Science Center (OSC)</a>:</p><p> </p><p style="text-align: center;"><strong>"Prediction, Registration, and Replication of Scientific Findings"</strong></p><p style="text-align: center;"><strong><br></strong></p><p>The workshop aims to bring together researchers from several disciplines to discuss recent developments in the agenda of transparent and reproducible science. It consists of presentation for around 40 minutes each followed by short discussions with the audience. Each day of the workshop closes with a general discussion. Among others, the following topics are covered by the workshop:</p><ul>
+<li>Preregistration and Pre-analysis plan</li>
+<li>Prediction of Experimental Outcomes</li>
+<li>Registered Reports</li>
+<li>Peer Review and Selective Reporting</li>
+</ul>
+<p>The list of speakers consists of scientists from many different universities and disciplines including Abel Brodeur (Ottawa/Economics), Christopher Chambers (Cardiff/Cognitive Neuroscience), Anna Dreber (Stockholm School of Economics/Economics), Tom Hardwicke (Amsterdam/Psychology), Sabine Hoffmann (LMU/Medical Information Processing,), Macartan Humphreys (Columbia University/Political Science), Maximilian Kasy (Oxford/Economics), Felix Schönbrodt (LMU/Psychology) and Eva Vivalt (Toronto/Economics).</p><p>More information about the schedule, all speakers and the presented topics can be found at the <a href="https://www.taisukeimai.com/cas_workshop_2021/index.html">website of the organizer</a>.</p><p>If you are interested in participating, please register following the information on the <a>official website of the workshop at the </a><a>homepage of the LMU Center of Ad</a><a>vanced Studies</a>.</p><div class="g-clear"></div>
+
+
+
+<!-- MANDAORY SECTION START  -->
+<!-- _event_description.qmd template should always be at bottom -->
+{{< include templates/_instructors_helpers_contact.qmd >}}
+<!-- MANDAORY SECTION END  -->

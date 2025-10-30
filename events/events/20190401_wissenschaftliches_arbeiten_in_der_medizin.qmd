@@ -1,0 +1,70 @@
+---
+format:
+    html:
+        table-of-contents: false
+        css: event-page-styles.css
+page-layout: full
+pagetitle: 'Workshop: "Wissenschaftliches Arbeiten in der Medizin"'
+
+# Event categories
+event:
+  title: 'Workshop: "Wissenschaftliches Arbeiten in der Medizin"'
+  description: ""
+  categories:  'Workshop'
+  date: "April 01, 2019"
+  end_date: "April 01, 2019"
+  time: "11:00–17:00"
+  location:
+    name: "HörsaaltraktKlinikum Großhadern"
+    address: ""
+    map_url: ""
+  host: "LMU Open Science Center"
+  format:
+    type: 'Workshop'
+    detail: ""
+  language:
+    primary: "German"
+    primary-code: "de"
+    detail: ""
+links:
+  registration: ""
+  materials: ""
+  workshop_website: ""
+
+event_description:
+  - ""
+
+instructors:
+  - name: ""
+    url: ""
+
+helpers:
+  - name: ""
+
+contact:
+  name: ""
+  email: ""
+---
+<!-- MANDAORY SECTION START  -->
+<link rel = "stylesheet"  href = "https://cdn.jsdelivr.net/npm/bootstrap-icons@5.6.2/font/bootstrap-icons.css">
+
+<h1 class="fs-1 text-primary"> {{< meta event.title >}} </h1>
+
+{{< include templates/_setup.qmd >}}
+{{< include templates/_info_boxes.qmd >}}
+{{< include templates/_register_button.qmd >}}
+<!-- MANDAORY SECTION END  -->
+
+<br>
+
+<!-- DETAILED EVENT DESCRIPTION HERE OR USE THE TEMPLATE BELOW TO INCLUDE THE STANDARD DESCRIPTION SECTION -->
+<!-- {{< include templates/_event_description.qmd >}} -->
+
+<p>Organisiert wird die Veranstaltung von der LMU Open Science Initiatve in Medicine (OSIM).</p><p>Starten wird das Event mit einem Vortrag von Malcolm Mcleod zu Verschwendung und Replikation in der medizinischen Forschung. Am Nachmittag werden die Themen Reproduzierbarkeit, Data Sharing und Open Science besprochen und diskutiert.</p><p>Für Details betrachten Sie bitte den angehängten Flyer und das Poster.<br>Bitte leiten Sie diese Nachricht gerne an interessierte Personen weiter oder nutzen Sie das angehängte Material für Aushänge.</p><p>Die Veranstaltung ist kostenlos und offen für alle Interessenten.<br>Anmeldung (wichtig für die Planung von Catering und Teilnahmebestätigungen): <a href="http://bit.ly/2RQtajW">bit.ly/2RQtajW</a></p><p>Wir freuen uns auf Ihr Kommen!</p><p><img class="left" src="../../images/event0419.png" alt="OpenSciencePoster-1"></p><div class="g-clear"></div>
+
+
+
+<!-- MANDAORY SECTION START  -->
+<!-- _event_description.qmd template should always be at bottom -->
+{{< include templates/_instructors_helpers_contact.qmd >}}
+<!-- MANDAORY SECTION END  -->

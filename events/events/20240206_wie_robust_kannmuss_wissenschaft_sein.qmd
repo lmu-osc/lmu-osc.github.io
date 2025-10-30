@@ -1,0 +1,70 @@
+---
+format:
+    html:
+        table-of-contents: false
+        css: event-page-styles.css
+page-layout: full
+pagetitle: 'Podiumsdiskussion: "Wie robust kann/muss Wissenschaft sein?"'
+
+# Event categories
+event:
+  title: 'Podiumsdiskussion: "Wie robust kann/muss Wissenschaft sein?"'
+  description: ""
+  categories:  'Podiumsdiskussion'
+  date: "February 06, 2024"
+  end_date: "February 06, 2024"
+  time: "18:30"
+  location:
+    name: "Bayerische Akademie der Wissenschaften, Alfons-Goppel-Str. 11 (Residenz), 80539 München"
+    address: ""
+    map_url: ""
+  host: "LMU Open Science Center"
+  format:
+    type: 'Podiumsdiskussion'
+    detail: ""
+  language:
+    primary: "German"
+    primary-code: "de"
+    detail: ""
+links:
+  registration: ""
+  materials: ""
+  workshop_website: ""
+
+event_description:
+  - ""
+
+instructors:
+  - name: ""
+    url: ""
+
+helpers:
+  - name: ""
+
+contact:
+  name: ""
+  email: ""
+---
+<!-- MANDAORY SECTION START  -->
+<link rel = "stylesheet"  href = "https://cdn.jsdelivr.net/npm/bootstrap-icons@5.6.2/font/bootstrap-icons.css">
+
+<h1 class="fs-1 text-primary"> {{< meta event.title >}} </h1>
+
+{{< include templates/_setup.qmd >}}
+{{< include templates/_info_boxes.qmd >}}
+{{< include templates/_register_button.qmd >}}
+<!-- MANDAORY SECTION END  -->
+
+<br>
+
+<!-- DETAILED EVENT DESCRIPTION HERE OR USE THE TEMPLATE BELOW TO INCLUDE THE STANDARD DESCRIPTION SECTION -->
+<!-- {{< include templates/_event_description.qmd >}} -->
+
+<p>Die Sozial-, Verhaltens-, Lebens- und Kognitionswissenschaften sind seit einiger Zeit mit dem Problem konfrontiert, dass wissenschaftliche Ergebnisse häufig wenig robust und wiederholbar sind. Die Auswirkungen von Unsicherheit und Wiederholbarkeit von Forschungsergebnissen auf Fragen der Wissenschaft, Gesellschaft und Öffentlichkeit werden Hauptgegenstand der Diskussion sein: Wie robust können wissenschaftliche Befunde unter den aktuellen Voraussetzungen sein? Wie verlässlich müssen oder sollen Ergebnisse sein, um sie öffentlich zu kommunizieren und gegebenenfalls zum Anlass für gesellschaftliche oder politische Maßnahmen zu machen? Diskutieren werden Vertreterinnen und Vertreter der Wissenschaft, der Forschungsförderung (Deutsche Forschungsgemeinschaft) und der Medien (Süddeutsche Zeitung).</p><p>Die Veranstaltung ist öffentlich und richtet sich an Interessierte mit und ohne wissenschaftlichen Hintergrund. Veranstalter sind das junge Kolleg der Bayerischen Akademie der Wissenschaften und das von der Deutschen Forschungsgemeinschaft geförderte Schwerpunktprogramm „META-REP“. Veranstaltungsort ist die Bibliothek der Bayerischen Akademie der Wissenschaften in München (Anmeldung über: <a href="https://meta-rep.de/badw">https://meta-rep.de/badw</a>). Falls Sie nicht vor Ort sein können, bieten wir einen Live-Stream an, Informationen hierzu finden Sie unter <a href="https://badw.de">https://badw.de</a> (zum Live-Stream ist keine Anmeldung erforderlich).</p><p>META-REP: <a href="https://www.meta-rep.uni-muenchen.de/index.html">https://www.meta-rep.uni-muenchen.de/index.html</a><br>Kontakt: <a class="g-link-mail" href="mailto:meta-rep.coordination@psy.lmu.de" title="Send email to: meta-rep.coordination@psy.lmu.de">meta-rep.coordination@psy.lmu.de</a> [Johannes Ziegler]</p><div class="g-clear"></div>
+
+
+
+<!-- MANDAORY SECTION START  -->
+<!-- _event_description.qmd template should always be at bottom -->
+{{< include templates/_instructors_helpers_contact.qmd >}}
+<!-- MANDAORY SECTION END  -->
