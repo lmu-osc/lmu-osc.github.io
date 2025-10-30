@@ -5,27 +5,43 @@
 const today = new Date();
 today.setHours(0, 0, 0, 0); // midnight for comparisons
 
-// Robust parser for "19 Sep, 2025" (and similar)
+// Robust parser that accepts both "19 Sep, 2025" and "July 04, 2025" (month-day-year or day-month-year)
 const parseEventDate = (dateStr) => {
-if (!dateStr) return null;
-const cleaned = String(dateStr).replace(',', '').trim();
-const parts = cleaned.split(/\s+/);
+  if (!dateStr) return null;
+  const cleaned = String(dateStr).replace(/,/g, '').trim();
+  const parts = cleaned.split(/\s+/);
+  const months = ['jan','feb','mar','apr','may','jun','jul','aug','sep','oct','nov','dec'];
 
-// Try the expected pattern "19 Sep 2025" or "19 Sep, 2025"
-if (parts.length >= 3) {
-const day = parseInt(parts[0], 10);
-const monthStr = parts[1].toLowerCase().slice(0, 3);
-const year = parseInt(parts[2], 10);
-const months = ['jan','feb','mar','apr','may','jun','jul','aug','sep','oct','nov','dec'];
-const monthIndex = months.indexOf(monthStr);
-if (!isNaN(day) && monthIndex !== -1 && !isNaN(year)) {
-return new Date(year, monthIndex, day);
-}
-}
+  // helper to build date when we have numeric day, monthKey and year
+  const build = (day, monthKey, year) => {
+    const monthIndex = months.indexOf(monthKey);
+    if (!isNaN(day) && monthIndex !== -1 && !isNaN(year)) {
+      return new Date(year, monthIndex, day);
+    }
+    return null;
+  };
 
-// Fallback to Date constructor; return null if invalid
-const fallback = new Date(dateStr);
-return isNaN(fallback.getTime()) ? null : fallback;
+  // Case A: day-month-year (e.g. "19 Sep 2025" or "19 Sep, 2025")
+  if (/^\d{1,2}$/.test(parts[0]) && parts.length >= 3) {
+    const day = parseInt(parts[0], 10);
+    const monthKey = parts[1].toLowerCase().slice(0,3);
+    const year = parseInt(parts[2], 10);
+    const d = build(day, monthKey, year);
+    if (d) return d;
+  }
+
+  // Case B: month-day-year (e.g. "July 04 2025" or "July 04, 2025")
+  if (/^[A-Za-z]+$/.test(parts[0]) && parts.length >= 3) {
+    const monthKey = parts[0].toLowerCase().slice(0,3);
+    const day = parseInt(parts[1], 10);
+    const year = parseInt(parts[2], 10);
+    const d = build(day, monthKey, year);
+    if (d) return d;
+  }
+
+  // Fallback to Date constructor; return null if invalid
+  const fallback = new Date(dateStr);
+  return isNaN(fallback.getTime()) ? null : fallback;
 };
 
 const normalizeToMidnight = (d) => {
