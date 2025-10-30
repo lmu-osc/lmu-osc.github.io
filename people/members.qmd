@@ -1,0 +1,29 @@
+---
+title: "Members"
+listing:
+  - id: lmu-members
+    contents: 
+      - people
+    template: listings/general-listing.ejs
+    sort: "surname asc"
+    include: 
+      membertype: ["lmu-individual"]
+  - id: associated-members
+    contents: 
+      - people
+    template: listings/general-listing.ejs
+    sort: "surname asc"
+    include: 
+      membertype: ["associated"]
+
+---
+
+## LMU Members
+
+::: {#lmu-members}
+:::
+
+## Associated Members
+
+::: {#associated-members}
+:::

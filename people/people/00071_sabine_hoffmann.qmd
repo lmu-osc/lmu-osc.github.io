@@ -1,0 +1,56 @@
+---
+title: Sabine Hoffmann
+academic_title: Dr.
+name: Sabine Hoffmann
+surname: Hoffmann
+first_name: Sabine
+position: Head of statistical consulting laboratory StaBLab, Institute of Statistics
+faculty: Math, Informatics & Statistics
+membertype: ['lmu-individual', "current scientific board"]
+email: sabine.hoffmann@stat.uni-muenchen.de
+photo: 'images/hoffmann_sabine.jpg'
+website:
+  - label: 'Website 1'
+    url: https://www.stablab.stat.uni-muenchen.de/personen/leitung/hoffmann/index.html
+social_media:
+  ORCID: 'https://orcid.org/0000-0000-0000-0000'
+mission_statement:
+  - I am head of the statistical consulting laboratory StaBLab.
+  - As a trained statistician, psychologist and epidemiologist, I believe that multidisciplinary initiatives like the LMU Open Science Center are very important to promote open science practices. Moreover, we do not only need to promote transparency in research, but also to provide guidance on how to apply research methods in a way that will improve the replicability of research findings. In my teaching and in my research, I try to foster open science practices by providing guidance on pre-registration, adjustment for multiple testing and other ways to deal with analytical choices in the analysis of empirical data. In my consulting activities, I try to promote the use of suitable methods to model the complexities of research projects and to improve the communication of research findings. Overall, I think that it is more important than ever that we make research as transparent, credible and reliable as possible.
+---
+{{< include templates/_setup.qmd >}}
+{{< include templates/_contact_items.qmd >}}
+{{< include templates/_social_links.qmd >}}
+{{< include templates/_mission_statement.qmd >}}
+{{< include templates/_research_interests.qmd >}}
+{{< include templates/_selected_publications.qmd >}}
+
+
+
+```{r}
+#| echo: false
+
+# Compose the full profile
+profile <- div(class = "people-profile",
+  div(class = "people-header",
+    div(class = "people-photo",
+      img(src = photo)
+    ),
+    div(class = "people-info",
+      p(class = "people-position", position),
+      p(class = "people-faculty", paste0("Faculty of ", faculty)),
+      div(class = "people-contact", contact_items, social_links)
+    )
+  ),
+  mission_block,
+  # custom content would most likely go here, right after the mission_block
+  div(class = "people-content",
+    interests_block,
+    publications_block
+  )
+)
+
+# Render the profile
+browsable(profile)  
+```
+

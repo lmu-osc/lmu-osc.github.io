@@ -1,0 +1,4 @@
+
+These R scripts were used to transfer profiles from the old website to the new one. More specifically, they were used to convert the old HTML profiles into Quarto files that can be rendered on the new website. The source data files are not included here for privacy reasons, and the URLs in the scripts will need to be updated to point to the correct locations if you wish to run them yourself (each link has a special one-time access token embedded in it).
+
+However, it's unlikely these scripts will be needed in the future because they were used for a one-time transfer process. They are left here for transparency purposes only.

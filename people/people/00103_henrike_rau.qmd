@@ -1,0 +1,55 @@
+---
+title: Henrike Rau
+academic_title: Prof. Dr.
+name: Henrike Rau
+surname: Rau
+first_name: Henrike
+position: Chair
+faculty: Geosciences
+membertype: ['lmu-individual']
+email: henrike.rau@lmu.de
+photo: 'images/rau_henrike.jpg'
+website:
+  - label: 'Website 1'
+    url: http://www.geographie.uni-muenchen.de/department/fiona/personen/index.php?personen_details=1&user_id=259
+social_media:
+  ORCID: 'https://orcid.org/0000-0000-0000-0000'
+mission_statement:
+  - <em><strong></strong></em><em><strong><br></strong></em>
+---
+{{< include templates/_setup.qmd >}}
+{{< include templates/_contact_items.qmd >}}
+{{< include templates/_social_links.qmd >}}
+{{< include templates/_mission_statement.qmd >}}
+{{< include templates/_research_interests.qmd >}}
+{{< include templates/_selected_publications.qmd >}}
+
+
+
+```{r}
+#| echo: false
+
+# Compose the full profile
+profile <- div(class = "people-profile",
+  div(class = "people-header",
+    div(class = "people-photo",
+      img(src = photo)
+    ),
+    div(class = "people-info",
+      p(class = "people-position", position),
+      p(class = "people-faculty", paste0("Faculty of ", faculty)),
+      div(class = "people-contact", contact_items, social_links)
+    )
+  ),
+  mission_block,
+  # custom content would most likely go here, right after the mission_block
+  div(class = "people-content",
+    interests_block,
+    publications_block
+  )
+)
+
+# Render the profile
+browsable(profile)  
+```
+

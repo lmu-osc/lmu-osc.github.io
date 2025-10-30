@@ -1,0 +1,56 @@
+---
+title: Robert Perneczky
+academic_title: Prof. Dr.
+name: Robert Perneczky
+surname: Perneczky
+first_name: Robert
+position: Chair
+faculty: University hospital
+membertype: ['lmu-individual']
+email: Robert.Perneczky@med.uni-muenchen.de
+photo: 'images/perneczky_robert.jpg'
+website:
+  - label: 'Website 1'
+    url: https://www.synergy-munich.de/members/associate-investigators/perneczky/index.html
+social_media:
+  ORCID: 'https://orcid.org/0000-0000-0000-0000'
+mission_statement:
+  - <em><strong></strong></em><em><strong>Mission Statement: </strong></em>
+  - I am head of the Alzheimer Treatment and Research Centre at the Department of Psychiatry and Psychotherapy at the University Hospital Munich.
+---
+{{< include templates/_setup.qmd >}}
+{{< include templates/_contact_items.qmd >}}
+{{< include templates/_social_links.qmd >}}
+{{< include templates/_mission_statement.qmd >}}
+{{< include templates/_research_interests.qmd >}}
+{{< include templates/_selected_publications.qmd >}}
+
+
+
+```{r}
+#| echo: false
+
+# Compose the full profile
+profile <- div(class = "people-profile",
+  div(class = "people-header",
+    div(class = "people-photo",
+      img(src = photo)
+    ),
+    div(class = "people-info",
+      p(class = "people-position", position),
+      p(class = "people-faculty", paste0("Faculty of ", faculty)),
+      div(class = "people-contact", contact_items, social_links)
+    )
+  ),
+  mission_block,
+  # custom content would most likely go here, right after the mission_block
+  div(class = "people-content",
+    interests_block,
+    publications_block
+  )
+)
+
+# Render the profile
+browsable(profile)  
+```
+

@@ -6,11 +6,11 @@ categories:
   - Included Categories
 content_category:
   # CHOOSE ONLY 1 OF THE 5 CATEGORIES BELOW PER FILE
-  - Data Management, Simulation, & Sharing
-  - Open Access Publishing
-  - Preregistration
-  - Reproducible Workflow
-  - Replicability Crisis & Credibility Revolution
+  - data_management
+  - publishing_outputs
+  - study_planning
+  - reproducible_processes
+  - principles
 format:
   html: 
     grid:
@@ -50,5 +50,5 @@ within_cat_order: 00
 <!--     marginheight="0" -->
 <!--     frameborder="0" -->
 <!--     allowfullscreen -->
-<!--     webkitallowfullscreen -->
-<!-- > -->
+<!--     webkitallowfullscreen> -->
+<!-- </iframe> -->

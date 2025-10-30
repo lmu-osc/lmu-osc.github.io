@@ -1,0 +1,86 @@
+---
+# Member parameters
+title: "Dr. Malika Ihle"
+name: "Malika Ihle"
+academic_title: "Dr."
+position: "Scientific Coordinator of the OSC"
+faculty: "Open Science Center"
+membertype: ["management", "staff"]
+photo: "images/malika_ihle.JPG"
+email: "malika.ihle@psy.lmu.de"
+display_weight: 2
+personal: "Malika Ihle is the LMU Open Science Center Coordinator, supporting the scientific board in developing a comprehensive approach to open research that extends across all disciplines, using both bottom-up and top-down strategies. Her role is to provide peer-to-peer training and develop an open research curriculum, coordinate grassroots initiatives and organise various events such as seminars and conferences, support meta-research collaborations, liaise with local, national (e.g. the German Reproducibility Network (GRN)), and international stakeholders to inform the design of incentives and policies, and co-develop a strategic plan to make the LMU Open Science Center a sustainable entity."
+website:
+  - label: "Personal Website"
+    url: "https://malikaihle.github.io"
+  - label: "LMU Official Website"
+    url: "https://www.osc.uni-muenchen.de/about_us/coordinator/index.html"
+
+
+# Social media links - variable number
+social_media:
+  Bluesky: "https://bsky.app/profile/lmu-osc.bsky.social"
+  Linkedin: "https://www.linkedin.com/malika-ihle"
+  GitHub: "https://github.com/malikaihle"
+  ORCID: "https://orcid.org/0000-0002-3242-5981"
+
+# Mission statement paragraphs - variable number
+mission_statement:
+  - "Malika Ihle is the LMU Open Science Center Coordinator, supporting the scientific board in developing a comprehensive approach to open research that extends across all disciplines, using both bottom-up and top-down strategies. Her role is to provide peer-to-peer training and develop an open research curriculum, coordinate grassroots initiatives and organise various events such as seminars and conferences, support meta-research collaborations, liaise with local, national (e.g. the German Reproducibility Network (GRN)), and international stakeholders to inform the design of incentives and policies, and co-develop a strategic plan to make the LMU Open Science Center a sustainable entity."
+
+# Research interests - variable number
+research_interests:
+  - "Open Science"
+  - "Psychology"
+  - "Psychological Methods"
+  - "Data Sharing"
+
+# Publications - variable number
+publications: NULL
+---
+
+
+<!-- The "includes" below are templates for the different sections of the
+member profile pages. Each document returns an R object that contains the
+necessary HTML elements to render the section.
+ 1. You can modify these templates to change the layout or content of each section. This will change the layout of all member profiles the next time the site is built.
+ 2. You can also create new templates for additional sections if needed.
+ 3. If you want to add some custom content for an individual member, you can do so directly in the member's .QMD file, outside of the includes. You will then need to insert the new R object containing HTML into the `profile` object below.
+-->
+
+{{< include templates/_setup.qmd >}}
+{{< include templates/_contact_items.qmd >}}
+{{< include templates/_social_links.qmd >}}
+{{< include templates/_mission_statement.qmd >}}
+{{< include templates/_research_interests.qmd >}}
+{{< include templates/_selected_publications.qmd >}}
+
+
+
+```{r}
+#| echo: false
+
+# Compose the full profile
+profile <- div(class = "people-profile",
+  div(class = "people-header",
+    div(class = "people-photo",
+      img(src = photo)
+    ),
+    div(class = "people-info",
+      p(class = "people-position", position),
+      p(class = "people-faculty", paste0("Department of ", faculty)),
+      div(class = "people-contact", contact_items, social_links)
+    )
+  ),
+  mission_block,
+  # custom content would most likely go here, right after the mission_block
+  div(class = "people-content",
+    interests_block,
+    publications_block
+  )
+)
+
+# Render the profile
+browsable(profile)  
+```
+

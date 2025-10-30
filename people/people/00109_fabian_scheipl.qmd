@@ -1,0 +1,56 @@
+---
+title: Fabian Scheipl
+academic_title: PD Dr.
+name: Fabian Scheipl
+surname: Scheipl
+first_name: Fabian
+position: Chair
+faculty: Math, Informatics & Stats
+membertype: ['lmu-individual']
+email: fabian.scheipl@stat.uni-muenchen.de
+website:
+  - label: 'Website 1'
+    url: http://scheipl.userweb.mwn.de/
+social_media:
+  ORCID: 'https://orcid.org/0000-0000-0000-0000'
+mission_statement:
+  - <em><strong></strong></em><em><strong>Mission Statement:</strong></em>
+  - I am a postdoctoral researcher at the Department of Statistics.
+  - I support transparency and reproducibility in statistical methodology research by serving as the reproducible research editor at Biometrical Journal and by encouraging students and collaborators to utilize the great tools for reproducible data analysis we now have at our disposal in the form of public code repositories, permanent object identifiers for data sets and figures and literate programming frameworks that combine analyses and their description within a single document.
+---
+{{< include templates/_setup.qmd >}}
+{{< include templates/_contact_items.qmd >}}
+{{< include templates/_social_links.qmd >}}
+{{< include templates/_mission_statement.qmd >}}
+{{< include templates/_research_interests.qmd >}}
+{{< include templates/_selected_publications.qmd >}}
+
+
+
+```{r}
+#| echo: false
+
+# Compose the full profile
+profile <- div(class = "people-profile",
+  div(class = "people-header",
+    div(class = "people-photo",
+      img(src = photo)
+    ),
+    div(class = "people-info",
+      p(class = "people-position", position),
+      p(class = "people-faculty", paste0("Faculty of ", faculty)),
+      div(class = "people-contact", contact_items, social_links)
+    )
+  ),
+  mission_block,
+  # custom content would most likely go here, right after the mission_block
+  div(class = "people-content",
+    interests_block,
+    publications_block
+  )
+)
+
+# Render the profile
+browsable(profile)  
+```
+
