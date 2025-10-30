@@ -112,7 +112,10 @@ events_formatted <- events_file %>%
     event_date_crushed = to_yyyymmdd(date),
     file_name = paste0(event_date_crushed, "_", file_name, ".qmd"),
     .after = workshop_title
-  ) 
+  ) %>%
+  mutate(
+    workshop_title = stringr::str_replace_all(workshop_title, "'", "''")
+  )
 
 
 
@@ -134,20 +137,23 @@ yaml <- glue::glue(
     html:
         table-of-contents: false
         css: event-page-styles.css
-        page-layout: full"
+page-layout: full"
 )
   
-  yaml <- glue::glue(yaml, "\ncategories: ", "'", categories, "'")
+  yaml <- glue::glue(yaml, "\n", "pagetitle:", " '", event.title, "'")
+  
   yaml <- glue::glue(yaml, "\n\n", "# Event categories\n")
   yaml <- glue::glue(yaml, "\n", "event:\n")
   yaml <- glue::glue(yaml, "\n", "  title:", " '", event.title, "'")
-  yaml <- glue::glue(yaml, "\n", "  date:", " '", event.date, "'")
-  yaml <- glue::glue(yaml, "\n", "  end_date:", " '", event.end_date, "'")
-  yaml <- glue::glue(yaml, "\n", "  time:", " '", event.time, "'")
+  yaml <- glue::glue(yaml, "\n", "  description: \"\"")
+  yaml <- glue::glue(yaml, "\n", "  categories: ", " '", categories, "'")
+  yaml <- glue::glue(yaml, "\n", "  date:", " \"", event.date, "\"")
+  yaml <- glue::glue(yaml, "\n", "  end_date:", " \"", event.end_date, "\"")
+  yaml <- glue::glue(yaml, "\n", "  time:", " \"", event.time, "\"")
   
   
   yaml <- glue::glue(yaml, "\n", "  location:\n")
-  yaml <- glue::glue(yaml, "\n", "    name:", " '", event.location.name, "'")
+  yaml <- glue::glue(yaml, "\n", "    name:", " \"", event.location.name, "\"")
   yaml <- glue::glue(yaml, "\n", "    address: \"\"")
   yaml <- glue::glue(yaml, "\n", "    map_url: \"\"")
   
@@ -156,9 +162,9 @@ yaml <- glue::glue(
   yaml <- glue::glue(yaml, "\n", "    detail: \"\"")
   
   yaml <- glue::glue(yaml, "\n", "  language:\n")
-  yaml <- glue::glue(yaml, "\n", "    primary:", " '", event.language.primary, "'")
-  yaml <- glue::glue(yaml, "\n", "    primary-code:", " '", `event.language.primary-code`, "'")
-  yaml <- glue::glue(yaml, "\n", "    detail:", " '", event.language.detail, "'")
+  yaml <- glue::glue(yaml, "\n", "    primary:", " \"", event.language.primary, "\"")
+  yaml <- glue::glue(yaml, "\n", "    primary-code:", " \"", `event.language.primary-code`, "\"")
+  yaml <- glue::glue(yaml, "\n", "    detail:", " \"", event.language.detail, "\"")
   
   yaml <- glue::glue(yaml, "\nlinks:")
   yaml <- glue::glue(yaml, "\n  registration: \"\"")
