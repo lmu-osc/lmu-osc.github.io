@@ -2,6 +2,8 @@
 
 library(dplyr)
 library(tidyr)
+library(rvest)
+library(xml2)
 
 events_file <- readr::read_csv('https://raw.githubusercontent.com/lmu-osc/osc-website-transfer/refs/heads/main/events_metadata.csv?token=GHSAT0AAAAAADNSJCJMRK4LXP7PIKCFHHKE2IDJVWA')
 
@@ -14,6 +16,53 @@ View(events_file)
 
 to_yyyymmdd <- function(x) format(as.Date(x, format = "%B %d, %Y"), "%Y%m%d")
 
+
+process_html <- function(html_string) {
+  # return empty string for NA / NULL / zero-length
+  if (is.null(html_string) || (length(html_string) == 1 && is.na(html_string)) ||
+      (!is.character(html_string) && !is.list(html_string))) {
+    return("")
+  }
+  s <- as.character(html_string)
+  if (!nzchar(trimws(s))) return("")
+  
+  doc <- read_html(s)
+  
+  xpath_wrapper <- "//div[contains(concat(' ', normalize-space(@class), ' '), ' user-html ') and contains(concat(' ', normalize-space(@class), ' '), ' hauptinhalt ')]"
+  wrapper_nodes <- xml_find_all(doc, xpath_wrapper)
+  
+  remove_hinterlegt <- function(node) {
+    nodes_to_remove <- xml_find_all(node, ".//p[contains(concat(' ', normalize-space(@class), ' '), ' hinterlegt ')]")
+    if (length(nodes_to_remove) > 0) xml_remove(nodes_to_remove)
+  }
+  
+  if (length(wrapper_nodes) > 0) {
+    wrapper <- wrapper_nodes[[1]]
+    remove_hinterlegt(wrapper)
+    children <- xml_children(wrapper)
+    out <- paste0(vapply(children, as.character, character(1)), collapse = "")
+    return(out)
+  } else {
+    # no wrapper: remove p.hinterlegt anywhere and return body children
+    remove_hinterlegt(doc)
+    body <- xml_find_first(doc, "//body")
+    if (!is.na(body) && length(xml_children(body)) > 0) {
+      out <- paste0(vapply(xml_children(body), as.character, character(1)), collapse = "")
+    } else {
+      out <- as.character(doc)
+    }
+    return(out)
+  }
+}
+
+
+
+
+
+
+
+
+
 (mapping <- tribble(
   ~csvNames, ~expectedNames,
   'event_type', 'categories',
@@ -25,7 +74,8 @@ to_yyyymmdd <- function(x) format(as.Date(x, format = "%B %d, %Y"), "%Y%m%d")
   "Language", "event.language.primary",
   "lang_code", "event.language.primary-code",
   "lang_detail", "event.language.detail",
-  "Contact", "contact.name"
+  "Contact", "contact.name",
+  "clean_html", "body_content"
 ))
 
 
@@ -115,7 +165,9 @@ events_formatted <- events_file %>%
   ) %>%
   mutate(
     workshop_title = stringr::str_replace_all(workshop_title, "'", "''")
-  )
+  ) %>%
+  mutate(clean_html = purrr::map_chr(workshop_page_description, process_html))
+
 
 
 
@@ -129,7 +181,8 @@ events_formatted_final <- events_formatted %>%
 
 purrr::pmap(events_formatted_final, function(categories, event.title, event.date, event.end_date,
                                              event.time, event.location.name, event.language.primary,
-                                             `event.language.primary-code`, event.language.detail, contact.name, ...) {
+                                             `event.language.primary-code`, event.language.detail, contact.name, 
+                                             body_content, ...) {
   
 yaml <- glue::glue(
 "---\n",
@@ -187,7 +240,35 @@ page-layout: full"
   
   yaml <- glue::glue(yaml, "\n---\n")
   
-  return(yaml)
+  whole_file <- glue::glue(
+    yaml,
+    "\n",
+    '<!-- MANDAORY SECTION START  -->
+<link rel = "stylesheet"  href = "https://cdn.jsdelivr.net/npm/bootstrap-icons@5.6.2/font/bootstrap-icons.css">
+
+<h1 class="fs-1 text-primary"> {{{{< meta event.title >}}}} </h1>
+
+{{{{< include templates/_setup.qmd >}}}}
+{{{{< include templates/_info_boxes.qmd >}}}}
+{{{{< include templates/_register_button.qmd >}}}}
+<!-- MANDAORY SECTION END  -->
+
+
+
+<!-- DETAILED EVENT DESCRIPTION HERE OR USE THE TEMPLATE BELOW TO INCLUDE THE STANDARD DESCRIPTION SECTION -->
+<!-- {{{{< include templates/_event_description.qmd >}}}} -->
+
+{body_content}
+
+
+
+<!-- MANDAORY SECTION START  -->
+<!-- _event_description.qmd template should always be at bottom -->
+{{{{< include templates/_instructors_helpers_contact.qmd >}}}}
+<!-- MANDAORY SECTION END  -->'
+  )
+  
+  return(whole_file)
   
 }) %>%
   purrr::walk2(events_formatted$file_name, ~{
