@@ -1,0 +1,26 @@
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+
+
+tags$div(
+  class = "register-box d-flex gap-2 justify-content-center",
+  tags$a(
+    href = links_registration,
+    target = "_blank",
+    class = "btn btn-primary btn-pop",
+    HTML('<i class="bi bi-box-arrow-up-left"></i>'),
+    " Register"
+  ),
+  tags$a(
+    href = links_materials,
+    target = "_blank",
+    class = "btn btn-outline-primary btn-pop",
+    HTML('<i class="bi bi-download"></i>'),
+    " Materials"
+  )
+)
+```
+
+

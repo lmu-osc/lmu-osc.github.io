@@ -1,0 +1,94 @@
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+
+
+# helper to render a person entry (supports list with name/url or simple character)
+render_person <- function(person) {
+  if (is.null(person)) return(NULL)
+  if (is.list(person)) {
+    name <- person$name %||% ""
+    url  <- person$url
+    if (!is.null(url) && nzchar(url)) {
+      return(tags$li(tags$a(href = url, target = "_blank", name)))
+    } else {
+      return(tags$li(name))
+    }
+  } else if (is.character(person)) {
+    return(tags$li(person))
+  } else {
+    return(NULL)
+  }
+}
+
+# Render event_description as one or multiple paragraphs. Accepts:
+# - a single string
+# - a character vector of paragraphs
+# - a list of strings
+paragraphs <- NULL
+if (is.null(event_description)) {
+  paragraphs <- list()
+} else if (is.list(event_description)) {
+  paragraphs <- event_description
+} else if (is.character(event_description) && length(event_description) >= 1) {
+  # convert character vector to a list of single strings (keeps multiple paragraphs)
+  paragraphs <- as.list(event_description)
+} else {
+  paragraphs <- list(as.character(event_description))
+}
+
+render_paragraph <- function(p) {
+  if (is.null(p) || identical(p, "")) return(NULL)
+  # convert markdown to HTML and wrap in a paragraph tag
+  tags$p(htmltools::HTML(commonmark::markdown_html(p)))
+}
+
+tags$div(
+  class = "event_description",
+  tags$h4("Overview"),
+  # render each paragraph separately so they are separated in the output
+  lapply(paragraphs, render_paragraph),
+  tags$p(
+    "See the ",
+    tags$a(href = links_workshop_website, target = "_blank", "workshop website"),
+    " for more details."
+  )
+)
+
+tags$div(
+  class = "instructors",
+  tags$h4("Instructors"),
+  tags$ul(
+    lapply(instructors, render_person)
+  )
+)
+
+tags$div(
+  class = "helpers",
+  tags$h4("Helpers"),
+  # If helpers is a single string, keep it as a paragraph; if it's a list/vector render as list
+  if (is.null(helpers) || length(helpers) == 0) {
+    tags$p("") 
+  } else if (is.character(helpers) && length(helpers) == 1) {
+    tags$p(helpers)
+  } else {
+    tags$ul(lapply(helpers, render_person))
+  }
+)
+
+tags$div(
+  class = "contact_name",
+  tags$h4("Questions?"),
+  tags$p(
+    "If you have any questions, please contact ",
+    tags$span(
+      class = "instructor-links",
+      tags$a(href = paste0("mailto:", contact_email), contact_name)
+    ),
+    "."
+  )
+)
+```
+
+
