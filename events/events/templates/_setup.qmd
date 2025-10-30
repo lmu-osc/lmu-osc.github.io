@@ -1,0 +1,55 @@
+
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+
+library(htmltools)
+
+# Get parameters from the parent document
+event <- rmarkdown::metadata
+
+# Helper function to safely get parameter values with defaults
+get_param <- function(param_name, default = "") {
+  if (is.null(event[[param_name]])) {
+    return(default)
+  } else {
+    return(event[[param_name]])
+  }
+}
+
+
+event_param <- get_param("event")
+event_title <- event_param$title
+event_date <- event_param$date
+event_end_date <- event_param$end_date
+event_time <- event_param$time
+event_location_name <- event_param$location$name
+event_location_address <- event_param$location$address
+event_map_url <- event_param$location$map_url
+event_format_type <- event_param$format$type
+event_format_detail <- event_param$format$detail
+event_language_primary <- event_param$language$primary
+event_language_detail <- event_param$language$detail
+
+
+has_end_date <- if (is.null(event_end_date)) {FALSE} else if (nchar(trimws(event_end_date)) == 0) {FALSE} else {TRUE}
+
+
+links_param <- get_param("links", list())
+links_registration <- links_param$registration
+links_materials <- links_param$materials
+links_workshop_website <- links_param$workshop_website
+
+
+event_description <- get_param("event_description", list())
+
+instructors <- get_param("instructors", list())
+helpers <- get_param("helpers", list())
+
+contact <- get_param("contact", list())
+contact_name <- contact$name
+contact_email <- contact$email
+```
+

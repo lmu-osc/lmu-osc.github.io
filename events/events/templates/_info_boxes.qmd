@@ -1,0 +1,119 @@
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+
+# prepare date display, include end date when present and strip first year if years match
+extract_year <- function(x) {
+  if (is.null(x) || !nzchar(x)) return(NA_character_)
+  m <- regexpr("\\b(\\d{4})\\b", x)
+  if (m[1] == -1) return(NA_character_)
+  regmatches(x, m)
+}
+
+extract_month_key <- function(x) {
+  if (is.null(x) || !nzchar(x)) return(NA_character_)
+  m <- regexpr("\\b(January|February|March|April|May|June|July|August|September|October|November|December|Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\\b", 
+               x, ignore.case = TRUE, perl = TRUE)
+  if (m[1] == -1) return(NA_character_)
+  month <- tolower(regmatches(x, m))
+  # normalize to three-letter key
+  substr(month, 1, 3)
+}
+
+date_display <- if (isTRUE(has_end_date) && !is.null(event_end_date) && nzchar(trimws(event_end_date))) {
+  y1 <- extract_year(event_date)
+  y2 <- extract_year(event_end_date)
+  m1 <- extract_month_key(event_date)
+  m2 <- extract_month_key(event_end_date)
+
+  if (!is.na(y1) && !is.na(y2) && identical(y1, y2)) {
+    # remove optional comma and any surrounding space plus the year from the start date
+    short_start <- sub(paste0("\\s*,?\\s*", y1, "\\s*$"), "", event_date)
+
+    end_short <- event_end_date
+    # if months are the same, remove the month from the end date (e.g. "June 2 – 4, 2025")
+    if (!is.na(m1) && !is.na(m2) && identical(m1, m2)) {
+      month_pattern <- "(?i)\\b(January|February|March|April|May|June|July|August|September|October|November|December|Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\\b\\s*"
+      end_short <- sub(month_pattern, "", end_short, perl = TRUE)
+      # remove any leading comma/space leftover
+      end_short <- sub("^\\s*,?\\s*", "", end_short)
+    }
+
+    paste0(short_start, " \u2013 ", end_short)
+  } else {
+    paste0(event_date, " \u2013 ", event_end_date)
+  }
+} else {
+  event_date
+}
+
+tags$div(
+  class = "d-flex flex-nowrap justify-content-center overflow-auto gap-3 py-2 px-1",
+
+  tags$div(
+    class = "card flex-shrink-0 border border-primary border-2",
+    style = "width:14rem;",
+    tags$div(
+      class = "card-body",
+      tags$h5(class = "card-title", HTML('<i class="bi bi-calendar-event"></i> Date &amp; Time')),
+      tags$p(class = "card-text",
+             date_display,
+             tags$br(),
+             event_time
+      )
+    )
+  ),
+
+  tags$div(
+    class = "card flex-shrink-0 border border-primary border-2",
+    style = "width:14rem;",
+    tags$div(
+      class = "card-body",
+      tags$h5(class = "card-title", HTML('<i class="bi bi-geo-alt"></i> Location')),
+      tags$div(
+        class = "location-text",
+        tags$a(
+          href = event_map_url,
+          target = "_blank",
+          style = "text-decoration:none;color:inherit;",
+          tags$div(class = "meta-value",
+                  event_location_name,
+                   tags$br(),
+                   (event_location_address)
+          )
+        )
+      )
+    )
+  ),
+
+  tags$div(
+    class = "card flex-shrink-0 border border-primary border-2",
+    style = "width:14rem;",
+    tags$div(
+      class = "card-body",
+      tags$h5(class = "card-title", HTML('<i class="bi bi-laptop"></i> Format')),
+      tags$p(class = "card-text",
+             event_format_type,
+             tags$br(),
+            event_format_detail
+      )
+    )
+  ),
+
+  tags$div(
+    class = "card flex-shrink-0 border border-primary border-2",
+    style = "width:14rem;",
+    tags$div(
+      class = "card-body",
+      tags$h5(class = "card-title", HTML('<i class="bi bi-translate"></i> Language')),
+      tags$p(class = "card-text",
+             event_language_primary,
+             tags$br(),
+             event_language_detail
+      )
+    )
+  )
+)
+```
+
