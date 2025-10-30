@@ -24,7 +24,7 @@ event:
   language:
     primary: "English"
     primary-code: "en"
-    detail: "NA"
+    detail: ""
 links:
   registration: ""
   materials: ""
@@ -54,7 +54,7 @@ contact:
 {{< include templates/_register_button.qmd >}}
 <!-- MANDAORY SECTION END  -->
 
-
+<br>
 
 <!-- DETAILED EVENT DESCRIPTION HERE OR USE THE TEMPLATE BELOW TO INCLUDE THE STANDARD DESCRIPTION SECTION -->
 <!-- {{< include templates/_event_description.qmd >}} -->
