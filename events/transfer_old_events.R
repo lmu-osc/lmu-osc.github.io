@@ -210,10 +210,16 @@ page-layout: full"
   yaml <- glue::glue(yaml, "\n", "    address: \"\"")
   yaml <- glue::glue(yaml, "\n", "    map_url: \"\"")
   
+  yaml <- glue::glue(yaml, "\n", "  host: \"LMU Open Science Center\"\n")
+  
   yaml <- glue::glue(yaml, "\n", "  format:\n")
   yaml <- glue::glue(yaml, "\n", "    type:", " '", categories, "'")
   yaml <- glue::glue(yaml, "\n", "    detail: \"\"")
   
+  
+  if (is.na(event.language.detail) || event.language.detail == "NA") {
+    event.language.detail <- ""
+  }
   yaml <- glue::glue(yaml, "\n", "  language:\n")
   yaml <- glue::glue(yaml, "\n", "    primary:", " \"", event.language.primary, "\"")
   yaml <- glue::glue(yaml, "\n", "    primary-code:", " \"", `event.language.primary-code`, "\"")
@@ -253,7 +259,7 @@ page-layout: full"
 {{{{< include templates/_register_button.qmd >}}}}
 <!-- MANDAORY SECTION END  -->
 
-
+<br>
 
 <!-- DETAILED EVENT DESCRIPTION HERE OR USE THE TEMPLATE BELOW TO INCLUDE THE STANDARD DESCRIPTION SECTION -->
 <!-- {{{{< include templates/_event_description.qmd >}}}} -->
