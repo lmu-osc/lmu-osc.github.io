@@ -62,10 +62,10 @@ contact:
 <h1 class="fs-1 text-primary"> {{< meta event.title >}} </h1>
 
 
-{{< include _setup.qmd >}}
-{{< include _info_boxes.qmd >}}
-{{< include _register_button.qmd >}}
-{{< include _event_description.qmd >}}
+{{< include templates/_setup.qmd >}}
+{{< include templates/_info_boxes.qmd >}}
+{{< include templates/_register_button.qmd >}}
+{{< include templates/_event_description.qmd >}}
 
 
 
