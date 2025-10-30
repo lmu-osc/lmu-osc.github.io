@@ -20,7 +20,6 @@ get_param <- function(param_name, default = "") {
 }
 
 
-
 event_param <- get_param("event")
 event_title <- event_param$title
 event_date <- event_param$date
@@ -40,7 +39,7 @@ links_materials <- links_param$materials
 links_workshop_website <- links_param$workshop_website
 
 
-event_description <- get_param("event_description")
+event_description <- get_param("event_description", list())
 
 instructors <- get_param("instructors", list())
 helpers <- get_param("helpers", list())

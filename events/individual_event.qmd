@@ -29,7 +29,10 @@ links:
   workshop_website: "https://lmu-osc.github.io/2025-03-24-LMU-Humanities/"
 
 # Event Description
-event_description: "In this Software Carpentry Workshop you will learn the **Unix Shell**, **Git** and **R**. This example-driven **two-day workshop** will teach core computing skills that will help you be more productive and effective. We'll alternate short tutorials with hands-on practical exercises. Participants are encouraged to help one another and to apply what they are learning to their own research problems during the workshop."
+event_description: 
+  - "In this Software Carpentry Workshop you will learn the **Unix Shell**, **Git** and **R**. This example-driven **two-day workshop** will teach core computing skills that will help you be more productive and effective. We'll alternate short tutorials with hands-on practical exercises. Participants are encouraged to help one another and to apply what they are learning to their own research problems during the workshop."
+  - "text two"
+  - "text three"
 
 # Add more instructors in the same format if needed. Will need to add a new line in the html below as well
 instructors:
@@ -62,6 +65,11 @@ contact:
 {{< include _info_boxes.qmd >}}
 {{< include _register_button.qmd >}}
 {{< include _event_description.qmd >}}
+
+
+
+
+
 
 
 
