@@ -1,0 +1,77 @@
+---
+format: 
+    html:
+        table-of-contents: false
+        css: event-page-styles.css
+page-layout: full
+categories: ['Discussion', 'Hacky Hour', 'ReproducibiliTea Journal Club', 'Workshop', 'Lecture', 'Symposium', 'Conference', 'Summer School', 'Panel Discussion Series', 'Application call']
+
+# Event Information
+event:
+  title: "TITLE"
+  date: "MONTH DAY, YYYY"         # e.g. "September 24, 2026"
+  end_date: "MONTH DAY, YYYY"     # e.g. "September 24, 2026", non-mandatory field
+  time: "START-END CET"           # e.g. "14:00 - 17:00 CET"
+  location:
+    name: "BUILDING NAME, ROOM NAME"    # e.g. "LMU Main Building, Room 123"
+    address: "ADDRESS"                  # e.g. "Ludwigstraße 25, 80539 München, Germany""
+    map_url: "GOOGLE MAPS URL"          # e.g. "https://goo.gl/maps/xyz""
+  format:
+    type: "EVENTTYPE"               # e.g. "In-person", "Online", "Hybrid"  
+    detail: "FORMATDETAILS"    # e.g. "In-person & Online", non-mandatory field
+  language:
+    primary: "English"
+    primary-code: "en"
+    detail: "(German Transcript)"    # other language details, non-mandatory field
+  
+# Registration and Materials
+links:
+  registration: "REGISTRATION LINK URL"   # e.g. "https://www.pretix.osc.lmu.de/lmu-osc/swc-20250324-Hum/"
+  materials: "WORKSHOP MATERIALS URL"    
+  workshop_website: "WORKSHOP WEBSITE URL"   # e.g. "https://lmu-osc.github.io/introduction-to-renv/"
+
+# Event Description: appears in the Event card an optionally in the Event page itself
+event_description: 
+  - "SHORT DESCRIPTION OF THE EVENT. This will appear in the event card on the main Events page. Keep it concise and engaging to attract attendees. MAX 2-3 SENTENCES."
+
+# Add as many instructors as needed in the format below
+instructors:
+  - name: "INSTRUCTOR 1 NAME"
+    url: "LMU OSC PROFILE OR PERSONAL WEBSITE URL"
+  - name: "INSTRUCTOR 2 NAME"
+    url: "LMU OSC PROFILE OR PERSONAL WEBSITE URL"
+
+
+# Add as many helpers as needed in the format below
+helpers: 
+  - name: "HELPER 1 NAME"
+  - name: "HELPER 2 NAME"
+
+# Contact Information
+contact:
+  name: "CONTACT PERSON OR GROUP NAME"
+  email: "CONTACT EMAIL ADDRESS"
+---
+
+<!-- MANDAORY SECTION START  -->
+<link rel = "stylesheet"  href = "https://cdn.jsdelivr.net/npm/bootstrap-icons@5.6.2/font/bootstrap-icons.css">
+
+<h1 class="fs-1 text-primary"> {{< meta event.title >}} </h1>
+
+{{< include templates/_setup.qmd >}}
+{{< include templates/_info_boxes.qmd >}}
+{{< include templates/_register_button.qmd >}}
+<!-- MANDAORY SECTION END  -->
+
+
+
+<!-- DETAILED EVENT DESCRIPTION HERE OR USE THE TEMPLATE BELOW TO INCLUDE THE STANDARD DESCRIPTION SECTION -->
+<!-- {{< include templates/_event_description.qmd >}} -->
+
+
+
+
+<!-- MANDAORY SECTION START  -->
+<!-- _event_description.qmd template should always be at bottom -->
+{{< include templates/_instructors_helpers_contact.qmd >}}
+<!-- MANDAORY SECTION END  -->
