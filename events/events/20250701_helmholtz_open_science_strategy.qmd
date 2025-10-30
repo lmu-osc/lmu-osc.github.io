@@ -1,0 +1,69 @@
+---
+format:
+    html:
+        table-of-contents: false
+        css: event-page-styles.css
+page-layout: full
+pagetitle: 'Lecture: "Helmholtz open science strategy"'
+
+# Event categories
+event:
+  title: 'Lecture: "Helmholtz open science strategy"'
+  description: ""
+  categories:  'Lecture'
+  date: "July 01, 2025"
+  end_date: "July 01, 2025"
+  time: "16:00"
+  location:
+    name: "Hybrid (Theresienstr. 39 and via Zoom)"
+    address: ""
+    map_url: ""
+  format:
+    type: 'Lecture'
+    detail: ""
+  language:
+    primary: "English"
+    primary-code: "en"
+    detail: "NA"
+links:
+  registration: ""
+  materials: ""
+  workshop_website: ""
+
+event_description:
+  - ""
+
+instructors:
+  - name: ""
+    url: ""
+
+helpers:
+  - name: ""
+
+contact:
+  name: ""
+  email: ""
+---
+<!-- MANDAORY SECTION START  -->
+<link rel = "stylesheet"  href = "https://cdn.jsdelivr.net/npm/bootstrap-icons@5.6.2/font/bootstrap-icons.css">
+
+<h1 class="fs-1 text-primary"> {{< meta event.title >}} </h1>
+
+{{< include templates/_setup.qmd >}}
+{{< include templates/_info_boxes.qmd >}}
+{{< include templates/_register_button.qmd >}}
+<!-- MANDAORY SECTION END  -->
+
+
+
+<!-- DETAILED EVENT DESCRIPTION HERE OR USE THE TEMPLATE BELOW TO INCLUDE THE STANDARD DESCRIPTION SECTION -->
+<!-- {{< include templates/_event_description.qmd >}} -->
+
+<p>We will welcome the Head of Helmholtz Open Science Office, Dr. Mathijs Vleugel, to present the Helmholtz open science strategy and the activities of his office. This will be followed by discussions about possible strategies that can be implemented at the LMU.</p><p>The meeting can be followed by the LMU Open Science Center’s annual member’s meeting. All invited.</p><div class="g-clear"></div>
+
+
+
+<!-- MANDAORY SECTION START  -->
+<!-- _event_description.qmd template should always be at bottom -->
+{{< include templates/_instructors_helpers_contact.qmd >}}
+<!-- MANDAORY SECTION END  -->

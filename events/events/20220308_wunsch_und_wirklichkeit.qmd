@@ -1,0 +1,77 @@
+---
+format:
+    html:
+        table-of-contents: false
+        css: event-page-styles.css
+page-layout: full
+pagetitle: 'Workshop: "Open Data, Data Sharing und Datenschutz in der Medizin: Wunsch und Wirklichkeit"'
+
+# Event categories
+event:
+  title: 'Workshop: "Open Data, Data Sharing und Datenschutz in der Medizin: Wunsch und Wirklichkeit"'
+  description: ""
+  categories:  'Workshop'
+  date: "March 08, 2022"
+  end_date: "March 08, 2022"
+  time: "16:00–18:30"
+  location:
+    name: "Online (Zoom)"
+    address: ""
+    map_url: ""
+  format:
+    type: 'Workshop'
+    detail: ""
+  language:
+    primary: "German"
+    primary-code: "de"
+    detail: "NA"
+links:
+  registration: ""
+  materials: ""
+  workshop_website: ""
+
+event_description:
+  - ""
+
+instructors:
+  - name: ""
+    url: ""
+
+helpers:
+  - name: ""
+
+contact:
+  name: ""
+  email: ""
+---
+<!-- MANDAORY SECTION START  -->
+<link rel = "stylesheet"  href = "https://cdn.jsdelivr.net/npm/bootstrap-icons@5.6.2/font/bootstrap-icons.css">
+
+<h1 class="fs-1 text-primary"> {{< meta event.title >}} </h1>
+
+{{< include templates/_setup.qmd >}}
+{{< include templates/_info_boxes.qmd >}}
+{{< include templates/_register_button.qmd >}}
+<!-- MANDAORY SECTION END  -->
+
+
+
+<!-- DETAILED EVENT DESCRIPTION HERE OR USE THE TEMPLATE BELOW TO INCLUDE THE STANDARD DESCRIPTION SECTION -->
+<!-- {{< include templates/_event_description.qmd >}} -->
+
+<p><strong><span class="dunkelrot">The workshop slides can be downloaded below.</span></strong></p><p>We are incredibly excited to announce the fourth workshop held by the LMU Open Science Initiative in Medicine (OSIM) and the Institute for Medical Information Processing, Biometry, and Epidemiology (IBE):</p><p style="text-align: center;"><strong>"Open Data, Data Sharing und Datenschutz in der Medizin: Wunsch und Wirklichkeit"</strong></p><p>The workshop will be online, consisting of six short lectures followed by an open discussion:</p><ul>
+<li>Ulrich Mansmann (IBE, Medizinische Fakultät, LMU): "Individuelle Patientendaten aus klinischen Studien nutzen und teilen: Eine Einführung"</li>
+<li>Arne Rheinwald-Kolb (Dezernat I - Recht, Team Datenschutz, LMU): "Anonymisierung und Veröffentlichung von Forschungsdaten aus rechtlicher Perspektive"</li>
+<li>Andreas Spickhoff (Juristische Fakultät, LMU): "Mögliche Rechtsfolgen unzulässiger Veröffentlichung von Forschungsdaten: unzureichende Anonymisierung, Pseudonymisierung oder Einwilligung"</li>
+<li>Fabian Prasser (Universitätsmedizin Berlin und Berlin Institute of Health (BIH)): "ARX: Datenanonymisierung in Theorie und Praxis"</li>
+<li>Patrick Thoral (Intensive Care Medicine, Amsterdam UMC): "AmsterdamUMCdb: Our experiences in sharing data responsibly"</li>
+<li>Jeroen Maas (Philips, Amsterdam): "Why re-using medical data needs a human-centered, collaborative approach"</li>
+</ul>
+<div></div><div></div><div>This event is registered with 3 CME points with the BLAEK. If you are interested, please send your EFN number to Christina Nießl (<a class="g-link-mail" href="mailto:cniessl@ibe.med.uni-muenchen.de" title="Send email to: cniessl@ibe.med.uni-muenchen.de">cniessl@ibe.med.uni-muenchen.de</a>) by 7.3.22. Also contact Christina Nießl by 7.3.22 if you wish to receive a certificate of attendance. Otherwise, no registration is necessary.</div><div class="g-clear"></div>
+
+
+
+<!-- MANDAORY SECTION START  -->
+<!-- _event_description.qmd template should always be at bottom -->
+{{< include templates/_instructors_helpers_contact.qmd >}}
+<!-- MANDAORY SECTION END  -->

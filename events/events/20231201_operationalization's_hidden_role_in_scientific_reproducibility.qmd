@@ -1,0 +1,77 @@
+---
+format:
+    html:
+        table-of-contents: false
+        css: event-page-styles.css
+page-layout: full
+pagetitle: 'Journal Club: "ReproducibiliTea: Operationalization''s Hidden Role in Scientific Reproducibility"'
+
+# Event categories
+event:
+  title: 'Journal Club: "ReproducibiliTea: Operationalization''s Hidden Role in Scientific Reproducibility"'
+  description: ""
+  categories:  'ReproducibiliTea Journal Club'
+  date: "December 01, 2023"
+  end_date: "December 01, 2023"
+  time: "14:30–16:00"
+  location:
+    name: "Hybrid (Leopoldstraße 13, room 1302, Munich and via Zoom)"
+    address: ""
+    map_url: ""
+  format:
+    type: 'ReproducibiliTea Journal Club'
+    detail: ""
+  language:
+    primary: "English"
+    primary-code: "en"
+    detail: "NA"
+links:
+  registration: ""
+  materials: ""
+  workshop_website: ""
+
+event_description:
+  - ""
+
+instructors:
+  - name: ""
+    url: ""
+
+helpers:
+  - name: ""
+
+contact:
+  name: ""
+  email: ""
+---
+<!-- MANDAORY SECTION START  -->
+<link rel = "stylesheet"  href = "https://cdn.jsdelivr.net/npm/bootstrap-icons@5.6.2/font/bootstrap-icons.css">
+
+<h1 class="fs-1 text-primary"> {{< meta event.title >}} </h1>
+
+{{< include templates/_setup.qmd >}}
+{{< include templates/_info_boxes.qmd >}}
+{{< include templates/_register_button.qmd >}}
+<!-- MANDAORY SECTION END  -->
+
+
+
+<!-- DETAILED EVENT DESCRIPTION HERE OR USE THE TEMPLATE BELOW TO INCLUDE THE STANDARD DESCRIPTION SECTION -->
+<!-- {{< include templates/_event_description.qmd >}} -->
+
+<p>After a successful third session this semester, we are excited to invite you to the next session of our journal club. The session will revolve around the topic of operationalization in psychological research, and with the session based on the paper „When numbers fail: do researchers agree on operationalization of published research?“ by Haucke et al., we will discuss how the validity of operationalization in scientific studies affects researchers' ability to infer research questions and their judgments of study quality. </p><p><strong>Procedure: </strong>Two members of the organising team, Finia Loeb and Gracia Prüm, will summarise the paper by Haucke et al. There will then be an open discussion where you can contribute your own thoughts and questions. Finally, there will be time to get to know each other and talk in smaller groups.</p><p><strong>About the journal club: </strong><a href="../../meetups/reproducibilitea/index.html" title="ReproducibiliTea Journal Club">Here</a> you can find further information about the concept of the journal club.</p><p>You are cordially invited to attend our upcoming meetings! To stay updated and receive notifications about these gatherings and the selected papers, you can either subscribe to our mailing list by clicking on this link: <a href="https://lists.lrz.de/mailman/listinfo/reproducibilitea">https://lists.lrz.de/mailman/listinfo/reproducibilitea</a>, or you can send an email to <a class="g-link-mail" href="mailto:reproducibilitea.munich@gmail.com" title="Send email to: reproducibilitea.munich@gmail.com">reproducibilitea.munich@gmail.com</a>. There is no requirement to have read the designated paper before each session, although it could be beneficial.</p><p>The organisation team is looking forward to seeing you at one of the next journal club sessions.</p><p>Organisation team:</p><ul style="list-style-type: square;">
+<li>Laura Goetz, Graduate student in Medicine and Psychology</li>
+<li>Viktoria Wiegelmann, Undergraduate student in Psychology</li>
+<li>Gracia Prüm, Undergraduate student in Psychology</li>
+<li>Finia Loeb, Undergraduate student in Psychology</li>
+<li>Alp Kaan Aksu, Undergraduate student in Psychology and Computer Science</li>
+<li>Julian Lange, PhD student in Statistics</li>
+</ul>
+<p> </p><div class="g-clear"></div>
+
+
+
+<!-- MANDAORY SECTION START  -->
+<!-- _event_description.qmd template should always be at bottom -->
+{{< include templates/_instructors_helpers_contact.qmd >}}
+<!-- MANDAORY SECTION END  -->

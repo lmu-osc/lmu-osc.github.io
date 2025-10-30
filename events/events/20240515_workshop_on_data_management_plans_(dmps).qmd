@@ -1,0 +1,71 @@
+---
+format:
+    html:
+        table-of-contents: false
+        css: event-page-styles.css
+page-layout: full
+pagetitle: 'Workshop: "RDM for Medical and Biomedical Sciences: Workshop on Data Management Plans (DMPs)"'
+
+# Event categories
+event:
+  title: 'Workshop: "RDM for Medical and Biomedical Sciences: Workshop on Data Management Plans (DMPs)"'
+  description: ""
+  categories:  'Workshop'
+  date: "May 15, 2024"
+  end_date: "May 15, 2024"
+  time: "14:00-16:00"
+  location:
+    name: "Online (Zoom)"
+    address: ""
+    map_url: ""
+  format:
+    type: 'Workshop'
+    detail: ""
+  language:
+    primary: "English"
+    primary-code: "en"
+    detail: "NA"
+links:
+  registration: ""
+  materials: ""
+  workshop_website: ""
+
+event_description:
+  - ""
+
+instructors:
+  - name: ""
+    url: ""
+
+helpers:
+  - name: ""
+
+contact:
+  name: ""
+  email: ""
+---
+<!-- MANDAORY SECTION START  -->
+<link rel = "stylesheet"  href = "https://cdn.jsdelivr.net/npm/bootstrap-icons@5.6.2/font/bootstrap-icons.css">
+
+<h1 class="fs-1 text-primary"> {{< meta event.title >}} </h1>
+
+{{< include templates/_setup.qmd >}}
+{{< include templates/_info_boxes.qmd >}}
+{{< include templates/_register_button.qmd >}}
+<!-- MANDAORY SECTION END  -->
+
+
+
+<!-- DETAILED EVENT DESCRIPTION HERE OR USE THE TEMPLATE BELOW TO INCLUDE THE STANDARD DESCRIPTION SECTION -->
+<!-- {{< include templates/_event_description.qmd >}} -->
+
+<p>This workshop builds upon the lecture "Introduction to Research Data Management for Medical and Biomedical Sciences," offered jointly by ZB MED [1] and LMU University Library [2] in De-cember 2023. The workshop focuses on Data Management Plans (DMPs), a crucial element of successful research data management (RDM) and discipline-specific characteristics in medical and biomedical fields. The workshop will start with a basic introduction to data management plans, including their structure, advantages and possibilities. Through interactive exercises and expert guidance, the workshop will provide participants with the skills necessary to develop DMPs that ensure responsible and efficient data management throughout the research lifecycle. Also, an introduction and demonstration of the use of DMP tools will be provided, focussing on the DMP tool RDMO, which is well established in the German scientific community. This work-shop empowers researchers in medical and biomedical fields to meet funder requirements, enhance research transparency, and promote data sharing and reproducibility.</p><p><strong>Topics: </strong>data management plans, DMP tools, RDMO<strong> </strong></p><p><strong>Target audience:</strong> PHD students working in the medical and biomedical sciences</p><p><strong>Logistics:</strong> If you want to participate, please register. You will receive the link to the Zoom Meeting a few days before the workshop. Registration link: <a href="https://lmu-munich.zoom-x.de/meeting/register/u5Iud--pqjopHtBAvXEygQCTOKQk59nSdDJk">https://lmu-munich.zoom-x.de/meeting/register/u5Iud--pqjopHtBAvXEygQCTOKQk59nSdDJk </a></p><p><strong>Maximum number of participants:</strong> 30 persons</p><p><strong>Contact details:</strong> <a href="mailto:%20rdm@ub.uni-muenchen.de">rdm@ub.uni-muenchen.de </a></p><p>[1]: <a href="https://www.zbmed.de/">https://www.zbmed.de/</a><br>[2]: <a href="https://www.ub.uni-muenchen.de/index.html">https://www.ub.uni-muenchen.de/index.html </a></p><ul style="list-style-type: square;"><li>
+</li></ul>
+<div class="g-clear"></div>
+
+
+
+<!-- MANDAORY SECTION START  -->
+<!-- _event_description.qmd template should always be at bottom -->
+{{< include templates/_instructors_helpers_contact.qmd >}}
+<!-- MANDAORY SECTION END  -->

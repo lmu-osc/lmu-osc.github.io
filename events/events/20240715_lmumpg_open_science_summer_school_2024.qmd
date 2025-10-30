@@ -1,0 +1,92 @@
+---
+format:
+    html:
+        table-of-contents: false
+        css: event-page-styles.css
+page-layout: full
+pagetitle: 'LMU-MPG Open Science Summer School 2024'
+
+# Event categories
+event:
+  title: 'LMU-MPG Open Science Summer School 2024'
+  description: ""
+  categories:  'Summer school'
+  date: "July 15, 2024"
+  end_date: "July 15, 2024"
+  time: "NA"
+  location:
+    name: "Hybrid (Max Planck Digital Library in Laim)"
+    address: ""
+    map_url: ""
+  format:
+    type: 'Summer school'
+    detail: ""
+  language:
+    primary: "English"
+    primary-code: "en"
+    detail: "NA"
+links:
+  registration: ""
+  materials: ""
+  workshop_website: ""
+
+event_description:
+  - ""
+
+instructors:
+  - name: ""
+    url: ""
+
+helpers:
+  - name: ""
+
+contact:
+  name: ""
+  email: ""
+---
+<!-- MANDAORY SECTION START  -->
+<link rel = "stylesheet"  href = "https://cdn.jsdelivr.net/npm/bootstrap-icons@5.6.2/font/bootstrap-icons.css">
+
+<h1 class="fs-1 text-primary"> {{< meta event.title >}} </h1>
+
+{{< include templates/_setup.qmd >}}
+{{< include templates/_info_boxes.qmd >}}
+{{< include templates/_register_button.qmd >}}
+<!-- MANDAORY SECTION END  -->
+
+
+
+<!-- DETAILED EVENT DESCRIPTION HERE OR USE THE TEMPLATE BELOW TO INCLUDE THE STANDARD DESCRIPTION SECTION -->
+<!-- {{< include templates/_event_description.qmd >}} -->
+
+<p><img height="390" style="display: block; margin-left: auto; margin-right: auto;" width="380" src="flyer_ss24.png" alt="FlyerOpenScienceSS24"></p><p> </p><p>The LMU &amp; MPG Open Science Summer School 2024 is organised by the <a href="https://www.osc.uni-muenchen.de/index.html">LMU Open Science Center (OSC)</a> and the <a href="https://www.mpdl.mpg.de/en/">Max Planck Digital Library (MPDL)</a>.</p><p>This intensive 5-day Open Science Summer School provides early career researchers with the knowledge and skills to make their research more <strong>transparent, reproducible </strong>and<strong> credible</strong> in the eyes of their peers, the public and funding agencies.</p><p>By joining (or accessing the material after the school), you will learn how to:</p><ul>
+<li>clarify your research design and set up your statistical plans in advance of collecting data to prevent biases in analyses, with the help of <strong>preregistration </strong>and<strong> data simulation</strong>
+</li>
+<li>create computationally reproducible workflows so you can be more efficient and spot mistakes in data wrangling or analyses, through <strong>programming </strong>with<strong> version controlled</strong> scripts;</li>
+<li>prepare, manage and share <strong>data </strong>and<strong> code</strong> in connection with your <strong>articles</strong> by applying the <strong>Findable, Accessible, Interoperable, Reusable principles</strong>, and using adequate <strong>repositories</strong> and <strong>licences</strong>.The summer school will consist of public lectures and workshops for selected applicants.</li>
+</ul>
+<div>Increase the <strong>impact</strong> of your research and secure the <strong>acknowledgement</strong> of your and others contributions by opening your research practices!</div><p>Some keynote presenters:</p><ul>
+<li>Ádám Dér, Head of the Scientific Information Provision at the MPDL</li>
+<li>Dr Tim Errington, Senior Director of Research at Center for Open Science</li>
+<li>Jonas Hagenberg, PhD student at the Max Planck Institute of Psychiatry</li>
+<li>Prof Dr Sabina Leonelli, Professor of Philosophy and History of Science at University of Exeter</li>
+<li>Prof Dr Richard McElreath, Department Director at MPI Evolutionary Anthropology</li>
+<li>Dr Malvika Sharan, Senior Researcher at the Alan Turing Institute</li>
+<li>Prof Dr Felix Schönbrodt, Director of LMU Open Science Center</li>
+<li>Dr Malika Ihle, Coordinator of LMU Open Science Center</li>
+</ul>
+<p>...and many more instructors!</p><p>You can find the <strong>programme</strong> and more information on the <strong>lectures</strong> and <strong>workshops</strong> here: <a href="https://osip.mpdl.mpg.de/lmu-mpg-open-science-summer-school-2024/">https://osip.mpdl.mpg.de/lmu-mpg-open-science-summer-school-2024/</a></p><h2>Apply to attend the whole summer school (in-person or online)</h2><p>To attend the whole school, i.e. both public lectures and workshops for selected applicants, on site or online, you must apply before <strong>15 July 2024, 12:00 noon CEST</strong>.</p><p><strong>Apply here</strong>: <a href="https://surveys.osc.lmu.de/OpenScienceSummerSchool2024">https://surveys.osc.lmu.de/OpenScienceSummerSchool2024</a></p><p>The Summer Schoolis targeted at PhD students of all scientific disciplines (Earth sciences, Medical sciences, Social Sciences, Life Sciences, etc.). Researchers in fields of the Humanities can also apply, but should note that the Summer School contents lean towards quantitative research. Master students and early post docs are also welcome to apply.</p><p>The SummerSchool will be held in a hybrid format and you will be able to choose your preferred mode of participation (online or on site). By applying, we expect you to attend all sessions of the school (with justified exception possible). A certificate of attendance will be provided.</p><p>During the application process, you will be asked about your motivation, experience and prior knowledge. We will prioritize novices with clear ideas about where to integrate these new skills in their own research. At equal score, we will prioritize members of the LMU or MPG, and maximize the diversity of applicants background in terms of discipline, career stage, and gender.</p><p>The on site part of the school will take place on the premises of the Max Planck Digital Library, <strong>Landsberger Straße 346, 80687 München, Germany</strong>. Lunch will be provided for on site participants throughout the week. The dinner on Thursday is optional and on a self-payment basis. The online part will be on <strong>Zoom</strong>. We will not provide travel grants.</p><p>Please note that the Laim S-Bahn station is currently not barrier-free. If you require a barrier-free journey, please contact the <a href="mailto:osip@mpdl.mpg.de">OSiP-Supp</a></p><p><a href="mailto:osip@mpdl.mpg.de">ort</a>.</p><div>
+<h2>Join one or several of the public lectures (online)</h2>
+<p>Anyone can register at any time before the end of the summer school to attend one, multiple, or all lectures online.</p>
+<p>Register here: <a href="https://www.pretix.osc.lmu.de/lmu-osc/SS24/">https://www.pretix.osc.lmu.de/lmu-osc/SS24/</a></p>
+<h2>Funding Note</h2>
+<p>The Summer School is financed by the <strong>Max Planck Digital Library</strong>.</p>
+<p> </p>
+</div><div class="g-clear"></div>
+
+
+
+<!-- MANDAORY SECTION START  -->
+<!-- _event_description.qmd template should always be at bottom -->
+{{< include templates/_instructors_helpers_contact.qmd >}}
+<!-- MANDAORY SECTION END  -->

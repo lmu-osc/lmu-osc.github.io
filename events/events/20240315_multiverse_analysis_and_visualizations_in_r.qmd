@@ -1,0 +1,69 @@
+---
+format:
+    html:
+        table-of-contents: false
+        css: event-page-styles.css
+page-layout: full
+pagetitle: 'Workshop: "Making the black box transparent: Multiverse analysis and visualizations in R"'
+
+# Event categories
+event:
+  title: 'Workshop: "Making the black box transparent: Multiverse analysis and visualizations in R"'
+  description: ""
+  categories:  'Workshop'
+  date: "March 15, 2024"
+  end_date: "March 15, 2024"
+  time: "09:00–12:00"
+  location:
+    name: "Leopoldstraße 13, room 2201"
+    address: ""
+    map_url: ""
+  format:
+    type: 'Workshop'
+    detail: ""
+  language:
+    primary: "English"
+    primary-code: "en"
+    detail: "NA"
+links:
+  registration: ""
+  materials: ""
+  workshop_website: ""
+
+event_description:
+  - ""
+
+instructors:
+  - name: ""
+    url: ""
+
+helpers:
+  - name: ""
+
+contact:
+  name: ""
+  email: ""
+---
+<!-- MANDAORY SECTION START  -->
+<link rel = "stylesheet"  href = "https://cdn.jsdelivr.net/npm/bootstrap-icons@5.6.2/font/bootstrap-icons.css">
+
+<h1 class="fs-1 text-primary"> {{< meta event.title >}} </h1>
+
+{{< include templates/_setup.qmd >}}
+{{< include templates/_info_boxes.qmd >}}
+{{< include templates/_register_button.qmd >}}
+<!-- MANDAORY SECTION END  -->
+
+
+
+<!-- DETAILED EVENT DESCRIPTION HERE OR USE THE TEMPLATE BELOW TO INCLUDE THE STANDARD DESCRIPTION SECTION -->
+<!-- {{< include templates/_event_description.qmd >}} -->
+
+<p><strong>Abstract</strong>: To describe the multitude of researchers’ methodological choices when analyzing data, Gelman and Loken (2013) coined the term “garden of forking paths”. Multiple defensible alternative options are available for selection throughout the study design, data preprocessing and data analysis workflow. In line with a traditional analysis approach, researchers will select one sole workflow of defensible options and often do not specifically disclose how the decisions were made. However, a multiple comparison problem occurs even if only one constructed dataset following one single workflow of decisions is used for statistical inferences. The reason is that theoretically a large variety of workflows is possible, but researchers do not correct their hypothesis tests for potential comparisons that they did not explicitly carry out.</p><p>Recently, statistical approaches have been proposed to explore and integrate multiple inferential results accumulated along forking paths. Multiverse analysis (Steegen et al., 2016) refers to repeated hypothesis testing on the multitude of datasets resulting from different defensible decisions regarding, for example, variable selection, categorization, transformation, outlier selection, etc. After combining all potential choices by simple rules of combinatorics, contradictory combinations are eliminated. Datasets created on the basis of the remaining set of combinations are then submitted to statistical analyses along a looped pipeline. Results provide as many outcomes of statistical tests as datasets created in the multiverse. These can then be visualized to understand how statistical conclusions depend on methodological decisions or they can be statistically integrated.</p><p>In this workshop, unexperienced attendees who attended the lecture on the previous day will be guided through an implementation example of multiverse analyses on the R Software for Statistical Computing. There will be time for exercises and discussions. Workshop materials and necessary R packages will be shared in advance and participants are expected to join the workshop with their own laptops.</p><p><strong>Instructor</strong>: Andrea Hildebrandt, Professor for Psychological Methods and Statistics at the Carl von Ossietzky Universität Oldenburg, Department of Psychology and Cassie Short, Postdoc at the Psychological Methods and Statistics Lab of the Carl von Ossietzky Universität Oldenburg, Department of Psychology</p><p><strong>Participants</strong>: Scientists from any discipline who apply statistical models in the framework of regression analysis, without prior experience with multiverse analysis implementations.</p><p><strong>Prerequisite</strong>: Basic statistics (including GLM) and statistical programming skills in R are required. R software must be installed prior to the workshop. Participants must also have attended the lecture on the previous day: <a href="https://www.pretix.osc.lmu.de/lmu-osc/multiverse-L/">https://www.pretix.osc.lmu.de/lmu-osc/multiverse-L/</a></p><p><strong>Logistics:</strong> The event will be held in person, in English. Participation in the workshop is free and open to all. Priority will be given to, in order, members of Departments sponsoring the Open Science Center (Department of Psychology, Business Administration, Biology), other LMU members, and non-LMU members. Non-members will receive confirmation whether their attendance is possible at least 2 days before the workshop.</p><div class="g-clear"></div>
+
+
+
+<!-- MANDAORY SECTION START  -->
+<!-- _event_description.qmd template should always be at bottom -->
+{{< include templates/_instructors_helpers_contact.qmd >}}
+<!-- MANDAORY SECTION END  -->

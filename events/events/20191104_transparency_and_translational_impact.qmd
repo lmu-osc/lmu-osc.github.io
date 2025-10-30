@@ -1,0 +1,69 @@
+---
+format:
+    html:
+        table-of-contents: false
+        css: event-page-styles.css
+page-layout: full
+pagetitle: 'Lecture: "Reproducible research: transparency and translational impact"'
+
+# Event categories
+event:
+  title: 'Lecture: "Reproducible research: transparency and translational impact"'
+  description: ""
+  categories:  'Lecture'
+  date: "November 04, 2019"
+  end_date: "November 04, 2019"
+  time: "16:00"
+  location:
+    name: "Geschwister-Scholl-Platz 1, Room E110"
+    address: ""
+    map_url: ""
+  format:
+    type: 'Lecture'
+    detail: ""
+  language:
+    primary: "English"
+    primary-code: "en"
+    detail: "NA"
+links:
+  registration: ""
+  materials: ""
+  workshop_website: ""
+
+event_description:
+  - ""
+
+instructors:
+  - name: ""
+    url: ""
+
+helpers:
+  - name: ""
+
+contact:
+  name: ""
+  email: ""
+---
+<!-- MANDAORY SECTION START  -->
+<link rel = "stylesheet"  href = "https://cdn.jsdelivr.net/npm/bootstrap-icons@5.6.2/font/bootstrap-icons.css">
+
+<h1 class="fs-1 text-primary"> {{< meta event.title >}} </h1>
+
+{{< include templates/_setup.qmd >}}
+{{< include templates/_info_boxes.qmd >}}
+{{< include templates/_register_button.qmd >}}
+<!-- MANDAORY SECTION END  -->
+
+
+
+<!-- DETAILED EVENT DESCRIPTION HERE OR USE THE TEMPLATE BELOW TO INCLUDE THE STANDARD DESCRIPTION SECTION -->
+<!-- {{< include templates/_event_description.qmd >}} -->
+
+<p>We are glad to announce the following upcoming talk "Reproducible research: transparency and translational impact" by Prof. John P. A. Ioannidis, Professor of Medicine, of Health Research and Policy, of Biomedical Data Science, and of Statistics, Stanford University; Co-director, Meta-Research Innovation Center at Stanford (METRICS)</p><p><br>Abstract: Theoretical insights, simulations, and empirical data converge that in the current research environment a substantial segment of published research yields results that are not credible. Moreover, among the results that are credible a large share cannot be translated meaningfully and thus end up being not useful. The lecture will assess the scope of this evidence and will focus on solutions that have been proposed to make research more reproducible and with greater translational impact. Many of these solutions center around optimizing transparency. Transparency can clearly help reproducibility, but this alone may not suffice to make research outcomes also more useful. Different solutions will be discussed with emphasis on biomedical and social sciences, although the challenges cover all scientific fields and comparative data will be presented across different fields.</p><p>Speaker:<br>Prof. John P. A. Ioannidis, Professor of Medicine, of Health Research and Policy, of Biomedical Data Science, and of Statistics, Stanford University; Co-director, Meta-Research Innovation Center at Stanford (METRICS)</p><div class="g-clear"></div>
+
+
+
+<!-- MANDAORY SECTION START  -->
+<!-- _event_description.qmd template should always be at bottom -->
+{{< include templates/_instructors_helpers_contact.qmd >}}
+<!-- MANDAORY SECTION END  -->

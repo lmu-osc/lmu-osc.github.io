@@ -1,0 +1,69 @@
+---
+format:
+    html:
+        table-of-contents: false
+        css: event-page-styles.css
+page-layout: full
+pagetitle: 'Seminar: "Meta Research and the QUEST for responsible research"'
+
+# Event categories
+event:
+  title: 'Seminar: "Meta Research and the QUEST for responsible research"'
+  description: ""
+  categories:  'Lecture'
+  date: "November 17, 2022"
+  end_date: "November 17, 2022"
+  time: "16:00-17:00"
+  location:
+    name: "Hybrid (Geschwister-Scholl-Platz 1, room M-001, Munich and via Zoom)"
+    address: ""
+    map_url: ""
+  format:
+    type: 'Lecture'
+    detail: ""
+  language:
+    primary: "English"
+    primary-code: "en"
+    detail: "NA"
+links:
+  registration: ""
+  materials: ""
+  workshop_website: ""
+
+event_description:
+  - ""
+
+instructors:
+  - name: ""
+    url: ""
+
+helpers:
+  - name: ""
+
+contact:
+  name: ""
+  email: ""
+---
+<!-- MANDAORY SECTION START  -->
+<link rel = "stylesheet"  href = "https://cdn.jsdelivr.net/npm/bootstrap-icons@5.6.2/font/bootstrap-icons.css">
+
+<h1 class="fs-1 text-primary"> {{< meta event.title >}} </h1>
+
+{{< include templates/_setup.qmd >}}
+{{< include templates/_info_boxes.qmd >}}
+{{< include templates/_register_button.qmd >}}
+<!-- MANDAORY SECTION END  -->
+
+
+
+<!-- DETAILED EVENT DESCRIPTION HERE OR USE THE TEMPLATE BELOW TO INCLUDE THE STANDARD DESCRIPTION SECTION -->
+<!-- {{< include templates/_event_description.qmd >}} -->
+
+<p>The Open Science Initiative Psychology (OSIP) and the LMU Open Science Center (OSC) are please to welcome PD Dr. Ulf Tölch to present an introduction to meta research on November 17, 2022 from 14:00 to 15:00.</p><h3>Abstract</h3><p>Meta-research, or the science of science, allegedly improves your research. But how can you leverage this to identify and fix common problems in your own research? How can you engage in your own meta research? And will this be beneficial for your career? I will give an overview of current developments in the field and how these connect to your recent research endeavors.</p><h3>Presenter's short bio</h3><p>PD Dr. Ulf Tölch is Head of research group 'Education, Training &amp; Quality in Research' at the QUEST center for Responsible Research of the Berlin Institut of Heath from the Charité, Berlin.</p><p> </p><p>Participants: this hybrid seminar is open to all.</p><p>The event will be held in English.</p><p> </p><p> </p><p> </p><p> </p><div class="g-clear"></div>
+
+
+
+<!-- MANDAORY SECTION START  -->
+<!-- _event_description.qmd template should always be at bottom -->
+{{< include templates/_instructors_helpers_contact.qmd >}}
+<!-- MANDAORY SECTION END  -->

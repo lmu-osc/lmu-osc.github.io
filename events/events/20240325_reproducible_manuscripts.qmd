@@ -1,0 +1,86 @@
+---
+format:
+    html:
+        table-of-contents: false
+        css: event-page-styles.css
+page-layout: full
+pagetitle: 'Hacky Hour: "Reproducible manuscripts"'
+
+# Event categories
+event:
+  title: 'Hacky Hour: "Reproducible manuscripts"'
+  description: ""
+  categories:  'Hacky Hour'
+  date: "March 25, 2024"
+  end_date: "March 25, 2024"
+  time: "16:30–18:00"
+  location:
+    name: "Wikipedia Munich, Angertorstraße 3"
+    address: ""
+    map_url: ""
+  format:
+    type: 'Hacky Hour'
+    detail: ""
+  language:
+    primary: "English"
+    primary-code: "en"
+    detail: "NA"
+links:
+  registration: ""
+  materials: ""
+  workshop_website: ""
+
+event_description:
+  - ""
+
+instructors:
+  - name: ""
+    url: ""
+
+helpers:
+  - name: ""
+
+contact:
+  name: ""
+  email: ""
+---
+<!-- MANDAORY SECTION START  -->
+<link rel = "stylesheet"  href = "https://cdn.jsdelivr.net/npm/bootstrap-icons@5.6.2/font/bootstrap-icons.css">
+
+<h1 class="fs-1 text-primary"> {{< meta event.title >}} </h1>
+
+{{< include templates/_setup.qmd >}}
+{{< include templates/_info_boxes.qmd >}}
+{{< include templates/_register_button.qmd >}}
+<!-- MANDAORY SECTION END  -->
+
+
+
+<!-- DETAILED EVENT DESCRIPTION HERE OR USE THE TEMPLATE BELOW TO INCLUDE THE STANDARD DESCRIPTION SECTION -->
+<!-- {{< include templates/_event_description.qmd >}} -->
+
+<p>Come along to talk about code, research tools, and open science in a social environment!</p><p>Possible resources to prepare your session’s hack:</p><p>Beginner:</p><ul>
+<li>Quarto self-paced tutorial: <a href="https://florianpargent.github.io/Quarto_LMU_OSC/">https://florianpargent.github.io/Quarto_LMU_OSC/</a>
+</li>
+<li>
+<a href="https://osf.io/mfe37" target="_blank">https://osf.io/mfe37</a> (10 min demonstration for executable manuscripts using RStudio/Rmd/Zenodo/Google doc)</li>
+</ul>
+<p>Advanced:</p><ul>
+<li><a href="https://plain-text.co/index.html#introduction#introduction" target="_blank">https://plain-text.co/ </a></li>
+<li>
+<a href="https://osf.io/ngd9t" target="_blank">https://osf.io/ngd9t</a> (10 min demonstration for executable manuscripts using Emacs/Sweave/Bib/Version control)</li>
+</ul>
+<p><strong>Sessions’ agenda:</strong></p><ul>
+<li>Brief round of introductions and description of the problems you’ll be working on during that session</li>
+<li>Formation of possible groups or tandems, if participants have tips to exchange on certain topics</li>
+<li>Hack</li>
+<li>Wrap-up: progress and next steps</li>
+</ul>
+<p>Learn more about the Hacky Hour initiative <a href="../../meetups/hackyhour/index.html" title="Hacky Hour">here</a>.</p><div class="g-clear"></div>
+
+
+
+<!-- MANDAORY SECTION START  -->
+<!-- _event_description.qmd template should always be at bottom -->
+{{< include templates/_instructors_helpers_contact.qmd >}}
+<!-- MANDAORY SECTION END  -->

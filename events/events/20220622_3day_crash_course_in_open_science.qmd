@@ -1,0 +1,84 @@
+---
+format:
+    html:
+        table-of-contents: false
+        css: event-page-styles.css
+page-layout: full
+pagetitle: 'Crash course: 3-day crash course in Open Science'
+
+# Event categories
+event:
+  title: 'Crash course: 3-day crash course in Open Science'
+  description: ""
+  categories:  'Crash course'
+  date: "June 22, 2022"
+  end_date: "June 22, 2022"
+  time: "9:30-16:30"
+  location:
+    name: "Planegg-Martinsried, Munich"
+    address: ""
+    map_url: ""
+  format:
+    type: 'Crash course'
+    detail: ""
+  language:
+    primary: "English"
+    primary-code: "en"
+    detail: "NA"
+links:
+  registration: ""
+  materials: ""
+  workshop_website: ""
+
+event_description:
+  - ""
+
+instructors:
+  - name: ""
+    url: ""
+
+helpers:
+  - name: ""
+
+contact:
+  name: ""
+  email: ""
+---
+<!-- MANDAORY SECTION START  -->
+<link rel = "stylesheet"  href = "https://cdn.jsdelivr.net/npm/bootstrap-icons@5.6.2/font/bootstrap-icons.css">
+
+<h1 class="fs-1 text-primary"> {{< meta event.title >}} </h1>
+
+{{< include templates/_setup.qmd >}}
+{{< include templates/_info_boxes.qmd >}}
+{{< include templates/_register_button.qmd >}}
+<!-- MANDAORY SECTION END  -->
+
+
+
+<!-- DETAILED EVENT DESCRIPTION HERE OR USE THE TEMPLATE BELOW TO INCLUDE THE STANDARD DESCRIPTION SECTION -->
+<!-- {{< include templates/_event_description.qmd >}} -->
+
+<p>Good scientific practice in empirical disciplines nowadays goes beyond the avoidance of bad practices, such as plagiarism or data fabrication: science is expected to be reproducible, funders and<br>journals increasingly demand open data as a precondition for funding and publication, and the need for preregistration of studies expands beyond the medical sciences. More generally, open research refers to efforts to ensure that the research process is transparent, with equitable access for all to learn, understand, contextualise, build upon, or even assess or verify the research.</p><p>In the last few years, many novel approaches, tools, and technologies have emerged that allow for a comprehensive representation of the research process that goes far beyond descriptions of research methods and results as found in traditional scientific articles. Open research practices have the potential to revolutionise the way research outputs are communicated, and to facilitate research collaborations in an unprecedented manner. However, adopting these practices requires knowledge and skills that are not usually taught in undergraduate or graduate degree programmes.</p><p>To start closing this gap, the LMU Open Science Center, supported by the LMU Faculty of Biology, and with guest instructors from the Society for Open, Reliable, and Transparent Ecology and Evolutionary biology, offer a three days crash school to guide early career researchers (<strong>MSc. students, PhD students, and postdocs</strong>) towards an open, transparent, and reproducible research workflow.</p><p> <strong>Programme</strong></p><p>The three days crash course will consist of a series of lectures and workshops on the following topics:</p><ul>
+<li><strong>Replicability crisis &amp; Open Science Framework</strong></li>
+<li><strong>Reproducible workflows &amp; Version control</strong></li>
+<li><strong>Preregistration &amp; Simulation of data</strong></li>
+<li><strong>Biases &amp; Common statistical mistakes</strong></li>
+<li><strong>Data sharing &amp; Meta-analysis </strong></li>
+</ul>
+<div>See schedule as a pdf in the download section below.</div><div></div><div><b><b><br></b></b></div><div>
+<b><b>Application process<br></b></b>LMU members from any scientific discipline can apply.<br>Members of the Faculty of Biology, which is sponsoring this event, will be given up to 30 seats, and 10 seats will be reserved for any other LMU members or researchers in the Munich area.</div><div>
+<p>Applicants will be asked to provide a brief statement (max. 300 words) about their motivation and future or recently started research projects in which they would like to apply open and reproducible research practices. When relevant, the statement should address what particular challenges applicants encountered in their work which would be addressed by the crash course; what open research practices they already practice; if any other courses were attended; etc.</p>
+<p>If more applications are received than can be accommodated, the organising committee will select participants on the basis of the project and experience that they describe. We will favor applicants who are novices but who have already identified a need for applying the skills acquired.</p>
+<p>Following acceptance, we require a signed form from the supervisor/PI to indicate that they will support the use of transparent and reproducible practices in the applicant’s research project.</p>
+<p><strong>Contact</strong></p>
+<p>Please contact the LMU Open Science Center Coordinator, Dr Malika Ihle: <a class="g-link-mail" href="mailto:malika.ihle@lmu.de" title="Send email to: malika.ihle@lmu.de">malika.ihle@lmu.de</a> with any questions.</p>
+<p> <img src="crash-course-flyer.jpg" alt="crash course flyer"></p>
+</div><div class="g-clear"></div>
+
+
+
+<!-- MANDAORY SECTION START  -->
+<!-- _event_description.qmd template should always be at bottom -->
+{{< include templates/_instructors_helpers_contact.qmd >}}
+<!-- MANDAORY SECTION END  -->

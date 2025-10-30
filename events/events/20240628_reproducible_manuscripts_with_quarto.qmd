@@ -1,0 +1,77 @@
+---
+format:
+    html:
+        table-of-contents: false
+        css: event-page-styles.css
+page-layout: full
+pagetitle: 'Workshop: "Reproducible manuscripts with Quarto"'
+
+# Event categories
+event:
+  title: 'Workshop: "Reproducible manuscripts with Quarto"'
+  description: ""
+  categories:  'Workshop'
+  date: "June 28, 2024"
+  end_date: "June 28, 2024"
+  time: "16:00-18:00"
+  location:
+    name: "Leopoldstraße 13, room 3322"
+    address: ""
+    map_url: ""
+  format:
+    type: 'Workshop'
+    detail: ""
+  language:
+    primary: "English"
+    primary-code: "en"
+    detail: "NA"
+links:
+  registration: ""
+  materials: ""
+  workshop_website: ""
+
+event_description:
+  - ""
+
+instructors:
+  - name: ""
+    url: ""
+
+helpers:
+  - name: ""
+
+contact:
+  name: ""
+  email: ""
+---
+<!-- MANDAORY SECTION START  -->
+<link rel = "stylesheet"  href = "https://cdn.jsdelivr.net/npm/bootstrap-icons@5.6.2/font/bootstrap-icons.css">
+
+<h1 class="fs-1 text-primary"> {{< meta event.title >}} </h1>
+
+{{< include templates/_setup.qmd >}}
+{{< include templates/_info_boxes.qmd >}}
+{{< include templates/_register_button.qmd >}}
+<!-- MANDAORY SECTION END  -->
+
+
+
+<!-- DETAILED EVENT DESCRIPTION HERE OR USE THE TEMPLATE BELOW TO INCLUDE THE STANDARD DESCRIPTION SECTION -->
+<!-- {{< include templates/_event_description.qmd >}} -->
+
+<p>Have you always wanted to make your manuscripts reproducible but got stuck during the process? In this <strong>flipped classroom workshop</strong>, we will help you solve the individual problems you have encountered when writing your own manuscript with Quarto.</p><p><a href="https://quarto.org/">Quarto</a> (the successor of R Markdown) is a popular open-source software for writing reproducible scientific manuscripts. It can also produce websites, blogs, books, presentations, dashboards and much more. Quarto can be used together with R, Python or Julia. If you want to learn how to use Quarto and write reproducible scientific manuscripts with R, we have prepared a <a href="https://lmu-osc.github.io/introduction-to-Quarto/">self-paced online tutorial</a> for you.</p><p><span style="color: #808080; font-family: verdana, helvetica, arial, sans-serif; font-size: 1em; font-weight: bold;">Before the workshop:</span></p><p>It is intended that you familiarize yourself with how Quarto works and have started your own reproducible manuscript <strong>before</strong> attending the workshop. If you have never worked with Quarto, R Markdown, or Jupyter Notebooks before, you should plan at least one workday for preparation. The following sections of the <a href="https://lmu-osc.github.io/introduction-to-Quarto/">self-paced online tutorial</a> are particularly relevant for you to be able to create a reproducible scientific manuscript:</p><ul>
+<li>
+<a href="https://lmu-osc.github.io/introduction-to-Quarto/quarto_tutorials.html">Quarto Tutorials</a>: Companion to the beginner tutorials on the official Quarto website.</li>
+<li>
+<a href="https://lmu-osc.github.io/introduction-to-Quarto/apa7_manuscript.html">Exercise: APA 7 Manuscripts</a>: An introduction to the Quarto extension <a href="https://github.com/wjschne/apaquarto">apaquarto </a>, which allows formatting Quarto documents as APA 7 manuscripts.</li>
+<li>
+<strong>Optional:</strong> <a href="https://lmu-osc.github.io/introduction-to-Quarto/quarto_manuscripts.html">Exercise: Quarto Manuscripts</a>: Quarto Manuscripts enable you to create a website that showcases your manuscript and provides a bundle with all the code and materials necessary to reproduce your manuscript.</li>
+</ul>
+<div></div><p><span style="color: #808080; font-family: verdana, helvetica, arial, sans-serif; font-size: 1em; font-weight: bold;">During the workshop:</span></p><p>There will only be minimal input from our side during the workshop, as you have already familiarized yourself with Quarto beforehand so we can focus on your individual problems. After a brief welcome, we will collect the types of problems you encountered when trying to write your own manuscript and divide you into groups, so you can start helping each other. We will try to answer your individual questions and assist with the problems you encountered. When your problem is solved, you can continue working on your own manuscript during the workshop. We will wrap up with a short summary on commonly encountered challenges.</p><p> </p><p><strong>Target audience:</strong> Scientists and students who want to write a reproducible manuscript with Quarto and have started their first reproducible manuscript. If you have some experience with Quarto yourself and want to assist you colleagues during the workshop, you are very welcome as well!</p><p><strong>Prerequisites:</strong> Participants have worked through a Quarto tutorial before the workshop, have started to write their own manuscript in Quarto and have encountered questions or unsolved problems.</p><p><strong>Max. number of participants:</strong> Until the room is full</p><div class="g-clear"></div>
+
+
+
+<!-- MANDAORY SECTION START  -->
+<!-- _event_description.qmd template should always be at bottom -->
+{{< include templates/_instructors_helpers_contact.qmd >}}
+<!-- MANDAORY SECTION END  -->

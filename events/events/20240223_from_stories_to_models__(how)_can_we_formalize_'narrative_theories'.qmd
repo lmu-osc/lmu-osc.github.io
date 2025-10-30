@@ -1,0 +1,69 @@
+---
+format:
+    html:
+        table-of-contents: false
+        css: event-page-styles.css
+page-layout: full
+pagetitle: 'Workshop: "From stories to models - (how) can we formalize ''narrative theories''?"'
+
+# Event categories
+event:
+  title: 'Workshop: "From stories to models - (how) can we formalize ''narrative theories''?"'
+  description: ""
+  categories:  'Workshop'
+  date: "February 23, 2024"
+  end_date: "February 23, 2024"
+  time: "13:00–17:00"
+  location:
+    name: "Hybrid (Leopoldstraße 13, room 3322, Munich and via Zoom)"
+    address: ""
+    map_url: ""
+  format:
+    type: 'Workshop'
+    detail: ""
+  language:
+    primary: "English"
+    primary-code: "en"
+    detail: "NA"
+links:
+  registration: ""
+  materials: ""
+  workshop_website: ""
+
+event_description:
+  - ""
+
+instructors:
+  - name: ""
+    url: ""
+
+helpers:
+  - name: ""
+
+contact:
+  name: ""
+  email: ""
+---
+<!-- MANDAORY SECTION START  -->
+<link rel = "stylesheet"  href = "https://cdn.jsdelivr.net/npm/bootstrap-icons@5.6.2/font/bootstrap-icons.css">
+
+<h1 class="fs-1 text-primary"> {{< meta event.title >}} </h1>
+
+{{< include templates/_setup.qmd >}}
+{{< include templates/_info_boxes.qmd >}}
+{{< include templates/_register_button.qmd >}}
+<!-- MANDAORY SECTION END  -->
+
+
+
+<!-- DETAILED EVENT DESCRIPTION HERE OR USE THE TEMPLATE BELOW TO INCLUDE THE STANDARD DESCRIPTION SECTION -->
+<!-- {{< include templates/_event_description.qmd >}} -->
+
+<p><strong>Abstract: </strong>There is growing consensus that psychology and other fields need to better specify their theories, and formalization offers a promising path to achieving that goal. I will briefly talk about the advantages of formal models over narrative ones, and present a few examples from my own lab in which such a formalization was attempted more or less successfully. However, the largest part of the workshop shall be reserved for participants working on formal versions of narrative theory paragraphs that they themselves pick and bring along. As this is likely to be a relatively new kind of challenge to most participants, and given that formalization can actually be fairly difficult, the overall objective is not to achieve perfect results, but rather to get people interested in this crucial type of work, and to help them overcome initial hesitations they may have to invest their valuable time and energy into it.</p><p><strong>Target audience: </strong>scientists of all career levels (students to PIs) from the fields of psychology, philosophy, sociology, etc.</p><p><strong>Agenda:</strong> 60 m Intro ; 15 m Break ; 75 m First Round Practice ; 15 m Break ; 75 m Second Round Practice</p><p><strong>Logistics:</strong> There are no prerequisites. The format of the session is hybrid (you can attend online or in person). The event will be held in English, unless there are only German native speakers in the room. Participation in the workshop is free and open to all. Priority will be given to, in order, members of Departments sponsoring the Open Science Center (Department of Psychology, Business Administration, Biology), other LMU members, and non-LMU members. Non-members will receive confirmation whether their attendance is possible at least 2 days before the workshop.</p><div class="g-clear"></div>
+
+
+
+<!-- MANDAORY SECTION START  -->
+<!-- _event_description.qmd template should always be at bottom -->
+{{< include templates/_instructors_helpers_contact.qmd >}}
+<!-- MANDAORY SECTION END  -->

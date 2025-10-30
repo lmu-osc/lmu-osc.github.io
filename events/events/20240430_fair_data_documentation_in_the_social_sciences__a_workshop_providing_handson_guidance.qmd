@@ -1,0 +1,71 @@
+---
+format:
+    html:
+        table-of-contents: false
+        css: event-page-styles.css
+page-layout: full
+pagetitle: 'Workshop: "FAIR data documentation in the social sciences - a workshop providing hands-on guidance"'
+
+# Event categories
+event:
+  title: 'Workshop: "FAIR data documentation in the social sciences - a workshop providing hands-on guidance"'
+  description: ""
+  categories:  'Workshop'
+  date: "April 30, 2024"
+  end_date: "April 30, 2024"
+  time: "09:00-13:00"
+  location:
+    name: "Online (Zoom)"
+    address: ""
+    map_url: ""
+  format:
+    type: 'Workshop'
+    detail: ""
+  language:
+    primary: "English"
+    primary-code: "en"
+    detail: "NA"
+links:
+  registration: ""
+  materials: ""
+  workshop_website: ""
+
+event_description:
+  - ""
+
+instructors:
+  - name: ""
+    url: ""
+
+helpers:
+  - name: ""
+
+contact:
+  name: ""
+  email: ""
+---
+<!-- MANDAORY SECTION START  -->
+<link rel = "stylesheet"  href = "https://cdn.jsdelivr.net/npm/bootstrap-icons@5.6.2/font/bootstrap-icons.css">
+
+<h1 class="fs-1 text-primary"> {{< meta event.title >}} </h1>
+
+{{< include templates/_setup.qmd >}}
+{{< include templates/_info_boxes.qmd >}}
+{{< include templates/_register_button.qmd >}}
+<!-- MANDAORY SECTION END  -->
+
+
+
+<!-- DETAILED EVENT DESCRIPTION HERE OR USE THE TEMPLATE BELOW TO INCLUDE THE STANDARD DESCRIPTION SECTION -->
+<!-- {{< include templates/_event_description.qmd >}} -->
+
+<p>Transparency and openness in the research process are becoming increasingly important in all scientific fields - including the social sciences. Accordingly, researchers should not only make research results freely available, for example in the form of scientific articles (open access), but also provide research data, analysis scripts and study materials. However, the reusability of the data made available requires comprehensive research data management (RDM) on the part of the researchers. In particular, research data should be made available in accordance with the FAIR principles, meaning that research data should be Findable, Accessible, and usable (Interoperable and Reusable). In this workshop, you will learn about FAIR data management in the social sciences. Specifically, you will 1) create a data management plan and 2) get an introduction to FAIR data documentation.</p><p><strong>Target audience:</strong> PhD students and post-docs from the social sciences (e.g. psychology, sociology, anthropology, etc). However, interested students are also welcome.</p><p><strong>Prerequisites:</strong> There is no prior knowledge required on research data management or the implementation of the FAIR principles. To participate in the hands-on session on data management planning, please create an account for the DMPTool https://dmptool.org/ if you do not already have one.</p><p><strong>Logistics:</strong> This event will be held online. Priority will be given to LMU members. Non-members will receive confirmation whether their attendance is possible at least 2 days before the workshop.</p><ul style="list-style-type: square;"><li>
+</li></ul>
+<div class="g-clear"></div>
+
+
+
+<!-- MANDAORY SECTION START  -->
+<!-- _event_description.qmd template should always be at bottom -->
+{{< include templates/_instructors_helpers_contact.qmd >}}
+<!-- MANDAORY SECTION END  -->
