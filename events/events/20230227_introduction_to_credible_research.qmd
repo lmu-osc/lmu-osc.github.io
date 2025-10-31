@@ -4,12 +4,12 @@ format:
         table-of-contents: false
         css: event-page-styles.css
 page-layout: full
-pagetitle: 'Online Lecture: Introduction to credible research'
+pagetitle: 'Introduction to credible research'
 categories: 'Lecture'
 
 # Event categories
 event:
-  title: 'Online Lecture: Introduction to credible research'
+  title: 'Introduction to credible research'
   description: ""
   categories:  'Lecture'
   date: "February 27, 2023"
@@ -45,6 +45,9 @@ helpers:
 contact:
   name: ""
   email: ""
+
+organizers:
+  name: ""
 ---
 <!-- MANDAORY SECTION START  -->
 <link rel = "stylesheet"  href = "https://cdn.jsdelivr.net/npm/bootstrap-icons@5.6.2/font/bootstrap-icons.css">
