@@ -5,12 +5,13 @@ format:
         css: event-page-styles.css
 page-layout: full
 pagetitle: 'Workshop: "Software Carpentry - R flavored - Philologicum"'
+categories: 'Workshop'
 
 # Event categories
 event:
-  title: 'Software Carpentry - R flavored - Philologicum'
+  title: 'Workshop: "Software Carpentry - R flavored - Philologicum"'
   description: ""
-  categories: 'Workshop'
+  categories:  'Workshop'
   date: "March 24, 2025"
   end_date: "March 24, 2025"
   time: "NA"

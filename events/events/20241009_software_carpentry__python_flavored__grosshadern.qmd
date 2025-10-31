@@ -5,12 +5,13 @@ format:
         css: event-page-styles.css
 page-layout: full
 pagetitle: 'Workshop: "Software Carpentry - Python flavored - Grosshadern"'
+categories: 'Workshop'
 
 # Event categories
 event:
-  title: 'Software Carpentry - Python flavored - Grosshadern'
+  title: 'Workshop: "Software Carpentry - Python flavored - Grosshadern"'
   description: ""
-  categories: 'Workshop'
+  categories:  'Workshop'
   date: "October 09, 2024"
   end_date: "October 09, 2024"
   time: "NA"
