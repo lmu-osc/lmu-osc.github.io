@@ -131,20 +131,20 @@
             <div class="title listing-title"><%- item.event.title %></div>
             <div class="separator"></div>
             <p class="description listing-description"><%- item.event.description %></p>
-            <% if (item.trainingurl){ %>
-              <div class = "trainingurl listing-training">
-                <i class="bi bi-folder2"></i>
-                <a href = "<%- item.trainingurl %>" target="_blank">
-                  Training Material
-                </a>
-              </div>
-            <% } %>
             <div class="event-footer">
               <div class="event-host-info-group">
                 <div class="event-host-info">
                   Hosted by: <%- item.event.host %>
                 </div>
               </div>
+              <% if (item.links.materials){ %>
+                <div class = "trainingurl listing-training">
+                  <i class="bi bi-folder2"></i>
+                  <a href = "<%- item.links.materials %>" target="_blank">
+                    Material
+                  </a>
+                </div>
+              <% } %>
               
             </div>
 
