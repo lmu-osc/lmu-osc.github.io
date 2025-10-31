@@ -56,8 +56,8 @@
 
 .osc-upcoming-events .event-category {
   position: absolute;
-  top: -0.2rem;
-  right: -0.2rem;
+  top: -0.1rem;
+  right: 0;
   background: var(--osc-accent);
   color: #fff;
   padding: .25rem .5rem;
@@ -82,7 +82,18 @@
   align-items:center;
 }
 
+.osc-upcoming-events .event-time-loc p{
+  margin-bottom: 0;
+}
+
 .osc-upcoming-events .divider{ width:2px; background:#9d9e9c; align-self:stretch; margin:.3rem .1rem; }
+
+.osc-upcoming-events .card:hover .event-time-loc,
+.osc-upcoming-events .card:hover .divider{
+  color:#fff;
+}
+
+
 
 .osc-upcoming-events .title{
   font-weight: 600;
@@ -129,7 +140,25 @@
   word-break:break-word;
 }
 
-.osc-upcoming-events .event-contact-info a{ color: var(--osc-accent); text-decoration:underline; font-size:.8rem; font-weight:400; }
+.osc-upcoming-events .event-contact-info {
+  display: flex;           
+  align-items: center;     
+  gap: 0;            
+}
+
+.osc-upcoming-events .event-contact-info a { 
+  color: var(--osc-accent); 
+  text-decoration: underline; 
+  font-size: .8rem; 
+  font-weight: 400; 
+  display: inline;           
+}
+
+.osc-upcoming-events .card:hover .event-contact-info i,
+.osc-upcoming-events .card:hover .event-contact-info a {
+  color: #fff; 
+}
+
 
 /* responsive tweaks */
 @media (max-width: 768px){
