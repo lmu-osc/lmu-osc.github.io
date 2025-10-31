@@ -52,6 +52,11 @@ helpers:
 contact:
   name: "CONTACT PERSON OR GROUP NAME"
   email: "CONTACT EMAIL ADDRESS"
+
+# Organizers can be individuals or institutions
+organizers:
+  - name: "ORGANIZER 1 NAME"
+  - name: "ORGANIZER 2 NAME"
 ---
 
 <!-- MANDAORY SECTION START  -->

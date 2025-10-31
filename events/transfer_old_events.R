@@ -185,7 +185,7 @@ ReproducibiliTea Journal Club: |^Summer school: ") %>%
 
 
 
-View(events_formatted_final)
+# View(events_formatted_final)
 
 purrr::pmap(events_formatted_final, function(categories, event.title, event.date, event.end_date,
                                              event.time, event.location.name, event.language.primary,
@@ -254,7 +254,7 @@ page-layout: full"
   yaml <- glue::glue(yaml, "\n  name: \"\"")
   yaml <- glue::glue(yaml, "\n  email: \"\"")
   
-  yaml <- glue::glue(yaml, "\n\organizers:")
+  yaml <- glue::glue(yaml, "\n\norganizers:")
   yaml <- glue::glue(yaml, "\n  name: \"\"")
   
   yaml <- glue::glue(yaml, "\n---\n")

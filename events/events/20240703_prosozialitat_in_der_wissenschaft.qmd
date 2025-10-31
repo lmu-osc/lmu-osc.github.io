@@ -4,12 +4,12 @@ format:
         table-of-contents: false
         css: event-page-styles.css
 page-layout: full
-pagetitle: 'ReproducibiliTea Journal Club: "Prosozialität in der Wissenschaft"'
+pagetitle: '"Prosozialität in der Wissenschaft"'
 categories: 'ReproducibiliTea Journal Club'
 
 # Event categories
 event:
-  title: 'ReproducibiliTea Journal Club: "Prosozialität in der Wissenschaft"'
+  title: '"Prosozialität in der Wissenschaft"'
   description: ""
   categories:  'ReproducibiliTea Journal Club'
   date: "July 03, 2024"
@@ -45,6 +45,9 @@ helpers:
 contact:
   name: ""
   email: ""
+
+organizers:
+  name: ""
 ---
 <!-- MANDAORY SECTION START  -->
 <link rel = "stylesheet"  href = "https://cdn.jsdelivr.net/npm/bootstrap-icons@5.6.2/font/bootstrap-icons.css">

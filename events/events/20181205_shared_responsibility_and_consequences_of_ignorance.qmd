@@ -4,12 +4,12 @@ format:
         table-of-contents: false
         css: event-page-styles.css
 page-layout: full
-pagetitle: 'Discussion: "Reproducibility of omics research: Shared responsibility and consequences of ignorance"'
+pagetitle: '"Reproducibility of omics research: Shared responsibility and consequences of ignorance"'
 categories: 'Discussion'
 
 # Event categories
 event:
-  title: 'Discussion: "Reproducibility of omics research: Shared responsibility and consequences of ignorance"'
+  title: '"Reproducibility of omics research: Shared responsibility and consequences of ignorance"'
   description: ""
   categories:  'Discussion'
   date: "December 05, 2018"
@@ -45,6 +45,9 @@ helpers:
 contact:
   name: ""
   email: ""
+
+organizers:
+  name: ""
 ---
 <!-- MANDAORY SECTION START  -->
 <link rel = "stylesheet"  href = "https://cdn.jsdelivr.net/npm/bootstrap-icons@5.6.2/font/bootstrap-icons.css">
