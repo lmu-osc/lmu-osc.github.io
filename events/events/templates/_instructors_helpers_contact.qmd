@@ -1,4 +1,3 @@
-
 ```{r}
 #| echo: false
 #| message: false
@@ -6,57 +5,88 @@
 
 
 
-# helper to render a person entry (supports list with name/url or simple character)
+# small helper: render one person (list with $name and optional $url, or plain character)
 render_person <- function(person) {
   if (is.null(person)) return(NULL)
   if (is.list(person)) {
-    name <- person$name %||% ""
-    url  <- person$url
-    if (!is.null(url) && nzchar(url)) {
-      return(tags$li(tags$a(href = url, target = "_blank", name)))
-    } else {
-      return(tags$li(name))
-    }
-  } else if (is.character(person)) {
-    return(tags$li(person))
+    nm <- person$name %||% ""
+    url <- person$url %||% NULL
+    if (!is.null(url) && nzchar(url)) return(tags$li(tags$a(href = url, target = "_blank", nm)))
+    return(tags$li(nm))
+  }
+  if (is.character(person)) return(tags$li(person))
+  NULL
+}
+
+# helpers -------------------------------------------------------
+.render_instructor <- function(ins) {
+  nm <- as.character(ins$name %||% "")
+  url <- as.character(ins$url %||% "")
+  if (!nzchar(nm)) return(NULL)
+  if (nzchar(url)) {
+    tags$li(tags$a(href = url, target = "_blank", rel = "noopener noreferrer", nm))
   } else {
-    return(NULL)
+    tags$li(nm)
   }
 }
 
+.render_helper <- function(h) {
+  nm <- as.character(h$name %||% "")
+  if (!nzchar(nm)) return(NULL)
+  tags$li(nm)
+}
 
-tags$div(
-  class = "instructors",
-  tags$h4("Instructors"),
-  tags$ul(
-    lapply(instructors, render_person)
+.render_contact <- function(contact) {
+  name <- as.character(contact$name %||% "")
+  email <- as.character(contact$email %||% "")
+  if (!nzchar(trimws(name))) return(NULL)
+  tags$div(
+    class = "contact_name",
+    tags$h4("Questions?"),
+    tags$p(
+      "If you have any questions, please contact ",
+      tags$span(
+        class = "instructor-links",
+        if (nzchar(email)) {
+          tags$a(href = paste0("mailto:", email), name)
+        } else {
+          name
+        }
+      ),
+      "."
+    )
   )
-)
+}
 
-tags$div(
-  class = "helpers",
-  tags$h4("Helpers"),
-  # If helpers is a single string, keep it as a paragraph; if it's a list/vector render as list
-  if (is.null(helpers) || length(helpers) == 0) {
-    tags$p("") 
-  } else if (is.character(helpers) && length(helpers) == 1) {
-    tags$p(helpers)
-  } else {
-    tags$ul(lapply(helpers, render_person))
-  }
-)
 
-tags$div(
-  class = "contact_name",
-  tags$h4("Questions?"),
-  tags$p(
-    "If you have any questions, please contact ",
-    tags$span(
-      class = "instructor-links",
-      tags$a(href = paste0("mailto:", contact_email), contact_name)
-    ),
-    "."
-  )
+# sanitize & filter empty-name entries (defensive)
+instructors <- if (is.list(instructors)) instructors else list()
+instructors <- Filter(function(x) nzchar(as.character(x$name %||% "")), instructors)
+
+helpers <- if (is.list(helpers)) helpers else list()
+helpers <- Filter(function(x) nzchar(as.character(x$name %||% "")), helpers)
+
+# Render blocks conditionally. htmltools drops NULL entries.
+tagList(
+  if (length(instructors) > 0) {
+    tags$div(
+      class = "instructors",
+      tags$h4("Instructors"),
+      tags$ul(lapply(instructors, .render_instructor))
+    )
+  } else NULL,
+
+  if (length(helpers) > 0) {
+    tags$div(
+      class = "helpers",
+      tags$h4("Helpers"),
+      tags$ul(lapply(helpers, .render_helper))
+    )
+  } else NULL,
+
+  .render_contact(contact)
 )
 ```
+
+
 
