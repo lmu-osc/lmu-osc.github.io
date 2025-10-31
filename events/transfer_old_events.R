@@ -194,6 +194,8 @@ page-layout: full"
 )
   
   yaml <- glue::glue(yaml, "\n", "pagetitle:", " '", event.title, "'")
+  yaml <- glue::glue(yaml, "\n", "categories:", " '", categories, "'")
+  
   
   yaml <- glue::glue(yaml, "\n\n", "# Event categories\n")
   yaml <- glue::glue(yaml, "\n", "event:\n")
