@@ -263,8 +263,6 @@ page-layout: full"
     yaml,
     "\n",
     '<!-- MANDAORY SECTION START  -->
-<link rel = "stylesheet"  href = "https://cdn.jsdelivr.net/npm/bootstrap-icons@5.6.2/font/bootstrap-icons.css">
-
 <h1 class="fs-1 text-primary"> {{{{< meta event.title >}}}} </h1>
 
 {{{{< include templates/_setup.qmd >}}}}
