@@ -175,9 +175,17 @@ events_formatted_final <- events_formatted %>%
   select(
     all_of(mapping$csvNames)
   ) %>%
-  rename_with(~mapping$expectedNames) 
+  rename_with(~mapping$expectedNames)  %>%
+  mutate(
+    event.title = stringr::str_remove_all(event.title, "^Symposium: |^Workshop: |^Conference: |^Hacky Hour: |^Lecture: |^ReproducibiliTea Journal Club: |^Journal Club: |^Mini-Symposium: |^Panel Discussion Series: |^Podiumsdiskussion: |^Discussion: |^Guest lecture: |^Online Lecture: |	
+ReproducibiliTea Journal Club: |^Summer school: ") %>%
+      stringr::str_replace("\"ReproducibiliTea: ", "\"")
+  ) 
 
 
+
+
+View(events_formatted_final)
 
 purrr::pmap(events_formatted_final, function(categories, event.title, event.date, event.end_date,
                                              event.time, event.location.name, event.language.primary,
@@ -245,6 +253,9 @@ page-layout: full"
   yaml <- glue::glue(yaml, "\n\ncontact:")
   yaml <- glue::glue(yaml, "\n  name: \"\"")
   yaml <- glue::glue(yaml, "\n  email: \"\"")
+  
+  yaml <- glue::glue(yaml, "\n\organizers:")
+  yaml <- glue::glue(yaml, "\n  name: \"\"")
   
   yaml <- glue::glue(yaml, "\n---\n")
   

@@ -145,7 +145,31 @@
                   </a>
                 </div>
               <% } %>
-              
+              <% if (item.organizers && item.organizers.length > 0) { %>
+                <div class="event-organizers">
+                  <strong>Organized by:</strong>
+                  <span class="organizers-list">
+                    <%- item.organizers
+                          .map(function(org){
+                            if (!org) return '';
+                            // if the organizer is a plain string
+                            if (typeof org === 'string') return org.trim();
+                            // if organizer is an object with name/url
+                            var name = (org.name || '').toString().trim();
+                            var url  = (org.url || '').toString().trim();
+                            if (!name) return '';
+                            if (url) {
+                              // safe-ish link; you can add further sanitization if needed
+                              return '<a href="' + url + '" target="_blank" rel="noopener noreferrer">' + name + '</a>';
+                            }
+                            return name;
+                          })
+                          .filter(function(x){ return x && x.length > 0; })
+                          .join(', ')
+                    %>
+                  </span>
+                </div>
+              <% } %>
             </div>
 
           </div>
