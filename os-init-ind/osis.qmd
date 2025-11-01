@@ -1,0 +1,58 @@
+---
+title: ""
+page-layout: full
+---
+
+```{=html}
+<head>
+    <div class="header">
+        <div class ="header-title">
+                <p class = "title-first">LMU</<p>
+                <p class = "title-last">Open Science Initiative in Statistics</p>
+
+        </div>
+        <div class="about">
+            <div class="about-text">
+                <p>
+                    Founded in June 2021, the LMU Open Science Initiative in Statistic (OSIS) at the Department of Statistics supports the goals of the OSC and wants to take on a leading role in fostering good research practices and promoting open science. The department believes that statistics as a subject plays a major role in solving the reproducibility crisis and in working towards better, open research.
+
+                    The Department of Statistics is involved in the development and application of statistical and machine learning methods. Statistical consulting and teaching are at the core of the department's activities.
+                </p>
+            </div>
+            <div class ="header-logo">
+                <img class="logo-img" src ="images/osis.png" style = "height:150px;">
+            </div>
+        </div>
+        <hr>
+        <div class="organizers">
+            <h2 class="section-title"><i class="bi bi-people"></i>Members</h2>
+                <ul class="organizer-list">
+                <li class="organizer-item" ><a href="#">Dr. Andreas Bender</a></li>
+                <li class="organizer-item"><a href="#">Dr. Moritz Herrmann</a></li>
+                <li class="organizer-item" ><a href="#">Dr. Matthias Aßenmacher</a></li>
+                <li class="organizer-item" ><a href="#">Lisa Wimmer</a></li>
+                <li class="organizer-item" ><a href="#">Martje Rave</a></li>
+                <li class="organizer-item" ><a href="#"> Patrick Schenk</a></li>
+                <li class="organizer-item" ><a href="#">Felix Henninger</a></li>
+                </ul>
+        </div>
+
+        <hr>
+        <div class="get-involved">
+            <h2 class="section-title">Get Involved</h2>
+            <p class="involved-text">
+            Core members of the OSIS currently meet once a month. If you are a member of the Department of Statistics and are interested in joining the initiative, do not hesitate to contact us.
+            </p>
+            <div class="involved-links">
+                <div class="first-button"><a href="mailto:osis@stat.uni-muenchen.de"><i class="bi bi-envelope"></i> OSIS team</a></div>
+                <div class="second-button"><a href="https://www.stat.lmu.de/en/osis/"><i class="bi bi-box-arrow-up-right"></i> Learn More</a></div>
+            </div>
+        </div>
+
+    </div>
+
+
+</head>
+
+
+```
