@@ -1,0 +1,43 @@
+---
+title: "Institutional members"
+format: 
+  html:
+    css: styles.css
+    include-in-header: 
+      - text: |
+              <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+page-layout: full
+---
+
+```{=html}
+
+<div class="partner-container">
+  <h1>Our Institutional Members</h1>
+  <br>
+  <p class="intro-text">We accept institutional memberships from departments, faculties, units, or central institutions of the LMU, which provide infrastructure or other services that facilitate the goals of the OSC.</p>
+  
+  <div class="partners-grid">
+    <div class="partner-card" id="funding-members">
+      <div class="card-header">
+        <h2>Funding Institutional Members</h2>
+      </div>
+      <div class="card-content">
+        <p>Funding institutional members provide the OSC with a yearly membership fee to get priority in our training programmes and consultations.</p>
+        <a href="funding_partners.html" class="partner-button">View Funding Members</a>
+      </div>
+    </div>
+    
+    <div class="partner-card" id="associate-members">
+      <div class="card-header">
+        <h2>Associate Institutional Members</h2>
+      </div>
+      <div class="card-content">
+        <p>Affiliated members share the goals of the OSC and provide support in kind (e.g. infrastructure, services, collaborations).</p>
+        <a href="associate_partners.html" class="partner-button">View Associate Members</a>
+      </div>
+    </div>
+</div>
+<h2>Becoming OSC Institutional Member</h2>
+<p class="intro-text">In practice, institutional members contribute as little as a statement of commitment to work towards the OSC goals - they then become Affiliated Institutional Members. Institutional Members are also encouraged to provide yearly funds to the OSC (depending on the size of the institution) - they then become Funding Institutional Members.</p>
+
+```

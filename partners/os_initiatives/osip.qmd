@@ -1,0 +1,97 @@
+---
+title: "Open Science Initiative in Psychology"
+format: 
+  html:
+    css: styles.css
+page-layout: full
+---
+
+```{=html}
+<head>
+    <div class="osc-init-header">
+
+        <!-- Title -->
+        <div class="osc-init-header__title">
+            <p class="osc-init-title__first">LMU</p>
+            <p class="osc-init-title__last">Open Science Initiative in Psychology</p>
+        </div>
+
+        <!-- About section -->
+        <div class="osc-init-about">
+
+            <!-- Text -->
+            <div class="osc-init-about__text">
+                <p>
+                    The LMU Open Science Initiative in Psychology (OSIP) aims to promote Open Science at the
+                    Department Psychology and beyond by monitoring international developments, organizing workshops,
+                    adapting hiring policies and channeling the discussion about standards of research quality
+                    and transparency. Currently it consists of 40 members including every research unit of the
+                    department and all status groups from students to full professors. Together with the LMU Open
+                    Science Center its goal is to improve scientific practices and reproducibility in psychological
+                    research at LMU and beyond.
+                    <br><br>
+                    More information is available on the initiative’s
+                    <a href="https://osf.io/mgwk8/" target="_blank" class="osc-init-about__link">
+                        OSF project <i class="bi bi-box-arrow-up-right" style="font-size:14px;"></i>
+                    </a>,
+                    which also provides educational resources, workshop slides, and consent form templates.
+                </p>
+            </div>
+
+            <!-- Logo -->
+            <div class="osc-init-about__logo">
+                <img class="osc-init-about__logo-img" src="images/osip.png" style="height:150px;">
+            </div>
+
+        </div>
+
+        <!-- Past activity note -->
+        <div class="osc-init-note">
+            <div class="osc-init-note__icon">
+                <i class="bi bi-info-circle"></i>
+            </div>
+
+            <div class="osc-init-note__text">
+                <i>
+                    OSIP was active from July 2015 to July 2024. Any interested parties wanting support to revive it 
+                    or support for a one-off event can contact the LMU Open Science Center coordinator,
+                    <a href="mailto:malika.ihle@lmu.de" class="osc-init-note__contact">Dr. Malika Ihle</a>
+                </i>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- Get Involved -->
+        <div class="osc-init-involved">
+
+            <h2 class="osc-init-involved__title">Get Involved</h2>
+
+            <p class="osc-init-involved__text">
+                If you are a member of the psychology department and want to join the initiative, do not hesitate 
+                to contact us. We gladly welcome all psychologists interested in making research at our department 
+                more transparent.
+            </p>
+
+            <div class="osc-init-involved__links">
+
+                <div class="osc-init-button osc-init-button--matrix">
+                    <a href="mailto:osip@psy.lmu.de">
+                        <i class="bi bi-envelope"></i> OSIP team
+                    </a>
+                </div>
+
+                <div class="osc-init-button osc-init-button--newsletter">
+                    <a href="https://lists.lrz.de/mailman/listinfo/osip">
+                        <i class="bi bi-box-arrow-up-right"></i> Newsletter
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</head>
+
+```
