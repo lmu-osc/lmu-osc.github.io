@@ -33,16 +33,9 @@ website:
       - href: index.qmd
         icon: house-door
         text: Home
-      - href: about.qmd
+      - href: about/about.qmd
         icon: info-circle
         text: About
-      # - sidebar:training
-      - icon: mortarboard
-        text: Training
-        menu:
-          - self-training.qmd
-          - train-the-trainer.qmd
-          - open-research-cycle.qmd
       - text: People
         icon: people
         # href: people/overview.qmd
@@ -55,6 +48,26 @@ website:
           - people/members.qmd
           - people/fellows.qmd
           - people/alumnae.qmd
+      - text: Partners
+        icon: people
+        menu:
+          - partners/partners.qmd
+          - partners/funding_partners.qmd
+          - partners/associate_partners.qmd
+          - partners/os_initiatives/osip.qmd
+          - partners/os_initiatives/osim.qmd
+          - partners/os_initiatives/osis.qmd
+          - partners/os_initiatives/reproducibilitea.qmd
+          - partners/os_initiatives/hackyhour.qmd
+          - partners/os_initiatives/munichRSE.qmd
+          - partners/other_researchServices.qmd
+      # - sidebar:training
+      - icon: mortarboard
+        text: Training
+        menu:
+          - self-training.qmd
+          - train-the-trainer.qmd
+          - open-research-cycle.qmd
       - href: events/index.qmd
         icon: calendar-event
         text: Events
