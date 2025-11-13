@@ -1,0 +1,136 @@
+/* Layout */
+.container { max-width: var(--max-w); margin-inline: auto; padding-inline: var(--space-5); }
+.section { padding-block: clamp(var(--space-6), 6vw, var(--space-8)); }
+
+/* Buttons */
+.btn-pop {
+  transition: transform .15s ease;
+}
+.btn-pop:hover {
+  transform: scale(1.05);
+}
+
+.btn-outline-primary.btn-pop{
+  border:1px solid #2b864b;
+  color:#2b864b;
+  background: white;
+}
+
+.btn-outline-primary.btn-pop:hover,
+.btn-outline-primary.btn-pop:focus,
+.btn-outline-primary.btn-pop:active {
+  color:white;
+  border: solid 1px  #2b864b;
+  background: #2b864b;
+}
+
+.hero { padding-block: clamp(var(--space-7), 8vw, calc(var(--space-8) + 1rem)); background: #fff; }
+
+.hero-container{
+  width:90%;
+}
+.hero-about {
+  font-size: 3rem;
+  font-weight: 900;              
+  color: #2b864b;   
+  font-family: 'Poppins', sans-serif;              
+}
+
+.hero-us {
+  font-size: 3rem;
+  font-weight: 700;            
+  color: #2b864bb7; 
+  font-family: 'Poppins', sans-serif;                         
+}
+
+.hero-description {
+  font-size: 1.2rem; 
+  font-weight: 400;
+  line-height: 1.8; 
+  color: #494848; 
+  max-width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Inter', sans-serif;  
+}
+
+.staff-governance-rail {
+
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.staff-governance-rail::-webkit-scrollbar {
+  height: .6rem;
+}
+.staff-governance-rail .card {
+  flex: 0 0 auto;
+  min-width: 18rem;
+  max-width: 22rem;
+  overflow: hidden;
+}
+.staff-governance-rail .card-body {
+  padding: 1.25rem 1.25rem 1.5rem;
+}
+.staff-governance-rail .actions .btn {
+  white-space: nowrap;
+}
+
+
+/* PDF thumbnail card  */
+.card-img-top { width: 100%; display: block; }
+.card-body { padding: var(--space-4); }
+.card-title { margin-bottom: var(--space-3); font-size: 1.25rem; }
+.card-text { margin-bottom: var(--space-4); }
+
+.bg-body-tertiary h2{
+  font-family: 'Poppins', sans-serif;  
+  color:#4d4c4c;
+}
+
+/* css styles */
+.bg-brand-green {
+  background-color: #2b864b !important;
+}
+
+
+.btn.border-brand-green {
+  border: 1px solid #2b864b !important;
+}
+.bg-portrait { 
+    background-color: #a7c871 !important; 
+}
+
+.arrow-hover {
+  transition: transform 0.3s ease;
+}
+
+.arrow-hover:hover {
+    transform: translateX(4px);
+}
+
+/* Card pop on hover */
+.hover-pop {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.hover-pop:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+}
+
+.about-joinus .container .bg-body-tertiary{
+  background-color: rgba(43, 134, 75, 0.1);
+}
+
+/* remove extra margin above desc*/
+#title-block-header{
+  margin-block-end: 0;
+}
+
+
+@media (max-width: 640px){ }
+
+
+
+
+
