@@ -51,16 +51,10 @@ website:
       - text: Partners
         icon: people
         menu:
-          - partners/partners.qmd
-          - partners/funding_partners.qmd
-          - partners/associate_partners.qmd
-          - partners/os_initiatives/osip.qmd
-          - partners/os_initiatives/osim.qmd
-          - partners/os_initiatives/osis.qmd
-          - partners/os_initiatives/reproducibilitea.qmd
-          - partners/os_initiatives/hackyhour.qmd
-          - partners/os_initiatives/munichRSE.qmd
+          - partners/institutional_members.qmd
+          - partners/localos_intiatives.qmd
           - partners/other_researchServices.qmd
+          - partners/ext_partners.qmd
       # - sidebar:training
       - icon: mortarboard
         text: Training
