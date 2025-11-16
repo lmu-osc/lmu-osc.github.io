@@ -25,6 +25,11 @@ body {
   min-height: 100vh;
 }
 
+.content-container{
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+}
 .quarto-title-block,
 .quarto-title {
   display: none !important;
@@ -173,137 +178,137 @@ hr {
 </style>
 
 ```{=html}
+<div class ="content-container">
+  <div class="header-section">Our External Partners</div>
+      <div class="member-grid">
+          <div class="profile-link">
+              <div class="member-grid-item">
+                  <div class="logo-img">
+                      <a href="https://reproducibilitynetwork.de/"  target="_blank">
+                      <img src="images/grn.png" alt="grn-logo">
+                      </a>
+                  </div>
+                  <div class="member-grid-name">German Reproducibility Network</div>   
+              </div>
+          </div>
 
-<div class="header-section">Our External Partners</div>
-    <div class="member-grid">
-        <div class="profile-link">
-            <div class="member-grid-item">
-                <div class="logo-img">
-                    <a href="https://reproducibilitynetwork.de/"  target="_blank">
-                    <img src="images/grn.png" alt="grn-logo">
-                    </a>
-                </div>
-                <div class="member-grid-name">German Reproducibility Network</div>   
-            </div>
-        </div>
+          <div class="description-container">
+              <div class="description-text">
+                  German Reproducibility Network (GRN), which is a multidisciplinary consortium that aims to increase transparency and trustworthiness of scientific research. The Network’s goals are to promote open research practices through training and community building, to conduct meta-research, and to work with stakeholders across the sector to ensure coordination of efforts at the national level.
+              </div>
+              <a href="https://reproducibilitynetwork.de/" target="_blank" class="social-link">Learn more <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+          <hr>
 
-        <div class="description-container">
-            <div class="description-text">
-                German Reproducibility Network (GRN), which is a multidisciplinary consortium that aims to increase transparency and trustworthiness of scientific research. The Network’s goals are to promote open research practices through training and community building, to conduct meta-research, and to work with stakeholders across the sector to ensure coordination of efforts at the national level.
-            </div>
-            <a href="https://reproducibilitynetwork.de/" target="_blank" class="social-link">Learn more <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-        </div>
-        <hr>
+          <div class="profile-link">
+              <div class="member-grid-item">
+                  <div class="logo-img">
+                      <a href="https://forrt.org/"  target="_blank">
+                      <img src="images/FORRT.webp" alt="forrt-logo">
+                      </a>
+                  </div>
+                  <div class="member-grid-name">Framework for
+      Open and Reproducible Research Training</div>   
+              </div>
+          </div>
 
-        <div class="profile-link">
-            <div class="member-grid-item">
-                <div class="logo-img">
-                    <a href="https://forrt.org/"  target="_blank">
-                    <img src="images/FORRT.png" alt="forrt-logo">
-                    </a>
-                </div>
-                <div class="member-grid-name">Framework for
-    Open and Reproducible Research Training</div>   
-            </div>
-        </div>
+          <div class="description-container">
+              <div class="description-text">
+                  In a nutshell, FORRT is a Framework for Open and Reproducible Research Training advancing research transparency, reproducibility, rigor, and ethics through pedagogical reform and meta-scientific research. 
+              </div>
+              <a href="https://forrt.org/" target="_blank" class="social-link">Learn more <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+          <hr>
+          <div class="profile-link">
+              <div class="member-grid-item">
+                  <div class="logo-img">
+                      <a href="https://www.bitss.org/"  target="_blank">
+                      <img src="images/bitss.png" alt="bitss-logo" style="height:100px;">
+                      </a>
+                  </div>
+                  <div class="member-grid-name">Berkeley Initiative for
+  Transparency in the Social Sciences</div>   
+              </div>
+          </div>
 
-        <div class="description-container">
-            <div class="description-text">
-                In a nutshell, FORRT is a Framework for Open and Reproducible Research Training advancing research transparency, reproducibility, rigor, and ethics through pedagogical reform and meta-scientific research. 
-            </div>
-            <a href="https://forrt.org/" target="_blank" class="social-link">Learn more <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-        </div>
-        <hr>
-        <div class="profile-link">
-            <div class="member-grid-item">
-                <div class="logo-img">
-                    <a href="https://www.bitss.org/"  target="_blank">
-                    <img src="images/bitss.png" alt="bitss-logo" style="height:100px;">
-                    </a>
-                </div>
-                <div class="member-grid-name">Berkeley Initiative for
-Transparency in the Social Sciences</div>   
-            </div>
-        </div>
+          <div class="description-container">
+              <div class="description-text">
+                  The Berkeley Initiative for Transparency in the Social Sciences works to improve the credibility of science by advancing transparency, reproducibility, rigor, and ethics in research.
+              </div>
+              <a href="https://www.bitss.org/" target="_blank" class="social-link">Learn More <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+          <hr>
+          <div class="profile-link">
+              <div class="member-grid-item">
+                  <div class="logo-img">
+                      <a href="https://www.mpdl.mpg.de/"  target="_blank">
+                      <img src="images/mpdl-logo.png" alt="mpdl-logo">
+                      </a>
+                  </div>
+                  <div class="member-grid-name">Max Planck Digital Library</div>   
+              </div>
+          </div>
 
-        <div class="description-container">
-            <div class="description-text">
-                The Berkeley Initiative for Transparency in the Social Sciences works to improve the credibility of science by advancing transparency, reproducibility, rigor, and ethics in research.
-            </div>
-            <a href="https://www.bitss.org/" target="_blank" class="social-link">Learn More <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-        </div>
-        <hr>
-        <div class="profile-link">
-            <div class="member-grid-item">
-                <div class="logo-img">
-                    <a href="https://www.mpdl.mpg.de/"  target="_blank">
-                    <img src="images/mpdl-logo.png" alt="mpdl-logo">
-                    </a>
-                </div>
-                <div class="member-grid-name">Max Planck Digital Library</div>   
-            </div>
-        </div>
+          <div class="description-container">
+              <div class="description-text">
+                  Whether in educational research or astrophysics, whether in coal research or chemical ecology - digital information has become an integral part of everyday research. An article download every second, a new outgoing publication every 10 minutes. 
+              </div>
+              <a href="https://www.mpdl.mpg.de/" target="_blank" class="social-link">Learn more <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+          <hr>
+          <div class="profile-link">
+              <div class="member-grid-item">
+                  <div class="logo-img">
+                      <a href="https://www.bihealth.org/en/translation/innovation-enabler/quest-center/mission-approaches/" target="_blank">
+                      <img src="images/quest-logo.png" alt="quest-logo">
+                      </a>
+                  </div>
+                  <div class="member-grid-name">Berlin Institute of Health at Charité </div>   
+              </div>
+          </div>
 
-        <div class="description-container">
-            <div class="description-text">
-                Whether in educational research or astrophysics, whether in coal research or chemical ecology - digital information has become an integral part of everyday research. An article download every second, a new outgoing publication every 10 minutes. 
-            </div>
-            <a href="https://www.mpdl.mpg.de/" target="_blank" class="social-link">Learn more <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-        </div>
-        <hr>
-        <div class="profile-link">
-            <div class="member-grid-item">
-                <div class="logo-img">
-                    <a href="https://www.bihealth.org/en/translation/innovation-enabler/quest-center/mission-approaches/" target="_blank">
-                    <img src="images/quest-logo.png" alt="quest-logo">
-                    </a>
-                </div>
-                <div class="member-grid-name">Berlin Institute of Health at Charité </div>   
-            </div>
-        </div>
+          <div class="description-container">
+              <div class="description-text">
+                  We aim to overcome the roadblocks of translational medicine to foster innovation that contributes to improved healthcare. To do this, we want to make biomedical research more trustworthy, useful and ethical. 
+              </div>
+              <a href="https://www.bihealth.org/en/translation/innovation-enabler/quest-center/mission-approaches/" target="_blank" class="social-link">Learn more <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+          <hr>
+          <div class="profile-link">
+              <div class="member-grid-item">
+                  <div class="logo-img">
+                      <a href="https://www.crs.uzh.ch/en.html" target="_blank">
+                      <img src="images/crs.jpg" alt="CRS-logo">
+                      </a>
+                  </div>
+                  <div class="member-grid-name">Center for Reproducible Science and Research Synthesis</div>   
+              </div>
+          </div>
 
-        <div class="description-container">
-            <div class="description-text">
-                We aim to overcome the roadblocks of translational medicine to foster innovation that contributes to improved healthcare. To do this, we want to make biomedical research more trustworthy, useful and ethical. 
-            </div>
-            <a href="https://www.bihealth.org/en/translation/innovation-enabler/quest-center/mission-approaches/" target="_blank" class="social-link">Learn more <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-        </div>
-        <hr>
-        <div class="profile-link">
-            <div class="member-grid-item">
-                <div class="logo-img">
-                    <a href="https://www.crs.uzh.ch/en.html" target="_blank">
-                    <img src="images/crs_uzh.png" alt="CRS-logo">
-                    </a>
-                </div>
-                <div class="member-grid-name">Center for Reproducible Science and Research Synthesis</div>   
-            </div>
-        </div>
+          <div class="description-container">
+              <div class="description-text">
+                  The Center for Reproducible Science and Research Synthesis (CRS) works to advance scientific methods, practices, norms, and incentives that produce trustworthy and reproducible research. Building on this foundation of reproducible science, we develop approaches to systematically integrate reliable evidence across heterogeneous studies and research designs. 
+              </div>
+              <a href="https://www.crs.uzh.ch/en.html" target="_blank" class="social-link">Learn more <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+          <hr>
+          <div class="profile-link">
+              <div class="member-grid-item">
+                  <div class="logo-img">
+                      <a href="https://www.cos.io/" target="_blank">
+                      <img src="images/cos_stack.png" alt="COS-logo" style="height:100px;">
+                      </a>
+                  </div>
+                  <div class="member-grid-name">Center for Open Science</div>   
+              </div>
+          </div>
 
-        <div class="description-container">
-            <div class="description-text">
-                The Center for Reproducible Science and Research Synthesis (CRS) works to advance scientific methods, practices, norms, and incentives that produce trustworthy and reproducible research. Building on this foundation of reproducible science, we develop approaches to systematically integrate reliable evidence across heterogeneous studies and research designs. 
-            </div>
-            <a href="https://www.crs.uzh.ch/en.html" target="_blank" class="social-link">Learn more <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-        </div>
-        <hr>
-        <div class="profile-link">
-            <div class="member-grid-item">
-                <div class="logo-img">
-                    <a href="https://www.cos.io/" target="_blank">
-                    <img src="images/cos_stack.png" alt="COS-logo" style="height:100px;">
-                    </a>
-                </div>
-                <div class="member-grid-name">Center for Open Science</div>   
-            </div>
-        </div>
-
-        <div class="description-container">
-            <div class="description-text">
-                The Center for Open Science (COS) was founded in 2013 to start, scale, and sustain open research practices that will democratize access to research, improve inclusion of all stakeholders, enhance accountability to research integrity, facilitate the self-corrective process of science, expand transparency and sharing of all research content, and improve research rigor and reproducibility.
-            </div>
-            <a href="https://www.cos.io/" target="_blank" class="social-link">Learn more <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-        </div>
+          <div class="description-container">
+              <div class="description-text">
+                  The Center for Open Science (COS) was founded in 2013 to start, scale, and sustain open research practices that will democratize access to research, improve inclusion of all stakeholders, enhance accountability to research integrity, facilitate the self-corrective process of science, expand transparency and sharing of all research content, and improve research rigor and reproducibility.
+              </div>
+              <a href="https://www.cos.io/" target="_blank" class="social-link">Learn more <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+  </div>
 </div>
-
 ```
