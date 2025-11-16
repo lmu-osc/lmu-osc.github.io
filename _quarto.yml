@@ -52,9 +52,9 @@ website:
         icon: people
         menu:
           - partners/institutional_members.qmd
-          - partners/localos_intiatives.qmd
-          - partners/other_researchServices.qmd
-          - partners/ext_partners.qmd
+          - partners/local_os_intiatives.qmd
+          - partners/other_os_research_services.qmd
+          - partners/externals.qmd
       # - sidebar:training
       - icon: mortarboard
         text: Training
