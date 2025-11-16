@@ -2,6 +2,29 @@
     background-color: #2b864b;
     color: white;
     width: 100%;
-    padding-left: 3rem;
+    padding: 2rem;
   }
   
+
+.osc-footer-address strong{
+  font-size: 1.3rem;
+  font-weight: 600;
+  }
+.osc-footer-address p{
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.osc-footer-contact  strong,
+.osc-footer-join strong{
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.osc-footer-contact i{
+  font-size: 1.1rem;
+}
+
+.osc-footer-socials i{
+  font-size: 2rem;
+}
+
