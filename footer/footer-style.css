@@ -5,6 +5,11 @@
     padding: 2rem;
   }
   
+.osc-footer-row{
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
 
 .osc-footer-address strong{
   font-size: 1.3rem;
