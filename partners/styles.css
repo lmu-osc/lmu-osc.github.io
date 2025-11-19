@@ -39,6 +39,7 @@ h1 {
 .intro-text {
   font-size: 1.1rem;
   margin-bottom: 3rem;
+  text-align: justify;
 }
 
 /* Partner cards - two cards side by side */
@@ -76,8 +77,13 @@ h1 {
 
 .card-content {
   padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
 }
 
+.card-content p{
+  flex-grow: 1; 
+}
 /* Local Initiatives */
 .local-initiatives {
   margin-top: 3rem;
@@ -125,7 +131,7 @@ h1 {
 
 /* Buttons */
 
-.partner-button, .initiative-button {
+.initiative-button{
   display: inline-block;
   background-color: var(--primary-color);
   color: white;
@@ -138,17 +144,43 @@ h1 {
   border: 2px solid var(--primary-color);
 }
 
-.partner-button:hover, .initiative-button:hover {
+.partner-button:hover, .initiative-button:hover,
+.member-info-button:hover {
   background-color: transparent;
   color: var(--primary-color);
   box-shadow: 0 4px 8px rgba(43, 134, 75, 0.2);
 }
-
+.partner-button{
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 500;
+  margin-top: auto;
+  transition: var(--transition);
+  border: 2px solid var(--primary-color);
+  width:fit-content;
+}
 .initiative-button {
   padding: 0.6rem 1.2rem;
   font-size: 0.9rem;
 }
 
+.member-info-button{
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 500;
+  margin-top: auto;
+  transition: var(--transition);
+  border: 2px solid var(--primary-color);
+  display: block;          
+  width: fit-content;     
+  margin: 1rem auto 0;  
+}
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .partners-grid {
@@ -200,4 +232,10 @@ h1 {
   background-color: transparent;
   color: var(--primary-color);
   box-shadow: 0 4px 8px rgba(43, 134, 75, 0.2);
+}
+
+.becoming-partner-info h2{
+  color: var(--primary-color);
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
