@@ -1,3 +1,11 @@
+:root{
+  --osc-accent: #2b864b;
+  --osc-muted: #646463;
+  --osc-bg: #fff;
+  --osc-text: #222;
+  --osc-divider: #d6d6d5;
+}
+
 /* Layout */
 .container { max-width: var(--max-w); margin-inline: auto; padding-inline: var(--space-5); }
 .section { padding-block: clamp(var(--space-6), 6vw, var(--space-8)); }
@@ -11,17 +19,17 @@
 }
 
 .btn-outline-primary.btn-pop{
-  border:1px solid #2b864b;
-  color:#2b864b;
-  background: white;
+  border:1px solid var(--osc-accent);
+  color:var(--osc-accent);
+  background: var(--osc-bg);
 }
 
 .btn-outline-primary.btn-pop:hover,
 .btn-outline-primary.btn-pop:focus,
 .btn-outline-primary.btn-pop:active {
-  color:white;
-  border: solid 1px  #2b864b;
-  background: #2b864b;
+  color:var(--osc-bg);
+  border: solid 1px var(--osc-accent);
+  background: var(--osc-accent);
 }
 
 .hero { padding-block: clamp(var(--space-7), 8vw, calc(var(--space-8) + 1rem)); background: #fff; }
@@ -32,15 +40,13 @@
 .hero-about {
   font-size: 3rem;
   font-weight: 900;              
-  color: #2b864b;   
-  font-family: 'Poppins', sans-serif;              
+  color: var(--osc-accent);               
 }
 
 .hero-us {
   font-size: 3rem;
   font-weight: 700;            
-  color: #2b864bb7; 
-  font-family: 'Poppins', sans-serif;                         
+  color: #2b864bb7;                        
 }
 
 .hero-description {
@@ -51,7 +57,6 @@
   max-width: 95%;
   margin-left: auto;
   margin-right: auto;
-  font-family: 'Inter', sans-serif;  
 }
 
 .staff-governance-rail {
@@ -82,22 +87,18 @@
 .card-title { margin-bottom: var(--space-3); font-size: 1.25rem; }
 .card-text { margin-bottom: var(--space-4); }
 
-.bg-body-tertiary h2{
-  font-family: 'Poppins', sans-serif;  
+.bg-body-tertiary h2{ 
   color:#4d4c4c;
 }
 
 /* css styles */
 .bg-brand-green {
-  background-color: #2b864b !important;
+  background-color: var(--osc-accent)!important;
 }
 
 
 .btn.border-brand-green {
-  border: 1px solid #2b864b !important;
-}
-.bg-portrait { 
-    background-color: #a7c871 !important; 
+  border: 1px solid var(--osc-accent) !important;
 }
 
 .arrow-hover {
