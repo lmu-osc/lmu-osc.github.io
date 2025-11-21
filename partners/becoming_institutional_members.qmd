@@ -1,0 +1,154 @@
+---
+title: "Becoming Institutional Member"
+format: 
+  html:
+    page-layout: full
+---
+<style>
+  /* css styles */
+
+#quarto-content.page-columns main.column-page{
+    margin:0 auto;
+    max-width: 1200px;
+    padding: 2rem;
+    width:100%;
+    background-color: #f9fcf9;
+}
+.quarto-title-block,
+.quarto-title {
+  display: none !important;
+}
+
+.init-header {
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 1rem;
+    box-shadow: 0 3px 6px #bfc7cf6c;
+    background-color: #ffffff;
+}
+
+.init-header__title {
+    display: flex;
+    flex-direction: row;
+    gap: 0.7rem;
+    margin-top: 1rem;
+    margin-bottom: 0;
+}
+
+.init-title{
+    font-size: 2.3rem;
+    font-weight: 900;
+    line-height: 1.5;
+    color: #2b864b;
+}
+
+
+.init-about__text p,
+.init-about__text li {
+    text-align: justify;
+    font-family: Inter, sans-serif;
+    font-size: 1rem;
+    line-height: 1.75;
+    color: #5f5f5f;
+}
+
+.init-about__text hr {
+    margin: 0.5rem 0;
+    padding: 0 1rem;
+}
+
+@media (max-width: 992px) {
+    p.init-title{
+        font-size: 2rem;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .init-header__title {
+        flex-direction: column;
+        gap: 0.2rem;
+        text-align: center;
+    }
+
+    .init-title{
+        font-size: 1.8rem;
+        margin: 0;
+    }
+
+    .init-about {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .init-title{
+        font-size: 1.5rem;
+    }
+
+
+}
+
+
+@media (max-width: 360px) {
+    .init-title{
+        font-size: 1.3rem;
+    }
+}
+
+</style>
+
+```{=html}
+<section>
+    <div class="init-header">
+
+        <!-- Title -->
+        <div class="init-header__title">
+            <p class="init-title">Becoming Institutional Member</p>
+        </div>
+
+        <!-- About section -->
+        <div class="init-about">
+
+            <!-- Text -->
+            <div class="init-about__text">
+                <p>
+                  The interdisciplinary LMU Open Science Center (OSC) has the mission to promote and foster open research practices at the LMU and beyond. Open research practices encompasses e.g. preregistration of studies, sharing data, materials, analysis scripts for computational reproducibility, and providing the published results in an open access format. Overall, open research practices increase the transparency, efficiency, and credibility of research.
+                  The OSC has 4 lines of work:
+                  <ul>
+                    <li>provide peer-to-peer training</li>
+                    <li>build a community of practice to develop consensus and spread norms</li>
+                    <li> liaise with stakeholders to inform on the design of incentives and policies so they align with the adoption of open research practices</li>
+                    <li>evaluate research practices across disciplines through meta-research projects</li>
+                  </ul>
+                </p>
+                <p>OSC Institutional Members that provide financial support get priority in the following activities:
+                  <ul>
+                      <li>seats in multiple-day intensive courses</li>
+                      <li>seats in train-the-trainer programmes</li>
+                      <li> seats in short workshops offered during semester times</li>
+                      <li>consultations with graduate schools to integrate open research training in their curriculum</li>
+                      <li>consultations with hiring committees to redesign their research assessment criteria</li>
+                      <li>consultations to create public statements or internal recommendations for their teams</li>
+                      <li>grant writing consultations when applying for funds with open research requirements</li>
+                  </ul>
+                </p>
+                <p>
+
+                Please let the OSC coordinator 
+                    <a href="mailto:malika.ihle@lmu.de" class="init-about__link">
+                        Dr. Malika Ihle <i class="bi bi-box-arrow-up-right" style="font-size:14px;"></i>
+                    </a>, or the OSC managing director<a href="mailto:Felix.Schoenbrodt@psy.lmu.de" class="init-about__link">
+                        Prof. Felix Schönbrodt <i class="bi bi-box-arrow-up-right" style="font-size:14px;"></i>
+                    </a>, know if you have any questions regarding our activities or if you want to discuss terms of membership. 
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+```
