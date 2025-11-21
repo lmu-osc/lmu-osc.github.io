@@ -1,13 +1,25 @@
 /* --- Custom Navbar Styling for OSC --- */
 
+/*Update lmu brand green */
+
+:root{
+  --osc-primary-green: #00883A;
+  --osc-black:#232323;
+  --osc-muted:#626468;
+  --osc-medium-grey:#C0C1C3;
+  --osc-bg: #fff;
+  --osc-text: #222;
+  --osc-divider: #d6d6d5;
+}
+
 /* Make navbar sticky and add subtle shadow */
 .navbar, .quarto-navbar {
   position: sticky;
   top: 0;
   z-index: 1000;
   box-shadow: 0 2px 12px rgba(44, 134, 75, 0.08);
-  background: #2b864b !important;
-  color: #fff !important;
+  background: var(--osc-primary-green)!important;
+  color: var(--osc-bg)!important;
   transition: background 0.3s;
 }
 
@@ -17,14 +29,14 @@
   width: auto;
   margin-right: 1rem;
   border-radius: 8px;
-  background: #fff;
+  background: var(--osc-bg);
   padding: 2px 6px;
   box-shadow: 0 1px 4px rgba(0,0,0,0.07);
 }
 
 /* Navbar links */
 .navbar-nav .nav-link, .quarto-navbar .nav-link {
-  color: #fff !important;
+  color: var(--osc-bg)!important;
   font-weight: 500;
   font-size: 1.08rem;
   letter-spacing: 0.01em;
@@ -39,7 +51,7 @@
 
 .navbar-nav .nav-link:hover, .quarto-navbar .nav-link:hover,
 .navbar-nav .nav-link.active, .quarto-navbar .nav-link.active {
-  background: #237143 !important;
+  background: #027232 !important;
   color: #fff !important;
   text-decoration: none;
 }
@@ -54,7 +66,7 @@
 }
 
 .dropdown-item, .quarto-navbar .dropdown-item {
-  color: #2b864b !important;
+  color: var(--osc-primary-green) !important;
   font-weight: 500;
   padding: 0.7rem 1.2rem;
   border-radius: 6px;
@@ -63,7 +75,7 @@
 
 .dropdown-item:hover, .quarto-navbar .dropdown-item:hover {
   background: #e6f4ea;
-  color: #237143 !important;
+  color: #027232 !important;
 }
 
 /* Navbar icons */
@@ -90,8 +102,8 @@
 
 /* Optional: highlight the active page */
 .navbar-nav .nav-link.active, .quarto-navbar .nav-link.active {
-  background: #fff !important;
-  color: #2b864b !important;
+  background: var(--osc-bg) !important;
+  color:var(--osc-primary-green)!important;
   font-weight: 700;
 }
 
