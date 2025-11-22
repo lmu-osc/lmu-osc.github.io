@@ -1,14 +1,15 @@
 :root{
-  --osc-accent: #2b864b;
+  --osc-accent: #00883A;
+  --osc-accent-strong: #026b30;
+  --osc-accent-secondary:#a6c871;
   --osc-muted: #646463;
-  --osc-bg: #fff;
-  --osc-text: #222;
-  --osc-divider: #d6d6d5;
+  --osc-bg: #ffffff;
+  --osc-text: #363636;
+  --osc-divider: #cdcecd;
+  --osc-radius: 4px;
 }
-
 /* Namespace for past events */
 .osc-past-events{
-  font-family: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
   font-size: 16px;
   line-height: 1.6;
 }
@@ -75,7 +76,7 @@
   align-items: center;
   gap: 5px;
   margin: 0.2em 0 0.3em 0;
-  border: 1px rgba(166, 200, 113);
+  border: 1px var(--osc-accent-secondary);
   width: fit-content;
   padding: 0 0.30em;
   border-radius: 5px;
@@ -93,7 +94,7 @@
   text-decoration: none;
 }
 .osc-past-events .card:hover .trainingurl a{
-  color:#2b864b;
+  color:var(--osc-accent);
   text-decoration: underline;
 }
 
@@ -108,12 +109,8 @@
 }
 
 /* css styles */
-*{
-  font-family:'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  }
 
     h1.title{
-    font-family: 'Poppins', 'Segoe UI', sans-serif;
     font-weight: 900;
     font-size: 2.1rem; 
     margin: 0 auto;
@@ -169,8 +166,8 @@
       cursor: pointer;
     }
     .card:hover {
-      background:rgba(43, 134, 75,1.0);
-      border-color: rgba(43, 134, 75,1.0);
+      background:var(--osc-accent-strong);
+      border-color: var(--osc-accent-strong);
       transform: scale(1.0);
       box-shadow: 0 6px 12px rgba(43, 134, 75, 0.3);
       transition: all 0.2s ease;
@@ -184,8 +181,8 @@
     }
     
     .event-category{
-      border: 1px solid rgba(43, 134, 75, 1.0);
-      background: rgba(43, 134, 75, 1.0);
+      border: 1px solid var(--osc-accent-strong);
+      background: var(--osc-accent-strong);
       color: white;
       padding: 0.25em 0.5em;
       border-bottom-left-radius: 5px;
@@ -196,8 +193,8 @@
 
     .card:hover .event-category{
       background-color: white;
-      color: #2b864b;
-      border-color: #2b864b;
+      color: var(--osc-accent);
+      border-color: var(--osc-accent);
     }
 
     .card:hover .title,
@@ -210,7 +207,7 @@
       font-size: 1.1rem; 
       line-height: 1.3;
       margin: 0.2em 0;
-      color:#2b864b;
+      color:var(--osc-accent);
       text-align: justify;
     }
     
@@ -286,8 +283,8 @@
     .active > .page-link {
     z-index: 3;
     color: #ffffff; 
-    background-color: #2b864b;
-    border-color:#2b864b;
+    background-color: var(--osc-accent);
+    border-color:var(--osc-accent);
     }
 
     .page-link {
@@ -295,14 +292,14 @@
     }
 
     .page-link:hover {
-      color:#2b864b;
+      color:var(--osc-accent);
     }
     .trainingurl {
       display: inline-flex;
       align-items: center;
       gap: 5px;
       margin: 0.2em 0 0.3em 0;
-      border: 1px rgba(166, 200, 113);
+      border: 1px var(--osc-accent-secondary);
       width: fit-content;
       padding: 0 0.30em;
       border-radius: 5px;
@@ -320,7 +317,7 @@
       text-decoration: none;
     }
     .card:hover .trainingurl a{
-      color:#2b864b;
+      color:var(--osc-accent);
       text-decoration: underline;
     }
 
@@ -331,36 +328,36 @@
 
     .sidebar nav[role=doc-toc]>ul li a {
       line-height: 1;
-      font-size: 0.95em;
+      font-size: 1em;
     }
 
     .sidebar nav[role=doc-toc] ul > li > a.active,
     .sidebar nav[role=doc-toc] ul > li > ul > li > a.active {
-    border-left: 1px solid #a6c871;
-    color: #a6c871 !important;
+    border-left: 1px solid var(--osc-accent-secondary);
+    color: var(--osc-accent-secondary)!important;
     font-weight: 500;
     }
 
     .sidebar nav[role=doc-toc] ul > li > a:hover,
     .sidebar nav[role=doc-toc] ul > li > ul > li > a:hover {
-      color: #a6c871!important;
+      color: var(--osc-accent-secondary)!important;
       font-weight: 300;
     }
 
     hr{
-      color:#a6c871;
+      color:var(--osc-accent-secondary);
     }
 
     #quarto-margin-sidebar .quarto-listing-category {
       margin-left: 0.3rem;
       padding-left: 0.7rem;
-      border-left: 1px solid #a6c871;
+      border-left: 1px solid var(--osc-accent-secondary);
       line-height: 1;
-      font-size: 0.8em;
+      font-size: 0.9em;
       font-weight: 300;
     }
     #quarto-margin-sidebar .quarto-listing-category .category.active {
-      color: #a6c871;
+      color: var(--osc-accent-secondary);
       font-weight: 500;
     }
     

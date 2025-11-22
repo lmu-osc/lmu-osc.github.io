@@ -1,5 +1,13 @@
 /* css styles */
-
+:root {
+    --primary-color: #00883A;
+    --primary-light: rgba(43, 134, 75, 0.1);
+    --text-dark: #333333;
+    --text-light: #ffffff;
+    --osc-white: #ffffff;
+    --text-light:#5f5f5f;
+  }
+  
 #quarto-content.page-columns main.column-page{
     margin:0 auto;
     max-width: 1200px;
@@ -20,7 +28,7 @@
     width: 100%;
     margin-bottom: 1rem;
     box-shadow: 0 3px 6px #bfc7cf6c;
-    background-color: #ffffff;
+    background-color: var(--osc-white);
 }
 
 .osc-init-header__title {
@@ -35,7 +43,7 @@
     font-size: 2.3rem;
     font-weight: 900;
     line-height: 1.5;
-    color: #2b864b;
+    color:var(--primary-color);
 }
 
 .osc-init-title__last {
@@ -43,7 +51,7 @@
     font-size: 2.3rem;
     font-weight: 500;
     line-height: 1.5;
-    color: #2b864bc0;
+    color: #037033be;
 }
 
 .osc-init-note {
@@ -79,11 +87,11 @@
     font-size: 0.9rem;
     font-weight: 400;
     font-family: Inter, sans-serif;
-    color: #2b864b;
+    color: var(--primary-color);
 }
 
 .osc-init-note__contact {
-    color: #2b864b;
+    color: var(--primary-color);
 }
 
 .osc-init-about {
@@ -106,13 +114,13 @@
     font-family: Inter, sans-serif;
     font-size: 1rem;
     line-height: 1.75;
-    color: #5f5f5f;
+    color: var(--text-light);
 }
 
 .osc-init-activities__title{
     font-size: 1.1rem;
     line-height: 1.5;
-    font-weight: 500;
+    font-weight: 500; 
     font-family: system-ui, sans-serif;
     color: #525252;
 }
@@ -121,7 +129,7 @@
     font-family: Inter, sans-serif;
     font-size: 1rem;
     line-height: 1.75;
-    color: #5f5f5f;
+    color: var(--text-light);
 }
 
 .osc-init-activities__list li::marker {
@@ -155,7 +163,7 @@ hr {
 
 .osc-init-involved__title {
     font-family: system-ui, sans-serif;
-    color: #2b864b;
+    color: var(--primary-color);
     font-size: 1.6rem;
     font-weight: 500;
     line-height: 1.5;
@@ -171,7 +179,7 @@ hr {
 .osc-init-involved__text {
     margin-left: 0.5rem;
     margin-bottom: 0;
-    color: #5f5f5f;
+    color: var(--text-light);
     text-align: justify;
     font-family: Inter, sans-serif;
     font-size: 1rem;
@@ -180,7 +188,7 @@ hr {
 
 .osc-init-involved__email {
     text-decoration: none;
-    color: #2b864b;
+    color: var(--primary-color);
 }
 
 /*organisers*/
@@ -214,13 +222,13 @@ hr {
     font-size: 1rem;
     line-height: 1.5;
     font-weight: 600;
-    color:#5f5f5f;
+    color:var(--text-light);
     transition: transform 0.2s ease opacity 0.2s ease;
     display: inline-block; 
 }
 
 .osc-init-organizers a:hover{
-    color:#2b864b;  /* highlight color */
+    color:var(--primary-color); /* highlight color */
     opacity: 0.85;
 }
 
@@ -239,14 +247,14 @@ hr {
     font-size: 1rem;
     line-height: 1.5;
     font-weight: 600;
-    color:#5f5f5f;
+    color:var(--text-light);
     transition: transform 0.2s ease opacity 0.2s ease;
     display: inline-block; 
     margin-top: 0.1rem;
 }
 
 .osc-init-involved .contact-list  a:hover{
-    color:#2b864b;  /* highlight color */
+    color:var(--primary-color);  /* highlight color */
     opacity: 0.85;
 }
 
@@ -261,46 +269,66 @@ hr {
 }
 
 /* Buttons Base */
+  
 .osc-init-button {
-    padding: 0.6rem 1rem;
+    padding: 0.8rem 1rem;
     border-radius: 5px;
-}
-
-.osc-init-button a {
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
     text-decoration: none;
-}
-
-/* Matrix Button */
-.osc-init-button--matrix,
-.osc-init-button--matrix a {
-    background-color: #2b864b;
-    color: white;
     font-size: 1rem;
     line-height: 1.5;
-    font-weight: 400;
-    transition: transform 0.2s ease, color 0.2s ease;
+    font-weight: 500;
+    display: flex;
+    gap:0.2em;
 }
 
-.osc-init-button--matrix:hover {
-    background-color: #277c45;
+.osc-matrix-button{
+    padding: 0.5rem 0.8rem;
+    border-radius: 5px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    text-decoration: none;
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 500;
+    display: flex;
+    gap:0.2em;
+    align-items: center;
+
+}
+.osc-init-button:hover,
+.osc-matrix-button:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+}
+
+
+.osc-init-button--matrix {
+    border: 1px solid var(--primary-color);
+    color: var(--osc-white);
+    background: var(--primary-color);
+}
+
+.osc-init-button--matrix:hover,
+.osc-init-button--matrix:focus,
+.osc-init-button--matrix:active {
+    border: 1px solid var(--primary-color);
+    color: var(--osc-white);
+    background: var(--primary-color);
 }
 
 /* Newsletter Button */
 .osc-init-button--newsletter {
-    border: 0.5px solid #2b864b;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    background: var(--osc-white);
 }
 
-.osc-init-button--newsletter,
-.osc-init-button--newsletter a {
-    color: #2b864b;
-    font-size: 1rem;
-    line-height: 1.5;
-    font-weight: 400;
-    transition: transform 0.2s ease, color 0.2s ease;
-}
-
-.osc-init-button--newsletter:hover {
-    background-color: #dbe9df86;
+.osc-init-button--newsletter:hover,
+.osc-init-button--newsletter:focus,
+.osc-init-button--newsletter:active{
+    background-color: var(--primary-color);
+    border: solid 1px var(--primary-color);
+    color: var(--osc-white);
 }
 
 
@@ -350,6 +378,7 @@ hr {
         max-width: 280px;
         text-align: center;
         padding: 0.8rem 1rem;
+        display: flex;
     }
 }
 
@@ -370,6 +399,7 @@ hr {
     .osc-init-button {
         font-size: 0.9rem;
         padding: 0.7rem 0.8rem;
+        display: flex;
     }
 }
 

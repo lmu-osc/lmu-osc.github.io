@@ -75,14 +75,14 @@ page-layout: full
 
             <div class="osc-init-involved__links">
 
-                <div class="osc-init-button osc-init-button--matrix">
-                    <a href="mailto:osip@psy.lmu.de">
+                <div class="osc-btn">
+                    <a href="mailto:osip@psy.lmu.de" class=" osc-init-button osc-init-button--matrix">
                         <i class="bi bi-envelope"></i> OSIP team
                     </a>
                 </div>
 
-                <div class="osc-init-button osc-init-button--newsletter">
-                    <a href="https://lists.lrz.de/mailman/listinfo/osip">
+                <div class="osc-btn">
+                    <a href="https://lists.lrz.de/mailman/listinfo/osip" class = "osc-init-button osc-init-button--newsletter">
                         <i class="bi bi-box-arrow-up-right"></i> Mailing list
                     </a>
                 </div>

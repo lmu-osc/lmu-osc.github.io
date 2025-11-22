@@ -6,7 +6,15 @@ format:
 ---
 <style>
   /* css styles */
-
+:root {
+    --primary-color: #00883A;
+    --primary-light: rgba(43, 134, 75, 0.1);
+    --text-dark: #333333;
+    --text-light: #ffffff;
+    --osc-white: #ffffff;
+    --text-light:#5f5f5f;
+  }
+  
 #quarto-content.page-columns main.column-page{
     margin:0 auto;
     max-width: 1200px;
@@ -26,7 +34,7 @@ format:
     width: 100%;
     margin-bottom: 1rem;
     box-shadow: 0 3px 6px #bfc7cf6c;
-    background-color: #ffffff;
+    background-color:var(--osc-white);
 }
 
 .init-header__title {
@@ -41,7 +49,7 @@ format:
     font-size: 2.3rem;
     font-weight: 900;
     line-height: 1.5;
-    color: #2b864b;
+    color:var(--primary-color);
 }
 
 
@@ -51,7 +59,7 @@ format:
     font-family: Inter, sans-serif;
     font-size: 1rem;
     line-height: 1.75;
-    color: #5f5f5f;
+    color: var(--text-light);
 }
 
 .init-about__text hr {

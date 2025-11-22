@@ -47,11 +47,14 @@ toc-depth: 3
 toc-expand: 3
 toc-location: left
 page-layout: full #right
-title-block-banner: "#2b864b"
 repo-actions: false
 ---
-
-
+<style>
+  .quarto-title-block,
+.quarto-title {
+  display: none !important;
+}
+</style>
 ## Upcoming Events
 
 ::: {#upcoming-events}
