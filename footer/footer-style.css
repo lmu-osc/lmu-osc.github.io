@@ -1,6 +1,13 @@
+
+:root{
+  --osc-primary-green: #00883A;
+  --osc-muted:#626468;
+  --osc-bg: #fff;
+}
+
 .osc-footer-card {
-    background-color: #2b864b;
-    color: white;
+    background-color: var(--osc-primary-green);
+    color: var(--osc-bg);
     width: 100%;
     padding: 2rem;
   }
@@ -34,5 +41,5 @@
 }
 
 .osc-footer-hr{
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid var(--osc-bg);
 }
