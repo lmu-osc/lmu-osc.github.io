@@ -1,0 +1,109 @@
+---
+title: "Hacky Hour"
+format: 
+  html:
+    css: styles.css
+page-layout: full
+---
+
+```{=html}
+<head>
+    <div class="osc-init-header">
+
+        <div class="osc-init-header__title">
+            <p class="osc-init-title__first">Hacky</p>
+            <p class="osc-init-title__last">Hour</p>
+        </div>
+
+        <div class="osc-init-about">
+
+            <div class="osc-init-about__text">
+                <p>
+                    Come along to talk about code, research tools, and open science in a social environment!
+                    We hold sessions on the last Monday of the month, in person at Wikipedia Munich,
+                    Angertorstraße 3, Munich, from 16:30 to 18:00. Each session has a theme. If you have
+                    a related problem, bring it along to work on it and get help or pointers! We will ensure
+                    that there is at least one knowledgeable person in the room, and a facilitator to keep
+                    things in check (and order pizza).
+                </p>
+
+                <h4 class="osc-init-activities__title">Sessions' agenda:</h4>
+
+                <ul class="osc-init-activities__list">
+                    <li class="osc-init-activities__item">
+                        Brief round of introductions and description of the problems you’ll be working on during that session
+                    </li>
+                    <li class="osc-init-activities__item">
+                        Formation of possible groups or tandems, if participants have tips to exchange on certain topics
+                    </li>
+                    <li class="osc-init-activities__item">Hack</li>
+                    <li class="osc-init-activities__item">Wrap-up: progress and next steps</li>
+                </ul>
+            </div>
+
+            <div class="osc-init-about__logo">
+                <img class="osc-init-about__logo-img" src="images/hackyhour.svg">
+            </div>
+
+        </div>
+
+        <div class="osc-init-note">
+
+            <div class="osc-init-note__icon">
+                <i class="bi bi-info-circle"></i>
+            </div>
+
+            <div class="osc-init-note__text">
+                <i>
+                    Hacky Hour was active in 2024. Any interested parties wanting support to revive it or
+                    support for a one-off event can contact the LMU Open Science Center coordinator,
+                    <a href="mailto:malika.ihle@lmu.de" class="osc-init-note__contact">
+                        Dr. Malika Ihle
+                    </a>
+                </i>
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div class="osc-init-involved">
+
+            <h2 class="osc-init-involved__title">Get Involved</h2>
+
+            <p class="osc-init-involved__text">
+                You can contact
+                <a href="mailto:malika.ihle@lmu.de" class="osc-init-involved__email" target="_blank">
+                    Dr. Malika Ihle <i class="bi bi-box-arrow-up-right"></i>
+                </a>
+                or subscribe to our mailing list to get reminders or suggest themes. You can also join the
+                <a href="https://www.lmu.de/en/about-lmu/structure/central-university-administration/it-services-division-vi/it-service-desk/central-it-services/lmu-chat-matrix/"
+                   class="osc-init-involved__email">
+                   LMU Chat
+                </a>, under the Open-Science-Center Team's OSC-hacky-hour channel.
+            </p>
+
+            <div class="osc-init-involved__links">
+
+                <div class="osc-btn">
+                    <a href="https://matrix.to/#/#lmu-open-science-center:matrix.lmu.de#/#lmu-open-science-center:matrix.lmu.de" class= "osc-matrix-button osc-init-button--matrix">
+                        <img src="images/idgGdCNeTC_logos-removebg-preview.png" style="height:35px;">
+                        OSC Matrix
+                    </a>
+                </div>
+
+                <div class="osc-btn">
+                    <a href="https://lists.lrz.de/mailman/listinfo/hackyhour"
+                    class = "osc-init-button osc-init-button--newsletter">
+                        <i class="bi bi-box-arrow-up-right"></i> Mailing list
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</head>
+
+
+```

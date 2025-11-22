@@ -1,0 +1,113 @@
+---
+title: "Open Science Initiatiative in Medicine"
+format: 
+  html:
+    css: styles.css
+page-layout: full
+---
+
+```{=html}
+<head>
+    <div class="osc-init-header">
+
+        <!-- Title -->
+        <div class="osc-init-header__title">
+            <p class="osc-init-title__first">LMU</p>
+            <p class="osc-init-title__last">Open Science Initiative in Medicine</p>
+        </div>
+
+        <!-- About -->
+        <div class="osc-init-about">
+
+            <!-- Text -->
+            <div class="osc-init-about__text">
+                <p>
+                    Founded in January 2019, the LMU Open Science Initiative in Medicine (OSIM) aims to promote open science 
+                    in medicine by developing training programs and offering strategies on how to improve effectiveness and 
+                    reproducibility of basic and clinical medical research.
+                    Together with the LMU Open Science Center, our final goal is to improve scientific practices and 
+                    reproducibility in medical research at LMU and beyond.
+                </p>
+
+                <h4 class="osc-init-activities__title">Upcoming Meetings</h4>
+
+                <ul class="osc-init-activities__list">
+                    <li class="osc-init-activities__item">
+                        12.12.2025, 14:00: Clinical data sharing, with Ulrich Mansmann 
+                        (Institute for Medical Information Processing, Biometry, and Epidemiology, LMU Munich)
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Logo -->
+            <div class="osc-init-about__logo">
+                <img class="osc-init-about__logo-img" src="images/osim.png" style="height:150px;">
+            </div>
+
+        </div>
+
+        <hr>
+        <!-- Current organizers -->
+
+        <div class="osc-init-organizers">
+            <h2 class="osc-init-involved__title"><i class="bi bi-people"></i>Current Organizers</h2>
+            <ul class="osc-init-organizer-list">
+                <li class="osc-init-organizer-item"><a href="people/people/00073_luisa_f._jimenez-soto.html">PD. Dr. Luisa F. Jiménez-Soto (Chair) </a></li>
+                <li class="osc-init-organizer-item"><a href="people/people/00017_julian_lange.html">Julian Lange, M.Sc. (Coordinator)</a></li>
+            </ul>
+        </div>
+        <hr>
+        <!-- Senior Members -->
+        <div class="osc-init-organizers">
+            <h2 class="osc-init-involved__title">
+                <i class="bi bi-people"></i> Senior Members
+            </h2>
+
+            <ul class="osc-init-organizer-list">
+                <li class="osc-init-organizer-item">
+                    <a href="#">Prof. Dr. Anne-Laure Boulesteix</a>
+                </li>
+                <li class="osc-init-organizer-item">
+                    <a href="#">Prof. Dr. Eva Hoster</a>
+                </li>
+                <li class="osc-init-organizer-item">
+                    <a href="#">Prof. Dr. Nikolaus Plesnila</a>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <!-- Get Involved -->
+        <div class="osc-init-involved">
+
+            <h2 class="osc-init-involved__title">Get Involved</h2>
+
+            <p class="osc-init-involved__text">
+                If you are a faculty member of LMU medical science and want to join the initiative, 
+                do not hesitate to contact us. Questions or any ideas regarding the initiative or its 
+                meetings/workshops are welcome!
+            </p>
+
+            <div class="osc-init-involved__links">
+
+                <div class="osc-btn" >
+                    <a href="mailto:jimenez@lmu.de,julian.lange@ibe.med.uni-muenchen.de" class="osc-init-button osc-init-button--matrix">
+                        <i class="bi bi-envelope"></i> OSIM team
+                    </a>
+                </div>
+
+                <div class="osc-btn">
+                    <a href="https://lists.lrz.de/mailman/listinfo/osim" class="osc-init-button osc-init-button--newsletter">
+                        <i class="bi bi-box-arrow-up-right"></i> Mailing list
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</head>
+
+```
