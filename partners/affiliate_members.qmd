@@ -1,5 +1,5 @@
 ---
-title: "Associate Institutional Members"
+title: "Affiliate Members"
 format: 
   html:
     page-layout: full
@@ -254,7 +254,7 @@ if (!contactLink || contactLink.textContent.trim() === '' || contactLink.textCon
 </script>
 
 
-<div class="header-section">Associate Institutional Members</div>
+<div class="header-section">Affiliate Members</div>
 
 <div class="member-grid">
 <div class="profile-link">
