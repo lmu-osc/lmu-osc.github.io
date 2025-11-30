@@ -259,7 +259,7 @@ document.addEventListener('DOMContentLoaded', () => {
   <div class="header-section">Other LMU Support Services</div>
 
   <div class="member-grid">
-  <div class="profile-link" onclick="window.location='institution1.html'">
+  <div class="profile-link" onclick="window.location='https://fdm.ub.lmu.de/services-networks/research-funding/'">
       <div class="member-grid-item">
           <div class="member-grid-name">Research Funding Unit</div>
           
@@ -275,11 +275,11 @@ document.addEventListener('DOMContentLoaded', () => {
       <div class="description-text">
           The Research Funding Unit is here to help researchers comply to requirements of funding agencies to increase your chances of getting funded.
       </div>
-      <a href="#" target="_blank" class="social-link">Website <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      <a href="https://fdm.ub.lmu.de/services-networks/research-funding/" target="_blank" class="social-link">Website <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
   </div>
   <hr>
 
-  <div class="profile-link" onclick="window.location='institution1.html'">
+  <div class="profile-link" onclick="window.location='https://www.stat.lmu.de/stablab/en/'">
       <div class="member-grid-item">
           <div class="member-grid-name">StaBLab: Statistical consulting unit</div>
               <div class="contact-person" style="display: flex; flex-direction: column; gap: 0;">
@@ -302,7 +302,7 @@ document.addEventListener('DOMContentLoaded', () => {
   </div>
   <hr>
 
-  <div class="profile-link" onclick="window.location='institution1.html'">
+  <div class="profile-link" onclick="window.location='https://www.slds.stat.uni-muenchen.de/consulting/'">
       <div class="member-grid-item">
           <div class="member-grid-name">MLCU: Machine Learning Consulting Unit</div>
               <div class="contact-person" style="display: flex; flex-direction: column; gap: 0;">
@@ -326,7 +326,7 @@ document.addEventListener('DOMContentLoaded', () => {
       <a href="https://www.slds.stat.uni-muenchen.de/consulting/" target="_blank" class="social-link">Website <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
   </div>
   <hr>
-  <div class="profile-link" onclick="window.location='institution1.html'">
+  <div class="profile-link" onclick="window.location='https://www.en.ub.uni-muenchen.de/writing/research_data/index.html'">
       <div class="member-grid-item">
           <div class="member-grid-name">University Library LMU - Research Data Management Information</div>
               <div class="contact-person" style="display: flex; flex-direction: column; gap: 0;">
@@ -377,7 +377,7 @@ document.addEventListener('DOMContentLoaded', () => {
   </div>
   <hr>
 
-  <div class="profile-link" onclick="window.location='https://www.itg.uni-muenchen.de/index.html">
+  <div class="profile-link" onclick="window.location='https://www.itg.uni-muenchen.de/index.html'">
       <div class="member-grid-item">
           <div class="member-grid-name">IT-Gruppe Geisteswissenschaften (ITG) - LMU Center for Digital Humanities</div>
               <div class="contact-person" style="display: flex; flex-direction: column; gap: 0;">
