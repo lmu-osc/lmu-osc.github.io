@@ -157,9 +157,6 @@ body {
   line-height: 1.85;
   margin-top: 0;
   margin-bottom: 0.5rem;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
   overflow: hidden;
   max-height: calc(1.2rem * 1.85 * 5);
   width: 100%;
