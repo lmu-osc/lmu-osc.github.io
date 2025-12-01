@@ -1,0 +1,219 @@
+---
+title: "Join Us"
+format: 
+  html:
+    page-layout: full
+---
+<style>
+  /* css styles */
+:root {
+    --primary-color: #00883A;
+    --primary-light: rgba(43, 134, 75, 0.55);
+    --text-dark: #333333;
+    --text-light: #ffffff;
+    --osc-white: #ffffff;
+    --text-light:#5f5f5f;
+  }
+  
+#quarto-content.page-columns main.column-page{
+    margin:0 auto;
+    max-width: 1200px;
+    padding: 2rem;
+    width:100%;
+    background-color: #f9fcf9;
+}
+.quarto-title-block,
+.quarto-title {
+  display: none !important;
+}
+
+.joinus-container{
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 1rem;
+    box-shadow: 0 3px 6px #bfc7cf6c;
+    background-color:var(--osc-white);
+}
+
+
+.joinus-title h3{
+    font-size: 2.3rem;
+    font-weight: 900;
+    line-height: 1.5;
+    color:var(--primary-color);
+}
+
+.joinus-container p,
+.joinus-container li {
+    text-align: justify;
+    font-size: 1rem;
+    line-height: 1.85;
+    font-weight:400;
+    color: var(--text-light);
+}
+.joinus-container p{
+    padding: 0 1rem;
+    margin-top: 1rem;
+}
+.joinus-container h4{
+  padding: 0 1rem;
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 1.5;
+  color:var(--primary-color);
+}
+.joinus-container a{
+  color: var(--primary-color);
+  text-decoration:none;
+}
+.bi-envelope,
+.bi-box-arrow-up-right{
+  color: var(--primary-color);
+}
+
+/* styling for member categories chart */
+.members-category-container{
+    margin: 4rem;
+    margin-bottom: 5rem,
+}
+.osc-members-category {
+  position: relative;
+  width: 500px;       
+  height: 500px;
+  margin: auto;
+  padding:1rem;
+  border: 6px solid var(--primary-color);
+  border-radius: 50%;
+}
+
+.osc-members-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.icon-75{
+    color: var(--primary-light);
+    font-weight: 700;
+    font-size: 85px;
+}
+
+.member-category {
+  position: absolute;  
+  text-align: center;
+  padding: 10px;
+  border-radius: 6px;
+  background: var(--osc-white);
+  border: 1px solid var(--primary-color);
+  font-size: 15px;
+  width: max-content;   
+  max-width: 220px;     
+  min-width: 150px;  
+  white-space: normal; 
+  box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+  text-decoration: none;
+  z-index: 1;
+}
+
+
+.top-center {
+  top:-5%;             
+  left: 50%;          
+  transform: translateX(-50%); 
+}
+
+.center-right{
+  top: 50%;
+  right: -28%;
+  transform: translateY(-50%)
+}
+
+.center-left{
+  top: 50%;
+  left: -28%;
+  transform: translateY(-50%)
+}
+
+.bottom-center{
+  bottom: -10%;
+  left: 50%;
+  transform: translateX(-50%); 
+}
+
+
+
+@media (max-width: 992px) {
+    .joinus-title h3{
+        font-size: 2rem;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .joinus-title h3{
+        font-size: 1.8rem;
+        margin: 0;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .joinus-title h3{
+        font-size: 1.5rem;
+    }
+
+
+}
+
+
+@media (max-width: 360px) {
+    .joinus-title h3{
+        font-size: 1.3rem;
+    }
+}
+
+</style>
+
+:::{.joinus-container}
+
+:::{.joinus-title}
+### Becoming an OSC member
+:::
+
+According to its [statute](statutes.qmd) <i class="bi bi-box-arrow-up-right"></i>, the OSC has four categories of membership:
+
+```{=html}
+<div class = "members-category-container">
+    <div class = "osc-members-category">
+        <div class="osc-members-icon">
+            <i class="bi bi-people icon-75"></i>
+        </div>
+
+        <div class="member-category top-center">
+                <strong>Full members<br>(“ordentliche Mitglieder”)</strong><br> University teachers of the LMU (i.e., professors and PDs).
+        </div>
+        <div class="member-category bottom-center">
+            <strong>Extraordinary members<br>(“außerordentliche Mitglieder”)</strong><br>Other researchers of the LMU (e.g., post-docs and lecturers that do not fall into the first category).
+        </div>
+        <a class="member-category center-right" href="../partners/affiliate_members.html">
+                <strong>Affiliate members<br>(“Assoziierte Mitglieder”)</strong><br> Researchers from other universities or non-university research institutes, who have a close collaboration with the LMU and contribute to the goals of the OSC.
+        </a>
+        <a class="member-category center-left" href="../partners/institutional_members.html">
+            <strong>Institutional members<br>(“institutionelle Mitglieder”)</strong><br> Research institutions of the LMU (departments, faculties), central LMU institutions, and non-LMU institutions providing infrastructure or services supporting the OSC.
+        </a>
+    </div>
+</div>
+```
+
+In addition, [OSC Fellows](../people/fellows.qmd) are early career researchers from the LMU who are leading on grassroots initiatives and who we want to recognise, whether or not they can be official members of the OSC (e.g. if they do not have a PhD degree yet). 
+                    
+By joining the OSC, members (of any category) express that they actively support the goals of the OSC. Beyond this, we encourage members to become ‘ambassadors’ of open research practices in whatever capacity they find suitable, e.g. contribute in delivering training events or seminars, contribute in community building, get involved in meta-research projects, or liaise with stakeholders to inform on the design of incentives and policies. Only OSC members can vote for and take part in the OSC Scientific Board.
+
+Prospective institutional members can learn more about the benefits of [becoming a Funding Institutional Member](../partners/becoming_institutional_members.qmd) and schedule a call with us!
+
+#### Contact
+If you are interested in becoming a member of the LMU OSC, please contact the OSC coordinator <i class="bi bi-envelope"></i> [Dr. Malika Ihle](mailto:malika.ihle@lmu.de).
+
+:::
