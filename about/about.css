@@ -35,7 +35,7 @@
 .hero { padding-block: clamp(var(--space-7), 8vw, calc(var(--space-8) + 1rem)); background: #fff; }
 
 .hero-container{
-  width:90%;
+  width:100%
 }
 .hero-about {
   font-size: 3rem;
@@ -54,9 +54,7 @@
   font-weight: 400;
   line-height: 1.8; 
   color: #494848; 
-  max-width: 95%;
-  margin-left: auto;
-  margin-right: auto;
+  text-align: justify;
 }
 
 .staff-governance-rail {
