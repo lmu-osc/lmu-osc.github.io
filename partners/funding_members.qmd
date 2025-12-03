@@ -54,7 +54,7 @@ body {
   padding: 0.5rem;
   text-align: center;
   transition: transform 0.13s, box-shadow 0.13s;
-  height: 350px; 
+  height: 368px; 
   min-width: 200px;
   max-width: 320px;
   box-sizing: border-box;
@@ -75,9 +75,9 @@ body {
 }
 
 .member-grid-image {
-  max-width: 130px;
+  max-width: 120px;
   min-height: 80px;
-  max-height: 138px;
+  max-height: 120px;
   object-fit: contain;
   border-radius: 0;
   top-margin: 20px;
@@ -103,13 +103,13 @@ body {
 }
 
 .member-grid-name {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   font-weight: bold;
   color: #212c2b;
   margin-bottom: 0.3rem;
-  line-height: 1.4;
+  line-height: 1;
   min-height: 2.9em;
-  max-height: 4.2em;
+  max-height: 4.4em;
   display: flex;
   align-items: center;
   justify-content: center;
