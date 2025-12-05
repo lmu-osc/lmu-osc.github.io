@@ -7,17 +7,17 @@ first_name: Josef
 position: Chair
 faculty: Social Sciences
 membertype: ['lmu-individual']
-email: hans-bernd.brosius@ifkw.lmu.de
+email: bruederl@lmu.de
 photo: 'images/bruederl_josef.jpg'
 website:
   - label: 'Website 1'
-    url: https://www.ifkw.uni-muenchen.de/organisation/personen/prof_ehemalig/ehem_reg/brosius_hansbernd/index.html
+    url: https://www.ls3.soziologie.uni-muenchen.de/personen/professor/bruederl_josef/index.html
 social_media:
-  ORCID: 'https://orcid.org/0000-0000-0000-0000'
+  ORCID: 'https://orcid.org/0000-0001-8636-9922'
 mission_statement:
-  - <em><strong></strong></em><em><strong>Mission Statement: </strong></em>
-  - I am professor for Empirical Communication Research at the Department of Communication Studies and Media Research.
-  - In my field of research, Open Science, reproducibility, and replicability are intensively discussed. We are thinking about replication journals, regulations for data archiving, and Open Access. However, no structural decisions have been made so far, neither at our department nor in the field as far as I oversee it.
+  - <em><strong></strong></em><em><strong>Mission Statement:</strong></em>
+  - I am professor for Quantitative Methods and Social Inequality at the Department of Sociology.
+  - Open Science has been essential for me since my first publication back in 1990 when I prepared a CD-ROM with reproducible analysis code (and wondered, why nobody asked for it). Today, my team gathers large-scale survey data (German Family Panel) which we provide to the research community as a service.
 ---
 {{< include templates/_setup.qmd >}}
 {{< include templates/_contact_items.qmd >}}

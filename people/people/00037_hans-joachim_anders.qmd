@@ -7,15 +7,15 @@ first_name: Hans-Joachim
 position: Head of Department
 faculty: University hospital
 membertype: ['lmu-individual']
-email: gerrit.burkhardt@med.uni-muenchen.de
+email: hjanders@med.uni-muenchen.de
 photo: 'images/anders_hans-joachim.jpg'
 website:
   - label: 'Website 1'
-    url: https://www.researchgate.net/profile/Gerrit-Burkhardt
+    url: https://www.kidney-immunology-lab-munich.de/anders-lab
 social_media:
-  ORCID: 'https://orcid.org/0000-0000-0000-0000'
+  ORCID: 'https://orcid.org/0000-0003-2434-2956'
 mission_statement:
-  - I am a clinician-scientist specializing in the development of non-invasive brain stimulation interventions for the treatment of mental health disorders. In my field, there are still many reservations and prejudices against open science practices. To address this, I am committed to establishing FAIR data principles and promoting transparent research practices within my working group and collaborations.
+  - The different aspects of Open Science are important to increase transparency and reproducibility of research. My own focus is to improve the predictive capacity of preclinical studies for the outcome of subsequent clinical trials. We develop concepts and perform preclinical randomized trials (pRCTs), in a single centre or multicenter design, to reduce the existing gap in the design of pRCTs and human RCTs.
 ---
 {{< include templates/_setup.qmd >}}
 {{< include templates/_contact_items.qmd >}}

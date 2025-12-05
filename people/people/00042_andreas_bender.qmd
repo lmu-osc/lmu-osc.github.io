@@ -7,16 +7,17 @@ first_name: Andreas
 position: Researcher
 faculty: Math, Informatics & Stats
 membertype: ['lmu-individual']
-email: claus.belka@med.uni-muenchen.de
+email: andreas.bender@stat.uni-muenchen.de
 photo: 'images/bender_andreas.jpg'
 website:
   - label: 'Website 1'
-    url: https://www.lmu-klinikum.de/strahlentherapie-und-radioonkologie/das-team/leitung/da4eef9e841041f2
+    url: https://www.stat.lmu.de/stablab/en/
 social_media:
-  ORCID: 'https://orcid.org/0000-0000-0000-0000'
+  ORCID: 'https://orcid.org/0000-0001-5628-8611'
 mission_statement:
   - <em><strong></strong></em><em><strong>Mission Statement: </strong></em>
-  - I am head of the Department of Radiation Oncology at the University Hospital Munich.
+  - I am a Research Associate and Lecturer at the Department of Statistics, LMU and part of the working groups <a href="https://www.en.stablab.stat.uni-muenchen.de/index.html">Statistical Consulting Unit</a> and <a href="https://www.slds.stat.uni-muenchen.de/">Statistical Learning &amp; Data Science</a>.
+  - As a consultant, I try to propagate good statistical practice in the applied sciences. As an educator, I try to raise awareness and sensitivity for open science issues like p-hacking and reproducibility. In my own research, I try to adhere to open science principles whenever possible, e.g., by sharing code and data, and by making manuscripts open access.
 ---
 {{< include templates/_setup.qmd >}}
 {{< include templates/_contact_items.qmd >}}

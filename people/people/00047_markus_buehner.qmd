@@ -7,17 +7,14 @@ first_name: Markus
 position: Chair
 faculty: Psychology & Education
 membertype: ['lmu-individual']
-email: bruederl@lmu.de
+email: buehner@lmu.de
 photo: 'images/buehner_markus.jpg'
-website:
-  - label: 'Website 1'
-    url: https://www.ls3.soziologie.uni-muenchen.de/personen/professor/bruederl_josef/index.html
 social_media:
-  ORCID: 'https://orcid.org/0000-0000-0000-0000'
+  ORCID: 'https://orcid.org/0000-0002-0597-8708'
 mission_statement:
   - <em><strong></strong></em><em><strong>Mission Statement:</strong></em>
-  - I am professor for Quantitative Methods and Social Inequality at the Department of Sociology.
-  - Open Science has been essential for me since my first publication back in 1990 when I prepared a CD-ROM with reproducible analysis code (and wondered, why nobody asked for it). Today, my team gathers large-scale survey data (German Family Panel) which we provide to the research community as a service.
+  - I am professor for Psychological Methods and Assessment at the Department of Psychology.
+  - Research transparency is a core value of my working group. In my term as managing director of the Department Psychology, I supported the foundation of the department's Open Science Committee (<a href="https://osf.io/mgwk8/">osf.io/mgwk8/</a>) in July 2015. Furthermore, many members of my working group signed the „Commitment to Research Transparency and Open Science“ (<a href="http://www.researchtransparency.org/signatories/">www.researchtransparency.org/signatories/</a>).
 ---
 {{< include templates/_setup.qmd >}}
 {{< include templates/_contact_items.qmd >}}

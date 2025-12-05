@@ -7,18 +7,16 @@ first_name: Claus
 position: Head of Department
 faculty: University hospital
 membertype: ['lmu-individual']
-email: Christian.Behrends@mail03.med.uni-muenchen.de
+email: claus.belka@med.uni-muenchen.de
 photo: 'images/belka_claus.jpg'
 website:
   - label: 'Website 1'
-    url: http://www.synergy-munich.de
-  - label: 'Website 2'
-    url: http://www.behrendslab.com
+    url: https://www.lmu-klinikum.de/strahlentherapie-und-radioonkologie/das-team/leitung/da4eef9e841041f2
 social_media:
-  ORCID: 'https://orcid.org/0000-0000-0000-0000'
+  ORCID: 'https://orcid.org/0000-0002-1287-7825'
 mission_statement:
   - <em><strong></strong></em><em><strong>Mission Statement: </strong></em>
-  - My lab uses a broad range of mass spectrometry-based proteomics techniques to explore the ubiquitin and autophagy system.<br>Inherent to our approach, we generate a large amounts of data which we make accessible via open-access depositories. I am convinced that sharing this and other kind of files together with its respective metadata is key to accelerate scientific discoveries and ensure reproducibility. Therefore, I am interested in educating co-workers and peers to implement data sharing according to the FAIR principles.
+  - I am head of the Department of Radiation Oncology at the University Hospital Munich.
 ---
 {{< include templates/_setup.qmd >}}
 {{< include templates/_contact_items.qmd >}}
