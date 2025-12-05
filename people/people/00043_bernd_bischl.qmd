@@ -7,16 +7,14 @@ first_name: Bernd
 position: Chair
 faculty: Math, Informatics & Stats
 membertype: ['lmu-individual']
-email: andreas.bender@stat.uni-muenchen.de
-website:
-  - label: 'Website 1'
-    url: https://www.en.stablab.stat.uni-muenchen.de/people/postdoktoranden/bender/index.html
+email: bernd.bischl@stat.uni-muenchen.de
+photo: 'images/bischl_bernd.jpg'
 social_media:
-  ORCID: 'https://orcid.org/0000-0000-0000-0000'
+  ORCID: 'https://orcid.org/0000-0001-6002-6980'
 mission_statement:
   - <em><strong></strong></em><em><strong>Mission Statement: </strong></em>
-  - I am a Research Associate and Lecturer at the Department of Statistics, LMU and part of the working groups <a href="https://www.en.stablab.stat.uni-muenchen.de/index.html">Statistical Consulting Unit</a> and <a href="https://www.slds.stat.uni-muenchen.de/">Statistical Learning &amp; Data Science</a>.
-  - As a consultant, I try to propagate good statistical practice in the applied sciences. As an educator, I try to raise awareness and sensitivity for open science issues like p-hacking and reproducibility. In my own research, I try to adhere to open science principles whenever possible, e.g., by sharing code and data, and by making manuscripts open access.
+  - I am professor for Computational Statistics at the Department of Statistics.
+  - I have published about proper benchmarking in machine learning and optimization. Furthermore, I am one of the founders and core members of the OpenML platform for open and reproducible machine learning (<a href="http://www.openml.org">www.openml.org</a>).
 ---
 {{< include templates/_setup.qmd >}}
 {{< include templates/_contact_items.qmd >}}

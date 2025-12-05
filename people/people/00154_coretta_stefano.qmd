@@ -1,22 +1,22 @@
 ---
-title: Coretta Stefano
+title: Stefano Coretta 
 academic_title: Dr.
-name: Coretta Stefano
-surname: Stefano
-first_name: Coretta
+name: Stefano Coretta 
+surname: Coretta
+first_name: Stefano
 position: University of Edinburgh
 faculty: ''
 membertype: ['alumni']
-email: taisuke.imai@econ.lmu.de
-photo: 'images/stefano_coretta.jpg'
+email: 
+photo: 'images/coretta_stefano.jpg'
 website:
   - label: 'Website 1'
-    url: https://www.taisukeimai.com/taisuke/app/#!/#!/
+    url: https://stefanocoretta.github.io
 social_media:
-  ORCID: 'https://orcid.org/0000-0000-0000-0000'
+  ORCID: 'https://orcid.org/0000-0001-9627-5532'
 mission_statement:
-  - <em><strong></strong></em><em><strong>Mission Statement: </strong></em>
-  - <em><strong></strong></em>I am postdoctoral researcher at the Department of Economics, Seminar of Economic Theory. My main research field is microeconomic theory and behavioral economics, but I also have several projects on replication and meta-analysis.
+  - <em><strong>Mission Statement:</strong></em>
+  - As a researcher, I wish to help increasing awareness within the Language sciences about the importance of openness, transparency, and reproducibility for ensuring replicability and accumulation of knowledge in the field. In particular, I am always on the look out for new methods that can streamline data processing and documentation, statistical models that can help us assess the degree of certainty of empirical results, and principles that can assist us in the formulation of statistical hypotheses that map more tightly to the research questions.<em> </em>
 ---
 {{< include templates/_setup.qmd >}}
 {{< include templates/_contact_items.qmd >}}

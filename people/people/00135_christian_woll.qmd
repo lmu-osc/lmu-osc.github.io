@@ -7,15 +7,17 @@ first_name: Christian
 position: Researcher
 faculty: Psychology & Education
 membertype: ['lmu-individual']
-email: ewolf@lmb.uni-muenchen.de
+email: christian.woll@psy.lmu.de
 photo: 'images/woll_christian.jpg'
 website:
   - label: 'Website 1'
-    url: https://www.en.gen.vetmed.uni-muenchen.de/people/professors/wolf/index.html
+    url: https://www.psy.lmu.de/pbi/personen/wiss_mitarbeiter/woll/index.html
 social_media:
-  ORCID: 'https://orcid.org/0000-0000-0000-0000'
+  ORCID: 'https://orcid.org/0000-0002-0352-4796'
 mission_statement:
-  - I am professor for Molecular Animal Breeding and Biotechnology at the Department of Veterinary Sciences.
+  - In clinical psychology, Open Science, reproducibility, and replicability may still be improved. Especially sensitive clinical data requires additional steps to guarantee anonymization. I make reproducible analysis code and data available for every publication, see the "<a href="http://www.researchtransparency.org/signatories/">Commitment to Research Transparency and Open Science</a>".
+  
+
 ---
 {{< include templates/_setup.qmd >}}
 {{< include templates/_contact_items.qmd >}}

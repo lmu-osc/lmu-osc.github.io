@@ -7,17 +7,16 @@ first_name: Markus
 position: Chair
 faculty: Psychology & Education
 membertype: ['lmu-individual']
-email: r.ludwig@lmu.de
+email: Markus.Maier@psy.lmu.de
 photo: 'images/maier_markus.JPG'
 website:
   - label: 'Website 1'
     url: http://www.geographie.uni-muenchen.de/department/fiona/personen/index.php?personen_details=1&user_id=65
 social_media:
-  ORCID: 'https://orcid.org/0000-0000-0000-0000'
+  ORCID: 'https://orcid.org/0000-0002-8115-4612'
 mission_statement:
-  - <em><strong>Mission Statement:</strong> </em>
-  - I am professor for Applied Physical Geography and Environmental Modeling at the Department of Geography.
-  - I specialize in analyzing the impacts of climate change on water and land resources on regional scales. While I am aware of the broad acceptance of open science principles in the climate science community, I am also witnessing a considerable lack thereof in other areas of my research domain. With many years of experience in associate editing for high-level scientific journals, I am convinced that the need for research transparency, validation, code and data sharing is more necessary than ever.
+  - I am professor for General Psychology (Emotion and Motivation) at the Department of Psychology.
+  - Good scientific research practices require large sample studies as well as confirmatory studies. As such, the chair of General Psychology II established a lab that aims to help researchers to effectively and quickly run their studies under controlled conditions.
 ---
 {{< include templates/_setup.qmd >}}
 {{< include templates/_contact_items.qmd >}}

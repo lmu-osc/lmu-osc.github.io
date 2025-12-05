@@ -7,17 +7,15 @@ first_name: Eckhard
 position: Director of Institute
 faculty: Veterinary Medicine
 membertype: ['lmu-individual']
-email: geobiologie@geo.lmu.de
-photo: 'images/wolf_eckhard.png'
+email: ewolf@lmb.uni-muenchen.de
+photo: 'images/wolf_eckhard.jpg'
 website:
   - label: 'Website 1'
-    url: https://www.palaeontologie.geowissenschaften.uni-muenchen.de/personen/lehrstuhlinhaber/woerheide/index.html
+    url: https://www.en.gen.vetmed.uni-muenchen.de/people/professors/wolf/index.html
 social_media:
-  ORCID: 'https://orcid.org/0000-0000-0000-0000'
+  ORCID: 'https://orcid.org/0000-0002-0430-9510'
 mission_statement:
-  - <em><strong></strong></em><em><strong>Mission Statement:</strong></em>
-  - I am the Chair of Palaeontology &amp; Geobiology in the Department of Earth and Environmental Sciences, Speaker of the GeoBio-Center, and currently Dean of the Faculty of Geosciences.
-  - We have published open access since more than a decade and provide our data on open science repositories such as OpenDataLMU and GitHub, because open access to scientific results and the underlying data is imperative to enable reproducible research. Open science is the future!
+  - I am professor for Molecular Animal Breeding and Biotechnology at the Department of Veterinary Sciences.
 ---
 {{< include templates/_setup.qmd >}}
 {{< include templates/_contact_items.qmd >}}

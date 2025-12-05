@@ -7,15 +7,15 @@ first_name: Thomas
 position: Research Group Leader
 faculty: Physics
 membertype: ['lmu-individual']
-email: reka.kugyelka@med.uni-muenchen.de
+email: Thomas.Kuhr@lmu.de
 photo: 'images/kuhr_thomas.jpg'
 website:
   - label: 'Website 1'
-    url: https://github.com/rkugyelka
+    url: https://flavor.physik.uni-muenchen.de/
 social_media:
-  ORCID: 'https://orcid.org/0000-0000-0000-0000'
+  ORCID: 'https://orcid.org/0000-0001-6251-8049'
 mission_statement:
-  - I work as a researcher at the Department of Thoracic Surgery of the LMU Klinikum, concentrating on transplantation immunology. Our goal is to improve patient outcomes after lung transplantation, predicting rejection of the donor organ by finding biomarkers or patterns in the clinical data. I would like to advocate for adopting open science practices in the field of clinical research, opening possibilites to „team science“ via data sharing while protecting sensitive patient data.
+  - I am leading the Experimental Flavor Physics Group that is studying the fundamental laws of physics with data from the <a href="https://www.belle2.de/">Belle II experiment</a> in Japan.<br>As the effort of collecting large amounts of particle collision data is very high, it is important to optimally exploit the recorded data. I am convinced that this is best achieved by Open Science. This requires that the FAIR principles are not only applied to data, but also the to the whole infrastructure required for the analysis of the data, including in particular the software. I have led a task force to established an Open Source Software Policy at the international Belle II collaboration and taken care of the <a href="https://indico.jlab.org/event/459/papers/11534/files/877-PublicBelle2Software.pdf">publication of its main software</a>. I am also working on technologies that facilitate the reuse and reinterpretation of data.
 ---
 {{< include templates/_setup.qmd >}}
 {{< include templates/_contact_items.qmd >}}

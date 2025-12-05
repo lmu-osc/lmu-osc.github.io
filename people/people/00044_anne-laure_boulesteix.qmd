@@ -7,13 +7,16 @@ first_name: Anne-Laure
 position: Chair
 faculty: Medicine
 membertype: ['lmu-individual']
-email: Bernd.bischl@stat.uni-muenchen.de
+email: boulesteix@ibe.med.uni-muenchen.de
 photo: 'images/boulesteix_anne-laure.jpg'
+website:
+  - label: 'Website 1'
+    url: https://www.ibe.med.uni-muenchen.de/mitarbeiter/professoren/boulesteix/index.html
 social_media:
-  ORCID: 'https://orcid.org/0000-0000-0000-0000'
+  ORCID: 'https://orcid.org/0000-0002-2729-0947'
 mission_statement:
-  - I am professor for Computational Statistics at the Department of Statistics.
-  - I have published about proper benchmarking in machine learning and optimization. Furthermore, I am one of the founders and core members of the OpenML platform for open and reproducible machine learning (<a href="http://www.openml.org">www.openml.org</a>).
+  - I am associate professor for Computational Molecular Medicine at the Department of Medical Informatics, Biometry and Epidemiology.
+  - Since 2009, I have been initiating and conducting projects on research reproducibility, validation, reporting, fishing for significance and false research findings, publication bias, benchmarking, and neutral comparisons of statistical methods; some of these activities are funded by the German Research Foundation (DFG). I am a Chair of the "simulation panel" of the STRATOS initiative and the Associate Editor for Europe of Briefings in Bioinformatics, a journal specialized in reviews and comparison studies
 ---
 {{< include templates/_setup.qmd >}}
 {{< include templates/_contact_items.qmd >}}

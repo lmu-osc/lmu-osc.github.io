@@ -7,17 +7,14 @@ first_name: Ralf
 position: Chair
 faculty: Geosciences
 membertype: ['lmu-individual']
-email: NA
+email: r.ludwig@lmu.de
 photo: 'images/ludwig_ralf.jpg'
 social_media:
-  ORCID: 'https://orcid.org/0000-0000-0000-0000'
+  ORCID: 'https://orcid.org/0000-0002-4225-4098'
 mission_statement:
-  - Sara Lil Middleton is the Training Development Coordinator and Community Engagement Manager on the “Train-the-Trainer” programme at LMU in partnership with the Framework for Open and Reproducible Research Training (<a href="http://forrt.org">FORRT</a>).
-  - Her role involves:
-  - Before joining LMU Open Science Center, Sara Lil completed her PhD in plant biology at the University of Oxford, UK and was a student representative at Reproducible Research Oxford (RROx) and led and collaborated on several projects at FORRT. She has an interdisciplinary background where she has previously worked in science communication and outreach roles with elementary school students to graduate students
-  - Feel free to email Sara Lil at <a class="g-link-mail" href="mailto:s.middleton@lmu.de" title="Send email to: s.middleton@lmu.de">s.middleton@lmu.de</a> if you have any questions, comments or wish to connect on topics related to her role at LMU.
-  - <strong> Contact</strong>: <a class="g-link-mail" href="mailto:s.middleton@lmu.de" title="Send email to: s.middleton@lmu.de">s.middleton@lmu.de</a>
-  - <strong>working patterns</strong>: Tuesday-Friday
+  - <em><strong>Mission Statement:</strong> </em>
+  - I am professor for Applied Physical Geography and Environmental Modeling at the Department of Geography.
+  - I specialize in analyzing the impacts of climate change on water and land resources on regional scales. While I am aware of the broad acceptance of open science principles in the climate science community, I am also witnessing a considerable lack thereof in other areas of my research domain. With many years of experience in associate editing for high-level scientific journals, I am convinced that the need for research transparency, validation, code and data sharing is more necessary than ever.
 ---
 {{< include templates/_setup.qmd >}}
 {{< include templates/_contact_items.qmd >}}

@@ -7,15 +7,16 @@ first_name: Matthias
 position: Researcher
 faculty: Math, Informatics & Stats
 membertype: ['lmu-individual']
-email: hjanders@med.uni-muenchen.de
+email: matthias@stat.uni-muenchen.de
 photo: 'images/assenmacher_matthias.png'
 website:
   - label: 'Website 1'
-    url: https://www.kidney-immunology-lab-munich.de/anders-lab
+    url: https://www.slds.stat.uni-muenchen.de/people/assenmacher/
 social_media:
-  ORCID: 'https://orcid.org/0000-0000-0000-0000'
+  ORCID: 'https://orcid.org/0000-0003-2154-5774'
 mission_statement:
-  - The different aspects of Open Science are important to increase transparency and reproducibility of research. My own focus is to improve the predictive capacity of preclinical studies for the outcome of subsequent clinical trials. We develop concepts and perform preclinical randomized trials (pRCTs), in a single centre or multicenter design, to reduce the existing gap in the design of pRCTs and human RCTs.
+  - I am a postdoctoral researcher at the Chair of Statistical Learning and Data Science (Dept. of Statistics, LMU) and the NFDI Consortium for Business, Economic and Related Data (BERD@NFDI). 
+  - In my role as a lecturer, I try to convey the principles and values of open science and open data to the students. As a researcher in Machine Learning and Natural Language Processing, I stick to the open science principles by publishing data and code as well as by making my research papers open access. Being part of BERD@NFDI also means fostering open science culture, with a special focus on enabling other researchers to share their data and algorithms more easily.
 ---
 {{< include templates/_setup.qmd >}}
 {{< include templates/_contact_items.qmd >}}
