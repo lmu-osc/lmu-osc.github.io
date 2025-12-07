@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Funding Institutional Members – LMU Open Science Center</title>
+<title>Affiliate Institutional Members – LMU Open Science Center</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -240,7 +240,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Funding Institutional Members</h1>
+<h1 class="title">Affiliate Institutional Members</h1>
 </div>
 
 
@@ -276,6 +276,7 @@ body {
 .quarto-title {
   display: none !important;
 }
+
 .header-section {
   font-size: 2.6rem;
   font-weight: 700;
@@ -302,7 +303,7 @@ body {
   padding: 0.5rem;
   text-align: center;
   transition: transform 0.13s, box-shadow 0.13s;
-  height: 368px; 
+  height: 350px; 
   min-width: 200px;
   max-width: 320px;
   box-sizing: border-box;
@@ -323,9 +324,9 @@ body {
 }
 
 .member-grid-image {
-  max-width: 120px;
+  max-width: 110px;
   min-height: 80px;
-  max-height: 120px;
+  max-height: 110px;
   object-fit: contain;
   border-radius: 0;
   top-margin: 20px;
@@ -355,9 +356,9 @@ body {
   font-weight: bold;
   color: #212c2b;
   margin-bottom: 0.3rem;
-  line-height: 1;
+  line-height: 1.4;
   min-height: 2.9em;
-  max-height: 4.4em;
+  max-height: 4.2em;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -440,8 +441,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top:2rem;
   margin-bottom:auto;
-  margin-top: 2rem;
 }
 
 .description-text {
@@ -453,7 +454,28 @@ body {
   overflow: hidden;
   flex: 1 1 auto;
   width: 100%;
-  text-align:justify;
+  text-align: justify;
+}
+
+.read-more-btn {
+  margin-top: 0.5rem;
+  display: inline-block;
+  padding: 0.4em 1.1em;
+  background: var(--theme-main);
+  color: #fff !important;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none !important;
+  box-shadow: 0 2px 8px rgba(43,134,75,0.08);
+  transition: background 0.13s, box-shadow 0.13s;
+  border: none;
+  cursor: pointer;
+}
+
+.read-more-btn:hover {
+  background: #256b3e;
+  color: #fff !important;
 }
 
 hr {
@@ -465,64 +487,188 @@ hr {
   }
 
 </style>
+<script>
 
-<div class="header-section">Funding Institutional Members</div>
+const contactDiv = document.querySelector('.member-grid-faculty');
+const contactLink = document.querySelector('.contact-link');
+
+if (!contactLink || contactLink.textContent.trim() === '' || contactLink.textContent.trim() === '?') {
+    contactDiv.style.display = 'none';
+    contactLink.style.display = 'none';
+}
+
+</script>
+
+
+<div class="header-section">Affiliate Institutional Members</div>
 
 <div class="member-grid">
-    <div class="profile-link">
-        <div class="member-grid-item">
-            <img src="images/logo_origins.jpg" class="member-grid-image" alt="Cluster of Excellence">
-            <div class="member-grid-name">Cluster of Excellence: Origins</div>
-            <div class="member-grid-faculty">Contact Person: </div>
-            <a href="people/people/00083_thomas_kuhr.html" class="contact-link">Prof. Dr. Thomas Kuhr</a>
-            <div class="member-socials">
-                <a href="https://www.origins-cluster.de/en/" title="Website" target="_blank" class="social-link"><i class="fa-solid fa-globe"></i>  Website</a>
-            </div>
+<div class="profile-link">
+    <div class="member-grid-item">
+        <img src="images/bmc.jpeg" class="member-grid-image" alt="BMC">
+        <div class="member-grid-name">Biomedical Center Munich (BMC)</div>
+        <div class="member-grid-faculty">Contact Person: </div>
+        <a href="../../people/people/00123_tobias_straub.html" class="contact-link">Dr. Tobias Straub</a>
+        <div class="member-socials">
+            <a href="https://www.med.lmu.de/bmc/en/" title="Website" target="_blank" class="social-link"><i class="fa-solid fa-globe"></i>  Website</a>
         </div>
     </div>
+</div>
 
 <div class="description-container">
-  <div class="description-text">
-    The Excellence Cluster ORIGINS: "From the Origins of the Universe to the First Building Blocks of Life" is an interdisciplinary research network based in Munich and Garching. Building on the previous Excellence Cluster Universe, a very fruitful collaboration between astro-, particle- and nuclear physicists, ORIGINS is exploring the conjecture of modern cosmology that the Universe and the emergence of life have naturally unfolded from the initial conditions laid out in the Big Bang.
-  </div>
+    <div class="description-text">
+       The Biomedical Center Munich (BMC) is striving to enhance the quality and reproducibility of its research through the adoption of Open Science practices. With a focus on improving experimental design, documentation, and data management, BMC aims to adhere to FAIR principles (Findable, Accessible, Interoperable, Re-usable). Initial efforts include raising awareness among researchers, training in doctoral programs, and evaluating the effectiveness of these measures. Current activities involve participation in Responsible Research Days and integration of Open Science concepts into doctoral programs.
+    </div>
+</div>
+<hr>
+<div class="profile-link">
+    <div class="member-grid-item">
+        <img src="images/lmu_logo.jpg" class="member-grid-image" alt="LMU">
+        <div class="member-grid-name">Department of Statistics</div>
+        <div class="member-grid-faculty"></div>
+        <a href="../../people/people/00057_ralf_elsas.html" class="contact-link"></a>
+        <div class="member-socials">
+            <a href="https://www.stat.lmu.de/en/" title="Website" target="_blank" class="social-link"><i class="fa-solid fa-globe"></i>  Website</a>
+        </div>
+    </div>
+</div>
+
+<div class="description-container">
+    <div class="description-text">
+       The LMU department of statistics supports the goals of the OSC and wants to take on a leading role in fostering good research practices and promoting open science. We believe that statistics as a subject plays a major role in solving the reproducibility crisis and in working towards better, open research.
+    </div>
 </div>
 <hr>
 
 <div class="profile-link">
     <div class="member-grid-item">
-        <img src="images/synergy.jpg" class="member-grid-image" alt="Cluster of Excellence">
-        <div class="member-grid-name">Cluster of Excellence: SyNergy</div>
+        <img src="images/itg.png" class="member-grid-image" alt="BMC">
+        <div class="member-grid-name">Digital Humanities Center - IT-Gruppe Geisteswisssenschaften </div>
         <div class="member-grid-faculty">Contact Person: </div>
-        <a href="profile-martin-dichgans.html" class="contact-link">Prof. Dr. Martin Dichgans</a>
+        <a href="profile-stephan-luecke.html" class="contact-link">Dr. Stephan Lücke</a>
         <div class="member-socials">
-            <a href="https://www.synergy-munich.de/synergy" title="Website" target="_blank" class="social-link"><i class="fa-solid fa-globe"></i>  Website</a>
+            <a href="https://www.itg.uni-muenchen.de/index.html" title="Website" target="_blank" class="social-link"><i class="fa-solid fa-globe"></i>  Website</a>
         </div>
     </div>
 </div>
 
 <div class="description-container">
-  <div class="description-text">
-    The Munich Cluster for Systems Neurology (SyNergy) investigates how complex neurological diseases such as Alzheimer's disease, stroke, and multiple sclerosis develop. Using systems neurology as a new interdisciplinary approach, researchers can decipher the shared disease mechanisms of neurovascular, neurodegenerative, and neuroimmunological diseases and on this basis develop novel diagnostic and therapeutic approaches. SyNergy has expressed its commitment to promoting research transparency and reproducibility in both quantitative and qualitative research endeavors.
-  </div>
+    <div class="description-text">
+       The IT-Gruppe Geisteswissenschaften is a Digital Humanities Competence- and Datacenter. It provides IT-infrastructure, plans, organizes and implements digital research &amp; education. It also supports research data management services in cooperation with the Universitätsbibliothek (Open Access LMU und Open Data LMU). The ITG is committed to Open Access and FAIR data principles to ensure a maximum of availability, transparency, verifiability and sustainability of research software (including data, results, code)
+    </div>
+</div>
+<hr>
+<div class="profile-link">
+    <div class="member-grid-item">
+        <img src="images/lmu_logo.jpg" class="member-grid-image" alt="lmu_logo">
+        <div class="member-grid-name">Faculty of Psychology and Educational Sciences</div>
+        <div class="member-grid-faculty">Contact Person: </div>
+        <a href="../../people/people/00001_felix_schoenbrodt.html" class="contact-link">Prof. Dr. Felix Schönbrodt</a>
+        <div class="member-socials">
+            <a href="https://www.lmu.de/psyedu/en/" title="Website" target="_blank" class="social-link"><i class="fa-solid fa-globe"></i>  Website</a>
+        </div>
+    </div>
+</div>
 
+<div class="description-container">
+    <div class="description-text">
+      The fostering of research transparency and reproducibility, both in quantitative and qualitative research, is a stated goal of the Faculty of Psychology and Educational Science. We consider replicability and reproducibility of quantitative and qualitative research results as cornerstones of generalizability and reliability in science.
+    </div>
+
+</div>
+<hr>
+<div class="profile-link">
+    <div class="member-grid-item">
+        <img src="images/lmu_logo.jpg" class="member-grid-image" alt="lmu_logo">
+        <div class="member-grid-name">Faculty of Veterinary Medicine</div>
+        <div class="member-grid-faculty"></div>
+        <a href="#" class="contact-link"></a>
+        <div class="member-socials">
+            <a href="https://www.vetmed.lmu.de/en/" title="Website" target="_blank" class="social-link"><i class="fa-solid fa-globe"></i>  Website</a>
+        </div>
+    </div>
+</div>
+
+<div class="description-container">
+    <div class="description-text">
+       
+    </div>
+
+</div>
+<hr>
+<div class="profile-link">
+    <div class="member-grid-item">
+        <img src="images/lrz_logo.png" class="member-grid-image" alt="LRZ">
+        <div class="member-grid-name">Leibniz-Rechenzentrum (LRZ)</div>
+        <div class="member-grid-faculty"></div>
+        <a href="#" class="contact-link"></a>
+        <div class="member-socials">
+            <a href="https://www.lrz.de/" title="Website" target="_blank" class="social-link"><i class="fa-solid fa-globe"></i>  Website</a>
+        </div>
+    </div>
+</div>
+
+<div class="description-container">
+    <div class="description-text">
+       The Leibniz-Rechenzentrum supports the work of the LMU-OSC by providing infrastructures related to open science practices.
+    </div>
+
+</div>
+<hr>
+
+<div class="profile-link">
+    <div class="member-grid-item">
+        <img src="images/ebdc.png" class="member-grid-image" alt="BMC">
+        <div class="member-grid-name">LMU-ifo Economics &amp; Business Data Center (EBDC)</div>
+        <div class="member-grid-faculty">Contact Person: </div>
+        <a href="people/people/people/people/00131_sebastian_wichert.html" class="contact-link">Dr. Sebastian Wichert</a>
+        <div class="member-socials">
+            <a href="https://www.ifo.de/ebdc" title="Website" target="_blank" class="social-link"><i class="fa-solid fa-globe"></i>  Website</a>
+        </div>
+    </div>
+</div>
+
+<div class="description-container">
+    <div class="description-text">
+       Scientific integrity is a core principle every researcher has to live up to every day. The LMU-ifo Economics &amp; Business Data Center (EBDC), the joint research data center of the ifo Institute and the LMU Munich, supports students and researchers from Munich and beyond with this task. We, the EBDC team, offer guidance and courses on good scientific practices and research data management. In addition, researchers have the opportunity to archive their research data at EBDC and make it available for replication and secondary research projects in several ways.
+    </div>
+
+</div>
+<hr>
+<div class="profile-link">
+    <div class="member-grid-item">
+        <img src="images/lmu_logo.jpg" class="member-grid-image" alt="LMU">
+        <div class="member-grid-name">Medical Faculty</div>
+        <div class="member-grid-faculty">Contact Person: </div>
+        <a href="#" class="contact-link">Gunther Löfflmann</a>
+        <div class="member-socials">
+            <a href="https://www.med.lmu.de/en/" title="Website" target="_blank" class="social-link"><i class="fa-solid fa-globe"></i>  Website</a>
+        </div>
+    </div>
+</div>
+
+<div class="description-container">
+    <div class="description-text">
+       We are committed to the principles of good scientific practice as we consider replicability to be of utmost importance in both basic and translational research. As one of our Open Science initiatives, our Department of Radiation Oncology has established Radiation Oncology, a successful peer-reviewed Open Access journal which has already become one of the respected journals in its field (2015 journal impact factor 2.5).
+    </div>
 </div>
 <hr>
 
 <div class="profile-link">
     <div class="member-grid-item">
         <img src="images/lmu_logo.jpg" class="member-grid-image" alt="LMU">
-        <div class="member-grid-name">Department of Psychology</div>
-        <div class="member-grid-faculty">Contact Person: </div>
-        <a href="profile-felix-schonbrodt.html" class="contact-link">Prof. Dr. Felix Schönbrodt</a>
+        <div class="member-grid-name">Munich Center for Neurosciences - Brain &amp; Mind</div>
+        <div class="member-grid-faculty">Contact Person:</div>
+        <a href="https://www.gsn.uni-muenchen.de/people/management/goron/index.html" class="contact-link">Raluca Goron</a>
         <div class="member-socials">
-            <a href="https://www.lmu.de/psy/de/" title="Website" target="_blank" class="social-link"><i class="fa-solid fa-globe"></i>  Website</a>
+            <a href="https://www.gsn.uni-muenchen.de/index.html" title="Website" target="_blank" class="social-link"><i class="fa-solid fa-globe"></i>  Website</a>
         </div>
     </div>
 </div>
 
 <div class="description-container">
     <div class="description-text">
-        Psychological science has seen a substantial replication crisis in the last years, with many large scale projects failing to replicate apparently well established findings. With the goal to increase the awareness and the adoption of open science practices, in July 2015 an Open Science Committee was established at the Department Psychology. Its project on the Open Science Framework (OSF) provides different documents and presentations that are used in research and teaching.
+       The Munich Center for Neurosciences - Brain &amp; Mind (MCN-LMU) and its teaching entity - the Graduate School of Systemic Neurosciences (GSN-LMU) - aim to link local research groups from all areas of the neurosciences. Through creating an interdisciplinary network of excellent research with strong international connections, MCN and GSN provide a stimulating environment for students and faculty to produce novel formulations of current concepts and theories. Since 2005, MCN and GSN have become the hub for neuroscience research and education in the Munich area. 
     </div>
 </div>
 
@@ -530,45 +676,23 @@ hr {
 
 <div class="profile-link">
     <div class="member-grid-item">
-        <img src="images/lmu_logo.jpg" class="member-grid-image" alt="LMU">
-        <div class="member-grid-name">Faculty of Biology</div>
-        <div class="member-grid-faculty">Contact Person: </div>
-        <a href="profile-niels-dingermanse.html" class="contact-link">Prof. Dr. Niels Dingemanse</a>
+        <img src="images/ub.JPG" class="member-grid-image" alt="UB_logo">
+        <div class="member-grid-name">Universitätsbibliothek</div>
+        <div class="member-grid-faculty"></div>
+        <a href="#" class="contact-link"></a>
         <div class="member-socials">
-            <a href="https://www.bio.lmu.de/en/" title="Website" target="_blank" class="social-link"><i class="fa-solid fa-globe"></i>  Website</a>
+            <a href="https://www.ub.uni-muenchen.de/index.html" title="Website" target="_blank" class="social-link"><i class="fa-solid fa-globe"></i>  Website</a>
         </div>
     </div>
 </div>
 
 <div class="description-container">
     <div class="description-text">
-      The Faculty of Biology is committed to actively support and foster good and open research practices including preregistration of studies, sharing of data and analysis scripts, and ensuring open access to publications wherever possible. As a funding institutional member, we aim to support training and community building activities that advance robust and reproducible research at LMU.
+       The University Library supports Open Access and Open Science and offers a variety of related services for all LMU faculties.
     </div>
 </div>
 
-<hr>
-
-<div class="profile-link">
-    <div class="member-grid-item">
-        <img src="images/som.png" class="member-grid-image" alt="LMU">
-        <div class="member-grid-name">Faculty of Business Administration - Munich School of Management</div>
-        <div class="member-grid-faculty">Contact Person: </div>
-        <a href="profile-ralf-elsas.html" class="contact-link">Prof. Dr. Ralf Elsas</a>
-        <div class="member-socials">
-            <a href="https://www.som.lmu.de/en/" title="Website" target="_blank" class="social-link"><i class="fa-solid fa-globe"></i>  Website</a>
-        </div>
-    </div>
 </div>
-
-<div class="description-container">
-    <div class="description-text">
-       The LMU Munich School of Management is committed to advancing the principles of open science and research transparency. By becoming an institutional member of the LMU's Open Science Center, we aim to foster a culture of openness, collaboration, and integrity in our research community. We believe that promoting open access to data, methodologies, and findings will enhance the quality and reproducibility of research in business studies, ultimately contributing to innovative and impactful solutions for global business challenges.
-    </div>
-
-</div>
-
-</div>
-
 
 
 
@@ -974,7 +1098,7 @@ hr {
   });
   </script>
 </div> <!-- /content -->
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><ul><li><a href="https://github.com/lmu-osc/lmu-osc.github.io/edit/main/partners/funding_members.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lmu-osc/lmu-osc.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><ul><li><a href="https://github.com/lmu-osc/lmu-osc.github.io/edit/main/partners/affiliate_institutional_members.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lmu-osc/lmu-osc.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
 <footer class="osc-footer-card py-5">
   <div class="osc-footer-container">
