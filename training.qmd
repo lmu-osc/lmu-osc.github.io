@@ -1,3 +1,272 @@
 ---
 title: "Training Home"
+format: 
+  html:
+    page-layout: full
+    toc: false
+    include-in-header: 
+      - text: |
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 ---
+<style>
+
+:root {
+  --primary-color: #00883A;
+  --primary-light: rgba(43, 134, 75, 0.1);
+  --text-dark: #333333;
+  --text-light: #ffffff;
+  --card-bg: #ffffff;
+  --card-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  --transition: all 0.3s ease;
+}
+
+.quarto-title-block,
+.quarto-title {
+  display: none !important;
+}
+/*description text styles*/
+.training-overview h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--primary-color);
+  font-weight: 700;
+}
+.training-overview p{
+  font-size: 1.2rem;
+  color: #4a5568;
+  line-height: 1.85;
+  margin-top: 0.5rem;
+}
+
+.training-overview li{
+  font-size: 1.2rem;
+  color: #4a5568;
+  line-height: 1.85;
+}
+
+.training-overview a,
+.training-overview i{
+  color: var(--primary-color);
+}
+
+.training-overview ul {
+  list-style-type: square;
+}
+
+.training-overview ul li::marker {
+  color: var(--primary-color);
+}
+
+.training-card h3 {
+  color: var(--primary-color);
+  margin-top: 0;
+  margin-bottom:1.5rem;
+  font-size: 1.3rem;
+  cursor:pointer;
+  text-align:center;
+}
+
+/*cards section styling*/
+.training-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+.training-grid > div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.training-card {
+  background-color: var(--card-bg);
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: var(--card-shadow);
+  transition: transform 0.13s, box-shadow 0.13s;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+.training-card:hover {
+  transform: translateY(-5px) scale(1.025);
+  box-shadow: 0 8px 32px rgba(43,134,75,0.15);
+  border: 1px solid var(--primary-color);
+}
+
+/*first card */
+.training-content.training-one {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+.training-content.training-one .training-row {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+.training-content.training-one .training-row > div {
+  flex: 1;
+  min-width: 0;
+}
+
+.training-content.training-one .training-row .content-container,
+.training-img {
+  border: 1px solid var(--primary-color);
+  padding: 1rem;
+  border-radius: 6px;
+  background: #ffffff;
+  width: 100%;
+}
+
+.training-content.training-one .training-row .content-container img,
+.training-img img {
+  width: 100%;
+  height: auto;
+  max-height: 150px;
+  object-fit: contain;
+  margin-top: .5rem;
+}
+
+.content-container h5,
+.training-img h5 {
+  text-align: center;
+  margin: 0 0 .5rem 0;
+  font-size: 1rem;
+  color: var(--text-dark);
+}
+/*second card*/
+.training-content.training-two {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 100%; 
+}
+
+.training-content.training-two img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/*third card*/
+.training-content.training-three {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.training-content.training-three > div {
+  flex: 1;
+}
+.training-content.training-three .content-container{
+  border: 1px solid var(--primary-color);
+  padding: 1rem;
+  border-radius: 6px;
+  background: #ffffff;
+  width: 100%;
+  text-align:center;
+}
+.training-arrow{
+  text-align:center;
+  font-size:1.5rem;
+  color: var(--primary-color);
+}
+
+@media (max-width: 650px) {
+  .training-grid {
+    flex-wrap: wrap;
+    flex: 1;
+  }
+}
+
+
+
+</style>
+:::{.training-overview}
+# Training Overview
+
+Our training material can be explored in different ways:
+
+- You are a student or a researcher and know what you are looking for: search for a specific topic in our self-paced tutorial collections!
+- You are a researcher wanting to explore all research practices along the research cycle: visit our open research cycle handbook!
+- You are a student, researcher or university educator, follow or deliver our course!
+
+In addition, the material of all our lectures, workshops, symposium, and summer schools can be accessed here: [OSF](https://osf.io/zjrhu/overview) <i class="fa-solid fa-arrow-up-right-from-square fs-6"></i>
+::: 
+
+```{=html}
+<div class="training-grid"> 
+    <div class="training-card"
+      onclick="window.location.href='self-training.html';">   
+      <h3>Self-learning material by topics</h3>
+      <div class="training-content training-one">
+        <div class="training-row">
+          <div class="content-container">
+            <h5 class="fw-bold">Computational reproducibility</h5>
+            <img src="training/images/open access.svg" alt="bulb">
+          </div>
+          <div class="content-container">
+            <h5 class="fw-bold">Preregistration</h5>
+            <img src="training/images/open access.svg" alt="bulb">
+          </div>
+        </div>
+        <div class="training-row">
+          <div class="content-container">
+            <h5 class="fw-bold">Data Management
+            </h5>
+            <img src="training/images/open access.svg" alt="bulb">
+          </div>
+          <div class="training-img">
+            <h5 class="fw-bold">Computational reproducibility</h5>
+            <img src="training/images/open access.svg" alt="bulb">
+          </div>
+        </div>
+      </div>
+   </div>
+
+
+    <div class="training-card" onclick="window.location.href='open-research-cycle.html';">
+        <h3>Open research cycle</h3>
+        <div class="training-content training-two">
+            <img src="OS_cycle.png" alt="OS_cycle">
+        </div>
+    </div>      
+
+    <div class="training-card" onclick="window.location.href='train-the-trainer.html';">
+        <h3>Follow or deliver a course</h3>
+        <div class="training-content training-three">
+            <div class="content-container">
+              <h5 class="fw-bold">Open science foundations</h5>
+            </div>
+            <div class="training-arrow">
+              <i class="fa-solid fa-arrow-down"></i>
+            </div>
+            <div class="content-container">
+              <h5 class="fw-bold">Open science methods</h5>
+            </div>
+            <div class="training-arrow">
+              <i class="fa-solid fa-arrow-down"></i>
+            </div>
+            <div class="content-container">
+              <h5 class="fw-bold">Open science tools</h5>
+            </div>
+            <div class="training-arrow">
+              <i class="fa-solid fa-plus"></i>
+            </div>
+            <div class="content-container">
+              <h5 class="fw-bold">Pedagogy of teaching OS</h5>
+            </div>
+         </div>
+     </div>
+</div>
+```

@@ -58,10 +58,11 @@ website:
       # - sidebar:training
       - icon: mortarboard
         text: Training
-        menu:
-          - self-training.qmd
-          - train-the-trainer.qmd
-          - open-research-cycle.qmd
+        href: training.qmd
+#       menu:
+#         - self-training.qmd
+#         - train-the-trainer.qmd
+#         - open-research-cycle.qmd
       - href: events/index.qmd
         icon: calendar-event
         text: Events
