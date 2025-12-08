@@ -63,7 +63,6 @@ format:
   margin-top: 0;
   margin-bottom:1.5rem;
   font-size: 1.3rem;
-  cursor:pointer;
   text-align:center;
 }
 
@@ -72,7 +71,7 @@ format:
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 1.5rem;
-  margin-top: 2rem;
+  margin-top: 4rem;
 }
 .training-grid > div {
   flex: 1;
@@ -89,6 +88,7 @@ format:
   flex-direction: column;
   flex-grow: 1;
   overflow: hidden;
+  cursor:pointer;
 }
 
 .training-card:hover {
@@ -244,7 +244,7 @@ In addition, the material of all our lectures, workshops, symposium, and summer 
 
     <div class="training-card" onclick="window.location.href='train-the-trainer.html';">
         <h3>Follow or deliver a course</h3>
-        <div class="training-content training-three">
+        <div class="training-content training-three mt-4">
             <div class="content-container">
               <h5 class="fw-bold">Open science foundations</h5>
             </div>
