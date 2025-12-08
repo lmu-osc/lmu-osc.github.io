@@ -296,7 +296,6 @@ ul.task-list li input[type="checkbox"] {
   margin-top: 0;
   margin-bottom:1.5rem;
   font-size: 1.3rem;
-  cursor:pointer;
   text-align:center;
 }
 
@@ -305,7 +304,7 @@ ul.task-list li input[type="checkbox"] {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 1.5rem;
-  margin-top: 2rem;
+  margin-top: 4rem;
 }
 .training-grid > div {
   flex: 1;
@@ -322,6 +321,7 @@ ul.task-list li input[type="checkbox"] {
   flex-direction: column;
   flex-grow: 1;
   overflow: hidden;
+  cursor:pointer;
 }
 
 .training-card:hover {
@@ -473,7 +473,7 @@ ul.task-list li input[type="checkbox"] {
 
     <div class="training-card" onclick="window.location.href='train-the-trainer.html';">
         <h3 class="anchored">Follow or deliver a course</h3>
-        <div class="training-content training-three">
+        <div class="training-content training-three mt-4">
             <div class="content-container">
               <h5 class="fw-bold anchored">Open science foundations</h5>
             </div>
