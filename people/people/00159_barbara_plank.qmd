@@ -5,11 +5,7 @@ name: Barbara Plank
 surname: Plank
 first_name: Barbara
 position: Chair for AI and Computational Linguistics, Co-Director Center for Information and Language Processing (CIS), MaiNLP (Munich AI & NLP lab) Research Group Leader
-<<<<<<< HEAD
 faculty: 'Language and Literatures'
-=======
-faculty: '13 and 16 (Zweitmitglied), Center for Information and Language Processing (CIS)'
->>>>>>> 830067cfe82070e841f9f87a633ef1db61a1b67f
 membertype: ['lmu-individual']
 email: bplank@cis.lmu.de
 photo: 'images/plank_barbara.jpg'
@@ -23,10 +19,7 @@ social_media:
 mission_statement:
   - <em><strong></strong></em><em><strong>Mission Statement:</strong></em>
   - Sharing is caring! Open science is essential to drive progress, support transparency, reliability, reproducability and replicability of science. My research field is Natural Language Processing (NLP)/Computational Linguistics (CL). In NLP/CL, I strongly believe that sharing resources publicly (data, code, publications) has led to not only foster an inclusive research community, but has also contributed to lifting the field from a small research area into a central field in AI research, where the main goal is to develop inclusive language technology.
-<<<<<<< HEAD
   - Barbara Plank is affiliated with the Faculty of Language and Literatures and the Faculty of Mathematics, Informatics & Statistics, and part of the Center for Information and Language Processing (CIS)
-=======
->>>>>>> 830067cfe82070e841f9f87a633ef1db61a1b67f
 ---
 {{< include templates/_setup.qmd >}}
 {{< include templates/_contact_items.qmd >}}
