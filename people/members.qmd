@@ -18,24 +18,19 @@ listing:
 
 ---
 <style>
-a,
-i{
+.osc-members-description a,
+.osc-members-description i{
   color:#00883A;
+  text-decoration:none;
+}
+.osc-members-description i{
+  font-size:0.9rem;
+  font-weight:500;
 }
 </style>
-
-The OSC statute recognises four categories of membership:
-
-- Full members ("ordentliche Mitglieder"): University teachers of the LMU (i.e., professors and PDs).
-
-- Extraordinary members ("außerordentliche Mitglieder"): Other researchers of the LMU (e.g., post-docs and lecturers that do not fall into the first category).
-
--  Affiliate members ("assoziierte Mitglieder"): Researchers from other universities or non-university research institutes, who have a close collaboration with the LMU and who contribute to foster the goals of the OSC.
-
-- [Institutional members](../partners/institutional_members.qmd) <i class="bi bi-box-arrow-up-right"></i> ("institutionelle Mitglieder"): Research institutions of the LMU (e.g., departments, faculties), central institutions of the LMU, and non-LMU institutions which provide infrastructure or other services that facilitate the goals of the OSC.
-
-By joining the OSC, members (of any category) express that they actively support the goals of the OSC. Learn more about process of becoming an official member of the OSC here on our [join us](../about/joinus.qmd) <i class="bi bi-box-arrow-up-right"></i>page.
-
+:::{.osc-members-description}
+Our members actively support the goals of the OSC and contribute to all our activities such as training, community building, meta-research, liaison with stakeholders. [Join us](../about/joinus.qmd) <i class="bi bi-box-arrow-up-right"></i>.
+:::
 ## LMU Members
 
 ::: {#lmu-members}
