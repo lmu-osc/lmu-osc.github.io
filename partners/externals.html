@@ -85,6 +85,7 @@ ul.task-list li input[type="checkbox"] {
 </script>
 <!-- End Matomo Code -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
 
@@ -292,16 +293,13 @@ body {
   object-fit: contain; 
   opacity: 1;
 }
-
-.logo-img img:hover {
-  transform: scale(1.05);
-  transition: transform 0.3s;
-  opacity: 0.7;
+.img-forrt img{
+  width:110px;
 }
 
 .member-grid {
   display: grid;
-  grid-template-columns: 400px 710px;
+  grid-template-columns: 280px 800px;
   grid-template-rows: auto;
   gap: 1rem;
 }
@@ -309,15 +307,25 @@ body {
 .member-grid-item {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
+  background: var(--theme-card-bg);
+  border-radius: 5px;
+  box-shadow: var(--theme-card-shadow);
+  border: 1.5px solid var(--theme-border);
   padding: 0.5rem;
-  padding-left: 0;
   text-align: center;
-  cursor: pointer;
+  transition: transform 0.13s, box-shadow 0.13s;
+  height: 350px; 
+  min-width: 200px;
+  max-width: 320px;
   box-sizing: border-box;
   overflow: hidden;
 }
-
+.member-grid-item:hover {
+  transform: translateY(-5px) scale(1.025);
+  box-shadow: 0 8px 32px rgba(43,134,75,0.15);
+  border-color: var(--theme-main);
+}
 
 .profile-link {
   display: contents;
@@ -328,7 +336,7 @@ body {
 
 
 .member-grid-name {
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   font-weight: 600;
   color: var(--bs-gray-700);
   margin-bottom: 0.3rem;
@@ -342,6 +350,14 @@ body {
   overflow: hidden;
 }
 
+.member-socials {
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
 
 
 .social-link {
@@ -411,11 +427,12 @@ hr {
           <div class="profile-link">
               <div class="member-grid-item">
                   <div class="logo-img">
-                      <a href="https://reproducibilitynetwork.de/" target="_blank">
                       <img src="images/grn.png" alt="grn-logo">
-                      </a>
                   </div>
-                  <div class="member-grid-name">German Reproducibility Network</div>   
+                  <div class="member-grid-name">German Reproducibility Network</div> 
+                  <div class="member-socials">
+                      <a href="https://reproducibilitynetwork.de/" target="_blank" class="social-link">Website <i class="fa-solid fa-globe"></i></a>
+                  </div>
               </div>
           </div>
 
@@ -423,19 +440,19 @@ hr {
               <div class="description-text">
                   German Reproducibility Network (GRN), which is a multidisciplinary consortium that aims to increase transparency and trustworthiness of scientific research. The Network’s goals are to promote open research practices through training and community building, to conduct meta-research, and to work with stakeholders across the sector to ensure coordination of efforts at the national level.
               </div>
-              <a href="https://reproducibilitynetwork.de/" target="_blank" class="social-link">Learn more <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
           </div>
           <hr>
 
           <div class="profile-link">
               <div class="member-grid-item">
-                  <div class="logo-img">
-                      <a href="https://forrt.org/" target="_blank">
+                  <div class="logo-img img-forrt">
                       <img src="images/FORRT.webp" alt="forrt-logo">
-                      </a>
                   </div>
                   <div class="member-grid-name">Framework for
       Open and Reproducible Research Training</div>   
+                  <div class="member-socials">
+                    <a href="https://forrt.org/" target="_blank" class="social-link">Website <i class="fa-solid fa-globe"></i></a>
+                  </div>
               </div>
           </div>
 
@@ -443,18 +460,18 @@ hr {
               <div class="description-text">
                   In a nutshell, FORRT is a Framework for Open and Reproducible Research Training advancing research transparency, reproducibility, rigor, and ethics through pedagogical reform and meta-scientific research. 
               </div>
-              <a href="https://forrt.org/" target="_blank" class="social-link">Learn more <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
           </div>
           <hr>
           <div class="profile-link">
               <div class="member-grid-item">
                   <div class="logo-img">
-                      <a href="https://www.bitss.org/" target="_blank">
                       <img src="images/bitss.png" alt="bitss-logo" style="height:100px;">
-                      </a>
                   </div>
                   <div class="member-grid-name">Berkeley Initiative for
   Transparency in the Social Sciences</div>   
+                  <div class="member-socials">
+                    <a href="https://www.bitss.org/" target="_blank" class="social-link">Website <i class="fa-solid fa-globe"></i></a>
+                  </div>
               </div>
           </div>
 
@@ -462,17 +479,17 @@ hr {
               <div class="description-text">
                   The Berkeley Initiative for Transparency in the Social Sciences works to improve the credibility of science by advancing transparency, reproducibility, rigor, and ethics in research.
               </div>
-              <a href="https://www.bitss.org/" target="_blank" class="social-link">Learn More <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
           </div>
           <hr>
           <div class="profile-link">
               <div class="member-grid-item">
                   <div class="logo-img">
-                      <a href="https://www.mpdl.mpg.de/" target="_blank">
                       <img src="images/mpdl-logo.png" alt="mpdl-logo">
-                      </a>
                   </div>
                   <div class="member-grid-name">Max Planck Digital Library</div>   
+                  <div class="member-socials">
+                    <a href="https://www.mpdl.mpg.de/" target="_blank" class="social-link">Website <i class="fa-solid fa-globe"></i></a>
+                  </div>
               </div>
           </div>
 
@@ -480,17 +497,17 @@ hr {
               <div class="description-text">
                   Whether in educational research or astrophysics, whether in coal research or chemical ecology - digital information has become an integral part of everyday research. An article download every second, a new outgoing publication every 10 minutes. 
               </div>
-              <a href="https://www.mpdl.mpg.de/" target="_blank" class="social-link">Learn more <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
           </div>
           <hr>
           <div class="profile-link">
               <div class="member-grid-item">
                   <div class="logo-img">
-                      <a href="https://www.bihealth.org/en/translation/innovation-enabler/quest-center/mission-approaches/" target="_blank">
                       <img src="images/quest-logo.png" alt="quest-logo">
-                      </a>
                   </div>
-                  <div class="member-grid-name">Berlin Institute of Health at Charité </div>   
+                  <div class="member-grid-name">Berlin Institute of Health at Charité </div>  
+                  <div class="member-socials">
+                    <a href="https://www.bihealth.org/en/translation/innovation-enabler/quest-center/mission-approaches/" target="_blank" class="social-link">Website <i class="fa-solid fa-globe"></i></a>
+                  </div> 
               </div>
           </div>
 
@@ -498,17 +515,17 @@ hr {
               <div class="description-text">
                   We aim to overcome the roadblocks of translational medicine to foster innovation that contributes to improved healthcare. To do this, we want to make biomedical research more trustworthy, useful and ethical. 
               </div>
-              <a href="https://www.bihealth.org/en/translation/innovation-enabler/quest-center/mission-approaches/" target="_blank" class="social-link">Learn more <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
           </div>
           <hr>
           <div class="profile-link">
               <div class="member-grid-item">
                   <div class="logo-img">
-                      <a href="https://www.crs.uzh.ch/en.html" target="_blank">
                       <img src="images/crs.jpg" alt="CRS-logo">
-                      </a>
                   </div>
-                  <div class="member-grid-name">Center for Reproducible Science and Research Synthesis</div>   
+                  <div class="member-grid-name">Center for Reproducible Science and Research Synthesis</div> 
+                  <div class="member-socials">
+                    <a href="https://www.crs.uzh.ch/en.html" target="_blank" class="social-link">Website <i class="fa-solid fa-globe"></i></a>
+                  </div>  
               </div>
           </div>
 
@@ -516,17 +533,17 @@ hr {
               <div class="description-text">
                   The Center for Reproducible Science and Research Synthesis (CRS) works to advance scientific methods, practices, norms, and incentives that produce trustworthy and reproducible research. Building on this foundation of reproducible science, we develop approaches to systematically integrate reliable evidence across heterogeneous studies and research designs. 
               </div>
-              <a href="https://www.crs.uzh.ch/en.html" target="_blank" class="social-link">Learn more <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
           </div>
           <hr>
           <div class="profile-link">
               <div class="member-grid-item">
                   <div class="logo-img">
-                      <a href="https://www.cos.io/" target="_blank">
                       <img src="images/cos_stack.png" alt="COS-logo" style="height:100px;">
-                      </a>
                   </div>
-                  <div class="member-grid-name">Center for Open Science</div>   
+                  <div class="member-grid-name">Center for Open Science</div>  
+                  <div class="member-socials">
+                    <a href="https://www.cos.io/" target="_blank" class="social-link">Website <i class="fa-solid fa-globe"></i></a>
+                  </div>   
               </div>
           </div>
 
@@ -534,7 +551,6 @@ hr {
               <div class="description-text">
                   The Center for Open Science (COS) was founded in 2013 to start, scale, and sustain open research practices that will democratize access to research, improve inclusion of all stakeholders, enhance accountability to research integrity, facilitate the self-corrective process of science, expand transparency and sharing of all research content, and improve research rigor and reproducibility.
               </div>
-              <a href="https://www.cos.io/" target="_blank" class="social-link">Learn more <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
           </div>
   </div>
 </div>
