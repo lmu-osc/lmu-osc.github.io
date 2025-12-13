@@ -33,14 +33,14 @@ format:
   font-weight: 700;
 }
 .training-overview p{
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: #4a5568;
   line-height: 1.85;
   margin-top: 0.5rem;
 }
 
 .training-overview li{
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: #4a5568;
   line-height: 1.85;
 }
@@ -72,7 +72,9 @@ format:
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 1.5rem;
   margin-top:2rem;
-  padding: 1rem;
+  padding: 2rem;
+  background-color: #f9fcf9;
+  border-radius: 15px;
 }
 .training-grid > div {
   flex: 1;
@@ -90,13 +92,13 @@ format:
   flex-grow: 1;
   overflow: hidden;
   cursor:pointer;
-  border: 2px solid var(--primary-color);
+  box-shadow: var(--card-shadow);
 }
 
 .training-card:hover {
   transform: translateY(-5px) scale(1.025);
-  box-shadow: 0 8px 32px rgba(43,134,75,0.15);
   border: 2px solid var(--primary-color);
+  box-shadow: 0 8px 32px rgba(43,134,75,0.15);
 }
 
 /*first card */
@@ -158,7 +160,7 @@ format:
 }
 
 .training-content.training-two img {
-    height:330px;
+    height:320px;
     width:auto;
     object-fit: contain;
 }
