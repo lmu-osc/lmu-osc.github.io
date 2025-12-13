@@ -22,7 +22,6 @@ format:
     max-width: 1200px;
     padding: 2rem;
     width:100%;
-    background-color: #f9fcf9;
 }
 
 .quarto-title-block,
@@ -31,12 +30,11 @@ format:
 }
 
 .init-header {
-    padding: 3rem;
+    padding: 2rem;
     display: flex;
     flex-direction: column;
     width: 100%;
     margin-bottom: 1rem;
-    box-shadow: 0 3px 6px #bfc7cf6c;
     background-color: var(--osc-white);
 }
 
