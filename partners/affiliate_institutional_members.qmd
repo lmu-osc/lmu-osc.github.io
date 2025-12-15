@@ -300,7 +300,7 @@ if (!contactLink || contactLink.textContent.trim() === '' || contactLink.textCon
 
 <div class="profile-link">
     <div class="member-grid-item">
-        <img src="images/ITG.png" class="member-grid-image" alt="Logo of the Digital Humanities Center - IT-Gruppe Geisteswissenschaften">
+        <img src="images/itg.png" class="member-grid-image" alt="Logo of the Digital Humanities Center - IT-Gruppe Geisteswissenschaften">
         <div class="member-grid-name">Digital Humanities Center - IT-Gruppe Geisteswisssenschaften </div>
         <div class="member-grid-faculty">Contact Person: </div>
         <a href="https://www.itg.uni-muenchen.de/personen/luecke_stephan/index.html" class="contact-link">Dr. Stephan Lücke</a>
