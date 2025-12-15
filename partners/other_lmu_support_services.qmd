@@ -92,7 +92,6 @@ body {
   top-margin: 20px;
   margin: 0.5rem auto 0.8rem auto;
   border: none;
-  background: #d5f5e3;
   box-shadow: 0 1px 6px rgba(43,134,75,0.12);
   flex-shrink: 0;
 }
@@ -207,7 +206,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content:center;
 }
 
 .description-text {
@@ -416,7 +414,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   <div class="profile-link">
       <div class="member-grid-item">
-          <img src="images/itg.png" class="member-grid-image" alt="Logo of IT-Gruppe Geisteswissenschaften (ITG)" style="width:80px;">
+          <img src="images/ITG.png" class="member-grid-image" alt="Logo of IT-Gruppe Geisteswissenschaften (ITG)" style="width:80px;">
           <div class="member-grid-name">IT-Gruppe Geisteswissenschaften (ITG) - LMU Center for Digital Humanities</div>
               <div class="contact-person" style="display: flex; flex-direction: column; gap: 0;">
                 <p>Contact person:</p>
