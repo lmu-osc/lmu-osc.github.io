@@ -288,31 +288,25 @@ body {
 /* styling for logo*/
 .logo-img{
   padding:1rem;
+  padding-top:2rem;
   align-content: center;
 }
 .logo-img img {
   width: 100px;   
   height: auto;   
   object-fit: contain; 
-  opacity: 1;
 }
 
 .vw-logo img{
-  width: 250px;   
+  width: 170px;   
   height: auto;   
   object-fit: contain; 
-  opacity: 1;
 }
 
-.logo-img img:hover {
-  transform: scale(1.05);
-  transition: transform 0.3s;
-  opacity: 0.7;
-}
 
 .member-grid {
   display: grid;
-  grid-template-columns: 400px 710px;
+  grid-template-columns: 280px 800px;
   grid-template-rows: auto;
   gap: 1rem;
 }
@@ -320,14 +314,27 @@ body {
 .member-grid-item {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
+  background: var(--theme-card-bg);
+  border-radius: 5px;
+  box-shadow: var(--theme-card-shadow);
+  border: 1.5px solid var(--theme-border);
   padding: 0.5rem;
-  padding-left: 0;
   text-align: center;
-  cursor: pointer;
+  transition: transform 0.13s, box-shadow 0.13s;
+  height: 300px; 
+  min-width: 200px;
+  max-width: 320px;
   box-sizing: border-box;
   overflow: hidden;
 }
+
+.member-grid-item:hover {
+  transform: translateY(-5px) scale(1.025);
+  box-shadow: 0 8px 32px rgba(43,134,75,0.15);
+  border-color: var(--theme-main);
+}
+
 
 .profile-link {
   display: contents;
@@ -337,7 +344,7 @@ body {
 }
 
 .member-grid-name {
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   font-weight: 600;
   color: var(--bs-gray-700);
   margin-bottom: 0.3rem;
@@ -386,7 +393,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content:center;
 }
 
 .description-text {
@@ -402,10 +408,9 @@ body {
 
 }
 
-
 hr {
     border: 0;
-    height: 2px;
+    height: 1px;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5));
     margin: 20px 0;
     grid-column: 1 / -1; 
@@ -434,7 +439,10 @@ hr {
   cursor: default;
   color: #4a5568;
 }
-
+.funding-list .funding-amt:hover{
+  background-color: #00883b45;
+  color:white;
+}
 
 @media (max-width: 900px) {
   .member-grid {
@@ -483,7 +491,7 @@ hr {
                     <span class="funding-name fw-bolder">Frontiers LMU Excellence</span>
                     <span class="funding-date text-muted">2022 - 2024</span>
                     <span class="funding-amt z-50 border px-3 py-0 btn btn-light text-popover-foreground shadow-md fw-bolder">
-                      250K
+                      €250K
                     </span>
                   </div>
                   <span class="funding-project text-muted">Meta-Research Hub</span>
@@ -493,7 +501,7 @@ hr {
                     <span class="funding-name fw-bolder">Fund for the Promotion of Teaching </span>
                     <span class="funding-date text-muted">2022</span>
                     <span class="funding-amt z-50 border px-3 py-0 btn btn-light text-popover-foreground shadow-md fw-bolder">
-                      15K+
+                      €15K+
                     </span>
                   </div>
                   <span class="funding-project text-muted">Hybrid Open Science Summer School 2023</span>
@@ -503,7 +511,7 @@ hr {
                     <span class="funding-name fw-bolder">Central Study Grant</span>
                     <span class="funding-date text-muted">2024 - 2025</span>
                     <span class="funding-amt z-50 border px-3 py-0 btn btn-light text-popover-foreground shadow-md fw-bolder">
-                      140K+
+                      €140K+
                     </span>
                   </div>
                   <span class="funding-project text-muted">Open Hybrid Facilitated Self-paced Tutorial (Open HyFaST)</span>
@@ -529,7 +537,7 @@ hr {
                         <span class="funding-name fw-bolder">Pioneer Project – Impetus for the German Science System</span>
                         <span class="funding-date text-muted">2025 - 2027</span>
                         <span class="funding-amt z-50 border px-3 py-0 btn btn-light text-popover-foreground shadow-md fw-bolder">
-                          550K
+                          €550K
                         </span>
                     </div>
                     <span class="funding-project text-muted">
@@ -547,7 +555,7 @@ hr {
                       <img src="images/lmu_logo.jpg" alt="VW-logo">
                       </a>
                   </div>  
-                  <div class="member-grid-name">LMU Funding Institutional Member</div> 
+                  <div class="member-grid-name">LMU Funding Institutional Members</div> 
               </div>
           </div>
 
@@ -558,7 +566,7 @@ hr {
                         <span class="funding-name fw-bolder">Yearly membership fee</span>
                         <span class="funding-date text-muted">Ongoing</span>
                         <span class="funding-amt z-50 border px-3 py-0 btn btn-light text-popover-foreground shadow-md fw-bolder">
-                          10K+/year
+                          €10K+/year
                         </span>
                     </div>
                     <span class="funding-project text-muted">
@@ -587,7 +595,7 @@ hr {
                         <span class="funding-name fw-bolder">Departmental Study Grant</span>
                         <span class="funding-date text-muted">2026</span>
                         <span class="funding-amt z-50 border px-3 py-0 btn btn-light text-popover-foreground shadow-md fw-bolder">
-                         5K+
+                         €5K+
                         </span>
                     </div>
                     <span class="funding-project text-muted">
