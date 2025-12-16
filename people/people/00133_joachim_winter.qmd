@@ -9,10 +9,14 @@ faculty: Economics
 membertype: ['lmu-individual']
 email: Winter@lmu.de
 photo: 'images/winter_joachim.jpg'
+website:
+  - label: 'LMU Profile Page'
+    url: https://www.econ.lmu.de/de/personen/kontaktseite/joachim-winter-d460fdc4.html
 social_media:
   ORCID: 'https://orcid.org/0000-0003-2460-619X'
 mission_statement:
-  - I am professor for Empirical Economic Research at the Department of Economics.
+  - <em><strong></strong></em><em><strong>Mission Statement: </strong></em>
+  - In my work as Professor of Empirical Economic Research at the Department of Economics, LMU Munich, I focus on individual decision-making, health economics, and the design and analysis of household surveys. My involvement in the Center reflects my commitment to fostering open scientific inquiry that strengthens evidence-based research, enhances data integrity, and promotes collaborative knowledge exchange.
 ---
 {{< include templates/_setup.qmd >}}
 {{< include templates/_contact_items.qmd >}}
