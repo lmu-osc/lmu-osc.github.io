@@ -102,47 +102,6 @@ format:
 }
 
 /*first card */
-.training-content.training-one {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  width: 100%;
-  overflow: hidden;
-}
-
-.training-content.training-one .training-row {
-  display: flex;
-  flex-direction: row;
-  gap: 1rem;
-  width: 100%;
-  overflow: hidden;
-  align-content:center;
-}
-
-.training-content.training-one .training-row > div {
-  flex: 1;
-  min-width: 0;
-}
-
-.training-content.training-one .training-row .content-container,
-.training-img {
-  border: 1px solid var(--primary-color);
-  padding: 1rem;
-  border-radius: 6px;
-  background: #ffffff;
-  width: 100%;
-  overflow:hidden;
-}
-
-.training-content.training-one .training-row .content-container img,
-.training-img img {
-  width: 100%;
-  height: auto;
-  max-height: 150px;
-  object-fit: contain;
-  margin-top: .5rem;
-}
-
 .content-container h5,
 .training-img h5 {
   text-align: center;
@@ -150,7 +109,14 @@ format:
   font-size: 0.9rem;
   color: var(--text-dark);
 }
-/*second card*/
+.training-content.training-one {
+    display:flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow: hidden;
+    height: 100%; 
+}
+
 .training-content.training-two {
     display:flex;
     justify-content: center;
@@ -165,6 +131,11 @@ format:
     object-fit: contain;
 }
 
+.training-content.training-one img{
+    height:280px;
+    width: auto;
+    object-fit: contain;
+}
 /*third card*/
 .training-content.training-three {
   display: flex;
@@ -216,27 +187,7 @@ In addition, the material of all our lectures, workshops, symposium, and summer 
       onclick="window.location.href='self-training.html';">   
       <h3>Self-learning material by topics</h3>
       <div class="training-content training-one">
-        <div class="training-row">
-          <div class="content-container">
-            <h5 class="fw-bold">Computational reproducibility</h5>
-            <img src="training/images/open access.svg" alt="bulb">
-          </div>
-          <div class="content-container">
-            <h5 class="fw-bold">Preregistration</h5>
-            <img src="training/images/open access.svg" alt="bulb">
-          </div>
-        </div>
-        <div class="training-row">
-          <div class="content-container">
-            <h5 class="fw-bold">Data Management
-            </h5>
-            <img src="training/images/open access.svg" alt="bulb">
-          </div>
-          <div class="training-img">
-            <h5 class="fw-bold">Computational reproducibility</h5>
-            <img src="training/images/open access.svg" alt="bulb">
-          </div>
-        </div>
+          <img src="training/images/wordcloud.png" alt="wordcloud image of tutorial categories">
       </div>
    </div>
 
