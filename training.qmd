@@ -8,6 +8,7 @@ format:
       - text: |
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
           <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+          <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 ---
 <style>
 
@@ -20,7 +21,6 @@ format:
   --card-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
   --transition: all 0.3s ease;
 }
-
 .quarto-title-block,
 .quarto-title {
   display: none !important;
@@ -33,14 +33,14 @@ format:
   font-weight: 700;
 }
 .training-overview p{
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: #4a5568;
   line-height: 1.85;
   margin-top: 0.5rem;
 }
 
 .training-overview li{
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: #4a5568;
   line-height: 1.85;
 }
@@ -71,7 +71,10 @@ format:
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 1.5rem;
-  margin-top: 4rem;
+  margin-top:2rem;
+  padding: 2rem;
+  background-color: #f9fcf9;
+  border-radius: 15px;
 }
 .training-grid > div {
   flex: 1;
@@ -80,6 +83,7 @@ format:
 }
 .training-card {
   background-color: var(--card-bg);
+  height:500px;
   border-radius: 30px;
   padding: 1.5rem;
   transition: transform 0.13s, box-shadow 0.13s;
@@ -88,13 +92,13 @@ format:
   flex-grow: 1;
   overflow: hidden;
   cursor:pointer;
-  border: 2px solid var(--primary-color);
+  box-shadow: var(--card-shadow);
 }
 
 .training-card:hover {
   transform: translateY(-5px) scale(1.025);
-  box-shadow: 0 8px 32px rgba(43,134,75,0.15);
   border: 2px solid var(--primary-color);
+  box-shadow: 0 8px 32px rgba(43,134,75,0.15);
 }
 
 /*first card */
@@ -112,6 +116,7 @@ format:
   gap: 1rem;
   width: 100%;
   overflow: hidden;
+  align-content:center;
 }
 
 .training-content.training-one .training-row > div {
@@ -126,6 +131,7 @@ format:
   border-radius: 6px;
   background: #ffffff;
   width: 100%;
+  overflow:hidden;
 }
 
 .training-content.training-one .training-row .content-container img,
@@ -141,7 +147,7 @@ format:
 .training-img h5 {
   text-align: center;
   margin: 0 0 .5rem 0;
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: var(--text-dark);
 }
 /*second card*/
@@ -154,8 +160,8 @@ format:
 }
 
 .training-content.training-two img {
-    width: 100%;
-    height: 100%;
+    height:320px;
+    width:auto;
     object-fit: contain;
 }
 
@@ -238,7 +244,7 @@ In addition, the material of all our lectures, workshops, symposium, and summer 
     <div class="training-card" onclick="window.location.href='open-research-cycle.html';">
         <h3>Open research cycle</h3>
         <div class="training-content training-two">
-            <img src="OS_cycle.png" alt="OS_cycle">
+            <img src="training/images/OS-research-cycle.png" alt="OS_cycle">
         </div>
     </div>      
 

@@ -8,6 +8,7 @@ format:
       - text: |
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
           <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+          <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 ---
 
 <style>
@@ -46,23 +47,34 @@ body {
 
 .member-grid {
   display: grid;
-  grid-template-columns: 400px 710px;
+  grid-template-columns: 280px 800px;
   grid-template-rows: auto;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
 .member-grid-item {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
+  background: var(--theme-card-bg);
+  border-radius: 5px;
+  box-shadow: var(--theme-card-shadow);
+  border: 1.5px solid var(--theme-border);
   padding: 0.5rem;
-  padding-left: 0;
   text-align: center;
-  cursor: pointer;
+  transition: transform 0.13s, box-shadow 0.13s;
+  height: 350px; 
+  min-width: 200px;
+  max-width: 320px;
   box-sizing: border-box;
   overflow: hidden;
 }
 
+.member-grid-item:hover {
+  transform: translateY(-5px) scale(1.025);
+  box-shadow: 0 8px 32px rgba(43,134,75,0.15);
+  border-color: var(--theme-main);
+}
 
 .profile-link {
   display: contents;
@@ -80,7 +92,6 @@ body {
   top-margin: 20px;
   margin: 0.5rem auto 0.8rem auto;
   border: none;
-  background: #d5f5e3;
   box-shadow: 0 1px 6px rgba(43,134,75,0.12);
   flex-shrink: 0;
 }
@@ -101,8 +112,8 @@ body {
 }
 
 .member-grid-name {
-  font-size: 1.6rem;
-  font-weight: 600;
+  font-size: 1.1rem;
+  font-weight: bold;
   color: var(--bs-gray-700);
   margin-bottom: 0.3rem;
   line-height: 1.4;
@@ -166,8 +177,11 @@ body {
   text-decoration: underline;
   font-weight: 500;
 }
-
-
+.contact-person p{
+  font-size: 1rem;
+  color: #70877c;
+  margin-bottom: 0.2rem;
+}
 .contact-link:hover {
   color: #256b3e;
   text-decoration: underline;
@@ -176,7 +190,8 @@ body {
 .email-link{
   color: var(--theme-main);
   text-decoration: underline;
-  font-weight: 600;
+  font-weight: 500;
+  font-size: 0.9rem;  
 }
 
 .member-socials {
@@ -194,7 +209,7 @@ body {
 }
 
 .description-text {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: #4a5568;
   line-height: 1.8;
   margin-top: 0;
@@ -204,7 +219,13 @@ body {
   width: 100%;
   text-align: justify;
 }
+.description-text ul {
+  list-style-type: square;
+}
 
+.description-text ul li::marker {
+  color: var(--theme-main);
+}
 .read-more-btn {
   margin-top: 1rem;
   display: inline-block;
@@ -259,15 +280,18 @@ document.addEventListener('DOMContentLoaded', () => {
   <div class="header-section">Other LMU Support Services</div>
 
   <div class="member-grid">
-  <div class="profile-link" onclick="window.location='https://fdm.ub.lmu.de/services-networks/research-funding/'">
+  
+  <div class="profile-link">
       <div class="member-grid-item">
+          <img src="images/lmu_logo.jpg" class="member-grid-image" alt="Logo of LMU Munich">
           <div class="member-grid-name">Research Funding Unit</div>
-          
               <div class="contact-person" style="display: flex; flex-direction: column; gap: 0;">
-                <p class="fs-5 text-muted p-0 m-0">Contact person:</p>
+                <p>Contact person:</p>
                   <a href="mailto:florian.schreck@verwaltung.uni-muenchen.de" class="email-link pt-0"><i class="fa-solid fa-envelope"></i> Dr. Florian Schreck</a>
               </div>
-          
+              <div class="member-socials">
+                    <a href="https://fdm.ub.lmu.de/services-networks/research-funding/" target="_blank" class="social-link">Website <i class="fa-solid fa-globe"></i></a>
+              </div>
       </div>
   </div>
 
@@ -275,16 +299,19 @@ document.addEventListener('DOMContentLoaded', () => {
       <div class="description-text">
           The Research Funding Unit is here to help researchers comply to requirements of funding agencies to increase your chances of getting funded.
       </div>
-      <a href="https://fdm.ub.lmu.de/services-networks/research-funding/" target="_blank" class="social-link">Website <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
   </div>
   <hr>
 
-  <div class="profile-link" onclick="window.location='https://www.stat.lmu.de/stablab/en/'">
+  <div class="profile-link">
       <div class="member-grid-item">
+          <img src="images/stablab_logo.jpeg" class="member-grid-image" alt="Logo of StaBLab">
           <div class="member-grid-name">StaBLab: Statistical consulting unit</div>
               <div class="contact-person" style="display: flex; flex-direction: column; gap: 0;">
-                <p class="fs-5 text-muted p-0 m-0">Contact person:</p>
+                <p>Contact person:</p>
                   <a href="mailto:kontakt@stablab.stat.uni-muenchen.de"  class="email-link"><i class="fa-solid fa-envelope"></i> StaBLab team</a>
+              </div>
+              <div class="member-socials">
+                    <a href="https://www.stat.lmu.de/stablab/en/" target="_blank" class="social-link">Website <i class="fa-solid fa-globe"></i></a>
               </div>
       </div>
   </div>
@@ -298,16 +325,19 @@ document.addEventListener('DOMContentLoaded', () => {
               <li>Big Data Analyses & Machine Learning </li>
           </ul>
       </div>
-      <a href="https://www.stat.lmu.de/stablab/en/" target="_blank" class="social-link">Website <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
   </div>
   <hr>
 
-  <div class="profile-link" onclick="window.location='https://www.slds.stat.uni-muenchen.de/consulting/'">
+  <div class="profile-link">
       <div class="member-grid-item">
+          <img src="images/lmu_logo.jpg" class="member-grid-image" alt="Logo of LMU Munich">
           <div class="member-grid-name">MLCU: Machine Learning Consulting Unit</div>
               <div class="contact-person" style="display: flex; flex-direction: column; gap: 0;">
-                <p class="fs-5 text-muted p-0 m-0">Consultation request form:</p>
+                <p>Consultation request form:</p>
                   <a href="https://www.slds.stat.uni-muenchen.de/consulting/webform.html"  class="email-link">MLCU</a>
+              </div>
+              <div class="member-socials">
+                    <a href="https://www.slds.stat.uni-muenchen.de/consulting/" target="_blank" class="social-link">Website <i class="fa-solid fa-globe"></i></a>
               </div>
           
       </div>
@@ -323,15 +353,18 @@ document.addEventListener('DOMContentLoaded', () => {
               <li>support in setup and implementation of reproducible benchmark experiments (including hyperparameter optimization and benchmark evaluation)</li>
           <ul>
       </div>
-      <a href="https://www.slds.stat.uni-muenchen.de/consulting/" target="_blank" class="social-link">Website <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
   </div>
   <hr>
-  <div class="profile-link" onclick="window.location='https://www.en.ub.uni-muenchen.de/writing/research_data/index.html'">
+  <div class="profile-link">
       <div class="member-grid-item">
+          <img src="images/ub.JPG" class="member-grid-image" alt="Logo ofUniversity Library LMU">
           <div class="member-grid-name">University Library LMU - Research Data Management Information</div>
               <div class="contact-person" style="display: flex; flex-direction: column; gap: 0;">
-                <p class="fs-5 text-muted p-0 m-0">Contact person:</p>
+                <p>Contact person:</p>
                   <a href="mailto:rdm@ub.uni-muenchen.de" class="email-link"><i class="fa-solid fa-envelope"></i> RDM team</a>
+              </div>
+              <div class="member-socials">
+                    <a href="https://www.en.ub.uni-muenchen.de/writing/research_data/index.html" target="_blank" class="social-link">Website <i class="fa-solid fa-globe"></i></a>
               </div>
           
       </div>
@@ -348,16 +381,19 @@ document.addEventListener('DOMContentLoaded', () => {
               <li>how to use data repositories, including the infrastructure "Open Data LMU". </li>
           </ul>
       </div>
-      <a href="https://www.en.ub.uni-muenchen.de/writing/research_data/index.html" target="_blank" class="social-link">Website <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
   </div>
   <hr>
 
-  <div class="profile-link" onclick="window.location='https://www.en.ub.uni-muenchen.de/writing/open-access-publishing/oa-auxiliary-page/index.html'">
+  <div class="profile-link">
       <div class="member-grid-item">
+          <img src="images/ub.JPG" class="member-grid-image" alt="Logo ofUniversity Library LMU">
           <div class="member-grid-name">University Library LMU - Open Access team</div>
               <div class="contact-person" style="display: flex; flex-direction: column; gap: 0;">
-                <p class="fs-5 text-muted p-0 m-0">Contact person:</p>
+                <p>Contact person:</p>
                   <a href="mailto:open-access@ub.uni-muenchen.de" class="email-link"><i class="fa-solid fa-envelope"></i> Open Access team</a>
+              </div>
+              <div class="member-socials">
+                    <a href="https://www.en.ub.uni-muenchen.de/writing/open-access-publishing/oa-auxiliary-page/index.html" target="_blank" class="social-link">Website <i class="fa-solid fa-globe"></i></a>
               </div>
           
       </div>
@@ -373,16 +409,19 @@ document.addEventListener('DOMContentLoaded', () => {
               <li>Funds to cover article or book processing charges: Open Access publishing Fund</li>
           </ul>
       </div>
-      <a href="https://www.en.ub.uni-muenchen.de/writing/open-access-publishing/oa-auxiliary-page/index.html" target="_blank" class="social-link">Website <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
   </div>
   <hr>
 
-  <div class="profile-link" onclick="window.location='https://www.itg.uni-muenchen.de/index.html'">
+  <div class="profile-link">
       <div class="member-grid-item">
+          <img src="images/itg.png" class="member-grid-image" alt="Logo of IT-Gruppe Geisteswissenschaften (ITG)" style="width:80px;">
           <div class="member-grid-name">IT-Gruppe Geisteswissenschaften (ITG) - LMU Center for Digital Humanities</div>
               <div class="contact-person" style="display: flex; flex-direction: column; gap: 0;">
-                <p class="fs-5 text-muted p-0 m-0">Contact person:</p>
+                <p>Contact person:</p>
                   <a href="mailto:luecke@lmu.de" class="email-link"><i class="fa-solid fa-envelope"></i> Dr. Stephan Lücke</a>
+              </div>
+              <div class="member-socials">
+                    <a href="https://www.itg.uni-muenchen.de/index.html" target="_blank" class="social-link">Website <i class="fa-solid fa-globe"></i></a>
               </div>
           
       </div>
@@ -397,7 +436,6 @@ document.addEventListener('DOMContentLoaded', () => {
           </ul>
           The ITG is responsible for accompanying digital projects in the humanities, computer science, statistics and computational linguistics as well as the emerging data sciences.
       </div>
-      <a href="https://www.itg.uni-muenchen.de/index.html" target="_blank" class="social-link">Website <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
   </div>
 
 

@@ -7,6 +7,7 @@ format:
     include-in-header: 
       - text: |
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+          <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 ---
 
 <style>
@@ -208,6 +209,9 @@ body {
   width: 100%;
   text-align: justify;
 }
+.description-text a {
+color: var(--theme-main);
+}
 
 .read-more-btn {
   margin-top: 0.5rem;
@@ -259,7 +263,7 @@ if (!contactLink || contactLink.textContent.trim() === '' || contactLink.textCon
 <div class="member-grid">
 <div class="profile-link">
     <div class="member-grid-item">
-        <img src="images/bmc.jpeg" class="member-grid-image" alt="BMC">
+        <img src="images/bmc.jpeg" class="member-grid-image" alt="Logo of Biomedical Center Munich (BMC)">
         <div class="member-grid-name">Biomedical Center Munich (BMC)</div>
         <div class="member-grid-faculty">Contact Person: </div>
         <a href="../../people/people/00123_tobias_straub.html" class="contact-link">Dr. Tobias Straub</a>
@@ -277,7 +281,7 @@ if (!contactLink || contactLink.textContent.trim() === '' || contactLink.textCon
 <hr>
 <div class="profile-link">
     <div class="member-grid-item">
-        <img src="images/lmu_logo.jpg" class="member-grid-image" alt="LMU">
+        <img src="images/lmu_logo.jpg" class="member-grid-image" alt="Logo of LMU Munich">
         <div class="member-grid-name">Department of Statistics</div>
         <div class="member-grid-faculty"></div>
         <a href="../../people/people/00057_ralf_elsas.html" class="contact-link"></a>
@@ -296,10 +300,10 @@ if (!contactLink || contactLink.textContent.trim() === '' || contactLink.textCon
 
 <div class="profile-link">
     <div class="member-grid-item">
-        <img src="images/itg.png" class="member-grid-image" alt="BMC">
+        <img src="images/itg.png" class="member-grid-image" alt="Logo of the Digital Humanities Center - IT-Gruppe Geisteswissenschaften">
         <div class="member-grid-name">Digital Humanities Center - IT-Gruppe Geisteswisssenschaften </div>
         <div class="member-grid-faculty">Contact Person: </div>
-        <a href="profile-stephan-luecke.html" class="contact-link">Dr. Stephan Lücke</a>
+        <a href="https://www.itg.uni-muenchen.de/personen/luecke_stephan/index.html" class="contact-link">Dr. Stephan Lücke</a>
         <div class="member-socials">
             <a href="https://www.itg.uni-muenchen.de/index.html" title="Website" target="_blank" class="social-link"><i class="fa-solid fa-globe"></i>  Website</a>
         </div>
@@ -314,7 +318,7 @@ if (!contactLink || contactLink.textContent.trim() === '' || contactLink.textCon
 <hr>
 <div class="profile-link">
     <div class="member-grid-item">
-        <img src="images/lmu_logo.jpg" class="member-grid-image" alt="lmu_logo">
+        <img src="images/lmu_logo.jpg" class="member-grid-image" alt="Logo of LMU Munich">
         <div class="member-grid-name">Faculty of Psychology and Educational Sciences</div>
         <div class="member-grid-faculty">Contact Person: </div>
         <a href="../../people/people/00001_felix_schoenbrodt.html" class="contact-link">Prof. Dr. Felix Schönbrodt</a>
@@ -333,7 +337,7 @@ if (!contactLink || contactLink.textContent.trim() === '' || contactLink.textCon
 <hr>
 <div class="profile-link">
     <div class="member-grid-item">
-        <img src="images/lmu_logo.jpg" class="member-grid-image" alt="lmu_logo">
+        <img src="images/lmu_logo.jpg" class="member-grid-image" alt="Logo of LMU Munich">
         <div class="member-grid-name">Faculty of Veterinary Medicine</div>
         <div class="member-grid-faculty"></div>
         <a href="#" class="contact-link"></a>
@@ -352,7 +356,7 @@ if (!contactLink || contactLink.textContent.trim() === '' || contactLink.textCon
 <hr>
 <div class="profile-link">
     <div class="member-grid-item">
-        <img src="images/lrz_logo.png" class="member-grid-image" alt="LRZ">
+        <img src="images/lrz_logo.png" class="member-grid-image" alt="Logo of Leibniz-Rechenzentrum (LRZ) ">
         <div class="member-grid-name">Leibniz-Rechenzentrum (LRZ)</div>
         <div class="member-grid-faculty"></div>
         <a href="#" class="contact-link"></a>
@@ -372,10 +376,10 @@ if (!contactLink || contactLink.textContent.trim() === '' || contactLink.textCon
 
 <div class="profile-link">
     <div class="member-grid-item">
-        <img src="images/ebdc.png" class="member-grid-image" alt="BMC">
+        <img src="images/ebdc.png" class="member-grid-image" alt="Logo of LMU-ifo Economics & Business Data Center (EBDC) ">
         <div class="member-grid-name">LMU-ifo Economics & Business Data Center (EBDC)</div>
         <div class="member-grid-faculty">Contact Person: </div>
-        <a href="people/people/people/people/00131_sebastian_wichert.html" class="contact-link">Dr. Sebastian Wichert</a>
+        <a href="../../people/people/00131_sebastian_wichert.html" class="contact-link">Dr. Sebastian Wichert</a>
         <div class="member-socials">
             <a href="https://www.ifo.de/ebdc" title="Website" target="_blank" class="social-link"><i class="fa-solid fa-globe"></i>  Website</a>
         </div>
@@ -391,10 +395,10 @@ if (!contactLink || contactLink.textContent.trim() === '' || contactLink.textCon
 <hr>
 <div class="profile-link">
     <div class="member-grid-item">
-        <img src="images/lmu_logo.jpg" class="member-grid-image" alt="LMU">
-        <div class="member-grid-name">Medical Faculty</div>
-        <div class="member-grid-faculty">Contact Person: </div>
-        <a href="#" class="contact-link">Gunther Löfflmann</a>
+        <img src="images/lmu_logo.jpg" class="member-grid-image" alt="Logo of LMU Munich">
+        <div class="member-grid-name">Faculty of Medicine</div>
+        <div class="member-grid-faculty"></div>
+        <a href="#" class="contact-link"></a>
         <div class="member-socials">
             <a href="https://www.med.lmu.de/en/" title="Website" target="_blank" class="social-link"><i class="fa-solid fa-globe"></i>  Website</a>
         </div>
@@ -410,10 +414,10 @@ if (!contactLink || contactLink.textContent.trim() === '' || contactLink.textCon
 
 <div class="profile-link">
     <div class="member-grid-item">
-        <img src="images/lmu_logo.jpg" class="member-grid-image" alt="LMU">
+        <img src="images/lmu_logo.jpg" class="member-grid-image" alt="Logo of Munich Center for Neurosciences - Brain & Mind">
         <div class="member-grid-name">Munich Center for Neurosciences - Brain & Mind</div>
         <div class="member-grid-faculty">Contact Person:</div>
-        <a href="https://www.gsn.uni-muenchen.de/people/management/goron/index.html" class="contact-link">Raluca Goron</a>
+        <a href="https://www.gsn.uni-muenchen.de/people/management/gsn-team/goron/index.html" class="contact-link">Raluca Goron</a>
         <div class="member-socials">
             <a href="https://www.gsn.uni-muenchen.de/index.html" title="Website" target="_blank" class="social-link"><i class="fa-solid fa-globe"></i>  Website</a>
         </div>
@@ -432,7 +436,7 @@ if (!contactLink || contactLink.textContent.trim() === '' || contactLink.textCon
 
 <div class="profile-link">
     <div class="member-grid-item">
-        <img src="images/ub.JPG" class="member-grid-image" alt="UB_logo">
+        <img src="images/ub.JPG" class="member-grid-image" alt="Logo of Universitätsbibliothek">
         <div class="member-grid-name">Universitätsbibliothek</div>
         <div class="member-grid-faculty"></div>
         <a href="#" class="contact-link"></a>
