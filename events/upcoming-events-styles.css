@@ -33,6 +33,7 @@
   position: relative;
   box-sizing: border-box;
   border: 1px solid var(--osc-accent);
+  border-radius: 0;
   background: var(--osc-bg);
   color: var(--osc-text);
   padding: var(--card-padding);
