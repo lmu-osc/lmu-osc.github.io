@@ -10,14 +10,13 @@ membertype: ['lmu-individual']
 email: michael.ewers@med.uni-muenchen.de
 photo: 'images/ewers_michael.jpg'
 website:
-  - label: 'Website 1'
-    url: http://www.isd-muc.de
+  - label: 'LMU Profile Page'
+    url: https://www.gsn.uni-muenchen.de/people/faculty/core/ewers/index.html
 social_media:
   ORCID: 'https://orcid.org/0000-0001-5231-1714'
 mission_statement:
-  - <em><strong></strong></em><em><strong>Mission Statement: </strong></em>
   - I am professor at the Institute of Stroke and Dementia Research. My research focus centers on identifying predictive models of disease progression in Alzheimer’s disease and understanding core brain changes that underlie dementia symptoms and cognitive resilience.
-  - <br>Sharing data, replicability and transparency are of key importance for successfully advancing clinical science. I am looking forward to the collaboration with the OSC.
+  - Sharing data, replicability and transparency are of key importance for successfully advancing clinical science. I am looking forward to the collaboration with the OSC.
   -  
 ---
 {{< include templates/_setup.qmd >}}

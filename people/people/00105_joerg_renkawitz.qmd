@@ -10,15 +10,14 @@ membertype: ['lmu-individual']
 email: joerg.renkawitz@med.uni-muenchen.de
 photo: 'images/renkawitz_joerg.jpg'
 website:
-  - label: 'Website 1'
+  - label: 'Professional Website'
     url: http://www.renkawitz-lab.com
-  - label: 'Website 2'
+  - label: 'LMU Profile Page'
     url: https://cv.physiol.med.uni-muenchen.de/people/principal-investigators/renkawitz/index.html
 social_media:
   ORCID: 'https://orcid.org/0000-0003-2856-3369'
 mission_statement:
-  - <em><strong></strong></em><em><strong>Mission Statement: </strong></em>
-  - I am a Principal Investigator and Professor at the Biomedical Center (BMC; LMU Munich). <a href="http://www.renkawitz-lab.com">My research lab</a> is interested in understanding the cellular principles, molecular mechanisms and mechanobiology of the immune system. I am convinced that research transparency, research reproducibility, and research data sharing is critical for the gain of knowledge in science. As my research frequently involves live-cell microscopy, I am further interested in the development of good scientific practices in data storage and data sharing of large imaging datasets.<em> </em>
+  - I am a Principal Investigator and Professor at the Biomedical Center (BMC; LMU Munich). <a href="http://www.renkawitz-lab.com">My research lab</a> is interested in understanding the cellular principles, molecular mechanisms and mechanobiology of the immune system. I am convinced that research transparency, research reproducibility, and research data sharing is critical for the gain of knowledge in science. As my research frequently involves live-cell microscopy, I am further interested in the development of good scientific practices in data storage and data sharing of large imaging datasets.
 ---
 {{< include templates/_setup.qmd >}}
 {{< include templates/_contact_items.qmd >}}

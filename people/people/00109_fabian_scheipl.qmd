@@ -10,12 +10,11 @@ membertype: ['lmu-individual']
 email: fabian.scheipl@stat.uni-muenchen.de
 photo: 'images/scheipl_fabian.jpg'
 website:
-  - label: 'Website 1'
-    url: http://scheipl.userweb.mwn.de/
+  - label: 'LMU Profile Page'
+    url: https://www.stat.lmu.de/en/people/contact-page/fabian-scheipl-a3cef099.html
 social_media:
   ORCID: 'https://orcid.org/0000-0001-8172-3603'
 mission_statement:
-  - <em><strong></strong></em><em><strong>Mission Statement:</strong></em>
   - I am a postdoctoral researcher at the Department of Statistics.
   - I support transparency and reproducibility in statistical methodology research by serving as the reproducible research editor at Biometrical Journal and by encouraging students and collaborators to utilize the great tools for reproducible data analysis we now have at our disposal in the form of public code repositories, permanent object identifiers for data sets and figures and literate programming frameworks that combine analyses and their description within a single document.
 ---

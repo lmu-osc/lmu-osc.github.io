@@ -10,13 +10,12 @@ membertype: ['lmu-individual']
 email: antonia.misch@psy.lmu.de
 photo: 'images/misch_antonia.jpg'
 website:
-  - label: 'Website 1'
+  - label: 'LMU Profile Page'
     url: https://www.psy.lmu.de/epp/personen/assoziiertewissenschaftler/antonia_misch/index.html
 social_media:
   ORCID: 'https://orcid.org/0000-0001-9184-5006'
 mission_statement:
   - I am postdoctoral researcher in Developmental Psychology at the Department of Psychology. In my research I investigate the development of moral behavior and intergroup cognition. I try to follow the principles of Open Science as closely as possible, from preregistration to publishing of data and manuscripts
-  -  
 ---
 {{< include templates/_setup.qmd >}}
 {{< include templates/_contact_items.qmd >}}

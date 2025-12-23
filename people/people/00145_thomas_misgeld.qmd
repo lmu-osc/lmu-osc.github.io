@@ -10,13 +10,14 @@ membertype: ['associated']
 email: thomas.misgeld@tum.de
 photo: 'images/misgeld_thomas.jpg'
 website:
-  - label: 'Website 1'
+  - label: 'Professional Website'
     url: https://www.ifn.med.tum.de/new/
+  - label: 'Professional Profile Page'
+    url: https://www.professoren.tum.de/m/misgeld-thomas
 social_media:
   ORCID: 'https://orcid.org/0000-0001-9875-6794'
 mission_statement:
   - I think the scientific publishing process is in a process of transformation – and ensuring the principles of open science are equitably implemented in the system that emerges is very important. To be able to engage with like-minded groups of scientists in a discussion of how the publishing models of the future should look like, is one of the key motivations for me to join the OSC.
-  -  
 ---
 {{< include templates/_setup.qmd >}}
 {{< include templates/_contact_items.qmd >}}

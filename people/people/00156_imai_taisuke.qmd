@@ -9,13 +9,12 @@ faculty: ''
 membertype: ['alumni']
 email: taisuke.imai@econ.lmu.de
 website:
-  - label: 'Website 1'
-    url: https://www.taisukeimai.com/taisuke/app/#!/#!/
+  - label: 'Personal Website'
+    url: https://www.taisukeimai.com/
 social_media:
   ORCID: 'https://orcid.org/0000-0002-0610-8093'
 mission_statement:
-  - <em><strong></strong></em><em><strong>Mission Statement: </strong></em>
-  - <em><strong></strong></em>I am postdoctoral researcher at the Department of Economics, Seminar of Economic Theory. My main research field is microeconomic theory and behavioral economics, but I also have several projects on replication and meta-analysis.
+  - I am postdoctoral researcher at the Department of Economics, Seminar of Economic Theory. My main research field is microeconomic theory and behavioral economics, but I also have several projects on replication and meta-analysis.
 ---
 {{< include templates/_setup.qmd >}}
 {{< include templates/_contact_items.qmd >}}

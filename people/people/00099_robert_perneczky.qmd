@@ -10,12 +10,11 @@ membertype: ['lmu-individual']
 email: Robert.Perneczky@med.uni-muenchen.de
 photo: 'images/perneczky_robert.jpg'
 website:
-  - label: 'Website 1'
-    url: https://www.synergy-munich.de/members/associate-investigators/perneczky/index.html
+  - label: 'Professional Profile Page'
+    url: https://www.synergy-munich.de/about/members/5be5301b72fd3b59
 social_media:
   ORCID: 'https://orcid.org/0000-0003-1981-7435'
 mission_statement:
-  - <em><strong></strong></em><em><strong>Mission Statement: </strong></em>
   - In my work as Professor of Translational Dementia Research and Director of the Division of Mental Health in Older Adults and Alzheimer Therapy and Research Center at LMU Munich, I focus on improving our understanding of dementia through clinical and biomarker research and the development of early detection and treatment strategies. My involvement in the Center reflects my commitment to open scientific inquiry that enhances the reliability, accessibility, and societal impact of research in neurodegenerative disease and mental health.
 ---
 {{< include templates/_setup.qmd >}}

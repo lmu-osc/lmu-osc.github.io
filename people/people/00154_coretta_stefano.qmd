@@ -7,16 +7,15 @@ first_name: Stefano
 position: University of Edinburgh
 faculty: ''
 membertype: ['alumni']
-email: 
+email: s.coretta@ed.ac.uk
 photo: 'images/coretta_stefano.jpg'
 website:
-  - label: 'Website 1'
+  - label: 'Personal Website'
     url: https://stefanocoretta.github.io
 social_media:
   ORCID: 'https://orcid.org/0000-0001-9627-5532'
 mission_statement:
-  - <em><strong>Mission Statement:</strong></em>
-  - As a researcher, I wish to help increasing awareness within the Language sciences about the importance of openness, transparency, and reproducibility for ensuring replicability and accumulation of knowledge in the field. In particular, I am always on the look out for new methods that can streamline data processing and documentation, statistical models that can help us assess the degree of certainty of empirical results, and principles that can assist us in the formulation of statistical hypotheses that map more tightly to the research questions.<em> </em>
+  - As a researcher, I wish to help increasing awareness within the Language sciences about the importance of openness, transparency, and reproducibility for ensuring replicability and accumulation of knowledge in the field. In particular, I am always on the look out for new methods that can streamline data processing and documentation, statistical models that can help us assess the degree of certainty of empirical results, and principles that can assist us in the formulation of statistical hypotheses that map more tightly to the research questions.
 ---
 {{< include templates/_setup.qmd >}}
 {{< include templates/_contact_items.qmd >}}

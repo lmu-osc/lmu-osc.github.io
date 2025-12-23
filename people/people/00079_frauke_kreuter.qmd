@@ -10,10 +10,12 @@ membertype: ['lmu-individual']
 email: soda@stat.uni-muenchen.de
 photo: 'images/kreuter_frauke.jpg' 
 website:
-  - label: 'Website 1'
+  - label: 'LMU Profile Page'
     url: https://www.soda.statistik.uni-muenchen.de/people/professors/kreuter1/index.html
 social_media:
   ORCID: 'https://orcid.org/0000-0002-7339-2645'
+mission_statement:
+  - My work spans statistics, data science, and survey methodology, and I view open science as an essential foundation for credible and impactful empirical research. Through my involvement in the Center, I aim to help strengthen institutional support for open research workflows, contribute to collaborative initiatives that foster responsible data use, and promote a culture of openness within the broader scientific community.
 ---
 {{< include templates/_setup.qmd >}}
 {{< include templates/_contact_items.qmd >}}

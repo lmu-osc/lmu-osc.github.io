@@ -10,13 +10,12 @@ membertype: ['lmu-individual']
 email: Frank.Padberg@med.uni-muenchen.de
 photo: 'images/padberg_frank.jpg'
 website:
-  - label: 'Website 1'
+  - label: 'LMU Profile Page'
     url: https://www.lmu-klinikum.de/psychiatrie-und-psychotherapie/klinik-kompakt/unser-team/d1bc1ef1061c4619
 social_media:
   ORCID: 'https://orcid.org/0000-0001-7638-8310'
 mission_statement:
-  - <em><strong></strong></em><em><strong>Mission Statement: </strong></em>
-  - <em><strong><br></strong></em>I am a specialist in Psychiatry, Psychotherapy, and Neurology at the University Hospital Munich.
+  - I am a specialist in Psychiatry, Psychotherapy, and Neurology at the University Hospital Munich.
 ---
 {{< include templates/_setup.qmd >}}
 {{< include templates/_contact_items.qmd >}}

@@ -7,14 +7,15 @@ first_name: Elmar
 position: Statistical Consultant
 faculty: NA
 membertype: ['associated']
-email: elmar.spiegel@helmholtz-muenchen.de
-photo: 'images/spiegel_elmar.png'
+email: elmar.spiegel@helmholtz-munich.de
+photo: 'images/spiegel_elmar.jpg'
 website:
-  - label: 'Website 1'
-    url: https://www.helmholtz-muenchen.de/en/statistical-consulting/about-us/staff/staff/ma/7533//index.html
+  - label: 'Professional Profile Page'
+    url: https://www.helmholtz-munich.de/en/icb/research-groups/fuchs-lab/people/elmar-spiegel
 social_media:
   ORCID: 'https://orcid.org/0000-0002-5834-2383'
 mission_statement:
+  - In my work as a statistical consultant with the Core Facility Bioinformatics and Statistics at Helmholtz Munich, I focus on robust statistical methodology and practical guidance for research data integrity and reproducibility. My involvement in the Center reflects my commitment to fostering reproducible analytical standards, responsible data practices, and the broad dissemination of reliable scientific knowledge.
 ---
 {{< include templates/_setup.qmd >}}
 {{< include templates/_contact_items.qmd >}}

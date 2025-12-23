@@ -9,10 +9,12 @@ faculty: Geosciences
 membertype: ['lmu-individual']
 email: r.ludwig@lmu.de
 photo: 'images/ludwig_ralf.jpg'
+website:
+  - label: 'LMU Profile Page'
+    url: https://www.geo.lmu.de/de/fakultaet-geowissenschaften/personen/kontaktseite/ralf-ludwig-13b9822d.html
 social_media:
   ORCID: 'https://orcid.org/0000-0002-4225-4098'
 mission_statement:
-  - <em><strong>Mission Statement:</strong> </em>
   - I am professor for Applied Physical Geography and Environmental Modeling at the Department of Geography.
   - I specialize in analyzing the impacts of climate change on water and land resources on regional scales. While I am aware of the broad acceptance of open science principles in the climate science community, I am also witnessing a considerable lack thereof in other areas of my research domain. With many years of experience in associate editing for high-level scientific journals, I am convinced that the need for research transparency, validation, code and data sharing is more necessary than ever.
 ---

@@ -10,12 +10,11 @@ membertype: ['lmu-individual']
 email: ikoerte@med.lmu.de
 photo: 'images/koerte_inga.jpg'
 website:
-  - label: 'Website 1'
-    url: http://www.pediatric-neuroimaging.de
+  - label: 'Professional Profile Page'
+    url: https://pediatric-neuroimaging.de/researchers
 social_media:
   ORCID: 'https://orcid.org/0000-0003-1281-9286'
 mission_statement:
-  - <em><strong>Mission Statement</strong></em>
   - Leading and coordinating large collaborations, I learned the value of good documentation and reproducible ways of working. I aim for my lab to develop a step by step open research practice guide tailored to our research so we can onboard new members directly into an efficient and transparent workflow.
 ---
 {{< include templates/_setup.qmd >}}

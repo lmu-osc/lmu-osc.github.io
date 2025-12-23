@@ -10,12 +10,11 @@ membertype: ['lmu-individual']
 email: marko.mijic@med.uni-muenchen.de
 photo: 'images/mijic_marko.jpg'
 website:
-  - label: 'Website 1'
+  - label: 'Professional Profile Page'
     url: https://www.researchgate.net/profile/Marko-Mijic-2?ev=hdr_xprf
 social_media:
   ORCID: 'https://orcid.org/0000-0002-7064-0471'
 mission_statement:
-  - <em><strong></strong></em><em><strong>Mission Statement:</strong></em>
   - As clinician-scientist, I focus on movement disorders in patients with rare neuromuscular diseases. My current position at the Friedrich Baur Institute (FBI) allows me to expand my knowledge of planning, organising, and conducting generic and biosimilar pharmaceutical and interventional clinical studies. To gather sufficient standardised data, multiple centres must collaborate and share their data. As an enthusiastic supporter of open science, I am committed to contributing to this field. 
 ---
 {{< include templates/_setup.qmd >}}
