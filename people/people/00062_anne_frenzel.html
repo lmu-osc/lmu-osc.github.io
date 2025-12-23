@@ -41,7 +41,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-b2b68806483cdea23478439fbd4ed8ba.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-c1deeff8a959396b5451509ae9fdaed1.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -260,6 +260,10 @@ ul.task-list li input[type="checkbox"] {
 <i class="bi bi-envelope"></i>
 <a href="mailto:frenzel@psy.lmu.de">frenzel@psy.lmu.de</a>
 </div>
+<div class="contact-item">
+<i class="bi bi-globe"></i>
+<a href="https://www.lmu.de/psy/de/personen/kontaktseite/anne-c-frenzel-94f9f273.html" target="_blank">LMU Profile Page</a>
+</div>
 <div class="people-socials">
 <a href="https://orcid.org/0000-0002-9068-9926" title="ORCID" target="_blank" class="social-link">
 <i class="fa-brands fa-orcid"></i>
@@ -272,7 +276,7 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored">Mission Statement</h2>
 <p></p><p>I am professor for Psychology of Excellence in Buisness and Education at the Department of Psychology.</p>
 <p></p>
-<p></p><p>In-depth theorizing, rigorous hypothesizing, precise operationalizing, stringent analyzing, and -- only then -- wrapping our heads around what the results may mean.</p>
+<p></p><p>My area of research is educational psychology and my passion is to understand basic psychological principles through exploring their relevance in the applied field of teaching and learning. I consider the Open Science movement a wonderful opportunity to focus again on the key prerequisites of high-quality scientific inquiry- in-depth theorizing, rigorous hypothesizing, precise operationalizing, stringent analyzing, and -- only then -- wrapping our heads around what the results may mean.</p>
 <p></p>
 </div>
 <div class="people-content"></div>
@@ -356,7 +360,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/lmu-osc\.github\.io\/");
+        var filterRegex = new RegExp('/' + window.location.host + '/');
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }

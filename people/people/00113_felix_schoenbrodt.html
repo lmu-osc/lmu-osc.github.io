@@ -41,7 +41,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-b2b68806483cdea23478439fbd4ed8ba.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-c1deeff8a959396b5451509ae9fdaed1.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -260,6 +260,10 @@ ul.task-list li input[type="checkbox"] {
 <i class="bi bi-envelope"></i>
 <a href="mailto:Felix.Schoenbrodt@psy.lmu.de">Felix.Schoenbrodt@psy.lmu.de</a>
 </div>
+<div class="contact-item">
+<i class="bi bi-globe"></i>
+<a href="https://www.lmu.de/psy/de/personen/kontaktseite/felix-schoenbrodt-21fe5d01.html" target="_blank">LMU Profile Page</a>
+</div>
 <div class="people-socials">
 <a href="https://orcid.org/0000-0002-8282-3910" title="ORCID" target="_blank" class="social-link">
 <i class="fa-brands fa-orcid"></i>
@@ -270,8 +274,6 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <div class="people-mission">
 <h2 class="anchored">Mission Statement</h2>
-<p></p><p><em><strong>Mission Statement:</strong> </em></p>
-<p></p>
 <p></p><p>I am principal investigator for Psychological Methods and Assessment at the Department of Psycholgoy.</p>
 <p></p>
 <p></p><p>The reproducibility of research findings is a core criterion of science, which however, has been challenged by the failure of recent large-scale replication projects. To foster open science practices, I teamed up with colleagues and established our department's "Open Science Committee" in 2015. The outcomes of this committee include an open science paragraph which we included in all recent <a href="http://www.nicebread.de/open-science-hiring-practices/">professorship job descriptions</a>, adding transparency criteria to the department's <a href="http://www.nicebread.de/distribute-funding-based-on-research-transparency/">performance-based funding system</a>, or introducing <a href="http://www.fak11.lmu.de/dep_psychologie/studium/lehrelounge/kerncurriculum_empra/index.html">modules on preregistrations, open data, and reproducible scripts</a> as mandatory components in undergraduate courses.</p>
@@ -360,7 +362,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/lmu-osc\.github\.io\/");
+        var filterRegex = new RegExp('/' + window.location.host + '/');
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }

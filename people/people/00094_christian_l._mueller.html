@@ -41,7 +41,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-b2b68806483cdea23478439fbd4ed8ba.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-c1deeff8a959396b5451509ae9fdaed1.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -260,6 +260,10 @@ ul.task-list li input[type="checkbox"] {
 <i class="bi bi-envelope"></i>
 <a href="mailto:christian.mueller@stat.uni-muenchen.de">christian.mueller@stat.uni-muenchen.de</a>
 </div>
+<div class="contact-item">
+<i class="bi bi-globe"></i>
+<a href="https://www.stat.lmu.de/en/people/contact-page/christian-l-mueller-67b813c3.html" target="_blank">LMU Profile Page</a>
+</div>
 <div class="people-socials">
 <a href="https://orcid.org/0000-0002-3821-7083" title="ORCID" target="_blank" class="social-link">
 <i class="fa-brands fa-orcid"></i>
@@ -273,8 +277,6 @@ ul.task-list li input[type="checkbox"] {
 <p></p><p>I'm a group leader at the Institute of Computational Biology at the Helmholtz Zentrum München and a Professor for Biomedical Statistics and Data Science at the Department of Statistics.</p>
 <p></p>
 <p></p><p>I deeply care about open source software development in statistics and optimization and encourage students and collaborators to use public code repositories, open preprint servers, and permanent object identifiers for data sets for any of our research projects. In addition, I support fully reproducible open access analysis workflows accompanying any of our statistical or computational scientific articles.</p>
-<p></p>
-<p></p><p><em><strong><br></strong></em></p>
 <p></p>
 </div>
 <div class="people-content"></div>
@@ -358,7 +360,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/lmu-osc\.github\.io\/");
+        var filterRegex = new RegExp('/' + window.location.host + '/');
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
