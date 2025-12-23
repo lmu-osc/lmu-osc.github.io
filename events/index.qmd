@@ -48,11 +48,32 @@ toc-expand: 3
 toc-location: left
 page-layout: full #right
 repo-actions: false
+include-in-header:
+  - text: |
+      <script src="../assets/javascript/clear_filter_button.js" defer></script>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 ---
 <style>
+:root{
+  --theme-main: #2b864b;
+  --theme-main-dark: #246f3f;
+}
   .quarto-title-block,
 .quarto-title {
   display: none !important;
+}
+.listing-actions-group{
+  gap:3rem;
+}
+h2{
+  border:none;
+}
+.btn-primary{
+  background: var(--theme-main) !important;
+  border: 1px solid var(--theme-main) !important;
+}
+.btn-primary:hover{
+  background: var(--theme-main-dark)!important;
 }
 </style>
 ## Upcoming Events
