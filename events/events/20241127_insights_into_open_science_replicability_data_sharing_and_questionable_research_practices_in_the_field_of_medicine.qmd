@@ -4,14 +4,11 @@ format:
         table-of-contents: false
         css: event-page-styles.css
 page-layout: full
-pagetitle: 'Workshop "Navigating the Landscape of Scientific Integrity: Insights into open science, replicability, data sharing and questionable research practices in the field of medicine"'
+pagetitle: "Navigating the Landscape of Scientific Integrity: Insights into open science, replicability, data sharing and questionable research practices in the field of medicine"
 categories: 'Workshop'
 
 # Event categories
 event:
-  title: 'Workshop "Navigating the Landscape of Scientific Integrity: Insights into open science, replicability, data sharing and questionable research practices in the field of medicine"'
-  description: ""
-  categories:  'Workshop'
   date: "November 27, 2024"
   end_date: "November 27, 2024"
   time: "NA"
@@ -19,7 +16,6 @@ event:
     name: "CAS LMU, Seestraße 13, 80802 Munich"
     address: ""
     map_url: ""
-  host: "LMU Open Science Center"
   format:
     type: 'Workshop'
     detail: ""
@@ -35,22 +31,18 @@ links:
 event_description:
   - ""
 
-instructors:
-  - name: ""
-    url: ""
-
-helpers:
-  - name: ""
-
+presenters:
+  - name: "Prof. Dr. Anne-Laure Boulesteix"
+  - name: "Dr. Sabine Hoffmann"
+host:
+  - name: "Center for Advanced Studies"
 contact:
   name: ""
   email: ""
 
-organizers:
-  name: ""
 ---
 <!-- MANDAORY SECTION START  -->
-<h1 class="fs-1 text-primary"> {{< meta event.title >}} </h1>
+<h1 class="fs-1 text-primary"> {{< meta pagetitle >}} </h1>
 
 {{< include templates/_setup.qmd >}}
 {{< include templates/_info_boxes.qmd >}}

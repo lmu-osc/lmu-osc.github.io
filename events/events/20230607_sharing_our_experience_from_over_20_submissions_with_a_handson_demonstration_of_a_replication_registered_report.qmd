@@ -9,9 +9,6 @@ categories: 'Workshop'
 
 # Event categories
 event:
-  title: '"Registered Reports and Peer Community in Registered Report are the future of science: Sharing our experience from over 20 submissions, with a hands-on demonstration of a Replication Registered Report"'
-  description: ""
-  categories:  'Workshop'
   date: "June 07, 2023"
   end_date: "June 07, 2023"
   time: "13:00–15:00"
@@ -19,7 +16,6 @@ event:
     name: "Hybrid (Room 3322, Leopoldstraße 13 80802 München and via Zoom)"
     address: ""
     map_url: ""
-  host: "LMU Open Science Center"
   format:
     type: 'Workshop'
     detail: ""
@@ -50,7 +46,7 @@ organizers:
   name: ""
 ---
 <!-- MANDAORY SECTION START  -->
-<h1 class="fs-1 text-primary"> {{< meta event.title >}} </h1>
+<h1 class="fs-1 text-primary"> {{< meta pagetitle >}} </h1>
 
 {{< include templates/_setup.qmd >}}
 {{< include templates/_info_boxes.qmd >}}

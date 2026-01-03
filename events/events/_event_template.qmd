@@ -4,11 +4,12 @@ format:
         table-of-contents: false
         css: event-page-styles.css
 page-layout: full
-categories: ['Discussion', 'Hacky Hour', 'ReproducibiliTea Journal Club', 'Workshop', 'Lecture', 'Symposium', 'Conference', 'Summer School', 'Panel Discussion Series', 'Application call']
+pagetitle: "TITLE"
+# Single category (string) or multiple categories (array). While only first category shows on card (the top right label); all are displayed on actual event page.
+categories: ['Discussion', 'Hacky Hour', 'ReproducibiliTea Journal Club', 'Workshop', 'Lecture', 'Symposium', 'Conference', 'Summer School', 'Panel Discussion Series','OSIM meetup'] 
 
-# Event Information
+# Event Information 
 event:
-  title: "TITLE"
   date: "MONTH DAY, YYYY"         # e.g. "September 24, 2026"
   end_date: "MONTH DAY, YYYY"     # e.g. "September 24, 2026", non-mandatory field
   time: "START-END CET"           # e.g. "14:00 - 17:00 CET"
@@ -16,7 +17,6 @@ event:
     name: "BUILDING NAME, ROOM NAME"    # e.g. "LMU Main Building, Room 123"
     address: "ADDRESS"                  # e.g. "Ludwigstraße 25, 80539 München, Germany""
     map_url: "GOOGLE MAPS URL"          # e.g. "https://goo.gl/maps/xyz""
-  host: "LMU Open Science Center"
   format:
     type: "EVENTTYPE"               # e.g. "In-person", "Online", "Hybrid"  
     detail: "FORMATDETAILS"    # e.g. "In-person & Online", non-mandatory field
@@ -35,33 +35,45 @@ links:
 event_description: 
   - "SHORT DESCRIPTION OF THE EVENT. This will appear in the event card on the main Events page. Keep it concise and engaging to attract attendees. MAX 2-3 SENTENCES."
 
-# Add as many instructors as needed in the format below
+# Formatting for hosts, presenters, instructors, helpers, and organizers follows the same structure.
+
+# Add as many instructors, presenters, hosts, helpers, or organizers as needed using the format below.
+# The `url` field is optional for all roles.
+# If only one person is involved, include a single `- name` entry.
+# If a role does not apply to a particular event (e.g., no host or organizers), remove that entire field from the front matter.
+# Note: Order of these fields does not matter.
+
 instructors:
   - name: "INSTRUCTOR 1 NAME"
     url: "LMU OSC PROFILE OR PERSONAL WEBSITE URL"
   - name: "INSTRUCTOR 2 NAME"
     url: "LMU OSC PROFILE OR PERSONAL WEBSITE URL"
 
-
-# Add as many helpers as needed in the format below
 helpers: 
   - name: "HELPER 1 NAME"
   - name: "HELPER 2 NAME"
+
+presenters:
+  - name: "PRESENTER 1 NAME"  
+  - name: "PRESENTER 2 NAME"
+
+organizers:
+  - name: "ORGANIZER 1 NAME"
+  - name: "ORGANIZER 2 NAME"
+
+host:
+  - name: "HOST 1"
+  - name: "HOST 2"
 
 # Contact Information
 contact:
   name: "CONTACT PERSON OR GROUP NAME"
   email: "CONTACT EMAIL ADDRESS"
-
-# Organizers can be individuals or institutions
-organizers:
-  - name: "ORGANIZER 1 NAME"
-  - name: "ORGANIZER 2 NAME"
 ---
 
 <!-- MANDAORY SECTION START  -->
 
-<h1 class="fs-1 text-primary"> {{< meta event.title >}} </h1>
+<h1 class="fs-1 text-primary"> {{< meta pagetitle >}} </h1>
 
 {{< include templates/_setup.qmd >}}
 {{< include templates/_info_boxes.qmd >}}

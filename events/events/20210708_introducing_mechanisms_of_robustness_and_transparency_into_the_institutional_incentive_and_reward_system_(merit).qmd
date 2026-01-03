@@ -9,9 +9,6 @@ categories: 'Workshop'
 
 # Event categories
 event:
-  title: '"Introducing mechanisms of robustness and transparency into the institutional incentive and reward system (MERIT)"'
-  description: ""
-  categories:  'Workshop'
   date: "July 08, 2021"
   end_date: "July 08, 2021"
   time: "16:00-17:30"
@@ -19,7 +16,6 @@ event:
     name: "Online (Zoom)"
     address: ""
     map_url: ""
-  host: "LMU Open Science Center"
   format:
     type: 'Workshop'
     detail: ""
@@ -50,7 +46,7 @@ organizers:
   name: ""
 ---
 <!-- MANDAORY SECTION START  -->
-<h1 class="fs-1 text-primary"> {{< meta event.title >}} </h1>
+<h1 class="fs-1 text-primary"> {{< meta pagetitle >}} </h1>
 
 {{< include templates/_setup.qmd >}}
 {{< include templates/_info_boxes.qmd >}}

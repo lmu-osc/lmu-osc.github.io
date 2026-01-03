@@ -9,9 +9,6 @@ categories: 'Lecture'
 
 # Event categories
 event:
-  title: '"The harmonic mean chi-squared test to substantiate scientific findings"'
-  description: ""
-  categories:  'Lecture'
   date: "February 05, 2020"
   end_date: "February 05, 2020"
   time: "16:00"
@@ -19,7 +16,6 @@ event:
     name: "Luisenstraße 37, Room C006"
     address: ""
     map_url: ""
-  host: "LMU Open Science Center"
   format:
     type: 'Lecture'
     detail: ""
@@ -50,7 +46,7 @@ organizers:
   name: ""
 ---
 <!-- MANDAORY SECTION START  -->
-<h1 class="fs-1 text-primary"> {{< meta event.title >}} </h1>
+<h1 class="fs-1 text-primary"> {{< meta pagetitle >}} </h1>
 
 {{< include templates/_setup.qmd >}}
 {{< include templates/_info_boxes.qmd >}}
