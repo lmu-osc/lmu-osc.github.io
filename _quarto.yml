@@ -23,12 +23,9 @@ website:
     title: false
     background: "#2b864b"
     foreground: "#fff"
-    # logo: assets/img/osc_image_assets/TutorialCardCard.png
+    logo: assets/img/lmu_osc_logo.jpg
     collapse-below: lg
-    tools:
-      - icon: github
-        href: https://github.com/lmu-osc
-        aria-label: "GitHub"
+    tools: []
     left:
       - href: index.qmd
         icon: house-door
@@ -47,8 +44,7 @@ website:
           - people/members.qmd
           - people/fellows.qmd
           - people/alumnae.qmd
-      - text: Partners
-        icon: people
+      - text: "{{< fa regular handshake >}}&nbsp;&nbsp;Partners"
         menu:
           - partners/institutional_members.qmd
           - partners/local_os_intiatives.qmd
@@ -66,9 +62,6 @@ website:
       - href: events/index.qmd
         icon: calendar-event
         text: Events
-      - href: news.qmd
-        icon: rss
-        text: News
     right:
       - icon: search
         aria-label: "Search"
