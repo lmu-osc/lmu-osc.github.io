@@ -9,9 +9,6 @@ categories: 'Discussion'
 
 # Event categories
 event:
-  title: 'Wie robust kann/muss Wissenschaft sein?'
-  description: ""
-  categories:  'Discussion'
   date: "February 06, 2024"
   end_date: "February 06, 2024"
   time: "18:30"
@@ -19,7 +16,6 @@ event:
     name: "Bayerische Akademie der Wissenschaften, Alfons-Goppel-Str. 11 (Residenz), 80539 München"
     address: ""
     map_url: ""
-  host: "LMU Open Science Center"
   format:
     type: 'Podiumsdiskussion'
     detail: ""
@@ -50,7 +46,7 @@ organizers:
   name: ""
 ---
 <!-- MANDAORY SECTION START  -->
-<h1 class="fs-1 text-primary"> {{< meta event.title >}} </h1>
+<h1 class="fs-1 text-primary"> {{< meta pagetitle >}} </h1>
 
 {{< include templates/_setup.qmd >}}
 {{< include templates/_info_boxes.qmd >}}

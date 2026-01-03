@@ -6,7 +6,7 @@ css:
 listing:
   - id: upcoming-events
     template: upcoming-events-template.ejs
-    contents: events
+    contents: events/
     sort-ui: [title, date]
     sort: "date desc"
     filter-ui: true
@@ -34,7 +34,7 @@ listing:
     template-params:
       year: 2023
   - id: year_2022
-    contents: events/ 
+    contents: events/
     sort: "date desc"
     page-size: 999
     template: past-events-template.ejs

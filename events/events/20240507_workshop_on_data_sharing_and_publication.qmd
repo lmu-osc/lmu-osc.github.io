@@ -4,14 +4,11 @@ format:
         table-of-contents: false
         css: event-page-styles.css
 page-layout: full
-pagetitle: '"RDM for Medical and Biomedical Sciences: Workshop on Data Sharing and Publication"'
+pagetitle: 'RDM for Medical and Biomedical Sciences: Workshop on Data Sharing and Publication'
 categories: 'Workshop'
 
 # Event categories
 event:
-  title: '"RDM for Medical and Biomedical Sciences: Workshop on Data Sharing and Publication"'
-  description: ""
-  categories:  'Workshop'
   date: "May 07, 2024"
   end_date: "May 07, 2024"
   time: "14:00-16:00"
@@ -19,7 +16,7 @@ event:
     name: "Online (Zoom)"
     address: ""
     map_url: ""
-  host: "LMU Open Science Center"
+
   format:
     type: 'Workshop'
     detail: ""
@@ -50,7 +47,7 @@ organizers:
   name: ""
 ---
 <!-- MANDAORY SECTION START  -->
-<h1 class="fs-1 text-primary"> {{< meta event.title >}} </h1>
+<h1 class="fs-1 text-primary"> {{< meta pagetitle >}} </h1>
 
 {{< include templates/_setup.qmd >}}
 {{< include templates/_info_boxes.qmd >}}

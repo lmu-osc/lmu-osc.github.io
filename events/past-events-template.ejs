@@ -124,39 +124,37 @@
 
             <div class="event-labels">
               <div class="event-category listing-categories">
-                <%- (item.event.categories || 'EVENT').toUpperCase() %>
+              <%- (item.categories ? (Array.isArray(item.categories) ? item.categories[0] : item.categories) : 'EVENT').toUpperCase() %>
               </div>
 
             </div>
-            <div class="title listing-title"><%- item.event.title %></div>
+            <div class="title listing-title"><%- item.pagetitle %></div>
             <div class="separator"></div>
-            <p class="description listing-description"><%- item.event.description %></p>
+            <!--<p class="description listing-description"><%- item.event_description %></p> -->
             <div class="event-footer">
               <div class="event-host-info-group">
-                <div class="event-host-info">
-                  Hosted by: <%- item.event.host %>
-                </div>
-              </div>
-              <% if (item.links.materials){ %>
-                <div class = "trainingurl listing-training">
-                  <i class="bi bi-folder2"></i>
-                  <a href = "<%- item.links.materials %>" target="_blank">
-                    Material
-                  </a>
-                </div>
-              <% } %>
-              <% if (item.organizers && item.organizers.length > 0) { %>
-                <div class="event-organizers">
-                  <strong>Organized by:</strong>
-                  <span class="organizers-list">
-                    <%- item.organizers
-                          .map(function(org){
-                            if (!org) return '';
-                            // if the organizer is a plain string
-                            if (typeof org === 'string') return org.trim();
-                            // if organizer is an object with name/url
-                            var name = (org.name || '').toString().trim();
-                            var url  = (org.url || '').toString().trim();
+                  <%
+                    const peopleBlocks = [
+                          { label: 'Organizers', data: item.organizers, url: true },
+                          { label: 'Presenters', data: item.presenters, url: false },
+                          { label: 'Instructors', data: item.instructors, url: true },
+                          { label: 'Helpers', data: item.helpers, url: false },
+                          { label: 'Host(s)', data: item.host, url: false },
+                        ];
+                  %>
+
+                  <% peopleBlocks.forEach(function(block) { %>
+                    <% if (block.data && block.data.length > 0) { %>
+
+                      <div class="event-person-group">
+                        <span class="person-label"><%= block.label %>:</span>
+                        <span class="person-list">
+                          <%= block.data
+                            .map(function(person){
+                              if (!person) return '';
+                              if (typeof person === 'string') return person.trim();
+                              var name = (person.name || '').toString().trim();
+                              var url  = (person.url || '').toString().trim();
                             if (!name) return '';
                             if (url) {
                               // safe-ish link; you can add further sanitization if needed
@@ -168,6 +166,18 @@
                           .join(', ')
                     %>
                   </span>
+                      </div>
+
+                    <% } %>
+                  <% }) %>
+
+                </div>
+                <% if (item.links.materials){ %>
+                <div class="event-material">
+                  <div class="trainingurl listing-training">
+                    <i class="bi bi-folder2"></i>
+                    <a href="<%- item.links.materials %>" target="_blank"> Training Material</a>
+                  </div>
                 </div>
               <% } %>
             </div>

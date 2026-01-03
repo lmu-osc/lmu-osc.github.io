@@ -9,9 +9,6 @@ categories: 'Hacky Hour'
 
 # Event categories
 event:
-  title: '"Reviewing essential computing skills for reproducible workflow”'
-  description: ""
-  categories:  'Hacky Hour'
   date: "September 30, 2024"
   end_date: "September 30, 2024"
   time: "16:30-18:00"
@@ -19,7 +16,6 @@ event:
     name: "Wikipedia Munich, Angertorstraße 3"
     address: ""
     map_url: ""
-  host: "LMU Open Science Center"
   format:
     type: 'Hacky Hour'
     detail: ""
@@ -50,7 +46,7 @@ organizers:
   name: ""
 ---
 <!-- MANDAORY SECTION START  -->
-<h1 class="fs-1 text-primary"> {{< meta event.title >}} </h1>
+<h1 class="fs-1 text-primary"> {{< meta pagetitle >}} </h1>
 
 {{< include templates/_setup.qmd >}}
 {{< include templates/_info_boxes.qmd >}}

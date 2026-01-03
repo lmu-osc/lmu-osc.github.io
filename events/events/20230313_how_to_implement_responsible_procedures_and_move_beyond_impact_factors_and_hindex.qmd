@@ -9,9 +9,6 @@ categories: 'Symposium'
 
 # Event categories
 event:
-  title: '"Reforming Research Assessment: how to implement responsible procedures and move beyond impact factors and h-index?"'
-  description: ""
-  categories:  'Symposium'
   date: "March 13, 2023"
   end_date: "March 13, 2023"
   time: "14:30-16:30"
@@ -19,7 +16,6 @@ event:
     name: "Hybrid (Geschwister-Scholl-Platz 1, Munich and via Zoom)"
     address: ""
     map_url: ""
-  host: "LMU Open Science Center"
   format:
     type: 'Symposium'
     detail: ""
@@ -50,7 +46,7 @@ organizers:
   name: ""
 ---
 <!-- MANDAORY SECTION START  -->
-<h1 class="fs-1 text-primary"> {{< meta event.title >}} </h1>
+<h1 class="fs-1 text-primary"> {{< meta pagetitle >}} </h1>
 
 {{< include templates/_setup.qmd >}}
 {{< include templates/_info_boxes.qmd >}}

@@ -9,9 +9,6 @@ categories: 'Summer school'
 
 # Event categories
 event:
-  title: '5-day Open Research Summer School 2023'
-  description: ""
-  categories:  'Summer school'
   date: "March 30, 2023"
   end_date: "March 30, 2023"
   time: "NA"
@@ -19,7 +16,6 @@ event:
     name: "Hybrid (Ludwigstraße 25, Munich and via Zoom)"
     address: ""
     map_url: ""
-  host: "LMU Open Science Center"
   format:
     type: 'Summer school'
     detail: ""
@@ -50,7 +46,7 @@ organizers:
   name: ""
 ---
 <!-- MANDAORY SECTION START  -->
-<h1 class="fs-1 text-primary"> {{< meta event.title >}} </h1>
+<h1 class="fs-1 text-primary"> {{< meta pagetitle >}} </h1>
 
 {{< include templates/_setup.qmd >}}
 {{< include templates/_info_boxes.qmd >}}
