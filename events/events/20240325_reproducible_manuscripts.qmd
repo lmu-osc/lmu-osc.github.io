@@ -4,14 +4,12 @@ format:
         table-of-contents: false
         css: event-page-styles.css
 page-layout: full
-pagetitle: '"Reproducible manuscripts"'
+pagetitle: 'Reproducible manuscripts'
 categories: 'Hacky Hour'
 
 # Event categories
 event:
-  title: '"Reproducible manuscripts"'
-  description: ""
-  categories:  'Hacky Hour'
+
   date: "March 25, 2024"
   end_date: "March 25, 2024"
   time: "16:30–18:00"
@@ -19,7 +17,6 @@ event:
     name: "Wikipedia Munich, Angertorstraße 3"
     address: ""
     map_url: ""
-  host: "LMU Open Science Center"
   format:
     type: 'Hacky Hour'
     detail: ""
@@ -50,7 +47,7 @@ organizers:
   name: ""
 ---
 <!-- MANDAORY SECTION START  -->
-<h1 class="fs-1 text-primary"> {{< meta event.title >}} </h1>
+<h1 class="fs-1 text-primary"> {{< meta pagetitle >}} </h1>
 
 {{< include templates/_setup.qmd >}}
 {{< include templates/_info_boxes.qmd >}}

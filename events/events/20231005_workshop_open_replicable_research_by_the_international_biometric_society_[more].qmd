@@ -9,9 +9,6 @@ categories: 'Workshop'
 
 # Event categories
 event:
-  title: 'Open Replicable Research by the International Biometric Society'
-  description: ""
-  categories:  'Workshop'
   date: "October 05, 2023"
   end_date: "October 06, 2023"
   time: "NA"
@@ -19,7 +16,6 @@ event:
     name: "Großhadern, Butenandtstr. 5, Room B0.022"
     address: ""
     map_url: ""
-  host: "LMU Open Science Center"
   format:
     type: 'Workshop "Open Replicable Research" by the International Biometric Society [more...]'
     detail: ""
@@ -50,7 +46,7 @@ organizers:
   name: ""
 ---
 <!-- MANDAORY SECTION START  -->
-<h1 class="fs-1 text-primary"> {{< meta event.title >}} </h1>
+<h1 class="fs-1 text-primary"> {{< meta pagetitle >}} </h1>
 
 {{< include templates/_setup.qmd >}}
 {{< include templates/_info_boxes.qmd >}}

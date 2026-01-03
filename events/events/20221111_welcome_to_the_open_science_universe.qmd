@@ -9,9 +9,6 @@ categories: 'ReproducibiliTea Journal Club'
 
 # Event categories
 event:
-  title: '"Welcome to the Open Science Universe"'
-  description: ""
-  categories:  'ReproducibiliTea Journal Club'
   date: "November 11, 2022"
   end_date: "November 11, 2022"
   time: "14:30–16:00"
@@ -19,7 +16,6 @@ event:
     name: "Hybrid (Room 3322 at Leopoldstraße 13, Munich and via Zoom)"
     address: ""
     map_url: ""
-  host: "LMU Open Science Center"
   format:
     type: 'ReproducibiliTea Journal Club'
     detail: ""
@@ -50,7 +46,7 @@ organizers:
   name: ""
 ---
 <!-- MANDAORY SECTION START  -->
-<h1 class="fs-1 text-primary"> {{< meta event.title >}} </h1>
+<h1 class="fs-1 text-primary"> {{< meta pagetitle >}} </h1>
 
 {{< include templates/_setup.qmd >}}
 {{< include templates/_info_boxes.qmd >}}

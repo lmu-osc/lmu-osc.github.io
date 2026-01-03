@@ -9,9 +9,6 @@ categories: 'Lecture'
 
 # Event categories
 event:
-  title: '"Reproducible research: transparency and translational impact"'
-  description: ""
-  categories:  'Lecture'
   date: "November 04, 2019"
   end_date: "November 04, 2019"
   time: "16:00"
@@ -19,7 +16,6 @@ event:
     name: "Geschwister-Scholl-Platz 1, Room E110"
     address: ""
     map_url: ""
-  host: "LMU Open Science Center"
   format:
     type: 'Lecture'
     detail: ""
@@ -50,7 +46,7 @@ organizers:
   name: ""
 ---
 <!-- MANDAORY SECTION START  -->
-<h1 class="fs-1 text-primary"> {{< meta event.title >}} </h1>
+<h1 class="fs-1 text-primary"> {{< meta pagetitle >}} </h1>
 
 {{< include templates/_setup.qmd >}}
 {{< include templates/_info_boxes.qmd >}}

@@ -4,14 +4,11 @@ format:
         table-of-contents: false
         css: event-page-styles.css
 page-layout: full
-pagetitle: '"Helmholtz open science strategy"'
+pagetitle: 'Helmholtz open science strategy'
 categories: 'Lecture'
 
 # Event categories
 event:
-  title: '"Helmholtz open science strategy"'
-  description: ""
-  categories:  'Lecture'
   date: "July 01, 2025"
   end_date: "July 01, 2025"
   time: "16:00"
@@ -19,7 +16,6 @@ event:
     name: "Hybrid (Theresienstr. 39 and via Zoom)"
     address: ""
     map_url: ""
-  host: "LMU Open Science Center"
   format:
     type: 'Lecture'
     detail: ""
@@ -35,22 +31,18 @@ links:
 event_description:
   - ""
 
-instructors:
-  - name: ""
-    url: ""
-
-helpers:
-  - name: ""
+presenters:
+  - name: "Dr. Mathijs Vleugel"
 
 contact:
   name: ""
   email: ""
 
 organizers:
-  name: ""
+  - name: ""
 ---
 <!-- MANDAORY SECTION START  -->
-<h1 class="fs-1 text-primary"> {{< meta event.title >}} </h1>
+<h1 class="fs-1 text-primary"> {{< meta pagetitle >}} </h1>
 
 {{< include templates/_setup.qmd >}}
 {{< include templates/_info_boxes.qmd >}}

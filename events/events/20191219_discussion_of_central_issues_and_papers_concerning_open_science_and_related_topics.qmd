@@ -9,9 +9,6 @@ categories: 'ReproducibiliTea Journal Club'
 
 # Event categories
 event:
-  title: '"Discussion of central issues and papers concerning Open Science and related topics"'
-  description: ""
-  categories:  'ReproducibiliTea Journal Club'
   date: "December 19, 2019"
   end_date: "December 19, 2019"
   time: "12:30"
@@ -19,7 +16,6 @@ event:
     name: "Leopoldstr. 13, Room 1407"
     address: ""
     map_url: ""
-  host: "LMU Open Science Center"
   format:
     type: 'ReproducibiliTea Journal Club'
     detail: ""
@@ -50,7 +46,7 @@ organizers:
   name: ""
 ---
 <!-- MANDAORY SECTION START  -->
-<h1 class="fs-1 text-primary"> {{< meta event.title >}} </h1>
+<h1 class="fs-1 text-primary"> {{< meta pagetitle >}} </h1>
 
 {{< include templates/_setup.qmd >}}
 {{< include templates/_info_boxes.qmd >}}

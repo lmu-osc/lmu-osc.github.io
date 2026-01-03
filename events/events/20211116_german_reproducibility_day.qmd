@@ -9,9 +9,6 @@ categories: ''
 
 # Event categories
 event:
-  title: 'German Reproducibility Day'
-  description: ""
-  categories:  ''
   date: "November 16, 2021"
   end_date: "November 16, 2021"
   time: "13:00-17:00"
@@ -19,7 +16,6 @@ event:
     name: "Online (Zoom)"
     address: ""
     map_url: ""
-  host: "LMU Open Science Center"
   format:
     type: 'German Reproducibility Day by the German Reproducibility Network (GRN) [more...]'
     detail: ""
@@ -50,7 +46,7 @@ organizers:
   name: ""
 ---
 <!-- MANDAORY SECTION START  -->
-<h1 class="fs-1 text-primary"> {{< meta event.title >}} </h1>
+<h1 class="fs-1 text-primary"> {{< meta pagetitle >}} </h1>
 
 {{< include templates/_setup.qmd >}}
 {{< include templates/_info_boxes.qmd >}}
