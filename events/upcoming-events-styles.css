@@ -87,10 +87,12 @@
 }
 
 .osc-upcoming-events .divider{ width:2px; background:#9d9e9c; align-self:stretch; margin:.3rem .1rem; }
+.osc-upcoming-events .card:hover .event-time-loc {
+  color: #fff;
+}
 
-.osc-upcoming-events .card:hover .event-time-loc,
-.osc-upcoming-events .card:hover .divider{
-  color: #fff !important;
+.osc-upcoming-events .card:hover .event-time-loc .divider {
+  background: #fff;
 }
 
 

@@ -311,14 +311,13 @@
     .event-host-info{
       white-space: normal;
       word-break: break-word;       
-}
+    }
   
 
     .card:hover .event-host-info,
     .card:hover .description {
       color: white;
     }
-    
   
     .page-link.active,
     .active > .page-link {
