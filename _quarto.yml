@@ -44,7 +44,8 @@ website:
           - people/members.qmd
           - people/fellows.qmd
           - people/alumnae.qmd
-      - text: "{{< fa regular handshake >}}&nbsp;&nbsp;Partners"
+      - text: Partners
+        icon: handshake
         menu:
           - partners/institutional_members.qmd
           - partners/local_os_intiatives.qmd
@@ -105,6 +106,7 @@ format:
       - lmu-osc-custom.scss
     css: 
       - https://raw.githubusercontent.com/lmu-osc/branding-resources/refs/heads/main/styles.css
+      - assets/fontawesome-free-7.1.0-web/css/all.min.css
       - custom-navbar.css
       - styles.css
       - footer/footer-style.css
