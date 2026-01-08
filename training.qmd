@@ -4,9 +4,7 @@ format:
   html:
     page-layout: full
     toc: false
-    include-in-header: 
-      - text: |
-          <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
 ---
 <style>
 
@@ -176,7 +174,7 @@ Our training material can be explored in different ways:
 - You are a researcher wanting to explore all research practices along the research cycle: visit our open research cycle handbook!
 - You are a student, researcher or university educator, follow or deliver our course!
 
-In addition, the material of all our lectures, workshops, symposium, and summer schools can be accessed here: [OSF](https://osf.io/zjrhu/overview) <i class="fa-solid fa-arrow-up-right-from-square fs-6"></i>
+In addition, the material of all our lectures, workshops, symposium, and summer schools can be accessed here: <a href="https://osf.io/zjrhu/overview" target="_blank" rel="noopener"> OSF <i class="fa-solid fa-arrow-up-right-from-square fs-6"></i></a>
 ::: 
 
 ```{=html}
