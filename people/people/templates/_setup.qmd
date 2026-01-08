@@ -41,4 +41,19 @@ icon_map <- list(
   "instagram" = "fa-brands fa-instagram",
   "facebook" = "fa-brands fa-facebook"
 )
+
+
+
+# Order list items where required
+order_strings <- function(x, known_order) {
+  # Sorts x according to known_order, unknown items go to the end in their original order
+  idx <- match(x, known_order)
+  key <- ifelse(is.na(idx), length(known_order) + 1, idx)
+  as.list(x[order(key, seq_along(x))])
+}
+
+# Order social media links
+site_priorty <- c("LMU Profile", "Professional Profile", "Personal Website", "Professional Website")
+website <- order_strings(website, site_priorty)
+
 ```
