@@ -96,6 +96,7 @@
 }
 
 
+
 .osc-upcoming-events .title{
   font-weight: 600;
   font-size: 1.2rem;
@@ -114,7 +115,7 @@
   font-size:.9rem;
   color:#444;
   display:-webkit-box;
-  -webkit-line-clamp:2;
+  -webkit-line-clamp:3;
   -webkit-box-orient:vertical;
   overflow:hidden;
   text-overflow:ellipsis;

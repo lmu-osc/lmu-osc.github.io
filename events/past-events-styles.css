@@ -26,10 +26,6 @@
   gap:1rem;
   align-items:stretch;
 }
-.osc-past-events .card-content-wrapper{
-  display:flex;
-  flex-direction:column;
-}
 
 .osc-past-events .card{
   box-sizing:border-box;
@@ -37,6 +33,7 @@
   border:1px solid #bdbdbd;
   background:var(--osc-bg);
   color:var(--osc-text);
+  min-height:200px;
   flex:1 1 100%;
   display:flex;
   flex-direction:column;
@@ -71,46 +68,8 @@
   text-overflow:ellipsis;
 }
 
-.osc-past-events .event-footer{
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;   
-  margin-top: 0;
-  padding-top: 0.3rem;
-}
 
-.osc-past-events .event-host-info-group {
-  display: flex;
-  flex-direction: column;
-  gap: 0.4em;
-  flex: 1 1 auto;
-  align-items: flex-start;
-}
-
-.osc-past-events .event-material {
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
-  flex-shrink: 0;
-}
-
-.osc-past-events .event-person-group{
-  display: flex;
-  align-items: baseline;
-  gap: 0.3em;
-  font-size: 0.86rem;
-  color: #646463;
-  flex-wrap: wrap;
-  margin-left: 0;
-}
-.osc-past-events .event-person-group a{
-  color: inherit;
-  text-decoration: none;
-}
-
-.osc-past-events .card:hover .event-person-group{
-  color: white;
-}
+.osc-past-events .event-footer{ display:flex; align-items:center; gap:.5rem; margin-top:auto; padding-top:.2rem; }
 
 /*material button section */
 .osc-past-events .trainingurl{
@@ -135,8 +94,9 @@
   font-size: 0.8rem;
   text-decoration: none;
 }
-.osc-past-events .card:hover .trainingurl{
+.osc-past-events .card:hover .trainingurl a{
   color:var(--osc-accent);
+  text-decoration: underline;
 }
 
 .osc-past-events .event-category{
@@ -191,7 +151,7 @@
       box-sizing: border-box;
       padding: 1.2em;
       flex: 1 1 100%;
-      /*min-height: 200px;*/
+      min-height: 200px;
       line-height: 1.6;
       border-color: 1px #b3b4b2;
     }
