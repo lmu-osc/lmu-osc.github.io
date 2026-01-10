@@ -9,6 +9,9 @@ categories: 'Summer school'
 
 # Event categories
 event:
+  title: '3-day crash course in Open Science'
+  description: ""
+  categories:  'Summer school'
   date: "June 22, 2022"
   end_date: "June 22, 2022"
   time: "9:30-16:30"
@@ -16,6 +19,7 @@ event:
     name: "Planegg-Martinsried, Munich"
     address: ""
     map_url: ""
+  host: "LMU Open Science Center"
   format:
     type: 'Summer school'
     detail: ""
@@ -46,7 +50,7 @@ organizers:
   name: ""
 ---
 <!-- MANDAORY SECTION START  -->
-<h1 class="fs-1 text-primary"> {{< meta pagetitle >}} </h1>
+<h1 class="fs-1 text-primary"> {{< meta event.title >}} </h1>
 
 {{< include templates/_setup.qmd >}}
 {{< include templates/_info_boxes.qmd >}}

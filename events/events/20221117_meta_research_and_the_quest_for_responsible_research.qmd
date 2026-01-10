@@ -9,6 +9,9 @@ categories: 'Lecture'
 
 # Event categories
 event:
+  title: 'Seminar: "Meta Research and the QUEST for responsible research"'
+  description: ""
+  categories:  'Lecture'
   date: "November 17, 2022"
   end_date: "November 17, 2022"
   time: "16:00-17:00"
@@ -16,6 +19,7 @@ event:
     name: "Hybrid (Geschwister-Scholl-Platz 1, room M-001, Munich and via Zoom)"
     address: ""
     map_url: ""
+  host: "LMU Open Science Center"
   format:
     type: 'Lecture'
     detail: ""
@@ -46,7 +50,7 @@ organizers:
   name: ""
 ---
 <!-- MANDAORY SECTION START  -->
-<h1 class="fs-1 text-primary"> {{< meta pagetitle >}} </h1>
+<h1 class="fs-1 text-primary"> {{< meta event.title >}} </h1>
 
 {{< include templates/_setup.qmd >}}
 {{< include templates/_info_boxes.qmd >}}

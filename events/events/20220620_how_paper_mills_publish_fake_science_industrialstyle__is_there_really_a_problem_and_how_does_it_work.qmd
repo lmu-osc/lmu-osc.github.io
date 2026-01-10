@@ -9,6 +9,9 @@ categories: 'Symposium'
 
 # Event categories
 event:
+  title: 'How paper mills publish fake science industrial-style - is there really a problem and how does it work?'
+  description: ""
+  categories:  'Symposium'
   date: "June 20, 2022"
   end_date: "June 20, 2022"
   time: "16:00–18:00"
@@ -16,6 +19,7 @@ event:
     name: "Hybrid (Luisenstraße 37, Munich and via Zoom)"
     address: ""
     map_url: ""
+  host: "LMU Open Science Center"
   format:
     type: 'Symposium'
     detail: ""
@@ -46,7 +50,7 @@ organizers:
   name: ""
 ---
 <!-- MANDAORY SECTION START  -->
-<h1 class="fs-1 text-primary"> {{< meta pagetitle >}} </h1>
+<h1 class="fs-1 text-primary"> {{< meta event.title >}} </h1>
 
 {{< include templates/_setup.qmd >}}
 {{< include templates/_info_boxes.qmd >}}

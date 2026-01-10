@@ -9,6 +9,9 @@ categories: 'Hackathon'
 
 # Event categories
 event:
+  title: 'Data Under Threat — Join the Data Rescue Hackathon'
+  description: ""
+  categories:  'Hackathon'
   date: "August 07, 2025"
   end_date: "August 07, 2025"
   time: "16:00-19:00"
@@ -16,6 +19,7 @@ event:
     name: "Leopoldstr. 13"
     address: ""
     map_url: ""
+  host: "LMU Open Science Center"
   format:
     type: 'Hackathon'
     detail: ""
@@ -30,8 +34,7 @@ links:
 
 event_description:
   - ""
-host:
-  - name: ""
+
 instructors:
   - name: ""
     url: ""
@@ -47,7 +50,7 @@ organizers:
   name: ""
 ---
 <!-- MANDAORY SECTION START  -->
-<h1 class="fs-1 text-primary"> {{< meta pagetitle >}} </h1>
+<h1 class="fs-1 text-primary"> {{< meta event.title >}} </h1>
 
 {{< include templates/_setup.qmd >}}
 {{< include templates/_info_boxes.qmd >}}

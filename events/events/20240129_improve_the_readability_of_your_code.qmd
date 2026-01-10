@@ -4,11 +4,14 @@ format:
         table-of-contents: false
         css: event-page-styles.css
 page-layout: full
-pagetitle: 'Improve the readability of your code'
+pagetitle: '"Improve the readability of your code"'
 categories: 'Hacky Hour'
 
 # Event categories
 event:
+  title: '"Improve the readability of your code"'
+  description: ""
+  categories:  'Hacky Hour'
   date: "January 29, 2024"
   end_date: "January 29, 2024"
   time: "16:30–18:00"
@@ -16,6 +19,7 @@ event:
     name: "Wikipedia Munich, Angertorstraße 3"
     address: ""
     map_url: ""
+  host: "LMU Open Science Center"
   format:
     type: 'Hacky Hour'
     detail: ""
@@ -46,7 +50,7 @@ organizers:
   name: ""
 ---
 <!-- MANDAORY SECTION START  -->
-<h1 class="fs-1 text-primary"> {{< meta pagetitle >}} </h1>
+<h1 class="fs-1 text-primary"> {{< meta event.title >}} </h1>
 
 {{< include templates/_setup.qmd >}}
 {{< include templates/_info_boxes.qmd >}}

@@ -9,6 +9,9 @@ categories: 'Workshop'
 
 # Event categories
 event:
+  title: '"Wissenschaftliches Arbeiten in der Medizin"'
+  description: ""
+  categories:  'Workshop'
   date: "April 01, 2019"
   end_date: "April 01, 2019"
   time: "11:00–17:00"
@@ -16,6 +19,7 @@ event:
     name: "HörsaaltraktKlinikum Großhadern"
     address: ""
     map_url: ""
+  host: "LMU Open Science Center"
   format:
     type: 'Workshop'
     detail: ""
@@ -46,7 +50,7 @@ organizers:
   name: ""
 ---
 <!-- MANDAORY SECTION START  -->
-<h1 class="fs-1 text-primary"> {{< meta pagetitle >}} </h1>
+<h1 class="fs-1 text-primary"> {{< meta event.title >}} </h1>
 
 {{< include templates/_setup.qmd >}}
 {{< include templates/_info_boxes.qmd >}}
