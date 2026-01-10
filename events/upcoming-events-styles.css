@@ -96,7 +96,6 @@
 }
 
 
-
 .osc-upcoming-events .title{
   font-weight: 600;
   font-size: 1.2rem;
@@ -115,7 +114,7 @@
   font-size:.9rem;
   color:#444;
   display:-webkit-box;
-  -webkit-line-clamp:3;
+  -webkit-line-clamp:2;
   -webkit-box-orient:vertical;
   overflow:hidden;
   text-overflow:ellipsis;
@@ -158,6 +157,17 @@
 .osc-upcoming-events .card:hover .event-person-group{
   color: white;
 }
+  
+.osc-upcoming-events .event-contact-info{
+  font-size:.86rem;
+  color: var(--osc-muted); 
+  display: flex;           
+  align-items: center;     
+  gap: 0.25rem;            
+
+}
+
+
 .osc-upcoming-events .event-contact-info{
   font-size:.86rem;
   color: var(--osc-muted);
@@ -170,10 +180,12 @@
   display: flex;           
   align-items: center;     
   gap: 0.25rem;            
+  gap: 0.25rem;            
 }
 
 .osc-upcoming-events .event-contact-info a ,
 .osc-upcoming-events .event-contact-info i { 
+
   color: var(--osc-accent); 
   text-decoration: underline; 
   font-size: .8rem; 
