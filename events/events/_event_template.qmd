@@ -16,7 +16,6 @@ event:
     name: "BUILDING NAME, ROOM NAME"    # e.g. "LMU Main Building, Room 123"
     address: "ADDRESS"                  # e.g. "Ludwigstraße 25, 80539 München, Germany""
     map_url: "GOOGLE MAPS URL"          # e.g. "https://goo.gl/maps/xyz""
-  host: "LMU Open Science Center"
   format:
     type: "EVENTTYPE"               # e.g. "In-person", "Online", "Hybrid"  
     detail: "FORMATDETAILS"    # e.g. "In-person & Online", non-mandatory field

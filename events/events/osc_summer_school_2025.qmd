@@ -18,7 +18,6 @@ event:
     name: "Philologicum Library"
     address: "Ludwigstraße 25, 80539 Munich"
     map_url: "https://www.google.com/maps/place/Ludwigstraße+25,+80539+München,+Germany"
-  host: "LMU Open Science Center"
   format:
     type: "Hybrid"
     details: "In-person & Online"
@@ -34,7 +33,12 @@ instructors:
     url: "https://www.osc.uni-muenchen.de/members/individual_members/fellows/frank/index.html"
   - name: "Florian Kohrt"
     url: "https://www.osc.uni-muenchen.de/members/individual_members/fellows/kohrt/index.html"
+helpers:
+  - name: ""
 
+host:
+  - name: ""
+  - name: ""
 
 contact: 
     name: "OSC team"
