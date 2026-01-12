@@ -1,0 +1,25 @@
+
+
+name: Reminder to check LMU pages
+
+# Run the workflow on a schedule: e.g., every Monday at 07:00 UTC
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 7 * * 1'
+
+permissions:
+  issues: write
+
+jobs:
+  create_issue:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create issue
+        uses: JasonEtco/create-an-issue@v2
+        with:
+          title: "Update Imprint, Accessibility, and Privacy Pages if needed"
+          body: |
+            See #251 for original context.
+
+            Check that our Imprint, Accessibility, and Privacy pages are up to date with any changes in regulations or organizational details. If updates are necessary, please make the required changes and close this issue. If no updates are needed, simply close this issue.
