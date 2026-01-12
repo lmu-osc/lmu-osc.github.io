@@ -4,12 +4,14 @@ format:
         table-of-contents: false
         css: event-page-styles.css
 page-layout: full
-pagetitle: 'Multiverse Analysis: On the Robustness of Functional Form and Data Pre-Processing Decisions" by Prof. Cristobal Young (Ph.D. Cornell University)'
+pagetitle: '"Multiverse Analysis: On the Robustness of Functional Form and Data Pre-Processing Decisions" by Prof. Cristobal Young (Ph.D. Cornell University)'
 categories: 'Lecture'
 
 # Event categories
 event:
-
+  title: '"Multiverse Analysis: On the Robustness of Functional Form and Data Pre-Processing Decisions" by Prof. Cristobal Young (Ph.D. Cornell University)'
+  description: ""
+  categories:  'Lecture'
   date: "June 05, 2024"
   end_date: "June 05, 2024"
   time: "16:15-17:45"
@@ -17,6 +19,7 @@ event:
     name: "Hybrid (LMU Department of Sociology, IfS 309, Munich and via Zoom)"
     address: ""
     map_url: ""
+  host: "LMU Open Science Center"
   format:
     type: 'Lecture'
     detail: ""
@@ -47,7 +50,7 @@ organizers:
   name: ""
 ---
 <!-- MANDAORY SECTION START  -->
-<h1 class="fs-1 text-primary"> {{< meta pagetitle >}} </h1>
+<h1 class="fs-1 text-primary"> {{< meta event.title >}} </h1>
 
 {{< include templates/_setup.qmd >}}
 {{< include templates/_info_boxes.qmd >}}

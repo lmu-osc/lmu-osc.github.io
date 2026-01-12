@@ -9,6 +9,9 @@ categories: 'ReproducibiliTea Journal Club'
 
 # Event categories
 event:
+  title: '"Welcome to the Open Science Universe"'
+  description: ""
+  categories:  'ReproducibiliTea Journal Club'
   date: "October 27, 2023"
   end_date: "October 27, 2023"
   time: "14:30–16:00"
@@ -16,6 +19,7 @@ event:
     name: "Hybrid (Leopoldstraße 13, room 3322, Munich and via Zoom)"
     address: ""
     map_url: ""
+  host: "LMU Open Science Center"
   format:
     type: 'ReproducibiliTea Journal Club'
     detail: ""
@@ -46,7 +50,7 @@ organizers:
   name: ""
 ---
 <!-- MANDAORY SECTION START  -->
-<h1 class="fs-1 text-primary"> {{< meta pagetitle >}} </h1>
+<h1 class="fs-1 text-primary"> {{< meta event.title >}} </h1>
 
 {{< include templates/_setup.qmd >}}
 {{< include templates/_info_boxes.qmd >}}

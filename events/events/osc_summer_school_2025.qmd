@@ -5,9 +5,12 @@ format:
         css: event-page-styles.css
 page-layout: full
 pagetitle: 'LMU Open Science Summer School 2025'
-categories: "Summer school"
+
 
 event:
+  title: "LMU Open Science Summer School 2025"
+  description: "The LMU Open Science Center (OSC) is excited to announce the call for applications for its 5th hybrid summer school (OSSS25): deadline July 14! This year's iteration has two tracks to provide participants with two sets of skills. You are invited to apply for one or both tracks. For either track, you can choose to participate either online or in-person."
+  categories: ["Summer school"]
   date: "15 Sep, 2025"
   end_date: "19 Sep, 2027"
   time: "14:00 CET"
@@ -15,6 +18,7 @@ event:
     name: "Philologicum Library"
     address: "Ludwigstraße 25, 80539 Munich"
     map_url: "https://www.google.com/maps/place/Ludwigstraße+25,+80539+München,+Germany"
+  host: "LMU Open Science Center"
   format:
     type: "Hybrid"
     details: "In-person & Online"
@@ -22,14 +26,7 @@ event:
     primary: "English"
     primary-code: "en"
     detail: "(German Transcript)"
-
-links:
-  registration: "https://www.pretix.osc.lmu.de/lmu-osc/swc-20250324-Hum/"
-  materials: "https://www.pretix.osc.lmu.de/lmu-osc/swc-20250324-Hum/"
-  workshop_website: "https://lmu-osc.github.io/2025-03-24-LMU-Humanities/"
-
-event_description: "The LMU Open Science Center (OSC) is excited to announce the call for applications for its 5th hybrid summer school (OSSS25): deadline July 14! This year's iteration has two tracks to provide participants with two sets of skills. You are invited to apply for one or both tracks. For either track, you can choose to participate either online or in-person."
-
+    
 instructors:
   - name: "Laura Meier"
     url: "https://www.osc.uni-muenchen.de/members/individual_members/fellows/meier/index.html"
@@ -38,12 +35,6 @@ instructors:
   - name: "Florian Kohrt"
     url: "https://www.osc.uni-muenchen.de/members/individual_members/fellows/kohrt/index.html"
 
-organizers:
-  - name: "XYZ" 
-  # Helpers
-helpers: 
-  - name: "Pat Callahan"
-  - name: " Sarah von Grebmer zu Wolfsthurn"
 
 contact: 
     name: "OSC team"
@@ -53,7 +44,7 @@ contact:
 <!-- Load Font Awesome (goes right after YAML) -->
 <link rel = "stylesheet"  href = "https://cdn.jsdelivr.net/npm/bootstrap-icons@5.6.2/font/bootstrap-icons.css">
 
-<h1 class="fs-1 text-primary"> {{< meta pagetitle >}} </h1>
+<h1 class="fs-1 text-primary"> {{< meta event.title >}} </h1>
 
 
 {{< include templates/_setup.qmd >}}

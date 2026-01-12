@@ -4,12 +4,14 @@ format:
         table-of-contents: false
         css: event-page-styles.css
 page-layout: full
-pagetitle: 'Auftaktveranstaltung'
+pagetitle: '"Auftaktveranstaltung"'
 categories: 'ReproducibiliTea Journal Club'
 
 # Event categories
 event:
-
+  title: '"Auftaktveranstaltung"'
+  description: ""
+  categories:  'ReproducibiliTea Journal Club'
   date: "April 23, 2024"
   end_date: "April 23, 2024"
   time: "16:00-17:30"
@@ -17,6 +19,7 @@ event:
     name: "Leopoldstraße 13, room 3322"
     address: ""
     map_url: ""
+  host: "LMU Open Science Center"
   format:
     type: 'ReproducibiliTea Journal Club'
     detail: ""
@@ -47,7 +50,7 @@ organizers:
   name: ""
 ---
 <!-- MANDAORY SECTION START  -->
-<h1 class="fs-1 text-primary"> {{< meta pagetitle >}} </h1>
+<h1 class="fs-1 text-primary"> {{< meta event.title >}} </h1>
 
 {{< include templates/_setup.qmd >}}
 {{< include templates/_info_boxes.qmd >}}

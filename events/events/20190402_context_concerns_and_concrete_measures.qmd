@@ -9,6 +9,9 @@ categories: 'Lecture'
 
 # Event categories
 event:
+  title: '"Replication and Reproducibility in Social Sciences and Statistics: Context, Concerns, and Concrete Measures"'
+  description: ""
+  categories:  'Lecture'
   date: "April 02, 2019"
   end_date: "April 02, 2019"
   time: "10:30–12:00"
@@ -16,6 +19,7 @@ event:
     name: "Ludwigstr. 28,Room 221"
     address: ""
     map_url: ""
+  host: "LMU Open Science Center"
   format:
     type: 'Lecture'
     detail: ""
@@ -46,7 +50,7 @@ organizers:
   name: ""
 ---
 <!-- MANDAORY SECTION START  -->
-<h1 class="fs-1 text-primary"> {{< meta pagetitle >}} </h1>
+<h1 class="fs-1 text-primary"> {{< meta event.title >}} </h1>
 
 {{< include templates/_setup.qmd >}}
 {{< include templates/_info_boxes.qmd >}}

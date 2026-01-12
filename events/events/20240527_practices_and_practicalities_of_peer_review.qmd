@@ -4,12 +4,14 @@ format:
         table-of-contents: false
         css: event-page-styles.css
 page-layout: full
-pagetitle: 'Making Tacit Knowledge Open - Part I: Practices and Practicalities of Peer Review'
+pagetitle: '"Making Tacit Knowledge Open - Part I: Practices and Practicalities of Peer Review"'
 categories: 'Panel Discussion Series'
 
 # Event categories
 event:
-
+  title: '"Making Tacit Knowledge Open - Part I: Practices and Practicalities of Peer Review"'
+  description: ""
+  categories:  'Panel Discussion Series'
   date: "May 27, 2024"
   end_date: "May 27, 2024"
   time: "16:00-18:00"
@@ -17,7 +19,7 @@ event:
     name: "Hybrid (Leopoldstraße 13, room 3322 and via Zoom)"
     address: ""
     map_url: ""
-
+  host: "LMU Open Science Center"
   format:
     type: 'Panel Discussion Series'
     detail: ""
@@ -48,7 +50,7 @@ organizers:
   name: ""
 ---
 <!-- MANDAORY SECTION START  -->
-<h1 class="fs-1 text-primary"> {{< meta pagetitle >}} </h1>
+<h1 class="fs-1 text-primary"> {{< meta event.title >}} </h1>
 
 {{< include templates/_setup.qmd >}}
 {{< include templates/_info_boxes.qmd >}}

@@ -9,6 +9,9 @@ categories: 'Symposium'
 
 # Event categories
 event:
+  title: '“Open Humanities: Anwendungen und Grenzen offener Wissenschaftspraktiken in den Geisteswissenschaften”'
+  description: ""
+  categories:  'Symposium'
   date: "July 04, 2023"
   end_date: "July 04, 2023"
   time: "14:00–16:30"
@@ -16,6 +19,7 @@ event:
     name: "Hybrid (Geschwister-Scholl-Platz 1, room F002 (Zentralbibliothek, EG), Munich and via Zoom)"
     address: ""
     map_url: ""
+  host: "LMU Open Science Center"
   format:
     type: 'Symposium'
     detail: ""
@@ -46,7 +50,7 @@ organizers:
   name: ""
 ---
 <!-- MANDAORY SECTION START  -->
-<h1 class="fs-1 text-primary"> {{< meta pagetitle >}} </h1>
+<h1 class="fs-1 text-primary"> {{< meta event.title >}} </h1>
 
 {{< include templates/_setup.qmd >}}
 {{< include templates/_info_boxes.qmd >}}
