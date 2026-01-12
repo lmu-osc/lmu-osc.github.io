@@ -2,7 +2,7 @@
 
 name: Reminder to check LMU pages
 
-# Run the workflow on a schedule: e.g., every Monday at 07:00 UTC
+# Run the workflow on a schedule or by dispatch
 on:
   workflow_dispatch:
   schedule:
