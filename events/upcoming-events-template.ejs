@@ -158,57 +158,62 @@ formIcon = '<i class="bi bi-laptop"></i>';
 </div>
 </div>
 
-<div class="title listing-title"><%- item.pagetitle %></div>
+<div class="title listing-title"><%- item.event.title %></div>
 <div class="separator"></div>
 
-<p class="description listing-description"><%- item.event_description %></p>
+<p class="description listing-description"><%- item.event.description %></p>
 
 <div class="event-footer">
 <div class="event-host-info-group">
-    <%
-    const peopleBlocks = [
-          { label: 'Organizers', data: item.organizers, url: true },
-          { label: 'Presenters', data: item.presenters, url: false },
-          { label: 'Instructors', data: item.instructors, url: true },
-          { label: 'Helpers', data: item.helpers, url: false },
-          { label: 'Host(s)', data: item.event?.host ? [item.event.host] : [], url: false }
-      ];
-    %>
-
-    <% peopleBlocks.forEach(function(block) { %>
-    <% if (block.data && block.data.length > 0) { %>
-
-    <div class="event-person-group">
-      <span class="person-label"><%= block.label %>:</span>
-      <span class="person-list">
-      <%= block.data
-      .map(function(person){
-      if (!person) return '';
-      if (typeof person === 'string') return person.trim();
-      var name = (person.name || '').toString().trim();
-      var url  = (person.url || '').toString().trim();
-      if (!name) return '';
-      if (url) {
-      return '<a href="' + url + '" target="_blank" rel="noopener noreferrer">' + name + '</a>';
-      }
-      return name;
-      })
-      .filter(function(x){ return x && x.length > 0; })
-      .join(', ')
-      %>
-      </span>
-    </div>
-
-    <% } %>
-    <% }) %>
-    <% if (item.contact && item.contact.name && item.contact.email) { %>
-    <div class="event-contact-info">
-      <i class="bi bi-envelope"></i>
-      <a href="mailto:<%- item.contact.email %>?subject=Regarding <%- item.pagetitle %>">
-      <%- item.contact.name %>
-      </a>
-    </div>
-    <% } %>
+<%
+                const peopleBlocks = [
+                    { label: 'Organizers', data: item.organizers},
+                    { label: 'Presenters', data: item.presenters},
+                    { label: 'Instructors', data: item.instructors},
+                    { label: 'Helpers', data: item.helpers},
+                    { label: 'Host(s)', data: item.host},
+                  ];
+                %>
+<% peopleBlocks.forEach(function(block) { %>
+<% 
+// check if block has valid data i.e. non-empty fields
+  const hasValidData = block.data && block.data.length > 0 && block.data.some(function(person) {
+  if (!person) return false;
+  if (typeof person === 'string') return person.trim().length > 0;
+  return (person.name || '').toString().trim().length > 0;
+  });
+%>
+<% if (hasValidData) { %>
+<div class="event-person-group">
+<span class="person-label"><%= block.label %>:</span>
+<span class="person-list">
+<%= block.data
+.map(function(person){
+if (!person) return '';
+if (typeof person === 'string') return person.trim();
+var name = (person.name || '').toString().trim();
+var url  = (person.url || '').toString().trim();
+if (!name) return '';
+if (url) {
+return '<a href="' + url + '" target="_blank" rel="noopener noreferrer">' + name + '</a>';
+}
+return name;
+})
+.filter(function(x){ return x && x.length > 0; })
+.join(', ')
+%>
+</span>
+</div>
+<% } %>
+<% }) %>
+<% if (item.contact && item.contact.name && item.contact.email) { %>
+<div class="event-contact-info">
+<i class="bi bi-envelope"></i>
+<a href="mailto:<%- item.contact.email %>?subject=Regarding <%- item.pagetitle %>">
+<%- item.contact.name %>
+</a>
+</div>
+<% } %>
 </div>
 
 <div class="read-more-button">
