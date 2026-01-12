@@ -113,8 +113,11 @@ format:
     toc: true
     include-in-header:
       - file: matomo_analytics.html
+      - text: |
+          <script src="assets/javascript/external_links.js"></script>
     include-after-body:
       - file: footer/footer.html
+      
 
 
 
