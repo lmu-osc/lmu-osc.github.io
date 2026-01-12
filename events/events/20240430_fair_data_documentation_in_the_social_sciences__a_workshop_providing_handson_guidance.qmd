@@ -4,11 +4,14 @@ format:
         table-of-contents: false
         css: event-page-styles.css
 page-layout: full
-pagetitle: 'FAIR data documentation in the social sciences - a workshop providing hands-on guidance'
+pagetitle: '"FAIR data documentation in the social sciences - a workshop providing hands-on guidance"'
 categories: 'Workshop'
 
 # Event categories
 event:
+  title: '"FAIR data documentation in the social sciences - a workshop providing hands-on guidance"'
+  description: ""
+  categories:  'Workshop'
   date: "April 30, 2024"
   end_date: "April 30, 2024"
   time: "09:00-13:00"
@@ -44,9 +47,13 @@ contact:
 
 organizers:
   name: ""
+
+
+host:
+  - name: "LMU Open Science Center"
 ---
 <!-- MANDAORY SECTION START  -->
-<h1 class="fs-1 text-primary"> {{< meta pagetitle >}} </h1>
+<h1 class="fs-1 text-primary"> {{< meta event.title >}} </h1>
 
 {{< include templates/_setup.qmd >}}
 {{< include templates/_info_boxes.qmd >}}

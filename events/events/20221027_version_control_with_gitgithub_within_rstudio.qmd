@@ -9,6 +9,9 @@ categories: 'Workshop'
 
 # Event categories
 event:
+  title: '"Version control with Git/GitHub within RStudio"'
+  description: ""
+  categories:  'Workshop'
   date: "October 27, 2022"
   end_date: "October 27, 2022"
   time: "9:00-12:00"
@@ -44,9 +47,13 @@ contact:
 
 organizers:
   name: ""
+
+
+host:
+  - name: "LMU Open Science Center"
 ---
 <!-- MANDAORY SECTION START  -->
-<h1 class="fs-1 text-primary"> {{< meta pagetitle >}} </h1>
+<h1 class="fs-1 text-primary"> {{< meta event.title >}} </h1>
 
 {{< include templates/_setup.qmd >}}
 {{< include templates/_info_boxes.qmd >}}

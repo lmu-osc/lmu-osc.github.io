@@ -4,12 +4,14 @@ format:
         table-of-contents: false
         css: event-page-styles.css
 page-layout: full
-pagetitle: 'Version control with Git and GitHub within RStudio'
+pagetitle: '"Version control with Git and GitHub within RStudio"'
 categories: 'Workshop'
 
 # Event categories
 event:
-
+  title: '"Version control with Git and GitHub within RStudio"'
+  description: ""
+  categories:  'Workshop'
   date: "January 15, 2024"
   end_date: "January 15, 2024"
   time: "13:30–16:30"
@@ -17,7 +19,6 @@ event:
     name: "Hybrid (Leopoldstraße 13, room 3322, Munich and via Zoom)"
     address: ""
     map_url: ""
- 
   format:
     type: 'Workshop'
     detail: ""
@@ -46,9 +47,13 @@ contact:
 
 organizers:
   name: ""
+
+
+host:
+  - name: "LMU Open Science Center"
 ---
 <!-- MANDAORY SECTION START  -->
-<h1 class="fs-1 text-primary"> {{< meta pagetitle >}} </h1>
+<h1 class="fs-1 text-primary"> {{< meta event.title >}} </h1>
 
 {{< include templates/_setup.qmd >}}
 {{< include templates/_info_boxes.qmd >}}

@@ -4,11 +4,14 @@ format:
         table-of-contents: false
         css: event-page-styles.css
 page-layout: full
-pagetitle: 'Increasing transparency through preregistration and/or multiverse analyses'
+pagetitle: '"Increasing transparency through preregistration and/or multiverse analyses"'
 categories: 'Lecture'
 
 # Event categories
 event:
+  title: '"Increasing transparency through preregistration and/or multiverse analyses"'
+  description: ""
+  categories:  'Lecture'
   date: "March 14, 2024"
   end_date: "March 14, 2024"
   time: "16:00–17:00"
@@ -16,7 +19,6 @@ event:
     name: "Hybrid (Leopoldstraße 13, room 3322, Munich and via Zoom)"
     address: ""
     map_url: ""
-
   format:
     type: 'Lecture'
     detail: ""
@@ -45,9 +47,13 @@ contact:
 
 organizers:
   name: ""
+
+
+host:
+  - name: "LMU Open Science Center"
 ---
 <!-- MANDAORY SECTION START  -->
-<h1 class="fs-1 text-primary"> {{< meta pagetitle >}} </h1>
+<h1 class="fs-1 text-primary"> {{< meta event.title >}} </h1>
 
 {{< include templates/_setup.qmd >}}
 {{< include templates/_info_boxes.qmd >}}

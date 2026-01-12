@@ -4,11 +4,14 @@ format:
         table-of-contents: false
         css: event-page-styles.css
 page-layout: full
-pagetitle: 'Version control'
+pagetitle: '"Version control"'
 categories: 'Hacky Hour'
 
 # Event categories
 event:
+  title: '"Version control"'
+  description: ""
+  categories:  'Hacky Hour'
   date: "February 26, 2024"
   end_date: "February 26, 2024"
   time: "16:30–18:00"
@@ -16,7 +19,6 @@ event:
     name: "Wikipedia Munich, Angertorstraße 3"
     address: ""
     map_url: ""
-
   format:
     type: 'Hacky Hour'
     detail: ""
@@ -45,9 +47,13 @@ contact:
 
 organizers:
   name: ""
+
+
+host:
+  - name: "LMU Open Science Center"
 ---
 <!-- MANDAORY SECTION START  -->
-<h1 class="fs-1 text-primary"> {{< meta pagetitle >}} </h1>
+<h1 class="fs-1 text-primary"> {{< meta event.title >}} </h1>
 
 {{< include templates/_setup.qmd >}}
 {{< include templates/_info_boxes.qmd >}}

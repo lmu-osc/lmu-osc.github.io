@@ -4,11 +4,14 @@ format:
         table-of-contents: false
         css: event-page-styles.css
 page-layout: full
-pagetitle: 'Reproducibility of omics research: Shared responsibility and consequences of ignorance'
+pagetitle: '"Reproducibility of omics research: Shared responsibility and consequences of ignorance"'
 categories: 'Discussion'
 
 # Event categories
 event:
+  title: '"Reproducibility of omics research: Shared responsibility and consequences of ignorance"'
+  description: ""
+  categories:  'Discussion'
   date: "December 05, 2018"
   end_date: "December 05, 2018"
   time: "NA"
@@ -44,9 +47,13 @@ contact:
 
 organizers:
   name: ""
+
+
+host:
+  - name: "LMU Open Science Center"
 ---
 <!-- MANDAORY SECTION START  -->
-<h1 class="fs-1 text-primary"> {{< meta pagetitle >}} </h1>
+<h1 class="fs-1 text-primary"> {{< meta event.title >}} </h1>
 
 {{< include templates/_setup.qmd >}}
 {{< include templates/_info_boxes.qmd >}}

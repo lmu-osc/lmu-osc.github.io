@@ -4,11 +4,14 @@ format:
         table-of-contents: false
         css: event-page-styles.css
 page-layout: full
-pagetitle: 'Software Carpentry - R flavored - Mensa Leopoldstraße'
+pagetitle: '"Software Carpentry - R flavored - Mensa Leopoldstraße"'
 categories: 'Workshop'
 
 # Event categories
 event:
+  title: '"Software Carpentry - R flavored - Mensa Leopoldstraße"'
+  description: ""
+  categories:  'Workshop'
   date: "October 10, 2024"
   end_date: "October 10, 2024"
   time: "NA"
@@ -32,20 +35,25 @@ event_description:
   - ""
 
 instructors:
-  - name: "Alberto Villagran Asiares"
+  - name: ""
     url: ""
-  - name: "Alp Kaan Aksu"
-  - name: "Renata Topinkova"
-  - name: "Po-chun Tseng"
 
+helpers:
+  - name: ""
 
 contact:
   name: ""
   email: ""
 
+organizers:
+  name: ""
+
+
+host:
+  - name: "LMU Open Science Center"
 ---
 <!-- MANDAORY SECTION START  -->
-<h1 class="fs-1 text-primary"> {{< meta pagetitle >}} </h1>
+<h1 class="fs-1 text-primary"> {{< meta event.title >}} </h1>
 
 {{< include templates/_setup.qmd >}}
 {{< include templates/_info_boxes.qmd >}}

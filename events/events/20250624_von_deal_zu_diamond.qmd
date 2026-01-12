@@ -9,6 +9,9 @@ categories: 'Symposium'
 
 # Event categories
 event:
+  title: 'Von “DEAL” zu “Diamond”?'
+  description: ""
+  categories:  'Symposium'
   date: "June 24, 2025"
   end_date: "June 24, 2025"
   time: "NA"
@@ -44,9 +47,12 @@ contact:
 
 organizers:
   name: ""
+
+host: 
+  - name: "LMU Open Science Center"
 ---
 <!-- MANDAORY SECTION START  -->
-<h1 class="fs-1 text-primary"> {{< meta pagetitle >}} </h1>
+<h1 class="fs-1 text-primary"> {{< meta event.title >}} </h1>
 
 {{< include templates/_setup.qmd >}}
 {{< include templates/_info_boxes.qmd >}}

@@ -9,6 +9,9 @@ categories: 'Workshop'
 
 # Event categories
 event:
+  title: '"Research Data Management & Open Science: Trends, Funding Requirements and Services at LMU"'
+  description: ""
+  categories:  'Workshop'
   date: "April 22, 2021"
   end_date: "April 22, 2021"
   time: "15:00-16:30"
@@ -44,9 +47,13 @@ contact:
 
 organizers:
   name: ""
+
+
+host:
+  - name: "LMU Open Science Center"
 ---
 <!-- MANDAORY SECTION START  -->
-<h1 class="fs-1 text-primary"> {{< meta pagetitle >}} </h1>
+<h1 class="fs-1 text-primary"> {{< meta event.title >}} </h1>
 
 {{< include templates/_setup.qmd >}}
 {{< include templates/_info_boxes.qmd >}}

@@ -4,11 +4,11 @@ format:
         table-of-contents: false
         css: event-page-styles.css
 page-layout: full
-pagetitle: "Software Carpentry - R flavored - Philologicum" 
-categories: "Workshop"
+categories: ["Workshop", "Professional Instruction"]
 
 # Event Information
 event:
+  title: "Software Carpentry - R flavored - Philologicum"
   date: "July 15, 2024"
   end_date: "August 16, 2025"
   time: "14:00 - 17:00 CET"
@@ -45,17 +45,10 @@ instructors:
   - name: "Florian Kohrt"
     url: "https://www.osc.uni-muenchen.de/members/individual_members/fellows/kohrt/index.html"
 
-# host 
-host:
-  - name: LMU Open Science Center
-    url: "https://www.osc.uni-muenchen.de/members/individual_members/fellows/kohrt/index.html"
-
 # presenters
-presenters: 
-  - name: "Laura Meier"
-  - name: "Maximilian Frank"
-  - name: "Florian Kohrt"
-    url: "https://www.osc.uni-muenchen.de/members/individual_members/fellows/kohrt/index.html"
+presenters:
+  - name: "XYZ"
+  - name: ""
 
 # Helpers
 helpers: 
@@ -69,12 +62,15 @@ contact:
   
 organizers:
   - name: "hello there"
+
+host:
+  - name: ""
 ---
 
 
 <link rel = "stylesheet"  href = "https://cdn.jsdelivr.net/npm/bootstrap-icons@5.6.2/font/bootstrap-icons.css">
 
-<h1 class="fs-1 text-primary"> {{< meta pagetitle >}} </h1>
+<h1 class="fs-1 text-primary"> {{< meta event.title >}} </h1>
 
 
 {{< include templates/_setup.qmd >}}

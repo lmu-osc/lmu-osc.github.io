@@ -9,6 +9,9 @@ categories: 'Conference'
 
 # Event categories
 event:
+  title: '"META-REP 2024 on Meta-Science and Replicability in the Social, Behavioral, and Cognitive Sciences" [more...]'
+  description: ""
+  categories:  'Conference'
   date: "October 28, 2024"
   end_date: "October 31, 2024"
   time: "NA"
@@ -44,9 +47,13 @@ contact:
 
 organizers:
   name: ""
+
+
+host:
+  - name: "LMU Open Science Center"
 ---
 <!-- MANDAORY SECTION START  -->
-<h1 class="fs-1 text-primary"> {{< meta pagetitle >}} </h1>
+<h1 class="fs-1 text-primary"> {{< meta event.title >}} </h1>
 
 {{< include templates/_setup.qmd >}}
 {{< include templates/_info_boxes.qmd >}}

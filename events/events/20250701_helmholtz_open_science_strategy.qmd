@@ -4,11 +4,14 @@ format:
         table-of-contents: false
         css: event-page-styles.css
 page-layout: full
-pagetitle: 'Helmholtz open science strategy'
+pagetitle: '"Helmholtz open science strategy"'
 categories: 'Lecture'
 
 # Event categories
 event:
+  title: '"Helmholtz open science strategy"'
+  description: ""
+  categories:  'Lecture'
   date: "July 01, 2025"
   end_date: "July 01, 2025"
   time: "16:00"
@@ -31,18 +34,26 @@ links:
 event_description:
   - ""
 
-presenters:
-  - name: "Dr. Mathijs Vleugel"
+instructors:
+  - name: ""
+    url: ""
+
+helpers:
+  - name: ""
 
 contact:
   name: ""
   email: ""
 
 organizers:
-  - name: ""
+  name: ""
+
+
+host: 
+  - name: "LMU Open Science Center"
 ---
 <!-- MANDAORY SECTION START  -->
-<h1 class="fs-1 text-primary"> {{< meta pagetitle >}} </h1>
+<h1 class="fs-1 text-primary"> {{< meta event.title >}} </h1>
 
 {{< include templates/_setup.qmd >}}
 {{< include templates/_info_boxes.qmd >}}

@@ -9,6 +9,9 @@ categories: 'Symposium'
 
 # Event categories
 event:
+  title: '"Paywall - The Business of Scholarship"'
+  description: ""
+  categories:  'Symposium'
   date: "December 14, 2018"
   end_date: "December 14, 2018"
   time: "NA"
@@ -44,9 +47,13 @@ contact:
 
 organizers:
   name: ""
+
+
+host:
+  - name: "LMU Open Science Center"
 ---
 <!-- MANDAORY SECTION START  -->
-<h1 class="fs-1 text-primary"> {{< meta pagetitle >}} </h1>
+<h1 class="fs-1 text-primary"> {{< meta event.title >}} </h1>
 
 {{< include templates/_setup.qmd >}}
 {{< include templates/_info_boxes.qmd >}}
