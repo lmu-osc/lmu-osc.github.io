@@ -170,29 +170,50 @@
     ]
   },
   {
-    "listing": "/training/reproducible_processes.html",
+    "listing": "/training/principles.html",
     "items": [
-      "/training/reproducible_processes/introduction_to_r.html",
+      "/training/principles/replicability_crisis.html",
+      "/training/principles/credible_science.html"
+    ]
+  },
+  {
+    "listing": "/training/data_management.html",
+    "items": [
+      "/training/data_management/open_data.html",
+      "/training/data_management/fair_data_management.html",
+      "/training/data_management/data_dictionary.html",
+      "/training/data_management/maintaining_privacy_with_open_data.html",
+      "/training/data_management/data_anonymity.html",
+      "/training/data_management/synthetic_data.html"
+    ]
+  },
+  {
+    "listing": "/self-training.html",
+    "items": [
+      "/training/principles.html",
+      "/training/study_planning.html",
+      "/training/data_management.html",
+      "/training/reproducible_processes.html",
+      "/training/publishing_outputs.html",
+      "/training/reproducible_processes/introduction_to_renv.html",
       "/training/reproducible_processes/introduction_to_version_control_within_rstudio.html",
-      "/training/reproducible_processes/collaborative_coding_with_github_and_rstudio.html",
-      "/training/reproducible_processes/advanced_git.html",
-      "/training/reproducible_processes/introduction_to_quarto.html",
-      "/training/reproducible_processes/introduction_to_zotero.html",
-      "/training/reproducible_processes/introduction_to_renv.html"
-    ]
-  },
-  {
-    "listing": "/training/publishing_outputs.html",
-    "items": [
+      "/training/data_management/data_anonymity.html",
+      "/training/data_management/data_dictionary.html",
+      "/training/data_management/fair_data_management.html",
+      "/training/data_management/maintaining_privacy_with_open_data.html",
+      "/training/data_management/open_data.html",
+      "/training/data_management/synthetic_data.html",
+      "/training/principles/credible_science.html",
+      "/training/principles/replicability_crisis.html",
       "/training/publishing_outputs/code_publishing.html",
-      "/training/publishing_outputs/open_access_preprints_postprints.html"
-    ]
-  },
-  {
-    "listing": "/training/study_planning.html",
-    "items": [
-      "/training/study_planning/preregistration_why_how.html",
+      "/training/publishing_outputs/open_access_preprints_postprints.html",
+      "/training/reproducible_processes/advanced_git.html",
+      "/training/reproducible_processes/collaborative_coding_with_github_and_rstudio.html",
+      "/training/reproducible_processes/introduction_to_quarto.html",
+      "/training/reproducible_processes/introduction_to_r.html",
+      "/training/reproducible_processes/introduction_to_zotero.html",
       "/training/study_planning/introduction_to_simulations_in_r.html",
+      "/training/study_planning/preregistration_why_how.html",
       "/training/study_planning/simulations_for_advanced_power_analyses.html"
     ]
   },
@@ -325,51 +346,30 @@
     ]
   },
   {
-    "listing": "/self-training.html",
+    "listing": "/training/study_planning.html",
     "items": [
-      "/training/principles.html",
-      "/training/study_planning.html",
-      "/training/data_management.html",
-      "/training/reproducible_processes.html",
-      "/training/publishing_outputs.html",
-      "/training/reproducible_processes/introduction_to_renv.html",
-      "/training/reproducible_processes/introduction_to_version_control_within_rstudio.html",
-      "/training/data_management/data_anonymity.html",
-      "/training/data_management/data_dictionary.html",
-      "/training/data_management/fair_data_management.html",
-      "/training/data_management/maintaining_privacy_with_open_data.html",
-      "/training/data_management/open_data.html",
-      "/training/data_management/synthetic_data.html",
-      "/training/principles/credible_science.html",
-      "/training/principles/replicability_crisis.html",
-      "/training/publishing_outputs/code_publishing.html",
-      "/training/publishing_outputs/open_access_preprints_postprints.html",
-      "/training/reproducible_processes/advanced_git.html",
-      "/training/reproducible_processes/collaborative_coding_with_github_and_rstudio.html",
-      "/training/reproducible_processes/introduction_to_quarto.html",
-      "/training/reproducible_processes/introduction_to_r.html",
-      "/training/reproducible_processes/introduction_to_zotero.html",
-      "/training/study_planning/introduction_to_simulations_in_r.html",
       "/training/study_planning/preregistration_why_how.html",
+      "/training/study_planning/introduction_to_simulations_in_r.html",
       "/training/study_planning/simulations_for_advanced_power_analyses.html"
     ]
   },
   {
-    "listing": "/training/data_management.html",
+    "listing": "/training/publishing_outputs.html",
     "items": [
-      "/training/data_management/open_data.html",
-      "/training/data_management/fair_data_management.html",
-      "/training/data_management/data_dictionary.html",
-      "/training/data_management/maintaining_privacy_with_open_data.html",
-      "/training/data_management/data_anonymity.html",
-      "/training/data_management/synthetic_data.html"
+      "/training/publishing_outputs/code_publishing.html",
+      "/training/publishing_outputs/open_access_preprints_postprints.html"
     ]
   },
   {
-    "listing": "/training/principles.html",
+    "listing": "/training/reproducible_processes.html",
     "items": [
-      "/training/principles/replicability_crisis.html",
-      "/training/principles/credible_science.html"
+      "/training/reproducible_processes/introduction_to_r.html",
+      "/training/reproducible_processes/introduction_to_version_control_within_rstudio.html",
+      "/training/reproducible_processes/collaborative_coding_with_github_and_rstudio.html",
+      "/training/reproducible_processes/advanced_git.html",
+      "/training/reproducible_processes/introduction_to_quarto.html",
+      "/training/reproducible_processes/introduction_to_zotero.html",
+      "/training/reproducible_processes/introduction_to_renv.html"
     ]
   },
   {
