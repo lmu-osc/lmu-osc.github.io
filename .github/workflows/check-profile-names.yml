@@ -29,4 +29,4 @@ jobs:
       
       - name: Run profile name checker
         run: |
-          Rscript people/_name_checker.R
+          Rscript .github/_name_checker.R
