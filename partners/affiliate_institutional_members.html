@@ -84,14 +84,15 @@ ul.task-list li input[type="checkbox"] {
   })();
 </script>
 <!-- End Matomo Code -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 
 
 <link rel="stylesheet" href="https://raw.githubusercontent.com/lmu-osc/branding-resources/refs/heads/main/styles.css">
+<link rel="stylesheet" href="../assets/fontawesome-free-7.1.0-web/css/all.min.css">
 <link rel="stylesheet" href="../custom-navbar.css">
 <link rel="stylesheet" href="../styles.css">
 <link rel="stylesheet" href="../footer/footer-style.css">
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -100,6 +101,12 @@ ul.task-list li input[type="checkbox"] {
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../assets/img/osc_image_assets/LMU_Open_Science_Center_Logo.jpg" alt="" class="navbar-logo light-content">
+    <img src="../assets/img/osc_image_assets/LMU_Open_Science_Center_Logo.jpg" alt="" class="navbar-logo dark-content">
+    </a>
+  </div>
             <div id="quarto-search" class="" title="Search"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
@@ -155,7 +162,7 @@ ul.task-list li input[type="checkbox"] {
   </li>
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-partners" role="link" data-bs-toggle="dropdown" aria-expanded="false">
-      <i class="bi bi-people" role="img">
+      <i class="bi bi-boxes" role="img">
 </i> 
  <span class="menu-text">Partners</span>
     </a>
@@ -192,17 +199,11 @@ ul.task-list li input[type="checkbox"] {
 </i> 
 <span class="menu-text">Events</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../news.html"> <i class="bi bi-rss" role="img">
-</i> 
-<span class="menu-text">News</span></a>
-  </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
-    <a href="https://github.com/lmu-osc" title="" class="quarto-navigation-tool px-1" aria-label="GitHub"><i class="bi bi-github"></i></a>
   <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
   <div class="quarto-reader-toggle-btn">
   <i class="bi"></i>
@@ -265,7 +266,7 @@ body {
 .header-section {
   font-size: 2.6rem;
   font-weight: 700;
-  color: #2b864b;
+  color: #00883A;
   margin-bottom: 1.1rem;
   letter-spacing: -0.5px;
 }
@@ -378,7 +379,7 @@ body {
   gap: 0.4rem;
   background: none;              
   box-shadow: none;               
-  color: #2b864b;                 
+  color: #00883A;                 
   text-decoration: none;
   font-size: 0.9rem;              
   width: auto;                  
@@ -399,7 +400,7 @@ body {
 .social-link:hover {
   background-color: #BEE3F8;
   color: white;
-  border-color: #2b864b;
+  border-color: #00883A;
   transform: translateY(-2px);
 }
 
@@ -1088,9 +1089,8 @@ if (!contactLink || contactLink.textContent.trim() === '' || contactLink.textCon
   });
   </script>
 </div> <!-- /content -->
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><ul><li><a href="https://github.com/lmu-osc/lmu-osc.github.io/edit/main/partners/affiliate_institutional_members.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lmu-osc/lmu-osc.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
-<footer class="osc-footer-card py-5">
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><ul><li><a href="https://github.com/lmu-osc/lmu-osc.github.io/edit/main/partners/affiliate_institutional_members.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lmu-osc/lmu-osc.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer><footer class="osc-footer-card py-5">
   <div class="osc-footer-container">
 
     <div class="gy-4 osc-footer-row">
@@ -1172,7 +1172,7 @@ if (!contactLink || contactLink.textContent.trim() === '' || contactLink.textCon
     <div class="d-flex flex-wrap gap-3 osc-footer-extra-links">
       <a href="../imprint.html" class="osc-footer-link text-decoration-underline text-white">Imprint</a>
       <span class="text-white">|</span>
-      <a href="#" class="osc-footer-link text-decoration-underline text-white">Privacy Policy</a>
+      <a href="../privacy.html" class="osc-footer-link text-decoration-underline text-white">Privacy Policy</a>
       <span class="text-white">|</span>
       <a href="../accessibilty.html" class="osc-footer-link text-decoration-underline text-white">Accessibility</a>
     </div>
