@@ -46,11 +46,11 @@
     font-size: 2.3rem;
     font-weight: 500;
     line-height: 1.5;
-    color:  #2b864bb7;
+    color:  #00883Ab7;
 }
 
 .osc-init-note {
-    background-color: #2b864b10;
+    background-color: #00883A10;
     position: relative;
     padding: 1rem;
     border: 1px solid #277c4542;
@@ -129,7 +129,7 @@
 }
 
 .osc-init-activities__list li::marker {
-    color: #2b864b9a;
+    color: #00883A9a;
 }
 
 /* LINE DIVIDER */
