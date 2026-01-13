@@ -21,14 +21,11 @@ website:
 
   navbar:
     title: false
-    background: "#2b864b"
+    background: "#00883A"
     foreground: "#fff"
-    # logo: assets/img/osc_image_assets/TutorialCardCard.png
+    logo: assets/img/osc_image_assets/LMU_Open_Science_Center_Logo.jpg
     collapse-below: lg
-    tools:
-      - icon: github
-        href: https://github.com/lmu-osc
-        aria-label: "GitHub"
+    tools: []
     left:
       - href: index.qmd
         icon: house-door
@@ -48,7 +45,7 @@ website:
           - people/fellows.qmd
           - people/alumnae.qmd
       - text: Partners
-        icon: people
+        icon: boxes
         menu:
           - partners/institutional_members.qmd
           - partners/local_os_intiatives.qmd
@@ -66,9 +63,6 @@ website:
       - href: events/index.qmd
         icon: calendar-event
         text: Events
-      - href: news.qmd
-        icon: rss
-        text: News
     right:
       - icon: search
         aria-label: "Search"
@@ -112,6 +106,7 @@ format:
       - lmu-osc-custom.scss
     css: 
       - https://raw.githubusercontent.com/lmu-osc/branding-resources/refs/heads/main/styles.css
+      - assets/fontawesome-free-7.1.0-web/css/all.min.css
       - custom-navbar.css
       - styles.css
       - footer/footer-style.css

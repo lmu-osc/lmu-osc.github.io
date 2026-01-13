@@ -5,15 +5,12 @@ format:
     css: styles.css
     page-layout: full
     toc: false
-    include-in-header: 
-      - text: |
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 ---
 ```{=html}
 
 <style>
 :root {
-  --theme-main: #2b864b;
+  --theme-main: #00883A;
   --theme-bg: #f5f6fa;
   --theme-card-bg: #fff;
   --theme-card-shadow: 0 2px 10px rgba(43,134,75,0.10);
@@ -29,7 +26,7 @@ body {
 .header-section {
   font-size: 2.6rem;
   font-weight: 700;
-  color: #2b864b;
+  color: #00883A;
   margin-bottom: 1.1rem;
   letter-spacing: -0.5px;
 }
@@ -130,7 +127,7 @@ body {
   justify-content: center;
   background: none;              
   box-shadow: none;               
-  color: #2b864b;                 
+  color: #00883A;                 
   text-decoration: none;
   font-size: 1.4rem;              
   width: auto;                  

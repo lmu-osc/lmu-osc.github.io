@@ -1,3 +1,4 @@
+```{=html}
 <div class="content-wrapper osc-upcoming-events">
 <div class="card-grid list">
 <% 
@@ -78,7 +79,7 @@ for (const item of futureItems) {
 <div class="card-content-wrapper">
 
 <div class="event-category listing-categories">
-<%- (item.event.categories?.[0] || 'EVENT').toUpperCase() %>
+<%- (item.categories ? (Array.isArray(item.categories) ? item.categories[0] : item.categories) : 'EVENT').toUpperCase() %>
 </div>
 
 <div class="card-metadata">
@@ -164,13 +165,51 @@ formIcon = '<i class="bi bi-laptop"></i>';
 
 <div class="event-footer">
 <div class="event-host-info-group">
-<div class="event-host-info">
-Hosted by: <%- item.event.host %>
+<%
+                const peopleBlocks = [
+                    { label: 'Organizers', data: item.organizers},
+                    { label: 'Presenters', data: item.presenters},
+                    { label: 'Instructors', data: item.instructors},
+                    { label: 'Helpers', data: item.helpers},
+                    { label: 'Host(s)', data: item.host},
+                  ];
+                %>
+<% peopleBlocks.forEach(function(block) { %>
+<% 
+// check if block has valid data i.e. non-empty fields
+  const hasValidData = block.data && block.data.length > 0 && block.data.some(function(person) {
+  if (!person) return false;
+  if (typeof person === 'string') return person.trim().length > 0;
+  return (person.name || '').toString().trim().length > 0;
+  });
+%>
+<% if (hasValidData) { %>
+<div class="event-person-group">
+<span class="person-label"><%= block.label %>:</span>
+<span class="person-list">
+<%= block.data
+.map(function(person){
+if (!person) return '';
+if (typeof person === 'string') return person.trim();
+var name = (person.name || '').toString().trim();
+var url  = (person.url || '').toString().trim();
+if (!name) return '';
+if (url) {
+return '<a href="' + url + '" target="_blank" rel="noopener noreferrer">' + name + '</a>';
+}
+return name;
+})
+.filter(function(x){ return x && x.length > 0; })
+.join(', ')
+%>
+</span>
 </div>
+<% } %>
+<% }) %>
 <% if (item.contact && item.contact.name && item.contact.email) { %>
 <div class="event-contact-info">
 <i class="bi bi-envelope"></i>
-<a href="mailto:<%- item.contact.email %>?subject=Regarding <%- item.event.title %>">
+<a href="mailto:<%- item.contact.email %>?subject=Regarding <%- item.pagetitle %>">
 <%- item.contact.name %>
 </a>
 </div>
@@ -189,6 +228,7 @@ Hosted by: <%- item.event.host %>
 </div>
 </div>
 
+```
 
 
 

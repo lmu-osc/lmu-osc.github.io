@@ -19,7 +19,6 @@ event:
     name: "Hybrid (Room 3322 at Leopoldstraße 13, Munich or via Zoom)"
     address: ""
     map_url: ""
-  host: "LMU Open Science Center"
   format:
     type: 'ReproducibiliTea Journal Club'
     detail: ""
@@ -48,6 +47,10 @@ contact:
 
 organizers:
   name: ""
+
+
+host:
+  - name: "LMU Open Science Center"
 ---
 <!-- MANDAORY SECTION START  -->
 <h1 class="fs-1 text-primary"> {{< meta event.title >}} </h1>

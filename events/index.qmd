@@ -6,39 +6,44 @@ css:
 listing:
   - id: upcoming-events
     template: upcoming-events-template.ejs
-    contents: events
+    contents: events/
     sort-ui: [title, date]
     sort: "date desc"
     filter-ui: true
-    page-size: 5
+    page-size: 999
     categories: unnumbered
   - id: year_2025
     contents: events/ 
     sort: "date desc"
+    page-size: 999
     template: past-events-template.ejs
     template-params:
       year: 2025
   - id: year_2024
     contents: events/ 
     sort: "date desc"
+    page-size: 999
     template: past-events-template.ejs
     template-params:
       year: 2024
   - id: year_2023
     contents: events/ 
     sort: "date desc"
+    page-size: 999
     template: past-events-template.ejs
     template-params:
       year: 2023
   - id: year_2022
-    contents: events/ 
+    contents: events/
     sort: "date desc"
+    page-size: 999
     template: past-events-template.ejs
     template-params:
       year: 2022
   - id: year_2021
     contents: events/ 
     sort: "date desc"
+    page-size: 999
     template: past-events-template.ejs
     template-params:
       year: 2021
@@ -55,7 +60,7 @@ include-in-header:
 ---
 <style>
 :root{
-  --theme-main: #2b864b;
+  --theme-main: #00883A;
   --theme-main-dark: #246f3f;
 }
   .quarto-title-block,

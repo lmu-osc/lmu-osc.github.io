@@ -19,7 +19,6 @@ event:
     name: "Campus Martinsried-Großhadern, Butenandtstr. 5, B 0.022,81377 München"
     address: ""
     map_url: ""
-  host: "LMU Open Science Center"
   format:
     type: 'Workshop'
     detail: ""
@@ -48,6 +47,10 @@ contact:
 
 organizers:
   name: ""
+
+
+host:
+  - name: "LMU Open Science Center"
 ---
 <!-- MANDAORY SECTION START  -->
 <h1 class="fs-1 text-primary"> {{< meta event.title >}} </h1>
