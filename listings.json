@@ -37,17 +37,6 @@
     ]
   },
   {
-    "listing": "/people/staff.html",
-    "items": [
-      "/people/people/00004_pat_callahan.html",
-      "/people/people/00010_reema_gupta.html",
-      "/people/people/00092_sara_lil_middleton.html",
-      "/people/people/00113_felix_schoenbrodt.html",
-      "/people/people/00130_sarah_von_grebmer_zu_wolfsthurn.html",
-      "/people/people/00002_malika_ihle.html"
-    ]
-  },
-  {
     "listing": "/people/advisory-board.html",
     "items": [
       "/people/people/00001_felix_schoenbrodt.html"
@@ -61,29 +50,50 @@
     ]
   },
   {
-    "listing": "/training/reproducible_processes.html",
+    "listing": "/training/principles.html",
     "items": [
-      "/training/reproducible_processes/introduction_to_r.html",
+      "/training/principles/replicability_crisis.html",
+      "/training/principles/credible_science.html"
+    ]
+  },
+  {
+    "listing": "/training/data_management.html",
+    "items": [
+      "/training/data_management/open_data.html",
+      "/training/data_management/fair_data_management.html",
+      "/training/data_management/data_dictionary.html",
+      "/training/data_management/maintaining_privacy_with_open_data.html",
+      "/training/data_management/data_anonymity.html",
+      "/training/data_management/synthetic_data.html"
+    ]
+  },
+  {
+    "listing": "/self-training.html",
+    "items": [
+      "/training/principles.html",
+      "/training/study_planning.html",
+      "/training/data_management.html",
+      "/training/reproducible_processes.html",
+      "/training/publishing_outputs.html",
+      "/training/reproducible_processes/introduction_to_renv.html",
       "/training/reproducible_processes/introduction_to_version_control_within_rstudio.html",
-      "/training/reproducible_processes/collaborative_coding_with_github_and_rstudio.html",
-      "/training/reproducible_processes/advanced_git.html",
-      "/training/reproducible_processes/introduction_to_quarto.html",
-      "/training/reproducible_processes/introduction_to_zotero.html",
-      "/training/reproducible_processes/introduction_to_renv.html"
-    ]
-  },
-  {
-    "listing": "/training/publishing_outputs.html",
-    "items": [
+      "/training/data_management/data_anonymity.html",
+      "/training/data_management/data_dictionary.html",
+      "/training/data_management/fair_data_management.html",
+      "/training/data_management/maintaining_privacy_with_open_data.html",
+      "/training/data_management/open_data.html",
+      "/training/data_management/synthetic_data.html",
+      "/training/principles/credible_science.html",
+      "/training/principles/replicability_crisis.html",
       "/training/publishing_outputs/code_publishing.html",
-      "/training/publishing_outputs/open_access_preprints_postprints.html"
-    ]
-  },
-  {
-    "listing": "/training/study_planning.html",
-    "items": [
-      "/training/study_planning/preregistration_why_how.html",
+      "/training/publishing_outputs/open_access_preprints_postprints.html",
+      "/training/reproducible_processes/advanced_git.html",
+      "/training/reproducible_processes/collaborative_coding_with_github_and_rstudio.html",
+      "/training/reproducible_processes/introduction_to_quarto.html",
+      "/training/reproducible_processes/introduction_to_r.html",
+      "/training/reproducible_processes/introduction_to_zotero.html",
       "/training/study_planning/introduction_to_simulations_in_r.html",
+      "/training/study_planning/preregistration_why_how.html",
       "/training/study_planning/simulations_for_advanced_power_analyses.html"
     ]
   },
@@ -196,7 +206,6 @@
       "/events/events/20240306_reproducible_manuscripts_with_quarto.html",
       "/events/events/20200514_fieberhafte_forschung_-_warum_forschung_derzeit_wenig_verlasslich_ist_und_was_wir_dagegen_tun_konnen.html",
       "/events/events/20181205_shared_responsibility_and_consequences_of_ignorance.html",
-      "/events/events/new_template.html",
       "/events/events/20210422_trends_funding_requirements_and_services_at_lmu.html",
       "/events/events/20240422_reproducible_computational_environment.html",
       "/events/events/20220729_better_theory_development_as_a_response_to_the_prevalence_of_qrps.html",
@@ -216,51 +225,30 @@
     ]
   },
   {
-    "listing": "/self-training.html",
+    "listing": "/training/study_planning.html",
     "items": [
-      "/training/principles.html",
-      "/training/study_planning.html",
-      "/training/data_management.html",
-      "/training/reproducible_processes.html",
-      "/training/publishing_outputs.html",
-      "/training/reproducible_processes/introduction_to_renv.html",
-      "/training/reproducible_processes/introduction_to_version_control_within_rstudio.html",
-      "/training/data_management/data_anonymity.html",
-      "/training/data_management/data_dictionary.html",
-      "/training/data_management/fair_data_management.html",
-      "/training/data_management/maintaining_privacy_with_open_data.html",
-      "/training/data_management/open_data.html",
-      "/training/data_management/synthetic_data.html",
-      "/training/principles/credible_science.html",
-      "/training/principles/replicability_crisis.html",
-      "/training/publishing_outputs/code_publishing.html",
-      "/training/publishing_outputs/open_access_preprints_postprints.html",
-      "/training/reproducible_processes/advanced_git.html",
-      "/training/reproducible_processes/collaborative_coding_with_github_and_rstudio.html",
-      "/training/reproducible_processes/introduction_to_quarto.html",
-      "/training/reproducible_processes/introduction_to_r.html",
-      "/training/reproducible_processes/introduction_to_zotero.html",
-      "/training/study_planning/introduction_to_simulations_in_r.html",
       "/training/study_planning/preregistration_why_how.html",
+      "/training/study_planning/introduction_to_simulations_in_r.html",
       "/training/study_planning/simulations_for_advanced_power_analyses.html"
     ]
   },
   {
-    "listing": "/training/data_management.html",
+    "listing": "/training/publishing_outputs.html",
     "items": [
-      "/training/data_management/open_data.html",
-      "/training/data_management/fair_data_management.html",
-      "/training/data_management/data_dictionary.html",
-      "/training/data_management/maintaining_privacy_with_open_data.html",
-      "/training/data_management/data_anonymity.html",
-      "/training/data_management/synthetic_data.html"
+      "/training/publishing_outputs/code_publishing.html",
+      "/training/publishing_outputs/open_access_preprints_postprints.html"
     ]
   },
   {
-    "listing": "/training/principles.html",
+    "listing": "/training/reproducible_processes.html",
     "items": [
-      "/training/principles/replicability_crisis.html",
-      "/training/principles/credible_science.html"
+      "/training/reproducible_processes/introduction_to_r.html",
+      "/training/reproducible_processes/introduction_to_version_control_within_rstudio.html",
+      "/training/reproducible_processes/collaborative_coding_with_github_and_rstudio.html",
+      "/training/reproducible_processes/advanced_git.html",
+      "/training/reproducible_processes/introduction_to_quarto.html",
+      "/training/reproducible_processes/introduction_to_zotero.html",
+      "/training/reproducible_processes/introduction_to_renv.html"
     ]
   },
   {
@@ -310,7 +298,6 @@
       "/people/people/00074_daniel_keeser.html",
       "/people/people/00075_anne-kathrin_kleine.html",
       "/people/people/00076_inga_koerte.html",
-      "/people/people/00161_johannes_kopf-beck.html",
       "/people/people/00077_dieter_kranzlmueller.html",
       "/people/people/00078_thomas_krefeld.html",
       "/people/people/00079_frauke_kreuter.html",
@@ -395,6 +382,17 @@
       "/people/people/00155_wolfgang_strube.html",
       "/people/people/00156_imai_taisuke.html",
       "/people/people/00157_julian_unkel.html"
+    ]
+  },
+  {
+    "listing": "/people/staff.html",
+    "items": [
+      "/people/people/00004_pat_callahan.html",
+      "/people/people/00010_reema_gupta.html",
+      "/people/people/00092_sara_lil_middleton.html",
+      "/people/people/00113_felix_schoenbrodt.html",
+      "/people/people/00130_sarah_von_grebmer_zu_wolfsthurn.html",
+      "/people/people/00002_malika_ihle.html"
     ]
   },
   {

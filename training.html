@@ -36,6 +36,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
@@ -83,11 +84,12 @@ ul.task-list li input[type="checkbox"] {
   })();
 </script>
 <!-- End Matomo Code -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 
 
 <link rel="stylesheet" href="https://raw.githubusercontent.com/lmu-osc/branding-resources/refs/heads/main/styles.css">
-<link rel="stylesheet" href="assets/fontawesome-free-7.1.0-web/css/all.min.css">
 <link rel="stylesheet" href="custom-navbar.css">
 <link rel="stylesheet" href="styles.css">
 <link rel="stylesheet" href="footer/footer-style.css">
@@ -99,12 +101,6 @@ ul.task-list li input[type="checkbox"] {
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./assets/img/osc_image_assets/LMU_Open_Science_Center_Logo.jpg" alt="" class="navbar-logo light-content">
-    <img src="./assets/img/osc_image_assets/LMU_Open_Science_Center_Logo.jpg" alt="" class="navbar-logo dark-content">
-    </a>
-  </div>
             <div id="quarto-search" class="" title="Search"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
@@ -160,7 +156,7 @@ ul.task-list li input[type="checkbox"] {
   </li>
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-partners" role="link" data-bs-toggle="dropdown" aria-expanded="false">
-      <i class="bi bi-boxes" role="img">
+      <i class="bi bi-people" role="img">
 </i> 
  <span class="menu-text">Partners</span>
     </a>
@@ -197,11 +193,17 @@ ul.task-list li input[type="checkbox"] {
 </i> 
 <span class="menu-text">Events</span></a>
   </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./news.html"> <i class="bi bi-rss" role="img">
+</i> 
+<span class="menu-text">News</span></a>
+  </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
+    <a href="https://github.com/lmu-osc" title="" class="quarto-navigation-tool px-1" aria-label="GitHub"><i class="bi bi-github"></i></a>
   <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
   <div class="quarto-reader-toggle-btn">
   <i class="bi"></i>
@@ -408,11 +410,11 @@ ul.task-list li input[type="checkbox"] {
 <li>You are a researcher wanting to explore all research practices along the research cycle: visit our open research cycle handbook!</li>
 <li>You are a student, researcher or university educator, follow or deliver our course!</li>
 </ul>
-<p>In addition, the material of all our lectures, workshops, symposium, and summer schools can be accessed here: <a href="https://osf.io/zjrhu/overview" target="_blank" rel="noopener"> OSF <i class="fa-solid fa-arrow-up-right-from-square fs-6"></i></a></p>
+<p>In addition, the material of all our lectures, workshops, symposium, and summer schools can be accessed here: <a href="https://osf.io/zjrhu/overview">OSF</a> <i class="fa-solid fa-arrow-up-right-from-square fs-6"></i></p>
 </section>
 <div class="training-grid"> 
     <div class="training-card" onclick="window.location.href='self-training.html';">   
-      <h3>Self-learning material by topics</h3>
+      <h3 class="anchored">Self-learning material by topics</h3>
       <div class="training-content training-one">
           <img src="training/images/wordcloud.png" alt="wordcloud image of tutorial categories">
       </div>
@@ -420,35 +422,35 @@ ul.task-list li input[type="checkbox"] {
 
 
     <div class="training-card" onclick="window.location.href='open-research-cycle.html';">
-        <h3>Open research cycle</h3>
+        <h3 class="anchored">Open research cycle</h3>
         <div class="training-content training-two">
-            <img src="assets/img/OS-research-cycle.png" alt="OS_cycle">
+            <img src="training/images/OS-research-cycle.png" alt="OS_cycle">
         </div>
     </div>      
 
     <div class="training-card" onclick="window.location.href='train-the-trainer.html';">
-        <h3>Follow or deliver a course</h3>
+        <h3 class="anchored">Follow or deliver a course</h3>
         <div class="training-content training-three mt-4">
             <div class="content-container">
-              <h5 class="fw-bold">Open science foundations</h5>
+              <h5 class="fw-bold anchored">Open science foundations</h5>
             </div>
             <div class="training-arrow">
               <i class="fa-solid fa-arrow-down"></i>
             </div>
             <div class="content-container">
-              <h5 class="fw-bold">Open science methods</h5>
+              <h5 class="fw-bold anchored">Open science methods</h5>
             </div>
             <div class="training-arrow">
               <i class="fa-solid fa-arrow-down"></i>
             </div>
             <div class="content-container">
-              <h5 class="fw-bold">Open science tools</h5>
+              <h5 class="fw-bold anchored">Open science tools</h5>
             </div>
             <div class="training-arrow">
               <i class="fa-solid fa-plus"></i>
             </div>
             <div class="content-container">
-              <h5 class="fw-bold">Pedagogy of teaching OS</h5>
+              <h5 class="fw-bold anchored">Pedagogy of teaching OS</h5>
             </div>
          </div>
      </div>
@@ -459,6 +461,13 @@ ul.task-list li input[type="checkbox"] {
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
     const isCodeAnnotation = (el) => {
       for (const clz of el.classList) {
         if (clz.startsWith('code-annotation-')) {                     
@@ -851,8 +860,9 @@ ul.task-list li input[type="checkbox"] {
   });
   </script>
 </div> <!-- /content -->
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><ul><li><a href="https://github.com/lmu-osc/lmu-osc.github.io/edit/main/training.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lmu-osc/lmu-osc.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><ul><li><a href="https://github.com/lmu-osc/lmu-osc.github.io/edit/main/training.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lmu-osc/lmu-osc.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer><footer class="osc-footer-card py-5">
+<footer class="osc-footer-card py-5">
   <div class="osc-footer-container">
 
     <div class="gy-4 osc-footer-row">
@@ -898,7 +908,7 @@ ul.task-list li input[type="checkbox"] {
             </a>
           </li>
           <li>
-            <a href="./about/joinus.html" target="_blank" class="osc-footer-link text-decoration-underline text-white">
+            <a href="../about/joinus.html" target="_blank" class="osc-footer-link text-decoration-underline text-white">
               Become a member
             </a>
           </li>
@@ -932,11 +942,11 @@ ul.task-list li input[type="checkbox"] {
 
     <!-- Extra links -->
     <div class="d-flex flex-wrap gap-3 osc-footer-extra-links">
-      <a href="./imprint.html" class="osc-footer-link text-decoration-underline text-white">Imprint</a>
+      <a href="../imprint.html" class="osc-footer-link text-decoration-underline text-white">Imprint</a>
       <span class="text-white">|</span>
-      <a href="./privacy.html" class="osc-footer-link text-decoration-underline text-white">Privacy Policy</a>
+      <a href="#" class="osc-footer-link text-decoration-underline text-white">Privacy Policy</a>
       <span class="text-white">|</span>
-      <a href="./accessibilty.html" class="osc-footer-link text-decoration-underline text-white">Accessibility</a>
+      <a href="../accessibilty.html" class="osc-footer-link text-decoration-underline text-white">Accessibility</a>
     </div>
 
   </div>

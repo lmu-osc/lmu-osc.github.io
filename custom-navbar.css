@@ -25,11 +25,10 @@
 
 /* Logo sizing and spacing */
 .navbar-brand img, .quarto-navbar .navbar-logo {
-  height: 300px;
-  min-height: 40px;
+  height: 48px;
   width: auto;
   margin-right: 1rem;
-  /*border-radius: 8px;*/
+  border-radius: 8px;
   background: var(--osc-bg);
   padding: 2px 6px;
   box-shadow: 0 1px 4px rgba(0,0,0,0.07);
