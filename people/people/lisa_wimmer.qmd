@@ -1,0 +1,55 @@
+---
+title: Lisa Wimmer
+academic_title: MSc
+name: Lisa Wimmer
+surname: Wimmer
+first_name: Lisa
+position: PhD Candidate
+faculty: Math, Informatics & Stats
+membertype: ['fellow']
+email: lisa.wimmer@stat.uni-muenchen.de
+photo: 'images/wimmer_lisa.jpg'
+website:
+  - label: 'LMU Profile'
+    url: https://www.slds.stat.uni-muenchen.de/people/wimmer/
+social_media:
+  ORCID: 'https://orcid.org/0009-0009-7928-6075'
+mission_statement:
+  - I am a PhD candidate at the Chair for Statistical Learning &amp; Data Science (Department of Statistics). As a statistician by training and machine learning researcher, I am painfully aware of how much good science depends on the appropriate interpretation of empirical findings. In my field, particular emphasis is put on statistical soundness and technical reproducibility. I am eager to contribute to the promotion of Open Science across the scientific community.
+---
+{{< include templates/_setup.qmd >}}
+{{< include templates/_contact_items.qmd >}}
+{{< include templates/_social_links.qmd >}}
+{{< include templates/_mission_statement.qmd >}}
+{{< include templates/_research_interests.qmd >}}
+{{< include templates/_selected_publications.qmd >}}
+
+
+
+```{r}
+#| echo: false
+
+# Compose the full profile
+profile <- div(class = "people-profile",
+  div(class = "people-header",
+    div(class = "people-photo",
+      img(src = photo)
+    ),
+    div(class = "people-info",
+      p(class = "people-position", position),
+      p(class = "people-faculty", paste0("Faculty of ", faculty)),
+      div(class = "people-contact", contact_items, social_links)
+    )
+  ),
+  mission_block,
+  # custom content would most likely go here, right after the mission_block
+  div(class = "people-content",
+    interests_block,
+    publications_block
+  )
+)
+
+# Render the profile
+browsable(profile)  
+```
+

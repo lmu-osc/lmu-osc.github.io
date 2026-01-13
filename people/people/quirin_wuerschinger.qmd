@@ -1,0 +1,55 @@
+---
+title: Quirin Würschinger
+academic_title: Dr.
+name: Quirin Würschinger
+surname: Würschinger
+first_name: Quirin
+position: Researcher
+faculty: Language & Literatures
+membertype: ['lmu-individual']
+email: q.wuerschinger@lmu.de
+photo: 'images/wuerschinger_quirin.png'
+website:
+  - label: 'LMU Profile'
+    url: https://www.anglistik.uni-muenchen.de/personen/wiss_ma/wuerschinger/index.html
+social_media:
+  ORCID: 'https://orcid.org/0000-0003-3679-0190'
+mission_statement:
+  - As a Wissenschaftlicher Mitarbeiter and Postdoc in Linguistics at LMU Munich, I specialize in researching language use on the web and social networks, a focus that I also bring to my teaching in corpus linguistics and research methodology. My experience in creating corpora, employing Natural Language Processing techniques, and classifying and analyzing data has reinforced my conviction in the transformative potential of Open Science practices. My aspiration is to further these practices in our field by advocating for data and code sharing, promoting more reproducible research methodologies, and encouraging the use of pre-registered reports. I am eager to contribute to the objectives of the Open Science Center and continue advancing my research in this open environment.
+---
+{{< include templates/_setup.qmd >}}
+{{< include templates/_contact_items.qmd >}}
+{{< include templates/_social_links.qmd >}}
+{{< include templates/_mission_statement.qmd >}}
+{{< include templates/_research_interests.qmd >}}
+{{< include templates/_selected_publications.qmd >}}
+
+
+
+```{r}
+#| echo: false
+
+# Compose the full profile
+profile <- div(class = "people-profile",
+  div(class = "people-header",
+    div(class = "people-photo",
+      img(src = photo)
+    ),
+    div(class = "people-info",
+      p(class = "people-position", position),
+      p(class = "people-faculty", paste0("Faculty of ", faculty)),
+      div(class = "people-contact", contact_items, social_links)
+    )
+  ),
+  mission_block,
+  # custom content would most likely go here, right after the mission_block
+  div(class = "people-content",
+    interests_block,
+    publications_block
+  )
+)
+
+# Render the profile
+browsable(profile)  
+```
+

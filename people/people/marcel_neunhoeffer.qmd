@@ -1,0 +1,60 @@
+---
+title: Marcel Neunhoeffer
+academic_title: Dr.
+name: Marcel Neunhoeffer
+surname: Neunhoeffer
+first_name: Marcel
+position: Researcher
+faculty: Math, Informatics & Stats
+membertype: ['lmu-individual']
+email: marcel.neunhoeffer@stat.uni-muenchen.de
+photo: 'images/neunhoeffer_marcel.jpg'
+website:
+  - label: 'Personal Website'
+    url: https://www.marcel-neunhoeffer.com
+  - label: 'LMU Profile'
+    url: https://www.stat.lmu.de/soda/en/team/contact-page/marcel-neunhoeffer-2cbaa704.html
+social_media:
+  ORCID: 'https://orcid.org/0000-0002-9137-5785'
+mission_statement:
+  - I am a postdoctoral researcher at the Department of Statistics at LMU and the Department of Computer Science at Boston University.
+  - Open science is at the heart of any scientific endeavor, as the goal of science should be to be transparent and inclusive without too high entry barriers. I lead by example in teaching reproducible quantitative research and contributing open-source software to the research community.
+  - In my research, I focus on balancing the seemingly contradictory goals of open science/open data and privacy protection, for example, through synthetic data with formal privacy guarantees.
+  - <em><strong><br></strong></em>
+---
+{{< include templates/_setup.qmd >}}
+{{< include templates/_contact_items.qmd >}}
+{{< include templates/_social_links.qmd >}}
+{{< include templates/_mission_statement.qmd >}}
+{{< include templates/_research_interests.qmd >}}
+{{< include templates/_selected_publications.qmd >}}
+
+
+
+```{r}
+#| echo: false
+
+# Compose the full profile
+profile <- div(class = "people-profile",
+  div(class = "people-header",
+    div(class = "people-photo",
+      img(src = photo)
+    ),
+    div(class = "people-info",
+      p(class = "people-position", position),
+      p(class = "people-faculty", paste0("Faculty of ", faculty)),
+      div(class = "people-contact", contact_items, social_links)
+    )
+  ),
+  mission_block,
+  # custom content would most likely go here, right after the mission_block
+  div(class = "people-content",
+    interests_block,
+    publications_block
+  )
+)
+
+# Render the profile
+browsable(profile)  
+```
+

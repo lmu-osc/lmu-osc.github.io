@@ -1,0 +1,56 @@
+---
+title: Jürgen Landes
+academic_title: Dr.
+name: Jürgen Landes
+surname: Landes
+first_name: Jürgen
+position: Researcher
+faculty: Philosophy
+membertype: ['lmu-individual']
+email: Juergen.Landes@lrz.uni-muenchen.de
+photo: 'images/landes_juergen.jpg'
+website:
+  - label: 'LMU Profile'
+    url: https://www.philosophie.lmu.de/de/personenuebersicht/kontaktseite/juergen-landes-31111448.html
+social_media:
+  ORCID: 'https://orcid.org/0000-0003-3105-6624'
+mission_statement:
+  - I am a principal investigator at the Munich Center for Mathematical Philosophy.
+  - Imperfect data is a fact of life. I'm interested in drawing (causal) inferences from imperfect data. In particular, I'm interested in learning from biased data.
+---
+{{< include templates/_setup.qmd >}}
+{{< include templates/_contact_items.qmd >}}
+{{< include templates/_social_links.qmd >}}
+{{< include templates/_mission_statement.qmd >}}
+{{< include templates/_research_interests.qmd >}}
+{{< include templates/_selected_publications.qmd >}}
+
+
+
+```{r}
+#| echo: false
+
+# Compose the full profile
+profile <- div(class = "people-profile",
+  div(class = "people-header",
+    div(class = "people-photo",
+      img(src = photo)
+    ),
+    div(class = "people-info",
+      p(class = "people-position", position),
+      p(class = "people-faculty", paste0("Faculty of ", faculty)),
+      div(class = "people-contact", contact_items, social_links)
+    )
+  ),
+  mission_block,
+  # custom content would most likely go here, right after the mission_block
+  div(class = "people-content",
+    interests_block,
+    publications_block
+  )
+)
+
+# Render the profile
+browsable(profile)  
+```
+

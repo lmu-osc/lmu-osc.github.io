@@ -1,0 +1,57 @@
+---
+title: Thomas Misgeld
+academic_title: Prof. Dr.
+name: Thomas Misgeld
+surname: Misgeld
+first_name: Thomas
+position: Director
+faculty: TUM Medicine & Health
+membertype: ['associated']
+email: thomas.misgeld@tum.de
+photo: 'images/misgeld_thomas.jpg'
+website:
+  - label: 'Professional Website'
+    url: https://www.ifn.med.tum.de/new/
+  - label: 'Professional Profile'
+    url: https://www.professoren.tum.de/m/misgeld-thomas
+social_media:
+  ORCID: 'https://orcid.org/0000-0001-9875-6794'
+mission_statement:
+  - I think the scientific publishing process is in a process of transformation – and ensuring the principles of open science are equitably implemented in the system that emerges is very important. To be able to engage with like-minded groups of scientists in a discussion of how the publishing models of the future should look like, is one of the key motivations for me to join the OSC.
+---
+{{< include templates/_setup.qmd >}}
+{{< include templates/_contact_items.qmd >}}
+{{< include templates/_social_links.qmd >}}
+{{< include templates/_mission_statement.qmd >}}
+{{< include templates/_research_interests.qmd >}}
+{{< include templates/_selected_publications.qmd >}}
+
+
+
+```{r}
+#| echo: false
+
+# Compose the full profile
+profile <- div(class = "people-profile",
+  div(class = "people-header",
+    div(class = "people-photo",
+      img(src = photo)
+    ),
+    div(class = "people-info",
+      p(class = "people-position", position),
+      p(class = "people-faculty", paste0("Faculty of ", faculty)),
+      div(class = "people-contact", contact_items, social_links)
+    )
+  ),
+  mission_block,
+  # custom content would most likely go here, right after the mission_block
+  div(class = "people-content",
+    interests_block,
+    publications_block
+  )
+)
+
+# Render the profile
+browsable(profile)  
+```
+

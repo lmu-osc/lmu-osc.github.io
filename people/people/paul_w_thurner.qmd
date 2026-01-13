@@ -1,0 +1,57 @@
+---
+title: Paul W. Thurner
+academic_title: Prof. Dr.
+name: Paul W. Thurner
+surname: Thurner
+first_name: Paul W.
+position: Chair
+faculty: Social Sciences
+membertype: ['lmu-individual']
+email: paul.thurner@gsi.uni-muenchen.de
+photo: 'images/thurner_paul_w.jpg'
+website:
+  - label: 'LMU Profile'
+    url: https://www.gsi.uni-muenchen.de/personen/professoren/thurner/index.html
+social_media:
+  ORCID: 'https://orcid.org/0000-0001-7336-9878'
+mission_statement:
+  - I am Professor of Empirical Political Research and Policy Analysis at the Political Science Department, LMU.
+  - Availability of data and routines of published work is key for scientific efficiency and progress.
+  - Re-analysis of published work by students contributes to the development of new ideas and designs.
+---
+{{< include templates/_setup.qmd >}}
+{{< include templates/_contact_items.qmd >}}
+{{< include templates/_social_links.qmd >}}
+{{< include templates/_mission_statement.qmd >}}
+{{< include templates/_research_interests.qmd >}}
+{{< include templates/_selected_publications.qmd >}}
+
+
+
+```{r}
+#| echo: false
+
+# Compose the full profile
+profile <- div(class = "people-profile",
+  div(class = "people-header",
+    div(class = "people-photo",
+      img(src = photo)
+    ),
+    div(class = "people-info",
+      p(class = "people-position", position),
+      p(class = "people-faculty", paste0("Faculty of ", faculty)),
+      div(class = "people-contact", contact_items, social_links)
+    )
+  ),
+  mission_block,
+  # custom content would most likely go here, right after the mission_block
+  div(class = "people-content",
+    interests_block,
+    publications_block
+  )
+)
+
+# Render the profile
+browsable(profile)  
+```
+

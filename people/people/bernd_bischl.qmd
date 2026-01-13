@@ -1,0 +1,56 @@
+---
+title: Bernd Bischl
+academic_title: Prof. Dr.
+name: Bernd Bischl
+surname: Bischl
+first_name: Bernd
+position: Chair
+faculty: Math, Informatics & Stats
+membertype: ['lmu-individual']
+email: bernd.bischl@stat.uni-muenchen.de
+photo: 'images/bischl_bernd.jpg'
+website:
+  - label: 'LMU Profile'
+    url: https://www.stat.lmu.de/en/people/contact-page/bernd-bischl-1aa589cb.html
+social_media:
+  ORCID: 'https://orcid.org/0000-0001-6002-6980'
+mission_statement:
+  - I am professor for Computational Statistics at the Department of Statistics.
+  - I have published about proper benchmarking in machine learning and optimization. Furthermore, I am one of the founders and core members of the OpenML platform for open and reproducible machine learning (<a href="http://www.openml.org">www.openml.org</a>).
+---
+{{< include templates/_setup.qmd >}}
+{{< include templates/_contact_items.qmd >}}
+{{< include templates/_social_links.qmd >}}
+{{< include templates/_mission_statement.qmd >}}
+{{< include templates/_research_interests.qmd >}}
+{{< include templates/_selected_publications.qmd >}}
+
+
+
+```{r}
+#| echo: false
+
+# Compose the full profile
+profile <- div(class = "people-profile",
+  div(class = "people-header",
+    div(class = "people-photo",
+      img(src = photo)
+    ),
+    div(class = "people-info",
+      p(class = "people-position", position),
+      p(class = "people-faculty", paste0("Faculty of ", faculty)),
+      div(class = "people-contact", contact_items, social_links)
+    )
+  ),
+  mission_block,
+  # custom content would most likely go here, right after the mission_block
+  div(class = "people-content",
+    interests_block,
+    publications_block
+  )
+)
+
+# Render the profile
+browsable(profile)  
+```
+

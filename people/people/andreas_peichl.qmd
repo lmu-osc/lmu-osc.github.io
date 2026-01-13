@@ -1,0 +1,58 @@
+---
+title: Andreas Peichl
+academic_title: Prof. Dr.
+name: Andreas Peichl
+surname: Peichl
+first_name: Andreas
+position: Director of Institute
+faculty: Economics
+membertype: ['lmu-individual']
+email: peichl@ifo.de
+photo: 'images/peichl_andreas.jpg'
+website:
+  - label: 'LMU Profile'
+    url: https://www.econ.lmu.de/de/personen/kontaktseite/andreas-peichl-bedc172d.html
+  - label: 'Professional Profile'
+    url: https://www.ifo.de/peichl-a
+social_media:
+  ORCID: 'https://orcid.org/0000-0002-0680-8321'
+mission_statement:
+  - I am Professor of Macroeconomics and Public Finance at the Department of Economics, Director of the ifo Center for Macroeconomics and Surveys and in the Board of Directors of the LMU-ifo Economics &amp; Business Data Center (EBDC).
+  - Replicability of empirical studies is a must for “good scientific practice”. The EBDC is offering such opportunities (<a href="https://www.cesifo-group.de/ifoHome/facts/EBDC/EBDC-Archiv.html">https://www.cesifo-group.de/ifoHome/facts/EBDC/EBDC-Archiv.html</a>) and I hope that many researchers will make use of the opportunities that we offer.
+---
+{{< include templates/_setup.qmd >}}
+{{< include templates/_contact_items.qmd >}}
+{{< include templates/_social_links.qmd >}}
+{{< include templates/_mission_statement.qmd >}}
+{{< include templates/_research_interests.qmd >}}
+{{< include templates/_selected_publications.qmd >}}
+
+
+
+```{r}
+#| echo: false
+
+# Compose the full profile
+profile <- div(class = "people-profile",
+  div(class = "people-header",
+    div(class = "people-photo",
+      img(src = photo)
+    ),
+    div(class = "people-info",
+      p(class = "people-position", position),
+      p(class = "people-faculty", paste0("Faculty of ", faculty)),
+      div(class = "people-contact", contact_items, social_links)
+    )
+  ),
+  mission_block,
+  # custom content would most likely go here, right after the mission_block
+  div(class = "people-content",
+    interests_block,
+    publications_block
+  )
+)
+
+# Render the profile
+browsable(profile)  
+```
+

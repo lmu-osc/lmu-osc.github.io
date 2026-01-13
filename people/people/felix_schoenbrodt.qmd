@@ -1,0 +1,100 @@
+---
+# Member parameters
+title: "Prof. Dr. Felix Schönbrodt"
+academic_title: "Prof. Dr."
+name: "Felix Schönbrodt"
+position: "Managing Director of the OSC"
+faculty: "Psychology"
+membertype: ["current advisory board", "past advisory board", "past scientific board", "management", "staff"]
+categories: ["management"]
+photo: "images/felix_schoenbrodt.jpeg"
+email: "Felix.Schoenbrodt@psy.lmu.de"
+display_weight: 1
+personal: "Professor at the Department of Psychology, Ludwig-Maximilians-Universität München, Germany. Managing director of the LMU Open Science Center and board member of the META-REP priority program ('A meta-scientific research program to analyse and optimise replicability in the behavioral, social, and cognitive Sciences'). Interested in Open Science, Metascience, implicit motives, machine learning, responsible research assessment (CoARA), solarpunk, piano, and cooking." 
+website:
+  - label: "Personal Website"
+    url: "https://nicebread.de"
+  - label: "Faculty Website"
+    url: "https://www.osc.uni-muenchen.de/index.html"
+  - label: "Department of Psychology"
+    url: "https://www.psy.lmu.de/"
+
+# Social media links - variable number
+social_media:
+  Bluesky: "https://bsky.app/profile/lmu-osc.bsky.social"
+  Linkedin: "https://www.linkedin.com/in/felixschoenbrodt"
+  GitHub: "https://github.com/nicebread"
+  ORCID: "https://orcid.org/0000-0002-8282-3910"
+
+# Mission statement paragraphs - variable number
+mission_statement:
+  - I am principal investigator for Psychological Methods and Assessment at the Department of Psycholgoy.
+  - The reproducibility of research findings is a core criterion of science, which however, has been challenged by the failure of recent large-scale replication projects. To foster open science practices, I teamed up with colleagues and established our department's "Open Science Committee" in 2015. The outcomes of this committee include an open science paragraph which we included in all recent <a href="http://www.nicebread.de/open-science-hiring-practices/">professorship job descriptions</a>, adding transparency criteria to the department's <a href="http://www.nicebread.de/distribute-funding-based-on-research-transparency/">performance-based funding system</a>, or introducing <a href="http://www.fak11.lmu.de/dep_psychologie/studium/lehrelounge/kerncurriculum_empra/index.html">modules on preregistrations, open data, and reproducible scripts</a> as mandatory components in undergraduate courses.
+  - Together with the board of the German Psychological Society (DGPs) I developed the society's <a href="https://www.dgps.de/fileadmin/user_upload/PDF/Empfehlungen/Datenmanagement_deu_9.11.16.pdf">recommendations for data sharing in psychology</a> [<a href="https://www.dgps.de/fileadmin/user_upload/PDF/Empfehlungen/Data_Management_eng_9.11.16.pdf">English version</a>]. In 2016, I received the <a href="http://www.bitss.org/people/felix-schonbrodt/">Leamer-Rosenthal-Prize for Open Social Science</a> from the Berkeley Initiative for Transparency in the Social Sciences (<a href="http://www.bitss.org">BITSS</a>).
+
+# Research interests - variable number
+research_interests:
+  - "Open Science"
+  - "Psychology"
+  - "Psychological Methods"
+  - "Data Sharing"
+
+# Publications - variable number
+publications:
+  - year: 2024
+    title: "Machine Learning Applications in Organizational Behavior"
+    authors: "Smith, J., Johnson, A., & Williams, R."
+    journal: "Journal of Applied Research, 42(3), 256-278"
+    doi_url: "#"
+  - year: 2023
+    title: "Open Methods in Psychology"
+    authors: "Schönbrodt, F."
+    journal: "Psychological Methods, 15(2), 112-143"
+    doi_url: "#"
+---
+
+
+<!-- The "includes" below are templates for the different sections of the
+member profile pages. Each document returns an R object that contains the
+necessary HTML elements to render the section.
+ 1. You can modify these templates to change the layout or content of each section. This will change the layout of all member profiles the next time the site is built.
+ 2. You can also create new templates for additional sections if needed.
+ 3. If you want to add some custom content for an individual member, you can do so directly in the member's .QMD file, outside of the includes. You will then need to insert the new R object containing HTML into the `profile` object below.
+-->
+
+{{< include templates/_setup.qmd >}}
+{{< include templates/_contact_items.qmd >}}
+{{< include templates/_social_links.qmd >}}
+{{< include templates/_mission_statement.qmd >}}
+{{< include templates/_research_interests.qmd >}}
+{{< include templates/_selected_publications.qmd >}}
+
+
+
+```{r}
+#| echo: false
+
+# Compose the full profile
+profile <- div(class = "people-profile",
+  div(class = "people-header",
+    div(class = "people-photo",
+      img(src = photo)
+    ),
+    div(class = "people-info",
+      p(class = "people-position", position),
+      p(class = "people-faculty", paste0("Faculty of ", faculty)),
+      div(class = "people-contact", contact_items, social_links)
+    )
+  ),
+  mission_block,
+  # custom content would most likely go here, right after the mission_block
+  div(class = "people-content",
+    interests_block,
+    publications_block
+  )
+)
+
+# Render the profile
+browsable(profile)  
+```
+
