@@ -55,6 +55,9 @@ if (errors_found) {
   cat("  - Use underscores (_) instead of hyphens or spaces\n")
   cat("  - Contain only ASCII characters (a-z, A-Z, 0-9, _)\n")
   cat("  - Are unique (no duplicates)\n")
+  cat("If there are duplicate names, consider adding middle initials to differentiate them.\n")
+  cat("If middle initials are already used, consider adding full middle names.\n")
+  cat("The final option, if needed, is to append a numeric suffix (e.g., _1, _2) to make names unique.\n")
   quit(status = 1)
 } else {
   cat("All profile naming convention checks PASSED.\n")
