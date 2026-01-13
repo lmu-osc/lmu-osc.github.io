@@ -4,7 +4,7 @@ on:
   repository_dispatch:
   workflow_dispatch:
   schedule:
-    - cron: "00 18 * * *"
+    - cron: "00 18 10 * *"
 
 jobs:
   linkChecker:
@@ -19,6 +19,7 @@ jobs:
         uses: lycheeverse/lychee-action@v2
         with:
           fail: false
+          args: --root-dir "$(pwd)" --verbose --no-progress './**/*.md' './**/*.html' './**/*.rst' './**/*.qmd'
 
       - name: Create Issue From File
         if: steps.lychee.outputs.exit_code != 0
