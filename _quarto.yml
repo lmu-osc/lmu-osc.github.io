@@ -80,6 +80,33 @@ website:
         - self-training.qmd
         - train-the-trainer.qmd
         - open-research-cycle.qmd
+        
+    - id: partners
+      title: "Partners"
+      icon: boxes
+      style: "docked"
+      background: light
+      collapse-level: 2
+      contents: 
+        - partners/institutional_members.qmd
+        - text: "Local Open Science Initiatives"
+          href: partners/local_os_intiatives.qmd
+          contents:
+            - text: "OSIM"
+              href: partners/local_os_initiatives/osim.qmd
+            - text: "OSIS"
+              href: partners/local_os_initiatives/osis.qmd
+            - text: "OSIP"
+              href: partners/local_os_initiatives/osip.qmd
+            - text: "ReproducibiliTea"
+              href: partners/local_os_initiatives/reproducibilitea.qmd
+            - text: "Hacky Hour"
+              href: partners/local_os_initiatives/hackyhour.qmd
+            - text: "Munich RSE"
+              href: partners/local_os_initiatives/munich_rse.qmd
+        - partners/other_lmu_support_services.qmd
+        - partners/externals.qmd
+        - partners/funders.qmd
   # 
   #   - id: gittutorials
   #     title: "Git Tutorials"
