@@ -19,7 +19,7 @@ jobs:
         uses: lycheeverse/lychee-action@v2
         with:
           fail: false
-          args: --root-dir "$(pwd)" --verbose --no-progress './**/*.md' './**/*.html' './**/*.rst' './**/*.qmd'
+          args: --root-dir "$(pwd)" --no-progress './**/*.md' './**/*.html' './**/*.rst' './**/*.qmd'
 
       - name: Create Issue From File
         if: steps.lychee.outputs.exit_code != 0

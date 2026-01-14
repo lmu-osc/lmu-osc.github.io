@@ -11,11 +11,11 @@ email: markus.ploner@tum.de
 photo: 'images/ploner_markus.jpg'
 website:
   - label: 'Professional Website'
-    url: http://painlabmunich.de
+    url: https://www.painlabmunich.de
 social_media:
   ORCID: 'https://orcid.org/0000-0002-7767-7170'
 mission_statement:
-  - I´m a Professor of Human Pain Research at the Technical University of Munich. Our research group (link to <a href="http://painlabmunich.de">painlabmunich.de</a>) aims to understand how the human brain generates the experience of pain to eventually better pain treatment. We are deeply convinced that Open and Reproducible Research is crucial for scientific progress. We therefore pre-register our studies, perform rigorous power analyses, conduct registered reports, perform standardized analyses, make our data and code openly available and publish open access.
+  - I´m a Professor of Human Pain Research at the Technical University of Munich. Our research group (link to <a href="https://www.painlabmunich.de">painlabmunich.de</a>) aims to understand how the human brain generates the experience of pain to eventually better pain treatment. We are deeply convinced that Open and Reproducible Research is crucial for scientific progress. We therefore pre-register our studies, perform rigorous power analyses, conduct registered reports, perform standardized analyses, make our data and code openly available and publish open access.
 ---
 {{< include templates/_setup.qmd >}}
 {{< include templates/_contact_items.qmd >}}
