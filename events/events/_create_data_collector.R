@@ -19,8 +19,10 @@ extract_yaml <- function(path) {
 
 
 
-template <- list.files("events/events", full.names = TRUE) %>%
-  grep("(?i)\\.(qmd|rmd|md)$", ., value = TRUE) %>%
+file_paths <- list.files("events/events", full.names = TRUE) %>%
+  grep("(?i)\\.(qmd|rmd|md)$", ., value = TRUE)
+
+template <- file_paths %>%
   purrr::map(~{
     yaml_content <- extract_yaml(.x)
     dplyr::tibble(event_title = yaml_content[["event"]][["title"]],
@@ -59,7 +61,10 @@ template <- list.files("events/events", full.names = TRUE) %>%
     organizers3 = NA,
     organizers4 = NA,
     organizers5 = NA
-  ) 
+  ) %>%
+  tibble(file_paths = file_paths, .)
+
+
 
 
 
