@@ -60,3 +60,7 @@ template <- list.files("events/events", full.names = TRUE) %>%
     organizers4 = NA,
     organizers5 = NA
   ) 
+
+
+
+write.csv(template, "events/events/_event_data_collector_template.csv", row.names = FALSE)
