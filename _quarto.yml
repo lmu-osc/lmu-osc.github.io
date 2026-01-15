@@ -29,7 +29,7 @@ website:
       - href: index.qmd
         icon: house-door
         text: Home
-      - href: about/about.qmd
+      - href: about.qmd
         icon: info-circle
         text: About
       - text: People
@@ -58,7 +58,7 @@ website:
             href: partners/funders.qmd
       - icon: mortarboard
         text: Training
-        href: training.qmd
+        href: training/index.qmd
       - href: events/index.qmd
         icon: calendar-event
         text: Events
@@ -77,7 +77,7 @@ website:
       title: "Training"
       contents: 
         - section: "Training Tracks"
-          href: training.qmd
+          href: training/index.qmd
           contents:
             - section: "Self-Training"
               href: training/self_training.qmd 
@@ -141,9 +141,9 @@ format:
     css: 
       - https://raw.githubusercontent.com/lmu-osc/branding-resources/refs/heads/main/styles.css
       - assets/fontawesome-free-7.1.0-web/css/all.min.css
-      - custom-navbar.css
       - styles.css
       - footer/footer-style.css
+      - custom-navbar.css
     toc: true
     include-in-header:
       - file: matomo_analytics.html

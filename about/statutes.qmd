@@ -2,9 +2,12 @@
 title: "Statute"
 format: 
   html:
-    include-in-header: 
-        - text: |
-            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    grid:
+      sidebar-width: 100px
+      body-width: 1050px
+      margin-width: 200px
+    css: 
+      - assets/bootstrap-5.3.8-dist/css/bootstrap.min.css
     toc: false
     page-layout: full
 ---
