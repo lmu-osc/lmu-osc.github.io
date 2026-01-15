@@ -14,8 +14,11 @@ listing:
     sort:
       - "tutorial-home-order"
     contents: 
-      - "training"
-      - "!training/*/**"
+      - principles.qmd
+      - study_planning.qmd
+      - data_management.qmd
+      - reproducible_processes.qmd
+      - publishing_outputs.qmd
     image-placeholder: "assets/img/lmu_osc_logo.jpg"
     image-height: 200px
   - id: all_tutorials
@@ -23,7 +26,7 @@ listing:
       - "content_category"
     type: table
     contents:
-      - training/*/**.qmd
+      - /*/**.qmd
     fields: 
       - content_category
       - title
@@ -36,7 +39,7 @@ listing:
       categories: "Tags"
 include-in-header:
   - text: |
-      <script src="assets/javascript/clear_filter_button.js" defer></script>
+      <script src="/assets/javascript/clear_filter_button.js" defer></script>
 ---
 
 

@@ -1,5 +1,5 @@
 ---
-title: "Funding Institutional Members"
+pagetitle: "Funding Institutional Members"
 format: 
   html:
     page-layout: full
@@ -21,10 +21,6 @@ body {
   min-height: 100vh;
 }
 
-.quarto-title-block,
-.quarto-title {
-  display: none !important;
-}
 .header-section {
   font-size: 2.6rem;
   font-weight: 700;

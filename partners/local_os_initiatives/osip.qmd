@@ -1,10 +1,7 @@
 ---
-title: "Open Science Initiative in Psychology"
+pagetitle: "Open Science Initiative in Psychology"
 format: 
   html:
-    include-in-header: 
-      - text: |
-          <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     css: styles.css
 page-layout: full
 ---

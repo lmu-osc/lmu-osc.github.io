@@ -1,12 +1,9 @@
 ---
-title: "Affiliate Institutional Members"
+pagetitle: "Affiliate Institutional Members"
 format: 
   html:
     page-layout: full
     toc: false
-    include-in-header: 
-      - text: |
-          <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 ---
 
 <style>
@@ -24,10 +21,7 @@ body {
   min-height: 100vh;
 }
 
-.quarto-title-block,
-.quarto-title {
-  display: none !important;
-}
+
 
 .header-section {
   font-size: 2.6rem;

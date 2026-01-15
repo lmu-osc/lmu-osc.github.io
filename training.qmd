@@ -1,14 +1,10 @@
 ---
-title: "Training Home"
+pagetitle: "Training Home"
 format: 
   html:
     anchor-sections: false
     page-layout: full
     toc: false
-    include-in-header: 
-      - text: |
-          <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-
 ---
 <style>
 
@@ -21,10 +17,7 @@ format:
   --card-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
   --transition: all 0.3s ease;
 }
-.quarto-title-block,
-.quarto-title {
-  display: none !important;
-}
+
 /*description text styles*/
 .training-overview h1 {
   font-size: 2.5rem;
@@ -184,7 +177,7 @@ In addition, the material of all our lectures, workshops, symposium, and summer 
 ```{=html}
 <div class="training-grid"> 
     <div class="training-card"
-      onclick="window.location.href='self-training.html';">   
+      onclick="window.location.href='training/self-training.html';">   
       <h3>Self-learning material by topics</h3>
       <div class="training-content training-one">
           <img src="training/images/wordcloud.png" alt="wordcloud image of tutorial categories">
@@ -192,14 +185,14 @@ In addition, the material of all our lectures, workshops, symposium, and summer 
    </div>
 
 
-    <div class="training-card" onclick="window.location.href='open-research-cycle.html';">
+    <div class="training-card" onclick="window.location.href='training/open_research_cycle.html';">
         <h3>Open research cycle</h3>
         <div class="training-content training-two">
             <img src="assets/img/OS-research-cycle.png" alt="OS_cycle">
         </div>
     </div>      
 
-    <div class="training-card" onclick="window.location.href='train-the-trainer.html';">
+    <div class="training-card" onclick="window.location.href='training/train_the_trainer.html';">
         <h3>Follow or deliver a course</h3>
         <div class="training-content training-three mt-4">
             <div class="content-container">
