@@ -21,10 +21,7 @@ format:
   --card-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
   --transition: all 0.3s ease;
 }
-.quarto-title-block,
-.quarto-title {
-  display: none !important;
-}
+
 /*description text styles*/
 .training-overview h1 {
   font-size: 2.5rem;

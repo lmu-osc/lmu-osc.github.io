@@ -63,10 +63,7 @@ include-in-header:
   --theme-main: #00883A;
   --theme-main-dark: #246f3f;
 }
-  .quarto-title-block,
-.quarto-title {
-  display: none !important;
-}
+  
 .listing-actions-group{
   gap:3rem;
 }
