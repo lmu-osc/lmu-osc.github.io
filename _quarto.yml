@@ -78,13 +78,12 @@ website:
       collapse-level: 2
       contents: 
         - self-training.qmd
-        - train-the-trainer.qmd
         - open-research-cycle.qmd
+        - train-the-trainer.qmd
         
     - id: partners
       collapse-level: 3
       title: "Partners"
-      # section: "Partners" 
       contents: 
         - section: "Partners"
           contents:
@@ -111,8 +110,6 @@ website:
               href: partners/externals.qmd 
             - text: "Funders"
               href: partners/funders.qmd
-
-
 
 
 format:
