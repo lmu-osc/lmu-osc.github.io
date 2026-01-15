@@ -3,11 +3,15 @@ format:
   html:
     css: 
       - about/about.css
-      - assets/bootstrap-5.3.8-dist/css/bootstrap.min.css
+    include-in-header: 
+      - text: |
+          <link href="assets/bootstrap-5.3.8-dist/css/bootstrap.min.css " rel="stylesheet">
 page-layout: full
 ---
 
 ```{=html}
+
+
 <section class="hero mb-0">
   <div class="row align-items-center text-white g-0 py-1 px-4 px-lg-5">
     <div class="container hero-container">
