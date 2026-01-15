@@ -2,7 +2,7 @@
 title: "Reproducible processes"
 description: "From programming to reproducible mansucripts"
 tutorial-home-order: 04
-image: "images/reproducible processes.svg"
+image: "../images/reproducible processes.svg"
 categories:
   - R
   - "{renv}"
@@ -13,8 +13,6 @@ categories:
   - Reproducible protocols
 listing:
   type: default
-  contents:
-    - reproducible_processes
   sort:
     - within_cat_order
 ---

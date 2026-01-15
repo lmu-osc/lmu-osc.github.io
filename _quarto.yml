@@ -83,14 +83,20 @@ website:
               href: training/self_training.qmd 
               contents:
                 - text: "Principles"
-                  href: training/principles.qmd
+                  href: training/principles/index.qmd
+                  contents: training/principles/*
                 - text: "Study Planning"
-                  href: training/study_planning.qmd
+                  href: training/study_planning/index.qmd
+                  contents: training/study_planning/*
                 - text: "Data Management"
-                  href: training/data_management.qmd
+                  href: training/data_management/index.qmd
+                  contents: training/data_management/*
                 - text: "Reproducible Processes"
-                  href: training/reproducible_processes.qmd
+                  href: training/reproducible_processes/index.qmd
+                  contents: training/reproducible_processes/*
                 - text: "Publishing Outputs"
+                  href: training/publishing_outputs/index.qmd
+                  contents: training/publishing_outputs/*
             - text: "Open Research Cycle"
               href: training/open_research_cycle.qmd
             - text: "Train the Trainer"

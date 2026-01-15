@@ -1,8 +1,8 @@
 ---
-title: "Data management"
+title: "Data Management"
 description: "From preserving anonymity to FAIR data sharing"
 tutorial-home-order: 03
-image: "images/data management.svg"
+image: "../images/data management.svg"
 categories:
   - Open data
   - FAIR data
@@ -11,8 +11,6 @@ categories:
   
 listing:
   type: default
-  contents:
-    - data_management
   sort:
     - within_cat_order
 ---
