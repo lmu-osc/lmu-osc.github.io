@@ -31,6 +31,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
+<link href="../training/reproducible_processes.html" rel="next">
+<link href="../training/study_planning.html" rel="prev">
 <link href="../assets/img/lmu_osc_logo.jpg" rel="icon" type="image/jpeg">
 <script src="../site_libs/quarto-listing/list.min.js"></script>
 <script src="../site_libs/quarto-listing/quarto-listing.js"></script>
@@ -154,7 +156,7 @@ window.Quarto = {
 <link rel="stylesheet" href="../footer/footer-style.css">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-sidebar docked nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -228,10 +230,10 @@ window.Quarto = {
     <ul class="dropdown-menu" aria-labelledby="nav-menu-partners">    
         <li>
     <a class="dropdown-item" href="../partners/institutional_members.html">
- <span class="dropdown-text">Institutional members</span></a>
+ <span class="dropdown-text">Institutional Members</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../partners/local_os_intiatives.html">
+    <a class="dropdown-item" href="../partners/local_os_initiatives.html">
  <span class="dropdown-text">Local Open Science Initiatives</span></a>
   </li>  
         <li>
@@ -249,7 +251,7 @@ window.Quarto = {
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="../training.html"> <i class="bi bi-mortarboard" role="img">
+    <a class="nav-link active" href="../training.html" aria-current="page"> <i class="bi bi-mortarboard" role="img">
 </i> 
 <span class="menu-text">Training</span></a>
   </li>  
@@ -263,14 +265,19 @@ window.Quarto = {
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
-  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Toggle reader mode">
-  <div class="quarto-reader-toggle-btn">
-  <i class="bi"></i>
-  </div>
-</a>
 </div>
       </div> <!-- /container-fluid -->
     </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../training.html">Training Tracks</a></li><li class="breadcrumb-item"><a href="../training/self_training.html">Self-Training</a></li><li class="breadcrumb-item"><a href="../training/data_management.html">Data Management</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
   <div id="quarto-announcement" data-announcement-id="04e26d7279811b0a13da8609e872b406" class="alert alert-primary hidden"><i class="bi bi-info-circle quarto-announcement-icon"></i><div class="quarto-announcement-content">
 <p><strong>Thanks for visiting the LMU Open Science Center–our site is still under construction for now, but we’ll be live soon!</strong></p>
 </div><i class="bi bi-x-lg quarto-announcement-action"></i></div>
@@ -278,6 +285,74 @@ window.Quarto = {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../training.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Training Tracks</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../training/self_training.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Self-Training</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../training/principles.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Principles</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../training/study_planning.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Study Planning</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../training/data_management.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Data Management</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../training/reproducible_processes.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Reproducible Processes</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+ <span class="menu-text">Publishing Outputs</span>
+  </li>
+      </ul>
+  </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../training/open_research_cycle.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Open Research Cycle</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../training/train_the_trainer.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Train the Trainer</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
         
@@ -285,7 +360,7 @@ window.Quarto = {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../training.html">Training Tracks</a></li><li class="breadcrumb-item"><a href="../training/self_training.html">Self-Training</a></li><li class="breadcrumb-item"><a href="../training/data_management.html">Data Management</a></li></ol></nav>
 <div class="quarto-title">
 <h1 class="title">Data management</h1>
   <div class="quarto-categories">
@@ -321,7 +396,7 @@ window.Quarto = {
 
 <div class="quarto-listing quarto-listing-container-default" id="listing-listing">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="T3BlbiUyMGRhdGE=" data-listing-file-modified-sort="1768388356634" data-listing-reading-time-sort="1" data-listing-word-count-sort="46">
+<div class="quarto-post image-right" data-index="0" data-categories="T3BlbiUyMGRhdGE=" data-listing-file-modified-sort="1768474560780" data-listing-reading-time-sort="1" data-listing-word-count-sort="46">
 <div class="thumbnail"><a href="../training/data_management/open_data.html" class="no-external">
 
 <img loading="lazy" src="../training/images/open data.svg" class="thumbnail-image">
@@ -340,7 +415,7 @@ window.Quarto = {
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-categories="RkFJUiUyMGRhdGElMkNEYXRhJTIwbWFuYWdlbWVudCUyQ0RvY3VtZW50YXRpb24=" data-listing-file-modified-sort="1768388356634" data-listing-reading-time-sort="1" data-listing-word-count-sort="30">
+<div class="quarto-post image-right" data-index="1" data-categories="RkFJUiUyMGRhdGElMkNEYXRhJTIwbWFuYWdlbWVudCUyQ0RvY3VtZW50YXRpb24=" data-listing-file-modified-sort="1768474560779" data-listing-reading-time-sort="1" data-listing-word-count-sort="30">
 <div class="thumbnail"><a href="../training/data_management/fair_data_management.html" class="no-external">
 
 <img loading="lazy" src="../training/images/fair data management.svg" class="thumbnail-image">
@@ -359,7 +434,7 @@ window.Quarto = {
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="2" data-categories="RG9jdW1lbnRhdGlvbg==" data-listing-file-modified-sort="1768388356634" data-listing-reading-time-sort="1" data-listing-word-count-sort="54">
+<div class="quarto-post image-right" data-index="2" data-categories="RG9jdW1lbnRhdGlvbg==" data-listing-file-modified-sort="1768474560779" data-listing-reading-time-sort="1" data-listing-word-count-sort="54">
 <div class="thumbnail"><a href="../training/data_management/data_dictionary.html" class="no-external">
 
 <img loading="lazy" src="../training/images/data dictionary.svg" class="thumbnail-image">
@@ -378,7 +453,7 @@ window.Quarto = {
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="3" data-categories="T3BlbiUyMGRhdGElMkNEYXRhJTIwYW5vbnltaXR5" data-listing-file-modified-sort="1768388356634" data-listing-reading-time-sort="1" data-listing-word-count-sort="46">
+<div class="quarto-post image-right" data-index="3" data-categories="T3BlbiUyMGRhdGElMkNEYXRhJTIwYW5vbnltaXR5" data-listing-file-modified-sort="1768474560779" data-listing-reading-time-sort="1" data-listing-word-count-sort="46">
 <div class="thumbnail"><a href="../training/data_management/maintaining_privacy_with_open_data.html" class="no-external">
 
 <img loading="lazy" src="../training/images/data privacy.svg" class="thumbnail-image">
@@ -397,7 +472,7 @@ window.Quarto = {
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="4" data-categories="RGF0YSUyMGFub255bWl0eQ==" data-listing-file-modified-sort="1768388356634" data-listing-reading-time-sort="1" data-listing-word-count-sort="54">
+<div class="quarto-post image-right" data-index="4" data-categories="RGF0YSUyMGFub255bWl0eQ==" data-listing-file-modified-sort="1768474560779" data-listing-reading-time-sort="1" data-listing-word-count-sort="54">
 <div class="thumbnail"><a href="../training/data_management/data_anonymity.html" class="no-external">
 
 <img loading="lazy" src="../training/images/data anonymity.svg" class="thumbnail-image">
@@ -416,7 +491,7 @@ window.Quarto = {
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="5" data-categories="RGF0YSUyMHNpbXVsYXRpb24lMkNEYXRhJTIwYW5vbnltaXR5" data-listing-file-modified-sort="1768388356634" data-listing-reading-time-sort="1" data-listing-word-count-sort="55">
+<div class="quarto-post image-right" data-index="5" data-categories="RGF0YSUyMHNpbXVsYXRpb24lMkNEYXRhJTIwYW5vbnltaXR5" data-listing-file-modified-sort="1768474560780" data-listing-reading-time-sort="1" data-listing-word-count-sort="55">
 <div class="thumbnail"><a href="../training/data_management/synthetic_data.html" class="no-external">
 
 <img loading="lazy" src="../training/images/synthetic data.svg" class="thumbnail-image">
@@ -838,6 +913,18 @@ window.Quarto = {
     }
   });
   </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../training/study_planning.html" class="pagination-link" aria-label="Study Planning">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Study Planning</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../training/reproducible_processes.html" class="pagination-link" aria-label="Reproducible Processes">
+        <span class="nav-page-text">Reproducible Processes</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
 </div> <!-- /content -->
 
 <footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><ul><li><a href="https://github.com/lmu-osc/lmu-osc.github.io/edit/main/training/data_management.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lmu-osc/lmu-osc.github.io/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div></div></footer><footer class="osc-footer-card py-5">
