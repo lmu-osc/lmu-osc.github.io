@@ -48,7 +48,7 @@ website:
         icon: boxes
         menu:
           - partners/institutional_members.qmd
-          - partners/local_os_intiatives.qmd
+          - partners/local_os_initiatives.qmd
           - partners/other_lmu_support_services.qmd
           - partners/externals.qmd
           - partners/funders.qmd
@@ -90,7 +90,7 @@ website:
       contents: 
         - partners/institutional_members.qmd
         - text: "Local Open Science Initiatives"
-          href: partners/local_os_intiatives.qmd
+          href: partners/local_os_initiatives.qmd
           contents:
             - text: "OSIM"
               href: partners/local_os_initiatives/osim.qmd
