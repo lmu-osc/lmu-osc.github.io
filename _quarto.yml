@@ -91,7 +91,6 @@ website:
                 - text: "Data Management"
                   href: training/data_management/index.qmd
                   contents: training/data_management/*
-                  sort: within_cat_order
                 - text: "Reproducible Processes"
                   href: training/reproducible_processes/index.qmd
                   contents: training/reproducible_processes/*
