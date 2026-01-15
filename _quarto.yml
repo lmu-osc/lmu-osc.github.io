@@ -72,11 +72,8 @@ website:
       title: "Training"
       contents: 
         - section: "Training Tracks"
+          href: training.qmd
           contents:
-            - text: "Open Research Cycle"
-              href: training/open_research_cycle.qmd
-            - text: "Train the Trainer"
-              href: training/train_the_trainer.qmd
             - section: "Self-Training"
               href: training/self_training.qmd 
               contents:
@@ -89,6 +86,10 @@ website:
                 - text: "Reproducible Processes"
                   href: training/reproducible_processes.qmd
                 - text: "Publishing Outputs"
+            - text: "Open Research Cycle"
+              href: training/open_research_cycle.qmd
+            - text: "Train the Trainer"
+              href: training/train_the_trainer.qmd
         
     - id: partners
       collapse-level: 3
