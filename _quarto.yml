@@ -65,15 +65,30 @@ website:
       
   sidebar:
     - id: training
-      title: "Training"
       # style and background inherited by other sidebars
       style: "docked"
       background: light
-      collapse-level: 2
+      collapse-level: 3
+      title: "Training"
       contents: 
-        - self-training.qmd
-        - open-research-cycle.qmd
-        - train-the-trainer.qmd
+        - section: "Training Tracks"
+          contents:
+            - text: "Open Research Cycle"
+              href: training/open_research_cycle.qmd
+            - text: "Train the Trainer"
+              href: training/train_the_trainer.qmd
+            - section: "Self-Training"
+              href: training/self_training.qmd 
+              contents:
+                - text: "Principles"
+                  href: training/principles.qmd
+                - text: "Study Planning"
+                  href: training/study_planning.qmd
+                - text: "Data Management"
+                  href: training/data_management.qmd
+                - text: "Reproducible Processes"
+                  href: training/reproducible_processes.qmd
+                - text: "Publishing Outputs"
         
     - id: partners
       collapse-level: 3
