@@ -72,7 +72,7 @@ website:
   sidebar:
     - id: training
       title: "Training"
-      icon: mortarboard
+      # style and background inherited by other sidebars
       style: "docked"
       background: light
       collapse-level: 2
@@ -82,49 +82,36 @@ website:
         - open-research-cycle.qmd
         
     - id: partners
-      title: "Partners"
-      icon: boxes
-      style: "docked"
-      background: light
       collapse-level: 2
+      title: "Partners"
+      # section: "Partners" 
       contents: 
-        - partners/institutional_members.qmd
-        - text: "Local Open Science Initiatives"
-          href: partners/local_os_initiatives.qmd
+        - section: "Partners Section"
           contents:
-            - text: "OSIM"
-              href: partners/local_os_initiatives/osim.qmd
-            - text: "OSIS"
-              href: partners/local_os_initiatives/osis.qmd
-            - text: "OSIP"
-              href: partners/local_os_initiatives/osip.qmd
-            - text: "ReproducibiliTea"
-              href: partners/local_os_initiatives/reproducibilitea.qmd
-            - text: "Hacky Hour"
-              href: partners/local_os_initiatives/hackyhour.qmd
-            - text: "Munich RSE"
-              href: partners/local_os_initiatives/munich_rse.qmd
-        - partners/other_lmu_support_services.qmd
-        - partners/externals.qmd
-        - partners/funders.qmd
-  # 
-  #   - id: gittutorials
-  #     title: "Git Tutorials"
-  #     style: "docked"
-  #     background: light
-  #     collapse-level: 2
-  #     contents: 
-  #       - qmd_one.qmd
-  #       - qmd_two.qmd
-  #       
-  #   - id: quartotutorials
-  #     title: "Quarto Tutorials"
-  #     style: "docked"
-  #     background: light
-  #     collapse-level: 2
-  #     contents: 
-  #       - qmd_one.qmd
-  #       - qmd_two.qmd
+            - section: "Institutional Members"
+              href: partners/institutional_members.qmd 
+              contents:
+            - section: "Local Open Science Initiatives"
+              href: partners/local_os_initiatives.qmd
+              contents:
+                - text: "OSIM"
+                  href: partners/local_os_initiatives/osim.qmd
+                - text: "OSIS"
+                  href: partners/local_os_initiatives/osis.qmd
+                - text: "OSIP"
+                  href: partners/local_os_initiatives/osip.qmd
+                - text: "ReproducibiliTea"
+                  href: partners/local_os_initiatives/reproducibilitea.qmd
+                - text: "Hacky Hour"
+                  href: partners/local_os_initiatives/hackyhour.qmd
+                - text: "Munich RSE"
+                  href: partners/local_os_initiatives/munich_rse.qmd
+            # - partners/other_lmu_support_services.qmd
+            # - partners/externals.qmd
+            # - partners/funders.qmd
+
+
+
 
 format:
   html:
