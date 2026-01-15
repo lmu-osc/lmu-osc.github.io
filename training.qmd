@@ -1,14 +1,10 @@
 ---
-title: "Training Home"
+pagetitle: "Training Home"
 format: 
   html:
     anchor-sections: false
     page-layout: full
     toc: false
-    include-in-header: 
-      - text: |
-          <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-
 ---
 <style>
 
