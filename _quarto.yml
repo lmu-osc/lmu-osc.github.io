@@ -6,7 +6,6 @@ project:
 website:
   title: "LMU Open Science Center"
   favicon: assets/img/lmu_osc_logo.jpg
-  reader-mode: true
   search: true
   page-navigation: true
   repo-url: https://github.com/lmu-osc/lmu-osc.github.io
@@ -52,14 +51,9 @@ website:
           - partners/other_lmu_support_services.qmd
           - partners/externals.qmd
           - partners/funders.qmd
-      # - sidebar:training
       - icon: mortarboard
         text: Training
         href: training.qmd
-#       menu:
-#         - self-training.qmd
-#         - train-the-trainer.qmd
-#         - open-research-cycle.qmd
       - href: events/index.qmd
         icon: calendar-event
         text: Events
