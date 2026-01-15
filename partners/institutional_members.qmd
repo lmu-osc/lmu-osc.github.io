@@ -1,11 +1,8 @@
 ---
-title: "Institutional members"
+title: "Institutional Members"
 format: 
   html:
     css: styles.css
-    include-in-header: 
-      - text: |
-          <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     page-layout: full
 ---
 
