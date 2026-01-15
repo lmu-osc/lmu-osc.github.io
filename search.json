@@ -698,37 +698,84 @@
     ]
   },
   {
-    "objectID": "training/principles/replicability_crisis.html",
-    "href": "training/principles/replicability_crisis.html",
-    "title": "Replicability Crisis",
+    "objectID": "training/principles/index.html",
+    "href": "training/principles/index.html",
+    "title": "Principles",
     "section": "",
-    "text": "OSF Link\nThe Open Science Framework page for this video and the associated slides are available at https://osf.io/mguqj/.\n\n\nPresentation"
+    "text": "Replicability Crisis\n\n\nA presentation on the replication shortcomings of science and how researchers can improve\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCredible Science\n\n\nLearn the ins and outs of reliable, reproducible, and open research\n\n\n\n\n\n\n\n\nNo matching items",
+    "crumbs": [
+      "Training",
+      "Training Tracks",
+      "Self-Training",
+      "Principles"
+    ]
+  },
+  {
+    "objectID": "training/publishing_outputs/open_access_preprints_postprints.html",
+    "href": "training/publishing_outputs/open_access_preprints_postprints.html",
+    "title": "Open Access, Preprints, Postprints",
+    "section": "",
+    "text": "OSF Link\nThe Open Science Framework page for this video and the associated slides are available at https://osf.io/k52ny/.\n\n\nPresentation",
+    "crumbs": [
+      "Training",
+      "Training Tracks",
+      "Self-Training",
+      "Publishing Outputs",
+      "Open Access, Preprints, Postprints"
+    ]
+  },
+  {
+    "objectID": "training/publishing_outputs/index.html",
+    "href": "training/publishing_outputs/index.html",
+    "title": "Publishing Outputs",
+    "section": "",
+    "text": "Code Publishing\n\n\nTie together your skills and publish your work\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOpen Access, Preprints, Postprints\n\n\nWatch this presentation on why pre- and postprinting procedures are important to open science and how to accomplish them\n\n\n\n\n\n\n\n\nNo matching items",
+    "crumbs": [
+      "Training",
+      "Training Tracks",
+      "Self-Training",
+      "Publishing Outputs"
+    ]
   },
   {
     "objectID": "training/data_management/open_data.html",
     "href": "training/data_management/open_data.html",
     "title": "Introduction to Open Data",
     "section": "",
-    "text": "OSF Link\nThe Open Science Framework page for this video and the associated slides are available at https://osf.io/wv6zy/.\n\n\nPresentation"
+    "text": "OSF Link\nThe Open Science Framework page for this video and the associated slides are available at https://osf.io/wv6zy/.\n\n\nPresentation",
+    "crumbs": [
+      "Training",
+      "Training Tracks",
+      "Self-Training",
+      "Data Management",
+      "Introduction to Open Data"
+    ]
   },
   {
     "objectID": "training/data_management/maintaining_privacy_with_open_data.html",
     "href": "training/data_management/maintaining_privacy_with_open_data.html",
     "title": "Maintaining Privacy with Open Data",
     "section": "",
-    "text": "OSF Link\nThe Open Science Framework page for this video and the associated slides are available at https://osf.io/6sdcw/.\n\n\nPresentation"
-  },
-  {
-    "objectID": "training/reproducible_processes.html",
-    "href": "training/reproducible_processes.html",
-    "title": "Reproducible processes",
-    "section": "",
-    "text": "Introduction to R\n\n\nLearn the basics of the R programming language\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIntroduction to Version Control within RStudio\n\n\nExplore the git version control software and its integrations with the popular RStudio interactive development environment\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCollaborative coding with GitHub and RStudio\n\n\nAfter learning the basics of git, apply your skills in an interactive tutorial\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAdvanced git\n\n\nLearn git features like branching and gitflow, and how to take advantage of issues, pull requests, and more on GitHub\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIntroduction to Quarto\n\n\nDiscover the basics of setting up computationally reproducible analyses, manuscripts, and presentations\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIntroduction to Zotero\n\n\nEasily save your sources to the Zotero software, and learn how to insert these citations into your documents\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIntroduction to {renv}\n\n\nMake your projects reproducible by learning how to (easily) manage your R packages\n\n\n\n\n\n\n\n\nNo matching items",
+    "text": "OSF Link\nThe Open Science Framework page for this video and the associated slides are available at https://osf.io/6sdcw/.\n\n\nPresentation",
     "crumbs": [
       "Training",
       "Training Tracks",
       "Self-Training",
-      "Reproducible Processes"
+      "Data Management",
+      "Maintaining Privacy with Open Data"
+    ]
+  },
+  {
+    "objectID": "training/data_management/index.html",
+    "href": "training/data_management/index.html",
+    "title": "Data Management",
+    "section": "",
+    "text": "Introduction to Open Data\n\n\nAn introductory presentation on the what, why, and how of making research data open\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFAIR Data Management\n\n\nTake steps towards making your data FAIR: Findable, Accessible, Interoperable, Reusable\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nData Dictionary\n\n\nTutorial in progress…\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMaintaining Privacy with Open Data\n\n\nA presentation on how to make data open to the public without revealing sensitive information\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTBD: Data Anonymity\n\n\nTutorial in progress…\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTBD: Generating Synthetic Data\n\n\nTutorial in progress…\n\n\n\n\n\n\n\n\nNo matching items",
+    "crumbs": [
+      "Training",
+      "Training Tracks",
+      "Self-Training",
+      "Data Management"
     ]
   },
   {
@@ -736,26 +783,13 @@
     "href": "training/study_planning/preregistration_why_how.html",
     "title": "Preregistration: Why and How?",
     "section": "",
-    "text": "This tutorial is currently being converted from a PPT slide deck to a website."
-  },
-  {
-    "objectID": "training/publishing_outputs.html",
-    "href": "training/publishing_outputs.html",
-    "title": "Publishing outputs",
-    "section": "",
-    "text": "Code publishing\n\n\nTie together your skills and publish your work\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nOpen access, preprints, postprints\n\n\nWatch this presentation on why pre- and postprinting procedures are important to open science and how to accomplish them\n\n\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "training/study_planning.html",
-    "href": "training/study_planning.html",
-    "title": "Study planning",
-    "section": "",
-    "text": "Preregistration: Why and How?\n\n\nTutorial in progress…\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIntroduction to Data Simulations in R\n\n\nHow to simulate data in R to prepare your studies\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSimulations for Advanced Power Analyses\n\n\nThis tutorial provides a deeper dive into simulations in R, with emphasis on GLMs, LMEs, and SEMs\n\n\n\n\n\n\n\n\nNo matching items",
+    "text": "This tutorial is currently being converted from a PPT slide deck to a website.",
     "crumbs": [
       "Training",
       "Training Tracks",
       "Self-Training",
-      "Study Planning"
+      "Study Planning",
+      "Preregistration: Why and How?"
     ]
   },
   {
@@ -763,7 +797,14 @@
     "href": "training/reproducible_processes/advanced_git.html",
     "title": "Advanced git",
     "section": "",
-    "text": "This is a placeholder page for an advanced tutorial on using git."
+    "text": "This is a placeholder page for an advanced tutorial on using git.",
+    "crumbs": [
+      "Training",
+      "Training Tracks",
+      "Self-Training",
+      "Reproducible Processes",
+      "Advanced git"
+    ]
   },
   {
     "objectID": "events/events/20240115_version_control_with_git_and_github_within_rstudio.html",
@@ -1676,7 +1717,7 @@
     "href": "training/self_training.html#all-tutorials",
     "title": "Self-Training",
     "section": "All Tutorials",
-    "text": "All Tutorials\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Tutorial\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTopic\n\n\n\nTutorial\n\n\n\nDescription\n\n\n\nTags\n\n\n\n\n\n\n\n\n-reproducible_processes\n\n\nIntroduction to {renv}\n\n\nMake your projects reproducible by learning how to (easily) manage your R packages\n\n\nR\n\n\n\n\n\n\n-reproducible_processes\n\n\nIntroduction to Version Control within RStudio\n\n\nExplore the git version control software and its integrations with the popular RStudio interactive development environment\n\n\nR, Git\n\n\n\n\n\n\ndata_management\n\n\nTBD: Data anonymity\n\n\nTutorial in progress…\n\n\nData anonymity\n\n\n\n\n\n\ndata_management\n\n\nData dictionary\n\n\nTutorial in progress…\n\n\nDocumentation\n\n\n\n\n\n\ndata_management\n\n\nFAIR Data Management\n\n\nTake steps towards making your data FAIR: Findable, Accessible, Interoperable, Reusable\n\n\nFAIR data, Data management, Documentation\n\n\n\n\n\n\ndata_management\n\n\nMaintaining Privacy with Open Data\n\n\nA presentation on how to make data open to the public without revealing sensitive information\n\n\nOpen data, Data anonymity\n\n\n\n\n\n\ndata_management\n\n\nIntroduction to Open Data\n\n\nAn introductory presentation on the what, why, and how of making research data open\n\n\nOpen data\n\n\n\n\n\n\ndata_management\n\n\nTBD: Generating Synthetic Data\n\n\nTutorial in progress…\n\n\nData simulation, Data anonymity\n\n\n\n\n\n\nprinciples\n\n\nCredible science\n\n\nLearn the ins and outs of reliable, reproducible, and open research\n\n\nOpen research practices\n\n\n\n\n\n\nprinciples\n\n\nReplicability Crisis\n\n\nA presentation on the replication shortcomings of science and how researchers can improve\n\n\nIncluded Categories\n\n\n\n\n\n\npublishing_outputs\n\n\nCode publishing\n\n\nTie together your skills and publish your work\n\n\nLicences, Documentation\n\n\n\n\n\n\npublishing_outputs\n\n\nOpen access, preprints, postprints\n\n\nWatch this presentation on why pre- and postprinting procedures are important to open science and how to accomplish them\n\n\nOpen Access, Preprints\n\n\n\n\n\n\nreproducible_processes\n\n\nAdvanced git\n\n\nLearn git features like branching and gitflow, and how to take advantage of issues, pull requests, and more on GitHub\n\n\nGit\n\n\n\n\n\n\nreproducible_processes\n\n\nCollaborative coding with GitHub and RStudio\n\n\nAfter learning the basics of git, apply your skills in an interactive tutorial\n\n\nR, Git, GitHub\n\n\n\n\n\n\nreproducible_processes\n\n\nIntroduction to Quarto\n\n\nDiscover the basics of setting up computationally reproducible analyses, manuscripts, and presentations\n\n\nR, Quarto\n\n\n\n\n\n\nreproducible_processes\n\n\nIntroduction to R\n\n\nLearn the basics of the R programming language\n\n\nR\n\n\n\n\n\n\nreproducible_processes\n\n\nIntroduction to Zotero\n\n\nEasily save your sources to the Zotero software, and learn how to insert these citations into your documents\n\n\nZotero, Quarto\n\n\n\n\n\n\nstudy_planning\n\n\nIntroduction to Data Simulations in R\n\n\nHow to simulate data in R to prepare your studies\n\n\nData simulation\n\n\n\n\n\n\nstudy_planning\n\n\nPreregistration: Why and How?\n\n\nTutorial in progress…\n\n\nPreregistration\n\n\n\n\n\n\nstudy_planning\n\n\nSimulations for Advanced Power Analyses\n\n\nThis tutorial provides a deeper dive into simulations in R, with emphasis on GLMs, LMEs, and SEMs\n\n\nData simulation, Power analyses\n\n\n\n\n\n\nNo matching items",
+    "text": "All Tutorials\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Tutorial\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTopic\n\n\n\nTutorial\n\n\n\nDescription\n\n\n\nTags\n\n\n\n\n\n\n\n\n-reproducible_processes\n\n\nIntroduction to {renv}\n\n\nMake your projects reproducible by learning how to (easily) manage your R packages\n\n\nR\n\n\n\n\n\n\n-reproducible_processes\n\n\nIntroduction to Version Control within RStudio\n\n\nExplore the git version control software and its integrations with the popular RStudio interactive development environment\n\n\nR, Git\n\n\n\n\n\n\ndata_management\n\n\nTBD: Data Anonymity\n\n\nTutorial in progress…\n\n\nData anonymity\n\n\n\n\n\n\ndata_management\n\n\nData Dictionary\n\n\nTutorial in progress…\n\n\nDocumentation\n\n\n\n\n\n\ndata_management\n\n\nFAIR Data Management\n\n\nTake steps towards making your data FAIR: Findable, Accessible, Interoperable, Reusable\n\n\nFAIR data, Data management, Documentation\n\n\n\n\n\n\ndata_management\n\n\nMaintaining Privacy with Open Data\n\n\nA presentation on how to make data open to the public without revealing sensitive information\n\n\nOpen data, Data anonymity\n\n\n\n\n\n\ndata_management\n\n\nIntroduction to Open Data\n\n\nAn introductory presentation on the what, why, and how of making research data open\n\n\nOpen data\n\n\n\n\n\n\ndata_management\n\n\nTBD: Generating Synthetic Data\n\n\nTutorial in progress…\n\n\nData simulation, Data anonymity\n\n\n\n\n\n\nprinciples\n\n\nCredible Science\n\n\nLearn the ins and outs of reliable, reproducible, and open research\n\n\nOpen research practices\n\n\n\n\n\n\nprinciples\n\n\nReplicability Crisis\n\n\nA presentation on the replication shortcomings of science and how researchers can improve\n\n\nIncluded Categories\n\n\n\n\n\n\npublishing_outputs\n\n\nCode Publishing\n\n\nTie together your skills and publish your work\n\n\nLicences, Documentation\n\n\n\n\n\n\npublishing_outputs\n\n\nOpen Access, Preprints, Postprints\n\n\nWatch this presentation on why pre- and postprinting procedures are important to open science and how to accomplish them\n\n\nOpen Access, Preprints\n\n\n\n\n\n\nreproducible_processes\n\n\nAdvanced git\n\n\nLearn git features like branching and gitflow, and how to take advantage of issues, pull requests, and more on GitHub\n\n\nGit\n\n\n\n\n\n\nreproducible_processes\n\n\nCollaborative coding with GitHub and RStudio\n\n\nAfter learning the basics of git, apply your skills in an interactive tutorial\n\n\nR, Git, GitHub\n\n\n\n\n\n\nreproducible_processes\n\n\nIntroduction to Quarto\n\n\nDiscover the basics of setting up computationally reproducible analyses, manuscripts, and presentations\n\n\nR, Quarto\n\n\n\n\n\n\nreproducible_processes\n\n\nIntroduction to R\n\n\nLearn the basics of the R programming language\n\n\nR\n\n\n\n\n\n\nreproducible_processes\n\n\nIntroduction to Zotero\n\n\nEasily save your sources to the Zotero software, and learn how to insert these citations into your documents\n\n\nZotero, Quarto\n\n\n\n\n\n\nstudy_planning\n\n\nIntroduction to Data Simulations in R\n\n\nHow to simulate data in R to prepare your studies\n\n\nData simulation\n\n\n\n\n\n\nstudy_planning\n\n\nPreregistration: Why and How?\n\n\nTutorial in progress…\n\n\nPreregistration\n\n\n\n\n\n\nstudy_planning\n\n\nSimulations for Advanced Power Analyses\n\n\nThis tutorial provides a deeper dive into simulations in R, with emphasis on GLMs, LMEs, and SEMs\n\n\nData simulation, Power analyses\n\n\n\n\n\n\nNo matching items",
     "crumbs": [
       "Training",
       "Training Tracks",
@@ -1684,29 +1725,29 @@
     ]
   },
   {
-    "objectID": "training/data_management.html",
-    "href": "training/data_management.html",
-    "title": "Data management",
+    "objectID": "training/reproducible_processes/index.html",
+    "href": "training/reproducible_processes/index.html",
+    "title": "Reproducible processes",
     "section": "",
-    "text": "Introduction to Open Data\n\n\nAn introductory presentation on the what, why, and how of making research data open\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nFAIR Data Management\n\n\nTake steps towards making your data FAIR: Findable, Accessible, Interoperable, Reusable\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nData dictionary\n\n\nTutorial in progress…\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nMaintaining Privacy with Open Data\n\n\nA presentation on how to make data open to the public without revealing sensitive information\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTBD: Data anonymity\n\n\nTutorial in progress…\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTBD: Generating Synthetic Data\n\n\nTutorial in progress…\n\n\n\n\n\n\n\n\nNo matching items",
+    "text": "Introduction to R\n\n\nLearn the basics of the R programming language\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIntroduction to Version Control within RStudio\n\n\nExplore the git version control software and its integrations with the popular RStudio interactive development environment\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCollaborative coding with GitHub and RStudio\n\n\nAfter learning the basics of git, apply your skills in an interactive tutorial\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAdvanced git\n\n\nLearn git features like branching and gitflow, and how to take advantage of issues, pull requests, and more on GitHub\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIntroduction to Quarto\n\n\nDiscover the basics of setting up computationally reproducible analyses, manuscripts, and presentations\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIntroduction to Zotero\n\n\nEasily save your sources to the Zotero software, and learn how to insert these citations into your documents\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIntroduction to {renv}\n\n\nMake your projects reproducible by learning how to (easily) manage your R packages\n\n\n\n\n\n\n\n\nNo matching items",
     "crumbs": [
       "Training",
       "Training Tracks",
       "Self-Training",
-      "Data Management"
+      "Reproducible Processes"
     ]
   },
   {
-    "objectID": "training/principles.html",
-    "href": "training/principles.html",
-    "title": "Principles",
+    "objectID": "training/study_planning/index.html",
+    "href": "training/study_planning/index.html",
+    "title": "Study Planning",
     "section": "",
-    "text": "Replicability Crisis\n\n\nA presentation on the replication shortcomings of science and how researchers can improve\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCredible science\n\n\nLearn the ins and outs of reliable, reproducible, and open research\n\n\n\n\n\n\n\n\nNo matching items",
+    "text": "Preregistration: Why and How?\n\n\nTutorial in progress…\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIntroduction to Data Simulations in R\n\n\nHow to simulate data in R to prepare your studies\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSimulations for Advanced Power Analyses\n\n\nThis tutorial provides a deeper dive into simulations in R, with emphasis on GLMs, LMEs, and SEMs\n\n\n\n\n\n\n\n\nNo matching items",
     "crumbs": [
       "Training",
       "Training Tracks",
       "Self-Training",
-      "Principles"
+      "Study Planning"
     ]
   },
   {
@@ -1714,42 +1755,84 @@
     "href": "training/study_planning/introduction_to_simulations_in_r.html",
     "title": "Introduction to Data Simulations in R",
     "section": "",
-    "text": "The HTML code block below should be uncommented, and the URL and href fields replaced with the link to the tutorial"
+    "text": "The HTML code block below should be uncommented, and the URL and href fields replaced with the link to the tutorial",
+    "crumbs": [
+      "Training",
+      "Training Tracks",
+      "Self-Training",
+      "Study Planning",
+      "Introduction to Data Simulations in R"
+    ]
   },
   {
     "objectID": "training/data_management/data_anonymity.html",
     "href": "training/data_management/data_anonymity.html",
-    "title": "TBD: Data anonymity",
+    "title": "TBD: Data Anonymity",
     "section": "",
-    "text": "This page is currently a placeholder for an in-progress tutorial about Data anonymity."
+    "text": "This page is currently a placeholder for an in-progress tutorial about Data anonymity.",
+    "crumbs": [
+      "Training",
+      "Training Tracks",
+      "Self-Training",
+      "Data Management",
+      "TBD: Data Anonymity"
+    ]
   },
   {
     "objectID": "training/data_management/synthetic_data.html",
     "href": "training/data_management/synthetic_data.html",
     "title": "TBD: Generating Synthetic Data",
     "section": "",
-    "text": "This page is currently a placeholder for an in-progress tutorial about generating synthetic data."
+    "text": "This page is currently a placeholder for an in-progress tutorial about generating synthetic data.",
+    "crumbs": [
+      "Training",
+      "Training Tracks",
+      "Self-Training",
+      "Data Management",
+      "TBD: Generating Synthetic Data"
+    ]
   },
   {
     "objectID": "training/data_management/data_dictionary.html",
     "href": "training/data_management/data_dictionary.html",
-    "title": "Data dictionary",
+    "title": "Data Dictionary",
     "section": "",
-    "text": "This page is currently a placeholder for an in-progress tutorial about data dictionary"
+    "text": "This page is currently a placeholder for an in-progress tutorial about data dictionary",
+    "crumbs": [
+      "Training",
+      "Training Tracks",
+      "Self-Training",
+      "Data Management",
+      "Data Dictionary"
+    ]
   },
   {
-    "objectID": "training/publishing_outputs/open_access_preprints_postprints.html",
-    "href": "training/publishing_outputs/open_access_preprints_postprints.html",
-    "title": "Open access, preprints, postprints",
+    "objectID": "training/principles/replicability_crisis.html",
+    "href": "training/principles/replicability_crisis.html",
+    "title": "Replicability Crisis",
     "section": "",
-    "text": "OSF Link\nThe Open Science Framework page for this video and the associated slides are available at https://osf.io/k52ny/.\n\n\nPresentation"
+    "text": "OSF Link\nThe Open Science Framework page for this video and the associated slides are available at https://osf.io/mguqj/.\n\n\nPresentation",
+    "crumbs": [
+      "Training",
+      "Training Tracks",
+      "Self-Training",
+      "Principles",
+      "Replicability Crisis"
+    ]
   },
   {
     "objectID": "training/principles/credible_science.html",
     "href": "training/principles/credible_science.html",
-    "title": "Credible science",
+    "title": "Credible Science",
     "section": "",
-    "text": "OSF Link\nThe Open Science Framework page for this video and the associated slides are available at https://osf.io/rhtgn/.\n\n\nPresentation"
+    "text": "OSF Link\nThe Open Science Framework page for this video and the associated slides are available at https://osf.io/rhtgn/.\n\n\nPresentation",
+    "crumbs": [
+      "Training",
+      "Training Tracks",
+      "Self-Training",
+      "Principles",
+      "Credible Science"
+    ]
   },
   {
     "objectID": "partners/externals.html",
@@ -1836,7 +1919,7 @@
     "href": "training.html",
     "title": "Training Overview",
     "section": "",
-    "text": "Training Overview\nOur training material can be explored in different ways:\n\nYou are a student or a researcher and know what you are looking for: search for a specific topic in our self-paced tutorial collections!\nYou are a researcher wanting to explore all research practices along the research cycle: visit our open research cycle handbook!\nYou are a student, researcher or university educator, follow or deliver our course!\n\nIn addition, the material of all our lectures, workshops, symposium, and summer schools can be accessed here:  OSF \n\n \n       \n      Self-learning material by topics\n      \n          \n      \n   \n\n\n    \n        Open research cycle\n        \n            \n        \n          \n\n    \n        Follow or deliver a course\n        \n            \n              Open science foundations\n            \n            \n              \n            \n            \n              Open science methods\n            \n            \n              \n            \n            \n              Open science tools\n            \n            \n              \n            \n            \n              Pedagogy of teaching OS",
+    "text": "Training Overview\nOur training material can be explored in different ways:\n\nYou are a student or a researcher and know what you are looking for: search for a specific topic in our self-paced tutorial collections!\nYou are a researcher wanting to explore all research practices along the research cycle: visit our open research cycle handbook!\nYou are a student, researcher or university educator, follow or deliver our course!\n\nIn addition, the material of all our lectures, workshops, symposium, and summer schools can be accessed here:  OSF \n\n \n       \n      Self-learning material by topics\n      \n          \n      \n   \n\n\n    \n        Open research cycle\n        \n            \n        \n          \n\n    \n        Follow or deliver a course\n        \n            \n              Open Science Foundations\n            \n            \n              \n            \n            \n              Open Science Methods\n            \n            \n              \n            \n            \n              Open Science Tools\n            \n            \n              \n            \n            \n              Pedagogy of Teaching OS",
     "crumbs": [
       "Training",
       "Training Tracks"
