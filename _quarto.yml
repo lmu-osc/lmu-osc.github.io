@@ -82,15 +82,14 @@ website:
         - open-research-cycle.qmd
         
     - id: partners
-      collapse-level: 2
+      collapse-level: 3
       title: "Partners"
       # section: "Partners" 
       contents: 
-        - section: "Partners Section"
+        - section: "Partners"
           contents:
-            - section: "Institutional Members"
+            - text: "Institutional Members"
               href: partners/institutional_members.qmd 
-              contents:
             - section: "Local Open Science Initiatives"
               href: partners/local_os_initiatives.qmd
               contents:
@@ -106,9 +105,12 @@ website:
                   href: partners/local_os_initiatives/hackyhour.qmd
                 - text: "Munich RSE"
                   href: partners/local_os_initiatives/munich_rse.qmd
-            # - partners/other_lmu_support_services.qmd
-            # - partners/externals.qmd
-            # - partners/funders.qmd
+            - text: "Other LMU Support Services"
+              href: partners/other_lmu_support_services.qmd 
+            - text: "External Partners"
+              href: partners/externals.qmd 
+            - text: "Funders"
+              href: partners/funders.qmd
 
 
 
