@@ -81,10 +81,10 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-project','listing-website','listing-format','listing-language','listing-execute','listing-title','listing-academic_title','listing-name','listing-surname','listing-first_name','listing-position','listing-faculty','listing-membertype','listing-email','listing-photo','listing-social_media','listing-mission_statement','listing-path','listing-outputHref','listing-author','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-word-count',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
+      valueNames: ['listing-project','listing-website','listing-format','listing-language','listing-execute','listing-title','listing-academic_title','listing-name','listing-surname','listing-first_name','listing-position','listing-faculty','listing-membertype','listing-email','listing-photo','listing-social_media','listing-mission_statement','listing-path','listing-outputHref','listing-author','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-word-count','listing-display_weight_staff','listing-osc_staff_title',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
       page: 25,
     pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
-      searchColumns: ["listing-project","listing-website","listing-format","listing-language","listing-execute","listing-title","listing-academic_title","listing-name","listing-surname","listing-first_name","listing-position","listing-faculty","listing-membertype","listing-email","listing-photo","listing-social_media","listing-mission_statement","listing-path","listing-outputHref","listing-author","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
+      searchColumns: ["listing-project","listing-website","listing-format","listing-language","listing-execute","listing-title","listing-academic_title","listing-name","listing-surname","listing-first_name","listing-position","listing-faculty","listing-membertype","listing-email","listing-photo","listing-social_media","listing-mission_statement","listing-path","listing-outputHref","listing-author","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count","listing-display_weight_staff","listing-osc_staff_title"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -198,7 +198,7 @@ window.Quarto = {
   </li>  
         <li>
     <a class="dropdown-item" href="../people/staff.html">
- <span class="dropdown-text">Staff</span></a>
+ <span class="dropdown-text">Staff &amp; HiWis</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="../people/scientific-board.html">
@@ -319,6 +319,7 @@ Psychology &amp; Education
 </div>
 <div class="card d-flex flex-column align-items-center" style="width: 185px;">
 <!-- ORCID icon container -->
+<p><a href="https://orcid.org/0000-0003-1769-7580" target="_blank" class="orcid-icon"> <i class="fa-brands fa-orcid fa-lg"></i> </a></p>
 <a href="../people/people/pat_callahan.html" class="profile-image-wrapper"> <img src="people//images/default.svg" alt="Profile" class="profile-image"> </a>
 <div class="card-body flex-column text-center">
 <a href="../people/people/pat_callahan.html" class="card-title">Pat Callahan</a>
