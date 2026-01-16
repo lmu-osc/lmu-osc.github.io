@@ -1,11 +1,13 @@
 ---
-title: "Staff"
+title: "Staff & HiWis"
 listing:
   - id: staff
     contents: 
       - people
-    template: listings/management-listing.ejs
-    sort: "surname asc"
+    template: listings/staff-listing.ejs
+    sort:
+      - "display_weight_staff asc"
+      - "surname asc"
     include: 
       membertype: "staff"
 
