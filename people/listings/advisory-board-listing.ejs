@@ -1,14 +1,16 @@
 <div class="advisory-board-grid">
 <% for (const item of items) { %>
-<div class="card" <%= metadataAttrs(item) %> onclick="window.open('<%= item.href %>', '_blank')" style="cursor: pointer;">
+<div class="card" <%= metadataAttrs(item) %>>
 <div class="row g-0">
 <div class="d-flex justify-content-center align-items-center p-2 mt-3">
+<a href="<%= item.website.url %>" target="_blank">
 <img src="people/<%= item.photo || '/images/default.svg' %>" class="profile-image" alt="Profile photo of <%= item.name %>">
+</a>
 </div>
 <div class="card-body">
-<div class="card-title"><%= item.name %></div>
+<a class="card-title" href="<%= item.website.url %>" target="_blank"><%= item.name %></a>
 <div class="card-subtitle card-subtitle-one mb-0 text-muted">
-  <%= item.title %>
+  <%= item.academic_title %>
 </div>
 <div class="card-subtitle card-subtitle-two text-muted">
   <%= item.position %>
@@ -34,7 +36,7 @@
   grid-gap: 5px;
   width: auto;
   margin: 0 auto;
-  gap:2rem;
+  gap: 1rem;
 }
 .card {
   transition: all 0.4s ease; 
@@ -68,6 +70,8 @@
   font-size: 1.4rem;
   font-weight: 700;
   letter-spacing: 0.3px;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .card-subtitle-one {

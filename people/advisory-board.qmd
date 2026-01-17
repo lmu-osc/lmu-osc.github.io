@@ -3,9 +3,15 @@ title: "Advisory Board"
 listing:
   - id: current-advisory-board
     contents: 
-      - adv_board.yml
+      - people
     template: listings/advisory-board-listing.ejs
+    sort: "display_weight asc"
+    include: 
+      membertype: "current advisory board"
 ---
 The OSC is advised by key internal and external actors appointed for 3-year terms. Advisory board members for the term 2024 - 2027 are:
 
 ## Current Advisory Board
+
+::: {#current-advisory-board}
+:::
