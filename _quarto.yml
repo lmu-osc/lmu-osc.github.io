@@ -31,7 +31,7 @@ website:
       - href: index.qmd
         icon: house-door
         text: Home
-      - href: about.qmd
+      - href: about/index.qmd
         icon: info-circle
         text: About
       - text: People
@@ -109,6 +109,7 @@ website:
       title: "Partners"
       contents: 
         - section: "Partners"
+          href: partners/index.qmd
           contents:
             - text: "Institutional Members"
               href: partners/institutional_members.qmd 
