@@ -1,50 +1,40 @@
 [
   {
-    "listing": "/people/fellows.html",
+    "listing": "/people/scientific-board.html",
     "items": [
-      "/people/people/alp_kaan_aksu.html",
-      "/people/people/pat_callahan.html",
-      "/people/people/giacomo_de_nicola.html",
-      "/people/people/benedikt_ehrenwirth.html",
-      "/people/people/franka_etzel.html",
-      "/people/people/maximilian_frank.html",
-      "/people/people/laura_goetz.html",
-      "/people/people/reema_gupta.html",
-      "/people/people/felix_henninger.html",
-      "/people/people/markus_herklotz.html",
-      "/people/people/florian_kohrt.html",
-      "/people/people/barbara_kovacic.html",
-      "/people/people/maximilian_kristen.html",
-      "/people/people/daniel_kraehmer.html",
-      "/people/people/julian_lange.html",
-      "/people/people/leyla_larsson.html",
-      "/people/people/maximilian_mandl.html",
-      "/people/people/maria_matveev.html",
-      "/people/people/laura_meier.html",
-      "/people/people/stephan_nuding.html",
-      "/people/people/gracia_pruem.html",
-      "/people/people/christina_sauer.html",
-      "/people/people/patrick_oliver_schenk.html",
-      "/people/people/leonhard_schramm.html",
-      "/people/people/caspar_schumacher.html",
-      "/people/people/jan_simson.html",
-      "/people/people/po_chun_tseng.html",
-      "/people/people/alberto__villagran.html",
-      "/people/people/yijing_wang.html",
-      "/people/people/viktoria_wiegelmann.html",
-      "/people/people/martin_wiehr.html",
-      "/people/people/lisa_wimmer.html"
+      "/people/people/sabine_hoffmann.html",
+      "/people/people/anna_sophie_kuempel.html",
+      "/people/people/nikolaus_plesnila.html",
+      "/people/people/tobias_straub.html",
+      "/people/people/alexander_wuttke.html"
     ]
   },
   {
-    "listing": "/people/alumnae.html",
+    "listing": "/people/staff.html",
     "items": [
-      "/people/people/coretta_stefano.html",
-      "/people/people/ivett_guntersdorfer.html",
-      "/people/people/larissa_neumann.html",
-      "/people/people/wolfgang_strube.html",
-      "/people/people/imai_taisuke.html",
-      "/people/people/julian_unkel.html"
+      "/people/people/malika_ihle.html",
+      "/people/people/sarah_von_grebmer_zu_wolfsthurn.html",
+      "/people/people/sara_lil_middleton.html",
+      "/people/people/reema_gupta.html",
+      "/people/people/pat_callahan.html"
+    ]
+  },
+  {
+    "listing": "/people/advisory-board.html",
+    "items": [
+      "/people/people/tanita_casci.html",
+      "/people/people/ulrich_dirnagl.html",
+      "/people/people/chelle_gentemann.html",
+      "/people/people/bernhard_goodwin.html",
+      "/people/people/stephan_hartmann.html",
+      "/people/people/richard_mcelreath.html"
+    ]
+  },
+  {
+    "listing": "/people/management.html",
+    "items": [
+      "/people/people/felix_schoenbrodt.html",
+      "/people/people/malika_ihle.html"
     ]
   },
   {
@@ -171,10 +161,69 @@
     ]
   },
   {
-    "listing": "/training/study_planning/index.html",
+    "listing": "/training/principles/index.html",
     "items": [
-      "/training/study_planning/preregistration_why_how.html",
+      "/training/principles/replicability_crisis.html",
+      "/training/principles/credible_science.html"
+    ]
+  },
+  {
+    "listing": "/training/publishing_outputs/index.html",
+    "items": [
+      "/training/publishing_outputs/code_publishing.html",
+      "/training/publishing_outputs/open_access_preprints_postprints.html"
+    ]
+  },
+  {
+    "listing": "/training/data_management/index.html",
+    "items": [
+      "/training/data_management/open_data.html",
+      "/training/data_management/fair_data_management.html",
+      "/training/data_management/data_dictionary.html",
+      "/training/data_management/maintaining_privacy_with_open_data.html",
+      "/training/data_management/data_anonymity.html",
+      "/training/data_management/synthetic_data.html"
+    ]
+  },
+  {
+    "listing": "/training/reproducible_processes/index.html",
+    "items": [
+      "/training/reproducible_processes/introduction_to_r.html",
+      "/training/reproducible_processes/introduction_to_version_control_within_rstudio.html",
+      "/training/reproducible_processes/collaborative_coding_with_github_and_rstudio.html",
+      "/training/reproducible_processes/advanced_git.html",
+      "/training/reproducible_processes/introduction_to_quarto.html",
+      "/training/reproducible_processes/introduction_to_zotero.html",
+      "/training/reproducible_processes/introduction_to_renv.html"
+    ]
+  },
+  {
+    "listing": "/training/self_training.html",
+    "items": [
+      "/training/principles/index.html",
+      "/training/study_planning/index.html",
+      "/training/data_management/index.html",
+      "/training/reproducible_processes/index.html",
+      "/training/publishing_outputs/index.html",
+      "/training/reproducible_processes/introduction_to_renv.html",
+      "/training/reproducible_processes/introduction_to_version_control_within_rstudio.html",
+      "/training/data_management/data_anonymity.html",
+      "/training/data_management/data_dictionary.html",
+      "/training/data_management/fair_data_management.html",
+      "/training/data_management/maintaining_privacy_with_open_data.html",
+      "/training/data_management/open_data.html",
+      "/training/data_management/synthetic_data.html",
+      "/training/principles/credible_science.html",
+      "/training/principles/replicability_crisis.html",
+      "/training/publishing_outputs/code_publishing.html",
+      "/training/publishing_outputs/open_access_preprints_postprints.html",
+      "/training/reproducible_processes/advanced_git.html",
+      "/training/reproducible_processes/collaborative_coding_with_github_and_rstudio.html",
+      "/training/reproducible_processes/introduction_to_quarto.html",
+      "/training/reproducible_processes/introduction_to_r.html",
+      "/training/reproducible_processes/introduction_to_zotero.html",
       "/training/study_planning/introduction_to_simulations_in_r.html",
+      "/training/study_planning/preregistration_why_how.html",
       "/training/study_planning/simulations_for_advanced_power_analyses.html"
     ]
   },
@@ -307,108 +356,59 @@
     ]
   },
   {
-    "listing": "/training/self_training.html",
+    "listing": "/training/study_planning/index.html",
     "items": [
-      "/training/principles/index.html",
-      "/training/study_planning/index.html",
-      "/training/data_management/index.html",
-      "/training/reproducible_processes/index.html",
-      "/training/publishing_outputs/index.html",
-      "/training/reproducible_processes/introduction_to_renv.html",
-      "/training/reproducible_processes/introduction_to_version_control_within_rstudio.html",
-      "/training/data_management/data_anonymity.html",
-      "/training/data_management/data_dictionary.html",
-      "/training/data_management/fair_data_management.html",
-      "/training/data_management/maintaining_privacy_with_open_data.html",
-      "/training/data_management/open_data.html",
-      "/training/data_management/synthetic_data.html",
-      "/training/principles/credible_science.html",
-      "/training/principles/replicability_crisis.html",
-      "/training/publishing_outputs/code_publishing.html",
-      "/training/publishing_outputs/open_access_preprints_postprints.html",
-      "/training/reproducible_processes/advanced_git.html",
-      "/training/reproducible_processes/collaborative_coding_with_github_and_rstudio.html",
-      "/training/reproducible_processes/introduction_to_quarto.html",
-      "/training/reproducible_processes/introduction_to_r.html",
-      "/training/reproducible_processes/introduction_to_zotero.html",
-      "/training/study_planning/introduction_to_simulations_in_r.html",
       "/training/study_planning/preregistration_why_how.html",
+      "/training/study_planning/introduction_to_simulations_in_r.html",
       "/training/study_planning/simulations_for_advanced_power_analyses.html"
     ]
   },
   {
-    "listing": "/training/reproducible_processes/index.html",
+    "listing": "/people/alumnae.html",
     "items": [
-      "/training/reproducible_processes/introduction_to_r.html",
-      "/training/reproducible_processes/introduction_to_version_control_within_rstudio.html",
-      "/training/reproducible_processes/collaborative_coding_with_github_and_rstudio.html",
-      "/training/reproducible_processes/advanced_git.html",
-      "/training/reproducible_processes/introduction_to_quarto.html",
-      "/training/reproducible_processes/introduction_to_zotero.html",
-      "/training/reproducible_processes/introduction_to_renv.html"
+      "/people/people/coretta_stefano.html",
+      "/people/people/ivett_guntersdorfer.html",
+      "/people/people/larissa_neumann.html",
+      "/people/people/wolfgang_strube.html",
+      "/people/people/imai_taisuke.html",
+      "/people/people/julian_unkel.html"
     ]
   },
   {
-    "listing": "/training/data_management/index.html",
+    "listing": "/people/fellows.html",
     "items": [
-      "/training/data_management/open_data.html",
-      "/training/data_management/fair_data_management.html",
-      "/training/data_management/data_dictionary.html",
-      "/training/data_management/maintaining_privacy_with_open_data.html",
-      "/training/data_management/data_anonymity.html",
-      "/training/data_management/synthetic_data.html"
-    ]
-  },
-  {
-    "listing": "/training/publishing_outputs/index.html",
-    "items": [
-      "/training/publishing_outputs/code_publishing.html",
-      "/training/publishing_outputs/open_access_preprints_postprints.html"
-    ]
-  },
-  {
-    "listing": "/training/principles/index.html",
-    "items": [
-      "/training/principles/replicability_crisis.html",
-      "/training/principles/credible_science.html"
-    ]
-  },
-  {
-    "listing": "/people/management.html",
-    "items": [
-      "/people/people/malika_ihle.html",
-      "/people/people/felix_schoenbrodt.html"
-    ]
-  },
-  {
-    "listing": "/people/advisory-board.html",
-    "items": [
-      "/people/people/tanita_casci.html",
-      "/people/people/ulrich_dirnagl.html",
-      "/people/people/chelle_gentemann.html",
-      "/people/people/bernhard_goodwin.html",
-      "/people/people/stephan_hartmann.html",
-      "/people/people/richard_mcelreath.html"
-    ]
-  },
-  {
-    "listing": "/people/staff.html",
-    "items": [
-      "/people/people/malika_ihle.html",
-      "/people/people/sarah_von_grebmer_zu_wolfsthurn.html",
-      "/people/people/sara_lil_middleton.html",
+      "/people/people/alp_kaan_aksu.html",
+      "/people/people/pat_callahan.html",
+      "/people/people/giacomo_de_nicola.html",
+      "/people/people/benedikt_ehrenwirth.html",
+      "/people/people/franka_etzel.html",
+      "/people/people/maximilian_frank.html",
+      "/people/people/laura_goetz.html",
       "/people/people/reema_gupta.html",
-      "/people/people/pat_callahan.html"
-    ]
-  },
-  {
-    "listing": "/people/scientific-board.html",
-    "items": [
-      "/people/people/sabine_hoffmann.html",
-      "/people/people/anna_sophie_kuempel.html",
-      "/people/people/nikolaus_plesnila.html",
-      "/people/people/tobias_straub.html",
-      "/people/people/alexander_wuttke.html"
+      "/people/people/felix_henninger.html",
+      "/people/people/markus_herklotz.html",
+      "/people/people/florian_kohrt.html",
+      "/people/people/barbara_kovacic.html",
+      "/people/people/maximilian_kristen.html",
+      "/people/people/daniel_kraehmer.html",
+      "/people/people/julian_lange.html",
+      "/people/people/leyla_larsson.html",
+      "/people/people/maximilian_mandl.html",
+      "/people/people/maria_matveev.html",
+      "/people/people/laura_meier.html",
+      "/people/people/stephan_nuding.html",
+      "/people/people/gracia_pruem.html",
+      "/people/people/christina_sauer.html",
+      "/people/people/patrick_oliver_schenk.html",
+      "/people/people/leonhard_schramm.html",
+      "/people/people/caspar_schumacher.html",
+      "/people/people/jan_simson.html",
+      "/people/people/po_chun_tseng.html",
+      "/people/people/alberto__villagran.html",
+      "/people/people/yijing_wang.html",
+      "/people/people/viktoria_wiegelmann.html",
+      "/people/people/martin_wiehr.html",
+      "/people/people/lisa_wimmer.html"
     ]
   }
 ]
