@@ -372,8 +372,10 @@ window.Quarto = {
 <div class="container py-4">
 <div class="d-flex flex-wrap justify-content-center gap-4">
 <div class="card d-flex flex-column align-items-center" style="width: 185px;">
-<!-- ORCID icon container -->
+<!-- ORCID icon container (always present for consistent spacing) -->
+<div class="orcid-icon-container">
 <p><a href="https://orcid.org/0000-0001-9627-5532" target="_blank" class="orcid-icon"> <i class="fa-brands fa-orcid fa-lg"></i> </a></p>
+</div>
 <a href="../people/people/coretta_stefano.html" class="profile-image-wrapper"> <img src="people/images/coretta_stefano.jpg" alt="Profile" class="profile-image"> </a>
 <div class="card-body flex-column text-center">
 <a href="../people/people/coretta_stefano.html" class="card-title">Stefano Coretta</a>
@@ -385,8 +387,10 @@ Dr.
 </div>
 </div>
 <div class="card d-flex flex-column align-items-center" style="width: 185px;">
-<!-- ORCID icon container -->
+<!-- ORCID icon container (always present for consistent spacing) -->
+<div class="orcid-icon-container">
 <p><a href="https://orcid.org/0000-0001-5874-852X" target="_blank" class="orcid-icon"> <i class="fa-brands fa-orcid fa-lg"></i> </a></p>
+</div>
 <a href="../people/people/ivett_guntersdorfer.html" class="profile-image-wrapper"> <img src="people/images/guntersdorfer_ivett.jpg" alt="Profile" class="profile-image"> </a>
 <div class="card-body flex-column text-center">
 <a href="../people/people/ivett_guntersdorfer.html" class="card-title">Ivett Guntersdorfer</a>
@@ -398,8 +402,10 @@ Prof.&nbsp;Dr.
 </div>
 </div>
 <div class="card d-flex flex-column align-items-center" style="width: 185px;">
-<!-- ORCID icon container -->
+<!-- ORCID icon container (always present for consistent spacing) -->
+<div class="orcid-icon-container">
 <p><a href="https://orcid.org/0000-0001-6845-5413" target="_blank" class="orcid-icon"> <i class="fa-brands fa-orcid fa-lg"></i> </a></p>
+</div>
 <a href="../people/people/larissa_neumann.html" class="profile-image-wrapper"> <img src="people/images/neumann_larissa.jpg" alt="Profile" class="profile-image"> </a>
 <div class="card-body flex-column text-center">
 <a href="../people/people/larissa_neumann.html" class="card-title">Larissa Neumann</a>
@@ -411,8 +417,10 @@ Dr.
 </div>
 </div>
 <div class="card d-flex flex-column align-items-center" style="width: 185px;">
-<!-- ORCID icon container -->
+<!-- ORCID icon container (always present for consistent spacing) -->
+<div class="orcid-icon-container">
 <p><a href="https://orcid.org/0000-0003-2380-7651" target="_blank" class="orcid-icon"> <i class="fa-brands fa-orcid fa-lg"></i> </a></p>
+</div>
 <a href="../people/people/wolfgang_strube.html" class="profile-image-wrapper"> <img src="people/images/strube_wolfgang.jpg" alt="Profile" class="profile-image"> </a>
 <div class="card-body flex-column text-center">
 <a href="../people/people/wolfgang_strube.html" class="card-title">Wolfgang Strube</a>
@@ -424,8 +432,10 @@ Dr.
 </div>
 </div>
 <div class="card d-flex flex-column align-items-center" style="width: 185px;">
-<!-- ORCID icon container -->
+<!-- ORCID icon container (always present for consistent spacing) -->
+<div class="orcid-icon-container">
 <p><a href="https://orcid.org/0000-0002-0610-8093" target="_blank" class="orcid-icon"> <i class="fa-brands fa-orcid fa-lg"></i> </a></p>
+</div>
 <a href="../people/people/imai_taisuke.html" class="profile-image-wrapper"> <img src="people//images/default.svg" alt="Profile" class="profile-image"> </a>
 <div class="card-body flex-column text-center">
 <a href="../people/people/imai_taisuke.html" class="card-title">Imai Taisuke</a>
@@ -437,8 +447,10 @@ Dr.
 </div>
 </div>
 <div class="card d-flex flex-column align-items-center" style="width: 185px;">
-<!-- ORCID icon container -->
+<!-- ORCID icon container (always present for consistent spacing) -->
+<div class="orcid-icon-container">
 <p><a href="https://orcid.org/0000-0001-9568-7041" target="_blank" class="orcid-icon"> <i class="fa-brands fa-orcid fa-lg"></i> </a></p>
+</div>
 <a href="../people/people/julian_unkel.html" class="profile-image-wrapper"> <img src="people/images/unkel_julian.png" alt="Profile" class="profile-image"> </a>
 <div class="card-body flex-column text-center">
 <a href="../people/people/julian_unkel.html" class="card-title">Julian Unkel</a>
@@ -533,10 +545,16 @@ Dr.
   padding: 0.5rem 0.5rem;  /* smaller padding than default 1rem */
 }
 
-.orcid-icon {
+.orcid-icon-container {
   position: absolute;
   top: 0.5rem;
   right: 0.5rem;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.orcid-icon {
+  position: absolute;
   font-size: 1.2rem;      /* adjust size */
   color: #A6CE39;         /* ORCID green */
   z-index: 10;
