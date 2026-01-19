@@ -142,8 +142,8 @@ website:
         - section: "People"
           href: people/index.qmd
           contents:
-            - section: "Management"
-              href: people/management.qmd 
+            - text: "Management"
+              href: people/management.qmd
             - text: "Staff & HiWis"
               href: people/staff.qmd 
             - text: "Scientific Board"
