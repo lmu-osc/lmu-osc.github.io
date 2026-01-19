@@ -31,7 +31,7 @@ website:
       - href: index.qmd
         icon: house-door
         text: Home
-      - href: about.qmd
+      - href: about/index.qmd
         icon: info-circle
         text: About
       - text: People
@@ -109,6 +109,7 @@ website:
       title: "Partners"
       contents: 
         - section: "Partners"
+          href: partners/index.qmd
           contents:
             - text: "Institutional Members"
               href: partners/institutional_members.qmd 
@@ -133,6 +134,28 @@ website:
               href: partners/externals.qmd 
             - text: "Funders"
               href: partners/funders.qmd
+
+    - id: people
+      collapse-level: 1
+      title: "People"
+      contents: 
+        - section: "People"
+          href: people/index.qmd
+          contents:
+            - section: "Management"
+              href: people/management.qmd 
+            - text: "Staff & HiWis"
+              href: people/staff.qmd 
+            - text: "Scientific Board"
+              href: people/scientific-board.qmd 
+            - text: "Advisory Board"
+              href: people/advisory-board.qmd 
+            - text: "Members"
+              href: people/members.qmd 
+            - text: "Fellows"
+              href: people/fellows.qmd 
+            - text: "Alumnae"
+              href: people/alumnae.qmd
 
 
 format:
