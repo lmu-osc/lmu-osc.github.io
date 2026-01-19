@@ -1,6 +1,7 @@
 name: Check Profile Naming Conventions
 
 on:
+  workflow_dispatch:
   pull_request:
     paths:
       - 'people/people/**'
