@@ -1,0 +1,55 @@
+---
+title: Tejaswini Sharma
+academic_title: BSC Student
+name: Tejaswini Sharma
+surname: Sharma
+first_name: Tejaswini
+osc_staff_title: HiWi
+faculty: 
+membertype: ['fellow', 'staff']
+display_weight_staff: 99
+email: tejaswini.sharma@campus.lmu.de
+photo: 
+website:
+  - label:
+    url: 
+social_media:
+  ORCID:
+mission_statement:
+  - fill in
+---
+{{< include templates/_setup.qmd >}}
+{{< include templates/_contact_items.qmd >}}
+{{< include templates/_social_links.qmd >}}
+{{< include templates/_mission_statement.qmd >}}
+{{< include templates/_research_interests.qmd >}}
+{{< include templates/_selected_publications.qmd >}}
+
+
+
+```{r}
+#| echo: false
+
+# Compose the full profile
+profile <- div(class = "people-profile",
+  div(class = "people-header",
+    div(class = "people-photo",
+      img(src = photo)
+    ),
+    div(class = "people-info",
+      p(class = "people-position", position),
+      p(class = "people-faculty", paste0("Faculty of ", faculty)),
+      div(class = "people-contact", contact_items, social_links)
+    )
+  ),
+  mission_block,
+  # custom content would most likely go here, right after the mission_block
+  div(class = "people-content",
+    interests_block,
+    publications_block
+  )
+)
+
+# Render the profile
+browsable(profile)  
+```
