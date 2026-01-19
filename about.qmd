@@ -1,4 +1,6 @@
 ---
+title: About Us
+pagetitle: About
 format:
   html:
     css: 
@@ -15,10 +17,7 @@ page-layout: full
 <section class="hero mb-0">
   <div class="row align-items-center text-white g-0 py-1 px-4 px-lg-5">
     <div class="container hero-container">
-      <p class="fs-1 mb-3">
-        <span class="hero-about">About Us</span>
-
-      </p>
+   
       <p class="mb-3 mt-3 hero-description">
         The interdisciplinary LMU Open Science Center (OSC) has the mission to promote and to foster open science practices at LMU Munich and beyond.<br>
         Transparency and reproducibility lie at the core of scientific integrity. Pursuing these goals through open practices, for example by preregistering studies, and by providing open data, open materials, analysis scripts for computational reproducibility, and open access versions of the published results increases the efficiency, validity, and credibility of research. We subsume these practices under the term “Open Science”. Furthermore, independent replications are vital to establish the robustness and generalizability of research findings.

@@ -1,5 +1,6 @@
 ---
-pagetitle: "Training Home"
+title: "Training Overview"
+pagetitle: "Training"
 format: 
   html:
     anchor-sections: false
@@ -19,12 +20,6 @@ format:
 }
 
 /*description text styles*/
-.training-overview h1 {
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
-  color: var(--primary-color);
-  font-weight: 700;
-}
 .training-overview p{
   font-size: 1.1rem;
   color: #4a5568;
@@ -163,7 +158,6 @@ format:
 
 </style>
 :::{.training-overview}
-# Training Overview
 
 Our training material can be explored in different ways:
 
