@@ -4,7 +4,7 @@ pagetitle: About
 format:
   html:
     css: 
-      - about/about.css
+      - /about/about.css
     include-in-header: 
       - text: |
           <link href="/assets/bootstrap-5.3.8-dist/css/bootstrap.min.css" rel="stylesheet">
@@ -47,7 +47,7 @@ page-layout: full
       <!-- Impact report card -->
       <div class="col-md-4 col-12 d-flex justify-content-center">
         <div class="d-flex flex-column justify-content-between h-100 p-2 border flex-grow-1">
-          <img src="about/img/impact-report.png" class="img-fluid" alt="PDF thumbnail image for the 2023 Impact Report">
+          <img src="/about/img/impact-report.png" class="img-fluid" alt="PDF thumbnail image for the 2023 Impact Report">
           <a href="https://zenodo.org/records/10285395" target="_blank"  class="btn btn-primary w-100 bg-brand-green border-brand-green mt-auto" download>
             Download PDF <i class="fa-solid fa-arrow-up-right-from-square"></i>
           </a>
@@ -75,10 +75,10 @@ page-layout: full
             <h3 class="card-title fs-5 mb-2"><i class="fa-solid fa-user-tie fs-3 text-success px-1" aria-hidden="true"></i> Leadership</h3>
             <p class="card-text mb-4 text-muted">Executive and scientific direction.</p>
             <div class="actions mt-auto d-grid gap-2">
-              <a class="btn btn-primary btn-pop w-100 bg-brand-green border-brand-green" href="../people/people/00001_felix_schoenbrodt.html">
+              <a class="btn btn-primary btn-pop w-100 bg-brand-green border-brand-green" href="/people/people/felix_schoenbrodt.qmd">
                 Managing Director
               </a>
-              <a class="btn btn-outline-primary btn-pop w-100" href="../people/people/00002_malika_ihle.html">
+              <a class="btn btn-outline-primary btn-pop w-100" href="/people/people/malika_ihle.qmd">
                 Scientific Coordinator
               </a>
             </div>
