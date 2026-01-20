@@ -47,7 +47,11 @@ people_files %>%
   purrr::map(~{
     card_yaml <- extract_yaml(.x)
     
-    card_yaml[["faculty"]]
+    if (is.null(card_yaml[["faculty"]])) {
+      return("no faculty field")
+    } else {
+      return(card_yaml[["faculty"]])
+    }
   }) %>%
   unlist() %>%
   tibble(title = .) %>%
