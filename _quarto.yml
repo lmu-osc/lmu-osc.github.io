@@ -41,7 +41,7 @@ website:
           - people/management.qmd
           - people/staff.qmd
           - people/scientific-board.qmd
-          - people/advisory-board.qmd
+          - people/advisors.qmd
           - people/members.qmd
           - people/fellows.qmd
           - people/alumnae.qmd
@@ -148,8 +148,8 @@ website:
               href: people/staff.qmd 
             - text: "Scientific Board"
               href: people/scientific-board.qmd 
-            - text: "Advisory Board"
-              href: people/advisory-board.qmd 
+            - text: "Advisor"
+              href: people/advisors.qmd 
             - text: "Members"
               href: people/members.qmd 
             - text: "Fellows"
