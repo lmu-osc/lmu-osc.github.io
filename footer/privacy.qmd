@@ -1,0 +1,73 @@
+---
+title: "Privacy Policy"
+format: 
+  html:
+    toc: false
+    page-layout: full
+---
+<style>
+  /* css styles */
+:root {
+    --primary-color: #00883A;
+    --primary-light: rgba(43, 134, 75, 0.1);
+    --text-dark: #333333;
+    --text-light: #ffffff;
+    --osc-white: #ffffff;
+    --text-light: #5f5f5f;
+    --lmu-black: #232323;
+  }
+  
+#quarto-content.page-columns main.column-page{
+    margin:0 auto;
+    max-width: 1200px;
+    padding: 2rem;
+    width:100%;
+    background-color: #f9fcf9;
+}
+
+
+.privacy-container {
+    padding: 3rem 4rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 1rem;
+    min-height: 800px;
+    box-shadow: 0 3px 6px #bfc7cf6c;
+    background-color:var(--osc-white);
+}
+
+.privacy-title h3{
+    font-size: 2.3rem;
+    font-weight: 900;
+    line-height: 1.5;
+    color:var(--primary-color);
+}
+
+.privacy-container p{
+    text-align: justify;
+    font-size: 1.1rem;
+    line-height: 1.85;
+    font-weight:500;
+    color: var(--text-light);
+}
+
+.privacy-container a,
+.privacy-container i{
+    color:var(--primary-color);
+}
+
+</style>
+
+:::{.privacy-container}
+
+:::{.privacy-title}
+### Privacy Policy
+:::
+
+General data protection policy for the internet pages of Ludwig-Maximilians-Universität München (hereinafter “LMU”)
+
+[LMU's general privacy policy](https://www.lmu.de/en/footer/privacy-policy/index.html){target="_blank"} <i class="fa-solid fa-arrow-up-right-from-square"></i> applies.
+
+
+:::

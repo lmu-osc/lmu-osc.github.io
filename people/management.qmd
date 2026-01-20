@@ -5,7 +5,7 @@ listing:
     contents: 
       - people
     template: listings/management-listing.ejs
-    sort: "display_weight asc"
+    sort: "display_weight_management asc"
     include: 
       membertype: "management"
 ---

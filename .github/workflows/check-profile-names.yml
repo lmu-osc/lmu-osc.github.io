@@ -1,6 +1,7 @@
 name: Check Profile Naming Conventions
 
 on:
+  workflow_dispatch:
   pull_request:
     paths:
       - 'people/people/**'
@@ -18,15 +19,6 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
       
-      - name: Setup R
-        uses: r-lib/actions/setup-r@v2
-        with:
-          r-version: 'release'
-      
-      - name: Install R dependencies
-        run: |
-          Rscript -e 'install.packages("stringr", repos="https://cloud.r-project.org")'
-      
       - name: Run profile name checker
         run: |
-          Rscript .github/_name_checker.R
+          python .github/_name_checker.py

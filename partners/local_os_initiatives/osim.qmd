@@ -1,10 +1,7 @@
 ---
-title: "Open Science Initiatiative in Medicine"
+pagetitle: "Open Science Initiative in Medicine"
 format: 
   html:
-    include-in-header: 
-      - text: |
-          <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     css: styles.css
 page-layout: full
 ---
@@ -43,8 +40,8 @@ page-layout: full
         <div class="osc-init-organizers">
             <h2 class="osc-init-involved__title"><i class="bi bi-people"></i>Current Organizers</h2>
             <ul class="osc-init-organizer-list">
-                <li class="osc-init-organizer-item"><a href="../../people/people/00073_luisa_f._jimenez-soto.html">PD. Dr. Luisa F. Jiménez-Soto (Chair) </a></li>
-                <li class="osc-init-organizer-item"><a href="../../people/people/00017_julian_lange.html">Julian Lange, M.Sc. (Coordinator)</a></li>
+                <li class="osc-init-organizer-item"><a href="/people/people/luisa_f._jimenez-soto.html">PD. Dr. Luisa F. Jiménez-Soto (Chair) </a></li>
+                <li class="osc-init-organizer-item"><a href="/people/people/julian_lange.html">Julian Lange, M.Sc. (Coordinator)</a></li>
             </ul>
         </div>
         <!-- Senior Members -->
@@ -55,13 +52,13 @@ page-layout: full
 
             <ul class="osc-init-organizer-list">
                 <li class="osc-init-organizer-item">
-                    <a href="../../people/people/00044_anne-laure_boulesteix.html">Prof. Dr. Anne-Laure Boulesteix</a>
+                    <a href="/people/people/anne-laure_boulesteix.html">Prof. Dr. Anne-Laure Boulesteix</a>
                 </li>
                 <li class="osc-init-organizer-item">
                     <a href="#">Prof. Dr. Eva Hoster</a>
                 </li>
                 <li class="osc-init-organizer-item">
-                    <a href="../../people/people/00102_nikolaus_plesnila.html">Prof. Dr. Nikolaus Plesnila</a>
+                    <a href="/people/people/nikolaus_plesnila.html">Prof. Dr. Nikolaus Plesnila</a>
                 </li>
             </ul>
         </div>

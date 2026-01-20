@@ -4,7 +4,7 @@ listing:
   - id: current-advisory-board
     contents: 
       - people
-    template: listings/management-listing.ejs
+    template: listings/advisory-board-listing.ejs
     sort: "display_weight asc"
     include: 
       membertype: "current advisory board"

@@ -1,0 +1,94 @@
+---
+pagetitle: "Local Open Science Initiatives"
+format: 
+  html:
+    css: styles.css
+    page-layout: full
+---
+```{=html}
+
+<div class="local-initiatives">
+    <p>The LMU Open Science Center members and fellows organise the following grassroots initiatives.</p>
+    
+    <div class="initiatives-grid">
+      <div class="initiative-card">
+        <div class="initiative-img">
+          <img src="images/osim.png" alt="OSIM logo">
+        </div>
+        <h3>OSIM</h3>
+        <p>Open Science Initiative in Medicine</p>
+        <a href="local_os_initiatives/osim.html" class="initiative-button">Learn More</a>
+      </div>
+      
+      <div class="initiative-card">
+        <div class="initiative-img">
+          <img src="images/osis.png" alt="OSIS logo">
+        </div>
+        <h3>OSIS</h3>
+        <p>Open Science Initiative in Statistics</p>
+        <a href="local_os_initiatives/osis.html" class="initiative-button">Learn More</a>
+      </div>
+      
+      <div class="initiative-card">
+        <div class="initiative-img">
+          <img src="images/osip.png" alt="OSIP logo">
+        </div>
+        <h3>OSIP</h3>
+        <p>Open Science Intitiative in Psychology</p>
+        <a href="local_os_initiatives/osip.html" class="initiative-button">Learn More</a>
+      </div>
+      
+      <div class="initiative-card">
+        <div class="initiative-img">
+          <img src="images/reproducibilitea.jpeg" alt="ReproducibiliTea logo">
+        </div>
+        <h3>ReproducibiliTea</h3>
+        <p>Journal club initiative that promotes reproducible research practices through regular discussions.</p>
+        <a href="local_os_initiatives/reproducibilitea.html" class="initiative-button">Learn More</a>
+      </div>
+      
+      <div class="initiative-card">
+        <div class="initiative-img">
+          <img src="images/hackyhour.svg" alt="Hacky Hour logo">
+        </div>
+        <h3>Hacky Hour</h3>
+        <p>Regular informal meetups where researchers can discuss coding, data analysis, and research tools.</p>
+        <a href="local_os_initiatives/hackyhour.html" class="initiative-button">Learn More</a>
+      </div>
+      
+      <div class="initiative-card">
+        <div class="initiative-img">
+          <img src="images/rse.png" alt="Munich RSE logo">
+        </div>
+        <h3>Munich RSE</h3>
+        <p>Research Software Engineering group supporting high-quality research software development.</p>
+        <a href="local_os_initiatives/munichRSE.html" class="initiative-button">Learn More</a>
+      </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+```

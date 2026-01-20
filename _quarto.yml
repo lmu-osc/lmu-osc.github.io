@@ -2,11 +2,12 @@ project:
   type: website
   output-dir: _site
   pre-render: curl https://raw.githubusercontent.com/lmu-osc/branding-resources/refs/heads/main/lmu-osc-custom.scss -o lmu-osc-custom.scss
+  resources:
+    - assets/
 
 website:
   title: "LMU Open Science Center"
   favicon: assets/img/lmu_osc_logo.jpg
-  reader-mode: true
   search: true
   page-navigation: true
   repo-url: https://github.com/lmu-osc/lmu-osc.github.io
@@ -30,7 +31,7 @@ website:
       - href: index.qmd
         icon: house-door
         text: Home
-      - href: about/about.qmd
+      - href: about/index.qmd
         icon: info-circle
         text: About
       - text: People
@@ -47,19 +48,19 @@ website:
       - text: Partners
         icon: boxes
         menu:
-          - partners/institutional_members.qmd
-          - partners/local_os_intiatives.qmd
-          - partners/other_lmu_support_services.qmd
-          - partners/externals.qmd
-          - partners/funders.qmd
-      # - sidebar:training
+          - text: Institutional Members
+            href: partners/institutional_members.qmd
+          - text: Local Open Science Initiatives
+            href: partners/local_os_initiatives.qmd
+          - text: Other LMU Support Services
+            href: partners/other_lmu_support_services.qmd
+          - text: External Partners
+            href: partners/externals.qmd
+          - text: Funders
+            href: partners/funders.qmd
       - icon: mortarboard
         text: Training
-        href: training.qmd
-#       menu:
-#         - self-training.qmd
-#         - train-the-trainer.qmd
-#         - open-research-cycle.qmd
+        href: training/index.qmd
       - href: events/index.qmd
         icon: calendar-event
         text: Events
@@ -71,33 +72,91 @@ website:
       
   sidebar:
     - id: training
-      title: "Training"
-      icon: mortarboard
+      # style and background inherited by other sidebars
       style: "docked"
       background: light
-      collapse-level: 2
+      collapse-level: 3
+      title: "Training"
       contents: 
-        - self-training.qmd
-        - train-the-trainer.qmd
-        - open-research-cycle.qmd
-  # 
-  #   - id: gittutorials
-  #     title: "Git Tutorials"
-  #     style: "docked"
-  #     background: light
-  #     collapse-level: 2
-  #     contents: 
-  #       - qmd_one.qmd
-  #       - qmd_two.qmd
-  #       
-  #   - id: quartotutorials
-  #     title: "Quarto Tutorials"
-  #     style: "docked"
-  #     background: light
-  #     collapse-level: 2
-  #     contents: 
-  #       - qmd_one.qmd
-  #       - qmd_two.qmd
+        - section: "Training Tracks"
+          href: training/index.qmd
+          contents:
+            - section: "Self-Training"
+              href: training/self_training.qmd 
+              contents:
+                - text: "Principles"
+                  href: training/principles/index.qmd
+                  contents: training/principles/*
+                - text: "Study Planning"
+                  href: training/study_planning/index.qmd
+                  contents: training/study_planning/*
+                - text: "Data Management"
+                  href: training/data_management/index.qmd
+                  contents: training/data_management/*
+                - text: "Reproducible Processes"
+                  href: training/reproducible_processes/index.qmd
+                  contents: training/reproducible_processes/*
+                - text: "Publishing Outputs"
+                  href: training/publishing_outputs/index.qmd
+                  contents: training/publishing_outputs/*
+            - text: "Open Research Cycle"
+              href: training/open_research_cycle.qmd
+            - text: "Train the Trainer"
+              href: training/train_the_trainer.qmd
+        
+    - id: partners
+      collapse-level: 3
+      title: "Partners"
+      contents: 
+        - section: "Partners"
+          href: partners/index.qmd
+          contents:
+            - text: "Institutional Members"
+              href: partners/institutional_members.qmd 
+            - section: "Local Open Science Initiatives"
+              href: partners/local_os_initiatives.qmd
+              contents:
+                - text: "OSIM"
+                  href: partners/local_os_initiatives/osim.qmd
+                - text: "OSIS"
+                  href: partners/local_os_initiatives/osis.qmd
+                - text: "OSIP"
+                  href: partners/local_os_initiatives/osip.qmd
+                - text: "ReproducibiliTea"
+                  href: partners/local_os_initiatives/reproducibilitea.qmd
+                - text: "Hacky Hour"
+                  href: partners/local_os_initiatives/hackyhour.qmd
+                - text: "Munich RSE"
+                  href: partners/local_os_initiatives/munich_rse.qmd
+            - text: "Other LMU Support Services"
+              href: partners/other_lmu_support_services.qmd 
+            - text: "External Partners"
+              href: partners/externals.qmd 
+            - text: "Funders"
+              href: partners/funders.qmd
+
+    - id: people
+      collapse-level: 1
+      title: "People"
+      contents: 
+        - section: "People"
+          href: people/index.qmd
+          contents:
+            - text: "Management"
+              href: people/management.qmd
+            - text: "Staff & HiWis"
+              href: people/staff.qmd 
+            - text: "Scientific Board"
+              href: people/scientific-board.qmd 
+            - text: "Advisory Board"
+              href: people/advisory-board.qmd 
+            - text: "Members"
+              href: people/members.qmd 
+            - text: "Fellows"
+              href: people/fellows.qmd 
+            - text: "Alumnae"
+              href: people/alumnae.qmd
+
 
 format:
   html:
@@ -107,9 +166,9 @@ format:
     css: 
       - https://raw.githubusercontent.com/lmu-osc/branding-resources/refs/heads/main/styles.css
       - assets/fontawesome-free-7.1.0-web/css/all.min.css
-      - custom-navbar.css
       - styles.css
       - footer/footer-style.css
+      - custom-navbar.css
     toc: true
     include-in-header:
       - file: matomo_analytics.html
