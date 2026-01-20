@@ -4,7 +4,7 @@ title: "Prof. Dr. Felix Schönbrodt"
 academic_title: "Prof. Dr."
 name: "Felix Schönbrodt"
 position: "Managing Director of the OSC"
-faculty: "Psychology"
+faculty: Psychology & Education
 membertype: ["past advisory board", "past scientific board", "management"]
 photo: "images/felix_schoenbrodt.jpeg"
 email: "Felix.Schoenbrodt@psy.lmu.de"
@@ -81,7 +81,7 @@ profile <- div(class = "people-profile",
     ),
     div(class = "people-info",
       p(class = "people-position", position),
-      p(class = "people-faculty", paste0("Faculty of ", faculty)),
+      if (!is.null(faculty) & faculty != "") {p(class = "people-faculty", paste0("Faculty of ", faculty))},
       div(class = "people-contact", contact_items, social_links)
     )
   ),

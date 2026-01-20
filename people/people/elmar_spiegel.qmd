@@ -5,7 +5,6 @@ name: Elmar Spiegel
 surname: Spiegel
 first_name: Elmar
 position: Statistical Consultant
-faculty: NA
 membertype: ['associated']
 email: elmar.spiegel@helmholtz-munich.de
 photo: 'images/spiegel_elmar.jpg'
@@ -37,7 +36,7 @@ profile <- div(class = "people-profile",
     ),
     div(class = "people-info",
       p(class = "people-position", position),
-      p(class = "people-faculty", paste0("Faculty of ", faculty)),
+      if (!is.null(faculty) & faculty != "") {p(class = "people-faculty", paste0("Faculty of ", faculty))},
       div(class = "people-contact", contact_items, social_links)
     )
   ),

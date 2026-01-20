@@ -5,7 +5,7 @@ name: Sonja Grath
 surname: Grath
 first_name: Sonja
 position: Research Group Leader
-faculty: Faculty of Biology
+faculty: Biology
 membertype: ['lmu-individual']
 email: grath@biologie.uni-muenchen.de
 photo: 'images/grath_sonja.jpg'
@@ -37,7 +37,7 @@ profile <- div(class = "people-profile",
     ),
     div(class = "people-info",
       p(class = "people-position", position),
-      p(class = "people-faculty", paste0("Faculty of ", faculty)),
+      if (!is.null(faculty) & faculty != "") {p(class = "people-faculty", paste0("Faculty of ", faculty))},
       div(class = "people-contact", contact_items, social_links)
     )
   ),

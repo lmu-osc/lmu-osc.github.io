@@ -5,7 +5,7 @@ name: Leyla Larsson
 surname: Larsson
 first_name: Leyla
 position: PhD Candidate
-faculty: University hospital
+faculty: University Hospital
 membertype: ['fellow']
 email: leyla.larsson@med.uni-muenchen.de
 photo: 'images/larsson_leyla.jpg'
@@ -34,7 +34,7 @@ profile <- div(class = "people-profile",
     ),
     div(class = "people-info",
       p(class = "people-position", position),
-      p(class = "people-faculty", paste0("Faculty of ", faculty)),
+      if (!is.null(faculty) & faculty != "") {p(class = "people-faculty", paste0("Faculty of ", faculty))},
       div(class = "people-contact", contact_items, social_links)
     )
   ),

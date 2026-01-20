@@ -5,7 +5,7 @@ name: Edouard Bonneville
 surname: Bonneville
 first_name: Edouard
 position: Researcher
-faculty: Medicine, IBE
+faculty: Medicine
 membertype: ['lmu-individual']
 email: edouard.bonneville@ibe.med.uni-muenchen.de
 photo: 'images/bonneville_edouard.jpg'
@@ -38,7 +38,7 @@ profile <- div(class = "people-profile",
     ),
     div(class = "people-info",
       p(class = "people-position", position),
-      p(class = "people-faculty", paste0("Faculty of ", faculty)),
+      if (!is.null(faculty) & faculty != "") {p(class = "people-faculty", paste0("Faculty of ", faculty))},
       div(class = "people-contact", contact_items, social_links)
     )
   ),

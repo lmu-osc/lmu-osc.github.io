@@ -5,7 +5,7 @@ name: Xenia Schmalz
 surname: Schmalz
 first_name: Xenia
 position: Researcher
-faculty: University hospital
+faculty: University Hospital
 membertype: ['lmu-individual']
 email: xenia.schmalz@gmail.com
 photo: 'images/schmalz_xenia.jpg'
@@ -40,7 +40,7 @@ profile <- div(class = "people-profile",
     ),
     div(class = "people-info",
       p(class = "people-position", position),
-      p(class = "people-faculty", paste0("Faculty of ", faculty)),
+      if (!is.null(faculty) & faculty != "") {p(class = "people-faculty", paste0("Faculty of ", faculty))},
       div(class = "people-contact", contact_items, social_links)
     )
   ),

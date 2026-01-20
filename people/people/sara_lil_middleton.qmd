@@ -5,7 +5,6 @@ name: Sara Lil Middleton
 surname: Middleton
 first_name: Sara Lil
 position: Research Support
-faculty: NA
 membertype: ['staff']
 osc_staff_title: Research Support
 display_weight_staff: 3
@@ -51,7 +50,7 @@ profile <- div(class = "people-profile",
     ),
     div(class = "people-info",
       p(class = "people-position", position),
-      p(class = "people-faculty", paste0("Faculty of ", faculty)),
+      if (!is.null(faculty) & faculty != "") {p(class = "people-faculty", paste0("Faculty of ", faculty))},
       div(class = "people-contact", contact_items, social_links)
     )
   ),

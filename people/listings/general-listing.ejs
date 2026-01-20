@@ -18,7 +18,9 @@
 <div class="card-body flex-column text-center">
 <a href="<%= item.path %>" class="card-title"><%= item.name %></a>
 <div class="card-subtitle mt-auto text-muted"><%= item.academic_title %></div>
+<% if (item.faculty && item.faculty !== 'NA') { %>
 <p class="card-text mt-auto"><%= item.faculty %></p>
+<% } %>
 </div>
 </div>
 

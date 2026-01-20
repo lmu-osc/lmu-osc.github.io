@@ -5,7 +5,7 @@ name: Frauke Kreuter
 surname: Kreuter
 first_name: Frauke
 position: Chair
-faculty: Math, Informatics & Statistics
+faculty: Math, Informatics & Stats
 membertype: ['lmu-individual']
 email: soda@stat.uni-muenchen.de
 photo: 'images/kreuter_frauke.jpg' 
@@ -37,7 +37,7 @@ profile <- div(class = "people-profile",
     ),
     div(class = "people-info",
       p(class = "people-position", position),
-      p(class = "people-faculty", paste0("Faculty of ", faculty)),
+      if (!is.null(faculty) & faculty != "") {p(class = "people-faculty", paste0("Faculty of ", faculty))},
       div(class = "people-contact", contact_items, social_links)
     )
   ),

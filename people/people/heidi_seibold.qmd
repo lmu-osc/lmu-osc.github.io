@@ -5,7 +5,6 @@ name: Heidi Seibold
 surname: Seibold
 first_name: Heidi
 position: Trainer and Consultant
-faculty: NA
 membertype: ['associated']
 email: heidi@seibold.co
 photo: 'images/seibold_heidi.jpg'
@@ -37,7 +36,7 @@ profile <- div(class = "people-profile",
     ),
     div(class = "people-info",
       p(class = "people-position", position),
-      p(class = "people-faculty", paste0("Faculty of ", faculty)),
+      if (!is.null(faculty) & faculty != "") {p(class = "people-faculty", paste0("Faculty of ", faculty))},
       div(class = "people-contact", contact_items, social_links)
     )
   ),

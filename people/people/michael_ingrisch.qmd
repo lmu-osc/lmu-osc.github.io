@@ -5,7 +5,7 @@ name: Michael Ingrisch
 surname: Ingrisch
 first_name: Michael
 position: Research Group Leader
-faculty: University hospital
+faculty: University Hospital
 membertype: ['lmu-individual']
 email: michael.ingrisch@med.uni-muenchen.de
 photo: 'images/ingrisch_michael.jpg'
@@ -37,7 +37,7 @@ profile <- div(class = "people-profile",
     ),
     div(class = "people-info",
       p(class = "people-position", position),
-      p(class = "people-faculty", paste0("Faculty of ", faculty)),
+      if (!is.null(faculty) & faculty != "") {p(class = "people-faculty", paste0("Faculty of ", faculty))},
       div(class = "people-contact", contact_items, social_links)
     )
   ),
