@@ -1,0 +1,111 @@
+<div class="advisory-board-grid">
+<% for (const item of items) { %>
+<div class="card" <%= metadataAttrs(item) %>>
+<div class="row g-0">
+<div class="d-flex justify-content-center align-items-center p-2 mt-3">
+<a href="<%= item.website.url %>" target="_blank">
+<img src="people/<%= item.photo || '/images/default.svg' %>" class="profile-image" alt="Profile photo of <%= item.name %>">
+</a>
+</div>
+<div class="card-body">
+<a class="card-title" href="<%= item.website.url %>" target="_blank"><%= item.name %></a>
+<div class="card-subtitle card-subtitle-one mb-0 text-muted">
+  <%= item.academic_title %>
+</div>
+<div class="card-subtitle card-subtitle-two text-muted">
+  <%= item.position %>
+</div>
+<div class="card-subtitle card-subtitle-three">
+  <%= item.faculty %>
+</div>
+</div>
+</div>
+</div>
+<% } %>
+</div>
+
+<style>
+
+.advisory-board-grid {
+  --theme-main: #00883A;
+}
+.advisory-board-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  grid-auto-rows: 1fr;
+  grid-gap: 5px;
+  width: auto;
+  margin: 0 auto;
+  gap: 1rem;
+}
+.card {
+  transition: all 0.4s ease; 
+}
+
+.card:hover {
+  transform: translateY(-5px) scale(1.025);
+  box-shadow: 0 8px 32px rgba(43,134,75,0.15);
+  border-color: var(--theme-main);
+}
+
+.profile-image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid var(--theme-main);
+  box-shadow: 0 1px 6px rgba(43,134,75,0.12);
+  flex-shrink: 0;
+}
+.card-body{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.card-title{
+  margin-top:0;
+  line-height: 1.2rem;          
+  margin-bottom: 0.5rem; 
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.card-subtitle-one {
+  font-size: 1.09rem;
+  font-weight: 600;
+  margin-top: 0.1rem;
+}
+
+.card-subtitle-two {
+  font-size: 0.98rem;
+  font-weight: 400;
+  margin-bottom: 0.1rem;
+  font-style: italic;
+}
+
+.card-subtitle-three {
+  font-size: 1.09rem;
+  font-weight: 600;
+  color:var(--theme-main);
+}
+
+.text-justify {
+  text-align: justify;
+}
+@media (max-width: 900px) {
+  .advisory-board-grid {
+    grid-template-columns: 2fr;
+  }
+}
+
+@media (max-width: 576px) {
+  .advisory-board-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+</style>
