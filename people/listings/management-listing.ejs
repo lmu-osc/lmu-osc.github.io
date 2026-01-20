@@ -58,7 +58,7 @@
 <h4 class="card-title"><%= item.name %></h4>
 <div class="d-flex align-items-center">
 <span class="card-subtitle mb-0 fs-5 fw-bold text-secondary">
-  <%= item.academic_title %>  |  <%= item.faculty %>
+  <%= item.academic_title %><%= (item.faculty && item.faculty !== 'NA') ? '  |  ' + item.faculty : '' %>
 </span>
 </div>
 <p class="personal-statement card-text text-justify"><%= item.personal %></p>
