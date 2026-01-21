@@ -74,3 +74,18 @@ final_news %>%
     
   })
 
+
+
+
+# fix mistake of including NA from body_misc or body when no content from these is present
+
+list.files("news/news", full.names = TRUE)[-1] %>%
+  purrr::map(~{
+    file <- readLines(.x)
+    
+    # remove lines that contain just "NA"
+    file_cleaned <- file[file != "NA"]
+    writeLines(file_cleaned, con = .x)
+  })
+
+
