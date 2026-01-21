@@ -105,20 +105,20 @@ ul.task-list li input[type="checkbox"] {
   
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-associated-members .list');
+    const listingTargetEl = window.document.querySelector('#listing-affiliate-members .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
     }
 
     const options = {
-      valueNames: ['listing-project','listing-website','listing-format','listing-language','listing-execute','listing-title','listing-academic_title','listing-name','listing-surname','listing-first_name','listing-position','listing-faculty','listing-membertype','listing-email','listing-photo','listing-social_media','listing-mission_statement','listing-path','listing-outputHref','listing-author','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-word-count',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
+      valueNames: ['listing-project','listing-website','listing-format','listing-language','listing-execute','listing-title','listing-academic_title','listing-name','listing-surname','listing-first_name','listing-membertype','listing-affiliate_info','listing-email','listing-photo','listing-social_media','listing-mission_statement','listing-path','listing-outputHref','listing-author','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-word-count',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
       
-      searchColumns: ["listing-project","listing-website","listing-format","listing-language","listing-execute","listing-title","listing-academic_title","listing-name","listing-surname","listing-first_name","listing-position","listing-faculty","listing-membertype","listing-email","listing-photo","listing-social_media","listing-mission_statement","listing-path","listing-outputHref","listing-author","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
+      searchColumns: ["listing-project","listing-website","listing-format","listing-language","listing-execute","listing-title","listing-academic_title","listing-name","listing-surname","listing-first_name","listing-membertype","listing-affiliate_info","listing-email","listing-photo","listing-social_media","listing-mission_statement","listing-path","listing-outputHref","listing-author","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-associated-members'] = new List('listing-associated-members', options);
+    window['quarto-listings']['listing-affiliate-members'] = new List('listing-affiliate-members', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -2256,7 +2256,7 @@ Psychology &amp; Education
 </section>
 <section id="affiliate-members" class="level2">
 <h2 class="anchored" data-anchor-id="affiliate-members">Affiliate Members</h2>
-<div id="listing-associated-members" class="quarto-listing quarto-listing-container-custom">
+<div id="listing-affiliate-members" class="quarto-listing quarto-listing-container-custom">
 <div class="container py-4">
 <div class="d-flex flex-wrap justify-content-center gap-4">
 <div class="card d-flex flex-column align-items-center" style="width: 185px;">
@@ -2270,6 +2270,9 @@ Psychology &amp; Education
 <div class="card-subtitle mt-auto text-muted">
 PD Dr.
 </div>
+<p class="card-text mt-auto">
+Statistician and Epidemiologist
+</p>
 </div>
 </div>
 <div class="card d-flex flex-column align-items-center" style="width: 185px;">
@@ -2284,7 +2287,7 @@ PD Dr.
 Prof.&nbsp;Dr.
 </div>
 <p class="card-text mt-auto">
-Economics
+Research Group Leader
 </p>
 </div>
 </div>
@@ -2300,7 +2303,7 @@ Economics
 Prof.&nbsp;Dr.
 </div>
 <p class="card-text mt-auto">
-Medicine
+Chair
 </p>
 </div>
 </div>
@@ -2316,7 +2319,7 @@ Medicine
 Prof.&nbsp;Dr.
 </div>
 <p class="card-text mt-auto">
-TUM Medicine &amp; Health
+Director
 </p>
 </div>
 </div>
@@ -2332,7 +2335,7 @@ TUM Medicine &amp; Health
 Prof.&nbsp;Dr.
 </div>
 <p class="card-text mt-auto">
-Philosophy
+Director of Institute
 </p>
 </div>
 </div>
@@ -2364,7 +2367,7 @@ Social Sciences
 Prof.&nbsp;Dr.
 </div>
 <p class="card-text mt-auto">
-TUM Medicine &amp; Health
+Medicine
 </p>
 </div>
 </div>
@@ -2379,6 +2382,9 @@ TUM Medicine &amp; Health
 <div class="card-subtitle mt-auto text-muted">
 Dr.
 </div>
+<p class="card-text mt-auto">
+Biology
+</p>
 </div>
 </div>
 <div class="card d-flex flex-column align-items-center" style="width: 185px;">
@@ -2392,6 +2398,9 @@ Dr.
 <div class="card-subtitle mt-auto text-muted">
 Dr.
 </div>
+<p class="card-text mt-auto">
+Trainer and Consultant
+</p>
 </div>
 </div>
 <div class="card d-flex flex-column align-items-center" style="width: 185px;">
@@ -2405,6 +2414,9 @@ Dr.
 <div class="card-subtitle mt-auto text-muted">
 Dr.
 </div>
+<p class="card-text mt-auto">
+Statistical Consultant
+</p>
 </div>
 </div>
 </div>
