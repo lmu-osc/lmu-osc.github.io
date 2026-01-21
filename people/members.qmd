@@ -8,13 +8,13 @@ listing:
     sort: "surname asc"
     include: 
       membertype: ["lmu-individual"]
-  - id: associated-members
+  - id: affiliate-members
     contents: 
       - people
-    template: listings/general-listing.ejs
+    template: listings/affiliate-listing.ejs
     sort: "surname asc"
     include: 
-      membertype: ["associated"]
+      membertype: ["affiliate"]
 
 ---
 <style>
@@ -38,6 +38,6 @@ Our members actively support the goals of the OSC and contribute to all our acti
 
 ## Affiliate Members
 
-::: {#associated-members}
+::: {#affiliate-members}
 :::
 

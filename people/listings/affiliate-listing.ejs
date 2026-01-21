@@ -1,0 +1,144 @@
+<div class="container py-4">
+<div class="d-flex flex-wrap justify-content-center gap-4">
+
+<% for (const item of items) { %>
+
+<div class="card d-flex flex-column align-items-center" style="width: 185px;">
+<!-- ORCID icon container (always present for consistent spacing) -->
+<div class="orcid-icon-container">
+<% if (item.social_media && item.social_media.ORCID) { %>
+<a href="<%= item.social_media.ORCID %>" target="_blank" class="orcid-icon">
+<i class="fa-brands fa-orcid fa-lg"></i>
+</a>
+<% } %>
+</div>
+<a href="<%= item.path %>" class="profile-image-wrapper">
+<img src="people/<%= item.photo || '/images/default.svg' %>" alt="Profile" class="profile-image">
+</a>
+<div class="card-body flex-column text-center">
+<a href="<%= item.path %>" class="card-title"><%= item.name %></a>
+<div class="card-subtitle mt-auto text-muted"><%= item.academic_title %></div>
+<% if (item.affiliate_info && item.affiliate_info.role && item.affiliate_info.role !== 'NA') { %>
+<p class="card-text mt-auto"><%= item.affiliate_info.role %></p>
+<% } %>
+</div>
+</div>
+
+
+<% } %>
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+:root {
+  --theme-main: #00883A;
+  --theme-bg: #f5f6fa;
+  --theme-card-bg: #fff;
+  --theme-card-shadow: 0 2px 10px rgba(43,134,75,0.10);
+  --theme-border: #fff;
+}
+
+.card {
+  transition: all 0.4s ease;  /* adjust speed here */
+}
+
+.card:hover {
+  transform: translateY(-5px) scale(1.025);
+  box-shadow: 0 8px 32px rgba(43,134,75,0.15);
+  border-color: var(--theme-main);
+}
+
+.card-title {
+  display: -webkit-box;
+  line-clamp: 2;
+  -webkit-line-clamp: 2; /* Clamp to 2 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+
+  line-height: 1.2rem;          /* adjust based on your font-size */
+  height: calc(1.2rem * 2);     /* 3 lines of space */
+  margin-bottom: 0.5rem;   
+}
+
+.card-subtitle {
+  display: -webkit-box;
+  line-clamp: 1;
+  -webkit-line-clamp: 1; /* Clamp to 1 line */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 0.25rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.card-text {
+  display: -webkit-box;
+  line-clamp: 3;
+  -webkit-line-clamp: 3; /* Clamp to 3 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  line-height: 1.2rem;          /* adjust based on your font-size */
+  height: calc(1.2rem * 3);     /* 3 lines of space */
+  margin-bottom: 0;   
+}
+
+.profile-image-wrapper {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-image {
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid var(--theme-main);
+  flex-shrink: 0;
+}
+
+.card-body {
+  padding: 0.5rem 0.5rem;  /* smaller padding than default 1rem */
+}
+
+.orcid-icon-container {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.orcid-icon {
+  position: absolute;
+  font-size: 1.2rem;      /* adjust size */
+  color: #A6CE39;         /* ORCID green */
+  z-index: 10;
+  text-decoration: none;   /* remove underline */
+}
+
+</style>
