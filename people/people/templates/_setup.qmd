@@ -16,8 +16,15 @@ get_param <- function(param_name, default = "") {
 }
 
 # Extract member information
+affiliate_role <- get_param("affiliate_info", NULL)$role
+affiliate_organization <- get_param("affiliate_info", NULL)$organization
 name <- get_param("title", NULL)
 position <- get_param("position", "")
+if (position == "" & !is.null(member[["affiliate_info"]][["role"]])) {
+  print("Using affiliate role for position")
+  print(affiliate_role)
+  position <- affiliate_role
+}
 photo <- get_param("photo", "images/default.svg")
 email <- get_param("email", "")
 social_media <- get_param("social_media", list())
