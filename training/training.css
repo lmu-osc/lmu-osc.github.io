@@ -1,0 +1,12 @@
+
+/* Title hover effect within training listings */
+.quarto-listing-container-default .no-anchor.listing-title a {
+  text-decoration: none;
+  transition: color 0.2s ease, text-decoration-color 0.2s ease;
+}
+
+.quarto-listing-container-default .no-anchor.listing-title a:hover {
+  color: #00883A;
+  text-decoration: underline;
+  text-decoration-color: #00883A;
+}
