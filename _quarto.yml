@@ -101,6 +101,7 @@ website:
 
 format:
   html:
+    link-external-newwindow: true 
     theme:
       - cosmo
       - lmu-osc-custom.scss
@@ -113,8 +114,6 @@ format:
     toc: true
     include-in-header:
       - file: matomo_analytics.html
-      - text: |
-          <script src="assets/javascript/external_links.js"></script>
     include-after-body:
       - file: footer/footer.html
       
