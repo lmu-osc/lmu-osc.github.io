@@ -12,3 +12,15 @@ listing:
   sort:
     - within_cat_order
 ---
+```{=html}
+<style>
+.no-anchor.listing-title a {
+  text-decoration: none;
+  transition: color 0.2s ease, text-decoration-color 0.2s ease;
+}
+
+.no-anchor.listing-title a:hover {
+  color:#00883A;
+}
+</style>
+```
