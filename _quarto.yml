@@ -160,6 +160,7 @@ website:
 
 format:
   html:
+    link-external-newwindow: true 
     theme:
       - cosmo
       - lmu-osc-custom.scss
@@ -174,6 +175,7 @@ format:
       - file: matomo_analytics.html
     include-after-body:
       - file: footer/footer.html
+      
 
 
 
