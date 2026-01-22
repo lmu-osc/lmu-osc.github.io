@@ -89,3 +89,26 @@ list.files("news/news", full.names = TRUE)[-1] %>%
   })
 
 
+# fix mistake of including NA from subtitle when no content from these is present
+
+list.files("news/news", full.names = TRUE)[-1] %>%
+  purrr::map(~{
+    file <- readLines(.x)
+    
+    # find subtitle line
+    subtitle_line_index <- which(grepl("^subtitle: ", file))
+    
+    if (length(subtitle_line_index) > 0) {
+      subtitle_line <- file[subtitle_line_index]
+      
+      # check if subtitle is NA
+      if (grepl("subtitle: \"NA\"", subtitle_line)) {
+        # remove the subtitle line
+        file <- file[-subtitle_line_index]
+      }
+    }
+    
+    writeLines(file, con = .x)
+  })
+
+
