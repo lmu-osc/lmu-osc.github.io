@@ -662,6 +662,7 @@ if (!contactLink || contactLink.textContent.trim() === '' || contactLink.textCon
 
 
 
+
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
@@ -750,6 +751,11 @@ if (!contactLink || contactLink.textContent.trim() === '' || contactLink.textCon
           if (link.dataset.originalHref !== undefined) {
             link.href = link.dataset.originalHref;
           }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
         }
       }
     function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {

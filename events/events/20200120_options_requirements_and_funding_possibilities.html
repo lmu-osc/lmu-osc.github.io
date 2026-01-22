@@ -445,6 +445,11 @@ Dr.&nbsp;Veit Schwab, Dr.&nbsp;Anna Pahl, <a href="https://www.lmu.de/en/researc
           if (link.dataset.originalHref !== undefined) {
             link.href = link.dataset.originalHref;
           }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
         }
       }
     function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
