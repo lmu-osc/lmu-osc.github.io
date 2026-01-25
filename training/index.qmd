@@ -171,7 +171,7 @@ In addition, the material of all our lectures, workshops, symposium, and summer 
 ```{=html}
 <div class="training-grid"> 
     <div class="training-card"
-      onclick="window.location.href='self-training.html';">   
+      onclick="window.location.href='self_training.html';">   
       <h3>Self-learning material by topics</h3>
       <div class="training-content training-one">
           <img src="images/wordcloud.png" alt="wordcloud image of tutorial categories">
