@@ -5,9 +5,10 @@ toc: false
 repo-actions: false
 format:
   html:
+    page-layout: full
     grid:
-      sidebar-width: 100px
-      body-width: 1050px
+      sidebar-width: 0px
+      body-width: 1100px
       margin-width: 200px
       gutter-width: 2em
 title-block-banner: "assets/img/osc_image_assets/Banner1.jpg"
@@ -22,7 +23,69 @@ include-in-header:
         background-position-y: center;
         height: 400px;
       }
+      
+      .quarto-title-banner {
+        border: 1px solid #00883A
+      }
+      
+      /* Mission Statement Section Styling */
+      .mission-statement-container {
+        display: flex;
+        justify-content: center;
+      }
+      
+      .mission-statement-card {
+        border: 2px solid #2c5f8d;
+        border-radius: 8px;
+        padding: 2.5rem;
+        width: 95%;
+        background-color: #f8fafc;
+        box-shadow: 0 2px 8px rgba(44, 95, 141, 0.1);
+        transition: box-shadow 0.3s ease;
+      }
+      
+      .mission-statement-card:hover {
+        box-shadow: 0 4px 16px rgba(44, 95, 141, 0.15);
+      }
+      
+      .mission-statement-card h2 {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #2c5f8d;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-bottom: 1.5rem;
+        text-align: center;
+      }
+      
+      .mission-statement-card p {
+        font-size: 1.05rem;
+        line-height: 1.8;
+        color: #333;
+        text-align: center;
+        margin: 0;
+      }
       </style>
       <link href="/assets/bootstrap-5.3.8-dist/css/bootstrap.min.css" rel="stylesheet">
 css: /custom-navbar.css
 ---
+
+
+
+
+
+::: {.column-margin}
+
+Custom join us section here?
+
+:::
+
+::: {.mission-statement-container}
+::: {.mission-statement-card}
+## Mission Statement
+
+The LMU Open Science Center is an interdisciplinary initiative promoting open, transparent, and reproducible research through training, meta-research, and community building.
+:::
+::: 
+
+
