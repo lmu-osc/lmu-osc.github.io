@@ -2,4 +2,8 @@
 title: "News"
 editor: source
 repo-actions: false
+listing:
+    contents: news
+    type: table
+    sort: "date desc"
 ---
