@@ -1,0 +1,36 @@
+<%
+const carouselId = 'newsCarousel';
+const slides = (Array.isArray(items) && items.length)
+? items
+: [{ title: 'News item', description: 'More updates coming soon.', image: 'https://via.placeholder.com/1200x500?text=News' }];
+%>
+<div id="<%= carouselId %>" class="carousel slide carousel-fade" data-bs-ride="carousel">
+<div class="carousel-indicators">
+<% slides.forEach((item, index) => { %>
+<button type="button" data-bs-target="#<%= carouselId %>" data-bs-slide-to="<%= index %>" class="<%= index === 0 ? 'active' : '' %>" aria-current="<%= index === 0 ? 'true' : 'false' %>" aria-label="Slide <%= index + 1 %>"></button>
+<% }); %>
+</div>
+
+<div class="carousel-inner">
+<% slides.forEach((item, index) => { %>
+<div class="carousel-item <%= index === 0 ? 'active' : '' %>">
+<% if (item.image) { %>
+<img src="<%= item.image %>" class="d-block w-100" alt="<%= item.title || 'News item' %>">
+<% } %>
+<div class="carousel-caption d-none d-md-block">
+<% if (item.title) { %><h5><%= item.title %></h5><% } %>
+<% if (item.description) { %><p><%= item.description %></p><% } %>
+</div>
+</div>
+<% }); %>
+</div>
+
+<button class="carousel-control-prev" type="button" data-bs-target="#<%= carouselId %>" data-bs-slide="prev">
+<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+<span class="visually-hidden">Previous</span>
+</button>
+<button class="carousel-control-next" type="button" data-bs-target="#<%= carouselId %>" data-bs-slide="next">
+<span class="carousel-control-next-icon" aria-hidden="true"></span>
+<span class="visually-hidden">Next</span>
+</button>
+</div>

@@ -12,6 +12,11 @@ format:
       margin-width: 200px
       gutter-width: 2em
 title-block-banner: "assets/img/osc_image_assets/Banner1.jpg"
+listing:
+  - id: news-carousel
+    template: news/news.ejs
+    contents: news/news/example-news.qmd
+    sort: "date desc"
 include-after-body: 
   - text: |
       <script src="assets/javascript/remove_title.js" defer></script>
@@ -65,6 +70,84 @@ include-in-header:
         text-align: center;
         margin: 0;
       }
+      
+      /* Impact Metrics Section Styling */
+      .impact-container {
+        display: flex;
+        justify-content: center;
+        padding: 3rem 0;
+      }
+      
+      .impact-card {
+        width: 95%;
+        padding: 3rem 2rem;
+        border: 2px solid #2c5f8d;
+        border-radius: 8px;
+        background-color: #f8fafc;
+        box-shadow: 0 2px 8px rgba(44, 95, 141, 0.1);
+      }
+      
+      .impact-card h2 {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #2c5f8d;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        text-align: center;
+        margin-bottom: 2.5rem;
+      }
+      
+      .impact-metrics {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 2rem;
+      }
+      
+      .metric {
+        text-align: center;
+      }
+      
+      .metric-value {
+        font-size: 3.5rem;
+        font-weight: 800;
+        color: #2c5f8d;
+        margin-bottom: 0.75rem;
+        line-height: 1;
+      }
+      
+      .metric-label {
+        font-size: 1.05rem;
+        font-weight: 500;
+        color: #444;
+        line-height: 1.5;
+        letter-spacing: 0.3px;
+      }
+      
+      /* Carousel Section Styling */
+      .carousel-section {
+        display: flex;
+        justify-content: center;
+        padding: 3rem 0;
+      }
+      
+      .carousel-wrapper {
+        width: 95%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+      }
+      
+      @media (max-width: 768px) {
+        .carousel-wrapper {
+          grid-template-columns: 1fr;
+        }
+      }
+      
+      .carousel-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
       </style>
       <link href="/assets/bootstrap-5.3.8-dist/css/bootstrap.min.css" rel="stylesheet">
 css: /custom-navbar.css
@@ -86,6 +169,69 @@ Custom join us section here?
 
 The LMU Open Science Center is an interdisciplinary initiative promoting open, transparent, and reproducible research through training, meta-research, and community building.
 :::
+:::
+
+::: {.impact-container}
+::: {.impact-card}
+## Impact at a Glance
+
+::: {.impact-metrics}
+::: {.metric}
+::: {.metric-value}
+100+
+:::
+::: {.metric-label}
+Members
+:::
+:::
+
+::: {.metric}
+::: {.metric-value}
+50+
+:::
+::: {.metric-label}
+Events per year
+:::
+:::
+
+::: {.metric}
+::: {.metric-value}
+15+
+:::
+::: {.metric-label}
+Publications on OS
+:::
+:::
+
+::: {.metric}
+::: {.metric-value}
+1000+
+:::
+::: {.metric-label}
+Researchers Trained
+:::
+:::
+:::
+:::
 ::: 
 
 
+
+
+::: {.carousel-section}
+::: {.carousel-wrapper}
+
+::: {.carousel-container}
+(Events carousel will be inserted here)
+:::
+
+::: {.carousel-container}
+
+::: {#news-carousel}
+:::
+
+
+:::
+
+:::
+:::
