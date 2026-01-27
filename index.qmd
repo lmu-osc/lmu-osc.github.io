@@ -43,7 +43,7 @@ include-in-header:
         border: 2px solid #2c5f8d;
         border-radius: 8px;
         padding: 2.5rem;
-        width: 95%;
+        width: 100%;
         background-color: #f8fafc;
         box-shadow: 0 2px 8px rgba(44, 95, 141, 0.1);
         transition: box-shadow 0.3s ease;
@@ -79,7 +79,7 @@ include-in-header:
       }
       
       .impact-card {
-        width: 95%;
+        width: 100%;
         padding: 3rem 2rem;
         border: 2px solid #2c5f8d;
         border-radius: 8px;
@@ -127,12 +127,6 @@ include-in-header:
       #newsCarousel.carousel-dark .carousel-control-prev-icon,
       #newsCarousel.carousel-dark .carousel-control-next-icon {
         filter: none;
-      }
-
-      /* Make column-margin sticky */
-      .column-margin {
-        position: sticky;
-        top: 120px;
       }
       
       /* News carousel wrapper styling */
