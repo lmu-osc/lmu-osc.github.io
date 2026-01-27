@@ -128,6 +128,12 @@ include-in-header:
       #newsCarousel.carousel-dark .carousel-control-next-icon {
         filter: none;
       }
+
+      /* Make column-margin sticky */
+      .column-margin {
+        position: sticky;
+        top: 120px;
+      }
       
       /* News carousel wrapper styling */
       .carousel-styled-wrapper {
@@ -150,6 +156,7 @@ css: /custom-navbar.css
 Custom join us section here?
 
 :::
+
 
 ::: {.mission-statement-container}
 ::: {.mission-statement-card}
