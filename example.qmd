@@ -1,0 +1,71 @@
+---
+title: "hi"
+---
+
+
+```{=html}
+
+
+<div id="newsCarousel" class="carousel slide carousel-dark carousel-fade" data-bs-ride="carousel">
+
+<div class="carousel-indicators mt-5">
+    <button type="button" data-bs-target="#newsCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#newsCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#newsCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+</div>
+
+<h2>Latest News</h2>
+
+<div class="carousel-inner">
+    <div class="carousel-item active">
+        <div class="card">
+            <img src="/assets/img/OS-research-cycle.png" class="card-img-top d-block w-100" alt="..." style="aspect-ratio: 16/12; object-fit: cover;">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Card title #1</h5>
+                    <p class="card-text" style="display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; min-height: 4.5em; line-height: 1.5em;">Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary mt-auto mb-4">Go somewhere</a>
+                </div>
+        </div>
+    </div>
+    <div class="carousel-item">
+        <div class="card">
+            <img src="/assets/img/OS-research-cycle.png" class="card-img-top d-block w-100" alt="..." style="aspect-ratio: 16/12; object-fit: cover;">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Card title #2</h5>
+                    <p class="card-text" style="display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; min-height: 4.5em; line-height: 1.5em;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary mt-auto mb-4">Go somewhere</a>
+                </div>
+        </div>
+    </div>
+    <div class="carousel-item">
+        <div class="card">
+            <img src="/assets/img/lmu_osc_logo.jpg" class="card-img-top d-block w-100" alt="..." style="aspect-ratio: 16/12; object-fit: cover;">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Card title #3</h5>
+                    <p class="card-text" style="display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; min-height: 4.5em; line-height: 1.5em;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary mt-auto mb-4">Go somewhere</a>
+                </div>
+        </div>
+    </div>
+    <div class="carousel-indicators mt-3">
+        <button type="button" data-bs-target="#newsCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#newsCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#newsCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+  </div>
+
+
+<button class="carousel-control-prev" type="button" data-bs-target="#newsCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#newsCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+
+
+</div>
+
+
+```
