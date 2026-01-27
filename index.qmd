@@ -14,8 +14,8 @@ format:
 title-block-banner: "assets/img/osc_image_assets/Banner1.jpg"
 listing:
   - id: news-carousel
-    template: news/news.ejs
-    contents: news/news/example-news.qmd
+    template: news/news2.ejs
+    contents: news/news
     sort: "date desc"
 include-after-body: 
   - text: |
@@ -123,30 +123,18 @@ include-in-header:
         letter-spacing: 0.3px;
       }
       
-      /* Carousel Section Styling */
-      .carousel-section {
-        display: flex;
-        justify-content: center;
-        padding: 3rem 0;
+      /* Override carousel-dark filter for news carousel controls */
+      #newsCarousel.carousel-dark .carousel-control-prev-icon,
+      #newsCarousel.carousel-dark .carousel-control-next-icon {
+        filter: none;
       }
       
-      .carousel-wrapper {
-        width: 95%;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 2rem;
-      }
-      
-      @media (max-width: 768px) {
-        .carousel-wrapper {
-          grid-template-columns: 1fr;
-        }
-      }
-      
-      .carousel-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+      /* News carousel wrapper styling */
+      .carousel-styled-wrapper {
+        background-color: #f8fafc;
+        padding: 1rem;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(44, 95, 141, 0.1);
       }
       </style>
       <link href="/assets/bootstrap-5.3.8-dist/css/bootstrap.min.css" rel="stylesheet">
@@ -218,20 +206,15 @@ Researchers Trained
 
 
 
-::: {.carousel-section}
-::: {.carousel-wrapper}
 
-::: {.carousel-container}
-(Events carousel will be inserted here)
-:::
 
-::: {.carousel-container}
-
+::: {.row}
+::: {.col-md-6}
 ::: {#news-carousel}
 :::
-
-
 :::
 
+::: {.col-md-6}
+Events carousel will be inserted here
 :::
 :::
