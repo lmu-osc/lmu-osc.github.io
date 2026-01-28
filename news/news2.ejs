@@ -20,7 +20,7 @@ const slides = (Array.isArray(items) && items.length) ? items.slice(0, 3) : [];
 <% const imgSrc = item.image || '/assets/img/osc_image_assets/LMU_Open_Science_Center_Logo.jpg'; %>
 <% const isDefaultImage = !item.image; %>
 <% let imgStyle = "aspect-ratio: 16/12; object-fit: " + (isDefaultImage ? 'contain' : 'cover') + "; object-position: center;"; %>
-<% if (isDefaultImage) { imgStyle += " background-color: #f9f9f9;"; } %>
+<% if (isDefaultImage) { imgStyle += " background-color: #fff;"; } %>
 <img src="<%= imgSrc %>" class="card-img-top d-block w-100" alt="<%= item.title || '' %>" style="<%= imgStyle %>">
 <div class="card-body text-center">
 <% if (item.title) { %>
