@@ -27,7 +27,7 @@ const slides = (Array.isArray(items) && items.length) ? items.slice(0, 3) : [];
 <div class="card-title-custom"><%= item.title %></div>
 <% } %>
 <% if (item.description) { %>
-<p class="card-text" style="display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; min-height: 4.5em; line-height: 1.5em;"><%= item.description %></p>
+<p class="card-text" style="display: -webkit-box; -webkit-line-clamp: 3; line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; min-height: 4.5em; line-height: 1.5em;"><%= item.description %></p>
 <% } %>
 <% if (item.path) { %>
 <a href="<%= item.path %>" class="btn btn-primary mt-auto mb-4" role="button">Read More!</a>
