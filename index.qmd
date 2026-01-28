@@ -14,7 +14,7 @@ format:
 title-block-banner: "assets/img/osc_image_assets/Banner1.jpg"
 listing:
   - id: news-carousel
-    template: news/news2.ejs
+    template: news/news.ejs
     contents: news/news
     sort: "date desc"
 include-after-body: 
