@@ -23,7 +23,7 @@ listing:
     sort: "date desc"
 include-after-body: 
   - text: |
-      <script src="assets/javascript/remove_title.js" defer></script>
+      <script src="/assets/javascript/remove_title.js" defer></script>
 include-in-header:
   - text: |
       <script src="/assets/javascript/clear_filter_button.js" defer></script>
