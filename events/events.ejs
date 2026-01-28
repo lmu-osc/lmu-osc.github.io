@@ -1,0 +1,105 @@
+<%
+// Get current date for comparison
+const now = new Date();
+now.setHours(0, 0, 0, 0); // Set to start of day for accurate comparison
+
+// Sort all items by date (newest first)
+const allItems = Array.isArray(items) ? items.sort((a, b) => {
+  const dateA = (a.event && a.event.date) ? new Date(a.event.date) : new Date(0);
+  const dateB = (b.event && b.event.date) ? new Date(b.event.date) : new Date(0);
+  return dateB - dateA;
+}) : [];
+
+// Separate upcoming and past events
+const upcomingEvents = allItems.filter(item => {
+  if (!item.event || !item.event.date) return false;
+  const eventDate = new Date(item.event.date);
+  return eventDate >= now;
+});
+
+const pastEvents = allItems.filter(item => {
+  if (!item.event || !item.event.date) return false;
+  const eventDate = new Date(item.event.date);
+  return eventDate < now;
+});
+
+// Include all upcoming events, plus past events if needed to reach minimum of 3
+let slides = [...upcomingEvents];
+if (slides.length < 3) {
+  const neededCount = 3 - slides.length;
+  slides = [...slides, ...pastEvents.slice(0, neededCount)];
+}
+%>
+
+<div class="carousel-styled-wrapper">
+<div id="eventsCarousel" class="carousel slide carousel-dark carousel-fade" data-bs-ride="carousel">
+
+<div class="carousel-indicators mt-5">
+<% slides.forEach((item, index) => { %>
+<button type="button" data-bs-target="#eventsCarousel" data-bs-slide-to="<%= index %>" class="<%= index === 0 ? 'active' : '' %>" aria-current="<%= index === 0 ? 'true' : 'false' %>" aria-label="Slide <%= index + 1 %>"></button>
+<% }); %>
+</div>
+
+<h2 class="text-center">Upcoming & Recent Events</h2>
+
+<div class="carousel-inner">
+<% slides.forEach((item, index) => { %>
+<div class="carousel-item <%= index === 0 ? 'active' : '' %>">
+<div class="card border-0 shadow-sm">
+<% const imgSrc = item.event.image || '/assets/img/osc_image_assets/LMU_Open_Science_Center_Logo.jpg'; %>
+<% const isDefaultImage = !item.event.image; %>
+<% let imgStyle = "aspect-ratio: 16/12; object-fit: " + (isDefaultImage ? 'contain' : 'cover') + "; object-position: center;"; %>
+<% if (isDefaultImage) { imgStyle += " background-color: #fff;"; } %>
+<img src="<%= imgSrc %>" class="card-img-top d-block w-100" alt="<%= item.event.title || '' %>" style="<%= imgStyle %>">
+<div class="card-body text-center">
+<% if (item.event.title) { %>
+<div class="card-title-custom" style="display: -webkit-box; -webkit-line-clamp: 2; line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; min-height: 2.5em; line-height: 1.25;"><%= item.event.title %></div>
+<% } %>
+<p class="card-text" style="display: -webkit-box; -webkit-line-clamp: 3; line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; min-height: 4.5em; line-height: 1.5em;"><%= item.description %></p>
+<% if (item.path) { %>
+<a href="<%= item.path %>" class="btn btn-primary mt-auto mb-4" role="button">Learn More!</a>
+<% } %>
+</div>
+</div>
+</div>
+<% }); %>
+<div class="carousel-indicators mt-3">
+<% slides.forEach((item, index) => { %>
+<button type="button" data-bs-target="#eventsCarousel" data-bs-slide-to="<%= index %>" class="<%= index === 0 ? 'active' : '' %>" aria-current="<%= index === 0 ? 'true' : 'false' %>" aria-label="Slide <%= index + 1 %>"></button>
+<% }); %>
+</div>
+</div>
+
+
+<button class="carousel-control-prev" type="button" data-bs-target="#eventsCarousel" data-bs-slide="prev">
+<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+<span class="visually-hidden">Previous</span>
+</button>
+<button class="carousel-control-next" type="button" data-bs-target="#eventsCarousel" data-bs-slide="next">
+<span class="carousel-control-next-icon" aria-hidden="true"></span>
+<span class="visually-hidden">Next</span>
+</button>
+
+</div>
+
+<div class="text-center mt-3 mb-2">
+<a href="/events" class="btn btn-outline-primary btn-lg" role="button">View All Events</a>
+</div>
+
+</div>
+
+<style>
+
+/* Card title styling */
+      .card-title-custom {
+        font-weight: 700;
+        font-size: 1.6rem;
+      }
+
+      /* Card body styling */
+      .carousel-styled-wrapper .card-body {
+        background-color: #f5f5f5;
+        border-radius: 0 0 0.25rem 0.25rem;
+      }
+
+</style>

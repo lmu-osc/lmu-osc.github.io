@@ -17,6 +17,10 @@ listing:
     template: news/news.ejs
     contents: news/news
     sort: "date desc"
+  - id: events-carousel
+    template: events/events.ejs
+    contents: events/events/*.qmd
+    sort: "date desc"
 include-after-body: 
   - text: |
       <script src="assets/javascript/remove_title.js" defer></script>
@@ -124,8 +128,8 @@ include-in-header:
       }
       
       /* Override carousel-dark filter for news carousel controls */
-      #newsCarousel.carousel-dark .carousel-control-prev-icon,
-      #newsCarousel.carousel-dark .carousel-control-next-icon {
+      .carousel-dark .carousel-control-prev-icon,
+      .carousel-dark .carousel-control-next-icon {
         filter: none;
       }
       
@@ -216,6 +220,7 @@ Researchers Trained
 :::
 
 ::: {.col-md-6}
-Events carousel will be inserted here
+::: {#events-carousel}
+:::
 :::
 :::
