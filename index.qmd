@@ -5,15 +5,25 @@ toc: false
 repo-actions: false
 format:
   html:
+    page-layout: full
     grid:
-      sidebar-width: 100px
-      body-width: 1050px
+      sidebar-width: 0px
+      body-width: 1250px
       margin-width: 200px
       gutter-width: 2em
 title-block-banner: "assets/img/osc_image_assets/Banner1.jpg"
+listing:
+  - id: news-carousel
+    template: news/news.ejs
+    contents: news/news
+    sort: "date desc"
+  - id: events-carousel
+    template: events/events.ejs
+    contents: events/events/*.qmd
+    sort: "date desc"
 include-after-body: 
   - text: |
-      <script src="assets/javascript/remove_title.js" defer></script>
+      <script src="/assets/javascript/remove_title.js" defer></script>
 include-in-header:
   - text: |
       <script src="/assets/javascript/clear_filter_button.js" defer></script>
@@ -22,7 +32,181 @@ include-in-header:
         background-position-y: center;
         height: 400px;
       }
+      
+      .quarto-title-banner {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+      }
+      
+      /* Mission Statement Section Styling */
+      .mission-statement-container {
+        display: flex;
+        justify-content: center;
+      }
+      
+      .mission-statement-card {
+        border: 2px solid #2c5f8d;
+        border-radius: 8px;
+        padding: 2.5rem;
+        width: 100%;
+        background-color: #f8fafc;
+        box-shadow: 0 2px 8px rgba(44, 95, 141, 0.1);
+        transition: box-shadow 0.3s ease;
+      }
+      
+      .mission-statement-card:hover {
+        box-shadow: 0 4px 16px rgba(44, 95, 141, 0.15);
+      }
+      
+      .mission-statement-card h2 {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #2c5f8d;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-bottom: 1.5rem;
+        text-align: center;
+      }
+      
+      .mission-statement-card p {
+        font-size: 1.05rem;
+        line-height: 1.8;
+        color: #333;
+        text-align: center;
+        margin: 0;
+      }
+      
+      /* Impact Metrics Section Styling */
+      .impact-container {
+        display: flex;
+        justify-content: center;
+        padding: 3rem 0;
+      }
+      
+      .impact-card {
+        width: 100%;
+        padding: 3rem 2rem;
+        border: 2px solid #2c5f8d;
+        border-radius: 8px;
+        background-color: #f8fafc;
+        box-shadow: 0 2px 8px rgba(44, 95, 141, 0.1);
+      }
+      
+      .impact-card h2 {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #2c5f8d;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        text-align: center;
+        margin-bottom: 2.5rem;
+      }
+      
+      .impact-metrics {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 2rem;
+      }
+      
+      .metric {
+        text-align: center;
+      }
+      
+      .metric-value {
+        font-size: 3.5rem;
+        font-weight: 800;
+        color: #2c5f8d;
+        margin-bottom: 0.75rem;
+        line-height: 1;
+      }
+      
+      .metric-label {
+        font-size: 1.05rem;
+        font-weight: 500;
+        color: #444;
+        line-height: 1.5;
+        letter-spacing: 0.3px;
+      }
       </style>
       <link href="/assets/bootstrap-5.3.8-dist/css/bootstrap.min.css" rel="stylesheet">
 css: /custom-navbar.css
 ---
+
+
+
+
+
+::: {.column-margin}
+
+Custom join us section here?
+
+:::
+
+
+::: {.mission-statement-container}
+::: {.mission-statement-card}
+## Mission Statement
+
+The LMU Open Science Center is an interdisciplinary initiative promoting open, transparent, and reproducible research through training, meta-research, and community building.
+:::
+:::
+
+::: {.impact-container}
+::: {.impact-card}
+## Impact at a Glance
+
+::: {.impact-metrics}
+::: {.metric}
+::: {.metric-value}
+100+
+:::
+::: {.metric-label}
+Members
+:::
+:::
+
+::: {.metric}
+::: {.metric-value}
+50+
+:::
+::: {.metric-label}
+Events per year
+:::
+:::
+
+::: {.metric}
+::: {.metric-value}
+15+
+:::
+::: {.metric-label}
+Publications on OS
+:::
+:::
+
+::: {.metric}
+::: {.metric-value}
+1000+
+:::
+::: {.metric-label}
+Researchers Trained
+:::
+:::
+:::
+:::
+::: 
+
+
+
+
+
+
+::: {.row}
+::: {.col-md-6}
+::: {#news-carousel}
+:::
+:::
+
+::: {.col-md-6}
+::: {#events-carousel}
+:::
+:::
+:::
