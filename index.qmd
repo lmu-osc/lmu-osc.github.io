@@ -30,7 +30,7 @@ include-in-header:
       }
       
       .quarto-title-banner {
-        border: 1px solid #00883A
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
       }
       
       /* Mission Statement Section Styling */
@@ -132,7 +132,7 @@ include-in-header:
       /* News carousel wrapper styling */
       .carousel-styled-wrapper {
         background-color: #f8fafc;
-        padding: 1rem;
+        padding: 1rem 1rem 0.5rem 1rem; 
         border-radius: 8px;
         box-shadow: 0 2px 8px rgba(44, 95, 141, 0.1);
       }
