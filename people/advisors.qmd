@@ -15,6 +15,13 @@ listing:
     sort: "display_weight asc"
     include: 
       membertype: "special advisor"
+  - id: past-advisory-board
+    contents: 
+      - people
+    template: listings/advisory-board-listing.ejs
+    sort: "surname asc"
+    include: 
+      membertype: "past advisory board"
 ---
 The OSC is advised by key internal and external actors appointed for 3-year terms. Advisory board members for the term 2024 - 2027 are:
 
@@ -31,4 +38,5 @@ The OSC is advised by key internal and external actors appointed for 3-year term
 
 ## Past Advisory Board Members
 
-- [Ulrich Dirnagl](people/ulrich_dirnagl.qmd) (2024-2026)
+::: {#past-advisory-board}
+:::
