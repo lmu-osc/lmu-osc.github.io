@@ -28,6 +28,7 @@ listing:
     contents:
       - /*/**.qmd
       - "!**/index.qmd"
+      - /*/**.yaml
     fields: 
       - content_category
       - title
