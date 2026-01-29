@@ -13,6 +13,10 @@ categories:
   - Reproducible protocols
 listing:
   type: default
+  contents:
+    - /**.qmd
+    - reproducible-processes-tutorials.yaml
+  fields: [title, description, categories, image]
   sort:
     - within_cat_order
 ---
