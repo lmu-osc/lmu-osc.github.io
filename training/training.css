@@ -1,12 +1,12 @@
 
-/* Title hover effect within training listings */
-.quarto-listing-container-default .no-anchor.listing-title a {
-  text-decoration: none;
-  transition: color 0.2s ease, text-decoration-color 0.2s ease;
+.quarto-listing-default .quarto-post.image-right {
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
 }
 
-.quarto-listing-container-default .no-anchor.listing-title a:hover {
-  color: #00883A;
-  text-decoration: underline;
-  text-decoration-color: #00883A;
+.quarto-listing-default .quarto-post.image-right:hover {
+  transform: translateY(-4px);
+  box-shadow:
+    0 8px 16px rgba(86, 100, 83, 0.15),
+    0 0 0 2px rgba(0, 136, 58, 0.12);
 }
