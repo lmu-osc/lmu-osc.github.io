@@ -31,8 +31,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../training/reproducible_processes/advanced_git.html" rel="next">
-<link href="../../training/data_management/synthetic_data.html" rel="prev">
+<link href="../../training/reproducible_processes/reproducible-processes-tutorials.yaml" rel="next">
+<link href="../../training/data_management/data-management-tutorials.yaml" rel="prev">
 <link href="../../assets/img/lmu_osc_logo.jpg" rel="icon" type="image/jpeg">
 <script src="../../site_libs/quarto-listing/list.min.js"></script>
 <script src="../../site_libs/quarto-listing/quarto-listing.js"></script>
@@ -84,9 +84,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-title','listing-description','listing-categories','listing-image',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
+      searchColumns: ["listing-title","listing-description","listing-image","listing-categories","listing-content_category","listing-within_cat_order"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -340,24 +340,6 @@ window.Quarto = {
           </a> 
       </div>
       <ul id="" class="collapse list-unstyled sidebar-section depth3 ">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../training/study_planning/introduction_to_simulations_in_r.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Introduction to Data Simulations in R</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../training/study_planning/preregistration_why_how.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Preregistration: Why and How?</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../training/study_planning/simulations_for_advanced_power_analyses.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Simulations for Advanced Power Analyses</span></a>
-  </div>
-</li>
       </ul>
   </li>
           <li class="sidebar-item sidebar-item-section">
@@ -371,24 +353,6 @@ window.Quarto = {
       <ul id="" class="collapse list-unstyled sidebar-section depth3 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../training/data_management/data_anonymity.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">TBD: Data Anonymity</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../training/data_management/data_dictionary.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Data Dictionary</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../training/data_management/fair_data_management.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">FAIR Data Management</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="../../training/data_management/maintaining_privacy_with_open_data.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Maintaining Privacy with Open Data</span></a>
   </div>
@@ -397,12 +361,6 @@ window.Quarto = {
   <div class="sidebar-item-container"> 
   <a href="../../training/data_management/open_data.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Introduction to Open Data</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../training/data_management/synthetic_data.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">TBD: Generating Synthetic Data</span></a>
   </div>
 </li>
       </ul>
@@ -416,48 +374,6 @@ window.Quarto = {
           </a> 
       </div>
       <ul id="" class="collapse list-unstyled sidebar-section depth3 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../training/reproducible_processes/advanced_git.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Advanced git</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../training/reproducible_processes/collaborative_coding_with_github_and_rstudio.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Collaborative coding with GitHub and RStudio</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../training/reproducible_processes/introduction_to_quarto.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Introduction to Quarto</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../training/reproducible_processes/introduction_to_r.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Introduction to R</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../training/reproducible_processes/introduction_to_renv.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Introduction to {renv}</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../training/reproducible_processes/introduction_to_version_control_within_rstudio.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Introduction to Version Control within RStudio</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../training/reproducible_processes/introduction_to_zotero.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Introduction to Zotero</span></a>
-  </div>
-</li>
       </ul>
   </li>
           <li class="sidebar-item sidebar-item-section">
@@ -469,12 +385,6 @@ window.Quarto = {
           </a> 
       </div>
       <ul id="" class="collapse list-unstyled sidebar-section depth3 ">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../training/publishing_outputs/code_publishing.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Code Publishing</span></a>
-  </div>
-</li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../training/publishing_outputs/open_access_preprints_postprints.html" class="sidebar-item-text sidebar-link">
@@ -549,136 +459,181 @@ window.Quarto = {
 
 <div class="quarto-listing quarto-listing-container-default" id="listing-listing">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="Ug==" data-listing-file-modified-sort="1769668157368" data-listing-reading-time-sort="1" data-listing-word-count-sort="30">
-<div class="thumbnail"><a href="../../training/reproducible_processes/introduction_to_r.html" class="no-external">
+<div class="quarto-post image-right" data-index="0" data-categories="Ug==">
+<div class="thumbnail"><a href="https://lmu-osc.github.io/introduction-to-R/" class="no-external">
 
-<img loading="lazy" src="../../training/images/introduction to r.svg" class="thumbnail-image">
+<img loading="lazy" src="../images/introduction to r.svg" class="thumbnail-image">
 
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../../training/reproducible_processes/introduction_to_r.html" class="no-external">Introduction to R</a>
+<a href="https://lmu-osc.github.io/introduction-to-R/" class="no-external">Introduction to R</a>
 </h3>
-<div class="delink listing-description"><a href="../../training/reproducible_processes/introduction_to_r.html" class="no-external">
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('Ug=='); return false;">R</div>
+
+</div>
+<div class="delink listing-description"><a href="https://lmu-osc.github.io/introduction-to-R/" class="no-external">
 <p>Learn the basics of the R programming language</p>
 </a></div>
 </div>
 <div class="metadata">
-<a href="../../training/reproducible_processes/introduction_to_r.html" class="no-external">
+<a href="https://lmu-osc.github.io/introduction-to-R/" class="no-external">
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-categories="UiUyQ0dpdA==" data-listing-file-modified-sort="1769668157368" data-listing-reading-time-sort="1" data-listing-word-count-sort="30">
-<div class="thumbnail"><a href="../../training/reproducible_processes/introduction_to_version_control_within_rstudio.html" class="no-external">
+<div class="quarto-post image-right" data-index="1" data-categories="UiUyQ0dpdA==">
+<div class="thumbnail"><a href="https://lmu-osc.github.io/Introduction-RStudio-Git-GitHub/" class="no-external">
 
-<img loading="lazy" src="../../training/images/introduction to git.svg" class="thumbnail-image">
+<img loading="lazy" src="../images/introduction to git.svg" class="thumbnail-image">
 
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../../training/reproducible_processes/introduction_to_version_control_within_rstudio.html" class="no-external">Introduction to Version Control within RStudio</a>
+<a href="https://lmu-osc.github.io/Introduction-RStudio-Git-GitHub/" class="no-external">Introduction to Version Control within RStudio</a>
 </h3>
-<div class="delink listing-description"><a href="../../training/reproducible_processes/introduction_to_version_control_within_rstudio.html" class="no-external">
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('Ug=='); return false;">R</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('R2l0'); return false;">Git</div>
+
+</div>
+<div class="delink listing-description"><a href="https://lmu-osc.github.io/Introduction-RStudio-Git-GitHub/" class="no-external">
 <p>Explore the git version control software and its integrations with the popular RStudio interactive development environment</p>
 </a></div>
 </div>
 <div class="metadata">
-<a href="../../training/reproducible_processes/introduction_to_version_control_within_rstudio.html" class="no-external">
+<a href="https://lmu-osc.github.io/Introduction-RStudio-Git-GitHub/" class="no-external">
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="2" data-categories="UiUyQ0dpdCUyQ0dpdEh1Yg==" data-listing-file-modified-sort="1769668157367" data-listing-reading-time-sort="1" data-listing-word-count-sort="30">
-<div class="thumbnail"><a href="../../training/reproducible_processes/collaborative_coding_with_github_and_rstudio.html" class="no-external">
+<div class="quarto-post image-right" data-index="2" data-categories="UiUyQ0dpdCUyQ0dpdEh1Yg==">
+<div class="thumbnail"><a href="https://lmu-osc.github.io/Collaborative-RStudio-GitHub/" class="no-external">
 
-<img loading="lazy" src="../../training/images/introduction to github.svg" class="thumbnail-image">
+<img loading="lazy" src="../images/introduction to github.svg" class="thumbnail-image">
 
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../../training/reproducible_processes/collaborative_coding_with_github_and_rstudio.html" class="no-external">Collaborative coding with GitHub and RStudio</a>
+<a href="https://lmu-osc.github.io/Collaborative-RStudio-GitHub/" class="no-external">Collaborative coding with GitHub and RStudio</a>
 </h3>
-<div class="delink listing-description"><a href="../../training/reproducible_processes/collaborative_coding_with_github_and_rstudio.html" class="no-external">
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('Ug=='); return false;">R</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('R2l0'); return false;">Git</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('R2l0SHVi'); return false;">GitHub</div>
+
+</div>
+<div class="delink listing-description"><a href="https://lmu-osc.github.io/Collaborative-RStudio-GitHub/" class="no-external">
 <p>After learning the basics of git, apply your skills in an interactive tutorial</p>
 </a></div>
 </div>
 <div class="metadata">
-<a href="../../training/reproducible_processes/collaborative_coding_with_github_and_rstudio.html" class="no-external">
+<a href="https://lmu-osc.github.io/Collaborative-RStudio-GitHub/" class="no-external">
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="3" data-categories="R2l0" data-listing-file-modified-sort="1769668157367" data-listing-reading-time-sort="1" data-listing-word-count-sort="53">
-<div class="thumbnail"><a href="../../training/reproducible_processes/advanced_git.html" class="no-external">
+<div class="quarto-post image-right" data-index="3" data-categories="R2l0">
+<div class="thumbnail"><a href="" class="no-external">
 
-<img loading="lazy" src="../../training/images/advanced git.svg" class="thumbnail-image">
+<img loading="lazy" src="../images/advanced git.svg" class="thumbnail-image">
 
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../../training/reproducible_processes/advanced_git.html" class="no-external">Advanced git</a>
+<a href="" class="no-external">Advanced Git</a>
 </h3>
-<div class="delink listing-description"><a href="../../training/reproducible_processes/advanced_git.html" class="no-external">
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('R2l0'); return false;">Git</div>
+
+</div>
+<div class="delink listing-description"><a href="" class="no-external">
 <p>Learn git features like branching and gitflow, and how to take advantage of issues, pull requests, and more on GitHub</p>
 </a></div>
 </div>
 <div class="metadata">
-<a href="../../training/reproducible_processes/advanced_git.html" class="no-external">
+<a href="" class="no-external">
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="4" data-categories="UiUyQ1F1YXJ0bw==" data-listing-file-modified-sort="1769668157368" data-listing-reading-time-sort="1" data-listing-word-count-sort="30">
-<div class="thumbnail"><a href="../../training/reproducible_processes/introduction_to_quarto.html" class="no-external">
+<div class="quarto-post image-right" data-index="4" data-categories="UiUyQ1F1YXJ0bw==">
+<div class="thumbnail"><a href="https://lmu-osc.github.io/introduction-to-Quarto/" class="no-external">
 
-<img loading="lazy" src="../../training/images/introduction to quarto.svg" class="thumbnail-image">
+<img loading="lazy" src="../images/introduction to quarto.svg" class="thumbnail-image">
 
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../../training/reproducible_processes/introduction_to_quarto.html" class="no-external">Introduction to Quarto</a>
+<a href="https://lmu-osc.github.io/introduction-to-Quarto/" class="no-external">Introduction to Quarto</a>
 </h3>
-<div class="delink listing-description"><a href="../../training/reproducible_processes/introduction_to_quarto.html" class="no-external">
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('Ug=='); return false;">R</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('UXVhcnRv'); return false;">Quarto</div>
+
+</div>
+<div class="delink listing-description"><a href="https://lmu-osc.github.io/introduction-to-Quarto/" class="no-external">
 <p>Discover the basics of setting up computationally reproducible analyses, manuscripts, and presentations</p>
 </a></div>
 </div>
 <div class="metadata">
-<a href="../../training/reproducible_processes/introduction_to_quarto.html" class="no-external">
+<a href="https://lmu-osc.github.io/introduction-to-Quarto/" class="no-external">
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="5" data-categories="Wm90ZXJvJTJDUXVhcnRv" data-listing-file-modified-sort="1769668157368" data-listing-reading-time-sort="1" data-listing-word-count-sort="30">
-<div class="thumbnail"><a href="../../training/reproducible_processes/introduction_to_zotero.html" class="no-external">
+<div class="quarto-post image-right" data-index="5" data-categories="Wm90ZXJvJTJDUXVhcnRv">
+<div class="thumbnail"><a href="https://lmu-osc.github.io/introduction-to-zotero/" class="no-external">
 
-<img loading="lazy" src="../../training/images/introduction to zotero.svg" class="thumbnail-image">
+<img loading="lazy" src="../images/introduction to zotero.svg" class="thumbnail-image">
 
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../../training/reproducible_processes/introduction_to_zotero.html" class="no-external">Introduction to Zotero</a>
+<a href="https://lmu-osc.github.io/introduction-to-zotero/" class="no-external">Introduction to Zotero</a>
 </h3>
-<div class="delink listing-description"><a href="../../training/reproducible_processes/introduction_to_zotero.html" class="no-external">
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('Wm90ZXJv'); return false;">Zotero</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('UXVhcnRv'); return false;">Quarto</div>
+
+</div>
+<div class="delink listing-description"><a href="https://lmu-osc.github.io/introduction-to-zotero/" class="no-external">
 <p>Easily save your sources to the Zotero software, and learn how to insert these citations into your documents</p>
 </a></div>
 </div>
 <div class="metadata">
-<a href="../../training/reproducible_processes/introduction_to_zotero.html" class="no-external">
+<a href="https://lmu-osc.github.io/introduction-to-zotero/" class="no-external">
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="6" data-categories="Ug==" data-listing-file-modified-sort="1769668157368" data-listing-reading-time-sort="1" data-listing-word-count-sort="30">
-<div class="thumbnail"><a href="../../training/reproducible_processes/introduction_to_renv.html" class="no-external">
+<div class="quarto-post image-right" data-index="6" data-categories="Ug==">
+<div class="thumbnail"><a href="https://lmu-osc.github.io/introduction-to-renv/" class="no-external">
 
-<img loading="lazy" src="../../training/images/introduction to renv.svg" class="thumbnail-image">
+<img loading="lazy" src="../images/introduction to renv.svg" class="thumbnail-image">
 
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../../training/reproducible_processes/introduction_to_renv.html" class="no-external">Introduction to {renv}</a>
+<a href="https://lmu-osc.github.io/introduction-to-renv/" class="no-external">Introduction to {renv}</a>
 </h3>
-<div class="delink listing-description"><a href="../../training/reproducible_processes/introduction_to_renv.html" class="no-external">
+<div class="listing-categories">
+
+<div class="listing-category" onclick="window.quartoListingCategory('Ug=='); return false;">R</div>
+
+</div>
+<div class="delink listing-description"><a href="https://lmu-osc.github.io/introduction-to-renv/" class="no-external">
 <p>Make your projects reproducible by learning how to (easily) manage your R packages</p>
 </a></div>
 </div>
 <div class="metadata">
-<a href="../../training/reproducible_processes/introduction_to_renv.html" class="no-external">
+<a href="https://lmu-osc.github.io/introduction-to-renv/" class="no-external">
 </a>
 </div>
 </div>
@@ -1092,13 +1047,13 @@ window.Quarto = {
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../training/data_management/synthetic_data.html" class="pagination-link" aria-label="TBD: Generating Synthetic Data">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">TBD: Generating Synthetic Data</span>
+      <a href="../../training/data_management/data-management-tutorials.yaml" class="pagination-link" aria-label="">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../training/reproducible_processes/advanced_git.html" class="pagination-link" aria-label="Advanced git">
-        <span class="nav-page-text">Advanced git</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../training/reproducible_processes/reproducible-processes-tutorials.yaml" class="pagination-link" aria-label="">
+        <span class="nav-page-text"></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
