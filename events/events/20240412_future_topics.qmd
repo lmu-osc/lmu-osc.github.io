@@ -1,0 +1,36 @@
+---
+format: 
+    html:
+        table-of-contents: false
+        css: event-page-styles.css
+page-layout: full
+pagetitle: 'OSIM Meetup: 12 April 2024'
+
+event:
+  title: "OSIM Meetup: Future Topics and Workshops"
+  description: "Discussion on potential workshops and special topics of future OSIM meetings"
+  categories: ["OSIM Meetup"]
+  date: "12 Apr, 2024"
+  time: "14:00 CET"
+  format:
+    type: "Hybrid"
+    details: "In-person & Online"
+  language:
+    primary: "English"
+    primary-code: "en"
+
+instructors: []
+
+presenters: []
+
+contact: 
+    name: "OSC team"
+    email: "osc@lmu.de"
+
+---
+
+<h1 class="fs-1 text-primary"> {{< meta event.title >}} </h1>
+
+## Event Details
+
+**Date & Time:** 12 April 2024, 14:00 CET

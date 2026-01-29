@@ -1,0 +1,36 @@
+---
+format: 
+    html:
+        table-of-contents: false
+        css: event-page-styles.css
+page-layout: full
+pagetitle: 'OSIM Meetup: Data Usage Agreements'
+
+event:
+  title: "OSIM Meetup: Data Usage Agreements"
+  description: "Discussion on data usage agreements and legal aspects of data sharing"
+  categories: ["OSIM Meetup"]
+  date: "14 Mar, 2025"
+  time: "14:00 CET"
+  format:
+    type: "Hybrid"
+    details: "In-person & Online"
+  language:
+    primary: "English"
+    primary-code: "en"
+
+instructors: []
+
+presenters: []
+
+contact: 
+    name: "OSC team"
+    email: "osc@lmu.de"
+
+---
+
+<h1 class="fs-1 text-primary"> {{< meta event.title >}} </h1>
+
+## Event Details
+
+**Date & Time:** 14 March 2025, 14:00 CET

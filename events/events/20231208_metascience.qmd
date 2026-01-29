@@ -1,0 +1,40 @@
+---
+format: 
+    html:
+        table-of-contents: false
+        css: event-page-styles.css
+page-layout: full
+pagetitle: 'OSIM Meetup: Metascience'
+
+event:
+  title: "OSIM Meetup: Metascience"
+  description: "Discussion on metascience - scientific studies on the scientific process"
+  categories: ["OSIM Meetup"]
+  date: "08 Dec, 2023"
+  time: "14:00 CET"
+  format:
+    type: "Hybrid"
+    details: "In-person & Online"
+  language:
+    primary: "English"
+    primary-code: "en"
+
+instructors: []
+
+presenters:
+  - name: "Felix Schönbrodt"
+    affiliation: "LMU Open Science Center"
+
+contact: 
+    name: "OSC team"
+    email: "osc@lmu.de"
+
+---
+
+<h1 class="fs-1 text-primary"> {{< meta event.title >}} </h1>
+
+## Event Details
+
+**Speaker:** Felix Schönbrodt (LMU Open Science Center)
+
+**Date & Time:** 8 December 2023, 14:00 CET
