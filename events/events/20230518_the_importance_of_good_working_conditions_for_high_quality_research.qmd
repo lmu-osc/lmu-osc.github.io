@@ -1,5 +1,5 @@
 ---
-pagetitle: '"The importance of good working conditions for high quality research"'
+title: '"The importance of good working conditions for high quality research"'
 categories: 'ReproducibiliTea Journal Club'
 
 # Event categories
@@ -48,7 +48,6 @@ host:
   - name: "LMU Open Science Center"
 ---
 <!-- MANDAORY SECTION START  -->
-<h1 class="fs-1 text-primary"> {{< meta event.title >}} </h1>
 
 {{< include templates/_setup.qmd >}}
 {{< include templates/_info_boxes.qmd >}}

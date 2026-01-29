@@ -1,5 +1,5 @@
 ---
-pagetitle: '"Multiverse Analysis: On the Robustness of Functional Form and Data Pre-Processing Decisions" by Prof. Cristobal Young (Ph.D. Cornell University)'
+title: '"Multiverse Analysis: On the Robustness of Functional Form and Data Pre-Processing Decisions" by Prof. Cristobal Young (Ph.D. Cornell University)'
 categories: 'Lecture'
 
 # Event categories
@@ -48,7 +48,6 @@ host:
   - name: "LMU Open Science Center"
 ---
 <!-- MANDAORY SECTION START  -->
-<h1 class="fs-1 text-primary"> {{< meta event.title >}} </h1>
 
 {{< include templates/_setup.qmd >}}
 {{< include templates/_info_boxes.qmd >}}

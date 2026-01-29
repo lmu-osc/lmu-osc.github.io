@@ -1,5 +1,5 @@
 ---
-pagetitle: 'OSIM Meetup: Open Science in ML and Medicine'
+title: 'OSIM Meetup: Open Science in ML and Medicine'
 
 event:
   title: "OSIM Meetup: Open Science Challenges in ML and Medicine"
@@ -28,7 +28,6 @@ contact:
 
 ---
 
-<h1 class="fs-1 text-primary"> {{< meta event.title >}} </h1>
 
 {{< include templates/_setup.qmd >}}
 {{< include templates/_info_boxes.qmd >}}

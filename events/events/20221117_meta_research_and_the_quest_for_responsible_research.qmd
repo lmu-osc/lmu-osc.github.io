@@ -1,5 +1,5 @@
 ---
-pagetitle: 'Seminar: "Meta Research and the QUEST for responsible research"'
+title: 'Seminar: "Meta Research and the QUEST for responsible research"'
 categories: 'Lecture'
 
 # Event categories
@@ -48,7 +48,6 @@ host:
   - name: "LMU Open Science Center"
 ---
 <!-- MANDAORY SECTION START  -->
-<h1 class="fs-1 text-primary"> {{< meta event.title >}} </h1>
 
 {{< include templates/_setup.qmd >}}
 {{< include templates/_info_boxes.qmd >}}

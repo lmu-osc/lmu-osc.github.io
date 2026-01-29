@@ -1,5 +1,5 @@
 ---
-pagetitle: 'OSIM Meetup: 13 December 2024'
+title: 'OSIM Meetup: 13 December 2024'
 
 event:
   title: "OSIM Meetup: Plans for 2025"
@@ -24,7 +24,6 @@ contact:
 
 ---
 
-<h1 class="fs-1 text-primary"> {{< meta event.title >}} </h1>
 
 {{< include templates/_setup.qmd >}}
 {{< include templates/_info_boxes.qmd >}}

@@ -1,5 +1,5 @@
 ---
-pagetitle: '"Teaching Open Science in medical science" by Prof. Dr. Nick Plesnila, Gunther Löfflmann and Prof. Dr. Felix Schönbrodt'
+title: '"Teaching Open Science in medical science" by Prof. Dr. Nick Plesnila, Gunther Löfflmann and Prof. Dr. Felix Schönbrodt'
 categories: 'Workshop'
 
 # Event categories
@@ -48,7 +48,6 @@ host:
   - name: "LMU Open Science Center"
 ---
 <!-- MANDAORY SECTION START  -->
-<h1 class="fs-1 text-primary"> {{< meta event.title >}} </h1>
 
 {{< include templates/_setup.qmd >}}
 {{< include templates/_info_boxes.qmd >}}

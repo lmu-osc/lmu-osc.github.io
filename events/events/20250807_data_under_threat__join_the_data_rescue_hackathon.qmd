@@ -1,5 +1,5 @@
 ---
-pagetitle: 'Data Under Threat — Join the Data Rescue Hackathon'
+title: 'Data Under Threat — Join the Data Rescue Hackathon'
 categories: 'Hackathon'
 
 # Event categories
@@ -48,7 +48,6 @@ host:
   - name: "LMU Open Science Center"
 ---
 <!-- MANDAORY SECTION START  -->
-<h1 class="fs-1 text-primary"> {{< meta event.title >}} </h1>
 
 {{< include templates/_setup.qmd >}}
 {{< include templates/_info_boxes.qmd >}}

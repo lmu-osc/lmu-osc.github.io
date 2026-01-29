@@ -1,5 +1,5 @@
 ---
-pagetitle: 'OSIM Meetup: RDM, OA, and Open Science Services'
+title: 'OSIM Meetup: RDM, OA, and Open Science Services'
 
 event:
   title: "OSIM Meetup: LMU Services on Research Data Management, Open Access, and Open Science"
@@ -30,7 +30,6 @@ contact:
 
 ---
 
-<h1 class="fs-1 text-primary"> {{< meta event.title >}} </h1>
 
 {{< include templates/_setup.qmd >}}
 {{< include templates/_info_boxes.qmd >}}

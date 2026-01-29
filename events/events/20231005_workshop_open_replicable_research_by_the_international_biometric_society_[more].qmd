@@ -1,5 +1,5 @@
 ---
-pagetitle: 'Open Replicable Research by the International Biometric Society'
+title: 'Open Replicable Research by the International Biometric Society'
 categories: 'Workshop'
 
 # Event categories
@@ -48,7 +48,6 @@ host:
   - name: "LMU Open Science Center"
 ---
 <!-- MANDAORY SECTION START  -->
-<h1 class="fs-1 text-primary"> {{< meta event.title >}} </h1>
 
 {{< include templates/_setup.qmd >}}
 {{< include templates/_info_boxes.qmd >}}
