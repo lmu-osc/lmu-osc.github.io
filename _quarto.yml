@@ -86,19 +86,29 @@ website:
               contents:
                 - text: "Principles"
                   href: training/principles/index.qmd
-                  contents: training/principles/*
+                  contents: 
+                    - auto: "training/principles/*.qmd"
+                    - training/principles/principles-tutorials.yaml
                 - text: "Study Planning"
                   href: training/study_planning/index.qmd
-                  contents: training/study_planning/*
+                  contents: 
+                    - auto: "training/study_planning/*.qmd"
+                    - training/study_planning/study-planning-tutorials.yaml
                 - text: "Data Management"
                   href: training/data_management/index.qmd
-                  contents: training/data_management/*
+                  contents: 
+                    - auto: "training/data_management/*.qmd"
+                    - training/data_management/data-management-tutorials.yaml
                 - text: "Reproducible Processes"
                   href: training/reproducible_processes/index.qmd
-                  contents: training/reproducible_processes/*
+                  contents: 
+                    - auto: "training/reproducible_processes/*.qmd"
+                    - training/reproducible_processes/reproducible-processes-tutorials.yaml
                 - text: "Publishing Outputs"
                   href: training/publishing_outputs/index.qmd
-                  contents: training/publishing_outputs/*
+                  contents: 
+                    - auto: "training/publishing_outputs/*.qmd"
+                    - training/publishing_outputs/publishing-outputs-tutorials.yaml
             - text: "Open Research Cycle"
               href: training/open_research_cycle.qmd
             - text: "Train the Trainer"

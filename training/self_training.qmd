@@ -14,11 +14,7 @@ listing:
     sort:
       - "tutorial-home-order"
     contents: 
-      - principles/index.qmd
-      - study_planning/index.qmd
-      - data_management/index.qmd
-      - reproducible_processes/index.qmd
-      - publishing_outputs/index.qmd
+      - "*/index.qmd"
     image-placeholder: "assets/img/lmu_osc_logo.jpg"
     image-height: 200px
   - id: all_tutorials
@@ -28,6 +24,8 @@ listing:
     contents:
       - /*/**.qmd
       - "!**/index.qmd"
+      - /*/*-tutorials.yaml
+      - "!principles/principles-tutorials.yaml"   # remove this line if tutorials are added to the principles-tutorials.yaml file
     fields: 
       - content_category
       - title
