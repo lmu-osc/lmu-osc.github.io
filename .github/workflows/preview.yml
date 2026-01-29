@@ -1,50 +1,39 @@
 on:
   workflow_dispatch:
-  pull_request:
-    types:
-      - opened
-      - reopened
-      - synchronize
-      - closed
+  push:
+    branches:
+      - v1/add-research-cycle
 
-name: PR Preview
-
-concurrency: preview-${{ github.ref }}
+name: Branch Preview
 
 jobs:
   preview:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-      pull-requests: write
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
 
       - name: Install system dependencies
-        if: github.event.action != 'closed'
         run: |
           sudo apt-get update
           sudo apt-get install -y libcurl4-openssl-dev libx11-dev pandoc
 
       - name: Install R
-        if: github.event.action != 'closed'
         uses: r-lib/actions/setup-r@v2
         with:
           r-version: renv
 
       - name: Install R Dependencies
-        if: github.event.action != 'closed'
         uses: r-lib/actions/setup-renv@v2
         with:
           cache-version: 1
 
       - name: Set up Quarto
-        if: github.event.action != 'closed'
         uses: quarto-dev/quarto-actions/setup@v2
 
       - name: Restore Quarto _freeze/ cache
-        if: github.event.action != 'closed'
         uses: actions/cache@v3
         with:
           path: _freeze
@@ -52,26 +41,11 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-quarto-freeze-
 
-      - name: Add preview draft banner
-        if: github.event.action != 'closed'
-        env:
-          PR_TITLE: ${{ github.event.pull_request.title }}
-          PR_NUMBER: ${{ github.event.pull_request.number }}
-        run: |
-          # Escape special characters in PR title for sed
-          ESCAPED_TITLE=$(printf '%s' "$PR_TITLE" | sed 's/[&/\]/\\&/g; s/"/\\"/g')
-          sed -i "s/content: \".*\"/content: \"**⚠️ PREVIEW: ${ESCAPED_TITLE} (PR #${PR_NUMBER})**\"/" _quarto.yml
-          sed -i 's/type: primary/type: warning/' _quarto.yml
-          sed -i 's/dismissable: true/dismissable: false/' _quarto.yml
-
       - name: Render Quarto site
-        if: github.event.action != 'closed'
         run: quarto render
 
-      - name: Deploy PR Preview
-        uses: rossjrw/pr-preview-action@v1
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
         with:
-          source-dir: _site
-          preview-branch: gh-pages
-          umbrella-dir: pr-preview
-          action: auto
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: _site
