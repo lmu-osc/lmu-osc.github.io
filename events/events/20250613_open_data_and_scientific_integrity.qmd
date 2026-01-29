@@ -1,13 +1,10 @@
 ---
-format: 
-    html:
-        table-of-contents: false
-        css: event-page-styles.css
-page-layout: full
-pagetitle: 'OSIM Meetup: Open Data and Scientific Integrity'
+title: 'OSIM Meetup: Open Data and Scientific Integrity'
+categories: OSIM
 
+date: "13 Jun, 2025"
 event:
-  title: "OSIM Meetup: Open Data and Scientific Integrity"
+  title: 'OSIM Meetup: Open Data and Scientific Integrity'
   description: "Discussion on open data practices and scientific integrity"
   categories: ["OSIM Meetup"]
   date: "13 Jun, 2025"
@@ -31,7 +28,11 @@ contact:
 
 ---
 
-<h1 class="fs-1 text-primary"> {{< meta event.title >}} </h1>
+
+{{< include templates/_setup.qmd >}}
+{{< include templates/_info_boxes.qmd >}}
+{{< include templates/_register_button.qmd >}}
+
 
 ## Event Details
 

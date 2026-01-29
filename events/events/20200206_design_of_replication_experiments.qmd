@@ -1,15 +1,11 @@
 ---
-format:
-    html:
-        table-of-contents: false
-        css: event-page-styles.css
-page-layout: full
-pagetitle: '"Design of Replication Experiments"'
+title: "Design of Replication Experiments"
 categories: 'Workshop'
+date: "February 06, 2020"
 
 # Event categories
 event:
-  title: '"Design of Replication Experiments"'
+  title: "Design of Replication Experiments"
   description: ""
   categories:  'Workshop'
   date: "February 06, 2020"
@@ -53,7 +49,6 @@ host:
   - name: "LMU Open Science Center"
 ---
 <!-- MANDAORY SECTION START  -->
-<h1 class="fs-1 text-primary"> {{< meta event.title >}} </h1>
 
 {{< include templates/_setup.qmd >}}
 {{< include templates/_info_boxes.qmd >}}

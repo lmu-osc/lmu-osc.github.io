@@ -1,13 +1,10 @@
 ---
-format: 
-    html:
-        table-of-contents: false
-        css: event-page-styles.css
-page-layout: full
-pagetitle: 'OSIM Meetup: Statistical Routines and Replication Crisis'
+title: 'OSIM Meetup: Statistical Routines and Replication Crisis'
+categories: OSIM
 
+date: "14 Jul, 2023"
 event:
-  title: "OSIM Meetup: Statistical Routines and the Replication Crisis"
+  title: 'OSIM Meetup: Statistical Routines and the Replication Crisis'
   description: "Discussion on statistical routines and their role in the replication crisis"
   categories: ["OSIM Meetup"]
   date: "14 Jul, 2023"
@@ -31,7 +28,10 @@ contact:
 
 ---
 
-<h1 class="fs-1 text-primary"> {{< meta event.title >}} </h1>
+{{< include templates/_setup.qmd >}}
+{{< include templates/_info_boxes.qmd >}}
+{{< include templates/_register_button.qmd >}}
+
 
 ## Event Details
 

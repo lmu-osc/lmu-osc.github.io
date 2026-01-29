@@ -1,15 +1,11 @@
 ---
-format:
-    html:
-        table-of-contents: false
-        css: event-page-styles.css
-page-layout: full
-pagetitle: 'LMU Open Science Summer School 2025'
+title: LMU Open Science Summer School 2025
 categories: 'Summer school'
+date: "September 15, 2025"
 
 # Event categories
 event:
-  title: 'LMU Open Science Summer School 2025'
+  title: LMU Open Science Summer School 2025
   description: ""
   categories:  'Summer school'
   date: "September 15, 2025"
@@ -52,7 +48,6 @@ host:
   - name: "LMU Open Science Center"
 ---
 <!-- MANDAORY SECTION START  -->
-<h1 class="fs-1 text-primary"> {{< meta event.title >}} </h1>
 
 {{< include templates/_setup.qmd >}}
 {{< include templates/_info_boxes.qmd >}}

@@ -127,12 +127,15 @@ dateDisplay = `${startDay} ${startMonth}, ${startYear}`;
 <i class="bi bi-clock"></i>
 <%- item.event.time || '' %>
 </div>
+<% if (item.event.location) { %>
 <div class="divider"></div>
 <div class="event-location listing-location">
 <i class="bi bi-geo-alt-fill"></i>
 <%- item.event.location.name || '' %>
 </div>
+<% } %>
 
+<% if (item.event.format) { %>
 <div class="divider"></div>
 <div class="event-form listing-form">
 <%
@@ -147,6 +150,7 @@ formIcon = '<i class="bi bi-laptop"></i>';
 %>
 <%= formIcon %> <%- item.event.format.type || '' %>
 </div>
+<% } %>
 
 <% if (item.event.language['primary-code']) { %>
 <div class="divider"></div>
