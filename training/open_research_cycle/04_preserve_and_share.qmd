@@ -12,70 +12,223 @@ title-block-style: none
 <div class="orc-hero-cycle phase-4">
 {{< include ../images/os-cycle.svg >}}
 </div>
-<!-- TODO: Update tagline and pills -->
 <div class="orc-hero-body">
-<div class="orc-hero-tagline">Share your work openly and maximize impact</div>
+<div class="orc-hero-tagline">Make your research outputs findable, accessible, and citable</div>
 <div class="orc-hero-pills">
-<span><i class="bi bi-check2-circle"></i> Data repositories</span>
-<span><i class="bi bi-check2-circle"></i> Code archives</span>
-<span><i class="bi bi-check2-circle"></i> Open access</span>
-<span><i class="bi bi-check2-circle"></i> DOIs & licenses</span>
+<span><i class="bi bi-check2-circle"></i> Data Sharing</span>
+<span><i class="bi bi-check2-circle"></i> Code Publishing</span>
+<span><i class="bi bi-check2-circle"></i> Open Access</span>
+<span><i class="bi bi-check2-circle"></i> Persistent Identifiers</span>
 </div>
-<div class="orc-hero-checkpoint"><i class="bi bi-people-fill"></i> Checkpoint: Manuscript submission with DOIs</div>
+<div class="orc-hero-checkpoint"><i class="bi bi-people-fill"></i> Checkpoint: Manuscript submission with DOIs for preregistration, data, and code</div>
 </div>
 </div>
 
 
 <details class="orc-details-panel">
-<summary><i class="bi bi-database-check"></i> FAIR Data Sharing</summary>
+<summary><i class="bi bi-database-check"></i> Data Sharing</summary>
 
-cards (I think?) or possibly tabs about 
+Sharing your data allows others to verify your findings, build on your work, and increase the impact of your research. But sharing does not always mean making everything publicly available. What you can share depends on the consent you obtained, the sensitivity of your data, and your ethics approval.
 
-documentation
+If you wrote a Data Management Plan in Phase 1, this is where you implement it.
 
-metadatastandards
+In Phase 2 you created documentation for yourself and collaborators. Now you prepare that documentation for people who have no prior knowledge of your project. You also decide how openly your data can be shared, select an appropriate repository, and apply a license that tells others how they may reuse your work.
 
-real or synthetic data / anonimised data
+**This step is straightforward if you followed Phase 2.** You already have a README, a codebook, organized files, and clear metadata.
 
-publish on repo with DOI, credit, licence
+::: {.panel-tabset}
 
+### Open vs Restricted
+
+Not all data can or should be shared openly. Your sharing options depend on what consent participants gave and what your ethics approval permits.
+
+**Open data** can be downloaded by anyone without restrictions. This maximizes reuse but is only appropriate when data contains no personal information or has been fully anonymized.
+
+**Restricted access** means data is available on request, often requiring a Data Use Agreement. The requester typically must describe their purpose and agree to conditions. This balances reuse with protection.
+
+**Metadata only** describes what data exists without sharing the data itself. Others can discover your work and contact you to discuss access. This is appropriate when data cannot be shared due to legal or ethical constraints.
+
+When deciding, ask: What did participants consent to? What does your ethics approval allow? Can the data be anonymized without losing value? If you work with sensitive data, consult your institution's data protection officer.
+
+<!-- TODO: tool card for decision tree -->
+
+### Preparing Your Data
+
+In Phase 2 you created a README and codebook for yourself and collaborators. Before sharing publicly, review them from the perspective of someone who knows nothing about your project.
+
+**Expand your README** to include the research context, how to cite the dataset, and any access conditions. See the Documentation tab in Phase 2 for what a complete README contains.
+
+**Review your codebook** to ensure every variable is fully described. What was obvious to you during analysis may need explanation for others.
+
+**Follow community standards.** Many fields have established formats for sharing data (e.g., BIDS for neuroimaging). Using these makes your data immediately usable with existing tools. See the Standards tab in Phase 2 for how to find conventions in your domain.
+
+**Verify anonymization.** Check that no personal information remains in the data files, metadata, or filenames.
+
+::: {.orc-grid-tools}
+::: {.orc-card-tool}
+<div class="orc-card-tool-icon"><img src="../../assets/img/lmu_osc_logo.jpg" alt="LMU OSC"></div>
+
+#### [FAIR Data Management (Tutorial)](https://lmu-osc.github.io/FAIR-Data-Management/)
+
+Documentation, organization, and metadata
+
+<details>
+<summary>Read more</summary>
+Comprehensive guide to managing research data following FAIR principles. Covers READMEs, codebooks, file formats, and standards.
+</details>
+:::
+:::
+
+### Where to Deposit
+
+Choose a repository that suits your data type, your field's expectations, and your access requirements.
+
+**Discipline-specific repositories** are often the best choice. They use metadata standards your community expects, making your data findable by researchers in your field. Search [re3data](https://www.re3data.org/) to find repositories for your domain.
+
+**General-purpose repositories** like [Zenodo](https://zenodo.org/), [Figshare](https://figshare.com/), or [OSF](https://osf.io/) accept any data type. They provide DOIs and long-term preservation, but may lack the specialized metadata fields of discipline-specific options.
+
+**Institutional repositories** may be required by your funder or institution. Check your grant terms and institutional policies.
+
+Whichever you choose, ensure the repository provides a **DOI** (Digital Object Identifier) so your data can be cited and tracked. See the Identity & Credit panel for more on persistent identifiers.
+
+::: {.orc-grid-tools}
+::: {.orc-card-tool}
+<div class="orc-card-tool-icon"><i class="bi bi-search"></i></div>
+
+#### [re3data](https://www.re3data.org/)
+
+Registry of research data repositories
+
+<details>
+<summary>Read more</summary>
+Search by discipline to find repositories that accept your type of data and meet your requirements.
+</details>
+:::
+
+::: {.orc-card-tool}
+<div class="orc-card-tool-icon"><i class="bi bi-cloud-upload"></i></div>
+
+#### [Zenodo](https://zenodo.org/)
+
+General-purpose repository for any research output
+
+<details>
+<summary>Read more</summary>
+Free, open repository hosted by CERN. Accepts any file type, assigns DOIs, and integrates with GitHub.
+</details>
+:::
+:::
+
+### Data Licenses
+
+A license tells others what they can do with your data. Without one, others cannot legally reuse your work, even if it is publicly available.
+
+**CC0 (Public Domain)** places no restrictions. Anyone can use, modify, and redistribute without attribution. Recommended for factual data where maximum reuse is the goal.
+
+**CC BY (Attribution)** requires users to credit you. A good default when you want recognition while enabling broad reuse.
+
+**CC BY-NC (Non-Commercial)** adds a restriction against commercial use. Consider whether this limitation actually serves your goals.
+
+For restricted-access data, a **Data Use Agreement** specifies conditions beyond a standard license: approved purposes, security requirements, publication terms, and data destruction timelines.
+
+::: {.orc-grid-tools}
+::: {.orc-card-tool}
+<div class="orc-card-tool-icon"><img src="../../assets/img/lmu_osc_logo.jpg" alt="LMU OSC"></div>
+
+#### [Choose a License (Tutorial)](https://lmu-osc.github.io/code-publishing/choose_license.html)
+
+Guidance on selecting the right license
+
+<details>
+<summary>Read more</summary>
+Covers licenses for data, code, and other research outputs with decision flowcharts.
+</details>
+:::
+:::
+
+:::
 
 </details>
 
 
 <details class="orc-details-panel">
-<summary><i class="bi bi-code-square"></i> Code Sharing</summary>
+<summary><i class="bi bi-code-square"></i> Code Publishing</summary>
 
-cards (I think?) or possibly tabs about 
+<!-- intro text here -->
 
-documentation - readme
+::: {.panel-tabset}
 
-licence
+### Preparing Your Repo
 
-data to run real/sim/synth
+<!-- readme for external users, clean history, remove sensitive data -->
 
-code publishing tutorial card
+### Simulated & Synthetic Data
 
-zenodo card
+<!-- data to run: real/sim/synth -->
 
+### Code Licenses
+
+<!-- licence (link to code-publishing tutorial) -->
+
+### Archiving & DOIs
+
+<!-- zenodo workflow, DOI, link to https://lmu-osc.github.io/code-publishing/ -->
+
+:::
 
 </details>
 
 
 <details class="orc-details-panel">
-<summary><i class="bi bi-journal-arrow-up"></i> Preprint, Postprint & Open Access</summary>
+<summary><i class="bi bi-journal-arrow-up"></i> Open Access</summary>
 
-cards (I think?) or possibly tabs about 
+<!-- intro text here -->
 
-what publishers allow you: openpolicyfinders
+::: {.panel-tabset}
 
-logic figure about this
+### Your Rights
 
-credit, contributorship
+<!-- what publishers allow: openpolicyfinder -->
 
-licence
+### Green OA
 
+<!-- preprint/postprint workflow figure, institutional repos, embargo periods -->
+
+### Gold OA
+
+<!-- APCs, LMU agreements -->
+
+:::
 
 </details>
 
-checklist
+
+<details class="orc-details-panel">
+<summary><i class="bi bi-person-badge"></i> Identity & Credit</summary>
+
+<!-- intro text here -->
+
+::: {.panel-tabset}
+
+### ORCID
+
+<!-- ORCID, ROR IDs -->
+
+### CRediT
+
+<!-- CRediT taxonomy, contributorship -->
+
+### Connecting Your Work
+
+<!-- connect prereg → data → code → paper -->
+
+### Updating Preregistration
+
+<!-- lift embargo on preregistration -->
+
+:::
+
+</details>
+
+
+<!-- checklist at end -->
