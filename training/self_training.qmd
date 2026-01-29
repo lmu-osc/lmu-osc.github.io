@@ -14,11 +14,7 @@ listing:
     sort:
       - "tutorial-home-order"
     contents: 
-      - principles/index.qmd
-      - study_planning/index.qmd
-      - data_management/index.qmd
-      - reproducible_processes/index.qmd
-      - publishing_outputs/index.qmd
+      - "*/index.qmd"
     image-placeholder: "assets/img/lmu_osc_logo.jpg"
     image-height: 200px
   - id: all_tutorials
