@@ -1,22 +1,23 @@
 ---
 title: Tejaswini Sharma
-academic_title: BSC Student
+academic_title: M.Sc. Student
 name: Tejaswini Sharma
 surname: Sharma
 first_name: Tejaswini
 osc_staff_title: HiWi
-faculty: 
+faculty: Psychology and Education
 membertype: ['fellow', 'staff']
 display_weight_staff: 99
-email: tejaswini.sharma@campus.lmu.de
-photo: 
+email: tejaswini.sharma@psy.lmu.de
+photo: images/tejaswini-sharma_25-09-26_164-web.jpg
 website:
-  - label:
-    url: 
+  - label: LinkedIn Profile
+    url: https://www.linkedin.com/in/tejaswinisharma043/
 social_media:
-  ORCID:
+  ORCID: https://orcid.org/0009-0000-0305-9751
 mission_statement:
-  - fill in
+  -  I am an M.Sc. student in Psychology: Learning Sciences at LMU Munich, passionate about integrating educational research with Open Science. My broader research interest lies in creating inclusive and research-driven learning environments, and I see Open Science as a key foundation for ensuring that research is transparent, collaborative, and impactful across disciplines. <br> At the OSC, I support the development of training materials for the Train-the-Trainer programme, focusing on reproducible workflows, FAIR data principles, and instructional design for academic contexts. 
+
 ---
 {{< include templates/_setup.qmd >}}
 {{< include templates/_contact_items.qmd >}}
