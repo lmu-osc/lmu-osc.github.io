@@ -33,14 +33,11 @@ include-in-header:
         height: 400px;
       }
       
-      .quarto-title-banner {
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-      }
-      
       /* Mission Statement Section Styling */
       .mission-statement-container {
         display: flex;
         justify-content: center;
+        margin-bottom: 3rem;
       }
       
       .mission-statement-card {
@@ -73,6 +70,7 @@ include-in-header:
         color: #333;
         text-align: center;
         margin: 0;
+        margin-bottom: 1.5rem;
       }
       
       /* Impact Metrics Section Styling */
@@ -126,20 +124,122 @@ include-in-header:
         line-height: 1.5;
         letter-spacing: 0.3px;
       }
-      </style>
-      <link href="/assets/bootstrap-5.3.8-dist/css/bootstrap.min.css" rel="stylesheet">
+            
+      .row h2 {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #2c5f8d;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        text-align: center;
+        margin-bottom: 2.5rem;
+        padding-left: 2em;
+      }
+
+      .activities-container {
+        padding:3rem;
+      }
+
+      /* Card */
+      .activities-card {
+        background-color: #2c5f8d;
+        color: white;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 1rem 1.5rem 0;
+      }
+
+      .activities-card i {
+        font-size: 2.4rem;
+        margin-bottom: 0.5rem;
+        display: block;
+        text-align: center;
+        }
+
+      .activities-card p,
+      .activities-card {
+        font-size: 0.98rem;
+        line-height: 1.4;
+        text-align:center;
+      }
+
+      .activities-link {
+        display:flex;
+        flex-direction: column;
+        margin-top: auto;
+        background-color: #e6e6e6;
+        padding: 0.75rem 1rem;
+        margin-left: -1.5rem;
+        margin-right: -1.5rem;
+        transition: background-color 0.3s ease;
+
+      }
+
+      .activities-link a {
+        color: #2c5f8d;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content:center;
+        }
+      .activities-link:hover{
+        background-color: #d2d2d2ff;
+      }
+      .activities-link a:hover{
+        text-decoration: underline;
+      }
+
+
+      .testimonial-grid {
+        display: flex;
+        align-items: center;
+        gap: 2.5rem;
+        max-width: 900px;
+        margin: 0 auto;
+      }
+
+      .testimonial-image img {
+        width: 120px;
+        height: 120px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 3px solid #2c5f8d;
+      }
+      .testimonial-section {
+        background-color: #3878b1ff;
+        padding: 2.5rem 2rem;
+        margin: 1rem 0;
+      }
+
+      .testimonial-section blockquote {
+        margin: 0;
+        font-style: italic;
+        font-size: 1.05rem;
+        line-height: 1.6;
+        color: #333;
+      }
+
+      .testimonial-section strong {
+        display: block;
+        margin-top: 1.25rem;
+        font-style: normal;
+        font-weight: 600;
+        color: #000;
+      }
+
+      @media (max-width: 768px) {
+        .testimonial-grid {
+          flex-direction: column;
+          text-align: center;
+        }
+      }
+
+        </style>
+        <link href="/assets/bootstrap-5.3.8-dist/css/bootstrap.min.css" rel="stylesheet">
 css: /custom-navbar.css
 ---
 
-
-
-
-
-::: {.column-margin}
-
-Custom join us section here?
-
-:::
 
 
 ::: {.mission-statement-container}
@@ -147,8 +247,82 @@ Custom join us section here?
 ## Mission Statement
 
 The LMU Open Science Center is an interdisciplinary initiative promoting open, transparent, and reproducible research through training, meta-research, and community building.
+
+[Learn More](about/index.qmd){.btn .btn-primary} [Join Us]{.btn .btn-secondary}
+
 :::
 :::
+
+::: {.row .justify-content-center}
+## Upcoming news and events
+::: {.col-md-5}
+::: {#news-carousel}
+:::
+:::
+
+::: {.col-md-5}
+::: {#events-carousel}
+:::
+:::
+:::
+
+<!-- activities --->
+::: {.activities-container}
+::: {.row}
+
+## Our Activities
+
+::: {.col-md-3}
+::: {.activities-card}
+<i class="bi bi-calendar"></i>
+
+Explore upcoming and past events from the OSC community.
+
+::: {.activities-link}
+[View our events](events/index.qmd) 
+:::
+:::
+:::
+
+::: {.col-md-3}
+::: {.activities-card}
+<i class="bi bi-people"></i>
+
+Building and supporting the OSC community across disciplines.
+
+::: {.activities-link}
+[Meet our people](people/members.qmd) 
+:::
+:::
+:::
+
+::: {.col-md-3}
+::: {.activities-card}
+<i class="bi bi-journal-bookmark"></i>
+
+Providing training and guidance on open science practices.
+
+::: {.activities-link}
+[Explore trainings](training/index.qmd)
+:::
+:::
+:::
+
+::: {.col-md-3}
+::: {.activities-card}
+<i class="bi bi-tools"></i>
+
+Offering consultations for open science adoption.
+
+::: {.activities-link}
+[Reach out](training/index.qmd) 
+:::
+:::
+:::
+
+:::
+:::
+
 
 ::: {.impact-container}
 ::: {.impact-card}
@@ -190,23 +364,38 @@ Publications on OS
 Researchers Trained
 :::
 :::
+
+::: {.metric}
+::: {.metric-value}
+10+
+:::
+::: {.metric-label}
+Awards won
+:::
+:::
+
 :::
 :::
 ::: 
 
 
+<!-- testimonial or dialogue section from someone famous -->
+::: {.testimonial-section}
+
+::: {.testimonial-grid}
 
 
+::: {.testimonial-content}
+> “Open Science at LMU has completely changed how I think about collaboration and research transparency.  
+> The summer school made it easy to adopt reproducible workflows from day one.”
 
-
-::: {.row}
-::: {.col-md-6}
-::: {#news-carousel}
+**— PhD Student, Life Sciences**
 :::
+
+::: {.testimonial-image}
+![](people/people/images/default.svg){alt="Testimonial portrait"}
 :::
 
-::: {.col-md-6}
-::: {#events-carousel}
 :::
-:::
+
 :::
