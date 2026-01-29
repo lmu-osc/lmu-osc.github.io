@@ -1,0 +1,42 @@
+---
+format: 
+    html:
+        table-of-contents: false
+        css: event-page-styles.css
+page-layout: full
+pagetitle: 'OSIM Meetup: Reporting of Clinical Studies'
+
+event:
+  title: "OSIM Meetup: Reporting of Clinical Studies"
+  description: "Discussion on reporting standards and best practices for clinical studies"
+  categories: ["OSIM Meetup"]
+  date: "31 Mar, 2023"
+  time: "14:00 CET"
+  format:
+    type: "Hybrid"
+    details: "In-person & Online"
+  language:
+    primary: "English"
+    primary-code: "en"
+
+instructors: []
+
+presenters:
+  - name: "Antje Hentrich"
+    affiliation: "Munich Medical Research School, LMU Munich"
+  - name: "Annette Hartmann"
+    affiliation: "Program Coordinator Ph.D. Public Health & Epidemiology, LMU Munich"
+
+contact: 
+    name: "OSC team"
+    email: "osc@lmu.de"
+
+---
+
+<h1 class="fs-1 text-primary"> {{< meta event.title >}} </h1>
+
+## Event Details
+
+**Speakers:** Antje Hentrich (Munich Medical Research School) and Annette Hartmann (Program Coordinator Ph.D. Public Health & Epidemiology)
+
+**Date & Time:** 31 March 2023, 14:00 CET

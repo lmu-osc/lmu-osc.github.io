@@ -1,0 +1,44 @@
+---
+format: 
+    html:
+        table-of-contents: false
+        css: event-page-styles.css
+page-layout: full
+pagetitle: 'OSIM Meetup: RDM, OA, and Open Science Services'
+
+event:
+  title: "OSIM Meetup: LMU Services on Research Data Management, Open Access, and Open Science"
+  description: "Raising awareness of LMU services on research data management, open access, and open science"
+  categories: ["OSIM Meetup"]
+  date: "13 Oct, 2023"
+  time: "14:00 CET"
+  format:
+    type: "Hybrid"
+    details: "In-person & Online"
+  language:
+    primary: "English"
+    primary-code: "en"
+
+instructors: []
+
+presenters:
+  - name: "Martin Spenger"
+    affiliation: "LMU University Library, RDM Help Desk"
+  - name: "Veit Schwab"
+    affiliation: "University Funding Unit, LMU Munich"
+  - name: "Felix Schönbrodt"
+    affiliation: "LMU Open Science Center"
+
+contact: 
+    name: "OSC team"
+    email: "osc@lmu.de"
+
+---
+
+<h1 class="fs-1 text-primary"> {{< meta event.title >}} </h1>
+
+## Event Details
+
+**Speakers:** Martin Spenger (LMU University Library, RDM Help Desk), Veit Schwab (University Funding Unit), and Felix Schönbrodt (LMU Open Science Center)
+
+**Date & Time:** 13 October 2023, 14:00 CET

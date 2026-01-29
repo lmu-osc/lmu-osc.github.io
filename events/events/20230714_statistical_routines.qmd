@@ -1,0 +1,40 @@
+---
+format: 
+    html:
+        table-of-contents: false
+        css: event-page-styles.css
+page-layout: full
+pagetitle: 'OSIM Meetup: Statistical Routines and Replication Crisis'
+
+event:
+  title: "OSIM Meetup: Statistical Routines and the Replication Crisis"
+  description: "Discussion on statistical routines and their role in the replication crisis"
+  categories: ["OSIM Meetup"]
+  date: "14 Jul, 2023"
+  time: "14:00 CET"
+  format:
+    type: "Hybrid"
+    details: "In-person & Online"
+  language:
+    primary: "English"
+    primary-code: "en"
+
+instructors: []
+
+presenters:
+  - name: "Tom Sterkenburg"
+    affiliation: "Munich Center for Mathematical Philosophy"
+
+contact: 
+    name: "OSC team"
+    email: "osc@lmu.de"
+
+---
+
+<h1 class="fs-1 text-primary"> {{< meta event.title >}} </h1>
+
+## Event Details
+
+**Speaker:** Tom Sterkenburg (Munich Center for Mathematical Philosophy)
+
+**Date & Time:** 14 July 2023, 14:00 CET

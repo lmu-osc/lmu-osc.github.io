@@ -1,0 +1,40 @@
+---
+format: 
+    html:
+        table-of-contents: false
+        css: event-page-styles.css
+page-layout: full
+pagetitle: 'OSIM Meetup: Use of ChatGPT in Science'
+
+event:
+  title: "OSIM Meetup: Use of ChatGPT in Science"
+  description: "Discussion on the use of ChatGPT and AI in scientific research"
+  categories: ["OSIM Meetup"]
+  date: "08 Mar, 2024"
+  time: "14:00 CET"
+  format:
+    type: "Hybrid"
+    details: "In-person & Online"
+  language:
+    primary: "English"
+    primary-code: "en"
+
+instructors: []
+
+presenters:
+  - name: "Eva Grill"
+  - name: "Antje Hentrich"
+
+contact: 
+    name: "OSC team"
+    email: "osc@lmu.de"
+
+---
+
+<h1 class="fs-1 text-primary"> {{< meta event.title >}} </h1>
+
+## Event Details
+
+**Speakers:** Eva Grill and Antje Hentrich
+
+**Date & Time:** 8 March 2024, 14:00 CET

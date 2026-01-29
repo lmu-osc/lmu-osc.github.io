@@ -1,0 +1,36 @@
+---
+format: 
+    html:
+        table-of-contents: false
+        css: event-page-styles.css
+page-layout: full
+pagetitle: 'OSIM Meetup: Q&A Data Sharing'
+
+event:
+  title: "OSIM Meetup: Q&A Data Sharing"
+  description: "Q&A session on data sharing practices and questions"
+  categories: ["OSIM Meetup"]
+  date: "11 Oct, 2024"
+  time: "14:00 CET"
+  format:
+    type: "Hybrid"
+    details: "In-person & Online"
+  language:
+    primary: "English"
+    primary-code: "en"
+
+instructors: []
+
+presenters: []
+
+contact: 
+    name: "OSC team"
+    email: "osc@lmu.de"
+
+---
+
+<h1 class="fs-1 text-primary"> {{< meta event.title >}} </h1>
+
+## Event Details
+
+**Date & Time:** 11 October 2024, 14:00 CET
