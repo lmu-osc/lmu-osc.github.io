@@ -12,14 +12,13 @@ title-block-style: none
 <div class="orc-hero-cycle phase-2">
 {{< include ../images/os-cycle.svg >}}
 </div>
-<!-- TODO: Update tag lines and pills -->
 <div class="orc-hero-body">
 <div class="orc-hero-tagline">Build quality into your data from the start</div>
 <div class="orc-hero-pills">
-<span><i class="bi bi-check2-circle"></i> FAIR Data</span>
-<span><i class="bi bi-check2-circle"></i> Standard Protocols</span>
-<span><i class="bi bi-check2-circle"></i>Informed Consent</span>
-<span><i class="bi bi-check2-circle"></i> Anonymisation</span>
+<span><i class="bi bi-check2-circle"></i> Data Collection</span>
+<span><i class="bi bi-check2-circle"></i> Data Management</span>
+<span><i class="bi bi-check2-circle"></i> Ethics & Privacy</span>
+<span><i class="bi bi-check2-circle"></i> Quality Control</span>
 </div>
 <div class="orc-hero-checkpoint"><i class="bi bi-people-fill"></i> Checkpoint: Data quality validation meeting</div>
 </div>
@@ -27,31 +26,318 @@ title-block-style: none
 
 
 <details class="orc-details-panel">
-<summary><i class="bi bi-clipboard-data"></i> FAIR Research Data Management</summary>
+<summary><i class="bi bi-journal-code"></i> Data Collection</summary>
 
-something about 
-FAIR data principles
-storage back up
-organisation and file naming
-documentation
-meadatastandards -> link to discipline specific section
-tutorial card
+How you collect data determines whether anyone can replicate your work. Document your procedures thoroughly enough that someone unfamiliar with your project could follow them exactly.
+
+The practices here support **credible** research (transparent methods that can be verified), **open** science (shareable protocols and tools), and **FAIR** principles applied to methods (findable, accessible, interoperable, reusable procedures).
+
+**Capture metadata as you collect.** Equipment settings, environmental conditions, software versions, and calibration records should be recorded contemporaneously, not reconstructed afterward. Electronic lab notebooks, instrument logs, and automated logging all help. See the Metadata tab in Data Management for what to document.
+
+::: {.panel-tabset}
+
+### Experimental Protocols
+
+Write your protocol before you start, follow it precisely, and record any deviations as they happen.
+
+Your protocol should specify materials with identifying details (lot numbers, versions, sources), equipment settings, step-by-step instructions with timing, and expected outcomes at each stage. What counts as "materials" varies by field: reagent concentrations in wet lab work, scanner parameters in neuroimaging, sampling coordinates in field ecology. But the principle is the same: enough detail that someone else could replicate your procedure exactly.
+
+**Track deviations in real time.** When you need to adapt, note it immediately. These deviations often explain unexpected results and guide protocol improvements. Electronic lab notebooks (ELNs) make this easier by creating version-controlled, timestamped records automatically, providing an audit trail that paper cannot match.
+
+**Publish your protocols.** A detailed, tested protocol is a contribution to your field. Publishing establishes priority, enables citation, and makes your methods reusable. Platforms like protocols.io provide version control and DOI assignment.
+
+::: {.orc-grid-tools}
+::: {.orc-card-tool}
+<div class="orc-card-tool-icon"><i class="bi bi-file-earmark-code"></i></div>
+
+#### [protocols.io](https://www.protocols.io/)
+
+Protocol sharing with version control and DOIs
+
+<details>
+<summary>Read more</summary>
+Share, discover, and improve research protocols. Track changes over time and get credit when others use your methods.
+</details>
+:::
+:::
+
+### Surveys & Questionnaires
+
+Document both the instrument and the administration procedure completely. Use validated instruments when possible, pilot test before deployment, and archive the exact version participants see.
+
+[Content to be expanded]
+
+### Automated/Programmatic
+
+When data comes from APIs, sensors, or instruments, scripting the acquisition creates a reproducible record of exactly what was collected and how. Languages like R or Python work well for straightforward pipelines. For complex multi-step workflows, workflow managers like [Snakemake](https://snakemake.readthedocs.io/) or Nextflow ensure steps run in the correct order and can resume after failures. These are common in bioinformatics and neuroimaging, but the principle applies wherever you have sequential processing steps.
+
+**Structure data correctly from the start.** Variables in columns, observations in rows. This makes your data immediately interoperable with analysis tools rather than requiring cleanup later. Scripts can also automate organization, file renaming, and conversion to open formats. See the Data Management section for guidelines.
+
+**Keep records of what ran and when.** Include error handling so failures are recorded rather than silently corrupting data. When something fails months later, you need to know what happened. Always test acquisition scripts on sample data before production runs. A bug in your collection pipeline can invalidate an entire dataset.
+
+**Version control your code and data.** This makes your methods reproducible and shareable. See the Version Control tab in Data Management for details.
+
+::: {.orc-grid-tools}
+::: {.orc-card-tool}
+<div class="orc-card-tool-icon"><img src="../../assets/img/lmu_osc_logo.jpg" alt="LMU OSC"></div>
+
+#### [Introduction to R](https://lmu-osc.github.io/introduction-to-R/)
+
+Programming fundamentals for researchers
+
+<details>
+<summary>Read more</summary>
+Learn R basics for data manipulation and scripting. No prior programming experience required.
+</details>
+:::
+:::
+
+:::
 
 </details>
 
 
 <details class="orc-details-panel">
-<summary><i class="bi bi-journal-code"></i> Reproducible Data Acquisition</summary>
+<summary><i class="bi bi-clipboard-data"></i> Data Management</summary>
+
+In Phase 1 you planned how to manage your data. Now you put that plan into practice, refining it as you learn what actually works for your project.
+
+The most important thing you will produce is your raw data: the unmodified output of your instruments, surveys, or observations. Everything else, including processed datasets and analysis results, can be regenerated from raw data if your methods are documented. Protect raw data accordingly, and never modify it directly.
+
+Beyond raw data, you will generate processed data, code, documentation, and metadata. How you organize, describe, and store these determines whether your work remains usable and reproducible. The [FAIR principles](https://www.go-fair.org/fair-principles/) guide these decisions: making outputs Findable, Accessible, Interoperable, and Reusable.
+
+What follows are general practices. Your domain has specific conventions for file formats, folder structure, and metadata. [RDMkit](https://rdmkit.elixir-europe.org/your_domain) provides detailed guidance organized by research area.
 
 ::: {.panel-tabset}
 
-### reproducible protocols
+### Storage
 
-something about reproducible protocols (wet lab) - link to protocol.io, video reproducible protocol writing
+This section covers storage for data you are actively collecting. Long-term archiving for sharing is covered in Phase 4.
 
-### Standard data acquisition
+**Use institutional storage.** Your institution provides storage with automated backups, access controls, and GDPR compliance. The specific options vary by department. Contact [LMU RDM support](mailto:rdm@ub.uni-muenchen.de) to find what is available to you. When choosing, consider how much data you will generate, who needs access, and whether your data includes personal information requiring stricter controls.
 
-something about SOP for data acquisition e.g. using machines and automatising with programing any preprocessing step if possible - R, Python cards
+**Follow the 3-2-1 backup rule.** Keep three copies on two media types with one off-site. Designate one location as the master copy, the authoritative version everything else syncs from. Working with multiple "equal" copies creates version conflicts. Remember that syncing is not backup: if you delete a file from a synced folder, the deletion propagates everywhere. True backups preserve previous versions independently.
+
+**Control access from the start.** Grant access only to those who need it. Use institutional sharing tools, not email attachments or personal cloud links. For collaborations, agree at the start who can read, who can edit, and who manages permissions. When team members leave, remove their access promptly.
+
+**Test your backups.** A backup you cannot restore is not a backup. Test restoration at least once. Archive inactive data periodically and review access lists when team composition changes.
+
+::: {.callout-important}
+## Avoid for Research Data
+Personal laptops as primary storage, external drives as only copy, consumer cloud services (Dropbox, Google Drive) for sensitive data, and USB drives except for temporary transport.
+:::
+
+### Organization
+
+Your folder structure and file naming conventions determine whether you and others can navigate your project months or years later. Establish these conventions at the start of your project and document them. When collaborating, ensure everyone follows the same system.
+
+**Separate raw from processed data.** Raw data is untouchable: once collected, these files should never be modified. All cleaning, transformations, and analyses happen on copies in a separate folder. This preserves your ability to verify results or reprocess from the original source.
+
+**Develop a file naming convention.** Good file names identify contents at a glance and sort correctly. Balance specificity with readability: too many elements make names unwieldy, too few make them ambiguous. Order elements from general to specific.
+
+- Use underscores or hyphens to separate elements, never spaces or special characters (`? ! & * % # @`)
+- Use ISO 8601 dates (`YYYYMMDD`) so files sort chronologically
+- Include version numbers with leading zeros (`v01`, `v02`) so `v10` sorts after `v09`
+- Use meaningful abbreviations and document what they mean
+
+A pattern like `YYYYMMDD_project_condition_type_v01.ext` places files in chronological order while preserving context. For example, `20240315_sleep-study_control_survey_v02.csv` immediately tells you when it was created, which project it belongs to, the experimental condition, data type, and revision. Document your convention in the README so collaborators can parse filenames without asking.
+
+**Follow domain standards where they exist.** Many fields have established organizational conventions that tools and collaborators expect. Using these means your data works immediately with existing analysis pipelines and reviewers recognize the structure. Search [RDMkit](https://rdmkit.elixir-europe.org/your_domain) for standards in your domain.
+
+::: {.orc-grid-tools}
+::: {.orc-card-tool}
+<div class="orc-card-tool-icon"><img src="https://cdn.simpleicons.org/github" alt="GitHub"></div>
+
+#### [Research Project Template](https://github.com/lmu-osc/research-project-template)
+
+Standardized folder structure for research projects
+
+<details>
+<summary>Read more</summary>
+Fork this template to start projects with a consistent organization that separates raw data, processed data, code, and outputs.
+</details>
+:::
+
+::: {.orc-card-tool}
+<div class="orc-card-tool-icon"><img src="../../assets/img/lmu_osc_logo.jpg" alt="LMU OSC"></div>
+
+#### [Data Organization (Tutorial)](https://lmu-osc.github.io/FAIR-Data-Management/data-organisation.html)
+
+Folder structure and naming conventions
+
+<details>
+<summary>Read more</summary>
+Part of the FAIR Data Management tutorial.
+</details>
+:::
+
+::: {.orc-card-tool}
+<div class="orc-card-tool-icon"><i class="bi bi-book"></i></div>
+
+#### [RDMkit](https://rdmkit.elixir-europe.org/your_domain)
+
+Domain-specific data management guidance
+
+<details>
+<summary>Read more</summary>
+Find organizational standards and conventions specific to your research field.
+</details>
+:::
+:::
+
+### File Formats
+
+File format choices affect who can work with your data now and whether it remains readable in the future. Open formats have publicly documented specifications that anyone can implement, so many programs can read them and they remain accessible even if the original software disappears. Proprietary formats lock you into specific tools, complicate collaboration, and risk becoming unreadable if the company stops supporting them.
+
+**Keep raw data in its original format.** Whatever your instrument or source produces, preserve that original as your ground truth. Even if it is proprietary, you need it for verification and potential reprocessing.
+
+**Work in open formats.** For analysis, convert to open formats like CSV, JSON, or plain text. This makes your workflow reproducible, enables collaboration across different tools, and ensures your data can be shared. If conversion loses important information (metadata, precision, structure), document what is lost and keep both versions.
+
+**Be careful with spreadsheets.** Excel is convenient for data entry but causes real problems. It silently converts data: gene names like MARCH1 become dates, leading zeros in IDs disappear, and long numbers lose precision. Formatting (colors, merged cells) breaks machine-readability since scripts cannot see it. If you use spreadsheets for entry, keep them simple (one header row, one observation per row, no merged cells) and export to CSV immediately. Save CSVs with UTF-8 encoding to avoid character corruption when sharing across systems. For more guidance on spreadsheet best practices, see [The Turing Way](https://book.the-turing-way.org/reproducible-research/rdm/rdm-spreadsheets/) and [UC Davis DataLab](https://ucdavisdatalab.github.io/workshop_keeping_data_tidy/#spreadsheet-best-practices).
+
+**Check domain recommendations.** Your field likely has established conventions balancing openness with practical needs like performance or metadata preservation.
+
+Format issues often surface during quality control. The Quality Control panel below covers validation checks that can catch encoding problems, unexpected conversions, and structural inconsistencies early.
+
+::: {.orc-grid-tools}
+::: {.orc-card-tool}
+<div class="orc-card-tool-icon"><i class="bi bi-book"></i></div>
+
+#### [RDMkit](https://rdmkit.elixir-europe.org/your_domain)
+
+Domain-specific file format guidance
+
+<details>
+<summary>Read more</summary>
+Find recommended file formats and conventions for your research field.
+</details>
+:::
+:::
+
+### Documentation
+
+Without documentation, a dataset is just a collection of files. Six months from now, you will not remember what each column means, why certain values are missing, or how files relate to each other. Documentation makes your data usable by your future self, your collaborators, and anyone who might reuse it.
+
+**Create a README early and update it as you go.** Your README is the entry point to your project. Start it when you begin, not when preparing to publish. A good README answers the essential questions: **who** created the data, **what** it contains, **when** and **where** it was collected, **why** it was generated, **how** it was produced, and whether it **can be reused**. These answers let someone unfamiliar with your project understand and work with your data.
+
+**Create a codebook defining every variable.** A codebook (or data dictionary) makes your dataset self-explanatory. For each variable, document what it measures, its data type, valid values, units of measurement, and how missing data is coded. Use appropriate missing codes to distinguish why data is absent (declined to answer, not applicable, technical failure) since this distinction matters for analysis.
+
+::: {.orc-grid-tools}
+::: {.orc-card-tool}
+<div class="orc-card-tool-icon"><img src="https://cdn.simpleicons.org/github" alt="GitHub"></div>
+
+#### [Research Project Template](https://github.com/lmu-osc/research-project-template)
+
+README and codebook templates included
+
+<details>
+<summary>Read more</summary>
+Fork this template to start with pre-structured documentation files you can fill in as your project develops.
+</details>
+:::
+
+::: {.orc-card-tool}
+<div class="orc-card-tool-icon"><img src="../../assets/img/lmu_osc_logo.jpg" alt="LMU OSC"></div>
+
+#### [Data Documentation & Validation](https://lmu-osc.github.io/data-documentation-validation-R/)
+
+Comprehensive tutorial on documentation practices
+
+<details>
+<summary>Read more</summary>
+Learn to create effective READMEs, codebooks, and validation checks for your research data.
+</details>
+:::
+
+::: {.orc-card-tool}
+<div class="orc-card-tool-icon"><img src="../../assets/img/lmu_osc_logo.jpg" alt="LMU OSC"></div>
+
+#### [Data Documentation (Tutorial)](https://lmu-osc.github.io/FAIR-Data-Management/documentation.html)
+
+README files and data dictionaries
+
+<details>
+<summary>Read more</summary>
+Part of the FAIR Data Management tutorial.
+</details>
+:::
+:::
+
+### Standards
+
+Standards are community agreements on how to organize and describe research data. Using them means others in your field immediately understand your data. Three types of standards matter here:
+
+**Organizational standards** specify how to structure files and folders. Some fields have well-established conventions, like [BIDS](https://bids.neuroimaging.io/) for neuroimaging data. When such standards exist, use them. Your data will work immediately with existing tools, and collaborators will recognize the structure without explanation. If no standard exists for your domain, create a consistent structure and document it in your README.
+
+**Reporting guidelines** specify what methodological details to document for different study types. The [EQUATOR Network](https://www.equator-network.org/) maintains a searchable database of guidelines for clinical trials, observational studies, animal research, and many other study types. Following these ensures you capture everything others need to understand or replicate your work.
+
+**Metadata standards** define what descriptive information to record and how to structure it. Scientific metadata describes how your data was produced: equipment specifications, acquisition parameters, protocols followed. This is distinct from discovery metadata (titles, keywords, descriptions) which you will prepare when sharing in Phase 4. Your field has conventions for which parameters matter. [FAIRsharing](https://fairsharing.org/) catalogs metadata standards by discipline.
+
+**Think of your data as a first-class research output.** Comprehensive metadata transforms a project artifact into a reusable resource. Someone reanalyzing your data years later needs to understand exactly how it was produced.
+
+::: {.orc-grid-tools}
+::: {.orc-card-tool}
+<div class="orc-card-tool-icon"><i class="bi bi-search"></i></div>
+
+#### [FAIRsharing](https://fairsharing.org/)
+
+Registry of metadata standards by domain
+
+<details>
+<summary>Read more</summary>
+Search by discipline to find metadata standards, reporting guidelines, and data policies for your field.
+</details>
+:::
+
+::: {.orc-card-tool}
+<div class="orc-card-tool-icon"><i class="bi bi-book"></i></div>
+
+#### [RDMkit](https://rdmkit.elixir-europe.org/your_domain)
+
+Domain-specific metadata guidance
+
+<details>
+<summary>Read more</summary>
+Find metadata standards and requirements specific to your research field.
+</details>
+:::
+:::
+
+### Version Control
+
+Version control tracks changes to files over time. You can see what changed, when, and why. You can revert to previous versions. Collaborators can work without overwriting each other.
+
+**Git usually suffices for data files.** Text-based formats (CSV, JSON, plain text) and smaller binary files work well in standard Git repositories. You get a complete history of changes and can share easily via GitHub or GitLab.
+
+**Use specialized tools for large or frequently changing binary files.** Standard Git stores each version in full, so repositories become unwieldy with large datasets. Git LFS (Large File Storage) stores large files separately while keeping them tracked. Git-annex manages files across multiple storage locations. [DataLad](https://www.datalad.org/) builds on git-annex and works with standard Git workflows.
+
+::: {.orc-grid-tools}
+::: {.orc-card-tool}
+<div class="orc-card-tool-icon"><img src="../../assets/img/lmu_osc_logo.jpg" alt="LMU OSC"></div>
+
+#### [Introduction to Git](https://lmu-osc.github.io/Introduction-RStudio-Git-GitHub/)
+
+Version control fundamentals (2h)
+
+<details>
+<summary>Read more</summary>
+Learn Git basics integrated with RStudio and GitHub. No prior experience required.
+</details>
+:::
+
+::: {.orc-card-tool}
+<div class="orc-card-tool-icon"><i class="bi bi-hdd-stack"></i></div>
+
+#### [DataLad](https://www.datalad.org/)
+
+Version control for large datasets
+
+<details>
+<summary>Read more</summary>
+Track large datasets alongside code. Built on git-annex, integrates with Git workflows.
+</details>
+:::
+:::
 
 :::
 
@@ -60,22 +346,97 @@ something about SOP for data acquisition e.g. using machines and automatising wi
 
 
 <details class="orc-details-panel">
-<summary><i class="bi bi-shield-lock"></i> Anonymisation</summary>
+<summary><i class="bi bi-shield-lock"></i> Ethics & Privacy</summary>
+
+Research involving human participants requires ethics approval and data protection compliance. These are not bureaucratic hurdles but safeguards for the people contributing to your research. Address them before collecting any data.
+
+At LMU, submit ethics applications to the [Ethics Committee](https://www.lmu.de/en/about-lmu/structure/central-university-administration/committees-and-representatives/ethics-committee/) and allow 4-8 weeks for review. For data protection guidance, contact the [LMU Data Protection Officer](https://www.lmu.de/en/about-lmu/structure/central-university-administration/legal-matters/data-protection/) or [RDM Support](mailto:rdm@ub.uni-muenchen.de).
 
 ::: {.panel-tabset}
 
-### data anonymisation
+### Informed Consent
 
-modifying real data, removing identifiers, aggregation, ect
+Participants have the right to understand what they are agreeing to. Your consent form should explain the research purpose in plain language, describe what data you will collect and how you will protect it, specify who will have access and for how long, and make clear that participation is voluntary.
 
-### synthetic datasets
+**Use tiered consent when you plan to share data.** Some participants may consent to their data being used for your study but not shared publicly. Others may be comfortable with broader sharing. Giving options respects autonomy while maximizing what you can eventually share.
 
-generating simulated data based on the properties of the real dataset
+**Store consent forms separately from data.** The consent form links a name to participation. Keeping it with your data undermines any pseudonymization you apply.
+
+### Anonymization
+
+Anonymization protects privacy and determines what you can share. The distinction between pseudonymization and anonymization matters for GDPR compliance.
+
+**Remove direct identifiers during collection.** Names, addresses, ID numbers, photographs, email addresses. Replace these with codes.
+
+**Assess indirect identifiers carefully.** A combination of age, location, profession, and a rare condition might identify someone even without their name. Timestamps reveal patterns. Free-text responses often contain identifying details participants did not intend to share.
+
+**Pseudonymization** replaces identifiers with codes while retaining a key that links back to individuals. Pseudonymized data is still personal data under GDPR because re-identification is possible.
+
+**Anonymization** removes all possibility of re-identification. Only truly anonymized data falls outside GDPR scope. Achieving this is harder than it appears, especially with rich datasets.
+
+### GDPR Compliance
+
+Research at LMU must comply with EU data protection regulations. The core principles: have a lawful basis for processing personal data (usually consent or legitimate research interest), use data only for stated purposes, collect only what you need, delete data when you no longer need it, and protect it against unauthorized access.
+
+**In practice:** document your lawful basis, include data protection language in consent forms, use institutional storage rather than personal cloud services, restrict access to those who need it, and plan when and how you will delete data.
 
 :::
 
 </details>
 
 
+<details class="orc-details-panel">
+<summary><i class="bi bi-check2-square"></i> Quality Control</summary>
 
-Checklist
+Quality control catches problems before they propagate into your analysis. The practices here ensure your data is trustworthy and your exclusions are defensible.
+
+**Define criteria before looking at your data.** This prevents unconscious bias in what you keep and exclude, and demonstrates that your decisions are principled rather than convenient.
+
+::: {.panel-tabset}
+
+### Validation
+
+Validation checks whether your data meets specifications. Run checks during collection to catch problems immediately, after collection for systematic review, and after any processing to verify transformations worked correctly.
+
+**Automate what you can.** Check that data types are correct, values fall within expected ranges, required fields are populated, and formats are consistent. These checks should run automatically and flag problems for review.
+
+**Manual review catches what automation misses.** Sample your data and verify it against the source. Inspect outliers to determine whether they are errors or genuine extreme values. Look for suspicious patterns: survey responses that alternate predictably, reaction times that are impossibly fast.
+
+::: {.orc-grid-tools}
+::: {.orc-card-tool}
+<div class="orc-card-tool-icon"><img src="../../assets/img/lmu_osc_logo.jpg" alt="LMU OSC"></div>
+
+#### [Data Documentation & Validation](https://lmu-osc.github.io/data-documentation-validation-R/)
+
+Automated validation checks in R
+
+<details>
+<summary>Read more</summary>
+Learn to create validation rules and automated checks for your research data.
+</details>
+:::
+:::
+
+### Cleaning
+
+Data cleaning handles errors, inconsistencies, and missing values. The cardinal rule: never modify your raw data. All cleaning happens on copies.
+
+**Correct unambiguous errors.** Clear typos, obvious data entry mistakes. For ambiguous cases, flag them for review rather than making assumptions. Document your reasoning for every judgment call.
+
+**Handle missing data consistently.** Decide on a coding scheme (NA, -999, blank) and apply it uniformly. When you know why data is missing, record that information. It may matter for analysis.
+
+**Investigate outliers before acting.** An extreme value might be an error, or it might be genuine. Understand the cause before deciding whether to remove, transform, or retain it.
+
+**Write cleaning as a script.** A script documents exactly what you did and lets you reproduce it. Keep a decision log for choices that cannot be automated.
+
+### Exclusions
+
+Exclusion criteria specify which data points will be removed from analysis and why. Define these before you see your results.
+
+**Common exclusion criteria:** technical failures (equipment malfunction, incomplete recording), protocol violations (wrong procedure followed, participant did not comply), quality thresholds (too much missing data, failed attention checks), and participant criteria (did not meet stated inclusion criteria).
+
+**Document everything.** Record criteria before analysis begins. Report how many data points were excluded for each criterion. Plan sensitivity analyses comparing results with and without exclusions to show your findings are robust.
+
+:::
+
+</details>
