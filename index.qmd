@@ -27,6 +27,7 @@ include-after-body:
 include-in-header:
   - text: |
       <script src="/assets/javascript/clear_filter_button.js" defer></script>
+      <script src="assets/javascript/impact_counter.js" defer></script>
       <style>
       .quarto-title-block .quarto-title-banner {
         background-position-y: center;
@@ -200,12 +201,14 @@ include-in-header:
       }
 
       .testimonial-image img {
-        width: 120px;
-        height: 120px;
+        width: 180px;
+        aspect-ratio: 1 / 1;
         object-fit: cover;
         border-radius: 50%;
         border: 3px solid #2c5f8d;
+        display: block;
       }
+
       .testimonial-section {
         background-color: #3878b1ff;
         padding: 2.5rem 2rem;
@@ -228,6 +231,56 @@ include-in-header:
         color: #000;
       }
 
+
+      .newsletter-section {
+        background-color: #6194c1ff;
+        padding: 2.1rem 2rem;
+        margin: 1.2rem 0;
+      }
+ 
+      .newsletter-grid {
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+        max-width: 900px;
+        margin: 0 auto;
+        justify-content: center; 
+        padding: 2rem 1rem; 
+
+      }
+
+      .newsletter-grid .newsletter-icon i{
+        font-size: 6rem;
+        margin:0;
+        color: white; 
+      }
+
+
+      .newsletter-grid .newsletter-content strong {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 2.1rem;
+        margin:0;
+        color: white;
+      }
+
+      .newsletter-grid .newsletter-content p {
+        font-weight: 400;
+        font-size: 1.3rem;
+        color: white;
+        margin: 0.5rem 0 1rem 0;
+      }
+
+      .newsletter-content .btn {
+        font-size: 1.1rem;
+        padding: 0.75rem 2rem;
+        border-radius: 0.5rem;
+      }
+
+      .newsletter-content .btn:hover {
+        transform: translateY(-2px);
+        transition: all 0.2s ease;
+      }
       @media (max-width: 768px) {
         .testimonial-grid {
           flex-direction: column;
@@ -248,13 +301,13 @@ css: /custom-navbar.css
 
 The LMU Open Science Center is an interdisciplinary initiative promoting open, transparent, and reproducible research through training, meta-research, and community building.
 
-[Learn More](about/index.qmd){.btn .btn-primary} [Join Us]{.btn .btn-secondary}
+[About Us](about/index.qmd){.btn .btn-primary}
 
 :::
 :::
 
 ::: {.row .justify-content-center}
-## Upcoming news and events
+## Highlights
 ::: {.col-md-5}
 ::: {#news-carousel}
 :::
@@ -330,8 +383,8 @@ Offering consultations for open science adoption.
 
 ::: {.impact-metrics}
 ::: {.metric}
-::: {.metric-value}
-100+
+::: {.metric-value data-target="100+"}
+0
 :::
 ::: {.metric-label}
 Members
@@ -339,8 +392,8 @@ Members
 :::
 
 ::: {.metric}
-::: {.metric-value}
-50+
+::: {.metric-value data-target="50+"}
+0
 :::
 ::: {.metric-label}
 Events per year
@@ -348,8 +401,8 @@ Events per year
 :::
 
 ::: {.metric}
-::: {.metric-value}
-15+
+::: {.metric-value data-target="15+"} 
+0
 :::
 ::: {.metric-label}
 Publications on OS
@@ -357,8 +410,8 @@ Publications on OS
 :::
 
 ::: {.metric}
-::: {.metric-value}
-1000+
+::: {.metric-value data-target="1000+"} 
+0
 :::
 ::: {.metric-label}
 Researchers Trained
@@ -366,8 +419,8 @@ Researchers Trained
 :::
 
 ::: {.metric}
-::: {.metric-value}
-10+
+::: {.metric-value data-target="10"} 
+0
 :::
 ::: {.metric-label}
 Awards won
@@ -380,11 +433,7 @@ Awards won
 
 
 <!-- testimonial or dialogue section from someone famous -->
-::: {.testimonial-section}
-
 ::: {.testimonial-grid}
-
-
 ::: {.testimonial-content}
 > “Open Science at LMU has completely changed how I think about collaboration and research transparency.  
 > The summer school made it easy to adopt reproducible workflows from day one.”
@@ -398,4 +447,22 @@ Awards won
 
 :::
 
+
+<!-- newsletter section -->
+::: {.newsletter-section}
+::: {.newsletter-grid}
+::: {.newsletter-icon}
+<i class="bi bi-envelope-fill"></i>
 :::
+
+::: {.newsletter-content}
+**Be the first to know about OSC's latest events.**
+
+Sign up to our mailing list.
+
+[Subscribe](https://lists.lrz.de/mailman/listinfo/lmu-osc){.btn .btn-primary}
+:::
+
+:::
+:::
+
