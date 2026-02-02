@@ -3,41 +3,70 @@
 title: "Dr. Malika Ihle" 
 name: "Malika Ihle"
 academic_title: "Dr."
-position: "Scientific Coordinator of the OSC"
+position: "Scientific Coordinator"
 membertype: ["management", "staff"]
 photo: "images/malika_ihle.JPG"
-email: "malika.ihle@psy.lmu.de"
+email: "malika.ihle@lmu.de"
 display_weight_management: 2
 display_weight_staff: 1
-osc_staff_title: Scientific Coordinator of the OSC
-personal: "Malika Ihle is the LMU Open Science Center Coordinator, supporting the scientific board in developing a comprehensive approach to open research that extends across all disciplines, using both bottom-up and top-down strategies. Her role is to provide peer-to-peer training and develop an open research curriculum, coordinate grassroots initiatives and organise various events such as seminars and conferences, support meta-research collaborations, liaise with local, national (e.g. the German Reproducibility Network (GRN)), and international stakeholders to inform the design of incentives and policies, and co-develop a strategic plan to make the LMU Open Science Center a sustainable entity."
-links:
-  - label: "Personal Website"
-    url: "https://malikaihle.github.io"
-  - label: "LMU Profile"
-    url: "https://www.osc.uni-muenchen.de/about_us/coordinator/index.html"
+osc_staff_title: Scientific Coordinator
+personal: "Malika Ihle is the LMU Open Science Center Coordinator, developing a comprehensive approach to open research that extends across all disciplines, using both bottom-up and top-down strategies. Her role is to provide peer-to-peer training and develop an open research curriculum, coordinate grassroots initiatives and organise various events, support meta-research collaborations, liaise with local, national, and international stakeholders to inform the design of incentives and policies, and co-develop a strategic plan to make the LMU Open Science Center a sustainable entity."
 
 
 # Social media links - variable number
 social_media:
-  Bluesky: "https://bsky.app/profile/lmu-osc.bsky.social"
+  Bluesky: "https://bsky.app/profile/malikaihle.bsky.social"
   Linkedin: "https://www.linkedin.com/malika-ihle"
   GitHub: "https://github.com/malikaihle"
   ORCID: "https://orcid.org/0000-0002-3242-5981"
+  Mastodon: "https://scicomm.xyz/@MalikaIhle"
 
 # Mission statement paragraphs - variable number
 mission_statement:
-  - "Malika Ihle is the LMU Open Science Center Coordinator, supporting the scientific board in developing a comprehensive approach to open research that extends across all disciplines, using both bottom-up and top-down strategies. Her role is to provide peer-to-peer training and develop an open research curriculum, coordinate grassroots initiatives and organise various events such as seminars and conferences, support meta-research collaborations, liaise with local, national (e.g. the German Reproducibility Network (GRN)), and international stakeholders to inform the design of incentives and policies, and co-develop a strategic plan to make the LMU Open Science Center a sustainable entity."
+  - "Malika Ihle is the LMU Open Science Center Coordinator developing a comprehensive approach to open research that extends across all disciplines at LMU Munich, using both bottom-up and top-down strategies."
+  - "Her role is to provide peer-to-peer training and develop an open research curriculum,coordinate grassroots initiatives and organise various events, support meta-research collaborations, liaise with local, national, and international stakeholders to inform the design of incentives and policies, and co-develop a strategic plan to make the OSC a key sustainable entity benefiting LMU Munich"
+  - "Malika is the German Reproducibility Network ([GRN](https://reproducibilitynetwork.de/)) local network lead."
+  - "Prior to this, Malika was in a similar role for 2.5 years at the University of Oxford, coordinating Reproducible Research Oxford ([RROx](https://ox.ukrn.org/)) and acting as the UK Reproducibility Network ([UKRN](https://www.ukrn.org/)) local network lead."
+  - "Malika holds a PhD in Biology, and is a founding member of the Society for Open, Reliable, and Transparent Ecology and Evolutionary biology ([SORTEE](https://www.sortee.org/))."
 
 # Research interests - variable number
 research_interests:
-  - "Open Science"
-  - "Psychology"
-  - "Psychological Methods"
-  - "Data Sharing"
+  - "Research methodology training"
+  - "Preregistration"
+  - "Responsible research assessment"
+  - "Open research policy"
 
 # Publications - variable number
-publications: NULL
+publications: 
+  - year: 2017
+    title: "Striving for transparent and credible research: practical guidelines for behavioral ecologists."
+    authors: "Ihle M, Winney IS, Krystalli A & Croucher M."
+    journal: "Behavioral Ecology"
+    doi_url: "https://doi.org/10.1093/beheco/arx003"
+    
+  - year: 2021
+    title: "Towards open, reliable, and transparent ecology and evolutionary biology."
+    authors: "O’Dea RE, Parker TH, ..., Ihle M, ..., Nakagawa S"
+    journal: "BMC Biology"
+    doi_url: "https://doi.org/10.1186/s12915-021-01006-3"
+    
+  - year: 2023
+    title: "Eleven strategies for making reproducible research and open science training the norm at research institutions."
+    authors: "Kohrs FE, ..., Ihle M, ..., Weissgerber TL"
+    journal: "eLife"
+    doi_url: "https://doi.org/10.7554/eLife.89736"
+ 
+  - year: 2025
+    title: "Responsible Research Assessment I: Implementing DORA for hiring and promotion in psychology."
+    authors: "Schönbrodt F, Gärtner A, ..., Ihle M, ..., Leising D"
+    journal: "Meta-Psychology"
+    doi_url: "https://doi.org/10.15626/MP.2024.4601"
+    
+  - year: 2025
+    title: "Research methodology education in Europe: a multi-country, cross-disciplinary survey of current practices and perspectives."
+    authors: "Kniffert S, ..., Ihle M, ..., de Boer MR"
+    journal: " Research Integrity and Peer Review"
+    doi_url: "https://doi.org/10.1186/s41073-025-00183-x "
 ---
 
 
@@ -69,7 +98,10 @@ profile <- div(class = "people-profile",
     ),
     div(class = "people-info",
       p(class = "people-position", position),
-      p(class = "people-faculty", paste0("Department of ", faculty)),
+      if (!is.null(faculty) & faculty != "") {p(class = "people-faculty", paste0("Faculty of ", faculty))},
+      if (faculty == "" & !is.null(affiliate_organization)) {
+        p(class = "people-faculty", affiliate_organization)
+        },
       div(class = "people-contact", contact_items, social_links)
     )
   ),
@@ -82,6 +114,6 @@ profile <- div(class = "people-profile",
 )
 
 # Render the profile
-browsable(profile)  
+browsable(profile) 
 ```
 
