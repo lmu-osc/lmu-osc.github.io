@@ -39,7 +39,8 @@ website:
         # href: people/overview.qmd
         menu: 
           - people/management.qmd
-          - people/staff.qmd
+          - text: Staff
+            href: people/staff.qmd
           - people/scientific-board.qmd
           - people/advisors.qmd
           - people/members.qmd
@@ -154,7 +155,7 @@ website:
           contents:
             - text: "Management"
               href: people/management.qmd
-            - text: "Staff"
+            - text: "Staff & Research Assistants"
               href: people/staff.qmd 
             - text: "Scientific Board"
               href: people/scientific-board.qmd 
