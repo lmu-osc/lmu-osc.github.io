@@ -1,0 +1,85 @@
+---
+title: ""
+format: 
+  html:
+    css: individualnews_styles.css
+    page-layout: full
+
+pdf:
+  title: "July 2025 Newsletter"
+  description: "Our annual newsletter featuring the latest updates and achievements."
+  file: extra/newsletter_2025.pdf
+  thumbnail: extra/thumbnail.png
+---
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+
+```{=html}
+<div class="newsletter-container">
+  <header class="newsletter-header">
+    <h1><i class="fa-solid fa-newspaper"></i> Major News</h1>
+  </header>
+
+  <div class="content-grid">
+    <section class="news-section">
+      <h2><i class="fa-solid fa-circle-plus"></i> New Programs</h2>
+      <ul class="news-list">
+        <li>Train-the-Trainer Program</li>
+        <li>Switch to Open Program (SwOP)</li>
+      </ul>
+    </section>
+
+    <section class="news-section">
+      <h2><i class="fa-solid fa-users"></i> New OSC Scientific Board</h2>
+      <ul class="board-list">
+        <li><strong>Prof. Dr. Anna Kümpel</strong> (Communication)</li>
+        <li><strong>Dr. Sabine Hoffmann</strong> (Head of statistical consulting laboratory StaBLab)</li>
+        <li><strong>Prof. Dr. Nikolaus Plesnila</strong> (Neuroscience)</li>
+        <li><strong>Dr. Tobias Straub</strong> (Head of the Core Facility Bioinformatics)</li>
+        <li><strong>Prof. Dr. Alexander Wuttke</strong> (Politics)</li>
+      </ul>
+    </section>
+
+    <section class="news-section">
+      <h2><i class="fa-solid fa-trophy"></i> OSC Members News</h2>
+      <ul class="news-list">
+        <li>Prof. Dr. Anne-Laure Boulesteix awarded meta-research grant!</li>
+        <li>Guidelines about research data integrity by Dr. Elmar Spiegel</li>
+      </ul>
+    </section>
+
+    <section class="news-section">
+      <h2><i class="fa-solid fa-calendar-days"></i> Upcoming Events</h2>
+      <ul class="events-list">
+        <li><span class="event-date">August 7</span> Research Data Rescue Hackathon</li>
+        <li><span class="event-date">Sept 15-17</span> Open Science Summer School 2025: Public Lectures</li>
+      </ul>
+    </section>
+
+    <section class="news-section">
+      <h2><i class="fa-solid fa-clock-rotate-left"></i> Recent Event Reports</h2>
+      <ul class="news-list">
+        <li>"Open Access: From DEAL to Diamond"</li>
+        <li>Software Carpentry Workshops</li>
+      </ul>
+    </section>
+  </div>
+
+  <div class="download-section">
+    <div class="card card-news">
+      <a href="{{< meta pdf.file >}}" class="stretched-link" aria-label="Download {{< meta pdf.title >}}"></a>
+      <div class="card-body">
+        <img src="{{< meta pdf.thumbnail >}}" class="card-thumbnail" alt="Newsletter thumbnail">
+        <h3 class="card-title">{{< meta pdf.title >}}</h3>
+        <p class="card-text">{{< meta pdf.description >}}</p>
+      </div>
+      <div class="card-footer">
+        <span class="btn-primary">
+          <i class="bi bi-download me-2"></i>Download Newsletter (PDF)
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+```
