@@ -22,18 +22,18 @@
   path: https://lmu-osc.github.io/data-documentation-validation-R/
 
 
-- title: "TBD: Data Anonymity"
-  description: "Tutorial in progress..."
+- title: "TBA: Data Anonymity"
+  description: "Implementing and evaluating data anonymization techniques in R for safely sharing sensitive research data"
   image: "../images/data anonymity.svg"
   categories:
     - Data Anonymity
   content_category:
     - Data Management
   within_cat_order: 50
-  path: https://lmu-osc.github.io/
+  # path:
 
-- title: "TBD: Generating Synthetic Data"
-  description: "Tutorial in progress..."
+- title: "TBA: Generating Synthetic Data"
+  description: "Generating Synthetic Data in R and balancing utility and privacy-preserving data sharing"
   image: "../images/synthetic data.svg"
   categories:
     - Data Simulation
@@ -41,4 +41,4 @@
   content_category:
     - Data Management
   within_cat_order: 60
-  path: https://lmu-osc.github.io/synthetic-data-tutorial/
+  # path:
