@@ -234,7 +234,7 @@ details .callout { margin: .75rem 0; }
 .cycle-container svg { max-width: 100%; height: auto; }
 .cycle-container em { display: block; margin-top: 1rem; font-size: 1rem; color: var(--orc-gray-500); }
 
-.phase-menu-horizontal {
+/*.phase-menu-horizontal {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
@@ -272,7 +272,7 @@ details .callout { margin: .75rem 0; }
 
 .phase-btn-h:focus { outline: none; box-shadow: 0 0 0 3px rgba(0,136,58,.3); }
 .phase-btn-h i { font-size: 1.75rem; margin-bottom: .5rem; color: var(--orc-green); }
-.phase-btn-h span { line-height: 1.3; }
+.phase-btn-h span { line-height: 1.3; }*/
 
 /* ========================================
    8. SVG DIAGRAM
@@ -296,15 +296,20 @@ svg :is(text, tspan) { font-family: inherit !important; font-weight: bold; point
 /* ========================================
    9. BOOTSTRAP MODALS
    ======================================== */
+/* Define heading colors for each modal to match corresponding svg quadrants */
+#modalPhase1 { --phase-color: #0066ff; --phase-color-hover: #045bdc; }   
+#modalPhase2 { --phase-color: #cc0066; --phase-color-hover: #b9025d; }   
+#modalPhase3 { --phase-color: #ffc000; --phase-color-hover: #dca603; } 
+#modalPhase4 { --phase-color: #00c057; --phase-color-hover: #01a74c;}  
 
-[id^="modalPhase"] .modal-header { background: var(--orc-green); color: white; border-bottom: none; }
-[id^="modalPhase"] .modal-title { font-weight: 700; }
+[id^="modalPhase"] .modal-header { background: var(--phase-color); color: white; border-bottom: none; }
+[id^="modalPhase"] .modal-title { font-weight: 700;color:white; }
 [id^="modalPhase"] .btn-close { filter: invert(1) grayscale(100%) brightness(200%); opacity: .8; }
 [id^="modalPhase"] .btn-close:hover { opacity: 1; }
 [id^="modalPhase"] .modal-body { padding: 2rem; font-size: 1.125rem; line-height: 1.6; color: var(--orc-gray-600); }
 [id^="modalPhase"] .modal-footer { border-top: 1px solid var(--orc-gray-200); padding: 1rem 2rem; }
-[id^="modalPhase"] .modal-footer .btn-primary { background: var(--orc-green-dark); border-color: var(--orc-green-dark); padding: .5rem 1.5rem; font-weight: 600; }
-[id^="modalPhase"] .modal-footer .btn-primary:hover { background: var(--orc-green-darker); border-color: var(--orc-green-darker); }
+[id^="modalPhase"] .modal-footer .btn-primary { background: var(--phase-color); border-color: var(--phase-color); padding: .5rem 1.5rem; font-weight: 600; }
+[id^="modalPhase"] .modal-footer .btn-primary:hover { background: var(--phase-color-hover); border-color: var(--phase-color-hover); }
 
 /* ========================================
    10. PHASE HERO

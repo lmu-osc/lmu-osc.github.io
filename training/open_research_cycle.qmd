@@ -36,29 +36,6 @@ cat(readLines("images/os-cycle.svg", warn = FALSE), sep = "\n")
 
 </div>
 
-<!-- Horizontal Phase Button Strip -->
-<div class="phase-menu-horizontal">
-  <button type="button" class="phase-btn-h" data-bs-toggle="modal" data-bs-target="#modalPhase1">
-    <i class="bi bi-clipboard-data"></i>
-    <span>1. Plan & Design</span>
-  </button>
-
-  <button type="button" class="phase-btn-h" data-bs-toggle="modal" data-bs-target="#modalPhase2">
-    <i class="bi bi-hdd-network"></i>
-    <span>2. Collect & Manage</span>
-  </button>
-
-  <button type="button" class="phase-btn-h" data-bs-toggle="modal" data-bs-target="#modalPhase3">
-    <i class="bi bi-graph-up"></i>
-    <span>3. Analyze & Collaborate</span>
-  </button>
-
-  <button type="button" class="phase-btn-h" data-bs-toggle="modal" data-bs-target="#modalPhase4">
-    <i class="bi bi-share"></i>
-    <span>4. Preserve & Share</span>
-  </button>
-</div>
-
 <div style="text-align: center; margin-top: 4rem;">
   <a href="training.html" style="color: #00883A; text-decoration: none; font-weight: bold; font-size: 1.1rem;">
     <i class="bi bi-arrow-left"></i> Back to Training Overview
@@ -184,9 +161,9 @@ cat(readLines("images/os-cycle.svg", warn = FALSE), sep = "\n")
 </div>
 ```
 
-<!-- <script>
+<script>
 document.addEventListener("DOMContentLoaded", function() {
-  // Function to trigger modal
+
   function triggerModal(phaseId) {
     var modalId = '#modalPhase' + phaseId.split('-')[1];
     var modalEl = document.querySelector(modalId);
@@ -196,21 +173,24 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   }
 
-  // Add click listeners to SVG groups
   ['phase-1', 'phase-2', 'phase-3', 'phase-4'].forEach(function(id) {
     var el = document.getElementById(id);
-    if (el) {
-      el.addEventListener('click', function() {
+    if (!el) return;
+
+    el.addEventListener('click', function(e) {
+      e.preventDefault();      // 🚫 stop DOI navigation
+      e.stopPropagation();     // 🚫 stop bubbling to <a> in SVG
+      triggerModal(id);
+    });
+
+    el.addEventListener('keydown', function(e) {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        e.stopPropagation();
         triggerModal(id);
-      });
-      // Add keyboard accessibility
-      el.addEventListener('keypress', function(e) {
-        if (e.key === 'Enter' || e.key === ' ') {
-          e.preventDefault();
-          triggerModal(id);
-        }
-      });
-    }
+      }
+    });
   });
 });
-</script> -->
+</script>
+
