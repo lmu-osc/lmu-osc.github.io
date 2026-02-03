@@ -1,17 +1,14 @@
 ---
 title: "Principles"
-description: "From the replicability crisis to the credibility revolution"
+description: "From the **replicability crisis** to the **credibility revolution**"
 tutorial-home-order: 01
 image: "../images/principles.svg"
-categories:
-  - Replicability crisis
-  - Open research practices
 listing:
   type: default
   contents:
     - /**.qmd
-    # - principles-tutorials.yaml   # uncomment this line when tutorials are added to the principles-tutorials.yaml file
-  fields: [title, description, categories, image]
+    - principles-tutorials.yaml
+  fields: [title, description, categories, image, type]
   sort:
     - within_cat_order
 ---

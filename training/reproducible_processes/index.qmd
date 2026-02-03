@@ -1,22 +1,14 @@
 ---
-title: "Reproducible processes"
-description: "From programming to reproducible mansucripts"
+title: "Reproducible Processes"
+description: "From **programming** to **reproducible manuscripts**"
 tutorial-home-order: 04
 image: "../images/reproducible processes.svg"
-categories:
-  - R
-  - "{renv}"
-  - Git
-  - Quarto
-  - Zotero
-  - Redable code
-  - Reproducible protocols
 listing:
   type: default
   contents:
     - /**.qmd
     - reproducible-processes-tutorials.yaml
-  fields: [title, description, categories, image]
+  fields: [title, description, categories, image, type]
   sort:
     - within_cat_order
 ---
