@@ -1,6 +1,9 @@
-
-# use this file to define tutorials in the "principles" section that 
-# should not have their own page for e.g. an embedded video or other content
-
-# NOTE: if you add tutorials here, be sure to also update training/self_learning.qmd
-# to remove the line "- "!principles/principles-tutorials.yaml""
+- title: "Assessing Research Replicability"
+  description: Lessons learned from replicating experiments in cancer biology
+  image: "../images/assessing_research_replicability.tiff"
+  categories:
+    - Reproducibility
+  content_category:
+    - Principles
+  within_cat_order: 30
+  path: https://osf.io/dnym9/files/osfstorage

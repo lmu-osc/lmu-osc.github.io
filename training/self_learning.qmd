@@ -25,7 +25,6 @@ listing:
       - /*/**.qmd
       - "!**/index.qmd"
       - /*/*-tutorials.yaml
-      - "!principles/principles-tutorials.yaml"   # remove this line if tutorials are added to the principles-tutorials.yaml file
     fields: 
       - content_category
       - title
