@@ -33,6 +33,10 @@ include-in-header:
         background-position-y: center;
         height: 400px;
       }
+
+      .quarto-title-banner {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+      }
       
       /* Mission Statement Section Styling */
       .mission-statement-container {
@@ -306,18 +310,6 @@ The LMU Open Science Center is an interdisciplinary initiative promoting open, t
 :::
 :::
 
-::: {.row .justify-content-center}
-## Highlights
-::: {.col-md-5}
-::: {#news-carousel}
-:::
-:::
-
-::: {.col-md-5}
-::: {#events-carousel}
-:::
-:::
-:::
 
 <!-- activities --->
 ::: {.activities-container}
@@ -377,6 +369,25 @@ Offering consultations for open science adoption.
 :::
 
 
+
+
+<!-- testimonial or dialogue section from someone famous -->
+::: {.testimonial-grid}
+::: {.testimonial-content}
+> “Open Science at LMU has completely changed how I think about collaboration and research transparency. The summer school made it easy to adopt reproducible workflows from day one.”
+
+**— PhD Student, Life Sciences**
+:::
+
+::: {.testimonial-image}
+![](people/people/images/default.svg){alt="Testimonial portrait"}
+:::
+
+:::
+
+
+
+
 ::: {.impact-container}
 ::: {.impact-card}
 ## Impact at a Glance
@@ -432,19 +443,19 @@ Awards won
 ::: 
 
 
-<!-- testimonial or dialogue section from someone famous -->
-::: {.testimonial-grid}
-::: {.testimonial-content}
-> “Open Science at LMU has completely changed how I think about collaboration and research transparency.  
-> The summer school made it easy to adopt reproducible workflows from day one.”
 
-**— PhD Student, Life Sciences**
+
+::: {.row .justify-content-center}
+
+::: {.col-md-5}
+::: {#news-carousel}
+:::
 :::
 
-::: {.testimonial-image}
-![](people/people/images/default.svg){alt="Testimonial portrait"}
+::: {.col-md-5}
+::: {#events-carousel}
 :::
-
+:::
 :::
 
 
