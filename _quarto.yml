@@ -81,7 +81,7 @@ website:
         - section: "Training Tracks"
           href: training/index.qmd
           contents:
-            - section: "Self-Learning"
+            - section: "Self-Learning Catalog"
               href: training/self_learning.qmd 
               contents:
                 - text: "Principles"
@@ -109,9 +109,9 @@ website:
                   contents: 
                     - auto: "training/publishing_outputs/*.qmd"
                     - training/publishing_outputs/publishing-outputs-tutorials.yaml
-            - text: "Open Research Cycle"
+            - text: "Research Cycle Handbook"
               href: training/open_research_cycle.qmd
-            - text: "Train the Trainer"
+            - text: "Educator Toolkit"
               href: training/train_the_trainer.qmd
         
     - id: partners
