@@ -239,7 +239,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="../training/self_learning.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Self-Learning</span></a>
+ <span class="menu-text">Self-Learning Catalog</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -335,13 +335,13 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../training/open_research_cycle.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Open Research Cycle</span></a>
+ <span class="menu-text">Research Cycle Handbook</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../training/train_the_trainer.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Train the Trainer</span></a>
+ <span class="menu-text">Educator Toolkit</span></a>
   </div>
 </li>
       </ul>
@@ -376,7 +376,7 @@ ul.task-list li input[type="checkbox"] {
 
 <style>
 
-:root {
+.training-overview {
   --primary-color: #00883A;
   --primary-light: rgba(43, 134, 75, 0.1);
   --text-dark: #333333;
@@ -391,33 +391,21 @@ ul.task-list li input[type="checkbox"] {
   font-size: 1.1rem;
   color: #4a5568;
   line-height: 1.85;
-  margin-top: 0.5rem;
-}
-
-.training-overview li{
-  font-size: 1.1rem;
-  color: #4a5568;
-  line-height: 1.85;
-}
-
-.training-overview a,
-.training-overview i{
-  color: var(--primary-color);
-}
-
-.training-overview ul {
-  list-style-type: square;
-}
-
-.training-overview ul li::marker {
-  color: var(--primary-color);
+  margin-top: 3rem;
 }
 
 .training-card h3 {
   color: var(--primary-color);
   margin-top: 0;
-  margin-bottom:1.5rem;
+  margin-bottom:1rem;
   font-size: 1.3rem;
+  text-align:center;
+}
+
+.training-card p {
+  font-size: 0.98rem;
+  margin-top:0;
+  margin-bottom: 0.8rem;
   text-align:center;
 }
 
@@ -426,7 +414,7 @@ ul.task-list li input[type="checkbox"] {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 1.5rem;
-  margin-top:2rem;
+  margin-top:4rem;
   padding: 2rem;
   background-color: #f9fcf9;
   border-radius: 15px;
@@ -452,8 +440,9 @@ ul.task-list li input[type="checkbox"] {
 
 .training-card:hover {
   transform: translateY(-5px) scale(1.025);
-  border: 2px solid var(--primary-color);
-  box-shadow: 0 8px 32px rgba(43,134,75,0.15);
+  box-shadow:
+    0 8px 16px rgba(86, 100, 83, 0.15),
+    0 0 0 2px rgba(0, 136, 58, 0.12);
 }
 
 /*first card */
@@ -502,7 +491,7 @@ ul.task-list li input[type="checkbox"] {
 }
 .training-content.training-three .content-container{
   border: 1px solid var(--primary-color);
-  padding: 1rem;
+  padding: 0.6rem;
   border-radius: 6px;
   background: #ffffff;
   width: 100%;
@@ -510,8 +499,29 @@ ul.task-list li input[type="checkbox"] {
 }
 .training-arrow{
   text-align:center;
-  font-size:1.5rem;
+  font-size:1.1rem;
   color: var(--primary-color);
+}
+.training-osf {
+  text-align: center;
+}
+.training-osf p{
+  margin-top: 0;
+}
+.training-osf .osf-btn {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  border: none;
+  padding: 0.55rem 1.2rem;
+  border-radius: 8px;
+  transition: all 0.3s;
+  display:inline-block;
+}
+
+.training-osf.osf-btn:hover {
+  background-color: #016b2fff
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 4px 12px rgba(0, 136, 58, 0.25);
 }
 
 @media (max-width: 650px) {
@@ -525,17 +535,10 @@ ul.task-list li input[type="checkbox"] {
 
 </style>
 <div class="training-overview">
-<p>Our training material can be explored in different ways:</p>
-<ul>
-<li>You are a student or a researcher and know what you are looking for: search for a specific topic in our self-paced tutorial collections!</li>
-<li>You are a researcher wanting to explore all research practices along the research cycle: visit our open research cycle handbook!</li>
-<li>You are a student, researcher or university educator, follow or deliver our course!</li>
-</ul>
-<p>In addition, the material of all our lectures, workshops, symposium, and summer schools can be accessed here: <a href="https://osf.io/zjrhu/overview" target="_blank" rel="noopener"> OSF <i class="fa-solid fa-arrow-up-right-from-square fs-6"></i></a></p>
-</div>
 <div class="training-grid"> 
-    <div class="training-card" onclick="window.location.href='self_learning.html';">   
-      <h3>Self-learning material by topics</h3>
+    <div class="training-card" onclick="window.location.href='self_training.html';">   
+      <h3>Self-Learning Catalog</h3>
+      <p>For researchers or students looking to learn how to implement a specific research practice.</p>
       <div class="training-content training-one">
           <img src="images/wordcloud.png" alt="wordcloud image of tutorial categories">
       </div>
@@ -543,14 +546,16 @@ ul.task-list li input[type="checkbox"] {
 
 
     <div class="training-card" onclick="window.location.href='open_research_cycle.html';">
-        <h3>Open research cycle</h3>
+        <h3>Research Cycle Handbook</h3>
+        <p>Detailed guide to best research practices across the lifecycle of a project.</p>
         <div class="training-content training-two">
             <img src="../assets/img/OS-research-cycle.png" alt="OS_cycle">
         </div>
     </div>      
 
     <div class="training-card" onclick="window.location.href='train_the_trainer.html';">
-        <h3>Follow or deliver a course</h3>
+        <h3>Educator Toolkit</h3>
+        <p>Pedagogy training and ready-to-use materials for teaching open research practices.</p>
         <div class="training-content training-three mt-4">
             <div class="content-container">
               <h5 class="fw-bold">Open Science Foundations</h5>
@@ -575,6 +580,12 @@ ul.task-list li input[type="checkbox"] {
             </div>
          </div>
      </div>
+</div>
+
+<p>Material used in our events (lectures, workshops, symposium, and summer schools) can be accessed below. <br></p>
+<div class="training-osf">
+<p><a href="https://osf.io/zjrhu/overview" rel="noopener" class="btn btn-primary osf-btn"> OSF<i class="fa-solid fa-arrow-up-right-from-square fs-6"></i></a></p>
+</div>
 </div>
 
 
@@ -982,8 +993,8 @@ ul.task-list li input[type="checkbox"] {
   <div class="nav-page nav-page-previous">
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../training/self_learning.html" class="pagination-link" aria-label="Self-Learning">
-        <span class="nav-page-text">Self-Learning</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../training/self_learning.html" class="pagination-link" aria-label="Self-Learning Catalog">
+        <span class="nav-page-text">Self-Learning Catalog</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
