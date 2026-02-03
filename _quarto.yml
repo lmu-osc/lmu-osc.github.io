@@ -81,8 +81,8 @@ website:
         - section: "Training Tracks"
           href: training/index.qmd
           contents:
-            - section: "Self-Training"
-              href: training/self_training.qmd 
+            - section: "Self-Learning"
+              href: training/self_learning.qmd 
               contents:
                 - text: "Principles"
                   href: training/principles/index.qmd
