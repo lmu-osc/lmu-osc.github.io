@@ -109,9 +109,9 @@ website:
                   contents: 
                     - auto: "training/publishing_outputs/*.qmd"
                     - training/publishing_outputs/publishing-outputs-tutorials.yaml
-            - text: "Research cycle handbook"
+            - text: "Research Cycle Handbook"
               href: training/open_research_cycle.qmd
-            - text: "Educator toolkit"
+            - text: "Educator Toolkit"
               href: training/train_the_trainer.qmd
         
     - id: partners
