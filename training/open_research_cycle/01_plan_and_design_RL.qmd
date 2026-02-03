@@ -1,0 +1,201 @@
+---
+title: "Plan & Design"
+description: "Explore existing resources, write data management plans, design studies, and prepare preregistrations"
+phase_order: 1
+sidebar: open-research-cycle
+page-layout: full
+css: orc-styles.css
+title-block-style: none
+---
+
+<div class="orc-phase-hero-compact-container">
+<div class="orc-hero-cycle phase-1">
+{{< include ../images/os-cycle.svg >}}
+</div>
+<div class="orc-hero-body">
+<!-- TODO: update tagline -->
+<div class="orc-hero-tagline">Set the foundation for open, reproducible research</div>
+<div class="orc-hero-pills">
+<span><i class="bi bi-check2-circle"></i> Explore & reuse</span>
+<span><i class="bi bi-check2-circle"></i> Write plans</span>
+<span><i class="bi bi-check2-circle"></i> Simulate data</span>
+<span><i class="bi bi-check2-circle"></i> Preregister</span>
+</div>
+<div class="orc-hero-checkpoint"><i class="bi bi-people-fill"></i> End of phase checkpoint: Study plan presentation</div>
+</div>
+</div>
+
+
+<details class="orc-details-panel">
+<summary><i class="bi bi-search"></i> Explore and Reuse</summary>
+
+::: {.panel-tabset}
+
+### Articles
+
+3 lines of text
+
+::: {.callout-note appearance="simple" icon="mortarboard"}
+## Learn More: Reference Management
+[Introduction to Zotero](https://lmu-osc.github.io/introduction-to-zotero/) (1h) - Learn to organize literature with a free, open-source reference manager that integrates with Word, RStudio, and Google Docs.
+:::
+
+### Preregistrations
+
+3 lines of text
+
+::: {.orc-grid-tools}
+
+<div class="orc-card-tool">
+<div class="orc-card-tool-icon"><img src="https://cdn.simpleicons.org/osf" alt="OSF"></div>
+<h4>[OSF](https://osf.io/)</h4>
+<p>Flexible templates, embargoes, file storage. Widely used across fields.</p>
+</div>
+:::
+
+### Data
+
+3 lines of text
+
+
+::: {.orc-grid-tools}
+
+<div class="orc-card-tool">
+<div class="orc-card-tool-icon"><i class="bi bi-database"></i></div>
+<h4>[re3data](https://www.re3data.org/)</h4>
+<p>Registry of data repositories. Search across disciplines to find domain-specific options.</p>
+</div>
+
+:::
+
+
+### Code
+
+3 lines of text
+
+::: {.orc-grid-tools}
+<div class="orc-card-tool">
+<div class="orc-card-tool-icon"><img src="https://cdn.simpleicons.org/github" alt="GitHub"></div>
+<h4>[GitHub](https://github.com/) / [GitLab](https://gitlab.com/)</h4>
+<p>Version control platforms for code collaboration with issue tracking.</p>
+<a href="https://lmu-osc.github.io/Introduction-RStudio-Git-GitHub/" class="orc-card-tool-badge recommended">Tutorial available</a>
+</div>
+:::
+
+:::
+
+</details>
+
+
+<details class="orc-details-panel">
+<summary><i class="bi bi-shield-check"></i> Legal Requirements</summary>
+
+::: {.panel-tabset}
+
+### LMU guidelines
+
+3 lines of text
+
+
+
+### Funders
+
+3 lines of text
+
+
+
+### Ethics
+
+3 lines of text
+
+
+:::
+
+</details>
+
+
+
+<details class="orc-details-panel">
+<summary><i class="bi bi-lightbulb"></i> <i class="bi bi-clipboard-check"></i> Research Data Management Plans</summary>
+
+A Data Management Plan (DMP) documents how you will handle research data throughout your project. Write it before your ethics submission, since the content overlaps significantly and most funders require one. Writing a DMP prompts you to think through decisions you might otherwise leave implicit, and documents them using standard terminology.
+
+#### <i class="bi bi-list-check"></i> Your DMP will address:
+
+- **What data** will you collect or generate (types, formats, volume, sources)?
+- **How will you describe it** (metadata standards, documentation practices)?
+- **How will you organize files** (naming conventions, folder structure, versioning)?
+- **Where will you store it** (locations, backups, access controls)?
+- **How will you ensure quality** (validation checks, error-handling)?
+- **How will you share outputs** (repositories, licenses, embargo periods)?
+- **What constraints apply** (consent, anonymization, GDPR, data use agreements)?
+
+The specific questions vary by discipline, data type, and funder requirements. DMP tools like RDMO guide you through the relevant questions with funder-specific templates. Your DMP is a living document: start with what you know, and the rest of the cycle will help you refine the details as your project develops.
+
+**See example DMPs:** [DMPonline public plans](https://dmponline.dcc.ac.uk/public_plans) | [Argos published DMPs](https://argos.openaire.eu/explore-plans) | [RIOjournal DMPs](https://riojournal.com/browse_journal_articles.php?form_name=filter_articles&selfurl=&backurl=&sortby=0&journal_id=17&search_hidden=&search_in_=0&search_in_hidden=&alerts_subject_cats=&alerts_sd498444d0a_publishing_status=&section_type%5B%5D=231)
+
+::: {.orc-two-column}
+
+::: {.orc-column}
+#### <i class="bi bi-mortarboard"></i> LEARN MORE
+
+<div class="orc-card-tool">
+<div class="orc-card-tool-icon"><img src="../../assets/img/lmu_osc_logo.jpg" alt="LMU OSC"></div>
+<h4>[FAIR Data Management](https://lmu-osc.github.io/FAIR-Data-Management/)</h4>
+<p>Includes a chapter on writing DMPs (2h total)</p>
+<a href="https://lmu-osc.github.io/FAIR-Data-Management/dmp.html" class="orc-card-tool-badge recommended">DMP chapter</a>
+</div>
+:::
+
+::: {.orc-column}
+#### <i class="bi bi-tools"></i> TOOLS
+
+<div class="orc-card-tool">
+<div class="orc-card-tool-icon"><img src="https://rdmo.readthedocs.io/en/latest/_static/RDMO-logo.png" alt="RDMO"></div>
+<h4>[RDMO](https://rdmo.ub.lmu.de/)</h4>
+<p>Funder-compliant templates (DFG, ERC, Horizon Europe)</p>
+<a href="https://rdmo.ub.lmu.de/" class="orc-card-tool-badge recommended">LMU supported</a>
+</div>
+:::
+
+:::
+
+</details>
+
+
+
+<details class="orc-details-panel">
+<summary><i class="bi bi-graph-up"></i> Study Design & Power Analysis</summary>
+
+::: {.panel-tabset}
+
+### Pre-analysis planning
+
+3 lines of text
+
+::: {.orc-grid-tools}
+
+<div class="orc-card-tool">
+<div class="orc-card-tool-icon"><img src="https://cdn.simpleicons.org/osf" alt="OSF"></div>
+<h4>[OSF](https://osf.io/)</h4>
+<p>Flexible templates, embargoes, file storage. Widely used across fields.</p>
+</div>
+:::
+
+### Simulation of Data
+
+3 lines of text
+
+
+
+### Power analyses
+
+3 lines of text
+
+
+:::
+
+
+</details>
+
+Checklist

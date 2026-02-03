@@ -1,0 +1,88 @@
+---
+title: "Analyze & Collaborate"
+description: "Create reproducible analyses, document workflows, collaborate effectively, and ensure computational reproducibility"
+phase_order: 3
+sidebar: open-research-cycle
+page-layout: full
+css: orc-styles.css
+title-block-style: none
+---
+
+<div class="orc-phase-hero-compact-container">
+<div class="orc-hero-cycle phase-3">
+{{< include ../images/os-cycle.svg >}}
+</div>
+<!-- TODO: Update tagline and pills -->
+<div class="orc-hero-body">
+<div class="orc-hero-tagline">Make your analysis reproducible and transparent</div>
+<div class="orc-hero-pills">
+<span><i class="bi bi-check2-circle"></i> Reproducible Manuscript</span>
+<span><i class="bi bi-check2-circle"></i> Readable code</span>
+<span><i class="bi bi-check2-circle"></i> Documentation</span>
+</div>
+<div class="orc-hero-checkpoint"><i class="bi bi-people-fill"></i> End of phase checkpoint: Repo & code peer-review</div>
+</div>
+</div>
+
+
+<details class="orc-details-panel">
+<summary><i class="bi bi-gear-wide-connected"></i> Reproducible Data Processing & Analysis</summary>
+
+::: {.panel-tabset}
+
+### programming
+
+3 lines of text
+
+R tuto card
+
+readable code lecture card
+
+### version control
+
+3 lines of text
+
+Git tuto card
+
+github tuto card
+
+gitlab lrz LMU supported tool
+
+### computational environement management
+
+text
+
+renv tuto card
+
+docker tool card and/or some others or none but mention?
+
+
+### Documentation
+
+redable lecture card again
+data dictionary card
+readme from code publishing? a bit too intense for this stage tho but something about internal, work in progress read me
+
+
+:::
+
+</details>
+
+
+<details class="orc-details-panel">
+<summary><i class="bi bi-file-earmark-richtext"></i> Reproducible Reporting</summary>
+
+cards or tabs about 
+
+reproducible analyses report with quarto
+
+reproducible manuscripts with quarto, zotero
+
+reproducible presentation with quarto
+
+reproducible websites with quarto
+
+</details>
+
+
+checklist
