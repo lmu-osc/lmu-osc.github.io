@@ -27,12 +27,13 @@ include-after-body:
 include-in-header:
   - text: |
       <script src="/assets/javascript/clear_filter_button.js" defer></script>
+      <script src="assets/javascript/impact_counter.js" defer></script>
       <style>
       .quarto-title-block .quarto-title-banner {
         background-position-y: center;
         height: 400px;
       }
-      
+
       .quarto-title-banner {
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
       }
@@ -41,6 +42,7 @@ include-in-header:
       .mission-statement-container {
         display: flex;
         justify-content: center;
+        margin-bottom: 3rem;
       }
       
       .mission-statement-card {
@@ -73,6 +75,7 @@ include-in-header:
         color: #333;
         text-align: center;
         margin: 0;
+        margin-bottom: 1.5rem;
       }
       
       /* Impact Metrics Section Styling */
@@ -126,20 +129,174 @@ include-in-header:
         line-height: 1.5;
         letter-spacing: 0.3px;
       }
-      </style>
-      <link href="/assets/bootstrap-5.3.8-dist/css/bootstrap.min.css" rel="stylesheet">
+            
+      .row h2 {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #2c5f8d;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        text-align: center;
+        margin-bottom: 2.5rem;
+        padding-left: 2em;
+      }
+
+      .activities-container {
+        padding:3rem;
+      }
+
+      /* Card */
+      .activities-card {
+        background-color: #2c5f8d;
+        color: white;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 1rem 1.5rem 0;
+      }
+
+      .activities-card i {
+        font-size: 2.4rem;
+        margin-bottom: 0.5rem;
+        display: block;
+        text-align: center;
+        }
+
+      .activities-card p,
+      .activities-card {
+        font-size: 0.98rem;
+        line-height: 1.4;
+        text-align:center;
+      }
+
+      .activities-link {
+        display:flex;
+        flex-direction: column;
+        margin-top: auto;
+        background-color: #e6e6e6;
+        padding: 0.75rem 1rem;
+        margin-left: -1.5rem;
+        margin-right: -1.5rem;
+        transition: background-color 0.3s ease;
+
+      }
+
+      .activities-link a {
+        color: #2c5f8d;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content:center;
+        }
+      .activities-link:hover{
+        background-color: #d2d2d2ff;
+      }
+      .activities-link a:hover{
+        text-decoration: underline;
+      }
+
+
+      .testimonial-grid {
+        display: flex;
+        align-items: center;
+        gap: 2.5rem;
+        max-width: 900px;
+        margin: 0 auto;
+      }
+
+      .testimonial-image img {
+        width: 180px;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 3px solid #2c5f8d;
+        display: block;
+      }
+
+      .testimonial-section {
+        background-color: #3878b1ff;
+        padding: 2.5rem 2rem;
+        margin: 1rem 0;
+      }
+
+      .testimonial-section blockquote {
+        margin: 0;
+        font-style: italic;
+        font-size: 1.05rem;
+        line-height: 1.6;
+        color: #333;
+      }
+
+      .testimonial-section strong {
+        display: block;
+        margin-top: 1.25rem;
+        font-style: normal;
+        font-weight: 600;
+        color: #000;
+      }
+
+
+      .newsletter-section {
+        background-color: #6194c1ff;
+        padding: 2.1rem 2rem;
+        margin: 1.2rem 0;
+      }
+ 
+      .newsletter-grid {
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+        max-width: 900px;
+        margin: 0 auto;
+        justify-content: center; 
+        padding: 2rem 1rem; 
+
+      }
+
+      .newsletter-grid .newsletter-icon i{
+        font-size: 6rem;
+        margin:0;
+        color: white; 
+      }
+
+
+      .newsletter-grid .newsletter-content strong {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 2.1rem;
+        margin:0;
+        color: white;
+      }
+
+      .newsletter-grid .newsletter-content p {
+        font-weight: 400;
+        font-size: 1.3rem;
+        color: white;
+        margin: 0.5rem 0 1rem 0;
+      }
+
+      .newsletter-content .btn {
+        font-size: 1.1rem;
+        padding: 0.75rem 2rem;
+        border-radius: 0.5rem;
+      }
+
+      .newsletter-content .btn:hover {
+        transform: translateY(-2px);
+        transition: all 0.2s ease;
+      }
+      @media (max-width: 768px) {
+        .testimonial-grid {
+          flex-direction: column;
+          text-align: center;
+        }
+      }
+
+        </style>
+        <link href="/assets/bootstrap-5.3.8-dist/css/bootstrap.min.css" rel="stylesheet">
 css: /custom-navbar.css
 ---
 
-
-
-
-
-::: {.column-margin}
-
-Custom join us section here?
-
-:::
 
 
 ::: {.mission-statement-container}
@@ -147,8 +304,89 @@ Custom join us section here?
 ## Mission Statement
 
 The LMU Open Science Center is an interdisciplinary initiative promoting open, transparent, and reproducible research through training, meta-research, and community building.
+
+[About Us](about/index.qmd){.btn .btn-primary}
+
 :::
 :::
+
+
+<!-- activities --->
+::: {.activities-container}
+::: {.row}
+
+## Our Activities
+
+::: {.col-md-3}
+::: {.activities-card}
+<i class="bi bi-calendar"></i>
+
+Explore upcoming and past events from the OSC community.
+
+::: {.activities-link}
+[View our events](events/index.qmd) 
+:::
+:::
+:::
+
+::: {.col-md-3}
+::: {.activities-card}
+<i class="bi bi-people"></i>
+
+Building and supporting the OSC community across disciplines.
+
+::: {.activities-link}
+[Meet our people](people/members.qmd) 
+:::
+:::
+:::
+
+::: {.col-md-3}
+::: {.activities-card}
+<i class="bi bi-journal-bookmark"></i>
+
+Providing training and guidance on open science practices.
+
+::: {.activities-link}
+[Explore trainings](training/index.qmd)
+:::
+:::
+:::
+
+::: {.col-md-3}
+::: {.activities-card}
+<i class="bi bi-tools"></i>
+
+Offering consultations for open science adoption.
+
+::: {.activities-link}
+[Reach out](training/index.qmd) 
+:::
+:::
+:::
+
+:::
+:::
+
+
+
+
+<!-- testimonial or dialogue section from someone famous -->
+::: {.testimonial-grid}
+::: {.testimonial-content}
+> “Open Science at LMU has completely changed how I think about collaboration and research transparency. The summer school made it easy to adopt reproducible workflows from day one.”
+
+**— PhD Student, Life Sciences**
+:::
+
+::: {.testimonial-image}
+![](people/people/images/default.svg){alt="Testimonial portrait"}
+:::
+
+:::
+
+
+
 
 ::: {.impact-container}
 ::: {.impact-card}
@@ -156,8 +394,8 @@ The LMU Open Science Center is an interdisciplinary initiative promoting open, t
 
 ::: {.impact-metrics}
 ::: {.metric}
-::: {.metric-value}
-100+
+::: {.metric-value data-target="100+"}
+0
 :::
 ::: {.metric-label}
 Members
@@ -165,8 +403,8 @@ Members
 :::
 
 ::: {.metric}
-::: {.metric-value}
-50+
+::: {.metric-value data-target="50+"}
+0
 :::
 ::: {.metric-label}
 Events per year
@@ -174,8 +412,8 @@ Events per year
 :::
 
 ::: {.metric}
-::: {.metric-value}
-15+
+::: {.metric-value data-target="15+"} 
+0
 :::
 ::: {.metric-label}
 Publications on OS
@@ -183,13 +421,23 @@ Publications on OS
 :::
 
 ::: {.metric}
-::: {.metric-value}
-1000+
+::: {.metric-value data-target="1000+"} 
+0
 :::
 ::: {.metric-label}
 Researchers Trained
 :::
 :::
+
+::: {.metric}
+::: {.metric-value data-target="10"} 
+0
+:::
+::: {.metric-label}
+Awards won
+:::
+:::
+
 :::
 :::
 ::: 
@@ -197,16 +445,35 @@ Researchers Trained
 
 
 
+::: {.row .justify-content-center}
 
-
-::: {.row}
-::: {.col-md-6}
+::: {.col-md-5}
 ::: {#news-carousel}
 :::
 :::
 
-::: {.col-md-6}
+::: {.col-md-5}
 ::: {#events-carousel}
 :::
 :::
 :::
+
+
+<!-- newsletter section -->
+::: {.newsletter-section}
+::: {.newsletter-grid}
+::: {.newsletter-icon}
+<i class="bi bi-envelope-fill"></i>
+:::
+
+::: {.newsletter-content}
+**Be the first to know about OSC's latest events.**
+
+Sign up to our mailing list.
+
+[Subscribe](https://lists.lrz.de/mailman/listinfo/lmu-osc){.btn .btn-primary}
+:::
+
+:::
+:::
+
