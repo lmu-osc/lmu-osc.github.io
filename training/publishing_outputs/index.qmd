@@ -1,17 +1,14 @@
 ---
 title: "Publishing Outputs"
-description: "Sharing data, code, and article"
+description: "From sharing **data** and **code** to **publishing articles**"
 tutorial-home-order: 05
 image: "../images/publishing outputs.svg"
-categories:
-  - Open Access
-  - Code publishing
 listing:
   type: default
   contents:
     - /**.qmd
     - publishing-outputs-tutorials.yaml
-  fields: [title, description, categories, image]
+  fields: [title, description, categories, image, type]
   sort:
     - within_cat_order
 ---
