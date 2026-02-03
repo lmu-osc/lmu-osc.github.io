@@ -8,7 +8,7 @@ listing:
   contents:
     - /**.qmd
     - study-planning-tutorials.yaml
-  fields: [title, description, categories, image]
+  fields: [title, description, categories, image, type]
   sort:
     - within_cat_order
 ---

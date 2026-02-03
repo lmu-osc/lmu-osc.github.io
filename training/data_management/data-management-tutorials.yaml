@@ -10,6 +10,8 @@
     - Data Management
   within_cat_order: 20
   path: "https://lmu-osc.github.io/FAIR-Data-Management/"
+  type: Self-Paced Tutorial
+    
 
 - title: "Data Documentation & Validation in R"
   description:  How to document, summarize, and validate your research data using R.
@@ -20,7 +22,7 @@
     - Data Management
   within_cat_order: 30
   path: https://lmu-osc.github.io/data-documentation-validation-R/
-
+  type: Self-Paced Tutorial
 
 - title: "TBA: Data Anonymity"
   description: "Implementing and evaluating data anonymization techniques in R for safely sharing sensitive research data"
@@ -31,6 +33,7 @@
     - Data Management
   within_cat_order: 50
   # path:
+  type: Self-Paced Tutorial
 
 - title: "TBA: Generating Synthetic Data"
   description: "Generating Synthetic Data in R and balancing utility and privacy-preserving data sharing"
@@ -42,3 +45,4 @@
     - Data Management
   within_cat_order: 60
   # path:
+  type: Self-Paced Tutorial

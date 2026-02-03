@@ -8,9 +8,7 @@ listing:
   contents:
     - /**.qmd
     - data-management-tutorials.yaml
-  fields: [title, description, categories, image]
+  fields: [title, description, categories, image, type]
   sort:
     - within_cat_order
 ---
-
-

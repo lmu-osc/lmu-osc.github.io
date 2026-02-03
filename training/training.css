@@ -10,3 +10,14 @@
   text-decoration: underline;
   text-decoration-color: #00883A;
 }
+
+#listing-listing .metadata {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#listing-listing .metadata .metadata-value.listing-type {
+  font-size: 1.3em;
+}
