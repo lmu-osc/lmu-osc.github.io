@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="From programming to reproducible mansucripts">
+<meta name="description" content="From programming to reproducible manuscripts">
 
-<title>Reproducible processes – LMU Open Science Center</title>
+<title>Reproducible Processes – LMU Open Science Center</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -84,9 +84,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title','listing-description','listing-categories','listing-image',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-title','listing-description','listing-categories','listing-image','listing-type',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-title","listing-description","listing-image","listing-categories","listing-content_category","listing-within_cat_order"],
+      searchColumns: ["listing-title","listing-description","listing-image","listing-categories","listing-content_category","listing-within_cat_order","listing-type"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -275,7 +275,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../training/index.html">Training Tracks</a></li><li class="breadcrumb-item"><a href="../../training/self_training.html">Self-Training</a></li><li class="breadcrumb-item"><a href="../../training/reproducible_processes/index.html">Reproducible Processes</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../training/index.html">Training Tracks</a></li><li class="breadcrumb-item"><a href="../../training/self_learning.html">Self-Learning</a></li><li class="breadcrumb-item"><a href="../../training/reproducible_processes/index.html">Reproducible Processes</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -301,8 +301,8 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../../training/self_training.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Self-Training</span></a>
+            <a href="../../training/self_learning.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Self-Learning</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -420,23 +420,14 @@ window.Quarto = {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../training/index.html">Training Tracks</a></li><li class="breadcrumb-item"><a href="../../training/self_training.html">Self-Training</a></li><li class="breadcrumb-item"><a href="../../training/reproducible_processes/index.html">Reproducible Processes</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../training/index.html">Training Tracks</a></li><li class="breadcrumb-item"><a href="../../training/self_learning.html">Self-Learning</a></li><li class="breadcrumb-item"><a href="../../training/reproducible_processes/index.html">Reproducible Processes</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Reproducible processes</h1>
-  <div class="quarto-categories">
-    <div class="quarto-category">R</div>
-    <div class="quarto-category">{renv}</div>
-    <div class="quarto-category">Git</div>
-    <div class="quarto-category">Quarto</div>
-    <div class="quarto-category">Zotero</div>
-    <div class="quarto-category">Redable code</div>
-    <div class="quarto-category">Reproducible protocols</div>
-  </div>
-  </div>
+<h1 class="title">Reproducible Processes</h1>
+</div>
 
 <div>
   <div class="description">
-    From programming to reproducible mansucripts
+    From <strong>programming</strong> to <strong>reproducible manuscripts</strong>
   </div>
 </div>
 
@@ -480,6 +471,9 @@ window.Quarto = {
 </div>
 <div class="metadata">
 <a href="https://lmu-osc.github.io/introduction-to-R/" class="no-external">
+<div class="metadata-value listing-type">
+Self-Paced Tutorial
+</div>
 </a>
 </div>
 </div>
@@ -506,6 +500,9 @@ window.Quarto = {
 </div>
 <div class="metadata">
 <a href="https://lmu-osc.github.io/Introduction-RStudio-Git-GitHub/" class="no-external">
+<div class="metadata-value listing-type">
+Self-Paced Tutorial
+</div>
 </a>
 </div>
 </div>
@@ -534,10 +531,13 @@ window.Quarto = {
 </div>
 <div class="metadata">
 <a href="https://lmu-osc.github.io/Collaborative-RStudio-GitHub/" class="no-external">
+<div class="metadata-value listing-type">
+Self-Paced Tutorial
+</div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="3" data-categories="R2l0">
+<div class="quarto-post image-right" data-index="3" data-categories="R2l0JTJDR2l0SHVi">
 <div class="thumbnail"><a href="" class="no-external">
 
 <img loading="lazy" src="../images/advanced git.svg" class="thumbnail-image">
@@ -550,6 +550,8 @@ window.Quarto = {
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('R2l0'); return false;">Git</div>
+
+<div class="listing-category" onclick="window.quartoListingCategory('R2l0SHVi'); return false;">GitHub</div>
 
 </div>
 <div class="delink listing-description"><a href="" class="no-external">
@@ -584,6 +586,9 @@ window.Quarto = {
 </div>
 <div class="metadata">
 <a href="https://lmu-osc.github.io/introduction-to-Quarto/" class="no-external">
+<div class="metadata-value listing-type">
+Self-Paced Tutorial
+</div>
 </a>
 </div>
 </div>
@@ -610,6 +615,9 @@ window.Quarto = {
 </div>
 <div class="metadata">
 <a href="https://lmu-osc.github.io/introduction-to-zotero/" class="no-external">
+<div class="metadata-value listing-type">
+Self-Paced Tutorial
+</div>
 </a>
 </div>
 </div>
@@ -634,6 +642,9 @@ window.Quarto = {
 </div>
 <div class="metadata">
 <a href="https://lmu-osc.github.io/introduction-to-renv/" class="no-external">
+<div class="metadata-value listing-type">
+Self-Paced Tutorial
+</div>
 </a>
 </div>
 </div>

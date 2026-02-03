@@ -84,7 +84,7 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title','listing-description','listing-categories','listing-image',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-title','listing-description','listing-categories','listing-image','listing-type',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
       searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
     };
@@ -275,7 +275,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../training/index.html">Training Tracks</a></li><li class="breadcrumb-item"><a href="../../training/self_training.html">Self-Training</a></li><li class="breadcrumb-item"><a href="../../training/data_management/index.html">Data Management</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../training/index.html">Training Tracks</a></li><li class="breadcrumb-item"><a href="../../training/self_learning.html">Self-Learning</a></li><li class="breadcrumb-item"><a href="../../training/data_management/index.html">Data Management</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -301,8 +301,8 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../../training/self_training.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Self-Training</span></a>
+            <a href="../../training/self_learning.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Self-Learning</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -420,20 +420,14 @@ window.Quarto = {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../training/index.html">Training Tracks</a></li><li class="breadcrumb-item"><a href="../../training/self_training.html">Self-Training</a></li><li class="breadcrumb-item"><a href="../../training/data_management/index.html">Data Management</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../training/index.html">Training Tracks</a></li><li class="breadcrumb-item"><a href="../../training/self_learning.html">Self-Learning</a></li><li class="breadcrumb-item"><a href="../../training/data_management/index.html">Data Management</a></li></ol></nav>
 <div class="quarto-title">
 <h1 class="title">Data Management</h1>
-  <div class="quarto-categories">
-    <div class="quarto-category">Open data</div>
-    <div class="quarto-category">FAIR data</div>
-    <div class="quarto-category">Data anonymity</div>
-    <div class="quarto-category">Synthetic data</div>
-  </div>
-  </div>
+</div>
 
 <div>
   <div class="description">
-    From preserving anonymity to FAIR data sharing
+    From preserving <strong>anonymity</strong> to <strong>FAIR data sharing</strong>
   </div>
 </div>
 
@@ -456,7 +450,7 @@ window.Quarto = {
 
 <div class="quarto-listing quarto-listing-container-default" id="listing-listing">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="T3BlbiUyMGRhdGE=" data-listing-file-modified-sort="1770041899631" data-listing-reading-time-sort="1" data-listing-word-count-sort="46">
+<div class="quarto-post image-right" data-index="0" data-categories="T3BlbiUyMERhdGE=" data-listing-file-modified-sort="1770111216478" data-listing-reading-time-sort="1" data-listing-word-count-sort="46">
 <div class="thumbnail"><a href="../../training/data_management/open_data.html" class="no-external">
 
 <img loading="lazy" src="../../training/images/open data.svg" class="thumbnail-image">
@@ -468,7 +462,7 @@ window.Quarto = {
 </h3>
 <div class="listing-categories">
 
-<div class="listing-category" onclick="window.quartoListingCategory('T3BlbiUyMGRhdGE='); return false;">Open data</div>
+<div class="listing-category" onclick="window.quartoListingCategory('T3BlbiUyMERhdGE='); return false;">Open Data</div>
 
 </div>
 <div class="delink listing-description"><a href="../../training/data_management/open_data.html" class="no-external">
@@ -477,10 +471,13 @@ window.Quarto = {
 </div>
 <div class="metadata">
 <a href="../../training/data_management/open_data.html" class="no-external">
+<div class="metadata-value listing-type">
+Lecture
+</div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-categories="RkFJUiUyMGRhdGElMkNEYXRhJTIwbWFuYWdlbWVudCUyQ0RvY3VtZW50YXRpb24=">
+<div class="quarto-post image-right" data-index="1" data-categories="RkFJUiUyMGRhdGElMkNEYXRhJTIwTWFuYWdlbWVudCUyQ0RvY3VtZW50YXRpb24=">
 <div class="thumbnail"><a href="https://lmu-osc.github.io/FAIR-Data-Management/" class="no-external">
 
 <img loading="lazy" src="../images/fair data management.svg" class="thumbnail-image">
@@ -494,7 +491,7 @@ window.Quarto = {
 
 <div class="listing-category" onclick="window.quartoListingCategory('RkFJUiUyMGRhdGE='); return false;">FAIR data</div>
 
-<div class="listing-category" onclick="window.quartoListingCategory('RGF0YSUyMG1hbmFnZW1lbnQ='); return false;">Data management</div>
+<div class="listing-category" onclick="window.quartoListingCategory('RGF0YSUyME1hbmFnZW1lbnQ='); return false;">Data Management</div>
 
 <div class="listing-category" onclick="window.quartoListingCategory('RG9jdW1lbnRhdGlvbg=='); return false;">Documentation</div>
 
@@ -505,34 +502,40 @@ window.Quarto = {
 </div>
 <div class="metadata">
 <a href="https://lmu-osc.github.io/FAIR-Data-Management/" class="no-external">
+<div class="metadata-value listing-type">
+Self-Paced Tutorial
+</div>
 </a>
 </div>
 </div>
 <div class="quarto-post image-right" data-index="2" data-categories="RG9jdW1lbnRhdGlvbg==">
-<div class="thumbnail"><a href="https://lmu-osc.github.io/Collaborative-RStudio-GitHub/" class="no-external">
+<div class="thumbnail"><a href="https://lmu-osc.github.io/data-documentation-validation-R/" class="no-external">
 
 <img loading="lazy" src="../images/data dictionary.svg" class="thumbnail-image">
 
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="https://lmu-osc.github.io/Collaborative-RStudio-GitHub/" class="no-external">Data Dictionary</a>
+<a href="https://lmu-osc.github.io/data-documentation-validation-R/" class="no-external">Data Documentation &amp; Validation in R</a>
 </h3>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('RG9jdW1lbnRhdGlvbg=='); return false;">Documentation</div>
 
 </div>
-<div class="delink listing-description"><a href="https://lmu-osc.github.io/Collaborative-RStudio-GitHub/" class="no-external">
-<p>Tutorial in progress…</p>
+<div class="delink listing-description"><a href="https://lmu-osc.github.io/data-documentation-validation-R/" class="no-external">
+<p>How to document, summarize, and validate your research data using R.</p>
 </a></div>
 </div>
 <div class="metadata">
-<a href="https://lmu-osc.github.io/Collaborative-RStudio-GitHub/" class="no-external">
+<a href="https://lmu-osc.github.io/data-documentation-validation-R/" class="no-external">
+<div class="metadata-value listing-type">
+Self-Paced Tutorial
+</div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="3" data-categories="T3BlbiUyMGRhdGElMkNEYXRhJTIwYW5vbnltaXR5" data-listing-file-modified-sort="1770041899631" data-listing-reading-time-sort="1" data-listing-word-count-sort="46">
+<div class="quarto-post image-right" data-index="3" data-categories="T3BlbiUyMERhdGElMkNEYXRhJTIwQW5vbnltaXR5" data-listing-file-modified-sort="1770111216478" data-listing-reading-time-sort="1" data-listing-word-count-sort="46">
 <div class="thumbnail"><a href="../../training/data_management/maintaining_privacy_with_open_data.html" class="no-external">
 
 <img loading="lazy" src="../../training/images/data privacy.svg" class="thumbnail-image">
@@ -544,9 +547,9 @@ window.Quarto = {
 </h3>
 <div class="listing-categories">
 
-<div class="listing-category" onclick="window.quartoListingCategory('T3BlbiUyMGRhdGE='); return false;">Open data</div>
+<div class="listing-category" onclick="window.quartoListingCategory('T3BlbiUyMERhdGE='); return false;">Open Data</div>
 
-<div class="listing-category" onclick="window.quartoListingCategory('RGF0YSUyMGFub255bWl0eQ=='); return false;">Data anonymity</div>
+<div class="listing-category" onclick="window.quartoListingCategory('RGF0YSUyMEFub255bWl0eQ=='); return false;">Data Anonymity</div>
 
 </div>
 <div class="delink listing-description"><a href="../../training/data_management/maintaining_privacy_with_open_data.html" class="no-external">
@@ -555,56 +558,65 @@ window.Quarto = {
 </div>
 <div class="metadata">
 <a href="../../training/data_management/maintaining_privacy_with_open_data.html" class="no-external">
+<div class="metadata-value listing-type">
+Lecture
+</div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="4" data-categories="RGF0YSUyMGFub255bWl0eQ==">
-<div class="thumbnail"><a href="https://lmu-osc.github.io/" class="no-external">
+<div class="quarto-post image-right" data-index="4" data-categories="RGF0YSUyMEFub255bWl0eQ==">
+<div class="thumbnail"><a href="" class="no-external">
 
 <img loading="lazy" src="../images/data anonymity.svg" class="thumbnail-image">
 
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="https://lmu-osc.github.io/" class="no-external">TBD: Data Anonymity</a>
+<a href="" class="no-external">TBA: Data Anonymity</a>
 </h3>
 <div class="listing-categories">
 
-<div class="listing-category" onclick="window.quartoListingCategory('RGF0YSUyMGFub255bWl0eQ=='); return false;">Data anonymity</div>
+<div class="listing-category" onclick="window.quartoListingCategory('RGF0YSUyMEFub255bWl0eQ=='); return false;">Data Anonymity</div>
 
 </div>
-<div class="delink listing-description"><a href="https://lmu-osc.github.io/" class="no-external">
-<p>Tutorial in progress…</p>
+<div class="delink listing-description"><a href="" class="no-external">
+<p>Implementing and evaluating data anonymization techniques in R for safely sharing sensitive research data</p>
 </a></div>
 </div>
 <div class="metadata">
-<a href="https://lmu-osc.github.io/" class="no-external">
+<a href="" class="no-external">
+<div class="metadata-value listing-type">
+Self-Paced Tutorial
+</div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="5" data-categories="RGF0YSUyMHNpbXVsYXRpb24lMkNEYXRhJTIwYW5vbnltaXR5">
-<div class="thumbnail"><a href="https://lmu-osc.github.io/synthetic-data-tutorial/" class="no-external">
+<div class="quarto-post image-right" data-index="5" data-categories="RGF0YSUyMFNpbXVsYXRpb24lMkNEYXRhJTIwQW5vbnltaXR5">
+<div class="thumbnail"><a href="" class="no-external">
 
 <img loading="lazy" src="../images/synthetic data.svg" class="thumbnail-image">
 
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="https://lmu-osc.github.io/synthetic-data-tutorial/" class="no-external">TBD: Generating Synthetic Data</a>
+<a href="" class="no-external">TBA: Generating Synthetic Data</a>
 </h3>
 <div class="listing-categories">
 
-<div class="listing-category" onclick="window.quartoListingCategory('RGF0YSUyMHNpbXVsYXRpb24='); return false;">Data simulation</div>
+<div class="listing-category" onclick="window.quartoListingCategory('RGF0YSUyMFNpbXVsYXRpb24='); return false;">Data Simulation</div>
 
-<div class="listing-category" onclick="window.quartoListingCategory('RGF0YSUyMGFub255bWl0eQ=='); return false;">Data anonymity</div>
+<div class="listing-category" onclick="window.quartoListingCategory('RGF0YSUyMEFub255bWl0eQ=='); return false;">Data Anonymity</div>
 
 </div>
-<div class="delink listing-description"><a href="https://lmu-osc.github.io/synthetic-data-tutorial/" class="no-external">
-<p>Tutorial in progress…</p>
+<div class="delink listing-description"><a href="" class="no-external">
+<p>Generating Synthetic Data in R and balancing utility and privacy-preserving data sharing</p>
 </a></div>
 </div>
 <div class="metadata">
-<a href="https://lmu-osc.github.io/synthetic-data-tutorial/" class="no-external">
+<a href="" class="no-external">
+<div class="metadata-value listing-type">
+Self-Paced Tutorial
+</div>
 </a>
 </div>
 </div>

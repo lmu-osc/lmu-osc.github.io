@@ -4,41 +4,45 @@
   image: "../images/fair data management.svg"
   categories:
     - FAIR data
-    - Data management
+    - Data Management
     - Documentation
   content_category:
     - Data Management
   within_cat_order: 20
   path: "https://lmu-osc.github.io/FAIR-Data-Management/"
+  type: Self-Paced Tutorial
+    
 
-- title: "Data Dictionary"
-  description: "Tutorial in progress..."
+- title: "Data Documentation & Validation in R"
+  description:  How to document, summarize, and validate your research data using R.
   image: "../images/data dictionary.svg"
   categories:
     - Documentation
   content_category:
     - Data Management
   within_cat_order: 30
-  path: https://lmu-osc.github.io/Collaborative-RStudio-GitHub/
+  path: https://lmu-osc.github.io/data-documentation-validation-R/
+  type: Self-Paced Tutorial
 
-
-- title: "TBD: Data Anonymity"
-  description: "Tutorial in progress..."
+- title: "TBA: Data Anonymity"
+  description: "Implementing and evaluating data anonymization techniques in R for safely sharing sensitive research data"
   image: "../images/data anonymity.svg"
   categories:
-    - Data anonymity
+    - Data Anonymity
   content_category:
     - Data Management
   within_cat_order: 50
-  path: https://lmu-osc.github.io/
+  # path:
+  type: Self-Paced Tutorial
 
-- title: "TBD: Generating Synthetic Data"
-  description: "Tutorial in progress..."
+- title: "TBA: Generating Synthetic Data"
+  description: "Generating Synthetic Data in R and balancing utility and privacy-preserving data sharing"
   image: "../images/synthetic data.svg"
   categories:
-    - Data simulation
-    - Data anonymity
+    - Data Simulation
+    - Data Anonymity
   content_category:
     - Data Management
   within_cat_order: 60
-  path: https://lmu-osc.github.io/synthetic-data-tutorial/
+  # path:
+  type: Self-Paced Tutorial

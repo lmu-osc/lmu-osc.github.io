@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="Sharing data, code, and article">
+<meta name="description" content="From sharing data and code to publishing articles">
 
 <title>Publishing Outputs – LMU Open Science Center</title>
 <style>
@@ -84,7 +84,7 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title','listing-description','listing-categories','listing-image',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-title','listing-description','listing-categories','listing-image','listing-type',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
       searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
     };
@@ -275,7 +275,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../training/index.html">Training Tracks</a></li><li class="breadcrumb-item"><a href="../../training/self_training.html">Self-Training</a></li><li class="breadcrumb-item"><a href="../../training/publishing_outputs/index.html">Publishing Outputs</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../training/index.html">Training Tracks</a></li><li class="breadcrumb-item"><a href="../../training/self_learning.html">Self-Learning</a></li><li class="breadcrumb-item"><a href="../../training/publishing_outputs/index.html">Publishing Outputs</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -301,8 +301,8 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../../training/self_training.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Self-Training</span></a>
+            <a href="../../training/self_learning.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Self-Learning</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -420,18 +420,14 @@ window.Quarto = {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../training/index.html">Training Tracks</a></li><li class="breadcrumb-item"><a href="../../training/self_training.html">Self-Training</a></li><li class="breadcrumb-item"><a href="../../training/publishing_outputs/index.html">Publishing Outputs</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../training/index.html">Training Tracks</a></li><li class="breadcrumb-item"><a href="../../training/self_learning.html">Self-Learning</a></li><li class="breadcrumb-item"><a href="../../training/publishing_outputs/index.html">Publishing Outputs</a></li></ol></nav>
 <div class="quarto-title">
 <h1 class="title">Publishing Outputs</h1>
-  <div class="quarto-categories">
-    <div class="quarto-category">Open Access</div>
-    <div class="quarto-category">Code publishing</div>
-  </div>
-  </div>
+</div>
 
 <div>
   <div class="description">
-    Sharing data, code, and article
+    From sharing <strong>data</strong> and <strong>code</strong> to <strong>publishing articles</strong>
   </div>
 </div>
 
@@ -477,10 +473,13 @@ window.Quarto = {
 </div>
 <div class="metadata">
 <a href="https://lmu-osc.github.io/code-publishing/" class="no-external">
+<div class="metadata-value listing-type">
+Self-Paced Tutorial
+</div>
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-categories="T3BlbiUyMEFjY2VzcyUyQ1ByZXByaW50cw==" data-listing-file-modified-sort="1770041899636" data-listing-reading-time-sort="1" data-listing-word-count-sort="46">
+<div class="quarto-post image-right" data-index="1" data-categories="T3BlbiUyMEFjY2VzcyUyQ1ByZXByaW50cw==" data-listing-file-modified-sort="1770111216483" data-listing-reading-time-sort="1" data-listing-word-count-sort="46">
 <div class="thumbnail"><a href="../../training/publishing_outputs/open_access_preprints_postprints.html" class="no-external">
 
 <img loading="lazy" src="../../training/images/open access.svg" class="thumbnail-image">
@@ -498,11 +497,14 @@ window.Quarto = {
 
 </div>
 <div class="delink listing-description"><a href="../../training/publishing_outputs/open_access_preprints_postprints.html" class="no-external">
-<p>Watch this presentation on why pre- and postprinting procedures are important to open science and how to accomplish them</p>
+<p>Learn about the different ways to make your publications freely accessible.</p>
 </a></div>
 </div>
 <div class="metadata">
 <a href="../../training/publishing_outputs/open_access_preprints_postprints.html" class="no-external">
+<div class="metadata-value listing-type">
+Lecture
+</div>
 </a>
 </div>
 </div>
