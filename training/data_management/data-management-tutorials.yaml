@@ -11,15 +11,15 @@
   within_cat_order: 20
   path: "https://lmu-osc.github.io/FAIR-Data-Management/"
 
-- title: "Data Dictionary"
-  description: "Tutorial in progress..."
+- title: "Data Documentation & Validation in R"
+  description:  How to document, summarize, and validate your research data using R.
   image: "../images/data dictionary.svg"
   categories:
     - Documentation
   content_category:
     - Data Management
   within_cat_order: 30
-  path: https://lmu-osc.github.io/Collaborative-RStudio-GitHub/
+  path: https://lmu-osc.github.io/data-documentation-validation-R/
 
 
 - title: "TBD: Data Anonymity"
