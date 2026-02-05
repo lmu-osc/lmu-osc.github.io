@@ -1,19 +1,29 @@
 ---
 title: Pat Callahan
-academic_title: MSc
+academic_title: M.Sc. Epidemiology
 name: Pat Callahan
 surname: Callahan
 first_name: Pat
-faculty: Medicine
+position: Developer & Research Support
 membertype: ['fellow', 'staff']
 display_weight_staff: 5
 osc_staff_title: Developer & Research Support
+personal: I'm a scientific research programmer with a Master's degree in epidemiology, focused on advancing reproducible and efficient research in the health sciences. I believe that treating scientific analyses as software development projects creates the standard, understandable frameworks necessary to address reproducibility challenges. My work centers on developing tools, creating educational resources, and supporting researchers in adopting computational best practices.
 email: Patrick.Callahan@lmu.de
+links:
+  - label: "Personal Website"
+    url: "https://neuroshepherd.github.io/"
 social_media:
   GitHub: "https://github.com/NeuroShepherd"
   ORCID: https://orcid.org/0000-0003-1769-7580
-mission_statement:
-  - I am a MSc student in Epidemiology at the Institute for Medical Information Processing, Biometry, and Epidemiology (IBE). My interests lie particularly in improving scientific reproducibility by teaching software development practices, and in creating data analysis tools which can be used to assess replicability of research findings. I believe treating scientific analyses as if they were software development projects helps facilitate standard, understandable frameworks which can play a large role in addressing issues of reproducibility and replicability of research findings.
+mission_statement: |
+  I'm a scientific research programmer with a Master's degree in epidemiology, focused on advancing reproducible and efficient research in the health sciences. I believe that treating scientific analyses as software development projects creates the standard, understandable frameworks necessary to address reproducibility challenges. My work centers on developing tools, creating educational resources, and supporting researchers in adopting computational best practices.
+  
+  Since joining the OSC in 2023, I've been actively involved in teaching and content creation, including tutorials on [{renv}](https://lmu-osc.github.io/introduction-to-renv/) and [Zotero](https://lmu-osc.github.io/introduction-to-zotero/). I'm passionate about making computational tools accessible and fostering a culture where software development standards are integrated into scientific practice.
+  
+  My technical expertise spans R, Python, Go, JavaScript, SQL, Docker, and Linux, with a primary focus on R for reproducible workflows. I've developed the [{ordinalsimr}](https://cran.r-project.org/web/packages/ordinalsimr/index.html) package on CRAN and am building comprehensive full-stack developer skills. 
+  
+  **Working schedule:** I am available Monday to Thursday, often starting early in the morning.
 ---
 {{< include templates/_setup.qmd >}}
 {{< include templates/_contact_items.qmd >}}
@@ -53,4 +63,5 @@ profile <- div(class = "people-profile",
 # Render the profile
 browsable(profile)  
 ```
+
 
