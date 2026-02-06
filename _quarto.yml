@@ -83,7 +83,7 @@ website:
           href: training/index.qmd
           contents:
             - section: "Self-Learning Catalog"
-              href: training/self_learning.qmd 
+              href: training/self-learning.qmd 
               contents:
                 - text: "Principles"
                   href: training/principles/index.qmd
@@ -91,29 +91,29 @@ website:
                     - auto: "training/principles/*.qmd"
                     - training/principles/principles-tutorials.yaml
                 - text: "Study Planning"
-                  href: training/study_planning/index.qmd
+                  href: training/study-planning/index.qmd
                   contents: 
-                    - auto: "training/study_planning/*.qmd"
-                    - training/study_planning/study-planning-tutorials.yaml
+                    - auto: "training/study-planning/*.qmd"
+                    - training/study-planning/study-planning-tutorials.yaml
                 - text: "Data Management"
-                  href: training/data_management/index.qmd
+                  href: training/data-management/index.qmd
                   contents: 
-                    - auto: "training/data_management/*.qmd"
-                    - training/data_management/data-management-tutorials.yaml
+                    - auto: "training/data-management/*.qmd"
+                    - training/data-management/data-management-tutorials.yaml
                 - text: "Reproducible Processes"
-                  href: training/reproducible_processes/index.qmd
+                  href: training/reproducible-processes/index.qmd
                   contents: 
-                    - auto: "training/reproducible_processes/*.qmd"
-                    - training/reproducible_processes/reproducible-processes-tutorials.yaml
+                    - auto: "training/reproducible-processes/*.qmd"
+                    - training/reproducible-processes/reproducible-processes-tutorials.yaml
                 - text: "Publishing Outputs"
-                  href: training/publishing_outputs/index.qmd
+                  href: training/publishing-outputs/index.qmd
                   contents: 
-                    - auto: "training/publishing_outputs/*.qmd"
-                    - training/publishing_outputs/publishing-outputs-tutorials.yaml
+                    - auto: "training/publishing-outputs/*.qmd"
+                    - training/publishing-outputs/publishing-outputs-tutorials.yaml
             - text: "Research Cycle Handbook"
-              href: training/open_research_cycle.qmd
+              href: training/open-research-cycle.qmd
             - text: "Educator Toolkit"
-              href: training/train_the_trainer.qmd
+              href: training/train-the-trainer.qmd
         
     - id: partners
       collapse-level: 3
