@@ -183,7 +183,7 @@ format:
       - custom-navbar.css
     toc: true
     include-in-header:
-      - file: matomo_analytics.html
+      - file: matomo-analytics.html
     include-after-body:
       - file: footer/footer.html
       
