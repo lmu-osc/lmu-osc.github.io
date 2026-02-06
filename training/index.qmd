@@ -172,7 +172,7 @@ format:
 ```{=html}
 <div class="training-grid"> 
     <div class="training-card"
-      onclick="window.location.href='self_training.html';">   
+      onclick="window.location.href='self-learning.html';">   
       <h3>Self-Learning Catalog</h3>
       <p>For researchers or students looking to learn how to implement a specific research practice.</p>
       <div class="training-content training-one">
@@ -181,7 +181,7 @@ format:
    </div>
 
 
-    <div class="training-card" onclick="window.location.href='open_research_cycle.html';">
+    <div class="training-card" onclick="window.location.href='open-research-cycle.html';">
         <h3>Research Cycle Handbook</h3>
         <p>Detailed guide to best research practices across the lifecycle of a project.</p>
         <div class="training-content training-two">
@@ -189,7 +189,7 @@ format:
         </div>
     </div>      
 
-    <div class="training-card" onclick="window.location.href='train_the_trainer.html';">
+    <div class="training-card" onclick="window.location.href='train-the-trainer.html';">
         <h3>Educator Toolkit</h3>
         <p>Pedagogy training and ready-to-use materials for teaching open research practices.</p>
         <div class="training-content training-three mt-4">
