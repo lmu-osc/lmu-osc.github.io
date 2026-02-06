@@ -1,7 +1,7 @@
 ---
 title: Data & AI Ethics
 date: "November 14 2025"
-categories: ["Workshop","Professional Instruction"]
+categories: ["Conference"]
 
 # Event Information
 event:
@@ -9,11 +9,11 @@ event:
   date: "November 14 2025"
   end_date: ""
   time: "09:00 - 17:30 CET"
-  categories: "Workshop"
+  categories: "Conference"
   location:
     name: "Ludwig-Maximilians-Universität München"
     address: "Schellingstraße 3, 80799 Munich"
-    map_url: "https://www.google.com/maps/place/Ludwigstraße+25,+80539+München,+Germany"
+    map_url: ""
   format:
     type: "In-person"
     detail: "In-person"
@@ -24,30 +24,32 @@ event:
   
 # Registration and Materials
 links:
-  registration: "https://www.pretix.osc.lmu.de/lmu-osc/swc-20250324-Hum/"
-  materials: "https://www.pretix.osc.lmu.de/lmu-osc/swc-20250324-Hum/"
-  workshop_website: "https://lmu-osc.github.io/2025-03-24-LMU-Humanities/"
+  registration: "https://www.pretix.osc.lmu.de/lmu-osc/2025-data-ethics/"
+  materials: ""
+  workshop_website: "https://sites.google.com/view/epix-workshop/2025-data-ethics"
 
 # Add more instructors in the same format if needed. Will need to add a new line in the html below as well
 # Event Description
 event_description: 
-  - "In this Software Carpentry Workshop you will learn the **Unix Shell**, **Git** and **R**. This example-driven **two-day workshop** will teach core computing skills that will help you be more productive and effective. We'll alternate short tutorials with hands-on practical exercises. Participants are encouraged to help one another and to apply what they are learning to their own research problems during the workshop."
-  - "text two"
-  - "text three"
+  - "For more information, please go to  
+<https://sites.google.com/view/epix-workshop/2025-data-ethics>.
+
+**Target audience**: We hope to build inter- and transdisciplinary bridges by bringing together scholars who might otherwise not often have the chance to engage in dialogue on data ethics. We therefore invite anyone interested to join the conversation, regardless of disciplinary or methodological background. This workshop is free and open to members of LMU, TUM, and other institutions."
 # Helpers
 organizers:
-  - name: "Moritz Herrmann"
+  - name: ""
     url: ""
-  - name: "Patrick Oliver Schenk"
+  - name: ""
 
 # Contact Information
 contact:
-  name: "Malika Ihle"
-  email: "malika.ihle@lmu.de"
+  name: "LMU Open Science Initiative in Statistic (OSIS)"
+  email: "osis@stat.uni-muenchen.de"
 
 host: 
-  - name: "Data Ethics Group at LMU's Department of Statistics"
+  - name: "Data Ethics Initiative at the LMU Department of Statistics"
   - name: "Munich Center for Machine Learning (MCML)"
+  - name: "Open Science Initiative in Statistics (OSIS)"
   
 ---
 
