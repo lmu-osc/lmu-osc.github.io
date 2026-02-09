@@ -1,15 +1,11 @@
 ---
-format:
-    html:
-        table-of-contents: false
-        css: event-page-styles.css
-page-layout: full
-pagetitle: '"Reforming Research Assessment: how to implement responsible procedures and move beyond impact factors and h-index?"'
+title: "Reforming Research Assessment: how to implement responsible procedures and move beyond impact factors and h-index?"
 categories: 'Symposium'
+date: "March 13, 2023"
 
 # Event categories
 event:
-  title: '"Reforming Research Assessment: how to implement responsible procedures and move beyond impact factors and h-index?"'
+  title: "Reforming Research Assessment: how to implement responsible procedures and move beyond impact factors and h-index?"
   description: ""
   categories:  'Symposium'
   date: "March 13, 2023"
@@ -53,7 +49,6 @@ host:
   - name: "LMU Open Science Center"
 ---
 <!-- MANDAORY SECTION START  -->
-<h1 class="fs-1 text-primary"> {{< meta event.title >}} </h1>
 
 {{< include templates/_setup.qmd >}}
 {{< include templates/_info_boxes.qmd >}}
@@ -65,7 +60,7 @@ host:
 <!-- DETAILED EVENT DESCRIPTION HERE OR USE THE TEMPLATE BELOW TO INCLUDE THE STANDARD DESCRIPTION SECTION -->
 <!-- {{< include templates/_event_description.qmd >}} -->
 
-<p>“The use of journal impact factors and other metric indicators of research productivity, such as the h-index, has been heavily criticised for being invalid for the assessment of individual researchers and for fueling a detrimental “publish or perish” culture. Multiple initiatives call for developing alternatives to existing metrics that better reflect quality (instead of quantity) in research assessment.” (<a href="https://doi.org/10.23668/psycharchives.8162" target="_blank">https://doi.org/10.23668/psycharchives.8162</a>)</p><p><br>A number of themes run through the recommendations of initiatives such as The Declaration on Research Assessment (DORA, <a href="https://sfdora.org/" target="_blank">https://sfdora.org/</a>) and the Coalition for Advancing Research Assessment (CoARA, <a href="https://coara.eu/" target="_blank">https://coara.eu/</a>):</p><ul>
+<p>“The use of journal impact factors and other metric indicators of research productivity, such as the h-index, has been heavily criticised for being invalid for the assessment of individual researchers and for fueling a detrimental “publish or perish” culture. Multiple initiatives call for developing alternatives to existing metrics that better reflect quality (instead of quantity) in research assessment.” (<a href="https://doi.org/10.23668/psycharchives.8162" target="_blank">https://doi.org/10.23668/psycharchives.8162</a>)</p><p><br>A number of themes run through the recommendations of initiatives such as The Declaration on Research Assessment (DORA, <a href="https://sfdora.org/" target="_blank">https://sfdora.org/</a>) and the Coalition for Advancing Research Assessment (CoARA, <a href="https://www.coara.org/" target="_blank">https://www.coara.org/</a>):</p><ul>
 <li>the need to eliminate the use of journal-based metrics, such as Journal Impact Factors, in funding, appointment, and promotion considerations;</li>
 <li>the need to assess research on its own merits rather than on the basis of the journal in which the research is published; and</li>
 <li>the need to recognise the diverse outputs, practices, and activities that maximise the quality and impact of research</li>

@@ -9,9 +9,9 @@ faculty: Medicine
 membertype: ['lmu-individual']
 email: christian.Behrends@mail03.med.uni-muenchen.de
 photo: 'images/behrends_christian.jpg'
-website:
+links:
   - label: 'Professional Website'
-    url: http://www.behrendslab.com
+    url: https://behrendslab.com
   - label: 'Professional Profile'
     url: https://www.synergy-munich.de/about/members/5be5301b72fd3b59
 social_media:
@@ -40,7 +40,10 @@ profile <- div(class = "people-profile",
     ),
     div(class = "people-info",
       p(class = "people-position", position),
-      p(class = "people-faculty", paste0("Faculty of ", faculty)),
+      if (!is.null(faculty) & faculty != "") {p(class = "people-faculty", paste0("Faculty of ", faculty))},
+      if (faculty == "" & !is.null(affiliate_organization)) {
+        p(class = "people-faculty", affiliate_organization)
+        },
       div(class = "people-contact", contact_items, social_links)
     )
   ),

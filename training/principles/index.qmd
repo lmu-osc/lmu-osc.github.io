@@ -1,0 +1,14 @@
+---
+title: "Principles"
+description: "From the **replicability crisis** to the **credibility revolution**"
+tutorial-home-order: 01
+image: "../images/principles.svg"
+listing:
+  type: default
+  contents:
+    - /**.qmd
+    - principles-tutorials.yaml
+  fields: [title, description, categories, image, type]
+  sort:
+    - within_cat_order
+---

@@ -1,15 +1,11 @@
 ---
-format:
-    html:
-        table-of-contents: false
-        css: event-page-styles.css
-page-layout: full
-pagetitle: '"Reproducible research: transparency and translational impact"'
+title: "Reproducible research: transparency and translational impact"
 categories: 'Lecture'
+date: "November 04, 2019"
 
 # Event categories
 event:
-  title: '"Reproducible research: transparency and translational impact"'
+  title: "Reproducible research: transparency and translational impact"
   description: ""
   categories:  'Lecture'
   date: "November 04, 2019"
@@ -53,7 +49,6 @@ host:
   - name: "LMU Open Science Center"
 ---
 <!-- MANDAORY SECTION START  -->
-<h1 class="fs-1 text-primary"> {{< meta event.title >}} </h1>
 
 {{< include templates/_setup.qmd >}}
 {{< include templates/_info_boxes.qmd >}}

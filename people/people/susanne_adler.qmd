@@ -5,11 +5,11 @@ name: Susanne Adler
 surname: Adler
 first_name: Susanne
 position: Researcher
-faculty: LMU School of Management
+faculty: Munich School of Management
 membertype: ['lmu-individual']
 email: adler@lmu.de
 photo: 'images/adler_susanne.jpg'
-website:
+links:
   - label: 'LMU Profile'
     url: https://www.som.lmu.de/marketing/en/institute/contact-page/susanne-adler-1210c816.html
 social_media:
@@ -37,7 +37,10 @@ profile <- div(class = "people-profile",
     ),
     div(class = "people-info",
       p(class = "people-position", position),
-      p(class = "people-faculty", paste0("Faculty of ", faculty)),
+      if (!is.null(faculty) & faculty != "") {p(class = "people-faculty", paste0("Faculty of ", faculty))},
+      if (faculty == "" & !is.null(affiliate_organization)) {
+        p(class = "people-faculty", affiliate_organization)
+        },
       div(class = "people-contact", contact_items, social_links)
     )
   ),

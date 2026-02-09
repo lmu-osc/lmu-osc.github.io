@@ -1,10 +1,7 @@
 ---
-title: "Becoming Institutional Member"
+pagetitle: "Becoming Institutional Member"
 format: 
   html:
-      include-in-header: 
-        - text: |
-            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
       page-layout: full
 ---
 <style>
@@ -24,10 +21,7 @@ format:
     width:100%;
 }
 
-.quarto-title-block,
-.quarto-title {
-  display: none !important;
-}
+
 
 .init-header {
     padding: 2rem;
@@ -138,6 +132,7 @@ format:
                     <li>evaluate research practices across disciplines through meta-research projects</li>
                   </ul>
                 </p>
+                <h2> Benefits of becoming a Funding Institutional Member </h2>
                 <p>OSC Institutional Members that provide financial support get priority in the following activities:
                   <ul>
                       <li>seats in multiple-day intensive courses</li>

@@ -1,19 +1,15 @@
 ---
-format:
-    html:
-        table-of-contents: false
-        css: event-page-styles.css
-page-layout: full
-pagetitle: 'LMU-MPG Open Science Summer School 2024'
+title: LMU-MPG Open Science Summer School 2024
 categories: 'Summer school'
+date: "September 09, 2024"
 
 # Event categories
 event:
-  title: 'LMU-MPG Open Science Summer School 2024'
+  title: LMU-MPG Open Science Summer School 2024
   description: ""
   categories:  'Summer school'
-  date: "July 15, 2024"
-  end_date: "July 15, 2024"
+  date: "September 09, 2024"
+  end_date: "September 13, 2024"
   time: "NA"
   location:
     name: "Hybrid (Max Planck Digital Library in Laim)"
@@ -53,7 +49,6 @@ host:
   - name: "LMU Open Science Center"
 ---
 <!-- MANDAORY SECTION START  -->
-<h1 class="fs-1 text-primary"> {{< meta event.title >}} </h1>
 
 {{< include templates/_setup.qmd >}}
 {{< include templates/_info_boxes.qmd >}}
@@ -81,7 +76,7 @@ host:
 <li>Prof Dr Felix Schönbrodt, Director of LMU Open Science Center</li>
 <li>Dr Malika Ihle, Coordinator of LMU Open Science Center</li>
 </ul>
-<p>...and many more instructors!</p><p>You can find the <strong>programme</strong> and more information on the <strong>lectures</strong> and <strong>workshops</strong> here: <a href="https://osip.mpdl.mpg.de/lmu-mpg-open-science-summer-school-2024/">https://osip.mpdl.mpg.de/lmu-mpg-open-science-summer-school-2024/</a></p><h2>Apply to attend the whole summer school (in-person or online)</h2><p>To attend the whole school, i.e. both public lectures and workshops for selected applicants, on site or online, you must apply before <strong>15 July 2024, 12:00 noon CEST</strong>.</p><p><strong>Apply here</strong>: <a href="https://surveys.osc.lmu.de/OpenScienceSummerSchool2024">https://surveys.osc.lmu.de/OpenScienceSummerSchool2024</a></p><p>The Summer Schoolis targeted at PhD students of all scientific disciplines (Earth sciences, Medical sciences, Social Sciences, Life Sciences, etc.). Researchers in fields of the Humanities can also apply, but should note that the Summer School contents lean towards quantitative research. Master students and early post docs are also welcome to apply.</p><p>The SummerSchool will be held in a hybrid format and you will be able to choose your preferred mode of participation (online or on site). By applying, we expect you to attend all sessions of the school (with justified exception possible). A certificate of attendance will be provided.</p><p>During the application process, you will be asked about your motivation, experience and prior knowledge. We will prioritize novices with clear ideas about where to integrate these new skills in their own research. At equal score, we will prioritize members of the LMU or MPG, and maximize the diversity of applicants background in terms of discipline, career stage, and gender.</p><p>The on site part of the school will take place on the premises of the Max Planck Digital Library, <strong>Landsberger Straße 346, 80687 München, Germany</strong>. Lunch will be provided for on site participants throughout the week. The dinner on Thursday is optional and on a self-payment basis. The online part will be on <strong>Zoom</strong>. We will not provide travel grants.</p><p>Please note that the Laim S-Bahn station is currently not barrier-free. If you require a barrier-free journey, please contact the <a href="mailto:osip@mpdl.mpg.de">OSiP-Supp</a></p><p><a href="mailto:osip@mpdl.mpg.de">ort</a>.</p><div>
+<p>...and many more instructors!</p><p>You can find the <strong>programme</strong> and more information on the <strong>lectures</strong> and <strong>workshops</strong> here: <a href="https://osip.mpdl.mpg.de/lmu-mpg-open-science-summer-school-2024/">https://osip.mpdl.mpg.de/lmu-mpg-open-science-summer-school-2024/</a></p><h2>Apply to attend the whole summer school (in-person or online)</h2><p>To attend the whole school, i.e. both public lectures and workshops for selected applicants, on site or online, you must apply before <strong>15 July 2024, 12:00 noon CEST</strong>.</p><p><strong>Apply here</strong>: <a href="https://surveys.osc.lmu.de/OpenScienceSummerSchool2024/">https://surveys.osc.lmu.de/OpenScienceSummerSchool2024/</a></p><p>The Summer Schoolis targeted at PhD students of all scientific disciplines (Earth sciences, Medical sciences, Social Sciences, Life Sciences, etc.). Researchers in fields of the Humanities can also apply, but should note that the Summer School contents lean towards quantitative research. Master students and early post docs are also welcome to apply.</p><p>The SummerSchool will be held in a hybrid format and you will be able to choose your preferred mode of participation (online or on site). By applying, we expect you to attend all sessions of the school (with justified exception possible). A certificate of attendance will be provided.</p><p>During the application process, you will be asked about your motivation, experience and prior knowledge. We will prioritize novices with clear ideas about where to integrate these new skills in their own research. At equal score, we will prioritize members of the LMU or MPG, and maximize the diversity of applicants background in terms of discipline, career stage, and gender.</p><p>The on site part of the school will take place on the premises of the Max Planck Digital Library, <strong>Landsberger Straße 346, 80687 München, Germany</strong>. Lunch will be provided for on site participants throughout the week. The dinner on Thursday is optional and on a self-payment basis. The online part will be on <strong>Zoom</strong>. We will not provide travel grants.</p><p>Please note that the Laim S-Bahn station is currently not barrier-free. If you require a barrier-free journey, please contact the <a href="mailto:osip@mpdl.mpg.de">OSiP-Supp</a></p><p><a href="mailto:osip@mpdl.mpg.de">ort</a>.</p><div>
 <h2>Join one or several of the public lectures (online)</h2>
 <p>Anyone can register at any time before the end of the summer school to attend one, multiple, or all lectures online.</p>
 <p>Register here: <a href="https://www.pretix.osc.lmu.de/lmu-osc/SS24/">https://www.pretix.osc.lmu.de/lmu-osc/SS24/</a></p>

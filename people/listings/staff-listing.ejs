@@ -1,0 +1,128 @@
+<% for (const item of items) { %>
+<div class="card mb-3" <%= metadataAttrs(item) %>>
+<h4 class="card-header"><%= item.osc_staff_title %></h4>
+<div class="row g-0">
+<!-- Profile Image Column -->
+<div class="col-md-3 d-flex justify-content-center align-items-center">
+<a href="<%= item.path %>">
+<img src="people/<%= item.photo || '/images/default.svg' %>" class="profile-image" alt="Profile photo of <%= item.name %>">
+</a>
+</div>
+
+<!-- Social Icons Column -->
+<div class="col-md-1 d-flex justify-content-center align-items-center">
+<ul class="d-flex flex-row flex-md-column list-unstyled gap-3">
+<% if (item.social_media) { %>
+<% if (item.social_media.ORCID) { %>
+<li>
+<a href="<%= item.social_media.ORCID %>" target="_blank" aria-label="ORCID">
+<i class="social-icons fa-brands fa-orcid fa-2xl" aria-hidden="true"></i>
+</a>
+</li>
+<% } %>
+<% if (item.social_media.GitHub) { %>
+<li>
+<a href="<%= item.social_media.GitHub %>" target="_blank" aria-label="GitHub">
+<i class="social-icons fa-brands fa-github fa-2xl" aria-hidden="true"></i>
+</a>
+</li>
+<% } %>
+<% if (item.social_media.Bluesky) { %>
+<li>
+<a href="<%= item.social_media.Bluesky %>" target="_blank" aria-label="Bluesky">
+<i class="social-icons fa-brands fa-bluesky fa-2xl" aria-hidden="true"></i>
+</a>
+</li>
+<% } %>
+<% if (item.social_media.Linkedin) { %>
+<li>
+<a href="<%= item.social_media.Linkedin %>" target="_blank" aria-label="Linkedin">
+<i class="social-icons fa-brands fa-linkedin fa-2xl" aria-hidden="true"></i>
+</a>
+</li>
+<% } %>
+<% if (item.social_media.Mastodon) { %>
+<li>
+<a href="<%= item.social_media.Mastodon %>" target="_blank" aria-label="Mastodon">
+<i class="social-icons fa-brands fa-mastodon fa-2xl" aria-hidden="true"></i>
+</a>
+</li>
+<% } %>
+<% } %>
+</ul>
+</div>
+
+<!-- Card Body Column -->
+<div class="col-md-8">
+<div class="card-body">
+<h4 class="card-title"><%= item.name %></h4>
+<div class="d-flex align-items-center">
+<span class="card-subtitle mb-0 fs-5 fw-bold text-secondary">
+  <%= item.academic_title %><%= (item.faculty && item.faculty !== 'NA') ? '  |  ' + item.faculty : '' %>
+</span>
+</div>
+<p class="personal-statement card-text text-justify"><%= item.personal %></p>
+<a href="<%= item.path %>" class="btn btn-primary">Read More!</a>
+</div>
+</div>
+</div>
+</div>
+<% } %>
+
+<style>
+:root {
+  --theme-main: #00883A;
+  --theme-main-dark: #246f3f;
+  --theme-bg: #f5f6fa;
+  --theme-card-bg: #fff;
+  --theme-card-shadow: 0 2px 10px rgba(43,134,75,0.10);
+  --theme-border: #e3e7ed;
+}
+
+.profile-image {
+  width: 175px;
+  height: 175px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 0.5rem auto 0.8rem auto;
+  border: 3px solid var(--theme-main);
+  box-shadow: 0 1px 6px rgba(43,134,75,0.12);
+  flex-shrink: 0;
+}
+
+.card-text {
+  display: -webkit-box;
+  line-clamp: 5;
+  -webkit-line-clamp: 5; 
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+} 
+.text-justify {
+  text-align: justify;
+}
+/*define colors for icons and buttons*/
+.social-icons {
+  color: var(--theme-main);
+  cursor: pointer;
+  transition: color 0.2s;
+}
+.social-icons:hover {
+  color: var(--theme-main-dark);           
+}
+.btn-primary {
+  background-color: var(--theme-main);
+  border-color: var(--theme-main);
+  cursor: pointer;
+  transition: color 0.2s;
+}
+.btn-primary:hover {
+  background-color: white;
+  border-color: var(--theme-main);
+  color: var(--theme-main);
+}
+
+.personal-statement a{
+  color: var(--theme-main);
+}
+</style>

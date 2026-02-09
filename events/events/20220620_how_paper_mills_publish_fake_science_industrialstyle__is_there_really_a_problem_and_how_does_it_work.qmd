@@ -1,15 +1,11 @@
 ---
-format:
-    html:
-        table-of-contents: false
-        css: event-page-styles.css
-page-layout: full
-pagetitle: 'How paper mills publish fake science industrial-style - is there really a problem and how does it work?'
+title: How paper mills publish fake science industrial-style - is there really a problem and how does it work?
 categories: 'Symposium'
+date: "June 20, 2022"
 
 # Event categories
 event:
-  title: 'How paper mills publish fake science industrial-style - is there really a problem and how does it work?'
+  title: How paper mills publish fake science industrial-style - is there really a problem and how does it work?
   description: ""
   categories:  'Symposium'
   date: "June 20, 2022"
@@ -53,7 +49,6 @@ host:
   - name: "LMU Open Science Center"
 ---
 <!-- MANDAORY SECTION START  -->
-<h1 class="fs-1 text-primary"> {{< meta event.title >}} </h1>
 
 {{< include templates/_setup.qmd >}}
 {{< include templates/_info_boxes.qmd >}}

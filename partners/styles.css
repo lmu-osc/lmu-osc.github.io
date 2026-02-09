@@ -16,23 +16,13 @@ body {
   margin: 0;
   padding: 0;
 }
-.quarto-title-block,
-.quarto-title {
-  display: none !important;
-}
+
 
 /* Partner container */
 .partner-container {
   max-width: 1200px;
   margin: 2rem auto;
   padding: 0 1.5rem;
-}
-
-h1 {
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
-  color: var(--primary-color);
-  font-weight: 700;
 }
 
 .intro-text {
@@ -65,7 +55,7 @@ h1 {
 }
 
 .card-header {
-  background-color: var(--primary-color);
+  background-color: #ffffff;
   padding: 1.5rem;
   color: var(--text-light);
 }
@@ -191,10 +181,6 @@ h1 {
   
   .initiatives-grid {
     grid-template-columns: 1fr;
-  }
-  
-  h1 {
-    font-size: 2rem;
   }
   
   .card-header h2, .local-initiatives h2, .ext-partner h2 {

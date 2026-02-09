@@ -1,19 +1,15 @@
 ---
-format:
-    html:
-        table-of-contents: false
-        css: event-page-styles.css
-page-layout: full
-pagetitle: '3-day crash course in Open Science'
+title: 3-day crash course in Open Science
 categories: 'Summer school'
+date: "September 27, 2022"
 
 # Event categories
 event:
-  title: '3-day crash course in Open Science'
+  title: 3-day crash course in Open Science
   description: ""
   categories:  'Summer school'
-  date: "June 22, 2022"
-  end_date: "June 22, 2022"
+  date: "September 27, 2022"
+  end_date: "September 29, 2022"
   time: "9:30-16:30"
   location:
     name: "Planegg-Martinsried, Munich"
@@ -53,7 +49,6 @@ host:
   - name: "LMU Open Science Center"
 ---
 <!-- MANDAORY SECTION START  -->
-<h1 class="fs-1 text-primary"> {{< meta event.title >}} </h1>
 
 {{< include templates/_setup.qmd >}}
 {{< include templates/_info_boxes.qmd >}}

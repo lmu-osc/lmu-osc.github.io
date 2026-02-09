@@ -5,11 +5,10 @@ name: Stefano Coretta
 surname: Coretta
 first_name: Stefano
 position: University of Edinburgh
-faculty: ''
 membertype: ['alumni']
 email: s.coretta@ed.ac.uk
 photo: 'images/coretta_stefano.jpg'
-website:
+links:
   - label: 'Personal Website'
     url: https://stefanocoretta.github.io
 social_media:
@@ -37,7 +36,10 @@ profile <- div(class = "people-profile",
     ),
     div(class = "people-info",
       p(class = "people-position", position),
-      p(class = "people-faculty", paste0("Faculty of ", faculty)),
+      if (!is.null(faculty) & faculty != "") {p(class = "people-faculty", paste0("Faculty of ", faculty))},
+      if (faculty == "" & !is.null(affiliate_organization)) {
+        p(class = "people-faculty", affiliate_organization)
+        },
       div(class = "people-contact", contact_items, social_links)
     )
   ),

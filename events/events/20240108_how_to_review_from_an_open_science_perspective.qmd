@@ -1,17 +1,13 @@
 ---
-format:
-    html:
-        table-of-contents: false
-        css: event-page-styles.css
-page-layout: full
-pagetitle: '"How to review from an Open Science perspective"'
-categories: 'Workshop'
+title: "How to review from an Open Science perspective"
+categories: 'Discussion'
+date: "January 08, 2024"
 
 # Event categories
 event:
-  title: '"How to review from an Open Science perspective"'
+  title: "How to review from an Open Science perspective"
   description: ""
-  categories:  'Workshop'
+  categories:  'Discussion'
   date: "January 08, 2024"
   end_date: "January 08, 2024"
   time: "15:00–16:00"
@@ -20,7 +16,7 @@ event:
     address: ""
     map_url: ""
   format:
-    type: 'Workshop'
+    type: 'Discussion'
     detail: ""
   language:
     primary: "English"
@@ -53,7 +49,6 @@ host:
   - name: "LMU Open Science Center"
 ---
 <!-- MANDAORY SECTION START  -->
-<h1 class="fs-1 text-primary"> {{< meta event.title >}} </h1>
 
 {{< include templates/_setup.qmd >}}
 {{< include templates/_info_boxes.qmd >}}

@@ -1,17 +1,13 @@
 ---
-format:
-    html:
-        table-of-contents: false
-        css: event-page-styles.css
-page-layout: full
-pagetitle: '"Corona & Open Science: "Fieberhafte Forschung – Warum Forschung derzeit wenig verlässlich ist und was wir dagegen tun können"'
-categories: 'Symposium'
+title: 'Corona & Open Science: "Fieberhafte Forschung – Warum Forschung derzeit wenig verlässlich ist und was wir dagegen tun können"'
+categories: 'Lecture'
+date: "May 14, 2020"
 
 # Event categories
 event:
-  title: '"Corona & Open Science: "Fieberhafte Forschung – Warum Forschung derzeit wenig verlässlich ist und was wir dagegen tun können"'
+  title: 'Corona & Open Science: "Fieberhafte Forschung – Warum Forschung derzeit wenig verlässlich ist und was wir dagegen tun können"'
   description: ""
-  categories:  'Symposium'
+  categories:  'Lecture'
   date: "May 14, 2020"
   end_date: "May 14, 2020"
   time: "16:00–17:00"
@@ -20,7 +16,7 @@ event:
     address: ""
     map_url: ""
   format:
-    type: 'Symposium'
+    type: 'Lecture'
     detail: ""
   language:
     primary: "German"
@@ -53,7 +49,6 @@ host:
   - name: "LMU Open Science Center"
 ---
 <!-- MANDAORY SECTION START  -->
-<h1 class="fs-1 text-primary"> {{< meta event.title >}} </h1>
 
 {{< include templates/_setup.qmd >}}
 {{< include templates/_info_boxes.qmd >}}

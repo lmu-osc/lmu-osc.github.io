@@ -9,9 +9,9 @@ faculty: Math, Informatics & Stats
 membertype: ['lmu-individual']
 email: kutyniok@math.lmu.de
 photo: 'images/kutyniok_gitta.jpeg'
-website:
+links:
   - label: 'LMU Profile'
-    url: https://www.ai.math.lmu.de/kutyniok
+    url: https://www.ai.math.uni-muenchen.de/members/professor/kutyniok/index.html
 social_media:
   ORCID: 'https://orcid.org/0000-0001-9738-2487'
 mission_statement:
@@ -38,7 +38,10 @@ profile <- div(class = "people-profile",
     ),
     div(class = "people-info",
       p(class = "people-position", position),
-      p(class = "people-faculty", paste0("Faculty of ", faculty)),
+      if (!is.null(faculty) & faculty != "") {p(class = "people-faculty", paste0("Faculty of ", faculty))},
+      if (faculty == "" & !is.null(affiliate_organization)) {
+        p(class = "people-faculty", affiliate_organization)
+        },
       div(class = "people-contact", contact_items, social_links)
     )
   ),

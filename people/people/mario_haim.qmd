@@ -9,7 +9,7 @@ faculty: Social Sciences
 membertype: ['lmu-individual']
 email: haim@ifkw.lmu.de
 photo: 'images/haim_mario.jpg'
-website:
+links:
   - label: 'LMU Profile'
     url: https://www.sw.lmu.de/ifkw/en/department/news-activities-history/people-at-the-ifkw/contact-page/mario-haim-fd3a3c01.html
   - label: 'Personal Website'
@@ -40,7 +40,10 @@ profile <- div(class = "people-profile",
     ),
     div(class = "people-info",
       p(class = "people-position", position),
-      p(class = "people-faculty", paste0("Faculty of ", faculty)),
+      if (!is.null(faculty) & faculty != "") {p(class = "people-faculty", paste0("Faculty of ", faculty))},
+      if (faculty == "" & !is.null(affiliate_organization)) {
+        p(class = "people-faculty", affiliate_organization)
+        },
       div(class = "people-contact", contact_items, social_links)
     )
   ),

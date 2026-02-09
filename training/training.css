@@ -1,0 +1,23 @@
+
+.quarto-listing-default .quarto-post.image-right {
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.quarto-listing-default .quarto-post.image-right:hover {
+  transform: translateY(-4px);
+  box-shadow:
+    0 8px 16px rgba(86, 100, 83, 0.15),
+    0 0 0 2px rgba(0, 136, 58, 0.12);
+}
+
+#listing-listing .metadata {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#listing-listing .metadata .metadata-value.listing-type {
+  font-size: 1.3em;
+}

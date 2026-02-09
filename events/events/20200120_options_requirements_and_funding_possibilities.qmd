@@ -1,15 +1,11 @@
 ---
-format:
-    html:
-        table-of-contents: false
-        css: event-page-styles.css
-page-layout: full
-pagetitle: '"Open Access: Options, Requirements and Funding Possibilities"'
+title: "Open Access: Options, Requirements and Funding Possibilities"
 categories: 'Workshop'
+date: "January 20, 2020"
 
 # Event categories
 event:
-  title: '"Open Access: Options, Requirements and Funding Possibilities"'
+  title: "Open Access: Options, Requirements and Funding Possibilities"
   description: ""
   categories:  'Workshop'
   date: "January 20, 2020"
@@ -53,7 +49,6 @@ host:
   - name: "LMU Open Science Center"
 ---
 <!-- MANDAORY SECTION START  -->
-<h1 class="fs-1 text-primary"> {{< meta event.title >}} </h1>
 
 {{< include templates/_setup.qmd >}}
 {{< include templates/_info_boxes.qmd >}}
@@ -70,7 +65,7 @@ host:
 </li>
 <li>Volker Schallehn, Andrea Dorner, Vanessa Gabriel, <a href="https://www.en.ub.uni-muenchen.de/homepage/index.html" title="The University Library's most popular services at a glance:">LMU University Library</a>
 </li>
-<li>Dr. Veit Schwab, Dr. Anna Pahl, <a href="https://www.en.uni-muenchen.de/scholars/services/researchservices/index.html">LMU Unit for Research Funding</a>
+<li>Dr. Veit Schwab, Dr. Anna Pahl, <a href="https://www.lmu.de/en/research/research-services/index.html">LMU Unit for Research Funding</a>
 </li>
 </ul>
 <p> </p><div class="g-clear"></div>

@@ -4,53 +4,62 @@ title: "Prof. Dr. Felix Schönbrodt"
 academic_title: "Prof. Dr."
 name: "Felix Schönbrodt"
 position: "Managing Director of the OSC"
-faculty: "Psychology"
-membertype: ["current advisory board", "past advisory board", "past scientific board", "management", "staff"]
-categories: ["management"]
+faculty: Psychology & Education
+membertype: ["past scientific board", "management"]
 photo: "images/felix_schoenbrodt.jpeg"
 email: "Felix.Schoenbrodt@psy.lmu.de"
-display_weight: 1
-personal: "Professor at the Department of Psychology, Ludwig-Maximilians-Universität München, Germany. Managing director of the LMU Open Science Center and board member of the META-REP priority program ('A meta-scientific research program to analyse and optimise replicability in the behavioral, social, and cognitive Sciences'). Interested in Open Science, Metascience, implicit motives, machine learning, responsible research assessment (CoARA), solarpunk, piano, and cooking." 
-website:
+display_weight_management: 1
+personal: "Professor at the Department of Psychology, Ludwig-Maximilians-Universität München, Germany. Managing director of the LMU Open Science Center and steering group member of the META-REP priority program ('A meta-scientific research program to analyse and optimise replicability in the behavioral, social, and cognitive Sciences'). Interested in Open Science, Metascience, implicit motives, machine learning, responsible research assessment (CoARA), solarpunk, piano, and cooking." 
+links:
   - label: "Personal Website"
-    url: "https://nicebread.de"
+    url: "https://www.nicebread.de"
   - label: "Faculty Website"
-    url: "https://www.osc.uni-muenchen.de/index.html"
+    url: "https://www.lmu.de/psy/de/personen/kontaktseite/felix-schoenbrodt-21fe5d01.html"
   - label: "Department of Psychology"
     url: "https://www.psy.lmu.de/"
 
 # Social media links - variable number
 social_media:
-  Bluesky: "https://bsky.app/profile/lmu-osc.bsky.social"
-  Linkedin: "https://www.linkedin.com/in/felixschoenbrodt"
+  Mastodon: "https://scicomm.xyz/@nicebread"
   GitHub: "https://github.com/nicebread"
   ORCID: "https://orcid.org/0000-0002-8282-3910"
 
 # Mission statement paragraphs - variable number
 mission_statement:
-  - I am principal investigator for Psychological Methods and Assessment at the Department of Psycholgoy.
+  - I am principal investigator for Psychological Methods and Assessment at the Department of Psychology, the managing director of the LMU Open Science Center, and steering group member of the <a href="https://www.lmu.de/psy/de/forschung/meta-rep/">META-REP priority program</a> ('A meta-scientific research program to analyse and optimise replicability in the behavioral, social, and cognitive Sciences').
   - The reproducibility of research findings is a core criterion of science, which however, has been challenged by the failure of recent large-scale replication projects. To foster open science practices, I teamed up with colleagues and established our department's "Open Science Committee" in 2015. The outcomes of this committee include an open science paragraph which we included in all recent <a href="http://www.nicebread.de/open-science-hiring-practices/">professorship job descriptions</a>, adding transparency criteria to the department's <a href="http://www.nicebread.de/distribute-funding-based-on-research-transparency/">performance-based funding system</a>, or introducing <a href="http://www.fak11.lmu.de/dep_psychologie/studium/lehrelounge/kerncurriculum_empra/index.html">modules on preregistrations, open data, and reproducible scripts</a> as mandatory components in undergraduate courses.
   - Together with the board of the German Psychological Society (DGPs) I developed the society's <a href="https://www.dgps.de/fileadmin/user_upload/PDF/Empfehlungen/Datenmanagement_deu_9.11.16.pdf">recommendations for data sharing in psychology</a> [<a href="https://www.dgps.de/fileadmin/user_upload/PDF/Empfehlungen/Data_Management_eng_9.11.16.pdf">English version</a>]. In 2016, I received the <a href="http://www.bitss.org/people/felix-schonbrodt/">Leamer-Rosenthal-Prize for Open Social Science</a> from the Berkeley Initiative for Transparency in the Social Sciences (<a href="http://www.bitss.org">BITSS</a>).
+  - In the DFG-funded META-REP project "<a href="https://www.lmu.de/psy/de/forschung/meta-rep/projects_2fp/">From 'Academic works' to 'Working in academia'</a>" we are analyzing reform proposals for academia in an agent-based modelling approach.
 
 # Research interests - variable number
 research_interests:
   - "Open Science"
   - "Psychology"
   - "Psychological Methods"
-  - "Data Sharing"
+  - "Metascience"
 
 # Publications - variable number
 publications:
-  - year: 2024
-    title: "Machine Learning Applications in Organizational Behavior"
-    authors: "Smith, J., Johnson, A., & Williams, R."
-    journal: "Journal of Applied Research, 42(3), 256-278"
-    doi_url: "#"
+  - year: 2025
+    title: "Responsible Research Assessment I: Implementing DORA and CoARA for hiring and promotion in psychology"
+    authors: "Schönbrodt F, Gärtner A, Frank M, Gollwitzer M, Ihle M, Mischkowski D, Phan L, Schmitt M, Scheel A, Schubert A, Steinberg U & Leising D"
+    journal: "Meta-Psychology"
+    doi_url: "https://doi.org/10.15626/mp.2024.4601"
   - year: 2023
-    title: "Open Methods in Psychology"
-    authors: "Schönbrodt, F."
-    journal: "Psychological Methods, 15(2), 112-143"
-    doi_url: "#"
+    title: "Big little lies: a compendium and simulation of p-hacking strategies"
+    authors: "Stefan A & Schönbrodt F"
+    journal: "Royal Society Open Science, 10, 220346"
+    doi_url: "https://doi.org/10.1098/rsos.220346"
+  - year: 2019
+    title: "Correcting for Bias in Psychology: A Comparison of Meta-Analytic Methods"
+    authors: "Carter E*, Schönbrodt F*, Gervais W & Hilgard J"
+    journal: "Advances in Methods and Practices in Psychological Science, 2, 115-144"
+    doi_url: "https://doi.org/10.1177/2515245919847196"
+  - year: 2017
+    title: "Bayes factor design analysis: Planning for compelling evidence"
+    authors: "Schönbrodt F & Wagenmakers E"
+    journal: "Psychonomic Bulletin & Review, 25, 128–142"
+    doi_url: "https://osf.io/d4dcu/"
 ---
 
 
@@ -82,7 +91,10 @@ profile <- div(class = "people-profile",
     ),
     div(class = "people-info",
       p(class = "people-position", position),
-      p(class = "people-faculty", paste0("Faculty of ", faculty)),
+      if (!is.null(faculty) & faculty != "") {p(class = "people-faculty", paste0("Faculty of ", faculty))},
+      if (faculty == "" & !is.null(affiliate_organization)) {
+        p(class = "people-faculty", affiliate_organization)
+        },
       div(class = "people-contact", contact_items, social_links)
     )
   ),

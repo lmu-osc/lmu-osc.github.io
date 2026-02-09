@@ -5,15 +5,15 @@ name: Enrico Schulz
 surname: Schulz
 first_name: Enrico
 position: Researcher
-faculty: University hospital
+faculty: University Hospital
 membertype: ['lmu-individual']
 email: es@pain.sc
 photo: 'images/schulz_enrico.jpg'
-website:
+links:
   - label: 'LMU Profile'
     url: https://www.mcn.uni-muenchen.de/members/associate/schulz/index.html
   - label: 'Professional Website'
-    url: http://www.pain.sc
+    url: https://www.pain.sc
 social_media:
   ORCID: 'https://orcid.org/0000-0001-8188-380X'
 mission_statement:
@@ -40,7 +40,10 @@ profile <- div(class = "people-profile",
     ),
     div(class = "people-info",
       p(class = "people-position", position),
-      p(class = "people-faculty", paste0("Faculty of ", faculty)),
+      if (!is.null(faculty) & faculty != "") {p(class = "people-faculty", paste0("Faculty of ", faculty))},
+      if (faculty == "" & !is.null(affiliate_organization)) {
+        p(class = "people-faculty", affiliate_organization)
+        },
       div(class = "people-contact", contact_items, social_links)
     )
   ),

@@ -1,15 +1,11 @@
 ---
-format:
-    html:
-        table-of-contents: false
-        css: event-page-styles.css
-page-layout: full
-pagetitle: 'Seminar: "Meta Research and the QUEST for responsible research"'
+title: "Meta Research and the QUEST for responsible research"
 categories: 'Lecture'
+date: "November 17, 2022"
 
 # Event categories
 event:
-  title: 'Seminar: "Meta Research and the QUEST for responsible research"'
+  title: "Meta Research and the QUEST for responsible research"
   description: ""
   categories:  'Lecture'
   date: "November 17, 2022"
@@ -53,7 +49,6 @@ host:
   - name: "LMU Open Science Center"
 ---
 <!-- MANDAORY SECTION START  -->
-<h1 class="fs-1 text-primary"> {{< meta event.title >}} </h1>
 
 {{< include templates/_setup.qmd >}}
 {{< include templates/_info_boxes.qmd >}}

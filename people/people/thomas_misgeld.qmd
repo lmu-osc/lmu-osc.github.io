@@ -4,12 +4,13 @@ academic_title: Prof. Dr.
 name: Thomas Misgeld
 surname: Misgeld
 first_name: Thomas
-position: Director
-faculty: TUM Medicine & Health
-membertype: ['associated']
+membertype: ['affiliate']
+affiliate_info:
+  role: Director
+  organization: TUM Medicine & Health
 email: thomas.misgeld@tum.de
 photo: 'images/misgeld_thomas.jpg'
-website:
+links:
   - label: 'Professional Website'
     url: https://www.ifn.med.tum.de/new/
   - label: 'Professional Profile'
@@ -39,7 +40,10 @@ profile <- div(class = "people-profile",
     ),
     div(class = "people-info",
       p(class = "people-position", position),
-      p(class = "people-faculty", paste0("Faculty of ", faculty)),
+      if (!is.null(faculty) & faculty != "") {p(class = "people-faculty", paste0("Faculty of ", faculty))},
+      if (faculty == "" & !is.null(affiliate_organization)) {
+        p(class = "people-faculty", affiliate_organization)
+        },
       div(class = "people-contact", contact_items, social_links)
     )
   ),

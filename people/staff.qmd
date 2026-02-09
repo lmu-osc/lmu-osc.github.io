@@ -4,8 +4,10 @@ listing:
   - id: staff
     contents: 
       - people
-    template: listings/management-listing.ejs
-    sort: "surname asc"
+    template: listings/staff-listing.ejs
+    sort:
+      - "display_weight_staff asc"
+      - "surname asc"
     include: 
       membertype: "staff"
 
@@ -18,8 +20,9 @@ listing:
   }
 </style>
 :::{.staff-overview}
-Thanks to our [funders](../partners/funders.qmd), the OSC team comprises the following employees.
-The OSC is supported by several student assistants who maintain our website, help with the logistics of our events, post on our social media accounts, or contribute in the development of training material. If you are interested in becoming a HiWi for the OSC, please contact  <i class="bi bi-envelope fs-6" aria-hidden="true"></i> [Dr Malika Ihle](mailto:malika.ihle@lmu.de). 
+
+<a href="mailto:malika.ihle@lmu.de?subject=Research Assistant (HiWi) Inquiry" target="_blank" type="button" class="btn btn-outline-primary">Become a Research Assistant (HiWi)</a>
+
 :::
 
 ::: {#staff}

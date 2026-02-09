@@ -5,11 +5,11 @@ name: Robert Perneczky
 surname: Perneczky
 first_name: Robert
 position: Chair
-faculty: University hospital
+faculty: University Hospital
 membertype: ['lmu-individual']
 email: Robert.Perneczky@med.uni-muenchen.de
 photo: 'images/perneczky_robert.jpg'
-website:
+links:
   - label: 'Professional Profile'
     url: https://www.synergy-munich.de/about/members/5be5301b72fd3b59
 social_media:
@@ -37,7 +37,10 @@ profile <- div(class = "people-profile",
     ),
     div(class = "people-info",
       p(class = "people-position", position),
-      p(class = "people-faculty", paste0("Faculty of ", faculty)),
+      if (!is.null(faculty) & faculty != "") {p(class = "people-faculty", paste0("Faculty of ", faculty))},
+      if (faculty == "" & !is.null(affiliate_organization)) {
+        p(class = "people-faculty", affiliate_organization)
+        },
       div(class = "people-contact", contact_items, social_links)
     )
   ),

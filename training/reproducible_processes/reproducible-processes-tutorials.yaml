@@ -1,0 +1,80 @@
+- title: "Introduction to R"
+  description: "Learn the basics of the R programming language"
+  image: "../images/introduction to r.svg"
+  categories:
+    - R
+  content_category:
+    - Reproducible Processes
+  within_cat_order: 10
+  path: https://lmu-osc.github.io/introduction-to-R/
+  type: Self-Paced Tutorial
+
+- title: "Introduction to Version Control within RStudio"
+  description: "Explore the git version control software and its integrations with the popular RStudio interactive development environment"
+  image: "../images/introduction to git.svg"
+  categories:
+    - R
+    - Git
+  content_category:
+    - Reproducible Processes
+  within_cat_order: 20
+  path: https://lmu-osc.github.io/Introduction-RStudio-Git-GitHub/
+  type: Self-Paced Tutorial
+
+- title: "Collaborative coding with GitHub and RStudio"
+  description: "After learning the basics of git, apply your skills in an interactive tutorial"
+  image: "../images/introduction to github.svg"
+  categories:
+    - R
+    - Git
+    - GitHub
+  content_category:
+    - Reproducible Processes
+  within_cat_order: 30
+  path: https://lmu-osc.github.io/Collaborative-RStudio-GitHub/
+  type: Self-Paced Tutorial
+
+- title: "Advanced Git"
+  description: "Learn git features like branching and gitflow, and how to take advantage of issues, pull requests, and more on GitHub"
+  image: "../images/advanced git.svg"
+  categories:
+    - Git
+    - GitHub
+  content_category:
+    - Reproducible Processes
+  within_cat_order: 40
+
+- title: "Introduction to Quarto"
+  description: "Discover the basics of setting up computationally reproducible analyses, manuscripts, and presentations"
+  image: "../images/introduction to quarto.svg"
+  categories:
+    - R
+    - Quarto
+  content_category:
+    - Reproducible Processes
+  within_cat_order: 50
+  path: https://lmu-osc.github.io/introduction-to-Quarto/
+  type: Self-Paced Tutorial
+
+- title: "Introduction to Zotero"
+  description: "Easily save your sources to the Zotero software, and learn how to insert these citations into your documents"
+  image: "../images/introduction to zotero.svg"
+  categories:
+    - Zotero
+    - Quarto
+  content_category:
+    - Reproducible Processes
+  within_cat_order: 60
+  path: https://lmu-osc.github.io/introduction-to-zotero/
+  type: Self-Paced Tutorial
+
+- title: "Introduction to {renv}"
+  description: "Make your projects reproducible by learning how to (easily) manage your R packages"
+  image: "../images/introduction to renv.svg"
+  categories:
+    - R
+  content_category:
+    - Reproducible Processes
+  within_cat_order: 70
+  path: https://lmu-osc.github.io/introduction-to-renv/
+  type: Self-Paced Tutorial

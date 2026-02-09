@@ -1,10 +1,7 @@
 ---
-title: "Open Science Initiative in Statistics"
+pagetitle: "Open Science Initiative in Statistics"
 format: 
   html:
-    include-in-header: 
-      - text: |
-          <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     css: styles.css
 page-layout: full
 ---
@@ -47,13 +44,13 @@ page-layout: full
             <h2 class="osc-init-involved__title"><i class="bi bi-people"></i> Members</h2>
 
             <ul class="osc-init-organizer-list">
-                <li class="osc-init-organizer-item"><a href="../../people/people/00042_andreas_bender.html">Dr. Andreas Bender</a></li>
-                <li class="osc-init-organizer-item"><a href="../../people/people/00070_moritz_herrmann.html">Dr. Moritz Herrmann</a></li>
-                <li class="osc-init-organizer-item"><a href="../../people/people/00038_matthias_assenmacher.html">Dr. Matthias Aßenmacher</a></li>
-                <li class="osc-init-organizer-item"><a href="../../people/people/00034_lisa_wimmer.html">Lisa Wimmer</a></li>
+                <li class="osc-init-organizer-item"><a href="/people/people/andreas_bender.html">Dr. Andreas Bender</a></li>
+                <li class="osc-init-organizer-item"><a href="/people/people/moritz_herrmann.html">Dr. Moritz Herrmann</a></li>
+                <li class="osc-init-organizer-item"><a href="/people/people/matthias_assenmacher.html">Dr. Matthias Aßenmacher</a></li>
+                <li class="osc-init-organizer-item"><a href="/people/people/lisa_wimmer.html">Lisa Wimmer</a></li>
                 <li class="osc-init-organizer-item"><a href="#">Martje Rave</a></li>
-                <li class="osc-init-organizer-item"><a href="../../people/people/00025_patrick_oliver_schenk.html">Patrick Schenk</a></li>
-                <li class="osc-init-organizer-item"><a href="../../people/people/00011_felix_henninger.html">Felix Henninger</a></li>
+                <li class="osc-init-organizer-item"><a href="/people/people/patrick_oliver_schenk.html">Patrick Schenk</a></li>
+                <li class="osc-init-organizer-item"><a href="/people/people/felix_henninger.html">Felix Henninger</a></li>
             </ul>
 
         </div>

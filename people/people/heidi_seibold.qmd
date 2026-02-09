@@ -4,12 +4,13 @@ academic_title: Dr.
 name: Heidi Seibold
 surname: Seibold
 first_name: Heidi
-position: Trainer and Consultant
-faculty: NA
-membertype: ['associated']
+membertype: ['affiliate']
+affiliate_info:
+  role: Trainer and Consultant
+  organization: Digital Research Academy
 email: heidi@seibold.co
 photo: 'images/seibold_heidi.jpg'
-website:
+links:
   - label: 'Personal Website'
     url: https://heidiseibold.com/
 social_media:
@@ -29,6 +30,7 @@ mission_statement:
 ```{r}
 #| echo: false
 
+
 # Compose the full profile
 profile <- div(class = "people-profile",
   div(class = "people-header",
@@ -37,7 +39,10 @@ profile <- div(class = "people-profile",
     ),
     div(class = "people-info",
       p(class = "people-position", position),
-      p(class = "people-faculty", paste0("Faculty of ", faculty)),
+      if (!is.null(faculty) & faculty != "") {p(class = "people-faculty", paste0("Faculty of ", faculty))},
+      if (faculty == "" & !is.null(affiliate_organization)) {
+        p(class = "people-faculty", affiliate_organization)
+        },
       div(class = "people-contact", contact_items, social_links)
     )
   ),

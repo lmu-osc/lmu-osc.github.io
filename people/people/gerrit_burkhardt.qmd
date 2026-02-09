@@ -5,11 +5,11 @@ name: Gerrit Burkhardt
 surname: Burkhardt
 first_name: Gerrit
 position: Researcher
-faculty: University hospital
+faculty: University Hospital
 membertype: ['lmu-individual']
 email: gerrit.burkhardt@med.uni-muenchen.de
 photo: 'images/burkhardt_gerrit.jpeg'
-website: 
+links: 
   - label: 'Professional Profile'
     url: https://www.researchgate.net/profile/Gerrit-Burkhardt
 social_media:
@@ -37,7 +37,10 @@ profile <- div(class = "people-profile",
     ),
     div(class = "people-info",
       p(class = "people-position", position),
-      p(class = "people-faculty", paste0("Faculty of ", faculty)),
+      if (!is.null(faculty) & faculty != "") {p(class = "people-faculty", paste0("Faculty of ", faculty))},
+      if (faculty == "" & !is.null(affiliate_organization)) {
+        p(class = "people-faculty", affiliate_organization)
+        },
       div(class = "people-contact", contact_items, social_links)
     )
   ),

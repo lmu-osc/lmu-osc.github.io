@@ -8,8 +8,8 @@ if (email != "") {
     )
   )
 }
-if (length(website) > 0) {
-  for (site in website) {
+if (length(links) > 0) {
+  for (site in links) {
     label <- if (!is.null(site$label)) site$label else "Website"
     url <- if (!is.null(site$url)) site$url else "#"
     contact_items <- tagAppendChild(contact_items,

@@ -5,11 +5,11 @@ name: Adam Sorbie
 surname: Sorbie
 first_name: Adam
 position: Researcher
-faculty: University hospital
+faculty: University Hospital
 membertype: ['lmu-individual']
 email: adam.sorbie@med.uni-muenchen.de
 photo: 'images/sorbie_adam.jpg'
-website:
+links:
   - label: 'LMU Profile'
     url: https://www.isd-research.de/benakis-lab
   - label: 'Personal Website'
@@ -39,7 +39,10 @@ profile <- div(class = "people-profile",
     ),
     div(class = "people-info",
       p(class = "people-position", position),
-      p(class = "people-faculty", paste0("Faculty of ", faculty)),
+      if (!is.null(faculty) & faculty != "") {p(class = "people-faculty", paste0("Faculty of ", faculty))},
+      if (faculty == "" & !is.null(affiliate_organization)) {
+        p(class = "people-faculty", affiliate_organization)
+        },
       div(class = "people-contact", contact_items, social_links)
     )
   ),

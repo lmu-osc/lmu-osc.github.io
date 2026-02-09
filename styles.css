@@ -1,5 +1,21 @@
 
+
+:root{
+  --osc-accent: #00883A;
+}
+
+
 .navbar-logo {
   border-radius: 4px;
   object-fit: cover;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 900;              
+  color: var(--osc-accent);               
+}
+
+h2, h3, h4, h5, h6 {
+  color: #00883A;
 }

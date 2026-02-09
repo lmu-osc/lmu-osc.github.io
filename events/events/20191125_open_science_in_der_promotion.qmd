@@ -1,17 +1,13 @@
 ---
-format:
-    html:
-        table-of-contents: false
-        css: event-page-styles.css
-page-layout: full
-pagetitle: 'Open Science in der Promotion'
-categories: 'Workshop'
+title: Open Science in der Promotion
+categories: 'Discussion'
+date: "November 25, 2019"
 
 # Event categories
 event:
-  title: 'Open Science in der Promotion'
+  title: Open Science in der Promotion
   description: ""
-  categories:  'Workshop'
+  categories:  'Discussion'
   date: "November 25, 2019"
   end_date: "November 25, 2019"
   time: "16:00"
@@ -20,7 +16,7 @@ event:
     address: ""
     map_url: ""
   format:
-    type: 'Workshop'
+    type: 'Discussion'
     detail: ""
   language:
     primary: "German"
@@ -53,7 +49,6 @@ host:
   - name: "LMU Open Science Center"
 ---
 <!-- MANDAORY SECTION START  -->
-<h1 class="fs-1 text-primary"> {{< meta event.title >}} </h1>
 
 {{< include templates/_setup.qmd >}}
 {{< include templates/_info_boxes.qmd >}}

@@ -14,10 +14,6 @@
     padding: 2rem;
     width:100%;
 }
-.quarto-title-block,
-.quarto-title {
-  display: none !important;
-}
 
 .osc-init-header {
     display: flex;

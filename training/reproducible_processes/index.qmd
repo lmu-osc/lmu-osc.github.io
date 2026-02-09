@@ -1,0 +1,15 @@
+---
+title: "Reproducible Processes"
+description: "From **programming** to **reproducible manuscripts**"
+tutorial-home-order: 04
+image: "../images/reproducible processes.svg"
+listing:
+  type: default
+  contents:
+    - /**.qmd
+    - reproducible-processes-tutorials.yaml
+  fields: [title, description, categories, image, type]
+  sort:
+    - within_cat_order
+---
+

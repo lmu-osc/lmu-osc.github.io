@@ -1,5 +1,5 @@
 ---
-title: "Funding Institutional Members"
+pagetitle: "Funding Institutional Members"
 format: 
   html:
     page-layout: full
@@ -21,10 +21,6 @@ body {
   min-height: 100vh;
 }
 
-.quarto-title-block,
-.quarto-title {
-  display: none !important;
-}
 .header-section {
   font-size: 2.6rem;
   font-weight: 700;
@@ -225,7 +221,7 @@ hr {
             <img src="images/logo_origins.jpg" class="member-grid-image" alt="Cluster of Excellence: Origins logo">
             <div class="member-grid-name">Cluster of Excellence: Origins</div>
             <div class="member-grid-faculty">Contact Person: </div>
-            <a href="../../people/people/00083_thomas_kuhr.html" class="contact-link">Prof. Dr. Thomas Kuhr</a>
+            <a href="/people/people/thomas_kuhr.html" class="contact-link">Prof. Dr. Thomas Kuhr</a>
             <div class="member-socials">
                 <a href="https://www.origins-cluster.de/en/" title="Website" target="_blank" class="social-link"><i class="fa-solid fa-globe"></i>  Website</a>
             </div>
@@ -244,7 +240,7 @@ hr {
         <img src="images/synergy.jpg" class="member-grid-image" alt="Cluster of Excellence: SyNergy logo">
         <div class="member-grid-name">Cluster of Excellence: SyNergy</div>
         <div class="member-grid-faculty">Contact Person: </div>
-        <a href="../../people/people/00050_martin_dichgans.html" class="contact-link">Prof. Dr. Martin Dichgans</a>
+        <a href="/people/people/martin_dichgans.html" class="contact-link">Prof. Dr. Martin Dichgans</a>
         <div class="member-socials">
             <a href="https://www.synergy-munich.de/synergy" title="Website" target="_blank" class="social-link"><i class="fa-solid fa-globe"></i>  Website</a>
         </div>
@@ -264,7 +260,7 @@ hr {
         <img src="images/lmu_logo.jpg" class="member-grid-image" alt="LMU Munich logo">
         <div class="member-grid-name">Department of Psychology</div>
         <div class="member-grid-faculty">Contact Person: </div>
-        <a href="../../people/people/00001_felix_schoenbrodt.html" class="contact-link">Prof. Dr. Felix Schönbrodt</a>
+        <a href="/people/people/felix_schoenbrodt.qmd" class="contact-link">Prof. Dr. Felix Schönbrodt</a>
         <div class="member-socials">
             <a href="https://www.lmu.de/psy/de/" title="Website" target="_blank" class="social-link"><i class="fa-solid fa-globe"></i>  Website</a>
         </div>
@@ -273,7 +269,7 @@ hr {
 
 <div class="description-container">
     <div class="description-text">
-      Psychological science has seen a substantial replication crisis in the last years, with many large scale projects failing to replicate apparently well established findings. With the goal to increase the awareness and the adoption of open science practices, in July 2015 an Open Science Committee was established at the Department Psychology. Its project on the <a href="https://osf.io/mgwk8/">Open Science Framework (OSF)</a> provides different documents and presentations that are used in research and teaching. Furthermore, since 2016 all job descriptions for professorship positions at our department included an <a href="http://www.nicebread.de/open-science-hiring-practices/">"Open Science track record"</a> as desirable characteristic of an applicant. Additionally, we decided to require a PhD/Dissertation agreement between all PhD students and their supervisors that includes planned open science practices. <a href="https://www.fak11.lmu.de/dep_psychologie/osc/dissertation_agreement/index.html">A template for this kind of agreement</a> is provided on our website
+      Psychological science has seen a substantial replication crisis in the last years, with many large scale projects failing to replicate apparently well established findings. With the goal to increase the awareness and the adoption of open science practices, in July 2015 an Open Science Committee was established at the Department Psychology. Its project on the <a href="https://osf.io/mgwk8/">Open Science Framework (OSF)</a> provides different documents and presentations that are used in research and teaching. Furthermore, since 2016 all job descriptions for professorship positions at our department included an <a href="http://www.nicebread.de/open-science-hiring-practices/">"Open Science track record"</a> as desirable characteristic of an applicant. Additionally, we decided to require a PhD/Dissertation agreement between all PhD students and their supervisors that includes planned open science practices. <a href="https://www.lmu.de/psy/de/forschung/open-science-massnahmen//index.html">A template for this kind of agreement</a> is provided on our website
     </div>
 </div>
 
@@ -284,7 +280,7 @@ hr {
         <img src="images/lmu_logo.jpg" class="member-grid-image" alt="LMU Munich logo">
         <div class="member-grid-name">Faculty of Biology</div>
         <div class="member-grid-faculty">Contact Person: </div>
-        <a href="../../people/people/00051_niels_dingemanse.html" class="contact-link">Prof. Dr. Niels Dingemanse</a>
+        <a href="/people/people/niels_dingemanse.qmd" class="contact-link">Prof. Dr. Niels Dingemanse</a>
         <div class="member-socials">
             <a href="https://www.bio.lmu.de/en/" title="Website" target="_blank" class="social-link"><i class="fa-solid fa-globe"></i>  Website</a>
         </div>
@@ -304,7 +300,7 @@ hr {
         <img src="images/som.png" class="member-grid-image" alt="Munich School of Management logo">
         <div class="member-grid-name">Faculty of Business Administration - Munich School of Management</div>
         <div class="member-grid-faculty">Contact Person: </div>
-        <a href="../../people/people/00057_ralf_elsas.html" class="contact-link">Prof. Dr. Ralf Elsas</a>
+        <a href="/people/people/ralf_elsas.qmd" class="contact-link">Prof. Dr. Ralf Elsas</a>
         <div class="member-socials">
             <a href="https://www.som.lmu.de/en/" title="Website" target="_blank" class="social-link"><i class="fa-solid fa-globe"></i>  Website</a>
         </div>

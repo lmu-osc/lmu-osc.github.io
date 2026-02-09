@@ -3,7 +3,9 @@
 #| message: false
 #| warning: false
 
-
+`%||%` <- function(x, y) {
+    if (is.null(x)) y else x
+  }
 
 # small helper: render one person (list with $name and optional $url, or plain character)
 render_person <- function(person) {

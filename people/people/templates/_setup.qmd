@@ -16,15 +16,20 @@ get_param <- function(param_name, default = "") {
 }
 
 # Extract member information
+affiliate_role <- get_param("affiliate_info", NULL)$role
+affiliate_organization <- get_param("affiliate_info", NULL)$organization
 name <- get_param("title", NULL)
 position <- get_param("position", "")
+if (position == "" & !is.null(member[["affiliate_info"]][["role"]])) {
+  position <- affiliate_role
+}
 photo <- get_param("photo", "images/default.svg")
 email <- get_param("email", "")
 social_media <- get_param("social_media", list())
 mission_paragraphs <- get_param("mission_statement", list())
 research_interests <- get_param("research_interests", list())
 publications <- get_param("publications", list())
-website <- get_param("website", list())
+links <- get_param("links", list())
 faculty <- get_param("faculty", "")
 
 # Map platform names to Bootstrap icons
@@ -54,6 +59,6 @@ order_strings <- function(x, known_order) {
 
 # Order social media links
 site_priorty <- c("LMU Profile", "Professional Profile", "Personal Website", "Professional Website")
-website <- order_strings(website, site_priorty)
+links <- order_strings(links, site_priorty)
 
 ```

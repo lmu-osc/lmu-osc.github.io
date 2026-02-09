@@ -1,0 +1,61 @@
+---
+title: Tejaswini Sharma
+academic_title: M.Sc. Student
+name: Tejaswini Sharma
+surname: Sharma
+first_name: Tejaswini
+osc_staff_title: Research Assistant
+faculty: Psychology and Education
+membertype: ['fellow', 'staff']
+display_weight_staff: 99
+email: tejaswini.sharma@psy.lmu.de
+photo: images/tejaswini-sharma_25-09-26_164-web.jpg
+website:
+  - label: LinkedIn Profile
+    url: https://www.linkedin.com/in/tejaswinisharma043/
+social_media:
+  ORCID: https://orcid.org/0009-0000-0305-9751
+personal:
+  -  "I am an M.Sc. student in Psychology: Learning Sciences at LMU Munich, passionate about integrating educational research with Open Science. My broader research interest lies in creating inclusive and research-driven learning environments, and I see Open Science as a key foundation for ensuring that research is transparent, collaborative, and impactful across disciplines. <br> At the OSC, I support the development of training materials for the Train-the-Trainer programme, focusing on reproducible workflows, FAIR data principles, and instructional design for academic contexts." 
+mission_statement:
+  -  "I am an M.Sc. student in Psychology: Learning Sciences at LMU Munich, passionate about integrating educational research with Open Science. My broader research interest lies in creating inclusive and research-driven learning environments, and I see Open Science as a key foundation for ensuring that research is transparent, collaborative, and impactful across disciplines. <br> At the OSC, I support the development of training materials for the Train-the-Trainer programme, focusing on reproducible workflows, FAIR data principles, and instructional design for academic contexts." 
+
+---
+{{< include templates/_setup.qmd >}}
+{{< include templates/_contact_items.qmd >}}
+{{< include templates/_social_links.qmd >}}
+{{< include templates/_mission_statement.qmd >}}
+{{< include templates/_research_interests.qmd >}}
+{{< include templates/_selected_publications.qmd >}}
+
+
+
+```{r}
+#| echo: false
+
+# Compose the full profile
+profile <- div(class = "people-profile",
+  div(class = "people-header",
+    div(class = "people-photo",
+      img(src = photo)
+    ),
+    div(class = "people-info",
+      p(class = "people-position", position),
+      if (!is.null(faculty) & faculty != "") {p(class = "people-faculty", paste0("Faculty of ", faculty))},
+      if (faculty == "" & !is.null(affiliate_organization)) {
+        p(class = "people-faculty", affiliate_organization)
+        },
+      div(class = "people-contact", contact_items, social_links)
+    )
+  ),
+  mission_block,
+  # custom content would most likely go here, right after the mission_block
+  div(class = "people-content",
+    interests_block,
+    publications_block
+  )
+)
+
+# Render the profile
+browsable(profile)  
+```

@@ -1,19 +1,14 @@
 ---
-title: "Institutional members"
+title: "Institutional Members"
 format: 
   html:
     css: styles.css
-    include-in-header: 
-      - text: |
-          <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     page-layout: full
 ---
 
 ```{=html}
 
 <div class="partner-container">
-  <h1 class = "partner-heading">Our Institutional Members</h1>
-  <br>
   <p class="intro-text">We accept institutional memberships from departments, faculties, units, or central institutions of the LMU, which provide infrastructure or other services that facilitate the goals of the OSC.</p>
   
   <div class="partners-grid">

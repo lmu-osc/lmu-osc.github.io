@@ -1,14 +1,10 @@
 ---
-format: 
-    html:
-        table-of-contents: false
-        css: event-page-styles.css
-page-layout: full
+date: "July 15, 2024"
 categories: ["Workshop", "Professional Instruction"]
 
 # Event Information
 event:
-  title: "Software Carpentry - R flavored - Philologicum"
+  title: Software Carpentry - R flavored - Philologicum
   date: "July 15, 2024"
   end_date: "August 16, 2025"
   time: "14:00 - 17:00 CET"
@@ -68,9 +64,7 @@ host:
 ---
 
 
-<link rel = "stylesheet"  href = "https://cdn.jsdelivr.net/npm/bootstrap-icons@5.6.2/font/bootstrap-icons.css">
 
-<h1 class="fs-1 text-primary"> {{< meta event.title >}} </h1>
 
 
 {{< include templates/_setup.qmd >}}

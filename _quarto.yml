@@ -2,15 +2,16 @@ project:
   type: website
   output-dir: _site
   pre-render: curl https://raw.githubusercontent.com/lmu-osc/branding-resources/refs/heads/main/lmu-osc-custom.scss -o lmu-osc-custom.scss
+  resources:
+    - assets/
 
 website:
   title: "LMU Open Science Center"
   favicon: assets/img/lmu_osc_logo.jpg
-  reader-mode: true
   search: true
   page-navigation: true
   repo-url: https://github.com/lmu-osc/lmu-osc.github.io
-  repo-actions: [edit, issue]
+  repo-actions: [none]
 
   announcement: 
     icon: info-circle
@@ -30,7 +31,7 @@ website:
       - href: index.qmd
         icon: house-door
         text: Home
-      - href: about/about.qmd
+      - href: about/index.qmd
         icon: info-circle
         text: About
       - text: People
@@ -38,28 +39,29 @@ website:
         # href: people/overview.qmd
         menu: 
           - people/management.qmd
-          - people/staff.qmd
+          - text: Staff
+            href: people/staff.qmd
           - people/scientific-board.qmd
-          - people/advisory-board.qmd
+          - people/advisors.qmd
           - people/members.qmd
           - people/fellows.qmd
           - people/alumnae.qmd
       - text: Partners
         icon: boxes
         menu:
-          - partners/institutional_members.qmd
-          - partners/local_os_intiatives.qmd
-          - partners/other_lmu_support_services.qmd
-          - partners/externals.qmd
-          - partners/funders.qmd
-      # - sidebar:training
+          - text: Institutional Members
+            href: partners/institutional_members.qmd
+          - text: Local Open Science Initiatives
+            href: partners/local_os_initiatives.qmd
+          - text: Other LMU Support Services
+            href: partners/other_lmu_support_services.qmd
+          - text: External Partners
+            href: partners/externals.qmd
+          - text: Funders
+            href: partners/funders.qmd
       - icon: mortarboard
         text: Training
-        href: training.qmd
-#       menu:
-#         - self-training.qmd
-#         - train-the-trainer.qmd
-#         - open-research-cycle.qmd
+        href: training/index.qmd
       - href: events/index.qmd
         icon: calendar-event
         text: Events
@@ -71,50 +73,120 @@ website:
       
   sidebar:
     - id: training
-      title: "Training"
-      icon: mortarboard
+      # style and background inherited by other sidebars
       style: "docked"
       background: light
-      collapse-level: 2
+      collapse-level: 3
+      title: "Training"
       contents: 
-        - self-training.qmd
-        - train-the-trainer.qmd
-        - open-research-cycle.qmd
-  # 
-  #   - id: gittutorials
-  #     title: "Git Tutorials"
-  #     style: "docked"
-  #     background: light
-  #     collapse-level: 2
-  #     contents: 
-  #       - qmd_one.qmd
-  #       - qmd_two.qmd
-  #       
-  #   - id: quartotutorials
-  #     title: "Quarto Tutorials"
-  #     style: "docked"
-  #     background: light
-  #     collapse-level: 2
-  #     contents: 
-  #       - qmd_one.qmd
-  #       - qmd_two.qmd
+        - section: "Training Tracks"
+          href: training/index.qmd
+          contents:
+            - section: "Self-Learning Catalog"
+              href: training/self_learning.qmd 
+              contents:
+                - text: "Principles"
+                  href: training/principles/index.qmd
+                  contents: 
+                    - auto: "training/principles/*.qmd"
+                    - training/principles/principles-tutorials.yaml
+                - text: "Study Planning"
+                  href: training/study_planning/index.qmd
+                  contents: 
+                    - auto: "training/study_planning/*.qmd"
+                    - training/study_planning/study-planning-tutorials.yaml
+                - text: "Data Management"
+                  href: training/data_management/index.qmd
+                  contents: 
+                    - auto: "training/data_management/*.qmd"
+                    - training/data_management/data-management-tutorials.yaml
+                - text: "Reproducible Processes"
+                  href: training/reproducible_processes/index.qmd
+                  contents: 
+                    - auto: "training/reproducible_processes/*.qmd"
+                    - training/reproducible_processes/reproducible-processes-tutorials.yaml
+                - text: "Publishing Outputs"
+                  href: training/publishing_outputs/index.qmd
+                  contents: 
+                    - auto: "training/publishing_outputs/*.qmd"
+                    - training/publishing_outputs/publishing-outputs-tutorials.yaml
+            - text: "Research Cycle Handbook"
+              href: training/open_research_cycle.qmd
+            - text: "Educator Toolkit"
+              href: training/train_the_trainer.qmd
+        
+    - id: partners
+      collapse-level: 3
+      title: "Partners"
+      contents: 
+        - section: "Partners"
+          href: partners/index.qmd
+          contents:
+            - text: "Institutional Members"
+              href: partners/institutional_members.qmd 
+            - section: "Local Open Science Initiatives"
+              href: partners/local_os_initiatives.qmd
+              contents:
+                - text: "OSIM"
+                  href: partners/local_os_initiatives/osim.qmd
+                - text: "OSIS"
+                  href: partners/local_os_initiatives/osis.qmd
+                - text: "OSIP"
+                  href: partners/local_os_initiatives/osip.qmd
+                - text: "ReproducibiliTea"
+                  href: partners/local_os_initiatives/reproducibilitea.qmd
+                - text: "Hacky Hour"
+                  href: partners/local_os_initiatives/hackyhour.qmd
+                - text: "Munich RSE"
+                  href: partners/local_os_initiatives/munich_rse.qmd
+            - text: "Other LMU Support Services"
+              href: partners/other_lmu_support_services.qmd 
+            - text: "External Partners"
+              href: partners/externals.qmd 
+            - text: "Funders"
+              href: partners/funders.qmd
+
+    - id: people
+      collapse-level: 1
+      title: "People"
+      contents: 
+        - section: "People"
+          href: people/index.qmd
+          contents:
+            - text: "Management"
+              href: people/management.qmd
+            - text: "Staff & Research Assistants"
+              href: people/staff.qmd 
+            - text: "Scientific Board"
+              href: people/scientific-board.qmd 
+            - text: "Advisors"
+              href: people/advisors.qmd 
+            - text: "Members"
+              href: people/members.qmd 
+            - text: "Fellows"
+              href: people/fellows.qmd 
+            - text: "Alumnae"
+              href: people/alumnae.qmd
+
 
 format:
   html:
+    link-external-newwindow: true 
     theme:
       - cosmo
       - lmu-osc-custom.scss
     css: 
       - https://raw.githubusercontent.com/lmu-osc/branding-resources/refs/heads/main/styles.css
       - assets/fontawesome-free-7.1.0-web/css/all.min.css
-      - custom-navbar.css
       - styles.css
       - footer/footer-style.css
+      - custom-navbar.css
     toc: true
     include-in-header:
       - file: matomo_analytics.html
     include-after-body:
       - file: footer/footer.html
+      
 
 
 

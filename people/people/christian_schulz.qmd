@@ -5,11 +5,11 @@ name: Christian Schulz
 surname: Schulz
 first_name: Christian
 position: Deputy Director of the Medical Clinic and Polyclinic II
-faculty: University hospital
+faculty: University Hospital
 membertype: ['lmu-individual']
 email: Christian.Schulz@med.uni-muenchen.de
 photo: 'images/schulz_christian.jpg'
-website:
+links:
   - label: 'LMU Profile'
     url: https://www.lmu-klinikum.de/kardiologie/forschung-und-lehre/grundlagenforschung/ag-schulz-weinberger/8005054d63d1b4f9?kumActiveTabs=3ae583fa%403
 social_media:
@@ -38,7 +38,10 @@ profile <- div(class = "people-profile",
     ),
     div(class = "people-info",
       p(class = "people-position", position),
-      p(class = "people-faculty", paste0("Faculty of ", faculty)),
+      if (!is.null(faculty) & faculty != "") {p(class = "people-faculty", paste0("Faculty of ", faculty))},
+      if (faculty == "" & !is.null(affiliate_organization)) {
+        p(class = "people-faculty", affiliate_organization)
+        },
       div(class = "people-contact", contact_items, social_links)
     )
   ),

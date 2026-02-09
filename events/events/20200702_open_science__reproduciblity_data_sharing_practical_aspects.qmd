@@ -1,17 +1,13 @@
 ---
-format:
-    html:
-        table-of-contents: false
-        css: event-page-styles.css
-page-layout: full
-pagetitle: '"Open Science - Reproduciblity, Data Sharing, Practical Aspects"'
-categories: 'Workshop'
+title: "Open Science - Reproduciblity, Data Sharing, Practical Aspects"
+categories: 'Symposium'
+date: "July 02, 2020"
 
 # Event categories
 event:
-  title: '"Open Science - Reproduciblity, Data Sharing, Practical Aspects"'
+  title: "Open Science - Reproduciblity, Data Sharing, Practical Aspects"
   description: ""
-  categories:  'Workshop'
+  categories:  'Symposium'
   date: "July 02, 2020"
   end_date: "July 02, 2020"
   time: "10:30-12:15"
@@ -20,7 +16,7 @@ event:
     address: ""
     map_url: ""
   format:
-    type: 'Workshop'
+    type: 'Symposium'
     detail: ""
   language:
     primary: "English"
@@ -53,7 +49,6 @@ host:
   - name: "LMU Open Science Center"
 ---
 <!-- MANDAORY SECTION START  -->
-<h1 class="fs-1 text-primary"> {{< meta event.title >}} </h1>
 
 {{< include templates/_setup.qmd >}}
 {{< include templates/_info_boxes.qmd >}}
@@ -66,8 +61,8 @@ host:
 <!-- {{< include templates/_event_description.qmd >}} -->
 
 <p> </p><p>We are incredibly excited to announce the second workshop held by the LMU Open Science Initiative in Medicine (OSIM):</p><p style="text-align: center;"><strong>"Open Science - Reproduciblity, Data Sharing, Practical Aspects"</strong></p><p>This time the workshop will be online, consisting of two parts:</p><ul>
-<li><a href="https://t1p.de/j6fr">Input videos on YouTube </a></li>
-<li>An exciting <strong><em>Keynote</em></strong> ("Open Science for Research Questions, Data, and Analyses")  by Professor of Clinical Biostatistics and Medical Decision Making Ewout Steyerberg on <a href="https://t1p.de/87p0">Zoom</a> (July 2nd 2020)</li>
+<li><a href="https://www.youtube.com/channel/UCEFq307_Zijcmw1Xto-eqeg">Input videos on YouTube </a></li>
+<li>An exciting <strong><em>Keynote</em></strong> ("Open Science for Research Questions, Data, and Analyses")  by Professor of Clinical Biostatistics and Medical Decision Making Ewout Steyerberg on <a href="https://lmu-munich.zoom.us/j/93265169786?pwd=ZE5xLzhnNGFoRmx0WjRFRHh0VWRTZz09">Zoom</a> (July 2nd 2020)</li>
 </ul>
 <p>Detailed information can be found in the following flyer:</p><p><img src="../../images/workshop_osim.jpg" alt="online_workshop_osim"><br><br></p><p> </p><div class="g-clear"></div>
 

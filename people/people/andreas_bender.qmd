@@ -9,13 +9,13 @@ faculty: Math, Informatics & Stats
 membertype: ['lmu-individual']
 email: andreas.bender@stat.uni-muenchen.de
 photo: 'images/bender_andreas.jpg'
-website:
+links:
   - label: 'LMU Profile'
     url: https://www.cas.lmu.de/de/personen-am-cas/details/andreas-bender-fcbcf64c.html
 social_media:
   ORCID: 'https://orcid.org/0000-0001-5628-8611'
 mission_statement:
-  - I am a Research Associate and Lecturer at the Department of Statistics, LMU and part of the working groups <a href="https://www.en.stablab.stat.uni-muenchen.de/index.html">Statistical Consulting Unit</a> and <a href="https://www.slds.stat.uni-muenchen.de/">Statistical Learning &amp; Data Science</a>.
+  - I am a Research Associate and Lecturer at the Department of Statistics, LMU and part of the working groups <a href="https://www.stat.lmu.de/stablab/en/">Statistical Consulting Unit</a> and <a href="https://www.slds.stat.uni-muenchen.de/">Statistical Learning &amp; Data Science</a>.
   - As a consultant, I try to propagate good statistical practice in the applied sciences. As an educator, I try to raise awareness and sensitivity for open science issues like p-hacking and reproducibility. In my own research, I try to adhere to open science principles whenever possible, e.g., by sharing code and data, and by making manuscripts open access.
 ---
 {{< include templates/_setup.qmd >}}
@@ -38,7 +38,10 @@ profile <- div(class = "people-profile",
     ),
     div(class = "people-info",
       p(class = "people-position", position),
-      p(class = "people-faculty", paste0("Faculty of ", faculty)),
+      if (!is.null(faculty) & faculty != "") {p(class = "people-faculty", paste0("Faculty of ", faculty))},
+      if (faculty == "" & !is.null(affiliate_organization)) {
+        p(class = "people-faculty", affiliate_organization)
+        },
       div(class = "people-contact", contact_items, social_links)
     )
   ),

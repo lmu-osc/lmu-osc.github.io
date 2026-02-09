@@ -1,0 +1,15 @@
+---
+title: "Publishing Outputs"
+description: "From sharing **data** and **code** to **publishing articles**"
+tutorial-home-order: 05
+image: "../images/publishing outputs.svg"
+listing:
+  type: default
+  contents:
+    - /**.qmd
+    - publishing-outputs-tutorials.yaml
+  fields: [title, description, categories, image, type]
+  sort:
+    - within_cat_order
+---
+

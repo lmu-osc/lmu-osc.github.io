@@ -8,7 +8,7 @@ position: PhD Candidate
 faculty: Psychology & Education
 membertype: ['fellow']
 email: fkohrt@anche.no
-website:
+links:
   - label: 'LMU Profile'
     url: https://www.lmu.de/psy/de/personen/kontaktseite/florian-kohrt-9c878316.html
 social_media:
@@ -36,7 +36,10 @@ profile <- div(class = "people-profile",
     ),
     div(class = "people-info",
       p(class = "people-position", position),
-      p(class = "people-faculty", paste0("Faculty of ", faculty)),
+      if (!is.null(faculty) & faculty != "") {p(class = "people-faculty", paste0("Faculty of ", faculty))},
+      if (faculty == "" & !is.null(affiliate_organization)) {
+        p(class = "people-faculty", affiliate_organization)
+        },
       div(class = "people-contact", contact_items, social_links)
     )
   ),

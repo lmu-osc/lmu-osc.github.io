@@ -10,7 +10,7 @@ membertype: ['lmu-individual', "current scientific board"]
 email: nikolaus.plesnila@med.uni-muenchen.de
 photo: 'images/plesnila_nikolaus.jpg'
 personal: 'Reproducible studies are the basis of science, but reproducibility rates are still low, specifically in the field of experimental medicine. I would like to continue my service on the OSC Board to improve this situation by further developing the OSC, providing training to my fellow scientists and trainees, and improving standards of research at the Medical Faculty and beyond.'
-website:
+links:
   - label: 'LMU Profile'
     url: https://www.gsn.uni-muenchen.de/people/research/biomed_ns/plesnila/index.html
 social_media:
@@ -39,7 +39,10 @@ profile <- div(class = "people-profile",
     ),
     div(class = "people-info",
       p(class = "people-position", position),
-      p(class = "people-faculty", paste0("Faculty of ", faculty)),
+      if (!is.null(faculty) & faculty != "") {p(class = "people-faculty", paste0("Faculty of ", faculty))},
+      if (faculty == "" & !is.null(affiliate_organization)) {
+        p(class = "people-faculty", affiliate_organization)
+        },
       div(class = "people-contact", contact_items, social_links)
     )
   ),

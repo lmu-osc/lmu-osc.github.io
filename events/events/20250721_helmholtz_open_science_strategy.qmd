@@ -1,19 +1,15 @@
 ---
-format:
-    html:
-        table-of-contents: false
-        css: event-page-styles.css
-page-layout: full
-pagetitle: '"Helmholtz open science strategy"'
+title: "Helmholtz open science strategy"
 categories: 'Lecture'
+date: "July 21, 2025"
 
 # Event categories
 event:
-  title: '"Helmholtz open science strategy"'
+  title: "Helmholtz open science strategy"
   description: ""
   categories:  'Lecture'
-  date: "July 01, 2025"
-  end_date: "July 01, 2025"
+  date: "July 21, 2025"
+  end_date: "July 21, 2025"
   time: "16:00"
   location:
     name: "Hybrid (Theresienstr. 39 and via Zoom)"
@@ -53,7 +49,6 @@ host:
   - name: "LMU Open Science Center"
 ---
 <!-- MANDAORY SECTION START  -->
-<h1 class="fs-1 text-primary"> {{< meta event.title >}} </h1>
 
 {{< include templates/_setup.qmd >}}
 {{< include templates/_info_boxes.qmd >}}

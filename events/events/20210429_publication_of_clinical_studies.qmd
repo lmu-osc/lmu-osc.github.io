@@ -1,15 +1,11 @@
 ---
-format:
-    html:
-        table-of-contents: false
-        css: event-page-styles.css
-page-layout: full
-pagetitle: '"Publication of clinical studies"'
+title: "Publication of clinical studies"
 categories: 'Workshop'
+date: "April 29, 2021"
 
 # Event categories
 event:
-  title: '"Publication of clinical studies"'
+  title: "Publication of clinical studies"
   description: ""
   categories:  'Workshop'
   date: "April 29, 2021"
@@ -53,7 +49,6 @@ host:
   - name: "LMU Open Science Center"
 ---
 <!-- MANDAORY SECTION START  -->
-<h1 class="fs-1 text-primary"> {{< meta event.title >}} </h1>
 
 {{< include templates/_setup.qmd >}}
 {{< include templates/_info_boxes.qmd >}}
@@ -67,7 +62,7 @@ host:
 
 <p>We are incredibly excited to announce the third workshop held by the LMU Open Science Initiative in Medicine (OSIM):</p><p style="text-align: center;"><strong>"Publication of clinical studies"</strong></p><p>The workshop will be online, consisting of two lectures followed by an open discussion:</p><ul>
 <li>Dr. Till Bruckner (Founder of <a href="https://www.transparimed.org/">TranspariMED</a>): "Research waste and evidence distortion in medicine: Missing clinical trial results in Munich and beyond?"</li>
-<li>Dr. Anja Baumgartner (Quality and Study Manager of <a href="http://www.klinikum.uni-muenchen.de/Medizinische-Klinik-und-Poliklinik-III/de/team/index.html">Med. Clinic III, LMU Hospital</a>): "Veröffentlichung der Ergebnisse klinischer Prüfungen - Herausforderungen in der Praxis"</li>
+<li>Dr. Anja Baumgartner (Quality and Study Manager of <a href="https://www.lmu-klinikum.de/innere-medizin-3">Med. Clinic III, LMU Hospital</a>): "Veröffentlichung der Ergebnisse klinischer Prüfungen - Herausforderungen in der Praxis"</li>
 <li>
 </li>
 </ul>

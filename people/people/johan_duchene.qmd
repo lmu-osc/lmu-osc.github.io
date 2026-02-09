@@ -9,9 +9,9 @@ faculty: University Hospital
 membertype: ['lmu-individual']
 email: Johan.Duchene@med.uni-muenchen.de
 photo: 'images/duchene_johan.png'
-website:
+links:
   - label: 'LMU Profile'
-    url: http://www.klinikum.uni-muenchen.de/Institut-fuer-Prophylaxe-und-Epidemiologie-der-Kreislaufkrankheiten/de/0400-People/0430-PIs/Duchene/index.html
+    url: https://www.ipek-research.com/duchene-megens/7b685bd41ca8d010
 social_media:
   ORCID: 'https://orcid.org/0000-0002-3973-0022'
 mission_statement:
@@ -38,7 +38,10 @@ profile <- div(class = "people-profile",
     ),
     div(class = "people-info",
       p(class = "people-position", position),
-      p(class = "people-faculty", paste0("Faculty of ", faculty)),
+      if (!is.null(faculty) & faculty != "") {p(class = "people-faculty", paste0("Faculty of ", faculty))},
+      if (faculty == "" & !is.null(affiliate_organization)) {
+        p(class = "people-faculty", affiliate_organization)
+        },
       div(class = "people-contact", contact_items, social_links)
     )
   ),

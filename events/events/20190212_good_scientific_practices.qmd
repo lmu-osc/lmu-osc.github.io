@@ -1,19 +1,15 @@
 ---
-format:
-    html:
-        table-of-contents: false
-        css: event-page-styles.css
-page-layout: full
-pagetitle: '"Good Scientific Practices"'
+title: "Good Scientific Practices"
 categories: 'Workshop'
+date: "February 12, 2019"
 
 # Event categories
 event:
-  title: '"Good Scientific Practices"'
+  title: "Good Scientific Practices"
   description: ""
   categories:  'Workshop'
-  date: "January 09, 2019"
-  end_date: "January 09, 2019"
+  date: "February 12, 2019"
+  end_date: "February 12, 2019"
   time: "NA"
   location:
     name: "Leopoldstr. 13, 80802 München"
@@ -53,7 +49,6 @@ host:
   - name: "LMU Open Science Center"
 ---
 <!-- MANDAORY SECTION START  -->
-<h1 class="fs-1 text-primary"> {{< meta event.title >}} </h1>
 
 {{< include templates/_setup.qmd >}}
 {{< include templates/_info_boxes.qmd >}}
