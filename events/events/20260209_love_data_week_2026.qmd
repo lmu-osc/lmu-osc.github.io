@@ -1,0 +1,140 @@
+---
+date: "February 09, 2026"        
+categories: ['Event']
+
+# Event Information
+event:
+  title: 'Love Data Week: a series of events on research data management'
+  date: "February 09, 2026"         
+  end_date: "February 13, 2026"     
+  time:           
+  location:
+    name: "Online (Zoom)"
+    address: ""
+    map_url: ""
+  format:
+    type: 'Online'
+    detail: ""          
+  language:
+    primary: "English and German"
+    primary-code: "de"
+    detail: "de/en"
+  
+# Registration and Materials
+links:
+  registration: "https://forschungsdaten.info/fdm-im-deutschsprachigen-raum/love-data-week-2026/"  # Link to general website since different events within the Love Data Week have their own registration link
+  materials: "https://zenodo.org/communities/love-data-week-2026-forschungsdaten-info/records?q=&l=list&p=1&s=10&sort=newest"    
+  workshop_website: "https://forschungsdaten.info/fdm-im-deutschsprachigen-raum/love-data-week-2026/" 
+
+# Event Description: appears in the Event card an optionally in the Event page itself
+event_description: 
+  - "The topic of research data management (RDM) is present in many areas of scientific work. Love Data Week raises awareness of current developments in research data and its management worldwide with numerous informational and training events."
+
+# Add as many instructors as needed in the format below
+instructors:
+  - name: ""
+    url: ""
+
+# Add as many helpers as needed in the format below
+helpers: 
+  - name: ""
+
+
+# Contact Information
+contact:
+  name: ""
+  email: ""
+
+# Organizers can be individuals or institutions
+organizers:
+  - name: ""
+---
+
+<!-- MANDAORY SECTION START  -->
+
+
+{{< include templates/_setup.qmd >}}
+{{< include templates/_info_boxes.qmd >}}
+{{< include templates/_register_button.qmd >}}
+<!-- MANDAORY SECTION END  -->
+
+
+
+<!-- DETAILED EVENT DESCRIPTION HERE OR USE THE TEMPLATE BELOW TO INCLUDE THE STANDARD DESCRIPTION SECTION -->
+<!-- {{< include templates/_event_description.qmd >}} -->
+
+<p>The topic of research data management (RDM) is present in many areas of scientific work. For several years now, Love Data Week has been raising awareness of current developments in research data and its management worldwide. Numerous information and training events take place during this week-long event.</p>
+
+<p>This year, the Love Data Week will take place from February 9th, 2026, to February 13th, 2026, under the motto “Where’s the Data?”.</p>
+
+<p>Ludwig-Maximilians-Universität München is participating with selected events!</p>
+
+<p>Check out some items from the programme for the Love Data Week 2026:</p>
+
+<h2>Coffee-Lecture: Care for your Data! Speicherung, Backup und Langzeitarchivierung kurz erklärt</h2>
+<p>
+<span style="text-decoration: underline;">Montag, 09.02.2026 11:00 – 11:30 Uhr</span><br>
+<strong>Abstract</strong>: Diese Coffee Lecture gibt einen kompakten Überblick darüber, wie Forschungsdaten richtig gespeichert, gesichert und langfristig archiviert werden können. Anhand typischer Alltagssituationen aus der Forschungspraxis werden Risiken sichtbar gemacht und zentrale Unterschiede verständlich erklärt.<br>
+<strong>Sprache</strong>: deutsch<br>
+<strong>Teilnahmebedingungen</strong>: online, öffentlich ohne Anmeldung<br>
+<strong>Webroom</strong>: <a href="https://webroom.hrz.tu-chemnitz.de/gl/phi-0vj-sx9-evs" target="_blank">https://webroom.hrz.tu-chemnitz.de/gl/phi-0vj-sx9-evs</a><br>
+<em>Vortrag: Dr. Stefanie Nagel (UB, Abt. Open Science)</em>
+</p>
+
+<h2>Wissenschaftliches Arbeiten - effiziente Recherche und strukturiertes Datenmanagement</h2>
+<p>
+<span style="text-decoration: underline;">Dienstag, 10.02.2026 16:15 – 17:15 Uhr</span><br>
+<strong>Abstract</strong>: Diese Veranstaltung kann Ihnen wichtige Vorgehen und Tipps an die Hand geben, um das wissenschaftliche Arbeiten effizient und strukturiert anzugehen. Im ersten Teil der Veranstaltung wird auf die Informationsrecherche in Internet, Bibliothekskatalog und Datenbank eingegangen und dabei die Kunst des effizienten Recherchierens vermittelt. Der zweite Teil bezieht sich auf die strukturierte Datenablage bzw. das Datenmanagement. Themen hier sind insbesondere eine entsprechende Dateiablage und –benennung, sowie die Datensicherung durch die Einhaltung von Backup-Regeln<br>
+<strong>Sprache</strong>: deutsch<br>
+<strong>Teilnahmebedingungen</strong>: online, öffentlich mit Anmeldung<br>
+<strong>Registrierung</strong>: <a href="https://lmu-munich.zoom.us/meeting/register/r7yj_-hSQYOyVn_C0-YLCg#/registration" target="_blank">https://lmu-munich.zoom.us/meeting/register/r7yj_-hSQYOyVn_C0-YLCg#/registration</a><br>
+<em>Durchgeführt von: Pauline Aldenhövel &amp; Benjamin Mitterrutzner, Universitätsbibliothek der LMU München</em>
+</p>
+
+<h2>Introduction to Open Data and RDM Services at LMU</h2>
+<p>
+<span style="text-decoration: underline;">Mittwoch, 11.02.2026 10:00 – 12:00 Uhr</span><br>
+<strong>Abstract</strong>:<br>
+1. Introduction to Open Research Data (Dr. Malika Ihle, LMU Open Science Center)<br>
+2. RDM Resources at LMU and relevance for research funding (Laura Kropf &amp; Dr. Florian Schreck, Referat VIII.3 - Research Funding Unit)<br>
+3. RDM Help Desk at LMU &amp; Research Data LMU (Dr. Martin Spenger, University Library)<br>
+4. A Data Steward’s Practical Experience (in a SFB) (Laure Sigalla, SFB 1369)<br>
+<strong>Language</strong>: English<br>
+<strong>Participation</strong>: online, public with registration<br>
+<strong>Registration</strong>: <a href="https://lmu-munich.zoom.us/meeting/register/tjHmRIJAQaSc7yxNV23gGg#/registration" target="_blank">https://lmu-munich.zoom.us/meeting/register/tjHmRIJAQaSc7yxNV23gGg#/registration</a><br>
+<em>Carried out by: LMU Munich (University Library of LMU Munich, LMU Open Science Center, Referat VII.3 - Research Funding Unit, SFB 1369)</em>
+</p>
+
+<h2>Where's Greifswald? FAIR health data management at the Medical Informatics Laboratory</h2>
+<p>
+<span style="text-decoration: underline;">Donnerstag, 12.02.2026 13:00 – 13:45 Uhr</span><br>
+<strong>Abstract</strong>: This lecture gives a short input talk about Findable, Accessible, Interoperable, Reusable (FAIR) health data management. We will present projects and examples, including FAIRification efforts in the Medical Informatics Initiative and the importance of semantically enriched metadata. Join us for this brief overview and interesting discussions!<br>
+<strong>Language</strong>: English<br>
+<strong>Participation</strong>: online, public without registration<br>
+<strong>More info</strong>: <a href="https://www.ub.uni-rostock.de/wissenschaftliche-services/forschungsdaten/veranstaltungen/lovedataweek-2026/" target="_blank">https://www.ub.uni-rostock.de/wissenschaftliche-services/forschungsdaten/veranstaltungen/lovedataweek-2026/</a><br>
+<em>Carried out by: Lea Michaelis, Lea Gütebier, Dr. Judith Wodke (Universitätsmedizin Greifswald)</em>
+</p>
+
+<h2>DBRepo: Make research data in relational databases FAIR, versioned and citable</h2>
+<p>
+<span style="text-decoration: underline;">Freitag, 13.02.2026 10:30 – 11:00 Uhr</span><br>
+<strong>Abstract</strong>: The presentation introduces TU Darmstadt’s upcoming service “DBRepo as a Service”, which will be open to all researchers. The platform enables the hosting of relational databases, including documentation with semantic metadata and versioning, so that data—from the entire database down to defined subsets—can be reliably shared, reused, and cited.<br>
+<strong>Language</strong>: English<br>
+<strong>Participation</strong>: online, public with registration<br>
+<strong>Registration</strong>: <a href="https://nfdi4ing.de/nfdi4ing-love-data-week-26/#registration-ldw26" target="_blank">https://nfdi4ing.de/nfdi4ing-love-data-week-26/#registration-ldw26</a><br>
+<em>Carried out by: NFDI4ING, TU Darmstadt</em>
+</p>
+
+<p>Browse the entire programme with (open) events from all over Germany here: 
+<a href="https://forschungsdaten.info/fdm-im-deutschsprachigen-raum/love-data-week-2026/" target="_blank">
+https://forschungsdaten.info/fdm-im-deutschsprachigen-raum/love-data-week-2026/
+</a></p>
+
+<p>Also, check out the <a href="https://fdm.ub.lmu.de/" target="_blank">“Research Data LMU” information portal!</a></p>
+
+<div class="g-clear"></div>
+
+<!-- MANDAORY SECTION START  -->
+<!-- _event_description.qmd template should always be at bottom -->
+{{< include templates/_instructors_helpers_contact.qmd >}}
+<!-- MANDAORY SECTION END  -->
