@@ -31,6 +31,32 @@ events_current_file_names <- list.files("events/events/") %>%
 
 
 
+# Function to recursively merge two lists, with new_list values taking precedence
+merge_lists <- function(existing, new) {
+  if(is.null(new) || (is.list(new) && length(new) == 0)) {
+    return(existing)
+  }
+  if(is.null(existing)) {
+    return(new)
+  }
+  
+  # If both are lists, merge recursively
+  if(is.list(existing) && is.list(new)) {
+    all_names <- unique(c(names(existing), names(new)))
+    result <- existing
+    
+    for(name in all_names) {
+      if(name %in% names(new)) {
+        result[[name]] <- merge_lists(existing[[name]], new[[name]])
+      }
+    }
+    return(result)
+  }
+  
+  # Otherwise, new value overwrites
+  return(new)
+}
+
 # Function to update YAML in a .qmd file
 update_event_yaml <- function(file_path, csv_row) {
   # Read the file
@@ -38,6 +64,10 @@ update_event_yaml <- function(file_path, csv_row) {
   
   # Find YAML boundaries
   yaml_end <- which(file_lines == "---")[2]
+  
+  # Parse existing YAML
+  yaml_lines <- file_lines[1:yaml_end]
+  existing_yaml <- yaml::yaml.load(paste(yaml_lines, collapse = "\n"))
   
   # Get the body content (everything after YAML)
   body_content <- file_lines[(yaml_end + 1):length(file_lines)]
@@ -51,45 +81,56 @@ update_event_yaml <- function(file_path, csv_row) {
     return(NULL)
   }
   
-  # Build new YAML structure from CSV data
-  new_yaml <- list(
-    date = get_col("event_start"),
-    categories = if(!is.null(get_col("event_category"))) list(get_col("event_category")) else list()
-  )
+  # Build updates from CSV data (only non-null values)
+  updates <- list()
   
-  # Build event section
-  new_yaml$event <- list(
-    title = get_col("event_title"),
-    date = get_col("event_start"),
-    end_date = get_col("event_end"),
-    time = get_col("event_time"),
-    location = list(
-      name = get_col("location_name"),
-      address = get_col("location_address"),
-      map_url = get_col("location_map_url")
-    ),
-    format = list(
-      type = get_col("format_type"),
-      detail = get_col("format_detail")
-    ),
-    language = list(
-      primary = get_col("language_primary"),
-      `primary-code` = get_col("language_primary_code"),
-      detail = get_col("language_detail")
-    )
-  )
+  # Top-level fields
+  if(!is.null(get_col("event_start"))) {
+    updates$date <- get_col("event_start")
+  }
+  if(!is.null(get_col("event_category"))) {
+    updates$categories <- list(get_col("event_category"))
+  }
   
-  # Build links section
-  new_yaml$links <- list(
-    registration = get_col("registration_link"),
-    materials = get_col("materials_link"),
-    workshop_website = get_col("workshop_website")
-  )
+  # Build event section updates
+  event_updates <- list()
+  if(!is.null(get_col("event_title"))) event_updates$title <- get_col("event_title")
+  if(!is.null(get_col("event_start"))) event_updates$date <- get_col("event_start")
+  if(!is.null(get_col("event_end"))) event_updates$end_date <- get_col("event_end")
+  if(!is.null(get_col("event_time"))) event_updates$time <- get_col("event_time")
   
-  new_yaml$event_description <- if(!is.null(get_col("event_description"))) {
-    list(get_col("event_description"))
-  } else {
-    list()
+  # Location updates
+  location_updates <- list()
+  if(!is.null(get_col("location_name"))) location_updates$name <- get_col("location_name")
+  if(!is.null(get_col("location_address"))) location_updates$address <- get_col("location_address")
+  if(!is.null(get_col("location_map_url"))) location_updates$map_url <- get_col("location_map_url")
+  if(length(location_updates) > 0) event_updates$location <- location_updates
+  
+  # Format updates
+  format_updates <- list()
+  if(!is.null(get_col("format_type"))) format_updates$type <- get_col("format_type")
+  if(!is.null(get_col("format_detail"))) format_updates$detail <- get_col("format_detail")
+  if(length(format_updates) > 0) event_updates$format <- format_updates
+  
+  # Language updates
+  language_updates <- list()
+  if(!is.null(get_col("language_primary"))) language_updates$primary <- get_col("language_primary")
+  if(!is.null(get_col("language_primary_code"))) language_updates$`primary-code` <- get_col("language_primary_code")
+  if(!is.null(get_col("language_detail"))) language_updates$detail <- get_col("language_detail")
+  if(length(language_updates) > 0) event_updates$language <- language_updates
+  
+  if(length(event_updates) > 0) updates$event <- event_updates
+  
+  # Build links section updates
+  links_updates <- list()
+  if(!is.null(get_col("registration_link"))) links_updates$registration <- get_col("registration_link")
+  if(!is.null(get_col("materials_link"))) links_updates$materials <- get_col("materials_link")
+  if(!is.null(get_col("workshop_website"))) links_updates$workshop_website <- get_col("workshop_website")
+  if(length(links_updates) > 0) updates$links <- links_updates
+  
+  # Event description
+  if(!is.null(get_col("event_description"))) {
+    updates$event_description <- list(get_col("event_description"))
   }
   
   # Handle instructors (columns: instructor1, url1_instr, instructor2, url2_instr, etc.)
@@ -107,7 +148,7 @@ update_event_yaml <- function(file_path, csv_row) {
   }) %>% purrr::compact()
   
   if(length(instructors) > 0) {
-    new_yaml$instructors <- instructors
+    updates$instructors <- instructors
   }
   
   # Handle helpers (columns: helper1, helper2, etc.)
@@ -123,16 +164,42 @@ update_event_yaml <- function(file_path, csv_row) {
   }) %>% purrr::compact()
   
   if(length(helpers) > 0) {
-    new_yaml$helpers <- helpers
+    updates$helpers <- helpers
   }
   
-  # Build contact section
-  new_yaml$contact <- list(
-    name = get_col("contact_name"),
-    email = get_col("contact_email")
-  )
+  # Build contact section updates
+  contact_updates <- list()
+  if(!is.null(get_col("contact_name"))) contact_updates$name <- get_col("contact_name")
+  if(!is.null(get_col("contact_email"))) contact_updates$email <- get_col("contact_email")
+  if(length(contact_updates) > 0) updates$contact <- contact_updates
   
   # Handle organizers (columns: organizers1, url1_org, organizers2, url2_org, etc.)
+  organizer_nums <- 1:10
+  organizers <- lapply(organizer_nums, function(i) {
+    name_col <- paste0("organizers", i)
+    name_val <- get_col(name_col)
+    if(!is.null(name_val)) {
+      list(name = name_val)
+    } else {
+      NULL
+    }
+  }) %>% purrr::compact()
+  
+  if(length(organizers) > 0) {
+    updates$organizers <- organizers
+  }
+  
+  # Merge existing YAML with updates
+  merged_yaml <- merge_lists(existing_yaml, updates)
+  
+  # Convert to YAML string
+  yaml_string <- yaml::as.yaml(merged_yaml)
+  
+  # Write the file back
+  writeLines(c("---", yaml_string, "---", body_content), file_path)
+  
+  return(TRUE)
+}
   organizer_nums <- 1:10
   organizers <- lapply(organizer_nums, function(i) {
     name_col <- paste0("organizers", i)
