@@ -14,6 +14,13 @@ events_current_file_names <- list.files("events/events/") %>%
 
 
 
+events_new <- events_new %>%
+  mutate(
+    event_start = format(as.Date(event_start, format = "%d-%b-%y"), "%Y-%m-%d"),
+    event_end = format(as.Date(event_end, format = "%d-%b-%y"), "%Y-%m-%d")
+  ) 
+
+
 # events_new %>%
 #   select(file_paths) %>%
 #   full_join(events_current_file_names, by = c("file_paths" = "current_file_names"), keep = TRUE) %>%
@@ -76,7 +83,14 @@ update_event_yaml <- function(file_path, csv_row) {
   get_col <- function(col_name) {
     if(col_name %in% names(csv_row)) {
       val <- csv_row[[col_name]]
-      if(length(val) > 0 && !is.na(val) && val != "") return(val)
+      # Check if value exists, is not NA, and is not empty string
+      if(length(val) > 0) {
+        # Use isTRUE to safely check conditions
+        if(isTRUE(!is.na(val)) && isTRUE(val != "")) {
+          # Always return as character to preserve formatting (especially for dates)
+          return(as.character(val))
+        }
+      }
     }
     return(NULL)
   }
@@ -96,8 +110,23 @@ update_event_yaml <- function(file_path, csv_row) {
   event_updates <- list()
   if(!is.null(get_col("event_title"))) event_updates$title <- get_col("event_title")
   if(!is.null(get_col("event_start"))) event_updates$date <- get_col("event_start")
-  if(!is.null(get_col("event_end"))) event_updates$end_date <- get_col("event_end")
-  if(!is.null(get_col("event_time"))) event_updates$time <- get_col("event_time")
+  
+  # Handle end_date - if same as start_date, set to empty string
+  start_date_val <- get_col("event_start")
+  end_date_val <- get_col("event_end")
+  if(!is.null(start_date_val) && !is.null(end_date_val) && start_date_val == end_date_val) {
+    event_updates$end_date <- ""
+  } else if(!is.null(end_date_val)) {
+    event_updates$end_date <- end_date_val
+  }
+  
+  # Handle time field - convert NA to empty string
+  time_val <- csv_row$event_time
+  if(length(time_val) > 0 && !is.na(time_val) && time_val != "") {
+    event_updates$time <- as.character(time_val)
+  } else {
+    event_updates$time <- ""
+  }
   
   # Location updates
   location_updates <- list()
@@ -141,7 +170,7 @@ update_event_yaml <- function(file_path, csv_row) {
     name_val <- get_col(name_col)
     url_val <- get_col(url_col)
     if(!is.null(name_val)) {
-      list(name = name_val, url = url_val)
+      list(name = name_val, url = if(is.null(url_val)) "" else url_val)
     } else {
       NULL
     }
@@ -159,7 +188,7 @@ update_event_yaml <- function(file_path, csv_row) {
     name_val <- get_col(name_col)
     url_val <- get_col(url_col)
     if(!is.null(name_val)) {
-      list(name = name_val, url = url_val)
+      list(name = name_val, url = if(is.null(url_val)) "" else url_val)
     } else {
       NULL
     }
@@ -177,7 +206,7 @@ update_event_yaml <- function(file_path, csv_row) {
     name_val <- get_col(name_col)
     url_val <- get_col(url_col)
     if(!is.null(name_val)) {
-      list(name = name_val, url = url_val)
+      list(name = name_val, url = if(is.null(url_val)) "" else url_val)
     } else {
       NULL
     }
@@ -195,7 +224,7 @@ update_event_yaml <- function(file_path, csv_row) {
     name_val <- get_col(name_col)
     url_val <- get_col(url_col)
     if(!is.null(name_val)) {
-      list(name = name_val, url = url_val)
+      list(name = name_val, url = if(is.null(url_val)) "" else url_val)
     } else {
       NULL
     }
@@ -219,7 +248,7 @@ update_event_yaml <- function(file_path, csv_row) {
     name_val <- get_col(name_col)
     url_val <- get_col(url_col)
     if(!is.null(name_val)) {
-      list(name = name_val, url = url_val)
+      list(name = name_val, url = if(is.null(url_val)) "" else url_val)
     } else {
       NULL
     }
