@@ -43,7 +43,7 @@ jobs:
 
       - name: Change renv to explicit snapshot type
         run: |
-          Rscript -e "renv::settings$snapshot.type('explicit')"
+          Rscript -e "renv::settings$snapshot.type("explicit")"
 
       - name: Render and Publish
         uses: quarto-dev/quarto-actions/publish@v2
