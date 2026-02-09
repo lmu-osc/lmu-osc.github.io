@@ -123,20 +123,27 @@ dateDisplay = `${startDay} ${startMonth}, ${startYear}`;
 </div>
 
 <div class="event-time-loc">
+<% let shown = false; %>
+
+<% if (item.event.time) { %>
 <div class="event-time listing-time">
 <i class="bi bi-clock"></i>
 <%- item.event.time || '' %>
 </div>
-<% if (item.event.location) { %>
-<div class="divider"></div>
+<% shown = true; %>
+<% } %>
+
+<% if (item.event.location.name) { %>
+<% if (shown) { %><div class="divider"></div><% } %>
 <div class="event-location listing-location">
 <i class="bi bi-geo-alt-fill"></i>
 <%- item.event.location.name || '' %>
 </div>
+<% shown = true; %>
 <% } %>
 
-<% if (item.event.format) { %>
-<div class="divider"></div>
+<% if (item.event.format.type) { %>
+<% if (shown) { %><div class="divider"></div><% } %>
 <div class="event-form listing-form">
 <%
 let formIcon = '';
@@ -150,14 +157,16 @@ formIcon = '<i class="bi bi-laptop"></i>';
 %>
 <%= formIcon %> <%- item.event.format.type || '' %>
 </div>
+<% shown = true; %>
 <% } %>
 
 <% if (item.event.language['primary-code']) { %>
-<div class="divider"></div>
+<% if (shown) { %><div class="divider"></div><% } %>
 <div class="event-language listing-language">
 <i class="bi bi-translate"></i>
 <%- (typeof item.event.language['primary-code'] === 'string' ? item.event.language['primary-code'] : '').toUpperCase() %>
 </div>
+<% shown = true; %>
 <% } %>
 </div>
 </div>
