@@ -1,5 +1,5 @@
 ---
-title: "Open Research Cycle"
+title: "Open Research Cycle Handbook"
 page-navigation: false
 toc: false
 css: open_research_cycle/orc-styles.css
@@ -12,15 +12,15 @@ include-in-header:
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.min.css">
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 ---
+This handbook offers practical guidance for making research open, responsible, and reproducible by design. It covers the full research life cycle, from formulating questions and preregistering studies to publishing articles, data, and code, and links to OSC self-paced tutorials, LMU support services, and essential tools to support open research in everyday practice.
 
-The Open Research Cycle is based on the [Open Research Cycle by Ihle (2025)](https://doi.org/10.5281/zenodo.15630230), which in turn is based on the [research data lifecycle model by Michener (2015)](https://doi.org/10.1371/journal.pcbi.1004525). The checklist has been adapted and extended by the LMU Open Science Center to include additional open research practices beyond data management. In addition to the four main phases, we have added checkpoints for group discussions and reflections after each phase to ensure team alignment and address any challenges in adopting open practices.
+This research practices manual can be adapted by research groups in any scientific field. Each section outlines concrete actions for ongoing projects and concludes with a team checkpoint. To build your own lab handbook
 
-**What you'll find in each phase:**
-
-- **Curated tools and resources**: A selection of platforms and software to support open research practices, building on the [Open Science Toolbox](open-science-toolbox.pdf) by Lutz Heil
-- **Self-paced learning materials**: Tutorials, lectures, and guides to deepen your understanding
-- **LMU support services**: Local expertise and infrastructure available to researchers at LMU
-- **Practical recommendations**: Actionable guidance for implementing open practices in your workflow
+- review the core discipline-agnostic sections by clicking on the figure below, 
+- consult discipline-specific guidance (in development - ETA end 2026)<!--to link to Reema's expert pages when built -->, 
+- explore [an example](https://doi.org/10.5281/zenodo.16262260)<!-- to link to internal page with more examples when exists-->, 
+- tailor the [overview checklist figure](https://doi.org/10.5281/zenodo.15630229), and 
+- use our Quarto lab-handbook template (in development - ETA end 2026). 
 
 <!-- Centered Cycle Diagram -->
 <div class="cycle-container">
@@ -32,15 +32,17 @@ The Open Research Cycle is based on the [Open Research Cycle by Ihle (2025)](htt
 cat(readLines("images/os-cycle.svg", warn = FALSE), sep = "\n")
 ```
 
-*Figure: Open Research Cycle. Based on Ihle, M. (2025). Open research cycle. LMU Open Science Center. [https://doi.org/10.5281/zenodo.15630230](https://doi.org/10.5281/zenodo.15630230)*
 
+
+<!-- removed bottom navigation because not there in rest of website, but now left nav bar
 </div>
 
 <div style="text-align: center; margin-top: 4rem;">
   <a href="training.html" style="color: #00883A; text-decoration: none; font-weight: bold; font-size: 1.1rem;">
     <i class="bi bi-arrow-left"></i> Back to Training Overview
   </a>
-</div>
+</div> 
+-->
 
 <!-- Modals for Pop-out Content -->
 <!-- Wrapped in raw HTML block to prevent rendering issues -->
@@ -59,16 +61,16 @@ cat(readLines("images/os-cycle.svg", warn = FALSE), sep = "\n")
       <div class="modal-body">
         <ul>
           <li>Explore / reuse research outputs</li>
-          <li>Write / consult grant proposal, ethics proposal, and RDM plan</li>
-          <li>Simulate data and run power analysis</li>
-          <li>Use preregistration template</li>
+          <li>Write grant proposal & ethics proposal</li>
+          <li>Write Research Data Management plan</li>
+          <li>Plan study design and statistical analyses</li>
         </ul>
         <hr>
-        <p><strong>Checkpoint:</strong> Study plan presentation</p>
+        <p><strong>Team checkpoint:</strong> Study plan presentation + Preregistration submission</p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <a href="open_research_cycle/01_plan_and_design.html" class="btn btn-primary">Go to Phase 1</a>
+        <a href="open_research_cycle/01_plan_and_design.html" class="btn btn-primary">Go to Handbook - Plan & Design</a>
       </div>
     </div>
   </div>
@@ -86,17 +88,17 @@ cat(readLines("images/os-cycle.svg", warn = FALSE), sep = "\n")
       </div>
       <div class="modal-body">
         <ul>
-          <li>Request consent forms</li>
           <li>Collect data following standard protocols</li>
-          <li>Manage data FAIR-ly</li>
+          <li>Manage data efficiently, and FAIR-ly by design</li>
           <li>Anonymise data</li>
+          <li>Control data quality</li>
         </ul>
         <hr>
-        <p><strong>Checkpoint:</strong> Data quality validation meeting</p>
+        <p><strong>Team checkpoint:</strong> Data quality validation meeting</p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <a href="open_research_cycle/02_collect_and_manage.html" class="btn btn-primary">Go to Phase 2</a>
+        <a href="open_research_cycle/02_collect_and_manage.html" class="btn btn-primary">Go to Handbook - Collect & Manage</a>
       </div>
     </div>
   </div>
@@ -114,17 +116,15 @@ cat(readLines("images/os-cycle.svg", warn = FALSE), sep = "\n")
       </div>
       <div class="modal-body">
         <ul>
-          <li>Analyse data reproducibly (R readable code, Git repo template, GitLab, Renv)</li>
-          <li>Write a README file</li>
-          <li>Create a data dictionary</li>
-          <li>Write a reproducible manuscript / presentation (Quarto)</li>
+          <li>Computationally process and analyse data reproducibly</li>
+          <li>Write reproducible reports</li>
         </ul>
         <hr>
-        <p><strong>Checkpoint:</strong> Repo & code peer-review, Result presentation</p>
+        <p><strong>Team checkpoint:</strong> Repository & code peer-review + Result presentation</p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <a href="open_research_cycle/03_analyze_and_collaborate.html" class="btn btn-primary">Go to Phase 3</a>
+        <a href="open_research_cycle/03_analyze_and_collaborate.html" class="btn btn-primary">Go to Handbook - Analyze & Collaborate</a>
       </div>
     </div>
   </div>
@@ -141,20 +141,19 @@ cat(readLines("images/os-cycle.svg", warn = FALSE), sep = "\n")
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <p><strong>Prepare / publish:</strong></p>
         <ul>
-          <li>Code repository</li>
-          <li>Data (real / synthetic), with metadata and Data Usage Agreement</li>
-          <li>Preregistration (lift embargo)</li>
-          <li>Preprint with CRediT</li>
+          <li>Publish (real or synthetic) data, with metadata and Data Usage Agreement</li>
+          <li>Publish code</li>
+          <li>Lift any preregistration embargo</li>
+          <li>Deposit a preprint</li>
         </ul>
-        <p>with ORCID, DOI, License</p>
+        <p>each with contributorships, ORCID, DOI, License</p>
         <hr>
-        <p><strong>Checkpoint:</strong> Manuscript submission with DOIs for preregistration, data, code, and material</p>
+        <p><strong>Team checkpoint:</strong> Manuscript submission with DOIs for all materials</p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <a href="open_research_cycle/04_preserve_and_share.html" class="btn btn-primary">Go to Phase 4</a>
+        <a href="open_research_cycle/04_preserve_and_share.html" class="btn btn-primary">Go to Handbook - Preserve & Share</a>
       </div>
     </div>
   </div>
