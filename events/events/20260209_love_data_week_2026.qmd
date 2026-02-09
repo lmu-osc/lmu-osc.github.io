@@ -1,53 +1,60 @@
 ---
-date: "February 09, 2026"        
-categories: ['Event']
-
-# Event Information
+date: '2026-02-09'
+categories:
+- Event
 event:
-  title: 'Love Data Week: a series of events on research data management'
-  date: "February 09, 2026"         
-  end_date: "February 13, 2026"     
-  time:           
+  title: 'Love Data Week: a Series of Events on Research Data Management'
+  date: '2026-02-09'
+  end_date: '2026-02-13'
+  time: ''
   location:
-    name: "Online (Zoom)"
-    address: ""
-    map_url: ""
+    name: Online (Zoom)
+    address: ''
+    map_url: ''
   format:
-    type: 'Online'
-    detail: ""          
+    type: Online
+    detail: ''
   language:
-    primary: "English and German"
-    primary-code: "de"
-    detail: "de/en"
-  
-# Registration and Materials
+    primary: English and German
+    primary-code: de
+    detail: de/en
 links:
-  registration: "https://forschungsdaten.info/fdm-im-deutschsprachigen-raum/love-data-week-2026/"  # Link to general website since different events within the Love Data Week have their own registration link
-  materials: "https://zenodo.org/communities/love-data-week-2026-forschungsdaten-info/records?q=&l=list&p=1&s=10&sort=newest"    
-  workshop_website: "https://forschungsdaten.info/fdm-im-deutschsprachigen-raum/love-data-week-2026/" 
-
-# Event Description: appears in the Event card an optionally in the Event page itself
-event_description: 
-  - "The topic of research data management (RDM) is present in many areas of scientific work. Love Data Week raises awareness of current developments in research data and its management worldwide with numerous informational and training events."
-
-# Add as many instructors as needed in the format below
+  registration: https://forschungsdaten.info/fdm-im-deutschsprachigen-raum/love-data-week-2026/
+  materials: https://zenodo.org/communities/love-data-week-2026-forschungsdaten-info/records?q=&l=list&p=1&s=10&sort=newest
+  workshop_website: https://forschungsdaten.info/fdm-im-deutschsprachigen-raum/love-data-week-2026/
+event_description: The topic of research data management (RDM) is present in many
+  areas of scientific work. Love Data Week raises awareness of current developments
+  in research data and its management worldwide with numerous informational and training
+  events.
 instructors:
-  - name: ""
-    url: ""
-
-# Add as many helpers as needed in the format below
-helpers: 
-  - name: ""
-
-
-# Contact Information
+- name: ''
+  url: ''
+helpers:
+- name: ''
 contact:
-  name: ""
-  email: ""
-
-# Organizers can be individuals or institutions
+  name: ''
+  email: kontakt@forschungsdaten.info
 organizers:
-  - name: ""
+- name: ''
+presenters:
+- name: Dr. Malika Ihle
+  url: ''
+- name: Laura Kropf
+  url: ''
+- name: Dr. Florian Schreck
+  url: ''
+- name: Dr. Martin Spenger
+  url: ''
+- name: Laure Sigalla
+  url: ''
+host:
+- name: LMU University Library (UB)
+  url: ''
+- name: LMU Open Science Center
+  url: ''
+- name: LMU Research Funding Unit
+  url: ''
+
 ---
 
 <!-- MANDAORY SECTION START  -->

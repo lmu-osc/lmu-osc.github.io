@@ -1,56 +1,44 @@
 ---
-format:
-    html:
-        table-of-contents: false
-        css: event-page-styles.css
-page-layout: full
 pagetitle: '"Version control with Git/GitHub within RStudio"'
-categories: 'Workshop'
-
-# Event categories
+categories:
+- Workshop
 event:
-  title: '"Version control with Git/GitHub within RStudio"'
-  description: ""
-  categories:  'Workshop'
-  date: "December 14, 2022"
-  end_date: "December 14, 2022"
-  time: "9:00-12:00"
+  title: Version Control with Git/GitHub Within RStudio
+  description: ''
+  categories: Workshop
+  date: '2023-03-07'
+  end_date: ''
+  time: ''
   location:
-    name: "Online (Zoom)"
-    address: ""
-    map_url: ""
+    name: Online (Zoom)
+    address: ''
+    map_url: ''
   format:
-    type: 'Workshop'
-    detail: ""
+    type: Workshop
+    detail: ''
   language:
-    primary: "English"
-    primary-code: "en"
-    detail: ""
+    primary: English
+    primary-code: en
+    detail: ''
 links:
-  registration: ""
-  materials: ""
-  workshop_website: ""
-
-event_description:
-  - ""
-
+  registration: ''
+  materials: ''
+  workshop_website: ''
+event_description: ''
 instructors:
-  - name: ""
-    url: ""
-
+- name: ''
+  url: ''
 helpers:
-  - name: ""
-
+- name: ''
 contact:
-  name: ""
-  email: ""
-
+  name: ''
+  email: malika.ihle@lmu.de
 organizers:
-  name: ""
-
-
+  name: ''
 host:
-  - name: "LMU Open Science Center"
+- name: LMU Open Science Center
+date: '2023-03-07'
+
 ---
 <!-- MANDAORY SECTION START  -->
 <h1 class="fs-1 text-primary"> {{< meta event.title >}} </h1>

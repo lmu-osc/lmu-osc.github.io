@@ -1,56 +1,44 @@
 ---
-format:
-    html:
-        table-of-contents: false
-        css: event-page-styles.css
-page-layout: full
 pagetitle: '"One step towards Reproducible Science: Git basic training"'
-categories: 'Workshop'
-
-# Event categories
+categories:
+- Workshop
 event:
-  title: '"One step towards Reproducible Science: Git basic training"'
-  description: ""
-  categories:  'Workshop'
-  date: "July 29, 2022"
-  end_date: "July 29, 2022"
-  time: "9:00-12:00"
+  title: 'One Step Towards Reproducible Science: Git Basic Training'
+  description: ''
+  categories: Workshop
+  date: '2022-09-12'
+  end_date: ''
+  time: ''
   location:
-    name: "Lecture Hall 2 Hörsaaltrakt in Klinikum Großhadern"
-    address: ""
-    map_url: ""
+    name: Lecture Hall 2 Hörsaaltrakt in Klinikum Großhadern
+    address: ''
+    map_url: ''
   format:
-    type: 'Workshop'
-    detail: ""
+    type: Workshop
+    detail: ''
   language:
-    primary: "English/German"
-    primary-code: "en"
-    detail: ""
+    primary: English/German
+    primary-code: en
+    detail: ''
 links:
-  registration: ""
-  materials: ""
-  workshop_website: ""
-
-event_description:
-  - ""
-
+  registration: ''
+  materials: ''
+  workshop_website: ''
+event_description: ''
 instructors:
-  - name: ""
-    url: ""
-
+- name: ''
+  url: ''
 helpers:
-  - name: ""
-
+- name: ''
 contact:
-  name: ""
-  email: ""
-
+  name: ''
+  email: cniessl@ibe.med.uni-muenchen.de
 organizers:
-  name: ""
-
-
+  name: ''
 host:
-  - name: "LMU Open Science Center"
+- name: LMU Open Science Center
+date: '2022-09-12'
+
 ---
 <!-- MANDAORY SECTION START  -->
 <h1 class="fs-1 text-primary"> {{< meta event.title >}} </h1>
