@@ -134,7 +134,7 @@ update_event_yaml <- function(file_path, csv_row) {
   }
   
   # Handle instructors (columns: instructor1, url1_instr, instructor2, url2_instr, etc.)
-  instructor_nums <- 1:10
+  instructor_nums <- 1:15
   instructors <- lapply(instructor_nums, function(i) {
     name_col <- paste0("instructor", i)
     url_col <- paste0("url", i, "_instr")
@@ -151,13 +151,33 @@ update_event_yaml <- function(file_path, csv_row) {
     updates$instructors <- instructors
   }
   
-  # Handle helpers (columns: helper1, helper2, etc.)
-  helper_nums <- 1:10
+  # Handle presenters (columns: presenter1, url_pres1, presenter2, url_pres2, etc.)
+  presenter_nums <- 1:15
+  presenters <- lapply(presenter_nums, function(i) {
+    name_col <- paste0("presenter", i)
+    url_col <- paste0("url_pres", i)
+    name_val <- get_col(name_col)
+    url_val <- get_col(url_col)
+    if(!is.null(name_val)) {
+      list(name = name_val, url = url_val)
+    } else {
+      NULL
+    }
+  }) %>% purrr::compact()
+  
+  if(length(presenters) > 0) {
+    updates$presenters <- presenters
+  }
+  
+  # Handle helpers (columns: helper1, url_help1, helper2, url_help2, etc.)
+  helper_nums <- 1:15
   helpers <- lapply(helper_nums, function(i) {
     name_col <- paste0("helper", i)
+    url_col <- paste0("url_help", i)
     name_val <- get_col(name_col)
+    url_val <- get_col(url_col)
     if(!is.null(name_val)) {
-      list(name = name_val)
+      list(name = name_val, url = url_val)
     } else {
       NULL
     }
@@ -167,6 +187,24 @@ update_event_yaml <- function(file_path, csv_row) {
     updates$helpers <- helpers
   }
   
+  # Handle hosts (columns: host1, url_host1, host2, url_host2, etc.)
+  host_nums <- 1:15
+  hosts <- lapply(host_nums, function(i) {
+    name_col <- paste0("host", i)
+    url_col <- paste0("url_host", i)
+    name_val <- get_col(name_col)
+    url_val <- get_col(url_col)
+    if(!is.null(name_val)) {
+      list(name = name_val, url = url_val)
+    } else {
+      NULL
+    }
+  }) %>% purrr::compact()
+  
+  if(length(hosts) > 0) {
+    updates$hosts <- hosts
+  }
+  
   # Build contact section updates
   contact_updates <- list()
   if(!is.null(get_col("contact_name"))) contact_updates$name <- get_col("contact_name")
@@ -174,12 +212,14 @@ update_event_yaml <- function(file_path, csv_row) {
   if(length(contact_updates) > 0) updates$contact <- contact_updates
   
   # Handle organizers (columns: organizers1, url1_org, organizers2, url2_org, etc.)
-  organizer_nums <- 1:10
+  organizer_nums <- 1:15
   organizers <- lapply(organizer_nums, function(i) {
     name_col <- paste0("organizers", i)
+    url_col <- paste0("url", i, "_org")
     name_val <- get_col(name_col)
+    url_val <- get_col(url_col)
     if(!is.null(name_val)) {
-      list(name = name_val)
+      list(name = name_val, url = url_val)
     } else {
       NULL
     }
@@ -194,29 +234,6 @@ update_event_yaml <- function(file_path, csv_row) {
   
   # Convert to YAML string
   yaml_string <- yaml::as.yaml(merged_yaml)
-  
-  # Write the file back
-  writeLines(c("---", yaml_string, "---", body_content), file_path)
-  
-  return(TRUE)
-}
-  organizer_nums <- 1:10
-  organizers <- lapply(organizer_nums, function(i) {
-    name_col <- paste0("organizers", i)
-    name_val <- get_col(name_col)
-    if(!is.null(name_val)) {
-      list(name = name_val)
-    } else {
-      NULL
-    }
-  }) %>% purrr::compact()
-  
-  if(length(organizers) > 0) {
-    new_yaml$organizers <- organizers
-  }
-  
-  # Convert to YAML string
-  yaml_string <- yaml::as.yaml(new_yaml)
   
   # Write the file back
   writeLines(c("---", yaml_string, "---", body_content), file_path)
