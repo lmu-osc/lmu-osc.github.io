@@ -99,6 +99,9 @@ update_event_yaml <- function(file_path, csv_row) {
   updates <- list()
   
   # Top-level fields
+  if(!is.null(get_col("event_title"))) {
+    updates$title <- get_col("event_title")
+  }
   if(!is.null(get_col("event_start"))) {
     updates$date <- get_col("event_start")
   }
@@ -261,8 +264,8 @@ update_event_yaml <- function(file_path, csv_row) {
   # Merge existing YAML with updates
   merged_yaml <- merge_lists(existing_yaml, updates)
   
-  # Convert to YAML string
-  yaml_string <- yaml::as.yaml(merged_yaml)
+  # Convert to YAML string with options to prevent line wrapping
+  yaml_string <- yaml::as.yaml(merged_yaml, line.sep = "\n", indent.mapping.sequence = TRUE)
   
   # Write the file back
   writeLines(c("---", yaml_string, "---", body_content), file_path)
