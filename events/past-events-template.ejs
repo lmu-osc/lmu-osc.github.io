@@ -154,9 +154,9 @@
                 %>
                 <% if (hasValidData) { %>
 
-                  <div class="event-person-group">
+                  <div class="event-person-group" style="display: inline-block; white-space: nowrap;">
                   <span class="person-label"><%= block.label %>:</span>
-                  <span class="person-list">
+                  <span class="person-list" style="white-space: normal;">
                     <%= block.data
                     .map(function(person){
                       if (!person) return '';
