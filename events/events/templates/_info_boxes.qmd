@@ -9,7 +9,9 @@ event_date_formatted <- lubridate::parse_date_time(event_date, orders = c("ymd",
 
 if (has_end_date) {
   event_end_date_formatted <- lubridate::parse_date_time(event_end_date, orders = c("ymd", "dmy", "mdy"))
-  if (lubridate::year(event_date_formatted) == lubridate::year(event_end_date_formatted)) {
+  if (is.na(event_date_formatted) || is.na(event_end_date_formatted)) {
+    date_display <- paste0(event_date, " - ", event_end_date)
+  } else if (lubridate::year(event_date_formatted) == lubridate::year(event_end_date_formatted)) {
     date_display <- paste0(
       format(event_date_formatted, "%d %b"),
       " - ",
@@ -23,7 +25,11 @@ if (has_end_date) {
     )
   }
 } else {
-  date_display <- format(event_date_formatted, "%d %b %Y")
+  if (is.na(event_date_formatted)) {
+    date_display <- event_date
+  } else {
+    date_display <- format(event_date_formatted, "%d %b %Y")
+  }
 }
 
 
