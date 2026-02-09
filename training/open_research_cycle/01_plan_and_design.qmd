@@ -13,15 +13,14 @@ title-block-style: none
 {{< include ../images/os-cycle.svg >}}
 </div>
 <div class="orc-hero-body">
-<!-- TODO: update tagline -->
-<div class="orc-hero-tagline">Set the foundation for open, reproducible research</div>
+<div class="orc-hero-tagline">Set the foundation for open & reliable research</div>
 <div class="orc-hero-pills">
-<span><i class="bi bi-check2-circle"></i> Explore & reuse</span>
-<span><i class="bi bi-check2-circle"></i> Write plans</span>
-<span><i class="bi bi-check2-circle"></i> Simulate data</span>
-<span><i class="bi bi-check2-circle"></i> Preregister</span>
+<span><i class="bi bi-check2-circle"></i> Explore & Reuse</span>
+<span><i class="bi bi-check2-circle"></i> Check Legal Frameworks</span>
+<span><i class="bi bi-check2-circle"></i> Write Research Data Management Plans</span>
+<span><i class="bi bi-check2-circle"></i> Design Study</span>
 </div>
-<div class="orc-hero-checkpoint"><i class="bi bi-people-fill"></i> Checkpoint: Study plan presentation</div>
+<div class="orc-hero-checkpoint"><i class="bi bi-people-fill"></i> Checkpoint: Study plan presentation & preregistration</div>
 </div>
 </div>
 
@@ -29,41 +28,78 @@ title-block-style: none
 <details class="orc-details-panel">
 <summary><i class="bi bi-search"></i> Explore and Reuse</summary>
 
+Any resource that inspire you or that you want to reuse and/or adapt, must minimally be cited, using their DOIs if they have one (and otherwise URL with author, date, and time of access) and you must follow the licence and/or usage agreement provided by the authors. A research output (e.g. data, code) without a licence cannot be reused even if they appear publicly online.
+
 ::: {.panel-tabset}
 
 ### Articles
 
-3 lines of text
+* To come up with a well-founded research question, **review existing literature** on open source registries like [OpenAlex](https://openalex.org/). 
+* Keep track of your bibliography with an open source **reference manager** like [Zotero](https://www.zotero.org/). It can be integrated within RStudio to write reproducible manuscripts seamlessly, formatting your bibliography in any format you want. 
 
-::: {.callout-note appearance="simple" icon="mortarboard"}
-## Learn More: Reference Management
-[Introduction to Zotero](https://lmu-osc.github.io/introduction-to-zotero/) (1h) - Learn to organize literature with a free, open-source reference manager that integrates with Word, RStudio, and Google Docs.
+
+::: {.orc-two-column}
+
+::: {.orc-column}
+#### <i class="bi bi-mortarboard"></i> LEARN MORE
+
+<div class="orc-card-tool">
+<div class="orc-card-tool-icon"><img src="../../assets/img/lmu_osc_logo.jpg" alt="LMU OSC logo"></div>
+<h4>[Introduction to Zotero](https://lmu-osc.github.io/introduction-to-zotero/)</h4>
+<p>An open-source reference manager that integrates with Word, RStudio, and Google Docs. (1h)</p>
+<a href="https://lmu-osc.github.io/introduction-to-zotero/" class="orc-card-tool-badge recommended">OSC Tutorial</a>
+</div>
 :::
+
+::: {.orc-column}
+#### <i class="bi bi-tools"></i> TOOLS & RESOURCES
+
+<div class="orc-card-tool">
+<div class="orc-card-tool-icon"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/OpenAlex_2025_favicon.svg/250px-OpenAlex_2025_favicon.svg.png" alt="OpenAlex icon"></div>
+<h4>[OpenAlex](https://openalex.org/)</h4>
+<p>All the world's research, connected and open</p>
+<a href="https://openalex.org/" class="orc-card-tool-badge recommended">Recommended</a>
+</div>
+:::
+
+:::
+
+
 
 ### Preregistrations
 
-3 lines of text
+To have some insight into projects that are currently ongoing, you can check for projects that were _preregistered_* and will either get published in the following years or might get accompanied by a note if the project is abandoned. Some registries are discipline-specific while others are discipline-agnostic:_<!-- how to make this a list with  space above it?-->
+* [https://osf.io/registries](https://osf.io/registries)
+* [https://aspredicted.org/](https://aspredicted.org/)
+* [https://preclinicaltrials.eu/](https://preclinicaltrials.eu/)
+* [https://clinicaltrials.gov/](https://clinicaltrials.gov/)
+
+*_A preregistration typically consists of a hypothesis and predictions, a plan for data collection (when relevant), and a plan for data analysis, that researchers upload before starting their projects, often in order to increase the rigor of confirmatory research (see '**Study Design & Analysis plan**')_<!-- how to link a tab in this page? -->
+
+#### <i class="bi bi-tools"></i> TOOLS & RESOURCES
 
 ::: {.orc-grid-tools}
 
 <div class="orc-card-tool">
-<div class="orc-card-tool-icon"><img src="https://cdn.simpleicons.org/osf" alt="OSF"></div>
-<h4>[OSF](https://osf.io/)</h4>
-<p>Flexible templates, embargoes, file storage. Widely used across fields.</p>
+<div class="orc-card-tool-icon"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Open_Science_Framework_log_%28and_Center_for_Open_Science_logo%29.svg/3840px-Open_Science_Framework_log_%28and_Center_for_Open_Science_logo%29.svg.png" alt="OSF"></div>
+<h4>[OSF](https://osf.io/registries/)</h4>
+<p>Registry of preregistrations. Widely used across fields.</p>
+<a href="https://osf.io/registries/" class="orc-card-tool-badge recommended">Recommended</a>
 </div>
 :::
 
 ### Data
 
-3 lines of text
+To find existing datasets, find discipline-specific repositories on [re3data](https://www.re3data.org/) which is a central registry of all repositories, or explore subject agnostic repositories such as [DataCite](https://datacite.org/) or [Zenodo](https://zenodo.org/) (oftentimes with the corresponding analysis code). These platforms give you access to existing data or provide metadata and explanations on how to request access to the data.
 
-
+<!-- add zenodo card-->
 ::: {.orc-grid-tools}
 
 <div class="orc-card-tool">
 <div class="orc-card-tool-icon"><i class="bi bi-database"></i></div>
 <h4>[re3data](https://www.re3data.org/)</h4>
 <p>Registry of data repositories. Search across disciplines to find domain-specific options.</p>
+<a href="https://www.re3data.org/" class="orc-card-tool-badge recommended">Recommended</a>
 </div>
 
 :::
@@ -71,14 +107,16 @@ title-block-style: none
 
 ### Code
 
-3 lines of text
+ You may also find code available for reuse on [Zenodo](https://zenodo.org/) (archived) and/or possibly still in active development on [Github](https://github.com/).
 
+<!-- do we want just the tools or the tutorial here? maybe both? see e.g. card in preserve and share website version -->
+<!-- add zenodo card-->
 ::: {.orc-grid-tools}
 <div class="orc-card-tool">
 <div class="orc-card-tool-icon"><img src="https://cdn.simpleicons.org/github" alt="GitHub"></div>
 <h4>[GitHub](https://github.com/) / [GitLab](https://gitlab.com/)</h4>
 <p>Version control platforms for code collaboration with issue tracking.</p>
-<a href="https://lmu-osc.github.io/Introduction-RStudio-Git-GitHub/" class="orc-card-tool-badge recommended">Tutorial available</a>
+<a href="https://lmu-osc.github.io/Introduction-RStudio-Git-GitHub/" class="orc-card-tool-badge recommended">Tutorial</a>
 </div>
 :::
 
@@ -165,7 +203,7 @@ The specific questions vary by discipline, data type, and funder requirements. D
 
 
 <details class="orc-details-panel">
-<summary><i class="bi bi-graph-up"></i> Study Design & Power Analysis</summary>
+<summary><i class="bi bi-graph-up"></i> Study Design & Analysis Plan</summary>
 
 ::: {.panel-tabset}
 

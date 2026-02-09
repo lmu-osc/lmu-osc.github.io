@@ -1,5 +1,5 @@
 ---
-title: "Open Research Cycle Handbook"
+title: "Research Cycle Handbook"
 page-navigation: false
 toc: false
 css: open_research_cycle/orc-styles.css
@@ -61,9 +61,9 @@ cat(readLines("images/os-cycle.svg", warn = FALSE), sep = "\n")
       <div class="modal-body">
         <ul>
           <li>Explore / reuse research outputs</li>
-          <li>Write grant proposal & ethics proposal</li>
+          <li>Check legal frameworks</li>
           <li>Write Research Data Management plan</li>
-          <li>Plan study design and statistical analyses</li>
+          <li>Design study and plan statistical analyses</li>
         </ul>
         <hr>
         <p><strong>Team checkpoint:</strong> Study plan presentation + Preregistration submission</p>
