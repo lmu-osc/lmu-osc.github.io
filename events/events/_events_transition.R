@@ -202,7 +202,7 @@ update_event_yaml <- function(file_path, csv_row) {
   }) %>% purrr::compact()
   
   if(length(hosts) > 0) {
-    updates$hosts <- hosts
+    updates$host <- hosts  # Note: singular 'host' for YAML field name
   }
   
   # Build contact section updates
