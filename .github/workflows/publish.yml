@@ -12,6 +12,9 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+    env:
+      RENV_CONFIG_AUTO_SNAPSHOT: "false"
+      RENV_CONFIG_SNAPSHOT_TYPE: "explicit"
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
@@ -37,6 +40,10 @@ jobs:
           key: ${{ runner.os }}-quarto-freeze-${{ hashFiles('**/*.qmd') }}
           restore-keys: |
             ${{ runner.os }}-quarto-freeze-
+
+      - name: Change renv to explicit snapshot type
+        run: |
+          Rscript -e "renv::settings$snapshot.type('explicit')"
 
       - name: Render and Publish
         uses: quarto-dev/quarto-actions/publish@v2
