@@ -41,6 +41,11 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-quarto-freeze-
 
+      - name: Disable renv dependency discovery
+        run: |
+          mkdir -p ~/.config/renv
+          echo 'options(renv.config.auto.snapshot = FALSE)' >> ~/.Rprofile
+
       - name: Render and Publish
         uses: quarto-dev/quarto-actions/publish@v2
         with:
