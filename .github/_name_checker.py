@@ -31,11 +31,11 @@ if duplicated_names:
     print()
     errors_found = True
 
-# Check 2: Files containing hyphens instead of underscores
-files_with_hyphens = [name for name in names_from_files if '-' in name]
-if files_with_hyphens:
-    print("ERROR: Profile names with hyphens found (use underscores instead):")
-    for name in files_with_hyphens:
+# Check 2: Files containing underscores instead of hyphens
+files_with_underscores = [name for name in names_from_files if '_' in name]
+if files_with_underscores:
+    print("ERROR: Profile names with underscores found (use hyphens instead):")
+    for name in files_with_underscores:
         print(f"  - {name}")
     print()
     errors_found = True
@@ -43,16 +43,16 @@ if files_with_hyphens:
 # Check 3: Files containing spaces
 files_with_spaces = [name for name in names_from_files if ' ' in name]
 if files_with_spaces:
-    print("ERROR: Profile names with spaces found (use underscores instead):")
+    print("ERROR: Profile names with spaces found (use hyphens instead):")
     for name in files_with_spaces:
         print(f"  - {name}")
     print()
     errors_found = True
 
 # Check 4: Files containing non-ASCII characters (umlauts, etc.)
-files_with_special_chars = [name for name in names_from_files if not re.match(r'^[a-zA-Z0-9_]+$', name)]
+files_with_special_chars = [name for name in names_from_files if not re.match(r'^[a-zA-Z0-9-]+$', name)]
 if files_with_special_chars:
-    print("ERROR: Profile names with special characters found (use only a-z, A-Z, 0-9, and underscores):")
+    print("ERROR: Profile names with special characters found (use only a-z, A-Z, 0-9, and hyphens):")
     for name in files_with_special_chars:
         print(f"  - {name}")
     print()
@@ -62,12 +62,12 @@ if files_with_special_chars:
 if errors_found:
     print("Profile naming convention checks FAILED.")
     print("Please ensure profile filenames:")
-    print("  - Use underscores (_) instead of hyphens or spaces")
-    print("  - Contain only ASCII characters (a-z, A-Z, 0-9, _)")
+    print("  - Use hyphens (-) instead of underscores or spaces")
+    print("  - Contain only ASCII characters (a-z, A-Z, 0-9, -)")
     print("  - Are unique (no duplicates)")
     print("If there are duplicate names, consider adding middle initials to differentiate them.")
     print("If middle initials are already used, consider adding full middle names.")
-    print("The final option, if needed, is to append a numeric suffix (e.g., _1, _2) to make names unique.")
+    print("The final option, if needed, is to append a numeric suffix (e.g., -1, -2) to make names unique.")
     sys.exit(1)
 else:
     print("All profile naming convention checks PASSED.")
