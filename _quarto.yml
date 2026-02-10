@@ -50,11 +50,11 @@ website:
         icon: boxes
         menu:
           - text: Institutional Members
-            href: partners/institutional_members.qmd
+            href: partners/institutional-members.qmd
           - text: Local Open Science Initiatives
-            href: partners/local_os_initiatives.qmd
+            href: partners/local-os-initiatives.qmd
           - text: Other LMU Support Services
-            href: partners/other_lmu_support_services.qmd
+            href: partners/other-lmu-support-services.qmd
           - text: External Partners
             href: partners/externals.qmd
           - text: Funders
@@ -123,24 +123,24 @@ website:
           href: partners/index.qmd
           contents:
             - text: "Institutional Members"
-              href: partners/institutional_members.qmd 
+              href: partners/institutional-members.qmd 
             - section: "Local Open Science Initiatives"
-              href: partners/local_os_initiatives.qmd
+              href: partners/local-os-initiatives.qmd
               contents:
                 - text: "OSIM"
-                  href: partners/local_os_initiatives/osim.qmd
+                  href: partners/local-os-initiatives/osim.qmd
                 - text: "OSIS"
-                  href: partners/local_os_initiatives/osis.qmd
+                  href: partners/local-os-initiatives/osis.qmd
                 - text: "OSIP"
-                  href: partners/local_os_initiatives/osip.qmd
+                  href: partners/local-os-initiatives/osip.qmd
                 - text: "ReproducibiliTea"
-                  href: partners/local_os_initiatives/reproducibilitea.qmd
+                  href: partners/local-os-initiatives/reproducibilitea.qmd
                 - text: "Hacky Hour"
-                  href: partners/local_os_initiatives/hackyhour.qmd
+                  href: partners/local-os-initiatives/hacky-hour.qmd
                 - text: "Munich RSE"
-                  href: partners/local_os_initiatives/munich_rse.qmd
+                  href: partners/local-os-initiatives/munich-rse.qmd
             - text: "Other LMU Support Services"
-              href: partners/other_lmu_support_services.qmd 
+              href: partners/other-lmu-support-services.qmd 
             - text: "External Partners"
               href: partners/externals.qmd 
             - text: "Funders"
