@@ -1,0 +1,70 @@
+---
+title: Auftaktveranstaltung
+categories:
+  - ReproducibiliTea Journal Club
+date: '2024-04-23'
+event:
+  title: Auftaktveranstaltung
+  description: ''
+  categories: ReproducibiliTea Journal Club
+  date: '2024-04-23'
+  end_date: ''
+  time: ''
+  location:
+    name: Leopoldstraße 13, room 3322
+    address: ''
+    map_url: ''
+  format:
+    type: ReproducibiliTea Journal Club
+    detail: ''
+  language:
+    primary: German
+    primary-code: de
+    detail: ''
+links:
+  registration: ''
+  materials: ''
+  workshop_website: ''
+event_description: ''
+instructors:
+  - name: ''
+    url: ''
+helpers:
+  - name: ''
+contact:
+  name: ''
+  email: reproducibilitea.munich@gmail.com
+organizers:
+  name: ''
+host:
+  - name: LMU Open Science Center
+
+---
+<!-- MANDAORY SECTION START  -->
+
+{{< include templates/_setup.qmd >}}
+{{< include templates/_info_boxes.qmd >}}
+{{< include templates/_register_button.qmd >}}
+<!-- MANDAORY SECTION END  -->
+
+<br>
+
+<!-- DETAILED EVENT DESCRIPTION HERE OR USE THE TEMPLATE BELOW TO INCLUDE THE STANDARD DESCRIPTION SECTION -->
+<!-- {{< include templates/_event_description.qmd >}} -->
+
+<p>Zum Start in das neue Semester möchte der ReproducibiliTea Journal Club euch gerne zu unserer Auftaktveranstaltung einladen. Nutzt die Gelegenheit, um mehr über unseren Journal Club zu erfahren und gleichzeitig neue Kontakte zu knüpfen. Wir freuen uns darauf, viele neue Gesichter zu sehen!</p><p><strong>Ablauf: </strong>Zu Beginn der Sitzung habt ihr die Möglichkeit mehr über unseren Journal Club und das Semesterprogramm zu erfahren. Danach habt ihr Zeit, euch bei Tee und Keksen kennenzulernen und zu vernetzen. </p><p><strong>Über den Journal Club: </strong><a href="https://www.osc.uni-muenchen.de/members/reproducibilitea/index.html">Hier</a> findet ihr mehr Informationen über das Konzept des Journal Clubs.</p><p>Ihr seid herzlich eingeladen, an unseren kommenden Treffen teilzunehmen! Um auf dem Laufenden zu bleiben und Benachrichtigungen über unsere Sessions und die ausgewählten Artikel zu erhalten, könnt ihr unsere Mailingliste abonnieren, entweder indem ihr auf den folgenden Link klickt, <a href="https://lists.lrz.de/mailman/listinfo/reproducibilitea">https://lists.lrz.de/mailman/listinfo/reproducibilitea</a>, oder indem ihr uns eine E-Mail an <a class="g-link-mail" href="mailto:reproducibilitea.munich@gmail.com" title="Send email to: reproducibilitea.munich@gmail.com">reproducibilitea.munich@gmail.com</a> schreibt. Es ist nicht erforderlich, das behandelte Paper vor jeder Sitzung gelesen zu haben, es könnte allerdings von Vorteil sein.</p><p>Wir freuen uns, euch bei einer unserer nächsten Journal-Club-Sitzungen zu sehen!</p><p>Organisationsteam:</p><ul style="list-style-type: square;">
+<li>Laura Goetz, Studentin in Medizin und Masterstudentin in Psychologie</li>
+<li>Viktoria Wiegelmann, Bachelorstudentin in Psychologie</li>
+<li>Gracia Prüm, Bachelorstudentin in Psychologie</li>
+<li>Finia Loeb, Bachelorstudentin in Psychologie</li>
+<li>Alp Kaan Aksu, Bachelorstudent in Psychologie und Informatik</li>
+<li>Julian Lange, Doktorand in Statistik</li>
+</ul>
+<p> </p><div class="g-clear"></div>
+
+
+
+<!-- MANDAORY SECTION START  -->
+<!-- _event_description.qmd template should always be at bottom -->
+{{< include templates/_instructors_helpers_contact.qmd >}}
+<!-- MANDAORY SECTION END  -->

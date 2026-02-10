@@ -1,0 +1,118 @@
+---
+title: Corona & Open Science
+categories:
+  - Symposium
+date: '2020-12-04'
+event:
+  title: Corona & Open Science
+  description: ''
+  categories: Symposium
+  date: '2020-12-04'
+  end_date: ''
+  time: ''
+  location:
+    name: Online (Zoom)
+    address: ''
+    map_url: ''
+  format:
+    type: Symposium
+    detail: ''
+  language:
+    primary: German
+    primary-code: de
+    detail: ''
+links:
+  registration: ''
+  materials: ''
+  workshop_website: ''
+event_description: ''
+instructors:
+  - name: ''
+    url: ''
+helpers:
+  - name: ''
+contact:
+  name: ''
+  email: felix.schoenbrodt@psy.lmu.de
+organizers:
+  name: ''
+host:
+  - name: LMU Open Science Center
+presenters:
+  - name: Sabine Hoffmann
+    url: ''
+  - name: Prof. Dr. Helmut Küchenhoff
+    url: ''
+  - name: Felix Günther
+    url: ''
+  - name: Prof. Dr. Michael Ewers
+    url: ''
+  - name: Prof. Dr. Nikolaus Plesnila
+    url: ''
+  - name: Dr. Claudia Schmiedeberg 
+    url: ''
+  - name: Prof. Dr. Josef Brüderl
+    url: ''
+
+---
+<!-- MANDAORY SECTION START  -->
+
+{{< include templates/_setup.qmd >}}
+{{< include templates/_info_boxes.qmd >}}
+{{< include templates/_register_button.qmd >}}
+<!-- MANDAORY SECTION END  -->
+
+<br>
+
+<!-- DETAILED EVENT DESCRIPTION HERE OR USE THE TEMPLATE BELOW TO INCLUDE THE STANDARD DESCRIPTION SECTION -->
+<!-- {{< include templates/_event_description.qmd >}} -->
+
+<p>We are happy to announce that the LMU Open Science Center (OSC) invites to a Mini-Symposium with four talks around the topic "Corona &amp; Open Science". After each lecture, a short discussion is planned. At the end, there will be Zoom breakoutrooms (self-organized), so that you can get in contact with each other or exchange information with the speakers. Following the symposium, a general assembly of the OSC will take place.  All guests are welcome to join. All talks, discussions, and the assembly will be in German.</p><p>The presentations will start at 02:00pm and end at 03:45pm, the assembly will be between 04:00pm and 05:00pm:</p><table class="table" border="0"><tbody>
+<tr>
+<td><strong>Time</strong></td>
+<td><strong>Talk</strong></td>
+</tr>
+<tr>
+<td>02:00 pm</td>
+<td><strong>Introdcution</strong></td>
+</tr>
+<tr>
+<td>02:05 pm – 02:30 pm</td>
+<td>
+<strong>Uncertainty in the epidemiological modelling of COVID-19</strong><br><em>Sabine Hoffmann, IBE, Klinikum Großhadern</em>slides</td>
+</tr>
+<tr>
+<td>02:30 pm – 02:55 pm</td>
+<td>
+<strong>Nowcasting and change point detection in the COVID-19 pandemic</strong><br><em>Prof. Dr. Helmut Küchenhoff &amp; Felix Günther, Institut für Statistik</em>
+</td>
+</tr>
+<tr>
+<td>02:55 pm – 03:20 pm</td>
+<td>
+<strong>Freier Zugang zu Daten aus Therapiestudien: Transparenz in der</strong><strong> COVID-19 Krise</strong><br><em>Prof. Dr. Michael Ewers &amp; Prof. Dr. Nikolaus Plesnila, Klinikum<br>Großhadern</em>
+</td>
+</tr>
+<tr>
+<td>03:20 pm – 03:45 pm</td>
+<td>
+<strong>The pairfam COVID-19 Survey: Design and Potential Use </strong><strong></strong><br><em>Dr. Claudia Schmiedeberg &amp; Prof. Dr. Josef Brüderl, Institut für Soziologie</em><strong><br></strong>
+</td>
+</tr>
+<tr>
+<td>03:45 pm – 04:00 pm</td>
+<td><strong>Discussion in Break-Out-Rooms</strong></td>
+</tr>
+<tr>
+<td>04:00 pm – 05:00 pm</td>
+<td><strong>General Assembly LMU Open Science Center</strong></td>
+</tr>
+</tbody></table>
+<p> Thank you very much for coming!</p><div class="g-clear"></div>
+
+
+
+<!-- MANDAORY SECTION START  -->
+<!-- _event_description.qmd template should always be at bottom -->
+{{< include templates/_instructors_helpers_contact.qmd >}}
+<!-- MANDAORY SECTION END  -->

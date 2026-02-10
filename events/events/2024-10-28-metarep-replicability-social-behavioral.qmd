@@ -1,0 +1,69 @@
+---
+title: META-REP 2024 on Meta-Science and Replicability in the Social, Behavioral,
+  and Cognitive Sciences
+categories:
+  - Conference
+date: '2024-10-28'
+event:
+  title: META-REP 2024 on Meta-Science and Replicability in the Social, Behavioral,
+    and Cognitive Sciences
+  description: ''
+  categories: Conference
+  date: '2024-10-28'
+  end_date: '2024-10-31'
+  time: ''
+  location:
+    name: Munich
+    address: ''
+    map_url: ''
+  format:
+    type: Conference
+    detail: ''
+  language:
+    primary: English
+    primary-code: en
+    detail: ''
+links:
+  registration: ''
+  materials: ''
+  workshop_website: ''
+event_description: ''
+instructors:
+  - name: ''
+    url: ''
+helpers:
+  - name: ''
+contact:
+  name: ''
+  email: meta-rep.coordination@psy.lmu.de
+organizers:
+  name: ''
+host:
+  - name: LMU Open Science Center
+presenters:
+  - name: Fiona Fidler
+    url: ''
+  - name: Daniël Lakens
+    url: ''
+
+---
+<!-- MANDAORY SECTION START  -->
+
+{{< include templates/_setup.qmd >}}
+{{< include templates/_info_boxes.qmd >}}
+{{< include templates/_register_button.qmd >}}
+<!-- MANDAORY SECTION END  -->
+
+<br>
+
+<!-- DETAILED EVENT DESCRIPTION HERE OR USE THE TEMPLATE BELOW TO INCLUDE THE STANDARD DESCRIPTION SECTION -->
+<!-- {{< include templates/_event_description.qmd >}} -->
+
+
+
+
+
+<!-- MANDAORY SECTION START  -->
+<!-- _event_description.qmd template should always be at bottom -->
+{{< include templates/_instructors_helpers_contact.qmd >}}
+<!-- MANDAORY SECTION END  -->

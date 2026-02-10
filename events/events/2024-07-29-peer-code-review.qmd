@@ -1,0 +1,77 @@
+---
+title: Peer Code Review
+categories:
+  - Hacky Hour
+date: '2024-07-29'
+event:
+  title: Peer Code Review
+  description: ''
+  categories: Hacky Hour
+  date: '2024-07-29'
+  end_date: ''
+  time: ''
+  location:
+    name: Wikipedia Munich, Angertorstraße 3
+    address: ''
+    map_url: ''
+  format:
+    type: Hacky Hour
+    detail: ''
+  language:
+    primary: English
+    primary-code: en
+    detail: ''
+links:
+  registration: ''
+  materials: ''
+  workshop_website: ''
+event_description: ''
+instructors:
+  - name: ''
+    url: ''
+helpers:
+  - name: ''
+contact:
+  name: ''
+  email: malika.ihle@lmu.de
+organizers:
+  name: ''
+host:
+  - name: LMU Open Science Center
+
+---
+<!-- MANDAORY SECTION START  -->
+
+{{< include templates/_setup.qmd >}}
+{{< include templates/_info_boxes.qmd >}}
+{{< include templates/_register_button.qmd >}}
+<!-- MANDAORY SECTION END  -->
+
+<br>
+
+<!-- DETAILED EVENT DESCRIPTION HERE OR USE THE TEMPLATE BELOW TO INCLUDE THE STANDARD DESCRIPTION SECTION -->
+<!-- {{< include templates/_event_description.qmd >}} -->
+
+<p>We will run some mini peer code review! Bring small pieces of your code along and discuss it with others over pastries!<br>Any level and any programming language welcome!</p><p><strong>Possible resources to prepare your session’s hack:</strong></p><ul><li>
+</li></ul>
+<div>
+<ul>
+<li>Oxford code review network guidelines: <a href="https://github.com/OxfordCodeReviewNet/forum">https://github.com/OxfordCodeReviewNet/forum</a>
+</li>
+<li>Code Review Checklist for Scientific Code and Software: <a href="https://zenodo.org/records/8432946">https://zenodo.org/records/8432946</a>
+</li>
+</ul>
+</div><p><strong>Sessions’ agenda:</strong></p><ul>
+<li>Brief round of introductions and description of the problems you’ll be working on during that session</li>
+<li>Formation of possible groups or tandems, if participants have tips to exchange on certain topics</li>
+<li>Hack</li>
+<li>Wrap-up: progress and next steps</li>
+</ul>
+<div></div><div>We will then have a break for August and resume our sessions on Monday Sept 30.</div><p>Learn more about the Hacky Hour initiative <a href="../../meetups/hackyhour/index.html" title="Hacky Hour">here</a>.</p><div class="g-clear"></div>
+
+
+
+<!-- MANDAORY SECTION START  -->
+<!-- _event_description.qmd template should always be at bottom -->
+{{< include templates/_instructors_helpers_contact.qmd >}}
+<!-- MANDAORY SECTION END  -->

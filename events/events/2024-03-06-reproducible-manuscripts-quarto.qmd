@@ -1,0 +1,62 @@
+---
+title: Reproducible Manuscripts with Quarto
+categories:
+  - Workshop
+date: '2024-03-06'
+event:
+  title: Reproducible Manuscripts with Quarto
+  description: ''
+  categories: Workshop
+  date: '2024-03-06'
+  end_date: ''
+  time: ''
+  location:
+    name: Hybrid (Leopoldstraße 13, room 3322, Munich and via Zoom)
+    address: ''
+    map_url: ''
+  format:
+    type: Workshop
+    detail: ''
+  language:
+    primary: English
+    primary-code: en
+    detail: ''
+links:
+  registration: ''
+  materials: ''
+  workshop_website: ''
+event_description: ''
+instructors:
+  - name: ''
+    url: ''
+helpers:
+  - name: ''
+contact:
+  name: ''
+  email: malika.ihle@lmu.de
+organizers:
+  name: ''
+host:
+  - name: LMU Open Science Center
+
+---
+<!-- MANDAORY SECTION START  -->
+
+{{< include templates/_setup.qmd >}}
+{{< include templates/_info_boxes.qmd >}}
+{{< include templates/_register_button.qmd >}}
+<!-- MANDAORY SECTION END  -->
+
+<br>
+
+<!-- DETAILED EVENT DESCRIPTION HERE OR USE THE TEMPLATE BELOW TO INCLUDE THE STANDARD DESCRIPTION SECTION -->
+<!-- {{< include templates/_event_description.qmd >}} -->
+
+<p>Quarto makes transparent and reproducible data analysis simple and fun. In a nutshell, Quarto lets you mix text written in markdown with chunks of executable code written in, e.g., R or Python. You can use it for interactive notebooks, and export to a large number of formats including HTML, PDF/LaTeX, Microsoft Word or PowerPoint, or even interactive websites. In this workshop, we cover the fundamentals, including the markdown syntax, code chunks and inline code, and the output formats available. We also go over citations, cross-referencing, and templating, which ultimately allow you to write academic papers entirely in Quarto.</p><p><br>The self-paced tutorial for this workshop can be found here: <a href="https://lmu-osc.github.io/introduction-to-Quarto/">https://lmu-osc.github.io/introduction-to-Quarto/</a></p><p>The self-paced tutorials focus on using Quarto with R and RStudio, which is also used by the instructors in their research and teaching. They are, however, no experts for every possible environment, but will try their best to assist you.</p><p><strong>Participants</strong>: The targeted audience are total novices or intermediate users of literate programming tools (e.g. Rmarkdown, Quarto), who program (at any level) in R, Python, or Julia, and preferentially use RStudio (although VS Code, Jupyter, Neovim or other text editor are also suitable). Ideally, participants already know of or use version control.</p><p><strong>Requirement</strong>: Participants must have their own laptop with admin access. Software will be installed as part of the workshop.</p><p><strong>Instructor</strong>: Dr Florian Pargent and Florian Kohrt</p><p>The event will be held in English. </p><div class="g-clear"></div>
+
+
+
+<!-- MANDAORY SECTION START  -->
+<!-- _event_description.qmd template should always be at bottom -->
+{{< include templates/_instructors_helpers_contact.qmd >}}
+<!-- MANDAORY SECTION END  -->

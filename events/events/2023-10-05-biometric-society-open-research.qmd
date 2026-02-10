@@ -1,0 +1,67 @@
+---
+title: Open Replicable Research by the International Biometric Society
+categories:
+  - Conference
+date: '2023-10-05'
+event:
+  title: Open Replicable Research by the International Biometric Society
+  description: ''
+  categories: Conference
+  date: '2023-10-05'
+  end_date: '2023-10-06'
+  time: ''
+  location:
+    name: Großhadern, Butenandtstr. 5, Room B0.022
+    address: ''
+    map_url: ''
+  format:
+    type: Conference
+    detail: ''
+  language:
+    primary: English
+    primary-code: en
+    detail: ''
+links:
+  registration: ''
+  materials: ''
+  workshop_website: ''
+event_description: ''
+instructors:
+  - name: ''
+    url: ''
+helpers:
+  - name: ''
+contact:
+  name: ''
+  email: sabine.hoffmann@stat.uni-muenchen.de
+organizers:
+  name: ''
+host:
+  - name: LMU Open Science Center
+presenters:
+  - name: Prof. Dr. Ulrich Dirnagl 
+    url: ''
+  - name: Prof. Dr. Ioana Cristea 
+    url: ''
+
+---
+<!-- MANDAORY SECTION START  -->
+
+{{< include templates/_setup.qmd >}}
+{{< include templates/_info_boxes.qmd >}}
+{{< include templates/_register_button.qmd >}}
+<!-- MANDAORY SECTION END  -->
+
+<br>
+
+<!-- DETAILED EVENT DESCRIPTION HERE OR USE THE TEMPLATE BELOW TO INCLUDE THE STANDARD DESCRIPTION SECTION -->
+<!-- {{< include templates/_event_description.qmd >}} -->
+
+
+
+
+
+<!-- MANDAORY SECTION START  -->
+<!-- _event_description.qmd template should always be at bottom -->
+{{< include templates/_instructors_helpers_contact.qmd >}}
+<!-- MANDAORY SECTION END  -->

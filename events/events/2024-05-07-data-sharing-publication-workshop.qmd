@@ -1,0 +1,64 @@
+---
+title: 'RDM for Medical and Biomedical Sciences: Workshop on Data Sharing and Publication'
+categories:
+  - Workshop
+date: '2024-05-07'
+event:
+  title: 'RDM for Medical and Biomedical Sciences: Workshop on Data Sharing and Publication'
+  description: ''
+  categories: Workshop
+  date: '2024-05-07'
+  end_date: ''
+  time: ''
+  location:
+    name: Online (Zoom)
+    address: ''
+    map_url: ''
+  format:
+    type: Workshop
+    detail: ''
+  language:
+    primary: English
+    primary-code: en
+    detail: ''
+links:
+  registration: ''
+  materials: ''
+  workshop_website: ''
+event_description: ''
+instructors:
+  - name: ''
+    url: ''
+helpers:
+  - name: ''
+contact:
+  name: ''
+  email: rdm@ub.uni-muenchen.de
+organizers:
+  name: ''
+host:
+  - name: LMU Open Science Center
+
+---
+<!-- MANDAORY SECTION START  -->
+
+{{< include templates/_setup.qmd >}}
+{{< include templates/_info_boxes.qmd >}}
+{{< include templates/_register_button.qmd >}}
+<!-- MANDAORY SECTION END  -->
+
+<br>
+
+<!-- DETAILED EVENT DESCRIPTION HERE OR USE THE TEMPLATE BELOW TO INCLUDE THE STANDARD DESCRIPTION SECTION -->
+<!-- {{< include templates/_event_description.qmd >}} -->
+
+<p>This workshop builds upon the lecture "Introduction to Research Data Management for Medical and Biomedical Sciences" offered jointly by ZB MED [1] and LMU University Library [2] in Decem-ber 2023. The workshop gives a more detailed introduction to data sharing and publication and explores its practical aspects, focusing on the needs in medical and biomedical research. Partic-ipants will learn strategies for implementing access control mechanisms that enable data sharing while protecting sensitive information. Further topics are the benefits of using persistent identi-fiers (PIDs) and their connection to the FAIR data principles. Finally, the workshop provides par-ticipants with best practices for preparing and publishing data and gives an overview of data repositories in the medical and biomedical field. Through interactive sessions and discussions, participants will deepen their knowledge to effectively manage, share, and publish their re-search data, fostering transparency and reproducibility in their scientific work.</p><p><strong>Topics: </strong>access control, persistent identifiers, data publishing, repositories</p><p><strong>Target audience:</strong> PHD students working in the medical and biomedical sciences</p><p><strong>Logistics:</strong> If you want to participate, please register. You will receive the link to the Zoom Meeting a few days before the workshop. Registration link: <a href="https://lmu-munich.zoom-x.de/meeting/register/u50td-msqDoqGtCDKeUiKK0Vj8h4l-nOfmwr">https://lmu-munich.zoom-x.de/meeting/register/u50td-msqDoqGtCDKeUiKK0Vj8h4l-nOfmwr</a></p><p><strong>Maximum number of participants:</strong> 30 persons</p><p><strong>Contact details:</strong> <a href="mailto:%20rdm@ub.uni-muenchen.de">rdm@ub.uni-muenchen.de </a></p><p>[1]: <a href="https://www.zbmed.de/">https://www.zbmed.de/</a><br>[2]: <a href="https://www.ub.uni-muenchen.de/index.html">https://www.ub.uni-muenchen.de/index.html </a></p><ul style="list-style-type: square;"><li>
+</li></ul>
+<div class="g-clear"></div>
+
+
+
+<!-- MANDAORY SECTION START  -->
+<!-- _event_description.qmd template should always be at bottom -->
+{{< include templates/_instructors_helpers_contact.qmd >}}
+<!-- MANDAORY SECTION END  -->
