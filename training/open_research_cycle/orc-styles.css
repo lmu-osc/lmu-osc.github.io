@@ -306,7 +306,7 @@ svg :is(text, tspan) { font-family: inherit !important; font-weight: bold; point
 [id^="modalPhase"] .modal-title { font-weight: 700;color:white; }
 [id^="modalPhase"] .btn-close { filter: invert(1) grayscale(100%) brightness(200%); opacity: .8; }
 [id^="modalPhase"] .btn-close:hover { opacity: 1; }
-[id^="modalPhase"] .modal-body { padding: 2rem; font-size: 1.125rem; line-height: 1.6; color: var(--orc-gray-600); }
+[id^="modalPhase"] .modal-body { padding: 2rem; font-size: 1.125rem; line-height: 1.6; color: var(--orc-gray-600); text-align: left;}
 [id^="modalPhase"] .modal-footer { border-top: 1px solid var(--orc-gray-200); padding: 1rem 2rem; }
 [id^="modalPhase"] .modal-footer .btn-primary { background: var(--phase-color); border-color: var(--phase-color); padding: .5rem 1.5rem; font-weight: 600; }
 [id^="modalPhase"] .modal-footer .btn-primary:hover { background: var(--phase-color-hover); border-color: var(--phase-color-hover); }
