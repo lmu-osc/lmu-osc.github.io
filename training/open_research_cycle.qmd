@@ -12,9 +12,9 @@ include-in-header:
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.min.css">
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 ---
-This handbook offers practical guidance for making research open, responsible, and reproducible by design. It covers the full research life cycle, from formulating questions and preregistering studies to publishing articles, data, and code, and links to OSC self-paced tutorials, LMU support services, and essential tools to support open research in everyday practice.
+Get practical guidance for making your research open, responsible, and reproducible by design. This handbook covers the full research life cycle, from formulating questions and preregistering studies to publishing articles, data, and code, and links to OSC self-paced tutorials, LMU support services, and essential tools to support open research in everyday practice.
 
-This research practices manual can be adapted by research groups in any scientific field. Each section outlines concrete actions for ongoing projects and concludes with a team checkpoint. To build your own lab handbook
+This manual can be adapted by research groups in any scientific field. Each section outlines concrete actions for ongoing projects and concludes with a team checkpoint. To build your own lab handbook:
 
 - review the core discipline-agnostic sections by clicking on the figure below, 
 - consult discipline-specific guidance (in development - ETA end 2026)<!--to link to Reema's expert pages when built -->, 
@@ -32,17 +32,19 @@ This research practices manual can be adapted by research groups in any scientif
 cat(readLines("images/os-cycle.svg", warn = FALSE), sep = "\n")
 ```
 
-
-
-<!-- removed bottom navigation because not there in rest of website, but now left nav bar
 </div>
+<details>
+<summary>**About this project**</summary>
 
-<div style="text-align: center; margin-top: 4rem;">
-  <a href="training.html" style="color: #00883A; text-decoration: none; font-weight: bold; font-size: 1.1rem;">
-    <i class="bi bi-arrow-left"></i> Back to Training Overview
-  </a>
-</div> 
--->
+This work is part of the 'Switch-to-Open Program' funded by the Volkswagen Foundation (2025-2027) whereby Dr. Malika Ihle provide 6-month pedagogical interventions to research groups with the support of Reema Gupta. Our handbook and other material are licensed CC.BY.-SA 4.0: please reuse, adapt, and share openly.
+
+</details>
+
+
+
+
+
+
 
 <!-- Modals for Pop-out Content -->
 <!-- Wrapped in raw HTML block to prevent rendering issues -->
@@ -62,11 +64,11 @@ cat(readLines("images/os-cycle.svg", warn = FALSE), sep = "\n")
         <ul>
           <li>Explore / reuse research outputs</li>
           <li>Check legal frameworks</li>
-          <li>Write Research Data Management plan</li>
+          <li>Write Research Data Management (RDM) plan</li>
           <li>Design study and plan statistical analyses</li>
         </ul>
         <hr>
-        <p><strong>Team checkpoint:</strong> Study plan presentation + Preregistration submission</p>
+        <p><strong>Team checkpoints:</strong> Study plan presentation + Preregistration submission</p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -120,7 +122,7 @@ cat(readLines("images/os-cycle.svg", warn = FALSE), sep = "\n")
           <li>Write reproducible reports</li>
         </ul>
         <hr>
-        <p><strong>Team checkpoint:</strong> Repository & code peer-review + Result presentation</p>
+        <p><strong>Team checkpoints:</strong> Repository & code peer-review + Result presentation</p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
