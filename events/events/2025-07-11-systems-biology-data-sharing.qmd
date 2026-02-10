@@ -1,0 +1,44 @@
+---
+title: 'OSIM Meetup: Data Sharing in Systems Biology'
+categories: OSIM
+date: "11 Jul, 2025"
+event:
+  title: 'OSIM Meetup: Data Sharing in Systems Biology'
+  description: "Discussion on data sharing practices in systems biology research"
+  categories: ["OSIM Meetup"]
+  date: "11 Jul, 2025"
+  time: "14:00 CET"
+  format:
+    type: "Hybrid"
+    details: "In-person & Online"
+  language:
+    primary: "English"
+    primary-code: "en"
+
+instructors: []
+
+presenters:
+  - name: "Christian Behrends"
+    affiliation: "Munich Cluster for Systems Neurology, LMU Munich"
+
+contact: 
+    name: "OSC team"
+    email: "osc@lmu.de"
+
+---
+
+
+{{< include templates/_setup.qmd >}}
+{{< include templates/_info_boxes.qmd >}}
+{{< include templates/_register_button.qmd >}}
+
+
+## Event Details
+
+**Speaker:** Christian Behrends (Munich Cluster for Systems Neurology, LMU Munich)
+
+**Date & Time:** 11 July 2025, 14:00 CET
+
+### Materials
+
+- [Slides](osim_datasharing_2025_07_11.pdf)

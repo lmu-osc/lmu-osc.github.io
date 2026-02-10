@@ -1,0 +1,62 @@
+---
+title: Open Access
+categories:
+  - ReproducibiliTea Journal Club
+date: '2024-05-22'
+event:
+  title: Open Access
+  description: ''
+  categories: ReproducibiliTea Journal Club
+  date: '2024-05-22'
+  end_date: ''
+  time: ''
+  location:
+    name: Leopoldstraße 13, room 3322
+    address: ''
+    map_url: ''
+  format:
+    type: ReproducibiliTea Journal Club
+    detail: ''
+  language:
+    primary: German
+    primary-code: de
+    detail: ''
+links:
+  registration: ''
+  materials: ''
+  workshop_website: ''
+event_description: ''
+instructors:
+  - name: ''
+    url: ''
+helpers:
+  - name: ''
+contact:
+  name: ''
+  email: reproducibilitea.munich@gmail.com
+organizers:
+  name: ''
+host:
+  - name: LMU Open Science Center
+
+---
+<!-- MANDAORY SECTION START  -->
+
+{{< include templates/_setup.qmd >}}
+{{< include templates/_info_boxes.qmd >}}
+{{< include templates/_register_button.qmd >}}
+<!-- MANDAORY SECTION END  -->
+
+<br>
+
+<!-- DETAILED EVENT DESCRIPTION HERE OR USE THE TEMPLATE BELOW TO INCLUDE THE STANDARD DESCRIPTION SECTION -->
+<!-- {{< include templates/_event_description.qmd >}} -->
+
+
+
+
+
+<!-- MANDAORY SECTION START  -->
+<!-- _event_description.qmd template should always be at bottom -->
+{{< include templates/_instructors_helpers_contact.qmd >}}
+<!-- MANDAORY SECTION END  -->

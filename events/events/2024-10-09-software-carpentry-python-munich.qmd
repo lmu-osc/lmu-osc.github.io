@@ -1,0 +1,64 @@
+---
+title: Software Carpentry - Python Flavored - Grosshadern
+categories:
+  - Workshop
+date: '2024-10-09'
+event:
+  title: Software Carpentry - Python Flavored - Grosshadern
+  description: ''
+  categories: Workshop
+  date: '2024-10-09'
+  end_date: '2024-10-10'
+  time: ''
+  location:
+    name: Campus Martinsried-Großhadern, Butenandtstr. 5, B 0.022,81377 München
+    address: ''
+    map_url: ''
+  format:
+    type: Workshop
+    detail: ''
+  language:
+    primary: English
+    primary-code: en
+    detail: ''
+links:
+  registration: ''
+  materials: ''
+  workshop_website: ''
+event_description: ''
+instructors:
+  - name: ''
+    url: ''
+helpers:
+  - name: ''
+contact:
+  name: ''
+  email: malika.ihle@lmu.de
+organizers:
+  name: ''
+host:
+  - name: LMU Open Science Center
+
+---
+<!-- MANDAORY SECTION START  -->
+
+{{< include templates/_setup.qmd >}}
+{{< include templates/_info_boxes.qmd >}}
+{{< include templates/_register_button.qmd >}}
+<!-- MANDAORY SECTION END  -->
+
+<br>
+
+<!-- DETAILED EVENT DESCRIPTION HERE OR USE THE TEMPLATE BELOW TO INCLUDE THE STANDARD DESCRIPTION SECTION -->
+<!-- {{< include templates/_event_description.qmd >}} -->
+
+<p>The workshop will cover the <strong>Unix shell</strong>, version control in <strong>git</strong>, and programming in <strong>Python</strong>.<br>It is free and open to researchers, staff, and students.</p><p>This workshop teaches c<strong>ore computing skills</strong> that will help you be <strong>more productive and effective</strong>. We will alternate short tutorials with hands-on practical exercises. Participants will be encouraged to help one another and to apply what they have learned to their own research problems.</p><p>See the workshop website for <strong>more details</strong>: <a href="https://lmu-osc.github.io/2024-10-09-LMU-Klinikum/">https://lmu-osc.github.io/2024-10-09-LMU-Klinikum/</a></p><p><strong>Instructors:</strong>  Dr. Sonja Grath, Maria Matveev, Dr. Balthasar Schachtner</p><p>Registration is mandatory, and participation requires setting up the software in advance by following the provided instructions (a help desk session will also take place the day prior to the workshop). Please register only if you are available for the whole course.</p><ul style="list-style-type: square;"><li>
+</li></ul>
+<div class="g-clear"></div>
+
+
+
+<!-- MANDAORY SECTION START  -->
+<!-- _event_description.qmd template should always be at bottom -->
+{{< include templates/_instructors_helpers_contact.qmd >}}
+<!-- MANDAORY SECTION END  -->

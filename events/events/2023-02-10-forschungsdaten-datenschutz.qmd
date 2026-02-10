@@ -1,0 +1,62 @@
+---
+title: Offene Forschungsdaten vs. Datenschutz Und Anonymität?
+categories:
+  - Workshop
+date: '2023-02-10'
+event:
+  title: Offene Forschungsdaten vs. Datenschutz Und Anonymität?
+  description: ''
+  categories: Workshop
+  date: '2023-02-10'
+  end_date: ''
+  time: ''
+  location:
+    name: Hybrid (Leopoldstraße 13, room 3322, Munich and via Zoom)
+    address: ''
+    map_url: ''
+  format:
+    type: Workshop
+    detail: ''
+  language:
+    primary: German
+    primary-code: de
+    detail: ''
+links:
+  registration: ''
+  materials: ''
+  workshop_website: ''
+event_description: ''
+instructors:
+  - name: ''
+    url: ''
+helpers:
+  - name: ''
+contact:
+  name: ''
+  email: malika.ihle@lmu.de
+organizers:
+  name: ''
+host:
+  - name: LMU Open Science Center
+
+---
+<!-- MANDAORY SECTION START  -->
+
+{{< include templates/_setup.qmd >}}
+{{< include templates/_info_boxes.qmd >}}
+{{< include templates/_register_button.qmd >}}
+<!-- MANDAORY SECTION END  -->
+
+<br>
+
+<!-- DETAILED EVENT DESCRIPTION HERE OR USE THE TEMPLATE BELOW TO INCLUDE THE STANDARD DESCRIPTION SECTION -->
+<!-- {{< include templates/_event_description.qmd >}} -->
+
+<p>Die Open Science Initiative Psychologie (OSIP) und das Open Science Center der LMU bieten am 10. Februar 2023 von 9:00 bis 12:00 Uhr einen Praxisworkshop für Wissenschaftler aller Karrierestufen zum Thema Datenanonymisierung an (Referent: Prof. Felix Schoenbrodt &amp; Dr. Anton Marx).</p><p>Wie lassen sich offene Forschungsdaten und der Schutz von personenbezogenen Daten in Einklang bringen? Der erste Teil des Workshop beleuchtet das Spannungsfeld zwischen Offenheit, Forschungsfreiheit und Datenschutz und zeigt Beispiele von Reidentifizierungsrisiken. Im zweiten Teil werden die relevanten Aspekte von rechtlichen Grundlagen (insbesondere DSGVO) erläutert und zentrale Begriffe wie z.B. „personenbezogen“ definiert. Dabei wird insbesondere auch auf das Thema „Datensicherheit“ eingegangen. Im dritten Teil wird gezeigt, wie man einen Datensatz ganz praktisch anonymisiert; das ist auch mit einer kleinen Übung in R verbunden. Am Ende steht ein kleiner Ausblick zu verwandten Themen wie z.B. synthetische Datensätze und Zugriffsklassenkonzepte.</p><p><strong>Voraussetzungen</strong><br>- Sie haben R und RStudio installiert.<br>- Sie kennen einige R-Grundlagen (z.B. wie man einen Wert in einem data.frame auswählt, wie man einen Vektor erstellt). Wenn Sie das nicht wissen, besuchen Sie das Tutorial: https://www.tutorialspoint.com/r/index.htm</p><p>Die Teilnahme an dem Workshop ist kostenlos und steht allen der LMU angeschlossenen Forschern offen. Mitglieder von Abteilungen, die das Open Science Center unterstützen (z.B. Abteilung für Psychologie), werden jedoch bevorzugt behandelt. Nicht-Mitglieder erhalten spätestens 2 Tage vor dem Workshop eine Bestätigung, ob ihre Teilnahme möglich ist.</p><p>Die Veranstaltung wird in deutscher Sprache abgehalten.</p><div class="g-clear"></div>
+
+
+
+<!-- MANDAORY SECTION START  -->
+<!-- _event_description.qmd template should always be at bottom -->
+{{< include templates/_instructors_helpers_contact.qmd >}}
+<!-- MANDAORY SECTION END  -->

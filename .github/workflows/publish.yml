@@ -12,6 +12,9 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+    env:
+      RENV_CONFIG_AUTO_SNAPSHOT: "false"
+      RENV_CONFIG_SNAPSHOT_TYPE: "explicit"
     steps:
       - name: Check out repository
         uses: actions/checkout@v4

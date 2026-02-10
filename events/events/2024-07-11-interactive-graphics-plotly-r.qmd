@@ -1,0 +1,64 @@
+---
+title: Creating Interactive Graphics in R with Plotly
+categories:
+  - Workshop
+date: '2024-07-11'
+event:
+  title: Creating Interactive Graphics in R with Plotly
+  description: ''
+  categories: Workshop
+  date: '2024-07-11'
+  end_date: ''
+  time: ''
+  location:
+    name: Leopoldstraße 13, room 3322
+    address: ''
+    map_url: ''
+  format:
+    type: Workshop
+    detail: ''
+  language:
+    primary: English
+    primary-code: en
+    detail: ''
+links:
+  registration: ''
+  materials: ''
+  workshop_website: ''
+event_description: ''
+instructors:
+  - name: ''
+    url: ''
+helpers:
+  - name: ''
+contact:
+  name: ''
+  email: malika.ihle@lmu.de
+organizers:
+  name: ''
+host:
+  - name: LMU Open Science Center
+
+---
+<!-- MANDAORY SECTION START  -->
+
+{{< include templates/_setup.qmd >}}
+{{< include templates/_info_boxes.qmd >}}
+{{< include templates/_register_button.qmd >}}
+<!-- MANDAORY SECTION END  -->
+
+<br>
+
+<!-- DETAILED EVENT DESCRIPTION HERE OR USE THE TEMPLATE BELOW TO INCLUDE THE STANDARD DESCRIPTION SECTION -->
+<!-- {{< include templates/_event_description.qmd >}} -->
+
+<p>In this workshop, we will explore how the Plotly package in R can transform traditional research outputs into dynamic, interactive graphics that foster greater engagement and understanding. By integrating Plotly's capabilities into your research dissemination practices, you can enhance the accessibility and impact of your findings.</p><p><strong>Target audience:</strong> This session is designed for researchers across all disciplines who are interested in learning new advanced visualization techniques. If you've ever been frustrated that a graphic couldn't communicate what you wanted it to, this workshop is for you. The workshop will be conducted in R, other programming languages are welcomed as Plotly can also be used in a Python environment but not covered by the workshop itself.</p><p><strong>Prerequisites:</strong> Basic R programming skills<br><br><br></p><ul style="list-style-type: square;"><li>
+</li></ul>
+<div class="g-clear"></div>
+
+
+
+<!-- MANDAORY SECTION START  -->
+<!-- _event_description.qmd template should always be at bottom -->
+{{< include templates/_instructors_helpers_contact.qmd >}}
+<!-- MANDAORY SECTION END  -->

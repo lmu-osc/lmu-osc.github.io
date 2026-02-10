@@ -1,0 +1,65 @@
+---
+title: 'Preregistration in Psychology: Past, Present, and Prospects'
+categories:
+  - Lecture
+date: '2024-04-24'
+event:
+  title: 'Preregistration in Psychology: Past, Present, and Prospects'
+  description: ''
+  categories: Lecture
+  date: '2024-04-24'
+  end_date: ''
+  time: ''
+  location:
+    name: Hybrid (LMU Department of Sociology, IfS 309, Munich and via Zoom)
+    address: ''
+    map_url: ''
+  format:
+    type: Lecture
+    detail: ''
+  language:
+    primary: English
+    primary-code: en
+    detail: ''
+links:
+  registration: ''
+  materials: ''
+  workshop_website: ''
+event_description: ''
+instructors:
+  - name: Dr. Olmo van den Akker (Tilburg University)
+    url: ''
+helpers:
+  - name: ''
+contact:
+  name: ''
+  email: katrin.auspurg@lmu.de
+organizers:
+  name: ''
+host:
+  - name: LMU Open Science Center
+presenters:
+  - name: Dr. Olmo van den Akker
+    url: ''
+
+---
+<!-- MANDAORY SECTION START  -->
+
+{{< include templates/_setup.qmd >}}
+{{< include templates/_info_boxes.qmd >}}
+{{< include templates/_register_button.qmd >}}
+<!-- MANDAORY SECTION END  -->
+
+<br>
+
+<!-- DETAILED EVENT DESCRIPTION HERE OR USE THE TEMPLATE BELOW TO INCLUDE THE STANDARD DESCRIPTION SECTION -->
+<!-- {{< include templates/_event_description.qmd >}} -->
+
+
+
+
+
+<!-- MANDAORY SECTION START  -->
+<!-- _event_description.qmd template should always be at bottom -->
+{{< include templates/_instructors_helpers_contact.qmd >}}
+<!-- MANDAORY SECTION END  -->

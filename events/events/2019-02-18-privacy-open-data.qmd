@@ -1,0 +1,70 @@
+---
+title: Maintaining Privacy with Open Data
+categories:
+  - Workshop
+date: '2019-02-18'
+event:
+  title: Maintaining Privacy with Open Data
+  description: ''
+  categories: Workshop
+  date: '2019-02-18'
+  end_date: ''
+  time: ''
+  location:
+    name: ''
+    address: ''
+    map_url: ''
+  format:
+    type: Workshop
+    detail: ''
+  language:
+    primary: German
+    primary-code: de
+    detail: ''
+links:
+  registration: ''
+  materials: ''
+  workshop_website: ''
+event_description: ''
+instructors:
+  - name: ''
+    url: ''
+helpers:
+  - name: ''
+contact:
+  name: ''
+  email: felix.schoenbrodt@psy.lmu.de
+organizers:
+  name: ''
+host:
+  - name: LMU Open Science Center
+
+---
+<!-- MANDAORY SECTION START  -->
+
+{{< include templates/_setup.qmd >}}
+{{< include templates/_info_boxes.qmd >}}
+{{< include templates/_register_button.qmd >}}
+<!-- MANDAORY SECTION END  -->
+
+<br>
+
+<!-- DETAILED EVENT DESCRIPTION HERE OR USE THE TEMPLATE BELOW TO INCLUDE THE STANDARD DESCRIPTION SECTION -->
+<!-- {{< include templates/_event_description.qmd >}} -->
+
+<p>The OSC offers a workshop on data privacy and anonymity for participants ranging from graduate students to professors. The workhop will be held by Felix Schönbrodt and Anton Marx.</p><p>Contents:</p><ul>
+<li>Why should we share data?</li>
+<li>Which kinds of research data need to be protected? What are personal data?</li>
+<li>How can the risk of re-identification be assessed?</li>
+<li>How can data be anonymized?</li>
+<li>A short discussion about new technological solutions that allow sharing sensible data (e.g. synthetical data, scientific use files, differential privacy)</li>
+<li>What are easy steps to enhance procedural safety in the use of sensible data?</li>
+</ul>
+<div>The workshop contains of both theoretical input and hands-on exercises. Please bring your own laptop (preferably with R and RStudio installed). Skills in R will be beneficial but not essential.</div><div></div><div><em>Notice: End of march or beginning of April, there will be another OSC workshop on "Advanced Power Analysis". Announcement will be made seperately on the OSC news website.</em></div><div class="g-clear"></div>
+
+
+
+<!-- MANDAORY SECTION START  -->
+<!-- _event_description.qmd template should always be at bottom -->
+{{< include templates/_instructors_helpers_contact.qmd >}}
+<!-- MANDAORY SECTION END  -->

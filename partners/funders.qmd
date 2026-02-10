@@ -7,7 +7,7 @@ format:
 ---
 
 <style>
-:root {
+.content-container {
   --theme-main: #00883A;
   --theme-bg: #f5f6fa;
   --theme-card-bg: #fff;
@@ -198,11 +198,6 @@ hr {
   cursor: default;
   color: #4a5568;
 }
-.funding-list .funding-amt:hover{
-  background-color: #00883b45;
-  color:white;
-}
-
 @media (max-width: 900px) {
   .member-grid {
     grid-template-columns: 1fr;
@@ -241,7 +236,7 @@ hr {
                       <img src="images/lmu_logo.jpg" alt="lmu-logo">
                       </a>
                   </div>
-                  <div class="member-grid-name">LMU Central Funding</div> 
+                  <div class="member-grid-name">LMU Project Funding</div> 
               </div>
           </div>
 
@@ -251,7 +246,7 @@ hr {
                   <div class="funding-details">
                     <span class="funding-name fw-bolder">Frontiers LMU Excellence</span>
                     <span class="funding-date text-muted">2022 - 2024</span>
-                    <span class="funding-amt z-50 border px-3 py-0 btn btn-light text-popover-foreground shadow-md fw-bolder">
+                    <span class="funding-amt z-50 border px-3 py-0 btn fw-bolder">
                       €250K
                     </span>
                   </div>
@@ -261,7 +256,7 @@ hr {
                   <div class="funding-details">
                     <span class="funding-name fw-bolder">Fund for the Promotion of Teaching </span>
                     <span class="funding-date text-muted">2022</span>
-                    <span class="funding-amt z-50 border px-3 py-0 btn btn-light text-popover-foreground shadow-md fw-bolder">
+                    <span class="funding-amt z-50 border px-3 py-0 btn fw-bolder">
                       €15K+
                     </span>
                   </div>
@@ -271,7 +266,7 @@ hr {
                   <div class="funding-details">
                     <span class="funding-name fw-bolder">Central Study Grant</span>
                     <span class="funding-date text-muted">2024 - 2025</span>
-                    <span class="funding-amt z-50 border px-3 py-0 btn btn-light text-popover-foreground shadow-md fw-bolder">
+                    <span class="funding-amt z-50 border px-3 py-0 btn fw-bolder">
                       €140K+
                     </span>
                   </div>
@@ -297,7 +292,7 @@ hr {
                     <div class="funding-details">
                         <span class="funding-name fw-bolder">Pioneer Project – Impetus for the German Science System</span>
                         <span class="funding-date text-muted">2025 - 2027</span>
-                        <span class="funding-amt z-50 border px-3 py-0 btn btn-light text-popover-foreground shadow-md fw-bolder">
+                        <span class="funding-amt z-50 border px-3 py-0 btn fw-bolder">
                           €550K
                         </span>
                     </div>
@@ -326,12 +321,12 @@ hr {
                     <div class="funding-details">
                         <span class="funding-name fw-bolder">Yearly membership fee</span>
                         <span class="funding-date text-muted">Ongoing</span>
-                        <span class="funding-amt z-50 border px-3 py-0 btn btn-light text-popover-foreground shadow-md fw-bolder">
+                        <span class="funding-amt z-50 border px-3 py-0 btn fw-bolder">
                           €10K+/year
                         </span>
                     </div>
                     <span class="funding-project text-muted">
-                      Funding institutional members such as LMU Faculties and Clusters of Excellence provide the center with a yearly membership fee of a few thousand euros to get priority in our training programmes and consultations.
+                      Funding institutional members such as LMU Faculties and Clusters of Excellence provide the center with a yearly membership fee to get priority access to our training programmes and consultations.
                     </span>
                   </div>
               </div>
@@ -355,12 +350,12 @@ hr {
                     <div class="funding-details">
                         <span class="funding-name fw-bolder">Departmental Study Grant</span>
                         <span class="funding-date text-muted">2026</span>
-                        <span class="funding-amt z-50 border px-3 py-0 btn btn-light text-popover-foreground shadow-md fw-bolder">
+                        <span class="funding-amt z-50 border px-3 py-0 btn fw-bolder">
                          €5K+
                         </span>
                     </div>
                     <span class="funding-project text-muted">
-                      Integration of Open Science training material in Psychology Curriculum
+                      Integration of Open Science training material into the Psychology curriculum
                     </span>
               </div>
           </div>

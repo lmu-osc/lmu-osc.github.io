@@ -1,0 +1,91 @@
+---
+title: LMU Open Science Summer School 2025
+categories:
+  - Summer School
+date: '2025-09-15'
+event:
+  title: LMU Open Science Summer School 2025
+  description: ''
+  categories: Summer school
+  date: '2025-09-15'
+  end_date: ''
+  time: ''
+  location:
+    name: Hybrid (Ludwigstraße 25, Munich and via Zoom)
+    address: ''
+    map_url: ''
+  format:
+    type: Summer school
+    detail: ''
+  language:
+    primary: English
+    primary-code: en
+    detail: ''
+links:
+  registration: ''
+  materials: ''
+  workshop_website: ''
+event_description: ''
+instructors:
+  - name: ''
+    url: ''
+helpers:
+  - name: ''
+contact:
+  name: ''
+  email: osc@lmu.de
+organizers:
+  name: ''
+host:
+  - name: LMU Open Science Center
+presenters:
+  - name: Prof. Dr. Richard McElreath
+    url: ''
+  - name: Vera Karlbauer
+    url: ''
+  - name: Dr. Jonas Hagenberg
+    url: ''
+  - name: Dr. Tim Errington
+    url: ''
+  - name: Dr. Barbara Beege
+    url: ''
+  - name: Franziska Schrade
+    url: ''
+
+---
+<!-- MANDAORY SECTION START  -->
+
+{{< include templates/_setup.qmd >}}
+{{< include templates/_info_boxes.qmd >}}
+{{< include templates/_register_button.qmd >}}
+<!-- MANDAORY SECTION END  -->
+
+<br>
+
+<!-- DETAILED EVENT DESCRIPTION HERE OR USE THE TEMPLATE BELOW TO INCLUDE THE STANDARD DESCRIPTION SECTION -->
+<!-- {{< include templates/_event_description.qmd >}} -->
+
+<p> </p><p>The LMU Open Science Center (OSC) is excited to announce the call for applications for its 5th hybrid summer school (OSSS25): <strong>deadline July 14</strong>!</p><p>This year's iteration has two tracks to provide participants with two sets of skills. You are invited to apply for one or both tracks. For either track, you can choose to participate either online or in-person (Philologicum Library, Ludwigstraße 25, Munich or on Zoom).</p><h3>Track 1: Open Science knowledge and skills</h3><p>In this track, early career researchers who are Open Science novices learn to make their <strong>research more transparent, reproducible and credible</strong> in the eyes of their peers, the public, and funding agencies. This track consists of public lectures accessible to anyone as well as hands-on practical workshops for selected applicants and extends from Monday 15.09.2025 9:00 to Friday 19.09.2025 14:30.</p><p>Participants of this track learn how to:</p><ul>
+<li>Specify research design and set up statistical plans in advance of collecting data to prevent biases in analyses, with the help of preregistration and data simulation;</li>
+<li>Create computationally reproducible workflows to be more efficient and spot mistakes in data wrangling or analyses, through programming with version controlled scripts;</li>
+<li>Prepare and share data and code in connection with manuscripts by applying the Findable, Accessible, Interoperable, Reusable principles, and using adequate repositories and licenses to accumulate credit and citations.</li>
+</ul>
+<p>Keynote presenters:</p><ul>
+<li>
+<strong>Prof Richard McElreath</strong>, Director of MPI for Evolutionary Anthropology</li>
+<li>
+<strong>Dr Tim Errington</strong>, Senior Director of Research at the Center for Open Science</li>
+</ul>
+<h3>Track 2: Open Science instructor training</h3><p>In this track, early career researchers or research support staff interested in becoming Open Science instructors develop essential <strong>pedagogical skills to promote Open Science through teaching</strong> - no prior experience in teaching required. This track extends from Friday 19.09.2025 14:30 to 17:30.</p><p>Participants of this track learn how to:</p><ul>
+<li>Design and deliver Open Science workshops, and apply basic didactic techniques to diverse audiences;</li>
+<li>Apply activation methods in the classroom to foster motivation and attention;</li>
+<li>Develop skills to advocate for Open Science, to lead research groups and discussions around Open Science, and to analyse the potential challenges and issues around the implementation of Open Science practices.</li>
+</ul>
+<p>After joining this track, you will have the opportunity to put your new skills into practice and co-deliver a workshop at LMU to become a certified Open Science instructor.</p><h3>Participating</h3><p>You can apply for Track 1, Track 2 or both, before July 14 by visiting the summer school website, reviewing selection criteria, and filling out the application form: <a href="https://lmu-osc.github.io/Open-Science-Summer-School-2025/Join.html">https://lmu-osc.github.io/Open-Science-Summer-School-2025/Join.html</a> </p><p>Alternatively, you can solely attend the public lectures online upon simple registration: <a href="https://www.pretix.osc.lmu.de/lmu-osc/OSSS25/">https://www.pretix.osc.lmu.de/lmu-osc/OSSS25/</a> </p><p>All materials of the summer school will be made available publically with an open license.</p><p>We are looking forward to your participation! For any questions, please contact us at: <a class="g-link-mail" href="mailto:osc@lmu.de" title="Send email to: osc@lmu.de">osc@lmu.de</a></p><p> </p><p>Sarah von Grebmer &amp; Malika Ihle, LMU Open Science Center</p><div class="g-clear"></div>
+
+
+
+<!-- MANDAORY SECTION START  -->
+<!-- _event_description.qmd template should always be at bottom -->
+{{< include templates/_instructors_helpers_contact.qmd >}}
+<!-- MANDAORY SECTION END  -->

@@ -1,0 +1,62 @@
+---
+title: Reproducible Research in R | How to Do the Same Thing more than Once
+categories:
+  - Workshop
+date: '2023-01-26'
+event:
+  title: Reproducible Research in R | How to Do the Same Thing more than Once
+  description: ''
+  categories: Workshop
+  date: '2023-01-26'
+  end_date: ''
+  time: ''
+  location:
+    name: Leopoldstraße 13, room 3322, Munich
+    address: ''
+    map_url: ''
+  format:
+    type: Workshop
+    detail: ''
+  language:
+    primary: English
+    primary-code: en
+    detail: ''
+links:
+  registration: ''
+  materials: ''
+  workshop_website: ''
+event_description: ''
+instructors:
+  - name: ''
+    url: ''
+helpers:
+  - name: ''
+contact:
+  name: ''
+  email: malika.ihle@lmu.de
+organizers:
+  name: ''
+host:
+  - name: LMU Open Science Center
+
+---
+<!-- MANDAORY SECTION START  -->
+
+{{< include templates/_setup.qmd >}}
+{{< include templates/_info_boxes.qmd >}}
+{{< include templates/_register_button.qmd >}}
+<!-- MANDAORY SECTION END  -->
+
+<br>
+
+<!-- DETAILED EVENT DESCRIPTION HERE OR USE THE TEMPLATE BELOW TO INCLUDE THE STANDARD DESCRIPTION SECTION -->
+<!-- {{< include templates/_event_description.qmd >}} -->
+
+<p><strong>Abstract</strong>: Many researchers want to work reproducibly, but it is not easy. They must invest considerable time to acquire the knowledge of what is even possible, before getting the skills required for reproducible research. This workshop gives researchers an overview of how to create reproducible data analyses in R (and beyond). Specifically, researchers will test, in a pre-set online environment, one way to automate the whole process from raw data to publishable manuscripts. This automation is possible by combining dynamic document generation (via R Markdown), version control (via Git), workflow orchestration (via Make) and software management (via Docker). These tools and, therefore, automatic reproduction of results are available on any machine with Docker installed. The resulting workflow is, hence, highly transferable across machines and time. These core properties of reproducibility are demonstrated for any reader by automatically reproducing the manuscript online via GitHub Actions.</p><p><strong>Instructor</strong>: Aaron Peikert, Center for Lifespan Psychology, Max Planck Institute for Human Development<br><strong>Facilitators</strong>: Felix Henninger (Chair for Statistics and Data Science in Social Sciences and the Humanities, LMU), Malika Ihle (LMU Open Science Center coordinator)</p><p><strong>Materials</strong>: <a href="https://aaronpeikert.github.io/repro-workshop/">https://aaronpeikert.github.io/repro-workshop/</a></p><p><strong>Participants</strong>: The targeted audience are researchers or graduate students working with R. Rough ideas of what Git, RMarkdown (or Jupiter), and the command line are can be helpful to follow this tech-savvy workshop.</p><p><strong>Requirement</strong>: Participants must bring their own laptop and have an internet connection.</p><p><strong>Related Paper</strong>: <a href="https://doi.org/10.3390/psych3040053">https://doi.org/10.3390/psych3040053</a></p><div class="g-clear"></div>
+
+
+
+<!-- MANDAORY SECTION START  -->
+<!-- _event_description.qmd template should always be at bottom -->
+{{< include templates/_instructors_helpers_contact.qmd >}}
+<!-- MANDAORY SECTION END  -->
