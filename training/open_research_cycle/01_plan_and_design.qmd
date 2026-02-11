@@ -17,16 +17,16 @@ title-block-style: none
 <div class="orc-hero-pills">
 <span><i class="bi bi-check2-circle"></i> Explore & Reuse</span>
 <span><i class="bi bi-check2-circle"></i> Check Legal Frameworks</span>
-<span><i class="bi bi-check2-circle"></i> Write Research Data Management Plans</span>
+<span><i class="bi bi-check2-circle"></i> Write Data Management Plan</span>
 <span><i class="bi bi-check2-circle"></i> Design Study</span>
 </div>
-<div class="orc-hero-checkpoint"><i class="bi bi-people-fill"></i> Checkpoint: Study plan presentation & preregistration</div>
+<div class="orc-hero-checkpoint"><i class="bi bi-people-fill"></i> Team Checkpoint: Study Plan Presentation & Preregistration</div>
 </div>
 </div>
 
 
 <details class="orc-details-panel">
-<summary><i class="bi bi-search"></i> Explore and Reuse</summary>
+<summary><i class="bi bi-search"></i> Explore and Reuse</summary> <!-- make this. and the other top titles, a sharable url -->
 
 Any resource that inspire you or that you want to reuse and/or adapt must minimally be cited, using their DOIs (and otherwise URL with author, date, and time of access) and you must follow the license and/or usage agreement provided by the authors. A research output (e.g. data, code) without a license cannot be reused even if they appear publicly online.
 
@@ -144,6 +144,7 @@ To find **existing datasets**, search for discipline-specific repositories on [r
 
 The LMU [Guidelines for Safeguarding Good Scientific Practice](https://cms-cdn.lmu.de/media/contenthub/amtliche-veroeffentlichungen/gwp-ordnung.pdf) (in german) are legally binding for all academics, researchers, research support staff, teachers, and students at LMU Munich. Only the original text in German prevails, but here is an English summary of relevant aspects of this guide:
 
+<em>
 <h4>Appropriate level of documentation and standards to allow **reproduction**:</h4>
 
 * Reproducible methods must be used. (§11)
@@ -160,14 +161,15 @@ The LMU [Guidelines for Safeguarding Good Scientific Practice](https://cms-cdn.l
 * Apart from specific exceptions, all findings should be made public. For this, they must be described in a detailed and comprehensible manner which includes making available the research data, materials and information on which the results are based, as well as the methods used and the software employed (including appropriately licensed self-written software) according to the FAIR principles*. (§13)
 * Data, material, software made publicly accessible must be appropriately archived, usually for a period of 10 years (§17).
 
-<em>
+</em>
+
 *Note: The FAIR principles are defined as: <!-- maintain the freaking list formatting... -->
 - Findable: metadata should be deposited in a searchable repository and be assigned a permanent identifier
 - Accessible: the data is either open, or accessible upon some authentication process, or closed, but with open metadata.
 - Interoperable: the data is described with a standard terminology (so the dataset can be merged with other ones) and saved in a stable file format
 - Reusable: the data is richly documented (e.g. with a data dictionary) and is accompanied by a data usage license
 See https://www.go-fair.org/fair-principles/ for more information and section [2. Collect & Manage](02_collect_and_manage.qmd) to learn how to implement the FAIR principles in your research.
-</em>
+
 
 <!-- add a card with LMU logo and LMU Good Scientific Practices as title with link to pdf? in section Resources-->
 <!-- add FAIR data management tutorial in learn more section ?-->
@@ -258,6 +260,7 @@ The specific questions vary by discipline, data type, and funder requirements. D
 
 <details class="orc-details-panel">
 <summary><i class="bi bi-graph-up"></i> Study Design & Analysis Plan</summary><!-- I want to cross ref this title - how? --> 
+<!-- logo like https://ree-gupta.github.io/lmu-osc.github.io/training/open_research_cycle/01_plan_and_design_website.html#planning-framework-options -->
 
 ::: {.panel-tabset}
 
@@ -290,4 +293,60 @@ The specific questions vary by discipline, data type, and funder requirements. D
 
 </details>
 
-Checklist
+## <i class="bi bi-clipboard-check"></i> Planning Checklist 
+<!-- format like in 'website version' but with smaller title so it fits with the new 4 titles above -->
+
+::: {.orc-gradient-box}
+
+**Research Design:**
+
+<div class="orc-grid-2col">
+
+<div>
+
+- [ ] Research questions clearly defined
+- [ ] Hypotheses specified (if applicable)
+- [ ] Study design chosen and justified
+- [ ] Variables and measures identified
+</div>
+
+<div>
+
+- [ ] Sample size determined with power analysis
+- [ ] Inclusion/exclusion criteria defined
+- [ ] Potential confounds considered
+- [ ] Ethical approval obtained (if required)
+</div>
+
+</div>
+
+**Documentation & Planning:**
+
+<div class="orc-grid-2col">
+
+<div>
+
+- [ ] Data Management Plan drafted
+- [ ] Preregistration prepared (if applicable)
+- [ ] Analysis plan documented
+- [ ] File naming conventions established
+</div>
+
+<div>
+
+- [ ] Repository/storage solution selected
+- [ ] Collaboration tools set up
+- [ ] Timeline and milestones defined
+- [ ] Budget includes open science costs
+</div>
+
+</div>
+
+**Before Data Collection:**
+
+- [ ] All study materials finalized and documented
+- [ ] Preregistration submitted (if applicable)
+- [ ] Data collection protocols tested
+- [ ] Team roles and responsibilities clear
+
+:::
