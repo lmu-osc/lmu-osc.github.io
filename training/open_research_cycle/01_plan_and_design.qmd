@@ -99,6 +99,10 @@ To have some **insight into projects that are not (yet) published**, either curr
 
 To find **existing datasets**, search for discipline-specific repositories on [re3data](https://www.re3data.org/) which is a central registry of all repositories, or explore subject agnostic repositories such as [DataCite](https://datacite.org/) or [Zenodo](https://zenodo.org/) (oftentimes with the corresponding analysis code). These platforms either give you access to existing data or provide metadata and explanations on how to request access to the data.
 
+<br>
+
+Found a dataset to reuse? Make sure you know where your data comes from, how the data was collected and processed, and reflect on whether any of it poses problems for your research question. Finally, check what requirements and resources the data sources have. Some requirement to access the data may be to submit a preregistration (see [Study Design & Analysis plan](###study-design--analysis-plan)). Either way, in order not to introduce confirmation or hindsight bias in your data analyses, do not start plotting the data itself but instead familiarize yourself with the metadata to plan your analyses (see [Study Design & Analysis plan](###study-design--analysis-plan)). Specifically, there may be a data dictionary (also called "codebook"), or other extensive documentation on which variables and their description are included. 
+
 <!-- add zenodo card as tool-->
 ::: {.orc-grid-tools}
 
@@ -266,9 +270,38 @@ The specific questions vary by discipline, data type, and funder requirements. D
 
 ### Pre-analysis planning
 
-3 lines of text
+Humans are prone to cognitive biases such as **confirmation bias** (seeking information that supports existing beliefs) and **hindsight bias** (believing outcomes were predictable after the fact). In research, these biases can distort findings, especially when researchers make analytic decisions after seeing results. Although statistical testing typically accepts a 5% false positive rate, **"researcher degrees of freedom"** — choices about data collection, exclusions, transformations, sample size, covariates, etc. — can dramatically inflate false positives when decisions are made post hoc. Practices like increasing sample size until reaching statistical significance, selectively removing outliers, or trying multiple analytic strategies **increase the likelihood of false-positive results**, often unintentionally.
+
+The core problem is that analyses guided by observed outcomes allow biases to influence decisions, making many reported effects unreliable. A key **remedy is transparency and preregistration**: specifying hypotheses, methods, and analysis plans before data collection or analysis. Preregistration constrains bias in confirmatory testing while still allowing exploratory analyses, clearly distinguishing robust hypothesis tests from hypothesis-generating work. This improves credibility, limits false positives, and often leads to better study design through **early methodological feedback**.
+
+Several [preregistration templates](https://help.osf.io/article/330-welcome-to-registrations) exist. While the [standard OSF preregistration template](https://docs.google.com/document/d/1gkN0Jp6Gu7GIA4Ne4YCDZ61nCLQRgt32moRdUg9AnVg/edit?tab=t.0#heading=h.fwbi14d4b65g) is most commonly used, some are tailored for specific field or specific methods (e.g. systematic review, qualitative work, secondary data analysis).
+
+#### <i class="bi bi-list-check"></i> Your preregistration will define:
+
+- **Hypothesis and predictions**
+- **Data collection procedures**
+- **Sample size and stopping rule**
+- **Variables** (manipulated, measured, indices)
+- **Statistical method** (model, dependent and independent variables, covariables, trasnformations)
+- **Data exclusion criteria**
+- **How to deal with missing data**
+
+A great tool to create your statistical plan, especially for early career researchers still learning statistics and needing feedback from collaborators or statisticians on their design, is to simulate data and write the possible statistical test to analyze that data (see [Simulation of data and Power analyses tabs]() <!-- internal link-->). 
+
+Once completed, you can submit your preregistration on e.g. the [Open Science Framework (OSF)](https://osf.io/) before collecting or analyzing existing data. The plan can be embargoed (i.e. kept private for a predetermine amount of time, and for a maximum of 4 years of the OSF) to prevent scooping, then later made public upon publication. This process improves transparency and is inviting valuable early feedback from collaborators. An even stronger approach is submitting preregistrations directly to journals (then called "Registered Reports"), enabling peer review at a stage where methodological adjustments are still possible.
+
+<!-- in a call out info box -->
+Registered Reports are a publication format, now adopted by over 300 journals (see [participating journals](https://www.cos.io/initiatives/registered-reports)), where studies are peer-reviewed before data collection. Reviewers evaluate the hypotheses, methods, and planned analyses, allowing methodological improvements. If the plan is approved, the journal grants in-principle acceptance, meaning publication is guaranteed provided researchers follow the protocol.
+
+After completing the study, authors add results and discussion sections, clearly separating preregistered confirmatory analyses from exploratory ones. Final review focuses on adherence to the approved plan and the validity of conclusions, not on whether results are significant. This model shifts incentives toward asking important questions and using rigorous methods rather than chasing striking outcomes.
+<!-- till here -->
+
+
 
 ::: {.orc-grid-tools}
+<!-- learn more: cards for a TBA preregistration tutorial, card for OSF linking out to https://help.osf.io/article/330-welcome-to-registrations--> 
+<!-- Toosl and resources: OSF card with real OSF icon used somewhere above + COS card linking to  https://www.cos.io/initiatives/registered-reports-->
+
 
 <div class="orc-card-tool">
 <div class="orc-card-tool-icon"><img src="https://cdn.simpleicons.org/osf" alt="OSF"></div>
