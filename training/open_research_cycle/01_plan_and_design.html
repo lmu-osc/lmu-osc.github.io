@@ -1,0 +1,1639 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="quarto-1.8.27" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+
+<meta name="description" content="Explore existing resources, write data management plans, design studies, and prepare preregistrations" />
+
+<title>Plan &amp; Design – LMU Open Science Center</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+<!-- htmldependencies:E3FAD763 -->
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<!-- Matomo -->
+<script>
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//www.analytics.osc.lmu.de/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '3']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+
+
+<link rel="stylesheet" href="https://raw.githubusercontent.com/lmu-osc/branding-resources/refs/heads/main/styles.css" />
+<link rel="stylesheet" href="../../assets/fontawesome-free-7.1.0-web/css/all.min.css" />
+<link rel="stylesheet" href="../../styles.css" />
+<link rel="stylesheet" href="../../footer/footer-style.css" />
+<link rel="stylesheet" href="../../custom-navbar.css" />
+<link rel="stylesheet" href="/custom-navbar.css" />
+<link rel="stylesheet" href="../training.css" />
+<link rel="stylesheet" href="orc-styles.css" />
+</head>
+
+<body>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="/index.html" class="navbar-brand navbar-brand-logo">
+    <img src="/assets/img/osc_image_assets/LMU_Open_Science_Center_Logo.jpg" alt="" class="navbar-logo light-content" />
+    <img src="/assets/img/osc_image_assets/LMU_Open_Science_Center_Logo.jpg" alt="" class="navbar-logo dark-content" />
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+  aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation"
+  onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="/index.html"> <i 
+  class="bi bi-house-door" 
+  role="img" 
+>
+</i> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="/about/index.html"> <i 
+  class="bi bi-info-circle" 
+  role="img" 
+>
+</i> 
+<span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-people" role="link" data-bs-toggle="dropdown" aria-expanded="false" >
+      <i 
+  class="bi bi-people" 
+  role="img" 
+>
+</i> 
+ <span class="menu-text">People</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-people">    
+        <li>
+    <a class="dropdown-item" href="/people/management.html">
+ <span class="dropdown-text">Management</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="/people/staff.html">
+ <span class="dropdown-text">Staff &amp; HiWis</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="/people/scientific-board.html">
+ <span class="dropdown-text">Scientific Board</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="/people/advisors.html">
+ <span class="dropdown-text">Advisors</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="/people/members.html">
+ <span class="dropdown-text">Members</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="/people/fellows.html">
+ <span class="dropdown-text">Fellows</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="/people/alumnae.html">
+ <span class="dropdown-text">Alumnae</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-partners" role="link" data-bs-toggle="dropdown" aria-expanded="false" >
+      <i 
+  class="bi bi-boxes" 
+  role="img" 
+>
+</i> 
+ <span class="menu-text">Partners</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-partners">    
+        <li>
+    <a class="dropdown-item" href="/partners/institutional_members.html">
+ <span class="dropdown-text">Institutional Members</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="/partners/local_os_initiatives.html">
+ <span class="dropdown-text">Local Open Science Initiatives</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="/partners/other_lmu_support_services.html">
+ <span class="dropdown-text">Other LMU Support Services</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="/partners/externals.html">
+ <span class="dropdown-text">External Partners</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="/partners/funders.html">
+ <span class="dropdown-text">Funders</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/training/index.html"> <i 
+  class="bi bi-mortarboard" 
+  role="img" 
+>
+</i> 
+<span class="menu-text">Training</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="/events/index.html"> <i 
+  class="bi bi-calendar-event" 
+  role="img" 
+>
+</i> 
+<span class="menu-text">Events</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn"
+      data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" 
+      aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation"
+      onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <h1 class="quarto-secondary-nav-title no-breadcrumbs"></h1>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" role="link"
+        aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation"
+        onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+  <div id="quarto-announcement" data-announcement-id="04e26d7279811b0a13da8609e872b406" class="alert alert-primary hidden"><i class="bi bi-info-circle quarto-announcement-icon"></i><div class="quarto-announcement-content">**Thanks for visiting the LMU Open Science Center--our site is still under construction for now, but we'll be live soon!**</div><i class="bi bi-x-lg quarto-announcement-action"></i></div>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="/training/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Training Tracks</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="/training/self_training.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Self-Training</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 show">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="/training/principles/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Principles</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="/training/principles/credible_science.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Credible Science</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="/training/principles/replicability_crisis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Replicability Crisis</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="/training/study_planning/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Study Planning</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="/training/study_planning/introduction_to_simulations_in_r.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Introduction to Data Simulations in R</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="/training/study_planning/preregistration_why_how.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preregistration: Why and How?</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="/training/study_planning/simulations_for_advanced_power_analyses.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Simulations for Advanced Power Analyses</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="/training/data_management/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Data Management</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="/training/data_management/data_anonymity.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">TBD: Data Anonymity</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="/training/data_management/data_dictionary.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Data Dictionary</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="/training/data_management/fair_data_management.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">FAIR Data Management</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="/training/data_management/maintaining_privacy_with_open_data.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Maintaining Privacy with Open Data</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="/training/data_management/open_data.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Introduction to Open Data</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="/training/data_management/synthetic_data.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">TBD: Generating Synthetic Data</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="/training/reproducible_processes/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Reproducible Processes</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="/training/reproducible_processes/advanced_git.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Advanced git</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="/training/reproducible_processes/collaborative_coding_with_github_and_rstudio.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Collaborative coding with GitHub and RStudio</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="/training/reproducible_processes/introduction_to_quarto.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Introduction to Quarto</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="/training/reproducible_processes/introduction_to_r.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Introduction to R</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="/training/reproducible_processes/introduction_to_renv.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Introduction to {renv}</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="/training/reproducible_processes/introduction_to_version_control_within_rstudio.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Introduction to Version Control within RStudio</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="/training/reproducible_processes/introduction_to_zotero.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Introduction to Zotero</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="/training/publishing_outputs/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Publishing Outputs</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="/training/publishing_outputs/code_publishing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Code Publishing</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="/training/publishing_outputs/open_access_preprints_postprints.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Open Access, Preprints, Postprints</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="/training/open_research_cycle.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Open Research Cycle</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 show">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4"  role="navigation" aria-expanded="true">
+ <span class="menu-text">Plan & Design</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth3 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="/training/open_research_cycle/01_plan_and_design.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Current</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="/training/open_research_cycle/01_plan_and_design_MI.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">MI</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="/training/open_research_cycle/01_plan_and_design_website.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Website</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="/training/open_research_cycle/01_plan_and_design_RL.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">RL</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5"  role="navigation" aria-expanded="false">
+ <span class="menu-text">Collect & Manage</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="/training/open_research_cycle/02_collect_and_manage.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Current</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="/training/open_research_cycle/02_collect_and_manage_MI.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">MI</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="/training/open_research_cycle/02_collect_and_manage_website.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Website</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="/training/open_research_cycle/02_collect_and_manage_RL.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">RL</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6"  role="navigation" aria-expanded="false">
+ <span class="menu-text">Analyze & Collaborate</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="/training/open_research_cycle/03_analyze_and_collaborate.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Current</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="/training/open_research_cycle/03_analyze_and_collaborate_MI.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">MI</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="/training/open_research_cycle/03_analyze_and_collaborate_website.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Website</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="/training/open_research_cycle/03_analyze_and_collaborate_RL.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">RL</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7"  role="navigation" aria-expanded="false">
+ <span class="menu-text">Preserve & Share</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="/training/open_research_cycle/04_preserve_and_share.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Current</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="/training/open_research_cycle/04_preserve_and_share_MI.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">MI</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="/training/open_research_cycle/04_preserve_and_share_website.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Website</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="/training/open_research_cycle/04_preserve_and_share_RL.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">RL</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="/training/train_the_trainer.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Train the Trainer</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" ></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <div id="quarto-toc-target"></div>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header">
+<h1 class="title">Plan &amp; Design</h1>
+
+</header>
+
+
+<div class="orc-phase-hero-compact">
+<div class="orc-hero-cycle phase-1">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="105.94985mm" height="106.35682mm" viewBox="0 0 105.94985 106.35682" version="1.1" id="svg1" xml:space="preserve" sodipodi:docname="os-cycle.svg" inkscape:version="1.4.2 (1:1.4.2+202505120737+ebf0e940d0)" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+<sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="1.9023831"
+     inkscape:cx="375.58155"
+     inkscape:cy="222.08986"
+     inkscape:window-width="3440"
+     inkscape:window-height="1403"
+     inkscape:window-x="1920"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g12" /><defs
+     id="defs1"><rect
+       x="441.02579"
+       y="126.68321"
+       width="158.2226"
+       height="91.989883"
+       id="rect13" /><clipPath
+       id="p25.3"><path
+         d="M 0,0 H 2500 V 2500 H 0 Z"
+         clip-rule="evenodd"
+         id="path95" /></clipPath><rect
+       x="441.02579"
+       y="126.68321"
+       width="208.15997"
+       height="105.1313"
+       id="rect13-9" /><rect
+       x="441.02579"
+       y="126.68321"
+       width="206.58299"
+       height="93.566849"
+       id="rect13-0" /><rect
+       x="441.02579"
+       y="126.68321"
+       width="172.94098"
+       height="123.52928"
+       id="rect13-3" /></defs><g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-329.76133,-68.908773)"><g
+       id="g13"
+       transform="matrix(0.26458333,0,0,0.26458333,-49.56731,-5.3065886)"
+       style="fill:none;stroke:none;stroke-linecap:square;stroke-miterlimit:10"
+       inkscape:label="open-research-cycle"><g
+         id="g12"
+         transform="translate(-11.129111,4.4594129)"
+         inkscape:label="phases"><a href="open_research_cycle/04_preserve_and_share.html"><g
+           id="phase-4"
+           inkscape:label="phase-4"
+           class="phase-group"
+           role="button"
+           tabindex="0"
+           transform="translate(0,-0.345935)"
+           style="fill:#00c057;fill-opacity:1"><path
+             id="path5"
+             style="display:inline;fill:#00c057;fill-opacity:1"
+             inkscape:label="phase-4-quarter"
+             d="M 1639.1872 278.06522 C 1532.5728 278.06522 1446.1462 364.49186 1446.1462 471.10624 L 1593.152 471.10624 L 1639.1872 425.38553 L 1639.1872 278.06522 z " /><text
+             xml:space="preserve"
+             id="text13-3"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:29.3333px;line-height:0.95;font-family:Sans;-inkscape-font-specification:'Sans, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect13-3);display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-linecap:square;stroke-miterlimit:10"
+             transform="translate(1022.7667,252.66541)"
+             inkscape:label="phase-4-text"><tspan
+               x="447.24018"
+               y="148.97324"
+               id="tspan1">4. Preserve </tspan><tspan
+               x="471.07349"
+               y="176.83988"
+               id="tspan2">&amp; Share</tspan></text></g></a><a href="open_research_cycle/03_analyze_and_collaborate.html"><g
+           id="phase-3"
+           style="fill:#ffc000;fill-opacity:1;stroke:none;stroke-linecap:square;stroke-miterlimit:10"
+           inkscape:label="phase-3"
+           transform="translate(3.1332232e-5,-0.248135)"
+           class="phase-group"
+           role="button"
+           tabindex="0"><path
+             id="path13"
+             style="display:inline;fill:#ffc000;fill-opacity:1"
+             inkscape:label="phase-3-quarter"
+             d="M 1446.1461 483.6432 C 1446.1461 590.25758 1532.5727 676.68422 1639.1871 676.68422 L 1639.1871 529.66273 L 1593.4801 483.6432 L 1446.1461 483.6432 z " /><text
+             xml:space="preserve"
+             id="text13-0"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:29.3333px;line-height:0.95;font-family:Sans;-inkscape-font-specification:'Sans, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect13-0);display:inline;fill:#ffffff;fill-opacity:1"
+             transform="translate(1005.6374,393.03487)"
+             inkscape:label="phase-3-text"><tspan
+               x="455.7308"
+               y="148.97324"
+               id="tspan3">3. Analyse &amp; </tspan><tspan
+               x="459.47084"
+               y="176.83988"
+               id="tspan4">Collaborate</tspan></text></g></a><a href="open_research_cycle/02_collect_and_manage.html"><g
+           id="phase-2"
+           inkscape:label="phase-2"
+           class="phase-group"
+           role="button"
+           tabindex="0"
+           transform="translate(0,0.248135)"
+           style="fill:#cc0066;fill-opacity:1"><path
+             id="path11"
+             style="display:inline;fill:#cc0066;fill-opacity:1"
+             inkscape:label="phase-2-quarter"
+             d="M 1696.8161 483.14693 L 1649.736 529.90474 L 1649.736 676.18795 C 1756.3504 676.18795 1842.779 589.76131 1842.779 483.14693 L 1696.8161 483.14693 z " /><text
+             xml:space="preserve"
+             transform="translate(1195.3915,393.86678)"
+             id="text13-2"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:29.3333px;line-height:0.95;font-family:Sans;-inkscape-font-specification:'Sans, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect13-9);display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-linecap:square;stroke-miterlimit:10"
+             inkscape:label="phase-2-text"><tspan
+               x="463.96957"
+               y="148.97324"
+               id="tspan5">2. Collect &amp; </tspan><tspan
+               x="485.96954"
+               y="176.83988"
+               id="tspan6">Manage</tspan></text></g></a><a href="open_research_cycle/01_plan_and_design.html"><g
+           id="phase-1"
+           inkscape:label="phase-1"
+           style="fill:none;stroke:none;stroke-linecap:square;stroke-miterlimit:10"
+           transform="translate(3.1332232e-5,0.345935)"
+           class="phase-group"
+           role="button"
+           tabindex="0"><path
+             id="path9"
+             style="display:inline;fill:#0066ff;fill-opacity:1"
+             inkscape:label="phase-1-quarter"
+             d="M 1650.8766 277.37335 L 1650.8766 424.29522 L 1696.6813 470.41437 L 1843.9196 470.41437 C 1843.9196 363.79999 1757.491 277.37335 1650.8766 277.37335 z " /><text
+             xml:space="preserve"
+             transform="translate(1220.0523,249.96672)"
+             id="text13"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:29.3333px;line-height:0.95;font-family:Sans;-inkscape-font-specification:'Sans, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect13);display:inline;fill:none;stroke:none;stroke-linecap:square;stroke-miterlimit:10"
+             inkscape:label="phase-1-text"><tspan
+               x="456.76211"
+               y="148.97324"
+               id="tspan8"><tspan
+                 style="fill:#ffffff"
+                 id="tspan7">1. Plan &amp; </tspan></tspan><tspan
+               x="469.9328"
+               y="176.83988"
+               id="tspan10"><tspan
+                 style="fill:#ffffff"
+                 id="tspan9">Design</tspan></tspan></text></g></a></g><path
+         d="m 1611.6681,444.36413 28.7707,5.68715 -12.9951,26.2911 -5.146,-10.43138 c -9.3326,5.85761 -12.9239,17.98917 -7.9422,28.08745 5.317,10.7779 18.4105,15.2205 29.1862,9.90463 10.7757,-5.31587 15.2183,-18.40944 9.9024,-29.18511 -1.5231,-3.08739 -0.2555,-6.82316 2.8318,-8.34624 3.0874,-1.52307 6.8232,-0.25554 8.3463,2.83185 8.3554,16.93703 1.3731,37.52108 -15.5661,45.87758 -16.9393,8.35651 -37.5222,1.37094 -45.8776,-15.56609 -8.0212,-16.25964 -1.8794,-35.84816 13.6037,-44.78439 z"
+         id="path1"
+         style="fill:#000000;stroke:none;stroke-width:7.55906;stroke-linecap:square;stroke-miterlimit:10;stroke-dasharray:none"
+         inkscape:label="rotating-arrow" /></g></g>
+</svg>
+</div>
+<div class="orc-hero-body">
+<div class="orc-hero-tagline">
+Set the foundation for open &amp; reliable research
+</div>
+<div class="orc-hero-pills">
+<p><span><i class="bi bi-check2-circle"></i> Explore &amp; Reuse</span> <!-- make the boxes around not so tall so they don't touch if two lines --> <span><i class="bi bi-check2-circle"></i> Check Legal Frameworks</span> <span><i class="bi bi-check2-circle"></i> Write Data Management Plan</span> <span><i class="bi bi-check2-circle"></i> Design Study</span></p>
+</div>
+<div class="orc-hero-checkpoint">
+<i class="bi bi-people-fill"></i> Team Checkpoint: Study Plan Presentation &amp; Preregistration
+</div>
+</div>
+</div>
+<details class="orc-details-panel">
+<summary>
+<i class="bi bi-search"></i> Explore and Reuse
+</summary>
+<p><!-- make this. and the other top titles, a sharable url --></p>
+<p>Any resource that inspire you or that you want to reuse and/or adapt must minimally be cited, using their DOIs (and otherwise URL with author, date, and time of access) and you must follow the license and/or usage agreement provided by the authors. A research output (e.g. data, code) without a license cannot be reused even if they appear publicly online.</p>
+<div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">Articles <!--make this, and other tabs title everywhere, a shareable url? --></a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Preregistrations</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false" href="">Data</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-4" role="tab" aria-controls="tabset-1-4" aria-selected="false" href="">Code</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<ul>
+<li>To come up with a well-founded research question, <strong>review existing literature</strong> on open source registries like <a href="https://openalex.org/">OpenAlex</a>.</li>
+<li>Keep track of your bibliography with an open source <strong>reference manager</strong> like <a href="https://www.zotero.org/">Zotero</a>. It can be integrated within RStudio to write reproducible manuscripts seamlessly, formatting your bibliography in any format you want (see <a href="03_analyze_and_collaborate.qmd">3. Analyze &amp; Collaborate</a>). <!-- url of link will change when merging to main website -does this currently work?? --> <!-- could this be not looking like a hyperlink for an external page but maybe a small grey italic button looking text or something less popping out --></li>
+</ul>
+<div class="orc-two-column">
+<!-- I want these cards to be clickable anywhere to link to the tutorial/tool - not just the title, and be of the same size -->
+<section id="learn-more" class="level4 orc-column">
+<h4><i class="bi bi-mortarboard"></i> LEARN MORE</h4>
+<div class="orc-card-tool">
+<!-- should the logo here be of zotero, and the OSC logo integrated in the corner tag? or two logos, the OSC logo and the tool logo on the left? -->
+<div class="orc-card-tool-icon">
+<img src="../../assets/img/lmu_osc_logo.jpg" alt="LMU OSC logo">
+</div>
+<h4>
+<a href="https://lmu-osc.github.io/introduction-to-zotero/">Introduction to Zotero</a>
+</h4>
+<p>
+An open-source reference manager that integrates with Word, RStudio, and Google Docs. (1h)
+</p>
+<p><a href="https://lmu-osc.github.io/introduction-to-zotero/" class="orc-card-tool-badge recommended">OSC Tutorial</a></p>
+</div>
+</section>
+<section id="tools-resources" class="level4 orc-column">
+<h4><i class="bi bi-tools"></i> TOOLS &amp; RESOURCES <!-- this shouldn't be a link / anchor / url making title --></h4>
+<div class="orc-card-tool">
+<div class="orc-card-tool-icon">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/OpenAlex_2025_favicon.svg/250px-OpenAlex_2025_favicon.svg.png" alt="OpenAlex icon">
+</div>
+<h4>
+<a href="https://openalex.org/">OpenAlex</a>
+</h4>
+<p>
+All the world’s research, connected and open
+</p>
+</div>
+</section>
+</div>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<p>A <strong>preregistration</strong> typically consists of a hypothesis and predictions, a plan for data collection (when relevant), and a plan for data analysis, that researchers upload before starting their projects, often in order to increase the rigor of confirmatory research (see <a href="###study-design--analysis-plan">Study Design &amp; Analysis plan</a>) <!-- this cross ref is not working, it's not a md title FIXME --></p>
+<!-- I want a line break here for fuck sake -->
+<p><br></p>
+<p>To have some <strong>insight into projects that are not (yet) published</strong>, either currently ongoing or abandoned, you can therefore look for projects that were preregistered. Projects that are left unpublished typically have a note attached to their preregistration. Some registries are discipline-specific while others are discipline-agnostic:</p>
+<div style="margin-top: 1em;">
+<p><!--or make them all clickable cards? --> * <a href="https://osf.io/registries" class="uri">https://osf.io/registries</a> <!-- this randomly appears as a list OR NOT - can't explain --> * <a href="https://aspredicted.org/" class="uri">https://aspredicted.org/</a> * <a href="https://preclinicaltrials.eu/" class="uri">https://preclinicaltrials.eu/</a> * <a href="https://www.animalstudyregistry.org/" class="uri">https://www.animalstudyregistry.org/</a> * <a href="https://clinicaltrials.gov/" class="uri">https://clinicaltrials.gov/</a></p>
+</div>
+<section id="tools-resources-1" class="level4">
+<h4><i class="bi bi-tools"></i> TOOLS &amp; RESOURCES</h4>
+<div class="orc-grid-tools">
+<div class="orc-card-tool">
+<div class="orc-card-tool-icon">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Open_Science_Framework_log_%28and_Center_for_Open_Science_logo%29.svg/3840px-Open_Science_Framework_log_%28and_Center_for_Open_Science_logo%29.svg.png" alt="OSF">
+</div>
+<h4>
+<a href="https://osf.io/registries/">OSF</a>
+</h4>
+<p>
+Registry of preregistrations. Widely used across fields.
+</p>
+</div>
+</div>
+</section>
+</div>
+<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
+<p>To find <strong>existing datasets</strong>, search for discipline-specific repositories on <a href="https://www.re3data.org/">re3data</a> which is a central registry of all repositories, or explore subject agnostic repositories such as <a href="https://datacite.org/">DataCite</a> or <a href="https://zenodo.org/">Zenodo</a> (oftentimes with the corresponding analysis code). These platforms either give you access to existing data or provide metadata and explanations on how to request access to the data.</p>
+<p><br></p>
+<p>Found a dataset to reuse? Make sure you know where your data comes from, how the data was collected and processed, and reflect on whether any of it poses problems for your research question. Finally, check what requirements and resources the data sources have. Some requirement to access the data may be to submit a preregistration (see <a href="###study-design--analysis-plan">Study Design &amp; Analysis plan</a>). Either way, in order not to introduce confirmation or hindsight bias in your data analyses, do not start plotting the data itself but instead familiarize yourself with the metadata to plan your analyses (see <a href="###study-design--analysis-plan">Study Design &amp; Analysis plan</a>). Specifically, there may be a data dictionary (also called “codebook”), or other extensive documentation on which variables and their description are included.</p>
+<!-- add zenodo card as tool-->
+<div class="orc-grid-tools">
+<div class="orc-card-tool">
+<div class="orc-card-tool-icon">
+<i class="bi bi-database"></i>
+</div>
+<h4>
+<a href="https://www.re3data.org/">re3data</a>
+</h4>
+<p>
+Registry of data repositories. Search across disciplines to find domain-specific options.
+</p>
+</div>
+</div>
+</div>
+<div id="tabset-1-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-4-tab">
+<p>You may also find <strong>code available for reuse</strong> on <a href="https://zenodo.org/">Zenodo</a> (archived) or actively developed on <a href="https://github.com/">Github</a>. Learn how to work with GitHub in more details in <a href="03_analyze_and_collaborate.qmd">3. Analyze &amp; Collaborate</a> or start learning Git version control now!</p>
+<p><br></p>
+<p>Important: Code publicly visible on GitHub without a license cannot be legally reused. Ask the authors to add an <strong>open license</strong> to their repository to allow reuse (they must add a file called LICENSE.txt with e.g. the Apache 2.0 license text - see our <a href="https://lmu-osc.github.io/code-publishing/choose_license.html">code publishing tutorial</a> to learn more about licenses)</p>
+<!--  add github tutorials in learn more, add github as a tool - remove gitlab for now-->
+<!-- add zenodo card in tool-->
+<div class="orc-grid-tools">
+<div class="orc-card-tool">
+<div class="orc-card-tool-icon">
+<img src="https://cdn.simpleicons.org/github" alt="GitHub">
+</div>
+<h4>
+<a href="https://github.com/">GitHub</a> / <a href="https://gitlab.com/">GitLab</a>
+</h4>
+<p>
+Version control platforms for code collaboration with issue tracking.
+</p>
+<p><!-- change sentence--> <a href="https://lmu-osc.github.io/Introduction-RStudio-Git-GitHub/" class="orc-card-tool-badge recommended">Tutorial</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</details>
+<details class="orc-details-panel">
+<summary>
+<i class="bi bi-shield-check"></i> Legal Requirements
+</summary>
+<div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true" href="">LMU guidelines</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false" href="">Funders</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-3" role="tab" aria-controls="tabset-2-3" aria-selected="false" href="">Ethics</a></li></ul>
+<div class="tab-content">
+<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
+<p>The LMU <a href="https://cms-cdn.lmu.de/media/contenthub/amtliche-veroeffentlichungen/gwp-ordnung.pdf">Guidelines for Safeguarding Good Scientific Practice</a> (in german) are legally binding for all academics, researchers, research support staff, teachers, and students at LMU Munich. Only the original text in German prevails, but here is an English summary of relevant aspects of this guide:</p>
+<em>
+<h4>
+Appropriate level of documentation and standards to allow <strong>reproduction</strong>:
+</h4>
+<ul>
+<li>Reproducible methods must be used. (§11)</li>
+<li>When research software is developed, its source code must be documented. (§12)</li>
+</ul>
+<h4>
+Appropriate level of documentation and standards to allow <strong>replication</strong>:
+</h4>
+<ul>
+<li>All information relevant to the production of a research result must be documented comprehensively to enable replication. (§7 and §12)</li>
+<li>If specific professional recommendations exist for review and evaluation, the results must be documented in accordance with these respective specifications. (§12)</li>
+<li>Individual results that do not support the hypothesis must also be documented; a selection of results is not permitted. (§12)</li>
+</ul>
+<h4>
+Public access to research results:
+</h4>
+<ul>
+<li>Apart from specific exceptions, all findings should be made public. For this, they must be described in a detailed and comprehensible manner which includes making available the research data, materials and information on which the results are based, as well as the methods used and the software employed (including appropriately licensed self-written software) according to the FAIR principles*. (§13)</li>
+<li>Data, material, software made publicly accessible must be appropriately archived, usually for a period of 10 years (§17).</li>
+</ul>
+<p></em></p>
+<p>*Note: The FAIR principles are defined as: <!-- maintain the freaking list formatting... --> <!-- maybe in a info box --> - Findable: metadata should be deposited in a searchable repository and be assigned a permanent identifier - Accessible: the data is either open, or accessible upon some authentication process, or closed, but with open metadata. - Interoperable: the data is described with a standard terminology (so the dataset can be merged with other ones) and saved in a stable file format - Reusable: the data is richly documented (e.g. with a data dictionary) and is accompanied by a data usage license See https://www.go-fair.org/fair-principles/ for more information and section <a href="02_collect_and_manage.qmd">2. Collect &amp; Manage</a> to learn how to implement the FAIR principles in your research.</p>
+<!-- add a card with LMU logo and LMU Good Scientific Practices as title with link to pdf? in section Resources-->
+<!-- add FAIR data management tutorial in learn more section ?-->
+</div>
+<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
+<p>Funders may have additional open and reproducible science requirement on top of those indicated in the LMU guidelines. For instance, some calls request a Research Data Management plan before making their second payment, some specify the extent and timing of data sharing and provide funds for such activity. Check all requirements in the call information sheets.</p>
+<p><br></p>
+<p>Contact the <a href="https://www.lmu.de/en/research/research-services/contact.html">LMU Research Funding Unit</a> to review your grant proposal and assess if you have met your funders’ open science requirements.</p>
+</div>
+<div id="tabset-2-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-3-tab">
+<p>Data collection and analyses conducted on animals and humans typically requires the approval of your Faculty’s ethics committee (see e.g. <a href="https://www.med.lmu.de/de/fakultaet/wer-wir-sind/gremien-kommissionen/ethikkommission/">instructions for the LMU Faculty of Medicine</a> and <a href="https://www.lmu.de/psyedu/en/research/ethics-committee/#:~:text=The%20Ethics%20Committee%20advises%20and,and%20in%20security%2Drelevant%20areas.">instructions for the LMU Department of Psychology</a>) to make sure the research will be conducted responsibly and participants’ data will be protected.</p>
+<p><br></p>
+<section id="your-ethics-proposal-will-typically-include" class="level4">
+<h4><i class="bi bi-list-check"></i> Your ethics proposal will typically include: <!-- remove ulr forming link --></h4>
+<ul>
+<li><strong>Data storage and retention</strong> – outlining how data will be securely stored, backed up, and retained over time. This is usually part of a detailed Research Data Management plan (see next section for guidance<!--cross ref-->).</li>
+<li><strong>Risks if the data were leaked</strong> – identifying potential consequences for participants or the research project if confidentiality is breached.</li>
+<li><strong>Data anonymisation</strong> – describing procedures to remove or obscure personally identifiable information to protect participant privacy.</li>
+<li><strong>Language of the informed consent forms</strong> – ensuring that participants clearly understand the purpose, procedures, and any potential risks of the study. Consent for sharing their data and under which conditions should be clearly explained here.</li>
+<li><strong>Power analysis</strong> to justify sample size – providing a statistical rationale for the number of participants, which supports the validity and ethical justification of the study.</li>
+</ul>
+<!-- add cards for RDM plan chapter, data anonymisation tutorial, power analyses tutorial-->
+<!-- add example consent form text from Felix??-->
+</section>
+</div>
+</div>
+</div>
+</details>
+<details class="orc-details-panel">
+<summary>
+<i class="bi bi-lightbulb"></i> <i class="bi bi-clipboard-check"></i> Research Data Management Plans
+</summary>
+<!--change logo - see folder with tick in the website version -->
+<p>A Data Management Plan (DMP) documents how you will handle research data throughout your project. Write it before your ethics submission, since the content overlaps significantly and most funders require one. Writing a DMP prompts you to think through decisions you might otherwise leave implicit, and documents them using standard terminology.</p>
+<section id="your-dmp-will-address" class="level4">
+<h4><i class="bi bi-list-check"></i> Your DMP will address:</h4>
+<ul>
+<li><strong>What data</strong> will you collect or generate (types, formats, volume, sources)?</li>
+<li><strong>How will you describe it</strong> (metadata standards, documentation practices)?</li>
+<li><strong>How will you organize files</strong> (naming conventions, folder structure, versioning)?</li>
+<li><strong>Where will you store it</strong> (locations, backups, access controls)?</li>
+<li><strong>How will you ensure quality</strong> (validation checks, error-handling)?</li>
+<li><strong>How will you share outputs</strong> (repositories, licenses, embargo periods)?</li>
+<li><strong>What constraints apply</strong> (consent, anonymization, GDPR, data use agreements)?</li>
+</ul>
+<p>The specific questions vary by discipline, data type, and funder requirements. DMP tools like RDMO guide you through the relevant questions with funder-specific templates. Your DMP is a living document: start with what you know, and the rest of the cycle will help you refine the details as your project develops.</p>
+<!-- cut this sentence but add RIO in section tools and resources for examples DMP to peruse by discipline-->
+<p><strong>See example DMPs:</strong> <a href="https://dmponline.dcc.ac.uk/public_plans">DMPonline public plans</a> | <a href="https://argos.openaire.eu/explore-plans">Argos published DMPs</a> | <a href="https://riojournal.com/browse_journal_articles.php?form_name=filter_articles&amp;selfurl=&amp;backurl=&amp;sortby=0&amp;journal_id=17&amp;search_hidden=&amp;search_in_=0&amp;search_in_hidden=&amp;alerts_subject_cats=&amp;alerts_sd498444d0a_publishing_status=&amp;section_type%5B%5D=231">RIOjournal DMPs</a></p>
+</section>
+<div class="orc-two-column">
+<section id="learn-more-1" class="level4 orc-column">
+<h4><i class="bi bi-mortarboard"></i> LEARN MORE</h4>
+<div class="orc-card-tool">
+<div class="orc-card-tool-icon">
+<img src="../../assets/img/lmu_osc_logo.jpg" alt="LMU OSC">
+</div>
+<h4>
+<a href="https://lmu-osc.github.io/FAIR-Data-Management/">FAIR Data Management</a>
+</h4>
+<p>
+Includes a chapter on writing DMPs (2h total)
+</p>
+<p><a href="https://lmu-osc.github.io/FAIR-Data-Management/dmp.html" class="orc-card-tool-badge recommended">DMP chapter</a></p>
+</div>
+</section>
+<section id="tools" class="level4 orc-column">
+<h4><i class="bi bi-tools"></i> TOOLS</h4>
+<div class="orc-card-tool">
+<div class="orc-card-tool-icon">
+<img src="https://rdmo.readthedocs.io/en/latest/_static/RDMO-logo.png" alt="RDMO">
+</div>
+<h4>
+<a href="https://rdmo.ub.lmu.de/">RDMO</a>
+</h4>
+<p>
+Funder-compliant templates (DFG, ERC, Horizon Europe)
+</p>
+<p><a href="https://rdmo.ub.lmu.de/" class="orc-card-tool-badge recommended">LMU supported</a></p>
+</div>
+</section>
+</div>
+</details>
+<details class="orc-details-panel">
+<summary>
+<i class="bi bi-graph-up"></i> Study Design &amp; Analysis Plan
+</summary>
+<!-- I want to cross ref this title - how? -->
+<!-- logo like https://ree-gupta.github.io/lmu-osc.github.io/training/open_research_cycle/01_plan_and_design_website.html#planning-framework-options -->
+<div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true" href="">Pre-analysis planning</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-2" role="tab" aria-controls="tabset-3-2" aria-selected="false" href="">Simulation of Data</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-3" role="tab" aria-controls="tabset-3-3" aria-selected="false" href="">Power analyses</a></li></ul>
+<div class="tab-content">
+<div id="tabset-3-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-3-1-tab">
+<p>Humans are prone to cognitive biases such as <strong>confirmation bias</strong> (seeking information that supports existing beliefs) and <strong>hindsight bias</strong> (believing outcomes were predictable after the fact). In research, these biases can distort findings, especially when researchers make analytic decisions after seeing results. Although statistical testing typically accepts a 5% false positive rate, <strong>“researcher degrees of freedom”</strong> — choices about data collection, exclusions, transformations, sample size, covariates, etc. — can dramatically inflate false positives when decisions are made post hoc. Practices like increasing sample size until reaching statistical significance, selectively removing outliers, or trying multiple analytic strategies <strong>increase the likelihood of false-positive results</strong>, often unintentionally.</p>
+<p>The core problem is that analyses guided by observed outcomes allow biases to influence decisions, making many reported effects unreliable. A key <strong>remedy is transparency and preregistration</strong>: specifying hypotheses, methods, and analysis plans before data collection or analysis. Preregistration constrains bias in confirmatory testing while still allowing exploratory analyses, clearly distinguishing robust hypothesis tests from hypothesis-generating work. This improves credibility, limits false positives, and often leads to better study design through <strong>early methodological feedback</strong>.</p>
+<p>Several <a href="https://help.osf.io/article/330-welcome-to-registrations">preregistration templates</a> exist. While the <a href="https://docs.google.com/document/d/1gkN0Jp6Gu7GIA4Ne4YCDZ61nCLQRgt32moRdUg9AnVg/edit?tab=t.0#heading=h.fwbi14d4b65g">standard OSF preregistration template</a> is most commonly used, some are tailored for specific field or specific methods (e.g. systematic review, qualitative work, secondary data analysis).</p>
+<section id="your-preregistration-will-define" class="level4">
+<h4><i class="bi bi-list-check"></i> Your preregistration will define:</h4>
+<ul>
+<li><strong>Hypothesis and predictions</strong></li>
+<li><strong>Data collection procedures</strong></li>
+<li><strong>Sample size and stopping rule</strong></li>
+<li><strong>Variables</strong> (manipulated, measured, indices)</li>
+<li><strong>Statistical method</strong> (model, dependent and independent variables, covariables, trasnformations)</li>
+<li><strong>Data exclusion criteria</strong></li>
+<li><strong>How to deal with missing data</strong></li>
+</ul>
+<p>A great tool to create your statistical plan, especially for early career researchers still learning statistics and needing feedback from collaborators or statisticians on their design, is to simulate data and write the possible statistical test to analyze that data (see <a href="">Simulation of data and Power analyses tabs</a> <!-- internal link-->).</p>
+<p>Once completed, you can submit your preregistration on e.g. the <a href="https://osf.io/">Open Science Framework (OSF)</a> before collecting or analyzing existing data. The plan can be embargoed (i.e. kept private for a predetermine amount of time, and for a maximum of 4 years of the OSF) to prevent scooping, then later made public upon publication. This process improves transparency and is inviting valuable early feedback from collaborators. An even stronger approach is submitting preregistrations directly to journals (then called “Registered Reports”), enabling peer review at a stage where methodological adjustments are still possible.</p>
+<!-- in a call out info box -->
+<p>Registered Reports are a publication format, now adopted by over 300 journals (see <a href="https://www.cos.io/initiatives/registered-reports">participating journals</a>), where studies are peer-reviewed before data collection. Reviewers evaluate the hypotheses, methods, and planned analyses, allowing methodological improvements. If the plan is approved, the journal grants in-principle acceptance, meaning publication is guaranteed provided researchers follow the protocol.</p>
+<p>After completing the study, authors add results and discussion sections, clearly separating preregistered confirmatory analyses from exploratory ones. Final review focuses on adherence to the approved plan and the validity of conclusions, not on whether results are significant. This model shifts incentives toward asking important questions and using rigorous methods rather than chasing striking outcomes. <!-- till here --></p>
+<div class="orc-grid-tools">
+<!-- learn more: cards for a TBA preregistration tutorial, card for OSF linking out to https://help.osf.io/article/330-welcome-to-registrations-->
+<!-- Toosl and resources: OSF card with real OSF icon used somewhere above + COS card linking to  https://www.cos.io/initiatives/registered-reports-->
+<div class="orc-card-tool">
+<div class="orc-card-tool-icon">
+<img src="https://cdn.simpleicons.org/osf" alt="OSF">
+</div>
+<h4>
+<a href="https://osf.io/">OSF</a>
+</h4>
+<p>
+Flexible templates, embargoes, file storage. Widely used across fields.
+</p>
+</div>
+</div>
+</section>
+</div>
+<div id="tabset-3-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-2-tab">
+<p>3 lines of text</p>
+</div>
+<div id="tabset-3-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-3-tab">
+<p>3 lines of text</p>
+</div>
+</div>
+</div>
+</details>
+<section id="planning-checklist" class="level2">
+<h2><i class="bi bi-clipboard-check"></i> Planning Checklist</h2>
+<!-- format like in 'website version' but with smaller title so it fits with the new 4 titles above -->
+<div class="orc-gradient-box">
+<p><strong>Research Design:</strong></p>
+<div class="orc-grid-2col">
+<div>
+<ul class="task-list">
+<li><label><input type="checkbox" />Research questions clearly defined</label></li>
+<li><label><input type="checkbox" />Hypotheses specified (if applicable)</label></li>
+<li><label><input type="checkbox" />Study design chosen and justified</label></li>
+<li><label><input type="checkbox" />Variables and measures identified</label></li>
+</ul>
+</div>
+<div>
+<ul class="task-list">
+<li><label><input type="checkbox" />Sample size determined with power analysis</label></li>
+<li><label><input type="checkbox" />Inclusion/exclusion criteria defined</label></li>
+<li><label><input type="checkbox" />Potential confounds considered</label></li>
+<li><label><input type="checkbox" />Ethical approval obtained (if required)</label></li>
+</ul>
+</div>
+</div>
+<p><strong>Documentation &amp; Planning:</strong></p>
+<div class="orc-grid-2col">
+<div>
+<ul class="task-list">
+<li><label><input type="checkbox" />Data Management Plan drafted</label></li>
+<li><label><input type="checkbox" />Preregistration prepared (if applicable)</label></li>
+<li><label><input type="checkbox" />Analysis plan documented</label></li>
+<li><label><input type="checkbox" />File naming conventions established</label></li>
+</ul>
+</div>
+<div>
+<ul class="task-list">
+<li><label><input type="checkbox" />Repository/storage solution selected</label></li>
+<li><label><input type="checkbox" />Collaboration tools set up</label></li>
+<li><label><input type="checkbox" />Timeline and milestones defined</label></li>
+<li><label><input type="checkbox" />Budget includes open science costs</label></li>
+</ul>
+</div>
+</div>
+<p><strong>Before Data Collection:</strong></p>
+<ul class="task-list">
+<li><label><input type="checkbox" />All study materials finalized and documented</label></li>
+<li><label><input type="checkbox" />Preregistration submitted (if applicable)</label></li>
+<li><label><input type="checkbox" />Data collection protocols tested</label></li>
+<li><label><input type="checkbox" />Team roles and responsibilities clear</label></li>
+</ul>
+</div>
+<div id="quarto-navigation-envelope" class="hidden">
+<p><span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyLXRpdGxl">Training</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXItdGl0bGU=">LMU Open Science Center</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uZXh0">MI</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1wcmV2">Open Research Cycle</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOnF1YXJ0by1zaWRlYmFyLXNlY3Rpb24tMQ==">Training Tracks</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOnF1YXJ0by1zaWRlYmFyLXNlY3Rpb24tMg==">Self-Training</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi90cmFpbmluZy9wcmluY2lwbGVzL2luZGV4Lmh0bWxQcmluY2lwbGVz">Principles</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi90cmFpbmluZy9wcmluY2lwbGVzL2NyZWRpYmxlX3NjaWVuY2UuaHRtbENyZWRpYmxlLVNjaWVuY2U=">Credible Science</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi90cmFpbmluZy9wcmluY2lwbGVzL3JlcGxpY2FiaWxpdHlfY3Jpc2lzLmh0bWxSZXBsaWNhYmlsaXR5LUNyaXNpcw==">Replicability Crisis</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi90cmFpbmluZy9zdHVkeV9wbGFubmluZy9pbmRleC5odG1sU3R1ZHktUGxhbm5pbmc=">Study Planning</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi90cmFpbmluZy9zdHVkeV9wbGFubmluZy9pbnRyb2R1Y3Rpb25fdG9fc2ltdWxhdGlvbnNfaW5fci5odG1sSW50cm9kdWN0aW9uLXRvLURhdGEtU2ltdWxhdGlvbnMtaW4tUg==">Introduction to Data Simulations in R</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi90cmFpbmluZy9zdHVkeV9wbGFubmluZy9wcmVyZWdpc3RyYXRpb25fd2h5X2hvdy5odG1sUHJlcmVnaXN0cmF0aW9uOi1XaHktYW5kLUhvdz8=">Preregistration: Why and How?</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi90cmFpbmluZy9zdHVkeV9wbGFubmluZy9zaW11bGF0aW9uc19mb3JfYWR2YW5jZWRfcG93ZXJfYW5hbHlzZXMuaHRtbFNpbXVsYXRpb25zLWZvci1BZHZhbmNlZC1Qb3dlci1BbmFseXNlcw==">Simulations for Advanced Power Analyses</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi90cmFpbmluZy9kYXRhX21hbmFnZW1lbnQvaW5kZXguaHRtbERhdGEtTWFuYWdlbWVudA==">Data Management</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi90cmFpbmluZy9kYXRhX21hbmFnZW1lbnQvZGF0YV9hbm9ueW1pdHkuaHRtbFRCRDotRGF0YS1Bbm9ueW1pdHk=">TBD: Data Anonymity</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi90cmFpbmluZy9kYXRhX21hbmFnZW1lbnQvZGF0YV9kaWN0aW9uYXJ5Lmh0bWxEYXRhLURpY3Rpb25hcnk=">Data Dictionary</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi90cmFpbmluZy9kYXRhX21hbmFnZW1lbnQvZmFpcl9kYXRhX21hbmFnZW1lbnQuaHRtbEZBSVItRGF0YS1NYW5hZ2VtZW50">FAIR Data Management</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi90cmFpbmluZy9kYXRhX21hbmFnZW1lbnQvbWFpbnRhaW5pbmdfcHJpdmFjeV93aXRoX29wZW5fZGF0YS5odG1sTWFpbnRhaW5pbmctUHJpdmFjeS13aXRoLU9wZW4tRGF0YQ==">Maintaining Privacy with Open Data</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi90cmFpbmluZy9kYXRhX21hbmFnZW1lbnQvb3Blbl9kYXRhLmh0bWxJbnRyb2R1Y3Rpb24tdG8tT3Blbi1EYXRh">Introduction to Open Data</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi90cmFpbmluZy9kYXRhX21hbmFnZW1lbnQvc3ludGhldGljX2RhdGEuaHRtbFRCRDotR2VuZXJhdGluZy1TeW50aGV0aWMtRGF0YQ==">TBD: Generating Synthetic Data</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi90cmFpbmluZy9yZXByb2R1Y2libGVfcHJvY2Vzc2VzL2luZGV4Lmh0bWxSZXByb2R1Y2libGUtUHJvY2Vzc2Vz">Reproducible Processes</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi90cmFpbmluZy9yZXByb2R1Y2libGVfcHJvY2Vzc2VzL2FkdmFuY2VkX2dpdC5odG1sQWR2YW5jZWQtZ2l0">Advanced git</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi90cmFpbmluZy9yZXByb2R1Y2libGVfcHJvY2Vzc2VzL2NvbGxhYm9yYXRpdmVfY29kaW5nX3dpdGhfZ2l0aHViX2FuZF9yc3R1ZGlvLmh0bWxDb2xsYWJvcmF0aXZlLWNvZGluZy13aXRoLUdpdEh1Yi1hbmQtUlN0dWRpbw==">Collaborative coding with GitHub and RStudio</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi90cmFpbmluZy9yZXByb2R1Y2libGVfcHJvY2Vzc2VzL2ludHJvZHVjdGlvbl90b19xdWFydG8uaHRtbEludHJvZHVjdGlvbi10by1RdWFydG8=">Introduction to Quarto</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi90cmFpbmluZy9yZXByb2R1Y2libGVfcHJvY2Vzc2VzL2ludHJvZHVjdGlvbl90b19yLmh0bWxJbnRyb2R1Y3Rpb24tdG8tUg==">Introduction to R</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi90cmFpbmluZy9yZXByb2R1Y2libGVfcHJvY2Vzc2VzL2ludHJvZHVjdGlvbl90b19yZW52Lmh0bWxJbnRyb2R1Y3Rpb24tdG8te3JlbnZ9">Introduction to {renv}</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi90cmFpbmluZy9yZXByb2R1Y2libGVfcHJvY2Vzc2VzL2ludHJvZHVjdGlvbl90b192ZXJzaW9uX2NvbnRyb2xfd2l0aGluX3JzdHVkaW8uaHRtbEludHJvZHVjdGlvbi10by1WZXJzaW9uLUNvbnRyb2wtd2l0aGluLVJTdHVkaW8=">Introduction to Version Control within RStudio</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi90cmFpbmluZy9yZXByb2R1Y2libGVfcHJvY2Vzc2VzL2ludHJvZHVjdGlvbl90b196b3Rlcm8uaHRtbEludHJvZHVjdGlvbi10by1ab3Rlcm8=">Introduction to Zotero</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi90cmFpbmluZy9wdWJsaXNoaW5nX291dHB1dHMvaW5kZXguaHRtbFB1Ymxpc2hpbmctT3V0cHV0cw==">Publishing Outputs</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi90cmFpbmluZy9wdWJsaXNoaW5nX291dHB1dHMvY29kZV9wdWJsaXNoaW5nLmh0bWxDb2RlLVB1Ymxpc2hpbmc=">Code Publishing</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi90cmFpbmluZy9wdWJsaXNoaW5nX291dHB1dHMvb3Blbl9hY2Nlc3NfcHJlcHJpbnRzX3Bvc3RwcmludHMuaHRtbE9wZW4tQWNjZXNzLC1QcmVwcmludHMsLVBvc3RwcmludHM=">Open Access, Preprints, Postprints</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOnF1YXJ0by1zaWRlYmFyLXNlY3Rpb24tMw==">Open Research Cycle</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOnF1YXJ0by1zaWRlYmFyLXNlY3Rpb24tNA==">Plan &amp; Design</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi90cmFpbmluZy9vcGVuX3Jlc2VhcmNoX2N5Y2xlLzAxX3BsYW5fYW5kX2Rlc2lnbi5odG1sQ3VycmVudA==">Current</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi90cmFpbmluZy9vcGVuX3Jlc2VhcmNoX2N5Y2xlLzAxX3BsYW5fYW5kX2Rlc2lnbl9NSS5odG1sTUk=">MI</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi90cmFpbmluZy9vcGVuX3Jlc2VhcmNoX2N5Y2xlLzAxX3BsYW5fYW5kX2Rlc2lnbl93ZWJzaXRlLmh0bWxXZWJzaXRl">Website</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi90cmFpbmluZy9vcGVuX3Jlc2VhcmNoX2N5Y2xlLzAxX3BsYW5fYW5kX2Rlc2lnbl9STC5odG1sUkw=">RL</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOnF1YXJ0by1zaWRlYmFyLXNlY3Rpb24tNQ==">Collect &amp; Manage</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi90cmFpbmluZy9vcGVuX3Jlc2VhcmNoX2N5Y2xlLzAyX2NvbGxlY3RfYW5kX21hbmFnZS5odG1sQ3VycmVudA==">Current</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi90cmFpbmluZy9vcGVuX3Jlc2VhcmNoX2N5Y2xlLzAyX2NvbGxlY3RfYW5kX21hbmFnZV9NSS5odG1sTUk=">MI</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi90cmFpbmluZy9vcGVuX3Jlc2VhcmNoX2N5Y2xlLzAyX2NvbGxlY3RfYW5kX21hbmFnZV93ZWJzaXRlLmh0bWxXZWJzaXRl">Website</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi90cmFpbmluZy9vcGVuX3Jlc2VhcmNoX2N5Y2xlLzAyX2NvbGxlY3RfYW5kX21hbmFnZV9STC5odG1sUkw=">RL</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOnF1YXJ0by1zaWRlYmFyLXNlY3Rpb24tNg==">Analyze &amp; Collaborate</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi90cmFpbmluZy9vcGVuX3Jlc2VhcmNoX2N5Y2xlLzAzX2FuYWx5emVfYW5kX2NvbGxhYm9yYXRlLmh0bWxDdXJyZW50">Current</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi90cmFpbmluZy9vcGVuX3Jlc2VhcmNoX2N5Y2xlLzAzX2FuYWx5emVfYW5kX2NvbGxhYm9yYXRlX01JLmh0bWxNSQ==">MI</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi90cmFpbmluZy9vcGVuX3Jlc2VhcmNoX2N5Y2xlLzAzX2FuYWx5emVfYW5kX2NvbGxhYm9yYXRlX3dlYnNpdGUuaHRtbFdlYnNpdGU=">Website</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi90cmFpbmluZy9vcGVuX3Jlc2VhcmNoX2N5Y2xlLzAzX2FuYWx5emVfYW5kX2NvbGxhYm9yYXRlX1JMLmh0bWxSTA==">RL</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOnF1YXJ0by1zaWRlYmFyLXNlY3Rpb24tNw==">Preserve &amp; Share</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi90cmFpbmluZy9vcGVuX3Jlc2VhcmNoX2N5Y2xlLzA0X3ByZXNlcnZlX2FuZF9zaGFyZS5odG1sQ3VycmVudA==">Current</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi90cmFpbmluZy9vcGVuX3Jlc2VhcmNoX2N5Y2xlLzA0X3ByZXNlcnZlX2FuZF9zaGFyZV9NSS5odG1sTUk=">MI</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi90cmFpbmluZy9vcGVuX3Jlc2VhcmNoX2N5Y2xlLzA0X3ByZXNlcnZlX2FuZF9zaGFyZV93ZWJzaXRlLmh0bWxXZWJzaXRl">Website</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi90cmFpbmluZy9vcGVuX3Jlc2VhcmNoX2N5Y2xlLzA0X3ByZXNlcnZlX2FuZF9zaGFyZV9STC5odG1sUkw=">RL</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1zaWRlYmFyOi90cmFpbmluZy90cmFpbl90aGVfdHJhaW5lci5odG1sVHJhaW4tdGhlLVRyYWluZXI=">Train the Trainer</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6SG9tZQ==">Home</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6L2luZGV4Lmh0bWw=">/index.html</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6QWJvdXQ=">About</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6L2Fib3V0L2luZGV4Lmh0bWw=">/about/index.html</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6UGVvcGxl">People</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6TWFuYWdlbWVudA==">Management</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6L3Blb3BsZS9tYW5hZ2VtZW50Lmh0bWw=">/people/management.html</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6U3RhZmYgJiBIaVdpcw==">Staff &amp; HiWis</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6L3Blb3BsZS9zdGFmZi5odG1s">/people/staff.html</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6U2NpZW50aWZpYyBCb2FyZA==">Scientific Board</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6L3Blb3BsZS9zY2llbnRpZmljLWJvYXJkLmh0bWw=">/people/scientific-board.html</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6QWR2aXNvcnM=">Advisors</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6L3Blb3BsZS9hZHZpc29ycy5odG1s">/people/advisors.html</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6TWVtYmVycw==">Members</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6L3Blb3BsZS9tZW1iZXJzLmh0bWw=">/people/members.html</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6RmVsbG93cw==">Fellows</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6L3Blb3BsZS9mZWxsb3dzLmh0bWw=">/people/fellows.html</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6QWx1bW5hZQ==">Alumnae</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6L3Blb3BsZS9hbHVtbmFlLmh0bWw=">/people/alumnae.html</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6UGFydG5lcnM=">Partners</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6SW5zdGl0dXRpb25hbCBNZW1iZXJz">Institutional Members</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6L3BhcnRuZXJzL2luc3RpdHV0aW9uYWxfbWVtYmVycy5odG1s">/partners/institutional_members.html</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6TG9jYWwgT3BlbiBTY2llbmNlIEluaXRpYXRpdmVz">Local Open Science Initiatives</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6L3BhcnRuZXJzL2xvY2FsX29zX2luaXRpYXRpdmVzLmh0bWw=">/partners/local_os_initiatives.html</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6T3RoZXIgTE1VIFN1cHBvcnQgU2VydmljZXM=">Other LMU Support Services</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6L3BhcnRuZXJzL290aGVyX2xtdV9zdXBwb3J0X3NlcnZpY2VzLmh0bWw=">/partners/other_lmu_support_services.html</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6RXh0ZXJuYWwgUGFydG5lcnM=">External Partners</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6L3BhcnRuZXJzL2V4dGVybmFscy5odG1s">/partners/externals.html</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6RnVuZGVycw==">Funders</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6L3BhcnRuZXJzL2Z1bmRlcnMuaHRtbA==">/partners/funders.html</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6VHJhaW5pbmc=">Training</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6L3RyYWluaW5nL2luZGV4Lmh0bWw=">/training/index.html</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6RXZlbnRz">Events</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWludC1uYXZiYXI6L2V2ZW50cy9pbmRleC5odG1s">/events/index.html</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWJyZWFkY3J1bWJzLVRyYWluaW5nLVRyYWNrcw==">Training Tracks</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWJyZWFkY3J1bWJzLU9wZW4tUmVzZWFyY2gtQ3ljbGU=">Open Research Cycle</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWJyZWFkY3J1bWJzLVBsYW4tJi1EZXNpZ24=">Plan &amp; Design</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLWJyZWFkY3J1bWJzLUN1cnJlbnQ=">Current</span></p>
+<div class="hidden quarto-markdown-envelope-contents" data-render-id="YW5ub3VuY2VtZW50">
+<p><strong>Thanks for visiting the LMU Open Science Center–our site is still under construction for now, but we’ll be live soon!</strong></p>
+</div>
+</div>
+<div id="quarto-meta-markdown" class="hidden">
+<p><span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLW1ldGF0aXRsZQ==">Plan &amp; Design – LMU Open Science Center</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLXR3aXR0ZXJjYXJkdGl0bGU=">Plan &amp; Design – LMU Open Science Center</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLW9nY2FyZHRpdGxl">Plan &amp; Design – LMU Open Science Center</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLW1ldGFzaXRlbmFtZQ==">LMU Open Science Center</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLXR3aXR0ZXJjYXJkZGVzYw==">Explore existing resources, write data management plans, design studies, and prepare preregistrations</span> <span class="hidden quarto-markdown-envelope-contents" data-render-id="cXVhcnRvLW9nY2FyZGRkZXNj">Explore existing resources, write data management plans, design studies, and prepare preregistrations</span></p>
+</div>
+</section>
+</div>
+</div>
+
+</main> <!-- /main -->
+<script id = "quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a  href="/training/open_research_cycle.html" class="pagination-link" aria-label="Open Research Cycle">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Open Research Cycle</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a  href="/training/open_research_cycle/01_plan_and_design_MI.html" class="pagination-link" aria-label="MI">
+        <span class="nav-page-text">MI</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+<footer class="osc-footer-card py-5">
+  <div class="osc-footer-container">
+
+    <div class="gy-4 osc-footer-row">
+
+      <!-- Postal Address -->
+      <div class="col-12 col-md-3 osc-footer-address">
+        <strong>Ludwig-Maximilians-Universität<br>LMU Open Science Center</strong>
+        <p class="mb-0">
+          Leopoldstr. 13<br>
+          80802 München
+        </p>
+      </div>
+
+      <!-- Contact -->
+      <div class="col-12 col-md-3 osc-footer-contact">
+        <strong class="mb-0">Contact</strong>
+        <ul class="list-unstyled mt-1 mb-0 osc-footer-contact-list">
+          <li>
+            <a href="mailto:felix.schoenbrodt@psy.lmu.de" class="osc-footer-link text-decoration-none text-white">
+              <i class="bi bi-envelope me-1"></i>Prof. Dr. Felix Schönbrodt (Managing Director)
+            </a>
+          </li>
+          <li>
+            <a href="mailto:malika.ihle@lmu.de" class="osc-footer-link text-decoration-none text-white">
+              <i class="bi bi-envelope me-1"></i>Dr. Malika Ihle (Coordinator)
+            </a>
+          </li>
+          <li>
+            <a href="mailto:osc@lmu.de" class="osc-footer-link text-decoration-none text-white">
+              <i class="bi bi-envelope me-1"></i>OSC team
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-12 col-md-3 osc-footer-join">
+        <strong class="">Join Us</strong>
+        <ul class="list-unstyled mt-1 mb-0 osc-footer-links-list">
+          <li>
+            <a href="https://lists.lrz.de/mailman/listinfo/lmu-osc" target="_blank" class="osc-footer-link text-white text-decoration-underline">
+              Subscribe to our announcement list
+            </a>
+          </li>
+          <li>
+            <a href="/about/joinus.html" target="_blank" class="osc-footer-link text-decoration-underline text-white">
+              Become a member
+            </a>
+          </li>
+          <li>
+            <a href="https://matrix.to/#/#lmu-open-science-center:matrix.lmu.de" target="_blank" class="osc-footer-link text-decoration-underline text-white">
+              LMU chat on Matrix
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Social icons -->
+      <div class="d-flex gap-2 ps-3 justify-content-end osc-footer-socials">
+            <a href="https://github.com/lmu-osc" target="_blank" class="osc-footer-social-link">
+              <i class="bi bi-github text-white"></i>
+            </a>
+            <a href="https://www.linkedin.com/company/lmu-open-science-center/" target="_blank" class="osc-footer-social-link">
+              <i class="bi bi-linkedin text-white"></i>
+            </a>
+            <a href="https://bsky.app/profile/lmu-osc.bsky.social" target="_blank" class="osc-footer-social-link">
+              <i class="bi bi-bluesky text-white"></i>
+            </a>
+            <a href="https://scicomm.xyz/@lmu_osc" target="_blank" class="osc-footer-social-link">
+              <i class="bi bi-mastodon text-white"></i>
+            </a>
+      </div>
+
+    </div>
+
+    <hr class="osc-footer-hr my-4">
+
+    <!-- Extra links -->
+    <div class="d-flex flex-wrap gap-3 osc-footer-extra-links">
+      <a href="/footer/imprint.qmd" class="osc-footer-link text-decoration-underline text-white">Imprint</a>
+      <span class="text-white">|</span>
+      <a href="/footer/privacy.qmd" class="osc-footer-link text-decoration-underline text-white">Privacy Policy</a>
+      <span class="text-white">|</span>
+      <a href="/footer/accessibilty.qmd" class="osc-footer-link text-decoration-underline text-white">Accessibility</a>
+    </div>
+
+  </div>
+</footer>
+
+</body>
+
+</html>
