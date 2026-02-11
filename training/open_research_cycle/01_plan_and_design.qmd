@@ -15,7 +15,7 @@ title-block-style: none
 <div class="orc-hero-body">
 <div class="orc-hero-tagline">Set the foundation for open & reliable research</div>
 <div class="orc-hero-pills">
-<span><i class="bi bi-check2-circle"></i> Explore & Reuse</span>
+<span><i class="bi bi-check2-circle"></i> Explore & Reuse</span> <!-- make the boxes around not so tall so they don't touch if two lines --> 
 <span><i class="bi bi-check2-circle"></i> Check Legal Frameworks</span>
 <span><i class="bi bi-check2-circle"></i> Write Data Management Plan</span>
 <span><i class="bi bi-check2-circle"></i> Design Study</span>
@@ -32,10 +32,10 @@ Any resource that inspire you or that you want to reuse and/or adapt must minima
 
 ::: {.panel-tabset}
 
-### Articles
+### Articles <!--make this, and other tabs title everywhere, a shareable url? -->
 
 * To come up with a well-founded research question, **review existing literature** on open source registries like [OpenAlex](https://openalex.org/). 
-* Keep track of your bibliography with an open source **reference manager** like [Zotero](https://www.zotero.org/). It can be integrated within RStudio to write reproducible manuscripts seamlessly, formatting your bibliography in any format you want (see [3. Analyze & Collaborate](03_analyze_and_collaborate.qmd)). <!-- url of link will change when merging to main website --> 
+* Keep track of your bibliography with an open source **reference manager** like [Zotero](https://www.zotero.org/). It can be integrated within RStudio to write reproducible manuscripts seamlessly, formatting your bibliography in any format you want (see [3. Analyze & Collaborate](03_analyze_and_collaborate.qmd)). <!-- url of link will change when merging to main website -does this currently work?? -->  <!-- could this be not looking like a hyperlink for an external page but maybe a small grey italic button looking text or something less popping out --> 
 
 
 ::: {.orc-two-column} 
@@ -53,7 +53,7 @@ Any resource that inspire you or that you want to reuse and/or adapt must minima
 :::
 
 ::: {.orc-column}
-#### <i class="bi bi-tools"></i> TOOLS & RESOURCES
+#### <i class="bi bi-tools"></i> TOOLS & RESOURCES <!-- this shouldn't be a link / anchor / url making title -->
 
 <div class="orc-card-tool">
 <div class="orc-card-tool-icon"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/OpenAlex_2025_favicon.svg/250px-OpenAlex_2025_favicon.svg.png" alt="OpenAlex icon"></div>
@@ -152,7 +152,7 @@ The LMU [Guidelines for Safeguarding Good Scientific Practice](https://cms-cdn.l
 
 <h4>Appropriate level of documentation and standards to allow **replication**:</h4>
 
-* All information relevant to the production of a research result must be documented comprehensively to *enable replication**. (§7 and §12)
+* All information relevant to the production of a research result must be documented comprehensively to enable replication. (§7 and §12)
 * If specific professional recommendations exist for review and evaluation, the results must be documented in accordance with these respective specifications. (§12) 
 * Individual results that do not support the hypothesis must also be documented; a selection of results is not permitted. (§12)
 
@@ -163,7 +163,7 @@ The LMU [Guidelines for Safeguarding Good Scientific Practice](https://cms-cdn.l
 
 </em>
 
-*Note: The FAIR principles are defined as: <!-- maintain the freaking list formatting... -->
+*Note: The FAIR principles are defined as: <!-- maintain the freaking list formatting... --> <!-- maybe in a info box -->
 - Findable: metadata should be deposited in a searchable repository and be assigned a permanent identifier
 - Accessible: the data is either open, or accessible upon some authentication process, or closed, but with open metadata.
 - Interoperable: the data is described with a standard terminology (so the dataset can be merged with other ones) and saved in a stable file format
@@ -189,7 +189,7 @@ Data collection and analyses conducted on animals and humans typically requires 
 
 <br>
 
-#### <i class="bi bi-list-check"></i> Your ethics proposal will typically include:
+#### <i class="bi bi-list-check"></i> Your ethics proposal will typically include: <!-- remove ulr forming link -->
 
 * **Data storage and retention** – outlining how data will be securely stored, backed up, and retained over time. This is usually part of a detailed Research Data Management plan (see next section for guidance<!--cross ref-->).
 * **Risks if the data were leaked** – identifying potential consequences for participants or the research project if confidentiality is breached.
