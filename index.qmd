@@ -5,6 +5,7 @@ toc: false
 repo-actions: false
 format:
   html:
+    anchor-sections: false
     page-layout: full
     grid:
       sidebar-width: 0px
@@ -36,40 +37,55 @@ include-in-header:
 
       .quarto-title-banner {
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-      }
+      }*/
       
+
       /* Mission Statement Section Styling */
       .mission-statement-container {
         display: flex;
         justify-content: center;
-        margin-bottom: 3rem;
+        width: 80%;
+        max-width: 1100px;
+        margin: 0 auto;
       }
       
       .mission-statement-card {
-        border: 2px solid #2c5f8d;
-        border-radius: 8px;
-        padding: 2.5rem;
-        width: 100%;
-        background-color: #f8fafc;
+        border: 2px solid  #00883b70;
+        border-radius: 15px;
+        padding: 1.5rem 2rem;
+        background-color: white;
         box-shadow: 0 2px 8px rgba(44, 95, 141, 0.1);
         transition: box-shadow 0.3s ease;
       }
       
+      .mission-statement{
+        border-radius: 15px;
+        padding: 2rem 3rem;
+        background-color: #f7fcf7f2;
+        
+      }
       .mission-statement-card:hover {
         box-shadow: 0 4px 16px rgba(44, 95, 141, 0.15);
       }
       
-      .mission-statement-card h2 {
+      .mission-statement h2,
+      .activities-container h2,
+      .impact-card h2,
+      .carousel-section h2 {
+        display: block;
+        width: fit-content;
+        margin: 0 auto 1.5rem auto;
         font-size: 1.5rem;
-        font-weight: 700;
-        color: #2c5f8d;
+        font-weight: 600;
+        color: #00883A;
         text-transform: uppercase;
         letter-spacing: 2px;
-        margin-bottom: 1.5rem;
-        text-align: center;
+        border-bottom: 3px solid #00883b79;
+        padding-bottom: 0.3rem;
       }
+
       
-      .mission-statement-card p {
+      .mission-statement p {
         font-size: 1.05rem;
         line-height: 1.8;
         color: #333;
@@ -77,31 +93,74 @@ include-in-header:
         margin: 0;
         margin-bottom: 1.5rem;
       }
+      .mission-statement-checklist {
+        margin-top: 1rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem 2rem;
+        list-style: none;
+
+      }
+      .checklist-item {
+        font-size: 0.98rem;
+        color: #333;
+        text-align: justify;
+      }
+
+      .mission-statement-checklist li {
+        position: relative;
+        padding-left: 1.2rem;
+        margin-bottom: 0.8rem;
+        line-height: 1.7;
+      }
+
+      
+      .mission-statement-checklist li::marker {
+        content: "✓";
+        color: #00883A;
+        font-size: 1.3rem;
+        font-weight: 400;
+        text-shadow: 2px 2px 2px #01411d3c;
+      }
+      .mission-statement .btn {
+        display: inline-block;            
+        margin-top: 1.5rem;
+        padding: 0.65rem 1.6rem;         
+        font-size: 1.1rem;                 
+        font-weight: 500;                
+        color: #ffffff;                  
+        background-color: #00883A;     
+        border: none;                              
+        text-decoration: none;             
+        transition: all 0.25s ease;       
+        cursor: pointer;                  
+        box-shadow: 0 4px 12px rgba(0, 136, 58, 0.25); 
+      }
+
+      .mission-statement .btn:hover,
+      .mission-statement .btn:active,
+      .mission-statement .btn:focus{
+        background-color: #006b2d !important;       
+        box-shadow: 0 6px 18px rgba(0, 136, 58, 0.3); 
+        transform: translateY(-2px);      
+      }
+
       
       /* Impact Metrics Section Styling */
       .impact-container {
         display: flex;
         justify-content: center;
         padding: 3rem 0;
+        margin-bottom: 3rem;
       }
       
       .impact-card {
         width: 100%;
         padding: 3rem 2rem;
-        border: 2px solid #2c5f8d;
+        border: 2px solid #00883b70;
         border-radius: 8px;
         background-color: #f8fafc;
         box-shadow: 0 2px 8px rgba(44, 95, 141, 0.1);
-      }
-      
-      .impact-card h2 {
-        font-size: 1.5rem;
-        font-weight: 700;
-        color: #2c5f8d;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        text-align: center;
-        margin-bottom: 2.5rem;
       }
       
       .impact-metrics {
@@ -117,7 +176,7 @@ include-in-header:
       .metric-value {
         font-size: 3.5rem;
         font-weight: 800;
-        color: #2c5f8d;
+        color: #00883A;
         margin-bottom: 0.75rem;
         line-height: 1;
       }
@@ -129,72 +188,94 @@ include-in-header:
         line-height: 1.5;
         letter-spacing: 0.3px;
       }
-            
-      .row h2 {
-        font-size: 1.5rem;
-        font-weight: 700;
-        color: #2c5f8d;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        text-align: center;
-        margin-bottom: 2.5rem;
-        padding-left: 2em;
-      }
+      /* Activities Section Styling */ 
 
       .activities-container {
-        padding:3rem;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 2rem;
+          padding: 3rem 1.5rem;
+          margin-bottom: 2rem;
+          align-items:stretch;
+          width: 90%;
+          margin-left: auto;
+          margin-right: auto;
       }
 
-      /* Card */
+      .row {
+        align-items: stretch; 
+      }
+
       .activities-card {
-        background-color: #2c5f8d;
-        color: white;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        padding: 1rem 1.5rem 0;
+          background: #00883A;
+          color: white;
+          border-radius: 16px;
+          display: flex;
+          flex-direction: column;
+          height: 100%;
+          flex: 0 1 calc(33.33% - 1.125rem);
+          padding: 2rem 1.5rem;
+          box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06),
+                      0 4px 12px rgba(0, 0, 0, 0.04);
+          text-wrap: balance;
+          transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+      }
+      .activities-card:hover {
+        transform: translateY(-2px) scale(1.02);
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08), 0 6px 15px rgba(0, 0, 0, 0.04);
+  
+      }
+      
+      .activities-card p {
+          margin-top: 0;
+          font-size: 1.05rem;
+          line-height: 1.7;
+          text-align: center;
+          margin-bottom: 1rem;
+          font-weight: 400;
+          flex-grow: 1; 
       }
 
-      .activities-card i {
-        font-size: 2.4rem;
-        margin-bottom: 0.5rem;
-        display: block;
-        text-align: center;
+        .activities-card i {
+          font-size: 2.8rem;
+          display: inline-flex; 
+          align-items: center;
+          justify-content: center;
+          color: inherit;
+          margin: 0 auto 0.5rem; 
+          background: #ffffff1e;
+          border-radius: 50%;
+          width: 5rem;  
+          height: 5rem;
+          padding: 0;  
         }
 
-      .activities-card p,
-      .activities-card {
-        font-size: 0.98rem;
-        line-height: 1.4;
-        text-align:center;
-      }
-
-      .activities-link {
-        display:flex;
-        flex-direction: column;
-        margin-top: auto;
-        background-color: #e6e6e6;
-        padding: 0.75rem 1rem;
-        margin-left: -1.5rem;
-        margin-right: -1.5rem;
-        transition: background-color 0.3s ease;
-
-      }
-
-      .activities-link a {
-        color: #2c5f8d;
-        text-decoration: none;
-        display: flex;
-        align-items: center;
-        justify-content:center;
+      .activities-card .btn {
+          margin-top: auto; 
+          display: inline-block;
+          padding: 0.65rem 1.6rem;
+          border: none;
+          border-radius: 999px;
+          background: white;
+          color: #00883A;
+          font-size: 1rem;
+          font-weight: 600;
+          cursor: pointer;
+          transition: all 0.25s ease;
+          align-self: center;
+          width: fit-content;
         }
-      .activities-link:hover{
-        background-color: #d2d2d2ff;
-      }
-      .activities-link a:hover{
-        text-decoration: underline;
+
+      .activities-card .btn:hover,
+      .activities-card .btn:active,
+      .activities-card .btn:focus{
+        background: #eeededfb !important;
+        color: #006f2d !important;
+        transform: translateY(-2px);
       }
 
+      /* Testimonial Section Styling */
 
       .testimonial-grid {
         display: flex;
@@ -209,37 +290,34 @@ include-in-header:
         aspect-ratio: 1 / 1;
         object-fit: cover;
         border-radius: 50%;
-        border: 3px solid #2c5f8d;
         display: block;
       }
-
-      .testimonial-section {
-        background-color: #3878b1ff;
-        padding: 2.5rem 2rem;
-        margin: 1rem 0;
+      .testimonial-content blockquote {
+        border-left: 4px solid #00883b2b;
       }
-
-      .testimonial-section blockquote {
+      .testimonial-content blockquote p{
         margin: 0;
         font-style: italic;
         font-size: 1.05rem;
         line-height: 1.6;
-        color: #333;
+        color: #414141ff;
       }
 
-      .testimonial-section strong {
+      .testimonial-content strong {
         display: block;
         margin-top: 1.25rem;
+        font-size: 1.15rem;
         font-style: normal;
         font-weight: 600;
         color: #000;
       }
 
+      /* Newsletter Section Styling */
 
       .newsletter-section {
-        background-color: #6194c1ff;
-        padding: 2.1rem 2rem;
-        margin: 1.2rem 0;
+        background-color: #a6c871;
+        padding: 1.5rem;
+        margin: 1.5rem 0;
       }
  
       .newsletter-grid {
@@ -254,7 +332,7 @@ include-in-header:
       }
 
       .newsletter-grid .newsletter-icon i{
-        font-size: 6rem;
+        font-size: 5rem;
         margin:0;
         color: white; 
       }
@@ -263,33 +341,63 @@ include-in-header:
       .newsletter-grid .newsletter-content strong {
         font-style: normal;
         font-weight: 700;
-        font-size: 2.1rem;
+        font-size: 1.8rem;
         margin:0;
         color: white;
       }
 
-      .newsletter-grid .newsletter-content p {
-        font-weight: 400;
-        font-size: 1.3rem;
+      .newsletter-content p {
+        font-size: 1.23rem;
+        line-height: 1.5;
+        letter-spacing: 0.3px;
         color: white;
         margin: 0.5rem 0 1rem 0;
       }
 
       .newsletter-content .btn {
-        font-size: 1.1rem;
-        padding: 0.75rem 2rem;
+        display: inline-block;
+        padding: 0.65rem 1.6rem;
         border-radius: 0.5rem;
+        background-color: #ffffff28;
+        border: 2px solid white;
+        color: white;
+        font-size: 1.1rem;
+        font-weight: 500;  
+        transition: all 0.25s ease;       
+        cursor: pointer;                        
       }
 
-      .newsletter-content .btn:hover {
+      .newsletter-content .btn:hover,
+      .newsletter-content .btn:active,
+      .newsletter-content .btn:focus{
         transform: translateY(-2px);
-        transition: all 0.2s ease;
+        background: #ffffff50 !important;
+        color:white !important;
+        border: 2px solid white;
       }
       @media (max-width: 768px) {
         .testimonial-grid {
           flex-direction: column;
           text-align: center;
         }
+        .newsletter-grid {
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          justify-content: center;
+          gap: 1rem;
+
+        }
+        .newsletter-grid .newsletter-content strong {
+          font-weight: 600;
+          font-size: 1.5rem;
+        }
+          .activities-card {
+            flex: 1 1 100%;
+            max-width: 90%;
+            gap: 1rem;
+          }
+
       }
 
         </style>
@@ -301,69 +409,73 @@ css: /custom-navbar.css
 
 ::: {.mission-statement-container}
 ::: {.mission-statement-card}
+::: {.mission-statement}
 ## Mission Statement
 
-The LMU Open Science Center is an interdisciplinary initiative promoting open, transparent, and reproducible research through training, meta-research, and community building.
+The interdisciplinary LMU Open Science Center (OSC) is a researcher-led initiative supporting LMU Munich by embedding open, responsible, and reproducible practices at the core of research excellence.
 
-[About Us](about/index.qmd){.btn .btn-primary}
+::: {.mission-statement-checklist}
+
+::: {.checklist-item}
+- Essential training in the highest standards of reproducible research methods
+- Digital sovereignty and resilience to global challenges through open source workflows
+:::
+
+::: {.checklist-item}
+- Transparency as foundation for trust and evidence-based societal debates
+- Reliable scientific data as a critical foundation for responsible AI, digitalisation, and societal translation
+::: 
+:::
+[Learn More](about/index.qmd){.btn .btn-primary}
+:::
+
 
 :::
 :::
 
 
-<!-- activities --->
+<!-- Intent to make this as a general pointer section to some of the core elements within our website rather than just activities --->
+
 ::: {.activities-container}
+
+
+## Explore OSC <!--Alternative title that comes to mind is OSC at glance, but clashes with impact section title-->
 ::: {.row}
-
-## Our Activities
-
-::: {.col-md-3}
-::: {.activities-card}
-<i class="bi bi-calendar"></i>
-
-Explore upcoming and past events from the OSC community.
-
-::: {.activities-link}
-[View our events](events/index.qmd) 
-:::
-:::
-:::
-
-::: {.col-md-3}
-::: {.activities-card}
+::: {.col-md-4}
+::: {.activities-card .card-0}
 <i class="bi bi-people"></i>
 
-Building and supporting the OSC community across disciplines.
+Explore our community of researchers and advocates shaping open science.
 
-::: {.activities-link}
-[Meet our people](people/members.qmd) 
-:::
+[Meet the OSC Community](people/members.qmd){.btn .btn-secondary .activities-link}
+
 :::
 :::
 
-::: {.col-md-3}
-::: {.activities-card}
+::: {.col-md-4}
+::: {.activities-card .card-1}
 <i class="bi bi-journal-bookmark"></i>
 
-Providing training and guidance on open science practices.
+Build practical skills through OSC workshops and tutorials.
 
-::: {.activities-link}
-[Explore trainings](training/index.qmd)
-:::
+[Explore Training](training/index.qmd){.btn .btn-secondary .activities-link} 
+
 :::
 :::
 
-::: {.col-md-3}
-::: {.activities-card}
-<i class="bi bi-tools"></i>
+<!--Not really sure if we want to link partners here-->
+::: {.col-md-4}
+::: {.activities-card .card-2}
+<i class="bi bi-globe2"></i>
 
-Offering consultations for open science adoption.
+Discover our institutional and collaborative networks.
 
-::: {.activities-link}
-[Reach out](training/index.qmd) 
+
+[See OSC Partners](partners/institutional_members.qmd){.btn .btn-secondary .activities-link}
+
 :::
 :::
-:::
+
 
 :::
 :::
@@ -443,8 +555,9 @@ Awards won
 ::: 
 
 
-
-
+<!-- ideally would want a little less taller carousel maybe.-->
+::: {.carousel-section}
+## Highlights
 ::: {.row .justify-content-center}
 
 ::: {.col-md-5}
@@ -456,8 +569,9 @@ Awards won
 ::: {#events-carousel}
 :::
 :::
-:::
 
+:::
+:::
 
 <!-- newsletter section -->
 ::: {.newsletter-section}
