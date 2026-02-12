@@ -53,13 +53,13 @@ host:
 <!-- {{< include templates/_event_description.qmd >}} -->
 
 <p>Come along to talk about code, research tools, and open science in a social environment!</p><p>Possible resources to prepare your session’s hack:</p><p>Beginner:</p><ul>
-<li>Quarto self-paced tutorial: <a href="https://florianpargent.github.io/Quarto_LMU_OSC/">https://florianpargent.github.io/Quarto_LMU_OSC/</a>
+<li>Quarto self-paced tutorial: <a href="https://lmu-osc.github.io/introduction-to-Quarto/">https://lmu-osc.github.io/introduction-to-Quarto/</a>
 </li>
 <li>
 <a href="https://osf.io/mfe37" target="_blank">https://osf.io/mfe37</a> (10 min demonstration for executable manuscripts using RStudio/Rmd/Zenodo/Google doc)</li>
 </ul>
 <p>Advanced:</p><ul>
-<li><a href="https://plain-text.co/index.html#introduction#introduction" target="_blank">https://plain-text.co/ </a></li>
+<li><a href="https://plain-text.co/" target="_blank">https://plain-text.co/ </a></li>
 <li>
 <a href="https://osf.io/ngd9t" target="_blank">https://osf.io/ngd9t</a> (10 min demonstration for executable manuscripts using Emacs/Sweave/Bib/Version control)</li>
 </ul>
@@ -71,7 +71,7 @@ host:
 </ul>
 <p>Learn more about the Hacky Hour initiative <a href="../../meetups/hackyhour/index.html" title="Hacky Hour">here</a>.</p><div class="g-clear"></div>
 
-
+*The original tutorial link pointed to Florian Pargent's blog. However, the content for the Introduction to Quarto tutorial has since been migrated to the LMU Open Science Center's GitHub Organization and domain.*
 
 <!-- MANDAORY SECTION START  -->
 <!-- _event_description.qmd template should always be at bottom -->
