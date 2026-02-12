@@ -16,7 +16,12 @@ links:
     url: https://www.ifo.de/peichl-a
 social_media:
   ORCID: 'https://orcid.org/0000-0002-0680-8321'
-mission_statement: - I am Professor of Macroeconomics and Public Finance at the Department of Economics, Director of the ifo Center for Macroeconomics and Surveys and in the Board of Directors of the LMU-ifo Economics &amp; Business Data Center (EBDC). - Replicability of empirical studies is a must for “good scientific practice”. The EBDC is offering such opportunities (<a href="https://www.ifo.de/en/reseach/lmu-ifo-economics-business-data-center">https://www.ifo.de/en/reseach/lmu-ifo-economics-business-data-center</a>) and I hope that many researchers will make use of the opportunities that we offer. --- {{< include templates/_setup.qmd >}} {{< include templates/_contact_items.qmd >}} {{< include templates/_social_links.qmd >}} {{< include templates/_mission_statement.qmd >}}
+mission_statement: - I am Professor of Macroeconomics and Public Finance at the Department of Economics, Director of the ifo Center for Macroeconomics and Surveys and in the Board of Directors of the LMU-ifo Economics &amp; Business Data Center (EBDC). - Replicability of empirical studies is a must for “good scientific practice”. The EBDC is offering such opportunities (<a href="https://www.ifo.de/en/reseach/lmu-ifo-economics-business-data-center">https://www.ifo.de/en/reseach/lmu-ifo-economics-business-data-center</a>) and I hope that many researchers will make use of the opportunities that we offer. 
+---
+{{< include templates/_setup.qmd >}}
+{{< include templates/_contact_items.qmd >}}
+{{< include templates/_social_links.qmd >}}
+{{< include templates/_mission_statement.qmd >}}
 {{< include templates/_research_interests.qmd >}}
 {{< include templates/_selected_publications.qmd >}}
 
