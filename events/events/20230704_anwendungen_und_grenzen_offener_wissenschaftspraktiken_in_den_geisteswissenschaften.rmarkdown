@@ -1,0 +1,396 @@
+---
+format:
+    html:
+        table-of-contents: false
+        css: event-page-styles.css
+page-layout: full
+pagetitle: '“Open Humanities: Anwendungen und Grenzen offener Wissenschaftspraktiken in den Geisteswissenschaften”'
+categories: 'Symposium'
+
+# Event categories
+event:
+  title: '“Open Humanities: Anwendungen und Grenzen offener Wissenschaftspraktiken in den Geisteswissenschaften”'
+  description: ""
+  categories:  'Symposium'
+  date: "July 04, 2023"
+  end_date: "July 04, 2023"
+  time: "14:00–16:30"
+  location:
+    name: "Hybrid (Geschwister-Scholl-Platz 1, room F002 (Zentralbibliothek, EG), Munich and via Zoom)"
+    address: ""
+    map_url: ""
+  format:
+    type: 'Symposium'
+    detail: ""
+  language:
+    primary: "German"
+    primary-code: "de"
+    detail: ""
+links:
+  registration: ""
+  materials: ""
+  workshop_website: ""
+
+event_description:
+  - ""
+
+instructors:
+  - name: ""
+    url: ""
+
+helpers:
+  - name: ""
+
+contact:
+  name: ""
+  email: ""
+
+organizers:
+  name: ""
+
+
+host:
+  - name: "LMU Open Science Center"
+---
+<!-- MANDAORY SECTION START  -->
+<h1 class="fs-1 text-primary"> {{< meta event.title >}} </h1>
+
+
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+
+library(htmltools)
+
+# Get parameters from the parent document
+event <- rmarkdown::metadata
+
+# Helper function to safely get parameter values with defaults
+get_param <- function(param_name, default = "") {
+  if (is.null(event[[param_name]])) {
+    return(default)
+  } else {
+    return(event[[param_name]])
+  }
+}
+
+
+event_param <- get_param("event")
+event_title <- event_param$title
+event_date <- event_param$date
+event_end_date <- event_param$end_date
+event_time <- event_param$time
+event_location_name <- event_param$location$name
+event_location_address <- event_param$location$address
+event_map_url <- event_param$location$map_url
+event_format_type <- event_param$format$type
+event_format_detail <- event_param$format$detail
+event_language_primary <- event_param$language$primary
+event_language_detail <- event_param$language$detail
+
+
+has_end_date <- if (is.null(event_end_date)) {FALSE} else if (nchar(trimws(event_end_date)) == 0) {FALSE} else {TRUE}
+
+
+links_param <- get_param("links", list())
+links_registration <- links_param$registration
+links_materials <- links_param$materials
+links_workshop_website <- links_param$workshop_website
+
+
+event_description <- get_param("event_description", list())
+
+instructors <- get_param("instructors", list())
+helpers <- get_param("helpers", list())
+
+contact <- get_param("contact", list())
+contact_name <- contact$name
+contact_email <- contact$email
+```
+
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+
+# prepare date display, include end date when present and strip first year if years match
+extract_year <- function(x) {
+  if (is.null(x) || !nzchar(x)) return(NA_character_)
+  m <- regexpr("\\b(\\d{4})\\b", x)
+  if (m[1] == -1) return(NA_character_)
+  regmatches(x, m)
+}
+
+extract_month_key <- function(x) {
+  if (is.null(x) || !nzchar(x)) return(NA_character_)
+  m <- regexpr("\\b(January|February|March|April|May|June|July|August|September|October|November|December|Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\\b", 
+               x, ignore.case = TRUE, perl = TRUE)
+  if (m[1] == -1) return(NA_character_)
+  month <- tolower(regmatches(x, m))
+  # normalize to three-letter key
+  substr(month, 1, 3)
+}
+
+date_display <- if (isTRUE(has_end_date) && !is.null(event_end_date) && nzchar(trimws(event_end_date))) {
+  y1 <- extract_year(event_date)
+  y2 <- extract_year(event_end_date)
+  m1 <- extract_month_key(event_date)
+  m2 <- extract_month_key(event_end_date)
+
+  if (!is.na(y1) && !is.na(y2) && identical(y1, y2)) {
+    # remove optional comma and any surrounding space plus the year from the start date
+    short_start <- sub(paste0("\\s*,?\\s*", y1, "\\s*$"), "", event_date)
+
+    end_short <- event_end_date
+    # if months are the same, remove the month from the end date (e.g. "June 2 – 4, 2025")
+    if (!is.na(m1) && !is.na(m2) && identical(m1, m2)) {
+      month_pattern <- "(?i)\\b(January|February|March|April|May|June|July|August|September|October|November|December|Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\\b\\s*"
+      end_short <- sub(month_pattern, "", end_short, perl = TRUE)
+      # remove any leading comma/space leftover
+      end_short <- sub("^\\s*,?\\s*", "", end_short)
+    }
+
+    paste0(short_start, " \u2013 ", end_short)
+  } else {
+    paste0(event_date, " \u2013 ", event_end_date)
+  }
+} else {
+  event_date
+}
+
+tags$div(
+  class = "d-flex flex-nowrap justify-content-center overflow-auto gap-3 py-2 px-1",
+
+  tags$div(
+    class = "card flex-shrink-0 border border-primary border-2",
+    style = "width:14rem;",
+    tags$div(
+      class = "card-body",
+      tags$h5(class = "card-title", HTML('<i class="bi bi-calendar-event"></i> Date &amp; Time')),
+      tags$p(class = "card-text",
+             date_display,
+             tags$br(),
+             event_time
+      )
+    )
+  ),
+
+  tags$div(
+    class = "card flex-shrink-0 border border-primary border-2",
+    style = "width:14rem;",
+    tags$div(
+      class = "card-body",
+      tags$h5(class = "card-title", HTML('<i class="bi bi-geo-alt"></i> Location')),
+      tags$div(
+        class = "location-text",
+        tags$a(
+          href = event_map_url,
+          target = "_blank",
+          style = "text-decoration:none;color:inherit;",
+          tags$div(class = "meta-value",
+                  event_location_name,
+                   tags$br(),
+                   (event_location_address)
+          )
+        )
+      )
+    )
+  ),
+
+  tags$div(
+    class = "card flex-shrink-0 border border-primary border-2",
+    style = "width:14rem;",
+    tags$div(
+      class = "card-body",
+      tags$h5(class = "card-title", HTML('<i class="bi bi-laptop"></i> Format')),
+      tags$p(class = "card-text",
+             event_format_type,
+             tags$br(),
+            event_format_detail
+      )
+    )
+  ),
+
+  tags$div(
+    class = "card flex-shrink-0 border border-primary border-2",
+    style = "width:14rem;",
+    tags$div(
+      class = "card-body",
+      tags$h5(class = "card-title", HTML('<i class="bi bi-translate"></i> Language')),
+      tags$p(class = "card-text",
+             event_language_primary,
+             tags$br(),
+             event_language_detail
+      )
+    )
+  )
+)
+```
+
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+
+
+tags$div(
+  class = "register-box d-flex gap-2 justify-content-center",
+  tags$a(
+    href = links_registration,
+    target = "_blank",
+    class = "btn btn-primary btn-pop",
+    HTML('<i class="bi bi-box-arrow-up-left"></i>'),
+    " Register"
+  ),
+  tags$a(
+    href = links_materials,
+    target = "_blank",
+    class = "btn btn-outline-primary btn-pop",
+    HTML('<i class="bi bi-download"></i>'),
+    " Materials"
+  )
+)
+```
+
+
+
+<!-- MANDAORY SECTION END  -->
+
+<br>
+
+<!-- DETAILED EVENT DESCRIPTION HERE OR USE THE TEMPLATE BELOW TO INCLUDE THE STANDARD DESCRIPTION SECTION -->
+<!-- {{< include templates/_event_description.qmd >}} -->
+
+<p>Das Open Science Center veranstaltet gemeinsam mit der Universitätsbibliothek der LMU (UB) und der IT-Gruppe Geisteswissenschaften (ITG) ein Symposium zum Konzept von Open Science in den Geisteswissenschaften.<br>Wir würden uns über Ihre Teilnahme sehr freuen.</p><p>Gegenstand von Open Science sind Konzepte und Methoden, die möglichst sämtliche Phasen und Inhalte von Forschungsprozessen transparent und allgemein zugänglich gestalten, um auch die geisteswissenschaftliche Forschung zu kontextualisieren und Kooperation und Nachnutzung zu erleichtern.</p><p>Auf dem geplanten Symposium diskutieren zunächst Dr. Eckhart Arnold (Leiter des Referats für IT und Digital Humanities, Bayerische Akademie der Wissenschaften) und Prof. Dr. Thomas Krefeld (Professor für Romanische Philologie, LMU), inwieweit Open-Science-Konzepte auf die Geisteswissenschaften anwendbar sind.<br>Anschließend stellen Dr. Christiane Sibille (ETH Library, ETH Zürich) und Prof. Dr. Stephan Hoppe (Bayerische Kunstgeschichte, Architekturgeschichte, Digitale Kunstgeschichte, LMU) offene Forschungspraktiken vor, die in einigen Bereichen der Geisteswissenschaften bereits umgesetzt werden, wie das Teilen von ggf. sensiblen Daten und Open Monographs.</p><p>Abschließend findet eine Podiumsdiskussion mit allen Vortragenden statt. Es geht zum einen darum, Möglichkeiten und Grenzen der Open-Science-Bewegung in den Geisteswissenschaften auszuloten sowie die Notwendigkeit eines internen Diskurses oder einer eigenen Initiative zur proaktiven Förderung der Open Humanities zu diskutieren. Ferner sollen im Rahmen der Diskussion bestehende positive Ansätze und Verfahren identifiziert werden und eher negativ zu bewertenden Entwicklungen und Strukturen (Defizite, etwa hinsichtlich Problembewusstsein, Ausbildung oder Infrastruktur) gegenübergestellt werden.<br>Am Ende des Symposiums soll eine Bedarfsumfrage unter dem Publikum durchgeführt und schließlich überlegt werden, wie das LMU Open Science Center, die UB der LMU und die IT-Gruppe Geisteswissenschaften Forscher*innen in den Geisteswissenschaften bei der Umsetzung von offenen Forschungspraktiken unterstützen können.</p><p><strong>Programm</strong></p><ul>
+<li>15:00 Möglichkeiten und Grenzen offener Forschungspraktiken in den Geisteswissenschaften</li>
+<ul>
+<li>
+<strong>Dr. Eckhart Arnold</strong> (Referatsleitung “Digital Humanities - Forschung und Entwicklung”, Bayerische Akademie der Wissenschaften):<strong> Prinzipien der “offenen Wissenschaften” in den Geisteswissenschaften</strong> - 13 min</li>
+<li>
+<strong>Dr. Thomas Krefeld</strong> (Professor für Romanische Philologie i.R., LMU): <strong>“Publikation” geht in Revision</strong> - 13 min</li>
+</ul>
+<li>Fragen und Antworten - 10 min</li>
+<li>Pause - 5 min</li>
+<li>15:45 Offene Forschungspraktiken, die in den Geisteswissenschaften bereits angewandt werden</li>
+<ul>
+<li>
+<strong>Dr. Christiane Sibille</strong> (Digital Scholarship Services, ETH-Bibliothek Zürich): <strong>Digitalisierte Sammlungen als Daten für offene Wissenschaftspraktiken in den Geisteswissenschaften</strong> - 8 min</li>
+<li>
+<strong>Prof. Dr. Stephan Hoppe</strong> (Professur mit Schwerpunkt Bayerische Kunstgeschichte, Institut für Kunstgeschichte, LMU): <strong>Offene Wissenschaftspraktiken in der Kunstgeschichte und darüber hinaus</strong> - 8 min</li>
+</ul>
+<li>Fragen und Antworten - 5 min</li>
+<li>Pause - 5 min</li>
+<li>16:15 Podiumsdiskussion - 30 min</li>
+<li>16:45 Nachbereitung und Fragen an das Publikum - 15 min</li>
+<ul>
+<li>Zusammenfassung der Ko-Vorsitzenden</li>
+<li>Welcher Bedarf besteht in Bezug auf Ausbildung, Verbreitung von Normen, Infrastruktur?</li>
+<li>Wie kann das OSC /die UB / die ITG die Forscher bei diesen Fragen unterstützen?</li>
+</ul>
+<li>17:00 Ende</li>
+</ul>
+<p><br>Die Veranstaltung wird moderiert von Prof. Dr. Ralf Ludwig (Open Science Center, LMU), Dr. Stephan Lücke (IT-Gruppe Geisteswissenschaften, LMU) und Dr. Martin Spenger (Universitätsbibliothek, LMU).</p><p> </p><p><img height="300" width="535" src="flyer_openhumanities.png" alt="flyer_openhumanities"> </p><div class="g-clear"></div>
+
+
+
+<!-- MANDAORY SECTION START  -->
+<!-- _event_description.qmd template should always be at bottom -->
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+
+
+
+# small helper: render one person (list with $name and optional $url, or plain character)
+render_person <- function(person) {
+  if (is.null(person)) return(NULL)
+  if (is.list(person)) {
+    nm <- person$name %||% ""
+    url <- person$url %||% NULL
+    if (!is.null(url) && nzchar(url)) return(tags$li(tags$a(href = url, target = "_blank", nm)))
+    return(tags$li(nm))
+  }
+  if (is.character(person)) return(tags$li(person))
+  NULL
+}
+
+# helpers -------------------------------------------------------
+.render_instructor <- function(ins) {
+  nm <- as.character(ins$name %||% "")
+  url <- as.character(ins$url %||% "")
+  if (!nzchar(nm)) return(NULL)
+  if (nzchar(url)) {
+    tags$li(tags$a(href = url, target = "_blank", rel = "noopener noreferrer", nm))
+  } else {
+    tags$li(nm)
+  }
+}
+
+.render_helper <- function(h) {
+  nm <- as.character(h$name %||% "")
+  if (!nzchar(nm)) return(NULL)
+  tags$li(nm)
+}
+
+.render_contact <- function(contact) {
+  name <- as.character(contact$name %||% "")
+  email <- as.character(contact$email %||% "")
+  if (!nzchar(trimws(name))) return(NULL)
+  tags$div(
+    class = "contact_name",
+    tags$h4("Questions?"),
+    tags$p(
+      "If you have any questions, please contact ",
+      tags$span(
+        class = "instructor-links",
+        if (nzchar(email)) {
+          tags$a(href = paste0("mailto:", email), name)
+        } else {
+          name
+        }
+      ),
+      "."
+    )
+  )
+}
+
+
+# sanitize & filter empty-name entries (defensive)
+instructors <- if (is.list(instructors)) instructors else list()
+instructors <- Filter(function(x) nzchar(as.character(x$name %||% "")), instructors)
+
+helpers <- if (is.list(helpers)) helpers else list()
+helpers <- Filter(function(x) nzchar(as.character(x$name %||% "")), helpers)
+
+# Render blocks conditionally. htmltools drops NULL entries.
+tagList(
+  if (length(instructors) > 0) {
+    tags$div(
+      class = "instructors",
+      tags$h4("Instructors"),
+      tags$ul(lapply(instructors, .render_instructor))
+    )
+  } else NULL,
+
+  if (length(helpers) > 0) {
+    tags$div(
+      class = "helpers",
+      tags$h4("Helpers"),
+      tags$ul(lapply(helpers, .render_helper))
+    )
+  } else NULL,
+
+  .render_contact(contact)
+)
+```
+
+
+
+
+<!-- MANDAORY SECTION END  -->
+
