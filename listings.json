@@ -10,17 +10,6 @@
     ]
   },
   {
-    "listing": "/people/alumnae.html",
-    "items": [
-      "/people/people/coretta-stefano.html",
-      "/people/people/ivett-guntersdorfer.html",
-      "/people/people/larissa-neumann.html",
-      "/people/people/wolfgang-strube.html",
-      "/people/people/imai-taisuke.html",
-      "/people/people/julian-unkel.html"
-    ]
-  },
-  {
     "listing": "/people/members.html",
     "items": [
       "/people/people/susanne-adler.html",
@@ -105,8 +94,8 @@
       "/people/people/xenia-schmalz.html",
       "/people/people/andreas-schneck.html",
       "/people/people/julia-schulte-cloos.html",
-      "/people/people/christian-schulz.html",
       "/people/people/enrico-schulz.html",
+      "/people/people/christian-schulz.html",
       "/people/people/carsten-schwemmer.html",
       "/people/people/ramona-schoedel.html",
       "/people/people/laura-seelkopf.html",
@@ -145,24 +134,23 @@
     ]
   },
   {
-    "listing": "/training/self-learning.html",
+    "listing": "/people/staff.html",
     "items": [
-      "/training/principles/index.html",
-      "/training/study-planning/index.html",
-      "/training/data-management/index.html",
-      "/training/reproducible-processes/index.html",
-      "/training/publishing-outputs/index.html",
-      "/training/data-management/maintaining-privacy-with-open-data.html",
-      "/training/data-management/open-data.html",
-      "/training/principles/credible-science.html",
-      "/training/principles/replicability-crisis.html",
-      "/training/publishing-outputs/open-access-preprints-postprints.html"
+      "/people/people/malika-ihle.html",
+      "/people/people/sarah-von-grebmer-zu-wolfsthurn.html",
+      "/people/people/sara-lil-middleton.html",
+      "/people/people/reema-gupta.html",
+      "/people/people/pat-callahan.html",
+      "/people/people/riya-lamichhane.html",
+      "/people/people/tejaswini-sharma.html",
+      "/people/people/elizabeth-waterfield.html"
     ]
   },
   {
-    "listing": "/training/publishing-outputs/index.html",
+    "listing": "/people/management.html",
     "items": [
-      "/training/publishing-outputs/open-access-preprints-postprints.html"
+      "/people/people/felix-schoenbrodt.html",
+      "/people/people/malika-ihle.html"
     ]
   },
   {
@@ -171,10 +159,10 @@
       "/events/events/2018-12-05-responsibility-consequences.html",
       "/events/events/2026-02-09-love-data-week-2026.html",
       "/events/events/2025-12-12-clinical-data-sharing.html",
-      "/events/events/2025-11-14-psychiatric-genetics-data-sharing.html",
       "/events/events/2025-11-14-data-and-ai-ethics.html",
-      "/events/events/2025-09-15-lmu-open-science-summer-school.html",
+      "/events/events/2025-11-14-psychiatric-genetics-data-sharing.html",
       "/events/events/osc-summer-school-2025.html",
+      "/events/events/2025-09-15-lmu-open-science-summer-school.html",
       "/events/events/2025-08-07-data-rescue-hackathon.html",
       "/events/events/2025-07-21-helmholtz-open-science-strategy.html",
       "/events/events/2025-07-11-systems-biology-data-sharing.html",
@@ -212,8 +200,8 @@
       "/events/events/2024-05-27-peer-review-practices.html",
       "/events/events/2024-05-27-code-documentation.html",
       "/events/events/2024-05-22-open-access.html",
-      "/events/events/2024-05-15-data-management-plans-workshop.html",
       "/events/events/2024-05-15-democratize-open-science-lmu.html",
+      "/events/events/2024-05-15-data-management-plans-workshop.html",
       "/events/events/2024-05-13-hype-and-reality.html",
       "/events/events/2024-05-10-quality-scholarly-publishing-facets.html",
       "/events/events/2024-05-10-predatory-journals.html",
@@ -236,8 +224,8 @@
       "/events/events/2024-02-06-robustheit-wissenschaft.html",
       "/events/events/2024-01-29-code-readability-improvement.html",
       "/events/events/2024-01-15-git-github-version-control.html",
-      "/events/events/2024-01-12-next-steps.html",
       "/events/events/2024-01-12-replication-crisis-positive.html",
+      "/events/events/2024-01-12-next-steps.html",
       "/events/events/2024-01-08-review-open-science-perspective.html",
       "/events/events/2023-12-15-power-preregistration.html",
       "/events/events/2023-12-08-metascience.html",
@@ -327,14 +315,6 @@
     ]
   },
   {
-    "listing": "/training/study-planning/index.html",
-    "items": []
-  },
-  {
-    "listing": "/training/reproducible-processes/index.html",
-    "items": []
-  },
-  {
     "listing": "/training/principles/index.html",
     "items": [
       "/training/principles/replicability-crisis.html",
@@ -342,114 +322,33 @@
     ]
   },
   {
-    "listing": "/news/index.html",
+    "listing": "/training/publishing-outputs/index.html",
     "items": [
-      "/news/news/2025-07-22-newsletter-july-2025.html",
-      "/news/news/2025-07-10-forrt-train-the-trainer-launch.html",
-      "/news/news/2025-05-15-bmc-open-research-report.html",
-      "/news/news/2025-01-08-eleven-strategies-reproducible-research.html",
-      "/news/news/2024-09-24-summer-school-2024-insights.html",
-      "/news/news/2024-07-16-business-admin-institutional-member.html",
-      "/news/news/2024-07-15-job-ad-scientific-coordinator.html",
-      "/news/news/2024-07-15-stellenausschreibung-koordinator.html",
-      "/news/news/2024-07-03-enter-award-received.html",
-      "/news/news/2024-06-26-new-scientific-board-speaker.html",
-      "/news/news/2024-06-14-advisory-board-report-2024.html",
-      "/news/news/2024-05-17-newsletter-may-2024.html",
-      "/news/news/2024-05-10-100th-member-milestone.html",
-      "/news/news/2024-05-10-clusters-excellence-join-osc.html",
-      "/news/news/2024-04-23-replicable-data-analysis-paper.html",
-      "/news/news/2024-02-14-matched-networking-lunches.html",
-      "/news/news/2024-01-29-gollwitzer-schneck-interview.html",
-      "/news/news/2024-01-19-osc-members-bibliography.html",
-      "/news/news/2024-01-08-advisory-board-established.html",
-      "/news/news/2023-12-12-newsletter-december-2023.html",
-      "/news/news/2023-12-11-vw-foundation-project-funded.html",
-      "/news/news/2023-12-07-osc-impact-report-2017-2023.html",
-      "/news/news/2023-11-13-carpentries-instructor-training.html",
-      "/news/news/2023-10-16-summer-school-2023-lessons-learned.html",
-      "/news/news/2023-07-21-newsletter-july-2023.html",
-      "/news/news/2023-04-03-open-science-retreat-stipends.html",
-      "/news/news/2023-01-26-love-data-week.html",
-      "/news/news/2023-01-25-biology-business-admin-join-osc.html",
-      "/news/news/2022-10-24-newsletter-october-2022.html",
-      "/news/news/2022-10-18-german-reproducibility-network.html",
-      "/news/news/2022-10-08-psychology-dept-institutional-member.html",
-      "/news/news/2022-10-06-schoenbrodt-dgps-award.html",
-      "/news/news/2022-08-23-open-access-workshop-video.html",
-      "/news/news/2022-07-08-bischl-interview.html",
-      "/news/news/2022-05-10-members-open-science-magazine.html",
-      "/news/news/2022-05-09-newsletter-may-2022.html",
-      "/news/news/2022-05-02-coordinator-hired.html",
-      "/news/news/2022-03-29-bmc-joins-osc.html",
-      "/news/news/2022-03-24-beyerlein-interview.html",
-      "/news/news/2022-03-18-boulesteix-interview.html",
-      "/news/news/2022-03-18-lmu-open-access-fund.html",
-      "/news/news/2021-11-21-stellenausschreibung-koordinator.html",
-      "/news/news/2021-06-15-rdm-help-desk.html",
-      "/news/news/2021-06-15-data-tracking-publishers.html",
-      "/news/news/2021-04-21-multiplicity-paper-published.html",
-      "/news/news/2021-02-01-german-reproducibility-network-launch.html",
-      "/news/news/2021-01-21-hochschulperle-election-2020.html",
-      "/news/news/2020-11-02-berlin-parliament-open-science.html",
-      "/news/news/2020-03-28-multiplicity-paper-preprint.html",
-      "/news/news/2020-03-09-hochschulperle-award.html",
-      "/news/news/2020-03-03-four-new-members.html",
-      "/news/news/2020-03-03-statistics-dept-joins-osc.html",
-      "/news/news/2020-01-12-five-new-members.html",
-      "/news/news/2019-11-25-open-science-doctoral-studies.html",
-      "/news/news/2019-05-08-zpid-open-science-conference.html",
-      "/news/news/2019-03-20-dagstat-symposium.html",
-      "/news/news/2018-11-21-many-labs-2-replication.html",
-      "/news/news/2018-08-17-five-new-members-hospital.html",
-      "/news/news/2018-08-07-ebdc-joins-osc.html",
-      "/news/news/2018-07-30-open-social-science-conference.html",
-      "/news/news/2018-07-27-osc-portrait.html",
-      "/news/news/2018-06-25-fifteen-new-members.html",
-      "/news/news/2018-05-16-open-science-toolbox.html",
-      "/news/news/2018-05-14-open-science-radio-interview.html",
-      "/news/news/2018-05-13-bayerischer-rundfunk-interview.html",
-      "/news/news/2018-05-08-opening-ceremony.html",
-      "/news/news/2018-03-09-auspurg-replication-comment.html",
-      "/news/news/2018-02-28-open-science-flyer.html",
-      "/news/news/2018-01-29-open-science-conference-berlin.html",
-      "/news/news/2018-01-18-w2-professorship-open-science.html",
-      "/news/news/2017-11-16-osc-founded.html"
+      "/training/publishing-outputs/open-access-preprints-postprints.html"
     ]
   },
   {
-    "listing": "/people/advisors.html",
+    "listing": "/training/reproducible-processes/index.html",
+    "items": []
+  },
+  {
+    "listing": "/training/self-learning.html",
     "items": [
-      "/people/people/tanita-casci.html",
-      "/people/people/mathijs-vluegel.html",
-      "/people/people/chelle-gentemann.html",
-      "/people/people/bernhard-goodwin.html",
-      "/people/people/stephan-hartmann.html",
-      "/people/people/richard-mcelreath.html",
-      "/people/people/peter-edelsbrunner.html",
-      "/people/people/maximilian-frank.html",
-      "/people/people/ulrich-dirnagl.html"
+      "/training/principles/index.html",
+      "/training/study-planning/index.html",
+      "/training/data-management/index.html",
+      "/training/reproducible-processes/index.html",
+      "/training/publishing-outputs/index.html",
+      "/training/data-management/maintaining-privacy-with-open-data.html",
+      "/training/data-management/open-data.html",
+      "/training/principles/credible-science.html",
+      "/training/principles/replicability-crisis.html",
+      "/training/publishing-outputs/open-access-preprints-postprints.html"
     ]
   },
   {
-    "listing": "/people/management.html",
-    "items": [
-      "/people/people/felix-schoenbrodt.html",
-      "/people/people/malika-ihle.html"
-    ]
-  },
-  {
-    "listing": "/people/staff.html",
-    "items": [
-      "/people/people/malika-ihle.html",
-      "/people/people/sarah-von-grebmer-zu-wolfsthurn.html",
-      "/people/people/sara-lil-middleton.html",
-      "/people/people/reema-gupta.html",
-      "/people/people/pat-callahan.html",
-      "/people/people/riya-lamichhane.html",
-      "/people/people/tejaswini-sharma.html",
-      "/people/people/elizabeth-waterfield.html"
-    ]
+    "listing": "/training/study-planning/index.html",
+    "items": []
   },
   {
     "listing": "/people/fellows.html",
@@ -488,6 +387,107 @@
       "/people/people/viktoria-wiegelmann.html",
       "/people/people/martin-wiehr.html",
       "/people/people/lisa-wimmer.html"
+    ]
+  },
+  {
+    "listing": "/people/advisors.html",
+    "items": [
+      "/people/people/tanita-casci.html",
+      "/people/people/mathijs-vluegel.html",
+      "/people/people/chelle-gentemann.html",
+      "/people/people/bernhard-goodwin.html",
+      "/people/people/stephan-hartmann.html",
+      "/people/people/richard-mcelreath.html",
+      "/people/people/peter-edelsbrunner.html",
+      "/people/people/maximilian-frank.html",
+      "/people/people/ulrich-dirnagl.html"
+    ]
+  },
+  {
+    "listing": "/people/alumnae.html",
+    "items": [
+      "/people/people/coretta-stefano.html",
+      "/people/people/ivett-guntersdorfer.html",
+      "/people/people/larissa-neumann.html",
+      "/people/people/wolfgang-strube.html",
+      "/people/people/imai-taisuke.html",
+      "/people/people/julian-unkel.html"
+    ]
+  },
+  {
+    "listing": "/news/index.html",
+    "items": [
+      "/news/news/2025-07-22-newsletter-july-2025.html",
+      "/news/news/2025-07-10-forrt-train-the-trainer-launch.html",
+      "/news/news/2025-05-15-bmc-open-research-report.html",
+      "/news/news/2025-01-08-eleven-strategies-reproducible-research.html",
+      "/news/news/2024-09-24-summer-school-2024-insights.html",
+      "/news/news/2024-07-16-business-admin-institutional-member.html",
+      "/news/news/2024-07-15-stellenausschreibung-koordinator.html",
+      "/news/news/2024-07-15-job-ad-scientific-coordinator.html",
+      "/news/news/2024-07-03-enter-award-received.html",
+      "/news/news/2024-06-26-new-scientific-board-speaker.html",
+      "/news/news/2024-06-14-advisory-board-report-2024.html",
+      "/news/news/2024-05-17-newsletter-may-2024.html",
+      "/news/news/2024-05-10-clusters-excellence-join-osc.html",
+      "/news/news/2024-05-10-100th-member-milestone.html",
+      "/news/news/2024-04-23-replicable-data-analysis-paper.html",
+      "/news/news/2024-02-14-matched-networking-lunches.html",
+      "/news/news/2024-01-29-gollwitzer-schneck-interview.html",
+      "/news/news/2024-01-19-osc-members-bibliography.html",
+      "/news/news/2024-01-08-advisory-board-established.html",
+      "/news/news/2023-12-12-newsletter-december-2023.html",
+      "/news/news/2023-12-11-vw-foundation-project-funded.html",
+      "/news/news/2023-12-07-osc-impact-report-2017-2023.html",
+      "/news/news/2023-11-13-carpentries-instructor-training.html",
+      "/news/news/2023-10-16-summer-school-2023-lessons-learned.html",
+      "/news/news/2023-07-21-newsletter-july-2023.html",
+      "/news/news/2023-04-03-open-science-retreat-stipends.html",
+      "/news/news/2023-01-26-love-data-week.html",
+      "/news/news/2023-01-25-biology-business-admin-join-osc.html",
+      "/news/news/2022-10-24-newsletter-october-2022.html",
+      "/news/news/2022-10-18-german-reproducibility-network.html",
+      "/news/news/2022-10-08-psychology-dept-institutional-member.html",
+      "/news/news/2022-10-06-schoenbrodt-dgps-award.html",
+      "/news/news/2022-08-23-open-access-workshop-video.html",
+      "/news/news/2022-07-08-bischl-interview.html",
+      "/news/news/2022-05-10-members-open-science-magazine.html",
+      "/news/news/2022-05-09-newsletter-may-2022.html",
+      "/news/news/2022-05-02-coordinator-hired.html",
+      "/news/news/2022-03-29-bmc-joins-osc.html",
+      "/news/news/2022-03-24-beyerlein-interview.html",
+      "/news/news/2022-03-18-lmu-open-access-fund.html",
+      "/news/news/2022-03-18-boulesteix-interview.html",
+      "/news/news/2021-11-21-stellenausschreibung-koordinator.html",
+      "/news/news/2021-06-15-rdm-help-desk.html",
+      "/news/news/2021-06-15-data-tracking-publishers.html",
+      "/news/news/2021-04-21-multiplicity-paper-published.html",
+      "/news/news/2021-02-01-german-reproducibility-network-launch.html",
+      "/news/news/2021-01-21-hochschulperle-election-2020.html",
+      "/news/news/2020-11-02-berlin-parliament-open-science.html",
+      "/news/news/2020-03-28-multiplicity-paper-preprint.html",
+      "/news/news/2020-03-09-hochschulperle-award.html",
+      "/news/news/2020-03-03-statistics-dept-joins-osc.html",
+      "/news/news/2020-03-03-four-new-members.html",
+      "/news/news/2020-01-12-five-new-members.html",
+      "/news/news/2019-11-25-open-science-doctoral-studies.html",
+      "/news/news/2019-05-08-zpid-open-science-conference.html",
+      "/news/news/2019-03-20-dagstat-symposium.html",
+      "/news/news/2018-11-21-many-labs-2-replication.html",
+      "/news/news/2018-08-17-five-new-members-hospital.html",
+      "/news/news/2018-08-07-ebdc-joins-osc.html",
+      "/news/news/2018-07-30-open-social-science-conference.html",
+      "/news/news/2018-07-27-osc-portrait.html",
+      "/news/news/2018-06-25-fifteen-new-members.html",
+      "/news/news/2018-05-16-open-science-toolbox.html",
+      "/news/news/2018-05-14-open-science-radio-interview.html",
+      "/news/news/2018-05-13-bayerischer-rundfunk-interview.html",
+      "/news/news/2018-05-08-opening-ceremony.html",
+      "/news/news/2018-03-09-auspurg-replication-comment.html",
+      "/news/news/2018-02-28-open-science-flyer.html",
+      "/news/news/2018-01-29-open-science-conference-berlin.html",
+      "/news/news/2018-01-18-w2-professorship-open-science.html",
+      "/news/news/2017-11-16-osc-founded.html"
     ]
   }
 ]
