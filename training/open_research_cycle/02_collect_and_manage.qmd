@@ -328,7 +328,9 @@ Version control for large datasets
 
 Research involving human participants requires ethics approval and data protection compliance. These are not bureaucratic hurdles but safeguards for the people contributing to your research. Address them before collecting any data.
 
-At LMU, submit ethics applications to the [Ethics Committee](https://www.lmu.de/en/about-lmu/structure/central-university-administration/committees-and-representatives/ethics-committee/) and allow 4-8 weeks for review. For data protection guidance, contact the [LMU Data Protection Officer](https://www.lmu.de/en/about-lmu/structure/central-university-administration/legal-matters/data-protection/) or [RDM Support](mailto:rdm@ub.uni-muenchen.de).
+<br>
+
+At LMU Munich, submit ethics applications to the [Ethics Committee](https://www.lmu.de/en/about-lmu/structure/central-university-administration/committees-and-representatives/ethics-committee/) and allow 4-8 weeks for review. For data protection guidance, contact the [LMU Data Protection Officer](https://www.lmu.de/en/about-lmu/structure/central-university-administration/legal-matters/data-protection/) or the [Research Data Management team of the University Library ](https://www.en.ub.uni-muenchen.de/writing/research_data/research-data-management/index.html).
 
 ::: {.panel-tabset}
 
@@ -336,25 +338,41 @@ At LMU, submit ethics applications to the [Ethics Committee](https://www.lmu.de/
 
 Participants have the right to understand what they are agreeing to. Your consent form should explain the research purpose in plain language, describe what data you will collect and how you will protect it, specify who will have access and for how long, and make clear that participation is voluntary.
 
-**Use tiered consent when you plan to share data.** Some participants may consent to their data being used for your study but not shared publicly. Others may be comfortable with broader sharing. Giving options respects autonomy while maximizing what you can eventually share.
+<br>
 
-**Store consent forms separately from data.** The consent form links a name to participation. Keeping it with your data undermines any pseudonymization you apply.
+- **Use tiered consent when you plan to share data.** Some participants may consent to their data being used for your study but not shared publicly. Others may be comfortable with broader sharing. Giving options respects autonomy while maximizing what you can eventually share.
+
+- **Store consent forms separately from data.** The consent form links a name to participation. Keeping it with your data undermines any pseudonymization you apply.
 
 ### Anonymization
 
-Anonymization protects privacy and determines what you can share. The distinction between pseudonymization and anonymization matters for GDPR compliance.
+Anonymization protects privacy and determines what you can share. 
 
-**Remove direct identifiers during collection.** Names, addresses, ID numbers, photographs, email addresses. Replace these with codes.
+<br>
 
-**Assess indirect identifiers carefully.** A combination of age, location, profession, and a rare condition might identify someone even without their name. Timestamps reveal patterns. Free-text responses often contain identifying details participants did not intend to share.
+- **Remove direct identifiers during collection.** Names, addresses, ID numbers, photographs, email addresses. Replace these with codes.
 
-**Pseudonymization** replaces identifiers with codes while retaining a key that links back to individuals. Pseudonymized data is still personal data under GDPR because re-identification is possible.
+- **Assess indirect identifiers carefully.** A combination of age, location, profession, and a rare condition might identify someone even without their name. Timestamps reveal patterns. Free-text responses often contain identifying details participants did not intend to share.
 
-**Anonymization** removes all possibility of re-identification. Only truly anonymized data falls outside GDPR scope. Achieving this is harder than it appears, especially with rich datasets.
+<br>
+
+The distinction between pseudonymization and anonymization matters for GDPR compliance.
+
+<br>
+
+- **Pseudonymization** replaces identifiers with codes while retaining a key that links back to individuals. Pseudonymized data is still personal data under GDPR because re-identification is possible.
+
+- **Anonymization** removes all possibility of re-identification. Only truly anonymized data falls outside GDPR scope. Achieving this is harder than it appears, especially with rich datasets.
+
+
+<!-- card learn more with OSC tutorial on data anonymisation TBA mid 2026 
+Implementing and evaluating data anonymization techniques for safely sharing sensitive research data -->
 
 ### GDPR Compliance
 
-Research at LMU must comply with EU data protection regulations. The core principles: have a lawful basis for processing personal data (usually consent or legitimate research interest), use data only for stated purposes, collect only what you need, delete data when you no longer need it, and protect it against unauthorized access.
+Research at LMU Munich must comply with EU data protection regulations. The core principles: have a lawful basis for processing personal data (usually consent or legitimate research interest), use data only for stated purposes, collect only what you need, delete data when you no longer need it, and protect it against unauthorized access.
+
+<br>
 
 **In practice:** document your lawful basis, include data protection language in consent forms, use institutional storage rather than personal cloud services, restrict access to those who need it, and plan when and how you will delete data.
 
