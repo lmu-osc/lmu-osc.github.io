@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="From preserving anonymity to FAIR data sharing">
+<meta name="dcterms.date" content="2026-02-16">
 
-<title>Data Management – LMU Open Science Center</title>
+<title>Software Carpentry: Essential Computing Skill Training (Shell, Git, Python) – LMU Open Science Center</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -31,11 +31,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../training/data-management/maintaining-privacy-with-open-data.html" rel="next">
-<link href="../../training/study-planning/study-planning-tutorials.yaml" rel="prev">
 <link href="../../assets/img/lmu_osc_logo.jpg" rel="icon" type="image/jpeg">
-<script src="../../site_libs/quarto-listing/list.min.js"></script>
-<script src="../../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
@@ -74,35 +70,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-description','listing-categories','listing-image','listing-type',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 <!-- Matomo -->
 <script>
   var _paq = window._paq = window._paq || [];
@@ -118,36 +85,8 @@ ul.task-list li input[type="checkbox"] {
   })();
 </script>
 <!-- End Matomo Code -->
+<link href="../../assets/bootstrap-5.3.8-dist/css/bootstrap.min.css" rel="stylesheet">
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="https://raw.githubusercontent.com/lmu-osc/branding-resources/refs/heads/main/styles.css">
 <link rel="stylesheet" href="../../assets/fontawesome-free-7.1.0-web/css/all.min.css">
@@ -155,10 +94,10 @@ window.Quarto = {
 <link rel="stylesheet" href="../../footer/footer-style.css">
 <link rel="stylesheet" href="../../custom-navbar.css">
 <link rel="stylesheet" href="../../custom-navbar.css">
-<link rel="stylesheet" href="../training.css">
+<link rel="stylesheet" href="event-page-styles.css">
 </head>
 
-<body class="nav-sidebar docked nav-fixed quarto-light">
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -253,7 +192,7 @@ window.Quarto = {
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link active" href="../../training/index.html" aria-current="page"> <i class="bi bi-mortarboard" role="img">
+    <a class="nav-link" href="../../training/index.html"> <i class="bi bi-mortarboard" role="img">
 </i> 
 <span class="menu-text">Training</span></a>
   </li>  
@@ -270,171 +209,37 @@ window.Quarto = {
 </div>
       </div> <!-- /container-fluid -->
     </nav>
-  <nav class="quarto-secondary-nav">
-    <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-        <i class="bi bi-layout-text-sidebar-reverse"></i>
-      </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../training/index.html">Training Tracks</a></li><li class="breadcrumb-item"><a href="../../training/self-learning.html">Self-Learning Catalog</a></li><li class="breadcrumb-item"><a href="../../training/data-management/index.html">Data Management</a></li></ol></nav>
-        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-        </a>
-    </div>
-  </nav>
   <div id="quarto-announcement" data-announcement-id="04e26d7279811b0a13da8609e872b406" class="alert alert-primary hidden"><i class="bi bi-info-circle quarto-announcement-icon"></i><div class="quarto-announcement-content">
 <p><strong>Thanks for visiting the LMU Open Science Center–our site is still under construction for now, but we’ll be live soon!</strong></p>
 </div><i class="bi bi-x-lg quarto-announcement-action"></i></div>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
-    <div class="sidebar-menu-container"> 
-    <ul class="list-unstyled mt-1">
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a href="../../training/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Training Tracks</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a href="../../training/self-learning.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Self-Learning Catalog</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 show">  
-          <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a href="../../training/principles/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Principles</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#" role="navigation" aria-expanded="false" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="" class="collapse list-unstyled sidebar-section depth3 ">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../training/principles/credible-science.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Credible Science</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../training/principles/replicability-crisis.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Replicability Crisis</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-          <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a href="../../training/study-planning/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Study Planning</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#" role="navigation" aria-expanded="false" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="" class="collapse list-unstyled sidebar-section depth3 ">  
-      </ul>
-  </li>
-          <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a href="../../training/data-management/index.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Data Management</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="" class="collapse list-unstyled sidebar-section depth3 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../training/data-management/maintaining-privacy-with-open-data.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Maintaining Privacy with Open Data</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../training/data-management/open-data.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Introduction to Open Data</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-          <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a href="../../training/reproducible-processes/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Reproducible Processes</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#" role="navigation" aria-expanded="false" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="" class="collapse list-unstyled sidebar-section depth3 ">  
-      </ul>
-  </li>
-          <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a href="../../training/publishing-outputs/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Publishing Outputs</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#" role="navigation" aria-expanded="false" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="" class="collapse list-unstyled sidebar-section depth3 ">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../training/publishing-outputs/open-access-preprints-postprints.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Open Access, Preprints, Postprints</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-      </ul>
-  </li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../training/open-research-cycle.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Research Cycle Handbook</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../training/train-the-trainer.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Educator Toolkit</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-    </ul>
-    </div>
-</nav>
-<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
-    </div>
+    
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content column-page" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../training/index.html">Training Tracks</a></li><li class="breadcrumb-item"><a href="../../training/self-learning.html">Self-Learning Catalog</a></li><li class="breadcrumb-item"><a href="../../training/data-management/index.html">Data Management</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Data Management</h1>
-</div>
-
-<div>
-  <div class="description">
-    From preserving <strong>anonymity</strong> to <strong>FAIR data sharing</strong>
+<h1 class="title">Software Carpentry: Essential Computing Skill Training (Shell, Git, Python)</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Event</div>
   </div>
-</div>
+  </div>
 
 
-<div class="quarto-title-meta">
+
+<div class="quarto-title-meta column-page">
 
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">February 16, 2026</p>
+    </div>
+  </div>
   
     
   </div>
@@ -444,185 +249,119 @@ window.Quarto = {
 </header>
 
 
-
-
-
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="T3BlbiUyMERhdGE=" data-listing-file-modified-sort="1771253259034" data-listing-reading-time-sort="1" data-listing-word-count-sort="46">
-<div class="thumbnail"><a href="../../training/data-management/open-data.html" class="no-external">
-
-<img loading="lazy" src="../../training/images/open data.svg" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../../training/data-management/open-data.html" class="no-external">Introduction to Open Data</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('T3BlbiUyMERhdGE='); return false;">Open Data</div>
-
-</div>
-<div class="delink listing-description"><a href="../../training/data-management/open-data.html" class="no-external">
-<p>An introductory presentation on the what, why, and how of making research data open</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="../../training/data-management/open-data.html" class="no-external">
-<div class="metadata-value listing-type">
-Lecture
-</div>
-</a>
+<!-- MANDAORY SECTION START  -->
+<div class="cell">
+<div class="cell-output-display">
+<div class="d-flex flex-nowrap justify-content-center overflow-auto gap-3 py-2 px-1">
+<div class="card flex-shrink-0 border border-primary border-2" style="width:14rem;">
+<div class="card-body">
+<h5 class="card-title anchored"><i class="bi bi-calendar-event"></i> Date &amp; Time</h5>
+<p class="card-text">
+11 Mar - 12 Mar 2026
+<br>
+9:00-17:00
+</p>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="1" data-categories="RkFJUiUyMGRhdGElMkNEYXRhJTIwTWFuYWdlbWVudCUyQ0RvY3VtZW50YXRpb24=">
-<div class="thumbnail"><a href="https://lmu-osc.github.io/FAIR-Data-Management/" class="no-external">
-
-<img loading="lazy" src="../images/fair data management.svg" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="https://lmu-osc.github.io/FAIR-Data-Management/" class="no-external">FAIR Data Management</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('RkFJUiUyMGRhdGE='); return false;">FAIR data</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('RGF0YSUyME1hbmFnZW1lbnQ='); return false;">Data Management</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('RG9jdW1lbnRhdGlvbg=='); return false;">Documentation</div>
-
-</div>
-<div class="delink listing-description"><a href="https://lmu-osc.github.io/FAIR-Data-Management/" class="no-external">
-<p>Take steps towards making your data FAIR: <strong>F</strong>indable, <strong>A</strong>ccessible, <strong>I</strong>nteroperable, <strong>R</strong>eusable</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="https://lmu-osc.github.io/FAIR-Data-Management/" class="no-external">
-<div class="metadata-value listing-type">
-Self-Paced Tutorial
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="RG9jdW1lbnRhdGlvbg==">
-<div class="thumbnail"><a href="https://lmu-osc.github.io/data-documentation-validation-R/" class="no-external">
-
-<img loading="lazy" src="../images/data dictionary.svg" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="https://lmu-osc.github.io/data-documentation-validation-R/" class="no-external">Data Documentation &amp; Validation in R</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('RG9jdW1lbnRhdGlvbg=='); return false;">Documentation</div>
-
-</div>
-<div class="delink listing-description"><a href="https://lmu-osc.github.io/data-documentation-validation-R/" class="no-external">
-<p>How to document, summarize, and validate your research data using R.</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="https://lmu-osc.github.io/data-documentation-validation-R/" class="no-external">
-<div class="metadata-value listing-type">
-Self-Paced Tutorial
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-categories="T3BlbiUyMERhdGElMkNEYXRhJTIwQW5vbnltaXR5" data-listing-file-modified-sort="1771253259034" data-listing-reading-time-sort="1" data-listing-word-count-sort="46">
-<div class="thumbnail"><a href="../../training/data-management/maintaining-privacy-with-open-data.html" class="no-external">
-
-<img loading="lazy" src="../../training/images/data privacy.svg" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../../training/data-management/maintaining-privacy-with-open-data.html" class="no-external">Maintaining Privacy with Open Data</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('T3BlbiUyMERhdGE='); return false;">Open Data</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('RGF0YSUyMEFub255bWl0eQ=='); return false;">Data Anonymity</div>
-
-</div>
-<div class="delink listing-description"><a href="../../training/data-management/maintaining-privacy-with-open-data.html" class="no-external">
-<p>A presentation on how to make data open to the public without revealing sensitive information</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="../../training/data-management/maintaining-privacy-with-open-data.html" class="no-external">
-<div class="metadata-value listing-type">
-Lecture
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="4" data-categories="RGF0YSUyMEFub255bWl0eQ==">
-<div class="thumbnail"><a href="" class="no-external">
-
-<img loading="lazy" src="../images/data anonymity.svg" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="" class="no-external">TBA: Data Anonymity</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('RGF0YSUyMEFub255bWl0eQ=='); return false;">Data Anonymity</div>
-
-</div>
-<div class="delink listing-description"><a href="" class="no-external">
-<p>Implementing and evaluating data anonymization techniques in R for safely sharing sensitive research data</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="" class="no-external">
-<div class="metadata-value listing-type">
-Self-Paced Tutorial
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="5" data-categories="RGF0YSUyMFNpbXVsYXRpb24lMkNEYXRhJTIwQW5vbnltaXR5">
-<div class="thumbnail"><a href="" class="no-external">
-
-<img loading="lazy" src="../images/synthetic data.svg" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="" class="no-external">TBA: Generating Synthetic Data</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('RGF0YSUyMFNpbXVsYXRpb24='); return false;">Data Simulation</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('RGF0YSUyMEFub255bWl0eQ=='); return false;">Data Anonymity</div>
-
-</div>
-<div class="delink listing-description"><a href="" class="no-external">
-<p>Generating Synthetic Data in R and balancing utility and privacy-preserving data sharing</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="" class="no-external">
-<div class="metadata-value listing-type">
-Self-Paced Tutorial
+<div class="card flex-shrink-0 border border-primary border-2" style="width:14rem;">
+<div class="card-body">
+<h5 class="card-title anchored"><i class="bi bi-geo-alt"></i> Location</h5>
+<div class="location-text">
+<a href="https://maps.app.goo.gl/jipjazeZf5FTwhNFA" target="_blank" style="text-decoration:none;color:inherit;">
+<div class="meta-value">
+LMU Biozentrum
+<br>
+Room G00.031 Großhaderner Str. 4, 82152 Martinsried
 </div>
 </a>
 </div>
 </div>
 </div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+<div class="card flex-shrink-0 border border-primary border-2" style="width:14rem;">
+<div class="card-body">
+<h5 class="card-title anchored"><i class="bi bi-laptop"></i> Format</h5>
+<p class="card-text">
+In-person
+<br>
+
+</p>
+</div>
+</div>
+<div class="card flex-shrink-0 border border-primary border-2" style="width:14rem;">
+<div class="card-body">
+<h5 class="card-title anchored"><i class="bi bi-translate"></i> Language</h5>
+<p class="card-text">
+English
+<br>
+en
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div class="register-box d-flex gap-2 justify-content-center">
+<a href="https://www.pretix.osc.lmu.de/lmu-osc/swc-2026-03-11/" target="_blank" class="btn btn-primary btn-pop">
+<i class="bi bi-box-arrow-up-left"></i>
+ Register
+</a>
+<a target="_blank" class="btn btn-outline-primary btn-pop">
+<i class="bi bi-download"></i>
+ Materials
+</a>
+</div>
+</div>
+</div>
+<!-- MANDAORY SECTION END  -->
+<!-- DETAILED EVENT DESCRIPTION HERE OR USE THE TEMPLATE BELOW TO INCLUDE THE STANDARD DESCRIPTION SECTION -->
+<div class="cell">
+<div class="cell-output-display">
+<div class="event_description">
+<h4 class="anchored">Overview</h4>
+<p></p><p>Dear early-career researchers,</p>
+<p>You are invited to register for an in-person 2-day Software Carpentry workshop on March 11 and 12, 09:00-17:00 at the LMU Biozentrum in Martinsried. The workshop will cover the Unix shell, version control in git, and programming in Python.</p>
+<p>This workshop teaches core computing skills that will help you be more productive and effective. We will alternate short tutorials with hands-on practical exercises. Participants will be encouraged to help one another and to apply what they have learned to their own research problems.</p>
+<p>Primary target audience: biology students, (bio)medical students including those in dr. med. programs.</p>
+<p>Registration is mandatory, and participation requires setting up the software in advance by following the provided instructions (a help desk session will also take place on March 9). Please register only if you are available for the whole course.</p>
+<p>The workshop is free and open to researchers, staff, and students of any discipline. It is funded by the Munich Center for Machine Learning and the LMU Open Science Center.</p>
+<p><strong>Helpers: at the time of publication, we are still looking for 1-2 volunteers (contact us if interested!)</strong></p>
+<p></p>
+<p>
+See the 
+<a href="https://lmu-osc.github.io/2026-03-11-LMU-Martinsried/" target="_blank">workshop website</a>
+ for more details.
+</p>
+</div>
+</div>
+</div>
+<!-- MANDAORY SECTION START  -->
+<!-- _event_description.qmd template should always be at bottom -->
+<div class="cell">
+<div class="cell-output-display">
+<div class="instructors">
+<h4 class="anchored">Instructors</h4>
+<ul>
+<li>Felix Henninger</li>
+<li>Balthasar Schachtner</li>
+<li>Jan Simson</li>
+</ul>
+</div>
+<div class="helpers">
+<h4 class="anchored">Helpers</h4>
+<ul>
+<li>Edouard Bonneville</li>
+<li>Pat Callahan</li>
+</ul>
+</div>
+</div>
+</div>
+<!-- MANDAORY SECTION END  -->
+
+
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -1028,18 +767,6 @@ Self-Paced Tutorial
     }
   });
   </script>
-<nav class="page-navigation">
-  <div class="nav-page nav-page-previous">
-      <a href="../../training/study-planning/study-planning-tutorials.yaml" class="pagination-link" aria-label="">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"></span>
-      </a>          
-  </div>
-  <div class="nav-page nav-page-next">
-      <a href="../../training/data-management/maintaining-privacy-with-open-data.html" class="pagination-link" aria-label="Maintaining Privacy with Open Data">
-        <span class="nav-page-text">Maintaining Privacy with Open Data</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
-  </div>
-</nav>
 </div> <!-- /content -->
 
 <footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><ul></ul></div></div></div></footer><footer class="osc-footer-card py-5">
