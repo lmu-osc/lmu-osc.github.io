@@ -28,54 +28,62 @@ title-block-style: none
 <details class="orc-details-panel">
 <summary><i class="bi bi-journal-code"></i> Data Collection</summary>
 
-How you collect data determines whether anyone can replicate your work. Document your procedures thoroughly enough that someone unfamiliar with your project could follow them exactly.
+Your data acquisition procedures must be documented in sufficient details to allow replication by another researcher (see [LMU good practices guidelines](<!--internal link-->)). Establishing reproducible data collection processes strengthens the quality and consistency of both your data and that of your team.
 
-The practices here support **credible** research (transparent methods that can be verified), **open** science (shareable protocols and tools), and **FAIR** principles applied to methods (findable, accessible, interoperable, reusable procedures).
+State-of-the-art practices for reproducible data acquisition include: <!-- make an indented list - why are the bullet point before the start of the other lined (as in, not aligned, or even after) -->
 
-**Capture metadata as you collect.** Equipment settings, environmental conditions, software versions, and calibration records should be recorded contemporaneously, not reconstructed afterward. Electronic lab notebooks, instrument logs, and automated logging all help. See the Metadata tab in Data Management for what to document.
+- creating standard operating procedures
+- recording metadata as data collection is taking place
+- build in automatization through programming
+
+<!-- info box -->
+Metadata are data about data; they provide context to your data. Metadata such as equipment settings, environmental conditions, software versions, and calibration records should be recorded contemporaneously, not reconstructed afterward. Electronic lab notebooks, instrument logs, and automated logging all help to document your metadata.
+
+
+
 
 ::: {.panel-tabset}
 
-### Experimental Protocols
-
-Write your protocol before you start, follow it precisely, and record any deviations as they happen.
+### Lab Protocols
 
 Your protocol should specify materials with identifying details (lot numbers, versions, sources), equipment settings, step-by-step instructions with timing, and expected outcomes at each stage. What counts as "materials" varies by field: reagent concentrations in wet lab work, scanner parameters in neuroimaging, sampling coordinates in field ecology. But the principle is the same: enough detail that someone else could replicate your procedure exactly.
 
-**Track deviations in real time.** When you need to adapt, note it immediately. These deviations often explain unexpected results and guide protocol improvements. Electronic lab notebooks (ELNs) make this easier by creating version-controlled, timestamped records automatically, providing an audit trail that paper cannot match.
+<br>
 
-**Publish your protocols.** A detailed, tested protocol is a contribution to your field. Publishing establishes priority, enables citation, and makes your methods reusable. Platforms like protocols.io provide version control and DOI assignment.
+- **Track deviations in real time.** Write your protocol before you start, follow it precisely, and record any deviations as they happen. When you need to adapt, note it immediately. These deviations often explain unexpected results and guide protocol improvements. Electronic lab notebooks (ELNs) make this easier by creating version-controlled, timestamped records automatically, providing an audit trail that paper cannot match.
 
-::: {.orc-grid-tools}
+- **Publish your protocols.** A detailed, tested protocol is a contribution to your field. Publishing establishes priority, enables citation, and makes your methods reusable. Platforms like protocols.io provide version control and DOI assignment.
+
+::: {.orc-grid-tools} 
+<!-- add a card to LMU supported ENL -->
 ::: {.orc-card-tool}
 <div class="orc-card-tool-icon"><i class="bi bi-file-earmark-code"></i></div>
 
 #### [protocols.io](https://www.protocols.io/)
 
-Protocol sharing with version control and DOIs
+Share, discover, cite, and improve research protocols.
 
-<details>
-<summary>Read more</summary>
-Share, discover, and improve research protocols. Track changes over time and get credit when others use your methods.
-</details>
+
 :::
 :::
 
-### Surveys & Questionnaires
+### Questionnaires
 
-Document both the instrument and the administration procedure completely. Use validated instruments when possible, pilot test before deployment, and archive the exact version participants see.
+Document both the instrument and the administration procedure completely. Use validated instruments <!-- what does a validate survey mean? -->when possible, pilot test before deployment, and archive the exact version participants see in an open source format. 
 
-[Content to be expanded]
+<!-- [Content to be expanded] ??  @Felix: do we want anything else here?-->
 
 ### Automated/Programmatic
 
-When data comes from APIs, sensors, or instruments, scripting the acquisition creates a reproducible record of exactly what was collected and how. Languages like R or Python work well for straightforward pipelines. For complex multi-step workflows, workflow managers like [Snakemake](https://snakemake.readthedocs.io/) or Nextflow ensure steps run in the correct order and can resume after failures. These are common in bioinformatics and neuroimaging, but the principle applies wherever you have sequential processing steps.
+When data comes from instruments, sensors, or APIs, scripting the acquisition creates a reproducible record of exactly what was collected and how. Programming languages like R or Python work well for straightforward pipelines. For more complex multi-step workflows which are common in e.g. in bioinformatics and neuroimaging, workflow managers like [Snakemake](https://snakemake.readthedocs.io/) or Nextflow ensure steps run in the correct order and can resume after failures.
 
-**Structure data correctly from the start.** Variables in columns, observations in rows. This makes your data immediately interoperable with analysis tools rather than requiring cleanup later. Scripts can also automate organization, file renaming, and conversion to open formats. See the Data Management section for guidelines.
+<br>
 
-**Keep records of what ran and when.** Include error handling so failures are recorded rather than silently corrupting data. When something fails months later, you need to know what happened. Always test acquisition scripts on sample data before production runs. A bug in your collection pipeline can invalidate an entire dataset.
+- **Structure data correctly from the start.** Variables in columns, observations in rows. This makes your data immediately interoperable with analysis tools rather than requiring cleanup later. Scripts can also automate organization, file renaming, and conversion to open formats. See  [Data Management](<!--internal link-->) for guidelines.
 
-**Version control your code and data.** This makes your methods reproducible and shareable. See the Version Control tab in Data Management for details.
+- **Keep records of what ran and when.** Include error handling so failures are recorded rather than silently corrupting data. When something fails months later, you need to know what happened. Always test acquisition scripts on sample data before production runs. A bug in your collection pipeline can invalidate an entire dataset.
+
+- **Version control your code and data.** This makes your methods reproducible and shareable. See [Version Control tab in Data Management](<!--internal link-->) for details.
 
 ::: {.orc-grid-tools}
 ::: {.orc-card-tool}
@@ -83,12 +91,9 @@ When data comes from APIs, sensors, or instruments, scripting the acquisition cr
 
 #### [Introduction to R](https://lmu-osc.github.io/introduction-to-R/)
 
-Programming fundamentals for researchers
+Programming fundamentals for research data processing
 
-<details>
-<summary>Read more</summary>
-Learn R basics for data manipulation and scripting. No prior programming experience required.
-</details>
+
 :::
 :::
 
