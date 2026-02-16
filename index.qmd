@@ -27,6 +27,7 @@ include-after-body:
       <script src="/assets/javascript/remove_title.js" defer></script>
 include-in-header:
   - text: |
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <script src="/assets/javascript/clear_filter_button.js" defer></script>
       <script src="assets/javascript/impact_counter.js" defer></script>
       <style>
@@ -99,7 +100,6 @@ include-in-header:
         grid-template-columns: 1fr 1fr;
         gap: 1.5rem 2rem;
         list-style: none;
-
       }
       .checklist-item {
         font-size: 0.98rem;
@@ -188,6 +188,7 @@ include-in-header:
         line-height: 1.5;
         letter-spacing: 0.3px;
       }
+
       /* Activities Section Styling */ 
 
       .activities-container {
@@ -373,30 +374,125 @@ include-in-header:
         transform: translateY(-2px);
         background: #ffffff50 !important;
         color:white !important;
-        border: 2px solid white;
+        border: 2px solid white !important;
       }
-      @media (max-width: 768px) {
-        .testimonial-grid {
-          flex-direction: column;
-          text-align: center;
-        }
-        .newsletter-grid {
+
+      /* media queries */
+      @media (max-width: 767.98px) {
+
+        .activities-container .row {
           display: flex;
-          flex-wrap: wrap;
-          align-items: center;
-          justify-content: center;
-          gap: 1rem;
+          flex-direction: column;
+          gap: 1rem;     
+        }
+        .activities-container {
+          padding: 2rem 1rem;
+          width: 100%; 
+          gap:0;
 
         }
+        .activities-card {
+          flex: 1 1 100%;  
+        }
+
+        .activities-card p {
+          font-size: 0.95rem;
+        }
+
+        .activities-card i {
+          font-size: 2.5rem;
+        }
+        .impact-container {
+          margin-bottom: 0;
+        }
+        .mission-statement h2,
+        .activities-container h2,
+        .impact-card h2,
+        .carousel-section h2 {
+          font-size: 1.3rem;
+          text-align: center;
+        }
+
+        .metric-value {
+          font-size: 2.8rem;
+        }
+      
+        .metric-label {
+          font-size: 0.95rem;
+        }
+
+        .mission-statement{
+          padding: 1rem 2rem;     
+        }
+        .mission-statement-container {
+          width: 100%;
+        }
+
+        .mission-statement-checklist {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 1rem 1.5rem;
+          list-style: none;
+        }
+
+        .mission-statement-checklist li {
+          padding-left: 0.5rem;
+        }
+
+        .newsletter-grid {
+          flex-direction: column;
+          text-align: center;
+          gap: 0.5rem;
+        }
+
         .newsletter-grid .newsletter-content strong {
-          font-weight: 600;
           font-size: 1.5rem;
         }
-          .activities-card {
-            flex: 1 1 100%;
-            max-width: 90%;
-            gap: 1rem;
-          }
+
+        .newsletter-content p {
+          font-size: 1.05rem;
+        }
+
+        .testimonial-grid {
+          display: flex;
+          flex-direction:column-reverse;
+        }
+
+        /*buttons*/
+
+        .activities-card .btn,
+        .mission-statement .btn ,
+        .newsletter-content .btn {
+          padding: 0.5rem 1.3rem;
+          font-size: 0.95rem;
+        }
+        .testimonial-image img {
+          width: 150px;
+        }
+
+      }
+
+      @media (max-width: 991.98px){
+        .activities-container {
+          gap: 1rem;
+          padding: 2rem 1rem;
+          width: 100%;
+        }
+
+        .mission-statement-container {
+          width: 100%;
+        }        
+        .mission-statement{
+          padding: 1rem 2rem;     
+        }
+
+        .testimonial-grid {
+          gap: 1.5rem;
+        }
+
+        .activities-card .btn{
+          padding:0.4rem 1rem;
+        )
 
       }
 
