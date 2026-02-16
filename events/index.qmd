@@ -48,6 +48,27 @@ listing:
     template: past-events-template.ejs
     template-params:
       year: 2021
+  - id: year_2020
+    contents: events/ 
+    sort: "date desc"
+    page-size: 999
+    template: past-events-template.ejs
+    template-params:
+      year: 2020
+  - id: year_2019
+    contents: events/ 
+    sort: "date desc"
+    page-size: 999
+    template: past-events-template.ejs
+    template-params:
+      year: 2019
+  - id: year_2018
+    contents: events/ 
+    sort: "date desc"
+    page-size: 999
+    template: past-events-template.ejs
+    template-params:
+      year: 2018
 toc: true
 toc-depth: 3
 toc-expand: 3
