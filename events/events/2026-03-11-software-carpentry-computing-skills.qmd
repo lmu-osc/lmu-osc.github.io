@@ -1,0 +1,84 @@
+---
+title: 'Software Carpentry: Essential Computing Skill Training (Shell, Git, Python)' 
+date: today
+categories:
+  - Event
+event:
+  title: 'Software Carpentry: Essential Computing Skill Training (Shell, Git, Python)'
+  date: '2026-03-11'
+  end_date: '2026-03-12'
+  description: |
+    Software Carpentry is a global organization that provides training in essential computing skills for researchers. The workshop covers topics such as the command line (Shell), version control with Git, and programming with Python. It is designed to help researchers improve their computational skills and enhance their research productivity.
+  time: '9:00-17:00'
+  location:
+    name: LMU Biozentrum 
+    address: 'Room G00.031 Großhaderner Str. 4, 82152 Martinsried'
+    map_url: 'https://maps.app.goo.gl/jipjazeZf5FTwhNFA'
+  format:
+    type: In-person
+    detail: ''
+  language:
+    primary: English
+    primary-code: en
+    detail: en
+links:
+  registration: https://www.pretix.osc.lmu.de/lmu-osc/swc-2026-03-11/
+  materials: 
+  workshop_website: https://lmu-osc.github.io/2026-03-11-LMU-Martinsried/
+event_description: |
+  Dear early-career researchers,
+ 
+  You are invited to register for an in-person 2-day Software Carpentry workshop on March 11 and 12, 09:00-17:00 at the LMU Biozentrum in Martinsried. The workshop will cover the Unix shell, version control in git, and programming in Python.
+  
+  This workshop teaches core computing skills that will help you be more productive and effective. We will alternate short tutorials with hands-on practical exercises. Participants will be encouraged to help one another and to apply what they have learned to their own research problems.
+  
+  Primary target audience: biology students, (bio)medical students including those in dr. med. programs.
+  
+  Registration is mandatory, and participation requires setting up the software in advance by following the provided instructions (a help desk session will also take place on March 9). Please register only if you are available for the whole course.
+
+  The workshop is free and open to researchers, staff, and students of any discipline. It is funded by the Munich Center for Machine Learning and the LMU Open Science Center.
+
+  
+  **Helpers: at the time of publication, we are still looking for 1-2 volunteers (contact us if interested!)**
+instructors:
+  - name: Felix Henninger
+    url: ''
+  - name: Balthasar Schachtner
+    url: ''
+  - name: Jan Simson
+    url: ''
+helpers:
+  - name: 'Edouard Bonneville'
+  - name: Pat Callahan
+contact:
+  name: ''
+  email: 
+organizers:
+  - name: ''
+presenters:
+  - name: ''
+    url: ''
+host:
+  - name: ''
+    url: ''
+
+---
+
+<!-- MANDAORY SECTION START  -->
+
+
+{{< include templates/_setup.qmd >}}
+{{< include templates/_info_boxes.qmd >}}
+{{< include templates/_register_button.qmd >}}
+<!-- MANDAORY SECTION END  -->
+
+
+
+<!-- DETAILED EVENT DESCRIPTION HERE OR USE THE TEMPLATE BELOW TO INCLUDE THE STANDARD DESCRIPTION SECTION -->
+{{< include templates/_event_description.qmd >}}
+
+
+<!-- MANDAORY SECTION START  -->
+<!-- _event_description.qmd template should always be at bottom -->
+{{< include templates/_instructors_helpers_contact.qmd >}}
+<!-- MANDAORY SECTION END  -->
