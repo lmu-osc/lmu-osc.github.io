@@ -24,6 +24,7 @@
   --orc-transition: all .2s ease;
   --orc-radius: 10px;
   --orc-radius-lg: 12px;
+  --orc-radius-md: 8px;
   --orc-radius-full: 9999px;
 }
 
@@ -40,12 +41,46 @@ h2 i, h3 i { color: var(--orc-green); margin-right: .5rem; }
   margin: .75rem 0;
 }
 
+.orc-grid-tools > * {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* Two-column layout */
+.orc-grid-2col {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
 .orc-two-column {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
-  margin: .5rem 0;
+  grid-template-rows: auto auto;
+  gap: 2rem;
+  margin-bottom: 1rem;
 }
+
+.orc-column{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+  align-items: stretch;
+}
+.card-link::before{
+  content: ''; 
+  position: absolute; 
+  inset: 0;
+  z-index: 1;
+}
+.card-link::before {
+  cursor: pointer; 
+  border: 2px solid transparent; 
+  transition: border-color 200ms;
+}
+
 
 .orc-column > h4:first-child { color: var(--orc-gray-600); }
 .orc-column > h4:first-child i { color: var(--orc-green); }
@@ -62,12 +97,25 @@ h2 i, h3 i { color: var(--orc-green); margin-right: .5rem; }
   box-shadow: var(--orc-shadow-sm);
   transition: var(--orc-transition);
 }
+‚
+.orc-card-tool{
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+  height: 100%;
+  position:relative;
+  overflow: visible;
+}
 
 .orc-card { padding: 1rem; }
 .orc-card ul { margin: 0; padding-left: 1.25rem; font-size: .875rem; }
 .orc-card li { margin-bottom: .125rem; }
-.orc-card-tool { position: relative; }
 
+
+.orc-card-tool-icons {
+  display: flex;
+  flex-direction: row;
+  gap:0.5rem;
+}
 .orc-card-tool-icon {
   display: flex;
   align-items: center;
@@ -87,9 +135,11 @@ h2 i, h3 i { color: var(--orc-green); margin-right: .5rem; }
 .orc-card-tool p { font-size: 1rem; color: var(--orc-gray-400); margin-bottom: 0; line-height: 1.5; }
 
 .orc-card-tool-badge {
-  position: absolute;
-  top: .75rem;
-  right: .75rem;
+  display: flex;
+  width:fit-content;
+  margin-left: auto;
+  margin-bottom:-20px;
+  z-index:2;
   background: var(--orc-gray-100);
   color: var(--orc-gray-600);
   font-size: .75rem;
@@ -97,9 +147,19 @@ h2 i, h3 i { color: var(--orc-green); margin-right: .5rem; }
   border-radius: var(--orc-radius-full);
   font-weight: 600;
   text-decoration: none;
+  
 }
 
-.orc-card-tool-badge:hover { opacity: .9; }
+.orc-grid-tools a,
+.orc-column a {
+  text-decoration: none;
+  color: inherit;
+  display: block;              
+}
+.orc-card-tool:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
 .orc-card-tool-badge.recommended { background: var(--orc-green-light); color: var(--orc-green); }
 
 /* ========================================
@@ -138,7 +198,7 @@ h2 i, h3 i { color: var(--orc-green); margin-right: .5rem; }
   user-select: none;
 }
 
-.orc-details-panel summary:hover { color: var(--orc-green-dark); }
+.orc-details-panel summary:hover { color: var(--orc-green); }
 .orc-details-panel summary::-webkit-details-marker { display: none; }
 
 .orc-details-panel summary i {
@@ -148,7 +208,7 @@ h2 i, h3 i { color: var(--orc-green); margin-right: .5rem; }
   width: 3rem;
   height: 3rem;
   background: var(--orc-green-light);
-  color: var(--orc-green-dark);
+  color: var(--orc-green);
   font-size: 1.5rem;
   border-radius: var(--orc-radius);
   flex-shrink: 0;
@@ -174,10 +234,35 @@ h2 i, h3 i { color: var(--orc-green); margin-right: .5rem; }
   background: var(--orc-green-light) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23006426' viewBox='0 0 16 16'%3E%3Cpath d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E") no-repeat center / 1rem;
 }
 
-.orc-details-panel > :not(summary) { padding: .75rem 1.5rem 1rem; }
+.orc-details-panel > :not(summary) { padding: .75rem 1.5rem 0.5rem; }
+.orc-details-panel summary h4{ margin-top: 0; color:inherit; font: inherit;}
 .orc-details-panel p { margin: 0; }
-.orc-details-panel > .panel-tabset { padding-top: 1rem; }
+.orc-details-panel > .panel-tabset { padding-top: 0; }
 
+
+
+/* Gradient highlight box - checklist section*/
+.orc-gradient-box {
+  background: linear-gradient(135deg, rgba(0, 136, 58, 0.08) 0%, rgba(0, 100, 38, 0.08) 100%);
+  padding: 2rem;
+  border-radius: var(--orc-radius-md);
+  border-left: 5px solid var(--orc-green);
+  margin: 3.5rem 0;
+}
+
+.orc-gradient-box h2 {
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.4;
+}
+
+.orc-gradient-box-desc{
+  background: linear-gradient(135deg, rgb(244 247 244) 0%, rgb(129 201 156 / 8%) 100%);
+  padding: 1rem;
+  border-radius: var(--orc-radius-md);
+  border-left: 5px solid #aed0bbad;
+  margin: 2rem 0;
+}
 /* ========================================
    5. CALLOUTS (Quarto)
    ======================================== */
@@ -327,7 +412,7 @@ svg :is(text, tspan) { font-family: inherit !important; font-weight: bold; point
   gap: 2.5rem;
   padding: 2rem 2.5rem;
   margin-bottom: 3rem;
-  background: var(--orc-green);
+  background: var(--orc-green-light);
   border-radius: 16px;
   color: white;
   box-shadow: var(--orc-shadow-md);
@@ -337,32 +422,34 @@ svg :is(text, tspan) { font-family: inherit !important; font-weight: bold; point
 .orc-phase-hero-compact .orc-hero-cycle svg { width: 100%; height: 100%; }
 .orc-phase-hero-compact .orc-hero-body { flex: 1; display: flex; flex-direction: column; gap: .75rem; }
 .orc-phase-hero-compact h2 { margin: 0; font-size: 2.5rem; font-weight: 700; color: white !important; border-bottom: none; line-height: 1.2; }
-.orc-hero-tagline { margin: 0; font-size: 1.5rem; font-weight: 500; }
+.orc-hero-tagline { margin: 0; font-size: 1.4rem; font-weight: 600; color:var(--orc-gray-600); }
 .orc-phase-hero-compact .orc-hero-pills { display: flex; flex-wrap: wrap; gap: .75rem 2rem; }
 .orc-phase-hero-compact .orc-hero-pills span {
   display: inline-flex;
   align-items: center;
   gap: .75rem;
-  padding: .6rem 1.25rem;
-  background: rgba(255,255,255,.15);
+  padding: .3rem 1rem;
+  background: var(--orc-green);
   border-radius: var(--orc-radius-full);
-  font-size: 1.125rem;
+  font-size: 1rem;
   font-weight: 500;
+  margin-top: 0.5rem;
 }
-.orc-phase-hero-compact .orc-hero-pills span i { color: #7ddf7d; font-size: 1.25rem; }
+
+.orc-phase-hero-compact .orc-hero-pills span i { color: white; font-size: 1.25rem; }
 .orc-phase-hero-compact .orc-hero-checkpoint {
   display: inline-flex;
   align-items: center;
   gap: .5rem;
-  padding: .4rem 1rem;
-  background: rgba(255,255,255,.25);
+  padding: .4rem 0.9rem;
+  background: var(--orc-green);
   border-radius: var(--orc-radius-full);
-  font-size: .75rem;
+  font-size: .875rem;
   font-weight: 600;
   margin-top: .25rem;
   width: fit-content;
 }
-.orc-phase-hero-compact .orc-hero-checkpoint i { font-size: .75rem; }
+.orc-phase-hero-compact .orc-hero-checkpoint i { font-size: .90em; }
 
 /* ========================================
    11. RESPONSIVE
