@@ -13,15 +13,15 @@ include-in-header:
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 ---
 
-### What is the research cycle handbook?
+#### What is this handbook?
 
 This open research cycle handbook provides **detailed practical guidance for making research open, responsible, and reproducible by design**. It covers the full research life cycle, from formulating questions and preregistering studies to publishing articles, data, and code. It links to our self-paced tutorials, LMU support services, and essential tools to support open research in everyday practice.
 
-### Who is this handbook for?
+#### Who is this handbook for?
 
 This manual can be used by **individual researchers in any scientific field** but is primarily designed to be adapted ad adopted by **research groups** as a whole. Each section outlines concrete actions for ongoing projects and concludes with a team checkpoint. 
 
-### How to build your own lab handbook?
+#### How to build your own lab handbook?
 
 To build a tailored research practice handbook for your research group:
 
@@ -32,7 +32,7 @@ To build a tailored research practice handbook for your research group:
 - use our Quarto lab-handbook template (in development - ETA end 2026). 
 - request a consultation with the LMU Open Science Center (1h one-on-one, or 6-month pedagogical intervention for research group; see below)
 
-### Navigate our open research cycle handbook
+#### Navigate our open research cycle handbook
 
 <!-- Centered Cycle Diagram -->
 <div class="cycle-container">
@@ -47,7 +47,7 @@ cat(readLines("images/os-cycle.svg", warn = FALSE), sep = "\n")
 </div>
 
 
-### About this project<!-- use a proper accordion here? make this fold and have the same title format as the others.-->
+#### About this project<!-- use a proper accordion here? make this fold and have the same title format as the others.-->
 
 This work is part of the "**Switch-to-Open Program**" (SwOP) funded by the [VolksWagen Foundation](https://www.volkswagenstiftung.de/en). 
 
@@ -62,13 +62,13 @@ This program is designed to:
 - equip early-career researchers with the competencies required for **evolving recruitment criteria** by enabling the demonstrable adoption of open research practices
 - enable groups to provide concrete evidence of Open Science implementation when applying for **grants with Open Science requirements** (e.g. established practices for sharing postprints, data, materials, and code, rather than future intentions alone)
 
-Interested in entering the Switch-to-Open Program (SwOP) with your research group?  
+**Interested in entering the Switch-to-Open Program (SwOP) with your research group?**  
 <a class="btn btn-outline-primary btn-pop"
    href="mailto:Malika.ihle@lmu.de?subject=Interest%20in%20the%20Switch-to-Open%20Program">
   Contact us
 </a>
 
-Our handbook and other material are licensed [CC-BY Attribution-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/deed.en): please reuse, adapt, and share openly by citing "Ihle Malika, Gupta Reema, Schönbrodt Felix 2026 Open Research Cycle Handbook, URL, data and time of access" <!--FIX ME-->
+Our handbook and other material are licensed [CC-BY Attribution-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/deed.en): please reuse, adapt, and share openly by citing "_Ihle Malika, Gupta Reema, Schönbrodt Felix 2026 Open Research Cycle Handbook, URL, data and time of access_" <!--FIX ME-->
 
 
 
