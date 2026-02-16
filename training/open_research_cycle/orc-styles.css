@@ -69,19 +69,6 @@ h2 i, h3 i { color: var(--orc-green); margin-right: .5rem; }
   gap: 1rem;
   align-items: stretch;
 }
-.card-link::before{
-  content: ''; 
-  position: absolute; 
-  inset: 0;
-  z-index: 1;
-}
-.card-link::before {
-  cursor: pointer; 
-  border: 2px solid transparent; 
-  transition: border-color 200ms;
-}
-
-
 .orc-column > h4:first-child { color: var(--orc-gray-600); }
 .orc-column > h4:first-child i { color: var(--orc-green); }
 
@@ -156,9 +143,11 @@ h2 i, h3 i { color: var(--orc-green); margin-right: .5rem; }
   color: inherit;
   display: block;              
 }
+.orc-column a {text-decoration: none; color: inherit;}
 .orc-card-tool:hover {
   transform: translateY(-4px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
 }
 .orc-card-tool-badge.recommended { background: var(--orc-green-light); color: var(--orc-green); }
 
