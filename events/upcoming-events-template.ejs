@@ -197,7 +197,7 @@ formIcon = '<i class="bi bi-laptop"></i>';
   });
 %>
 <% if (hasValidData) { %>
-<div class="event-person-group" style="display: inline-block; white-space: nowrap;">
+<div class="event-person-group" style="display: block;">
 <span class="person-label"><%= block.label %>:</span>
 <span class="person-list" style="white-space: normal;">
 <%= block.data
@@ -207,9 +207,6 @@ if (typeof person === 'string') return person.trim();
 var name = (person.name || '').toString().trim();
 var url  = (person.url || '').toString().trim();
 if (!name) return '';
-if (url) {
-return '<a href="' + url + '" target="_blank" rel="noopener noreferrer">' + name + '</a>';
-}
 return name;
 })
 .filter(function(x){ return x && x.length > 0; })
