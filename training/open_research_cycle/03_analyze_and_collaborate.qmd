@@ -12,15 +12,17 @@ title-block-style: none
 <div class="orc-hero-cycle phase-3">
 {{< include ../images/os-cycle.svg >}}
 </div>
-<!-- TODO: Update tagline and pills -->
+
 <div class="orc-hero-body">
-<div class="orc-hero-tagline">Make your analysis reproducible and transparent</div>
+<div class="orc-hero-tagline">Create reproducible analyses and collaborate effectively</div>
 <div class="orc-hero-pills">
+<span><i class="bi bi-check2-circle"></i> Readable Code</span>
+<span><i class="bi bi-check2-circle"></i> Version Control</span>
+<span><i class="bi bi-check2-circle"></i> Reproducible Computational Environment</span>
 <span><i class="bi bi-check2-circle"></i> Reproducible Manuscript</span>
-<span><i class="bi bi-check2-circle"></i> Readable code</span>
-<span><i class="bi bi-check2-circle"></i> Documentation</span>
+
 </div>
-<div class="orc-hero-checkpoint"><i class="bi bi-people-fill"></i> Checkpoint: Repo & code peer-review</div>
+<div class="orc-hero-checkpoint"><i class="bi bi-people-fill"></i> Checkpoint: Repository & Code Peer-Review + Result Presentation</div>
 </div>
 </div>
 
@@ -30,37 +32,32 @@ title-block-style: none
 
 ::: {.panel-tabset}
 
+Project data processing and analysis should be reproducible, independent of software, programming language, or operating system. This is best achieved by favoring automated, **script-based workflows** over manual point-and-click procedures, supported by **adequate documentation** and shared code that allows others to regenerate results. Because analysis scripts are inherently iterative and evolve through corrections and refinements, automation is **essential for both reproducibility and efficiency**. This section outlines a recommended workflow for R users.
+
 ### programming
 
 3 lines of text
 
-R tuto card
-
-readable code lecture card
+<!-- add R tuto card and readable code lecture card -->
 
 ### version control
 
 3 lines of text
 
-Git tuto card
+<!-- add Git tuto card, github tuto card, gitlab lrz LMU supported tool -->
 
-github tuto card
-
-gitlab lrz LMU supported tool
-
-### computational environement management
+### computational environment management
 
 text
 
-renv tuto card
-
-docker tool card and/or some others or none but mention?
+<!--renv osc tuto card, add binder, conda and docker tool card https://ree-gupta.github.io/lmu-osc.github.io/training/open_research_cycle/03_analyze_and_collaborate_website.html#environment-management -->
 
 
 ### Documentation
 
-redable lecture card again
-data dictionary card
+<!-- readable lecture card again
+data dictionary card -->
+
 readme from code publishing? a bit too intense for this stage tho but something about internal, work in progress read me
 
 
@@ -85,4 +82,61 @@ reproducible websites with quarto
 </details>
 
 
-checklist
+## <i class="bi bi-card-checklist"></i> Analysis & Collaboration Checklist
+
+::: {.orc-gradient-box}
+
+**Before Starting Analysis:**
+
+<div class="orc-grid-2col">
+
+<div>
+
+- [ ] Analysis plan documented
+- [ ] Project uses version control (Git)
+- [ ] Directory structure organized
+- [ ] Dependencies managed
+</div>
+
+<div>
+
+- [ ] README file initiated
+- [ ] Data dictionary available
+- [ ] Code style guide chosen
+- [ ] Collaboration workflow established
+</div>
+
+</div>
+
+**During Analysis:**
+
+<div class="orc-grid-2col">
+
+<div>
+
+- [ ] Scripts well-commented
+- [ ] Commit changes regularly
+- [ ] Random seeds set
+- [ ] Intermediate results saved
+</div>
+
+<div>
+
+- [ ] Analysis decisions documented
+- [ ] Code reviewed by collaborators
+- [ ] Results cross-checked
+- [ ] Figures reproducible
+</div>
+
+</div>
+
+**Before Sharing:**
+
+- [ ] Code runs without errors on fresh environment
+- [ ] README provides complete instructions
+- [ ] All functions documented
+- [ ] Session info captured
+- [ ] Sensitive information removed
+- [ ] Code peer-reviewed
+
+:::
