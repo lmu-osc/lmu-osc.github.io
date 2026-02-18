@@ -37,7 +37,7 @@ State-of-the-art practices for reproducible data acquisition include<!-- make an
 - **build in automatization through programming**
 
 <!-- info box -->
-Metadata are data about data; they provide context to your data. Metadata such as equipment settings, environmental conditions, software versions, and calibration records should be recorded contemporaneously, not reconstructed afterward. Electronic lab notebooks, instrument logs, and automated logging all help to document your metadata.
+**Metadata** are data about data; they provide context to your data. Metadata such as equipment settings, environmental conditions, software versions, and calibration records should be recorded contemporaneously, not reconstructed afterward. Electronic lab notebooks, instrument logs, and automated logging all help to document your metadata.
 
 
 
@@ -55,7 +55,15 @@ Your protocol should specify materials with identifying details (lot numbers, ve
 - **Publish your protocols.** A detailed, tested protocol is a contribution to your field. Publishing establishes priority, enables citation, and makes your methods reusable. Platforms like protocols.io provide version control and DOI assignment.
 
 ::: {.orc-grid-tools} 
-<!-- add a card to LMU supported ENL (LMU hosted version of this https://www.elabftw.net/ I believe -->
+<!-- add a card to LMU supported ENL:
+eLabFTW https://elab.ub.lmu.de/login.php with logo: https://www.elabftw.net/img/elabftw-logo-only.svg 
+Open-Source Electronic Lab Notebook hosted by LMU Munich
+Chemotion https://chemlab.cup.uni-muenchen.de/home logo: https://avatars.githubusercontent.com/u/83013380?v=4
+Open-Source Electronic Lab Notebook hosted by the LMU Faculty for Chemistry and Pharmacy
+ -->
+
+
+
 ::: {.orc-card-tool}
 <div class="orc-card-tool-icon"><i class="bi bi-file-earmark-code"></i></div>
 
@@ -85,7 +93,7 @@ When data comes from instruments, sensors, or APIs, scripting the acquisition cr
 
 - **Version control your code and data.** This makes your methods reproducible and shareable. See [Version Control tab in Data Management](<!--internal link-->) for details.
 
-<!-- 2 cards in learn more: R and Git tutorials  -->
+<!-- 2 cards in learn more: OSC R and Git tutorials  -->
 ::: {.orc-grid-tools}
 ::: {.orc-card-tool}
 <div class="orc-card-tool-icon"><img src="../../assets/img/lmu_osc_logo.jpg" alt="LMU OSC"></div>
@@ -146,15 +154,13 @@ Your folder structure and file naming conventions determine whether you and othe
 
 - **Separate raw from processed data.** Raw data should not be modified: once collected, these files should never be touched. All cleaning, data processing, transformations, and analyses happen on copies or through scripts in a separate folder. This preserves your ability to verify results or reprocess from the original source.
 
-- **Develop a file naming convention.** Good file names identify contents at a glance and sort correctly. Balance specificity with readability: too many elements make names unwieldy, too few make them ambiguous. Order elements from general to specific.
-
-<!-- make a nested list -->
+- **Develop a file naming convention.** Good file names identify contents at a glance and sort correctly. Balance specificity with readability: too many elements make names unwieldy, too few make them ambiguous. Order elements from general to specific.<!-- make a nested list -->
     - Use underscores or hyphens to separate elements, never spaces or special characters (`? ! & * % # @`)
     - Use ISO 8601 dates (`YYYYMMDD`) so files sort chronologically
     - Include version numbers with leading zeros (`v01`, `v02`) so `v10` sorts after `v09`
     - Use meaningful abbreviations and document what they mean
 
-A pattern like `YYYYMMDD_project_condition_type_v01.ext` places files in chronological order while preserving context. For example, `20240315_sleep-study_control_survey_v02.csv` immediately tells you when it was created, which project it belongs to, the experimental condition, data type, and revision. Document your convention in a README.text file stored next to your data files so collaborators can parse filenames without asking.
+A pattern like `YYYYMMDD_project_condition_type_v01.ext` places files in chronological order while preserving context. For example, `20240315_sleep-study_control_survey_v02.csv` immediately tells you when it was created, which project it belongs to, the experimental condition, data type, and revision. Document your convention in a README file stored next to your data files so collaborators can parse filenames without asking.
 
 <br>
 
@@ -162,7 +168,7 @@ A pattern like `YYYYMMDD_project_condition_type_v01.ext` places files in chronol
 
 ::: {.orc-grid-tools}
 ::: {.orc-card-tool}
-<div class="orc-card-tool-icon"><img src="https://cdn.simpleicons.org/github" alt="GitHub"></div> <!-- use OSC logo and GitHub Logo, tag OSC Tool in Tools & resources section-->
+<div class="orc-card-tool-icon"><img src="https://cdn.simpleicons.org/github" alt="GitHub"></div> <!-- use OSC logo and GitHub Logo, tag as 'OSC Tool' in Tools & resources section-->
 
 #### [Research Project Template](https://github.com/lmu-osc/research-project-template)
 
@@ -226,7 +232,7 @@ Without documentation, a dataset is just a collection of files. Six months from 
 
 <br>
 
-- **Create a README.txt file early and update it as you go.** Your README is the entry point to your project. Start it when you begin, not when preparing to publish. A good README answers the essential questions: **who** created the data, **what** it contains, **when** and **where** it was collected, **why** it was generated, **how** it was produced, and whether it **can be reused**. These answers let someone unfamiliar with your project understand and work with your data.
+- **Create a README.md or README.txt file early and update it as you go.** Your README is the entry point to your project. Start it when you begin, not when preparing to publish. A good README answers the essential questions: **who** created the data, **what** it contains, **when** and **where** it was collected, **why** it was generated, **how** it was produced, and whether it **can be reused**. These answers let someone unfamiliar with your project understand and work with your data.
 - **Create a data dictionary defining every variable.** A data dictionary (or codebook) makes your dataset self-explanatory. For each variable, document what it measures, its data type, valid values, units of measurement, and how missing data is coded. Use appropriate missing codes to distinguish why data is absent (declined to answer, not applicable, technical failure) since this distinction matters for analysis.
 
 ::: {.orc-grid-tools}
@@ -299,15 +305,27 @@ Version control tracks changes to files over time. You can see what changed, whe
 
 <br>
 
-- **Git usually suffices for data files.** Text-based formats (CSV, JSON, plain text) and smaller binary files work well in standard Git repositories. You get a complete history of changes and can share easily via GitHub or GitLab.
+- **Git usually suffices for data files.** Text-based formats (CSV, JSON, plain text) and smaller binary files work well in standard Git repositories. You get a complete history of changes and can share easily via GitHub or GitLab. 
 
 - **Use specialized tools for large or frequently changing binary files.** Standard Git stores each version in full, so repositories become unwieldy with large datasets. Git LFS (Large File Storage) stores large files separately while keeping them tracked. Git-annex manages files across multiple storage locations. [DataLad](https://www.datalad.org/) builds on git-annex and works with standard Git workflows.
+
+:::{.callout-important}
+**Difference between Git, GitHub and GitLab**  
+
+- **Git** is a version control system that tracks changes in text files (e.g. CSV, plain text, R, Python). The Git software and your git repositories should be, respectively, installed and located in your local environment (i.e. on your computer, not on a drive, see [Git tutorial](https://lmu-osc.github.io/Introduction-RStudio-Git-GitHub/)).   
+- **GitHub** is the most popular, but proprietary and US-based cloud-based platform for software development with Git, providing collaboration features like pull requests and issues. **You should not have any sensitive data on GitHub even in a private repository.**
+- **LRZ GitLab** is a cloud-based hosting platform that works exactly the same as GitHub but is free and open source and is installed on the LRZ servers for LMU Munich and can therefore be considered secure when the repository is private. 
+
+While your LRZ GitLab account is associated with your LMU Munich affiliation, your GitHub account can be associated with your private email, be included in your CV, and be used for public sharing of your data and code (see [3. Analyze & Collaborate](<!-- internal link -->)).  
+<br>
+In a version controlled workflow, you back up your local git repositories on either GitHub or LRZ GitLab through a secure SSH connection (see [GitHub tutorial](https://lmu-osc.github.io/Collaborative-RStudio-GitHub/)) and share access to your repositories with your collaborators through the cloud-based platform GitHub or LRZ GitLab.
+:::
 
 ::: {.orc-grid-tools}
 ::: {.orc-card-tool}
 <div class="orc-card-tool-icon"><img src="../../assets/img/lmu_osc_logo.jpg" alt="LMU OSC"></div>
 
-#### [Introduction to Git](https://lmu-osc.github.io/Introduction-RStudio-Git-GitHub/) <!-- add OSC tutorial tag -->
+#### [Introduction to Git](https://lmu-osc.github.io/Introduction-RStudio-Git-GitHub/) <!-- add OSC tutorial tag and git logo-->
 
 Learn Git basics integrated with RStudio (2h)
 
@@ -332,7 +350,7 @@ Version control for large datasets
 
 
 <details class="orc-details-panel">
-<summary><i class="bi bi-shield-lock"></i> Ethics & Privacy</summary> <!-- change logo to this one https://ree-gupta.github.io/lmu-osc.github.io/training/open_research_cycle/02_collect_and_manage_website.html#quality-security -->
+<summary><i class="bi bi-shield-lock"></i> Ethics & Privacy</summary> 
 
 Research involving human participants requires ethics approval and data protection compliance. These are not bureaucratic hurdles but safeguards for the people contributing to your research. Address them before collecting any data.
 

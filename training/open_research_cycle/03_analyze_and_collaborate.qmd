@@ -32,25 +32,50 @@ title-block-style: none
 
 ::: {.panel-tabset}
 
-Project data processing and analysis should be reproducible, independent of software, programming language, or operating system. This is best achieved by favoring automated, **script-based workflows** over manual point-and-click procedures, supported by **adequate documentation** and shared code that allows others to regenerate results. Because analysis scripts are inherently iterative and evolve through corrections and refinements, automation is **essential for both reproducibility and efficiency**. This section outlines a recommended workflow for R users.
+Data processing and analysis should be reproducible, independent of software, programming language, or operating system. This is best achieved by favoring automated, **script-based workflows** over manual point-and-click procedures, supported by **adequate documentation** and shared code that allows others to regenerate results. Because analysis scripts are inherently iterative and evolve through corrections and refinements, automation is **essential for both reproducibility and efficiency**. This section outlines a recommended workflow for R users.
 
 ### programming
 
-3 lines of text
+- **Create self-contained project folder**. Include data, code, documentation, and outputs in a single structured environment, ensuring the project remains understandable, reproducible, and portable across systems and collaborators. If you use the free and open source software RStudio to manage your R project, your project directory (or folder) should contain a .Rproj file (see [R tutorial](https://lmu-osc.github.io/introduction-to-R/)). Use relative paths (i.e. “./subfolder”, where . represents the root of your .Rproj directory) or the library `here`, so the project stays portable to another environment
+- **Use a standard folder structure**. Your code repository should include a standard folder structure that make sense for your type of research, ideally shared amongst your team members. You can for instance use the [OSC research project template](https://github.com/lmu-osc/research-project-template). 
+- **Stop clicking, start coding**. Automatize all possible steps, including data acquisition (see [Data Collection](<!-- internal link-->)), data processing and transformation, data analyses, data visualization, and results reporting (see [Reproducible Reporting](<!-- internal link-->))
+- **Structure, comment, and standardize your scripts.** R scripts themselves should follow current standards to increase their readability(see [Readable Code Lecture](<!-- should link to the internal page pat should create in the itnernal catalogue to include both slides and recording https://github.com/lmu-osc/lmu-osc.github.io/issues/375 -->)). Use meaningful names for variables, functions, and scripts. Add comments to your code explaining _why_ you made a decision, and define your own function rather than copy and pasting pieces of code which makes it hard to maintain error-free. 
 
-<!-- add R tuto card and readable code lecture card -->
+
+<!-- add R tuto card and readable code lecture card as learn more + OSC research project template as OSC Tool-->
 
 ### version control
 
-3 lines of text
+Version control tracks changes to files over time. You can see what changed, when, and why. You can revert to previous versions. Collaborators can work without overwriting each other.
+
+:::{.callout-important} 
+<!-- copied from version control in data management - transfer edits manually between these 2 copies -->
+**Difference between Git, GitHub and GitLab**  
+
+- **Git** is a version control system that tracks changes in text files (e.g. CSV, plain text, R, Python). The Git software and your git repositories should be, respectively, installed and located in your local environment (i.e. on your computer, not on a drive, see [Git tutorial](https://lmu-osc.github.io/Introduction-RStudio-Git-GitHub/)).   
+- **GitHub** is the most popular, but proprietary and US-based cloud-based platform for software development with Git, providing collaboration features like pull requests and issues. **You should not have any sensitive information on GitHub even in a private repository.**
+- **LRZ GitLab** is a cloud-based hosting platform that works exactly the same as GitHub but is free and open source and is installed on the LRZ servers for LMU Munich and can therefore be considered secure when the repository is private. 
+
+While your LRZ GitLab account is associated with your LMU Munich affiliation, your GitHub account can be associated with your private email, be included in your CV, and be used for public sharing of your data and code (see [3. Analyze & Collaborate](<!-- internal link -->)).  
+<br>
+In a version controlled workflow, you back up your local git repositories on either GitHub or LRZ GitLab through a secure SSH connection (see [GitHub tutorial](https://lmu-osc.github.io/Collaborative-RStudio-GitHub/)) and share access to your repositories with your collaborators through the cloud-based platform GitHub or LRZ GitLab.
+:::
 
 <!-- add Git tuto card, github tuto card, gitlab lrz LMU supported tool -->
 
 ### computational environment management
 
-text
+Manage your computational environment by explicitly recording the software, package versions, and dependencies required for your analyses, ensuring results can be reproduced across systems and over time. Tools such as packages managers (e.g. [Renv](https://rstudio.github.io/renv/) for R pacakges, [Conda](https://anaconda.org/channels/anaconda/packages/conda/overview) for Python packages) or broader containers (e.g. [Docker](https://www.docker.com/) or [Binder](https://mybinder.org/)) help stabilize workflows and prevent inconsistencies caused by packages or software updates.
 
-<!--renv osc tuto card, add binder, conda and docker tool card https://ree-gupta.github.io/lmu-osc.github.io/training/open_research_cycle/03_analyze_and_collaborate_website.html#environment-management -->
+For a R project repository:
+
+- **Activate Renv to keep track of all packages versions** (see [renv tutorial]()). This way, you or someone else can  reproduce your results on another computer or at a later time using the same R packages versions.
+
+Before [4. Preserve and share](<!-- internal link -->):
+
+- **Record your dependencies** in your README file for possible reconstruction with [repo2docker](https://repo2docker.readthedocs.io/en/latest/) or binder see [Code Publishing tutorial](https://lmu-osc.github.io/code-publishing/make_readme.html#nte-dependencies)
+
+<!--renv osc tuto card, add code publishing tuto card, add binder, conda and docker tool card https://ree-gupta.github.io/lmu-osc.github.io/training/open_research_cycle/03_analyze_and_collaborate_website.html#environment-management -->
 
 
 ### Documentation
