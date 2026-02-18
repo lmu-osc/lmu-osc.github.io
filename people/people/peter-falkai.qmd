@@ -6,7 +6,9 @@ surname: Falkai
 first_name: Peter
 position: Director of Clinic
 faculty: University Hospital
-memberships: ['lmu-individual']
+memberships:
+  - type: lmu-individual
+    status: active
 email: peter.falkai@med.uni-muenchen.de
 photo: 'images/falkai_peter.jpg'
 links:

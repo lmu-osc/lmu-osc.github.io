@@ -6,7 +6,9 @@ surname: Ziegler
 first_name: Johannes
 position: Researcher
 faculty: Psychology & Education
-memberships: ['lmu-individual']
+memberships:
+  - type: lmu-individual
+    status: active
 email: jo.prager@psy.lmu.de
 links:
   - label: 'LMU Profile'

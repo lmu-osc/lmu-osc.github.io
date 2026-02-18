@@ -6,7 +6,9 @@ surname: Fernández-i-Marín
 first_name: Xavier
 position: Researcher
 faculty: Social Sciences
-memberships: ['lmu-individual']
+memberships:
+  - type: lmu-individual
+    status: active
 email: xavier.fernandez-i-marin@gsi.uni-muenchen.de
 photo: 'images/fernandez-i-marin_xavier.jpg'
 links:

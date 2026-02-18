@@ -6,7 +6,9 @@ surname: Belka
 first_name: Claus
 position: Head of Department
 faculty: University Hospital
-memberships: ['lmu-individual']
+memberships:
+  - type: lmu-individual
+    status: active
 email: claus.belka@med.uni-muenchen.de
 photo: 'images/belka_claus.jpg'
 links:

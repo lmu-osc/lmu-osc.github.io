@@ -6,7 +6,9 @@ surname: Platt
 first_name: Belinda
 position: Researcher
 faculty: University Hospital
-memberships: ['lmu-individual']
+memberships:
+  - type: lmu-individual
+    status: active
 email: Belinda.Platt@med.uni-muenchen.de
 photo: 'images/platt_belinda.jpg'
 links:

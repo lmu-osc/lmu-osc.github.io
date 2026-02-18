@@ -6,7 +6,9 @@ surname: Schramm
 first_name: Leonhard
 position: MSc Student
 faculty: Psychology & Education
-memberships: ['fellow']
+memberships:
+  - type: fellow
+    status: active
 email: leonhard.f.f.schramm@gmail.com
 photo: 'images/schramm_leonhard.jpg'
 social_media:

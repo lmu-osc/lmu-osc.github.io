@@ -6,7 +6,9 @@ surname: Krähmer
 first_name: Daniel
 position: PhD Candidate
 faculty: Social Sciences
-memberships: ['fellow']
+memberships:
+  - type: fellow
+    status: active
 email: daniel.kraehmer@soziologie.uni-muenchen.de
 photo: 'images/kraehmer_daniel.jpeg'
 links:

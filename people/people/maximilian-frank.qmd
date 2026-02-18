@@ -6,7 +6,11 @@ surname: Frank
 first_name: Maximilian
 position: PhD Candidate
 faculty: Psychology & Education 
-memberships: ['fellow', 'special advisor']
+memberships:
+  - type: fellow
+    status: active
+  - type: 'special advisor'
+    status: active
 email: maximilian.frank@psy.lmu.de
 photo: 'images/frank_maximilian.jpg'
 links:

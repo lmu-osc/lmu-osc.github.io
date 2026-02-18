@@ -6,7 +6,9 @@ surname: Ehrenwirth
 first_name: Benedikt
 position: BSc Student
 faculty: Psychology & Education
-memberships: ['fellow']
+memberships:
+  - type: fellow
+    status: active
 email: B.Ehrenwirth@campus.lmu.de
 photo: 'images/ehrenwirth_benedikt.jpeg'
 mission_statement:

@@ -6,7 +6,9 @@ surname: Bopp
 first_name: Judith
 position: Researcher
 faculty: 'Geosciences'
-memberships: ['lmu-individual']
+memberships:
+  - type: lmu-individual
+    status: active
 email: judith.bopp@rcc.lmu.de
 photo: 'images/bopp_judith.jpg'
 links:

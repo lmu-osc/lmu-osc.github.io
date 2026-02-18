@@ -6,7 +6,9 @@ surname: Rusche
 first_name: Saskia
 position: Researcher
 faculty: Medicine
-memberships: ['lmu-individual']
+memberships:
+  - type: lmu-individual
+    status: active
 email: Saskia.Rusche@med.uni-muenchen.de
 photo: 'images/rusche_saskia.jpg'
 links:

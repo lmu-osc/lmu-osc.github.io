@@ -6,7 +6,9 @@ surname: Brüderl
 first_name: Josef
 position: Chair
 faculty: Social Sciences
-memberships: ['lmu-individual']
+memberships:
+  - type: lmu-individual
+    status: active
 email: bruederl@lmu.de
 photo: 'images/bruederl_josef.jpg'
 links:

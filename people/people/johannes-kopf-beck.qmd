@@ -6,7 +6,9 @@ surname: Kopf-Beck
 first_name: Johannes
 position: Research Group Leader
 faculty: Psychology & Education
-memberships: ['lmu-individual']
+memberships:
+  - type: lmu-individual
+    status: active
 email: kopf-beck@lmu.de
 photo: 'images/kopf-beck_johannes.jpg'
 links:

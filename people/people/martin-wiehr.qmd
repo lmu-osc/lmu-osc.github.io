@@ -6,7 +6,9 @@ surname: Wiehr
 first_name: Martin
 position: BSc Student
 faculty: Psychology & Education
-memberships: ['fellow']
+memberships:
+  - type: fellow
+    status: active
 email: m.wiehr@campus.lmu.de
 photo: 'images/wiehr_martin.jpg'
 mission_statement:

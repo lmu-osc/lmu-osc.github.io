@@ -6,7 +6,9 @@ surname: Krefeld
 first_name: Thomas
 position: Professor Emeritus
 faculty: Language & Literatures
-memberships: ['lmu-individual']
+memberships:
+  - type: lmu-individual
+    status: active
 email: thomas.krefeld@romanistik.uni-muenchen.de
 photo: 'images/krefeld_thomas.jpg'
 links:

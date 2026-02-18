@@ -6,7 +6,9 @@ surname: Taylor
 first_name: Paul C.J.
 position: Research Group Leader
 faculty: Psychology & Education
-memberships: ['lmu-individual']
+memberships:
+  - type: lmu-individual
+    status: active
 email: paul.taylor@med.uni-muenchen.de
 photo: 'images/taylor_paul_cj.jpg'
 links:

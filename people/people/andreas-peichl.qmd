@@ -6,7 +6,9 @@ surname: Peichl
 first_name: Andreas
 position: Director of Institute
 faculty: Economics
-memberships: ['lmu-individual']
+memberships:
+  - type: lmu-individual
+    status: active
 email: peichl@ifo.de
 photo: 'images/peichl_andreas.jpg'
 links:

@@ -6,7 +6,9 @@ surname: Frenzel
 first_name: Anne
 position: Student Dean
 faculty: Psychology & Education
-memberships: ['lmu-individual']
+memberships:
+  - type: lmu-individual
+    status: active
 email: frenzel@psy.lmu.de
 photo: 'images/frenzel_anne.jpg'
 links:

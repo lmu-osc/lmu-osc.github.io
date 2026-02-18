@@ -6,7 +6,9 @@ surname: Wiegelmann
 first_name: Viktoria
 position: BSc Student
 faculty: Psychology & Education
-memberships: ['fellow']
+memberships:
+  - type: fellow
+    status: active
 email: v.wiegelmann@campus.lmu.de
 photo: 'images/wiegelmann_viktoria.jpeg'
 mission_statement:

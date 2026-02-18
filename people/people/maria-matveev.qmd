@@ -6,7 +6,9 @@ surname: Matveev
 first_name: Maria
 position: PhD Candidate
 faculty: Math, Informatics & Stats
-memberships: ['fellow']
+memberships:
+  - type: fellow
+    status: active
 email: matveev@math.lmu.de
 photo: 'images/matveev_maria.jpg'
 links:

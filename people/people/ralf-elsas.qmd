@@ -6,7 +6,9 @@ surname: Elsas
 first_name: Ralf
 position: Director of Institute
 faculty: Business Administration
-memberships: ['lmu-individual']
+memberships:
+  - type: lmu-individual
+    status: active
 email: elsas@bwl.lmu.de
 photo: 'images/elsas_ralf.jpg'
 links:

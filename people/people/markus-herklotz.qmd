@@ -6,7 +6,9 @@ surname: Herklotz
 first_name: Markus
 position: Researcher
 faculty: Math, Informatics & Stats
-memberships: ['fellow']
+memberships:
+  - type: fellow
+    status: active
 email: m.herklotz@lmu.de
 photo: 'images/herklotz_markus.jpeg'
 links: 

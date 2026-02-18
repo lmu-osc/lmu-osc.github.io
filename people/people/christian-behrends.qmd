@@ -6,7 +6,9 @@ surname: Behrends
 first_name: Christian
 position: Researcher
 faculty: Medicine
-memberships: ['lmu-individual']
+memberships:
+  - type: lmu-individual
+    status: active
 email: christian.Behrends@mail03.med.uni-muenchen.de
 photo: 'images/behrends_christian.jpg'
 links:

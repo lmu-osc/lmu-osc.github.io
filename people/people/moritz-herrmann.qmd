@@ -6,7 +6,9 @@ surname: Herrmann
 first_name: Moritz
 position: Coordinator
 faculty: Medicine
-memberships: ['lmu-individual']
+memberships:
+  - type: lmu-individual
+    status: active
 email: moritz.herrmann@ibe.med.uni-muenchen.de
 photo: 'images/herrmann_moritz.jpg'
 links:

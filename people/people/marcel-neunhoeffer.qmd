@@ -6,7 +6,9 @@ surname: Neunhoeffer
 first_name: Marcel
 position: Researcher
 faculty: Math, Informatics & Stats
-memberships: ['lmu-individual']
+memberships:
+  - type: lmu-individual
+    status: active
 email: marcel.neunhoeffer@stat.uni-muenchen.de
 photo: 'images/neunhoeffer_marcel.jpg'
 links:

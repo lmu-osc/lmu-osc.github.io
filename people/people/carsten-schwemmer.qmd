@@ -6,7 +6,9 @@ surname: Schwemmer
 first_name: Carsten
 position: Chair
 faculty: Social Sciences
-memberships: ['lmu-individual']
+memberships:
+  - type: lmu-individual
+    status: active
 email: carsten.schwemmer@lmu.de
 photo: 'images/schwemmer_carsten.jpg'
 links:

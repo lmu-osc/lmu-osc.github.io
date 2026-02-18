@@ -4,7 +4,9 @@ academic_title: Dr.
 name: Tom Ratz
 surname: Ratz
 first_name: Tom
-memberships: ['affiliate']
+memberships:
+  - type: affiliate
+    status: active
 affiliate_info:
   role: Biology
   organization: University of Zürich

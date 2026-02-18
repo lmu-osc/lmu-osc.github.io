@@ -6,7 +6,9 @@ surname: Schulte-Cloos
 first_name: Julia
 position: Researcher
 faculty: Social Sciences
-memberships: ['lmu-individual']
+memberships:
+  - type: lmu-individual
+    status: active
 email: Julia.Schulte-Cloos@gsi.uni-muenchen.de
 photo: 'images/schulte-cloos_julia.jpg'
 links:

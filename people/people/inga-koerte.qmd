@@ -6,7 +6,9 @@ surname: Koerte
 first_name: Inga
 position: Research Group Leader
 faculty: Medicine
-memberships: ['lmu-individual']
+memberships:
+  - type: lmu-individual
+    status: active
 email: ikoerte@med.lmu.de
 photo: 'images/koerte_inga.jpg'
 links:

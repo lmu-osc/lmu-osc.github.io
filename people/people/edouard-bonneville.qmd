@@ -6,7 +6,9 @@ surname: Bonneville
 first_name: Edouard
 position: Researcher
 faculty: Medicine
-memberships: ['lmu-individual']
+memberships:
+  - type: lmu-individual
+    status: active
 email: edouard.bonneville@ibe.med.uni-muenchen.de
 photo: 'images/bonneville_edouard.jpg'
 links:

@@ -6,7 +6,9 @@ surname: Woll
 first_name: Christian
 position: Researcher
 faculty: Psychology & Education
-memberships: ['lmu-individual']
+memberships:
+  - type: lmu-individual
+    status: active
 email: christian.woll@psy.lmu.de
 photo: 'images/woll_christian.jpg'
 links:

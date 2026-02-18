@@ -6,7 +6,9 @@ surname: Haim
 first_name: Mario
 position: Chair
 faculty: Social Sciences
-memberships: ['lmu-individual']
+memberships:
+  - type: lmu-individual
+    status: active
 email: haim@ifkw.lmu.de
 photo: 'images/haim_mario.jpg'
 links:

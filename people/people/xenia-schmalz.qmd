@@ -6,7 +6,9 @@ surname: Schmalz
 first_name: Xenia
 position: Researcher
 faculty: University Hospital
-memberships: ['lmu-individual']
+memberships:
+  - type: lmu-individual
+    status: active
 email: xenia.schmalz@gmail.com
 photo: 'images/schmalz_xenia.jpg'
 links:

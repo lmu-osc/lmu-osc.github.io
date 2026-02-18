@@ -6,7 +6,9 @@ surname: Müller
 first_name: Christian L.
 position: Chair
 faculty: Math, Informatics & Stats
-memberships: ['lmu-individual']
+memberships:
+  - type: lmu-individual
+    status: active
 email: christian.mueller@stat.uni-muenchen.de
 photo: 'images/mueller_christian-l.png'
 links:

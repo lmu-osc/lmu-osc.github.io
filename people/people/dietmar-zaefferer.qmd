@@ -6,7 +6,9 @@ surname: Zaefferer
 first_name: Dietmar
 position: Professor Emeritus
 faculty: Language & Literatures
-memberships: ['lmu-individual']
+memberships:
+  - type: lmu-individual
+    status: active
 email: zaefferer@lmu.de
 photo: 'images/zaefferer_dietmar.JPG'
 links:

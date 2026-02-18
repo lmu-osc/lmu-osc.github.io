@@ -6,7 +6,9 @@ surname: Seelkopf
 first_name: Laura
 position: Chair
 faculty: Social Sciences
-memberships: ['lmu-individual']
+memberships:
+  - type: lmu-individual
+    status: active
 email: Laura.Seelkopf@gsi.uni-muenchen.de
 photo: 'images/seelkopf_laura.JPG'
 links:

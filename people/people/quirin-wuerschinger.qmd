@@ -6,7 +6,9 @@ surname: Würschinger
 first_name: Quirin
 position: Researcher
 faculty: Language & Literatures
-memberships: ['lmu-individual']
+memberships:
+  - type: lmu-individual
+    status: active
 email: q.wuerschinger@lmu.de
 photo: 'images/wuerschinger_quirin.png'
 links:

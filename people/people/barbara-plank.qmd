@@ -6,7 +6,9 @@ surname: Plank
 first_name: Barbara
 position: Chair for AI and Computational Linguistics, Co-Director Center for Information and Language Processing (CIS), MaiNLP (Munich AI & NLP lab) Research Group Leader
 faculty: 'Language & Literatures'
-memberships: ['lmu-individual']
+memberships:
+  - type: lmu-individual
+    status: active
 email: bplank@cis.lmu.de
 photo: 'images/plank_barbara.jpg'
 links:

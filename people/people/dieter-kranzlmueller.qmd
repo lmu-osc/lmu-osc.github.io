@@ -6,7 +6,9 @@ surname: Kranzlmüller
 first_name: Dieter
 position: Chair
 faculty: Math, Informatics & Stats
-memberships: ['lmu-individual']
+memberships:
+  - type: lmu-individual
+    status: active
 email: kranzlmueller@ifi.lmu.de
 photo: 'images/kranzlmueller_dieter.jpg'
 links:

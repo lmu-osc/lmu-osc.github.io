@@ -6,7 +6,9 @@ surname: Villagran
 first_name: Alberto G.
 position: Researcher
 faculty: Medicine
-memberships: ['fellow']
+memberships:
+  - type: fellow
+    status: active
 email: alberto.villagran@med.uni-muenchen.de
 photo: 'images/villagran_alberto_g..jpg'
 links:

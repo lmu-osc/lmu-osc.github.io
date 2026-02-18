@@ -6,7 +6,9 @@ surname: Shagal
 first_name: Ksenia
 position: Chair
 faculty: Language & Literatures
-memberships: ['lmu-individual']
+memberships:
+  - type: lmu-individual
+    status: active
 email: ksenia.shagal@lmu.de
 photo: 'images/shagal_ksenia.jpg'
 links:

@@ -6,7 +6,9 @@ surname: Aßenmacher
 first_name: Matthias
 position: Researcher
 faculty: Math, Informatics & Stats
-memberships: ['lmu-individual']
+memberships:
+  - type: lmu-individual
+    status: active
 email: matthias@stat.uni-muenchen.de
 photo: 'images/assenmacher_matthias.png'
 links:

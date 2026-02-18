@@ -6,7 +6,9 @@ surname: Wilcke
 first_name: Juliane
 position: Researcher
 faculty: Medicine
-memberships: ['lmu-individual']
+memberships:
+  - type: lmu-individual
+    status: active
 email: juliane.wilcke@ibe.med.uni-muenchen.de
 photo: 'images/wilcke_juliane.jpg'
 links:

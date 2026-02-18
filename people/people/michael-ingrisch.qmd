@@ -6,7 +6,9 @@ surname: Ingrisch
 first_name: Michael
 position: Research Group Leader
 faculty: University Hospital
-memberships: ['lmu-individual']
+memberships:
+  - type: lmu-individual
+    status: active
 email: michael.ingrisch@med.uni-muenchen.de
 photo: 'images/ingrisch_michael.jpg'
 links:

@@ -6,7 +6,9 @@ surname: Auspurg
 first_name: Katrin
 position: Chair
 faculty: Social Sciences
-memberships: ['lmu-individual']
+memberships:
+  - type: lmu-individual
+    status: active
 email: katrin.auspurg@lmu.de
 photo: 'images/auspurg_katrin.jpg'
 links:

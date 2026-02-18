@@ -6,7 +6,9 @@ surname: Altenmüller
 first_name: Marlene
 position: Researcher
 faculty: Psychology & Education
-memberships: ['lmu-individual']
+memberships:
+  - type: lmu-individual
+    status: active
 email: marlene.altenmueller@psy.lmu.de
 photo: 'images/altenmueller_marlene.jpg'
 links:

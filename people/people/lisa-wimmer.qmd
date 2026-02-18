@@ -6,7 +6,9 @@ surname: Wimmer
 first_name: Lisa
 position: PhD Candidate
 faculty: Math, Informatics & Stats
-memberships: ['fellow']
+memberships:
+  - type: fellow
+    status: active
 email: lisa.wimmer@stat.uni-muenchen.de
 photo: 'images/wimmer_lisa.jpg'
 links:

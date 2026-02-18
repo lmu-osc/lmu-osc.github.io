@@ -6,7 +6,9 @@ surname: Sorbie
 first_name: Adam
 position: Researcher
 faculty: University Hospital
-memberships: ['lmu-individual']
+memberships:
+  - type: lmu-individual
+    status: active
 email: adam.sorbie@med.uni-muenchen.de
 photo: 'images/sorbie_adam.jpg'
 links:

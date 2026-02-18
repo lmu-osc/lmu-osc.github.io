@@ -6,7 +6,9 @@ surname: Scheipl
 first_name: Fabian
 position: Chair
 faculty: Math, Informatics & Stats
-memberships: ['lmu-individual']
+memberships:
+  - type: lmu-individual
+    status: active
 email: fabian.scheipl@stat.uni-muenchen.de
 photo: 'images/scheipl_fabian.jpg'
 links:

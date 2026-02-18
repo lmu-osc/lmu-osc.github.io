@@ -6,7 +6,11 @@ surname: Plesnila
 first_name: Nikolaus
 position: Professor of Experimental Stroke Research (OSC Speaker)
 faculty: Medicine
-memberships: ['lmu-individual', "current scientific board"]
+memberships:
+  - type: lmu-individual
+    status: active
+  - type: 'current scientific board'
+    status: active
 email: nikolaus.plesnila@med.uni-muenchen.de
 photo: 'images/plesnila_nikolaus.jpg'
 personal: 'Reproducible studies are the basis of science, but reproducibility rates are still low, specifically in the field of experimental medicine. I would like to continue my service on the OSC Board to improve this situation by further developing the OSC, providing training to my fellow scientists and trainees, and improving standards of research at the Medical Faculty and beyond.'

@@ -6,7 +6,9 @@ surname: Mandl
 first_name: Maximilian
 position: PhD Candidate
 faculty: Medicine
-memberships: ['fellow']
+memberships:
+  - type: fellow
+    status: active
 email: mmandl@ibe.med.uni-muenchen.de
 photo: 'images/mandl_maximilian.jpg'
 links:

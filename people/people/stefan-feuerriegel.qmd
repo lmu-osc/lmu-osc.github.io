@@ -6,7 +6,9 @@ surname: Feuerriegel
 first_name: Stefan
 position: Chair
 faculty: Munich School of Management
-memberships: ['lmu-individual']
+memberships:
+  - type: lmu-individual
+    status: active
 email: feuerriegel@lmu.de
 photo: 'images/feuerriegel_stefan.jpg'
 links:

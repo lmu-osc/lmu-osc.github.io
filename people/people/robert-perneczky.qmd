@@ -6,7 +6,9 @@ surname: Perneczky
 first_name: Robert
 position: Chair
 faculty: University Hospital
-memberships: ['lmu-individual']
+memberships:
+  - type: lmu-individual
+    status: active
 email: Robert.Perneczky@med.uni-muenchen.de
 photo: 'images/perneczky_robert.jpg'
 links:

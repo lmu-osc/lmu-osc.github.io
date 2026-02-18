@@ -6,7 +6,9 @@ surname: Landes
 first_name: Jürgen
 position: Researcher
 faculty: Philosophy
-memberships: ['lmu-individual']
+memberships:
+  - type: lmu-individual
+    status: active
 email: Juergen.Landes@lrz.uni-muenchen.de
 photo: 'images/landes_juergen.jpg'
 links:
