@@ -4,12 +4,18 @@ listing:
   - id: staff
     contents: 
       - people
-    template: listings/staff-listing.ejs
+    template: listings/active-staff-listing.ejs
     sort:
       - "display_weight_staff asc"
       - "surname asc"
-    include: 
-      membertype: "staff"
+
+  - id: alumni-staff
+    contents: 
+      - people
+    template: listings/alumni-staff-listing.ejs
+    sort:
+      - "surname asc"
+
 
 ---
 <style>
@@ -28,3 +34,8 @@ listing:
 ::: {#staff}
 :::
 
+
+## Previous Staff
+
+::: {#alumni-staff}
+:::

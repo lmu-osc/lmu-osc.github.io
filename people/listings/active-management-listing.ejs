@@ -1,4 +1,16 @@
-<% for (const item of items) { %>
+<%
+const activeManagementItems = (items || []).filter((item) => {
+  const memberships = Array.isArray(item.memberships) ? item.memberships : [];
+
+  return memberships.some((membership) => {
+    if (!membership || typeof membership !== 'object') return false;
+
+    return ['management'].includes(membership.type) && membership.status === 'active';
+  });
+});
+%>
+
+<% for (const item of activeManagementItems) { %>
 <div class="card mb-3" <%= metadataAttrs(item) %>>
 <h4 class="card-header"><%= item.position %></h4>
 <div class="row g-0">

@@ -4,10 +4,9 @@ listing:
   - id: current-scientific-board
     contents: 
       - people
-    template: listings/management-listing.ejs
+    template: listings/active-scientific-board-listing.ejs
     sort: "surname asc"
-    include: 
-      membertype: "current scientific board"
+
 ---
 The OSC is steered by an interdisciplinary scientific board elected every two years by the members of the OSC during a general assembly.
 

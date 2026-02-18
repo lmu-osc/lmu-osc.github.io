@@ -4,21 +4,19 @@ listing:
   - id: lmu-members
     contents: 
       - people
-    template: listings/general-listing.ejs
+    template: listings/active-lmu-members-listing.ejs
     sort: "surname asc"
-    include: 
-      membertype: ["lmu-individual"]
+
   - id: affiliate-members
     contents: 
       - people
-    template: listings/affiliate-listing.ejs
+    template: listings/active-affiliate-listing.ejs
     sort: "surname asc"
-    include: 
-      membertype: ["affiliate"]
+
   - id: former-members
     contents: 
       - people
-    template: listings/alumnae-memberships-listing.ejs
+    template: listings/alumni-lmu-members-affiliates-listing.ejs
     sort: "surname asc"
 
 ---
