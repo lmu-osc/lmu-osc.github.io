@@ -390,6 +390,7 @@ svg :is(text, tspan) { font-family: inherit !important; font-weight: bold; point
    ======================================== */
 
 .orc-hero-cycle[class*="phase-"] [id^="phase-"] { opacity: .25; }
+.orc-hero-cycle[class*="phase-"] [id^="path1"] { fill-opacity: .25; }
 .orc-hero-cycle.phase-1 #phase-1,
 .orc-hero-cycle.phase-2 #phase-2,
 .orc-hero-cycle.phase-3 #phase-3,
