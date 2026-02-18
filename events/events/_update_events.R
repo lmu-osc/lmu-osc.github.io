@@ -72,6 +72,31 @@ update_event_yaml <- function(file_path, csv_row) {
     return(NULL)
   }
   
+  # Helper function to convert dates to YYYY-MM-DD format
+  format_date <- function(date_str) {
+    if(is.null(date_str) || date_str == "") return(NULL)
+    
+    # Try to parse the date - handles multiple formats
+    parsed_date <- tryCatch({
+      as.Date(date_str, format = "%d-%b-%y")  # e.g., "27-Sep-22"
+    }, error = function(e) {
+      tryCatch({
+        as.Date(date_str, format = "%Y-%m-%d")  # e.g., "2022-09-27"
+      }, error = function(e2) {
+        tryCatch({
+          as.Date(date_str)  # Let R try to auto-detect
+        }, error = function(e3) {
+          return(NULL)
+        })
+      })
+    })
+    
+    if(!is.null(parsed_date) && !is.na(parsed_date)) {
+      return(format(parsed_date, "%Y-%m-%d"))
+    }
+    return(NULL)
+  }
+  
   # Build updates from CSV data (only non-null values)
   updates <- list()
   
@@ -94,10 +119,16 @@ update_event_yaml <- function(file_path, csv_row) {
   # Handle end_date - if same as start_date, set to empty string
   start_date_val <- get_col("event_start")
   end_date_val <- get_col("event_end")
-  if(!is.null(start_date_val) && !is.null(end_date_val) && start_date_val == end_date_val) {
+  
+  # Format dates to YYYY-MM-DD
+  start_date_formatted <- format_date(start_date_val)
+  end_date_formatted <- format_date(end_date_val)
+  
+  if(!is.null(start_date_formatted) && !is.null(end_date_formatted) && 
+     start_date_formatted == end_date_formatted) {
     event_updates$end_date <- ""
-  } else if(!is.null(end_date_val)) {
-    event_updates$end_date <- end_date_val
+  } else if(!is.null(end_date_formatted)) {
+    event_updates$end_date <- end_date_formatted
   }
   
   # Handle time field - convert NA to empty string
@@ -214,11 +245,16 @@ update_event_yaml <- function(file_path, csv_row) {
     updates$host <- hosts  # Note: singular 'host' for YAML field name
   }
   
-  # Build contact section updates
-  contact_updates <- list()
-  if(!is.null(get_col("contact_name"))) contact_updates$name <- get_col("contact_name")
-  if(!is.null(get_col("contact_email"))) contact_updates$email <- get_col("contact_email")
-  if(length(contact_updates) > 0) updates$contact <- contact_updates
+  # Build contact section updates - ensure contact_email from CSV is applied
+  contact_email_val <- get_col("contact_email")
+  if(!is.null(contact_email_val)) {
+    contact_updates <- list(email = contact_email_val)
+    # Add contact name if available
+    if(!is.null(get_col("contact_name"))) {
+      contact_updates$name <- get_col("contact_name")
+    }
+    updates$contact <- contact_updates
+  }
   
   # Handle organizers (columns: organizers1, url1_org, organizers2, url2_org, etc.)
   organizer_nums <- 1:15
