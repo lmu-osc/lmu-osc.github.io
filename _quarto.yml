@@ -177,6 +177,7 @@ format:
       - lmu-osc-custom.scss
     css: 
       - https://raw.githubusercontent.com/lmu-osc/branding-resources/refs/heads/main/styles.css
+      - /assets/bootstrap-5.3.8-dist/css/bootstrap.min.css
       - assets/fontawesome-free-7.1.0-web/css/all.min.css
       - styles.css
       - footer/footer-style.css
