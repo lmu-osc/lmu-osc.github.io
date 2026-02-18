@@ -245,13 +245,18 @@ update_event_yaml <- function(file_path, csv_row) {
     updates$host <- hosts  # Note: singular 'host' for YAML field name
   }
   
-  # Build contact section updates - ensure contact_email from CSV is applied
+  # Build contact section updates - handle both name and email
   contact_email_val <- get_col("contact_email")
-  if(!is.null(contact_email_val)) {
-    contact_updates <- list(email = contact_email_val)
-    # Add contact name if available
-    if(!is.null(get_col("contact_name"))) {
-      contact_updates$name <- get_col("contact_name")
+  contact_name_val <- get_col("contact_name")
+  
+  # Update contact if either email or name is present in CSV
+  if(!is.null(contact_email_val) || !is.null(contact_name_val)) {
+    contact_updates <- list()
+    if(!is.null(contact_email_val)) {
+      contact_updates$email <- contact_email_val
+    }
+    if(!is.null(contact_name_val)) {
+      contact_updates$name <- contact_name_val
     }
     updates$contact <- contact_updates
   }
