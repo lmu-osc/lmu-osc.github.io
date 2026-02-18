@@ -5,9 +5,6 @@ format:
   html:
     css: 
       - /about/about.css
-    include-in-header: 
-      - text: |
-          <link href="/assets/bootstrap-5.3.8-dist/css/bootstrap.min.css" rel="stylesheet">
 page-layout: full
 ---
 
