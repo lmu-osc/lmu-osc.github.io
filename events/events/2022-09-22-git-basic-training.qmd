@@ -1,0 +1,70 @@
+---
+title: 'One Step Towards Reproducible Science: Git Basic Training'
+categories: Workshop
+event:
+  description: ''
+  start_date: '2022-09-12'
+  end_date: ''
+  time: ''
+  location:
+    name: Lecture Hall 2 Hörsaaltrakt in Klinikum Großhadern
+    address: ''
+    map_url: ''
+  format:
+    type: Workshop
+    detail: ''
+  language:
+    primary: English/German
+    primary-code: en
+    detail: ''
+links:
+  registration: ''
+  materials: ''
+  workshop_website: ''
+event_description: ''
+instructors:
+  - name: PD Dr. Luisa Jimenez-Soto
+    url: ''
+helpers:
+  - name: ''
+contact:
+  name: Christina Nießl
+  email: cniessl@ibe.med.uni-muenchen.de
+organizers:
+  - name: Christina Nießl
+    url: ''
+host:
+  - name: Open Science Initiative in Medicine (OSIM)
+    url: ''
+  - name: '"Institute for Medical Information Processing'
+    url: Biometry
+  - name: and Epidemiology (IBE)"
+    url: ''
+
+---
+<!-- MANDAORY SECTION START  -->
+
+{{< include templates/_setup.qmd >}}
+{{< include templates/_info_boxes.qmd >}}
+{{< include templates/_register_button.qmd >}}
+<!-- MANDAORY SECTION END  -->
+
+<br>
+
+<!-- DETAILED EVENT DESCRIPTION HERE OR USE THE TEMPLATE BELOW TO INCLUDE THE STANDARD DESCRIPTION SECTION -->
+<!-- {{< include templates/_event_description.qmd >}} -->
+
+<p>We are incredibly excited to announce the fifth workshop held by the LMU Open Science Initiative in Medicine (OSIM) and the Institute for Medical Information Processing, Biometry, and Epidemiology (IBE):</p><p style="text-align: center;"><strong>"One step towards Reproducible Science: Git basic training"</strong></p><p>As part of the activities considered by Open Science in Medicine (OSIM) team, we want to facilitate the fulfillment of the FAIR (Findable, Accessible, Interoperable, Reusable) data principles by training our students and faculty in practical Open Science aspects. One of the best ways to make research open is the use of version control systems (VCS). Their use allows for a transparent process in science and data analysis. At the same time, VCS are excellent tools for data management, project planning and collaborative work. The course will cover the essential concepts about Version Control Systems, and will focus in the use of git, the most used VCS at the moment. Students will learn how to use git locally and how to work with git repositories, specifically their git repository gitlab offered by the LRZ to all members of the Munich universities. This course will be a combination of practice and theory, with emphasis on the practical aspect to facilitate the application of all acquired knowledge to their everyday scientific work. These basic concepts will allow students to explore more advanced features required for collaborative work. With this course we aim to offer a new tool to all interested in Open Science.</p><p> </p><p><strong>Requirements:</strong></p><ul>
+<li><strong>Willingness to work with the command-line (Unix systems)/ power shell (windows OS).</strong></li>
+<li><strong>Software: Unix system access (Windows with the Linux App, MacOS or Linux distro) and a text editor. For installation in Windows we will send a guide before the course with helpful information.</strong></li>
+<li><strong>Hardware: Personal computer (laptop) with 64-bit architecture and wlan connection.</strong></li>
+<li><strong>Access to Eduroam / LRZ system</strong></li>
+</ul>
+<p><strong><br></strong></p><p><strong>Target audience:</strong> Members of the Medical and Biology Faculty interested in learning the git version control system using the command line. However, depending on inscriptions, participation priority will be given to Medical faculty members (Principal investigators, Medical students, Postgraduate students and Postdoctoral fellows).</p><p><strong>Time required:</strong> 3 hours on-site, 2 hours preparation at home.</p><p><strong>Credits:</strong> Credit for the curriculum as part of the degree (Module 6) and doctorate (Dr. med., Dr. med. dent., Dr. hum. biol., Dr. rer. nat. and PhD in Medical Research) is possible. See www.med.uni-muenchen.de. ECTS credits can be awarded for the PhD program Public Health &amp; Epidemiology if the course is combined with other short courses.</p><div class="g-clear"></div>
+
+
+
+<!-- MANDAORY SECTION START  -->
+<!-- _event_description.qmd template should always be at bottom -->
+{{< include templates/_instructors_helpers_contact.qmd >}}
+<!-- MANDAORY SECTION END  -->

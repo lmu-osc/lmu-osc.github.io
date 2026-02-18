@@ -1,0 +1,61 @@
+---
+title: Elmar Spiegel
+academic_title: Dr.
+name: Elmar Spiegel
+surname: Spiegel
+first_name: Elmar
+memberships:
+  - type: affiliate
+    status: active
+affiliate_info:
+  role: Statistical Consultant
+  organization: Helmholtz Zentrum Munich
+email: elmar.spiegel@helmholtz-munich.de
+photo: 'images/spiegel_elmar.jpg'
+links:
+  - label: 'Professional Profile'
+    url: https://www.helmholtz-munich.de/en/icb/research-groups/fuchs-lab/people/elmar-spiegel
+social_media:
+  ORCID: 'https://orcid.org/0000-0002-5834-2383'
+mission_statement:
+  - In my work as a statistical consultant with the Core Facility Bioinformatics and Statistics at Helmholtz Munich, I focus on robust statistical methodology and practical guidance for research data integrity and reproducibility. My involvement in the Center reflects my commitment to fostering reproducible analytical standards, responsible data practices, and the broad dissemination of reliable scientific knowledge.
+---
+{{< include templates/_setup.qmd >}}
+{{< include templates/_contact_items.qmd >}}
+{{< include templates/_social_links.qmd >}}
+{{< include templates/_mission_statement.qmd >}}
+{{< include templates/_research_interests.qmd >}}
+{{< include templates/_selected_publications.qmd >}}
+
+
+
+```{r}
+#| echo: false
+
+# Compose the full profile
+profile <- div(class = "people-profile",
+  div(class = "people-header",
+    div(class = "people-photo",
+      img(src = photo)
+    ),
+    div(class = "people-info",
+      p(class = "people-position", position),
+      if (!is.null(faculty) & faculty != "") {p(class = "people-faculty", paste0("Faculty of ", faculty))},
+      if (faculty == "" & !is.null(affiliate_organization)) {
+        p(class = "people-faculty", affiliate_organization)
+        },
+      div(class = "people-contact", contact_items, social_links)
+    )
+  ),
+  mission_block,
+  # custom content would most likely go here, right after the mission_block
+  div(class = "people-content",
+    interests_block,
+    publications_block
+  )
+)
+
+# Render the profile
+browsable(profile)  
+```
+

@@ -1,0 +1,60 @@
+---
+title: Belinda Platt
+academic_title: Dr.
+name: Belinda Platt
+surname: Platt
+first_name: Belinda
+position: Researcher
+faculty: University Hospital
+memberships:
+  - type: lmu-individual
+    status: active
+email: Belinda.Platt@med.uni-muenchen.de
+photo: 'images/platt_belinda.jpg'
+links:
+  - label: 'LMU Profile'
+    url: https://www.psy.lmu.de/klin_en/team/associated-researchers/belinda-platt/index.html
+social_media:
+  ORCID: 'https://orcid.org/0000-0002-7501-7494'
+mission_statement:
+  - I am currently a temporary ("Vertretungs") Professor of Developmental and Child and Adolescent Clinical Psychology at the University of Kiel. Since 2013 I have been a post-doctoral researcher in the <a href="https://www.lmu-klinikum.de/kinder-und-jugendpsychiatrie/klinik-kompakt/unser-team/2e8bb7baefad4e9c">Department of Child and Adolescent Psychiatry at the LMU Klinikum</a>, where I maintain my research group. Since conducting my PhD I have been passionate about improving transparency in Psychology research. In 2017 I signed the <a href="https://www.researchtransparency.org">Commitment to Research Transparency statement</a>. Since 2021 I have been a member of the<a href="../../../../meetups/osim/index.html" title="LMU Open Science Initiative in Medicine"> Open Science in Medicine (OSIM)</a>. I try to upload principles of Open Science in my research group.
+---
+{{< include templates/_setup.qmd >}}
+{{< include templates/_contact_items.qmd >}}
+{{< include templates/_social_links.qmd >}}
+{{< include templates/_mission_statement.qmd >}}
+{{< include templates/_research_interests.qmd >}}
+{{< include templates/_selected_publications.qmd >}}
+
+
+
+```{r}
+#| echo: false
+
+# Compose the full profile
+profile <- div(class = "people-profile",
+  div(class = "people-header",
+    div(class = "people-photo",
+      img(src = photo)
+    ),
+    div(class = "people-info",
+      p(class = "people-position", position),
+      if (!is.null(faculty) & faculty != "") {p(class = "people-faculty", paste0("Faculty of ", faculty))},
+      if (faculty == "" & !is.null(affiliate_organization)) {
+        p(class = "people-faculty", affiliate_organization)
+        },
+      div(class = "people-contact", contact_items, social_links)
+    )
+  ),
+  mission_block,
+  # custom content would most likely go here, right after the mission_block
+  div(class = "people-content",
+    interests_block,
+    publications_block
+  )
+)
+
+# Render the profile
+browsable(profile)  
+```
+

@@ -1,0 +1,60 @@
+---
+title: ReproducibiliTea Journal Club: Präregistrierung
+categories: ReproducibiliTea Journal Club
+event:
+  description: ''
+  start_date: '2024-06-19'
+  end_date: ''
+  time: ''
+  location:
+    name: Leopoldstraße 13, room 3322
+    address: ''
+    map_url: ''
+  format:
+    type: ReproducibiliTea Journal Club
+    detail: ''
+  language:
+    primary: German
+    primary-code: de
+    detail: ''
+links:
+  registration: ''
+  materials: ''
+  workshop_website: ''
+event_description: ''
+instructors:
+  - name: ''
+    url: ''
+helpers:
+  - name: ''
+contact:
+  name: ReproducibiliTea
+  email: reproducibilitea.munich@gmail.com
+organizers:
+  - name: ReproducibiliTea Team
+    url: ''
+host:
+  - name: ReproducibiliTea Team
+    url: ''
+
+---
+<!-- MANDAORY SECTION START  -->
+
+{{< include templates/_setup.qmd >}}
+{{< include templates/_info_boxes.qmd >}}
+{{< include templates/_register_button.qmd >}}
+<!-- MANDAORY SECTION END  -->
+
+<br>
+
+<!-- DETAILED EVENT DESCRIPTION HERE OR USE THE TEMPLATE BELOW TO INCLUDE THE STANDARD DESCRIPTION SECTION -->
+<!-- {{< include templates/_event_description.qmd >}} -->
+
+
+
+
+
+<!-- MANDAORY SECTION START  -->
+<!-- _event_description.qmd template should always be at bottom -->
+{{< include templates/_instructors_helpers_contact.qmd >}}
+<!-- MANDAORY SECTION END  -->

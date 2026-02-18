@@ -1,0 +1,61 @@
+---
+title: Tom Ratz
+academic_title: Dr.
+name: Tom Ratz
+surname: Ratz
+first_name: Tom
+memberships:
+  - type: affiliate
+    status: active
+affiliate_info:
+  role: Biology
+  organization: University of Zürich
+email: tom.ratz@uzh.ch
+photo: 'images/ratz_tom.jpg'
+links:
+  - label: 'Professional Profile'
+    url: https://www.ieu.uzh.ch/en/staff/member/ratz_tom.html
+social_media:
+  ORCID: 'https://orcid.org/0000-0002-4215-277X'
+mission_statement:
+  - My research aims at clarifying how key aspects of social behaviours in animals, such as their genetic architecture and phenotypic plasticity, alter the potential for sociality to evolve. I am working towards using Open Science practices more systematically in my own research, e.g. providing pre-registered reports, usable datasets and analysis code. I am also interested in communicating about Open Science ideas and improving research practices in my field.
+---
+{{< include templates/_setup.qmd >}}
+{{< include templates/_contact_items.qmd >}}
+{{< include templates/_social_links.qmd >}}
+{{< include templates/_mission_statement.qmd >}}
+{{< include templates/_research_interests.qmd >}}
+{{< include templates/_selected_publications.qmd >}}
+
+
+
+```{r}
+#| echo: false
+
+# Compose the full profile
+profile <- div(class = "people-profile",
+  div(class = "people-header",
+    div(class = "people-photo",
+      img(src = photo)
+    ),
+    div(class = "people-info",
+      p(class = "people-position", position),
+      if (!is.null(faculty) & faculty != "") {p(class = "people-faculty", paste0("Faculty of ", faculty))},
+      if (faculty == "" & !is.null(affiliate_organization)) {
+        p(class = "people-faculty", affiliate_organization)
+        },
+      div(class = "people-contact", contact_items, social_links)
+    )
+  ),
+  mission_block,
+  # custom content would most likely go here, right after the mission_block
+  div(class = "people-content",
+    interests_block,
+    publications_block
+  )
+)
+
+# Render the profile
+browsable(profile)  
+```
+

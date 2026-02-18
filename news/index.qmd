@@ -2,4 +2,10 @@
 title: "News"
 editor: source
 repo-actions: false
+listing:
+    contents: news
+    categories: true
+    fields: [date, title, categories]
+    type: table
+    sort: "date desc"
 ---

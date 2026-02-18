@@ -1,0 +1,60 @@
+---
+title: Eva Grill
+academic_title: Prof. Dr.
+name: Eva Grill
+surname: Grill
+first_name: Eva
+position: Chair
+faculty: Medicine
+memberships:
+  - type: lmu-individual
+    status: active
+email: eva.grill@med.uni-muenchen.de
+photo: 'images/grill_eva.jpg'
+links:
+  - label: 'LMU Profile'
+    url: https://www.ibe.med.uni-muenchen.de/mitarbeiter/professoren/grill/index.html
+social_media:
+  ORCID: 'https://orcid.org/0000-0002-0273-7984'
+mission_statement:
+  - I am professor for epidemiology, specifically interested in successful ageing and the vestibular system, at the Department of Medical Informatics, Biometry and Epidemiology. In my team we try to adopt principles of Open Science into our daily work, e.g. by commenting code, verifying code and results, and by increasing awareness among project partners, collaborators and students.
+---
+{{< include templates/_setup.qmd >}}
+{{< include templates/_contact_items.qmd >}}
+{{< include templates/_social_links.qmd >}}
+{{< include templates/_mission_statement.qmd >}}
+{{< include templates/_research_interests.qmd >}}
+{{< include templates/_selected_publications.qmd >}}
+
+
+
+```{r}
+#| echo: false
+
+# Compose the full profile
+profile <- div(class = "people-profile",
+  div(class = "people-header",
+    div(class = "people-photo",
+      img(src = photo)
+    ),
+    div(class = "people-info",
+      p(class = "people-position", position),
+      if (!is.null(faculty) & faculty != "") {p(class = "people-faculty", paste0("Faculty of ", faculty))},
+      if (faculty == "" & !is.null(affiliate_organization)) {
+        p(class = "people-faculty", affiliate_organization)
+        },
+      div(class = "people-contact", contact_items, social_links)
+    )
+  ),
+  mission_block,
+  # custom content would most likely go here, right after the mission_block
+  div(class = "people-content",
+    interests_block,
+    publications_block
+  )
+)
+
+# Render the profile
+browsable(profile)  
+```
+

@@ -1,0 +1,246 @@
+---
+title: "Join Us"
+format: 
+  html:
+    page-layout: full
+---
+<style>
+  /* css styles */
+:root {
+    --primary-color: #00883A;
+    --primary-light: rgba(43, 134, 75, 0.55);
+    --text-dark: #333333;
+    --text-light: #ffffff;
+    --osc-white: #ffffff;
+    --text-light:#5f5f5f;
+    --card-shadow: 0 4px 16px rgba(135, 171, 146, 0.08);
+  }
+  
+#quarto-content.page-columns main.column-page{
+    margin:0 auto;
+    max-width: 1200px;
+    padding: 2rem;
+    width:100%;
+    /*background-color: #f9fcf9;*/
+}
+
+
+.joinus-container{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 1rem;
+    background-color:var(--osc-white);
+}
+.joinus-container h3{
+  color: var(--primary-color);
+  margin-top: 0;
+  font-size: 1.2rem;
+  padding-top:1rem;
+}
+
+.joinus-title h3{
+    font-size: 2.3rem;
+    font-weight: 900;
+    line-height: 1.5;
+    color:var(--primary-color);
+    margin-top:1.3rem;
+}
+
+.joinus-container p,
+.joinus-container li {
+    text-align: justify;
+    font-size: 1rem;
+    line-height: 1.85;
+    font-weight:400;
+    color: var(--text-light);
+}
+.joinus-container p{
+    margin-top: 1rem;
+}
+.joinus-container h4{
+  font-size: 1.7rem;
+  font-weight: 800;
+  line-height: 1.5;
+  color:var(--primary-color);
+  margin-top:0.5rem;
+}
+.joinus-container a{
+  color: var(--primary-color);
+  text-decoration:none;
+}
+.bi-box-arrow-up-right,
+.email-icon{
+  color: var(--primary-color);
+}
+
+.members-category-container{
+  margin-bottom: 1rem;
+  margin-top:0;
+  padding:1rem;
+  padding-top:2rem;
+  /*padding:1rem;*/
+  background-color: #f9fcf9;
+  border-radius:20px;
+}
+.members-categories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.2rem;
+}
+
+.members-category {
+  background-color: var(--osc-white);
+  border-radius: 8px;
+  padding: 1.5rem;
+  border-top: 3px solid var(--primary-color);
+  box-shadow: var(--card-shadow);
+}
+
+.members-category h3 {
+  color: var(--primary-color);
+  margin-top: 0;
+  font-size: 1.2rem;
+}
+.members-category p{
+  text-align: justify;
+  font-size: 0.9rem;
+}
+.social-link{
+  display: inline-flex;         
+  align-items: center;
+  gap: 0.4rem;
+  background: none;              
+  box-shadow: none;               
+  color: var(--primary-color);                 
+  text-decoration: none;
+  font-size: 0.9rem;              
+  width: auto;                  
+  height: auto;                 
+  border: 1px solid #e3e7ed;                  
+  border-radius: 4px;              
+  padding: 0.3rem 0.6rem;                   
+  cursor: pointer;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.contact-link{
+  display: inline-flex;         
+  align-items: center;
+  gap: 0.4rem;
+  background: none;              
+  box-shadow: none;               
+  color: var(--primary-color);                 
+  text-decoration: none;
+  font-size: 0.9rem;              
+  width: auto;                  
+  height: auto;                 
+  border: 1px solid #e3e7ed;                  
+  border-radius: 4px;              
+  padding: 0.3rem 0.6rem;                   
+  cursor: pointer;
+  transition: color 0.2s, border-color 0.2s;
+}
+.social-link i,
+.contact-link i{
+  font-size: 0.9rem;
+  line-height: 1;      
+  margin: 0; 
+}
+.social-link:hover,
+.contact-link:hover{
+  background-color:rgba(43, 134, 75, 0.98);
+  color: var(--osc-white)!important;
+  border-color:var(--primary-color)!important;
+  transform: translateY(-2px);
+}
+
+.contact-link-container{
+  margin-top:0;
+  display:flex;
+  align-items:center;
+}
+
+@media (max-width: 992px) {
+    .joinus-title h3{
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .joinus-title h3{
+        font-size: 1.8rem;
+        margin: 0;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .joinus-title h3{
+        font-size: 1.5rem;
+    }
+
+
+}
+
+@media (max-width: 360px) {
+    .joinus-title h3{
+        font-size: 1.3rem;
+    }
+}
+
+</style>
+
+:::{.joinus-container}
+
+:::{.joinus-title}
+### Becoming a member
+:::
+
+#### Individual Members 
+
+:::{.members-category-container}
+:::{.members-category}
+
+Become a member of the OSC if you want to visibly support the goal of open, responsible, and reproducible research within your disciplines or at LMU Munich more broadly. As a member, you can
+
+
+* shape our activities (e.g. suggest or lead an event, write research practice guidance, organise a meetup, liaise with stakeholders to inform on the design of incentives and policies)
+* network with like-minded researchers across disciplines (from networking lunch to writing meta research proposals together), and 
+* vote and/or take part in the [OSC Scientific Board](../people/scientific-board.qmd).
+
+
+According to its [statute](statutes.qmd), all PhD holders (post docs, lecturers, PDs, and Professors) of LMU Munich as well as researchers from other universities or non-university research institutes contributing to foster the goals of the OSC can become members - free of any charge, of course.
+
+<a href="mailto:malika.ihle@lmu.de?subject=OSC%20Memberhip" class="social-link">
+  Become an OSC Member <i class="bi bi-arrow-right"></i>
+</a>
+
+:::
+:::  
+
+#### OSC Fellows
+
+:::{.members-category-container}
+:::{.members-category}
+
+Become an OSC Fellow if you are a PhD candidate or a student from LMU Munich wanting to contribute to the OSC's activities. For instance, you will be recognised with the status of OSC Fellow if you (co-)lead a grassroot initiatives, (co-)organise an event, and/or (co-)deliver a workshop, on your own or with OSC staff or members. The OSC strives to provide [OSC Fellows](../people/fellows.qmd) with further leadership and training opportunities.
+
+<a href="mailto:malika.ihle@lmu.de?subject=OSC%20Fellowship" class="social-link">
+  Become an OSC Fellow <i class="bi bi-arrow-right"></i>
+</a>
+
+:::
+:::   
+
+#### Institutional Members
+
+:::{.members-category-container}
+:::{.members-category}
+Departments, faculties, units, or central institutions of the LMU that provide infrastructure or other services that facilitate the goals of the OSC can become [institutional members](../partners/institutional_members.html). Learn more about the benefits of becoming a funding institutional member below and schedule a call with us!
+
+<a href="../partners/becoming_institutional_members.html" class="social-link">Learn more <i class="bi bi-arrow-right"></i></a>
+
+:::
+:::   

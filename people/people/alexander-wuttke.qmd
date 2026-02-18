@@ -1,0 +1,63 @@
+---
+title: Alexander Wuttke
+academic_title: Prof. Dr.
+name: Alexander Wuttke
+surname: Wuttke
+first_name: Alexander
+position: Professor in Digitalization and Political Behavior
+faculty: Social Sciences
+memberships:
+  - type: lmu-individual
+    status: active
+  - type: 'scientific board'
+    status: active
+email: a.wuttke@lmu.de
+photo: 'images/wuttke_alexander.jpg'
+personal: 'I am an Assistant Professor in Digitalization and Political Behavior at the Geschwister-Scholl-Institute. I am the Registered Reports Editor for the Journal of Politics and co-founder of the Open Science Meetup at the University of Mannheim. Being new to LMU, I am keen to foster the vibrant LMU Open Science Community.'
+links:
+  - label: 'LMU Profile'
+    url: https://www.gsi.uni-muenchen.de/personen/professoren/wuttke/index.html
+social_media:
+  ORCID: 'https://orcid.org/0000-0002-9579-5357'
+mission_statement:
+  - Science is about show me, not trust me. Transparency in research allows us to vet and build on each other's work. We need to open up the research process so that consumers of the scientific literature can make up their minds about whether a scientific knowledge claim deserves our trust or not.
+---
+{{< include templates/_setup.qmd >}}
+{{< include templates/_contact_items.qmd >}}
+{{< include templates/_social_links.qmd >}}
+{{< include templates/_mission_statement.qmd >}}
+{{< include templates/_research_interests.qmd >}}
+{{< include templates/_selected_publications.qmd >}}
+
+
+
+```{r}
+#| echo: false
+
+# Compose the full profile
+profile <- div(class = "people-profile",
+  div(class = "people-header",
+    div(class = "people-photo",
+      img(src = photo)
+    ),
+    div(class = "people-info",
+      p(class = "people-position", position),
+      if (!is.null(faculty) & faculty != "") {p(class = "people-faculty", paste0("Faculty of ", faculty))},
+      if (faculty == "" & !is.null(affiliate_organization)) {
+        p(class = "people-faculty", affiliate_organization)
+        },
+      div(class = "people-contact", contact_items, social_links)
+    )
+  ),
+  mission_block,
+  # custom content would most likely go here, right after the mission_block
+  div(class = "people-content",
+    interests_block,
+    publications_block
+  )
+)
+
+# Render the profile
+browsable(profile)  
+```
+

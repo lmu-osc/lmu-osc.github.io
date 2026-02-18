@@ -1,0 +1,75 @@
+---
+title: Improve the Readability of your Code
+categories: Hacky Hour
+event:
+  description: ''
+  start_date: '2024-01-29'
+  end_date: ''
+  time: ''
+  location:
+    name: Wikipedia Munich, Angertorstraße 3
+    address: ''
+    map_url: ''
+  format:
+    type: Hacky Hour
+    detail: ''
+  language:
+    primary: German/ English
+    primary-code: de
+    detail: de/en
+links:
+  registration: ''
+  materials: ''
+  workshop_website: ''
+event_description: ''
+instructors:
+  - name: ''
+    url: ''
+helpers:
+  - name: ''
+contact:
+  name: Malika Ihle
+  email: malika.ihle@lmu.de
+organizers:
+  - name: Dr. Malika Ihle
+    url: ''
+host:
+  - name: LMU Open Science Center
+    url: ''
+
+---
+<!-- MANDAORY SECTION START  -->
+
+{{< include templates/_setup.qmd >}}
+{{< include templates/_info_boxes.qmd >}}
+{{< include templates/_register_button.qmd >}}
+<!-- MANDAORY SECTION END  -->
+
+<br>
+
+<!-- DETAILED EVENT DESCRIPTION HERE OR USE THE TEMPLATE BELOW TO INCLUDE THE STANDARD DESCRIPTION SECTION -->
+<!-- {{< include templates/_event_description.qmd >}} -->
+
+<p>Come along to talk about code, research tools, and open science in a social environment!</p><p>Possible resources to prepare your session’s hack:</p><p>Beginner:</p><ul>
+<li>
+<a href="https://osf.io/yprsq/">https://osf.io/yprsq/</a> (50 min video recording of a practical lecture on software readability)</li>
+<li><a href="https://github.com/OxfordCodeReviewNet/forum/blob/master/guidelines_for_reviewers.md" target="_blank">guidelines for code reviewers of any level</a></li>
+</ul>
+<p>Advanced:</p><ul>
+<li>
+<a href="https://doi.org/10.3233/JNR-220002">https://doi.org/10.3233/JNR-220002</a> (article)</li>
+</ul>
+<p><strong>Sessions’ agenda:</strong></p><ul>
+<li>Brief round of introductions and description of the problems you’ll be working on during that session</li>
+<li>Formation of possible groups or tandems, if participants have tips to exchange on certain topics</li>
+<li>Hack</li>
+<li>Wrap-up: progress and next steps</li>
+</ul>
+<p>Learn more about the Hacky Hour initiative <a href="../../meetups/hackyhour/index.html" title="Hacky Hour">here</a>.</p><div class="g-clear"></div>
+
+
+
+<!-- MANDAORY SECTION START  -->
+<!-- _event_description.qmd template should always be at bottom -->
+{{< include templates/_instructors_helpers_contact.qmd >}}
+<!-- MANDAORY SECTION END  -->

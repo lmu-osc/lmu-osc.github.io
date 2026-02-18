@@ -1,0 +1,60 @@
+---
+title: Reka Kugyelka
+academic_title: Dr.
+name: Reka Kugyelka
+surname: Kugyelka
+first_name: Reka
+position: Researcher
+faculty: University Hospital
+memberships:
+  - type: lmu-individual
+    status: active
+email: reka.kugyelka@med.uni-muenchen.de
+social_media:
+  GitHub: "https://github.com/rkugyelka"
+photo: 'images/kugyelka_reka.jpg'
+links:
+  - label: 'LMU Profile'
+    url: https://www.lmu-klinikum.de/thoraxchirurgie/klinik-kompakt/mitarbeitende/dfa6558544803f13
+mission_statement:
+  - I work as a researcher at the Department of Thoracic Surgery of the LMU Klinikum, concentrating on transplantation immunology. Our goal is to improve patient outcomes after lung transplantation, predicting rejection of the donor organ by finding biomarkers or patterns in the clinical data. I would like to advocate for adopting open science practices in the field of clinical research, opening possibilites to „team science“ via data sharing while protecting sensitive patient data.
+---
+{{< include templates/_setup.qmd >}}
+{{< include templates/_contact_items.qmd >}}
+{{< include templates/_social_links.qmd >}}
+{{< include templates/_mission_statement.qmd >}}
+{{< include templates/_research_interests.qmd >}}
+{{< include templates/_selected_publications.qmd >}}
+
+
+
+```{r}
+#| echo: false
+
+# Compose the full profile
+profile <- div(class = "people-profile",
+  div(class = "people-header",
+    div(class = "people-photo",
+      img(src = photo)
+    ),
+    div(class = "people-info",
+      p(class = "people-position", position),
+      if (!is.null(faculty) & faculty != "") {p(class = "people-faculty", paste0("Faculty of ", faculty))},
+      if (faculty == "" & !is.null(affiliate_organization)) {
+        p(class = "people-faculty", affiliate_organization)
+        },
+      div(class = "people-contact", contact_items, social_links)
+    )
+  ),
+  mission_block,
+  # custom content would most likely go here, right after the mission_block
+  div(class = "people-content",
+    interests_block,
+    publications_block
+  )
+)
+
+# Render the profile
+browsable(profile)  
+```
+

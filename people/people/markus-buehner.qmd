@@ -1,0 +1,61 @@
+---
+title: Markus Bühner
+academic_title: Prof. Dr.
+name: Markus Bühner
+surname: Bühner
+first_name: Markus
+position: Chair
+faculty: Psychology & Education
+memberships:
+  - type: lmu-individual
+    status: active
+email: buehner@lmu.de
+photo: 'images/buehner_markus.jpg'
+links:
+  - label: 'LMU Profile'
+    url: https://www.lmu.de/psy/de/personen/kontaktseite/markus-buehner-01887716.html
+social_media:
+  ORCID: 'https://orcid.org/0000-0002-0597-8708'
+mission_statement:
+  - I am professor for Psychological Methods and Assessment at the Department of Psychology.
+  - Research transparency is a core value of my working group. In my term as managing director of the Department Psychology, I supported the foundation of the department's Open Science Committee (<a href="https://osf.io/mgwk8/">osf.io/mgwk8/</a>) in July 2015. Furthermore, many members of my working group signed the „Commitment to Research Transparency and Open Science“ (<a href="https://www.researchtransparency.org/signatories/">www.researchtransparency.org/signatories/</a>).
+---
+{{< include templates/_setup.qmd >}}
+{{< include templates/_contact_items.qmd >}}
+{{< include templates/_social_links.qmd >}}
+{{< include templates/_mission_statement.qmd >}}
+{{< include templates/_research_interests.qmd >}}
+{{< include templates/_selected_publications.qmd >}}
+
+
+
+```{r}
+#| echo: false
+
+# Compose the full profile
+profile <- div(class = "people-profile",
+  div(class = "people-header",
+    div(class = "people-photo",
+      img(src = photo)
+    ),
+    div(class = "people-info",
+      p(class = "people-position", position),
+      if (!is.null(faculty) & faculty != "") {p(class = "people-faculty", paste0("Faculty of ", faculty))},
+      if (faculty == "" & !is.null(affiliate_organization)) {
+        p(class = "people-faculty", affiliate_organization)
+        },
+      div(class = "people-contact", contact_items, social_links)
+    )
+  ),
+  mission_block,
+  # custom content would most likely go here, right after the mission_block
+  div(class = "people-content",
+    interests_block,
+    publications_block
+  )
+)
+
+# Render the profile
+browsable(profile)  
+```
+

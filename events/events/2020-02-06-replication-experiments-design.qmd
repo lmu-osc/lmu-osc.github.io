@@ -1,0 +1,64 @@
+---
+title: Design of Replication Experiments
+categories: Workshop
+event:
+  description: ''
+  start_date: '2020-02-06'
+  end_date: ''
+  time: ''
+  location:
+    name: Richard-Wagner-Straße 10, D105
+    address: ''
+    map_url: ''
+  format:
+    type: Workshop
+    detail: ''
+  language:
+    primary: English
+    primary-code: en
+    detail: ''
+links:
+  registration: ''
+  materials: ''
+  workshop_website: ''
+event_description: ''
+instructors:
+  - name: Leonhard Held
+    url: ''
+  - name: Charlotte Micheloud
+    url: ''
+  - name: Samuel Pawel
+    url: ''
+helpers:
+  - name: ''
+contact:
+  name: Ulrich Mansmann
+  email: mansmann@ibe.med.uni-muenchen.de
+organizers:
+  - name: Prof. Dr. Ulrich Mansmann
+    url: ''
+host:
+  - name: LMU Open Science Center
+    url: ''
+
+---
+<!-- MANDAORY SECTION START  -->
+
+{{< include templates/_setup.qmd >}}
+{{< include templates/_info_boxes.qmd >}}
+{{< include templates/_register_button.qmd >}}
+<!-- MANDAORY SECTION END  -->
+
+<br>
+
+<!-- DETAILED EVENT DESCRIPTION HERE OR USE THE TEMPLATE BELOW TO INCLUDE THE STANDARD DESCRIPTION SECTION -->
+<!-- {{< include templates/_event_description.qmd >}} -->
+
+<p>Statistical power is of central importance in assessing the reliability of science. Appropriate design of a replication study is key to tackling the replication crisis as many such studies are currently severely under-powered. The workshop will describe standard and more advanced methods to calculate the required sample size of a replication study taking into account the results of an original discovery study. Participants will learn how to use the R-package ReplicationSuccess. Prerequisites include basic R-knowledge and familiarity with concepts of statistical inference.</p><p> </p><p>Trainer:</p><p>Leonhard Held is Professor of Biostatistics at the University of Zurich and Director of the Center for Reproducible Science. Charlotte Micheloud and Samuel Pawel are PhD students developing new methodology for the design and analysis of replication experiments.</p><div class="g-clear"></div>
+
+
+
+<!-- MANDAORY SECTION START  -->
+<!-- _event_description.qmd template should always be at bottom -->
+{{< include templates/_instructors_helpers_contact.qmd >}}
+<!-- MANDAORY SECTION END  -->

@@ -1,0 +1,60 @@
+---
+title: Good Scientific Practices
+categories: Workshop
+event:
+  description: ''
+  start_date: '2019-02-12'
+  end_date: ''
+  time: ''
+  location:
+    name: Leopoldstr. 13, 80802 München
+    address: ''
+    map_url: ''
+  format:
+    type: Workshop
+    detail: ''
+  language:
+    primary: English
+    primary-code: en
+    detail: ''
+links:
+  registration: ''
+  materials: ''
+  workshop_website: ''
+event_description: ''
+instructors:
+  - name: Dr. Michael Mende
+    url: ''
+helpers:
+  - name: ''
+contact:
+  name: Felix Schönbrodt
+  email: felix.schoenbrodt@psy.lmu.de
+organizers:
+  - name: Prof. Dr. Felix Schönbrodt
+    url: ''
+host:
+  - name: LMU Open Science Center
+    url: ''
+
+---
+<!-- MANDAORY SECTION START  -->
+
+{{< include templates/_setup.qmd >}}
+{{< include templates/_info_boxes.qmd >}}
+{{< include templates/_register_button.qmd >}}
+<!-- MANDAORY SECTION END  -->
+
+<br>
+
+<!-- DETAILED EVENT DESCRIPTION HERE OR USE THE TEMPLATE BELOW TO INCLUDE THE STANDARD DESCRIPTION SECTION -->
+<!-- {{< include templates/_event_description.qmd >}} -->
+
+<p>The OSC offers a workshop for graduate students, PostDocs and faculty members on <a href="https://gsparmed.wixsite.com/website">"Good Scientific Practices and how to Avoid Research Misconduct" (GSP|ARM!d)</a> led by <strong>Dr. Michael Mende</strong> from the International Max Planck Research School for Translational Psychiatry (IMPRS-TP).</p><p>The workshop aims to bring participants up to date with the standard statutes of research integrity as well as local regulations at place. The course is structured around the <strong>DFG Curriculum</strong> „Good Scientific Practice“ for Courses in Science and Medicine (G. Sponholz | 10/2011), with particular emphasis on the following topics: <strong>Data</strong> storage, handling and protection,<strong> Documentation</strong>, <strong>Publication</strong> process and <strong>Authorship</strong>, <strong>Plagiarism </strong>and <strong>Conflict Resolution</strong>. During the workshop, participants will be engaged in discussions, group work, role play and case studies. All participants will receive relevant material: a tool-kit with institutional guidelines, local contact points, links to useful web resources as well as relevant publications, which they can refer to throughout their scientific careers.</p><p>For further information take a look at the <a href="https://gsparmed.wixsite.com/website">GSP|ARM!d Website</a> or contact <a href="mailto:felix.schoenbrodt@psy.lum.de">Felix Schönbrodt</a>. Sign up via <a href="https://terminplaner4.dfn.de/oscgsp">https://terminplaner4.dfn.de/oscgsp</a><a href="mailto:felix.schoenbrodt@psy.lum.de"> </a></p><div class="g-clear"></div>
+
+
+
+<!-- MANDAORY SECTION START  -->
+<!-- _event_description.qmd template should always be at bottom -->
+{{< include templates/_instructors_helpers_contact.qmd >}}
+<!-- MANDAORY SECTION END  -->

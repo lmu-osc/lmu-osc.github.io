@@ -1,0 +1,63 @@
+---
+title: Increasing Transparency Through Preregistration and/or Multiverse Analyses
+categories: Lecture
+event:
+  description: ''
+  start_date: '2024-03-14'
+  end_date: ''
+  time: ''
+  location:
+    name: Hybrid (Leopoldstraße 13, room 3322, Munich and via Zoom)
+    address: ''
+    map_url: ''
+  format:
+    type: Lecture
+    detail: ''
+  language:
+    primary: English
+    primary-code: en
+    detail: ''
+links:
+  registration: ''
+  materials: ''
+  workshop_website: ''
+event_description: ''
+instructors:
+  - name: ''
+    url: ''
+helpers:
+  - name: ''
+contact:
+  name: Malika Ihle
+  email: malika.ihle@lmu.de
+organizers:
+  - name: Dr. Malika Ihle
+    url: ''
+host:
+  - name: LMU Open Science Center
+    url: ''
+presenters:
+  - name: Prof. Dr. Andrea Hildebrandt
+    url: ''
+
+---
+<!-- MANDAORY SECTION START  -->
+
+{{< include templates/_setup.qmd >}}
+{{< include templates/_info_boxes.qmd >}}
+{{< include templates/_register_button.qmd >}}
+<!-- MANDAORY SECTION END  -->
+
+<br>
+
+<!-- DETAILED EVENT DESCRIPTION HERE OR USE THE TEMPLATE BELOW TO INCLUDE THE STANDARD DESCRIPTION SECTION -->
+<!-- {{< include templates/_event_description.qmd >}} -->
+
+<p><strong>Abstract</strong>: Pre-registering an analysis plan means committing to analytical steps without knowing the results of the research. Multiverse analysis means committing to multiple, defensible analytical steps and investigating the robustness of the results across analytical choices. Assuming that all listeners are familiar with 'The preregistration revolution' (Nosek et al., 2018, PNAS), after a brief introduction to the rationale for multiverse analysis, I will argue in this talk that the two proposed tools for the credibility revolution (pre-registration and multiverse analysis) should be used together.</p><p><strong>Instructor</strong>: Andrea Hildebrandt, Professor for Psychological Methods and Statistics at the Carl von Ossietzky Universität Oldenburg, Department of Psychology</p><p><strong>Participants</strong>: Researchers from all quantitative fields, all career stages</p><p><strong>Logistics</strong>: There are no prerequisites. The format of the session is hybrid (you can attend online or in person). The event will be held in English. Participation in the lecture is free and open to all.</p><div class="g-clear"></div>
+
+
+
+<!-- MANDAORY SECTION START  -->
+<!-- _event_description.qmd template should always be at bottom -->
+{{< include templates/_instructors_helpers_contact.qmd >}}
+<!-- MANDAORY SECTION END  -->

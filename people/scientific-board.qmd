@@ -4,14 +4,72 @@ listing:
   - id: current-scientific-board
     contents: 
       - people
-    template: listings/management-listing.ejs
+    template: listings/active-scientific-board-listing.ejs
     sort: "surname asc"
-    include: 
-      membertype: "current scientific board"
+
 ---
-The OSC is directed by a board of five scientific members and managed by a managing director. The board is elected every two years by the members of the OSC at a general meeting. The board members are supposed to represent various disciplines. The scientific board members for the current term (2025 - 2027) are:
+The OSC is steered by an interdisciplinary scientific board elected every two years by the members of the OSC during a general assembly.
 
 ## Current Scientific Board
 
 ::: {#current-scientific-board}
 :::
+
+## Past Scientific Board Members
+
+::::: {.columns}
+
+:::: {.column width="50%"}
+
+### 2023-2025
+
+- [Prof. Dr. Ralf Ludwig](people/ralf-ludwig.qmd) (Geography, **Speaker** until 2024)
+- [Prof. Dr. Nikolaus Plesnila](people/nikolaus-plesnila.qmd) (Neurosciences, **Speaker** from 2024)
+- [Prof. Dr. Niels Dingemanse](people/niels-dingemanse.qmd) (Evolutionary Biology, until 2024)
+- [Dr. Sabine Hoffman](people/sabine-hoffmann.qmd) (Medical Statistics)
+- [Prof. Dr. Alexander Wuttke](people/alexander-wuttke.qmd) (Politics)
+- [Dr. Tobias Straub](people/tobias-straub.qmd) (Bio-Medical Center, since 2024)
+::::
+
+:::: {.column width="50%"}
+
+### 2021-2023
+
+- [Prof. Dr. Katrin Auspurg](people/katrin-auspurg.qmd) (Sociology, **Speaker**)
+- [Prof. Dr. Ralf Ludwig](people/ralf-ludwig.qmd) (Geography, **Speaker**)
+- [Prof. Dr. Ralf Elsas](people/ralf-elsas.qmd) (Economics)
+- [Prof. Dr. Nikolaus Plesnila](people/nikolaus-plesnila.qmd) (Neurosciences)
+- [Dr. Julia Schulte-Cloos](people/julia-schulte-cloos.qmd) (Political Science, 2021-2022)
+- [Dr. Sabine Hoffman](people/sabine-hoffmann.qmd) (Medical Statistics, 2022-2023)
+
+::::
+
+:::::
+
+::::: {.columns}
+
+:::: {.column width="50%"}
+
+### 2019-2021
+
+- [Prof. Dr. Katrin Auspurg](people/katrin-auspurg.qmd) (Sociology, **Speaker**)
+- [Prof. Dr. Anne-Laure Boulesteix](people/anne-laure-boulesteix.qmd) (Statistics, Medicine)
+- [Prof. Dr. Ralf Elsas](people/ralf-elsas.qmd) (Economics)
+- [Prof. Dr. Ralf Ludwig](people/ralf-ludwig.qmd) (Geography)
+- [Dr. Xenia Schmalz](people/xenia-schmalz.qmd) (Psychology/ Psychiatry)
+
+::::
+
+:::: {.column width="50%"}
+
+### 2017-2019
+
+- [Prof. Dr. Katrin Auspurg](people/katrin-auspurg.qmd) (Sociology, **Speaker**)
+- [Prof. Dr. Anne-Laure Boulesteix](people/anne-laure-boulesteix.qmd) (Statistics, Medicine)
+- [Prof. Dr. Ralf Elsas](people/ralf-elsas.qmd) (Economics)
+- [Prof. Dr. Ralf Ludwig](people/ralf-ludwig.qmd) (Geography)
+- [Prof. Dr. Felix Schönbrodt](people/felix-schoenbrodt.qmd) (Psychology)
+
+::::
+
+:::::

@@ -11,7 +11,7 @@ website:
   search: true
   page-navigation: true
   repo-url: https://github.com/lmu-osc/lmu-osc.github.io
-  repo-actions: [edit, issue]
+  repo-actions: [none]
 
   announcement: 
     icon: info-circle
@@ -39,21 +39,21 @@ website:
         # href: people/overview.qmd
         menu: 
           - people/management.qmd
-          - people/staff.qmd
+          - text: Staff
+            href: people/staff.qmd
           - people/scientific-board.qmd
           - people/advisors.qmd
           - people/members.qmd
           - people/fellows.qmd
-          - people/alumnae.qmd
       - text: Partners
         icon: boxes
         menu:
           - text: Institutional Members
-            href: partners/institutional_members.qmd
+            href: partners/institutional-members.qmd
           - text: Local Open Science Initiatives
-            href: partners/local_os_initiatives.qmd
+            href: partners/local-os-initiatives.qmd
           - text: Other LMU Support Services
-            href: partners/other_lmu_support_services.qmd
+            href: partners/other-lmu-support-services.qmd
           - text: External Partners
             href: partners/externals.qmd
           - text: Funders
@@ -81,28 +81,38 @@ website:
         - section: "Training Tracks"
           href: training/index.qmd
           contents:
-            - section: "Self-Training"
-              href: training/self_training.qmd 
+            - section: "Self-Learning Catalog"
+              href: training/self-learning.qmd 
               contents:
                 - text: "Principles"
                   href: training/principles/index.qmd
-                  contents: training/principles/*
+                  contents: 
+                    - auto: "training/principles/*.qmd"
+                    - training/principles/principles-tutorials.yaml
                 - text: "Study Planning"
-                  href: training/study_planning/index.qmd
-                  contents: training/study_planning/*
+                  href: training/study-planning/index.qmd
+                  contents: 
+                    - auto: "training/study-planning/*.qmd"
+                    - training/study-planning/study-planning-tutorials.yaml
                 - text: "Data Management"
-                  href: training/data_management/index.qmd
-                  contents: training/data_management/*
+                  href: training/data-management/index.qmd
+                  contents: 
+                    - auto: "training/data-management/*.qmd"
+                    - training/data-management/data-management-tutorials.yaml
                 - text: "Reproducible Processes"
-                  href: training/reproducible_processes/index.qmd
-                  contents: training/reproducible_processes/*
+                  href: training/reproducible-processes/index.qmd
+                  contents: 
+                    - auto: "training/reproducible-processes/*.qmd"
+                    - training/reproducible-processes/reproducible-processes-tutorials.yaml
                 - text: "Publishing Outputs"
-                  href: training/publishing_outputs/index.qmd
-                  contents: training/publishing_outputs/*
-            - text: "Open Research Cycle"
-              href: training/open_research_cycle.qmd
-            - text: "Educator toolkit"
-              href: training/train_the_trainer.qmd
+                  href: training/publishing-outputs/index.qmd
+                  contents: 
+                    - auto: "training/publishing-outputs/*.qmd"
+                    - training/publishing-outputs/publishing-outputs-tutorials.yaml
+            - text: "Research Cycle Handbook"
+              href: training/open-research-cycle.qmd
+            - text: "Educator Toolkit"
+              href: training/train-the-trainer.qmd
         
     - id: partners
       collapse-level: 3
@@ -112,24 +122,24 @@ website:
           href: partners/index.qmd
           contents:
             - text: "Institutional Members"
-              href: partners/institutional_members.qmd 
+              href: partners/institutional-members.qmd 
             - section: "Local Open Science Initiatives"
-              href: partners/local_os_initiatives.qmd
+              href: partners/local-os-initiatives.qmd
               contents:
                 - text: "OSIM"
-                  href: partners/local_os_initiatives/osim.qmd
+                  href: partners/local-os-initiatives/osim.qmd
                 - text: "OSIS"
-                  href: partners/local_os_initiatives/osis.qmd
+                  href: partners/local-os-initiatives/osis.qmd
                 - text: "OSIP"
-                  href: partners/local_os_initiatives/osip.qmd
+                  href: partners/local-os-initiatives/osip.qmd
                 - text: "ReproducibiliTea"
-                  href: partners/local_os_initiatives/reproducibilitea.qmd
+                  href: partners/local-os-initiatives/reproducibilitea.qmd
                 - text: "Hacky Hour"
-                  href: partners/local_os_initiatives/hackyhour.qmd
+                  href: partners/local-os-initiatives/hacky-hour.qmd
                 - text: "Munich RSE"
-                  href: partners/local_os_initiatives/munich_rse.qmd
+                  href: partners/local-os-initiatives/munich-rse.qmd
             - text: "Other LMU Support Services"
-              href: partners/other_lmu_support_services.qmd 
+              href: partners/other-lmu-support-services.qmd 
             - text: "External Partners"
               href: partners/externals.qmd 
             - text: "Funders"
@@ -144,7 +154,7 @@ website:
           contents:
             - text: "Management"
               href: people/management.qmd
-            - text: "Staff & HiWis"
+            - text: "Staff & Research Assistants"
               href: people/staff.qmd 
             - text: "Scientific Board"
               href: people/scientific-board.qmd 
@@ -154,8 +164,6 @@ website:
               href: people/members.qmd 
             - text: "Fellows"
               href: people/fellows.qmd 
-            - text: "Alumnae"
-              href: people/alumnae.qmd
 
 
 format:
@@ -166,13 +174,14 @@ format:
       - lmu-osc-custom.scss
     css: 
       - https://raw.githubusercontent.com/lmu-osc/branding-resources/refs/heads/main/styles.css
+      - /assets/bootstrap-5.3.8-dist/css/bootstrap.min.css
       - assets/fontawesome-free-7.1.0-web/css/all.min.css
       - styles.css
       - footer/footer-style.css
       - custom-navbar.css
     toc: true
     include-in-header:
-      - file: matomo_analytics.html
+      - file: matomo-analytics.html
     include-after-body:
       - file: footer/footer.html
       

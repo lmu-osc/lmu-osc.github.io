@@ -1,0 +1,61 @@
+---
+title: Christina Peter
+academic_title: Prof. Dr.
+name: Christina Peter
+surname: Peter
+first_name: Christina
+memberships:
+  - type: affiliate
+    status: active
+affiliate_info:
+  role: Social Sciences
+  organization: University of Klagenfurt
+email: christina.peter@aau.at
+photo: 'images/peter_christina.jpg'
+links:
+  - label: 'Personal Website'
+    url: https://christina-peter.jimdosite.com/
+social_media:
+  ORCID: 'https://orcid.org/0000-0002-1949-259X'
+mission_statement:
+  - I am a full professor at the Department of Media and Communications at the University of Klagenfurt. Before that, I was a researcher at the Department of Media and Communication at LMU. For me, open science is one of the most important and pressing issues for the scientific community as a whole. In my discipline, this topic has gained momentum in recent years, but there is still much to be done. Therefore, I would like to contribute to the promotion of open scientific practices within the communication community and help to make science more transparent, efficient and accessible to the public. Trust in science is of paramount importance for modern societies, and for me, open scientific practices are an indispensable part of this process.
+---
+{{< include templates/_setup.qmd >}}
+{{< include templates/_contact_items.qmd >}}
+{{< include templates/_social_links.qmd >}}
+{{< include templates/_mission_statement.qmd >}}
+{{< include templates/_research_interests.qmd >}}
+{{< include templates/_selected_publications.qmd >}}
+
+
+
+```{r}
+#| echo: false
+
+# Compose the full profile
+profile <- div(class = "people-profile",
+  div(class = "people-header",
+    div(class = "people-photo",
+      img(src = photo)
+    ),
+    div(class = "people-info",
+      p(class = "people-position", position),
+      if (!is.null(faculty) & faculty != "") {p(class = "people-faculty", paste0("Faculty of ", faculty))},
+      if (faculty == "" & !is.null(affiliate_organization)) {
+        p(class = "people-faculty", affiliate_organization)
+        },
+      div(class = "people-contact", contact_items, social_links)
+    )
+  ),
+  mission_block,
+  # custom content would most likely go here, right after the mission_block
+  div(class = "people-content",
+    interests_block,
+    publications_block
+  )
+)
+
+# Render the profile
+browsable(profile)  
+```
+

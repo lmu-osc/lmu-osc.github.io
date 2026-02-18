@@ -1,0 +1,14 @@
+---
+title: "Data Management"
+description: "From preserving **anonymity** to **FAIR data sharing**"
+tutorial-home-order: 03
+image: "../images/data management.svg"
+listing:
+  type: default
+  contents:
+    - /**.qmd
+    - data-management-tutorials.yaml
+  fields: [title, description, categories, image, type]
+  sort:
+    - within_cat_order
+---

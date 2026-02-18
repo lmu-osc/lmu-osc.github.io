@@ -1,0 +1,60 @@
+---
+title: Hans-Joachim Anders
+academic_title: Prof. Dr.
+name: Hans-Joachim Anders
+surname: Anders
+first_name: Hans-Joachim
+position: Head of Department
+faculty: University Hospital
+memberships:
+  - type: lmu-individual
+    status: active
+email: hjanders@med.uni-muenchen.de
+photo: 'images/anders_hans-joachim.jpg'
+links:
+  - label: 'LMU Profile'
+    url: https://www.kidney-immunology-lab-munich.de/anders-lab
+social_media:
+  ORCID: 'https://orcid.org/0000-0003-2434-2956'
+mission_statement:
+  - The different aspects of Open Science are important to increase transparency and reproducibility of research. My own focus is to improve the predictive capacity of preclinical studies for the outcome of subsequent clinical trials. We develop concepts and perform preclinical randomized trials (pRCTs), in a single centre or multicenter design, to reduce the existing gap in the design of pRCTs and human RCTs.
+---
+{{< include templates/_setup.qmd >}}
+{{< include templates/_contact_items.qmd >}}
+{{< include templates/_social_links.qmd >}}
+{{< include templates/_mission_statement.qmd >}}
+{{< include templates/_research_interests.qmd >}}
+{{< include templates/_selected_publications.qmd >}}
+
+
+
+```{r}
+#| echo: false
+
+# Compose the full profile
+profile <- div(class = "people-profile",
+  div(class = "people-header",
+    div(class = "people-photo",
+      img(src = photo)
+    ),
+    div(class = "people-info",
+      p(class = "people-position", position),
+      if (!is.null(faculty) & faculty != "") {p(class = "people-faculty", paste0("Faculty of ", faculty))},
+      if (faculty == "" & !is.null(affiliate_organization)) {
+        p(class = "people-faculty", affiliate_organization)
+        },
+      div(class = "people-contact", contact_items, social_links)
+    )
+  ),
+  mission_block,
+  # custom content would most likely go here, right after the mission_block
+  div(class = "people-content",
+    interests_block,
+    publications_block
+  )
+)
+
+# Render the profile
+browsable(profile)  
+```
+

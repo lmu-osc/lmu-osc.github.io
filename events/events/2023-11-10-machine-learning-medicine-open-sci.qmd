@@ -1,0 +1,47 @@
+---
+title: 'OSIM Meetup: Open Science in ML and Medicine'
+categories: OSIM Meetup
+
+event:
+  description: "Discussion on open science challenges and practices in machine learning and medicine"
+  start_date: "10 Nov, 2023"
+  time: "14:00 CET"
+  format:
+    type: "Hybrid"
+    details: "In-person & Online"
+  language:
+    primary: "English"
+    primary-code: "en"
+
+instructors: []
+
+presenters:
+  - name: "Michael Ingrisch"
+    affiliation: "Department of Radiology, LMU University Hospital"
+  - name: "Guillaume Landry"
+    affiliation: "Department of Radiation Oncology, LMU University Hospital"
+
+contact: 
+    name: "OSC team"
+    email: "osc@lmu.de"
+
+organizers:
+  - name: "Anne-Laure Boulesteix"
+  - name: "Christina Nießl"
+
+host:
+  - name: Open Science Initiative in Medicine
+  
+---
+
+
+{{< include templates/_setup.qmd >}}
+{{< include templates/_info_boxes.qmd >}}
+{{< include templates/_register_button.qmd >}}
+
+
+## Event Details
+
+**Speakers:** Michael Ingrisch (Department of Radiology) and Guillaume Landry (Department of Radiation Oncology), LMU University Hospital
+
+**Date & Time:** 10 November 2023, 14:00 CET

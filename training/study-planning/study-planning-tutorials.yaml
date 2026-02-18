@@ -1,0 +1,33 @@
+- title: "TBA: Preregistration: Why and How?"
+  description: "Tutorial in progress..."
+  image: "../images/preregistration.svg"
+  categories:
+    - Preregistration
+  content_category:
+    - Study Planning
+  within_cat_order: 10
+  # path: 
+  # type: Self-Paced Tutorial
+
+- title: "Introduction to Data Simulations in R"
+  description: "How to simulate data in R to prepare your studies"
+  image: "../images/data simulation in R.svg"
+  categories:
+    - Data Simulation
+  content_category:
+    - Study Planning
+  within_cat_order: 20
+  path: "https://lmu-osc.github.io/Introduction-Simulations-in-R/"
+  type: Self-Paced Tutorial
+
+- title: "Simulations for Advanced Power Analyses"
+  description: "This tutorial provides a deeper dive into simulations in R, with emphasis on GLMs, LMEs, and SEMs"
+  image: "../images/advanced data simulation in R.svg"
+  categories:
+    - Data Simulation
+    - Power Analyses
+  content_category:
+    - Study Planning
+  within_cat_order: 30
+  path: "https://lmu-osc.github.io/Simulations-for-Advanced-Power-Analyses/"
+  type: Self-Paced Tutorial

@@ -1,0 +1,63 @@
+---
+title: The Harmonic Mean Chi-Squared Test to Substantiate Scientific Findings
+categories: Lecture
+event:
+  description: ''
+  start_date: '2020-02-05'
+  end_date: ''
+  time: ''
+  location:
+    name: Luisenstraße 37, Room C006
+    address: ''
+    map_url: ''
+  format:
+    type: Lecture
+    detail: ''
+  language:
+    primary: English
+    primary-code: en
+    detail: ''
+links:
+  registration: ''
+  materials: ''
+  workshop_website: ''
+event_description: ''
+instructors:
+  - name: ''
+    url: ''
+helpers:
+  - name: ''
+contact:
+  name: Ulrich Mansmann
+  email: mansmann@ibe.med.uni-muenchen.de
+organizers:
+  - name: Prof. Dr. Ulrich Mansmann
+    url: ''
+host:
+  - name: LMU Open Science Center
+    url: ''
+presenters:
+  - name: Prof. Dr. Leonhard Held
+    url: ''
+
+---
+<!-- MANDAORY SECTION START  -->
+
+{{< include templates/_setup.qmd >}}
+{{< include templates/_info_boxes.qmd >}}
+{{< include templates/_register_button.qmd >}}
+<!-- MANDAORY SECTION END  -->
+
+<br>
+
+<!-- DETAILED EVENT DESCRIPTION HERE OR USE THE TEMPLATE BELOW TO INCLUDE THE STANDARD DESCRIPTION SECTION -->
+<!-- {{< include templates/_event_description.qmd >}} -->
+
+<p>We are glad to announce the following upcoming talk "<strong>The harmonic mean chi-squared test to substantiate scientific findings</strong>" by <strong>Prof. Dr. Leonhard Held </strong>who is Professor of Biostatistics at the University of Zurich and Director of the Center for Reproducible Science</p><p><strong>Abstract:</strong></p><p>Statistical methodology plays a crucial role in drug regulation. Decisions by the FDA or EMA are typically made based on multiple primary studies testing the same medical product, where the two-trials rule is the standard requirement, despite a number of shortcomings. A new approach is proposed for this task based on the (weighted) harmonic mean of the squared study-specific test statistics. Appropriate scaling ensures that, for any number of studies, the null distribution is a chi-squared distribution with one degree of freedom. Further properties are discussed and a comparison with the two-trials rule is made, as well as with alternative research synthesis methods. An attractive feature of the new approach is that a claim of success requires each study to be convincing on its own to a certain degree depending on the significance level and the number of studies. A real example with 5 clinical trials investigating the effect of Carvedilol for the treatment of patients with moderate to severe heart failure patients is used to illustrate the methodology. As a by-product, the approach provides a calibration of the sceptical p-value recently proposed for the analysis of replication studies.</p><p><strong>Speaker:</strong></p><p>Leonhard Held is Professor of Biostatistics at the University of Zurich and Director of the Center for Reproducible Science.</p><p> </p><div class="g-clear"></div>
+
+
+
+<!-- MANDAORY SECTION START  -->
+<!-- _event_description.qmd template should always be at bottom -->
+{{< include templates/_instructors_helpers_contact.qmd >}}
+<!-- MANDAORY SECTION END  -->

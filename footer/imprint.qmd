@@ -21,27 +21,9 @@ format:
 #quarto-content.page-columns main.column-page{
     margin:0 auto;
     max-width: 1200px;
-    padding: 2rem;
+    padding: 5rem;
     width:100%;
     background-color: #f9fcf9;
-}
-
-
-.imprint-container {
-    padding: 3rem 4rem;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin-bottom: 1rem;
-    box-shadow: 0 3px 6px #bfc7cf6c;
-    background-color:var(--osc-white);
-}
-
-.imprint-title h3{
-    font-size: 2.3rem;
-    font-weight: 900;
-    line-height: 1.5;
-    color:var(--primary-color);
 }
 
 h4{
@@ -67,9 +49,6 @@ h4{
 
 :::{.imprint-container}
 
-:::{.imprint-title}
-### Imprint and Disclaimer
-:::
 Information pursuant to § 5 Telemedia Law and § 18 Abs. 2 Medienstaatsvertrag (MStV)
 
 Ludwig-Maximilians-Universität München is a state institution of the Free State of Bavaria and a legal entity under public law (Art. 4 (1) sentence 1 BayHIG). It is legally represented by its President, Professor Dr. med. Dr. h.c. Matthias H. Tschöp.

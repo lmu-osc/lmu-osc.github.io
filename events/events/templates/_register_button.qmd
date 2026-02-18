@@ -3,24 +3,48 @@
 #| message: false
 #| warning: false
 
+# Function to check if a link variable is valid and non-empty
+has_valid_link <- function(var_name) {
+  exists(var_name, inherits = TRUE) && {
+    val <- get(var_name, inherits = TRUE)
+    !is.null(val) && !is.na(val) && nzchar(trimws(as.character(val)))
+  }
+}
 
-tags$div(
-  class = "register-box d-flex gap-2 justify-content-center",
-  tags$a(
-    href = links_registration,
-    target = "_blank",
-    class = "btn btn-primary btn-pop",
-    HTML('<i class="bi bi-box-arrow-up-left"></i>'),
-    " Register"
-  ),
-  tags$a(
-    href = links_materials,
-    target = "_blank",
-    class = "btn btn-outline-primary btn-pop",
-    HTML('<i class="bi bi-download"></i>'),
-    " Materials"
+# Build list of buttons conditionally
+buttons <- list()
+
+if (has_valid_link("links_registration")) {
+  buttons <- c(buttons, list(
+    tags$a(
+      href = links_registration,
+      target = "_blank",
+      class = "btn btn-primary btn-pop",
+      HTML('<i class="bi bi-box-arrow-up-left"></i>'),
+      " Register"
+    )
+  ))
+}
+
+if (has_valid_link("links_materials")) {
+  buttons <- c(buttons, list(
+    tags$a(
+      href = links_materials,
+      target = "_blank",
+      class = "btn btn-outline-primary btn-pop",
+      HTML('<i class="bi bi-download"></i>'),
+      " Materials"
+    )
+  ))
+}
+
+# Only render the container div if there are any buttons
+if (length(buttons) > 0) {
+  tags$div(
+    class = "register-box d-flex gap-2 justify-content-center",
+    buttons
   )
-)
+}
 ```
 
 

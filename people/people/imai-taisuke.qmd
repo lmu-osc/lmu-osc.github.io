@@ -1,0 +1,58 @@
+---
+title: Imai Taisuke
+academic_title: Dr.
+name: Imai Taisuke
+surname: Taisuke
+first_name: Imai
+position: Researcher
+memberships:
+  - type: lmu-individual
+    status: alumni
+email: taisuke.imai@econ.lmu.de
+links:
+  - label: 'Personal Website'
+    url: https://www.taisukeimai.com/
+social_media:
+  ORCID: 'https://orcid.org/0000-0002-0610-8093'
+mission_statement:
+  - I am postdoctoral researcher at the Department of Economics, Seminar of Economic Theory. My main research field is microeconomic theory and behavioral economics, but I also have several projects on replication and meta-analysis.
+---
+{{< include templates/_setup.qmd >}}
+{{< include templates/_contact_items.qmd >}}
+{{< include templates/_social_links.qmd >}}
+{{< include templates/_mission_statement.qmd >}}
+{{< include templates/_research_interests.qmd >}}
+{{< include templates/_selected_publications.qmd >}}
+
+
+
+```{r}
+#| echo: false
+
+# Compose the full profile
+profile <- div(class = "people-profile",
+  div(class = "people-header",
+    div(class = "people-photo",
+      img(src = photo)
+    ),
+    div(class = "people-info",
+      p(class = "people-position", position),
+      if (!is.null(faculty) & faculty != "") {p(class = "people-faculty", paste0("Faculty of ", faculty))},
+      if (faculty == "" & !is.null(affiliate_organization)) {
+        p(class = "people-faculty", affiliate_organization)
+        },
+      div(class = "people-contact", contact_items, social_links)
+    )
+  ),
+  mission_block,
+  # custom content would most likely go here, right after the mission_block
+  div(class = "people-content",
+    interests_block,
+    publications_block
+  )
+)
+
+# Render the profile
+browsable(profile)  
+```
+

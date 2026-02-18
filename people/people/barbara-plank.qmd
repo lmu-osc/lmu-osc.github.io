@@ -1,0 +1,63 @@
+---
+title: Barbara Plank
+academic_title: Prof. Dr.
+name: Barbara Plank
+surname: Plank
+first_name: Barbara
+position: Chair for AI and Computational Linguistics, Co-Director Center for Information and Language Processing (CIS), MaiNLP (Munich AI & NLP lab) Research Group Leader
+faculty: 'Language & Literatures'
+memberships:
+  - type: lmu-individual
+    status: active
+email: bplank@cis.lmu.de
+photo: 'images/plank_barbara.jpg'
+links:
+  - label: 'Personal Website'
+    url: https://bplank.github.io/
+  - label: 'Professional Website'
+    url: https://mainlp.github.io/
+social_media:
+  ORCID: 'https://orcid.org/0000-0002-4394-1965'
+mission_statement:
+  - Sharing is caring! Open science is essential to drive progress, support transparency, reliability, reproducability and replicability of science. My research field is Natural Language Processing (NLP)/Computational Linguistics (CL). In NLP/CL, I strongly believe that sharing resources publicly (data, code, publications) has led to not only foster an inclusive research community, but has also contributed to lifting the field from a small research area into a central field in AI research, where the main goal is to develop inclusive language technology.
+  - Barbara Plank is affiliated with the Faculty of Language and Literatures and the Faculty of Mathematics, Informatics & Statistics, and part of the Center for Information and Language Processing (CIS)
+---
+{{< include templates/_setup.qmd >}}
+{{< include templates/_contact_items.qmd >}}
+{{< include templates/_social_links.qmd >}}
+{{< include templates/_mission_statement.qmd >}}
+{{< include templates/_research_interests.qmd >}}
+{{< include templates/_selected_publications.qmd >}}
+
+
+
+```{r}
+#| echo: false
+
+# Compose the full profile
+profile <- div(class = "people-profile",
+  div(class = "people-header",
+    div(class = "people-photo",
+      img(src = photo)
+    ),
+    div(class = "people-info",
+      p(class = "people-position", position),
+      if (!is.null(faculty) & faculty != "") {p(class = "people-faculty", paste0("Faculty of ", faculty))},
+      if (faculty == "" & !is.null(affiliate_organization)) {
+        p(class = "people-faculty", affiliate_organization)
+        },
+      div(class = "people-contact", contact_items, social_links)
+    )
+  ),
+  mission_block,
+  # custom content would most likely go here, right after the mission_block
+  div(class = "people-content",
+    interests_block,
+    publications_block
+  )
+)
+
+# Render the profile
+browsable(profile)  
+```
+

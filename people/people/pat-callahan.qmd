@@ -1,0 +1,71 @@
+---
+title: Pat Callahan
+academic_title: M.Sc. Epidemiology
+name: Pat Callahan
+surname: Callahan
+first_name: Pat
+position: Software Developer & Research Support
+memberships:
+  - type: fellow 
+    status: alumni
+  - type: staff
+    status: active
+display_weight_staff: 5
+osc_staff_title: Software Developer & Research Support
+personal: I'm a scientific research programmer with a Master's degree in epidemiology, focused on advancing reproducible and efficient research in the health sciences. I believe that treating scientific analyses as software development projects creates the standard, understandable frameworks necessary to address reproducibility challenges. My work centers on developing tools, creating educational resources, and supporting researchers in adopting computational best practices.
+email: Patrick.Callahan@lmu.de
+links:
+  - label: "Personal Website"
+    url: "https://neuroshepherd.github.io/"
+social_media:
+  GitHub: "https://github.com/NeuroShepherd"
+  ORCID: https://orcid.org/0000-0003-1769-7580
+mission_statement: |
+  I'm a scientific research programmer with a Master's degree in epidemiology, focused on advancing reproducible and efficient research in the health sciences. I believe that treating scientific analyses as software development projects creates the standard, understandable frameworks necessary to address reproducibility challenges. My work centers on developing tools, creating educational resources, and supporting researchers in adopting computational best practices.
+  
+  Since joining the OSC in 2023, I've been actively involved in teaching and content creation, including tutorials on [{renv}](https://lmu-osc.github.io/introduction-to-renv/) and [Zotero](https://lmu-osc.github.io/introduction-to-zotero/). I'm passionate about making computational tools accessible and fostering a culture where software development standards are integrated into scientific practice.
+  
+  My technical expertise spans R, Python, Go, JavaScript, SQL, Docker, and Linux, with a primary focus on R for reproducible workflows. I've developed the [{ordinalsimr}](https://cran.r-project.org/web/packages/ordinalsimr/index.html) package on CRAN and am building comprehensive full-stack developer skills. 
+  
+  **Working schedule:** I am available Monday to Thursday, often starting early in the morning.
+---
+{{< include templates/_setup.qmd >}}
+{{< include templates/_contact_items.qmd >}}
+{{< include templates/_social_links.qmd >}}
+{{< include templates/_mission_statement.qmd >}}
+{{< include templates/_research_interests.qmd >}}
+{{< include templates/_selected_publications.qmd >}}
+
+
+
+```{r}
+#| echo: false
+
+# Compose the full profile
+profile <- div(class = "people-profile",
+  div(class = "people-header",
+    div(class = "people-photo",
+      img(src = photo)
+    ),
+    div(class = "people-info",
+      p(class = "people-position", position),
+      if (!is.null(faculty) & faculty != "") {p(class = "people-faculty", paste0("Faculty of ", faculty))},
+      if (faculty == "" & !is.null(affiliate_organization)) {
+        p(class = "people-faculty", affiliate_organization)
+        },
+      div(class = "people-contact", contact_items, social_links)
+    )
+  ),
+  mission_block,
+  # custom content would most likely go here, right after the mission_block
+  div(class = "people-content",
+    interests_block,
+    publications_block
+  )
+)
+
+# Render the profile
+browsable(profile)  
+```
+
+

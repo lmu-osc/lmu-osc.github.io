@@ -1,0 +1,61 @@
+---
+title: Hans-Bernd Brosius
+academic_title: Prof. Dr.
+name: Hans-Bernd Brosius
+surname: Brosius
+first_name: Hans-Bernd
+position: Chair
+faculty: Social Sciences
+memberships:
+  - type: lmu-individual
+    status: active
+email: hans-bernd.brosius@ifkw.lmu.de
+photo: 'images/brosius_hans-bernd.jpg'
+links:
+  - label: 'LMU Profile'
+    url: https://www.en.ls1.ifkw.uni-muenchen.de/staff/chair/brosius_hansbernd/index.html
+social_media:
+  ORCID: 'https://orcid.org/0000-0001-7544-398X'
+mission_statement:
+  - I am professor for Empirical Communication Research at the Department of Communication Studies and Media Research.
+  - In my field of research, Open Science, reproducibility, and replicability are intensively discussed. We are thinking about replication journals, regulations for data archiving, and Open Access. However, no structural decisions have been made so far, neither at our department nor in the field as far as I oversee it.
+---
+{{< include templates/_setup.qmd >}}
+{{< include templates/_contact_items.qmd >}}
+{{< include templates/_social_links.qmd >}}
+{{< include templates/_mission_statement.qmd >}}
+{{< include templates/_research_interests.qmd >}}
+{{< include templates/_selected_publications.qmd >}}
+
+
+
+```{r}
+#| echo: false
+
+# Compose the full profile
+profile <- div(class = "people-profile",
+  div(class = "people-header",
+    div(class = "people-photo",
+      img(src = photo)
+    ),
+    div(class = "people-info",
+      p(class = "people-position", position),
+      if (!is.null(faculty) & faculty != "") {p(class = "people-faculty", paste0("Faculty of ", faculty))},
+      if (faculty == "" & !is.null(affiliate_organization)) {
+        p(class = "people-faculty", affiliate_organization)
+        },
+      div(class = "people-contact", contact_items, social_links)
+    )
+  ),
+  mission_block,
+  # custom content would most likely go here, right after the mission_block
+  div(class = "people-content",
+    interests_block,
+    publications_block
+  )
+)
+
+# Render the profile
+browsable(profile)  
+```
+

@@ -1,0 +1,61 @@
+---
+title: Julia Schulte-Cloos
+academic_title: Dr.
+name: Julia Schulte-Cloos
+surname: Schulte-Cloos
+first_name: Julia
+position: Researcher
+faculty: Social Sciences
+memberships:
+  - type: lmu-individual
+    status: active
+email: Julia.Schulte-Cloos@gsi.uni-muenchen.de
+photo: 'images/schulte-cloos_julia.jpg'
+links:
+  - label: 'LMU Profile'
+    url: https://www.gsi.uni-muenchen.de/personen/wiss_mitarbeiter/julia_schulte-cloos_dr/index.html
+social_media:
+  ORCID: 'https://orcid.org/0000-0001-7223-3602'
+mission_statement:
+  - I am LMU Research Fellow at the Geschwister Scholl Institute of Political Science and an advocate of open science. I have been actively involved in teaching reproducible research. I am convinced that spreading knowledge about research transparency tools and practices helps to promote support for open science among students and the scientific community.
+  - I am also a member of the <a href="https://www.bitss.org/catalysts/">catalyst network of the Berkeley Initiative for Transparency in the Social Sciences (BITSS)</a>.
+---
+{{< include templates/_setup.qmd >}}
+{{< include templates/_contact_items.qmd >}}
+{{< include templates/_social_links.qmd >}}
+{{< include templates/_mission_statement.qmd >}}
+{{< include templates/_research_interests.qmd >}}
+{{< include templates/_selected_publications.qmd >}}
+
+
+
+```{r}
+#| echo: false
+
+# Compose the full profile
+profile <- div(class = "people-profile",
+  div(class = "people-header",
+    div(class = "people-photo",
+      img(src = photo)
+    ),
+    div(class = "people-info",
+      p(class = "people-position", position),
+      if (!is.null(faculty) & faculty != "") {p(class = "people-faculty", paste0("Faculty of ", faculty))},
+      if (faculty == "" & !is.null(affiliate_organization)) {
+        p(class = "people-faculty", affiliate_organization)
+        },
+      div(class = "people-contact", contact_items, social_links)
+    )
+  ),
+  mission_block,
+  # custom content would most likely go here, right after the mission_block
+  div(class = "people-content",
+    interests_block,
+    publications_block
+  )
+)
+
+# Render the profile
+browsable(profile)  
+```
+
