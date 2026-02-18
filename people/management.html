@@ -83,9 +83,10 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-project','listing-website','listing-format','listing-language','listing-execute','listing-title','listing-academic_title','listing-name','listing-position','listing-faculty','listing-membertype','listing-photo','listing-email','listing-display_weight_management','listing-personal','listing-links','listing-social_media','listing-mission_statement','listing-research_interests','listing-publications','listing-path','listing-outputHref','listing-author','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-word-count','listing-display_weight_staff','listing-osc_staff_title',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
-      
-      searchColumns: ["listing-project","listing-website","listing-format","listing-language","listing-execute","listing-title","listing-academic_title","listing-name","listing-position","listing-faculty","listing-membertype","listing-photo","listing-email","listing-display_weight_management","listing-personal","listing-links","listing-social_media","listing-mission_statement","listing-research_interests","listing-publications","listing-path","listing-outputHref","listing-author","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count","listing-display_weight_staff","listing-osc_staff_title"],
+      valueNames: ['listing-project','listing-website','listing-format','listing-language','listing-execute','listing-title','listing-academic_title','listing-name','listing-surname','listing-first_name','listing-position','listing-faculty','listing-memberships','listing-email','listing-photo','listing-links','listing-social_media','listing-mission_statement','listing-path','listing-outputHref','listing-author','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-word-count','listing-affiliate_info','listing-personal','listing-osc_staff_title','listing-display_weight_staff','listing-research_interests','listing-affiliation','listing-display_weight','listing-display_weight_management','listing-publications',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
+      page: 25,
+    pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
+      searchColumns: ["listing-project","listing-website","listing-format","listing-language","listing-execute","listing-title","listing-academic_title","listing-name","listing-surname","listing-first_name","listing-position","listing-faculty","listing-memberships","listing-email","listing-photo","listing-links","listing-social_media","listing-mission_statement","listing-path","listing-outputHref","listing-author","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count","listing-affiliate_info","listing-personal","listing-osc_staff_title","listing-display_weight_staff","listing-research_interests","listing-affiliation","listing-display_weight","listing-display_weight_management","listing-publications"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -217,10 +218,6 @@ window.Quarto = {
     <a class="dropdown-item" href="../people/fellows.html">
  <span class="dropdown-text">Fellows</span></a>
   </li>  
-        <li>
-    <a class="dropdown-item" href="../people/alumnae.html">
- <span class="dropdown-text">Alumnae</span></a>
-  </li>  
     </ul>
   </li>
   <li class="nav-item dropdown ">
@@ -335,12 +332,6 @@ window.Quarto = {
  <span class="menu-text">Fellows</span></a>
   </div>
 </li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../people/alumnae.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Alumnae</span></a>
-  </div>
-</li>
       </ul>
   </li>
     </ul>
@@ -372,7 +363,7 @@ window.Quarto = {
 
 
 <div id="listing-management" class="quarto-listing quarto-listing-container-custom">
-<div class="card mb-3" data-index="0" data-listing-file-modified-sort="1771405192354" data-listing-reading-time-sort="2" data-listing-word-count-sort="276">
+<div class="card mb-3" data-index="0" data-listing-file-modified-sort="1771414176768" data-listing-reading-time-sort="2" data-listing-word-count-sort="276">
 <h4 class="card-header anchored">
 Managing Director of the OSC
 </h4>
@@ -412,7 +403,7 @@ Professor at the Department of Psychology, Ludwig-Maximilians-Universität Münc
 </div>
 </div>
 </div>
-<div class="card mb-3" data-index="1" data-listing-file-modified-sort="1771405192462" data-listing-reading-time-sort="2" data-listing-word-count-sort="275">
+<div class="card mb-3" data-index="1" data-listing-file-modified-sort="1771414176882" data-listing-reading-time-sort="2" data-listing-word-count-sort="275">
 <h4 class="card-header anchored">
 Scientific Coordinator
 </h4>
@@ -516,6 +507,9 @@ I am the Coordinator of the LMU Open Science Center, developing a comprehensive 
 }
 </style>
 <div class="listing-no-matching d-none">No matching items</div>
+<nav id="management-pagination" class="listing-pagination" aria-label="Page Navigation">
+  <ul class="pagination"></ul>
+</nav>
 </div>
 
 

@@ -30,7 +30,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../people/alumnae.html" rel="next">
 <link href="../people/members.html" rel="prev">
 <link href="../assets/img/lmu_osc_logo.jpg" rel="icon" type="image/jpeg">
 <script src="../site_libs/quarto-listing/list.min.js"></script>
@@ -83,14 +82,43 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-project','listing-website','listing-format','listing-language','listing-execute','listing-title','listing-academic_title','listing-name','listing-surname','listing-first_name','listing-position','listing-faculty','listing-membertype','listing-email','listing-photo','listing-social_media','listing-mission_statement','listing-path','listing-outputHref','listing-author','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-word-count','listing-links','listing-osc_staff_title','listing-display_weight_staff','listing-personal','listing-research_interests',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
+      valueNames: ['listing-project','listing-website','listing-format','listing-language','listing-execute','listing-title','listing-academic_title','listing-name','listing-surname','listing-first_name','listing-position','listing-faculty','listing-memberships','listing-email','listing-photo','listing-links','listing-social_media','listing-mission_statement','listing-path','listing-outputHref','listing-author','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-word-count','listing-affiliate_info','listing-personal','listing-osc_staff_title','listing-display_weight_staff','listing-research_interests','listing-affiliation','listing-display_weight','listing-display_weight_management','listing-publications',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
       page: 25,
     pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
-      searchColumns: ["listing-project","listing-website","listing-format","listing-language","listing-execute","listing-title","listing-academic_title","listing-name","listing-surname","listing-first_name","listing-position","listing-faculty","listing-membertype","listing-email","listing-photo","listing-social_media","listing-mission_statement","listing-path","listing-outputHref","listing-author","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count","listing-links","listing-osc_staff_title","listing-display_weight_staff","listing-personal","listing-research_interests"],
+      searchColumns: ["listing-project","listing-website","listing-format","listing-language","listing-execute","listing-title","listing-academic_title","listing-name","listing-surname","listing-first_name","listing-position","listing-faculty","listing-memberships","listing-email","listing-photo","listing-links","listing-social_media","listing-mission_statement","listing-path","listing-outputHref","listing-author","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count","listing-affiliate_info","listing-personal","listing-osc_staff_title","listing-display_weight_staff","listing-research_interests","listing-affiliation","listing-display_weight","listing-display_weight_management","listing-publications"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
     window['quarto-listings']['listing-fellows'] = new List('listing-fellows', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-alumni-fellows .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-project','listing-website','listing-format','listing-language','listing-execute','listing-title','listing-academic_title','listing-name','listing-surname','listing-first_name','listing-position','listing-faculty','listing-memberships','listing-email','listing-photo','listing-links','listing-social_media','listing-mission_statement','listing-path','listing-outputHref','listing-author','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-word-count','listing-affiliate_info','listing-personal','listing-osc_staff_title','listing-display_weight_staff','listing-research_interests','listing-affiliation','listing-display_weight','listing-display_weight_management','listing-publications',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
+      page: 25,
+    pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
+      searchColumns: ["listing-project","listing-website","listing-format","listing-language","listing-execute","listing-title","listing-academic_title","listing-name","listing-surname","listing-first_name","listing-position","listing-faculty","listing-memberships","listing-email","listing-photo","listing-links","listing-social_media","listing-mission_statement","listing-path","listing-outputHref","listing-author","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count","listing-affiliate_info","listing-personal","listing-osc_staff_title","listing-display_weight_staff","listing-research_interests","listing-affiliation","listing-display_weight","listing-display_weight_management","listing-publications"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-alumni-fellows'] = new List('listing-alumni-fellows', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -218,10 +246,6 @@ window.Quarto = {
     <a class="dropdown-item" href="../people/fellows.html">
  <span class="dropdown-text">Fellows</span></a>
   </li>  
-        <li>
-    <a class="dropdown-item" href="../people/alumnae.html">
- <span class="dropdown-text">Alumnae</span></a>
-  </li>  
     </ul>
   </li>
   <li class="nav-item dropdown ">
@@ -336,12 +360,6 @@ window.Quarto = {
  <span class="menu-text">Fellows</span></a>
   </div>
 </li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../people/alumnae.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Alumnae</span></a>
-  </div>
-</li>
       </ul>
   </li>
     </ul>
@@ -373,6 +391,8 @@ window.Quarto = {
 
 
 <p>OSC Fellows are early career researchers who do not have a PhD degree and who are (co-)leading grassroots initiatives or (co-)deliver training on open research. We are grateful for their valuable contributions! <a href="../about/join-us.html">Become a Fellow</a> <i class="bi bi-box-arrow-up-right"></i>.</p>
+<section id="fellows" class="level2">
+<h2 class="anchored" data-anchor-id="fellows">Fellows</h2>
 <div id="listing-fellows" class="quarto-listing quarto-listing-container-custom">
 <div class="container py-4">
 <div class="d-flex flex-wrap justify-content-center gap-4">
@@ -386,67 +406,6 @@ window.Quarto = {
 <a href="../people/people/alp-kaan-aksu.html" class="card-title">Alp Kaan Aksu</a>
 <div class="card-subtitle mt-auto text-muted">
 BSc Student
-</div>
-<p class="card-text mt-auto">
-Psychology &amp; Education
-</p>
-</div>
-</div>
-<div class="card d-flex flex-column align-items-center" style="width: 185px;">
-<!-- ORCID icon container (always present for consistent spacing) -->
-<div class="orcid-icon-container">
-<p><a href="https://orcid.org/0000-0003-1769-7580" target="_blank" class="orcid-icon"> <i class="fa-brands fa-orcid fa-lg"></i> </a></p>
-</div>
-<a href="../people/people/pat-callahan.html" class="profile-image-wrapper"> <img src="people//images/default.svg" alt="Profile" class="profile-image"> </a>
-<div class="card-body flex-column text-center">
-<a href="../people/people/pat-callahan.html" class="card-title">Pat Callahan</a>
-<div class="card-subtitle mt-auto text-muted">
-M.Sc. Epidemiology
-</div>
-</div>
-</div>
-<div class="card d-flex flex-column align-items-center" style="width: 185px;">
-<!-- ORCID icon container (always present for consistent spacing) -->
-<div class="orcid-icon-container">
-<p><a href="https://orcid.org/0000-0003-0558-6912" target="_blank" class="orcid-icon"> <i class="fa-brands fa-orcid fa-lg"></i> </a></p>
-</div>
-<a href="../people/people/giacomo-de-nicola.html" class="profile-image-wrapper"> <img src="people/images/de_nicola_giacomo.png" alt="Profile" class="profile-image"> </a>
-<div class="card-body flex-column text-center">
-<a href="../people/people/giacomo-de-nicola.html" class="card-title">Giacomo De Nicola</a>
-<div class="card-subtitle mt-auto text-muted">
-MSc
-</div>
-<p class="card-text mt-auto">
-Math, Informatics &amp; Stats
-</p>
-</div>
-</div>
-<div class="card d-flex flex-column align-items-center" style="width: 185px;">
-<!-- ORCID icon container (always present for consistent spacing) -->
-<div class="orcid-icon-container">
-
-</div>
-<a href="../people/people/benedikt-ehrenwirth.html" class="profile-image-wrapper"> <img src="people/images/ehrenwirth_benedikt.jpeg" alt="Profile" class="profile-image"> </a>
-<div class="card-body flex-column text-center">
-<a href="../people/people/benedikt-ehrenwirth.html" class="card-title">Benedikt Ehrenwirth</a>
-<div class="card-subtitle mt-auto text-muted">
-BSc Student
-</div>
-<p class="card-text mt-auto">
-Psychology &amp; Education
-</p>
-</div>
-</div>
-<div class="card d-flex flex-column align-items-center" style="width: 185px;">
-<!-- ORCID icon container (always present for consistent spacing) -->
-<div class="orcid-icon-container">
-
-</div>
-<a href="../people/people/franka-etzel.html" class="profile-image-wrapper"> <img src="people/images/etzel_franka.jpeg" alt="Profile" class="profile-image"> </a>
-<div class="card-body flex-column text-center">
-<a href="../people/people/franka-etzel.html" class="card-title">Franka Etzel</a>
-<div class="card-subtitle mt-auto text-muted">
-BSc
 </div>
 <p class="card-text mt-auto">
 Psychology &amp; Education
@@ -613,22 +572,6 @@ Medicine
 <div class="card d-flex flex-column align-items-center" style="width: 185px;">
 <!-- ORCID icon container (always present for consistent spacing) -->
 <div class="orcid-icon-container">
-<p><a href="https://orcid.org/0000-0003-4869-4630" target="_blank" class="orcid-icon"> <i class="fa-brands fa-orcid fa-lg"></i> </a></p>
-</div>
-<a href="../people/people/leyla-larsson.html" class="profile-image-wrapper"> <img src="people/images/larsson_leyla.jpg" alt="Profile" class="profile-image"> </a>
-<div class="card-body flex-column text-center">
-<a href="../people/people/leyla-larsson.html" class="card-title">Leyla Larsson</a>
-<div class="card-subtitle mt-auto text-muted">
-MSc
-</div>
-<p class="card-text mt-auto">
-University Hospital
-</p>
-</div>
-</div>
-<div class="card d-flex flex-column align-items-center" style="width: 185px;">
-<!-- ORCID icon container (always present for consistent spacing) -->
-<div class="orcid-icon-container">
 <p><a href="https://orcid.org/0000-0003-0518-9802" target="_blank" class="orcid-icon"> <i class="fa-brands fa-orcid fa-lg"></i> </a></p>
 </div>
 <a href="../people/people/maximilian-mandl.html" class="profile-image-wrapper"> <img src="people/images/mandl_maximilian.jpg" alt="Profile" class="profile-image"> </a>
@@ -741,38 +684,6 @@ Social Sciences
 <div class="card d-flex flex-column align-items-center" style="width: 185px;">
 <!-- ORCID icon container (always present for consistent spacing) -->
 <div class="orcid-icon-container">
-<p><a href="https://orcid.org/0000-0002-8500-6465" target="_blank" class="orcid-icon"> <i class="fa-brands fa-orcid fa-lg"></i> </a></p>
-</div>
-<a href="../people/people/leonhard-schramm.html" class="profile-image-wrapper"> <img src="people/images/schramm_leonhard.jpg" alt="Profile" class="profile-image"> </a>
-<div class="card-body flex-column text-center">
-<a href="../people/people/leonhard-schramm.html" class="card-title">Leonhard Schramm</a>
-<div class="card-subtitle mt-auto text-muted">
-MSc
-</div>
-<p class="card-text mt-auto">
-Psychology &amp; Education
-</p>
-</div>
-</div>
-<div class="card d-flex flex-column align-items-center" style="width: 185px;">
-<!-- ORCID icon container (always present for consistent spacing) -->
-<div class="orcid-icon-container">
-
-</div>
-<a href="../people/people/caspar-schumacher.html" class="profile-image-wrapper"> <img src="people/images/schumacher_caspar.jpeg" alt="Profile" class="profile-image"> </a>
-<div class="card-body flex-column text-center">
-<a href="../people/people/caspar-schumacher.html" class="card-title">Caspar Schumacher</a>
-<div class="card-subtitle mt-auto text-muted">
-BSc Student
-</div>
-<p class="card-text mt-auto">
-Psychology &amp; Education
-</p>
-</div>
-</div>
-<div class="card d-flex flex-column align-items-center" style="width: 185px;">
-<!-- ORCID icon container (always present for consistent spacing) -->
-<div class="orcid-icon-container">
 <p><a href="https://orcid.org/0009-0000-0305-9751" target="_blank" class="orcid-icon"> <i class="fa-brands fa-orcid fa-lg"></i> </a></p>
 </div>
 <a href="../people/people/tejaswini-sharma.html" class="profile-image-wrapper"> <img src="people/images/tejaswini-sharma_25-09-26_164-web.jpg" alt="Profile" class="profile-image"> </a>
@@ -783,38 +694,6 @@ M.Sc. Student
 </div>
 <p class="card-text mt-auto">
 Psychology and Education
-</p>
-</div>
-</div>
-<div class="card d-flex flex-column align-items-center" style="width: 185px;">
-<!-- ORCID icon container (always present for consistent spacing) -->
-<div class="orcid-icon-container">
-<p><a href="https://orcid.org/0000-0002-9406-7761" target="_blank" class="orcid-icon"> <i class="fa-brands fa-orcid fa-lg"></i> </a></p>
-</div>
-<a href="../people/people/jan-simson.html" class="profile-image-wrapper"> <img src="people/images/simson_jan.jpg" alt="Profile" class="profile-image"> </a>
-<div class="card-body flex-column text-center">
-<a href="../people/people/jan-simson.html" class="card-title">Jan Simson</a>
-<div class="card-subtitle mt-auto text-muted">
-MSc
-</div>
-<p class="card-text mt-auto">
-Math, Informatics &amp; Stats
-</p>
-</div>
-</div>
-<div class="card d-flex flex-column align-items-center" style="width: 185px;">
-<!-- ORCID icon container (always present for consistent spacing) -->
-<div class="orcid-icon-container">
-<p><a href="https://orcid.org/0000-0002-1592-0905" target="_blank" class="orcid-icon"> <i class="fa-brands fa-orcid fa-lg"></i> </a></p>
-</div>
-<a href="../people/people/po-chun-tseng.html" class="profile-image-wrapper"> <img src="people/images/tseng_po-chun.jpg" alt="Profile" class="profile-image"> </a>
-<div class="card-body flex-column text-center">
-<a href="../people/people/po-chun-tseng.html" class="card-title">Po-Chun Tseng</a>
-<div class="card-subtitle mt-auto text-muted">
-DDS, MSc
-</div>
-<p class="card-text mt-auto">
-Medicine
 </p>
 </div>
 </div>
@@ -837,22 +716,6 @@ Medicine
 <div class="card d-flex flex-column align-items-center" style="width: 185px;">
 <!-- ORCID icon container (always present for consistent spacing) -->
 <div class="orcid-icon-container">
-
-</div>
-<a href="../people/people/yijing-wang.html" class="profile-image-wrapper"> <img src="people//images/default.svg" alt="Profile" class="profile-image"> </a>
-<div class="card-body flex-column text-center">
-<a href="../people/people/yijing-wang.html" class="card-title">Yijing Wang</a>
-<div class="card-subtitle mt-auto text-muted">
-MSc
-</div>
-<p class="card-text mt-auto">
-Munich Medical Research School
-</p>
-</div>
-</div>
-<div class="card d-flex flex-column align-items-center" style="width: 185px;">
-<!-- ORCID icon container (always present for consistent spacing) -->
-<div class="orcid-icon-container">
 <p><a href="https://orcid.org/0009-0006-3725-6730" target="_blank" class="orcid-icon"> <i class="fa-brands fa-orcid fa-lg"></i> </a></p>
 </div>
 <a href="../people/people/elizabeth-waterfield.html" class="profile-image-wrapper"> <img src="people/images/waterfield_elizabeth.png" alt="Profile" class="profile-image"> </a>
@@ -863,38 +726,6 @@ M.Sc. Student
 </div>
 <p class="card-text mt-auto">
 Psychology and Education
-</p>
-</div>
-</div>
-<div class="card d-flex flex-column align-items-center" style="width: 185px;">
-<!-- ORCID icon container (always present for consistent spacing) -->
-<div class="orcid-icon-container">
-
-</div>
-<a href="../people/people/viktoria-wiegelmann.html" class="profile-image-wrapper"> <img src="people/images/wiegelmann_viktoria.jpeg" alt="Profile" class="profile-image"> </a>
-<div class="card-body flex-column text-center">
-<a href="../people/people/viktoria-wiegelmann.html" class="card-title">Viktoria Wiegelmann</a>
-<div class="card-subtitle mt-auto text-muted">
-BSc Student
-</div>
-<p class="card-text mt-auto">
-Psychology &amp; Education
-</p>
-</div>
-</div>
-<div class="card d-flex flex-column align-items-center" style="width: 185px;">
-<!-- ORCID icon container (always present for consistent spacing) -->
-<div class="orcid-icon-container">
-
-</div>
-<a href="../people/people/martin-wiehr.html" class="profile-image-wrapper"> <img src="people/images/wiehr_martin.jpg" alt="Profile" class="profile-image"> </a>
-<div class="card-body flex-column text-center">
-<a href="../people/people/martin-wiehr.html" class="card-title">Martin Wiehr</a>
-<div class="card-subtitle mt-auto text-muted">
-BSc Student
-</div>
-<p class="card-text mt-auto">
-Psychology &amp; Education
 </p>
 </div>
 </div>
@@ -1020,9 +851,57 @@ Math, Informatics &amp; Stats
   <ul class="pagination"></ul>
 </nav>
 </div>
+</section>
+<section id="alumni-fellows" class="level2">
+<h2 class="anchored" data-anchor-id="alumni-fellows">Alumni Fellows</h2>
+<div id="listing-alumni-fellows" class="quarto-listing quarto-listing-container-custom">
+<ul>
+<li>
+<a href="../people/people/pat-callahan.html">Pat Callahan, M.Sc. Epidemiology</a>
+</li>
+<li>
+<a href="../people/people/giacomo-de-nicola.html">Giacomo De Nicola, MSc</a>
+</li>
+<li>
+<a href="../people/people/benedikt-ehrenwirth.html">Benedikt Ehrenwirth, BSc Student</a>
+</li>
+<li>
+<a href="../people/people/franka-etzel.html">Franka Etzel, BSc</a>
+</li>
+<li>
+<a href="../people/people/leyla-larsson.html">Leyla Larsson, MSc</a>
+</li>
+<li>
+<a href="../people/people/leonhard-schramm.html">Leonhard Schramm, MSc</a>
+</li>
+<li>
+<a href="../people/people/caspar-schumacher.html">Caspar Schumacher, BSc Student</a>
+</li>
+<li>
+<a href="../people/people/jan-simson.html">Jan Simson, MSc</a>
+</li>
+<li>
+<a href="../people/people/po-chun-tseng.html">Po-Chun Tseng, DDS, MSc</a>
+</li>
+<li>
+<a href="../people/people/yijing-wang.html">Yijing Wang, MSc</a>
+</li>
+<li>
+<a href="../people/people/viktoria-wiegelmann.html">Viktoria Wiegelmann, BSc Student</a>
+</li>
+<li>
+<a href="../people/people/martin-wiehr.html">Martin Wiehr, BSc Student</a>
+</li>
+</ul>
+<div class="listing-no-matching d-none">No matching items</div>
+<nav id="alumni-fellows-pagination" class="listing-pagination" aria-label="Page Navigation">
+  <ul class="pagination"></ul>
+</nav>
+</div>
 
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -1437,9 +1316,6 @@ Math, Informatics &amp; Stats
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../people/alumnae.html" class="pagination-link" aria-label="Alumnae">
-        <span class="nav-page-text">Alumnae</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
   </div>
 </nav>
 </div> <!-- /content -->
