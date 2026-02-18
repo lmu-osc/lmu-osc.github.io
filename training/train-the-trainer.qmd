@@ -1,6 +1,30 @@
 ---
-title: "Educator toolkit"
+title: "Educator Toolkit"
 ---
+
+<style>
+a.btn-toolkit {
+  display: inline-block;
+  padding: 12px 20px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.2s ease;
+  color: white;
+}
+
+a.btn-toolkit-pedagogy {
+  background-color: #009933;
+}
+
+a.btn-toolkit-students {
+  background-color: #00008B;
+}
+
+a.btn-toolkit-researchers {
+  background-color: #8B7500;
+}
+</style>
 
 **Welcome!** Do you want to **teach** open, responsible, and reproducible research practices? Then our **educator toolkit** is for you!
 
@@ -15,38 +39,23 @@ In this toolkit, you can find:
 - **Pedagogical materials** and practical **guidance** for effectively **designing and delivering classes and workshops on Open Research topics** to diverse audiences. These materials include core didactic skills, learner engagement strategies, Open Science leadership, and accessibility practices. 
 
 <a href="https://lmu-osc.github.io/train-the-trainer-student-track-pedagogy/" target="_blank" 
-   style="display:inline-block;
-          padding:12px 20px;
-          background-color:#009933;
-          color:white;
-          text-decoration:none;
-          border-radius:8px;
-          font-weight:bold;">
-  Click here to develop your **pedagogical skills**!
+   class="btn-toolkit btn-toolkit-pedagogy"
+   aria-label="Develop your pedagogical skills (opens in new window)">
+  Develop your **pedagogical skills**!
 </a>
 
 - **Ready-to-use materials** for teaching open research practices such as **methodological foundations of Open Science, computational reproducibility, data management and sharing**. This material consist of slides and activity sheets. Slides include presenter notes (intended narrative of the presentation), and further instructor notes (additional guidance intended only for the presenter such as didactic and accessibility tips). Simply select your intended target audience below and off you go!
 
 <a href="https://lmu-osc.github.io/train-the-trainer-student-track-OS/" target="_blank" 
-   style="display:inline-block;
-          padding:12px 20px;
-          background-color:#00008B;
-          color:white;
-          text-decoration:none;
-          border-radius:8px;
-          font-weight:bold;">
-  Click here to view teaching materials for **students**!
+   class="btn-toolkit btn-toolkit-students"
+   aria-label="View teaching materials for students (opens in new window)">
+  View teaching materials for **students**!
 </a>
 
 <a href="https://lmu-osc.github.io/training/self-learning.html" target="_blank" 
-   style="display:inline-block;
-          padding:12px 20px;
-          background-color:#8B7500;
-          color:white;
-          text-decoration:none;
-          border-radius:8px;
-          font-weight:bold;">
-  Click here to view teaching materials for **researchers**!
+   class="btn-toolkit btn-toolkit-researchers"
+   aria-label="View teaching materials for researchers (opens in new window)">
+  View teaching materials for **researchers**!
 </a>
 
 ::: {.callout-note}
