@@ -47,8 +47,8 @@
       };
 
       const filteredItems = (items || []).filter(item => {
-        if (!item || !item.event.date) return false;
-        const startDate = parseEventDate(item.event.date);
+        if (!item || !item.event.start_date) return false;
+        const startDate = parseEventDate(item.event.start_date);
         if (!startDate) return false;
         const startYear = startDate.getFullYear();
 
@@ -91,7 +91,7 @@
             
             <div class="event-date listing-date">
               <% 
-                const startDate = parseEventDate(item.event.date);
+                const startDate = parseEventDate(item.event.start_date);
                 const startDay = startDate.getDate();
                 const startMonth = startDate.toLocaleString('en-GB', { month: 'short' });
                 const startYear = startDate.getFullYear();

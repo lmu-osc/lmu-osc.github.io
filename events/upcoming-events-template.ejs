@@ -54,8 +54,8 @@ return copy;
 
 // --- Filtering logic ---
 const futureItems = (items || []).filter(item => {
-// item.event.date is guaranteed to exist per your statement
-const startDate = parseEventDate(item.event.date);
+// item.event.start_date is guaranteed to exist per your statement
+const startDate = parseEventDate(item.event.start_date);
 if (!startDate) return false; // skip malformed start date
 
 const endDate = item.event.end_date ? parseEventDate(item.event.end_date) : null;
@@ -86,7 +86,7 @@ for (const item of futureItems) {
 <div class="event-date listing-date">
 <% 
 // Use the same parser for display to keep things consistent
-const startDate = parseEventDate(item.event.date);
+const startDate = parseEventDate(item.event.start_date);
 const startDay = startDate ? startDate.getDate() : '';
 const startMonth = startDate ? startDate.toLocaleString('en-GB', { month: 'short' }) : '';
 const startYear = startDate ? startDate.getFullYear() : '';

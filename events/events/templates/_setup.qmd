@@ -22,7 +22,7 @@ get_param <- function(param_name, default = "") {
 
 event_param <- get_param("event")
 event_title <- get_param("title", "")
-event_date <- event_param$date
+event_start_date <- event_param$start_date
 event_end_date <- event_param$end_date
 event_time <- event_param$time
 event_location_name <- event_param$location$name
