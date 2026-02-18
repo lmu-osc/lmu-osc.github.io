@@ -5,7 +5,7 @@ const alumnaeItems = (items || []).filter((item) => {
   return memberships.some((membership) => {
     if (!membership || typeof membership !== 'object') return false;
 
-    return ['fellow'].includes(membership.type) && membership.status === 'alumni';
+    return ['staff'].includes(membership.type) && membership.status === 'alumni';
   });
 });
 %>
