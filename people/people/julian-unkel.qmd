@@ -5,7 +5,9 @@ name: Julian Unkel
 surname: Unkel
 first_name: Julian
 position: Department of Media and Communication
-membertype: ['alumni']
+memberships:
+  - type: lmu-individual
+    status: alumni
 email: julian.unkel@ifkw.lmu.de
 photo: 'images/unkel_julian.png'
 links:

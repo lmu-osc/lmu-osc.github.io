@@ -1,13 +1,9 @@
 ---
 title: Open Replicable Research by the International Biometric Society
-categories:
-  - Conference
-date: '2023-10-05'
+categories: Conference
 event:
-  title: Open Replicable Research by the International Biometric Society
   description: ''
-  categories: Conference
-  date: '2023-10-05'
+  start_date: '2023-10-05'
   end_date: '2023-10-06'
   time: ''
   location:
@@ -32,12 +28,23 @@ instructors:
 helpers:
   - name: ''
 contact:
-  name: ''
+  name: Sabine Hoffmann
   email: sabine.hoffmann@stat.uni-muenchen.de
 organizers:
-  name: ''
+  - name: Sabine Hoffmann
+    url: ''
+  - name: Michael Lauseker
+    url: ''
 host:
+  - name: '"""Ethics and Responsibility"" working group of the IBS-DR"'
+    url: ''
   - name: LMU Open Science Center
+    url: ''
+  - name: LMU Institute for Medical Information Processing, Biometry, and Epidemiology
+      (IBE)
+    url: ''
+  - name: LMU Institute for Statistics
+    url: ''
 presenters:
   - name: Prof. Dr. Ulrich Dirnagl 
     url: ''

@@ -6,7 +6,9 @@ surname: Bühner
 first_name: Markus
 position: Chair
 faculty: Psychology & Education
-membertype: ['lmu-individual']
+memberships:
+  - type: lmu-individual
+    status: active
 email: buehner@lmu.de
 photo: 'images/buehner_markus.jpg'
 links:

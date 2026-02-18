@@ -5,7 +5,9 @@ surname: Dirnagl
 first_name: Ulrich
 position: Founding Director of the QUEST Center for Responsible Research
 affiliation: Berlin Institute of Health
-membertype: ["past advisory board"]
+memberships:
+  - type: 'advisory board'
+    status: alumni
 display_weight: 2
 photo: 'images/ulrich_dirnagl.png' 
 links:

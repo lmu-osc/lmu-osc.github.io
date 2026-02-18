@@ -4,8 +4,12 @@ academic_title: M.Sc. Epidemiology
 name: Pat Callahan
 surname: Callahan
 first_name: Pat
-position: Software Developer & Research Support
-membertype: ['fellow', 'staff']
+position: Developer & Research Support
+memberships:
+  - type: fellow 
+    status: alumni
+  - type: staff
+    status: active
 display_weight_staff: 5
 osc_staff_title: Software Developer & Research Support
 personal: I'm a scientific research programmer with a Master's degree in epidemiology, focused on advancing reproducible and efficient research in the health sciences. I believe that treating scientific analyses as software development projects creates the standard, understandable frameworks necessary to address reproducibility challenges. My work centers on developing tools, creating educational resources, and supporting researchers in adopting computational best practices.

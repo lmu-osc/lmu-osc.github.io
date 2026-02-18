@@ -6,7 +6,9 @@ surname: Lange
 first_name: Julian
 position: PhD Candidate
 faculty: Medicine
-membertype: ['fellow']
+memberships:
+  - type: fellow
+    status: active
 email: julian.lange@ibe.med.uni-muenchen.de
 links:
   - label: 'LMU Profile'

@@ -6,7 +6,9 @@ surname: Adler
 first_name: Susanne
 position: Researcher
 faculty: Munich School of Management
-membertype: ['lmu-individual']
+memberships:
+  - type: lmu-individual
+    status: active
 email: adler@lmu.de
 photo: 'images/adler_susanne.jpg'
 links:

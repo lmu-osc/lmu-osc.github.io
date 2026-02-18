@@ -4,7 +4,9 @@ academic_title: PD Dr.
 name: Andreas Beyerlein
 surname: Beyerlein
 first_name: Andreas
-membertype: ['affiliate']
+memberships:
+  - type: affiliate
+    status: active
 affiliate_info:
   role: Statistician and Epidemiologist
   organization: Bayerischen LGL

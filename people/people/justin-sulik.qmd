@@ -6,7 +6,9 @@ surname: Sulik
 first_name: Justin
 position: Researcher
 faculty: Philosophy
-membertype: ['lmu-individual']
+memberships:
+  - type: lmu-individual
+    status: active
 email: justin.sulik@lmu.de
 photo: 'images/sulik_justin.jpg'
 links:

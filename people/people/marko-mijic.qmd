@@ -6,7 +6,9 @@ surname: Mijic
 first_name: Marko
 position: Researcher
 faculty: 'Medicine'
-membertype: ['lmu-individual']
+memberships:
+  - type: lmu-individual
+    status: active
 email: marko.mijic@med.uni-muenchen.de
 photo: 'images/mijic_marko.jpg'
 links:

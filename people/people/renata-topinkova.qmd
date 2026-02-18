@@ -6,7 +6,9 @@ surname: Topinkova
 first_name: Renata
 position: Researcher
 faculty: Social Sciences
-membertype: ['lmu-individual']
+memberships:
+  - type: lmu-individual
+    status: active
 email: renata.topinkova@lmu.de
 photo: 'images/topinkova_renata.jpg'
 links:

@@ -4,7 +4,9 @@ academic_title: Prof. Dr.
 name: Annika Hoyer
 surname: Hoyer
 first_name: Annika
-membertype: ['affiliate']
+memberships:
+  - type: affiliate
+    status: active
 affiliate_info:
   role: Chair
   organization: University of Bielefeld

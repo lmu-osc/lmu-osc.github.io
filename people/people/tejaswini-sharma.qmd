@@ -7,7 +7,11 @@ first_name: Tejaswini
 postition: Research Assistant - Training Development
 osc_staff_title: Research Assistant - Training Development
 faculty: Psychology and Education
-membertype: ['fellow', 'staff']
+memberships:
+  - type: fellow
+    status: active
+  - type: staff
+    status: active
 display_weight_staff: 99
 email: tejaswini.sharma@psy.lmu.de
 photo: images/tejaswini-sharma_25-09-26_164-web.jpg

@@ -6,7 +6,9 @@ surname: Marx
 first_name: Anton
 position: Researcher
 faculty: Psychology & Education
-membertype: ['lmu-individual']
+memberships:
+  - type: lmu-individual
+    status: active
 email: anton.marx@psy.lmu.de
 photo: 'images/marx_anton.jpg'
 links:

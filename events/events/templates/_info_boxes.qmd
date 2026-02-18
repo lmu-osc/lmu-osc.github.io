@@ -4,31 +4,31 @@
 #| warning: false
 
 # prepare date display, include end date when present and strip first year if years match
-# event_date and event_end_date should be in the format YYYY-MM-DD
-event_date_formatted <- lubridate::parse_date_time(event_date, orders = c("ymd", "dmy", "mdy"))
+# event_start_date and event_end_date should be in the format YYYY-MM-DD
+event_start_date_formatted <- lubridate::parse_date_time(event_start_date, orders = c("ymd", "dmy", "mdy"))
 
 if (has_end_date) {
   event_end_date_formatted <- lubridate::parse_date_time(event_end_date, orders = c("ymd", "dmy", "mdy"))
-  if (is.na(event_date_formatted) || is.na(event_end_date_formatted)) {
-    date_display <- paste0(event_date, " - ", event_end_date)
-  } else if (lubridate::year(event_date_formatted) == lubridate::year(event_end_date_formatted)) {
+  if (is.na(event_start_date_formatted) || is.na(event_end_date_formatted)) {
+    date_display <- paste0(event_start_date, " - ", event_end_date)
+  } else if (lubridate::year(event_start_date_formatted) == lubridate::year(event_end_date_formatted)) {
     date_display <- paste0(
-      format(event_date_formatted, "%d %b"),
+      format(event_start_date_formatted, "%d %b"),
       " - ",
       format(event_end_date_formatted, "%d %b %Y")
     )
   } else {
     date_display <- paste0(
-      format(event_date_formatted, "%d %b %Y"),
+      format(event_start_date_formatted, "%d %b %Y"),
       " - ",
       format(event_end_date_formatted, "%d %b %Y")
     )
   }
 } else {
-  if (is.na(event_date_formatted)) {
-    date_display <- event_date
+  if (is.na(event_start_date_formatted)) {
+    date_display <- event_start_date
   } else {
-    date_display <- format(event_date_formatted, "%d %b %Y")
+    date_display <- format(event_start_date_formatted, "%d %b %Y")
   }
 }
 

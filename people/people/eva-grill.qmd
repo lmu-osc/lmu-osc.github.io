@@ -6,7 +6,9 @@ surname: Grill
 first_name: Eva
 position: Chair
 faculty: Medicine
-membertype: ['lmu-individual']
+memberships:
+  - type: lmu-individual
+    status: active
 email: eva.grill@med.uni-muenchen.de
 photo: 'images/grill_eva.jpg'
 links:

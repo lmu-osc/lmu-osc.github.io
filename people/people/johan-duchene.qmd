@@ -6,7 +6,9 @@ surname: Duchêne
 first_name: Johan
 position: Researcher
 faculty: University Hospital
-membertype: ['lmu-individual']
+memberships:
+  - type: lmu-individual
+    status: active
 email: Johan.Duchene@med.uni-muenchen.de
 photo: 'images/duchene_johan.png'
 links:

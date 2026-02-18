@@ -6,7 +6,9 @@ surname: Etzel
 first_name: Franka
 position: MSc Student
 faculty: Psychology & Education
-membertype: ['fellow']
+memberships:
+  - type: fellow
+    status: alumni
 email: franka.etzel@campus.lmu.de
 photo: 'images/etzel_franka.jpeg'
 mission_statement:

@@ -5,8 +5,10 @@ name: Riya Lamichhane
 surname: Lamichhane
 first_name: Riya
 faculty: Medicine
-position: Research Assistant - Software Development
-membertype: ['staff']
+position: Research Assistant
+memberships:
+  - type: staff
+    status: active
 display_weight_staff: 99
 osc_staff_title: Research Assistant - Software Development
 personal: I am a Master’s student in Epidemiology at the Institute for Medical Information Processing, Biometry, and Epidemiology (IBE). At the OSC, I primarily support our website development work. As a firm believer in transparency, open access, and reliability in all things science, I aim to both promote and practice open science through my work.

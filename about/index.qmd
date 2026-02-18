@@ -61,13 +61,13 @@ page-layout: full
 
 
 <!-- Staff and Governance -->
-<section class="py-3">
+<section class="py-3 mb-0">
   <div class="container">
     <div class="bg-body-tertiary rounded-4 p-4 p-lg-5">
-      <h2 class="mb-0 fs-4 fw-bold">Who we are</h2>
+      <h2 class="mb-0 fs-4 fw-bold">Who We Are</h2>
 
       <!-- Single-row card rail -->
-      <div class="staff-governance-rail d-flex flex-row flex-nowrap gap-4 mt-4">
+      <div class="staff-governance-rail d-flex flex-wrap justify-content-center gap-4 mt-4">
 
         <!-- Leadership -->
         <div class="card shadow-sm">
@@ -75,10 +75,10 @@ page-layout: full
             <h3 class="card-title fs-5 mb-2"><i class="fa-solid fa-user-tie fs-3 text-success px-1" aria-hidden="true"></i> Leadership</h3>
             <p class="card-text mb-4 text-muted">Executive and scientific direction.</p>
             <div class="actions mt-auto d-grid gap-2">
-              <a class="btn btn-primary btn-pop w-100 bg-brand-green border-brand-green" href="/people/people/felix_schoenbrodt.qmd">
+              <a class="btn btn-primary btn-pop w-100 bg-brand-green border-brand-green" href="/people/people/felix-schoenbrodt.qmd">
                 Managing Director
               </a>
-              <a class="btn btn-outline-primary btn-pop w-100" href="/people/people/malika_ihle.qmd">
+              <a class="btn btn-outline-primary btn-pop w-100" href="/people/people/malika-ihle.qmd">
                 Scientific Coordinator
               </a>
             </div>
@@ -122,7 +122,7 @@ page-layout: full
       </div>
 
       <!-- Statute CTA -->
-      <div class="d-flex mt-4">
+      <div class="d-flex mt-4 justify-content-center">
         <a class="btn btn-primary btn-pop bg-brand-green border-brand-green" href="/about/statutes.html">
           Read our Statutes <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
         </a>
@@ -136,7 +136,7 @@ page-layout: full
 <section class="py-3 mb-0">
   <div class="container">
     <div class="bg-body-tertiary rounded-4 p-4 p-lg-5">
-      <h2 class="mb-0 fs-4 fw-bold">What we do</h2>
+      <h2 class="mb-0 fs-4 fw-bold">What We Do</h2>
       <div class="row row-cols-1 row-cols-md-2 g-4 mt-2">
         <!-- Events card -->
         <div class="col">

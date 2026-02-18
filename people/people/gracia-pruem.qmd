@@ -6,7 +6,9 @@ surname: Prüm
 first_name: Gracia
 position: BSc Student
 faculty: Psychology & Education
-membertype: ['fellow']
+memberships:
+  - type: fellow
+    status: active
 email: gracia.pruem@campus.lmu.de
 photo: 'images/pruem_gracia.jpg'
 mission_statement:

@@ -6,7 +6,9 @@ surname: Schödel
 first_name: Ramona
 position: Researcher
 faculty: Psychology & Education
-membertype: ['lmu-individual']
+memberships:
+  - type: lmu-individual
+    status: active
 email: Ramona.Schoedel@psy.lmu.de
 photo: 'images/schoedel_ramona.jpg'
 links:

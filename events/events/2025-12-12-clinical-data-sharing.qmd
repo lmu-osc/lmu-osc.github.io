@@ -1,12 +1,9 @@
 ---
 title: 'OSIM Meetup: Clinical Data Sharing'
-categories: OSIM
-date: "12 Dec, 2025"
+categories: OSIM Meetup
 event:
-  title: 'OSIM Meetup: Clinical Data Sharing'
   description: "Discussion on clinical data sharing practices and approaches"
-  categories: ["OSIM Meetup"]
-  date: "12 Dec, 2025"
+  start_date: "12 Dec, 2025"
   time: "14:00 CET"
   format:
     type: "Hybrid"
@@ -25,6 +22,12 @@ contact:
     name: "OSC team"
     email: "osc@lmu.de"
 
+organizers:
+  - name: "Julian Lange"
+  - name: "Luisa Jiménez-Soto"
+
+host:
+  - name: Open Science Initiative in Medicine
 ---
 
 

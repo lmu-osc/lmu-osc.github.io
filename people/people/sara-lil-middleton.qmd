@@ -4,9 +4,11 @@ academic_title: Dr.
 name: Sara Lil Middleton
 surname: Middleton
 first_name: Sara Lil
-position: Training Development Coordinator and Community Engagement Manager
-membertype: ['staff']
-osc_staff_title: Training Development Coordinator and Community Engagement Manager
+position: Scientific Program Coordinator
+memberships:
+  - type: staff
+    status: active
+osc_staff_title: Scientific Program Coordinator
 display_weight_staff: 3
 personal:
   - Sara Lil Middleton is the Training Development Coordinator and Community Engagement Manager on the “Train-the-Trainer” programme at LMU in partnership with the Framework for Open and Reproducible Research Training (FORRT).

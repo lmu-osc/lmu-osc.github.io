@@ -6,7 +6,9 @@ surname: Kuhr
 first_name: Thomas
 position: Research Group Leader
 faculty: Physics
-membertype: ['lmu-individual']
+memberships:
+  - type: lmu-individual
+    status: active
 email: Thomas.Kuhr@lmu.de
 photo: 'images/kuhr_thomas.jpg'
 links:

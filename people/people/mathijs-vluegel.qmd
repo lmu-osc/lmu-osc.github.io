@@ -5,7 +5,9 @@ surname: Vleugel
 first_name: Mathijs
 position: Head Helmholtz Open Science Office
 affiliation: Helmholtz Association
-membertype: ["current advisory board"]
+memberships:
+  - type: 'advisory board'
+    status: active
 display_weight: 2
 photo: 'images/mathijs_vluegel.webp' 
 links:

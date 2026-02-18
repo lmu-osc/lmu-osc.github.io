@@ -6,7 +6,9 @@ surname: Meier
 first_name: Laura
 position: BSc Student
 faculty: University Library
-membertype: ['fellow']
+memberships:
+  - type: fellow
+    status: active
 email: laura.meier@ub.uni-muenchen.de
 photo: 'images/meier_laura.jpg'
 links:

@@ -4,17 +4,20 @@ listing:
   - id: lmu-members
     contents: 
       - people
-    template: listings/general-listing.ejs
+    template: listings/active-lmu-members-listing.ejs
     sort: "surname asc"
-    include: 
-      membertype: ["lmu-individual"]
+
   - id: affiliate-members
     contents: 
       - people
-    template: listings/affiliate-listing.ejs
+    template: listings/active-affiliate-listing.ejs
     sort: "surname asc"
-    include: 
-      membertype: ["affiliate"]
+
+  - id: former-members
+    contents: 
+      - people
+    template: listings/alumni-lmu-members-affiliates-listing.ejs
+    sort: "surname asc"
 
 ---
 <style>
@@ -29,7 +32,7 @@ listing:
 }
 </style>
 :::{.osc-members-description}
-Our members actively support the goals of the OSC and contribute to our activities such as training, community building, meta-research, and liaison with stakeholders. [Join us](../about/joinus.qmd) <i class="bi bi-box-arrow-up-right"></i>.
+Our members actively support the goals of the OSC and contribute to our activities such as training, community building, meta-research, and liaison with stakeholders. [Join us](../about/join-us.qmd) <i class="bi bi-box-arrow-up-right"></i>.
 :::
 ## LMU Members
 
@@ -41,3 +44,8 @@ Our members actively support the goals of the OSC and contribute to our activiti
 ::: {#affiliate-members}
 :::
 
+
+## Former Members
+
+::: {#former-members}
+:::

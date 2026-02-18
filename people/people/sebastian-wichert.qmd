@@ -6,7 +6,9 @@ surname: Wichert
 first_name: Sebastian
 position: Researcher
 faculty: Economics
-membertype: ['lmu-individual']
+memberships:
+  - type: lmu-individual
+    status: active
 email: wichert@ifo.de
 photo: 'images/wichert_sebastian.jpg'
 links:

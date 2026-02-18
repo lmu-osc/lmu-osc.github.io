@@ -6,7 +6,9 @@ surname: Ewers
 first_name: Michael
 position: Research Group Leader
 faculty: Medicine
-membertype: ['lmu-individual']
+memberships:
+  - type: lmu-individual
+    status: active
 email: michael.ewers@med.uni-muenchen.de
 photo: 'images/ewers_michael.jpg'
 links:

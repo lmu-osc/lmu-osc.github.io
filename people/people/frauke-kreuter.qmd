@@ -6,7 +6,9 @@ surname: Kreuter
 first_name: Frauke
 position: Chair
 faculty: Math, Informatics & Stats
-membertype: ['lmu-individual']
+memberships:
+  - type: lmu-individual
+    status: active
 email: soda@stat.uni-muenchen.de
 photo: 'images/kreuter_frauke.jpg' 
 links:

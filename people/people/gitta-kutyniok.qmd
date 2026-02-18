@@ -6,7 +6,9 @@ surname: Kutyniok
 first_name: Gitta
 position: Chair
 faculty: Math, Informatics & Stats
-membertype: ['lmu-individual']
+memberships:
+  - type: lmu-individual
+    status: active
 email: kutyniok@math.lmu.de
 photo: 'images/kutyniok_gitta.jpeg'
 links:

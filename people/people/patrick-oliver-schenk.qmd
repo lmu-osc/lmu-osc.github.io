@@ -6,7 +6,9 @@ surname: Schenk
 first_name: Patrick Oliver
 position: PhD Candidate
 faculty: Social Sciences
-membertype: ['fellow']
+memberships:
+  - type: fellow
+    status: active
 email: patrick.schenk@lmu.de
 links:
   - label: 'LMU Profile'

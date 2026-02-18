@@ -5,7 +5,9 @@ surname: Goodwin
 first_name: Bernhard
 position: Executive Director of the Munich Science Communication Lab
 affiliation: LMU Munich
-membertype: ["current advisory board"]
+memberships:
+  - type: 'advisory board'
+    status: active
 display_weight: 4
 photo: 'images/bernhard_goodwin.webp'
 links:

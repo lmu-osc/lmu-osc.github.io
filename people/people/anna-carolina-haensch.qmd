@@ -6,7 +6,9 @@ surname: Haensch
 first_name: Anna-Carolina
 position: Researcher
 faculty: Math, Informatics & Stats
-membertype: ['lmu-individual']
+memberships:
+  - type: lmu-individual
+    status: active
 email: anna-carolina.haensch@stat.uni-muenchen.de
 photo: 'images/haensch_anna-carolina.png'
 links:
