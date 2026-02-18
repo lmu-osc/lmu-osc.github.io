@@ -6,7 +6,7 @@ event:
   title: Software Carpentry - R Flavored - Mensa Leopoldstraße
   description: ''
   date: '2024-10-10'
-  end_date: '2024-10-11'
+  end_date: 11-Oct-24
   time: ''
   location:
     name: Mensa Leopoldstr 13A, room 046
@@ -25,7 +25,13 @@ links:
   workshop_website: ''
 event_description: ''
 instructors:
-  - name: ''
+  - name: Alberto Villagran Asiares
+    url: ''
+  - name: Alp Kaan Aksu
+    url: ''
+  - name: Renata Topinkova
+    url: ''
+  - name: Po-chun Tseng
     url: ''
 helpers:
   - name: ''
@@ -33,9 +39,13 @@ contact:
   name: ''
   email: malika.ihle@lmu.de
 organizers:
-  name: ''
+  - name: Dr. Malika Ihle
+    url: ''
 host:
   - name: LMU Open Science Center
+    url: ''
+  - name: Munich Center for Machine Learning (MCML)
+    url: ''
 
 ---
 <!-- MANDAORY SECTION START  -->

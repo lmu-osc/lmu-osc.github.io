@@ -6,7 +6,7 @@ event:
   title: Philosophy and Methodology of Medicine
   description: ''
   date: '2021-06-01'
-  end_date: '2021-06-03'
+  end_date: 3-Jun-21
   time: ''
   location:
     name: Online
@@ -33,9 +33,13 @@ contact:
   name: ''
   email: juergen.landes@lrz.uni-muenchen.de
 organizers:
-  name: ''
+  - name: Dr. Jürgen Landes
+    url: ''
+  - name: Dr. Michael Wild
+    url: ''
 host:
-  - name: LMU Open Science Center
+  - name: Munich Center for Mathematical Philosophy (MCMP)
+    url: ''
 
 ---
 <!-- MANDAORY SECTION START  -->

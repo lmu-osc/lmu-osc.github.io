@@ -19,6 +19,7 @@ event:
     primary: English
     primary-code: en
     detail: ''
+  end_date: ''
 links:
   registration: ''
   materials: ''
@@ -33,9 +34,18 @@ contact:
   name: ''
   email: boulesteix@ibe.med.uni-muenchen.de
 organizers:
-  name: ''
+  - name: Prof. Dr. Anne-Laure Boulesteix
+    url: ''
 host:
+  - name: LMU Institute for Medical Information Processing, Biometry, and Epidemiology
+      (IBE)
+    url: ''
   - name: LMU Open Science Center
+    url: ''
+  - name: STRATOS
+    url: ''
+  - name: The European Bioconductor Meeting
+    url: ''
 presenters:
   - name: Dr. Lisa McShane
     url: ''
