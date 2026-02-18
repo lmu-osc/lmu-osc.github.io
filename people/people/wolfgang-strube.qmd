@@ -5,7 +5,9 @@ name: Wolfgang Strube
 surname: Strube
 first_name: Wolfgang
 position: BKH Augsburg
-membertype: ['alumni']
+memberships: 
+  - type: lmu-individual
+    status: alumni
 email: 
 photo: 'images/strube_wolfgang.jpg'
 links:
