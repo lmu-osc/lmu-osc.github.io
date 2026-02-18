@@ -6,7 +6,9 @@ surname: Schulz
 first_name: Enrico
 position: Researcher
 faculty: University Hospital
-membertype: ['lmu-individual']
+memberships:
+  - type: lmu-individual
+    status: active
 email: es@pain.sc
 photo: 'images/schulz_enrico.jpg'
 links:

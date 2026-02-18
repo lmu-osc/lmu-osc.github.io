@@ -6,7 +6,9 @@ surname: Burkhardt
 first_name: Gerrit
 position: Researcher
 faculty: University Hospital
-membertype: ['lmu-individual']
+memberships:
+  - type: lmu-individual
+    status: active
 email: gerrit.burkhardt@med.uni-muenchen.de
 photo: 'images/burkhardt_gerrit.jpeg'
 links: 

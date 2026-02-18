@@ -6,7 +6,9 @@ surname: Larsson
 first_name: Leyla
 position: PhD Candidate
 faculty: University Hospital
-membertype: ['fellow']
+memberships:
+  - type: fellow
+    status: alumni
 email: leyla.larsson@med.uni-muenchen.de
 photo: 'images/larsson_leyla.jpg'
 social_media:

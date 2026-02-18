@@ -6,7 +6,9 @@ surname: Lauseker
 first_name: Michael
 position: Researcher
 faculty: Medicine
-membertype: ['lmu-individual']
+memberships:
+  - type: lmu-individual
+    status: active
 email: lauseker@ibe.med.uni-muenchen.de
 photo: 'images/lauseker_michael.jpg'
 links:

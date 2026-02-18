@@ -4,7 +4,9 @@ academic_title: Prof. Dr.
 name: Markus Ploner
 surname: Ploner
 first_name: Markus
-membertype: ['affiliate']
+memberships:
+  - type: affiliate
+    status: active
 affiliate_info:
   role: Medicine
   organization: TUM

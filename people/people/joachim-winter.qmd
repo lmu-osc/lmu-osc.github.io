@@ -6,7 +6,9 @@ surname: Winter
 first_name: Joachim
 position: Chair
 faculty: Economics
-membertype: ['lmu-individual']
+memberships:
+  - type: lmu-individual
+    status: active
 email: Winter@lmu.de
 photo: 'images/winter_joachim.jpg'
 links:

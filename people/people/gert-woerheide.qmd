@@ -6,7 +6,9 @@ surname: Wörheide
 first_name: Gert
 position: Chair
 faculty: Geosciences
-membertype: ['lmu-individual']
+memberships:
+  - type: lmu-individual
+    status: active
 email: geobiologie@geo.lmu.de
 photo: 'images/woerheide_gert.jpg'
 links:

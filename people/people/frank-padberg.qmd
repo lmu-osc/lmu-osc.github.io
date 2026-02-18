@@ -6,7 +6,9 @@ surname: Padberg
 first_name: Frank
 position: Research Group Leader
 faculty: University Hospital
-membertype: ['lmu-individual']
+memberships:
+  - type: lmu-individual
+    status: active
 email: Frank.Padberg@med.uni-muenchen.de
 photo: 'images/padberg_frank.jpg'
 links:

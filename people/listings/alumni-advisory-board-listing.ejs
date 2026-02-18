@@ -1,0 +1,17 @@
+<%
+const alumnaeItems = (items || []).filter((item) => {
+  const memberships = Array.isArray(item.memberships) ? item.memberships : [];
+
+  return memberships.some((membership) => {
+    if (!membership || typeof membership !== 'object') return false;
+
+    return ['advisory board'].includes(membership.type) && membership.status === 'alumni';
+  });
+});
+%>
+
+<ul>
+  <% for (const item of alumnaeItems) { %>
+    <li><a href="<%= item.path %>"><%= item.academic_title %> <%= item.name %></a></li>
+  <% } %>
+</ul>

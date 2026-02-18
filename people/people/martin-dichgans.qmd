@@ -6,7 +6,9 @@ surname: Dichgans
 first_name: Martin
 position: Director of Institute
 faculty: Medicine
-membertype: ['lmu-individual']
+memberships:
+  - type: lmu-individual
+    status: active
 email: martin.dichgans@med.uni-muenchen.de
 photo: 'images/dichgans_martin.jpeg'
 links:

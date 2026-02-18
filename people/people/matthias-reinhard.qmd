@@ -6,7 +6,9 @@ surname: Reinhard
 first_name: Matthias
 position: Researcher
 faculty: University Hospital
-membertype: ['lmu-individual']
+memberships:
+  - type: lmu-individual
+    status: active
 email: matthias.reinhard@med.uni-muenchen.de
 photo: 'images/reinhard_matthias.jpg'
 links:

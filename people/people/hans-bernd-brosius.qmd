@@ -6,7 +6,9 @@ surname: Brosius
 first_name: Hans-Bernd
 position: Chair
 faculty: Social Sciences
-membertype: ['lmu-individual']
+memberships:
+  - type: lmu-individual
+    status: active
 email: hans-bernd.brosius@ifkw.lmu.de
 photo: 'images/brosius_hans-bernd.jpg'
 links:

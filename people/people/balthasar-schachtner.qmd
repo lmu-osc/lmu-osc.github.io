@@ -6,7 +6,9 @@ surname: Schachtner
 first_name: Balthasar
 position: Researcher
 faculty: Medicine
-membertype: ['lmu-individual']
+memberships:
+  - type: lmu-individual
+    status: active
 email: balthasar.schachtner@med.uni-muenchen.de
 photo: 'images/schachtner_balthasar.jpg'
 links:

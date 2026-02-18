@@ -6,7 +6,9 @@ surname: Boulesteix
 first_name: Anne-Laure
 position: Chair
 faculty: Medicine
-membertype: ['lmu-individual']
+memberships:
+  - type: lmu-individual
+    status: active
 email: boulesteix@ibe.med.uni-muenchen.de
 photo: 'images/boulesteix_anne-laure.jpg'
 links:

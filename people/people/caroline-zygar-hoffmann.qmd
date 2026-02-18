@@ -6,7 +6,9 @@ surname: Zygar-Hoffmann
 first_name: Caroline
 position: Researcher
 faculty: Psychology & Education
-membertype: ['lmu-individual']
+memberships:
+  - type: lmu-individual
+    status: active
 email: caroline.zygar@psy.lmu.de
 photo: 'images/zygar-hoffmann_caroline.jpg'
 links:

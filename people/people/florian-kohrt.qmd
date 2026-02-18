@@ -6,7 +6,9 @@ surname: Kohrt
 first_name: Florian
 position: PhD Candidate
 faculty: Psychology & Education
-membertype: ['fellow']
+memberships:
+  - type: fellow
+    status: active
 email: fkohrt@anche.no
 links:
   - label: 'LMU Profile'

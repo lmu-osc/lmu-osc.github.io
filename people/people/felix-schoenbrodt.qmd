@@ -5,7 +5,11 @@ academic_title: "Prof. Dr."
 name: "Felix Schönbrodt"
 position: "Managing Director of the OSC"
 faculty: Psychology & Education
-membertype: ["past scientific board", "management"]
+memberships:
+  - type: 'past scientific board'
+    status: active
+  - type: management
+    status: active
 photo: "images/felix_schoenbrodt.jpeg"
 email: "Felix.Schoenbrodt@psy.lmu.de"
 display_weight_management: 1

@@ -6,7 +6,9 @@ surname: Pargent
 first_name: Florian
 position: Researcher
 faculty: Psychology & Education
-membertype: ['lmu-individual']
+memberships:
+  - type: lmu-individual
+    status: active
 email: florian.pargent@psy.lmu.de
 photo: 'images/pargent_florian.png'
 links:

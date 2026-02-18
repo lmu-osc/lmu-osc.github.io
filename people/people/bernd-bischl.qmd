@@ -6,7 +6,9 @@ surname: Bischl
 first_name: Bernd
 position: Chair
 faculty: Math, Informatics & Stats
-membertype: ['lmu-individual']
+memberships:
+  - type: lmu-individual
+    status: active
 email: bernd.bischl@stat.uni-muenchen.de
 photo: 'images/bischl_bernd.jpg'
 links:

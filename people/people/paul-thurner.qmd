@@ -6,7 +6,9 @@ surname: Thurner
 first_name: Paul W.
 position: Chair
 faculty: Social Sciences
-membertype: ['lmu-individual']
+memberships:
+  - type: lmu-individual
+    status: active
 email: paul.thurner@gsi.uni-muenchen.de
 photo: 'images/thurner_paul_w.jpg'
 links:

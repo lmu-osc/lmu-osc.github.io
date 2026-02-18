@@ -6,7 +6,9 @@ surname: Düring
 first_name: Marco
 position: Research Group Leader
 faculty: Medicine
-membertype: ['lmu-individual']
+memberships:
+  - type: lmu-individual
+    status: active
 email: marco.duering@med.uni-muenchen.de
 photo: 'images/duering_marco.jpg'
 links:

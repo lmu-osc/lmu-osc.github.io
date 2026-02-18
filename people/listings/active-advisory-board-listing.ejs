@@ -1,5 +1,17 @@
+<%
+const activeAdvisoryBoardItems = (items || []).filter((item) => {
+  const memberships = Array.isArray(item.memberships) ? item.memberships : [];
+
+  return memberships.some((membership) => {
+    if (!membership || typeof membership !== 'object') return false;
+
+    return ['advisory board'].includes(membership.type) && membership.status === 'active';
+  });
+});
+%>
+
 <div class="advisory-board-grid">
-<% for (const item of items) { %>
+<% for (const item of activeAdvisoryBoardItems) { %>
 <div class="card" <%= metadataAttrs(item) %>>
 <div class="row g-0">
 <div class="d-flex justify-content-center align-items-center p-2 mt-3">

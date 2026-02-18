@@ -6,7 +6,9 @@ name: Sarah von Grebmer zu Wolfsthurn
 surname: von Grebmer zu Wolfsthurn
 first_name: Sarah
 position: Open Science Program Coordinator
-membertype: ['staff']
+memberships:
+  - type: staff
+    status: active
 osc_staff_title: Open Science Program Coordinator
 personal: |
   Sarah von Grebmer zu Wolfsthurn is one of the two Open Science coordinators at the LMU Open Science Centre (OSC). She coordinates the “Train-the-trainer” programme. 

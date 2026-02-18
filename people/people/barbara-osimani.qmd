@@ -4,7 +4,9 @@ academic_title: Prof. Dr.
 name: Barbara Osimani
 surname: Osimani
 first_name: Barbara
-membertype: ['affiliate']
+memberships:
+  - type: affiliate
+    status: alumni
 affiliate_info:
   role: Director of Institute
   organization: Polytechnic University of the Marche

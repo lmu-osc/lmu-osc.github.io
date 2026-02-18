@@ -5,7 +5,9 @@ name: Sara Lil Middleton
 surname: Middleton
 first_name: Sara Lil
 position: Scientific Program Coordinator
-membertype: ['staff']
+memberships:
+  - type: staff
+    status: active
 osc_staff_title: Scientific Program Coordinator
 display_weight_staff: 3
 personal:

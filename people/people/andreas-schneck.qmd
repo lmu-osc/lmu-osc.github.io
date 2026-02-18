@@ -6,7 +6,9 @@ surname: Schneck
 first_name: Andreas
 position: Researcher
 faculty: Social Sciences
-membertype: ['lmu-individual']
+memberships:
+  - type: lmu-individual
+    status: alumni
 email: andreas.schneck@soziologie.uni-muenchen.de
 photo: 'images/schneck_andreas.jpg'
 links:

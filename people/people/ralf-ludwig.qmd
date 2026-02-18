@@ -6,7 +6,9 @@ surname: Ludwig
 first_name: Ralf
 position: Chair
 faculty: Geosciences
-membertype: ['lmu-individual']
+memberships:
+  - type: lmu-individual
+    status: active
 email: r.ludwig@lmu.de
 photo: 'images/ludwig_ralf.jpg'
 links:

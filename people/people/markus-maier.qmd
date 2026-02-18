@@ -6,7 +6,9 @@ surname: Maier
 first_name: Markus
 position: Chair
 faculty: Psychology & Education
-membertype: ['lmu-individual']
+memberships:
+  - type: lmu-individual
+    status: active
 email: Markus.Maier@psy.lmu.de
 photo: 'images/maier_markus.JPG'
 links:

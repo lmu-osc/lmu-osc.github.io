@@ -6,7 +6,9 @@ surname: Kruck
 first_name: Andreas
 position: Researcher
 faculty: Social Sciences
-membertype: ['lmu-individual']
+memberships:
+  - type: lmu-individual
+    status: active
 email: andreas.kruck@gsi.uni-muenchen.de
 photo: 'images/kruck_andreas.jpeg'
 links:

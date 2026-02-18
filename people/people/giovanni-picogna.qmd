@@ -6,7 +6,9 @@ surname: Picogna
 first_name: Giovanni
 position: Researcher
 faculty: Physics
-membertype: ['lmu-individual']
+memberships:
+  - type: lmu-individual
+    status: active
 email: picogna@usm.lmu.de
 photo: 'images/picogna_giovanni.jpg'
 links:

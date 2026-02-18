@@ -6,7 +6,9 @@ surname: Nuding
 first_name: Stephan
 position: PhD Candidate
 faculty: Psychology & Education
-membertype: ['fellow']
+memberships:
+  - type: fellow
+    status: active
 email: stephan.nuding@psy.lmu.de
 links:
   - label: 'LMU Profile'

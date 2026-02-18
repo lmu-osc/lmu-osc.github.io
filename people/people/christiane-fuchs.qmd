@@ -4,7 +4,9 @@ academic_title: Prof. Dr.
 name: Christiane Fuchs
 surname: Fuchs
 first_name: Christiane
-membertype: ['affiliate']
+memberships:
+  - type: affiliate
+    status: active
 affiliate_info:
   role:  Research Group Leader
   organization: "Helmholtz Munich: Institute of Computational Biology"

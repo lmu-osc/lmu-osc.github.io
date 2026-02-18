@@ -6,7 +6,9 @@ surname: Simson
 first_name: Jan
 position: PhD Candidate
 faculty: Math, Informatics & Stats
-membertype: ['fellow']
+memberships:
+  - type: fellow
+    status: alumni
 email: jan.simson@lmu.de
 photo: 'images/simson_jan.jpg'
 links:

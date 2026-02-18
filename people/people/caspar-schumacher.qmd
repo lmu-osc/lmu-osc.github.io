@@ -6,7 +6,9 @@ surname: Schumacher
 first_name: Caspar
 position: BSc Student
 faculty: Psychology & Education
-membertype: ['fellow']
+memberships:
+  - type: fellow
+    status: alumni
 email: C.Schumacher@campus.lmu.de
 photo: 'images/schumacher_caspar.jpeg'
 mission_statement:

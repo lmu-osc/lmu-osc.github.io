@@ -4,7 +4,9 @@ academic_title: Dr.
 name: Elmar Spiegel
 surname: Spiegel
 first_name: Elmar
-membertype: ['affiliate']
+memberships:
+  - type: affiliate
+    status: active
 affiliate_info:
   role: Statistical Consultant
   organization: Helmholtz Zentrum Munich

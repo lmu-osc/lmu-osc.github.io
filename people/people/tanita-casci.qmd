@@ -5,7 +5,9 @@ surname: Casci
 first_name: Tanita
 position: Research Strategy & Policy Unit Director
 affiliation: University of Oxford
-membertype: ["current advisory board"]
+memberships:
+  - type: 'advisory board'
+    status: active
 display_weight: 1
 photo: 'images/tanita_casci.jpg'
 links:
