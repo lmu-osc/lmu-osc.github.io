@@ -9,8 +9,3 @@
   filter: brightness(1.2);
   transition: all 0.2s ease;
 }
-
-.osc-footer-card a:focus-visible {
-  outline: 2px solid #FFD700;
-  outline-offset: 2px;
-}
