@@ -6,7 +6,7 @@
   --osc-divider: #d6d6d5;
 }
 /* Layout */
-.container { max-width: var(--max-w); margin-inline: auto; padding-inline: var(--space-5); }
+.container {margin-inline: auto; padding-inline: var(--space-5); }
 .section { padding-block: clamp(var(--space-6), 6vw, var(--space-8)); }
 
 .text-align-justify { text-align: justify; }
