@@ -12,6 +12,6 @@ const alumnaeItems = (items || []).filter((item) => {
 
 <ul>
   <% for (const item of alumnaeItems) { %>
-    <li><a href="<%= item.path %>"><%= item.academic_title %> <%= item.name %></a></li>
+    <li><a href="<%= item.path %>"><%= item.name %>, <%= item.academic_title %></a></li>
   <% } %>
 </ul>
