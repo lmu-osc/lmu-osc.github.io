@@ -7,7 +7,7 @@ listing:
     template: listings/general-listing.ejs
     sort: "surname asc"
     include: 
-      membertype: "alumni"
+      memberships.type: "alumni"
 ---
 
 ::: {#alumnae}
