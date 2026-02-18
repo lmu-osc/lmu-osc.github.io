@@ -2,9 +2,8 @@
 title: 'One Step Towards Reproducible Science: Git Basic Training'
 categories: Workshop
 event:
-  title: 'One Step Towards Reproducible Science: Git Basic Training'
   description: ''
-  date: '2022-09-12'
+  start_date: '2022-09-12'
   end_date: ''
   time: ''
   location:
@@ -41,11 +40,9 @@ host:
     url: Biometry
   - name: and Epidemiology (IBE)"
     url: ''
-date: '2022-09-12'
 
 ---
 <!-- MANDAORY SECTION START  -->
-<h1 class="fs-1 text-primary"> {{< meta event.title >}} </h1>
 
 {{< include templates/_setup.qmd >}}
 {{< include templates/_info_boxes.qmd >}}
