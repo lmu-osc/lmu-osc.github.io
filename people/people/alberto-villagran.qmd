@@ -4,11 +4,11 @@ academic_title: M.Sc.
 name: Alberto G. Villagran
 surname: Villagran
 first_name: Alberto G.
-position: Researcher
-faculty: Medicine
 memberships:
   - type: fellow
     status: active
+    position: Researcher
+    faculty: Medicine
 email: alberto.villagran@med.uni-muenchen.de
 photo: 'images/villagran_alberto_g..jpg'
 links:
@@ -40,9 +40,6 @@ profile <- div(class = "people-profile",
     div(class = "people-info",
       p(class = "people-position", position),
       if (!is.null(faculty) & faculty != "") {p(class = "people-faculty", paste0("Faculty of ", faculty))},
-      if (faculty == "" & !is.null(affiliate_organization)) {
-        p(class = "people-faculty", affiliate_organization)
-        },
       div(class = "people-contact", contact_items, social_links)
     )
   ),

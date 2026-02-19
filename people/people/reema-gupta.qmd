@@ -4,12 +4,14 @@ academic_title: Ph.D. Candidate
 name: Reema Gupta
 surname: Gupta
 first_name: Reema
-position: FAIR Research Data Management Consultant
 memberships:
   - type: fellow
     status: active
+    position: Ph.D. Candidate
+    faculty: Medicine
   - type: staff
     status: active
+    position: FAIR Research Data Management Consultant
 display_weight_staff: 4
 osc_staff_title: FAIR Research Data Management Consultant
 email: gupta@biologie.uni-muenchen.de
@@ -55,9 +57,6 @@ profile <- div(class = "people-profile",
     div(class = "people-info",
       p(class = "people-position", position),
       if (!is.null(faculty) & faculty != "") {p(class = "people-faculty", paste0("Faculty of ", faculty))},
-      if (faculty == "" & !is.null(affiliate_organization)) {
-        p(class = "people-faculty", affiliate_organization)
-        },
       div(class = "people-contact", contact_items, social_links)
     )
   ),

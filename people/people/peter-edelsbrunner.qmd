@@ -4,13 +4,15 @@ academic_title: Prof. Dr.
 name: Peter Edelsbrunner
 surname: Edelsbrunner
 first_name: Peter
-position: Chair
-faculty: Psychology & Education
 memberships:
   - type: lmu-individual
     status: active
+    position: Chair
+    faculty: Psychology & Education
   - type: 'special advisor'
     status: active
+    position: Chair
+    faculty: Psychology & Education
 email: peter.edelsbrunner@lmu.de
 photo: 'images/edelsbrunner_peter.png'
 links:
@@ -45,9 +47,6 @@ profile <- div(class = "people-profile",
     div(class = "people-info",
       p(class = "people-position", position),
       if (!is.null(faculty) & faculty != "") {p(class = "people-faculty", paste0("Faculty of ", faculty))},
-      if (faculty == "" & !is.null(affiliate_organization)) {
-        p(class = "people-faculty", affiliate_organization)
-        },
       div(class = "people-contact", contact_items, social_links)
     )
   ),

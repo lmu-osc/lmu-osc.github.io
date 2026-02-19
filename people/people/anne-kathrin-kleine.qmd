@@ -4,11 +4,11 @@ academic_title: Dr.
 name: Anne-Kathrin Kleine
 surname: Kleine
 first_name: Anne-Kathrin
-position: Researcher
-faculty: Psychology & Education
 memberships:
   - type: lmu-individual
     status: active
+    position: Researcher
+    faculty: Psychology & Education
 email: anne-kathrin.kleine@psy.lmu.de
 photo: 'images/kleine_anne-kathrin.jpeg'
 links:
@@ -42,9 +42,6 @@ profile <- div(class = "people-profile",
     div(class = "people-info",
       p(class = "people-position", position),
       if (!is.null(faculty) & faculty != "") {p(class = "people-faculty", paste0("Faculty of ", faculty))},
-      if (faculty == "" & !is.null(affiliate_organization)) {
-        p(class = "people-faculty", affiliate_organization)
-        },
       div(class = "people-contact", contact_items, social_links)
     )
   ),

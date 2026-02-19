@@ -4,11 +4,11 @@ academic_title: Dipl
 name: Markus Herklotz
 surname: Herklotz
 first_name: Markus
-position: Researcher
-faculty: Math, Informatics & Stats
 memberships:
   - type: fellow
     status: active
+    position: Researcher
+    faculty: Math, Informatics & Stats
 email: m.herklotz@lmu.de
 photo: 'images/herklotz_markus.jpeg'
 links: 
@@ -40,9 +40,6 @@ profile <- div(class = "people-profile",
     div(class = "people-info",
       p(class = "people-position", position),
       if (!is.null(faculty) & faculty != "") {p(class = "people-faculty", paste0("Faculty of ", faculty))},
-      if (faculty == "" & !is.null(affiliate_organization)) {
-        p(class = "people-faculty", affiliate_organization)
-        },
       div(class = "people-contact", contact_items, social_links)
     )
   ),

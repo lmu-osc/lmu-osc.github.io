@@ -4,11 +4,11 @@ academic_title: M.Sc.
 name: Maximilian Kristen
 surname: Kristen
 first_name: Maximilian
-position: MSc Student
-faculty: History & Arts
 memberships:
   - type: fellow
     status: active
+    position: M.Sc. Student
+    faculty: History & Arts
 email: max@kristenonline.de
 social_media:
   ORCID: 'https://orcid.org/0009-0008-3929-337X'
@@ -36,9 +36,6 @@ profile <- div(class = "people-profile",
     div(class = "people-info",
       p(class = "people-position", position),
       if (!is.null(faculty) & faculty != "") {p(class = "people-faculty", paste0("Faculty of ", faculty))},
-      if (faculty == "" & !is.null(affiliate_organization)) {
-        p(class = "people-faculty", affiliate_organization)
-        },
       div(class = "people-contact", contact_items, social_links)
     )
   ),

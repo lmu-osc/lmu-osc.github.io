@@ -7,9 +7,8 @@ first_name: Elmar
 memberships:
   - type: affiliate
     status: active
-affiliate_info:
-  role: Statistical Consultant
-  organization: Helmholtz Zentrum Munich
+    role: Statistical Consultant
+    organization: Helmholtz Zentrum Munich
 email: elmar.spiegel@helmholtz-munich.de
 photo: 'images/spiegel_elmar.jpg'
 links:
@@ -41,9 +40,6 @@ profile <- div(class = "people-profile",
     div(class = "people-info",
       p(class = "people-position", position),
       if (!is.null(faculty) & faculty != "") {p(class = "people-faculty", paste0("Faculty of ", faculty))},
-      if (faculty == "" & !is.null(affiliate_organization)) {
-        p(class = "people-faculty", affiliate_organization)
-        },
       div(class = "people-contact", contact_items, social_links)
     )
   ),

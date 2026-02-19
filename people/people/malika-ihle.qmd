@@ -3,12 +3,13 @@
 title: "Dr. Malika Ihle" 
 name: "Malika Ihle"
 academic_title: "Dr."
-position: LMU Open Science Center Coordinator
 memberships:
   - type: management
     status: active
+    position: LMU Open Science Center Coordinator
   - type: staff
     status: active
+    position: LMU Open Science Center Coordinator
 photo: "images/malika_ihle.JPG"
 email: "malika.ihle@lmu.de"
 display_weight_management: 2
@@ -107,9 +108,6 @@ profile <- div(class = "people-profile",
     div(class = "people-info",
       p(class = "people-position", position),
       if (!is.null(faculty) & faculty != "") {p(class = "people-faculty", paste0("Faculty of ", faculty))},
-      if (faculty == "" & !is.null(affiliate_organization)) {
-        p(class = "people-faculty", affiliate_organization)
-        },
       div(class = "people-contact", contact_items, social_links)
     )
   ),

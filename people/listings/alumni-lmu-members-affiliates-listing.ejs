@@ -1,17 +1,43 @@
 <%
+// Match alumni LMU individual or affiliate memberships only.
+const isAlumniMemberAffiliate = (membership) =>
+  membership &&
+  typeof membership === 'object' &&
+  ['lmu-individual', 'affiliate'].includes(membership.type) &&
+  membership.status === 'alumni';
+
+// Keep people who have at least one matching alumni membership.
 const alumnaeItems = (items || []).filter((item) => {
   const memberships = Array.isArray(item.memberships) ? item.memberships : [];
-
-  return memberships.some((membership) => {
-    if (!membership || typeof membership !== 'object') return false;
-
-    return ['lmu-individual', 'affiliate'].includes(membership.type) && membership.status === 'alumni';
-  });
+  return memberships.some(isAlumniMemberAffiliate);
 });
 %>
 
 <ul>
-  <% for (const item of alumnaeItems) { %>
-    <li><a href="<%= item.path %>"><%= item.academic_title %> <%= item.name %></a></li>
-  <% } %>
+<% for (const item of alumnaeItems) { %>
+<%
+const memberships = Array.isArray(item.memberships) ? item.memberships : [];
+const alumniMemberships = memberships.filter(isAlumniMemberAffiliate);
+const personLabel = [item.academic_title, item.name].filter(Boolean).join(' ');
+%>
+
+<% if (alumniMemberships.length === 0) { %>
+<li>
+<a href="<%= item.path %>"><%= personLabel %></a>
+</li>
+<% } else { %>
+<% for (const alumniMembership of alumniMemberships) { %>
+<%
+const alumniTitle =
+typeof alumniMembership.title === 'string' &&
+alumniMembership.title.trim() !== ''
+? alumniMembership.title
+: '';
+%>
+<li>
+<a href="<%= item.path %>"><%= personLabel %><%= alumniTitle ? ': ' + alumniTitle : '' %></a>
+</li>
+<% } %>
+<% } %>
+<% } %>
 </ul>

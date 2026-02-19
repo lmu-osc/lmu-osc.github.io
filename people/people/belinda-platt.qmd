@@ -4,11 +4,11 @@ academic_title: Dr.
 name: Belinda Platt
 surname: Platt
 first_name: Belinda
-position: Researcher
-faculty: University Hospital
 memberships:
   - type: lmu-individual
     status: active
+    position: Researcher
+    faculty: University Hospital
 email: Belinda.Platt@med.uni-muenchen.de
 photo: 'images/platt_belinda.jpg'
 links:
@@ -40,9 +40,6 @@ profile <- div(class = "people-profile",
     div(class = "people-info",
       p(class = "people-position", position),
       if (!is.null(faculty) & faculty != "") {p(class = "people-faculty", paste0("Faculty of ", faculty))},
-      if (faculty == "" & !is.null(affiliate_organization)) {
-        p(class = "people-faculty", affiliate_organization)
-        },
       div(class = "people-contact", contact_items, social_links)
     )
   ),

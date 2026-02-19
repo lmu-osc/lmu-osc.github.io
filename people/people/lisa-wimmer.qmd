@@ -4,11 +4,11 @@ academic_title: M.Sc.
 name: Lisa Wimmer
 surname: Wimmer
 first_name: Lisa
-position: PhD Candidate
-faculty: Math, Informatics & Stats
 memberships:
   - type: fellow
     status: active
+    position: Ph.D. Candidate
+    faculty: Math, Informatics & Stats
 email: lisa.wimmer@stat.uni-muenchen.de
 photo: 'images/wimmer_lisa.jpg'
 links:
@@ -40,9 +40,6 @@ profile <- div(class = "people-profile",
     div(class = "people-info",
       p(class = "people-position", position),
       if (!is.null(faculty) & faculty != "") {p(class = "people-faculty", paste0("Faculty of ", faculty))},
-      if (faculty == "" & !is.null(affiliate_organization)) {
-        p(class = "people-faculty", affiliate_organization)
-        },
       div(class = "people-contact", contact_items, social_links)
     )
   ),

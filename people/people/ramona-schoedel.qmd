@@ -4,11 +4,11 @@ academic_title: Dr.
 name: Ramona Schödel
 surname: Schödel
 first_name: Ramona
-position: Researcher
-faculty: Psychology & Education
 memberships:
   - type: lmu-individual
     status: active
+    position: Researcher
+    faculty: Psychology & Education
 email: Ramona.Schoedel@psy.lmu.de
 photo: 'images/schoedel_ramona.jpg'
 links:
@@ -40,9 +40,6 @@ profile <- div(class = "people-profile",
     div(class = "people-info",
       p(class = "people-position", position),
       if (!is.null(faculty) & faculty != "") {p(class = "people-faculty", paste0("Faculty of ", faculty))},
-      if (faculty == "" & !is.null(affiliate_organization)) {
-        p(class = "people-faculty", affiliate_organization)
-        },
       div(class = "people-contact", contact_items, social_links)
     )
   ),

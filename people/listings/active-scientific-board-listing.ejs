@@ -11,8 +11,25 @@ const activeManagementItems = (items || []).filter((item) => {
 %>
 
 <% for (const item of activeManagementItems) { %>
+<%
+const activeScientificBoardMembership = (Array.isArray(item.memberships) ? item.memberships : [])
+  .find((membership) =>
+    membership &&
+    typeof membership === 'object' &&
+    membership.type === 'scientific board' &&
+    membership.status === 'active'
+  );
+
+const scientificBoardPosition = (typeof activeScientificBoardMembership?.position === 'string' && activeScientificBoardMembership.position.trim() !== '')
+  ? activeScientificBoardMembership.position
+  : item.position;
+
+const scientificBoardFaculty = (typeof activeScientificBoardMembership?.faculty === 'string' && activeScientificBoardMembership.faculty.trim() !== '' && activeScientificBoardMembership.faculty !== 'NA')
+  ? activeScientificBoardMembership.faculty
+  : item.faculty;
+%>
 <div class="card mb-3" <%= metadataAttrs(item) %>>
-<h4 class="card-header"><%= item.position %></h4>
+<h4 class="card-header"><%= scientificBoardPosition %></h4>
 <div class="row g-0">
 <!-- Profile Image Column -->
 <div class="col-md-3 d-flex justify-content-center align-items-center">
@@ -70,7 +87,7 @@ const activeManagementItems = (items || []).filter((item) => {
 <h4 class="card-title"><%= item.name %></h4>
 <div class="d-flex align-items-center">
 <span class="card-subtitle mb-0 fs-5 fw-bold text-secondary">
-  <%= item.academic_title %><%= (item.faculty && item.faculty !== 'NA') ? '  |  ' + item.faculty : '' %>
+  <%= item.academic_title %><%= (scientificBoardFaculty && scientificBoardFaculty !== 'NA') ? '  |  ' + scientificBoardFaculty : '' %>
 </span>
 </div>
 <p class="personal-statement card-text text-justify"><%= item.personal %></p>

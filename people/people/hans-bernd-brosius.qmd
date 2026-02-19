@@ -4,11 +4,11 @@ academic_title: Prof. Dr.
 name: Hans-Bernd Brosius
 surname: Brosius
 first_name: Hans-Bernd
-position: Chair
-faculty: Social Sciences
 memberships:
   - type: lmu-individual
     status: active
+    position: Chair
+    faculty: Social Sciences
 email: hans-bernd.brosius@ifkw.lmu.de
 photo: 'images/brosius_hans-bernd.jpg'
 links:
@@ -41,9 +41,6 @@ profile <- div(class = "people-profile",
     div(class = "people-info",
       p(class = "people-position", position),
       if (!is.null(faculty) & faculty != "") {p(class = "people-faculty", paste0("Faculty of ", faculty))},
-      if (faculty == "" & !is.null(affiliate_organization)) {
-        p(class = "people-faculty", affiliate_organization)
-        },
       div(class = "people-contact", contact_items, social_links)
     )
   ),

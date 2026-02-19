@@ -14,6 +14,19 @@ const activeAffiliateItems = (items || []).filter((item) => {
 <div class="d-flex flex-wrap justify-content-center gap-4">
 
 <% for (const item of activeAffiliateItems) { %>
+<%
+  const memberships = Array.isArray(item.memberships) ? item.memberships : [];
+  const activeAffiliateMembership = memberships.find((membership) => {
+    if (!membership || typeof membership !== 'object') return false;
+    return membership.type === 'affiliate' && membership.status === 'active';
+  });
+  const affiliateOrganization =
+    typeof activeAffiliateMembership?.organization === 'string' &&
+    activeAffiliateMembership.organization.trim() !== '' &&
+    activeAffiliateMembership.organization !== 'NA'
+      ? activeAffiliateMembership.organization
+      : '';
+%>
 
 <div class="card d-flex flex-column align-items-center" style="width: 185px;">
 <!-- ORCID icon container (always present for consistent spacing) -->
@@ -30,8 +43,8 @@ const activeAffiliateItems = (items || []).filter((item) => {
 <div class="card-body flex-column text-center">
 <a href="<%= item.path %>" class="card-title"><%= item.name %></a>
 <div class="card-subtitle mt-auto text-muted"><%= item.academic_title %></div>
-<% if (item.affiliate_info && item.affiliate_info.organization && item.affiliate_info.organization !== 'NA') { %>
-<p class="card-text mt-auto"><%= item.affiliate_info.organization %></p>
+<% if (affiliateOrganization) { %>
+<p class="card-text mt-auto"><%= affiliateOrganization %></p>
 <% } %>
 </div>
 </div>

@@ -14,6 +14,14 @@ const activeFellowItems = (items || []).filter((item) => {
 <div class="d-flex flex-wrap justify-content-center gap-4">
 
 <% for (const item of activeFellowItems) { %>
+<%
+  // Find the active fellow membership to extract position and faculty
+  const activeFellowMembership = (Array.isArray(item.memberships) ? item.memberships : [])
+    .find((m) => m && typeof m === 'object' && m.type === 'fellow' && m.status === 'active');
+  
+  const fellowFaculty = activeFellowMembership?.faculty;
+  const fellowPosition = activeFellowMembership?.position;
+%>
 
 <div class="card d-flex flex-column align-items-center" style="width: 185px;">
 <!-- ORCID icon container (always present for consistent spacing) -->
@@ -29,9 +37,11 @@ const activeFellowItems = (items || []).filter((item) => {
 </a>
 <div class="card-body flex-column text-center">
 <a href="<%= item.path %>" class="card-title"><%= item.name %></a>
-<div class="card-subtitle mt-auto text-muted"><%= item.academic_title %></div>
-<% if (item.faculty && item.faculty !== 'NA') { %>
-<p class="card-text mt-auto"><%= item.faculty %></p>
+<% if (fellowPosition && typeof fellowPosition === 'string' && fellowPosition !== 'NA') { %>
+<div class="card-subtitle mt-auto text-muted"><%= fellowPosition %></div>
+<% } %>
+<% if (fellowFaculty && typeof fellowFaculty === 'string' && fellowFaculty !== 'NA') { %>
+<p class="card-text mt-auto"><%= fellowFaculty %></p>
 <% } %>
 </div>
 </div>

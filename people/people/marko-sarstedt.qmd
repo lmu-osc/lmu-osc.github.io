@@ -4,11 +4,11 @@ academic_title: Prof. Dr.
 name: Marko Sarstedt
 surname: Sarstedt
 first_name: Marko
-position: Director of Institute
-faculty: Business Administration
 memberships:
   - type: lmu-individual
     status: active
+    position: Director of Institute
+    faculty: Business Administration
 email: sarstedt@lmu.de
 photo: 'images/sarstedt_marko.jpg'
 links:
@@ -40,9 +40,6 @@ profile <- div(class = "people-profile",
     div(class = "people-info",
       p(class = "people-position", position),
       if (!is.null(faculty) & faculty != "") {p(class = "people-faculty", paste0("Faculty of ", faculty))},
-      if (faculty == "" & !is.null(affiliate_organization)) {
-        p(class = "people-faculty", affiliate_organization)
-        },
       div(class = "people-contact", contact_items, social_links)
     )
   ),
