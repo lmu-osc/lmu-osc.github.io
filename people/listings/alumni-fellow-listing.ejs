@@ -1,17 +1,44 @@
 <%
+// Match alumni fellow memberships only.
+const isAlumniFellow = (membership) =>
+  membership &&
+  typeof membership === 'object' &&
+  membership.type === 'fellow' &&
+  membership.status === 'alumni';
+
+// Keep people who have at least one matching alumni fellow membership.
 const alumnaeItems = (items || []).filter((item) => {
   const memberships = Array.isArray(item.memberships) ? item.memberships : [];
-
-  return memberships.some((membership) => {
-    if (!membership || typeof membership !== 'object') return false;
-
-    return ['fellow'].includes(membership.type) && membership.status === 'alumni';
-  });
+  return memberships.some(isAlumniFellow);
 });
 %>
 
 <ul>
   <% for (const item of alumnaeItems) { %>
-    <li><a href="<%= item.path %>"><%= item.name %>, <%= item.academic_title %></a></li>
+    <%
+      const memberships = Array.isArray(item.memberships) ? item.memberships : [];
+      // Keep alumni fellow memberships, even if the title is missing.
+      const alumniFellowMemberships = memberships.filter(isAlumniFellow);
+      const personLabel = [item.academic_title, item.name].filter(Boolean).join(' ');
+    %>
+
+    <% if (alumniFellowMemberships.length === 0) { %>
+      <li>
+        <a href="<%= item.path %>"><%= personLabel %></a>
+      </li>
+    <% } else { %>
+      <% for (const alumniFellowMembership of alumniFellowMemberships) { %>
+        <%
+          const alumniTitle =
+            typeof alumniFellowMembership.title === 'string' &&
+            alumniFellowMembership.title.trim() !== ''
+              ? alumniFellowMembership.title
+              : '';
+        %>
+        <li>
+          <a href="<%= item.path %>"><%= personLabel %><%= alumniTitle ? ': ' + alumniTitle : '' %></a>
+        </li>
+      <% } %>
+    <% } %>
   <% } %>
 </ul>
