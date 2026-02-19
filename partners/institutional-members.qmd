@@ -1,5 +1,6 @@
 ---
 title: "Institutional Members"
+body-classes: "institutional-members-page"
 format: 
   html:
     css: styles.css
@@ -18,7 +19,7 @@ format:
       </div>
       <div class="card-content">
         <p>Funding institutional members provide the OSC with a yearly membership fee to get priority in our training programmes and consultations.</p>
-        <a href="funding_institutional_members.html" class="partner-button">View Funding Institutional Members</a>
+        <a href="funding-institutional-members.html" class="partner-button">View Funding Institutional Members</a>
       </div>
     </div>
     
@@ -28,14 +29,14 @@ format:
       </div>
       <div class="card-content">
         <p>Affiliate institutional members share the goals of the OSC and provide support in kind (e.g. infrastructure, services, collaborations).</p>
-        <a href="affiliate_institutional_members.html" class="partner-button">View Affiliate Institutional Members</a>
+        <a href="affiliate-institutional-members.html" class="partner-button">View Affiliate Institutional Members</a>
       </div>
     </div>
 </div>
 <div class ="becoming-partner-info">
   <h2 class = "partner-subheading">Become an Institutional Member of the OSC</h2>
   <p class="intro-text mt-3">With a statement of commitment to work towards the OSC goals - LMU institutions can become Affiliate Institutional Members. Institutional Members are also encouraged to provide yearly funds to the OSC (depending on the size of the institution) - they then become Funding Institutional Members, which have additional benefits.</p>
-  <a href="becoming_institutional_members.html" class="member-info-button">Learn More <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+  <a href="becoming-institutional-members.html" class="member-info-button">Learn More</a>
 </div>
 
 ```
