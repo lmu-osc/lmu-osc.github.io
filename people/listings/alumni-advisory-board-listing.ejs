@@ -19,24 +19,24 @@ const alumnaeItems = (items || []).filter((item) => {
 const memberships = Array.isArray(item.memberships) ? item.memberships : [];
 // Keep alumni advisory board memberships, even if the title is missing.
 const alumniAdvisoryMemberships = memberships.filter(isAlumniAdvisoryBoard);
-const personLabel = [item.academic_title, item.name].filter(Boolean).join(' ');
 %>
 
 <% if (alumniAdvisoryMemberships.length === 0) { %>
 <li>
-<a href="<%= item.path %>"><%= personLabel %></a>
+<a href="<%= item.links[0].url %>"><%= item.name %><%= item.academic_title ? ', ' + item.academic_title : '' %></a>
 </li>
 <% } else { %>
 <% for (const alumniAdvisoryMembership of alumniAdvisoryMemberships) { %>
 <%
-const alumniTitle =
-typeof alumniAdvisoryMembership.title === 'string' &&
-alumniAdvisoryMembership.title.trim() !== ''
-? alumniAdvisoryMembership.title
-: '';
+const start = alumniAdvisoryMembership.start || '';
+const end = alumniAdvisoryMembership.end || '';
+let dateRange = '';
+if (start) {
+  dateRange = end ? ' (' + start + ' - ' + end + ')' : ' (' + start + ')';
+}
 %>
 <li>
-<a href="<%= item.path %>"><%= personLabel %><%= alumniTitle ? ': ' + alumniTitle : '' %></a>
+<a href="<%= item.links[0].url %>"><%= item.name %><%= dateRange %><%= item.academic_title ? ', ' + item.academic_title : '' %></a>
 </li>
 <% } %>
 <% } %>

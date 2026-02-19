@@ -17,7 +17,7 @@ const alumnaeItems = (items || []).filter((item) => {
 <% for (const item of alumnaeItems) { %>
 <%
 const memberships = Array.isArray(item.memberships) ? item.memberships : [];
-// Keep alumni staff memberships, even if the title is missing.
+// Keep alumni staff memberships, even if the position is missing.
 const alumniStaffMemberships = memberships.filter(isAlumniStaff);
 %>
 
@@ -28,14 +28,18 @@ const alumniStaffMemberships = memberships.filter(isAlumniStaff);
 <% } else { %>
 <% for (const alumniStaffMembership of alumniStaffMemberships) { %>
 <%
-const alumniStaffTitle =
-typeof alumniStaffMembership.title === 'string' &&
-alumniStaffMembership.title.trim() !== ''
-? alumniStaffMembership.title
-: '';
+const start = alumniStaffMembership.start || '';
+const end = alumniStaffMembership.end || '';
+let dateRange = '';
+if (start) {
+  dateRange = end ? ' (' + start + ' - ' + end + ')' : ' (' + start + ')';
+}
+const position = (typeof alumniStaffMembership.position === 'string' && alumniStaffMembership.position.trim() !== '') 
+  ? alumniStaffMembership.position 
+  : '';
 %>
 <li>
-<a href="<%= item.path %>"><%= item.name %><%= alumniStaffTitle ? ': ' + alumniStaffTitle : '' %></a>
+<a href="<%= item.path %>"><%= item.name %><%= dateRange %><%= position ? ': ' + position : '' %></a>
 </li>
 <% } %>
 <% } %>
