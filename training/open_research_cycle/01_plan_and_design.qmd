@@ -1,5 +1,5 @@
 ---
-title: "Plan & Design"
+title: "1. Plan & Design"
 description: "Explore existing resources, check legal requirements, write data management plans, design studies, and prepare preregistrations"
 phase_order: 1
 sidebar: open-research-cycle
@@ -26,7 +26,7 @@ title-block-style: none
 
 
 <details class="orc-details-panel">
-<summary ><i class="bi bi-search"></i> <h4>Explore and Reuse</h4></summary> 
+<summary ><i class="bi bi-search"></i> <h4>1.1. Explore and Reuse</h4></summary> 
 
 Any resource that inspire you or that you want to reuse and/or adapt must minimally be cited, using their DOIs (and otherwise URL with author, date, and time of access) and you must follow the license and/or usage agreement provided by the authors. 
 A research output (e.g. data, code) without a license cannot be reused even if they appear publicly online.
@@ -34,7 +34,7 @@ A research output (e.g. data, code) without a license cannot be reused even if t
 
 ::: {.panel-tabset}
 
-### Articles  <!--make this, and other tabs title everywhere, a shareable url?  -->
+### 1.1.1. Articles  <!--make this, and other tabs title everywhere, a shareable url?  -->
 
 * To come up with a well-founded research question, **review existing literature** on open source registries like [OpenAlex](https://openalex.org/). 
 * Keep track of your bibliography with an open source **reference manager** like [Zotero](https://www.zotero.org/). It can be integrated within RStudio to write reproducible manuscripts seamlessly, formatting your bibliography in any format you want (see [3. Analyze & Collaborate](03_analyze_and_collaborate.qmd)). <!-- url of link will change when merging to main website -does this currently work?? -->  <!-- could this be not looking like a hyperlink for an external page but maybe a small grey italic button looking text or something less popping out ?--> 
@@ -71,7 +71,7 @@ A research output (e.g. data, code) without a license cannot be reused even if t
 :::
 
 
-### Preregistrations
+### 1.1.2. Preregistrations
 
 A **preregistration** typically consists of a hypothesis and predictions, a plan for data collection (when relevant), and a plan for data analysis, that researchers upload before starting their projects, often in order to increase the rigor of confirmatory research (see [pre-analysis planning](###study-design--analysis-plan)).
 
@@ -104,7 +104,7 @@ To have some **insight into projects that are not (yet) published**, either curr
 
 :::
 
-### Data
+### 1.1.3.Data
 
 To find **existing datasets**, search for discipline-specific repositories on [re3data](https://www.re3data.org/) which is a central registry of all repositories, or explore subject agnostic repositories such as [DataCite](https://datacite.org/) or [Zenodo](https://zenodo.org/) (oftentimes with the corresponding analysis code). These platforms either give you access to existing data or provide metadata and explanations on how to request access to the data. **Metadata** are data about your data, such as author, date, measurement device, unit of measurement, context of data collection, ect.
 
@@ -125,7 +125,7 @@ Found a dataset to reuse? Make sure you know where your data comes from, how the
 :::
 
 
-### Code
+### 1.1.4. Code
 
 You may find **code available for reuse** archived on [Zenodo](https://zenodo.org/) or actively developed on [Github](https://github.com/). Learn how to work with GitHub in more details in [3. Analyze & Collaborate](03_analyze_and_collaborate.qmd)<!--internal link format--> or start learning Git version control now! 
  
@@ -158,11 +158,11 @@ Code publicly visible on GitHub without a license cannot be legally reused. Ask 
 
 
 <details class="orc-details-panel">
-<summary><i class="bi bi-shield-check"></i><h4>Legal Requirements</h4></summary>
+<summary><i class="bi bi-shield-check"></i><h4>1.2. Legal Requirements</h4></summary>
 
 ::: {.panel-tabset}
 
-### LMU guidelines
+### 1.2.1. LMU guidelines
 
 The [LMU Guidelines for Safeguarding Good Scientific Practice](https://cms-cdn.lmu.de/media/contenthub/amtliche-veroeffentlichungen/gwp-ordnung.pdf) (in german) are legally binding for all academics, researchers, research support staff, teachers, and students at LMU Munich. Only the original text in German prevails, but here is an English summary of relevant aspects for this guide:
 
@@ -202,7 +202,7 @@ See [](https://www.go-fair.org/fair-principles/) for more information and sectio
 
 In later sections, you will acquire skills in FAIR data management and reproducible workflows that will enable you to comply with these guidelines.
 
-### Funders
+### 1.2.2. Funders
 
 Funders may have additional **open and reproducible science requirements** on top of those indicated in the LMU guidelines. For instance, some calls request a Research Data Management plan before making their second payment, some specify the extent and timing of data sharing and provide funds for such activity. Check all requirements in the call information sheets.
 
@@ -210,7 +210,7 @@ Funders may have additional **open and reproducible science requirements** on to
 
 **Contact the [LMU Research Funding Unit](https://www.lmu.de/en/research/research-services/contact.html) to review your grant proposal** and assess if your proposal is meeting your funders' open science requirements. 
 
-### Ethics
+### 1.2.3. Ethics
 
 Data collection and analyses conducted on animals and humans typically requires the approval of your Faculty's ethics committee (see e.g. [instructions for the LMU Faculty of Medicine](https://www.med.lmu.de/de/fakultaet/wer-wir-sind/gremien-kommissionen/ethikkommission/) and [instructions for the LMU Department of Psychology](https://www.lmu.de/psyedu/en/research/ethics-committee/#:~:text=The%20Ethics%20Committee%20advises%20and,and%20in%20security%2Drelevant%20areas.)) to make sure your research will be conducted responsibly and that participants’ data will be protected.
 
@@ -236,7 +236,7 @@ Data collection and analyses conducted on animals and humans typically requires 
 
 
 <details class="orc-details-panel">
-<summary><i class="bi bi-folder2-open"></i><h4>Research Data Management Plans</h4></summary>
+<summary><i class="bi bi-folder2-open"></i><h4>1.3. Research Data Management Plans</h4></summary>
 
 A Data Management Plan (DMP) documents how you will handle research data throughout your project. Writing a DMP prompts you to think and document decisions you might otherwise leave implicit.
 
@@ -293,12 +293,12 @@ The specific questions vary by discipline, data type, and funder requirements. D
 
 
 <details class="orc-details-panel">
-<summary><i class="bi bi-clipboard-check"></i>Study Design & Analysis Plan</summary><!-- I want to cross ref this title - how? --> 
+<summary><i class="bi bi-clipboard-check"></i>1.3. Study Design & Analysis Plan</summary><!-- I want to cross ref this title - how? --> 
 <!-- logo like https://ree-gupta.github.io/lmu-osc.github.io/training/open_research_cycle/01_plan_and_design_website.html#planning-framework-options -->
 
 ::: {.panel-tabset}
 
-### Pre-analysis planning
+### 1.3.1. Pre-analysis planning
 
 Why should you plan your statistical plan prior to collecting data? 
 
@@ -387,7 +387,7 @@ After completing the study, authors add results and discussion sections, clearly
 
 
 
-### Simulation of Data
+### 1.3.2. Simulation of Data
 
 In our context, a computer simulation is the generation of artificial data to build up an understanding of real data and the statistical models we use to analyze them. You can simulate data to:
 <!-- need nice formatting -->
@@ -414,7 +414,7 @@ Generating an artificial dataset in R (see our [simulation tutorial](https://lmu
 <!-- card for simulation tutorial -->
 
 
-### Power analyses <!-- format this page nicely, I failed -->
+### 1.3.3. Power analyses <!-- format this page nicely, I failed -->
 
 Power analysis is relevant whether you are designing a project from scratch or running an analysis on already existing data. There are two main types of power analyses: 
 

@@ -1,5 +1,5 @@
 ---
-title: "Collect & Manage"
+title: "2. Collect & Manage"
 description: "Implement FAIR data management, organize research outputs, maintain privacy, and ensure quality"
 phase_order: 2
 sidebar: open-research-cycle
@@ -26,7 +26,7 @@ title-block-style: none
 
 
 <details class="orc-details-panel">
-<summary><i class="bi bi-journal-code"></i> Data Collection</summary>
+<summary><i class="bi bi-journal-code"></i> 2.1. Data Collection</summary>
 
 Your data acquisition procedures must be documented in sufficient details to allow replication by another researcher (see [LMU good practices guidelines](<!--internal link-->)). Establishing reproducible data collection processes strengthens the quality and consistency of both your data and that of your team.
 
@@ -44,7 +44,7 @@ State-of-the-art practices for reproducible data acquisition include<!-- make an
 
 ::: {.panel-tabset}
 
-### Lab Protocols
+### 2.1.1. Lab Protocols
 
 Your protocol should specify materials with identifying details (lot numbers, versions, sources), equipment settings, step-by-step instructions with timing, and expected outcomes at each stage. What counts as "materials" varies by field: reagent concentrations in wet lab work, scanner parameters in neuroimaging, sampling coordinates in field ecology. But the principle is the same: enough detail that someone else could replicate your procedure exactly.
 
@@ -75,13 +75,13 @@ Share, discover, cite, and improve research protocols.
 :::
 :::
 
-### Questionnaires
+### 2.1.2. Questionnaires
 
 Document both the instrument and the administration procedure completely. Use validated instruments <!-- what does a validate survey mean? -->when possible, pilot test before deployment, and archive the exact version participants see in an open source format. 
 
 <!-- [Content to be expanded] ??  @Felix: do we want anything else here?-->
 
-### Software-based data acquisition
+### 2.1.3. Software-based data acquisition
 
 When data comes from instruments, sensors, or APIs, scripting the acquisition creates a reproducible record of exactly what was collected and how. Programming languages like R or Python work well for straightforward pipelines. For more complex multi-step workflows which are common in e.g. in bioinformatics and neuroimaging, workflow managers like [Snakemake](https://snakemake.readthedocs.io/) or Nextflow ensure steps run in the correct order and can resume after failures.
 
@@ -112,7 +112,7 @@ Programming fundamentals for research data processing
 
 
 <details class="orc-details-panel">
-<summary><i class="bi bi-folder-check"></i> Data Management</summary>
+<summary><i class="bi bi-folder-check"></i> 2.2. Data Management</summary>
 
 In [Plan & Design](<!-- internal link-->) you created a Research Data Management Plan. It's now time to put this plan into practice, refining it as you learn what actually works for your project.
 
@@ -125,7 +125,7 @@ What follows are general practices. Your domain has specific conventions for fil
 
 ::: {.panel-tabset}
 
-### Storage
+### 2.2.1. Storage
 
 This section covers storage for data you are actively collecting. Long-term archiving for sharing is covered in [4. Preserve & Share](<!-- internal link-->)].
 
@@ -146,7 +146,7 @@ Personal laptops as primary storage, external drives as only copy, consumer clou
 <!-- add OSF card https://ree-gupta.github.io/lmu-osc.github.io/training/open_research_cycle/02_collect_and_manage_website.html#osf with the right OSF logo -->
 
 
-### Organization
+### 2.2.2. Organization
 
 Your folder structure and file naming conventions determine whether you and others can navigate your project months or years later. Establish these conventions at the start of your project and document them. When collaborating, ensure everyone follows the same system.
 
@@ -196,7 +196,7 @@ Domain-specific data management standards
 :::
 :::
 
-### File Formats
+### 2.2.3. File Formats
 
 File format choices affect who can work with your data now and whether it remains readable in the future. Open formats have publicly documented specifications that anyone can implement, so many programs can read them and they remain accessible even if the original software disappears. Proprietary formats lock you into specific tools, complicate collaboration, and risk becoming unreadable if the company stops supporting them.
 
@@ -226,7 +226,7 @@ Find recommended file formats and conventions for your research field.
 :::
 :::
 
-### Documentation
+### 2.2.4. Documentation
 
 Without documentation, a dataset is just a collection of files. Six months from now, you will not remember what each column means, why certain values are missing, or how files relate to each other. Documentation makes your data usable by your future self, your collaborators, and anyone who might reuse it.
 
@@ -264,7 +264,7 @@ Principles of README files and data dictionaries.
 :::
 
 
-### Standards
+### 2.2.5. Standards
 
 Standards are community agreements on how to organize and describe research data. Using them means others in your field immediately understand your data. Three types of standards matter here:
 
@@ -299,7 +299,7 @@ Find metadata standards and requirements specific to your research field.
 :::
 :::
 
-### Version Control
+### 2.2.6. Version Control
 
 Version control tracks changes to files over time. You can see what changed, when, and why. You can revert to previous versions. Collaborators can work without overwriting each other.
 
@@ -350,7 +350,7 @@ Version control for large datasets
 
 
 <details class="orc-details-panel">
-<summary><i class="bi bi-shield-lock"></i> Ethics & Privacy</summary> 
+<summary><i class="bi bi-shield-lock"></i> 2.3. Ethics & Privacy</summary> 
 
 Research involving human participants requires ethics approval and data protection compliance. These are not bureaucratic hurdles but safeguards for the people contributing to your research. Address them before collecting any data.
 
@@ -360,7 +360,7 @@ At LMU Munich, submit ethics applications to the [Ethics Committee](https://www.
 
 ::: {.panel-tabset}
 
-### Informed Consent
+### 2.3.1. Informed Consent
 
 Participants have the right to understand what they are agreeing to. Your consent form should explain the research purpose in plain language, describe what data you will collect and how you will protect it, specify who will have access and for how long, and make clear that participation is voluntary.
 
@@ -370,7 +370,7 @@ Participants have the right to understand what they are agreeing to. Your consen
 
 - **Store consent forms separately from data.** The consent form links a name to participation. Keeping it with your data undermines any pseudonymization you apply.
 
-### Anonymization
+### 2.3.2. Anonymization
 
 Anonymization protects privacy and determines what you can share. 
 
@@ -394,7 +394,7 @@ The distinction between pseudonymization and anonymization matters for GDPR comp
 <!-- card learn more with OSC tutorial on data anonymisation TBA mid 2026 
 Implementing and evaluating data anonymization techniques for safely sharing sensitive research data -->
 
-### GDPR Compliance
+### 2.3.3. GDPR Compliance
 
 Research at LMU Munich must comply with EU data protection regulations. The core principles: have a lawful basis for processing personal data (usually consent or legitimate research interest), use data only for stated purposes, collect only what you need, delete data when you no longer need it, and protect it against unauthorized access.
 
@@ -408,7 +408,7 @@ Research at LMU Munich must comply with EU data protection regulations. The core
 
 
 <details class="orc-details-panel">
-<summary><i class="bi bi-check2-square"></i> Quality Control</summary>
+<summary><i class="bi bi-check2-square"></i> 2.4. Quality Control</summary>
 
 Quality control catches problems before they propagate into your analysis. The practices here ensure your data is trustworthy and your exclusions are defensible.
 
@@ -416,7 +416,7 @@ Quality control catches problems before they propagate into your analysis. The p
 
 ::: {.panel-tabset}
 
-### Validation 
+### 2.4.1. Validation 
 
 Validation checks whether your data meets specifications. Run checks during collection to catch problems immediately, after collection for systematic review, and after any processing to verify transformations worked correctly.
 
@@ -438,7 +438,7 @@ Learn to create validation rules and automated checks for your research data.
 :::
 :::
 
-### Cleaning
+### 2.4.2. Cleaning
 
 Data cleaning handles errors, inconsistencies, and missing values. The cardinal rule: never modify your raw data. All cleaning happens on copies.
 
@@ -452,7 +452,7 @@ Data cleaning handles errors, inconsistencies, and missing values. The cardinal 
 
 - **Write cleaning as a script.** A script documents exactly what you did and lets you reproduce it. Keep a decision log for choices that cannot be automated.
 
-### Exclusions
+### 2.4.3. Exclusions
 
 Exclusion criteria specify which data points will be removed from analysis and why. Define these before you see your results (see [Study Design & Analysis Plan](<!--internal link-->)).
 

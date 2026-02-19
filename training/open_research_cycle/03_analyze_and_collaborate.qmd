@@ -1,5 +1,5 @@
 ---
-title: "Analyze & Collaborate"
+title: "3. Analyze & Collaborate"
 description: "Create reproducible analyses, document workflows, collaborate effectively, and ensure computational reproducibility"
 phase_order: 3
 sidebar: open-research-cycle
@@ -28,7 +28,7 @@ title-block-style: none
 
 
 <details class="orc-details-panel">
-<summary><i class="bi bi-gear-wide-connected"></i> Reproducible Data Processing & Analysis</summary>
+<summary><i class="bi bi-gear-wide-connected"></i> 3.1. Reproducible Data Processing & Analysis</summary>
 
 Data processing and analysis should be reproducible, independent of software, programming language, or operating system. 
 This is best achieved by favoring automated, **script-based workflows** over manual point-and-click procedures, supported by **adequate documentation** and shared code that allows others to regenerate results. 
@@ -36,17 +36,17 @@ Because analysis scripts are inherently iterative and evolve through corrections
 
 ::: {.panel-tabset}
 
-### programming
+### 3.1.1. programming
 
-- **Create self-contained project folder**. Include data, code, documentation, and outputs in a single structured environment, ensuring the project remains understandable, reproducible, and portable across systems and collaborators. If you use the free and open source software RStudio to manage your R project, your project directory (or folder) should contain a .Rproj file (see [R tutorial](https://lmu-osc.github.io/introduction-to-R/)). Use relative paths (i.e. “./subfolder”, where . represents the root of your .Rproj directory) or the library `here`, so the project stays portable to another environment
-- **Use a standard folder structure**. Your code repository should include a standard folder structure that make sense for your type of research, ideally shared amongst your team members. You can for instance use the [OSC research project template](https://github.com/lmu-osc/research-project-template). 
-- **Stop clicking, start coding**. Automatize all possible steps, including data acquisition (see [Data Collection](<!-- internal link-->)), data processing and transformation, data analyses, data visualization, and results reporting (see [Reproducible Reporting](<!-- internal link-->))
+- **Create self-contained project folder**. Include data, code, documentation, and outputs in a single structured environment, ensuring the project remains understandable, reproducible, and portable across systems and collaborators. If you use the free and open source software RStudio to manage your R project, your project directory (or folder) should contain a .Rproj file (see [R tutorial](https://lmu-osc.github.io/introduction-to-R/)). **Use relative paths** (i.e. `“./subfolder”`, where `.` represents the root of your .Rproj directory) or the library `here`, so the project stays portable to another environment
+- **Use a standard folder structure**. Your code repository should include a standard folder structure that make sense for your type of research, ideally shared across your team members. You can for instance use the [OSC research project template](https://github.com/lmu-osc/research-project-template). 
+- **Stop clicking, start coding**. Automatize all possible steps, including data acquisition (see [Data Collection](<!-- internal link-->)), data processing and transformation, data analyses, data visualization, and results reporting (see [3.2. Reproducible Reporting](<!-- internal link-->))
 - **Structure, comment, and standardize your scripts.** R scripts themselves should follow current standards to increase their readability(see [Readable Code Lecture](<!-- should link to the internal page pat should create in the itnernal catalogue to include both slides and recording https://github.com/lmu-osc/lmu-osc.github.io/issues/375 -->)). Use meaningful names for variables, functions, and scripts. Add comments to your code explaining _why_ you made a decision, and define your own function rather than copy and pasting pieces of code which makes it hard to maintain error-free. 
 
 
 <!-- add R tuto card and readable code lecture card as learn more + OSC research project template as OSC Tool-->
 
-### version control
+### 3.1.2. version control
 
 Version control tracks changes to files over time. You can see what changed, when, and why. You can revert to previous versions. Collaborators can work without overwriting each other.
 
@@ -65,7 +65,7 @@ In a version controlled workflow, you back up your local git repositories on eit
 
 <!-- add Git tuto card, github tuto card, gitlab lrz LMU supported tool -->
 
-### computational environment management
+### 3.1.3. computational environment management
 
 Manage your computational environment by explicitly recording the software, package versions, and dependencies required for your analyses, ensuring results can be reproduced across systems and over time. Tools such as packages managers (e.g. [Renv](https://rstudio.github.io/renv/) for R pacakges, [Conda](https://anaconda.org/channels/anaconda/packages/conda/overview) for Python packages) or broader containers (e.g. [Docker](https://www.docker.com/) or [Binder](https://mybinder.org/)) help stabilize workflows and prevent inconsistencies caused by packages or software updates.
 
@@ -80,7 +80,7 @@ Before [4. Preserve and share](<!-- internal link -->):
 <!--renv osc tuto card, add code publishing tuto card, add binder, conda and docker tool card https://ree-gupta.github.io/lmu-osc.github.io/training/open_research_cycle/03_analyze_and_collaborate_website.html#environment-management -->
 
 
-### Documentation
+### 3.1.4. Documentation
 
 <!-- readable lecture card again
 data dictionary card -->
@@ -94,15 +94,23 @@ readme from code publishing? a bit too intense for this stage tho but something 
 
 
 <details class="orc-details-panel">
-<summary><i class="bi bi-file-earmark-richtext"></i> Reproducible Reporting</summary>
+<summary><i class="bi bi-file-earmark-richtext"></i> 3.2. Reproducible Reporting</summary>
 
-cards or tabs about 
+::: {.panel-tabset}
+
+### 3.2.1. Analysis Report
 
 reproducible analyses report with quarto
 
+### 3.2.2. Manuscript
+
 reproducible manuscripts with quarto, zotero
 
+### 3.2.3. Presentation
+
 reproducible presentation with quarto
+
+### 3.2.4. Website
 
 reproducible websites with quarto
 
