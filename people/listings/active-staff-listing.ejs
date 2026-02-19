@@ -11,8 +11,27 @@ const activeStaffItems = (items || []).filter((item) => {
 %>
 
 <% for (const item of activeStaffItems) { %>
+<%
+const activeStaffMembership = (Array.isArray(item.memberships) ? item.memberships : [])
+  .find((membership) =>
+    membership &&
+    typeof membership === 'object' &&
+    membership.type === 'staff' &&
+    membership.status === 'active'
+  );
+
+const staffPosition = (typeof activeStaffMembership?.position === 'string' && activeStaffMembership.position.trim() !== '')
+  ? activeStaffMembership.position
+  : ((typeof activeStaffMembership?.title === 'string' && activeStaffMembership.title.trim() !== '')
+    ? activeStaffMembership.title
+    : item.osc_staff_title);
+
+const staffFaculty = (typeof activeStaffMembership?.faculty === 'string' && activeStaffMembership.faculty.trim() !== '' && activeStaffMembership.faculty !== 'NA')
+  ? activeStaffMembership.faculty
+  : item.faculty;
+%>
 <div class="card mb-3" <%= metadataAttrs(item) %>>
-<h4 class="card-header"><%= item.osc_staff_title %></h4>
+<h4 class="card-header"><%= staffPosition %></h4>
 <div class="row g-0">
 <!-- Profile Image Column -->
 <div class="col-md-3 d-flex justify-content-center align-items-center">
@@ -70,7 +89,7 @@ const activeStaffItems = (items || []).filter((item) => {
 <h4 class="card-title"><%= item.name %></h4>
 <div class="d-flex align-items-center">
 <span class="card-subtitle mb-0 fs-5 fw-bold text-secondary">
-  <%= item.academic_title %><%= (item.faculty && item.faculty !== 'NA') ? '  |  ' + item.faculty : '' %>
+  <%= item.academic_title %><%= (staffFaculty && staffFaculty !== 'NA') ? '  |  ' + staffFaculty : '' %>
 </span>
 </div>
 <p class="personal-statement card-text text-justify"><%= item.personal %></p>
