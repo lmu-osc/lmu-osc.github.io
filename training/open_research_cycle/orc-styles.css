@@ -32,7 +32,11 @@
    2. BASE & LAYOUT
    ======================================== */
 
-h2 i, h3 i { color: var(--orc-green); margin-right: .5rem; }
+h2 i, h3 i{ color: var(--orc-green); margin-right: .5rem; }
+
+* a { color: var(--orc-green); }
+
+.mark { background: var(--orc-gray-100); color:var(--orc-text);}
 
 .orc-grid-tools {
   display: grid;
@@ -237,6 +241,7 @@ h2 i, h3 i { color: var(--orc-green); margin-right: .5rem; }
   border-radius: var(--orc-radius-md);
   border-left: 5px solid var(--orc-green);
   margin: 3.5rem 0;
+  line-height: 1.6rem;
 }
 
 .orc-gradient-box h2 {
@@ -251,6 +256,17 @@ h2 i, h3 i { color: var(--orc-green); margin-right: .5rem; }
   border-radius: var(--orc-radius-md);
   border-left: 5px solid #aed0bbad;
   margin: 2rem 0;
+}
+.orc-checklist-download .btn-outline-secondary{
+  border-color: var(--orc-green);
+  color: var(--orc-green);
+}
+.orc-checklist-download .btn-outline-secondary:hover,
+.orc-checklist-download .btn-outline-secondary:focus,
+.orc-checklist-download .btn-outline-secondary:active{
+  border-color: var(--orc-green)!important;
+  color: white!important;
+  background: var(--orc-green)!important;
 }
 /* ========================================
    5. CALLOUTS (Quarto)
