@@ -1,53 +1,18 @@
 ---
+title: "Funders"
 pagetitle: "Funders"
 format: 
   html:
     page-layout: full
     toc: false
+    anchor-sections: false 
 ---
 
 <style>
-.content-container {
-  --theme-main: #00883A;
-  --theme-bg: #f5f6fa;
-  --theme-card-bg: #fff;
-  --theme-card-shadow: 0 2px 10px rgba(43,134,75,0.10);
-  --theme-border: #e3e7ed;
-}
-
-body {
-  margin: 0;
-  min-height: 100vh;
-}
-
-.content-container{
-  max-width: 1200px;
-  margin: 2rem auto;
-  padding: 0 1.5rem;
-}
-
-
-.header-section {
-  font-size: 2.6rem;
-  font-weight: 700;
-  color:var(--theme-main);
-  letter-spacing: -0.5px;
-}
-
-.intro-text {
-  font-size: 1.3rem;
-  color: #4a5568;
-  line-height: 1.85;
-  margin-top:0.6rem;
-  margin-bottom: 1.1rem;
-  text-align: justify;
-  width:100%;
-}
-
 /* styling for logo*/
 .logo-img{
   padding:1rem;
-  padding-top:2rem;
+  padding-top:3rem;
   align-content: center;
 }
 .logo-img img {
@@ -57,308 +22,229 @@ body {
 }
 
 .vw-logo img{
-  width: 170px;   
+  width: 180px;   
   height: auto;   
   object-fit: contain; 
 }
 
-
-.member-grid {
-  display: grid;
-  grid-template-columns: 280px 800px;
-  grid-template-rows: auto;
-  gap: 1rem;
+.funders-card {
+  transition: all 0.35s ease;
 }
 
-.member-grid-item {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  background: var(--theme-card-bg);
-  border-radius: 5px;
-  box-shadow: var(--theme-card-shadow);
-  border: 1.5px solid var(--theme-border);
-  padding: 0.5rem;
-  text-align: center;
-  transition: transform 0.13s, box-shadow 0.13s;
-  height: 300px; 
-  min-width: 200px;
+.funders-card:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 12px 28px rgba(43, 134, 75, 0.18);
+  border-color: #00883A;
+}
+
+.funders-btn.btn-outline-primary {
+  transition: all 0.3s ease;
+  border-color: #00883A !important;
+  color: #00883A !important;
+}
+
+.funders-btn.btn-outline-primary:hover,
+.funders-btn.btn-outline-primary:focus,
+.funders-btn.btn-outline-primarys:active {
+  background-color: #00883A !important;
+  color: #fff !important;
+  border-color: #00883A !important;
+}
+
+.card-min-height {
+  min-height: 300px;
+}
+
+.card-width-fixed {
   max-width: 320px;
-  box-sizing: border-box;
-  overflow: hidden;
 }
-
-.member-grid-item:hover {
-  transform: translateY(-5px) scale(1.025);
-  box-shadow: 0 8px 32px rgba(43,134,75,0.15);
-  border-color: var(--theme-main);
-}
-
-
-.profile-link {
-  display: contents;
-  text-decoration: none;
-  color: inherit;
-  height: 100%;
-}
-
-.member-grid-name {
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: var(--bs-gray-700);
-  margin-bottom: 0.3rem;
-  line-height: 1.4;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  overflow: hidden;
-  cursor: default;
-  min-height: 2em;
-}
-
-.social-link {
-  display: inline-flex;         
-  align-items: center;
-  gap: 0.4rem;
-  background: none;              
-  box-shadow: none;               
-  color: var(--theme-main);                 
-  text-decoration: none;
-  font-size: 0.9rem;              
-  width: auto;                  
-  height: auto;                 
-  border: 1px solid #e3e7ed;                  
-  border-radius: 4px;              
-  padding: 0.3rem 0.6rem;                   
-  cursor: pointer;
-  transition: color 0.2s, border-color 0.2s;
-}
-
-.social-link i {
-  font-size: 0.9rem;
-  line-height: 1;      
-  margin: 0; 
-}
-
-.social-link:hover {
-  background-color:rgba(43, 134, 75, 0.98);
-  color: white;
-  border-color:var(--theme-main);
-  transform: translateY(-2px);
-}
-
-.description-container {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.description-text {
-  font-size: 1.2rem;
-  color: #4a5568;
-  line-height: 1.85;
-  margin-top: 0;
-  margin-bottom: 0.5rem;
-  overflow: hidden;
-  max-height: calc(1.2rem * 1.85 * 8);
-  width: 100%;
-  text-align: justify;
-
-}
-
-hr {
-    border: 0;
-    height: 1px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5));
-    margin: 20px 0;
-    grid-column: 1 / -1; 
-  }
-
-.funding-details{
-  display: flex;
-  flex-wrap: wrap;
-  align-items:center;
-  gap: 0.5rem;
-  justify-content: flex-start;
-}
-
-.funding-list .funding-name,
-.funding-project{
-  font-size: 1.2rem;
-  color: #4a5568;
-  line-height: 1.85;
-}
-.funding-list .funding-date{
-  font-size: 1rem;
-  line-height: 1.85;
-}
-.funding-list .funding-amt{
+.funding-amt {
   border-radius: 14px;
   cursor: default;
-  color: #4a5568;
-}
-@media (max-width: 900px) {
-  .member-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .member-grid-item,
-  .description-container {
-    text-align: center;
-  }
-
-  .description-text {
-    text-align: left;
-  }
-}
-
-@media (max-width: 600px) {
-  .header-section {
-    font-size: 2.2rem;
-  }
-  .intro-text {
-    font-size: 1.05rem;
-  }
 }
 
 </style>
 
+:::{.intro-text }
+The LMU Open Science Center is a volunteer based organisation supported by coordinators and assistants generously funded by:
+:::
+
 ```{=html}
-<div class ="content-container">
-  <div class="header-section">Funders</div>
-    <p class = "intro-text">The LMU Open Science Center is a volunteer based organisation supported by coordinators and assistants generously funded by:</p>
-      <div class="member-grid">
-          <div class="profile-link">
-              <div class="member-grid-item">
-                  <div class="logo-img">
-                      <a href="https://www.lmu.de/de/index.html"  target="_blank">
-                      <img src="images/lmu_logo.jpg" alt="lmu-logo">
-                      </a>
-                  </div>
-                  <div class="member-grid-name">LMU Project Funding</div> 
-              </div>
-          </div>
 
-          <div class="description-container">  
-              <div class="description-text">
-                <div class="funding-list funding-one mb-2">
-                  <div class="funding-details">
-                    <span class="funding-name fw-bolder">Frontiers LMU Excellence</span>
-                    <span class="funding-date text-muted">2022 - 2024</span>
-                    <span class="funding-amt z-50 border px-3 py-0 btn fw-bolder">
-                      €250K
-                    </span>
-                  </div>
-                  <span class="funding-project text-muted">Meta-Research Hub</span>
-                </div>
-                <div class="funding-list funding-two mb-2">
-                  <div class="funding-details">
-                    <span class="funding-name fw-bolder">Fund for the Promotion of Teaching </span>
-                    <span class="funding-date text-muted">2022</span>
-                    <span class="funding-amt z-50 border px-3 py-0 btn fw-bolder">
-                      €15K+
-                    </span>
-                  </div>
-                  <span class="funding-project text-muted">Hybrid Open Science Summer School 2023</span>
-                </div>
-                <div class="funding-list funding-three">
-                  <div class="funding-details">
-                    <span class="funding-name fw-bolder">Central Study Grant</span>
-                    <span class="funding-date text-muted">2024 - 2025</span>
-                    <span class="funding-amt z-50 border px-3 py-0 btn fw-bolder">
-                      €140K+
-                    </span>
-                  </div>
-                  <span class="funding-project text-muted">Open Hybrid Facilitated Self-paced Tutorial (Open HyFaST)</span>
-                </div>
-              </div>
+<div class="container">
+  <div class="row align-items-center align-items-stretch">
+    <div class="col-12 col-lg-3 d-flex justify-content-center">
+      <div class="card h-100 shadow-sm funders-card card-min-height card-width-fixed">
+        <a href="https://www.lmu.de/de/index.html" class="text-center p-3 pt-4 logo-img">
+          <img src="images/lmu_logo.jpg" class="card-img-top img-fluid" alt="LMU logo">
+        </a>
+        <div class="card-body text-center align-items-center">
+          <h5 class="card-title">LMU Project Funding</h5>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-lg-9">
+      <div class="p-3">
+        <div class="mb-4">
+          <div class="d-flex justify-content-start align-items-center flex-wrap gap-2">
+            <div>
+              <span class="fw-bold fs-5">Frontiers LMU Excellence</span>
+              <span class="text-muted ms-2">2022 – 2024</span>
+            </div>
+            <span class="badge border text-dark fw-bold px-3 py-2 funding-amt">
+              €250K
+            </span>
           </div>
-          <hr>
-          <div class="profile-link">
-              <div class="member-grid-item">
-                  <div class="logo-img vw-logo">
-                      <a href="https://www.volkswagenstiftung.de/en"  target="_blank">
-                      <img src="images/VW.png" alt="VW-logo">
-                      </a>
-                  </div> 
-                  <div class="member-grid-name">Volkswagen Foundation</div>  
-              </div>
-          </div>
-
-          <div class="description-container">
-              <div class="description-text mb-2">
-                  <div class="funding-list funding-one">
-                    <div class="funding-details">
-                        <span class="funding-name fw-bolder">Pioneer Project – Impetus for the German Science System</span>
-                        <span class="funding-date text-muted">2025 - 2027</span>
-                        <span class="funding-amt z-50 border px-3 py-0 btn fw-bolder">
-                          €550K
-                        </span>
-                    </div>
-                    <span class="funding-project text-muted">
-                      From local to systemic implementation: Embedding open research in institutional practices
-                    </span>
-                  </div>
-               </div>
-              <a href="https://www.lmu.de/en/newsroom/news-overview/news/bringing-transparency-to-research-practice-28b91a8c.html" target="_blank" class="social-link">Press Release <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-          </div>
-          <hr>
-          <div class="profile-link">
-              <div class="member-grid-item">
-                  <div class="logo-img">
-                      <a href="/partners/funding-institutional-members.qmd">
-                      <img src="images/lmu_logo.jpg" alt="VW-logo">
-                      </a>
-                  </div>  
-                  <div class="member-grid-name">LMU Funding Institutional Members</div> 
-              </div>
-          </div>
-
-          <div class="description-container">
-              <div class="description-text mb-3">
-                  <div class="funding-list funding-one">
-                    <div class="funding-details">
-                        <span class="funding-name fw-bolder">Yearly membership fee</span>
-                        <span class="funding-date text-muted">Ongoing</span>
-                        <span class="funding-amt z-50 border px-3 py-0 btn fw-bolder">
-                          €10K+/year
-                        </span>
-                    </div>
-                    <span class="funding-project text-muted">
-                      Funding institutional members such as LMU Faculties and Clusters of Excellence provide the center with a yearly membership fee to get priority access to our training programmes and consultations.
-                    </span>
-                  </div>
-              </div>
-              <a href="/partners/funding-institutional-members.html" target="_blank" class="social-link">View Funding Institutional Members <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-          </div>
-          <hr> 
-          <div class="profile-link">
-              <div class="member-grid-item">
-                  <div class="logo-img">
-                      <a href="https://www.lmu.de/psy/de/"  target="_blank">
-                      <img src="images/lmu_logo.jpg" alt="lmu-logo">
-                      </a>
-                  </div> 
-                  <div class="member-grid-name">LMU Psychology Department</div> 
-              </div>
-          </div>
-
-          <div class="description-container">
-              <div class="description-text">
-                  <div class="funding-list funding-one">
-                    <div class="funding-details">
-                        <span class="funding-name fw-bolder">Departmental Study Grant</span>
-                        <span class="funding-date text-muted">2026</span>
-                        <span class="funding-amt z-50 border px-3 py-0 btn fw-bolder">
-                         €5K+
-                        </span>
-                    </div>
-                    <span class="funding-project text-muted">
-                      Integration of Open Science training material into the Psychology curriculum
-                    </span>
-              </div>
+          <div class="text-muted mt-1">
+            Meta-Research Hub
           </div>
         </div>
+        <div class="mb-4">
+          <div class="d-flex justify-content-start align-items-center flex-wrap gap-2">
+            <div>
+              <span class="fw-bold fs-5">
+                Fund for the Promotion of Teaching
+              </span>
+              <span class="text-muted ms-2">2022</span>
+            </div>
+            <span class="badge border text-dark fw-bold px-3 py-2 funding-amt">
+              €15K+
+            </span>
+          </div>
+          <div class="text-muted mt-1">
+            Hybrid Open Science Summer School 2023
+          </div>
+        </div>
+        <div>
+          <div class="d-flex justify-content-start align-items-center flex-wrap gap-2">
+            <div>
+              <span class="fw-bold fs-5">Central Study Grant</span>
+              <span class="text-muted ms-2">2024 – 2025</span>
+            </div>
+            <span class="badge border text-dark fw-bold px-3 py-2 funding-amt">
+              €140K+
+            </span>
+          </div>
+          <div class="text-muted mt-1">
+            Open Hybrid Facilitated Self-paced Tutorial (Open HyFaST)
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
 </div>
+
+<hr class="my-4 border-1">
+
+<!---- SECOND CONTAINER--> 
+
+<div class="container">
+  <div class="row align-items-center align-items-stretch">
+    <div class="col-12 col-lg-3 d-flex justify-content-center">
+      <div class="card h-100 shadow-sm funders-card card-min-height card-width-fixed">
+        <a href="https://www.volkswagenstiftung.de/en" class="text-center p-3 pt-4 vw-logo">
+          <img src="images/VW.png" class="card-img-top img-fluid" alt="Volkswagen Foundation logo">
+        </a>
+        <div class="card-body text-center align-items-center mt-1">
+          <h5 class="card-title">Volkswagen Foundation</h5>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-lg-9">
+      <div class="p-3">
+        <div class="mb-4">
+          <div class="d-flex justify-content-start align-items-center flex-wrap gap-2">
+            <div>
+              <span class="fw-bold fs-5">Pioneer Project – Impetus for the German Science System</span>
+              <span class="text-muted ms-2">2025 - 2027</span>
+            </div>
+            <span class="badge border text-dark fw-bold px-3 py-2 funding-amt">
+              €550K
+            </span>
+          </div>
+          <div class="text-muted mt-1">
+            From local to systemic implementation: Embedding open research in institutional practices.
+          </div>
+        </div>
+        <a href="https://www.lmu.de/en/newsroom/news-overview/news/bringing-transparency-to-research-practice-28b91a8c.html"  class="btn btn-outline-primary funders-btn">Press Release <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr class="my-4 border-1">
+
+<!-- THIRD CONTAINER-->
+<div class="container">
+  <div class="row align-items-center align-items-stretch">
+    <div class="col-12 col-lg-3 d-flex justify-content-center">
+      <div class="card h-100 shadow-sm funders-card card-min-height card-width-fixed">
+        <a href="/partners/funding-institutional-members.qmd" class="text-center p-3 pt-4 logo-img">
+          <img src="images/lmu_logo.jpg" class="card-img-top img-fluid" alt="LMU logo">
+        </a>
+        <div class="card-body text-center align-items-center">
+          <h5 class="card-title">LMU Funding Institutional Members</h5>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-lg-9">
+      <div class="p-3">
+        <div class="mb-4">
+          <div class="d-flex justify-content-start align-items-center flex-wrap gap-2">
+            <div>
+              <span class="fw-bold fs-5">Yearly membership fee</span>
+              <span class="text-muted ms-2">Ongoing</span>
+            </div>
+            <span class="badge border text-dark fw-bold px-3 py-2 funding-amt">
+              €10K+/year
+            </span>
+          </div>
+          <div class="text-muted mt-1">
+            Funding institutional members such as LMU Faculties and Clusters of Excellence provide the center with a yearly membership fee to get priority access to our training programmes and consultations.
+          </div>
+        </div>
+        <a href="/partners/funding-institutional-members.html"class="btn btn-outline-primary funders-btn">View Funding Institutional Members</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr class="my-4 border-1">
+
+<!-- FOURTH CONTAINERRR-->
+<div class="container">
+  <div class="row align-items-center align-items-stretch">
+    <div class="col-12 col-lg-3 d-flex justify-content-center">
+      <div class="card h-100 shadow-sm funders-card card-min-height card-width-fixed">
+        <a href="https://www.lmu.de/psy/de/" class="text-center p-3 pt-4 logo-img">
+          <img src="images/lmu_logo.jpg" class="card-img-top img-fluid" alt="LMU logo">
+        </a>
+        <div class="card-body text-center align-items-center">
+          <h5 class="card-title">LMU Psychology Department</h5>
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-lg-9">
+      <div class="p-3">
+        <div class="mb-4">
+          <div class="d-flex justify-content-start align-items-center flex-wrap gap-2">
+            <div>
+              <span class="fw-bold fs-5">Departmental Study Grant</span>
+              <span class="text-muted ms-2">2026</span>
+            </div>
+            <span class="badge border text-dark fw-bold px-3 py-2 funding-amt">
+              €5K+
+            </span>
+          </div>
+          <div class="text-muted mt-1">
+            Integration of Open Science training material into the Psychology curriculum.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 ```
