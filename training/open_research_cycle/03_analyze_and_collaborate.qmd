@@ -30,9 +30,11 @@ title-block-style: none
 <details class="orc-details-panel">
 <summary><i class="bi bi-gear-wide-connected"></i> Reproducible Data Processing & Analysis</summary>
 
-::: {.panel-tabset}
+Data processing and analysis should be reproducible, independent of software, programming language, or operating system. 
+This is best achieved by favoring automated, **script-based workflows** over manual point-and-click procedures, supported by **adequate documentation** and shared code that allows others to regenerate results. 
+Because analysis scripts are inherently iterative and evolve through corrections and refinements, automation is **essential for both reproducibility and efficiency**. This section outlines a recommended workflow for R users.
 
-Data processing and analysis should be reproducible, independent of software, programming language, or operating system. This is best achieved by favoring automated, **script-based workflows** over manual point-and-click procedures, supported by **adequate documentation** and shared code that allows others to regenerate results. Because analysis scripts are inherently iterative and evolve through corrections and refinements, automation is **essential for both reproducibility and efficiency**. This section outlines a recommended workflow for R users.
+::: {.panel-tabset}
 
 ### programming
 
