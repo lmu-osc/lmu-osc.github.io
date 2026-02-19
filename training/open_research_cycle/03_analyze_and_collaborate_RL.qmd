@@ -6,9 +6,12 @@ sidebar: open-research-cycle
 page-layout: full
 css: orc-styles.css
 title-block-style: none
+include-in-header:
+  - text: |
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 ---
 
-<div class="orc-phase-hero-compact-container">
+<div class="orc-phase-hero-compact phase-3">
 <div class="orc-hero-cycle phase-3">
 {{< include ../images/os-cycle.svg >}}
 </div>
@@ -85,4 +88,63 @@ reproducible websites with quarto
 </details>
 
 
-checklist
+
+
+::: {.orc-gradient-box .analysis-collaboration-checklist}
+
+
+## <i class="bi bi-clipboard-check"></i> Analysis & Collaboration Checklist
+**Before Starting Analysis:**
+
+<div class="orc-grid-2col">
+
+<div>
+
+- [ ] Analysis plan documented
+- [ ] Project uses version control (Git)
+- [ ] Directory structure organized
+- [ ] Dependencies managed
+</div>
+
+<div>
+
+- [ ] README file initiated
+- [ ] Data dictionary available
+- [ ] Code style guide chosen
+- [ ] Collaboration workflow established
+</div>
+
+</div>
+
+**During Analysis:**
+
+<div class="orc-grid-2col">
+
+<div>
+
+- [ ] Scripts well-commented
+- [ ] Commit changes regularly
+- [ ] Random seeds set
+- [ ] Intermediate results saved
+</div>
+
+<div>
+
+- [ ] Analysis decisions documented
+- [ ] Code reviewed by collaborators
+- [ ] Results cross-checked
+- [ ] Figures reproducible
+</div>
+
+</div>
+
+**Before Sharing:**
+
+- [ ] Code runs without errors on fresh environment
+- [ ] README provides complete instructions
+- [ ] All functions documented
+- [ ] Session info captured
+- [ ] Sensitive information removed
+- [ ] Code peer-reviewed
+
+:::

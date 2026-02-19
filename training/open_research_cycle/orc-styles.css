@@ -494,7 +494,10 @@ svg :is(text, tspan) { font-family: inherit !important; font-weight: bold; point
   color: white;
   box-shadow: var(--orc-shadow-md);
 }
-
+.orc-phase-hero-compact.phase-2 { background: rgb(243 120 181 / 4%)}
+.orc-gradient-box.data-management-checklist { background: rgb(243 120 181 / 4%); border-left-color: #f991c6ad;}
+.orc-phase-hero-compact.phase-3 { background: #fefdf8}
+.orc-gradient-box.analysis-collaboration-checklist { background: #fefdf8; border-left-color: #d5a0037d;}
 /* Children */
 
 .orc-phase-hero-compact-container .orc-hero-cycle {
