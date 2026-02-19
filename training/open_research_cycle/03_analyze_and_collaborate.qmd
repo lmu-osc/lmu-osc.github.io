@@ -41,7 +41,7 @@ Because analysis scripts are inherently iterative and evolve through corrections
 - **Create self-contained project folder**. Include data, code, documentation, and outputs in a single structured environment, ensuring the project remains understandable, reproducible, and portable across systems and collaborators. If you use the free and open source software RStudio to manage your R project, your project directory (or folder) should contain a .Rproj file (see [R tutorial](https://lmu-osc.github.io/introduction-to-R/)). **Use relative paths** (i.e. `“./subfolder”`, where `.` represents the root of your .Rproj directory) or the library `here`, so the project stays portable to another environment
 - **Use a standard folder structure**. Your code repository should include a standard folder structure that make sense for your type of research, ideally shared across your team members. You can for instance use the [OSC research project template](https://github.com/lmu-osc/research-project-template). 
 - **Stop clicking, start coding**. Automatize all possible steps, including data acquisition (see [2.1. Data Collection](<!-- internal link-->)), data processing and transformation, data analyses, data visualization, and results reporting (see [3.2. Reproducible Reporting](<!-- internal link-->))
-- **Structure, comment, and standardize your scripts.** R scripts themselves should follow current standards to increase their readability(see [Readable Code Lecture](<!-- should link to the internal page pat should create in the internal catalogue to include both slides and recording https://github.com/lmu-osc/lmu-osc.github.io/issues/375 -->)). Use meaningful names for variables, functions, and scripts. Add comments to your code explaining _why_ you made a decision, and define your own function rather than copy and pasting pieces of code which makes it hard to maintain error-free. 
+- **Structure, comment, and standardize your scripts.** R scripts themselves should follow current standards to increase their readability (see [Readable Code Lecture](<!-- should link to the internal page pat should create in the internal catalogue to include both slides and recording https://github.com/lmu-osc/lmu-osc.github.io/issues/375 -->)). Use meaningful names for variables, functions, and scripts. Add comments to your code explaining _why_ you made a decision, and define your own function rather than copy and pasting pieces of code which makes it hard to maintain error-free. 
 
 
 <!-- add R tuto card and readable code lecture card as learn more + OSC research project template as OSC Tool-->
@@ -77,16 +77,27 @@ Before [4. Preserve & share](<!-- internal link -->):
 
 - **Record your dependencies** in your README file for possible reconstruction with [repo2docker](https://repo2docker.readthedocs.io/en/latest/) or binder see [Code Publishing tutorial](https://lmu-osc.github.io/code-publishing/make_readme.html#nte-dependencies)
 
-<!--renv osc tuto card, add code publishing tuto card, add binder, conda and docker tool card https://ree-gupta.github.io/lmu-osc.github.io/training/open_research_cycle/03_analyze_and_collaborate_website.html#environment-management -->
+<!--renv osc tuto card, add code publishing tuto card; as tools add binder, conda and docker tool card https://ree-gupta.github.io/lmu-osc.github.io/training/open_research_cycle/03_analyze_and_collaborate_website.html#environment-management -->
 
 
 ### 3.1.4. Documentation
 
+As with documentation for data (see [2.2.4. Documentation](<!-- internal link-->)), documentation for code makes it usable by your future self, your collaborators, and anyone who might reuse it. Six months from now, you will not remember what each script was about, in which order they should be run, which parameters to input in a function. 
+
+<br>
+
+- **Create a README.md or README.txt file early and update it as you go.** Your README is the entry point to your project. Start it when you begin, not when preparing to publish. A good README answers the essential questions: who created the script, what it contains, how they relate to other scripts, and whether it can be reused. These answers let someone unfamiliar with your project understand and work with your code.
+- **Annotate your code explaining _why_ you made a decision.** All parameter values, or other decisions, should be justified minimally as comments in your code to later be transcribed in your manuscript.
+- **Update your data dictionary and README files.** Your data documentation should be updated to include all data exclusion, change in range of possible values, ect. See [2.2.4. Documentation](<!-- internal link-->).
+
+<br>
+
+As with all documentation, your project repository’s README should be written early, initially for your near-future self to support efficient re-engagement after interruptions, then revised for internal team review, and ultimately expanded and refined for public sharing [see 4.2. Code Publishing](<!-- internal link-->).
+
+
 <!-- readable lecture card again
-data dictionary card -->
-
-readme from code publishing? a bit too intense for this stage tho but something about internal, work in progress read me
-
+data dictionary tuto card 
+code publishing tuto card-->
 
 :::
 
@@ -96,23 +107,35 @@ readme from code publishing? a bit too intense for this stage tho but something 
 <details class="orc-details-panel">
 <summary><i class="bi bi-file-earmark-richtext"></i> 3.2. Reproducible Reporting</summary>
 
+A practical way to make reporting decisions transparent and traceable is to use **literate programming**, which **combines narrative text** explaining the logic of the analysis with **executable code** that performs data processing and statistical procedures. Compiling such a document produces outputs (including tables, figures, bibliography) that update automatically when the underlying code changes, ensuring consistency between methods, results, and documentation. For users of R, Python, and Julia, **Quarto** has become the standard tool for this approach, superseding R Markdown and enabling seamless **rendering to formats such as HTML, PDF, and Word**.
+
+
 ::: {.panel-tabset}
 
 ### 3.2.1. Analysis Report
 
-reproducible analyses report with quarto
+**Minimally, create an analyses report with Quarto.** 
+This will facilitate your own revisions, code-review by your team, reproducibility checks by some journals, and verification of results reproducibility by other researchers. The code repository will eventually be published with simulated, synthetic, or real data, depending on the project, together with the respective paper (see [4. Preserve & Share](<!--internal link-->)). You should provide the analysis code that creates the results of the manuscript as a Quarto file to serve as documentation for the code (see [Quarto tutorial](https://lmu-osc.github.io/introduction-to-Quarto/)).
+
+<!-- quarto tuto card -->
 
 ### 3.2.2. Manuscript
 
 reproducible manuscripts with quarto, zotero
 
+<!-- quarto tuto card and zotero tuto card-->
+
 ### 3.2.3. Presentation
 
 reproducible presentation with quarto
 
+<!-- quarto tuto card and zotero tuto card-->
+
 ### 3.2.4. Website
 
 reproducible websites with quarto
+
+<!-- quarto tuto card-->
 
 </details>
 

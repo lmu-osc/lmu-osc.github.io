@@ -232,8 +232,8 @@ Without documentation, a dataset is just a collection of files. Six months from 
 
 <br>
 
-- **Create a README.md or README.txt file early and update it as you go.** Your README is the entry point to your project. Start it when you begin, not when preparing to publish. A good README answers the essential questions: **who** created the data, **what** it contains, **when** and **where** it was collected, **why** it was generated, **how** it was produced, and whether it **can be reused**. These answers let someone unfamiliar with your project understand and work with your data.
-- **Create a data dictionary defining every variable.** A data dictionary (or codebook) makes your dataset self-explanatory. For each variable, document what it measures, its data type, valid values, units of measurement, and how missing data is coded. Use appropriate missing codes to distinguish why data is absent (declined to answer, not applicable, technical failure) since this distinction matters for analysis.
+- **Create a README file (as .md or .txt) early and update it as you go.** Your README is the entry point to your project. Start it when you begin, not when preparing to publish. A good README answers the essential questions: **who** created the data, **what** it contains, **when** and **where** it was collected, **why** it was generated, **how** it was produced, and whether it **can be reused**. These answers let someone unfamiliar with your project understand and work with your data.
+- **Create a data dictionary defining every variable.** A data dictionary (or "codebook") makes your dataset self-explanatory. For each variable, document what it measures, its data type, valid values, units of measurement, and how missing data is coded. Use appropriate missing codes to distinguish why data is absent (declined to answer, not applicable, technical failure) since this distinction matters for analysis.
 
 ::: {.orc-grid-tools}
 ::: {.orc-card-tool}
