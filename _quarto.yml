@@ -36,7 +36,6 @@ website:
         text: About
       - text: People
         icon: people
-        # href: people/overview.qmd
         menu: 
           - people/management.qmd
           - text: Staff
