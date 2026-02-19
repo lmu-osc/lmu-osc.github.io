@@ -14,30 +14,30 @@ const alumnaeItems = (items || []).filter((item) => {
 %>
 
 <ul>
-  <% for (const item of alumnaeItems) { %>
-    <%
-      const memberships = Array.isArray(item.memberships) ? item.memberships : [];
-      const alumniMemberships = memberships.filter(isAlumniMemberAffiliate);
-      const personLabel = [item.academic_title, item.name].filter(Boolean).join(' ');
-    %>
+<% for (const item of alumnaeItems) { %>
+<%
+const memberships = Array.isArray(item.memberships) ? item.memberships : [];
+const alumniMemberships = memberships.filter(isAlumniMemberAffiliate);
+const personLabel = [item.academic_title, item.name].filter(Boolean).join(' ');
+%>
 
-    <% if (alumniMemberships.length === 0) { %>
-      <li>
-        <a href="<%= item.path %>"><%= personLabel %></a>
-      </li>
-    <% } else { %>
-      <% for (const alumniMembership of alumniMemberships) { %>
-        <%
-          const alumniTitle =
-            typeof alumniMembership.title === 'string' &&
-            alumniMembership.title.trim() !== ''
-              ? alumniMembership.title
-              : '';
-        %>
-        <li>
-          <a href="<%= item.path %>"><%= personLabel %><%= alumniTitle ? ': ' + alumniTitle : '' %></a>
-        </li>
-      <% } %>
-    <% } %>
-  <% } %>
+<% if (alumniMemberships.length === 0) { %>
+<li>
+<a href="<%= item.path %>"><%= personLabel %></a>
+</li>
+<% } else { %>
+<% for (const alumniMembership of alumniMemberships) { %>
+<%
+const alumniTitle =
+typeof alumniMembership.title === 'string' &&
+alumniMembership.title.trim() !== ''
+? alumniMembership.title
+: '';
+%>
+<li>
+<a href="<%= item.path %>"><%= personLabel %><%= alumniTitle ? ': ' + alumniTitle : '' %></a>
+</li>
+<% } %>
+<% } %>
+<% } %>
 </ul>
