@@ -47,7 +47,6 @@ A research output (e.g. data, code) without a license cannot be reused even if t
 
 <div class="orc-card-tool">
 <span class="orc-card-tool-badge recommended">OSC Tutorial</span>
-<!-- side by side logo arrangement for additional logos-->
 <div class="orc-card-tool-icons">
 <div class="orc-card-tool-icon icon-1"><img src="../../assets/img/lmu_osc_logo.jpg" alt="LMU OSC logo"></div>
 <div class="orc-card-tool-icon icon-2"><img src="https://upload.wikimedia.org/wikipedia/commons/f/f0/Zotero_logo_new.svg" alt="Zotero logo"></div>
@@ -73,11 +72,9 @@ A research output (e.g. data, code) without a license cannot be reused even if t
 
 ### 1.1.2. Preregistrations
 
-A **preregistration** typically consists of a hypothesis and predictions, a plan for data collection (when relevant), and a plan for data analysis, that researchers upload before starting their projects, often in order to increase the rigor of confirmatory research (see [pre-analysis planning](###study-design--analysis-plan)).
-
+A **preregistration** typically consists of a hypothesis and predictions, a plan for data collection (when relevant), and a plan for data analysis, that researchers upload before starting their projects, often in order to increase the rigor of confirmatory research (see [1.4.1. Pre-analysis planning](<!--internal link-->)).
 <!-- this cross ref is not working, it's not a md title FIXME either link to the study design ana analysis plan title or the tab pre analysis plan if possible. with an internal looking cross ref greyish thing-->
 
-<!-- I want a line break here for fuck sake - is only <br> working??-->
 <br>
 
 To have some **insight into projects that are not (yet) published**, either currently ongoing or abandoned, you can therefore look for projects that were preregistered. Projects that are left unpublished typically have a note attached to their preregistration. Some registries are discipline-specific while others are discipline-agnostic:
@@ -104,13 +101,13 @@ To have some **insight into projects that are not (yet) published**, either curr
 
 :::
 
-### 1.1.3.Data
+### 1.1.3. Data
 
 To find **existing datasets**, search for discipline-specific repositories on [re3data](https://www.re3data.org/) which is a central registry of all repositories, or explore subject agnostic repositories such as [DataCite](https://datacite.org/) or [Zenodo](https://zenodo.org/) (oftentimes with the corresponding analysis code). These platforms either give you access to existing data or provide metadata and explanations on how to request access to the data. **Metadata** are data about your data, such as author, date, measurement device, unit of measurement, context of data collection, ect.
 
 <br>
 
-Found a dataset to reuse? Make sure you know where your data comes from, how the data was collected and processed, and reflect on whether any of it poses problems for your research question. Finally, check what requirements and resources the data sources have. Some requirement to access the data may be to submit a preregistration (see [Study Design & Analysis plan](###study-design--analysis-plan)<!-- or link tab directly + make this link an internal link looking thing-->). Either way, in order not to introduce confirmation or hindsight bias in your data analyses, do not start plotting the data itself but instead **familiarize yourself with the metadata to plan your analyses** (see [Study Design & Analysis plan](###study-design--analysis-plan) <!-- same as above-->). Specifically, there may be a data dictionary (also called "codebook"), or other extensive documentation on which variables and their description are included. 
+Found a dataset to reuse? Make sure you know where your data comes from, how the data was collected and processed, and reflect on whether any of it poses problems for your research question. Finally, check what requirements and resources the data sources have. Some requirement to access the data may be to submit a preregistration (see [1.4. Study Design & Analysis plan](<!--internal link-->)). Either way, in order not to introduce confirmation or hindsight bias in your data analyses, do not start plotting the data itself but instead **familiarize yourself with the metadata to plan your analyses** (see [1.4. Study Design & Analysis plan](<!--internal link-->)). Specifically, there may be a data dictionary (also called "codebook"), or other extensive documentation on which variables and their description are included. 
 
 <!-- add data cite and zenodo card as tool-->
 #### <i class="bi bi-tools"></i> TOOLS & RESOURCES
@@ -127,7 +124,7 @@ Found a dataset to reuse? Make sure you know where your data comes from, how the
 
 ### 1.1.4. Code
 
-You may find **code available for reuse** archived on [Zenodo](https://zenodo.org/) or actively developed on [Github](https://github.com/). Learn how to work with GitHub in more details in [3. Analyze & Collaborate](03_analyze_and_collaborate.qmd)<!--internal link format--> or start learning Git version control now! 
+You may find **code available for reuse** archived on [Zenodo](https://zenodo.org/) or actively developed on [Github](https://github.com/). Learn how to work with GitHub in more details in [3. Analyze & Collaborate](<!--internal link-->) or start learning Git version control now! 
  
 <br>
 
@@ -186,19 +183,17 @@ The [LMU Guidelines for Safeguarding Good Scientific Practice](https://cms-cdn.l
 
 :::{.callout-note}
 
-The **FAIR** principles are defined as: <!-- maintain the freaking list formatting... note: backslash or extra spacing works to properly render the list--> <!-- maybe in a info box --> 
+The **FAIR** principles are defined as:  
 
 - **F**indable: metadata should be deposited in a searchable repository and be assigned a permanent identifier\
 - **A**ccessible: the data is either open, or accessible upon some authentication process, or closed, but with open metadata.\
-- **I**nteroperable: the data is described with a standard terminology (so the dataset can be merged with other ones) and saved in a stable file format
-
+- **I**nteroperable: the data is described with a standard terminology (so the dataset can be merged with other ones) and saved in a stable file format\
 - **R**eusable: the data is richly documented (e.g. with a data dictionary) and is accompanied by a data usage license
 
-See [](https://www.go-fair.org/fair-principles/) for more information and section [2. Collect & Manage](02_collect_and_manage.qmd) to learn how to implement the FAIR principles in your research.
+See [https://www.go-fair.org/fair-principles/](https://www.go-fair.org/fair-principles/) for more information and section [2. Collect & Manage](<!--internal link-->) to learn how to implement the FAIR principles in your research.
 :::
 
-<!-- add a card with LMU logo and LMU Good Scientific Practices as title with link to pdf? in section Resources-->
-<!-- add FAIR data management tutorial in learn more section ? mmmh no-->
+<!-- add a card with LMU logo and LMU Good Scientific Practices as title with link to pdf in section Resources-->
 
 In later sections, you will acquire skills in FAIR data management and reproducible workflows that will enable you to comply with these guidelines.
 
@@ -218,11 +213,11 @@ Data collection and analyses conducted on animals and humans typically requires 
 
 #### <i class="bi bi-list-check"></i> Your ethics proposal will typically include information on: 
 
-* **Data storage and retention** – outlining how data will be securely stored, backed up, and retained over time. This information can be extracted from a more detailed Research Data Management plan (see [RDM plans]()<!--cross ref next accordion-->).
+* **Data storage and retention** – outlining how data will be securely stored, backed up, and retained over time. This information can be extracted from a more detailed Research Data Management plan (see [1.3. Research Data Management Plans](<!--internal link-->)).
 * **Risks if the data were leaked** – identifying potential consequences for participants or the research project if confidentiality is breached.
-* **Data anonymization** – describing procedures to remove or obscure personally identifiable information to protect participant privacy (see [Data anonymization]()<!--internal link to section in next quadrant--> for options).
+* **Data anonymization** – describing procedures to remove or obscure personally identifiable information to protect participant privacy (see [2.3.2. Anonymization](<!--internal link-->) for options).
 * **Language of the informed consent forms** – ensuring that participants clearly understand the purpose, procedures, and any potential risks of the study. Conditions for sharing their data should be clearly explained here.
-* **Power analysis** to justify sample size – providing a statistical rationale for the number of participants, which supports the validity and ethical justification of the study. This, and more detailed information on the statistical plan, can be extracted from your pre-analysis plan (see [pre-analysis planning]()<!--cross ref next accordion first tab-->)
+* **Power analysis** to justify sample size – providing a statistical rationale for the number of participants, which supports the validity and ethical justification of the study. This, and more detailed information on the statistical plan, can be extracted from your pre-analysis plan (see [1.3.1. Pre-analysis planning](<!--internal link-->))
 
 <!-- learn more: add cards for RDM plan chapter in FAIR data management tutorial, data anonymization tutorial tba, power analyses tutorial-->
 <!-- resources: add example consent form text from Felix?? or other resources e.g. https://www.ninds.nih.gov/sites/default/files/migrate-documents/sample_data_sharing_consent_language_rz_corrected_508c.pdf? https://ukdataservice.ac.uk/learning-hub/research-data-management/ethical-issues/consent-for-data-sharing/ ?-->
@@ -250,14 +245,11 @@ A Data Management Plan (DMP) documents how you will handle research data through
 - **How will you share outputs** (repositories, licenses, embargo periods)?
 - **What constraints apply** (consent, anonymization, GDPR, data use agreements)?
 
-The specific questions vary by discipline, data type, and funder requirements. DMP tools like [RDMO](https://rdmo.ub.lmu.de/) guide you through the relevant questions with funder-specific templates. Your DMP is a living document: start with what you know, and refine the details as your project develops (see [Data Management](<!--internal link-->)).
-
-<!-- cut this sentence but add RIO in section tools and resources for 'examples DMP by discipline'-->
+The specific questions vary by discipline, data type, and funder requirements. DMP tools like [RDMO](https://rdmo.ub.lmu.de/) guide you through the relevant questions with funder-specific templates. Your DMP is a living document: start with what you know, and refine the details as your project develops (see [2.2. Data Management](<!--internal link-->)).
 
 ::: {.orc-two-column}
 #### <i class="bi bi-mortarboard"></i> LEARN MORE
 ::: {.orc-column} 
-<!-- clean up and standardize cards for logo of official tools - best to use the link to wikidata wikimedia sources - more stable-->
 
 <div class="orc-card-tool">
 <div class="orc-card-tool-badge recommended">LMU supported</div>
@@ -270,11 +262,10 @@ The specific questions vary by discipline, data type, and funder requirements. D
 #### <i class="bi bi-tools"></i> TOOLS & RESOURCES
 ::: {.orc-column}
 
-<!-- card for RIO -->
 <div class="orc-card-tool">
 <div class="orc-card-tool-icon"><img src="https://riojournal.com/i/journal_logos/RIO-logo-black.svg" alt="RIO-logo"></div>
 <a href="https://riojournal.com/browse_journal_articles.php?form_name=filter_articles&selfurl=&backurl=&sortby=0&journal_id=17&search_hidden=&search_in_=0&search_in_hidden=&alerts_subject_cats=&alerts_sd498444d0a_publishing_status=&section_type%5B%5D=231" class="card-link"><h4>RIOjournal DMPs</h4></a>
-<p>examples DMP by discipline</p>
+<p>Examples DMP by discipline</p>
 </div>
 
 <div class="orc-card-tool">
@@ -293,12 +284,11 @@ The specific questions vary by discipline, data type, and funder requirements. D
 
 
 <details class="orc-details-panel">
-<summary><i class="bi bi-clipboard-check"></i>1.3. Study Design & Analysis Plan</summary><!-- I want to cross ref this title - how? --> 
-<!-- logo like https://ree-gupta.github.io/lmu-osc.github.io/training/open_research_cycle/01_plan_and_design_website.html#planning-framework-options -->
+<summary><i class="bi bi-clipboard-check"></i>1.4. Study Design & Analysis Plan</summary>
 
 ::: {.panel-tabset}
 
-### 1.3.1. Pre-analysis planning
+### 1.4.1. Pre-analysis planning
 
 Why should you plan your statistical plan prior to collecting data? 
 
@@ -329,25 +319,26 @@ Several [preregistration templates](https://help.osf.io/article/330-welcome-to-r
 - **Data collection procedures**
 - **Sample size and stopping rule**
 - **Variables** (manipulated, measured, indices)
-- **Statistical method** (model, dependent and independent variables, covariables, trasnformations)
+- **Statistical method** (model, dependent and independent variables, covariables, transformations)
 - **Data exclusion criteria**
 - **How to deal with missing data**
 
-A great tool to create your statistical plan, especially for early career researchers still learning statistics and needing feedback from supervisors, collaborators, or statisticians on their design, is to **simulate data and write the possible statistical test to analyze that data** (see [Simulation of data and Power analyses]() <!-- internal link to tabs-->). 
+A great tool to create your statistical plan, especially for early career researchers still learning statistics and needing feedback from supervisors, collaborators, or statisticians on their design, is to **simulate data and write the possible statistical test to analyze that data** (see [1.3.2. Simulation of data and 1.3.3. Power analyses](<!-- internal link-->)). 
 
 <br>
 
 Once completed, you can submit your preregistration on e.g. the [Open Science Framework (OSF)](https://osf.io/) before collecting or analyzing existing data. The plan can be **embargoed** (i.e. kept private for a predetermine amount of time, and for a maximum of 4 years of the OSF) to prevent scooping, then later made public upon publication. This process improves transparency and is inviting valuable **early feedback from collaborators**. An even stronger approach is **submitting preregistrations directly to journals (then called "Registered Reports")**, enabling peer review at a stage where methodological adjustments are still possible.
 
-<!-- in a call out info box berpahs even mini-accordion?? what do you think of this gradient box instead-->
-::: {.orc-gradient-box-desc}
+<!-- in a call out info box perhaps even mini-accordion?? what do you think of this gradient box instead-->
+<!-- ::: {.orc-gradient-box-desc} -->
+::: {.callout-tip}
+## Registered Reports
 Registered Reports are a publication format, now adopted by over 300 journals (see [participating journals](https://www.cos.io/initiatives/registered-reports)), where **studies are peer-reviewed before data collection**. Reviewers evaluate the hypotheses, methods, and planned analyses, allowing methodological improvements. If the plan is approved, the journal grants in-principle acceptance, meaning publication is guaranteed provided researchers follow the protocol.
 
 <br>
 
 After completing the study, authors add results and discussion sections, clearly separating preregistered confirmatory analyses from exploratory ones. Final review focuses on adherence to the approved plan and the validity of conclusions, not on whether results are significant. This model shifts **incentives toward asking important questions and using rigorous methods rather than chasing striking outcomes**.
 :::
-<!-- till here -->
 
 <!-- learn more: cards for a TBA preregistration tutorial --> 
 <!-- Tools and resources: OSF card with real OSF icon used somewhere above linking out to https://help.osf.io/article/330-welcome-to-registrations + COS card linking to  https://www.cos.io/initiatives/registered-reports-->
@@ -371,15 +362,15 @@ After completing the study, authors add results and discussion sections, clearly
 ::: {.orc-column}
 
 <div class="orc-card-tool">
-<div class="orc-card-tool-icon"><img src="https://cdn.simpleicons.org/osf" alt="OSF icon"></div>
+<div class="orc-card-tool-icon"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Open_Science_Framework_log_%28and_Center_for_Open_Science_logo%29.svg/3840px-Open_Science_Framework_log_%28and_Center_for_Open_Science_logo%29.svg.png" alt="OSF icon"></div>
 <a class="card-link" href="https://help.osf.io/article/330-welcome-to-registrations"><h4>OSF</h4></a>
 <p>Flexible templates, embargoes, file storage. Widely used across fields</p>
 </div>
 
 <div class="orc-card-tool">
-<div class="orc-card-tool-icon"><img src="https://avatars.githubusercontent.com/u/3344584?s=280&v=4" alt="COS icon"></div>
-<a class="card-link" href="https://www.cos.io/initiatives/registered-reports"><h4>COS</h4></a>
-<p>Flexible templates, embargoes, file storage. Widely used across fields</p>
+<div class="orc-card-tool-icon"><img src="https://upload.wikimedia.org/wikipedia/en/1/1d/Center_for_Open_Science.png" alt="COS icon"></div>
+<a class="card-link" href="https://www.cos.io/initiatives/registered-reports"><h4>Center for Open Science</h4></a>
+<p>Provides preregistration templates, list of journals offering Registered Reports</p>
 </div>
 
 :::
@@ -387,10 +378,9 @@ After completing the study, authors add results and discussion sections, clearly
 
 
 
-### 1.3.2. Simulation of Data
+### 1.4.2. Simulation of Data
 
 In our context, a computer simulation is the generation of artificial data to build up an understanding of real data and the statistical models we use to analyze them. You can simulate data to:
-<!-- need nice formatting -->
 
 <br>
 
@@ -401,20 +391,20 @@ _Example: Check whether there are more than 5% significant effects for a variabl
 _Example: See whether simulated data drawn from specific distributions is comparable to real data._
 
 - **Perform power analyses.**  
-_Example: Assess whether the sample size (within a simulation repetition) is high enough to detect a simulated effect in more than 80% of the cases. (see [Power analyses]()<!-- intra link-->)_
+_Example: Assess whether the sample size (within a simulation repetition) is high enough to detect a simulated effect in more than 80% of the cases. (see [1.3.3. Power analyses](<!--intra link-->))_
 
 - **Prepare a pre-analysis plan.**
 _Example: To be confident about the (confirmatory) statistical analyses you want to commit to before data collection (e.g. through a preregistration or registered report), providing a simulated dataset to a statistician or mentor will allow them to provide concrete suggestions on the most appropriate statistical test to apply to your data. The code containing the analyses of simulated data can be submitted along with your preregistration or registered report for reviewers to exactly understand what analyses you intend to perform. Once you get your real data, you may simply plug them into this code and get the results of your confirmatory analyses immediately._
 
 <br>
 
-Generating an artificial dataset in R (see our [simulation tutorial](https://lmu-osc.github.io/Introduction-Simulations-in-R/) <!-- intra link?-->) is much easier than researchers often believe it to be and is helpful even when you need to make assumptions about variable distribution or when the parameter space is not well known.
+Generating an artificial dataset in R (see our [simulation tutorial](https://lmu-osc.github.io/Introduction-Simulations-in-R/)) is much easier than researchers often believe it to be and is helpful even when you need to make assumptions about variable distribution or when the parameter space is not well known.
 
 
 <!-- card for simulation tutorial -->
 
 
-### 1.3.3. Power analyses <!-- format this page nicely, I failed -->
+### 1.4.3. Power analyses 
 
 Power analysis is relevant whether you are designing a project from scratch or running an analysis on already existing data. There are two main types of power analyses: 
 
@@ -428,13 +418,17 @@ For a very basic power calculation, you can use simple R function if you know 3 
 - the alpha level (default 0.05)
 - the expected effect size (has to be estimated or extracted from the literature on the form of d, f, etc.)
 
-To get support with pre-analysis planning, you can book a consultation with the LMU statistical consulting unit <!---format nice --> kontakt@stablab.stat.uni-muenchen.de and visit the [StaBLab website]()<!--link--> for more information. 
+To get support with pre-analysis planning, you can book a consultation with the LMU statistical consulting unit <!---format nice --> kontakt@stablab.stat.uni-muenchen.de and visit the [StaBLab website](https://www.stat.lmu.de/stablab/de/) for more information. 
 
 #### Post-hoc power analysis
 
 Sometimes, you may not be able to control the sample size for your project (e.g., because data collection has ended and you only have a certain number of good quality samples). In this situation, you can compute a so-called “post-hoc power”. Beware: This power computation comes in two flavors - one is legitimate, and one is flawed and not defensible. 
 
+<br>
+
 The **legitimate post-hoc power** is computed with your actual n, and the same effect size that you plugged into your a-priori power analysis. This analysis gives you the achieved power to detect your assumed effect.
+
+<br>
 
 The **flawed version of post-hoc power** is called **“observed power”**: If an analysis yields a non-significant result, some researchers calculate the post-hoc power, but plug in the observed effect size. “Observed power”, however, is just a one‑to‑one function of the p‑value (a non-significant p-value returns a low power < 50 %, a just significant p-value of .05 always yields a power of exactly 50%). Observed power adds no new information to the p-value and is essentially meaningless. Do not compute this type of post-hoc power!
 
@@ -471,28 +465,34 @@ To complete before presenting your complete study plan to your research group an
 - [ ] Hypotheses and predictions specified
 - [ ] Study design chosen and justified
 - [ ] Variables and measures to collect identified
+
 :::
 :::{.orc-col}
 - [ ] Analysis plan prepared (with simulated data)
 - [ ] Sample size determined (with power analysis)
 - [ ] Inclusion/exclusion criteria defined
 - [ ] Handling of missing data defined
-- [ ] Preregistration template filled out
 :::
 :::
 
+:::{.orc-grid-2col}
+
+:::{.orc-col}
 **Data Management Planning:**
 
 - [ ] Data storage and backup solutions documented
 - [ ] File organization and naming conventions established
 - [ ] Anonymization procedures defined
 - [ ] Repository for data publishing selected
-
+:::
+:::{.orc-col}
 **Project Management**
 
 - [ ] Team roles and responsibilities defined
 - [ ] Resources needed for the project identified
 - [ ] Timeline estimated and milestones defined
+:::
+:::
 
 **Before Data Collection:**
 

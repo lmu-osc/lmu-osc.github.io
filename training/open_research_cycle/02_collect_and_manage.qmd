@@ -28,7 +28,7 @@ title-block-style: none
 <details class="orc-details-panel">
 <summary><i class="bi bi-journal-code"></i> 2.1. Data Collection</summary>
 
-Your data acquisition procedures must be documented in sufficient details to allow replication by another researcher (see [LMU good practices guidelines](<!--internal link-->)). Establishing reproducible data collection processes strengthens the quality and consistency of both your data and that of your team.
+Your data acquisition procedures must be documented in sufficient details to allow replication by another researcher (see [LMU Guidelines for Safeguarding Good Scientific Practice](https://cms-cdn.lmu.de/media/contenthub/amtliche-veroeffentlichungen/gwp-ordnung.pdf)). Establishing reproducible data collection processes strengthens the quality and consistency of both your data and that of your team.
 
 State-of-the-art practices for reproducible data acquisition include<!-- make an indented list - why are the bullet point before the start of the other lined (as in, not aligned, or even after) -->: 
 
@@ -87,11 +87,11 @@ When data comes from instruments, sensors, or APIs, scripting the acquisition cr
 
 <br>
 
-- **Structure data correctly from the start.** Variables in columns, observations in rows. This makes your data immediately interoperable with analysis tools rather than requiring cleanup later. Scripts can also automate organization, file renaming, and conversion to open formats. See  [Data Management](<!--internal link-->) for guidelines.
+- **Structure data correctly from the start.** Variables in columns, observations in rows. This makes your data immediately interoperable with analysis tools rather than requiring cleanup later. Scripts can also automate organization, file renaming, and conversion to open formats. See  [2.2. Data Management](<!--internal link-->) for guidelines.
 
 - **Keep records of what ran and when.** Include error handling so failures are recorded rather than silently corrupting data. When something fails months later, you need to know what happened. Always test acquisition scripts on sample data before production runs. A bug in your collection pipeline can invalidate an entire dataset.
 
-- **Version control your code and data.** This makes your methods reproducible and shareable. See [Version Control tab in Data Management](<!--internal link-->) for details.
+- **Version control your code and data.** This makes your methods reproducible and shareable. See [2.2.6. Version Control](<!--internal link-->) for details.
 
 <!-- 2 cards in learn more: OSC R and Git tutorials  -->
 ::: {.orc-grid-tools}
@@ -114,11 +114,11 @@ Programming fundamentals for research data processing
 <details class="orc-details-panel">
 <summary><i class="bi bi-folder-check"></i> 2.2. Data Management</summary>
 
-In [Plan & Design](<!-- internal link-->) you created a Research Data Management Plan. It's now time to put this plan into practice, refining it as you learn what actually works for your project.
+In [1. Plan & Design](<!-- internal link-->) you created a Research Data Management Plan. It's now time to put this plan into practice, refining it as you learn what actually works for your project.
 
 <!--maybe the two bullet points here should be cut as they are repeated across the sections? -->
 <!-- again problem with display of list -->
-- **Keep your raw data as read-only files.** The unmodified output of your instruments, surveys, or observations should never be modified directly. You should provide enough documentation to recreate your processed datasets and results from your raw data (see [Reproducible Data Processing & Analyses](<!--internal link-->)).
+- **Keep your raw data as read-only files.** The unmodified output of your instruments, surveys, or observations should never be modified directly. You should provide enough documentation to recreate your processed datasets and results from your raw data (see [3.1. Reproducible Data Processing & Analyses](<!--internal link-->)).
 - **Organize, document, and store your research files so they remain usable, and become FAIR upon sharing.** Beyond raw data, you will generate processed data, code, documentation, and metadata. How you organize, describe, and store these determines whether your work remains usable and reproducible. The [FAIR principles](https://www.go-fair.org/fair-principles/) guide these decisions: making outputs Findable, Accessible, Interoperable, and Reusable.
 
 What follows are general practices. Your domain has specific conventions for file formats, folder structure, and metadata. [RDMkit](https://rdmkit.elixir-europe.org/your_domain) provides detailed guidance organized by research area.
@@ -212,7 +212,7 @@ File format choices affect who can work with your data now and whether it remain
 
 <br>
 
-Format issues often surface during quality control. The [Quality Control](<!--internal link-->) panel below covers validation checks that can catch encoding problems, unexpected conversions, and structural inconsistencies early.
+Format issues often surface during quality control. The [2.4. Quality Control](<!--internal link-->) panel below covers validation checks that can catch encoding problems, unexpected conversions, and structural inconsistencies early.
 
 ::: {.orc-grid-tools}
 ::: {.orc-card-tool}
@@ -316,7 +316,7 @@ Version control tracks changes to files over time. You can see what changed, whe
 - **GitHub** is the most popular, but proprietary and US-based cloud-based platform for software development with Git, providing collaboration features like pull requests and issues. **You should not have any sensitive data on GitHub even in a private repository.**
 - **LRZ GitLab** is a cloud-based hosting platform that works exactly the same as GitHub but is free and open source and is installed on the LRZ servers for LMU Munich and can therefore be considered secure when the repository is private. 
 
-While your LRZ GitLab account is associated with your LMU Munich affiliation, your GitHub account can be associated with your private email, be included in your CV, and be used for public sharing of your data and code (see [3. Analyze & Collaborate](<!-- internal link -->)).  
+While your LRZ GitLab account is associated with your LMU Munich affiliation, your GitHub account can be associated with your private email, be included in your CV, and be used for public sharing of your data and code (see [3. Analyze & Collaborate](<!-- internal link -->) and [4. Preserve & Share](<!-- internal link -->)).  
 <br>
 In a version controlled workflow, you back up your local git repositories on either GitHub or LRZ GitLab through a secure SSH connection (see [GitHub tutorial](https://lmu-osc.github.io/Collaborative-RStudio-GitHub/)) and share access to your repositories with your collaborators through the cloud-based platform GitHub or LRZ GitLab.
 :::
@@ -412,7 +412,7 @@ Research at LMU Munich must comply with EU data protection regulations. The core
 
 Quality control catches problems before they propagate into your analysis. The practices here ensure your data is trustworthy and your exclusions are defensible.
 
-**Define criteria before looking at your data.** This prevents unconscious bias in what you keep and exclude, and demonstrates that your decisions are principled rather than convenient (see [Study Design & Analysis Plan](<!--internal link-->)).
+**Define criteria before looking at your data.** This prevents unconscious bias in what you keep and exclude, and demonstrates that your decisions are principled rather than convenient (see [1.4. Study Design & Analysis Plan](<!--internal link-->)).
 
 ::: {.panel-tabset}
 
@@ -454,7 +454,7 @@ Data cleaning handles errors, inconsistencies, and missing values. The cardinal 
 
 ### 2.4.3. Exclusions
 
-Exclusion criteria specify which data points will be removed from analysis and why. Define these before you see your results (see [Study Design & Analysis Plan](<!--internal link-->)).
+Exclusion criteria specify which data points will be removed from analysis and why. Define these before you see your results (see [1.4. Study Design & Analysis Plan](<!--internal link-->)).
 
 <br>
 
