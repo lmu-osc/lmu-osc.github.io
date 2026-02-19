@@ -1,17 +1,43 @@
 <%
+// Match alumni staff memberships only.
+const isAlumniStaff = (membership) =>
+  membership &&
+  typeof membership === 'object' &&
+  membership.type === 'staff' &&
+  membership.status === 'alumni';
+
+// Keep people who have at least one alumni staff membership.
 const alumnaeItems = (items || []).filter((item) => {
   const memberships = Array.isArray(item.memberships) ? item.memberships : [];
-
-  return memberships.some((membership) => {
-    if (!membership || typeof membership !== 'object') return false;
-
-    return ['staff'].includes(membership.type) && membership.status === 'alumni';
-  });
+  return memberships.some(isAlumniStaff);
 });
 %>
 
 <ul>
-  <% for (const item of alumnaeItems) { %>
-    <li><a href="<%= item.path %>"><%= item.academic_title %> <%= item.name %></a></li>
-  <% } %>
+<% for (const item of alumnaeItems) { %>
+<%
+const memberships = Array.isArray(item.memberships) ? item.memberships : [];
+// Keep alumni staff memberships, even if the title is missing.
+const alumniStaffMemberships = memberships.filter(isAlumniStaff);
+%>
+
+<% if (alumniStaffMemberships.length === 0) { %>
+<li>
+<a href="<%= item.path %>"><%= item.name %></a>
+</li>
+<% } else { %>
+<% for (const alumniStaffMembership of alumniStaffMemberships) { %>
+<%
+const alumniStaffTitle =
+typeof alumniStaffMembership.title === 'string' &&
+alumniStaffMembership.title.trim() !== ''
+? alumniStaffMembership.title
+: '';
+%>
+<li>
+<a href="<%= item.path %>"><%= item.name %><%= alumniStaffTitle ? ': ' + alumniStaffTitle : '' %></a>
+</li>
+<% } %>
+<% } %>
+<% } %>
 </ul>
