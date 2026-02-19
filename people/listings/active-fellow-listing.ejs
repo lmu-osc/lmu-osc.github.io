@@ -37,7 +37,9 @@ const activeFellowItems = (items || []).filter((item) => {
 </a>
 <div class="card-body flex-column text-center">
 <a href="<%= item.path %>" class="card-title"><%= item.name %></a>
-<div class="card-subtitle mt-auto text-muted"><%= item.academic_title %></div>
+<% if (fellowPosition && typeof fellowPosition === 'string' && fellowPosition !== 'NA') { %>
+<div class="card-subtitle mt-auto text-muted"><%= fellowPosition %></div>
+<% } %>
 <% if (fellowFaculty && typeof fellowFaculty === 'string' && fellowFaculty !== 'NA') { %>
 <p class="card-text mt-auto"><%= fellowFaculty %></p>
 <% } %>
