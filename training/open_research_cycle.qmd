@@ -19,18 +19,7 @@ This open research cycle handbook provides **detailed practical guidance for mak
 
 #### Who is this handbook for?
 
-This manual can be used by **individual researchers in any scientific field** but is primarily designed to be adapted and adopted by **research groups** as a whole. Each section outlines concrete actions for ongoing projects and concludes with a team checkpoint. 
-
-#### How to build your own lab handbook?
-
-To build a tailored research practice handbook for your research group:
-
-- review the core discipline-agnostic sections by clicking on one of the quadrant in the figure below, 
-- consult discipline-specific guidance (in development - ETA end 2026)<!--to link to Reema's expert pages when built - with the design of internal link button? -->, 
-- explore [an example](https://doi.org/10.5281/zenodo.16262260)<!-- to make plural and link to internal page with more examples when exists-->, 
-- tailor the [overview checklist figure](https://doi.org/10.5281/zenodo.15630229), and <!-- create/share an editable file, e.g. pptx on zenodo-->
-- use our Quarto lab-handbook template (in development - ETA end 2026). 
-- request a consultation with the LMU Open Science Center (1h one-on-one, or 6-month pedagogical intervention for research group; see [About this Project](<!-- internal link -->))
+This manual can be used by **individual researchers in any scientific field** but is primarily designed to be adapted and adopted by **research groups** as a whole. Each section outlines concrete actions for ongoing projects and concludes with a team checkpoint.
 
 #### Navigate our open research cycle handbook
 
@@ -45,6 +34,19 @@ cat(readLines("images/os-cycle.svg", warn = FALSE), sep = "\n")
 ```
 
 </div>
+
+#### How to build your own lab handbook?
+
+To build a tailored research practice handbook for your research group:
+
+- review the core discipline-agnostic sections by clicking on one of the quadrant in the figure above, 
+- consult discipline-specific guidance (in development - ETA end 2026)<!--to link to Reema's expert pages when built - with the design of internal link button? -->, 
+- explore [an example](https://doi.org/10.5281/zenodo.16262260)<!-- to make plural and link to internal page with more examples when exists-->, 
+- tailor the [overview checklist figure](https://doi.org/10.5281/zenodo.15630229), and <!-- create/share an editable file, e.g. pptx on zenodo-->
+- use our Quarto lab-handbook template (in development - ETA end 2026). 
+- request a consultation with the LMU Open Science Center (1h one-on-one, or 6-month pedagogical intervention for research group; see [About this Project](<!-- internal link -->))
+
+
 
 <details>
 <summary><h4>About this project</h4></summary><!-- use a proper accordion here - have the same title format as the others.-->
