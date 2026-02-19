@@ -14,6 +14,19 @@ const activeLmuIndividualItems = (items || []).filter((item) => {
 <div class="d-flex flex-wrap justify-content-center gap-4">
 
 <% for (const item of activeLmuIndividualItems) { %>
+<%
+  const activeLmuIndividualMembership = (Array.isArray(item.memberships) ? item.memberships : [])
+    .find((membership) =>
+      membership &&
+      typeof membership === 'object' &&
+      membership.type === 'lmu-individual' &&
+      membership.status === 'active'
+    );
+
+  const lmuIndividualFaculty = (typeof activeLmuIndividualMembership?.faculty === 'string' && activeLmuIndividualMembership.faculty.trim() !== '' && activeLmuIndividualMembership.faculty !== 'NA')
+    ? activeLmuIndividualMembership.faculty
+    : item.faculty;
+%>
 
 <div class="card d-flex flex-column align-items-center" style="width: 185px;">
 <!-- ORCID icon container (always present for consistent spacing) -->
@@ -30,8 +43,8 @@ const activeLmuIndividualItems = (items || []).filter((item) => {
 <div class="card-body flex-column text-center">
 <a href="<%= item.path %>" class="card-title"><%= item.name %></a>
 <div class="card-subtitle mt-auto text-muted"><%= item.academic_title %></div>
-<% if (item.faculty && item.faculty !== 'NA') { %>
-<p class="card-text mt-auto"><%= item.faculty %></p>
+<% if (lmuIndividualFaculty && lmuIndividualFaculty !== 'NA') { %>
+<p class="card-text mt-auto"><%= lmuIndividualFaculty %></p>
 <% } %>
 </div>
 </div>
