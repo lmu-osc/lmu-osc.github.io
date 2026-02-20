@@ -54,26 +54,18 @@ Your protocol should specify materials with identifying details (lot numbers, ve
 
 - **Publish your protocols.** A detailed, tested protocol is a contribution to your field. Publishing establishes priority, enables citation, and makes your methods reusable. Platforms like protocols.io provide version control and DOI assignment.
 
-::: {.orc-grid-tools} 
+
 <!-- add a card to LMU supported ENL:
 eLabFTW https://elab.ub.lmu.de/login.php with logo: https://www.elabftw.net/img/elabftw-logo-only.svg 
-Open-Source Electronic Lab Notebook hosted by LMU Munich
+Electronic Lab Notebook hosted by LMU Munich
 Chemotion https://chemlab.cup.uni-muenchen.de/home logo: https://avatars.githubusercontent.com/u/83013380?v=4
-Open-Source Electronic Lab Notebook hosted by the LMU Faculty for Chemistry and Pharmacy
+Electronic Lab Notebook hosted by the LMU Faculty for Chemistry and Pharmacy
  -->
 
-
-
-::: {.orc-card-tool}
-<div class="orc-card-tool-icon"><i class="bi bi-file-earmark-code"></i></div>
-
-#### [protocols.io](https://www.protocols.io/)
-
+<!-- Protocols.io [protocols.io](https://www.protocols.io/) icon: https://www.protocols.io/favicon.ico 
 Share, discover, cite, and improve research protocols.
+-->
 
-
-:::
-:::
 
 ### 2.1.2. Questionnaires
 
@@ -93,12 +85,12 @@ When data comes from instruments, sensors, or APIs, scripting the acquisition cr
 
 - **Version control your code and data.** This makes your methods reproducible and shareable. See [2.2.6. Version Control](<!--internal link-->) for details.
 
-<!-- 2 cards in learn more: OSC R and Git tutorials  -->
+<!-- 2 cards in learn more: OSC R and Git tutorials add git icon -->
 ::: {.orc-grid-tools}
 ::: {.orc-card-tool}
 <div class="orc-card-tool-icon"><img src="../../assets/img/lmu_osc_logo.jpg" alt="LMU OSC"></div>
 
-#### [Introduction to R](https://lmu-osc.github.io/introduction-to-R/)
+#### [Introduction to R](https://lmu-osc.github.io/introduction-to-R/) <!-- add R icon -->
 
 Programming fundamentals for research data processing
 
@@ -141,9 +133,9 @@ This section covers storage for data you are actively collecting. Long-term arch
 Personal laptops as primary storage, external drives as only copy, consumer cloud services (Dropbox, Google Drive) for sensitive data, and USB drives except for temporary transport.
 :::
 
-<!-- add LRZ Sync & Share card https://ree-gupta.github.io/lmu-osc.github.io/training/open_research_cycle/02_collect_and_manage_website.html#lrz-sync-share -->
-<!-- add LRZ DSS card https://ree-gupta.github.io/lmu-osc.github.io/training/open_research_cycle/02_collect_and_manage_website.html#lrz-dss -->
-<!-- add OSF card https://ree-gupta.github.io/lmu-osc.github.io/training/open_research_cycle/02_collect_and_manage_website.html#osf with the right OSF logo -->
+<!-- add LRZ Sync & Share card https://ree-gupta.github.io/lmu-osc.github.io/training/open_research_cycle/02_collect_and_manage_website.html#lrz-sync-share logo: https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvQdlBHTP2IOvBeJ_S8I9z9S2BX0Qqn0twjw&s-->
+<!-- add LRZ DSS card https://ree-gupta.github.io/lmu-osc.github.io/training/open_research_cycle/02_collect_and_manage_website.html#lrz-dss logo https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvQdlBHTP2IOvBeJ_S8I9z9S2BX0Qqn0twjw&s-->
+<!-- add OSF card https://ree-gupta.github.io/lmu-osc.github.io/training/open_research_cycle/02_collect_and_manage_website.html#osf with the right OSF logo : https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Open_Science_Framework_log_%28and_Center_for_Open_Science_logo%29.svg/3840px-Open_Science_Framework_log_%28and_Center_for_Open_Science_logo%29.svg.png-->
 
 
 ### 2.2.2. Organization
@@ -172,7 +164,7 @@ A pattern like `YYYYMMDD_project_condition_type_v01.ext` places files in chronol
 
 #### [Research Project Template](https://github.com/lmu-osc/research-project-template)
 
-Use this template to start projects with a consistent organization that separates raw data, processed data, code, and outputs.
+Project folder that separates raw data, processed data, code, and outputs.
 
 
 :::
@@ -182,7 +174,7 @@ Use this template to start projects with a consistent organization that separate
 
 #### [Data Organization](https://lmu-osc.github.io/FAIR-Data-Management/data-organisation.html) <!-- tag OSC tutorial , in learn more section-->
 
-Folder structure and naming conventions
+Folder structure and naming conventions. (30 min)
 
 :::
 
@@ -190,7 +182,7 @@ Folder structure and naming conventions
 <div class="orc-card-tool-icon"><i class="bi bi-book"></i></div> <!-- in tools section -->
 
 #### [RDMkit](https://rdmkit.elixir-europe.org/your_domain)
-
+<!-- logo https://rdmkit.elixir-europe.org/assets/img/apple-touch-icon.png-->
 Domain-specific data management standards
 
 :::
@@ -466,31 +458,31 @@ Exclusion criteria specify which data points will be removed from analysis and w
 
 </details>
 
-## <i class="bi bi-card-checklist"></i> Data Management Checklist <!-- format checklist -->
+## <i class="bi bi-card-checklist"></i> Data Management Checklist
+
+To complete before conducting a data validation meeting with members of the project. Not all items are relevant for all fields of research or study type.
+
+<!-- prepare  downloadable file with checklist in word doc + citation Ihle, Gupta, Schoenbrodt 2026 + licence CC BY SA in footnote + link to this webpage -->
 
 ::: {.orc-gradient-box}
-
-**Throughout Data Collection:**
 
 <div class="orc-grid-2col">
 
 <div>
 
+**Throughout Data Collection:**
+
 - [ ] Document data collection procedures
 - [ ] Maintain organized directory structure
 - [ ] Follow file naming conventions
 - [ ] Back up data regularly (3-2-1 rule)
-</div>
-
-<div>
-
 - [ ] Update data dictionary as needed
 - [ ] Version control data and scripts
 - [ ] Apply data (pseudo)anonymization procedures
 - [ ] Apply quality control procedures
 </div>
 
-</div>
+<div>
 
 **Before Moving to Analysis:**
 
@@ -500,5 +492,5 @@ Exclusion criteria specify which data points will be removed from analysis and w
 - [ ] Data dictionary defines all variables
 - [ ] Version control repository up to date
 - [ ] Data quality control completed and documented
-
-:::
+</div>
+</div>

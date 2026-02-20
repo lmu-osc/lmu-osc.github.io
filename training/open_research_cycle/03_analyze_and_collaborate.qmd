@@ -160,32 +160,40 @@ Some journals offer LaTeX or Word templates; you can adapt these by modifying Qu
 </details>
 
 
+
 ## <i class="bi bi-card-checklist"></i> Analysis & Collaboration Checklist
 
-At this stage, each data analysis project / code repository should:
-consist of a R project with the lab’s standard folder structure 
-be shared with the LRZ cBRAIN GitLab organization by using the Git version control system, with meaningful and navigable commits
-use Renv for package management
-contain raw data and/or processed data
-have a descriptive README file explaining how to use and run the codes, and in what order
-contain a codebook/data dictionary
-contain a Quarto reproducible analyses report
+To complete before repository and code peer-review by the research team and before the presentation of the results.
 
-In addition, R scripts should have appropriate:
-metadata / header to e.g. identify author, state the purpose of the script
-structure to increase readability
-informative comments, which do not contain any sensitive information (e.g. password, patient information)
-meaningful and consistent naming convention
-style following a programming language guide (e.g. using styler or lintR)
-functions breaking down actions in readable snippets, and avoiding duplication
-seeds for any random number generation to allow reproducibility 
+::: {.orc-gradient-box}
 
-You must have your repository and your code peer-reviewed by a lab member, your direct supervisor, and/or the computer scientist by giving them access to your LRZ GitLab repository (link to OSC help tool tba). 
-Any co-authors may additionally want to check:
-the functionality of the code (e.g. does it technically do what is stated in the header? Are there any errors?)
-the reproducibility of the results
+**Project repository:**
+
+- [ ] uses the lab’s standard folder structure 
+- [ ] shared with the LRZ  GitLab or GitHub organization of the research group
+- [ ] use Renv for package management
+- [ ] contain raw data and/or processed data
+- [ ] have a descriptive README file explaining how to use and run the codes, and in what order
+- [ ] contain a data dictionary
+- [ ] contain a Quarto reproducible analyses report
+
+**R scripts should have appropriate:**
+
+- [ ] metadata / header to e.g. identify author, state the purpose of the script
+- [ ] structure to increase readability
+- [ ] informative comments, which do not contain any sensitive information (e.g. password, patient information)
+- [ ] meaningful and consistent naming convention
+- [ ] style following a programming language guide (e.g. using styler or lintR)
+- [ ] functions breaking down actions in readable snippets, and avoiding duplication
+- [ ] seeds for any random number generation to allow reproducibility 
 
 
+**Any co-authors may additionally want to check:**
+
+- [ ] the functionality of the code (e.g. does it technically do what is stated in the header? Are there any errors?)
+- [ ] the reproducibility of the results
+
+:::
 
 
 ::: {.orc-gradient-box}
@@ -243,4 +251,4 @@ the reproducibility of the results
 - [ ] Sensitive information removed
 - [ ] Code peer-reviewed
 
-:::
+
