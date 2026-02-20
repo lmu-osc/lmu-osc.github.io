@@ -34,7 +34,6 @@ include-in-header:
 
 Any resource that inspire you or that you want to reuse and/or adapt must minimally be cited, using their DOIs (and otherwise URL with author, date, and time of access) and you must follow the license and/or usage agreement provided by the authors. 
 A research output (e.g. data, code) without a license cannot be reused even if they appear publicly online.
-<!-- this whit space seems kind of big? cut a third of it? apply everywhere-->
 
 ::: {.panel-tabset}
 ### 1.1.1. Articles <!--make this, and other tabs title everywhere, a shareable url?  -->
@@ -42,7 +41,6 @@ A research output (e.g. data, code) without a license cannot be reused even if t
 * To come up with a well-founded research question, **review existing literature** on open source registries like [OpenAlex](https://openalex.org/). 
 * Keep track of your bibliography with an open source **reference manager** like [Zotero](https://www.zotero.org/). It can be integrated within RStudio to write reproducible manuscripts seamlessly, formatting your bibliography in any format you want (see [3. Analyze & Collaborate](03_analyze_and_collaborate.qmd){.mark}).
 
-<!-- Cards should be now link to respective links on clicking anywhere in the cards-->
 ```{=html}
 <div class="container my-4">
   <div class="row row-cols-1 row-cols-lg-3 g-4">
@@ -52,7 +50,7 @@ A research output (e.g. data, code) without a license cannot be reused even if t
         <span class="orc-card-tool-badge recommended">OSC Tutorial</span>
         <div class="orc-card-tool-icons mb-2">
           <div class="orc-card-tool-icon icon-1"><img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo"></div>
-          <div class="orc-card-tool-icon icon-2"><img src="https://upload.wikimedia.org/wikipedia/commons/f/f0/Zotero_logo_new.svg" class="img-fluid" alt="Zotero logo"></div>
+          <div class="orc-card-tool-icon icon-2"><img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Zotero_icon.png" class="img-fluid" alt="Zotero logo"></div>
         </div>
         <h4 class="card-title">Introduction to Zotero</h4>
         <p class="card-text">An open-source reference manager that integrates with Word, RStudio, and Google Docs. (1h)</p>
@@ -82,7 +80,6 @@ A **preregistration** typically consists of a hypothesis and predictions, a plan
 
 To have some **insight into projects that are not (yet) published**, either currently ongoing or abandoned, you can therefore look for projects that were preregistered. Projects that are left unpublished typically have a note attached to their preregistration. Some registries are discipline-specific while others are discipline-agnostic:
 
- <!--make a nice list or make them all clickable cards? maybe just OSF as card as this is the one we teach with? the ;website version has many cards - I don't even know them all - should check if correct (given ChatGPT) and add to list-->
 
 ```{=html}
 <div class="container my-4">
@@ -100,10 +97,10 @@ To have some **insight into projects that are not (yet) published**, either curr
     <div class="col">
       <a href="https://aspredicted.org/" class="card orc-card-tool h-100 text-decoration-none">
         <div class="orc-card-tool-icon mb-2">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Open_Science_Framework_log_%28and_Center_for_Open_Science_logo%29.svg/3840px-Open_Science_Framework_log_%28and_Center_for_Open_Science_logo%29.svg.png" class="img-fluid" alt="AsPredicted icon">
+          <img src="https://aspredicted.org/favicon.ico" class="img-fluid" alt="AsPredicted icon">
         </div>
         <h4 class="card-title">AsPredicted</h4>
-        <p class="card-text">Registry of preregistrations. Widely used across fields.</p>
+        <p class="card-text">Registry of simple preregistrations.</p>
       </a>
     </div>
     <div class="col">
@@ -112,23 +109,22 @@ To have some **insight into projects that are not (yet) published**, either curr
           <img src="https://preclinicaltrials.eu/images/logo-pct.jpg" class="img-fluid" alt="PreclinicalTrials.eu icon">
         </div>
         <h4 class="card-title">PreclinicalTrials.eu</h4>
-        <p class="card-text">Comprehensive listing of preclinical animal study protocols.</p>
+        <p class="card-text">Registry of preclinical animal study protocols.</p>
       </a>
     </div>
         <div class="col">
       <a href="https://www.animalstudyregistry.org/" class="card orc-card-tool h-100 text-decoration-none">
         <div class="orc-card-tool-icon mb-2">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Open_Science_Framework_log_%28and_Center_for_Open_Science_logo%29.svg/3840px-Open_Science_Framework_log_%28and_Center_for_Open_Science_logo%29.svg.png" class="img-fluid" alt="animalstudyregistry.org icon">
+          <img src="https://www.animalstudyregistry.org/asr_web/image/asr_logo.png" class="img-fluid" alt="animalstudyregistry.org icon">
         </div>
-        <h4 class="card-title">animalstudyregistry.org</h4>
-        <p class="card-text">Online registry of animal studies across all disciplines.</p>
+        <h4 class="card-title">AnimalStudyRegistry.org</h4>
+        <p class="card-text">Registry of animal studies.</p>
       </a>
     </div>
         <div class="col">
       <a href="https://clinicaltrials.gov/" class="card orc-card-tool h-100 text-decoration-none">
         <div class="orc-card-tool-icon mb-2">
-            <!-- need a better logo here-->
-          <img src="https://upload.wikimedia.org/wikipedia/commons/a/a1/ClinicalTrials.gov-logo.png" class="img-fluid" alt="ClinicalTrials.gov icon">
+          <img src="https://clinicaltrials.gov/assets/favicons/favicon.svg" class="img-fluid" alt="ClinicalTrials.gov icon">
         </div>
         <h4 class="card-title">ClinicalTrials.gov</h4>
         <p class="card-text">Registry of clinical trial protocols.</p>
@@ -155,34 +151,34 @@ Found a dataset to reuse? Make sure you know where your data comes from, how the
     <div class="col">
       <a href="https://www.re3data.org/" class="card orc-card-tool h-100 text-decoration-none">
         <div class="orc-card-tool-icon mb-2">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/f/fe/Re3data_Logo_RGB_72dpi.png" class="img-fluid" alt="re3data icon">
+          <img src="https://www.re3data.org/favicon.ico" class="img-fluid" alt="re3data icon">
         </div>
         <h4 class="card-title">re3data</h4>
-        <p class="card-text">Registry of data repositories. Search across disciplines to find domain-specific options.</p>
+        <p class="card-text">Registry of research data repositories. Find domain-specific options.</p>
       </a>
     </div>
     <div class="col">
-      <a href="https://www.re3data.org/" class="card orc-card-tool h-100 text-decoration-none">
+      <a href="https://commons.datacite.org/" class="card orc-card-tool h-100 text-decoration-none">
         <div class="orc-card-tool-icon mb-2">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/OpenAlex_2025_favicon.svg/250px-OpenAlex_2025_favicon.svg.png" class="img-fluid" alt="OpenAlex icon">
+          <img src="https://datacite.org/wp-content/uploads/2023/07/DataCite-Logo_Schwoop.svg" class="img-fluid" alt="DataCite icon">
         </div>
-        <h4 class="card-title">re3data</h4>
-        <p class="card-text">Registry of data repositories. Search across disciplines to find domain-specific options.</p>
+        <h4 class="card-title">DataCite Commons</h4>
+        <p class="card-text">Discovery tool connecting works, people, and organizations.</p>
       </a>
     </div>
     <div class="col">
       <a href="https://zenodo.org" class="card orc-card-tool h-100 text-decoration-none">
         <div class="orc-card-tool-icon mb-2">
-          <img src="https://cdn.simpleicons.org/zenodo" class="img-fluid" alt="Zenodo icon">
+          <img src="https://about.zenodo.org/static/img/icons/zenodo-icon-blue.svg" class="img-fluid" alt="Zenodo icon">
         </div>
         <h4 class="card-title">Zenodo</h4>
-        <p class="card-text">General-purpose repository, DOIs</p>
+        <p class="card-text">General-purpose repository for data, software, reports.</p>
       </a>
     </div>
   </div>
 </div>
 ```
-<!-- add data cite and zenodo card as tool-->
+
 
 ### 1.1.4. Code
 
@@ -193,9 +189,11 @@ You may find **code available for reuse** archived on [Zenodo](https://zenodo.or
 :::{.callout-important}
 Code publicly visible on GitHub without a license cannot be legally reused. Ask the authors to add an **open license** to their repository to allow reuse (they must add a file called LICENSE.txt with e.g. the Apache 2.0 license text - see our [code publishing tutorial](https://lmu-osc.github.io/code-publishing/choose_license.html) to learn more about licenses).
 :::
-<!--  add github tutorials in learn more, add github card as a tool - remove gitlab for now-->
-<!-- comment RL: what does this mean ? two separate cards for GitHub? one under learn more and other within tools and resources? -->
-<!-- add zenodo card in tool-->
+<!--  add git and github tutorials in learn more (pointing to our two tutorials)-->
+
+<!-- add github (pointing to github platform) card and zenodo card in tool-->
+
+<!-- comment RL: what does this mean ? two separate cards for GitHub? one under learn more and other within tools and resources? MI: yes one pointing to our tutorial one pointing to the github platform-->
 
 
 ```{=html}
@@ -209,8 +207,8 @@ Code publicly visible on GitHub without a license cannot be legally reused. Ask 
           <div class="orc-card-tool-icon icon-1"><img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo"></div>
           <div class="orc-card-tool-icon icon-2"><img src="https://cdn.simpleicons.org/github" alt="GitHub" class="img-fluid" alt="GitHub logo"></div>
         </div>
-        <h4 class="card-title">GitHub Tutorial</h4>
-        <p class="card-text">Learn how to use version control system Git from within RStudio.(1h)</p>
+        <h4 class="card-title">Git Tutorial</h4>
+        <p class="card-text">Learn how to use version control system Git from within RStudio.(2h)</p>
       </a>
     </div>
   </div>
@@ -231,7 +229,7 @@ The [LMU Guidelines for Safeguarding Good Scientific Practice](https://cms-cdn.l
 
 <br>
 
-<h5>Appropriate level of documentation and standards to allow **reproduction**:</h5> <!-- should probably not be h4 level but do some kind of nice formatting -->
+<h5>Appropriate level of documentation and standards to allow **reproduction**:</h5> 
 
 * Reproducible methods must be used. (§11)
 * When research software is developed, its source code must be documented. (§12)
@@ -247,7 +245,11 @@ The [LMU Guidelines for Safeguarding Good Scientific Practice](https://cms-cdn.l
 * Apart from specific exceptions, **all findings should be made public**. For this, they must be described in a detailed and comprehensible manner which includes making available the research data, materials and information on which the results are based, as well as the methods used and the software employed (including appropriately licensed self-written software) **according to the FAIR principles**. (§13)
 * Data, material, software made publicly accessible must be appropriately archived, usually for a period of 10 years (§17).
 
-</em>
+<br>
+
+In later sections, you will acquire skills in FAIR data management and reproducible workflows that will enable you to comply with these guidelines.
+
+<br>
 
 :::{.callout-note}
 
@@ -261,27 +263,24 @@ The **FAIR** principles are defined as:
 See [https://www.go-fair.org/fair-principles/](https://www.go-fair.org/fair-principles/) for more information and section [2. Collect & Manage](/02_collect_and_manage.qmd){.mark} to learn how to implement the FAIR principles in your research.
 :::
 
-<!-- add a card with LMU logo and LMU Good Scientific Practices as title with link to pdf in section Resources
-Comment RL: which pdf (instructions unclear)-->
 
 ```{=html}
 <div class="container my-4">
 <h4 class="fs-5"><i class="bi bi-tools"></i> TOOLS & RESOURCES</h4>
   <div class="row row-cols-1 row-cols-lg-3 g-4">
     <div class="col">
-      <a href="#" class="card orc-card-tool h-100 text-decoration-none">
+      <a href="https://cms-cdn.lmu.de/media/contenthub/amtliche-veroeffentlichungen/gwp-ordnung.pdf" class="card orc-card-tool h-100 text-decoration-none">
         <div class="orc-card-tool-icon mb-2">
-          <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+          <img src="https://cms-cdn.lmu.de/assets/img/favicon.ico" class="img-fluid" alt="LMU OSC logo">
         </div>
-        <h4 class="card-title">LMU Good Scientific Practices</h4>
-        <p class="card-text">Guidelines...</p>
+        <h4 class="card-title">LMU Guidelines for Safeguarding Good Scientific Practice</h4>
+        <p class="card-text">Implementation of the German Research Foundation's (DFG) Code of Conduct</p>
       </a>
     </div>
   </div>
 </div>
 ```
 
-In later sections, you will acquire skills in FAIR data management and reproducible workflows that will enable you to comply with these guidelines.
 
 ### 1.2.2. Funders
 
@@ -317,23 +316,25 @@ Comment RL- isn't this card similar to what we have in 1.3.?
  <h4 class="fs-5"><i class="bi bi-mortarboard"></i> LEARN MORE</h4>
   <div class="row row-cols-1 row-cols-lg-3 g-4">
     <div class="col">
-      <a href="https://lmu-osc.github.io/introduction-to-zotero/" class="card orc-card-tool h-100 text-decoration-none">
+      <a href="https://lmu-osc.github.io/FAIR-Data-Management/dmp.html" class="card orc-card-tool h-100 text-decoration-none">
         <span class="orc-card-tool-badge recommended">OSC Tutorial</span>
         <div class="orc-card-tool-icons mb-2">
-          <div class="orc-card-tool-icon icon-1"><img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo"></div>
+          <div class="orc-card-tool-icon icon-1">
+            <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+          </div>
         </div>
-        <h4 class="card-title">RDM plan</h4>
-        <p class="card-text">An open-source reference manager that integrates with Word, RStudio, and Google Docs. (1h)</p>
+        <h4 class="card-title">Data Management Plans</h4>
+        <p class="card-text">Overview of components, tips, and tools. (30 min)</p>
       </a>
     </div>
     <div class="col">
-      <a href="https://lmu-osc.github.io/introduction-to-zotero/" class="card orc-card-tool h-100 text-decoration-none">
-        <span class="orc-card-tool-badge recommended">OSC Tutorial(tba)</span>
+      <a href="" class="card orc-card-tool h-100 text-decoration-none"> <!--add link when launched-->
+        <span class="orc-card-tool-badge recommended">OSC Tutorial (tba)</span>
         <div class="orc-card-tool-icons mb-2">
           <div class="orc-card-tool-icon icon-1"><img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo"></div>
         </div>
         <h4 class="card-title">Data Anonymization</h4>
-        <p class="card-text">An open-source reference manager that integrates with Word, RStudio, and Google Docs. (1h)</p>
+        <p class="card-text">Implementing and evaluating data anonymization techniques in R (X<!--FIXME-->h)</p>
       </a>
     </div>
     <div class="col">
@@ -343,7 +344,7 @@ Comment RL- isn't this card similar to what we have in 1.3.?
           <div class="orc-card-tool-icon icon-1"><img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo"></div>
         </div>
         <h4 class="card-title">Power analysis</h4>
-        <p class="card-text">An open-source reference manager that integrates with Word, RStudio, and Google Docs. (1h)</p>
+        <p class="card-text">A deeper dive into simulations in R, with emphasis on GLMs, LMEs, and SEMs (6h)</p>
       </a>
     </div>
   </div>
@@ -374,21 +375,21 @@ A Data Management Plan (DMP) documents how you will handle research data through
 The specific questions vary by discipline, data type, and funder requirements. DMP tools like [RDMO](https://rdmo.ub.lmu.de/) guide you through the relevant questions with funder-specific templates. Your DMP is a living document: start with what you know, and refine the details as your project develops (see [2.2. Data Management](/02_collect_and_manage.qmd#2-2-data-management){.mark}).
 
 ```{=html}
-<div class="container my-4">
+<div class="container my-4"> <!-- put on one line given just 3 cards? -->
 
   <!-- Row 1: LEARN MORE -->
 <h4 class="fs-5"><i class="bi bi-mortarboard"></i> LEARN MORE</h4>
   <div class="row row-cols-1 row-cols-lg-3 g-4 mb-4">
     <div class="col">
-      <a href="https://lmu-osc.github.io/FAIR-Data-Management/" class="card orc-card-tool h-100 text-decoration-none">
+      <a href="https://lmu-osc.github.io/FAIR-Data-Management/dmp.html" class="card orc-card-tool h-100 text-decoration-none">
         <span class="orc-card-tool-badge recommended">OSC Tutorial</span>
         <div class="orc-card-tool-icons mb-2">
           <div class="orc-card-tool-icon icon-1">
             <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
           </div>
         </div>
-        <h4 class="card-title">FAIR Data Management</h4>
-        <p class="card-text">Includes a chapter on writing DMPs (2h total)</p>
+        <h4 class="card-title">Data Management Plans</h4>
+        <p class="card-text">Overview of components, tips, and tools. (30 min)</p>
       </a>
     </div>
   </div>
@@ -402,7 +403,7 @@ The specific questions vary by discipline, data type, and funder requirements. D
           <img src="https://riojournal.com/i/journal_logos/RIO-logo-black.svg" class="img-fluid" alt="RIOjournal icon">
         </div>
         <h4 class="card-title">RIOjournal</h4>
-        <p class="card-text">Examples of DMPs by discipline</p>
+        <p class="card-text">Examples of DMPs by discipline</p> <!-- put as last card -->
       </a>
     </div>
     <div class="col">
@@ -411,7 +412,7 @@ The specific questions vary by discipline, data type, and funder requirements. D
           <img src="https://rdmorganiser.github.io/img/logos/RDMO-logo.png" class="img-fluid" alt="RDMO logo">
         </div>
         <h4 class="card-title">RDMO</h4>
-        <p class="card-text">Funder-compliant templates (DFG, ERC, Horizon Europe)</p>
+        <p class="card-text">Funder-compliant DMP templates (DFG, ERC, Horizon Europe)</p>
       </a>
     </div>
   </div>
@@ -472,7 +473,6 @@ A great tool to create your statistical plan, especially for early career resear
 
 Once completed, you can submit your preregistration on e.g. the [Open Science Framework (OSF)](https://osf.io/) before collecting or analyzing existing data. The plan can be **embargoed** (i.e. kept private for a predetermine amount of time, and for a maximum of 4 years of the OSF) to prevent scooping, then later made public upon publication. This process improves transparency and is inviting valuable **early feedback from collaborators**. An even stronger approach is **submitting preregistrations directly to journals (then called "Registered Reports")**, enabling peer review at a stage where methodological adjustments are still possible.
 
-<!-- in a call out info box perhaps even mini-accordion?? -->
 ::: {.callout-tip}
 ## Registered Reports
 Registered Reports are a publication format, now adopted by over 300 journals (see [participating journals](https://www.cos.io/initiatives/registered-reports)), where **studies are peer-reviewed before data collection**. Reviewers evaluate the hypotheses, methods, and planned analyses, allowing methodological improvements. If the plan is approved, the journal grants in-principle acceptance, meaning publication is guaranteed provided researchers follow the protocol.
@@ -482,8 +482,6 @@ Registered Reports are a publication format, now adopted by over 300 journals (s
 After completing the study, authors add results and discussion sections, clearly separating preregistered confirmatory analyses from exploratory ones. Final review focuses on adherence to the approved plan and the validity of conclusions, not on whether results are significant. This model shifts **incentives toward asking important questions and using rigorous methods rather than chasing striking outcomes**.
 :::
 
-<!-- learn more: cards for a TBA preregistration tutorial --> 
-<!-- Tools and resources: OSF card with real OSF icon used somewhere above linking out to https://help.osf.io/article/330-welcome-to-registrations + COS card linking to  https://www.cos.io/initiatives/registered-reports-->
 
 ```{=html}
 <div class="container my-4">
@@ -492,15 +490,15 @@ After completing the study, authors add results and discussion sections, clearly
 <h4 class="fs-5"><i class="bi bi-mortarboard"></i> LEARN MORE</h4>
   <div class="row row-cols-1 row-cols-lg-3 g-4 mb-4">
     <div class="col">
-      <a href="#" class="card orc-card-tool h-100 text-decoration-none">
-        <span class="orc-card-tool-badge recommended">OSC Tutorial(tba)</span>
+      <a href="#" class="card orc-card-tool h-100 text-decoration-none"><!--FIXME-->
+        <span class="orc-card-tool-badge recommended">OSC Tutorial(tba<!--FIXME-->)</span>
         <div class="orc-card-tool-icons mb-2">
           <div class="orc-card-tool-icon icon-1">
             <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
           </div>
         </div>
         <h4 class="card-title">Preregistration tutorial</h4>
-        <p class="card-text">Step-by-step guide to creating preregistrations using OSF and other platforms. ()</p>
+        <p class="card-text">Step-by-step guide to creating preregistration. (TBA<!--FIXME--> h)</p>
       </a>
     </div>
   </div>
@@ -511,7 +509,7 @@ After completing the study, authors add results and discussion sections, clearly
     <div class="col">
       <a href="https://www.cos.io/initiatives/registered-reports" class="card orc-card-tool h-100 text-decoration-none">
         <div class="orc-card-tool-icon mb-2">
-          <img src="https://upload.wikimedia.org/wikipedia/en/1/1d/Center_for_Open_Science.png" alt="COS icon" class="img-fluid" >
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Open_Science_Framework_log_%28and_Center_for_Open_Science_logo%29.svg/3840px-Open_Science_Framework_log_%28and_Center_for_Open_Science_logo%29.svg.png" alt="COS icon" class="img-fluid" >
         </div>
         <h4 class="card-title">Center for Open Science</h4>
         <p class="card-text">Provides preregistration templates, list of journals offering Registered Reports</p>
@@ -523,7 +521,7 @@ After completing the study, authors add results and discussion sections, clearly
           <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Open_Science_Framework_log_%28and_Center_for_Open_Science_logo%29.svg/3840px-Open_Science_Framework_log_%28and_Center_for_Open_Science_logo%29.svg.png" alt="OSF icon" class="img-fluid" >
         </div>
         <h4 class="card-title">OSF</h4>
-        <p class="card-text">Flexible templates, embargoes, file storage. Widely used across fields</p>
+        <p class="card-text">Preregistration templates, embargoes, file storage.</p>
       </a>
     </div>
   </div>
@@ -554,9 +552,6 @@ _Example: To be confident about the (confirmatory) statistical analyses you want
 <br>
 
 Generating an artificial dataset in R (see our [simulation tutorial](https://lmu-osc.github.io/Introduction-Simulations-in-R/)) is much easier than researchers often believe it to be and is helpful even when you need to make assumptions about variable distribution or when the parameter space is not well known.
-
-
-<!-- card for simulation tutorial -->
 
 
 ```{=html}
@@ -615,7 +610,7 @@ The **legitimate post-hoc power** is computed with your actual n, and the same e
 
 The **flawed version of post-hoc power** is called **“observed power”**: If an analysis yields a non-significant result, some researchers calculate the post-hoc power, but plug in the observed effect size. “Observed power”, however, is just a one‑to‑one function of the p‑value (a non-significant p-value returns a low power < 50 %, a just significant p-value of .05 always yields a power of exactly 50%). Observed power adds no new information to the p-value and is essentially meaningless. Do not compute this type of post-hoc power!
 
-<!-- card for simulation for power analyses tutorial -->
+
 ```{=html}
 <div class="container my-4">
 
@@ -648,8 +643,8 @@ The **flawed version of post-hoc power** is called **“observed power”**: If 
 ## <i class="bi bi-card-checklist"></i> Plan & Design Checklist 
 
 To complete before presenting your complete study plan to your research group and, if applicable, submitting your ethics proposal and/or preregistration. Not all items are relevant for all fields of research or study type.
-<!-- add a 'download a customizable checklist' button -->
-<!-- prepare such downloadable file with checklist in word doc? + citation Ihle, Gupta, Schoenbrodt 2026 + licence CC BY SA in footnote + link to this webpage -->
+
+<!-- prepare  downloadable file with checklist in word doc + citation Ihle, Gupta, Schoenbrodt 2026 + licence CC BY SA in footnote + link to this webpage -->
 
 <div class="row row-cols-1 row-cols-lg-2 g-4">
 <div class="col-md-6">
