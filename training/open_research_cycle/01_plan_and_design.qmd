@@ -32,14 +32,14 @@ include-in-header:
 <details class="orc-details-panel">
 <summary ><i class="bi bi-search"></i> <h4>1.1. Explore and Reuse</h4></summary> 
 
-Any resource that inspire you or that you want to reuse and/or adapt must minimally be cited, using their DOIs (and otherwise URL with author, date, and time of access) and you must follow the license and/or usage agreement provided by the authors. 
+Any resource that inspire you or that you want to reuse and/or adapt must minimally be **cited using their DOIs** (and otherwise URL with author, date, and time of access) and you must **follow the license and/or usage agreement** provided by the authors. 
 A research output (e.g. data, code) without a license cannot be reused even if they appear publicly online.
 
 ::: {.panel-tabset}
 ### 1.1.1. Articles <!--make this, and other tabs title everywhere, a shareable url, cross referencable within this website  -->
 
-* To come up with a well-founded research question, **review existing literature** on open source registries like [OpenAlex](https://openalex.org/). 
-* Keep track of your bibliography with an open source **reference manager** like [Zotero](https://www.zotero.org/). It can be integrated within RStudio to write reproducible manuscripts seamlessly, formatting your bibliography in any format you want (see [3. Analyze & Collaborate](03_analyze_and_collaborate.qmd){.mark}).
+* **Review existing literature** on open source registries like [OpenAlex](https://openalex.org/) to come up with a well-founded research question,
+* **Use a reference manager** to keep track of your bibliography. [Zotero](https://www.zotero.org/) is an open source software that can be integrated within RStudio to write reproducible manuscripts seamlessly, formatting your bibliography in any format you want (see [3. Analyze & Collaborate](03_analyze_and_collaborate.qmd){.mark}).
 
 ```{=html} 
 <div class="container my-4">
@@ -78,7 +78,7 @@ A **preregistration** typically consists of a hypothesis and predictions, a plan
 
 <br>
 
-To have some **insight into projects that are not (yet) published**, either currently ongoing or abandoned, you can therefore look for projects that were preregistered. Projects that are left unpublished typically have a note attached to their preregistration. Some registries are discipline-specific while others are discipline-agnostic:
+To have some **insight into projects that are not (yet) published**, either currently ongoing or abandoned, you can therefore look for projects that were preregistered. Projects that are left unpublished typically have a note attached to their preregistration. Some registries are discipline-specific while others are discipline-agnostic.
 
 
 ```{=html}
@@ -138,11 +138,19 @@ To have some **insight into projects that are not (yet) published**, either curr
 
 ### 1.1.3. Data
 
-To find **existing datasets**, search for discipline-specific repositories on [re3data](https://www.re3data.org/) which is a central registry of all repositories, or explore subject agnostic repositories such as [DataCite](https://datacite.org/) or [Zenodo](https://zenodo.org/) (oftentimes with the corresponding analysis code). These platforms either give you access to existing data or provide metadata and explanations on how to request access to the data. **Metadata** are data about your data, such as author, date, measurement device, unit of measurement, context of data collection, ect.
+To find **existing datasets**, search for discipline-specific repositories on [re3data](https://www.re3data.org/) which is a central registry of all repositories, or explore subject agnostic repositories such as [DataCite](https://datacite.org/) or [Zenodo](https://zenodo.org/) (oftentimes with the corresponding analysis code). These platforms either give you access to existing data or provide _metadata_ and explanations on how to request access to the data. **Metadata** are data about your data, such as author, date, measurement device, unit of measurement, context of data collection, ect.
 
 <br>
 
-Found a dataset to reuse? Make sure you know where your data comes from, how the data was collected and processed, and reflect on whether any of it poses problems for your research question. Finally, check what requirements and resources the data sources have. Some requirement to access the data may be to submit a preregistration (see [1.4. Study Design & Analysis plan](#1-4-study-design-analysis-plan){.mark}). Either way, in order not to introduce confirmation or hindsight bias in your data analyses, do not start plotting the data itself but instead **familiarize yourself with the metadata to plan your analyses** (see [1.4. Study Design & Analysis plan](#1-4-study-design-analysis-plan){.mark}). Specifically, there may be a data dictionary (also called "codebook"), or other extensive documentation on which variables and their description are included. 
+Found a dataset to reuse? 
+
+<br>
+
+* **Review metadata and documentation.** Make sure you know where your data comes from, how the data was collected and processed, and reflect on whether any of it poses problems for your research question. 
+* **Check what requirements the data sources have.** Some requirement to access the data may be to submit a preregistration (see [1.4. Study Design & Analysis plan](#1-4-study-design-analysis-plan){.mark}).
+* **Use the metadata to plan your analysis.** A data dictionary (or "codebook") and other documentation describing the variables, range of values, ect., may be available and should be reviewed. To minimize confirmation or hindsight bias, do not plot the data immediately; instead, prepare a pre-analysis plan by examining the documentation.(see [1.4. Study Design & Analysis plan](#1-4-study-design-analysis-plan){.mark}).  
+
+
 
 ```{=html}
 <div class="container my-4">
@@ -189,15 +197,9 @@ You may find **code available for reuse** archived on [Zenodo](https://zenodo.or
 :::{.callout-important}
 Code publicly visible on GitHub without a license cannot be legally reused. Ask the authors to add an **open license** to their repository to allow reuse (they must add a file called LICENSE.txt with e.g. the Apache 2.0 license text - see our [code publishing tutorial](https://lmu-osc.github.io/code-publishing/choose_license.html) to learn more about licenses).
 :::
-<!--  add git and github tutorials in learn more (pointing to our two tutorials)-->
-
-<!-- add github (pointing to github platform) card and zenodo card in tool-->
-
-<!-- comment RL: what does this mean ? two separate cards for GitHub? one under learn more and other within tools and resources? MI: yes one pointing to our tutorial one pointing to the github platform-->
-
 
 ```{=html}
-<div class="container my-4">
+<div class="container my-4"> <!-- please format this in two rows - I don't really understand these classes but we should make it so that I can do it myself (and the researchers we will give this to as a template handbook-->
   <div class="row row-cols-1 row-cols-lg-3 g-4">
     <div class="col">
      <h4 class="fs-5"><i class="bi bi-mortarboard"></i> LEARN MORE</h4>
@@ -205,15 +207,49 @@ Code publicly visible on GitHub without a license cannot be legally reused. Ask 
         <span class="orc-card-tool-badge recommended">OSC Tutorial</span>
         <div class="orc-card-tool-icons mb-2">
           <div class="orc-card-tool-icon icon-1"><img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo"></div>
-          <div class="orc-card-tool-icon icon-2"><img src="https://cdn.simpleicons.org/github" alt="GitHub" class="img-fluid" alt="GitHub logo"></div>
+          <div class="orc-card-tool-icon icon-2"><img src="https://www.svgrepo.com/show/303548/git-icon-logo.svg" class="img-fluid" alt="Git logo"></div>
         </div>
         <h4 class="card-title">Git Tutorial</h4>
-        <p class="card-text">Use version control system Git from within RStudio.(2h)</p>
+        <p class="card-text">Use version control system Git from within RStudio. (2h)</p>
       </a>
     </div>
   </div>
+
+    <div class="col">
+      <a href="https://lmu-osc.github.io/Collaborative-RStudio-GitHub/" class="card orc-card-tool h-100 text-decoration-none">
+        <span class="orc-card-tool-badge recommended">OSC Tutorial</span>
+        <div class="orc-card-tool-icons mb-2">
+          <div class="orc-card-tool-icon icon-1"><img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo"></div>
+          <div class="orc-card-tool-icon icon-2"><img src="https://cdn.simpleicons.org/github" class="img-fluid" alt="Git logo"></div>
+        </div>
+        <h4 class="card-title">GitHub Tutorial</h4>
+        <p class="card-text">Collaborative coding with GitHub and RStudio (1h)</p>
+      </a>
+    </div>
+
 </div>
+    <div class="col">
+             <h4 class="fs-5"><i class="bi bi-tools"></i> TOOLS & RESOURCES</h4>
+      <a href="https://zenodo.org" class="card orc-card-tool h-100 text-decoration-none">
+        <div class="orc-card-tool-icon mb-2">
+          <img src="https://about.zenodo.org/static/img/icons/zenodo-icon-blue.svg" class="img-fluid" alt="Zenodo icon">
+        </div>
+        <h4 class="card-title">Zenodo</h4>
+        <p class="card-text">General-purpose repository for data, software, reports.</p>
+      </a>
+    </div>
+        <div class="col">
+      <a href="https://github.com/" class="card orc-card-tool h-100 text-decoration-none">
+        <div class="orc-card-tool-icon mb-2">
+          <img src="https://cdn.simpleicons.org/github" class="img-fluid" alt="Zenodo icon">
+        </div>
+        <h4 class="card-title">GitHub</h4>
+        <p class="card-text">Cloud-based platform to collaborate on code.</p>
+      </a>
+    </div>
 ```
+
+
 
 </details>
 
