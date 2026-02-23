@@ -25,4 +25,8 @@ filters:
 ---
 
 
-{{< meta event_data.event_title >}}
+<h4> in an h4 {{< meta event_data.has_end_date >}} </h4>    
+ 
+{{< include example.html >}} 
+ 
+{{< include info_boxes.html >}} 

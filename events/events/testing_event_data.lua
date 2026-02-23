@@ -29,28 +29,52 @@ function Meta(meta)
 
   local event_end_date = safe_get(event, "end_date", "")
   local has_end_date = false
-  if type(event_end_date) == "string" and event_end_date:match("%S") then
-    has_end_date = true
+  if type(event_end_date) == "string" then
+    has_end_date = event_end_date:match("%S") ~= nil
+  elseif type(event_end_date) == "table" then
+    -- If end_date is a table (e.g., list of dates), check if any entry is non-empty
+    for _, v in ipairs(event_end_date) do
+      if type(v) == "string" and v:match("%S") then
+        has_end_date = true
+        break
+      end
+    end
+  end
+
+  -- Recursively convert Lua values to Pandoc Meta types
+  local function to_meta(val)
+    if type(val) == "string" then
+      return pandoc.MetaString(val)
+    elseif type(val) == "table" then
+      -- Check if it's a list (array-like)
+      local is_array = true
+      local count = 0
+      for k, v in pairs(val) do
+        count = count + 1
+        if type(k) ~= "number" then is_array = false break end
+      end
+      if is_array then
+        local meta_list = {}
+        for i = 1, #val do
+          meta_list[i] = to_meta(val[i])
+        end
+        return pandoc.MetaList(meta_list)
+      else
+        local meta_map = {}
+        for k, v in pairs(val) do
+          meta_map[k] = to_meta(v)
+        end
+        return pandoc.MetaMap(meta_map)
+      end
+    else
+      return val
+    end
   end
 
   local event_data = {
-    event_param = event,
+    event = to_meta(event),
     event_title = get_param(meta, "title", ""),
-    event_start_date = safe_trim(safe_get(event, "start_date", "")),
-    event_end_date = safe_trim(event_end_date),
-    event_time = safe_trim(safe_get(event, "time", "")),
-    event_location_name = safe_trim(safe_get(safe_get(event, "location", {}), "name", "")),
-    event_location_address = safe_trim(safe_get(safe_get(event, "location", {}), "address", "")),
-    event_map_url = safe_trim(safe_get(safe_get(event, "location", {}), "map_url", "")),
-    event_format_type = safe_trim(safe_get(safe_get(event, "format", {}), "type", "")),
-    event_format_detail = safe_trim(safe_get(safe_get(event, "format", {}), "detail", "")),
-    event_language_primary = safe_trim(safe_get(safe_get(event, "language", {}), "primary", "")),
-    event_language_detail = safe_trim(safe_get(safe_get(event, "language", {}), "detail", "")),
     has_end_date = has_end_date,
-    links_param = get_param(meta, "links", {}),
-    links_registration = safe_trim(safe_get(get_param(meta, "links", {}), "registration", "")),
-    links_materials = safe_trim(safe_get(get_param(meta, "links", {}), "materials", "")),
-    links_workshop_website = safe_trim(safe_get(get_param(meta, "links", {}), "workshop_website", "")),
     event_description = get_param(meta, "event_description", {}),
     instructors = get_param(meta, "instructors", {}),
     helpers = get_param(meta, "helpers", {}),
