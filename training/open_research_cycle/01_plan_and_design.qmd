@@ -41,35 +41,73 @@ A research output (e.g. data, code) without a license cannot be reused even if t
 * **Review existing literature** on open source registries like [OpenAlex](https://openalex.org/) to come up with a well-founded research question,
 * **Use a reference manager** to keep track of your bibliography. [Zotero](https://www.zotero.org/) is an open source software that can be integrated within RStudio to write reproducible manuscripts seamlessly, formatting your bibliography in any format you want (see [3. Analyze & Collaborate](03_analyze_and_collaborate.qmd){.mark}).
 
-```{=html} 
-<div class="container my-4">
-  <div class="row row-cols-1 row-cols-lg-3 g-4">
-    <div class="col">
-      <h4 class="fs-5"><i class="bi bi-mortarboard"></i> LEARN MORE</h4> 
-      <a href="https://lmu-osc.github.io/introduction-to-zotero/" class="card orc-card-tool h-100 text-decoration-none">
-        <span class="orc-card-tool-badge recommended">OSC Tutorial</span> <!-- seems like the cards with two logos are taller? fix? -->
-        <div class="orc-card-tool-icons mb-2">
-          <div class="orc-card-tool-icon icon-1"><img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo"></div>
-          <div class="orc-card-tool-icon icon-2"><img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Zotero_icon.png" class="img-fluid" alt="Zotero logo"></div>
-        </div>
-        <h4 class="card-title">Introduction to Zotero</h4>
-        <p class="card-text">Use an open source reference manager. (1h)</p>
-      </a>
-    </div>
-    <!-- TOOLS & RESOURCES Card -->
-    <div class="col">
-      <h4 class="fs-5"><i class="bi bi-tools"></i> TOOLS & RESOURCES</h4>
-      <a href="https://openalex.org/" class="card orc-card-tool h-100 text-decoration-none">
-        <div class="orc-card-tool-icon mb-2">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/OpenAlex_2025_favicon.svg/250px-OpenAlex_2025_favicon.svg.png" class="img-fluid" alt="OpenAlex icon">
-        </div>
-        <h4 class="card-title">OpenAlex</h4>
-        <p class="card-text">All the world's research, connected and open.</p>
-      </a>
-    </div>
-  </div>
+
+<!-- 
+This section uses Bootstrap structure to create a responsive card layout.
+- The main .container div must always be present.
+- Each section (Learn More / Tools & Resources) is wrapped in a .row.
+- IF one of the section is not needed, remove the entire .row block and its downstream .col divs.
+
+HOW TO ADD CARDS?
+- Each card should always be placed inside a .col div.
+- To add a new card, simply copy an existing .col block and edit the links, img, title, and text.
+- Add as many .col blocks as needed within the .row, the cards are automatically laid out 3 cards per row and any additional cards will wrap to the next row.
+
+-->
+<!-- main container div -->
+::: {.container .my-4 }
+
+<h4 class="fs-5"><i class="bi bi-mortarboard"></i> LEARN MORE</h4>
+
+<!-- row for Learn More section -->
+::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
+
+<!-- 1st card -->
+::: {.col}
+<!-- Actual card component -->
+<div class="card orc-card-tool h-100 position-relative">
+<span class="orc-card-tool-badge recommended">OSC Tutorial</span>
+<div class="orc-card-tool-icons mb-2">
+<div class="orc-card-tool-icon icon-1">
+<img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
 </div>
-```
+<div class="orc-card-tool-icon icon-2">
+<img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Zotero_icon.png" class="img-fluid" alt="Zotero logo">
+</div>
+</div>
+<h4 class="card-title">Introduction to Zotero</h4>
+<p class="card-text">Use an open source reference manager. (1h)</p>
+<a href="https://lmu-osc.github.io/introduction-to-zotero/" class="stretched-link" target="_blank" rel="noopener"> </a>
+</div>
+
+:::
+<!-- Add more cards if needed after this block -->
+:::
+
+
+<h4 class="fs-5 mt-3"><i class="bi bi-tools"></i> TOOLS & RESOURCES</h4>
+<!-- row for Tools & Resources section -->
+
+::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
+
+<!-- 1st card -->
+::: {.col}
+
+<div class="card orc-card-tool h-100 position-relative">
+<div class="orc-card-tool-icon mb-2"> 
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/OpenAlex_2025_favicon.svg/250px-OpenAlex_2025_favicon.svg.png" class="img-fluid" alt="OpenAlex icon">
+</div>
+<h4 class="card-title">OpenAlex</h4>
+<p class="card-text"> All the world's research, connected and open. </p>
+<a href="https://openalex.org/" class="stretched-link" target="_blank" rel="noopener"></a>
+
+</div>
+
+:::
+
+:::
+
+:::
 
 ### 1.1.2. Preregistrations
 
@@ -80,60 +118,80 @@ A **preregistration** typically consists of a hypothesis and predictions, a plan
 
 To have some **insight into projects that are not (yet) published**, either currently ongoing or abandoned, you can therefore look for projects that were preregistered. Projects that are left unpublished typically have a note attached to their preregistration. Some registries are discipline-specific while others are discipline-agnostic.
 
+::: {.container .my-4 }
 
-```{=html}
-<div class="container my-4">
-<h4 class="fs-5"><i class="bi bi-tools"></i> TOOLS & RESOURCES</h4>
-  <div class="row row-cols-1 row-cols-lg-3 g-4">
-    <div class="col">
-      <a href="https://osf.io/registries/" class="card orc-card-tool h-100 text-decoration-none">
-        <div class="orc-card-tool-icon mb-2">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Open_Science_Framework_log_%28and_Center_for_Open_Science_logo%29.svg/3840px-Open_Science_Framework_log_%28and_Center_for_Open_Science_logo%29.svg.png" class="img-fluid" alt="OSF icon">
-        </div>
-        <h4 class="card-title">Open Science Framework</h4>
-        <p class="card-text">Registry of preregistrations. Widely used across fields.</p>
-      </a>
-    </div>
-    <div class="col">
-      <a href="https://aspredicted.org/" class="card orc-card-tool h-100 text-decoration-none">
-        <div class="orc-card-tool-icon mb-2">
-          <img src="https://aspredicted.org/favicon.ico" class="img-fluid" alt="AsPredicted icon">
-        </div>
-        <h4 class="card-title">AsPredicted</h4>
-        <p class="card-text">Registry of simple preregistrations.</p>
-      </a>
-    </div>
-    <div class="col">
-      <a href="https://preclinicaltrials.eu/" class="card orc-card-tool h-100 text-decoration-none">
-        <div class="orc-card-tool-icon mb-2">
-          <img src="https://preclinicaltrials.eu/images/logo-pct.jpg" class="img-fluid" alt="PreclinicalTrials.eu icon">
-        </div>
-        <h4 class="card-title">PreclinicalTrials.eu</h4>
-        <p class="card-text">Registry of preclinical animal study protocols.</p>
-      </a>
-    </div>
-        <div class="col">
-      <a href="https://www.animalstudyregistry.org/" class="card orc-card-tool h-100 text-decoration-none">
-        <div class="orc-card-tool-icon mb-2">
-          <img src="https://www.animalstudyregistry.org/asr_web/image/asr_logo.png" class="img-fluid" alt="animalstudyregistry.org icon">
-        </div>
-        <h4 class="card-title">AnimalStudyRegistry.org</h4>
-        <p class="card-text">Registry of animal studies.</p>
-      </a>
-    </div>
-        <div class="col">
-      <a href="https://clinicaltrials.gov/" class="card orc-card-tool h-100 text-decoration-none">
-        <div class="orc-card-tool-icon mb-2">
-          <img src="https://clinicaltrials.gov/assets/favicons/favicon.svg" class="img-fluid" alt="ClinicalTrials.gov icon">
-        </div>
-        <h4 class="card-title">ClinicalTrials.gov</h4>
-        <p class="card-text">Registry of clinical trial protocols.</p>
-      </a>
-    </div>
-  </div>
+<h4 class="fs-5 mt-3"><i class="bi bi-tools"></i> TOOLS & RESOURCES</h4>
+
+::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
+
+::: {.col}
+<div class="card orc-card-tool h-100 position-relative">
+<div class="orc-card-tool-icon mb-2"> 
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Open_Science_Framework_log_%28and_Center_for_Open_Science_logo%29.svg/3840px-Open_Science_Framework_log_%28and_Center_for_Open_Science_logo%29.svg.png" class="img-fluid" alt="OSF icon">
+</div>
+<h4 class="card-title">Open Science Framework</h4>
+<p class="card-text">Registry of preregistrations. Widely used across fields.</p>
+<a href="https://osf.io/registries/" class="stretched-link" target="_blank" rel="noopener"></a>
+
 </div>
 
-```
+:::
+
+::: {.col}
+<div class="card orc-card-tool h-100 position-relative">
+<div class="orc-card-tool-icon mb-2"> 
+<img src="https://aspredicted.org/favicon.ico" class="img-fluid" alt="AsPredicted icon">
+</div>
+<h4 class="card-title">AsPredicted</h4>
+<p class="card-text">Registry of simple preregistrations</p>
+<a href="https://aspredicted.org/" class="stretched-link" target="_blank" rel="noopener"></a>
+
+</div>
+
+:::
+
+::: {.col}
+<div class="card orc-card-tool h-100 position-relative">
+<div class="orc-card-tool-icon mb-2"> 
+<img src="https://preclinicaltrials.eu/images/logo-pct.jpg" class="img-fluid" alt="PreclinicalTrials.eu icon">
+</div>
+<h4 class="card-title">PreclinicalTrials.eu</h4>
+<p class="card-text">Registry of preclinical animal study protocols.</p>
+<a href="https://preclinicaltrials.eu/" class="stretched-link" target="_blank" rel="noopener"></a>
+
+</div>
+
+:::
+
+::: {.col}
+<div class="card orc-card-tool h-100 position-relative">
+<div class="orc-card-tool-icon mb-2"> 
+<img src="https://www.animalstudyregistry.org/asr_web/image/asr_logo.png" class="img-fluid" alt="animalstudyregistry.org icon">
+</div>
+<h4 class="card-title">AnimalStudyRegistry.org</h4>
+<p class="card-text">Registry of animal studies.</p>
+<a href="https://www.animalstudyregistry.org/" class="stretched-link" target="_blank" rel="noopener"></a>
+
+</div>
+
+:::
+
+::: {.col}
+<div class="card orc-card-tool h-100 position-relative">
+<div class="orc-card-tool-icon mb-2"> 
+<img src="https://clinicaltrials.gov/assets/favicons/favicon.svg" class="img-fluid" alt="ClinicalTrials.gov icon">
+</div>
+<h4 class="card-title">ClinicalTrials.gov</h4>
+<p class="card-text">Registry of clinical trial protocols.</p>
+<a href="https://clinicaltrials.gov/" class="stretched-link" target="_blank" rel="noopener"></a>
+
+</div>
+
+:::
+
+:::
+
+:::
 
 
 ### 1.1.3. Data
@@ -151,41 +209,60 @@ Found a dataset to reuse?
 * **Use the metadata to plan your analysis.** A data dictionary (or "codebook") and other documentation describing the variables, range of values, ect., may be available and should be reviewed. To minimize confirmation or hindsight bias, do not plot the data immediately; instead, prepare a pre-analysis plan by examining the documentation.(see [1.4. Study Design & Analysis plan](#1-4-study-design-analysis-plan){.mark}).  
 
 
+::: {.container .my-4 }
 
-```{=html}
-<div class="container my-4">
-<h4 class="fs-5"><i class="bi bi-tools"></i> TOOLS & RESOURCES</h4>
-  <div class="row row-cols-1 row-cols-lg-3 g-4">
-    <div class="col">
-      <a href="https://www.re3data.org/" class="card orc-card-tool h-100 text-decoration-none">
-        <div class="orc-card-tool-icon mb-2">
-          <img src="https://www.re3data.org/favicon.ico" class="img-fluid" alt="re3data icon">
-        </div>
-        <h4 class="card-title">re3data</h4>
-        <p class="card-text">Registry of research data repositories.</p>
-      </a>
-    </div>
-    <div class="col">
-      <a href="https://commons.datacite.org/" class="card orc-card-tool h-100 text-decoration-none">
-        <div class="orc-card-tool-icon mb-2">
-          <img src="https://datacite.org/wp-content/uploads/2023/07/DataCite-Logo_Schwoop.svg" class="img-fluid" alt="DataCite icon">
-        </div>
-        <h4 class="card-title">DataCite Commons</h4>
-        <p class="card-text">Discovery tool connecting works, people, and organizations.</p>
-      </a>
-    </div>
-    <div class="col">
-      <a href="https://zenodo.org" class="card orc-card-tool h-100 text-decoration-none">
-        <div class="orc-card-tool-icon mb-2">
-          <img src="https://about.zenodo.org/static/img/icons/zenodo-icon-blue.svg" class="img-fluid" alt="Zenodo icon">
-        </div>
-        <h4 class="card-title">Zenodo</h4>
-        <p class="card-text">General-purpose repository for data, software, reports.</p>
-      </a>
-    </div>
-  </div>
+<h4 class="fs-5 mt-3"><i class="bi bi-tools"></i> TOOLS & RESOURCES</h4>
+
+::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
+
+<!--1st card-->
+::: {.col}
+
+<div class="card orc-card-tool h-100 position-relative">
+<div class="orc-card-tool-icon mb-2"> 
+<img src="https://www.re3data.org/favicon.ico" class="img-fluid" alt="re3data icon">
 </div>
-```
+<h4 class="card-title">re3data</h4>
+<p class="card-text">Registry of research data repositories.</p>
+<a href="https://www.re3data.org/" class="stretched-link" target="_blank" rel="noopener"></a>
+
+</div>
+
+:::
+
+<!--2nd card-->
+::: {.col}
+
+<div class="card orc-card-tool h-100 position-relative">
+<div class="orc-card-tool-icon mb-2"> 
+<img src="https://datacite.org/wp-content/uploads/2023/07/DataCite-Logo_Schwoop.svg" class="img-fluid" alt="DataCite icon">
+</div>
+<h4 class="card-title">DataCite Commons</h4>
+<p class="card-text">Discovery tool connecting works, people, and organizations.</p>
+<a href="https://commons.datacite.org/" class="stretched-link" target="_blank" rel="noopener"></a>
+
+</div>
+
+:::
+
+<!--3rd card-->
+::: {.col}
+
+<div class="card orc-card-tool h-100 position-relative">
+<div class="orc-card-tool-icon mb-2"> 
+<img src="https://about.zenodo.org/static/img/icons/zenodo-icon-blue.svg" class="img-fluid" alt="Zenodo icon">
+</div>
+<h4 class="card-title">Zenodo</h4>
+<p class="card-text">General-purpose repository for data, software, reports.</p>
+<a href="https://zenodo.org" class="stretched-link" target="_blank" rel="noopener"></a>
+
+</div>
+
+:::
+
+:::
+
+:::
 
 
 ### 1.1.4. Code
@@ -198,57 +275,94 @@ You may find **code available for reuse** archived on [Zenodo](https://zenodo.or
 Code publicly visible on GitHub without a license cannot be legally reused. Ask the authors to add an **open license** to their repository to allow reuse (they must add a file called LICENSE.txt with e.g. the Apache 2.0 license text - see our [code publishing tutorial](https://lmu-osc.github.io/code-publishing/choose_license.html) to learn more about licenses).
 :::
 
-```{=html}
-<div class="container my-4"> <!-- please format this in two rows - I don't really understand these classes but we should make it so that I can do it myself (and the researchers we will give this to as a template handbook-->
-  <div class="row row-cols-1 row-cols-lg-3 g-4">
-    <div class="col">
-     <h4 class="fs-5"><i class="bi bi-mortarboard"></i> LEARN MORE</h4>
-      <a href="https://lmu-osc.github.io/Introduction-RStudio-Git-GitHub/" class="card orc-card-tool h-100 text-decoration-none">
-        <span class="orc-card-tool-badge recommended">OSC Tutorial</span>
-        <div class="orc-card-tool-icons mb-2">
-          <div class="orc-card-tool-icon icon-1"><img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo"></div>
-          <div class="orc-card-tool-icon icon-2"><img src="https://www.svgrepo.com/show/303548/git-icon-logo.svg" class="img-fluid" alt="Git logo"></div>
-        </div>
-        <h4 class="card-title">Git Tutorial</h4>
-        <p class="card-text">Use version control system Git from within RStudio. (2h)</p>
-      </a>
-    </div>
-  </div>
 
-    <div class="col">
-      <a href="https://lmu-osc.github.io/Collaborative-RStudio-GitHub/" class="card orc-card-tool h-100 text-decoration-none">
-        <span class="orc-card-tool-badge recommended">OSC Tutorial</span>
-        <div class="orc-card-tool-icons mb-2">
-          <div class="orc-card-tool-icon icon-1"><img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo"></div>
-          <div class="orc-card-tool-icon icon-2"><img src="https://cdn.simpleicons.org/github" class="img-fluid" alt="Git logo"></div>
-        </div>
-        <h4 class="card-title">GitHub Tutorial</h4>
-        <p class="card-text">Collaborative coding with GitHub and RStudio (1h)</p>
-      </a>
-    </div>
+::: {.container .my-4 }
+
+<h4 class="fs-5"><i class="bi bi-mortarboard"></i> LEARN MORE</h4>
+
+<!-- row for Learn More section -->
+::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
+
+<!-- 1st card -->
+::: {.col}
+<!-- Actual card component -->
+<div class="card orc-card-tool h-100 position-relative">
+<span class="orc-card-tool-badge recommended">OSC Tutorial</span>
+<div class="orc-card-tool-icons mb-2">
+<div class="orc-card-tool-icon icon-1">
+<img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+</div>
+<div class="orc-card-tool-icon icon-2">
+<img src="https://www.svgrepo.com/show/303548/git-icon-logo.svg" class="img-fluid" alt="Git logo">
+</div>
+</div>
+<h4 class="card-title">Git Tutorial</h4>
+<p class="card-text">Use version control system Git from within RStudio. (2h)</p>
+<a href="https://lmu-osc.github.io/Introduction-RStudio-Git-GitHub/" class="stretched-link" target="_blank" rel="noopener"> </a>
+</div>
+
+:::
+
+<!-- 2nd card -->
+::: {.col}
+
+<div class="card orc-card-tool h-100 position-relative">
+<span class="orc-card-tool-badge recommended">OSC Tutorial</span>
+<div class="orc-card-tool-icons mb-2">
+<div class="orc-card-tool-icon icon-1">
+<img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+</div>
+<div class="orc-card-tool-icon icon-2">
+<img src="https://cdn.simpleicons.org/github" class="img-fluid" alt="GitHub logo">
+</div>
+</div>
+<h4 class="card-title">GitHub Tutorial</h4>
+<p class="card-text">Collaborative coding with GitHub and RStudio (1h)</p>
+<a href="https://lmu-osc.github.io/Collaborative-RStudio-GitHub/" class="stretched-link" target="_blank" rel="noopener"> </a>
+</div>
+
+:::
+
+:::
+
+<h4 class="fs-5 mt-3"><i class="bi bi-tools"></i> TOOLS & RESOURCES</h4>
+<!-- row for Tools & Resources section -->
+
+::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
+
+<!-- 1st card -->
+::: {.col}
+
+<div class="card orc-card-tool h-100 position-relative">
+<div class="orc-card-tool-icon mb-2"> 
+<img src="https://about.zenodo.org/static/img/icons/zenodo-icon-blue.svg" class="img-fluid" alt="Zenodo icon">
+</div>
+<h4 class="card-title">Zenodo</h4>
+<p class="card-text">General-purpose repository for data, software, reports.</p>
+<a href="https://zenodo.org/" class="stretched-link" target="_blank" rel="noopener"></a>
 
 </div>
-    <div class="col">
-             <h4 class="fs-5"><i class="bi bi-tools"></i> TOOLS & RESOURCES</h4>
-      <a href="https://zenodo.org" class="card orc-card-tool h-100 text-decoration-none">
-        <div class="orc-card-tool-icon mb-2">
-          <img src="https://about.zenodo.org/static/img/icons/zenodo-icon-blue.svg" class="img-fluid" alt="Zenodo icon">
-        </div>
-        <h4 class="card-title">Zenodo</h4>
-        <p class="card-text">General-purpose repository for data, software, reports.</p>
-      </a>
-    </div>
-        <div class="col">
-      <a href="https://github.com/" class="card orc-card-tool h-100 text-decoration-none">
-        <div class="orc-card-tool-icon mb-2">
-          <img src="https://cdn.simpleicons.org/github" class="img-fluid" alt="Zenodo icon">
-        </div>
-        <h4 class="card-title">GitHub</h4>
-        <p class="card-text">Cloud-based platform to collaborate on code.</p>
-      </a>
-    </div>
-```
 
+:::
+
+<!-- 2nd card -->
+::: {.col}
+
+<div class="card orc-card-tool h-100 position-relative">
+<div class="orc-card-tool-icon mb-2"> 
+<img src="https://cdn.simpleicons.org/github" class="img-fluid" alt="GitHub icon">
+</div>
+<h4 class="card-title">GitHub</h4>
+<p class="card-text">Cloud-based platform to collaborate on code.</p>
+<a href="https://github.com/" class="stretched-link" target="_blank" rel="noopener"></a>
+
+</div>
+
+:::
+
+:::
+
+:::
 
 
 </details>
@@ -303,24 +417,29 @@ The **[FAIR principles]{.underline}** are defined as:
 See [https://www.go-fair.org/fair-principles/](https://www.go-fair.org/fair-principles/) for more information and section [2. Collect & Manage](/02_collect_and_manage.qmd){.mark} to learn how to implement the FAIR principles in your research.
 :::
 
+::: {.container .my-4}
 
-```{=html}
-<div class="container my-4">
 <h4 class="fs-5"><i class="bi bi-tools"></i> TOOLS & RESOURCES</h4>
-  <div class="row row-cols-1 row-cols-lg-3 g-4">
-    <div class="col">
-      <a href="https://cms-cdn.lmu.de/media/contenthub/amtliche-veroeffentlichungen/gwp-ordnung.pdf" class="card orc-card-tool h-100 text-decoration-none">
-        <div class="orc-card-tool-icon mb-2">
-          <img src="https://cms-cdn.lmu.de/assets/img/favicon.ico" class="img-fluid" alt="LMU OSC logo">
-        </div>
-        <h4 class="card-title">LMU Guidelines for Safeguarding Good Scientific Practice</h4>
-        <p class="card-text">Implementation of the German Research Foundation's (DFG) Code of Conduct</p>
-      </a>
-    </div>
-  </div>
-</div>
-```
 
+::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
+
+::: {.col}
+
+<div class="card orc-card-tool w-100 h-100 position-relative">
+<div class="orc-card-tool-icon mb-2">
+<img src="https://cms-cdn.lmu.de/assets/img/favicon.ico" class="img-fluid" alt="LMU logo">
+</div>
+<h4 class="card-title">LMU Guidelines for Safeguarding Good Scientific Practice</h4>
+<p class="card-text">Implementation of the German Research Foundation's (DFG) Code of Conduct</p>
+<a href="https://cms-cdn.lmu.de/media/contenthub/amtliche-veroeffentlichungen/gwp-ordnung.pdf" class="stretched-link" target="_blank" rel="noopener"></a>
+
+</div>
+
+:::
+
+:::
+
+:::
 
 ### 1.2.2. Funders
 
@@ -350,45 +469,65 @@ For data protection guidance, contact the [LMU Data Protection Officer](https://
 
 
 
-```{=html}
-<div class="container my-4 gap-3">
- <h4 class="fs-5"><i class="bi bi-mortarboard"></i> LEARN MORE</h4>
-  <div class="row row-cols-1 row-cols-lg-3 g-4">
-    <div class="col">
-      <a href="https://lmu-osc.github.io/FAIR-Data-Management/dmp.html" class="card orc-card-tool h-100 text-decoration-none">
-        <span class="orc-card-tool-badge recommended">OSC Tutorial</span>
-        <div class="orc-card-tool-icons mb-2">
-          <div class="orc-card-tool-icon icon-1">
-            <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
-          </div>
-        </div>
-        <h4 class="card-title">Data Management Plans</h4>
-        <p class="card-text">Overview of components, tips, and tools. (30 min)</p>
-      </a>
-    </div>
-    <div class="col">
-      <a href="" class="card orc-card-tool h-100 text-decoration-none"> <!--add link when launched-->
-        <span class="orc-card-tool-badge recommended">OSC Tutorial (tba)</span>
-        <div class="orc-card-tool-icons mb-2">
-          <div class="orc-card-tool-icon icon-1"><img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo"></div>
-        </div>
-        <h4 class="card-title">Data Anonymization</h4>
-        <p class="card-text">Implement data anonymization techniques in R. (X<!--FIXME-->h)</p>
-      </a>
-    </div>
-    <div class="col">
-      <a href="https://lmu-osc.github.io/introduction-to-zotero/" class="card orc-card-tool h-100 text-decoration-none">
-        <span class="orc-card-tool-badge recommended">OSC Tutorial</span>
-        <div class="orc-card-tool-icons mb-2">
-          <div class="orc-card-tool-icon icon-1"><img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo"></div>
-        </div>
-        <h4 class="card-title">Power analysis</h4>
-        <p class="card-text">Data simulations for GLMs, LMEs, and SEMs in R. (6h)</p>
-      </a>
-    </div>
-  </div>
+::: {.container .my-4}
+
+<h4 class="fs-5"><i class="bi bi-mortarboard"></i> LEARN MORE</h4>
+
+::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
+
+::: {.col}
+
+<div class="card orc-card-tool w-100 h-100 position-relative">
+<span class="orc-card-tool-badge recommended">OSC Tutorial</span>
+<div class="orc-card-tool-icons mb-2">
+<div class="orc-card-tool-icon icon-1">
+<img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
 </div>
-```
+</div>
+<h4 class="card-title">Data Management Plans</h4>
+<p class="card-text">Overview of components, tips, and tools. (30 min)</p>
+<a href="https://lmu-osc.github.io/FAIR-Data-Management/dmp.html" class="stretched-link" target="_blank" rel="noopener"></a>
+</div>
+
+:::
+
+::: {.col}
+<div class="card orc-card-tool w-100 h-100 position-relative">
+<span class="orc-card-tool-badge recommended">OSC Tutorial (tba) </span>
+<div class="orc-card-tool-icons mb-2">
+<div class="orc-card-tool-icon icon-1">
+<img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+</div>
+</div>
+<h4 class="card-title">Data Anonymization</h4>
+<p class="card-text">Implement data anonymization techniques in R. (X h)</p>
+<!-- Add link when available -->
+<a href="#" class="stretched-link" rel="noopener"></a>
+
+</div>
+
+:::
+
+::: {.col}
+<div class="card orc-card-tool w-100 h-100 position-relative">
+<span class="orc-card-tool-badge recommended">OSC Tutorial</span>
+<div class="orc-card-tool-icons mb-2">
+<div class="orc-card-tool-icon icon-1">
+<img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+</div>
+</div>
+<h4 class="card-title">Power Analysis</h4>
+<p class="card-text">Data simulations for GLMs, LMEs, and SEMs in R. (6h)</p>
+<a href="https://lmu-osc.github.io/introduction-to-zotero/" class="stretched-link" target="_blank" rel="noopener">
+</a>
+</div>
+
+:::
+
+:::
+
+:::
+
 
 :::
 
@@ -413,52 +552,64 @@ A Data Management Plan (DMP) documents how you will handle research data through
 
 The specific questions vary by discipline, data type, and funder requirements. DMP tools like [RDMO](https://rdmo.ub.lmu.de/) guide you through the relevant questions with funder-specific templates. Your DMP is a living document: start with what you know, and refine the details as your project develops (see [2.2. Data Management](/02_collect_and_manage.qmd#2-2-data-management){.mark}).
 
-```{=html}
-<div class="container my-4"> <!-- put on one line given just 3 cards? -->
 
-  <!-- Row 1: LEARN MORE -->
+::: {.container .my-4}
 <h4 class="fs-5"><i class="bi bi-mortarboard"></i> LEARN MORE</h4>
-  <div class="row row-cols-1 row-cols-lg-3 g-4 mb-4">
-    <div class="col">
-      <a href="https://lmu-osc.github.io/FAIR-Data-Management/dmp.html" class="card orc-card-tool h-100 text-decoration-none">
-        <span class="orc-card-tool-badge recommended">OSC Tutorial</span>
-        <div class="orc-card-tool-icons mb-2">
-          <div class="orc-card-tool-icon icon-1">
-            <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
-          </div>
-        </div>
-        <h4 class="card-title">Data Management Plans</h4>
-        <p class="card-text">Overview of components, tips, and tools. (30 min)</p>
-      </a>
-    </div>
-  </div>
 
-  <!-- Row 2: TOOLS & RESOURCES -->
-  <h4 class="fs-5"><i class="bi bi-tools"></i> TOOLS & RESOURCES</h4>
-  <div class="row row-cols-1 row-cols-lg-3 g-4">
-    <div class="col">
-      <a href="https://rdmo.ub.lmu.de/" class="card orc-card-tool h-100 text-decoration-none">
-        <div class="orc-card-tool-icon mb-2">
-          <img src="https://rdmorganiser.github.io/img/logos/RDMO-logo.png" class="img-fluid" alt="RDMO logo">
-        </div>
-        <h4 class="card-title">RDMO</h4>
-        <p class="card-text">Funder-compliant DMP templates (e.g. DFG, ERC).</p>
-      </a>
-    </div>
-     <div class="col">
-      <a href="https://riojournal.com/browse_journal_articles.php?form_name=filter_articles&selfurl=&backurl=&sortby=0&journal_id=17&search_hidden=&search_in_=0&search_in_hidden=&alerts_subject_cats=&alerts_sd498444d0a_publishing_status=&section_type%5B%5D=231" class="card orc-card-tool h-100 text-decoration-none">
-        <div class="orc-card-tool-icon mb-2">
-          <img src="https://riojournal.com/i/journal_logos/RIO-logo-black.svg" class="img-fluid" alt="RIOjournal icon">
-        </div>
-        <h4 class="card-title">RIOjournal</h4>
-        <p class="card-text">Examples of DMPs by discipline.</p> 
-      </a>
-    </div>
-  </div>
+::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4 .mb-4}
 
+::: {.col}
+
+<div class="card orc-card-tool w-100 h-100 position-relative">
+<span class="orc-card-tool-badge recommended">OSC Tutorial</span>
+<div class="orc-card-tool-icons mb-2">
+<div class="orc-card-tool-icon icon-1">
+<img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+</div>
+</div>
+<h4 class="card-title">Data Management Plans</h4>
+<p class="card-text">Overview of components, tips, and tools. (30 min)</p>
+<a href="https://lmu-osc.github.io/FAIR-Data-Management/dmp.html" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
 
-```
+:::
+
+:::
+
+<h4 class="fs-5"><i class="bi bi-tools"></i> TOOLS & RESOURCES</h4>
+
+::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
+
+::: {.col}
+
+<div class="card orc-card-tool w-100 h-100 position-relative">
+<div class="orc-card-tool-icon mb-2">
+<img src="https://rdmorganiser.github.io/img/logos/RDMO-logo.png" class="img-fluid" alt="RDMO logo">
+</div>
+<h4 class="card-title">RDMO</h4>
+<p class="card-text">Funder-compliant DMP templates (e.g. DFG, ERC).</p>
+<a href="https://rdmo.ub.lmu.de/" class="stretched-link" target="_blank" rel="noopener">
+</a>
+</div>
+
+:::
+
+::: {.col}
+
+<div class="card orc-card-tool w-100 h-100 position-relative">
+<div class="orc-card-tool-icon mb-2">
+<img src="https://riojournal.com/i/journal_logos/RIO-logo-black.svg" class="img-fluid" alt="RIOjournal icon">
+</div>
+<h4 class="card-title">RIOjournal</h4>
+<p class="card-text"> Examples of DMPs by discipline. </p>
+<a href="https://riojournal.com/browse_journal_articles.php?form_name=filter_articles&selfurl=&backurl=&sortby=0&journal_id=17" class="stretched-link" target="_blank" rel="noopener"></a>
+</div>
+
+:::
+
+:::
+
+:::
 
 </details>
 
@@ -537,54 +688,63 @@ Registered Reports are a publication format, now adopted by over 300 journals (s
 After completing the study, authors add results and discussion sections, clearly separating preregistered confirmatory analyses from exploratory ones. Final review focuses on adherence to the approved plan and the validity of conclusions, not on whether results are significant. This model shifts **incentives toward asking important questions and using rigorous methods rather than chasing striking outcomes**.
 
 
+::: {.container .my-4}
 
-```{=html}
-<div class="container my-4">
+<h4 class="fs-5"><i class="bi bi-mortarboard"></i> LEARN MORE</h4>
 
-  <!-- Row 1: LEARN MORE -->
-<h4 class="fs-5"><i class="bi bi-mortarboard"></i> LEARN MORE</h4> <!-- on one line given 3 cards? -->
-  <div class="row row-cols-1 row-cols-lg-3 g-4 mb-4">
-    <div class="col">
-      <a href="#" class="card orc-card-tool h-100 text-decoration-none"><!--FIXME-->
-        <span class="orc-card-tool-badge recommended">OSC Tutorial(tba<!--FIXME-->)</span>
-        <div class="orc-card-tool-icons mb-2">
-          <div class="orc-card-tool-icon icon-1">
-            <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
-          </div>
-        </div>
-        <h4 class="card-title">Preregistration tutorial</h4>
-        <p class="card-text">Step-by-step guide to creating preregistration. (TBA<!--FIXME--> h)</p>
-      </a>
-    </div>
-  </div>
+::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4 .mb-4}
 
-  <!-- Row 2: TOOLS & RESOURCES -->
-  <h4 class="fs-5"><i class="bi bi-tools"></i> TOOLS & RESOURCES</h4>
-  <div class="row row-cols-1 row-cols-lg-3 g-4">
-    <div class="col">
-      <a href="https://www.cos.io/initiatives/registered-reports" class="card orc-card-tool h-100 text-decoration-none">
-        <div class="orc-card-tool-icon mb-2">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Open_Science_Framework_log_%28and_Center_for_Open_Science_logo%29.svg/3840px-Open_Science_Framework_log_%28and_Center_for_Open_Science_logo%29.svg.png" alt="COS icon" class="img-fluid" >
-        </div>
-        <h4 class="card-title">Center for Open Science</h4>
-        <p class="card-text">Preregistration templates, list of journals offering Registered Reports</p>
-      </a>
-    </div>
-    <div class="col">
-      <a href="https://help.osf.io/article/330-welcome-to-registrations" class="card orc-card-tool h-100 text-decoration-none">
-        <div class="orc-card-tool-icon mb-2">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Open_Science_Framework_log_%28and_Center_for_Open_Science_logo%29.svg/3840px-Open_Science_Framework_log_%28and_Center_for_Open_Science_logo%29.svg.png" alt="OSF icon" class="img-fluid" >
-        </div>
-        <h4 class="card-title">Open Science Framework</h4>
-        <p class="card-text">Preregistration templates, embargoes, file storage.</p>
-      </a>
-    </div>
-  </div>
-
+::: {.col}
+<div class="card orc-card-tool w-100 h-100 position-relative">
+<span class="orc-card-tool-badge recommended">OSC Tutorial (tba)</span>
+<div class="orc-card-tool-icons mb-2">
+<div class="orc-card-tool-icon icon-1">
+<img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+</div>
+</div>
+<h4 class="card-title">Preregistration tutorial</h4>
+<p class="card-text">Step-by-step guide to creating preregistration. (TBA h)</p>
+<a href="#" class="stretched-link"></a>
 </div>
 
-```
+:::
 
+:::
+
+<h4 class="fs-5"><i class="bi bi-tools"></i> TOOLS & RESOURCES</h4>
+
+::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
+
+::: {.col}
+<div class="card orc-card-tool w-100 h-100 position-relative">
+<div class="orc-card-tool-icon mb-2">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Open_Science_Framework_log_%28and_Center_for_Open_Science_logo%29.svg/3840px-Open_Science_Framework_log_%28and_Center_for_Open_Science_logo%29.svg.png" alt="COS icon" class="img-fluid">
+</div>
+<h4 class="card-title">Center for Open Science</h4>
+<p class="card-text">Preregistration templates, list of journals offering Registered Reports.</p>
+<a href="https://www.cos.io/initiatives/registered-reports" class="stretched-link" target="_blank" rel="noopener">
+</a>
+</div>
+
+:::
+
+::: {.col}
+<div class="card orc-card-tool w-100 h-100 position-relative">
+<div class="orc-card-tool-icon mb-2">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Open_Science_Framework_log_%28and_Center_for_Open_Science_logo%29.svg/3840px-Open_Science_Framework_log_%28and_Center_for_Open_Science_logo%29.svg.png" alt="OSF icon" class="img-fluid">
+</div>
+<h4 class="card-title">Open Science Framework</h4>
+<p class="card-text">
+Preregistration templates, embargoes, file storage.
+</p>
+<a href="https://help.osf.io/article/330-welcome-to-registrations" class="stretched-link" target="_blank" rel="noopener"></a>
+</div>
+
+:::
+
+:::
+
+:::
 
 ### 1.4.2. Simulation of Data
 
@@ -609,28 +769,32 @@ _Example: To strengthen your planned confirmatory analyses before collecting dat
 Generating an artificial dataset in R (see our [simulation tutorial](https://lmu-osc.github.io/Introduction-Simulations-in-R/)) is much easier than researchers often believe it to be and is generally helpful, even when you need to make assumptions about variable distribution or when the parameter space is not well known.
 
 
-```{=html}
-<div class="container my-4">
 
-  <!-- Row 1: LEARN MORE -->
+::: {.container .my-4}
+
 <h4 class="fs-5"><i class="bi bi-mortarboard"></i> LEARN MORE</h4>
-  <div class="row row-cols-1 row-cols-lg-3 g-4 mb-4">
-    <div class="col">
-      <a href="https://lmu-osc.github.io/Introduction-Simulations-in-R/" class="card orc-card-tool h-100 text-decoration-none">
-        <span class="orc-card-tool-badge recommended">OSC Tutorial</span>
-        <div class="orc-card-tool-icons mb-2">
-          <div class="orc-card-tool-icon icon-1">
-            <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
-          </div>
-        </div>
-        <h4 class="card-title">Data Simulation in R</h4>
-        <p class="card-text">Easy data simulations in R. (2h)</p>
-      </a>
-    </div>
-  </div>
+
+::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4 .mb-4}
+
+::: {.col}
+<div class="card orc-card-tool w-100 h-100 position-relative">
+<span class="orc-card-tool-badge recommended">OSC Tutorial</span>
+<div class="orc-card-tool-icons mb-2">
+<div class="orc-card-tool-icon icon-1">
+<img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+</div>
+</div>
+<h4 class="card-title">Data simulation in R</h4>
+<p class="card-text">Easy data simulations in R. (2h)</p>
+<a href="https://lmu-osc.github.io/Introduction-Simulations-in-R/" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
 
-```
+:::
+
+:::
+
+:::
+
 
 
 ### 1.4.3. Power analyses 
@@ -669,28 +833,32 @@ The **legitimate post-hoc power** is computed with your actual n, and the same e
 The **flawed version of post-hoc power** is called **“observed power”**: If an analysis yields a non-significant result, some researchers calculate the post-hoc power, but plug in the observed effect size. “Observed power”, however, is just a one‑to‑one function of the p‑value (a non-significant p-value returns a low power < 50 %, a just significant p-value of .05 always yields a power of exactly 50%). Observed power adds no new information to the p-value and is essentially meaningless. Do not compute this type of post-hoc power!
 
 
-```{=html}
-<div class="container my-4">
+::: {.container .my-4}
 
-  <!-- Row 1: LEARN MORE -->
 <h4 class="fs-5"><i class="bi bi-mortarboard"></i> LEARN MORE</h4>
-  <div class="row row-cols-1 row-cols-lg-3 g-4 mb-4">
-    <div class="col">
-      <a href="https://lmu-osc.github.io/Simulations-for-Advanced-Power-Analyses/" class="card orc-card-tool h-100 text-decoration-none">
-        <span class="orc-card-tool-badge recommended">OSC Tutorial</span>
-        <div class="orc-card-tool-icons mb-2">
-          <div class="orc-card-tool-icon icon-1">
-            <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
-          </div>
-        </div>
-        <h4 class="card-title">Power Analyses</h4>
-        <p class="card-text">Data simulations for GLMs, LMEs, and SEMs in R. (6h)</p>
-      </a>
-    </div>
-  </div>
+
+::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4 .mb-4}
+
+::: {.col}
+<div class="card orc-card-tool w-100 h-100 position-relative">
+<span class="orc-card-tool-badge recommended">OSC Tutorial</span>
+<div class="orc-card-tool-icons mb-2">
+<div class="orc-card-tool-icon icon-1">
+<img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+</div>
+</div>
+<h4 class="card-title">Power Analyses</h4>
+<p class="card-text">Data simulations for GLMs, LMEs, and SEMs in R. (6h)</p>
+<a href="https://lmu-osc.github.io/Simulations-for-Advanced-Power-Analyses/" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
 
-```
+:::
+
+:::
+
+:::
+
+
 :::
 
 
@@ -704,8 +872,10 @@ To complete before presenting your final study plan to your research group and, 
 
 <!-- prepare  downloadable file with checklist in word doc + citation Ihle, Gupta, Schoenbrodt 2026 + licence CC BY SA in footnote + link to this webpage -->
 
-<div class="row row-cols-1 row-cols-lg-2 g-4">
-<div class="col-md-6">
+::: {.row .row-cols-1 .row-cols-lg-2 .g-4}
+
+::: {.col-md-6}
+
 
 **Background Information**
 
@@ -725,9 +895,9 @@ To complete before presenting your final study plan to your research group and, 
 - [ ] Inclusion/exclusion criteria defined
 - [ ] Handling of missing data defined
 
-</div>
+:::
 
-<div class="col-md-6">
+::: {.col-md-6}
 
 **Data Management Planning**
 
@@ -749,13 +919,15 @@ To complete before presenting your final study plan to your research group and, 
 - [ ] Preregistration submitted 
 - [ ] Ethical approval obtained 
 
-</div>
-</div>
-<div class="d-flex justify-content-center orc-checklist-download mt-4">
-  <a href="#" class="btn btn-outline-secondary btn-sm">
-    Download checklist <i class="bi bi-download"></i>
-  </a>
-</div>
+:::
+
+:::
+
+::: {.d-flex .justify-content-center .orc-checklist-download .mt-4}
+
+<a href="#" class="btn btn-outline-secondary btn-sm">Download checklist <i class="bi bi-download"></i></a>
+
+:::
 
 
 :::

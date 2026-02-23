@@ -36,7 +36,7 @@ h2 i, h3 i{ color: var(--orc-green); margin-right: .5rem; }
 
 * a { color: var(--orc-green); }
 
-.mark { background: var(--orc-gray-100); color:var(--orc-text);}
+.mark { background: var(--orc-gray-100); color:var(--orc-gray-600); font-weight:600; font-style: italic; text-decoration: none;}
 
 .orc-grid-tools {
   display: grid;
@@ -129,7 +129,7 @@ h2 i, h3 i{ color: var(--orc-green); margin-right: .5rem; }
   display: flex;
   width:fit-content;
   margin-left: auto;
-  margin-bottom:-20px;
+  margin-bottom:-30px;
   z-index:2;
   background: var(--orc-gray-100);
   color: var(--orc-gray-600);
