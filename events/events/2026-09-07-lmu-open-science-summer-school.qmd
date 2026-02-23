@@ -1,0 +1,66 @@
+---
+title: LMU Open Science Summer School 2026
+date: 2026-02-23
+categories:
+  - Summer School
+event:
+  start_date: '2026-09-07'
+  end_date: '2026-09-11'
+  description: |
+    Save the date! Our annual Summer School will take place from September 7-11, 2026--more details to come!
+  time: '9:00-17:00'
+  location:
+    name: 
+    address: 
+    map_url: 
+  format:
+    type: In-person
+    detail: ''
+  language:
+    primary: English
+    primary-code: en
+    detail: en
+links:
+  registration: 
+  materials: 
+  workshop_website:
+event_description: |
+  Save the date! Our annual Summer School will take place from September 7-11, 2026--more details to come!
+instructors:
+  - name: 
+    url: ''
+
+helpers:
+  - name: 
+contact:
+  name: ''
+  email: 
+organizers:
+  - name: ''
+presenters:
+  - name: ''
+    url: ''
+host:
+  - name: ''
+    url: ''
+
+---
+
+<!-- MANDAORY SECTION START  -->
+
+
+{{< include templates/_setup.qmd >}}
+{{< include templates/_info_boxes.qmd >}}
+{{< include templates/_register_button.qmd >}}
+<!-- MANDAORY SECTION END  -->
+
+
+
+<!-- DETAILED EVENT DESCRIPTION HERE OR USE THE TEMPLATE BELOW TO INCLUDE THE STANDARD DESCRIPTION SECTION -->
+{{< include templates/_event_description.qmd >}}
+
+
+<!-- MANDAORY SECTION START  -->
+<!-- _event_description.qmd template should always be at bottom -->
+{{< include templates/_instructors_helpers_contact.qmd >}}
+<!-- MANDAORY SECTION END  -->
