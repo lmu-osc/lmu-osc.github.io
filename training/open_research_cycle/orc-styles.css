@@ -36,7 +36,61 @@ h2 i, h3 i{ color: var(--orc-green); margin-right: .5rem; }
 
 * a { color: var(--orc-green); }
 
-.mark { background: var(--orc-gray-100); color:var(--orc-gray-600); font-weight:600; font-style: italic; text-decoration: none;}
+.mark { background: white; color:var(--orc-gray-400); font-weight:600; font-style: italic; text-decoration: none;}
+
+#about-orc-project {
+  padding: 1.25rem 1.75rem;
+  border-radius: var(--orc-radius-lg);
+  border: 1px solid #00883a82;
+  box-shadow: var(--orc-shadow-sm);
+}
+
+#about-orc-project summary {
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 1.4;
+  transition: all .2s;
+  user-select: none;
+}
+
+#about-orc-project[open] summary{
+  border-bottom: 1px solid var(--orc-gray-300);
+  margin-bottom: 0.8rem;
+  padding-bottom: 0.5rem;
+}
+
+#about-orc-project summary::-webkit-details-marker {
+   display: none; 
+}
+#about-orc-project summary::after {
+  content: '+ '; 
+  color:var(--orc-green);
+  font-weight: 600;
+  font-size: 1.25rem;
+  transition: transform .2s ease;
+}
+#about-orc-project[open] summary::after{
+   content: '- '; 
+
+}
+
+#about-orc-project .btn.btn-primary {
+  color: white;
+  background: var(--orc-green);
+  border-color: var(--orc-green);
+  transition: all .2s ease;
+}
+
+#about-orc-project .btn.btn-primary:hover,
+#about-orc-project .btn.btn-primary:focus,
+#about-orc-project .btn.btn-primary:active {    
+  color: white !important;
+  background: var(--orc-green-dark) !important;
+  border-color: var(--orc-green-dark) !important;
+}
 
 .orc-grid-tools {
   display: grid;
@@ -175,7 +229,7 @@ h2 i, h3 i{ color: var(--orc-green); margin-right: .5rem; }
 
 .orc-details-panel[open] { box-shadow: var(--orc-shadow-md); }
 
-.orc-details-panel summary {
+.orc-details-panel summary{
   cursor: pointer;
   list-style: none;
   display: flex;
@@ -257,17 +311,7 @@ h2 i, h3 i{ color: var(--orc-green); margin-right: .5rem; }
   border-left: 5px solid #aed0bbad;
   margin: 2rem 0;
 }
-.orc-checklist-download .btn-outline-secondary{
-  border-color: var(--orc-green);
-  color: var(--orc-green);
-}
-.orc-checklist-download .btn-outline-secondary:hover,
-.orc-checklist-download .btn-outline-secondary:focus,
-.orc-checklist-download .btn-outline-secondary:active{
-  border-color: var(--orc-green)!important;
-  color: white!important;
-  background: var(--orc-green)!important;
-}
+
 /* ========================================
    5. CALLOUTS (Quarto)
    ======================================== */
@@ -457,6 +501,33 @@ svg :is(text, tspan) { font-family: inherit !important; font-weight: bold; point
 }
 .orc-phase-hero-compact .orc-hero-checkpoint i { font-size: .90em; }
 
+/* Phase-specific color styles */
+.orc-phase-hero-compact.phase-1 { background: #619ef916;}
+.orc-gradient-box.plan-design-checklist { background: #619ef916; border-left-color:#0166ffa1;}
+.orc-gradient-box.plan-design-checklist h2, .orc-gradient-box.plan-design-checklist .checklist-icon{color:#0166ffa1;}
+.orc-phase-hero-compact .orc-hero-pills.phase-1 span,
+.orc-phase-hero-compact .orc-hero-checkpoint.phase-1 { background:#0166ffa1;}
+.orc-checklist-download.phase-1 .btn-outline-secondary{border-color: #0166ffa1;color: #0166ffa1;}
+.orc-checklist-download.phase-1 .btn-outline-secondary:hover,
+.orc-checklist-download.phase-1 .btn-outline-secondary:focus,
+.orc-checklist-download.phase-1 .btn-outline-secondary:active{
+  border-color: #0166ffa1 !important;
+  color: white!important;
+  background: #0166ffa1 !important;
+}
+
+.orc-phase-hero-compact.phase-2 { background: rgb(243 120 181 / 4%)}
+.orc-gradient-box.data-management-checklist { background: rgb(243 120 181 / 4%); border-left-color: #f991c6ad;}
+.orc-phase-hero-compact .orc-hero-pills.phase-2 span,
+.orc-phase-hero-compact .orc-hero-checkpoint.phase-2 { background: #f991c6ad;}
+
+.orc-phase-hero-compact.phase-3 { background: #fefdf8}
+.orc-gradient-box.analysis-collaboration-checklist { background: #fefdf8; border-left-color: #d5a0037d;}
+.orc-phase-hero-compact .orc-hero-pills.phase-3 span,
+.orc-phase-hero-compact .orc-hero-checkpoint.phase-3 { background: #d5a0037d;}
+
+
+
 /* ========================================
    11. RESPONSIVE
    ======================================== */
@@ -478,115 +549,3 @@ svg :is(text, tspan) { font-family: inherit !important; font-weight: bold; point
   .phase-btn-h i { margin-bottom: 0; margin-right: 1rem; font-size: 1.5rem; }
 }
 
-/* ========================================
-   PHASE HERO — CONTAINER VARIANT
-   (Same styles as .orc-phase-hero-compact)
-   ======================================== */
-
-.orc-phase-hero-compact-container {
-  display: flex;
-  align-items: center;
-  gap: 2.5rem;
-  padding: 2rem 2.5rem;
-  margin-bottom: 3rem;
-  background: var(--orc-green-light);
-  border-radius: 16px;
-  color: white;
-  box-shadow: var(--orc-shadow-md);
-}
-.orc-phase-hero-compact.phase-2 { background: rgb(243 120 181 / 4%)}
-.orc-gradient-box.data-management-checklist { background: rgb(243 120 181 / 4%); border-left-color: #f991c6ad;}
-.orc-phase-hero-compact.phase-3 { background: #fefdf8}
-.orc-gradient-box.analysis-collaboration-checklist { background: #fefdf8; border-left-color: #d5a0037d;}
-/* Children */
-
-.orc-phase-hero-compact-container .orc-hero-cycle {
-  width: 210px;
-  height: 210px;
-  flex-shrink: 0;
-}
-
-.orc-phase-hero-compact-container .orc-hero-cycle svg {
-  width: 100%;
-  height: 100%;
-}
-
-.orc-phase-hero-compact-container .orc-hero-body {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: .75rem;
-}
-
-.orc-phase-hero-compact-container h2 {
-  margin: 0;
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: white !important;
-  border-bottom: none;
-  line-height: 1.2;
-}
-
-.orc-phase-hero-compact-container .orc-hero-tagline {
-  margin: 0;
-  font-size: 1.5rem;
-  font-weight: 500;
-  color: var(--orc-gray-600);
-}
-
-.orc-phase-hero-compact-container .orc-hero-pills {
-  display: flex;
-  flex-wrap: wrap;
-  gap: .75rem 2rem;
-}
-
-.orc-phase-hero-compact-container .orc-hero-pills span {
-  display: inline-flex;
-  align-items: center;
-  gap: .75rem;
-  padding: .6rem 1.25rem;
-  background: #1f7a4cfc;
-  border-radius: var(--orc-radius-full);
-  font-size: 1.05rem;
-  font-weight: 500;
-}
-
-.orc-phase-hero-compact-container .orc-hero-pills span i {
-  color: white;
-  font-size: 1.25rem;
-}
-
-.orc-phase-hero-compact-container .orc-hero-checkpoint {
-  display: inline-flex;
-  align-items: center;
-  gap: .5rem;
-  padding: .4rem 1rem;
-  background: #1f7a4ccd;
-  border-radius: var(--orc-radius-full);
-  font-size: .90rem;
-  font-weight: 700;
-  margin-top: .25rem;
-  width: fit-content;
-}
-
-.orc-phase-hero-compact-container .orc-hero-checkpoint i {
-  font-size: .90rem;
-}
-
-/* Responsive */
-
-@media (max-width: 768px) {
-  .orc-phase-hero-compact-container {
-    flex-direction: column;
-    text-align: center;
-    padding: 1.5rem;
-  }
-
-  .orc-phase-hero-compact-container .orc-hero-pills {
-    justify-content: center;
-  }
-
-  .orc-phase-hero-compact-container .orc-hero-checkpoint {
-    margin: .5rem auto 0;
-  }
-}
