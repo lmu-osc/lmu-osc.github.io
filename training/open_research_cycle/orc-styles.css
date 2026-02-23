@@ -295,8 +295,10 @@ h2 i, h3 i{ color: var(--orc-green); margin-right: .5rem; }
   border-radius: var(--orc-radius-md);
   border-left: 5px solid var(--orc-green);
   margin: 3.5rem 0;
-  line-height: 1.6rem;
+  line-height: 1.7rem;
+  color: var(--orc-gray-600);
 }
+
 
 .orc-gradient-box h2 {
   font-weight: 700;
@@ -517,9 +519,18 @@ svg :is(text, tspan) { font-family: inherit !important; font-weight: bold; point
 }
 
 .orc-phase-hero-compact.phase-2 { background: rgb(243 120 181 / 4%)}
-.orc-gradient-box.data-management-checklist { background: rgb(243 120 181 / 4%); border-left-color: #f991c6ad;}
+.orc-gradient-box.data-management-checklist { background: rgb(243 120 181 / 4%); border-left-color: #cc01667a;}
+.orc-gradient-box.data-management-checklist h2, .orc-gradient-box.data-management-checklist .checklist-icon{color: #cc01667a;}
 .orc-phase-hero-compact .orc-hero-pills.phase-2 span,
-.orc-phase-hero-compact .orc-hero-checkpoint.phase-2 { background: #f991c6ad;}
+.orc-phase-hero-compact .orc-hero-checkpoint.phase-2 { background: #cc01667a;}
+.orc-checklist-download.phase-2 .btn-outline-secondary{border-color: #cc01667a; color:#cc01667a;}
+.orc-checklist-download.phase-2 .btn-outline-secondary:hover,
+.orc-checklist-download.phase-2 .btn-outline-secondary:focus,
+.orc-checklist-download.phase-2 .btn-outline-secondary:active{
+  border-color: #cc01667a !important;
+  color: white!important;
+  background: #cc01667a !important;
+}
 
 .orc-phase-hero-compact.phase-3 { background: #fefdf8}
 .orc-gradient-box.analysis-collaboration-checklist { background: #fefdf8; border-left-color: #d5a0037d;}
