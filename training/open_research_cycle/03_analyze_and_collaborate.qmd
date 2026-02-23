@@ -58,7 +58,7 @@ In a version controlled workflow, you back up your local git repositories on eit
 
 **Maintain efficient communication to coordinate collaborative work.** GitHub or GitLab facilitate collaboration through "issues" (a precise description of something to fix), "discussions" (asynchronous thinking through figuring out how to resolve a problem), and can still very well resolve "conflicts" (i.e. collaborators wanting to merge changes on the exact same line of script). To complement this, LMU Munich offers [LMU chat (Matrix)](https://www.lmu.de/de/die-lmu/struktur/zentrale-universitaetsverwaltung/informations-und-kommunikationstechnik-dezernat-vi/it-servicedesk/zentrale-it-angebote/lmu-chat-matrix/), a secured open source chat service with all LMU members on which you can also invite external collaborators. 
 
-:::{.callout-important} 
+:::{.callout-note} 
 <!-- copied from version control in data management - transfer edits manually between these 2 copies -->
 **Difference between Git, GitHub and GitLab**  
 

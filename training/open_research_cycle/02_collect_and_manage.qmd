@@ -50,28 +50,28 @@ Your protocol should specify materials with identifying details (lot numbers, ve
 
 <br>
 
-- **Track deviations in real time.** Write your protocol before you start, follow it precisely, and record any deviations as they happen. When you need to adapt, note it immediately. These deviations often explain unexpected results and guide protocol improvements. Electronic lab notebooks (ELNs) make this easier by creating version-controlled, timestamped records automatically, providing an audit trail that paper cannot match.
+- **Track deviations in real time.** Write your protocol before you start, follow it precisely, and record any deviations as they happen. When you need to adapt, note it immediately. These deviations often explain unexpected results and guide protocol improvements. **Electronic lab notebooks (ELNs)** make this easier by creating version-controlled, timestamped records automatically, providing an audit trail that paper cannot match.
 
-- **Publish your protocols.** A detailed, tested protocol is a contribution to your field. Publishing establishes priority, enables citation, and makes your methods reusable. Platforms like protocols.io provide version control and DOI assignment.
+- **Publish your protocols.** A detailed, tested protocol is a contribution to your field. Publishing establishes priority, enables citation, and makes your methods reusable. Platforms like [protocols.io](https://www.protocols.io/) provide version control and DOI assignment.
 
 
-<!-- add a card to LMU supported ENL:
+<!-- add 3 tool cards in one row:
 eLabFTW https://elab.ub.lmu.de/login.php with logo: https://www.elabftw.net/img/elabftw-logo-only.svg 
-Electronic Lab Notebook hosted by LMU Munich
-Chemotion https://chemlab.cup.uni-muenchen.de/home logo: https://avatars.githubusercontent.com/u/83013380?v=4
-Electronic Lab Notebook hosted by the LMU Faculty for Chemistry and Pharmacy
- -->
+Electronic Lab Notebook hosted by LMU Munich. Tagged: LMU supported.
 
-<!-- Protocols.io [protocols.io](https://www.protocols.io/) icon: https://www.protocols.io/favicon.ico 
+Chemotion https://chemlab.cup.uni-muenchen.de/home logo: https://avatars.githubusercontent.com/u/83013380?v=4
+Electronic Lab Notebook hosted by the LMU Faculty for Chemistry and Pharmacy. Tagged: LMU supported.
+
+Protocols.io [protocols.io](https://www.protocols.io/) icon: https://www.protocols.io/favicon.ico 
 Share, discover, cite, and improve research protocols.
 -->
 
 
 ### 2.1.2. Questionnaires
 
-Document both the instrument and the administration procedure completely. Use validated instruments <!-- what does a validate survey mean? -->when possible, pilot test before deployment, and archive the exact version participants see in an open source format. 
+**Document both the instrument and the administration procedure completely.** Use validated instruments <!-- what does a validate survey mean? -->when possible, pilot test before deployment, and archive the exact version participants see in an open source format. 
 
-<!-- [Content to be expanded] ??  @Felix: do we want anything else here?-->
+<!-- @Felix: do we want anything else here? minimally the definition of validated survey is really unclear to me given how people use it...-->
 
 ### 2.1.3. Software-based data acquisition
 
@@ -85,7 +85,7 @@ When data comes from instruments, sensors, or APIs, scripting the acquisition cr
 
 - **Version control your code and data.** This makes your methods reproducible and shareable. See [2.2.6. Version Control](<!--internal link-->) for details.
 
-<!-- 2 cards in learn more: OSC R and Git tutorials add git icon -->
+<!-- 2 cards in learn more in one row -->
 ::: {.orc-grid-tools}
 ::: {.orc-card-tool}
 <div class="orc-card-tool-icon"><img src="../../assets/img/lmu_osc_logo.jpg" alt="LMU OSC"></div>
@@ -93,6 +93,13 @@ When data comes from instruments, sensors, or APIs, scripting the acquisition cr
 #### [Introduction to R](https://lmu-osc.github.io/introduction-to-R/) <!-- add R icon -->
 
 Programming fundamentals for research data processing
+
+
+<div class="orc-card-tool-icon"><img src="../../assets/img/lmu_osc_logo.jpg" alt="LMU OSC"></div>
+
+#### [Introduction to Git](https://lmu-osc.github.io/Introduction-RStudio-Git-GitHub/) <!-- add OSC tutorial tag and git logo-->
+
+Learn Git basics integrated with RStudio (2h)
 
 
 :::
@@ -119,7 +126,7 @@ What follows are general practices. Your domain has specific conventions for fil
 
 ### 2.2.1. Storage
 
-This section covers storage for data you are actively collecting. Long-term archiving for sharing is covered in [4. Preserve & Share](<!-- internal link-->)].
+This section covers storage for data you are actively collecting. Long-term archiving for sharing is covered in [4. Preserve & Share](<!-- internal link-->).
 
 <br>
 
@@ -156,7 +163,7 @@ A pattern like `YYYYMMDD_project_condition_type_v01.ext` places files in chronol
 
 <br>
 
-**Follow domain standards where they exist.** Many fields have established organizational conventions that tools and collaborators expect. Using these means your data works immediately with existing analysis pipelines and reviewers recognize the structure. Search [RDMkit](https://rdmkit.elixir-europe.org/your_domain) for standards in your domain.
+- **Follow domain standards where they exist.** Many fields have established organizational conventions that tools and collaborators expect. Using these means your data can immediately be integrated in existing analysis pipelines and reviewers recognize the structure. Search [RDMkit](https://rdmkit.elixir-europe.org/your_domain) for standards in your domain.
 
 ::: {.orc-grid-tools}
 ::: {.orc-card-tool}
@@ -293,7 +300,7 @@ Find metadata standards and requirements specific to your research field.
 
 ### 2.2.6. Version Control
 
-Version control tracks changes to files over time. You can see what changed, when, and why. You can revert to previous versions. Collaborators can work without overwriting each other.
+Version control system like Git tracks changes to files over time. You can see what changed, when, and why. You can revert to previous versions. Collaborators can work without overwriting each other.
 
 <br>
 
@@ -301,30 +308,33 @@ Version control tracks changes to files over time. You can see what changed, whe
 
 - **Use specialized tools for large or frequently changing binary files.** Standard Git stores each version in full, so repositories become unwieldy with large datasets. Git LFS (Large File Storage) stores large files separately while keeping them tracked. Git-annex manages files across multiple storage locations. [DataLad](https://www.datalad.org/) builds on git-annex and works with standard Git workflows.
 
-:::{.callout-important}
+:::{.callout-note}
 **Difference between Git, GitHub and GitLab**  
 
-- **Git** is a version control system that tracks changes in text files (e.g. CSV, plain text, R, Python). The Git software and your git repositories should be, respectively, installed and located in your local environment (i.e. on your computer, not on a drive, see [Git tutorial](https://lmu-osc.github.io/Introduction-RStudio-Git-GitHub/)).   
-- **GitHub** is the most popular, but proprietary and US-based cloud-based platform for software development with Git, providing collaboration features like pull requests and issues. **You should not have any sensitive data on GitHub even in a private repository.**
-- **LRZ GitLab** is a cloud-based hosting platform that works exactly the same as GitHub but is free and open source and is installed on the LRZ servers for LMU Munich and can therefore be considered secure when the repository is private. 
+- **Git** is a version control system that tracks changes in text files (e.g. CSV, plain text, R, Python). The Git software and your Git repositories should be, respectively, installed and located in your local environment (i.e. on your computer, not on a drive, see [Git tutorial](https://lmu-osc.github.io/Introduction-RStudio-Git-GitHub/)).   
+- **GitHub** is the most popular, free but proprietary and US-based cloud-based platform for software development with Git, providing collaboration features like pull requests and issues. **You should not have any sensitive data on GitHub even in a private repository.**
+- **LRZ GitLab** is a cloud-based hosting platform that works exactly the same as GitHub but is open source and is installed on the LRZ servers for LMU Munich and can therefore be considered secure when the repository is private. 
 
 While your LRZ GitLab account is associated with your LMU Munich affiliation, your GitHub account can be associated with your private email, be included in your CV, and be used for public sharing of your data and code (see [3. Analyze & Collaborate](<!-- internal link -->) and [4. Preserve & Share](<!-- internal link -->)).  
 <br>
-In a version controlled workflow, you back up your local git repositories on either GitHub or LRZ GitLab through a secure SSH connection (see [GitHub tutorial](https://lmu-osc.github.io/Collaborative-RStudio-GitHub/)) and share access to your repositories with your collaborators through the cloud-based platform GitHub or LRZ GitLab.
+In a version controlled workflow, you back up your local Git repositories on either GitHub or LRZ GitLab through a secure SSH connection (see [GitHub tutorial](https://lmu-osc.github.io/Collaborative-RStudio-GitHub/)) and share access to your repositories with your collaborators through the cloud-based platform GitHub or LRZ GitLab.
 :::
 
 ::: {.orc-grid-tools}
 ::: {.orc-card-tool}
 <div class="orc-card-tool-icon"><img src="../../assets/img/lmu_osc_logo.jpg" alt="LMU OSC"></div>
 
-#### [Introduction to Git](https://lmu-osc.github.io/Introduction-RStudio-Git-GitHub/) <!-- add OSC tutorial tag and git logo-->
+#### [Introduction to Git](https://lmu-osc.github.io/Introduction-RStudio-Git-GitHub/) <!-- add OSC tutorial tag and git logo - learn more section -->
 
 Learn Git basics integrated with RStudio (2h)
 
 :::
 
-<!-- add github tutorial card https://ree-gupta.github.io/lmu-osc.github.io/training/open_research_cycle/02_collect_and_manage_website.html#github-->
-<!-- add LRZ gitlab - LMU supported tool card https://ree-gupta.github.io/lmu-osc.github.io/training/open_research_cycle/02_collect_and_manage_website.html#lrz-gitlab-->
+<!-- add github tutorial card https://ree-gupta.github.io/lmu-osc.github.io/training/open_research_cycle/02_collect_and_manage_website.html#github  with OSC tutorial tag and github logo - learn more section -->
+
+
+
+<!-- in tool section: add LRZ gitlab - LMU supported tool card https://ree-gupta.github.io/lmu-osc.github.io/training/open_research_cycle/02_collect_and_manage_website.html#lrz-gitlab  Institutional Git hosting for LMU Munich --> 
 
 ::: {.orc-card-tool}
 <div class="orc-card-tool-icon"><i class="bi bi-hdd-stack"></i></div>
