@@ -1,0 +1,30 @@
+---
+title: "Advanced Git"
+description: "Learn git features like branching and gitflow, and how to take advantage of issues, pull requests, and more on GitHub"
+image: "../images/advanced git.svg"
+categories:
+  - Git
+  - GitHub
+content_category:
+  - Reproducible Processes
+within_cat_order: 40
+---
+
+## Branching and Merging
+
+Our initial Introduction to Git tutorial covers the basics of version control and touches on collaborating with others using GitHub. However, to truly leverage the power of Git and GitHub, it's essential to understand more advanced features like branching, merging, and pull requests. We recommend exploring the following resources to deepen your understanding of these concepts:
+
+### Git Branching and Merging - Detailed Tutorial 
+
+{{< video https://www.youtube.com/watch?v=Q1kHG842HoI >}}
+
+
+### Boot.dev
+
+The [Learn Git](https://www.boot.dev/courses/learn-git) and [Learn Git 2](https://www.boot.dev/courses/learn-git-2) courses on [Boot.dev](https://boot.dev/) provide comprehensive, interactive lessons on Git and GitHub. These courses cover everything from basic commands to advanced workflows, including branching, merging, and pull requests. The interactive nature of the platform allows you to practice what you learn in a hands-on environment.
+
+**One must create an account to access the materials, but the content of the courses are free. The interactive features, however, require a paid subscription.**
+
+The full walkthrough of the Learn Git course is also available on YouTube:
+
+{{< video https://www.youtube.com/watch?v=rH3zE7VlIMs >}}
