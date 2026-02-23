@@ -1036,53 +1036,30 @@
     ]
   },
   {
-    "objectID": "training/principles/replicability-crisis.html",
-    "href": "training/principles/replicability-crisis.html",
-    "title": "Replicability Crisis",
-    "section": "",
-    "text": "OSF Link\nThe Open Science Framework page for this video and the associated slides are available at https://osf.io/mguqj/.\n\n\nPresentation",
+    "objectID": "training/principles/assessing-research-replicability.html#slides",
+    "href": "training/principles/assessing-research-replicability.html#slides",
+    "title": "Assessing Research Replicability",
+    "section": "Slides",
+    "text": "Slides\nInvestigating the replicability of cancer research",
     "crumbs": [
       "Training",
       "Training Tracks",
       "Self-Learning Catalog",
       "Principles",
-      "Replicability Crisis"
+      "Assessing Research Replicability"
     ]
   },
   {
-    "objectID": "training/train-the-trainer.html",
-    "href": "training/train-the-trainer.html",
-    "title": "Educator Toolkit",
+    "objectID": "training/reproducible-processes/index.html",
+    "href": "training/reproducible-processes/index.html",
+    "title": "Reproducible Processes",
     "section": "",
-    "text": "Welcome! Do you want to teach open, responsible, and reproducible research practices? Then our educator toolkit is for you!",
+    "text": "Reproducible Protocols\n\n\nLearn how to write and publish a reusable, step-by-step protocol.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIntroduction to R\n\n\n\nR\n\n\n\nLearn the basics of the R programming language\n\n\n\n\n\nSelf-Paced Tutorial\n\n\n\n\n\n\n\n\n\n\n\n\nIntroduction to Version Control within RStudio\n\n\n\nR\n\nGit\n\n\n\nExplore the git version control software and its integrations with the popular RStudio interactive development environment\n\n\n\n\n\nSelf-Paced Tutorial\n\n\n\n\n\n\n\n\n\n\n\n\nCollaborative coding with GitHub and RStudio\n\n\n\nR\n\nGit\n\nGitHub\n\n\n\nAfter learning the basics of git, apply your skills in an interactive tutorial\n\n\n\n\n\nSelf-Paced Tutorial\n\n\n\n\n\n\n\n\n\n\n\n\nAdvanced Git\n\n\n\nGit\n\nGitHub\n\n\n\nLearn git features like branching and gitflow, and how to take advantage of issues, pull requests, and more on GitHub\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIntroduction to Quarto\n\n\n\nR\n\nQuarto\n\n\n\nDiscover the basics of setting up computationally reproducible analyses, manuscripts, and presentations\n\n\n\n\n\nSelf-Paced Tutorial\n\n\n\n\n\n\n\n\n\n\n\n\nIntroduction to Zotero\n\n\n\nZotero\n\nQuarto\n\n\n\nEasily save your sources to the Zotero software, and learn how to insert these citations into your documents\n\n\n\n\n\nSelf-Paced Tutorial\n\n\n\n\n\n\n\n\n\n\n\n\nIntroduction to {renv}\n\n\n\nR\n\n\n\nMake your projects reproducible by learning how to (easily) manage your R packages\n\n\n\n\n\nSelf-Paced Tutorial\n\n\n\n\n\n\n\n\n\n\n\n\nReadable Code\n\n\nTips to write clear, understandable and maintainableand code.\n\n\n\n\n\n\n\n\nNo matching items",
     "crumbs": [
       "Training",
       "Training Tracks",
-      "Educator Toolkit"
-    ]
-  },
-  {
-    "objectID": "training/train-the-trainer.html#what-does-the-educator-toolkit-offer",
-    "href": "training/train-the-trainer.html#what-does-the-educator-toolkit-offer",
-    "title": "Educator Toolkit",
-    "section": "What does the educator toolkit offer?",
-    "text": "What does the educator toolkit offer?\nIn this toolkit, you can find:\n\nPedagogical materials and practical guidance for effectively designing and delivering classes and workshops on Open Research topics to diverse audiences. These materials include core didactic skills, learner engagement strategies, Open Science leadership, and accessibility practices.\n\n Develop your pedagogical skills! \n\nReady-to-use materials for teaching open research practices such as methodological foundations of Open Science, computational reproducibility, data management and sharing. This material consist of slides and activity sheets. Slides include presenter notes (intended narrative of the presentation), and further instructor notes (additional guidance intended only for the presenter such as didactic and accessibility tips). Simply select your intended target audience below and off you go!\n\n View teaching materials for students! \n View teaching materials for researchers! \n\n\n\n\n\n\nNote\n\n\n\nAll materials are grounded in empirical and pedagogical theory. Depending on the topic, materials come in a variety of formats (Quarto slides, HTML, PDF, MS PowerPoint and Google Documents).",
-    "crumbs": [
-      "Training",
-      "Training Tracks",
-      "Educator Toolkit"
-    ]
-  },
-  {
-    "objectID": "training/train-the-trainer.html#contributors-funding-and-partners",
-    "href": "training/train-the-trainer.html#contributors-funding-and-partners",
-    "title": "Educator Toolkit",
-    "section": "Contributors, funding and partners",
-    "text": "Contributors, funding and partners\nThe educator toolkit has been developed by the LMU Open Science Center in partnership with the Framework for Open and Reproducible Research Training FORRT community together with funding by the VolksWagen Foundation. Our training materials are licenced under a CC-BY-SA 4.0 Creative Commons Attribution-ShareAlike 4.0 International licence, unless otherwise specified.\n\n\n\n\n\n\nNoteYou have questions about the educator toolkit?\n\n\n\nGet in touch with us: Sarah von Grebmer, LMU Open Science Center.",
-    "crumbs": [
-      "Training",
-      "Training Tracks",
-      "Educator Toolkit"
+      "Self-Learning Catalog",
+      "Reproducible Processes"
     ]
   },
   {
@@ -1114,7 +1091,7 @@
     "href": "training/self-learning.html#all-tutorials",
     "title": "Self-Learning Course Catalog",
     "section": "All Tutorials",
-    "text": "All Tutorials\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Tutorial\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTopic\n\n\n\nTutorial\n\n\n\nDescription\n\n\n\nTags\n\n\n\n\n\n\n\n\nData Management\n\n\nMaintaining Privacy with Open Data\n\n\nA presentation on how to make data open to the public without revealing sensitive information\n\n\nOpen Data, Data Anonymity\n\n\n\n\n\n\nData Management\n\n\nIntroduction to Open Data\n\n\nAn introductory presentation on the what, why, and how of making research data open\n\n\nOpen Data\n\n\n\n\n\n\nData Management\n\n\nFAIR Data Management\n\n\nTake steps towards making your data FAIR: Findable, Accessible, Interoperable, Reusable\n\n\nFAIR data, Data Management, Documentation\n\n\n\n\n\n\nData Management\n\n\nData Documentation & Validation in R\n\n\nHow to document, summarize, and validate your research data using R.\n\n\nDocumentation\n\n\n\n\n\n\nData Management\n\n\nTBA: Data Anonymity\n\n\nImplementing and evaluating data anonymization techniques in R for safely sharing sensitive research data\n\n\nData Anonymity\n\n\n\n\n\n\nData Management\n\n\nTBA: Generating Synthetic Data\n\n\nGenerating Synthetic Data in R and balancing utility and privacy-preserving data sharing\n\n\nData Simulation, Data Anonymity\n\n\n\n\n\n\nPrinciples\n\n\nCredible Science\n\n\nLearn the ins and outs of reliable, reproducible, and open research\n\n\nOpen Research Practices\n\n\n\n\n\n\nPrinciples\n\n\nReplicability Crisis\n\n\nA presentation on the replication shortcomings of science and how researchers can improve\n\n\nReplicability Crisis\n\n\n\n\n\n\nPrinciples\n\n\nAssessing Research Replicability\n\n\nLessons learned from replicating experiments in cancer biology\n\n\nReproducibility\n\n\n\n\n\n\nPublishing Outputs\n\n\nOpen Access, Preprints, Postprints\n\n\nLearn about the different ways to make your publications freely accessible.\n\n\nOpen Access, Preprints\n\n\n\n\n\n\nPublishing Outputs\n\n\nCode Publishing\n\n\nTie together your skills and publish your work\n\n\nLicences, Documentation\n\n\n\n\n\n\nReproducible Processes\n\n\nIntroduction to R\n\n\nLearn the basics of the R programming language\n\n\nR\n\n\n\n\n\n\nReproducible Processes\n\n\nIntroduction to Version Control within RStudio\n\n\nExplore the git version control software and its integrations with the popular RStudio interactive development environment\n\n\nR, Git\n\n\n\n\n\n\nReproducible Processes\n\n\nCollaborative coding with GitHub and RStudio\n\n\nAfter learning the basics of git, apply your skills in an interactive tutorial\n\n\nR, Git, GitHub\n\n\n\n\n\n\nReproducible Processes\n\n\nAdvanced Git\n\n\nLearn git features like branching and gitflow, and how to take advantage of issues, pull requests, and more on GitHub\n\n\nGit, GitHub\n\n\n\n\n\n\nReproducible Processes\n\n\nIntroduction to Quarto\n\n\nDiscover the basics of setting up computationally reproducible analyses, manuscripts, and presentations\n\n\nR, Quarto\n\n\n\n\n\n\nReproducible Processes\n\n\nIntroduction to Zotero\n\n\nEasily save your sources to the Zotero software, and learn how to insert these citations into your documents\n\n\nZotero, Quarto\n\n\n\n\n\n\nReproducible Processes\n\n\nIntroduction to {renv}\n\n\nMake your projects reproducible by learning how to (easily) manage your R packages\n\n\nR\n\n\n\n\n\n\nStudy Planning\n\n\nTBA: Preregistration: Why and How?\n\n\nTutorial in progress…\n\n\nPreregistration\n\n\n\n\n\n\nStudy Planning\n\n\nIntroduction to Data Simulations in R\n\n\nHow to simulate data in R to prepare your studies\n\n\nData Simulation\n\n\n\n\n\n\nStudy Planning\n\n\nSimulations for Advanced Power Analyses\n\n\nThis tutorial provides a deeper dive into simulations in R, with emphasis on GLMs, LMEs, and SEMs\n\n\nData Simulation, Power Analyses\n\n\n\n\n\n\nNo matching items",
+    "text": "All Tutorials\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Tutorial\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTopic\n\n\n\nTutorial\n\n\n\nDescription\n\n\n\nTags\n\n\n\n\n\n\n\n\nData Management\n\n\nMaintaining Privacy with Open Data\n\n\nA presentation on how to make data open to the public without revealing sensitive information\n\n\nOpen Data, Data Anonymity\n\n\n\n\n\n\nData Management\n\n\nIntroduction to Open Data\n\n\nAn introductory presentation on the what, why, and how of making research data open\n\n\nOpen Data\n\n\n\n\n\n\nData Management\n\n\nFAIR Data Management\n\n\nTake steps towards making your data FAIR: Findable, Accessible, Interoperable, Reusable\n\n\nFAIR data, Data Management, Documentation\n\n\n\n\n\n\nData Management\n\n\nData Documentation & Validation in R\n\n\nHow to document, summarize, and validate your research data using R.\n\n\nDocumentation\n\n\n\n\n\n\nData Management\n\n\nIn Development: Data Anonymity\n\n\nImplementing and evaluating data anonymization techniques in R for safely sharing sensitive research data\n\n\nData Anonymity\n\n\n\n\n\n\nData Management\n\n\nGenerating Synthetic Data\n\n\nGenerating Synthetic Data in R and balancing utility and privacy-preserving data sharing\n\n\nData Simulation, Data Anonymity\n\n\n\n\n\n\nPrinciples\n\n\nAssessing Research Replicability\n\n\nLessons learned from replicating experiments in cancer biology\n\n\nReproducibility\n\n\n\n\n\n\nPrinciples\n\n\nCredible Science\n\n\nLearn the ins and outs of reliable, reproducible, and open research\n\n\nOpen Research Practices\n\n\n\n\n\n\nPrinciples\n\n\nReplicability Crisis\n\n\nA presentation on the replication shortcomings of science and how researchers can improve\n\n\nReplicability Crisis\n\n\n\n\n\n\nPublishing Outputs\n\n\nOpen Access, Preprints, Postprints\n\n\nLearn about the different ways to make your publications freely accessible.\n\n\nOpen Access, Preprints\n\n\n\n\n\n\nPublishing Outputs\n\n\nCode Publishing\n\n\nTie together your skills and publish your work\n\n\nLicences, Documentation\n\n\n\n\n\n\nReproducible Processes\n\n\nAdvanced Git\n\n\nLearn git features like branching and gitflow, and how to take advantage of issues, pull requests, and more on GitHub\n\n\nGit, GitHub\n\n\n\n\n\n\nReproducible Processes\n\n\nReadable Code\n\n\nTips to write clear, understandable and maintainableand code.\n\n\n \n\n\n\n\n\n\nReproducible Processes\n\n\nReproducible Protocols\n\n\nLearn how to write and publish a reusable, step-by-step protocol.\n\n\n \n\n\n\n\n\n\nReproducible Processes\n\n\nIntroduction to R\n\n\nLearn the basics of the R programming language\n\n\nR\n\n\n\n\n\n\nReproducible Processes\n\n\nIntroduction to Version Control within RStudio\n\n\nExplore the git version control software and its integrations with the popular RStudio interactive development environment\n\n\nR, Git\n\n\n\n\n\n\nReproducible Processes\n\n\nCollaborative coding with GitHub and RStudio\n\n\nAfter learning the basics of git, apply your skills in an interactive tutorial\n\n\nR, Git, GitHub\n\n\n\n\n\n\nReproducible Processes\n\n\nIntroduction to Quarto\n\n\nDiscover the basics of setting up computationally reproducible analyses, manuscripts, and presentations\n\n\nR, Quarto\n\n\n\n\n\n\nReproducible Processes\n\n\nIntroduction to Zotero\n\n\nEasily save your sources to the Zotero software, and learn how to insert these citations into your documents\n\n\nZotero, Quarto\n\n\n\n\n\n\nReproducible Processes\n\n\nIntroduction to {renv}\n\n\nMake your projects reproducible by learning how to (easily) manage your R packages\n\n\nR\n\n\n\n\n\n\nStudy Planning\n\n\nIn Development: Preregistration: Why and How?\n\n\nTutorial in progress…\n\n\nPreregistration\n\n\n\n\n\n\nStudy Planning\n\n\nIntroduction to Data Simulations in R\n\n\nHow to simulate data in R to prepare your studies\n\n\nData Simulation\n\n\n\n\n\n\nStudy Planning\n\n\nSimulations for Advanced Power Analyses\n\n\nThis tutorial provides a deeper dive into simulations in R, with emphasis on GLMs, LMEs, and SEMs\n\n\nData Simulation, Power Analyses\n\n\n\n\n\n\nNo matching items",
     "crumbs": [
       "Training",
       "Training Tracks",
@@ -2396,7 +2373,7 @@
     "href": "training/data-management/index.html",
     "title": "Data Management",
     "section": "",
-    "text": "Introduction to Open Data\n\n\n\nOpen Data\n\n\n\nAn introductory presentation on the what, why, and how of making research data open\n\n\n\n\n\nLecture\n\n\n\n\n\n\n\n\n\n\n\n\nFAIR Data Management\n\n\n\nFAIR data\n\nData Management\n\nDocumentation\n\n\n\nTake steps towards making your data FAIR: Findable, Accessible, Interoperable, Reusable\n\n\n\n\n\nSelf-Paced Tutorial\n\n\n\n\n\n\n\n\n\n\n\n\nData Documentation & Validation in R\n\n\n\nDocumentation\n\n\n\nHow to document, summarize, and validate your research data using R.\n\n\n\n\n\nSelf-Paced Tutorial\n\n\n\n\n\n\n\n\n\n\n\n\nMaintaining Privacy with Open Data\n\n\n\nOpen Data\n\nData Anonymity\n\n\n\nA presentation on how to make data open to the public without revealing sensitive information\n\n\n\n\n\nLecture\n\n\n\n\n\n\n\n\n\n\n\n\nTBA: Data Anonymity\n\n\n\nData Anonymity\n\n\n\nImplementing and evaluating data anonymization techniques in R for safely sharing sensitive research data\n\n\n\n\n\nSelf-Paced Tutorial\n\n\n\n\n\n\n\n\n\n\n\n\nTBA: Generating Synthetic Data\n\n\n\nData Simulation\n\nData Anonymity\n\n\n\nGenerating Synthetic Data in R and balancing utility and privacy-preserving data sharing\n\n\n\n\n\nSelf-Paced Tutorial\n\n\n\n\n\nNo matching items",
+    "text": "Introduction to Open Data\n\n\n\nOpen Data\n\n\n\nAn introductory presentation on the what, why, and how of making research data open\n\n\n\n\n\nLecture\n\n\n\n\n\n\n\n\n\n\n\n\nFAIR Data Management\n\n\n\nFAIR data\n\nData Management\n\nDocumentation\n\n\n\nTake steps towards making your data FAIR: Findable, Accessible, Interoperable, Reusable\n\n\n\n\n\nSelf-Paced Tutorial\n\n\n\n\n\n\n\n\n\n\n\n\nData Documentation & Validation in R\n\n\n\nDocumentation\n\n\n\nHow to document, summarize, and validate your research data using R.\n\n\n\n\n\nSelf-Paced Tutorial\n\n\n\n\n\n\n\n\n\n\n\n\nMaintaining Privacy with Open Data\n\n\n\nOpen Data\n\nData Anonymity\n\n\n\nA presentation on how to make data open to the public without revealing sensitive information\n\n\n\n\n\nLecture\n\n\n\n\n\n\n\n\n\n\n\n\nIn Development: Data Anonymity\n\n\n\nData Anonymity\n\n\n\nImplementing and evaluating data anonymization techniques in R for safely sharing sensitive research data\n\n\n\n\n\nSelf-Paced Tutorial\n\n\n\n\n\n\n\n\n\n\n\n\nGenerating Synthetic Data\n\n\n\nData Simulation\n\nData Anonymity\n\n\n\nGenerating Synthetic Data in R and balancing utility and privacy-preserving data sharing\n\n\n\n\n\nSelf-Paced Tutorial\n\n\n\n\n\nNo matching items",
     "crumbs": [
       "Training",
       "Training Tracks",
@@ -2423,7 +2400,7 @@
     "href": "training/study-planning/index.html",
     "title": "Study Planning",
     "section": "",
-    "text": "TBA: Preregistration: Why and How?\n\n\n\nPreregistration\n\n\n\nTutorial in progress…\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIntroduction to Data Simulations in R\n\n\n\nData Simulation\n\n\n\nHow to simulate data in R to prepare your studies\n\n\n\n\n\nSelf-Paced Tutorial\n\n\n\n\n\n\n\n\n\n\n\n\nSimulations for Advanced Power Analyses\n\n\n\nData Simulation\n\nPower Analyses\n\n\n\nThis tutorial provides a deeper dive into simulations in R, with emphasis on GLMs, LMEs, and SEMs\n\n\n\n\n\nSelf-Paced Tutorial\n\n\n\n\n\nNo matching items",
+    "text": "In Development: Preregistration: Why and How?\n\n\n\nPreregistration\n\n\n\nTutorial in progress…\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIntroduction to Data Simulations in R\n\n\n\nData Simulation\n\n\n\nHow to simulate data in R to prepare your studies\n\n\n\n\n\nSelf-Paced Tutorial\n\n\n\n\n\n\n\n\n\n\n\n\nSimulations for Advanced Power Analyses\n\n\n\nData Simulation\n\nPower Analyses\n\n\n\nThis tutorial provides a deeper dive into simulations in R, with emphasis on GLMs, LMEs, and SEMs\n\n\n\n\n\nSelf-Paced Tutorial\n\n\n\n\n\nNo matching items",
     "crumbs": [
       "Training",
       "Training Tracks",
@@ -2446,16 +2423,95 @@
     ]
   },
   {
-    "objectID": "training/reproducible-processes/index.html",
-    "href": "training/reproducible-processes/index.html",
-    "title": "Reproducible Processes",
-    "section": "",
-    "text": "Introduction to R\n\n\n\nR\n\n\n\nLearn the basics of the R programming language\n\n\n\n\n\nSelf-Paced Tutorial\n\n\n\n\n\n\n\n\n\n\n\n\nIntroduction to Version Control within RStudio\n\n\n\nR\n\nGit\n\n\n\nExplore the git version control software and its integrations with the popular RStudio interactive development environment\n\n\n\n\n\nSelf-Paced Tutorial\n\n\n\n\n\n\n\n\n\n\n\n\nCollaborative coding with GitHub and RStudio\n\n\n\nR\n\nGit\n\nGitHub\n\n\n\nAfter learning the basics of git, apply your skills in an interactive tutorial\n\n\n\n\n\nSelf-Paced Tutorial\n\n\n\n\n\n\n\n\n\n\n\n\nAdvanced Git\n\n\n\nGit\n\nGitHub\n\n\n\nLearn git features like branching and gitflow, and how to take advantage of issues, pull requests, and more on GitHub\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nIntroduction to Quarto\n\n\n\nR\n\nQuarto\n\n\n\nDiscover the basics of setting up computationally reproducible analyses, manuscripts, and presentations\n\n\n\n\n\nSelf-Paced Tutorial\n\n\n\n\n\n\n\n\n\n\n\n\nIntroduction to Zotero\n\n\n\nZotero\n\nQuarto\n\n\n\nEasily save your sources to the Zotero software, and learn how to insert these citations into your documents\n\n\n\n\n\nSelf-Paced Tutorial\n\n\n\n\n\n\n\n\n\n\n\n\nIntroduction to {renv}\n\n\n\nR\n\n\n\nMake your projects reproducible by learning how to (easily) manage your R packages\n\n\n\n\n\nSelf-Paced Tutorial\n\n\n\n\n\nNo matching items",
+    "objectID": "training/reproducible-processes/reproducible-protocols.html#lecture-reproducible-protocols-2-how-to-write-a-reusable-step-by-step-protocol---reproducibiliteach",
+    "href": "training/reproducible-processes/reproducible-protocols.html#lecture-reproducible-protocols-2-how-to-write-a-reusable-step-by-step-protocol---reproducibiliteach",
+    "title": "Reproducible Protocols",
+    "section": "Lecture: reproducible protocols (2) | How to write a reusable, step-by-step protocol - ReproducibiliTeach",
+    "text": "Lecture: reproducible protocols (2) | How to write a reusable, step-by-step protocol - ReproducibiliTeach",
     "crumbs": [
       "Training",
       "Training Tracks",
       "Self-Learning Catalog",
-      "Reproducible Processes"
+      "Reproducible Processes",
+      "Reproducible Protocols"
+    ]
+  },
+  {
+    "objectID": "training/reproducible-processes/advanced-git.html",
+    "href": "training/reproducible-processes/advanced-git.html",
+    "title": "Advanced Git",
+    "section": "",
+    "text": "Our initial Introduction to Git tutorial covers the basics of version control and touches on collaborating with others using GitHub. However, to truly leverage the power of Git and GitHub, it’s essential to understand more advanced features like branching, merging, and pull requests. We recommend exploring the following resources to deepen your understanding of these concepts:\n\n\n\n\n\n\nThe Learn Git and Learn Git 2 courses on Boot.dev provide comprehensive, interactive lessons on Git and GitHub. These courses cover everything from basic commands to advanced workflows, including branching, merging, and pull requests. The interactive nature of the platform allows you to practice what you learn in a hands-on environment.\nOne must create an account to access the materials, but the content of the courses are free. The interactive features, however, require a paid subscription.\nThe full walkthrough of the Learn Git course is also available on YouTube:",
+    "crumbs": [
+      "Training",
+      "Training Tracks",
+      "Self-Learning Catalog",
+      "Reproducible Processes",
+      "Advanced Git"
+    ]
+  },
+  {
+    "objectID": "training/reproducible-processes/advanced-git.html#branching-and-merging",
+    "href": "training/reproducible-processes/advanced-git.html#branching-and-merging",
+    "title": "Advanced Git",
+    "section": "",
+    "text": "Our initial Introduction to Git tutorial covers the basics of version control and touches on collaborating with others using GitHub. However, to truly leverage the power of Git and GitHub, it’s essential to understand more advanced features like branching, merging, and pull requests. We recommend exploring the following resources to deepen your understanding of these concepts:\n\n\n\n\n\n\nThe Learn Git and Learn Git 2 courses on Boot.dev provide comprehensive, interactive lessons on Git and GitHub. These courses cover everything from basic commands to advanced workflows, including branching, merging, and pull requests. The interactive nature of the platform allows you to practice what you learn in a hands-on environment.\nOne must create an account to access the materials, but the content of the courses are free. The interactive features, however, require a paid subscription.\nThe full walkthrough of the Learn Git course is also available on YouTube:",
+    "crumbs": [
+      "Training",
+      "Training Tracks",
+      "Self-Learning Catalog",
+      "Reproducible Processes",
+      "Advanced Git"
+    ]
+  },
+  {
+    "objectID": "training/train-the-trainer.html",
+    "href": "training/train-the-trainer.html",
+    "title": "Educator Toolkit",
+    "section": "",
+    "text": "Welcome! Do you want to teach open, responsible, and reproducible research practices? Then our educator toolkit is for you!",
+    "crumbs": [
+      "Training",
+      "Training Tracks",
+      "Educator Toolkit"
+    ]
+  },
+  {
+    "objectID": "training/train-the-trainer.html#what-does-the-educator-toolkit-offer",
+    "href": "training/train-the-trainer.html#what-does-the-educator-toolkit-offer",
+    "title": "Educator Toolkit",
+    "section": "What does the educator toolkit offer?",
+    "text": "What does the educator toolkit offer?\nIn this toolkit, you can find:\n\nPedagogical materials and practical guidance for effectively designing and delivering classes and workshops on Open Research topics to diverse audiences. These materials include core didactic skills, learner engagement strategies, Open Science leadership, and accessibility practices.\n\n Develop your pedagogical skills! \n\nReady-to-use materials for teaching open research practices such as methodological foundations of Open Science, computational reproducibility, data management and sharing. This material consist of slides and activity sheets. Slides include presenter notes (intended narrative of the presentation), and further instructor notes (additional guidance intended only for the presenter such as didactic and accessibility tips). Simply select your intended target audience below and off you go!\n\n View teaching materials for students! \n View teaching materials for researchers! \n\n\n\n\n\n\nNote\n\n\n\nAll materials are grounded in empirical and pedagogical theory. Depending on the topic, materials come in a variety of formats (Quarto slides, HTML, PDF, MS PowerPoint and Google Documents).",
+    "crumbs": [
+      "Training",
+      "Training Tracks",
+      "Educator Toolkit"
+    ]
+  },
+  {
+    "objectID": "training/train-the-trainer.html#contributors-funding-and-partners",
+    "href": "training/train-the-trainer.html#contributors-funding-and-partners",
+    "title": "Educator Toolkit",
+    "section": "Contributors, funding and partners",
+    "text": "Contributors, funding and partners\nThe educator toolkit has been developed by the LMU Open Science Center in partnership with the Framework for Open and Reproducible Research Training FORRT community together with funding by the VolksWagen Foundation. Our training materials are licenced under a CC-BY-SA 4.0 Creative Commons Attribution-ShareAlike 4.0 International licence, unless otherwise specified.\n\n\n\n\n\n\nNoteYou have questions about the educator toolkit?\n\n\n\nGet in touch with us: Sarah von Grebmer, LMU Open Science Center.",
+    "crumbs": [
+      "Training",
+      "Training Tracks",
+      "Educator Toolkit"
+    ]
+  },
+  {
+    "objectID": "training/principles/replicability-crisis.html",
+    "href": "training/principles/replicability-crisis.html",
+    "title": "Replicability Crisis",
+    "section": "",
+    "text": "OSF Link\nThe Open Science Framework page for this video and the associated slides are available at https://osf.io/mguqj/.\n\n\nPresentation",
+    "crumbs": [
+      "Training",
+      "Training Tracks",
+      "Self-Learning Catalog",
+      "Principles",
+      "Replicability Crisis"
     ]
   },
   {
@@ -2463,7 +2519,7 @@
     "href": "training/principles/index.html",
     "title": "Principles",
     "section": "",
-    "text": "Replicability Crisis\n\n\n\nReplicability Crisis\n\n\n\nA presentation on the replication shortcomings of science and how researchers can improve\n\n\n\n\n\nLecture\n\n\n\n\n\n\n\n\n\n\n\n\nCredible Science\n\n\n\nOpen Research Practices\n\n\n\nLearn the ins and outs of reliable, reproducible, and open research\n\n\n\n\n\nLecture\n\n\n\n\n\n\n\n\n\n\nAssessing Research Replicability\n\n\n\nReproducibility\n\n\n\nLessons learned from replicating experiments in cancer biology\n\n\n\n\n\nOther\n\n\n\n\n\nNo matching items",
+    "text": "Replicability Crisis\n\n\n\nReplicability Crisis\n\n\n\nA presentation on the replication shortcomings of science and how researchers can improve\n\n\n\n\n\nLecture\n\n\n\n\n\n\n\n\n\n\n\n\nCredible Science\n\n\n\nOpen Research Practices\n\n\n\nLearn the ins and outs of reliable, reproducible, and open research\n\n\n\n\n\nLecture\n\n\n\n\n\n\n\n\n\n\n\n\nAssessing Research Replicability\n\n\n\nReproducibility\n\n\n\nLessons learned from replicating experiments in cancer biology\n\n\n\n\n\nOther\n\n\n\n\n\nNo matching items",
     "crumbs": [
       "Training",
       "Training Tracks",

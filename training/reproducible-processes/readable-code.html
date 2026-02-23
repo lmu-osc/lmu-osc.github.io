@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="From sharing data and code to publishing articles">
+<meta name="description" content="Tips to write clear, understandable and maintainableand code.">
 
-<title>Publishing Outputs – LMU Open Science Center</title>
+<title>Readable Code – LMU Open Science Center</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -31,11 +31,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../training/publishing-outputs/open-access-preprints-postprints.html" rel="next">
-<link href="../../training/reproducible-processes/reproducible-processes-tutorials.yaml" rel="prev">
+<link href="../../training/reproducible-processes/reproducible-protocols.html" rel="next">
+<link href="../../training/reproducible-processes/advanced-git.html" rel="prev">
 <link href="../../assets/img/lmu_osc_logo.jpg" rel="icon" type="image/jpeg">
-<script src="../../site_libs/quarto-listing/list.min.js"></script>
-<script src="../../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
@@ -47,6 +45,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap-684896a913d6eb157f12cd18f2074edd.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-contrib/videojs/video.min.js"></script>
+<link href="../../site_libs/quarto-contrib/videojs/video-js.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -74,35 +74,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-description','listing-categories','listing-image','listing-type',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 <!-- Matomo -->
 <script>
   var _paq = window._paq = window._paq || [];
@@ -119,35 +90,6 @@ ul.task-list li input[type="checkbox"] {
 </script>
 <!-- End Matomo Code -->
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="https://raw.githubusercontent.com/lmu-osc/branding-resources/refs/heads/main/styles.css">
 <link rel="stylesheet" href="../../assets/bootstrap-5.3.8-dist/css/bootstrap.min.css">
@@ -272,7 +214,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../training/index.html">Training Tracks</a></li><li class="breadcrumb-item"><a href="../../training/self-learning.html">Self-Learning Catalog</a></li><li class="breadcrumb-item"><a href="../../training/publishing-outputs/index.html">Publishing Outputs</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../training/index.html">Training Tracks</a></li><li class="breadcrumb-item"><a href="../../training/self-learning.html">Self-Learning Catalog</a></li><li class="breadcrumb-item"><a href="../../training/reproducible-processes/index.html">Reproducible Processes</a></li><li class="breadcrumb-item"><a href="../../training/reproducible-processes/readable-code.html">Readable Code</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -372,11 +314,11 @@ window.Quarto = {
       <div class="sidebar-item-container"> 
             <a href="../../training/reproducible-processes/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Reproducible Processes</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="" class="collapse list-unstyled sidebar-section depth3 ">  
+      <ul id="" class="collapse list-unstyled sidebar-section depth3 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../training/reproducible-processes/advanced-git.html" class="sidebar-item-text sidebar-link">
@@ -385,7 +327,7 @@ window.Quarto = {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../training/reproducible-processes/readable-code.html" class="sidebar-item-text sidebar-link">
+  <a href="../../training/reproducible-processes/readable-code.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Readable Code</span></a>
   </div>
 </li>
@@ -399,13 +341,13 @@ window.Quarto = {
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../../training/publishing-outputs/index.html" class="sidebar-item-text sidebar-link active">
+            <a href="../../training/publishing-outputs/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Publishing Outputs</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="" class="collapse list-unstyled sidebar-section depth3 show">  
+      <ul id="" class="collapse list-unstyled sidebar-section depth3 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../training/publishing-outputs/open-access-preprints-postprints.html" class="sidebar-item-text sidebar-link">
@@ -441,14 +383,14 @@ window.Quarto = {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../training/index.html">Training Tracks</a></li><li class="breadcrumb-item"><a href="../../training/self-learning.html">Self-Learning Catalog</a></li><li class="breadcrumb-item"><a href="../../training/publishing-outputs/index.html">Publishing Outputs</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../training/index.html">Training Tracks</a></li><li class="breadcrumb-item"><a href="../../training/self-learning.html">Self-Learning Catalog</a></li><li class="breadcrumb-item"><a href="../../training/reproducible-processes/index.html">Reproducible Processes</a></li><li class="breadcrumb-item"><a href="../../training/reproducible-processes/readable-code.html">Readable Code</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Publishing Outputs</h1>
+<h1 class="title">Readable Code</h1>
 </div>
 
 <div>
   <div class="description">
-    From sharing <strong>data</strong> and <strong>code</strong> to <strong>publishing articles</strong>
+    Tips to write clear, understandable and maintainableand code.
   </div>
 </div>
 
@@ -465,73 +407,12 @@ window.Quarto = {
 </header>
 
 
+<div class="quarto-video"><video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="https://osf.io/x639j/files/sgwqc"></video></div>
+<div class="quarto-video"><video id="video_shortcode_videojs_video2" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="https://osf.io/x639j/files/mrg5z"></video></div>
 
 
 
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="TGljZW5jZXMlMkNEb2N1bWVudGF0aW9u">
-<div class="thumbnail"><a href="https://lmu-osc.github.io/code-publishing/" class="no-external">
-
-<img loading="lazy" src="../images/code publishing.svg" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="https://lmu-osc.github.io/code-publishing/" class="no-external">Code Publishing</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('TGljZW5jZXM='); return false;">Licences</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('RG9jdW1lbnRhdGlvbg=='); return false;">Documentation</div>
-
-</div>
-<div class="delink listing-description"><a href="https://lmu-osc.github.io/code-publishing/" class="no-external">
-<p>Tie together your skills and publish your work</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="https://lmu-osc.github.io/code-publishing/" class="no-external">
-<div class="metadata-value listing-type">
-Self-Paced Tutorial
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="T3BlbiUyMEFjY2VzcyUyQ1ByZXByaW50cw==" data-listing-file-modified-sort="1771840893571" data-listing-reading-time-sort="1" data-listing-word-count-sort="46">
-<div class="thumbnail"><a href="../../training/publishing-outputs/open-access-preprints-postprints.html" class="no-external">
-
-<img loading="lazy" src="../../training/images/open access.svg" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../../training/publishing-outputs/open-access-preprints-postprints.html" class="no-external">Open Access, Preprints, Postprints</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('T3BlbiUyMEFjY2Vzcw=='); return false;">Open Access</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('UHJlcHJpbnRz'); return false;">Preprints</div>
-
-</div>
-<div class="delink listing-description"><a href="../../training/publishing-outputs/open-access-preprints-postprints.html" class="no-external">
-<p>Learn about the different ways to make your publications freely accessible.</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="../../training/publishing-outputs/open-access-preprints-postprints.html" class="no-external">
-<div class="metadata-value listing-type">
-Lecture
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -939,13 +820,13 @@ Lecture
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../training/reproducible-processes/reproducible-processes-tutorials.yaml" class="pagination-link" aria-label="">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"></span>
+      <a href="../../training/reproducible-processes/advanced-git.html" class="pagination-link" aria-label="Advanced Git">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Advanced Git</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../training/publishing-outputs/open-access-preprints-postprints.html" class="pagination-link" aria-label="Open Access, Preprints, Postprints">
-        <span class="nav-page-text">Open Access, Preprints, Postprints</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../training/reproducible-processes/reproducible-protocols.html" class="pagination-link" aria-label="Reproducible Protocols">
+        <span class="nav-page-text">Reproducible Protocols</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -1038,6 +919,8 @@ Lecture
 
   </div>
 </footer>
+<script>videojs(video_shortcode_videojs_video1);</script>
+<script>videojs(video_shortcode_videojs_video2);</script>
 
 
 
