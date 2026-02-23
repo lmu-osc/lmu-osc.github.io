@@ -162,7 +162,7 @@ When data comes from instruments, sensors, or APIs, scripting the acquisition cr
 <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
 </div>
 <div class="orc-card-tool-icon icon-2">
-<img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Zotero_icon.png" class="img-fluid" alt="Rlogo">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/R_logo.svg/1920px-R_logo.svg.png?20240131042527" class="img-fluid" alt="R logo">
 </div>
 </div>
 <h4 class="card-title">Introduction to R</h4>
@@ -182,7 +182,7 @@ When data comes from instruments, sensors, or APIs, scripting the acquisition cr
 <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
 </div>
 <div class="orc-card-tool-icon icon-2">
-<img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Zotero_icon.png" class="img-fluid" alt="Git logo">
+<img src="https://git-scm.com/images/logos/logomark-orange@2x.png" class="img-fluid" alt="Git logo">
 </div>
 </div>
 <h4 class="card-title">Introduction to Git</h4>
@@ -585,6 +585,7 @@ Version control system like Git tracks changes to files over time. You can see w
 
 While your LRZ GitLab account is associated with your LMU Munich affiliation, your GitHub account can be associated with your private email, be included in your CV, and be used for public sharing of your data and code (see [3. Analyze & Collaborate](03_analyze_and_collaborate.qmd){.mark} and [4. Preserve & Share](04_preserve_and_share.qmd){.mark}).  
 <br>
+
 In a version controlled workflow, you back up your local Git repositories on either GitHub or LRZ GitLab through a secure SSH connection (see [GitHub tutorial](https://lmu-osc.github.io/Collaborative-RStudio-GitHub/)) and share access to your repositories with your collaborators through the cloud-based platform GitHub or LRZ GitLab.
 
 :::
@@ -794,7 +795,7 @@ For data protection guidance, contact the [LMU Data Protection Officer](https://
 
 Quality control catches problems before they propagate into your analysis. The practices here ensure your data is trustworthy and your exclusions are defensible.
 
-**Define criteria before looking at your data.** This prevents unconscious bias in what you keep and exclude, and demonstrates that your decisions are principled rather than convenient (see [1.4. Study Design & Analysis Plan](01_plan_and_design_website.qmd#1-4-study-design-analysis-plan){.mark}).
+**Define criteria before looking at your data.** This prevents unconscious bias in what you keep and exclude, and demonstrates that your decisions are principled rather than convenient (see [1.4. Study Design & Analysis Plan](01_plan_and_design.qmd#1-4-study-design-analysis-plan){.mark}).
 
 ::: {.panel-tabset}
 
@@ -852,7 +853,7 @@ Data cleaning handles errors, inconsistencies, and missing values. The cardinal 
 
 ### 2.4.3. Exclusions
 
-Exclusion criteria specify which data points will be removed from analysis and why. Define these before you see your results (see [1.4. Study Design & Analysis Plan](01_plan_and_design_website.qmd#1-4-study-design-analysis-plan){.mark}).
+Exclusion criteria specify which data points will be removed from analysis and why. Define these before you see your results (see [1.4. Study Design & Analysis Plan](01_plan_and_design.qmd#1-4-study-design-analysis-plan){.mark}).
 
 <br>
 
