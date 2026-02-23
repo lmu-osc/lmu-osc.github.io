@@ -430,7 +430,7 @@ Quality control catches problems before they propagate into your analysis. The p
 
 ### 2.4.1. Validation 
 
-Validation checks whether your data meets specifications. Run checks during collection to catch problems immediately, after collection for systematic review, and after any processing to verify transformations worked correctly.
+Validation checks whether your data meets specifications. For example, values can be verified to fall within valid ranges (e.g., age ≥ 0), required fields can be checked for missing entries, categorical variables can be restricted to allowed levels (e.g., "yes/no"), dates can be validated for proper format, and cross-variable constraints can be enforced (e.g., discharge date ≥ admission date). Run checks during collection to catch problems immediately, after collection for systematic review, and after any processing to verify transformations worked correctly.
 
 <br>
 
@@ -485,6 +485,7 @@ Exclusion criteria specify which data points will be removed from analysis and w
 
 To complete before conducting a data validation meeting with members of the project. Not all items are relevant for all fields of research or study type.
 
+<!-- add download button -->
 <!-- prepare  downloadable file with checklist in word doc + citation Ihle, Gupta, Schoenbrodt 2026 + licence CC BY SA in footnote + link to this webpage -->
 
 <div class="orc-grid-2col">
