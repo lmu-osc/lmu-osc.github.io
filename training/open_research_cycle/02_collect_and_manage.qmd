@@ -33,12 +33,12 @@ Your data acquisition procedures must be documented in sufficient details to all
 State-of-the-art practices for reproducible data acquisition include<!-- make an indented list - why are the bullet point before the start of the other lined (as in, not aligned, or even after) -->: 
 
 - **creating standard operating procedures**
-- **recording metadata as data collection is taking place**
+- **recording [metadata]{.underline} as data collection is taking place**
 - **build in automatization through programming**
 
-<!-- info box -->
-**Metadata** are data about data; they provide context to your data. Metadata such as equipment settings, environmental conditions, software versions, and calibration records should be recorded contemporaneously, not reconstructed afterward. Electronic lab notebooks, instrument logs, and automated logging all help to document your metadata.
-
+::: {.callout-note}
+[**Metadata**]{.underline} are data about data; they provide context to your data. Metadata such as equipment settings, environmental conditions, software versions, and calibration records should be recorded contemporaneously, not reconstructed afterward. Electronic lab notebooks, instrument logs, and automated logging all help to document your metadata.
+:::
 
 
 
@@ -458,13 +458,14 @@ Exclusion criteria specify which data points will be removed from analysis and w
 
 </details>
 
+
+::: {.orc-gradient-box}
+
 ## <i class="bi bi-card-checklist"></i> Data Management Checklist
 
 To complete before conducting a data validation meeting with members of the project. Not all items are relevant for all fields of research or study type.
 
 <!-- prepare  downloadable file with checklist in word doc + citation Ihle, Gupta, Schoenbrodt 2026 + licence CC BY SA in footnote + link to this webpage -->
-
-::: {.orc-gradient-box}
 
 <div class="orc-grid-2col">
 
