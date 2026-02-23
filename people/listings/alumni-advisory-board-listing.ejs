@@ -8,37 +8,29 @@ const isAlumniAdvisoryBoard = (membership) =>
 
 // Keep people who have at least one matching alumni advisory board membership.
 const alumnaeItems = (items || []).filter((item) => {
-  const memberships = Array.isArray(item.memberships) ? item.memberships : [];
-  return memberships.some(isAlumniAdvisoryBoard);
+const memberships = Array.isArray(item.memberships) ? item.memberships : [];
+return memberships.some(isAlumniAdvisoryBoard);
 });
 %>
 
 <ul>
-<% for (const item of alumnaeItems) { %>
-<%
+<% for (const item of alumnaeItems) { 
 const memberships = Array.isArray(item.memberships) ? item.memberships : [];
-// Keep alumni advisory board memberships, even if the title is missing.
 const alumniAdvisoryMemberships = memberships.filter(isAlumniAdvisoryBoard);
-%>
-
-<% if (alumniAdvisoryMemberships.length === 0) { %>
-<li>
-<a href="<%= item.links[0].url %>"><%= item.name %><%= item.academic_title ? ', ' + item.academic_title : '' %></a>
-</li>
-<% } else { %>
-<% for (const alumniAdvisoryMembership of alumniAdvisoryMemberships) { %>
-<%
+for (const alumniAdvisoryMembership of alumniAdvisoryMemberships) {
 const start = alumniAdvisoryMembership.start || '';
 const end = alumniAdvisoryMembership.end || '';
 let dateRange = '';
 if (start) {
-  dateRange = end ? ' (' + start + ' - ' + end + ')' : ' (' + start + ')';
+dateRange = end ? ' (' + start + ' - ' + end + ')' : ' (' + start + ')';
 }
 %>
 <li>
-<a href="<%= item.links[0].url %>"><%= item.name %><%= dateRange %><%= item.academic_title ? ', ' + item.academic_title : '' %></a>
+<a href="<%= item.links[0].url %>">
+<%= (item.academic_title ? item.academic_title.trim() : '') %><%= item.academic_title ? ' ' : '' %><%= item.name.trim() %><%= dateRange %>:
+<%= alumniAdvisoryMembership.title ? ' ' + alumniAdvisoryMembership.title.trim() : '' %><%= alumniAdvisoryMembership.affiliation ? ', ' + alumniAdvisoryMembership.affiliation.trim() : '' %>
+</a>
 </li>
-<% } %>
-<% } %>
-<% } %>
+<%    }
+} %>
 </ul>
