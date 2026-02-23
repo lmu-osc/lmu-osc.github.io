@@ -28,7 +28,7 @@ title-block-style: none
 
 
 <details class="orc-details-panel">
-<summary><i class="bi bi-gear-wide-connected"></i> 3.1. Reproducible Data Processing & Analysis</summary>
+<summary><i class="bi bi-gear-wide-connected"></i> 3.1. Data Processing & Analysis</summary>
 
 Data processing and analysis should be reproducible, independent of software, programming language, or operating system. 
 This is best achieved by favoring automated, **script-based workflows** over manual point-and-click procedures, supported by **adequate documentation** and shared code that allows others to regenerate results. 
@@ -36,7 +36,7 @@ Because analysis scripts are inherently iterative and evolve through corrections
 
 ::: {.panel-tabset}
 
-### 3.1.1. programming
+### 3.1.1. Programming
 
 - **Create self-contained project folder**. Include data, code, documentation, and outputs in a single structured environment, ensuring the project remains understandable, reproducible, and portable across systems and collaborators. If you use the free and open source software RStudio to manage your R project, your project directory (or folder) should contain a .Rproj file (see [R tutorial](https://lmu-osc.github.io/introduction-to-R/)). **Use relative paths** (i.e. `“./subfolder”`, where `.` represents the root of your .Rproj directory) or the library `here`, so the project stays portable to another environment
 - **Use a standard folder structure**. Your code repository should include a standard folder structure that make sense for your type of research, ideally shared across your team members. You can for instance use the [OSC research project template](https://github.com/lmu-osc/research-project-template). 
@@ -46,7 +46,7 @@ Because analysis scripts are inherently iterative and evolve through corrections
 
 <!-- add R tuto card and readable code lecture card as learn more + OSC research project template as OSC Tool-->
 
-### 3.1.2. version control
+### 3.1.2. Version Control
 
 Version control tracks changes to files over time. You can see what changed, when, and why. You can revert to previous versions. Collaborators can work without overwriting each other.
 
@@ -72,7 +72,7 @@ While your LRZ GitLab account is associated with your LMU Munich affiliation, yo
 
 <!-- add Git tuto card, github tuto card, gitlab lrz LMU supported tool , LMU chat as LMU supported-->
 
-### 3.1.3. computational environment management
+### 3.1.3. Computational Environment Management
 
 Manage your computational environment by explicitly recording the software, package versions, and dependencies required for your analyses, ensuring results can be reproduced across systems and over time. Tools such as packages managers (e.g. [Renv](https://rstudio.github.io/renv/) for R pacakges, [Conda](https://anaconda.org/channels/anaconda/packages/conda/overview) for Python packages) or broader containers (e.g. [Docker](https://www.docker.com/) or [Binder](https://mybinder.org/)) help stabilize workflows and prevent inconsistencies caused by packages or software updates.
 
@@ -112,26 +112,28 @@ code publishing tuto card-->
 
 
 <details class="orc-details-panel">
-<summary><i class="bi bi-file-earmark-richtext"></i> 3.2. Reproducible Reporting</summary>
+<summary><i class="bi bi-file-earmark-richtext"></i> 3.2. Results Reporting</summary>
 
-A practical way to make reporting decisions transparent and traceable is to use **literate programming**, which **combines narrative text** explaining the logic of the analysis with **executable code** that performs data processing and statistical procedures. Compiling such a document produces outputs (including tables, figures, bibliography) that update automatically when the underlying code changes, ensuring consistency between methods, results, and documentation. For users of R, Python, and Julia, **Quarto** has become the standard tool for this approach, superseding R Markdown and enabling seamless **rendering to formats such as HTML, PDF, and Word**.
-
+The reporting of results needs to be **computationally reproducible**, as well as **comprehensive and following reporting guidelines**, to allow statistical checks and meta analyses. <!-- something more here , example, explanation why, ect-->
 
 ::: {.panel-tabset}
 
-### 3.2.1. Analysis Report
+### 3.2.1. Computational reproducibility 
 
-**Minimally, create an analyses report with Quarto.** 
-This will facilitate your own revisions, code-review by your team, **reproducibility checks** by some journals, and verification of results reproducibility by other researchers. 
-The code repository will eventually be published with simulated, synthetic, or real data, depending on the project, together with the respective paper (see [4. Preserve & Share](<!--internal link-->)). 
-You should provide the analysis code that creates the results of the manuscript as a Quarto file to serve as documentation for the code (see [Quarto tutorial](https://lmu-osc.github.io/introduction-to-Quarto/)).
+A practical way to make reporting decisions transparent and traceable is to use **literate programming**, which **combines narrative text** explaining the logic of the analysis with **executable code** that performs data processing and statistical procedures. Compiling such a document produces outputs (including tables, figures, bibliography) that update automatically when the underlying code changes, ensuring consistency between methods, results, and documentation. 
 
-<!-- quarto tuto card -->
+For users of R, Python, and Julia, **Quarto** has become the standard tool for creating reproducible reports, superseding R Markdown and enabling seamless **rendering to formats such as HTML, PDF, and Word** (see our [Quarto tutorial](https://lmu-osc.github.io/introduction-to-Quarto/)).
 
-### 3.2.2. Manuscript
+#### Analysis Report: The Minimum Standard for Computational Reproducibility 
 
-- **Write your entire manuscript in Quarto.** 
-If you do not want to break the reproducibility chain by copy and pasting new results, tables, and figures into e.g. a Word document. 
+- **Create an analyses report with Quarto.** You should provide the analysis code that creates the results of the manuscript as a Quarto file to serve as documentation for the code (see [Quarto tutorial](https://lmu-osc.github.io/introduction-to-Quarto/)). This will facilitate your own revisions, code-review by your team, **reproducibility checks** by some journals, and verification of results reproducibility by other researchers. The code repository can be published with simulated, synthetic, or real data, depending on the project, together with the respective article (see [4. Preserve & Share](<!--internal link-->)). 
+
+This is currently the state-of-the-art method to showcase the computational reproducibility of a study and we recommend to adopt this practice at a minimum. 
+In reality, all reporting outputs such as manuscript, presentation and websites can be created in a reproducible fashion using Quarto:
+
+#### Manuscript: The Ultimate Reproducible Report
+
+If you do not want to break the reproducibility chain by copy and pasting new results, tables, and figures into e.g. a Word document, you can Write your entire manuscript in Quarto.
 
 - **Include bibliographic references in your Quarto document**. 
 You can directly source .bib files into your Quarto document or use the open source reference management software Zotero integrated in RStudio to cite articles and have them automatically formatted in any journal standards (see [Quarto tutorial](https://lmu-osc.github.io/introduction-to-Quarto/) and [Zotero tutorial](https://lmu-osc.github.io/introduction-to-zotero/)). 
@@ -143,19 +145,22 @@ Some journals offer LaTeX or Word templates; you can adapt these by modifying Qu
 
 - **Adapt your workflow to your collaborators.** Ideally, all your team mates have also adopted the use of Git and GitHub or GitLab and the use of issues and branches to work collaboratively (see [3.2.1. Version Control](<!--internal link-->)). A compromise with collaborators who do not use Git is to render your draft manuscript to e.g. Word and share it through cloud-based collaborative document editing e.g. [LRZ Sync & Share](https://syncandshare.lrz.de/login) or [Google Docs](https://docs.google.com/) with collaborators using the suggestion / track changes mode. Then, the lead author transcribes all edits manually, or with the help of e.g. R packages such as `trackdown` or `officer`, and addresses all comments in their quarto version before re-rendering for a second round of revisions, potentially with additional analyses.
 
-<!-- osc tutorials: quarto, zotero , git , github, tuto external: git advanced (from self catalogue) + lrz sync and share card (lmu supported) (see website version)-->
+#### Presentations & Websites: Further Reproducible Outputs for Outreach
 
-### 3.2.3. Presentation
+Using the same Quarto environment, you can also:
 
-**Convert your minimal analyses report into a reproducible presentation.** To get feedback on your analyses, from early stages to a presentation at a conference, you can output a report into a slide presentation with presenter notes. Slides remain dynamically linked to the underlying analyses. Any modification to the data or code automatically propagates to tables, visualizations, and reported results, eliminating inconsistencies between presentation and computation.
+- **Convert your minimal analyses report into a reproducible presentation.** To get feedback on your analyses, from early stages to a presentation at a conference, you can output a report into a slide presentation with presenter notes. Slides remain dynamically linked to the underlying analyses. Any modification to the data or code automatically propagates to tables, visualizations, and reported results, eliminating inconsistencies between presentation and computation.
 
-<!-- quarto tuto card and zotero tuto card-->
+- **Create reproducible website to support your research or teaching**. Quarto also enables the creation of reproducible and interactive websites by linking content directly to data, code, and analyses within a unified publishing workflow. Pages, figures, tables, and teaching materials update automatically when the underlying sources change, ensuring consistency across outputs. This approach simplifies maintenance, and allows websites to evolve as living, version-controlled resources rather than static collections of files. Example of website, interactive reports and other formats can be explored on the [Quarto Gallery](https://quarto.org/docs/gallery/). This website and our self-paced tutorials are all Quarto websites. 
 
-### 3.2.4. Website
+<!-- 5 cards in learn more : osc tutorials: quarto, zotero , git , github, tuto external: git advanced (from self catalogue) 
 
-**Create reproducible website to support your research or teaching**. Quarto also enables the creation of reproducible and interactive websites by linking content directly to data, code, and analyses within a unified publishing workflow. Pages, figures, tables, and teaching materials update automatically when the underlying sources change, ensuring consistency across outputs. This approach simplifies maintenance, and allows websites to evolve as living, version-controlled resources rather than static collections of files. Example of website, interactive reports and other formats can be explored on the [Quarto Gallery](https://quarto.org/docs/gallery/). This website and our self-paced tutorials are all Quarto websites. 
+1 card tool: lrz sync and share card (lmu supported) (see website version)-->
 
-<!-- quarto tuto card-->
+
+
+### 3.2.2. Reporting guidelines
+
 
 </details>
 
