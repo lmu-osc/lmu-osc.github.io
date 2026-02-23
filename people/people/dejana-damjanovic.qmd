@@ -13,8 +13,7 @@ memberships:
     end: 2025
 email: 
 photo: 
-mission_statement: |
-  statement here
+mission_statement: ""
 ---
 {{< include templates/_setup.qmd >}}
 {{< include templates/_contact_items.qmd >}}
