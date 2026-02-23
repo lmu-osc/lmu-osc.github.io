@@ -7,7 +7,7 @@ listing:
   type: default
   contents:
     - /**.qmd
-    - principles-tutorials.yaml
+    # - principles-tutorials.yaml    # uncomment this line if the priniples-tutorials.yaml file is filled in again
   fields: [title, description, categories, image, type]
   sort:
     - within_cat_order

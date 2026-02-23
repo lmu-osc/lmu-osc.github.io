@@ -25,6 +25,7 @@ listing:
       - /*/**.qmd
       - "!**/index.qmd"
       - /*/*-tutorials.yaml
+      - "!/principles/principles-tutorials.yaml" # remove me when that file is filled in
     fields: 
       - content_category
       - title
