@@ -18,12 +18,12 @@ include-in-header:
 <!-- TODO: Update tagline and pills -->
 <div class="orc-hero-body">
 <div class="orc-hero-tagline">Make your analysis reproducible and transparent</div>
-<div class="orc-hero-pills">
+<div class="orc-hero-pills phase-3">
 <span><i class="bi bi-check2-circle"></i> Reproducible Manuscript</span>
 <span><i class="bi bi-check2-circle"></i> Readable code</span>
 <span><i class="bi bi-check2-circle"></i> Documentation</span>
 </div>
-<div class="orc-hero-checkpoint"><i class="bi bi-people-fill"></i> End of phase checkpoint: Repo & code peer-review</div>
+<div class="orc-hero-checkpoint phase-3"><i class="bi bi-people-fill"></i> End of phase checkpoint: Repo & code peer-review</div>
 </div>
 </div>
 

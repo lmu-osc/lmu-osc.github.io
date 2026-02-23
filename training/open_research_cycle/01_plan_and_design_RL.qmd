@@ -8,7 +8,7 @@ css: orc-styles.css
 title-block-style: none
 ---
 
-<div class="orc-phase-hero-compact-container">
+<div class="orc-phase-hero-compact">
 <div class="orc-hero-cycle phase-1">
 {{< include ../images/os-cycle.svg >}}
 </div>
