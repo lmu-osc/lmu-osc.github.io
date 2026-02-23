@@ -12,19 +12,19 @@ include-in-header:
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 ---
 
-<div class="orc-phase-hero-compact">
+<div class="orc-phase-hero-compact phase-1">
 <div class="orc-hero-cycle phase-1">
 {{< include ../images/os-cycle.svg >}}
 </div>
 <div class="orc-hero-body">
 <div class="orc-hero-tagline">Set the foundation for open & reliable research</div>
-<div class="orc-hero-pills">
+<div class="orc-hero-pills phase-1">
 <span><i class="bi bi-check2-circle"></i> Explore & Reuse</span> 
 <span><i class="bi bi-check2-circle"></i> Check Legal Frameworks</span>
 <span><i class="bi bi-check2-circle"></i> Write Data Management Plan</span>
 <span><i class="bi bi-check2-circle"></i> Design Study</span>
 </div>
-<div class="orc-hero-checkpoint"><i class="bi bi-people-fill"></i> Team Checkpoint: Study Plan Presentation & Preregistration Submission</div>
+<div class="orc-hero-checkpoint phase-1"><i class="bi bi-people-fill"></i> Team Checkpoint: Study Plan Presentation & Preregistration Submission</div>
 </div>
 </div>
 
@@ -111,7 +111,7 @@ HOW TO ADD CARDS?
 
 ### 1.1.2. Preregistrations
 
-A **preregistration** typically consists of a hypothesis and predictions, a plan for data collection (when relevant), and a plan for data analysis, that researchers upload before starting their projects, often in order to increase the rigor of confirmatory research (see [1.4.1. Pre-analysis planning](#pre-analysis-planning){.mark}).
+A **preregistration** typically consists of a hypothesis and predictions, a plan for data collection (when relevant), and a plan for data analysis, that researchers upload before starting their projects, often in order to increase the rigor of confirmatory research (see [1.4.1. Pre-analysis planning](<!--internal link-->)). <!-- this link doesnot work-->
 <!-- this cross ref is not working, it's not a md title FIXME either link to the study design ana analysis plan title or the tab pre analysis plan if possible. with an internal looking cross ref greyish thing-->
 
 <br>
@@ -267,7 +267,7 @@ Found a dataset to reuse?
 
 ### 1.1.4. Code
 
-You may find **code available for reuse** archived on [Zenodo](https://zenodo.org/) or actively developed on [GitHub](https://github.com/). Learn how to work with GitHub in more details in [3. Analyze & Collaborate](l/03_analyze_and_collaborate_website.qmd){.mark} or start learning Git version control now! 
+You may find **code available for reuse** archived on [Zenodo](https://zenodo.org/) or actively developed on [GitHub](https://github.com/). Learn how to work with GitHub in more details in [3. Analyze & Collaborate](03_analyze_and_collaborate.qmd){.mark} or start learning Git version control now! 
  
 <br>
 
@@ -414,7 +414,7 @@ The **[FAIR principles]{.underline}** are defined as:
 
 <br>
 
-See [https://www.go-fair.org/fair-principles/](https://www.go-fair.org/fair-principles/) for more information and section [2. Collect & Manage](/02_collect_and_manage.qmd){.mark} to learn how to implement the FAIR principles in your research.
+See [https://www.go-fair.org/fair-principles/](https://www.go-fair.org/fair-principles/) for more information and section [2. Collect & Manage](02_collect_and_manage.qmd){.mark} to learn how to implement the FAIR principles in your research.
 :::
 
 ::: {.container .my-4}
@@ -459,9 +459,9 @@ Data collection and analyses conducted on animals and humans typically requires 
 
 * **Data storage and retention** – outlining how data will be securely stored, backed up, and retained over time. This information can be extracted from a more detailed Research Data Management plan (see [1.3. Research Data Management Plans](#1-3-research-data-management-plans){.mark}).
 * **Risks if the data were leaked** – identifying potential consequences for participants or the research project if confidentiality is breached.
-* **Data anonymization** – describing procedures to remove or obscure personally identifiable information to protect participant privacy (see [2.3.2. Anonymization](/02_collect_and_manage.qmd#2-3-2-anonymization){.mark} for options, from simple techniques of anonymization to the creation of synthetic data).
-* **Language of the informed consent forms** – ensuring that participants clearly understand the purpose, procedures, and any potential risks of the study. Conditions for sharing their data should be clearly explained here (see [2.3.1. Informed Consent](/02_collect_and_manage.qmd#2-3-1-informed-consent){.mark}). 
-* **Power analysis** to justify sample size – providing a statistical rationale for the number of participants, which supports the validity and ethical justification of the study. This, and more detailed information on the statistical plan, can be extracted from your pre-analysis plan (see [1.4.1. Pre-analysis planning](#1-4-1-pre-analysis-planning){.mark} and [1.4.3. Power analyses](#1-4-1-power-analyses){.mark}). <!-- wil these links work?? if not, let's not leave dead links all over the place, let's keep them makred with a comment, if needed we can tag the header of the section though leave the text identifying the subsection intact.-->
+* **Data anonymization** – describing procedures to remove or obscure personally identifiable information to protect participant privacy (see [2.3.2. Anonymization](02_collect_and_manage.qmd#2-3-2-anonymization){.mark} for options, from simple techniques of anonymization to the creation of synthetic data).
+* **Language of the informed consent forms** – ensuring that participants clearly understand the purpose, procedures, and any potential risks of the study. Conditions for sharing their data should be clearly explained here (see [2.3.1. Informed Consent](02_collect_and_manage.qmd#2-3-1-informed-consent){.mark}). 
+* **Power analysis** to justify sample size – providing a statistical rationale for the number of participants, which supports the validity and ethical justification of the study. This, and more detailed information on the statistical plan, can be extracted from your pre-analysis plan (see [1.4.1. Pre-analysis planning](<!--internal link-->) and [1.4.3. Power analyses](<!--internal link-->)). <!-- wil these links work?? if not, let's not leave dead links all over the place, let's keep them makred with a comment, if needed we can tag the header of the section though leave the text identifying the subsection intact.  those linking panel tabsets dont work-->
 
 
 For data protection guidance, contact the [LMU Data Protection Officer](https://www.lmu.de/en/about-lmu/structure/central-university-administration/legal-matters/data-protection/) or the [Research Data Management team of the University Library ](https://www.en.ub.uni-muenchen.de/writing/research_data/research-data-management/index.html).
@@ -550,7 +550,7 @@ A Data Management Plan (DMP) documents how you will handle research data through
 - **How will you share outputs** (repositories, licenses, embargo periods)?
 - **What constraints apply** (consent, anonymization, GDPR, data use agreements)?
 
-The specific questions vary by discipline, data type, and funder requirements. DMP tools like [RDMO](https://rdmo.ub.lmu.de/) guide you through the relevant questions with funder-specific templates. Your DMP is a living document: start with what you know, and refine the details as your project develops (see [2.2. Data Management](/02_collect_and_manage.qmd#2-2-data-management){.mark}).
+The specific questions vary by discipline, data type, and funder requirements. DMP tools like [RDMO](https://rdmo.ub.lmu.de/) guide you through the relevant questions with funder-specific templates. Your DMP is a living document: start with what you know, and refine the details as your project develops (see [2.2. Data Management](02_collect_and_manage.qmd#2-2-data-management){.mark}).
 
 
 ::: {.container .my-4}
@@ -762,7 +762,7 @@ _Example: See whether simulated data drawn from specific distributions is compar
 _Example: Assess whether the sample size (within a simulation repetition) is high enough to detect a simulated effect in more than 80% of the cases. (see [1.4.3. Power analyses](#)<!--internal link formatting-->)_
 
 - **Prepare a pre-analysis plan.**  
-_Example: To strengthen your planned confirmatory analyses before collecting data, consider sharing a simulated dataset with a statistician or mentor. This allows for specific feedback on suitable statistical tests. The resulting analysis code can accompany your preregistration or registered report (see [1.4.1. Pre-analysis planning](#pre-analysis-planning){.mark}<!--dead link-->) so reviewers can clearly see your intended approach. When real data are collected, they can be directly substituted into the code to generate results._
+_Example: To strengthen your planned confirmatory analyses before collecting data, consider sharing a simulated dataset with a statistician or mentor. This allows for specific feedback on suitable statistical tests. The resulting analysis code can accompany your preregistration or registered report (see [1.4.1. Pre-analysis planning](<!--internal link-->)) so reviewers can clearly see your intended approach. When real data are collected, they can be directly substituted into the code to generate results._
 
 <br>
 
@@ -864,9 +864,9 @@ The **flawed version of post-hoc power** is called **“observed power”**: If 
 
 </details>
 
-::: {.orc-gradient-box}
+::: {.orc-gradient-box .plan-design-checklist}
 
-## <i class="bi bi-card-checklist"></i> Plan & Design Checklist 
+## <i class="bi bi-card-checklist checklist-icon"></i> Plan & Design Checklist 
 
 To complete before presenting your final study plan to your research group and, if applicable, submitting your ethics proposal and/or preregistration. Not all items are relevant for all fields of research or study type.
 
@@ -923,7 +923,7 @@ To complete before presenting your final study plan to your research group and, 
 
 :::
 
-::: {.d-flex .justify-content-center .orc-checklist-download .mt-4}
+::: {.d-flex .justify-content-center .mt-4 .orc-checklist-download .phase-1}
 
 <a href="#" class="btn btn-outline-secondary btn-sm">Download checklist <i class="bi bi-download"></i></a>
 
