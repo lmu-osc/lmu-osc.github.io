@@ -1,12 +1,19 @@
 ---
 title: Franka Etzel
-academic_title: BSc
+academic_title: B.Sc.
 name: Franka Etzel
 surname: Etzel
 first_name: Franka
-position: MSc Student
-faculty: Psychology & Education
-membertype: ['fellow']
+memberships:
+  - type: fellow
+    status: alumni
+    position: M.Sc. Student
+    faculty: Psychology & Education
+  - type: staff
+    status: alumni
+    position: Research Assistant - Members Onboarding, Public Outreach
+    start: 2022
+    end: 2023
 email: franka.etzel@campus.lmu.de
 photo: 'images/etzel_franka.jpeg'
 mission_statement:
@@ -33,9 +40,6 @@ profile <- div(class = "people-profile",
     div(class = "people-info",
       p(class = "people-position", position),
       if (!is.null(faculty) & faculty != "") {p(class = "people-faculty", paste0("Faculty of ", faculty))},
-      if (faculty == "" & !is.null(affiliate_organization)) {
-        p(class = "people-faculty", affiliate_organization)
-        },
       div(class = "people-contact", contact_items, social_links)
     )
   ),

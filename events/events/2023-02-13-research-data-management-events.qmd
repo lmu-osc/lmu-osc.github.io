@@ -1,13 +1,9 @@
 ---
 title: 'Love Data Week: a Series of Events on Research Data Management'
-categories:
-  - Event
-date: '2023-02-13'
+categories: Event
 event:
-  title: 'Love Data Week: a Series of Events on Research Data Management'
   description: ''
-  categories: Event
-  date: '2023-02-13'
+  start_date: '2023-02-13'
   end_date: '2023-02-17'
   time: ''
   location:
@@ -32,12 +28,16 @@ instructors:
 helpers:
   - name: ''
 contact:
-  name: ''
+  name: Martin Spenger
   email: martin.spenger@ub.uni-muenchen.de
 organizers:
-  name: ''
+  - name: LMU University Library (UB)
+    url: ''
+  - name: Dr. Martin Spenger
+    url: ''
 host:
-  - name: LMU Open Science Center
+  - name: LMU University Library (UB)
+    url: ''
 presenters:
   - name: Dr. Veit Schwab
     url: ''

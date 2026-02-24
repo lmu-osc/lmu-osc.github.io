@@ -1,6 +1,5 @@
 ---
-title: "LMU OSC Events"
-pagetitle: "Events"
+title: Events
 css: 
   - past-events-styles.css
   - upcoming-events-styles.css 
@@ -13,6 +12,13 @@ listing:
     filter-ui: true
     page-size: 999
     categories: unnumbered
+  - id: year_2026
+    contents: events/ 
+    sort: "date desc"
+    page-size: 999
+    template: past-events-template.ejs
+    template-params:
+      year: 2026
   - id: year_2025
     contents: events/ 
     sort: "date desc"
@@ -48,6 +54,27 @@ listing:
     template: past-events-template.ejs
     template-params:
       year: 2021
+  - id: year_2020
+    contents: events/ 
+    sort: "date desc"
+    page-size: 999
+    template: past-events-template.ejs
+    template-params:
+      year: 2020
+  - id: year_2019
+    contents: events/ 
+    sort: "date desc"
+    page-size: 999
+    template: past-events-template.ejs
+    template-params:
+      year: 2019
+  - id: year_2018
+    contents: events/ 
+    sort: "date desc"
+    page-size: 999
+    template: past-events-template.ejs
+    template-params:
+      year: 2018
 toc: true
 toc-depth: 3
 toc-expand: 3
@@ -87,6 +114,11 @@ h2{
 ## Past Events
 
 
+### 2026
+::: {#year_2026}
+:::
+
+
 ### 2025
 
 ::: {#year_2025}
@@ -109,4 +141,16 @@ h2{
 
 ### 2021
 ::: {#year_2021}
+:::
+
+### 2020
+::: {#year_2020}
+:::
+
+### 2019
+::: {#year_2019}
+:::
+
+### 2018
+::: {#year_2018}
 :::

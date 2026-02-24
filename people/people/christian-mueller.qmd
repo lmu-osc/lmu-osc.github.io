@@ -4,9 +4,11 @@ academic_title: Prof. Dr.
 name: Christian L. Müller
 surname: Müller
 first_name: Christian L.
-position: Chair
-faculty: Math, Informatics & Stats
-membertype: ['lmu-individual']
+memberships:
+  - type: lmu-individual
+    status: active
+    position: Chair
+    faculty: Math, Informatics & Stats
 email: christian.mueller@stat.uni-muenchen.de
 photo: 'images/mueller_christian-l.png'
 links:
@@ -39,9 +41,6 @@ profile <- div(class = "people-profile",
     div(class = "people-info",
       p(class = "people-position", position),
       if (!is.null(faculty) & faculty != "") {p(class = "people-faculty", paste0("Faculty of ", faculty))},
-      if (faculty == "" & !is.null(affiliate_organization)) {
-        p(class = "people-faculty", affiliate_organization)
-        },
       div(class = "people-contact", contact_items, social_links)
     )
   ),

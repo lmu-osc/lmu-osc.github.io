@@ -54,8 +54,8 @@ return copy;
 
 // --- Filtering logic ---
 const futureItems = (items || []).filter(item => {
-// item.event.date is guaranteed to exist per your statement
-const startDate = parseEventDate(item.event.date);
+// item.event.start_date is guaranteed to exist per your statement
+const startDate = parseEventDate(item.event.start_date);
 if (!startDate) return false; // skip malformed start date
 
 const endDate = item.event.end_date ? parseEventDate(item.event.end_date) : null;
@@ -86,7 +86,7 @@ for (const item of futureItems) {
 <div class="event-date listing-date">
 <% 
 // Use the same parser for display to keep things consistent
-const startDate = parseEventDate(item.event.date);
+const startDate = parseEventDate(item.event.start_date);
 const startDay = startDate ? startDate.getDate() : '';
 const startMonth = startDate ? startDate.toLocaleString('en-GB', { month: 'short' }) : '';
 const startYear = startDate ? startDate.getFullYear() : '';
@@ -171,7 +171,7 @@ formIcon = '<i class="bi bi-laptop"></i>';
 </div>
 </div>
 
-<div class="title listing-title"><%- item.event.title %></div>
+<div class="title listing-title"><%- item.title %></div>
 <div class="separator"></div>
 
 <p class="description listing-description"><%- item.event.description %></p>
@@ -180,10 +180,10 @@ formIcon = '<i class="bi bi-laptop"></i>';
 <div class="event-host-info-group">
 <%
                 const peopleBlocks = [
-                    { label: 'Organizers', data: item.organizers},
-                    { label: 'Presenters', data: item.presenters},
-                    { label: 'Instructors', data: item.instructors},
-                    { label: 'Helpers', data: item.helpers},
+                    { label: 'Organizer(s)', data: item.organizers},
+                    { label: 'Presenter(s)', data: item.presenters},
+                    { label: 'Instructor(s)', data: item.instructors},
+                    { label: 'Helper(s)', data: item.helpers},
                     { label: 'Host(s)', data: item.host},
                   ];
                 %>

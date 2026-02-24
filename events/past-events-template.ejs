@@ -47,8 +47,8 @@
       };
 
       const filteredItems = (items || []).filter(item => {
-        if (!item || !item.event.date) return false;
-        const startDate = parseEventDate(item.event.date);
+        if (!item || !item.event.start_date) return false;
+        const startDate = parseEventDate(item.event.start_date);
         if (!startDate) return false;
         const startYear = startDate.getFullYear();
 
@@ -91,7 +91,7 @@
             
             <div class="event-date listing-date">
               <% 
-                const startDate = parseEventDate(item.event.date);
+                const startDate = parseEventDate(item.event.start_date);
                 const startDay = startDate.getDate();
                 const startMonth = startDate.toLocaleString('en-GB', { month: 'short' });
                 const startYear = startDate.getFullYear();
@@ -128,17 +128,17 @@
               </div>
 
             </div>
-            <div class="title listing-title"><%- item.event.title %></div>
+            <div class="title listing-title"><%- item.title %></div>
             <div class="separator"></div>
             <!--<p class="description listing-description"><%- item.event.description %></p> -->
             <div class="event-footer">
               <div class="event-host-info-group">
                 <%
                 const peopleBlocks = [
-                    { label: 'Organizers', data: item.organizers},
-                    { label: 'Presenters', data: item.presenters},
-                    { label: 'Instructors', data: item.instructors},
-                    { label: 'Helpers', data: item.helpers},
+                    { label: 'Organizer(s)', data: item.organizers},
+                    { label: 'Presenter(s)', data: item.presenters},
+                    { label: 'Instructor(s)', data: item.instructors},
+                    { label: 'Helper(s)', data: item.helpers},
                     { label: 'Host(s)', data: item.host},
                   ];
                 %>

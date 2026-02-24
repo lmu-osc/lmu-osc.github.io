@@ -1,12 +1,9 @@
 ---
 title: 'One Step Towards Reproducible Science: Git Basic Training'
-categories:
-  - Workshop
+categories: Workshop
 event:
-  title: 'One Step Towards Reproducible Science: Git Basic Training'
   description: ''
-  categories: Workshop
-  date: '2022-09-12'
+  start_date: '2022-09-12'
   end_date: ''
   time: ''
   location:
@@ -26,23 +23,26 @@ links:
   workshop_website: ''
 event_description: ''
 instructors:
-  - name: ''
+  - name: PD Dr. Luisa Jimenez-Soto
     url: ''
 helpers:
   - name: ''
 contact:
-  name: ''
+  name: Christina Nießl
   email: cniessl@ibe.med.uni-muenchen.de
 organizers:
-  name: ''
+  - name: Christina Nießl
+    url: ''
 host:
-  - name: LMU Open Science Center
-date: '2022-09-12'
-
+  - name: Open Science Initiative in Medicine (OSIM)
+    url: ''
+  - name: '"Institute for Medical Information Processing'
+    url: Biometry
+  - name: and Epidemiology (IBE)"
+    url: ''
 
 ---
 <!-- MANDAORY SECTION START  -->
-<h1 class="fs-1 text-primary"> {{< meta event.title >}} </h1>
 
 {{< include templates/_setup.qmd >}}
 {{< include templates/_info_boxes.qmd >}}

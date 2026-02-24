@@ -4,24 +4,21 @@ listing:
   - id: current-advisory-board
     contents: 
       - people
-    template: listings/advisory-board-listing.ejs
+    template: listings/active-advisory-board-listing.ejs
     sort: "display_weight asc"
-    include: 
-      membertype: "current advisory board"
+
   - id: special-advisors
     contents: 
       - people
-    template: listings/special-advisors-listing.ejs
+    template: listings/active-special-advisors-listing.ejs
     sort: "display_weight asc"
-    include: 
-      membertype: "special advisor"
+
   - id: past-advisory-board
     contents: 
       - people
-    template: listings/advisory-board-listing.ejs
+    template: listings/alumni-advisory-board-listing.ejs
     sort: "surname asc"
-    include: 
-      membertype: "past advisory board"
+
 ---
 
 ## Current Advisory Board
@@ -39,7 +36,7 @@ We benefit from the expertise of additional advisors on specific topics such as 
 ::: {#special-advisors}
 :::
 
-## Past Advisory Board Members
+## Former Advisory Board Members
 
 ::: {#past-advisory-board}
 :::

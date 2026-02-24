@@ -4,9 +4,15 @@ academic_title: M.Sc. Student
 name: Elizabeth Waterfield
 surname: Waterfield
 first_name: Elizabeth
-osc_staff_title: Research Assistant
-faculty: Psychology and Education
-membertype: ['fellow', 'staff']
+memberships:
+  - type: fellow
+    status: active
+    position: M.Sc. Student
+    faculty: Psychology and Education
+  - type: staff
+    status: active
+    position: Research Assistant - Training Development , Event Logistics & Public Outreach
+    faculty: Psychology and Education
 display_weight_staff: 99
 email: e.waterfield@lmu.de
 photo: 'images/waterfield_elizabeth.png'
@@ -43,9 +49,6 @@ profile <- div(class = "people-profile",
     div(class = "people-info",
       p(class = "people-position", position),
       if (!is.null(faculty) & faculty != "") {p(class = "people-faculty", paste0("Faculty of ", faculty))},
-      if (faculty == "" & !is.null(affiliate_organization)) {
-        p(class = "people-faculty", affiliate_organization)
-        },
       div(class = "people-contact", contact_items, social_links)
     )
   ),

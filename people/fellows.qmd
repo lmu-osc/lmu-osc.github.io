@@ -4,12 +4,25 @@ listing:
   - id: fellows
     contents: 
       - people
-    template: listings/general-listing.ejs
+    template: listings/active-fellow-listing.ejs
     sort: "surname asc"
-    include: 
-      membertype: "fellow"
+
+  - id: alumni-fellows
+    contents: 
+      - people
+    template: listings/alumni-fellow-listing.ejs
+    sort: "surname asc"
+
 ---
 OSC Fellows are early career researchers who do not have a PhD degree and who are (co-)leading grassroots initiatives or (co-)deliver training on open research. We are grateful for their valuable contributions! [Become a Fellow](../about/join-us.qmd) <i class="bi bi-box-arrow-up-right"></i>.
 
+
+## Fellows
+
 ::: {#fellows}
+:::
+
+## Former Fellows
+
+::: {#alumni-fellows}
 :::

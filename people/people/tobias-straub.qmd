@@ -4,9 +4,15 @@ academic_title: Dr.
 name: Tobias Straub
 surname: Straub
 first_name: Tobias
-position: Head of the Bioinformatics Core Facility of the Biomedical Center
-faculty: Medicine
-membertype: ['lmu-individual', "current scientific board"]
+memberships:
+  - type: lmu-individual
+    status: active
+    position: Head of the Bioinformatics Core Facility of the Biomedical Center
+    faculty: Medicine
+  - type: 'scientific board'
+    status: active
+    position: Head of the Bioinformatics Core Facility of the Biomedical Center
+    faculty: Medicine
 email: tstraub@bmc.med.lmu.de
 photo: 'images/straub_tobias.jpg'
 personal: 'As a data analyst working with a wide range of biomedical research groups at the Martinsried campus, I have been committed to promoting Open Science for more than two decades—through both collaboration and teaching. I would like to contribute to establishing the Open Science Center as a strong and visible hub for the entire university. My focus is on shaping training and support structures that accommodate diverse disciplinary needs and on fostering sustainable strategies for the long-term success of the Center.'
@@ -40,9 +46,6 @@ profile <- div(class = "people-profile",
     div(class = "people-info",
       p(class = "people-position", position),
       if (!is.null(faculty) & faculty != "") {p(class = "people-faculty", paste0("Faculty of ", faculty))},
-      if (faculty == "" & !is.null(affiliate_organization)) {
-        p(class = "people-faculty", affiliate_organization)
-        },
       div(class = "people-contact", contact_items, social_links)
     )
   ),

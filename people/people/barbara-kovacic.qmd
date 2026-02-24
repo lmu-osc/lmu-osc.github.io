@@ -1,12 +1,14 @@
 ---
 title: Barbara Kovačić
-academic_title: BSc Student
+academic_title: B.Sc. Student
 name: Barbara Kovačić
 surname: Kovačić
 first_name: Barbara
-position: BSc Student
-faculty: Language & Literatures
-membertype: ['fellow']
+memberships:
+  - type: fellow
+    status: active
+    position: B.Sc. Student
+    faculty: Language & Literatures
 email: Barbara.Kovacic@campus.lmu.de
 photo: 'images/kovacic_barbara.jpg'
 social_media:
@@ -35,9 +37,6 @@ profile <- div(class = "people-profile",
     div(class = "people-info",
       p(class = "people-position", position),
       if (!is.null(faculty) & faculty != "") {p(class = "people-faculty", paste0("Faculty of ", faculty))},
-      if (faculty == "" & !is.null(affiliate_organization)) {
-        p(class = "people-faculty", affiliate_organization)
-        },
       div(class = "people-contact", contact_items, social_links)
     )
   ),

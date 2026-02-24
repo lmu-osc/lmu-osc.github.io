@@ -1,12 +1,14 @@
 ---
 title: Laura Goetz
-academic_title: MSc Student
+academic_title: M.Sc. Student
 name: Laura Goetz
 surname: Goetz
 first_name: Laura
-position: MSc Student
-faculty: Medicine, Psychology & Education
-membertype: ['fellow']
+memberships:
+  - type: fellow
+    status: active
+    position: M.Sc. Student
+    faculty: Medicine, Psychology & Education
 email: laura.goetz@campus.lmu.de
 photo: 'images/goetz_laura.jpg'
 mission_statement:
@@ -33,9 +35,6 @@ profile <- div(class = "people-profile",
     div(class = "people-info",
       p(class = "people-position", position),
       if (!is.null(faculty) & faculty != "") {p(class = "people-faculty", paste0("Faculty of ", faculty))},
-      if (faculty == "" & !is.null(affiliate_organization)) {
-        p(class = "people-faculty", affiliate_organization)
-        },
       div(class = "people-contact", contact_items, social_links)
     )
   ),

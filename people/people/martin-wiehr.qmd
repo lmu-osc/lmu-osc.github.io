@@ -1,12 +1,19 @@
 ---
 title: Martin Wiehr
-academic_title: BSc Student
+academic_title: B.Sc. Student
 name: Martin Wiehr
 surname: Wiehr
 first_name: Martin
-position: BSc Student
-faculty: Psychology & Education
-membertype: ['fellow']
+memberships:
+  - type: fellow
+    status: alumni
+    position: B.Sc. Student
+    faculty: Psychology & Education
+  - type: staff
+    status: alumni
+    position: Research Assistant - Members Onboarding, Event Logistics
+    start: 2023
+    end: 2024
 email: m.wiehr@campus.lmu.de
 photo: 'images/wiehr_martin.jpg'
 mission_statement:
@@ -33,9 +40,6 @@ profile <- div(class = "people-profile",
     div(class = "people-info",
       p(class = "people-position", position),
       if (!is.null(faculty) & faculty != "") {p(class = "people-faculty", paste0("Faculty of ", faculty))},
-      if (faculty == "" & !is.null(affiliate_organization)) {
-        p(class = "people-faculty", affiliate_organization)
-        },
       div(class = "people-contact", contact_items, social_links)
     )
   ),

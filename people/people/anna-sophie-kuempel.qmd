@@ -4,9 +4,15 @@ academic_title: Prof. Dr.
 name: Anna Sophie Kümpel
 surname: Kümpel
 first_name: Anna Sophie
-position: Professor of Communication
-faculty: Social Sciences
-membertype: ['lmu-individual', "current scientific board"]
+memberships:
+  - type: lmu-individual
+    status: active
+    position: Professor of Communication
+    faculty: Social Sciences
+  - type: 'scientific board'
+    status: active
+    position: Professor of Communication
+    faculty: Social Sciences
 email: anna.kuempel@ifkw.lmu.de
 photo: 'images/kuempel_anna_sophie.jpg'
 personal: 'As a Professor of Communication, I bring a strong commitment to advancing Open Science in a field grappling with replicability and trust issues. I co-authored <a href="https://doi.org/10.1093/joc/jqz052">An Agenda for Open Science in Communication</a> and promote transparency across both quantitative and qualitative methods. I aim to contribute disciplinary insight and advocate for inclusive, field-sensitive OS practices within the LMU Open Science Center.'
@@ -41,9 +47,6 @@ profile <- div(class = "people-profile",
     div(class = "people-info",
       p(class = "people-position", position),
       if (!is.null(faculty) & faculty != "") {p(class = "people-faculty", paste0("Faculty of ", faculty))},
-      if (faculty == "" & !is.null(affiliate_organization)) {
-        p(class = "people-faculty", affiliate_organization)
-        },
       div(class = "people-contact", contact_items, social_links)
     )
   ),

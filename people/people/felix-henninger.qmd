@@ -1,12 +1,14 @@
 ---
 title: Felix Henninger
-academic_title: MSc
+academic_title: M.Sc.
 name: Felix Henninger
 surname: Henninger
 first_name: Felix
-position: PhD Candidate
-faculty: Math, Informatics & Stats
-membertype: ['fellow']
+memberships:
+  - type: fellow
+    status: active
+    position: Ph.D. Candidate
+    faculty: Math, Informatics & Stats
 email: mailbox@felixhenninger.com
 photo: 'images/henninger_felix.jpg'
 links:
@@ -38,9 +40,6 @@ profile <- div(class = "people-profile",
     div(class = "people-info",
       p(class = "people-position", position),
       if (!is.null(faculty) & faculty != "") {p(class = "people-faculty", paste0("Faculty of ", faculty))},
-      if (faculty == "" & !is.null(affiliate_organization)) {
-        p(class = "people-faculty", affiliate_organization)
-        },
       div(class = "people-contact", contact_items, social_links)
     )
   ),

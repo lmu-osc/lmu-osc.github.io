@@ -1,5 +1,34 @@
+<%
+const activeSpecialAdvisorItems = (items || []).filter((item) => {
+  const memberships = Array.isArray(item.memberships) ? item.memberships : [];
+
+  return memberships.some((membership) => {
+    if (!membership || typeof membership !== 'object') return false;
+
+    return ['special advisor'].includes(membership.type) && membership.status === 'active';
+  });
+});
+%>
+
 <div class="advisory-board-grid">
-<% for (const item of items) { %>
+<% for (const item of activeSpecialAdvisorItems) { %>
+<%
+const activeSpecialAdvisorMembership = (Array.isArray(item.memberships) ? item.memberships : [])
+  .find((membership) =>
+    membership &&
+    typeof membership === 'object' &&
+    membership.type === 'special advisor' &&
+    membership.status === 'active'
+  );
+
+const specialAdvisorPosition = (typeof activeSpecialAdvisorMembership?.position === 'string' && activeSpecialAdvisorMembership.position.trim() !== '')
+  ? activeSpecialAdvisorMembership.position
+  : item.position;
+
+const specialAdvisorFaculty = (typeof activeSpecialAdvisorMembership?.faculty === 'string' && activeSpecialAdvisorMembership.faculty.trim() !== '')
+  ? activeSpecialAdvisorMembership.faculty
+  : item.faculty;
+%>
 <div class="card" <%= metadataAttrs(item) %>>
 <div class="row g-0">
 <div class="d-flex justify-content-center align-items-center p-2 mt-3">
@@ -13,10 +42,10 @@
   <%= item.academic_title %>
 </div>
 <div class="card-subtitle card-subtitle-two text-muted">
-  <%= item.position %>
+  <%= specialAdvisorPosition %>
 </div>
 <div class="card-subtitle card-subtitle-three">
-  <%= item.affiliation %>
+  <%= specialAdvisorFaculty %>
 </div>
 </div>
 </div>
@@ -31,6 +60,7 @@
 }
 .advisory-board-grid {
   display: grid;
+  grid-template-columns: repeat(3, 1fr); 
   grid-auto-rows: 1fr;
   grid-gap: 5px;
   width: auto;

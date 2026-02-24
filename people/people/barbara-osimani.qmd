@@ -4,10 +4,11 @@ academic_title: Prof. Dr.
 name: Barbara Osimani
 surname: Osimani
 first_name: Barbara
-membertype: ['affiliate']
-affiliate_info:
-  role: Director of Institute
-  organization: Polytechnic University of the Marche
+memberships:
+  - type: affiliate
+    status: alumni
+    role: Director of Institute
+    organization: Polytechnic University of the Marche
 email: B.Osimani@lmu.de
 photo: 'images/osimani_barbara.jpg'
 links:
@@ -39,9 +40,6 @@ profile <- div(class = "people-profile",
     div(class = "people-info",
       p(class = "people-position", position),
       if (!is.null(faculty) & faculty != "") {p(class = "people-faculty", paste0("Faculty of ", faculty))},
-      if (faculty == "" & !is.null(affiliate_organization)) {
-        p(class = "people-faculty", affiliate_organization)
-        },
       div(class = "people-contact", contact_items, social_links)
     )
   ),

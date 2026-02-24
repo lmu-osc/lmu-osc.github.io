@@ -3,9 +3,11 @@ academic_title: Dr.
 name: Chelle Gentemann
 surname: Gentemann
 first_name: Chelle
-position: Science Lead for the NASA Transform to Open Science Initiative
-affiliation: NASA
-membertype: ["current advisory board"]
+memberships:
+  - type: 'advisory board'
+    status: active
+    title: Science Lead for the NASA Transform to Open Science Initiative
+    affiliation: NASA
 display_weight: 3
 photo: 'images/chelle_gentemann.jpg'
 links:

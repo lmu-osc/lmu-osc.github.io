@@ -4,9 +4,11 @@ academic_title: PD. Dr.
 name: Luisa F. Jiménez-Soto
 surname: Jiménez-Soto
 first_name: Luisa F.
-position: Research Group Leader
-faculty: Medicine
-membertype: ['lmu-individual']
+memberships:
+  - type: lmu-individual
+    status: active
+    position: Research Group Leader
+    faculty: Medicine
 email: l.jimenez@lmu.de
 photo: 'images/jimenez-soto_luisa_f..jpeg'
 links:
@@ -38,9 +40,6 @@ profile <- div(class = "people-profile",
     div(class = "people-info",
       p(class = "people-position", position),
       if (!is.null(faculty) & faculty != "") {p(class = "people-faculty", paste0("Faculty of ", faculty))},
-      if (faculty == "" & !is.null(affiliate_organization)) {
-        p(class = "people-faculty", affiliate_organization)
-        },
       div(class = "people-contact", contact_items, social_links)
     )
   ),

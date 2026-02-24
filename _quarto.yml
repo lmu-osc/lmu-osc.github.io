@@ -36,7 +36,6 @@ website:
         text: About
       - text: People
         icon: people
-        # href: people/overview.qmd
         menu: 
           - people/management.qmd
           - text: Staff
@@ -45,7 +44,6 @@ website:
           - people/advisors.qmd
           - people/members.qmd
           - people/fellows.qmd
-          - people/alumnae.qmd
       - text: Partners
         icon: boxes
         menu:
@@ -165,8 +163,6 @@ website:
               href: people/members.qmd 
             - text: "Fellows"
               href: people/fellows.qmd 
-            - text: "Alumnae"
-              href: people/alumnae.qmd
 
 
 format:
@@ -177,6 +173,7 @@ format:
       - lmu-osc-custom.scss
     css: 
       - https://raw.githubusercontent.com/lmu-osc/branding-resources/refs/heads/main/styles.css
+      - /assets/bootstrap-5.3.8-dist/css/bootstrap.min.css
       - assets/fontawesome-free-7.1.0-web/css/all.min.css
       - styles.css
       - footer/footer-style.css

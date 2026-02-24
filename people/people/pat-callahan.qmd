@@ -4,10 +4,21 @@ academic_title: M.Sc. Epidemiology
 name: Pat Callahan
 surname: Callahan
 first_name: Pat
-position: Developer & Research Support
-membertype: ['fellow', 'staff']
+memberships:
+  - type: staff
+    status: active
+    position: Software Developer & Research Support
+  - type: fellow 
+    status: alumni
+    start: 2023
+    end: 2025 
+  - type: staff
+    status: alumni
+    position: Research Assistant - Training Material and Software Developer
+    start: 2024
+    end: 2025
 display_weight_staff: 5
-osc_staff_title: Developer & Research Support
+osc_staff_title: Software Developer & Research Support
 personal: I'm a scientific research programmer with a Master's degree in epidemiology, focused on advancing reproducible and efficient research in the health sciences. I believe that treating scientific analyses as software development projects creates the standard, understandable frameworks necessary to address reproducibility challenges. My work centers on developing tools, creating educational resources, and supporting researchers in adopting computational best practices.
 email: Patrick.Callahan@lmu.de
 links:
@@ -46,9 +57,6 @@ profile <- div(class = "people-profile",
     div(class = "people-info",
       p(class = "people-position", position),
       if (!is.null(faculty) & faculty != "") {p(class = "people-faculty", paste0("Faculty of ", faculty))},
-      if (faculty == "" & !is.null(affiliate_organization)) {
-        p(class = "people-faculty", affiliate_organization)
-        },
       div(class = "people-contact", contact_items, social_links)
     )
   ),
