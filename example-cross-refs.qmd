@@ -1,0 +1,25 @@
+---
+title: A Title here
+number-sections: true
+number-depth: 3
+number-offset: [2,0,0]
+---
+
+# A header here {#sec:header1}
+
+This is a section with a header. We can refer to it using `\@ref(sec:header1)`.
+
+## A l2 header here
+
+::: {.panel-tabset}
+
+# A Level one header here {#sec:header2}
+
+## A Level two header here {#sec:header4}
+
+
+# Another Level one header here {#sec:header3}
+
+## Another Level two header here {#sec:header5}
+
+:::
