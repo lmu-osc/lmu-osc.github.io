@@ -1,6 +1,6 @@
 - title: "Introduction to R"
   description: "Learn the basics of the R programming language"
-  image: "../images/introduction to r.svg"
+  image: "../images/introduction_to_r.svg"
   categories:
     - R
   content_category:
@@ -11,7 +11,7 @@
 
 - title: "Introduction to Version Control within RStudio"
   description: "Explore the git version control software and its integrations with the popular RStudio interactive development environment"
-  image: "../images/introduction to git.svg"
+  image: "../images/introduction_to_git.svg"
   categories:
     - R
     - Git
@@ -23,7 +23,7 @@
 
 - title: "Collaborative coding with GitHub and RStudio"
   description: "After learning the basics of git, apply your skills in an interactive tutorial"
-  image: "../images/introduction to github.svg"
+  image: "../images/introduction_to_github.svg"
   categories:
     - R
     - Git
@@ -38,7 +38,7 @@
 
 - title: "Introduction to Quarto"
   description: "Discover the basics of setting up computationally reproducible analyses, manuscripts, and presentations"
-  image: "../images/introduction to quarto.svg"
+  image: "../images/introduction_to_quarto.svg"
   categories:
     - R
     - Quarto
@@ -50,7 +50,7 @@
 
 - title: "Introduction to Zotero"
   description: "Easily save your sources to the Zotero software, and learn how to insert these citations into your documents"
-  image: "../images/introduction to zotero.svg"
+  image: "../images/introduction_to_zotero.svg"
   categories:
     - Zotero
     - Quarto
@@ -62,7 +62,7 @@
 
 - title: "Introduction to {renv}"
   description: "Make your projects reproducible by learning how to (easily) manage your R packages"
-  image: "../images/introduction to renv.svg"
+  image: "../images/introduction_to_renv.svg"
   categories:
     - R
   content_category:
