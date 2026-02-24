@@ -1,7 +1,7 @@
 
 - title: "FAIR Data Management"
   description: "Take steps towards making your data FAIR: **F**indable, **A**ccessible, **I**nteroperable, **R**eusable"
-  image: "../images/fair data management.svg"
+  image: "../images/fair_data_management.svg"
   categories:
     - FAIR data
     - Data Management
@@ -15,7 +15,7 @@
 
 - title: "Data Documentation & Validation in R"
   description:  How to document, summarize, and validate your research data using R.
-  image: "../images/data dictionary.svg"
+  image: "../images/data_dictionary.svg"
   categories:
     - Documentation
   content_category:
@@ -26,7 +26,7 @@
 
 - title: "*In Development*: Data Anonymity"
   description: "Implementing and evaluating data anonymization techniques in R for safely sharing sensitive research data"
-  image: "../images/data anonymity.svg"
+  image: "../images/data_anonymity.svg"
   categories:
     - Data Anonymity
   content_category:
@@ -37,7 +37,7 @@
 
 - title: "Generating Synthetic Data"
   description: "Generating Synthetic Data in R and balancing utility and privacy-preserving data sharing"
-  image: "../images/synthetic data.svg"
+  image: "../images/synthetic_data.svg"
   categories:
     - Data Simulation
     - Data Anonymity
