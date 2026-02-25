@@ -69,11 +69,13 @@ $body$
 
 <a>Including start_date field here with dollar sign syntax: $event.start_date$</a>
 <br>
-<a> Including a Lua filter field here with dollar sign syntax: $event_data.location$</a>
+<a> Including a Lua filter field here with dollar sign syntax: $event_data.location_name$</a>
 <br>
 <pre>$event_data$</pre>
 <br>
 <a>test: $event_data.debug_test$</a>
+<br>
+<a>date display: $event_data.date_display$</a>
 
 $for(include-after)$
 $include-after$
