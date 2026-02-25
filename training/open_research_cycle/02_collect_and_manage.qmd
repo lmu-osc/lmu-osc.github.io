@@ -4,6 +4,9 @@ description: "Implement FAIR data management, organize research outputs, maintai
 phase_order: 2
 sidebar: open-research-cycle
 page-layout: full
+number-depth: 4
+number-sections: true
+number-offset: [0,2,0]
 css: orc-styles.css
 title-block-style: none
 include-in-header:
@@ -29,7 +32,11 @@ include-in-header:
 
 
 <details class="orc-details-panel">
-<summary><i class="bi bi-journal-code"></i><h4>2.1. Data Collection</h4></summary>
+<summary markdown="1"><i class="bi bi-journal-code"></i>
+
+### Data Collection {#sec-data-collection}
+
+</summary>
 
 Your data acquisition procedures must be documented in sufficient details to allow replication by another researcher (see [LMU Guidelines for Safeguarding Good Scientific Practice](https://cms-cdn.lmu.de/media/contenthub/amtliche-veroeffentlichungen/gwp-ordnung.pdf)). Establishing reproducible data collection processes strengthens the quality and consistency of both your data and that of your team.
 
@@ -46,7 +53,7 @@ State-of-the-art practices for reproducible data acquisition include<!-- make an
 
 ::: {.panel-tabset}
 
-### 2.1.1. Lab Protocols
+#### 2.1.1. Lab Protocols
 
 Your protocol should specify materials with identifying details (lot numbers, versions, sources), equipment settings, step-by-step instructions with timing, and expected outcomes at each stage. What counts as "materials" varies by field: reagent concentrations in wet lab work, scanner parameters in neuroimaging, sampling coordinates in field ecology. But the principle is the same: enough detail that someone else could replicate your procedure exactly.
 
@@ -116,19 +123,19 @@ Your protocol should specify materials with identifying details (lot numbers, ve
 :::
 
 
-### 2.1.2. Questionnaires
+#### 2.1.2. Questionnaires
 
 **Document both the instrument and the administration procedure completely.** Use validated instruments <!-- what does a validate survey mean? -->when possible, pilot test before deployment, and archive the exact version participants see in an open source format. 
 
 <!-- @Felix: do we want anything else here? minimally the definition of validated survey is really unclear to me given how people use it...-->
 
-### 2.1.3. Software-based data acquisition
+#### 2.1.3. Software-based data acquisition
 
 When data comes from instruments, sensors, or APIs, scripting the acquisition creates a reproducible record of exactly what was collected and how. Programming languages like R or Python work well for straightforward pipelines. For more complex multi-step workflows which are common in e.g. in bioinformatics and neuroimaging, workflow managers like [Snakemake](https://snakemake.readthedocs.io/) or Nextflow ensure steps run in the correct order and can resume after failures.
 
 <br>
 
-- **Structure data correctly from the start.** Variables in columns, observations in rows. This makes your data immediately interoperable with analysis tools rather than requiring cleanup later. Scripts can also automate organization, file renaming, and conversion to open formats. See  [2.2. Data Management](#2-2-data-management){.mark} for guidelines.
+- **Structure data correctly from the start.** Variables in columns, observations in rows. This makes your data immediately interoperable with analysis tools rather than requiring cleanup later. Scripts can also automate organization, file renaming, and conversion to open formats. See  @sec-data-management for guidelines.
 
 - **Keep records of what ran and when.** Include error handling so failures are recorded rather than silently corrupting data. When something fails months later, you need to know what happened. Always test acquisition scripts on sample data before production runs. A bug in your collection pipeline can invalidate an entire dataset.
 
@@ -192,7 +199,11 @@ When data comes from instruments, sensors, or APIs, scripting the acquisition cr
 
 
 <details class="orc-details-panel">
-<summary><i class="bi bi-folder-check"></i><h4> 2.2. Data Management </h4></summary>
+<summary markdown="1"><i class="bi bi-folder-check"></i>
+
+### Data Management {#sec-data-management}
+ 
+</summary>
 
 In [1. Plan & Design](01_plan_and_design.qmd){.mark} you created a Research Data Management Plan. It's now time to put this plan into practice, refining it as you learn what actually works for your project.
 
@@ -211,7 +222,7 @@ What follows are general practices. Your domain has specific conventions for fil
 
 ::: {.panel-tabset}
 
-### 2.2.1. Storage
+#### 2.2.1. Storage
 
 This section covers storage for data you are actively collecting. Long-term archiving for sharing is covered in [4. Preserve & Share](04_preserve_and_share.qmd){.mark}.
 
@@ -288,7 +299,7 @@ Personal laptops as primary storage, external drives as only copy, consumer clou
 :::
 
 
-### 2.2.2. Organization
+#### 2.2.2. Organization
 
 Your folder structure and file naming conventions determine whether you and others can navigate your project months or years later. Establish these conventions at the start of your project and document them. When collaborating, ensure everyone follows the same system.
 
@@ -378,7 +389,7 @@ A pattern like `YYYYMMDD_project_condition_type_v01.ext` places files in chronol
 :::
 
 
-### 2.2.3. File Formats
+#### 2.2.3. File Formats
 
 File format choices affect who can work with your data now and whether it remains readable in the future. Open formats have publicly documented specifications that anyone can implement, so many programs can read them and they remain accessible even if the original software disappears. Proprietary formats lock you into specific tools, complicate collaboration, and risk becoming unreadable if the company stops supporting them.
 
@@ -394,7 +405,7 @@ File format choices affect who can work with your data now and whether it remain
 
 <br>
 
-Format issues often surface during quality control. The [2.4. Quality Control](#2-4-quality-control){.mark} panel below covers validation checks that can catch encoding problems, unexpected conversions, and structural inconsistencies early.
+Format issues often surface during quality control. The @sec-quality-control panel below covers validation checks that can catch encoding problems, unexpected conversions, and structural inconsistencies early.
 
 ::: {.container .my-4 }
 
@@ -421,7 +432,7 @@ Format issues often surface during quality control. The [2.4. Quality Control](#
 :::
 
 
-### 2.2.4. Documentation
+#### 2.2.4. Documentation
 
 Without documentation, a dataset is just a collection of files. Six months from now, you will not remember what each column means, why certain values are missing, or how files relate to each other. Documentation makes your data usable by your future self, your collaborators, and anyone who might reuse it.
 
@@ -500,7 +511,7 @@ Without documentation, a dataset is just a collection of files. Six months from 
 :::
 
 
-### 2.2.5. Standards
+#### 2.2.5. Standards
 
 Standards are community agreements on how to organize and describe research data. Using them means others in your field immediately understand your data. Three types of standards matter here:
 
@@ -556,7 +567,7 @@ Standards are community agreements on how to organize and describe research data
 :::
 
 
-### 2.2.6. Version Control
+#### 2.2.6. Version Control
 
 Version control system like Git tracks changes to files over time. You can see what changed, when, and why. You can revert to previous versions. Collaborators can work without overwriting each other.
 
@@ -675,14 +686,18 @@ In a version controlled workflow, you back up your local Git repositories on eit
 
 
 <details class="orc-details-panel">
-<summary><i class="bi bi-shield-lock"></i><h4> 2.3. Ethics & Privacy</h4></summary> 
+<summary markdown="1"><i class="bi bi-shield-lock"></i>
+
+### Ethics & Privacy {#sec-ethics-and-privacy}
+
+</summary> 
 
 Research involving human participants requires ethics approval and data protection compliance. In your ethics proposal (see [1.2.3. Ethics](<!--internal link-->)) you planned for safeguards for the people contributing to your research and you now need to implement them before or while collecting your data.
 
 
 ::: {.panel-tabset}
 
-### 2.3.1. Informed Consent
+#### 2.3.1. Informed Consent
 
 Participants have the right to understand what they are agreeing to. Your consent form should explain the research purpose in plain language, describe what data you will collect and how you will protect it, specify who will have access and for how long, and make clear that participation is voluntary.
 
@@ -695,7 +710,7 @@ Participants have the right to understand what they are agreeing to. Your consen
 <!-- @Felix: can we add example consent form as resources or other resources e.g. https://www.ninds.nih.gov/sites/default/files/migrate-documents/sample_data_sharing_consent_language_rz_corrected_508c.pdf? https://ukdataservice.ac.uk/learning-hub/research-data-management/ethical-issues/consent-for-data-sharing/ ?-->
 
 
-### 2.3.2. Anonymization
+#### 2.3.2. Anonymization
 
 Anonymization protects privacy and determines what you can share. 
 
@@ -762,7 +777,7 @@ Anonymization protects privacy and determines what you can share.
 :::
 
 
-### 2.3.3. GDPR Compliance
+#### 2.3.3. GDPR Compliance
 
 Research at LMU Munich must comply with EU data protection regulations. The core principles: have a lawful basis for processing personal data (usually consent or legitimate research interest), use data only for stated purposes, collect only what you need, delete data when you no longer need it, and protect it against unauthorized access.
 
@@ -780,15 +795,19 @@ For data protection guidance, contact the [LMU Data Protection Officer](https://
 
 
 <details class="orc-details-panel">
-<summary><i class="bi bi-check2-square"></i><h4> 2.4. Quality Control </h4></summary>
+<summary markdown="1"><i class="bi bi-check2-square"></i>
+
+### Quality Control {#sec-quality-control}
+
+</summary>
 
 Quality control catches problems before they propagate into your analysis. The practices here ensure your data is trustworthy and your exclusions are defensible.
 
-**Define criteria before looking at your data.** This prevents unconscious bias in what you keep and exclude, and demonstrates that your decisions are principled rather than convenient (see [1.4. Study Design & Analysis Plan](01_plan_and_design.qmd#1-4-study-design-analysis-plan){.mark}).
+**Define criteria before looking at your data.** This prevents unconscious bias in what you keep and exclude, and demonstrates that your decisions are principled rather than convenient (see [1.4. Study Design & Analysis Plan](01_plan_and_design.qmd#sec-study-design-analysis-plan){.mark}).
 
 ::: {.panel-tabset}
 
-### 2.4.1. Validation 
+#### 2.4.1. Validation 
 
 Validation checks whether your data meets specifications. For example, values can be verified to fall within valid ranges (e.g., age ≥ 0), required fields can be checked for missing entries, categorical variables can be restricted to allowed levels (e.g., "yes/no"), dates can be validated for proper format, and cross-variable constraints can be enforced (e.g., discharge date ≥ admission date). Run checks during collection to catch problems immediately, after collection for systematic review, and after any processing to verify transformations worked correctly.
 
@@ -826,7 +845,7 @@ Validation checks whether your data meets specifications. For example, values ca
 :::
 
 
-### 2.4.2. Cleaning
+#### 2.4.2. Cleaning
 
 Data cleaning handles errors, inconsistencies, and missing values. The cardinal rule: never modify your raw data. All cleaning happens on copies.
 
@@ -840,9 +859,9 @@ Data cleaning handles errors, inconsistencies, and missing values. The cardinal 
 
 - **Write cleaning as a script.** A script documents exactly what you did and lets you reproduce it. Keep a decision log for choices that cannot be automated.
 
-### 2.4.3. Exclusions
+#### 2.4.3. Exclusions
 
-Exclusion criteria specify which data points will be removed from analysis and why. Define these before you see your results (see [1.4. Study Design & Analysis Plan](01_plan_and_design.qmd#1-4-study-design-analysis-plan){.mark}).
+Exclusion criteria specify which data points will be removed from analysis and why. Define these before you see your results (see [1.4. Study Design & Analysis Plan](01_plan_and_design.qmd#sec-study-design-analysis-plan){.mark}).
 
 <br>
 
@@ -857,7 +876,7 @@ Exclusion criteria specify which data points will be removed from analysis and w
 
 ::: {.orc-gradient-box .data-management-checklist}
 
-## <i class="bi bi-card-checklist checklist-icon"></i> Data Management Checklist
+## <i class="bi bi-card-checklist checklist-icon"></i> Data Management Checklist {.unnumbered}
 
 To complete before conducting a data validation meeting with members of the project. Not all items are relevant for all fields of research or study type.
 

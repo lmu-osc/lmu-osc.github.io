@@ -36,7 +36,7 @@ h2 i, h3 i{ color: var(--orc-green); margin-right: .5rem; }
 
 * a { color: var(--orc-green); }
 
-.mark { background: white; color:var(--orc-gray-400); font-weight:600; font-style: italic; text-decoration: none;}
+.mark,.quarto-xref { background: white; color:var(--orc-gray-400); font-weight:600; font-style: italic; text-decoration: none;}
 
 #about-orc-project {
   padding: 1.25rem 1.75rem;
@@ -282,7 +282,7 @@ h2 i, h3 i{ color: var(--orc-green); margin-right: .5rem; }
 }
 
 .orc-details-panel > :not(summary) { padding: .75rem 1.5rem 0.5rem; }
-.orc-details-panel summary h4{ margin-top: 0; color:inherit; font: inherit;}
+.orc-details-panel summary h3{ margin-top: 0; color:inherit; font: inherit;}
 .orc-details-panel p { margin: 0; }
 .orc-details-panel > .panel-tabset { padding-top: 0; }
 
