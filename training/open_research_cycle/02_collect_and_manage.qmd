@@ -135,7 +135,7 @@ When data comes from instruments, sensors, or APIs, scripting the acquisition cr
 
 <br>
 
-- **Structure data correctly from the start.** Variables in columns, observations in rows. This makes your data immediately interoperable with analysis tools rather than requiring cleanup later. Scripts can also automate organization, file renaming, and conversion to open formats. See  @sec-data-management for guidelines.
+- **Structure data correctly from the start.** Variables in columns, observations in rows. This makes your data immediately interoperable with analysis tools rather than requiring cleanup later. Scripts can also automate organization, file renaming, and conversion to open formats. See [2.2 Data Management](#sec-data-management){.mark} for guidelines.
 
 - **Keep records of what ran and when.** Include error handling so failures are recorded rather than silently corrupting data. When something fails months later, you need to know what happened. Always test acquisition scripts on sample data before production runs. A bug in your collection pipeline can invalidate an entire dataset.
 
@@ -405,7 +405,7 @@ File format choices affect who can work with your data now and whether it remain
 
 <br>
 
-Format issues often surface during quality control. The @sec-quality-control panel below covers validation checks that can catch encoding problems, unexpected conversions, and structural inconsistencies early.
+Format issues often surface during quality control. The [2.4. Quality Control](#sec-quality-control){.mark} panel below covers validation checks that can catch encoding problems, unexpected conversions, and structural inconsistencies early.
 
 ::: {.container .my-4 }
 
@@ -521,7 +521,7 @@ Standards are community agreements on how to organize and describe research data
 
 - **Reporting guidelines** specify what methodological details to document for different study types. The [EQUATOR Network](https://www.equator-network.org/) maintains a searchable database of guidelines for clinical trials, observational studies, animal research, and many other study types. Following these ensures you capture everything others need to understand or replicate your work.
 
-- **Metadata standards** define what descriptive information to record and how to structure it. Scientific metadata describes how your data was produced: equipment specifications, acquisition parameters, protocols followed. This is distinct from discovery metadata (titles, keywords, descriptions) which you will prepare when sharing in [4. Preserve & Sharing](04_preserve_and_share.qmd){.mark}. Your field has conventions for which parameters matter. [FAIRsharing](https://fairsharing.org/) catalogs metadata standards by discipline.
+- **Metadata standards** define what descriptive information to record and how to structure it. Scientific metadata describes how your data was produced: equipment specifications, acquisition parameters, protocols followed. This is distinct from discovery metadata (titles, keywords, descriptions) which you will prepare when sharing in [4. Preserve & Share](04_preserve_and_share.qmd){.mark}. Your field has conventions for which parameters matter. [FAIRsharing](https://fairsharing.org/) catalogs metadata standards by discipline.
 
 <br>
 
