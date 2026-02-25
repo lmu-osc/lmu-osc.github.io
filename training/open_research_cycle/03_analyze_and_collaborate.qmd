@@ -76,6 +76,8 @@ While your LRZ GitLab account is associated with your LMU Munich affiliation, yo
 
 Manage your computational environment by explicitly recording the software, package versions, and dependencies required for your analyses, ensuring results can be reproduced across systems and over time. Tools such as packages managers (e.g. [Renv](https://rstudio.github.io/renv/) for R pacakges, [Conda](https://anaconda.org/channels/anaconda/packages/conda/overview) for Python packages) or broader containers (e.g. [Docker](https://www.docker.com/) or [Binder](https://mybinder.org/)) help stabilize workflows and prevent inconsistencies caused by packages or software updates.
 
+<br>
+
 For a R project repository:
 
 - **Activate Renv to keep track of all packages versions** (see [renv tutorial]()). This way, you or someone else can  reproduce your results on another computer or at a later time using the same R packages versions.
@@ -112,7 +114,7 @@ code publishing tuto card-->
 
 
 <details class="orc-details-panel">
-<summary><i class="bi bi-file-earmark-richtext"></i> 3.2. Results Reporting</summary>
+<summary><i class="bi bi-file-earmark-richtext"></i> 3.2. Reporting Results</summary>
 
 The reporting of results needs to be **computationally reproducible**, as well as **comprehensive and following reporting guidelines**, to allow statistical checks and meta analyses. <!-- something more here , example, explanation why, ect-->
 
@@ -124,14 +126,14 @@ A practical way to make reporting decisions transparent and traceable is to use 
 
 For users of R, Python, and Julia, **Quarto** has become the standard tool for creating reproducible reports, superseding R Markdown and enabling seamless **rendering to formats such as HTML, PDF, and Word** (see our [Quarto tutorial](https://lmu-osc.github.io/introduction-to-Quarto/)).
 
-#### Analysis Report: The Minimum Standard for Computational Reproducibility 
+#### Reproducible Analysis Report: The Minimum Standard for Computational Reproducibility 
 
 - **Create an analyses report with Quarto.** You should provide the analysis code that creates the results of the manuscript as a Quarto file to serve as documentation for the code (see [Quarto tutorial](https://lmu-osc.github.io/introduction-to-Quarto/)). This will facilitate your own revisions, code-review by your team, **reproducibility checks** by some journals, and verification of results reproducibility by other researchers. The code repository can be published with simulated, synthetic, or real data, depending on the project, together with the respective article (see [4. Preserve & Share](<!--internal link-->)). 
 
 This is currently the state-of-the-art method to showcase the computational reproducibility of a study and we recommend to adopt this practice at a minimum. 
 In reality, all reporting outputs such as manuscript, presentation and websites can be created in a reproducible fashion using Quarto:
 
-#### Manuscript: The Ultimate Reproducible Report
+#### Reproducible Manuscript: The Ultimate Reproducible Report
 
 If you do not want to break the reproducibility chain by copy and pasting new results, tables, and figures into e.g. a Word document, you can Write your entire manuscript in Quarto.
 
@@ -145,7 +147,7 @@ Some journals offer LaTeX or Word templates; you can adapt these by modifying Qu
 
 - **Adapt your workflow to your collaborators.** Ideally, all your team mates have also adopted the use of Git and GitHub or GitLab and the use of issues and branches to work collaboratively (see [3.2.1. Version Control](<!--internal link-->)). A compromise with collaborators who do not use Git is to render your draft manuscript to e.g. Word and share it through cloud-based collaborative document editing e.g. [LRZ Sync & Share](https://syncandshare.lrz.de/login) or [Google Docs](https://docs.google.com/) with collaborators using the suggestion / track changes mode. Then, the lead author transcribes all edits manually, or with the help of e.g. R packages such as `trackdown` or `officer`, and addresses all comments in their quarto version before re-rendering for a second round of revisions, potentially with additional analyses.
 
-#### Presentations & Websites: Further Reproducible Outputs for Outreach
+#### Reproducible Presentations & Websites: Further Reproducible Outputs for Outreach
 
 Using the same Quarto environment, you can also:
 
