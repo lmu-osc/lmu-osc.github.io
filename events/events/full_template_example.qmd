@@ -8,7 +8,7 @@ event:
   end_date: '2026-09-11'
   description: |
     Pandoc Lua success?
-    
+
   # time: '9:00-17:00'
   location:
     name: hello
@@ -26,3 +26,4 @@ filters:
     - testing_event_data.lua
 ---
 
+some more text here?

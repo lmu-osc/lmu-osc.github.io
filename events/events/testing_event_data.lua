@@ -155,6 +155,8 @@ local function build_event_data(meta)
   local event_data = {
     date_display = date_display,
     time = time,
+    start_date = start_date,
+    end_date = end_date,
     location_name = location_name,
     location_address = location_address,
     location_map_url = location_map_url,
