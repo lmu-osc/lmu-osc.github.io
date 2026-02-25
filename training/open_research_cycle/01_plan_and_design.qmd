@@ -40,7 +40,7 @@ include-in-header:
 </summary> 
 
 Any resource that inspire you or that you want to reuse and/or adapt must minimally be **cited using their DOIs** (and otherwise URL with author, date, and time of access) and you must **follow the license and/or usage agreement** provided by the authors. 
-A research output (e.g. data, code) without a license cannot be reused even if they appear publicly online.
+A research output (e.g. data, code) without a license or statement granting your permission for reuse cannot legally be reused even if they appear publicly online.
 
 ::: {.panel-tabset}
 
@@ -281,7 +281,7 @@ You may find **code available for reuse** archived on [Zenodo](https://zenodo.or
 <br>
 
 :::{.callout-important}
-Code publicly visible on GitHub without a license cannot be legally reused. Ask the authors to add an **open license** to their repository to allow reuse (they must add a file called LICENSE.txt with e.g. the Apache 2.0 license text - see our [code publishing tutorial](https://lmu-osc.github.io/code-publishing/choose_license.html) to learn more about licenses).
+Code publicly visible on GitHub without a license or equivalent text explicitly stating permission for reuse cannot be legally reused. The best is to ask the authors to add an **open license** to their repository to allow reuse (for this, they can for instance add a file called LICENSE.txt with e.g. the [Apache 2.0 license text](https://www.apache.org/licenses/LICENSE-2.0.txt) that allows reuse - see our [code publishing tutorial](https://lmu-osc.github.io/code-publishing/choose_license.html) to learn more about licenses).
 :::
 
 
