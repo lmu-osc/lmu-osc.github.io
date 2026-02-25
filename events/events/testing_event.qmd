@@ -8,7 +8,7 @@ event:
   end_date: '2026-09-11'
   description: |
     Save the date! Our annual Summer School will take place from September 7-11, 2026--more details to come!
-  time: '9:00-17:00'
+  # time: '9:00-17:00'
   location:
     name: 
     address: 
@@ -24,9 +24,4 @@ filters:
     - testing_event_data.lua
 ---
 
-
-<h4> in an h4 {{< meta event_data.has_end_date >}} </h4>    
- 
-{{< include example.html >}} 
- 
-{{< include info_boxes.html >}} 
+{{< include info_boxes.html >}}
