@@ -3,9 +3,15 @@ title: "4. Preserve & Share"
 description: "Archive research outputs, publish openly, obtain persistent identifiers, and maximize research impact"
 phase_order: 4
 sidebar: open-research-cycle
+number-depth: 4
+number-sections: true
+number-offset: [0,4,0]
 page-layout: full
 css: orc-styles.css
 title-block-style: none
+include-in-header:
+  - text: |
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 ---
 
 <div class="orc-phase-hero-compact">
@@ -26,7 +32,11 @@ title-block-style: none
 
 
 <details class="orc-details-panel">
-<summary><i class="bi bi-database-check"></i> 4.1. Data Sharing</summary>
+<summary markdown="1"><i class="bi bi-database-check"></i> 
+
+### Data Sharing {#sec-data-sharing}
+
+</summary>
 
 Sharing your data allows others to verify your findings, build on your work, and increase the impact of your research. But sharing does not always mean making everything publicly available. What you can share depends on the consent you obtained, the sensitivity of your data, and your ethics approval.
 
@@ -38,7 +48,7 @@ In Phase 2 you created documentation for yourself and collaborators. Now you pre
 
 ::: {.panel-tabset}
 
-### 4.1.1. Open vs Restricted
+#### 4.1.1. Open vs Restricted
 
 Not all data can or should be shared openly. Your sharing options depend on what consent participants gave and what your ethics approval permits.
 
@@ -52,7 +62,7 @@ When deciding, ask: What did participants consent to? What does your ethics appr
 
 <!-- TODO: tool card for decision tree -->
 
-### 4.1.2. Preparing Your Data
+#### 4.1.2. Preparing Your Data
 
 In Phase 2 you created a README and codebook for yourself and collaborators. Before sharing publicly, review them from the perspective of someone who knows nothing about your project.
 
@@ -76,10 +86,11 @@ Documentation, organization, and metadata
 <summary>Read more</summary>
 Comprehensive guide to managing research data following FAIR principles. Covers READMEs, codebooks, file formats, and standards.
 </details>
+
 :::
 :::
 
-### 4.1.3. Where to Deposit
+#### 4.1.3. Where to Deposit
 
 Choose a repository that suits your data type, your field's expectations, and your access requirements.
 
@@ -119,7 +130,7 @@ Free, open repository hosted by CERN. Accepts any file type, assigns DOIs, and i
 :::
 :::
 
-### 4.1.4. Data Licenses
+#### 4.1.4. Data Licenses
 
 A license tells others what they can do with your data. Without one, others cannot legally reuse your work, even if it is publicly available.
 
@@ -152,25 +163,29 @@ Covers licenses for data, code, and other research outputs with decision flowcha
 
 
 <details class="orc-details-panel">
-<summary><i class="bi bi-code-square"></i> 4.2. Code Publishing</summary>
+<summary><i class="bi bi-code-square"></i> 
+
+### Code Publishing {#sec-code-publishing}
+
+</summary>
 
 <!-- intro text here -->
 
 ::: {.panel-tabset}
 
-### 4.2.1. Preparing Your Repo
+#### 4.2.1. Preparing Your Repo
 
 <!-- readme for external users, clean history, remove sensitive data -->
 
-### 4.2.2. Simulated & Synthetic Data
+#### 4.2.2. Simulated & Synthetic Data
 
 <!-- data to run: real/sim/synth -->
 
-### 4.2.3. Code Licenses
+#### 4.2.3. Code Licenses
 
 <!-- licence (link to code-publishing tutorial) -->
 
-### 4.2.4. Archiving & DOIs
+#### 4.2.4. Archiving & DOIs
 
 <!-- zenodo workflow, DOI, link to https://lmu-osc.github.io/code-publishing/ -->
 
@@ -180,21 +195,25 @@ Covers licenses for data, code, and other research outputs with decision flowcha
 
 
 <details class="orc-details-panel">
-<summary><i class="bi bi-journal-arrow-up"></i> 4.3. Open Access Articles</summary>
+<summary><i class="bi bi-journal-arrow-up"></i> 
+
+### Open Access Articles {#sec-open-access-articles}
+
+</summary>
 
 <!-- intro text here -->
 
 ::: {.panel-tabset}
 
-### Your Rights
+#### Your Rights
 
 <!-- what publishers allow: openpolicyfinder -->
 
-### Green OA
+#### Green OA
 
 <!-- preprint/postprint workflow figure, institutional repos, embargo periods -->
 
-### Gold OA
+#### Gold OA
 
 <!-- APCs, LMU agreements -->
 
@@ -204,21 +223,25 @@ Covers licenses for data, code, and other research outputs with decision flowcha
 
 
 <details class="orc-details-panel">
-<summary><i class="bi bi-person-badge"></i> 4.4. Identity & Credit</summary>
+<summary><i class="bi bi-person-badge"></i> 
+
+### Identity & Credit {#sec-identity-credit}
+
+</summary>
 
 <!-- intro text here -->
 
 ::: {.panel-tabset}
 
-### 4.4.1. ORCID
+#### 4.4.1. ORCID
 
 <!-- ORCID, ROR IDs -->
 
-### 4.4.2. CRediT
+####  4.4.2. CRediT
 
 <!-- CRediT taxonomy, contributorship -->
 
-### 4.4.3. Connecting Your Work
+####  4.4.3. Connecting Your Work
 
 <!-- connect prereg → data → code → paper -->
 
@@ -228,9 +251,11 @@ Covers licenses for data, code, and other research outputs with decision flowcha
 </details>
 
 
-## <i class="bi bi-card-checklist"></i> Preservation Checklist
+
 
 ::: {.orc-gradient-box}
+
+## <i class="bi bi-card-checklist"></i> Preservation Checklist {.unnumbered}
 
 **Before Publication:**
 

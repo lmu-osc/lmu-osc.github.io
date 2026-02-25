@@ -6,7 +6,7 @@ phase_order: 1
 sidebar: open-research-cycle
 number-depth: 4
 number-sections: true
-number-offset: [2,1,0]
+number-offset: [0,1,0]
 page-layout: full
 css: orc-styles.css
 title-block-style: none   
@@ -33,7 +33,7 @@ include-in-header:
 
 
 <details class="orc-details-panel">
-<summary markdown="1" ><i class="bi bi-search"></i>
+<summary><i class="bi bi-search"></i>
 
 ### Explore and Reuse {#sec-explore-and-reuse}
 
@@ -377,7 +377,7 @@ Code publicly visible on GitHub without a license or equivalent text explicitly 
 
 
 <details class="orc-details-panel">
-<summary markdown="1"><i class="bi bi-shield-check"></i>
+<summary><i class="bi bi-shield-check"></i>
 
 ### Legal Requirements {#sec-legal-requirements}
 
@@ -548,7 +548,7 @@ For data protection guidance, contact the [LMU Data Protection Officer](https://
 
 
 <details class="orc-details-panel">
-<summary markdown="1"><i class="bi bi-folder2-open"></i>
+<summary><i class="bi bi-folder2-open"></i>
 
 ### Research Data Management Plans {#sec-research-data-management}
 
@@ -632,7 +632,7 @@ The specific questions vary by discipline, data type, and funder requirements. D
 
 
 <details class="orc-details-panel">
-<summary markdown="1"><i class="bi bi-clipboard-check"></i>
+<summary><i class="bi bi-clipboard-check"></i>
 
 ### Study Design & Analysis Plan {#sec-study-design-analysis-plan}
 

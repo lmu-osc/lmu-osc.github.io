@@ -3,9 +3,15 @@ title: "3. Analyze & Collaborate"
 description: "Create reproducible analyses, document workflows, collaborate effectively, and ensure computational reproducibility"
 phase_order: 3
 sidebar: open-research-cycle
+number-depth: 4
+number-sections: true
+number-offset: [0,3,0]
 page-layout: full
 css: orc-styles.css
 title-block-style: none
+include-in-header:
+  - text: |
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 ---
 
 <div class="orc-phase-hero-compact">
@@ -28,7 +34,11 @@ title-block-style: none
 
 
 <details class="orc-details-panel">
-<summary><i class="bi bi-gear-wide-connected"></i> 3.1. Data Processing & Analysis</summary>
+<summary><i class="bi bi-gear-wide-connected"></i> 
+
+### Data Processing & Analysis {#sec-data-processing-analysis}
+
+</summary>
 
 Data processing and analysis should be reproducible, independent of software, programming language, or operating system. 
 This is best achieved by favoring automated, **script-based workflows** over manual point-and-click procedures, supported by **adequate documentation** and shared code that allows others to regenerate results. 
@@ -36,17 +46,17 @@ Because analysis scripts are inherently iterative and evolve through corrections
 
 ::: {.panel-tabset}
 
-### 3.1.1. Programming
+#### 3.1.1. Programming
 
 - **Create self-contained project folder**. Include data, code, documentation, and outputs in a single structured environment, ensuring the project remains understandable, reproducible, and portable across systems and collaborators. If you use the free and open source software RStudio to manage your R project, your project directory (or folder) should contain a .Rproj file (see [R tutorial](https://lmu-osc.github.io/introduction-to-R/)). **Use relative paths** (i.e. `“./subfolder”`, where `.` represents the root of your .Rproj directory) or the library `here`, so the project stays portable to another environment
 - **Use a standard folder structure**. Your code repository should include a standard folder structure that make sense for your type of research, ideally shared across your team members. You can for instance use the [OSC research project template](https://github.com/lmu-osc/research-project-template). 
-- **Stop clicking, start coding**. Automatize all possible steps, including data acquisition (see [2.1. Data Collection](<!-- internal link-->)), data processing and transformation, data analyses, data visualization, and results reporting (see [3.2. Reproducible Reporting](<!-- internal link-->))
+- **Stop clicking, start coding**. Automatize all possible steps, including data acquisition (see [2.1. Data Collection](02_collect_and_manage.qmd#sec-data-collection){.mark}), data processing and transformation, data analyses, data visualization, and results reporting (see [3.2. Reproducible Reporting](#sec-reproducible-reporting){.mark})
 - **Structure, comment, and standardize your scripts.** R scripts themselves should follow current standards to increase their readability (see [Readable Code Lecture](<!-- should link to the internal page pat should create in the internal catalogue to include both slides and recording https://github.com/lmu-osc/lmu-osc.github.io/issues/375 -->)). Use meaningful names for variables, functions, and scripts. Add comments to your code explaining _why_ you made a decision, and define your own function rather than copy and pasting pieces of code which makes it hard to maintain error-free. 
 
 
 <!-- add R tuto card and readable code lecture card as learn more + OSC research project template as OSC Tool-->
 
-### 3.1.2. Version Control
+#### 3.1.2. Version Control
 
 Version control tracks changes to files over time. You can see what changed, when, and why. You can revert to previous versions. Collaborators can work without overwriting each other.
 
@@ -72,7 +82,7 @@ While your LRZ GitLab account is associated with your LMU Munich affiliation, yo
 
 <!-- add Git tuto card, github tuto card, gitlab lrz - Supported at LMU , LMU chat - Supported at LMU-->
 
-### 3.1.3. Computational Environment Management
+#### 3.1.3. Computational Environment Management
 
 Manage your computational environment by explicitly recording the software, package versions, and dependencies required for your analyses, ensuring results can be reproduced across systems and over time. Tools such as packages managers (e.g. [Renv](https://rstudio.github.io/renv/) for R pacakges, [Conda](https://anaconda.org/channels/anaconda/packages/conda/overview) for Python packages) or broader containers (e.g. [Docker](https://www.docker.com/) or [Binder](https://mybinder.org/)) help stabilize workflows and prevent inconsistencies caused by packages or software updates.
 
@@ -82,14 +92,14 @@ For a R project repository:
 
 - **Activate Renv to keep track of all packages versions** (see [renv tutorial]()). This way, you or someone else can  reproduce your results on another computer or at a later time using the same R packages versions.
 
-Before [4. Preserve & share](<!-- internal link -->):
+Before [4. Preserve & share](04_preserve_and_share.qmd){.mark}:
 
 - **Record your dependencies** in your README file for possible reconstruction with [repo2docker](https://repo2docker.readthedocs.io/en/latest/) or binder see [Code Publishing tutorial](https://lmu-osc.github.io/code-publishing/make_readme.html#nte-dependencies)
 
 <!--renv osc tuto card, add code publishing tuto card; as tools add binder, conda and docker tool card https://ree-gupta.github.io/lmu-osc.github.io/training/open_research_cycle/03_analyze_and_collaborate_website.html#environment-management -->
 
 
-### 3.1.4. Documentation
+#### 3.1.4. Documentation
 
 As with documentation for data (see [2.2.4. Documentation](<!-- internal link-->)), documentation for code makes it usable by your future self, your collaborators, and anyone who might reuse it. Six months from now, you will not remember what each script was about, in which order they should be run, which parameters to input in a function. 
 
@@ -101,7 +111,7 @@ As with documentation for data (see [2.2.4. Documentation](<!-- internal link-->
 
 <br>
 
-As with all documentation, your project repository’s README should be written early, initially for your near-future self to support efficient re-engagement after interruptions, then revised for internal team review, and ultimately expanded and refined for public sharing [see 4.2. Code Publishing](<!-- internal link-->).
+As with all documentation, your project repository’s README should be written early, initially for your near-future self to support efficient re-engagement after interruptions, then revised for internal team review, and ultimately expanded and refined for public sharing [see 4.2. Code Publishing](04_preserve_and_share.qmd#sec-code-publishing){.mark}.
 
 
 <!-- readable lecture card again
@@ -114,7 +124,11 @@ code publishing tuto card-->
 
 
 <details class="orc-details-panel">
-<summary><i class="bi bi-file-earmark-richtext"></i> 3.2. Reporting Results</summary>
+<summary><i class="bi bi-file-earmark-richtext"></i> 
+
+### Reporting Results {#sec-reporting-results}
+
+</summary>
 
 The reporting of results needs to be **computationally reproducible**, as well as **comprehensive and following reporting guidelines**, to allow statistical checks and meta analyses. <!-- something more here , example, explanation why, ect-->
 
@@ -128,7 +142,7 @@ For users of R, Python, and Julia, **Quarto** has become the standard tool for c
 
 #### Reproducible Analysis Report: The Minimum Standard for Computational Reproducibility 
 
-- **Create an analyses report with Quarto.** You should provide the analysis code that creates the results of the manuscript as a Quarto file to serve as documentation for the code (see [Quarto tutorial](https://lmu-osc.github.io/introduction-to-Quarto/)). This will facilitate your own revisions, code-review by your team, **reproducibility checks** by some journals, and verification of results reproducibility by other researchers. The code repository can be published with simulated, synthetic, or real data, depending on the project, together with the respective article (see [4. Preserve & Share](<!--internal link-->)). 
+- **Create an analyses report with Quarto.** You should provide the analysis code that creates the results of the manuscript as a Quarto file to serve as documentation for the code (see [Quarto tutorial](https://lmu-osc.github.io/introduction-to-Quarto/)). This will facilitate your own revisions, code-review by your team, **reproducibility checks** by some journals, and verification of results reproducibility by other researchers. The code repository can be published with simulated, synthetic, or real data, depending on the project, together with the respective article (see [4. Preserve & Share](04_preserve_and_share.qmd){.mark}). 
 
 This is currently the state-of-the-art method to showcase the computational reproducibility of a study and we recommend to adopt this practice at a minimum. 
 In reality, all reporting outputs such as manuscript, presentation and websites can be created in a reproducible fashion using Quarto:
@@ -161,18 +175,19 @@ Using the same Quarto environment, you can also:
 
 
 
-### 3.2.2. Reporting guidelines
+#### 3.2.2. Reporting guidelines
 
 
 </details>
 
 
 
-## <i class="bi bi-card-checklist"></i> Analysis & Collaboration Checklist
-
-To complete before repository and code peer-review by the research team and before the presentation of the results.
 
 ::: {.orc-gradient-box}
+
+## <i class="bi bi-card-checklist"></i> Analysis & Collaboration Checklist {.unnumbered}
+
+To complete before repository and code peer-review by the research team and before the presentation of the results.
 
 **Project repository:**
 
