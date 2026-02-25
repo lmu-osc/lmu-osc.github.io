@@ -8,8 +8,9 @@
 <div class="card-body">
 <h5 class="card-title"><i class="bi bi-calendar-event"></i> Date &amp; Time</h5>
 <p class="card-text">
-{{< meta event_data.event.date_display >}}<br />
-{{< meta event_data.event.time >}}
+{{< meta event_data.date_display >}}
+<br />
+{{< meta event_data.time >}}
 </p>
 </div>
 </div>
@@ -20,12 +21,11 @@
 <div class="card-body">
 <h5 class="card-title"><i class="bi bi-geo-alt"></i> Location</h5>
 <div class="location-text">
-<a href="{{< meta event_data.event.event_map_url >}}" target="_blank" style="text-decoration:none;color:inherit;">
 <div class="meta-value">
-{{< meta event_data.event.event_location_name >}}<br />
-{{< meta event_data.event.event_location_address >}}
+{{< meta event_data.location_name >}}
+<br />
+{{< meta event_data.location_address >}}
 </div>
-</a>
 </div>
 </div>
 </div>
@@ -35,8 +35,9 @@
 <div class="card-body">
 <h5 class="card-title"><i class="bi bi-laptop"></i> Format</h5>
 <p class="card-text">
-{{< meta event_data.event.format.type >}}<br />
-{{< meta event_data.event.format.detail >}}
+{{< meta event_data.format_type >}}
+<br />
+{{< meta event_data.format_detail >}}
 </p>
 </div>
 </div>
@@ -46,8 +47,9 @@
 <div class="card-body">
 <h5 class="card-title"><i class="bi bi-translate"></i> Language</h5>
 <p class="card-text">
-{{< meta event_data.event.event_language_primary >}}<br />
-{{< meta event_data.event.event_language_detail >}}
+{{< meta event_data.language_primary >}}
+<br />
+{{< meta event_data.language_detail >}}
 </p>
 </div>
 </div>

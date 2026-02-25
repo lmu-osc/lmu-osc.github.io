@@ -20,8 +20,7 @@ event:
     primary: English
     primary-code: en
     detail: en
+template: full_template.html
 filters:
     - testing_event_data.lua
 ---
-
-{{< include info_boxes.html >}}
