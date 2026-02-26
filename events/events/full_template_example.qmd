@@ -9,7 +9,7 @@ event:
   description: |
     Pandoc Lua success?
 
-  # time: '9:00-17:00'
+  time: '9:00-18:00'
   location:
     name: hello
     address: 
@@ -21,9 +21,48 @@ event:
     primary: English
     primary-code: en
     detail: en
+
+links:
+  registration: 
+  materials: 
+  workshop_website:
+event_description: |
+  Save the date! Our annual Summer School will take place from September 7-11, 2026--more details to come!
+instructors:
+  - name: 
+    url: ''
+
+helpers:
+  - name: test helper
+contact:
+  name: 
+  email: 
+organizers:
+  - name: hi
+presenters:
+  - name: test presenter
+    url: someurl.com
+  - name: test presenter 2
+    url: another.com
+host:
+  - name: ''
+    url: ''
+
 template: full_template.html
 filters:
-    - testing_event_data.lua
+    - create_date_display.lua
+    # - minimal_lua.lua
 ---
 
 some more text here?
+
+
+
+
+ 
+
+
+
+
+
+
