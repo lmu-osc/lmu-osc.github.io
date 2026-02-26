@@ -106,8 +106,9 @@ local function filter_people_list(people_list)
   for _, person in ipairs(people_list) do
     if type(person) == "table" then
       local name = safe_get(person, "name", "")
-      local url = safe_get(person, "url", "")
+      local url = normalize_external_url(safe_get(person, "url", ""))
       if not (is_blank(name) and is_blank(url)) then
+        person.url = url
         table.insert(filtered, person)
       end
     end
