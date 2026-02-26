@@ -17,10 +17,6 @@ local function trim(val)
   return s:match("^%s*(.-)%s*$")
 end
 
-local function has_text(val)
-  return trim(val) ~= ""
-end
-
 local function safe_get(tbl, key, default)
   if type(tbl) == "table" and tbl[key] ~= nil then
     return tbl[key]
@@ -105,21 +101,6 @@ local function build_event_data(meta)
 
   local date_display = build_date_display(start_date, end_date)
 
-  local show_date_display = has_text(date_display)
-  local show_time = has_text(time)
-  local show_location_name = has_text(location_name)
-  local show_location_address = has_text(location_address)
-  local show_location_map_url = has_text(location_map_url)
-  local show_format_type = has_text(format_type)
-  local show_format_detail = has_text(format_detail)
-  local show_language_primary = has_text(language_primary)
-  local show_language_detail = has_text(language_detail)
-
-  local show_date_time = show_date_display or show_time
-  local show_location = show_location_name or show_location_address or show_location_map_url
-  local show_format = show_format_type or show_format_detail
-  local show_language = show_language_primary or show_language_detail
-
   local event_data = {
     date_display = date_display,
     time = time,
@@ -131,27 +112,7 @@ local function build_event_data(meta)
     format_type = format_type,
     format_detail = format_detail,
     language_primary = language_primary,
-    language_detail = language_detail,
-    show_date_time = show_date_time,
-    show_location = show_location,
-    show_format = show_format,
-    show_language = show_language,
-    card_class_date_time = show_date_time and "" or "d-none",
-    card_class_location = show_location and "" or "d-none",
-    card_class_format = show_format and "" or "d-none",
-    card_class_language = show_language and "" or "d-none",
-    date_display_class = show_date_display and "" or "d-none",
-    time_class = show_time and "" or "d-none",
-    location_name_class = show_location_name and "" or "d-none",
-    location_address_class = show_location_address and "" or "d-none",
-    format_type_class = show_format_type and "" or "d-none",
-    format_detail_class = show_format_detail and "" or "d-none",
-    language_primary_class = show_language_primary and "" or "d-none",
-    language_detail_class = show_language_detail and "" or "d-none",
-    location_link_class = show_location_map_url and "" or "d-none",
-    location_plain_class = show_location_map_url and "d-none" or "",
-    has_any_info_box = show_date_time or show_location or show_format or show_language,
-    wrapper_class = (show_date_time or show_location or show_format or show_language) and "" or "d-none"
+    language_detail = language_detail
   }
 
   return event_data
