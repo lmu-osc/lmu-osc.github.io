@@ -90,12 +90,20 @@
       <div class="card-body">
         <h5 class="card-title"><i class="bi bi-geo-alt"></i> Location</h5>
         <div class="location-text">
-          <a href="$event.location.map_url$" target="_blank" class="meta-value">
+          $if(event.location.map_url)$
+           <a href="$event.location.map_url$" target="_blank" class="meta-value">
             $event.location.name$
             <br />
             $event.location.address$
           </a>
-        </div>
+          $else$
+          <div class="meta-value">
+            $event.location.name$
+            <br />
+            $event.location.address$
+          </div>
+          $endif$
+         </div>
       </div>
     </div>
 
