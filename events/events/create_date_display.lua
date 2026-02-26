@@ -93,6 +93,32 @@ local function normalize_external_url(value)
   return "https://" .. url
 end
 
+local function is_blank(value)
+  return trim(value) == ""
+end
+
+local function filter_people_list(people_list)
+  if not people_list or type(people_list) ~= "table" then
+    return false
+  end
+
+  local filtered = pandoc.List({})
+  for _, person in ipairs(people_list) do
+    if type(person) == "table" then
+      local name = safe_get(person, "name", "")
+      local url = safe_get(person, "url", "")
+      if not (is_blank(name) and is_blank(url)) then
+        table.insert(filtered, person)
+      end
+    end
+  end
+
+  if #filtered == 0 then
+    return false
+  end
+
+  return filtered
+end
 
 local function build_event_data(meta)
   local event = safe_get(meta, "event", {})
@@ -119,6 +145,13 @@ local function build_event_data(meta)
 end
 function Meta(meta)
   meta.event_data = build_event_data(meta)
+
+  meta.presenters = filter_people_list(safe_get(meta, "presenters", nil))
+  meta.instructors = filter_people_list(safe_get(meta, "instructors", nil))
+  meta.helpers = filter_people_list(safe_get(meta, "helpers", nil))
+  meta.organizers = filter_people_list(safe_get(meta, "organizers", nil))
+  meta.host = filter_people_list(safe_get(meta, "host", nil))
+
   return meta
 end
 
