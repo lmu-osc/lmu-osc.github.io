@@ -122,23 +122,13 @@ end
 
 local function build_event_data(meta)
   local event = safe_get(meta, "event", {})
-  local links = safe_get(meta, "links", nil)
 
   local start_date = trim(safe_get(event, "start_date", ""))
   local end_date = trim(safe_get(event, "end_date", ""))
   local date_display = build_date_display(start_date, end_date)
 
-  local links_registration = normalize_external_url(safe_get(links, "registration", ""))
-  local links_materials = normalize_external_url(safe_get(links, "materials", ""))
-  local links_workshop_website = normalize_external_url(safe_get(links, "workshop_website", ""))
-
   local event_data = {
     date_display = date_display,
-    links = {
-      registration = links_registration,
-      materials = links_materials,
-      workshop_website = links_workshop_website
-    }
   }
 
   return event_data
@@ -146,6 +136,11 @@ end
 function Meta(meta)
   meta.event_data = build_event_data(meta)
 
+  meta.links = {
+    registration = normalize_external_url(safe_get(meta, "links", {})["registration"]),
+    materials = normalize_external_url(safe_get(meta, "links", {})["materials"]),
+    workshop_website = normalize_external_url(safe_get(meta, "links", {})["workshop_website"])
+  }
   meta.presenters = filter_people_list(safe_get(meta, "presenters", nil))
   meta.instructors = filter_people_list(safe_get(meta, "instructors", nil))
   meta.helpers = filter_people_list(safe_get(meta, "helpers", nil))

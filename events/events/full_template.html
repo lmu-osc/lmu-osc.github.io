@@ -127,15 +127,15 @@
 
 
   <div class="register-box d-flex gap-2 justify-content-center">
-    $if(event_data.links.registration)$
+    $if(links.registration)$
     <div class="register-box d-flex gap-2 justify-content-center">
-      <a href="$event_data.links.registration$" target="_blank" class="btn btn-primary btn-pop">
+      <a href="$links.registration$" target="_blank" class="btn btn-primary btn-pop">
         <i class="bi bi-box-arrow-up-left"></i> Register
       </a>
     </div>
     $endif$
 
-    $if(event_data.links.materials)$
+    $if(links.materials)$
     <div class="register-box d-flex gap-2 justify-content-center">
       <a href="$links.materials$" target="_blank" class="btn btn-outline-primary btn-pop">
         <i class="bi bi-download"></i> Materials
@@ -150,9 +150,9 @@
   <div class="event-description">
     <h4>Overview</h4>
     $event_description$
-    $if(event_data.links.workshop_website)$
+    $if(links.workshop_website)$
     <p>
-      See the <a href="$event_data.links.workshop_website$" target="_blank">workshop website</a> for more information.
+      See the <a href="$links.workshop_website$" target="_blank">workshop website</a> for more information.
     </p>
     $endif$
   </div>
