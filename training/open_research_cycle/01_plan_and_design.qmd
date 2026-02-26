@@ -7,6 +7,8 @@ sidebar: open-research-cycle
 number-depth: 4
 number-sections: true
 number-offset: [0,1,0]
+filters: 
+    - assets/remove_anchor.lua
 page-layout: full
 css: orc-styles.css
 title-block-style: none   
@@ -44,7 +46,7 @@ A research output (e.g. data, code) without a license or statement granting your
 
 ::: {.panel-tabset}
 
-#### 1.1.1. Articles <!--make this, and other tabs title everywhere, a shareable url, cross referencable within this website  -->
+#### 1.1.1. Articles  <!--make this, and other tabs title everywhere, a shareable url, cross referencable within this website  -->
 
 * **Review existing literature** on open source registries like [OpenAlex](https://openalex.org/) to come up with a well-founded research question,
 * **Use a reference manager** to keep track of your bibliography. [Zotero](https://www.zotero.org/) is an open source software that can be integrated within RStudio to write reproducible manuscripts seamlessly, formatting your bibliography in any format you want (see [3. Analyze & Collaborate](03_analyze_and_collaborate.qmd){.mark}).
@@ -65,7 +67,7 @@ HOW TO ADD CARDS?
 <!-- main container div -->
 ::: {.container .my-4 }
 
-<h4 class="fs-5"><i class="bi bi-mortarboard"></i> LEARN MORE</h4>
+<h4 class="fs-5 no-anchor"><i class="bi bi-mortarboard"></i> LEARN MORE</h4>
 
 <!-- row for Learn More section -->
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
@@ -944,8 +946,9 @@ To complete before presenting your final study plan to your research group and, 
 
 ::: {.d-flex .justify-content-center .mt-4 .orc-checklist-download .phase-1}
 
-<a href="#" class="btn btn-outline-secondary btn-sm">Download checklist <i class="bi bi-download"></i></a>
+<a href="assets/checklists/Plan.Design.Checklist.docx" class="btn btn-outline-secondary btn-sm">Download checklist <i class="bi bi-download"></i></a>
 <!-- I prepared a  downloadable file with checklist in word doc + citation Ihle, Gupta, Schoenbrodt 2026 + licence CC BY SA in footnote + link to this webpage - how to I include it here for download?-->
+
 :::
 
 
