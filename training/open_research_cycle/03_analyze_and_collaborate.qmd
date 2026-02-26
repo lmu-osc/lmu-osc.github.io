@@ -50,11 +50,83 @@ Because analysis scripts are inherently iterative and evolve through corrections
 
 - **Create self-contained project folder**. Include data, code, documentation, and outputs in a single structured environment, ensuring the project remains understandable, reproducible, and portable across systems and collaborators. If you use the free and open source software RStudio to manage your R project, your project directory (or folder) should contain a .Rproj file (see [R tutorial](https://lmu-osc.github.io/introduction-to-R/)). **Use relative paths** (i.e. `“./subfolder”`, where `.` represents the root of your .Rproj directory) or the library `here`, so the project stays portable to another environment
 - **Use a standard folder structure**. Your code repository should include a standard folder structure that make sense for your type of research, ideally shared across your team members. You can for instance use the [OSC research project template](https://github.com/lmu-osc/research-project-template). 
-- **Stop clicking, start coding**. Automatize all possible steps, including data acquisition (see [2.1. Data Collection](02_collect_and_manage.qmd#sec-data-collection){.mark}), data processing and transformation, data analyses, data visualization, and results reporting (see [3.2. Reproducible Reporting](#sec-reproducible-reporting){.mark})
-- **Structure, comment, and standardize your scripts.** R scripts themselves should follow current standards to increase their readability (see [Readable Code Lecture](<!-- should link to the internal page pat should create in the internal catalogue to include both slides and recording https://github.com/lmu-osc/lmu-osc.github.io/issues/375 -->)). Use meaningful names for variables, functions, and scripts. Add comments to your code explaining _why_ you made a decision, and define your own function rather than copy and pasting pieces of code which makes it hard to maintain error-free. 
+- **Stop clicking, start coding**. Automatize all possible steps, including data acquisition (see [2.1. Data Collection](02_collect_and_manage.qmd#sec-data-collection){.mark}), data processing and transformation, data analyses, data visualization, and results reporting (see [3.2. Reporting Results](#sec-reproducible-reporting){.mark})
+- **Structure, comment, and standardize your scripts.** R scripts themselves should follow current standards to increase their readability (see [Readable Code Lecture](https://lmu-osc.github.io/training/reproducible-processes/readable-code.html)). Use meaningful names for variables, functions, and scripts. Add comments to your code explaining _why_ you made a decision, and define your own function rather than copy and pasting pieces of code which makes it hard to maintain error-free. 
+
+::: {.container .my-4}
+
+<h4 class="fs-5"><i class="bi bi-mortarboard"></i> LEARN MORE</h4>
+
+::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
+
+<!-- card -->
+::: {.col}
+
+<div class="card orc-card-tool h-100 position-relative">
+<span class="orc-card-tool-badge recommended">OSC Tutorial</span>
+<div class="orc-card-tool-icons mb-2">
+<div class="orc-card-tool-icon icon-1">
+<img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+</div>
+<div class="orc-card-tool-icon icon-2">
+<img src="https://www.r-project.org/logo/Rlogo.svg" class="img-fluid" alt="R logo">
+</div>
+</div>
+<h4 class="card-title">R Tutorial</h4>
+<p class="card-text">Process your data reproducibly in R. (3h)</p>
+<a href="https://lmu-osc.github.io/introduction-to-R/" class="stretched-link" target="_blank" rel="noopener"> </a>
+</div>
+
+:::
+
+<!-- card -->
+::: {.col}
+
+<div class="card orc-card-tool h-100 position-relative">
+<span class="orc-card-tool-badge recommended">OSC Lecture</span>
+<div class="orc-card-tool-icons mb-2">
+<div class="orc-card-tool-icon icon-1">
+<img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+</div>
+</div>
+<h4 class="card-title">Readable code lecture</h4>
+<p class="card-text">Tips to write clear, understandable, and maintainable code.(1h)</p>
+<a href="https://lmu-osc.github.io/training/reproducible-processes/readable-code.html" class="stretched-link" target="_blank" rel="noopener"> </a>
+</div>
+
+:::
 
 
-<!-- add R tuto card and readable code lecture card as learn more + OSC research project template as OSC Tool-->
+:::
+
+<h4 class="fs-5 mt-3"><i class="bi bi-tools"></i> TOOLS & RESOURCES</h4>
+
+::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
+
+<!-- 1st card -->
+::: {.col}
+
+<div class="card orc-card-tool h-100 position-relative">
+<span class="orc-card-tool-badge recommended">OSC Tool</span>
+<div class="orc-card-tool-icons mb-2">
+<div class="orc-card-tool-icon icon-1">
+<img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+</div>
+<div class="orc-card-tool-icon icon-2">
+<img src="https://cdn.simpleicons.org/github"  class="img-fluid" alt="GitHub logo">
+</div>
+</div>
+<h4 class="card-title">Research Project Template</h4> <!-- not sure why there is a white space after this title - can it be removed?-->
+<p class="card-text">Project folder separating raw & processed data, code, and outputs.</p>
+<a href="https://github.com/lmu-osc/research-project-template" class="stretched-link" target="_blank" rel="noopener"></a>
+</div>
+
+:::
+
+:::
+
+:::
+
 
 #### 3.1.2. Version Control
 
@@ -64,7 +136,7 @@ In a version controlled workflow, you back up your local git repositories on eit
 
 <br>
 
-**Learn to create git branches to collaborate on a same piece of code in a unique repository.** i.e. temporary copies where you can work without breaking the original source code, which you later merge back to the main branch (see [advanced Git tutorial](<!-- internal link to internal card with this new page on catalogue Pat needs to create in issue #375 -->)). 
+**Learn to create git branches to collaborate on a same piece of code in a unique repository.** i.e. temporary copies where you can work without breaking the original source code, which you later merge back to the main branch (see [Advanced Git tutorial](https://lmu-osc.github.io/training/reproducible-processes/advanced-git.html)). 
 
 **Maintain efficient communication to coordinate collaborative work.** GitHub or GitLab facilitate collaboration through "issues" (a precise description of something to fix), "discussions" (asynchronous thinking through figuring out how to resolve a problem), and can still very well resolve "conflicts" (i.e. collaborators wanting to merge changes on the exact same line of script). To complement this, LMU Munich offers [LMU chat (Matrix)](https://www.lmu.de/de/die-lmu/struktur/zentrale-universitaetsverwaltung/informations-und-kommunikationstechnik-dezernat-vi/it-servicedesk/zentrale-it-angebote/lmu-chat-matrix/), a secured open source chat service with all LMU members on which you can also invite external collaborators. 
 
@@ -80,11 +152,110 @@ While your LRZ GitLab account is associated with your LMU Munich affiliation, yo
 
 :::
 
-<!-- add Git tuto card, github tuto card, gitlab lrz - Supported at LMU , LMU chat - Supported at LMU-->
+
+
+::: {.container .my-4 }
+
+<h4 class="fs-5"><i class="bi bi-mortarboard"></i> LEARN MORE</h4>
+
+<!-- row for Learn More section -->
+::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
+
+<!-- card -->
+::: {.col}
+
+<div class="card orc-card-tool h-100 position-relative">
+<span class="orc-card-tool-badge recommended">OSC Tutorial</span>
+<div class="orc-card-tool-icons mb-2">
+<div class="orc-card-tool-icon icon-1">
+<img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+</div>
+<div class="orc-card-tool-icon icon-2">
+<img src="https://www.svgrepo.com/show/303548/git-icon-logo.svg" class="img-fluid" alt="Git logo">
+</div>
+</div>
+<h4 class="card-title">Git Tutorial</h4>
+<p class="card-text">Use version control system Git from within RStudio. (2h)</p>
+<a href="https://lmu-osc.github.io/Introduction-RStudio-Git-GitHub/" class="stretched-link" target="_blank" rel="noopener"> </a>
+</div>
+
+:::
+
+<!-- card -->
+::: {.col}
+
+<div class="card orc-card-tool h-100 position-relative">
+<span class="orc-card-tool-badge recommended">OSC Tutorial</span>
+<div class="orc-card-tool-icons mb-2">
+<div class="orc-card-tool-icon icon-1">
+<img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+</div>
+<div class="orc-card-tool-icon icon-2">
+<img src="https://cdn.simpleicons.org/github" class="img-fluid" alt="GitHub logo">
+</div>
+</div>
+<h4 class="card-title">GitHub Tutorial</h4>
+<p class="card-text">Collaborative coding with GitHub and RStudio (1h)</p>
+<a href="https://lmu-osc.github.io/Collaborative-RStudio-GitHub/" class="stretched-link" target="_blank" rel="noopener"> </a>
+</div>
+
+:::
+
+:::
+
+<h4 class="fs-5 mt-3"><i class="bi bi-tools"></i> TOOLS & RESOURCES</h4>
+<!-- row for Tools & Resources section -->
+
+::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
+
+<!-- card -->
+::: {.col}
+
+<div class="card orc-card-tool h-100 position-relative">
+<span class="orc-card-tool-badge recommended">Supported at LMU</span>
+<div class="orc-card-tool-icons mb-2">
+<div class="orc-card-tool-icon icon-1">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvQdlBHTP2IOvBeJ_S8I9z9S2BX0Qqn0twjw&s" class="img-fluid" alt="LRZ logo">
+</div>
+<div class="orc-card-tool-icon icon-2">
+<img src="https://cdn.simpleicons.org/gitlab" class="img-fluid" alt="GitLab logo">
+</div>
+</div>
+<h4 class="card-title">LRZ Gitlab</h4>
+<p class="card-text">Institutional Git hosting for LMU Munich.</p>
+<a href="https://gitlab.lrz.de/" class="stretched-link" target="_blank" rel="noopener"></a>
+</div>
+
+:::
+
+<!-- card -->
+::: {.col}
+
+<div class="card orc-card-tool h-100 position-relative">
+<span class="orc-card-tool-badge recommended">Supported at LMU</span>
+<div class="orc-card-tool-icons mb-2">
+<div class="orc-card-tool-icon icon-1">
+<img src="https://cms-cdn.lmu.de/assets/img/favicon.ico" class="img-fluid" alt="LMU logo">
+</div>
+<div class="orc-card-tool-icon icon-2">
+<img src="https://element.io/assets-32bb636196f91ed59d7a49190e26b42c/5ef25c0d30ee3108da4c25e9/5f365d3197194f8c73b00112_logo-mark-primary.svg" class="img-fluid" alt="Element logo">
+</div>
+</div>
+<h4 class="card-title">LMU Chat (Matrix)</h4>
+<p class="card-text">Institutional open source chat service for LMU Munich.</p>
+<a href="https://www.lmu.de/en/about-lmu/structure/central-university-administration/it-services-division/it-service-desk/central-it-services/lmu-chat-matrix/" class="stretched-link" target="_blank" rel="noopener"></a>
+</div>
+
+:::
+
+:::
+
+:::
+
 
 #### 3.1.3. Computational Environment Management
 
-Manage your computational environment by explicitly recording the software, package versions, and dependencies required for your analyses, ensuring results can be reproduced across systems and over time. Tools such as packages managers (e.g. [Renv](https://rstudio.github.io/renv/) for R pacakges, [Conda](https://anaconda.org/channels/anaconda/packages/conda/overview) for Python packages) or broader containers (e.g. [Docker](https://www.docker.com/) or [Binder](https://mybinder.org/)) help stabilize workflows and prevent inconsistencies caused by packages or software updates.
+Manage your computational environment by explicitly recording the software, package versions, and dependencies required for your analyses, ensuring results can be reproduced across systems and over time. Tools such as packages managers (e.g. [Renv](https://rstudio.github.io/renv/) for R packages, [Conda](https://anaconda.org/channels/anaconda/packages/conda/overview) for Python packages) or broader containers (e.g. [Docker](https://www.docker.com/) or [Binder](https://mybinder.org/)) help stabilize workflows and prevent inconsistencies caused by packages or software updates.
 
 <br>
 
@@ -96,7 +267,21 @@ Before [4. Preserve & share](04_preserve_and_share.qmd){.mark}:
 
 - **Record your dependencies** in your README file for possible reconstruction with [repo2docker](https://repo2docker.readthedocs.io/en/latest/) or binder see [Code Publishing tutorial](https://lmu-osc.github.io/code-publishing/make_readme.html#nte-dependencies)
 
-<!--renv osc tuto card, add code publishing tuto card; as tools add binder, conda and docker tool card https://ree-gupta.github.io/lmu-osc.github.io/training/open_research_cycle/03_analyze_and_collaborate_website.html#environment-management -->
+<!-- learn  more:
+
+renv OSC Tutorial https://lmu-osc.github.io/introduction-to-renv/ https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8BF2VLSH1vzKlH0TOWxOjEURG4oADGhxuPg&s
+
+code publishing  https://lmu-osc.github.io/code-publishing/ OSC Tutorial
+
+tools:
+
+binder https://mybinder.org/favicon.ico  https://mybinder.org/ Create an executable environments in your browser for your Git repository 
+
+docker https://cdn.simpleicons.org/docker https://www.docker.com/ Containerization for full reproducibility
+
+repo2docker https://repo2docker.readthedocs.io/en/latest/_static/favicon.ico https://repo2docker.readthedocs.io/en/latest/ 
+
+ -->
 
 
 #### 3.1.4. Documentation
@@ -114,11 +299,12 @@ As with documentation for data (see [2.2.4. Documentation](<!-- internal link-->
 As with all documentation, your project repository’s README should be written early, initially for your near-future self to support efficient re-engagement after interruptions, then revised for internal team review, and ultimately expanded and refined for public sharing [see 4.2. Code Publishing](04_preserve_and_share.qmd#sec-code-publishing){.mark}.
 
 
-<!-- readable lecture card again
+<!--  learn more: 
+readable lecture card again
 data dictionary tuto card 
 code publishing tuto card-->
 
-:::
+
 
 </details>
 
@@ -271,11 +457,11 @@ Using the same Quarto environment, you can also:
 <div class="card orc-card-tool h-100 position-relative">
 <div class="orc-card-tool-icons mb-2">
 <div class="orc-card-tool-icon icon-2">
-<img src="https://cdn.simpleicons.org/github" class="img-fluid" alt="GitHub logo">
+<img src="https://www.svgrepo.com/show/303548/git-icon-logo.svg" class="img-fluid" alt="GitHub logo">
 </div>
 </div>
-<h4 class="card-title">GitHub Advanced Tutorial</h4>
-<p class="card-text">Use branches and advance git collaborative features (2h)</p>
+<h4 class="card-title">Advanced Git Tutorial</h4>
+<p class="card-text">Use Git branches and advance GitHub collaborative features (2h)</p>
 <a href="https://lmu-osc.github.io/training/reproducible-processes/advanced-git.html" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
 
