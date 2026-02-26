@@ -51,7 +51,7 @@ host:
   - name: ''
     url: ''
 
-template: full_template.html
+template: event-template.html
 filters:
     - create_date_display.lua
 ---
