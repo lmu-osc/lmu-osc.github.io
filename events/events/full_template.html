@@ -80,7 +80,7 @@ $endif$
 <p class="card-text">
 $event_data.date_display$
 <br />
-$event_data.time$
+$event.time$
 </p>
 </div>
 </div>
@@ -92,9 +92,9 @@ $event_data.time$
 <h5 class="card-title"><i class="bi bi-geo-alt"></i> Location</h5>
 <div class="location-text">
 <div class="meta-value">
-$event_data.location_name$
+$event.location.name$
 <br />
-$event_data.location_address$
+$event.location.address$
 </div>
 </div>
 </div>
@@ -105,9 +105,9 @@ $event_data.location_address$
 <div class="card-body">
 <h5 class="card-title"><i class="bi bi-laptop"></i> Format</h5>
 <p class="card-text">
-$event_data.format_type$
+$event.format.type$
 <br />
-$event_data.format_detail$
+$event.format.detail$
 </p>
 </div>
 </div>
@@ -117,9 +117,9 @@ $event_data.format_detail$
 <div class="card-body">
 <h5 class="card-title"><i class="bi bi-translate"></i> Language</h5>
 <p class="card-text">
-$event_data.language_primary$
+$event.language.primary$
 <br />
-$event_data.language_detail$
+$event.language.detail$
 </p>
 </div>
 </div>
@@ -127,10 +127,27 @@ $event_data.language_detail$
 
 
 
+$for(helpers)$
+$it.name$
+$endfor$
+
+<br>
+
+<ul>  
+$for(presenters)$
+<li>$it.name$, $it.url$</li>
+$endfor$
+</ul>
 
 
-
-
+<br>
+$if(organizers)$
+<ul>  
+$for(organizers)$
+<li>$it.name$, $it.url$</li>
+$endfor$
+</ul>
+$endif$
 
 $body$
 
