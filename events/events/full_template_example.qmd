@@ -51,9 +51,9 @@ host:
   - name: ''
     url: ''
 
-template: event-template.html
+template: templates/event-template.html
 filters:
-    - create_date_display.lua
+    - templates/create_date_display.lua
 ---
 
 <!-- Extra content, namely executable R, Python, and Julia code can be added here if desired, and will be rendered at the bottom of the Overview header, but before the presenters/instructors/helpers/contact sections. -->

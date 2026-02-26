@@ -60,8 +60,8 @@ presenters:
 host:
   - name: ''
     url: ''
-template: event-template.html
+template: templates/event-template.html
 filters:
-    - create_date_display.lua
+    - templates/create_date_display.lua
 ---
 
