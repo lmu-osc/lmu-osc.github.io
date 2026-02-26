@@ -47,24 +47,17 @@ host:
   - name: LMU Open Science Center 
     url: ''
 
+template: templates/event-template.html
+filters:
+    - templates/process-event-yaml.lua
 ---
-<!-- MANDAORY SECTION START  -->
-
-{{< include templates/_setup.qmd >}}
-{{< include templates/_info_boxes.qmd >}}
-{{< include templates/_register_button.qmd >}}
-<!-- MANDAORY SECTION END  -->
 
 <br>
 
-<!-- DETAILED EVENT DESCRIPTION HERE OR USE THE TEMPLATE BELOW TO INCLUDE THE STANDARD DESCRIPTION SECTION -->
-<!-- {{< include templates/_event_description.qmd >}} -->
+ 
 
 <p>The Open Science Initiative Psychology (OSIP) and the LMU Open Science Center offer a hands-on workshop for scientists of all career levels on the topic of "Advanced Power Analysis" on July 22, 2022 from 9 am to 12 pm (speakers: Moritz Fischer and Prof. Dr. Felix Schönbrodt). After an introduction to the general principle of power analysis, we will focus on how to determine the size of the expected effect (or the smallest effect of interest) and how power analysis is possible in more complex designs (e.g. multilevel models). There will be space for participants to discuss their own questions.</p><p>Participation in the workshop is free of charge for members of institutions that support the LMU Open Science Center. Seats will be allocated with priority to sponsoring members; if there are free seats beyond that, they will be allocated on a first-come, first-served basis. (Note: The Department of Psychology is a sustaining member of the OSC). After registration, it will be confirmed whether attendance in presence is possible.</p><p>Depending on the composition of the audience, the event will be held in German or English.</p><p> </p><p> </p><div class="g-clear"></div>
 
 
 
-<!-- MANDAORY SECTION START  -->
-<!-- _event_description.qmd template should always be at bottom -->
-{{< include templates/_instructors_helpers_contact.qmd >}}
-<!-- MANDAORY SECTION END  -->
+ 

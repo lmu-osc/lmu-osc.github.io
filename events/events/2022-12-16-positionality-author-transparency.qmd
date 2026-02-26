@@ -49,18 +49,14 @@ host:
   - name: ReproducibiliTea Team
     url: ''
 
+template: templates/event-template.html
+filters:
+    - templates/process-event-yaml.lua
 ---
-<!-- MANDAORY SECTION START  -->
-
-{{< include templates/_setup.qmd >}}
-{{< include templates/_info_boxes.qmd >}}
-{{< include templates/_register_button.qmd >}}
-<!-- MANDAORY SECTION END  -->
 
 <br>
 
-<!-- DETAILED EVENT DESCRIPTION HERE OR USE THE TEMPLATE BELOW TO INCLUDE THE STANDARD DESCRIPTION SECTION -->
-<!-- {{< include templates/_event_description.qmd >}} -->
+ 
 
 <p>The Journal Club: “ReproducibiliTea” at LMU Munich continues with its twelfth meeting, the third one for this semester. It will already take place this Friday and we will discuss "Positionality statements". </p><p><strong>Procedure:</strong>  A member of our organising team will give a short introduction at the beginning to introduce the topic of this session. We will then continue with an open discussion in which you can contribute your own thoughts and questions.</p><p>It would be helpful to have read the announced paper, but there is no obligation to do so. If you do not have time to read the entire paper, we recommend that you focus on the end of the article, which begins with the heading "Moving Forward" (pages 1303-1306). This part contains a brief summary of the previous sections as well as the author's recommendations (e.g. including positionality statements in publications). We prepared the following <strong>key questions</strong> to guide you through the discussion and also provide some guidance while reading the paper. For each question, you can think about the suggestions from the paper, but also bring in your own ideas:</p><ul>
 <li>Which information could (and should) be included in positionality statements?</li>
@@ -80,7 +76,4 @@ host:
 
 
 
-<!-- MANDAORY SECTION START  -->
-<!-- _event_description.qmd template should always be at bottom -->
-{{< include templates/_instructors_helpers_contact.qmd >}}
-<!-- MANDAORY SECTION END  -->
+ 

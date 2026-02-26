@@ -42,24 +42,17 @@ host:
   - name: LMU Open Science Center 
     url: ''
 
+template: templates/event-template.html
+filters:
+    - templates/process-event-yaml.lua
 ---
-<!-- MANDAORY SECTION START  -->
-
-{{< include templates/_setup.qmd >}}
-{{< include templates/_info_boxes.qmd >}}
-{{< include templates/_register_button.qmd >}}
-<!-- MANDAORY SECTION END  -->
 
 <br>
 
-<!-- DETAILED EVENT DESCRIPTION HERE OR USE THE TEMPLATE BELOW TO INCLUDE THE STANDARD DESCRIPTION SECTION -->
-<!-- {{< include templates/_event_description.qmd >}} -->
+ 
 
 <p>Der Workshop soll helfen, typische Fehler bei der Antragstellung von Ethikanträgen bei der Ethikkommission am Department Psychologie und Pädagogik zu vermeiden und wie man es jeweils besser machen kann (Positivbeispiele), um rascher zu einem Votum zu kommen. Er richtet sich an Forscher:innen, die im besten Fall selbst schon mindestens einen Ethikantrag gestellt haben (etwas Vorerfahrung erwünscht).</p><p><strong>Voraussetzung:</strong> Idealerweise haben die Teilnehmer bereits Erfahrungen mit der Einreichung mindestens eines Ethikantrags gesammelt.</p><p><strong>Logistik:</strong> Das Format der Sitzung ist hybrid (Sie können online oder persönlich teilnehmen). Die Veranstaltung findet auf Deutsch statt.</p><p> </p><p> </p><div class="g-clear"></div>
 
 
 
-<!-- MANDAORY SECTION START  -->
-<!-- _event_description.qmd template should always be at bottom -->
-{{< include templates/_instructors_helpers_contact.qmd >}}
-<!-- MANDAORY SECTION END  -->
+ 

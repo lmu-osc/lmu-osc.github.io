@@ -29,11 +29,11 @@ organizers:
 
 host:
   - name: Open Science Initiative in Medicine
----
 
-{{< include templates/_setup.qmd >}}
-{{< include templates/_info_boxes.qmd >}}
-{{< include templates/_register_button.qmd >}}
+template: templates/event-template.html
+filters:
+  - templates/process-event-yaml.lua
+---
 
 
 ## Event Details

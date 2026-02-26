@@ -54,18 +54,14 @@ presenters:
   - name: Dr. Xenia Schmalz
     url: ''
 
+template: templates/event-template.html
+filters:
+    - templates/process-event-yaml.lua
 ---
-<!-- MANDAORY SECTION START  -->
-
-{{< include templates/_setup.qmd >}}
-{{< include templates/_info_boxes.qmd >}}
-{{< include templates/_register_button.qmd >}}
-<!-- MANDAORY SECTION END  -->
 
 <br>
 
-<!-- DETAILED EVENT DESCRIPTION HERE OR USE THE TEMPLATE BELOW TO INCLUDE THE STANDARD DESCRIPTION SECTION -->
-<!-- {{< include templates/_event_description.qmd >}} -->
+ 
 
 <p> </p><p>We are incredibly excited to announce the second workshop held by the LMU Open Science Initiative in Medicine (OSIM):</p><p style="text-align: center;"><strong>"Open Science - Reproduciblity, Data Sharing, Practical Aspects"</strong></p><p>This time the workshop will be online, consisting of two parts:</p><ul>
 <li><a href="https://www.youtube.com/channel/UCEFq307_Zijcmw1Xto-eqeg">Input videos on YouTube </a></li>
@@ -75,7 +71,4 @@ presenters:
 
 
 
-<!-- MANDAORY SECTION START  -->
-<!-- _event_description.qmd template should always be at bottom -->
-{{< include templates/_instructors_helpers_contact.qmd >}}
-<!-- MANDAORY SECTION END  -->
+ 

@@ -89,18 +89,14 @@ presenters:
   - name: Dr. Irene Haslinger
     url: ''
 
+template: templates/event-template.html
+filters:
+    - templates/process-event-yaml.lua
 ---
-<!-- MANDAORY SECTION START  -->
-
-{{< include templates/_setup.qmd >}}
-{{< include templates/_info_boxes.qmd >}}
-{{< include templates/_register_button.qmd >}}
-<!-- MANDAORY SECTION END  -->
 
 <br>
 
-<!-- DETAILED EVENT DESCRIPTION HERE OR USE THE TEMPLATE BELOW TO INCLUDE THE STANDARD DESCRIPTION SECTION -->
-<!-- {{< include templates/_event_description.qmd >}} -->
+ 
 
 <p><img height="390" style="display: block; margin-left: auto; margin-right: auto;" width="380" src="flyer_ss24.png" alt="FlyerOpenScienceSS24"></p><p> </p><p>The LMU &amp; MPG Open Science Summer School 2024 is organised by the <a href="https://www.osc.uni-muenchen.de/index.html">LMU Open Science Center (OSC)</a> and the <a href="https://www.mpdl.mpg.de/en/">Max Planck Digital Library (MPDL)</a>.</p><p>This intensive 5-day Open Science Summer School provides early career researchers with the knowledge and skills to make their research more <strong>transparent, reproducible </strong>and<strong> credible</strong> in the eyes of their peers, the public and funding agencies.</p><p>By joining (or accessing the material after the school), you will learn how to:</p><ul>
 <li>clarify your research design and set up your statistical plans in advance of collecting data to prevent biases in analyses, with the help of <strong>preregistration </strong>and<strong> data simulation</strong>
@@ -129,7 +125,4 @@ presenters:
 
 
 
-<!-- MANDAORY SECTION START  -->
-<!-- _event_description.qmd template should always be at bottom -->
-{{< include templates/_instructors_helpers_contact.qmd >}}
-<!-- MANDAORY SECTION END  -->
+ 

@@ -52,18 +52,14 @@ presenters:
   - name: Gracia Prüm
     url: ''
 
+template: templates/event-template.html
+filters:
+    - templates/process-event-yaml.lua
 ---
-<!-- MANDAORY SECTION START  -->
-
-{{< include templates/_setup.qmd >}}
-{{< include templates/_info_boxes.qmd >}}
-{{< include templates/_register_button.qmd >}}
-<!-- MANDAORY SECTION END  -->
 
 <br>
 
-<!-- DETAILED EVENT DESCRIPTION HERE OR USE THE TEMPLATE BELOW TO INCLUDE THE STANDARD DESCRIPTION SECTION -->
-<!-- {{< include templates/_event_description.qmd >}} -->
+ 
 
 <p>The ReproducibiliTea journal club at LMU Munich continues after a long summer break with the first session for this semester. It will take place this Friday and consists of an introductory session to Open Science. Its purpose is to introduce new people to Open Science and our journal club but also give an overview of the topic for those who are already familiar with it. Of course, we are also happy if people join us who are already experts in the field of Open Science, which will only make the discussion more interesting.</p><p><strong>Procedure: </strong>Two members of the organising team, Laura Goetz and Gracia Prüm, will give an introductory talk on Open Science and the replication crisis and summarise the paper by Munafò et al. There will then be an open discussion where you can contribute your own thoughts and questions. Finally, there will be time to get to know each other and talk in smaller groups.</p><p><strong>About the journal club: </strong><a href="../../meetups/reproducibilitea/index.html" title="ReproducibiliTea Journal Club">Here</a> you can find further information about the concept of the journal club.</p><p>You are cordially invited to attend our upcoming meetings! To stay updated and receive notifications about these gatherings and the selected papers, you can either subscribe to our mailing list by clicking on this link: <a href="https://lists.lrz.de/mailman/listinfo/reproducibilitea">https://lists.lrz.de/mailman/listinfo/reproducibilitea</a>, or you can send an email to <a class="g-link-mail" href="mailto:reproducibilitea.munich@gmail.com" title="Send email to: reproducibilitea.munich@gmail.com">reproducibilitea.munich@gmail.com</a>. There is no requirement to have read the designated paper before each session, although it could be beneficial.</p><p>The organisation team is looking forward to seeing you at one of the next journal club sessions.</p><p>Organisation team:</p><ul style="list-style-type: square;">
 <li>Laura Goetz, Graduate student in Medicine and Psychology</li>
@@ -77,7 +73,4 @@ presenters:
 
 
 
-<!-- MANDAORY SECTION START  -->
-<!-- _event_description.qmd template should always be at bottom -->
-{{< include templates/_instructors_helpers_contact.qmd >}}
-<!-- MANDAORY SECTION END  -->
+ 

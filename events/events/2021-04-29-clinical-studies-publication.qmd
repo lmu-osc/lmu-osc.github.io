@@ -42,18 +42,14 @@ presenters:
   - name: Dr. Anja Baumgartner
     url: ''
 
+template: templates/event-template.html
+filters:
+    - templates/process-event-yaml.lua
 ---
-<!-- MANDAORY SECTION START  -->
-
-{{< include templates/_setup.qmd >}}
-{{< include templates/_info_boxes.qmd >}}
-{{< include templates/_register_button.qmd >}}
-<!-- MANDAORY SECTION END  -->
 
 <br>
 
-<!-- DETAILED EVENT DESCRIPTION HERE OR USE THE TEMPLATE BELOW TO INCLUDE THE STANDARD DESCRIPTION SECTION -->
-<!-- {{< include templates/_event_description.qmd >}} -->
+ 
 
 <p>We are incredibly excited to announce the third workshop held by the LMU Open Science Initiative in Medicine (OSIM):</p><p style="text-align: center;"><strong>"Publication of clinical studies"</strong></p><p>The workshop will be online, consisting of two lectures followed by an open discussion:</p><ul>
 <li>Dr. Till Bruckner (Founder of <a href="https://www.transparimed.org/">TranspariMED</a>): "Research waste and evidence distortion in medicine: Missing clinical trial results in Munich and beyond?"</li>
@@ -65,7 +61,4 @@ presenters:
 
 
 
-<!-- MANDAORY SECTION START  -->
-<!-- _event_description.qmd template should always be at bottom -->
-{{< include templates/_instructors_helpers_contact.qmd >}}
-<!-- MANDAORY SECTION END  -->
+ 

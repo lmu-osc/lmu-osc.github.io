@@ -44,18 +44,14 @@ presenters:
   - name: Dr. Malika Ihle
     url: ''
 
+template: templates/event-template.html
+filters:
+    - templates/process-event-yaml.lua
 ---
-<!-- MANDAORY SECTION START  -->
-
-{{< include templates/_setup.qmd >}}
-{{< include templates/_info_boxes.qmd >}}
-{{< include templates/_register_button.qmd >}}
-<!-- MANDAORY SECTION END  -->
 
 <br>
 
-<!-- DETAILED EVENT DESCRIPTION HERE OR USE THE TEMPLATE BELOW TO INCLUDE THE STANDARD DESCRIPTION SECTION -->
-<!-- {{< include templates/_event_description.qmd >}} -->
+ 
 
 <p>The Journal Club: “ReproducibiliTea” at LMU Munich continues with its seventh meeting to discuss how we can foster Open Science within our university. The organisation team is happy to announce that Dr. Malika Ihle (LMU Munich) will start with an introduction to the topic (roughly 20-30min). We will then continue with an open discussion in which you can contribute your own thoughts and questions.</p><p>The session including the open discussion afterwards will focus on general and concrete ideas on how to promote Open Science at a local level. Instead of recommending a paper as the basis for our discussion, we would simply ask you to think about some ideas to the following <strong>key questions</strong>:</p><ul>
 <li>What are the most effective measures to enforce open science practices in your field?</li>
@@ -71,7 +67,4 @@ presenters:
 
 
 
-<!-- MANDAORY SECTION START  -->
-<!-- _event_description.qmd template should always be at bottom -->
-{{< include templates/_instructors_helpers_contact.qmd >}}
-<!-- MANDAORY SECTION END  -->
+ 

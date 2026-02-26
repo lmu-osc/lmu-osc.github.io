@@ -47,18 +47,14 @@ host:
   - name: LMU Open Science Center
     url: ''
 
+template: templates/event-template.html
+filters:
+    - templates/process-event-yaml.lua
 ---
-<!-- MANDAORY SECTION START  -->
-
-{{< include templates/_setup.qmd >}}
-{{< include templates/_info_boxes.qmd >}}
-{{< include templates/_register_button.qmd >}}
-<!-- MANDAORY SECTION END  -->
 
 <br>
 
-<!-- DETAILED EVENT DESCRIPTION HERE OR USE THE TEMPLATE BELOW TO INCLUDE THE STANDARD DESCRIPTION SECTION -->
-<!-- {{< include templates/_event_description.qmd >}} -->
+ 
 
 <p>Good scientific practice in empirical disciplines nowadays goes beyond the avoidance of bad practices, such as plagiarism or data fabrication: science is expected to be reproducible, funders and<br>journals increasingly demand open data as a precondition for funding and publication, and the need for preregistration of studies expands beyond the medical sciences. More generally, open research refers to efforts to ensure that the research process is transparent, with equitable access for all to learn, understand, contextualise, build upon, or even assess or verify the research.</p><p>In the last few years, many novel approaches, tools, and technologies have emerged that allow for a comprehensive representation of the research process that goes far beyond descriptions of research methods and results as found in traditional scientific articles. Open research practices have the potential to revolutionise the way research outputs are communicated, and to facilitate research collaborations in an unprecedented manner. However, adopting these practices requires knowledge and skills that are not usually taught in undergraduate or graduate degree programmes.</p><p>To start closing this gap, the LMU Open Science Center, supported by the LMU Faculty of Biology, and with guest instructors from the Society for Open, Reliable, and Transparent Ecology and Evolutionary biology, offer a three days crash school to guide early career researchers (<strong>MSc. students, PhD students, and postdocs</strong>) towards an open, transparent, and reproducible research workflow.</p><p> <strong>Programme</strong></p><p>The three days crash course will consist of a series of lectures and workshops on the following topics:</p><ul>
 <li><strong>Replicability crisis &amp; Open Science Framework</strong></li>
@@ -79,7 +75,4 @@ host:
 
 
 
-<!-- MANDAORY SECTION START  -->
-<!-- _event_description.qmd template should always be at bottom -->
-{{< include templates/_instructors_helpers_contact.qmd >}}
-<!-- MANDAORY SECTION END  -->
+ 

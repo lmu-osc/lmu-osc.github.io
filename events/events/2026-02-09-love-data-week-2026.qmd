@@ -58,20 +58,14 @@ host:
   - name: LMU Research Funding Unit
     url: ''
 
+template: templates/event-template.html
+filters:
+    - templates/process-event-yaml.lua
 ---
 
-<!-- MANDAORY SECTION START  -->
 
 
-{{< include templates/_setup.qmd >}}
-{{< include templates/_info_boxes.qmd >}}
-{{< include templates/_register_button.qmd >}}
-<!-- MANDAORY SECTION END  -->
-
-
-
-<!-- DETAILED EVENT DESCRIPTION HERE OR USE THE TEMPLATE BELOW TO INCLUDE THE STANDARD DESCRIPTION SECTION -->
-<!-- {{< include templates/_event_description.qmd >}} -->
+ 
 
 <p>The topic of research data management (RDM) is present in many areas of scientific work. For several years now, Love Data Week has been raising awareness of current developments in research data and its management worldwide. Numerous information and training events take place during this week-long event.</p>
 
@@ -144,7 +138,4 @@ https://forschungsdaten.info/fdm-im-deutschsprachigen-raum/love-data-week-2026/
 
 <div class="g-clear"></div>
 
-<!-- MANDAORY SECTION START  -->
-<!-- _event_description.qmd template should always be at bottom -->
-{{< include templates/_instructors_helpers_contact.qmd >}}
-<!-- MANDAORY SECTION END  -->
+ 
