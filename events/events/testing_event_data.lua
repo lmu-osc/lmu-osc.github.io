@@ -81,38 +81,13 @@ end
 
 local function build_event_data(meta)
   local event = safe_get(meta, "event", {})
-  local location = safe_get(event, "location", {})
-  local format = safe_get(event, "format", {})
-  local language = safe_get(event, "language", {})
 
   local start_date = trim(safe_get(event, "start_date", ""))
   local end_date = trim(safe_get(event, "end_date", ""))
-  local time = trim(safe_get(event, "time", ""))
-
-  local location_name = trim(safe_get(location, "name", ""))
-  local location_address = trim(safe_get(location, "address", ""))
-  local location_map_url = trim(safe_get(location, "map_url", ""))
-
-  local format_type = trim(safe_get(format, "type", ""))
-  local format_detail = trim(safe_get(format, "detail", ""))
-
-  local language_primary = trim(safe_get(language, "primary", ""))
-  local language_detail = trim(safe_get(language, "detail", ""))
-
   local date_display = build_date_display(start_date, end_date)
 
   local event_data = {
     date_display = date_display,
-    time = time,
-    start_date = start_date,
-    end_date = end_date,
-    location_name = location_name,
-    location_address = location_address,
-    location_map_url = location_map_url,
-    format_type = format_type,
-    format_detail = format_detail,
-    language_primary = language_primary,
-    language_detail = language_detail
   }
 
   return event_data
