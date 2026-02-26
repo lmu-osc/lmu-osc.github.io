@@ -41,18 +41,14 @@ host:
   - name: Open Science Initiative in Psychology (OSIP)
     url: ''
 
+template: templates/event-template.html
+filters:
+    - templates/process-event-yaml.lua
 ---
-<!-- MANDAORY SECTION START  -->
-
-{{< include templates/_setup.qmd >}}
-{{< include templates/_info_boxes.qmd >}}
-{{< include templates/_register_button.qmd >}}
-<!-- MANDAORY SECTION END  -->
 
 <br>
 
-<!-- DETAILED EVENT DESCRIPTION HERE OR USE THE TEMPLATE BELOW TO INCLUDE THE STANDARD DESCRIPTION SECTION -->
-<!-- {{< include templates/_event_description.qmd >}} -->
+ 
 
 <p>The <a>LMU Open Science Initiative in Psychology (OSIP)</a> cordially invites to the online workshop "Tips and tools for a reproducible workflow?" led and organized by <a href="../../members/individual_members/lmu-members/zygar-hoffmann/index.html" title="Zygar-Hoffmann">Dr. Caroline Hygar-Hoffmann</a> and <a>Moritz Fischer</a>.</p><p>In a mix of input and hand-on sessions you can learn more about how to design your workflow in research projects in a way that you as well as everyone who will be involved with your projects (e.g. project members, reviewers, or your research community) will be able to reproduce it later and you will work more efficiently.</p><p>The workshop will take place as an online-meeting on Zoom and consist of two afternoons on November 10th (Day 1) and November 24th (Day 2), 2021. On each day the session will last around three hours, starting from 2pm and ending around 5pm.</p><p>The sessions cover an introduction and practical sessions on the following topics:</p><ul style="list-style-type: square;">
 <li>Traceable and reproducible data management (Day 1)</li>
@@ -66,7 +62,4 @@ host:
 
 
 
-<!-- MANDAORY SECTION START  -->
-<!-- _event_description.qmd template should always be at bottom -->
-{{< include templates/_instructors_helpers_contact.qmd >}}
-<!-- MANDAORY SECTION END  -->
+ 

@@ -40,24 +40,17 @@ presenters:
   - name: Dr. Mathijs Vleugel
     url: ''
 
+template: templates/event-template.html
+filters:
+    - templates/process-event-yaml.lua
 ---
-<!-- MANDAORY SECTION START  -->
-
-{{< include templates/_setup.qmd >}}
-{{< include templates/_info_boxes.qmd >}}
-{{< include templates/_register_button.qmd >}}
-<!-- MANDAORY SECTION END  -->
 
 <br>
 
-<!-- DETAILED EVENT DESCRIPTION HERE OR USE THE TEMPLATE BELOW TO INCLUDE THE STANDARD DESCRIPTION SECTION -->
-<!-- {{< include templates/_event_description.qmd >}} -->
+ 
 
 <p>We will welcome the Head of Helmholtz Open Science Office, Dr. Mathijs Vleugel, to present the Helmholtz open science strategy and the activities of his office. This will be followed by discussions about possible strategies that can be implemented at the LMU.</p><p>The meeting can be followed by the LMU Open Science Center’s annual member’s meeting. All invited.</p><div class="g-clear"></div>
 
 
 
-<!-- MANDAORY SECTION START  -->
-<!-- _event_description.qmd template should always be at bottom -->
-{{< include templates/_instructors_helpers_contact.qmd >}}
-<!-- MANDAORY SECTION END  -->
+ 

@@ -58,18 +58,14 @@ presenters:
   - name: Eva Vivalt
     url: ''
 
+template: templates/event-template.html
+filters:
+    - templates/process-event-yaml.lua
 ---
-<!-- MANDAORY SECTION START  -->
-
-{{< include templates/_setup.qmd >}}
-{{< include templates/_info_boxes.qmd >}}
-{{< include templates/_register_button.qmd >}}
-<!-- MANDAORY SECTION END  -->
 
 <br>
 
-<!-- DETAILED EVENT DESCRIPTION HERE OR USE THE TEMPLATE BELOW TO INCLUDE THE STANDARD DESCRIPTION SECTION -->
-<!-- {{< include templates/_event_description.qmd >}} -->
+ 
 
 <p>We are incredibly excited to announce an interdisciplinary workshop by the <a>LMU Center for Advanced Studies (CAS)</a> which is co-organized by the <a href="../../index.html" title="eOpen Science Center">LMU Open Science Center (OSC)</a>:</p><p> </p><p style="text-align: center;"><strong>"Prediction, Registration, and Replication of Scientific Findings"</strong></p><p style="text-align: center;"><strong><br></strong></p><p>The workshop aims to bring together researchers from several disciplines to discuss recent developments in the agenda of transparent and reproducible science. It consists of presentation for around 40 minutes each followed by short discussions with the audience. Each day of the workshop closes with a general discussion. Among others, the following topics are covered by the workshop:</p><ul>
 <li>Preregistration and Pre-analysis plan</li>
@@ -81,7 +77,4 @@ presenters:
 
 
 
-<!-- MANDAORY SECTION START  -->
-<!-- _event_description.qmd template should always be at bottom -->
-{{< include templates/_instructors_helpers_contact.qmd >}}
-<!-- MANDAORY SECTION END  -->
+ 

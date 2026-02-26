@@ -44,18 +44,14 @@ host:
   - name: ReproducibiliTea Team
     url: ''
 
+template: templates/event-template.html
+filters:
+    - templates/process-event-yaml.lua
 ---
-<!-- MANDAORY SECTION START  -->
-
-{{< include templates/_setup.qmd >}}
-{{< include templates/_info_boxes.qmd >}}
-{{< include templates/_register_button.qmd >}}
-<!-- MANDAORY SECTION END  -->
 
 <br>
 
-<!-- DETAILED EVENT DESCRIPTION HERE OR USE THE TEMPLATE BELOW TO INCLUDE THE STANDARD DESCRIPTION SECTION -->
-<!-- {{< include templates/_event_description.qmd >}} -->
+ 
 
 <p>The interdisciplinary journal club “ReproJucibiliTea” will be launched every 3-4 weeks and address main questions and current topics concerning Open Science and the credibility of research findings. The idea - originated from Great Britain - was already developed in many other countries using the name "ReproducibiliTea". The slogan of the new Journal-Club at LMU Munich is "ReproJuicebiliTea" matching the covered topics (Reproducibility &amp; Open Science) and the extended selection of drinks. Tea, juice and small snacks are provided to live up to the slogan. Everybody is welcome to bring their own food and drinks and thus connect the journal club with their lunch break.</p><p><br>On December 18th, 2019, the first session of the ReproJucibiliTea took place at Leopoldstrasse 13. Around 15 participants from different scientific fields (e.g. psychology, statistics, political sciences) including students, doctoral candidates and professors met to discuss the following chosen paper as a typical introduction to problems of credibility in science:</p><p><br>Ioannidis, J. P. A. (2005). Why Most Published Research Findings Are<br>False. PLoS Medicine, 2(8), 6. <a href="https://doi.org/10.1371/journal.pmed.0020124">https://doi.org/10.1371/journal.pmed.0020124</a></p><p> </p><p>In the second session solutions to improve the reproducibility and robustness of research will be discussed in the context of an introductory paper to Open Science.</p><ul style="list-style-type: square;">
 <li>When? Wednesday, 29.01. 12.30-14 s.t.</li>
@@ -87,7 +83,4 @@ host:
 
 
 
-<!-- MANDAORY SECTION START  -->
-<!-- _event_description.qmd template should always be at bottom -->
-{{< include templates/_instructors_helpers_contact.qmd >}}
-<!-- MANDAORY SECTION END  -->
+ 

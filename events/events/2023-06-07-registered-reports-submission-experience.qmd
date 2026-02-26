@@ -39,24 +39,17 @@ host:
   - name: LMU Open Science Center
     url: ''
 
+template: templates/event-template.html
+filters:
+    - templates/process-event-yaml.lua
 ---
-<!-- MANDAORY SECTION START  -->
-
-{{< include templates/_setup.qmd >}}
-{{< include templates/_info_boxes.qmd >}}
-{{< include templates/_register_button.qmd >}}
-<!-- MANDAORY SECTION END  -->
 
 <br>
 
-<!-- DETAILED EVENT DESCRIPTION HERE OR USE THE TEMPLATE BELOW TO INCLUDE THE STANDARD DESCRIPTION SECTION -->
-<!-- {{< include templates/_event_description.qmd >}} -->
+ 
 
 <p>The LMU Open Science Center is pleased to welcome Dr Gilad Feldman (Department of Psychology, University of Hong Kong) to offer a workshop for scientists of all career levels (from MSc) from any confirmatory quantitative research, on the topic of Registered Report.</p><p>Typically, there is more than one right way to evaluate empirical data. One way to deal with this methodological flexibility are sensitivity analyses. In this short workshop, we will discuss when sensitivity analyses can be useful, what they can look like in practice, and how they can be embedded in scientific publications.</p><p>Registered Reports (<a href="https://www.cos.io/initiatives/registered-reports" target="_blank">https://www.cos.io/initiatives/registered-reports</a>) are a publication process now adopted by over 300 journals in psychological science and beyond, in which Stage 1 journal peer review occurs on a pre-registration plan prior to any data collection. Once the pre¬registration passes peer review and is approved, the journal grants authors an in-principle acceptance guaranteeing the publication of the article provided that data collection and analysis follows and intended plan. This emphasizes design, methods, and rigor, addressing issues of reviewers' and publication bias with publication of findings regardless of data collection outcomes, with the Stage 2 peer review focused solely on ensuring adherence to the Stage 1 plan (or documenting deviations).</p><p>‎"Peer Community in Registered Report"‎ (PCI-RR; <a href="https://rr.peercommunityin.org/" target="_blank">https://rr.peercommunityin.org/</a>) is a new initiative launched in 2021 that builds on Registered Reports and is aimed at improving further on Registered Reports. It provides community open identified peer-review on posted Registered Report Stage 1 preprints, led by open-science trained recommenders (editors), with in-principle acceptance from the community endorsed for publication by a variety of open-science supportive journals. This initiative also includes an option for a "scheduled review" path which allows timely community expert open-science supportive peer review within two weeks, short enough to fit into an academic year thesis schedule. PCIRR is nothing short of a revolution in science.</p><p>With guided thesis students and an early-career researcher team building on work by undergraduate students in my courses, in the last two years we submitted over 20 PCIRR manuscripts, with some already published, and most already granted an in-principle acceptance. Overall, it has been a very positive and rewarding experience for the students and the team. This is part of a large-scale replications project of over 100 classic studies in judgment and decision-making and social psychology. Information on this project and how to join us can be found on: <a href="https://mgto.org/core-team/" target="_blank">https://mgto.org/core-team/</a></p><p>In this workshop I will share my experience with Registered Reports, PCIRR, and working on Registered Reports with students and early-career researchers. I will go over relevant templates and guides from our many open collaborative resources (<a href="https://mgto.org/resources/" target="_blank">https://mgto.org/resources/</a>), going over best practices and examples of Registered Reports. Finally, and most importantly, we’ll aim to write a simple Replication Registered Report together, hands-on, to demonstrate the process – step by step.</p><p><strong>Participants</strong>: The targeted audience are scientists of all career levels (from MSc) from any confirmatory quantitative research</p><p><strong>Requirement</strong>: Participants should bring their own laptop.</p><p><strong>Instructor</strong>: Dr. Gilad Feldman (Department of Psychology, University of Hong Kong)</p><p>The event will be held in English. </p><div class="g-clear"></div>
 
 
 
-<!-- MANDAORY SECTION START  -->
-<!-- _event_description.qmd template should always be at bottom -->
-{{< include templates/_instructors_helpers_contact.qmd >}}
-<!-- MANDAORY SECTION END  -->
+ 

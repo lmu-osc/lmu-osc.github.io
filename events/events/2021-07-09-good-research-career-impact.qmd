@@ -41,18 +41,14 @@ host:
   - name: ReproducibiliTea Team
     url: ''
 
+template: templates/event-template.html
+filters:
+    - templates/process-event-yaml.lua
 ---
-<!-- MANDAORY SECTION START  -->
-
-{{< include templates/_setup.qmd >}}
-{{< include templates/_info_boxes.qmd >}}
-{{< include templates/_register_button.qmd >}}
-<!-- MANDAORY SECTION END  -->
 
 <br>
 
-<!-- DETAILED EVENT DESCRIPTION HERE OR USE THE TEMPLATE BELOW TO INCLUDE THE STANDARD DESCRIPTION SECTION -->
-<!-- {{< include templates/_event_description.qmd >}} -->
+ 
 
 <p>After a longer break, the Journal Club: “ReproJuicebiliTea” at LMU Munich will be relaunched with its third meeting to discuss a current pre-print about quality standards and incentive structures in science and possible ways to bring them together. The organisation team is happy to announce that one of the paper’s authors, Daniel Leising, will give an introductory talk to this session and participate in the open discussion afterwards:</p><p>Participants can use the following <strong>key questions</strong> to prepare for the discussion:</p><ul>
 <li>Which aspects should be part of a high-quality scientific article in general, regarding empirical research as well as any kind of review?</li>
@@ -68,7 +64,4 @@ host:
 
 
 
-<!-- MANDAORY SECTION START  -->
-<!-- _event_description.qmd template should always be at bottom -->
-{{< include templates/_instructors_helpers_contact.qmd >}}
-<!-- MANDAORY SECTION END  -->
+ 

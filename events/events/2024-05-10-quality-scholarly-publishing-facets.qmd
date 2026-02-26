@@ -45,18 +45,14 @@ presenters:
   - name: Veronika Reinertshofer
     url: ''
 
+template: templates/event-template.html
+filters:
+    - templates/process-event-yaml.lua
 ---
-<!-- MANDAORY SECTION START  -->
-
-{{< include templates/_setup.qmd >}}
-{{< include templates/_info_boxes.qmd >}}
-{{< include templates/_register_button.qmd >}}
-<!-- MANDAORY SECTION END  -->
 
 <br>
 
-<!-- DETAILED EVENT DESCRIPTION HERE OR USE THE TEMPLATE BELOW TO INCLUDE THE STANDARD DESCRIPTION SECTION -->
-<!-- {{< include templates/_event_description.qmd >}} -->
+ 
 
 <p><span class="dunkelrot"><strong>The slildes can be downloaded <a href="../../members/osim/osim_predatorypublishing_2024.pdf" title="OSIM_PredatoryPublishing_2024">here</a></strong></span></p><p>The relevance and validity of the sciences as well as the reputation of scholars are more and more questioned, at best, or put in disrepute, at worst. Upholding the highest quality standards in scholarly communication is thus of vital importance for scholarship as well as for safeguarding the integrity of the scholarly commons and the scholarly ecosystem. Predatory publishing has gained much prominence in recent years as one new persistent phenomenon that undermines the foundation of scholarly publishing and its principles and standards. On the 10th of May you are invited to a lively discussion and exchange on this matter. Veronika Reinertshofer (UB LMU) Susanne Luger (JKU Linz, Project 'Predatory Publishing', Austrians Transition to Open Access 2) and Clara Ginther (University of Veterinary Medicine, Vienna, Project 'Predatory Publishing', Austrians Transition to Open Access 2) will provide short inputs on quality and scholarly publishing as well as predatory publishing. This is interlaced with opportunities for discussion and exploration. The aim is to initiate an ongoing dialogue on how to address these questionable practices which are ever-evolving and changing.</p><p><strong>Instructors:</strong></p><ul>
 <li>
@@ -70,7 +66,4 @@ presenters:
 
 
 
-<!-- MANDAORY SECTION START  -->
-<!-- _event_description.qmd template should always be at bottom -->
-{{< include templates/_instructors_helpers_contact.qmd >}}
-<!-- MANDAORY SECTION END  -->
+ 

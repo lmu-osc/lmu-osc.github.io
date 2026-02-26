@@ -45,18 +45,14 @@ presenters:
   - name: Maximilian Frank
     url: ''
 
+template: templates/event-template.html
+filters:
+    - templates/process-event-yaml.lua
 ---
-<!-- MANDAORY SECTION START  -->
-
-{{< include templates/_setup.qmd >}}
-{{< include templates/_info_boxes.qmd >}}
-{{< include templates/_register_button.qmd >}}
-<!-- MANDAORY SECTION END  -->
 
 <br>
 
-<!-- DETAILED EVENT DESCRIPTION HERE OR USE THE TEMPLATE BELOW TO INCLUDE THE STANDARD DESCRIPTION SECTION -->
-<!-- {{< include templates/_event_description.qmd >}} -->
+ 
 
 <p>The Journal Club: “ReproducibiliTea” at LMU Munich continues with its eighth meeting to discuss Open Science knowledge and prevalence of QRPs among students. The organisation team is happy to announce that one of the paper’s and the position paper's authors, Maximilian Frank, will give an introductory talk to this session and participate in the open discussion afterwards:</p><p>Participants can use the following <strong>key questions</strong> to prepare for the discussion:</p><ul>
 <li>How prevalent are the different QRPs among students and what are the reasons for these prevalence rates?</li>
@@ -72,7 +68,4 @@ presenters:
 
 
 
-<!-- MANDAORY SECTION START  -->
-<!-- _event_description.qmd template should always be at bottom -->
-{{< include templates/_instructors_helpers_contact.qmd >}}
-<!-- MANDAORY SECTION END  -->
+ 

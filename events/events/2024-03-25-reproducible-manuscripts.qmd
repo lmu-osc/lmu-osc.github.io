@@ -37,18 +37,14 @@ host:
   - name: LMU Open Science Center
     url: ''
 
+template: templates/event-template.html
+filters:
+    - templates/process-event-yaml.lua
 ---
-<!-- MANDAORY SECTION START  -->
-
-{{< include templates/_setup.qmd >}}
-{{< include templates/_info_boxes.qmd >}}
-{{< include templates/_register_button.qmd >}}
-<!-- MANDAORY SECTION END  -->
 
 <br>
 
-<!-- DETAILED EVENT DESCRIPTION HERE OR USE THE TEMPLATE BELOW TO INCLUDE THE STANDARD DESCRIPTION SECTION -->
-<!-- {{< include templates/_event_description.qmd >}} -->
+ 
 
 <p>Come along to talk about code, research tools, and open science in a social environment!</p><p>Possible resources to prepare your session’s hack:</p><p>Beginner:</p><ul>
 <li>Quarto self-paced tutorial: <a href="https://lmu-osc.github.io/introduction-to-Quarto/">https://lmu-osc.github.io/introduction-to-Quarto/</a>
@@ -71,7 +67,4 @@ host:
 
 *The original tutorial link pointed to Florian Pargent's blog. However, the content for the Introduction to Quarto tutorial has since been migrated to the LMU Open Science Center's GitHub Organization and domain.*
 
-<!-- MANDAORY SECTION START  -->
-<!-- _event_description.qmd template should always be at bottom -->
-{{< include templates/_instructors_helpers_contact.qmd >}}
-<!-- MANDAORY SECTION END  -->
+ 

@@ -41,18 +41,14 @@ host:
   - name: and Epidemiology (IBE)"
     url: ''
 
+template: templates/event-template.html
+filters:
+    - templates/process-event-yaml.lua
 ---
-<!-- MANDAORY SECTION START  -->
-
-{{< include templates/_setup.qmd >}}
-{{< include templates/_info_boxes.qmd >}}
-{{< include templates/_register_button.qmd >}}
-<!-- MANDAORY SECTION END  -->
 
 <br>
 
-<!-- DETAILED EVENT DESCRIPTION HERE OR USE THE TEMPLATE BELOW TO INCLUDE THE STANDARD DESCRIPTION SECTION -->
-<!-- {{< include templates/_event_description.qmd >}} -->
+ 
 
 <p>We are incredibly excited to announce the fifth workshop held by the LMU Open Science Initiative in Medicine (OSIM) and the Institute for Medical Information Processing, Biometry, and Epidemiology (IBE):</p><p style="text-align: center;"><strong>"One step towards Reproducible Science: Git basic training"</strong></p><p>As part of the activities considered by Open Science in Medicine (OSIM) team, we want to facilitate the fulfillment of the FAIR (Findable, Accessible, Interoperable, Reusable) data principles by training our students and faculty in practical Open Science aspects. One of the best ways to make research open is the use of version control systems (VCS). Their use allows for a transparent process in science and data analysis. At the same time, VCS are excellent tools for data management, project planning and collaborative work. The course will cover the essential concepts about Version Control Systems, and will focus in the use of git, the most used VCS at the moment. Students will learn how to use git locally and how to work with git repositories, specifically their git repository gitlab offered by the LRZ to all members of the Munich universities. This course will be a combination of practice and theory, with emphasis on the practical aspect to facilitate the application of all acquired knowledge to their everyday scientific work. These basic concepts will allow students to explore more advanced features required for collaborative work. With this course we aim to offer a new tool to all interested in Open Science.</p><p> </p><p><strong>Requirements:</strong></p><ul>
 <li><strong>Willingness to work with the command-line (Unix systems)/ power shell (windows OS).</strong></li>
@@ -64,7 +60,4 @@ host:
 
 
 
-<!-- MANDAORY SECTION START  -->
-<!-- _event_description.qmd template should always be at bottom -->
-{{< include templates/_instructors_helpers_contact.qmd >}}
-<!-- MANDAORY SECTION END  -->
+ 

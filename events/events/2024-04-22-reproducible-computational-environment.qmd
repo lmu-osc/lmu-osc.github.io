@@ -37,18 +37,14 @@ host:
   - name: LMU Open Science Center
     url: ''
 
+template: templates/event-template.html
+filters:
+    - templates/process-event-yaml.lua
 ---
-<!-- MANDAORY SECTION START  -->
-
-{{< include templates/_setup.qmd >}}
-{{< include templates/_info_boxes.qmd >}}
-{{< include templates/_register_button.qmd >}}
-<!-- MANDAORY SECTION END  -->
 
 <br>
 
-<!-- DETAILED EVENT DESCRIPTION HERE OR USE THE TEMPLATE BELOW TO INCLUDE THE STANDARD DESCRIPTION SECTION -->
-<!-- {{< include templates/_event_description.qmd >}} -->
+ 
 
 <p>Are you using programming languages such as R or Python? Are you, or your collaborators, sometimes struggling to get the same results on a different computer?</p><p>Are you still searching for an optimal way to keep track of your computational environments and packages versions?</p><p>In this session, we will discuss the benefits of reproducible computational environments and share tips on how to use the most common environment management tools.</p><p><strong>Possible beginner resources to prepare your session’s hack:</strong></p><ul>
 <li>
@@ -66,7 +62,4 @@ host:
 
 
 
-<!-- MANDAORY SECTION START  -->
-<!-- _event_description.qmd template should always be at bottom -->
-{{< include templates/_instructors_helpers_contact.qmd >}}
-<!-- MANDAORY SECTION END  -->
+ 

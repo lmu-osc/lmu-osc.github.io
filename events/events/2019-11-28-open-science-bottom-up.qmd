@@ -47,24 +47,17 @@ host:
   - name: EU-project Fit4RRI
     url: ''
 
+template: templates/event-template.html
+filters:
+    - templates/process-event-yaml.lua
 ---
-<!-- MANDAORY SECTION START  -->
-
-{{< include templates/_setup.qmd >}}
-{{< include templates/_info_boxes.qmd >}}
-{{< include templates/_register_button.qmd >}}
-<!-- MANDAORY SECTION END  -->
 
 <br>
 
-<!-- DETAILED EVENT DESCRIPTION HERE OR USE THE TEMPLATE BELOW TO INCLUDE THE STANDARD DESCRIPTION SECTION -->
-<!-- {{< include templates/_event_description.qmd >}} -->
+ 
 
 <p><strong><img src="../../images/os-workshop.jpg" alt="Gruppenbild OS-Workshop"></strong></p><p>From November 28th to November 30th the OSC Munich and the Open Science working group of the Psychology council’s Conference (<a href="https://psyfako.org/">PsyFaKo</a>) organized an Open Science Workshop for students from all over Germany. The workshop was sponsored by the EU-project <a href="https://fit4rri.eu/">Fit4RRI</a> and had the motto "Train the Trainers". Participants deepened their knowledge in more specific topics such as pre-registration or the implementation of data protection guidelines when publishing data sets. However, the focus of the event was on training participants in how to disseminate Open Science and related topics to other students. In addition to input lectures, there were many practical exercises about, for example, dealing with counterarguments or conducting one's own workshops. The aim of the workshop was to help participants to implement their own ideas in order to disseminate Open Science at their universities throughout Germany, especially among students. In addition, we the workshop offered an opportunity for exchange among students who are interested in improving research. The workshop was led by Angelika Stefan (University of Amsterdam) and Felix Schönbrodt (LMU Munich) with organizational support by Leonhard Schramm (LMU Munich, Psychology council).</p><div class="g-clear"></div>
 
 
 
-<!-- MANDAORY SECTION START  -->
-<!-- _event_description.qmd template should always be at bottom -->
-{{< include templates/_instructors_helpers_contact.qmd >}}
-<!-- MANDAORY SECTION END  -->
+ 
