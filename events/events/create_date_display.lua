@@ -96,26 +96,28 @@ end
 
 local function build_event_data(meta)
   local event = safe_get(meta, "event", {})
+  local links = safe_get(meta, "links", nil)
 
   local start_date = trim(safe_get(event, "start_date", ""))
   local end_date = trim(safe_get(event, "end_date", ""))
   local date_display = build_date_display(start_date, end_date)
 
+  local links_registration = normalize_external_url(safe_get(links, "registration", ""))
+  local links_materials = normalize_external_url(safe_get(links, "materials", ""))
+  local links_workshop_website = normalize_external_url(safe_get(links, "workshop_website", ""))
+
   local event_data = {
     date_display = date_display,
+    links = {
+      registration = links_registration,
+      materials = links_materials,
+      workshop_website = links_workshop_website
+    }
   }
 
   return event_data
 end
 function Meta(meta)
-  local links = safe_get(meta, "links", nil)
-  if type(links) == "table" then
-    links.registration = normalize_external_url(safe_get(links, "registration", ""))
-    links.materials = normalize_external_url(safe_get(links, "materials", ""))
-    links.workshop_website = normalize_external_url(safe_get(links, "workshop_website", ""))
-    meta.links = links
-  end
-
   meta.event_data = build_event_data(meta)
   return meta
 end
