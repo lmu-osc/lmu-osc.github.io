@@ -82,38 +82,6 @@ local function build_date_display(start_date, end_date)
   return format_date(start_parsed, true) .. " - " .. format_date(end_parsed, true)
 end
 
--- Recursively convert Lua values to Pandoc Meta types
-local function to_meta(val)
-  if type(val) == "string" then
-    return pandoc.MetaString(val)
-  elseif type(val) == "boolean" then
-    return pandoc.MetaBool(val)
-  elseif type(val) == "table" then
-    local is_array = true
-    for k, _ in pairs(val) do
-      if type(k) ~= "number" then
-        is_array = false
-        break
-      end
-    end
-
-    if is_array then
-      local meta_list = {}
-      for i = 1, #val do
-        meta_list[i] = to_meta(val[i])
-      end
-      return pandoc.MetaList(meta_list)
-    end
-
-    local meta_map = {}
-    for k, v in pairs(val) do
-      meta_map[k] = to_meta(v)
-    end
-    return pandoc.MetaMap(meta_map)
-  else
-    return val
-  end
-end
 
 local function build_event_data(meta)
   local event = safe_get(meta, "event", {})
@@ -194,12 +162,3 @@ function Meta(meta)
 end
 
 
-function Meta(meta)
-  local ed = build_event_data(meta)
-
-  -- Debug: force a known string
-  ed.debug_test = "WORKING"
-
-  meta.event_data = ed
-  return meta
-end
