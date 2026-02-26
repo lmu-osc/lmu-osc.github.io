@@ -165,50 +165,67 @@
 
 
 
-$if(presenters)$
-<h4>Presenters</h4>
-<ul>
-$for(presenters)$
-$if(presenters.url)$
-<li><a href="$presenters.url$" target="_blank">$presenters.name$</a></li>
-$else$
-<li>$presenters.name$ </li>
-$endif$
-$endfor$
-</ul>
-<br>
-$endif$
+  $if(presenters)$
+  <h4>Presenters</h4>
+  <ul>
+    $for(presenters)$
+    $if(presenters.url)$
+    <li><a href="$presenters.url$" target="_blank">$presenters.name$</a></li>
+    $else$
+    <li>$presenters.name$ </li>
+    $endif$
+    $endfor$
+  </ul>
+  <br>
+  $endif$
 
 
-$if(instructors)$
-<h4>Instructors</h4>
-<ul>
-$for(instructors)$
-$if(instructors.url)$
-<li><a href="$instructors.url$" target="_blank">$instructors.name$</a></li>
-$else$
-<li>$instructors.name$ </li>
-$endif$
-$endfor$
-</ul>
-<br>
-$endif$
+  $if(instructors)$
+  <h4>Instructors</h4>
+  <ul>
+    $for(instructors)$
+    $if(instructors.url)$
+    <li><a href="$instructors.url$" target="_blank">$instructors.name$</a></li>
+    $else$
+    <li>$instructors.name$ </li>
+    $endif$
+    $endfor$
+  </ul>
+  <br>
+  $endif$
 
 
 
-$if(helpers)$
-<h4>Helpers</h4>
-<ul>
-$for(helpers)$
-$if(helpers.url)$
-<li><a href="$helpers.url$" target="_blank">$helpers.name$</a></li>
-$else$
-<li>$helpers.name$ </li>
-$endif$
-$endfor$
-</ul>
-<br>
-$endif$
+  $if(helpers)$
+  <h4>Helpers</h4>
+  <ul>
+    $for(helpers)$
+    $if(helpers.url)$
+    <li><a href="$helpers.url$" target="_blank">$helpers.name$</a></li>
+    $else$
+    <li>$helpers.name$ </li>
+    $endif$
+    $endfor$
+  </ul>
+  <br>
+  $endif$
+
+
+  $if(contact.name)$
+  <div class="contact_name">
+    <h4>Questions?</h4>
+    <p>
+      If you have any questions, please contact
+      <span class="instructor-links">
+        $if(contact.email)$
+        <a href="mailto:$contact.email$">$contact.name$</a>
+        $else$
+        $contact.name$
+        $endif$
+      </span>.
+    </p>
+  </div>
+  $endif$
 
 
 
