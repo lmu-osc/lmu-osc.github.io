@@ -40,11 +40,16 @@ include-in-header:
 
 Your data acquisition procedures must be documented in sufficient details to allow replication by another researcher (see [LMU Guidelines for Safeguarding Good Scientific Practice](https://cms-cdn.lmu.de/media/contenthub/amtliche-veroeffentlichungen/gwp-ordnung.pdf)). Establishing reproducible data collection processes strengthens the quality and consistency of both your data and that of your team.
 
-State-of-the-art practices for reproducible data acquisition include<!-- make an indented list - why are the bullet point before the start of the other lined (as in, not aligned, or even after) -->: 
-    - **creating standard operating procedures**
-    - **recording [metadata]{.underline} as data collection is taking place**
-    - **build in automatization through programming**
+State-of-the-art practices for reproducible data acquisition include:
 
+::: {.ms-1} 
+
+- **creating standard operating procedures**
+- **recording [metadata]{.underline} as data collection is taking place**
+- **build in automation through programming**
+:::
+
+<!-- why is there a weird white space between the frame and the text in this call outbox?-->
 ::: {.callout-note .mx-4}
 [**Metadata**]{.underline} are data about data; they provide context to your data. Metadata such as equipment settings, environmental conditions, software versions, and calibration records should be recorded contemporaneously, not reconstructed afterward. Electronic lab notebooks, instrument logs, and automated logging all help to document your metadata.
 :::
@@ -207,7 +212,7 @@ When data comes from instruments, sensors, or APIs, scripting the acquisition cr
 
 In [1. Plan & Design](01_plan_and_design.qmd){.mark} you created a Research Data Management Plan. It's now time to put this plan into practice, refining it as you learn what actually works for your project.
 
-<!-- adding space before list didnt work hence "faking" nested look by adding margin-->
+<!-- adding space before list didnt work hence "faking" indented look by adding margin-->
 
 ::: {.ms-1} 
 
@@ -253,12 +258,12 @@ Personal laptops as primary storage, external drives as only copy, consumer clou
 <span class="orc-card-tool-badge recommended">Supported at LMU</span>
 <div class="orc-card-tool-icons mb-2">
 <div class="orc-card-tool-icon icon-1">
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvQdlBHTP2IOvBeJ_S8I9z9S2BX0Qqn0twjw&s" class="img-fluid" alt="LRZ sync and share logo">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvQdlBHTP2IOvBeJ_S8I9z9S2BX0Qqn0twjw&s" class="img-fluid" alt="LRZ logo">
 </div>
 </div>
 <h4 class="card-title">LRZ Sync & Share</h4>
 <p class="card-text">Cloud storage service for LMU Munich</p>
-<a href="https://ree-gupta.github.io/lmu-osc.github.io/training/open_research_cycle/02_collect_and_manage_website.html#lrz-sync-share" class="stretched-link" target="_blank" rel="noopener"> </a>
+<a href="https://syncandshare.lrz.de/login" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
 
 :::
@@ -269,12 +274,12 @@ Personal laptops as primary storage, external drives as only copy, consumer clou
 <span class="orc-card-tool-badge recommended">Supported at LMU</span>
 <div class="orc-card-tool-icons mb-2">
 <div class="orc-card-tool-icon icon-1">
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvQdlBHTP2IOvBeJ_S8I9z9S2BX0Qqn0twjw&s" class="img-fluid" alt="LRZ DSS logo">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvQdlBHTP2IOvBeJ_S8I9z9S2BX0Qqn0twjw&s" class="img-fluid" alt="LRZ logo">
 </div>
 </div>
 <h4 class="card-title">LRZ DSS</h4>
 <p class="card-text">Long-term archival storage for LMU Munich</p>
-<a href="https://ree-gupta.github.io/lmu-osc.github.io/training/open_research_cycle/02_collect_and_manage_website.html#lrz-dss" class="stretched-link" target="_blank" rel="noopener"> </a>
+<a href="https://doku.lrz.de/data-science-storage-10745685.html" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
 
 :::
@@ -307,7 +312,7 @@ Your folder structure and file naming conventions determine whether you and othe
 
 - **Separate raw from processed data.** Raw data should not be modified: once collected, these files should never be touched. All cleaning, data processing, transformations, and analyses happen on copies or through scripts in a separate folder. This preserves your ability to verify results or reprocess from the original source.
 
-- **Develop a file naming convention.** Good file names identify contents at a glance and sort correctly. Balance specificity with readability: too many elements make names unwieldy, too few make them ambiguous. Order elements from general to specific.<!-- make a nested list -->
+- **Develop a file naming convention.** Good file names identify contents at a glance and sort correctly. Balance specificity with readability: too many elements make names unwieldy, too few make them ambiguous. Order elements from general to specific.
     - Use underscores or hyphens to separate elements, never spaces or special characters (`? ! & * % # @`)
     - Use ISO 8601 dates (`YYYYMMDD`) so files sort chronologically
     - Include version numbers with leading zeros (`v01`, `v02`) so `v10` sorts after `v09`
@@ -652,8 +657,13 @@ In a version controlled workflow, you back up your local Git repositories on eit
 
 <div class="card orc-card-tool h-100 position-relative">
 <span class="orc-card-tool-badge recommended">Supported at LMU</span>
-<div class="orc-card-tool-icon mb-2"> 
-<img src="https://cdn.simpleicons.org/gitlab" class="img-fluid" alt="GitLab icon">
+<div class="orc-card-tool-icons mb-2">
+<div class="orc-card-tool-icon icon-1">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvQdlBHTP2IOvBeJ_S8I9z9S2BX0Qqn0twjw&s" class="img-fluid" alt="LRZ logo">
+</div>
+<div class="orc-card-tool-icon icon-2">
+<img src="https://cdn.simpleicons.org/gitlab" class="img-fluid" alt="GitLab logo">
+</div>
 </div>
 <h4 class="card-title">LRZ Gitlab</h4>
 <p class="card-text">Institutional Git hosting for LMU Munich.</p>
