@@ -37,15 +37,16 @@ helpers:
   - name: test helper
     url: helper.com 
 contact:
-  name: 
-  email: 
+  name: hi
+  email: no@gmail.com
 organizers:
   - name: hi
 presenters:
   - name: test presenter
     url: someurl.com
+    affiliation: 
   - name: test presenter 2
-    url: another.com
+    url: https://another.com
 host:
   - name: ''
     url: ''
@@ -57,25 +58,6 @@ filters:
 
 <!-- Extra content, namely executable R, Python, and Julia code can be added here if desired, and will be rendered at the bottom of the Overview header, but before the presenters/instructors/helpers/contact sections. -->
 
-
-
- 
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
- 
 
 
 
