@@ -13,7 +13,7 @@ event:
   location:
     name: hello
     address: 
-    map_url: 
+    map_url: https://www.google.com/maps
   format:
     type: In-person
     detail: ''
@@ -36,6 +36,8 @@ instructors:
 helpers:
   - name: test helper
     url: helper.com 
+  - name: Malika Ihle
+    url: lmu-osc.github.io/people/people/malika-ihle.html
 contact:
   name: hi
   email: no@gmail.com
@@ -57,5 +59,6 @@ filters:
 ---
 
 <!-- Extra content, namely executable R, Python, and Julia code can be added here if desired, and will be rendered at the bottom of the Overview header, but before the presenters/instructors/helpers/contact sections. -->
+
 
 
