@@ -78,6 +78,21 @@ local function build_date_display(start_date, end_date)
   return format_date(start_parsed, true) .. " - " .. format_date(end_parsed, true)
 end
 
+local function normalize_external_url(value)
+  local url = trim(value)
+  if url == "" then
+    return ""
+  end
+
+  if url:match("^[A-Za-z][A-Za-z0-9+.-]*://")
+    or url:match("^mailto:")
+    or url:match("^tel:") then
+    return url
+  end
+
+  return "https://" .. url
+end
+
 
 local function build_event_data(meta)
   local event = safe_get(meta, "event", {})
@@ -93,6 +108,14 @@ local function build_event_data(meta)
   return event_data
 end
 function Meta(meta)
+  local links = safe_get(meta, "links", nil)
+  if type(links) == "table" then
+    links.registration = normalize_external_url(safe_get(links, "registration", ""))
+    links.materials = normalize_external_url(safe_get(links, "materials", ""))
+    links.workshop_website = normalize_external_url(safe_get(links, "workshop_website", ""))
+    meta.links = links
+  end
+
   meta.event_data = build_event_data(meta)
   return meta
 end

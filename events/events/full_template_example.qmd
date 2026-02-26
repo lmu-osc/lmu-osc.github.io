@@ -23,9 +23,9 @@ event:
     detail: en
 
 links:
-  registration: 
-  materials: 
-  workshop_website:
+  registration: www.google.com
+  materials:  
+  workshop_website: nokenobi.com
 event_description: |
   Save the date! Our annual Summer School will take place from September 7-11, 2026--more details to come!
 instructors:
@@ -51,7 +51,6 @@ host:
 template: full_template.html
 filters:
     - create_date_display.lua
-    # - minimal_lua.lua
 ---
 
 some more text here?

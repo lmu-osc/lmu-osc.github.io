@@ -46,9 +46,6 @@ $endfor$
 $if(date)$
 <p class="date">$date$</p>
 $endif$
-$if(event.format.type)$
-<p class="format-type">Format: $event.format.type$</p>
-$endif$
 $if(abstract)$
 <div class="abstract">
 <div class="abstract-title">$abstract-title$</div>
@@ -126,28 +123,32 @@ $event.language.detail$
 </div>
 
 
-
-$for(helpers)$
-$it.name$
-$endfor$
-
-<br>
-
-<ul>  
-$for(presenters)$
-<li>$it.name$, $it.url$</li>
-$endfor$
-</ul>
-
-
-<br>
-$if(organizers)$
-<ul>  
-$for(organizers)$
-<li>$it.name$, $it.url$</li>
-$endfor$
-</ul>
+<div class="register-box d-flex gap-2 justify-content-center">
+$if(links.registration)$
+  <div class="register-box d-flex gap-2 justify-content-center">
+    <a href="$links.registration$" target="_blank" class="btn btn-primary btn-pop">
+      <i class="bi bi-box-arrow-up-left"></i> Register
+    </a>
+  </div>
 $endif$
+
+$if(links.materials)$
+  <div class="register-box d-flex gap-2 justify-content-center">
+    <a href="$links.materials$" target="_blank" class="btn btn-outline-primary btn-pop">
+      <i class="bi bi-download"></i> Materials
+    </a>
+  </div>
+$endif$
+</div>
+
+
+
+
+
+
+
+
+
 
 $body$
 
