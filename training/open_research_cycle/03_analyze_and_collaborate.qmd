@@ -267,21 +267,115 @@ Before [4. Preserve & share](04_preserve_and_share.qmd){.mark}:
 
 - **Record your dependencies** in your README file for possible reconstruction with [repo2docker](https://repo2docker.readthedocs.io/en/latest/) or binder see [Code Publishing tutorial](https://lmu-osc.github.io/code-publishing/make_readme.html#nte-dependencies)
 
-<!-- learn  more:
 
-renv OSC Tutorial https://lmu-osc.github.io/introduction-to-renv/ https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8BF2VLSH1vzKlH0TOWxOjEURG4oADGhxuPg&s
 
-code publishing  https://lmu-osc.github.io/code-publishing/ OSC Tutorial
 
-tools:
+::: {.container .my-4 }
 
-binder https://mybinder.org/favicon.ico  https://mybinder.org/ Create an executable environments in your browser for your Git repository 
+<h4 class="fs-5"><i class="bi bi-mortarboard"></i> LEARN MORE</h4>
 
-docker https://cdn.simpleicons.org/docker https://www.docker.com/ Containerization for full reproducibility
+<!-- row for Learn More section -->
+::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
 
-repo2docker https://repo2docker.readthedocs.io/en/latest/_static/favicon.ico https://repo2docker.readthedocs.io/en/latest/ 
+<!-- card -->
+::: {.col}
 
- -->
+<div class="card orc-card-tool h-100 position-relative">
+<span class="orc-card-tool-badge recommended">OSC Tutorial</span>
+<div class="orc-card-tool-icons mb-2">
+<div class="orc-card-tool-icon icon-1">
+<img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+</div>
+<div class="orc-card-tool-icon icon-2">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8BF2VLSH1vzKlH0TOWxOjEURG4oADGhxuPg&s" class="img-fluid" alt="Zenodo icon">
+</div>
+</div>
+<h4 class="card-title">Renv Tutorial</h4>
+<p class="card-text"> Manage the version of your R packages (1h)</p>
+<a href="https://lmu-osc.github.io/introduction-to-renv/" class="stretched-link" target="_blank" rel="noopener"> </a>
+</div>
+
+:::
+
+<!-- card -->
+::: {.col}
+
+<div class="card orc-card-tool h-100 position-relative">
+<span class="orc-card-tool-badge recommended">OSC Tutorial</span>
+<div class="orc-card-tool-icons mb-2">
+<div class="orc-card-tool-icon icon-1">
+<img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+</div>
+<div class="orc-card-tool-icon icon-2">
+<img src="https://about.zenodo.org/static/img/icons/zenodo-icon-blue.svg" class="img-fluid" alt="Zenodo icon">
+</div>
+</div>
+<h4 class="card-title">Code Publishing Tutorial</h4>
+<p class="card-text">Publish your reproducible project on Zenodo (2h)</p>
+<a href="https://lmu-osc.github.io/code-publishing/" class="stretched-link" target="_blank" rel="noopener"> </a>
+</div>
+
+:::
+
+:::
+
+<h4 class="fs-5 mt-3"><i class="bi bi-tools"></i> TOOLS & RESOURCES</h4>
+<!-- row for Tools & Resources section -->
+
+::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
+
+<!-- card -->
+::: {.col}
+
+<div class="card orc-card-tool h-100 position-relative">
+<div class="orc-card-tool-icons mb-2">
+<div class="orc-card-tool-icon icon-2">
+<img src="https://mybinder.org/favicon.ico" class="img-fluid" alt="Binder logo">
+</div>
+</div>
+<h4 class="card-title">Binder</h4>
+<p class="card-text">Create online executable environments.</p>
+<a href="https://mybinder.org/" class="stretched-link" target="_blank" rel="noopener"> </a>
+</div>
+
+:::
+
+<!-- card -->
+::: {.col}
+
+<div class="card orc-card-tool h-100 position-relative">
+<div class="orc-card-tool-icons mb-2">
+<div class="orc-card-tool-icon icon-2">
+<img src="https://cdn.simpleicons.org/docker" class="img-fluid" alt="Docker logo">
+</div>
+</div>
+<h4 class="card-title">Docker</h4>
+<p class="card-text">Containerization for full reproducibility.</p>
+<a href="https://www.docker.com/" class="stretched-link" target="_blank" rel="noopener"> </a>
+</div>
+
+:::
+
+<!-- card -->
+::: {.col}
+
+<div class="card orc-card-tool h-100 position-relative">
+<div class="orc-card-tool-icons mb-2">
+<div class="orc-card-tool-icon icon-2">
+<img src="https://repo2docker.readthedocs.io/en/latest/_static/favicon.ico" class="img-fluid" alt="repo2docker logo">
+</div>
+</div>
+<h4 class="card-title">repo2docker</h4>
+<p class="card-text">Build and run user environment containers.</p>
+<a href="https://repo2docker.readthedocs.io/en/latest/ " class="stretched-link" target="_blank" rel="noopener"> </a>
+</div>
+
+:::
+
+:::
+
+:::
+
 
 
 #### 3.1.4. Documentation
@@ -299,11 +393,72 @@ As with documentation for data (see [2.2.4. Documentation](<!-- internal link-->
 As with all documentation, your project repository’s README should be written early, initially for your near-future self to support efficient re-engagement after interruptions, then revised for internal team review, and ultimately expanded and refined for public sharing [see 4.2. Code Publishing](04_preserve_and_share.qmd#sec-code-publishing){.mark}.
 
 
-<!--  learn more: 
-readable lecture card again
-data dictionary tuto card 
-code publishing tuto card-->
 
+::: {.container .my-4 }
+
+<h4 class="fs-5"><i class="bi bi-mortarboard"></i> LEARN MORE</h4>
+
+<!-- row for Learn More section -->
+::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
+
+<!-- card -->
+::: {.col}
+
+<div class="card orc-card-tool h-100 position-relative">
+<span class="orc-card-tool-badge recommended">OSC Lecture</span>
+<div class="orc-card-tool-icons mb-2">
+<div class="orc-card-tool-icon icon-1">
+<img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+</div>
+</div>
+<h4 class="card-title">Readable code lecture</h4> <!-- remove linebreak after title? -->
+<p class="card-text">Tips to write clear, understandable, and maintainable code.(1h)</p>
+<a href="https://lmu-osc.github.io/training/reproducible-processes/readable-code.html" class="stretched-link" target="_blank" rel="noopener"> </a>
+</div>
+
+:::
+
+<!-- card  -->
+::: {.col}
+
+<div class="card orc-card-tool h-100 position-relative">
+<span class="orc-card-tool-badge recommended">OSC Tutorial</span>
+<div class="orc-card-tool-icons mb-2">
+<div class="orc-card-tool-icon icon-1">
+<img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+</div>
+</div>
+<h4 class="card-title">Data Documentation & Validation</h4> <!-- remove line break after title -->
+<p class="card-text">Learn to create validation rules and automated checks for your research data.</p>
+<a href="https://lmu-osc.github.io/data-documentation-validation-R/" class="stretched-link" target="_blank" rel="noopener"> </a>
+</div>
+
+:::
+
+<!-- card -->
+::: {.col}
+
+<div class="card orc-card-tool h-100 position-relative">
+<span class="orc-card-tool-badge recommended">OSC Tutorial</span>
+<div class="orc-card-tool-icons mb-2">
+<div class="orc-card-tool-icon icon-1">
+<img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+</div>
+<div class="orc-card-tool-icon icon-2">
+<img src="https://about.zenodo.org/static/img/icons/zenodo-icon-blue.svg" class="img-fluid" alt="Zenodo icon">
+</div>
+</div>
+<h4 class="card-title">Code Publishing Tutorial</h4>
+<p class="card-text">Publish your reproducible project on Zenodo (2h)</p>
+<a href="https://lmu-osc.github.io/code-publishing/" class="stretched-link" target="_blank" rel="noopener"> </a>
+</div>
+
+:::
+
+
+:::
+
+:::
 
 
 </details>
@@ -461,7 +616,7 @@ Using the same Quarto environment, you can also:
 </div>
 </div>
 <h4 class="card-title">Advanced Git Tutorial</h4>
-<p class="card-text">Use Git branches and advance GitHub collaborative features (2h)</p>
+<p class="card-text">Use Git branches and further collaborative features (2h)</p>
 <a href="https://lmu-osc.github.io/training/reproducible-processes/advanced-git.html" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
 

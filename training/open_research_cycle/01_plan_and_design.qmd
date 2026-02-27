@@ -798,6 +798,26 @@ Generating an artificial dataset in R (see our [simulation tutorial](https://lmu
 
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4 .mb-4}
 
+<!-- card -->
+::: {.col}
+
+<div class="card orc-card-tool h-100 position-relative">
+<span class="orc-card-tool-badge recommended">OSC Tutorial</span>
+<div class="orc-card-tool-icons mb-2">
+<div class="orc-card-tool-icon icon-1">
+<img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+</div>
+<div class="orc-card-tool-icon icon-2">
+<img src="https://www.r-project.org/logo/Rlogo.svg" class="img-fluid" alt="R logo">
+</div>
+</div>
+<h4 class="card-title">R Tutorial</h4>
+<p class="card-text">Learn R programming. (3h)</p>
+<a href="https://lmu-osc.github.io/introduction-to-R/" class="stretched-link" target="_blank" rel="noopener"> </a>
+</div>
+
+:::
+
 ::: {.col}
 <div class="card orc-card-tool w-100 h-100 position-relative">
 <span class="orc-card-tool-badge recommended">OSC Tutorial</span>
@@ -860,6 +880,26 @@ The **flawed version of post-hoc power** is called **“observed power”**: If 
 <h4 class="fs-5"><i class="bi bi-mortarboard"></i> LEARN MORE</h4>
 
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4 .mb-4}
+
+<!-- card -->
+::: {.col}
+
+<div class="card orc-card-tool h-100 position-relative">
+<span class="orc-card-tool-badge recommended">OSC Tutorial</span>
+<div class="orc-card-tool-icons mb-2">
+<div class="orc-card-tool-icon icon-1">
+<img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+</div>
+<div class="orc-card-tool-icon icon-2">
+<img src="https://www.r-project.org/logo/Rlogo.svg" class="img-fluid" alt="R logo">
+</div>
+</div>
+<h4 class="card-title">R Tutorial</h4>
+<p class="card-text">Learn R programming. (3h)</p>
+<a href="https://lmu-osc.github.io/introduction-to-R/" class="stretched-link" target="_blank" rel="noopener"> </a>
+</div>
+
+:::
 
 ::: {.col}
 <div class="card orc-card-tool w-100 h-100 position-relative">
