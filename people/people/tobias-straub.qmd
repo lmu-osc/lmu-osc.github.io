@@ -21,43 +21,14 @@ links:
     url: https://www.compbio.bmc.med.uni-muenchen.de/about_us/people/straub/index.html
 social_media:
   ORCID: 'https://orcid.org/0000-0002-0547-0453'
-mission_statement:
-  - I am heading the <a href="https://www.compbio.bmc.med.uni-muenchen.de/about_us/index.html" title="About Us">Bioinformatics Core Facility at the Biomedical Center</a>, LMU.
-  - Nowadays, first priority in my work as a scientist is to implement and teach reproducibility measures in basic life science. Looking back to 20 years of wet lab research I realized that I hardly ever designed an experiment properly. This is a common problem that will not be solved by top-down measures but by systematic education of new generations of scientists.<strong> </strong>
+mission_statement: |
+  I am heading the <a href="https://www.compbio.bmc.med.uni-muenchen.de/about_us/index.html" title="About Us">Bioinformatics Core Facility at the Biomedical Center</a>, LMU.
+
+  Nowadays, first priority in my work as a scientist is to implement and teach reproducibility measures in basic life science. Looking back to 20 years of wet lab research I realized that I hardly ever designed an experiment properly. This is a common problem that will not be solved by top-down measures but by systematic education of new generations of scientists.<strong> </strong>
+
+
+template: templates/people-template.html
+filters: 
+    - templates/people_filter.lua
 ---
-{{< include templates/_setup.qmd >}}
-{{< include templates/_contact_items.qmd >}}
-{{< include templates/_social_links.qmd >}}
-{{< include templates/_mission_statement.qmd >}}
-{{< include templates/_research_interests.qmd >}}
-{{< include templates/_selected_publications.qmd >}}
-
-
-
-```{r}
-#| echo: false
-
-# Compose the full profile
-profile <- div(class = "people-profile",
-  div(class = "people-header",
-    div(class = "people-photo",
-      img(src = photo)
-    ),
-    div(class = "people-info",
-      p(class = "people-position", position),
-      if (!is.null(faculty) & faculty != "") {p(class = "people-faculty", paste0("Faculty of ", faculty))},
-      div(class = "people-contact", contact_items, social_links)
-    )
-  ),
-  mission_block,
-  # custom content would most likely go here, right after the mission_block
-  div(class = "people-content",
-    interests_block,
-    publications_block
-  )
-)
-
-# Render the profile
-browsable(profile)  
-```
 

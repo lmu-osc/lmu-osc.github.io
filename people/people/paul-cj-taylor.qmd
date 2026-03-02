@@ -16,43 +16,14 @@ links:
     url: https://www.mcn.uni-muenchen.de/members/regular/taylor/index.html
 social_media:
   ORCID: 'https://orcid.org/0000-0002-6296-2948'
-mission_statement:
-  - I am a principal investigator and associate senior researcher at the CVBE, Philosophy and the Munich Center for Neurosciences.
-  - I am interested in trying to extend open science practices into areas of cognitive neuroscience where it is not established, such as in brain stimulation.
+mission_statement: |
+  I am a principal investigator and associate senior researcher at the CVBE, Philosophy and the Munich Center for Neurosciences.
+
+  I am interested in trying to extend open science practices into areas of cognitive neuroscience where it is not established, such as in brain stimulation.
+
+
+template: templates/people-template.html
+filters: 
+    - templates/people_filter.lua
 ---
-{{< include templates/_setup.qmd >}}
-{{< include templates/_contact_items.qmd >}}
-{{< include templates/_social_links.qmd >}}
-{{< include templates/_mission_statement.qmd >}}
-{{< include templates/_research_interests.qmd >}}
-{{< include templates/_selected_publications.qmd >}}
-
-
-
-```{r}
-#| echo: false
-
-# Compose the full profile
-profile <- div(class = "people-profile",
-  div(class = "people-header",
-    div(class = "people-photo",
-      img(src = photo)
-    ),
-    div(class = "people-info",
-      p(class = "people-position", position),
-      if (!is.null(faculty) & faculty != "") {p(class = "people-faculty", paste0("Faculty of ", faculty))},
-      div(class = "people-contact", contact_items, social_links)
-    )
-  ),
-  mission_block,
-  # custom content would most likely go here, right after the mission_block
-  div(class = "people-content",
-    interests_block,
-    publications_block
-  )
-)
-
-# Render the profile
-browsable(profile)  
-```
 

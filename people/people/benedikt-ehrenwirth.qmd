@@ -11,42 +11,12 @@ memberships:
     faculty: Psychology & Education
 email: B.Ehrenwirth@campus.lmu.de
 photo: 'images/ehrenwirth_benedikt.jpeg'
-mission_statement:
-  - I am firmly convinced that the shift towards a research culture where Open Science is the norm is not solely driven by changes in researchers' attitudes but also by a growing confidence in the feasibility of open research practices.<br>The courses of my Bachelor's program in psychology at LMU have highlighted the catalysing role of various technical tools and digital platforms in Open Science. Although initially perceived as potentially demanding extra effort, tools such as R and R Markdown can in fact streamline our work and are surprisingly easy to learn.<br>Thus I find it important that promoting Open Science includes highlighting these practical advantages of technical solutions for researchers' lives. This is why I am involved in the RPsyche course, which strives to teach fellow students how R can be used for research so that both themselves and others benefit from it.
+mission_statement: |
+  I am firmly convinced that the shift towards a research culture where Open Science is the norm is not solely driven by changes in researchers' attitudes but also by a growing confidence in the feasibility of open research practices.<br>The courses of my Bachelor's program in psychology at LMU have highlighted the catalysing role of various technical tools and digital platforms in Open Science. Although initially perceived as potentially demanding extra effort, tools such as R and R Markdown can in fact streamline our work and are surprisingly easy to learn.<br>Thus I find it important that promoting Open Science includes highlighting these practical advantages of technical solutions for researchers' lives. This is why I am involved in the RPsyche course, which strives to teach fellow students how R can be used for research so that both themselves and others benefit from it.
+
+
+template: templates/people-template.html
+filters: 
+    - templates/people_filter.lua
 ---
-{{< include templates/_setup.qmd >}}
-{{< include templates/_contact_items.qmd >}}
-{{< include templates/_social_links.qmd >}}
-{{< include templates/_mission_statement.qmd >}}
-{{< include templates/_research_interests.qmd >}}
-{{< include templates/_selected_publications.qmd >}}
-
-
-
-```{r}
-#| echo: false
-
-# Compose the full profile
-profile <- div(class = "people-profile",
-  div(class = "people-header",
-    div(class = "people-photo",
-      img(src = photo)
-    ),
-    div(class = "people-info",
-      p(class = "people-position", position),
-      if (!is.null(faculty) & faculty != "") {p(class = "people-faculty", paste0("Faculty of ", faculty))},
-      div(class = "people-contact", contact_items, social_links)
-    )
-  ),
-  mission_block,
-  # custom content would most likely go here, right after the mission_block
-  div(class = "people-content",
-    interests_block,
-    publications_block
-  )
-)
-
-# Render the profile
-browsable(profile)  
-```
 

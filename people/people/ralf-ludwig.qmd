@@ -16,43 +16,14 @@ links:
     url: https://www.geo.lmu.de/de/fakultaet-geowissenschaften/personen/kontaktseite/ralf-ludwig-13b9822d.html
 social_media:
   ORCID: 'https://orcid.org/0000-0002-4225-4098'
-mission_statement:
-  - I am professor for Applied Physical Geography and Environmental Modeling at the Department of Geography.
-  - I specialize in analyzing the impacts of climate change on water and land resources on regional scales. While I am aware of the broad acceptance of open science principles in the climate science community, I am also witnessing a considerable lack thereof in other areas of my research domain. With many years of experience in associate editing for high-level scientific journals, I am convinced that the need for research transparency, validation, code and data sharing is more necessary than ever.
+mission_statement: |
+  I am professor for Applied Physical Geography and Environmental Modeling at the Department of Geography.
+
+  I specialize in analyzing the impacts of climate change on water and land resources on regional scales. While I am aware of the broad acceptance of open science principles in the climate science community, I am also witnessing a considerable lack thereof in other areas of my research domain. With many years of experience in associate editing for high-level scientific journals, I am convinced that the need for research transparency, validation, code and data sharing is more necessary than ever.
+
+
+template: templates/people-template.html
+filters: 
+    - templates/people_filter.lua
 ---
-{{< include templates/_setup.qmd >}}
-{{< include templates/_contact_items.qmd >}}
-{{< include templates/_social_links.qmd >}}
-{{< include templates/_mission_statement.qmd >}}
-{{< include templates/_research_interests.qmd >}}
-{{< include templates/_selected_publications.qmd >}}
-
-
-
-```{r}
-#| echo: false
-
-# Compose the full profile
-profile <- div(class = "people-profile",
-  div(class = "people-header",
-    div(class = "people-photo",
-      img(src = photo)
-    ),
-    div(class = "people-info",
-      p(class = "people-position", position),
-      if (!is.null(faculty) & faculty != "") {p(class = "people-faculty", paste0("Faculty of ", faculty))},
-      div(class = "people-contact", contact_items, social_links)
-    )
-  ),
-  mission_block,
-  # custom content would most likely go here, right after the mission_block
-  div(class = "people-content",
-    interests_block,
-    publications_block
-  )
-)
-
-# Render the profile
-browsable(profile)  
-```
 

@@ -16,44 +16,16 @@ links:
     url: https://www.isd-research.de/duering-lab
 social_media:
   ORCID: 'https://orcid.org/0000-0003-2302-3136'
-mission_statement:
-  - I am research group leader and Professor for Experimental Neurology at the Institute for Stroke and Dementia Research.
-  - Research must always be performed in an open and reproducible fashion. This is especially true in the age of big data, which can facilitate questionable research practices, such as p-hacking. Sharing methodology, pre-specifying analyses and independent replication are the best tools to solve the reproducibility crisis. I’m looking forward to working with the Open Science center in order to promote Open Science.
-  -  
+mission_statement: |
+  I am research group leader and Professor for Experimental Neurology at the Institute for Stroke and Dementia Research.
+
+  Research must always be performed in an open and reproducible fashion. This is especially true in the age of big data, which can facilitate questionable research practices, such as p-hacking. Sharing methodology, pre-specifying analyses and independent replication are the best tools to solve the reproducibility crisis. I’m looking forward to working with the Open Science center in order to promote Open Science.
+
+  
+
+
+template: templates/people-template.html
+filters: 
+    - templates/people_filter.lua
 ---
-{{< include templates/_setup.qmd >}}
-{{< include templates/_contact_items.qmd >}}
-{{< include templates/_social_links.qmd >}}
-{{< include templates/_mission_statement.qmd >}}
-{{< include templates/_research_interests.qmd >}}
-{{< include templates/_selected_publications.qmd >}}
-
-
-
-```{r}
-#| echo: false
-
-# Compose the full profile
-profile <- div(class = "people-profile",
-  div(class = "people-header",
-    div(class = "people-photo",
-      img(src = photo)
-    ),
-    div(class = "people-info",
-      p(class = "people-position", position),
-      if (!is.null(faculty) & faculty != "") {p(class = "people-faculty", paste0("Faculty of ", faculty))},
-      div(class = "people-contact", contact_items, social_links)
-    )
-  ),
-  mission_block,
-  # custom content would most likely go here, right after the mission_block
-  div(class = "people-content",
-    interests_block,
-    publications_block
-  )
-)
-
-# Render the profile
-browsable(profile)  
-```
 
