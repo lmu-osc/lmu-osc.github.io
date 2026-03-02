@@ -84,7 +84,7 @@
         <div class="people-contact">
           $if(email)$
           <div class="contact-item">
-            <i class="bi bi-envelope"></i> 
+            <i class="bi bi-envelope"></i>
             <a href="mailto:$email$" aria-label="Email to $name$">$email$</a>
           </div>
           $endif$
@@ -92,8 +92,9 @@
           $if(links)$
           $for(links)$
           <div class="contact-item">
-            <i class="bi bi-globe"></i> 
-            <a href="$it.url$" target="_blank" rel="noopener noreferrer" aria-label="Link to $name$'s $if(it.label)$$it.label$$else$Website$endif$">$if(it.label)$$it.label$$else$Website$endif$</a>
+            <i class="bi bi-globe"></i>
+            <a href="$it.url$" target="_blank" rel="noopener noreferrer"
+              aria-label="Link to $name$'s $if(it.label)$$it.label$$else$Website$endif$">$if(it.label)$$it.label$$else$Website$endif$</a>
           </div>
           $endfor$
           $endif$
@@ -128,6 +129,21 @@
 
 
     $body$
+
+
+
+    $if(research_interests)$
+    <h2>Research Interests</h2>
+    <div class="interests-container">
+      $for(research_interests)$
+      <div class="interest-tag">$it$</div>
+      $endfor$
+    </div>
+    $endif$
+
+
+
+
 
 
 
