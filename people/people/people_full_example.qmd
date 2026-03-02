@@ -16,6 +16,13 @@ display_weight_management: 2
 display_weight_staff: 1
 osc_staff_title: LMU Open Science Center Coordinator
 personal: "I am the Coordinator of the LMU Open Science Center, developing a comprehensive approach to open research that extends across all disciplines, using both bottom-up and top-down strategies. My role is to provide peer-to-peer training and develop an open research curriculum, coordinate grassroots initiatives and organize various events, support meta-research collaborations, liaise with local, national, and international stakeholders to inform the design of incentives and policies, and co-develop a strategic plan to make the LMU Open Science Center a sustainable entity."
+links:
+  - label: "Personal Website" 
+    url: "https://www.nicebread.de"
+  - url: "Somesite.com"  
+    label: LMU Profile 
+  - url: "https://www.psy.lmu.de/"   
+ 
 
 
 # Social media links - variable number
@@ -78,6 +85,9 @@ publications:
     doi_url: "https://doi.org/10.1186/s41073-025-00183-x "
 
 template: "templates/people-template.html"
-# filters: 
-#     - templates/people_filter.lua
+filters: 
+    - templates/people_filter.lua
 ---
+
+
+

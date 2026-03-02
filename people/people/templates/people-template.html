@@ -85,9 +85,31 @@
           $if(email)$
           <div class="contact-item">
             <i class="bi bi-envelope"></i> 
-            <a href="mailto:$email$">$email$</a>
+            <a href="mailto:$email$" aria-label="Email to $name$">$email$</a>
           </div>
           $endif$
+
+          $if(links)$
+          $for(links)$
+          <div class="contact-item">
+            <i class="bi bi-globe"></i> 
+            <a href="$it.url$" target="_blank" rel="noopener noreferrer" aria-label="Link to $name$'s $if(it.label)$$it.label$$else$Website$endif$">$if(it.label)$$it.label$$else$Website$endif$</a>
+          </div>
+          $endfor$
+          $endif$
+
+
+          $if(social_media)$
+          <div class="people-socials">
+            $for(social_media)$
+            <a href="$it.url$" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="$it.platform$">
+              <i class="fa-brands fa-$it.platform$"></i>
+            </a>
+            $endfor$
+          </div>
+          $endif$
+
+
         </div>
       </div>
     </div>
