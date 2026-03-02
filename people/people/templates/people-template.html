@@ -143,6 +143,27 @@
 
 
 
+    $if(publications)$
+    <h2>Selected Publications</h2>
+    <div class="publications-list">
+      $for(publications)$
+      <div class="publication-item">
+        <p class="publication-year">$it.year$</p>
+        <div class="publication-content">
+          <h3 class="publication-title">$it.title$</h3>
+          <p class="publication-authors">$it.authors$</p>
+          <p class="publication-journal">$it.journal$</p>
+          $if(it.doi_url)$
+          <a href="$it.doi_url$" target="_blank" rel="noopener noreferrer" class="publication-doi">DOI</a>
+          $endif$
+        </div>
+      </div>
+      $endfor$
+    </div>
+    $endif$
+
+
+
 
 
 
