@@ -25,40 +25,9 @@ mission_statement:
   - In the spirit of the great thinker and educator John Dewey, I live and teach open science as a process of continuous growth rather than a fixed skill set, defending the position that socially constructed justification is more important than rigid rules and norms. Practices I use most are open data and materials, and I prefer unblinded and transparent reviewing.
   - I edited journal issues on <a href="https://doi.org/10.1027/1015-5759/a000743" target="_blank">registered reports in understudied populations</a> and <a href="https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2023.1091721/full" target="_blank">daring methodologies in Psychology</a>, and have been part of many <a href="https://escholarship.org/content/qt2jd8c5x8/qt2jd8c5x8_noSplash_11decbeb65d6456e90034854b4f23bd3.pdf" target="_blank">analysts</a>- <a href="https://doi.org/10.1080/2153599X.2022.2070255" target="_blank">endeavors</a>.
   - For me, open science practices are demanding and require continuous effort and improvement, so I highly appreciate anyone's engagement.
+
+template: templates/people-template.html
+filters: 
+    - templates/people_filter.lua
 ---
-{{< include templates/_setup.qmd >}}
-{{< include templates/_contact_items.qmd >}}
-{{< include templates/_social_links.qmd >}}
-{{< include templates/_mission_statement.qmd >}}
-{{< include templates/_research_interests.qmd >}}
-{{< include templates/_selected_publications.qmd >}}
-
-
-
-```{r}
-#| echo: false
-
-# Compose the full profile
-profile <- div(class = "people-profile",
-  div(class = "people-header",
-    div(class = "people-photo",
-      img(src = photo)
-    ),
-    div(class = "people-info",
-      p(class = "people-position", position),
-      if (!is.null(faculty) & faculty != "") {p(class = "people-faculty", paste0("Faculty of ", faculty))},
-      div(class = "people-contact", contact_items, social_links)
-    )
-  ),
-  mission_block,
-  # custom content would most likely go here, right after the mission_block
-  div(class = "people-content",
-    interests_block,
-    publications_block
-  )
-)
-
-# Render the profile
-browsable(profile)  
-```
 

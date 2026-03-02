@@ -18,40 +18,9 @@ social_media:
   ORCID: 'https://orcid.org/0000-0002-8712-3948'
 mission_statement:
   - I am a postdoctoral researcher at the Clinical Data Science group at the Department of Radiology, investigating the feasibility of applying machine-learning-based algorithms on medical images for common tasks in radiology. In a rapidly evolving field, lack of reproducibility can lead to an erosion of trust in publications with seemingly promising results. Therefore I'm convinced that disseminating and living the principles and ideas of Open Science will allow us to produce trustworthy scientific results, while accelerating scientific progress by enabling a larger and more diverse audience to participate in the process.
+
+template: templates/people-template.html
+filters: 
+    - templates/people_filter.lua
 ---
-{{< include templates/_setup.qmd >}}
-{{< include templates/_contact_items.qmd >}}
-{{< include templates/_social_links.qmd >}}
-{{< include templates/_mission_statement.qmd >}}
-{{< include templates/_research_interests.qmd >}}
-{{< include templates/_selected_publications.qmd >}}
-
-
-
-```{r}
-#| echo: false
-
-# Compose the full profile
-profile <- div(class = "people-profile",
-  div(class = "people-header",
-    div(class = "people-photo",
-      img(src = photo)
-    ),
-    div(class = "people-info",
-      p(class = "people-position", position),
-      if (!is.null(faculty) & faculty != "") {p(class = "people-faculty", paste0("Faculty of ", faculty))},
-      div(class = "people-contact", contact_items, social_links)
-    )
-  ),
-  mission_block,
-  # custom content would most likely go here, right after the mission_block
-  div(class = "people-content",
-    interests_block,
-    publications_block
-  )
-)
-
-# Render the profile
-browsable(profile)  
-```
 

@@ -18,40 +18,9 @@ social_media:
   ORCID: 'https://orcid.org/0000-0003-0268-9078'
 mission_statement:
   - I am leading the group for Clinical Data Science at the Department of Radiology. We employ advanced statistics, machine learning and computer vision techniques in the context of clinical radiology to enable fast and precise AI-supported diagnosis and prognostication. Open science and reproducible research in this field is highly relevant, especially with deep learning or machine learning. While it is easy to share analyses and code, the sensitive nature of medical images and associated clinical data poses challenges with respect of public data sharing. I believe the Open Science Center provides the ideal framework to address these challenges.
+
+template: templates/people-template.html
+filters: 
+    - templates/people_filter.lua
 ---
-{{< include templates/_setup.qmd >}}
-{{< include templates/_contact_items.qmd >}}
-{{< include templates/_social_links.qmd >}}
-{{< include templates/_mission_statement.qmd >}}
-{{< include templates/_research_interests.qmd >}}
-{{< include templates/_selected_publications.qmd >}}
-
-
-
-```{r}
-#| echo: false
-
-# Compose the full profile
-profile <- div(class = "people-profile",
-  div(class = "people-header",
-    div(class = "people-photo",
-      img(src = photo)
-    ),
-    div(class = "people-info",
-      p(class = "people-position", position),
-      if (!is.null(faculty) & faculty != "") {p(class = "people-faculty", paste0("Faculty of ", faculty))},
-      div(class = "people-contact", contact_items, social_links)
-    )
-  ),
-  mission_block,
-  # custom content would most likely go here, right after the mission_block
-  div(class = "people-content",
-    interests_block,
-    publications_block
-  )
-)
-
-# Render the profile
-browsable(profile)  
-```
 

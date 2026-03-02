@@ -18,40 +18,9 @@ social_media:
   ORCID: 'https://orcid.org/0000-0003-1981-7435'
 mission_statement:
   - In my work as Professor of Translational Dementia Research and Director of the Division of Mental Health in Older Adults and Alzheimer Therapy and Research Center at LMU Munich, I focus on improving our understanding of dementia through clinical and biomarker research and the development of early detection and treatment strategies. My involvement in the Center reflects my commitment to open scientific inquiry that enhances the reliability, accessibility, and societal impact of research in neurodegenerative disease and mental health.
+
+template: templates/people-template.html
+filters: 
+    - templates/people_filter.lua
 ---
-{{< include templates/_setup.qmd >}}
-{{< include templates/_contact_items.qmd >}}
-{{< include templates/_social_links.qmd >}}
-{{< include templates/_mission_statement.qmd >}}
-{{< include templates/_research_interests.qmd >}}
-{{< include templates/_selected_publications.qmd >}}
-
-
-
-```{r}
-#| echo: false
-
-# Compose the full profile
-profile <- div(class = "people-profile",
-  div(class = "people-header",
-    div(class = "people-photo",
-      img(src = photo)
-    ),
-    div(class = "people-info",
-      p(class = "people-position", position),
-      if (!is.null(faculty) & faculty != "") {p(class = "people-faculty", paste0("Faculty of ", faculty))},
-      div(class = "people-contact", contact_items, social_links)
-    )
-  ),
-  mission_block,
-  # custom content would most likely go here, right after the mission_block
-  div(class = "people-content",
-    interests_block,
-    publications_block
-  )
-)
-
-# Render the profile
-browsable(profile)  
-```
 

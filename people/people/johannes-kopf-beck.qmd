@@ -18,39 +18,8 @@ social_media:
   ORCID: 'https://orcid.org/0000-0002-0368-3930'
 mission_statement:
   - My work as Senior Lecturer and researcher in Clinical Psychology and Psychotherapy at LMU Munich focuses on understanding change mechanisms in mental health, personalizing psychotherapeutic interventions, and integrating innovative data methods such as ecological momentary assessment and network models to improve prevention and treatment outcomes. My involvement in the Center reflects my commitment to rigorous scientific methodology, responsible data practices, and open dissemination of research that strengthens both scientific insight and clinical application.
+
+template: templates/people-template.html
+filters: 
+    - templates/people_filter.lua
 ---
-{{< include templates/_setup.qmd >}}
-{{< include templates/_contact_items.qmd >}}
-{{< include templates/_social_links.qmd >}}
-{{< include templates/_mission_statement.qmd >}}
-{{< include templates/_research_interests.qmd >}}
-{{< include templates/_selected_publications.qmd >}}
-
-
-
-```{r}
-#| echo: false
-
-# Compose the full profile
-profile <- div(class = "people-profile",
-  div(class = "people-header",
-    div(class = "people-photo",
-      img(src = photo)
-    ),
-    div(class = "people-info",
-      p(class = "people-position", position),
-      if (!is.null(faculty) & faculty != "") {p(class = "people-faculty", paste0("Faculty of ", faculty))},
-      div(class = "people-contact", contact_items, social_links)
-    )
-  ),
-  mission_block,
-  # custom content would most likely go here, right after the mission_block
-  div(class = "people-content",
-    interests_block,
-    publications_block
-  )
-)
-
-# Render the profile
-browsable(profile)  
-```
