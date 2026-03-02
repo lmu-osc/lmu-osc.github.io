@@ -103,7 +103,7 @@
           $if(social_media)$
           <div class="people-socials">
             $for(social_media)$
-            <a href="$it.url$" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="$it.platform$">
+            <a href="$it.url$" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Link to $it.platform$">
               <i class="fa-brands fa-$it.platform$"></i>
             </a>
             $endfor$
@@ -128,7 +128,10 @@
 
 
 
+
     $body$
+
+
 
 
 
@@ -154,20 +157,13 @@
           <p class="publication-authors">$it.authors$</p>
           <p class="publication-journal">$it.journal$</p>
           $if(it.doi_url)$
-          <a href="$it.doi_url$" target="_blank" rel="noopener noreferrer" class="publication-doi">DOI</a>
+          <a href="$it.doi_url$" target="_blank" rel="noopener noreferrer" class="publication-doi" aria-label="DOI for $it.title$">DOI</a>
           $endif$
         </div>
       </div>
       $endfor$
     </div>
     $endif$
-
-
-
-
-
-
-
 
   </div>
 
