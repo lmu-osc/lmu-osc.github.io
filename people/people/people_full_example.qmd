@@ -84,7 +84,7 @@ publications:
     journal: " Research Integrity and Peer Review"
     doi_url: "https://doi.org/10.1186/s41073-025-00183-x "
 
-template: "templates/people-template.html"
+template: templates/people-template.html
 filters: 
     - templates/people_filter.lua
 ---
