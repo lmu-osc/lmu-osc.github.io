@@ -28,7 +28,7 @@ include-in-header:
 <span><i class="bi bi-check2-circle"></i> Reproducible Manuscript</span>
 
 </div>
-<div class="orc-hero-checkpoint"><i class="bi bi-people-fill"></i> Checkpoint: Repository & Code Peer-Review + Result Presentation</div>
+<div class="orc-hero-checkpoint"><i class="bi bi-people-fill"></i> Checkpoints: Repository & Code Peer-Review + Result Presentation</div>
 </div>
 </div>
 
@@ -471,30 +471,36 @@ As with all documentation, your project repository’s documentation should be w
 
 </summary>
 
-Your results needs to be **computationally reproducible**, and their reporting needs to be **comprehensive and following reporting guidelines**, to allow statistical checks and meta analyses. <!-- something more here , example, explanation why, ect-->
+Your results should be **computationally reproducible** to ensure that the analysis can be independently verified. They should also be **reported comprehensively and in line with reporting guidelines** to facilitate statistical checks and future meta-analyses.
 
 ::: {.panel-tabset}
 
 #### 3.2.1. Results reproducibility 
 
-A practical way to make results and analysis decisions transparent and traceable is to use **literate programming**, which **combines narrative text** explaining the logic of the analysis with **executable code** that performs data processing and statistical procedures. Compiling such a document produces outputs (including tables, figures, bibliography) that update automatically when the underlying code changes, ensuring consistency between methods, results, and documentation. 
+A practical way to make results and analysis decisions transparent and traceable is to use **literate programming**, which **combines narrative text** explaining the logic of the analysis with **executable code** that performs data processing and statistical procedures. **When the document is compiled, outputs such as tables, figures, and references are generated directly from the code and update automatically whenever the code changes, ensuring that the reported methods and results remain consistent with the analysis.** This eliminates repeated copy-and-paste and reduces the risk of uncertainty about which version of, for example, a figure is actually included in the manuscript.
+
+<br>
 
 For users of R, Python, and Julia, **Quarto** has become the standard tool for creating reproducible reports, superseding R Markdown and enabling **rendering to formats such as HTML, PDF, and Word** (see our [Quarto tutorial](https://lmu-osc.github.io/introduction-to-Quarto/)).
 
 <br>
 
-##### Reproducible Analysis Report: The Minimum Standard for Computational Reproducibility <!--I don't want numbers here -->
-
-- **Create an analyses report with Quarto.** You should provide the analysis code that creates the results of the manuscript as a Quarto file to serve as documentation for the code (see [Quarto tutorial](https://lmu-osc.github.io/introduction-to-Quarto/)). This will facilitate your own revisions, code-review by your team, **reproducibility checks** by some journals, and verification of results reproducibility by other researchers. The code repository can be published with simulated, synthetic, or real data, depending on the project, together with the respective article (see [4. Preserve & Share](04_preserve_and_share.qmd){.mark}). 
-
-This is currently the state-of-the-art method to showcase the computational reproducibility of a study and we recommend to adopt this practice at a minimum. 
-In reality, all reporting outputs such as manuscript, presentation and websites can be created in a reproducible fashion using Quarto:
+##### Reproducible Analysis Report: The Minimum Standard for Computational Reproducibility <!-- no numbers no anchor here -->
 
 <br>
 
-##### Reproducible Manuscript: The Ultimate Reproducible Report <!--I don't want numbers here -->
+- **Create an analyses report with Quarto.** To make your results reproducible, you should provide the analysis code that creates the results of the manuscript with explanations for each of the steps. Quarto is an ideal tool for such purpose (see [Quarto tutorial](https://lmu-osc.github.io/introduction-to-Quarto/)). This will facilitate your own revisions, code-review by your team, **reproducibility checks** that some journals conduct as part of peer-review, and verification of results reproducibility by other researchers. The code repository can be published with simulated, synthetic, or real data, depending on the project, together with the respective article (see [4. Preserve & Share](04_preserve_and_share.qmd){.mark}). 
 
-If you do not want to break the reproducibility chain by copy and pasting new results, tables, and figures into e.g. a Word document, you can Write your entire manuscript in Quarto.
+This is currently the state-of-the-art method to showcase the computational reproducibility of a study and we recommend to adopt this practice at a minimum. 
+It is also possible to create all other reporting outputs (such as manuscript, presentation and websites) reproducibly using Quarto, although this process might be time consuming to adopt when working with collaborators: <!-- might be controversial for us to say that - but even if everyone knows git in a team, editing a manuscript this way is just so inefficient time-wise compared to editing and commenting in google doc... I can't advice the team members and PI to learn how to do branches and pull requests to MS in any of the SwOP groups..."
+
+<br>
+
+##### Reproducible Manuscript: The Ultimate Reproducible Report <!--no numbers no anchor here -->
+
+If you do not want to break the reproducibility chain by copy and pasting new results, tables, and figures into e.g. a Word document, you can write your entire manuscript in Quarto.
+
+<br>
 
 - **Include bibliographic references in your Quarto document**. 
 You can directly source .bib files into your Quarto document or use the open source reference management software Zotero integrated in RStudio to cite articles and have them automatically formatted in any journal standards (see [Quarto tutorial](https://lmu-osc.github.io/introduction-to-Quarto/) and [Zotero tutorial](https://lmu-osc.github.io/introduction-to-zotero/)). 
@@ -508,11 +514,13 @@ Some journals offer LaTeX or Word templates; you can adapt these by modifying Qu
 
 <br>
 
-##### Reproducible Presentations & Websites: Further Reproducible Outputs for Outreach <!--I don't want numbers here -->
+##### Reproducible Presentations & Websites: Further Reproducible Outputs for Outreach <!--no numbers no anchor here -->
 
 Using the same Quarto environment, you can also:
 
-- **Convert your minimal analyses report into a reproducible presentation.** To get feedback on your analyses, from early stages to a presentation at a conference, you can output a report into a slide presentation with presenter notes. Slides remain dynamically linked to the underlying analyses. Any modification to the data or code automatically propagates to tables, visualizations, and reported results, eliminating inconsistencies between presentation and computation.
+<br>
+
+- **Convert your minimal analyses report into a reproducible presentation.** To get feedback on your analyses, you can output a report into a slide presentation with presenter notes. Slides remain dynamically linked to the underlying analyses. Any modification to the data or code automatically propagates to tables, visualizations, and reported results, eliminating inconsistencies between presentation and computation.
 
 - **Create reproducible website to support your research or teaching**. Quarto also enables the creation of reproducible and interactive websites by linking content directly to data, code, and analyses within a unified publishing workflow. Pages, figures, tables, and teaching materials update automatically when the underlying sources change, ensuring consistency across outputs. This approach simplifies maintenance, and allows websites to evolve as living, version-controlled resources rather than static collections of files. Example of website, interactive reports and other formats can be explored on the [Quarto Gallery](https://quarto.org/docs/gallery/). This website and our self-paced tutorials are all Quarto websites. 
 
@@ -638,10 +646,52 @@ Using the same Quarto environment, you can also:
 <div class="orc-card-tool-icon icon-1">
 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvQdlBHTP2IOvBeJ_S8I9z9S2BX0Qqn0twjw&s" class="img-fluid" alt="LRZ logo">
 </div>
+<div class="orc-card-tool-icon icon-2">
+<img src="https://cdn.simpleicons.org/gitlab" class="img-fluid" alt="GitLab logo">
+</div>
+</div>
+<h4 class="card-title">LRZ Gitlab</h4>
+<p class="card-text">Institutional Git hosting for LMU Munich.</p>
+<a href="https://gitlab.lrz.de/" class="stretched-link" target="_blank" rel="noopener"></a>
+</div>
+
+:::
+
+<!-- card -->
+::: {.col}
+
+<div class="card orc-card-tool h-100 position-relative">
+<span class="orc-card-tool-badge recommended">Supported at LMU</span>
+<div class="orc-card-tool-icons mb-2">
+<div class="orc-card-tool-icon icon-1">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvQdlBHTP2IOvBeJ_S8I9z9S2BX0Qqn0twjw&s" class="img-fluid" alt="LRZ logo">
+</div>
 </div>
 <h4 class="card-title">LRZ Sync & Share</h4>
 <p class="card-text">Cloud storage service for LMU Munich</p>
 <a href="https://syncandshare.lrz.de/login" class="stretched-link" target="_blank" rel="noopener"> </a>
+</div>
+
+:::
+
+
+
+<!-- card -->
+::: {.col}
+
+<div class="card orc-card-tool h-100 position-relative">
+<span class="orc-card-tool-badge recommended">Supported at LMU</span>
+<div class="orc-card-tool-icons mb-2">
+<div class="orc-card-tool-icon icon-1">
+<img src="https://cms-cdn.lmu.de/assets/img/favicon.ico" class="img-fluid" alt="LMU logo">
+</div>
+<div class="orc-card-tool-icon icon-2">
+<img src="https://element.io/assets-32bb636196f91ed59d7a49190e26b42c/5ef25c0d30ee3108da4c25e9/5f365d3197194f8c73b00112_logo-mark-primary.svg" class="img-fluid" alt="Element logo">
+</div>
+</div>
+<h4 class="card-title">LMU Chat (Matrix)</h4>
+<p class="card-text">Institutional open source chat service for LMU Munich.</p>
+<a href="https://www.lmu.de/en/about-lmu/structure/central-university-administration/it-services-division/it-service-desk/central-it-services/lmu-chat-matrix/" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
 
 :::
