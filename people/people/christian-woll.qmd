@@ -16,8 +16,9 @@ links:
     url: https://www.lmu.de/psy/de/personen/kontaktseite/christian-woll-1907bf2e.html
 social_media:
   ORCID: 'https://orcid.org/0000-0002-0352-4796'
-mission_statement:
-  - In clinical psychology, Open Science, reproducibility, and replicability may still be improved. Especially sensitive clinical data requires additional steps to guarantee anonymization. I make reproducible analysis code and data available for every publication, see the "<a href="https://www.researchtransparency.org/signatories/">Commitment to Research Transparency and Open Science</a>".
+mission_statement: |
+  In clinical psychology, Open Science, reproducibility, and replicability may still be improved. Especially sensitive clinical data requires additional steps to guarantee anonymization. I make reproducible analysis code and data available for every publication, see the "<a href="https://www.researchtransparency.org/signatories/">Commitment to Research Transparency and Open Science</a>".
+
 
 template: templates/people-template.html
 filters: 

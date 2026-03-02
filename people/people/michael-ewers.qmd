@@ -16,10 +16,13 @@ links:
     url: https://www.gsn.uni-muenchen.de/people/faculty/core/ewers/index.html
 social_media:
   ORCID: 'https://orcid.org/0000-0001-5231-1714'
-mission_statement:
-  - I am professor at the Institute of Stroke and Dementia Research. My research focus centers on identifying predictive models of disease progression in Alzheimer’s disease and understanding core brain changes that underlie dementia symptoms and cognitive resilience.
-  - Sharing data, replicability and transparency are of key importance for successfully advancing clinical science. I am looking forward to the collaboration with the OSC.
-  -  
+mission_statement: |
+  I am professor at the Institute of Stroke and Dementia Research. My research focus centers on identifying predictive models of disease progression in Alzheimer’s disease and understanding core brain changes that underlie dementia symptoms and cognitive resilience.
+
+  Sharing data, replicability and transparency are of key importance for successfully advancing clinical science. I am looking forward to the collaboration with the OSC.
+
+  
+
 
 template: templates/people-template.html
 filters: 

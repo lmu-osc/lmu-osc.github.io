@@ -16,9 +16,11 @@ links:
     url: https://www.ipek-research.com/duchene-megens/7b685bd41ca8d010
 social_media:
   ORCID: 'https://orcid.org/0000-0002-3973-0022'
-mission_statement:
-  - I am a principal investigator at the Institute for Cardiovascular Prevention (IPEK), University Hospital Munich and a lecturer at the Master Program Human Biology, LMU.
-  - Open science is crucial to ameliorate reproducibility and replicability and to ultimately improve science. Changes in research are needed and I strongly believe that education is the way forward. As researchers not only should we implement good research practices such as integrity, transparency, and reliability in our own labs but also train the next generation of scientists and provide them the tools to progress the quality of science.
+mission_statement: |
+  I am a principal investigator at the Institute for Cardiovascular Prevention (IPEK), University Hospital Munich and a lecturer at the Master Program Human Biology, LMU.
+
+  Open science is crucial to ameliorate reproducibility and replicability and to ultimately improve science. Changes in research are needed and I strongly believe that education is the way forward. As researchers not only should we implement good research practices such as integrity, transparency, and reliability in our own labs but also train the next generation of scientists and provide them the tools to progress the quality of science.
+
 
 template: templates/people-template.html
 filters: 

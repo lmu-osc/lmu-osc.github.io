@@ -16,8 +16,9 @@ links:
 photo: 'images/sauer_christina.jpg'
 social_media:
   ORCID: 'https://orcid.org/0000-0003-2425-7858'
-mission_statement:
-  - I am a PhD student at the Institute for Medical Information Processing, Biometry, and Epidemiology and co-organizer of the LMU Open Science Initiative in Medicine (OSIM). My research focuses on the researcher degrees of freedom in the evaluation of statistical methods and the risk of over-optimistic conclusions. In this context, I also realized that the practice of making code and data openly available is still far from being the standard in the methodological literature and that many results are not fully reproducible.
+mission_statement: |
+  I am a PhD student at the Institute for Medical Information Processing, Biometry, and Epidemiology and co-organizer of the LMU Open Science Initiative in Medicine (OSIM). My research focuses on the researcher degrees of freedom in the evaluation of statistical methods and the risk of over-optimistic conclusions. In this context, I also realized that the practice of making code and data openly available is still far from being the standard in the methodological literature and that many results are not fully reproducible.
+
 
 template: templates/people-template.html
 filters: 

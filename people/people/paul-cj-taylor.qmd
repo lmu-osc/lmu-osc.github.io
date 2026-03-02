@@ -16,9 +16,11 @@ links:
     url: https://www.mcn.uni-muenchen.de/members/regular/taylor/index.html
 social_media:
   ORCID: 'https://orcid.org/0000-0002-6296-2948'
-mission_statement:
-  - I am a principal investigator and associate senior researcher at the CVBE, Philosophy and the Munich Center for Neurosciences.
-  - I am interested in trying to extend open science practices into areas of cognitive neuroscience where it is not established, such as in brain stimulation.
+mission_statement: |
+  I am a principal investigator and associate senior researcher at the CVBE, Philosophy and the Munich Center for Neurosciences.
+
+  I am interested in trying to extend open science practices into areas of cognitive neuroscience where it is not established, such as in brain stimulation.
+
 
 template: templates/people-template.html
 filters: 

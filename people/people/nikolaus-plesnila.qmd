@@ -21,9 +21,11 @@ links:
     url: https://www.gsn.uni-muenchen.de/people/research/biomed_ns/plesnila/index.html
 social_media:
   ORCID: 'https://orcid.org/0000-0001-8832-228X'
-mission_statement:
-  - I am professor for Experimental Stroke Research at the Institute for Stroke and Dementia Research.
-  - I am interested in topics related to good scientific practice, particularly regarding data acquisition, analysis, and storage.
+mission_statement: |
+  I am professor for Experimental Stroke Research at the Institute for Stroke and Dementia Research.
+
+  I am interested in topics related to good scientific practice, particularly regarding data acquisition, analysis, and storage.
+
 
 template: templates/people-template.html
 filters: 

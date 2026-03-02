@@ -16,8 +16,9 @@ links:
     url: https://www.researchgate.net/profile/Gerrit-Burkhardt
 social_media:
   ORCID: 'https://orcid.org/0000-0003-3965-5664'
-mission_statement:
-  - I am a clinician-scientist specializing in the development of non-invasive brain stimulation interventions for the treatment of mental health disorders. In my field, there are still many reservations and prejudices against open science practices. To address this, I am committed to establishing FAIR data principles and promoting transparent research practices within my working group and collaborations.
+mission_statement: |
+  I am a clinician-scientist specializing in the development of non-invasive brain stimulation interventions for the treatment of mental health disorders. In my field, there are still many reservations and prejudices against open science practices. To address this, I am committed to establishing FAIR data principles and promoting transparent research practices within my working group and collaborations.
+
 
 template: templates/people-template.html
 filters: 

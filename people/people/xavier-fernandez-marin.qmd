@@ -18,9 +18,11 @@ links:
     url: https://www.gsi.uni-muenchen.de/personen/gastdoktoranden1/fernandez/index.html
 social_media:
   ORCID: 'https://orcid.org/0000-0002-9522-8870'
-mission_statement:
-  - I am lecturer at the Geschwister-Scholl-Institut (GSI) for Political Science at the University of Munich (Ludwig-Maximilians-Universität).
-  - For a free society to thrieve we need an open discussion of ideas. Our responsibility as a scienists is to do our part and be fully open with our procedures, tools and methods. Personally, I am commited to make it easy for others to replicate what I do, as it is the only way to review the procedures, to spot inconsistencies, and to provide new ideas to make science advance.
+mission_statement: |
+  I am lecturer at the Geschwister-Scholl-Institut (GSI) for Political Science at the University of Munich (Ludwig-Maximilians-Universität).
+
+  For a free society to thrieve we need an open discussion of ideas. Our responsibility as a scienists is to do our part and be fully open with our procedures, tools and methods. Personally, I am commited to make it easy for others to replicate what I do, as it is the only way to review the procedures, to spot inconsistencies, and to provide new ideas to make science advance.
+
 
 template: templates/people-template.html
 filters: 

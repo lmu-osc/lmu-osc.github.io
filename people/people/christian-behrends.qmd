@@ -18,9 +18,11 @@ links:
     url: https://www.synergy-munich.de/about/members/5be5301b72fd3b59
 social_media:
   ORCID: 'https://orcid.org/0000-0002-9184-7607'
-mission_statement:
-  - My lab uses a broad range of mass spectrometry-based proteomics techniques to explore the ubiquitin and autophagy system.
-  - Inherent to our approach, we generate a large amounts of data which we make accessible via open-access depositories. I am convinced that sharing this and other kind of files together with its respective metadata is key to accelerate scientific discoveries and ensure reproducibility. Therefore, I am interested in educating co-workers and peers to implement data sharing according to the FAIR principles.
+mission_statement: |
+  My lab uses a broad range of mass spectrometry-based proteomics techniques to explore the ubiquitin and autophagy system.
+
+  Inherent to our approach, we generate a large amounts of data which we make accessible via open-access depositories. I am convinced that sharing this and other kind of files together with its respective metadata is key to accelerate scientific discoveries and ensure reproducibility. Therefore, I am interested in educating co-workers and peers to implement data sharing according to the FAIR principles.
+
 
 template: templates/people-template.html
 filters: 

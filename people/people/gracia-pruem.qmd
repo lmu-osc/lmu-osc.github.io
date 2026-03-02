@@ -16,8 +16,9 @@ memberships:
     end: 2025
 email: gracia.pruem@campus.lmu.de
 photo: 'images/pruem_gracia.jpg'
-mission_statement:
-  - Open Science is essential for enhancing the transparency, integrity, and quality of research. As a member of the ReproducibiliTea Journal Club Munich, I engage in discussions on various Open Science topics and its value for the scientific community.
+mission_statement: |
+  Open Science is essential for enhancing the transparency, integrity, and quality of research. As a member of the ReproducibiliTea Journal Club Munich, I engage in discussions on various Open Science topics and its value for the scientific community.
+
 
 template: templates/people-template.html
 filters: 

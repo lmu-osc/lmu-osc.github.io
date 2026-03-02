@@ -16,10 +16,13 @@ links:
     url: https://www.gsi.uni-muenchen.de/personen/professoren/thurner/index.html
 social_media:
   ORCID: 'https://orcid.org/0000-0001-7336-9878'
-mission_statement:
-  - I am Professor of Empirical Political Research and Policy Analysis at the Political Science Department, LMU.
-  - Availability of data and routines of published work is key for scientific efficiency and progress.
-  - Re-analysis of published work by students contributes to the development of new ideas and designs.
+mission_statement: |
+  I am Professor of Empirical Political Research and Policy Analysis at the Political Science Department, LMU.
+
+  Availability of data and routines of published work is key for scientific efficiency and progress.
+
+  Re-analysis of published work by students contributes to the development of new ideas and designs.
+
 
 template: templates/people-template.html
 filters: 
