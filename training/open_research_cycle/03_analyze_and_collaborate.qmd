@@ -51,7 +51,12 @@ Because analysis scripts are inherently iterative and evolve through corrections
 - **Create self-contained project folder**. Include data, code, documentation, and outputs in a single structured environment, ensuring the project remains understandable, reproducible, and portable across systems and collaborators. If you use the free and open source software RStudio to manage your R project, your project directory (or folder) should contain a .Rproj file (see [R tutorial](https://lmu-osc.github.io/introduction-to-R/)). **Use relative paths** (i.e. `“./subfolder”`, where `.` represents the root of your .Rproj directory) or the library `here`, so the project stays portable to another environment
 - **Use a standard folder structure**. Your code repository should include a standard folder structure that make sense for your type of research, ideally shared across your team members. You can for instance use the [OSC research project template](https://github.com/lmu-osc/research-project-template). 
 - **Stop clicking, start coding**. Automatize all possible steps, including data acquisition (see [2.1. Data Collection](02_collect_and_manage.qmd#sec-data-collection){.mark}), data processing and transformation, data analyses, data visualization, and results reporting (see [3.2. Reporting Results](#sec-reproducible-reporting){.mark})
-- **Structure, comment, and standardize your scripts.** R scripts themselves should follow current standards to increase their readability (see [Readable Code Lecture](https://lmu-osc.github.io/training/reproducible-processes/readable-code.html)). Use meaningful names for variables, functions, and scripts. Add comments to your code explaining _why_ you made a decision, and define your own function rather than copy and pasting pieces of code which makes it hard to maintain error-free. 
+- **Structure, comment, and standardize your scripts.** R scripts themselves should follow current standards to increase their readability (see [Readable Code Lecture](https://lmu-osc.github.io/training/reproducible-processes/readable-code.html)). Use meaningful names for variables, functions, and scripts. Add comments to your code explaining _why_ you made a decision, any known limitations to your code, and citations of methods. **Do not include sensitive information such as credentials or name of excluded patient as comments in your code!**
+    - **Define your own functions** rather than copy and pasting pieces of code which makes it hard to maintain error-free. Functions are ‘self-contained’ sets of commands that accomplish a specific task. They usually ‘take in’ data or parameter values (these inputs are called ‘function arguments’), process them, and ‘return’ a result. See our [R tutorial](https://lmu-osc.github.io/introduction-to-R/) and [simulation tutorial](https://lmu-osc.github.io/Introduction-Simulations-in-R/) for examples.
+    - **Set seeds for random processes** to enable exact replication. A seed is a number used to initialize a pseudorandom number generator algorithm. It serves as the starting point for a sequence of numbers that appear random but are actually produced by a deterministic, fixed algorithm. See e.g. our [simulation tutorial](https://lmu-osc.github.io/Introduction-Simulations-in-R/) for examples.
+    - **Follow a style guide** to increase readability. Use automated styling tools (e.g. `styler`, `lintR`)
+- **Use LRZ Compute Cloud for data-intensive analyses**. [LRZ Supercomputing](https://www.lrz.de/en/technologies/supercomputing) provide virtual machines, high-performance computing, storage ect to researchers of LMU Munich.
+
 
 ::: {.container .my-4}
 
@@ -81,6 +86,23 @@ Because analysis scripts are inherently iterative and evolve through corrections
 
 <!-- card -->
 ::: {.col}
+<div class="card orc-card-tool w-100 h-100 position-relative">
+<span class="orc-card-tool-badge recommended">OSC Tutorial</span>
+<div class="orc-card-tool-icons mb-2">
+<div class="orc-card-tool-icon icon-1">
+<img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+</div>
+</div>
+<h4 class="card-title">Data simulation in R</h4>
+<p class="card-text">Set seeds and define functions to generate random data (2h)</p>
+<a href="https://lmu-osc.github.io/Introduction-Simulations-in-R/" class="stretched-link" target="_blank" rel="noopener"></a>
+</div>
+
+:::
+
+
+<!-- card -->
+::: {.col}
 
 <div class="card orc-card-tool h-100 position-relative">
 <span class="orc-card-tool-badge recommended">OSC Lecture</span>
@@ -103,7 +125,7 @@ Because analysis scripts are inherently iterative and evolve through corrections
 
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
 
-<!-- 1st card -->
+<!-- card -->
 ::: {.col}
 
 <div class="card orc-card-tool h-100 position-relative">
@@ -119,6 +141,23 @@ Because analysis scripts are inherently iterative and evolve through corrections
 <h4 class="card-title">Research Project Template</h4> <!-- not sure why there is a white space after this title - can it be removed?-->
 <p class="card-text">Project folder separating raw & processed data, code, and outputs.</p>
 <a href="https://github.com/lmu-osc/research-project-template" class="stretched-link" target="_blank" rel="noopener"></a>
+</div>
+
+:::
+
+<!-- card -->
+::: {.col}
+
+<div class="card orc-card-tool h-100 position-relative">
+<span class="orc-card-tool-badge recommended">Supported at LMU</span>
+<div class="orc-card-tool-icons mb-2">
+<div class="orc-card-tool-icon icon-1">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvQdlBHTP2IOvBeJ_S8I9z9S2BX0Qqn0twjw&s" class="img-fluid" alt="LRZ logo">
+</div>
+</div>
+<h4 class="card-title">LRZ Supercomputing</h4>
+<p class="card-text">Virtual machines and HPC for LMU Munich</p>
+<a href="https://www.lrz.de/en/technologies/supercomputing" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
 
 :::
@@ -242,7 +281,7 @@ While your LRZ GitLab account is associated with your LMU Munich affiliation, yo
 <img src="https://cms-cdn.lmu.de/assets/img/favicon.ico" class="img-fluid" alt="LMU logo">
 </div>
 <div class="orc-card-tool-icon icon-2">
-<img src="https://element.io/assets-32bb636196f91ed59d7a49190e26b42c/5ef25c0d30ee3108da4c25e9/5f365d3197194f8c73b00112_logo-mark-primary.svg" class="img-fluid" alt="Element logo">
+<img src="https://cdn.simpleicons.org/matrix" class="img-fluid" alt="Matrix logo">
 </div>
 </div>
 <h4 class="card-title">LMU Chat (Matrix)</h4>
@@ -389,9 +428,22 @@ As with all documentation, your project repository’s documentation should be w
 <br>
 
 - **Create a README.md or README.txt file early and update it as you go.** Your README is the entry point to your project. A good README answers the essential questions: who created the script, what it contains, how they relate to other scripts and in which order scripts should be run, and whether it can be reused. 
-- **Annotate your code explaining _why_ you made a decision.** All parameter values used as input for a function, or other decisions, should be justified minimally as comments in your code to later be included in your manuscript.
+- **Annotate your code explaining _why_ you made a decision.** All parameter values used as input for a function, or other decisions, should be justified minimally as comments in your code to later be included in your manuscript. **Do not include sensitive information such as credentials or name of excluded patient as comments in your code!**
 - **Update your data dictionary and README files.** Your data documentation should be updated to include all data exclusion, change in range of possible values, ect. See [2.2.4. Documentation](<!-- internal link-->).
 
+
+Example README:
+```markdown
+# Analysis of Treatment Effects
+
+## Requirements
+- R version 4.3+
+- Packages listed in renv.lock
+
+## Running the Analysis
+1. Install dependencies: `renv::restore()`
+2. Run scripts in order: 01_preprocessing.R, 02_analysis.R
+```
 
 
 ::: {.container .my-4 }
@@ -492,7 +544,7 @@ For users of R, Python, and Julia, **Quarto** has become the standard tool for c
 - **Create an analyses report with Quarto.** To make your results reproducible, you should provide the analysis code that creates the results of the manuscript with explanations for each of the steps. Quarto is an ideal tool for such purpose (see [Quarto tutorial](https://lmu-osc.github.io/introduction-to-Quarto/)). This will facilitate your own revisions, code-review by your team, **reproducibility checks** that some journals conduct as part of peer-review, and verification of results reproducibility by other researchers. The code repository can be published with simulated, synthetic, or real data, depending on the project, together with the respective article (see [4. Preserve & Share](04_preserve_and_share.qmd){.mark}). 
 
 This is currently the state-of-the-art method to showcase the computational reproducibility of a study and we recommend to adopt this practice at a minimum. 
-It is also possible to create all other reporting outputs (such as manuscript, presentation and websites) reproducibly using Quarto, although this process might be time consuming to adopt when working with collaborators: <!-- might be controversial for us to say that - but even if everyone knows git in a team, editing a manuscript this way is just so inefficient time-wise compared to editing and commenting in google doc... I can't advice the team members and PI to learn how to do branches and pull requests to MS in any of the SwOP groups..."
+It is also possible to create all other reporting outputs (such as manuscript, presentation and websites) reproducibly using Quarto, although this process might be time consuming to adopt when working with collaborators: <!-- might be controversial for us to say that - but even if everyone knows git in a team, editing a manuscript this way is just so inefficient time-wise compared to editing and commenting in google doc... I can't advice the team members and PI to learn how to do branches and pull requests to MS in any of the SwOP groups...-->
 
 <br>
 
@@ -546,7 +598,7 @@ Using the same Quarto environment, you can also:
 </div>
 </div>
 <h4 class="card-title">Quarto Tutorial</h4>
-<p class="card-text">Write reproducible analyses reports or more (2h)</p>
+<p class="card-text">Reproducible documents combining code and narrative (2h)</p>
 <a href="https://lmu-osc.github.io/introduction-to-Quarto/" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
 
@@ -686,7 +738,7 @@ Using the same Quarto environment, you can also:
 <img src="https://cms-cdn.lmu.de/assets/img/favicon.ico" class="img-fluid" alt="LMU logo">
 </div>
 <div class="orc-card-tool-icon icon-2">
-<img src="https://element.io/assets-32bb636196f91ed59d7a49190e26b42c/5ef25c0d30ee3108da4c25e9/5f365d3197194f8c73b00112_logo-mark-primary.svg" class="img-fluid" alt="Element logo">
+<img src="https://cdn.simpleicons.org/matrix" class="img-fluid" alt="Matrix logo">
 </div>
 </div>
 <h4 class="card-title">LMU Chat (Matrix)</h4>
@@ -851,3 +903,16 @@ To complete before repository and code peer-review by the research team and befo
 - [ ] Code peer-reviewed
 
 
+Code review checklist:
+
+Code runs without errors
+Methods match analysis plan
+Results reproducible on different machine
+Code well-organized and commented
+No sensitive data included
+What reviewers check:
+
+Functionality and correctness
+Reproducibility
+Readability and organization
+Best practices
