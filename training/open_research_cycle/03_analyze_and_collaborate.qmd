@@ -816,103 +816,52 @@ These element will be refined depending on your study type. Widely used examples
 
 ## <i class="bi bi-card-checklist"></i> Analysis & Collaboration Checklist {.unnumbered}
 
-To complete before repository and code peer-review by the research team and before the presentation of the results.
+To complete before the presentation of the results to the research group.
 
-**Project repository:**
+**1. Before and during data analyses**
 
-- [ ] uses the lab’s standard folder structure 
-- [ ] shared with the LRZ  GitLab or GitHub organization of the research group
-- [ ] use Renv for package management
-- [ ] contain raw data and/or processed data
-- [ ] have a descriptive README file explaining how to use and run the codes, and in what order
-- [ ] contain a data dictionary
-- [ ] contain a Quarto reproducible analyses report
+**Repository Setup & Content:**
 
-**R scripts should have appropriate:**
+- [ ] Uses the lab’s standard folder structure
+- [ ] Version-controlled with Git and shared via the LRZ GitLab or GitHub organization
+- [ ] Uses Renv for package management
+- [ ] Contains raw data and/or processed data
+- [ ] Includes a data dictionary (codebook)
+- [ ] Includes scripts for raw data extraction, processing, and analysis
+- [ ] Includes a Quarto reproducible analysis report
+- [ ] Contains a descriptive README explaining usage, code order, and dependencies
 
-- [ ] metadata / header to e.g. identify author, state the purpose of the script
-- [ ] structure to increase readability
-- [ ] informative comments, which do not contain any sensitive information (e.g. password, patient information)
-- [ ] meaningful and consistent naming convention
-- [ ] style following a programming language guide (e.g. using styler or lintR)
-- [ ] functions breaking down actions in readable snippets, and avoiding duplication
-- [ ] seeds for any random number generation to allow reproducibility 
+**R Script Standards:**
 
+- [ ] Includes metadata/header identifying author, date, and purpose
+- [ ] Structured for readability
+- [ ] Contains informative comments about analytic decisions
+- [ ] Does not contain sensitive information (e.g., passwords, patient data)
+- [ ] Uses meaningful and consistent naming conventions
+- [ ] Breaks actions into functions to avoid duplication and improve clarity
+- [ ] Sets seeds for random processes to allow reproducible computation
+- [ ] Follows a programming style guide (e.g., styler, lintR)
 
-**Any co-authors may additionally want to check:**
+**2. During Repository and Code Peer-Review:**
 
-- [ ] the functionality of the code (e.g. does it technically do what is stated in the header? Are there any errors?)
-- [ ] the reproducibility of the results
+- [ ] Collaboration workflow established (e.g., branch or live review)
+- [ ] Session info captured and dependencies listed in README
+- [ ] Code performs tasks documented in the headers
+- [ ] Code runs without errors on a fresh environment / different computer
+- [ ] Code is well-organized, readable, and commented
+- [ ] All functions are documented
+- [ ] Sensitive information removed
+- [ ] Results, figures, tables are reproducible
+- [ ] (for co-authors): Methods used correct
+- [ ] (for co-authors): Methods match the analysis plan or deviation are reported
+
+**3. Before Sharing**
+
+- [ ] README provides complete instructions
+- [ ] Results reproducible
+- [ ] Sensitive information removed
+- [ ] Code peer-reviewed by co-authors
+- [ ] Documentation of results follow reporting guidelines  
+(e.g. presentation and manuscript include e.g. effect size, confidence intervals)
 
 :::
-
-
-::: {.orc-gradient-box}
-
-**Before Starting Analysis:**
-
-<div class="orc-grid-2col">
-
-<div>
-
-- [ ] Analysis plan documented
-- [ ] Project uses version control (Git)
-- [ ] Directory structure organized
-- [ ] Dependencies managed
-</div>
-
-<div>
-
-- [ ] README file initiated
-- [ ] Data dictionary available
-- [ ] Code style guide chosen
-- [ ] Collaboration workflow established
-</div>
-
-</div>
-
-**During Analysis:**
-
-<div class="orc-grid-2col">
-
-<div>
-
-- [ ] Scripts well-commented
-- [ ] Commit changes regularly
-- [ ] Random seeds set
-- [ ] Intermediate results saved
-</div>
-
-<div>
-
-- [ ] Analysis decisions documented
-- [ ] Code reviewed by collaborators
-- [ ] Results cross-checked
-- [ ] Figures reproducible
-</div>
-
-</div>
-
-**Before Sharing:**
-
-- [ ] Code runs without errors on fresh environment
-- [ ] README provides complete instructions
-- [ ] All functions documented
-- [ ] Session info captured
-- [ ] Sensitive information removed
-- [ ] Code peer-reviewed
-
-
-Code review checklist:
-
-Code runs without errors
-Methods match analysis plan
-Results reproducible on different machine
-Code well-organized and commented
-No sensitive data included
-What reviewers check:
-
-Functionality and correctness
-Reproducibility
-Readability and organization
-Best practices
