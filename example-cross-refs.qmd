@@ -4,13 +4,33 @@ number-sections: true
 number-depth: 3
 number-offset: [2,0,0]
 crossrefs-hover: false
+crossref:
+    sec-prefix: "hi."
+filters: 
+    - custom-crossref.lua
 ---
 
 # A header here {#sec-header1}
 
-This is a section with a header. We can refer to it using `@sec-header1`. For example, @sec-header1
+This is a section with a header. We can refer to it using `@sec-header1`. For example, @sec-header1 has the custom `sec-prefix` applied or we can remove the prefix entirely with -@sec-first-h2.
 
-## A l2 header here
+Or we can refer to the link with a custom text: [this section](#sec-header1)
+
+Potential option to show both number and name `-@sec-first-h2 \nameref{sec-first-h2}`: @full:sec-first-h2 \nameref{sec-first-h2}
+
+^Note: the LaTeX crossref syntax is not supported in Quarto, so `\nameref{sec-first-h2}` will not work in the LaTeX output.
+
+
+
+make use of lua filter:
+ 
+See @fullsec(sec-first-h2) for details.
+
+
+
+
+
+## A l2 header here {#sec-first-h2}
 
 ::: {.panel-tabset}
 
