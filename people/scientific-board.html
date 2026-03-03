@@ -102,6 +102,35 @@ ul.task-list li input[type="checkbox"] {
       window['quarto-listing-loaded']();
     }
   })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-alumni-scientific-board .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-project','listing-website','listing-format','listing-language','listing-execute','listing-title','listing-academic_title','listing-name','listing-surname','listing-first_name','listing-memberships','listing-email','listing-photo','listing-links','listing-social_media','listing-mission_statement','listing-template','listing-filters','listing-path','listing-outputHref','listing-author','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-word-count','listing-personal','listing-display_weight_staff','listing-osc_staff_title','listing-research_interests','listing-display_weight','listing-display_weight_management','listing-publications',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
+      page: 25,
+    pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
+      searchColumns: ["listing-project","listing-website","listing-format","listing-language","listing-execute","listing-title","listing-academic_title","listing-name","listing-surname","listing-first_name","listing-memberships","listing-email","listing-photo","listing-links","listing-social_media","listing-mission_statement","listing-template","listing-filters","listing-path","listing-outputHref","listing-author","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count","listing-personal","listing-display_weight_staff","listing-osc_staff_title","listing-research_interests","listing-display_weight","listing-display_weight_management","listing-publications"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-alumni-scientific-board'] = new List('listing-alumni-scientific-board', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
   </script>
 <!-- Matomo -->
 <script>
@@ -366,7 +395,7 @@ window.Quarto = {
 <section id="current-scientific-board" class="level2">
 <h2 class="anchored" data-anchor-id="current-scientific-board">Current Scientific Board</h2>
 <div id="listing-current-scientific-board" class="quarto-listing quarto-listing-container-custom">
-<div class="card mb-3" data-index="0" data-listing-file-modified-sort="1772524297591" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+<div class="card mb-3" data-index="0" data-listing-file-modified-sort="1772553180724" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
 <h4 class="card-header anchored">
 Head of the Statistical Consulting Laboratory StaBLab
 </h4>
@@ -400,7 +429,7 @@ As a trained statistician, psychologist and epidemiologist, I believe that multi
 </div>
 </div>
 </div>
-<div class="card mb-3" data-index="1" data-listing-file-modified-sort="1772524297475" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+<div class="card mb-3" data-index="1" data-listing-file-modified-sort="1772553180606" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
 <h4 class="card-header anchored">
 Professor of Communication
 </h4>
@@ -434,7 +463,7 @@ As a Professor of Communication, I bring a strong commitment to advancing Open S
 </div>
 </div>
 </div>
-<div class="card mb-3" data-index="2" data-listing-file-modified-sort="1772524297590" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+<div class="card mb-3" data-index="2" data-listing-file-modified-sort="1772553180723" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
 <h4 class="card-header anchored">
 Professor of Experimental Stroke Research (OSC Speaker)
 </h4>
@@ -468,7 +497,7 @@ Reproducible studies are the basis of science, but reproducibility rates are sti
 </div>
 </div>
 </div>
-<div class="card mb-3" data-index="3" data-listing-file-modified-sort="1772524297593" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+<div class="card mb-3" data-index="3" data-listing-file-modified-sort="1772553180725" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
 <h4 class="card-header anchored">
 Head of the Bioinformatics Core Facility of the Biomedical Center
 </h4>
@@ -502,7 +531,7 @@ As a data analyst working with a wide range of biomedical research groups at the
 </div>
 </div>
 </div>
-<div class="card mb-3" data-index="4" data-listing-file-modified-sort="1772524297475" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+<div class="card mb-3" data-index="4" data-listing-file-modified-sort="1772553180606" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
 <h4 class="card-header anchored">
 Professor in Digitalization and Political Behavior
 </h4>
@@ -601,57 +630,107 @@ I am an Assistant Professor in Digitalization and Political Behavior at the Gesc
 </section>
 <section id="former-scientific-board-members" class="level2">
 <h2 class="anchored" data-anchor-id="former-scientific-board-members">Former Scientific Board Members</h2>
+<div id="listing-alumni-scientific-board" class="quarto-listing quarto-listing-container-custom">
 <div class="columns">
 <div class="column" style="width:50%;">
-<section id="section" class="level3">
-<h3 class="anchored" data-anchor-id="section">2023-2025</h3>
+<h3 class="anchored">
+2023-2025
+</h3>
 <ul>
-<li><a href="../people/people/ralf-ludwig.html">Prof.&nbsp;Dr.&nbsp;Ralf Ludwig</a> (Geography, <strong>Speaker</strong> until 2024)</li>
-<li><a href="../people/people/nikolaus-plesnila.html">Prof.&nbsp;Dr.&nbsp;Nikolaus Plesnila</a> (Neurosciences, <strong>Speaker</strong> from 2024)</li>
-<li><a href="../people/people/niels-dingemanse.html">Prof.&nbsp;Dr.&nbsp;Niels Dingemanse</a> (Evolutionary Biology, until 2024)</li>
-<li><a href="../people/people/sabine-hoffmann.html">Dr.&nbsp;Sabine Hoffman</a> (Medical Statistics)</li>
-<li><a href="../people/people/alexander-wuttke.html">Prof.&nbsp;Dr.&nbsp;Alexander Wuttke</a> (Politics)</li>
-<li><a href="../people/people/tobias-straub.html">Dr.&nbsp;Tobias Straub</a> (Bio-Medical Center, since 2024)</li>
+<li>
+<a href="../people/people/niels-dingemanse.html">Prof.&nbsp;Dr.&nbsp;Niels Dingemanse</a> (<span class="notes">Evolutionary Biology, until 2024</span>)
+</li>
+<li>
+<a href="../people/people/sabine-hoffmann.html">Dr.&nbsp;Sabine Hoffmann</a> (<span class="notes">Medical Statistics</span>)
+</li>
+<li>
+<a href="../people/people/ralf-ludwig.html">Prof.&nbsp;Dr.&nbsp;Ralf Ludwig</a> (<span class="notes">Geography, <strong>Speaker</strong> until 2024</span>)
+</li>
+<li>
+<a href="../people/people/nikolaus-plesnila.html">Prof.&nbsp;Dr.&nbsp;Nikolaus Plesnila</a> (<span class="notes">Neurosciences, <strong>Speaker</strong> from 2024</span>)
+</li>
+<li>
+<a href="../people/people/tobias-straub.html">Dr.&nbsp;Tobias Straub</a> (<span class="notes">Biomedical Center, since 2024</span>)
+</li>
+<li>
+<a href="../people/people/alexander-wuttke.html">Prof.&nbsp;Dr.&nbsp;Alexander Wuttke</a> (<span class="notes">Politics</span>)
+</li>
 </ul>
-</section>
 </div><div class="column" style="width:50%;">
-<section id="section-1" class="level3">
-<h3 class="anchored" data-anchor-id="section-1">2021-2023</h3>
+<h3 class="anchored">
+2021-2023
+</h3>
 <ul>
-<li><a href="../people/people/katrin-auspurg.html">Prof.&nbsp;Dr.&nbsp;Katrin Auspurg</a> (Sociology, <strong>Speaker</strong>)</li>
-<li><a href="../people/people/ralf-ludwig.html">Prof.&nbsp;Dr.&nbsp;Ralf Ludwig</a> (Geography, <strong>Speaker</strong>)</li>
-<li><a href="../people/people/ralf-elsas.html">Prof.&nbsp;Dr.&nbsp;Ralf Elsas</a> (Economics)</li>
-<li><a href="../people/people/nikolaus-plesnila.html">Prof.&nbsp;Dr.&nbsp;Nikolaus Plesnila</a> (Neurosciences)</li>
-<li><a href="../people/people/julia-schulte-cloos.html">Dr.&nbsp;Julia Schulte-Cloos</a> (Political Science, 2021-2022)</li>
-<li><a href="../people/people/sabine-hoffmann.html">Dr.&nbsp;Sabine Hoffman</a> (Medical Statistics, 2022-2023)</li>
+<li>
+<a href="../people/people/katrin-auspurg.html">Prof.&nbsp;Dr.&nbsp;Katrin Auspurg</a> (<span class="notes">Sociology, <strong>Speaker</strong></span>)
+</li>
+<li>
+<a href="../people/people/ralf-elsas.html">Prof.&nbsp;Dr.&nbsp;Ralf Elsas</a> (<span class="notes">Economics</span>)
+</li>
+<li>
+<a href="../people/people/sabine-hoffmann.html">Dr.&nbsp;Sabine Hoffmann</a> (<span class="notes">Medical Statistics, 2022-2023</span>)
+</li>
+<li>
+<a href="../people/people/ralf-ludwig.html">Prof.&nbsp;Dr.&nbsp;Ralf Ludwig</a> (<span class="notes">Geography, <strong>Speaker</strong></span>)
+</li>
+<li>
+<a href="../people/people/nikolaus-plesnila.html">Prof.&nbsp;Dr.&nbsp;Nikolaus Plesnila</a> (<span class="notes">Neurosciences</span>)
+</li>
+<li>
+<a href="../people/people/julia-schulte-cloos.html">Dr.&nbsp;Julia Schulte-Cloos</a> (<span class="notes">Political Science, 2021-2022</span>)
+</li>
 </ul>
-</section>
 </div>
 </div>
 <div class="columns">
 <div class="column" style="width:50%;">
-<section id="section-2" class="level3">
-<h3 class="anchored" data-anchor-id="section-2">2019-2021</h3>
+<h3 class="anchored">
+2019-2021
+</h3>
 <ul>
-<li><a href="../people/people/katrin-auspurg.html">Prof.&nbsp;Dr.&nbsp;Katrin Auspurg</a> (Sociology, <strong>Speaker</strong>)</li>
-<li><a href="../people/people/anne-laure-boulesteix.html">Prof.&nbsp;Dr.&nbsp;Anne-Laure Boulesteix</a> (Statistics, Medicine)</li>
-<li><a href="../people/people/ralf-elsas.html">Prof.&nbsp;Dr.&nbsp;Ralf Elsas</a> (Economics)</li>
-<li><a href="../people/people/ralf-ludwig.html">Prof.&nbsp;Dr.&nbsp;Ralf Ludwig</a> (Geography)</li>
-<li><a href="../people/people/xenia-schmalz.html">Dr.&nbsp;Xenia Schmalz</a> (Psychology/ Psychiatry)</li>
+<li>
+<a href="../people/people/katrin-auspurg.html">Prof.&nbsp;Dr.&nbsp;Katrin Auspurg</a> (<span class="notes">Sociology, <strong>Speaker</strong></span>)
+</li>
+<li>
+<a href="../people/people/anne-laure-boulesteix.html">Prof.&nbsp;Dr.&nbsp;Anne-Laure Boulesteix</a> (<span class="notes">Statistics, Medicine</span>)
+</li>
+<li>
+<a href="../people/people/ralf-elsas.html">Prof.&nbsp;Dr.&nbsp;Ralf Elsas</a> (<span class="notes">Economics</span>)
+</li>
+<li>
+<a href="../people/people/ralf-ludwig.html">Prof.&nbsp;Dr.&nbsp;Ralf Ludwig</a> (<span class="notes">Geography</span>)
+</li>
+<li>
+<a href="../people/people/xenia-schmalz.html">Dr.&nbsp;Xenia Schmalz</a> (<span class="notes">Psychology/Psychiatry</span>)
+</li>
 </ul>
-</section>
 </div><div class="column" style="width:50%;">
-<section id="section-3" class="level3">
-<h3 class="anchored" data-anchor-id="section-3">2017-2019</h3>
+<h3 class="anchored">
+2017-2019
+</h3>
 <ul>
-<li><a href="../people/people/katrin-auspurg.html">Prof.&nbsp;Dr.&nbsp;Katrin Auspurg</a> (Sociology, <strong>Speaker</strong>)</li>
-<li><a href="../people/people/anne-laure-boulesteix.html">Prof.&nbsp;Dr.&nbsp;Anne-Laure Boulesteix</a> (Statistics, Medicine)</li>
-<li><a href="../people/people/ralf-elsas.html">Prof.&nbsp;Dr.&nbsp;Ralf Elsas</a> (Economics)</li>
-<li><a href="../people/people/ralf-ludwig.html">Prof.&nbsp;Dr.&nbsp;Ralf Ludwig</a> (Geography)</li>
-<li><a href="../people/people/felix-schoenbrodt.html">Prof.&nbsp;Dr.&nbsp;Felix Schönbrodt</a> (Psychology)</li>
+<li>
+<a href="../people/people/katrin-auspurg.html">Prof.&nbsp;Dr.&nbsp;Katrin Auspurg</a> (<span class="notes">Sociology, <strong>Speaker</strong></span>)
+</li>
+<li>
+<a href="../people/people/anne-laure-boulesteix.html">Prof.&nbsp;Dr.&nbsp;Anne-Laure Boulesteix</a> (<span class="notes">Statistics, Medicine</span>)
+</li>
+<li>
+<a href="../people/people/ralf-elsas.html">Prof.&nbsp;Dr.&nbsp;Ralf Elsas</a> (<span class="notes">Economics</span>)
+</li>
+<li>
+<a href="../people/people/ralf-ludwig.html">Prof.&nbsp;Dr.&nbsp;Ralf Ludwig</a> (<span class="notes">Geography</span>)
+</li>
+<li>
+<a href="../people/people/felix-schoenbrodt.html">Prof.&nbsp;Dr.&nbsp;Felix Schönbrodt</a> (<span class="notes">Psychology</span>)
+</li>
 </ul>
-</section>
 </div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+<nav id="alumni-scientific-board-pagination" class="listing-pagination" aria-label="Page Navigation">
+  <ul class="pagination"></ul>
+</nav>
 </div>
 
 
