@@ -58,18 +58,14 @@ presenters:
   - name: Dr. Stephan Lücke
     url: ''
 
+template: templates/event-template.html
+filters:
+    - templates/process-event-yaml.lua
 ---
-<!-- MANDAORY SECTION START  -->
-
-{{< include templates/_setup.qmd >}}
-{{< include templates/_info_boxes.qmd >}}
-{{< include templates/_register_button.qmd >}}
-<!-- MANDAORY SECTION END  -->
 
 <br>
 
-<!-- DETAILED EVENT DESCRIPTION HERE OR USE THE TEMPLATE BELOW TO INCLUDE THE STANDARD DESCRIPTION SECTION -->
-<!-- {{< include templates/_event_description.qmd >}} -->
+ 
 
 <p>Das Open Science Center veranstaltet gemeinsam mit der Universitätsbibliothek der LMU (UB) und der IT-Gruppe Geisteswissenschaften (ITG) ein Symposium zum Konzept von Open Science in den Geisteswissenschaften.<br>Wir würden uns über Ihre Teilnahme sehr freuen.</p><p>Gegenstand von Open Science sind Konzepte und Methoden, die möglichst sämtliche Phasen und Inhalte von Forschungsprozessen transparent und allgemein zugänglich gestalten, um auch die geisteswissenschaftliche Forschung zu kontextualisieren und Kooperation und Nachnutzung zu erleichtern.</p><p>Auf dem geplanten Symposium diskutieren zunächst Dr. Eckhart Arnold (Leiter des Referats für IT und Digital Humanities, Bayerische Akademie der Wissenschaften) und Prof. Dr. Thomas Krefeld (Professor für Romanische Philologie, LMU), inwieweit Open-Science-Konzepte auf die Geisteswissenschaften anwendbar sind.<br>Anschließend stellen Dr. Christiane Sibille (ETH Library, ETH Zürich) und Prof. Dr. Stephan Hoppe (Bayerische Kunstgeschichte, Architekturgeschichte, Digitale Kunstgeschichte, LMU) offene Forschungspraktiken vor, die in einigen Bereichen der Geisteswissenschaften bereits umgesetzt werden, wie das Teilen von ggf. sensiblen Daten und Open Monographs.</p><p>Abschließend findet eine Podiumsdiskussion mit allen Vortragenden statt. Es geht zum einen darum, Möglichkeiten und Grenzen der Open-Science-Bewegung in den Geisteswissenschaften auszuloten sowie die Notwendigkeit eines internen Diskurses oder einer eigenen Initiative zur proaktiven Förderung der Open Humanities zu diskutieren. Ferner sollen im Rahmen der Diskussion bestehende positive Ansätze und Verfahren identifiziert werden und eher negativ zu bewertenden Entwicklungen und Strukturen (Defizite, etwa hinsichtlich Problembewusstsein, Ausbildung oder Infrastruktur) gegenübergestellt werden.<br>Am Ende des Symposiums soll eine Bedarfsumfrage unter dem Publikum durchgeführt und schließlich überlegt werden, wie das LMU Open Science Center, die UB der LMU und die IT-Gruppe Geisteswissenschaften Forscher*innen in den Geisteswissenschaften bei der Umsetzung von offenen Forschungspraktiken unterstützen können.</p><p><strong>Programm</strong></p><ul>
 <li>15:00 Möglichkeiten und Grenzen offener Forschungspraktiken in den Geisteswissenschaften</li>
@@ -103,7 +99,4 @@ presenters:
 
 
 
-<!-- MANDAORY SECTION START  -->
-<!-- _event_description.qmd template should always be at bottom -->
-{{< include templates/_instructors_helpers_contact.qmd >}}
-<!-- MANDAORY SECTION END  -->
+ 

@@ -16,42 +16,12 @@ links:
     url: https://www.lmu.de/psy/de/personen/kontaktseite/ramona-schoedel-71a9227b.html
 social_media:
   ORCID: 'https://orcid.org/0000-0001-7275-0626'
-mission_statement:
-  - My research is at the intersection of psychology and data-driven sciences. For my own work, it is very important to me to be transparent and to share analysis code, materials, and data (while respecting data privacy issues) to make a sustainable contribution to research in my field. In my teaching, I try to infect students with my enthusiasm for Open Science and thus to sensitize young people for Open Science.
+mission_statement: |
+  My research is at the intersection of psychology and data-driven sciences. For my own work, it is very important to me to be transparent and to share analysis code, materials, and data (while respecting data privacy issues) to make a sustainable contribution to research in my field. In my teaching, I try to infect students with my enthusiasm for Open Science and thus to sensitize young people for Open Science.
+
+
+template: templates/people-template.html
+filters: 
+    - templates/people_filter.lua
 ---
-{{< include templates/_setup.qmd >}}
-{{< include templates/_contact_items.qmd >}}
-{{< include templates/_social_links.qmd >}}
-{{< include templates/_mission_statement.qmd >}}
-{{< include templates/_research_interests.qmd >}}
-{{< include templates/_selected_publications.qmd >}}
-
-
-
-```{r}
-#| echo: false
-
-# Compose the full profile
-profile <- div(class = "people-profile",
-  div(class = "people-header",
-    div(class = "people-photo",
-      img(src = photo)
-    ),
-    div(class = "people-info",
-      p(class = "people-position", position),
-      if (!is.null(faculty) & faculty != "") {p(class = "people-faculty", paste0("Faculty of ", faculty))},
-      div(class = "people-contact", contact_items, social_links)
-    )
-  ),
-  mission_block,
-  # custom content would most likely go here, right after the mission_block
-  div(class = "people-content",
-    interests_block,
-    publications_block
-  )
-)
-
-# Render the profile
-browsable(profile)  
-```
 

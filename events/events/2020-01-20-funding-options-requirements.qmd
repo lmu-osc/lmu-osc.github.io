@@ -53,18 +53,14 @@ host:
   - name: LMU Research Funding Unit
     url: ''
 
+template: templates/event-template.html
+filters:
+    - templates/process-event-yaml.lua
 ---
-<!-- MANDAORY SECTION START  -->
-
-{{< include templates/_setup.qmd >}}
-{{< include templates/_info_boxes.qmd >}}
-{{< include templates/_register_button.qmd >}}
-<!-- MANDAORY SECTION END  -->
 
 <br>
 
-<!-- DETAILED EVENT DESCRIPTION HERE OR USE THE TEMPLATE BELOW TO INCLUDE THE STANDARD DESCRIPTION SECTION -->
-<!-- {{< include templates/_event_description.qmd >}} -->
+ 
 
 <p>We are offering a workshop on Open Access addressing LMU researches from all disciplines and of all career levels above PhD on 20 January 2020. The workshop aims at providing orientation on Open Access publications in general, on the available options before, during and after a research project as well as on specific requirements and funding possibilities by different funders.</p><p>The LMU Munich Open Science Center, the University Library and the Unit for Research Funding join forces to present you an overview on Open Access in order to enhance transparency and provide you with the necessary tools to fulfil the guidelines of research funders such as DFG and European Commission.</p><p>The workshop consists of information and discussion sessions and invites attendees to participate actively. Please spread this information to other interested LMU researchers. The number of participants is limited, slots will be available on a first come, first serve basis</p><p> </p><p>Trainer:</p><ul style="list-style-type: square;">
 <li>PD Dr. Felix Schönbrodt, <a href="../../home_boxes/index.html" title="Welcome to the Open Science Center">LMU Open Science Center (OSC)</a>
@@ -78,7 +74,4 @@ host:
 
 
 
-<!-- MANDAORY SECTION START  -->
-<!-- _event_description.qmd template should always be at bottom -->
-{{< include templates/_instructors_helpers_contact.qmd >}}
-<!-- MANDAORY SECTION END  -->
+ 

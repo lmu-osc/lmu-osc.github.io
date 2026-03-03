@@ -16,42 +16,12 @@ links:
     url: https://www.researchgate.net/profile/Marko-Mijic-2?ev=hdr_xprf
 social_media:
   ORCID: 'https://orcid.org/0000-0002-7064-0471'
-mission_statement:
-  - As clinician-scientist, I focus on movement disorders in patients with rare neuromuscular diseases. My current position at the Friedrich Baur Institute (FBI) allows me to expand my knowledge of planning, organising, and conducting generic and biosimilar pharmaceutical and interventional clinical studies. To gather sufficient standardised data, multiple centres must collaborate and share their data. As an enthusiastic supporter of open science, I am committed to contributing to this field. 
+mission_statement: |
+  As clinician-scientist, I focus on movement disorders in patients with rare neuromuscular diseases. My current position at the Friedrich Baur Institute (FBI) allows me to expand my knowledge of planning, organising, and conducting generic and biosimilar pharmaceutical and interventional clinical studies. To gather sufficient standardised data, multiple centres must collaborate and share their data. As an enthusiastic supporter of open science, I am committed to contributing to this field.
+
+
+template: templates/people-template.html
+filters: 
+    - templates/people_filter.lua
 ---
-{{< include templates/_setup.qmd >}}
-{{< include templates/_contact_items.qmd >}}
-{{< include templates/_social_links.qmd >}}
-{{< include templates/_mission_statement.qmd >}}
-{{< include templates/_research_interests.qmd >}}
-{{< include templates/_selected_publications.qmd >}}
-
-
-
-```{r}
-#| echo: false
-
-# Compose the full profile
-profile <- div(class = "people-profile",
-  div(class = "people-header",
-    div(class = "people-photo",
-      img(src = photo)
-    ),
-    div(class = "people-info",
-      p(class = "people-position", position),
-      if (!is.null(faculty) & faculty != "") {p(class = "people-faculty", paste0("Faculty of ", faculty))},
-      div(class = "people-contact", contact_items, social_links)
-    )
-  ),
-  mission_block,
-  # custom content would most likely go here, right after the mission_block
-  div(class = "people-content",
-    interests_block,
-    publications_block
-  )
-)
-
-# Render the profile
-browsable(profile)  
-```
 

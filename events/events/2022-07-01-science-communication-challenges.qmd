@@ -47,18 +47,14 @@ presenters:
   - name: Dr. Tobias Wingen
     url: ''
 
+template: templates/event-template.html
+filters:
+    - templates/process-event-yaml.lua
 ---
-<!-- MANDAORY SECTION START  -->
-
-{{< include templates/_setup.qmd >}}
-{{< include templates/_info_boxes.qmd >}}
-{{< include templates/_register_button.qmd >}}
-<!-- MANDAORY SECTION END  -->
 
 <br>
 
-<!-- DETAILED EVENT DESCRIPTION HERE OR USE THE TEMPLATE BELOW TO INCLUDE THE STANDARD DESCRIPTION SECTION -->
-<!-- {{< include templates/_event_description.qmd >}} -->
+ 
 
 <p>The Journal Club: “ReproducibiliTea” at LMU Munich continues with its sixth meeting to discuss two interesting papers. The organisation team is happy to announce that the paper’s authors, Dr. Tobias Wingen and Marlene Altenmüller, will give an introductory talk to this session and participate in the open discussion afterwards:</p><p>Participants can use the following <strong>key questions</strong> to prepare for the discussion:</p><ul>
 <li>How could researchers restore public trust in social sciences (damaged by the replication crisis)?</li>
@@ -74,7 +70,4 @@ presenters:
 
 
 
-<!-- MANDAORY SECTION START  -->
-<!-- _event_description.qmd template should always be at bottom -->
-{{< include templates/_instructors_helpers_contact.qmd >}}
-<!-- MANDAORY SECTION END  -->
+ 

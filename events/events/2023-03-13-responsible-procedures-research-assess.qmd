@@ -51,18 +51,14 @@ presenters:
   - name: Prof. Dr. Felix Schönbrodt
     url: ''
 
+template: templates/event-template.html
+filters:
+    - templates/process-event-yaml.lua
 ---
-<!-- MANDAORY SECTION START  -->
-
-{{< include templates/_setup.qmd >}}
-{{< include templates/_info_boxes.qmd >}}
-{{< include templates/_register_button.qmd >}}
-<!-- MANDAORY SECTION END  -->
 
 <br>
 
-<!-- DETAILED EVENT DESCRIPTION HERE OR USE THE TEMPLATE BELOW TO INCLUDE THE STANDARD DESCRIPTION SECTION -->
-<!-- {{< include templates/_event_description.qmd >}} -->
+ 
 
 <p>“The use of journal impact factors and other metric indicators of research productivity, such as the h-index, has been heavily criticised for being invalid for the assessment of individual researchers and for fueling a detrimental “publish or perish” culture. Multiple initiatives call for developing alternatives to existing metrics that better reflect quality (instead of quantity) in research assessment.” (<a href="https://doi.org/10.23668/psycharchives.8162" target="_blank">https://doi.org/10.23668/psycharchives.8162</a>)</p><p><br>A number of themes run through the recommendations of initiatives such as The Declaration on Research Assessment (DORA, <a href="https://sfdora.org/" target="_blank">https://sfdora.org/</a>) and the Coalition for Advancing Research Assessment (CoARA, <a href="https://www.coara.org/" target="_blank">https://www.coara.org/</a>):</p><ul>
 <li>the need to eliminate the use of journal-based metrics, such as Journal Impact Factors, in funding, appointment, and promotion considerations;</li>
@@ -85,7 +81,4 @@ presenters:
 
 
 
-<!-- MANDAORY SECTION START  -->
-<!-- _event_description.qmd template should always be at bottom -->
-{{< include templates/_instructors_helpers_contact.qmd >}}
-<!-- MANDAORY SECTION END  -->
+ 

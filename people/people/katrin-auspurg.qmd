@@ -16,43 +16,14 @@ links:
     url: https://www.ls4.soziologie.uni-muenchen.de/personen/leitung/auspurg_katrin/index.html
 social_media:
   ORCID: 'https://orcid.org/0000-0003-4504-0391'
-mission_statement:
-  - I am professor for Quantitative Methods of Social Research at the Department of Sociology.
-  - One of my research interests is publication bias and the low replicability of research. I am convinced that social institutions such as norms of transparency, sharing data and analyses codes, establishing good practices of replication, and further measures of OS are important to advance the quality of research. Analyses codes of my publications are available.
+mission_statement: |
+  I am professor for Quantitative Methods of Social Research at the Department of Sociology.
+
+  One of my research interests is publication bias and the low replicability of research. I am convinced that social institutions such as norms of transparency, sharing data and analyses codes, establishing good practices of replication, and further measures of OS are important to advance the quality of research. Analyses codes of my publications are available.
+
+
+template: templates/people-template.html
+filters: 
+    - templates/people_filter.lua
 ---
-{{< include templates/_setup.qmd >}}
-{{< include templates/_contact_items.qmd >}}
-{{< include templates/_social_links.qmd >}}
-{{< include templates/_mission_statement.qmd >}}
-{{< include templates/_research_interests.qmd >}}
-{{< include templates/_selected_publications.qmd >}}
-
-
-
-```{r}
-#| echo: false
-
-# Compose the full profile
-profile <- div(class = "people-profile",
-  div(class = "people-header",
-    div(class = "people-photo",
-      img(src = photo)
-    ),
-    div(class = "people-info",
-      p(class = "people-position", position),
-      if (!is.null(faculty) & faculty != "") {p(class = "people-faculty", paste0("Faculty of ", faculty))},
-      div(class = "people-contact", contact_items, social_links)
-    )
-  ),
-  mission_block,
-  # custom content would most likely go here, right after the mission_block
-  div(class = "people-content",
-    interests_block,
-    publications_block
-  )
-)
-
-# Render the profile
-browsable(profile)  
-```
 

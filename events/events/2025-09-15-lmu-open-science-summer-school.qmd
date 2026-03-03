@@ -64,18 +64,14 @@ presenters:
   - name: Franziska Schrade
     url: ''
 
+template: templates/event-template.html
+filters:
+    - templates/process-event-yaml.lua
 ---
-<!-- MANDAORY SECTION START  -->
-
-{{< include templates/_setup.qmd >}}
-{{< include templates/_info_boxes.qmd >}}
-{{< include templates/_register_button.qmd >}}
-<!-- MANDAORY SECTION END  -->
 
 <br>
 
-<!-- DETAILED EVENT DESCRIPTION HERE OR USE THE TEMPLATE BELOW TO INCLUDE THE STANDARD DESCRIPTION SECTION -->
-<!-- {{< include templates/_event_description.qmd >}} -->
+ 
 
 <p> </p><p>The LMU Open Science Center (OSC) is excited to announce the call for applications for its 5th hybrid summer school (OSSS25): <strong>deadline July 14</strong>!</p><p>This year's iteration has two tracks to provide participants with two sets of skills. You are invited to apply for one or both tracks. For either track, you can choose to participate either online or in-person (Philologicum Library, Ludwigstraße 25, Munich or on Zoom).</p><h3>Track 1: Open Science knowledge and skills</h3><p>In this track, early career researchers who are Open Science novices learn to make their <strong>research more transparent, reproducible and credible</strong> in the eyes of their peers, the public, and funding agencies. This track consists of public lectures accessible to anyone as well as hands-on practical workshops for selected applicants and extends from Monday 15.09.2025 9:00 to Friday 19.09.2025 14:30.</p><p>Participants of this track learn how to:</p><ul>
 <li>Specify research design and set up statistical plans in advance of collecting data to prevent biases in analyses, with the help of preregistration and data simulation;</li>
@@ -97,7 +93,4 @@ presenters:
 
 
 
-<!-- MANDAORY SECTION START  -->
-<!-- _event_description.qmd template should always be at bottom -->
-{{< include templates/_instructors_helpers_contact.qmd >}}
-<!-- MANDAORY SECTION END  -->
+ 

@@ -50,18 +50,14 @@ host:
   - name: LMU Research Funding Unit
     url: ''
 
+template: templates/event-template.html
+filters:
+    - templates/process-event-yaml.lua
 ---
-<!-- MANDAORY SECTION START  -->
-
-{{< include templates/_setup.qmd >}}
-{{< include templates/_info_boxes.qmd >}}
-{{< include templates/_register_button.qmd >}}
-<!-- MANDAORY SECTION END  -->
 
 <br>
 
-<!-- DETAILED EVENT DESCRIPTION HERE OR USE THE TEMPLATE BELOW TO INCLUDE THE STANDARD DESCRIPTION SECTION -->
-<!-- {{< include templates/_event_description.qmd >}} -->
+ 
 
 <p>The LMU Open Science Center, the Unit for Research Funding and the University Library cordially invite to the online workshop "Research Data Management &amp; Open Science: Trends, Funding Requirements and Services at LMU".</p><p>Research data management is becoming increasingly relevant across different scientific disciplines and fields. While more and more researchers actively choose to make their research data open, dedicated strategies for data management are required by funding agencies such as the European Commission, the DFG and BMBF. In the EU's new framework program Horizon Europe, Open Science is mandatory for all projects.<br>In this interactive workshop, the LMU Open Science Center, the Unit for Research Funding and the University Library join forces to present an overview on recent trends, funding requirements and services available at LMU. The workshop will be kicked off with a primer on the current discussions surrounding open data by Felix Schönbrodt, followed by a presentation by the Research Funding Unit on the policies of funders such as the German Research Foundation (DFG), BMBF and the European Commission, with a special focus on presenting data management and open data in the application. It will close with a hands-on presentation of online resources and tools that support researchers from creating data management plans to implementing effective data management workflows for their projects, including possible storage and open access strategies by the LMU University Library.</p><p>PS: After the workshop, the biannual members' meeting of the LMU Open Science Center will take place (from 5pm to 6pm). Participants of the workshop who are interested in the work of the OSC are cordially invited to join the members meeting as guests.</p><p>Speakers:</p><ul style="list-style-type: square;">
 <li>Prof. Dr. Felix Schönbrodt, <a href="../../home_boxes/index.html" title="Welcome to the Open Science Center">LMU Open Science Center (OSC)</a>
@@ -75,7 +71,4 @@ host:
 
 
 
-<!-- MANDAORY SECTION START  -->
-<!-- _event_description.qmd template should always be at bottom -->
-{{< include templates/_instructors_helpers_contact.qmd >}}
-<!-- MANDAORY SECTION END  -->
+ 

@@ -53,18 +53,14 @@ presenters:
   - name: Michael Schomaker 
     url: ''
 
+template: templates/event-template.html
+filters:
+    - templates/process-event-yaml.lua
 ---
-<!-- MANDAORY SECTION START  -->
-
-{{< include templates/_setup.qmd >}}
-{{< include templates/_info_boxes.qmd >}}
-{{< include templates/_register_button.qmd >}}
-<!-- MANDAORY SECTION END  -->
 
 <br>
 
-<!-- DETAILED EVENT DESCRIPTION HERE OR USE THE TEMPLATE BELOW TO INCLUDE THE STANDARD DESCRIPTION SECTION -->
-<!-- {{< include templates/_event_description.qmd >}} -->
+ 
 
 <p>The aim of the workshop is to bring together statisticians, philosophers of science, and other interested researchers to discuss aspects of <strong>Open Science</strong> and the <strong>replication crisis</strong> from an epistemic perspective on the foundations and limitations of statistics.</p><p>The replication crisis is usually explained by misaligned incentive structures in the scientific system ("publish or perish"). Another important, but underrated, aspect is that researchers -- even statisticians -- tend to <strong>disregard important epistemic foundations of statistics</strong>. This lack of principle (or knowledge) effectively contributes to questionable research practices, statistical rituals, delusions and fallacies about what statistics and science can achieve. In the age of big data and foundation models, the importance of these topics is greater than ever before.</p><p>With keynotes by select speakers and ample time for discussion, we will address the question why the inappropriate use of statistical methods (most prominently, statistical testing) is still so prevalent, despite warnings that have been voiced for decades.</p><p><strong>Keynote talks:</strong></p><ul>
 <li>Sabina Leonelli (TU Munich), was recently appointed Professor for Philosophy and History of Science and Technology at TUM. She works on the philosophy of data-intensive science; in particular, the impact of big and open data on research and society in general.</li>
@@ -81,7 +77,4 @@ presenters:
 
 
 
-<!-- MANDAORY SECTION START  -->
-<!-- _event_description.qmd template should always be at bottom -->
-{{< include templates/_instructors_helpers_contact.qmd >}}
-<!-- MANDAORY SECTION END  -->
+ 

@@ -41,18 +41,14 @@ host:
   - name: Open Science Initiative for Psychology (OSIP)
     url: ''
 
+template: templates/event-template.html
+filters:
+    - templates/process-event-yaml.lua
 ---
-<!-- MANDAORY SECTION START  -->
-
-{{< include templates/_setup.qmd >}}
-{{< include templates/_info_boxes.qmd >}}
-{{< include templates/_register_button.qmd >}}
-<!-- MANDAORY SECTION END  -->
 
 <br>
 
-<!-- DETAILED EVENT DESCRIPTION HERE OR USE THE TEMPLATE BELOW TO INCLUDE THE STANDARD DESCRIPTION SECTION -->
-<!-- {{< include templates/_event_description.qmd >}} -->
+ 
 
 <p>Have you always wanted to make your manuscripts reproducible but got stuck during the process? In this <strong>flipped classroom workshop</strong>, we will help you solve the individual problems you have encountered when writing your own manuscript with Quarto.</p><p><a href="https://quarto.org/">Quarto</a> (the successor of R Markdown) is a popular open-source software for writing reproducible scientific manuscripts. It can also produce websites, blogs, books, presentations, dashboards and much more. Quarto can be used together with R, Python or Julia. If you want to learn how to use Quarto and write reproducible scientific manuscripts with R, we have prepared a <a href="https://lmu-osc.github.io/introduction-to-Quarto/">self-paced online tutorial</a> for you.</p><p><span style="color: #808080; font-family: verdana, helvetica, arial, sans-serif; font-size: 1em; font-weight: bold;">Before the workshop:</span></p><p>It is intended that you familiarize yourself with how Quarto works and have started your own reproducible manuscript <strong>before</strong> attending the workshop. If you have never worked with Quarto, R Markdown, or Jupyter Notebooks before, you should plan at least one workday for preparation. The following sections of the <a href="https://lmu-osc.github.io/introduction-to-Quarto/">self-paced online tutorial</a> are particularly relevant for you to be able to create a reproducible scientific manuscript:</p><ul>
 <li>
@@ -66,7 +62,4 @@ host:
 
 
 
-<!-- MANDAORY SECTION START  -->
-<!-- _event_description.qmd template should always be at bottom -->
-{{< include templates/_instructors_helpers_contact.qmd >}}
-<!-- MANDAORY SECTION END  -->
+ 
