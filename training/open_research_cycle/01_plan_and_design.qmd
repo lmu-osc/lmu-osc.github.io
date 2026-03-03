@@ -489,6 +489,7 @@ For data protection guidance, contact the [LMU Data Protection Officer](https://
 
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
 
+
 ::: {.col}
 
 <div class="card orc-card-tool w-100 h-100 position-relative">
@@ -556,25 +557,57 @@ For data protection guidance, contact the [LMU Data Protection Officer](https://
 
 </summary>
 
-A Data Management Plan (DMP) documents how you will handle research data throughout your project. Writing a DMP prompts you to think and document decisions you might otherwise leave implicit.
+A Data Management Plan (DMP) documents how you will handle research data throughout your project. Writing a DMP prompts you to think and document decisions you might otherwise leave implicit. For instance, you must decide before data collection whether you will eventually share your data publicly and where, in order to get ethics approval on the right plan, design consent form for participants, collect appropriate metadata for the target repository, ect (see lectures "[Why share data openly?](https://lmu-osc.github.io/training/data-management/open-data.html)" and "[Maintaining privacy with open data](https://lmu-osc.github.io/training/data-management/maintaining-privacy-with-open-data.html)").  
 
 ##### <i class="bi bi-list-check"></i> Your DMP will ask:
 
-- **What data** will you collect or generate (types, formats, volume, sources)?
-- **How will you describe it** (metadata standards, documentation practices)?
+- **What data** will you collect or generate (types, formats, volume, sources)? See also [2.1. Data Collection](02_collect_and_manage.html#sec-data-collection){.mark}.
+- **How will you describe it** (metadata standards, documentation practices)? See also [2.2. Data Management](02_collect_and_manage.html#sec-data-management){.mark} for these and the next questions.
 - **How will you organize files** (naming conventions, folder structure, versioning)?
 - **Where will you store it** (locations, backups, access controls)?
 - **How will you ensure quality** (validation checks, error-handling)?
-- **How will you share outputs** (repositories, licenses, embargo periods)?
-- **What constraints apply** (consent, anonymization, GDPR, data use agreements)?
+- **How will you share outputs** (repositories, licenses, embargo periods)? See also [4.1. Data Sharing](04_preserve_and_share.html#sec-data-sharing){.mark}
+- **What constraints apply** (consent, anonymization, GDPR, data use agreements)? See also [1.2.3. Ethics](){.mark} and [2.3. Ethics & Privacy](02_collect_and_manage.html#sec-ethics-and-privacy){.mark}
 
-The specific questions vary by discipline, data type, and funder requirements. DMP tools like [RDMO](https://rdmo.ub.lmu.de/) guide you through the relevant questions with funder-specific templates. Your DMP is a living document: start with what you know, and refine the details as your project develops (see [2.2. Data Management](02_collect_and_manage.qmd#sec-data-management){.mark}).
+The specific questions vary by discipline, data type, and funder requirements. DMP tools like [RDMO](https://rdmo.ub.lmu.de/) guide you through the relevant questions with funder-specific templates. Your DMP is a living document: start with what you know, and refine the details as your project develops (see [2.2. Data Management](02_collect_and_manage.qmd#sec-data-management){.mark}, [3.1. Data Processing & Analysis](03_analyze_and_collaborate.html#sec-data-processing-analysis){.mark}, and [4.1. Data Sharing](04_preserve_and_share.html#sec-data-sharing){.mark}).
 
 
 ::: {.container .my-4}
 <h4 class="fs-5"><i class="bi bi-mortarboard"></i> LEARN MORE</h4>
 
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4 .mb-4}
+
+::: {.col}
+
+<div class="card orc-card-tool w-100 h-100 position-relative">
+<span class="orc-card-tool-badge recommended">OSC Lecture</span>
+<div class="orc-card-tool-icons mb-2">
+<div class="orc-card-tool-icon icon-1">
+<img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+</div>
+</div>
+<h4 class="card-title">Why share data openly?</h4>
+<p class="card-text">An introduction to the what, why, and how to make data open (30 min)</p>
+<a href="https://lmu-osc.github.io/training/data-management/open-data.html" class="stretched-link" target="_blank" rel="noopener"></a>
+</div>
+
+:::
+
+::: {.col}
+
+<div class="card orc-card-tool w-100 h-100 position-relative">
+<span class="orc-card-tool-badge recommended">OSC Lecture</span>
+<div class="orc-card-tool-icons mb-2">
+<div class="orc-card-tool-icon icon-1">
+<img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+</div>
+</div>
+<h4 class="card-title">Maintaining Privacy with Open Data</h4>
+<p class="card-text">How to make data open without revealing sensitive information (1h)</p>
+<a href="https://lmu-osc.github.io/training/data-management/maintaining-privacy-with-open-data.html" class="stretched-link" target="_blank" rel="noopener"></a>
+</div>
+
+:::
 
 ::: {.col}
 
@@ -987,7 +1020,7 @@ To complete before presenting your final study plan to your research group and, 
 ::: {.d-flex .justify-content-center .mt-4 .orc-checklist-download .phase-1}
 
 <a href="assets/checklists/Plan.Design.Checklist.docx" class="btn btn-outline-secondary btn-sm">Download checklist <i class="bi bi-download"></i></a>
-<!-- I prepared a  downloadable file with checklist in word doc + citation Ihle, Gupta, Schoenbrodt 2026 + licence CC BY SA in footnote + link to this webpage - how to I include it here for download?-->
+<!-- need to update manually the  downloadable file with checklist in word doc + citation + licence in footnote + link to this webpage-->
 
 :::
 

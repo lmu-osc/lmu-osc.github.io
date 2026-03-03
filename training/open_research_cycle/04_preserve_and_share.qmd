@@ -19,7 +19,7 @@ include-in-header:
 {{< include ../images/os-cycle.svg >}}
 </div>
 <div class="orc-hero-body">
-<div class="orc-hero-tagline">Make your research outputs findable, accessible, and citable</div>
+<div class="orc-hero-tagline">Make your research outputs accessible, reusable, and citable</div>
 <div class="orc-hero-pills">
 <span><i class="bi bi-check2-circle"></i> Data Sharing</span>
 <span><i class="bi bi-check2-circle"></i> Code Publishing</span>
@@ -40,55 +40,143 @@ include-in-header:
 
 Sharing your data allows others to verify your findings, build on your work, and increase the impact of your research. But sharing does not always mean making everything publicly available. What you can share depends on the consent you obtained, the sensitivity of your data, and your ethics approval.
 
-If you wrote a Data Management Plan in Phase 1, this is where you implement it.
+In [1. Plan & Design](01_plan_and_design.qmd){.mark}, you wrote a Data Management Plan, in [2. Collect & Manage](02_collect_and_manage.qmd){.mark}, you created documentation for yourself, and in [3. Analyze & Collaborate](03_analyze_and_collaborate.qmd){.mark} you updated that documentation for your collaborators. Now you prepare that documentation for people who have no prior knowledge of your project. You also reassess your plan and make a **final decision on how openly your data can be shared, select an appropriate repository, and apply a license that tells others how they may reuse your work**.
 
-In Phase 2 you created documentation for yourself and collaborators. Now you prepare that documentation for people who have no prior knowledge of your project. You also decide how openly your data can be shared, select an appropriate repository, and apply a license that tells others how they may reuse your work.
-
-**This step is straightforward if you followed Phase 2.** You already have a README, a codebook, organized files, and clear metadata.
+This step is straightforward if you followed previous steps as you should already have a README, a data dictionary (codebook), organized files, and clear metadata.
 
 ::: {.panel-tabset}
 
-#### 4.1.1. Open vs Restricted
+#### 4.1.1. Open vs Restricted <!-- I edited this a bit Reema, is this correct? overall I think this section could use more information-->
 
 Not all data can or should be shared openly. Your sharing options depend on what consent participants gave and what your ethics approval permits.
 
-**Open data** can be downloaded by anyone without restrictions. This maximizes reuse but is only appropriate when data contains no personal information or has been fully anonymized.
+<br>
 
-**Restricted access** means data is available on request, often requiring a Data Use Agreement. The requester typically must describe their purpose and agree to conditions. This balances reuse with protection.
+- **Open data** can be downloaded by anyone without restrictions. This maximizes reuse but is only appropriate when data contains no personal information or has been fully anonymized.
 
-**Metadata only** describes what data exists without sharing the data itself. Others can discover your work and contact you to discuss access. This is appropriate when data cannot be shared due to legal or ethical constraints.
+- **Restricted access** means the metadata is available on a professional repository and clear instructions of the conditions of access are provided. Requesting the data often requires describing the purpose of reuse (sometimes in the form of a preregistration, see [1.4.1. Pre-analysis planning](<!--internal link-->)), signing a Data Use Agreement, and agree to further conditions. This can be organized automatically through the repository or through contacting the authors. This balances reuse with protection. 
 
-When deciding, ask: What did participants consent to? What does your ethics approval allow? Can the data be anonymized without losing value? If you work with sensitive data, consult your institution's data protection officer.
+- **Metadata only** describes what data exists without sharing the data itself. Others can discover your work and contact you to discuss access. This is appropriate when data cannot be shared due to legal or ethical constraints.
 
-<!-- TODO: tool card for decision tree -->
+<br>
+
+When deciding, ask yourself: What did participants consent to? What does your ethics approval allow? Can the data be anonymized without losing value? If you work with sensitive data, consult [your institution's data protection officer](https://www.lmu.de/en/about-lmu/structure/organizational-structure/officers-and-representatives/data-protection-officer.html).
+
+<!-- TODO Reema: tool card for decision tree ; MI: not sure if feasible in enough details to be useful? but perhaps ;)--> 
 
 #### 4.1.2. Preparing Your Data
 
-In Phase 2 you created a README and codebook for yourself and collaborators. Before sharing publicly, review them from the perspective of someone who knows nothing about your project.
+During the course of data collection and analyses, you created a README and data dictionary for yourself and collaborators. Before sharing publicly, review them from the perspective of someone who knows nothing about your project.
 
-**Expand your README** to include the research context, how to cite the dataset, and any access conditions. See the Documentation tab in Phase 2 for what a complete README contains.
+<br>
 
-**Review your codebook** to ensure every variable is fully described. What was obvious to you during analysis may need explanation for others.
+- **Expand your README** to include the research context (who created the data, what it contains, when and where it was collected, why it was generated, how it was produced), how to cite the dataset, and any access conditions. 
 
-**Follow community standards.** Many fields have established formats for sharing data (e.g., BIDS for neuroimaging). Using these makes your data immediately usable with existing tools. See the Standards tab in Phase 2 for how to find conventions in your domain.
+- **Review your data dictionary** to ensure every variable is fully described. What was obvious to you during analysis may need explanation for others.
 
-**Verify anonymization.** Check that no personal information remains in the data files, metadata, or filenames.
+- **Confirm you follow community standards.** Many fields have established formats for sharing data (e.g., [BIDS](https://bids.neuroimaging.io/index.html) for neuroimaging, see [FAIRsharing](https://fairsharing.org/) and [RDMkit](https://rdmkit.elixir-europe.org/your_domain) to review discipline specific organizational and metadata standards). Using these makes your data immediately usable with existing tools (see also [2.2.5. Standards](<!--internal link-->)). 
 
-::: {.orc-grid-tools}
-::: {.orc-card-tool}
-<div class="orc-card-tool-icon"><img src="../../assets/img/lmu_osc_logo.jpg" alt="LMU OSC"></div>
+- **Verify anonymization.** Check that no personal information remains in the data files, metadata, or filenames.
 
-#### [FAIR Data Management (Tutorial)](https://lmu-osc.github.io/FAIR-Data-Management/)
 
-Documentation, organization, and metadata
+::: {.container .my-4 }
 
-<details>
-<summary>Read more</summary>
-Comprehensive guide to managing research data following FAIR principles. Covers READMEs, codebooks, file formats, and standards.
-</details>
+<h4 class="fs-5"><i class="bi bi-mortarboard"></i> LEARN MORE</h4>
+
+::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
+
+<!-- card  -->
+::: {.col}
+
+<div class="card orc-card-tool h-100 position-relative">
+<span class="orc-card-tool-badge recommended">OSC Tutorial</span>
+<div class="orc-card-tool-icons mb-2">
+<div class="orc-card-tool-icon icon-1">
+<img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+</div>
+</div>
+<h4 class="card-title">FAIR Data Management</h4> 
+<p class="card-text">Manage data following FAIR principles. Covers READMEs, data dictionaries, file formats, and standards. (2h)</p>
+<a href="https://lmu-osc.github.io/data-documentation-validation-R/" class="stretched-link" target="_blank" rel="noopener"> </a>
+</div>
 
 :::
+
+<!-- card  -->
+::: {.col}
+
+<div class="card orc-card-tool h-100 position-relative">
+<span class="orc-card-tool-badge recommended">OSC Tutorial</span>
+<div class="orc-card-tool-icons mb-2">
+<div class="orc-card-tool-icon icon-1">
+<img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+</div>
+</div>
+<h4 class="card-title">Data Documentation & Validation</h4> 
+<p class="card-text">Create data dictionaries and READMEs for your data. (1h)</p>
+<a href="https://lmu-osc.github.io/data-documentation-validation-R/" class="stretched-link" target="_blank" rel="noopener"> </a>
+</div>
+
 :::
+
+
+::: {.col}
+<div class="card orc-card-tool h-100 position-relative">
+<span class="orc-card-tool-badge recommended">OSC Tutorial</span>
+<div class="orc-card-tool-icons mb-2">
+<div class="orc-card-tool-icon icon-1">
+<img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+</div>
+</div>
+<h4 class="card-title">Data Anonymization (tba)</h4> 
+<p class="card-text">R anonymization techniques for safely sharing sensitive research data.</p>
+<a href="#" class="stretched-link" target="_blank" rel="noopener"> </a>
+</div>
+
+:::
+
+:::
+
+
+<h4 class="fs-5 mt-3"><i class="bi bi-tools"></i> TOOLS & RESOURCES</h4>
+<!-- row for Tools & Resources section -->
+
+::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
+
+
+::: {.col}
+<!-- Actual card component -->
+<div class="card orc-card-tool h-100 position-relative">
+<div class="orc-card-tool-icons mb-2">
+<div class="orc-card-tool-icon icon-1">
+<img src="https://avatars.githubusercontent.com/u/29867987?s=280&v=4" class="img-fluid" alt="FAIRsharing logo">
+</div>
+</div>
+<h4 class="card-title">FAIRsharing</h4>
+<p class="card-text">Search by discipline to find metadata standards, reporting guidelines, and data policies for your field.</p>
+<a href="https://fairsharing.org/" class="stretched-link" target="_blank" rel="noopener"> </a>
+</div>
+
+:::
+
+::: {.col}
+
+<div class="card orc-card-tool h-100 position-relative">
+<div class="orc-card-tool-icons mb-2">
+<div class="orc-card-tool-icon icon-1">
+<img src="https://rdmkit.elixir-europe.org/assets/img/apple-touch-icon.png" class="img-fluid" alt="RDMkit logo">
+</div>
+</div>
+<h4 class="card-title">RDMkit</h4>
+<p class="card-text">Domain-specific metadata standards</p>
+<a href="https://rdmkit.elixir-europe.org/your_domain" class="stretched-link" target="_blank" rel="noopener"></a>
+</div>
+:::
+
+:::
+
+:::
+
 
 #### 4.1.3. Where to Deposit
 
