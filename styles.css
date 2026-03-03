@@ -21,15 +21,15 @@ h2, h3, h4, h5, h6 {
 }
 
 .sidebar-section {
-  padding-left: .5em;
-  padding-bottom: .2em;
+  padding-left: .6em;
+  padding-bottom: .3em;
 }
 
 /* Annoyingly, the sidebar section headers are not semantically marked up as headers, 
 so we have to use the following CSS selector to make them bold. This is a bit brittle, 
 but it works for now. */
 ul.list-unstyled.mt-1 > li.sidebar-item.sidebar-item-section > div.sidebar-item-container > a.sidebar-item-text.sidebar-link > span.menu-text {
-  font-weight: bold;
+  /* font-weight: bold; */
   font-size: 1.3em;
 }
 
