@@ -7,7 +7,6 @@ listing:
   - id: upcoming-events
     template: upcoming-events-template.ejs
     contents: events/
-    sort-ui: [title, date]
     sort: "date desc"
     filter-ui: true
     page-size: 999
