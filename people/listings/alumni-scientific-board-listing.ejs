@@ -1,0 +1,27 @@
+<%
+// Match alumni staff memberships only.
+const isAlumniStaff = (membership) =>
+  membership &&
+  typeof membership === 'object' &&
+  membership.type === 'scientific board' &&
+  membership.status === 'alumni';
+
+// Keep people who have at least one alumni scientific board membership.
+const alumnaeItems = (items || []).filter((item) => {
+  const memberships = Array.isArray(item.memberships) ? item.memberships : [];
+  return memberships.some(isAlumniStaff);
+});
+%>
+
+<ul>
+<% for (const item of alumnaeItems) { 
+const memberships = Array.isArray(item.memberships) ? item.memberships : [];
+// Keep alumni scientific board memberships, even if the position is missing.
+const alumniScientificBoardMemberships = memberships.filter(isAlumniStaff);
+for (const alumniScientificBoardMembership of alumniScientificBoardMemberships) { %>
+<li>
+  <a href="<%= item.path %>"><%= item.name %></a><% if (alumniScientificBoardMembership.notes) { %> (<span class="notes"><%= Array.isArray(alumniScientificBoardMembership.notes) ? alumniScientificBoardMembership.notes.join(' ') : alumniScientificBoardMembership.notes %></span>)<% } %>
+</li>
+<%  } 
+} %>
+</ul>
