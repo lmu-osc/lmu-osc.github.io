@@ -14,6 +14,21 @@ memberships:
     start: 2023
     end: 2025
     notes: Geography, **Speaker** until 2024
+  - type: scientific board
+    status: alumni
+    start: 2021
+    end: 2023
+    notes: Geography, **Speaker**
+  - type: scientific board
+    status: alumni
+    start: 2019
+    end: 2021
+    notes: Geography
+  - type: scientific board
+    status: alumni
+    start: 2017
+    end: 2019
+    notes: Geography
 email: r.ludwig@lmu.de
 photo: 'images/ludwig_ralf.jpg'
 links:
@@ -31,4 +46,5 @@ template: templates/people-template.html
 filters: 
     - templates/people_filter.lua
 ---
+
 
