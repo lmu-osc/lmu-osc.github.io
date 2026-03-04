@@ -350,32 +350,58 @@ Whichever you choose, ensure the repository provides a **DOI** (Digital Object I
 
 #### 4.1.4. Data Licenses
 
-A license tells others what they can do with your data. Without one, others cannot legally reuse your work, even if it is publicly available.
+A license tells others what they can do with your data. Without one, or equivalent statements, others cannot legally reuse your work, even if it is publicly available. Common open licenses for data are:
 
-**CC0 (Public Domain)** places no restrictions. Anyone can use, modify, and redistribute without attribution. Recommended for factual data where maximum reuse is the goal.
+<br>
 
-**CC BY (Attribution)** requires users to credit you. A good default when you want recognition while enabling broad reuse.
+- **CC0 (Public Domain)** places no restrictions. Anyone can use, modify, and redistribute without attribution. Recommended for factual data where maximum reuse is the goal.
 
-**CC BY-NC (Non-Commercial)** adds a restriction against commercial use. Consider whether this limitation actually serves your goals.
+- **CC BY (Attribution)** requires users to credit you. A good default when you want recognition while enabling broad reuse.
 
-For restricted-access data, a **Data Use Agreement** specifies conditions beyond a standard license: approved purposes, security requirements, publication terms, and data destruction timelines.
+- **CC BY-NC (Non-Commercial)** adds a restriction against commercial use. Consider whether this limitation actually serves your goals.
 
-::: {.orc-grid-tools}
-::: {.orc-card-tool}
-<div class="orc-card-tool-icon"><img src="../../assets/img/lmu_osc_logo.jpg" alt="LMU OSC"></div>
+<br>
 
-#### [Choose a License (Tutorial)](https://lmu-osc.github.io/code-publishing/choose_license.html)
+For restricted-access data, a **Data Use Agreement** specifies conditions beyond a standard license: approved purposes, security requirements, publication terms, and data destruction timelines.<!-- Reema - I think we might need a section just for DUA? also does this mean it's eitehr or? license when simple cases, DUA when complex and typically not open?-->
 
-Guidance on selecting the right license
+::: {.container .my-4 }
 
-<details>
-<summary>Read more</summary>
-Covers licenses for data, code, and other research outputs with decision flowcharts.
-</details>
+<h4 class="fs-5"><i class="bi bi-mortarboard"></i> LEARN MORE</h4>
+
+::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
+
+<!-- card -->
+::: {.col}
+
+<div class="card orc-card-tool h-100 position-relative">
+<span class="orc-card-tool-badge recommended">OSC Tutorial</span>
+<div class="orc-card-tool-icons mb-2">
+<div class="orc-card-tool-icon icon-1">
+<img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+</div>
+</div>
+<h4 class="card-title">Choose a License</h4>
+<p class="card-text">License decision flowchart for data and code</p>
+<a href="https://lmu-osc.github.io/code-publishing/" class="stretched-link" target="_blank" rel="noopener"> </a>
+</div>
+
 :::
+
 :::
 
 :::
+
+
+#### 4.1.5. Data Use Agreements
+
+_in construction_
+
+* Description of what is is, when needed, what is the process to create one
+* LMU contact for legal department 
+* Examples DUA
+
+
+
 
 </details>
 
