@@ -6,6 +6,7 @@ listing:
       - people
     template: listings/active-lmu-members-listing.ejs
     sort: "surname asc"
+    categories: unnumbered
 
   - id: affiliate-members
     contents: 
