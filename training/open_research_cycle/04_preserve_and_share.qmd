@@ -40,29 +40,112 @@ include-in-header:
 
 Sharing your data allows others to verify your findings, build on your work, and increase the impact of your research. But sharing does not always mean making everything publicly available. What you can share depends on the consent you obtained, the sensitivity of your data, and your ethics approval.
 
-In [1. Plan & Design](01_plan_and_design.qmd){.mark}, you wrote a Data Management Plan, in [2. Collect & Manage](02_collect_and_manage.qmd){.mark}, you created documentation for yourself, and in [3. Analyze & Collaborate](03_analyze_and_collaborate.qmd){.mark} you updated that documentation for your collaborators. Now you prepare that documentation for people who have no prior knowledge of your project. You also reassess your plan and make a **final decision on how openly your data can be shared, select an appropriate repository, and apply a license that tells others how they may reuse your work**.
+In [1. Plan & Design](01_plan_and_design.qmd){.mark}, you wrote a Data Management Plan, in [2. Collect & Manage](02_collect_and_manage.qmd){.mark}, you created documentation for yourself, and in [3. Analyze & Collaborate](03_analyze_and_collaborate.qmd){.mark} you updated that documentation for your collaborators. Now you prepare that documentation for people who have no prior knowledge of your project. You also reassess your plan and make a **final decision on how openly your data will be shared, select an appropriate repository, and apply a license that tells others how they may reuse your work**.
 
-This step is straightforward if you followed previous steps as you should already have a README, a data dictionary (codebook), organized files, and clear metadata.
+This step is straightforward if you followed previous steps: by this stage, you should already have a README, a data dictionary (codebook), organized files, and clear metadata.
 
 ::: {.panel-tabset}
 
 #### 4.1.1. Open vs Restricted <!-- I edited this a bit Reema, is this correct? overall I think this section could use more information-->
 
-Not all data can or should be shared openly. Your sharing options depend on what consent participants gave and what your ethics approval permits.
+Not all data can or should be shared openly. Your sharing options depend on what consent participants gave and what your ethics approval permits (see [1.2.3. Ethics](<!--internal link-->)).
 
 <br>
 
 - **Open data** can be downloaded by anyone without restrictions. This maximizes reuse but is only appropriate when data contains no personal information or has been fully anonymized.
 
-- **Restricted access** means the metadata is available on a professional repository and clear instructions of the conditions of access are provided. Requesting the data often requires describing the purpose of reuse (sometimes in the form of a preregistration, see [1.4.1. Pre-analysis planning](<!--internal link-->)), signing a Data Use Agreement, and agree to further conditions. This can be organized automatically through the repository or through contacting the authors. This balances reuse with protection. 
+- **Restricted access** means the metadata is available on a professional repository and clear instructions of the conditions of access to the data are provided. Requesting the data often requires describing the purpose of reuse (sometimes in the form of a preregistration, see [1.4.1. Pre-analysis planning](<!--internal link-->)), signing a Data Use Agreement, and agree to further conditions. This can be organized automatically through the repository or through contacting the authors<!--if so what's the difference with the option below?-->. This balances reuse with protection. 
 
-- **Metadata only** describes what data exists without sharing the data itself. Others can discover your work and contact you to discuss access. This is appropriate when data cannot be shared due to legal or ethical constraints.
+- **Metadata only** describes what data exists without sharing the data itself. Others can discover your work and contact you to discuss access. This is appropriate when data cannot be shared due to legal or ethical constraints.<!--would that be considered Accessible though?--> Making your data Findable by sharing your metadata on a professional repository is the first step to making your data FAIR as required by the [LMU guidelines](https://cms-cdn.lmu.de/media/contenthub/amtliche-veroeffentlichungen/gwp-ordnung.pdf) (see [1.2.1. LMU guidelines](<!--internal link-->))
 
 <br>
 
-When deciding, ask yourself: What did participants consent to? What does your ethics approval allow? Can the data be anonymized without losing value? If you work with sensitive data, consult [your institution's data protection officer](https://www.lmu.de/en/about-lmu/structure/organizational-structure/officers-and-representatives/data-protection-officer.html).
+When deciding, ask yourself: What did participants consent to? What does your ethics approval allow? Can the data be anonymized without losing value (see [2.3.2. Anonymisation](<!--internal link-->))? If you work with sensitive data, consult [your institution's data protection officer](https://www.lmu.de/en/about-lmu/structure/organizational-structure/officers-and-representatives/data-protection-officer.html).
 
 <!-- TODO Reema: tool card for decision tree ; MI: not sure if feasible in enough details to be useful? but perhaps ;)--> 
+
+
+::: {.container .my-4 }
+
+<h4 class="fs-5"><i class="bi bi-mortarboard"></i> LEARN MORE</h4>
+
+::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
+
+::: {.col}
+
+<div class="card orc-card-tool w-100 h-100 position-relative">
+<span class="orc-card-tool-badge recommended">OSC Lecture</span>
+<div class="orc-card-tool-icons mb-2">
+<div class="orc-card-tool-icon icon-1">
+<img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+</div>
+</div>
+<h4 class="card-title">Why share data openly?</h4>
+<p class="card-text">An introduction to the what, why, and how to make data open (30 min)</p>
+<a href="https://lmu-osc.github.io/training/data-management/open-data.html" class="stretched-link" target="_blank" rel="noopener"></a>
+</div>
+
+:::
+
+::: {.col}
+
+<div class="card orc-card-tool w-100 h-100 position-relative">
+<span class="orc-card-tool-badge recommended">OSC Lecture</span>
+<div class="orc-card-tool-icons mb-2">
+<div class="orc-card-tool-icon icon-1">
+<img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+</div>
+</div>
+<h4 class="card-title">Maintaining Privacy with Open Data</h4>
+<p class="card-text">How to make data open without revealing sensitive information (1h)</p>
+<a href="https://lmu-osc.github.io/training/data-management/maintaining-privacy-with-open-data.html" class="stretched-link" target="_blank" rel="noopener"></a>
+</div>
+
+:::
+
+
+::: {.col}
+
+<div class="card orc-card-tool w-100 h-100 position-relative">
+<span class="orc-card-tool-badge recommended">OSC Tutorial (tba) </span>
+<div class="orc-card-tool-icons mb-2">
+<div class="orc-card-tool-icon icon-1">
+<img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+</div>
+</div>
+<h4 class="card-title">Data Anonymization</h4>
+<p class="card-text">Implement data anonymization techniques in R. (X h)</p>
+<!-- Add link when available -->
+<a href="#" class="stretched-link" rel="noopener"></a>
+</div>
+
+:::
+
+:::
+
+<h4 class="fs-5 mt-3"><i class="bi bi-tools"></i> TOOLS & RESOURCES</h4>
+
+::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
+
+::: {.col}
+
+<div class="card orc-card-tool w-100 h-100 position-relative">
+<div class="orc-card-tool-icon mb-2">
+<img src="https://cms-cdn.lmu.de/assets/img/favicon.ico" class="img-fluid" alt="LMU logo">
+</div>
+<h4 class="card-title">LMU Guidelines for Safeguarding Good Scientific Practice</h4>
+<p class="card-text">Implementation of the German Research Foundation's (DFG) Code of Conduct</p>
+<a href="https://cms-cdn.lmu.de/media/contenthub/amtliche-veroeffentlichungen/gwp-ordnung.pdf" class="stretched-link" target="_blank" rel="noopener"></a>
+</div>
+
+:::
+
+:::
+
+:::
+
+
+
 
 #### 4.1.2. Preparing Your Data
 

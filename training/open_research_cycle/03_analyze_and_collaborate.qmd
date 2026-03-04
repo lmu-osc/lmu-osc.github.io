@@ -820,7 +820,7 @@ To complete before the presentation of the results to the research group.
 
 **1. Before and during data analyses**
 
-  **Repository Setup & Content:** <!-- don't manage to make this one indented-->
+**Repository Setup & Content:** <!-- don't manage to make this one indented-->
 
 - [ ] Uses the lab’s standard folder structure
 - [ ] Version-controlled with Git and shared via the LRZ GitLab or GitHub organization
@@ -831,7 +831,7 @@ To complete before the presentation of the results to the research group.
 - [ ] Includes a Quarto reproducible analysis report
 - [ ] Contains a descriptive README explaining usage, code order, and dependencies
 
-  **R Script Standards:**
+**R Script Standards:** <!-- don't manage to make this one indented-->
 
 - [ ] Includes metadata/header identifying author, date, and purpose
 - [ ] Structured for readability
