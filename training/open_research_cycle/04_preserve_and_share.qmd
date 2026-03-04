@@ -413,7 +413,12 @@ _in construction_
 
 </summary>
 
-<!-- intro text here -->
+So far, your code repository for internal use is either on the secured [LRZ Gitlab](https://gitlab.lrz.de/) in case your data and/or code are sensitive, or on a [GitHub](https://github.com/) repository. Before the submission of a manuscript to a journal and/or upon the acceptance of a manuscript, there are new steps that need to be done to publish your code (i.e. archive its current version and get a DOI) on e.g. [Zenodo](https://zenodo.org/). 
+
+<br>
+
+These steps require little time if you had worked reproducibly and completed all preparation prior to that point as was recommended in previous sections, i.e. preparation of a data dictionary, and simulated dataset generation
+
 
 ::: {.panel-tabset}
 
@@ -445,21 +450,72 @@ _in construction_
 
 </summary>
 
-<!-- intro text here -->
+
+**Publishing open access articles (free to readers) increases the visibility, citation, and impact** of research by removing paywall barriers, enabling scholars, practitioners, and policymakers worldwide to access and build upon the work without restriction. It also **accelerates knowledge dissemination and promotes equity** in scholarship by providing institutions and researchers - especially in low-resource settings - free and immediate access to scientific findings.
+
+They are several pathways to make your your articles free to read:
+<!-- weird no margin format to FIX again -->
+- **Diamond Open Access**: journals that provide immediate open access without charging authors any Article Processing Charges (APCs), as publication costs are covered by institutions, consortia, or public funding. Visit the [Directory of Open Access Journals (DOAJ)](https://doaj.org/) to find them.
+- **Gold Open Access**: the publication of the final version of record as immediately open access on the publisher’s platform, against payment of an APC.
+- **Green Open Access**: self-archiving of a preprint or postprint in an institutional or disciplinary repository, either immediately or after an embargo period imposed by the publisher,  without cost to the author.
+
+However, the payment of APCs can also be requested by publishers regardless of the article's accessibility status depending on the contract negotiated by the University and each publisher(see [4.3.1. Contract with Publishers](<!--internal link-->)).
+
+<!-- Doaj card https://doaj.org/ ?-->
+
 
 ::: {.panel-tabset}
 
-#### Your Rights
 
-<!-- what publishers allow: openpolicyfinder -->
+#### 4.3.1. Contracts with Publishers
 
-#### Green OA
+Until 2024, authors publishing in legacy (subscription-based) journals were required to pay an Article Processing Charge (APC) to make their work immediately open access upon publication, a model commonly referred to as '_gold open access_'. 
+To avoid these fees while still ensuring public accessibility, authors were encouraged to **disseminate a preprint and/or postprint, or to deposit the publisher’s version in an institutional repository after the embargo period had expired**. 
+These procedures, which are **free to the authors**, are collectively known as **'_green open access_'**. 
 
-<!-- preprint/postprint workflow figure, institutional repos, embargo periods -->
+<br>
 
-#### Gold OA
+**Since 2025**, however, at LMU Munich and other universities that are part of the [DEAL Konsortium](https://deal-konsortium.de/en/) in Germany, the agreements with Elsevier, Wiley, and Springer Nature, stipulate that the **authors publishing in hybrid journals** (i.e., journals offering both subscription-based and open access options) **incur an Article Processing Charge (APC) regardless of whether the article is published closed or open access**. Therefore, authors choosing to publish there and paying the Article Processing Charge may as well request an open access article from the publisher directly. Consequently, authors who elect to publish in these venues and pay the APC are generally advised to opt for immediate open access through the publisher. Although preprinting remains possible and may expedite dissemination, it no longer constitutes a cost-free alternative for hybrid journals operating under these uniform APC conditions.
 
-<!-- APCs, LMU agreements -->
+<br>
+
+The current contract conditions for LMU Munich can be accessed on the [University Library Publication Fees Webpage (in german)](https://www.ub.uni-muenchen.de/schreiben/open-access-publizieren/publikationsgebuehren/index.html). To get support with Article Processing Charges and open access policies, contact the [University Library Open Access team](https://www.en.ub.uni-muenchen.de/writing/open-access-publishing/oa-auxiliary-page/index.html).
+
+
+#### 4.3.2. Publishing Preprints and Retaining Rights 
+
+To increase the accessibility of your article and its components, for free (unless you anyway have to pay the publishers to publish your article (see [4.3.1. Contracts with Publishers](<!-- internal link-->))), we recommend to:
+
+
+<br>
+<br> <!-- figure left and text right -->
+<br>
+
+To get support the institutional repository [LMU Open Access](https://epub.ub.uni-muenchen.de/) contact the [University Library Open Access team](https://www.en.ub.uni-muenchen.de/writing/open-access-publishing/oa-auxiliary-page/index.html).
+
+
+
+::: {.container .my-4 }
+
+<h4 class="fs-5 mt-3"><i class="bi bi-tools"></i> TOOLS & RESOURCES</h4>
+
+::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
+
+
+::: {.col}
+
+<div class="card orc-card-tool h-100 position-relative">
+<span class="orc-card-tool-badge recommended">Supported at LMU</span>
+<div class="orc-card-tool-icon mb-2"> 
+<img src="https://cms-cdn.lmu.de/assets/img/favicon.ico" class="img-fluid" alt="LMU logo">
+</div>
+<h4 class="card-title">LMU Open Access </h4>
+<p class="card-text">Institutional preprint repository.</p>
+<a href="https://epub.ub.uni-muenchen.de/" class="stretched-link" target="_blank" rel="noopener"></a>
+</div>
+:::
+
+:::
 
 :::
 
@@ -473,21 +529,124 @@ _in construction_
 
 </summary>
 
-<!-- intro text here -->
+All research outputs and their specific versions should be linked to researchers, organisations, and funders through persistent identifiers.
 
 ::: {.panel-tabset}
 
-#### 4.4.1. ORCID
 
-<!-- ORCID, ROR IDs -->
+####  4.4.1. Authorship, Contributorship, and ORCID
 
-####  4.4.2. CRediT
+According to §14 of the [LMU Guidelines for Safeguarding Good Scientific Practice](https://cms-cdn.lmu.de/media/contenthub/amtliche-veroeffentlichungen/gwp-ordnung.pdf), an author is someone who has made a genuine, verifiable contribution to the content of a scientific publication, data, or software. Authorship derived solely from  managerial or supervisory position are inadmissible. All authors must agree to the final version of the work to be published; they bear joint responsibility for the publication unless explicitly stated otherwise.
 
-<!-- CRediT taxonomy, contributorship -->
+<br>
+
+To increase transparency and accountability, and acknowledge what contribution to a research project each contributor has made, we recommend to use the [Contributor Role Taxonomy  (CRediT)](https://credit.niso.org/) (‘Conceptualization’, ‘Data curation’, ‘Formal analysis’, ‘Funding acquisition’, ‘Investigation’, ‘Methodology’, ‘Project administration’, ‘Resources’, ‘Software’, ‘Supervision’, ‘Validation’, ‘Visualization’, ‘Writing—original draft’, and ‘Writing—review & editing’) which is used by [many publishers](https://credit.niso.org/adopters/). When not prompted for these contributor roles when submitting your article, you can add the CRediT statement in the acknowledgement section of your manuscript. 
+
+<br>
+
+When relevant, we also recommend to use [Method Reporting with Initials for Transparency (MeRIT)](https://doi.org/10.1038/s41467-023-37039-1) i.e. to add initials to the Methods section identifying who did what when several team members contributed to e.g. data curation or software.
+
+<br>
+
+To distinguish yourself and claim credit for your work automatically, no matter how many people have your same (or similar) name, researchers are recommended to create an Open Researcher and Contributor ID ([ORCID](https://orcid.org/)), a free, unique, persistent identifier for individuals. The vast majority of publishers, funders, and repositories to publish data and code prompt for authors and contributors' ORCID. 
+
+
+::: {.container .my-4}
+
+<h4 class="fs-5"><i class="bi bi-tools"></i> TOOLS & RESOURCES</h4>
+
+::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
+
+::: {.col}
+
+<div class="card orc-card-tool w-100 h-100 position-relative">
+<div class="orc-card-tool-icon mb-2">
+<img src="https://cms-cdn.lmu.de/assets/img/favicon.ico" class="img-fluid" alt="LMU logo">
+</div>
+<h4 class="card-title">LMU Guidelines for Safeguarding Good Scientific Practice</h4>
+<p class="card-text">Implementation of the German Research Foundation's (DFG) Code of Conduct</p>
+<a href="https://cms-cdn.lmu.de/media/contenthub/amtliche-veroeffentlichungen/gwp-ordnung.pdf" class="stretched-link" target="_blank" rel="noopener"></a>
+</div>
+
+:::
+
+::: {.col}
+
+<div class="card orc-card-tool h-100 position-relative">
+<div class="orc-card-tool-icons mb-2">
+<div class="orc-card-tool-icon icon-1">
+<img src="https://credit.niso.org/wp-content/uploads/2020/04/credit-icon-499x500-1-150x150.png" class="img-fluid" alt="CRediT logo">
+</div>
+</div>
+<h4 class="card-title">CRediT</h4>
+<p class="card-text">Contributor Role Taxonomy.</p>
+<a href="https://credit.niso.org/" class="stretched-link" target="_blank" rel="noopener"></a>
+</div>
+:::
+
+::: {.col}
+
+<div class="card orc-card-tool h-100 position-relative">
+<div class="orc-card-tool-icons mb-2">
+<div class="orc-card-tool-icon icon-1">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/ORCID_iD.svg/330px-ORCID_iD.svg.png" class="img-fluid" alt="ORCID logo">
+</div>
+</div>
+<h4 class="card-title">ORCID</h4>
+<p class="card-text">Free, unique, persistent identifier for researchers.</p>
+<a href="https://orcid.org/" class="stretched-link" target="_blank" rel="noopener"></a>
+</div>
+:::
+
+:::
+
+:::
+
+
+####  4.4.2. Institution, Funders, and ROR
+
+For all research outputs, institutional affiliations and a funding statement need to be disclosed as part of the metadata. To be machine-readable and automatically connected to people's profile or their organization, this must include the official name of the organization and (one of) its persistent identifier.
+
+<br>
+
+The [Research Organization Registry (ROR)](https://ror.org/) is a global, community-led registry of open persistent identifiers for research and funding organizations.
+
+<br>
+
+The official names of LMU Munich are Ludwig-Maximilians-Universität München in german and LMU Munich in english; it's ROR ID is [https://ror.org/05591te55](https://ror.org/05591te55).
+
+<br>
+
+Similarly for funders, the Deutsche Forschungsgemeinschaft / German Research Foundation's ROR ID is [https://ror.org/018mejw64](https://ror.org/018mejw64)
+
+
+::: {.container .my-4}
+
+<h4 class="fs-5"><i class="bi bi-tools"></i> TOOLS & RESOURCES</h4>
+
+::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
+
+::: {.col}
+
+<div class="card orc-card-tool w-100 h-100 position-relative">
+<div class="orc-card-tool-icon mb-2">
+<img src="https://ror.org/img/apple-touch-icon.png" class="img-fluid" alt="ROR logo">
+</div>
+<h4 class="card-title">Research Organization Registry (ROR)</h4>
+<p class="card-text">Persistent identifiers for research and funding organizations</p>
+<a href="https://ror.org/" class="stretched-link" target="_blank" rel="noopener"></a>
+</div>
+
+:::
+
+:::
+
+:::
 
 ####  4.4.3. Connecting Your Work
 
-<!-- connect prereg → data → code → paper -->
+<!-- connect prereg → data → code → paper 
+If you did submit a preregistration on e.g. the OSF with an embargo, you may want to lift that embargo, i.e. make the preregistration public which will also create a DOI that you can cite in your article. -->
 
 
 :::
