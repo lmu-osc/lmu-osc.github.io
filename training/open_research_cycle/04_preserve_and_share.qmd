@@ -265,41 +265,88 @@ During the course of data collection and analyses, you created a README and data
 
 Choose a repository that suits your data type, your field's expectations, and your access requirements.
 
-**Discipline-specific repositories** are often the best choice. They use metadata standards your community expects, making your data findable by researchers in your field. Search [re3data](https://www.re3data.org/) to find repositories for your domain.
+<br>
 
-**General-purpose repositories** like [Zenodo](https://zenodo.org/), [Figshare](https://figshare.com/), or [OSF](https://osf.io/) accept any data type. They provide DOIs and long-term preservation, but may lack the specialized metadata fields of discipline-specific options.
+- **Discipline-specific repositories** are often the best choice. They use metadata standards your community expects, making your data findable by researchers in your field. Search [re3data](https://www.re3data.org/) to find repositories for your domain.
 
-**Institutional repositories** may be required by your funder or institution. Check your grant terms and institutional policies.
+- **General-purpose repositories** like [Zenodo](https://zenodo.org/) or [OSF](https://osf.io/) accept any data type. They provide DOIs and long-term preservation, but may lack the specialized metadata fields of discipline-specific options.
 
-Whichever you choose, ensure the repository provides a **DOI** (Digital Object Identifier) so your data can be cited and tracked. See the Identity & Credit panel for more on persistent identifiers.
+- **Institutional repositories** may be required by your funder. Choosing the LMU repository [Open Data LMU](https://data.ub.uni-muenchen.de/) also ensures you can get the support of the [Research Data Management team of the University Library](https://www.en.ub.uni-muenchen.de/writing/research_data/research-data-management/index.html).
 
-::: {.orc-grid-tools}
-::: {.orc-card-tool}
-<div class="orc-card-tool-icon"><i class="bi bi-search"></i></div>
+<br>
 
-#### [re3data](https://www.re3data.org/)
+Whichever you choose, ensure the repository provides a **DOI** (Digital Object Identifier) so your data can be cited and tracked. <!-- See the Identity & Credit panel for more on persistent identifiers. -- not sure what will be there yet -->
 
-Registry of research data repositories
 
-<details>
-<summary>Read more</summary>
-Search by discipline to find repositories that accept your type of data and meet your requirements.
-</details>
+::: {.container .my-4 }
+
+<h4 class="fs-5 mt-3"><i class="bi bi-tools"></i> TOOLS & RESOURCES</h4>
+
+::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
+
+<!-- card-->
+::: {.col}
+
+<div class="card orc-card-tool h-100 position-relative">
+<div class="orc-card-tool-icon mb-2"> 
+<img src="https://www.re3data.org/favicon.ico" class="img-fluid" alt="re3data icon">
+</div>
+<h4 class="card-title">re3data</h4>
+<p class="card-text">Registry of research data repositories.</p>
+<a href="https://www.re3data.org/" class="stretched-link" target="_blank" rel="noopener"></a>
+
+</div>
+
 :::
 
-::: {.orc-card-tool}
-<div class="orc-card-tool-icon"><i class="bi bi-cloud-upload"></i></div>
 
-#### [Zenodo](https://zenodo.org/)
+::: {.col}
+<div class="card orc-card-tool h-100 position-relative">
+<div class="orc-card-tool-icon mb-2"> 
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Open_Science_Framework_log_%28and_Center_for_Open_Science_logo%29.svg/3840px-Open_Science_Framework_log_%28and_Center_for_Open_Science_logo%29.svg.png" class="img-fluid" alt="OSF icon">
+</div>
+<h4 class="card-title">Open Science Framework</h4>
+<p class="card-text">General-purpose repository for data, materials, reports.</p>
+<a href="https://osf.io/registries/" class="stretched-link" target="_blank" rel="noopener"></a>
 
-General-purpose repository for any research output
+</div>
 
-<details>
-<summary>Read more</summary>
-Free, open repository hosted by CERN. Accepts any file type, assigns DOIs, and integrates with GitHub.
-</details>
 :::
+
+
+<!-- card-->
+::: {.col}
+
+<div class="card orc-card-tool h-100 position-relative">
+<div class="orc-card-tool-icon mb-2"> 
+<img src="https://about.zenodo.org/static/img/icons/zenodo-icon-blue.svg" class="img-fluid" alt="Zenodo icon">
+</div>
+<h4 class="card-title">Zenodo</h4>
+<p class="card-text">General-purpose repository for data, software, reports.</p>
+<a href="https://zenodo.org" class="stretched-link" target="_blank" rel="noopener"></a>
+
+</div>
+
 :::
+
+::: {.col}
+
+<div class="card orc-card-tool h-100 position-relative">
+<span class="orc-card-tool-badge recommended">Supported at LMU</span>
+<div class="orc-card-tool-icon mb-2"> 
+<img src="https://cms-cdn.lmu.de/assets/img/favicon.ico" class="img-fluid" alt="LMU logo">
+</div>
+<h4 class="card-title">Open Data LMU</h4>
+<p class="card-text">Institutional data repository.</p>
+<a href="https://data.ub.uni-muenchen.de/" class="stretched-link" target="_blank" rel="noopener"></a>
+</div>
+:::
+
+:::
+
+:::
+
+
 
 #### 4.1.4. Data Licenses
 
