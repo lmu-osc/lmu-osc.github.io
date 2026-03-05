@@ -11,7 +11,7 @@ const activeFellowItems = (items || []).filter((item) => {
 %>
 
 <div class="container py-4">
-<div class="d-flex flex-wrap justify-content-center gap-4">
+<div class="d-flex flex-wrap justify-content-center gap-4 list">
 
 <% for (const item of activeFellowItems) { %>
 <%
@@ -23,7 +23,7 @@ const activeFellowItems = (items || []).filter((item) => {
   const fellowPosition = activeFellowMembership?.position;
 %>
 
-<div class="card d-flex flex-column align-items-center" style="width: 185px;">
+<div class="card d-flex flex-column align-items-center" style="width: 185px;" <%= metadataAttrs(item) %>>
 <!-- ORCID icon container (always present for consistent spacing) -->
 <div class="orcid-icon-container">
 <% if (item.social_media && item.social_media.ORCID) { %>
