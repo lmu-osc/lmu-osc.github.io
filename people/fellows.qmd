@@ -4,6 +4,7 @@ include-in-header:
   - text: |
       <script src="/assets/javascript/clear_filter_button.js" defer></script>
       <script src="/assets/javascript/change_categories_header.js" defer></script>
+    
 listing:
   - id: fellows
     contents: 
