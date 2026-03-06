@@ -22,7 +22,7 @@ listing:
     template: events/events.ejs
     contents: events/events/*.qmd
     sort: "date desc"
-include-after-body: 
+include-after-body:
   - text: |
       <script src="/assets/javascript/remove_title.js" defer></script>
 include-in-header:
@@ -31,577 +31,379 @@ include-in-header:
       <script src="/assets/javascript/clear_filter_button.js" defer></script>
       <script src="assets/javascript/impact_counter.js" defer></script>
       <style>
+
+      :root {
+        --green-main:         #00883A;
+        --green-dark:         #006b2d;
+        --green-light:        #a6c871;
+        --green-pale:         #f7fcf7f2;
+        --green-border:       #00883b70;
+        --green-border-solid: #00883b79;
+        --green-500:          #00883A;
+        --green-300:          #4caf74;
+        --green-100:          #d4eddf;
+        --green-50:           #f7fcf7;
+        --ink:                #333;
+        --muted:              #555;
+        --border:             #00883b40;
+        --white:              #ffffff;
+
+        --ff-display: 'DM Serif Display', Georgia, serif;
+        --ff-body:    'DM Sans', system-ui, sans-serif;
+
+        --radius-sm: 6px;
+        --radius-md: 12px;
+        --radius-lg: 20px;
+
+        --shadow-sm: 0 1px 4px rgba(0,0,0,0.06), 0 2px 12px rgba(0,0,0,0.04);
+        --shadow-md: 0 4px 20px rgba(0,0,0,0.08), 0 1px 4px rgba(0,0,0,0.04);
+        --shadow-lg: 0 12px 40px rgba(0,0,0,0.10), 0 2px 8px rgba(0,0,0,0.04);
+
+        --transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+
+        /* ── Single source of truth for spacing ── */
+        --section-py:    4rem;    /* vertical padding for all sections   */
+        --section-px:    2rem;    /* horizontal padding for all sections */
+        --inner-gap:     1.5rem;  /* gap between eyebrow → title → body  */
+        --item-gap:      0.6rem;  /* gap between checklist items, etc.   */
+      }
+
+      body {
+        /*font-family: var(--ff-body);*/
+        color: var(--ink);
+        background: var(--white);
+      }
+
+      /* =============================================
+         BANNER
+         ============================================= */
       .quarto-title-block .quarto-title-banner {
         background-position-y: center;
         height: 400px;
-      }
-
-      .quarto-title-banner {
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-      }
-      
-
-      /* Mission Statement Section Styling */
-      .mission-statement-container {
-        display: flex;
-        justify-content: center;
-        width: 80%;
-        max-width: 1100px;
-        margin: 0 auto;
-      }
-      
-      .mission-statement-card {
-        border: 2px solid  #00883b70;
-        border-radius: 15px;
-        padding: 1.5rem 2rem;
-        background-color: white;
-        box-shadow: 0 2px 8px rgba(44, 95, 141, 0.1);
-        transition: box-shadow 0.3s ease;
-      }
-      
-      .mission-statement{
-        border-radius: 15px;
-        padding: 2rem 3rem;
-        background-color: #f7fcf7f2;
+        position: relative;
+        margin-bottom: 0;
         
       }
-      .mission-statement-card:hover {
-        box-shadow: 0 4px 16px rgba(44, 95, 141, 0.15);
+      .quarto-title-block .quarto-title-banner::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+          135deg,
+          rgba(0,65,28,0.08) 0%,
+          rgba(0,136,59,0.03) 60%,
+          rgba(0,0,0,0.10) 100%
+        );
+        pointer-events: none;
       }
-      
-      .mission-statement h2,
-      .activities-container h2,
-      .impact-card h2,
-      .carousel-section h2 {
-        display: block;
-        width: fit-content;
-        margin: 0 auto 1.5rem auto;
-        font-size: 1.5rem;
-        font-weight: 600;
-        color: #00883A;
+
+      /* =============================================
+         SHARED SECTION STYLES
+         ============================================= */
+      .osc-section {
+        padding: var(--section-py) var(--section-px);
+      }
+      .osc-section-inner {
+        max-width: 1100px !important;
+        margin: 0 auto;
+      }
+      .section-eyebrow {
+        letter-spacing: 0.18em;
+        color: var(--green-500);
+        /* no extra margin here — controlled by mb-2 utility in markup */
+      }
+      .section-title {
+        font-size: clamp(1.6rem, 3vw, 1.7rem);
+        margin: 0 0 var(--inner-gap);
+        line-height: 1.3;
+      }
+
+      /* =============================================
+         IMPACT STRIP
+         ============================================= */
+      .impact-container {
+        background: var(--green-50);
+        border-top:    1px solid var(--green-border);
+        border-bottom: 1px solid var(--green-border);
+        padding: var(--section-py) var(--section-px);
+      }
+      .impact-container .metric-value {
+        font-family: var(--ff-display);
+        font-size: 2.6rem;
+        color: var(--green-500);
+        line-height: 1;
+        margin-bottom: 0.35rem;
+      }
+      .impact-container .metric-label {
+        font-size: 0.82rem;
+        font-weight: 500;
+        color: var(--muted);
         text-transform: uppercase;
-        letter-spacing: 2px;
-        border-bottom: 3px solid #00883b79;
-        padding-bottom: 0.3rem;
+        letter-spacing: 0.08em;
       }
 
-      
-      .mission-statement p {
-        font-size: 1.05rem;
-        line-height: 1.8;
-        color: #333;
-        text-align: center;
-        margin: 0;
-        margin-bottom: 1.5rem;
-      }
-      .mission-statement-checklist {
-        margin-top: 1rem;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 1.5rem 2rem;
+      /* =============================================
+         EXPLORE CARDS
+         ============================================= */
+
+         .explore-section .desc{
+          max-width:600px;
+         }
+        .explore-card {
+          border-radius: var(--radius-lg);
+          transition: var(--transition);
+          background: var(--white);
+          text-decoration: none !important;
+        }
+        .explore-card::before {
+          content: '';
+          position: absolute;
+          bottom: 0; left: 0; right: 0;
+          height: 3px;
+          background: var(--green-main);
+          transform: scaleX(0);
+          transform-origin: left;
+          transition: var(--transition);
+        }
+        .explore-card:hover {
+          border-color: var(--green-main);
+          box-shadow: var(--shadow-md);
+          transform: translateY(-3px);
+        }
+        .explore-card:hover::before { transform: scaleX(1); }
+        .explore-card-icon {
+          border-radius: var(--radius-md);
+          background: var(--green-50);
+          font-size: 1.5rem;
+          color: var(--green-500);
+        }
+
+        .explore-card h3 {
+          font-size: 1rem;
+          font-weight: 400;
+          margin: 0;
+        }
+        .explore-card p {
+          font-size: 0.8rem;
+          line-height: 1.65;
+          margin: 0;
+          flex-grow: 1;
+        }
+
+      .explore-card:hover .explore-card-link::after { transform: translateX(4px); }
+
+      /* =============================================
+         MISSION
+         ============================================= */
+      .mission-checklist {
         list-style: none;
+        padding: 0;
+        margin: var(--inner-gap) 0 var(--inner-gap);
+        display: flex;
+        flex-direction: column;
+        gap: var(--item-gap);
       }
-      .checklist-item {
-        font-size: 0.98rem;
-        color: #333;
-        text-align: justify;
+      .mission-checklist ul {
+        padding-left: 0;
+        margin-left: 0;
       }
-
-      .mission-statement-checklist li {
-        position: relative;
-        padding-left: 1.2rem;
-        margin-bottom: 0.8rem;
+      
+      .mission-checklist li {
+        display: flex;
+        gap: 0.65rem;
+        align-items: flex-start;
+        font-size:0.95rem;
+        color: var(--muted);
         line-height: 1.7;
       }
-
-      
-      .mission-statement-checklist li::marker {
-        content: "✓";
-        color: #00883A;
-        font-size: 1.3rem;
-        font-weight: 400;
-        text-shadow: 2px 2px 2px #01411d3c;
-      }
-      .mission-statement .btn {
-        display: inline-block;            
-        margin-top: 1.5rem;
-        padding: 0.65rem 1.6rem;         
-        font-size: 1.1rem;                 
-        font-weight: 500;                
-        color: #ffffff;                  
-        background-color: #00883A;     
-        border: none;                              
-        text-decoration: none;             
-        transition: all 0.25s ease;       
-        cursor: pointer;                  
-        box-shadow: 0 4px 12px rgba(0, 136, 58, 0.25); 
-      }
-
-      .mission-statement .btn:hover,
-      .mission-statement .btn:active,
-      .mission-statement .btn:focus{
-        background-color: #006b2d !important;       
-        box-shadow: 0 6px 18px rgba(0, 136, 58, 0.3); 
-        transform: translateY(-2px);      
-      }
-
-      
-      /* Impact Metrics Section Styling */
-      .impact-container {
-        display: flex;
-        justify-content: center;
-        padding: 3rem 0;
-        margin-bottom: 3rem;
-      }
-      
-      .impact-card {
-        width: 100%;
-        padding: 3rem 2rem;
-        border: 2px solid #00883b70;
-        border-radius: 8px;
-        background-color: #f8fafc;
-        box-shadow: 0 2px 8px rgba(44, 95, 141, 0.1);
-      }
-      
-      .impact-metrics {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-        gap: 2rem;
-      }
-      
-      .metric {
-        text-align: center;
-      }
-      
-      .metric-value {
-        font-size: 3.5rem;
-        font-weight: 800;
-        color: #00883A;
-        margin-bottom: 0.75rem;
-        line-height: 1;
-      }
-      
-      .metric-label {
-        font-size: 1.05rem;
-        font-weight: 500;
-        color: #444;
-        line-height: 1.5;
-        letter-spacing: 0.3px;
-      }
-
-      /* Activities Section Styling */ 
-
-      .activities-container {
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: center;
-          gap: 2rem;
-          padding: 3rem 1.5rem;
-          margin-bottom: 2rem;
-          align-items:stretch;
-          width: 90%;
-          margin-left: auto;
-          margin-right: auto;
-      }
-
-      .row {
-        align-items: stretch; 
-      }
-
-      .activities-card {
-          background: #00883A;
-          color: white;
-          border-radius: 16px;
-          display: flex;
-          flex-direction: column;
-          height: 100%;
-          flex: 0 1 calc(33.33% - 1.125rem);
-          padding: 2rem 1.5rem;
-          box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06),
-                      0 4px 12px rgba(0, 0, 0, 0.04);
-          text-wrap: balance;
-          transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
-      }
-      .activities-card:hover {
-        transform: translateY(-2px) scale(1.02);
-        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08), 0 6px 15px rgba(0, 0, 0, 0.04);
-  
-      }
-      
-      .activities-card p {
-          margin-top: 0;
-          font-size: 1.05rem;
-          line-height: 1.7;
-          text-align: center;
-          margin-bottom: 1rem;
-          font-weight: 400;
-          flex-grow: 1; 
-      }
-
-        .activities-card i {
-          font-size: 2.8rem;
-          display: inline-flex; 
-          align-items: center;
-          justify-content: center;
-          color: inherit;
-          margin: 0 auto 0.5rem; 
-          background: #ffffff1e;
-          border-radius: 50%;
-          width: 5rem;  
-          height: 5rem;
-          padding: 0;  
-        }
-
-      .activities-card .btn {
-          margin-top: auto; 
-          display: inline-block;
-          padding: 0.65rem 1.6rem;
-          border: none;
-          border-radius: 999px;
-          background: white;
-          color: #00883A;
-          font-size: 1rem;
-          font-weight: 600;
-          cursor: pointer;
-          transition: all 0.25s ease;
-          align-self: center;
-          width: fit-content;
-        }
-
-      .activities-card .btn:hover,
-      .activities-card .btn:active,
-      .activities-card .btn:focus{
-        background: #eeededfb !important;
-        color: #006f2d !important;
-        transform: translateY(-2px);
-      }
-
-      /* Testimonial Section Styling */
-
-      .testimonial-grid {
-        display: flex;
-        align-items: center;
-        gap: 2.5rem;
-        max-width: 900px;
-        margin: 0 auto;
-      }
-
-      .testimonial-image img {
-        width: 180px;
-        aspect-ratio: 1 / 1;
-        object-fit: cover;
+      .mission-check-icon {
+        flex-shrink: 0;
+        width: 18px; height: 18px;
         border-radius: 50%;
-        display: block;
-      }
-      .testimonial-content blockquote {
-        border-left: 4px solid #00883b2b;
-      }
-      .testimonial-content blockquote p{
-        margin: 0;
-        font-style: italic;
-        font-size: 1.05rem;
-        line-height: 1.6;
-        color: #414141ff;
-      }
-
-      .testimonial-content strong {
-        display: block;
-        margin-top: 1.25rem;
-        font-size: 1.15rem;
-        font-style: normal;
-        font-weight: 600;
-        color: #000;
-      }
-
-      /* Newsletter Section Styling */
-
-      .newsletter-section {
-        background-color: #a6c871;
-        padding: 1.5rem;
-        margin: 1.5rem 0;
-      }
- 
-      .newsletter-grid {
+        background: #f4f1f1;
+        color: var(--green-main);
         display: flex;
         align-items: center;
-        gap: 3rem;
-        max-width: 900px;
-        margin: 0 auto;
-        justify-content: center; 
-        padding: 2rem 1rem; 
-
+        justify-content: center;
+        font-size: 0.6rem;
+        margin-top: 0.15rem;
+      }
+      .mission-visual {
+        background: var(--green-main);
+        border-radius: var(--radius-lg);
+        padding: 2rem;
+        color: var(--white);
+        position: relative;
+        overflow: hidden;
+      }
+      .mission-visual::before {
+        content: '';
+        position: absolute;
+        top: -40%; right: -30%;
+        width: 300px; height: 300px;
+        border-radius: 50%;
+        background: radial-gradient(circle, rgba(166,200,113,0.25) 0%, transparent 70%);
+        pointer-events: none;
       }
 
-      .newsletter-grid .newsletter-icon i{
-        font-size: 5rem;
-        margin:0;
-        color: white; 
+      .mission-statement-btn.btn.btn-primary {
+        background: var(--green-500);
+        color: var(--white) !important;
+        border-color: var(--green-500);
+        border-radius: var(--radius-sm);
+        transition: var(--transition);
+        box-shadow: 0 3px 12px rgba(0,136,58,0.28);
       }
-
-
-      .newsletter-grid .newsletter-content strong {
-        font-style: normal;
-        font-weight: 700;
-        font-size: 1.8rem;
-        margin:0;
-        color: white;
-      }
-
-      .newsletter-content p {
-        font-size: 1.23rem;
-        line-height: 1.5;
-        letter-spacing: 0.3px;
-        color: white;
-        margin: 0.5rem 0 1rem 0;
-      }
-
-      .newsletter-content .btn {
-        display: inline-block;
-        padding: 0.65rem 1.6rem;
-        border-radius: 0.5rem;
-        background-color: #ffffff28;
-        border: 2px solid white;
-        color: white;
-        font-size: 1.1rem;
-        font-weight: 500;  
-        transition: all 0.25s ease;       
-        cursor: pointer;                        
-      }
-
-      .newsletter-content .btn:hover,
-      .newsletter-content .btn:active,
-      .newsletter-content .btn:focus{
+      .mission-statement-btn.btn.btn-primary:hover {
+        background: var(--green-dark);
+        border-color: var(--green-dark);
         transform: translateY(-2px);
-        background: #ffffff50 !important;
-        color:white !important;
-        border: 2px solid white !important;
+        box-shadow: 0 6px 20px rgba(0,136,58,0.35);
       }
 
-      /* media queries */
-      @media (max-width: 767.98px) {
+      /* =============================================
+         NEWSLETTER 
+         ============================================= */
 
-        .activities-container .row {
-          display: flex;
-          flex-direction: column;
-          gap: 1rem;     
-        }
-        .activities-container {
-          padding: 2rem 1rem;
-          width: 100%; 
-          gap:0;
-
-        }
-        .activities-card {
-          flex: 1 1 100%;  
+         .newsletter-section {
+          background: var(--green-main);
+          border-radius: var(--radius-lg);
+          gap: 0.3rem;
+          position: relative;
+          overflow: hidden;
         }
 
-        .activities-card p {
-          font-size: 0.95rem;
+        .newsletter-section::before {
+          content: '';
+          position: absolute;
+          top: -40%; right: -30%;
+          width: 250px; height: 250px;
+          border-radius: 50%;
+          background: radial-gradient(circle, rgba(167, 200, 113, 0.19) 0%, transparent 70%);
+          pointer-events: none;
         }
 
-        .activities-card i {
-          font-size: 2.5rem;
-        }
-        .impact-container {
-          margin-bottom: 0;
-        }
-        .mission-statement h2,
-        .activities-container h2,
-        .impact-card h2,
-        .carousel-section h2 {
-          font-size: 1.3rem;
-          text-align: center;
+        .newsletter-btn.btn {
+          transition: color 0.25s ease;       
+          cursor: pointer;                        
         }
 
-        .metric-value {
-          font-size: 2.8rem;
-        }
-      
-        .metric-label {
-          font-size: 0.95rem;
-        }
-
-        .mission-statement{
-          padding: 1rem 2rem;     
-        }
-        .mission-statement-container {
-          width: 100%;
+        .newsletter-btn.btn:hover,
+        .newsletter-btn.btn:active,
+        .newsletter-btn.btn:focus{
+          background: #ffffff50 !important;
+          color:white !important;
+          border: 1px solid white !important;
         }
 
-        .mission-statement-checklist {
-          display: flex;
-          flex-wrap: wrap;
-          gap: 1rem 1.5rem;
-          list-style: none;
-        }
 
-        .mission-statement-checklist li {
-          padding-left: 0.5rem;
-        }
+      /* =============================================
+         TESTIMONIAL
+         ============================================= */
 
-        .newsletter-grid {
-          flex-direction: column;
-          text-align: center;
-          gap: 0.5rem;
-        }
+         .testimonial-container {
+            background: var(--green-main);
+            padding: var(--section-py) var(--section-px);
+          }
 
-        .newsletter-grid .newsletter-content strong {
-          font-size: 1.5rem;
-        }
+          .testimonial-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+          }
 
-        .newsletter-content p {
-          font-size: 1.05rem;
-        }
+          .testimonial-inner blockquote {
+            font-family: var(--ff-display);
+            font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+            font-style: italic;
+            line-height: 1.65;
+            color: rgba(255,255,255,0.92);
+            border: none;
+            padding: 0;
+            margin: 0 0 1.25rem;
+          }
 
-        .testimonial-grid {
-          display: flex;
-          flex-direction:column-reverse;
-        }
-
-        /*buttons*/
-
-        .activities-card .btn,
-        .mission-statement .btn ,
-        .newsletter-content .btn {
-          padding: 0.5rem 1.3rem;
-          font-size: 0.95rem;
-        }
-        .testimonial-image img {
-          width: 150px;
-        }
-
+          .testimonial-inner strong {
+            font-size: 0.88rem;
+            font-weight: 600;
+            color: rgba(255, 255, 255, 0.82);
+            letter-spacing: 0.04em;
+          }
+      /* =============================================
+         NEWS & EVENTS
+         ============================================= */
+      .highlights-section {
+        background: var(--white);
       }
 
-      @media (max-width: 991.98px){
-        .activities-container {
-          gap: 1rem;
-          padding: 2rem 1rem;
-          width: 100%;
+      /* =============================================
+         RESPONSIVE
+         ============================================= */
+      @media (max-width: 991px) {
+        :root {
+          --section-py: 3rem;
+          --section-px: 1.5rem;
         }
-
-        .mission-statement-container {
-          width: 100%;
-        }        
-        .mission-statement{
-          padding: 1rem 2rem;     
+      }
+      @media (max-width: 600px) {
+        :root {
+          --section-py: 2.5rem;
+          --section-px: 1rem;
         }
-
-        .testimonial-grid {
-          gap: 1.5rem;
-        }
-
-        .activities-card .btn{
-          padding:0.4rem 1rem;
-        )
-
       }
 
-        </style>
-        <link href="/assets/bootstrap-5.3.8-dist/css/bootstrap.min.css" rel="stylesheet">
+      </style>
+      <link href="/assets/bootstrap-5.3.8-dist/css/bootstrap.min.css" rel="stylesheet">
 css: /custom-navbar.css
 ---
 
 
+<!-- ══════════════════════════════════════
+     MISSION + NEWSLETTER
+════════════════════════════════════════ -->
+::: {.osc-section}
+::: {.container}
 
-::: {.mission-statement-container}
-::: {.mission-statement-card}
-::: {.mission-statement}
-## Mission Statement
+::: {.row .align-items-center .gx-5}
+::: {.col-lg-8}
 
-The interdisciplinary LMU Open Science Center (OSC) is a researcher-led initiative supporting LMU Munich by embedding open, responsible, and reproducible practices at the core of research excellence.
+[Our mission]{.text-uppercase .small .fw-semibold .mb-2 .section-eyebrow}
 
-::: {.mission-statement-checklist}
+## The interdisciplinary LMU Open Science Center (OSC) is a researcher-led initiative supporting LMU Munich by embedding open, responsible, and reproducible practices at the core of research excellence. {.mb-3 .section-title .text-muted}
 
-::: {.checklist-item}
-- Essential training in the highest standards of reproducible research methods
-- Digital sovereignty and resilience to global challenges through open source workflows
+::: {.mission-checklist}
+- [✓]{.mission-check-icon} Essential training in the highest standards of reproducible research methods
+- [✓]{.mission-check-icon} Digital sovereignty and resilience to global challenges through open source workflows
+- [✓]{.mission-check-icon} Transparency as foundation for trust and evidence-based societal debates
+- [✓]{.mission-check-icon} Reliable scientific data as a critical foundation for responsible AI, digitalisation, and societal translation
 :::
 
-::: {.checklist-item}
-- Transparency as foundation for trust and evidence-based societal debates
-- Reliable scientific data as a critical foundation for responsible AI, digitalisation, and societal translation
-::: 
-:::
-[Learn More](about/index.qmd){.btn .btn-primary}
-:::
-
+[Learn More About OSC](about/index.qmd){.btn .btn-primary .mission-statement-btn}
 
 :::
-:::
 
+::: {.col-lg-4}
+::: {.newsletter-section .d-flex .flex-column .justify-content-center .text-center .p-5 .text-white}
 
-<!-- Intent to make this as a general pointer section to some of the core elements within our website rather than just activities --->
+**Stay updated with the OSC.**
 
-::: {.activities-container}
+Sign up to our mailing list for workshops, events, and resources.
 
-
-## Explore OSC <!--Alternative title that comes to mind is OSC at glance, but clashes with impact section title-->
-::: {.row}
-::: {.col-md-4}
-::: {.activities-card .card-0}
-<i class="bi bi-people"></i>
-
-Explore our community of researchers and advocates shaping open science.
-
-[Meet the OSC Community](people/members.qmd){.btn .btn-secondary .activities-link}
+[Subscribe](https://lists.lrz.de/mailman/listinfo/lmu-osc){.btn .btn-outline-light .newsletter-btn}
 
 :::
 :::
-
-::: {.col-md-4}
-::: {.activities-card .card-1}
-<i class="bi bi-journal-bookmark"></i>
-
-Build practical skills through OSC workshops and tutorials.
-
-[Explore Training](training/index.qmd){.btn .btn-secondary .activities-link} 
-
 :::
-:::
-
-<!--Not really sure if we want to link partners here-->
-::: {.col-md-4}
-::: {.activities-card .card-2}
-<i class="bi bi-globe2"></i>
-
-Discover our institutional and collaborative networks.
-
-
-[See OSC Partners](partners/institutional_members.qmd){.btn .btn-secondary .activities-link}
 
 :::
 :::
 
 
-:::
-:::
+<!-- ══════════════════════════════════════
+     IMPACT METRICS
+════════════════════════════════════════ -->
+::: {.row .mx-auto .w-100 .align-items-center .justify-content-center .impact-container}
 
-
-
-
-<!-- testimonial or dialogue section from someone famous -->
-::: {.testimonial-grid}
-::: {.testimonial-content}
-> “Open Science at LMU has completely changed how I think about collaboration and research transparency. The summer school made it easy to adopt reproducible workflows from day one.”
-
-**— PhD Student, Life Sciences**
-:::
-
-::: {.testimonial-image}
-![](people/people/images/default.svg){alt="Testimonial portrait"}
-:::
-
-:::
-
-
-
-
-::: {.impact-container}
-::: {.impact-card}
-## Impact at a Glance
-
-::: {.impact-metrics}
-::: {.metric}
+::: {.col .text-center}
 ::: {.metric-value data-target="100+"}
 0
 :::
@@ -610,7 +412,7 @@ Members
 :::
 :::
 
-::: {.metric}
+::: {.col .text-center}
 ::: {.metric-value data-target="50+"}
 0
 :::
@@ -619,17 +421,17 @@ Events per year
 :::
 :::
 
-::: {.metric}
-::: {.metric-value data-target="15+"} 
+::: {.col .text-center}
+::: {.metric-value data-target="15+"}
 0
 :::
 ::: {.metric-label}
-Publications on OS
+OS Publications
 :::
 :::
 
-::: {.metric}
-::: {.metric-value data-target="1000+"} 
+::: {.col .text-center}
+::: {.metric-value data-target="1000+"}
 0
 :::
 ::: {.metric-label}
@@ -637,53 +439,120 @@ Researchers Trained
 :::
 :::
 
-::: {.metric}
-::: {.metric-value data-target="10"} 
+::: {.col .text-center}
+::: {.metric-value data-target="10"}
 0
 :::
 ::: {.metric-label}
-Awards won
+Awards Won
 :::
 :::
 
 :::
-:::
-::: 
 
 
-<!-- ideally would want a little less taller carousel maybe.-->
-::: {.carousel-section}
-## Highlights
-::: {.row .justify-content-center}
+<!-- ══════════════════════════════════════
+     NEWS & EVENTS
+════════════════════════════════════════ -->
+::: {.osc-section .highlights-section}
+::: {.osc-section-inner}
 
-::: {.col-md-5}
+[Stay in the loop]{.text-uppercase .section-eyebrow .small .fw-semibold .mb-2}
+
+## Latest highlights {.mb-3 .section-title .text-muted}
+
+::: {.row}
+
+::: {.col-md-6}
 ::: {#news-carousel}
 :::
 :::
 
-::: {.col-md-5}
+::: {.col-md-6}
 ::: {#events-carousel}
 :::
 :::
 
 :::
-:::
-
-<!-- newsletter section -->
-::: {.newsletter-section}
-::: {.newsletter-grid}
-::: {.newsletter-icon}
-<i class="bi bi-envelope-fill"></i>
-:::
-
-::: {.newsletter-content}
-**Be the first to know about OSC's latest events.**
-
-Sign up to our mailing list.
-
-[Subscribe](https://lists.lrz.de/mailman/listinfo/lmu-osc){.btn .btn-primary}
-:::
 
 :::
 :::
 
+
+<!-- ══════════════════════════════════════
+     TESTIMONIAL
+════════════════════════════════════════ -->
+::: {.testimonial-container .text-align-center}
+::: {.testimonial-inner}
+
+> "Open Science at LMU has completely changed how I think about collaboration and research transparency. The summer school made it easy to adopt reproducible workflows from day one."
+
+**— PhD Student, Life Sciences**
+
+:::
+:::
+
+
+<!-- ══════════════════════════════════════
+     EXPLORE CARDS (optional)
+════════════════════════════════════════ -->
+::: {.osc-section}
+::: {.container .osc-section-inner .explore-section}
+
+[What we offer]{.text-uppercase .text-success .small .fw-semibold .mb-2 .section-eyebrow}
+
+## Explore the OSC {.mb-3 .text-muted}
+
+::: {.text-muted .mb-4 .desc}
+Whether you're a student, early-career researcher, or faculty — there's a place for you in the open science community.
+:::
+
+::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
+
+::: {.col}
+
+<div class="card explore-card h-100 border border-success-subtle rounded-3 shadow-sm">
+<div class="card-body d-flex flex-column p-4">
+<div class="bg-success bg-opacity-10 text-success rounded-3 d-inline-flex  text-center align-items-center justify-content-center mb-3" style="width:50px;height:50px;">
+<i class="bi bi-people fs-5"></i>
+</div>
+<h5 class="fw-normal text-black mb-2">Our Community</h5>
+<p class="text-muted flex-grow-1">Meet the researchers, advocates, and partners shaping open science at LMU and beyond.</p>
+<a href="people/members.qmd" class="text-decoration-none stretched-link fw-semibold text-success small">
+Meet the OSC Community →</a>
+</div>
+</div>
+
+:::
+
+::: {.col}
+<div class="card explore-card h-100 border border-success-subtle rounded-3 shadow-sm">
+<div class="card-body d-flex flex-column p-4">
+<div class="bg-success bg-opacity-10 text-success rounded-3 d-inline-flex text-center align-items-center justify-content-center mb-3" style="width:50px;height:50px;">
+<i class="bi bi-journal-bookmark fs-5"></i>
+</div>
+<h5 class="fw-normal text-black mb-2">Training & Workshops</h5>
+<p class="text-muted flex-grow-1">Build hands-on skills in reproducible research through OSC workshops, summer schools, and tutorials.</p>
+<a href="training/index.qmd" class="text-decoration-none stretched-link fw-semibold text-success small">Explore Training →</a>
+</div>
+</div>
+
+:::
+
+::: {.col}
+<div class="card explore-card h-100 border border-success-subtle rounded-3 shadow-sm">
+<div class="card-body d-flex flex-column p-4">
+<div class="bg-success bg-opacity-10 text-success rounded-3 d-inline-flex text-center align-items-center justify-content-center mb-3" style="width:50px;height:50px;">
+<i class="bi bi-globe2 fs-5"></i>
+</div>
+<h5 class="fw-normal text-black mb-2">Partners & Networks</h5>
+<p class="text-muted flex-grow-1">Discover our institutional collaborators and the international networks we're part of.</p>
+<a href="partners/institutional_members.qmd" class="text-decoration-none stretched-link fw-semibold text-success small">See OSC Partners →</a>
+</div>
+</div>
+
+:::
+:::
+
+:::
+:::
