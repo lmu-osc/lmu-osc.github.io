@@ -525,6 +525,28 @@ These procedures, which are **free to the authors**, are collectively known as '
 
 The current contract conditions for LMU Munich can be accessed on the [University Library Publication Fees Webpage (in german)](https://www.ub.uni-muenchen.de/schreiben/open-access-publizieren/publikationsgebuehren/index.html). To get support with Article Processing Charges and open access policies, contact the [University Library Open Access team](https://www.en.ub.uni-muenchen.de/writing/open-access-publishing/oa-auxiliary-page/index.html).
 
+::: {.container .my-4 }
+
+<h4 class="fs-5 mt-3"><i class="bi bi-tools"></i> TOOLS & RESOURCES</h4>
+
+::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
+
+::: {.col}
+
+<div class="card orc-card-tool h-100 position-relative">
+<span class="orc-card-tool-badge recommended">Supported at LMU</span>
+<div class="orc-card-tool-icon mb-2"> 
+<img src="https://cms-cdn.lmu.de/assets/img/favicon.ico" class="img-fluid" alt="LMU logo">
+</div>
+<h4 class="card-title">LMU University Library</h4>
+<p class="card-text">Publisher contracts and publication fees.</p>
+<a href="https://www.ub.uni-muenchen.de/schreiben/open-access-publizieren/publikationsgebuehren/index.html" class="stretched-link" target="_blank" rel="noopener"></a>
+</div>
+:::
+
+:::
+
+:::
 
 #### 4.3.3. Publishing Preprints and Retaining Rights 
 
@@ -551,7 +573,7 @@ To increase the accessibility and impact of your article we recommend you to:
 
 In practice, we recommend to follow the process of version releases illustrated in the figure(<!-- fix me where-->), starting with a manuscript draft, should you wish to obtain feedback from your community, or preprinting the submitted version, should you want to e.g. accelerate dissemination of findings that are unlikely to change during revision, or postprinting the accepted version to have a free peer-reviewed  version available to anyone. 
 
-<!-- include figure in a left column, and the paragraph above in a right column?-->
+<!-- include figure in a left column (by the way I like the classic look but dont know here to add that information), and the paragraph above in a right column?-->
 ```{mermaid}
 ---
 config:
@@ -580,6 +602,17 @@ To get support for [Open Access LMU](https://epub.ub.uni-muenchen.de/), the LMU 
 
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
 
+::: {.col}
+
+<div class="card orc-card-tool h-100 position-relative">
+<div class="orc-card-tool-icon mb-2"> 
+<img src="https://openpolicyfinder.jisc.ac.uk/images/jisc-logo.svg" class="img-fluid" alt="Jisc logo">
+</div>
+<h4 class="card-title">Jisc' Open Policy Finder</h4>
+<p class="card-text">Clear summary of journals' open access policies.</p>
+<a href="https://openpolicyfinder.jisc.ac.uk/" class="stretched-link" target="_blank" rel="noopener"></a>
+</div>
+:::
 
 ::: {.col}
 
@@ -744,7 +777,7 @@ The LMU Open Science Center is one of the many child organizations of LMU Munich
     - for a preregistration you first embargoed (i.e. kept private for a set period of time) on e.g. the [OSF](https://osf.io/), you must first make it public to obtain a DOI to include in your manuscript.
 - **Add persistent identifiers of connected outputs in their reciprocal metadata** to connect all parts of a project.
     - include the DOI of your data, code, and preregistration in your manuscript and in the metadata field provided by your publisher if prompted.
-    - add the DOI of your code repository in the metadata of your published data and reciprocally, either in the description text or in the metadata fields provided by the repository like on e.g.[Zenodo](https://zenodo.org/).
+    - add the DOI of your code repository in the metadata of your published data and reciprocally, either in the description text or in the metadata fields provided by the repositories like [Zenodo](https://zenodo.org/).
 - **Add the persistent identifier of a published version of an output to all public versions of that output**
     - add the DOI of the published article (provided by your publisher) in the metadata of your preprint.
     - add the DOI provided by e.g. [Zenodo](https://zenodo.org/) when publishing your code from [GitHub](https://github.com/), back into your GitHub README file.
