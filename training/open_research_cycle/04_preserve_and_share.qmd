@@ -525,7 +525,7 @@ To get support the institutional repository [LMU Open Access](https://epub.ub.un
 <details class="orc-details-panel">
 <summary><i class="bi bi-person-badge"></i> 
 
-### Identity & Credit {#sec-identity-credit}
+### Attributions & Persistent Identifiers {#sec-attributions-and-persistent-identifiers}
 
 </summary>
 
@@ -536,20 +536,30 @@ All research outputs and their specific versions should be linked to researchers
 
 ####  4.4.1. Authorship, Contributorship, and ORCID
 
-According to §14 of the [LMU Guidelines for Safeguarding Good Scientific Practice](https://cms-cdn.lmu.de/media/contenthub/amtliche-veroeffentlichungen/gwp-ordnung.pdf), an author is someone who has made a genuine, verifiable contribution to the content of a scientific publication, data, or software. Authorship derived solely from  managerial or supervisory position are inadmissible. All authors must agree to the final version of the work to be published; they bear joint responsibility for the publication unless explicitly stated otherwise.
+<h5>Authorship</h5>
+
+According to §14 of the [LMU Guidelines for Safeguarding Good Scientific Practice](https://cms-cdn.lmu.de/media/contenthub/amtliche-veroeffentlichungen/gwp-ordnung.pdf), an author must:
+
+- make a genuine, **verifiable contribution** to the content of a scientific publication, data, or software, and **not solely have a managerial or supervisory position** in the project;
+- **agree to the final version** of the work to be published and **bear joint responsibility** for the publication unless explicitly stated otherwise.
+
+We recommend to **start discussions on authorship, roles, and responsibilities as early as possible**. First discussions can for instance take place at the end of [1. Plan & Design](01_plan_and_design.qmd){.mark}, e.g. during the presentation of the study plan to the research group (see [1. Plan & Design Checklist](01_plan_and_design.html#plan-design-checklist){.mark}). 
 
 <br>
 
-To increase transparency and accountability, and acknowledge what contribution to a research project each contributor has made, we recommend to use the [Contributor Role Taxonomy  (CRediT)](https://credit.niso.org/) (‘Conceptualization’, ‘Data curation’, ‘Formal analysis’, ‘Funding acquisition’, ‘Investigation’, ‘Methodology’, ‘Project administration’, ‘Resources’, ‘Software’, ‘Supervision’, ‘Validation’, ‘Visualization’, ‘Writing—original draft’, and ‘Writing—review & editing’) which is used by [many publishers](https://credit.niso.org/adopters/). When not prompted for these contributor roles when submitting your article, you can add the CRediT statement in the acknowledgement section of your manuscript. 
+<h5>Contributorship</h5>
+
+- **Use the [Contributor Role Taxonomy  (CRediT)](https://credit.niso.org/)** to increase transparency and accountability, and acknowledge what contribution to a research project each contributor has made: ‘Conceptualization’, ‘Data curation’, ‘Formal analysis’, ‘Funding acquisition’, ‘Investigation’, ‘Methodology’, ‘Project administration’, ‘Resources’, ‘Software’, ‘Supervision’, ‘Validation’, ‘Visualization’, ‘Writing—original draft’, and ‘Writing—review & editing’.
+     - Include the CRediT statement in the acknowledgement section of your manuscript if your publisher is not a [formal CRediT adopter](https://credit.niso.org/adopters/) and does not otherwise prompt you upon submission of your article.
+
+- **Use the [Method Reporting with Initials for Transparency (MeRIT)](https://doi.org/10.1038/s41467-023-37039-1)** when relevant. This consist in adding initials to the Methods section, identifying with greater transparency who did what when several team members contributed to e.g. data curation or software.
 
 <br>
 
-When relevant, we also recommend to use [Method Reporting with Initials for Transparency (MeRIT)](https://doi.org/10.1038/s41467-023-37039-1) i.e. to add initials to the Methods section identifying who did what when several team members contributed to e.g. data curation or software.
+<h5>ORCID</h5>
 
-<br>
-
-To distinguish yourself and claim credit for your work automatically, no matter how many people have your same (or similar) name, researchers are recommended to create an Open Researcher and Contributor ID ([ORCID](https://orcid.org/)), a free, unique, persistent identifier for individuals. The vast majority of publishers, funders, and repositories to publish data and code prompt for authors and contributors' ORCID. 
-
+- **Create an Open Researcher and Contributor ID** ([ORCID](https://orcid.org/)), a free, unique, persistent identifier for individuals, to distinguish yourself and claim credit for your work automatically, no matter how many people have your same (or similar) name. 
+- **Associate your ORCID to all your research outputs.** The vast majority of publishers, funders, and data and code repositories prompt for authors and contributors' ORCID. You can also sign in to many academic and institutional services with your ORCID (e.g. [Zenodo](https://zenodo.org/), [OSF](https://osf.io/), [RDMO](https://rdmo.ub.lmu.de/)).
 
 ::: {.container .my-4}
 
@@ -605,19 +615,23 @@ To distinguish yourself and claim credit for your work automatically, no matter 
 
 ####  4.4.2. Institution, Funders, and ROR
 
-For all research outputs, institutional affiliations and a funding statement need to be disclosed as part of the metadata. To be machine-readable and automatically connected to people's profile or their organization, this must include the official name of the organization and (one of) its persistent identifier.
+- **Disclose your institutional affiliations and funders** as part of the metadata of all your research outputs. To be machine-readable and automatically connected to people's profile or their organization, this must include the official name of the organization and ideally (one of) its persistent identifier.
+- **Use your institution and funders' ROR**. The [Research Organization Registry (ROR)](https://ror.org/) is a global, community-led registry of open persistent identifiers for research and funding organizations.
+
+
+
+:::{.callout-note}
+The official names of LMU Munich are Ludwig-Maximilians-Universität München in german, and LMU Munich in english. This university's ROR ID is [https://ror.org/05591te55](https://ror.org/05591te55).
 
 <br>
 
-The [Research Organization Registry (ROR)](https://ror.org/) is a global, community-led registry of open persistent identifiers for research and funding organizations.
+LMU Munich is mostly funded by the German Research Foundation, whose ROR ID is [https://ror.org/018mejw64](https://ror.org/018mejw64)
 
 <br>
 
-The official names of LMU Munich are Ludwig-Maximilians-Universität München in german and LMU Munich in english; it's ROR ID is [https://ror.org/05591te55](https://ror.org/05591te55).
+The LMU Open Science Center is one of the many child organization of LMU Munich; it's ROR ID is [https://ror.org/029e6qe04](https://ror.org/029e6qe04). The funder of this handbook's project is the Volkswagen Foundation, [https://ror.org/03bsmfz84](https://ror.org/03bsmfz84).
+:::
 
-<br>
-
-Similarly for funders, the Deutsche Forschungsgemeinschaft / German Research Foundation's ROR ID is [https://ror.org/018mejw64](https://ror.org/018mejw64)
 
 
 ::: {.container .my-4}
