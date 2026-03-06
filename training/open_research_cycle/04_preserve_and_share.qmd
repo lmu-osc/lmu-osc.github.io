@@ -659,8 +659,20 @@ The LMU Open Science Center is one of the many child organization of LMU Munich;
 
 ####  4.4.3. Connecting Your Work
 
-<!-- connect prereg → data → code → paper 
-If you did submit a preregistration on e.g. the OSF with an embargo, you may want to lift that embargo, i.e. make the preregistration public which will also create a DOI that you can cite in your article. -->
+- **Request a Digital Object Identifiers (DOI) for each of your research outputs** (data, code, preprint, preregistration)
+    - you automatically get a DOI from professional repository for outputs you make public 
+    - for a code repository you first want to keep private on e.g. [Zenodo](https://zenodo.org/), you can request a DOI (by ticking a box) to reserve a DOI link and already cite it in your manuscript.
+    - for a preregistration you first embargoed (i.e. kept private for a set period of time) on e.g. the [OSF](https://osf.io/), you must first make it public to obtain a DOI to include in your manuscript.
+- **Add persistent identifiers of connected outputs in their reciprocal metadata** to connect all parts of a project.
+    - include the DOI of your data, code, and preregistration in your manuscript and in the metadata field provided by your publisher if prompted.
+    - add the DOI of your code repository in the metadata of your published data and reciprocally, either in the description text or in the metadata fields provided by the repository like on e.g.[Zenodo](https://zenodo.org/).
+- **Add the persistent identifier of a published version of an output to all public versions of that output**
+    - add the DOI of the published article (provided by your publisher) in the metadata of your preprint.
+    - add the DOI provided by e.g. [Zenodo](https://zenodo.org/) when publishing your code from [GitHub](https://github.com/), back into your GitHub README file.
+
+
+
+<!-- image of an example?-->
 
 
 :::
