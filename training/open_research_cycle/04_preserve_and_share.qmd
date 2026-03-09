@@ -435,19 +435,18 @@ _in construction_
 ### Code Publishing {#sec-code-publishing}
 
 </summary>
+<!-- explain why to share code openly -->
 
-So far, your code repository for internal use is either on the secured [LRZ Gitlab](https://gitlab.lrz.de/) in case your data and/or code are sensitive, or on a [GitHub](https://github.com/) repository. Before the submission of a manuscript to a journal and/or upon the acceptance of a manuscript, there are new steps that need to be done to publish your code (i.e. archive its current version and get a DOI) on e.g. [Zenodo](https://zenodo.org/). 
-
-<br>
+So far, your code repository for internal use is either on the secured [LRZ Gitlab](https://gitlab.lrz.de/) in case your data and/or code are sensitive, or on a [GitHub](https://github.com/) repository. Before the submission of a manuscript to a journal and/or upon the acceptance of a manuscript, there are new steps that need to be done to publish your code (i.e. archive its current version and get a DOI) on e.g. [Zenodo](https://zenodo.org/).
 
 These steps require little time if you had worked reproducibly and completed all preparation prior to that point as was recommended in previous sections, i.e. preparation of a data dictionary, and simulated dataset generation
 
 
 ::: {.panel-tabset}
 
-#### 4.2.1. Preparing Your Repo
+#### 4.2.1. Preparing Your Code
 
-<!-- readme for external users, clean history, remove sensitive data -->
+<!-- actually its about preparing your repo : readme for external users, clean history without anything sensitive, check checklist of 3. analyses and collaborate for code readability and repo dependencies -->
 
 #### 4.2.2. Simulated & Synthetic Data
 
