@@ -46,7 +46,7 @@
         return isNaN(fallback.getTime()) ? null : fallback;
       };
 
-      const filteredItems = (items || []).filter(item => {
+      let filteredItems = (items || []).filter(item => {
         if (!item || !item.event.start_date) return false;
         const startDate = parseEventDate(item.event.start_date);
         if (!startDate) return false;
@@ -81,6 +81,16 @@
         }
 
         return true;
+      });
+
+      // Sort filtered items by parsed start date (most recent first)
+      filteredItems.sort(function(a, b) {
+        const da = parseEventDate(a && a.event && a.event.start_date);
+        const db = parseEventDate(b && b.event && b.event.start_date);
+        if (!da && !db) return 0;
+        if (!da) return 1;
+        if (!db) return -1;
+        return db.getTime() - da.getTime();
       });
     %>
 

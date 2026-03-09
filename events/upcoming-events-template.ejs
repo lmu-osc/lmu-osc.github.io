@@ -53,7 +53,7 @@ return copy;
 };
 
 // --- Filtering logic ---
-const futureItems = (items || []).filter(item => {
+let futureItems = (items || []).filter(item => {
 // item.event.start_date is guaranteed to exist per your statement
 const startDate = parseEventDate(item.event.start_date);
 if (!startDate) return false; // skip malformed start date
@@ -69,8 +69,15 @@ if (!cmp) return false;
 return cmp >= today;
 });
 
-// (Optional) If you want the soonest events first, uncomment the next line:
-// futureItems.sort((a,b) => parseEventDate(a.date) - parseEventDate(b.date));
+// Sort future items by parsed start date (most recent first)
+futureItems.sort(function(a, b) {
+  const da = parseEventDate(a && a.event && a.event.start_date);
+  const db = parseEventDate(b && b.event && b.event.start_date);
+  if (!da && !db) return 0;
+  if (!da) return 1;
+  if (!db) return -1;
+  return db.getTime() - da.getTime();
+});
 
 for (const item of futureItems) {
 %>
