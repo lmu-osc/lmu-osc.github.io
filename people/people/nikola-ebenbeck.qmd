@@ -16,42 +16,12 @@ links:
     url: https://www.edu.lmu.de/lernbehindertenpaedagogik/personen/wiss_ma/ebenbeck/index.html
 social_media:
   ORCID: 'https://orcid.org/0000-0002-4167-981X'
-mission_statement:
-  - I am a postdoctoral researcher in special education. On the one hand, I consider it important for myself to be as transparent as possible about my research and its results. Research is an important asset of society and should contribute to the further development of society. Therefore, I believe that open access for all to research results and data is essential for transparency and communication. On the other hand, I would like to bring my work into schools through Open Educational Resources and contribute to the education of young people with free, high-quality material.
+mission_statement: |
+  I am a postdoctoral researcher in special education. On the one hand, I consider it important for myself to be as transparent as possible about my research and its results. Research is an important asset of society and should contribute to the further development of society. Therefore, I believe that open access for all to research results and data is essential for transparency and communication. On the other hand, I would like to bring my work into schools through Open Educational Resources and contribute to the education of young people with free, high-quality material.
+
+
+template: templates/people-template.html
+filters: 
+    - templates/people_filter.lua
 ---
-{{< include templates/_setup.qmd >}}
-{{< include templates/_contact_items.qmd >}}
-{{< include templates/_social_links.qmd >}}
-{{< include templates/_mission_statement.qmd >}}
-{{< include templates/_research_interests.qmd >}}
-{{< include templates/_selected_publications.qmd >}}
-
-
-
-```{r}
-#| echo: false
-
-# Compose the full profile
-profile <- div(class = "people-profile",
-  div(class = "people-header",
-    div(class = "people-photo",
-      img(src = photo)
-    ),
-    div(class = "people-info",
-      p(class = "people-position", position),
-      if (!is.null(faculty) & faculty != "") {p(class = "people-faculty", paste0("Faculty of ", faculty))},
-      div(class = "people-contact", contact_items, social_links)
-    )
-  ),
-  mission_block,
-  # custom content would most likely go here, right after the mission_block
-  div(class = "people-content",
-    interests_block,
-    publications_block
-  )
-)
-
-# Render the profile
-browsable(profile)  
-```
 

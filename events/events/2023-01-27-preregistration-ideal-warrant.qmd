@@ -54,18 +54,14 @@ presenters:
   - name: Aaron Peikert
     url: ''
 
+template: templates/event-template.html
+filters:
+    - templates/process-event-yaml.lua
 ---
-<!-- MANDAORY SECTION START  -->
-
-{{< include templates/_setup.qmd >}}
-{{< include templates/_info_boxes.qmd >}}
-{{< include templates/_register_button.qmd >}}
-<!-- MANDAORY SECTION END  -->
 
 <br>
 
-<!-- DETAILED EVENT DESCRIPTION HERE OR USE THE TEMPLATE BELOW TO INCLUDE THE STANDARD DESCRIPTION SECTION -->
-<!-- {{< include templates/_event_description.qmd >}} -->
+ 
 
 <p>The Journal Club: “ReproducibiliTea” at LMU Munich continues with its 13th meeting. The organisation team is happy to  welcome Aaron Peikert (Max-Planck-Institute Berlin) as our guest who will give the introductory presentation and participate in the open discussion afterwards.</p><p>The meeting is dedicated to the topic "The Ideal of Preregistration and what warrants it". Aaron Peikert has recently uploaded a draft for a paper on "Why does preregistration increase the persuasiveness of evidence? A Bayesian rationalization". During our meeting, he will present some of his ideas from this draft and take up further debates around the issue of preregistration. Below you will find a short abstract that provides more information on the topic of the presentation.</p><p>We prepared the following <strong>key questions</strong> to guide you through the discussion and also provide some guidance while reading the paper. The presentation will take up some of the ideas from the paper, but present them in a more "discussion-friendly" way and go beyond the topic. For each question, you can think about the suggestions from the paper, but also bring in your own ideas:</p><ul>
 <li>What are objections to preregistration?</li>
@@ -86,7 +82,4 @@ presenters:
 
 
 
-<!-- MANDAORY SECTION START  -->
-<!-- _event_description.qmd template should always be at bottom -->
-{{< include templates/_instructors_helpers_contact.qmd >}}
-<!-- MANDAORY SECTION END  -->
+ 

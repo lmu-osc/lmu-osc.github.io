@@ -1,0 +1,27 @@
+---
+title: Lutz Heil
+academic_title: M.Sc.
+name: Lutz Heil
+surname: Heil
+first_name: Lutz
+memberships:
+  - type: fellow
+    status: alumni
+    start: 2018
+    end: 2019
+  - type: staff
+    status: alumni
+    position: Research Assistant - Original Website Content Creator
+    faculty: Psychology & Education
+    start: 2018
+    end: 2019
+email: 
+photo: 
+mission_statement: |
+  statement here
+
+template: templates/people-template.html
+filters: 
+    - templates/people_filter.lua
+---
+

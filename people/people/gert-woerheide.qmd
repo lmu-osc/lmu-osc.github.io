@@ -16,43 +16,14 @@ links:
     url: https://www.palaeontologie.geowissenschaften.uni-muenchen.de/personen/lehrstuhlinhaber/woerheide/index.html
 social_media:
   ORCID: 'https://orcid.org/0000-0002-6380-7421'
-mission_statement:
-  - I am the Chair of Palaeontology &amp; Geobiology in the Department of Earth and Environmental Sciences, Speaker of the GeoBio-Center, and currently Dean of the Faculty of Geosciences.
-  - We have published open access since more than a decade and provide our data on open science repositories such as OpenDataLMU and GitHub, because open access to scientific results and the underlying data is imperative to enable reproducible research. Open science is the future!
+mission_statement: |
+  I am the Chair of Palaeontology &amp; Geobiology in the Department of Earth and Environmental Sciences, Speaker of the GeoBio-Center, and currently Dean of the Faculty of Geosciences.
+
+  We have published open access since more than a decade and provide our data on open science repositories such as OpenDataLMU and GitHub, because open access to scientific results and the underlying data is imperative to enable reproducible research. Open science is the future!
+
+
+template: templates/people-template.html
+filters: 
+    - templates/people_filter.lua
 ---
-{{< include templates/_setup.qmd >}}
-{{< include templates/_contact_items.qmd >}}
-{{< include templates/_social_links.qmd >}}
-{{< include templates/_mission_statement.qmd >}}
-{{< include templates/_research_interests.qmd >}}
-{{< include templates/_selected_publications.qmd >}}
-
-
-
-```{r}
-#| echo: false
-
-# Compose the full profile
-profile <- div(class = "people-profile",
-  div(class = "people-header",
-    div(class = "people-photo",
-      img(src = photo)
-    ),
-    div(class = "people-info",
-      p(class = "people-position", position),
-      if (!is.null(faculty) & faculty != "") {p(class = "people-faculty", paste0("Faculty of ", faculty))},
-      div(class = "people-contact", contact_items, social_links)
-    )
-  ),
-  mission_block,
-  # custom content would most likely go here, right after the mission_block
-  div(class = "people-content",
-    interests_block,
-    publications_block
-  )
-)
-
-# Render the profile
-browsable(profile)  
-```
 

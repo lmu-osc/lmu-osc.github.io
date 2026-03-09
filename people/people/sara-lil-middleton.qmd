@@ -18,9 +18,11 @@ links:
     url: https://saralilmiddleton.com/about/
 social_media:
   ORCID: 'https://orcid.org/0000-0001-5307-8029'
-mission_statement:
-  - Sara Lil Middleton is the Training Development Coordinator and Community Engagement Manager on the “Train-the-Trainer” programme at LMU in partnership with the Framework for Open and Reproducible Research Training (<a href="https://forrt.org">FORRT</a>).
-  - "<strong>Her role involves:</strong>
+mission_statement: |
+  Sara Lil Middleton is the Training Development Coordinator and Community Engagement Manager on the “Train-the-Trainer” programme at LMU in partnership with the Framework for Open and Reproducible Research Training (<a href="https://forrt.org">FORRT</a>).
+
+  "<strong>Her role involves:</strong>
+
 
     - Contributing to the development, maintenance and evaluation of training content and materials in collaboration with the “Train-the-Trainer” programme coordinator. 
 
@@ -31,40 +33,9 @@ mission_statement:
   - Before joining LMU Open Science Center, Sara Lil completed her PhD in plant biology at the University of Oxford, UK and was a student representative at Reproducible Research Oxford (RROx) and led and collaborated on several projects at FORRT. She has an interdisciplinary background where she has previously worked in science communication and outreach roles with elementary school students to graduate students
   - Feel free to email Sara Lil at <a class="g-link-mail" href="mailto:s.middleton@lmu.de" title="Send email to:s.middleton@lmu.de">s.middleton@lmu.de</a> if you have any questions, comments or wish to connect on topics related to her role at LMU.
   - <strong>Working patterns</strong> - Tuesday-Friday
+
+template: templates/people-template.html
+filters: 
+    - templates/people_filter.lua
 ---
-{{< include templates/_setup.qmd >}}
-{{< include templates/_contact_items.qmd >}}
-{{< include templates/_social_links.qmd >}}
-{{< include templates/_mission_statement.qmd >}}
-{{< include templates/_research_interests.qmd >}}
-{{< include templates/_selected_publications.qmd >}}
-
-
-
-```{r}
-#| echo: false
-
-# Compose the full profile
-profile <- div(class = "people-profile",
-  div(class = "people-header",
-    div(class = "people-photo",
-      img(src = photo)
-    ),
-    div(class = "people-info",
-      p(class = "people-position", position),
-      if (!is.null(faculty) & faculty != "") {p(class = "people-faculty", paste0("Faculty of ", faculty))},
-      div(class = "people-contact", contact_items, social_links)
-    )
-  ),
-  mission_block,
-  # custom content would most likely go here, right after the mission_block
-  div(class = "people-content",
-    interests_block,
-    publications_block
-  )
-)
-
-# Render the profile
-browsable(profile)  
-```
 

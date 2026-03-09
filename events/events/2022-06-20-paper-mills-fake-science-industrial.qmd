@@ -49,18 +49,14 @@ presenters:
   - name: Dorothy Bishop
     url: ''
 
+template: templates/event-template.html
+filters:
+    - templates/process-event-yaml.lua
 ---
-<!-- MANDAORY SECTION START  -->
-
-{{< include templates/_setup.qmd >}}
-{{< include templates/_info_boxes.qmd >}}
-{{< include templates/_register_button.qmd >}}
-<!-- MANDAORY SECTION END  -->
 
 <br>
 
-<!-- DETAILED EVENT DESCRIPTION HERE OR USE THE TEMPLATE BELOW TO INCLUDE THE STANDARD DESCRIPTION SECTION -->
-<!-- {{< include templates/_event_description.qmd >}} -->
+ 
 
 <p>Organisers: Bernhard A. Sabel (U Magdeburg) and Felix Schönbrodt (LMU Munich)<br>Sponsors: LMU Open Science Center of the LMU Munich and Deutscher Hochschulverband</p><p><em>Our trust in the integrity of academic publishing is the very foundation of the advancement of the sciences and medicine. There are many ways scientific misconduct and questionable research practices undermine trust in science, including number nudging, cherry-picking, abstract spin, plagiarism, or pure data fabrication. During the last decade, however, we witnessed an unprecedented and concerning kind of misconduct: Industry-style, semi-automatic production of fake scientific publications by so-called “paper mills”, professional agencies that fake scientific data, figures, tables, and manuscripts including most recently artificial intelligence. While the number of publications with fake science is generally considered to be small, their number has scaled up and reaches concerning levels in some fields (medicine est. 200,000 annually), supporting a billion EURO paper mill business model. It should be considered a systematic criminal attack on the permanent scientific record (Sabel &amp; Seifert 2021). The symposium sheds light on this new phenomenon and provides a discussion forum for the perspectives of researchers, editors, and publishers.</em></p><ul>
 <li>“<strong>Fake science publications by paper-mills: pollution of the permanent scientific record</strong>” by Bernhard Sabel (Director, Inst. of Medical Psychology, Univ. Magdeburg)</li>
@@ -72,7 +68,4 @@ presenters:
 
 
 
-<!-- MANDAORY SECTION START  -->
-<!-- _event_description.qmd template should always be at bottom -->
-{{< include templates/_instructors_helpers_contact.qmd >}}
-<!-- MANDAORY SECTION END  -->
+ 

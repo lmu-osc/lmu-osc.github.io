@@ -52,18 +52,14 @@ presenters:
   - name: Prof. Dr. Josef Brüderl
     url: ''
 
+template: templates/event-template.html
+filters:
+    - templates/process-event-yaml.lua
 ---
-<!-- MANDAORY SECTION START  -->
-
-{{< include templates/_setup.qmd >}}
-{{< include templates/_info_boxes.qmd >}}
-{{< include templates/_register_button.qmd >}}
-<!-- MANDAORY SECTION END  -->
 
 <br>
 
-<!-- DETAILED EVENT DESCRIPTION HERE OR USE THE TEMPLATE BELOW TO INCLUDE THE STANDARD DESCRIPTION SECTION -->
-<!-- {{< include templates/_event_description.qmd >}} -->
+ 
 
 <p>We are happy to announce that the LMU Open Science Center (OSC) invites to a Mini-Symposium with four talks around the topic "Corona &amp; Open Science". After each lecture, a short discussion is planned. At the end, there will be Zoom breakoutrooms (self-organized), so that you can get in contact with each other or exchange information with the speakers. Following the symposium, a general assembly of the OSC will take place.  All guests are welcome to join. All talks, discussions, and the assembly will be in German.</p><p>The presentations will start at 02:00pm and end at 03:45pm, the assembly will be between 04:00pm and 05:00pm:</p><table class="table" border="0"><tbody>
 <tr>
@@ -110,7 +106,4 @@ presenters:
 
 
 
-<!-- MANDAORY SECTION START  -->
-<!-- _event_description.qmd template should always be at bottom -->
-{{< include templates/_instructors_helpers_contact.qmd >}}
-<!-- MANDAORY SECTION END  -->
+ 

@@ -53,18 +53,14 @@ presenters:
   - name: Jeroen Maas
     url: ''
 
+template: templates/event-template.html
+filters:
+    - templates/process-event-yaml.lua
 ---
-<!-- MANDAORY SECTION START  -->
-
-{{< include templates/_setup.qmd >}}
-{{< include templates/_info_boxes.qmd >}}
-{{< include templates/_register_button.qmd >}}
-<!-- MANDAORY SECTION END  -->
 
 <br>
 
-<!-- DETAILED EVENT DESCRIPTION HERE OR USE THE TEMPLATE BELOW TO INCLUDE THE STANDARD DESCRIPTION SECTION -->
-<!-- {{< include templates/_event_description.qmd >}} -->
+ 
 
 <p><strong><span class="dunkelrot">The workshop slides can be downloaded below.</span></strong></p><p>We are incredibly excited to announce the fourth workshop held by the LMU Open Science Initiative in Medicine (OSIM) and the Institute for Medical Information Processing, Biometry, and Epidemiology (IBE):</p><p style="text-align: center;"><strong>"Open Data, Data Sharing und Datenschutz in der Medizin: Wunsch und Wirklichkeit"</strong></p><p>The workshop will be online, consisting of six short lectures followed by an open discussion:</p><ul>
 <li>Ulrich Mansmann (IBE, Medizinische Fakultät, LMU): "Individuelle Patientendaten aus klinischen Studien nutzen und teilen: Eine Einführung"</li>
@@ -78,7 +74,4 @@ presenters:
 
 
 
-<!-- MANDAORY SECTION START  -->
-<!-- _event_description.qmd template should always be at bottom -->
-{{< include templates/_instructors_helpers_contact.qmd >}}
-<!-- MANDAORY SECTION END  -->
+ 

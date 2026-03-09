@@ -36,18 +36,14 @@ organizers:
 host:
   - name: LMU Open Science Center
 
+template: templates/event-template.html
+filters:
+    - templates/process-event-yaml.lua
 ---
-<!-- MANDAORY SECTION START  -->
-
-{{< include templates/_setup.qmd >}}
-{{< include templates/_info_boxes.qmd >}}
-{{< include templates/_register_button.qmd >}}
-<!-- MANDAORY SECTION END  -->
 
 <br>
 
-<!-- DETAILED EVENT DESCRIPTION HERE OR USE THE TEMPLATE BELOW TO INCLUDE THE STANDARD DESCRIPTION SECTION -->
-<!-- {{< include templates/_event_description.qmd >}} -->
+ 
 
 <p>We are glad to announce an event from the series "Kurz &amp; bündig" of the GraduateCenterLMU</p><p>In discussions about the quality of scientific work, the term "Open Science" has been appearing again and again for several years. What does this term mean, and why should doctoral students deal with it as part of their research project?</p><p><br>Topics:</p><ul style="list-style-type: square;">
 <li>"Everything new and everything different? - Origin and Location of Open Science</li>
@@ -58,7 +54,4 @@ host:
 
 
 
-<!-- MANDAORY SECTION START  -->
-<!-- _event_description.qmd template should always be at bottom -->
-{{< include templates/_instructors_helpers_contact.qmd >}}
-<!-- MANDAORY SECTION END  -->
+ 

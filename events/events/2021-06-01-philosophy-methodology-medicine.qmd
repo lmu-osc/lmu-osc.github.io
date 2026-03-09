@@ -39,18 +39,14 @@ host:
   - name: Munich Center for Mathematical Philosophy (MCMP)
     url: ''
 
+template: templates/event-template.html
+filters:
+    - templates/process-event-yaml.lua
 ---
-<!-- MANDAORY SECTION START  -->
-
-{{< include templates/_setup.qmd >}}
-{{< include templates/_info_boxes.qmd >}}
-{{< include templates/_register_button.qmd >}}
-<!-- MANDAORY SECTION END  -->
 
 <br>
 
-<!-- DETAILED EVENT DESCRIPTION HERE OR USE THE TEMPLATE BELOW TO INCLUDE THE STANDARD DESCRIPTION SECTION -->
-<!-- {{< include templates/_event_description.qmd >}} -->
+ 
 
 <p>We are incredibly excited to announce an interesting online conference by the <a>Munich Center for Mathematical Philosophy (MCMP)</a>:</p><p> </p><p style="text-align: center;"><strong>"Philosophy and Methodology of Medicine"</strong></p><h3 style="text-align: left;"><strong>Idea &amp; Motivation</strong></h3><p>The claims of medicine have been supported by a wide variety of different methods, ranging from randomized controlled trials to expert judgement and mechanism-based reasoning. Miriam Solomon has therefore aptly characterized medicine in terms of a developing, untidy, methodological pluralism. But can philosophers help with this development? In recent years, philosophers of science have become increasingly interested in assessing the strengths and weaknesses of the various methods employed in medicine. Some have defended the methodological superiority of randomized controlled trials, or at least meta-analyses of such trials. Others have challenged this superiority by on the one hand stressing the weaknesses of such methods in terms of their internal or external validity, and on the other hand emphasising the strengths of alternative methods, including methods involving expert judgement and mechanistic evidence.</p><p>The online conference will bring together philosophers of science and medical methodologists in an attempt to make progress towards resolving these debates concerning the strengths and weaknesses of the various methods employed in medicine. Among others, the following topics will be covered within the conference:</p><ul>
 <li>Foundational issues in statistics in medicine</li>
@@ -65,7 +61,4 @@ host:
 
 
 
-<!-- MANDAORY SECTION START  -->
-<!-- _event_description.qmd template should always be at bottom -->
-{{< include templates/_instructors_helpers_contact.qmd >}}
-<!-- MANDAORY SECTION END  -->
+ 

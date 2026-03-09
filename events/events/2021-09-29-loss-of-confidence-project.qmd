@@ -41,18 +41,14 @@ host:
   - name: ReproducibiliTea Team
     url: ''
 
+template: templates/event-template.html
+filters:
+    - templates/process-event-yaml.lua
 ---
-<!-- MANDAORY SECTION START  -->
-
-{{< include templates/_setup.qmd >}}
-{{< include templates/_info_boxes.qmd >}}
-{{< include templates/_register_button.qmd >}}
-<!-- MANDAORY SECTION END  -->
 
 <br>
 
-<!-- DETAILED EVENT DESCRIPTION HERE OR USE THE TEMPLATE BELOW TO INCLUDE THE STANDARD DESCRIPTION SECTION -->
-<!-- {{< include templates/_event_description.qmd >}} -->
+ 
 
 <p>After a short summer break, the Journal Club: “ReproJuicebiliTea” at LMU Munich continues with its fourth meeting to discuss an interesting paper about mistakes and lost confidence in scientific work as well as how to deal with it. The organisation team is happy to announce that the paper’s author, Dr. Julia M. Rohrer, will give an introductory talk to this session and participate in the open discussion afterwards:</p><p>Participants can use the following <strong>key questions</strong> to prepare for the discussion:</p><ul>
 <li>Which aspects are already relevant for students and should be taught? How should e.g. lost confidence in empirical work be dealt with in the course of the bachelor studies? What would you say about your own undergraduate empirical work today?</li>
@@ -68,7 +64,4 @@ host:
 
 
 
-<!-- MANDAORY SECTION START  -->
-<!-- _event_description.qmd template should always be at bottom -->
-{{< include templates/_instructors_helpers_contact.qmd >}}
-<!-- MANDAORY SECTION END  -->
+ 

@@ -39,18 +39,14 @@ host:
   - name: Wikipedia Munich (WikiMUC)
     url: ''
 
+template: templates/event-template.html
+filters:
+    - templates/process-event-yaml.lua
 ---
-<!-- MANDAORY SECTION START  -->
-
-{{< include templates/_setup.qmd >}}
-{{< include templates/_info_boxes.qmd >}}
-{{< include templates/_register_button.qmd >}}
-<!-- MANDAORY SECTION END  -->
 
 <br>
 
-<!-- DETAILED EVENT DESCRIPTION HERE OR USE THE TEMPLATE BELOW TO INCLUDE THE STANDARD DESCRIPTION SECTION -->
-<!-- {{< include templates/_event_description.qmd >}} -->
+ 
 
 <p>The LMU is an important part of life in Munich, but still many of the parts that make up this large project are not well documented on Wikimedia projects like Wikipedia and Wikidata. This hinders public understanding of how such a large research university works. If you are interested in helping to better document the different teams, institutes, and research projects that define the LMU, this "LMU Editathon" will teach you how to do exactly that. No prior knowledge required!</p><p><em>Die LMU ist ein wichtiger Bestandteil des Münchner Lebens, doch viele ihrer Teile, die dieses große Projekt ausmachen, sind auf Wikimedia-Projekten wie Wikipedia und Wikidata noch nicht ausreichend dokumentiert. Dies erschwert das öffentliche Verständnis darüber, wie eine so große Forschungsuniversität funktioniert. Wenn Sie daran interessiert sind, zur besseren Dokumentation der verschiedenen Teams, Institute und Forschungsprojekte, die die LMU definieren, beizutragen, wird Ihnen dieser "LMU Editathon" genau zeigen, wie Sie das tun können. Vorkenntnisse sind nicht erforderlich!</em></p><p><strong>Please bring/Mitbringen:</strong></p><p>Computers are available, but you can also bring your own laptop if you prefer, as there is Wi-Fi available.</p><p><em>Rechner stehen zur Verfügung, aber wer lieber an seinem eigenen Notebook arbeitet, kann es mitbringen, es gibt WLAN.</em></p><p><strong>Costs/Kosten:</strong></p><p>Participation in the event is free of charge; a donation jar is available for voluntary contributions to support WikiMUC.</p><p><em>Die Teilnahme an der Veranstaltung ist kostenlos; ein Spendenglas nimmt gerne freiwillige Beiträge zum Unterhalt des WikiMUC entgegen.</em></p><p><strong>Agenda/Ablauf:</strong></p><ul>
 <li>Short introduction and description of tasks</li>
@@ -67,7 +63,4 @@ host:
 
 
 
-<!-- MANDAORY SECTION START  -->
-<!-- _event_description.qmd template should always be at bottom -->
-{{< include templates/_instructors_helpers_contact.qmd >}}
-<!-- MANDAORY SECTION END  -->
+ 
