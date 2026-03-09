@@ -60,7 +60,14 @@ Not all data can or should be shared openly. Your sharing options depend on what
 
 <br>
 
-When deciding, ask yourself: What did participants consent to? What does your ethics approval allow? Can the data be anonymized without losing value (see [2.3.2. Anonymisation](<!--internal link-->))? If you work with sensitive data, consult [your institution's data protection officer](https://www.lmu.de/en/about-lmu/structure/organizational-structure/officers-and-representatives/data-protection-officer.html).
+When deciding, ask yourself:
+
+- What did participants **consent** to? 
+- What does your **ethics** approval allow? 
+- Can the data be **anonymized** without losing value (see [2.3.2. Anonymization](<!--internal link-->))? 
+- If you work with **sensitive data**, consult [your institution's data protection officer](https://www.lmu.de/en/about-lmu/structure/organizational-structure/officers-and-representatives/data-protection-officer.html). 
+- If you generate research outputs that could lead to **dual use** (e.g. that could also be applied for military or malicious purposes), please refer to the European Commission's policy ([Dual-Use Regulation 2021/821](https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L:2021:206:FULL&from=EN)) and get support from the [LMU Export Control service](mailto:Exportkontrolle@Verwaltung.Uni-Muenchen.DE).
+- If your research could lead to **patents or commercialization**, get the support of the [IP Management team](https://www.lmu.de/en/research/research-transfer/inventions-patents-and-exploitation-rights/). 
 
 <!-- TODO Reema: tool card for decision tree ; MI: not sure if feasible in enough details to be useful? but perhaps ;)--> 
 
@@ -139,6 +146,20 @@ When deciding, ask yourself: What did participants consent to? What does your et
 </div>
 
 :::
+
+::: {.col}
+
+<div class="card orc-card-tool w-100 h-100 position-relative">
+<div class="orc-card-tool-icon mb-2">
+<img src="https://europa.eu/assets/comm/infogram/EU-flag/en/data/aea86fce95146ce706844aeec4f57daa.jpg" class="img-fluid" alt="LMU logo">
+</div>
+<h4 class="card-title">EU Dual-Use Regulation 2021/821</h4>
+<p class="card-text">List of regulated research outputs that could lead to military or malicious purposes.</p>
+<a href="https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L:2021:206:FULL&from=EN" class="stretched-link" target="_blank" rel="noopener"></a>
+</div>
+
+:::
+
 
 :::
 
@@ -275,7 +296,7 @@ Choose a repository that suits your data type, your field's expectations, and yo
 
 <br>
 
-Whichever you choose, ensure the repository provides a **DOI** (Digital Object Identifier) so your data can be cited and tracked. <!-- See the Identity & Credit panel for more on persistent identifiers. -- not sure what will be there yet -->
+Whichever you choose, ensure the repository provides a **DOI** (Digital Object Identifier) so your data can be cited and tracked. 
 
 
 ::: {.container .my-4 }
@@ -361,8 +382,10 @@ A license tells others what they can do with your data. Without one, or equivale
 - **CC BY-NC (Non-Commercial)** adds a restriction against commercial use. Consider whether this limitation actually serves your goals.
 
 <br>
+Learn more about open licenses for data and code in our [code publishing tutorial](https://lmu-osc.github.io/code-publishing/choose_license.html).
+<br>
 
-For restricted-access data, a **Data Use Agreement** specifies conditions beyond a standard license: approved purposes, security requirements, publication terms, and data destruction timelines.<!-- Reema - I think we might need a section just for DUA? also does this mean it's eitehr or? license when simple cases, DUA when complex and typically not open?-->
+For restricted-access data, a **Data Use Agreement** specifies conditions beyond a standard license: approved purposes, security requirements, publication terms, and data destruction timelines.<!-- Reema - I think we might need a section just for DUA? also does this mean it's either  or? license when simple cases, DUA when complex and typically not open?-->
 
 ::: {.container .my-4 }
 
@@ -381,8 +404,8 @@ For restricted-access data, a **Data Use Agreement** specifies conditions beyond
 </div>
 </div>
 <h4 class="card-title">Choose a License</h4>
-<p class="card-text">License decision flowchart for data and code</p>
-<a href="https://lmu-osc.github.io/code-publishing/" class="stretched-link" target="_blank" rel="noopener"> </a>
+<p class="card-text">License decision flowchart for data and code.</p>
+<a href="https://lmu-osc.github.io/code-publishing/choose_license.html" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
 
 :::
@@ -396,7 +419,7 @@ For restricted-access data, a **Data Use Agreement** specifies conditions beyond
 
 _in construction_
 
-* Description of what is is, when needed, what is the process to create one
+* Description of what it is, when it is needed, what the process to create one is
 * LMU contact for legal department 
 * Examples DUA
 
@@ -463,7 +486,7 @@ They are several pathways to make your your articles free to read, e.g.:
 - **Gold Open Access**: the publication of the final version of record as immediately open access on the publisher’s platform, against payment of an APC.
 - **Green Open Access**: self-archiving of a [**preprint or postprint**]{.underline} in an institutional or disciplinary repository, either immediately or after an embargo period imposed by the publisher,  without cost to the author. Visit the [Open Policy Finder](https://openpolicyfinder.jisc.ac.uk/) to know whether and where your publishers allow you to publish preprint or postprints.
 
-However, the payment of APCs can also be requested by publishers regardless of the article's accessibility status depending on the contract negotiated by the University and each publisher (see [4.3.1. Contract with Publishers](<!--internal link-->)).
+Depending on the contract negotiated by the University and each publisher (see [4.3.1. Contract with Publishers](<!--internal link-->)), the payment of APCs can also be requested by publishers regardless of the article's accessibility status.
 
 :::{.callout-note}
 [**preprint**]{.underline}: article, book chapter, book, or other scholarly work that is deposited in a repository with unrestricted access (i.e. available to the public to view online, or download, without registration, payment, or approval) ahead of peer review. Equivalent terms used in some disciplines are ‘working paper’ and ‘unpublished manuscript’.
@@ -514,7 +537,7 @@ However, the payment of APCs can also be requested by publishers regardless of t
 #### 4.3.2. Contracts with Publishers
 
 Until 2024, authors publishing in legacy (subscription-based) journals were required to pay an **Article Processing Charge (APC)** to make their work immediately open access upon publication, the model commonly referred to as '_gold open access_'. 
-To **avoid these fees** while still ensuring public accessibility, authors were encouraged to **disseminate a preprint and/or postprint, or to deposit the publisher’s version in an institutional repository after the embargo period had expired**. 
+To **avoid these fees** while still ensuring public accessibility, authors were encouraged to disseminate a **preprint and/or postprint**, or to deposit the publisher’s version in an institutional repository after the embargo period had expired. 
 These procedures, which are **free to the authors**, are collectively known as '_green open access_'. 
 
 <br>
@@ -558,7 +581,7 @@ To increase the accessibility and impact of your article we recommend you to:
     - the version submitted to the journal (preprint)
     - the accepted manuscript version (postprint)
     - the published version 
-        - on a specific location (e.g. preprint repository, institutional repository, funders repository, Author's personal website)
+        - on a specific location (e.g. preprint repository, institutional repository, funders repository, author's personal website)
         - after a specific amount of time (e.g. 6 or 12-month embargo)
         - under a specific license (e.g. CC.BY. (recommended for maximum reuse), CC.BY-NC-ND)
 
@@ -567,11 +590,11 @@ To increase the accessibility and impact of your article we recommend you to:
 - **Get a DOI for each public version of your manuscript.** When updating your preprint through the revision cycle, get a citable DOI (as provided by the repository).
 
 - **Maintain as much rights to your own work as possible**.
-     - Prior to submitting your mansucript, deposit your manuscript's conceptual figures on a repository (e.g. the OSF or Zenodo), under an open license (e.g. CC.BY 4.0 requiring the authors to get credited), and get a DOI for it to cite your own figure in your manuscript. This way, you (and possibly other researchers), can reuse them in future manuscripts without asking permission from the publisher, by indicating the DOI and license in the figure legend.
-     - When given the choice, request your publisher to publish your manuscript under a CC.BY 4.0  license (https://deal-konsortium.de/warum-ccby), so the right to distribution is included. It is possible your publisher will request a CC.BY. NC (Non-Commercial) which means you cannot deposit it on commercial platforms, but would typically be allowed to deposit it on preprint servers or institutional repositories (see [Jisc' Open Policy Finder](https://openpolicyfinder.jisc.ac.uk/))
+     - Prior to submitting your mansucript, deposit your manuscript's conceptual figures on a repository (e.g. [Zenodo](https://zenodo.org/), [OSF](https://osf.io/)), under an open license (e.g. [CC.BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.en) requiring the authors to get credited), and get a DOI for it to cite your own figure in your manuscript. This way, you (and possibly other researchers), can reuse them in future manuscripts without asking permission from the publisher, by indicating the DOI and license in the figure legend.
+     - When given the choice, request your publisher to publish your manuscript under a CC.BY 4.0  license, so your right to distribution is included. It is possible that your publisher will request a CC.BY. NC (Non-Commercial) license which means you cannot deposit it on commercial platforms, but you would typically still be allowed to deposit it on preprint servers or institutional repositories (see [Jisc' Open Policy Finder](https://openpolicyfinder.jisc.ac.uk/) for the policy of your specific journal)
 
 
-In practice, we recommend to follow the process of version releases illustrated in the figure(<!-- fix me where-->), starting with a manuscript draft, should you wish to obtain feedback from your community, or preprinting the submitted version, should you want to e.g. accelerate dissemination of findings that are unlikely to change during revision, or postprinting the accepted version to have a free peer-reviewed  version available to anyone. 
+In practice, we recommend to follow the process of version releases illustrated in the figure<!-- fix me where-->, starting with a manuscript draft, should you wish to obtain feedback from your community, or preprinting the submitted version, should you want to e.g. accelerate dissemination of findings that are unlikely to change during revision, or postprinting the accepted version to have a free peer-reviewed version available to anyone. 
 
 <!-- include figure in a left column (by the way I like the classic look but dont know here to add that information), and the paragraph above in a right column?-->
 ```{mermaid}
@@ -641,7 +664,7 @@ To get support for [Open Access LMU](https://epub.ub.uni-muenchen.de/), the LMU 
 
 </summary>
 
-All research outputs and their specific versions should be linked to researchers, organisations, and funders through persistent identifiers.
+All research outputs and their specific versions should be linked to their authors, organisations, and funders through persistent identifiers.
 
 ::: {.panel-tabset}
 
@@ -661,7 +684,7 @@ We recommend to **start discussions on authorship, roles, and responsibilities a
 
 <h5>Contributorship</h5>
 
-- **Use the [Contributor Role Taxonomy  (CRediT)](https://credit.niso.org/)** to increase transparency and accountability, and acknowledge what contribution to a research project each contributor has made: ‘Conceptualization’, ‘Data curation’, ‘Formal analysis’, ‘Funding acquisition’, ‘Investigation’, ‘Methodology’, ‘Project administration’, ‘Resources’, ‘Software’, ‘Supervision’, ‘Validation’, ‘Visualization’, ‘Writing—original draft’, and ‘Writing—review & editing’.
+- **Use the [Contributor Role Taxonomy  (CRediT)](https://credit.niso.org/)** to increase transparency and accountability, and acknowledge what contribution to a research project each person has made: ‘Conceptualization’, ‘Data curation’, ‘Formal analysis’, ‘Funding acquisition’, ‘Investigation’, ‘Methodology’, ‘Project administration’, ‘Resources’, ‘Software’, ‘Supervision’, ‘Validation’, ‘Visualization’, ‘Writing—original draft’, and ‘Writing—review & editing’.
      - Include the CRediT statement in the acknowledgement section of your manuscript if your publisher is not a [formal CRediT adopter](https://credit.niso.org/adopters/) and does not otherwise prompt you upon submission of your article.
 
 - **Use the [Method Reporting with Initials for Transparency (MeRIT)](https://doi.org/10.1038/s41467-023-37039-1)** when relevant. This consist in adding initials to the Methods section, identifying with greater transparency who did what when several team members contributed to e.g. data curation or software.
@@ -777,14 +800,14 @@ The LMU Open Science Center is one of the many child organizations of LMU Munich
     - for a preregistration you first embargoed (i.e. kept private for a set period of time) on e.g. the [OSF](https://osf.io/), you must first make it public to obtain a DOI to include in your manuscript.
 - **Add persistent identifiers of connected outputs in their reciprocal metadata** to connect all parts of a project.
     - include the DOI of your data, code, and preregistration in your manuscript and in the metadata field provided by your publisher if prompted.
-    - add the DOI of your code repository in the metadata of your published data and reciprocally, either in the description text or in the metadata fields provided by the repositories like [Zenodo](https://zenodo.org/).
+    - add the DOI of your code repository in the metadata of your published data and reciprocally, either in the description text or in the metadata fields provided by repositories like [Zenodo](https://zenodo.org/).
 - **Add the persistent identifier of a published version of an output to all public versions of that output**
     - add the DOI of the published article (provided by your publisher) in the metadata of your preprint.
     - add the DOI provided by e.g. [Zenodo](https://zenodo.org/) when publishing your code from [GitHub](https://github.com/), back into your GitHub README file.
 
 
 
-<!-- image of an example?-->
+<!-- image of an example where all connections of DOIs are shown for an article?-->
 
 
 :::
