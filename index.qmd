@@ -28,54 +28,10 @@ include-after-body:
 include-in-header:
   - text: |
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <script src="/assets/javascript/clear_filter_button.js" defer></script>
       <script src="assets/javascript/impact_counter.js" defer></script>
       <style>
-
-      :root {
-        --green-main:         #00883A;
-        --green-dark:         #006b2d;
-        --green-light:        #a6c871;
-        --green-pale:         #f7fcf7f2;
-        --green-border:       #00883b70;
-        --green-border-solid: #00883b79;
-        --green-500:          #00883A;
-        --green-300:          #4caf74;
-        --green-100:          #d4eddf;
-        --green-50:           #f7fcf7;
-        --ink:                #333;
-        --muted:              #555;
-        --border:             #00883b40;
-        --white:              #ffffff;
-
-        --ff-display: 'DM Serif Display', Georgia, serif;
-        --ff-body:    'DM Sans', system-ui, sans-serif;
-
-        --radius-sm: 6px;
-        --radius-md: 12px;
-        --radius-lg: 20px;
-
-        --shadow-sm: 0 1px 4px rgba(0,0,0,0.06), 0 2px 12px rgba(0,0,0,0.04);
-        --shadow-md: 0 4px 20px rgba(0,0,0,0.08), 0 1px 4px rgba(0,0,0,0.04);
-        --shadow-lg: 0 12px 40px rgba(0,0,0,0.10), 0 2px 8px rgba(0,0,0,0.04);
-
-        --transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-
-        /* ── Single source of truth for spacing ── */
-        --section-py:    4rem;    /* vertical padding for all sections   */
-        --section-px:    2rem;    /* horizontal padding for all sections */
-        --inner-gap:     1.5rem;  /* gap between eyebrow → title → body  */
-        --item-gap:      0.6rem;  /* gap between checklist items, etc.   */
-      }
-
-      body {
-        /*font-family: var(--ff-body);*/
-        color: var(--ink);
-        background: var(--white);
-      }
-
       /* =============================================
-         BANNER
+         banner overlay
          ============================================= */
       .quarto-title-block .quarto-title-banner {
         background-position-y: center;
@@ -98,189 +54,77 @@ include-in-header:
       }
 
       /* =============================================
-         SHARED SECTION STYLES
+         shared style componet
          ============================================= */
-      .osc-section {
-        padding: var(--section-py) var(--section-px);
-      }
-      .osc-section-inner {
-        max-width: 1100px !important;
-        margin: 0 auto;
-      }
-      .section-eyebrow {
-        letter-spacing: 0.18em;
-        color: var(--green-500);
-        /* no extra margin here — controlled by mb-2 utility in markup */
-      }
-      .section-title {
-        font-size: clamp(1.6rem, 3vw, 1.7rem);
-        margin: 0 0 var(--inner-gap);
-        line-height: 1.3;
-      }
+         .osc-section {
+            padding: 2rem 2rem 0;
+          }
+
+          .osc-section + .osc-section {
+            margin-top: 2rem;
+          }
+
+          .osc-section-inner {
+            max-width: 1200px !important;
+            margin: 0 auto;
+          }
+          .section-mark {
+            letter-spacing: 0.18em;
+            color: #00883A;
+          }
+          .section-title {
+            font-size: clamp(1.6rem, 3vw, 1.7rem);
+            margin: 0 0 1.5rem;
+            line-height: 1.3;
+          }
 
       /* =============================================
-         IMPACT STRIP
+         mission
          ============================================= */
-      .impact-container {
-        background: var(--green-50);
-        border-top:    1px solid var(--green-border);
-        border-bottom: 1px solid var(--green-border);
-        padding: var(--section-py) var(--section-px);
-      }
-      .impact-container .metric-value {
-        font-family: var(--ff-display);
-        font-size: 2.6rem;
-        color: var(--green-500);
-        line-height: 1;
-        margin-bottom: 0.35rem;
-      }
-      .impact-container .metric-label {
-        font-size: 0.82rem;
-        font-weight: 500;
-        color: var(--muted);
-        text-transform: uppercase;
-        letter-spacing: 0.08em;
-      }
+          .mission-checklist {
+            list-style: none;
+          }
+          .mission-checklist ul {
+            padding-left: 0;
+            margin-left: 0;
+          }     
+          .mission-checklist li {
+            display: flex;
+            gap: 0.65rem;
+            align-items: flex-start;
+            font-size:0.95rem;
+            color: #555;
+            line-height: 1.7;
+          }
+          .mission-check-icon {
+            width: 18px; 
+            height: 18px;
+            border-radius: 50%;
+            background: #f4f1f1;
+            color: #00883A;
+            font-size: 0.6rem;
+          }
+          .mission-statement-btn.btn.btn-primary {
+            background: #00883A;
+            color: white !important;
+            border-color: #00883A;
+            border-radius: 6px;
+            transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 3px 12px rgba(0,136,58,0.28);
+          }
+          .mission-statement-btn.btn.btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0,136,58,0.35);
+          }
 
       /* =============================================
-         EXPLORE CARDS
-         ============================================= */
-
-         .explore-section .desc{
-          max-width:600px;
-         }
-        .explore-card {
-          border-radius: var(--radius-lg);
-          transition: var(--transition);
-          background: var(--white);
-          text-decoration: none !important;
-        }
-        .explore-card::before {
-          content: '';
-          position: absolute;
-          bottom: 0; left: 0; right: 0;
-          height: 3px;
-          background: var(--green-main);
-          transform: scaleX(0);
-          transform-origin: left;
-          transition: var(--transition);
-        }
-        .explore-card:hover {
-          border-color: var(--green-main);
-          box-shadow: var(--shadow-md);
-          transform: translateY(-3px);
-        }
-        .explore-card:hover::before { transform: scaleX(1); }
-        .explore-card-icon {
-          border-radius: var(--radius-md);
-          background: var(--green-50);
-          font-size: 1.5rem;
-          color: var(--green-500);
-        }
-
-        .explore-card h3 {
-          font-size: 1rem;
-          font-weight: 400;
-          margin: 0;
-        }
-        .explore-card p {
-          font-size: 0.8rem;
-          line-height: 1.65;
-          margin: 0;
-          flex-grow: 1;
-        }
-
-      .explore-card:hover .explore-card-link::after { transform: translateX(4px); }
-
-      /* =============================================
-         MISSION
-         ============================================= */
-      .mission-checklist {
-        list-style: none;
-        padding: 0;
-        margin: var(--inner-gap) 0 var(--inner-gap);
-        display: flex;
-        flex-direction: column;
-        gap: var(--item-gap);
-      }
-      .mission-checklist ul {
-        padding-left: 0;
-        margin-left: 0;
-      }
-      
-      .mission-checklist li {
-        display: flex;
-        gap: 0.65rem;
-        align-items: flex-start;
-        font-size:0.95rem;
-        color: var(--muted);
-        line-height: 1.7;
-      }
-      .mission-check-icon {
-        flex-shrink: 0;
-        width: 18px; height: 18px;
-        border-radius: 50%;
-        background: #f4f1f1;
-        color: var(--green-main);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 0.6rem;
-        margin-top: 0.15rem;
-      }
-      .mission-visual {
-        background: var(--green-main);
-        border-radius: var(--radius-lg);
-        padding: 2rem;
-        color: var(--white);
-        position: relative;
-        overflow: hidden;
-      }
-      .mission-visual::before {
-        content: '';
-        position: absolute;
-        top: -40%; right: -30%;
-        width: 300px; height: 300px;
-        border-radius: 50%;
-        background: radial-gradient(circle, rgba(166,200,113,0.25) 0%, transparent 70%);
-        pointer-events: none;
-      }
-
-      .mission-statement-btn.btn.btn-primary {
-        background: var(--green-500);
-        color: var(--white) !important;
-        border-color: var(--green-500);
-        border-radius: var(--radius-sm);
-        transition: var(--transition);
-        box-shadow: 0 3px 12px rgba(0,136,58,0.28);
-      }
-      .mission-statement-btn.btn.btn-primary:hover {
-        background: var(--green-dark);
-        border-color: var(--green-dark);
-        transform: translateY(-2px);
-        box-shadow: 0 6px 20px rgba(0,136,58,0.35);
-      }
-
-      /* =============================================
-         NEWSLETTER 
+         newsletter section
          ============================================= */
 
          .newsletter-section {
-          background: var(--green-main);
-          border-radius: var(--radius-lg);
-          gap: 0.3rem;
-          position: relative;
+          background: #00883A;
+          border-radius: 20px;
           overflow: hidden;
-        }
-
-        .newsletter-section::before {
-          content: '';
-          position: absolute;
-          top: -40%; right: -30%;
-          width: 250px; height: 250px;
-          border-radius: 50%;
-          background: radial-gradient(circle, rgba(167, 200, 113, 0.19) 0%, transparent 70%);
-          pointer-events: none;
         }
 
         .newsletter-btn.btn {
@@ -288,69 +132,99 @@ include-in-header:
           cursor: pointer;                        
         }
 
-        .newsletter-btn.btn:hover,
-        .newsletter-btn.btn:active,
-        .newsletter-btn.btn:focus{
+        .newsletter-btn.btn.btn-outline-light:hover{
           background: #ffffff50 !important;
-          color:white !important;
+          color: white !important;
           border: 1px solid white !important;
         }
 
 
       /* =============================================
-         TESTIMONIAL
+         impact section
          ============================================= */
-
-         .testimonial-container {
-            background: var(--green-main);
-            padding: var(--section-py) var(--section-px);
+          .impact-container {
+            background: #f7fcf7f2;
           }
-
-          .testimonial-inner {
-            max-width: 1100px;
-            margin: 0 auto;
+          .impact-container .metric-value {
+            font-family: 'DM Serif Display', Georgia, serif;
+            font-size: 2.6rem;
+            color: #00883A;
+            line-height: 1;
           }
+          .impact-container .metric-label {
+            font-size: 0.82rem;
+            font-weight: 500;
+            letter-spacing: 0.08em;
+          }
+      /* =============================================
+         testimonial
+         ============================================= */
 
           .testimonial-inner blockquote {
-            font-family: var(--ff-display);
-            font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+            font-size: clamp(1rem, 2.5vw, 1.2rem);
             font-style: italic;
-            line-height: 1.65;
-            color: rgba(255,255,255,0.92);
-            border: none;
-            padding: 0;
-            margin: 0 0 1.25rem;
+            line-height: 1.6;
+            color: #555;
+            border-left: 1px solid #d5d3d394;
           }
-
+          .testimonial-inner blockquote p{
+            margin-left: 0.5rem;
+           }
           .testimonial-inner strong {
-            font-size: 0.88rem;
+            margin-left: 1rem;
+            font-size: 0.9rem;
             font-weight: 600;
-            color: rgba(255, 255, 255, 0.82);
+            color: rgba(45, 44, 44, 0.64);
             letter-spacing: 0.04em;
           }
+          .testimonial-image img {
+              width: 110px;
+              aspect-ratio: 1 / 1;
+              object-fit: cover;
+              border-radius: 50%;
+          }
       /* =============================================
-         NEWS & EVENTS
+         explore cards
          ============================================= */
-      .highlights-section {
-        background: var(--white);
-      }
 
-      /* =============================================
-         RESPONSIVE
-         ============================================= */
-      @media (max-width: 991px) {
-        :root {
-          --section-py: 3rem;
-          --section-px: 1.5rem;
-        }
-      }
-      @media (max-width: 600px) {
-        :root {
-          --section-py: 2.5rem;
-          --section-px: 1rem;
-        }
-      }
+         .explore-section .desc{
+          max-width: 600px;
+         }
 
+        .explore-card {
+          position: relative;
+          transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+          background: white;
+        }
+
+        .explore-card::after {
+          content: "";
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          width: 0;              
+          height: 3px; 
+          background-color: #00883A;
+          border-radius: 12px;
+          transition: width 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .explore-card:hover::after {
+          width: 100%;            
+        }
+
+        .explore-card:hover {
+          box-shadow: 0 4px 20px rgba(0,0,0,0.08), 0 1px 4px rgba(0,0,0,0.04);
+          transform: translateY(-3px);
+        }
+        .explore-card h5 {
+            font-size: 1rem;
+            font-weight: 400;
+        }
+        .explore-card p {
+            font-size: 0.86rem;
+            line-height: 1.65;
+        }
       </style>
       <link href="/assets/bootstrap-5.3.8-dist/css/bootstrap.min.css" rel="stylesheet">
 css: /custom-navbar.css
@@ -366,15 +240,15 @@ css: /custom-navbar.css
 ::: {.row .align-items-center .gx-5}
 ::: {.col-lg-8}
 
-[Our mission]{.text-uppercase .small .fw-semibold .mb-2 .section-eyebrow}
+[Our mission]{.text-uppercase .small .fw-semibold .mb-2 .section-mark}
 
 ## The interdisciplinary LMU Open Science Center (OSC) is a researcher-led initiative supporting LMU Munich by embedding open, responsible, and reproducible practices at the core of research excellence. {.mb-3 .section-title .text-muted}
 
-::: {.mission-checklist}
-- [✓]{.mission-check-icon} Essential training in the highest standards of reproducible research methods
-- [✓]{.mission-check-icon} Digital sovereignty and resilience to global challenges through open source workflows
-- [✓]{.mission-check-icon} Transparency as foundation for trust and evidence-based societal debates
-- [✓]{.mission-check-icon} Reliable scientific data as a critical foundation for responsible AI, digitalisation, and societal translation
+::: {.mission-checklist .d-flex .flex-column .gap-1 .p-0 .my-4}
+- [✓]{.mission-check-icon .d-flex .flex-shrink-0 .align-items-center .justify-content-center .mt-1} Essential training in the highest standards of reproducible research methods
+- [✓]{.mission-check-icon .d-flex .flex-shrink-0 .align-items-center .justify-content-center .mt-1} Digital sovereignty and resilience to global challenges through open source workflows
+- [✓]{.mission-check-icon .d-flex .flex-shrink-0 .align-items-center .justify-content-center .mt-1} Transparency as foundation for trust and evidence-based societal debates
+- [✓]{.mission-check-icon .d-flex .flex-shrink-0 .align-items-center .justify-content-center .mt-1} Reliable scientific data as a critical foundation for responsible AI, digitalisation, and societal translation
 :::
 
 [Learn More About OSC](about/index.qmd){.btn .btn-primary .mission-statement-btn}
@@ -382,7 +256,7 @@ css: /custom-navbar.css
 :::
 
 ::: {.col-lg-4}
-::: {.newsletter-section .d-flex .flex-column .justify-content-center .text-center .p-5 .text-white}
+::: {.newsletter-section .d-flex .flex-column .justify-content-center .text-center .p-5 .text-white .gap-1}
 
 **Stay updated with the OSC.**
 
@@ -397,67 +271,141 @@ Sign up to our mailing list for workshops, events, and resources.
 :::
 :::
 
-
 <!-- ══════════════════════════════════════
-     IMPACT METRICS
+     accolades plus testimonial carousel
 ════════════════════════════════════════ -->
-::: {.row .mx-auto .w-100 .align-items-center .justify-content-center .impact-container}
+::: {.osc-section .impact-container }
+::: {.container}
+::: {.row .align-items-center}
 
-::: {.col .text-center}
-::: {.metric-value data-target="100+"}
+::: {.col-lg-4}
+::: {.row}
+
+::: {.col-6 .text-center}
+::: {.metric-value .mb-2 data-target="100+"}
 0
 :::
-::: {.metric-label}
+::: {.metric-label .text-uppercase .text-muted}
 Members
 :::
 :::
 
-::: {.col .text-center}
-::: {.metric-value data-target="50+"}
+::: {.col-6 .text-center}
+::: {.metric-value .mb-2 data-target="15+"}
 0
 :::
-::: {.metric-label}
-Events per year
-:::
-:::
-
-::: {.col .text-center}
-::: {.metric-value data-target="15+"}
-0
-:::
-::: {.metric-label}
+::: {.metric-label .text-uppercase .text-muted}
 OS Publications
 :::
 :::
 
-::: {.col .text-center}
-::: {.metric-value data-target="1000+"}
+::: {.col-12 .text-center}
+::: {.metric-value .mb-2 data-target="1000+"}
 0
 :::
-::: {.metric-label}
+::: {.metric-label .text-uppercase .text-muted}
 Researchers Trained
 :::
 :::
 
-::: {.col .text-center}
-::: {.metric-value data-target="10"}
-0
-:::
-::: {.metric-label}
-Awards Won
 :::
 :::
 
+::: {.col-lg-8}
+::: {.row .d-flex .justify-content-center .align-items-center}
+
+::: {.col-lg-9}
+::: {.testimonial-inner}
+> "The LMU Open Science Center was extremely helpful for us to complete the section on Research Data Management in our [Cluster of Excellence] pre-proposal. In fact, without them we would have not been able to write this part in such a comprehensive manner as it was possible with their amazing support."
+
+**—  Professor**
+:::
+:::
+
+::: {.col-lg-3 .testimonial-image .text-center}
+![](people/people/images/default.svg){alt="Testimonial portrait"}
+:::
+
+:::
+:::
+
+:::
+:::
+:::
+
+
+<!-- ══════════════════════════════════════
+     explore cards
+════════════════════════════════════════ -->
+::: {.osc-section}
+::: {.container .explore-section}
+
+[What we offer]{.text-uppercase .text-success .small .fw-semibold .mb-2 .section-mark}
+
+## Explore the OSC {.mb-3 .text-muted}
+
+::: {.text-muted .mb-4 .desc}
+Whether you're a student, early-career researcher, or faculty — there's a place for you in the open science community.
+:::
+
+::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
+
+::: {.col}
+
+<div class="card explore-card h-100 border border-success-subtle rounded-3 shadow-sm">
+<div class="card-body d-flex flex-column p-4">
+<div class="bg-success bg-opacity-10 text-success rounded-3 d-inline-flex text-center align-items-center justify-content-center mb-3" style="width:50px;height:50px;">
+<i class="bi bi-people fs-5"></i>
+</div>
+<h5 class="text-black mb-2">Our Community</h5>
+<p class="text-muted flex-grow-1">Meet the researchers, advocates, and partners shaping open science at LMU and beyond.</p>
+<a href="people/members.qmd" class="text-decoration-none stretched-link fw-semibold text-success small">
+Meet the OSC Community →</a>
+</div>
+</div>
+
+:::
+
+::: {.col}
+<div class="card explore-card h-100 border border-success-subtle rounded-3 shadow-sm">
+<div class="card-body d-flex flex-column p-4">
+<div class="bg-success bg-opacity-10 text-success rounded-3 d-inline-flex text-center align-items-center justify-content-center mb-3" style="width:50px;height:50px;">
+<i class="bi bi-journal-bookmark fs-5"></i>
+</div>
+<h5 class="text-black mb-2">Training & Workshops</h5>
+<p class="text-muted flex-grow-1">Build hands-on skills in reproducible research through OSC workshops, summer schools, and tutorials.</p>
+<a href="training/index.qmd" class="text-decoration-none stretched-link fw-semibold text-success small">Explore Training →</a>
+</div>
+</div>
+
+:::
+
+::: {.col}
+<div class="card explore-card h-100 border border-success-subtle rounded-3 shadow-sm">
+<div class="card-body d-flex flex-column p-4">
+<div class="bg-success bg-opacity-10 text-success rounded-3 d-inline-flex text-center align-items-center justify-content-center mb-3" style="width:50px;height:50px;">
+<i class="bi bi-globe2 fs-5"></i>
+</div>
+<h5 class="text-black mb-2">Partners & Networks</h5>
+<p class="text-muted flex-grow-1">Discover our institutional collaborators and the international networks we're part of.</p>
+<a href="partners/institutional_members.qmd" class="text-decoration-none stretched-link fw-semibold text-success small">See OSC Partners →</a>
+</div>
+</div>
+
+:::
+:::
+
+:::
 :::
 
 
 <!-- ══════════════════════════════════════
      NEWS & EVENTS
 ════════════════════════════════════════ -->
-::: {.osc-section .highlights-section}
-::: {.osc-section-inner}
+::: {.osc-section}
+::: {.container}
 
-[Stay in the loop]{.text-uppercase .section-eyebrow .small .fw-semibold .mb-2}
+[Stay in the loop]{.text-uppercase .section-mark .small .fw-semibold .mb-2}
 
 ## Latest highlights {.mb-3 .section-title .text-muted}
 
@@ -478,81 +426,3 @@ Awards Won
 :::
 :::
 
-
-<!-- ══════════════════════════════════════
-     TESTIMONIAL
-════════════════════════════════════════ -->
-::: {.testimonial-container .text-align-center}
-::: {.testimonial-inner}
-
-> "Open Science at LMU has completely changed how I think about collaboration and research transparency. The summer school made it easy to adopt reproducible workflows from day one."
-
-**— PhD Student, Life Sciences**
-
-:::
-:::
-
-
-<!-- ══════════════════════════════════════
-     EXPLORE CARDS (optional)
-════════════════════════════════════════ -->
-::: {.osc-section}
-::: {.container .osc-section-inner .explore-section}
-
-[What we offer]{.text-uppercase .text-success .small .fw-semibold .mb-2 .section-eyebrow}
-
-## Explore the OSC {.mb-3 .text-muted}
-
-::: {.text-muted .mb-4 .desc}
-Whether you're a student, early-career researcher, or faculty — there's a place for you in the open science community.
-:::
-
-::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
-
-::: {.col}
-
-<div class="card explore-card h-100 border border-success-subtle rounded-3 shadow-sm">
-<div class="card-body d-flex flex-column p-4">
-<div class="bg-success bg-opacity-10 text-success rounded-3 d-inline-flex  text-center align-items-center justify-content-center mb-3" style="width:50px;height:50px;">
-<i class="bi bi-people fs-5"></i>
-</div>
-<h5 class="fw-normal text-black mb-2">Our Community</h5>
-<p class="text-muted flex-grow-1">Meet the researchers, advocates, and partners shaping open science at LMU and beyond.</p>
-<a href="people/members.qmd" class="text-decoration-none stretched-link fw-semibold text-success small">
-Meet the OSC Community →</a>
-</div>
-</div>
-
-:::
-
-::: {.col}
-<div class="card explore-card h-100 border border-success-subtle rounded-3 shadow-sm">
-<div class="card-body d-flex flex-column p-4">
-<div class="bg-success bg-opacity-10 text-success rounded-3 d-inline-flex text-center align-items-center justify-content-center mb-3" style="width:50px;height:50px;">
-<i class="bi bi-journal-bookmark fs-5"></i>
-</div>
-<h5 class="fw-normal text-black mb-2">Training & Workshops</h5>
-<p class="text-muted flex-grow-1">Build hands-on skills in reproducible research through OSC workshops, summer schools, and tutorials.</p>
-<a href="training/index.qmd" class="text-decoration-none stretched-link fw-semibold text-success small">Explore Training →</a>
-</div>
-</div>
-
-:::
-
-::: {.col}
-<div class="card explore-card h-100 border border-success-subtle rounded-3 shadow-sm">
-<div class="card-body d-flex flex-column p-4">
-<div class="bg-success bg-opacity-10 text-success rounded-3 d-inline-flex text-center align-items-center justify-content-center mb-3" style="width:50px;height:50px;">
-<i class="bi bi-globe2 fs-5"></i>
-</div>
-<h5 class="fw-normal text-black mb-2">Partners & Networks</h5>
-<p class="text-muted flex-grow-1">Discover our institutional collaborators and the international networks we're part of.</p>
-<a href="partners/institutional_members.qmd" class="text-decoration-none stretched-link fw-semibold text-success small">See OSC Partners →</a>
-</div>
-</div>
-
-:::
-:::
-
-:::
-:::

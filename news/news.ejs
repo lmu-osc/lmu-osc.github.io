@@ -3,7 +3,7 @@ const slides = (Array.isArray(items) && items.length) ? items.slice(0, 3) : [];
 %>
 
 <div class="carousel-styled-wrapper">
-<div id="newsCarousel" class="carousel slide carousel-fade carousel-dark p-4" data-bs-ride="carousel">
+<div id="newsCarousel" class="carousel slide carousel-fade carousel-dark p-3" data-bs-ride="carousel">
 <h3 class="news-carousel-heading">News</h3>
 <div class="carousel-inner">
 <% slides.forEach((item, index) => { %>
@@ -76,19 +76,18 @@ const slides = (Array.isArray(items) && items.length) ? items.slice(0, 3) : [];
       .carousel-styled-wrapper {
           padding: 1.25rem 1.25rem 1rem;
           border-radius: 10px;
-          border: 1px solid var(--green-100, #d4eddf);
-          background: var(--white, #fff);
+          border: 1px solid #d4eddf;
+          background: #fff;
       }
 
       /* ── Heading ── */
       .news-carousel-heading{
         font-size: 1.05rem;
         font-weight: 400;
-        color: var(--ink, #333);
+        color: #333;
         text-align: center;
         margin: 0 0 0.75rem;
         letter-spacing: 0.01em;
-        border-bottom: 1px solid rgb(203, 242, 203);
       }
       /* ── Prev / Next controls ── */
       .news-prev,
@@ -100,7 +99,7 @@ const slides = (Array.isArray(items) && items.length) ? items.slice(0, 3) : [];
         background: none;
         border: 1px solid #d4eddf14;
         border-radius: 50%;
-        color: var(--green-500, #00883bb5);
+        color: #00883bb5;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -111,9 +110,9 @@ const slides = (Array.isArray(items) && items.length) ? items.slice(0, 3) : [];
       .news-next { right: 0.5rem; }
       .news-prev:hover,
       .news-next:hover {
-        background: var(--green-500, #00883A);
+        background: #00883A;
         color: #fff;
-        border-color: var(--green-500, #00883A);
+        border-color: #00883A;
       }
       .news-prev i,
       .news-next i {
@@ -122,7 +121,7 @@ const slides = (Array.isArray(items) && items.length) ? items.slice(0, 3) : [];
       }
 
       .news-read-btn {
-        background: var(--green-main, #00883A);
+        background: #00883A;
         color: #fff !important;
         border: none;
         font-size: 0.80rem;
@@ -133,6 +132,6 @@ const slides = (Array.isArray(items) && items.length) ? items.slice(0, 3) : [];
         transition: background 0.2s;
       }
 
-      .news-read-btn:hover { background: var(--green-dark, #006b2d); }
+      .news-read-btn:hover { background: #006b2d; }
 
 </style>
