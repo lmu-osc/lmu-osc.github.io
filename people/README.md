@@ -139,3 +139,94 @@ When adding a new person, the usual workflow is:
 
 Finally, note again that `_metadata.yml` applies shared styling and Quarto defaults throughout `people/`, so individual profile or section files generally only need to specify options that are unique to that page.
 
+## Membership Details
+
+When creating or editing a new profile page, there are a few details to keep in mind regarding the `membership` entries depending on the type of entry:
+
+### Advisory Board
+
+These are (almost) always advisors external to the LMU.
+
+```yaml
+memberships:
+  - type: 'advisory board'
+    status: active
+    title: Title at their institution
+    affiliation: Name of the institution where they work
+```
+
+### Affiliates
+
+These are people who are, by definition, external to LMU. Set-up is nearly identical to the Advisory board, but with different keywords
+
+```yaml
+memberships:
+  - type: affiliate
+    status: active
+    role: Title at their institution
+    organization: Name of the institution where they work
+    start:
+    # end:
+```
+
+### Fellows
+
+These are PhD, MSc/MA, and BA students.
+
+```yaml
+memberships:
+  - type: fellow
+    status: active
+    position: Current enrollment (i.e. BA/BSc Student, MA/MSc Student, PhD Candidate)
+    faculty: The name of the faculty in which they are enrolled
+    start:
+    # end:
+```
+
+### LMU Individual
+
+These are members of the LMU community who hold a PhD(?)
+
+```yaml
+memberships:
+  - type: lmu-individual
+    status: active
+    position: Indicate their title such as Professor, Researcher, etc.
+    faculty: The name of their faculty or faculties
+    start:
+    # end:
+```
+
+### Management
+
+
+```yaml
+memberships:
+  - type: management
+    status: active
+    position: Their relevant title when it comes to management of the OSC e.g. "Managing Director of the OSC"
+    faculty: The name of their faculty **if** one is relevant
+```
+
+### Scientific Board
+
+```yaml
+memberships:
+  - type: scientific board
+    status: active
+    start: 2019
+    # end: 2021
+    notes: Notes that will appear when listed as alumni e.g. "**Speaker**, Statistics"
+```
+
+
+### Staff
+
+```yaml
+memberships:
+  - type: staff
+    status: active
+    position: Work title/position label
+    start: 2026
+    # end: 
+```
