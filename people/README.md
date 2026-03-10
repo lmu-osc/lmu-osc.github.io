@@ -141,23 +141,99 @@ Finally, note again that `_metadata.yml` applies shared styling and Quarto defau
 
 ## Membership Details
 
-When creating or editing a new profile page, there are a few details to keep in mind regarding the `membership` entries depending on the type of entry:
+The `memberships` field is the main data structure that determines where a person appears across the people pages. A single person can have multiple membership entries, for example if they are currently staff but were previously a fellow.
 
-### Advisory Board
+### Common Structure
 
-These are (almost) always advisors external to the LMU.
+Every membership entry should start with the same core fields:
 
 ```yaml
 memberships:
-  - type: 'advisory board'
+  - type: staff
+    status: active
+    start: 2026
+    # end: 2027
+```
+
+- `type` must match the exact membership label expected by the listing templates.
+- `status` is usually `active` or `alumni`.
+- `start` is recommended for all entries.
+- `end` should be added for former roles when the year is known.
+
+The currently supported membership `type` values are:
+
+- `staff`
+- `management`
+- `scientific board`
+- `advisory board`
+- `special advisor`
+- `fellow`
+- `lmu-individual`
+- `affiliate`
+
+### Internal LMU-Style Memberships
+
+Most internal OSC and LMU roles use the same basic shape: `position` plus `faculty`.
+
+```yaml
+memberships:
+  - type: staff
+    status: active
+    position: Work title or OSC role
+    faculty: Faculty or unit, if relevant
+    start: 2026
+    # end: 2027
+```
+
+This pattern is used for:
+
+- `staff`: use `position` for the staff role shown on the card or profile.
+- `management`: use `position` for the OSC management role, such as `Managing Director of the OSC`.
+- `fellow`: use `position` for the current academic stage, such as `B.Sc. Student`, `M.Sc. Student`, or `Ph.D. Candidate`.
+- `lmu-individual`: use `position` for the person's LMU role, such as `Professor`, `Researcher`, `Chair`, or `Coordinator`.
+- `special advisor`: use `position` and `faculty` if the person is rendered through the special advisors listing.
+
+Examples:
+
+```yaml
+memberships:
+  - type: fellow
+    status: active
+    position: Ph.D. Candidate
+    faculty: Psychology & Education
+    start: 2025
+```
+
+```yaml
+memberships:
+  - type: management
+    status: active
+    position: Managing Director of the OSC
+    faculty: Psychology & Education
+    start: 2024
+```
+
+### External Memberships
+
+External roles do not use `position` and `faculty` consistently. Instead, they use role-specific keys.
+
+#### Advisory Board
+
+These are usually external advisors. Listing templates for the advisory board expect `title` and `affiliation`.
+
+```yaml
+memberships:
+  - type: advisory board
     status: active
     title: Title at their institution
     affiliation: Name of the institution where they work
+    start: 2024
+    # end: 2027
 ```
 
-### Affiliates
+#### Affiliates
 
-These are people who are, by definition, external to LMU. Set-up is nearly identical to the Advisory board, but with different keywords
+Affiliates are external to LMU and use `role` plus `organization`.
 
 ```yaml
 memberships:
@@ -165,68 +241,46 @@ memberships:
     status: active
     role: Title at their institution
     organization: Name of the institution where they work
-    start:
-    # end:
+    start: 2025
+    # end: 2028
 ```
 
-### Fellows
-
-These are PhD, MSc/MA, and BA students.
-
-```yaml
-memberships:
-  - type: fellow
-    status: active
-    position: Current enrollment (i.e. BA/BSc Student, MA/MSc Student, PhD Candidate)
-    faculty: The name of the faculty in which they are enrolled
-    start:
-    # end:
-```
-
-### LMU Individual
-
-These are members of the LMU community who hold a PhD(?)
-
-```yaml
-memberships:
-  - type: lmu-individual
-    status: active
-    position: Indicate their title such as Professor, Researcher, etc.
-    faculty: The name of their faculty or faculties
-    start:
-    # end:
-```
-
-### Management
-
-
-```yaml
-memberships:
-  - type: management
-    status: active
-    position: Their relevant title when it comes to management of the OSC e.g. "Managing Director of the OSC"
-    faculty: The name of their faculty **if** one is relevant
-```
+Because the affiliate listing templates read `organization`, it is better to use that field directly rather than trying to reuse `faculty` or `affiliation`.
 
 ### Scientific Board
+
+Scientific board entries are a special case because active and alumni listings do not emphasize exactly the same fields.
+
+For active scientific board members, the templates can use `position` and `faculty` when available:
 
 ```yaml
 memberships:
   - type: scientific board
     status: active
-    start: 2019
-    # end: 2021
-    notes: Notes that will appear when listed as alumni e.g. "**Speaker**, Statistics"
+    position: Speaker
+    faculty: Psychology & Education
+    start: 2025
+    # end: 2027
 ```
 
-
-### Staff
+For alumni scientific board members, `notes` is especially useful because it is shown in the alumni listing alongside the board cycle:
 
 ```yaml
 memberships:
-  - type: staff
-    status: active
-    position: Work title/position label
-    start: 2026
-    # end: 
+  - type: scientific board
+    status: alumni
+    start: 2023
+    end: 2025
+    notes: Speaker, Statistics
 ```
+
+If you know them, include `start` and `end` years for scientific board entries. The alumni scientific board template groups former members by board cycle using those dates.
+
+### Practical Guidance
+
+When in doubt, use the field names that the relevant listing template already expects rather than inventing a new variant.
+
+- If the page is driven by an `active-*.ejs` template, check which membership fields that template reads.
+- If the person is external, verify whether the template expects `title` and `affiliation` or `role` and `organization`.
+- If the person belongs to more than one group, add multiple membership entries rather than trying to combine roles into one record.
+- If a person is not appearing where expected, confirm the `type` and `status` strings first.
