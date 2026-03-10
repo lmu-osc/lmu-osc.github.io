@@ -201,7 +201,7 @@ During the course of data collection and analyses, you created a README and data
 </div>
 <h4 class="card-title">FAIR Data Management</h4> 
 <p class="card-text">Manage data following FAIR principles. Covers READMEs, data dictionaries, file formats, and standards. (2h)</p>
-<a href="https://lmu-osc.github.io/data-documentation-validation-R/" class="stretched-link" target="_blank" rel="noopener"> </a>
+<a href="https://lmu-osc.github.io/FAIR-Data-Management/" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
 
 :::
@@ -371,7 +371,7 @@ Whichever you choose, ensure the repository provides a **DOI** (Digital Object I
 
 #### 4.1.4. Data Licenses
 
-A license tells others what they can do with your data. Without one, or equivalent statements, others cannot legally reuse your work, even if it is publicly available. Common open licenses for data are:
+A license tells others what they can do with your data. Licensing your data consists in adding a file called LICENSE.txt next to your data, that contains the appropriate legal text. Without one, or equivalent statements, others cannot legally reuse your work, even if it is publicly available. Common open licenses for data are:
 
 <br>
 
@@ -382,7 +382,9 @@ A license tells others what they can do with your data. Without one, or equivale
 - **CC BY-NC (Non-Commercial)** adds a restriction against commercial use. Consider whether this limitation actually serves your goals.
 
 <br>
+
 Learn more about open licenses for data and code in our [code publishing tutorial](https://lmu-osc.github.io/code-publishing/choose_license.html).
+
 <br>
 
 For restricted-access data, a **Data Use Agreement** specifies conditions beyond a standard license: approved purposes, security requirements, publication terms, and data destruction timelines.<!-- Reema - I think we might need a section just for DUA? also does this mean it's either  or? license when simple cases, DUA when complex and typically not open?-->
@@ -435,26 +437,182 @@ _in construction_
 ### Code Publishing {#sec-code-publishing}
 
 </summary>
-<!-- explain why to share code openly -->
 
-So far, your code repository for internal use is either on the secured [LRZ Gitlab](https://gitlab.lrz.de/) in case your data and/or code are sensitive, or on a [GitHub](https://github.com/) repository. Before the submission of a manuscript to a journal and/or upon the acceptance of a manuscript, there are new steps that need to be done to publish your code (i.e. archive its current version and get a DOI) on e.g. [Zenodo](https://zenodo.org/).
+Making code publicly available demonstrates the reproducibility of your results and enables others to understand, verify, and build upon your analytical methods.
 
-These steps require little time if you had worked reproducibly and completed all preparation prior to that point as was recommended in previous sections, i.e. preparation of a data dictionary, and simulated dataset generation
+So far, your code repository for internal use developed in [3. Analyze & Collaborate](03_analyze_and_collaborate.qmd){.mark} was either on the secured [LRZ Gitlab](https://gitlab.lrz.de/) (e.g. if your data and/or code are sensitive), or on a [GitHub](https://github.com/) repository. Before the submission of a manuscript to a journal and/or upon the acceptance of a manuscript, there are new steps that need to be done to publish your code (i.e. archive its current version and get a DOI) on e.g. [Zenodo](https://zenodo.org/).
+
+Most steps require little time if you had worked reproducibly and completed all preparation prior to that point as was recommended in previous sections, i.e. preparation of structured repository with readable scripts, and appropriate documentation such as a data dictionary and README (see [Analysis & Collaboration Checklist](03_analyze_and_collaborate.html#analysis-collaboration-checklist){.mark}).  
+
+However, if you work with sensitive data that cannot be anonymized and shared, you may still need to generate a simulated random dataset to allow for the published code to run (which you may have already done if you simulated data in order to prepare a preregistration, see [1.4. Study Design & Analysis Plan](01_plan_and_design.html#sec-study-design-analysis-plan)), or chose to create a synthetic dataset with the same properties as the original dataset to allow others to re-derive an approximation of the original results and conduct further exploratory analyses.
 
 
 ::: {.panel-tabset}
 
-#### 4.2.1. Preparing Your Code
+#### 4.2.1. Preparing Your Code Repository
 
-<!-- actually its about preparing your repo : readme for external users, clean history without anything sensitive, check checklist of 3. analyses and collaborate for code readability and repo dependencies -->
+During the course of data analyses, you created scripts and documentation such as README and data dictionary for yourself and collaborators. Before sharing publicly, review them from the perspective of someone who knows nothing about your project.
 
-#### 4.2.2. Simulated & Synthetic Data
+- **Expand your README** to include a description, involved data, computational requirements and dependencies (i.e. what software, packages, and their version, need to be installed to run the analyses), list of results. 
+- **Document your code** from an external perspective, using literate programming (e.g. Quarto) or comments.
+- **Double check that no sensitive information remains in your repository** (e.g. code comments, history of sensitive data)
 
-<!-- data to run: real/sim/synth -->
+<br>
+
+See our [code publishing tutorial](https://lmu-osc.github.io/code-publishing/) for more information on how to prepare your code repository for sharing.
+
+::: {.callout-important}
+If you work with **sensitive data**, you must not include the raw or processed data in the version-controlled repository to be shared. 
+
+<br>
+
+Instead, explicitly **exclude the data directory using the .gitignore file from the start**, **or create a new local repository that contains all project files except the data**.
+
+<br>
+
+Importantly, if data are removed from an existing repository, they may still remain accessible in the repository’s history, since previous states of the project can be restored. If sensitive data are accidentally committed and pushed, it is possible to [rewrite the repository history](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository) to remove them retrospectively. However, this process is complex and error-prone, so it is best avoided by ensuring that sensitive data are excluded from version control from the outset.
+:::
+
+::: {.container .my-4 }
+
+<h4 class="fs-5"><i class="bi bi-mortarboard"></i> LEARN MORE</h4>
+
+::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
+
+<!-- card -->
+::: {.col}
+
+<div class="card orc-card-tool h-100 position-relative">
+<span class="orc-card-tool-badge recommended">OSC Tutorial</span>
+<div class="orc-card-tool-icons mb-2">
+<div class="orc-card-tool-icon icon-1">
+<img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+</div>
+</div>
+<h4 class="card-title">Code Publishing</h4>
+<p class="card-text">Add all elements of a reproducible project to your repository.</p>
+<a href="https://lmu-osc.github.io/code-publishing/" class="stretched-link" target="_blank" rel="noopener"> </a>
+</div>
+
+:::
+
+:::
+
+:::
+
+#### 4.2.2. Real, Simulated, or Synthetic Data
+
+Sharing your code allows for other researchers to clearly see which analytic methods were applied to the data. Ideally, they should also be able to rerun the code and verify the reproducibility of the reported results.
+
+You can provide the data required to run the code in several ways:
+
+<br>
+
+- **The real (anonymized) data.** This can be done either (1) by including the dataset in the repository so that the code can access it locally and run directly, or (2) by configuring the code to retrieve the data from an external source, such as a database, API, or external data repository.
+- **Simulated random data.** This option mainly demonstrates that the code runs without errors. However, the original results cannot be verified and further analyses are not meaningful. See our [data simulation tutorial](https://lmu-osc.github.io/Introduction-Simulations-in-R/).
+- **Synthetic data that mimic key properties of the real data.** When privacy-sensitive data cannot be shared, synthetic datasets can provide a useful alternative. Compared with purely random simulated data, synthetic data can resemble the structure and characteristics of the original dataset, allowing other researchers to rerun the analyses and assess whether the main results can be reproduced. In addition, openly shared synthetic data enable exploratory analyses that may generate new hypotheses, and in some cases analyses conducted on synthetic data can approximate results obtained from the real data.
+
+
+::: {.container .my-4 }
+
+<h4 class="fs-5"><i class="bi bi-mortarboard"></i> LEARN MORE</h4>
+
+::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
+
+<!-- card  -->
+::: {.col}
+
+<div class="card orc-card-tool h-100 position-relative">
+<span class="orc-card-tool-badge recommended">OSC Tutorial</span>
+<div class="orc-card-tool-icons mb-2">
+<div class="orc-card-tool-icon icon-1">
+<img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+</div>
+</div>
+<h4 class="card-title">FAIR Data Management</h4> 
+<p class="card-text">Manage data following FAIR principles. Covers READMEs, data dictionaries, file formats, and standards. (2h)</p>
+<a href="https://lmu-osc.github.io/FAIR-Data-Management/" class="stretched-link" target="_blank" rel="noopener"> </a>
+</div>
+
+:::
+
+
+::: {.col}
+<div class="card orc-card-tool w-100 h-100 position-relative">
+<span class="orc-card-tool-badge recommended">OSC Tutorial</span>
+<div class="orc-card-tool-icons mb-2">
+<div class="orc-card-tool-icon icon-1">
+<img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+</div>
+</div>
+<h4 class="card-title">Data simulation in R</h4>
+<p class="card-text">Easy data simulations in R. (2h)</p>
+<a href="https://lmu-osc.github.io/Introduction-Simulations-in-R/" class="stretched-link" target="_blank" rel="noopener"></a>
+</div>
+
+:::
+
+::: {.col}
+
+<div class="card orc-card-tool h-100 position-relative">
+<span class="orc-card-tool-badge recommended">OSC Tutorial</span>
+<div class="orc-card-tool-icons mb-2">
+<div class="orc-card-tool-icon icon-1">
+<img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+</div>
+</div>
+<h4 class="card-title">Synthetic Data</h4>
+<p class="card-text">Synthetic data creation in R to balance utility and privacy when sharing data.</p>
+<a href="https://lmu-osc.github.io/synthetic-data-tutorial/" class="stretched-link" target="_blank" rel="noopener"> </a>
+</div>
+
+:::
+
+:::
+
+
+:::
+
 
 #### 4.2.3. Code Licenses
 
-<!-- licence (link to code-publishing tutorial) -->
+A license tells others what they can do with your code. Licensing your code consists in adding a file called LICENSE.txt next to your code, that contains the appropriate legal text. Without one, or equivalent statements, others cannot legally reuse your code, even if it is publicly available e.g. on [GitHub](https://github.com/). Common open licenses for code are:
+
+<br>
+
+- **CC0 (Public Domain)** places no restrictions. Anyone can use, modify, and redistribute without attribution. Recommended for factual code where maximum reuse is the goal.
+- **Apache 2.0** requires users to credit you. A good default when you want recognition while enabling broad reuse.
+
+<br>
+
+Learn more about open licenses for data and code in our [code publishing tutorial](https://lmu-osc.github.io/code-publishing/choose_license.html).
+
+::: {.container .my-4 }
+
+<h4 class="fs-5"><i class="bi bi-mortarboard"></i> LEARN MORE</h4>
+
+::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
+
+<!-- card -->
+::: {.col}
+
+<div class="card orc-card-tool h-100 position-relative">
+<span class="orc-card-tool-badge recommended">OSC Tutorial</span>
+<div class="orc-card-tool-icons mb-2">
+<div class="orc-card-tool-icon icon-1">
+<img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+</div>
+</div>
+<h4 class="card-title">Choose a License</h4>
+<p class="card-text">License decision flowchart for data and code.</p>
+<a href="https://lmu-osc.github.io/code-publishing/choose_license.html" class="stretched-link" target="_blank" rel="noopener"> </a>
+</div>
+
+:::
+
+:::
+
+:::
 
 #### 4.2.4. Archiving & DOIs
 
