@@ -1,57 +1,102 @@
-# LMU Open Science Center Home Page
+# LMU Open Science Center Website
 
 ## Overview
 
-This repository hosts the OSC's home webpage where content from workshops, other websites, and related information is organized/linked to.
+This repository contains the source for the LMU Open Science Center website.
 
-## Updating this Page
+The site is built with [Quarto](https://quarto.org/) as a multi-page website and combines hand-authored content, reusable templates, custom styling, and a small amount of automation for publishing and maintenance.
 
-A CI/CD pipeline for automatically rendering and redeploying the website has been set up using GitHub Actions. What does this mean? TL;DR only changes to `.qmd` files (and `_quarto.yml`) should be made, and users who wish to make changes will need to make a new branch, push that branch to this repo, and open a pull request for their changes.
+At a high level, this repository contains the public-facing OSC website content, the navigation and page structure across the main site sections, the reusable templates and styling that support them, and the automation used for publishing and lightweight repository checks.
 
-### Detailed Explanation
+## Tech Stack
 
-High-level: the GitHub Action is configured to automatically rebuild and redeploy the site whenever a push is made to the `main` branch of this repository. There is a branch protection rule preventing direct pushes to `main` so pull requests for changes are required. The GH Action rebuilds the website on the `gh-pages` branch of this repo, and the GitHub Pages configuration is currently set to deploy the website from this branch in the Settings -> Pages repo section.
+The site is built with [Quarto](https://quarto.org/) and uses R with `renv` for reproducible dependency management. Content is primarily authored in YAML, Markdown, and `.qmd` files, with styling handled through SCSS and CSS. Deployment and repository checks are automated through GitHub Actions. The main Quarto configuration lives in `_quarto.yml`, rendered output is written to `_site/`, and Quarto caching is stored in `_freeze/`.
 
-### Making Changes
+## Repository Structure
 
-If you don't already have the repository on your system, clone a copy.
+The most important top-level directories are:
 
+- `about/`: About pages and organizational information
+- `assets/`: shared images, JavaScript, Bootstrap, and Font Awesome assets
+- `events/`: event pages, templates, and helper scripts
+- `footer/`: footer markup and footer-specific styling
+- `news/`: news pages and metadata
+- `partners/`: partner and institutional member pages
+- `people/`: people pages, profile data, and listing templates
+- `training/`: training catalog, tutorials, and training-track content
+- `scripts/`: helper scripts used during site maintenance
+- `renv/`: project-local R environment management
+- `_site/`: rendered website output
+- `_freeze/`: Quarto execution cache
+
+The main entry point for the site is `index.qmd`.
+
+## Content Organization
+
+Most pages in the repository are written as `.qmd` files. Section folders typically contain a landing page such as `index.qmd`, individual content pages, and any templates, metadata files, stylesheets, or helper scripts that are specific to that section. Some areas have their own internal documentation or specialized workflows. For example, `people/` contains profile pages, listing templates, and its own README for the people-page data model, while `events/` and `news/` include helper scripts for creating, migrating, or transferring content. In general, source content should be edited in the section folders rather than in `_site/`.
+
+## Local Development
+
+### Prerequisites
+
+To work on this site locally, you should have Quarto, R, the project dependencies restored via `renv`, and `curl` available on your system. An IDE such as RStudio or VS Code is helpful, but not required.
+
+### Initial Setup
+
+Clone the repository, open the project, and restore the R dependencies.
+
+In R:
+
+```r
+renv::restore()
 ```
-git clone git@github.com:lmu-osc/lmu-osc.github.io.git
+
+This project uses a project-local `renv` library so builds are reproducible across machines and CI.
+
+### Previewing the Site
+
+To preview the site locally, run:
+
+```bash
+quarto preview
 ```
 
-If you cloned a while ago or your copy is otherwise likely to be behind the code on GitHub, you'll want to pull the changes to your computer. (This is equivalent to fetching the changes *and* merging them.)
+This starts a local preview server so you can inspect changes before committing them.
 
-```
-git pull
-```
+To render the full site without starting a preview server, run:
 
-Note that this will only integrate the changes for the branch you currently have checked out. If you want to pull changes for **all** of the branches you have locally and that have changes on GitHub, run `git pull --all` instead.
-
-At this point, your local copy should be synced up with the remote repository on GitHub. To make changes, you will now need to create a new branch and checkout that new branch so you are working on it.
-
-```
-git branch <new_branch>
-git checkout <new_branch>
+```bash
+quarto render
 ```
 
-Make any desired changes and commit them. You can use the template code below or use your GUI for this easily.
+Quarto writes the rendered output to `_site/`.
 
-```
-git add -A
-git commit -m "Your message here"
-```
+### Notes on Styling
 
-If this is a new branch, you will need to push the branch to GitHub.
+The Quarto configuration includes a pre-render step that downloads `lmu-osc-custom.scss` from the `lmu-osc/branding-resources` repository using `curl`. In practice, that means an internet connection is helpful when rendering from a clean checkout and that branding-related styling may be refreshed automatically during render. Additional local styles are defined in files such as `styles.css`, `custom-navbar.css`, and section-specific stylesheets.
 
-```
-git push -u origin <new_branch>
-```
+## Contribution Guidance
 
-Now, there should be a notification on the repo page that a new branch has been pushed, and it should also ask if you would like to open a pull request. Follow this link, write an informative title and description of the pull request, and open it for review. (Ideally, someone else will be able to review your changes, but self-approvals are also fine if needed.) Following review, there are generally 3 options for pull requests: squashing, merging, and rebasing. I've disabled rebasing in this repo, and one should squash commits. (Squashing basically collapses all of the commits on your working branch e.g. `<new_branch>` into a single commit. It's a method to keep the commit history relatively clean and clear.)
+When contributing to the site, edit source files such as `.qmd`, `.yml`, `.css`, and templates rather than manually editing `_site/`, since rendered output should not be treated as the source of truth. Preview the affected pages locally before opening a pull request, and keep section-specific changes inside the relevant folder when possible. If you are working on structured sections such as `people/`, check whether that directory already has its own README or templates before inventing a new pattern.
 
-After the PR has been completed, the GH Action will take effect and the website should be updated within 5-10 minutes. You may need to view the page in incognito mode or force refresh multiple times as your browser will likely have an older cached version of the page.
+## Deployment and Automation
 
-Finally, you'll want to update your own local copy of this repository by returning to the beginning of these instructions (i.e. run `git pull`).
+Publishing is handled through GitHub Actions.
+
+On pushes to `main`, the `publish.yml` workflow restores the R environment, sets up Quarto, restores the `_freeze/` cache, renders and publishes the site to GitHub Pages, and then mirrors the published `gh-pages` branch to an LRZ GitLab remote. The repository also includes a link checker, a profile naming checker for files under `people/people/`, and a small set of maintenance reminders and helper workflows under `.github/workflows/`.
+
+## Working with Generated Files
+
+Two directories are generated as part of the site workflow: `_site/`, which contains the rendered website output, and `_freeze/`, which contains Quarto's cache for executed or frozen content. These directories are useful for inspecting rendered results, but they are not the primary source of truth for site content.
+
+## Useful Starting Points
+
+If you are new to the repository, the best starting points are `_quarto.yml` for global site configuration, `index.qmd` for the home page, `people/README.md` for the people-page data model and templates, and the relevant section folder for the content you want to update.
+
+## Status
+
+This README is intended as a contributor-oriented overview of the repository. It can be expanded over time with more detailed guidance for recurring workflows such as creating new pages, adding events, or updating profile entries.
+
+
 
 
