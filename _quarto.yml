@@ -99,8 +99,8 @@ website:
                 - text: "Publishing Outputs"
                   href: training/publishing_outputs/index.qmd
                   contents: training/publishing_outputs/*
-            - section: "Open Research Cycle"
-              href: training/open_research_cycle.qmd
+            - section: "Research Cycle Handbook"
+              href: training/research-cycle-handbook.qmd
               contents:
                 - section: "Plan & Design"
                   href: training/open_research_cycle/01_plan_and_design.qmd
@@ -115,7 +115,6 @@ website:
                 - section: "Analyze & Collaborate"
                   href: training/open_research_cycle/03_analyze_and_collaborate.qmd
                   contents:
-                    - text: "Current"
                     - text: "Test"
                       href: training/open_research_cycle/03_analyze_and_collaborate_test.qmd
                 - section: "Preserve & Share"
