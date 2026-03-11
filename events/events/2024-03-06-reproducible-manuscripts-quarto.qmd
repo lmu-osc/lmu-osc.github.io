@@ -19,29 +19,27 @@ event:
     detail: ''
 links:
   registration: ''
-  materials: ''
+  materials: https://lmu-osc.github.io/introduction-to-Quarto/
   workshop_website: ''
 event_description: ''
 instructors:
-  - name: Dr. Florian Pargent
-    url: ''
-  - name: Florian Kohrt
-    url: ''
+- name: Dr. Florian Pargent
+  url: ''
+- name: Florian Kohrt
+  url: ''
 helpers:
-  - name: ''
+- name: ''
 contact:
   name: Malika Ihle
   email: malika.ihle@lmu.de
 organizers:
-  - name: Dr. Malika Ihle
-    url: ''
+- name: Dr. Malika Ihle
+  url: ''
 host:
-  - name: LMU Open Science Center
-    url: ''
-
+- name: LMU Open Science Center
+  url: ''
 template: templates/event-template.html
-filters:
-    - templates/process-event-yaml.lua
+filters: templates/process-event-yaml.lua
 ---
 
 <br>

@@ -19,37 +19,35 @@ event:
     detail: de/en
 links:
   registration: ''
-  materials: ''
+  materials: https://osf.io/tcwyb
   workshop_website: ''
 event_description: ''
 instructors:
-  - name: Prof. Dr. Felix Schönbrodt
-    url: ''
-  - name: Dr. Moritz Fischer
-    url: ''
+- name: Prof. Dr. Felix Schönbrodt
+  url: ''
+- name: Dr. Moritz Fischer
+  url: ''
 helpers:
-  - name: ''
+- name: ''
 contact:
   name: Malika Ihle
   email: malika.ihle@lmu.de
 organizers:
-  - name: Ramona Schödel
-    url: ''
-  - name: Larissa Sust
-    url: ''
-  - name: Lena Schiestel
-    url: ''
-  - name: Dr. Malika Ihle
-    url: ''
+- name: Ramona Schödel
+  url: ''
+- name: Larissa Sust
+  url: ''
+- name: Lena Schiestel
+  url: ''
+- name: Dr. Malika Ihle
+  url: ''
 host:
-  - name: Open Science Initiative in Psychology (OSIP)
-    url: ''
-  - name: LMU Open Science Center 
-    url: ''
-
+- name: Open Science Initiative in Psychology (OSIP)
+  url: ''
+- name: LMU Open Science Center 
+  url: ''
 template: templates/event-template.html
-filters:
-    - templates/process-event-yaml.lua
+filters: templates/process-event-yaml.lua
 ---
 
 <br>

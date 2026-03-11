@@ -1,19 +1,18 @@
 ---
 format: html
-title: 'Software Carpentry: Essential Computing Skill Training (Shell, Git, Python)' 
-date: 2026-02-17
-categories:
-  - Workshop
+title: 'Software Carpentry: Essential Computing Skill Training (Shell, Git, Python)'
+date: '2026-02-17'
+categories: Workshop
 event:
   start_date: '2026-03-11'
   end_date: '2026-03-12'
   description: |
     Software Carpentry is a global organization that provides training in essential computing skills for researchers. The workshop covers topics such as the command line (Shell), version control with Git, and programming with Python. It is designed to help researchers improve their computational skills and enhance their research productivity.
-  time: '9:00-17:00'
+  time: 9:00-17:00
   location:
-    name: LMU Biozentrum 
-    address: 'Room G00.031 Großhaderner Str. 4, 82152 Martinsried'
-    map_url: 'https://maps.app.goo.gl/jipjazeZf5FTwhNFA'
+    name: LMU Biozentrum
+    address: Room G00.031 Großhaderner Str. 4, 82152 Martinsried
+    map_url: https://maps.app.goo.gl/jipjazeZf5FTwhNFA
   format:
     type: In-person
     detail: ''
@@ -23,7 +22,7 @@ event:
     detail: en
 links:
   registration: https://www.pretix.osc.lmu.de/lmu-osc/swc-2026-03-11/
-  materials: 
+  materials: https://lmu-osc.github.io/2026-03-11-LMU-Martinsried/
   workshop_website: https://lmu-osc.github.io/2026-03-11-LMU-Martinsried/
 event_description: |
   In this Software Carpentry Workshop you will learn the **Unix Shell, version control in Git, and programming in Python**.
@@ -36,28 +35,27 @@ event_description: |
 
   The workshop is free and open to researchers, staff, and students of any discipline. It is funded by the Munich Center for Machine Learning and the LMU Open Science Center.
 instructors:
-  - name: Felix Henninger
-    url: ''
-  - name: Balthasar Schachtner
-    url: ''
-  - name: Jan Simson
-    url: ''
+- name: Felix Henninger
+  url: ''
+- name: Balthasar Schachtner
+  url: ''
+- name: Jan Simson
+  url: ''
 helpers:
-  - name: 'Edouard Bonneville'
-  - name: Pat Callahan
+- name: Edouard Bonneville
+- name: Pat Callahan
 contact:
   name: ''
-  email: 
+  email: ~
 organizers:
-  - name: 'Edouard Bonneville'
+- name: Edouard Bonneville
 presenters:
-  - name: ''
-    url: ''
+- name: ''
+  url: ''
 host:
-  - name: ''
-    url: ''
+- name: ''
+  url: ''
 template: templates/event-template.html
-filters:
-    - templates/process-event-yaml.lua
+filters: templates/process-event-yaml.lua
 ---
 

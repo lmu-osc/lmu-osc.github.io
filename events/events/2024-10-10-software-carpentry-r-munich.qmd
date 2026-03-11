@@ -19,35 +19,33 @@ event:
     detail: ''
 links:
   registration: ''
-  materials: ''
+  materials: https://lmu-osc.github.io/2024-10-10-LMU-Leo/
   workshop_website: ''
 event_description: ''
 instructors:
-  - name: Alberto Villagran Asiares
-    url: ''
-  - name: Alp Kaan Aksu
-    url: ''
-  - name: Renata Topinkova
-    url: ''
-  - name: Po-chun Tseng
-    url: ''
+- name: Alberto Villagran Asiares
+  url: ''
+- name: Alp Kaan Aksu
+  url: ''
+- name: Renata Topinkova
+  url: ''
+- name: Po-chun Tseng
+  url: ''
 helpers:
-  - name: ''
+- name: ''
 contact:
   name: Malika Ihle
   email: malika.ihle@lmu.de
 organizers:
-  - name: Dr. Malika Ihle
-    url: ''
+- name: Dr. Malika Ihle
+  url: ''
 host:
-  - name: LMU Open Science Center
-    url: ''
-  - name: Munich Center for Machine Learning (MCML)
-    url: ''
-
+- name: LMU Open Science Center
+  url: ''
+- name: Munich Center for Machine Learning (MCML)
+  url: ''
 template: templates/event-template.html
-filters:
-    - templates/process-event-yaml.lua
+filters: templates/process-event-yaml.lua
 ---
 
 <br>

@@ -20,36 +20,34 @@ event:
     detail: ''
 links:
   registration: ''
-  materials: ''
+  materials: http://doi.org/10.5281/zenodo.3245369
   workshop_website: ''
 event_description: ''
 instructors:
-  - name: ''
-    url: ''
+- name: ''
+  url: ''
 helpers:
-  - name: ''
+- name: ''
 contact:
   name: Felix Schönbrodt
   email: felix.schoenbrodt@psy.lmu.de
 organizers:
-  - name: Sebastian Wichert
-    url: ''
+- name: Sebastian Wichert
+  url: ''
 host:
-  - name: Collaborative Research Center Transregio "Rationality and Competition"
-    url: ''
-  - name: LMU-ifo Economics & Business Data Center
-    url: ''
-  - name: LMU Open Science Center
-    url: ''
-  - name: LMU Center for Advanced Studies research focus "Evidence Based Practice"
-    url: ''
+- name: Collaborative Research Center Transregio "Rationality and Competition"
+  url: ''
+- name: LMU-ifo Economics & Business Data Center
+  url: ''
+- name: LMU Open Science Center
+  url: ''
+- name: LMU Center for Advanced Studies research focus "Evidence Based Practice"
+  url: ''
 presenters:
-  - name: Dr. Lars Vilhuber
-    url: ''
-
+- name: Dr. Lars Vilhuber
+  url: ''
 template: templates/event-template.html
-filters:
-    - templates/process-event-yaml.lua
+filters: templates/process-event-yaml.lua
 ---
 
 <br>

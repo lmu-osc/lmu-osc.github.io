@@ -19,30 +19,28 @@ event:
     detail: ''
 links:
   registration: ''
-  materials: ''
+  materials: https://github.com/MalikaIhle/Introduction-RStudio-Git-GitHub
   workshop_website: ''
 event_description: ''
 instructors:
-  - name: Dr. Malika Ihle
-    url: ''
+- name: Dr. Malika Ihle
+  url: ''
 helpers:
-  - name: Dr. Luisa Jiménez-Soto
-    url: ''
-  - name: Pat Callahan
-    url: ''
+- name: Dr. Luisa Jiménez-Soto
+  url: ''
+- name: Pat Callahan
+  url: ''
 contact:
   name: Malika Ihle
   email: malika.ihle@lmu.de
 organizers:
-  - name: Dr. Malika Ihle
-    url: ''
+- name: Dr. Malika Ihle
+  url: ''
 host:
-  - name: LMU Open Science Center
-    url: ''
-
+- name: LMU Open Science Center
+  url: ''
 template: templates/event-template.html
-filters:
-    - templates/process-event-yaml.lua
+filters: templates/process-event-yaml.lua
 ---
 
 <br>

@@ -20,42 +20,40 @@ event:
     detail: ''
 links:
   registration: ''
-  materials: ''
+  materials: https://sites.google.com/view/epix-workshop/
   workshop_website: ''
 event_description: ''
 instructors:
-  - name: ''
-    url: ''
+- name: ''
+  url: ''
 helpers:
-  - name: ''
+- name: ''
 contact:
   name: Epix Workshop
   email: epix.workshop@stat.uni-muenchen.de.
 organizers:
-  - name: Patrick Schenk
-    url: ''
-  - name: Moritz Herrmann
-    url: ''
+- name: Patrick Schenk
+  url: ''
+- name: Moritz Herrmann
+  url: ''
 host:
-  - name: Open Science Initiative in Statistics (OSIS)
-    url: ''
-  - name: Munich Center for Machine Learning (MCML)
-    url: ''
+- name: Open Science Initiative in Statistics (OSIS)
+  url: ''
+- name: Munich Center for Machine Learning (MCML)
+  url: ''
 presenters:
-  - name: Sabina Leonelli
-    url: ''
-  - name: Uwe Saint-Mont
-    url: ''
-  - name: Walter Radermacher 
-    url: ''
-  - name: Rudolf Seising
-    url: ''
-  - name: Michael Schomaker 
-    url: ''
-
+- name: Sabina Leonelli
+  url: ''
+- name: Uwe Saint-Mont
+  url: ''
+- name: Walter Radermacher 
+  url: ''
+- name: Rudolf Seising
+  url: ''
+- name: Michael Schomaker 
+  url: ''
 template: templates/event-template.html
-filters:
-    - templates/process-event-yaml.lua
+filters: templates/process-event-yaml.lua
 ---
 
 <br>

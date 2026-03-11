@@ -1,5 +1,5 @@
 ---
-title: 'Meta Research and the QUEST for Responsible Research'
+title: Meta Research and the QUEST for Responsible Research
 categories: Lecture
 event:
   description: ''
@@ -19,30 +19,28 @@ event:
     detail: ''
 links:
   registration: ''
-  materials: ''
+  materials: https://osf.io/pef9u/
   workshop_website: ''
 event_description: ''
 instructors:
-  - name: ''
-    url: ''
+- name: ''
+  url: ''
 helpers:
-  - name: ''
+- name: ''
 contact:
   name: Malika Ihle
   email: malika.ihle@lmu.de
 organizers:
-  - name: Dr. Malika Ihle
-    url: ''
+- name: Dr. Malika Ihle
+  url: ''
 host:
-  - name: LMU Open Science Center 
-    url: ''
+- name: LMU Open Science Center 
+  url: ''
 presenters:
-  - name: PD Dr. Ulf Tölch
-    url: ''
-
+- name: PD Dr. Ulf Tölch
+  url: ''
 template: templates/event-template.html
-filters:
-    - templates/process-event-yaml.lua
+filters: templates/process-event-yaml.lua
 ---
 
 <br>

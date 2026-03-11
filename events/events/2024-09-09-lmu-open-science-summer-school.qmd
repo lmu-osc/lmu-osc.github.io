@@ -19,79 +19,77 @@ event:
     detail: ''
 links:
   registration: ''
-  materials: ''
+  materials: https://osf.io/pxgsc/overview
   workshop_website: ''
 event_description: ''
 instructors:
-  - name: Dr. Malika Ihle
-    url: ''
-  - name: Maximilian Mandl
-    url: ''
-  - name: Jean-Claude Passy
-    url: ''
-  - name: Laura Meier
-    url: ''
-  - name: Pat Callahan
-    url: ''
-  - name: Dr. Florian Pargent
-    url: ''
-  - name: Florian Kohrt
-    url: ''
-  - name: David Philip Morgan
-    url: ''
+- name: Dr. Malika Ihle
+  url: ''
+- name: Maximilian Mandl
+  url: ''
+- name: Jean-Claude Passy
+  url: ''
+- name: Laura Meier
+  url: ''
+- name: Pat Callahan
+  url: ''
+- name: Dr. Florian Pargent
+  url: ''
+- name: Florian Kohrt
+  url: ''
+- name: David Philip Morgan
+  url: ''
 helpers:
-  - name: Barbara Kovačić
-    url: ''
-  - name: Julian Lange
-    url: ''
-  - name: Maike Kleemeyer
-    url: ''
-  - name: David Walter
-    url: ''
-  - name: Valkyrie Felso
-    url: ''
-  - name: Diego Theuerkauf
-    url: ''
-  - name: Kathy Su
-    url: ''
+- name: Barbara Kovačić
+  url: ''
+- name: Julian Lange
+  url: ''
+- name: Maike Kleemeyer
+  url: ''
+- name: David Walter
+  url: ''
+- name: Valkyrie Felso
+  url: ''
+- name: Diego Theuerkauf
+  url: ''
+- name: Kathy Su
+  url: ''
 contact:
   name: Malika Ihle
   email: malika.ihle@lmu.de
 organizers:
-  - name: Larissa Leiminger
-    url: ''
-  - name: Dr. Malika Ihle
-    url: ''
+- name: Larissa Leiminger
+  url: ''
+- name: Dr. Malika Ihle
+  url: ''
 host:
-  - name: Max Planck Digital Library (MPDL)
-    url: ''
-  - name: LMU Open Science Center
-    url: ''
+- name: Max Planck Digital Library (MPDL)
+  url: ''
+- name: LMU Open Science Center
+  url: ''
 presenters:
-  - name: Prof. Dr. Sabina Leonelli
-    url: ''
-  - name: Dr. Malvika Sharan
-    url: ''
-  - name: Prof. Dr. Richard McElreath
-    url: ''
-  - name: Dr. Tim Errington
-    url: ''
-  - name: Ádám Dér
-    url: ''
-  - name: Jonas Hagenberg
-    url: ''
-  - name: Dr. Angela Holzer
-    url: ''
-  - name: Dr. Miriam Kip
-    url: ''
-  - name: Dr. Angela Holzer
-    url: ''
-  - name: Dr. Irene Haslinger
-    url: ''
-
+- name: Prof. Dr. Sabina Leonelli
+  url: ''
+- name: Dr. Malvika Sharan
+  url: ''
+- name: Prof. Dr. Richard McElreath
+  url: ''
+- name: Dr. Tim Errington
+  url: ''
+- name: Ádám Dér
+  url: ''
+- name: Jonas Hagenberg
+  url: ''
+- name: Dr. Angela Holzer
+  url: ''
+- name: Dr. Miriam Kip
+  url: ''
+- name: Dr. Angela Holzer
+  url: ''
+- name: Dr. Irene Haslinger
+  url: ''
 template: templates/event-template.html
-filters:
-    - templates/process-event-yaml.lua
+filters: templates/process-event-yaml.lua
 ---
 
 <br>
