@@ -41,7 +41,8 @@ host:
 - name: Open Science Initiative for Psychology (OSIP)
   url: ''
 template: templates/event-template.html
-filters: templates/process-event-yaml.lua
+filters:
+    - templates/process-event-yaml.lua
 ---
 
 <br>

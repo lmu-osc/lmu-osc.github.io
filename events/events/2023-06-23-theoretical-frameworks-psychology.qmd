@@ -54,7 +54,8 @@ presenters:
 - name: ReproducibiliTea Team
   url: ''
 template: templates/event-template.html
-filters: templates/process-event-yaml.lua
+filters:
+    - templates/process-event-yaml.lua
 ---
 
 <br>

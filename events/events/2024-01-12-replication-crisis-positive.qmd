@@ -50,7 +50,8 @@ presenters:
 - name: Gracia Prüm
   url: ''
 template: templates/event-template.html
-filters: templates/process-event-yaml.lua
+filters:
+    - templates/process-event-yaml.lua
 ---
 
 <br>

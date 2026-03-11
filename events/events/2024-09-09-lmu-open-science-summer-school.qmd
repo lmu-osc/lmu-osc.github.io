@@ -89,7 +89,8 @@ presenters:
 - name: Dr. Irene Haslinger
   url: ''
 template: templates/event-template.html
-filters: templates/process-event-yaml.lua
+filters:
+    - templates/process-event-yaml.lua
 ---
 
 <br>

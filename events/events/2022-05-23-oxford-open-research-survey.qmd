@@ -40,7 +40,8 @@ presenters:
 - name: Dr. Malika Ihle
   url: ''
 template: templates/event-template.html
-filters: templates/process-event-yaml.lua
+filters:
+    - templates/process-event-yaml.lua
 ---
 
 <br>

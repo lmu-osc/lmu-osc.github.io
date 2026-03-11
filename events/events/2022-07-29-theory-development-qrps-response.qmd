@@ -44,7 +44,8 @@ presenters:
 - name: Prof. Dr. Chris Donkin
   url: ''
 template: templates/event-template.html
-filters: templates/process-event-yaml.lua
+filters:
+    - templates/process-event-yaml.lua
 ---
 
 <br>

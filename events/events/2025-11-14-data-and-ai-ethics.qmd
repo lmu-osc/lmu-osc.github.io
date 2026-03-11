@@ -40,7 +40,8 @@ host:
 - name: Open Science Initiative in Statistics (OSIS)
   url: ''
 template: templates/event-template.html
-filters: templates/process-event-yaml.lua
+filters:
+    - templates/process-event-yaml.lua
 ---
 NA
 ---

@@ -25,7 +25,8 @@ organizers:
 host:
 - name: Open Science Initiative in Medicine
 template: templates/event-template.html
-filters: templates/process-event-yaml.lua
+filters:
+    - templates/process-event-yaml.lua
 links:
   materials: https://osf.io/kyvut/files/7afyn
 ---
