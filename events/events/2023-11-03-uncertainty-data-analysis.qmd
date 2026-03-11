@@ -19,40 +19,38 @@ event:
     detail: ''
 links:
   registration: ''
-  materials: ''
+  materials: https://doi.org/10.1177/09637214231168565
   workshop_website: ''
 event_description: ''
 instructors:
-  - name: ''
-    url: ''
+- name: ''
+  url: ''
 helpers:
-  - name: ''
+- name: ''
 contact:
   name: ReproducibiliTea
   email: reproducibilitea.munich@gmail.com
 organizers:
-  - name: Laura Goetz
-    url: ''
-  - name: Viktoria Wiegelmann
-    url: ''
-  - name: Gracia Prüm
-    url: ''
-  - name: Finia Loeb
-    url: ''
-  - name: Alp Kaan Aksu
-    url: ''
-  - name: Julian Lange
-    url: ''
+- name: Laura Goetz
+  url: ''
+- name: Viktoria Wiegelmann
+  url: ''
+- name: Gracia Prüm
+  url: ''
+- name: Finia Loeb
+  url: ''
+- name: Alp Kaan Aksu
+  url: ''
+- name: Julian Lange
+  url: ''
 host:
-  - name: ReproducibiliTea Team
-    url: ''
+- name: ReproducibiliTea Team
+  url: ''
 presenters:
-  - name: Viktoria Wiegelmann
-    url: ''
-
+- name: Viktoria Wiegelmann
+  url: ''
 template: templates/event-template.html
-filters:
-    - templates/process-event-yaml.lua
+filters: templates/process-event-yaml.lua
 ---
 
 <br>

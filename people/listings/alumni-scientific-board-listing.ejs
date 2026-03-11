@@ -1,0 +1,99 @@
+<%
+const isAlumniScientificBoardMembership = (membership) =>
+  membership &&
+  typeof membership === 'object' &&
+  membership.type === 'scientific board' &&
+  membership.status === 'alumni';
+
+const parseYear = (value) => {
+  if (value === null || value === undefined || value === '') return null;
+  const year = Number(value);
+  if (!Number.isFinite(year)) return null;
+  return Math.trunc(year);
+};
+
+const cycleFromMembership = (membership) => {
+  const start = parseYear(membership.start);
+  const end = parseYear(membership.end);
+
+  let cycleStart;
+  if (start !== null) {
+    cycleStart = (start % 2 === 0) ? start - 1 : start;
+  } else if (end !== null) {
+    cycleStart = (end % 2 === 0) ? end - 1 : end - 2;
+  } else {
+    return null;
+  }
+
+  const cycleEnd = cycleStart + 2;
+  return {
+    start: cycleStart,
+    end: cycleEnd,
+    label: `${cycleStart}-${cycleEnd}`
+  };
+};
+
+const toNoteString = (notes) => {
+  if (!notes) return '';
+  if (Array.isArray(notes)) return notes.join(' ');
+  return String(notes);
+};
+
+const entryDetail = (membership, cycle) => {
+  const notes = toNoteString(membership.notes).trim();
+  return notes;
+};
+
+const periodMap = new Map();
+
+for (const item of (items || [])) {
+  const memberships = Array.isArray(item.memberships) ? item.memberships : [];
+  const alumniMemberships = memberships.filter(isAlumniScientificBoardMembership);
+
+  for (const membership of alumniMemberships) {
+    const cycle = cycleFromMembership(membership);
+    if (!cycle) continue;
+
+    if (!periodMap.has(cycle.label)) {
+      periodMap.set(cycle.label, {
+        start: cycle.start,
+        end: cycle.end,
+        entries: []
+      });
+    }
+
+    periodMap.get(cycle.label).entries.push({
+      path: item.path,
+      name: item.name,
+      academic_title: item.academic_title || '',
+      surname: item.surname || item.name || '',
+      detail: entryDetail(membership, cycle)
+    });
+  }
+}
+
+const periods = Array.from(periodMap.values())
+  .sort((a, b) => b.start - a.start)
+  .map((period) => {
+    period.entries.sort((a, b) => String(a.surname).localeCompare(String(b.surname)));
+    return period;
+  });
+%>
+
+<% for (let i = 0; i < periods.length; i += 2) { %>
+<div class="columns">
+<% for (let j = i; j < Math.min(i + 2, periods.length); j++) { %>
+<% const period = periods[j]; %>
+<div class="column" style="width:50%;">
+<h3><%= period.start %>-<%= period.end %></h3>
+<ul>
+<% for (const entry of period.entries) { %>
+<li>
+<a href="<%= entry.path %>"><%= entry.academic_title %> <%= entry.name %></a><% if (entry.detail) { %> (<span class="notes"><%= entry.detail %></span>)<% } %>
+</li>
+<% } %>
+</ul>
+</div>
+<% } %>
+</div>
+<% } %>

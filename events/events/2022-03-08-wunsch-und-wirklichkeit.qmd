@@ -19,43 +19,40 @@ event:
     detail: ''
 links:
   registration: ''
-  materials: ''
+  materials: https://osf.io/wur7s/overview
   workshop_website: ''
 event_description: ''
 instructors:
-  - name: ''
-    url: ''
+- name: ''
+  url: ''
 helpers:
-  - name: ''
+- name: ''
 contact:
   name: Christina Nießl
   email: cniessl@ibe.med.uni-muenchen.de
 organizers:
-  - name: Christina Nießl
-    url: ''
+- name: Christina Nießl
+  url: ''
 host:
-  - name: Open Science Initiative in Medicine (OSIM)
-    url: ''
-  - name: Institute for Medical Information Processing, Biometry, and Epidemiology
-      (IBE)
-    url: ''
+- name: Open Science Initiative in Medicine (OSIM)
+  url: ''
+- name: Institute for Medical Information Processing, Biometry, and Epidemiology (IBE)
+  url: ''
 presenters:
-  - name: Ulrich Mansmann
-    url: ''
-  - name: Arne Rheinwald-Kolb
-    url: ''
-  - name: Andreas Spickhoff 
-    url: ''
-  - name: Fabian Prasser
-    url: ''
-  - name: Patrick Thoral
-    url: ''
-  - name: Jeroen Maas
-    url: ''
-
+- name: Ulrich Mansmann
+  url: ''
+- name: Arne Rheinwald-Kolb
+  url: ''
+- name: Andreas Spickhoff 
+  url: ''
+- name: Fabian Prasser
+  url: ''
+- name: Patrick Thoral
+  url: ''
+- name: Jeroen Maas
+  url: ''
 template: templates/event-template.html
-filters:
-    - templates/process-event-yaml.lua
+filters: templates/process-event-yaml.lua
 ---
 
 <br>

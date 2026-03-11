@@ -1,17 +1,26 @@
 ---
 title: "Members"
+include-in-header:
+  - text: |
+      <script src="/assets/javascript/clear_filter_button.js" defer></script>
+      <script src="/assets/javascript/change_categories_header.js" defer></script>
+
 listing:
   - id: lmu-members
     contents: 
       - people
     template: listings/active-lmu-members-listing.ejs
     sort: "surname asc"
+    categories: unnumbered
+    page-size: 999
 
   - id: affiliate-members
     contents: 
       - people
     template: listings/active-affiliate-listing.ejs
     sort: "surname asc"
+    categories: unnumbered
+    page-size: 999
 
   - id: former-members
     contents: 

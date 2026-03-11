@@ -1,0 +1,82 @@
+---
+# Member parameters
+title: Complete title (academic title + name) which appears at the top of the profile page
+academic_title: Complete academic title (e.g. Dr., Prof Dr., PhD, MSc.)
+name: Full name (first name + surname)
+first_name: First name (field currently unused, actually but good to have for future use)
+surname: Last name (field used for sorting people alphabetically by surname!)
+categories:
+  - Name of Faculty. This appears in the "Faculty" sidebar for Fellows and Members
+
+# There is no limit to the number of memberships a person can have. All memberships must have a type, status, and start year.
+# See documentation for more details on the different types of memberships and their status options.
+memberships:
+  - type: scientific board
+    status: alumni
+    start: 2017
+    end: 2019
+    notes: Psychology
+  - type: management
+    status: active
+    start: 2017
+    position: Managing Director of the OSC
+    faculty: Psychology & Education
+
+# if desired by the member, add a photo to the people/people/images folder and link to it here
+photo: "images/FIRSTNAME_LASTNAME.jpeg"
+email: Email address, ideally LMU official
+personal: |
+  For users that appear in a section that uses cards with preview descriptions (e.g. Management, Staff, Advisors), this is the short description that appears on the card. It should be a single paragraph of no more than 2-3 sentences.
+  
+  If this is not filled out, the system will automatically use the first 2-3 sentences of the mission statement as the preview description on the card.
+
+# certain keywords for the label are recognized and the output is sorted in this priority: LMU Profile, Professional Profile, Personal Website, and Professional Website. see documentation for details on these labels. other links appear in the order they are listed in the YAML file.
+links:
+  - label: "Personal Website"
+    url: "https://www.nicebread.de"
+  - label: "LMU Profile"
+    url: "https://www.lmu.de/psy/de/personen/kontaktseite/felix-schoenbrodt-21fe5d01.html"
+  - label: "Department of Psychology"
+    url: "https://www.psy.lmu.de/"
+
+# Social media links - variable number
+social_media:
+  Mastodon: "https://scicomm.xyz/@nicebread"
+  GitHub: "https://github.com/nicebread"
+  ORCID: "https://orcid.org/0000-0002-8282-3910"
+
+# Mission statement paragraphs - variable number
+mission_statement: |
+  This is the description that appears on someone's profile page. It can be as long as you like, and include multiple paragraphs.
+
+  Paragraphs are separated by a blank line. In general, Markdown formatting is supported, so you can include links, lists, etc. For example, you could link to your personal website like this: [My Personal Website](https://www.example.com). Or you could include a list of your research interests like this:
+
+    - Thing 1
+    - Thing 2
+    - Thing 3
+
+  Do note that the indenting of the text in the YAML file is important. The text should be indented with two spaces underneath the mission_statement key, and the pipe symbol (|) should be used to indicate that the text is a multi-line string. This allows for proper formatting when the text is rendered on the profile page. For example, the text here in this example is properly formatted and indented.
+
+# Research interests - variable number
+research_interests:
+  - "Open Science"
+  - "Psychology"
+  - "Psychological Methods"
+  - "Metascience"
+
+# Publications - variable number
+publications:
+  - year: 2025
+    title: Paper title
+    authors: List of authors, likely in the format "LastName Initials, LastName Initials, ..."
+    journal: Journal name
+    doi_url: DOI link to the publication
+
+
+# these must be included always.
+template: templates/people-template.html
+filters: 
+    - templates/people_filter.lua
+---
+
+<!-- additional content **can** be included here, and appears after the Mission Statement but before the Research Interests. Any content that Quarto can render can be included here, namely R/Python/Julia code chunks, Markdown formatting, more HTML, etc. Main reasons to use this though: code blocks, and to include files. -->

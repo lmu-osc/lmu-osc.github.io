@@ -19,31 +19,29 @@ event:
     detail: ''
 links:
   registration: ''
-  materials: ''
+  materials: https://psyarxiv.com/6btc3/
   workshop_website: ''
 event_description: ''
 instructors:
-  - name: ''
-    url: ''
+- name: ''
+  url: ''
 helpers:
-  - name: ''
+- name: ''
 contact:
   name: ReproducibiliTea
   email: reproducibilitea.munich@gmail.com
 organizers:
-  - name: Laura Goetz
-    url: ''
-  - name: Stephan Nuding
-    url: ''
-  - name: Leonhard Schramm
-    url: ''
+- name: Laura Goetz
+  url: ''
+- name: Stephan Nuding
+  url: ''
+- name: Leonhard Schramm
+  url: ''
 host:
-  - name: ReproducibiliTea Team
-    url: ''
-
+- name: ReproducibiliTea Team
+  url: ''
 template: templates/event-template.html
-filters:
-    - templates/process-event-yaml.lua
+filters: templates/process-event-yaml.lua
 ---
 
 <br>

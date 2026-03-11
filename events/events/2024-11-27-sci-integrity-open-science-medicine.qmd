@@ -1,7 +1,7 @@
 ---
-title: 'Workshop: Navigating the Landscape of Scientific Integrity: Insights into
-  Open Science, Replicability, data sharing and questionable research practices in
-  the field of medicine'
+title: 'Navigating the Landscape of Scientific Integrity: Insights into Open Science,
+  Replicability, data sharing and questionable research practices in the field of
+  medicine'
 categories: Symposium
 event:
   description: ''
@@ -21,44 +21,42 @@ event:
     detail: ''
 links:
   registration: ''
-  materials: ''
+  materials: https://osf.io/zqu46/
   workshop_website: ''
 event_description: ''
 instructors:
-  - name: ''
-    url: ''
+- name: ''
+  url: ''
 helpers:
-  - name: ''
+- name: ''
 contact:
   name: Anne-Laure Boulesteix
   email: boulesteix@ibe.med.uni-muenchen.de
 organizers:
-  - name: Prof. Dr. Anne-Laure Boulesteix
-    url: ''
-  - name: Dr. Sabine Hoffmann
-    url: ''
+- name: Prof. Dr. Anne-Laure Boulesteix
+  url: ''
+- name: Dr. Sabine Hoffmann
+  url: ''
 host:
-  - name: LMU Center for Advanced Studies (CAS)
-    url: ''
+- name: LMU Center for Advanced Studies (CAS)
+  url: ''
 presenters:
-  - name: Tim Morris
-    url: ''
-  - name: Laure Wynants
-    url: ''
-  - name: Balazs Aczel
-    url: ''
-  - name: Leonhard Held
-    url: ''
-  - name: Willi Sauerbrei
-    url: ''
-  - name: Sarah Friedrich
-    url: ''
-  - name: Ulrich Mansmann
-    url: ''
-
+- name: Tim Morris
+  url: ''
+- name: Laure Wynants
+  url: ''
+- name: Balazs Aczel
+  url: ''
+- name: Leonhard Held
+  url: ''
+- name: Willi Sauerbrei
+  url: ''
+- name: Sarah Friedrich
+  url: ''
+- name: Ulrich Mansmann
+  url: ''
 template: templates/event-template.html
-filters:
-    - templates/process-event-yaml.lua
+filters: templates/process-event-yaml.lua
 ---
 
 <br>

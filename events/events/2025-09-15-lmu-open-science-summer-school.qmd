@@ -1,6 +1,6 @@
 ---
 title: LMU Open Science Summer School 2025
-categories: Summer school
+categories: Summer School
 event:
   description: ''
   start_date: '2025-09-15'
@@ -19,54 +19,52 @@ event:
     detail: ''
 links:
   registration: ''
-  materials: ''
+  materials: https://osf.io/m7h4c/overview
   workshop_website: ''
 event_description: ''
 instructors:
-  - name: Florian Kohrt
-    url: ''
-  - name: Laura Meier
-    url: ''
-  - name: Reema Gupta
-    url: ''
-  - name: Pat Callahan
-    url: ''
-  - name: Dr. Sarah von Grebmer
-    url: ''
-  - name: Dr. Malika Ihle
-    url: ''
+- name: Florian Kohrt
+  url: ''
+- name: Laura Meier
+  url: ''
+- name: Reema Gupta
+  url: ''
+- name: Pat Callahan
+  url: ''
+- name: Dr. Sarah von Grebmer
+  url: ''
+- name: Dr. Malika Ihle
+  url: ''
 helpers:
-  - name: ''
+- name: ''
 contact:
   name: LMU Open Science Center
   email: osc@lmu.de
 organizers:
-  - name: Dr. Malika Ihle
-    url: ''
-  - name: Dr. Sarah von Grebmer zu Wolfsthurn
-    url: ''
+- name: Dr. Malika Ihle
+  url: ''
+- name: Dr. Sarah von Grebmer zu Wolfsthurn
+  url: ''
 host:
-  - name: LMU Open Science Center
-    url: ''
-  - name: LMU University Library (UB)
-    url: ''
+- name: LMU Open Science Center
+  url: ''
+- name: LMU University Library (UB)
+  url: ''
 presenters:
-  - name: Prof. Dr. Richard McElreath
-    url: ''
-  - name: Vera Karlbauer
-    url: ''
-  - name: Dr. Jonas Hagenberg
-    url: ''
-  - name: Dr. Tim Errington
-    url: ''
-  - name: Dr. Barbara Beege
-    url: ''
-  - name: Franziska Schrade
-    url: ''
-
+- name: Prof. Dr. Richard McElreath
+  url: ''
+- name: Vera Karlbauer
+  url: ''
+- name: Dr. Jonas Hagenberg
+  url: ''
+- name: Dr. Tim Errington
+  url: ''
+- name: Dr. Barbara Beege
+  url: ''
+- name: Franziska Schrade
+  url: ''
 template: templates/event-template.html
-filters:
-    - templates/process-event-yaml.lua
+filters: templates/process-event-yaml.lua
 ---
 
 <br>

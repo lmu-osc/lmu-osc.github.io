@@ -2,32 +2,28 @@
 title: 'OSIM Meetup: Data Sharing in Psychiatric Genetics'
 categories: OSIM Meetup
 event:
-  description: "Discussion on data sharing practices in psychiatric genetics research"
-  start_date: "14 Nov, 2025"
-  time: "14:00 CET"
+  description: Discussion on data sharing practices in psychiatric genetics research
+  start_date: 14 Nov, 2025
+  time: 14:00 CET
   format:
-    type: "Hybrid"
-    details: "In-person & Online"
+    type: Hybrid
+    details: In-person & Online
   language:
-    primary: "English"
-    primary-code: "en"
-
+    primary: English
+    primary-code: en
 instructors: []
-
 presenters:
-  - name: "Urs Heilbronner"
-    affiliation: "Institute of Psychiatric Phenomics and Genomics, LMU University Hospital"
-
-contact: 
-    name: "OSC team"
-    email: "osc@lmu.de"
-
+- name: Urs Heilbronner
+  affiliation: Institute of Psychiatric Phenomics and Genomics, LMU University Hospital
+contact:
+  name: OSC team
+  email: osc@lmu.de
 host:
-  - name: Open Science Initiative in Medicine
-  
+- name: Open Science Initiative in Medicine
 template: templates/event-template.html
-filters:
-    - templates/process-event-yaml.lua
+filters: templates/process-event-yaml.lua
+links:
+  materials: https://osf.io/w2bmt/overview
 ---
 
 
