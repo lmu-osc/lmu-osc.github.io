@@ -19,28 +19,26 @@ event:
     detail: ''
 links:
   registration: ''
-  materials: ''
+  materials: https://aaronpeikert.github.io/repro-workshop/
   workshop_website: ''
 event_description: ''
 instructors:
-  - name: Dr. Aaron Peikert
-    url: ''
+- name: Dr. Aaron Peikert
+  url: ''
 helpers:
-  - name: Felix Henninger
-    url: ''
+- name: Felix Henninger
+  url: ''
 contact:
   name: Malika Ihle
   email: malika.ihle@lmu.de
 organizers:
-  - name: Dr. Malika Ihle
-    url: ''
+- name: Dr. Malika Ihle
+  url: ''
 host:
-  - name: LMU Open Science Center 
-    url: ''
-
+- name: LMU Open Science Center 
+  url: ''
 template: templates/event-template.html
-filters:
-    - templates/process-event-yaml.lua
+filters: templates/process-event-yaml.lua
 ---
 
 <br>

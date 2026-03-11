@@ -19,30 +19,28 @@ event:
     detail: ''
 links:
   registration: ''
-  materials: ''
+  materials: https://safeguar.de/
   workshop_website: ''
 event_description: ''
 instructors:
-  - name: ''
-    url: ''
+- name: ''
+  url: ''
 helpers:
-  - name: ''
+- name: ''
 contact:
   name: Felix Schönbrodt
   email: felix.schoenbrodt@psy.lmu.de
 organizers:
-  - name: Prof. Dr. Felix Schönbrodt
-    url: ''
+- name: Prof. Dr. Felix Schönbrodt
+  url: ''
 host:
-  - name: LMU Open Science Center
-    url: ''
+- name: LMU Open Science Center
+  url: ''
 presenters:
-  - name: Henrik Schönemann
-    url: ''
-
+- name: Henrik Schönemann
+  url: ''
 template: templates/event-template.html
-filters:
-    - templates/process-event-yaml.lua
+filters: templates/process-event-yaml.lua
 ---
 
 <br>

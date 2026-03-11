@@ -1,38 +1,32 @@
 ---
 title: 'OSIM Meetup: Preprints'
 categories: OSIM Meetup
-
 event:
-  description: "Discussion on preprints and preprint publishing"
-  start_date: "14 Jun, 2024"
-  time: "14:00 CET"
+  description: Discussion on preprints and preprint publishing
+  start_date: 14 Jun, 2024
+  time: 14:00 CET
   format:
-    type: "Hybrid"
-    details: "In-person & Online"
+    type: Hybrid
+    details: In-person & Online
   language:
-    primary: "English"
-    primary-code: "en"
-
+    primary: English
+    primary-code: en
 instructors: []
-
 presenters:
-  - name: "Vanessa Gabriel"
-    affiliation: "LMU University Library"
-
-contact: 
-    name: "OSC team"
-    email: "osc@lmu.de"
-
+- name: Vanessa Gabriel
+  affiliation: LMU University Library
+contact:
+  name: OSC team
+  email: osc@lmu.de
 organizers:
-  - name: "Anne-Laure Boulesteix"
-  - name: "Christina Nießl"
-
+- name: Anne-Laure Boulesteix
+- name: Christina Nießl
 host:
-  - name: Open Science Initiative in Medicine
-  
+- name: Open Science Initiative in Medicine
 template: templates/event-template.html
-filters:
-    - templates/process-event-yaml.lua
+filters: templates/process-event-yaml.lua
+links:
+  materials: https://osf.io/kyvut/files/r8v39
 ---
 
 

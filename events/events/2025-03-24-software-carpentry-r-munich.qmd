@@ -19,34 +19,32 @@ event:
     detail: ''
 links:
   registration: ''
-  materials: ''
+  materials: https://lmu-osc.github.io/2025-03-24-LMU-Humanities/
   workshop_website: ''
 event_description: ''
 instructors:
-  - name: Laura Meier
-    url: ''
-  - name: Maximilian Frank
-    url: ''
-  - name: Florian Kohrt
-    url: ''
+- name: Laura Meier
+  url: ''
+- name: Maximilian Frank
+  url: ''
+- name: Florian Kohrt
+  url: ''
 helpers:
-  - name: Pat Callahan
-    url: ''
-  - name: Dr. Sarah von Grebmer zu Wolfsthurn
-    url: ''
+- name: Pat Callahan
+  url: ''
+- name: Dr. Sarah von Grebmer zu Wolfsthurn
+  url: ''
 contact:
   name: Malika Ihle
   email: malika.ihle@lmu.de
 organizers:
-  - name: Dr. Malika Ihle
-    url: ''
+- name: Dr. Malika Ihle
+  url: ''
 host:
-  - name: LMU Open Science Center
-    url: ''
-
+- name: LMU Open Science Center
+  url: ''
 template: templates/event-template.html
-filters:
-    - templates/process-event-yaml.lua
+filters: templates/process-event-yaml.lua
 ---
 
 <br>

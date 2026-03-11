@@ -19,37 +19,35 @@ event:
     detail: ''
 links:
   registration: ''
-  materials: ''
+  materials: https://osf.io/xpj38/
   workshop_website: ''
 event_description: ''
 instructors:
-  - name: Prof. Felix Schoenbrodt
-    url: ''
-  - name: Dr. Anton Marx
-    url: ''
+- name: Prof. Felix Schoenbrodt
+  url: ''
+- name: Dr. Anton Marx
+  url: ''
 helpers:
-  - name: ''
+- name: ''
 contact:
   name: Malika Ihle
   email: malika.ihle@lmu.de
 organizers:
-  - name: Ramona Schödel
-    url: ''
-  - name: Larissa Sust
-    url: ''
-  - name: Lena Schiestel
-    url: ''
-  - name: Dr. Malika Ihle
-    url: ''
+- name: Ramona Schödel
+  url: ''
+- name: Larissa Sust
+  url: ''
+- name: Lena Schiestel
+  url: ''
+- name: Dr. Malika Ihle
+  url: ''
 host:
-  - name: Open Science Initiative in Psychology (OSIP)
-    url: ''
-  - name: LMU Open Science Center 
-    url: ''
-
+- name: Open Science Initiative in Psychology (OSIP)
+  url: ''
+- name: LMU Open Science Center 
+  url: ''
 template: templates/event-template.html
-filters:
-    - templates/process-event-yaml.lua
+filters: templates/process-event-yaml.lua
 ---
 
 <br>

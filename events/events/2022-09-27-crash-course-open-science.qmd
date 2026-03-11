@@ -19,37 +19,35 @@ event:
     detail: ''
 links:
   registration: ''
-  materials: ''
+  materials: https://osf.io/bvf3c/
   workshop_website: ''
 event_description: ''
 instructors:
-  - name: Prof. Tim Parker
-    url: ''
-  - name: Dr. Dominique Roche
-    url: ''
-  - name: Dr. Malika Ihle
-    url: ''
-  - name: Dr. Rose O'Dea
-    url: ''
-  - name: Dr. Wolfgang Forstmeier
-    url: ''
+- name: Prof. Tim Parker
+  url: ''
+- name: Dr. Dominique Roche
+  url: ''
+- name: Dr. Malika Ihle
+  url: ''
+- name: Dr. Rose O'Dea
+  url: ''
+- name: Dr. Wolfgang Forstmeier
+  url: ''
 helpers:
-  - name: ''
+- name: ''
 contact:
   name: Malika Ihle
   email: malika.ihle@lmu.de
 organizers:
-  - name: Dr. Malika Ihle
-    url: ''
+- name: Dr. Malika Ihle
+  url: ''
 host:
-  - name: LMU Faculty of Biology
-    url: ''
-  - name: LMU Open Science Center
-    url: ''
-
+- name: LMU Faculty of Biology
+  url: ''
+- name: LMU Open Science Center
+  url: ''
 template: templates/event-template.html
-filters:
-    - templates/process-event-yaml.lua
+filters: templates/process-event-yaml.lua
 ---
 
 <br>

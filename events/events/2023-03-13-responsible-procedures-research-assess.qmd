@@ -20,40 +20,38 @@ event:
     detail: ''
 links:
   registration: ''
-  materials: ''
+  materials: https://osf.io/eqkjz/
   workshop_website: ''
 event_description: ''
 instructors:
-  - name: ''
-    url: ''
+- name: ''
+  url: ''
 helpers:
-  - name: ''
+- name: ''
 contact:
   name: Malika Ihle
   email: malika.ihle@lmu.de
 organizers:
-  - name: Dr. Malika Ihle
-    url: ''
-  - name: Dr. Heidi Seibold
-    url: ''
+- name: Dr. Malika Ihle
+  url: ''
+- name: Dr. Heidi Seibold
+  url: ''
 host:
-  - name: LMU Open Science Center
-    url: ''
+- name: LMU Open Science Center
+  url: ''
 presenters:
-  - name: Prof. Dr. Toma Susi
-    url: ''
-  - name: Dr.Tobias Grimm
-    url: ''
-  - name: Dr.Jess Rohmann 
-    url: ''
-  - name: Prof. Dr. Kristin Mitte
-    url: ''
-  - name: Prof. Dr. Felix Schönbrodt
-    url: ''
-
+- name: Prof. Dr. Toma Susi
+  url: ''
+- name: Dr.Tobias Grimm
+  url: ''
+- name: Dr.Jess Rohmann 
+  url: ''
+- name: Prof. Dr. Kristin Mitte
+  url: ''
+- name: Prof. Dr. Felix Schönbrodt
+  url: ''
 template: templates/event-template.html
-filters:
-    - templates/process-event-yaml.lua
+filters: templates/process-event-yaml.lua
 ---
 
 <br>

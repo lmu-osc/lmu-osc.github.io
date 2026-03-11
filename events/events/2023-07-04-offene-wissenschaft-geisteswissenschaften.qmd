@@ -21,46 +21,44 @@ event:
     detail: ''
 links:
   registration: ''
-  materials: ''
+  materials: https://osf.io/8dmz2/
   workshop_website: ''
 event_description: ''
 instructors:
-  - name: ''
-    url: ''
+- name: ''
+  url: ''
 helpers:
-  - name: ''
+- name: ''
 contact:
   name: Malika Ihle
   email: malika.ihle@lmu.de
 organizers:
-  - name: Dr. Martin Spenger
-    url: ''
-  - name: Dr. Malika Ihle
-    url: ''
+- name: Dr. Martin Spenger
+  url: ''
+- name: Dr. Malika Ihle
+  url: ''
 host:
-  - name: LMU Open Science Center
-    url: ''
-  - name: LMU University Library (UB)
-    url: ''
-  - name: IT-Gruppe Geisteswissenschaften (ITG)
-    url: ''
+- name: LMU Open Science Center
+  url: ''
+- name: LMU University Library (UB)
+  url: ''
+- name: IT-Gruppe Geisteswissenschaften (ITG)
+  url: ''
 presenters:
-  - name: Dr. Eckhart Arnold
-    url: ''
-  - name: Prof. Dr. Thomas Krefeld
-    url: ''
-  - name: Dr. Christiane Sibille
-    url: ''
-  - name: Prof. Dr. Stephan Hoppe
-    url: ''
-  - name: Prof. Dr. Ralf Ludwig
-    url: ''
-  - name: Dr. Stephan Lücke
-    url: ''
-
+- name: Dr. Eckhart Arnold
+  url: ''
+- name: Prof. Dr. Thomas Krefeld
+  url: ''
+- name: Dr. Christiane Sibille
+  url: ''
+- name: Prof. Dr. Stephan Hoppe
+  url: ''
+- name: Prof. Dr. Ralf Ludwig
+  url: ''
+- name: Dr. Stephan Lücke
+  url: ''
 template: templates/event-template.html
-filters:
-    - templates/process-event-yaml.lua
+filters: templates/process-event-yaml.lua
 ---
 
 <br>

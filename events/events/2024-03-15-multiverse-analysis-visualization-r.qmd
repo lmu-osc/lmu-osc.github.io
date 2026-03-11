@@ -20,29 +20,27 @@ event:
     detail: ''
 links:
   registration: ''
-  materials: ''
+  materials: https://osf.io/7qr4x/
   workshop_website: ''
 event_description: ''
 instructors:
-  - name: Prof. Dr. Andrea Hildebrandt
-    url: ''
-  - name: Dr. Cassie Short
-    url: ''
+- name: Prof. Dr. Andrea Hildebrandt
+  url: ''
+- name: Dr. Cassie Short
+  url: ''
 helpers:
-  - name: ''
+- name: ''
 contact:
   name: Malika Ihle
   email: malika.ihle@lmu.de
 organizers:
-  - name: Dr. Malika Ihle
-    url: ''
+- name: Dr. Malika Ihle
+  url: ''
 host:
-  - name: LMU Open Science Center
-    url: ''
-
+- name: LMU Open Science Center
+  url: ''
 template: templates/event-template.html
-filters:
-    - templates/process-event-yaml.lua
+filters: templates/process-event-yaml.lua
 ---
 
 <br>

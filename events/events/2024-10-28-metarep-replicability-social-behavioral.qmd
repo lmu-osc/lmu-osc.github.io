@@ -20,36 +20,34 @@ event:
     detail: ''
 links:
   registration: ''
-  materials: ''
+  materials: https://www.lmu.de/psy/de/forschung/meta-rep/
   workshop_website: ''
 event_description: ''
 instructors:
-  - name: ''
-    url: ''
+- name: ''
+  url: ''
 helpers:
-  - name: ''
+- name: ''
 contact:
   name: META REP
   email: meta-rep.coordination@psy.lmu.de
 organizers:
-  - name: Dr. Johannes Ziegler
-    url: ''
+- name: Dr. Johannes Ziegler
+  url: ''
 host:
-  - name: META-REP consortium
-    url: ''
-  - name: Deutsche Forschungsgemeinschaft (DFG)
-    url: ''
-  - name: German Reproducibility Network (GRN)
-    url: ''
+- name: META-REP consortium
+  url: ''
+- name: Deutsche Forschungsgemeinschaft (DFG)
+  url: ''
+- name: German Reproducibility Network (GRN)
+  url: ''
 presenters:
-  - name: Fiona Fidler
-    url: ''
-  - name: Daniël Lakens
-    url: ''
-
+- name: Fiona Fidler
+  url: ''
+- name: Daniël Lakens
+  url: ''
 template: templates/event-template.html
-filters:
-    - templates/process-event-yaml.lua
+filters: templates/process-event-yaml.lua
 ---
 
 <br>
