@@ -103,45 +103,26 @@ website:
               href: training/open_research_cycle.qmd
               contents:
                 - section: "Plan & Design"
+                  href: training/open_research_cycle/01_plan_and_design.qmd
                   contents:
-                    - text: "Current"
-                      href: training/open_research_cycle/01_plan_and_design.qmd
-                    - text: "MI"
-                      href: training/open_research_cycle/01_plan_and_design_MI.qmd
-                    - text: "Website"
-                      href: training/open_research_cycle/01_plan_and_design_website.qmd
-                    - text: "RL"
-                      href: training/open_research_cycle/01_plan_and_design_RL.qmd
+                    - text: "Test"
+                      href: training/open_research_cycle/01_plan_and_design_test.qmd
                 - section: "Collect & Manage"
+                  href: training/open_research_cycle/02_collect_and_manage.qmd
                   contents:
-                    - text: "Current"
-                      href: training/open_research_cycle/02_collect_and_manage.qmd
-                    - text: "MI"
-                      href: training/open_research_cycle/02_collect_and_manage_MI.qmd
-                    - text: "Website"
-                      href: training/open_research_cycle/02_collect_and_manage_website.qmd
-                    - text: "RL"
-                      href: training/open_research_cycle/02_collect_and_manage_RL.qmd
+                    - text: "Test"  
+                      href: training/open_research_cycle/02_collect_and_manage_test.qmd
                 - section: "Analyze & Collaborate"
+                  href: training/open_research_cycle/03_analyze_and_collaborate.qmd
                   contents:
                     - text: "Current"
-                      href: training/open_research_cycle/03_analyze_and_collaborate.qmd
-                    - text: "MI"
-                      href: training/open_research_cycle/03_analyze_and_collaborate_MI.qmd
-                    - text: "Website"
-                      href: training/open_research_cycle/03_analyze_and_collaborate_website.qmd
-                    - text: "RL"
-                      href: training/open_research_cycle/03_analyze_and_collaborate_RL.qmd
+                    - text: "Test"
+                      href: training/open_research_cycle/03_analyze_and_collaborate_test.qmd
                 - section: "Preserve & Share"
+                  href: training/open_research_cycle/04_preserve_and_share.qmd
                   contents:
-                    - text: "Current"
-                      href: training/open_research_cycle/04_preserve_and_share.qmd
-                    - text: "MI"
-                      href: training/open_research_cycle/04_preserve_and_share_MI.qmd
-                    - text: "Website"
-                      href: training/open_research_cycle/04_preserve_and_share_website.qmd
-                    - text: "RL"
-                      href: training/open_research_cycle/04_preserve_and_share_RL.qmd
+                    - text: "Test"
+                      href: training/open_research_cycle/04_preserve_and_share_test.qmd
             - text: "Train the Trainer"
               href: training/train_the_trainer.qmd
         
