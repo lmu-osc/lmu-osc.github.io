@@ -455,6 +455,16 @@ Example README:
 2. Run scripts in order: 01_preprocessing.R, 02_analysis.R
 ```
 
+<!--README files are essential for understanding how to use your code repository.
+
+**Required elements:**
+
+- **Project title and description**
+- **How to run the analysis**: Step-by-step instructions
+- **Software requirements**: Language versions, dependencies
+- **Input data**: Where to obtain or how to access
+- **Output**: What files are produced
+- **Project structure**: Explanation of directories -->
 
 ::: {.container .my-4 }
 
@@ -555,6 +565,15 @@ For users of R, Python, and Julia, **Quarto** has become the standard tool for c
 
 This is currently the state-of-the-art method to showcase the computational reproducibility of a study and we recommend to adopt this practice at a minimum. 
 It is also possible to create all other reporting outputs (such as manuscript, presentation and websites) reproducibly using Quarto, although this process might be time consuming to adopt when working with collaborators: <!-- might be controversial for us to say that - but even if everyone knows git in a team, editing a manuscript this way is just so inefficient time-wise compared to editing and commenting in google doc... I can't advice the team members and PI to learn how to do branches and pull requests to MS in any of the SwOP groups...-->
+
+<!-- **What to include in analysis notebooks:**
+
+1. Introduction: Research question
+2. Methods: Statistical procedures
+3. Data loading: Source and preprocessing
+4. Main analysis: Tests and models
+5. Results: Tables and figures
+6. Session info: Software versions -->
 
 <br>
 
@@ -765,6 +784,8 @@ Using the same Quarto environment, you can also:
 #### 3.2.2. Reporting guidelines
 
 <!-- this is chat GPT text, I'm sure it could be made more meaningful -->
+
+<!-- need to distinguish confirmatory from exploratory analyses, see prereg section and p-Hacking interactive demo  https://shinyapps.org/apps/p-hacker/ - See how easy it is to find “significant” results -->
 
 Transparent and complete reporting is essential for the interpretation, verification, and reuse of scientific results. To support this, many disciplines have developed reporting guidelines that specify the **minimum information that should be included when describing study design, data collection, analysis, and results**. These guidelines help ensure that studies can be critically evaluated, replicated, and included in evidence syntheses such as systematic reviews and meta-analyses.
 

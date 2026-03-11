@@ -51,6 +51,57 @@ A research output (e.g. data, code) without a license or statement granting your
 * **Review existing literature** on open source registries like [OpenAlex](https://openalex.org/) to come up with a well-founded research question,
 * **Use a reference manager** to keep track of your bibliography. [Zotero](https://www.zotero.org/) is an open source software that can be integrated within RStudio to write reproducible manuscripts seamlessly, formatting your bibliography in any format you want (see [3. Analyze & Collaborate](03_analyze_and_collaborate.qmd){.mark}).
 
+<!-- need to include cards and text for Open Alex PuMed -> Europe PMC and preprint servers -->
+
+<!-- Preprint Servers
+
+Share manuscripts before peer review to get early feedback and establish priority:
+
+::: {.orc-grid-tools}
+
+<div class="orc-card-tool">
+<div class="orc-card-tool-icon"><img src="https://cdn.simpleicons.org/osf" alt="OSF"></div>
+<h4>[OSF Preprints](https://osf.io/preprints/)</h4>
+<p>Multidisciplinary preprint service</p>
+<details class="orc-card-details">
+<summary>Read more</summary>
+<p>All disciplines welcome. Integration with OSF projects, flexible requirements.</p>
+</details>
+</div>
+
+<div class="orc-card-tool">
+<div class="orc-card-tool-icon"><i class="bi bi-file-earmark-medical"></i></div>
+<h4>[bioRxiv](https://www.biorxiv.org/)</h4>
+<p>Biological sciences preprints</p>
+<details class="orc-card-details">
+<summary>Read more</summary>
+<p>Free hosting, DOI assignment, rapid posting. Widely recognized in life sciences and neuroscience.</p>
+</details>
+</div>
+
+<div class="orc-card-tool">
+<div class="orc-card-tool-icon"><i class="bi bi-heart-pulse"></i></div>
+<h4>[medRxiv](https://www.medrxiv.org/)</h4>
+<p>Medical and health sciences preprints</p>
+<details class="orc-card-details">
+<summary>Read more</summary>
+<p>Medical research focus with health screening. DOI assignment, linked to bioRxiv infrastructure.</p>
+</details>
+</div>
+
+<div class="orc-card-tool">
+<div class="orc-card-tool-icon"><i class="bi bi-calculator"></i></div>
+<h4>[arXiv](https://arxiv.org/)</h4>
+<p>Physics, mathematics, computer science</p>
+<details class="orc-card-details">
+<summary>Read more</summary>
+<p>Established 1991. Moderation system, LaTeX support. Standard in quantitative fields.</p>
+</details>
+</div>
+
+::: -->
+
+
 
 <!-- 
 This section uses Bootstrap structure to create a responsive card layout.
@@ -508,7 +559,7 @@ Data collection and analyses conducted on animals and humans typically requires 
 
 For data protection guidance, contact the [LMU Data Protection Officer](https://www.lmu.de/en/about-lmu/structure/central-university-administration/legal-matters/data-protection/) or the [Research Data Management team of the University Library ](https://www.en.ub.uni-muenchen.de/writing/research_data/research-data-management/index.html).
 
-
+<!-- should be a team SOP with application language, consent form language ect -->
 
 
 ::: {.container .my-4}
@@ -598,6 +649,9 @@ A Data Management Plan (DMP) documents how you will handle research data through
 
 The specific questions vary by discipline, data type, and funder requirements. DMP tools like [RDMO](https://rdmo.ub.lmu.de/) guide you through the relevant questions with funder-specific templates. Your DMP is a living document: start with what you know, and refine the details as your project develops (see [2.2. Data Management](02_collect_and_manage.qmd#sec-data-management){.mark}, [3.1. Data Processing & Analysis](03_analyze_and_collaborate.html#sec-data-processing-analysis){.mark}, and [4.1. Data Sharing](04_preserve_and_share.html#sec-data-sharing){.mark}).
 
+<!-- should be a team SOP 
+Policies / SOPs support consistent DMP updates (lab-level) that define when a DMP must be updated, who is
+responsible, and how updates are reviewed/approved and communicated. -->
 
 ::: {.container .my-4}
 <h4 class="fs-5"><i class="bi bi-mortarboard"></i> LEARN MORE</h4>
@@ -712,7 +766,7 @@ The specific questions vary by discipline, data type, and funder requirements. D
 
 ##### Why should you plan your statistical plan prior to collecting data? 
 
-Humans are prone to cognitive biases such as **confirmation bias** (seeking information that supports existing beliefs) and **hindsight bias** (believing outcomes were predictable after the fact). In research, these biases can distort findings, especially when researchers make analytic decisions after seeing results. Although statistical testing typically accepts a 5% false positive rate, **"researcher degrees of freedom"** — choices about data collection, exclusions, transformations, sample size, covariates, etc. — can dramatically inflate false positives when decisions are made post hoc. Practices like increasing sample size until reaching statistical significance, selectively removing outliers, or trying multiple analytic strategies **increase the likelihood of false-positive results**.
+Humans are prone to cognitive biases such as **confirmation bias** (seeking information that supports existing beliefs) and **hindsight bias** (believing outcomes were predictable after the fact). In research, these biases can distort findings, especially when researchers make analytic decisions after seeing results. Although statistical testing typically accepts a 5% false positive rate, **"researcher degrees of freedom"** — choices about data collection, exclusions, transformations, sample size, covariates, etc. — can dramatically inflate false positives when decisions are made post hoc. Practices like increasing sample size until reaching statistical significance, selectively removing outliers, or trying multiple analytic strategies **increase the likelihood of false-positive results**. <!-- p-Hacking interactive demo  https://shinyapps.org/apps/p-hacker/ - See how easy it is to find “significant” results -->
 
 <br>
 

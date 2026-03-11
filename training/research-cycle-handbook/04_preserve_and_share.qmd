@@ -69,6 +69,14 @@ When deciding, ask yourself:
 - If you generate research outputs that could lead to **dual use** (e.g. that could also be applied for military or malicious purposes), please refer to the European Commission's policy ([Dual-Use Regulation 2021/821](https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L:2021:206:FULL&from=EN)) and get support from the [LMU Export Control service](mailto:Exportkontrolle@Verwaltung.Uni-Muenchen.DE).
 - If your research could lead to **patents or commercialization**, get the support of the [IP Management team](https://www.lmu.de/en/research/research-transfer/inventions-patents-and-exploitation-rights/). 
 
+
+<!-- Before releasing or licensing data/materials/software, a risk evaluation is performed to
+consider potential dual-use or misuse (appropriate to the field and data type).
+
+If patents may result from the work, rules about data sharing and publications are
+clarified with the patent/technology transfer office before public release (e.g., what must be delayed
+and what can be shared). -->
+
 <!-- TODO Reema: tool card for decision tree ; MI: not sure if feasible in enough details to be useful? but perhaps ;)--> 
 
 
@@ -421,7 +429,7 @@ For restricted-access data, a **Data Use Agreement** specifies conditions beyond
 
 _in construction_
 
-* Description of what it is, when it is needed, what the process to create one is
+* Description of what it is, when it is needed, what the process to create one is (SOP for handling access requests (who receives them, how decisions are made, what must be documented, and response timelines)
 * LMU contact for legal department 
 * Examples DUA
 
@@ -583,6 +591,12 @@ A license tells others what they can do with your code. Licensing your code cons
 - **CC0 (Public Domain)** places no restrictions. Anyone can use, modify, and redistribute without attribution. Recommended for factual code where maximum reuse is the goal.
 - **Apache 2.0** requires users to credit you. A good default when you want recognition while enabling broad reuse.
 
+<!-- MIT: Permissive, widely adopted
+Apache 2.0: Patent protection
+GPL-3.0: Derivatives must be open 
+
+https://creativecommons.org/chooser/ -->
+
 <br>
 
 Learn more about open licenses for data and code in our [code publishing tutorial](https://lmu-osc.github.io/code-publishing/choose_license.html).
@@ -616,11 +630,33 @@ Learn more about open licenses for data and code in our [code publishing tutoria
 
 #### 4.2.4. Archiving & DOIs
 
+<!--
+GitHub to Zenodo Workflow
+Standard workflow for citable code:
+
+Prepare Repository: Add README, license, example data
+Link to Zenodo: Enable integration via GitHub
+Create Release: Tag version (e.g., v1.0.0)
+Obtain DOI: Zenodo automatically archives and assigns DOI
+Cite: Include DOI in manuscript 
+
+Before publishing code:
+
+Remove API keys, passwords, credentials
+Remove personal or participant data
+Review entire git history
+Add simulated data if needed
+Document dependencies clearly-->
+
 <!-- zenodo workflow, DOI, link to https://lmu-osc.github.io/code-publishing/ -->
 
 :::
 
 </details>
+
+
+<!-- add a section on material publishing, e.g. protocols, survey text, OSF Zenodo, choose a licence https://creativecommons.org/chooser/ -->
+
 
 
 <details class="orc-details-panel">
@@ -774,7 +810,53 @@ flowchart TB
 
 To get support for [Open Access LMU](https://epub.ub.uni-muenchen.de/), the LMU Munich institutional repository for articles and books, contact the [University Library Open Access team](https://www.en.ub.uni-muenchen.de/writing/open-access-publishing/oa-auxiliary-page/index.html).
 
+<!-- Preprint Servers
 
+Share manuscripts before peer review to get early feedback and establish priority:
+
+::: {.orc-grid-tools}
+
+<div class="orc-card-tool">
+<div class="orc-card-tool-icon"><img src="https://cdn.simpleicons.org/osf" alt="OSF"></div>
+<h4>[OSF Preprints](https://osf.io/preprints/)</h4>
+<p>Multidisciplinary preprint service</p>
+<details class="orc-card-details">
+<summary>Read more</summary>
+<p>All disciplines welcome. Integration with OSF projects, flexible requirements.</p>
+</details>
+</div>
+
+<div class="orc-card-tool">
+<div class="orc-card-tool-icon"><i class="bi bi-file-earmark-medical"></i></div>
+<h4>[bioRxiv](https://www.biorxiv.org/)</h4>
+<p>Biological sciences preprints</p>
+<details class="orc-card-details">
+<summary>Read more</summary>
+<p>Free hosting, DOI assignment, rapid posting. Widely recognized in life sciences and neuroscience.</p>
+</details>
+</div>
+
+<div class="orc-card-tool">
+<div class="orc-card-tool-icon"><i class="bi bi-heart-pulse"></i></div>
+<h4>[medRxiv](https://www.medrxiv.org/)</h4>
+<p>Medical and health sciences preprints</p>
+<details class="orc-card-details">
+<summary>Read more</summary>
+<p>Medical research focus with health screening. DOI assignment, linked to bioRxiv infrastructure.</p>
+</details>
+</div>
+
+<div class="orc-card-tool">
+<div class="orc-card-tool-icon"><i class="bi bi-calculator"></i></div>
+<h4>[arXiv](https://arxiv.org/)</h4>
+<p>Physics, mathematics, computer science</p>
+<details class="orc-card-details">
+<summary>Read more</summary>
+<p>Established 1991. Moderation system, LaTeX support. Standard in quantitative fields.</p>
+</details>
+</div>
+
+::: -->
 
 ::: {.container .my-4 }
 
@@ -1034,3 +1116,21 @@ The LMU Open Science Center is one of the many child organizations of LMU Munich
 - [ ] Monitor citations and usage metrics
 
 :::
+
+
+<!--Before Depositing Data
+Essential steps:
+
+Complete anonymization of personal information
+README file with study description and methods
+Data dictionary with variable descriptions
+Appropriate license (CC0 or CC BY recommended)
+Ethics committee approval if required-->
+
+<!--Before publishing code:
+
+Remove API keys, passwords, credentials
+Remove personal or participant data
+Review entire git history
+Add simulated data if needed
+Document dependencies clearly -->

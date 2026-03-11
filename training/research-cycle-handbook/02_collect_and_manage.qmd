@@ -69,6 +69,14 @@ Your protocol should specify materials with identifying details (lot numbers, ve
 - **Publish your protocols.** A detailed, tested protocol is a contribution to your field. Publishing establishes priority, enables citation, and makes your methods reusable. Platforms like [protocols.io](https://www.protocols.io/) provide version control and DOI assignment.
 
 
+<!-- SOP lab wide on data acquisition 
++
+add 2 lectures 
+Report Detailed Methods & Protocols (30 min) - ReproducibiliTeach lecture
+Write Reusable Protocols (30 min) - ReproducibiliTeach lecture
+-->
+
+
 ::: {.container .my-4 }
 
 <h4 class="fs-5 mt-3"><i class="bi bi-tools"></i> TOOLS & RESOURCES</h4>
@@ -717,7 +725,9 @@ Participants have the right to understand what they are agreeing to. Your consen
 
 - **Store consent forms separately from data.** The consent form links a name to participation. Keeping it with your data undermines any pseudonymization you apply.
 
-<!-- @Felix: can we add example consent form as resources or other resources e.g. https://www.ninds.nih.gov/sites/default/files/migrate-documents/sample_data_sharing_consent_language_rz_corrected_508c.pdf? https://ukdataservice.ac.uk/learning-hub/research-data-management/ethical-issues/consent-for-data-sharing/ ?-->
+<!-- @Felix: can we add example consent form as resources or other resources on how to prepare such language ?-->
+
+<!-- Many labs maintain a centralized log of all ethics approvals, consent forms, and compliance certifications for easy reference. -->
 
 
 #### 2.3.2. Anonymization
@@ -810,6 +820,24 @@ For data protection guidance, contact the [LMU Data Protection Officer](https://
 ### Quality Control {#sec-quality-control}
 
 </summary>
+
+<!-- Quality control identifies errors and issues before analysis.
+
+**Common QC checks:**
+
+1. **Completeness**: Check for missing data
+2. **Range checks**: Verify values within expected ranges
+3. **Consistency**: Check logical relationships
+4. **Duplicates**: Identify duplicate records
+5. **Format**: Ensure consistent data types
+
+**Document QC decisions:**
+
+- Procedures and criteria
+- Cases flagged or excluded
+- Reasons for exclusions
+- Date and reviewer -->
+
 
 Quality control catches problems before they propagate into your analysis. The practices here ensure your data is trustworthy and your exclusions are defensible.
 
