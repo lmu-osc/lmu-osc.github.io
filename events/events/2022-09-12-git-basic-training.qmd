@@ -1,49 +1,46 @@
 ---
-title: "One step towards Reproducible Science: Git basic training"
-categories: 'Workshop'
-
-# Event categories
+title: 'One Step Towards Reproducible Science: Git Basic Training'
+categories: Workshop
 event:
-  description: ""
-  start_date: "September 12, 2022"
-  end_date: "September 12, 2022"
-  time: "9:00-12:00"
+  description: ''
+  start_date: '2022-09-12'
+  end_date: ''
+  time: ''
   location:
-    name: "Lecture Hall 2 Hörsaaltrakt in Klinikum Großhadern"
-    address: ""
-    map_url: ""
+    name: Lecture Hall 2 Hörsaaltrakt in Klinikum Großhadern
+    address: ''
+    map_url: ''
   format:
     type: In-Person
-    detail: ""
+    detail: ''
   language:
-    primary: "English/German"
-    primary-code: "en"
-    detail: ""
+    primary: English/German
+    primary-code: en
+    detail: ''
 links:
-  registration: ""
-  materials: ""
-  workshop_website: ""
-
-event_description:
-  - ""
-
+  registration: ''
+  materials: ''
+  workshop_website: ''
+event_description: ''
 instructors:
-  - name: ""
-    url: ""
-
+  - name: PD Dr. Luisa Jimenez-Soto
+    url: ''
 helpers:
-  - name: ""
-
+  - name: ''
 contact:
-  name: ""
-  email: ""
-
+  name: Christina Nießl
+  email: cniessl@ibe.med.uni-muenchen.de
 organizers:
-  name: ""
-
-
+  - name: Christina Nießl
+    url: ''
 host:
-  - name: "LMU Open Science Center"
+  - name: Open Science Initiative in Medicine (OSIM)
+    url: ''
+  - name: '"Institute for Medical Information Processing'
+    url: Biometry
+  - name: and Epidemiology (IBE)"
+    url: ''
+
 template: templates/event-template.html
 filters:
     - templates/process-event-yaml.lua
