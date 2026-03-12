@@ -1,0 +1,704 @@
+---
+title: "Analyze & Collaborate"
+description: "Create reproducible analyses, document workflows, collaborate effectively, and ensure computational reproducibility"
+phase_order: 3
+sidebar: open-research-cycle
+page-layout: full
+css: orc-style-test.css
+---
+
+::: {.orc-hero}
+
+<div class="orc-hero-bg-icon"><i class="bi bi-graph-up"></i></div>
+
+## Build Reproducible Analysis Workflows
+
+Analysis and collaboration transform data into knowledge—but only if your work can be understood, verified, and built upon. This phase covers practices for creating transparent, reproducible analyses and collaborating effectively with your research team.
+
+**What you'll find here:** Approaches to computational reproducibility, tools for literate programming, strategies for code documentation, and platforms for collaborative workflows.
+
+::: {.orc-button-group}
+<a href="#" class="btn btn-light btn-lg"><i class="bi bi-download"></i> Download Analysis Checklist</a>
+<a href="#" class="btn btn-outline-light btn-lg"><i class="bi bi-book"></i> View Code Review Guide</a>
+:::
+:::
+
+---
+
+::: {.callout-note appearance="simple" icon="mortarboard"}
+## Learn More: Reproducible Analyses
+
+- [Introduction to R](https://lmu-osc.github.io/introduction-to-R/) (3h) - Statistical programming fundamentals
+- [Version Control with Git](https://lmu-osc.github.io/Introduction-RStudio-Git-GitHub/) (1.5h) - Git within RStudio
+- [Collaborative GitHub](https://lmu-osc.github.io/Collaborative-RStudio-GitHub/) (1h) - Team workflows
+- [Writing Readable Code](https://osf.io/sbncz/files/osfstorage) (45 min) - Clean code practices
+- [Introduction to Quarto](https://lmu-osc.github.io/introduction-to-Quarto/) (2h) - Literate programming
+- [R Package Management with renv](https://lmu-osc.github.io/introduction-to-renv/) (1h) - Manage dependencies
+- [Git Branching and Merging](https://www.youtube.com/watch?v=Q1kHG842HoI) (1h) - Advanced Git workflows *(optional)*
+:::
+
+---
+
+## <i class="bi bi-cpu"></i> Core Analysis Activities
+
+Reproducible analysis requires attention to multiple aspects of your workflow.
+
+::: {.orc-grid-feature}
+
+::: {.orc-card-feature}
+### <i class="bi bi-code-square"></i> Computational Workflows
+
+Creating traceable analyses:
+
+- Scripted workflows (not point-and-click)
+- Automated pipelines
+- Environment management
+- Dependency tracking
+:::
+
+::: {.orc-card-feature}
+### <i class="bi bi-file-earmark-code"></i> Code Documentation
+
+Making code understandable:
+
+- Inline comments explaining decisions
+- Function documentation
+- Workflow documentation (README)
+- Analysis narratives
+:::
+
+::: {.orc-card-feature}
+### <i class="bi bi-people-fill"></i> Collaboration
+
+Working effectively with teams:
+
+- Shared code repositories
+- Code review processes
+- Collaborative writing platforms
+- Communication tools
+:::
+
+::: {.orc-card-feature}
+### <i class="bi bi-check2-circle"></i> Quality Assurance
+
+Ensuring analysis quality:
+
+- Code testing and validation
+- Peer code review
+- Reproducibility checks
+- Statistical consulting
+:::
+
+:::
+
+---
+
+## <i class="bi bi-diagram-2"></i> Reproducible Analysis Frameworks
+
+Different research contexts require different reproducibility approaches.
+
+::: {.panel-tabset}
+
+### Computational Reproducibility
+
+Computational reproducibility ensures others can rerun your analysis and obtain the same results.
+
+**Core principles:**
+
+<div class="orc-grid-tools">
+
+<div class="orc-card">
+<strong><i class="bi bi-code-slash"></i> Scripted Workflows</strong>
+
+<ul>
+<li>Avoid manual data manipulation</li>
+<li>Use scripts instead of point-and-click</li>
+<li>Document all analysis steps</li>
+</ul>
+</div>
+
+<div class="orc-card">
+<strong><i class="bi bi-gear"></i> Environment Control</strong>
+
+<ul>
+<li>Track software versions</li>
+<li>Manage package dependencies</li>
+<li>Use containers when appropriate</li>
+</ul>
+</div>
+
+<div class="orc-card">
+<strong><i class="bi bi-folder2-open"></i> Organized Structure</strong>
+
+<ul>
+<li>Consistent project organization</li>
+<li>Relative (not absolute) paths</li>
+<li>Clear file naming</li>
+</ul>
+</div>
+
+<div class="orc-card">
+<strong><i class="bi bi-arrow-clockwise"></i> Random Seeds</strong>
+
+<ul>
+<li>Set seeds for random processes</li>
+<li>Document stochastic procedures</li>
+<li>Enable exact replication</li>
+</ul>
+</div>
+
+</div>
+
+### Code Documentation
+
+<details class="orc-details-panel">
+<summary><i class="bi bi-chat-left-text"></i> Inline Comments</summary>
+
+Comments explain *why* you made decisions, not just *what* the code does.
+
+**What to comment:**
+
+- Rationale for methodological choices
+- Explanation of complex algorithms
+- Context for non-obvious code
+- Known limitations or workarounds
+- Citations to methods or papers
+
+**What not to comment:**
+
+- Obvious code
+- Outdated information
+- Sensitive information
+
+</details>
+
+<details class="orc-details-panel">
+<summary><i class="bi bi-journal-code"></i> README Files</summary>
+
+README files are essential for understanding how to use your code repository.
+
+**Required elements:**
+
+- **Project title and description**
+- **How to run the analysis**: Step-by-step instructions
+- **Software requirements**: Language versions, dependencies
+- **Input data**: Where to obtain or how to access
+- **Output**: What files are produced
+- **Project structure**: Explanation of directories
+
+**Example:**
+```markdown
+# Analysis of Treatment Effects
+
+## Requirements
+- R version 4.3+
+- Packages listed in renv.lock
+
+## Running the Analysis
+1. Install dependencies: `renv::restore()`
+2. Run scripts in order: 01_preprocessing.R, 02_analysis.R
+```
+
+</details>
+
+### Literate Programming
+
+Literate programming combines code, results, and narrative text in a single document.
+
+::: {.callout-note appearance="simple" icon="mortarboard"}
+## Learn More: Literate Programming
+
+[Introduction to Quarto](https://lmu-osc.github.io/introduction-to-Quarto/) (2.5h) - Create reproducible documents combining code, results, and prose.
+:::
+
+**Common tools:**
+
+<div class="orc-grid-2col">
+
+<div>
+
+**Computational notebooks:**
+
+- Jupyter Notebooks (Python, R, Julia)
+- R Markdown / Quarto
+- Observable (JavaScript)
+</div>
+
+<div>
+
+**Benefits:**
+
+- Results auto-update with code changes
+- Combine analysis and reporting
+- Output to multiple formats
+- Facilitate reproducibility
+</div>
+
+</div>
+
+**What to include in analysis notebooks:**
+
+1. Introduction: Research question
+2. Methods: Statistical procedures
+3. Data loading: Source and preprocessing
+4. Main analysis: Tests and models
+5. Results: Tables and figures
+6. Session info: Software versions
+
+### Version Control & Collaboration
+
+<details class="orc-details-panel">
+<summary><i class="bi bi-git"></i> Git Best Practices</summary>
+
+Version control is essential for tracking changes to analysis code.
+
+::: {.callout-note appearance="simple" icon="mortarboard"}
+## Learn More: Version Control
+
+- [Version Control with Git](https://lmu-osc.github.io/Introduction-RStudio-Git-GitHub/) (2h)
+- [Collaborative GitHub Workflows](https://lmu-osc.github.io/Collaborative-RStudio-GitHub/) (1h)
+:::
+
+**Key practices:**
+
+- Commit frequently with logical changesets
+- Write meaningful commit messages
+- Never commit large data files
+- Never commit sensitive information
+- Use branches for experimental analyses
+- Tag releases for publications
+
+**Good commit message:**
+```
+Add power analysis for sample size justification
+
+- Implemented simulation-based power calculation
+- Tested effect sizes (d = 0.3, 0.5, 0.8)
+```
+
+</details>
+
+<details class="orc-details-panel">
+<summary><i class="bi bi-people"></i> Collaboration & Review</summary>
+
+**Collaboration workflows:**
+
+- **Centralized workflow**: Simple, one main branch
+- **Feature branch workflow**: Each analysis on separate branch
+- **Pull request review**: Review before merging
+
+**Code review checklist:**
+
+- [ ] Code runs without errors
+- [ ] Methods match analysis plan
+- [ ] Results reproducible on different machine
+- [ ] Code well-organized and commented
+- [ ] No sensitive data included
+
+**What reviewers check:**
+
+1. Functionality and correctness
+2. Reproducibility
+3. Readability and organization
+4. Best practices
+
+</details>
+
+### Statistical Analysis & Quality
+
+<details class="orc-details-panel">
+<summary><i class="bi bi-calculator"></i> Analysis Planning</summary>
+
+Plan analyses before looking at outcome data to avoid biases.
+
+**Analysis plans should specify:**
+
+- Statistical tests to be used
+- Variables and transformations
+- Handling of missing data
+- Outlier criteria and treatment
+- Multiple comparisons corrections
+
+**Exploratory vs. confirmatory:**
+
+- **Confirmatory**: Tests specified in preregistration
+- **Exploratory**: Additional analyses not prespecified
+- Clearly label which is which
+
+</details>
+
+<details class="orc-details-panel">
+<summary><i class="bi bi-check-circle"></i> Quality Assurance</summary>
+
+**Code quality practices:**
+
+- Follow style guides (Tidyverse for R, PEP 8 for Python)
+- Use automated styling tools (styler, black, lintr)
+- Consistent naming conventions
+- Descriptive variable names
+- Limit line length (80-100 characters)
+
+**Statistical consulting:**
+
+Consider consulting for complex designs, advanced methods, or results interpretation.
+
+::: {.callout-tip style="margin-top: 1rem;"}
+## Our Recommendation: Statistical Consulting at LMU
+
+**StaBLab (LMU Statistical Consulting Unit)** provides expert guidance on statistical analyses.
+
+- **Contact**: kontakt@stablab.stat.uni-muenchen.de
+- **Services**: Analysis planning, method selection, power analysis
+:::
+
+</details>
+
+<details class="orc-details-panel">
+<summary><i class="bi bi-shield-exclamation"></i> Research Integrity & Avoiding Bias</summary>
+
+Questionable research practices (QRPs) can inflate false positive rates and reduce reproducibility.
+
+**Common QRPs to avoid:**
+
+- **p-hacking**: Running multiple analyses and reporting only significant ones
+- **HARKing**: Hypothesizing After Results are Known
+- **Selective reporting**: Omitting null results or failed experiments
+- **Optional stopping**: Stopping data collection when results become significant
+
+**Prevention strategies:**
+
+- Preregister hypotheses and analysis plans
+- Distinguish confirmatory from exploratory analyses
+- Report all conducted analyses
+- Use Registered Reports format
+
+**Resources:**
+
+- [p-Hacking interactive demo](http://shinyapps.org/apps/p-hacker/) - See how easy it is to find "significant" results
+- [Big Little Lies Shiny App](https://shiny.psy.lmu.de/felix/ShinyPHack/) - Simulation of p-hacking strategies by Angelika Stefan & Felix Schönbrodt
+
+::: {.callout-note style="margin-top: 1rem;"}
+For detailed guidance on avoiding bias, see the [PRO Initiative guidelines](https://opennessinitiative.org/making-your-analyses-public/) for making analyses public.
+:::
+
+</details>
+
+:::
+
+---
+
+## <i class="bi bi-tools"></i> Tools & Resources
+
+### <i class="bi bi-bar-chart-line"></i> Statistical Software
+
+Open-source tools for transparent, reproducible statistical analysis:
+
+::: {.orc-grid-tools}
+
+<div class="orc-card-tool">
+<div class="orc-card-tool-icon"><img src="https://cdn.simpleicons.org/r" alt="R"></div>
+<h4>[R / RStudio](https://posit.co/)</h4>
+<p>Statistical programming environment</p>
+<a href="https://lmu-osc.github.io/introduction-to-R/" class="orc-card-tool-badge recommended">Tutorial available</a>
+<details class="orc-card-details">
+<summary>Read more</summary>
+<p>Free, open-source language for statistics and data science. Extensive package ecosystem. RStudio IDE provides integrated development environment.</p>
+</details>
+</div>
+
+<div class="orc-card-tool">
+<div class="orc-card-tool-icon"><img src="https://cdn.simpleicons.org/python" alt="Python"></div>
+<h4>[Python](https://www.python.org/)</h4>
+<p>General-purpose programming with data science libraries</p>
+<details class="orc-card-details">
+<summary>Read more</summary>
+<p>Powerful libraries like NumPy, pandas, scikit-learn. Popular in machine learning and computational research.</p>
+</details>
+</div>
+
+<div class="orc-card-tool">
+<div class="orc-card-tool-icon"><i class="bi bi-calculator-fill"></i></div>
+<h4>[JASP](https://jasp-stats.org/)</h4>
+<p>GUI for statistical analysis</p>
+<details class="orc-card-details">
+<summary>Read more</summary>
+<p>Free, open-source alternative to SPSS. Bayesian and frequentist analyses. Produces reproducible output.</p>
+</details>
+</div>
+
+:::
+
+::: {.callout-note appearance="simple" icon="mortarboard"}
+## Learn More: R Programming
+
+- [R for Data Science](https://r4ds.hadley.nz/) - Free online book by Hadley Wickham
+- [Tidy Data](https://vita.had.co.nz/papers/tidy-data.pdf) - Foundational paper on data organization
+- [Swirl](https://swirlstats.com/) - Interactive R learning within RStudio
+- [RStudio Cheat Sheets](https://posit.co/resources/cheatsheets/) - Quick reference guides
+:::
+
+### <i class="bi bi-file-earmark-code"></i> Computational Notebooks
+
+Tools for combining code, output, and narrative in reproducible documents:
+
+::: {.orc-grid-tools}
+
+<div class="orc-card-tool">
+<div class="orc-card-tool-icon"><img src="https://cdn.simpleicons.org/quarto" alt="Quarto"></div>
+<h4>[Quarto](https://quarto.org/)</h4>
+<p>Reproducible documents combining code and narrative</p>
+<a href="https://lmu-osc.github.io/introduction-to-Quarto/" class="orc-card-tool-badge recommended">Tutorial available</a>
+<details class="orc-card-details">
+<summary>Read more</summary>
+<p>Create reproducible manuscripts, presentations, and reports. Supports R, Python, Julia. Renders to multiple formats including HTML, PDF, and Word.</p>
+</details>
+</div>
+
+<div class="orc-card-tool">
+<div class="orc-card-tool-icon"><i class="bi bi-journal-richtext"></i></div>
+<h4>[Jupyter Notebooks](https://jupyter.org/)</h4>
+<p>Interactive computational notebooks</p>
+<details class="orc-card-details">
+<summary>Read more</summary>
+<p>Web-based notebooks combining code, output, and markdown. JupyterLab provides full IDE. Share via JupyterHub or export formats.</p>
+</details>
+</div>
+
+<div class="orc-card-tool">
+<div class="orc-card-tool-icon"><i class="bi bi-graph-up"></i></div>
+<h4>[Observable](https://observablehq.com/)</h4>
+<p>JavaScript notebooks for data visualization</p>
+<details class="orc-card-details">
+<summary>Read more</summary>
+<p>Reactive notebooks with powerful visualization libraries. Ideal for interactive data exploration and communication.</p>
+</details>
+</div>
+
+:::
+
+### <i class="bi bi-people"></i> Collaborative Platforms
+
+::: {.orc-grid-tools}
+
+<div class="orc-card-tool">
+<div class="orc-card-tool-icon"><img src="https://cdn.simpleicons.org/github" alt="GitHub"></div>
+<h4>[GitHub](https://github.com/)</h4>
+<p>Code hosting and collaboration</p>
+<a href="https://lmu-osc.github.io/Introduction-RStudio-Git-GitHub/" class="orc-card-tool-badge recommended">Tutorial available</a>
+<details class="orc-card-details">
+<summary>Read more</summary>
+<p>Public and private repositories. Pull request workflows. GitHub Actions for automation. Issue tracking and project boards.</p>
+</details>
+</div>
+
+<div class="orc-card-tool">
+<div class="orc-card-tool-icon"><img src="https://cdn.simpleicons.org/gitlab" alt="GitLab"></div>
+<h4>[LRZ GitLab](https://gitlab.lrz.de/)</h4>
+<p>Institutional Git hosting</p>
+<a href="https://gitlab.lrz.de/" class="orc-card-tool-badge recommended">Supported at LMU</a>
+<details class="orc-card-details">
+<summary>Read more</summary>
+<p>Private repositories for LMU research. CI/CD pipelines. Integrated issue tracking and code review.</p>
+</details>
+</div>
+
+<div class="orc-card-tool">
+<div class="orc-card-tool-icon"><img src="https://cdn.simpleicons.org/osf" alt="OSF"></div>
+<h4>[OSF](https://osf.io/)</h4>
+<p>Research project management</p>
+<details class="orc-card-details">
+<summary>Read more</summary>
+<p>Combines storage, version control, and collaboration. Preregistration support. DOIs for projects and components.</p>
+</details>
+</div>
+
+:::
+
+### <i class="bi bi-box-seam"></i> Environment Management
+
+Tools to ensure your code runs the same way everywhere:
+
+::: {.orc-grid-tools}
+
+<div class="orc-card-tool">
+<div class="orc-card-tool-icon"><i class="bi bi-archive"></i></div>
+<h4>[renv](https://rstudio.github.io/renv/)</h4>
+<p>R package management</p>
+<a href="https://lmu-osc.github.io/introduction-to-renv/" class="orc-card-tool-badge recommended">Tutorial available</a>
+<details class="orc-card-details">
+<summary>Read more</summary>
+<p>Isolate package dependencies per project. Create reproducible R environments. Works with RStudio projects.</p>
+</details>
+</div>
+
+<div class="orc-card-tool">
+<div class="orc-card-tool-icon"><img src="https://cdn.simpleicons.org/anaconda" alt="Conda"></div>
+<h4>[Conda](https://docs.conda.io/)</h4>
+<p>Python environment manager</p>
+<details class="orc-card-details">
+<summary>Read more</summary>
+<p>Manage Python packages and environments. Cross-platform. Includes scientific computing packages.</p>
+</details>
+</div>
+
+<div class="orc-card-tool">
+<div class="orc-card-tool-icon"><img src="https://cdn.simpleicons.org/docker" alt="Docker"></div>
+<h4>[Docker](https://www.docker.com/)</h4>
+<p>Containerization for full reproducibility</p>
+<details class="orc-card-details">
+<summary>Read more</summary>
+<p>Package entire computational environment. Ensures exact software versions. Ideal for complex workflows.</p>
+</details>
+</div>
+
+:::
+
+### <i class="bi bi-cloud-arrow-up"></i> Cloud Computing Environments
+
+Avoid the "Works on My Machine" error by running code in cloud environments:
+
+::: {.orc-grid-tools}
+
+<div class="orc-card-tool">
+<div class="orc-card-tool-icon"><img src="https://cdn.simpleicons.org/posit" alt="Posit Cloud"></div>
+<h4>[Posit Cloud](https://posit.cloud/)</h4>
+<p>RStudio in the browser</p>
+<details class="orc-card-details">
+<summary>Read more</summary>
+<p>Run R and RStudio entirely in the cloud. Share projects with collaborators. Free tier available for teaching and small projects.</p>
+</details>
+</div>
+
+<div class="orc-card-tool">
+<div class="orc-card-tool-icon"><i class="bi bi-water"></i></div>
+<h4>[Code Ocean](https://codeocean.com/)</h4>
+<p>Computational reproducibility platform</p>
+<details class="orc-card-details">
+<summary>Read more</summary>
+<p>Create reproducible "compute capsules" with code, data, and environment. Supports R, Python, Julia, and more. DOIs for computational workflows.</p>
+</details>
+</div>
+
+<div class="orc-card-tool">
+<div class="orc-card-tool-icon"><img src="https://cdn.simpleicons.org/googlecolab" alt="Google Colab"></div>
+<h4>[Google Colab](https://colab.research.google.com/)</h4>
+<p>Free Jupyter notebooks with GPU</p>
+<details class="orc-card-details">
+<summary>Read more</summary>
+<p>Run Python notebooks in Google's cloud. Free GPU/TPU access for machine learning. Easy sharing via Google Drive.</p>
+</details>
+</div>
+
+:::
+
+### <i class="bi bi-pencil-square"></i> Writing & Communication
+
+Tools for collaborative writing and team communication:
+
+::: {.orc-grid-tools}
+
+<div class="orc-card-tool">
+<div class="orc-card-tool-icon"><img src="https://cdn.simpleicons.org/overleaf" alt="Overleaf"></div>
+<h4>[Overleaf](https://www.overleaf.com/)</h4>
+<p>Collaborative LaTeX editor in the browser</p>
+<details class="orc-card-details">
+<summary>Read more</summary>
+<p>Real-time collaboration, track changes, comments, and version history. Free tier available. Many journal templates included.</p>
+</details>
+</div>
+
+<div class="orc-card-tool">
+<div class="orc-card-tool-icon"><i class="bi bi-chat-square-text"></i></div>
+<h4>[PaperHive](https://paperhive.org/)</h4>
+<p>Collaborative annotation and discussion</p>
+<details class="orc-card-details">
+<summary>Read more</summary>
+<p>Annotate and discuss research papers collaboratively. Works with PDFs and supports public or private discussions.</p>
+</details>
+</div>
+
+<div class="orc-card-tool">
+<div class="orc-card-tool-icon"><img src="https://cdn.simpleicons.org/matrix" alt="Matrix"></div>
+<h4>[LMU Chat (Matrix)](https://www.lmu.de/de/die-lmu/struktur/zentrale-universitaetsverwaltung/informations-und-kommunikationstechnik-dezernat-vi/it-servicedesk/zentrale-it-angebote/lmu-chat-matrix/)</h4>
+<p>Decentralized, secure team messaging</p>
+<a href="https://www.lmu.de/de/die-lmu/struktur/zentrale-universitaetsverwaltung/informations-und-kommunikationstechnik-dezernat-vi/it-servicedesk/zentrale-it-angebote/lmu-chat-matrix/" class="orc-card-tool-badge recommended">Supported at LMU</a>
+<details class="orc-card-details">
+<summary>Read more</summary>
+<p>Open-source, federated messaging protocol. LMU provides Matrix hosting for secure, GDPR-compliant team communication with channels, direct messages, and file sharing.</p>
+</details>
+</div>
+
+:::
+
+---
+
+::: {.callout-tip}
+## Our Recommendation: Computational Resources at LMU
+
+**LRZ Compute Cloud** provides computational resources for data-intensive analyses.
+
+- **Services**: Virtual machines, high-performance computing, storage
+- **Access**: Available to LMU researchers
+- **Support**: [LRZ Service Desk](https://www.lrz.de/services/compute/)
+:::
+
+---
+
+## <i class="bi bi-clipboard-check"></i> Analysis & Collaboration Checklist
+
+::: {.orc-gradient-box}
+
+**Before Starting Analysis:**
+
+<div class="orc-grid-2col">
+
+<div>
+
+- [ ] Analysis plan documented
+- [ ] Project uses version control (Git)
+- [ ] Directory structure organized
+- [ ] Dependencies managed
+</div>
+
+<div>
+
+- [ ] README file initiated
+- [ ] Data dictionary available
+- [ ] Code style guide chosen
+- [ ] Collaboration workflow established
+</div>
+
+</div>
+
+**During Analysis:**
+
+<div class="orc-grid-2col">
+
+<div>
+
+- [ ] Scripts well-commented
+- [ ] Commit changes regularly
+- [ ] Random seeds set
+- [ ] Intermediate results saved
+</div>
+
+<div>
+
+- [ ] Analysis decisions documented
+- [ ] Code reviewed by collaborators
+- [ ] Results cross-checked
+- [ ] Figures reproducible
+</div>
+
+</div>
+
+**Before Sharing:**
+
+- [ ] Code runs without errors on fresh environment
+- [ ] README provides complete instructions
+- [ ] All functions documented
+- [ ] Session info captured
+- [ ] Sensitive information removed
+- [ ] Code peer-reviewed
+
+:::

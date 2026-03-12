@@ -103,13 +103,25 @@ website:
               href: training/research-cycle-handbook.qmd
               contents:
                 - section: "Plan & Design"
-                  href: training/research-cycle-handbook/01-plan-and-design.qmd
+                  href: training/open_research_cycle/01_plan_and_design.qmd
+                  contents:
+                    - text: "Test"
+                      href: training/open_research_cycle/01_plan_and_design_test.qmd
                 - section: "Collect & Manage"
-                  href: training/research-cycle-handbook/02-collect-and-manage.qmd
+                  href: training/open_research_cycle/02_collect_and_manage.qmd
+                  contents:
+                    - text: "Test"  
+                      href: training/open_research_cycle/02_collect_and_manage_test.qmd
                 - section: "Analyze & Collaborate"
-                  href: training/research-cycle-handbook/03-analyze-and-collaborate.qmd
+                  href: training/open_research_cycle/03_analyze_and_collaborate.qmd
+                  contents:
+                    - text: "Test"
+                      href: training/open_research_cycle/03_analyze_and_collaborate_test.qmd
                 - section: "Preserve & Share"
-                  href: training/research-cycle-handbook/04-preserve-and-share.qmd
+                  href: training/open_research_cycle/04_preserve_and_share.qmd
+                  contents:
+                    - text: "Test"
+                      href: training/open_research_cycle/04_preserve_and_share_test.qmd
             - text: "Train the Trainer"
               href: training/train_the_trainer.qmd
         

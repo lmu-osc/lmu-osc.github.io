@@ -1,0 +1,699 @@
+---
+title: "Plan & Design"
+description: "Explore existing resources, write data management plans, design studies, and prepare preregistrations"
+phase_order: 1
+sidebar: open-research-cycle
+page-layout: full
+css: orc-style-test.css
+---
+
+::: {.orc-hero}
+
+<div class="orc-hero-bg-icon"><i class="bi bi-compass"></i></div>
+
+## Design Your Research Journey
+
+Research planning isn't about following a rigid checklist—it's about building **your** workflow. This phase of the research cycle brings together resources, ideas, and practices that help you make informed decisions before you begin.
+
+**What you'll find here:** Options for exploring prior work, frameworks for documenting your plans, and tools that support transparent, reproducible research.
+
+::: {.orc-button-group}
+<a href="#" class="btn btn-light btn-lg"><i class="bi bi-download"></i> Download Template Handbook</a>
+<a href="#" class="btn btn-outline-light btn-lg"><i class="bi bi-book"></i> View Example Handbooks</a>
+:::
+:::
+
+---
+
+::: {.callout-note appearance="simple" icon="mortarboard"}
+## Learn More: Foundational Concepts
+
+Before diving into planning, these lectures provide essential context on research credibility and reproducibility:
+
+- [Replicability Crisis](https://osf.io/mguqj/files/osfstorage) (1h) - Understanding threats to replicability
+- [Credible Research](https://osf.io/rhtgn/files/osfstorage) (40 min) - Introduction to open research practices
+- [Assessing Research Replicability](https://osf.io/dnym9/files/osfstorage) (1h) - Evaluating replication studies *(optional)*
+- [Data Simulation in R](https://lmu-osc.github.io/Introduction-Simulations-in-R/) (2h) - Power analysis through simulation
+- [Advanced Power Analyses](https://lmu-osc.github.io/Simulations-for-Advanced-Power-Analyses/) (6h) - Complex simulation designs *(optional)*
+- [8-Step Checklist for Credible Research](https://www.psychologicalscience.org/observer/eight-easy-steps-for-improving-the-credibility-of-research) by Nosek et al. - Practical steps for improving research credibility
+:::
+
+---
+
+## <i class="bi bi-search"></i> Exploring Existing Work
+
+Many researchers start by reviewing what resources and prior work exist in their domain.
+
+::: {.orc-grid-feature}
+
+::: {.orc-card-feature}
+### <i class="bi bi-journals"></i> Literature & Data
+
+Common exploration activities:
+
+- Systematic literature reviews
+- Searching data repositories for existing datasets
+- Reviewing prior meta-analyses
+- Identifying measurement instruments
+:::
+
+::: {.orc-card-feature}
+### <i class="bi bi-code-square"></i> Code & Tools
+
+Researchers often look for:
+
+- Analysis scripts and pipelines
+- Validated software tools
+- Standard protocols and workflows
+- Reusable research compendia
+:::
+
+::: {.orc-card-feature}
+### <i class="bi bi-people"></i> Community Resources
+
+Helpful community connections:
+
+- Discipline-specific networks
+- Methodological expertise
+- Collaborative opportunities
+- Shared infrastructure
+:::
+
+::: {.orc-card-feature}
+### <i class="bi bi-currency-dollar"></i> Funding & Support
+
+Resources for research funding:
+
+- Grant planning guidance
+- Funder open research requirements
+- Funding opportunities for open science
+- Budget planning for infrastructure
+:::
+
+:::
+
+::: {.callout-note appearance="simple" icon="mortarboard"}
+## Learn More: Reference Management
+[Introduction to Zotero](https://lmu-osc.github.io/introduction-to-zotero/) (1h) - Learn to organize literature with a free, open-source reference manager that integrates with Word, RStudio, and Google Docs.
+:::
+
+---
+
+## <i class="bi bi-clipboard-check"></i> Planning Framework Options
+
+Different research contexts call for different planning approaches. Below are common frameworks researchers incorporate into their lab handbooks.
+
+::: {.panel-tabset}
+
+### Study Design
+
+<details class="orc-details-panel">
+<summary><i class="bi bi-lightbulb"></i> Preregistration</summary>
+
+Many researchers document their hypotheses, methods, and analysis plans before data collection. Preregistration platforms allow time-stamping these decisions.
+
+**Considerations for preregistration:**
+
+- Research questions and hypotheses
+- Sample size and stopping rules
+- Variables and measures
+- Statistical analysis plan
+- Handling of missing data
+
+::: {.callout-note appearance="simple" icon="mortarboard"}
+## Learn More: Preregistration
+[How to Prepare a Preregistration](https://lmu-osc.github.io/introduction-to-preregistration/) (2h) - Step-by-step guide to creating preregistrations using OSF and other platforms.
+:::
+
+**Helpful templates & guides:**
+
+- [Pre-analysis checklist](https://blogs.worldbank.org/en/impactevaluations/a-pre-analysis-plan-checklist) by David McKenzie
+- [Pre-analysis plan template](https://www.bitss.org/resource/alejandro-ganimians-pre-analysis-plan-template/) by Alejandro Ganimian
+- [OSF Guide to Preregistration](https://help.osf.io/article/158-preregistration) - Step-by-step instructions
+
+</details>
+
+<details class="orc-details-panel">
+<summary><i class="bi bi-file-earmark-check"></i> Registered Reports</summary>
+
+Registered Reports are a publishing format where peer review occurs **before** data collection. If accepted, the journal commits to publishing regardless of results.
+
+**Benefits:**
+
+- Eliminates publication bias
+- Separates hypothesis quality from results
+- Provides in-principle acceptance before conducting research
+
+**Resources:**
+
+- [What are Registered Reports?](https://www.cos.io/initiatives/registered-reports) - COS overview and rationale
+- [Journals accepting Registered Reports](https://www.cos.io/initiatives/registered-reports#702702cd-d4f3-4de9-bbb5-eb468e0dc804) - Growing list of participating journals
+- [Author & Reviewer Guidelines](https://osf.io/pukzy/) - Templates and guidance for submissions
+
+</details>
+
+<details class="orc-details-panel">
+<summary><i class="bi bi-calculator"></i> Power Analysis</summary>
+
+Statistical power analysis helps determine appropriate sample sizes for detecting effects of interest.
+
+**Common elements:**
+
+- Expected effect size (from literature or pilot data)
+- Desired statistical power (often 80-95%)
+- Significance threshold (often α = 0.05)
+- Analysis method (t-test, ANOVA, regression, etc.)
+
+::: {.callout-note appearance="simple" icon="mortarboard"}
+## Learn More: Power Analysis
+
+- [Introduction to Data Simulation in R](https://lmu-osc.github.io/Introduction-Simulations-in-R/) (2h) - Create simulated datasets to test your analysis plans
+- [Simulations for Advanced Power Analyses](https://lmu-osc.github.io/Simulations-for-Advanced-Power-Analyses/) (6h, can pick specific chapters) - Power analysis for complex statistical models including mixed models and factorial designs
+- [Power Analysis Workshop](https://www.nicebread.de/workshop-on-power-analysis-by-simulation-in-r/) by Felix Schönbrodt - Comprehensive workshop materials on simulation-based power analysis
+:::
+
+::: {.callout-tip}
+## Our Recommendation: Statistical Consulting
+
+**StaBLab (LMU Statistical Consulting Unit)** offers support for pre-analysis planning and power analysis.
+
+- **Contact**: kontakt@stablab.stat.uni-muenchen.de
+- **Website**: [stablab.stat.uni-muenchen.de](https://www.stablab.stat.uni-muenchen.de/)
+- **What they offer**: Consultation on study design, power analysis, and statistical methods
+:::
+
+</details>
+
+### Data Management
+
+Data Management Plans (DMPs) outline how research data will be handled throughout and after a project.
+
+::: {.callout-note appearance="simple" icon="mortarboard"}
+## Learn More: FAIR Data Management
+[FAIR Data Management Tutorial](https://lmu-osc.github.io/FAIR-Data-Management/) (2h) - Comprehensive guide to managing data following FAIR principles, including a detailed section on creating Data Management Plans (~1h).
+:::
+
+::: {.callout-tip}
+## Our Recommendation: DMP Support at LMU
+
+**LMU University Library** provides the RDMO tool for creating funder-compliant Data Management Plans.
+
+- **Contact**: rdm@ub.uni-muenchen.de
+- **What they offer**: RDMO tool access, DMP templates for major funders, personalized support for DMP creation
+- **Note**: Many institutions and funders provide DMP templates. Some researchers also use tools like DMPonline or DMPTool.
+:::
+
+**DMPs may include:**
+
+<div class="orc-grid-tools">
+
+<div class="orc-card">
+<strong><i class="bi bi-file-earmark-text"></i> Data Description</strong>
+<ul>
+<li>Types and formats</li>
+<li>Expected volume</li>
+<li>Naming conventions</li>
+</ul>
+</div>
+
+<div class="orc-card">
+<strong><i class="bi bi-shield-check"></i> Storage & Security</strong>
+<ul>
+<li>Storage locations</li>
+<li>Backup strategies</li>
+<li>Access controls</li>
+</ul>
+</div>
+
+<div class="orc-card">
+<strong><i class="bi bi-share"></i> Sharing & Preservation</strong>
+<ul>
+<li>Repository selection</li>
+<li>License choices</li>
+<li>Embargo periods</li>
+</ul>
+</div>
+
+<div class="orc-card">
+<strong><i class="bi bi-key"></i> Ethics & Privacy</strong>
+<ul>
+<li>Consent procedures</li>
+<li>Anonymization methods</li>
+<li>Compliance requirements</li>
+</ul>
+</div>
+
+</div>
+
+### Ethics & Compliance
+
+Depending on the research type, various ethical and compliance considerations may apply.
+
+**Common approvals and frameworks:**
+
+- Institutional review board (IRB) or ethics committee approval
+- Informed consent procedures
+- Data protection regulations (e.g., GDPR, HIPAA)
+- Animal welfare protocols (where applicable)
+- Biosafety and environmental safety reviews
+
+**Consent form templates for open data sharing:**
+
+- [German templates](https://osf.io/mgwk8/wiki/Consent%20form%20templates%20for%20open%20data/) - Dyadic and non-dyadic experiments (OSC collection)
+- [English templates](https://osf.io/adkj4/) - COS Reproducible Research collection
+
+::: {.callout-note}
+## Documentation
+Many labs maintain a centralized log of all ethics approvals, consent forms, and compliance certifications for easy reference.
+:::
+
+::: {.callout-tip}
+## Our Recommendation: LMU Ethics & Compliance
+
+**LMU Ethics Committee** reviews all research involving human participants.
+
+- **Website**: [Ethics Committee Information](https://www.med.lmu.de/de/fakultaet/wer-wir-sind/gremien-kommissionen/ethikkommission/)
+- **Timeline**: ~4 weeks for initial review, ~1 week for revisions, ~3 weeks for final approval
+- **Note**: Only the Principal Investigator (PI) can submit ethics applications
+
+**LMU Guidelines for Good Scientific Practice** (2023) establish standards for all research at LMU:
+
+- Reproducible methods must be used
+- Complete documentation to enable replication
+- Data, materials, and software must follow FAIR principles
+- Research outputs preserved for 10 years
+- [German regulation (legally binding)](https://www.lmu.de/de/die-lmu/struktur/zentrale-universitaetsverwaltung/dez-vi-lehre-und-studium/ref-vi-2-stabsstelle-lehrqualitaet-und-evaluation/gute-wissenschaftliche-praxis/)
+:::
+
+:::
+
+---
+
+## <i class="bi bi-tools"></i> Tools & Resources
+
+The open research ecosystem offers numerous platforms and tools to support planning activities. Tools marked with a **Supported at LMU** badge are recommended and supported at LMU.
+
+### <i class="bi bi-file-earmark-text"></i> Preregistration Platforms
+
+Platforms to publicly register your study design and analysis plan before data collection:
+
+::: {.orc-grid-tools}
+
+<div class="orc-card-tool">
+<div class="orc-card-tool-icon"><img src="https://cdn.simpleicons.org/osf" alt="OSF"></div>
+<h4>[OSF](https://osf.io/)</h4>
+<p>Flexible templates, embargoes, file storage</p>
+<details class="orc-card-details">
+<summary>Read more</summary>
+<p>Widely used across fields. Supports version control and integrates with file storage.</p>
+</details>
+</div>
+
+<div class="orc-card-tool">
+<div class="orc-card-tool-icon"><i class="bi bi-clipboard-check"></i></div>
+<h4>[AsPredicted](https://aspredicted.org/)</h4>
+<p>Quick 9-question format</p>
+<details class="orc-card-details">
+<summary>Read more</summary>
+<p>Simple, focused on core study elements. Popular in psychology and behavioral sciences.</p>
+</details>
+</div>
+
+<div class="orc-card-tool">
+<div class="orc-card-tool-icon"><i class="bi bi-hospital"></i></div>
+<h4>[ClinicalTrials.gov](https://clinicaltrials.gov/)</h4>
+<p>Clinical trials registry</p>
+<details class="orc-card-details">
+<summary>Read more</summary>
+<p>Required by many medical journals and funders for clinical research.</p>
+</details>
+</div>
+
+<div class="orc-card-tool">
+<div class="orc-card-tool-icon"><i class="bi bi-currency-dollar"></i></div>
+<h4>[AEA RCT Registry](https://www.socialscienceregistry.org/)</h4>
+<p>Economics & social sciences</p>
+<details class="orc-card-details">
+<summary>Read more</summary>
+<p>American Economic Association registry for randomized controlled trials in economics and social sciences.</p>
+</details>
+</div>
+
+<div class="orc-card-tool">
+<div class="orc-card-tool-icon"><i class="bi bi-globe2"></i></div>
+<h4>[RIDIE](https://ridie.3ieimpact.org/)</h4>
+<p>Development impact evaluations</p>
+<details class="orc-card-details">
+<summary>Read more</summary>
+<p>Registry for International Development Impact Evaluations. Open to experimental and observational studies.</p>
+</details>
+</div>
+
+<div class="orc-card-tool">
+<div class="orc-card-tool-icon"><i class="bi bi-building"></i></div>
+<h4>[EGAP Registry](https://egap.org/registry/)</h4>
+<p>Governance & politics research</p>
+<details class="orc-card-details">
+<summary>Read more</summary>
+<p>Evidence in Governance and Politics registry for social science research designs.</p>
+</details>
+</div>
+
+:::
+
+### <i class="bi bi-calculator"></i> Power Analysis Tools
+
+Software for calculating sample sizes and statistical power:
+
+::: {.orc-grid-tools}
+
+<div class="orc-card-tool">
+<div class="orc-card-tool-icon"><img src="https://cdn.simpleicons.org/r" alt="R"></div>
+<h4>R packages</h4>
+<p>[pwr](https://cran.r-project.org/package=pwr), [simr](https://cran.r-project.org/package=simr), [Superpower](https://github.com/arcaldwell49/Superpower)</p>
+<a href="https://lmu-osc.github.io/Simulations-for-Advanced-Power-Analyses/" class="orc-card-tool-badge recommended">Tutorial available</a>
+<details class="orc-card-details">
+<summary>Read more</summary>
+<p>Simulation-based power for mixed models and factorial designs.</p>
+</details>
+</div>
+
+<div class="orc-card-tool">
+<div class="orc-card-tool-icon"><i class="bi bi-calculator"></i></div>
+<h4>[G*Power](https://www.psychologie.hhu.de/arbeitsgruppen/allgemeine-psychologie-und-arbeitspsychologie/gpower)</h4>
+<p>Point-and-click interface</p>
+<details class="orc-card-details">
+<summary>Read more</summary>
+<p>Free software for t-tests, F-tests, correlations, and more with graphical displays.</p>
+</details>
+</div>
+
+<div class="orc-card-tool">
+<div class="orc-card-tool-icon"><i class="bi bi-globe"></i></div>
+<h4>[WebPower](https://webpower.psychstat.org/)</h4>
+<p>Online tools, no installation</p>
+<details class="orc-card-details">
+<summary>Read more</summary>
+<p>Browser-based power analysis with tutorials and examples.</p>
+</details>
+</div>
+
+:::
+
+### <i class="bi bi-folder2-open"></i> Data Management Planning
+
+Tools to create and manage data management plans for your research:
+
+::: {.orc-grid-tools}
+
+<div class="orc-card-tool">
+<div class="orc-card-tool-icon"><i class="bi bi-folder-check"></i></div>
+<h4>[RDMO](https://rdmo.ub.lmu.de/)</h4>
+<p>Research Data Management Organiser</p>
+<a href="https://rdmo.ub.lmu.de/" class="orc-card-tool-badge recommended">Supported at LMU</a>
+<details class="orc-card-details">
+<summary>Read more</summary>
+<p>Available via LMU Library. Contact rdm@ub.uni-muenchen.de for access and support.</p>
+</details>
+</div>
+
+<div class="orc-card-tool">
+<div class="orc-card-tool-icon"><i class="bi bi-file-earmark-text"></i></div>
+<h4>[DMPonline](https://dmponline.dcc.ac.uk/)</h4>
+<p>European funder templates</p>
+<details class="orc-card-details">
+<summary>Read more</summary>
+<p>Web-based with guidance text and institutional review support.</p>
+</details>
+</div>
+
+
+<div class="orc-card-tool">
+<div class="orc-card-tool-icon"><i class="bi bi-file-earmark-code"></i></div>
+<h4>[Argos](https://argos.openaire.eu/)</h4>
+<p>Machine-actionable DMPs</p>
+<details class="orc-card-details">
+<summary>Read more</summary>
+<p>Open-source with FAIR principles integration.</p>
+</details>
+</div>
+
+<div class="orc-card-tool">
+<div class="orc-card-tool-icon"><i class="bi bi-robot"></i></div>
+<h4>[DataWiz](https://datawiz.leibniz-psychology.org/DataWiz/)</h4>
+<p>Automated data documentation assistant</p>
+<details class="orc-card-details">
+<summary>Read more</summary>
+<p>From ZPID (Leibniz Institute for Psychology) - helps document and manage research data from the start of the research cycle. Includes DMP creation assistance and a knowledge base for research data management.</p>
+</details>
+</div>
+
+:::
+
+### <i class="bi bi-search"></i> Literature & Prior Work Discovery
+
+Platforms to find and explore existing research in your field:
+
+::: {.orc-grid-tools}
+
+<div class="orc-card-tool">
+<div class="orc-card-tool-icon"><i class="bi bi-diagram-3"></i></div>
+<h4>[Connected Papers](https://www.connectedpapers.com/)</h4>
+<p>Visual citation networks</p>
+<details class="orc-card-details">
+<summary>Read more</summary>
+<p>Graph visualization to discover related work and influential papers.</p>
+</details>
+</div>
+
+<div class="orc-card-tool">
+<div class="orc-card-tool-icon"><img src="https://cdn.simpleicons.org/semanticscholar" alt="Semantic Scholar"></div>
+<h4>[Semantic Scholar](https://www.semanticscholar.org/)</h4>
+<p>AI-powered literature search</p>
+<details class="orc-card-details">
+<summary>Read more</summary>
+<p>Shows influence metrics, citation contexts, and key figures. Free with API.</p>
+</details>
+</div>
+
+<div class="orc-card-tool">
+<div class="orc-card-tool-icon"><i class="bi bi-journal-medical"></i></div>
+<h4>[PubMed](https://pubmed.ncbi.nlm.nih.gov/) / [Europe PMC](https://europepmc.org/)</h4>
+<p>Biomedical databases</p>
+<details class="orc-card-details">
+<summary>Read more</summary>
+<p>MEDLINE citations and full-text open access articles with advanced filters.</p>
+</details>
+</div>
+
+:::
+
+### <i class="bi bi-check2-circle"></i> Evaluate Research Quality
+
+Tools to assess the credibility and impact of research you've found:
+
+::: {.orc-grid-tools}
+
+<div class="orc-card-tool">
+<div class="orc-card-tool-icon"><i class="bi bi-bar-chart-line"></i></div>
+<h4>[Altmetric](https://www.altmetric.com/)</h4>
+<p>Track article attention & discussions</p>
+<details class="orc-card-details">
+<summary>Read more</summary>
+<p>Shows mentions in news, social media, policy documents, and peer reviews. Available as browser add-on.</p>
+</details>
+</div>
+
+<div class="orc-card-tool">
+<div class="orc-card-tool-icon"><i class="bi bi-chat-square-text"></i></div>
+<h4>[PubPeer](https://pubpeer.com/)</h4>
+<p>Post-publication peer review</p>
+<details class="orc-card-details">
+<summary>Read more</summary>
+<p>Community comments on published papers. Browser add-on alerts you to discussions. Integrated in Altmetric scores.</p>
+</details>
+</div>
+
+<div class="orc-card-tool">
+<div class="orc-card-tool-icon"><i class="bi bi-clipboard-check"></i></div>
+<h4>[Curate Science](https://curatescience.org/)</h4>
+<p>Replication reports & transparency</p>
+<details class="orc-card-details">
+<summary>Read more</summary>
+<p>Database of replication studies and transparency ratings for psychology research.</p>
+</details>
+</div>
+
+:::
+
+### <i class="bi bi-database"></i> Data & Code Repositories
+
+Repositories for discovering existing datasets and code to build upon:
+
+::: {.orc-grid-tools}
+
+<div class="orc-card-tool">
+<div class="orc-card-tool-icon"><img src="https://cdn.simpleicons.org/zenodo" alt="Zenodo"></div>
+<h4>[Zenodo](https://zenodo.org/)</h4>
+<p>General-purpose repository, DOIs</p>
+<details class="orc-card-details">
+<summary>Read more</summary>
+<p>Accepts all research outputs, integrates with GitHub, provides version control.</p>
+</details>
+</div>
+
+<div class="orc-card-tool">
+<div class="orc-card-tool-icon"><i class="bi bi-database"></i></div>
+<h4>[re3data](https://www.re3data.org/)</h4>
+<p>Registry of data repositories</p>
+<details class="orc-card-details">
+<summary>Read more</summary>
+<p>Search across disciplines to find appropriate domain-specific repositories.</p>
+</details>
+</div>
+
+<div class="orc-card-tool">
+<div class="orc-card-tool-icon"><img src="https://cdn.simpleicons.org/github" alt="GitHub"></div>
+<h4>[GitHub](https://github.com/) / [GitLab](https://gitlab.com/)</h4>
+<p>Version control platforms</p>
+<a href="https://lmu-osc.github.io/Introduction-RStudio-Git-GitHub/" class="orc-card-tool-badge recommended">Tutorial available</a>
+<details class="orc-card-details">
+<summary>Read more</summary>
+<p>Public platforms for code collaboration with issue tracking and documentation.</p>
+</details>
+</div>
+
+<div class="orc-card-tool">
+<div class="orc-card-tool-icon"><img src="https://cdn.simpleicons.org/gitlab" alt="GitLab"></div>
+<h4>[LRZ GitLab](https://gitlab.lrz.de/)</h4>
+<p>Secure institutional Git hosting</p>
+<a href="https://gitlab.lrz.de/" class="orc-card-tool-badge recommended">Supported at LMU</a>
+<details class="orc-card-details">
+<summary>Read more</summary>
+<p>LRZ-hosted private repositories for active research. Use LRZ credentials to access.</p>
+</details>
+</div>
+
+:::
+
+### <i class="bi bi-journal-text"></i> Reference Management
+
+Tools to organize, annotate, and cite your literature:
+
+::: {.orc-grid-tools}
+
+<div class="orc-card-tool">
+<div class="orc-card-tool-icon"><img src="https://cdn.simpleicons.org/zotero" alt="Zotero"></div>
+<h4>[Zotero](https://www.zotero.org/)</h4>
+<p>Free, open-source reference manager</p>
+<a href="https://lmu-osc.github.io/introduction-to-zotero/" class="orc-card-tool-badge recommended">Tutorial available</a>
+<details class="orc-card-details">
+<summary>Read more</summary>
+<p>Browser plugin for automatic citation capture. Works with Word, RStudio, Google Docs. Group libraries for collaboration.</p>
+</details>
+</div>
+
+<div class="orc-card-tool">
+<div class="orc-card-tool-icon"><img src="https://cdn.simpleicons.org/mendeley" alt="Mendeley"></div>
+<h4>[Mendeley](https://www.mendeley.com/)</h4>
+<p>PDF annotation & social features</p>
+<details class="orc-card-details">
+<summary>Read more</summary>
+<p>Desktop and web versions with PDF organization and annotation tools.</p>
+</details>
+</div>
+
+<div class="orc-card-tool">
+<div class="orc-card-tool-icon"><i class="bi bi-file-earmark-richtext"></i></div>
+<h4>[JabRef](https://www.jabref.org/)</h4>
+<p>BibTeX for LaTeX workflows</p>
+<details class="orc-card-details">
+<summary>Read more</summary>
+<p>Lightweight, customizable BibTeX manager for LaTeX users.</p>
+</details>
+</div>
+
+:::
+
+### <i class="bi bi-currency-dollar"></i> Funding & Grant Support
+
+Funding applications often require plans for open and reproducible research practices.
+
+::: {.callout-tip}
+## Our Recommendation: Research Funding Support at LMU
+
+**LMU Research Funding Unit** provides expertise on open science requirements in grant proposals.
+
+- **For open science/reproducibility questions in proposals**:
+  - National calls: Florian Schreck
+  - International calls: Laura Kropf
+- **For Medicine-specific funding**:
+  - National: Jörg Teuber
+  - International: Susanne Troppmann
+- **Website**: [LMU Research Funding](https://www.uni-muenchen.de/forschung/forschungsfoerderung/)
+- **What they offer**: Review of proposals, guidance on funder requirements for open access and data sharing, knowledge of latest policy developments
+:::
+
+::: {.callout-note}
+## Choosing Tools
+No single tool fits every workflow. Consider: your discipline's norms, institutional support, collaboration needs, data sensitivity, and long-term preservation requirements. Many researchers combine multiple tools.
+:::
+
+---
+
+## <i class="bi bi-clipboard-check"></i> Planning Checklist
+
+::: {.orc-gradient-box}
+
+**Research Design:**
+
+<div class="orc-grid-2col">
+
+<div>
+
+- [ ] Research questions clearly defined
+- [ ] Hypotheses specified (if applicable)
+- [ ] Study design chosen and justified
+- [ ] Variables and measures identified
+</div>
+
+<div>
+
+- [ ] Sample size determined with power analysis
+- [ ] Inclusion/exclusion criteria defined
+- [ ] Potential confounds considered
+- [ ] Ethical approval obtained (if required)
+</div>
+
+</div>
+
+**Documentation & Planning:**
+
+<div class="orc-grid-2col">
+
+<div>
+
+- [ ] Data Management Plan drafted
+- [ ] Preregistration prepared (if applicable)
+- [ ] Analysis plan documented
+- [ ] File naming conventions established
+</div>
+
+<div>
+
+- [ ] Repository/storage solution selected
+- [ ] Collaboration tools set up
+- [ ] Timeline and milestones defined
+- [ ] Budget includes open science costs
+</div>
+
+</div>
+
+**Before Data Collection:**
+
+- [ ] All study materials finalized and documented
+- [ ] Preregistration submitted (if applicable)
+- [ ] Data collection protocols tested
+- [ ] Team roles and responsibilities clear
+
+:::
