@@ -1,4 +1,3 @@
-
 .quarto-listing-default .quarto-post.image-right {
   cursor: pointer;
   transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
@@ -20,4 +19,13 @@
 
 #listing-listing .metadata .metadata-value.listing-type {
   font-size: 1.3em;
+}
+
+/* add light green color to listing titles and underline them */
+div.body h3.no-anchor.listing-title a.no-external {
+  color: #00883Aaa;
+}
+
+div.body h3.no-anchor.listing-title a.no-external:hover {
+  text-decoration: underline;
 }
