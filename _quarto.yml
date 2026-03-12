@@ -102,13 +102,13 @@ website:
             - section: "Research Cycle Handbook"
               href: training/research-cycle-handbook.qmd
               contents:
-                - section: "Plan & Design"
+                - text: "Plan & Design"
                   href: training/research-cycle-handbook/01_plan_and_design.qmd
-                - section: "Collect & Manage"
+                - text: "Collect & Manage"
                   href: training/research-cycle-handbook/02_collect_and_manage.qmd
-                - section: "Analyze & Collaborate"
+                - text: "Analyze & Collaborate"
                   href: training/research-cycle-handbook/03_analyze_and_collaborate.qmd
-                - section: "Preserve & Share"
+                - text: "Preserve & Share"
                   href: training/research-cycle-handbook/04_preserve_and_share.qmd
             - text: "Train the Trainer"
               href: training/train_the_trainer.qmd
