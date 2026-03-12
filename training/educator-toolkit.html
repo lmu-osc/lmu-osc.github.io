@@ -208,7 +208,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../training/index.html">Training Tracks</a></li><li class="breadcrumb-item"><a href="../training/train-the-trainer.html">Educator Toolkit</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../training/index.html">Training Tracks</a></li><li class="breadcrumb-item"><a href="../training/educator-toolkit.html">Educator Toolkit</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -360,7 +360,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../training/train-the-trainer.html" class="sidebar-item-text sidebar-link active">
+  <a href="../training/educator-toolkit.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Educator Toolkit</span></a>
   </div>
 </li>
@@ -384,7 +384,7 @@ ul.task-list li input[type="checkbox"] {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../training/index.html">Training Tracks</a></li><li class="breadcrumb-item"><a href="../training/train-the-trainer.html">Educator Toolkit</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../training/index.html">Training Tracks</a></li><li class="breadcrumb-item"><a href="../training/educator-toolkit.html">Educator Toolkit</a></li></ol></nav>
 <div class="quarto-title">
 <h1 class="title">Educator Toolkit</h1>
 </div>
@@ -405,25 +405,54 @@ ul.task-list li input[type="checkbox"] {
 
 <style>
 a.btn-toolkit {
-  display: inline-block;
-  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
   font-weight: bold;
   text-decoration: none;
-  border-radius: 8px;
   transition: background-color 0.2s ease;
+  color: white;
+  text-align: center;
+}
+
+a.btn-toolkit:hover,
+a.btn-toolkit:focus {
   color: white;
 }
 
 a.btn-toolkit-pedagogy {
   background-color: #009933;
+  border-color: #009933;
 }
 
 a.btn-toolkit-students {
   background-color: #00008B;
+  border-color: #00008B;
 }
 
 a.btn-toolkit-researchers {
   background-color: #8B7500;
+  border-color: #8B7500;
+}
+
+a.btn-toolkit-pedagogy:hover,
+a.btn-toolkit-pedagogy:focus {
+  background-color: #007f2a;
+  border-color: #007f2a;
+}
+
+a.btn-toolkit-students:hover,
+a.btn-toolkit-students:focus {
+  background-color: #000070;
+  border-color: #000070;
+}
+
+a.btn-toolkit-researchers:hover,
+a.btn-toolkit-researchers:focus {
+  background-color: #735f00;
+  border-color: #735f00;
 }
 </style>
 <p><strong>Welcome!</strong> Do you want to <strong>teach</strong> open, responsible, and reproducible research practices? Then our <strong>educator toolkit</strong> is for you!</p>
@@ -433,14 +462,22 @@ a.btn-toolkit-researchers {
 <h2 class="anchored" data-anchor-id="what-does-the-educator-toolkit-offer">What does the educator toolkit offer?</h2>
 <p>In this toolkit, you can find:</p>
 <ul>
-<li><strong>Pedagogical materials</strong> and practical <strong>guidance</strong> for effectively <strong>designing and delivering classes and workshops on Open Research topics</strong> to diverse audiences. These materials include core didactic skills, learner engagement strategies, Open Science leadership, and accessibility practices.</li>
+<li><p><strong>Pedagogical materials</strong> and practical <strong>guidance</strong> for effectively <strong>designing and delivering classes and workshops on Open Research topics</strong> to diverse audiences. These materials include core didactic skills, learner engagement strategies, Open Science leadership, and accessibility practices.</p></li>
+<li><p><strong>Ready-to-use materials</strong> for teaching open research practices such as <strong>methodological foundations of Open Science, computational reproducibility, data management and sharing</strong>. This material consist of slides and activity sheets. Slides include presenter notes (intended narrative of the presentation), and further instructor notes (additional guidance intended only for the presenter such as didactic and accessibility tips). Simply select your intended target audience below and off you go!</p></li>
 </ul>
-<p><a href="https://lmu-osc.github.io/train-the-trainer-student-track-pedagogy/" target="_blank" class="btn-toolkit btn-toolkit-pedagogy" aria-label="Develop your pedagogical skills (opens in new window)"> Develop your <strong>pedagogical skills</strong>! </a></p>
-<ul>
-<li><strong>Ready-to-use materials</strong> for teaching open research practices such as <strong>methodological foundations of Open Science, computational reproducibility, data management and sharing</strong>. This material consist of slides and activity sheets. Slides include presenter notes (intended narrative of the presentation), and further instructor notes (additional guidance intended only for the presenter such as didactic and accessibility tips). Simply select your intended target audience below and off you go!</li>
-</ul>
-<p><a href="https://lmu-osc.github.io/train-the-trainer-student-track-OS/" target="_blank" class="btn-toolkit btn-toolkit-students" aria-label="View teaching materials for students (opens in new window)"> View teaching materials for <strong>students</strong>! </a></p>
-<p><a href="https://lmu-osc.github.io/training/self-learning.html" target="_blank" class="btn-toolkit btn-toolkit-researchers" aria-label="View teaching materials for researchers (opens in new window)"> View teaching materials for <strong>researchers</strong>! </a></p>
+<div class="container px-0 my-4">
+<div class="row g-3 align-items-stretch">
+<div class="col-12 col-md-4 d-flex">
+<p><a href="https://lmu-osc.github.io/train-the-trainer-student-track-pedagogy/" target="_blank" class="btn btn-lg btn-toolkit btn-toolkit-pedagogy" aria-label="Develop your pedagogical skills (opens in new window)"> <span>Develop your pedagogical <strong>skills</strong>!</span> </a></p>
+</div>
+<div class="col-12 col-md-4 d-flex">
+<p><a href="https://lmu-osc.github.io/train-the-trainer-student-track-OS/" target="_blank" class="btn btn-lg btn-toolkit btn-toolkit-students" aria-label="View teaching materials for students (opens in new window)"> <span>View teaching materials for <strong>students</strong>!</span> </a></p>
+</div>
+<div class="col-12 col-md-4 d-flex">
+<p><a href="https://lmu-osc.github.io/training/self-learning.html" target="_blank" class="btn btn-lg btn-toolkit btn-toolkit-researchers" aria-label="View teaching materials for researchers (opens in new window)"> <span>View teaching materials for <strong>researchers</strong>!</span> </a></p>
+</div>
+</div>
+</div>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
