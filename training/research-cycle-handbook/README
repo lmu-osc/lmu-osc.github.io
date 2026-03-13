@@ -97,14 +97,24 @@ Adding the following class to html title remove their anchors, e.g.:
 I believe this is using remove_anchor.lua function stored in assets.
 
 
-# HOW TO FORMAT LISTS BETWEEN SECTION TITLE AND panel-tabset IN orc-details-panel?
+# HOW TO FORMAT LISTS AD CALLOUT BOXES BETWEEN SECTION TITLE AND panel-tabset IN orc-details-panel?
 
-I am not sure why the bullet points are in the margin when a list is in this location. I suppose the orc-details-panel custom css could be adjusted. Currently, I use:
+I am not sure why the bullet points or call out boxes are in the margin when a list is in this location. I suppose the orc-details-panel custom css could be adjusted. 
+
+Currently, to add a margin to lists in such location, I use:
 
 ::: {.ms-1} 
+- item 1
+- item 2
+:::
+
+Currently, to add a margin to callout boxes in such location, I use:
+
+::: {.callout-note .mx-4}
 
 :::
 
+However, while this adds a margin, the border of the callout boxes stay 'exploded' including white spaces all around the header and text. If that could be fixed that would be nice. 
 
 
 # HOW TO CUSTOMIZE CHAPTERS?
