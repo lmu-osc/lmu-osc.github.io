@@ -790,11 +790,11 @@ Your preregistration will define your study's:
 - **How to deal with missing data**
 <br>
 
-A great tool to create your statistical plan, especially for early career researchers still learning statistics and needing feedback from supervisors, collaborators, or statisticians on their design, is to **simulate data, and write the possible statistical test to analyze that data** (see [1.4.2. Simulation of data](#sec-study-design-analysis-plan){.mark} and [1.4.3. Power analyses](#sec-study-design-analysis-plan){.mark}).
+A great tool to create your statistical plan, especially for early career researchers still learning statistics and needing feedback from supervisors, collaborators, or statisticians on their design, is to **simulate data, and write the possible statistical tests to analyze that data** (see [1.4.2. Simulation of data](#sec-study-design-analysis-plan){.mark} and [1.4.3. Power analyses](#sec-study-design-analysis-plan){.mark}). Including an analyses script (developed on simulated data) with your preregistration is optional but recommended.
 
 <br>
 
-Including an **analyses script** (developed on simulated data) with your preregistration is optional, but gives you the advantage of obtaining the results of your confirmatory analyses extremely rapidly once your data is collected.
+To get support with pre-analysis planning, you can book a consultation with the [LMU statistical consulting unit](mailto:@stablab.stat.uni-muenchen.de) and visit the [StaBLab website](https://www.stat.lmu.de/stablab/de/) for more information. 
 
 <br>
 
@@ -907,14 +907,14 @@ _Example: Check whether there are more than 5% significant effects for a variabl
 _Example: See whether simulated data drawn from specific distributions is comparable to real data._
 
 - **Perform power analyses.**  
-_Example: Assess whether the sample size (within a simulation repetition) is high enough to detect a simulated effect in more than 80% of the cases. (see [1.4.3. Power analyses](#)<!--internal link formatting-->)_
+_Example: Assess whether the sample size (within a simulation repetition) is high enough to detect a simulated effect in more than 80% of the cases. (see [1.4.3. Power analyses](#sec-explore-and-reuse){.mark})_
 
 - **Prepare a pre-analysis plan.**  
-_Example: To strengthen your planned confirmatory analyses before collecting data, consider sharing a simulated dataset with a statistician or mentor. This allows for specific feedback on suitable statistical tests. The resulting analysis code can accompany your preregistration or registered report (see [1.4.1. Pre-analysis planning](<!--internal link-->)) so reviewers can clearly see your intended approach. When real data are collected, they can be directly substituted into the code to generate results._
+_Example: To strengthen your planned confirmatory analyses before collecting data, consider sharing a simulated dataset with a statistician or mentor. This allows for specific feedback on suitable statistical tests. The resulting analysis code can accompany your preregistration or registered report (see [1.4.1. Pre-analysis planning](#sec-explore-and-reuse){.mark}) so reviewers can clearly see your intended approach. When real data are collected, they can be directly substituted into the code to generate results._
 
 <br>
 
-Generating an artificial dataset in R (see our [simulation tutorial](https://lmu-osc.github.io/Introduction-Simulations-in-R/)) is much easier than researchers often believe it to be and is generally helpful, even when you need to make assumptions about variable distribution or when the parameter space is not well known.
+Generating an artificial dataset in R (see our [simulation tutorial](https://lmu-osc.github.io/Introduction-Simulations-in-R/)) is much easier than researchers often believe it to be and is often very helpful, even when you need to make assumptions about variable distribution or when the parameter space is not well known.
 
 
 
@@ -971,13 +971,13 @@ Power analysis is relevant whether you are designing a project from scratch or r
 
 <br>
 
-##### A priori power analysis
+<h5 class="fs-5 no-anchor">A priori power analysis</h5>
 
-**Simulate data to calculate the smallest sample size required to detect the smallest effect of interest.** See our [advanced tutorial](https://lmu-osc.github.io/Simulations-for-Advanced-Power-Analyses/). 
+**Simulate data to calculate the smallest sample size required to detect the smallest effect of interest.** See our [advanced power analyses tutorial](https://lmu-osc.github.io/Simulations-for-Advanced-Power-Analyses/). 
 
 <br>
 
-For a very basic power calculation, you can use simple R function if you know 3 out of 4 of these parameters: 
+For a very basic power calculation, you can use simple R functions if you know 3 out of 4 of these parameters: 
 
 - required sample size n (usually the one missing)
 - desired power (default 0.80)
@@ -988,7 +988,7 @@ To get support with pre-analysis planning, you can book a consultation with the 
 
 <br>
 
-##### Post-hoc power analysis
+<h5 class="fs-5 no-anchor">Post-hoc power analysis</h5>
 
 **Compute a post-hoc power when you are not be able to control the sample size for your project.** Beware: This power computation comes in two flavors - one is legitimate, and one is flawed and not defensible. 
 
