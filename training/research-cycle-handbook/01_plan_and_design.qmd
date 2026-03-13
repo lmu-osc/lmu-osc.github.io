@@ -10,7 +10,7 @@ number-offset: [0,1,0]
 filters: 
     - assets/remove_anchor.lua
 page-layout: full
-css: orc-styles.css
+css: handbook-styles.css
 title-block-style: none   
 include-in-header:
   - text: |
@@ -41,80 +41,17 @@ include-in-header:
 
 </summary> 
 
-Any resource that inspire you or that you want to reuse and/or adapt must minimally be **cited using their DOIs** (and otherwise URL with author, date, and time of access) and you must **follow the license and/or usage agreement** provided by the authors. 
+Any resource that inspire you or that you want to reuse and/or adapt must minimally be **cited using their persistent identifiers e.g. DOIs** (and otherwise URL with author, date, and time of access) and you must **follow the license and/or usage agreement** provided by the authors. 
 A research output (e.g. data, code) without a license or statement granting your permission for reuse cannot legally be reused even if they appear publicly online.
 
 ::: {.panel-tabset}
 
-#### 1.1.1. Articles  <!--make this, and other tabs title everywhere, a shareable url, cross referencable within this website  -->
+#### 1.1.1. Articles
 
-* **Review existing literature** on open source registries like [OpenAlex](https://openalex.org/) to come up with a well-founded research question,
-* **Use a reference manager** to keep track of your bibliography. [Zotero](https://www.zotero.org/) is an open source software that can be integrated within RStudio to write reproducible manuscripts seamlessly, formatting your bibliography in any format you want (see [3. Analyze & Collaborate](03_analyze_and_collaborate.qmd){.mark}).
-
-<!-- need to include cards and text for Open Alex PuMed -> Europe PMC and preprint servers -->
-
-<!-- Preprint Servers
-
-Share manuscripts before peer review to get early feedback and establish priority:
-
-::: {.orc-grid-tools}
-
-<div class="orc-card-tool">
-<div class="orc-card-tool-icon"><img src="https://cdn.simpleicons.org/osf" alt="OSF"></div>
-<h4>[OSF Preprints](https://osf.io/preprints/)</h4>
-<p>Multidisciplinary preprint service</p>
-<details class="orc-card-details">
-<summary>Read more</summary>
-<p>All disciplines welcome. Integration with OSF projects, flexible requirements.</p>
-</details>
-</div>
-
-<div class="orc-card-tool">
-<div class="orc-card-tool-icon"><i class="bi bi-file-earmark-medical"></i></div>
-<h4>[bioRxiv](https://www.biorxiv.org/)</h4>
-<p>Biological sciences preprints</p>
-<details class="orc-card-details">
-<summary>Read more</summary>
-<p>Free hosting, DOI assignment, rapid posting. Widely recognized in life sciences and neuroscience.</p>
-</details>
-</div>
-
-<div class="orc-card-tool">
-<div class="orc-card-tool-icon"><i class="bi bi-heart-pulse"></i></div>
-<h4>[medRxiv](https://www.medrxiv.org/)</h4>
-<p>Medical and health sciences preprints</p>
-<details class="orc-card-details">
-<summary>Read more</summary>
-<p>Medical research focus with health screening. DOI assignment, linked to bioRxiv infrastructure.</p>
-</details>
-</div>
-
-<div class="orc-card-tool">
-<div class="orc-card-tool-icon"><i class="bi bi-calculator"></i></div>
-<h4>[arXiv](https://arxiv.org/)</h4>
-<p>Physics, mathematics, computer science</p>
-<details class="orc-card-details">
-<summary>Read more</summary>
-<p>Established 1991. Moderation system, LaTeX support. Standard in quantitative fields.</p>
-</details>
-</div>
-
-::: -->
+* **Review existing literature** to come up with a well-founded research question. We recommend to use open source discipline-agnostic registries like [OpenAlex](https://openalex.org/) which contains published articles, thesis, and preprints (scholarly work that are not (yet) peer-reviewed) of all disciplines, or discipline-specific open source registries such as [Europe PubMed Central](https://europepmc.org/) for life sciences preprints and published articles.
+* **Use a reference manager** to keep track of your bibliography. [Zotero](https://www.zotero.org/) is an open source software formatting your bibliography in any desired format and that can be integrated within e.g. Microsoft Word, Google Doc, or RStudio for writing reproducible manuscripts (see [3. Analyze & Collaborate](03_analyze_and_collaborate.qmd){.mark}).
 
 
-
-<!-- 
-This section uses Bootstrap structure to create a responsive card layout.
-- The main .container div must always be present.
-- Each section (Learn More / Tools & Resources) is wrapped in a .row.
-- IF one of the section is not needed, remove the entire .row block and its downstream .col divs.
-
-HOW TO ADD CARDS?
-- Each card should always be placed inside a .col div.
-- To add a new card, simply copy an existing .col block and edit the links, img, title, and text.
-- Add as many .col blocks as needed within the .row, the cards are automatically laid out 3 cards per row and any additional cards will wrap to the next row.
-
--->
 <!-- main container div -->
 ::: {.container .my-4 }
 
@@ -123,9 +60,8 @@ HOW TO ADD CARDS?
 <!-- row for Learn More section -->
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
 
-<!-- 1st card -->
+<!--  card -->
 ::: {.col}
-<!-- Actual card component -->
 <div class="card orc-card-tool h-100 position-relative">
 <span class="orc-card-tool-badge recommended">OSC Tutorial</span>
 <div class="orc-card-tool-icons mb-2">
@@ -151,33 +87,46 @@ HOW TO ADD CARDS?
 
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
 
-<!-- 1st card -->
+<!-- card -->
 ::: {.col}
 
 <div class="card orc-card-tool h-100 position-relative">
 <div class="orc-card-tool-icon mb-2"> 
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/OpenAlex_2025_favicon.svg/250px-OpenAlex_2025_favicon.svg.png" class="img-fluid" alt="OpenAlex icon">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/OpenAlex_2025_favicon.svg/250px-OpenAlex_2025_favicon.svg.png" class="img-fluid" alt="OpenAlex logo">
 </div>
 <h4 class="card-title">OpenAlex</h4>
-<p class="card-text"> All the world's research, connected and open. </p>
+<p class="card-text">All the world's research, connected and open.</p>
 <a href="https://openalex.org/" class="stretched-link" target="_blank" rel="noopener"></a>
-
 </div>
 
 :::
 
+<!-- card -->
+::: {.col}
+
+<div class="card orc-card-tool h-100 position-relative">
+<div class="orc-card-tool-icon mb-2"> 
+<img src="https://europepmc.org/img/Europe%20PMC%20Basic%20Logo%20RGB.71c1dbf7.png" class="img-fluid" alt="Europe PMC logo">
+</div>
+<h4 class="card-title">Europe PubMed Central</h4>
+<p class="card-text">Comprehensive access to life sciences literature.</p>
+<a href="https://europepmc.org/" class="stretched-link" target="_blank" rel="noopener"></a>
+</div>
+
+:::
+
+<!-- Add more cards if needed after this block -->
 :::
 
 :::
 
 #### 1.1.2. Preregistrations
 
-A **preregistration** typically consists of a hypothesis and predictions, a plan for data collection (when relevant), and a plan for data analysis, that researchers upload before starting their projects, often in order to increase the rigor of confirmatory research (see [1.4.1. Pre-analysis planning](<!--internal link-->)). <!-- this link doesnot work-->
-<!-- this cross ref is not working, it's not a md title FIXME either link to the study design ana analysis plan title or the tab pre analysis plan if possible. with an internal looking cross ref greyish thing-->
+A **preregistration** typically consists of a hypothesis and predictions, a plan for data collection (when relevant), and a plan for data analysis, that researchers upload before starting their projects, often in order to increase the rigor of confirmatory research (see [1.4.1. Pre-analysis planning](#sec-study-design-analysis-plan){.mark}). 
 
 <br>
 
-To have some **insight into projects that are not (yet) published**, either currently ongoing or abandoned, you can therefore look for projects that were preregistered. Projects that are left unpublished typically have a note attached to their preregistration. Some registries are discipline-specific while others are discipline-agnostic.
+- **Get insight into projects that are not (yet) published**, either currently ongoing or abandoned, by looking for projects that were preregistered. Projects that are left unpublished typically have a note attached to their preregistration. Some registries are discipline-specific while others are discipline-agnostic (see below).
 
 ::: {.container .my-4 }
 
@@ -257,17 +206,24 @@ To have some **insight into projects that are not (yet) published**, either curr
 
 #### 1.1.3. Data
 
-To find **existing datasets**, search for discipline-specific repositories on [re3data](https://www.re3data.org/) which is a central registry of all repositories, or explore subject agnostic repositories such as [DataCite](https://datacite.org/), [FigShare](https://figshare.com/browse), [Open Science Framework (OSF)](https://osf.io/search), or [Zenodo](https://zenodo.org/) (oftentimes with the corresponding analysis code). These platforms either give you access to existing data or provide _metadata_ and explanations on how to request access to the data. **Metadata** are data about your data, such as author, date, measurement device, unit of measurement, context of data collection, ect.
+<h5 class="fs-5 no-anchor">How to find existing dataset?</h5>
 
+- **Search for discipline-specific repositories on [re3data](https://www.re3data.org/)** which is a central registry of all repositories
+- **Exploring subject agnostic repositories** such as [DataCite](https://datacite.org/), [FigShare](https://figshare.com/browse), [Open Science Framework (OSF)](https://osf.io/search), or [Zenodo](https://zenodo.org/) (oftentimes with the corresponding analysis code). 
+
+These platforms either give you access to existing data or provide [**metadata**]{.underline} and explanations on how to request access to the data. 
+
+::: {.callout-note}
+[**Metadata**]{.underline} are data about your data, such as author, date, measurement device, unit of measurement, context of data collection, ect.
+:::
 <br>
 
-Found a dataset to reuse? 
+<h5 class="fs-5 no-anchor">How to reuse a dataset?</h5>
 
-<br>
-
-* **Review metadata and documentation.** Make sure you know where your data comes from, how the data was collected and processed, and reflect on whether any of it poses problems for your research question. 
-* **Check what requirements the data sources have.** Some requirement to access the data may be to submit a preregistration (see [1.4 Study Design & Analysis Plan](#sec-study-design-analysis-plan){.mark}).
-* **Use the metadata to plan your analysis.** A data dictionary (or "codebook") and other documentation describing the variables, range of values, ect., may be available and should be reviewed. To minimize confirmation or hindsight bias, do not plot the data immediately; instead, prepare a pre-analysis plan by examining the documentation.(see [1.4 Study Design & Analysis Plan](#sec-study-design-analysis-plan){.mark}).  
+- **Review the license and data use agreement.** Make sure your understand what you are allowed to do with the data and under what conditions. Even if the license does not request attribution of the authors, you have to cite the source of the data for any of your scholarly work based on it.
+- **Review metadata and documentation.** Make sure you know where your data comes from, how the data was collected and processed, and reflect on whether any of it poses problems for your research question. 
+- **Check what additional requirements the data sources have.** Some requirement to access the data may be to submit a preregistration (see [1.4 Study Design & Analysis Plan](#sec-study-design-analysis-plan){.mark}).
+- **Use the metadata to plan your analysis.** A data dictionary (or "codebook") and other documentation describing the variables, range of values, ect., may be available and should be reviewed. To minimize confirmation or hindsight bias, do not plot the data immediately; instead, prepare a pre-analysis plan by examining the documentation.(see [1.4 Study Design & Analysis Plan](#sec-study-design-analysis-plan){.mark}).  
 
 
 ::: {.container .my-4 }
@@ -276,7 +232,7 @@ Found a dataset to reuse?
 
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
 
-<!--1st card-->
+<!--card-->
 ::: {.col}
 
 <div class="card orc-card-tool h-100 position-relative">
@@ -291,7 +247,7 @@ Found a dataset to reuse?
 
 :::
 
-<!--2nd card-->
+<!-- card-->
 ::: {.col}
 
 <div class="card orc-card-tool h-100 position-relative">
@@ -357,12 +313,12 @@ Found a dataset to reuse?
 
 #### 1.1.4. Code
 
-You may find **code available for reuse** archived on [Zenodo](https://zenodo.org/) or actively developed on [GitHub](https://github.com/). Learn how to work with GitHub in more details in [3. Analyze & Collaborate](03_analyze_and_collaborate.qmd){.mark} or start learning Git version control now! 
+**Find code available for reuse** archived on [Zenodo](https://zenodo.org/) or actively developed on [GitHub](https://github.com/). Learn how to work with GitHub in more details in [3. Analyze & Collaborate](03_analyze_and_collaborate.qmd){.mark} or start learning Git version control now! 
  
 <br>
 
 :::{.callout-important}
-Code publicly visible on GitHub without a license or equivalent text explicitly stating permission for reuse cannot be legally reused. The best is to ask the authors to add an **open license** to their repository to allow reuse (for this, they can for instance add a file called LICENSE.txt with e.g. the [Apache 2.0 license text](https://www.apache.org/licenses/LICENSE-2.0.txt) that allows reuse - see our [code publishing tutorial](https://lmu-osc.github.io/code-publishing/choose_license.html) to learn more about licenses).
+Code publicly visible on GitHub without a license or equivalent text explicitly stating permission for reuse cannot be legally reused. It is best to ask the authors to add an **open license** to their repository to explicitly allow reuse (to do this, they can, for instance, add a file called LICENSE.txt with the [Apache 2.0 license text](https://www.apache.org/licenses/LICENSE-2.0.txt) - see our [code publishing tutorial](https://lmu-osc.github.io/code-publishing/choose_license.html) to learn more about licenses).
 :::
 
 
@@ -373,9 +329,8 @@ Code publicly visible on GitHub without a license or equivalent text explicitly 
 <!-- row for Learn More section -->
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
 
-<!-- 1st card -->
+<!-- card -->
 ::: {.col}
-<!-- Actual card component -->
 <div class="card orc-card-tool h-100 position-relative">
 <span class="orc-card-tool-badge recommended">OSC Tutorial</span>
 <div class="orc-card-tool-icons mb-2">
@@ -393,7 +348,7 @@ Code publicly visible on GitHub without a license or equivalent text explicitly 
 
 :::
 
-<!-- 2nd card -->
+<!-- card -->
 ::: {.col}
 
 <div class="card orc-card-tool h-100 position-relative">
@@ -420,7 +375,7 @@ Code publicly visible on GitHub without a license or equivalent text explicitly 
 
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
 
-<!-- 1st card -->
+<!-- card -->
 ::: {.col}
 
 <div class="card orc-card-tool h-100 position-relative">
@@ -435,7 +390,7 @@ Code publicly visible on GitHub without a license or equivalent text explicitly 
 
 :::
 
-<!-- 2nd card -->
+<!-- card -->
 ::: {.col}
 
 <div class="card orc-card-tool h-100 position-relative">
@@ -764,7 +719,7 @@ responsible, and how updates are reviewed/approved and communicated. -->
 
 #### 1.4.1. Pre-analysis planning 
 
-##### Why should you plan your statistical plan prior to collecting data? 
+<h5 class="fs-5 no-anchor">Why should you plan your statistical plan prior to collecting data?</h5>
 
 Humans are prone to cognitive biases such as **confirmation bias** (seeking information that supports existing beliefs) and **hindsight bias** (believing outcomes were predictable after the fact). In research, these biases can distort findings, especially when researchers make analytic decisions after seeing results. Although statistical testing typically accepts a 5% false positive rate, **"researcher degrees of freedom"** — choices about data collection, exclusions, transformations, sample size, covariates, etc. — can dramatically inflate false positives when decisions are made post hoc. Practices like increasing sample size until reaching statistical significance, selectively removing outliers, or trying multiple analytic strategies **increase the likelihood of false-positive results**. <!-- p-Hacking interactive demo  https://shinyapps.org/apps/p-hacker/ - See how easy it is to find “significant” results -->
 
@@ -774,7 +729,7 @@ The core problem is that analyses guided by observed outcomes allow biases to in
 
 <br>
 
-##### Benefits of preregistration 
+<h5 class="fs-5 no-anchor">Benefits of preregistration</h5>
 
  Preregistration, that is, specifying hypotheses, methods, and analysis plans before data collection or analysis, constrains bias in confirmatory testing while still allowing exploratory analyses, clearly **distinguishing robust hypothesis tests from hypothesis-generating work**. This improves credibility, limits false positives, and often leads to better study design through **early methodological feedback**.
 
@@ -790,7 +745,7 @@ A great tool to create your statistical plan, especially for early career resear
 
 <br>
 
-##### <i class="bi bi-list-check"></i> What is included in a preregistration?
+<h5 class="fs-5 no-anchor"><i class="bi bi-list-check"></i> What is included in a preregistration?</h5>
 
 Several [preregistration templates](https://help.osf.io/article/330-welcome-to-registrations) exist. While the [standard OSF preregistration template](https://docs.google.com/document/d/1gkN0Jp6Gu7GIA4Ne4YCDZ61nCLQRgt32moRdUg9AnVg/edit?tab=t.0#heading=h.fwbi14d4b65g) is most commonly used, some are tailored for specific field or specific methods (e.g. systematic review, qualitative work, secondary data analysis).
 
@@ -808,7 +763,8 @@ Your preregistration will define your study's:
 - **How to deal with missing data**
 <br>
 
-##### Publishing process
+
+<h5 class="fs-5 no-anchor">Publishing process</h5>
 
 Once your study plan is finalized:
 <br>
@@ -821,7 +777,7 @@ This process improves transparency and is inviting valuable **early feedback fro
 
 <br>
 
-##### Registered Reports
+<h5 class="fs-5 no-anchor">Registered Reports</h5>
 
 Registered Reports are a publication format, now adopted by over 300 journals (see [participating journals](https://www.cos.io/initiatives/registered-reports)), where **preregistrations are peer-reviewed before data collection**. Reviewers evaluate the hypotheses, methods, and planned analyses, allowing methodological improvements. If the plan is approved, the journal grants in-principle acceptance, meaning publication is guaranteed provided researchers follow the protocol.
 
