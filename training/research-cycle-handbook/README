@@ -1,6 +1,4 @@
-
-
-STRUCTURE OF THE HANDBOOK
+# STRUCTURE OF THE HANDBOOK
 
 Within the training folder, the landing page of the handbook is the file research-cycle-handbook.qmd.
 
@@ -9,9 +7,28 @@ Every other material for the handbook is in the folder training/research-cycle-h
 - handbook-style.css for custom css (hero, pills, checklist, cards, internal link formatting)
 - one qmd file per chapter
 
+# WHAT IS THE STYLE OF WRITING?
+
+I tried to be recipe-like, i.e. using the imperative form: 
+- **Do this** because.
+- **Do that** because.
+
+When using a specialized term in a new chapter, I have used bold and underline formatting and then defined it in a callout information box with the bold and underlined term.
+
+I’ve used callout tip boxes for tips to research groups (to develop SOPs).
+
+I’ve used callout important note for important things to avoid.
 
 
-HOW TO ADD CARDS?
+# WHAT ARE THE TOOLS AND RESOURCES INCLUDED?
+
+- tools and tutorials of ours, or 
+- essential tools we use in our own teaching (e.g. re3data, open policy finder), or 
+- those that fill a gap in our current material but would be needed in our teaching (e.g. consent form language often requested within the framework of SwOP and OSS)
+- well established, discipline agnostic or interdisciplinary, maintained tools
+
+
+# HOW TO ADD CARDS?
 
 This section uses Bootstrap structure and custom css to create a responsive card layout.
 - The main .container div must always be present.
@@ -54,8 +71,7 @@ template:
 
 
 
-
-HOW TO ADD CROSS-REFERENCES TO PAGES, SECTIONS, TABS OF THE HANDBOOK?
+# HOW TO ADD CROSS-REFERENCES TO PAGES, SECTIONS, TABS OF THE HANDBOOK?
 
 Note that:
 - I want the text to be displayed to be [X.X.X. Title] which isn't native to quarto so I currently type that text manually.
@@ -71,7 +87,7 @@ Also note that I would prefer the annotation X.X. with the final dot, but this i
 
 
 
-HOW TO REMOVE ANCHOR?
+# HOW TO REMOVE ANCHOR?
 
 Adding the following class to html title remove their anchors, e.g.:
 <h5 class="fs-5 no-anchor">Title</h5>
@@ -79,7 +95,7 @@ Adding the following class to html title remove their anchors, e.g.:
 I believe this is using remove_anchor.lua function stored in assets.
 
 
-HOW TO FORMAT LISTS BETWEEN SECTION TITLE AND panel-tabset IN orc-details-panel?
+# HOW TO FORMAT LISTS BETWEEN SECTION TITLE AND panel-tabset IN orc-details-panel?
 
 I am not sure why the bullet points are in the margin when a list is in this location. I suppose the orc-details-panel custom css could be adjusted. Currently, I use:
 
@@ -89,7 +105,7 @@ I am not sure why the bullet points are in the margin when a list is in this loc
 
 
 
-HOW TO CUSTOMIZE CHAPTERS
+# HOW TO CUSTOMIZE CHAPTERS?
 
 So far, the Hero, Pills, and Checklist of Chapter 1 and 2 were customized using the following lines and associated custom css: 
 
@@ -105,3 +121,4 @@ So far, the Hero, Pills, and Checklist of Chapter 1 and 2 were customized using 
 
 Chapter 4 was not yet customized. Chapter 3 need work to make a yellow-brown-ish tone background to white text accessible.
 These lines were commented with e.g. <!-- RL still working on <div class="orc-phase-hero-compact phase-3"> --> in the chapters's page.
+
