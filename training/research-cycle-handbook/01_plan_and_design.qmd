@@ -368,6 +368,22 @@ Code publicly visible on GitHub without a license or equivalent text explicitly 
 
 :::
 
+::: {.col}
+
+<div class="card orc-card-tool h-100 position-relative">
+<span class="orc-card-tool-badge recommended">OSC Tutorial</span>
+<div class="orc-card-tool-icons mb-2">
+<div class="orc-card-tool-icon icon-1">
+<img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+</div>
+</div>
+<h4 class="card-title">Code Publishing</h4>
+<p class="card-text">Add README and license to a reproducible project.</p>
+<a href="https://lmu-osc.github.io/code-publishing/" class="stretched-link" target="_blank" rel="noopener"> </a>
+</div>
+
+:::
+
 :::
 
 <h4 class="fs-5 mt-3"><i class="bi bi-tools"></i> TOOLS & RESOURCES</h4>
@@ -424,27 +440,26 @@ Code publicly visible on GitHub without a license or equivalent text explicitly 
 
 #### 1.2.1. LMU guidelines
 
-The [LMU Guidelines for Safeguarding Good Scientific Practice](https://cms-cdn.lmu.de/media/contenthub/amtliche-veroeffentlichungen/gwp-ordnung.pdf) (in german) are legally binding for all academics, researchers, research support staff, teachers, and students at LMU Munich. Only the original text in German prevails, but here is an English summary of relevant aspects for this guide: 
+The [LMU Guidelines for Safeguarding Good Scientific Practice](https://cms-cdn.lmu.de/media/contenthub/amtliche-veroeffentlichungen/gwp-ordnung.pdf) are legally binding for all academics, researchers, research support staff, teachers, and students at LMU Munich. Only the original text in German prevails, but we provide an English summary of relevant aspects for this guide: 
 
 <br>
 
-<h5>Appropriate level of documentation and standards to allow **reproduction**:</h5> <!-- individually remove anchor tags for these titles within pages -->
+<h5 class="fs-5 no-anchor">Appropriate level of documentation and standards to allow **reproduction**:</h5> <!-- individually remove anchor tags for these titles within pages -->
 
-* Reproducible methods must be used. (§11)
+* **Reproducible methods must be used.** (§11)
 * When research software is developed, its source code must be documented. (§12)
 
-<h5>Appropriate level of documentation and standards to allow **replication**:</h5>
+<h5 class="fs-5 no-anchor">Appropriate level of documentation and standards to allow **replication**:</h5>
 
 * All information relevant to the production of a research result must be documented comprehensively to enable replication. (§7 and §12)
 * If specific professional recommendations exist for review and evaluation, the results must be documented in accordance with these respective specifications. (§12) 
 * Individual results that do not support the hypothesis must also be documented; **a selection of results is not permitted**. (§12)
 
-<h5>Public access to research results:</h5>
+<h5 class="fs-5 no-anchor">Public access to research results:</h5>
 
 * Apart from specific exceptions, **all findings should be made public**. For this, they must be described in a detailed and comprehensible manner which includes making available the research data, materials and information on which the results are based, as well as the methods used and the software employed (including appropriately licensed self-written software) **according to the [FAIR principles]{.underline}**. (§13)
 * Data, material, software made publicly accessible must be appropriately archived, usually for a period of 10 years (§17).
 
-<br>
 
 In later sections, you will acquire skills in FAIR data management and reproducible workflow that will enable you to comply with these guidelines.
 
@@ -452,14 +467,14 @@ In later sections, you will acquire skills in FAIR data management and reproduci
 
 :::{.callout-note}
 
-The **[FAIR principles]{.underline}** are defined as:  
+The [**FAIR principles**]{.underline} are defined as:  
 
-- **F**indable: metadata should be deposited in a searchable repository and be assigned a permanent identifier\
-- **A**ccessible: the data is either open, or accessible upon some authentication process, or closed, but with open metadata.\
+- **F**indable: [**metadata**]{.underline} should be deposited in a searchable repository and be assigned a permanent identifier\
+- **A**ccessible: the data is either open, or accessible upon some authentication process, or closed, but with open [**metadata**]{.underline}.\
 - **I**nteroperable: the data is described with a standard terminology (so the dataset can be merged with other ones) and saved in a stable file format\
 - **R**eusable: the data is richly documented (e.g. with a data dictionary) and is accompanied by a data usage license
 
-**Metadata** are data about your data, such as author, date, measurement device, unit of measurement, context of data collection, ect.
+[**Metadata**]{.underline} are data about your data, such as author, date, measurement device, unit of measurement, context of data collection, ect.
 
 <br>
 
@@ -491,31 +506,34 @@ See [https://www.go-fair.org/fair-principles/](https://www.go-fair.org/fair-prin
 
 #### 1.2.2. Funders
 
-Funders may have additional **open and reproducible science requirements** on top of those indicated in the LMU guidelines. For instance, some calls request a Research Data Management plan before making their second payment, some specify the extent and timing of data sharing and provide funds for such activity. Check all requirements in the call information sheets.
+- **Check all funders' open science requirements in the call information sheets.** Funders may have additional  requirements on top of those indicated in the LMU guidelines. For instance, some calls request a Research Data Management plan before making their second payment, some specify the extent and timing of data sharing and provide funds for such activity. 
 
-<br>
 
-**Contact the [LMU Research Funding Unit](https://www.lmu.de/en/research/research-services/contact.html) to review your grant proposal** and assess if your proposal is meeting your funders' open science requirements. 
+- **Contact the [LMU Research Funding Unit](https://www.lmu.de/en/research/research-services/contact.html) to review your grant proposal** and assess if your proposal is meeting your funders' open science requirements. 
 
 #### 1.2.3. Ethics
 
-Data collection and analyses conducted on animals and humans typically requires the approval of your Faculty's ethics committee to make sure your research will be conducted responsibly, and that participants’ data will be protected.
+Data collection and analyses involving human participants or animal subjects typically require approval from  Faculties ethics committees to ensure responsible conduct and the protection of data.
 
 <br>
 
 ##### <i class="bi bi-list-check"></i> Your ethics proposal will typically include information on: 
 
-* **Data storage and retention** – outlining how data will be securely stored, backed up, and retained over time. This information can be extracted from a more detailed Research Data Management plan (see @sec-research-data-management).
-* **Risks if the data were leaked** – identifying potential consequences for participants or the research project if confidentiality is breached.
-* **Data anonymization** – describing procedures to remove or obscure personally identifiable information to protect participant privacy (see [2.3.2. Anonymization](<!--internal link-->) for options, from simple techniques of anonymization to the creation of synthetic data).
-* **Language of the informed consent forms** – ensuring that participants clearly understand the purpose, procedures, and any potential risks of the study. Conditions for sharing their data should be clearly explained here (see [2.3.1. Informed Consent](<!--internal link-->)). 
-* **Power analysis** to justify sample size – providing a statistical rationale for the number of participants, which supports the validity and ethical justification of the study. This, and more detailed information on the statistical plan, can be extracted from your pre-analysis plan (see [1.4.1. Pre-analysis planning](<!--internal link-->) and [1.4.3. Power analyses](<!--internal link-->)). <!-- wil these links work?? if not, let's not leave dead links all over the place, let's keep them makred with a comment, if needed we can tag the header of the section though leave the text identifying the subsection intact.  those linking panel tabsets dont work-->
-
+- **Data storage and retention** – outlining how data will be securely stored, backed up, and retained over time. This information can be extracted from a more detailed Research Data Management plan (see [1.3. Research Data Management Plans](sec-research-data-management){.mark}).
+- **Risks if the data were leaked** – identifying potential consequences for participants or the research project if confidentiality is breached.
+- **Data anonymization** – describing procedures to remove or obscure personally identifiable information to protect participant privacy (see [2.3.2. Anonymization](#sec-ethics-and-privacy){.mark} for options, from simple techniques of anonymization to the creation of synthetic data).
+- **Informed consent forms language** – ensuring that participants clearly understand the purpose, procedures, and any potential risks of the study. Conditions for sharing their data should be clearly explained here (see [2.3.1. Informed Consent](#sec-ethics-and-privacy){.mark}). 
+- **Power analysis** to justify sample size – providing a statistical rationale for the number of participants, which supports the validity and ethical justification of the study. This, and more detailed information on the statistical plan, can be extracted from your pre-analysis plan (see [1.4.1. Pre-analysis planning](#sec-study-design-analysis-plan){.mark} and [1.4.3. Power analyses](#sec-study-design-analysis-plan){.mark}). 
 
 For data protection guidance, contact the [LMU Data Protection Officer](https://www.lmu.de/en/about-lmu/structure/central-university-administration/legal-matters/data-protection/) or the [Research Data Management team of the University Library ](https://www.en.ub.uni-muenchen.de/writing/research_data/research-data-management/index.html).
 
-<!-- should be a team SOP with application language, consent form language ect -->
+<br>
 
+:::{.callout-tip}
+## Tip for research groups to streamline this process
+- **Share templates and example resources amongst team members.** Include e.g. previously approved ethics proposal language, approved Data Protection Impact Assessment forms, Data Management Plans on a common server space.
+- **Create Standard Operating Procedures for the team** for processed such as appropriate anonymization technique for a specific data type, power analyses script for a specific kind of common analysis, define when a data management plan must be updated, who is responsible, and how updates are reviewed/approved and communicated.
+:::
 
 ::: {.container .my-4}
 
@@ -542,16 +560,15 @@ For data protection guidance, contact the [LMU Data Protection Officer](https://
 
 ::: {.col}
 <div class="card orc-card-tool w-100 h-100 position-relative">
-<span class="orc-card-tool-badge recommended">OSC Tutorial (tba) </span>
+<span class="orc-card-tool-badge recommended">OSC Tutorial</span>
 <div class="orc-card-tool-icons mb-2">
 <div class="orc-card-tool-icon icon-1">
 <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
 </div>
 </div>
-<h4 class="card-title">Data Anonymization</h4>
-<p class="card-text">Implement data anonymization techniques in R. (X h)</p>
-<!-- Add link when available -->
-<a href="#" class="stretched-link" rel="noopener"></a>
+<h4 class="card-title">TBA: Data Anonymization</h4> <!-- edit when available -->
+<p class="card-text">Implement data anonymization techniques in R. (X h)</p> <!-- edit when available -->
+<a href="#" class="stretched-link" rel="noopener"></a><!-- Add link when available -->
 </div>
 
 :::

@@ -19,6 +19,37 @@ This section uses Bootstrap structure and custom css to create a responsive card
 - Add as many .col blocks as needed within the .row, the cards are automatically laid out 3 cards per row and any additional cards will wrap to the next row.
 
 
+::: {.container .my-4 }
+
+<!-- row for Learn More section -->
+<h4 class="fs-5"><i class="bi bi-mortarboard"></i> LEARN MORE</h4>
+::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
+
+::: {.col}
+<!-- card -->
+:::
+
+::: {.col}
+<!-- card -->
+:::
+:::
+
+<!-- row for Tools & Resources section -->
+<h4 class="fs-5 mt-3"><i class="bi bi-tools"></i> TOOLS & RESOURCES</h4>
+::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
+
+::: {.col}
+<!-- card -->
+:::
+
+::: {.col}
+<!-- card -->
+:::
+:::
+:::
+
+
+
 HOW TO ADD CROSS-REFERENCES TO PAGES, SECTIONS, TABS OF THE HANDBOOK?
 
 Note that:
@@ -37,6 +68,6 @@ Also note that I would prefer the annotation X.X. with the final dot, but this i
 HOW TO REMOVE ANCHOR?
 
 By using remove_anchor.lua in assets, adding the following class to html title remove their anchors, e.g.:
-<h5 class="fs-5 no-anchor"><i class="bi bi-list-check"></i> What is included in a preregistration?</h5>
+<h5 class="fs-5 no-anchor">Title</h5>
 
 
