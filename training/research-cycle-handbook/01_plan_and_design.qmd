@@ -517,7 +517,7 @@ Data collection and analyses involving human participants or animal subjects typ
 
 <br>
 
-##### <i class="bi bi-list-check"></i> Your ethics proposal will typically include information on: 
+<h5 class="fs-5 no-anchor"><i class="bi bi-list-check"></i> Your ethics proposal will typically include information on:</h5>
 
 - **Data storage and retention** – outlining how data will be securely stored, backed up, and retained over time. This information can be extracted from a more detailed Research Data Management plan (see [1.3. Research Data Management Plans](sec-research-data-management){.mark}).
 - **Risks if the data were leaked** – identifying potential consequences for participants or the research project if confidentiality is breached.
@@ -607,23 +607,35 @@ For data protection guidance, contact the [LMU Data Protection Officer](https://
 
 </summary>
 
-A Data Management Plan (DMP) documents how you will handle research data throughout your project. Writing a DMP prompts you to think and document decisions you might otherwise leave implicit. For instance, you must decide before data collection whether you will eventually share your data publicly and where, in order to get ethics approval on the right plan, design consent form for participants, collect appropriate metadata for the target repository, ect (see lectures "[Why share data openly?](https://lmu-osc.github.io/training/data-management/open-data.html)" and "[Maintaining privacy with open data](https://lmu-osc.github.io/training/data-management/maintaining-privacy-with-open-data.html)").  
+A **Data Management Plan (DMP)** documents how you will handle research data throughout your project. Writing a DMP prompts you to think and document decisions you might otherwise leave implicit. 
+
+::: {.ms-1} 
+- **Decide _before_ data collection whether you will eventually share your data publicly (and where)**, in order to (i) get ethics approval on the right plan, (ii) design consent form for participants, (iii) collect appropriate metadata for the target repository, ect.
+- **Start with what you know, and refine the details as your project develops.** Your DMP is a living document that you will refine to match the reality of your project while ensuring data protection and streamline collaborations (see [2.2. Data Management](02_collect_and_manage.qmd#sec-data-management){.mark}), [3.1. Data Processing & Analysis](03_analyze_and_collaborate.html#sec-data-processing-analysis){.mark}, and [4.1. Data Sharing](04_preserve_and_share.html#sec-data-sharing){.mark}).
+:::
 
 ##### <i class="bi bi-list-check"></i> Your DMP will ask:
 
-- **What data** will you collect or generate (types, formats, volume, sources)? See also [2.1. Data Collection](02_collect_and_manage.html#sec-data-collection){.mark}.
-- **How will you describe it** (metadata standards, documentation practices)? See also [2.2. Data Management](02_collect_and_manage.html#sec-data-management){.mark} for these and the next questions.
+- **What data** will you collect or generate (types, formats, volume, sources)? See [2.1. Data Collection](02_collect_and_manage.html#sec-data-collection){.mark}.
+- **How will you describe it** (metadata standards, documentation practices)? See [2.2. Data Management](02_collect_and_manage.html#sec-data-management){.mark} for these and the next questions.
 - **How will you organize files** (naming conventions, folder structure, versioning)?
 - **Where will you store it** (locations, backups, access controls)?
 - **How will you ensure quality** (validation checks, error-handling)?
-- **How will you share outputs** (repositories, licenses, embargo periods)? See also [4.1. Data Sharing](04_preserve_and_share.html#sec-data-sharing){.mark}
-- **What constraints apply** (consent, anonymization, GDPR, data use agreements)? See also [1.2.3. Ethics](){.mark} and [2.3. Ethics & Privacy](02_collect_and_manage.html#sec-ethics-and-privacy){.mark}
+- **How will you share outputs** (repositories, licenses, embargo periods)? See our lecture "[Why share data openly?](https://lmu-osc.github.io/training/data-management/open-data.html)" and [4.1. Data Sharing](04_preserve_and_share.html#sec-data-sharing){.mark}
+- **What constraints apply** (consent, anonymization, GDPR, data use agreements)? See our lecture "[Maintaining privacy with open data](https://lmu-osc.github.io/training/data-management/maintaining-privacy-with-open-data.html)", [1.2.3. Ethics](){.mark} and [2.3. Ethics & Privacy](02_collect_and_manage.html#sec-ethics-and-privacy){.mark}.
 
-The specific questions vary by discipline, data type, and funder requirements. DMP tools like [RDMO](https://rdmo.ub.lmu.de/) guide you through the relevant questions with funder-specific templates. Your DMP is a living document: start with what you know, and refine the details as your project develops (see [2.2. Data Management](02_collect_and_manage.qmd#sec-data-management){.mark}, [3.1. Data Processing & Analysis](03_analyze_and_collaborate.html#sec-data-processing-analysis){.mark}, and [4.1. Data Sharing](04_preserve_and_share.html#sec-data-sharing){.mark}).
+<br>
 
-<!-- should be a team SOP 
-Policies / SOPs support consistent DMP updates (lab-level) that define when a DMP must be updated, who is
-responsible, and how updates are reviewed/approved and communicated. -->
+The specific questions vary by discipline, data type, and funder requirements. DMP tools like [RDMO](https://rdmo.ub.lmu.de/) guide you through the relevant questions with funder-specific templates. 
+
+<br>
+
+:::{.callout-tip}
+## Tip for research groups to streamline this process
+- **Share templates and example DMP amongst team members** on a common server space.
+- **Create Standard Operating Procedures for the team.** Define when a data management plan must be updated, who is responsible, and how updates are reviewed/approved and communicated.
+:::
+
 
 ::: {.container .my-4}
 <h4 class="fs-5"><i class="bi bi-mortarboard"></i> LEARN MORE</h4>

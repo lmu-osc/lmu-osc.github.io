@@ -1,6 +1,8 @@
+
+
 STRUCTURE OF THE HANDBOOK
 
-Within the training folder, the landing page of the handbook is research-cycle-handbook.qmd.
+Within the training folder, the landing page of the handbook is the file research-cycle-handbook.qmd.
 
 Every other material for the handbook is in the folder training/research-cycle-handbook:
 - assets contains e.g. checklists for readers to download as word documents, a lua function to remove unnecessary anchors to specific titles
@@ -8,16 +10,18 @@ Every other material for the handbook is in the folder training/research-cycle-h
 - one qmd file per chapter
 
 
+
 HOW TO ADD CARDS?
 
 This section uses Bootstrap structure and custom css to create a responsive card layout.
 - The main .container div must always be present.
 - Each section (Learn More / Tools & Resources) is wrapped in a .row.
-- IF one of the section is not needed, remove the entire .row block and its downstream .col divs.
+- If one of the section is not needed, remove the entire .row block and its downstream .col divs.
 - Each card should always be placed inside a .col div.
 - To add a new card, copy an existing .col block and edit the links, img, title, and text.
 - Add as many .col blocks as needed within the .row, the cards are automatically laid out 3 cards per row and any additional cards will wrap to the next row.
 
+template: 
 
 ::: {.container .my-4 }
 
@@ -50,24 +54,54 @@ This section uses Bootstrap structure and custom css to create a responsive card
 
 
 
+
 HOW TO ADD CROSS-REFERENCES TO PAGES, SECTIONS, TABS OF THE HANDBOOK?
 
 Note that:
-- we want the text to be displayed to be [X.X.X. Title] which isn't native to quarto so I currently type that text manually.
-- we want the internal cross reference links to be de-emphasize (italic grey), so I currently use the custom css {.mark}
+- I want the text to be displayed to be [X.X.X. Title] which isn't native to quarto so I currently type that text manually.
+- I want the internal cross reference links to be de-emphasize (italic grey), so I currently use the custom css {.mark}
 - titles of tabs in "::: {.panel-tabset}" aren't true markdown titles and therefore do not get applied the autonumbering (so I currently do it by hand), and do not get assigned an anchor (so I currently cross ref their container instead)
 
-How to cross-ref:
+Examples of how I currently cross-ref:
 - pages: see [3. Analyze & Collaborate](03_analyze_and_collaborate.qmd){.mark}
 - sections: see [1.4 Study Design & Analysis Plan](#sec-study-design-analysis-plan){.mark} - the section title needs to have a custom label "{#sec-study-design-analysis-plan}"
 - tabs: see [1.4.1. Pre-analysis planning](#sec-study-design-analysis-plan){.mark} i.e. cross referencing their container instead
 
-Also note that I would prefer the annotation X.X. with the final dot, but this isn't native to quarto which writes X.X for autonumbered titles. I likely wasn't consistent in whether or not I wrote the final dot in the text to be displayed in the cross refs.
+Also note that I would prefer the annotation X.X. with the final dot, but this isn't native to quarto which writes X.X for autonumbered titles. I likely wasn't consistent in whether or not I manually wrote the final dot in the text to be displayed in the cross refs.
+
 
 
 HOW TO REMOVE ANCHOR?
 
-By using remove_anchor.lua in assets, adding the following class to html title remove their anchors, e.g.:
+Adding the following class to html title remove their anchors, e.g.:
 <h5 class="fs-5 no-anchor">Title</h5>
 
+I believe this is using remove_anchor.lua function stored in assets.
 
+
+HOW TO FORMAT LISTS BETWEEN SECTION TITLE AND panel-tabset IN orc-details-panel?
+
+I am not sure why the bullet points are in the margin when a list is in this location. I suppose the orc-details-panel custom css could be adjusted. Currently, I use:
+
+::: {.ms-1} 
+
+:::
+
+
+
+HOW TO CUSTOMIZE CHAPTERS
+
+So far, the Hero, Pills, and Checklist of Chapter 1 and 2 were customized using the following lines and associated custom css: 
+
+<div class="orc-phase-hero-compact phase-2">
+<div class="orc-hero-cycle phase-2">
+<div class="orc-hero-pills phase-2">
+<div class="orc-hero-checkpoint phase-2">
+
+::: {.orc-gradient-box .data-management-checklist}
+:::
+
+::: {.d-flex .justify-content-center .mt-4 .orc-checklist-download .phase-2}
+
+Chapter 4 was not yet customized. Chapter 3 need work to make a yellow-brown-ish tone background to white text accessible.
+These lines were commented with e.g. <!-- RL still working on <div class="orc-phase-hero-compact phase-3"> --> in the chapters's page.
