@@ -43,15 +43,15 @@ To build a tailored research practice handbook for your research group:
 - review the core discipline-agnostic sections by clicking on one of the quadrant in the figure above, 
 - consult discipline-specific guidance (in development - ETA end 2026)<!--to link to Reema's expert pages when built - with the design of internal link button? -->, 
 - explore [an example](https://doi.org/10.5281/zenodo.16262260)<!-- to make plural and link to internal page with more examples when exists-->, 
-- tailor the [overview checklist figure](https://doi.org/10.5281/zenodo.15630229), and <!-- create/share an editable file, e.g. pptx on zenodo-->
-- use our Quarto lab-handbook template (in development - ETA end 2026). 
-- request a consultation with the LMU Open Science Center (1h one-on-one, or 6-month pedagogical intervention for research group; see [About this Project](#about-orc-project) below).
+- tailor the [overview checklist figure](https://doi.org/10.5281/zenodo.15630229) <!-- create/share an editable file, e.g. pptx on zenodo-->
+- use our lab-handbook template (in development - ETA end 2026) <!-- should this be a quarto website or something easier to edit? -->
+- request a consultation with the LMU Open Science Center; a 1h one-on-one consultation, or a 6-month training and consultation program for research group (see [About this Project](#about-orc-project) below).
 
 
 
 <details id="about-orc-project" class="my-4">
 
-<summary><h4>About this project</h4></summary><!-- use a proper accordion here - have the same title format as the others.-->
+<summary><h4>About this project</h4></summary>
 
 This work is part of the "**Switch-to-Open Program**" (SwOP) funded by the [Volkswagen Foundation](https://www.volkswagenstiftung.de/en). 
 
@@ -59,9 +59,9 @@ This program consists in a **6-month structured pedagogical intervention designe
 
 This program is designed to:
 
-- improve research efficiency and reproducibility by establishing clear, standardized workflows and documentation
+- improve workflow efficiency and reproducibility by establishing clear, standardized procedures and documentation
 - facilitate onboarding and collaboration through a shared, practice-oriented lab handbook
-- support compliance with FAIR and Open Science requirements (see e.g. [LMU good research practice guidelines](https://cms-cdn.lmu.de/media/contenthub/amtliche-veroeffentlichungen/gwp-ordnung.pdf)), and enabling researchers to meet evolving recruitment and funding expectations
+- support compliance with FAIR and Open Science requirements (see e.g. [LMU good research practice guidelines](https://cms-cdn.lmu.de/media/contenthub/amtliche-veroeffentlichungen/gwp-ordnung.pdf)), and enabling researchers to meet evolving recruitment and funding expectations.
 
 
 ##### Interested in entering the Switch-to-Open Program (SwOP) with your research group?
@@ -73,7 +73,7 @@ This program is designed to:
 
 ##### How to cite our handbook
 
-Our handbook and other material are licensed [CC-BY Attribution-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/deed.en): please reuse, adapt, and share openly by citing "_Ihle Malika, Gupta Reema, Schönbrodt Felix 2026 Open Research Cycle Handbook, URL, data and time of access_" <!--FIX ME-->
+Our handbook and other material are licensed [CC-BY Attribution-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/deed.en): please feel free to reuse, adapt, and share openly by citing "_Ihle Malika, Gupta Reema, Schönbrodt Felix 2026 Open Research Cycle Handbook, URL, date and time of access. CC.BY.-SA 4.0_" <!--is this good enough for now?-->
 
 </details>
 
@@ -87,7 +87,7 @@ Our handbook and other material are licensed [CC-BY Attribution-ShareAlike 4.0 I
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="modalPhase1Label">
-          <i class="bi bi-clipboard-data me-2"></i> 1. Plan & Design
+          <i class="bi bi-clipboard-check me-2"></i> 1. Plan & Design
         </h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
@@ -99,7 +99,7 @@ Our handbook and other material are licensed [CC-BY Attribution-ShareAlike 4.0 I
           <li>Design study and plan statistical analyses</li>
         </ul>
         <hr>
-        <p><strong>Team checkpoints:</strong> Study plan presentation + Preregistration submission</p>
+        <p><strong>Team checkpoints:</strong> study plan presentation + preregistration submission</p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -127,7 +127,7 @@ Our handbook and other material are licensed [CC-BY Attribution-ShareAlike 4.0 I
           <li>Control data quality</li>
         </ul>
         <hr>
-        <p><strong>Team checkpoint:</strong> Data quality validation meeting</p>
+        <p><strong>Team checkpoint:</strong> data quality validation meeting</p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -150,10 +150,10 @@ Our handbook and other material are licensed [CC-BY Attribution-ShareAlike 4.0 I
       <div class="modal-body">
         <ul>
           <li>Process and analyze data reproducibly</li>
-          <li>Write reproducible reports</li>
+          <li>Write reproducible reports and follow reporting guidelines</li>
         </ul>
         <hr>
-        <p><strong>Team checkpoints:</strong> Repository & code peer-review + Result presentation</p>
+        <p><strong>Team checkpoints:</strong> repository & code peer-review + result presentation</p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -175,13 +175,13 @@ Our handbook and other material are licensed [CC-BY Attribution-ShareAlike 4.0 I
       </div>
       <div class="modal-body">
         <ul>
-          <li>Publish (real or synthetic) data, with metadata and data usage agreement</li>
-          <li>Publish code</li>
+          <li>Publish data and/or metadata and data use agreement</li>
+          <li>Publish code (with real, simulated or synthetic data)</li>
           <li>Deposit a preprint</li>
         </ul>
-        <p>each with contributorships, ORCID, DOI, License</p>
+        <p>each with contributorships, persistent identifiers, license.</p>
         <hr>
-        <p><strong>Team checkpoint:</strong> Manuscript submission with DOIs for all materials</p>
+        <p><strong>Team checkpoint:</strong> manuscript submission with DOIs for all materials</p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
