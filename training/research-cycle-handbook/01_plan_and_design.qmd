@@ -750,7 +750,7 @@ The specific questions vary by discipline, data type, and funder requirements. D
 
 <h5 class="fs-5 no-anchor">Why should you plan your statistical plan prior to collecting data?</h5>
 
-Humans are prone to cognitive biases such as **confirmation bias** (seeking information that supports existing beliefs) and **hindsight bias** (believing outcomes were predictable after the fact). In research, these biases can distort findings, especially when researchers make analytic decisions after seeing results. Although statistical testing typically accepts a 5% false positive rate, **"researcher degrees of freedom"** — choices about data collection, exclusions, transformations, sample size, covariates, etc. — can dramatically inflate false positives when decisions are made post hoc. Practices like increasing sample size until reaching statistical significance, selectively removing outliers, or trying multiple analytic strategies **increase the likelihood of false-positive results**. <!-- p-Hacking interactive demo  https://shinyapps.org/apps/p-hacker/ - See how easy it is to find “significant” results -->
+Humans are prone to cognitive biases such as **confirmation bias** (seeking information that supports existing beliefs) and **hindsight bias** (believing outcomes were predictable after the fact). In research, these biases can distort findings, especially when researchers make analytic decisions after seeing results. Although statistical testing typically accepts a 5% false positive rate, **"researcher degrees of freedom"** — choices about data collection, exclusions, transformations, sample size, covariates, etc. — can dramatically inflate false positives when decisions are made post hoc. Practices like increasing sample size until reaching statistical significance, selectively removing outliers, or trying multiple analytic strategies **increase the likelihood of false-positive results**. See how easy it is to find false "significant" results by using our [p-hacking tool](https://shinyapps.org/apps/p-hacker/).
 
 <br>
 
@@ -760,7 +760,7 @@ The core problem is that analyses guided by observed outcomes allow biases to in
 
 <h5 class="fs-5 no-anchor">Benefits of preregistration</h5>
 
- Preregistration, that is, specifying hypotheses, methods, and analysis plans before data collection or analysis, constrains bias in confirmatory testing while still allowing exploratory analyses, clearly **distinguishing robust hypothesis tests from hypothesis-generating work**. This improves credibility, limits false positives, and often leads to better study design through **early methodological feedback**.
+ Preregistration, that is, specifying hypotheses, methods, and analysis plans before data collection or analysis, limits bias in confirmatory testing while still allowing exploratory analyses, clearly **distinguishing robust hypothesis tests from hypothesis-generating work**. This improves credibility, limits false positives, and often leads to better study design through **early methodological feedback**.
 
 <br>
 
@@ -770,13 +770,11 @@ Preregistration can be beneficial for various type of studies, including:
 - observational or exploratory studies: it will help you move along the exploratory-confirmatory continuum
 - qualitative studies: it will provide a way to document e.g. your positionality towards a subject in the course of a project.
 
-A great tool to create your statistical plan, especially for early career researchers still learning statistics and needing feedback from supervisors, collaborators, or statisticians on their design, is to **simulate data and write the possible statistical test to analyze that data** (see [1.3.2. Simulation of data](<!--internal link-->) and [1.3.3. Power analyses](<!--internal link-->)). 
-
 <br>
 
 <h5 class="fs-5 no-anchor"><i class="bi bi-list-check"></i> What is included in a preregistration?</h5>
 
-Several [preregistration templates](https://help.osf.io/article/330-welcome-to-registrations) exist. While the [standard OSF preregistration template](https://docs.google.com/document/d/1gkN0Jp6Gu7GIA4Ne4YCDZ61nCLQRgt32moRdUg9AnVg/edit?tab=t.0#heading=h.fwbi14d4b65g) is most commonly used, some are tailored for specific field or specific methods (e.g. systematic review, qualitative work, secondary data analysis).
+Several [preregistration templates](https://help.osf.io/article/330-welcome-to-registrations) exist. While the [standard Open Science Framework (OSF) preregistration template](https://docs.google.com/document/d/1gkN0Jp6Gu7GIA4Ne4YCDZ61nCLQRgt32moRdUg9AnVg/edit?tab=t.0#heading=h.fwbi14d4b65g) is most commonly used, some are tailored for specific field or specific methods (e.g. systematic review, qualitative work, secondary data analysis).
 
 <br>
 
@@ -792,17 +790,25 @@ Your preregistration will define your study's:
 - **How to deal with missing data**
 <br>
 
+A great tool to create your statistical plan, especially for early career researchers still learning statistics and needing feedback from supervisors, collaborators, or statisticians on their design, is to **simulate data, and write the possible statistical test to analyze that data** (see [1.4.2. Simulation of data](#sec-study-design-analysis-plan){.mark} and [1.4.3. Power analyses](#sec-study-design-analysis-plan){.mark}).
+
+<br>
+
+Including an **analyses script** (developed on simulated data) with your preregistration is optional, but gives you the advantage of obtaining the results of your confirmatory analyses extremely rapidly once your data is collected.
+
+<br>
 
 <h5 class="fs-5 no-anchor">Publishing process</h5>
 
 Once your study plan is finalized:
+
 <br>
 
-* **Submit your preregistration before collecting or analyzing existing data.** You can do so on discipline specific registries (see [1.1.2. Preregistrations](<!--internal link-->)) or discipline agnostic repositories such as the [Open Science Framework (OSF)](https://osf.io/). 
-* **Embargoe your plan if you are concerned about scooping.** On the OSF, your preregistration can be kept private for a predetermine amount of time, and for a maximum of 4 years.
-* **Include your pregistration's DOI in your manuscript.** Make your registration public upon the publication of your manuscript. 
+- **Submit your preregistration before collecting new or analyzing existing data.** You can do so on discipline specific registries (see [1.1.2. Preregistrations](#sec-explore-and-reuse){.mark}) or discipline agnostic repositories such as the [OSF](https://osf.io/). 
+- **Embargoe your plan if you are concerned about scooping.** On the OSF, your preregistration can be kept private for a predetermined amount of time, and for a maximum of 4 years.
+- **Include your pregistration's DOI in your manuscript.** Make your registration public upon the publication of your manuscript. 
 
-This process improves transparency and is inviting valuable **early feedback from collaborators**. An even stronger approach is **submitting preregistrations directly to journals (then called "Registered Reports")**, enabling peer review at a stage where methodological adjustments are still possible.
+Creating a preregistration improves transparency and allows for valuable **early feedback from collaborators**. An even stronger approach is **submitting preregistrations directly to journals** (then called **"Registered Reports"**), enabling peer review at a stage where methodological adjustments are still possible.
 
 <br>
 
@@ -812,7 +818,7 @@ Registered Reports are a publication format, now adopted by over 300 journals (s
 
 <br>
 
-After completing the study, authors add results and discussion sections, clearly separating preregistered confirmatory analyses from exploratory ones. Final review focuses on adherence to the approved plan and the validity of conclusions, not on whether results are significant. This model shifts **incentives toward asking important questions and using rigorous methods rather than chasing striking outcomes**.
+After completing the study, authors add results and discussion sections, clearly separating preregistered confirmatory analyses from exploratory ones. Final review focuses on adherence to the approved plan and the validity of conclusions, not on whether results are significant. This model **shifts incentives toward asking important questions and using rigorous methods rather than chasing striking outcomes**.
 
 
 ::: {.container .my-4}
@@ -823,15 +829,15 @@ After completing the study, authors add results and discussion sections, clearly
 
 ::: {.col}
 <div class="card orc-card-tool w-100 h-100 position-relative">
-<span class="orc-card-tool-badge recommended">OSC Tutorial (tba)</span>
+<span class="orc-card-tool-badge recommended">OSC Tutorial</span>
 <div class="orc-card-tool-icons mb-2">
 <div class="orc-card-tool-icon icon-1">
 <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
 </div>
 </div>
-<h4 class="card-title">Preregistration tutorial</h4>
-<p class="card-text">Step-by-step guide to creating preregistration. (TBA h)</p>
-<a href="#" class="stretched-link"></a>
+<h4 class="card-title">TBA: Preregistration tutorial</h4><!-- edit when available -->
+<p class="card-text">Step-by-step guide to creating preregistration. (Xh)</p><!-- edit when available -->
+<a href="#" class="stretched-link"></a><!-- edit when available -->
 </div>
 
 :::
@@ -844,11 +850,26 @@ After completing the study, authors add results and discussion sections, clearly
 
 ::: {.col}
 <div class="card orc-card-tool w-100 h-100 position-relative">
+<span class="orc-card-tool-badge recommended">OSC Tool</span>
+<div class="orc-card-tool-icons mb-2">
+<div class="orc-card-tool-icon icon-1">
+<img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+</div>
+</div>
+<h4 class="card-title">P-hacking tool</h4>
+<p class="card-text">Interactive app to realize how easy it is to find false "significant" results.</p>
+<a href="https://shinyapps.org/apps/p-hacker/" class="stretched-link"></a>
+</div>
+
+:::
+
+::: {.col}
+<div class="card orc-card-tool w-100 h-100 position-relative">
 <div class="orc-card-tool-icon mb-2">
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Open_Science_Framework_log_%28and_Center_for_Open_Science_logo%29.svg/3840px-Open_Science_Framework_log_%28and_Center_for_Open_Science_logo%29.svg.png" alt="COS icon" class="img-fluid">
 </div>
 <h4 class="card-title">Center for Open Science</h4>
-<p class="card-text">Preregistration templates, list of journals offering Registered Reports.</p>
+<p class="card-text">List of journals offering Registered Reports.</p>
 <a href="https://www.cos.io/initiatives/registered-reports" class="stretched-link" target="_blank" rel="noopener">
 </a>
 </div>
