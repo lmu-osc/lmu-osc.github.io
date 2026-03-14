@@ -318,7 +318,7 @@ For a R project repository:
 
 Before publishing yoru project (see [4. Preserve & share](04-preserve-and-share.qmd){.mark}):
 
-- **Record your dependencies** in your README file for possible reconstruction with [repo2docker](https://repo2docker.readthedocs.io/en/latest/) or binder (see [Code Publishing tutorial](https://lmu-osc.github.io/code-publishing/make_readme.html#nte-dependencies)).
+- **Record your dependencies** in your README file for possible reconstruction with [repo2docker](https://repo2docker.readthedocs.io/en/latest/) or binder (see [Code Publishing tutorial](https://lmu-osc.github.io/code-publishing/make_readme.qmd#nte-dependencies)).
 
 
 
@@ -439,7 +439,7 @@ As with all documentation, your project repository’s documentation should be w
 
 - **Create a README.md or README.txt file early and update it as you go.** Your README is the entry point to your project. A good README answers the essential questions: who created the script, what it contains, how they relate to other scripts and in which order scripts should be run, and whether it can be reused. 
 - **Annotate your code explaining _why_ you made a decision.** All parameter values used as input for a function, or other decisions, should be justified minimally as comments in your code to later be included in your manuscript. **Do not include sensitive information such as credentials or name of excluded patient as comments in your code!**
-- **Update your data dictionary and README files.** Your data documentation should be updated to include all data exclusion, change in range of possible values, ect. See [2.2.4. Documentation](02-collect-and-manage.html#sec-data-management){.mark}.
+- **Update your data dictionary and README files.** Your data documentation should be updated to include all data exclusion, change in range of possible values, ect. See [2.2.4. Documentation](02-collect-and-manage.qmd#sec-data-management){.mark}.
 
 
 Example README:

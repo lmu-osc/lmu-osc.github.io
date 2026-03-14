@@ -243,7 +243,7 @@ In [1. Plan & Design](01-plan-and-design.qmd){.mark} you created a Research Data
 
 ::: {.ms-1} 
 
-- **Keep your raw data as read-only files.** The unmodified output of your instruments, surveys, or observations should never be modified directly. You should provide enough documentation to recreate your processed datasets and results from your raw data (see [3.1. Data Processing & Analyses](03-analyze-and-collaborate.html#sec-data-processing-analysis){.mark}).
+- **Keep your raw data as read-only files.** The unmodified output of your instruments, surveys, or observations should never be modified directly. You should provide enough documentation to recreate your processed datasets and results from your raw data (see [3.1. Data Processing & Analyses](03-analyze-and-collaborate.qmd#sec-data-processing-analysis){.mark}).
 
 - **Organize, document, and store your research files so they remain usable, and become FAIR upon sharing.** Beyond raw data, you will generate processed data, code, documentation, and metadata. How you organize, describe, and store these determines whether your work remains usable and reproducible. The [FAIR principles](https://www.go-fair.org/fair-principles/) guide these decisions: making outputs Findable, Accessible, Interoperable, and Reusable.
 
@@ -321,7 +321,7 @@ Personal laptops as primary storage, external drives as only copy, consumer clou
 </div>
 <h4 class="card-title">OSF</h4>
 <p class="card-text">Research project management platform including storage.</p>
-<a href="https://ree-gupta.github.io/lmu-osc.github.io/training/open_research_cycle/02-collect-and-manage_website.html#osf" class="stretched-link" target="_blank" rel="noopener"> </a>
+<a href="https://ree-gupta.github.io/lmu-osc.github.io/training/open_research_cycle/02-collect-and-manage_website.qmd#osf" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
 
 :::
@@ -729,7 +729,7 @@ In a version controlled workflow, you back up your local Git repositories on eit
 
 </summary> 
 
-Research involving human participants requires ethics approval and data protection compliance. In your ethics proposal (see [1.2.3. Ethics](01-plan-and-design.html#sec-legal-requirements){.mark}) you planned for safeguards for the people contributing to your research and you now need to implement them before or while collecting your data.
+Research involving human participants requires ethics approval and data protection compliance. In your ethics proposal (see [1.2.3. Ethics](01-plan-and-design.qmd#sec-legal-requirements){.mark}) you planned for safeguards for the people contributing to your research and you now need to implement them before or while collecting your data.
 
 
 ::: {.panel-tabset}
