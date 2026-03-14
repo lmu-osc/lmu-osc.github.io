@@ -46,17 +46,18 @@ This step is straightforward if you followed previous steps: by this stage, you 
 
 ::: {.panel-tabset}
 
-#### 4.1.1. Open vs Restricted <!-- I edited this a bit Reema, is this correct? overall I think this section could use more information-->
+#### 4.1.1. Open vs Restricted 
+<!-- I edited this a bit Reema, is this correct? overall I think this section could use more information-->
 
-Not all data can or should be shared openly. Your sharing options depend on what consent participants gave and what your ethics approval permits (see [1.2.3. Ethics](<!--internal link-->)).
+Not all data can or should be shared openly. Your sharing options depend on what consent participants gave and what your ethics approval permits (see [1.2.3. Ethics](01-plan-and-design.html#sec-legal-requirements){.mark}).
 
 <br>
 
 - **Open data** can be downloaded by anyone without restrictions. This maximizes reuse but is only appropriate when data contains no personal information or has been fully anonymized.
 
-- **Restricted access** means the metadata is available on a professional repository and clear instructions of the conditions of access to the data are provided. Requesting the data often requires describing the purpose of reuse (sometimes in the form of a preregistration, see [1.4.1. Pre-analysis planning](<!--internal link-->)), signing a Data Use Agreement, and agree to further conditions. This can be organized automatically through the repository or through contacting the authors<!--if so what's the difference with the option below?-->. This balances reuse with protection. 
+- **Restricted access** means the metadata is available on a professional repository and clear instructions of the conditions of access to the data are provided. Requesting the data often requires describing the purpose of reuse (sometimes in the form of a preregistration, see [1.4.1. Pre-analysis planning](01-plan-and-design.html#sec-study-design-analysis-plan){.mark}), signing a Data Use Agreement, and agree to further conditions. This can be organized automatically through the repository or through contacting the authors<!--if so what's the difference with the option below?-->. This balances reuse with protection. 
 
-- **Metadata only** describes what data exists without sharing the data itself. Others can discover your work and contact you to discuss access. This is appropriate when data cannot be shared due to legal or ethical constraints.<!--would that be considered Accessible though?--> Making your data Findable by sharing your metadata on a professional repository is the first step to making your data FAIR as required by the [LMU guidelines](https://cms-cdn.lmu.de/media/contenthub/amtliche-veroeffentlichungen/gwp-ordnung.pdf) (see [1.2.1. LMU guidelines](<!--internal link-->))
+- **Metadata only** describes what data exists without sharing the data itself. Others can discover your work and contact you to discuss access. This is appropriate when data cannot be shared due to legal or ethical constraints.<!--would that be considered Accessible though?--> Making your data Findable by sharing your metadata on a professional repository is the first step to making your data FAIR as required by the [LMU guidelines](https://cms-cdn.lmu.de/media/contenthub/amtliche-veroeffentlichungen/gwp-ordnung.pdf) (see [1.2.1. LMU guidelines](01-plan-and-design.html#sec-legal-requirements){.mark})
 
 <br>
 
@@ -64,7 +65,7 @@ When deciding, ask yourself:
 
 - What did participants **consent** to? 
 - What does your **ethics** approval allow? 
-- Can the data be **anonymized** without losing value (see [2.3.2. Anonymization](<!--internal link-->))? 
+- Can the data be **anonymized** without losing value (see [2.3.2. Anonymization](02-collect-and-manage.html#sec-ethics-and-privacy){.mark})? 
 - If you work with **sensitive data**, consult [your institution's data protection officer](https://www.lmu.de/en/about-lmu/structure/organizational-structure/officers-and-representatives/data-protection-officer.html). 
 - If you generate research outputs that could lead to **dual use** (e.g. that could also be applied for military or malicious purposes), please refer to the European Commission's policy ([Dual-Use Regulation 2021/821](https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L:2021:206:FULL&from=EN)) and get support from the [LMU Export Control service](mailto:Exportkontrolle@Verwaltung.Uni-Muenchen.DE).
 - If your research could lead to **patents or commercialization**, get the support of the [IP Management team](https://www.lmu.de/en/research/research-transfer/inventions-patents-and-exploitation-rights/). 
@@ -444,9 +445,9 @@ _in construction_
 
 Making code publicly available demonstrates the reproducibility of your results and enables others to understand, verify, and build upon your analytical methods.
 
-So far, your code repository for internal use developed in [3. Analyze & Collaborate](03_analyze_and_collaborate.qmd){.mark} was either on the secured [LRZ Gitlab](https://gitlab.lrz.de/) (e.g. if your data and/or code are sensitive), or on a [GitHub](https://github.com/) repository. Before the submission of a manuscript to a journal and/or upon the acceptance of a manuscript, there are new steps that need to be done to publish your code (i.e. archive its current version and get a DOI) on e.g. [Zenodo](https://zenodo.org/).
+So far, your code repository for internal use developed in [3. Analyze & Collaborate](03-analyze-and-collaborate.qmd){.mark} was either on the secured [LRZ Gitlab](https://gitlab.lrz.de/) (e.g. if your data and/or code are sensitive), or on a [GitHub](https://github.com/) repository. Before the submission of a manuscript to a journal and/or upon the acceptance of a manuscript, there are new steps that need to be done to publish your code (i.e. archive its current version and get a DOI) on e.g. [Zenodo](https://zenodo.org/).
 
-Most steps require little time if you had worked reproducibly and completed all preparation prior to that point as was recommended in previous sections, i.e. preparation of structured repository with readable scripts, and appropriate documentation such as a data dictionary and README (see [Analysis & Collaboration Checklist](03_analyze_and_collaborate.html#analysis-collaboration-checklist){.mark}).  
+Most steps require little time if you had worked reproducibly and completed all preparation prior to that point as was recommended in previous sections, i.e. preparation of structured repository with readable scripts, and appropriate documentation such as a data dictionary and README (see [Analysis & Collaboration Checklist](03-analyze-and-collaborate.html#analysis-collaboration-checklist){.mark}).  
 
 However, if you work with sensitive data that cannot be anonymized and shared, you may still need to generate a simulated random dataset to allow for the published code to run (which you may have already done if you simulated data in order to prepare a preregistration, see [1.4. Study Design & Analysis Plan](01-plan-and-design.html#sec-study-design-analysis-plan)), or chose to create a synthetic dataset with the same properties as the original dataset to allow others to re-derive an approximation of the original results and conduct further exploratory analyses.
 
@@ -675,7 +676,7 @@ They are several pathways to make your your articles free to read, e.g.:
 - **Gold Open Access**: the publication of the final version of record as immediately open access on the publisher’s platform, against payment of an APC.
 - **Green Open Access**: self-archiving of a [**preprint or postprint**]{.underline} in an institutional or disciplinary repository, either immediately or after an embargo period imposed by the publisher,  without cost to the author. Visit the [Open Policy Finder](https://openpolicyfinder.jisc.ac.uk/) to know whether and where your publishers allow you to publish preprint or postprints.
 
-Depending on the contract negotiated by the University and each publisher (see [4.3.1. Contract with Publishers](<!--internal link-->)), the payment of APCs can also be requested by publishers regardless of the article's accessibility status.
+Depending on the contract negotiated by the University and each publisher (see [4.3.2. Contract with Publishers](#sec-open-access-articles){.mark}), the payment of APCs can also be requested by publishers regardless of the article's accessibility status.
 
 :::{.callout-note}
 [**preprint**]{.underline}: article, book chapter, book, or other scholarly work that is deposited in a repository with unrestricted access (i.e. available to the public to view online, or download, without registration, payment, or approval) ahead of peer review. Equivalent terms used in some disciplines are ‘working paper’ and ‘unpublished manuscript’.
