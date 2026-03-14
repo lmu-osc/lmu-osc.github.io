@@ -81,7 +81,7 @@ Note that:
 - titles of tabs in "::: {.panel-tabset}" aren't true markdown titles and therefore do not get applied the autonumbering (so I currently do it by hand), and do not get assigned an anchor (so I currently cross ref their container instead)
 
 Examples of how I currently cross-ref:
-- pages: see [3. Analyze & Collaborate](03_analyze_and_collaborate.qmd){.mark}
+- pages: see [3. Analyze & Collaborate](03-analyze-and-collaborate.qmd){.mark}
 - sections: see [1.4 Study Design & Analysis Plan](#sec-study-design-analysis-plan){.mark} - the section title needs to have a custom label "{#sec-study-design-analysis-plan}"
 - tabs: see [1.4.1. Pre-analysis planning](#sec-study-design-analysis-plan){.mark} i.e. cross referencing their container instead
 

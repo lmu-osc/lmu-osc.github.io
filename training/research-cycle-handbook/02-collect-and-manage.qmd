@@ -239,7 +239,7 @@ When data comes from instruments, sensors, or APIs, scripting the acquisition cr
  
 </summary>
 
-In [1. Plan & Design](01_plan_and_design.qmd){.mark} you created a Research Data Management Plan. It's now time to put this plan into practice, refining it as you learn what actually works for your project.
+In [1. Plan & Design](01-plan-and-design.qmd){.mark} you created a Research Data Management Plan. It's now time to put this plan into practice, refining it as you learn what actually works for your project.
 
 ::: {.ms-1} 
 
@@ -858,7 +858,7 @@ For data protection guidance, contact the [LMU Data Protection Officer](https://
 
 Quality control catches problems before they propagate into your analysis. The practices here ensure your data is trustworthy and your exclusions are defensible.
 
-**Define criteria before looking at your data.** This prevents unconscious bias in what you keep and exclude, and demonstrates that your decisions are principled rather than convenient (see [1.4. Study Design & Analysis Plan](01_plan_and_design.qmd#sec-study-design-analysis-plan){.mark}).
+**Define criteria before looking at your data.** This prevents unconscious bias in what you keep and exclude, and demonstrates that your decisions are principled rather than convenient (see [1.4. Study Design & Analysis Plan](01-plan-and-design.qmd#sec-study-design-analysis-plan){.mark}).
 
 ::: {.panel-tabset}
 
@@ -916,7 +916,7 @@ Data cleaning handles errors, inconsistencies, and missing values. The cardinal 
 
 #### 2.4.3. Exclusions
 
-Exclusion criteria specify which data points will be removed from analysis and why. Define these before you see your results (see [1.4. Study Design & Analysis Plan](01_plan_and_design.qmd#sec-study-design-analysis-plan){.mark}).
+Exclusion criteria specify which data points will be removed from analysis and why. Define these before you see your results (see [1.4. Study Design & Analysis Plan](01-plan-and-design.qmd#sec-study-design-analysis-plan){.mark}).
 
 <br>
 
