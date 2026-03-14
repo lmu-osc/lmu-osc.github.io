@@ -54,6 +54,12 @@ State-of-the-art practices for reproducible data acquisition include:
 [**Metadata**]{.underline} are data about data; they provide context to your data. Metadata such as equipment settings, environmental conditions, software versions, and calibration records should be recorded contemporaneously, not reconstructed afterward. Electronic lab notebooks, instrument logs, and automated logging all help to document your metadata.
 :::
 
+<!-- why is there a weird white space between the frame and the text in this call outbox?-->
+::: {.callout-tip .mx-4}
+## Tip for research groups to streamline this process
+- **Create standard data acquisition procedures within the team.** From step-by-step wet-lab procedure, to the settings of measuring devices and the reproducible data pre-processing using script, all regularly repeated steps should be documented and standardized to be replicated precisely by all team members. 
+- **Share standard operating procedures** through e.g. common server space such as [LRZ Sync & Share](https://syncandshare.lrz.de/login), specialized online tools like [protocols.io](https://www.protocols.io/) or electronic lab notebooks, or [LRZ GitLab](https://gitlab.lrz.de/users/sign_in) for scripts.
+:::
 
 
 ::: {.panel-tabset}
@@ -64,27 +70,45 @@ Your protocol should specify materials with identifying details (lot numbers, ve
 
 <br>
 
-- **Track deviations in real time.** Write your protocol before you start, follow it precisely, and record any deviations as they happen. When you need to adapt, note it immediately. These deviations often explain unexpected results and guide protocol improvements. **Electronic lab notebooks (ELNs)** make this easier by creating version-controlled, timestamped records automatically, providing an audit trail that paper cannot match.
+- **Write detailed methods and reusable protocols.** Write your protocol before you start, with all the details that would be needed for an exact replication (see the ReproducibiliTeach [lecture on reusable protocols](https://youtu.be/aKiXFzj15dg?si=ilB8aOsXArphMpfm))
+
+- **Track deviations in real time.** Follow your protocol precisely, and record any deviations as they happen. When you need to adapt, note it immediately. These deviations often explain unexpected results and guide protocol improvements. **Electronic lab notebooks (ELNs)** make this easier by creating version-controlled, timestamped records automatically, providing an audit trail that paper cannot match.
 
 - **Publish your protocols.** A detailed, tested protocol is a contribution to your field. Publishing establishes priority, enables citation, and makes your methods reusable. Platforms like [protocols.io](https://www.protocols.io/) provide version control and DOI assignment.
 
 
-<!-- SOP lab wide on data acquisition 
-+
-add 2 lectures 
-Report Detailed Methods & Protocols (30 min) - ReproducibiliTeach lecture
-Write Reusable Protocols (30 min) - ReproducibiliTeach lecture
--->
-
 
 ::: {.container .my-4 }
+
+
+<h4 class="fs-5"><i class="bi bi-mortarboard"></i> LEARN MORE</h4>
+<!-- row for learn more section  -->
+
+::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
+
+<!-- card -->
+::: {.col}
+
+<div class="card orc-card-tool h-100 position-relative">
+<div class="orc-card-tool-icon mb-2"> 
+<img src="data:image/jpeg;base64,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" class="img-fluid" alt="reproducibiliteach icon">
+</div>
+<h4 class="card-title">Write reusable protocols</h4>
+<p class="card-text">Understand the level of details needed for your protocols.</p>
+<a href="https://youtu.be/aKiXFzj15dg?si=ilB8aOsXArphMpfm" class="stretched-link" target="_blank" rel="noopener"></a>
+</div>
+
+:::
+
+:::
+
 
 <h4 class="fs-5 mt-3"><i class="bi bi-tools"></i> TOOLS & RESOURCES</h4>
 <!-- row for Tools & Resources section -->
 
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
 
-<!-- 1st card -->
+<!-- card -->
 ::: {.col}
 
 <div class="card orc-card-tool h-100 position-relative">
@@ -94,13 +118,12 @@ Write Reusable Protocols (30 min) - ReproducibiliTeach lecture
 </div>
 <h4 class="card-title">eLabFTW</h4>
 <p class="card-text">Electronic Lab Notebook hosted by LMU Munich.</p>
-<a href="" class="stretched-link" target="_blank" rel="noopener"></a>
-
+<a href="https://elab.ub.lmu.de/login.php" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
 
 :::
 
-<!-- 2nd card -->
+<!--  card -->
 ::: {.col}
 
 <div class="card orc-card-tool h-100 position-relative">
@@ -111,12 +134,11 @@ Write Reusable Protocols (30 min) - ReproducibiliTeach lecture
 <h4 class="card-title">Chemotion</h4>
 <p class="card-text">ELN hosted by the Faculty for Chemistry and Pharmacy.</p>
 <a href="https://chemlab.cup.uni-muenchen.de/home" class="stretched-link" target="_blank" rel="noopener"></a>
-
 </div>
 
 :::
 
-<!-- 3rd card -->
+<!-- card -->
 ::: {.col}
 
 <div class="card orc-card-tool h-100 position-relative">
@@ -126,7 +148,6 @@ Write Reusable Protocols (30 min) - ReproducibiliTeach lecture
 <h4 class="card-title">Protocols.io</h4>
 <p class="card-text">Share, discover, cite, and improve research protocols.</p>
 <a href="https://www.protocols.io/" class="stretched-link" target="_blank" rel="noopener"></a>
-
 </div>
 
 :::
@@ -138,13 +159,13 @@ Write Reusable Protocols (30 min) - ReproducibiliTeach lecture
 
 #### 2.1.2. Questionnaires
 
-**Document both the instrument and the administration procedure completely.** Use validated instruments <!-- what does a validate survey mean? -->when possible, pilot test before deployment, and archive the exact version participants see in an open source format. 
+**Document both the instrument and the administration procedure completely.** Use validated instruments when possible, pilot test before deployment, and archive the exact version participants see in an open source format. 
 
-<!-- @Felix: do we want anything else here? minimally the definition of validated survey is really unclear to me given how people use it...-->
+<!-- @Felix: do we want anything else here? Could you minimally explain what validating a survey means? It is really unclear to me given how people use it...-->
 
 #### 2.1.3. Software-based data acquisition
 
-When data comes from instruments, sensors, or APIs, scripting the acquisition creates a reproducible record of exactly what was collected and how. Programming languages like R or Python work well for straightforward pipelines. For more complex multi-step workflows which are common in e.g. in bioinformatics and neuroimaging, workflow managers like [Snakemake](https://snakemake.readthedocs.io/) or Nextflow ensure steps run in the correct order and can resume after failures.
+When data comes from instruments, sensors, or APIs, scripting the acquisition creates a reproducible record of exactly what was collected and how. Programming languages like R or Python work well for straightforward pipelines. For more complex multi-step workflows which are common in e.g. in bioinformatics and neuroimaging, workflow managers like [Snakemake](https://snakemake.readthedocs.io/) ensure steps run in the correct order and can resume after failures.
 
 <br>
 
@@ -152,7 +173,7 @@ When data comes from instruments, sensors, or APIs, scripting the acquisition cr
 
 - **Keep records of what ran and when.** Include error handling so failures are recorded rather than silently corrupting data. When something fails months later, you need to know what happened. Always test acquisition scripts on sample data before production runs. A bug in your collection pipeline can invalidate an entire dataset.
 
-- **Version control your code and data.** This makes your methods reproducible and shareable. See [2.2.6. Version Control](<!--internal link-->) for details.
+- **Version control your code and data.** This makes your methods reproducible and shareable. See [2.2.6. Version Control](#sec-data-management){.mark} for details.
 
 ::: {.container .my-4 }
 
@@ -161,7 +182,7 @@ When data comes from instruments, sensors, or APIs, scripting the acquisition cr
 
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
 
-<!-- 1st card -->
+<!-- card -->
 ::: {.col}
 
 <div class="card orc-card-tool h-100 position-relative">
@@ -181,9 +202,9 @@ When data comes from instruments, sensors, or APIs, scripting the acquisition cr
 
 :::
 
-<!-- 2nd card -->
+<!--  card -->
 ::: {.col}
-<!-- Actual card component -->
+
 <div class="card orc-card-tool h-100 position-relative">
 <span class="orc-card-tool-badge recommended">OSC Tutorial</span>
 <div class="orc-card-tool-icons mb-2">
@@ -220,11 +241,9 @@ When data comes from instruments, sensors, or APIs, scripting the acquisition cr
 
 In [1. Plan & Design](01_plan_and_design.qmd){.mark} you created a Research Data Management Plan. It's now time to put this plan into practice, refining it as you learn what actually works for your project.
 
-<!-- adding space before list didnt work hence "faking" indented look by adding margin-->
-
 ::: {.ms-1} 
 
-- **Keep your raw data as read-only files.** The unmodified output of your instruments, surveys, or observations should never be modified directly. You should provide enough documentation to recreate your processed datasets and results from your raw data (see [3.1. Data Processing & Analyses](<!-- to update once chapter 3 formatted-->)).
+- **Keep your raw data as read-only files.** The unmodified output of your instruments, surveys, or observations should never be modified directly. You should provide enough documentation to recreate your processed datasets and results from your raw data (see [3.1. Data Processing & Analyses](#sec-data-processing-analysis){.mark}).
 
 - **Organize, document, and store your research files so they remain usable, and become FAIR upon sharing.** Beyond raw data, you will generate processed data, code, documentation, and metadata. How you organize, describe, and store these determines whether your work remains usable and reproducible. The [FAIR principles](https://www.go-fair.org/fair-principles/) guide these decisions: making outputs Findable, Accessible, Interoperable, and Reusable.
 
