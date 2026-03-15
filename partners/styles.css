@@ -291,3 +291,21 @@ body {
 .description-text a {
 color: #00883A !important;
 }
+
+
+
+.primary-social-link {                     
+  background: #00883A !important; 
+  border: #00883A !important; 
+  color: white !important;               
+  text-decoration: none;                          
+  cursor: pointer;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.primary-social-link:hover {
+  background-color: #017132 !important; 
+  color: white !important;
+  border-color: #017132  !important;
+  transform: translateY(-2px);
+}
