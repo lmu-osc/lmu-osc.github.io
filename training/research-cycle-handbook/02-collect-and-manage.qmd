@@ -890,24 +890,6 @@ For data protection guidance, contact the [LMU Data Protection Officer](https://
 
 </summary>
 
-<!-- Quality control identifies errors and issues before analysis.
-
-**Common QC checks:**
-
-1. **Completeness**: Check for missing data
-2. **Range checks**: Verify values within expected ranges
-3. **Consistency**: Check logical relationships
-4. **Duplicates**: Identify duplicate records
-5. **Format**: Ensure consistent data types
-
-**Document QC decisions:**
-
-- Procedures and criteria
-- Cases flagged or excluded
-- Reasons for exclusions
-- Date and reviewer -->
-
-
 Quality control catches problems before they propagate into your analysis. The practices here ensure your data is trustworthy and your exclusions are defensible.
 
 **Define criteria before looking at your data.** This prevents unconscious bias in what you keep and exclude, and demonstrates that your decisions are principled rather than convenient (see [1.4. Study Design & Analysis Plan](01-plan-and-design.qmd#sec-study-design-analysis-plan){.mark}).
@@ -922,7 +904,7 @@ Validation checks whether your data meets specifications. For example, values ca
 
 - **Automate what you can.** Check that data types are correct, values fall within expected ranges, required fields are populated, and formats are consistent. These checks should run automatically and flag problems for review.
 
-- **Manual review catches what automation misses.** Sample your data and verify it against the source. Inspect outliers to determine whether they are errors or genuine extreme values. Look for suspicious patterns: survey responses that alternate predictably, reaction times that are impossibly fast.
+- **Catch what automation misses with manual review.** Sample your data and verify it against the source. Inspect outliers to determine whether they are errors or genuine extreme values. Look for suspicious patterns: survey responses that alternate predictably, reaction times that are impossibly fast.
 
 ::: {.container .my-4 }
 
@@ -972,9 +954,9 @@ Exclusion criteria specify which data points will be removed from analysis and w
 
 <br>
 
-- **Common exclusion criteria:** technical failures (equipment malfunction, incomplete recording), protocol violations (wrong procedure followed, participant did not comply), quality thresholds (too much missing data, failed attention checks), and participant criteria (did not meet stated inclusion criteria).
+- **Review common exclusion criteria:** technical failures (equipment malfunction, incomplete recording), protocol violations (wrong procedure followed, participant did not comply), quality thresholds (too much missing data, failed attention checks), and participant criteria (did not meet stated inclusion criteria).
 
-- **Document everything.** Record criteria before analysis begins. Report how many data points were excluded for each criterion. Plan sensitivity analyses comparing results with and without exclusions to show your findings are robust.
+- **Document everything.** Record criteria before analysis begins. Report how many data points were excluded for each criterion in a log with the date and reviewer's identity. Plan sensitivity analyses comparing results with and without exclusions to show your findings are robust.
 
 :::
 
@@ -987,14 +969,12 @@ Exclusion criteria specify which data points will be removed from analysis and w
 
 To complete before conducting a data validation meeting with members of the project. Not all items are relevant for all fields of research or study type.
 
-<!-- prepare  downloadable file with checklist in word doc + citation Ihle, Gupta, Schoenbrodt 2026 + licence CC BY SA in footnote + link to this webpage -->
-
 
 ::: {.row .row-cols-1 .row-cols-lg-2 .g-4}
 
 ::: {.col}
 
-**Throughout Data Collection:**
+**Throughout Data Collection**
 
 - [ ] Document data collection procedures
 - [ ] Maintain organized directory structure
@@ -1009,7 +989,7 @@ To complete before conducting a data validation meeting with members of the proj
 ::: {.col}
 
 
-**Before Moving to Analysis:**
+**Before Moving to Analysis**
 
 - [ ] All raw data backed up in multiple locations
 - [ ] Data (pseudo)anonymized 
@@ -1024,8 +1004,8 @@ To complete before conducting a data validation meeting with members of the proj
 
 ::: {.d-flex .justify-content-center .mt-4 .orc-checklist-download .phase-2}
 
-<a href="#" class="btn btn-outline-secondary btn-sm">Download checklist <i class="bi bi-download"></i></a>
-
+<a href="assets/checklists/Collect-Manage-Checklist.docx" class="btn btn-outline-secondary btn-sm">Download checklist <i class="bi bi-download"></i></a>
+<!-- need to update manually the  downloadable file with checklist in word doc-->
 :::
 
 
