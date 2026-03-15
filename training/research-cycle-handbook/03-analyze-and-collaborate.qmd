@@ -41,21 +41,21 @@ include-in-header:
 </summary>
 
 Data processing and analysis should be reproducible, independent of software, programming language, or operating system. 
-This is best achieved by favoring automated, **script-based workflows** over manual point-and-click procedures, supported by **adequate documentation** and shared code that allows others to regenerate results. 
+This is best achieved by favoring automated **script-based workflows** (over manual point-and-click procedures), and supported by **adequate documentation** and shared code that allows others to regenerate results. 
 Because analysis scripts are inherently iterative and evolve through corrections and refinements, automation is **essential for both reproducibility and efficiency**. This section outlines a recommended workflow for R users.
 
 ::: {.panel-tabset}
 
 #### 3.1.1. Programming
 
-- **Create self-contained project folder**. Include data, code, documentation, and outputs in a single structured environment, ensuring the project remains understandable, reproducible, and portable across systems and collaborators. If you use the free and open source software RStudio to manage your R project, your project directory (or folder) should contain a .Rproj file (see [R tutorial](https://lmu-osc.github.io/introduction-to-R/)). **Use relative paths** (i.e. `“./subfolder”`, where `.` represents the root of your .Rproj directory) or the library `here`, so the project stays portable to another environment
-- **Use a standard folder structure**. Your code repository should include a standard folder structure that make sense for your type of research, ideally shared across your team members. You can for instance use the [OSC research project template](https://github.com/lmu-osc/research-project-template). 
+- **Create a self-contained project folder**. Include data, code, documentation, and outputs in a single structured environment, ensuring the project remains understandable, reproducible, and portable across systems and collaborators. If you use the free and open source software RStudio to manage your R project, your project directory (or folder) should contain a .Rproj file (see [R tutorial](https://lmu-osc.github.io/introduction-to-R/)). **Use relative paths** (i.e. `“./subfolder”`, where `.` represents the root of your .Rproj directory) or the library `here`, so the project stays portable to another environment
+- **Use a standard folder structure**. Your code repository should include a standard folder structure that make sense for your type of research, ideally shared across your team members. You can for instance use our [research project template](https://github.com/lmu-osc/research-project-template). 
 - **Stop clicking, start coding**. Automatize all possible steps, including data acquisition (see [2.1. Data Collection](02-collect-and-manage.qmd#sec-data-collection){.mark}), data processing and transformation, data analyses, data visualization, and results reporting (see [3.2. Reporting Results](#sec-reproducible-reporting){.mark})
 - **Structure, comment, and standardize your scripts.** R scripts themselves should follow current standards to increase their readability (see [Readable Code Lecture](https://lmu-osc.github.io/training/reproducible-processes/readable-code.html)). Use meaningful names for variables, functions, and scripts. Add comments to your code explaining _why_ you made a decision, any known limitations to your code, and citations of methods. **Do not include sensitive information such as credentials or name of excluded patient as comments in your code!**
-    - **Define your own functions** rather than copy and pasting pieces of code which makes it hard to maintain error-free. Functions are ‘self-contained’ sets of commands that accomplish a specific task. They usually ‘take in’ data or parameter values (these inputs are called ‘function arguments’), process them, and ‘return’ a result. See our [R tutorial](https://lmu-osc.github.io/introduction-to-R/) and [simulation tutorial](https://lmu-osc.github.io/Introduction-Simulations-in-R/) for examples.
-    - **Set seeds for random processes** to enable exact replication. A seed is a number used to initialize a pseudorandom number generator algorithm. It serves as the starting point for a sequence of numbers that appear random but are actually produced by a deterministic, fixed algorithm. See e.g. our [simulation tutorial](https://lmu-osc.github.io/Introduction-Simulations-in-R/) for examples.
-    - **Follow a style guide** to increase readability. Use automated styling tools (e.g. `styler`, `lintR`)
-- **Use LRZ Compute Cloud for data-intensive analyses**. [LRZ Supercomputing](https://www.lrz.de/en/technologies/supercomputing) provide virtual machines, high-performance computing, storage ect to researchers of LMU Munich.
+    - **Define your own functions** rather than copy pasting pieces of code which makes it hard to maintain error-free. Functions are ‘self-contained’ sets of commands that accomplish a specific task. They usually ‘take in’ data or parameter values (these inputs are called ‘function arguments’), process them, and ‘return’ a result. See our [R tutorial](https://lmu-osc.github.io/introduction-to-R/) and [data simulation tutorial](https://lmu-osc.github.io/Introduction-Simulations-in-R/) for examples.
+    - **Set seeds for random processes** to enable exact replication. A seed is a number used to initialize a pseudorandom number generator algorithm. It serves as the starting point for a sequence of numbers that appear random but are actually produced by a deterministic, fixed algorithm. See e.g. our [data simulation tutorial](https://lmu-osc.github.io/Introduction-Simulations-in-R/) for examples.
+    - **Follow a style guide** to increase readability. Use automated styling tools (e.g. `styler`, `lintR`).
+- **Use LRZ Compute Cloud for data-intensive analyses**. [LRZ Supercomputing](https://www.lrz.de/en/technologies/supercomputing) provide virtual machines, high-performance computing, and storage to researchers of LMU Munich.
 
 
 ::: {.container .my-4}
@@ -192,6 +192,7 @@ In a version controlled workflow, you back up your local Git repositories on the
 
 While your LRZ GitLab account is associated with your LMU Munich affiliation, your GitHub account can be associated with your private email, be included in your CV, and be used for public sharing of your data and code (see [4. Preserve & Share](04-preserve-and-share.qmd){.mark}). 
 
+In a version controlled workflow, you back up your local Git repositories on either GitHub or LRZ GitLab through a secure SSH connection (see GitHub tutorial) and share access to your repositories with your collaborators through the cloud-based platform GitHub or LRZ GitLab.
 :::
 
 ::: {.callout-important}
@@ -313,9 +314,9 @@ Manage your computational environment by explicitly recording the software, pack
 
 For a R project repository:
 
-- **Activate Renv to keep track of all packages versions** (see [renv tutorial]()). This way, you or someone else can  reproduce your results on another computer or at a later time using the same R packages versions.
+- **Activate Renv to keep track of all packages versions** (see our [renv tutorial](https://lmu-osc.github.io/introduction-to-renv/)). This way, you or someone else can  reproduce your results on another computer or at a later time using the same R packages versions.
 
-Before publishing yoru project (see [4. Preserve & share](04-preserve-and-share.qmd){.mark}):
+Before publishing your project (see [4. Preserve & share](04-preserve-and-share.qmd){.mark}):
 
 - **Record your dependencies** in your README file for possible reconstruction with [repo2docker](https://repo2docker.readthedocs.io/en/latest/) or binder (see [Code Publishing tutorial](https://lmu-osc.github.io/code-publishing/make_readme.qmd#nte-dependencies)).
 
@@ -432,16 +433,16 @@ Before publishing yoru project (see [4. Preserve & share](04-preserve-and-share.
 
 #### 3.1.4. Documentation
 
-As with all documentation, your project repository’s documentation should be written early: initially for your near-future self to support efficient re-engagement after interruptions, then revised for internal team review, and ultimately expanded and refined for public sharing [see 4.2. Code Publishing](04-preserve-and-share.qmd#sec-code-publishing){.mark}.  
+As with all documentation, your project repository’s documentation should be written early - initially for your near-future self to support efficient re-engagement after interruptions, then revised for internal team review, and ultimately expanded and refined for public sharing (see [4.2. Code Publishing](04-preserve-and-share.qmd#sec-code-publishing){.mark}).  
 
 <br>
 
-- **Create a README.md or README.txt file early and update it as you go.** Your README is the entry point to your project. A good README answers the essential questions: who created the script, what it contains, how they relate to other scripts and in which order scripts should be run, and whether it can be reused. 
+- **Create a README (e.g. a .md or .txt file) early and update it as you go.** Your README is the entry point to your project. A good README answers the essential questions: who created the script, what it contains, how they relate to other scripts and in which order scripts should be run, waht the dependencies of the project are, how to obtain/access the input data, whether the code can be reused. 
 - **Annotate your code explaining _why_ you made a decision.** All parameter values used as input for a function, or other decisions, should be justified minimally as comments in your code to later be included in your manuscript. **Do not include sensitive information such as credentials or name of excluded patient as comments in your code!**
-- **Update your data dictionary and README files.** Your data documentation should be updated to include all data exclusion, change in range of possible values, ect. See [2.2.4. Documentation](02-collect-and-manage.qmd#sec-data-management){.mark}.
+- **Update your data dictionary and README files.** Your data documentation should be updated to include all data exclusion, change in range of possible values, ect. (see [2.2.4. Documentation](02-collect-and-manage.qmd#sec-data-management){.mark}).
 
 
-Example README:
+Example README to allow team members to review your code:
 ```markdown
 # Analysis of Treatment Effects
 
@@ -454,16 +455,6 @@ Example README:
 2. Run scripts in order: 01_preprocessing.R, 02_analysis.R
 ```
 
-<!--README files are essential for understanding how to use your code repository.
-
-**Required elements:**
-
-- **Project title and description**
-- **How to run the analysis**: Step-by-step instructions
-- **Software requirements**: Language versions, dependencies
-- **Input data**: Where to obtain or how to access
-- **Output**: What files are produced
-- **Project structure**: Explanation of directories -->
 
 ::: {.container .my-4 }
 
@@ -482,7 +473,7 @@ Example README:
 <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
 </div>
 </div>
-<h4 class="card-title">Readable code lecture</h4> <!-- remove linebreak after title? -->
+<h4 class="card-title">Readable code lecture</h4> 
 <p class="card-text">Tips to write clear, understandable, and maintainable code.(1h)</p>
 <a href="https://lmu-osc.github.io/training/reproducible-processes/readable-code.html" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
@@ -499,8 +490,8 @@ Example README:
 <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
 </div>
 </div>
-<h4 class="card-title">Data Documentation & Validation</h4> <!-- remove line break after title -->
-<p class="card-text">Learn to create validation rules and automated checks for your research data.</p>
+<h4 class="card-title">Data Documentation & Validation</h4>
+<p class="card-text">Create validation rules and automated checks for your research data. (1h)</p>
 <a href="https://lmu-osc.github.io/data-documentation-validation-R/" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
 
