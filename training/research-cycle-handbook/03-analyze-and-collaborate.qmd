@@ -771,8 +771,6 @@ Using the same Quarto environment, you can also:
 
 #### 3.2.2. Reporting guidelines
 
-<!-- need to distinguish confirmatory from exploratory analyses, see prereg section and p-Hacking interactive demo  https://shinyapps.org/apps/p-hacker/ - See how easy it is to find “significant” results -->
-
 Transparent and complete reporting is essential for the interpretation, verification, and reuse of scientific results. To support this, many disciplines have developed reporting guidelines that specify the **minimum information that should be included when describing study design, data collection, analysis, and results**. These guidelines help ensure that studies can be critically evaluated, replicated, and included in evidence syntheses such as systematic reviews and meta-analyses.
 
 <br> 
@@ -793,6 +791,10 @@ Transparent and complete reporting is essential for the interpretation, verifica
 - **Participant flow and descriptive statistics** – numbers of observations at each stage and summary statistics of the analyzed sample.
 - **Limitations and potential sources of bias** – issues such as confounding, measurement error, or selection bias.
 - **Data, code, and materials availability** – where readers can access datasets, analysis scripts, or supplementary materials to reproduce the analysis.
+
+A lot of these elements are those of a preregistration (see [1.4.1. Pre-analysis planning](01-plan-and-design.qmd#sec-study-design-analysis-plan)). Describe them in your methods section, adding they were **planned a priori in your preregistration** and citing its DOI, and **separate results into e.g. preregistered confirmatory analyses and non-preregistered exploratory analyses**.
+
+<br>
 
 These element will be refined depending on your study type. Widely used examples of guidelines include [CONSORT](https://www.equator-network.org/reporting-guidelines/consort/) for randomized controlled trials, [ARRIVE](https://www.equator-network.org/reporting-guidelines/improving-bioscience-research-reporting-the-arrive-guidelines-for-reporting-animal-research/) for animal studies, and [PRISMA](https://www.equator-network.org/reporting-guidelines/prisma/) for systematic reviews.
 
