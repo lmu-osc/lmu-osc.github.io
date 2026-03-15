@@ -551,19 +551,17 @@ For users of R, Python, and Julia, **Quarto** has become the standard tool for c
 
 <br>
 
-- **Create an analyses report with Quarto.** To make your results reproducible, you should provide the analysis code that creates the results of the manuscript with explanations for each of the steps. Quarto is an ideal tool for such purpose (see [Quarto tutorial](https://lmu-osc.github.io/introduction-to-Quarto/)). This will facilitate your own revisions, code-review by your team, **reproducibility checks** that some journals conduct as part of peer-review, and verification of results reproducibility by other researchers. The code repository can be published with simulated, synthetic, or real data, depending on the project, together with the respective article (see [4. Preserve & Share](04-preserve-and-share.qmd){.mark}). 
+- **Create an analyses report with Quarto.** To make your results reproducible, you should provide the analysis code that creates the results of the manuscript with explanations for each of the steps. Quarto is an ideal tool for such purpose (see [Quarto tutorial](https://lmu-osc.github.io/introduction-to-Quarto/)). Your analysis report should contain your research question, data loading instructions, preprocessing steps, statistical procedures, tables and figures, session info and software versions (in the report itself or in your README).
 
-This is currently the state-of-the-art method to showcase the computational reproducibility of a study and we recommend to adopt this practice at a minimum. 
-It is also possible to create all other reporting outputs (such as manuscript, presentation and websites) reproducibly using Quarto, although this process might be time consuming to adopt when working with collaborators: <!-- might be controversial for us to say that - but even if everyone knows git in a team, editing a manuscript this way is just so inefficient time-wise compared to editing and commenting in google doc... I can't advice the team members and PI to learn how to do branches and pull requests to MS in any of the SwOP groups...-->
+This will facilitate your own revisions, code-review by your team, **reproducibility checks** that some journals conduct as part of peer-review, and verification of results reproducibility by other researchers. The code repository can be published with simulated, synthetic, or real data, depending on the project, together with the respective article (see [4.2. Code Publishing](04-preserve-and-share.qmd#sec-code-publishing){.mark}).
 
-<!-- **What to include in analysis notebooks:**
+<br>
 
-1. Introduction: Research question
-2. Methods: Statistical procedures
-3. Data loading: Source and preprocessing
-4. Main analysis: Tests and models
-5. Results: Tables and figures
-6. Session info: Software versions -->
+Creating a reproducible analysis report in Quarto currently represents **state-of-the-art practice for demonstrating the computational reproducibility of a study**, and we recommend adopting this approach as a minimum standard.
+
+<br>
+
+Quarto can also be used to generate additional reporting outputs, such as manuscripts, presentations, and websites, in a fully reproducible manner. However, adopting a fully **reproducible workflow for all outputs will require additional coordination and time**, particularly when working with collaborators who use different tools or workflows.
 
 <br>
 
@@ -581,7 +579,7 @@ You can use e.g. a Word template to create your output with e.g. specific header
 Some journals offer Quarto templates for further formatting requirements (see [list of Quarto extensions](https://quarto.org/docs/extensions/listing-journals.html)). 
 Some journals offer LaTeX or Word templates; you can adapt these by modifying Quarto’s YAML header and markdown content to create your own Quarto template.
 
-- **Adapt your workflow to your collaborators.** Ideally, all your team mates have also adopted the use of Git and GitHub or GitLab and the use of issues and branches to work collaboratively (see [3.2.1. Version Control](<!--internal link-->)). A compromise with collaborators who do not use Git is to render your draft manuscript to e.g. Word and share it through cloud-based collaborative document editing e.g. [LRZ Sync & Share](https://syncandshare.lrz.de/login) or [Google Docs](https://docs.google.com/) with collaborators using the suggestion / track changes mode. Then, the lead author transcribes all edits manually, or with the help of e.g. R packages such as `trackdown` or `officer`, and addresses all comments in their quarto version before re-rendering for a second round of revisions, potentially with additional analyses.
+- **Adapt your workflow to your collaborators.** Ideally, all your team mates have also adopted the use of Git and GitHub or LRZ GitLab and the use of issues and branches to work collaboratively (see [3.2.1. Version Control](<!--internal link-->)). A compromise with collaborators who do not use Git is to render your draft manuscript to e.g. Word and share it through cloud-based collaborative document editing e.g. [LRZ Sync & Share](https://syncandshare.lrz.de/login) or [Google Docs](https://docs.google.com/) with collaborators using the suggestion / track changes mode. Then, the lead author transcribes all edits manually, or with the help of e.g. R packages such as `trackdown` or `officer`, and addresses all comments in their quarto version before re-rendering for a second round of revisions, potentially with additional analyses.
 
 <br>
 
