@@ -1,0 +1,31 @@
+```{=html}
+<div class="container">
+<% items.forEach((item, index) => { %>
+<div class="row g-4 align-items-stretch pt-3 pb-1">
+<div class="col-lg-4 d-flex">
+<div class="card border-light-subtle shadow-sm p-3 bg-body-tertiary rounded text-center member-grid-item w-100">
+<img src="<%= item.image_url %>" alt="<%= item.name %>" class="member-grid-image">
+<div class="card-body flex-grow-1">
+<h5 class="card-title"><%= item.name %></h5>
+<% if (item.contactLink && item.contactName) { %>
+<p class="card-text text-muted mb-0 member-grid-faculty">Contact Person:</p>
+<a href="<%= item.contactLink %>" class="contact-link"><%= item.contactName %></a>
+<% } %>
+<div class="mt-3">
+<a href="<%= item.website_url %>" class="btn btn-outline-secondary social-link">
+<i class="fa-solid fa-globe"></i> Website
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-8 description-text">
+<%=item.description %>
+</div>
+</div>
+<% if (index < items.length - 1) { %>
+<hr>
+<% } %>
+<% }); %>
+</div>
+```
