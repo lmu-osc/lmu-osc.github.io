@@ -82,7 +82,7 @@ Note that:
 
 Examples of how I currently cross-ref:
 - pages: see [3. Analyze & Collaborate](03-analyze-and-collaborate.qmd){.mark}
-- sections: see [1.4 Study Design & Analysis Plan](#sec-study-design-analysis-plan){.mark} if in same page or [1. Plan & Design Checklist](01-plan-and-design.qmd#plan-design-checklist){.mark} if on another page - the section title needs to have a custom label "{#sec-study-design-analysis-plan}"
+- sections: see [1.4 Study Design & Analysis Plan](#sec-study-design-analysis-plan){.mark} if in same page or [1. Plan & Design Checklist](01-plan-and-design.qmd#plan-design-checklist){.mark} if on another page - the section title needs to have a custom label e.g. "{#sec-study-design-analysis-plan}"
 - tabs: see [1.4.1. Pre-analysis planning](#sec-study-design-analysis-plan){.mark} i.e. cross referencing their container instead
 
 Also note that I would prefer the annotation X.X. with the final dot, but this isn't native to quarto which writes X.X for autonumbered titles. I likely wasn't consistent in whether or not I manually wrote the final dot in the text to be displayed in the cross refs.

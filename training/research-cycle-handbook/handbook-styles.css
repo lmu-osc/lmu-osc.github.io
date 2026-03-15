@@ -520,8 +520,8 @@ svg :is(text, tspan) { font-family: inherit !important; font-weight: bold; point
 }
 
 .orc-phase-hero-compact.phase-2 { background: rgb(243 120 181 / 4%)}
-.orc-gradient-box.data-management-checklist { background: rgb(243 120 181 / 4%); border-left-color: #cc01667a;}
-.orc-gradient-box.data-management-checklist h2, .orc-gradient-box.data-management-checklist .checklist-icon{color: #cc01667a;}
+.orc-gradient-box.collect-manage-checklist { background: rgb(243 120 181 / 4%); border-left-color: #cc01667a;}
+.orc-gradient-box.collect-manage-checklist h2, .orc-gradient-box.collect-manage-checklist .checklist-icon{color: #cc01667a;}
 .orc-phase-hero-compact .orc-hero-pills.phase-2 span,
 .orc-phase-hero-compact .orc-hero-checkpoint.phase-2 { background: #cc01667a;}
 .orc-checklist-download.phase-2 .btn-outline-secondary{border-color: #cc01667a; color:#cc01667a;}
