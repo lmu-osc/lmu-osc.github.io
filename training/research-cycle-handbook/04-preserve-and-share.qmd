@@ -954,53 +954,7 @@ flowchart TB
 
 To get support for [Open Access LMU](https://epub.ub.uni-muenchen.de/), the LMU Munich institutional repository for articles and books, contact the [University Library Open Access team](https://www.en.ub.uni-muenchen.de/writing/open-access-publishing/oa-auxiliary-page/index.html).
 
-<!-- Preprint Servers
 
-Share manuscripts before peer review to get early feedback and establish priority:
-
-::: {.orc-grid-tools}
-
-<div class="orc-card-tool">
-<div class="orc-card-tool-icon"><img src="https://cdn.simpleicons.org/osf" alt="OSF"></div>
-<h4>[OSF Preprints](https://osf.io/preprints/)</h4>
-<p>Multidisciplinary preprint service</p>
-<details class="orc-card-details">
-<summary>Read more</summary>
-<p>All disciplines welcome. Integration with OSF projects, flexible requirements.</p>
-</details>
-</div>
-
-<div class="orc-card-tool">
-<div class="orc-card-tool-icon"><i class="bi bi-file-earmark-medical"></i></div>
-<h4>[bioRxiv](https://www.biorxiv.org/)</h4>
-<p>Biological sciences preprints</p>
-<details class="orc-card-details">
-<summary>Read more</summary>
-<p>Free hosting, DOI assignment, rapid posting. Widely recognized in life sciences and neuroscience.</p>
-</details>
-</div>
-
-<div class="orc-card-tool">
-<div class="orc-card-tool-icon"><i class="bi bi-heart-pulse"></i></div>
-<h4>[medRxiv](https://www.medrxiv.org/)</h4>
-<p>Medical and health sciences preprints</p>
-<details class="orc-card-details">
-<summary>Read more</summary>
-<p>Medical research focus with health screening. DOI assignment, linked to bioRxiv infrastructure.</p>
-</details>
-</div>
-
-<div class="orc-card-tool">
-<div class="orc-card-tool-icon"><i class="bi bi-calculator"></i></div>
-<h4>[arXiv](https://arxiv.org/)</h4>
-<p>Physics, mathematics, computer science</p>
-<details class="orc-card-details">
-<summary>Read more</summary>
-<p>Established 1991. Moderation system, LaTeX support. Standard in quantitative fields.</p>
-</details>
-</div>
-
-::: -->
 
 ::: {.container .my-4 }
 
@@ -1030,6 +984,50 @@ Share manuscripts before peer review to get early feedback and establish priorit
 <h4 class="card-title">Open Access LMU</h4>
 <p class="card-text">Institutional publication repository.</p>
 <a href="https://epub.ub.uni-muenchen.de/" class="stretched-link" target="_blank" rel="noopener"></a>
+</div>
+:::
+
+::: {.col}
+<div class="card orc-card-tool h-100 position-relative">
+<div class="orc-card-tool-icon mb-2"> 
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Open_Science_Framework_log_%28and_Center_for_Open_Science_logo%29.svg/3840px-Open_Science_Framework_log_%28and_Center_for_Open_Science_logo%29.svg.png" class="img-fluid" alt="OSF logo">
+</div>
+<h4 class="card-title">OSF Preprints</h4>
+<p class="card-text">Multidisciplinary preprint service.</p>
+<a href="https://osf.io/preprints/" class="stretched-link" target="_blank" rel="noopener"></a>
+</div>
+:::
+
+::: {.col}
+<div class="card orc-card-tool h-100 position-relative">
+<div class="orc-card-tool-icon mb-2"> 
+<i class="bi bi-file-earmark-medical"></i>
+</div>
+<h4 class="card-title">bioRxiv</h4>
+<p class="card-text">Biological sciences preprints.</p>
+<a href="https://www.biorxiv.org/" class="stretched-link" target="_blank" rel="noopener"></a>
+</div>
+:::
+
+::: {.col}
+<div class="card orc-card-tool h-100 position-relative">
+<div class="orc-card-tool-icon mb-2"> 
+<i class="bi bi-heart-pulse"></i>
+</div>
+<h4 class="card-title">medRxiv</h4>
+<p class="card-text">Medical and health sciences preprints.</p>
+<a href="https://www.medrxiv.org/" class="stretched-link" target="_blank" rel="noopener"></a>
+</div>
+:::
+
+::: {.col}
+<div class="card orc-card-tool h-100 position-relative">
+<div class="orc-card-tool-icon mb-2"> 
+<i class="bi bi-calculator"></i>
+</div>
+<h4 class="card-title">medRxiv</h4>
+<p class="card-text">Physics, mathematics, computer science preprints.</p>
+<a href="https://arxiv.org/" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
 :::
 
