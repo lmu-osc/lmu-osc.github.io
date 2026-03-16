@@ -660,6 +660,53 @@ To publish you code on Zenodo, we recommend to<!-- these instructions contradict
 **Create a Zenodo "community" for the team.** After team members connect their repositories from their personal GitHub account to Zenodo, and archive releases with a DOI, these records can be added to a shared Zenodo _community_. A community provides a central space where all software and other research outputs produced by the group can be collected and displayed, making them easier to find, cite, and showcase at the team level.  
 :::
 
+::: {.container .my-4 }
+
+<h4 class="fs-5"><i class="bi bi-mortarboard"></i> LEARN MORE</h4>
+
+::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
+
+<!-- card -->
+::: {.col}
+
+<div class="card orc-card-tool h-100 position-relative">
+<span class="orc-card-tool-badge recommended">OSC Tutorial</span>
+<div class="orc-card-tool-icons mb-2">
+<div class="orc-card-tool-icon icon-1">
+<img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+</div>
+</div>
+<h4 class="card-title">Code Publishing</h4>
+<p class="card-text">Add all elements of a reproducible project to your repository.</p>
+<a href="https://lmu-osc.github.io/code-publishing/" class="stretched-link" target="_blank" rel="noopener"> </a>
+</div>
+
+:::
+
+:::
+
+<h4 class="fs-5 mt-3"><i class="bi bi-tools"></i> TOOLS & RESOURCES</h4>
+<!-- row for Tools & Resources section -->
+
+::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
+
+<!-- card-->
+::: {.col}
+
+<div class="card orc-card-tool h-100 position-relative">
+<div class="orc-card-tool-icon mb-2"> 
+<img src="https://about.zenodo.org/static/img/icons/zenodo-icon-blue.svg" class="img-fluid" alt="Zenodo icon">
+</div>
+<h4 class="card-title">Zenodo</h4>
+<p class="card-text">General-purpose repository for data, software, reports.</p>
+<a href="https://zenodo.org" class="stretched-link" target="_blank" rel="noopener"></a>
+
+</div>
+
+:::
+:::
+:::
+
 
 :::
 
@@ -671,11 +718,83 @@ To publish you code on Zenodo, we recommend to<!-- these instructions contradict
 ### Materials Sharing {#sec-materials-sharing}
 
 </summary>
-<!-- add a section on material publishing, e.g. protocols, survey text, OSF Zenodo, choose a licence https://creativecommons.org/chooser/ -->
 
 ::: {.panel-tabset}
 
-#### Title 
+Any material needed to reproduce or replicate your study should also be shared openly unless there are dual-use, patent, or privacy concerns. 
+
+#### 4.3.1. Digital materials 
+
+For instance, you can share your:
+
+- **Share wet-lab protocols** on e.g. [protocols.io](https://www.protocols.io/), see [2.1.1. Lab Protocols](02-collect-and-manage.qmd#sec-data-collection).
+- **Share survey text, instructions, or scoring sheets** on e.g. [OSF](https://osf.io/)
+
+We recommend to use a creative Common license such as CC.-BY 4.0 to allow reuse, modification and redistribution, while getting attribution, or one of its derivative (see [tool to select a creative common license](https://creativecommons.org/chooser/))
+
+
+::: {.container .my-4 }
+
+<!-- row for Tools & Resources section -->
+<h4 class="fs-5 mt-3"><i class="bi bi-tools"></i> TOOLS & RESOURCES</h4>
+::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
+
+::: {.col}
+<div class="card orc-card-tool h-100 position-relative">
+<div class="orc-card-tool-icon mb-2"> 
+<img src="https://www.protocols.io/favicon.ico" class="img-fluid" alt="Protocols.io icon">
+</div>
+<h4 class="card-title">Protocols.io</h4>
+<p class="card-text">Share, discover, cite, and improve research protocols.</p>
+<a href="https://www.protocols.io/" class="stretched-link" target="_blank" rel="noopener"></a>
+</div>
+:::
+
+::: {.col}
+<div class="card orc-card-tool h-100 position-relative">
+<div class="orc-card-tool-icons mb-2">
+<div class="orc-card-tool-icon icon-1">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Open_Science_Framework_log_%28and_Center_for_Open_Science_logo%29.svg/3840px-Open_Science_Framework_log_%28and_Center_for_Open_Science_logo%29.svg.png" class="img-fluid" alt="OSF logo">
+</div>
+</div>
+<h4 class="card-title">OSF</h4>
+<p class="card-text">Project management platform including storage and DOI.</p>
+<a href="https://osf.io/" class="stretched-link" target="_blank" rel="noopener"> </a>
+</div>
+:::
+
+::: {.col}
+<div class="card orc-card-tool h-100 position-relative">
+<div class="orc-card-tool-icons mb-2">
+<div class="orc-card-tool-icon icon-1">
+<img src="https://creativecommons.org/wp-content/themes/vocabulary-theme/vocabulary/favicon/apple-touch-icon.png" class="img-fluid" alt="Creative Commons logo">
+</div>
+</div>
+<h4 class="card-title">Creative Commons licenses</h4>
+<p class="card-text">Tool comparing licenses for diverse creative work.</p>
+<a href="https://creativecommons.org/chooser/" class="stretched-link" target="_blank" rel="noopener"></a>
+</div>
+:::
+:::
+:::
+
+#### 4.3.2. Physical materials
+
+Repositories for physical research materials (e.g., biological samples, chemicals, specimens, hardware, or other tangible resources) are usually called biobanks, material repositories, or research infrastructure collections and are domain specific or specialized to one kind of material (e.g. DNA). 
+
+<br>
+
+For instance, [Addgene](https://www.addgene.org/) is a nonprofit plasmid repository deposited by thousands of research labs around the world, while [ARIADNE](https://www.ariadne-research-infrastructure.eu/)'s mission is to create a sustainable infrastructure for archaeological data sharing across institutions and nations.
+
+<br>
+
+Regardless of your discipline: 
+
+- **Use repositories that assign persistent identifiers** for proper citation.
+- **Provide detailed metadata**, including provenance, storage conditions, and usage restrictions.
+- **Check legal and ethical requirements** (biosafety, export control, patient consent).
+- **Document links between materials and associated datasets or publications.**
+
 
 
 
