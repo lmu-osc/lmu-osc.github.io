@@ -1,6 +1,8 @@
 function addButtonAndLink() {
   // Find the target div by class name
-  const targetDiv = document.querySelector('.quarto-listing-category.category-unnumbered');
+  const targetDiv = document.querySelector(
+    '.quarto-listing-category.category-unnumbered, .quarto-listing-category.category-default'
+  );
 
   // Create a new div to insert
   const newDiv = document.createElement('div');
