@@ -207,6 +207,12 @@ Instead, explicitly **exclude the data directory using the .gitignore file from 
 Importantly, if data are removed from an existing repository, they may still remain accessible in the repository’s history, since previous states of the project can be restored. If sensitive data are accidentally committed and pushed, it is possible to [rewrite the repository history](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository) to remove them retrospectively. However, this process is complex and error-prone, so it is best avoided by ensuring that sensitive data are excluded from version control from the outset.
 :::
 
+:::{.callout-tip}
+## Tip for research groups:
+**Create a LRZ GitLab "organization" for the team.**  This allows repositories, permissions, and project resources to be managed centrally rather than under individual accounts. This ensures continuity when team members leave, as ownership can be transferred to e.g. the PI and other administrators of the organization. 
+:::
+
+
 ::: {.container .my-4 }
 
 <h4 class="fs-5"><i class="bi bi-mortarboard"></i> LEARN MORE</h4>
@@ -437,7 +443,7 @@ As with all documentation, your project repository’s documentation should be w
 
 <br>
 
-- **Create a README (e.g. a .md or .txt file) early and update it as you go.** Your README is the entry point to your project. A good README answers the essential questions: who created the script, what it contains, how they relate to other scripts and in which order scripts should be run, waht the dependencies of the project are, how to obtain/access the input data, whether the code can be reused. 
+- **Create a README (e.g. a .md or .txt file) early and update it as you go.** Your README is the entry point to your project. A good README answers the essential questions: who created the script, what it contains, how they relate to other scripts and in which order scripts should be run, what the dependencies of the project are, how to obtain/access the input data, whether the code can be reused. 
 - **Annotate your code explaining _why_ you made a decision.** All parameter values used as input for a function, or other decisions, should be justified minimally as comments in your code to later be included in your manuscript. **Do not include sensitive information such as credentials or name of excluded patient as comments in your code!**
 - **Update your data dictionary and README files.** Your data documentation should be updated to include all data exclusion, change in range of possible values, ect. (see [2.2.4. Documentation](02-collect-and-manage.qmd#sec-data-management){.mark}).
 
@@ -796,7 +802,7 @@ A lot of these elements are those of a preregistration (see [1.4.1. Pre-analysis
 
 <br>
 
-These element will be refined depending on your study type. Widely used examples of guidelines include [CONSORT](https://www.equator-network.org/reporting-guidelines/consort/) for randomized controlled trials, [ARRIVE](https://www.equator-network.org/reporting-guidelines/improving-bioscience-research-reporting-the-arrive-guidelines-for-reporting-animal-research/) for animal studies, and [PRISMA](https://www.equator-network.org/reporting-guidelines/prisma/) for systematic reviews.
+Some of these elements will be refined depending on your study type. Widely used examples of guidelines include [CONSORT](https://www.equator-network.org/reporting-guidelines/consort/) for randomized controlled trials, [ARRIVE](https://www.equator-network.org/reporting-guidelines/improving-bioscience-research-reporting-the-arrive-guidelines-for-reporting-animal-research/) for animal studies, and [PRISMA](https://www.equator-network.org/reporting-guidelines/prisma/) for systematic reviews.
 
 
 ::: {.container .my-4 }
@@ -836,52 +842,59 @@ These element will be refined depending on your study type. Widely used examples
 
 ## <i class="bi bi-card-checklist"></i> Analysis & Collaboration Checklist {.unnumbered}
 
-To complete before the presentation of the results to the research group.
+This assumes a reproducible workflow using R. Not all items are relevant for all fields of research or study types.
 
-**1. Before and during data analyses**
+**1. During data analyses: create and maintain a repository**
 
-**Repository Setup & Content:** <!-- don't manage to make this one indented-->
+**Repository Setup** <!-- don't manage to make this one indented-->
 
-- [ ] Uses the lab’s standard folder structure
-- [ ] Version-controlled with Git and shared via the LRZ GitLab or GitHub organization
-- [ ] Uses Renv for package management
-- [ ] Contains raw data and/or processed data
-- [ ] Includes a data dictionary (codebook)
-- [ ] Includes scripts for raw data extraction, processing, and analysis
-- [ ] Includes a Quarto reproducible analysis report
-- [ ] Contains a descriptive README explaining usage, code order, and dependencies
+- [ ] Use the lab’s standard folder structure
+- [ ] Use version-control with Git and LRZ GitLab or GitHub
+- [ ] Use Renv or equivalent for package management
 
-**R Script Standards:** <!-- don't manage to make this one indented-->
+**Repository Content** <!-- don't manage to make this one indented-->
 
-- [ ] Includes metadata/header identifying author, date, and purpose
-- [ ] Structured for readability
-- [ ] Contains informative comments about analytic decisions
-- [ ] Does not contain sensitive information (e.g., passwords, patient data)
-- [ ] Uses meaningful and consistent naming conventions
-- [ ] Breaks actions into functions to avoid duplication and improve clarity
-- [ ] Sets seeds for random processes to allow reproducible computation
-- [ ] Follows a programming style guide (e.g., styler, lintR)
+- [ ] Raw data or access procedure documented
+- [ ] Data dictionary (codebook) available
+- [ ] Scripts ordered for raw data extraction, processing, and analysis
+- [ ] Results generated from a Quarto reproducible analysis report
+- [ ] README describing usage, dependencies, and session info
 
-**2. During Repository and Code Peer-Review:**
+**R Scripts** <!-- don't manage to make this one indented-->
+
+- [ ] Metadata/header identifying author, date, and purpose
+- [ ] Readable structure and consistent naming
+- [ ] Informative comments about analytic decisions
+- [ ] No sensitive information in the code (e.g., passwords, patient identifiers)
+- [ ] Functions used to avoid duplication
+- [ ] Seeds set to create reproducible random computations
+- [ ] Style guide followed (e.g., styler, lintR)
+
+**2. Before presenting results to the research group: conduct internal code peer review**
 
 - [ ] Collaboration workflow established (e.g., branch or live review)
-- [ ] Session info captured and dependencies listed in README
-- [ ] Code performs tasks documented in the headers
 - [ ] Code runs without errors on a fresh environment / different computer
+- [ ] Results, figures, tables are reproducible
 - [ ] Code is well-organized, readable, and commented
 - [ ] All functions are documented
 - [ ] Sensitive information removed
-- [ ] Results, figures, tables are reproducible
-- [ ] (for co-authors): Methods used correct
-- [ ] (for co-authors): Methods match the analysis plan or deviation are reported
+- [ ] (for co-authors): Methods used are correct
+- [ ] (for co-authors): Methods match the pre-analysis plan or deviation are documented
 
-**3. Before Sharing**
+**3. Before sharing outside the group**
 
-- [ ] README provides complete instructions
-- [ ] Results reproducible
-- [ ] Sensitive information removed
+- [ ] README provides complete instructions to reproduce results
+- [ ] Results reproducible from the report
+- [ ] Sensitive information removed and restricted data protected
 - [ ] Code peer-reviewed by co-authors
-- [ ] Documentation of results follow reporting guidelines  
-(e.g. presentation and manuscript include e.g. effect size, confidence intervals)
+- [ ] Reporting of results follow relevant guidelines (e.g. effect size, confidence intervals, model specification)
+- [ ] Results are separated in preregistered confirmatory vs non preregistered exploratory analyses
+
+::: {.d-flex .justify-content-center .mt-4 .orc-checklist-download .phase-1} 
+<!-- RL hasn't created button for checklist 3 yet -->
+
+<a href="assets/checklists/Analyze-Collaborate-Checklist.docx" class="btn btn-outline-secondary btn-sm">Download checklist <i class="bi bi-download"></i></a>
+<!-- need to update manually the  downloadable file with checklist in word doc-->
+:::
 
 :::
