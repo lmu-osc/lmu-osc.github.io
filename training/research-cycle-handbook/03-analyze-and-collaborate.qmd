@@ -798,7 +798,7 @@ Transparent and complete reporting is essential for the interpretation, verifica
 - **Limitations and potential sources of bias** – issues such as confounding, measurement error, or selection bias.
 - **Data, code, and materials availability** – where readers can access datasets, analysis scripts, or supplementary materials to reproduce the analysis.
 
-A lot of these elements are those of a preregistration (see [1.4.1. Pre-analysis planning](01-plan-and-design.qmd#sec-study-design-analysis-plan)). Describe them in your methods section, adding they were **planned a priori in your preregistration** and citing its DOI, and **separate results into e.g. preregistered confirmatory analyses and non-preregistered exploratory analyses**.
+A lot of these elements are those of a preregistration (see [1.4.1. Pre-analysis planning](01-plan-and-design.qmd#sec-study-design-analysis-plan){.mark}). Describe them in your methods section, adding they were **planned a priori in your preregistration** and citing its DOI, and **separate results into e.g. preregistered confirmatory analyses and non-preregistered exploratory analyses**.
 
 <br>
 
@@ -909,7 +909,7 @@ This assumes a reproducible workflow using R. Not all items are relevant for all
 ::: {.d-flex .justify-content-center .mt-4 .orc-checklist-download .phase-1} 
 <!-- RL hasn't created button for checklist 3 yet -->
 
-<a href="assets/checklists/Analyze-Collaborate-Checklist.docx" class="btn btn-outline-secondary btn-sm">Download checklist <i class="bi bi-download"></i></a>
+<a href="assets/checklists/03-Analyze-Collaborate-Checklist.docx" class="btn btn-outline-secondary btn-sm">Download checklist <i class="bi bi-download"></i></a>
 <!-- need to update manually the  downloadable file with checklist in word doc-->
 :::
 
