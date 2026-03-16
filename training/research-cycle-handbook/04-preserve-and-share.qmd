@@ -40,14 +40,20 @@ include-in-header:
 
 Sharing your data allows others to verify your findings, build on your work, and increase the impact of your research. But sharing does not always mean making everything publicly available. What you can share depends on the consent you obtained, the sensitivity of your data, and your ethics approval.
 
-In [1. Plan & Design](01-plan-and-design.qmd){.mark}, you wrote a Data Management Plan, in [2. Collect & Manage](02_collect_and_manage.qmd){.mark}, you created documentation for yourself, and in [3. Analyze & Collaborate](03_analyze_and_collaborate.qmd){.mark} you updated that documentation for your collaborators. Now you prepare that documentation for people who have no prior knowledge of your project. You also reassess your plan and make a **final decision on how openly your data will be shared, select an appropriate repository, and apply a license that tells others how they may reuse your work**.
+In [1. Plan & Design](01-plan-and-design.qmd){.mark}, you wrote a Data Management Plan, in [2. Collect & Manage](02_collect_and_manage.qmd){.mark}, you created documentation for yourself, and in [3. Analyze & Collaborate](03_analyze_and_collaborate.qmd){.mark} you updated that documentation for your collaborators. Now you prepare that documentation for people who have no prior knowledge of your project and reassess you plan:
 
-This step is straightforward if you followed previous steps: by this stage, you should already have a README, a data dictionary (codebook), organized files, and clear metadata.
+::: {.ms-1} 
+- **Make a final decision on how openly your data will be shared.**
+- **Select an appropriate repository** for publishing your data type.
+- **Apply a license** that tells others how they may reuse your work.
+:::
+
+These steps are straightforward if you followed previous recommendations: by this stage, you should already have a README, a data dictionary (codebook), organized files, and clear metadata.
 
 ::: {.panel-tabset}
 
 #### 4.1.1. Open vs Restricted 
-<!-- I edited this a bit Reema, is this correct? overall I think this section could use more information-->
+<!-- I edited this a bit Reema, is this correct? overall I think this section could use more information and clarity. How about embargoe?-->
 
 Not all data can or should be shared openly. Your sharing options depend on what consent participants gave and what your ethics approval permits (see [1.2.3. Ethics](01-plan-and-design.qmd#sec-legal-requirements){.mark}).
 
@@ -55,28 +61,21 @@ Not all data can or should be shared openly. Your sharing options depend on what
 
 - **Open data** can be downloaded by anyone without restrictions. This maximizes reuse but is only appropriate when data contains no personal information or has been fully anonymized.
 
-- **Restricted access** means the metadata is available on a professional repository and clear instructions of the conditions of access to the data are provided. Requesting the data often requires describing the purpose of reuse (sometimes in the form of a preregistration, see [1.4.1. Pre-analysis planning](01-plan-and-design.qmd#sec-study-design-analysis-plan){.mark}), signing a Data Use Agreement, and agree to further conditions. This can be organized automatically through the repository or through contacting the authors<!--if so what's the difference with the option below?-->. This balances reuse with protection. 
+- **Restricted access** means the metadata is available on a professional repository and clear instructions of the conditions of access to the data are provided. Requesting the data often requires describing the purpose of reuse (sometimes in the form of a preregistration, see [1.4.1. Pre-analysis planning](01-plan-and-design.qmd#sec-study-design-analysis-plan){.mark}), signing a Data Use Agreement, and agreeing to further conditions. This can be organized automatically through the repository or through contacting the authors<!--if so what's the difference with the option below?-->. This balances reuse with protection. 
 
-- **Metadata only** describes what data exists without sharing the data itself. Others can discover your work and contact you to discuss access. This is appropriate when data cannot be shared due to legal or ethical constraints.<!--would that be considered Accessible though?--> Making your data Findable by sharing your metadata on a professional repository is the first step to making your data FAIR as required by the [LMU guidelines](https://cms-cdn.lmu.de/media/contenthub/amtliche-veroeffentlichungen/gwp-ordnung.pdf) (see [1.2.1. LMU guidelines](01-plan-and-design.qmd#sec-legal-requirements){.mark})
+- **Metadata only** describes what data exists without sharing the data itself. Others can discover your work and contact you to discuss access. This is appropriate when data cannot be shared due to legal or ethical constraints.<!--would that be considered Accessible though?--> Making your data Findable by sharing your metadata on a professional repository is the first step to making your data FAIR, as emphasized by the [LMU guidelines](https://cms-cdn.lmu.de/media/contenthub/amtliche-veroeffentlichungen/gwp-ordnung.pdf) (see [1.2.1. LMU guidelines](01-plan-and-design.qmd#sec-legal-requirements){.mark})
 
 <br>
 
-When deciding, ask yourself:
+When deciding whether data should be shared, consider the following:
 
-- What did participants **consent** to? 
-- What does your **ethics** approval allow? 
-- Can the data be **anonymized** without losing value (see [2.3.2. Anonymization](02-collect-and-manage.qmd#sec-ethics-and-privacy){.mark})? 
-- If you work with **sensitive data**, consult [your institution's data protection officer](https://www.lmu.de/en/about-lmu/structure/organizational-structure/officers-and-representatives/data-protection-officer.html). 
-- If you generate research outputs that could lead to **dual use** (e.g. that could also be applied for military or malicious purposes), please refer to the European Commission's policy ([Dual-Use Regulation 2021/821](https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L:2021:206:FULL&from=EN)) and get support from the [LMU Export Control service](mailto:Exportkontrolle@Verwaltung.Uni-Muenchen.DE).
-- If your research could lead to **patents or commercialization**, get the support of the [IP Management team](https://www.lmu.de/en/research/research-transfer/inventions-patents-and-exploitation-rights/). 
+- Ensure that data sharing is compatible with the **informed consent** provided by participants. 
+- Check what your **ethics approval** allows.
+- Consider whether the data can be **anonymized** without losing scientific value (see [2.3.2. Anonymization](02-collect-and-manage.qmd#sec-ethics-and-privacy){.mark}).
+- If you work with **sensitive data**, you may consult the University's [data protection officer](https://www.lmu.de/en/about-lmu/structure/organizational-structure/officers-and-representatives/data-protection-officer.html). 
+- If your research outputs could have **dual-use** implications (e.g. that could also be applied for military or malicious purposes), consult the relevant regulations (e.g. European Commission's policy ([Dual-Use Regulation 2021/821](https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L:2021:206:FULL&from=EN))) and contact the University's [Export Control service](mailto:Exportkontrolle@Verwaltung.Uni-Muenchen.DE).
+- If your research may lead to **patents or commercialization**, contact the the University's [IP Management team](https://www.lmu.de/en/research/research-transfer/inventions-patents-and-exploitation-rights/) before sharing data. Early consultation helps ensure that intellectual property rights are not compromised.
 
-
-<!-- Before releasing or licensing data/materials/software, a risk evaluation is performed to
-consider potential dual-use or misuse (appropriate to the field and data type).
-
-If patents may result from the work, rules about data sharing and publications are
-clarified with the patent/technology transfer office before public release (e.g., what must be delayed
-and what can be shared). -->
 
 <!-- TODO Reema: tool card for decision tree ; MI: not sure if feasible in enough details to be useful? but perhaps ;)--> 
 
@@ -184,7 +183,7 @@ During the course of data collection and analyses, you created a README and data
 
 - **Review your data dictionary** to ensure every variable is fully described. What was obvious to you during analysis may need explanation for others.
 
-- **Confirm you follow community standards.** Many fields have established formats for sharing data (e.g., [BIDS](https://bids.neuroimaging.io/index.html) for neuroimaging, see [FAIRsharing](https://fairsharing.org/) and [RDMkit](https://rdmkit.elixir-europe.org/your_domain) to review discipline specific organizational and metadata standards). Using these makes your data immediately usable with existing tools (see also [2.2.5. Standards](<!--internal link-->)). 
+- **Confirm you follow community standards.** Many fields have established formats for sharing data (e.g., [BIDS](https://bids.neuroimaging.io/index.html) for neuroimaging, see [FAIRsharing](https://fairsharing.org/) and [RDMkit](https://rdmkit.elixir-europe.org/your_domain) to review discipline specific organizational and metadata standards). Using these makes your data immediately usable with existing tools (see also [2.2.5. Standards](02-collect-and-manage.qmd#sec-data-management){.mark}).<!-- link to discipline specific guidance when exist--> 
 
 - **Verify anonymization.** Check that no personal information remains in the data files, metadata, or filenames.
 
@@ -376,14 +375,13 @@ Whichever you choose, ensure the repository provides a **DOI** (Digital Object I
 
 #### 4.1.4. Data Licenses
 
-A license tells others what they can do with your data. Licensing your data consists in adding a file called LICENSE.txt next to your data, that contains the appropriate legal text. Without one, or equivalent statements, others cannot legally reuse your work, even if it is publicly available. Common open licenses for data are:
+A license tells others what they can do with your data. Licensing your data consists in adding a file called LICENSE.txt next to your data, that contains the appropriate legal text. Without one, or equivalent statements, others cannot legally reuse your research outputs, even if it is publicly available.
 
 <br>
 
+Common open licenses for data are:
 - **CC0 (Public Domain)** places no restrictions. Anyone can use, modify, and redistribute without attribution. Recommended for factual data where maximum reuse is the goal.
-
 - **CC BY (Attribution)** requires users to credit you. A good default when you want recognition while enabling broad reuse.
-
 - **CC BY-NC (Non-Commercial)** adds a restriction against commercial use. Consider whether this limitation actually serves your goals.
 
 <br>
@@ -424,9 +422,9 @@ For restricted-access data, a **Data Use Agreement** specifies conditions beyond
 
 #### 4.1.5. Data Use Agreements
 
-_in construction_
+_in construction_<!-- Reema? -->
 
-* Description of what it is, when it is needed, what the process to create one is (SOP for handling access requests (who receives them, how decisions are made, what must be documented, and response timelines)
+* Description of what it is, when it is needed, what the process to create one is (Team SOP for handling access requests (who receives them, how decisions are made, what must be documented, and response timelines))
 * LMU contact for legal department 
 * Examples DUA
 
