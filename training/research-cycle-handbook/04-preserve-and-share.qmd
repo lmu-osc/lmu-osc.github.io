@@ -445,7 +445,7 @@ Making code publicly available demonstrates the reproducibility of your results 
 
 So far, your code repository for internal use developed in [3. Analyze & Collaborate](03-analyze-and-collaborate.qmd){.mark} was either on the secured [LRZ Gitlab](https://gitlab.lrz.de/) (e.g. if your data and/or code are sensitive), or on a [GitHub](https://github.com/) repository. Before the submission of a manuscript to a journal and/or upon the acceptance of a manuscript, there are new steps that need to be done to publish your code (i.e. archive its current version and get a DOI) on e.g. [Zenodo](https://zenodo.org/).
 
-Most steps require little time if you had worked reproducibly and completed all preparation prior to that point as was recommended in previous sections, i.e. preparation of structured repository with readable scripts, and appropriate documentation such as a data dictionary and README (see [Analysis & Collaboration Checklist](03-analyze-and-collaborate.qmd#analysis-collaboration-checklist){.mark}).  
+Most steps require little time if you had worked reproducibly and completed all preparation prior to that point as was recommended in previous sections, i.e. preparation of structured repository with readable scripts, and appropriate documentation such as a data dictionary and README (see [Analysis & Collaboration Checklist](03-analyze-and-collaborate.qmd#analyze-collaborate-checklist){.mark}).  
 
 However, if you work with sensitive data that cannot be anonymized and shared, you may still need to generate a simulated random dataset to allow for the published code to run (which you may have already done if you simulated data in order to prepare a preregistration, see [1.4. Study Design & Analysis Plan](01-plan-and-design.qmd#sec-study-design-analysis-plan)), or chose to create a synthetic dataset with the same properties as the original dataset to allow others to re-derive an approximation of the original results and conduct further exploratory analyses.
 
@@ -654,9 +654,20 @@ Document dependencies clearly-->
 
 </details>
 
+<details class="orc-details-panel">
+<summary><i class="bi bi-journal-arrow-up"></i> 
 
+### Materials Sharing {#sec-materials-sharing}
+
+</summary>
 <!-- add a section on material publishing, e.g. protocols, survey text, OSF Zenodo, choose a licence https://creativecommons.org/chooser/ -->
 
+::: {.panel-tabset}
+
+
+:::
+
+</details>
 
 
 <details class="orc-details-panel">
@@ -671,7 +682,7 @@ Publishing open access articles (i.e. which are free to readers) **increases the
 
 ::: {.panel-tabset}
 
-#### 4.3.1. Pathways to Open Access
+#### 4.4.1. Pathways to Open Access
 
 They are several pathways to make your your articles free to read, e.g.:
 
@@ -679,7 +690,7 @@ They are several pathways to make your your articles free to read, e.g.:
 - **Gold Open Access**: the publication of the final version of record as immediately open access on the publisher’s platform, against payment of an APC.
 - **Green Open Access**: self-archiving of a [**preprint or postprint**]{.underline} in an institutional or disciplinary repository, either immediately or after an embargo period imposed by the publisher,  without cost to the author. Visit the [Open Policy Finder](https://openpolicyfinder.jisc.ac.uk/) to know whether and where your publishers allow you to publish preprint or postprints.
 
-Depending on the contract negotiated by the University and each publisher (see [4.3.2. Contract with Publishers](#sec-open-access-articles){.mark}), the payment of APCs can also be requested by publishers regardless of the article's accessibility status.
+Depending on the contract negotiated by the University and each publisher (see [4.4.2. Contract with Publishers](#sec-open-access-articles){.mark}), the payment of APCs can also be requested by publishers regardless of the article's accessibility status.
 
 :::{.callout-note}
 ## Definitions
@@ -728,7 +739,7 @@ Depending on the contract negotiated by the University and each publisher (see [
 
 
 
-#### 4.3.2. Contracts with Publishers
+#### 4.4.2. Contracts with Publishers
 
 Until 2024, authors publishing in legacy (subscription-based) journals were required to pay an **Article Processing Charge (APC)** to make their work immediately open access upon publication, the model commonly referred to as '_gold open access_'. 
 To **avoid these fees** while still ensuring public accessibility, authors were encouraged to disseminate a **preprint and/or postprint**, or to deposit the publisher’s version in an institutional repository after the embargo period had expired. 
@@ -765,7 +776,7 @@ The current contract conditions for LMU Munich can be accessed on the [Universit
 
 :::
 
-#### 4.3.3. Publishing Preprints and Retaining Rights 
+#### 4.4.3. Publishing Preprints and Retaining Rights 
 
 To increase the accessibility and impact of your article we recommend you to:
 
@@ -909,7 +920,7 @@ All research outputs and their specific versions should be linked to their autho
 ::: {.panel-tabset}
 
 
-####  4.4.1. Authorship, Contributorship, and ORCID
+####  4.5.1. Authorship, Contributorship, and ORCID
 
 <h5>Authorship</h5>
 
@@ -918,7 +929,7 @@ According to §14 of the [LMU Guidelines for Safeguarding Good Scientific Practi
 - make a genuine, **verifiable contribution** to the content of a scientific publication, data, or software, and **not solely have a managerial or supervisory position** in the project;
 - **agree to the final version** of the work to be published and **bear joint responsibility** for the publication unless explicitly stated otherwise.
 
-We recommend to **start discussions on authorship, roles, and responsibilities as early as possible**. First discussions can for instance take place at the end of [1. Plan & Design](01-plan-and-design.qmd){.mark}, e.g. during the presentation of the study plan to the research group (see [1. Plan & Design Checklist](01-plan-and-design.qmd#plan-design-checklist){.mark}). 
+We recommend to **start discussions on authorship, roles, and responsibilities as early as possible**. First discussions can for instance take place at the end of [1. Plan & Design](01-plan-and-design.qmd){.mark}, e.g. during the presentation of the study plan to the research group (see [Plan & Design Checklist](01-plan-and-design.qmd#plan-design-checklist){.mark}). 
 
 <br>
 
@@ -988,7 +999,7 @@ We recommend to **start discussions on authorship, roles, and responsibilities a
 :::
 
 
-####  4.4.2. Institution, Funders, and ROR
+####  4.5.2. Institution, Funders, and ROR
 
 - **Disclose your institutional affiliations and funders** as part of the metadata of all your research outputs. To be machine-readable and automatically connected to people's profile or their organization, this must include the official name of the organization and ideally (one of) its persistent identifier.
 - **Use your institution and funders' ROR**. The [Research Organization Registry (ROR)](https://ror.org/) is a global, community-led registry of open persistent identifiers for research and funding organizations.
@@ -1032,7 +1043,7 @@ The LMU Open Science Center is one of the many child organizations of LMU Munich
 
 :::
 
-####  4.4.3. Connecting Your Work
+####  4.5.3. Connecting Your Work
 
 - **Request a Digital Object Identifiers (DOI) for each of your research outputs** (data, code, preprint, preregistration)
     - you automatically get a DOI from professional repository for outputs you make public 
@@ -1059,7 +1070,7 @@ The LMU Open Science Center is one of the many child organizations of LMU Munich
 
 ::: {.orc-gradient-box}
 
-## <i class="bi bi-card-checklist"></i> Preservation Checklist {.unnumbered}
+## <i class="bi bi-card-checklist"></i> Preserve & Share Checklist {.unnumbered}
 
 **Before Publication:**
 
