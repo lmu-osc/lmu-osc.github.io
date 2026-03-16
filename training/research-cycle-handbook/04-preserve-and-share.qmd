@@ -576,7 +576,7 @@ You can provide the data required to run the code in several ways:
 </div>
 </div>
 <h4 class="card-title">Synthetic Data</h4>
-<p class="card-text">Synthetic data creation in R to balance utility and privacy when sharing data.</p>
+<p class="card-text">Synthetic data creation in R to balance utility and privacy when sharing data. (3h)</p>
 <a href="https://lmu-osc.github.io/synthetic-data-tutorial/" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
 
@@ -645,30 +645,21 @@ Learn more about open licenses for data and code in our [code publishing tutoria
 
 #### 4.2.4. Archiving & DOIs
 
-<!--
-GitHub to Zenodo Workflow
-Standard workflow for citable code:
+To publish you code on Zenodo, we recommend to<!-- these instructions contradict https://lmu-osc.github.io/code-publishing/archive.html -->
 
-Prepare Repository: Add README, license, example data
-Link to Zenodo: Enable integration via GitHub
-Create Release: Tag version (e.g., v1.0.0)
-Obtain DOI: Zenodo automatically archives and assigns DOI
-Cite: Include DOI in manuscript 
+- **Push your clean repository to GitHub** (see GitHub tutorial).
+- **Create an account on [Zenodo](https://zenodo.org/).**
+- **Link your GitHub account to Zenodo.**  Navigate to your profile >  account settings > link external accounts > GitHub > authorize Zenodo to access your GitHub account > a list of your GitHub repositories should appear. Enable the repository by toggling the switch next to it; refresh the page to check to see if the visual indicator that the repository is connected appears
+- **Go to GitHub and create a release.** Zenodo will automatically download a .zip-ball of each new release and register a DOI.
+- **Add DOI badge to your README.** After your first release, a DOI badge that you can include in GitHub README will appear next to your repository in the your list of GitHub repositories on Zenodo. This allows others to easily find and cite your archived code
+- **Create new release when needed.** If you make a new release, it will create a new version on Zenodo, under the same overall DOI, with a ‘sub-DOI’ to identify a specific version. 
 
-Before publishing code:
-
-Remove API keys, passwords, credentials
-Remove personal or participant data
-Review entire git history
-Add simulated data if needed
-Document dependencies clearly-->
 
 :::{.callout-tip}
 ## Tip for research groups:
-**Create a Zenodo "community" for the team.**   
+**Create a Zenodo "community" for the team.** After team members connect their repositories from their personal GitHub account to Zenodo, and archive releases with a DOI, these records can be added to a shared Zenodo _community_. A community provides a central space where all software and other research outputs produced by the group can be collected and displayed, making them easier to find, cite, and showcase at the team level.  
 :::
 
-<!-- zenodo workflow, DOI, link to https://lmu-osc.github.io/code-publishing/ -->
 
 :::
 
