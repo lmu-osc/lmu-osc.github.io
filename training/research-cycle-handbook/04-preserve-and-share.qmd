@@ -32,7 +32,7 @@ include-in-header:
 
 
 <details class="orc-details-panel">
-<summary markdown="1"><i class="bi bi-database-check"></i> 
+<summary markdown="1"><i class="bi bi-database-up"></i> 
 
 ### Data Sharing {#sec-data-sharing}
 
@@ -40,7 +40,7 @@ include-in-header:
 
 Sharing your data allows others to verify your findings, build on your work, and increase the impact of your research. But sharing does not always mean making everything publicly available. What you can share depends on the consent you obtained, the sensitivity of your data, and your ethics approval.
 
-In [1. Plan & Design](01-plan-and-design.qmd){.mark}, you wrote a Data Management Plan, in [2. Collect & Manage](02_collect_and_manage.qmd){.mark}, you created documentation for yourself, and in [3. Analyze & Collaborate](03_analyze_and_collaborate.qmd){.mark} you updated that documentation for your collaborators. Now you prepare that documentation for people who have no prior knowledge of your project and reassess you plan:
+In [1. Plan & Design](01-plan-and-design.qmd){.mark}, you wrote a Data Management Plan, in [2. Collect & Manage](02-collect-and-manage.qmd){.mark}, you created documentation for yourself, and in [3. Analyze & Collaborate](03-analyze-and-collaborate.qmd){.mark} you updated that documentation for your collaborators. Now you prepare that documentation for people who have no prior knowledge of your project and reassess you plan:
 
 ::: {.ms-1} 
 - **Make a final decision on how openly your data will be shared.**
@@ -63,7 +63,7 @@ Not all data can or should be shared openly. Your sharing options depend on what
 
 - **Restricted access** means the metadata is available on a professional repository and clear instructions of the conditions of access to the data are provided. Requesting the data often requires describing the purpose of reuse (sometimes in the form of a preregistration, see [1.4.1. Pre-analysis planning](01-plan-and-design.qmd#sec-study-design-analysis-plan){.mark}), signing a Data Use Agreement, and agreeing to further conditions. This can be organized automatically through the repository or through contacting the authors<!--if so what's the difference with the option below?-->. This balances reuse with protection. 
 
-- **Metadata only** describes what data exists without sharing the data itself. Others can discover your work and contact you to discuss access. This is appropriate when data cannot be shared due to legal or ethical constraints.<!--would that be considered Accessible though?--> Making your data Findable by sharing your metadata on a professional repository is the first step to making your data FAIR, as emphasized by the [LMU guidelines](https://cms-cdn.lmu.de/media/contenthub/amtliche-veroeffentlichungen/gwp-ordnung.pdf) (see [1.2.1. LMU guidelines](01-plan-and-design.qmd#sec-legal-requirements){.mark})
+- **Metadata only** describes what data exists without sharing the data itself. Others can discover your work and contact you to discuss access. This is appropriate when data cannot be shared due to legal or ethical constraints.<!--would that be considered Accessible though?--> Making your data Findable by sharing your metadata on a professional repository is the first step to making your data FAIR, as emphasized by the [LMU guidelines](https://cms-cdn.lmu.de/media/contenthub/amtliche-veroeffentlichungen/gwp-ordnung.pdf) (see also [1.2. Legal Requirements](01-plan-and-design.qmd#sec-legal-requirements){.mark})
 
 <br>
 
@@ -435,7 +435,7 @@ _in construction_<!-- Reema? -->
 
 
 <details class="orc-details-panel">
-<summary><i class="bi bi-code-square"></i> 
+<summary><i class="bi bi-file-code"></i> 
 
 ### Code Publishing {#sec-code-publishing}
 
@@ -443,12 +443,21 @@ _in construction_<!-- Reema? -->
 
 Making code publicly available demonstrates the reproducibility of your results and enables others to understand, verify, and build upon your analytical methods.
 
-So far, your code repository for internal use developed in [3. Analyze & Collaborate](03-analyze-and-collaborate.qmd){.mark} was either on the secured [LRZ Gitlab](https://gitlab.lrz.de/) (e.g. if your data and/or code are sensitive), or on a [GitHub](https://github.com/) repository. Before the submission of a manuscript to a journal and/or upon the acceptance of a manuscript, there are new steps that need to be done to publish your code (i.e. archive its current version and get a DOI) on e.g. [Zenodo](https://zenodo.org/).
+So far, your code was either backed up on the secured [LRZ Gitlab](https://gitlab.lrz.de/) (e.g. if your data and/or code are sensitive), or on [GitHub](https://github.com/)  (see [3. Analyze & Collaborate](03-analyze-and-collaborate.qmd){.mark}). Before the submission of a manuscript to a journal and/or upon the acceptance of a manuscript, there are small additional steps that need to be done to publish your code.
 
-Most steps require little time if you had worked reproducibly and completed all preparation prior to that point as was recommended in previous sections, i.e. preparation of structured repository with readable scripts, and appropriate documentation such as a data dictionary and README (see [Analysis & Collaboration Checklist](03-analyze-and-collaborate.qmd#analyze-collaborate-checklist){.mark}).  
+::: {.ms-1} 
+- **verify** the structure of your repository, the readability of your scripts, the completeness of the documentation (see [Analyze & Collaborate Checklist](03-analyze-and-collaborate.qmd#analyze-collaborate-checklist){.mark}).
+- **make a clean version public** e.g. to [GitHub](https://github.com/)
+- **add a license**
+- **get a DOI** through e.g. [Zenodo](https://zenodo.org/)
+:::
 
-However, if you work with sensitive data that cannot be anonymized and shared, you may still need to generate a simulated random dataset to allow for the published code to run (which you may have already done if you simulated data in order to prepare a preregistration, see [1.4. Study Design & Analysis Plan](01-plan-and-design.qmd#sec-study-design-analysis-plan)), or chose to create a synthetic dataset with the same properties as the original dataset to allow others to re-derive an approximation of the original results and conduct further exploratory analyses.
+If you work with **sensitive data that cannot be anonymized** and shared:
 
+::: {.ms-1} 
+- **generate a simulated random dataset** to allow for the published code to run (which you may have already done if you simulated data in order to prepare a preregistration, see [1.4. Study Design & Analysis Plan](01-plan-and-design.qmd#sec-study-design-analysis-plan){.mark}), _or_ 
+- **create a synthetic dataset with the same properties as the original dataset** to allow others to re-derive an approximation of the original results and conduct further exploratory analyses.
+:::
 
 ::: {.panel-tabset}
 
@@ -456,13 +465,15 @@ However, if you work with sensitive data that cannot be anonymized and shared, y
 
 During the course of data analyses, you created scripts and documentation such as README and data dictionary for yourself and collaborators. Before sharing publicly, review them from the perspective of someone who knows nothing about your project.
 
+<br>
+
 - **Expand your README** to include a description, involved data, computational requirements and dependencies (i.e. what software, packages, and their version, need to be installed to run the analyses), list of results. 
 - **Document your code** from an external perspective, using literate programming (e.g. Quarto) or comments.
 - **Double check that no sensitive information remains in your repository** (e.g. code comments, history of sensitive data)
 
-<br>
-
 See our [code publishing tutorial](https://lmu-osc.github.io/code-publishing/) for more information on how to prepare your code repository for sharing.
+
+<br>
 
 ::: {.callout-important}
 If you work with **sensitive data**, you must not include the raw or processed data in the version-controlled repository to be shared. 
@@ -507,9 +518,9 @@ Importantly, if data are removed from an existing repository, they may still rem
 
 Sharing your code allows for other researchers to clearly see which analytic methods were applied to the data. Ideally, they should also be able to rerun the code and verify the reproducibility of the reported results.
 
-You can provide the data required to run the code in several ways:
-
 <br>
+
+You can provide the data required to run the code in several ways:  
 
 - **The real (anonymized) data.** This can be done either (1) by including the dataset in the repository so that the code can access it locally and run directly, or (2) by configuring the code to retrieve the data from an external source, such as a database, API, or external data repository.
 - **Simulated random data.** This option mainly demonstrates that the code runs without errors. However, the original results cannot be verified and further analyses are not meaningful. See our [data simulation tutorial](https://lmu-osc.github.io/Introduction-Simulations-in-R/).
@@ -584,17 +595,12 @@ A license tells others what they can do with your code. Licensing your code cons
 <br>
 
 - **CC0 (Public Domain)** places no restrictions. Anyone can use, modify, and redistribute without attribution. Recommended for factual code where maximum reuse is the goal.
-- **Apache 2.0** requires users to credit you. A good default when you want recognition while enabling broad reuse.
-
-<!-- MIT: Permissive, widely adopted
-Apache 2.0: Patent protection
-GPL-3.0: Derivatives must be open 
-https://choosealicense.com/
-https://creativecommons.org/chooser/ -->
+- **MIT** is a simple license that requires users to credit you when they reuse, modify, and redistribute your code.
+- **Apache 2.0** is a safer license (covering more legal cases) that requires users to credit you and state the changes you made to the code.
 
 <br>
 
-Learn more about open licenses for data and code in our [code publishing tutorial](https://lmu-osc.github.io/code-publishing/choose_license.html).
+Learn more about open licenses for data and code in our [code publishing tutorial](https://lmu-osc.github.io/code-publishing/choose_license.html) or using the tool '[Choose an open source license](https://choosealicense.com/licenses/)'.
 
 ::: {.container .my-4 }
 
@@ -617,6 +623,20 @@ Learn more about open licenses for data and code in our [code publishing tutoria
 <a href="https://lmu-osc.github.io/code-publishing/choose_license.html" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
 
+:::
+
+::: {.col}
+
+<div class="card orc-card-tool h-100 position-relative">
+<div class="orc-card-tool-icons mb-2">
+<div class="orc-card-tool-icon icon-1">
+<img src="https://choosealicense.com/favicon.ico" class="img-fluid" alt="Choose an open source license logo">
+</div>
+</div>
+<h4 class="card-title">Choose an open source license</h4>
+<p class="card-text">Tool comparing open software licenses.</p>
+<a href="https://choosealicense.com/" class="stretched-link" target="_blank" rel="noopener"></a>
+</div>
 :::
 
 :::
@@ -664,14 +684,15 @@ Document dependencies clearly-->
 
 ::: {.panel-tabset}
 
+#### Title 
 
-:::
+
 
 </details>
 
 
 <details class="orc-details-panel">
-<summary><i class="bi bi-journal-arrow-up"></i> 
+<summary><i class="bi bi-unlock2"></i> 
 
 ### Open Access Articles {#sec-open-access-articles}
 
