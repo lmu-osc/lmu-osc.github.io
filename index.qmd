@@ -267,12 +267,12 @@ css: /custom-navbar.css
 ::: {.osc-section}
 ::: {.container}
 
-::: {.row .align-items-center .gx-5}
-::: {.col-lg-8}
+::: {.row .align-items-center .gx-5 .no-side-padding}
+::: {.col-lg-8 .no-side-padding}
 
-[Our mission]{.text-uppercase .small .fw-semibold .mb-2 .section-mark}
+# Our Mission {.mb-3 .fw-semibold}
 
-## The interdisciplinary LMU Open Science Center (OSC) is a researcher-led initiative supporting LMU Munich by embedding open, responsible, and reproducible practices at the core of research excellence. {.mb-3 .section-title .text-muted}
+### The researcher-led LMU Open Science Center (OSC) advances research excellence at LMU Munich by promoting open, responsible, and reproducible practices. {.mb-3 .section-title .text-muted}
 
 ::: {.mission-checklist .d-flex .flex-column .gap-1 .p-0 .my-4}
 - [✓]{.mission-check-icon .d-flex .flex-shrink-0 .align-items-center .justify-content-center .mt-1} Essential training in the highest standards of reproducible research methods
@@ -288,9 +288,9 @@ css: /custom-navbar.css
 ::: {.col-lg-4}
 ::: {.newsletter-section .d-flex .flex-column .justify-content-center .text-center .p-5 .text-white .gap-1}
 
-**Stay updated with the OSC.**
+#### Stay updated with the OSC {.mb-3 .fw-semibold .text-white}
 
-Sign up to our mailing list for workshops, events, and resources.
+Sign up to our mailing list for the latest workshops, events, and resources.
 
 [Subscribe](https://lists.lrz.de/mailman/listinfo/lmu-osc){.btn .btn-outline-light .newsletter-btn}
 
@@ -366,7 +366,7 @@ Publications
         <div class="col-lg-10">
           <div class="testimonial-inner">
             <blockquote>
-              <p>"I really enjoyed this summer school. The topics were well balanced, the tutorials were well organized, the lectures were interesting and broad, the time management was great. The tutors demonstrated know-how from a hands-on-perspective...
+              <p>"I really enjoyed this summer school. The topics were well balanced, the tutorials were well organized, the lectures were interesting and broad, the tutors demonstrated know-how from a hands-on-perspective...
                 Overall, 🌟🌟🌟🌟🌟!"</p>
               <strong>- Summer School Participant</strong>
             </blockquote>
@@ -428,9 +428,11 @@ Publications
 ::: {.osc-section}
 ::: {.container .explore-section}
 
+
+## What We Offer
+
 [What we offer]{.text-uppercase .text-success .small .fw-semibold .mb-2 .section-mark}
 
-## Explore the OSC {.mb-3 .text-muted}
 
 ::: {.text-muted .mb-4 .desc}
 Whether you're a student, early-career researcher, or faculty — there's a place for you in the open science community.
