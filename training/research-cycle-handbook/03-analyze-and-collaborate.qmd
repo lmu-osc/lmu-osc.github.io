@@ -836,7 +836,6 @@ Some of these elements will be refined depending on your study type. Widely used
 
 
 
-
 ::: {.orc-gradient-box}
 <!-- RL still working on ::: {.orc-gradient-box .analysis-collaboration-checklist} -->
 
@@ -846,6 +845,9 @@ This assumes a reproducible workflow using R. Not all items are relevant for all
 
 **1. During data analyses: create and maintain a repository**
 
+::: {.row .row-cols-1 .row-cols-lg-2 .g-4}
+
+::: {.col}
 **Repository Setup** <!-- don't manage to make this one indented-->
 
 - [ ] Use the lab’s standard folder structure
@@ -860,6 +862,9 @@ This assumes a reproducible workflow using R. Not all items are relevant for all
 - [ ] Results generated from a Quarto reproducible analysis report
 - [ ] README describing usage, dependencies, and session info
 
+:::
+
+::: {.col}
 **R Scripts** <!-- don't manage to make this one indented-->
 
 - [ ] Metadata/header identifying author, date, and purpose
@@ -870,10 +875,13 @@ This assumes a reproducible workflow using R. Not all items are relevant for all
 - [ ] Seeds set to create reproducible random computations
 - [ ] Style guide followed (e.g., styler, lintR)
 
+:::
+
+::: {.col}
 **2. Before presenting results to the research group: conduct internal code peer review**
 
 - [ ] Collaboration workflow established (e.g., branch or live review)
-- [ ] Code runs without errors on a fresh environment / different computer
+- [ ] Code runs without errors on a different computer
 - [ ] Results, figures, tables are reproducible
 - [ ] Code is well-organized, readable, and commented
 - [ ] All functions are documented
@@ -881,6 +889,10 @@ This assumes a reproducible workflow using R. Not all items are relevant for all
 - [ ] (for co-authors): Methods used are correct
 - [ ] (for co-authors): Methods match the pre-analysis plan or deviation are documented
 
+:::
+
+
+::: {.col}
 **3. Before sharing outside the group**
 
 - [ ] README provides complete instructions to reproduce results
@@ -889,6 +901,10 @@ This assumes a reproducible workflow using R. Not all items are relevant for all
 - [ ] Code peer-reviewed by co-authors
 - [ ] Reporting of results follow relevant guidelines (e.g. effect size, confidence intervals, model specification)
 - [ ] Results are separated in preregistered confirmatory vs non preregistered exploratory analyses
+
+:::
+
+:::
 
 ::: {.d-flex .justify-content-center .mt-4 .orc-checklist-download .phase-1} 
 <!-- RL hasn't created button for checklist 3 yet -->
