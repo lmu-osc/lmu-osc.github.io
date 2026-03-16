@@ -9,15 +9,6 @@
   --transition: all 0.3s ease;
 }
 
-body {
-  line-height: 1.6;
-  color: var(--text-dark);
-  background-color: #f8f9fa;
-  margin: 0;
-  padding: 0;
-}
-
-
 /* Partner container */
 .institutional-members-page h1.title{
   padding-left: 1.5rem;
@@ -240,12 +231,26 @@ body {
   box-sizing: border-box;
   overflow: hidden;
   min-height:350px;
+  background:#d2e9d61a;
 }
+
 
 .member-grid-item:hover {
   transform: translateY(-5px) scale(1.025);
   box-shadow: 0 8px 32px rgba(43,134,75,0.15);
   border-color: #00883A !important;
+}
+
+.member-grid-item .card-body {
+  position: relative;
+  padding-bottom: 60px;
+}
+
+.website-button {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .member-grid-image {
@@ -254,15 +259,13 @@ body {
   max-height: 110px;
   object-fit: contain;
   border-radius: 0;
-  top-margin: 20px;
   margin: 0.5rem auto 0.8rem auto;
   border: none;
   box-shadow: 0 1px 6px rgba(43,134,75,0.12);
   flex-shrink: 0;
 }
 
-
-.social-link {                     
+.social-link {     
   color: #00883A !important;                 
   text-decoration: none;                          
   cursor: pointer;
@@ -289,10 +292,8 @@ body {
 }
 
 .description-text a {
-color: #00883A !important;
+  color: #00883A !important;
 }
-
-
 
 .primary-social-link {                     
   background: #00883A !important; 
