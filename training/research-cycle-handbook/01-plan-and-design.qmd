@@ -526,7 +526,7 @@ Data collection and analyses involving human participants or animal subjects typ
 - **Informed consent forms language** – ensuring that participants clearly understand the purpose, procedures, and any potential risks of the study. Conditions for sharing their data should be clearly explained here (see [2.3.1. Informed Consent](02-collect-and-manage.qmd#sec-ethics-and-privacy){.mark}). 
 - **Power analysis** to justify sample size – providing a statistical rationale for the number of participants, which supports the validity and ethical justification of the study. This, and more detailed information on the statistical plan, can be extracted from your pre-analysis plan (see [1.4.1. Pre-analysis planning](#sec-study-design-analysis-plan){.mark} and [1.4.3. Power analyses](#sec-study-design-analysis-plan){.mark}). 
 
-For data protection guidance, contact the [LMU Data Protection Officer](https://www.lmu.de/en/about-lmu/structure/central-university-administration/legal-matters/data-protection/) or the [Research Data Management team of the University Library ](https://www.en.ub.uni-muenchen.de/writing/research_data/research-data-management/index.html).
+For data protection guidance, contact the [LMU Data Protection Officer](https://www.lmu.de/en/about-lmu/structure/organizational-structure/officers-and-representatives/data-protection-officer.html) or the [Research Data Management team of the University Library ](https://www.en.ub.uni-muenchen.de/writing/research_data/research-data-management/index.html).
 
 <br>
 
@@ -612,7 +612,7 @@ A **Data Management Plan (DMP)** documents how you will handle research data thr
 
 ::: {.ms-1} 
 - **Decide _before_ data collection whether you will eventually share your data publicly (and where)**, in order to (i) get ethics approval on the right plan, (ii) design consent form for participants, (iii) collect appropriate metadata for the target repository, ect.
-- **Start with what you know, and refine the details as your project develops.** Your DMP is a living document that you will refine to match the reality of your project while ensuring data protection and streamline collaborations (see [2.2. Data Management](02-collect-and-manage.qmd#sec-data-management){.mark}), [3.1. Data Processing & Analysis](03-analyze-and-collaborate.qmd#sec-data-processing-analysis){.mark}, and [4.1. Data Sharing](04-preserve-and-share.qmd#sec-data-sharing){.mark}).
+- **Start with what you know, and refine the details as your project develops.** Your DMP is a living document that you will refine to match the reality of your project while ensuring data protection and streamline collaborations (see [2.2. Data Management](02-collect-and-manage.qmd#sec-data-management){.mark}, [3.1. Data Processing & Analysis](03-analyze-and-collaborate.qmd#sec-data-processing-analysis){.mark}, and [4.1. Data Sharing](04-preserve-and-share.qmd#sec-data-sharing){.mark}).
 :::
 
 ##### <i class="bi bi-list-check"></i> Your DMP will ask:
@@ -795,7 +795,7 @@ A great tool to create your statistical plan, especially for early career resear
 
 <br>
 
-To get support with pre-analysis planning, you can book a consultation with the [LMU statistical consulting unit](mailto:@stablab.stat.uni-muenchen.de) and visit the [StaBLab website](https://www.stat.lmu.de/stablab/de/) for more information. 
+To get support with pre-analysis planning, you can book a consultation with the [LMU statistical consulting unit (StaBLab)](https://www.stat.lmu.de/stablab/de/). 
 
 <br>
 
@@ -985,7 +985,7 @@ For a very basic power calculation, you can use simple R functions if you know 3
 - the alpha level (default 0.05)
 - the expected effect size (has to be estimated or extracted from the literature on the form of d, f, etc.)
 
-To get support with pre-analysis planning, you can book a consultation with the [LMU statistical consulting unit](mailto:@stablab.stat.uni-muenchen.de) and visit the [StaBLab website](https://www.stat.lmu.de/stablab/de/) for more information. 
+To get support with pre-analysis planning, you can book a consultation with the [LMU statistical consulting unit (StaBLab)](https://www.stat.lmu.de/stablab/de/).
 
 <br>
 
@@ -1113,7 +1113,7 @@ To complete before presenting your final study plan to your research group and, 
 
 ::: {.d-flex .justify-content-center .mt-4 .orc-checklist-download .phase-1}
 
-<a href="assets/checklists/Plan-Design-Checklist.docx" class="btn btn-outline-secondary btn-sm">Download checklist <i class="bi bi-download"></i></a>
+<a href="assets/checklists/01-Plan-Design-Checklist.docx" class="btn btn-outline-secondary btn-sm">Download checklist <i class="bi bi-download"></i></a>
 <!-- need to update manually the  downloadable file with checklist in word doc-->
 
 :::
