@@ -31,6 +31,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
 <link href="../assets/img/lmu_osc_logo.jpg" rel="icon" type="image/jpeg">
+<script src="../site_libs/quarto-listing/list.min.js"></script>
+<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
@@ -69,6 +71,35 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-name','listing-image_url','listing-contactName','listing-contactLink','listing-website_url','listing-description',{ data: ['index'] },{ data: ['categories'] }],
+      
+      searchColumns: ["listing-name","listing-image_url","listing-contactName","listing-contactLink","listing-website_url","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
 <!-- Matomo -->
 <script>
   var _paq = window._paq = window._paq || [];
@@ -85,6 +116,35 @@ ul.task-list li input[type="checkbox"] {
 </script>
 <!-- End Matomo Code -->
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="https://raw.githubusercontent.com/lmu-osc/branding-resources/refs/heads/main/styles.css">
 <link rel="stylesheet" href="../assets/bootstrap-5.3.8-dist/css/bootstrap.min.css">
@@ -176,7 +236,7 @@ ul.task-list li input[type="checkbox"] {
  <span class="dropdown-text">Other LMU Support Services</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../partners/externals.html">
+    <a class="dropdown-item" href="../partners/external-partners.html">
  <span class="dropdown-text">External Partners</span></a>
   </li>  
         <li>
@@ -213,323 +273,180 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content column-page" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content column-page" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Funding Institutional Members</h1>
+</div>
 
 
 
+<div class="quarto-title-meta column-page">
 
-<style>
-:root {
-  --theme-main: #00883A;
-  --theme-bg: #f5f6fa;
-  --theme-card-bg: #fff;
-  --theme-card-shadow: 0 2px 10px rgba(43,134,75,0.10);
-  --theme-border: #e3e7ed;
-}
-
-body {
-  background: var(--theme-bg);
-  margin: 0;
-  min-height: 100vh;
-}
-
-.header-section {
-  font-size: 2.6rem;
-  font-weight: 700;
-  color: #00883A;
-  margin-bottom: 1.1rem;
-  letter-spacing: -0.5px;
-}
-
-.member-grid {
-  display: grid;
-  grid-template-columns: 280px 800px;
-  grid-template-rows: auto;
-  gap: 1rem;
-}
-
-.member-grid-item {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  background: var(--theme-card-bg);
-  border-radius: 5px;
-  box-shadow: var(--theme-card-shadow);
-  border: 1.5px solid var(--theme-border);
-  padding: 0.5rem;
-  text-align: center;
-  transition: transform 0.13s, box-shadow 0.13s;
-  height: 368px; 
-  min-width: 200px;
-  max-width: 320px;
-  box-sizing: border-box;
-  overflow: hidden;
-}
-
-.member-grid-item:hover {
-  transform: translateY(-5px) scale(1.025);
-  box-shadow: 0 8px 32px rgba(43,134,75,0.15);
-  border-color: var(--theme-main);
-}
-
-.profile-link {
-  display: contents;
-  text-decoration: none;
-  color: inherit;
-  height: 100%;
-}
-
-.member-grid-image {
-  max-width: 120px;
-  min-height: 80px;
-  max-height: 120px;
-  object-fit: contain;
-  border-radius: 0;
-  top-margin: 20px;
-  margin: 0.5rem auto 0.8rem auto;
-  border: none;
-  box-shadow: 0 1px 6px rgba(43,134,75,0.12);
-  flex-shrink: 0;
-}
-
-.member-grid-title {
-  font-size: 1.1rem;
-  color: #70877c;
-  margin-bottom: 0.5rem;
-  font-weight: 600;
-}
-
-.member-grid-position {
-  font-size: 1.2rem;
-  color: var(--theme-main);
-  margin-bottom: 0.5rem;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-
-.member-grid-name {
-  font-size: 1.1rem;
-  font-weight: bold;
-  color: #212c2b;
-  margin-bottom: 0.3rem;
-  line-height: 1;
-  min-height: 2.9em;
-  max-height: 4.4em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  overflow: hidden;
-}
-
-.member-grid-org {
-  font-size: 1.1rem;
-  color: #45695f;
-  margin-bottom: 0.2rem;
-}
-
-.member-grid-faculty {
-  font-size: 1.1rem;
-  color: #70877c;
-  margin-bottom: 0.2rem;
-}
-
-.member-socials {
-  margin-top: auto;
-  display: flex;
-  justify-content: center;
-  gap: 0.5rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
-.social-link {
-  display: inline-flex;         
-  align-items: center;
-  gap: 0.4rem;
-  background: none;              
-  box-shadow: none;               
-  color: #00883A;                 
-  text-decoration: none;
-  font-size: 0.9rem;              
-  width: auto;                  
-  height: auto;                 
-  border: 1px solid #e3e7ed;                  
-  border-radius: 4px;              
-  padding: 0.3rem 0.6rem;                   
-  cursor: pointer;
-  transition: color 0.2s, border-color 0.2s;
-}
-
-.social-link i {
-  font-size: 1rem;
-  line-height: 1;      
-  margin: 0; 
-}
-
-.social-link:hover {
-  background-color: #BEE3F8;
-  color: white;
-  border-color: #00883A;
-  transform: translateY(-2px);
-}
-
-.contact-link {
-  color: var(--theme-main);
-  text-decoration: underline;
-  font-weight: 600;
-}
-
-.contact-link:hover {
-  color: #256b3e;
-  text-decoration: underline;
-}
-
-.member-socials {
-  margin-top: auto;
-  display: flex;
-  justify-content: center;
-  gap: 0.5rem;
-  padding-top: 1rem;
-}
-
-.description-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom:auto;
-  margin-top: 2rem;
-}
-
-.description-text {
-  font-size: 1rem;
-  color: #4a5568;
-  line-height: 1.85;
-  margin-top: 0;
-  margin-bottom: 0.5rem;
-  overflow: hidden;
-  flex: 1 1 auto;
-  width: 100%;
-  text-align:justify;
-}
-
-hr {
-    border: 0;
-    height: 2px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5));
-    margin: 20px 0;
-    grid-column: 1 / -1; 
-  }
-
-</style>
-
-<div class="header-section">Funding Institutional Members</div>
-
-<div class="member-grid">
-    <div class="profile-link">
-        <div class="member-grid-item">
-            <img src="images/logo_origins.jpg" class="member-grid-image" alt="Cluster of Excellence: Origins logo">
-            <div class="member-grid-name">Cluster of Excellence: Origins</div>
-            <div class="member-grid-faculty">Contact Person: </div>
-            <a href="../people/people/thomas-kuhr.html" class="contact-link">Prof. Dr. Thomas Kuhr</a>
-            <div class="member-socials">
-                <a href="https://www.origins-cluster.de/en/" title="Website" target="_blank" class="social-link"><i class="fa-solid fa-globe"></i>  Website</a>
-            </div>
-        </div>
-    </div>
-
-<div class="description-container">
-  <div class="description-text">
-    The Excellence Cluster ORIGINS: “From the Origins of the Universe to the First Building Blocks of Life” is an interdisciplinary research network based in Munich and Garching. Building on the previous Excellence Cluster Universe, a very fruitful collaboration between astro-, particle- and nuclear physicists, ORIGINS is exploring the conjecture of modern cosmology that the Universe and the emergence of life have naturally unfolded from the initial conditions laid out in the Big Bang. Open Science under FAIR (Findability, Accessibility, Interoperability, and Reuse of digital assets) principles has a long tradition in astrophysics and is showing increased activity in particle physics. The ORIGINS Data Science Lab (ODSL) was founded as a pillar for novel statistical data analysis and artificial intelligence in all ORIGINS (bio-)physics and chemistry disciplines. As a part of ODSL, the Dark Matter Data Centre (DMDC) provides an open science repository for dark matter-related experimental data, numerical simulations and related software to improve accessibility within the dark matter community.
+    
+  
+    
   </div>
-</div>
-<hr>
+  
 
-<div class="profile-link">
-    <div class="member-grid-item">
-        <img src="images/synergy.jpg" class="member-grid-image" alt="Cluster of Excellence: SyNergy logo">
-        <div class="member-grid-name">Cluster of Excellence: SyNergy</div>
-        <div class="member-grid-faculty">Contact Person: </div>
-        <a href="../people/people/martin-dichgans.html" class="contact-link">Prof. Dr. Martin Dichgans</a>
-        <div class="member-socials">
-            <a href="https://www.synergy-munich.de/synergy" title="Website" target="_blank" class="social-link"><i class="fa-solid fa-globe"></i>  Website</a>
-        </div>
-    </div>
-</div>
 
-<div class="description-container">
-  <div class="description-text">
-    The Munich Cluster for Systems Neurology (SyNergy) investigates how complex neurological diseases such as Alzheimer's disease, stroke, and multiple sclerosis develop. Using systems neurology as a new interdisciplinary approach, researchers can decipher the shared disease mechanisms of neurovascular, neurodegenerative, and neuroimmunological diseases and on this basis develop novel diagnostic and therapeutic approaches. SyNergy has expressed its commitment to promoting research transparency and reproducibility in both quantitative and qualitative research endeavors. We view the ability to replicate and reproduce research findings, whether quantitative or qualitative, as fundamental pillars supporting the generalizability and reliability of scientific knowledge.
-  </div>
+</header>
 
-</div>
-<hr>
 
-<div class="profile-link">
-    <div class="member-grid-item">
-        <img src="images/lmu_logo.jpg" class="member-grid-image" alt="LMU Munich logo">
-        <div class="member-grid-name">Department of Psychology</div>
-        <div class="member-grid-faculty">Contact Person: </div>
-        <a href="../people/people/felix-schoenbrodt.html" class="contact-link">Prof. Dr. Felix Schönbrodt</a>
-        <div class="member-socials">
-            <a href="https://www.lmu.de/psy/de/" title="Website" target="_blank" class="social-link"><i class="fa-solid fa-globe"></i>  Website</a>
-        </div>
-    </div>
+
+
+
+
+<div class="quarto-listing quarto-listing-container-custom" id="listing-listing">
+<div class="container">
+
+<div class="row g-4 align-items-stretch pt-3 pb-1">
+<div class="col-lg-4 d-flex">
+<div class="card border-light-subtle shadow-sm p-3 rounded text-center w-100 member-grid-item">
+<img src="images/logo_origins.jpg" alt="Cluster of Excellence: Origins" class="member-grid-image mb-2">
+<div class="card-body flex-grow-1">
+<h5 class="card-title anchored">Cluster of Excellence: Origins</h5>
+
+<p class="card-text text-muted mb-0">Contact Person:</p>
+<a href="../people/people/thomas-kuhr.html" class="contact-link mb-2">Prof. Dr. Thomas Kuhr</a>
+
+<div class="mt-3 website-button">
+<a href="https://www.med.lmu.de/bmc/en/" class="btn btn-outline-secondary social-link">
+<i class="fa-solid fa-globe"></i> Website
+</a>
 </div>
 
-<div class="description-container">
-    <div class="description-text">
-      Psychological science has seen a substantial replication crisis in the last years, with many large scale projects failing to replicate apparently well established findings. With the goal to increase the awareness and the adoption of open science practices, in July 2015 an Open Science Committee was established at the Department Psychology. Its project on the <a href="https://osf.io/mgwk8/">Open Science Framework (OSF)</a> provides different documents and presentations that are used in research and teaching. Furthermore, since 2016 all job descriptions for professorship positions at our department included an <a href="http://www.nicebread.de/open-science-hiring-practices/">"Open Science track record"</a> as desirable characteristic of an applicant. Additionally, we decided to require a PhD/Dissertation agreement between all PhD students and their supervisors that includes planned open science practices. <a href="https://www.lmu.de/psy/de/forschung/open-science-massnahmen//index.html">A template for this kind of agreement</a> is provided on our website
-    </div>
+</div>
+</div>
+</div>
+<div class="col-lg-8">
+
+<div class="description-text mt-2">The Excellence Cluster ORIGINS: “From the Origins of the Universe to the First Building Blocks of Life” is an interdisciplinary research network based in Munich and Garching. Building on the previous Excellence Cluster Universe, a very fruitful collaboration between astro-, particle- and nuclear physicists, ORIGINS is exploring the conjecture of modern cosmology that the Universe and the emergence of life have naturally unfolded from the initial conditions laid out in the Big Bang. Open Science under FAIR (Findability, Accessibility, Interoperability, and Reuse of digital assets) principles has a long tradition in astrophysics and is showing increased activity in particle physics. The ORIGINS Data Science Lab (ODSL) was founded as a pillar for novel statistical data analysis and artificial intelligence in all ORIGINS (bio-)physics and chemistry disciplines. As a part of ODSL, the Dark Matter Data Centre (DMDC) provides an open science repository for dark matter-related experimental data, numerical simulations and related software to improve accessibility within the dark matter community.
 </div>
 
-<hr>
-
-<div class="profile-link">
-    <div class="member-grid-item">
-        <img src="images/lmu_logo.jpg" class="member-grid-image" alt="LMU Munich logo">
-        <div class="member-grid-name">Faculty of Biology</div>
-        <div class="member-grid-faculty">Contact Person: </div>
-        <a href="../people/people/niels-dingemanse.html" class="contact-link">Prof. Dr. Niels Dingemanse</a>
-        <div class="member-socials">
-            <a href="https://www.bio.lmu.de/en/" title="Website" target="_blank" class="social-link"><i class="fa-solid fa-globe"></i>  Website</a>
-        </div>
-    </div>
 </div>
-
-<div class="description-container">
-    <div class="description-text">
-      The Faculty of Biology is committed to actively support and foster good and open research practices including preregistration of studies, sharing of data and analysis scripts, and ensuring open access to publications wherever possible. As a funding institutional member, we aim to support training and community building activities that advance robust and reproducible research at LMU.
-    </div>
 </div>
 
 <hr>
 
-<div class="profile-link">
-    <div class="member-grid-item">
-        <img src="images/som.png" class="member-grid-image" alt="Munich School of Management logo">
-        <div class="member-grid-name">Faculty of Business Administration - Munich School of Management</div>
-        <div class="member-grid-faculty">Contact Person: </div>
-        <a href="../people/people/ralf-elsas.html" class="contact-link">Prof. Dr. Ralf Elsas</a>
-        <div class="member-socials">
-            <a href="https://www.som.lmu.de/en/" title="Website" target="_blank" class="social-link"><i class="fa-solid fa-globe"></i>  Website</a>
-        </div>
-    </div>
-</div>
+<div class="row g-4 align-items-stretch pt-3 pb-1">
+<div class="col-lg-4 d-flex">
+<div class="card border-light-subtle shadow-sm p-3 rounded text-center w-100 member-grid-item">
+<img src="images/synergy.jpg" alt="Cluster of Excellence: SyNergy" class="member-grid-image mb-2">
+<div class="card-body flex-grow-1">
+<h5 class="card-title anchored">Cluster of Excellence: SyNergy</h5>
 
-<div class="description-container">
-    <div class="description-text">
-       The LMU Munich School of Management is committed to advancing the principles of open science and research transparency. By becoming an institutional member of the LMU's Open Science Center, we aim to foster a culture of openness, collaboration, and integrity in our research community. We believe that promoting open access to data, methodologies, and findings will enhance the quality and reproducibility of research in business studies, ultimately contributing to innovative and impactful solutions for global business challenges.
-    </div>
+<p class="card-text text-muted mb-0">Contact Person:</p>
+<a href="../people/people/martin-dichgans.html" class="contact-link mb-2">Prof. Dr. Martin Dichgans</a>
 
+<div class="mt-3 website-button">
+<a href="https://www.synergy-munich.de/synergy" class="btn btn-outline-secondary social-link">
+<i class="fa-solid fa-globe"></i> Website
+</a>
 </div>
 
 </div>
+</div>
+</div>
+<div class="col-lg-8">
 
+<div class="description-text mt-2">The Munich Cluster for Systems Neurology (SyNergy) investigates how complex neurological diseases such as Alzheimer's disease, stroke, and multiple sclerosis develop. Using systems neurology as a new interdisciplinary approach, researchers can decipher the shared disease mechanisms of neurovascular, neurodegenerative, and neuroimmunological diseases and on this basis develop novel diagnostic and therapeutic approaches. SyNergy has expressed its commitment to promoting research transparency and reproducibility in both quantitative and qualitative research endeavors. We view the ability to replicate and reproduce research findings, whether quantitative or qualitative, as fundamental pillars supporting the generalizability and reliability of scientific knowledge.
+</div>
 
+</div>
+</div>
 
+<hr>
 
-</main> <!-- /main -->
+<div class="row g-4 align-items-stretch pt-3 pb-1">
+<div class="col-lg-4 d-flex">
+<div class="card border-light-subtle shadow-sm p-3 rounded text-center w-100 member-grid-item">
+<img src="images/lmu_logo.jpg" alt="Department of Psychology" class="member-grid-image mb-2">
+<div class="card-body flex-grow-1">
+<h5 class="card-title anchored">Department of Psychology</h5>
+
+<p class="card-text text-muted mb-0">Contact Person:</p>
+<a href="../people/people/felix-schoenbrodt.html" class="contact-link mb-2">Prof. Dr. Felix Schönbrodt</a>
+
+<div class="mt-3 website-button">
+<a href="https://www.lmu.de/psy/de/" class="btn btn-outline-secondary social-link">
+<i class="fa-solid fa-globe"></i> Website
+</a>
+</div>
+
+</div>
+</div>
+</div>
+<div class="col-lg-8">
+
+<div class="description-text mt-2">Psychological science has seen a substantial replication crisis in the last years, with many large scale projects failing to replicate apparently well established findings. With the goal to increase the awareness and the adoption of open science practices, in July 2015 an Open Science Committee was established at the Department Psychology. Its project on the Open Science Framework (OSF) provides different documents and presentations that are used in research and teaching. Furthermore, since 2016 all job descriptions for professorship positions at our department included an "Open Science track record" as desirable characteristic of an applicant. Additionally, a PhD/Dissertation agreement between all PhD students and their supervisors now includes planned open science practices. A template for this kind of agreement is provided on their website.
+</div>
+
+</div>
+</div>
+
+<hr>
+
+<div class="row g-4 align-items-stretch pt-3 pb-1">
+<div class="col-lg-4 d-flex">
+<div class="card border-light-subtle shadow-sm p-3 rounded text-center w-100 member-grid-item">
+<img src="images/lmu_logo.jpg" alt="Faculty of Biology" class="member-grid-image mb-2">
+<div class="card-body flex-grow-1">
+<h5 class="card-title anchored">Faculty of Biology</h5>
+
+<p class="card-text text-muted mb-0">Contact Person:</p>
+<a href="../people/people/niels-dingemanse.html" class="contact-link mb-2">Prof. Dr. Niels Dingemanse</a>
+
+<div class="mt-3 website-button">
+<a href="https://www.lmu.de/psy/de/" class="btn btn-outline-secondary social-link">
+<i class="fa-solid fa-globe"></i> Website
+</a>
+</div>
+
+</div>
+</div>
+</div>
+<div class="col-lg-8">
+
+<div class="description-text mt-2">The Faculty of Biology is committed to actively support and foster good and open research practices including preregistration of studies, sharing of data and analysis scripts, and ensuring open access to publications wherever possible. As a funding institutional member, we aim to support training and community building activities that advance robust and reproducible research at LMU.
+</div>
+
+</div>
+</div>
+
+<hr>
+
+<div class="row g-4 align-items-stretch pt-3 pb-1">
+<div class="col-lg-4 d-flex">
+<div class="card border-light-subtle shadow-sm p-3 rounded text-center w-100 member-grid-item">
+<img src="images/som.png" alt="Faculty of Business Administration - Munich School of Management" class="member-grid-image mb-2">
+<div class="card-body flex-grow-1">
+<h5 class="card-title anchored">Faculty of Business Administration - Munich School of Management</h5>
+
+<p class="card-text text-muted mb-0">Contact Person:</p>
+<a href="../people/people/ralf-elsas.html" class="contact-link mb-2">Prof. Dr. Ralf Elsas</a>
+
+<div class="mt-3 website-button">
+<a href="https://www.som.lmu.de/en/" class="btn btn-outline-secondary social-link">
+<i class="fa-solid fa-globe"></i> Website
+</a>
+</div>
+
+</div>
+</div>
+</div>
+<div class="col-lg-8">
+
+<div class="description-text mt-2">The LMU Munich School of Management is committed to advancing the principles of open science and research transparency. By becoming an institutional member of the LMU's Open Science Center, we aim to foster a culture of openness, collaboration, and integrity in our research community. We believe that promoting open access to data, methodologies, and findings will enhance the quality and reproducibility of research in business studies, ultimately contributing to innovative and impactful solutions for global business challenges.
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

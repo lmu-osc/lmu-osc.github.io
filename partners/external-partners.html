@@ -31,6 +31,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
 <link href="../assets/img/lmu_osc_logo.jpg" rel="icon" type="image/jpeg">
+<script src="../site_libs/quarto-listing/list.min.js"></script>
+<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
@@ -69,6 +71,35 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-name','listing-image_url','listing-website_url','listing-description',{ data: ['index'] },{ data: ['categories'] }],
+      
+      searchColumns: ["listing-name","listing-image_url","listing-website_url","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
 <!-- Matomo -->
 <script>
   var _paq = window._paq = window._paq || [];
@@ -85,6 +116,35 @@ ul.task-list li input[type="checkbox"] {
 </script>
 <!-- End Matomo Code -->
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="https://raw.githubusercontent.com/lmu-osc/branding-resources/refs/heads/main/styles.css">
 <link rel="stylesheet" href="../assets/bootstrap-5.3.8-dist/css/bootstrap.min.css">
@@ -176,7 +236,7 @@ ul.task-list li input[type="checkbox"] {
  <span class="dropdown-text">Other LMU Support Services</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../partners/externals.html">
+    <a class="dropdown-item" href="../partners/external-partners.html">
  <span class="dropdown-text">External Partners</span></a>
   </li>  
         <li>
@@ -208,7 +268,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../partners/index.html">Partners</a></li><li class="breadcrumb-item"><a href="../partners/externals.html">External Partners</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../partners/index.html">Partners</a></li><li class="breadcrumb-item"><a href="../partners/external-partners.html">External Partners</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -293,7 +353,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../partners/externals.html" class="sidebar-item-text sidebar-link active">
+  <a href="../partners/external-partners.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">External Partners</span></a>
   </div>
 </li>
@@ -312,322 +372,217 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content column-page-right" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../partners/index.html">Partners</a></li><li class="breadcrumb-item"><a href="../partners/externals.html">External Partners</a></li></ol></nav></header>
+<main class="content column-page-right" id="quarto-document-content">
 
-
-
-
-<style>
-:root {
-  --theme-main: #00883A;
-  --theme-bg: #f5f6fa;
-  --theme-card-bg: #fff;
-  --theme-card-shadow: 0 2px 10px rgba(43,134,75,0.10);
-  --theme-border: #e3e7ed;
-}
-
-body {
-  margin: 0;
-  min-height: 100vh;
-}
-
-.content-container{
-  max-width: 1200px;
-  margin: 2rem auto;
-  padding: 0 1.5rem;
-}
-
-
-.header-section {
-  font-size: 2.6rem;
-  font-weight: 700;
-  color:var(--theme-main);
-  margin-bottom: 1.1rem;
-  letter-spacing: -0.5px;
-}
-
-.intro-text {
-  font-size: 1.3rem;
-  color: #4a5568;
-  line-height: 1.85;
-}
-
-/* styling for logo*/
-.logo-img{
-  padding:1rem;
-  align-content: center;
-}
-.logo-img img {
-  width: 150px;   
-  height: auto;   
-  object-fit: contain; 
-  opacity: 1;
-}
-.img-forrt img{
-  width:110px;
-}
-
-.member-grid {
-  display: grid;
-  grid-template-columns: 280px 800px;
-  grid-template-rows: auto;
-  gap: 1rem;
-}
-
-.member-grid-item {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  background: var(--theme-card-bg);
-  border-radius: 5px;
-  box-shadow: var(--theme-card-shadow);
-  border: 1.5px solid var(--theme-border);
-  padding: 0.5rem;
-  text-align: center;
-  transition: transform 0.13s, box-shadow 0.13s;
-  height: 350px; 
-  min-width: 200px;
-  max-width: 320px;
-  box-sizing: border-box;
-  overflow: hidden;
-}
-.member-grid-item:hover {
-  transform: translateY(-5px) scale(1.025);
-  box-shadow: 0 8px 32px rgba(43,134,75,0.15);
-  border-color: var(--theme-main);
-}
-
-.profile-link {
-  display: contents;
-  text-decoration: none;
-  color: inherit;
-  height: 100%;
-}
-
-
-.member-grid-name {
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: var(--bs-gray-700);
-  margin-bottom: 0.3rem;
-  line-height: 1.4;
-  min-height: 2.9em;
-  max-height: 4.2em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  overflow: hidden;
-}
-
-.member-socials {
-  margin-top: auto;
-  display: flex;
-  justify-content: center;
-  gap: 0.5rem;
-  padding-top: 1rem;
-  padding-bottom: 2rem;
-}
-
-
-.social-link {
-  display: inline-flex;         
-  align-items: center;
-  gap: 0.4rem;
-  background: none;              
-  box-shadow: none;               
-  color: var(--theme-main);                 
-  text-decoration: none;
-  font-size: 0.9rem;              
-  width: auto;                  
-  height: auto;                 
-  border: 1px solid #e3e7ed;                  
-  border-radius: 4px;              
-  padding: 0.3rem 0.6rem;                   
-  cursor: pointer;
-  transition: color 0.2s, border-color 0.2s;
-}
-
-.social-link i {
-  font-size: 0.9rem;
-  line-height: 1;      
-  margin: 0; 
-}
-
-.social-link:hover {
-  background-color:rgba(43, 134, 75, 0.98);
-  color: white;
-  border-color:var(--theme-main);
-  transform: translateY(-2px);
-}
-
-
-
-.description-container {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.description-text {
-  font-size: 1.2rem;
-  color: #4a5568;
-  line-height: 1.85;
-  margin-top: 0;
-  margin-bottom: 0.5rem;
-  overflow: hidden;
-  max-height: calc(1.2rem * 1.85 * 5);
-  width: 100%;
-  text-align: justify;
-}
-
-
-hr {
-    border: 0;
-    height: 2px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5));
-    margin: 20px 0;
-    grid-column: 1 / -1; 
-  }
-
-</style>
-<div class="content-container">
-  <div class="header-section">Our External Partners</div>
-      <div class="member-grid">
-          <div class="profile-link">
-              <div class="member-grid-item">
-                  <div class="logo-img">
-                      <img src="images/grn.png" alt="grn-logo">
-                  </div>
-                  <div class="member-grid-name">German Reproducibility Network</div> 
-                  <div class="member-socials">
-                      <a href="https://reproducibilitynetwork.de/" target="_blank" class="social-link">Website <i class="fa-solid fa-globe"></i></a>
-                  </div>
-              </div>
-          </div>
-
-          <div class="description-container">
-              <div class="description-text">
-                  The OSC is a member of the German Reproducibility Network (GRN), a multidisciplinary consortium that aims to increase transparency and trustworthiness of scientific research. The Network’s goals are to promote open research practices through training and community building, to conduct meta-research, and to work with stakeholders across the sector to ensure coordination of efforts at the national level.
-              </div>
-          </div>
-          <hr>
-
-          <div class="profile-link">
-              <div class="member-grid-item">
-                  <div class="logo-img img-forrt">
-                      <img src="images/FORRT.webp" alt="forrt-logo">
-                  </div>
-                  <div class="member-grid-name">Framework for
-      Open and Reproducible Research Training</div>   
-                  <div class="member-socials">
-                    <a href="https://forrt.org/" target="_blank" class="social-link">Website <i class="fa-solid fa-globe"></i></a>
-                  </div>
-              </div>
-          </div>
-
-          <div class="description-container">
-              <div class="description-text">
-                  The OSC collaborates with FORRT, the Framework for Open and Reproducible Research Training on our Train-the-Trainer program. FORRT is an international grassroots initiative advancing research transparency, reproducibility, rigor, and ethics through pedagogical reform and meta-scientific research. 
-              </div>
-          </div>
-          <hr>
-          <div class="profile-link">
-              <div class="member-grid-item">
-                  <div class="logo-img">
-                      <img src="images/bitss.png" alt="bitss-logo" style="height:100px;">
-                  </div>
-                  <div class="member-grid-name">Berkeley Initiative for
-  Transparency in the Social Sciences</div>   
-                  <div class="member-socials">
-                    <a href="https://www.bitss.org/" target="_blank" class="social-link">Website <i class="fa-solid fa-globe"></i></a>
-                  </div>
-              </div>
-          </div>
-
-          <div class="description-container">
-              <div class="description-text">
-                  The Berkeley Initiative for Transparency in the Social Sciences (BITSS) works to improve the credibility of science by advancing transparency, reproducibility, rigor, and ethics in research. The OSC has developed training material through BITSS grants provided to our members.
-              </div>
-          </div>
-          <hr>
-          <div class="profile-link">
-              <div class="member-grid-item">
-                  <div class="logo-img">
-                      <img src="images/mpdl-logo.png" alt="mpdl-logo">
-                  </div>
-                  <div class="member-grid-name">Max Planck Digital Library</div>   
-                  <div class="member-socials">
-                    <a href="https://www.mpdl.mpg.de/" target="_blank" class="social-link">Website <i class="fa-solid fa-globe"></i></a>
-                  </div>
-              </div>
-          </div>
-
-          <div class="description-container">
-              <div class="description-text">
-                  The Max Planck Digital Library (MPDL) is a lead provider of infrastructure for research articles, data, and software for Max Planck Society researchers and beyond. The OSC collaborated with the MPDL to provide the 2024's edition of our Open Science Summer School. 
-              </div>
-          </div>
-          <hr>
-          <div class="profile-link">
-              <div class="member-grid-item">
-                  <div class="logo-img">
-                      <img src="images/quest-logo.png" alt="quest-logo">
-                  </div>
-                  <div class="member-grid-name">Berlin Institute of Health at Charité </div>  
-                  <div class="member-socials">
-                    <a href="https://www.bihealth.org/en/translation/innovation-enabler/quest-center/mission-approaches/" target="_blank" class="social-link">Website <i class="fa-solid fa-globe"></i></a>
-                  </div> 
-              </div>
-          </div>
-
-          <div class="description-container">
-              <div class="description-text">
-                  The QUEST Center for Responsible Research (QUEST – Quality | Ethics | Open Science | Translation) of the Berlin Institute of Health strives to increase the trustworthiness, usefulness, and ethical accountability of biomedical research. The OSC regularly collaborates with trainers and meta-researchers from the QUEST Center, from contributing to our reciprocal Open Science Summer Schools, to collaboratively writing articles, for example on research methodology training.
-              </div>
-          </div>
-          <hr>
-          <div class="profile-link">
-              <div class="member-grid-item">
-                  <div class="logo-img">
-                      <img src="images/crs.jpg" alt="CRS-logo">
-                  </div>
-                  <div class="member-grid-name">Center for Reproducible Science and Research Synthesis</div> 
-                  <div class="member-socials">
-                    <a href="https://www.crs.uzh.ch/en.html" target="_blank" class="social-link">Website <i class="fa-solid fa-globe"></i></a>
-                  </div>  
-              </div>
-          </div>
-
-          <div class="description-container">
-              <div class="description-text">
-                  The Center for Reproducible Science and Research Synthesis (CRS) works to advance scientific methods, practices, norms, and incentives that produce trustworthy and reproducible research at the University of Zürich. Sharing similar missions, the OSC exchanges with the CRS on various topics, from day-to-day activities to strategic vision.  
-              </div>
-          </div>
-          <hr>
-          <div class="profile-link">
-              <div class="member-grid-item">
-                  <div class="logo-img">
-                      <img src="images/cos_stack.png" alt="COS-logo" style="height:100px;">
-                  </div>
-                  <div class="member-grid-name">Center for Open Science</div>  
-                  <div class="member-socials">
-                    <a href="https://www.cos.io/" target="_blank" class="social-link">Website <i class="fa-solid fa-globe"></i></a>
-                  </div>   
-              </div>
-          </div>
-
-          <div class="description-container">
-              <div class="description-text">
-                  The Center for Open Science (COS) based in the USA was founded in 2013 to start, scale, and sustain open research practices in order to democratize access to research, enhance accountability to research integrity, facilitate the self-corrective process of science, and improve research rigor and reproducibility. The OSC uses many of the infrastructures provided by COS to teach open research practices and many OSC members are COS ambassadors.
-              </div>
-          </div>
-  </div>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../partners/index.html">Partners</a></li><li class="breadcrumb-item"><a href="../partners/external-partners.html">External Partners</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">External Partners</h1>
 </div>
 
 
 
-</main> <!-- /main -->
+<div class="quarto-title-meta column-page-right">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+
+
+
+
+<div class="quarto-listing quarto-listing-container-custom" id="listing-listing">
+<div class="container">
+
+<div class="row g-4 align-items-stretch pt-3 pb-1">
+<div class="col-lg-4 d-flex">
+<div class="card border-light-subtle shadow-sm p-3 rounded text-center w-100 member-grid-item">
+<img src="images/grn.png" alt="German Reproducibility Network" class="member-grid-image mb-2">
+<div class="card-body flex-grow-1">
+<h5 class="card-title anchored">German Reproducibility Network</h5>
+
+<div class="mt-3 website-button">
+<a href="https://reproducibilitynetwork.de/" class="btn btn-outline-secondary social-link">
+<i class="fa-solid fa-globe"></i> Website
+</a>
+</div>
+
+</div>
+</div>
+</div>
+<div class="col-lg-8">
+
+<div class="description-text mt-2">The OSC is a member of the German Reproducibility Network (GRN), a multidisciplinary consortium that aims to increase transparency and trustworthiness of scientific research. The Network’s goals are to promote open research practices through training and community building, to conduct meta-research, and to work with stakeholders across the sector to ensure coordination of efforts at the national level.
+</div>
+
+</div>
+</div>
+
+<hr>
+
+<div class="row g-4 align-items-stretch pt-3 pb-1">
+<div class="col-lg-4 d-flex">
+<div class="card border-light-subtle shadow-sm p-3 rounded text-center w-100 member-grid-item">
+<img src="images/FORRT.webp" alt="Framework for Open and Reproducible Research Training" class="member-grid-image mb-2">
+<div class="card-body flex-grow-1">
+<h5 class="card-title anchored">Framework for Open and Reproducible Research Training</h5>
+
+<div class="mt-3 website-button">
+<a href="https://forrt.org/" class="btn btn-outline-secondary social-link">
+<i class="fa-solid fa-globe"></i> Website
+</a>
+</div>
+
+</div>
+</div>
+</div>
+<div class="col-lg-8">
+
+<div class="description-text mt-2">The OSC collaborates with FORRT, the Framework for Open and Reproducible Research Training on our Train-the-Trainer program. FORRT is an international grassroots initiative advancing research transparency, reproducibility, rigor, and ethics through pedagogical reform and meta-scientific research.
+</div>
+
+</div>
+</div>
+
+<hr>
+
+<div class="row g-4 align-items-stretch pt-3 pb-1">
+<div class="col-lg-4 d-flex">
+<div class="card border-light-subtle shadow-sm p-3 rounded text-center w-100 member-grid-item">
+<img src="images/bitss.png" alt="Berkeley Initiative for Transparency in the Social Sciences" class="member-grid-image mb-2">
+<div class="card-body flex-grow-1">
+<h5 class="card-title anchored">Berkeley Initiative for Transparency in the Social Sciences</h5>
+
+<div class="mt-3 website-button">
+<a href="https://www.bitss.org/" class="btn btn-outline-secondary social-link">
+<i class="fa-solid fa-globe"></i> Website
+</a>
+</div>
+
+</div>
+</div>
+</div>
+<div class="col-lg-8">
+
+<div class="description-text mt-2">The Berkeley Initiative for Transparency in the Social Sciences (BITSS) works to improve the credibility of science by advancing transparency, reproducibility, rigor, and ethics in research.
+</div>
+
+</div>
+</div>
+
+<hr>
+
+<div class="row g-4 align-items-stretch pt-3 pb-1">
+<div class="col-lg-4 d-flex">
+<div class="card border-light-subtle shadow-sm p-3 rounded text-center w-100 member-grid-item">
+<img src="images/mpdl-logo.png" alt="Max Planck Digital Library" class="member-grid-image mb-2">
+<div class="card-body flex-grow-1">
+<h5 class="card-title anchored">Max Planck Digital Library</h5>
+
+<div class="mt-3 website-button">
+<a href="https://www.mpdl.mpg.de/" class="btn btn-outline-secondary social-link">
+<i class="fa-solid fa-globe"></i> Website
+</a>
+</div>
+
+</div>
+</div>
+</div>
+<div class="col-lg-8">
+
+<div class="description-text mt-2">The Max Planck Digital Library (MPDL) is a lead provider of infrastructure for research articles, data, and software for Max Planck Society researchers and beyond. The OSC collaborated with the MPDL to provide the 2024's edition of our Open Science Summer School.
+</div>
+
+</div>
+</div>
+
+<hr>
+
+<div class="row g-4 align-items-stretch pt-3 pb-1">
+<div class="col-lg-4 d-flex">
+<div class="card border-light-subtle shadow-sm p-3 rounded text-center w-100 member-grid-item">
+<img src="images/quest-logo.png" alt="Berlin Institute of Health at Charité" class="member-grid-image mb-2">
+<div class="card-body flex-grow-1">
+<h5 class="card-title anchored">Berlin Institute of Health at Charité</h5>
+
+<div class="mt-3 website-button">
+<a href="https://www.bihealth.org/en/translation/innovation-enabler/quest-center/mission-approaches/" class="btn btn-outline-secondary social-link">
+<i class="fa-solid fa-globe"></i> Website
+</a>
+</div>
+
+</div>
+</div>
+</div>
+<div class="col-lg-8">
+
+<div class="description-text mt-2">The QUEST Center for Responsible Research (QUEST – Quality | Ethics | Open Science | Translation) of the Berlin Institute of Health strives to increase the trustworthiness, usefulness, and ethical accountability of biomedical research. The OSC regularly collaborates with trainers and meta-researchers from the QUEST Center, from contributing to our reciprocal Open Science Summer Schools, to collaboratively writing articles, for example on research methodology training.
+</div>
+
+</div>
+</div>
+
+<hr>
+
+<div class="row g-4 align-items-stretch pt-3 pb-1">
+<div class="col-lg-4 d-flex">
+<div class="card border-light-subtle shadow-sm p-3 rounded text-center w-100 member-grid-item">
+<img src="images/crs.jpg" alt="Center for Reproducible Science and Research Synthesis" class="member-grid-image mb-2">
+<div class="card-body flex-grow-1">
+<h5 class="card-title anchored">Center for Reproducible Science and Research Synthesis</h5>
+
+<div class="mt-3 website-button">
+<a href="https://www.crs.uzh.ch/en.html" class="btn btn-outline-secondary social-link">
+<i class="fa-solid fa-globe"></i> Website
+</a>
+</div>
+
+</div>
+</div>
+</div>
+<div class="col-lg-8">
+
+<div class="description-text mt-2">The Center for Reproducible Science and Research Synthesis (CRS) works to advance scientific methods, practices, norms, and incentives that produce trustworthy and reproducible research at the University of Zürich. Sharing similar missions, the OSC exchanges with the CRS on various topics, from day-to-day activities to strategic vision.
+</div>
+
+</div>
+</div>
+
+<hr>
+
+<div class="row g-4 align-items-stretch pt-3 pb-1">
+<div class="col-lg-4 d-flex">
+<div class="card border-light-subtle shadow-sm p-3 rounded text-center w-100 member-grid-item">
+<img src="images/cos_stack.png" alt="Center for Open Science" class="member-grid-image mb-2">
+<div class="card-body flex-grow-1">
+<h5 class="card-title anchored">Center for Open Science</h5>
+
+<div class="mt-3 website-button">
+<a href="https://www.cos.io/" class="btn btn-outline-secondary social-link">
+<i class="fa-solid fa-globe"></i> Website
+</a>
+</div>
+
+</div>
+</div>
+</div>
+<div class="col-lg-8">
+
+<div class="description-text mt-2">The Center for Open Science (COS) based in the USA was founded in 2013 to start, scale, and sustain open research practices in order to democratize access to research, enhance accountability to research integrity, facilitate the self-corrective process of science, and improve research rigor and reproducibility. The OSC uses many of the infrastructures provided by COS to teach open research practices and many OSC members are COS ambassadors.
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

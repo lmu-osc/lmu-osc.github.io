@@ -31,6 +31,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
 <link href="../assets/img/lmu_osc_logo.jpg" rel="icon" type="image/jpeg">
+<script src="../site_libs/quarto-listing/list.min.js"></script>
+<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
@@ -69,6 +71,35 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-name','listing-image_url','listing-contactName','listing-contactLink','listing-website_url','listing-description',{ data: ['index'] },{ data: ['categories'] }],
+      
+      searchColumns: ["listing-name","listing-image_url","listing-contactName","listing-contactLink","listing-website_url","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
 <!-- Matomo -->
 <script>
   var _paq = window._paq = window._paq || [];
@@ -85,6 +116,35 @@ ul.task-list li input[type="checkbox"] {
 </script>
 <!-- End Matomo Code -->
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="https://raw.githubusercontent.com/lmu-osc/branding-resources/refs/heads/main/styles.css">
 <link rel="stylesheet" href="../assets/bootstrap-5.3.8-dist/css/bootstrap.min.css">
@@ -176,7 +236,7 @@ ul.task-list li input[type="checkbox"] {
  <span class="dropdown-text">Other LMU Support Services</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../partners/externals.html">
+    <a class="dropdown-item" href="../partners/external-partners.html">
  <span class="dropdown-text">External Partners</span></a>
   </li>  
         <li>
@@ -293,7 +353,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../partners/externals.html" class="sidebar-item-text sidebar-link">
+  <a href="../partners/external-partners.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">External Partners</span></a>
   </div>
 </li>
@@ -312,251 +372,27 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content column-page-right" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../partners/index.html">Partners</a></li><li class="breadcrumb-item"><a href="../partners/other-lmu-support-services.html">Other LMU Support Services</a></li></ol></nav></header>
+<main class="content column-page-right" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../partners/index.html">Partners</a></li><li class="breadcrumb-item"><a href="../partners/other-lmu-support-services.html">Other LMU Support Services</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Other LMU Support Services</h1>
+</div>
 
 
 
+<div class="quarto-title-meta column-page-right">
 
-<style>
-:root {
-  --theme-main: #00883A;
-  --theme-bg: #f5f6fa;
-  --theme-card-bg: #fff;
-  --theme-card-shadow: 0 2px 10px rgba(43,134,75,0.10);
-  --theme-border: #e3e7ed;
-}
+    
+  
+    
+  </div>
+  
 
-body {
-  background: var(--theme-bg);
-  margin: 0;
-  min-height: 100vh;
-}
 
-.content-container{
-  max-width: 1200px;
-  margin: 2rem auto;
-  padding: 0 1.5rem;
-}
+</header>
 
-.header-section {
-  font-size: 2.6rem;
-  font-weight: 700;
-  color: var(--theme-main);
-  margin-bottom: 1.1rem;
-  letter-spacing: -0.5px;
-}
 
-.member-grid {
-  display: grid;
-  grid-template-columns: 280px 800px;
-  grid-template-rows: auto;
-  gap: 1rem;
-}
-
-.member-grid-item {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  background: var(--theme-card-bg);
-  border-radius: 5px;
-  box-shadow: var(--theme-card-shadow);
-  border: 1.5px solid var(--theme-border);
-  padding: 0.5rem;
-  text-align: center;
-  transition: transform 0.13s, box-shadow 0.13s;
-  height: 350px; 
-  min-width: 200px;
-  max-width: 320px;
-  box-sizing: border-box;
-  overflow: hidden;
-}
-
-.member-grid-item:hover {
-  transform: translateY(-5px) scale(1.025);
-  box-shadow: 0 8px 32px rgba(43,134,75,0.15);
-  border-color: var(--theme-main);
-}
-
-.profile-link {
-  display: contents;
-  text-decoration: none;
-  color: inherit;
-  height: 100%;
-}
-
-.member-grid-image {
-  max-width: 110px;
-  min-height: 80px;
-  max-height: 110px;
-  object-fit: contain;
-  border-radius: 0;
-  top-margin: 20px;
-  margin: 0.5rem auto 0.8rem auto;
-  border: none;
-  box-shadow: 0 1px 6px rgba(43,134,75,0.12);
-  flex-shrink: 0;
-}
-
-.member-grid-title {
-  font-size: 1.1rem;
-  color: #70877c;
-  margin-bottom: 0.5rem;
-  font-weight: 600;
-}
-
-.member-grid-position {
-  font-size: 1.2rem;
-  color: var(--theme-main);
-  margin-bottom: 0.5rem;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-
-.member-grid-name {
-  font-size: 1.1rem;
-  font-weight: bold;
-  color: var(--bs-gray-700);
-  margin-bottom: 0.3rem;
-  line-height: 1.4;
-  min-height: 2.9em;
-  max-height: 5em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  overflow: hidden;
-}
-
-.member-grid-org {
-  font-size: 1.1rem;
-  color: #45695f;
-  margin-bottom: 0.2rem;
-}
-
-.member-socials {
-  margin-top: auto;
-  display: flex;
-  justify-content: center;
-  gap: 0.5rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
-.social-link {
-  display: inline-flex;         
-  align-items: center;
-  gap: 0.4rem;
-  background: none;              
-  box-shadow: none;               
-  color: var(--theme-main);                 
-  text-decoration: none;
-  font-size: 0.9rem;              
-  width: auto;                  
-  height: auto;                 
-  border: 1px solid #e3e7ed;                  
-  border-radius: 4px;              
-  padding: 0.3rem 0.6rem;                   
-  cursor: pointer;
-  transition: color 0.2s, border-color 0.2s;
-}
-
-.social-link i {
-  font-size: 0.9rem;
-  line-height: 1;      
-  margin: 0; 
-}
-
-.social-link:hover {
-  background-color:rgba(43, 134, 75, 0.98);
-  color: white;
-  border-color:var(--theme-main);
-  transform: translateY(-2px);
-}
-
-.contact-link{
-  color: var(--theme-main);
-  text-decoration: underline;
-  font-weight: 500;
-}
-.contact-person p{
-  font-size: 1rem;
-  color: #70877c;
-  margin-bottom: 0.2rem;
-}
-.contact-link:hover {
-  color: #256b3e;
-  text-decoration: underline;
-}
-
-.email-link{
-  color: var(--theme-main);
-  text-decoration: underline;
-  font-weight: 500;
-  font-size: 0.9rem;  
-}
-
-.member-socials {
-  margin-top: auto;
-  display: flex;
-  justify-content: center;
-  gap: 0.5rem;
-  padding-top: 1rem;
-}
-
-.description-container {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.description-text {
-  font-size: 1.1rem;
-  color: #4a5568;
-  line-height: 1.8;
-  margin-top: 0;
-  margin-bottom: 0.5rem;
-  overflow: hidden;
-  flex: 1 1 auto;
-  width: 100%;
-  text-align: justify;
-}
-.description-text ul {
-  list-style-type: square;
-}
-
-.description-text ul li::marker {
-  color: var(--theme-main);
-}
-.read-more-btn {
-  margin-top: 1rem;
-  display: inline-block;
-  padding: 0.4em 1.1em;
-  background: var(--theme-main);
-  color: #fff !important;
-  border-radius: 5px;
-  font-size: 1rem;
-  font-weight: 500;
-  text-decoration: none !important;
-  box-shadow: 0 2px 8px rgba(43,134,75,0.08);
-  transition: background 0.13s, box-shadow 0.13s;
-  border: none;
-  cursor: pointer;
-}
-
-.read-more-btn:hover {
-  background: #256b3e;
-  color: #fff !important;
-}
-
-hr {
-    border: 0;
-    height: 2px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5));
-    margin: 20px 0;
-    grid-column: 1 / -1; 
-  }
-
-</style>
 <script>
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -575,176 +411,214 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 </script>
 
-<div class="content-container">
-  <div class="header-section">Other LMU Support Services</div>
-
-  <div class="member-grid">
-  
-  <div class="profile-link">
-      <div class="member-grid-item">
-          <img src="images/lmu_logo.jpg" class="member-grid-image" alt="Logo of LMU Munich">
-          <div class="member-grid-name">Research Funding Unit</div>
-              <div class="contact-person" style="display: flex; flex-direction: column; gap: 0;">
-                <p>Contact person:</p>
-                  <a href="mailto:florian.schreck@verwaltung.uni-muenchen.de" class="email-link pt-0"><i class="fa-solid fa-envelope"></i> Dr. Florian Schreck</a>
-              </div>
-              <div class="member-socials">
-                    <a href="https://fdm.ub.lmu.de/services-networks/research-funding/" target="_blank" class="social-link">Website <i class="fa-solid fa-globe"></i></a>
-              </div>
-      </div>
-  </div>
-
-  <div class="description-container">
-      <div class="description-text">
-          The Research Funding Unit is here to help researchers comply to requirements of funding agencies to increase your chances of getting funded.
-      </div>
-  </div>
-  <hr>
-
-  <div class="profile-link">
-      <div class="member-grid-item">
-          <img src="images/stablab_logo.jpeg" class="member-grid-image" alt="Logo of StaBLab">
-          <div class="member-grid-name">StaBLab: Statistical consulting unit</div>
-              <div class="contact-person" style="display: flex; flex-direction: column; gap: 0;">
-                <p>Contact person:</p>
-                  <a href="mailto:kontakt@stablab.stat.uni-muenchen.de" class="email-link"><i class="fa-solid fa-envelope"></i> StaBLab team</a>
-              </div>
-              <div class="member-socials">
-                    <a href="https://www.stat.lmu.de/stablab/en/" target="_blank" class="social-link">Website <i class="fa-solid fa-globe"></i></a>
-              </div>
-      </div>
-  </div>
-
-  <div class="description-container">
-      <div class="description-text">
-          The StaBLab team provide free statistical consultations for LMU students and researchers to support them with their thesis and research projects with, e.g.: 
-          <ul>
-              <li>Experimental design and sampling planning</li>
-              <li>Statistical modelling</li>
-              <li>Big Data Analyses &amp; Machine Learning </li>
-          </ul>
-      </div>
-  </div>
-  <hr>
-
-  <div class="profile-link">
-      <div class="member-grid-item">
-          <img src="images/lmu_logo.jpg" class="member-grid-image" alt="Logo of LMU Munich">
-          <div class="member-grid-name">MLCU: Machine Learning Consulting Unit</div>
-              <div class="contact-person" style="display: flex; flex-direction: column; gap: 0;">
-                <p>Consultation request form:</p>
-                  <a href="https://www.slds.stat.uni-muenchen.de/consulting/webform.html" class="email-link">MLCU</a>
-              </div>
-              <div class="member-socials">
-                    <a href="https://www.slds.stat.uni-muenchen.de/consulting/" target="_blank" class="social-link">Website <i class="fa-solid fa-globe"></i></a>
-              </div>
-          
-      </div>
-  </div>
-
-  <div class="description-container">
-      <div class="description-text">
-          The MLCU provides machine learning consulting to LMU students and researchers.
-          We offer:
-          <ul>
-              <li>help with selection of appropriate methods to answer specific research questions</li>
-              <li>support with implementation and interpretation of machine and deep learning methods</li>
-              <li>support in setup and implementation of reproducible benchmark experiments (including hyperparameter optimization and benchmark evaluation)</li>
-          <ul>
-      </ul></ul></div>
-  </div>
-  <hr>
-  <div class="profile-link">
-      <div class="member-grid-item">
-          <img src="images/ub.JPG" class="member-grid-image" alt="Logo ofUniversity Library LMU">
-          <div class="member-grid-name">University Library LMU - Research Data Management Information</div>
-              <div class="contact-person" style="display: flex; flex-direction: column; gap: 0;">
-                <p>Contact person:</p>
-                  <a href="mailto:rdm@ub.uni-muenchen.de" class="email-link"><i class="fa-solid fa-envelope"></i> RDM team</a>
-              </div>
-              <div class="member-socials">
-                    <a href="https://www.en.ub.uni-muenchen.de/writing/research_data/index.html" target="_blank" class="social-link">Website <i class="fa-solid fa-globe"></i></a>
-              </div>
-          
-      </div>
-  </div>
-
-  <div class="description-container">
-      <div class="description-text">
-          The RDM Information team at the University Library of LMU Munich provides infrastructure and 
-          gives advice on
-          <ul>
-              <li>how to start your research data management</li>
-              <li>how to write RDM plans (e.g. with the tool RDMO)</li>
-              <li>how to make your data FAIR (findable, accessible, interoperable, reusable), and</li>
-              <li>how to use data repositories, including the infrastructure "Open Data LMU". </li>
-          </ul>
-      </div>
-  </div>
-  <hr>
-
-  <div class="profile-link">
-      <div class="member-grid-item">
-          <img src="images/ub.JPG" class="member-grid-image" alt="Logo ofUniversity Library LMU">
-          <div class="member-grid-name">University Library LMU - Open Access team</div>
-              <div class="contact-person" style="display: flex; flex-direction: column; gap: 0;">
-                <p>Contact person:</p>
-                  <a href="mailto:open-access@ub.uni-muenchen.de" class="email-link"><i class="fa-solid fa-envelope"></i> Open Access team</a>
-              </div>
-              <div class="member-socials">
-                    <a href="https://www.en.ub.uni-muenchen.de/writing/open-access-publishing/oa-auxiliary-page/index.html" target="_blank" class="social-link">Website <i class="fa-solid fa-globe"></i></a>
-              </div>
-          
-      </div>
-  </div>
-
-  <div class="description-container">
-      <div class="description-text">
-          The University Library provides
-          <ul>
-              <li>Infrastructure to preserve and share articles or books following the Green or Gold Open Access route (e.g. preprint, postprints, articles, monographs): Open Access LMU</li>
-              <li>Infrastructure for your own Open Access journal: Open Journals LMU</li>
-              <li>Infrastructure to publish your university thesis or monograph in both print and digital form as Open Access publication: Open Publishing LMU</li>
-              <li>Funds to cover article or book processing charges: Open Access publishing Fund</li>
-          </ul>
-      </div>
-  </div>
-  <hr>
-
-  <div class="profile-link">
-      <div class="member-grid-item">
-          <img src="images/itg.png" class="member-grid-image" alt="Logo of IT-Gruppe Geisteswissenschaften (ITG)" style="width:80px;">
-          <div class="member-grid-name">IT-Gruppe Geisteswissenschaften (ITG) - LMU Center for Digital Humanities</div>
-              <div class="contact-person" style="display: flex; flex-direction: column; gap: 0;">
-                <p>Contact person:</p>
-                  <a href="mailto:luecke@lmu.de" class="email-link"><i class="fa-solid fa-envelope"></i> Dr. Stephan Lücke</a>
-              </div>
-              <div class="member-socials">
-                    <a href="https://www.itg.uni-muenchen.de/index.html" target="_blank" class="social-link">Website <i class="fa-solid fa-globe"></i></a>
-              </div>
-          
-      </div>
-  </div>
-
-  <div class="description-container">
-      <div class="description-text">
-          The ITG provides advice and assistance with
-          <ul>
-              <li>planning and conducting projects with substantial shares of digital methods in the humanities</li>
-              <li>research data management</li>
-          </ul>
-          The ITG is responsible for accompanying digital projects in the humanities, computer science, statistics and computational linguistics as well as the emerging data sciences.
-      </div>
-  </div>
 
 
-  </div>
 
+<div class="quarto-listing quarto-listing-container-custom" id="listing-listing">
+<div class="container">
+
+<div class="row g-4 align-items-stretch pt-3 pb-1">
+<div class="col-lg-4 d-flex">
+<div class="card border-light-subtle shadow-sm p-3 rounded text-center w-100 member-grid-item">
+<img src="images/lmu_logo.jpg" alt="Research Funding Unit" class="member-grid-image mb-2">
+<div class="card-body flex-grow-1">
+<h5 class="card-title anchored">Research Funding Unit</h5>
+
+<p class="card-text text-muted mb-0">Contact Person:</p>
+<a href="mailto:florian.schreck@verwaltung.uni-muenchen.de" class="contact-link mb-2">Dr. Florian Schreck</a>
+
+<div class="mt-3 website-button">
+<a href="https://fdm.ub.lmu.de/services-networks/research-funding/" class="btn btn-outline-secondary social-link">
+<i class="fa-solid fa-globe"></i> Website
+</a>
 </div>
 
+</div>
+</div>
+</div>
+<div class="col-lg-8">
 
+<div class="description-text mt-2">The Research Funding Unit is here to help researchers comply to requirements of funding agencies to increase your chances of getting funded.
+</div>
 
-</main> <!-- /main -->
+</div>
+</div>
+
+<hr>
+
+<div class="row g-4 align-items-stretch pt-3 pb-1">
+<div class="col-lg-4 d-flex">
+<div class="card border-light-subtle shadow-sm p-3 rounded text-center w-100 member-grid-item">
+<img src="images/stablab_logo.jpeg" alt="StaBLab: Statistical consulting unit" class="member-grid-image mb-2">
+<div class="card-body flex-grow-1">
+<h5 class="card-title anchored">StaBLab: Statistical consulting unit</h5>
+
+<p class="card-text text-muted mb-0">Contact Person:</p>
+<a href="mailto:kontakt@stablab.stat.uni-muenchen.de" class="contact-link mb-2">StaBLab team</a>
+
+<div class="mt-3 website-button">
+<a href="https://www.stat.lmu.de/stablab/en/" class="btn btn-outline-secondary social-link">
+<i class="fa-solid fa-globe"></i> Website
+</a>
+</div>
+
+</div>
+</div>
+</div>
+<div class="col-lg-8">
+
+<div class="description-text mt-2">The StaBLab team provide free statistical consultations for LMU students and researchers to support them with their thesis and research projects with:
+<ul>
+  <li>Experimental design and sampling planning</li>
+  <li>Statistical modelling</li>
+  <li>Big Data Analyses &amp; Machine Learning</li>
+</ul>
+</div>
+
+</div>
+</div>
+
+<hr>
+
+<div class="row g-4 align-items-stretch pt-3 pb-1">
+<div class="col-lg-4 d-flex">
+<div class="card border-light-subtle shadow-sm p-3 rounded text-center w-100 member-grid-item">
+<img src="images/lmu_logo.jpg" alt="MLCU: Machine Learning Consulting Unit" class="member-grid-image mb-2">
+<div class="card-body flex-grow-1">
+<h5 class="card-title anchored">MLCU: Machine Learning Consulting Unit</h5>
+
+<p class="card-text text-muted mb-0">Contact Person:</p>
+<a href="https://www.slds.stat.uni-muenchen.de/consulting/webform.html" class="contact-link mb-2">MLCU</a>
+
+<div class="mt-3 website-button">
+<a href="https://www.slds.stat.uni-muenchen.de/consulting/" class="btn btn-outline-secondary social-link">
+<i class="fa-solid fa-globe"></i> Website
+</a>
+</div>
+
+</div>
+</div>
+</div>
+<div class="col-lg-8">
+
+<div class="description-text mt-2">The MLCU provides machine learning consulting to LMU students and researchers. We offer:
+<ul>
+  <li>Help with selection of appropriate methods to answer specific research questions</li>
+  <li>Support with implementation and interpretation of machine and deep learning methods</li>
+  <li>Support in setup and implementation of reproducible benchmark experiments (including hyperparameter optimization and benchmark evaluation)</li>
+</ul>
+</div>
+
+</div>
+</div>
+
+<hr>
+
+<div class="row g-4 align-items-stretch pt-3 pb-1">
+<div class="col-lg-4 d-flex">
+<div class="card border-light-subtle shadow-sm p-3 rounded text-center w-100 member-grid-item">
+<img src="images/ub.JPG" alt="University Library LMU - Research Data Management Information" class="member-grid-image mb-2">
+<div class="card-body flex-grow-1">
+<h5 class="card-title anchored">University Library LMU - Research Data Management Information</h5>
+
+<p class="card-text text-muted mb-0">Contact Person:</p>
+<a href="mailto:rdm@ub.uni-muenchen.de" class="contact-link mb-2">RDM team</a>
+
+<div class="mt-3 website-button">
+<a href="https://www.en.ub.uni-muenchen.de/writing/research_data/index.html" class="btn btn-outline-secondary social-link">
+<i class="fa-solid fa-globe"></i> Website
+</a>
+</div>
+
+</div>
+</div>
+</div>
+<div class="col-lg-8">
+
+<div class="description-text mt-2">The RDM Information team at the University Library of LMU Munich provides infrastructure and gives advice on:
+<ul>
+  <li>How to start your research data management</li>
+  <li>How to write RDM plans (e.g., with the tool RDMO)</li>
+  <li>How to make your data FAIR (findable, accessible, interoperable, reusable)</li>
+  <li>How to use data repositories, including the infrastructure "Open Data LMU"</li>
+</ul>
+</div>
+
+</div>
+</div>
+
+<hr>
+
+<div class="row g-4 align-items-stretch pt-3 pb-1">
+<div class="col-lg-4 d-flex">
+<div class="card border-light-subtle shadow-sm p-3 rounded text-center w-100 member-grid-item">
+<img src="images/ub.JPG" alt="University Library LMU - Open Access team" class="member-grid-image mb-2">
+<div class="card-body flex-grow-1">
+<h5 class="card-title anchored">University Library LMU - Open Access team</h5>
+
+<p class="card-text text-muted mb-0">Contact Person:</p>
+<a href="mailto:open-access@ub.uni-muenchen.de" class="contact-link mb-2">Open Access team</a>
+
+<div class="mt-3 website-button">
+<a href="https://www.en.ub.uni-muenchen.de/writing/open-access-publishing/oa-auxiliary-page/index.html" class="btn btn-outline-secondary social-link">
+<i class="fa-solid fa-globe"></i> Website
+</a>
+</div>
+
+</div>
+</div>
+</div>
+<div class="col-lg-8">
+
+<div class="description-text mt-2">The University Library provides:
+<ul>
+  <li>Infrastructure to preserve and share articles or books following the Green or Gold Open Access route (e.g., preprint, postprints, articles, monographs): Open Access LMU</li>
+  <li>Infrastructure for your own Open Access journal: Open Journals LMU</li>
+  <li>Infrastructure to publish your university thesis or monograph in both print and digital form as Open Access publication: Open Publishing LMU</li>
+  <li>Funds to cover article or book processing charges: Open Access publishing Fund</li>
+</ul>
+</div>
+
+</div>
+</div>
+
+<hr>
+
+<div class="row g-4 align-items-stretch pt-3 pb-1">
+<div class="col-lg-4 d-flex">
+<div class="card border-light-subtle shadow-sm p-3 rounded text-center w-100 member-grid-item">
+<img src="images/itg.png" alt="IT-Gruppe Geisteswissenschaften (ITG) - LMU Center for Digital Humanities" class="member-grid-image mb-2">
+<div class="card-body flex-grow-1">
+<h5 class="card-title anchored">IT-Gruppe Geisteswissenschaften (ITG) - LMU Center for Digital Humanities</h5>
+
+<p class="card-text text-muted mb-0">Contact Person:</p>
+<a href="mailto:luecke@lmu.de" class="contact-link mb-2">Dr. Stephan Lücke</a>
+
+<div class="mt-3 website-button">
+<a href="https://www.itg.uni-muenchen.de/index.html" class="btn btn-outline-secondary social-link">
+<i class="fa-solid fa-globe"></i> Website
+</a>
+</div>
+
+</div>
+</div>
+</div>
+<div class="col-lg-8">
+
+<div class="description-text mt-2">The ITG provides advice and assistance with:
+<ul>
+  <li>Planning and conducting projects with substantial shares of digital methods in the humanities</li>
+  <li>Research data management</li>
+</ul>
+The ITG is responsible for accompanying digital projects in the humanities, computer science, statistics and computational linguistics as well as the emerging data sciences.
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
