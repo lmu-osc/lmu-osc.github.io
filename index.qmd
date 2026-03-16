@@ -184,6 +184,15 @@ include-in-header:
           .testimonial-carousel .carousel-item {
             padding: 0.5rem;
           }
+          .testimonial-carousel .testimonial-inner blockquote p {
+            line-height: 1.6;
+            min-height: calc(1.6em * 5);
+            max-height: calc(1.6em * 5);
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 5;
+          }
           .testimonial-carousel .carousel-control-prev,
           .testimonial-carousel .carousel-control-next {
             width: 2.5rem;
