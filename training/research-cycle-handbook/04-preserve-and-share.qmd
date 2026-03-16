@@ -63,7 +63,7 @@ Not all data can or should be shared openly. Your sharing options depend on what
 
 - **Restricted access** means the metadata is available on a professional repository and clear instructions of the conditions of access to the data are provided. Requesting the data often requires describing the purpose of reuse (sometimes in the form of a preregistration, see [1.4.1. Pre-analysis planning](01-plan-and-design.qmd#sec-study-design-analysis-plan){.mark}), signing a Data Use Agreement, and agreeing to further conditions. This can be organized automatically through the repository or through contacting the authors<!--if so what's the difference with the option below?-->. This balances reuse with protection. 
 
-- **Metadata only** describes what data exists without sharing the data itself. Others can discover your work and contact you to discuss access. This is appropriate when data cannot be shared due to legal or ethical constraints.<!--would that be considered Accessible though?--> Making your data Findable by sharing your metadata on a professional repository is the first step to making your data FAIR, as emphasized by the [LMU guidelines](https://cms-cdn.lmu.de/media/contenthub/amtliche-veroeffentlichungen/gwp-ordnung.pdf) (see also [1.2. Legal Requirements](01-plan-and-design.qmd#sec-legal-requirements){.mark})
+- **Metadata only** describes what data exists without sharing the data itself. Others can discover your work and contact you to discuss access. This is appropriate when data cannot be shared due to legal or ethical constraints.<!--would that be considered Accessible though?--> Making your data Findable by sharing your metadata on a professional repository is the first step to making your data FAIR, as emphasized by the [LMU Guidelines for Safeguarding Good Scientific Practice](https://cms-cdn.lmu.de/media/contenthub/amtliche-veroeffentlichungen/gwp-ordnung.pdf) (see also [1.2. Legal Requirements](01-plan-and-design.qmd#sec-legal-requirements){.mark})
 
 <br>
 
@@ -380,6 +380,7 @@ A license tells others what they can do with your data. Licensing your data cons
 <br>
 
 Common open licenses for data are:
+
 - **CC0 (Public Domain)** places no restrictions. Anyone can use, modify, and redistribute without attribution. Recommended for factual data where maximum reuse is the goal.
 - **CC BY (Attribution)** requires users to credit you. A good default when you want recognition while enabling broad reuse.
 - **CC BY-NC (Non-Commercial)** adds a restriction against commercial use. Consider whether this limitation actually serves your goals.
@@ -727,7 +728,7 @@ Any material needed to reproduce or replicate your study should also be shared o
 
 For instance, you can share your:
 
-- **Share wet-lab protocols** on e.g. [protocols.io](https://www.protocols.io/), see [2.1.1. Lab Protocols](02-collect-and-manage.qmd#sec-data-collection).
+- **Share wet-lab protocols** on e.g. [protocols.io](https://www.protocols.io/), see [2.1.1. Lab Protocols](02-collect-and-manage.qmd#sec-data-collection){.mark}.
 - **Share survey text, instructions, or scoring sheets** on e.g. [OSF](https://osf.io/)
 
 We recommend to use a creative Common license such as CC.-BY 4.0 to allow reuse, modification and redistribution, while getting attribution, or one of its derivative (see [tool to select a creative common license](https://creativecommons.org/chooser/))
