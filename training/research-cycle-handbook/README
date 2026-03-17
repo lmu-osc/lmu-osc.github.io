@@ -13,7 +13,7 @@ I tried to be recipe-like, i.e. using the imperative form:
 - **Do this** because.
 - **Do that** because.
 
-When using a specialized term in a new chapter, I have used bold and underline formatting and then defined it in a callout information box with the bold and underlined term.
+When using a specialized term in a new chapter, I have used bold and underlining formatting and then defined that term in a callout information box repeating the bold and underlined formatting.
 
 I’ve used callout tip boxes for tips to research groups (to develop SOPs).
 
@@ -22,17 +22,17 @@ I’ve used callout important note for important things to avoid.
 I've only hyperlinked support services in otherwise plain text and did not add another kind of callout box to avoid too many types of formatting within the text. We could however consider adding a new row of cards for support services (not urgent).
 
 
-# WHAT ARE THE TOOLS AND RESOURCES INCLUDED?
+# WHAT ARE THE TOOLS AND RESOURCES INCLUDED IN THE HANDBOOK?
 
 - tools and tutorials of ours, or 
 - essential tools we use in our own teaching (e.g. re3data, open policy finder), or 
-- those that fill a gap in our current material but would be needed in our teaching (e.g. consent form language often requested within the framework of SwOP and OSS)
+- those that fill a gap in our current material but would be needed in our teaching (e.g. how to write an inform consent form)
 - well established, discipline agnostic or interdisciplinary, maintained tools
 
 
 # HOW TO ADD CARDS?
 
-This section uses Bootstrap structure and custom css to create a responsive card layout.
+We've used Bootstrap structure and custom css to create a responsive card layout.
 - The main .container div must always be present.
 - Each section (Learn More / Tools & Resources) is wrapped in a .row.
 - If one of the section is not needed, remove the entire .row block and its downstream .col divs.
@@ -73,33 +73,40 @@ template:
 
 
 
-# HOW TO ADD CROSS-REFERENCES TO PAGES, SECTIONS, TABS OF THE HANDBOOK?
+# HOW TO ADD CROSS-REFERENCES TO PAGES, SECTIONS, AND TABS OF THE HANDBOOK?
 
 Note that:
-- I want the text to be displayed to be [X.X.X. Title] which isn't native to quarto so I currently type that text manually.
-- I want the internal cross reference links to be de-emphasize (italic grey), so I currently use the custom css {.mark}
-- titles of tabs in "::: {.panel-tabset}" aren't true markdown titles and therefore do not get applied the autonumbering (so I currently do it by hand), and do not get assigned an anchor (so I currently cross ref their container instead)
+- I want the text displayed to be [X.X.X. Title] which isn't native to quarto so I currently type that text manually.
+- I want the internal cross reference links to be de-emphasize (we chose italic grey), so I currently use the custom css {.mark}
+- titles of tabs in "::: {.panel-tabset}" aren't true markdown titles and therefore 
+    - do not get applied the autonumbering so I currently number those titles by hand, and 
+    - do not get assigned an anchor so I currently cross ref their container instead (which is good enough)
 
 Examples of how I currently cross-ref:
+
 - pages: see [3. Analyze & Collaborate](03-analyze-and-collaborate.qmd){.mark}
-- sections: see [1.4 Study Design & Analysis Plan](#sec-study-design-analysis-plan){.mark} if in same page or [1. Plan & Design Checklist](01-plan-and-design.qmd#plan-design-checklist){.mark} if on another page - the section title needs to have a custom label e.g. "{#sec-study-design-analysis-plan}"
-- tabs: see [1.4.1. Pre-analysis planning](#sec-study-design-analysis-plan){.mark} i.e. cross referencing their container instead
 
-Also note that I would prefer the annotation X.X. with the final dot, but this isn't native to quarto which writes X.X for autonumbered titles. I likely wasn't consistent in whether or not I manually wrote the final dot in the text to be displayed in the cross refs.
+- sections: the section title needs to have a custom label e.g. "{#sec-study-design-analysis-plan}"
+    - see [1.4. Study Design & Analysis Plan](#sec-study-design-analysis-plan){.mark} if in same page, or 
+    - see [1.4. Study Design & Analysis Plan](01-plan-and-design.qmd#sec-study-design-analysis-plan){.mark} if on another page.
 
+- tabs: see [1.4.1. Pre-analysis planning](#sec-study-design-analysis-plan){.mark} i.e. cross referencing their container instead.
+
+Also note that I would prefer the annotation X.X. with the final dot (and this is how I wrote in manually for the text to be displayed), but this isn't native to quarto which writes X.X for autonumbered titles.
 
 
 # HOW TO REMOVE ANCHOR?
 
 Adding the following class to html title remove their anchors, e.g.:
+
 <h5 class="fs-5 no-anchor">Title</h5>
 
-I believe this is using remove_anchor.lua function stored in assets.
+This is using the remove_anchor.lua function stored in assets.
 
 
-# HOW TO FORMAT LISTS AD CALLOUT BOXES BETWEEN SECTION TITLE AND panel-tabset IN orc-details-panel?
+# HOW TO FORMAT LISTS AND CALLOUT BOXES OCCURRING BETWEEN SECTION TITLE AND panel-tabset IN orc-details-panel?
 
-I am not sure why the bullet points or call out boxes are in the margin when a list is in this location. I suppose the orc-details-panel custom css could be adjusted. 
+Riya and I are not sure why the bullet points or callout boxes are in the margin when a list is in this location. I suppose the orc-details-panel custom css should be adjusted - I do not know. 
 
 Currently, to add a margin to lists in such location, I use:
 
@@ -119,7 +126,7 @@ However, while this adds a margin, the border of the callout boxes stay 'explode
 
 # HOW TO CUSTOMIZE CHAPTERS?
 
-So far, the Hero, Pills, and Checklist of Chapter 1 and 2 were customized using the following lines and associated custom css: 
+So far, the Hero, Pills, and Checklist and Download button for the checklist of Chapter 1 and 2 were customized using the following lines and associated custom css: 
 
 <div class="orc-phase-hero-compact phase-2">
 <div class="orc-hero-cycle phase-2">
@@ -131,6 +138,8 @@ So far, the Hero, Pills, and Checklist of Chapter 1 and 2 were customized using 
 
 ::: {.d-flex .justify-content-center .mt-4 .orc-checklist-download .phase-2}
 
-Chapter 4 was not yet customized. Chapter 3 need work to make a yellow-brown-ish tone background to white text accessible.
-These lines were commented with e.g. <!-- RL still working on <div class="orc-phase-hero-compact phase-3"> --> in the chapters's page.
+Chapter 4 was not yet customized. 
+Chapter 3 need work to make a yellow-brown-ish tone background to white text accessible.
+
+These lines were commented with e.g. <!-- RL still working on <div class="orc-phase-hero-compact phase-3"> --> in chapters 3 and 4 pages.
 
