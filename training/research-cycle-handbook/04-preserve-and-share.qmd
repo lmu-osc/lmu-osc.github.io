@@ -1202,93 +1202,36 @@ The LMU Open Science Center is one of the many child organizations of LMU Munich
 
 ## <i class="bi bi-card-checklist"></i> Preserve & Share Checklist {.unnumbered}
 
-**Before Publication:**
-
-<div class="orc-grid-2col">
-
-<div>
-
-- [ ] Data deposited in appropriate repository
-- [ ] Metadata complete and discoverable
-- [ ] Code published with documentation
-- [ ] DOIs obtained for data and code
-</div>
-
-<div>
-
-- [ ] All authors have ORCIDs linked
-- [ ] Licenses applied (CC0/CC BY, MIT/Apache)
-- [ ] Sensitive data removed and verified
-- [ ] Ethics approval for sharing (if required)
-</div>
-
-</div>
-
-**At Submission:**
-
-<div class="orc-grid-2col">
-
-<div>
-
-- [ ] Data Availability Statement with DOIs
-- [ ] Code availability materials linked
-- [ ] Open access option selected
-</div>
-
-<div>
-
-- [ ] ORCID, ROR, funder IDs included
-- [ ] Author contributions (CRediT) specified
-- [ ] Preprint posted (if applicable)
-</div>
-
-</div>
-
-**After Acceptance:**
-
-- [ ] Postprint uploaded to institutional repository
-- [ ] Preprint updated with link to published version
-- [ ] Repository READMEs updated with citation
-- [ ] Co-authors receive final citation and PDF
-
-**Long-term:**
-
-- [ ] Verify DOIs resolve correctly
-- [ ] Respond to data/code access requests
-- [ ] Monitor citations and usage metrics
-
-:::
-
-
-<!--Before Depositing Data
-Essential steps:
-
-Complete anonymization of personal information
-README file with study description and methods
-Data dictionary with variable descriptions
-Appropriate license (CC0 or CC BY recommended)
-Ethics committee approval if required-->
-
-<!--Before publishing code:
-
-Remove API keys, passwords, credentials
-Remove personal or participant data
-Review entire git history
-Add simulated data if needed
-Document dependencies clearly -->
-
-
-
-::: {.orc-gradient-box}
-
-## <i class="bi bi-card-checklist"></i> Preserve & Share Checklist {.unnumbered}
-
 **Before sharing resources**
 
 - [ ] Complete metadata, README (with instructions), and documentation (e.g. data dictionary)
 - [ ] No sensitive information in any files to be shared
+- [ ] Simulated or synthetic data created to run the code instead of real data (if needed)
 - [ ] Data quality validated, code peer-reviewed, materials checked and cleaned
 - [ ] Results reproducible, following reporting guidelines, separated in preregistered vs exploratory
 - [ ] All authors have ORCID
+
+**Upon publishing resources**
+
+- [ ] Add an open licence (e.g. CC.BY 4.0 for data and materials, Apache 2.0 for code)
+- [ ] Fill out the metadata of the repository where the resources are deposited
+- [ ] Link authors's ORCID, and the ROR of their organisation and funders to all resources
+- [ ] Release publically and get a DOI
+- [ ] Modify the metadata of all resources to include the DOIs of other conencted resources
+
+**Upon submitting an article**
+
+- [ ] Include the DOI of all resources in MS (data, code, materials, conceptual figures)
+- [ ] Use CRediT taxinomy to give attribution to all contributors
+- [ ] Deposit a preprint on preprint server or institutional repository (if allowed)
+- [ ] Request an open licence (CC.BY 4.0) for the article if possible to allow redistribution
+
+**After acceptance of an article**
+
+- [ ] Udate the preprint with a postprint (if allowed)
+- [ ] Link the DOI of the published article to the preprint/postprint
+- [ ] Handle data accesss requests if only metadat were shared
+- [ ] Monitor citations and usage metrics of all research otuputs
+
 
 :::
