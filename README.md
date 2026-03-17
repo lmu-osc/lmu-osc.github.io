@@ -1,5 +1,15 @@
 # LMU Open Science Center Website
 
+TL;DR: Run these commands to download the project, and build the first time.
+
+```bash
+git clone git@github.com:lmu-osc/lmu-osc.github.io.git
+R -e "renv::restore()"  
+quarto preview
+```
+
+The `renv:restore()` and `quarto preview` processes will take a bit to run the first time so go brew a ☕.
+
 ## Overview
 
 This repository contains the source for the LMU Open Science Center website.
@@ -26,10 +36,12 @@ The most important top-level directories are:
 - `training/`: training catalog, tutorials, and training-track content
 - `scripts/`: helper scripts used during site maintenance
 - `renv/`: project-local R environment management
-- `_site/`: rendered website output
-- `_freeze/`: Quarto execution cache
+- \*`_site/`: rendered website output
+- \*`_freeze/`: Quarto execution cache
 
 The main entry point for the site is `index.qmd`.
+
+\* These files will appear locally, but do not and should not be on the GitHub repo.
 
 ## Content Organization
 
@@ -61,41 +73,24 @@ To preview the site locally, run:
 quarto preview
 ```
 
-This starts a local preview server so you can inspect changes before committing them.
-
-To render the full site without starting a preview server, run:
-
-```bash
-quarto render
-```
-
-Quarto writes the rendered output to `_site/`.
+This starts a local preview server so you can inspect changes before committing them. Quarto writes the rendered output to `_site/`.
 
 ### Notes on Styling
 
-The Quarto configuration includes a pre-render step that downloads `lmu-osc-custom.scss` from the `lmu-osc/branding-resources` repository using `curl`. In practice, that means an internet connection is helpful when rendering from a clean checkout and that branding-related styling may be refreshed automatically during render. Additional local styles are defined in files such as `styles.css`, `custom-navbar.css`, and section-specific stylesheets.
+\*The Quarto configuration includes a pre-render step that downloads `lmu-osc-custom.scss` from the `lmu-osc/branding-resources` repository using `curl`. In practice, that means an internet connection is helpful when rendering from a clean checkout and that branding-related styling may be refreshed automatically during render. Additional local styles are defined in files such as `styles.css`, `custom-navbar.css`, and section-specific stylesheets.
+
+\* This step has been slated for deprecation in [#536](https://github.com/lmu-osc/lmu-osc.github.io/issues/536)
 
 ## Contribution Guidance
 
-When contributing to the site, edit source files such as `.qmd`, `.yml`, `.css`, and templates rather than manually editing `_site/`, since rendered output should not be treated as the source of truth. Preview the affected pages locally before opening a pull request, and keep section-specific changes inside the relevant folder when possible. If you are working on structured sections such as `people/`, check whether that directory already has its own README or templates before inventing a new pattern.
+When contributing to the site, edit source files such as `.qmd`, `.yml`, `.css`, and templates—not directly in `_site/`, which is rendered output and should not be treated as the source of truth. Changes made directly to `_site/` will not be reflected in the final published website.
 
-## Deployment and Automation
+Preview the affected pages locally using `quarto preview` before opening a pull request, and keep section-specific changes inside the relevant folder when possible. If working on structured sections such as `people/`, check whether that directory already has its own README or templates before inventing a new pattern.
 
-Publishing is handled through GitHub Actions.
 
-On pushes to `main`, the `publish.yml` workflow restores the R environment, sets up Quarto, restores the `_freeze/` cache, renders and publishes the site to GitHub Pages, and then mirrors the published `gh-pages` branch to an LRZ GitLab remote. The repository also includes a link checker, a profile naming checker for files under `people/people/`, and a small set of maintenance reminders and helper workflows under `.github/workflows/`.
+## Deployment
 
-## Working with Generated Files
-
-Two directories are generated as part of the site workflow: `_site/`, which contains the rendered website output, and `_freeze/`, which contains Quarto's cache for executed or frozen content. These directories are useful for inspecting rendered results, but they are not the primary source of truth for site content.
-
-## Useful Starting Points
-
-If you are new to the repository, the best starting points are `_quarto.yml` for global site configuration, `index.qmd` for the home page, `people/README.md` for the people-page data model and templates, and the relevant section folder for the content you want to update.
-
-## Status
-
-This README is intended as a contributor-oriented overview of the repository. It can be expanded over time with more detailed guidance for recurring workflows such as creating new pages, adding events, or updating profile entries.
+On pushes to `main`, the `publish.yml` workflow restores dependencies, renders the site, and publishes to GitHub Pages. The repository also includes automated checks for links, profile naming conventions, and other maintenance tasks.
 
 
 
