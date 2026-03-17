@@ -4,6 +4,7 @@ TL;DR: Run these commands to download the project, and build the first time.
 
 ```bash
 git clone git@github.com:lmu-osc/lmu-osc.github.io.git
+cd lmu-osc.github.io
 R -e "renv::restore()"  
 quarto preview
 ```
