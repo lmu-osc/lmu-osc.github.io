@@ -54,7 +54,7 @@ include-in-header:
       }
 
       /* =============================================
-         shared style componet
+         shared style component
          ============================================= */
          .osc-section {
             padding: 2rem 2rem 0;
@@ -248,8 +248,7 @@ include-in-header:
           transform: translateY(-3px);
         }
         .explore-card h5 {
-            font-size: 1rem;
-            font-weight: 400;
+            font-size: 0.95rem;
         }
         .explore-card p {
             font-size: 0.86rem;
@@ -418,57 +417,56 @@ Publications
 
 ## What We Offer
 
-[What we offer]{.text-uppercase .text-success .small .fw-semibold .mb-2 .section-mark}
-
-
 ::: {.text-muted .mb-4}
 Whether you're a student, early-career researcher, or faculty — there's a place for you in the open science community.
 :::
 
-::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
+::: {.row .row-cols-1 .row-cols-lg-3 .g-4}
 
 ::: {.col}
-
+```{=html}
 <div class="card explore-card h-100 border border-success-subtle rounded-3 shadow-sm">
-<div class="card-body d-flex flex-column p-4">
-<div class="bg-success bg-opacity-10 text-success rounded-3 d-inline-flex text-center align-items-center justify-content-center mb-3" style="width:50px;height:50px;">
-<i class="bi bi-people fs-5"></i>
+  <div class="card-body d-flex flex-column p-4">
+    <div class="bg-success bg-opacity-10 text-success rounded-3 d-inline-flex text-center align-items-center justify-content-center mb-3" style="width:50px;height:50px;">
+      <i class="bi bi-people fs-5"></i>
+    </div>
+    <h5 class="text-black mb-2">Our Community</h5>
+    <p class="text-muted flex-grow-1">Meet the researchers, advocates, and partners shaping open science at LMU and beyond.</p>
+    <a href="people/members.qmd" class="text-decoration-none stretched-link fw-semibold text-success small">
+    Meet the OSC Community →</a>
+  </div>
 </div>
-<h5 class="text-black mb-2">Our Community</h5>
-<p class="text-muted flex-grow-1">Meet the researchers, advocates, and partners shaping open science at LMU and beyond.</p>
-<a href="people/members.qmd" class="text-decoration-none stretched-link fw-semibold text-success small">
-Meet the OSC Community →</a>
-</div>
-</div>
-
+```
 :::
 
 ::: {.col}
+```{=html}
 <div class="card explore-card h-100 border border-success-subtle rounded-3 shadow-sm">
-<div class="card-body d-flex flex-column p-4">
-<div class="bg-success bg-opacity-10 text-success rounded-3 d-inline-flex text-center align-items-center justify-content-center mb-3" style="width:50px;height:50px;">
-<i class="bi bi-journal-bookmark fs-5"></i>
+  <div class="card-body d-flex flex-column p-4">
+    <div class="bg-success bg-opacity-10 text-success rounded-3 d-inline-flex text-center align-items-center justify-content-center mb-3" style="width:50px;height:50px;">
+      <i class="bi bi-journal-bookmark fs-5"></i>
+    </div>
+    <h5 class="text-black mb-2">Training & Workshops</h5>
+    <p class="text-muted flex-grow-1">Build hands-on skills in reproducible research through OSC workshops, summer schools, and tutorials.</p>
+    <a href="training/index.qmd" class="text-decoration-none stretched-link fw-semibold text-success small">Explore Training →</a>
+  </div>
 </div>
-<h5 class="text-black mb-2">Training & Workshops</h5>
-<p class="text-muted flex-grow-1">Build hands-on skills in reproducible research through OSC workshops, summer schools, and tutorials.</p>
-<a href="training/index.qmd" class="text-decoration-none stretched-link fw-semibold text-success small">Explore Training →</a>
-</div>
-</div>
-
+```
 :::
 
 ::: {.col}
+```{=html}
 <div class="card explore-card h-100 border border-success-subtle rounded-3 shadow-sm">
-<div class="card-body d-flex flex-column p-4">
-<div class="bg-success bg-opacity-10 text-success rounded-3 d-inline-flex text-center align-items-center justify-content-center mb-3" style="width:50px;height:50px;">
-<i class="bi bi-globe2 fs-5"></i>
+  <div class="card-body d-flex flex-column p-4">
+    <div class="bg-success bg-opacity-10 text-success rounded-3 d-inline-flex text-center align-items-center justify-content-center mb-3" style="width:50px;height:50px;">
+      <i class="bi bi-globe2 fs-5"></i>
+    </div>
+    <h5 class="text-black mb-2">Partners & Networks</h5>
+    <p class="text-muted flex-grow-1">Discover our institutional collaborators and the international networks we're part of.</p>
+    <a href="partners/institutional_members.qmd" class="text-decoration-none stretched-link fw-semibold text-success small">See OSC Partners →</a>
+  </div>
 </div>
-<h5 class="text-black mb-2">Partners & Networks</h5>
-<p class="text-muted flex-grow-1">Discover our institutional collaborators and the international networks we're part of.</p>
-<a href="partners/institutional_members.qmd" class="text-decoration-none stretched-link fw-semibold text-success small">See OSC Partners →</a>
-</div>
-</div>
-
+```
 :::
 :::
 
