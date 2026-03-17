@@ -887,7 +887,7 @@ For data protection guidance, contact the [LMU Data Protection Officer](https://
 <summary><i class="bi bi-check2-square"></i>
 
 ### Quality Control {#sec-quality-control}
-
+<!-- Reema: not sure tabs are needed here, could be h5 no anchor titles and ::: {.ms-1} block for lists, this is all done through the same tutorial, it seems there are several concepts that are the same just phrased differently, could be merged coherently to avoid redundancy and consolidate the structure and order of these concepts-->
 </summary>
 
 Quality control catches problems before they propagate into your analysis. The practices here ensure your data is trustworthy and your exclusions are defensible.
@@ -954,7 +954,7 @@ Exclusion criteria specify which data points will be removed from analysis and w
 
 <br>
 
-- **Review common exclusion criteria:** technical failures (equipment malfunction, incomplete recording), protocol violations (wrong procedure followed, participant did not comply), quality thresholds (too much missing data, failed attention checks), and participant criteria (did not meet stated inclusion criteria).
+- **Review common exclusion criteria.** Technical failures (equipment malfunction, incomplete recording), protocol violations (wrong procedure followed, participant did not comply), quality thresholds (too much missing data, failed attention checks), and participant criteria (did not meet stated inclusion criteria).
 
 - **Document everything.** Record criteria before analysis begins. Report how many data points were excluded for each criterion in a log with the date and reviewer's identity. Plan sensitivity analyses comparing results with and without exclusions to show your findings are robust.
 
