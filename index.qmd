@@ -13,15 +13,15 @@ format:
       margin-width: 200px
       gutter-width: 2em
 title-block-banner: "assets/img/osc_image_assets/Banner1.jpg"
-listing:
-  - id: news-carousel
-    template: news/news.ejs
-    contents: news/news
-    sort: "date desc"
-  - id: events-carousel
-    template: events/events.ejs
-    contents: events/events/*.qmd
-    sort: "date desc"
+# listing:
+#   - id: news-carousel
+#     template: news/news.ejs
+#     contents: news/news
+#     sort: "date desc"
+#   - id: events-carousel
+#     template: events/events.ejs
+#     contents: events/events/*.qmd
+#     sort: "date desc"
 include-after-body:
   - text: |
       <script src="/assets/javascript/remove_title.js" defer></script>
@@ -482,20 +482,52 @@ Meet the OSC Community →</a>
 ::: {.osc-section}
 ::: {.container}
 
+
+## Stay In the Loop
+
 [Stay in the loop]{.text-uppercase .section-mark .small .fw-semibold .mb-2}
 
-## Latest highlights {.mb-3 .section-title .text-muted}
 
 ::: {.row}
 
 ::: {.col-md-6}
-::: {#news-carousel}
-:::
+```{=html}
+<div class="card h-100">
+  <div class="card-header">
+    News
+  </div>
+  <div class="card-body">
+    <!-- news carousel goes here -->
+    <h5 class="card-title">Card title</h5>
+    <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+    <a href="#" class="btn btn-primary">Read More</a>
+  </div>
+  <div class="card-footer text-center">
+    <a href="news/index.qmd" class="btn btn-success btn-sm w-50">All News →</a>
+  </div>
+</div>
+```
 :::
 
 ::: {.col-md-6}
-::: {#events-carousel}
-:::
+```{=html}
+<div class="card h-100">
+  <div class="card-header">
+    Events
+  </div>
+  <div class="card-body">
+    <!-- events carousel goes here -->
+    <h5 class="card-title">Card title</h5>
+    <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+    <a href="#" class="btn btn-primary">See Event</a>
+  </div>
+  <div class="card-footer text-center">
+    <a href="events/index.qmd" class="btn btn-success btn-sm w-50">All Events →</a>
+  </div>
+</div>
+```
 :::
 
 :::
