@@ -9,7 +9,7 @@ R -e "renv::restore()"
 quarto preview
 ```
 
-The `renv:restore()` and `quarto preview` processes will take a bit to run the first time so go brew a ☕.
+The `renv:restore()` and `quarto preview` processes might take a bit to run the first time so go brew a ☕.
 
 ## Overview
 
