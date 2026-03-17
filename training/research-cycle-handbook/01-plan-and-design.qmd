@@ -612,7 +612,7 @@ A **Data Management Plan (DMP)** documents how you will handle research data thr
 
 ::: {.ms-1} 
 - **Decide _before_ data collection whether you will eventually share your data publicly (and where)**, in order to (i) get ethics approval on the right plan, (ii) design consent form for participants, (iii) collect appropriate metadata for the target repository, ect.
-- **Start with what you know, and refine the details as your project develops.** Your DMP is a living document that you will refine to match the reality of your project while ensuring data protection and streamline collaborations (see [2.2. Data Management](02-collect-and-manage.qmd#sec-data-management){.mark}, [3.1. Data Processing & Analysis](03-analyze-and-collaborate.qmd#sec-data-processing-analysis){.mark}, and [4.1. Data Sharing](04-preserve-and-share.qmd#sec-data-sharing){.mark}).
+- **Start with what you know, and refine the details as your project develops.** Your DMP is a living document that you will refine to match the reality of your project while ensuring data protection and streamline collaborations (see [2.2. Data Management](02-collect-and-manage.qmd#sec-data-management){.mark}, [3.1. Data Processing & Analysis](03-analyze-and-collaborate.qmd#sec-data-processing-analysis){.mark}, and [4.1. FAIR Data Sharing](04-preserve-and-share.qmd#sec-fair-data-sharing){.mark}).
 :::
 
 ##### <i class="bi bi-list-check"></i> Your DMP will ask:
@@ -622,7 +622,7 @@ A **Data Management Plan (DMP)** documents how you will handle research data thr
 - **How will you organize files** (naming conventions, folder structure, versioning)?
 - **Where will you store it** (locations, backups, access controls)?
 - **How will you ensure quality** (validation checks, error-handling)?
-- **How will you share outputs** (repositories, licenses, embargo periods)? See our lecture "[Why share data openly?](https://lmu-osc.github.io/training/data-management/open-data.html)" and [4.1. Data Sharing](04-preserve-and-share.qmd#sec-data-sharing){.mark}
+- **How will you share outputs** (repositories, licenses, embargo periods)? See our lecture "[Why share data openly?](https://lmu-osc.github.io/training/data-management/open-data.html)" and [4.1. FAIR Data Sharing](04-preserve-and-share.qmd#sec-fair-data-sharing){.mark}
 - **What constraints apply** (consent, anonymization, GDPR, data use agreements)? See our lecture "[Maintaining privacy with open data](https://lmu-osc.github.io/training/data-management/maintaining-privacy-with-open-data.html)", [1.2.3. Ethics](#sec-legal-requirements){.mark} and [2.3. Ethics & Privacy](02-collect-and-manage.qmd#sec-ethics-and-privacy){.mark}.
 
 <br>

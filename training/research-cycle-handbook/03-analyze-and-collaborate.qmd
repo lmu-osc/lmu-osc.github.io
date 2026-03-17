@@ -439,7 +439,7 @@ Before publishing your project (see [4. Preserve & share](04-preserve-and-share.
 
 #### 3.1.4. Documentation
 
-As with all documentation, your project repository’s documentation should be written early - initially for your near-future self to support efficient re-engagement after interruptions, then revised for internal team review, and ultimately expanded and refined for public sharing (see [4.2. Code Publishing](04-preserve-and-share.qmd#sec-code-publishing){.mark}).  
+As with all documentation, your project repository’s documentation should be written early - initially for your near-future self to support efficient re-engagement after interruptions, then revised for internal team review, and ultimately expanded and refined for public sharing (see [4.2. Open Source Code](04-preserve-and-share.qmd#sec-open-source-code){.mark}).  
 
 <br>
 
@@ -559,7 +559,7 @@ For users of R, Python, and Julia, **Quarto** has become the standard tool for c
 
 - **Create an analyses report with Quarto.** To make your results reproducible, you should provide the analysis code that creates the results of the manuscript with explanations for each of the steps. Quarto is an ideal tool for such purpose (see [Quarto tutorial](https://lmu-osc.github.io/introduction-to-Quarto/)). Your analysis report should contain your research question, data loading instructions, preprocessing steps, statistical procedures, tables and figures, session info and software versions (in the report itself or in your README).
 
-This will facilitate your own revisions, code-review by your team, **reproducibility checks** that some journals conduct as part of peer-review, and verification of results reproducibility by other researchers. The code repository can be published with simulated, synthetic, or real data, depending on the project, together with the respective article (see [4.2. Code Publishing](04-preserve-and-share.qmd#sec-code-publishing){.mark}).
+This will facilitate your own revisions, code-review by your team, **reproducibility checks** that some journals conduct as part of peer-review, and verification of results reproducibility by other researchers. The code repository can be published with simulated, synthetic, or real data, depending on the project, together with the respective article (see [4.2. Open Source Code](04-preserve-and-share.qmd#sec-open-source-code){.mark}).
 
 <br>
 

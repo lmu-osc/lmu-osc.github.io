@@ -34,7 +34,7 @@ include-in-header:
 <details class="orc-details-panel">
 <summary markdown="1"><i class="bi bi-database-up"></i> 
 
-### Data Sharing {#sec-data-sharing}
+### FAIR Data Sharing {#sec-fair-data-sharing}
 
 </summary>
 
@@ -438,7 +438,7 @@ _in construction_<!-- Reema? -->
 <details class="orc-details-panel">
 <summary><i class="bi bi-file-code"></i> 
 
-### Code Publishing {#sec-code-publishing}
+### Open Source Code {#sec-open-source-code}
 
 </summary>
 
@@ -646,7 +646,7 @@ Learn more about open licenses for data and code in our [code publishing tutoria
 
 #### 4.2.4. Archiving & DOIs
 
-To publish you code on Zenodo, we recommend to<!-- these instructions contradict https://lmu-osc.github.io/code-publishing/archive.html -->
+To publish you code on Zenodo, we recommend to<!-- these instructions contradict https://lmu-osc.github.io/code-publishing/archive.html but see https://github.com/lmu-osc/code-publishing/issues/86 -->
 
 - **Push your clean repository to GitHub** (see GitHub tutorial).
 - **Create an account on [Zenodo](https://zenodo.org/).**
@@ -716,7 +716,7 @@ To publish you code on Zenodo, we recommend to<!-- these instructions contradict
 <details class="orc-details-panel">
 <summary><i class="bi bi-journal-arrow-up"></i> 
 
-### Materials Sharing {#sec-materials-sharing}
+### Open Materials {#sec-open-materials}
 
 </summary>
 
@@ -1276,3 +1276,19 @@ Remove personal or participant data
 Review entire git history
 Add simulated data if needed
 Document dependencies clearly -->
+
+
+
+::: {.orc-gradient-box}
+
+## <i class="bi bi-card-checklist"></i> Preserve & Share Checklist {.unnumbered}
+
+**Before sharing resources**
+
+- [ ] Complete metadata, README (with instructions), and documentation (e.g. data dictionary)
+- [ ] No sensitive information in any files to be shared
+- [ ] Data quality validated, code peer-reviewed, materials checked and cleaned
+- [ ] Results reproducible, following reporting guidelines, separated in preregistered vs exploratory
+- [ ] All authors have ORCID
+
+:::
