@@ -927,13 +927,13 @@ To increase the accessibility and impact of your article we recommend you to:
 - **Get a DOI for each public version of your manuscript.** When updating your preprint through the revision cycle, get a citable DOI (as provided by the repository).
 
 - **Maintain as much rights to your own work as possible**.
-     - Prior to submitting your mansucript, deposit your manuscript's conceptual figures on a repository (e.g. [Zenodo](https://zenodo.org/), [OSF](https://osf.io/)), under an open license (e.g. [CC.BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.en) allowing reuse and modification while requiring authors to get credited), and get a DOI for it to cite your own figure in your manuscript. This way, you (and possibly other researchers), can reuse them in future manuscripts without asking permission from the publisher, by indicating the DOI and license in the figure legend.
+     - Prior to submitting your manuscript, deposit your manuscript's conceptual figures on a repository (e.g. [Zenodo](https://zenodo.org/), [OSF](https://osf.io/)), under an open license (e.g. [CC.BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.en) allowing reuse and modification while requiring authors to get credited), and get a DOI for it to cite your own figure in your manuscript. This way, you (and possibly other researchers), can reuse them in future manuscripts without asking permission from the publisher, by indicating the DOI and license in the figure legend.
      - When given the choice, request your publisher to publish your manuscript under a CC.BY 4.0  license, so your right to distribution is included. It is possible that your publisher will request a CC.BY. NC (Non-Commercial) license which means you cannot deposit it on commercial platforms, but you would typically still be allowed to deposit it on preprint servers or institutional repositories (see [Jisc' Open Policy Finder](https://openpolicyfinder.jisc.ac.uk/) for the policy of your specific journal)
 
 
 In practice, we recommend to follow the process of version releases illustrated in the figure<!-- fix me where-->, starting with a manuscript draft, should you wish to obtain feedback from your community, or preprinting the submitted version, should you want to e.g. accelerate dissemination of findings that are unlikely to change during revision, or postprinting the accepted version to have a free peer-reviewed version available to anyone. 
 
-<!-- include figure in a left column (by the way I like the classic look but dont know here to add that information), and the paragraph above in a right column?-->
+<!-- include figure in a left column (by the way I like the classic look but don't know here to add that information), and the paragraph above in a right column?-->
 ```{mermaid}
 ---
 config:
@@ -1199,8 +1199,11 @@ The LMU Open Science Center is one of the many child organizations of LMU Munich
 
 
 ::: {.orc-gradient-box}
+<!-- RL hasn't customized this one yet -->
 
 ## <i class="bi bi-card-checklist"></i> Preserve & Share Checklist {.unnumbered}
+
+Not all items are relevant for all fields of research or study types.
 
 **Before sharing resources**
 
@@ -1209,29 +1212,35 @@ The LMU Open Science Center is one of the many child organizations of LMU Munich
 - [ ] Simulated or synthetic data created to run the code instead of real data (if needed)
 - [ ] Data quality validated, code peer-reviewed, materials checked and cleaned
 - [ ] Results reproducible, following reporting guidelines, separated in preregistered vs exploratory
-- [ ] All authors have ORCID
+- [ ] All authors have an ORCID
 
 **Upon publishing resources**
 
-- [ ] Add an open licence (e.g. CC.BY 4.0 for data and materials, Apache 2.0 for code)
+- [ ] Add an open license (e.g. CC.BY 4.0 for data and materials, Apache 2.0 for code)
 - [ ] Fill out the metadata of the repository where the resources are deposited
-- [ ] Link authors's ORCID, and the ROR of their organisation and funders to all resources
-- [ ] Release publically and get a DOI
-- [ ] Modify the metadata of all resources to include the DOIs of other conencted resources
+- [ ] Link authors' ORCID, and the ROR of their organizations and funders to all resources
+- [ ] Release publicly and get a DOI
+- [ ] Modify the metadata of all resources to include the DOIs of other connected resources
 
 **Upon submitting an article**
 
-- [ ] Include the DOI of all resources in MS (data, code, materials, conceptual figures)
-- [ ] Use CRediT taxinomy to give attribution to all contributors
-- [ ] Deposit a preprint on preprint server or institutional repository (if allowed)
+- [ ] Include the DOI of all resources (data, code, materials, conceptual figures) in the manuscript 
+- [ ] Use CRediT taxonomy to give attribution to all contributors
+- [ ] Deposit a preprint (if allowed) on preprint server or institutional repository 
 - [ ] Request an open licence (CC.BY 4.0) for the article if possible to allow redistribution
 
 **After acceptance of an article**
 
-- [ ] Udate the preprint with a postprint (if allowed)
+- [ ] Update the preprint with a postprint (if allowed)
 - [ ] Link the DOI of the published article to the preprint/postprint
-- [ ] Handle data accesss requests if only metadat were shared
+- [ ] Handle data access requests if only metadata were shared
 - [ ] Monitor citations and usage metrics of all research otuputs
 
+::: {.d-flex .justify-content-center .mt-4 .orc-checklist-download .phase-1} 
+<!-- RL hasn't created button for checklist 4 yet -->
+
+<a href="assets/checklists/04-Preserve-Share-Checklist.docx" class="btn btn-outline-secondary btn-sm">Download checklist <i class="bi bi-download"></i></a>
+<!-- need to update manually the  downloadable file with checklist in word doc-->
+:::
 
 :::
