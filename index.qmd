@@ -81,6 +81,10 @@ include-in-header:
       /* =============================================
          mission
          ============================================= */
+          h3 {
+            border-bottom: 1px solid #dee2e6;
+            padding-bottom: .5rem;
+          }
           .mission-checklist {
             list-style: none;
           }
