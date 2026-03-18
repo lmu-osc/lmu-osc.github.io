@@ -273,11 +273,6 @@ include-in-header:
       /* =============================================
          explore cards
          ============================================= */
-
-         .explore-section .desc{
-          max-width: 55ch;
-         }
-
         .explore-card {
           position: relative;
           transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
@@ -361,7 +356,7 @@ include-in-header:
         .carousel-card .card-header {
           font-size: 0.8rem;
           letter-spacing: 0.1em;
-          color:#00883A;
+          color: #00883A;
           border-bottom:none;
         }
         .carousel-card .btn.btn-link {
