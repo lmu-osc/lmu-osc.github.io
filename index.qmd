@@ -56,6 +56,9 @@ include-in-header:
       /* =============================================
          shared style component
          ============================================= */
+         .card {
+            background-color: #fcfcfc !important;
+         }
          .osc-section {
             padding: 2rem 2rem 0;
           }
