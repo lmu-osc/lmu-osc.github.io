@@ -258,6 +258,36 @@ include-in-header:
             font-size: 0.86rem;
             line-height: 1.65;
         }
+
+      /* =============================================
+         news carousel
+         ============================================= */
+        #newsCardCarousel {
+          padding-bottom: 3rem;
+        }
+
+        #newsCardCarousel .carousel-control-prev-icon,
+        #newsCardCarousel .carousel-control-next-icon {
+          filter: brightness(0) saturate(100%);
+        }
+
+        #newsCardCarousel .carousel-indicators {
+          margin-bottom: 0;
+        }
+
+        #newsCardCarousel .carousel-indicators [data-bs-target] {
+          background-color: #000;
+          opacity: 0.4;
+        }
+
+        #newsCardCarousel .carousel-indicators .active {
+          opacity: 1;
+        }
+        #newsCardCarousel .carousel-control-next,
+        #newsCardCarousel .carousel-control-prev {
+          top: 80%;
+          height: 30%;
+        }
       </style>
       <link href="/assets/bootstrap-5.3.8-dist/css/bootstrap.min.css" rel="stylesheet">
 css: /custom-navbar.css
@@ -499,11 +529,34 @@ Whether you're a student, early-career researcher, or faculty — there's a plac
     News
   </div>
   <div class="card-body">
-    <!-- news carousel goes here -->
-    <h5 class="card-title">Card title</h5>
-    <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-    <a href="#" class="btn btn-primary">Read More</a>
+    <div id="newsCardCarousel" class="carousel slide" data-bs-ride="false">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#newsCardCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#newsCardCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <h5 class="card-title">Card title</h5>
+          <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-primary">Read More</a>
+        </div>
+        <div class="carousel-item">
+          <h5 class="card-title">Second news item</h5>
+          <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+          <p class="card-text">Another example entry to demonstrate basic carousel behavior inside the card body.</p>
+          <a href="#" class="btn btn-primary">Read More</a>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#newsCardCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#newsCardCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
   </div>
   <div class="card-footer text-center">
     <a href="news/index.qmd" class="btn btn-success btn-sm w-50">All News →</a>
