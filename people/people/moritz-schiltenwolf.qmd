@@ -1,0 +1,31 @@
+---
+title: Moritz Schiltenwolf
+academic_title: Dr.
+name: Moritz Schiltenwolf
+surname: Schiltenwolf
+first_name: Moritz
+categories:
+  - Psychology & Education
+memberships:
+  - type: lmu-individual
+    status: active
+    position: Researcher and Program Coordinator
+    faculty: Psychology & Education
+email: m.schiltenwolf@lmu.de
+photo: 'images/schiltenwolf_moritz.png'
+links:
+  - label: 'LMU Profile'
+    url: https://www.lmu.de/psyedu/de/personen/kontaktseite/moritz-schiltenwolf-393becd9.html
+  - label: 'Personal Website'
+    url: https://schiwo.github.io/
+social_media:
+  ORCID: 'https://orcid.org/0000-0002-6539-5512'
+mission_statement: |
+  I work in the META-REP priority program and strongly believe that honest and transparent research is the only way to make real progress in science. I am especially interested in how good infrastructure and accessible work pipelines can help researchers apply Open Science principles in their daily work. For me, improving these practical and structural aspects is one of the most important areas for moving Open Science forward.
+
+
+template: templates/people-template.html
+filters: 
+    - templates/people_filter.lua
+---
+

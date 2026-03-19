@@ -1,15 +1,10 @@
 ---
-format: 
-    html:
-        table-of-contents: false
-        css: event-page-styles.css
-page-layout: full
+date: "MONTH DAY, YYYY"         # e.g. "September 24, 2026"
 categories: ['Discussion', 'Hacky Hour', 'ReproducibiliTea Journal Club', 'Workshop', 'Lecture', 'Symposium', 'Conference', 'Summer School', 'Panel Discussion Series', 'Application call']
 
 # Event Information
 event:
-  title: "TITLE"
-  date: "MONTH DAY, YYYY"         # e.g. "September 24, 2026"
+  start_date: "MONTH DAY, YYYY"         # e.g. "September 24, 2026"
   end_date: "MONTH DAY, YYYY"     # e.g. "September 24, 2026", non-mandatory field
   time: "START-END CET"           # e.g. "14:00 - 17:00 CET"
   location:
@@ -56,26 +51,16 @@ contact:
 organizers:
   - name: "ORGANIZER 1 NAME"
   - name: "ORGANIZER 2 NAME"
+template: templates/event-template.html
+filters:
+    - templates/process-event-yaml.lua
 ---
 
-<!-- MANDAORY SECTION START  -->
-
-<h1 class="fs-1 text-primary"> {{< meta event.title >}} </h1>
-
-{{< include templates/_setup.qmd >}}
-{{< include templates/_info_boxes.qmd >}}
-{{< include templates/_register_button.qmd >}}
-<!-- MANDAORY SECTION END  -->
 
 
-
-<!-- DETAILED EVENT DESCRIPTION HERE OR USE THE TEMPLATE BELOW TO INCLUDE THE STANDARD DESCRIPTION SECTION -->
-<!-- {{< include templates/_event_description.qmd >}} -->
+ 
 
 
 
 
-<!-- MANDAORY SECTION START  -->
-<!-- _event_description.qmd template should always be at bottom -->
-{{< include templates/_instructors_helpers_contact.qmd >}}
-<!-- MANDAORY SECTION END  -->
+ 

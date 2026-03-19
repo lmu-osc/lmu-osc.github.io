@@ -1,0 +1,29 @@
+---
+title: Barbara Osimani
+academic_title: Prof. Dr.
+name: Barbara Osimani
+surname: Osimani
+first_name: Barbara
+categories:
+  - Affiliate
+memberships:
+  - type: affiliate
+    status: alumni
+    role: Director of Institute
+    organization: Polytechnic University of the Marche
+email: B.Osimani@lmu.de
+photo: 'images/osimani_barbara.jpg'
+links:
+  - label: 'Personal Website'
+    url: https://univpm.academia.edu/barbaraosimani
+social_media:
+  ORCID: 'https://orcid.org/0000-0001-5212-9525'
+mission_statement: |
+  I am an assistant professor at the Munich Center for Mathematical Philosophy.
+
+
+template: templates/people-template.html
+filters: 
+    - templates/people_filter.lua
+---
+

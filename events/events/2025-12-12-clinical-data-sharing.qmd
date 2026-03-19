@@ -1,0 +1,42 @@
+---
+title: 'OSIM Meetup: Clinical Data Sharing'
+categories: OSIM Meetup
+event:
+  description: Discussion on clinical data sharing practices and approaches
+  start_date: 12 Dec, 2025
+  time: 14:00 CET
+  format:
+    type: Hybrid
+    details: In-person & Online
+  language:
+    primary: English
+    primary-code: en
+instructors: []
+presenters:
+- name: Prof. Dr. Ulrich Mansmann
+  affiliation: Institute for Medical Information Processing, Biometry, and Epidemiology,
+    LMU Munich
+contact:
+  name: OSC team
+  email: osc@lmu.de
+organizers:
+- name: Julian Lange
+- name: PD Dr. Luisa Jiménez-Soto
+host:
+- name: Open Science Initiative in Medicine
+template: templates/event-template.html
+filters:
+    - templates/process-event-yaml.lua
+links:
+  materials: https://osf.io/kyvut/files/7afyn
+---
+
+## Event Details
+
+**Speaker:** Prof. Dr. Ulrich Mansmann (Institute for Medical Information Processing, Biometry, and Epidemiology, LMU Munich)
+
+**Date & Time:** 12 December 2025, 14:00 CET
+
+### Materials
+
+- [Slides](osim_datasharing_2025_12_12.pdf)

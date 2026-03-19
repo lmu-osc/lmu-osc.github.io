@@ -1,0 +1,23 @@
+---
+title: Wolfgang Strube
+academic_title: Dr.
+name: Wolfgang Strube
+surname: Strube
+first_name: Wolfgang
+memberships:
+  - type: lmu-individual
+    status: alumni
+    position: BKH Augsburg
+email: 
+photo: 'images/strube_wolfgang.jpg'
+links:
+  - label: 'Professional Profile'
+    url: https://www.researchgate.net/profile/Wolfgang_Strube
+social_media:
+  ORCID: 'https://orcid.org/0000-0003-2380-7651'
+
+template: templates/people-template.html
+filters: 
+    - templates/people_filter.lua
+---
+

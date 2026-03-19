@@ -1,0 +1,27 @@
+---
+title: Thomas Ehring
+academic_title: Prof. Dr.
+name: Thomas Ehring
+surname: Ehring
+first_name: Thomas
+categories:
+  - Psychology & Education
+memberships:
+  - type: lmu-individual
+    status: active
+    position: Chair
+    faculty: Psychology & Education
+email: Sekretariat.Ehring@psy.lmu.de
+photo: 'images/ehring_thomas.png'
+links:
+  - label: 'LMU Profile'
+    url: https://www.lmu.de/psy/de/personen/kontaktseite/thomas-ehring-c0f08419.html
+social_media:
+  ORCID: 'https://orcid.org/0000-0001-9502-6868'
+mission_statement:
+
+template: templates/people-template.html
+filters: 
+    - templates/people_filter.lua
+---
+

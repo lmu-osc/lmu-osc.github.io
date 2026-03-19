@@ -1,6 +1,5 @@
 ---
 title: "LMU Open Science Center"
-page-navigation: false
 toc: false
 repo-actions: false
 format:
@@ -98,6 +97,7 @@ include-in-header:
         );
         pointer-events: none;
       }
+<<<<<<< 324-create-initial-home-page
 
       /* =============================================
          shared style component
@@ -480,6 +480,9 @@ include-in-header:
         </style>
       <link href="/assets/bootstrap-5.3.8-dist/css/bootstrap.min.css" rel="stylesheet">
 css: /custom-navbar.css
+=======
+      </style>
+>>>>>>> main
 ---
 
 

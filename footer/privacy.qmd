@@ -20,29 +20,13 @@ format:
 #quarto-content.page-columns main.column-page{
     margin:0 auto;
     max-width: 1200px;
-    padding: 2rem;
+    padding: 5rem;
     width:100%;
     background-color: #f9fcf9;
-}
-
-
-.privacy-container {
-    padding: 3rem 4rem;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin-bottom: 1rem;
     min-height: 800px;
-    box-shadow: 0 3px 6px #bfc7cf6c;
-    background-color:var(--osc-white);
 }
 
-.privacy-title h3{
-    font-size: 2.3rem;
-    font-weight: 900;
-    line-height: 1.5;
-    color:var(--primary-color);
-}
+
 
 .privacy-container p{
     text-align: justify;
@@ -61,9 +45,6 @@ format:
 
 :::{.privacy-container}
 
-:::{.privacy-title}
-### Privacy Policy
-:::
 
 General data protection policy for the internet pages of Ludwig-Maximilians-Universität München (hereinafter “LMU”)
 

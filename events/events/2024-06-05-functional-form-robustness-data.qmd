@@ -1,0 +1,59 @@
+---
+title: 'Multiverse Analysis: On the Robustness of Functional Form and Data Pre-Processing
+  Decisions'
+categories: Lecture
+event:
+  description: ''
+  start_date: '2024-06-05'
+  end_date: ''
+  time: ''
+  location:
+    name: Hybrid (LMU Department of Sociology, IfS 309, Munich and via Zoom)
+    address: ''
+    map_url: ''
+  format:
+    type: In-Person
+    detail: ''
+  language:
+    primary: English
+    primary-code: en
+    detail: ''
+links:
+  registration: ''
+  materials: ''
+  workshop_website: ''
+event_description: ''
+instructors:
+  - name: Prof. Cristobal Young (Ph.D. Cornell University)
+    url: ''
+helpers:
+  - name: ''
+contact:
+  name: Katrin Auspurg
+  email: katrin.auspurg@lmu.de
+organizers:
+  - name: Prof. Dr. Katrin Auspurg
+    url: ''
+host:
+  - name: LMU Open Science Center
+    url: ''
+presenters:
+  - name: Prof. Cristobal Young
+    url: ''
+
+template: templates/event-template.html
+filters:
+    - templates/process-event-yaml.lua
+---
+
+<br>
+
+<p>Functional form assumptions are central ingredients of a model specification.</p>
+
+<p>Just as there are many possible control variables, there is also an abundance of estimation commands and strategies one could invoke, including ordinary least squares (OLS), logit, matching, and many more. How much do empirical results depend on the choice of functional form? In this talk we demonstrate the functional form multiverse with two empirical applications: how job loss affects wellbeing in panel data and the effect of education on voting for Trump. We find in our cases that OLS and logit produce very similar results, but that matching estimators can be surprisingly unstable. We also reconsider a key many-analysts study and find that human researchers produce a much wider range of results than does the multiverse algorithm.</p>
+
+
+
+
+
+ 

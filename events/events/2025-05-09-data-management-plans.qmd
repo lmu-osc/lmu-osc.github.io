@@ -1,0 +1,43 @@
+---
+title: 'OSIM Meetup: Data Management Plans'
+categories: OSIM Meetup
+
+event:
+  description: "Discussion on data management plans and best practices"
+  start_date: "09 May, 2025"
+  time: "14:00 CET"
+  format:
+    type: "Hybrid"
+    details: "In-person & Online"
+  language:
+    primary: "English"
+    primary-code: "en"
+
+instructors: []
+
+presenters:
+  - name: "Luisa Jiménez-Soto"
+    affiliation: "Walther Straub Institute of Pharmacology and Toxicology, LMU Munich"
+
+contact: 
+    name: "OSC team"
+    email: "osc@lmu.de"
+
+organizers:
+  - name: "Julian Lange"
+  - name: "Luisa Jiménez-Soto"
+
+host:
+  - name: Open Science Initiative in Medicine
+  
+template: templates/event-template.html
+filters:
+    - templates/process-event-yaml.lua
+---
+
+
+## Event Details
+
+**Speaker:** Luisa Jiménez-Soto (Walther Straub Institute of Pharmacology and Toxicology, LMU Munich)
+
+**Date & Time:** 09 May 2025, 14:00 CET

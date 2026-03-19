@@ -1,0 +1,29 @@
+---
+title: Christian Woll
+academic_title: Dr.
+name: Christian Woll
+surname: Woll
+first_name: Christian
+categories:
+  - Psychology & Education
+memberships:
+  - type: lmu-individual
+    status: alumni
+    position: Researcher
+    faculty: Psychology & Education
+email: christian.woll@psy.lmu.de
+photo: 'images/woll_christian.jpg'
+links:
+  - label: 'LMU Profile'
+    url: https://www.lmu.de/psy/de/personen/kontaktseite/christian-woll-1907bf2e.html
+social_media:
+  ORCID: 'https://orcid.org/0000-0002-0352-4796'
+mission_statement: |
+  In clinical psychology, Open Science, reproducibility, and replicability may still be improved. Especially sensitive clinical data requires additional steps to guarantee anonymization. I make reproducible analysis code and data available for every publication, see the "<a href="https://www.researchtransparency.org/signatories/">Commitment to Research Transparency and Open Science</a>".
+
+
+template: templates/people-template.html
+filters: 
+    - templates/people_filter.lua
+---
+
