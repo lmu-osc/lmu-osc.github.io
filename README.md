@@ -76,12 +76,6 @@ quarto preview
 
 This starts a local preview server so you can inspect changes before committing them. Quarto writes the rendered output to `_site/`.
 
-### Notes on Styling
-
-\*The Quarto configuration includes a pre-render step that downloads `lmu-osc-custom.scss` from the `lmu-osc/branding-resources` repository using `curl`. In practice, that means an internet connection is helpful when rendering from a clean checkout and that branding-related styling may be refreshed automatically during render. Additional local styles are defined in files such as `styles.css`, `custom-navbar.css`, and section-specific stylesheets.
-
-\* This step has been slated for deprecation in [#536](https://github.com/lmu-osc/lmu-osc.github.io/issues/536)
-
 ## Contribution Guidance
 
 When contributing to the site, edit source files such as `.qmd`, `.yml`, `.css`, and templates—not directly in `_site/`, which is rendered output and should not be treated as the source of truth. Changes made directly to `_site/` will not be reflected in the final published website.
