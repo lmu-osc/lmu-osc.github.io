@@ -45,14 +45,24 @@ include-after-body:
 
         function runEqualization() {
           window.requestAnimationFrame(function () {
-            equalizeTextBySelector(
-              '#newsCardCarousel .carousel-item .card-title, #eventsCardCarousel .carousel-item .card-title',
-              document
-            );
-            equalizeTextBySelector(
-              '#newsCardCarousel .carousel-item .card-text, #eventsCardCarousel .carousel-item .card-text',
-              document
-            );
+            var isSideBySide = window.matchMedia('(min-width: 768px)').matches;
+
+            if (isSideBySide) {
+              equalizeTextBySelector(
+                '#newsCardCarousel .carousel-item .card-title, #eventsCardCarousel .carousel-item .card-title',
+                document
+              );
+              equalizeTextBySelector(
+                '#newsCardCarousel .carousel-item .card-text, #eventsCardCarousel .carousel-item .card-text',
+                document
+              );
+              return;
+            }
+
+            equalizeTextBySelector('#newsCardCarousel .carousel-item .card-title', document);
+            equalizeTextBySelector('#eventsCardCarousel .carousel-item .card-title', document);
+            equalizeTextBySelector('#newsCardCarousel .carousel-item .card-text', document);
+            equalizeTextBySelector('#eventsCardCarousel .carousel-item .card-text', document);
           });
         }
 
