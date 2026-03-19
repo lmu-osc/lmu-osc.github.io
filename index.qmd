@@ -350,6 +350,7 @@ include-in-header:
          ============================================= */
         #newsCardCarousel {
           padding-bottom: 3rem;
+          --news-max-title-lines: 2;
           --news-max-body-lines: 3;
         }
 
@@ -362,6 +363,13 @@ include-in-header:
           display: -webkit-box;
           -webkit-box-orient: vertical;
           -webkit-line-clamp: var(--news-max-body-lines);
+          overflow: hidden;
+        }
+
+        #newsCardCarousel .carousel-item .card-title {
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: var(--news-max-title-lines);
           overflow: hidden;
         }
 
