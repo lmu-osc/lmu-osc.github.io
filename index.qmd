@@ -25,6 +25,52 @@ title-block-banner: "assets/img/osc_image_assets/Banner1.jpg"
 include-after-body:
   - text: |
       <script src="/assets/javascript/remove_title.js" defer></script>
+  - text: |
+      <script>
+      (function () {
+        function equalizeTextBySelector(selector, scopeRoot) {
+          var elements = Array.prototype.slice.call(scopeRoot.querySelectorAll(selector));
+          if (!elements.length) return;
+
+          elements.forEach(function (el) { el.style.minHeight = ''; });
+
+          var maxHeight = 0;
+          elements.forEach(function (el) {
+            maxHeight = Math.max(maxHeight, el.getBoundingClientRect().height);
+          });
+
+          var heightPx = Math.ceil(maxHeight) + 'px';
+          elements.forEach(function (el) { el.style.minHeight = heightPx; });
+        }
+
+        function runEqualization() {
+          window.requestAnimationFrame(function () {
+            var isSideBySide = window.matchMedia('(min-width: 768px)').matches;
+
+            if (isSideBySide) {
+              equalizeTextBySelector(
+                '#newsCardCarousel .carousel-item .card-title, #eventsCardCarousel .carousel-item .card-title',
+                document
+              );
+              equalizeTextBySelector(
+                '#newsCardCarousel .carousel-item .card-text, #eventsCardCarousel .carousel-item .card-text',
+                document
+              );
+              return;
+            }
+
+            equalizeTextBySelector('#newsCardCarousel .carousel-item .card-title', document);
+            equalizeTextBySelector('#eventsCardCarousel .carousel-item .card-title', document);
+            equalizeTextBySelector('#newsCardCarousel .carousel-item .card-text', document);
+            equalizeTextBySelector('#eventsCardCarousel .carousel-item .card-text', document);
+          });
+        }
+
+        document.addEventListener('DOMContentLoaded', runEqualization);
+        window.addEventListener('load', runEqualization);
+        window.addEventListener('resize', runEqualization);
+      })();
+      </script>
 include-in-header:
   - text: |
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -54,33 +100,94 @@ include-in-header:
       }
 
       /* =============================================
-         shared style componet
+         shared style component
          ============================================= */
+         .card {
+            background-color: #fcfcfc !important;
+         }
          .osc-section {
             padding: 2rem 2rem 0;
           }
 
           .osc-section + .osc-section {
-            margin-top: 2rem;
+            margin-top: 1rem;
           }
 
-          .osc-section-inner {
-            max-width: 1200px !important;
-            margin: 0 auto;
+          .osc-section h1 {
+          font-size: clamp(1.75rem, 4vw, 2.25rem);
+          font-weight: 700;
+          line-height: 1.2;
           }
-          .section-mark {
-            letter-spacing: 0.18em;
+          .osc-section h2,
+          .explore-section h2 {
+            font-size: clamp(1.5rem, 3vw, 1.75rem);
+            font-weight: 700;       
             color: #00883A;
+            margin-bottom: 0.5rem;
+            border-bottom:none;
           }
           .section-title {
-            font-size: clamp(1.6rem, 3vw, 1.7rem);
-            margin: 0 0 1.5rem;
-            line-height: 1.3;
+            font-size: clamp(1.4rem, 2.5vw, 1.6rem);
+            font-weight: 500;
+            color: #333;
+            line-height: 1.5;
+          }
+          .desc.fs-5{
+            font-size: 1.125rem !important; 
+            font-weight: 500;
+            color: #666;
+            line-height: 1.7;
+            letter-spacing: 0.01em;
+
+          }
+          .explore-card .card-title,
+          .carousel-card .card-title{
+            font-size: 1.1rem;
+            font-weight: 700;       
+            letter-spacing: 0.02em;
+          }
+
+          .explore-card .card-title{
+            color: #00883A;
+          }
+
+          .carousel-card .card-title{
+            color: #555;
+          }
+
+          .explore-card .card-text,
+          .carousel-card .card-text{
+            font-size: 0.9375rem;
+            color: #555;   
+            line-height: 1.65;
+          }
+
+          .explore-card a.fw-semibold,
+          .carousel-card a.fw-semibold{
+            font-size: 0.89rem;
+            letter-spacing: 0.03em;
+            color: #00883A;
+          }
+
+          .mission-statement-btn.btn.btn-primary,
+          .carousel-card .btn.btn-sm{
+            background: #00883A;
+            color: white !important;
+            border-color: #00883A;
+            transition: transform .15s ease;
+          }
+          .mission-statement-btn.btn.btn-primary:hover,
+          .carousel-card .btn.btn-sm:hover {
+            transform: scale(1.05);
           }
 
       /* =============================================
          mission
          ============================================= */
+          h3 {
+            border-bottom: 1px solid #dee2e6;
+            padding-bottom: .5rem;
+          }
           .mission-checklist {
             list-style: none;
           }
@@ -92,9 +199,10 @@ include-in-header:
             display: flex;
             gap: 0.65rem;
             align-items: flex-start;
-            font-size:0.95rem;
-            color: #555;
-            line-height: 1.7;
+            font-size: 1rem;       
+            color: #444;
+            font-weight: 400;
+            line-height: 1.75;
           }
           .mission-check-icon {
             width: 18px; 
@@ -103,18 +211,6 @@ include-in-header:
             background: #f4f1f1;
             color: #00883A;
             font-size: 0.6rem;
-          }
-          .mission-statement-btn.btn.btn-primary {
-            background: #00883A;
-            color: white !important;
-            border-color: #00883A;
-            border-radius: 6px;
-            transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-            box-shadow: 0 3px 12px rgba(0,136,58,0.28);
-          }
-          .mission-statement-btn.btn.btn-primary:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(0,136,58,0.35);
           }
 
       /* =============================================
@@ -125,6 +221,17 @@ include-in-header:
           background: #00883A;
           border-radius: 20px;
           overflow: hidden;
+        }
+        .newsletter-section h4 {
+          font-size: 1.3rem;
+          letter-spacing: 0.02em;
+        }
+
+        .newsletter-section p {
+          font-size: 0.9375rem;   
+          font-weight: 400;
+          line-height: 1.6;
+          opacity: 0.92;      
         }
 
         .newsletter-btn.btn {
@@ -143,39 +250,38 @@ include-in-header:
          impact section
          ============================================= */
           .impact-container {
-            background: #f7fcf7f2;
+            background: #ecf4ec38;
           }
           .impact-container .metric-value {
-            font-family: 'DM Serif Display', Georgia, serif;
-            font-size: 2.6rem;
+            font-size: 2.5rem;
             color: #00883A;
             line-height: 1;
+            font-weight: 700;
           }
           .impact-container .metric-label {
-            font-size: 0.82rem;
-            font-weight: 500;
-            letter-spacing: 0.08em;
+            font-size: 0.875rem;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            color: #555;  
           }
       /* =============================================
          testimonial
          ============================================= */
 
           .testimonial-inner blockquote {
-            font-size: clamp(1rem, 2.5vw, 1.2rem);
-            font-style: italic;
-            line-height: 1.6;
-            color: #555;
             border-left: 1px solid #d5d3d394;
+            color: #666;
           }
           .testimonial-inner blockquote p{
             margin-left: 0.5rem;
+            font-size: clamp(1rem, 2vw, 1.125rem);
+            font-style: italic;
+            line-height: 1.7;
            }
           .testimonial-inner strong {
-            margin-left: 1rem;
             font-size: 0.9rem;
             font-weight: 600;
-            color: rgba(45, 44, 44, 0.64);
-            letter-spacing: 0.04em;
+            letter-spacing: 0.06em;
           }
           .testimonial-carousel {
             max-width: 900px;
@@ -216,11 +322,6 @@ include-in-header:
       /* =============================================
          explore cards
          ============================================= */
-
-         .explore-section .desc{
-          max-width: 600px;
-         }
-
         .explore-card {
           position: relative;
           transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
@@ -247,15 +348,136 @@ include-in-header:
           box-shadow: 0 4px 20px rgba(0,0,0,0.08), 0 1px 4px rgba(0,0,0,0.04);
           transform: translateY(-3px);
         }
-        .explore-card h5 {
-            font-size: 1rem;
-            font-weight: 400;
+
+      /* =============================================
+         news carousel
+         ============================================= */
+        #newsCardCarousel,
+        #eventsCardCarousel {
+          padding-bottom: 3rem;
+          --carousel-max-title-lines: 2;
+          --carousel-max-body-lines: 3;
         }
-        .explore-card p {
-            font-size: 0.86rem;
-            line-height: 1.65;
+
+        #newsCardCarousel .carousel-item .card-title,
+        #newsCardCarousel .carousel-item .card-text,
+        #newsCardCarousel .carousel-item .card-subtitle,
+        #eventsCardCarousel .carousel-item .card-title,
+        #eventsCardCarousel .carousel-item .card-text,
+        #eventsCardCarousel .carousel-item .card-subtitle {
+          overflow-wrap: anywhere;
         }
-      </style>
+
+        #newsCardCarousel .carousel-item .card-subtitle,
+        #eventsCardCarousel .carousel-item .card-subtitle {
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 1;
+          overflow: hidden;
+        }
+
+        #newsCardCarousel .carousel-item .card-text,
+        #eventsCardCarousel .carousel-item .card-text {
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: var(--carousel-max-body-lines);
+          overflow: hidden;
+        }
+
+        #newsCardCarousel .carousel-item .card-title,
+        #eventsCardCarousel .carousel-item .card-title {
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: var(--carousel-max-title-lines);
+          overflow: hidden;
+        }
+
+        #newsCardCarousel .carousel-control-prev-icon,
+        #newsCardCarousel .carousel-control-next-icon,
+        #eventsCardCarousel .carousel-control-prev-icon,
+        #eventsCardCarousel .carousel-control-next-icon {
+          filter: brightness(0) saturate(100%);
+        }
+
+        #newsCardCarousel .carousel-indicators,
+        #eventsCardCarousel .carousel-indicators {
+          margin-bottom: 0;
+        }
+
+        #newsCardCarousel .carousel-indicators [data-bs-target],
+        #eventsCardCarousel .carousel-indicators [data-bs-target] {
+          background-color: #000;
+          opacity: 0.4;
+        }
+
+        #newsCardCarousel .carousel-indicators .active,
+        #eventsCardCarousel .carousel-indicators .active {
+          opacity: 1;
+        }
+        #newsCardCarousel .carousel-control-next,
+        #newsCardCarousel .carousel-control-prev,
+        #eventsCardCarousel .carousel-control-next,
+        #eventsCardCarousel .carousel-control-prev {
+          top: 87.5%;
+          width: 25px;
+          height: 25px;
+          color: #000000e6;
+          border: 1px solid #000000b3;
+          border-radius: 50%;
+          transition: background 0.2s;
+        }
+        #newsCardCarousel .carousel-control-prev,
+        #eventsCardCarousel .carousel-control-prev {
+          left: 0; 
+        }
+
+        #newsCardCarousel .carousel-control-next,
+        #eventsCardCarousel .carousel-control-next {
+          left: 35px;  
+          right: auto;   
+        }
+        #newsCardCarousel .carousel-control-next i,
+        #newsCardCarousel .carousel-control-prev i,
+        #eventsCardCarousel .carousel-control-next i,
+        #eventsCardCarousel .carousel-control-prev i {
+          font-size: 0.75rem;
+          line-height: 1;
+        }
+        #newsCardCarousel .carousel-control-next:hover,
+        #newsCardCarousel .carousel-control-prev:hover,
+        #eventsCardCarousel .carousel-control-next:hover,
+        #eventsCardCarousel .carousel-control-prev:hover {
+          background: #00883A;
+          color: #fff;
+          border-color: #00883A;
+        }
+        .carousel-card .card-header {
+          font-size: 0.8rem;
+          letter-spacing: 0.1em;
+          color: #00883A;
+          border-bottom:none;
+        }
+        .carousel-card .btn.btn-link {
+          position: relative;
+          text-decoration: none;
+          display: inline-block;
+        }
+
+        .carousel-card .btn.btn-link::after {
+          content: "";
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          width: 0%;
+          height: 2px;
+          background-color: #00883A;
+          transition: width 0.3s ease;
+        }
+
+        .carousel-card .btn.btn-link:hover::after {
+          width: 100%;
+        }
+        </style>
       <link href="/assets/bootstrap-5.3.8-dist/css/bootstrap.min.css" rel="stylesheet">
 css: /custom-navbar.css
 ---
@@ -269,9 +491,9 @@ css: /custom-navbar.css
 ::: {.row .align-items-center .gx-5 .no-side-padding}
 ::: {.col-lg-8}
 
-# Our Mission {.mb-3 .fw-semibold}
+# Our Mission {.mb-3}
 
-### The researcher-led LMU Open Science Center (OSC) advances research excellence at LMU Munich by promoting open, responsible, and reproducible practices. {.mb-3 .section-title .text-muted}
+### The researcher-led LMU Open Science Center (OSC) advances research excellence at LMU Munich by promoting open, responsible, and reproducible practices. {.mb-3 .section-title}
 
 ::: {.mission-checklist .d-flex .flex-column .gap-1 .p-0 .my-4}
 - [✓]{.mission-check-icon .d-flex .flex-shrink-0 .align-items-center .justify-content-center .mt-1} Essential training in the highest standards of reproducible research methods
@@ -304,7 +526,7 @@ Sign up to our mailing list for the latest workshops, events, and resources.
      accolades plus testimonial carousel
 ════════════════════════════════════════ -->
 
-::: {.container .impact-container}
+::: {.container .impact-container .mt-3}
 ::: {.row .align-items-center}
 
 ::: {.col-lg-4}
@@ -410,7 +632,7 @@ Publications
     </div>
   </div>
   <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <i class="bi bi-chevron-right text-success" aria-hidden="true"></i>
     <span class="visually-hidden">Next</span>
   </button>
 </div>
@@ -432,57 +654,61 @@ Publications
 
 ## What We Offer
 
-[What we offer]{.text-uppercase .text-success .small .fw-semibold .mb-2 .section-mark}
-
-
-::: {.text-muted .mb-4}
+::: {.mb-4 .desc .fs-5}
 Whether you're a student, early-career researcher, or faculty — there's a place for you in the open science community.
 :::
 
-::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
+::: {.row .row-cols-1 .row-cols-lg-3 .g-4}
 
 ::: {.col}
-
+```{=html}
 <div class="card explore-card h-100 border border-success-subtle rounded-3 shadow-sm">
-<div class="card-body d-flex flex-column p-4">
-<div class="bg-success bg-opacity-10 text-success rounded-3 d-inline-flex text-center align-items-center justify-content-center mb-3" style="width:50px;height:50px;">
-<i class="bi bi-people fs-5"></i>
+  <div class="card-body d-flex flex-column p-4">
+    <div class="d-flex align-items-center justify-content-between mb-2">
+      <h5 class="mb-0 card-title">Community</h5>
+      <div class="bg-success bg-opacity-10 rounded-3 d-inline-flex align-items-center justify-content-center" style="width:50px;height:50px;color:#00883A;">
+        <i class="bi bi-people fs-5"></i>
+      </div>
+    </div>
+    <p class="card-text flex-grow-1">Meet the researchers, advocates, and partners shaping open science at LMU and beyond.</p>
+    <a href="people/members.qmd" class="stretched-link" aria-label="Meet the OSC Community"></a>
+  </div>
 </div>
-<h5 class="text-black mb-2">Our Community</h5>
-<p class="text-muted flex-grow-1">Meet the researchers, advocates, and partners shaping open science at LMU and beyond.</p>
-<a href="people/members.qmd" class="text-decoration-none stretched-link fw-semibold text-success small">
-Meet the OSC Community →</a>
-</div>
-</div>
-
+```
 :::
 
 ::: {.col}
+```{=html}
 <div class="card explore-card h-100 border border-success-subtle rounded-3 shadow-sm">
-<div class="card-body d-flex flex-column p-4">
-<div class="bg-success bg-opacity-10 text-success rounded-3 d-inline-flex text-center align-items-center justify-content-center mb-3" style="width:50px;height:50px;">
-<i class="bi bi-journal-bookmark fs-5"></i>
+  <div class="card-body d-flex flex-column p-4">
+    <div class="d-flex align-items-center justify-content-between mb-2">
+      <h5 class="mb-0 card-title">Training & Workshops</h5>
+      <div class="bg-success bg-opacity-10 rounded-3 d-inline-flex align-items-center justify-content-center" style="width:50px;height:50px;color:#00883A;">
+        <i class="bi bi-journal-bookmark fs-5"></i>
+      </div>
+    </div>
+    <p class="card-text flex-grow-1">Build hands-on skills in reproducible research through OSC workshops, summer schools, and tutorials.</p>
+    <a href="training/index.qmd" class="stretched-link"aria-label="Explore Training"></a>
+  </div>
 </div>
-<h5 class="text-black mb-2">Training & Workshops</h5>
-<p class="text-muted flex-grow-1">Build hands-on skills in reproducible research through OSC workshops, summer schools, and tutorials.</p>
-<a href="training/index.qmd" class="text-decoration-none stretched-link fw-semibold text-success small">Explore Training →</a>
-</div>
-</div>
-
+```
 :::
 
 ::: {.col}
+```{=html}
 <div class="card explore-card h-100 border border-success-subtle rounded-3 shadow-sm">
-<div class="card-body d-flex flex-column p-4">
-<div class="bg-success bg-opacity-10 text-success rounded-3 d-inline-flex text-center align-items-center justify-content-center mb-3" style="width:50px;height:50px;">
-<i class="bi bi-globe2 fs-5"></i>
+  <div class="card-body d-flex flex-column p-4">
+    <div class="d-flex align-items-center justify-content-between mb-2">
+      <h5 class="mb-0 card-title">Partners & Networks</h5>
+      <div class="bg-success bg-opacity-10 rounded-3 d-inline-flex align-items-center justify-content-center" style="width:50px;height:50px;color:#00883A;">
+        <i class="bi bi-globe2 fs-5"></i>
+      </div>
+    </div>
+    <p class="card-text flex-grow-1">Discover our institutional collaborators and the international networks we're part of.</p>
+    <a href="partners/institutional_members.qmd" class="stretched-link" aria-label="See OSC Partners"></a>
+  </div>
 </div>
-<h5 class="text-black mb-2">Partners & Networks</h5>
-<p class="text-muted flex-grow-1">Discover our institutional collaborators and the international networks we're part of.</p>
-<a href="partners/institutional_members.qmd" class="text-decoration-none stretched-link fw-semibold text-success small">See OSC Partners →</a>
-</div>
-</div>
-
+```
 :::
 :::
 
@@ -499,26 +725,50 @@ Meet the OSC Community →</a>
 
 ## Stay In the Loop
 
-[Stay in the loop]{.text-uppercase .section-mark .small .fw-semibold .mb-2}
+::: {.mb-4 .desc .fs-5}
+Keep up to date with our latest news releases, and upcoming events.
+:::
 
-
-::: {.row}
+::: {.row .g-4}
 
 ::: {.col-md-6}
 ```{=html}
-<div class="card h-100">
-  <div class="card-header">
+<div class="card carousel-card h-100 border border-success-subtle">
+  <div class="card-header bg-transparent fw-semibold text-uppercase">
     News
   </div>
   <div class="card-body">
-    <!-- news carousel goes here -->
-    <h5 class="card-title">Card title</h5>
-    <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-    <a href="#" class="btn btn-primary">Read More</a>
+    <div id="newsCardCarousel" class="carousel slide" data-bs-ride="false">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#newsCardCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#newsCardCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <h6 class="card-subtitle mb-2 text-body-secondary" style="font-size:0.87rem;">Jul 7, 2025</h6>
+          <h5 class="card-title">Launching of LMU-FORRT Train-the-Trainer Program</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-link p-0 fw-semibold small">Read More →</a>
+        </div>
+        <div class="carousel-item">
+          <h6 class="card-subtitle mb-2 text-body-secondary" style="font-size:0.87rem;">Mar 18, 2026</h6>
+          <h5 class="card-title">Second news item</h5>
+          <p class="card-text">Another example entry to demonstrate basic carousel behavior inside the card body.</p>
+          <a href="#" class="btn btn-link p-0 fw-semibold small">Read More →</a>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#newsCardCarousel" data-bs-slide="prev">
+        <i class="bi bi-chevron-left" aria-hidden="true"></i>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#newsCardCarousel" data-bs-slide="next">
+        <i class="bi bi-chevron-right" aria-hidden="true"></i>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
   </div>
-  <div class="card-footer text-center">
-    <a href="news/index.qmd" class="btn btn-success btn-sm w-50">All News →</a>
+  <div class="card-footer text-center bg-transparent">
+    <a href="news/index.qmd" class="btn btn-success btn-sm w-50">All News</a>
   </div>
 </div>
 ```
@@ -526,19 +776,42 @@ Meet the OSC Community →</a>
 
 ::: {.col-md-6}
 ```{=html}
-<div class="card h-100">
-  <div class="card-header">
+<div class="card carousel-card h-100 border border-success-subtle">
+  <div class="card-header bg-transparent fw-semibold text-uppercase">
     Events
   </div>
   <div class="card-body">
-    <!-- events carousel goes here -->
-    <h5 class="card-title">Card title</h5>
-    <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-    <a href="#" class="btn btn-primary">See Event</a>
+    <div id="eventsCardCarousel" class="carousel slide" data-bs-ride="false">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#eventsCardCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#eventsCardCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <h6 class="card-subtitle mb-2 text-body-secondary" style="font-size:0.87rem;">Workshop · Ludwig-Maximilians-Universitat Munchen</h6>
+          <h5 class="card-title">Data & AI Ethics</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-link p-0 fw-semibold small">See Event →</a>
+        </div>
+        <div class="carousel-item">
+          <h6 class="card-subtitle mb-2 text-body-secondary" style="font-size:0.87rem;">Seminar · Ludwig-Maximilians-Universitat Munchen</h6>
+          <h5 class="card-title">Reproducible Research Methods</h5>
+          <p class="card-text">Another example event entry to demonstrate matching carousel behavior and card layout.</p>
+          <a href="#" class="btn btn-link p-0 fw-semibold small">See Event →</a>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#eventsCardCarousel" data-bs-slide="prev">
+        <i class="bi bi-chevron-left" aria-hidden="true"></i>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#eventsCardCarousel" data-bs-slide="next">
+        <i class="bi bi-chevron-right" aria-hidden="true"></i>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
   </div>
-  <div class="card-footer text-center">
-    <a href="events/index.qmd" class="btn btn-success btn-sm w-50">All Events →</a>
+  <div class="card-footer border-top-none text-center bg-transparent">
+    <a href="events/index.qmd" class="btn btn-sm w-50">All Events</a>
   </div>
 </div>
 ```
