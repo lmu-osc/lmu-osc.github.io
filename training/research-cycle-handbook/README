@@ -97,11 +97,11 @@ Also note that I would prefer the annotation X.X. with the final dot (and this i
 
 # HOW TO REMOVE ANCHOR?
 
-Adding the following class to html title remove their anchors, e.g.:
+Adding the class 'no-anchor' to html title remove their anchors, e.g.:
 
 <h5 class="fs-5 no-anchor">Title</h5>
 
-This is using the remove_anchor.lua function stored in assets.
+This is feature already provided by Quarto.
 
 
 # HOW TO FORMAT LISTS AND CALLOUT BOXES OCCURRING BETWEEN SECTION TITLE AND panel-tabset IN orc-details-panel?
