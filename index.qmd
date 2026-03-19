@@ -28,38 +28,32 @@ include-after-body:
   - text: |
       <script>
       (function () {
-        function equalizeNewsCarouselTextHeights() {
-          var carousel = document.getElementById('newsCardCarousel');
-          if (!carousel) return;
+        function equalizeTextBySelector(selector, scopeRoot) {
+          var elements = Array.prototype.slice.call(scopeRoot.querySelectorAll(selector));
+          if (!elements.length) return;
 
-          var slides = carousel.querySelectorAll('.carousel-item');
-          if (!slides.length) return;
+          elements.forEach(function (el) { el.style.minHeight = ''; });
 
-          var titles = carousel.querySelectorAll('.carousel-item .card-title');
-          var bodies = carousel.querySelectorAll('.carousel-item .card-text');
-
-          titles.forEach(function (el) { el.style.minHeight = ''; });
-          bodies.forEach(function (el) { el.style.minHeight = ''; });
-
-          var maxTitleHeight = 0;
-          var maxBodyHeight = 0;
-
-          titles.forEach(function (el) {
-            maxTitleHeight = Math.max(maxTitleHeight, el.getBoundingClientRect().height);
-          });
-          bodies.forEach(function (el) {
-            maxBodyHeight = Math.max(maxBodyHeight, el.getBoundingClientRect().height);
+          var maxHeight = 0;
+          elements.forEach(function (el) {
+            maxHeight = Math.max(maxHeight, el.getBoundingClientRect().height);
           });
 
-          var titleHeightPx = Math.ceil(maxTitleHeight) + 'px';
-          var bodyHeightPx = Math.ceil(maxBodyHeight) + 'px';
-
-          titles.forEach(function (el) { el.style.minHeight = titleHeightPx; });
-          bodies.forEach(function (el) { el.style.minHeight = bodyHeightPx; });
+          var heightPx = Math.ceil(maxHeight) + 'px';
+          elements.forEach(function (el) { el.style.minHeight = heightPx; });
         }
 
         function runEqualization() {
-          window.requestAnimationFrame(equalizeNewsCarouselTextHeights);
+          window.requestAnimationFrame(function () {
+            equalizeTextBySelector(
+              '#newsCardCarousel .carousel-item .card-title, #eventsCardCarousel .carousel-item .card-title',
+              document
+            );
+            equalizeTextBySelector(
+              '#newsCardCarousel .carousel-item .card-text, #eventsCardCarousel .carousel-item .card-text',
+              document
+            );
+          });
         }
 
         document.addEventListener('DOMContentLoaded', runEqualization);
@@ -348,50 +342,62 @@ include-in-header:
       /* =============================================
          news carousel
          ============================================= */
-        #newsCardCarousel {
+        #newsCardCarousel,
+        #eventsCardCarousel {
           padding-bottom: 3rem;
-          --news-max-title-lines: 2;
-          --news-max-body-lines: 3;
+          --carousel-max-title-lines: 2;
+          --carousel-max-body-lines: 3;
         }
 
         #newsCardCarousel .carousel-item .card-title,
-        #newsCardCarousel .carousel-item .card-text {
+        #newsCardCarousel .carousel-item .card-text,
+        #eventsCardCarousel .carousel-item .card-title,
+        #eventsCardCarousel .carousel-item .card-text {
           overflow-wrap: anywhere;
         }
 
-        #newsCardCarousel .carousel-item .card-text {
+        #newsCardCarousel .carousel-item .card-text,
+        #eventsCardCarousel .carousel-item .card-text {
           display: -webkit-box;
           -webkit-box-orient: vertical;
-          -webkit-line-clamp: var(--news-max-body-lines);
+          -webkit-line-clamp: var(--carousel-max-body-lines);
           overflow: hidden;
         }
 
-        #newsCardCarousel .carousel-item .card-title {
+        #newsCardCarousel .carousel-item .card-title,
+        #eventsCardCarousel .carousel-item .card-title {
           display: -webkit-box;
           -webkit-box-orient: vertical;
-          -webkit-line-clamp: var(--news-max-title-lines);
+          -webkit-line-clamp: var(--carousel-max-title-lines);
           overflow: hidden;
         }
 
         #newsCardCarousel .carousel-control-prev-icon,
-        #newsCardCarousel .carousel-control-next-icon {
+        #newsCardCarousel .carousel-control-next-icon,
+        #eventsCardCarousel .carousel-control-prev-icon,
+        #eventsCardCarousel .carousel-control-next-icon {
           filter: brightness(0) saturate(100%);
         }
 
-        #newsCardCarousel .carousel-indicators {
+        #newsCardCarousel .carousel-indicators,
+        #eventsCardCarousel .carousel-indicators {
           margin-bottom: 0;
         }
 
-        #newsCardCarousel .carousel-indicators [data-bs-target] {
+        #newsCardCarousel .carousel-indicators [data-bs-target],
+        #eventsCardCarousel .carousel-indicators [data-bs-target] {
           background-color: #000;
           opacity: 0.4;
         }
 
-        #newsCardCarousel .carousel-indicators .active {
+        #newsCardCarousel .carousel-indicators .active,
+        #eventsCardCarousel .carousel-indicators .active {
           opacity: 1;
         }
         #newsCardCarousel .carousel-control-next,
-        #newsCardCarousel .carousel-control-prev {
+        #newsCardCarousel .carousel-control-prev,
+        #eventsCardCarousel .carousel-control-next,
+        #eventsCardCarousel .carousel-control-prev {
           top: 87.5%;
           width: 25px;
           height: 25px;
@@ -400,21 +406,27 @@ include-in-header:
           border-radius: 50%;
           transition: background 0.2s;
         }
-        #newsCardCarousel .carousel-control-prev {
+        #newsCardCarousel .carousel-control-prev,
+        #eventsCardCarousel .carousel-control-prev {
           left: 0; 
         }
 
-        #newsCardCarousel .carousel-control-next {
+        #newsCardCarousel .carousel-control-next,
+        #eventsCardCarousel .carousel-control-next {
           left: 35px;  
           right: auto;   
         }
         #newsCardCarousel .carousel-control-next i,
-        #newsCardCarousel .carousel-control-prev i {
+        #newsCardCarousel .carousel-control-prev i,
+        #eventsCardCarousel .carousel-control-next i,
+        #eventsCardCarousel .carousel-control-prev i {
           font-size: 0.75rem;
           line-height: 1;
         }
         #newsCardCarousel .carousel-control-next:hover,
-        #newsCardCarousel .carousel-control-prev:hover {
+        #newsCardCarousel .carousel-control-prev:hover,
+        #eventsCardCarousel .carousel-control-next:hover,
+        #eventsCardCarousel .carousel-control-prev:hover {
           background: #00883A;
           color: #fff;
           border-color: #00883A;
@@ -699,14 +711,14 @@ Keep up to date with our latest news releases, and upcoming events.
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <h6 class="card-subtitle mb-2 text-body-secondary" style="font-size:0.87rem;">Jul 7, 2025</h6>
           <h5 class="card-title">Launching of LMU-FORRT Train-the-Trainer Program</h5>
+          <h6 class="card-subtitle mb-2 text-body-secondary" style="font-size:0.87rem;">Jul 7, 2025</h6>
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content.</p>
           <a href="#" class="btn btn-link p-0 fw-semibold small">Read More →</a>
         </div>
         <div class="carousel-item">
-          <h6 class="card-subtitle mb-2 text-body-secondary" style="font-size:0.87rem;">Mar 18, 2026</h6>
           <h5 class="card-title">Second news item</h5>
+          <h6 class="card-subtitle mb-2 text-body-secondary" style="font-size:0.87rem;">Mar 18, 2026</h6>
           <p class="card-text">Another example entry to demonstrate basic carousel behavior inside the card body.</p>
           <a href="#" class="btn btn-link p-0 fw-semibold small">Read More →</a>
         </div>
@@ -735,20 +747,34 @@ Keep up to date with our latest news releases, and upcoming events.
     Events
   </div>
   <div class="card-body">
-    <!-- events carousel goes here -->
-    <!-- div block to align the date and title side by side -->
-    <div class="d-flex flex-row align-items-start gap-3 mb-3"> 
-      <div class="bg-gradient rounded-3 d-inline-flex flex-column align-items-center justify-content-center flex-shrink-0 text-white" style="width:48px;height:48px;background:#00883A;">
-        <span class="fw-semibold" style="font-size:1.1rem;line-height:1;">14</span>
-        <span class="text-uppercase" style="font-size:0.65rem;letter-spacing:0.08em;">Nov</span>
+    <div id="eventsCardCarousel" class="carousel slide" data-bs-ride="false">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#eventsCardCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#eventsCardCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
       </div>
-      <div>
-        <h5 class="card-title mb-2">Data & AI Ethics</h5>
-        <h6 class="card-subtitle text-body-secondary" style="font-size:0.87rem;">Workshop · Ludwig-Maximilians-Universität München </h6>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <h5 class="card-title">Data & AI Ethics</h5>
+          <h6 class="card-subtitle mb-2 text-body-secondary" style="font-size:0.87rem;">Workshop · Ludwig-Maximilians-Universitat Munchen</h6>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="btn btn-link p-0 fw-semibold small">See Event →</a>
+        </div>
+        <div class="carousel-item">
+          <h5 class="card-title">Reproducible Research Methods</h5>
+          <h6 class="card-subtitle mb-2 text-body-secondary" style="font-size:0.87rem;">Seminar · Ludwig-Maximilians-Universitat Munchen</h6>
+          <p class="card-text">Another example event entry to demonstrate matching carousel behavior and card layout.</p>
+          <a href="#" class="btn btn-link p-0 fw-semibold small">See Event →</a>
+        </div>
       </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#eventsCardCarousel" data-bs-slide="prev">
+        <i class="bi bi-chevron-left" aria-hidden="true"></i>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#eventsCardCarousel" data-bs-slide="next">
+        <i class="bi bi-chevron-right" aria-hidden="true"></i>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-    <a href="#" class="btn btn-link p-0 fw-semibold small">See Event →</a>
   </div>
   <div class="card-footer border-top-none text-center bg-transparent">
     <a href="events/index.qmd" class="btn btn-sm w-50">All Events</a>
