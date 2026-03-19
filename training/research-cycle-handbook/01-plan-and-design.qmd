@@ -7,9 +7,8 @@ sidebar: training
 number-depth: 4
 number-sections: true
 number-offset: [0,1,0]
-filters: 
-    - assets/remove_anchor.lua
 page-layout: full
+toc: false
 css: handbook-styles.css
 title-block-style: none   
 include-in-header:
@@ -17,22 +16,31 @@ include-in-header:
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 ---
 
-<div class="orc-phase-hero-compact phase-1">
-<div class="orc-hero-cycle phase-1">
+```{=html}
+<div class="orc-phase-hero phase-1 container shadow rounded-4">
+<div class="row align-items-center p-3 p-lg-4 mt-4 mb-3">
+<!-- Cycle image -->
+<div class="col-12 col-lg-3 orc-hero-cycle text-center phase-1">
 {{< include ../images/os-cycle.svg >}}
 </div>
-<div class="orc-hero-body">
-<div class="orc-hero-tagline">Set the foundation for open & reliable research</div>
-<div class="orc-hero-pills phase-1">
-<span><i class="bi bi-check2-circle"></i> Explore & Reuse</span> 
-<span><i class="bi bi-check2-circle"></i> Check Legal Frameworks</span>
-<span><i class="bi bi-check2-circle"></i> Write Data Management Plan</span>
-<span><i class="bi bi-check2-circle"></i> Design Study</span>
+<!-- Text content -->
+<div class="col-12 col-lg-9">
+<p class="lead fw-bold mb-3 fs-4 text-muted"> Set the foundation for open & reliable research</p>
+<!-- Pills -->
+<div class="d-flex flex-wrap gap-3 mb-3">
+<span class="badge rounded-5 fs-6 fw-normal text-wrap orc-hero-pills phase-1 text-white"><i class="bi bi-check2-circle me-1"></i> Explore & Reuse</span>
+<span class="badge rounded-5 fs-6 fw-normal text-wrap orc-hero-pills phase-1 text-white"><i class="bi bi-check2-circle me-1"></i> Check Legal Frameworks</span>
+<span class="badge rounded-5 fs-6 fw-normal text-wrap orc-hero-pills phase-1 text-white"><i class="bi bi-check2-circle me-1"></i> Write Data Management Plan</span>
+<span class="badge rounded-5 fs-6 fw-normal text-wrap orc-hero-pills phase-1 text-white"><i class="bi bi-check2-circle me-1"></i> Design Study</span>
 </div>
-<div class="orc-hero-checkpoint phase-1"><i class="bi bi-people-fill"></i> Checkpoints: Study Plan Presentation & Preregistration Submission</div>
+<div class="orc-hero-checkpoint phase-1 badge rounded-5 d-inline-flex align-items-center justify-content-center text-wrap white-space-normal fs-6 fw-normal text-white">
+<i class="bi bi-people-fill me-2"></i>
+Checkpoints: Study Plan Presentation & Preregistration Submission
 </div>
 </div>
-
+</div>
+</div>
+```
 
 <details class="orc-details-panel">
 <summary><i class="bi bi-search"></i>
@@ -62,57 +70,59 @@ A research output (e.g. data, code) without a license or statement granting your
 
 <!--  card -->
 ::: {.col}
-<div class="card orc-card-tool h-100 position-relative">
-<span class="orc-card-tool-badge recommended">OSC Tutorial</span>
-<div class="orc-card-tool-icons mb-2">
-<div class="orc-card-tool-icon icon-1">
-<img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
-</div>
-<div class="orc-card-tool-icon icon-2">
-<img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Zotero_icon.png" class="img-fluid" alt="Zotero logo">
-</div>
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+  <div class="d-flex gap-2">
+    <div class="orc-card-tool-icon p-2 rounded">
+      <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+    </div>
+    <div class="orc-card-tool-icon p-2 rounded">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Zotero_icon.png" class="img-fluid" alt="Zotero logo">
+    </div>
+  </div>
+  <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
 </div>
 <h4 class="card-title">Introduction to Zotero</h4>
 <p class="card-text">Use an open source reference manager. (1h)</p>
-<a href="https://lmu-osc.github.io/introduction-to-zotero/" class="stretched-link" target="_blank" rel="noopener"> </a>
+<a href="https://lmu-osc.github.io/introduction-to-zotero/" class="stretched-link" rel="noopener"> </a>
 </div>
-
+```
 :::
 <!-- Add more cards if needed after this block -->
 :::
 
 
-<h4 class="fs-5 mt-3"><i class="bi bi-tools"></i> TOOLS & RESOURCES</h4>
+<h4 class="fs-5 no-anchor mt-3"><i class="bi bi-tools"></i> TOOLS & RESOURCES</h4>
 <!-- row for Tools & Resources section -->
 
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
-
 <!-- card -->
 ::: {.col}
-
-<div class="card orc-card-tool h-100 position-relative">
-<div class="orc-card-tool-icon mb-2"> 
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/OpenAlex_2025_favicon.svg/250px-OpenAlex_2025_favicon.svg.png" class="img-fluid" alt="OpenAlex logo">
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+  <div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/OpenAlex_2025_favicon.svg/250px-OpenAlex_2025_favicon.svg.png" class="img-fluid" alt="OpenAlex logo">
+  </div>
+  <h4 class="card-title">OpenAlex</h4>
+  <p class="card-text">All the world's research, connected and open.</p>
+  <a href="https://openalex.org/" class="stretched-link" rel="noopener"></a>
 </div>
-<h4 class="card-title">OpenAlex</h4>
-<p class="card-text">All the world's research, connected and open.</p>
-<a href="https://openalex.org/" class="stretched-link" target="_blank" rel="noopener"></a>
-</div>
-
+```
 :::
 
 <!-- card -->
 ::: {.col}
-
-<div class="card orc-card-tool h-100 position-relative">
-<div class="orc-card-tool-icon mb-2"> 
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
 <img src="https://europepmc.org/img/Europe%20PMC%20Basic%20Logo%20RGB.71c1dbf7.png" class="img-fluid" alt="Europe PMC logo">
 </div>
 <h4 class="card-title">Europe PubMed Central</h4>
 <p class="card-text">Comprehensive access to life sciences literature.</p>
-<a href="https://europepmc.org/" class="stretched-link" target="_blank" rel="noopener"></a>
+<a href="https://europepmc.org/" class="stretched-link" rel="noopener"></a>
 </div>
-
+```
 :::
 
 <!-- Add more cards if needed after this block -->
@@ -135,34 +145,35 @@ A **preregistration** typically consists of a hypothesis and predictions, a plan
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
 
 ::: {.col}
-<div class="card orc-card-tool h-100 position-relative">
-<div class="orc-card-tool-icon mb-2"> 
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Open_Science_Framework_log_%28and_Center_for_Open_Science_logo%29.svg/3840px-Open_Science_Framework_log_%28and_Center_for_Open_Science_logo%29.svg.png" class="img-fluid" alt="OSF icon">
 </div>
 <h4 class="card-title">Open Science Framework</h4>
 <p class="card-text">Registry of preregistrations. Widely used across fields.</p>
 <a href="https://osf.io/registries/" class="stretched-link" target="_blank" rel="noopener"></a>
-
 </div>
-
+```
 :::
 
 ::: {.col}
-<div class="card orc-card-tool h-100 position-relative">
-<div class="orc-card-tool-icon mb-2"> 
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
 <img src="https://aspredicted.org/favicon.ico" class="img-fluid" alt="AsPredicted icon">
 </div>
 <h4 class="card-title">AsPredicted</h4>
 <p class="card-text">Registry of simple preregistrations</p>
 <a href="https://aspredicted.org/" class="stretched-link" target="_blank" rel="noopener"></a>
-
 </div>
-
+```
 :::
 
 ::: {.col}
-<div class="card orc-card-tool h-100 position-relative">
-<div class="orc-card-tool-icon mb-2"> 
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
 <img src="https://preclinicaltrials.eu/images/logo-pct.jpg" class="img-fluid" alt="PreclinicalTrials.eu icon">
 </div>
 <h4 class="card-title">PreclinicalTrials.eu</h4>
@@ -170,12 +181,13 @@ A **preregistration** typically consists of a hypothesis and predictions, a plan
 <a href="https://preclinicaltrials.eu/" class="stretched-link" target="_blank" rel="noopener"></a>
 
 </div>
-
+```
 :::
 
 ::: {.col}
-<div class="card orc-card-tool h-100 position-relative">
-<div class="orc-card-tool-icon mb-2"> 
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
 <img src="https://www.animalstudyregistry.org/asr_web/image/asr_logo.png" class="img-fluid" alt="animalstudyregistry.org icon">
 </div>
 <h4 class="card-title">AnimalStudyRegistry.org</h4>
@@ -183,12 +195,13 @@ A **preregistration** typically consists of a hypothesis and predictions, a plan
 <a href="https://www.animalstudyregistry.org/" class="stretched-link" target="_blank" rel="noopener"></a>
 
 </div>
-
+```
 :::
 
 ::: {.col}
-<div class="card orc-card-tool h-100 position-relative">
-<div class="orc-card-tool-icon mb-2"> 
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
 <img src="https://clinicaltrials.gov/assets/favicons/favicon.svg" class="img-fluid" alt="ClinicalTrials.gov icon">
 </div>
 <h4 class="card-title">ClinicalTrials.gov</h4>
@@ -196,7 +209,7 @@ A **preregistration** typically consists of a hypothesis and predictions, a plan
 <a href="https://clinicaltrials.gov/" class="stretched-link" target="_blank" rel="noopener"></a>
 
 </div>
-
+```
 :::
 
 :::
@@ -235,9 +248,9 @@ These platforms either give you access to existing data or provide [**metadata**
 
 <!--card-->
 ::: {.col}
-
-<div class="card orc-card-tool h-100 position-relative">
-<div class="orc-card-tool-icon mb-2"> 
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
 <img src="https://www.re3data.org/favicon.ico" class="img-fluid" alt="re3data icon">
 </div>
 <h4 class="card-title">re3data</h4>
@@ -245,14 +258,14 @@ These platforms either give you access to existing data or provide [**metadata**
 <a href="https://www.re3data.org/" class="stretched-link" target="_blank" rel="noopener"></a>
 
 </div>
-
+```
 :::
 
 <!-- card-->
 ::: {.col}
-
-<div class="card orc-card-tool h-100 position-relative">
-<div class="orc-card-tool-icon mb-2"> 
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
 <img src="https://datacite.org/wp-content/uploads/2023/07/DataCite-Logo_Schwoop.svg" class="img-fluid" alt="DataCite icon">
 </div>
 <h4 class="card-title">DataCite Commons</h4>
@@ -260,14 +273,14 @@ These platforms either give you access to existing data or provide [**metadata**
 <a href="https://commons.datacite.org/" class="stretched-link" target="_blank" rel="noopener"></a>
 
 </div>
-
+```
 :::
 
 <!-- card-->
 ::: {.col}
-
-<div class="card orc-card-tool h-100 position-relative">
-<div class="orc-card-tool-icon mb-2"> 
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
 <img src="https://websitev3-p-eu.figstatic.com/assets-v3/97a584d494444650f01c8ba85b077c4f7938fbce/static/media/favicon-70.66d0d88a.png" class="img-fluid" alt="FigShare icon">
 </div>
 <h4 class="card-title">Fig Share</h4>
@@ -275,12 +288,13 @@ These platforms either give you access to existing data or provide [**metadata**
 <a href="https://figshare.com/browse" class="stretched-link" target="_blank" rel="noopener"></a>
 
 </div>
-
+```
 :::
 
 ::: {.col}
-<div class="card orc-card-tool h-100 position-relative">
-<div class="orc-card-tool-icon mb-2"> 
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Open_Science_Framework_log_%28and_Center_for_Open_Science_logo%29.svg/3840px-Open_Science_Framework_log_%28and_Center_for_Open_Science_logo%29.svg.png" class="img-fluid" alt="OSF icon">
 </div>
 <h4 class="card-title">Open Science Framework</h4>
@@ -288,15 +302,15 @@ These platforms either give you access to existing data or provide [**metadata**
 <a href="https://osf.io/registries/" class="stretched-link" target="_blank" rel="noopener"></a>
 
 </div>
-
+```
 :::
 
 
 <!-- card-->
 ::: {.col}
-
-<div class="card orc-card-tool h-100 position-relative">
-<div class="orc-card-tool-icon mb-2"> 
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
 <img src="https://about.zenodo.org/static/img/icons/zenodo-icon-blue.svg" class="img-fluid" alt="Zenodo icon">
 </div>
 <h4 class="card-title">Zenodo</h4>
@@ -304,7 +318,7 @@ These platforms either give you access to existing data or provide [**metadata**
 <a href="https://zenodo.org" class="stretched-link" target="_blank" rel="noopener"></a>
 
 </div>
-
+```
 :::
 
 :::
@@ -332,57 +346,64 @@ Code publicly visible on GitHub without a license or equivalent text explicitly 
 
 <!-- card -->
 ::: {.col}
-<div class="card orc-card-tool h-100 position-relative">
-<span class="orc-card-tool-badge recommended">OSC Tutorial</span>
-<div class="orc-card-tool-icons mb-2">
-<div class="orc-card-tool-icon icon-1">
-<img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
-</div>
-<div class="orc-card-tool-icon icon-2">
-<img src="https://www.svgrepo.com/show/303548/git-icon-logo.svg" class="img-fluid" alt="Git logo">
-</div>
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+  <div class="d-flex gap-2">
+    <div class="orc-card-tool-icon p-2 rounded">
+      <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+    </div>
+    <div class="orc-card-tool-icon p-2 rounded">
+      <img src="https://www.svgrepo.com/show/303548/git-icon-logo.svg" class="img-fluid" alt="Zotero logo">
+    </div>
+  </div>
+  <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
 </div>
 <h4 class="card-title">Git Tutorial</h4>
 <p class="card-text">Use version control system Git from within RStudio. (2h)</p>
 <a href="https://lmu-osc.github.io/Introduction-RStudio-Git-GitHub/" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
-
+```
 :::
 
 <!-- card -->
 ::: {.col}
-
-<div class="card orc-card-tool h-100 position-relative">
-<span class="orc-card-tool-badge recommended">OSC Tutorial</span>
-<div class="orc-card-tool-icons mb-2">
-<div class="orc-card-tool-icon icon-1">
-<img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
-</div>
-<div class="orc-card-tool-icon icon-2">
-<img src="https://cdn.simpleicons.org/github" class="img-fluid" alt="GitHub logo">
-</div>
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+  <div class="d-flex gap-2">
+    <div class="orc-card-tool-icon p-2 rounded">
+      <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+    </div>
+    <div class="orc-card-tool-icon p-2 rounded">
+      <img src="https://cdn.simpleicons.org/github" class="img-fluid" alt="Zotero logo">
+    </div>
+  </div>
+  <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
 </div>
 <h4 class="card-title">GitHub Tutorial</h4>
 <p class="card-text">Collaborative coding with GitHub and RStudio (1h)</p>
 <a href="https://lmu-osc.github.io/Collaborative-RStudio-GitHub/" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
-
+```
 :::
 
 ::: {.col}
-
-<div class="card orc-card-tool h-100 position-relative">
-<span class="orc-card-tool-badge recommended">OSC Tutorial</span>
-<div class="orc-card-tool-icons mb-2">
-<div class="orc-card-tool-icon icon-1">
-<img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
-</div>
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+  <div class="d-flex gap-2">
+    <div class="orc-card-tool-icon p-2 rounded">
+      <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+    </div>
+  </div>
+  <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
 </div>
 <h4 class="card-title">Code Publishing</h4>
 <p class="card-text">Add README and license to a reproducible project.</p>
 <a href="https://lmu-osc.github.io/code-publishing/" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
-
+```
 :::
 
 :::
@@ -394,9 +415,9 @@ Code publicly visible on GitHub without a license or equivalent text explicitly 
 
 <!-- card -->
 ::: {.col}
-
-<div class="card orc-card-tool h-100 position-relative">
-<div class="orc-card-tool-icon mb-2"> 
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
 <img src="https://about.zenodo.org/static/img/icons/zenodo-icon-blue.svg" class="img-fluid" alt="Zenodo icon">
 </div>
 <h4 class="card-title">Zenodo</h4>
@@ -404,14 +425,14 @@ Code publicly visible on GitHub without a license or equivalent text explicitly 
 <a href="https://zenodo.org/" class="stretched-link" target="_blank" rel="noopener"></a>
 
 </div>
-
+```
 :::
 
 <!-- card -->
 ::: {.col}
-
-<div class="card orc-card-tool h-100 position-relative">
-<div class="orc-card-tool-icon mb-2"> 
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
 <img src="https://cdn.simpleicons.org/github" class="img-fluid" alt="GitHub icon">
 </div>
 <h4 class="card-title">GitHub</h4>
@@ -419,7 +440,7 @@ Code publicly visible on GitHub without a license or equivalent text explicitly 
 <a href="https://github.com/" class="stretched-link" target="_blank" rel="noopener"></a>
 
 </div>
-
+```
 :::
 
 :::
@@ -490,15 +511,16 @@ See [https://www.go-fair.org/fair-principles/](https://www.go-fair.org/fair-prin
 
 ::: {.col}
 
-<div class="card orc-card-tool w-100 h-100 position-relative">
-<div class="orc-card-tool-icon mb-2">
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
 <img src="https://cms-cdn.lmu.de/assets/img/favicon.ico" class="img-fluid" alt="LMU logo">
 </div>
 <h4 class="card-title">LMU Guidelines for Safeguarding Good Scientific Practice</h4>
 <p class="card-text">Implementation of the German Research Foundation's (DFG) Code of Conduct</p>
 <a href="https://cms-cdn.lmu.de/media/contenthub/amtliche-veroeffentlichungen/gwp-ordnung.pdf" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
-
+```
 :::
 
 :::
@@ -544,50 +566,58 @@ For data protection guidance, contact the [LMU Data Protection Officer](https://
 
 
 ::: {.col}
-
-<div class="card orc-card-tool w-100 h-100 position-relative">
-<span class="orc-card-tool-badge recommended">OSC Tutorial</span>
-<div class="orc-card-tool-icons mb-2">
-<div class="orc-card-tool-icon icon-1">
-<img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
-</div>
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+  <div class="d-flex gap-2">
+    <div class="orc-card-tool-icon p-2 rounded">
+      <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+    </div>
+  </div>
+  <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
 </div>
 <h4 class="card-title">Data Management Plans</h4>
 <p class="card-text">Overview of components, tips, and tools. (30 min)</p>
 <a href="https://lmu-osc.github.io/FAIR-Data-Management/dmp.html" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
-
+```
 :::
 
 ::: {.col}
-<div class="card orc-card-tool w-100 h-100 position-relative">
-<span class="orc-card-tool-badge recommended">OSC Tutorial</span>
-<div class="orc-card-tool-icons mb-2">
-<div class="orc-card-tool-icon icon-1">
-<img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
-</div>
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+  <div class="d-flex gap-2">
+    <div class="orc-card-tool-icon p-2 rounded">
+      <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+    </div>
+  </div>
+  <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
 </div>
 <h4 class="card-title">TBA: Data Anonymization</h4> <!-- edit when available -->
 <p class="card-text">Implement data anonymization techniques in R. (X h)</p> <!-- edit when available -->
 <a href="#" class="stretched-link" rel="noopener"></a><!-- Add link when available -->
 </div>
-
+```
 :::
 
 ::: {.col}
-<div class="card orc-card-tool w-100 h-100 position-relative">
-<span class="orc-card-tool-badge recommended">OSC Tutorial</span>
-<div class="orc-card-tool-icons mb-2">
-<div class="orc-card-tool-icon icon-1">
-<img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
-</div>
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+  <div class="d-flex gap-2">
+    <div class="orc-card-tool-icon p-2 rounded">
+      <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+    </div>
+  </div>
+  <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
 </div>
 <h4 class="card-title">Power Analysis</h4>
 <p class="card-text">Data simulations for GLMs, LMEs, and SEMs in R. (6h)</p>
 <a href="https://lmu-osc.github.io/Simulations-for-Advanced-Power-Analyses/" class="stretched-link" target="_blank" rel="noopener">
 </a>
 </div>
-
+```
 :::
 
 :::
@@ -644,51 +674,57 @@ The specific questions vary by discipline, data type, and funder requirements. D
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4 .mb-4}
 
 ::: {.col}
-
-<div class="card orc-card-tool w-100 h-100 position-relative">
-<span class="orc-card-tool-badge recommended">OSC Lecture</span>
-<div class="orc-card-tool-icons mb-2">
-<div class="orc-card-tool-icon icon-1">
-<img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
-</div>
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+  <div class="d-flex gap-2">
+    <div class="orc-card-tool-icon p-2 rounded">
+      <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+    </div>
+  </div>
+  <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Lecture</span>
 </div>
 <h4 class="card-title">Why share data openly?</h4>
 <p class="card-text">An introduction to the what, why, and how to make data open (30 min)</p>
 <a href="https://lmu-osc.github.io/training/data-management/open-data.html" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
-
+```
 :::
 
 ::: {.col}
-
-<div class="card orc-card-tool w-100 h-100 position-relative">
-<span class="orc-card-tool-badge recommended">OSC Lecture</span>
-<div class="orc-card-tool-icons mb-2">
-<div class="orc-card-tool-icon icon-1">
-<img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
-</div>
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+  <div class="d-flex gap-2">
+    <div class="orc-card-tool-icon p-2 rounded">
+      <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+    </div>
+  </div>
+  <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Lecture</span>
 </div>
 <h4 class="card-title">Maintaining Privacy with Open Data</h4>
 <p class="card-text">How to make data open without revealing sensitive information (1h)</p>
 <a href="https://lmu-osc.github.io/training/data-management/maintaining-privacy-with-open-data.html" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
-
+```
 :::
 
 ::: {.col}
-
-<div class="card orc-card-tool w-100 h-100 position-relative">
-<span class="orc-card-tool-badge recommended">OSC Tutorial</span>
-<div class="orc-card-tool-icons mb-2">
-<div class="orc-card-tool-icon icon-1">
-<img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
-</div>
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+  <div class="d-flex gap-2">
+    <div class="orc-card-tool-icon p-2 rounded">
+      <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+    </div>
+  </div>
+  <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
 </div>
 <h4 class="card-title">Data Management Plans</h4>
 <p class="card-text">Overview of components, tips, and tools. (30 min)</p>
 <a href="https://lmu-osc.github.io/FAIR-Data-Management/dmp.html" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
-
+```
 :::
 
 :::
@@ -698,36 +734,39 @@ The specific questions vary by discipline, data type, and funder requirements. D
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
 
 ::: {.col}
-
-<div class="card orc-card-tool h-100 position-relative">
-<span class="orc-card-tool-badge recommended">Supported at LMU</span>
-<div class="orc-card-tool-icons mb-2">
-<div class="orc-card-tool-icon icon-1">
-<img src="https://cms-cdn.lmu.de/assets/img/favicon.ico" class="img-fluid" alt="LMU logo">
-</div>
-<div class="orc-card-tool-icon icon-2">
-<img src="https://rdmorganiser.github.io/img/logos/RDMO-logo.png" class="img-fluid" alt="RDMO logo">
-</div>
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+  <div class="d-flex gap-2">
+    <div class="orc-card-tool-icon p-2 rounded">
+      <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+    </div>
+    <div class="orc-card-tool-icon p-2 rounded">
+      <img src="https://rdmorganiser.github.io/img/logos/RDMO-logo.png" class="img-fluid" alt="RDMO logo">
+    </div>
+  </div>
+  <span class="badge rounded-5 bg-success-subtle text-success align-self-start">Supported at LMU</span>
 </div>
 <h4 class="card-title">RDMO</h4>
 <p class="card-text">Funder-compliant DMP templates (e.g. DFG, ERC).</p>
 <a href="https://rdmo.ub.lmu.de/" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
-
+```
 :::
 
 
 ::: {.col}
 
-<div class="card orc-card-tool w-100 h-100 position-relative">
-<div class="orc-card-tool-icon mb-2">
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
 <img src="https://riojournal.com/i/ico/rio.ico" class="img-fluid" alt="RIOjournal icon">
 </div>
 <h4 class="card-title">RIOjournal</h4>
 <p class="card-text"> Examples of DMPs by discipline. </p>
 <a href="https://riojournal.com/browse_journal_articles.php?form_name=filter_articles&selfurl=&backurl=&sortby=0&journal_id=17" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
-
+```
 :::
 
 :::
@@ -829,18 +868,21 @@ After completing the study, authors add results and discussion sections, clearly
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4 .mb-4}
 
 ::: {.col}
-<div class="card orc-card-tool w-100 h-100 position-relative">
-<span class="orc-card-tool-badge recommended">OSC Tutorial</span>
-<div class="orc-card-tool-icons mb-2">
-<div class="orc-card-tool-icon icon-1">
-<img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
-</div>
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+  <div class="d-flex gap-2">
+    <div class="orc-card-tool-icon p-2 rounded">
+      <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+    </div>
+  </div>
+  <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
 </div>
 <h4 class="card-title">TBA: Preregistration tutorial</h4><!-- edit when available -->
 <p class="card-text">Step-by-step guide to creating preregistration. (Xh)</p><!-- edit when available -->
 <a href="#" class="stretched-link"></a><!-- edit when available -->
 </div>
-
+```
 :::
 
 :::
@@ -850,23 +892,27 @@ After completing the study, authors add results and discussion sections, clearly
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
 
 ::: {.col}
-<div class="card orc-card-tool w-100 h-100 position-relative">
-<span class="orc-card-tool-badge recommended">OSC Tool</span>
-<div class="orc-card-tool-icons mb-2">
-<div class="orc-card-tool-icon icon-1">
-<img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
-</div>
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+  <div class="d-flex gap-2">
+    <div class="orc-card-tool-icon p-2 rounded">
+      <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+    </div>
+  </div>
+  <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tool</span>
 </div>
 <h4 class="card-title">P-hacking tool</h4>
 <p class="card-text">Interactive app to realize how easy it is to find false "significant" results.</p>
 <a href="https://shinyapps.org/apps/p-hacker/" class="stretched-link"></a>
 </div>
-
+```
 :::
 
 ::: {.col}
-<div class="card orc-card-tool w-100 h-100 position-relative">
-<div class="orc-card-tool-icon mb-2">
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Open_Science_Framework_log_%28and_Center_for_Open_Science_logo%29.svg/3840px-Open_Science_Framework_log_%28and_Center_for_Open_Science_logo%29.svg.png" alt="COS icon" class="img-fluid">
 </div>
 <h4 class="card-title">Center for Open Science</h4>
@@ -874,12 +920,13 @@ After completing the study, authors add results and discussion sections, clearly
 <a href="https://www.cos.io/initiatives/registered-reports" class="stretched-link" target="_blank" rel="noopener">
 </a>
 </div>
-
+```
 :::
 
 ::: {.col}
-<div class="card orc-card-tool w-100 h-100 position-relative">
-<div class="orc-card-tool-icon mb-2">
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Open_Science_Framework_log_%28and_Center_for_Open_Science_logo%29.svg/3840px-Open_Science_Framework_log_%28and_Center_for_Open_Science_logo%29.svg.png" alt="OSF icon" class="img-fluid">
 </div>
 <h4 class="card-title">Open Science Framework</h4>
@@ -888,7 +935,7 @@ Preregistration templates, embargoes, file storage.
 </p>
 <a href="https://help.osf.io/article/330-welcome-to-registrations" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
-
+```
 :::
 
 :::
@@ -927,37 +974,42 @@ Generating an artificial dataset in R (see our [simulation tutorial](https://lmu
 
 <!-- card -->
 ::: {.col}
-
-<div class="card orc-card-tool h-100 position-relative">
-<span class="orc-card-tool-badge recommended">OSC Tutorial</span>
-<div class="orc-card-tool-icons mb-2">
-<div class="orc-card-tool-icon icon-1">
-<img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
-</div>
-<div class="orc-card-tool-icon icon-2">
-<img src="https://www.r-project.org/logo/Rlogo.svg" class="img-fluid" alt="R logo">
-</div>
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+  <div class="d-flex gap-2">
+    <div class="orc-card-tool-icon p-2 rounded">
+      <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+    </div>
+    <div class="orc-card-tool-icon p-2 rounded">
+      <img src="https://www.r-project.org/logo/Rlogo.svg" class="img-fluid" alt="R logo">
+    </div>
+  </div>
+  <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
 </div>
 <h4 class="card-title">R Tutorial</h4>
 <p class="card-text">Learn R programming. (3h)</p>
 <a href="https://lmu-osc.github.io/introduction-to-R/" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
-
+```
 :::
 
 ::: {.col}
-<div class="card orc-card-tool w-100 h-100 position-relative">
-<span class="orc-card-tool-badge recommended">OSC Tutorial</span>
-<div class="orc-card-tool-icons mb-2">
-<div class="orc-card-tool-icon icon-1">
-<img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
-</div>
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+  <div class="d-flex gap-2">
+    <div class="orc-card-tool-icon p-2 rounded">
+      <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+    </div>
+  </div>
+  <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
 </div>
 <h4 class="card-title">Data simulation in R</h4>
 <p class="card-text">Easy data simulations in R. (2h)</p>
 <a href="https://lmu-osc.github.io/Introduction-Simulations-in-R/" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
-
+```
 :::
 
 :::
@@ -1010,37 +1062,42 @@ The **flawed version of post-hoc power** is called **“observed power”**: If 
 
 <!-- card -->
 ::: {.col}
-
-<div class="card orc-card-tool h-100 position-relative">
-<span class="orc-card-tool-badge recommended">OSC Tutorial</span>
-<div class="orc-card-tool-icons mb-2">
-<div class="orc-card-tool-icon icon-1">
-<img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
-</div>
-<div class="orc-card-tool-icon icon-2">
-<img src="https://www.r-project.org/logo/Rlogo.svg" class="img-fluid" alt="R logo">
-</div>
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+  <div class="d-flex gap-2">
+    <div class="orc-card-tool-icon p-2 rounded">
+      <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+    </div>
+    <div class="orc-card-tool-icon p-2 rounded">
+      <img src="https://www.r-project.org/logo/Rlogo.svg" class="img-fluid" alt="R logo">
+    </div>
+  </div>
+  <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
 </div>
 <h4 class="card-title">R Tutorial</h4>
 <p class="card-text">Learn R programming. (3h)</p>
 <a href="https://lmu-osc.github.io/introduction-to-R/" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
-
+```
 :::
 
 ::: {.col}
-<div class="card orc-card-tool w-100 h-100 position-relative">
-<span class="orc-card-tool-badge recommended">OSC Tutorial</span>
-<div class="orc-card-tool-icons mb-2">
-<div class="orc-card-tool-icon icon-1">
-<img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
-</div>
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+  <div class="d-flex gap-2">
+    <div class="orc-card-tool-icon p-2 rounded">
+      <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+    </div>
+  </div>
+  <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
 </div>
 <h4 class="card-title">Power Analyses</h4>
 <p class="card-text">Data simulations for GLMs, LMEs, and SEMs in R. (6h)</p>
 <a href="https://lmu-osc.github.io/Simulations-for-Advanced-Power-Analyses/" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
-
+```
 :::
 
 :::

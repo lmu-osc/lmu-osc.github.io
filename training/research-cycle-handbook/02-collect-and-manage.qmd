@@ -7,6 +7,7 @@ page-layout: full
 number-depth: 4
 number-sections: true
 number-offset: [0,2,0]
+toc: false
 css: handbook-styles.css
 title-block-style: none
 include-in-header:
@@ -14,23 +15,31 @@ include-in-header:
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 ---
 
-<div class="orc-phase-hero-compact phase-2">
-<div class="orc-hero-cycle phase-2">
+```{=html}
+<div class="orc-phase-hero phase-2 container shadow rounded-4">
+<div class="row align-items-center p-3 p-lg-4 mt-4 mb-3">
+<!-- Cycle image -->
+<div class="col-12 col-lg-3 orc-hero-cycle text-center phase-2">
 {{< include ../images/os-cycle.svg >}}
 </div>
-<div class="orc-hero-body">
-<div class="orc-hero-tagline">Build quality into your data from the start</div>
-<div class="orc-hero-pills phase-2">
-<span><i class="bi bi-check2-circle"></i> Data Collection</span>
-<span><i class="bi bi-check2-circle"></i> Data Management</span>
-<span><i class="bi bi-check2-circle"></i> Ethics & Privacy</span>
-<span><i class="bi bi-check2-circle"></i> Quality Control</span>
+<!-- Text content -->
+<div class="col-12 col-lg-9">
+<p class="lead fw-bold mb-3 fs-4 text-muted"> Build quality into your data from the start</p>
+<!-- Pills -->
+<div class="d-flex flex-wrap gap-3 mb-3">
+<span class="badge rounded-5 fs-6 fw-normal text-wrap orc-hero-pills phase-2 text-white"><i class="bi bi-check2-circle me-1"></i> Data Collection</span>
+<span class="badge rounded-5 fs-6 fw-normal text-wrap orc-hero-pills phase-2 text-white"><i class="bi bi-check2-circle me-1"></i> Data Management</span>
+<span class="badge rounded-5 fs-6 fw-normal text-wrap orc-hero-pills phase-2 text-white"><i class="bi bi-check2-circle me-1"></i> Ethics & Privacy</span>
+<span class="badge rounded-5 fs-6 fw-normal text-wrap orc-hero-pills phase-2 text-white"><i class="bi bi-check2-circle me-1"></i> Quality Control</span>
 </div>
-<div class="orc-hero-checkpoint phase-2"><i class="bi bi-people-fill"></i> Checkpoint: Data quality validation meeting</div>
+<div class="orc-hero-checkpoint phase-2 badge rounded-5 d-inline-flex align-items-center justify-content-center text-wrap white-space-normal fs-6 fw-normal text-white">
+<i class="bi bi-people-fill me-2"></i>
+Checkpoint: Data quality validation meeting
 </div>
 </div>
-
-
+</div>
+</div>
+```
 <details class="orc-details-panel">
 <summary><i class="bi bi-journal-code"></i>
 
@@ -90,15 +99,16 @@ Your protocol should specify materials with identifying details (lot numbers, ve
 <!-- card -->
 ::: {.col}
 
-<div class="card orc-card-tool h-100 position-relative">
-<div class="orc-card-tool-icon mb-2"> 
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
 <img src="data:image/jpeg;base64,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" class="img-fluid" alt="reproducibiliteach icon">
 </div>
 <h4 class="card-title">Write reusable protocols</h4>
 <p class="card-text">Understand the level of details needed for your protocols.</p>
 <a href="https://youtu.be/aKiXFzj15dg?si=ilB8aOsXArphMpfm" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
-
+```
 :::
 
 :::
@@ -111,46 +121,54 @@ Your protocol should specify materials with identifying details (lot numbers, ve
 
 <!-- card -->
 ::: {.col}
-
-<div class="card orc-card-tool h-100 position-relative">
-<span class="orc-card-tool-badge recommended">Supported at LMU</span>
-<div class="orc-card-tool-icon mb-2"> 
-<img src="https://www.elabftw.net/img/elabftw-logo-only.svg" class="img-fluid" alt="eLabFTW icon">
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+  <div class="d-flex gap-2">
+    <div class="orc-card-tool-icon p-2 rounded">
+      <img src="https://www.elabftw.net/img/elabftw-logo-only.svg" class="img-fluid" alt="eLabFTW icon">
+    </div>
+  </div>
+  <span class="badge rounded-5 bg-success-subtle text-success align-self-start">Supported at LMU</span>
 </div>
 <h4 class="card-title">eLabFTW</h4>
 <p class="card-text">Electronic Lab Notebook hosted by LMU Munich.</p>
 <a href="https://elab.ub.lmu.de/login.php" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
-
+```
 :::
 
 <!--  card -->
 ::: {.col}
-
-<div class="card orc-card-tool h-100 position-relative">
-<span class="orc-card-tool-badge recommended">Supported at LMU</span>
-<div class="orc-card-tool-icon mb-2"> 
-<img src="https://avatars.githubusercontent.com/u/83013380?v=4" class="img-fluid" alt="Chemotion icon">
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+  <div class="d-flex gap-2">
+    <div class="orc-card-tool-icon p-2 rounded">
+      <img src="https://avatars.githubusercontent.com/u/83013380?v=4" class="img-fluid" alt="Chemotion icon">
+    </div>
+  </div>
+  <span class="badge rounded-5 bg-success-subtle text-success align-self-start">Supported at LMU</span>
 </div>
 <h4 class="card-title">Chemotion</h4>
 <p class="card-text">ELN hosted by the Faculty for Chemistry and Pharmacy.</p>
 <a href="https://chemlab.cup.uni-muenchen.de/home" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
-
+```
 :::
 
 <!-- card -->
 ::: {.col}
-
-<div class="card orc-card-tool h-100 position-relative">
-<div class="orc-card-tool-icon mb-2"> 
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
 <img src="https://www.protocols.io/favicon.ico" class="img-fluid" alt="Protocols.io icon">
 </div>
 <h4 class="card-title">Protocols.io</h4>
 <p class="card-text">Share, discover, cite, and improve research protocols.</p>
 <a href="https://www.protocols.io/" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
-
+```
 :::
 
 :::
@@ -185,42 +203,46 @@ When data comes from instruments, sensors, or APIs, scripting the acquisition cr
 
 <!-- card -->
 ::: {.col}
-
-<div class="card orc-card-tool h-100 position-relative">
-<span class="orc-card-tool-badge recommended">OSC Tutorial</span>
-<div class="orc-card-tool-icons mb-2">
-<div class="orc-card-tool-icon icon-1">
-<img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
-</div>
-<div class="orc-card-tool-icon icon-2">
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/R_logo.svg/1920px-R_logo.svg.png?20240131042527" class="img-fluid" alt="R logo">
-</div>
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+  <div class="d-flex gap-2">
+    <div class="orc-card-tool-icon p-2 rounded">
+      <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+    </div>
+    <div class="orc-card-tool-icon p-2 rounded">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/R_logo.svg/1920px-R_logo.svg.png?20240131042527" class="img-fluid" alt="R logo">
+    </div>
+  </div>
+  <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
 </div>
 <h4 class="card-title">Introduction to R</h4>
 <p class="card-text">Programming fundamentals for research data processing (3h)</p>
 <a href="https://lmu-osc.github.io/introduction-to-R/" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
-
+```
 :::
 
 <!--  card -->
 ::: {.col}
-
-<div class="card orc-card-tool h-100 position-relative">
-<span class="orc-card-tool-badge recommended">OSC Tutorial</span>
-<div class="orc-card-tool-icons mb-2">
-<div class="orc-card-tool-icon icon-1">
-<img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
-</div>
-<div class="orc-card-tool-icon icon-2">
-<img src="https://git-scm.com/images/logos/logomark-orange@2x.png" class="img-fluid" alt="Git logo">
-</div>
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+  <div class="d-flex gap-2">
+    <div class="orc-card-tool-icon p-2 rounded">
+      <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+    </div>
+    <div class="orc-card-tool-icon p-2 rounded">
+      <img src="https://git-scm.com/images/logos/logomark-orange@2x.png" class="img-fluid" alt="Git logo">
+    </div>
+  </div>
+  <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
 </div>
 <h4 class="card-title">Introduction to Git</h4>
 <p class="card-text">Learn Git basics integrated with RStudio (2h).</p>
 <a href="https://lmu-osc.github.io/Introduction-RStudio-Git-GitHub/" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
-
+```
 :::
 
 :::
@@ -288,50 +310,52 @@ Personal laptops as primary storage, external drives as only copy, consumer clou
 
 <!--  card -->
 ::: {.col}
-
-<div class="card orc-card-tool h-100 position-relative">
-<span class="orc-card-tool-badge recommended">Supported at LMU</span>
-<div class="orc-card-tool-icons mb-2">
-<div class="orc-card-tool-icon icon-1">
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvQdlBHTP2IOvBeJ_S8I9z9S2BX0Qqn0twjw&s" class="img-fluid" alt="LRZ logo">
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+    <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+        <div class="d-flex gap-2">
+            <div class="orc-card-tool-icon p-2 rounded">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvQdlBHTP2IOvBeJ_S8I9z9S2BX0Qqn0twjw&s" class="img-fluid" alt="LRZ logo">
+            </div>
+        </div>
+        <span class="badge rounded-5 bg-success-subtle text-success align-self-start">Supported at LMU</span>
+    </div>
+    <h4 class="card-title">LRZ Sync & Share</h4>
+    <p class="card-text">Cloud storage service for LMU Munich</p>
+    <a href="https://syncandshare.lrz.de/login" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
-</div>
-<h4 class="card-title">LRZ Sync & Share</h4>
-<p class="card-text">Cloud storage service for LMU Munich</p>
-<a href="https://syncandshare.lrz.de/login" class="stretched-link" target="_blank" rel="noopener"> </a>
-</div>
-
+```
 :::
 
 ::: {.col}
-
-<div class="card orc-card-tool h-100 position-relative">
-<span class="orc-card-tool-badge recommended">Supported at LMU</span>
-<div class="orc-card-tool-icons mb-2">
-<div class="orc-card-tool-icon icon-1">
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvQdlBHTP2IOvBeJ_S8I9z9S2BX0Qqn0twjw&s" class="img-fluid" alt="LRZ logo">
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+    <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+        <div class="d-flex gap-2">
+            <div class="orc-card-tool-icon p-2 rounded">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvQdlBHTP2IOvBeJ_S8I9z9S2BX0Qqn0twjw&s" class="img-fluid" alt="LRZ logo">
+            </div>
+        </div>
+    <span class="badge rounded-5 bg-success-subtle text-success align-self-start">Supported at LMU</span>
+    </div>
+    <h4 class="card-title">LRZ DSS</h4>
+    <p class="card-text">Long-term archival storage for LMU Munich</p>
+    <a href="https://doku.lrz.de/data-science-storage-10745685.html" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
-</div>
-<h4 class="card-title">LRZ DSS</h4>
-<p class="card-text">Long-term archival storage for LMU Munich</p>
-<a href="https://doku.lrz.de/data-science-storage-10745685.html" class="stretched-link" target="_blank" rel="noopener"> </a>
-</div>
-
+```
 :::
 
 ::: {.col}
-
-<div class="card orc-card-tool h-100 position-relative">
-<div class="orc-card-tool-icons mb-2">
-<div class="orc-card-tool-icon icon-1">
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Open_Science_Framework_log_%28and_Center_for_Open_Science_logo%29.svg/3840px-Open_Science_Framework_log_%28and_Center_for_Open_Science_logo%29.svg.png" class="img-fluid" alt="OSF logo">
-</div>
-</div>
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+    <div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Open_Science_Framework_log_%28and_Center_for_Open_Science_logo%29.svg/3840px-Open_Science_Framework_log_%28and_Center_for_Open_Science_logo%29.svg.png" class="img-fluid" alt="OSF logo">
+    </div>
 <h4 class="card-title">OSF</h4>
 <p class="card-text">Research project management platform including storage.</p>
 <a href="https://osf.io/" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
-
+```
 :::
 
 :::
@@ -369,18 +393,21 @@ A pattern like `YYYYMMDD_project_condition_type_v01.ext` places files in chronol
 
 <!-- card -->
 ::: {.col}
-<div class="card orc-card-tool h-100 position-relative">
-<span class="orc-card-tool-badge recommended">OSC Tutorial</span>
-<div class="orc-card-tool-icons mb-2">
-<div class="orc-card-tool-icon icon-1">
-<img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+    <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+        <div class="d-flex gap-2">
+            <div class="orc-card-tool-icon p-2 rounded">
+            <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+            </div>
+        </div>
+        <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
+    </div>
+    <h4 class="card-title">Data Organization</h4>
+    <p class="card-text">Folder structure and naming conventions. (30 min)</p>
+    <a href="https://lmu-osc.github.io/FAIR-Data-Management/data-organisation.html" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
-</div>
-<h4 class="card-title">Data Organization</h4>
-<p class="card-text">Folder structure and naming conventions. (30 min)</p>
-<a href="https://lmu-osc.github.io/FAIR-Data-Management/data-organisation.html" class="stretched-link" target="_blank" rel="noopener"> </a>
-</div>
-
+```
 :::
 
 :::
@@ -391,37 +418,37 @@ A pattern like `YYYYMMDD_project_condition_type_v01.ext` places files in chronol
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
 
 ::: {.col}
-
-<div class="card orc-card-tool h-100 position-relative">
-<span class="orc-card-tool-badge recommended">OSC Tool</span>
-<div class="orc-card-tool-icons mb-2">
-<div class="orc-card-tool-icon icon-1">
-<img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+    <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+        <div class="d-flex gap-2">
+            <div class="orc-card-tool-icon p-2 rounded">
+            <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+            </div>
+            <div class="orc-card-tool-icon p-2 rounded">
+            <img src="https://cdn.simpleicons.org/github"  class="img-fluid" alt="GitHub logo">
+            </div>
+        </div>
+        <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tool</span>
+    </div>
+    <h4 class="card-title">Research Project Template</h4> <!-- not sure why there is a white space after this title - can it be removed?-->
+    <p class="card-text">Project folder separating raw & processed data, code, and outputs.</p>
+    <a href="https://github.com/lmu-osc/research-project-template" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
-<div class="orc-card-tool-icon icon-2">
-<img src="https://cdn.simpleicons.org/github"  class="img-fluid" alt="GitHub logo">
-</div>
-</div>
-<h4 class="card-title">Research Project Template</h4> <!-- not sure why there is a white space after this title - can it be removed?-->
-<p class="card-text">Project folder separating raw & processed data, code, and outputs.</p>
-<a href="https://github.com/lmu-osc/research-project-template" class="stretched-link" target="_blank" rel="noopener"></a>
-</div>
-
+```
 :::
 
 ::: {.col}
-
-<div class="card orc-card-tool h-100 position-relative">
-<div class="orc-card-tool-icons mb-2">
-<div class="orc-card-tool-icon icon-1">
-<img src="https://rdmkit.elixir-europe.org/assets/img/apple-touch-icon.png" class="img-fluid" alt="RDMkit logo">
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+    <div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
+        <img src="https://rdmkit.elixir-europe.org/assets/img/apple-touch-icon.png" class="img-fluid" alt="RDMkit logo">
+    </div>
+    <h4 class="card-title">RDMkit</h4>
+    <p class="card-text">Domain-specific data management standards</p>
+    <a href="https://rdmkit.elixir-europe.org/your_domain" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
-</div>
-<h4 class="card-title">RDMkit</h4>
-<p class="card-text">Domain-specific data management standards</p>
-<a href="https://rdmkit.elixir-europe.org/your_domain" class="stretched-link" target="_blank" rel="noopener"></a>
-</div>
-
+```
 :::
 
 :::
@@ -454,17 +481,16 @@ Format issues often surface during quality control. The [2.4. Quality Control](#
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
 
 ::: {.col}
-
-<div class="card orc-card-tool h-100 position-relative">
-<div class="orc-card-tool-icons mb-2">
-<div class="orc-card-tool-icon icon-1">
-<img src="https://rdmkit.elixir-europe.org/assets/img/apple-touch-icon.png" class="img-fluid" alt="RDMkit logo">
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+    <div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
+        <img src="https://rdmkit.elixir-europe.org/assets/img/apple-touch-icon.png" class="img-fluid" alt="RDMkit logo">
+    </div>
+    <h4 class="card-title">RDMkit</h4>
+    <p class="card-text">Domain-specific file formats and conventions</p>
+    <a href="https://rdmkit.elixir-europe.org/your_domain" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
-</div>
-<h4 class="card-title">RDMkit</h4>
-<p class="card-text">Domain-specific file formats and conventions</p>
-<a href="https://rdmkit.elixir-europe.org/your_domain" class="stretched-link" target="_blank" rel="noopener"></a>
-</div>
+```
 :::
 
 :::
@@ -489,40 +515,42 @@ Without documentation, a dataset is just a collection of files. Six months from 
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
 
 ::: {.col}
-
-<div class="card orc-card-tool h-100 position-relative">
-<span class="orc-card-tool-badge recommended">OSC Tutorial</span>
-<div class="orc-card-tool-icons mb-2">
-<div class="orc-card-tool-icon icon-1">
-<img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+    <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+        <div class="d-flex gap-2">
+            <div class="orc-card-tool-icon p-2 rounded">
+            <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+            </div>
+        </div>
+        <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
+    </div>
+    <h4 class="card-title">Principles of Data Documentation</h4>
+    <p class="card-text">Principles of README files and data dictionaries.</p>
+    <a href="https://lmu-osc.github.io/FAIR-Data-Management/documentation.html" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
-</div>
-<h4 class="card-title">Principles of Data Documentation</h4>
-<p class="card-text">Principles of README files and data dictionaries.</p>
-<a href="https://lmu-osc.github.io/FAIR-Data-Management/documentation.html" class="stretched-link" target="_blank" rel="noopener"> </a>
-</div>
-
+```
 :::
 
 ::: {.col}
-
-<div class="card orc-card-tool h-100 position-relative">
-<span class="orc-card-tool-badge recommended">OSC Tutorial</span>
-<div class="orc-card-tool-icons mb-2">
-<div class="orc-card-tool-icon icon-1">
-<img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
-</div>
-</div>
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+    <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+        <div class="d-flex gap-2">
+            <div class="orc-card-tool-icon p-2 rounded">
+            <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+            </div>
+        </div>
+        <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
+    </div>
 <h4 class="card-title">Data Documentation & Validation</h4>
 <p class="card-text">Create READMEs, data dictionaries, and validation checks for your data. (1h)</p>
 <a href="https://lmu-osc.github.io/data-documentation-validation-R/" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
-
+```
 :::
 
-
 :::
-
 
 :::
 
@@ -551,67 +579,65 @@ Standards are community agreements on how to organize and describe research data
 
 ::: {.col}
 
-<div class="card orc-card-tool h-100 position-relative">
-<div class="orc-card-tool-icons mb-2">
-<div class="orc-card-tool-icon icon-2">
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX4MByesrD50P8W0ZGn_W8RPYV8yzbtRx0RA&s" class="img-fluid" alt="EQUATOR logo">
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+    <div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX4MByesrD50P8W0ZGn_W8RPYV8yzbtRx0RA&s" class="img-fluid" alt="EQUATOR logo">
+    </div>
+    <h4 class="card-title">EQUATOR Network</h4>
+    <p class="card-text">Comprehensive database of reporting guidelines.</p>
+    <a href="https://www.equator-network.org/reporting-guidelines/" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
-</div>
-<h4 class="card-title">EQUATOR Network</h4>
-<p class="card-text">Comprehensive database of reporting guidelines.</p>
-<a href="https://www.equator-network.org/reporting-guidelines/" class="stretched-link" target="_blank" rel="noopener"> </a>
-</div>
-
+```
 :::
 
 ::: {.col}
-
-<div class="card orc-card-tool h-100 position-relative">
-<div class="orc-card-tool-icons mb-2">
-<div class="orc-card-tool-icon icon-1">
-<img src="https://avatars.githubusercontent.com/u/29867987?s=280&v=4" class="img-fluid" alt="FAIRsharing logo">
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+    <div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
+        <img src="https://avatars.githubusercontent.com/u/29867987?s=280&v=4" class="img-fluid" alt="FAIRsharing logo">
+    </div>
+    <h4 class="card-title">FAIRsharing</h4>
+    <p class="card-text">Search by discipline to find metadata standards, reporting guidelines, and data policies for your field.</p>
+    <a href="https://fairsharing.org/" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
-</div>
-<h4 class="card-title">FAIRsharing</h4>
-<p class="card-text">Search by discipline to find metadata standards, reporting guidelines, and data policies for your field.</p>
-<a href="https://fairsharing.org/" class="stretched-link" target="_blank" rel="noopener"> </a>
-</div>
-
+```
 :::
 
 ::: {.col}
-
-<div class="card orc-card-tool h-100 position-relative">
-<div class="orc-card-tool-icons mb-2">
-<div class="orc-card-tool-icon icon-1">
-<img src="https://rdmkit.elixir-europe.org/assets/img/apple-touch-icon.png" class="img-fluid" alt="RDMkit logo">
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+    <div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
+        <img src="https://rdmkit.elixir-europe.org/assets/img/apple-touch-icon.png" class="img-fluid" alt="RDMkit logo">
+    </div>
+    <h4 class="card-title">RDMkit</h4>
+    <p class="card-text">Domain-specific metadata standards</p>
+    <a href="https://rdmkit.elixir-europe.org/your_domain" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
-</div>
-<h4 class="card-title">RDMkit</h4>
-<p class="card-text">Domain-specific metadata standards</p>
-<a href="https://rdmkit.elixir-europe.org/your_domain" class="stretched-link" target="_blank" rel="noopener"></a>
-</div>
+```
 :::
 
 
 <!-- card -->
 ::: {.col}
-
-<div class="card orc-card-tool h-100 position-relative">
-<span class="orc-card-tool-badge recommended">OSC Tool</span>
-<div class="orc-card-tool-icons mb-2">
-<div class="orc-card-tool-icon icon-1">
-<img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
-</div>
-<div class="orc-card-tool-icon icon-2">
-<img src="https://cdn.simpleicons.org/github"  class="img-fluid" alt="GitHub logo">
-</div>
-</div>
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+    <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+    <div class="d-flex gap-2">
+        <div class="orc-card-tool-icon p-2 rounded">
+            <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+            </div>
+        <div class="orc-card-tool-icon p-2 rounded">
+            <img src="https://cdn.simpleicons.org/github"  class="img-fluid" alt="GitHub logo">
+        </div>
+    </div>
+    <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tool</span>
+    </div>
 <h4 class="card-title">Research Project Template</h4> 
 <p class="card-text">Project folder separating raw & processed data, code, and outputs.</p>
 <a href="https://github.com/lmu-osc/research-project-template" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
-
+```
 :::
 
 :::
@@ -657,41 +683,45 @@ In a version controlled workflow, you back up your local Git repositories on eit
 
 <!-- card -->
 ::: {.col}
-
-<div class="card orc-card-tool h-100 position-relative">
-<span class="orc-card-tool-badge recommended">OSC Tutorial</span>
-<div class="orc-card-tool-icons mb-2">
-<div class="orc-card-tool-icon icon-1">
-<img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
-</div>
-<div class="orc-card-tool-icon icon-2">
-<img src="https://www.svgrepo.com/show/303548/git-icon-logo.svg" class="img-fluid" alt="Git logo">
-</div>
-</div>
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+    <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+    <div class="d-flex gap-2">
+        <div class="orc-card-tool-icon p-2 rounded">
+            <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+        </div>
+        <div class="orc-card-tool-icon p-2 rounded">
+            <img src="https://www.svgrepo.com/show/303548/git-icon-logo.svg" class="img-fluid" alt="Git logo">
+        </div>
+    </div>
+    <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
+    </div>
 <h4 class="card-title">Introduction to Git</h4>
 <p class="card-text">Learn Git basics integrated with RStudio (2h).</p>
 <a href="https://lmu-osc.github.io/Introduction-RStudio-Git-GitHub/" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
-
+```
 :::
 
 ::: {.col}
-
-<div class="card orc-card-tool h-100 position-relative">
-<span class="orc-card-tool-badge recommended">OSC Tutorial</span>
-<div class="orc-card-tool-icons mb-2">
-<div class="orc-card-tool-icon icon-1">
-<img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
-</div>
-<div class="orc-card-tool-icon icon-2">
-<img src="https://cdn.simpleicons.org/github" class="img-fluid" alt="GitHub logo">
-</div>
-</div>
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+    <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+    <div class="d-flex gap-2">
+        <div class="orc-card-tool-icon p-2 rounded">
+            <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+        </div>
+        <div class="orc-card-tool-icon p-2 rounded">
+            <img src="https://cdn.simpleicons.org/github" class="img-fluid" alt="GitHub logo">
+        </div>
+    </div>
+    <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
+    </div>
 <h4 class="card-title">Introduction to GitHub</h4>
 <p class="card-text">Connect to GitHub from Git within RStudio (1h).</p>
 <a href="https://lmu-osc.github.io/Collaborative-RStudio-GitHub/" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
-
+```
 :::
 
 
@@ -705,35 +735,37 @@ In a version controlled workflow, you back up your local Git repositories on eit
 
 <!-- card -->
 ::: {.col}
-
-<div class="card orc-card-tool h-100 position-relative">
-<span class="orc-card-tool-badge recommended">Supported at LMU</span>
-<div class="orc-card-tool-icons mb-2">
-<div class="orc-card-tool-icon icon-1">
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvQdlBHTP2IOvBeJ_S8I9z9S2BX0Qqn0twjw&s" class="img-fluid" alt="LRZ logo">
-</div>
-<div class="orc-card-tool-icon icon-2">
-<img src="https://cdn.simpleicons.org/gitlab" class="img-fluid" alt="GitLab logo">
-</div>
-</div>
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+    <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+    <div class="d-flex gap-2">
+        <div class="orc-card-tool-icon p-2 rounded">
+            <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+        </div>
+        <div class="orc-card-tool-icon p-2 rounded">
+            <img src="https://cdn.simpleicons.org/gitlab" class="img-fluid" alt="GitLab logo">
+        </div>
+    </div>
+    <span class="badge rounded-5 bg-success-subtle text-success align-self-start">Supported at LMU</span>
+    </div>
 <h4 class="card-title">LRZ Gitlab</h4>
 <p class="card-text">Institutional Git hosting for LMU Munich.</p>
 <a href="https://gitlab.lrz.de/" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
-
+```
 :::
 
 ::: {.col} 
-
-<div class="card orc-card-tool h-100 position-relative">
-<div class="orc-card-tool-icon mb-2"> 
-<img src="https://avatars.githubusercontent.com/u/8927200?s=280&v=4" class="img-fluid" alt="GitLab icon">
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+    <div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
+        <img src="https://avatars.githubusercontent.com/u/8927200?s=280&v=4" class="img-fluid" alt="GitLab icon">
+    </div>
+    <h4 class="card-title">DataLad</h4>
+    <p class="card-text">Version control for large datasets</p>
+    <a href="https://www.datalad.org/" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
-<h4 class="card-title">DataLad</h4>
-<p class="card-text">Version control for large datasets</p>
-<a href="https://www.datalad.org/" class="stretched-link" target="_blank" rel="noopener"></a>
-</div>
-
+```
 :::
 
 :::
@@ -783,16 +815,16 @@ Participants have the right to understand what they are agreeing to. Your consen
 
 <!-- card -->
 ::: {.col}
-
-<div class="card orc-card-tool h-100 position-relative">
-<div class="orc-card-tool-icon mb-2"> 
-<img src="https://www.uu.nl//themes/custom/corp/src/images/favicons/apple-touch-icon.png" class="img-fluid" alt="University of Utrecht icon">
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+    <div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
+        <img src="https://www.uu.nl//themes/custom/corp/src/images/favicons/apple-touch-icon.png" class="img-fluid" alt="University of Utrecht icon">
+    </div>
+    <h4 class="card-title">How to write an informed consent form</h4>
+    <p class="card-text">University of Utrecht RDM guide.</p>
+    <a href="https://www.uu.nl/en/research/research-data-management/guides/legal-considerations/how-to-write-an-informed-consent-form" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
-<h4 class="card-title">How to write an informed consent form</h4>
-<p class="card-text">University of Utrecht RDM guide.</p>
-<a href="https://www.uu.nl/en/research/research-data-management/guides/legal-considerations/how-to-write-an-informed-consent-form" class="stretched-link" target="_blank" rel="noopener"></a>
-</div>
-
+```
 :::
 
 :::
@@ -831,33 +863,39 @@ Anonymization protects privacy and determines what you can share.
 
 <!--  card -->
 ::: {.col}
-<div class="card orc-card-tool w-100 h-100 position-relative">
-<span class="orc-card-tool-badge recommended">OSC Tutorial</span>
-<div class="orc-card-tool-icons mb-2">
-<div class="orc-card-tool-icon icon-1">
-<img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
-</div>
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+  <div class="d-flex gap-2">
+    <div class="orc-card-tool-icon p-2 rounded">
+      <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+    </div>
+  </div>
+  <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
 </div>
 <h4 class="card-title">TBA: Data Anonymization</h4> <!-- edit when available -->
 <p class="card-text">Implement data anonymization techniques in R. (X h)</p> <!-- edit when available -->
 <a href="#" class="stretched-link" rel="noopener"></a><!-- Add link when available -->
 </div>
+```
 :::
 
 ::: {.col}
-
-<div class="card orc-card-tool h-100 position-relative">
-<span class="orc-card-tool-badge recommended">OSC Tutorial</span>
-<div class="orc-card-tool-icons mb-2">
-<div class="orc-card-tool-icon icon-1">
-<img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
-</div>
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+  <div class="d-flex gap-2">
+    <div class="orc-card-tool-icon p-2 rounded">
+      <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+    </div>
+  </div>
+  <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
 </div>
 <h4 class="card-title">Synthetic Data</h4>
 <p class="card-text">Synthetic data creation in R to balance utility and privacy when sharing data. (3h)</p>
 <a href="https://lmu-osc.github.io/synthetic-data-tutorial/" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
-
+```
 :::
 
 :::
@@ -914,19 +952,21 @@ Validation checks whether your data meets specifications. For example, values ca
 
 <!-- card -->
 ::: {.col}
-
-<div class="card orc-card-tool h-100 position-relative">
-<span class="orc-card-tool-badge recommended">OSC Tutorial</span>
-<div class="orc-card-tool-icons mb-2">
-<div class="orc-card-tool-icon icon-1">
-<img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
-</div>
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+  <div class="d-flex gap-2">
+    <div class="orc-card-tool-icon p-2 rounded">
+      <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+    </div>
+  </div>
+  <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
 </div>
 <h4 class="card-title">Data Documentation & Validation</h4>
 <p class="card-text">Create validation rules and automated checks for your research data. (1h)</p>
 <a href="https://lmu-osc.github.io/data-documentation-validation-R/" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
-
+```
 :::
 
 :::

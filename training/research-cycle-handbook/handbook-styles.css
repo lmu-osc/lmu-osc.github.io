@@ -134,66 +134,20 @@ h2 i, h3 i{ color: var(--orc-green); margin-right: .5rem; }
    3. CARDS
    ======================================== */
 
-.orc-card, .orc-card-tool {
-  background: var(--osc-bg);
-  border: none;
-  border-radius: var(--orc-radius-lg);
-  padding: .875rem;
-  box-shadow: var(--orc-shadow-sm);
-  transition: var(--orc-transition);
-}
-‚
 .orc-card-tool{
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   cursor: pointer;
-  height: 100%;
-  position:relative;
-  overflow: visible;
-}
-
-.orc-card { padding: 1rem; }
-.orc-card ul { margin: 0; padding-left: 1.25rem; font-size: .875rem; }
-.orc-card li { margin-bottom: .125rem; }
-
-
-.orc-card-tool-icons {
-  display: flex;
-  flex-direction: row;
-  gap:0.5rem;
+  border:none;
+  box-shadow: var(--orc-shadow-sm);
 }
 .orc-card-tool-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 44px;
-  height: 44px;
-  font-size: 1.5rem;
-  color: var(--orc-green);
   background: var(--orc-green-light);
-  border-radius: var(--orc-radius);
-  margin-bottom: .75rem;
 }
 
 .orc-card-tool-icon img { width: 1.5rem; height: 1.5rem; }
+.orc-card-tool h4 { font-size: 1.125rem; font-weight: 600; color: var(--orc-gray-700); line-height: 1.3; }
+.orc-card-tool p { font-size: 1rem; color: var(--orc-gray-400);line-height: 1.5; }
 
-.orc-card-tool h4 { margin: 0 0 .35rem; font-size: 1.125rem; font-weight: 600; color: var(--orc-gray-700); line-height: 1.3; }
-.orc-card-tool p { font-size: 1rem; color: var(--orc-gray-400); margin-bottom: 0; line-height: 1.5; }
-
-.orc-card-tool-badge {
-  display: flex;
-  width:fit-content;
-  margin-left: auto;
-  margin-bottom:-30px;
-  z-index:2;
-  background: var(--orc-gray-100);
-  color: var(--orc-gray-600);
-  font-size: .75rem;
-  padding: .3rem .7rem;
-  border-radius: var(--orc-radius-full);
-  font-weight: 600;
-  text-decoration: none;
-  
-}
 
 .orc-grid-tools a,
 .orc-column a {
@@ -207,7 +161,6 @@ h2 i, h3 i{ color: var(--orc-green); margin-right: .5rem; }
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
   cursor: pointer;
 }
-.orc-card-tool-badge.recommended { background: var(--orc-green-light); color: var(--orc-green); }
 
 /* ========================================
    4. DETAILS PANELS
@@ -452,92 +405,63 @@ svg :is(text, tspan) { font-family: inherit !important; font-weight: bold; point
    10. PHASE HERO
    ======================================== */
 
-.orc-hero-cycle[class*="phase-"] [id^="phase-"] { opacity: .25; }
-.orc-hero-cycle[class*="phase-"] [id^="path1"] { fill-opacity: .25; }
+.orc-hero-cycle[class*="phase-"] [id^="phase-"] { opacity: .20; }
+.orc-hero-cycle[class*="phase-"] [id^="path1"] { fill-opacity: .20; }
 .orc-hero-cycle.phase-1 #phase-1,
 .orc-hero-cycle.phase-2 #phase-2,
 .orc-hero-cycle.phase-3 #phase-3,
 .orc-hero-cycle.phase-4 #phase-4 { opacity: 1; }
 
-.orc-phase-hero-compact{
-  display: flex;
-  align-items: center;
-  gap: 2.5rem;
-  padding: 2rem 2.5rem;
-  margin-bottom: 3rem;
-  background: var(--orc-green-light);
-  border-radius: 16px;
-  color: white;
-  box-shadow: var(--orc-shadow-md);
-}
-
-.orc-phase-hero-compact .orc-hero-cycle { width: 210px; height: 210px; flex-shrink: 0; }
-.orc-phase-hero-compact .orc-hero-cycle svg { width: 100%; height: 100%; }
-.orc-phase-hero-compact .orc-hero-body { flex: 1; display: flex; flex-direction: column; gap: .75rem; }
-.orc-phase-hero-compact h2 { margin: 0; font-size: 2.5rem; font-weight: 700; color: white !important; border-bottom: none; line-height: 1.2; }
-.orc-hero-tagline { margin: 0; font-size: 1.4rem; font-weight: 600; color:var(--orc-gray-600); }
-.orc-phase-hero-compact .orc-hero-pills { display: flex; flex-wrap: wrap; gap: .75rem 2rem; }
-.orc-phase-hero-compact .orc-hero-pills span {
-  display: inline-flex;
-  align-items: center;
-  gap: .75rem;
-  padding: .3rem 1rem;
-  background: var(--orc-green);
-  border-radius: var(--orc-radius-full);
-  font-size: 1rem;
+.orc-hero-cycle svg {   width: 100%; max-width: 230px;height: auto;}
+.orc-phase-hero .orc-hero-pills span {
+  font-size: 0.98rem;
   font-weight: 500;
-  margin-top: 0.5rem;
 }
-
-.orc-phase-hero-compact .orc-hero-pills span i { color: white; font-size: 1.25rem; }
-.orc-phase-hero-compact .orc-hero-checkpoint {
-  display: inline-flex;
-  align-items: center;
-  gap: .5rem;
-  padding: .4rem 0.9rem;
-  background: var(--orc-green);
-  border-radius: var(--orc-radius-full);
-  font-size: .875rem;
-  font-weight: 600;
-  margin-top: .25rem;
-  width: fit-content;
-}
-.orc-phase-hero-compact .orc-hero-checkpoint i { font-size: .90em; }
-
 /* Phase-specific color styles */
-.orc-phase-hero-compact.phase-1 { background: #619ef916;}
-.orc-gradient-box.plan-design-checklist { background: #619ef916; border-left-color:#0166ffa1;}
-.orc-gradient-box.plan-design-checklist h2, .orc-gradient-box.plan-design-checklist .checklist-icon{color:#0166ffa1;}
-.orc-phase-hero-compact .orc-hero-pills.phase-1 span,
-.orc-phase-hero-compact .orc-hero-checkpoint.phase-1 { background:#0166ffa1;}
-.orc-checklist-download.phase-1 .btn-outline-secondary{border-color: #0166ffa1;color: #0166ffa1;}
-.orc-checklist-download.phase-1 .btn-outline-secondary:hover,
-.orc-checklist-download.phase-1 .btn-outline-secondary:focus,
-.orc-checklist-download.phase-1 .btn-outline-secondary:active{
-  border-color: #0166ffa1 !important;
+
+.orc-phase-hero.phase-1{ background: #eef2fb;}
+.orc-hero-pills.phase-1, .orc-hero-checkpoint.phase-1 { background:#0066ff;border:1px solid #004ecc;}
+.orc-gradient-box.plan-design-checklist { background:#eef2fb; border-left-color:#0066ff;}
+.orc-gradient-box.plan-design-checklist h2, .orc-gradient-box.plan-design-checklist .checklist-icon{color:#004ecc;}
+.orc-checklist-download.phase-1 .btn.btn-outline-secondary.btn-sm{border-color: #004ecc; color: #004ecc;}
+.orc-checklist-download.phase-1 .btn.btn-outline-secondary.btn-sm:hover{
+  border-color: #0066ff!important;
   color: white!important;
-  background: #0166ffa1 !important;
+  background: #0066ff !important;
 }
 
-.orc-phase-hero-compact.phase-2 { background: rgb(243 120 181 / 4%)}
-.orc-gradient-box.collect-manage-checklist { background: rgb(243 120 181 / 4%); border-left-color: #cc01667a;}
-.orc-gradient-box.collect-manage-checklist h2, .orc-gradient-box.collect-manage-checklist .checklist-icon{color: #cc01667a;}
-.orc-phase-hero-compact .orc-hero-pills.phase-2 span,
-.orc-phase-hero-compact .orc-hero-checkpoint.phase-2 { background: #cc01667a;}
-.orc-checklist-download.phase-2 .btn-outline-secondary{border-color: #cc01667a; color:#cc01667a;}
-.orc-checklist-download.phase-2 .btn-outline-secondary:hover,
-.orc-checklist-download.phase-2 .btn-outline-secondary:focus,
-.orc-checklist-download.phase-2 .btn-outline-secondary:active{
-  border-color: #cc01667a !important;
+.orc-phase-hero.phase-2 { background: #fff5f9;}
+.orc-hero-pills.phase-2, .orc-hero-checkpoint.phase-2 { background: #cc0066; border:1px solid #a8004f;}
+.orc-gradient-box.collect-manage-checklist { background: #fff5f9; border-left-color:#cc0066;}
+.orc-gradient-box.collect-manage-checklist h2, .orc-gradient-box.collect-manage-checklist .checklist-icon{color:#a8004f;}
+.orc-checklist-download.phase-2 .btn.btn-outline-secondary.btn-sm{border-color: #a8004f; color:#a8004f;}
+.orc-checklist-download.phase-2 .btn.btn-outline-secondary.btn-sm:hover{
+  border-color: #cc0066 !important;
   color: white!important;
-  background: #cc01667a !important;
+  background:#cc0066!important;
 }
 
-.orc-phase-hero-compact.phase-3 { background: #fefdf8}
-.orc-gradient-box.analyze-collaborate-checklist { background: #fefdf8; border-left-color: #d5a0037d;}
-.orc-phase-hero-compact .orc-hero-pills.phase-3 span,
-.orc-phase-hero-compact .orc-hero-checkpoint.phase-3 { background: #d5a0037d;}
+.orc-phase-hero.phase-3 { background:#fffbee;}
+.orc-hero-pills.phase-3, .orc-hero-checkpoint.phase-3 { background: #ffc000; border:1px solid #e6a800;color:#3d2000;}
+.orc-gradient-box.analyze-collaborate-checklist { background: #fffbee; border-left-color: #ffc000;}
+.orc-gradient-box.analyze-collaborate-checklist h2, .orc-gradient-box.analyze-collaborate-checklist .checklist-icon{color:#3d2000;}
+.orc-checklist-download.phase-3 .btn.btn-outline-secondary.btn-sm{border-color:#e6a800; color:#e6a800;}
+.orc-checklist-download.phase-3 .btn.btn-outline-secondary.btn-sm:hover{
+  border-color: #ffc000 !important;
+  color: white!important;
+  background: #ffc000!important;
+}
 
+.orc-phase-hero.phase-4 { background:#edfff5;}
+.orc-hero-pills.phase-4, .orc-hero-checkpoint.phase-4 { background: #00c057; border:1px solid #00a048;color:#002a18;}
+.orc-gradient-box.preserve-share-checklist { background: #edfff5; border-left-color: #00c057;}
+.orc-gradient-box.preserve-share-checklist h2, .orc-gradient-box.preserve-share-checklist .checklist-icon{color: #002a18;}
+.orc-checklist-download.phase-4 .btn.btn-outline-secondary.btn-sm{border-color:#00a048; color:#00a048;}
+.orc-checklist-download.phase-4 .btn.btn-outline-secondary.btn-sm:hover{
+  border-color:#00c057 !important;
+  color: white!important;
+  background: #00c057!important;
+}
 
 
 /* ========================================
@@ -548,11 +472,6 @@ svg :is(text, tspan) { font-family: inherit !important; font-weight: bold; point
   .orc-grid-tools { grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); }
 }
 
-@media (max-width: 768px) {
-  .orc-phase-hero-compact { flex-direction: column; text-align: center; padding: 1.5rem; }
-  .orc-phase-hero-compact .orc-hero-pills { justify-content: center; }
-  .orc-phase-hero-compact .orc-hero-checkpoint { margin: .5rem auto 0; }
-}
 
 @media (max-width: 600px) {
   .orc-two-column { grid-template-columns: 1fr; }
