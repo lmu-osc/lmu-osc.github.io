@@ -2,11 +2,24 @@
 // solution to hide the title without affecting other pages.
 
 document.addEventListener("DOMContentLoaded", function () {
-  const title = document.querySelector(
-    "div.quarto-title-banner.page-columns.page-full div.quarto-title.column-body h1.title"
-  );
+  // Try multiple selectors to find the title
+  const selectors = [
+    "div.quarto-title-banner h1.title",
+  ];
+  
+  let title = null;
+  for (const selector of selectors) {
+    title = document.querySelector(selector);
+    if (title) {
+      console.log("Found title with selector:", selector);
+      break;
+    }
+  }
 
   if (title) {
     title.remove();
+    console.log("Title removed successfully");
+  } else {
+    console.log("Title element not found");
   }
 });
