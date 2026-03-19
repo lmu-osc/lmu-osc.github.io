@@ -25,6 +25,48 @@ title-block-banner: "assets/img/osc_image_assets/Banner1.jpg"
 include-after-body:
   - text: |
       <script src="/assets/javascript/remove_title.js" defer></script>
+  - text: |
+      <script>
+      (function () {
+        function equalizeNewsCarouselTextHeights() {
+          var carousel = document.getElementById('newsCardCarousel');
+          if (!carousel) return;
+
+          var slides = carousel.querySelectorAll('.carousel-item');
+          if (!slides.length) return;
+
+          var titles = carousel.querySelectorAll('.carousel-item .card-title');
+          var bodies = carousel.querySelectorAll('.carousel-item .card-text');
+
+          titles.forEach(function (el) { el.style.minHeight = ''; });
+          bodies.forEach(function (el) { el.style.minHeight = ''; });
+
+          var maxTitleHeight = 0;
+          var maxBodyHeight = 0;
+
+          titles.forEach(function (el) {
+            maxTitleHeight = Math.max(maxTitleHeight, el.getBoundingClientRect().height);
+          });
+          bodies.forEach(function (el) {
+            maxBodyHeight = Math.max(maxBodyHeight, el.getBoundingClientRect().height);
+          });
+
+          var titleHeightPx = Math.ceil(maxTitleHeight) + 'px';
+          var bodyHeightPx = Math.ceil(maxBodyHeight) + 'px';
+
+          titles.forEach(function (el) { el.style.minHeight = titleHeightPx; });
+          bodies.forEach(function (el) { el.style.minHeight = bodyHeightPx; });
+        }
+
+        function runEqualization() {
+          window.requestAnimationFrame(equalizeNewsCarouselTextHeights);
+        }
+
+        document.addEventListener('DOMContentLoaded', runEqualization);
+        window.addEventListener('load', runEqualization);
+        window.addEventListener('resize', runEqualization);
+      })();
+      </script>
 include-in-header:
   - text: |
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -308,6 +350,19 @@ include-in-header:
          ============================================= */
         #newsCardCarousel {
           padding-bottom: 3rem;
+          --news-max-body-lines: 3;
+        }
+
+        #newsCardCarousel .carousel-item .card-title,
+        #newsCardCarousel .carousel-item .card-text {
+          overflow-wrap: anywhere;
+        }
+
+        #newsCardCarousel .carousel-item .card-text {
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: var(--news-max-body-lines);
+          overflow: hidden;
         }
 
         #newsCardCarousel .carousel-control-prev-icon,
@@ -329,7 +384,7 @@ include-in-header:
         }
         #newsCardCarousel .carousel-control-next,
         #newsCardCarousel .carousel-control-prev {
-          top: 85%;
+          top: 87.5%;
           width: 25px;
           height: 25px;
           color: #000000e6;
@@ -638,7 +693,7 @@ Keep up to date with our latest news releases, and upcoming events.
         <div class="carousel-item active">
           <h6 class="card-subtitle mb-2 text-body-secondary" style="font-size:0.87rem;">Jul 7, 2025</h6>
           <h5 class="card-title">Launching of LMU-FORRT Train-the-Trainer Program</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content.</p>
           <a href="#" class="btn btn-link p-0 fw-semibold small">Read More →</a>
         </div>
         <div class="carousel-item">
