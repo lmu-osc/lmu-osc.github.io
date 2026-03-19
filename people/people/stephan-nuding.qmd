@@ -1,0 +1,29 @@
+---
+title: Stephan Nuding
+academic_title: M.Sc.
+name: Stephan Nuding
+surname: Nuding
+first_name: Stephan
+categories:
+  - Psychology & Education
+memberships:
+  - type: fellow
+    status: active
+    position: Ph.D. Candidate
+    faculty: Psychology & Education
+email: stephan.nuding@psy.lmu.de
+links:
+  - label: 'LMU Profile'
+    url: https://www.lmu.de/psyedu/de/personen/kontaktseite/stephan-nuding-10b78986.html
+photo: 'images/nuding_stephan.jpg'
+social_media:
+  ORCID: 'https://orcid.org/0000-0002-8997-2230'
+mission_statement: |
+  Open Science is essential to enable scientists to conduct interrelated and more credible research with a set of common standards as a foundation, thus improving their own individual research. Within the Journal Club I support the process of finding new presenters as well as the discussion sessions. So far, I conduct especially preregistration, open data and materials.
+
+
+template: templates/people-template.html
+filters: 
+    - templates/people_filter.lua
+---
+

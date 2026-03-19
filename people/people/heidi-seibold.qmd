@@ -1,0 +1,29 @@
+---
+title: Heidi Seibold
+academic_title: Dr.
+name: Heidi Seibold
+surname: Seibold
+first_name: Heidi
+categories:
+  - Affiliate
+memberships:
+  - type: affiliate
+    status: active
+    role: Trainer and Consultant
+    organization: Digital Research Academy
+email: heidi@seibold.co
+photo: 'images/seibold_heidi.jpg'
+links:
+  - label: 'Personal Website'
+    url: https://heidiseibold.com/
+social_media:
+  ORCID: 'https://orcid.org/0000-0002-8960-9642'
+mission_statement: |
+  I am an advocate for open and reproducible research. I teach courses on good scientific practice and computational reproducibility and try to improve the way the research community operates.
+
+
+template: templates/people-template.html
+filters: 
+    - templates/people_filter.lua
+---
+

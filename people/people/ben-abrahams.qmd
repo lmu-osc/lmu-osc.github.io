@@ -1,0 +1,29 @@
+---
+title: Ben Abrahams
+academic_title: M.Sc.
+name: Ben Abrahams
+surname: Abrahams
+first_name: Ben
+categories:
+  - Medicine
+memberships:
+  - type: fellow
+    status: alumni
+    position: M.Sc. Student
+    faculty: Medicine
+    start: 2025
+    end: 2025
+  - type: staff
+    status: alumni
+    position: Research Assistant - Software Developer
+    start: 2025
+    end: 2025
+email: 
+photo: 
+mission_statement: ""
+
+template: templates/people-template.html
+filters: 
+    - templates/people_filter.lua
+---
+

@@ -1,0 +1,31 @@
+---
+title: Hans-Bernd Brosius
+academic_title: Prof. Dr.
+name: Hans-Bernd Brosius
+surname: Brosius
+first_name: Hans-Bernd
+categories:
+  - Social Sciences
+memberships:
+  - type: lmu-individual
+    status: active
+    position: Chair
+    faculty: Social Sciences
+email: hans-bernd.brosius@ifkw.lmu.de
+photo: 'images/brosius_hans-bernd.jpg'
+links:
+  - label: 'LMU Profile'
+    url: https://www.en.ls1.ifkw.uni-muenchen.de/staff/chair/brosius_hansbernd/index.html
+social_media:
+  ORCID: 'https://orcid.org/0000-0001-7544-398X'
+mission_statement: |
+  I am professor for Empirical Communication Research at the Department of Communication Studies and Media Research.
+
+  In my field of research, Open Science, reproducibility, and replicability are intensively discussed. We are thinking about replication journals, regulations for data archiving, and Open Access. However, no structural decisions have been made so far, neither at our department nor in the field as far as I oversee it.
+
+
+template: templates/people-template.html
+filters: 
+    - templates/people_filter.lua
+---
+

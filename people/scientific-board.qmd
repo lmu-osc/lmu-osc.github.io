@@ -4,14 +4,27 @@ listing:
   - id: current-scientific-board
     contents: 
       - people
-    template: listings/management-listing.ejs
+    template: listings/active-scientific-board-listing.ejs
     sort: "surname asc"
-    include: 
-      membertype: "current scientific board"
+  - id: alumni-scientific-board
+    contents:
+      - people
+    template: listings/alumni-scientific-board-listing.ejs
+    sort: "surname asc"
+
 ---
-The OSC is directed by a board of five scientific members and managed by a managing director. The board is elected every two years by the members of the OSC at a general meeting. The board members are supposed to represent various disciplines. The scientific board members for the current term (2025 - 2027) are:
+The OSC is steered by an interdisciplinary scientific board elected every two years by the members of the OSC during a general assembly.
 
 ## Current Scientific Board
 
 ::: {#current-scientific-board}
 :::
+
+
+## Former Scientific Board Members
+
+
+::: {#alumni-scientific-board}
+:::   
+ 
+

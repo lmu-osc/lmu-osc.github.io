@@ -1,0 +1,26 @@
+---
+title: Po-Chun Tseng
+academic_title: DDS, MSc
+name: Po-Chun Tseng
+surname: Tseng
+first_name: Po-Chun
+categories:
+  - Medicine
+memberships:
+  - type: fellow
+    status: alumni
+    position: Ph.D. Candidate
+    faculty: Medicine
+email: p.tseng@campus.lmu.de
+photo: 'images/tseng_po-chun.jpg'
+social_media:
+  ORCID: 'https://orcid.org/0000-0002-1592-0905'
+mission_statement: |
+  I am addressing topics of dental biomechanics and digital dentistry using almost exclusively open-source packages. To empower enthusiastic users, I always follow open science principles and make the projects fully open to the research community. My ultimate goal is to introduce more deductive thinking to the clinical practice in dentistry. Inspired by the AI Safety Fundamentals program held by Effective Altruism Germany, I am also concerned about how AI impacts the current practice of academia. Open science could play a pivotal role in mitigating the potential harm.
+
+
+template: templates/people-template.html
+filters: 
+    - templates/people_filter.lua
+---
+

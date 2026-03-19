@@ -1,0 +1,46 @@
+---
+title: Nikolaus Plesnila
+academic_title: Prof. Dr.
+name: Nikolaus Plesnila
+surname: Plesnila
+first_name: Nikolaus
+categories:
+  - Medicine
+memberships:
+  - type: lmu-individual
+    status: active
+    position: Professor of Experimental Stroke Research (OSC Speaker)
+    faculty: Medicine
+  - type: 'scientific board'
+    status: active
+    position: Professor of Experimental Stroke Research (OSC Speaker)
+    faculty: Medicine
+  - type: scientific board
+    status: alumni
+    start: 2023
+    end: 2025
+    notes: Neurosciences, **Speaker** from 2024
+  - type: scientific board
+    status: alumni
+    start: 2021
+    end: 2023
+    notes: Neurosciences
+email: nikolaus.plesnila@med.uni-muenchen.de
+photo: 'images/plesnila_nikolaus.jpg'
+personal: 'Reproducible studies are the basis of science, but reproducibility rates are still low, specifically in the field of experimental medicine. I would like to continue my service on the OSC Board to improve this situation by further developing the OSC, providing training to my fellow scientists and trainees, and improving standards of research at the Medical Faculty and beyond.'
+links:
+  - label: 'LMU Profile'
+    url: https://www.gsn.uni-muenchen.de/people/research/biomed_ns/plesnila/index.html
+social_media:
+  ORCID: 'https://orcid.org/0000-0001-8832-228X'
+mission_statement: |
+  I am professor for Experimental Stroke Research at the Institute for Stroke and Dementia Research.
+
+  I am interested in topics related to good scientific practice, particularly regarding data acquisition, analysis, and storage.
+
+
+template: templates/people-template.html
+filters: 
+    - templates/people_filter.lua
+---
+

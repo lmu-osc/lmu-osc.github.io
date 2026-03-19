@@ -1,0 +1,33 @@
+---
+title: Paul W. Thurner
+academic_title: Prof. Dr.
+name: Paul W. Thurner
+surname: Thurner
+first_name: Paul W.
+categories:
+  - Social Sciences
+memberships:
+  - type: lmu-individual
+    status: active
+    position: Chair
+    faculty: Social Sciences
+email: paul.thurner@gsi.uni-muenchen.de
+photo: 'images/thurner_paul_w.jpg'
+links:
+  - label: 'LMU Profile'
+    url: https://www.gsi.uni-muenchen.de/personen/professoren/thurner/index.html
+social_media:
+  ORCID: 'https://orcid.org/0000-0001-7336-9878'
+mission_statement: |
+  I am Professor of Empirical Political Research and Policy Analysis at the Political Science Department, LMU.
+
+  Availability of data and routines of published work is key for scientific efficiency and progress.
+
+  Re-analysis of published work by students contributes to the development of new ideas and designs.
+
+
+template: templates/people-template.html
+filters: 
+    - templates/people_filter.lua
+---
+

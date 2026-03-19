@@ -1,0 +1,54 @@
+---
+title: Reproducible Research in R | How to Do the Same Thing more than Once
+categories: Workshop
+event:
+  description: ''
+  start_date: '2023-01-26'
+  end_date: ''
+  time: ''
+  location:
+    name: Leopoldstraße 13, room 3322, Munich
+    address: ''
+    map_url: ''
+  format:
+    type: In-Person
+    detail: ''
+  language:
+    primary: English
+    primary-code: en
+    detail: ''
+links:
+  registration: ''
+  materials: https://aaronpeikert.github.io/repro-workshop/
+  workshop_website: ''
+event_description: ''
+instructors:
+- name: Dr. Aaron Peikert
+  url: ''
+helpers:
+- name: Felix Henninger
+  url: ''
+contact:
+  name: Malika Ihle
+  email: malika.ihle@lmu.de
+organizers:
+- name: Dr. Malika Ihle
+  url: ''
+host:
+- name: LMU Open Science Center 
+  url: ''
+template: templates/event-template.html
+filters:
+    - templates/process-event-yaml.lua
+---
+
+<br>
+
+ 
+
+<p><strong>Abstract</strong>: Many researchers want to work reproducibly, but it is not easy. They must invest considerable time to acquire the knowledge of what is even possible, before getting the skills required for reproducible research. This workshop gives researchers an overview of how to create reproducible data analyses in R (and beyond). Specifically, researchers will test, in a pre-set online environment, one way to automate the whole process from raw data to publishable manuscripts. This automation is possible by combining dynamic document generation (via R Markdown), version control (via Git), workflow orchestration (via Make) and software management (via Docker). These tools and, therefore, automatic reproduction of results are available on any machine with Docker installed. The resulting workflow is, hence, highly transferable across machines and time. These core properties of reproducibility are demonstrated for any reader by automatically reproducing the manuscript online via GitHub Actions.</p>
+<br><p><strong>Participants</strong>: The targeted audience are researchers or graduate students working with R. Rough ideas of what Git, RMarkdown (or Jupiter), and the command line are can be helpful to follow this tech-savvy workshop.</p><p><strong>Requirement</strong>: Participants must bring their own laptop and have an internet connection.</p><p><strong>Related Paper</strong>: <a href="https://doi.org/10.3390/psych3040053">https://doi.org/10.3390/psych3040053</a></p><div class="g-clear"></div>
+
+
+
+ 

@@ -1,0 +1,29 @@
+---
+title: Inga Koerte
+academic_title: Prof. Dr.
+name: Inga Koerte
+surname: Koerte
+first_name: Inga
+categories:
+  - Medicine
+memberships:
+  - type: lmu-individual
+    status: active
+    position: Research Group Leader
+    faculty: Medicine
+email: ikoerte@med.lmu.de
+photo: 'images/koerte_inga.jpg'
+links:
+  - label: 'Professional Profile'
+    url: https://pediatric-neuroimaging.de/researchers
+social_media:
+  ORCID: 'https://orcid.org/0000-0003-1281-9286'
+mission_statement: |
+  Leading and coordinating large collaborations, I learned the value of good documentation and reproducible ways of working. I aim for my lab to develop a step by step open research practice guide tailored to our research so we can onboard new members directly into an efficient and transparent workflow.
+
+
+template: templates/people-template.html
+filters: 
+    - templates/people_filter.lua
+---
+
