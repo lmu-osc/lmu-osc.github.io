@@ -97,15 +97,14 @@ include-in-header:
         );
         pointer-events: none;
       }
-<<<<<<< 324-create-initial-home-page
 
       /* =============================================
          shared style component
          ============================================= */
-         .card {
+          .card {
             background-color: #fcfcfc !important;
-         }
-         .osc-section {
+          }
+          .osc-section {
             padding: 2rem 2rem 0;
           }
 
@@ -114,9 +113,9 @@ include-in-header:
           }
 
           .osc-section h1 {
-          font-size: clamp(1.75rem, 4vw, 2.25rem);
-          font-weight: 700;
-          line-height: 1.2;
+            font-size: clamp(1.75rem, 4vw, 2.25rem);
+            font-weight: 700;
+            line-height: 1.2;
           }
           .osc-section h2,
           .explore-section h2 {
@@ -480,9 +479,6 @@ include-in-header:
         </style>
       <link href="/assets/bootstrap-5.3.8-dist/css/bootstrap.min.css" rel="stylesheet">
 css: /custom-navbar.css
-=======
-      </style>
->>>>>>> main
 ---
 
 
