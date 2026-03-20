@@ -36,7 +36,7 @@ We've used Bootstrap structure and custom css to create a responsive card layout
 - The main .container div must always be present.
 - Each section (Learn More / Tools & Resources) is wrapped in a .row.
 - If one of the section is not needed, remove the entire .row block and its downstream .col divs.
-- Each card should always be placed inside a .col div.
+- Each card should always be placed inside a .col div. Please put the html tags within html chunk to avoid any odd spacing issues.
 - To add a new card, copy an existing .col block and edit the links, img, title, and text.
 - Add as many .col blocks as needed within the .row, the cards are automatically laid out 3 cards per row and any additional cards will wrap to the next row.
 
