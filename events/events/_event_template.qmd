@@ -8,12 +8,14 @@ event:
   start_date: YYYY-MM-DD        # e.g. "2026-09-24"
   end_date: YYYY-MM-DD     # e.g. "2026-09-24", non-mandatory field
   time: "START-END CET"           # e.g. "14:00 - 17:00 CET"
+  description: |
+    "SHORT DESCRIPTION OF THE EVENT. This will appear in the event card on the main Events page. Keep it concise and engaging to attract attendees. MAX 2-3 SENTENCES."
   location:
     name: "BUILDING NAME, ROOM NAME"    # e.g. "LMU Main Building, Room 123"
-    address: "ADDRESS"                  # e.g. "Ludwigstraße 25, 80539 München, Germany""
-    map_url: "GOOGLE MAPS URL"          # e.g. "https://goo.gl/maps/xyz""
+    address: "ADDRESS"                  # e.g. "Ludwigstraße 25, 80539 München, Germany"
+    map_url: "GOOGLE MAPS URL"          # e.g. "https://goo.gl/maps/xyz"
   format:
-    type: "EVENTTYPE"               # e.g. Primary type e.g. "In-person", "Online", "Hybrid"  
+    type: "EVENTTYPE"               # Primary type e.g. "In-person", "Online", "Hybrid"  
     detail: "FORMATDETAILS"    # e.g. "In-person & Online", non-mandatory field
   language:
     primary: "English"
@@ -27,8 +29,8 @@ links:
   workshop_website: "WORKSHOP WEBSITE URL"   # e.g. "https://lmu-osc.github.io/introduction-to-renv/"
 
 # Event Description: appears in the Event card an optionally in the Event page itself
-event_description: 
-  - "SHORT DESCRIPTION OF THE EVENT. This will appear in the event card on the main Events page. Keep it concise and engaging to attract attendees. MAX 2-3 SENTENCES."
+event_description: |
+  Longer overview text for the event detail page. That is, the content here displays on the event page. You can use markdown formatting here to structure the content, add links, images, etc. 
 
 # Add as many instructors as needed in the format below
 instructors:
