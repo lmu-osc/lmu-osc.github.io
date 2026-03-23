@@ -1,5 +1,10 @@
 ```{=html}
-<div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="10000">
+<div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="10000" role="region" aria-label="Testimonials from OSC community members" aria-live="polite" aria-atomic="false">
+  <div class="carousel-indicators">
+    <% items.forEach((item, index) => { %>
+    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="<%= index %>" class="<%= index === 0 ? 'active' : '' %>" aria-current="<%= index === 0 ? 'true' : 'false' %>" aria-label="Testimonial <%= index + 1 %> from <%= item.name %>"></button>
+    <% }); %>
+  </div>
   <div class="carousel-inner">
     <% items.forEach((item, index) => { %>
     <div class="carousel-item <%= index === 0 ? 'active' : '' %>">
@@ -8,7 +13,7 @@
           <div class="testimonial-inner">
             <blockquote>
               <p><%= item.quote %></p>
-              <strong>- <%= item.name %></strong>
+              <footer><strong>— <%= item.name %></strong></footer>
             </blockquote>
           </div>
         </div>
@@ -16,9 +21,8 @@
     </div>
     <% }); %>
   </div>
-  <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+  <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next" aria-label="Next testimonial">
     <i class="bi bi-chevron-right text-success" aria-hidden="true"></i>
-    <span class="visually-hidden">Next</span>
   </button>
 </div>
 ```
