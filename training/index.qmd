@@ -3,230 +3,107 @@ title: "Training Overview"
 pagetitle: "Training"
 format: 
   html:
-    anchor-sections: false
     page-layout: full
     toc: false
 ---
 <style>
-
-.training-overview {
-  --primary-color: #00883A;
-  --primary-light: rgba(43, 134, 75, 0.1);
-  --text-dark: #333333;
-  --text-light: #ffffff;
-  --card-bg: #ffffff;
-  --card-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
-  --transition: all 0.3s ease;
+.training-card .card-title{
+  color: #00883A;
+  font-size:1.34rem;
+  letter-spacing: -0.5px
 }
 
-/*description text styles*/
-.training-overview p{
-  font-size: 1.1rem;
-  color: #4a5568;
-  line-height: 1.85;
-  margin-top: 3rem;
+.training-card .card-text{
+  line-height: 1.6;
+  font-size: 1rem;
 }
 
-.training-card h3 {
-  color: var(--primary-color);
-  margin-top: 0;
-  margin-bottom:1rem;
-  font-size: 1.3rem;
-  text-align:center;
-}
-
-.training-card p {
-  font-size: 0.98rem;
-  margin-top:0;
-  margin-bottom: 0.8rem;
-  text-align:center;
-  line-height: 1.4;
-}
-
-/*cards section styling*/
-.training-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 1.5rem;
-  margin-top:4rem;
-  padding: 2rem;
-  background-color: #f9fcf9;
-  border-radius: 15px;
-}
-.training-grid > div {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-}
 .training-card {
-  background-color: var(--card-bg);
-  height:500px;
-  border-radius: 30px;
-  padding: 1.5rem;
-  transition: transform 0.13s, box-shadow 0.13s;
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
+  transition: transform 0.15s ease;
   overflow: hidden;
   cursor:pointer;
-  box-shadow: var(--card-shadow);
 }
 
 .training-card:hover {
-  transform: translateY(-5px) scale(1.025);
-  box-shadow:
-    0 8px 16px rgba(86, 100, 83, 0.15),
-    0 0 0 2px rgba(0, 136, 58, 0.12);
+  transform: translateY(-3px) scale(1.025);
+}
+.btn.btn-primary.osf-btn {
+  background-color: #00883A!important;
+  border:none;
+  transition: transform .15s ease;
 }
 
-/*first card */
-.content-container h5,
-.training-img h5 {
-  text-align: center;
-  margin: 0 0 .5rem 0;
-  font-size: 0.9rem;
-  color: var(--text-dark);
+.btn.btn-primary.osf-btn:hover {
+  transform: scale(1.05);
 }
-.training-content.training-one {
-    display:flex;
-    justify-content: center;
-    align-items: flex-start;
-    overflow: hidden;
-    height: 100%; 
-}
-
-.training-content.training-two {
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    height: 100%; 
-}
-
-.training-content.training-two img {
-    height:320px;
-    width:auto;
-    object-fit: contain;
-}
-
-.training-content.training-one img{
-    height:280px;
-    width: auto;
-    object-fit: contain;
-}
-/*third card*/
-.training-content.training-three {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-.training-content.training-three > div {
-  flex: 1;
-}
-.training-content.training-three .content-container{
-  border: 1px solid var(--primary-color);
-  padding: 0.6rem;
-  border-radius: 6px;
-  background: #ffffff;
-  width: 100%;
-  text-align:center;
-}
-.training-arrow{
-  text-align:center;
-  font-size:1.1rem;
-  color: var(--primary-color);
-}
-.training-osf {
-  text-align: center;
-}
-.training-osf p{
-  margin-top: 0;
-}
-.training-osf .osf-btn {
-  background-color: var(--primary-color);
-  color: #ffffff;
-  border: none;
-  padding: 0.55rem 1.2rem;
-  border-radius: 8px;
-  transition: all 0.3s;
-  display:inline-block;
-}
-
-.training-osf.osf-btn:hover {
-  background-color: #016b2fff
-  transform: translateY(-2px) scale(1.02);
-  box-shadow: 0 4px 12px rgba(0, 136, 58, 0.25);
-}
-
-@media (max-width: 650px) {
-  .training-grid {
-    flex-wrap: wrap;
-    flex: 1;
-  }
-}
-
-
 
 </style>
-:::{.training-overview}
 
+::: {.container .bg-light-subtle .rounded-3 .py-3 .mb-3}
+::: {.row .row-cols-xl-3 .row-cols-1 .g-4}
+
+::: {.col}
 ```{=html}
-<div class="training-grid"> 
-    <div class="training-card"
-      onclick="window.location.href='self-learning.html';">   
-      <h3>Self-Learning Catalog</h3>
-      <p>For researchers or students who want to learn a specific open research practice.</p>
-      <div class="training-content training-one">
-          <img src="images/wordcloud.png" alt="wordcloud image of tutorial categories">
-      </div>
+    <div class="card training-card shadow-sm border-success-subtle h-100 rounded-4 p-4 text-center">
+      <h3 class="card-title fw-semibold">Self-Learning Catalog</h3>
+      <p class="card-text">For researchers or students who want to learn a specific open research practice.</p>
+      <img src="images/wordcloud.png" alt="wordcloud image of tutorial categories" class="card-img-bottom mt-4">
+      <a href="self-learning.qmd" class="stretched-link"></a>
    </div>
-
-
-    <div class="training-card" onclick="window.location.href='open-research-cycle.html';">
-        <h3>Research Cycle Handbook</h3>
-        <p>Detailed guide to best research practices across the lifecycle of a project.</p>
-        <div class="training-content training-two">
-            <img src="/assets/img/OS-research-cycle.png" alt="OS_cycle">
-        </div>
-    </div>      
-
-    <div class="training-card" onclick="window.location.href='train-the-trainer.html';">
-        <h3>Educator Toolkit</h3>
-        <p>Pedagogy training and ready-to-use materials for teaching open research practices.</p>
-        <div class="training-content training-three mt-4">
-            <div class="content-container">
-              <h5 class="fw-bold">Open Science Foundations</h5>
-            </div>
-            <div class="training-arrow">
-              <i class="fa-solid fa-arrow-down"></i>
-            </div>
-            <div class="content-container">
-              <h5 class="fw-bold">Open Science Methods</h5>
-            </div>
-            <div class="training-arrow">
-              <i class="fa-solid fa-arrow-down"></i>
-            </div>
-            <div class="content-container">
-              <h5 class="fw-bold">Open Science Tools</h5>
-            </div>
-            <div class="training-arrow">
-              <i class="fa-solid fa-plus"></i>
-            </div>
-            <div class="content-container">
-              <h5 class="fw-bold">Pedagogy of Teaching OS</h5>
-            </div>
-         </div>
-     </div>
-</div>
-
 ```
+:::
+
+::: {.col}
+```{=html}
+    <div class="card training-card shadow-sm border-success-subtle h-100 rounded-4 p-4 text-center">
+      <h3 class="card-title fw-semibold">Research Cycle Handbook</h3>
+      <p class = "card-text">Detailed guide to best research practices across the lifecycle of a project.</p>
+      <img src="images/os-cycle.svg" alt="Open science research cycle" class="card-img-bottom">
+      <a href="open-research-cycle.qmd" class="stretched-link"></a>
+   </div>
+```
+:::
+
+::: {.col}
+```{=html}
+    <div class="card training-card shadow-sm border-success-subtle h-100 rounded-4 p-4 text-center">
+      <h3 class="card-title fw-semibold">Educator Toolkit</h3>
+      <p class="card-text">Pedagogy training and ready-to-use materials for teaching open research practices.</p>
+      <div class="d-flex flex-column mt-4 w-100">
+            <div class="border border-success rounded-1 p-1 text-center align-items-center">
+              <h6 class="text-black fw-light">Open Science Foundations</h6>
+            </div>
+            <div class="training-arrow fw-light">
+              <i class="fa-solid fa-arrow-down text-black"></i>
+            </div>
+            <div class="border  border-success rounded-1 p-1 text-center align-items-center">
+              <h6 class="text-black fw-light">Open Science Methods</h6>
+            </div>
+            <div class="training-arrow">
+              <i class="fa-solid fa-arrow-down text-black"></i>
+            </div>
+            <div class="border border-success rounded-1 p-1 text-center align-items-center">
+              <h6 class="text-black fw-light">Open Science Tools</h6>
+            </div>
+            <div class="training-arrow">
+              <i class="fa-solid fa-plus text-black"></i>
+            </div>
+            <div class="border border-success rounded-1 p-1 text-center align-items-center">
+              <h6 class="text-black fw-light">Pedagogy of Teaching OS</h6>
+            </div>
+      </div>
+      <a href="educator-toolkit.qmd" class="stretched-link"></a>
+   </div>
+```
+:::
+
+:::
+:::
+
 
 Additional material that is used in our events (lectures, workshops, symposium, and summer schools) can be accessed below.
-<br>
 
-:::{.training-osf}
-<a href="https://osf.io/zjrhu/overview" rel="noopener" class="btn btn-primary osf-btn"> OSF<i class="fa-solid fa-arrow-up-right-from-square fs-6"></i></a>
+::: {.d-flex .justify-content-center}
+<a href="https://osf.io/zjrhu/overview" rel="noopener" class="btn btn-primary osf-btn"> OSF<i class="fa-solid fa-arrow-up-right-from-square fs-6 text-white"></i></a>
 
-:::
-
-:::
+::: 
