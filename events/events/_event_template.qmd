@@ -1,18 +1,19 @@
 ---
-date: "MONTH DAY, YYYY"         # e.g. "September 24, 2026"
+title: Event Title Here
+date: YYYY-MM-DD        # e.g. "2026-09-24"
 categories: ['Discussion', 'Hacky Hour', 'ReproducibiliTea Journal Club', 'Workshop', 'Lecture', 'Symposium', 'Conference', 'Summer School', 'Panel Discussion Series', 'Application call']
 
 # Event Information
 event:
-  start_date: "MONTH DAY, YYYY"         # e.g. "September 24, 2026"
-  end_date: "MONTH DAY, YYYY"     # e.g. "September 24, 2026", non-mandatory field
+  start_date: YYYY-MM-DD        # e.g. "2026-09-24"
+  end_date: YYYY-MM-DD     # e.g. "2026-09-24", non-mandatory field
   time: "START-END CET"           # e.g. "14:00 - 17:00 CET"
   location:
     name: "BUILDING NAME, ROOM NAME"    # e.g. "LMU Main Building, Room 123"
     address: "ADDRESS"                  # e.g. "Ludwigstraße 25, 80539 München, Germany""
     map_url: "GOOGLE MAPS URL"          # e.g. "https://goo.gl/maps/xyz""
   format:
-    type: "EVENTTYPE"               # e.g. "In-person", "Online", "Hybrid"  
+    type: "EVENTTYPE"               # e.g. Primary type e.g. "In-person", "Online", "Hybrid"  
     detail: "FORMATDETAILS"    # e.g. "In-person & Online", non-mandatory field
   language:
     primary: "English"
