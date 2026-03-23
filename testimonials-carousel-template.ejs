@@ -1,0 +1,24 @@
+```{=html}
+<div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="10000">
+  <div class="carousel-inner">
+    <% items.forEach((item, index) => { %>
+    <div class="carousel-item <%= index === 0 ? 'active' : '' %>">
+      <div class="row d-flex justify-content-center align-items-center">
+        <div class="col-lg-11">
+          <div class="testimonial-inner">
+            <blockquote>
+              <p><%= item.quote %></p>
+              <strong>- <%= item.name %></strong>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </div>
+    <% }); %>
+  </div>
+  <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+    <i class="bi bi-chevron-right text-success" aria-hidden="true"></i>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+```
