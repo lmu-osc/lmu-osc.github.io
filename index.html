@@ -34,6 +34,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
 <link href="./assets/img/lmu_osc_logo.jpg" rel="icon" type="image/jpeg">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -70,6 +72,35 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-testimonial-carousel .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-name','listing-quote',{ data: ['index'] },{ data: ['categories'] }],
+      
+      searchColumns: ["listing-name","listing-quote"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-testimonial-carousel'] = new List('listing-testimonial-carousel', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
 <style>
 
       .quarto-title-block .quarto-title-banner {
@@ -499,6 +530,35 @@ background-size: cover;
   </style>
 <link href="./assets/bootstrap-5.3.8-dist/css/bootstrap.min.css" rel="stylesheet">
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="https://raw.githubusercontent.com/lmu-osc/branding-resources/refs/heads/main/styles.css">
 <link rel="stylesheet" href="./assets/bootstrap-5.3.8-dist/css/bootstrap.min.css">
@@ -713,74 +773,87 @@ background-size: cover;
 </div>
 <div class="col-lg-8">
 <div class="testimonial-carousel">
+<div id="listing-testimonial-carousel" class="quarto-listing quarto-listing-container-custom">
 <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="10000">
   <div class="carousel-inner">
+    
     <div class="carousel-item active">
       <div class="row d-flex justify-content-center align-items-center">
         <div class="col-lg-11">
           <div class="testimonial-inner">
             <blockquote class="blockquote">
-              <p>Our participation in the Switch to Open Program was highly valuable for our research group. Developing a tailored research practices handbook helped streamline workflows, strengthen reproducibility, and clarify expectations across the team.</p>
+              <p>Our participation in the Switch to Open Program was highly valuable for our research group. Developing a tailored research practices handbook helped streamline workflows, strengthen reproducibility, and clarify expectations across the team.
+</p>
               <strong>- Prof. Dr. med. Inga Katharina Koerte, M.D.</strong>
             </blockquote>
           </div>
         </div>
       </div>
     </div>
-    <div class="carousel-item">
+    
+    <div class="carousel-item ">
       <div class="row d-flex justify-content-center align-items-center">
         <div class="col-lg-11">
           <div class="testimonial-inner">
             <blockquote class="blockquote">
-              <p>I really enjoyed this summer school. The topics were well balanced, the tutorials were well organized, the lectures were interesting and broad, the tutors demonstrated know-how from a hands-on-perspective...
-                Overall, <span style="white-space: nowrap;">⭐⭐⭐⭐⭐</span>!"</p>
+              <p>I really enjoyed this summer school. The topics were well balanced, the tutorials were well organized, the lectures were interesting and broad, the tutors demonstrated know-how from a hands-on-perspective... Overall, <span style="white-space: nowrap;">⭐⭐⭐⭐⭐</span>!
+</p>
               <strong>- Summer School Participant</strong>
             </blockquote>
           </div>
         </div>
       </div>
     </div>
-    <div class="carousel-item">
+    
+    <div class="carousel-item ">
       <div class="row d-flex justify-content-center align-items-center">
         <div class="col-lg-11">
           <div class="testimonial-inner">
             <blockquote class="blockquote">
-              <p>The LMU Open Science Center was extremely helpful for us to complete the section on Research Data Management in our Cluster of Excellence pre-proposal. In fact, without them we would have not been able to write this part in such a comprehensive manner as it was possible with their amazing support.</p>
+              <p>The LMU Open Science Center was extremely helpful for us to complete the section on Research Data Management in our Cluster of Excellence pre-proposal. In fact, without them we would have not been able to write this part in such a comprehensive manner as it was possible with their amazing support.
+</p>
               <strong>- Prof. Dr. Gitta Kutyniok</strong>
             </blockquote>
           </div>
         </div>
       </div>
     </div>
-    <div class="carousel-item">
+    
+    <div class="carousel-item ">
       <div class="row d-flex justify-content-center align-items-center">
         <div class="col-lg-11">
           <div class="testimonial-inner">
             <blockquote class="blockquote">
-              <p>I really enjoyed the instructor training. It was a great professional development opportunity that strengthened both my understanding of Open Science and teaching skills, giving me the confidence and tools to design and deliver my own workshops!</p>
+              <p>I really enjoyed the instructor training. It was a great professional development opportunity that strengthened both my understanding of Open Science and teaching skills, giving me the confidence and tools to design and deliver my own workshops!
+</p>
               <strong>- Alberto G. Villagran, PhD Candidate</strong>
             </blockquote>
           </div>
         </div>
       </div>
     </div>
-    <div class="carousel-item">
+    
+    <div class="carousel-item ">
       <div class="row d-flex justify-content-center align-items-center">
         <div class="col-lg-11">
           <div class="testimonial-inner">
             <blockquote class="blockquote">
-              <p>The <a href="./training/self-learning.html">self-paced tutorials</a> are super for us as beginners to advance our learning from such organized information. I personally feel that I never want to miss a single lecture from the Open Science Center.</p>
+              <p>The <a href="./training/self-learning.html">self-paced tutorials</a> are super for us as beginners to advance our learning from such organized information. I personally feel that I never want to miss a single lecture from the Open Science Center.
+</p>
               <strong>- Workshop participant</strong>
             </blockquote>
           </div>
         </div>
       </div>
     </div>
+    
   </div>
   <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
     <i class="bi bi-chevron-right text-success" aria-hidden="true"></i>
     <span class="visually-hidden">Next</span>
   </button>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
 </div>
 </div>
 </div>
@@ -934,6 +1007,7 @@ background-size: cover;
 </div>
 </section>
 </div>
+
 
 
 
