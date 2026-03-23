@@ -36,19 +36,19 @@ When you make changes in this folder:
 
 # Creating Events
 
-To create a new event item, start by copying an existing file in `events/events/` (preferably a recent one with similar structure) and saving it with a new filename in the same folder.
+To create a new event item, start by copying the [_event_template.qmd](events/_event_template.qmd) file and saving it with a new filename in the same folder.
 
 Use this naming convention:
 
 - `YYYY-MM-DD-short-slug.qmd`
 
-The main fields that drive the Events listing cards are in front matter. A minimal pattern looks like this:
+The main fields that drive the Events listing cards are in the YAML front matter of that file, and include some guidance on how to fill-in a new event. Additional information is provided here:
 
 ```yaml
 title: "Event title"
 date: YYYY-MM-DD # NOTE: this appears as the Published Date
-categories:
-  - Workshop
+# choose one of the categories
+categories: ['Discussion', 'Hacky Hour', 'ReproducibiliTea Journal Club', 'Workshop', 'Lecture', 'Symposium', 'Conference', 'Summer School', 'Panel Discussion Series', 'Application call'] 
 
 event:
   start_date: "2026-03-11"
@@ -71,11 +71,16 @@ event_description: |
   Longer overview text for the event detail page. That is, the content here displays on the event page.
 
 ...
+# people section described below
+
+template: templates/event-template.html
+filters:
+    - templates/process-event-yaml.lua
 ```
 
-For the event detail page itself, use `event_description` for the longer overview content and fill optional people/contact blocks (`presenters`, `instructors`, `helpers`, `organizers`, `host`, `contact`) as needed.
+For the event detail page itself, use `event_description` for the longer overview content and fill optional people/contact blocks (`presenters`, `instructors`, `helpers`, `organizers`, `host`, `contact`) as needed (described below).
 
-Keep `template` and `filters` as shown above so page rendering stays consistent.
+Keep `template` and `filters` as shown above so page rendering stays consistent. The Lua filter processes some of the YAML variables, and all of the variables are then passed to the HTML template file, `templates/event-template.html` which creates a consistent look for all of the Events pages.
 
 Date handling is most reliable when `event.start_date` and `event.end_date` are written in ISO format (`YYYY-MM-DD`). The listing templates then place items in Upcoming or Past sections automatically based on those dates.
 
@@ -86,10 +91,10 @@ After adding or editing an event, run `quarto preview` from the repository root 
 Use list-based YAML blocks for people fields. A practical pattern is:
 
 ```yaml
+# note that you can add N people by using the yaml list syntax, i.e. the `-` separator for the name and the url just below
 organizers:
   - name: "Organizer Name"
     url: "https://example.org/profile"
-    # note that you can add N people by using the yaml list syntax, i.e. the `-` separator for the name and the url just below
   - name: "Organizer Name Two"
     url: "https://example.org/profile"
 
