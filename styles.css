@@ -37,6 +37,6 @@ ul#quarto-sidebar-section-1.collapse.list-unstyled.sidebar-section.depth1.show >
   font-size: 1.2em;
 }
 
-ul#quarto-sidebar-section-2.collapse.list-unstyled.sidebar-section.depth2.show > li.sidebar-item > div.sidebar-item-container > a.sidebar-item-text.sidebar-link > span.menu-text {
+.collapse.list-unstyled.sidebar-section.depth2.show > li.sidebar-item > div.sidebar-item-container > a.sidebar-item-text.sidebar-link > span.menu-text {
   font-size: 1.1em;
 }
