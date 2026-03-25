@@ -1,0 +1,31 @@
+---
+title: Renata Topinkova
+academic_title: Dr.
+name: Renata Topinkova
+surname: Topinkova
+first_name: Renata
+categories:
+  - Social Sciences
+memberships:
+  - type: lmu-individual
+    status: active
+    position: Researcher
+    faculty: Social Sciences
+email: renata.topinkova@lmu.de
+photo: 'images/topinkova_renata.jpg'
+links:
+  - label: 'LMU Profile'
+    url: https://www.css.soziologie.uni-muenchen.de/personen/wissenschaftlich_mitarbeiter/renata_topinkova/index.html
+  - label: 'Personal Website'
+    url: https://renatatopinkova.github.io/
+social_media:
+  ORCID: 'https://orcid.org/0000-0003-0362-7290'
+mission_statement: |
+  I believe in democratizing science through the adoption of open-source software, as it opens doors for diverse communities to engage in scientific inquiry and innovation. I'm passionate about teaching R programming, which is also reflected in my role as a The Carpentries instructor.
+
+
+template: templates/people-template.html
+filters: 
+    - templates/people_filter.lua
+---
+

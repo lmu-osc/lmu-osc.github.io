@@ -1,0 +1,112 @@
+---
+title: "Educator Toolkit"
+---
+
+<style>
+a.btn-toolkit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+  color: white;
+  text-align: center;
+}
+
+a.btn-toolkit:hover,
+a.btn-toolkit:focus {
+  color: white;
+}
+
+a.btn-toolkit-pedagogy {
+  background-color: #009933;
+  border-color: #009933;
+}
+
+a.btn-toolkit-students {
+  background-color: #00008B;
+  border-color: #00008B;
+}
+
+a.btn-toolkit-researchers {
+  background-color: #8B7500;
+  border-color: #8B7500;
+}
+
+a.btn-toolkit-pedagogy:hover,
+a.btn-toolkit-pedagogy:focus {
+  background-color: #007f2a;
+  border-color: #007f2a;
+}
+
+a.btn-toolkit-students:hover,
+a.btn-toolkit-students:focus {
+  background-color: #000070;
+  border-color: #000070;
+}
+
+a.btn-toolkit-researchers:hover,
+a.btn-toolkit-researchers:focus {
+  background-color: #735f00;
+  border-color: #735f00;
+}
+</style>
+
+**Welcome!** Do you want to **teach** open, responsible, and reproducible research practices? Then our **educator toolkit** is for you!
+
+<!-- ## What is the educator toolkit? -->
+
+<!-- Our educator toolkit follows a 'train-the-trainer' model, where we provide pedagogical training and training materials for educators to build on their Open Research knowledge and pedagogy skills to deliver high quality and engaging Open Research content for their learners. The broader goal of the toolkit is to **promote open and reproducible research** across academic disciplines.  -->
+
+## What does the educator toolkit offer?
+
+In this toolkit, you can find: 
+
+- **Pedagogical materials** and practical **guidance** for effectively **designing and delivering classes and workshops on Open Research topics** to diverse audiences. These materials include core didactic skills, learner engagement strategies, Open Science leadership, and accessibility practices. 
+
+- **Ready-to-use materials** for teaching open research practices such as **methodological foundations of Open Science, computational reproducibility, data management and sharing**. This material consist of slides and activity sheets. Slides include presenter notes (intended narrative of the presentation), and further instructor notes (additional guidance intended only for the presenter such as didactic and accessibility tips). Simply select your intended target audience below and off you go!
+
+::: {.container .px-0 .my-4}
+::: {.row .g-3 .align-items-stretch}
+::: {.col-12 .col-md-4 .d-flex}
+<a href="https://lmu-osc.github.io/train-the-trainer-student-track-pedagogy/" target="_blank"
+   class="btn btn-lg btn-toolkit btn-toolkit-pedagogy"
+   aria-label="Develop your pedagogical skills (opens in new window)">
+  <span>Develop your pedagogical <strong>skills</strong>!</span>
+</a>
+:::
+
+::: {.col-12 .col-md-4 .d-flex}
+<a href="https://lmu-osc.github.io/train-the-trainer-student-track-OS/" target="_blank"
+   class="btn btn-lg btn-toolkit btn-toolkit-students"
+   aria-label="View teaching materials for students (opens in new window)">
+  <span>View teaching materials for <strong>students</strong>!</span>
+</a>
+:::
+
+::: {.col-12 .col-md-4 .d-flex}
+<a href="https://lmu-osc.github.io/training/self-learning.html" target="_blank"
+   class="btn btn-lg btn-toolkit btn-toolkit-researchers"
+   aria-label="View teaching materials for researchers (opens in new window)">
+    <span>View teaching materials for <strong>researchers</strong>!</span>
+</a>
+:::
+:::
+:::
+
+::: {.callout-note}
+All materials are grounded in empirical and pedagogical theory. Depending on the topic, materials come in a variety of formats (Quarto slides, HTML, PDF, MS PowerPoint and Google Documents).
+:::
+
+## Contributors, funding and partners
+
+The educator toolkit has been developed by the [LMU Open Science Center](https://lmu-osc.github.io/) in partnership with the Framework for Open and Reproducible Research Training [FORRT](http://forrt.org) community together with funding by the [VolksWagen Foundation](https://www.volkswagenstiftung.de/de). Our training materials are licenced under a [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.en) Creative Commons Attribution-ShareAlike 4.0 International licence, unless otherwise specified.
+
+::: {.callout-note}
+## You have questions about the educator toolkit?
+Get in touch with us: [Sarah von Grebmer](mailto:s.grebmer@lmu.de), LMU Open Science Center.
+:::
+

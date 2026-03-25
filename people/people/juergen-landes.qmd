@@ -1,0 +1,31 @@
+---
+title: Jürgen Landes
+academic_title: Dr.
+name: Jürgen Landes
+surname: Landes
+first_name: Jürgen
+categories:
+  - Philosophy
+memberships:
+  - type: lmu-individual
+    status: active
+    position: Researcher
+    faculty: Philosophy
+email: Juergen.Landes@lrz.uni-muenchen.de
+photo: 'images/landes_juergen.jpg'
+links:
+  - label: 'LMU Profile'
+    url: https://www.philosophie.lmu.de/de/personenuebersicht/kontaktseite/juergen-landes-31111448.html
+social_media:
+  ORCID: 'https://orcid.org/0000-0003-3105-6624'
+mission_statement: |
+  I am a principal investigator at the Munich Center for Mathematical Philosophy.
+
+  Imperfect data is a fact of life. I'm interested in drawing (causal) inferences from imperfect data. In particular, I'm interested in learning from biased data.
+
+
+template: templates/people-template.html
+filters: 
+    - templates/people_filter.lua
+---
+

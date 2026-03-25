@@ -1,0 +1,29 @@
+---
+title: Dieter Kranzlmüller
+academic_title: Prof. Dr.
+name: Dieter Kranzlmüller
+surname: Kranzlmüller
+first_name: Dieter
+categories:
+  - Math Informatics & Stats
+memberships:
+  - type: lmu-individual
+    status: active
+    position: Chair
+    faculty: Math, Informatics & Stats
+email: kranzlmueller@ifi.lmu.de
+photo: 'images/kranzlmueller_dieter.jpg'
+links:
+  - label: 'LMU Profile'
+    url: https://www.nm.ifi.lmu.de/~kranzlm/
+social_media:
+  ORCID: 'https://orcid.org/0000-0002-8319-0123'
+mission_statement: |
+  I am professor for Computer Science at the Institute of Informatics.
+
+
+template: templates/people-template.html
+filters: 
+    - templates/people_filter.lua
+---
+

@@ -4,10 +4,9 @@ listing:
   - id: management
     contents: 
       - people
-    template: listings/management-listing.ejs
+    template: listings/active-management-listing.ejs
     sort: "display_weight_management asc"
-    include: 
-      membertype: "management"
+
 ---
 
 ::: {#management}

@@ -2,4 +2,13 @@
 title: "News"
 editor: source
 repo-actions: false
+listing:
+    contents: news
+    categories: true
+    fields: [date, title, categories]
+    type: table
+    sort: "date desc"
+include-in-header:
+  - text: |
+      <script src="/assets/javascript/clear_filter_button.js" defer></script>
 ---

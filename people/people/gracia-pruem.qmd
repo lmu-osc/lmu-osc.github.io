@@ -1,0 +1,29 @@
+---
+title: Gracia Prüm
+academic_title: B.Sc.
+name: Gracia Prüm
+surname: Prüm
+first_name: Gracia
+categories:
+  - Psychology & Education
+memberships:
+  - type: fellow
+    status: alumni
+    position: B.Sc. Student
+    faculty: Psychology & Education
+  - type: staff
+    status: alumni
+    position: Research Assistant - Public outreach, Event Logistics
+    start: 2023
+    end: 2025
+email: gracia.pruem@campus.lmu.de
+photo: 'images/pruem_gracia.jpg'
+mission_statement: |
+  Open Science is essential for enhancing the transparency, integrity, and quality of research. As a member of the ReproducibiliTea Journal Club Munich, I engage in discussions on various Open Science topics and its value for the scientific community.
+
+
+template: templates/people-template.html
+filters: 
+    - templates/people_filter.lua
+---
+

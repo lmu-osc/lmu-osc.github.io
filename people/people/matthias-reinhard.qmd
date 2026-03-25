@@ -1,0 +1,29 @@
+---
+title: Matthias Reinhard
+academic_title: Dr.
+name: Matthias Reinhard
+surname: Reinhard
+first_name: Matthias
+categories:
+  - University Hospital
+memberships:
+  - type: lmu-individual
+    status: active
+    position: Researcher
+    faculty: University Hospital
+email: matthias.reinhard@med.uni-muenchen.de
+photo: 'images/reinhard_matthias.jpg'
+links:
+  - label: 'LMU Profile'
+    url: https://www.lmu-klinikum.de/psychiatrie-und-psychotherapie/uber-uns/unser-team/d1bc1ef1061c4619#MatthiasReinhard
+social_media:
+  ORCID: 'https://orcid.org/0000-0002-8374-5467'
+mission_statement: |
+  I am a medical doctor and clinical researcher at the Department of Psychiatry of the University Hospital Munich.
+
+
+template: templates/people-template.html
+filters: 
+    - templates/people_filter.lua
+---
+

@@ -1,0 +1,29 @@
+---
+title: Maximilian Mandl
+academic_title: M.Sc.
+name: Maximilian Mandl
+surname: Mandl
+first_name: Maximilian
+categories:
+  - Medicine
+memberships:
+  - type: fellow
+    status: active
+    position: Ph.D. Candidate
+    faculty: Medicine
+email: mmandl@ibe.med.uni-muenchen.de
+photo: 'images/mandl_maximilian.jpg'
+links:
+  - label: 'LMU Profile'
+    url: https://www.en.ibe.med.uni-muenchen.de/mitarbeiter/ehemalige/mandl/index.html
+social_media:
+  ORCID: 'https://orcid.org/0000-0003-0518-9802'
+mission_statement: |
+  I am currently pursuing my PhD at the Institute for Medical Information Processing, Biometry, and Epidemiology. My research primarily centers around the exploration of researcher degrees of freedom in applied and methodological research within the fields of statistics and machine learning. The promotion of open science initiatives plays a vital role in mitigating the impact of overly optimistic and biased outcomes, ultimately enhancing the credibility of statistical research.
+
+
+template: templates/people-template.html
+filters: 
+    - templates/people_filter.lua
+---
+

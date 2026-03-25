@@ -1,0 +1,29 @@
+---
+title: Hans-Joachim Anders
+academic_title: Prof. Dr.
+name: Hans-Joachim Anders
+surname: Anders
+first_name: Hans-Joachim
+categories:
+  - University Hospital
+memberships:
+  - type: lmu-individual
+    status: active
+    position: Head of Department
+    faculty: University Hospital
+email: hjanders@med.uni-muenchen.de
+photo: 'images/anders_hans-joachim.jpg'
+links:
+  - label: 'LMU Profile'
+    url: https://www.kidney-immunology-lab-munich.de/anders-lab
+social_media:
+  ORCID: 'https://orcid.org/0000-0003-2434-2956'
+mission_statement: |
+  The different aspects of Open Science are important to increase transparency and reproducibility of research. My own focus is to improve the predictive capacity of preclinical studies for the outcome of subsequent clinical trials. We develop concepts and perform preclinical randomized trials (pRCTs), in a single centre or multicenter design, to reduce the existing gap in the design of pRCTs and human RCTs.
+
+
+template: templates/people-template.html
+filters: 
+    - templates/people_filter.lua
+---
+

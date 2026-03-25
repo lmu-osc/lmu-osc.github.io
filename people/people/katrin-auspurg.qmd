@@ -1,0 +1,46 @@
+---
+title: Katrin Auspurg
+academic_title: Prof. Dr.
+name: Katrin Auspurg
+surname: Auspurg
+first_name: Katrin
+categories:
+  - Social Sciences
+memberships:
+  - type: lmu-individual
+    status: active
+    position: Chair
+    faculty: Social Sciences
+  - type: scientific board
+    status: alumni
+    start: 2021
+    end: 2023
+    notes: Sociology, **Speaker**
+  - type: scientific board
+    status: alumni
+    start: 2019
+    end: 2021
+    notes: Sociology, **Speaker**
+  - type: scientific board
+    status: alumni
+    start: 2017
+    end: 2019
+    notes: Sociology, **Speaker**
+email: katrin.auspurg@lmu.de
+photo: 'images/auspurg_katrin.jpg'
+links:
+  - label: 'LMU Profile'
+    url: https://www.ls4.soziologie.uni-muenchen.de/personen/leitung/auspurg_katrin/index.html
+social_media:
+  ORCID: 'https://orcid.org/0000-0003-4504-0391'
+mission_statement: |
+  I am professor for Quantitative Methods of Social Research at the Department of Sociology.
+
+  One of my research interests is publication bias and the low replicability of research. I am convinced that social institutions such as norms of transparency, sharing data and analyses codes, establishing good practices of replication, and further measures of OS are important to advance the quality of research. Analyses codes of my publications are available.
+
+
+template: templates/people-template.html
+filters: 
+    - templates/people_filter.lua
+---
+

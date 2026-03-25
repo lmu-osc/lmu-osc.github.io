@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="$lang$" xml:lang="$lang$" $if(dir)$ dir="$dir$" $endif$>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  $for(author-meta)$
+  <meta name="author" content="$author-meta$" />
+  $endfor$
+  $if(date-meta)$
+  <meta name="dcterms.date" content="$date-meta$" />
+  $endif$
+  $if(keywords)$
+  <meta name="keywords" content="$for(keywords)$$keywords$$sep$, $endfor$" />
+  $endif$
+  $if(description-meta)$
+  <meta name="description" content="$description-meta$" />
+  $endif$
+  <title>$if(title-prefix)$$title-prefix$ – $endif$$pagetitle$</title>
+  <style>
+    $styles.html()$
+  </style>
+  $for(css)$
+  <link rel="stylesheet" href="$css$" />
+  $endfor$
+  $for(header-includes)$
+  $header-includes$
+  $endfor$
+  $if(math)$
+  $math$
+  $endif$
+</head>
+
+<body>
+  $for(include-before)$
+  $include-before$
+  $endfor$
+  $if(title)$
+  <header id="title-block-header">
+    <h1 class="title">$title$</h1>
+    $if(subtitle)$
+    <p class="subtitle">$subtitle$</p>
+    $endif$
+    $for(author)$
+    <p class="author">$author$</p>
+    $endfor$
+    $if(date)$
+    <p class="date">$date$</p>
+    $endif$
+    $if(abstract)$
+    <div class="abstract">
+      <div class="abstract-title">$abstract-title$</div>
+      $abstract$
+    </div>
+    $endif$
+  </header>
+  $endif$
+  $if(toc)$
+  <nav id="$idprefix$TOC" role="doc-toc">
+    $if(toc-title)$
+    <h2 id="$idprefix$toc-title">$toc-title$</h2>
+    $endif$
+    $table-of-contents$
+  </nav>
+  $endif$
+
+
+
+
+
+
+  <div class="people-profile">
+
+    <div class="people-header">
+      <div class="people-photo">
+        <img src="$if(photo)$$photo$$else$images/default.svg$endif$" alt="Profile photo of $name$" />
+      </div>
+      <div class="people-info">
+        <p class="people-position">$position$</p>
+        $if(faculty)$
+        <p class="people-faculty">Faculty of $faculty$</p>
+        $endif$
+        <div class="people-contact">
+          $if(email)$
+          <div class="contact-item">
+            <i class="bi bi-envelope"></i>
+            <a href="mailto:$email$" aria-label="Email to $name$">$email$</a>
+          </div>
+          $endif$
+
+          $if(links)$
+          $for(links)$
+          <div class="contact-item">
+            <i class="bi bi-globe"></i>
+            <a href="$it.url$" target="_blank" rel="noopener noreferrer"
+              aria-label="Link to $name$'s $if(it.label)$$it.label$$else$Website$endif$">$if(it.label)$$it.label$$else$Website$endif$</a>
+          </div>
+          $endfor$
+          $endif$
+
+
+          $if(social_media)$
+          <div class="people-socials">
+            $for(social_media)$
+            <a href="$it.url$" class="social-link" target="_blank" rel="noopener noreferrer"
+              aria-label="Link to $it.platform$">
+              <i class="fa-brands fa-$it.platform$"></i>
+            </a>
+            $endfor$
+          </div>
+          $endif$
+
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <div class="people-mission">
+      <h2>Mission Statement</h2>
+      $if(mission_statement)$
+      $mission_statement$
+      $endif$
+    </div>
+
+
+
+
+
+    $body$
+
+
+
+
+
+    $if(research_interests)$
+    <h2>Research Interests</h2>
+    <div class="interests-container">
+      $for(research_interests)$
+      <div class="interest-tag">$it$</div>
+      $endfor$
+    </div>
+    $endif$
+
+
+
+    $if(publications)$
+    <h2>Selected Publications</h2>
+    <div class="publications-list">
+      $for(publications)$
+      <div class="publication-item">
+        <p class="publication-year">$it.year$</p>
+        <div class="publication-content">
+          <h3 class="publication-title">$it.title$</h3>
+          <p class="publication-authors">$it.authors$</p>
+          <p class="publication-journal">$it.journal$</p>
+          $if(it.doi_url)$
+          <a href="$it.doi_url$" target="_blank" rel="noopener noreferrer" class="publication-doi"
+            aria-label="DOI for $it.title$">DOI</a>
+          $endif$
+        </div>
+      </div>
+      $endfor$
+    </div>
+    $endif$
+
+  </div>
+
+
+
+
+
+
+
+
+  $for(include-after)$
+  $include-after$
+  $endfor$
+</body>
+
+</html>

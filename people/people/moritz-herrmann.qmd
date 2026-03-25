@@ -1,0 +1,31 @@
+---
+title: Moritz Herrmann
+academic_title: Dr.
+name: Moritz Herrmann
+surname: Herrmann
+first_name: Moritz
+categories:
+  - Medicine
+memberships:
+  - type: lmu-individual
+    status: active
+    position: Coordinator
+    faculty: Medicine
+email: moritz.herrmann@ibe.med.uni-muenchen.de
+photo: 'images/herrmann_moritz.jpg'
+links:
+  - label: 'LMU Profile'
+    url: https://www.ibe.med.uni-muenchen.de/mitarbeiter/mitarbeiter/herrmann_moritz/index.html
+  - label: 'Professional Profile'
+    url: https://mcml.ai/team/juniors/herrmann-moritz/
+social_media:
+  ORCID: 'https://orcid.org/0000-0002-4893-5812'
+mission_statement: |
+  As MCML's Open Science Transfer Coordinator I am committed to making machine learning research more accessible and transparent to everyone. In addition to providing advice and support to individual researchers and projects on key issues such as reproducibility and replicability, my aim is to develop and implement policies and best practices to promote open science and foster collaborations in the scientific community to advance research and application of machine learning in an ethical, transparent, and reproducible manner.
+
+
+template: templates/people-template.html
+filters: 
+    - templates/people_filter.lua
+---
+
