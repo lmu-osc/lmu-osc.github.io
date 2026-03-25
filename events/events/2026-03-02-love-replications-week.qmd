@@ -1,0 +1,73 @@
+---
+title: Love Replications Week
+date: 2026-03-02
+categories:
+  - Event
+event:
+  start_date: '2026-03-02'
+  end_date: '2026-03-06'
+  description: |
+    Granting replications the spotlight for one entire week - learn about best practices, get in touch with experts, and join an open community!
+
+  time: '10:00-17:00'
+  location:
+    name: Online (Zoom) 
+    address: 
+    map_url: 
+  format:
+    type: Online
+    detail: ''
+  language:
+    primary: English
+    primary-code: en
+    detail: en
+
+links:
+  registration: 
+  materials: https://zenodo.org/communities/lrw/records?q=&l=list&p=1&s=10&sort=newest
+  workshop_website: https://forrt.org/LoveReplicationsWeek/
+event_description: |
+  In the Love Replications Week, learn how to do reproduction and replication studies yourself, submit your own local or virtual events, and show your love for replications — regardless of the type of research that you do!
+  
+  The OSC was excited to be a partner in this online event where you learn about doing reproduction and replication studies.
+
+  Daily lectures and tutorials to learn how to:
+  - Do reproduction and replication studies
+  - Choose and justify replication targets
+  - Collaborate with students on replication projects
+  - Write reproducible reports and get certified reproducible results
+  
+instructors:
+  - name: 
+    url: ''
+
+helpers:
+  - name: 
+    url: 
+  - name:
+    url: 
+contact:
+  name: 
+  email: 
+organizers:
+  - name: Lukas Röseler
+presenters:
+  - name: 
+    url: 
+    affiliation: 
+  - name: 
+    url: 
+host:
+  - name: Framework for Open and Reproducible Research Training (FORRT)
+    url: https://forrt.org/
+  - name: German Reproducibility Network (GRN)
+    url:
+  - name: LMU Open Science Center (OSC)
+
+template: templates/event-template.html
+filters:
+    - templates/process-event-yaml.lua
+---
+
+<!-- Extra content, namely executable R, Python, and Julia code can be added here if desired, and will be rendered at the bottom of the Overview header, but before the presenters/instructors/helpers/contact sections. -->
+
