@@ -1,0 +1,1314 @@
+---
+title: "4. Preserve & Share"
+description: "Archive research outputs, publish openly, obtain persistent identifiers, and maximize research impact"
+phase_order: 4
+sidebar: training
+number-depth: 4
+number-sections: true
+number-offset: [0,4,0]
+page-layout: full
+toc: false
+css: handbook-styles.css
+title-block-style: none
+include-in-header:
+  - text: |
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+---
+
+
+```{=html}
+<div class="orc-phase-hero phase-4 container shadow rounded-4">
+<div class="row align-items-center p-3 p-lg-4 mt-4 mb-3">
+<!-- Cycle image -->
+<div class="col-12 col-lg-3 orc-hero-cycle text-center phase-4">
+{{< include ../images/os-cycle.svg >}}
+</div>
+<!-- Text content -->
+<div class="col-12 col-lg-9">
+<p class="lead fw-bold mb-3 fs-4 text-muted">Make your research outputs accessible, reusable, and citable</p>
+<!-- Pills -->
+<div class="d-flex flex-wrap gap-3 mb-3">
+<span class="badge rounded-5 fs-6 fw-normal text-wrap orc-hero-pills phase-4"><i class="bi bi-check2-circle me-1"></i> Data Sharing</span>
+<span class="badge rounded-5 fs-6 fw-normal text-wrap orc-hero-pills phase-4 "><i class="bi bi-check2-circle me-1"></i> Code Publishing</span>
+<span class="badge rounded-5 fs-6 fw-normal text-wrap orc-hero-pills phase-4 "><i class="bi bi-check2-circle me-1"></i> Open Access</span>
+<span class="badge rounded-5 fs-6 fw-normal text-wrap orc-hero-pills phase-4 "><i class="bi bi-check2-circle me-1"></i> Persistent Identifiers</span>
+</div>
+<div class="orc-hero-checkpoint phase-4 badge rounded-5 d-inline-flex align-items-center justify-content-center text-wrap white-space-normal fs-6 fw-normal">
+<i class="bi bi-people-fill me-2"></i>
+Checkpoint: Manuscript submission with DOIs for preregistration, data, and code
+</div>
+</div>
+</div>
+</div>
+```
+<details class="orc-details-panel">
+<summary markdown="1"><i class="bi bi-database-up"></i> 
+
+### FAIR Data Sharing {#sec-fair-data-sharing}
+
+</summary>
+
+Sharing your data allows others to verify your findings, build on your work, and increase the impact of your research. But sharing does not always mean making everything publicly available. What you can share depends on the consent you obtained, the sensitivity of your data, and your ethics approval.
+
+In [1. Plan & Design](01-plan-and-design.qmd){.mark}, you wrote a Data Management Plan, in [2. Collect & Manage](02-collect-and-manage.qmd){.mark}, you created documentation for yourself, and in [3. Analyze & Collaborate](03-analyze-and-collaborate.qmd){.mark} you updated that documentation for your collaborators. Now you prepare that documentation for people who have no prior knowledge of your project and reassess you plan:
+
+::: {.ms-1} 
+- **Make a final decision on how openly your data will be shared.**
+- **Select an appropriate repository** for publishing your data type.
+- **Apply a license** that tells others how they may reuse your work.
+:::
+
+These steps are straightforward if you followed previous recommendations: by this stage, you should already have a README, a data dictionary (codebook), organized files, and clear metadata.
+
+::: {.panel-tabset}
+
+#### 4.1.1. Open vs Restricted 
+<!-- I edited this a bit Reema, is this correct? overall I think this section could use more information and clarity. How about embargoe?-->
+
+Not all data can or should be shared openly. Your sharing options depend on what consent participants gave and what your ethics approval permits (see [1.2.3. Ethics](01-plan-and-design.qmd#sec-legal-requirements){.mark}).
+
+<br>
+
+- **Open data** can be downloaded by anyone without restrictions. This maximizes reuse but is only appropriate when data contains no personal information or has been fully anonymized.
+
+- **Restricted access** means the metadata is available on a professional repository and clear instructions of the conditions of access to the data are provided. Requesting the data often requires describing the purpose of reuse (sometimes in the form of a preregistration, see [1.4.1. Pre-analysis planning](01-plan-and-design.qmd#sec-study-design-analysis-plan){.mark}), signing a Data Use Agreement, and agreeing to further conditions. This can be organized automatically through the repository or through contacting the authors<!--if so what's the difference with the option below?-->. This balances reuse with protection. 
+
+- **Metadata only** describes what data exists without sharing the data itself. Others can discover your work and contact you to discuss access. This is appropriate when data cannot be shared due to legal or ethical constraints.<!--would that be considered Accessible though?--> Making your data Findable by sharing your metadata on a professional repository is the first step to making your data FAIR, as emphasized by the [LMU Guidelines for Safeguarding Good Scientific Practice](https://cms-cdn.lmu.de/media/contenthub/amtliche-veroeffentlichungen/gwp-ordnung.pdf) (see also [1.2. Legal Requirements](01-plan-and-design.qmd#sec-legal-requirements){.mark})
+
+<br>
+
+When deciding whether data should be shared, consider the following:
+
+- Ensure that data sharing is compatible with the **informed consent** provided by participants. 
+- Check what your **ethics approval** allows.
+- Consider whether the data can be **anonymized** without losing scientific value (see [2.3.2. Anonymization](02-collect-and-manage.qmd#sec-ethics-and-privacy){.mark}).
+- If you work with **sensitive data**, you may consult the University's [data protection officer](https://www.lmu.de/en/about-lmu/structure/organizational-structure/officers-and-representatives/data-protection-officer.html). 
+- If your research outputs could have **dual-use** implications (e.g. that could also be applied for military or malicious purposes), consult the relevant regulations (e.g. European Commission's policy ([Dual-Use Regulation 2021/821](https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L:2021:206:FULL&from=EN))) and contact the University's [Export Control service](mailto:Exportkontrolle@Verwaltung.Uni-Muenchen.DE).
+- If your research may lead to **patents or commercialization**, contact the the University's [IP Management team](https://www.lmu.de/en/research/research-transfer/inventions-patents-and-exploitation-rights/) before sharing data. Early consultation helps ensure that intellectual property rights are not compromised.
+
+
+<!-- TODO Reema: tool card for decision tree ; MI: not sure if feasible in enough details to be useful? but perhaps ;)--> 
+
+
+::: {.container .my-4 }
+
+<h4 class="fs-5"><i class="bi bi-mortarboard"></i> LEARN MORE</h4>
+
+::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
+
+::: {.col}
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+  <div class="d-flex gap-2">
+    <div class="orc-card-tool-icon p-2 rounded">
+      <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+    </div>
+  </div>
+  <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Lecture</span>
+</div>
+<h4 class="card-title">Why share data openly?</h4>
+<p class="card-text">An introduction to the what, why, and how to make data open (30 min)</p>
+<a href="https://lmu-osc.github.io/training/data-management/open-data.html" class="stretched-link" target="_blank" rel="noopener"></a>
+</div>
+```
+:::
+
+::: {.col}
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+  <div class="d-flex gap-2">
+    <div class="orc-card-tool-icon p-2 rounded">
+      <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+    </div>
+  </div>
+  <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Lecture</span>
+</div>
+<h4 class="card-title">Maintaining Privacy with Open Data</h4>
+<p class="card-text">How to make data open without revealing sensitive information (1h)</p>
+<a href="https://lmu-osc.github.io/training/data-management/maintaining-privacy-with-open-data.html" class="stretched-link" target="_blank" rel="noopener"></a>
+</div>
+```
+:::
+
+
+::: {.col}
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+  <div class="d-flex gap-2">
+    <div class="orc-card-tool-icon p-2 rounded">
+      <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+    </div>
+  </div>
+  <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
+</div>
+<h4 class="card-title">TBA: Data Anonymization</h4> <!-- edit when available -->
+<p class="card-text">Implement data anonymization techniques in R. (X h)</p> <!-- edit when available -->
+<a href="#" class="stretched-link" rel="noopener"></a><!-- Add link when available -->
+</div>
+```
+:::
+
+:::
+
+<h4 class="fs-5 mt-3"><i class="bi bi-tools"></i> TOOLS & RESOURCES</h4>
+
+::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
+
+::: {.col}
+
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
+<img src="https://cms-cdn.lmu.de/assets/img/favicon.ico" class="img-fluid" alt="LMU logo">
+</div>
+<h4 class="card-title">LMU Guidelines for Safeguarding Good Scientific Practice</h4>
+<p class="card-text">Implementation of the German Research Foundation's (DFG) Code of Conduct</p>
+<a href="https://cms-cdn.lmu.de/media/contenthub/amtliche-veroeffentlichungen/gwp-ordnung.pdf" class="stretched-link" target="_blank" rel="noopener"></a>
+</div>
+```
+:::
+
+::: {.col}
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
+<img src="https://europa.eu/assets/comm/infogram/EU-flag/en/data/aea86fce95146ce706844aeec4f57daa.jpg" class="img-fluid" alt="LMU logo">
+</div>
+<h4 class="card-title">EU Dual-Use Regulation 2021/821</h4>
+<p class="card-text">List of regulated research outputs that could lead to military or malicious purposes.</p>
+<a href="https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L:2021:206:FULL&from=EN" class="stretched-link" target="_blank" rel="noopener"></a>
+</div>
+```
+:::
+
+
+:::
+
+:::
+
+
+
+
+#### 4.1.2. Preparing Your Data
+
+During the course of data collection and analyses, you created a README and data dictionary for yourself and collaborators. Before sharing publicly, review them from the perspective of someone who knows nothing about your project.
+
+<br>
+
+- **Expand your README** to include the research context (who created the data, what it contains, when and where it was collected, why it was generated, how it was produced), how to cite the dataset, and any access conditions. 
+
+- **Review your data dictionary** to ensure every variable is fully described. What was obvious to you during analysis may need explanation for others.
+
+- **Confirm you follow community standards.** Many fields have established formats for sharing data (e.g., [BIDS](https://bids.neuroimaging.io/index.html) for neuroimaging, see [FAIRsharing](https://fairsharing.org/) and [RDMkit](https://rdmkit.elixir-europe.org/your_domain) to review discipline specific organizational and metadata standards). Using these makes your data immediately usable with existing tools (see also [2.2.5. Standards](02-collect-and-manage.qmd#sec-data-management){.mark}).<!-- link to discipline specific guidance when exist--> 
+
+- **Verify anonymization.** Check that no personal information remains in the data files, metadata, or filenames.
+
+
+::: {.container .my-4 }
+
+<h4 class="fs-5"><i class="bi bi-mortarboard"></i> LEARN MORE</h4>
+
+::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
+
+<!-- card  -->
+::: {.col}
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+  <div class="d-flex gap-2">
+    <div class="orc-card-tool-icon p-2 rounded">
+      <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+    </div>
+  </div>
+  <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
+</div>
+<h4 class="card-title">FAIR Data Management</h4> 
+<p class="card-text">Manage data following FAIR principles. Covers READMEs, data dictionaries, file formats, and standards. (2h)</p>
+<a href="https://lmu-osc.github.io/FAIR-Data-Management/" class="stretched-link" target="_blank" rel="noopener"> </a>
+</div>
+```
+:::
+
+<!-- card  -->
+::: {.col}
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+  <div class="d-flex gap-2">
+    <div class="orc-card-tool-icon p-2 rounded">
+      <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+    </div>
+  </div>
+  <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
+</div>
+<h4 class="card-title">Data Documentation & Validation</h4> 
+<p class="card-text">Create data dictionaries and READMEs for your data. (1h)</p>
+<a href="https://lmu-osc.github.io/data-documentation-validation-R/" class="stretched-link" target="_blank" rel="noopener"> </a>
+</div>
+```
+:::
+
+
+::: {.col}
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+  <div class="d-flex gap-2">
+    <div class="orc-card-tool-icon p-2 rounded">
+      <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+    </div>
+  </div>
+  <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
+</div>
+<h4 class="card-title">TBA: Data Anonymization</h4> <!-- edit when available -->
+<p class="card-text">Implement data anonymization techniques in R. (X h)</p> <!-- edit when available -->
+<a href="#" class="stretched-link" rel="noopener"></a><!-- Add link when available -->
+</div>
+```
+:::
+
+:::
+
+
+<h4 class="fs-5 mt-3"><i class="bi bi-tools"></i> TOOLS & RESOURCES</h4>
+<!-- row for Tools & Resources section -->
+
+::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
+
+
+::: {.col}
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
+<img src="https://avatars.githubusercontent.com/u/29867987?s=280&v=4" class="img-fluid" alt="FAIRsharing logo">
+</div>
+<h4 class="card-title">FAIRsharing</h4>
+<p class="card-text">Search by discipline to find metadata standards, reporting guidelines, and data policies for your field.</p>
+<a href="https://fairsharing.org/" class="stretched-link" target="_blank" rel="noopener"> </a>
+</div>
+```
+:::
+
+::: {.col}
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
+<img src="https://rdmkit.elixir-europe.org/assets/img/apple-touch-icon.png" class="img-fluid" alt="RDMkit logo">
+</div>
+<h4 class="card-title">RDMkit</h4>
+<p class="card-text">Domain-specific metadata standards</p>
+<a href="https://rdmkit.elixir-europe.org/your_domain" class="stretched-link" target="_blank" rel="noopener"></a>
+</div>
+```
+:::
+
+:::
+
+:::
+
+
+#### 4.1.3. Where to Deposit
+
+Choose a repository that suits your data type, your field's expectations, and your access requirements.
+
+<br>
+
+- **Discipline-specific repositories** are often the best choice. They use metadata standards your community expects, making your data findable by researchers in your field. Search [re3data](https://www.re3data.org/) to find repositories for your domain.
+
+- **General-purpose repositories** like [Zenodo](https://zenodo.org/) or [OSF](https://osf.io/) accept any data type. They provide DOIs and long-term preservation, but may lack the specialized metadata fields of discipline-specific options.
+
+- **Institutional repositories** may be required by your funder. Choosing the LMU repository [Open Data LMU](https://data.ub.uni-muenchen.de/) also ensures you can get the support of the [Research Data Management team of the University Library](https://www.en.ub.uni-muenchen.de/writing/research_data/research-data-management/index.html).
+
+<br>
+
+Whichever you choose, ensure the repository provides a **DOI** (Digital Object Identifier) so your data can be cited and tracked. 
+
+
+::: {.container .my-4 }
+
+<h4 class="fs-5 mt-3"><i class="bi bi-tools"></i> TOOLS & RESOURCES</h4>
+
+::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
+
+<!-- card-->
+::: {.col}
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;">  
+<img src="https://www.re3data.org/favicon.ico" class="img-fluid" alt="re3data icon">
+</div>
+<h4 class="card-title">re3data</h4>
+<p class="card-text">Registry of research data repositories.</p>
+<a href="https://www.re3data.org/" class="stretched-link" target="_blank" rel="noopener"></a>
+</div>
+```
+:::
+
+
+::: {.col}
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+    <div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Open_Science_Framework_log_%28and_Center_for_Open_Science_logo%29.svg/3840px-Open_Science_Framework_log_%28and_Center_for_Open_Science_logo%29.svg.png" class="img-fluid" alt="OSF icon">
+    </div>
+    <h4 class="card-title">Open Science Framework</h4>
+    <p class="card-text">General-purpose repository for data, materials, reports.</p>
+    <a href="https://osf.io/registries/" class="stretched-link" target="_blank" rel="noopener"></a>
+</div>
+```
+:::
+
+
+<!-- card-->
+::: {.col}
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
+<img src="https://about.zenodo.org/static/img/icons/zenodo-icon-blue.svg" class="img-fluid" alt="Zenodo icon">
+</div>
+<h4 class="card-title">Zenodo</h4>
+<p class="card-text">General-purpose repository for data, software, reports.</p>
+<a href="https://zenodo.org" class="stretched-link" target="_blank" rel="noopener"></a>
+</div>
+```
+:::
+
+::: {.col}
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+  <div class="d-flex gap-2">
+    <div class="orc-card-tool-icon p-2 rounded">
+        <img src="https://cms-cdn.lmu.de/assets/img/favicon.ico" class="img-fluid" alt="LMU logo">
+    </div>
+  </div>
+  <span class="badge rounded-5 bg-success-subtle text-success align-self-start">Supported at LMU</span>
+</div>
+<h4 class="card-title">Open Data LMU</h4>
+<p class="card-text">Institutional data repository.</p>
+<a href="https://data.ub.uni-muenchen.de/" class="stretched-link" target="_blank" rel="noopener"></a>
+</div>
+```
+:::
+
+:::
+
+:::
+
+
+
+#### 4.1.4. Data Licenses
+
+A license tells others what they can do with your data. Licensing your data consists in adding a file called LICENSE.txt next to your data, that contains the appropriate legal text. Without one, or equivalent statements, others cannot legally reuse your research outputs, even if it is publicly available.
+
+<br>
+
+Common open licenses for data are:
+
+- **CC0 (Public Domain)** places no restrictions. Anyone can use, modify, and redistribute without attribution. Recommended for factual data where maximum reuse is the goal.
+- **CC BY (Attribution)** requires users to credit you. A good default when you want recognition while enabling broad reuse.
+- **CC BY-NC (Non-Commercial)** adds a restriction against commercial use. Consider whether this limitation actually serves your goals.
+
+<br>
+
+Learn more about open licenses for data and code in our [code publishing tutorial](https://lmu-osc.github.io/code-publishing/choose_license.html).
+
+<br>
+
+For restricted-access data, a **Data Use Agreement** specifies conditions beyond a standard license: approved purposes, security requirements, publication terms, and data destruction timelines.<!-- Reema - I think we might need a section just for DUA? also does this mean it's either  or? license when simple cases, DUA when complex and typically not open?-->
+
+::: {.container .my-4 }
+
+<h4 class="fs-5"><i class="bi bi-mortarboard"></i> LEARN MORE</h4>
+
+::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
+
+<!-- card -->
+::: {.col}
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+  <div class="d-flex gap-2">
+    <div class="orc-card-tool-icon p-2 rounded">
+      <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+    </div>
+  </div>
+  <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
+</div>
+<h4 class="card-title">Choose a License</h4>
+<p class="card-text">License decision flowchart for data and code.</p>
+<a href="https://lmu-osc.github.io/code-publishing/choose_license.html" class="stretched-link" target="_blank" rel="noopener"> </a>
+</div>
+```
+:::
+
+:::
+
+:::
+
+
+#### 4.1.5. Data Use Agreements
+
+_in construction_<!-- Reema? -->
+
+* Description of what it is, when it is needed, what the process to create one is (Team SOP for handling access requests (who receives them, how decisions are made, what must be documented, and response timelines))
+* LMU contact for legal department 
+* Examples DUA
+
+
+
+
+</details>
+
+
+<details class="orc-details-panel">
+<summary><i class="bi bi-file-code"></i> 
+
+### Open Source Code {#sec-open-source-code}
+
+</summary>
+
+Making code publicly available demonstrates the reproducibility of your results and enables others to understand, verify, and build upon your analytical methods.
+
+So far, your code was either backed up on the secured [LRZ Gitlab](https://gitlab.lrz.de/) (e.g. if your data and/or code are sensitive), or on [GitHub](https://github.com/)  (see [3. Analyze & Collaborate](03-analyze-and-collaborate.qmd){.mark}). Before the submission of a manuscript to a journal and/or upon the acceptance of a manuscript, there are small additional steps that need to be done to publish your code.
+
+::: {.ms-1} 
+- **verify** the structure of your repository, the readability of your scripts, the completeness of the documentation (see [Analyze & Collaborate Checklist](03-analyze-and-collaborate.qmd#analyze-collaborate-checklist){.mark}).
+- **make a clean version public** e.g. to [GitHub](https://github.com/)
+- **add a license**
+- **get a DOI** through e.g. [Zenodo](https://zenodo.org/)
+:::
+
+If you work with **sensitive data that cannot be anonymized** and shared:
+
+::: {.ms-1} 
+- **generate a simulated random dataset** to allow for the published code to run (which you may have already done if you simulated data in order to prepare a preregistration, see [1.4. Study Design & Analysis Plan](01-plan-and-design.qmd#sec-study-design-analysis-plan){.mark}), _or_ 
+- **create a synthetic dataset with the same properties as the original dataset** to allow others to re-derive an approximation of the original results and conduct further exploratory analyses.
+:::
+
+::: {.panel-tabset}
+
+#### 4.2.1. Preparing Your Code Repository
+
+During the course of data analyses, you created scripts and documentation such as README and data dictionary for yourself and collaborators. Before sharing publicly, review them from the perspective of someone who knows nothing about your project.
+
+<br>
+
+- **Expand your README** to include a description, involved data, computational requirements and dependencies (i.e. what software, packages, and their version, need to be installed to run the analyses), list of results. 
+- **Document your code** from an external perspective, using literate programming (e.g. Quarto) or comments.
+- **Double check that no sensitive information remains in your repository** (e.g. code comments, history of sensitive data)
+
+See our [code publishing tutorial](https://lmu-osc.github.io/code-publishing/) for more information on how to prepare your code repository for sharing.
+
+<br>
+
+::: {.callout-important}
+If you work with **sensitive data**, you must not include the raw or processed data in the version-controlled repository to be shared. 
+
+<br>
+
+Instead, explicitly **exclude the data directory using the .gitignore file from the start**, **or create a new local repository that contains all project files except the data**.
+
+<br>
+
+Importantly, if data are removed from an existing repository, they may still remain accessible in the repository’s history, since previous states of the project can be restored. If sensitive data are accidentally committed and pushed, it is possible to [rewrite the repository history](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository) to remove them retrospectively. However, this process is complex and error-prone, so it is best avoided by ensuring that sensitive data are excluded from version control from the outset.
+:::
+
+::: {.container .my-4 }
+
+<h4 class="fs-5"><i class="bi bi-mortarboard"></i> LEARN MORE</h4>
+
+::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
+
+<!-- card -->
+::: {.col}
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+  <div class="d-flex gap-2">
+    <div class="orc-card-tool-icon p-2 rounded">
+      <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+    </div>
+  </div>
+  <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
+</div>
+<h4 class="card-title">Code Publishing</h4>
+<p class="card-text">Add all elements of a reproducible project to your repository.</p>
+<a href="https://lmu-osc.github.io/code-publishing/" class="stretched-link" target="_blank" rel="noopener"> </a>
+</div>
+```
+:::
+
+:::
+
+:::
+
+#### 4.2.2. Real, Simulated, or Synthetic Data
+
+Sharing your code allows for other researchers to clearly see which analytic methods were applied to the data. Ideally, they should also be able to rerun the code and verify the reproducibility of the reported results.
+
+<br>
+
+You can provide the data required to run the code in several ways:  
+
+- **The real (anonymized) data.** This can be done either (1) by including the dataset in the repository so that the code can access it locally and run directly, or (2) by configuring the code to retrieve the data from an external source, such as a database, API, or external data repository.
+- **Simulated random data.** This option mainly demonstrates that the code runs without errors. However, the original results cannot be verified and further analyses are not meaningful. See our [data simulation tutorial](https://lmu-osc.github.io/Introduction-Simulations-in-R/).
+- **Synthetic data that mimic key properties of the real data.** When privacy-sensitive data cannot be shared, synthetic datasets can provide a useful alternative. Compared with purely random simulated data, synthetic data can resemble the structure and characteristics of the original dataset, allowing other researchers to rerun the analyses and assess whether the main results can be reproduced. In addition, openly shared synthetic data enable exploratory analyses that may generate new hypotheses, and in some cases analyses conducted on synthetic data can approximate results obtained from the real data.
+
+
+::: {.container .my-4 }
+
+<h4 class="fs-5"><i class="bi bi-mortarboard"></i> LEARN MORE</h4>
+
+::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
+
+<!-- card  -->
+::: {.col}
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+  <div class="d-flex gap-2">
+    <div class="orc-card-tool-icon p-2 rounded">
+      <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+    </div>
+  </div>
+  <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
+</div>
+<h4 class="card-title">FAIR Data Management</h4> 
+<p class="card-text">Manage data following FAIR principles. Covers READMEs, data dictionaries, file formats, and standards. (2h)</p>
+<a href="https://lmu-osc.github.io/FAIR-Data-Management/" class="stretched-link" target="_blank" rel="noopener"> </a>
+</div>
+```
+:::
+
+
+::: {.col}
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+  <div class="d-flex gap-2">
+    <div class="orc-card-tool-icon p-2 rounded">
+      <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+    </div>
+  </div>
+  <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
+</div>
+<h4 class="card-title">Data simulation in R</h4>
+<p class="card-text">Easy data simulations in R. (2h)</p>
+<a href="https://lmu-osc.github.io/Introduction-Simulations-in-R/" class="stretched-link" target="_blank" rel="noopener"></a>
+</div>
+```
+:::
+
+::: {.col}
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+  <div class="d-flex gap-2">
+    <div class="orc-card-tool-icon p-2 rounded">
+      <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+    </div>
+  </div>
+  <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
+</div>
+<h4 class="card-title">Synthetic Data</h4>
+<p class="card-text">Synthetic data creation in R to balance utility and privacy when sharing data. (3h)</p>
+<a href="https://lmu-osc.github.io/synthetic-data-tutorial/" class="stretched-link" target="_blank" rel="noopener"> </a>
+</div>
+```
+:::
+
+:::
+
+
+:::
+
+
+#### 4.2.3. Code Licenses
+
+A license tells others what they can do with your code. Licensing your code consists in adding a file called LICENSE.txt next to your code, that contains the appropriate legal text. Without one, or equivalent statements, others cannot legally reuse your code, even if it is publicly available e.g. on [GitHub](https://github.com/). Common open licenses for code are:
+
+<br>
+
+- **CC0 (Public Domain)** places no restrictions. Anyone can use, modify, and redistribute without attribution. Recommended for factual code where maximum reuse is the goal.
+- **MIT** is a simple license that requires users to credit you when they reuse, modify, and redistribute your code.
+- **Apache 2.0** is a safer license (covering more legal cases) that requires users to credit you and state the changes you made to the code.
+
+<br>
+
+Learn more about open licenses for data and code in our [code publishing tutorial](https://lmu-osc.github.io/code-publishing/choose_license.html) or using the tool '[Choose an open source license](https://choosealicense.com/licenses/)'.
+
+::: {.container .my-4 }
+
+<h4 class="fs-5"><i class="bi bi-mortarboard"></i> LEARN MORE</h4>
+
+::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
+
+<!-- card -->
+::: {.col}
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+  <div class="d-flex gap-2">
+    <div class="orc-card-tool-icon p-2 rounded">
+      <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+    </div>
+  </div>
+  <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
+</div>
+<h4 class="card-title">Choose a License</h4>
+<p class="card-text">License decision flowchart for data and code.</p>
+<a href="https://lmu-osc.github.io/code-publishing/choose_license.html" class="stretched-link" target="_blank" rel="noopener"> </a>
+</div>
+```
+:::
+
+::: {.col}
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
+<img src="https://choosealicense.com/favicon.ico" class="img-fluid" alt="Choose an open source license logo">
+</div>
+<h4 class="card-title">Choose an open source license</h4>
+<p class="card-text">Tool comparing open software licenses.</p>
+<a href="https://choosealicense.com/" class="stretched-link" target="_blank" rel="noopener"></a>
+</div>
+```
+:::
+
+:::
+
+:::
+
+#### 4.2.4. Archiving & DOIs
+
+To publish you code on Zenodo, we recommend to<!-- these instructions contradict https://lmu-osc.github.io/code-publishing/archive.html but see https://github.com/lmu-osc/code-publishing/issues/86 -->
+
+- **Push your clean repository to GitHub** (see GitHub tutorial).
+- **Create an account on [Zenodo](https://zenodo.org/).**
+- **Link your GitHub account to Zenodo.**  Navigate to your profile >  account settings > link external accounts > GitHub > authorize Zenodo to access your GitHub account > a list of your GitHub repositories should appear. Enable the repository by toggling the switch next to it; refresh the page to check to see if the visual indicator that the repository is connected appears
+- **Go to GitHub and create a release.** Zenodo will automatically download a .zip-ball of each new release and register a DOI.
+- **Add DOI badge to your README.** After your first release, a DOI badge that you can include in GitHub README will appear next to your repository in the your list of GitHub repositories on Zenodo. This allows others to easily find and cite your archived code
+- **Create new release when needed.** If you make a new release, it will create a new version on Zenodo, under the same overall DOI, with a ‘sub-DOI’ to identify a specific version. 
+
+
+:::{.callout-tip}
+## Tip for research groups:
+**Create a Zenodo "community" for the team.** After team members connect their repositories from their personal GitHub account to Zenodo, and archive releases with a DOI, these records can be added to a shared Zenodo _community_. A community provides a central space where all software and other research outputs produced by the group can be collected and displayed, making them easier to find, cite, and showcase at the team level.  
+:::
+
+::: {.container .my-4 }
+
+<h4 class="fs-5"><i class="bi bi-mortarboard"></i> LEARN MORE</h4>
+
+::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
+
+<!-- card -->
+::: {.col}
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+  <div class="d-flex gap-2">
+    <div class="orc-card-tool-icon p-2 rounded">
+      <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+    </div>
+  </div>
+  <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
+</div>
+<h4 class="card-title">Code Publishing</h4>
+<p class="card-text">Add all elements of a reproducible project to your repository.</p>
+<a href="https://lmu-osc.github.io/code-publishing/" class="stretched-link" target="_blank" rel="noopener"> </a>
+</div>
+```
+:::
+
+:::
+
+<h4 class="fs-5 mt-3"><i class="bi bi-tools"></i> TOOLS & RESOURCES</h4>
+<!-- row for Tools & Resources section -->
+
+::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
+
+<!-- card-->
+::: {.col}
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
+<img src="https://about.zenodo.org/static/img/icons/zenodo-icon-blue.svg" class="img-fluid" alt="Zenodo icon">
+</div>
+<h4 class="card-title">Zenodo</h4>
+<p class="card-text">General-purpose repository for data, software, reports.</p>
+<a href="https://zenodo.org" class="stretched-link" target="_blank" rel="noopener"></a>
+
+</div>
+```
+:::
+:::
+:::
+
+
+:::
+
+</details>
+
+<details class="orc-details-panel">
+<summary><i class="bi bi-journal-arrow-up"></i> 
+
+### Open Materials {#sec-open-materials}
+
+</summary>
+
+Any material needed to reproduce or replicate your study should also be shared openly unless there are dual-use, patent, or privacy concerns. 
+
+::: {.panel-tabset}
+
+#### 4.3.1. Digital materials 
+
+For instance, you can share your:
+
+- **Share wet-lab protocols** on e.g. [protocols.io](https://www.protocols.io/), see [2.1.1. Lab Protocols](02-collect-and-manage.qmd#sec-data-collection){.mark}.
+- **Share survey text, instructions, or scoring sheets** on e.g. [OSF](https://osf.io/)
+
+We recommend to use a creative Common license such as CC.-BY 4.0 to allow reuse, modification and redistribution, while getting attribution, or one of its derivative (see [tool to select a creative common license](https://creativecommons.org/chooser/))
+
+
+::: {.container .my-4 }
+
+<!-- row for Tools & Resources section -->
+<h4 class="fs-5 mt-3"><i class="bi bi-tools"></i> TOOLS & RESOURCES</h4>
+::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
+
+::: {.col}
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
+<img src="https://www.protocols.io/favicon.ico" class="img-fluid" alt="Protocols.io icon">
+</div>
+<h4 class="card-title">Protocols.io</h4>
+<p class="card-text">Share, discover, cite, and improve research protocols.</p>
+<a href="https://www.protocols.io/" class="stretched-link" target="_blank" rel="noopener"></a>
+</div>
+```
+:::
+
+::: {.col}
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Open_Science_Framework_log_%28and_Center_for_Open_Science_logo%29.svg/3840px-Open_Science_Framework_log_%28and_Center_for_Open_Science_logo%29.svg.png" class="img-fluid" alt="OSF logo">
+</div>
+<h4 class="card-title">OSF</h4>
+<p class="card-text">Project management platform including storage and DOI.</p>
+<a href="https://osf.io/" class="stretched-link" target="_blank" rel="noopener"> </a>
+</div>
+```
+:::
+
+::: {.col}
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
+<img src="https://creativecommons.org/wp-content/themes/vocabulary-theme/vocabulary/favicon/apple-touch-icon.png" class="img-fluid" alt="Creative Commons logo">
+</div>
+<h4 class="card-title">Creative Commons licenses</h4>
+<p class="card-text">Tool comparing licenses for diverse creative work.</p>
+<a href="https://creativecommons.org/chooser/" class="stretched-link" target="_blank" rel="noopener"></a>
+</div>
+```
+:::
+:::
+:::
+
+#### 4.3.2. Physical materials
+
+Repositories for physical research materials (e.g., biological samples, chemicals, specimens, hardware, or other tangible resources) are usually called biobanks, material repositories, or research infrastructure collections and are domain specific or specialized to one kind of material (e.g. DNA). 
+
+<br>
+
+For instance, [Addgene](https://www.addgene.org/) is a nonprofit plasmid repository deposited by thousands of research labs around the world, while [ARIADNE](https://www.ariadne-research-infrastructure.eu/)'s mission is to create a sustainable infrastructure for archaeological data sharing across institutions and nations.
+
+<br>
+
+Regardless of your discipline: 
+
+- **Use repositories that assign persistent identifiers** for proper citation.
+- **Provide detailed metadata**, including provenance, storage conditions, and usage restrictions.
+- **Check legal and ethical requirements** (biosafety, export control, patient consent).
+- **Document links between materials and associated datasets or publications.**
+
+
+
+
+</details>
+
+
+<details class="orc-details-panel">
+<summary><i class="bi bi-unlock2"></i> 
+
+### Open Access Articles {#sec-open-access-articles}
+
+</summary>
+
+
+Publishing open access articles (i.e. which are free to readers) **increases the visibility, citation, and impact** of research by removing paywall barriers, enabling scholars, practitioners, and policymakers worldwide to access and build upon the work without restriction. It also **accelerates knowledge dissemination and promotes equity** in scholarship by providing institutions and researchers - especially in low-resource settings - free and immediate access to scientific findings.
+
+::: {.panel-tabset}
+
+#### 4.4.1. Pathways to Open Access
+
+They are several pathways to make your your articles free to read, e.g.:
+
+- **Diamond Open Access**: journals that provide immediate open access without charging authors any Article Processing Charges (APCs), as publication costs are covered by institutions, consortia, or public funding. Visit the [Directory of Open Access Journals (DOAJ)](https://doaj.org/) to find them.
+- **Gold Open Access**: the publication of the final version of record as immediately open access on the publisher’s platform, against payment of an Article Processing Charges (APCs) by the authors.
+- **Green Open Access**: self-archiving of a [**preprint or postprint**]{.underline} in an institutional or disciplinary repository, either immediately or after an embargo period imposed by the publisher,  without cost to the author. Visit the [Open Policy Finder](https://openpolicyfinder.jisc.ac.uk/) to know whether and where your publishers allow you to publish preprint or postprints.
+
+Depending on the contract negotiated by the University and each publisher (see [4.4.2. Contract with Publishers](#sec-open-access-articles){.mark}), the payment of APCs can also be requested by publishers regardless of the article's accessibility status.
+
+:::{.callout-note}
+## Definitions
+[**preprint**]{.underline}: article, book chapter, book, or other scholarly work that is deposited in a repository with unrestricted access (i.e. available to the public to view online, or download, without registration, payment, or approval) ahead of peer review. Equivalent terms used in some disciplines are ‘working paper’ and ‘unpublished manuscript’.
+
+<br>
+
+[**postprint**]{.underline}: accepted version of an article, book chapter, book, or other scholarly work that is released by the author(s) on a repository with unrestricted access (i.e. available to the public to view online, or download, without registration, payment, or approval)
+:::
+
+
+::: {.container .my-4 }
+
+<h4 class="fs-5 mt-3"><i class="bi bi-tools"></i> TOOLS & RESOURCES</h4>
+
+::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
+
+
+::: {.col}
+
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
+<img src="https://doaj.org/assets/img/favicon/apple-touch-icon.png" class="img-fluid" alt="DOAJ logo">
+</div>
+<h4 class="card-title">Directory of Open Access Journals (DOAJ) </h4>
+<p class="card-text">Index of trusted open access journals.</p>
+<a href="https://doaj.org/" class="stretched-link" target="_blank" rel="noopener"></a>
+</div>
+```
+:::
+
+::: {.col}
+
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
+<img src="https://openpolicyfinder.jisc.ac.uk/images/jisc-logo.svg" class="img-fluid" alt="Jisc logo">
+</div>
+<h4 class="card-title">Jisc' Open Policy Finder</h4>
+<p class="card-text">Clear summary of journals' open access policies.</p>
+<a href="https://openpolicyfinder.jisc.ac.uk/" class="stretched-link" target="_blank" rel="noopener"></a>
+</div>
+```
+:::
+
+:::
+
+:::
+
+
+
+#### 4.4.2. Contracts with Publishers
+
+Until 2024, authors publishing in legacy (subscription-based) journals were required to pay an **Article Processing Charge (APC)** to make their work immediately open access upon publication, the model commonly referred to as '_gold open access_'. 
+To **avoid these fees** while still ensuring public accessibility, authors were encouraged to disseminate a **preprint and/or postprint**, or to deposit the publisher’s version in an institutional repository after the embargo period had expired. 
+These procedures, which are **free to the authors**, are collectively known as '_green open access_'. 
+
+<br>
+
+**Since 2025**, however, at LMU Munich and other universities that are part of the [DEAL Konsortium](https://deal-konsortium.de/en/) in Germany, the agreements with Elsevier, Wiley, and Springer Nature, stipulate that the **authors publishing in hybrid journals** (i.e., journals offering both subscription-based and open access options) **incur an Article Processing Charge (APC) regardless of whether the article is published closed or open access**. Consequently, authors who elect to publish in these venues and pay the APC are generally advised to opt for immediate open access through the publisher. Although preprinting remains possible and may expedite dissemination, it no longer constitutes a cost-free alternative for hybrid journals operating under these uniform APC conditions.
+
+<br>
+
+The current contract conditions for LMU Munich can be accessed on the [University Library Publication Fees Webpage (in german)](https://www.ub.uni-muenchen.de/schreiben/open-access-publizieren/publikationsgebuehren/index.html). To get support with Article Processing Charges and open access policies, contact the [University Library Open Access team](https://www.en.ub.uni-muenchen.de/writing/open-access-publishing/oa-auxiliary-page/index.html).
+
+::: {.container .my-4 }
+
+<h4 class="fs-5 mt-3"><i class="bi bi-tools"></i> TOOLS & RESOURCES</h4>
+
+::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
+
+::: {.col}
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+  <div class="d-flex gap-2">
+    <div class="orc-card-tool-icon p-2 rounded">
+      <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+    </div>
+  </div>
+  <span class="badge rounded-5 bg-success-subtle text-success align-self-start">Supported at LMU</span>
+</div>
+<h4 class="card-title">LMU University Library</h4>
+<p class="card-text">Publisher contracts and publication fees.</p>
+<a href="https://www.ub.uni-muenchen.de/schreiben/open-access-publizieren/publikationsgebuehren/index.html" class="stretched-link" target="_blank" rel="noopener"></a>
+</div>
+```
+:::
+
+:::
+
+:::
+
+#### 4.4.3. Publishing Preprints and Retaining Rights 
+
+To increase the accessibility and impact of your article we recommend you to:
+
+<br>
+
+- **Check what your target journal's open access policies are.** [Jisc' Open Policy Finder](https://openpolicyfinder.jisc.ac.uk/) provides clear information about  whether you are allowed to archive various versions of manuscripts. For instance, your target journal may, or may not, allow you to deposit:
+    - the version submitted to the journal (preprint)
+    - the accepted manuscript version (postprint)
+    - the published version 
+        - on a specific location (e.g. preprint repository, institutional repository, funders repository, author's personal website)
+        - after a specific amount of time (e.g. 6 or 12-month embargo)
+        - under a specific license (e.g. CC.BY. (recommended for maximum reuse), CC.BY-NC-ND)
+
+- **Disclose the state of peer review on each preprint version.** Use watermarks such as 'Draft' and 'Revised Draft' for your preprint, with a statement on the title page highlighting that the work has not been peer reviewed. For postprints, indicate that the version was accepted through peer review, and link to the DOI of the official journal version. 
+
+- **Get a DOI for each public version of your manuscript.** When updating your preprint through the revision cycle, get a citable DOI (as provided by the repository).
+
+- **Maintain as much rights to your own work as possible**.
+     - Prior to submitting your manuscript, deposit your manuscript's conceptual figures on a repository (e.g. [Zenodo](https://zenodo.org/), [OSF](https://osf.io/)), under an open license (e.g. [CC.BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.en) allowing reuse and modification while requiring authors to get credited), and get a DOI for it to cite your own figure in your manuscript. This way, you (and possibly other researchers), can reuse them in future manuscripts without asking permission from the publisher, by indicating the DOI and license in the figure legend.
+     - When given the choice, request your publisher to publish your manuscript under a CC.BY 4.0  license, so your right to distribution is included. It is possible that your publisher will request a CC.BY. NC (Non-Commercial) license which means you cannot deposit it on commercial platforms, but you would typically still be allowed to deposit it on preprint servers or institutional repositories (see [Jisc' Open Policy Finder](https://openpolicyfinder.jisc.ac.uk/) for the policy of your specific journal)
+
+
+In practice, we recommend to follow the process of version releases illustrated in the figure<!-- fix me where-->, starting with a manuscript draft, should you wish to obtain feedback from your community, or preprinting the submitted version, should you want to e.g. accelerate dissemination of findings that are unlikely to change during revision, or postprinting the accepted version to have a free peer-reviewed version available to anyone. 
+
+<!-- include figure in a left column (by the way I like the classic look but don't know here to add that information), and the paragraph above in a right column?-->
+```{mermaid}
+---
+config:
+  look: classic
+---
+flowchart TB
+    A("**Manuscript Draft
+    Preprint v.0.0**") -- community feedback --> B("**Submitted Manuscript
+    Preprint v.1.0**")
+    B -- journal peer review --> C("**Revised Manuscript
+    Preprint v.2.0**")
+    C -- journal acceptance --> D("**Postprint
+    Preprint v.3.0**")
+    D -- "journal copy-editing and formatting" --> E("**Published Article**")
+```
+
+<br>
+
+To get support for [Open Access LMU](https://epub.ub.uni-muenchen.de/), the LMU Munich institutional repository for articles and books, contact the [University Library Open Access team](https://www.en.ub.uni-muenchen.de/writing/open-access-publishing/oa-auxiliary-page/index.html).
+
+
+
+::: {.container .my-4 }
+
+<h4 class="fs-5 mt-3"><i class="bi bi-tools"></i> TOOLS & RESOURCES</h4>
+
+::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
+
+::: {.col}
+
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
+<img src="https://openpolicyfinder.jisc.ac.uk/images/jisc-logo.svg" class="img-fluid" alt="Jisc logo">
+</div>
+<h4 class="card-title">Jisc' Open Policy Finder</h4>
+<p class="card-text">Clear summary of journals' open access policies.</p>
+<a href="https://openpolicyfinder.jisc.ac.uk/" class="stretched-link" target="_blank" rel="noopener"></a>
+</div>
+```
+:::
+
+::: {.col}
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+  <div class="d-flex gap-2">
+    <div class="orc-card-tool-icon p-2 rounded">
+        <img src="https://cms-cdn.lmu.de/assets/img/favicon.ico" class="img-fluid" alt="LMU logo">
+    </div>
+  </div>
+  <span class="badge rounded-5 bg-success-subtle text-success align-self-start">Supported at LMU</span>
+</div>
+<h4 class="card-title">Open Access LMU</h4>
+<p class="card-text">Institutional publication repository.</p>
+<a href="https://epub.ub.uni-muenchen.de/" class="stretched-link" target="_blank" rel="noopener"></a>
+</div>
+```
+:::
+
+::: {.col}
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Open_Science_Framework_log_%28and_Center_for_Open_Science_logo%29.svg/3840px-Open_Science_Framework_log_%28and_Center_for_Open_Science_logo%29.svg.png" class="img-fluid" alt="OSF logo">
+</div>
+<h4 class="card-title">OSF Preprints</h4>
+<p class="card-text">Multidisciplinary preprint service.</p>
+<a href="https://osf.io/preprints/" class="stretched-link" target="_blank" rel="noopener"></a>
+</div>
+```
+:::
+
+::: {.col}
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
+<i class="bi bi-file-earmark-medical"></i>
+</div>
+<h4 class="card-title">bioRxiv</h4>
+<p class="card-text">Biological sciences preprints.</p>
+<a href="https://www.biorxiv.org/" class="stretched-link" target="_blank" rel="noopener"></a>
+</div>
+```
+:::
+
+::: {.col}
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
+<i class="bi bi-heart-pulse"></i>
+</div>
+<h4 class="card-title">medRxiv</h4>
+<p class="card-text">Medical and health sciences preprints.</p>
+<a href="https://www.medrxiv.org/" class="stretched-link" target="_blank" rel="noopener"></a>
+</div>
+```
+:::
+
+::: {.col}
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
+<i class="bi bi-calculator"></i>
+</div>
+<h4 class="card-title">medRxiv</h4>
+<p class="card-text">Physics, mathematics, computer science preprints.</p>
+<a href="https://arxiv.org/" class="stretched-link" target="_blank" rel="noopener"></a>
+</div>
+```
+:::
+
+:::
+
+:::
+
+</details>
+
+
+<details class="orc-details-panel">
+<summary><i class="bi bi-person-badge"></i> 
+
+### Attributions & Persistent Identifiers {#sec-attributions-and-persistent-identifiers}
+
+</summary>
+
+All research outputs and their specific versions should be linked to their authors, organisations, and funders through persistent identifiers.
+
+::: {.panel-tabset}
+
+
+####  4.5.1. Authorship, Contributorship, and ORCID
+
+<h5>Authorship</h5>
+
+According to §14 of the [LMU Guidelines for Safeguarding Good Scientific Practice](https://cms-cdn.lmu.de/media/contenthub/amtliche-veroeffentlichungen/gwp-ordnung.pdf), an author must:
+
+- make a genuine, **verifiable contribution** to the content of a scientific publication, data, or software, and **not solely have a managerial or supervisory position** in the project;
+- **agree to the final version** of the work to be published and **bear joint responsibility** for the publication unless explicitly stated otherwise.
+
+We recommend to **start discussions on authorship, roles, and responsibilities as early as possible**. First discussions can for instance take place at the end of [1. Plan & Design](01-plan-and-design.qmd){.mark}, e.g. during the presentation of the study plan to the research group (see [Plan & Design Checklist](01-plan-and-design.qmd#plan-design-checklist){.mark}). 
+
+<br>
+
+<h5>Contributorship</h5>
+
+- **Use the [Contributor Role Taxonomy  (CRediT)](https://credit.niso.org/)** to increase transparency and accountability, and acknowledge what contribution to a research project each person has made: ‘Conceptualization’, ‘Data curation’, ‘Formal analysis’, ‘Funding acquisition’, ‘Investigation’, ‘Methodology’, ‘Project administration’, ‘Resources’, ‘Software’, ‘Supervision’, ‘Validation’, ‘Visualization’, ‘Writing—original draft’, and ‘Writing—review & editing’.
+     - Include the CRediT statement in the acknowledgement section of your manuscript if your publisher is not a [formal CRediT adopter](https://credit.niso.org/adopters/) and does not otherwise prompt you upon submission of your article.
+
+- **Use the [Method Reporting with Initials for Transparency (MeRIT)](https://doi.org/10.1038/s41467-023-37039-1)** when relevant. This consist in adding initials to the Methods section, identifying with greater transparency who did what when several team members contributed to e.g. data curation or software.
+
+<br>
+
+<h5>ORCID</h5>
+
+- **Create an Open Researcher and Contributor ID** ([ORCID](https://orcid.org/)), a free, unique, persistent identifier for individuals, to distinguish yourself and claim credit for your work automatically, no matter how many people have your same (or similar) name. 
+- **Associate your ORCID to all your research outputs.** The vast majority of publishers, funders, and data and code repositories prompt for authors and contributors' ORCID. You can also sign in to many academic and institutional services with your ORCID (e.g. [Zenodo](https://zenodo.org/), [OSF](https://osf.io/), [RDMO](https://rdmo.ub.lmu.de/)).
+
+::: {.container .my-4}
+
+<h4 class="fs-5"><i class="bi bi-tools"></i> TOOLS & RESOURCES</h4>
+
+::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
+
+::: {.col}
+
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
+<img src="https://cms-cdn.lmu.de/assets/img/favicon.ico" class="img-fluid" alt="LMU logo">
+</div>
+<h4 class="card-title">LMU Guidelines for Safeguarding Good Scientific Practice</h4>
+<p class="card-text">Implementation of the German Research Foundation's (DFG) Code of Conduct</p>
+<a href="https://cms-cdn.lmu.de/media/contenthub/amtliche-veroeffentlichungen/gwp-ordnung.pdf" class="stretched-link" target="_blank" rel="noopener"></a>
+</div>
+```
+:::
+
+::: {.col}
+
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
+<img src="https://credit.niso.org/wp-content/uploads/2020/04/credit-icon-499x500-1-150x150.png" class="img-fluid" alt="CRediT logo">
+</div>
+<h4 class="card-title">CRediT</h4>
+<p class="card-text">Contributor Role Taxonomy.</p>
+<a href="https://credit.niso.org/" class="stretched-link" target="_blank" rel="noopener"></a>
+</div>
+```
+:::
+
+::: {.col}
+
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/ORCID_iD.svg/330px-ORCID_iD.svg.png" class="img-fluid" alt="ORCID logo">
+</div>
+<h4 class="card-title">ORCID</h4>
+<p class="card-text">Free, unique, persistent identifier for researchers.</p>
+<a href="https://orcid.org/" class="stretched-link" target="_blank" rel="noopener"></a>
+</div>
+```
+:::
+
+:::
+
+:::
+
+
+####  4.5.2. Institution, Funders, and ROR
+
+- **Disclose your institutional affiliations and funders** as part of the metadata of all your research outputs. To be machine-readable and automatically connected to people's profile or their organization, this must include the official name of the organization and ideally (one of) its persistent identifier.
+- **Use your institution and funders' ROR**. The [Research Organization Registry (ROR)](https://ror.org/) is a global, community-led registry of open persistent identifiers for research and funding organizations.
+
+
+
+:::{.callout-note}
+The official names of LMU Munich are Ludwig-Maximilians-Universität München in german, and LMU Munich in english. This university's ROR ID is [https://ror.org/05591te55](https://ror.org/05591te55).
+
+<br>
+
+LMU Munich is mostly funded by the German Research Foundation, whose ROR ID is [https://ror.org/018mejw64](https://ror.org/018mejw64)
+
+<br>
+
+The LMU Open Science Center is one of the many child organizations of LMU Munich; it's ROR ID is [https://ror.org/029e6qe04](https://ror.org/029e6qe04). The funder of this handbook's project is the Volkswagen Foundation, [https://ror.org/03bsmfz84](https://ror.org/03bsmfz84).
+:::
+
+
+
+::: {.container .my-4}
+
+<h4 class="fs-5"><i class="bi bi-tools"></i> TOOLS & RESOURCES</h4>
+
+::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
+
+::: {.col}
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
+<img src="https://ror.org/img/apple-touch-icon.png" class="img-fluid" alt="ROR logo">
+</div>
+<h4 class="card-title">Research Organization Registry (ROR)</h4>
+<p class="card-text">Persistent identifiers for research and funding organizations</p>
+<a href="https://ror.org/" class="stretched-link" target="_blank" rel="noopener"></a>
+</div>
+```
+:::
+
+:::
+
+:::
+
+####  4.5.3. Connecting Your Work
+
+- **Request a Digital Object Identifiers (DOI) for each of your research outputs** (data, code, preprint, preregistration)
+    - you automatically get a DOI from professional repository for outputs you make public 
+    - for a code repository you first want to keep private on e.g. [Zenodo](https://zenodo.org/), you can request a DOI (by ticking a box) to reserve a DOI link and already cite it in your manuscript.
+    - for a preregistration you first embargoed (i.e. kept private for a set period of time) on e.g. the [OSF](https://osf.io/), you must first make it public to obtain a DOI to include in your manuscript.
+- **Add persistent identifiers of connected outputs in their reciprocal metadata** to connect all parts of a project.
+    - include the DOI of your data, code, and preregistration in your manuscript and in the metadata field provided by your publisher if prompted.
+    - add the DOI of your code repository in the metadata of your published data and reciprocally, either in the description text or in the metadata fields provided by repositories like [Zenodo](https://zenodo.org/).
+- **Add the persistent identifier of a published version of an output to all public versions of that output**
+    - add the DOI of the published article (provided by your publisher) in the metadata of your preprint.
+    - add the DOI provided by e.g. [Zenodo](https://zenodo.org/) when publishing your code from [GitHub](https://github.com/), back into your GitHub README file.
+
+
+
+<!-- image of an example where all connections of DOIs are shown for an article?-->
+
+
+:::
+
+</details>
+
+
+
+
+::: {.orc-gradient-box .preserve-share-checklist}
+<!-- RL hasn't customized this one yet -->
+
+## <i class="bi bi-card-checklist checklist-icon"></i> Preserve & Share Checklist {.unnumbered}
+
+Not all items are relevant for all fields of research or study types.
+
+**Before sharing resources**
+
+- [ ] Complete metadata, README (with instructions), and documentation (e.g. data dictionary)
+- [ ] No sensitive information in any files to be shared
+- [ ] Simulated or synthetic data created to run the code instead of real data (if needed)
+- [ ] Data quality validated, code peer-reviewed, materials checked and cleaned
+- [ ] Results reproducible, following reporting guidelines, separated in preregistered vs exploratory
+- [ ] All authors have an ORCID
+
+**Upon publishing resources**
+
+- [ ] Add an open license (e.g. CC.BY 4.0 for data and materials, Apache 2.0 for code)
+- [ ] Fill out the metadata of the repository where the resources are deposited
+- [ ] Link authors' ORCID, and the ROR of their organizations and funders to all resources
+- [ ] Release publicly and get a DOI
+- [ ] Modify the metadata of all resources to include the DOIs of other connected resources
+
+**Upon submitting an article**
+
+- [ ] Include the DOI of all resources (data, code, materials, conceptual figures) in the manuscript 
+- [ ] Use CRediT taxonomy to give attribution to all contributors
+- [ ] Deposit a preprint (if allowed) on preprint server or institutional repository 
+- [ ] Request an open licence (CC.BY 4.0) for the article if possible to allow redistribution
+
+**After acceptance of an article**
+
+- [ ] Update the preprint with a postprint (if allowed)
+- [ ] Link the DOI of the published article to the preprint/postprint
+- [ ] Handle data access requests if only metadata were shared
+- [ ] Monitor citations and usage metrics of all research otuputs
+
+::: {.d-flex .justify-content-center .mt-4 .orc-checklist-download .phase-4} 
+<!-- RL hasn't created button for checklist 4 yet -->
+
+<a href="assets/checklists/04-Preserve-Share-Checklist.docx" class="btn btn-outline-secondary btn-sm">Download checklist <i class="bi bi-download"></i></a>
+<!-- need to update manually the  downloadable file with checklist in word doc-->
+:::
+
+:::

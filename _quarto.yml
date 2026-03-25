@@ -107,8 +107,17 @@ website:
                   contents: 
                     - auto: "training/publishing-outputs/*.qmd"
                     - training/publishing-outputs/publishing-outputs-tutorials.yaml
-            - text: "Research Cycle Handbook"
-              href: training/open-research-cycle.qmd
+            - section: "Research Cycle Handbook"
+              href: training/research-cycle-handbook.qmd
+              contents:
+                - text: "Plan & Design"
+                  href: training/research-cycle-handbook/01-plan-and-design.qmd
+                - text: "Collect & Manage"
+                  href: training/research-cycle-handbook/02-collect-and-manage.qmd
+                - text: "Analyze & Collaborate"
+                  href: training/research-cycle-handbook/03-analyze-and-collaborate.qmd
+                - text: "Preserve & Share"
+                  href: training/research-cycle-handbook/04-preserve-and-share.qmd
             - text: "Educator Toolkit"
               href: training/educator-toolkit.qmd
         

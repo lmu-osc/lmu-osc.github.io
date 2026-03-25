@@ -1,0 +1,1052 @@
+---
+title: "2. Collect & Manage"
+description: "Implement FAIR data management, organize research outputs, maintain privacy, and ensure quality"
+phase_order: 2
+sidebar: training
+page-layout: full
+number-depth: 4
+number-sections: true
+number-offset: [0,2,0]
+toc: false
+css: handbook-styles.css
+title-block-style: none
+include-in-header:
+  - text: |
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+---
+
+```{=html}
+<div class="orc-phase-hero phase-2 container shadow rounded-4">
+<div class="row align-items-center p-3 p-lg-4 mt-4 mb-3">
+<!-- Cycle image -->
+<div class="col-12 col-lg-3 orc-hero-cycle text-center phase-2">
+{{< include ../images/os-cycle.svg >}}
+</div>
+<!-- Text content -->
+<div class="col-12 col-lg-9">
+<p class="lead fw-bold mb-3 fs-4 text-muted"> Build quality into your data from the start</p>
+<!-- Pills -->
+<div class="d-flex flex-wrap gap-3 mb-3">
+<span class="badge rounded-5 fs-6 fw-normal text-wrap orc-hero-pills phase-2 text-white"><i class="bi bi-check2-circle me-1"></i> Data Collection</span>
+<span class="badge rounded-5 fs-6 fw-normal text-wrap orc-hero-pills phase-2 text-white"><i class="bi bi-check2-circle me-1"></i> Data Management</span>
+<span class="badge rounded-5 fs-6 fw-normal text-wrap orc-hero-pills phase-2 text-white"><i class="bi bi-check2-circle me-1"></i> Ethics & Privacy</span>
+<span class="badge rounded-5 fs-6 fw-normal text-wrap orc-hero-pills phase-2 text-white"><i class="bi bi-check2-circle me-1"></i> Quality Control</span>
+</div>
+<div class="orc-hero-checkpoint phase-2 badge rounded-5 d-inline-flex align-items-center justify-content-center text-wrap white-space-normal fs-6 fw-normal text-white">
+<i class="bi bi-people-fill me-2"></i>
+Checkpoint: Data quality validation meeting
+</div>
+</div>
+</div>
+</div>
+```
+<details class="orc-details-panel">
+<summary><i class="bi bi-journal-code"></i>
+
+### Data Collection {#sec-data-collection}
+
+</summary>
+
+Your data acquisition procedures must be documented in sufficient details to allow replication by another researcher (see [LMU Guidelines for Safeguarding Good Scientific Practice](https://cms-cdn.lmu.de/media/contenthub/amtliche-veroeffentlichungen/gwp-ordnung.pdf)). Establishing reproducible data collection processes strengthens the quality and consistency of both your data and that of your team.
+
+State-of-the-art practices for reproducible data acquisition include:
+
+::: {.ms-1} 
+
+- **creating standard operating procedures**
+- **recording [metadata]{.underline} as data collection is taking place**
+- **build in automation through programming**
+:::
+
+<!-- why is there a weird white space between the frame and the text in this call outbox?-->
+::: {.callout-note .mx-4}
+## Definition
+[**Metadata**]{.underline} are data about data; they provide context to your data. Metadata such as equipment settings, environmental conditions, software versions, and calibration records should be recorded contemporaneously, not reconstructed afterward. Electronic lab notebooks, instrument logs, and automated logging all help to document your metadata.
+:::
+
+<!-- why is there a weird white space between the frame and the text in this call outbox?-->
+::: {.callout-tip .mx-4}
+## Tip for research groups to streamline this process
+- **Create standard data acquisition procedures within the team.** From step-by-step wet-lab procedure, to the settings of measuring devices and the reproducible data pre-processing using script, all regularly repeated steps should be documented and standardized to be replicated precisely by all team members. 
+- **Share standard operating procedures** through e.g. common server space such as [LRZ Sync & Share](https://syncandshare.lrz.de/login), specialized online tools like [protocols.io](https://www.protocols.io/) or electronic lab notebooks, or [LRZ GitLab](https://gitlab.lrz.de/users/sign_in) for scripts.
+:::
+
+
+::: {.panel-tabset}
+
+#### 2.1.1. Lab Protocols
+
+Your protocol should specify materials with identifying details (lot numbers, versions, sources), equipment settings, step-by-step instructions with timing, and expected outcomes at each stage. What counts as "materials" varies by field: reagent concentrations in wet lab work, scanner parameters in neuroimaging, sampling coordinates in field ecology. But the principle is the same: enough detail that someone else could replicate your procedure exactly.
+
+<br>
+
+- **Write detailed methods and reusable protocols.** Write your protocol before you start, with all the details that would be needed for an exact replication (see the ReproducibiliTeach [lecture on reusable protocols](https://youtu.be/aKiXFzj15dg?si=ilB8aOsXArphMpfm))
+
+- **Track deviations in real time.** Follow your protocol precisely, and record any deviations as they happen. When you need to adapt, note it immediately. These deviations often explain unexpected results and guide protocol improvements. **Electronic lab notebooks (ELNs)** make this easier by creating version-controlled, timestamped records automatically, providing an audit trail that paper cannot match.
+
+- **Publish your protocols.** A detailed, tested protocol is a contribution to your field. Publishing establishes priority, enables citation, and makes your methods reusable. Platforms like [protocols.io](https://www.protocols.io/) provide version control and DOI assignment.
+
+
+
+::: {.container .my-4 }
+
+
+<h4 class="fs-5"><i class="bi bi-mortarboard"></i> LEARN MORE</h4>
+<!-- row for learn more section  -->
+
+::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
+
+<!-- card -->
+::: {.col}
+
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
+<img src="data:image/jpeg;base64,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" class="img-fluid" alt="reproducibiliteach icon">
+</div>
+<h4 class="card-title">Write reusable protocols</h4>
+<p class="card-text">Understand the level of details needed for your protocols.</p>
+<a href="https://youtu.be/aKiXFzj15dg?si=ilB8aOsXArphMpfm" class="stretched-link" target="_blank" rel="noopener"></a>
+</div>
+```
+:::
+
+:::
+
+
+<h4 class="fs-5 mt-3"><i class="bi bi-tools"></i> TOOLS & RESOURCES</h4>
+<!-- row for Tools & Resources section -->
+
+::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
+
+<!-- card -->
+::: {.col}
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+  <div class="d-flex gap-2">
+    <div class="orc-card-tool-icon p-2 rounded">
+      <img src="https://www.elabftw.net/img/elabftw-logo-only.svg" class="img-fluid" alt="eLabFTW icon">
+    </div>
+  </div>
+  <span class="badge rounded-5 bg-success-subtle text-success align-self-start">Supported at LMU</span>
+</div>
+<h4 class="card-title">eLabFTW</h4>
+<p class="card-text">Electronic Lab Notebook hosted by LMU Munich.</p>
+<a href="https://elab.ub.lmu.de/login.php" class="stretched-link" target="_blank" rel="noopener"></a>
+</div>
+```
+:::
+
+<!--  card -->
+::: {.col}
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+  <div class="d-flex gap-2">
+    <div class="orc-card-tool-icon p-2 rounded">
+      <img src="https://avatars.githubusercontent.com/u/83013380?v=4" class="img-fluid" alt="Chemotion icon">
+    </div>
+  </div>
+  <span class="badge rounded-5 bg-success-subtle text-success align-self-start">Supported at LMU</span>
+</div>
+<h4 class="card-title">Chemotion</h4>
+<p class="card-text">ELN hosted by the Faculty for Chemistry and Pharmacy.</p>
+<a href="https://chemlab.cup.uni-muenchen.de/home" class="stretched-link" target="_blank" rel="noopener"></a>
+</div>
+```
+:::
+
+<!-- card -->
+::: {.col}
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
+<img src="https://www.protocols.io/favicon.ico" class="img-fluid" alt="Protocols.io icon">
+</div>
+<h4 class="card-title">Protocols.io</h4>
+<p class="card-text">Share, discover, cite, and improve research protocols.</p>
+<a href="https://www.protocols.io/" class="stretched-link" target="_blank" rel="noopener"></a>
+</div>
+```
+:::
+
+:::
+
+:::
+
+
+#### 2.1.2. Questionnaires
+
+**Document both the instrument and the administration procedure completely.** Use validated instruments when possible, pilot test before deployment, and archive the exact version participants see in an open source format. 
+
+<!-- @Felix: do we want anything else here? Could you minimally explain what validating a survey means? It is really unclear to me given how people use it...-->
+
+#### 2.1.3. Software-based data acquisition
+
+When data comes from instruments, sensors, or APIs, scripting the acquisition creates a reproducible record of exactly what was collected and how. Programming languages like R or Python work well for straightforward pipelines. For more complex multi-step workflows which are common in e.g. in bioinformatics and neuroimaging, workflow managers like [Snakemake](https://snakemake.readthedocs.io/) ensure steps run in the correct order and can resume after failures.
+
+<br>
+
+- **Structure data correctly from the start.** Variables in columns, observations in rows. This makes your data immediately interoperable with analysis tools rather than requiring cleanup later. Scripts can also automate organization, file renaming, and conversion to open formats. See [2.2 Data Management](#sec-data-management){.mark} for guidelines.
+
+- **Keep records of what ran and when.** Include error handling so failures are recorded rather than silently corrupting data. When something fails months later, you need to know what happened. Always test acquisition scripts on sample data before production runs. A bug in your collection pipeline can invalidate an entire dataset.
+
+- **Version control your code and data.** This makes your methods reproducible and shareable. See [2.2.6. Version Control](#sec-data-management){.mark} for details.
+
+::: {.container .my-4 }
+
+<h4 class="fs-5"><i class="bi bi-mortarboard"></i> LEARN MORE</h4>
+<!-- row for learn more section  -->
+
+::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
+
+<!-- card -->
+::: {.col}
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+  <div class="d-flex gap-2">
+    <div class="orc-card-tool-icon p-2 rounded">
+      <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+    </div>
+    <div class="orc-card-tool-icon p-2 rounded">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/R_logo.svg/1920px-R_logo.svg.png?20240131042527" class="img-fluid" alt="R logo">
+    </div>
+  </div>
+  <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
+</div>
+<h4 class="card-title">Introduction to R</h4>
+<p class="card-text">Programming fundamentals for research data processing (3h)</p>
+<a href="https://lmu-osc.github.io/introduction-to-R/" class="stretched-link" target="_blank" rel="noopener"></a>
+</div>
+```
+:::
+
+<!--  card -->
+::: {.col}
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+  <div class="d-flex gap-2">
+    <div class="orc-card-tool-icon p-2 rounded">
+      <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+    </div>
+    <div class="orc-card-tool-icon p-2 rounded">
+      <img src="https://git-scm.com/images/logos/logomark-orange@2x.png" class="img-fluid" alt="Git logo">
+    </div>
+  </div>
+  <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
+</div>
+<h4 class="card-title">Introduction to Git</h4>
+<p class="card-text">Learn Git basics integrated with RStudio (2h).</p>
+<a href="https://lmu-osc.github.io/Introduction-RStudio-Git-GitHub/" class="stretched-link" target="_blank" rel="noopener"></a>
+</div>
+```
+:::
+
+:::
+
+:::
+
+
+:::
+
+</details>
+
+
+<details class="orc-details-panel">
+<summary><i class="bi bi-folder-check"></i>
+
+### Data Management {#sec-data-management}
+ 
+</summary>
+
+In [1. Plan & Design](01-plan-and-design.qmd){.mark} you created a Research Data Management Plan. It's now time to put this plan into practice, refining it as you learn what actually works for your project.
+
+::: {.ms-1} 
+
+- **Keep your raw data as read-only files.** The unmodified output of your instruments, surveys, or observations should never be modified directly. You should provide enough documentation to recreate your processed datasets and results from your raw data (see [3.1. Data Processing & Analyses](03-analyze-and-collaborate.qmd#sec-data-processing-analysis){.mark}).
+
+- **Organize, document, and store your research files so they remain usable, and become FAIR upon sharing.** Beyond raw data, you will generate processed data, code, documentation, and metadata. How you organize, describe, and store these determines whether your work remains usable and reproducible. The [FAIR principles](https://www.go-fair.org/fair-principles/) guide these decisions: making outputs Findable, Accessible, Interoperable, and Reusable.
+
+What follows are general practices. Your domain has specific conventions for file formats, folder structure, and metadata. [RDMkit](https://rdmkit.elixir-europe.org/your_domain) provides detailed guidance organized by research area.<!-- include ref to discipline specific section when available -->
+
+:::
+
+<!-- why is there a weird white space between the frame and the text in this call outbox?-->
+::: {.callout-tip .mx-4}
+## Tip for research groups to streamline this process
+- **Create standard operating procedures within the team.** For instance: where and when data back up should be made and in which file format, what project folder structure and conventions for naming files should be adopted, which metadata should routinely be acquired, what documentation should be created and when, and how and where a history of versions should be preserved. 
+- **Assign responsibilities.** For developing such SOPs for a specific kind of project and for checking all members have implemented those SOPs at a specified time point in their project (e.g. hold a data quality validation meeting prior to starting data analyses, see [Collect & Manage Checklist](#collect-manage-checklist){.mark}).
+:::
+
+
+::: {.panel-tabset}
+
+#### 2.2.1. Storage
+
+This section covers storage for data you are actively collecting. Long-term archiving for sharing is covered in [4. Preserve & Share](04-preserve-and-share.qmd){.mark}.
+
+<br>
+
+- **Use institutional storage.** LMU Munich provides storage such as [LRZ Sync and Share](https://syncandshare.lrz.de/login) or [LRZ DSS](https://doku.lrz.de/data-science-storage-10745685.html) with automated backups, access controls, and GDPR compliance. Additional options vary by department. Contact the [Research Data Management team of the University Library ](https://www.en.ub.uni-muenchen.de/writing/research_data/research-data-management/index.html) to find what is available to you. When choosing, consider how much data you will generate, who needs access, and whether your data includes personal information requiring stricter controls.
+- **Follow the 3-2-1 backup rule.** Keep three copies on two media types with one off-site. Designate one location as the master copy, the authoritative version everything else syncs from. Working with multiple "equal" copies creates version conflicts. Remember that syncing is not backup: if you delete a file from a synced folder, the deletion propagates everywhere. True backups preserve previous versions independently.
+- **Control access from the start.** Grant access only to those who need it. Use institutional sharing tools, not email attachments or personal cloud links. For collaborations, agree at the start who can read, who can edit, and who manages permissions. When team members leave, remove their access promptly.
+- **Test your backups.** A backup you cannot restore is not a backup. Test restoration at least once. Archive inactive data periodically and review access lists when team composition changes.
+
+::: {.callout-important}
+## Avoid for Research Data
+Personal laptops as primary storage, external drives as only copy, consumer cloud services (Dropbox, Google Drive) for sensitive data, and USB drives except for temporary transport.
+:::
+
+
+::: {.container .my-4 }
+
+<h4 class="fs-5"><i class="bi bi-mortarboard"></i> LEARN MORE</h4>
+<!-- row for Learn More section -->
+
+::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
+
+<!--  card -->
+::: {.col}
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+    <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+        <div class="d-flex gap-2">
+            <div class="orc-card-tool-icon p-2 rounded">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvQdlBHTP2IOvBeJ_S8I9z9S2BX0Qqn0twjw&s" class="img-fluid" alt="LRZ logo">
+            </div>
+        </div>
+        <span class="badge rounded-5 bg-success-subtle text-success align-self-start">Supported at LMU</span>
+    </div>
+    <h4 class="card-title">LRZ Sync & Share</h4>
+    <p class="card-text">Cloud storage service for LMU Munich</p>
+    <a href="https://syncandshare.lrz.de/login" class="stretched-link" target="_blank" rel="noopener"> </a>
+</div>
+```
+:::
+
+::: {.col}
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+    <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+        <div class="d-flex gap-2">
+            <div class="orc-card-tool-icon p-2 rounded">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvQdlBHTP2IOvBeJ_S8I9z9S2BX0Qqn0twjw&s" class="img-fluid" alt="LRZ logo">
+            </div>
+        </div>
+    <span class="badge rounded-5 bg-success-subtle text-success align-self-start">Supported at LMU</span>
+    </div>
+    <h4 class="card-title">LRZ DSS</h4>
+    <p class="card-text">Long-term archival storage for LMU Munich</p>
+    <a href="https://doku.lrz.de/data-science-storage-10745685.html" class="stretched-link" target="_blank" rel="noopener"> </a>
+</div>
+```
+:::
+
+::: {.col}
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+    <div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Open_Science_Framework_log_%28and_Center_for_Open_Science_logo%29.svg/3840px-Open_Science_Framework_log_%28and_Center_for_Open_Science_logo%29.svg.png" class="img-fluid" alt="OSF logo">
+    </div>
+<h4 class="card-title">OSF</h4>
+<p class="card-text">Research project management platform including storage.</p>
+<a href="https://osf.io/" class="stretched-link" target="_blank" rel="noopener"> </a>
+</div>
+```
+:::
+
+:::
+
+:::
+
+
+#### 2.2.2. Organization
+
+Your folder structure and file naming conventions determine whether you and others can navigate your project months or years later. Establish these conventions at the start of your project and document them. When collaborating, ensure everyone follows the same system.
+
+<br>
+
+- **Separate raw from processed data.** Raw data should not be modified: once collected, these files should never be touched. All cleaning, data processing, transformations, and analyses happen on copies or through scripts in a separate folder. This preserves your ability to verify results or reprocess from the original source.
+
+- **Develop a file naming convention.** Good file names identify contents at a glance and sort correctly. Balance specificity with readability: too many elements make names unwieldy, too few make them ambiguous. Order elements from general to specific.
+    - Use underscores or hyphens to separate elements, never spaces or special characters (`? ! & * % # @`)
+    - Use ISO 8601 dates (`YYYYMMDD`) so files sort chronologically
+    - Include version numbers with leading zeros (`v01`, `v02`) so `v10` sorts after `v09`
+    - Use meaningful abbreviations and document what they mean
+
+A pattern like `YYYYMMDD_project_condition_type_v01.ext` places files in chronological order while preserving context. For example, `20240315_sleep-study_control_survey_v02.csv` immediately tells you when it was created, which project it belongs to, the experimental condition, data type, and revision. Document your convention in a README file stored next to your data files so collaborators can parse filenames without asking.
+
+<br>
+
+- **Follow domain standards where they exist.** Many fields have established organizational conventions that tools and collaborators expect. Using these means your data can immediately be integrated in existing analysis pipelines and reviewers recognize the structure. Search [RDMkit](https://rdmkit.elixir-europe.org/your_domain) for standards in your domain.
+
+
+::: {.container .my-4 }
+
+<h4 class="fs-5"><i class="bi bi-mortarboard"></i> LEARN MORE</h4>
+
+<!-- row for Learn More section -->
+::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
+
+<!-- card -->
+::: {.col}
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+    <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+        <div class="d-flex gap-2">
+            <div class="orc-card-tool-icon p-2 rounded">
+            <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+            </div>
+        </div>
+        <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
+    </div>
+    <h4 class="card-title">Data Organization</h4>
+    <p class="card-text">Folder structure and naming conventions. (30 min)</p>
+    <a href="https://lmu-osc.github.io/FAIR-Data-Management/data-organisation.html" class="stretched-link" target="_blank" rel="noopener"> </a>
+</div>
+```
+:::
+
+:::
+
+<h4 class="fs-5 mt-3"><i class="bi bi-tools"></i> TOOLS & RESOURCES</h4>
+<!-- row for Tools & Resources section -->
+
+::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
+
+::: {.col}
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+    <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+        <div class="d-flex gap-2">
+            <div class="orc-card-tool-icon p-2 rounded">
+            <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+            </div>
+            <div class="orc-card-tool-icon p-2 rounded">
+            <img src="https://cdn.simpleicons.org/github"  class="img-fluid" alt="GitHub logo">
+            </div>
+        </div>
+        <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tool</span>
+    </div>
+    <h4 class="card-title">Research Project Template</h4> <!-- not sure why there is a white space after this title - can it be removed?-->
+    <p class="card-text">Project folder separating raw & processed data, code, and outputs.</p>
+    <a href="https://github.com/lmu-osc/research-project-template" class="stretched-link" target="_blank" rel="noopener"></a>
+</div>
+```
+:::
+
+::: {.col}
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+    <div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
+        <img src="https://rdmkit.elixir-europe.org/assets/img/apple-touch-icon.png" class="img-fluid" alt="RDMkit logo">
+    </div>
+    <h4 class="card-title">RDMkit</h4>
+    <p class="card-text">Domain-specific data management standards</p>
+    <a href="https://rdmkit.elixir-europe.org/your_domain" class="stretched-link" target="_blank" rel="noopener"></a>
+</div>
+```
+:::
+
+:::
+
+:::
+
+
+#### 2.2.3. File Formats
+
+File format choices affect who can work with your data now and whether it remains readable in the future. Open formats have publicly documented specifications that anyone can implement, so many programs can read them and they remain accessible even if the original software disappears. Proprietary formats lock you into specific tools, complicate collaboration, and risk becoming unreadable if the company stops supporting them.
+
+<br>
+
+- **Keep raw data in its original format.** Whatever your instrument or source produces, preserve that original as your ground truth. Even if it is proprietary, you need it for verification and potential reprocessing.
+
+- **Work in open formats.** For analysis, convert to open formats like CSV, JSON, or plain text. This makes your workflow reproducible, enables collaboration across different tools, and ensures your data can be shared. If conversion loses important information (metadata, precision, structure), document what is lost and keep both versions.
+
+- **Be careful with spreadsheets.** Excel is convenient for data entry but causes real problems. It silently converts data: gene names like MARCH1 become dates, leading zeros in IDs disappear, and long numbers lose precision. Formatting (colors, merged cells) breaks machine-readability since scripts cannot see it. If you use spreadsheets for entry, keep them simple (one header row, one observation per row, no merged cells) and export to CSV immediately. Save CSVs with UTF-8 encoding to avoid character corruption when sharing across systems. For more guidance on spreadsheet best practices, see [The Turing Way](https://book.the-turing-way.org/reproducible-research/rdm/rdm-spreadsheets/) and [UC Davis DataLab](https://ucdavisdatalab.github.io/workshop_keeping_data_tidy/#spreadsheet-best-practices).
+
+- **Check domain recommendations.** Your field likely has established conventions balancing openness with practical needs like performance or metadata preservation. Consult the [RDMKit](https://rdmkit.elixir-europe.org/your_domain) to find conventions for your field.
+
+<br>
+
+Format issues often surface during quality control. The [2.4. Quality Control](#sec-quality-control){.mark} panel below covers validation checks that can catch encoding problems, unexpected conversions, and structural inconsistencies early.
+
+::: {.container .my-4 }
+
+<h4 class="fs-5 mt-3"><i class="bi bi-tools"></i> TOOLS & RESOURCES</h4>
+
+::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
+
+::: {.col}
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+    <div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
+        <img src="https://rdmkit.elixir-europe.org/assets/img/apple-touch-icon.png" class="img-fluid" alt="RDMkit logo">
+    </div>
+    <h4 class="card-title">RDMkit</h4>
+    <p class="card-text">Domain-specific file formats and conventions</p>
+    <a href="https://rdmkit.elixir-europe.org/your_domain" class="stretched-link" target="_blank" rel="noopener"></a>
+</div>
+```
+:::
+
+:::
+
+:::
+
+
+#### 2.2.4. Documentation
+
+Without documentation, a dataset is just a collection of files. Six months from now, you will not remember what each column means, why certain values are missing, or how files relate to each other. Documentation makes your data usable by your future self, your collaborators, and any other researchers.
+
+<br>
+
+- **Create a README file (as .md or .txt) early and update it as you go.** Your README is the entry point to your project. Start it when you begin, not when preparing to publish. A good README answers the essential questions: who created the data, what it contains, when and where it was collected, why it was generated, how it was produced, and whether it can be reused. These answers let someone unfamiliar with your project understand and work with your data.
+- **Create a data dictionary defining every variable.** A data dictionary (or "codebook") makes your dataset self-explanatory. For each variable, document what it measures, its data type, valid values, units of measurement, and how missing data is coded. Use appropriate missing codes to distinguish why data is absent (declined to answer, not applicable, technical failure) since this distinction matters for analysis.
+
+
+::: {.container .my-4}
+
+<h4 class="fs-5"><i class="bi bi-mortarboard"></i> LEARN MORE</h4>
+
+::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
+
+::: {.col}
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+    <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+        <div class="d-flex gap-2">
+            <div class="orc-card-tool-icon p-2 rounded">
+            <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+            </div>
+        </div>
+        <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
+    </div>
+    <h4 class="card-title">Principles of Data Documentation</h4>
+    <p class="card-text">Principles of README files and data dictionaries.</p>
+    <a href="https://lmu-osc.github.io/FAIR-Data-Management/documentation.html" class="stretched-link" target="_blank" rel="noopener"> </a>
+</div>
+```
+:::
+
+::: {.col}
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+    <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+        <div class="d-flex gap-2">
+            <div class="orc-card-tool-icon p-2 rounded">
+            <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+            </div>
+        </div>
+        <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
+    </div>
+<h4 class="card-title">Data Documentation & Validation</h4>
+<p class="card-text">Create READMEs, data dictionaries, and validation checks for your data. (1h)</p>
+<a href="https://lmu-osc.github.io/data-documentation-validation-R/" class="stretched-link" target="_blank" rel="noopener"> </a>
+</div>
+```
+:::
+
+:::
+
+:::
+
+
+#### 2.2.5. Standards
+
+Standards are community agreements on how to organize and describe research data. Using them means others in your field immediately understand your data. Three types of standards matter here:
+
+<br>
+
+- **Organizational standards** specify how to structure files and folders. Some fields have well-established conventions, like [BIDS](https://bids.neuroimaging.io/) for neuroimaging data. When such standards exist, use them. Your data will work immediately with existing tools, and collaborators will recognize the structure without explanation. If no standard exists for your domain, create a consistent structure and document it in your README. See for instance our [research project template](https://github.com/lmu-osc/research-project-template).
+
+- **Reporting guidelines** specify what methodological details to document for different study types. The [EQUATOR Network](https://www.equator-network.org/) maintains a searchable database of guidelines for clinical trials, observational studies, animal research, and many other study types. Following these ensures you capture everything others need to understand or replicate your work.
+
+- **Metadata standards** define what descriptive information to record and how to structure it. Scientific metadata describes how your data was produced: equipment specifications, acquisition parameters, protocols followed. This is distinct from discovery metadata (titles, keywords, descriptions) which you will prepare when sharing in [4. Preserve & Share](04-preserve-and-share.qmd){.mark}. Your field has conventions for which parameters matter. [FAIRsharing](https://fairsharing.org/) catalogs metadata standards by discipline.<!-- include ref to discipline specific section when available -->
+
+<br> 
+
+**Think of your data as a first-class research output.** Comprehensive metadata transforms a project artifact into a reusable resource. Someone reanalyzing your data years later needs to understand exactly how it was produced.
+
+::: {.container .my-4}
+
+<h4 class="fs-5 mt-3"><i class="bi bi-tools"></i> TOOLS & RESOURCES</h4>
+
+::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
+
+::: {.col}
+
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+    <div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX4MByesrD50P8W0ZGn_W8RPYV8yzbtRx0RA&s" class="img-fluid" alt="EQUATOR logo">
+    </div>
+    <h4 class="card-title">EQUATOR Network</h4>
+    <p class="card-text">Comprehensive database of reporting guidelines.</p>
+    <a href="https://www.equator-network.org/reporting-guidelines/" class="stretched-link" target="_blank" rel="noopener"> </a>
+</div>
+```
+:::
+
+::: {.col}
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+    <div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
+        <img src="https://avatars.githubusercontent.com/u/29867987?s=280&v=4" class="img-fluid" alt="FAIRsharing logo">
+    </div>
+    <h4 class="card-title">FAIRsharing</h4>
+    <p class="card-text">Search by discipline to find metadata standards, reporting guidelines, and data policies for your field.</p>
+    <a href="https://fairsharing.org/" class="stretched-link" target="_blank" rel="noopener"> </a>
+</div>
+```
+:::
+
+::: {.col}
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+    <div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
+        <img src="https://rdmkit.elixir-europe.org/assets/img/apple-touch-icon.png" class="img-fluid" alt="RDMkit logo">
+    </div>
+    <h4 class="card-title">RDMkit</h4>
+    <p class="card-text">Domain-specific metadata standards</p>
+    <a href="https://rdmkit.elixir-europe.org/your_domain" class="stretched-link" target="_blank" rel="noopener"></a>
+</div>
+```
+:::
+
+
+<!-- card -->
+::: {.col}
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+    <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+    <div class="d-flex gap-2">
+        <div class="orc-card-tool-icon p-2 rounded">
+            <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+            </div>
+        <div class="orc-card-tool-icon p-2 rounded">
+            <img src="https://cdn.simpleicons.org/github"  class="img-fluid" alt="GitHub logo">
+        </div>
+    </div>
+    <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tool</span>
+    </div>
+<h4 class="card-title">Research Project Template</h4> 
+<p class="card-text">Project folder separating raw & processed data, code, and outputs.</p>
+<a href="https://github.com/lmu-osc/research-project-template" class="stretched-link" target="_blank" rel="noopener"></a>
+</div>
+```
+:::
+
+:::
+
+:::
+
+
+#### 2.2.6. Version Control
+
+Version control system like Git tracks changes to files over time. You can see what changed, when, and why. You can revert to previous versions. Collaborators can work without overwriting each other.
+
+<br>
+
+- **Git usually suffices for data files.** Text-based formats (CSV, JSON, plain text) and smaller binary files work well in standard Git repositories. You get a complete history of changes and can share easily via GitHub or GitLab. 
+
+- **Use specialized tools for large or frequently changing binary files.** Standard Git stores each version in full, so repositories become unwieldy with large datasets. Git LFS (Large File Storage) stores large files separately while keeping them tracked. Git-annex manages files across multiple storage locations. [DataLad](https://www.datalad.org/) builds on git-annex and works with standard Git workflows.
+
+:::{.callout-note}
+## Difference between Git, GitHub and GitLab  
+<!-- copied to 3.1.2. manually -->
+
+- **Git** is a version control system that tracks changes in text files (e.g. CSV, plain text, R, Python). The Git software and your Git repositories should be, respectively, installed and located in your local environment (i.e. on your computer, not on a drive, see [Git tutorial](https://lmu-osc.github.io/Introduction-RStudio-Git-GitHub/)). 
+
+- **GitHub** is the most popular, free but proprietary and US-based cloud-based platform for software development with Git, providing collaboration features like pull requests and issues (see [GitHub tutorial](https://lmu-osc.github.io/Collaborative-RStudio-GitHub/)). **You should not have any sensitive data on GitHub even in a private repository.**
+
+- **LRZ GitLab** is a cloud-based hosting platform that works exactly the same as GitHub but is open source and is installed on the LRZ servers for LMU Munich and can therefore be considered secure when the repository is private. 
+
+While your LRZ GitLab account is associated with your LMU Munich affiliation, your GitHub account can be associated with your private email, be included in your CV, and be used for public sharing of your data and code (see [3. Analyze & Collaborate](03-analyze-and-collaborate.qmd){.mark} and [4. Preserve & Share](04-preserve-and-share.qmd){.mark}).  
+
+<br>
+
+In a version controlled workflow, you back up your local Git repositories on either GitHub or LRZ GitLab through a secure SSH connection (see [GitHub tutorial](https://lmu-osc.github.io/Collaborative-RStudio-GitHub/)) and share access to your repositories with your collaborators through the cloud-based platform GitHub or LRZ GitLab.
+
+:::
+
+
+::: {.container .my-4 }
+
+<h4 class="fs-5"><i class="bi bi-mortarboard"></i> LEARN MORE</h4>
+
+<!-- row for Learn More section -->
+::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
+
+<!-- card -->
+::: {.col}
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+    <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+    <div class="d-flex gap-2">
+        <div class="orc-card-tool-icon p-2 rounded">
+            <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+        </div>
+        <div class="orc-card-tool-icon p-2 rounded">
+            <img src="https://www.svgrepo.com/show/303548/git-icon-logo.svg" class="img-fluid" alt="Git logo">
+        </div>
+    </div>
+    <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
+    </div>
+<h4 class="card-title">Introduction to Git</h4>
+<p class="card-text">Learn Git basics integrated with RStudio (2h).</p>
+<a href="https://lmu-osc.github.io/Introduction-RStudio-Git-GitHub/" class="stretched-link" target="_blank" rel="noopener"> </a>
+</div>
+```
+:::
+
+::: {.col}
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+    <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+    <div class="d-flex gap-2">
+        <div class="orc-card-tool-icon p-2 rounded">
+            <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+        </div>
+        <div class="orc-card-tool-icon p-2 rounded">
+            <img src="https://cdn.simpleicons.org/github" class="img-fluid" alt="GitHub logo">
+        </div>
+    </div>
+    <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
+    </div>
+<h4 class="card-title">Introduction to GitHub</h4>
+<p class="card-text">Connect to GitHub from Git within RStudio (1h).</p>
+<a href="https://lmu-osc.github.io/Collaborative-RStudio-GitHub/" class="stretched-link" target="_blank" rel="noopener"> </a>
+</div>
+```
+:::
+
+
+:::
+
+
+<h4 class="fs-5 mt-3"><i class="bi bi-tools"></i> TOOLS & RESOURCES</h4>
+<!-- row for Tools & Resources section -->
+
+::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
+
+<!-- card -->
+::: {.col}
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+    <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+    <div class="d-flex gap-2">
+        <div class="orc-card-tool-icon p-2 rounded">
+            <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+        </div>
+        <div class="orc-card-tool-icon p-2 rounded">
+            <img src="https://cdn.simpleicons.org/gitlab" class="img-fluid" alt="GitLab logo">
+        </div>
+    </div>
+    <span class="badge rounded-5 bg-success-subtle text-success align-self-start">Supported at LMU</span>
+    </div>
+<h4 class="card-title">LRZ Gitlab</h4>
+<p class="card-text">Institutional Git hosting for LMU Munich.</p>
+<a href="https://gitlab.lrz.de/" class="stretched-link" target="_blank" rel="noopener"></a>
+</div>
+```
+:::
+
+::: {.col} 
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+    <div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
+        <img src="https://avatars.githubusercontent.com/u/8927200?s=280&v=4" class="img-fluid" alt="GitLab icon">
+    </div>
+    <h4 class="card-title">DataLad</h4>
+    <p class="card-text">Version control for large datasets</p>
+    <a href="https://www.datalad.org/" class="stretched-link" target="_blank" rel="noopener"></a>
+</div>
+```
+:::
+
+:::
+
+:::
+
+
+
+</details>
+
+
+
+<details class="orc-details-panel">
+<summary><i class="bi bi-shield-lock"></i>
+
+### Ethics & Privacy {#sec-ethics-and-privacy}
+
+</summary> 
+
+Research involving human participants requires ethics approval and data protection compliance. In your ethics proposal (see [1.2.3. Ethics](01-plan-and-design.qmd#sec-legal-requirements){.mark}) you planned for safeguards for the people contributing to your research and you now need to implement them before or while collecting your data.
+
+
+::: {.panel-tabset}
+
+#### 2.3.1. Informed Consent
+
+Participants have the right to understand what they are agreeing to. Your consent form should explain the research purpose in plain language, describe what data you will collect and how you will protect it, specify who will have access and for how long, and make clear that participation is voluntary. See "[How to write an informed consent form](https://www.uu.nl/en/research/research-data-management/guides/legal-considerations/how-to-write-an-informed-consent-form)" from the University to Utrecht and an [example template from the LMU Psychology Department](https://osf.io/mgwk8/files/fvgsx).
+
+<br>
+
+- **Use tiered consent when you plan to share data.** Some participants may consent to their data being used for your study but not shared publicly. Others may be comfortable with broader sharing. Giving options respects autonomy while maximizing what you can eventually share.
+
+- **Store consent forms separately from data.** The consent form links a name to participation. Keeping it with your data undermines any pseudonymization you apply.
+
+
+:::{.callout-tip}
+## Tip for research groups:
+**Maintain a centralized log of all ethics approvals, consent forms, and compliance certifications for easy reference by team members.**
+:::
+
+::: {.container .my-4 }
+
+<h4 class="fs-5 mt-3"><i class="bi bi-tools"></i> TOOLS & RESOURCES</h4>
+<!-- row for Tools & Resources section -->
+
+::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
+
+<!-- card -->
+::: {.col}
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+    <div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
+        <img src="https://www.uu.nl//themes/custom/corp/src/images/favicons/apple-touch-icon.png" class="img-fluid" alt="University of Utrecht icon">
+    </div>
+    <h4 class="card-title">How to write an informed consent form</h4>
+    <p class="card-text">University of Utrecht RDM guide.</p>
+    <a href="https://www.uu.nl/en/research/research-data-management/guides/legal-considerations/how-to-write-an-informed-consent-form" class="stretched-link" target="_blank" rel="noopener"></a>
+</div>
+```
+:::
+
+:::
+
+:::
+
+<!-- @Felix: can we add example consent form as resources or other resources on how to prepare such language ?-->
+
+#### 2.3.2. Anonymization
+
+Anonymization protects privacy and determines what you can share. 
+
+<br>
+
+- **Remove direct identifiers during collection.** Names, addresses, ID numbers, photographs, email addresses. Replace these with codes.
+
+- **Assess indirect identifiers carefully.** A combination of age, location, profession, and a rare condition might identify someone even without their name. Timestamps reveal patterns. Free-text responses often contain identifying details participants did not intend to share. Follow our [anonymization tutorial (TBA)](<!-- link tba-->) to learn to evaluate and implement anonymization techniques in R.
+
+- **Generate synthetic data when full anonymization or real data sharing is not possible.** Synthetic data is artificially generated data that can serve as a privacy-preserving alternative to sensitive datasets, enabling researchers to reproduce analyses, verify findings, and initiate model development when access to real data is restricted. Sharing synthetic data together with code, rather than sharing no data at all, increases the utility of your research (see [4. Preserve & Share](04-preserve-and-share.qmd){.mark}).
+
+:::{.callout-note}
+## Distinction between pseudonymization and anonymization
+
+- **Pseudonymization** replaces identifiers with codes while retaining a key that links back to individuals. Pseudonymized data is still personal data under GDPR because re-identification is possible.
+
+- **Anonymization** removes all possibility of re-identification. Only truly anonymized data falls outside GDPR scope. Achieving this is harder than it appears, especially with rich datasets.
+
+:::
+
+::: {.container .my-4 }
+
+<h4 class="fs-5"><i class="bi bi-mortarboard"></i> LEARN MORE</h4>
+
+<!-- row for Learn More section -->
+::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
+
+<!--  card -->
+::: {.col}
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+  <div class="d-flex gap-2">
+    <div class="orc-card-tool-icon p-2 rounded">
+      <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+    </div>
+  </div>
+  <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
+</div>
+<h4 class="card-title">TBA: Data Anonymization</h4> <!-- edit when available -->
+<p class="card-text">Implement data anonymization techniques in R. (X h)</p> <!-- edit when available -->
+<a href="#" class="stretched-link" rel="noopener"></a><!-- Add link when available -->
+</div>
+```
+:::
+
+::: {.col}
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+  <div class="d-flex gap-2">
+    <div class="orc-card-tool-icon p-2 rounded">
+      <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+    </div>
+  </div>
+  <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
+</div>
+<h4 class="card-title">Synthetic Data</h4>
+<p class="card-text">Synthetic data creation in R to balance utility and privacy when sharing data. (3h)</p>
+<a href="https://lmu-osc.github.io/synthetic-data-tutorial/" class="stretched-link" target="_blank" rel="noopener"> </a>
+</div>
+```
+:::
+
+:::
+
+
+:::
+
+
+#### 2.3.3. GDPR Compliance
+
+Research at LMU Munich must comply with EU data protection regulations. The core principles: have a lawful basis for processing personal data (usually consent or legitimate research interest), use data only for stated purposes, collect only what you need, delete data when you no longer need it, and protect it against unauthorized access.
+
+<br>
+
+**In practice:** document your lawful basis, include data protection language in consent forms, use institutional storage rather than personal cloud services, restrict access to those who need it, and plan when and how you will delete data.
+
+<br>
+
+For data protection guidance, contact the [LMU Data Protection Officer](https://www.lmu.de/en/about-lmu/structure/organizational-structure/officers-and-representatives/data-protection-officer.html) or the [Research Data Management team of the University Library ](https://www.en.ub.uni-muenchen.de/writing/research_data/research-data-management/index.html).
+
+:::
+
+</details>
+
+
+<details class="orc-details-panel">
+<summary><i class="bi bi-check2-square"></i>
+
+### Quality Control {#sec-quality-control}
+<!-- Reema: not sure tabs are needed here, could be h5 no anchor titles and ::: {.ms-1} block for lists, this is all done through the same tutorial, it seems there are several concepts that are the same just phrased differently, could be merged coherently to avoid redundancy and consolidate the structure and order of these concepts-->
+</summary>
+
+Quality control catches problems before they propagate into your analysis. The practices here ensure your data is trustworthy and your exclusions are defensible.
+
+**Define criteria before looking at your data.** This prevents unconscious bias in what you keep and exclude, and demonstrates that your decisions are principled rather than convenient (see [1.4. Study Design & Analysis Plan](01-plan-and-design.qmd#sec-study-design-analysis-plan){.mark}).
+
+::: {.panel-tabset}
+
+#### 2.4.1. Validation 
+
+Validation checks whether your data meets specifications. For example, values can be verified to fall within valid ranges (e.g., age ≥ 0), required fields can be checked for missing entries, categorical variables can be restricted to allowed levels (e.g., "yes/no"), dates can be validated for proper format, and cross-variable constraints can be enforced (e.g., discharge date ≥ admission date). Run checks during collection to catch problems immediately, after collection for systematic review, and after any processing to verify transformations worked correctly.
+
+<br>
+
+- **Automate what you can.** Check that data types are correct, values fall within expected ranges, required fields are populated, and formats are consistent. These checks should run automatically and flag problems for review.
+
+- **Catch what automation misses with manual review.** Sample your data and verify it against the source. Inspect outliers to determine whether they are errors or genuine extreme values. Look for suspicious patterns: survey responses that alternate predictably, reaction times that are impossibly fast.
+
+::: {.container .my-4 }
+
+<h4 class="fs-5"><i class="bi bi-mortarboard"></i> LEARN MORE</h4>
+
+::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
+
+<!-- card -->
+::: {.col}
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+  <div class="d-flex gap-2">
+    <div class="orc-card-tool-icon p-2 rounded">
+      <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+    </div>
+  </div>
+  <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
+</div>
+<h4 class="card-title">Data Documentation & Validation</h4>
+<p class="card-text">Create validation rules and automated checks for your research data. (1h)</p>
+<a href="https://lmu-osc.github.io/data-documentation-validation-R/" class="stretched-link" target="_blank" rel="noopener"> </a>
+</div>
+```
+:::
+
+:::
+
+:::
+
+
+#### 2.4.2. Cleaning
+
+Data cleaning handles errors, inconsistencies, and missing values. The cardinal rule: never modify your raw data. All cleaning happens on copies.
+
+<br>
+
+- **Correct unambiguous errors.** Clear typos, obvious data entry mistakes. For ambiguous cases, flag them for review rather than making assumptions. Document your reasoning for every judgment call.
+
+- **Handle missing data consistently.** Decide on a coding scheme (NA, -999, blank) and apply it uniformly. When you know why data is missing, record that information. It may matter for analysis.
+
+- **Investigate outliers before acting.** An extreme value might be an error, or it might be genuine. Understand the cause before deciding whether to remove, transform, or retain it.
+
+- **Write cleaning as a script.** A script documents exactly what you did and lets you reproduce it. Keep a decision log for choices that cannot be automated.
+
+#### 2.4.3. Exclusions
+
+Exclusion criteria specify which data points will be removed from analysis and why. Define these before you see your results (see [1.4. Study Design & Analysis Plan](01-plan-and-design.qmd#sec-study-design-analysis-plan){.mark}).
+
+<br>
+
+- **Review common exclusion criteria.** Technical failures (equipment malfunction, incomplete recording), protocol violations (wrong procedure followed, participant did not comply), quality thresholds (too much missing data, failed attention checks), and participant criteria (did not meet stated inclusion criteria).
+
+- **Document everything.** Record criteria before analysis begins. Report how many data points were excluded for each criterion in a log with the date and reviewer's identity. Plan sensitivity analyses comparing results with and without exclusions to show your findings are robust.
+
+:::
+
+</details>
+
+
+::: {.orc-gradient-box .collect-manage-checklist}
+
+## <i class="bi bi-card-checklist checklist-icon"></i> Collect & Manage Checklist {.unnumbered}
+
+To complete before conducting a data validation meeting with members of the project. Not all items are relevant for all fields of research or study types.
+
+
+::: {.row .row-cols-1 .row-cols-lg-2 .g-4}
+
+::: {.col}
+
+**Throughout Data Collection**
+
+- [ ] Document data collection procedures
+- [ ] Maintain organized directory structure
+- [ ] Follow file naming conventions
+- [ ] Back up data regularly (3-2-1 rule)
+- [ ] Update data dictionary as needed
+- [ ] Version control data and scripts
+- [ ] Apply data (pseudo)anonymization procedures
+- [ ] Apply quality control procedures
+:::
+
+::: {.col}
+
+
+**Before Moving to Analysis**
+
+- [ ] All raw data backed up in multiple locations
+- [ ] Data (pseudo)anonymized 
+- [ ] README files document project organization
+- [ ] Data dictionary defines all variables
+- [ ] Version control repository up to date
+- [ ] Data quality control completed and documented
+:::
+
+:::
+
+
+::: {.d-flex .justify-content-center .mt-4 .orc-checklist-download .phase-2}
+
+<a href="assets/checklists/02-Collect-Manage-Checklist.docx" class="btn btn-outline-secondary btn-sm">Download checklist <i class="bi bi-download"></i></a>
+<!-- need to update manually the  downloadable file with checklist in word doc-->
+:::
+
+
+:::
