@@ -25,3 +25,9 @@
   text-decoration: underline;
   transition: color 0.2s ease;
 }
+
+.btn-soft-primary {
+  background-color: rgba(13, 110, 253, 0.5); /* Bootstrap primary @ 50% */
+  border-color: rgba(13, 110, 253, 0.5);
+  /* color: #0d6efd; */
+}

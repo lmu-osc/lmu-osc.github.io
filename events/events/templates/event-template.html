@@ -145,8 +145,16 @@
 
     $if(links.materials)$
     <div class="register-box d-flex gap-2 justify-content-center">
-      <a href="$links.materials$" target="_blank" class="btn btn-outline-primary btn-pop">
+      <a href="$links.materials$" target="_blank" class="btn btn-primary btn-soft-primary btn-pop">
         <i class="bi bi-download"></i> Materials
+      </a>
+    </div>
+    $endif$
+
+    $if(links.workshop_website)$
+    <div class="register-box d-flex gap-2 justify-content-center">
+      <a href="$links.workshop_website$" target="_blank" class="btn btn-outline-primary btn-pop">
+        <i class="bi bi-globe"></i> $if(categories)$ $categories$ Website $else$ Event Website $endif$
       </a>
     </div>
     $endif$
