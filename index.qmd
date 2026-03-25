@@ -23,8 +23,8 @@ title-block-banner: "assets/img/osc_image_assets/Banner1.jpg"
 #     sort: "date desc"
 listing:
   - id: testimonial-carousel
-    template: testimonials-carousel-template.ejs
-    contents: testimonials.yaml
+    template: home/testimonials-carousel-template.ejs
+    contents: home/testimonials.yaml
 include-after-body:
   - text: |
       <script src="/assets/javascript/remove_title.js" defer></script>
