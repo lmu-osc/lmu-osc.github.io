@@ -22,12 +22,7 @@ This manual can be used by **individual researchers in any scientific field** bu
 <!-- Centered Cycle Diagram -->
 <div class="cycle-container">
 
-```{r}
-#| echo: false
-#| results: "asis"
-#| warning: false
-cat(readLines("images/os-cycle.svg", warn = FALSE), sep = "\n")
-```
+{{< include images/os-cycle.svg >}}
 
 </div>
 
