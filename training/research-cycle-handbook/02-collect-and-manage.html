@@ -1,0 +1,1795 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.36">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="description" content="Implement FAIR data management, organize research outputs, maintain privacy, and ensure quality">
+
+<title>2. Collect &amp; Manage – LMU Open Science Center</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../assets/img/lmu_osc_logo.jpg" rel="icon" type="image/jpeg">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-9e9c3b858c0bd5de9b38ddcbbfd0ed72.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<!-- Matomo -->
+<script>
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//www.analytics.osc.lmu.de/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '3']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+<link rel="stylesheet" href="https://raw.githubusercontent.com/lmu-osc/branding-resources/refs/heads/main/styles.css">
+<link rel="stylesheet" href="../../assets/bootstrap-5.3.8-dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="../../assets/fontawesome-free-7.1.0-web/css/all.min.css">
+<link rel="stylesheet" href="../../styles.css">
+<link rel="stylesheet" href="../../footer/footer-style.css">
+<link rel="stylesheet" href="../../custom-navbar.css">
+<link rel="stylesheet" href="../training.css">
+<link rel="stylesheet" href="handbook-styles.css">
+</head>
+
+<body class="nav-sidebar docked nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../assets/img/osc_image_assets/LMU_Open_Science_Center_Logo.jpg" alt="" class="navbar-logo light-content">
+    <img src="../../assets/img/osc_image_assets/LMU_Open_Science_Center_Logo.jpg" alt="" class="navbar-logo dark-content">
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html"> <i class="bi bi-house-door" role="img">
+</i> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../about/index.html"> <i class="bi bi-info-circle" role="img">
+</i> 
+<span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-people" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="bi bi-people" role="img">
+</i> 
+ <span class="menu-text">People</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-people">    
+        <li>
+    <a class="dropdown-item" href="../../people/management.html">
+ <span class="dropdown-text">Management</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../people/staff.html">
+ <span class="dropdown-text">Staff</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../people/scientific-board.html">
+ <span class="dropdown-text">Scientific Board</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../people/advisors.html">
+ <span class="dropdown-text">Advisors</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../people/members.html">
+ <span class="dropdown-text">Members</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../people/fellows.html">
+ <span class="dropdown-text">Fellows</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-partners" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="bi bi-boxes" role="img">
+</i> 
+ <span class="menu-text">Partners</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-partners">    
+        <li>
+    <a class="dropdown-item" href="../../partners/institutional-members.html">
+ <span class="dropdown-text">Institutional Members</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../partners/local-os-initiatives.html">
+ <span class="dropdown-text">Local Open Science Initiatives</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../partners/other-lmu-support-services.html">
+ <span class="dropdown-text">Other LMU Support Services</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../partners/external-partners.html">
+ <span class="dropdown-text">External Partners</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../partners/funders.html">
+ <span class="dropdown-text">Funders</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link active" href="../../training/index.html" aria-current="page"> <i class="bi bi-mortarboard" role="img">
+</i> 
+<span class="menu-text">Training</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../events/index.html"> <i class="bi bi-calendar-event" role="img">
+</i> 
+<span class="menu-text">Events</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../training/index.html">Training Tracks</a></li><li class="breadcrumb-item"><a href="../../training/research-cycle-handbook.html">Research Cycle Handbook</a></li><li class="breadcrumb-item"><a href="../../training/research-cycle-handbook/02-collect-and-manage.html">Collect &amp; Manage</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+  <div id="quarto-announcement" data-announcement-id="04e26d7279811b0a13da8609e872b406" class="alert alert-primary hidden"><i class="bi bi-info-circle quarto-announcement-icon"></i><div class="quarto-announcement-content">
+<p><strong>Thanks for visiting the LMU Open Science Center–our site is still under construction for now, but we’ll be live soon!</strong></p>
+</div><i class="bi bi-x-lg quarto-announcement-action"></i></div>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../training/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Training Tracks</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../training/self-learning.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Self-Learning Catalog</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 show">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../training/principles/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Principles</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../training/principles/assessing-research-replicability.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Assessing Research Replicability</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../training/principles/credible-science.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Credible Science</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../training/principles/replicability-crisis.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Replicability Crisis</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../training/study-planning/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Study Planning</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="" class="collapse list-unstyled sidebar-section depth3 ">  
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../training/data-management/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Data Management</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../training/data-management/maintaining-privacy-with-open-data.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Maintaining Privacy with Open Data</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../training/data-management/open-data.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Introduction to Open Data</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../training/reproducible-processes/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Reproducible Processes</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../training/reproducible-processes/advanced-git.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Advanced Git</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../training/reproducible-processes/readable-code.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Readable Code</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../training/reproducible-processes/reproducible-protocols.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Reproducible Protocols</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../training/publishing-outputs/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Publishing Outputs</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="" class="collapse list-unstyled sidebar-section depth3 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../training/publishing-outputs/open-access-preprints-postprints.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Open Access, Preprints, Postprints</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../training/research-cycle-handbook.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Research Cycle Handbook</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../training/research-cycle-handbook/01-plan-and-design.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Plan &amp; Design</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../training/research-cycle-handbook/02-collect-and-manage.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Collect &amp; Manage</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../training/research-cycle-handbook/03-analyze-and-collaborate.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Analyze &amp; Collaborate</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../training/research-cycle-handbook/04-preserve-and-share.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preserve &amp; Share</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../training/educator-toolkit.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Educator Toolkit</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content column-page-right" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../training/index.html">Training Tracks</a></li><li class="breadcrumb-item"><a href="../../training/research-cycle-handbook.html">Research Cycle Handbook</a></li><li class="breadcrumb-item"><a href="../../training/research-cycle-handbook/02-collect-and-manage.html">Collect &amp; Manage</a></li></ol></nav><h1 class="title display-7">2. Collect &amp; Manage</h1></header>
+
+<header id="title-block-header">
+
+
+</header>
+
+
+<div class="orc-phase-hero phase-2 container shadow rounded-4">
+<div class="row align-items-center p-3 p-lg-4 mt-4 mb-3">
+<!-- Cycle image -->
+<div class="col-12 col-lg-3 orc-hero-cycle text-center phase-2">
+<!--?xml version="1.0" encoding="UTF-8" standalone="no"?-->
+<svg width="105.94985mm" height="106.35682mm" viewbox="0 0 105.94985 106.35682" version="1.1" id="svg1" space="preserve" sodipodi:docname="os-cycle.svg" inkscape:version="1.4.2 (1:1.4.2+202505120737+ebf0e940d0)" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg"><sodipodi:namedview id="namedview1" pagecolor="#ffffff" bordercolor="#666666" borderopacity="1.0" inkscape:showpageshadow="2" inkscape:pageopacity="0.0" inkscape:pagecheckerboard="0" inkscape:deskcolor="#d1d1d1" inkscape:document-units="mm" inkscape:zoom="1.9023831" inkscape:cx="375.58155" inkscape:cy="222.08986" inkscape:window-width="3440" inkscape:window-height="1403" inkscape:window-x="1920" inkscape:window-y="0" inkscape:window-maximized="1" inkscape:current-layer="g12"></sodipodi:namedview><defs id="defs1"><rect x="441.02579" y="126.68321" width="158.2226" height="91.989883" id="rect13"></rect><clippath id="p25.3"><path d="M 0,0 H 2500 V 2500 H 0 Z" clip-rule="evenodd" id="path95"></path></clippath><rect x="441.02579" y="126.68321" width="208.15997" height="105.1313" id="rect13-9"></rect><rect x="441.02579" y="126.68321" width="206.58299" height="93.566849" id="rect13-0"></rect><rect x="441.02579" y="126.68321" width="172.94098" height="123.52928" id="rect13-3"></rect></defs><g inkscape:label="Layer 1" inkscape:groupmode="layer" id="layer1" transform="translate(-329.76133,-68.908773)"><g id="g13" transform="matrix(0.26458333,0,0,0.26458333,-49.56731,-5.3065886)" style="fill:none;stroke:none;stroke-linecap:square;stroke-miterlimit:10" inkscape:label="open-research-cycle"><g id="g12" transform="translate(-11.129111,4.4594129)" inkscape:label="phases"><a href="../../training/research-cycle-handbook/04-preserve-and-share.html"><g id="phase-4" inkscape:label="phase-4" class="phase-group" role="button" tabindex="0" transform="translate(0,-0.345935)" style="fill:#00c057;fill-opacity:1"><path id="path5" style="display:inline;fill:#00c057;fill-opacity:1" inkscape:label="phase-4-quarter" d="M 1639.1872 278.06522 C 1532.5728 278.06522 1446.1462 364.49186 1446.1462 471.10624 L 1593.152 471.10624 L 1639.1872 425.38553 L 1639.1872 278.06522 z "></path><text space="preserve" id="text13-3" style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:29.3333px;line-height:0.95;font-family:Sans;-inkscape-font-specification:'Sans, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect13-3);display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-linecap:square;stroke-miterlimit:10" transform="translate(1022.7667,252.66541)" inkscape:label="phase-4-text"><tspan x="447.24018" y="148.97324" id="tspan1">4. Preserve </tspan><tspan x="471.07349" y="176.83988" id="tspan2">&amp; Share</tspan></text></g></a><a href="../../training/research-cycle-handbook/03-analyze-and-collaborate.html"><g id="phase-3" style="fill:#ffc000;fill-opacity:1;stroke:none;stroke-linecap:square;stroke-miterlimit:10" inkscape:label="phase-3" transform="translate(3.1332232e-5,-0.248135)" class="phase-group" role="button" tabindex="0"><path id="path13" style="display:inline;fill:#ffc000;fill-opacity:1" inkscape:label="phase-3-quarter" d="M 1446.1461 483.6432 C 1446.1461 590.25758 1532.5727 676.68422 1639.1871 676.68422 L 1639.1871 529.66273 L 1593.4801 483.6432 L 1446.1461 483.6432 z "></path><text space="preserve" id="text13-0" style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:29.3333px;line-height:0.95;font-family:Sans;-inkscape-font-specification:'Sans, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect13-0);display:inline;fill:#ffffff;fill-opacity:1" transform="translate(1005.6374,393.03487)" inkscape:label="phase-3-text"><tspan x="455.7308" y="148.97324" id="tspan3">3. Analyze &amp; </tspan><tspan x="459.47084" y="176.83988" id="tspan4">Collaborate</tspan></text></g></a><a href="../../training/research-cycle-handbook/02-collect-and-manage.html"><g id="phase-2" inkscape:label="phase-2" class="phase-group" role="button" tabindex="0" transform="translate(0,0.248135)" style="fill:#cc0066;fill-opacity:1"><path id="path11" style="display:inline;fill:#cc0066;fill-opacity:1" inkscape:label="phase-2-quarter" d="M 1696.8161 483.14693 L 1649.736 529.90474 L 1649.736 676.18795 C 1756.3504 676.18795 1842.779 589.76131 1842.779 483.14693 L 1696.8161 483.14693 z "></path><text space="preserve" transform="translate(1195.3915,393.86678)" id="text13-2" style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:29.3333px;line-height:0.95;font-family:Sans;-inkscape-font-specification:'Sans, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect13-9);display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-linecap:square;stroke-miterlimit:10" inkscape:label="phase-2-text"><tspan x="463.96957" y="148.97324" id="tspan5">2. Collect &amp; </tspan><tspan x="485.96954" y="176.83988" id="tspan6">Manage</tspan></text></g></a><a href="../../training/research-cycle-handbook/01-plan-and-design.html"><g id="phase-1" inkscape:label="phase-1" style="fill:none;stroke:none;stroke-linecap:square;stroke-miterlimit:10" transform="translate(3.1332232e-5,0.345935)" class="phase-group" role="button" tabindex="0"><path id="path9" style="display:inline;fill:#0066ff;fill-opacity:1" inkscape:label="phase-1-quarter" d="M 1650.8766 277.37335 L 1650.8766 424.29522 L 1696.6813 470.41437 L 1843.9196 470.41437 C 1843.9196 363.79999 1757.491 277.37335 1650.8766 277.37335 z "></path><text space="preserve" transform="translate(1220.0523,249.96672)" id="text13" style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:29.3333px;line-height:0.95;font-family:Sans;-inkscape-font-specification:'Sans, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect13);display:inline;fill:none;stroke:none;stroke-linecap:square;stroke-miterlimit:10" inkscape:label="phase-1-text"><tspan x="456.76211" y="148.97324" id="tspan8"><tspan style="fill:#ffffff" id="tspan7">1. Plan &amp; </tspan></tspan><tspan x="469.9328" y="176.83988" id="tspan10"><tspan style="fill:#ffffff" id="tspan9">Design</tspan></tspan></text></g></a></g><path d="m 1611.6681,444.36413 28.7707,5.68715 -12.9951,26.2911 -5.146,-10.43138 c -9.3326,5.85761 -12.9239,17.98917 -7.9422,28.08745 5.317,10.7779 18.4105,15.2205 29.1862,9.90463 10.7757,-5.31587 15.2183,-18.40944 9.9024,-29.18511 -1.5231,-3.08739 -0.2555,-6.82316 2.8318,-8.34624 3.0874,-1.52307 6.8232,-0.25554 8.3463,2.83185 8.3554,16.93703 1.3731,37.52108 -15.5661,45.87758 -16.9393,8.35651 -37.5222,1.37094 -45.8776,-15.56609 -8.0212,-16.25964 -1.8794,-35.84816 13.6037,-44.78439 z" id="path1" style="fill:#000000;stroke:none;stroke-width:7.55906;stroke-linecap:square;stroke-miterlimit:10;stroke-dasharray:none" inkscape:label="rotating-arrow"></path></g></g></svg>
+
+</div>
+<!-- Text content -->
+<div class="col-12 col-lg-9">
+<p class="lead fw-bold mb-3 fs-4 text-muted"> Build quality into your data from the start</p>
+<!-- Pills -->
+<div class="d-flex flex-wrap gap-3 mb-3">
+<span class="badge rounded-5 fs-6 fw-normal text-wrap orc-hero-pills phase-2 text-white"><i class="bi bi-check2-circle me-1"></i> Data Collection</span>
+<span class="badge rounded-5 fs-6 fw-normal text-wrap orc-hero-pills phase-2 text-white"><i class="bi bi-check2-circle me-1"></i> Data Management</span>
+<span class="badge rounded-5 fs-6 fw-normal text-wrap orc-hero-pills phase-2 text-white"><i class="bi bi-check2-circle me-1"></i> Ethics &amp; Privacy</span>
+<span class="badge rounded-5 fs-6 fw-normal text-wrap orc-hero-pills phase-2 text-white"><i class="bi bi-check2-circle me-1"></i> Quality Control</span>
+</div>
+<div class="orc-hero-checkpoint phase-2 badge rounded-5 d-inline-flex align-items-center justify-content-center text-wrap white-space-normal fs-6 fw-normal text-white">
+<i class="bi bi-people-fill me-2"></i>
+Checkpoint: Data quality validation meeting
+</div>
+</div>
+</div>
+</div>
+<details class="orc-details-panel">
+<summary>
+<p><i class="bi bi-journal-code"></i></p>
+<section id="sec-data-collection" class="level3" data-number="2.1">
+<h3 data-number="2.1" class="anchored" data-anchor-id="sec-data-collection"><span class="header-section-number">2.1</span> Data Collection</h3>
+</section></summary>
+<p>Your data acquisition procedures must be documented in sufficient details to allow replication by another researcher (see <a href="https://cms-cdn.lmu.de/media/contenthub/amtliche-veroeffentlichungen/gwp-ordnung.pdf">LMU Guidelines for Safeguarding Good Scientific Practice</a>). Establishing reproducible data collection processes strengthens the quality and consistency of both your data and that of your team.</p>
+<p>State-of-the-art practices for reproducible data acquisition include:</p>
+<div class="ms-1">
+<ul>
+<li><strong>creating standard operating procedures</strong></li>
+<li><strong>recording <u>metadata</u> as data collection is taking place</strong></li>
+<li><strong>build in automation through programming</strong></li>
+</ul>
+</div>
+<!-- why is there a weird white space between the frame and the text in this call outbox?-->
+<div class="mx-4 callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Definition
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><u><strong>Metadata</strong></u> are data about data; they provide context to your data. Metadata such as equipment settings, environmental conditions, software versions, and calibration records should be recorded contemporaneously, not reconstructed afterward. Electronic lab notebooks, instrument logs, and automated logging all help to document your metadata.</p>
+</div>
+</div>
+<!-- why is there a weird white space between the frame and the text in this call outbox?-->
+<div class="mx-4 callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Tip for research groups to streamline this process
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><strong>Create standard data acquisition procedures within the team.</strong> From step-by-step wet-lab procedure, to the settings of measuring devices and the reproducible data pre-processing using script, all regularly repeated steps should be documented and standardized to be replicated precisely by all team members.</li>
+<li><strong>Share standard operating procedures</strong> through e.g.&nbsp;common server space such as <a href="https://syncandshare.lrz.de/login">LRZ Sync &amp; Share</a>, specialized online tools like <a href="https://www.protocols.io/">protocols.io</a> or electronic lab notebooks, or <a href="https://gitlab.lrz.de/users/sign_in">LRZ GitLab</a> for scripts.</li>
+</ul>
+</div>
+</div>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">2.1.1. Lab Protocols</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">2.1.2. Questionnaires</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false" href="">2.1.3. Software-based data acquisition</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<p>Your protocol should specify materials with identifying details (lot numbers, versions, sources), equipment settings, step-by-step instructions with timing, and expected outcomes at each stage. What counts as “materials” varies by field: reagent concentrations in wet lab work, scanner parameters in neuroimaging, sampling coordinates in field ecology. But the principle is the same: enough detail that someone else could replicate your procedure exactly.</p>
+<p><br></p>
+<ul>
+<li><p><strong>Write detailed methods and reusable protocols.</strong> Write your protocol before you start, with all the details that would be needed for an exact replication (see the ReproducibiliTeach <a href="https://youtu.be/aKiXFzj15dg?si=ilB8aOsXArphMpfm">lecture on reusable protocols</a>)</p></li>
+<li><p><strong>Track deviations in real time.</strong> Follow your protocol precisely, and record any deviations as they happen. When you need to adapt, note it immediately. These deviations often explain unexpected results and guide protocol improvements. <strong>Electronic lab notebooks (ELNs)</strong> make this easier by creating version-controlled, timestamped records automatically, providing an audit trail that paper cannot match.</p></li>
+<li><p><strong>Publish your protocols.</strong> A detailed, tested protocol is a contribution to your field. Publishing establishes priority, enables citation, and makes your methods reusable. Platforms like <a href="https://www.protocols.io/">protocols.io</a> provide version control and DOI assignment.</p></li>
+</ul>
+<div class="container my-4">
+<h4 class="fs-5 anchored">
+<i class="bi bi-mortarboard"></i> LEARN MORE
+</h4>
+<!-- row for learn more section  -->
+<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+<!-- card -->
+<div class="col">
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
+<img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMSEhUTEhMVFRUTEhUaExUTFhYVGRMZGRUWGRkVJB8ZKCohGRoqIiofKDUmKikrNDAwFx8zQjQ4Qyo5LzcBCgoKDg0OGxAQGDchHSMrLTcrKys3Nzc3NysrNzctNSstLS0rLTctLS03LS03LS0tLS0tNy03Ny0rLS0tLTctLf/AABEIALAAsAMBEQACEQEDEQH/xAAcAAEAAgMBAQEAAAAAAAAAAAAABQYBBAcDAgj/xABEEAACAQMABgUGCgkEAwAAAAABAgMABBEFBhIhMUETFFFh0QciU3GBkhYyNFRykaGxs/AjM0JSYnSCk8EXc9LhFaKy/8QAGgEBAAMBAQEAAAAAAAAAAAAAAAEDBAIFBv/EADQRAAIBAgQEAwgBBAMBAAAAAAABAgMRBBIhMRNBUVIiMpEFFDNhcYGh8LEVI0LBQ9HhJP/aAAwDAQACEQMRAD8AmK3Hy4oBQCgFAKAUAoBQCgFAKAUAoBQCgFAKAUAoBQCgFAKAUAoBQCgFAKAUAoBQEdpua4RAbaNZH21DBzgBN+TxH5PColfkW0owb8bsjdncqpIUsQpIUcWIHD21JWldkTq/rCt00idFJG8OBIr4wCcjGQd53HkK5jPMX1qDppO909iarozigFAKAUAoBQCgFAKAUAoBQCgFARumdNxW0YkfaYMcIIxtFjjOOz6zUSkoltKjKo7I9NC6TW5hSZMgNnceIIJBFIyzK5FWm6c3Flf0jfXN1dva20nQpCoM0uAWJI4D6+7gd9cNuUrI0whTp0lUmrt7IxHou+iu4CZ5J4AW2+CbORjzgD5/IjjwPCmWSktdCXUoypS8Nn+7dDOtzzRT27xzuqzTRxtGPi4zvPrNJ3TWowyjKEk4rRN3LRdziNHduCKWPqUZNWN2McY5mkjn+p+mZY4pZEtZZ3kmaSV1GyozyHEueJx/FVEJO2x6eJoxlJJySSVl+8i56B05FdoWjyChw6OMMh7+788qtjJSMFajKk7P1Nu/uxDG8rAkRoWIXecAZPtqW7K5XCOeSiuZ86LvlniSVAwVxkBhg9n57aJ3VyakHCTi+RtVJwKAUAoBQCgFAKAUBq6TjlaJxAwSQr5jMNoA/nng47DwqHe2h3TcVJZ1oVKwnl0dciK4lMkNzgrM37Mu4HPHAP3YPI1WrwdmbZxjiKeaCs1y+RZ9N6JW6j6N2dRnPmNjO4jB7R3d1WSjm0MlKq6crohPJ/cHoXtpP1lrIyEcfNJODv5fGA7gK4pvSz5GjGx8anHaSNLVq/js7i7tZJESNH6SIscABsZXJ54K7u0Goi1FtM7r05VYQqRWuzPq/kewvpLlkZ7a4UbbIMmNgBvP38tzd1H4ZX5CCVeioJ+Jfk3ItZ3upY0soyU2szzSKQirzUfxeAqc+Z+EreGVOLdV68ktyL1y0jm7t/0U2xazbUjCPKtvjYFe3GCOVczfiXyLsLTtTlqryWmp768ayp0DW8e300qx4Gz+y+G+vG7Ha1TUnpY5wmHedTeyv+Cf1TniNnD0ZGysShuHmsB5+ew5zXcLZVYzYiMuK83UhNVXEukbyaI/oSFXI+K7+b5w7eDH+quIazbRoxCy0IQlue0+kLj/AMoIIZdtCitMjqCsSjGcEHO0d3tcceU3eeyIVOHu+eS15PqTesU4S2lbpehwhw4AJU8sDmTw9tdy0RmoRzVErX+RranXs81sklwAGb4pG4uvJyORPdxqINtaneKhCFRqBN10ZxQCgFAKAUAoBQFc150jJFAqxHZeeVYw+cbAbOT3Hlnlnurio7LQ1YSnGU25bJXNaXUC1aMqS5lI3zFiWLdpB3Eez21HCidrHVFK/LoR+rmuKwobe6LNLDJ0alQXMg2tn2lfrIxxNcxqW0ZbXwjk89PZ6ktpPVyU3BuLS46BpVCygrtBsYwwB58Oz1104O94sphiIqGSpG9tj2s9T7VNkvGJXAO08mSZGJyWIO4nPbmpVOJzLF1Hs7LoifFdmUUJM0B5ywq2NpVbBBG0AcEHIO/gQaBNrYgNIalWkzlyrIWOXEbbKue8cvZiuHTizTDGVYKx66QY2ECi0tekVT5yod4GPj82Y5x27hR+FaIiH9+f9ydiO8nSK0UlwX25ppG6U7/NxvCb/Xnd2jsqKW1y3G3UlC3hS0NaY/8AlLrYHyO2YFiOEz9nq4j1ZP7QqPO/kjtf/NTv/nL8Ist5pqGGaOCTKGVTsEjCbiAEzwz3ertFduSTsY40Zzg5rl6n1omK5DzdYdGUyZgCDBVd+47h3dvPfUxvzFR02lkX1JGpKhQCgFAKAUBW9K66W0EhjG3K652xEoIXHHJJA3d2cVw6iWhrp4OpNX2XzPK8eDS1sywvh1IZdoENG2DjI7DvGRn7Kh2mtCYqeFqXktP5NaDSGlVXojaozjcJy42ezbIB3nny9XKovPax26eGbzZtOn+iY0Dq/HAiFwrzDaLSkbyznabHd+eddxjYz1q8pt20XQmq6KBQGKEigFAKAyKECgIPWPVxbpRsuYpE2ijoSB54wwIHEHmeP3VxKGY0UMQ6b1V0RuitJRaNgSC52UkVHfEYYhxtEA5PFz2fdwqIyUFZl1SnLETc4bfv4PDQmjZL+UXl2MRj5NCeAXiHI58vX6gBURjmeaR1VqRoR4VPfmywawaRmhQCCBppJCVXhsqcZy2/h9XDiK7k2tjLRpwm/HKyX7oRWr+lbiOdrW+I6R/PhdcbLDnGOHD/AAe7PMZO9pF1alCUOJS22a/2WqrDGKAUAoDW0mziGQx73ETlB/EFOz9tQ9jumlnWba5XfJt0fUwVwZC79Mf2traOM/04ril5TVjs3F125GtJCqaZj6AAF4GNwF4cGIJ7yQv2dtR/yaHSblhXm66F0FWmEUIFAKAGgMUJFAKAUIM0AoCN07oWK7jMcg+gw+Mh7R4c6iUVJaltGtKlK6NqHZjWONnycBVLkbUhVd/rOBndU7HLvJuSX/hBaw62pA3Qwr0853BEyQp78c+4b/VXEqltFuaKOEc1mlpHqQN5q1cPG93d3OxMoDRLkBIiCCFJ4Ds3c9+TXDg34mzTHEwjJU6cbrn8/wB/bFs1V0x1u3WUjDfFfcQCw4kdoP2cOVWQlmVzFiKPCm4kvXRQKAwxxvoCpaB0gJtITuJ9pDDGYUVvNZSBtNs/vAgjeMjaquLvJm2tTyUIrLrd3PbSGpiNI0sE0tuz/HERwrdp3Yx9eKOnzREMZJRyzjm+pIaA1ditdplLPI/x5JDlm547h99dRgolVbESq6PRLkS9dFJmhAoBQCgMUAoSKAyKECgFAKAgtbtB9ahzGdmaLLQsDg55rnkD9+K4nHMjThq3Dlr5XueGpOhEggR+iKTOv6QyYL+r+Fe7ce3fSnGyOsXWlObV/CSel9CxXPR9MCwjfaC5IVjjGCOY8OwkV1KKluU060qd8vM340CgKoAAGAAMADs3cKkqbvufVAKA1tJWYmieIsyiRSpK4yAePGoaurHdOeSSl0K/d6jQFU6EvDLGoCyxk5JAxtEcz3jB764dJcjVHG1LvNqnyI/Vlbme7bp5ukSy20DplRI7bsHAGcDj6hx41zC7lryLK/DhS8MbOWpeKuPPFAZoQKAUAoBQFB8pelJoXh6GV02lfa2SRnBXFU1ZNWselgacJp5lcpXwmvPnMvvmqs8upv8AdqXaPhNefOZffNM8uo92pdo+E1585l980zy6j3al2j4T3nzmX3zTPLqPdqXaPhPefOZffNM8uo92pdp0DyaaRlnjmM0jOVdQNsk4GDV1JtrU83H04wksqsSmuWlJIIVEP62aRY4zu80tnfv59nrrqpKy0KcLTjOfi2Suyr2uq8nWXhmu5hN0CyRSqzYJyQ4Od5wccxuzVahrZs2SxMeGpRgst7NFr1S0hLLHIk+DLbymN2H7eMYf2/476sg29zFiacYyUobNXJyuzOKAqmnbm4uLrqdtJ0KpGHnlAO0Nrgo7OIO4jOe6q5Nt5UbaMYU6fFmr62SNHSFneaOXrCXL3EakdLHLknBOMgknHsxjvrlqUNblkJ0q7yOOV8mi5WkiugdMYkAbIx52VGDu4nFXIwyTTs+R7UORQGaECgFAKAUBzXyt/rLf6En3rVFbker7N2l9iY8mtsjWeWRSelfeVBPBe2uqS8JRj5NVdHyJvWGzjFrcERoCLebBCru/RtXcl4WUUZS4kdea/k4ZWM+hP0ELKL0ae6vhW6yPmc8upSPKpAiww7Kqv6VvigD9nuqmtseh7Pk3N36H15Jf1U/00/8Ak0o7Me0fNEsWtujHnhBi/WwyLLEDwLLy9v34qycbrQy4aooT8Wz0ZD3t5PcxxXMEDLc20pRopBjO2gDDiMrkg78cDXDbeqWqL4whTk6c5eFq9yZ1V0O1tE3SttSyyNJKRw2m5Du/yTXcI5VqUYmqqkvDstETVdGcUJOdPpycXstzDbNJGrNBLsZbbCHIbdnDDt4Y3VRmea6R6fBhwVCUrPdHxrDrityotgrQLIwE0koOUUEEgKuTn888hKpm0Jo4R03xPNbZItNjrBAZIbaAiQNGfOQgiMIN2ezPhVikr2RjlQnlc56f7JTSmkY7eMyykhFwCQCeJwOFdN21ZVTpyqSyx3IL4e2PpG/tv4VxxYmj3Kt0/Jn4fWPpG/tt4VPFiPca3T8j4fWPpG/tv4U4sSPca3T8nrBrtYscdNj6SOo+sinEiQ8HWX+JN2d7HKNqKRHHajA/dXaaexnlCUdJKx70OTn/AJT9HyyvB0UTybKPnYVmxkrjhwqmrFu1j0/Z9SEVLM7Ez5OrV47TZkRkbpXOHBU4wu/B5V3SVomfGyUqt4u+hLayfJLn+Xm/DaupeVlND4sfqjg1Yj6M/RQrcfLlM8ptlJLFEIo3ciRiQilsDZ47uFVVU2tDfgJxjJ5nbQ+fJjYyxRzCWN4yXTG2rLnce3jSkmk7jHzjKSyu5datMBUrzWm4Lym2telhgdlkcvgkr8bA7vUarc3yRtjhoWWedm9kb0+sYVrZtjMF1hRJzR2+KpH3/wDVTn26MrWHupq/ijy+RP12ZjFCSI0rp+1tN0jBWbfsIMse8gcPWa5c4xLqdCpV2R7T3dvJMbZwjvsBth1BBU57eJ7u+pum7EKM4wzrY09H6tJDePcIEVDFsLGi7Oycgluw8OWONcqFpXO54hzpKD3vue2tei3urZ4YyoZihy2QNzAngDUzjdWOcNUVOopM5rprUqe1haZ3iKrs5Cls+cQBxFZ5U3FXPWpYyFSeVIgtF2LTypEhAaRsAtw+yuEruxoqTUIuT5Fr/wBNrn0kP1v/AMat4LMf9Rp9H+/c17vye3iKSOjk/hRjn/2AqHSkdRx9JvoVy1uZbeTaRmjkQ4PIgg71IP2g1Wm0a5RjONnqjs+qmmut26y7g4OzIBwDDj7DuPtrXCWZXPAxNHhTy8uRMV0UCgI7WT5Jc/y834bVEvKy2h8WP1RwasR9GfooVuPlxQCgFAc9fS8tvNe29vBLMGkZl2VLdFJIN/xc5Q8Rw4GqczTaSPT4UZwhOcrf9L/YsrO9njtrZrYwxQPGzu585tjfwOCM792D66JSdlYSlRhKU81276HQquPMMChJzuK0jks7+dxtTmSUOW3lArAhRngPDHKqEk4t8z03KUatOC8uhK60MvSaPdf1xmjAxxMbAbfs8TXU7XRTh75aie1vyXCrTCKArXlF+QS/Sj/EWq6vlNeB+Mvuc11M+XW/+4PuNUU/Mj1cV8GX0O31rPnxQHI/KdCq3uVGC8SFu85Zc/UBWar5j28A26X3JvySSHZuF5AxEeshwfuFdUeZn9pLWL+p0GrzzBQEdrJ8kuf5eb8NqiXlZbQ+LH6o4NWI+jP0UK3Hy4oBQCgKnpDWK1tp5FiieWd8Gbohneo3ZJ5jPIbqrc4xehthh6lSCcnaK2ub+gdaobpjGA0ci5/RyAAnHHGOOOzjUxqKRXWw06SvuuqJ2uzMYoSVbT2pgmd5IZmgaUYlC5KSDnkAjeefEd1Vyp31Rso4zIlGUb22NW30NFo7F1cySTupVFYjdEDuG4k4A7c+oVGVQ1Z1KtLEf24Ky/kugNWmAUBWfKL8gl+lH+ItV1fKa8D8dff+DmGrN2kV1DJIcKjgscE4HsrPB2dz168XOm4x3Oo/Dqw9Mf7cn/GtPFieP7lW7fyjWvPKDZouULyHkFUr9rYwPrqHVidxwFVvXQ5lpvSb3MzzPuLHcBwUAYArNKWZ3PXpU1Tgoo6rqBodra2G2MPKdtgeKjGFXuON/trTTjZHjY2qqlTTZaFlqwyCgI7WT5Jc/wAvN+G1RLystofFj9UcGrEfRn6KFbj5cUAoAaAqPk72AkynHWBO/T/vZzu/p4+3NV0ufU3Y291220PPWIpJf2YgwZ1kzKVwdmMYyGx3ZxntPbUS1krbk0bxozzeXl9fkXKrTAauk71YInlf4saknHE9g9ZO721Ddlcspwc5KK5lTh1zuAqzy2ZS2YgdICSVBOA3ePYM1XxHu1obHg4XyRn4uh5IkulpdptqOyjbzRwM5H59nrqNZ/QluOFjZazf4Lfoq+imQmFsqjFOBGyVxu376ti09jFUhKD8XPU3KkrK15RfkEv0o/xFqur5TXgvjL7/AMHJdG2TTypEmNp2wu1uGazJXdj2pzUIuT5Fkfyd3gBOYjgZwHOT3cONWcKRkXtCl8ypEYqo3HXdV9UrWJUnXMzMoZHfGBkAgheR9eSK1QpxWp4mIxVWTcHoWurDEKA+ZH2QSeABJ9m+hKVylaY15tJIJo1Mm1JDIq5TdlkIFVSqxaN9LBVYzi3yaOWVmPYOwJr/AGZIAMmTgfErVxYnhvA1S1VYYxQERrVpfqls8u7b3CMHmx4evG8+yuZyyq5fh6XFmo8uZ8at38E69KjRGZ0Qz9GMEsBzB87A34zSLT1JrwnB5Xey2uYsdVreGfp4w6v52fPJB2s5yDRQSdxPE1JwyPYm66M5H6esuntpohxeNgueG1jK/biokrqxbRnkmpfMpdvrdAbFLVo5JJDD0TRoOwFQcnnjB3A4qlVFlsb5YSfGdROyve5nQkGlngSJdm3jQAB3GHK5PLeRj1DlvqY57WFWWFU3J+J9ORM6oaHuLSaeOQ9JE4V1l3DL/tDBJOTnj/D311CLi2Z8TWhVjGS0a5fItVWGMrXlF+QS/Sj/ABFqur5TXgvjL7/wc11M+XW/+4PuNUU/Mj1cV8GX0O31rPnzj3lB0P0F0WUeZPl17mz54+vf/UKy1Y2Z7uCq56dnutCy+S7TG0jWzHfH50f0SfOX2Hf/AFVZSlyMntClaSmue5fKuPNFAec6bSsv7ykfWMUJi7O5zT/TOb08X1P4Vn4L6nrf1GHaP9MpvTxfU/hTgvqP6jHtPuHybTBgemi3EHg3I+qp4L6kP2jBq2VnTDV55IoCr6X01YvcLBcHDwOrKzZ2NrGcbt27vGKrlKN7M2U6NZU88Ofqa2s2rlsYXuoP0bxoXR4GwrYBPLdv7Rg1E4K10d0MRUzqnPVPSzNOO/0nDAHAF1HJEGR1BMibSjZJA3tjPYeHGovNLqd8PDTnbytPbkXPRSyCGMTNtSbA6Q4A87G/h+d1WxvbUwVMud5djZqTkidC6DW3kndWyJpNsDZA2M8RniRXMY2uXVazqRinyRL10UCgFAVryi/IJfpR/iLVdXymvBfGX3/g5rqZ8ut/9wfcaop+ZHq4r4MvodurWeAQOu2h+s2rADLx+fH25A3r7Ru9eK4qRujRhK3DqLo9DkmhNItbTxzL+w28fvLwZfaKyxeV3Pbq01Ug4s7tbzrIiuhyrKGU9oIyK2nzkouLsz0oQKAUAoBQCgFARbavWxEgMKt0rl32skljzBO9efDHGuciLveKmmu2hBzagRZIjnmjiY5eINlT9f8AnNccJdTQsdLeUU31LbDGEVVUYCgBR2ADAFWmJu7uz7oQYoSZFCBQCgILXa+kgtHkibYdWTBGDxcA8a4qO0bo04SEZ1UpbHKr/Wa6mQxyzFkbGVwozg5HAVmc5NWZ7MMPSg80Y6kdaXTxOskZ2WU5U7tx9tQnYslFSVnsXHVHWe7mu4o5JiyMW2l2VGcIx5CrYTk5GHE4alCk5RjqdSFaDxzjGvWiOrXTbIwkvnp2DJ3r7Dnd2EVlqRtI97CVeJT13Whq2Ws93CgjjmZUX4owpxvzzFcqckjueGpTeaUdTr2rVy0lrDI52maMFju3n2Vri7xR4leKjUkkSdSUigFAKAUAoBQCgFAKAxQkyKECgFAeVzbJIuzIqup4qwBBxvG40audRk4u8WaXwftPmsH9pPCoyR6FnHq979R8H7T5rB/aTwpkj0HHq979T0t9DW8bBo4IkYcGWNQRy4gUypcjl1qjVnJ+pvCpKzWvNHxTY6WJJNnOztqGxnGcZ4f9VDSe53GpOHldjW+D9p81g/tJ4UyR6HfHq979TfghVFCooVV3KFGAB2buFSVNtu7PuhAoBQCgFAKAUAoBQCgMUJMihAoBQCgFAKAUAoBQCgFAKAUAoBQCgFAKAUAoBQGKEmRQgUAoBQCgFAKAUAoBQCgFAKAUAoBQCgFAKAUAoD26nJ6N/cbwqLrqWcOfa/Rjqcno39xvCpuupHDn2v0Y6nJ6N/cbwpddRw59r9GOpyejf3G8KXXUcOfa/Rjqcno39xvCl11HDn2v0Y6nJ6N/cbwpddRw59r9GOpyejf3G8KXXUcOfa/Rjqcno39xvCl11HDn2v0Y6nJ6N/cbwpddRw59r9GOpyejf3G8KXXUcOfa/Rjqcno39xvCl11HDn2v0Y6nJ6N/cbwpddRw59r9GOpyejf3G8KXXUcOfa/Rjqcno39xvCl11HDn2v0Y6nJ6N/cbwpddRw59r9GOpyejf3G8KXXUcOfa/Rjqcno39xvCl11HDn2v0Y6nJ6N/cbwpddRw59r9GOpyejf3G8KXXUcOfa/Rjqcno39xvCl11HDn2v0Y6nJ6N/cbwpddRw59r9GOpyejf3G8KXXUcOfa/Rn/2Q==" class="img-fluid" alt="reproducibiliteach icon">
+</div>
+<h4 class="card-title anchored">Write reusable protocols</h4>
+<p class="card-text">Understand the level of details needed for your protocols.</p>
+<a href="https://youtu.be/aKiXFzj15dg?si=ilB8aOsXArphMpfm" class="stretched-link" target="_blank" rel="noopener"></a>
+</div>
+</div>
+</div>
+<h4 class="fs-5 mt-3 anchored">
+<i class="bi bi-tools"></i> TOOLS &amp; RESOURCES
+</h4>
+<!-- row for Tools & Resources section -->
+<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+<!-- card -->
+<div class="col">
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+  <div class="d-flex gap-2">
+    <div class="orc-card-tool-icon p-2 rounded">
+      <img src="https://www.elabftw.net/img/elabftw-logo-only.svg" class="img-fluid" alt="eLabFTW icon">
+    </div>
+  </div>
+  <span class="badge rounded-5 bg-success-subtle text-success align-self-start">Supported at LMU</span>
+</div>
+<h4 class="card-title anchored">eLabFTW</h4>
+<p class="card-text">Electronic Lab Notebook hosted by LMU Munich.</p>
+<a href="https://elab.ub.lmu.de/login.php" class="stretched-link" target="_blank" rel="noopener"></a>
+</div>
+</div>
+<!--  card -->
+<div class="col">
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+  <div class="d-flex gap-2">
+    <div class="orc-card-tool-icon p-2 rounded">
+      <img src="https://avatars.githubusercontent.com/u/83013380?v=4" class="img-fluid" alt="Chemotion icon">
+    </div>
+  </div>
+  <span class="badge rounded-5 bg-success-subtle text-success align-self-start">Supported at LMU</span>
+</div>
+<h4 class="card-title anchored">Chemotion</h4>
+<p class="card-text">ELN hosted by the Faculty for Chemistry and Pharmacy.</p>
+<a href="https://chemlab.cup.uni-muenchen.de/home" class="stretched-link" target="_blank" rel="noopener"></a>
+</div>
+</div>
+<!-- card -->
+<div class="col">
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
+<img src="https://www.protocols.io/favicon.ico" class="img-fluid" alt="Protocols.io icon">
+</div>
+<h4 class="card-title anchored">Protocols.io</h4>
+<p class="card-text">Share, discover, cite, and improve research protocols.</p>
+<a href="https://www.protocols.io/" class="stretched-link" target="_blank" rel="noopener"></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<p><strong>Document both the instrument and the administration procedure completely.</strong> Use validated instruments when possible, pilot test before deployment, and archive the exact version participants see in an open source format.</p>
+<!-- @Felix: do we want anything else here? Could you minimally explain what validating a survey means? It is really unclear to me given how people use it...-->
+</div>
+<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
+<p>When data comes from instruments, sensors, or APIs, scripting the acquisition creates a reproducible record of exactly what was collected and how. Programming languages like R or Python work well for straightforward pipelines. For more complex multi-step workflows which are common in e.g.&nbsp;in bioinformatics and neuroimaging, workflow managers like <a href="https://snakemake.readthedocs.io/">Snakemake</a> ensure steps run in the correct order and can resume after failures.</p>
+<p><br></p>
+<ul>
+<li><p><strong>Structure data correctly from the start.</strong> Variables in columns, observations in rows. This makes your data immediately interoperable with analysis tools rather than requiring cleanup later. Scripts can also automate organization, file renaming, and conversion to open formats. See <a href="#sec-data-management" class="mark">2.2 Data Management</a> for guidelines.</p></li>
+<li><p><strong>Keep records of what ran and when.</strong> Include error handling so failures are recorded rather than silently corrupting data. When something fails months later, you need to know what happened. Always test acquisition scripts on sample data before production runs. A bug in your collection pipeline can invalidate an entire dataset.</p></li>
+<li><p><strong>Version control your code and data.</strong> This makes your methods reproducible and shareable. See <a href="#sec-data-management" class="mark">2.2.6. Version Control</a> for details.</p></li>
+</ul>
+<div class="container my-4">
+<h4 class="fs-5 anchored">
+<i class="bi bi-mortarboard"></i> LEARN MORE
+</h4>
+<!-- row for learn more section  -->
+<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+<!-- card -->
+<div class="col">
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+  <div class="d-flex gap-2">
+    <div class="orc-card-tool-icon p-2 rounded">
+      <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+    </div>
+    <div class="orc-card-tool-icon p-2 rounded">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/R_logo.svg/1920px-R_logo.svg.png?20240131042527" class="img-fluid" alt="R logo">
+    </div>
+  </div>
+  <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
+</div>
+<h4 class="card-title anchored">Introduction to R</h4>
+<p class="card-text">Programming fundamentals for research data processing (3h)</p>
+<a href="https://lmu-osc.github.io/introduction-to-R/" class="stretched-link" target="_blank" rel="noopener"></a>
+</div>
+</div>
+<!--  card -->
+<div class="col">
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+  <div class="d-flex gap-2">
+    <div class="orc-card-tool-icon p-2 rounded">
+      <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+    </div>
+    <div class="orc-card-tool-icon p-2 rounded">
+      <img src="https://git-scm.com/images/logos/logomark-orange@2x.png" class="img-fluid" alt="Git logo">
+    </div>
+  </div>
+  <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
+</div>
+<h4 class="card-title anchored">Introduction to Git</h4>
+<p class="card-text">Learn Git basics integrated with RStudio (2h).</p>
+<a href="https://lmu-osc.github.io/Introduction-RStudio-Git-GitHub/" class="stretched-link" target="_blank" rel="noopener"></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</details>
+<details class="orc-details-panel">
+<summary>
+<p><i class="bi bi-folder-check"></i></p>
+
+<section id="sec-data-management" class="level3" data-number="2.2">
+<h3 data-number="2.2" class="anchored" data-anchor-id="sec-data-management"><span class="header-section-number">2.2</span> Data Management</h3>
+</section></summary>
+<p>In <a href="../../training/research-cycle-handbook/01-plan-and-design.html" class="mark">1. Plan &amp; Design</a> you created a Research Data Management Plan. It’s now time to put this plan into practice, refining it as you learn what actually works for your project.</p>
+<div class="ms-1">
+<ul>
+<li><p><strong>Keep your raw data as read-only files.</strong> The unmodified output of your instruments, surveys, or observations should never be modified directly. You should provide enough documentation to recreate your processed datasets and results from your raw data (see <a href="../../training/research-cycle-handbook/03-analyze-and-collaborate.html#sec-data-processing-analysis" class="mark">3.1. Data Processing &amp; Analyses</a>).</p></li>
+<li><p><strong>Organize, document, and store your research files so they remain usable, and become FAIR upon sharing.</strong> Beyond raw data, you will generate processed data, code, documentation, and metadata. How you organize, describe, and store these determines whether your work remains usable and reproducible. The <a href="https://www.go-fair.org/fair-principles/">FAIR principles</a> guide these decisions: making outputs Findable, Accessible, Interoperable, and Reusable.</p></li>
+</ul>
+<p>What follows are general practices. Your domain has specific conventions for file formats, folder structure, and metadata. <a href="https://rdmkit.elixir-europe.org/your_domain">RDMkit</a> provides detailed guidance organized by research area.<!-- include ref to discipline specific section when available --></p>
+</div>
+<!-- why is there a weird white space between the frame and the text in this call outbox?-->
+<div class="mx-4 callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Tip for research groups to streamline this process
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><strong>Create standard operating procedures within the team.</strong> For instance: where and when data back up should be made and in which file format, what project folder structure and conventions for naming files should be adopted, which metadata should routinely be acquired, what documentation should be created and when, and how and where a history of versions should be preserved.</li>
+<li><strong>Assign responsibilities.</strong> For developing such SOPs for a specific kind of project and for checking all members have implemented those SOPs at a specified time point in their project (e.g.&nbsp;hold a data quality validation meeting prior to starting data analyses, see <a href="#collect-manage-checklist" class="mark">Collect &amp; Manage Checklist</a>).</li>
+</ul>
+</div>
+</div>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-4-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-1" role="tab" aria-controls="tabset-4-1" aria-selected="true" href="">2.2.1. Storage</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-2" role="tab" aria-controls="tabset-4-2" aria-selected="false" href="">2.2.2. Organization</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-3" role="tab" aria-controls="tabset-4-3" aria-selected="false" href="">2.2.3. File Formats</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-4" role="tab" aria-controls="tabset-4-4" aria-selected="false" href="">2.2.4. Documentation</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-5" role="tab" aria-controls="tabset-4-5" aria-selected="false" href="">2.2.5. Standards</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-6-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-6" role="tab" aria-controls="tabset-4-6" aria-selected="false" href="">2.2.6. Version Control</a></li></ul>
+<div class="tab-content">
+<div id="tabset-4-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-4-1-tab">
+<p>This section covers storage for data you are actively collecting. Long-term archiving for sharing is covered in <a href="../../training/research-cycle-handbook/04-preserve-and-share.html" class="mark">4. Preserve &amp; Share</a>.</p>
+<p><br></p>
+<ul>
+<li><strong>Use institutional storage.</strong> LMU Munich provides storage such as <a href="https://syncandshare.lrz.de/login">LRZ Sync and Share</a> or <a href="https://doku.lrz.de/data-science-storage-10745685.html">LRZ DSS</a> with automated backups, access controls, and GDPR compliance. Additional options vary by department. Contact the <a href="https://www.en.ub.uni-muenchen.de/writing/research_data/research-data-management/index.html">Research Data Management team of the University Library</a> to find what is available to you. When choosing, consider how much data you will generate, who needs access, and whether your data includes personal information requiring stricter controls.</li>
+<li><strong>Follow the 3-2-1 backup rule.</strong> Keep three copies on two media types with one off-site. Designate one location as the master copy, the authoritative version everything else syncs from. Working with multiple “equal” copies creates version conflicts. Remember that syncing is not backup: if you delete a file from a synced folder, the deletion propagates everywhere. True backups preserve previous versions independently.</li>
+<li><strong>Control access from the start.</strong> Grant access only to those who need it. Use institutional sharing tools, not email attachments or personal cloud links. For collaborations, agree at the start who can read, who can edit, and who manages permissions. When team members leave, remove their access promptly.</li>
+<li><strong>Test your backups.</strong> A backup you cannot restore is not a backup. Test restoration at least once. Archive inactive data periodically and review access lists when team composition changes.</li>
+</ul>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>Avoid for Research Data
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Personal laptops as primary storage, external drives as only copy, consumer cloud services (Dropbox, Google Drive) for sensitive data, and USB drives except for temporary transport.</p>
+</div>
+</div>
+<div class="container my-4">
+<h4 class="fs-5 anchored">
+<i class="bi bi-mortarboard"></i> LEARN MORE
+</h4>
+<!-- row for Learn More section -->
+<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+<!--  card -->
+<div class="col">
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+    <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+        <div class="d-flex gap-2">
+            <div class="orc-card-tool-icon p-2 rounded">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvQdlBHTP2IOvBeJ_S8I9z9S2BX0Qqn0twjw&amp;s" class="img-fluid" alt="LRZ logo">
+            </div>
+        </div>
+        <span class="badge rounded-5 bg-success-subtle text-success align-self-start">Supported at LMU</span>
+    </div>
+    <h4 class="card-title anchored">LRZ Sync &amp; Share</h4>
+    <p class="card-text">Cloud storage service for LMU Munich</p>
+    <a href="https://syncandshare.lrz.de/login" class="stretched-link" target="_blank" rel="noopener"> </a>
+</div>
+</div>
+<div class="col">
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+    <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+        <div class="d-flex gap-2">
+            <div class="orc-card-tool-icon p-2 rounded">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvQdlBHTP2IOvBeJ_S8I9z9S2BX0Qqn0twjw&amp;s" class="img-fluid" alt="LRZ logo">
+            </div>
+        </div>
+    <span class="badge rounded-5 bg-success-subtle text-success align-self-start">Supported at LMU</span>
+    </div>
+    <h4 class="card-title anchored">LRZ DSS</h4>
+    <p class="card-text">Long-term archival storage for LMU Munich</p>
+    <a href="https://doku.lrz.de/data-science-storage-10745685.html" class="stretched-link" target="_blank" rel="noopener"> </a>
+</div>
+</div>
+<div class="col">
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+    <div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Open_Science_Framework_log_%28and_Center_for_Open_Science_logo%29.svg/3840px-Open_Science_Framework_log_%28and_Center_for_Open_Science_logo%29.svg.png" class="img-fluid" alt="OSF logo">
+    </div>
+<h4 class="card-title anchored">OSF</h4>
+<p class="card-text">Research project management platform including storage.</p>
+<a href="https://osf.io/" class="stretched-link" target="_blank" rel="noopener"> </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-4-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-2-tab">
+<p>Your folder structure and file naming conventions determine whether you and others can navigate your project months or years later. Establish these conventions at the start of your project and document them. When collaborating, ensure everyone follows the same system.</p>
+<p><br></p>
+<ul>
+<li><p><strong>Separate raw from processed data.</strong> Raw data should not be modified: once collected, these files should never be touched. All cleaning, data processing, transformations, and analyses happen on copies or through scripts in a separate folder. This preserves your ability to verify results or reprocess from the original source.</p></li>
+<li><p><strong>Develop a file naming convention.</strong> Good file names identify contents at a glance and sort correctly. Balance specificity with readability: too many elements make names unwieldy, too few make them ambiguous. Order elements from general to specific.</p>
+<ul>
+<li>Use underscores or hyphens to separate elements, never spaces or special characters (<code>? ! &amp; * % # @</code>)</li>
+<li>Use ISO 8601 dates (<code>YYYYMMDD</code>) so files sort chronologically</li>
+<li>Include version numbers with leading zeros (<code>v01</code>, <code>v02</code>) so <code>v10</code> sorts after <code>v09</code></li>
+<li>Use meaningful abbreviations and document what they mean</li>
+</ul></li>
+</ul>
+<p>A pattern like <code>YYYYMMDD_project_condition_type_v01.ext</code> places files in chronological order while preserving context. For example, <code>20240315_sleep-study_control_survey_v02.csv</code> immediately tells you when it was created, which project it belongs to, the experimental condition, data type, and revision. Document your convention in a README file stored next to your data files so collaborators can parse filenames without asking.</p>
+<p><br></p>
+<ul>
+<li><strong>Follow domain standards where they exist.</strong> Many fields have established organizational conventions that tools and collaborators expect. Using these means your data can immediately be integrated in existing analysis pipelines and reviewers recognize the structure. Search <a href="https://rdmkit.elixir-europe.org/your_domain">RDMkit</a> for standards in your domain.</li>
+</ul>
+<div class="container my-4">
+<h4 class="fs-5 anchored">
+<i class="bi bi-mortarboard"></i> LEARN MORE
+</h4>
+<!-- row for Learn More section -->
+<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+<!-- card -->
+<div class="col">
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+    <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+        <div class="d-flex gap-2">
+            <div class="orc-card-tool-icon p-2 rounded">
+            <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+            </div>
+        </div>
+        <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
+    </div>
+    <h4 class="card-title anchored">Data Organization</h4>
+    <p class="card-text">Folder structure and naming conventions. (30 min)</p>
+    <a href="https://lmu-osc.github.io/FAIR-Data-Management/data-organisation.html" class="stretched-link" target="_blank" rel="noopener"> </a>
+</div>
+</div>
+</div>
+<h4 class="fs-5 mt-3 anchored">
+<i class="bi bi-tools"></i> TOOLS &amp; RESOURCES
+</h4>
+<!-- row for Tools & Resources section -->
+<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+<div class="col">
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+    <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+        <div class="d-flex gap-2">
+            <div class="orc-card-tool-icon p-2 rounded">
+            <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+            </div>
+            <div class="orc-card-tool-icon p-2 rounded">
+            <img src="https://cdn.simpleicons.org/github" class="img-fluid" alt="GitHub logo">
+            </div>
+        </div>
+        <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tool</span>
+    </div>
+    <h4 class="card-title anchored">Research Project Template</h4> <!-- not sure why there is a white space after this title - can it be removed?-->
+    <p class="card-text">Project folder separating raw &amp; processed data, code, and outputs.</p>
+    <a href="https://github.com/lmu-osc/research-project-template" class="stretched-link" target="_blank" rel="noopener"></a>
+</div>
+</div>
+<div class="col">
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+    <div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
+        <img src="https://rdmkit.elixir-europe.org/assets/img/apple-touch-icon.png" class="img-fluid" alt="RDMkit logo">
+    </div>
+    <h4 class="card-title anchored">RDMkit</h4>
+    <p class="card-text">Domain-specific data management standards</p>
+    <a href="https://rdmkit.elixir-europe.org/your_domain" class="stretched-link" target="_blank" rel="noopener"></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-4-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-3-tab">
+<p>File format choices affect who can work with your data now and whether it remains readable in the future. Open formats have publicly documented specifications that anyone can implement, so many programs can read them and they remain accessible even if the original software disappears. Proprietary formats lock you into specific tools, complicate collaboration, and risk becoming unreadable if the company stops supporting them.</p>
+<p><br></p>
+<ul>
+<li><p><strong>Keep raw data in its original format.</strong> Whatever your instrument or source produces, preserve that original as your ground truth. Even if it is proprietary, you need it for verification and potential reprocessing.</p></li>
+<li><p><strong>Work in open formats.</strong> For analysis, convert to open formats like CSV, JSON, or plain text. This makes your workflow reproducible, enables collaboration across different tools, and ensures your data can be shared. If conversion loses important information (metadata, precision, structure), document what is lost and keep both versions.</p></li>
+<li><p><strong>Be careful with spreadsheets.</strong> Excel is convenient for data entry but causes real problems. It silently converts data: gene names like MARCH1 become dates, leading zeros in IDs disappear, and long numbers lose precision. Formatting (colors, merged cells) breaks machine-readability since scripts cannot see it. If you use spreadsheets for entry, keep them simple (one header row, one observation per row, no merged cells) and export to CSV immediately. Save CSVs with UTF-8 encoding to avoid character corruption when sharing across systems. For more guidance on spreadsheet best practices, see <a href="https://book.the-turing-way.org/reproducible-research/rdm/rdm-spreadsheets/">The Turing Way</a> and <a href="https://ucdavisdatalab.github.io/workshop_keeping_data_tidy/#spreadsheet-best-practices">UC Davis DataLab</a>.</p></li>
+<li><p><strong>Check domain recommendations.</strong> Your field likely has established conventions balancing openness with practical needs like performance or metadata preservation. Consult the <a href="https://rdmkit.elixir-europe.org/your_domain">RDMKit</a> to find conventions for your field.</p></li>
+</ul>
+<p><br></p>
+<p>Format issues often surface during quality control. The <a href="#sec-quality-control" class="mark">2.4. Quality Control</a> panel below covers validation checks that can catch encoding problems, unexpected conversions, and structural inconsistencies early.</p>
+<div class="container my-4">
+<h4 class="fs-5 mt-3 anchored">
+<i class="bi bi-tools"></i> TOOLS &amp; RESOURCES
+</h4>
+<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+<div class="col">
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+    <div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
+        <img src="https://rdmkit.elixir-europe.org/assets/img/apple-touch-icon.png" class="img-fluid" alt="RDMkit logo">
+    </div>
+    <h4 class="card-title anchored">RDMkit</h4>
+    <p class="card-text">Domain-specific file formats and conventions</p>
+    <a href="https://rdmkit.elixir-europe.org/your_domain" class="stretched-link" target="_blank" rel="noopener"></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-4-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-4-tab">
+<p>Without documentation, a dataset is just a collection of files. Six months from now, you will not remember what each column means, why certain values are missing, or how files relate to each other. Documentation makes your data usable by your future self, your collaborators, and any other researchers.</p>
+<p><br></p>
+<ul>
+<li><strong>Create a README file (as .md or .txt) early and update it as you go.</strong> Your README is the entry point to your project. Start it when you begin, not when preparing to publish. A good README answers the essential questions: who created the data, what it contains, when and where it was collected, why it was generated, how it was produced, and whether it can be reused. These answers let someone unfamiliar with your project understand and work with your data.</li>
+<li><strong>Create a data dictionary defining every variable.</strong> A data dictionary (or “codebook”) makes your dataset self-explanatory. For each variable, document what it measures, its data type, valid values, units of measurement, and how missing data is coded. Use appropriate missing codes to distinguish why data is absent (declined to answer, not applicable, technical failure) since this distinction matters for analysis.</li>
+</ul>
+<div class="container my-4">
+<h4 class="fs-5 anchored">
+<i class="bi bi-mortarboard"></i> LEARN MORE
+</h4>
+<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+<div class="col">
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+    <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+        <div class="d-flex gap-2">
+            <div class="orc-card-tool-icon p-2 rounded">
+            <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+            </div>
+        </div>
+        <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
+    </div>
+    <h4 class="card-title anchored">Principles of Data Documentation</h4>
+    <p class="card-text">Principles of README files and data dictionaries.</p>
+    <a href="https://lmu-osc.github.io/FAIR-Data-Management/documentation.html" class="stretched-link" target="_blank" rel="noopener"> </a>
+</div>
+</div>
+<div class="col">
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+    <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+        <div class="d-flex gap-2">
+            <div class="orc-card-tool-icon p-2 rounded">
+            <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+            </div>
+        </div>
+        <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
+    </div>
+<h4 class="card-title anchored">Data Documentation &amp; Validation</h4>
+<p class="card-text">Create READMEs, data dictionaries, and validation checks for your data. (1h)</p>
+<a href="https://lmu-osc.github.io/data-documentation-validation-R/" class="stretched-link" target="_blank" rel="noopener"> </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-4-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-5-tab">
+<p>Standards are community agreements on how to organize and describe research data. Using them means others in your field immediately understand your data. Three types of standards matter here:</p>
+<p><br></p>
+<ul>
+<li><p><strong>Organizational standards</strong> specify how to structure files and folders. Some fields have well-established conventions, like <a href="https://bids.neuroimaging.io/">BIDS</a> for neuroimaging data. When such standards exist, use them. Your data will work immediately with existing tools, and collaborators will recognize the structure without explanation. If no standard exists for your domain, create a consistent structure and document it in your README. See for instance our <a href="https://github.com/lmu-osc/research-project-template">research project template</a>.</p></li>
+<li><p><strong>Reporting guidelines</strong> specify what methodological details to document for different study types. The <a href="https://www.equator-network.org/">EQUATOR Network</a> maintains a searchable database of guidelines for clinical trials, observational studies, animal research, and many other study types. Following these ensures you capture everything others need to understand or replicate your work.</p></li>
+<li><p><strong>Metadata standards</strong> define what descriptive information to record and how to structure it. Scientific metadata describes how your data was produced: equipment specifications, acquisition parameters, protocols followed. This is distinct from discovery metadata (titles, keywords, descriptions) which you will prepare when sharing in <a href="../../training/research-cycle-handbook/04-preserve-and-share.html" class="mark">4. Preserve &amp; Share</a>. Your field has conventions for which parameters matter. <a href="https://fairsharing.org/">FAIRsharing</a> catalogs metadata standards by discipline.<!-- include ref to discipline specific section when available --></p></li>
+</ul>
+<p><br></p>
+<p><strong>Think of your data as a first-class research output.</strong> Comprehensive metadata transforms a project artifact into a reusable resource. Someone reanalyzing your data years later needs to understand exactly how it was produced.</p>
+<div class="container my-4">
+<h4 class="fs-5 mt-3 anchored">
+<i class="bi bi-tools"></i> TOOLS &amp; RESOURCES
+</h4>
+<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+<div class="col">
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+    <div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX4MByesrD50P8W0ZGn_W8RPYV8yzbtRx0RA&amp;s" class="img-fluid" alt="EQUATOR logo">
+    </div>
+    <h4 class="card-title anchored">EQUATOR Network</h4>
+    <p class="card-text">Comprehensive database of reporting guidelines.</p>
+    <a href="https://www.equator-network.org/reporting-guidelines/" class="stretched-link" target="_blank" rel="noopener"> </a>
+</div>
+</div>
+<div class="col">
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+    <div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
+        <img src="https://avatars.githubusercontent.com/u/29867987?s=280&amp;v=4" class="img-fluid" alt="FAIRsharing logo">
+    </div>
+    <h4 class="card-title anchored">FAIRsharing</h4>
+    <p class="card-text">Search by discipline to find metadata standards, reporting guidelines, and data policies for your field.</p>
+    <a href="https://fairsharing.org/" class="stretched-link" target="_blank" rel="noopener"> </a>
+</div>
+</div>
+<div class="col">
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+    <div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
+        <img src="https://rdmkit.elixir-europe.org/assets/img/apple-touch-icon.png" class="img-fluid" alt="RDMkit logo">
+    </div>
+    <h4 class="card-title anchored">RDMkit</h4>
+    <p class="card-text">Domain-specific metadata standards</p>
+    <a href="https://rdmkit.elixir-europe.org/your_domain" class="stretched-link" target="_blank" rel="noopener"></a>
+</div>
+</div>
+<!-- card -->
+<div class="col">
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+    <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+    <div class="d-flex gap-2">
+        <div class="orc-card-tool-icon p-2 rounded">
+            <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+            </div>
+        <div class="orc-card-tool-icon p-2 rounded">
+            <img src="https://cdn.simpleicons.org/github" class="img-fluid" alt="GitHub logo">
+        </div>
+    </div>
+    <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tool</span>
+    </div>
+<h4 class="card-title anchored">Research Project Template</h4> 
+<p class="card-text">Project folder separating raw &amp; processed data, code, and outputs.</p>
+<a href="https://github.com/lmu-osc/research-project-template" class="stretched-link" target="_blank" rel="noopener"></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-4-6" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-6-tab">
+<p>Version control system like Git tracks changes to files over time. You can see what changed, when, and why. You can revert to previous versions. Collaborators can work without overwriting each other.</p>
+<p><br></p>
+<ul>
+<li><p><strong>Git usually suffices for data files.</strong> Text-based formats (CSV, JSON, plain text) and smaller binary files work well in standard Git repositories. You get a complete history of changes and can share easily via GitHub or GitLab.</p></li>
+<li><p><strong>Use specialized tools for large or frequently changing binary files.</strong> Standard Git stores each version in full, so repositories become unwieldy with large datasets. Git LFS (Large File Storage) stores large files separately while keeping them tracked. Git-annex manages files across multiple storage locations. <a href="https://www.datalad.org/">DataLad</a> builds on git-annex and works with standard Git workflows.</p></li>
+</ul>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Difference between Git, GitHub and GitLab
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<!-- copied to 3.1.2. manually -->
+<ul>
+<li><p><strong>Git</strong> is a version control system that tracks changes in text files (e.g.&nbsp;CSV, plain text, R, Python). The Git software and your Git repositories should be, respectively, installed and located in your local environment (i.e.&nbsp;on your computer, not on a drive, see <a href="https://lmu-osc.github.io/Introduction-RStudio-Git-GitHub/">Git tutorial</a>).</p></li>
+<li><p><strong>GitHub</strong> is the most popular, free but proprietary and US-based cloud-based platform for software development with Git, providing collaboration features like pull requests and issues (see <a href="https://lmu-osc.github.io/Collaborative-RStudio-GitHub/">GitHub tutorial</a>). <strong>You should not have any sensitive data on GitHub even in a private repository.</strong></p></li>
+<li><p><strong>LRZ GitLab</strong> is a cloud-based hosting platform that works exactly the same as GitHub but is open source and is installed on the LRZ servers for LMU Munich and can therefore be considered secure when the repository is private.</p></li>
+</ul>
+<p>While your LRZ GitLab account is associated with your LMU Munich affiliation, your GitHub account can be associated with your private email, be included in your CV, and be used for public sharing of your data and code (see <a href="../../training/research-cycle-handbook/03-analyze-and-collaborate.html" class="mark">3. Analyze &amp; Collaborate</a> and <a href="../../training/research-cycle-handbook/04-preserve-and-share.html" class="mark">4. Preserve &amp; Share</a>).</p>
+<p><br></p>
+<p>In a version controlled workflow, you back up your local Git repositories on either GitHub or LRZ GitLab through a secure SSH connection (see <a href="https://lmu-osc.github.io/Collaborative-RStudio-GitHub/">GitHub tutorial</a>) and share access to your repositories with your collaborators through the cloud-based platform GitHub or LRZ GitLab.</p>
+</div>
+</div>
+<div class="container my-4">
+<h4 class="fs-5 anchored">
+<i class="bi bi-mortarboard"></i> LEARN MORE
+</h4>
+<!-- row for Learn More section -->
+<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+<!-- card -->
+<div class="col">
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+    <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+    <div class="d-flex gap-2">
+        <div class="orc-card-tool-icon p-2 rounded">
+            <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+        </div>
+        <div class="orc-card-tool-icon p-2 rounded">
+            <img src="https://www.svgrepo.com/show/303548/git-icon-logo.svg" class="img-fluid" alt="Git logo">
+        </div>
+    </div>
+    <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
+    </div>
+<h4 class="card-title anchored">Introduction to Git</h4>
+<p class="card-text">Learn Git basics integrated with RStudio (2h).</p>
+<a href="https://lmu-osc.github.io/Introduction-RStudio-Git-GitHub/" class="stretched-link" target="_blank" rel="noopener"> </a>
+</div>
+</div>
+<div class="col">
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+    <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+    <div class="d-flex gap-2">
+        <div class="orc-card-tool-icon p-2 rounded">
+            <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+        </div>
+        <div class="orc-card-tool-icon p-2 rounded">
+            <img src="https://cdn.simpleicons.org/github" class="img-fluid" alt="GitHub logo">
+        </div>
+    </div>
+    <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
+    </div>
+<h4 class="card-title anchored">Introduction to GitHub</h4>
+<p class="card-text">Connect to GitHub from Git within RStudio (1h).</p>
+<a href="https://lmu-osc.github.io/Collaborative-RStudio-GitHub/" class="stretched-link" target="_blank" rel="noopener"> </a>
+</div>
+</div>
+</div>
+<h4 class="fs-5 mt-3 anchored">
+<i class="bi bi-tools"></i> TOOLS &amp; RESOURCES
+</h4>
+<!-- row for Tools & Resources section -->
+<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+<!-- card -->
+<div class="col">
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+    <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+    <div class="d-flex gap-2">
+        <div class="orc-card-tool-icon p-2 rounded">
+            <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+        </div>
+        <div class="orc-card-tool-icon p-2 rounded">
+            <img src="https://cdn.simpleicons.org/gitlab" class="img-fluid" alt="GitLab logo">
+        </div>
+    </div>
+    <span class="badge rounded-5 bg-success-subtle text-success align-self-start">Supported at LMU</span>
+    </div>
+<h4 class="card-title anchored">LRZ Gitlab</h4>
+<p class="card-text">Institutional Git hosting for LMU Munich.</p>
+<a href="https://gitlab.lrz.de/" class="stretched-link" target="_blank" rel="noopener"></a>
+</div>
+</div>
+<div class="col">
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+    <div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
+        <img src="https://avatars.githubusercontent.com/u/8927200?s=280&amp;v=4" class="img-fluid" alt="GitLab icon">
+    </div>
+    <h4 class="card-title anchored">DataLad</h4>
+    <p class="card-text">Version control for large datasets</p>
+    <a href="https://www.datalad.org/" class="stretched-link" target="_blank" rel="noopener"></a>
+</div>
+</div>
+</div>
+</div>
+</div></div></div></details>
+<details class="orc-details-panel">
+<summary>
+<p><i class="bi bi-shield-lock"></i></p>
+<section id="sec-ethics-and-privacy" class="level3" data-number="2.3">
+<h3 data-number="2.3" class="anchored" data-anchor-id="sec-ethics-and-privacy"><span class="header-section-number">2.3</span> Ethics &amp; Privacy</h3>
+</section></summary>
+<p>Research involving human participants requires ethics approval and data protection compliance. In your ethics proposal (see <a href="../../training/research-cycle-handbook/01-plan-and-design.html#sec-legal-requirements" class="mark">1.2.3. Ethics</a>) you planned for safeguards for the people contributing to your research and you now need to implement them before or while collecting your data.</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true" href="">2.3.1. Informed Consent</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false" href="">2.3.2. Anonymization</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-3" role="tab" aria-controls="tabset-2-3" aria-selected="false" href="">2.3.3. GDPR Compliance</a></li></ul>
+<div class="tab-content">
+<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
+<p>Participants have the right to understand what they are agreeing to. Your consent form should explain the research purpose in plain language, describe what data you will collect and how you will protect it, specify who will have access and for how long, and make clear that participation is voluntary. See “<a href="https://www.uu.nl/en/research/research-data-management/guides/legal-considerations/how-to-write-an-informed-consent-form">How to write an informed consent form</a>” from the University to Utrecht and an <a href="https://osf.io/mgwk8/files/fvgsx">example template from the LMU Psychology Department</a>.</p>
+<p><br></p>
+<ul>
+<li><p><strong>Use tiered consent when you plan to share data.</strong> Some participants may consent to their data being used for your study but not shared publicly. Others may be comfortable with broader sharing. Giving options respects autonomy while maximizing what you can eventually share.</p></li>
+<li><p><strong>Store consent forms separately from data.</strong> The consent form links a name to participation. Keeping it with your data undermines any pseudonymization you apply.</p></li>
+</ul>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Tip for research groups:
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Maintain a centralized log of all ethics approvals, consent forms, and compliance certifications for easy reference by team members.</strong></p>
+</div>
+</div>
+<div class="container my-4">
+<h4 class="fs-5 mt-3 anchored">
+<i class="bi bi-tools"></i> TOOLS &amp; RESOURCES
+</h4>
+<!-- row for Tools & Resources section -->
+<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+<!-- card -->
+<div class="col">
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+    <div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
+        <img src="https://www.uu.nl//themes/custom/corp/src/images/favicons/apple-touch-icon.png" class="img-fluid" alt="University of Utrecht icon">
+    </div>
+    <h4 class="card-title anchored">How to write an informed consent form</h4>
+    <p class="card-text">University of Utrecht RDM guide.</p>
+    <a href="https://www.uu.nl/en/research/research-data-management/guides/legal-considerations/how-to-write-an-informed-consent-form" class="stretched-link" target="_blank" rel="noopener"></a>
+</div>
+</div>
+</div>
+</div>
+<!-- @Felix: can we add example consent form as resources or other resources on how to prepare such language ?-->
+</div>
+<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
+<p>Anonymization protects privacy and determines what you can share.</p>
+<p><br></p>
+<ul>
+<li><p><strong>Remove direct identifiers during collection.</strong> Names, addresses, ID numbers, photographs, email addresses. Replace these with codes.</p></li>
+<li><p><strong>Assess indirect identifiers carefully.</strong> A combination of age, location, profession, and a rare condition might identify someone even without their name. Timestamps reveal patterns. Free-text responses often contain identifying details participants did not intend to share. Follow our <a href="!-- link tba--">anonymization tutorial (TBA)</a> to learn to evaluate and implement anonymization techniques in R.</p></li>
+<li><p><strong>Generate synthetic data when full anonymization or real data sharing is not possible.</strong> Synthetic data is artificially generated data that can serve as a privacy-preserving alternative to sensitive datasets, enabling researchers to reproduce analyses, verify findings, and initiate model development when access to real data is restricted. Sharing synthetic data together with code, rather than sharing no data at all, increases the utility of your research (see <a href="../../training/research-cycle-handbook/04-preserve-and-share.html" class="mark">4. Preserve &amp; Share</a>).</p></li>
+</ul>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Distinction between pseudonymization and anonymization
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li><p><strong>Pseudonymization</strong> replaces identifiers with codes while retaining a key that links back to individuals. Pseudonymized data is still personal data under GDPR because re-identification is possible.</p></li>
+<li><p><strong>Anonymization</strong> removes all possibility of re-identification. Only truly anonymized data falls outside GDPR scope. Achieving this is harder than it appears, especially with rich datasets.</p></li>
+</ul>
+</div>
+</div>
+<div class="container my-4">
+<h4 class="fs-5 anchored">
+<i class="bi bi-mortarboard"></i> LEARN MORE
+</h4>
+<!-- row for Learn More section -->
+<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+<!--  card -->
+<div class="col">
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+  <div class="d-flex gap-2">
+    <div class="orc-card-tool-icon p-2 rounded">
+      <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+    </div>
+  </div>
+  <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
+</div>
+<h4 class="card-title anchored">TBA: Data Anonymization</h4> <!-- edit when available -->
+<p class="card-text">Implement data anonymization techniques in R. (X h)</p> <!-- edit when available -->
+<a href="#" class="stretched-link" rel="noopener"></a><!-- Add link when available -->
+</div>
+</div>
+<div class="col">
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+  <div class="d-flex gap-2">
+    <div class="orc-card-tool-icon p-2 rounded">
+      <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+    </div>
+  </div>
+  <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
+</div>
+<h4 class="card-title anchored">Synthetic Data</h4>
+<p class="card-text">Synthetic data creation in R to balance utility and privacy when sharing data. (3h)</p>
+<a href="https://lmu-osc.github.io/synthetic-data-tutorial/" class="stretched-link" target="_blank" rel="noopener"> </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-2-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-3-tab">
+<p>Research at LMU Munich must comply with EU data protection regulations. The core principles: have a lawful basis for processing personal data (usually consent or legitimate research interest), use data only for stated purposes, collect only what you need, delete data when you no longer need it, and protect it against unauthorized access.</p>
+<p><br></p>
+<p><strong>In practice:</strong> document your lawful basis, include data protection language in consent forms, use institutional storage rather than personal cloud services, restrict access to those who need it, and plan when and how you will delete data.</p>
+<p><br></p>
+<p>For data protection guidance, contact the <a href="https://www.lmu.de/en/about-lmu/structure/organizational-structure/officers-and-representatives/data-protection-officer.html">LMU Data Protection Officer</a> or the <a href="https://www.en.ub.uni-muenchen.de/writing/research_data/research-data-management/index.html">Research Data Management team of the University Library</a>.</p>
+</div>
+</div>
+</div>
+</details>
+<details class="orc-details-panel">
+<summary>
+<p><i class="bi bi-check2-square"></i></p>
+
+<section id="sec-quality-control" class="level3" data-number="2.4">
+<h3 data-number="2.4" class="anchored" data-anchor-id="sec-quality-control"><span class="header-section-number">2.4</span> Quality Control</h3>
+<!-- Reema: not sure tabs are needed here, could be h5 no anchor titles and ::: {.ms-1} block for lists, this is all done through the same tutorial, it seems there are several concepts that are the same just phrased differently, could be merged coherently to avoid redundancy and consolidate the structure and order of these concepts-->
+</section></summary>
+<p>Quality control catches problems before they propagate into your analysis. The practices here ensure your data is trustworthy and your exclusions are defensible.</p>
+<p><strong>Define criteria before looking at your data.</strong> This prevents unconscious bias in what you keep and exclude, and demonstrates that your decisions are principled rather than convenient (see <a href="../../training/research-cycle-handbook/01-plan-and-design.html#sec-study-design-analysis-plan" class="mark">1.4. Study Design &amp; Analysis Plan</a>).</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true" href="">2.4.1. Validation</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-2" role="tab" aria-controls="tabset-3-2" aria-selected="false" href="">2.4.2. Cleaning</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-3" role="tab" aria-controls="tabset-3-3" aria-selected="false" href="">2.4.3. Exclusions</a></li></ul>
+<div class="tab-content">
+<div id="tabset-3-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-3-1-tab">
+<p>Validation checks whether your data meets specifications. For example, values can be verified to fall within valid ranges (e.g., age ≥ 0), required fields can be checked for missing entries, categorical variables can be restricted to allowed levels (e.g., “yes/no”), dates can be validated for proper format, and cross-variable constraints can be enforced (e.g., discharge date ≥ admission date). Run checks during collection to catch problems immediately, after collection for systematic review, and after any processing to verify transformations worked correctly.</p>
+<p><br></p>
+<ul>
+<li><p><strong>Automate what you can.</strong> Check that data types are correct, values fall within expected ranges, required fields are populated, and formats are consistent. These checks should run automatically and flag problems for review.</p></li>
+<li><p><strong>Catch what automation misses with manual review.</strong> Sample your data and verify it against the source. Inspect outliers to determine whether they are errors or genuine extreme values. Look for suspicious patterns: survey responses that alternate predictably, reaction times that are impossibly fast.</p></li>
+</ul>
+<div class="container my-4">
+<h4 class="fs-5 anchored">
+<i class="bi bi-mortarboard"></i> LEARN MORE
+</h4>
+<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+<!-- card -->
+<div class="col">
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+  <div class="d-flex gap-2">
+    <div class="orc-card-tool-icon p-2 rounded">
+      <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+    </div>
+  </div>
+  <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
+</div>
+<h4 class="card-title anchored">Data Documentation &amp; Validation</h4>
+<p class="card-text">Create validation rules and automated checks for your research data. (1h)</p>
+<a href="https://lmu-osc.github.io/data-documentation-validation-R/" class="stretched-link" target="_blank" rel="noopener"> </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-3-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-2-tab">
+<p>Data cleaning handles errors, inconsistencies, and missing values. The cardinal rule: never modify your raw data. All cleaning happens on copies.</p>
+<p><br></p>
+<ul>
+<li><p><strong>Correct unambiguous errors.</strong> Clear typos, obvious data entry mistakes. For ambiguous cases, flag them for review rather than making assumptions. Document your reasoning for every judgment call.</p></li>
+<li><p><strong>Handle missing data consistently.</strong> Decide on a coding scheme (NA, -999, blank) and apply it uniformly. When you know why data is missing, record that information. It may matter for analysis.</p></li>
+<li><p><strong>Investigate outliers before acting.</strong> An extreme value might be an error, or it might be genuine. Understand the cause before deciding whether to remove, transform, or retain it.</p></li>
+<li><p><strong>Write cleaning as a script.</strong> A script documents exactly what you did and lets you reproduce it. Keep a decision log for choices that cannot be automated.</p></li>
+</ul>
+</div>
+<div id="tabset-3-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-3-tab">
+<p>Exclusion criteria specify which data points will be removed from analysis and why. Define these before you see your results (see <a href="../../training/research-cycle-handbook/01-plan-and-design.html#sec-study-design-analysis-plan" class="mark">1.4. Study Design &amp; Analysis Plan</a>).</p>
+<p><br></p>
+<ul>
+<li><p><strong>Review common exclusion criteria.</strong> Technical failures (equipment malfunction, incomplete recording), protocol violations (wrong procedure followed, participant did not comply), quality thresholds (too much missing data, failed attention checks), and participant criteria (did not meet stated inclusion criteria).</p></li>
+<li><p><strong>Document everything.</strong> Record criteria before analysis begins. Report how many data points were excluded for each criterion in a log with the date and reviewer’s identity. Plan sensitivity analyses comparing results with and without exclusions to show your findings are robust.</p></li>
+</ul>
+</div>
+</div>
+</div>
+</details>
+
+<section id="collect-manage-checklist" class="level2 unnumbered orc-gradient-box collect-manage-checklist">
+<h2 class="unnumbered anchored" data-anchor-id="collect-manage-checklist"><i class="bi bi-card-checklist checklist-icon"></i> Collect &amp; Manage Checklist</h2>
+<p>To complete before conducting a data validation meeting with members of the project. Not all items are relevant for all fields of research or study types.</p>
+<div class="row row-cols-1 row-cols-lg-2 g-4">
+<div class="col">
+<p><strong>Throughout Data Collection</strong></p>
+<ul class="task-list">
+<li><label><input type="checkbox">Document data collection procedures</label></li>
+<li><label><input type="checkbox">Maintain organized directory structure</label></li>
+<li><label><input type="checkbox">Follow file naming conventions</label></li>
+<li><label><input type="checkbox">Back up data regularly (3-2-1 rule)</label></li>
+<li><label><input type="checkbox">Update data dictionary as needed</label></li>
+<li><label><input type="checkbox">Version control data and scripts</label></li>
+<li><label><input type="checkbox">Apply data (pseudo)anonymization procedures</label></li>
+<li><label><input type="checkbox">Apply quality control procedures</label></li>
+</ul>
+</div>
+<div class="col">
+<p><strong>Before Moving to Analysis</strong></p>
+<ul class="task-list">
+<li><label><input type="checkbox">All raw data backed up in multiple locations</label></li>
+<li><label><input type="checkbox">Data (pseudo)anonymized</label></li>
+<li><label><input type="checkbox">README files document project organization</label></li>
+<li><label><input type="checkbox">Data dictionary defines all variables</label></li>
+<li><label><input type="checkbox">Version control repository up to date</label></li>
+<li><label><input type="checkbox">Data quality control completed and documented</label></li>
+</ul>
+</div>
+</div>
+<div class="d-flex justify-content-center mt-4 orc-checklist-download phase-2">
+<p><a href="assets/checklists/02-Collect-Manage-Checklist.docx" class="btn btn-outline-secondary btn-sm">Download checklist <i class="bi bi-download"></i></a> <!-- need to update manually the  downloadable file with checklist in word doc--></p>
+</div>
+</section>
+
+
+</main></div>
+
+
+
+
+ <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/lmu-osc\.github\.io\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+ <!-- /content -->
+<footer class="osc-footer-card text-white py-5">
+  <div class="container">
+    <div class="row gy-4">
+      <div class="col-12 col-md-6 col-lg-3 ">
+        <h4 class="fw-bold fs-5 fs-lg-4 text-white">
+          Ludwig-Maximilians-Universität<br>
+          LMU Open Science Center
+        </h4>
+        <p class="mb-0 mt-1 fw-normal fs-5">
+          Leopoldstr. 13<br>
+          80802 München
+        </p>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-3">
+        <h4 class="fw-semibold fs-5 text-white">Contact</h4>
+        <ul class="list-unstyled mt-2 mb-0">
+          <li>
+            <a href="mailto:felix.schoenbrodt@psy.lmu.de" class="text-white text-decoration-underline">
+              <i class="bi bi-envelope me-1"></i>
+              Prof. Dr. Felix Schönbrodt (Managing Director)
+            </a>
+          </li>
+          <li>
+            <a href="mailto:malika.ihle@lmu.de" class="text-white text-decoration-underline">
+              <i class="bi bi-envelope me-1"></i>
+              Dr. Malika Ihle (Coordinator) 
+            </a>
+          </li>
+          <li>
+            <a href="mailto:osc@lmu.de" class="text-white text-decoration-underline">
+              <i class="bi bi-envelope me-1"></i>
+              OSC team
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-3">
+        <h4 class="fw-semibold fs-5 text-white">Join Us</h4>
+        <ul class="list-unstyled mt-2 mb-0">
+          <li>
+            <a href="https://lists.lrz.de/mailman/listinfo/lmu-osc" target="_blank" class="text-white text-decoration-underline" aria-label="Subscribe to our announcement list (opens in new window)">
+              Subscribe to our announcement list
+            </a>
+          </li>
+          <li>
+            <a href="../../about/join-us.html" target="_blank" class="text-white text-decoration-underline" aria-label="Become a member (opens in new window)">
+              Become a member
+            </a>
+          </li>
+          <li>
+            <a href="https://matrix.to/#/#lmu-open-science-center:matrix.lmu.de" target="_blank" class="text-white text-decoration-underline" aria-label="Chat with us on Matrix (opens in new window)">
+              Chat with us on Matrix
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-3 d-flex align-items-start gap-3 osc-footer-socials">
+        <a href="https://github.com/lmu-osc" target="_blank" class="text-white fs-3" aria-label="LMU Open Science Center on GitHub (opens in new window)">
+          <i class="bi bi-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/company/lmu-open-science-center/" target="_blank" class="text-white fs-3" aria-label="LMU Open Science Center on LinkedIn (opens in new window)">
+          <i class="bi bi-linkedin"></i>
+        </a>
+        <a href="https://bsky.app/profile/lmu-osc.bsky.social" target="_blank" class="text-white fs-3" aria-label="LMU Open Science Center on Bluesky (opens in new window)">
+          <i class="bi bi-bluesky"></i>
+        </a>
+        <a href="https://scicomm.xyz/@lmu_osc" target="_blank" class="text-white fs-3" aria-label="LMU Open Science Center on Mastodon (opens in new window)">
+          <i class="bi bi-mastodon"></i>
+        </a>
+      </div>
+
+    </div>
+
+    <hr class="my-4 border-light">
+
+    <div class="d-flex flex-wrap gap-3 small">
+      <a href="../../footer/imprint.html" class="text-white text-decoration-underline">Imprint</a>
+      <span aria-hidden="true">|</span>
+      <a href="../../footer/privacy.html" class="text-white text-decoration-underline">Privacy Policy</a>
+      <span aria-hidden="true">|</span>
+      <a href="../../footer/accessibilty.html" class="text-white text-decoration-underline">Accessibility</a>
+    </div>
+
+  </div>
+</footer>
+
+
+
+
+</body></html>
