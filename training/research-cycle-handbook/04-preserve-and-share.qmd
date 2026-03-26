@@ -996,14 +996,11 @@ In practice, we recommend to follow the process of version releases illustrated 
 
 <br>
 
-```{=html}
+
 <div class="d-flex flex-wrap gap-4 align-items-start justify-content-center">
-<div class="flex-shrink-0" style="width:fit-content;">
-```
 
 ```{mermaid}
 %%| label: fig:preprint-versions
-%%| fig-cap: Versioned releases of a manuscript during the publication process.
 flowchart TD
   A["Manuscript Draft (Preprint v0.0)"] -->|community feedback| B["Submitted Manuscript (Preprint v1.0)"]
   B -->|journal peer review| C["Revised Manuscript (Preprint v2.0)"]
@@ -1011,10 +1008,8 @@ flowchart TD
     D -->|journal copy-editing and formatting| E["Published Article"]
 ```
 
-```{=html}
 </div>
-</div>
-```
+
 
 <br>
 
