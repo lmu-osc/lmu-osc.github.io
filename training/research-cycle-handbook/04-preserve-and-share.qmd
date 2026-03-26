@@ -994,13 +994,26 @@ In practice, we recommend to follow the process of version releases illustrated 
 
 <!-- include figure in a left column (by the way I like the classic look but don't know here to add that information), and the paragraph above in a right column?-->
 
+<br>
+
+```{=html}
+<div class="d-flex flex-wrap gap-4 align-items-start justify-content-center">
+<div class="flex-shrink-0" style="width:fit-content;">
+```
 
 ```{mermaid}
-flowchart TB
+%%| label: fig:preprint-versions
+%%| fig-cap: Versioned releases of a manuscript during the publication process.
+flowchart TD
   A["Manuscript Draft (Preprint v0.0)"] -->|community feedback| B["Submitted Manuscript (Preprint v1.0)"]
   B -->|journal peer review| C["Revised Manuscript (Preprint v2.0)"]
   C -->|journal acceptance| D["Postprint (Preprint v3.0)"]
     D -->|journal copy-editing and formatting| E["Published Article"]
+```
+
+```{=html}
+</div>
+</div>
 ```
 
 <br>
