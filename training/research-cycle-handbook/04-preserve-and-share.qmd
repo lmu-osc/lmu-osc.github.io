@@ -14,6 +14,7 @@ format:
   html:
     mermaid: 
       look: classic
+    mermaid-format: png
 ---
 
 
@@ -993,7 +994,7 @@ In practice, we recommend to follow the process of version releases illustrated 
 
 <!-- include figure in a left column (by the way I like the classic look but don't know here to add that information), and the paragraph above in a right column?-->
 
-<!-- 
+
 ```{mermaid}
 flowchart TB
   A["Manuscript Draft (Preprint v0.0)"] -->|community feedback| B["Submitted Manuscript (Preprint v1.0)"]
@@ -1002,7 +1003,7 @@ flowchart TB
     D -->|journal copy-editing and formatting| E["Published Article"]
 ```
 
-<br> -->
+<br>
 
 To get support for [Open Access LMU](https://epub.ub.uni-muenchen.de/), the LMU Munich institutional repository for articles and books, contact the [University Library Open Access team](https://www.en.ub.uni-muenchen.de/writing/open-access-publishing/oa-auxiliary-page/index.html).
 
@@ -1314,31 +1315,3 @@ Not all items are relevant for all fields of research or study types.
 :::
 
 :::
-
-
-
-
-
-<details class="orc-details-panel">
-
-<summary><i class="bi bi-unlock2"></i> 
-
-### Testing section
-
-</summary>
-
-::: {.panel-tabset}
-
-#### Testing header
-
-```{mermaid}
-flowchart TB
-  A["Manuscript Draft (Preprint v0.0)"] -->|community feedback| B["Submitted Manuscript (Preprint v1.0)"]
-  B -->|journal peer review| C["Revised Manuscript (Preprint v2.0)"]
-  C -->|journal acceptance| D["Postprint (Preprint v3.0)"]
-    D -->|journal copy-editing and formatting| E["Published Article"]
-```
-
-:::
-
-</details>
