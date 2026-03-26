@@ -7,6 +7,22 @@ format:
   html:
     page-layout: article
     anchor-sections: false
+
+citation:
+  author:
+    - family: Ihle Malika
+      given: Malika
+      affiliation: "LMU Open Science Center, LMU Munich"
+    - family: Gupta Reema
+      given: Reema
+      affiliation: "LMU Open Science Center, LMU Munich"
+    - family: Schönbrodt Felix
+      given: Felix
+      affiliation: "LMU Open Science Center, LMU Munich"
+  type: article-journal
+  container-title: "Journal of Data Science Software"
+  doi: "10.23915/reprodocs.00010"
+  url: https://example.com/summarizing-output
 ---
 
 #### What is this handbook?
