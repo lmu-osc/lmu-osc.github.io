@@ -47,8 +47,7 @@ Checkpoints: Repository & Code Peer-Review + Result Presentation
 
 Data processing and analysis should be reproducible – independent of which software, programming language, or operating system you use. 
 This is best achieved by choosing automated **script-based workflows** (over manual point-and-click procedures), and supported by **adequate documentation** and shared code that allows others to regenerate results. 
-Because analysis scripts are inherently iterative and evolve through corrections and refinements, automation is **essential for both reproducibility and efficiency**. 
-<!-- TODO: I do not understand the logic of the last sentence -->
+Because analysis scripts are run repeatedly, due to iterative development through corrections and refinements, automation is **essential for both reproducibility and efficiency**. 
 This section outlines a recommended workflow for R users.
 
 ::: {.panel-tabset}

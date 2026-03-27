@@ -247,6 +247,46 @@ When data comes from instruments, sensors, or APIs (Application Programming Inte
 
 :::
 
+#### 2.1.4. Field and lab work
+
+Field and sometimes lab researchers have to work with analogue notebooks first, and use temporary storage solution for images and video-recordings.
+
+<br>
+
+- **Digitalize your data soon after data collection**, e.g. using data entry form from a relational database such as [MySQL](https://www.mysql.com/)
+- **Create automatic validation checks** for data entry so e.g. values outside of expected range get immediately identified (see [2.4. Quality control](#sec-quality-control){.mark})
+- **Transfer digital data** (e.g. pictures, video recordings) from temporary storage solutions (e.g. camera storage) to permanent storage solutions (see [2.1.1. Storage](#sec-data-management){.mark})
+- **Check your data entries**, e.g. after a day, to correct possible mistakes in transcription 
+- **Keep analogue records** to correct data entries errors at the end of the season or experiment 
+
+::: {.container .my-4 }
+
+<h4 class="fs-5 mt-3"><i class="bi bi-tools"></i> TOOLS & RESOURCES</h4>
+<!-- row for Tools & Resources section -->
+
+::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
+
+<!-- card -->
+::: {.col}
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+  <div class="d-flex gap-2">
+    <div class="orc-card-tool-icon p-2 rounded">
+      <img src="https://www.svgrepo.com/show/303251/mysql-logo.svg" class="img-fluid" alt="MySQL icon">
+    </div>
+  </div>
+</div>
+<h4 class="card-title">MySQL</h4>
+<p class="card-text">Open source relational database software</p>
+<a href="https://www.mysql.com/" class="stretched-link" target="_blank" rel="noopener"></a>
+</div>
+```
+:::
+
+:::
+
+:::
 
 :::
 
