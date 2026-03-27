@@ -79,7 +79,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-9e9c3b858c0bd5de9b38ddcbbfd0ed72.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-bb68dbcc093419f15c378b4f6f2d7f1d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -480,7 +480,7 @@ Checkpoints: Repository &amp; Code Peer-Review + Result Presentation
 <section id="sec-data-processing-analysis" class="level3" data-number="3.1">
 <h3 data-number="3.1" class="anchored" data-anchor-id="sec-data-processing-analysis"><span class="header-section-number">3.1</span> Data Processing &amp; Analysis</h3>
 </section></summary>
-<p>Data processing and analysis should be reproducible, independent of software, programming language, or operating system. This is best achieved by favoring automated <strong>script-based workflows</strong> (over manual point-and-click procedures), and supported by <strong>adequate documentation</strong> and shared code that allows others to regenerate results. Because analysis scripts are inherently iterative and evolve through corrections and refinements, automation is <strong>essential for both reproducibility and efficiency</strong>. This section outlines a recommended workflow for R users.</p>
+<p>Data processing and analysis should be reproducible – independent of which software, programming language, or operating system you use. This is best achieved by choosing automated <strong>script-based workflows</strong> (over manual point-and-click procedures), and supported by <strong>adequate documentation</strong> and shared code that allows others to regenerate results. Because analysis scripts are inherently iterative and evolve through corrections and refinements, automation is <strong>essential for both reproducibility and efficiency</strong>. <!-- TODO: I do not understand the logic of the last sentence --> This section outlines a recommended workflow for R users.</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true" href="">3.1.1. Programming</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false" href="">3.1.2. Version Control</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-3" role="tab" aria-controls="tabset-2-3" aria-selected="false" href="">3.1.3. Computational Environment Management</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-4" role="tab" aria-controls="tabset-2-4" aria-selected="false" href="">3.1.4. Documentation</a></li></ul>
 <div class="tab-content">
@@ -493,6 +493,7 @@ Checkpoints: Repository &amp; Code Peer-Review + Result Presentation
 <ul>
 <li><strong>Define your own functions</strong> rather than copy pasting pieces of code which makes it hard to maintain error-free. Functions are ‘self-contained’ sets of commands that accomplish a specific task. They usually ‘take in’ data or parameter values (these inputs are called ‘function arguments’), process them, and ‘return’ a result. See our <a href="https://lmu-osc.github.io/introduction-to-R/">R tutorial</a> and <a href="https://lmu-osc.github.io/Introduction-Simulations-in-R/">data simulation tutorial</a> for examples.</li>
 <li><strong>Set seeds for random processes</strong> to enable exact replication. A seed is a number used to initialize a pseudorandom number generator algorithm. It serves as the starting point for a sequence of numbers that appear random but are actually produced by a deterministic, fixed algorithm. See e.g.&nbsp;our <a href="https://lmu-osc.github.io/Introduction-Simulations-in-R/">data simulation tutorial</a> for examples.</li>
+<li><strong>Follow accessibility standards when generating outputs</strong> (e.g.&nbsp;use colorblind-friendly color scheme for figures)</li>
 <li><strong>Follow a style guide</strong> to increase readability. Use automated styling tools (e.g.&nbsp;<code>styler</code>, <code>lintR</code>).</li>
 </ul></li>
 <li><strong>Use LRZ Compute Cloud for data-intensive analyses</strong>. <a href="https://www.lrz.de/en/technologies/supercomputing">LRZ Supercomputing</a> provide virtual machines, high-performance computing, and storage to researchers of LMU Munich.</li>
@@ -602,7 +603,7 @@ Checkpoints: Repository &amp; Code Peer-Review + Result Presentation
 <p>In a version controlled workflow, you back up your local Git repositories on the cloud-based platforms GitHub or LRZ GitLab and share access to the online version of your repositories with your collaborators.</p>
 <p><br></p>
 <ul>
-<li><p><strong>Learn to create git branches to collaborate on a same piece of code in a unique repository.</strong> i.e.&nbsp;temporary copies where you can work without breaking the original source code, which you later merge back to the main branch (see <a href="https://lmu-osc.github.io/training/reproducible-processes/advanced-git.html">Advanced Git tutorial</a>).</p></li>
+<li><p><strong>Learn to create git branches to collaborate on the same piece of code in a unique repository.</strong> i.e.&nbsp;temporary copies where you can work without breaking the original source code, which you later merge back to the main branch (see <a href="https://lmu-osc.github.io/training/reproducible-processes/advanced-git.html">Advanced Git tutorial</a>).</p></li>
 <li><p><strong>Maintain efficient communication to coordinate collaborative work.</strong> GitHub or GitLab facilitate collaboration through “issues” (a precise description of something to fix), “discussions” (asynchronous thinking through figuring out how to resolve a problem), and can still very well resolve “conflicts” (i.e.&nbsp;collaborators wanting to merge changes on the exact same line of script). To complement this, LMU Munich offers <a href="https://www.lmu.de/de/die-lmu/struktur/zentrale-universitaetsverwaltung/informations-und-kommunikationstechnik-dezernat-vi/it-servicedesk/zentrale-it-angebote/lmu-chat-matrix/">LMU chat (Matrix)</a>, a secured open source chat service with all LMU members on which you can also invite external collaborators.</p></li>
 </ul>
 <p><br></p>
@@ -650,7 +651,7 @@ Important
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>Tip for research groups:
+<span class="screen-reader-only">Tip</span>Tips for research groups:
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -851,7 +852,7 @@ Important
 <ul>
 <li><strong>Create a README (e.g.&nbsp;a .md or .txt file) early and update it as you go.</strong> Your README is the entry point to your project. A good README answers the essential questions: who created the script, what it contains, how they relate to other scripts and in which order scripts should be run, what the dependencies of the project are, how to obtain/access the input data, whether the code can be reused.</li>
 <li><strong>Annotate your code explaining <em>why</em> you made a decision.</strong> All parameter values used as input for a function, or other decisions, should be justified minimally as comments in your code to later be included in your manuscript. <strong>Do not include sensitive information such as credentials or name of excluded patient as comments in your code!</strong></li>
-<li><strong>Update your data dictionary and README files.</strong> Your data documentation should be updated to include all data exclusion, change in range of possible values, ect. (see <a href="../../training/research-cycle-handbook/02-collect-and-manage.html#sec-data-management" class="mark">2.2.4. Documentation</a>).</li>
+<li><strong>Update your data dictionary and README files.</strong> Your data documentation should be updated to include all data exclusion, change in range of possible values, etc. (see <a href="../../training/research-cycle-handbook/02-collect-and-manage.html#sec-data-management" class="mark">2.2.4. Documentation</a>).</li>
 </ul>
 <p>Example README to allow team members to review your code:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu"># Analysis of Treatment Effects</span></span>
@@ -934,16 +935,16 @@ Important
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">3.2.1. Results reproducibility</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">3.2.2. Reporting guidelines</a></li></ul>
 <div class="tab-content">
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
-<p>A practical way to make results and analysis decisions transparent and traceable is to use <strong>literate programming</strong>, which <strong>combines narrative text</strong> explaining the logic of the analysis with <strong>executable code</strong> that performs data processing and statistical procedures. <strong>When the document is compiled, outputs such as tables, figures, and references are generated directly from the code and update automatically whenever the code changes, ensuring that the reported methods and results remain consistent with the analysis.</strong> This eliminates repeated copy-and-paste and reduces the risk of uncertainty about which version of, for example, a figure is actually included in the manuscript.</p>
+<p>A practical way to make results and analysis decisions transparent and traceable is to use <strong>literate programming</strong>, which <strong>combines narrative text</strong> explaining the logic of the analysis with <strong>executable code</strong> that performs data processing and statistical procedures. <strong>When the document is compiled, outputs such as tables, figures, and references are generated directly from the code and updated automatically whenever the code changes, ensuring that the reported methods and results remain consistent with the analysis.</strong> This eliminates repeated copy-and-paste and reduces the risk of uncertainty about which version of, for example, a figure is actually included in the manuscript.</p>
 <p><br></p>
-<p>For users of R, Python, and Julia, <strong>Quarto</strong> has become the standard tool for creating reproducible reports, superseding R Markdown and enabling <strong>rendering to formats such as HTML, PDF, and Word</strong> (see our <a href="https://lmu-osc.github.io/introduction-to-Quarto/">Quarto tutorial</a>).</p>
+<p>For users of R, Python, and Julia, <strong>Quarto</strong> has become the standard tool for creating reproducible reports, superseding R Markdown and enabling <strong>rendering to formats such as HTML, PDF, and Microsoft Word</strong> (see our <a href="https://lmu-osc.github.io/introduction-to-Quarto/">Quarto tutorial</a>).</p>
 <p><br></p>
 <h5 class="fs-5 no-anchor">
 Reproducible Analysis Report: The Minimum Standard for Computational Reproducibility
 </h5>
 <p><br></p>
 <ul>
-<li><strong>Create an analyses report with Quarto.</strong> To make your results reproducible, you should provide the analysis code that creates the results of the manuscript with explanations for each of the steps. Quarto is an ideal tool for such purpose (see <a href="https://lmu-osc.github.io/introduction-to-Quarto/">Quarto tutorial</a>). Your analysis report should contain your research question, data loading instructions, preprocessing steps, statistical procedures, tables and figures, session info and software versions (in the report itself or in your README).</li>
+<li><strong>Create an analysis report with Quarto.</strong> To make your results reproducible, you should provide the analysis code that creates the results of the manuscript with explanations for each of the steps. Quarto is an ideal tool for this (see <a href="https://lmu-osc.github.io/introduction-to-Quarto/">Quarto tutorial</a>). Your analysis report should contain your research question, data loading instructions, preprocessing steps, statistical procedures, tables and figures, session info and software versions (in the report itself or in your README).</li>
 </ul>
 <p>This will facilitate your own revisions, code-review by your team, <strong>reproducibility checks</strong> that some journals conduct as part of peer-review, and verification of results reproducibility by other researchers. The code repository can be published with simulated, synthetic, or real data, depending on the project, together with the respective article (see <a href="../../training/research-cycle-handbook/04-preserve-and-share.html#sec-open-source-code" class="mark">4.2. Open Source Code</a>).</p>
 <p><br></p>
@@ -968,8 +969,8 @@ Reproducible Presentations &amp; Websites: Further Reproducible Outputs for Outr
 <p>Using the same Quarto environment, you can also:</p>
 <p><br></p>
 <ul>
-<li><p><strong>Convert your minimal analyses report into a reproducible presentation.</strong> To get feedback on your analyses, you can output a report into a slide presentation with presenter notes. Slides remain dynamically linked to the underlying analyses. Any modification to the data or code automatically propagates to tables, visualizations, and reported results, eliminating inconsistencies between presentation and computation.</p></li>
-<li><p><strong>Create reproducible website to support your research or teaching</strong>. Quarto also enables the creation of reproducible and interactive websites by linking content directly to data, code, and analyses within a unified publishing workflow. Pages, figures, tables, and teaching materials update automatically when the underlying sources change, ensuring consistency across outputs. This approach simplifies maintenance, and allows websites to evolve as living, version-controlled resources rather than static collections of files. Example of website, interactive reports and other formats can be explored on the <a href="https://quarto.org/docs/gallery/">Quarto Gallery</a>. This website and our self-paced tutorials are all Quarto websites.</p></li>
+<li><p><strong>Convert your analyses report into a reproducible presentation.</strong> To get feedback on your analyses, you can output a report into a slide presentation with presenter notes. Slides remain dynamically linked to the underlying analyses. Any modification to the data or code automatically propagates to tables, visualizations, and reported results, eliminating inconsistencies between presentation and computation.</p></li>
+<li><p><strong>Create reproducible website to support your research or teaching</strong>. Quarto also enables the creation of reproducible and interactive websites by linking content directly to data, code, and analyses within a unified publishing workflow. Pages, figures, tables, and teaching materials update automatically when the underlying sources change, ensuring consistency across outputs. This approach simplifies maintenance, and allows websites to evolve as living, version-controlled resources rather than static collections of files. Examples of websites, interactive reports and other formats can be explored on the <a href="https://quarto.org/docs/gallery/">Quarto Gallery</a>. This website and our self-paced tutorials are all Quarto websites.</p></li>
 </ul>
 <div class="container my-4">
 <h4 class="fs-5 anchored">
@@ -1141,7 +1142,7 @@ Reproducible Presentations &amp; Websites: Further Reproducible Outputs for Outr
 <li><strong>Sample size justification</strong> – power calculations or other reasoning behind the chosen sample size.</li>
 <li><strong>Statistical methods</strong> – the models used, assumptions checked, handling of missing data, variable transformations, and any sensitivity or robustness analyses.</li>
 <li><strong>Data preprocessing and analysis workflow</strong> – steps such as cleaning, filtering, or derived variables that affect the final dataset used for analysis.</li>
-<li><strong>Results with appropriate uncertainty</strong> – effect estimates, confidence intervals, p-values, and clear descriptions of the comparisons performed.</li>
+<li><strong>Results with appropriate uncertainty</strong> – effect estimates, confidence intervals, <em>p</em>‑values, and clear descriptions of the comparisons performed.</li>
 <li><strong>Participant flow and descriptive statistics</strong> – numbers of observations at each stage and summary statistics of the analyzed sample.</li>
 <li><strong>Limitations and potential sources of bias</strong> – issues such as confounding, measurement error, or selection bias.</li>
 <li><strong>Data, code, and materials availability</strong> – where readers can access datasets, analysis scripts, or supplementary materials to reproduce the analysis.</li>
@@ -1200,6 +1201,7 @@ Reproducible Presentations &amp; Websites: Further Reproducible Outputs for Outr
 <li><label><input type="checkbox">No sensitive information in the code (e.g., passwords, patient identifiers)</label></li>
 <li><label><input type="checkbox">Functions used to avoid duplication</label></li>
 <li><label><input type="checkbox">Seeds set to create reproducible random computations</label></li>
+<li><label><input type="checkbox">Figures and other generated outputs are accessible (e.g.&nbsp;colorblind friendly)</label></li>
 <li><label><input type="checkbox">Style guide followed (e.g., styler, lintR)</label></li>
 </ul>
 </div>

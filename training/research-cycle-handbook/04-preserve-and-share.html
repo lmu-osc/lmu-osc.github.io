@@ -44,7 +44,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-9e9c3b858c0bd5de9b38ddcbbfd0ed72.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-bb68dbcc093419f15c378b4f6f2d7f1d.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -722,6 +722,7 @@ Checkpoint: Manuscript submission with DOIs for preregistration, data, and code
 <li><strong>CC0 (Public Domain)</strong> places no restrictions. Anyone can use, modify, and redistribute without attribution. Recommended for factual data where maximum reuse is the goal.</li>
 <li><strong>CC BY (Attribution)</strong> requires users to credit you. A good default when you want recognition while enabling broad reuse.</li>
 <li><strong>CC BY-NC (Non-Commercial)</strong> adds a restriction against commercial use. Consider whether this limitation actually serves your goals.</li>
+<li>A <strong>Scientific Use License (Public Use)</strong> only allows re-use for scientific purposes (but with all freedoms within that scope). The Leibniz Institute for Psychology (ZPID) developed such a <a href="https://www.psycharchives.org/en/item/7466aa16-69bd-49ea-baef-7f828f5b223f">standard license</a> together with legal experts.</li>
 </ul>
 <p><br></p>
 <p>Learn more about open licenses for data and code in our <a href="https://lmu-osc.github.io/code-publishing/choose_license.html">code publishing tutorial</a>.</p>
@@ -770,9 +771,9 @@ Checkpoint: Manuscript submission with DOIs for preregistration, data, and code
 <div class="ms-1">
 <ul>
 <li><strong>verify</strong> the structure of your repository, the readability of your scripts, the completeness of the documentation (see <a href="../../training/research-cycle-handbook/03-analyze-and-collaborate.html#analyze-collaborate-checklist" class="mark">Analyze &amp; Collaborate Checklist</a>).</li>
-<li><strong>make a clean version public</strong> e.g.&nbsp;to <a href="https://github.com/">GitHub</a></li>
+<li><strong>make a clean version public</strong>, e.g.&nbsp;on <a href="https://github.com/">GitHub</a></li>
 <li><strong>add a license</strong></li>
-<li><strong>get a DOI</strong> through e.g.&nbsp;<a href="https://zenodo.org/">Zenodo</a></li>
+<li><strong>get a DOI</strong>, e.g.&nbsp;through <a href="https://zenodo.org/">Zenodo</a></li>
 </ul>
 </div>
 <p>If you work with <strong>sensitive data that cannot be anonymized</strong> and shared:</p>
@@ -807,7 +808,7 @@ Important
 <div class="callout-body-container callout-body">
 <p>If you work with <strong>sensitive data</strong>, you must not include the raw or processed data in the version-controlled repository to be shared.</p>
 <p><br></p>
-<p>Instead, explicitly <strong>exclude the data directory using the .gitignore file from the start</strong>, <strong>or create a new local repository that contains all project files except the data</strong>.</p>
+<p>Instead, explicitly <strong>exclude the data directory using the .gitignore file from the start</strong>. An easy solution (which, however, discards the version history for all files), is to <strong>create a new local repository that contains all project files except the data</strong> and only push that to the public repository.</p>
 <p><br></p>
 <p>Importantly, if data are removed from an existing repository, they may still remain accessible in the repository’s history, since previous states of the project can be restored. If sensitive data are accidentally committed and pushed, it is possible to <a href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository">rewrite the repository history</a> to remove them retrospectively. However, this process is complex and error-prone, so it is best avoided by ensuring that sensitive data are excluded from version control from the outset.</p>
 </div>
@@ -837,11 +838,12 @@ Important
 </div>
 </div>
 <div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<!-- TODO: This does not fit so well under 4.2 Open Source Code? -->
 <p>Sharing your code allows for other researchers to clearly see which analytic methods were applied to the data. Ideally, they should also be able to rerun the code and verify the reproducibility of the reported results.</p>
 <p><br></p>
 <p>You can provide the data required to run the code in several ways:</p>
 <ul>
-<li><strong>The real (anonymized) data.</strong> This can be done either (1) by including the dataset in the repository so that the code can access it locally and run directly, or (2) by configuring the code to retrieve the data from an external source, such as a database, API, or external data repository.</li>
+<li><strong>The real (anonymized) data.</strong> This can be done either (1) by including the dataset in the repository so that the code can access it locally and run directly, or (2) by configuring the code to retrieve the data from an external source, such as a database, API, or external data repository. A practical workflow is to include “small”/one-shot datasets directly into a combined code/data-project (e.g.&nbsp;on GitHub), and to store “large”/reusable datasets (which deserve their own DOI) separately in a repository specialized for research data.</li>
 <li><strong>Simulated random data.</strong> This option mainly demonstrates that the code runs without errors. However, the original results cannot be verified and further analyses are not meaningful. See our <a href="https://lmu-osc.github.io/Introduction-Simulations-in-R/">data simulation tutorial</a>.</li>
 <li><strong>Synthetic data that mimic key properties of the real data.</strong> When privacy-sensitive data cannot be shared, synthetic datasets can provide a useful alternative. Compared with purely random simulated data, synthetic data can resemble the structure and characteristics of the original dataset, allowing other researchers to rerun the analyses and assess whether the main results can be reproduced. In addition, openly shared synthetic data enable exploratory analyses that may generate new hypotheses, and in some cases analyses conducted on synthetic data can approximate results obtained from the real data.</li>
 </ul>
@@ -903,7 +905,7 @@ Important
 <p>A license tells others what they can do with your code. Licensing your code consists in adding a file called LICENSE.txt next to your code, that contains the appropriate legal text. Without one, or equivalent statements, others cannot legally reuse your code, even if it is publicly available e.g.&nbsp;on <a href="https://github.com/">GitHub</a>. Common open licenses for code are:</p>
 <p><br></p>
 <ul>
-<li><strong>CC0 (Public Domain)</strong> places no restrictions. Anyone can use, modify, and redistribute without attribution. Recommended for factual code where maximum reuse is the goal.</li>
+<li><strong>CC0 (Public Domain)</strong> places no restrictions. Anyone can use, modify, and redistribute without attribution. Recommended for generic code where maximum reuse is the goal.</li>
 <li><strong>MIT</strong> is a simple license that requires users to credit you when they reuse, modify, and redistribute your code.</li>
 <li><strong>Apache 2.0</strong> is a safer license (covering more legal cases) that requires users to credit you and state the changes you made to the code.</li>
 </ul>
@@ -950,7 +952,7 @@ Important
 <li><strong>Create an account on <a href="https://zenodo.org/">Zenodo</a>.</strong></li>
 <li><strong>Link your GitHub account to Zenodo.</strong> Navigate to your profile &gt; account settings &gt; link external accounts &gt; GitHub &gt; authorize Zenodo to access your GitHub account &gt; a list of your GitHub repositories should appear. Enable the repository by toggling the switch next to it; refresh the page to check to see if the visual indicator that the repository is connected appears</li>
 <li><strong>Go to GitHub and create a release.</strong> Zenodo will automatically download a .zip-ball of each new release and register a DOI.</li>
-<li><strong>Add DOI badge to your README.</strong> After your first release, a DOI badge that you can include in GitHub README will appear next to your repository in the your list of GitHub repositories on Zenodo. This allows others to easily find and cite your archived code</li>
+<li><strong>Add DOI badge to your README.</strong> After your first release, a DOI badge that you can include in GitHub README will appear next to your repository in your list of GitHub repositories on Zenodo. This allows others to easily find and cite your archived code</li>
 <li><strong>Create new release when needed.</strong> If you make a new release, it will create a new version on Zenodo, under the same overall DOI, with a ‘sub-DOI’ to identify a specific version.</li>
 </ul>
 <div class="callout callout-style-default callout-tip callout-titled">
@@ -959,7 +961,7 @@ Important
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>Tip for research groups:
+<span class="screen-reader-only">Tip</span>Tips for research groups:
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -1028,7 +1030,12 @@ Important
 <li><strong>Share wet-lab protocols</strong> on e.g.&nbsp;<a href="https://www.protocols.io/">protocols.io</a>, see <a href="../../training/research-cycle-handbook/02-collect-and-manage.html#sec-data-collection" class="mark">2.1.1. Lab Protocols</a>.</li>
 <li><strong>Share survey text, instructions, or scoring sheets</strong> on e.g.&nbsp;<a href="https://osf.io/">OSF</a></li>
 </ul>
-<p>We recommend to use a creative Common license such as CC.-BY 4.0 to allow reuse, modification and redistribution, while getting attribution, or one of its derivative (see <a href="https://creativecommons.org/chooser/">tool to select a creative common license</a>)</p>
+<p>We recommend to use a creative Common license such as</p>
+<ul>
+<li><strong>CC-BY</strong> to allow reuse, modification and redistribution, while getting attribution; or one of its derivatives e.g.</li>
+<li><strong>CC-BY-SA (ShareAlike)</strong> under which credit must be given to the creator <em>and</em> adaptations must be shared under the same terms.</li>
+</ul>
+<p>See the <a href="https://creativecommons.org/chooser/">Creative Common license chooser</a> to explore more.</p>
 <div class="container my-4">
 <!-- row for Tools & Resources section -->
 <h4 class="fs-5 mt-3 anchored">
@@ -1087,7 +1094,7 @@ Important
 <section id="sec-open-access-articles" class="level3" data-number="4.4">
 <h3 data-number="4.4" class="anchored" data-anchor-id="sec-open-access-articles"><span class="header-section-number">4.4</span> Open Access Articles</h3>
 </section></summary>
-<p>Publishing open access articles (i.e.&nbsp;which are free to readers) <strong>increases the visibility, citation, and impact</strong> of research by removing paywall barriers, enabling scholars, practitioners, and policymakers worldwide to access and build upon the work without restriction. It also <strong>accelerates knowledge dissemination and promotes equity</strong> in scholarship by providing institutions and researchers - especially in low-resource settings - free and immediate access to scientific findings.</p>
+<p>Publishing open access articles (i.e.&nbsp;which are free to readers) <strong>increases the visibility, citation, and impact</strong> of research by removing paywall barriers, enabling scholars, practitioners, and policymakers worldwide to access and build upon the work without restriction. It also <strong>accelerates knowledge dissemination and promotes equity</strong> in scholarship by providing institutions and researchers - especially in low-resource settings - free and immediate access to scientific findings. Finally, tax-payer funded projects often have particular requirements for open access.</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true" href="">4.4.1. Pathways to Open Access</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-2" role="tab" aria-controls="tabset-3-2" aria-selected="false" href="">4.4.2. Contracts with Publishers</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-3" role="tab" aria-controls="tabset-3-3" aria-selected="false" href="">4.4.3. Publishing Preprints and Retaining Rights</a></li></ul>
 <div class="tab-content">
@@ -1183,15 +1190,15 @@ Important
 <ul>
 <li>on a specific location (e.g.&nbsp;preprint repository, institutional repository, funders repository, author’s personal website)</li>
 <li>after a specific amount of time (e.g.&nbsp;6 or 12-month embargo)</li>
-<li>under a specific license (e.g.&nbsp;CC.BY. (recommended for maximum reuse), CC.BY-NC-ND)</li>
+<li>under a specific license (e.g.&nbsp;CC-BY (recommended for maximum reuse), CC-BY-NC-ND)</li>
 </ul></li>
 </ul></li>
 <li><p><strong>Disclose the state of peer review on each preprint version.</strong> Use watermarks such as ‘Draft’ and ‘Revised Draft’ for your preprint, with a statement on the title page highlighting that the work has not been peer reviewed. For postprints, indicate that the version was accepted through peer review, and link to the DOI of the official journal version.</p></li>
 <li><p><strong>Get a DOI for each public version of your manuscript.</strong> When updating your preprint through the revision cycle, get a citable DOI (as provided by the repository).</p></li>
 <li><p><strong>Maintain as much rights to your own work as possible</strong>.</p>
 <ul>
-<li>Prior to submitting your manuscript, deposit your manuscript’s conceptual figures on a repository (e.g.&nbsp;<a href="https://zenodo.org/">Zenodo</a>, <a href="https://osf.io/">OSF</a>), under an open license (e.g.&nbsp;<a href="https://creativecommons.org/licenses/by/4.0/deed.en">CC.BY 4.0</a> allowing reuse and modification while requiring authors to get credited), and get a DOI for it to cite your own figure in your manuscript. This way, you (and possibly other researchers), can reuse them in future manuscripts without asking permission from the publisher, by indicating the DOI and license in the figure legend.</li>
-<li>When given the choice, request your publisher to publish your manuscript under a CC.BY 4.0 license, so your right to distribution is included. It is possible that your publisher will request a CC.BY. NC (Non-Commercial) license which means you cannot deposit it on commercial platforms, but you would typically still be allowed to deposit it on preprint servers or institutional repositories (see <a href="https://openpolicyfinder.jisc.ac.uk/">Jisc’ Open Policy Finder</a> for the policy of your specific journal)</li>
+<li>Prior to submitting your manuscript, deposit your manuscript’s conceptual figures on a repository (e.g.&nbsp;<a href="https://zenodo.org/">Zenodo</a>, <a href="https://osf.io/">OSF</a>), under an open license (e.g.&nbsp;<a href="https://creativecommons.org/licenses/by/4.0/deed.en">CC-BY 4.0</a> allowing reuse and modification while requiring authors to get credited), and get a DOI for it to cite your own figure in your manuscript. This way, you (and possibly other researchers), can reuse them in future manuscripts without asking permission from the publisher, by indicating the DOI and license in the figure legend.</li>
+<li>When given the choice, request your publisher to publish your manuscript under a CC-BY 4.0 license, so your right to distribution is included. It is possible that your publisher will request a CC-BY-NC (Non-Commercial) license which means you cannot deposit it on commercial platforms, but you would typically still be allowed to deposit it on preprint servers or institutional repositories (see <a href="https://openpolicyfinder.jisc.ac.uk/">Jisc’ Open Policy Finder</a> for the policy of your specific journal)</li>
 </ul></li>
 </ul>
 <p>In practice, we recommend to follow the process of version releases illustrated in the figure<!-- fix me where-->, starting with a manuscript draft, should you wish to obtain feedback from your community, or preprinting the submitted version, should you want to e.g.&nbsp;accelerate dissemination of findings that are unlikely to change during revision, or postprinting the accepted version to have a free peer-reviewed version available to anyone.</p>
@@ -1314,7 +1321,7 @@ Authorship
 <li>make a genuine, <strong>verifiable contribution</strong> to the content of a scientific publication, data, or software, and <strong>not solely have a managerial or supervisory position</strong> in the project;</li>
 <li><strong>agree to the final version</strong> of the work to be published and <strong>bear joint responsibility</strong> for the publication unless explicitly stated otherwise.</li>
 </ul>
-<p>We recommend to <strong>start discussions on authorship, roles, and responsibilities as early as possible</strong>. First discussions can for instance take place at the end of <a href="../../training/research-cycle-handbook/01-plan-and-design.html" class="mark">1. Plan &amp; Design</a>, e.g.&nbsp;during the presentation of the study plan to the research group (see <a href="../../training/research-cycle-handbook/01-plan-and-design.html#plan-design-checklist" class="mark">Plan &amp; Design Checklist</a>).</p>
+<p>We recommend to <strong>start discussions on authorship, roles, and responsibilities as early as possible</strong>. First discussions can for instance take place at the end of <a href="../../training/research-cycle-handbook/01-plan-and-design.html" class="mark">1. Plan &amp; Design</a>, e.g.&nbsp;during the presentation of the study plan to the research group (see <a href="../../training/research-cycle-handbook/01-plan-and-design.html#plan-design-checklist" class="mark">Plan &amp; Design Checklist</a>). As roles may shift in the course of a project, a review is warranted at the write-up stage.</p>
 <p><br></p>
 <h5 class="anchored">
 Contributorship
@@ -1322,9 +1329,10 @@ Contributorship
 <ul>
 <li><strong>Use the <a href="https://credit.niso.org/">Contributor Role Taxonomy (CRediT)</a></strong> to increase transparency and accountability, and acknowledge what contribution to a research project each person has made: ‘Conceptualization’, ‘Data curation’, ‘Formal analysis’, ‘Funding acquisition’, ‘Investigation’, ‘Methodology’, ‘Project administration’, ‘Resources’, ‘Software’, ‘Supervision’, ‘Validation’, ‘Visualization’, ‘Writing—original draft’, and ‘Writing—review &amp; editing’.
 <ul>
+<li>Use the <a href="https://rollercoaster.shinyapps.io/tenzing/">Tenzing App</a> to keep track of contributorships in large collaborations and export the information into various reusable formats.</li>
 <li>Include the CRediT statement in the acknowledgement section of your manuscript if your publisher is not a <a href="https://credit.niso.org/adopters/">formal CRediT adopter</a> and does not otherwise prompt you upon submission of your article.</li>
 </ul></li>
-<li><strong>Use the <a href="https://doi.org/10.1038/s41467-023-37039-1">Method Reporting with Initials for Transparency (MeRIT)</a></strong> when relevant. This consist in adding initials to the Methods section, identifying with greater transparency who did what when several team members contributed to e.g.&nbsp;data curation or software.</li>
+<li><strong>Use the <a href="https://doi.org/10.1038/s41467-023-37039-1">Method Reporting with Initials for Transparency (MeRIT)</a></strong> when relevant. This consists in adding initials to the Methods section, identifying with greater transparency who did what when several team members contributed to e.g.&nbsp;data curation or software.</li>
 </ul>
 <p><br></p>
 <h5 class="anchored">
@@ -1387,11 +1395,11 @@ Note
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>The official names of LMU Munich are Ludwig-Maximilians-Universität München in german, and LMU Munich in english. This university’s ROR ID is <a href="https://ror.org/05591te55">https://ror.org/05591te55</a>.</p>
+<p>The official names of LMU Munich are Ludwig-Maximilians-Universität München in German, and LMU Munich in English. This university’s ROR ID is <a href="https://ror.org/05591te55">https://ror.org/05591te55</a>.</p>
 <p><br></p>
 <p>LMU Munich is mostly funded by the German Research Foundation, whose ROR ID is <a href="https://ror.org/018mejw64">https://ror.org/018mejw64</a></p>
 <p><br></p>
-<p>The LMU Open Science Center is one of the many child organizations of LMU Munich; it’s ROR ID is <a href="https://ror.org/029e6qe04">https://ror.org/029e6qe04</a>. The funder of this handbook’s project is the Volkswagen Foundation, <a href="https://ror.org/03bsmfz84">https://ror.org/03bsmfz84</a>.</p>
+<p>The LMU Open Science Center is one of the many child organizations of LMU Munich; its ROR ID is <a href="https://ror.org/029e6qe04">https://ror.org/029e6qe04</a>. The funder of this handbook’s project is the Volkswagen Foundation, <a href="https://ror.org/03bsmfz84">https://ror.org/03bsmfz84</a>.</p>
 </div>
 </div>
 <div class="container my-4">
@@ -1452,7 +1460,7 @@ Note
 </ul>
 <p><strong>Upon publishing resources</strong></p>
 <ul class="task-list">
-<li><label><input type="checkbox">Add an open license (e.g.&nbsp;CC.BY 4.0 for data and materials, Apache 2.0 for code)</label></li>
+<li><label><input type="checkbox">Add an open license (e.g.&nbsp;CC-BY 4.0 for data and materials, Apache 2.0 for code)</label></li>
 <li><label><input type="checkbox">Fill out the metadata of the repository where the resources are deposited</label></li>
 <li><label><input type="checkbox">Link authors’ ORCID, and the ROR of their organizations and funders to all resources</label></li>
 <li><label><input type="checkbox">Release publicly and get a DOI</label></li>
@@ -1463,7 +1471,7 @@ Note
 <li><label><input type="checkbox">Include the DOI of all resources (data, code, materials, conceptual figures) in the manuscript</label></li>
 <li><label><input type="checkbox">Use CRediT taxonomy to give attribution to all contributors</label></li>
 <li><label><input type="checkbox">Deposit a preprint (if allowed) on preprint server or institutional repository</label></li>
-<li><label><input type="checkbox">Request an open licence (CC.BY 4.0) for the article if possible to allow redistribution</label></li>
+<li><label><input type="checkbox">Request an open licence (CC-BY 4.0) for the article if possible to allow redistribution</label></li>
 </ul>
 <p><strong>After acceptance of an article</strong></p>
 <ul class="task-list">
