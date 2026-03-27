@@ -399,6 +399,7 @@ Whichever you choose, ensure the repository provides a **DOI** (Digital Object I
 
 #### 4.1.4. Data Licenses
 
+
 A license tells others what they can do with your data. Licensing your data consists in adding a file called LICENSE.txt next to your data, that contains the appropriate legal text. Without one, or equivalent statements, others cannot legally reuse your research outputs, even if it is publicly available.
 
 <br>
@@ -408,6 +409,7 @@ Common open licenses for data are:
 - **CC0 (Public Domain)** places no restrictions. Anyone can use, modify, and redistribute without attribution. Recommended for factual data where maximum reuse is the goal.
 - **CC BY (Attribution)** requires users to credit you. A good default when you want recognition while enabling broad reuse.
 - **CC BY-NC (Non-Commercial)** adds a restriction against commercial use. Consider whether this limitation actually serves your goals.
+- A **Scientific Use License (Public Use)** only allows re-use for scientific purposes (but with all freedoms within that scope). The Leibniz Institute for Psychology (ZPID) developed such a [standard license](https://www.psycharchives.org/en/item/7466aa16-69bd-49ea-baef-7f828f5b223f) together with legal experts.
 
 <br>
 
@@ -474,9 +476,9 @@ So far, your code was either backed up on the secured [LRZ Gitlab](https://gitla
 
 ::: {.ms-1} 
 - **verify** the structure of your repository, the readability of your scripts, the completeness of the documentation (see [Analyze & Collaborate Checklist](03-analyze-and-collaborate.qmd#analyze-collaborate-checklist){.mark}).
-- **make a clean version public** e.g. to [GitHub](https://github.com/)
+- **make a clean version public**, e.g. on [GitHub](https://github.com/)
 - **add a license**
-- **get a DOI** through e.g. [Zenodo](https://zenodo.org/)
+- **get a DOI**, e.g. through [Zenodo](https://zenodo.org/)
 :::
 
 If you work with **sensitive data that cannot be anonymized** and shared:
@@ -507,7 +509,7 @@ If you work with **sensitive data**, you must not include the raw or processed d
 
 <br>
 
-Instead, explicitly **exclude the data directory using the .gitignore file from the start**, **or create a new local repository that contains all project files except the data**.
+Instead, explicitly **exclude the data directory using the .gitignore file from the start**. An easy solution (which, however, discards the version history for all files), is to **create a new local repository that contains all project files except the data** and only push that to the public repository.
 
 <br>
 
@@ -545,13 +547,15 @@ Importantly, if data are removed from an existing repository, they may still rem
 
 #### 4.2.2. Real, Simulated, or Synthetic Data
 
+<!-- TODO: This does not fit so well under 4.2 Open Source Code? -->
+
 Sharing your code allows for other researchers to clearly see which analytic methods were applied to the data. Ideally, they should also be able to rerun the code and verify the reproducibility of the reported results.
 
 <br>
 
 You can provide the data required to run the code in several ways:  
 
-- **The real (anonymized) data.** This can be done either (1) by including the dataset in the repository so that the code can access it locally and run directly, or (2) by configuring the code to retrieve the data from an external source, such as a database, API, or external data repository.
+- **The real (anonymized) data.** This can be done either (1) by including the dataset in the repository so that the code can access it locally and run directly, or (2) by configuring the code to retrieve the data from an external source, such as a database, API, or external data repository. A practical workflow is to include "small"/one-shot datasets directly into a combined code/data-project (e.g. on GitHub), and to store "large"/re-usable datasets (which deserve their own doi) separately in a repository specialized for research data.
 - **Simulated random data.** This option mainly demonstrates that the code runs without errors. However, the original results cannot be verified and further analyses are not meaningful. See our [data simulation tutorial](https://lmu-osc.github.io/Introduction-Simulations-in-R/).
 - **Synthetic data that mimic key properties of the real data.** When privacy-sensitive data cannot be shared, synthetic datasets can provide a useful alternative. Compared with purely random simulated data, synthetic data can resemble the structure and characteristics of the original dataset, allowing other researchers to rerun the analyses and assess whether the main results can be reproduced. In addition, openly shared synthetic data enable exploratory analyses that may generate new hypotheses, and in some cases analyses conducted on synthetic data can approximate results obtained from the real data.
 
@@ -630,7 +634,7 @@ A license tells others what they can do with your code. Licensing your code cons
 
 <br>
 
-- **CC0 (Public Domain)** places no restrictions. Anyone can use, modify, and redistribute without attribution. Recommended for factual code where maximum reuse is the goal.
+- **CC0 (Public Domain)** places no restrictions. Anyone can use, modify, and redistribute without attribution. Recommended for <!-- factual (what does that mean?--> code where maximum reuse is the goal.
 - **MIT** is a simple license that requires users to credit you when they reuse, modify, and redistribute your code.
 - **Apache 2.0** is a safer license (covering more legal cases) that requires users to credit you and state the changes you made to the code.
 
@@ -769,7 +773,7 @@ For instance, you can share your:
 - **Share wet-lab protocols** on e.g. [protocols.io](https://www.protocols.io/), see [2.1.1. Lab Protocols](02-collect-and-manage.qmd#sec-data-collection){.mark}.
 - **Share survey text, instructions, or scoring sheets** on e.g. [OSF](https://osf.io/)
 
-We recommend to use a creative Common license such as CC.-BY 4.0 to allow reuse, modification and redistribution, while getting attribution, or one of its derivative (see [tool to select a creative common license](https://creativecommons.org/chooser/))
+We recommend to use a creative Common license such as CC-BY to allow reuse, modification and redistribution, while getting attribution, or one of its derivatives (see the [creative common license chooser](https://creativecommons.org/chooser/))
 
 
 ::: {.container .my-4 }
@@ -1131,6 +1135,7 @@ We recommend to **start discussions on authorship, roles, and responsibilities a
 
 - **Use the [Contributor Role Taxonomy  (CRediT)](https://credit.niso.org/)** to increase transparency and accountability, and acknowledge what contribution to a research project each person has made: ‘Conceptualization’, ‘Data curation’, ‘Formal analysis’, ‘Funding acquisition’, ‘Investigation’, ‘Methodology’, ‘Project administration’, ‘Resources’, ‘Software’, ‘Supervision’, ‘Validation’, ‘Visualization’, ‘Writing—original draft’, and ‘Writing—review & editing’.
      - Include the CRediT statement in the acknowledgement section of your manuscript if your publisher is not a [formal CRediT adopter](https://credit.niso.org/adopters/) and does not otherwise prompt you upon submission of your article.
+     - [Tenzing](https://rollercoaster.shinyapps.io/tenzing/) is a tool that allows to easily track contributorships and saves a lot of time by exporting the information into various reusable formats.
 
 - **Use the [Method Reporting with Initials for Transparency (MeRIT)](https://doi.org/10.1038/s41467-023-37039-1)** when relevant. This consist in adding initials to the Methods section, identifying with greater transparency who did what when several team members contributed to e.g. data curation or software.
 

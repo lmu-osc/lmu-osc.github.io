@@ -45,9 +45,11 @@ Checkpoints: Repository & Code Peer-Review + Result Presentation
 
 </summary>
 
-Data processing and analysis should be reproducible, independent of software, programming language, or operating system. 
-This is best achieved by favoring automated **script-based workflows** (over manual point-and-click procedures), and supported by **adequate documentation** and shared code that allows others to regenerate results. 
-Because analysis scripts are inherently iterative and evolve through corrections and refinements, automation is **essential for both reproducibility and efficiency**. This section outlines a recommended workflow for R users.
+Data processing and analysis should be reproducible – independent of which software, programming language, or operating system you use. 
+This is best achieved by choosing automated **script-based workflows** (over manual point-and-click procedures), and supported by **adequate documentation** and shared code that allows others to regenerate results. 
+Because analysis scripts are inherently iterative and evolve through corrections and refinements, automation is **essential for both reproducibility and efficiency**. 
+<!-- TODO: I do not understand the logic of the last sentence -->
+This section outlines a recommended workflow for R users.
 
 ::: {.panel-tabset}
 
@@ -623,7 +625,7 @@ Using the same Quarto environment, you can also:
 
 <br>
 
-- **Convert your minimal analyses report into a reproducible presentation.** To get feedback on your analyses, you can output a report into a slide presentation with presenter notes. Slides remain dynamically linked to the underlying analyses. Any modification to the data or code automatically propagates to tables, visualizations, and reported results, eliminating inconsistencies between presentation and computation.
+- **Convert your analyses report into a reproducible presentation.** To get feedback on your analyses, you can output a report into a slide presentation with presenter notes. Slides remain dynamically linked to the underlying analyses. Any modification to the data or code automatically propagates to tables, visualizations, and reported results, eliminating inconsistencies between presentation and computation.
 
 - **Create reproducible website to support your research or teaching**. Quarto also enables the creation of reproducible and interactive websites by linking content directly to data, code, and analyses within a unified publishing workflow. Pages, figures, tables, and teaching materials update automatically when the underlying sources change, ensuring consistency across outputs. This approach simplifies maintenance, and allows websites to evolve as living, version-controlled resources rather than static collections of files. Example of website, interactive reports and other formats can be explored on the [Quarto Gallery](https://quarto.org/docs/gallery/). This website and our self-paced tutorials are all Quarto websites. 
 
