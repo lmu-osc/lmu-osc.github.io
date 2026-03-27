@@ -555,7 +555,7 @@ Sharing your code allows for other researchers to clearly see which analytic met
 
 You can provide the data required to run the code in several ways:  
 
-- **The real (anonymized) data.** This can be done either (1) by including the dataset in the repository so that the code can access it locally and run directly, or (2) by configuring the code to retrieve the data from an external source, such as a database, API, or external data repository. A practical workflow is to include "small"/one-shot datasets directly into a combined code/data-project (e.g. on GitHub), and to store "large"/re-usable datasets (which deserve their own doi) separately in a repository specialized for research data.
+- **The real (anonymized) data.** This can be done either (1) by including the dataset in the repository so that the code can access it locally and run directly, or (2) by configuring the code to retrieve the data from an external source, such as a database, API, or external data repository. A practical workflow is to include "small"/one-shot datasets directly into a combined code/data-project (e.g. on GitHub), and to store "large"/reusable datasets (which deserve their own DOI) separately in a repository specialized for research data.
 - **Simulated random data.** This option mainly demonstrates that the code runs without errors. However, the original results cannot be verified and further analyses are not meaningful. See our [data simulation tutorial](https://lmu-osc.github.io/Introduction-Simulations-in-R/).
 - **Synthetic data that mimic key properties of the real data.** When privacy-sensitive data cannot be shared, synthetic datasets can provide a useful alternative. Compared with purely random simulated data, synthetic data can resemble the structure and characteristics of the original dataset, allowing other researchers to rerun the analyses and assess whether the main results can be reproduced. In addition, openly shared synthetic data enable exploratory analyses that may generate new hypotheses, and in some cases analyses conducted on synthetic data can approximate results obtained from the real data.
 
@@ -634,7 +634,7 @@ A license tells others what they can do with your code. Licensing your code cons
 
 <br>
 
-- **CC0 (Public Domain)** places no restrictions. Anyone can use, modify, and redistribute without attribution. Recommended for <!-- factual (what does that mean?--> code where maximum reuse is the goal.
+- **CC0 (Public Domain)** places no restrictions. Anyone can use, modify, and redistribute without attribution. Recommended for generic code where maximum reuse is the goal.
 - **MIT** is a simple license that requires users to credit you when they reuse, modify, and redistribute your code.
 - **Apache 2.0** is a safer license (covering more legal cases) that requires users to credit you and state the changes you made to the code.
 
@@ -692,7 +692,7 @@ To publish you code on Zenodo, we recommend to<!-- these instructions contradict
 - **Create an account on [Zenodo](https://zenodo.org/).**
 - **Link your GitHub account to Zenodo.**  Navigate to your profile >  account settings > link external accounts > GitHub > authorize Zenodo to access your GitHub account > a list of your GitHub repositories should appear. Enable the repository by toggling the switch next to it; refresh the page to check to see if the visual indicator that the repository is connected appears
 - **Go to GitHub and create a release.** Zenodo will automatically download a .zip-ball of each new release and register a DOI.
-- **Add DOI badge to your README.** After your first release, a DOI badge that you can include in GitHub README will appear next to your repository in the your list of GitHub repositories on Zenodo. This allows others to easily find and cite your archived code
+- **Add DOI badge to your README.** After your first release, a DOI badge that you can include in GitHub README will appear next to your repository in your list of GitHub repositories on Zenodo. This allows others to easily find and cite your archived code
 - **Create new release when needed.** If you make a new release, it will create a new version on Zenodo, under the same overall DOI, with a ‘sub-DOI’ to identify a specific version. 
 
 
@@ -854,7 +854,7 @@ Regardless of your discipline:
 </summary>
 
 
-Publishing open access articles (i.e. which are free to readers) **increases the visibility, citation, and impact** of research by removing paywall barriers, enabling scholars, practitioners, and policymakers worldwide to access and build upon the work without restriction. It also **accelerates knowledge dissemination and promotes equity** in scholarship by providing institutions and researchers - especially in low-resource settings - free and immediate access to scientific findings.
+Publishing open access articles (i.e. which are free to readers) **increases the visibility, citation, and impact** of research by removing paywall barriers, enabling scholars, practitioners, and policymakers worldwide to access and build upon the work without restriction. It also **accelerates knowledge dissemination and promotes equity** in scholarship by providing institutions and researchers - especially in low-resource settings - free and immediate access to scientific findings. Finally, tax-payer funded projects often have particular requirements for open access.
 
 ::: {.panel-tabset}
 
@@ -973,15 +973,15 @@ To increase the accessibility and impact of your article we recommend you to:
     - the published version 
         - on a specific location (e.g. preprint repository, institutional repository, funders repository, author's personal website)
         - after a specific amount of time (e.g. 6 or 12-month embargo)
-        - under a specific license (e.g. CC.BY. (recommended for maximum reuse), CC.BY-NC-ND)
+        - under a specific license (e.g. CC-BY (recommended for maximum reuse), CC-BY-NC-ND)
 
 - **Disclose the state of peer review on each preprint version.** Use watermarks such as 'Draft' and 'Revised Draft' for your preprint, with a statement on the title page highlighting that the work has not been peer reviewed. For postprints, indicate that the version was accepted through peer review, and link to the DOI of the official journal version. 
 
 - **Get a DOI for each public version of your manuscript.** When updating your preprint through the revision cycle, get a citable DOI (as provided by the repository).
 
 - **Maintain as much rights to your own work as possible**.
-     - Prior to submitting your manuscript, deposit your manuscript's conceptual figures on a repository (e.g. [Zenodo](https://zenodo.org/), [OSF](https://osf.io/)), under an open license (e.g. [CC.BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.en) allowing reuse and modification while requiring authors to get credited), and get a DOI for it to cite your own figure in your manuscript. This way, you (and possibly other researchers), can reuse them in future manuscripts without asking permission from the publisher, by indicating the DOI and license in the figure legend.
-     - When given the choice, request your publisher to publish your manuscript under a CC.BY 4.0  license, so your right to distribution is included. It is possible that your publisher will request a CC.BY. NC (Non-Commercial) license which means you cannot deposit it on commercial platforms, but you would typically still be allowed to deposit it on preprint servers or institutional repositories (see [Jisc' Open Policy Finder](https://openpolicyfinder.jisc.ac.uk/) for the policy of your specific journal)
+     - Prior to submitting your manuscript, deposit your manuscript's conceptual figures on a repository (e.g. [Zenodo](https://zenodo.org/), [OSF](https://osf.io/)), under an open license (e.g. [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.en) allowing reuse and modification while requiring authors to get credited), and get a DOI for it to cite your own figure in your manuscript. This way, you (and possibly other researchers), can reuse them in future manuscripts without asking permission from the publisher, by indicating the DOI and license in the figure legend.
+     - When given the choice, request your publisher to publish your manuscript under a CC-BY 4.0  license, so your right to distribution is included. It is possible that your publisher will request a CC-BY-NC (Non-Commercial) license which means you cannot deposit it on commercial platforms, but you would typically still be allowed to deposit it on preprint servers or institutional repositories (see [Jisc' Open Policy Finder](https://openpolicyfinder.jisc.ac.uk/) for the policy of your specific journal)
 
 
 In practice, we recommend to follow the process of version releases illustrated in the figure<!-- fix me where-->, starting with a manuscript draft, should you wish to obtain feedback from your community, or preprinting the submitted version, should you want to e.g. accelerate dissemination of findings that are unlikely to change during revision, or postprinting the accepted version to have a free peer-reviewed version available to anyone. 
@@ -1127,17 +1127,18 @@ According to §14 of the [LMU Guidelines for Safeguarding Good Scientific Practi
 - make a genuine, **verifiable contribution** to the content of a scientific publication, data, or software, and **not solely have a managerial or supervisory position** in the project;
 - **agree to the final version** of the work to be published and **bear joint responsibility** for the publication unless explicitly stated otherwise.
 
-We recommend to **start discussions on authorship, roles, and responsibilities as early as possible**. First discussions can for instance take place at the end of [1. Plan & Design](01-plan-and-design.qmd){.mark}, e.g. during the presentation of the study plan to the research group (see [Plan & Design Checklist](01-plan-and-design.qmd#plan-design-checklist){.mark}). 
+We recommend to **start discussions on authorship, roles, and responsibilities as early as possible**. First discussions can for instance take place at the end of [1. Plan & Design](01-plan-and-design.qmd){.mark}, e.g. during the presentation of the study plan to the research group (see [Plan & Design Checklist](01-plan-and-design.qmd#plan-design-checklist){.mark}). As roles may shift in the course of a project, a review is warranted at the write-up stage. 
 
 <br>
 
 <h5>Contributorship</h5>
 
 - **Use the [Contributor Role Taxonomy  (CRediT)](https://credit.niso.org/)** to increase transparency and accountability, and acknowledge what contribution to a research project each person has made: ‘Conceptualization’, ‘Data curation’, ‘Formal analysis’, ‘Funding acquisition’, ‘Investigation’, ‘Methodology’, ‘Project administration’, ‘Resources’, ‘Software’, ‘Supervision’, ‘Validation’, ‘Visualization’, ‘Writing—original draft’, and ‘Writing—review & editing’.
+     - Use the [Tenzing App](https://rollercoaster.shinyapps.io/tenzing/) to keep track of contributorships in large collaborations and export the information into various reusable formats.
      - Include the CRediT statement in the acknowledgement section of your manuscript if your publisher is not a [formal CRediT adopter](https://credit.niso.org/adopters/) and does not otherwise prompt you upon submission of your article.
-     - [Tenzing](https://rollercoaster.shinyapps.io/tenzing/) is a tool that allows to easily track contributorships and saves a lot of time by exporting the information into various reusable formats.
 
-- **Use the [Method Reporting with Initials for Transparency (MeRIT)](https://doi.org/10.1038/s41467-023-37039-1)** when relevant. This consist in adding initials to the Methods section, identifying with greater transparency who did what when several team members contributed to e.g. data curation or software.
+
+- **Use the [Method Reporting with Initials for Transparency (MeRIT)](https://doi.org/10.1038/s41467-023-37039-1)** when relevant. This consists in adding initials to the Methods section, identifying with greater transparency who did what when several team members contributed to e.g. data curation or software.
 
 <br>
 
@@ -1207,7 +1208,7 @@ We recommend to **start discussions on authorship, roles, and responsibilities a
 
 
 :::{.callout-note}
-The official names of LMU Munich are Ludwig-Maximilians-Universität München in german, and LMU Munich in english. This university's ROR ID is [https://ror.org/05591te55](https://ror.org/05591te55).
+The official names of LMU Munich are Ludwig-Maximilians-Universität München in German, and LMU Munich in English. This university's ROR ID is [https://ror.org/05591te55](https://ror.org/05591te55).
 
 <br>
 
@@ -1215,7 +1216,7 @@ LMU Munich is mostly funded by the German Research Foundation, whose ROR ID is [
 
 <br>
 
-The LMU Open Science Center is one of the many child organizations of LMU Munich; it's ROR ID is [https://ror.org/029e6qe04](https://ror.org/029e6qe04). The funder of this handbook's project is the Volkswagen Foundation, [https://ror.org/03bsmfz84](https://ror.org/03bsmfz84).
+The LMU Open Science Center is one of the many child organizations of LMU Munich; its ROR ID is [https://ror.org/029e6qe04](https://ror.org/029e6qe04). The funder of this handbook's project is the Volkswagen Foundation, [https://ror.org/03bsmfz84](https://ror.org/03bsmfz84).
 :::
 
 
@@ -1286,7 +1287,7 @@ Not all items are relevant for all fields of research or study types.
 
 **Upon publishing resources**
 
-- [ ] Add an open license (e.g. CC.BY 4.0 for data and materials, Apache 2.0 for code)
+- [ ] Add an open license (e.g. CC-BY 4.0 for data and materials, Apache 2.0 for code)
 - [ ] Fill out the metadata of the repository where the resources are deposited
 - [ ] Link authors' ORCID, and the ROR of their organizations and funders to all resources
 - [ ] Release publicly and get a DOI
@@ -1297,7 +1298,7 @@ Not all items are relevant for all fields of research or study types.
 - [ ] Include the DOI of all resources (data, code, materials, conceptual figures) in the manuscript 
 - [ ] Use CRediT taxonomy to give attribution to all contributors
 - [ ] Deposit a preprint (if allowed) on preprint server or institutional repository 
-- [ ] Request an open licence (CC.BY 4.0) for the article if possible to allow redistribution
+- [ ] Request an open licence (CC-BY 4.0) for the article if possible to allow redistribution
 
 **After acceptance of an article**
 
