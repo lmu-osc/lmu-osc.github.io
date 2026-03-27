@@ -129,7 +129,7 @@ A research output (e.g. data, code) without a license or statement granting your
 
 #### 1.1.2. Preregistrations
 
-A **preregistration** typically consists of a hypothesis and predictions, a plan for data collection (when relevant), and a plan for data analysis, that researchers upload before starting their projects, often in order to increase the rigor of confirmatory research (see [1.4.1. Pre-analysis planning](#sec-study-design-analysis-plan){.mark}). 
+A **preregistration** typically consists of a hypothesis and predictions, a plan for data collection (when relevant), and a plan for data analysis, that researchers upload onto a registry before starting their projects, often in order to increase the rigor of confirmatory research (see [1.4.1. Pre-analysis planning](#sec-study-design-analysis-plan){.mark}). 
 
 <br>
 
@@ -233,8 +233,18 @@ These platforms either give you access to existing data or provide [**metadata**
 
 - **Review the license and data use agreement.** Make sure you understand what you are allowed to do with the data and under what conditions. Even if the license does not request attribution of the authors, scholarly norms require you to cite the source of the data for any of your work based on it.
 - **Review metadata and documentation.** Make sure you know where your data comes from, how the data was collected and processed, and reflect on whether any of it poses problems for your research question. 
-- **Check what additional requirements the data sources have.** Some requirement to access the data may be to submit a preregistration (see [1.4. Study Design & Analysis Plan](#sec-study-design-analysis-plan){.mark}).
-- **Use the metadata to plan your analysis.** Review existing data dictionaries (or "codebooks") and other documentation describing the variables, range of values, etc. If you plan to do a confirmatory analysis, do not look at the data to minimize confirmation or hindsight bias; instead, prepare a pre-analysis plan (see [1.4. Study Design & Analysis Plan](#sec-study-design-analysis-plan){.mark}).  
+- **Check what additional requirements the data sources have.** Sometimes, data providers request prospective data users to submit a preregistration prior to giving access to the data (see [1.4. Study Design & Analysis Plan](#sec-study-design-analysis-plan){.mark}).
+- **Use the metadata to plan your analysis.** Review existing data dictionaries (or "codebooks") and other documentation describing the variables, range of values, etc. If you plan to do a confirmatory analysis, do not look at the data to minimize [**confirmation or hindsight bias**]{.underline}; instead, prepare a pre-analysis plan (see [1.4. Study Design & Analysis Plan](#sec-study-design-analysis-plan){.mark}).  
+
+::: {.callout-note}
+## Definition
+[**Confirmation bias**]{.underline}: The tendency to seek, interpret, and remember information that confirms one’s existing beliefs or expectations.
+
+<br>
+
+[**Hinsight bias**]{.underline} Seeing past events as predictable after the outcome is known (“I knew it all along”).
+:::
+
 
 
 ::: {.container .my-4 }
@@ -397,7 +407,7 @@ Code publicly visible on GitHub without a license or equivalent text explicitly 
   <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
 </div>
 <h4 class="card-title">Code Publishing</h4>
-<p class="card-text">Add README and license to a reproducible project.</p>
+<p class="card-text">Add README and license to a reproducible project (2h)</p>
 <a href="https://lmu-osc.github.io/code-publishing/" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
 ```
@@ -501,14 +511,14 @@ In later sections, you will acquire skills in FAIR data management and reproduci
 
 :::{.callout-note}
 ## Definitions
-The [**FAIR principles**] are defined as:  
+The **[FAIR principles]{.underline}** are defined as:  
 
-- **F**indable: [**metadata**] should be deposited in a searchable repository and be assigned a permanent identifier\
-- **A**ccessible: the data is either open, or accessible upon some authentication process, or closed, but with open [**metadata**].\
+- **F**indable: [**metadata**]{.underline} should be deposited in a searchable repository and be assigned a permanent identifier\
+- **A**ccessible: the data is either open, or accessible upon some authentication process, or closed, but with open [**metadata**]{.underline}.\
 - **I**nteroperable: the data is described with a standard terminology (so the dataset can be merged with other ones) and saved in a stable file format\
 - **R**eusable: the data is richly documented (e.g. with a data dictionary) and is accompanied by a data usage license
 
-[**Metadata**] are data about your data, such as author, date, measurement device, unit of measurement, context of data collection, etc.
+[**Metadata**]{.underline} are data about your data, such as author, date, measurement device, unit of measurement, context of data collection, etc.
 
 <br>
 
@@ -567,7 +577,7 @@ For data protection guidance, contact the [LMU Data Protection Officer](https://
 :::{.callout-tip}
 ## Tips for research groups to streamline this process
 - **Share templates and example resources amongst team members.** For example, include previously approved ethics proposals, approved Data Protection Impact Assessment forms, or Data Management Plans on a common server space.
-- **Create Standard Operating Procedures for the team** for processes such as appropriate anonymization technique for a specific data type, power analyses script for common analyses, define when a data management plan must be updated, who is responsible, and how updates are reviewed/approved and communicated.
+- **Create Standard Operating Procedures (SOPs) for the team** for processes such as appropriate anonymization technique for a specific data type, power analyses script for common analyses, define when a data management plan must be updated, who is responsible, and how updates are reviewed/approved and communicated.
 :::
 
 ::: {.container .my-4}
@@ -857,8 +867,8 @@ Once your study plan is finalized:
 <br>
 
 - **Submit your preregistration before collecting new or analyzing existing data.** You can do so on discipline specific registries (see [1.1.2. Preregistrations](#sec-explore-and-reuse){.mark}) or discipline agnostic repositories such as the [OSF](https://osf.io/). 
-- **Embargoe your plan if you are concerned about scooping.** On the OSF, your preregistration can be kept private for a predetermined amount of time, and for a maximum of 4 years.
-- **Include your pregistration's DOI in your manuscript.** Make your registration public upon the publication of your manuscript. 
+- **Embargo your plan if you are concerned about scooping.** On the OSF, your preregistration can be kept private for a predetermined amount of time, and for a maximum of 4 years.
+- **Include your preregistration's DOI in your manuscript.** Make your registration public upon the publication of your manuscript. 
 
 Creating a preregistration improves transparency and allows for valuable **early feedback from collaborators**. An even stronger approach is **submitting preregistrations directly to journals** (then called **"Registered Reports"**), enabling peer review at a stage where methodological adjustments are still possible.
 
@@ -870,7 +880,7 @@ Registered Reports are a publication format, now adopted by over 300 journals (s
 
 <br>
 
-After completing the study, authors add results and discussion sections, clearly separating preregistered confirmatory analyses from exploratory ones. Final review focuses on adherence to the approved plan and the validity of conclusions, not on whether results are significant. This model **shifts incentives toward asking important questions and using rigorous methods rather than chasing striking outcomes**.
+After completing the study, authors add results and discussion sections, clearly separating preregistered confirmatory analyses from exploratory ones. Final review focuses on adherence to the approved plan and the validity of conclusions, not on whether results are significant. This model **shifts incentives toward asking important questions and using rigorous methods rather than chasing striking or 'novel' outcomes**.
 
 
 ::: {.container .my-4}
@@ -1038,7 +1048,7 @@ Power analysis is relevant whether you are designing a project from scratch or r
 
 <h5 class="fs-5 no-anchor">A priori power analysis</h5>
 
-**Simulate data to calculate the smallest sample size required to detect the smallest effect of interest.** See our [advanced power analyses tutorial](https://lmu-osc.github.io/Simulations-for-Advanced-Power-Analyses/). 
+**Simulate data to calculate the smallest sample size required to detect the smallest effect of interest.** See our [advanced power analyses tutorial using R](https://lmu-osc.github.io/Simulations-for-Advanced-Power-Analyses/). 
 
 <br>
 
