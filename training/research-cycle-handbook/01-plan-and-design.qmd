@@ -430,6 +430,21 @@ Code publicly visible on GitHub without a license or equivalent text explicitly 
 ```{=html}
 <div class="card orc-card-tool p-3 bg-light-subtle h-100">
 <div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
+<img src="https://www.softwareheritage.org/wp-content/uploads/2015/08/swh-logo.png" class="img-fluid" alt="Software Heritage icon">
+</div>
+<h4 class="card-title">Software Heritage</h4>
+<p class="card-text">Collects, preserves, and shares software in source code form.</p>
+<a href="https://www.softwareheritage.org/" class="stretched-link" target="_blank" rel="noopener"></a>
+
+</div>
+```
+:::
+
+<!-- card -->
+::: {.col}
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
 <img src="https://cdn.simpleicons.org/github" class="img-fluid" alt="GitHub icon">
 </div>
 <h4 class="card-title">GitHub</h4>
