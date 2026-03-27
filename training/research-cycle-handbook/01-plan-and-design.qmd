@@ -46,7 +46,7 @@ Checkpoints: Study Plan Presentation & Preregistration Submission
 
 </summary> 
 
-Any resource that inspire you or that you want to reuse and/or adapt must minimally be **cited using their persistent identifiers e.g. DOIs** (and otherwise URL with author, date, and time of access) and you must **follow the license and/or usage agreement** provided by the authors. 
+Any resource that inspires you or that you want to reuse and/or adapt must minimally be **cited using their persistent identifiers e.g. DOIs** (and otherwise URL with author, date, and time of access) and you must **follow the license and/or usage agreement** provided by the authors. 
 A research output (e.g. data, code) without a license or statement granting your permission for reuse cannot legally be reused even if they appear publicly online.
 
 ::: {.panel-tabset}
@@ -216,25 +216,25 @@ A **preregistration** typically consists of a hypothesis and predictions, a plan
 
 #### 1.1.3. Data
 
-<h5 class="fs-5 no-anchor">How to find existing dataset?</h5>
+<h5 class="fs-5 no-anchor">How to find existing datasets?</h5>
 
-- **Search for discipline-specific repositories on [re3data](https://www.re3data.org/)** which is a central registry of all repositories
-- **Exploring subject agnostic repositories** such as [DataCite](https://datacite.org/), [FigShare](https://figshare.com/browse), [Open Science Framework (OSF)](https://osf.io/search), or [Zenodo](https://zenodo.org/) (oftentimes with the corresponding analysis code). 
+- **Search for discipline-specific repositories on [re3data](https://www.re3data.org/)** which is a central registry of many repositories
+- **Explore subject agnostic repositories** such as [DataCite](https://datacite.org/), [FigShare](https://figshare.com/browse), [Open Science Framework (OSF)](https://osf.io/search), or [Zenodo](https://zenodo.org/). 
 
 These platforms either give you access to existing data or provide [**metadata**]{.underline} and explanations on how to request access to the data. 
 
 ::: {.callout-note}
 ## Definition
-[**Metadata**]{.underline} are data about your data, such as author, date, measurement device, unit of measurement, context of data collection, ect.
+[**Metadata**]{.underline} are data about your data, such as author, date, measurement device, unit of measurement, context of data collection, etc.
 :::
 <br>
 
 <h5 class="fs-5 no-anchor">How to reuse a dataset?</h5>
 
-- **Review the license and data use agreement.** Make sure your understand what you are allowed to do with the data and under what conditions. Even if the license does not request attribution of the authors, you have to cite the source of the data for any of your scholarly work based on it.
+- **Review the license and data use agreement.** Make sure you understand what you are allowed to do with the data and under what conditions. Even if the license does not request attribution of the authors, scholarly norms require you to cite the source of the data for any of your work based on it.
 - **Review metadata and documentation.** Make sure you know where your data comes from, how the data was collected and processed, and reflect on whether any of it poses problems for your research question. 
 - **Check what additional requirements the data sources have.** Some requirement to access the data may be to submit a preregistration (see [1.4. Study Design & Analysis Plan](#sec-study-design-analysis-plan){.mark}).
-- **Use the metadata to plan your analysis.** A data dictionary (or "codebook") and other documentation describing the variables, range of values, ect., may be available and should be reviewed. To minimize confirmation or hindsight bias, do not plot the data immediately; instead, prepare a pre-analysis plan by examining the documentation.(see [1.4. Study Design & Analysis Plan](#sec-study-design-analysis-plan){.mark}).  
+- **Use the metadata to plan your analysis.** Review existing data dictionaries (or "codebooks") and other documentation describing the variables, range of values, etc. If you plan to do a confirmatory analysis, do not look at the data to minimize confirmation or hindsight bias; instead, prepare a pre-analysis plan (see [1.4. Study Design & Analysis Plan](#sec-study-design-analysis-plan){.mark}).  
 
 
 ::: {.container .my-4 }
@@ -325,7 +325,7 @@ These platforms either give you access to existing data or provide [**metadata**
 
 #### 1.1.4. Code
 
-**Find code available for reuse** archived on [Zenodo](https://zenodo.org/) or actively developed on [GitHub](https://github.com/). Learn how to work with GitHub in more details in [3. Analyze & Collaborate](03-analyze-and-collaborate.qmd){.mark} or start learning Git version control now! 
+**Find code available for reuse** archived on [Zenodo](https://zenodo.org/), [Software Heritage](https://www.softwareheritage.org) or actively developed on [GitHub](https://github.com/) and other code repositories. Start learning Git version control now or learn to take advantage of more collaborative features on the GitHub platform in more details in [3. Analyze & Collaborate](03-analyze-and-collaborate.qmd){.mark}. 
  
 <br>
 
@@ -486,14 +486,14 @@ In later sections, you will acquire skills in FAIR data management and reproduci
 
 :::{.callout-note}
 ## Definitions
-The [**FAIR principles**]{.underline} are defined as:  
+The [**FAIR principles**] are defined as:  
 
-- **F**indable: [**metadata**]{.underline} should be deposited in a searchable repository and be assigned a permanent identifier\
-- **A**ccessible: the data is either open, or accessible upon some authentication process, or closed, but with open [**metadata**]{.underline}.\
+- **F**indable: [**metadata**] should be deposited in a searchable repository and be assigned a permanent identifier\
+- **A**ccessible: the data is either open, or accessible upon some authentication process, or closed, but with open [**metadata**].\
 - **I**nteroperable: the data is described with a standard terminology (so the dataset can be merged with other ones) and saved in a stable file format\
 - **R**eusable: the data is richly documented (e.g. with a data dictionary) and is accompanied by a data usage license
 
-[**Metadata**]{.underline} are data about your data, such as author, date, measurement device, unit of measurement, context of data collection, ect.
+[**Metadata**] are data about your data, such as author, date, measurement device, unit of measurement, context of data collection, etc.
 
 <br>
 
@@ -526,14 +526,14 @@ See [https://www.go-fair.org/fair-principles/](https://www.go-fair.org/fair-prin
 
 #### 1.2.2. Funders
 
-- **Check all funders' open science requirements in the call information sheets.** Funders may have additional  requirements on top of those indicated in the LMU guidelines. For instance, some calls request a Research Data Management plan before making their second payment, some specify the extent and timing of data sharing and provide funds for such activity. 
+- **Check all funders' open science requirements.** Funders may have additional requirements on top of those indicated in the LMU guidelines. For instance, some funding lines request a Research Data Management plan before making their second payment, some specify the extent and timing of data sharing and provide funds for such activity. 
 
 
 - **Contact the [LMU Research Funding Unit](https://www.lmu.de/en/research/research-services/contact.html) to review your grant proposal** and assess if your proposal is meeting your funders' open science requirements. 
 
 #### 1.2.3. Ethics
 
-Data collection and analyses involving human participants or animal subjects typically require approval from  Faculties ethics committees to ensure responsible conduct and the protection of data.
+Data collection and analyses involving human participants or animal subjects typically require approval from ethics committees to ensure responsible conduct and the protection of data.
 
 <br>
 
@@ -550,9 +550,9 @@ For data protection guidance, contact the [LMU Data Protection Officer](https://
 <br>
 
 :::{.callout-tip}
-## Tip for research groups to streamline this process
-- **Share templates and example resources amongst team members.** Include e.g. previously approved ethics proposal language, approved Data Protection Impact Assessment forms, Data Management Plans on a common server space.
-- **Create Standard Operating Procedures for the team** for processed such as appropriate anonymization technique for a specific data type, power analyses script for a specific kind of common analysis, define when a data management plan must be updated, who is responsible, and how updates are reviewed/approved and communicated.
+## Tips for research groups to streamline this process
+- **Share templates and example resources amongst team members.** For example, include previously approved ethics proposals, approved Data Protection Impact Assessment forms, or Data Management Plans on a common server space.
+- **Create Standard Operating Procedures for the team** for processes such as appropriate anonymization technique for a specific data type, power analyses script for common analyses, define when a data management plan must be updated, who is responsible, and how updates are reviewed/approved and communicated.
 :::
 
 ::: {.container .my-4}
@@ -591,7 +591,7 @@ For data protection guidance, contact the [LMU Data Protection Officer](https://
   </div>
   <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
 </div>
-<h4 class="card-title">TBA: Data Anonymization</h4> <!-- edit when available -->
+<h4 class="card-title">TBA: Data Anonymization</h4> <!-- TODO: edit when available -->
 <p class="card-text">Implement data anonymization techniques in R. (X h)</p> <!-- edit when available -->
 <a href="#" class="stretched-link" rel="noopener"></a><!-- Add link when available -->
 </div>
@@ -638,7 +638,7 @@ For data protection guidance, contact the [LMU Data Protection Officer](https://
 A **Data Management Plan (DMP)** documents how you will handle research data throughout your project. Writing a DMP prompts you to think and document decisions you might otherwise leave implicit. 
 
 ::: {.ms-1} 
-- **Decide _before_ data collection whether you will eventually share your data publicly (and where)**, in order to (i) get ethics approval on the right plan, (ii) design consent form for participants, (iii) collect appropriate metadata for the target repository, ect.
+- **Decide _before_ data collection whether you will eventually share your data publicly (and where)**, in order to (i) get ethics approval on the right plan, (ii) design consent forms for participants, (iii) collect appropriate metadata for the target repository, etc.
 - **Start with what you know, and refine the details as your project develops.** Your DMP is a living document that you will refine to match the reality of your project while ensuring data protection and streamline collaborations (see [2.2. Data Management](02-collect-and-manage.qmd#sec-data-management){.mark}, [3.1. Data Processing & Analysis](03-analyze-and-collaborate.qmd#sec-data-processing-analysis){.mark}, and [4.1. FAIR Data Sharing](04-preserve-and-share.qmd#sec-fair-data-sharing){.mark}).
 :::
 
@@ -659,7 +659,7 @@ The specific questions vary by discipline, data type, and funder requirements. D
 <br>
 
 :::{.callout-tip}
-## Tip for research groups to streamline this process
+## Tips for research groups to streamline this process
 - **Share templates and example DMP amongst team members** on a common server space.
 - **Create Standard Operating Procedures for the team.** Define when a data management plan must be updated, who is responsible, and how updates are reviewed/approved and communicated.
 :::
@@ -831,7 +831,7 @@ A great tool to create your statistical plan, especially for early career resear
 
 <br>
 
-To get support with pre-analysis planning, you can book a consultation with the [LMU statistical consulting unit (StaBLab)](https://www.stat.lmu.de/stablab/de/). 
+To get support with planning your analytical approach, you can book a consultation with the [LMU statistical consulting unit (StaBLab)](https://www.stat.lmu.de/stablab/de/). 
 
 <br>
 
@@ -946,7 +946,7 @@ In our context, a computer simulation is the generation of artificial data to bu
 <br>
 
 - **Test your statistical intuition or demonstrate mathematical properties you cannot easily anticipate**.  
-_Example: Check whether there are more than 5% significant effects for a variable in a model when supposedly random data are generated._
+_Example: Check whether there are more than 5% significant effects (assuming $\alpha = .05$) when random data from $H_0$ are generated._
 
 - **Understand sampling theory and probability distributions or test whether you understand the underlying processes of your system.**  
 _Example: See whether simulated data drawn from specific distributions is comparable to real data._
@@ -959,7 +959,7 @@ _Example: To strengthen your planned confirmatory analyses before collecting dat
 
 <br>
 
-Generating an artificial dataset in R (see our [simulation tutorial](https://lmu-osc.github.io/Introduction-Simulations-in-R/)) is much easier than researchers often believe it to be and is often very helpful, even when you need to make assumptions about variable distribution or when the parameter space is not well known.
+Generating an artificial dataset in R (see our [simulation tutorial](https://lmu-osc.github.io/Introduction-Simulations-in-R/)) is much easier than you might think and is often very helpful, even when you need to make assumptions about variable distribution or when the parameter space is not well known.
 
 
 
@@ -1029,10 +1029,10 @@ Power analysis is relevant whether you are designing a project from scratch or r
 
 For a very basic power calculation, you can use simple R functions if you know 3 out of 4 of these parameters: 
 
-- required sample size n (usually the one missing)
-- desired power (default 0.80)
-- the alpha level (default 0.05)
-- the expected effect size (has to be estimated or extracted from the literature on the form of d, f, etc.)
+- required sample size *n* (usually the one missing)
+- desired power *1 - β* (default 0.80)
+- the alpha level *α* (default 0.05)
+- the expected effect size (has to be estimated or extracted from the literature on the form of *d*, *f*, etc.)
 
 To get support with pre-analysis planning, you can book a consultation with the [LMU statistical consulting unit (StaBLab)](https://www.stat.lmu.de/stablab/de/).
 
@@ -1044,11 +1044,11 @@ To get support with pre-analysis planning, you can book a consultation with the 
 
 <br>
 
-The **legitimate post-hoc power** is computed with your actual n, and the same effect size that you plugged into your a-priori power analysis. This analysis gives you the achieved power to detect your assumed effect.
+The **legitimate post-hoc power** is computed with your actual *n*, and the same effect size that you plugged into your a-priori power analysis. This analysis gives you the achieved power to detect your assumed effect.
 
 <br>
 
-The **flawed version of post-hoc power** is called **“observed power”**: If an analysis yields a non-significant result, some researchers calculate the post-hoc power, but plug in the observed effect size. “Observed power”, however, is just a one‑to‑one function of the p‑value (a non-significant p-value returns a low power < 50 %, a just significant p-value of .05 always yields a power of exactly 50%). Observed power adds no new information to the p-value and is essentially meaningless. Do not compute this type of post-hoc power!
+The **flawed version of post-hoc power** is called **“observed power”**: If an analysis yields a non-significant result, some researchers calculate the post-hoc power, but plug in the observed effect size. “Observed power”, however, is just a one‑to‑one function of the *p*‑value (a non-significant *p*-value returns a low power < 50 %, a just significant *p*‑value of .05 always yields a power of exactly 50%). Observed power adds no new information to the *p*‑value and is essentially meaningless. Do not compute this type of post-hoc power!
 
 
 ::: {.container .my-4}

@@ -224,7 +224,7 @@ Importantly, if data are removed from an existing repository, they may still rem
 :::
 
 :::{.callout-tip}
-## Tip for research groups:
+## Tips for research groups:
 **Create a LRZ GitLab "organization" for the team.**  This allows repositories, permissions, and project resources to be managed centrally rather than under individual accounts. This ensures continuity when team members leave, as ownership can be transferred to e.g. the PI and other administrators of the organization. 
 :::
 
@@ -467,7 +467,7 @@ As with all documentation, your project repository’s documentation should be w
 
 - **Create a README (e.g. a .md or .txt file) early and update it as you go.** Your README is the entry point to your project. A good README answers the essential questions: who created the script, what it contains, how they relate to other scripts and in which order scripts should be run, what the dependencies of the project are, how to obtain/access the input data, whether the code can be reused. 
 - **Annotate your code explaining _why_ you made a decision.** All parameter values used as input for a function, or other decisions, should be justified minimally as comments in your code to later be included in your manuscript. **Do not include sensitive information such as credentials or name of excluded patient as comments in your code!**
-- **Update your data dictionary and README files.** Your data documentation should be updated to include all data exclusion, change in range of possible values, ect. (see [2.2.4. Documentation](02-collect-and-manage.qmd#sec-data-management){.mark}).
+- **Update your data dictionary and README files.** Your data documentation should be updated to include all data exclusion, change in range of possible values, etc. (see [2.2.4. Documentation](02-collect-and-manage.qmd#sec-data-management){.mark}).
 
 
 Example README to allow team members to review your code:
@@ -833,7 +833,7 @@ Transparent and complete reporting is essential for the interpretation, verifica
 - **Sample size justification** – power calculations or other reasoning behind the chosen sample size.
 - **Statistical methods** – the models used, assumptions checked, handling of missing data, variable transformations, and any sensitivity or robustness analyses.
 - **Data preprocessing and analysis workflow** – steps such as cleaning, filtering, or derived variables that affect the final dataset used for analysis.
-- **Results with appropriate uncertainty** – effect estimates, confidence intervals, p-values, and clear descriptions of the comparisons performed.
+- **Results with appropriate uncertainty** – effect estimates, confidence intervals, *p*‑values, and clear descriptions of the comparisons performed.
 - **Participant flow and descriptive statistics** – numbers of observations at each stage and summary statistics of the analyzed sample.
 - **Limitations and potential sources of bias** – issues such as confounding, measurement error, or selection bias.
 - **Data, code, and materials availability** – where readers can access datasets, analysis scripts, or supplementary materials to reproduce the analysis.

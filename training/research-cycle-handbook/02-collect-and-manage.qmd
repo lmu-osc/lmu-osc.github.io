@@ -63,7 +63,7 @@ State-of-the-art practices for reproducible data acquisition include:
 
 <!-- why is there a weird white space between the frame and the text in this call outbox?-->
 ::: {.callout-tip .mx-4}
-## Tip for research groups to streamline this process
+## Tips for research groups to streamline this process
 - **Create standard data acquisition procedures within the team.** From step-by-step wet-lab procedure, to the settings of measuring devices and the reproducible data pre-processing using script, all regularly repeated steps should be documented and standardized to be replicated precisely by all team members. 
 - **Share standard operating procedures** through e.g. common server space such as [LRZ Sync & Share](https://syncandshare.lrz.de/login), specialized online tools like [protocols.io](https://www.protocols.io/) or electronic lab notebooks, or [LRZ GitLab](https://gitlab.lrz.de/users/sign_in) for scripts.
 :::
@@ -273,7 +273,7 @@ What follows are general practices. Your domain has specific conventions for fil
 
 <!-- why is there a weird white space between the frame and the text in this call outbox?-->
 ::: {.callout-tip .mx-4}
-## Tip for research groups to streamline this process
+## Tips for research groups to streamline this process
 - **Create standard operating procedures within the team.** For instance: where and when data back up should be made and in which file format, what project folder structure and conventions for naming files should be adopted, which metadata should routinely be acquired, what documentation should be created and when, and how and where a history of versions should be preserved. 
 - **Assign responsibilities.** For developing such SOPs for a specific kind of project and for checking all members have implemented those SOPs at a specified time point in their project (e.g. hold a data quality validation meeting prior to starting data analyses, see [Collect & Manage Checklist](#collect-manage-checklist){.mark}).
 :::
@@ -799,7 +799,7 @@ Participants have the right to understand what they are agreeing to. Your consen
 
 
 :::{.callout-tip}
-## Tip for research groups:
+## Tips for research groups:
 **Maintain a centralized log of all ethics approvals, consent forms, and compliance certifications for easy reference by team members.**
 :::
 
