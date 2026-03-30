@@ -253,7 +253,7 @@ Field and sometimes lab researchers have to work with analogue notebooks first, 
 
 <br>
 
-- **Digitalize your data soon after data collection**, e.g. using data entry form from a relational database such as [MySQL](https://www.mysql.com/)
+- **Digitalize your data soon after data collection**, e.g. using data entry form from a relational database such as [postgreSQL](https://www.postgresql.org/)
 - **Create automatic validation checks** for data entry so e.g. values outside of expected range get immediately identified (see [2.4. Quality control](#sec-quality-control){.mark})
 - **Transfer digital data** (e.g. pictures, video recordings) from temporary storage solutions (e.g. camera storage) to permanent storage solutions (see [2.1.1. Storage](#sec-data-management){.mark})
 - **Check your data entries**, e.g. after a day, to correct possible mistakes in transcription 
@@ -273,13 +273,13 @@ Field and sometimes lab researchers have to work with analogue notebooks first, 
 <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
   <div class="d-flex gap-2">
     <div class="orc-card-tool-icon p-2 rounded">
-      <img src="https://www.svgrepo.com/show/303251/mysql-logo.svg" class="img-fluid" alt="MySQL icon">
+      <img src="https://www.postgresql.org/favicon.ico" class="img-fluid" alt="postgreSQL icon">
     </div>
   </div>
 </div>
-<h4 class="card-title">MySQL</h4>
+<h4 class="card-title">postgreSQL</h4>
 <p class="card-text">Open source relational database software</p>
-<a href="https://www.mysql.com/" class="stretched-link" target="_blank" rel="noopener"></a>
+<a href="https://www.postgresql.org/" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
 ```
 :::
