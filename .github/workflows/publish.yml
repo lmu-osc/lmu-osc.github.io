@@ -74,7 +74,7 @@ jobs:
           path: quarto-render.log
 
       - name: Publish pre-rendered site
-        timeout-minutes: 10
+        timeout-minutes: 6
         run: quarto publish gh-pages --no-render
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
