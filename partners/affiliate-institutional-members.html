@@ -40,7 +40,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
@@ -83,9 +82,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-name','listing-image_url','listing-contactName','listing-contactLink','listing-website_url','listing-description',{ data: ['index'] },{ data: ['categories'] }],
+      valueNames: ['listing-name','listing-image_url','listing-contact','listing-website_url','listing-description',{ data: ['index'] },{ data: ['categories'] }],
       
-      searchColumns: ["listing-name","listing-image_url","listing-contactName","listing-contactLink","listing-website_url","listing-description"],
+      searchColumns: ["listing-name","listing-image_url","listing-contact","listing-website_url","listing-description"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -313,289 +312,385 @@ if (!contactLink || contactLink.textContent.trim() === '' || contactLink.textCon
 
 <div class="quarto-listing quarto-listing-container-custom" id="listing-listing">
 <div class="container">
-
-<div class="row g-4 align-items-stretch pt-3 pb-1">
-<div class="col-lg-4 d-flex">
-<div class="card border-light-subtle shadow-sm p-3 rounded text-center w-100 member-grid-item">
-<img src="images/bmc.jpeg" alt="Biomedical Center Munich (BMC)" class="member-grid-image mb-2">
-<div class="card-body flex-grow-1">
-<h5 class="card-title anchored">Biomedical Center Munich (BMC)</h5>
-
-<p class="card-text text-muted mb-0">Contact Person:</p>
-<a href="../people/people/tobias-straub.html" class="contact-link mb-2">Dr. Tobias Straub</a>
-
-<div class="mt-3 website-button">
-<a href="https://www.med.lmu.de/bmc/en/" class="btn btn-outline-secondary social-link">
-<i class="fa-solid fa-globe"></i> Website
-</a>
-</div>
-
-</div>
-</div>
-</div>
-<div class="col-lg-8">
-
-<div class="description-text mt-2">The Biomedical Center Munich (BMC) is striving to enhance the quality and reproducibility of its research through the adoption of Open Science practices. With a focus on improving experimental design, documentation, and data management, BMC aims to adhere to FAIR principles (Findable, Accessible, Interoperable, Re-usable). Initial efforts include raising awareness among researchers, training in doctoral programs, and evaluating the effectiveness of these measures. Current activities involve participation in Responsible Research Days and integration of Open Science concepts into doctoral programs. Looking ahead, BMC plans to implement Open Science practices institute-wide over the next five years, including creating guidelines and checklists for researchers. Collaboration with other biomedical institutes and the Open Science Center (OSC) is key to sharing experiences and fostering a campus-wide Open Science initiative.
-</div>
-
-</div>
-</div>
-
-<hr>
-
-<div class="row g-4 align-items-stretch pt-3 pb-1">
-<div class="col-lg-4 d-flex">
-<div class="card border-light-subtle shadow-sm p-3 rounded text-center w-100 member-grid-item">
-<img src="images/lmu_logo.jpg" alt="Department of Statistics" class="member-grid-image mb-2">
-<div class="card-body flex-grow-1">
-<h5 class="card-title anchored">Department of Statistics</h5>
-
-<div class="mt-3 website-button">
-<a href="https://www.stat.lmu.de/en/" class="btn btn-outline-secondary social-link">
-<i class="fa-solid fa-globe"></i> Website
-</a>
-</div>
-
-</div>
-</div>
-</div>
-<div class="col-lg-8">
-
-<div class="description-text mt-2">The LMU department of statistics supports the goals of the OSC and wants to take on a leading role in fostering good research practices and promoting open science. We believe that statistics as a subject plays a major role in solving the reproducibility crisis and in working towards better, open research.
-</div>
-
-</div>
-</div>
-
-<hr>
-
-<div class="row g-4 align-items-stretch pt-3 pb-1">
-<div class="col-lg-4 d-flex">
-<div class="card border-light-subtle shadow-sm p-3 rounded text-center w-100 member-grid-item">
-<img src="images/itg.png" alt="Digital Humanities Center - IT-Gruppe Geisteswisssenschaften" class="member-grid-image mb-2">
-<div class="card-body flex-grow-1">
-<h5 class="card-title anchored">Digital Humanities Center - IT-Gruppe Geisteswisssenschaften</h5>
-
-<p class="card-text text-muted mb-0">Contact Person:</p>
-<a href="https://www.itg.uni-muenchen.de/personen/luecke_stephan/index.html" class="contact-link mb-2">Dr. Stephan Lücke</a>
-
-<div class="mt-3 website-button">
-<a href="https://www.itg.uni-muenchen.de/index.html" class="btn btn-outline-secondary social-link">
-<i class="fa-solid fa-globe"></i> Website
-</a>
-</div>
-
-</div>
-</div>
-</div>
-<div class="col-lg-8">
-
-<div class="description-text mt-2">The IT-Gruppe Geisteswissenschaften is a Digital Humanities Competence- and Datacenter. It provides IT-infrastructure, plans, organizes and implements digital research &amp; education. It also supports research data management services in cooperation with the Universitätsbibliothek (Open Access LMU und Open Data LMU). The ITG is committed to Open Access and FAIR data principles to ensure a maximum of availability, transparency, verifiability and sustainability of research software (including data, results, code). Activities in the context of open science are well documented by various DH-projects. Good examples are VerbaAlpina (geolinguistics, research data, methodology), KiT (innovative publication in the context of corpus linguistics) or DHVLab (digital research and teaching infrastructure for the humanities).
-</div>
-
-</div>
-</div>
-
-<hr>
-
-<div class="row g-4 align-items-stretch pt-3 pb-1">
-<div class="col-lg-4 d-flex">
-<div class="card border-light-subtle shadow-sm p-3 rounded text-center w-100 member-grid-item">
-<img src="images/lmu_logo.jpg" alt="Faculty of Psychology and Educational Sciences" class="member-grid-image mb-2">
-<div class="card-body flex-grow-1">
-<h5 class="card-title anchored">Faculty of Psychology and Educational Sciences</h5>
-
-<p class="card-text text-muted mb-0">Contact Person:</p>
-<a href="../people/people/felix-schoenbrodt.html" class="contact-link mb-2">Prof. Dr. Felix Schönbrodt</a>
-
-<div class="mt-3 website-button">
-<a href="https://www.lmu.de/psyedu/en/" class="btn btn-outline-secondary social-link">
-<i class="fa-solid fa-globe"></i> Website
-</a>
-</div>
-
-</div>
-</div>
-</div>
-<div class="col-lg-8">
-
-<div class="description-text mt-2">The fostering of research transparency and reproducibility, both in quantitative and qualitative research, is a stated goal of the Faculty of Psychology and Educational Science. We consider replicability and reproducibility of quantitative and qualitative research results as cornerstones of generalizability and reliability in science.
-</div>
-
-</div>
-</div>
-
-<hr>
-
-<div class="row g-4 align-items-stretch pt-3 pb-1">
-<div class="col-lg-4 d-flex">
-<div class="card border-light-subtle shadow-sm p-3 rounded text-center w-100 member-grid-item">
-<img src="images/lmu_logo.jpg" alt="Faculty of Veterinary Medicine" class="member-grid-image mb-2">
-<div class="card-body flex-grow-1">
-<h5 class="card-title anchored">Faculty of Veterinary Medicine</h5>
-
-<div class="mt-3 website-button">
-<a href="https://www.vetmed.lmu.de/en/" class="btn btn-outline-secondary social-link">
-<i class="fa-solid fa-globe"></i> Website
-</a>
-</div>
-
-</div>
-</div>
-</div>
-<div class="col-lg-8">
-
-</div>
-</div>
-
-<hr>
-
-<div class="row g-4 align-items-stretch pt-3 pb-1">
-<div class="col-lg-4 d-flex">
-<div class="card border-light-subtle shadow-sm p-3 rounded text-center w-100 member-grid-item">
-<img src="images/lrz_logo.png" alt="Leibniz-Rechenzentrum (LRZ)" class="member-grid-image mb-2">
-<div class="card-body flex-grow-1">
-<h5 class="card-title anchored">Leibniz-Rechenzentrum (LRZ)</h5>
-
-<div class="mt-3 website-button">
-<a href="https://www.lrz.de/" class="btn btn-outline-secondary social-link">
-<i class="fa-solid fa-globe"></i> Website
-</a>
-</div>
-
-</div>
-</div>
-</div>
-<div class="col-lg-8">
-
-<div class="description-text mt-2">The Leibniz-Rechenzentrum supports the work of the LMU-OSC by providing infrastructures related to open science practices.
-</div>
-
-</div>
-</div>
-
-<hr>
-
-<div class="row g-4 align-items-stretch pt-3 pb-1">
-<div class="col-lg-4 d-flex">
-<div class="card border-light-subtle shadow-sm p-3 rounded text-center w-100 member-grid-item">
-<img src="images/ebdc.png" alt="LMU-ifo Economics &amp; Business Data Center (EBDC)" class="member-grid-image mb-2">
-<div class="card-body flex-grow-1">
-<h5 class="card-title anchored">LMU-ifo Economics &amp; Business Data Center (EBDC)</h5>
-
-<p class="card-text text-muted mb-0">Contact Person:</p>
-<a href="../people/people/sebastian-wichert.html" class="contact-link mb-2">Dr. Sebastian Wichert</a>
-
-<div class="mt-3 website-button">
-<a href="https://www.ifo.de/ebdc" class="btn btn-outline-secondary social-link">
-<i class="fa-solid fa-globe"></i> Website
-</a>
-</div>
-
-</div>
-</div>
-</div>
-<div class="col-lg-8">
-
-<div class="description-text mt-2">Scientific integrity is a core principle every researcher has to live up to every day. The LMU-ifo Economics &amp; Business Data Center (EBDC), the joint research data center of the ifo Institute and the LMU Munich, supports students and researchers from Munich and beyond with this task. We, the EBDC team, offer guidance and courses on good scientific practices and research data management. In addition, researchers have the opportunity to archive their research data at EBDC and make it available for replication and secondary research projects in several ways. Furthermore in our accredited research data center, local and visiting researchers have the possibility to work in a secure, well-equipped and supervised environment with sensitive, access-restricted data sets either from external data holders or the ifo firm data. The cooperation with the Research Data Center of the Federal Statistical Office also makes it possible to access research data sets from German official statistics.
-</div>
-
-</div>
-</div>
-
-<hr>
-
-<div class="row g-4 align-items-stretch pt-3 pb-1">
-<div class="col-lg-4 d-flex">
-<div class="card border-light-subtle shadow-sm p-3 rounded text-center w-100 member-grid-item">
-<img src="images/lmu_logo.jpg" alt="Faculty of Medicine" class="member-grid-image mb-2">
-<div class="card-body flex-grow-1">
-<h5 class="card-title anchored">Faculty of Medicine</h5>
-
-<div class="mt-3 website-button">
-<a href="https://www.med.lmu.de/en/" class="btn btn-outline-secondary social-link">
-<i class="fa-solid fa-globe"></i> Website
-</a>
-</div>
-
-</div>
-</div>
-</div>
-<div class="col-lg-8">
-
-<div class="description-text mt-2">We are committed to the principles of good scientific practice as we consider replicability to be of utmost importance in both basic and translational research. As one of our Open Science initiatives, our Department of Radiation Oncology has established Radiation Oncology, a successful peer-reviewed Open Access journal which has already become one of the respected journals in its field (2015 journal impact factor 2.5).
-</div>
-
-</div>
-</div>
-
-<hr>
-
-<div class="row g-4 align-items-stretch pt-3 pb-1">
-<div class="col-lg-4 d-flex">
-<div class="card border-light-subtle shadow-sm p-3 rounded text-center w-100 member-grid-item">
-<img src="images/lmu_logo.jpg" alt="Munich Center for Neurosciences - Brain &amp; Mind" class="member-grid-image mb-2">
-<div class="card-body flex-grow-1">
-<h5 class="card-title anchored">Munich Center for Neurosciences - Brain &amp; Mind</h5>
-
-<p class="card-text text-muted mb-0">Contact Person:</p>
-<a href="https://www.gsn.uni-muenchen.de/people/management/gsn-team/goron/index.html" class="contact-link mb-2">Raluca Goron</a>
-
-<div class="mt-3 website-button">
-<a href="https://www.gsn.uni-muenchen.de/index.html" class="btn btn-outline-secondary social-link">
-<i class="fa-solid fa-globe"></i> Website
-</a>
-</div>
-
-</div>
-</div>
-</div>
-<div class="col-lg-8">
-
-<div class="description-text mt-2">The Munich Center for Neurosciences - Brain &amp; Mind (MCN-LMU) and its teaching entity - the Graduate School of Systemic Neurosciences (GSN-LMU) - aim to link local research groups from all areas of the neurosciences. Through creating an interdisciplinary network of excellent research with strong international connections, MCN and GSN provide a stimulating environment for students and faculty to produce novel formulations of current concepts and theories. Since 2005, MCN and GSN have become the hub for neuroscience research and education in the Munich area. Our commitment to excellence sets high standards for researchers, who strive for quality and replicability. The Scientific Boards of MCN and GSN have long supported courses and events on responsible science and good scientific practice. At the institutional level, the most recent commitment to the LMU open science initiative will be enhanced by outreach and interdisciplinary dialogue, engaging GSN’s 147 faculty, more than 220 current students, as well as over 230 alumni, and 100 MCN members, respectively. Long-standing routines such as the Thesis Advisory Committees (TAC) for all doctoral researchers complement any further actions toward scientific integrity.
-</div>
-
-</div>
-</div>
-
-<hr>
-
-<div class="row g-4 align-items-stretch pt-3 pb-1">
-<div class="col-lg-4 d-flex">
-<div class="card border-light-subtle shadow-sm p-3 rounded text-center w-100 member-grid-item">
-<img src="images/ub.JPG" alt="Universitätsbibliothek" class="member-grid-image mb-2">
-<div class="card-body flex-grow-1">
-<h5 class="card-title anchored">Universitätsbibliothek</h5>
-
-<div class="mt-3 website-button">
-<a href="https://www.ub.uni-muenchen.de/index.html" class="btn btn-outline-secondary social-link">
-<i class="fa-solid fa-globe"></i> Website
-</a>
-</div>
-
-</div>
-</div>
-</div>
-<div class="col-lg-8">
-
-<div class="description-text mt-2">The University Library supports Open Access and Open Science and offers a variety of related services for all LMU faculties.
-</div>
-
-</div>
-</div>
-
+    
+        <div class="row g-4 align-items-stretch pt-3 pb-1">
+            <div class="col-lg-4 d-flex">
+                <div class="card border-light-subtle shadow-sm p-3 rounded text-center w-100 member-grid-item">
+                    <img src="images/bmc.jpeg" alt="Biomedical Center Munich (BMC)" class="member-grid-image mb-2">
+                    <div class="card-body flex-grow-1">
+                        <h5 class="card-title">
+                            Biomedical Center Munich (BMC)
+                        </h5>
+                        
+                            
+                            
+                                <p class="card-text text-muted mb-0">Contact Person:</p>
+                                
+                                    <a href="../people/people/tobias-straub.html" class="contact-link d-block mb-2">
+                                        Dr. Tobias Straub
+                                    </a>
+                                
+                            
+                        
+                                
+                                    <div class="mt-3 website-button">
+                                        <a href="https://www.med.lmu.de/bmc/en/" class="btn btn-outline-secondary social-link">
+                                            <i class="fa-solid fa-globe"></i> Website
+                                        </a>
+                                    </div>
+                                    
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8">
+                
+                                                
+                                                    <div class="description-text mt-2">
+                                                        The Biomedical Center Munich (BMC) is striving to enhance the quality and reproducibility of its research through the adoption of Open Science practices. With a focus on improving experimental design, documentation, and data management, BMC aims to adhere to FAIR principles (Findable, Accessible, Interoperable, Re-usable). Initial efforts include raising awareness among researchers, training in doctoral programs, and evaluating the effectiveness of these measures. Current activities involve participation in Responsible Research Days and integration of Open Science concepts into doctoral programs. Looking ahead, BMC plans to implement Open Science practices institute-wide over the next five years, including creating guidelines and checklists for researchers. Collaboration with other biomedical institutes and the Open Science Center (OSC) is key to sharing experiences and fostering a campus-wide Open Science initiative.
+
+                                                    </div>
+                                                    
+            </div>
+        </div>
+        
+            <hr>
+            
+                
+        <div class="row g-4 align-items-stretch pt-3 pb-1">
+            <div class="col-lg-4 d-flex">
+                <div class="card border-light-subtle shadow-sm p-3 rounded text-center w-100 member-grid-item">
+                    <img src="images/lmu_logo.jpg" alt="Department of Statistics" class="member-grid-image mb-2">
+                    <div class="card-body flex-grow-1">
+                        <h5 class="card-title">
+                            Department of Statistics
+                        </h5>
+                        
+                                
+                                    <div class="mt-3 website-button">
+                                        <a href="https://www.stat.lmu.de/en/" class="btn btn-outline-secondary social-link">
+                                            <i class="fa-solid fa-globe"></i> Website
+                                        </a>
+                                    </div>
+                                    
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8">
+                
+                                                
+                                                    <div class="description-text mt-2">
+                                                        The LMU department of statistics supports the goals of the OSC and wants to take on a leading role in fostering good research practices and promoting open science. We believe that statistics as a subject plays a major role in solving the reproducibility crisis and in working towards better, open research.
+
+                                                    </div>
+                                                    
+            </div>
+        </div>
+        
+            <hr>
+            
+                
+        <div class="row g-4 align-items-stretch pt-3 pb-1">
+            <div class="col-lg-4 d-flex">
+                <div class="card border-light-subtle shadow-sm p-3 rounded text-center w-100 member-grid-item">
+                    <img src="images/itg.png" alt="Digital Humanities Center - IT-Gruppe Geisteswisssenschaften" class="member-grid-image mb-2">
+                    <div class="card-body flex-grow-1">
+                        <h5 class="card-title">
+                            Digital Humanities Center - IT-Gruppe Geisteswisssenschaften
+                        </h5>
+                        
+                            
+                            
+                                <p class="card-text text-muted mb-0">Contact Person:</p>
+                                
+                                    <a href="https://www.itg.uni-muenchen.de/personen/luecke_stephan/index.html" class="contact-link d-block mb-2">
+                                        Dr. Stephan Lücke
+                                    </a>
+                                
+                            
+                        
+                                
+                                    <div class="mt-3 website-button">
+                                        <a href="https://www.itg.uni-muenchen.de/index.html" class="btn btn-outline-secondary social-link">
+                                            <i class="fa-solid fa-globe"></i> Website
+                                        </a>
+                                    </div>
+                                    
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8">
+                
+                                                
+                                                    <div class="description-text mt-2">
+                                                        The IT-Gruppe Geisteswissenschaften is a Digital Humanities Competence- and Datacenter. It provides IT-infrastructure, plans, organizes and implements digital research &amp; education. It also supports research data management services in cooperation with the Universitätsbibliothek (Open Access LMU und Open Data LMU). The ITG is committed to Open Access and FAIR data principles to ensure a maximum of availability, transparency, verifiability and sustainability of research software (including data, results, code). Activities in the context of open science are well documented by various DH-projects. Good examples are VerbaAlpina (geolinguistics, research data, methodology), KiT (innovative publication in the context of corpus linguistics) or DHVLab (digital research and teaching infrastructure for the humanities).
+
+                                                    </div>
+                                                    
+            </div>
+        </div>
+        
+            <hr>
+            
+                
+        <div class="row g-4 align-items-stretch pt-3 pb-1">
+            <div class="col-lg-4 d-flex">
+                <div class="card border-light-subtle shadow-sm p-3 rounded text-center w-100 member-grid-item">
+                    <img src="images/lmu_logo.jpg" alt="Faculty of Psychology and Educational Sciences" class="member-grid-image mb-2">
+                    <div class="card-body flex-grow-1">
+                        <h5 class="card-title">
+                            Faculty of Psychology and Educational Sciences
+                        </h5>
+                        
+                            
+                            
+                                <p class="card-text text-muted mb-0">Contact Person:</p>
+                                
+                                    <a href="../people/people/felix-schoenbrodt.html" class="contact-link d-block mb-2">
+                                        Prof. Dr. Felix Schönbrodt
+                                    </a>
+                                
+                            
+                        
+                                
+                                    <div class="mt-3 website-button">
+                                        <a href="https://www.lmu.de/psyedu/en/" class="btn btn-outline-secondary social-link">
+                                            <i class="fa-solid fa-globe"></i> Website
+                                        </a>
+                                    </div>
+                                    
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8">
+                
+                                                
+                                                    <div class="description-text mt-2">
+                                                        The fostering of research transparency and reproducibility, both in quantitative and qualitative research, is a stated goal of the Faculty of Psychology and Educational Science. We consider replicability and reproducibility of quantitative and qualitative research results as cornerstones of generalizability and reliability in science.
+
+                                                    </div>
+                                                    
+            </div>
+        </div>
+        
+            <hr>
+            
+                
+        <div class="row g-4 align-items-stretch pt-3 pb-1">
+            <div class="col-lg-4 d-flex">
+                <div class="card border-light-subtle shadow-sm p-3 rounded text-center w-100 member-grid-item">
+                    <img src="images/lmu_logo.jpg" alt="Faculty of Veterinary Medicine" class="member-grid-image mb-2">
+                    <div class="card-body flex-grow-1">
+                        <h5 class="card-title">
+                            Faculty of Veterinary Medicine
+                        </h5>
+                        
+                                
+                                    <div class="mt-3 website-button">
+                                        <a href="https://www.vetmed.lmu.de/en/" class="btn btn-outline-secondary social-link">
+                                            <i class="fa-solid fa-globe"></i> Website
+                                        </a>
+                                    </div>
+                                    
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8">
+                
+                                                
+            </div>
+        </div>
+        
+            <hr>
+            
+                
+        <div class="row g-4 align-items-stretch pt-3 pb-1">
+            <div class="col-lg-4 d-flex">
+                <div class="card border-light-subtle shadow-sm p-3 rounded text-center w-100 member-grid-item">
+                    <img src="images/lrz_logo.png" alt="Leibniz-Rechenzentrum (LRZ)" class="member-grid-image mb-2">
+                    <div class="card-body flex-grow-1">
+                        <h5 class="card-title">
+                            Leibniz-Rechenzentrum (LRZ)
+                        </h5>
+                        
+                                
+                                    <div class="mt-3 website-button">
+                                        <a href="https://www.lrz.de/" class="btn btn-outline-secondary social-link">
+                                            <i class="fa-solid fa-globe"></i> Website
+                                        </a>
+                                    </div>
+                                    
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8">
+                
+                                                
+                                                    <div class="description-text mt-2">
+                                                        The Leibniz-Rechenzentrum supports the work of the LMU-OSC by providing infrastructures related to open science practices.
+
+                                                    </div>
+                                                    
+            </div>
+        </div>
+        
+            <hr>
+            
+                
+        <div class="row g-4 align-items-stretch pt-3 pb-1">
+            <div class="col-lg-4 d-flex">
+                <div class="card border-light-subtle shadow-sm p-3 rounded text-center w-100 member-grid-item">
+                    <img src="images/ebdc.png" alt="LMU-ifo Economics &amp; Business Data Center (EBDC)" class="member-grid-image mb-2">
+                    <div class="card-body flex-grow-1">
+                        <h5 class="card-title">
+                            LMU-ifo Economics &amp; Business Data Center (EBDC)
+                        </h5>
+                        
+                            
+                            
+                                <p class="card-text text-muted mb-0">Contact Person:</p>
+                                
+                                    <a href="../people/people/sebastian-wichert.html" class="contact-link d-block mb-2">
+                                        Dr. Sebastian Wichert
+                                    </a>
+                                
+                            
+                        
+                                
+                                    <div class="mt-3 website-button">
+                                        <a href="https://www.ifo.de/ebdc" class="btn btn-outline-secondary social-link">
+                                            <i class="fa-solid fa-globe"></i> Website
+                                        </a>
+                                    </div>
+                                    
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8">
+                
+                                                
+                                                    <div class="description-text mt-2">
+                                                        Scientific integrity is a core principle every researcher has to live up to every day. The LMU-ifo Economics &amp; Business Data Center (EBDC), the joint research data center of the ifo Institute and the LMU Munich, supports students and researchers from Munich and beyond with this task. We, the EBDC team, offer guidance and courses on good scientific practices and research data management. In addition, researchers have the opportunity to archive their research data at EBDC and make it available for replication and secondary research projects in several ways. Furthermore in our accredited research data center, local and visiting researchers have the possibility to work in a secure, well-equipped and supervised environment with sensitive, access-restricted data sets either from external data holders or the ifo firm data. The cooperation with the Research Data Center of the Federal Statistical Office also makes it possible to access research data sets from German official statistics.
+
+                                                    </div>
+                                                    
+            </div>
+        </div>
+        
+            <hr>
+            
+                
+        <div class="row g-4 align-items-stretch pt-3 pb-1">
+            <div class="col-lg-4 d-flex">
+                <div class="card border-light-subtle shadow-sm p-3 rounded text-center w-100 member-grid-item">
+                    <img src="images/lmu_logo.jpg" alt="Faculty of Medicine" class="member-grid-image mb-2">
+                    <div class="card-body flex-grow-1">
+                        <h5 class="card-title">
+                            Faculty of Medicine
+                        </h5>
+                        
+                                
+                                    <div class="mt-3 website-button">
+                                        <a href="https://www.med.lmu.de/en/" class="btn btn-outline-secondary social-link">
+                                            <i class="fa-solid fa-globe"></i> Website
+                                        </a>
+                                    </div>
+                                    
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8">
+                
+                                                
+                                                    <div class="description-text mt-2">
+                                                        We are committed to the principles of good scientific practice as we consider replicability to be of utmost importance in both basic and translational research. As one of our Open Science initiatives, our Department of Radiation Oncology has established Radiation Oncology, a successful peer-reviewed Open Access journal which has already become one of the respected journals in its field (2015 journal impact factor 2.5).
+
+                                                    </div>
+                                                    
+            </div>
+        </div>
+        
+            <hr>
+            
+                
+        <div class="row g-4 align-items-stretch pt-3 pb-1">
+            <div class="col-lg-4 d-flex">
+                <div class="card border-light-subtle shadow-sm p-3 rounded text-center w-100 member-grid-item">
+                    <img src="images/lmu_logo.jpg" alt="Munich Center for Neurosciences - Brain &amp; Mind" class="member-grid-image mb-2">
+                    <div class="card-body flex-grow-1">
+                        <h5 class="card-title">
+                            Munich Center for Neurosciences - Brain &amp; Mind
+                        </h5>
+                        
+                            
+                            
+                                <p class="card-text text-muted mb-0">Contact Person:</p>
+                                
+                                    <a href="https://www.gsn.uni-muenchen.de/people/management/gsn-team/goron/index.html" class="contact-link d-block mb-2">
+                                        Raluca Goron
+                                    </a>
+                                
+                            
+                        
+                                
+                                    <div class="mt-3 website-button">
+                                        <a href="https://www.gsn.uni-muenchen.de/index.html" class="btn btn-outline-secondary social-link">
+                                            <i class="fa-solid fa-globe"></i> Website
+                                        </a>
+                                    </div>
+                                    
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8">
+                
+                                                
+                                                    <div class="description-text mt-2">
+                                                        The Munich Center for Neurosciences - Brain &amp; Mind (MCN-LMU) and its teaching entity - the Graduate School of Systemic Neurosciences (GSN-LMU) - aim to link local research groups from all areas of the neurosciences. Through creating an interdisciplinary network of excellent research with strong international connections, MCN and GSN provide a stimulating environment for students and faculty to produce novel formulations of current concepts and theories. Since 2005, MCN and GSN have become the hub for neuroscience research and education in the Munich area. Our commitment to excellence sets high standards for researchers, who strive for quality and replicability. The Scientific Boards of MCN and GSN have long supported courses and events on responsible science and good scientific practice. At the institutional level, the most recent commitment to the LMU open science initiative will be enhanced by outreach and interdisciplinary dialogue, engaging GSN’s 147 faculty, more than 220 current students, as well as over 230 alumni, and 100 MCN members, respectively. Long-standing routines such as the Thesis Advisory Committees (TAC) for all doctoral researchers complement any further actions toward scientific integrity.
+
+                                                    </div>
+                                                    
+            </div>
+        </div>
+        
+            <hr>
+            
+                
+        <div class="row g-4 align-items-stretch pt-3 pb-1">
+            <div class="col-lg-4 d-flex">
+                <div class="card border-light-subtle shadow-sm p-3 rounded text-center w-100 member-grid-item">
+                    <img src="images/ub.JPG" alt="Universitätsbibliothek" class="member-grid-image mb-2">
+                    <div class="card-body flex-grow-1">
+                        <h5 class="card-title">
+                            Universitätsbibliothek
+                        </h5>
+                        
+                                
+                                    <div class="mt-3 website-button">
+                                        <a href="https://www.ub.uni-muenchen.de/index.html" class="btn btn-outline-secondary social-link">
+                                            <i class="fa-solid fa-globe"></i> Website
+                                        </a>
+                                    </div>
+                                    
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8">
+                
+                                                
+                                                    <div class="description-text mt-2">
+                                                        The University Library supports Open Access and Open Science and offers a variety of related services for all LMU faculties.
+
+                                                    </div>
+                                                    
+            </div>
+        </div>
+        
+                
 </div>
 <div class="listing-no-matching d-none">No matching items</div>
 </div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
-    const icon = "";
-    const anchorJS = new window.AnchorJS();
-    anchorJS.options = {
-      placement: 'right',
-      icon: icon
-    };
-    anchorJS.add('.anchored');
     const isCodeAnnotation = (el) => {
       for (const clz of el.classList) {
         if (clz.startsWith('code-annotation-')) {                     
