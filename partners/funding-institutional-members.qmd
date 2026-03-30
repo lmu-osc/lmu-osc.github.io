@@ -55,8 +55,9 @@ listing:
       
     - name: Simulation-Based Learning in Higher Education. Advancing Research on Process Diagnostics and Personalised Interventions (SHARP)
       image_url: "images/sharp-logo.jpg"
-      contactName:
-      contactLink:
+      contact:
+        - name:
+          link:
       website_url:
       description: |
         Text here
