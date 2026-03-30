@@ -9,12 +9,17 @@
                         <h5 class="card-title">
                             <%= item.name %>
                         </h5>
-                        <% if (item.contactLink && item.contactName) { %>
-                            <p class="card-text text-muted mb-0">Contact Person:</p>
-                            <a href="<%= item.contactLink %>" class="contact-link mb-2">
-                                <%= item.contactName %>
-                            </a>
+                        <% if (item.contact && item.contact.length) { %>
+                            <% const validContacts = item.contact.filter((c) => c && c.name && c.link); %>
+                            <% if (validContacts.length) { %>
+                                <p class="card-text text-muted mb-0"><%= validContacts.length > 1 ? 'Contact Persons:' : 'Contact Person:' %></p>
+                                <% validContacts.forEach((c) => { %>
+                                    <a href="<%= c.link %>" class="contact-link d-block mb-2">
+                                        <%= c.name %>
+                                    </a>
+                                <% }); %>
                             <% } %>
+                        <% } %>
                                 <% if (item.website_url) { %>
                                     <div class="mt-3 website-button">
                                         <a href="<%= item.website_url %>" class="btn btn-outline-secondary social-link">
