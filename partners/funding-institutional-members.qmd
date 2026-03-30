@@ -26,6 +26,16 @@ listing:
       description: >
         The Munich Cluster for Systems Neurology (SyNergy) investigates how complex neurological diseases such as Alzheimer's disease, stroke, and multiple sclerosis develop. Using systems neurology as a new interdisciplinary approach, researchers can decipher the shared disease mechanisms of neurovascular, neurodegenerative, and neuroimmunological diseases and on this basis develop novel diagnostic and therapeutic approaches. SyNergy has expressed its commitment to promoting research transparency and reproducibility in both quantitative and qualitative research endeavors. We view the ability to replicate and reproduce research findings, whether quantitative or qualitative, as fundamental pillars supporting the generalizability and reliability of scientific knowledge.
 
+      
+    - name: "Collaborative Research Centre - SHARP (TRR419)"
+      image_url: "images/sharp-logo.jpg"
+      contact:
+        - name: "Prof. Dr. Frank Fischer"
+          link: https://www.lmu.de/psy/en/persons/contact-page/frank-fischer-607c6126.html # he needs to become a member !!
+      website_url: https://www.en.mcls.uni-muenchen.de/research/sharp-initiative/index.html
+      description: >
+        "Simulation-Based Learning in Higher Education. Advancing Research on Process Diagnostics and Personalised Interventions" (SHARP) - mission statement tba.
+
     - name: "Department of Psychology"
       image_url: "images/lmu_logo.jpg"
       contact:
@@ -52,14 +62,6 @@ listing:
       website_url: "https://www.som.lmu.de/en/"
       description: >
         The LMU Munich School of Management is committed to advancing the principles of open science and research transparency. By becoming an institutional member of the LMU's Open Science Center, we aim to foster a culture of openness, collaboration, and integrity in our research community. We believe that promoting open access to data, methodologies, and findings will enhance the quality and reproducibility of research in business studies, ultimately contributing to innovative and impactful solutions for global business challenges.
-      
-    - name: Simulation-Based Learning in Higher Education. Advancing Research on Process Diagnostics and Personalised Interventions (SHARP)
-      image_url: "images/sharp-logo.jpg"
-      contact:
-        - name:
-          link:
-      website_url:
-      description: |
-        Text here
+
 
 ---
