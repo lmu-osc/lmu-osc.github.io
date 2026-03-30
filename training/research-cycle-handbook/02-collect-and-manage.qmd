@@ -288,7 +288,102 @@ Field and sometimes lab researchers have to work with analogue notebooks first, 
 
 :::
 
+#### 2.1.5. Systematic reviews and meta-analyses
+
+A high-quality systematic review, whether it includes a meta-analysis or not, uses a **rigorous, transparent, and reproducible methodology to select the relevant literature** and later provide a thorough summary and critical evaluation of research within a given field. Its defining features include:
+
+<br>
+
+- clearly defined objectives supported by an explicit and reproducible methodology
+- a comprehensive, systematic search designed to identify all studies meeting the eligibility criteria
+- a critical appraisal of the validity of included studies, such as through risk-of-bias assessment
+- a structured presentation and synthesis of the characteristics and findings of the included studies
+
+Data collection, in this context, consists in developing a judicious reproducible methods to selecting relevant literature. 
+
+<br>
+
+-  **Use tools** such as  
+
+    - [CAMARADES](https://camarades.de/) which provide a supporting framework for the conduct of systematic reviews of animal studies, and
+     - [PRISMA](https://www.prisma-statement.org/) (Preferred Reporting Items for Systematic review and Meta-Analysis Protocols) and its extensions such as [PRISMA-P](https://www.prisma-statement.org/protocols) which offers checklist for systematic review protocol reporting.
+
+- **Learn more** from our colleagues at the Berlin Institute of Health QUEST Center for Responsible Research using their [resources for systematic reviews in biomedical research](https://www.bihealth.org/en/quest/service/service/resources-for-systematic-reviews-in-biomedical-research) and the material of their [systematic review workshop at our previous OSC summer school](https://osf.io/589yn/overview).
+
+::: {.container .my-4 }
+
+<h4 class="fs-5"><i class="bi bi-mortarboard"></i> LEARN MORE</h4>
+<!-- row for learn more section  -->
+
+::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
+
+<!-- card -->
+::: {.col}
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+  <div class="d-flex gap-2">
+    <div class="orc-card-tool-icon p-2 rounded">
+      <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+    </div>
+  </div>
+  <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Workshop</span>
+</div>
+<h4 class="card-title">Systematic review</h4>
+<p class="card-text">Slides and additional resources of workshop delivered at OSSS23.</p>
+<a href="" class="stretched-link" target="_blank" rel="noopener"></a>
+</div>
+```
 :::
+
+:::
+
+<h4 class="fs-5 mt-3"><i class="bi bi-tools"></i> TOOLS & RESOURCES</h4>
+<!-- row for Tools & Resources section -->
+
+::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
+
+<!-- card -->
+::: {.col}
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+  <div class="d-flex gap-2">
+    <div class="orc-card-tool-icon p-2 rounded">
+      <img src="https://images.squarespace-cdn.com/content/v1/65b880e13b6ca75573dfe217/c25c6bce-6fe5-4b33-8913-a1a2d75dbcb8/Prisma-logo-Colour-white-BG.png?format=1500w" class="img-fluid" alt="PRISMA icon">
+    </div>
+  </div>
+</div>
+<h4 class="card-title">PRISMA</h4>
+<p class="card-text">Preferred Reporting Items for Systematic review and Meta-Analysis Protocols</p>
+<a href="https://www.prisma-statement.org/" class="stretched-link" target="_blank" rel="noopener"></a>
+</div>
+```
+:::
+
+<!-- card -->
+::: {.col}
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+  <div class="d-flex gap-2">
+    <div class="orc-card-tool-icon p-2 rounded">
+      <img src="https://camarades.de/logos/favicon.ico" class="img-fluid" alt="CAMARADES icon">
+    </div>
+  </div>
+</div>
+<h4 class="card-title">CAMARADES</h4>
+<p class="card-text">Step-by-step guide to Preclinical Systematic Review.</p>
+<a href="https://camarades.de/" class="stretched-link" target="_blank" rel="noopener"></a>
+</div>
+```
+:::
+
+:::
+
+:::
+
+
 
 </details>
 
