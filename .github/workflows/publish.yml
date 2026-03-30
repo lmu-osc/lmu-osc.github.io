@@ -10,6 +10,7 @@ name: Quarto Publish
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
+    timeout-minutes: 40
     permissions:
       contents: write
     env:
@@ -55,10 +56,26 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-quarto-freeze-
 
-      - name: Render and Publish
-        uses: quarto-dev/quarto-actions/publish@v2
+      - name: Render website (debug)
+        timeout-minutes: 20
+        run: |
+          set -o pipefail
+          quarto --version
+          quarto render --log-level debug 2>&1 | tee quarto-render.log
+        env:
+          QUARTO_CHROMIUM: /usr/bin/chromium
+          PUPPETEER_EXECUTABLE_PATH: /usr/bin/chromium
+
+      - name: Upload render log
+        if: always()
+        uses: actions/upload-artifact@v4
         with:
-          target: gh-pages
+          name: quarto-render-log
+          path: quarto-render.log
+
+      - name: Publish pre-rendered site
+        timeout-minutes: 10
+        run: quarto publish gh-pages --no-render
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           QUARTO_CHROMIUM: /usr/bin/chromium
