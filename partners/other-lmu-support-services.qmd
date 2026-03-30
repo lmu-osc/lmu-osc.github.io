@@ -10,16 +10,18 @@ listing:
   contents:
     - name: "Research Funding Unit"
       image_url: "images/lmu_logo.jpg"
-      contactName: "Dr. Florian Schreck"
-      contactLink: "mailto:florian.schreck@verwaltung.uni-muenchen.de"
+      contact:
+        - name: "Dr. Florian Schreck"
+          link: "mailto:florian.schreck@verwaltung.uni-muenchen.de"
       website_url: "https://fdm.ub.lmu.de/services-networks/research-funding/"
       description: |
         The Research Funding Unit is here to help researchers comply to requirements of funding agencies to increase your chances of getting funded.
 
     - name: "StaBLab: Statistical consulting unit"
       image_url: "images/stablab_logo.jpeg"
-      contactName: "StaBLab team"
-      contactLink: "mailto:kontakt@stablab.stat.uni-muenchen.de"
+      contact:
+        - name: "StaBLab team"
+          link: "mailto:kontakt@stablab.stat.uni-muenchen.de"
       website_url: "https://www.stat.lmu.de/stablab/en/"
       description: |
         The StaBLab team provide free statistical consultations for LMU students and researchers to support them with their thesis and research projects with: 
@@ -31,8 +33,9 @@ listing:
 
     - name: "MLCU: Machine Learning Consulting Unit"
       image_url: "images/lmu_logo.jpg"
-      contactName: "MLCU"
-      contactLink: "https://www.slds.stat.uni-muenchen.de/consulting/webform.html"
+      contact:
+        - name: "MLCU"
+          link: "https://www.slds.stat.uni-muenchen.de/consulting/webform.html"
       website_url: "https://www.slds.stat.uni-muenchen.de/consulting/"
       description: |
         The MLCU provides machine learning consulting to LMU students and researchers. We offer:
@@ -44,8 +47,9 @@ listing:
 
     - name: "University Library LMU - Research Data Management Information"
       image_url: "images/ub.JPG"
-      contactName: "RDM team"
-      contactLink: "mailto:rdm@ub.uni-muenchen.de"
+      contact:
+        - name: "RDM team"
+          link: "mailto:rdm@ub.uni-muenchen.de"
       website_url: "https://www.en.ub.uni-muenchen.de/writing/research_data/index.html"
       description: |
         The RDM Information team at the University Library of LMU Munich provides infrastructure and gives advice on:
@@ -58,8 +62,9 @@ listing:
 
     - name: "University Library LMU - Open Access team"
       image_url: "images/ub.JPG"
-      contactName: "Open Access team"
-      contactLink: "mailto:open-access@ub.uni-muenchen.de"
+      contact:
+        - name: "Open Access team"
+          link: "mailto:open-access@ub.uni-muenchen.de"
       website_url: "https://www.en.ub.uni-muenchen.de/writing/open-access-publishing/oa-auxiliary-page/index.html"
       description: |
         The University Library provides:
@@ -72,8 +77,9 @@ listing:
 
     - name: "IT-Gruppe Geisteswissenschaften (ITG) - LMU Center for Digital Humanities"
       image_url: "images/itg.png"
-      contactName: "Dr. Stephan Lücke"
-      contactLink: "mailto:luecke@lmu.de"
+      contact:
+        - name: "Dr. Stephan Lücke"
+          link: "mailto:luecke@lmu.de"
       website_url: "https://www.itg.uni-muenchen.de/index.html"
       description: |
         The ITG provides advice and assistance with:

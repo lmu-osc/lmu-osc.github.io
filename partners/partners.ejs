@@ -1,54 +1,77 @@
 ```{=html}
 <div class="container">
-<% items.forEach((item, index) => { %>
-<div class="row g-4 align-items-stretch pt-3 pb-1">
-<div class="col-lg-4 d-flex">
-<div class="card border-light-subtle shadow-sm p-3 rounded text-center w-100 member-grid-item">
-<img src="<%= item.image_url %>" alt="<%= item.name %>" class="member-grid-image mb-2">
-<div class="card-body flex-grow-1">
-<h5 class="card-title"><%= item.name %></h5>
-<% if (item.contactLink && item.contactName) { %>
-<p class="card-text text-muted mb-0">Contact Person:</p>
-<a href="<%= item.contactLink %>" class="contact-link mb-2"><%= item.contactName %></a>
-<% } %>
-<% if (item.website_url) { %>
-<div class="mt-3 website-button">
-<a href="<%= item.website_url %>" class="btn btn-outline-secondary social-link">
-<i class="fa-solid fa-globe"></i> Website
-</a>
-</div>
-<% } %>
-</div>
-</div>
-</div>
-<div class="col-lg-8">
-<% if (item.funding && item.funding.length > 0) { %>
-<% item.funding.forEach(f => { %>
-<div class="d-flex justify-content-start align-items-center mb-1 gap-2">
-<span class="funding-name fw-bold"><%= f.name %></span>
-<% if(f.date) { %>
-<span class="funding-date text-muted"><%= f.date %></span>
-<% } %>
-<% if(f.amount) { %>
-<span class="funding-amt z-50 border rounded-pill border-success-subtle bg-success text-muted px-3 py-0 fw-bolder" style= "--bs-bg-opacity: .1;"><%= f.amount %></span>
-<% } %>
-</div>
-<% if(f.project) { %>
-<small class="funding-project text-muted d-block mb-2"><%= f.project %></small>
-<% } %>
-<% if(item.press_release_url) { %>
-<a href="<%= item.press_release_url %>" class="btn btn-primary primary-social-link">Press Release <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-<% } %>
-<% }) %>
-<% } %>
-<% if(item.description) { %>
-<div class="description-text mt-2"><%= item.description %></div>
-<% } %>
-</div>
-</div>
-<% if (index < items.length - 1) { %>
-<hr>
-<% } %>
-<% }); %>
+    <% items.forEach((item, index)=> { %>
+        <div class="row g-4 align-items-stretch pt-3 pb-1">
+            <div class="col-lg-4 d-flex">
+                <div class="card border-light-subtle shadow-sm p-3 rounded text-center w-100 member-grid-item">
+                    <img src="<%= item.image_url %>" alt="<%= item.name %>" class="member-grid-image mb-2">
+                    <div class="card-body flex-grow-1">
+                        <h5 class="card-title">
+                            <%= item.name %>
+                        </h5>
+                        <% if (item.contact && item.contact.length) { %>
+                            <% const validContacts = item.contact.filter((c) => c && c.name && c.link); %>
+                            <% if (validContacts.length) { %>
+                                <p class="card-text text-muted mb-0"><%= validContacts.length > 1 ? 'Contact Persons:' : 'Contact Person:' %></p>
+                                <% validContacts.forEach((c) => { %>
+                                    <a href="<%= c.link %>" class="contact-link d-block mb-2">
+                                        <%= c.name %>
+                                    </a>
+                                <% }); %>
+                            <% } %>
+                        <% } %>
+                                <% if (item.website_url) { %>
+                                    <div class="mt-3 website-button">
+                                        <a href="<%= item.website_url %>" class="btn btn-outline-secondary social-link">
+                                            <i class="fa-solid fa-globe"></i> Website
+                                        </a>
+                                    </div>
+                                    <% } %>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8">
+                <% if (item.funding && item.funding.length> 0) { %>
+                    <% item.funding.forEach(f=> { %>
+                        <div class="d-flex justify-content-start align-items-center mb-1 gap-2">
+                            <span class="funding-name fw-bold">
+                                <%= f.name %>
+                            </span>
+                            <% if(f.date) { %>
+                                <span class="funding-date text-muted">
+                                    <%= f.date %>
+                                </span>
+                                <% } %>
+                                    <% if(f.amount) { %>
+                                        <span
+                                            class="funding-amt z-50 border rounded-pill border-success-subtle bg-success text-muted px-3 py-0 fw-bolder"
+                                            style="--bs-bg-opacity: .1;">
+                                            <%= f.amount %>
+                                        </span>
+                                        <% } %>
+                        </div>
+                        <% if(f.project) { %>
+                            <small class="funding-project text-muted d-block mb-2">
+                                <%= f.project %>
+                            </small>
+                            <% } %>
+                                <% if(item.press_release_url) { %>
+                                    <a href="<%= item.press_release_url %>"
+                                        class="btn btn-primary primary-social-link">Press Release <i
+                                            class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                    <% } %>
+                                        <% }) %>
+                                            <% } %>
+                                                <% if(item.description) { %>
+                                                    <div class="description-text mt-2">
+                                                        <%= item.description %>
+                                                    </div>
+                                                    <% } %>
+            </div>
+        </div>
+        <% if (index < items.length - 1) { %>
+            <hr>
+            <% } %>
+                <% }); %>
 </div>
 ```
