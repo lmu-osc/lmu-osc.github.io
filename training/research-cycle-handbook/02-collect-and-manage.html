@@ -486,9 +486,9 @@ Checkpoint: Data quality validation meeting
 </div>
 </div>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">2.1.1. Lab Protocols</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">2.1.2. Questionnaires</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false" href="">2.1.3. Software-based data acquisition</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-4" role="tab" aria-controls="tabset-1-4" aria-selected="false" href="">2.1.4. Field and lab work</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-4-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-1" role="tab" aria-controls="tabset-4-1" aria-selected="true" href="">2.1.1. Lab Protocols</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-2" role="tab" aria-controls="tabset-4-2" aria-selected="false" href="">2.1.2. Questionnaires</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-3" role="tab" aria-controls="tabset-4-3" aria-selected="false" href="">2.1.3. Software-based data acquisition</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-4" role="tab" aria-controls="tabset-4-4" aria-selected="false" href="">2.1.4. Field and lab work</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-5" role="tab" aria-controls="tabset-4-5" aria-selected="false" href="">2.1.5. Systematic reviews and meta-analyses</a></li></ul>
 <div class="tab-content">
-<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<div id="tabset-4-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-4-1-tab">
 <p>Your protocol should specify materials with identifying details (e.g.&nbsp;lot numbers, versions, sources), equipment settings, step-by-step instructions with timing, and expected outcomes at each stage. What counts as “materials” varies by field: reagent concentrations in wet lab work, scanner parameters in neuroimaging, sampling coordinates in field ecology. But the principle is the same: enough detail that someone else could replicate your procedure exactly.</p>
 <p><br></p>
 <ul>
@@ -565,11 +565,11 @@ Checkpoint: Data quality validation meeting
 </div>
 </div>
 </div>
-<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<div id="tabset-4-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-2-tab">
 <p><strong>Document both the instrument and the administration procedure completely.</strong> Use validated instruments when possible and pilot test before deployment. The data dictionary (or ‘codebook’) should record the exact version of the questionnaire used; if copyright allows it, document the item wording itself.</p>
 <!-- do we want anything else here? Could we minimally explain what validating a survey means? It is really unclear to me given how people use it...-->
 </div>
-<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
+<div id="tabset-4-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-3-tab">
 <p>When data comes from instruments, sensors, or APIs (Application Programming Interface), scripting the acquisition creates a reproducible record of exactly what was collected and how. Programming languages like R or Python work well for straightforward pipelines. For more complex multi-step workflows which are common in e.g.&nbsp;in bioinformatics and neuroimaging, workflow managers like <a href="https://snakemake.readthedocs.io/">Snakemake</a> ensure steps run in the correct order and can resume after failures.</p>
 <p><br></p>
 <ul>
@@ -624,11 +624,11 @@ Checkpoint: Data quality validation meeting
 </div>
 </div>
 </div>
-<div id="tabset-1-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-4-tab">
+<div id="tabset-4-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-4-tab">
 <p>Field and sometimes lab researchers have to work with analogue notebooks first, and use temporary storage solution for images and video-recordings.</p>
 <p><br></p>
 <ul>
-<li><strong>Digitalize your data soon after data collection</strong>, e.g.&nbsp;using data entry form from a relational database such as <a href="https://www.mysql.com/">MySQL</a></li>
+<li><strong>Digitalize your data soon after data collection</strong>, e.g.&nbsp;using data entry form from a relational database such as <a href="https://www.postgresql.org/">postgreSQL</a></li>
 <li><strong>Create automatic validation checks</strong> for data entry so e.g.&nbsp;values outside of expected range get immediately identified (see <a href="#sec-quality-control" class="mark">2.4. Quality control</a>)</li>
 <li><strong>Transfer digital data</strong> (e.g.&nbsp;pictures, video recordings) from temporary storage solutions (e.g.&nbsp;camera storage) to permanent storage solutions (see <a href="#sec-data-management" class="mark">2.1.1. Storage</a>)</li>
 <li><strong>Check your data entries</strong>, e.g.&nbsp;after a day, to correct possible mistakes in transcription</li>
@@ -646,25 +646,101 @@ Checkpoint: Data quality validation meeting
 <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
   <div class="d-flex gap-2">
     <div class="orc-card-tool-icon p-2 rounded">
-      <img src="https://www.svgrepo.com/show/303251/mysql-logo.svg" class="img-fluid" alt="MySQL icon">
+      <img src="https://www.postgresql.org/favicon.ico" class="img-fluid" alt="postgreSQL icon">
     </div>
   </div>
 </div>
-<h4 class="card-title anchored">MySQL</h4>
+<h4 class="card-title anchored">postgreSQL</h4>
 <p class="card-text">Open source relational database software</p>
-<a href="https://www.mysql.com/" class="stretched-link" target="_blank" rel="noopener"></a>
+<a href="https://www.postgresql.org/" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
 </div>
 </div>
 </div>
 </div>
+<div id="tabset-4-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-5-tab">
+<p>A high-quality systematic review, whether it includes a meta-analysis or not, uses a <strong>rigorous, transparent, and reproducible methodology to select the relevant literature</strong> and later provide a thorough summary and critical evaluation of research within a given field. Its defining features include:</p>
+<p><br></p>
+<ul>
+<li>clearly defined objectives supported by an explicit and reproducible methodology</li>
+<li>a comprehensive, systematic search designed to identify all studies meeting the eligibility criteria</li>
+<li>a critical appraisal of the validity of included studies, such as through risk-of-bias assessment</li>
+<li>a structured presentation and synthesis of the characteristics and findings of the included studies</li>
+</ul>
+<p>Data collection, in this context, consists in developing a judicious reproducible methods to selecting relevant literature.</p>
+<p><br></p>
+<ul>
+<li><p><strong>Use tools</strong> such as</p>
+<ul>
+<li><a href="https://camarades.de/">CAMARADES</a> which provide a supporting framework for the conduct of systematic reviews of animal studies, and</li>
+<li><a href="https://www.prisma-statement.org/">PRISMA</a> (Preferred Reporting Items for Systematic review and Meta-Analysis Protocols) and its extensions such as <a href="https://www.prisma-statement.org/protocols">PRISMA-P</a> which offers checklist for systematic review protocol reporting.</li>
+</ul></li>
+<li><p><strong>Learn more</strong> from our colleagues at the Berlin Institute of Health QUEST Center for Responsible Research using their <a href="https://www.bihealth.org/en/quest/service/service/resources-for-systematic-reviews-in-biomedical-research">resources for systematic reviews in biomedical research</a> and the material of their <a href="https://osf.io/589yn/overview">systematic review workshop at our previous OSC summer school</a>.</p></li>
+</ul>
+<div class="container my-4">
+<h4 class="fs-5 anchored">
+<i class="bi bi-mortarboard"></i> LEARN MORE
+</h4>
+<!-- row for learn more section  -->
+<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+<!-- card -->
+<div class="col">
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+  <div class="d-flex gap-2">
+    <div class="orc-card-tool-icon p-2 rounded">
+      <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+    </div>
+  </div>
+  <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Workshop</span>
+</div>
+<h4 class="card-title anchored">Systematic review</h4>
+<p class="card-text">Slides and additional resources of workshop delivered at OSSS23.</p>
+<a href="" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
 </div>
-</details>
+</div>
+<h4 class="fs-5 mt-3 anchored">
+<i class="bi bi-tools"></i> TOOLS &amp; RESOURCES
+</h4>
+<!-- row for Tools & Resources section -->
+<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+<!-- card -->
+<div class="col">
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+  <div class="d-flex gap-2">
+    <div class="orc-card-tool-icon p-2 rounded">
+      <img src="https://images.squarespace-cdn.com/content/v1/65b880e13b6ca75573dfe217/c25c6bce-6fe5-4b33-8913-a1a2d75dbcb8/Prisma-logo-Colour-white-BG.png?format=1500w" class="img-fluid" alt="PRISMA icon">
+    </div>
+  </div>
+</div>
+<h4 class="card-title anchored">PRISMA</h4>
+<p class="card-text">Preferred Reporting Items for Systematic review and Meta-Analysis Protocols</p>
+<a href="https://www.prisma-statement.org/" class="stretched-link" target="_blank" rel="noopener"></a>
+</div>
+</div>
+<!-- card -->
+<div class="col">
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+  <div class="d-flex gap-2">
+    <div class="orc-card-tool-icon p-2 rounded">
+      <img src="https://camarades.de/logos/favicon.ico" class="img-fluid" alt="CAMARADES icon">
+    </div>
+  </div>
+</div>
+<h4 class="card-title anchored">CAMARADES</h4>
+<p class="card-text">Step-by-step guide to Preclinical Systematic Review.</p>
+<a href="https://camarades.de/" class="stretched-link" target="_blank" rel="noopener"></a>
+</div>
+</div>
+</div>
+</div>
+</div></div></div></details>
 <details class="orc-details-panel">
 <summary>
 <p><i class="bi bi-folder-check"></i></p>
-
 <section id="sec-data-management" class="level3" data-number="2.2">
 <h3 data-number="2.2" class="anchored" data-anchor-id="sec-data-management"><span class="header-section-number">2.2</span> Data Management</h3>
 </section></summary>
@@ -694,9 +770,9 @@ Checkpoint: Data quality validation meeting
 </div>
 </div>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-4-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-1" role="tab" aria-controls="tabset-4-1" aria-selected="true" href="">2.2.1. Storage</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-2" role="tab" aria-controls="tabset-4-2" aria-selected="false" href="">2.2.2. Organization</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-3" role="tab" aria-controls="tabset-4-3" aria-selected="false" href="">2.2.3. File Formats</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-4" role="tab" aria-controls="tabset-4-4" aria-selected="false" href="">2.2.4. Documentation</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-5" role="tab" aria-controls="tabset-4-5" aria-selected="false" href="">2.2.5. Standards</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-6-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-6" role="tab" aria-controls="tabset-4-6" aria-selected="false" href="">2.2.6. Version Control</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true" href="">2.2.1. Storage</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-2" role="tab" aria-controls="tabset-3-2" aria-selected="false" href="">2.2.2. Organization</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-3" role="tab" aria-controls="tabset-3-3" aria-selected="false" href="">2.2.3. File Formats</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-4" role="tab" aria-controls="tabset-3-4" aria-selected="false" href="">2.2.4. Documentation</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-5" role="tab" aria-controls="tabset-3-5" aria-selected="false" href="">2.2.5. Standards</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-6-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-6" role="tab" aria-controls="tabset-3-6" aria-selected="false" href="">2.2.6. Version Control</a></li></ul>
 <div class="tab-content">
-<div id="tabset-4-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-4-1-tab">
+<div id="tabset-3-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-3-1-tab">
 <p>This section covers storage for data you are actively collecting. Long-term archiving for sharing is covered in <a href="../../training/research-cycle-handbook/04-preserve-and-share.html" class="mark">4. Preserve &amp; Share</a>.</p>
 <p><br></p>
 <ul>
@@ -768,7 +844,7 @@ Checkpoint: Data quality validation meeting
 </div>
 </div>
 </div>
-<div id="tabset-4-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-2-tab">
+<div id="tabset-3-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-2-tab">
 <p>Your folder structure and file naming conventions determine whether you and others can navigate your project months or years later. Establish these conventions at the start of your project and document them. When collaborating, ensure everyone follows the same system.</p>
 <p><br></p>
 <ul>
@@ -844,7 +920,7 @@ Checkpoint: Data quality validation meeting
 </div>
 </div>
 </div>
-<div id="tabset-4-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-3-tab">
+<div id="tabset-3-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-3-tab">
 <p>File format choices affect who can work with your data now and whether it remains readable in the future. Open formats have publicly documented specifications that anyone can implement, so many programs can read them and they remain accessible even if the original software disappears. Proprietary formats lock you into specific tools, complicate collaboration, and risk becoming unreadable if the company stops supporting them.</p>
 <p><br></p>
 <ul>
@@ -873,7 +949,7 @@ Checkpoint: Data quality validation meeting
 </div>
 </div>
 </div>
-<div id="tabset-4-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-4-tab">
+<div id="tabset-3-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-4-tab">
 <p>Without documentation, a dataset is just a collection of files. Six months from now, you will not remember what each column means, why certain values are missing, or how files relate to each other. Documentation makes your data usable by your future self, your collaborators, and any other researchers.</p>
 <p><br></p>
 <ul>
@@ -918,7 +994,7 @@ Checkpoint: Data quality validation meeting
 </div>
 </div>
 </div>
-<div id="tabset-4-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-5-tab">
+<div id="tabset-3-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-5-tab">
 <p>Standards are community agreements on how to organize and describe research data. Using them means others in your field immediately understand your data. Three types of standards matter here:</p>
 <p><br></p>
 <ul>
@@ -985,7 +1061,7 @@ Checkpoint: Data quality validation meeting
 </div>
 </div>
 </div>
-<div id="tabset-4-6" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-6-tab">
+<div id="tabset-3-6" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-6-tab">
 <p>Version control system like Git tracks changes to files over time. You can see what changed, when, and why. You can revert to previous versions. Collaborators can work without overwriting each other.</p>
 <p><br></p>
 <ul>
@@ -1102,9 +1178,9 @@ Checkpoint: Data quality validation meeting
 </section></summary>
 <p>Research involving human participants requires ethics approval and data protection compliance. In your ethics proposal (see <a href="../../training/research-cycle-handbook/01-plan-and-design.html#sec-legal-requirements" class="mark">1.2.3. Ethics</a>) you planned for safeguards for the people contributing to your research and you now need to implement them before or while collecting your data.</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true" href="">2.3.1. Informed Consent</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false" href="">2.3.2. Anonymization</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-3" role="tab" aria-controls="tabset-2-3" aria-selected="false" href="">2.3.3. GDPR Compliance</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">2.3.1. Informed Consent</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">2.3.2. Anonymization</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false" href="">2.3.3. GDPR Compliance</a></li></ul>
 <div class="tab-content">
-<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
 <p>Participants have the right to understand what they are agreeing to. Your consent form should explain the research purpose in plain language, describe what data you will collect and how you will protect it, specify who will have access and for how long, and make clear that participation is voluntary. See “<a href="https://www.uu.nl/en/research/research-data-management/guides/legal-considerations/how-to-write-an-informed-consent-form">How to write an informed consent form</a>” from the University to Utrecht and an <a href="https://osf.io/mgwk8/files/fvgsx">example template from the LMU Psychology Department</a>.</p>
 <p><br></p>
 <ul>
@@ -1145,7 +1221,7 @@ Checkpoint: Data quality validation meeting
 </div>
 <!-- @Felix: can we add example consent form as resources or other resources on how to prepare such language ?-->
 </div>
-<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
 <p>Anonymization protects privacy and determines what you can share.</p>
 <p><br></p>
 <ul>
@@ -1209,7 +1285,7 @@ Checkpoint: Data quality validation meeting
 </div>
 </div>
 </div>
-<div id="tabset-2-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-3-tab">
+<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
 <p>Research at LMU Munich must comply with EU data protection regulations. The core principles: have a lawful basis for processing personal data (usually consent or legitimate research interest), use data only for stated purposes, collect only what you need, delete data when you no longer need it, and protect it against unauthorized access.</p>
 <p><br></p>
 <p><strong>In practice:</strong> document your lawful basis, include data protection language in consent forms, use institutional storage rather than personal cloud services, restrict access to those who need it, and plan when and how you will delete data.</p>
@@ -1230,9 +1306,9 @@ Checkpoint: Data quality validation meeting
 <p>Quality control catches problems before they propagate into your analysis. The practices here ensure your data is trustworthy and your exclusions are well-founded.</p>
 <p><strong>Define criteria before looking at your data.</strong> This prevents unconscious bias in what you keep and exclude, and demonstrates that your decisions are principled rather than convenient (see <a href="../../training/research-cycle-handbook/01-plan-and-design.html#sec-study-design-analysis-plan" class="mark">1.4. Study Design &amp; Analysis Plan</a>).</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true" href="">2.4.1. Validation</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-2" role="tab" aria-controls="tabset-3-2" aria-selected="false" href="">2.4.2. Cleaning</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-3" role="tab" aria-controls="tabset-3-3" aria-selected="false" href="">2.4.3. Exclusions</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true" href="">2.4.1. Validation</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false" href="">2.4.2. Cleaning</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-3" role="tab" aria-controls="tabset-2-3" aria-selected="false" href="">2.4.3. Exclusions</a></li></ul>
 <div class="tab-content">
-<div id="tabset-3-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-3-1-tab">
+<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
 <p>Validation checks whether your data meets specifications. For example, values can be verified to fall within valid ranges (e.g., age ≥ 0), required fields can be checked for missing entries, categorical variables can be restricted to allowed levels (e.g., “yes/no”), dates can be validated for proper format, and cross-variable constraints can be enforced (e.g., discharge date ≥ admission date). Run checks during collection to catch problems immediately, after collection for systematic review, and after any processing to verify transformations worked correctly.</p>
 <p><br></p>
 <ul>
@@ -1263,7 +1339,7 @@ Checkpoint: Data quality validation meeting
 </div>
 </div>
 </div>
-<div id="tabset-3-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-2-tab">
+<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
 <p>Data cleaning handles errors, inconsistencies, and missing values. The cardinal rule: never modify your raw data. All cleaning happens on copies, ideally by scripts and not through manual changes.</p>
 <p><br></p>
 <ul>
@@ -1273,7 +1349,7 @@ Checkpoint: Data quality validation meeting
 <li><p><strong>Write cleaning as a script.</strong> A script documents exactly what you did and lets you reproduce it. Keep a decision log for choices that cannot be automated.</p></li>
 </ul>
 </div>
-<div id="tabset-3-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-3-tab">
+<div id="tabset-2-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-3-tab">
 <p>Exclusion criteria specify which data points will be removed from analysis and why. Define these before you see your results (see <a href="../../training/research-cycle-handbook/01-plan-and-design.html#sec-study-design-analysis-plan" class="mark">1.4. Study Design &amp; Analysis Plan</a>).</p>
 <p><br></p>
 <ul>
@@ -1321,6 +1397,10 @@ Checkpoint: Data quality validation meeting
 
 
 </main></div>
+
+
+
+
 
 
 
