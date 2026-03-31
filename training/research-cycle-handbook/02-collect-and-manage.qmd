@@ -175,9 +175,14 @@ Your protocol should specify materials with identifying details (e.g. lot number
 
 #### 2.1.2. Questionnaires
 
-**Document both the instrument and the administration procedure completely.** Use validated instruments when possible and pilot test before deployment. The data dictionary (or 'codebook') should record the exact version of the questionnaire used; if copyright allows it, document the item wording itself. 
+**Document both the instrument and the administration procedure completely.** The data dictionary (or 'codebook') should record the exact version of the questionnaire used; if copyright allows it, document the item wording itself. 
+Questionnaires should be objective, reliable, and valid:
 
-<!-- do we want anything else here? Could we minimally explain what validating a survey means? It is really unclear to me given how people use it...-->
+- **Objective:** Results should not depend on who administers or scores the questionnaire.
+- **Reliable:** Responses should be consistent across repeated measurements when the underlying construct is unchanged (i.e., they should have low measurement error)
+- **Valid:** Items should measure the intended construct rather than something else. Typical ways to assess validity include content validity, convergent and divergent construct validity, and criterion-related validity.
+
+For well-validated instruments, published studies extensively assess reliability and validity across several populations and contexts. If these quality criteria of measurement instruments are met, your effect size and statistical power will be increased.
 
 
 #### 2.1.3. Software-based data acquisition
