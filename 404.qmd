@@ -1,0 +1,21 @@
+---
+title: "Page Not Found"
+format: html
+---
+
+<div id="content"></div>
+
+<script>
+const path = window.location.pathname;
+
+if (path.startsWith('/toolbox')) {
+  document.getElementById('content').innerHTML = `
+    <h2>Toolbox Notice</h2>
+    <p>This section of the site is no longer available.</p>
+  `;
+} else {
+  document.getElementById('content').innerHTML = `
+    <p>The page you’re looking for doesn’t exist.</p>
+  `;
+}
+</script>
