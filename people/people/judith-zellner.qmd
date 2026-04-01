@@ -1,0 +1,54 @@
+---
+# Member parameters
+title: Judith Zellner
+academic_title: Dr. des. # this needs to be updated when she can officially call herself 'Dr'
+name: Judith Zellner
+first_name:
+surname: Zellner
+categories:
+  - Psychology & Education
+
+# There is no limit to the number of memberships a person can have. All memberships must have a type, status, and start year.
+# See documentation for more details on the different types of memberships and their status options.
+memberships:
+  - type: lmu-individual
+    status: active
+    start: 2026
+    # end: 2019
+    position: Researcher
+    faculty: Psychology & Education
+
+# if desired by the member, add a photo to the people/people/images folder and link to it here
+photo: "images/judith_zellner.jpeg"
+email: Judith.Zellner@edu.lmu.de
+personal:
+
+# certain keywords for the label are recognized and the output is sorted in this priority: LMU Profile, Professional Profile, Personal Website, and Professional Website. see documentation for details on these labels. other links appear in the order they are listed in the YAML file.
+links:
+  - label: "LMU Profile"
+    url: "https://www.lmu.de/edu/de/personen/kontaktseite/judith-zellner-59feaf81.html"
+
+
+# Social media links - variable number
+social_media:
+  ORCID: "https://orcid.org/0009-0006-5113-9872"
+
+# Mission statement paragraphs - variable number
+mission_statement: |
+  I consider it essential to make my research as transparent and accessible as possible. Scientific knowledge is a public good and should contribute to societal development. Therefore, I am committed to providing open access to research outputs, including data and materials, in order to foster transparency, reproducibility, and scientific exchange. At the same time, I aim to translate my work into educational practice. By developing and sharing Open Educational Resources, I seek to support schools with freely available and evidence-based materials.
+
+# Research interests - variable number
+research_interests:
+
+
+# Publications - variable number
+publications:
+
+
+# these must be included always.
+template: templates/people-template.html
+filters: 
+    - templates/people_filter.lua
+---
+
+<!-- additional content **can** be included here, and appears after the Mission Statement but before the Research Interests. Any content that Quarto can render can be included here, namely R/Python/Julia code chunks, Markdown formatting, more HTML, etc. Main reasons to use this though: code blocks, and to include files. -->
