@@ -28,14 +28,6 @@ page-layout: full
                     (research data management, software development, teaching/training, and more),
                     as well as open discussions on topics brought into the agenda by any attendee.
                 </p>
-
-                <h4 class="osc-init-activities__title">Next meeting:</h4>
-
-                <ul class="osc-init-activities__list">
-                    <li class="osc-init-activities__item">
-                        October 16, 2025, 17:00–18:45 at the LMU University Library.
-                    </li>
-                </ul>
             </div>
 
             <!-- Logo -->
@@ -66,15 +58,13 @@ page-layout: full
             </ul>
 
             <p class="osc-init-involved__text">
-                We organize ourselves mainly over the mailing list and a matrix channel.
-                Definitely join us there to learn about upcoming events and other activities.
+                Find out when our next meeting is by visiting our website below, and subscribe to our mailing list to get the latest updates on our activities and events.
             </p>
 
             <div class="osc-init-involved__links">
                 <div class="osc-btn">
-                    <a href="https://matrix.to/#/#derse-chapter-muc:gitter.im" class="osc-matrix-button osc-init-button--matrix">
-                        <img src="images/idgGdCNeTC_logos-removebg-preview.png" style="height:35px;">
-                        RSE Matrix
+                    <a href="https://matrix.to/#/#derse-chapter-muc:gitter.im" class="osc-init-button osc-init-button--matrix"><i class="bi bi-globe"></i>
+                        Website
                     </a>
                 </div>
 
