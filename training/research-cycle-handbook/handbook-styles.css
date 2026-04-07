@@ -40,21 +40,17 @@ h2 i, h3 i{ color: var(--orc-green); margin-right: .5rem; }
 
 #about-orc-project {
   padding: 1.25rem 1.75rem;
-  border-radius: var(--orc-radius-lg);
-  border: 1px solid #00883a82;
-  box-shadow: var(--orc-shadow-sm);
 }
 
 #about-orc-project summary {
   cursor: pointer;
   list-style: none;
+  position: relative;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  line-height: 1.4;
-  transition: all .2s;
-  user-select: none;
 }
+
 
 #about-orc-project[open] summary{
   border-bottom: 1px solid var(--orc-gray-300);
@@ -70,11 +66,12 @@ h2 i, h3 i{ color: var(--orc-green); margin-right: .5rem; }
   color:var(--orc-green);
   font-weight: 600;
   font-size: 1.25rem;
+  right:0;
+  position: absolute;
   transition: transform .2s ease;
 }
 #about-orc-project[open] summary::after{
    content: '- '; 
-
 }
 
 #about-orc-project .btn.btn-primary {
