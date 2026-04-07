@@ -52,9 +52,12 @@ rsconnect/
 /.quarto/
 _site/
 _freeze/
+**_files/
 
 
 **/*.quarto_ipynb
 quick_notes.md
 
 /.luarc.json
+
+OSC-website.code-workspace

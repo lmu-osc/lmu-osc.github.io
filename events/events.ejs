@@ -1,90 +1,92 @@
-<%
-// Get current date for comparison
-const now = new Date();
-now.setHours(0, 0, 0, 0); // Set to start of day for accurate comparison
-
-// Sort all items by date (newest first)
-const allItems = Array.isArray(items) ? items.sort((a, b) => {
+```{=html}
+<% // Get current date for comparison const now=new Date(); now.setHours(0, 0, 0, 0); // Set to start of day for
+  accurate comparison // Sort all items by date (newest first) const allItems=Array.isArray(items) ? items.sort((a, b)=>
+  {
   const dateA = (a.event && a.event.date) ? new Date(a.event.date) : new Date(0);
   const dateB = (b.event && b.event.date) ? new Date(b.event.date) : new Date(0);
   return dateB - dateA;
-}) : [];
+  }) : [];
 
-// Separate upcoming and past events
-const upcomingEvents = allItems.filter(item => {
+  // Separate upcoming and past events
+  const upcomingEvents = allItems.filter(item => {
   if (!item.event || !item.event.date) return false;
   const eventDate = new Date(item.event.date);
   return eventDate >= now;
-});
+  });
 
-const pastEvents = allItems.filter(item => {
+  const pastEvents = allItems.filter(item => {
   if (!item.event || !item.event.date) return false;
   const eventDate = new Date(item.event.date);
-  return eventDate < now;
-});
+  return eventDate < now; }); // Include all upcoming events, plus past events if needed to reach minimum of 3 let
+    slides=[...upcomingEvents]; if (slides.length < 3) { const neededCount=3 - slides.length; slides=[...slides,
+    ...pastEvents.slice(0, neededCount)]; } %>
 
-// Include all upcoming events, plus past events if needed to reach minimum of 3
-let slides = [...upcomingEvents];
-if (slides.length < 3) {
-  const neededCount = 3 - slides.length;
-  slides = [...slides, ...pastEvents.slice(0, neededCount)];
-}
-%>
+    <div class="carousel-styled-wrapper">
+      <div id="eventsCarousel" class="carousel slide carousel-fade carousel-dark p-4" data-bs-ride="carousel">
 
-<div class="carousel-styled-wrapper">
-<div id="eventsCarousel" class="carousel slide carousel-fade carousel-dark p-4" data-bs-ride="carousel">
+        <h3 class="events-carousel-heading">Events</h3>
 
-<h3 class="events-carousel-heading">Events</h3>
+        <div class="carousel-inner">
+          <% slides.forEach((item, index)=> { %>
+            <div class="carousel-item <%= index === 0 ? 'active' : '' %>">
+              <div class="card border-0 events-card">
+                <% const imgSrc=item.event.image || '/assets/img/osc_image_assets/LMU_Open_Science_Center_Logo.jpg' ; %>
+                  <% const isDefaultImage=!item.event.image; %>
+                    <% let imgStyle="aspect-ratio: 16/12; object-fit: " + (isDefaultImage ? 'contain' : 'cover' )
+                      + "; object-position: center;" ; %>
+                      <% if (isDefaultImage) { imgStyle +=" background-color: #fff;" ; } %>
+                        <img src="<%= imgSrc %>" class="card-img-top d-block w-100" alt="<%= item.event.title || '' %>"
+                          style="<%= imgStyle %>">
+                        <div class="card-body text-center">
+                          <% if (item.event.title) { %>
+                            <div class="card-title-custom"
+                              style="display: -webkit-box; -webkit-line-clamp: 2; line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; min-height: 2.5em; line-height: 1.25; font-size:1rem;">
+                              <%= item.event.title %>
+                            </div>
+                            <% } %>
+                              <p class="card-text"
+                                style="display: -webkit-box; -webkit-line-clamp: 3; line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; min-height: 4.5em; line-height: 1.5em; font-size:0.83rem;">
+                                <%= item.description %>
+                              </p>
+                              <% if (item.path) { %>
+                                <a href="<%= item.path %>" class="btn btn-sm news-read-btn" role="button">Learn
+                                  More!</a>
+                                <% } %>
+                        </div>
+              </div>
+            </div>
+            <% }); %>
+              <div class="carousel-indicators">
+                <% slides.forEach((item, index)=> { %>
+                  <button type="button" data-bs-target="#eventsCarousel" data-bs-slide-to="<%= index %>"
+                    class="<%= index === 0 ? 'active' : '' %>" aria-current="<%= index === 0 ? 'true' : 'false' %>"
+                    aria-label="Slide <%= index + 1 %>"></button>
+                  <% }); %>
+              </div>
+        </div>
 
-<div class="carousel-inner">
-<% slides.forEach((item, index) => { %>
-<div class="carousel-item <%= index === 0 ? 'active' : '' %>">
-<div class="card border-0 events-card">
-<% const imgSrc = item.event.image || '/assets/img/osc_image_assets/LMU_Open_Science_Center_Logo.jpg'; %>
-<% const isDefaultImage = !item.event.image; %>
-<% let imgStyle = "aspect-ratio: 16/12; object-fit: " + (isDefaultImage ? 'contain' : 'cover') + "; object-position: center;"; %>
-<% if (isDefaultImage) { imgStyle += " background-color: #fff;"; } %>
-<img src="<%= imgSrc %>" class="card-img-top d-block w-100" alt="<%= item.event.title || '' %>" style="<%= imgStyle %>">
-<div class="card-body text-center">
-<% if (item.event.title) { %>
-<div class="card-title-custom" style="display: -webkit-box; -webkit-line-clamp: 2; line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; min-height: 2.5em; line-height: 1.25; font-size:1rem;"><%= item.event.title %></div>
-<% } %>
-<p class="card-text" style="display: -webkit-box; -webkit-line-clamp: 3; line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; min-height: 4.5em; line-height: 1.5em; font-size:0.83rem;"><%= item.description %></p>
-<% if (item.path) { %>
-<a href="<%= item.path %>" class="btn btn-sm news-read-btn" role="button">Learn More!</a>
-<% } %>
-</div>
-</div>
-</div>
-<% }); %>
-<div class="carousel-indicators">
-<% slides.forEach((item, index) => { %>
-<button type="button" data-bs-target="#eventsCarousel" data-bs-slide-to="<%= index %>" class="<%= index === 0 ? 'active' : '' %>" aria-current="<%= index === 0 ? 'true' : 'false' %>" aria-label="Slide <%= index + 1 %>"></button>
-<% }); %>
-</div>
-</div>
 
+        <button class="carousel-control-prev events-prev" type="button" data-bs-target="#eventsCarousel"
+          data-bs-slide="prev">
+          <i class="bi bi-chevron-left" aria-hidden="true"></i>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next events-next" type="button" data-bs-target="#eventsCarousel"
+          data-bs-slide="next">
+          <i class="bi bi-chevron-right" aria-hidden="true"></i>
+          <span class="visually-hidden">Next</span>
+        </button>
 
-<button class="carousel-control-prev events-prev" type="button" data-bs-target="#eventsCarousel" data-bs-slide="prev">
-<i class="bi bi-chevron-left" aria-hidden="true"></i>
-<span class="visually-hidden">Previous</span>
-</button>
-<button class="carousel-control-next events-next" type="button" data-bs-target="#eventsCarousel" data-bs-slide="next">
-<i class="bi bi-chevron-right" aria-hidden="true"></i>
-<span class="visually-hidden">Next</span>
-</button>
+      </div>
 
-</div>
+      <div class="text-center mt-3 mb-2">
+        <a href="/events" class="btn btn-outline-success btn-sm px-4" role="button">View All Events</a>
+      </div>
 
-<div class="text-center mt-3 mb-2">
-<a href="/events" class="btn btn-outline-success btn-sm px-4" role="button">View All Events</a>
-</div>
+    </div>
 
-</div>
-
-<style>
-
-/* Card title styling */
+    <style>
+      /* Card title styling */
       .card-title-custom {
         font-weight: 700;
         font-size: 1rem;
@@ -101,13 +103,13 @@ if (slides.length < 3) {
       .carousel-dark .carousel-control-next-icon {
         filter: none;
       }
-      
+
       /* News carousel wrapper styling */
       .carousel-styled-wrapper {
-          padding: 1.25rem 1.25rem 1rem;
-          border-radius: 10px;
-          border: 1px solid #d4eddf;
-          background:#fff;
+        padding: 1.25rem 1.25rem 1rem;
+        border-radius: 10px;
+        border: 1px solid #d4eddf;
+        background: #fff;
       }
 
       /* ── Heading ── */
@@ -130,21 +132,29 @@ if (slides.length < 3) {
         background: none;
         border: 1px solid #d4eddf14;
         border-radius: 50%;
-        color:  #00883bb5;
+        color: #00883bb5;
         display: flex;
         align-items: center;
         justify-content: center;
         opacity: 1;
         transition: background 0.2s;
       }
-      .events-prev { left: 0.5rem; }
-      .events-next { right: 0.5rem; }
+
+      .events-prev {
+        left: 0.5rem;
+      }
+
+      .events-next {
+        right: 0.5rem;
+      }
+
       .events-prev:hover,
       .events-next:hover {
         background: #00883A;
         color: #fff;
         border-color: #00883A;
       }
+
       .events-prev i,
       .events-next i {
         font-size: 0.75rem;
@@ -152,7 +162,7 @@ if (slides.length < 3) {
       }
 
       .events-read-btn {
-        background:  #00883A;
+        background: #00883A;
         color: #fff !important;
         border: none;
         font-size: 0.80rem;
@@ -163,5 +173,8 @@ if (slides.length < 3) {
         transition: background 0.2s;
       }
 
-      .events-read-btn:hover { background: #006b2d; }
-</style>
+      .events-read-btn:hover {
+        background: #006b2d;
+      }
+    </style>
+```

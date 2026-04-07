@@ -128,8 +128,13 @@ website:
         - section: "Partners"
           href: partners/index.qmd
           contents:
-            - text: "Institutional Members"
+            - section: "Institutional Members"
               href: partners/institutional-members.qmd 
+              contents:
+                - text: Funding Members
+                  href: partners/funding-institutional-members.qmd
+                - text: Affiliate Members
+                  href: partners/affiliate-institutional-members.qmd
             - section: "Local Open Science Initiatives"
               href: partners/local-os-initiatives.qmd
               contents:

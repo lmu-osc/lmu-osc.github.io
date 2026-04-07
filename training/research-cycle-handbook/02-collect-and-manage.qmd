@@ -44,7 +44,7 @@ Checkpoint: Data quality validation meeting
 
 </summary>
 
-Your data acquisition procedures must be documented in sufficient details to allow replication by another researcher (see [LMU Guidelines for Safeguarding Good Scientific Practice](https://cms-cdn.lmu.de/media/contenthub/amtliche-veroeffentlichungen/gwp-ordnung.pdf)). Establishing reproducible data collection processes strengthens the quality and consistency of both your data and that of your team.
+Your data acquisition procedures must be documented in sufficient detail to allow replication by another researcher (see [LMU Guidelines for Safeguarding Good Scientific Practice](https://cms-cdn.lmu.de/media/contenthub/amtliche-veroeffentlichungen/gwp-ordnung.pdf)). Reproducible data collection processes build team expertise, reduce errors, and improve data quality and consistency.
 
 State-of-the-art practices for reproducible data acquisition include:
 
@@ -63,9 +63,9 @@ State-of-the-art practices for reproducible data acquisition include:
 
 <!-- why is there a weird white space between the frame and the text in this call outbox?-->
 ::: {.callout-tip .mx-4}
-## Tip for research groups to streamline this process
+## Tips for research groups to streamline this process
 - **Create standard data acquisition procedures within the team.** From step-by-step wet-lab procedure, to the settings of measuring devices and the reproducible data pre-processing using script, all regularly repeated steps should be documented and standardized to be replicated precisely by all team members. 
-- **Share standard operating procedures** through e.g. common server space such as [LRZ Sync & Share](https://syncandshare.lrz.de/login), specialized online tools like [protocols.io](https://www.protocols.io/) or electronic lab notebooks, or [LRZ GitLab](https://gitlab.lrz.de/users/sign_in) for scripts.
+- **Share standard operating procedures** through common server space such as [LRZ Sync & Share](https://syncandshare.lrz.de/login), specialized online tools like [protocols.io](https://www.protocols.io/) or electronic lab notebooks, or [LRZ GitLab](https://gitlab.lrz.de/users/sign_in) for scripts.
 :::
 
 
@@ -73,7 +73,7 @@ State-of-the-art practices for reproducible data acquisition include:
 
 #### 2.1.1. Lab Protocols
 
-Your protocol should specify materials with identifying details (lot numbers, versions, sources), equipment settings, step-by-step instructions with timing, and expected outcomes at each stage. What counts as "materials" varies by field: reagent concentrations in wet lab work, scanner parameters in neuroimaging, sampling coordinates in field ecology. But the principle is the same: enough detail that someone else could replicate your procedure exactly.
+Your protocol should specify materials with identifying details (e.g. lot numbers, versions, sources), equipment settings, step-by-step instructions with timing, and expected outcomes at each stage. What counts as "materials" varies by field: reagent concentrations in wet lab work, scanner parameters in neuroimaging, sampling coordinates in field ecology. But the principle is the same: enough detail that someone else could replicate your procedure exactly.
 
 <br>
 
@@ -175,13 +175,24 @@ Your protocol should specify materials with identifying details (lot numbers, ve
 
 #### 2.1.2. Questionnaires
 
-**Document both the instrument and the administration procedure completely.** Use validated instruments when possible, pilot test before deployment, and archive the exact version participants see in an open source format. 
+**Document both the instrument and the administration procedure completely.** The data dictionary (or 'codebook') should record the exact version of the questionnaire used; if copyright allows it, document the item wording itself. 
 
-<!-- @Felix: do we want anything else here? Could you minimally explain what validating a survey means? It is really unclear to me given how people use it...-->
+<br>
+
+Questionnaires should be objective, reliable, and valid:
+
+<br>
+
+- **Objective:** Results should not depend on who administers or scores the questionnaire.
+- **Reliable:** Responses should be consistent across repeated measurements when the underlying construct is unchanged (i.e., they should have low measurement error)
+- **Valid:** Items should measure the intended construct rather than something else. Typical ways to assess validity include content validity, convergent and divergent construct validity, and criterion-related validity.
+
+For well-validated instruments, published studies extensively assess reliability and validity across several populations and contexts. If these quality criteria of measurement instruments are met, your effect size and statistical power will be increased.
+
 
 #### 2.1.3. Software-based data acquisition
 
-When data comes from instruments, sensors, or APIs, scripting the acquisition creates a reproducible record of exactly what was collected and how. Programming languages like R or Python work well for straightforward pipelines. For more complex multi-step workflows which are common in e.g. in bioinformatics and neuroimaging, workflow managers like [Snakemake](https://snakemake.readthedocs.io/) ensure steps run in the correct order and can resume after failures.
+When data comes from instruments, sensors, or APIs (Application Programming Interface), scripting the acquisition creates a reproducible record of exactly what was collected and how. Programming languages like R or Python work well for straightforward pipelines. For more complex multi-step workflows which are common in e.g. in bioinformatics and neuroimaging, workflow managers like [Snakemake](https://snakemake.readthedocs.io/) ensure steps run in the correct order and can resume after failures.
 
 <br>
 
@@ -246,8 +257,143 @@ When data comes from instruments, sensors, or APIs, scripting the acquisition cr
 
 :::
 
+#### 2.1.4. Field and lab work
+
+Field and sometimes lab researchers have to work with analogue notebooks first, and use temporary storage solution for images and video-recordings.
+
+<br>
+
+- **Digitalize your data soon after data collection**, e.g. using data entry form from a relational database such as [postgreSQL](https://www.postgresql.org/)
+- **Create automatic validation checks** for data entry so e.g. values outside of expected range get immediately identified (see [2.4. Quality control](#sec-quality-control){.mark})
+- **Transfer digital data** (e.g. pictures, video recordings) from temporary storage solutions (e.g. camera storage) to permanent storage solutions (see [2.1.1. Storage](#sec-data-management){.mark})
+- **Check your data entries**, e.g. after a day, to correct possible mistakes in transcription 
+- **Keep analogue records** to correct data entries errors at the end of the season or experiment 
+
+::: {.container .my-4 }
+
+<h4 class="fs-5 mt-3"><i class="bi bi-tools"></i> TOOLS & RESOURCES</h4>
+<!-- row for Tools & Resources section -->
+
+::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
+
+<!-- card -->
+::: {.col}
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+  <div class="d-flex gap-2">
+    <div class="orc-card-tool-icon p-2 rounded">
+      <img src="https://www.postgresql.org/favicon.ico" class="img-fluid" alt="postgreSQL icon">
+    </div>
+  </div>
+</div>
+<h4 class="card-title">postgreSQL</h4>
+<p class="card-text">Open source relational database software</p>
+<a href="https://www.postgresql.org/" class="stretched-link" target="_blank" rel="noopener"></a>
+</div>
+```
+:::
 
 :::
+
+:::
+
+#### 2.1.5. Systematic reviews
+
+A high-quality systematic review, whether it includes a meta-analysis or not, uses a **rigorous, transparent, and reproducible methodology to select the relevant literature** and later provide a thorough summary and critical evaluation of research within a given field. Its defining features include:
+
+<br>
+
+- clearly defined objectives supported by an explicit and reproducible methodology
+- a comprehensive, systematic search designed to identify all studies meeting the eligibility criteria
+- a critical appraisal of the validity of included studies, such as through risk-of-bias assessment
+- a structured presentation and synthesis of the characteristics and findings of the included studies
+
+Data collection, in this context, consists in developing a judicious reproducible methods to selecting relevant literature. 
+
+<br>
+
+-  **Use tools** such as  
+
+    - [CAMARADES](https://camarades.de/) which provide a supporting framework for the conduct of systematic reviews of animal studies, and
+     - [PRISMA](https://www.prisma-statement.org/) (Preferred Reporting Items for Systematic review and Meta-Analysis Protocols) and its extensions such as [PRISMA-P](https://www.prisma-statement.org/protocols) which offers checklist for systematic review protocol reporting.
+
+- **Learn more** from our colleagues at the Berlin Institute of Health QUEST Center for Responsible Research using their [resources for systematic reviews in biomedical research](https://www.bihealth.org/en/quest/service/service/resources-for-systematic-reviews-in-biomedical-research) and the material of their [systematic review workshop at our previous OSC summer school](https://osf.io/589yn/overview).
+
+::: {.container .my-4 }
+
+<h4 class="fs-5"><i class="bi bi-mortarboard"></i> LEARN MORE</h4>
+<!-- row for learn more section  -->
+
+::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
+
+<!-- card -->
+::: {.col}
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+  <div class="d-flex gap-2">
+    <div class="orc-card-tool-icon p-2 rounded">
+      <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+    </div>
+  </div>
+  <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Workshop</span>
+</div>
+<h4 class="card-title">Systematic review</h4>
+<p class="card-text">Slides and additional resources of workshop delivered at OSSS23.</p>
+<a href="" class="stretched-link" target="_blank" rel="noopener"></a>
+</div>
+```
+:::
+
+:::
+
+<h4 class="fs-5 mt-3"><i class="bi bi-tools"></i> TOOLS & RESOURCES</h4>
+<!-- row for Tools & Resources section -->
+
+::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
+
+<!-- card -->
+::: {.col}
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+  <div class="d-flex gap-2">
+    <div class="orc-card-tool-icon p-2 rounded">
+      <img src="https://images.squarespace-cdn.com/content/v1/65b880e13b6ca75573dfe217/c25c6bce-6fe5-4b33-8913-a1a2d75dbcb8/Prisma-logo-Colour-white-BG.png?format=1500w" class="img-fluid" alt="PRISMA icon">
+    </div>
+  </div>
+</div>
+<h4 class="card-title">PRISMA</h4>
+<p class="card-text">Preferred Reporting Items for Systematic review and Meta-Analysis Protocols</p>
+<a href="https://www.prisma-statement.org/" class="stretched-link" target="_blank" rel="noopener"></a>
+</div>
+```
+:::
+
+<!-- card -->
+::: {.col}
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+  <div class="d-flex gap-2">
+    <div class="orc-card-tool-icon p-2 rounded">
+      <img src="https://camarades.de/logos/favicon.ico" class="img-fluid" alt="CAMARADES icon">
+    </div>
+  </div>
+</div>
+<h4 class="card-title">CAMARADES</h4>
+<p class="card-text">Step-by-step guide to Preclinical Systematic Review.</p>
+<a href="https://camarades.de/" class="stretched-link" target="_blank" rel="noopener"></a>
+</div>
+```
+:::
+
+:::
+
+:::
+
+
 
 </details>
 
@@ -273,8 +419,8 @@ What follows are general practices. Your domain has specific conventions for fil
 
 <!-- why is there a weird white space between the frame and the text in this call outbox?-->
 ::: {.callout-tip .mx-4}
-## Tip for research groups to streamline this process
-- **Create standard operating procedures within the team.** For instance: where and when data back up should be made and in which file format, what project folder structure and conventions for naming files should be adopted, which metadata should routinely be acquired, what documentation should be created and when, and how and where a history of versions should be preserved. 
+## Tips for research groups to streamline this process
+- **Create standard operating procedures (SOPs) within the team.** For instance: where and when data back up should be made and in which file format, what project folder structure and conventions for naming files should be adopted, which metadata should routinely be acquired, what documentation should be created and when, and how and where a history of versions should be preserved. 
 - **Assign responsibilities.** For developing such SOPs for a specific kind of project and for checking all members have implemented those SOPs at a specified time point in their project (e.g. hold a data quality validation meeting prior to starting data analyses, see [Collect & Manage Checklist](#collect-manage-checklist){.mark}).
 :::
 
@@ -370,12 +516,11 @@ Your folder structure and file naming conventions determine whether you and othe
 
 - **Develop a file naming convention.** Good file names identify contents at a glance and sort correctly. Balance specificity with readability: too many elements make names unwieldy, too few make them ambiguous. Order elements from general to specific.
     - Use underscores or hyphens to separate elements, never spaces or special characters (`? ! & * % # @`)
-    - Use ISO 8601 dates (`YYYYMMDD`) so files sort chronologically
+    - Use ISO 8601 dates (`YYYY-MM-DD`) so files sort chronologically <!-- FS *strongly* prefer YYYY-MM-DD over YYYYMMDD -->
     - Include version numbers with leading zeros (`v01`, `v02`) so `v10` sorts after `v09`
     - Use meaningful abbreviations and document what they mean
 
-A pattern like `YYYYMMDD_project_condition_type_v01.ext` places files in chronological order while preserving context. For example, `20240315_sleep-study_control_survey_v02.csv` immediately tells you when it was created, which project it belongs to, the experimental condition, data type, and revision. Document your convention in a README file stored next to your data files so collaborators can parse filenames without asking.
-
+A pattern like `YYYY-MM-DD_project_condition_type_v01.ext` places files in chronological order while preserving context. For example, `2024-03-15_sleep-study_control_survey_v02.csv` immediately tells you when it was created, which project it belongs to, the experimental condition, data type, and revision. Document your convention in a README file stored next to your data files so collaborators can parse filenames without asking.
 <br>
 
 - **Follow domain standards where they exist.** Many fields have established organizational conventions that tools and collaborators expect. Using these means your data can immediately be integrated in existing analysis pipelines and reviewers recognize the structure. Search [RDMkit](https://rdmkit.elixir-europe.org/your_domain) for standards in your domain.
@@ -660,7 +805,7 @@ Version control system like Git tracks changes to files over time. You can see w
 
 - **GitHub** is the most popular, free but proprietary and US-based cloud-based platform for software development with Git, providing collaboration features like pull requests and issues (see [GitHub tutorial](https://lmu-osc.github.io/Collaborative-RStudio-GitHub/)). **You should not have any sensitive data on GitHub even in a private repository.**
 
-- **LRZ GitLab** is a cloud-based hosting platform that works exactly the same as GitHub but is open source and is installed on the LRZ servers for LMU Munich and can therefore be considered secure when the repository is private. 
+- **LRZ GitLab** is a cloud-based hosting platform that provides essentially the same features as GitHub but is open source and is installed on the LRZ servers for LMU Munich and can therefore be considered secure when the repository is private. 
 
 While your LRZ GitLab account is associated with your LMU Munich affiliation, your GitHub account can be associated with your private email, be included in your CV, and be used for public sharing of your data and code (see [3. Analyze & Collaborate](03-analyze-and-collaborate.qmd){.mark} and [4. Preserve & Share](04-preserve-and-share.qmd){.mark}).  
 
@@ -799,7 +944,7 @@ Participants have the right to understand what they are agreeing to. Your consen
 
 
 :::{.callout-tip}
-## Tip for research groups:
+## Tips for research groups:
 **Maintain a centralized log of all ethics approvals, consent forms, and compliance certifications for easy reference by team members.**
 :::
 
@@ -845,7 +990,7 @@ Anonymization protects privacy and determines what you can share.
 :::{.callout-note}
 ## Distinction between pseudonymization and anonymization
 
-- **Pseudonymization** replaces identifiers with codes while retaining a key that links back to individuals. Pseudonymized data is still personal data under GDPR because re-identification is possible.
+- **Pseudonymization** replaces identifiers with codes while retaining a key that links back to individuals. Pseudonymized data is still personal data under GDPR because re-identification is possible, at least by some persons.
 
 - **Anonymization** removes all possibility of re-identification. Only truly anonymized data falls outside GDPR scope. Achieving this is harder than it appears, especially with rich datasets.
 
@@ -925,7 +1070,7 @@ For data protection guidance, contact the [LMU Data Protection Officer](https://
 <!-- Reema: not sure tabs are needed here, could be h5 no anchor titles and ::: {.ms-1} block for lists, this is all done through the same tutorial, it seems there are several concepts that are the same just phrased differently, could be merged coherently to avoid redundancy and consolidate the structure and order of these concepts-->
 </summary>
 
-Quality control catches problems before they propagate into your analysis. The practices here ensure your data is trustworthy and your exclusions are defensible.
+Quality control catches problems before they propagate into your analysis. The practices here ensure your data is trustworthy and your exclusions are well-founded.
 
 **Define criteria before looking at your data.** This prevents unconscious bias in what you keep and exclude, and demonstrates that your decisions are principled rather than convenient (see [1.4. Study Design & Analysis Plan](01-plan-and-design.qmd#sec-study-design-analysis-plan){.mark}).
 
@@ -973,7 +1118,7 @@ Validation checks whether your data meets specifications. For example, values ca
 
 #### 2.4.2. Cleaning
 
-Data cleaning handles errors, inconsistencies, and missing values. The cardinal rule: never modify your raw data. All cleaning happens on copies.
+Data cleaning handles errors, inconsistencies, and missing values. The cardinal rule: never modify your raw data. All cleaning happens on copies, ideally by scripts and not through manual changes.
 
 <br>
 

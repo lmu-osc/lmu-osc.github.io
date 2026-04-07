@@ -1,5 +1,5 @@
 ```{=html}
-<div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="10000" role="region" aria-label="Testimonials from OSC community members" aria-live="polite" aria-atomic="false">
+<div id="testimonialCarousel" class="carousel slide" data-bs-interval="10000" role="region" aria-label="Testimonials from OSC community members" aria-live="polite" aria-atomic="false">
   <div class="carousel-indicators">
     <% items.forEach((item, index) => { %>
     <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="<%= index %>" class="<%= index === 0 ? 'active' : '' %>" aria-current="<%= index === 0 ? 'true' : 'false' %>" aria-label="Testimonial <%= index + 1 %> from <%= item.name %>"></button>
@@ -25,4 +25,56 @@
     <i class="bi bi-chevron-right text-success" aria-hidden="true"></i>
   </button>
 </div>
+
+<script>
+  (function () {
+    function shuffleArray(arr) {
+      for (var i = arr.length - 1; i > 0; i--) {
+        var j = Math.floor(Math.random() * (i + 1));
+        var tmp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = tmp;
+      }
+      return arr;
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+      var carousel = document.getElementById("testimonialCarousel");
+      if (!carousel) return;
+
+      var inner = carousel.querySelector(".carousel-inner");
+      var indicators = carousel.querySelector(".carousel-indicators");
+      if (!inner || !indicators) return;
+
+      var slides = Array.prototype.slice.call(inner.querySelectorAll(".carousel-item"));
+      if (slides.length < 2) return;
+
+      // Randomize slide order for each page load.
+      shuffleArray(slides);
+
+      slides.forEach(function (slide, index) {
+        slide.classList.toggle("active", index === 0);
+        inner.appendChild(slide);
+      });
+
+      var indicatorButtons = Array.prototype.slice.call(indicators.querySelectorAll("button"));
+      indicatorButtons.forEach(function (btn, index) {
+        btn.classList.toggle("active", index === 0);
+        if (index === 0) {
+          btn.setAttribute("aria-current", "true");
+        } else {
+          btn.removeAttribute("aria-current");
+        }
+        btn.setAttribute("data-bs-slide-to", String(index));
+      });
+
+      if (window.bootstrap && window.bootstrap.Carousel) {
+        window.bootstrap.Carousel.getOrCreateInstance(carousel, {
+          interval: 10000,
+          ride: "carousel"
+        });
+      }
+    });
+  })();
+</script>
 ```
