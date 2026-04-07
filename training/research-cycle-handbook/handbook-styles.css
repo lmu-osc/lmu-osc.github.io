@@ -58,43 +58,6 @@ h2 i, h3 i{ color: var(--orc-green); margin-right: .5rem; }
   background-color: #90a09b12 !important;
 }
 
-
-#about-orc-project {
-  padding: 1.25rem 1.75rem;
-}
-
-#about-orc-project summary {
-  cursor: pointer;
-  list-style: none;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-
-#about-orc-project[open] summary{
-  border-bottom: 1px solid var(--orc-gray-300);
-  margin-bottom: 0.8rem;
-  padding-bottom: 0.5rem;
-}
-
-#about-orc-project summary::-webkit-details-marker {
-   display: none; 
-}
-#about-orc-project summary::after {
-  content: '+ '; 
-  color:var(--orc-green);
-  font-weight: 600;
-  font-size: 1.25rem;
-  right:0;
-  position: absolute;
-  transition: transform .2s ease;
-}
-#about-orc-project[open] summary::after{
-   content: '- '; 
-}
-
 .accordion-body .btn.btn-primary {
   color: white;
   background: #00883A;
