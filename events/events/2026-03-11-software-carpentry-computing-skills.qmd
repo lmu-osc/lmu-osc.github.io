@@ -52,8 +52,10 @@ presenters:
 - name: ''
   url: ''
 host:
-- name: ''
+- name: Munich Center for Machine Learning (MCML)
   url: ''
+- name: LMU Open Science Center (OSC)
+  url: 
 template: templates/event-template.html
 filters:
     - templates/process-event-yaml.lua
