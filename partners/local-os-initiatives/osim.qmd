@@ -77,8 +77,8 @@ page-layout: full
     <ul class="list-unstyled mt-0 d-flex flex-column gap-3">
         <li>
             <a href="https://www.youtube.com/@lmuopenscienceinitiativein447/videos" rel="noopener"
-               class="d-flex align-items-center gap-3 text-decoration-none" style="cursor: pointer;">
-                <span class="d-flex align-items-center justify-content-center rounded-3 flex-shrink-0"
+               class="d-flex align-items-center gap-3 text-decoration-none" style="cursor: pointer; width:fit-content;">
+                <span class="d-flex align-items-center justify-content-center rounded-3 flex-shrink-0 shadow-sm"
                       style="width:56px; height:56px; background-color:#fde8e8;">
                     <i class="bi bi-youtube" style="font-size:1.6rem; color:#c0392b;"></i>
                 </span>
@@ -90,9 +90,9 @@ page-layout: full
         </li>
         <li>
             <a href="https://osf.io/kyvut/overview" rel="noopener"
-               class="d-flex align-items-center gap-3 text-decoration-none" style="cursor: pointer;">
+               class="d-flex align-items-center gap-3 text-decoration-none" style="cursor: pointer; width:fit-content;">
                 <img src="https://osf.io/static/img/institutions/shields/cos-shield.png"
-                     alt="OSF" class="rounded-3 flex-shrink-0"
+                     alt="OSF" class="rounded-3 flex-shrink-0 shadow-sm"
                      style="width:56px; height:56px; object-fit:contain; background-color:#e2f0fe; padding:8px;">
                 <span>
                     <span class="d-block fw-semibold text-black">OSF repository</span>
