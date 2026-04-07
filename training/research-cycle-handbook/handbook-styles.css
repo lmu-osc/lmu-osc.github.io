@@ -38,6 +38,27 @@ h2 i, h3 i{ color: var(--orc-green); margin-right: .5rem; }
 
 .mark,.quarto-xref { background: white; color:var(--orc-gray-400); font-weight:600; font-style: italic; text-decoration: none;}
 
+.custom-accordion-btn {
+  justify-content: center !important;
+  position: relative;
+  text-align: center;
+  color: #00883A;
+}
+
+.custom-accordion-btn::after {
+  position: absolute;
+  right: 1rem;
+}
+.custom-accordion-btn:focus {
+  box-shadow: none!important;
+} 
+
+.custom-accordion-btn:not(.collapsed) {
+  color: #00883A !important;
+  background-color: #90a09b12 !important;
+}
+
+
 #about-orc-project {
   padding: 1.25rem 1.75rem;
 }
@@ -74,19 +95,19 @@ h2 i, h3 i{ color: var(--orc-green); margin-right: .5rem; }
    content: '- '; 
 }
 
-#about-orc-project .btn.btn-primary {
+.accordion-body .btn.btn-primary {
   color: white;
-  background: var(--orc-green);
-  border-color: var(--orc-green);
+  background: #00883A;
+  border-color: #00883A;
   transition: all .2s ease;
 }
 
-#about-orc-project .btn.btn-primary:hover,
-#about-orc-project .btn.btn-primary:focus,
-#about-orc-project .btn.btn-primary:active {    
+.accordion-body .btn.btn-primary:hover,
+.accordion-body .btn.btn-primary:focus,
+.accordion-body .btn.btn-primary:active {    
   color: white !important;
-  background: var(--orc-green-dark) !important;
-  border-color: var(--orc-green-dark) !important;
+  background: #004d1d !important;
+  border-color:#004d1d!important;
 }
 
 .orc-grid-tools {
