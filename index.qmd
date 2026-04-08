@@ -48,7 +48,8 @@ include-after-body:
 
         function runEqualization() {
           window.requestAnimationFrame(function () {
-            var isSideBySide = window.matchMedia('(min-width: 768px)').matches;
+            // 992px breakpoint is based on Bootstrap's lg breakpoint, which is where the carousel layout changes from 1 item per slide to 2 items per slide. We want to equalize across both carousels when they are side-by-side, and equalize within each carousel when they are stacked.
+            var isSideBySide = window.matchMedia('(min-width: 992px)').matches;
 
             if (isSideBySide) {
               equalizeTextBySelector(
@@ -790,7 +791,7 @@ Keep up to date with our latest news releases, and upcoming events.
 
 ::: {.row .g-4}
 
-::: {.col-md-6}
+::: {.col-lg-6}
 ```{=html}
 <div class="card carousel-card h-100 border border-success-subtle">
   <div class="card-header bg-transparent fw-semibold text-uppercase">
@@ -831,7 +832,7 @@ Keep up to date with our latest news releases, and upcoming events.
 ```
 :::
 
-::: {.col-md-6}
+::: {.col-lg-6}
 ```{=html}
 <div class="card carousel-card h-100 border border-success-subtle">
   <div class="card-header bg-transparent fw-semibold text-uppercase">
