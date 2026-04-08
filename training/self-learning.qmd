@@ -21,10 +21,15 @@ listing:
       - "content_category"
     type: table
     contents:
-      - /*/**.qmd
-      - "!**/index.qmd"
-      - /*/*-tutorials.yaml
-      - "!/principles/principles-tutorials.yaml" # remove me when that file is filled in
+      - "!**/index.qmd" # don't include index files
+      - /data-management/**.qmd
+      - /preregistration/**.qmd
+      - /principles/**.qmd
+      - /publishing-outputs/**.qmd
+      - /reproducible-processes/**.qmd
+      - /study-planning/**.qmd
+      - /*/*-tutorials.yaml # also include the yaml files that list tutorials
+      - "!/principles/principles-tutorials.yaml" # don't include unless contained it filled in--errors otherwise. remove this whole line if the file is filled in
     fields: 
       - content_category
       - title
