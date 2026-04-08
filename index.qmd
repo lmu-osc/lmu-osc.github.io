@@ -392,13 +392,24 @@ include-in-header:
           letter-spacing: 0.08em;
           font-weight: 600;
           text-transform: uppercase;
-          color: #00883A;
+          color: #0b5f2f;
           text-decoration: none;
-          border: 1px solid rgba(0, 136, 58, 0.3);
+          border: 1px solid rgba(0, 136, 58, 0.45);
           border-radius: 999px;
-          padding: 0.22rem 0.58rem;
-          transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+          background: rgba(0, 136, 58, 0.1);
+          padding: 0.24rem 0.64rem;
+          display: inline-flex;
+          align-items: center;
+          gap: 0.35rem;
+          box-shadow: 0 1px 0 rgba(0, 136, 58, 0.18);
+          transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
           white-space: nowrap;
+        }
+
+        .carousel-card .carousel-header-link::after {
+          content: "→";
+          font-size: 0.82rem;
+          line-height: 1;
         }
 
         .carousel-card .carousel-header-link:hover,
@@ -406,6 +417,13 @@ include-in-header:
           background: #00883A;
           border-color: #00883A;
           color: #fff;
+          transform: translateY(-1px);
+          box-shadow: 0 4px 10px rgba(0, 136, 58, 0.28);
+        }
+
+        .carousel-card .carousel-header-link:focus-visible {
+          outline: 2px solid rgba(0, 136, 58, 0.4);
+          outline-offset: 2px;
         }
 
         .carousel-card .card-body {
@@ -777,7 +795,7 @@ Keep up to date with our latest news releases, and upcoming events.
 <div class="card carousel-card h-100 border border-success-subtle">
   <div class="card-header bg-transparent fw-semibold text-uppercase">
     <span>News</span>
-    <a href="news/index.qmd" class="carousel-header-link" aria-label="View all news">All News</a>
+    <a href="news/index.qmd" class="carousel-header-link" aria-label="View all news">View All News</a>
   </div>
   <div class="card-body">
     <div id="newsCardCarousel" class="carousel slide" data-bs-ride="false">
@@ -818,7 +836,7 @@ Keep up to date with our latest news releases, and upcoming events.
 <div class="card carousel-card h-100 border border-success-subtle">
   <div class="card-header bg-transparent fw-semibold text-uppercase">
     <span>Events</span>
-    <a href="events/index.qmd" class="carousel-header-link" aria-label="View all events">All Events</a>
+    <a href="events/index.qmd" class="carousel-header-link" aria-label="View all events">View All Events</a>
   </div>
   <div class="card-body">
     <div id="eventsCardCarousel" class="carousel slide" data-bs-ride="false">
