@@ -20,6 +20,8 @@ event:
     primary: English
     primary-code: en
     detail: en
+  # flyer: assets/2022-09-27-crash-course-open-science-schedule.pdf
+  flyer: images/2026-06-10-ospark-bootcamp-image.png
 links:
   registration: 
   materials: 
@@ -50,3 +52,35 @@ filters:
 ---
 
  
+```{=html}
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll('.flyer').forEach(el => {
+    const src = el.dataset.src;
+    const ext = src.split('.').pop().toLowerCase();
+
+    let preview = '';
+
+    if (['jpg','jpeg','png','webp','gif'].includes(ext)) {
+      preview = `<img src="${src}" loading="lazy"
+        style="max-width:100%; border-radius:10px;" />`;
+    } else if (ext === 'pdf') {
+      preview = `<iframe src="${src}" loading="lazy"
+        width="100%" height="420" style="border:none; border-radius:10px;"></iframe>`;
+    } else {
+      preview = `<div style="padding:1rem; background:#eee;">
+        Preview not available
+      </div>`;
+    }
+
+    el.innerHTML = `
+      <div style="margin-bottom:10px;">${preview}</div>
+      <a href="${src}" target="_blank" class="flyer-link">
+        Open full flyer ↗
+      </a>
+    `;
+  });
+});
+</script>
+```
+  
