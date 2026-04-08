@@ -353,13 +353,73 @@ include-in-header:
         }
 
       /* =============================================
-         news carousel
+         news and events carousel
          ============================================= */
+        .stay-loop-shell {
+          border-radius: 20px;
+          background: linear-gradient(180deg, rgba(0, 136, 58, 0.1) 0%, rgba(0, 136, 58, 0.03) 100%);
+          padding: 1.5rem;
+        }
+
+        .carousel-card {
+          border-radius: 18px;
+          border-color: rgba(0, 136, 58, 0.25) !important;
+          background: #ffffff !important;
+          box-shadow: 0 8px 24px rgba(16, 24, 40, 0.08);
+          transition: transform 0.25s ease, box-shadow 0.25s ease;
+          overflow: hidden;
+        }
+
+        .carousel-card:hover {
+          transform: translateY(-3px);
+          box-shadow: 0 14px 32px rgba(16, 24, 40, 0.12);
+        }
+
+        .carousel-card .card-header {
+          font-size: 0.8rem;
+          letter-spacing: 0.1em;
+          color: #00883A;
+          border-bottom: 1px solid rgba(0, 136, 58, 0.16);
+          padding: 0.95rem 1.1rem 0.85rem;
+        }
+
+        .carousel-card .card-body {
+          padding: 1.1rem 1.1rem 0.95rem;
+        }
+
+        .carousel-card .card-footer {
+          border-top: 1px solid rgba(0, 136, 58, 0.12);
+          background: transparent;
+          padding: 0.9rem 1.1rem 1.1rem;
+        }
+
+        .carousel-card .carousel-section-btn {
+          width: 100%;
+          max-width: 190px;
+          background: #00883A;
+          border-color: #00883A;
+          color: #fff !important;
+          letter-spacing: 0.04em;
+          font-weight: 600;
+          transition: background 0.2s ease, border-color 0.2s ease, transform 0.15s ease;
+        }
+
+        .carousel-card .carousel-section-btn:hover {
+          background: #006b2d;
+          border-color: #006b2d;
+          transform: translateY(-1px);
+        }
+
         #newsCardCarousel,
         #eventsCardCarousel {
-          padding-bottom: 3rem;
+          padding-bottom: 2rem;
           --carousel-max-title-lines: 2;
           --carousel-max-body-lines: 3;
+        }
+
+        #newsCardCarousel .carousel-item,
+        #eventsCardCarousel .carousel-item {
+          min-height: 180px;
         }
 
         #newsCardCarousel .carousel-item .card-title,
@@ -373,10 +433,21 @@ include-in-header:
 
         #newsCardCarousel .carousel-item .card-subtitle,
         #eventsCardCarousel .carousel-item .card-subtitle {
-          display: -webkit-box;
-          -webkit-box-orient: vertical;
-          -webkit-line-clamp: 1;
+          display: inline-flex;
+          align-items: center;
+          max-width: 100%;
+          font-size: 0.76rem !important;
+          letter-spacing: 0.08em;
+          text-transform: uppercase;
+          color: #2f4b39 !important;
+          background: rgba(0, 136, 58, 0.1);
+          border: 1px solid rgba(0, 136, 58, 0.2);
+          border-radius: 999px;
+          padding: 0.2rem 0.6rem;
+          margin-bottom: 0.75rem !important;
+          white-space: nowrap;
           overflow: hidden;
+          text-overflow: ellipsis;
         }
 
         #newsCardCarousel .carousel-item .card-text,
@@ -393,77 +464,14 @@ include-in-header:
           -webkit-box-orient: vertical;
           -webkit-line-clamp: var(--carousel-max-title-lines);
           overflow: hidden;
+          color: #324437;
         }
 
-        #newsCardCarousel .carousel-control-prev-icon,
-        #newsCardCarousel .carousel-control-next-icon,
-        #eventsCardCarousel .carousel-control-prev-icon,
-        #eventsCardCarousel .carousel-control-next-icon {
-          filter: brightness(0) saturate(100%);
-        }
-
-        #newsCardCarousel .carousel-indicators,
-        #eventsCardCarousel .carousel-indicators {
-          margin-bottom: 0;
-        }
-
-        #newsCardCarousel .carousel-indicators [data-bs-target],
-        #eventsCardCarousel .carousel-indicators [data-bs-target] {
-          background-color: #000;
-          opacity: 0.4;
-        }
-
-        #newsCardCarousel .carousel-indicators .active,
-        #eventsCardCarousel .carousel-indicators .active {
-          opacity: 1;
-        }
-        #newsCardCarousel .carousel-control-next,
-        #newsCardCarousel .carousel-control-prev,
-        #eventsCardCarousel .carousel-control-next,
-        #eventsCardCarousel .carousel-control-prev {
-          top: 87.5%;
-          width: 25px;
-          height: 25px;
-          color: #000000e6;
-          border: 1px solid #000000b3;
-          border-radius: 50%;
-          transition: background 0.2s;
-        }
-        #newsCardCarousel .carousel-control-prev,
-        #eventsCardCarousel .carousel-control-prev {
-          left: 0; 
-        }
-
-        #newsCardCarousel .carousel-control-next,
-        #eventsCardCarousel .carousel-control-next {
-          left: 35px;  
-          right: auto;   
-        }
-        #newsCardCarousel .carousel-control-next i,
-        #newsCardCarousel .carousel-control-prev i,
-        #eventsCardCarousel .carousel-control-next i,
-        #eventsCardCarousel .carousel-control-prev i {
-          font-size: 0.75rem;
-          line-height: 1;
-        }
-        #newsCardCarousel .carousel-control-next:hover,
-        #newsCardCarousel .carousel-control-prev:hover,
-        #eventsCardCarousel .carousel-control-next:hover,
-        #eventsCardCarousel .carousel-control-prev:hover {
-          background: #00883A;
-          color: #fff;
-          border-color: #00883A;
-        }
-        .carousel-card .card-header {
-          font-size: 0.8rem;
-          letter-spacing: 0.1em;
-          color: #00883A;
-          border-bottom:none;
-        }
         .carousel-card .btn.btn-link {
           position: relative;
           text-decoration: none;
           display: inline-block;
+          color: #00883A;
         }
 
         .carousel-card .btn.btn-link::after {
@@ -479,6 +487,80 @@ include-in-header:
 
         .carousel-card .btn.btn-link:hover::after {
           width: 100%;
+        }
+
+        .carousel-header-controls {
+          display: inline-flex;
+          gap: 0.45rem;
+        }
+
+        .carousel-nav-btn {
+          width: 34px;
+          height: 34px;
+          border: 1px solid rgba(0, 136, 58, 0.35);
+          color: #1c3525;
+          border-radius: 999px;
+          background: #fff;
+          padding: 0;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+        }
+
+        .carousel-nav-btn:hover,
+        .carousel-nav-btn:focus {
+          background: #00883A;
+          border-color: #00883A;
+          color: #fff;
+        }
+
+        .carousel-nav-btn i {
+          font-size: 0.8rem;
+          line-height: 1;
+        }
+
+        #newsCardCarousel .carousel-indicators,
+        #eventsCardCarousel .carousel-indicators {
+          justify-content: flex-start;
+          margin-bottom: 0;
+          margin-left: 0;
+          margin-right: 0;
+        }
+
+        #newsCardCarousel .carousel-indicators [data-bs-target],
+        #eventsCardCarousel .carousel-indicators [data-bs-target] {
+          width: 22px;
+          height: 4px;
+          border-radius: 999px;
+          background-color: #3d5343;
+          opacity: 0.28;
+        }
+
+        #newsCardCarousel .carousel-indicators .active,
+        #eventsCardCarousel .carousel-indicators .active {
+          opacity: 1;
+        }
+
+        @media (max-width: 767.98px) {
+          .stay-loop-shell {
+            padding: 1rem;
+          }
+
+          .carousel-header-controls {
+            display: none;
+          }
+
+          #newsCardCarousel,
+          #eventsCardCarousel {
+            padding-bottom: 1.7rem;
+          }
+
+          #newsCardCarousel .carousel-indicators [data-bs-target],
+          #eventsCardCarousel .carousel-indicators [data-bs-target] {
+            width: 28px;
+            height: 5px;
+          }
         }
         </style>
       <link href="/assets/bootstrap-5.3.8-dist/css/bootstrap.min.css" rel="stylesheet">
