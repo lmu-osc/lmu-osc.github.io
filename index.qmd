@@ -798,30 +798,30 @@ Keep up to date with our latest news releases, and upcoming events.
     <a href="news/index.qmd" class="carousel-header-link" aria-label="View all news">View All News</a>
   </div>
   <div class="card-body">
-    <div id="newsCardCarousel" class="carousel slide" data-bs-ride="false">
+    <div id="newsCardCarousel" class="carousel slide" data-bs-ride="false" role="region" aria-roledescription="carousel" aria-label="Latest news">
       <div class="carousel-indicators">
-        <button type="button" data-bs-target="#newsCardCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#newsCardCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#newsCardCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Show news item 1 of 2"></button>
+        <button type="button" data-bs-target="#newsCardCarousel" data-bs-slide-to="1" aria-label="Show news item 2 of 2"></button>
       </div>
-      <div class="carousel-inner">
+      <div class="carousel-inner" aria-live="polite">
         <div class="carousel-item active">
           <h6 class="card-subtitle mb-2 text-body-secondary" style="font-size:0.87rem;">Jul 7, 2025</h6>
           <h5 class="card-title">Launching of LMU-FORRT Train-the-Trainer Program</h5>
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-link p-0 fw-semibold small">Read More →</a>
+          <a href="#" class="btn btn-link p-0 fw-semibold small" aria-label="Read more about Launching of LMU-FORRT Train-the-Trainer Program">Read More →</a>
         </div>
         <div class="carousel-item">
           <h6 class="card-subtitle mb-2 text-body-secondary" style="font-size:0.87rem;">Mar 18, 2026</h6>
           <h5 class="card-title">Second news item</h5>
           <p class="card-text">Another example entry to demonstrate basic carousel behavior inside the card body.</p>
-          <a href="#" class="btn btn-link p-0 fw-semibold small">Read More →</a>
+          <a href="#" class="btn btn-link p-0 fw-semibold small" aria-label="Read more about Second news item">Read More →</a>
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#newsCardCarousel" data-bs-slide="prev">
+      <button class="carousel-control-prev" type="button" data-bs-target="#newsCardCarousel" data-bs-slide="prev" aria-controls="newsCardCarousel" aria-label="Show previous news item">
         <i class="bi bi-chevron-left" aria-hidden="true"></i>
         <span class="visually-hidden">Previous</span>
       </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#newsCardCarousel" data-bs-slide="next">
+      <button class="carousel-control-next" type="button" data-bs-target="#newsCardCarousel" data-bs-slide="next" aria-controls="newsCardCarousel" aria-label="Show next news item">
         <i class="bi bi-chevron-right" aria-hidden="true"></i>
         <span class="visually-hidden">Next</span>
       </button>
@@ -839,30 +839,30 @@ Keep up to date with our latest news releases, and upcoming events.
     <a href="events/index.qmd" class="carousel-header-link" aria-label="View all events">View All Events</a>
   </div>
   <div class="card-body">
-    <div id="eventsCardCarousel" class="carousel slide" data-bs-ride="false">
+    <div id="eventsCardCarousel" class="carousel slide" data-bs-ride="false" role="region" aria-roledescription="carousel" aria-label="Upcoming events">
       <div class="carousel-indicators">
-        <button type="button" data-bs-target="#eventsCardCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#eventsCardCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#eventsCardCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Show event item 1 of 2"></button>
+        <button type="button" data-bs-target="#eventsCardCarousel" data-bs-slide-to="1" aria-label="Show event item 2 of 2"></button>
       </div>
-      <div class="carousel-inner">
+      <div class="carousel-inner" aria-live="polite">
         <div class="carousel-item active">
           <h6 class="card-subtitle mb-2 text-body-secondary" style="font-size:0.87rem;">Workshop · May 15, 2026</h6>
           <h5 class="card-title">Data & AI Ethics</h5>
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-link p-0 fw-semibold small">See Event →</a>
+          <a href="#" class="btn btn-link p-0 fw-semibold small" aria-label="See details for Data and AI Ethics">See Event →</a>
         </div>
         <div class="carousel-item">
           <h6 class="card-subtitle mb-2 text-body-secondary" style="font-size:0.87rem;">Seminar · May 22, 2026</h6>
           <h5 class="card-title">Reproducible Research Methods</h5>
           <p class="card-text">Another example event entry to demonstrate matching carousel behavior and card layout.</p>
-          <a href="#" class="btn btn-link p-0 fw-semibold small">See Event →</a>
+          <a href="#" class="btn btn-link p-0 fw-semibold small" aria-label="See details for Reproducible Research Methods">See Event →</a>
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#eventsCardCarousel" data-bs-slide="prev">
+      <button class="carousel-control-prev" type="button" data-bs-target="#eventsCardCarousel" data-bs-slide="prev" aria-controls="eventsCardCarousel" aria-label="Show previous event item">
         <i class="bi bi-chevron-left" aria-hidden="true"></i>
         <span class="visually-hidden">Previous</span>
       </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#eventsCardCarousel" data-bs-slide="next">
+      <button class="carousel-control-next" type="button" data-bs-target="#eventsCardCarousel" data-bs-slide="next" aria-controls="eventsCardCarousel" aria-label="Show next event item">
         <i class="bi bi-chevron-right" aria-hidden="true"></i>
         <span class="visually-hidden">Next</span>
       </button>
