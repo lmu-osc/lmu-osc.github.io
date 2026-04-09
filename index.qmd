@@ -510,6 +510,25 @@ include-in-header:
           color: #324437;
         }
 
+        .carousel-card .card-title .carousel-title-link {
+          color: inherit;
+          text-decoration: none;
+          position: relative;
+          display: inline;
+          background-image: linear-gradient(currentColor, currentColor);
+          background-repeat: no-repeat;
+          background-size: 0% 2px;
+          background-position: 0 100%;
+          transition: background-size 0.25s ease;
+          font-weight: bold;
+        }
+
+        .carousel-card .card-title .carousel-title-link:hover,
+        .carousel-card .card-title .carousel-title-link:focus-visible {
+          color: inherit;
+          background-size: 100% 2px;
+        }
+
         .carousel-card .btn.btn-link {
           position: relative;
           text-decoration: none;
@@ -834,7 +853,7 @@ Keep up to date with our latest news releases, and upcoming events.
 ::: {.col-lg-6}
 ::: {#events-carousel}
 :::
-:::
+::: 
 
 :::
 
