@@ -27,6 +27,10 @@
     return comparisonDate >= today;
   }
 
+  function isPast(item) {
+    return !isUpcoming(item);
+  }
+
   function sortAscendingByDate(a, b) {
     const da = getComparisonDate(a);
     const db = getComparisonDate(b);
@@ -104,7 +108,11 @@
       <div class="carousel-inner" aria-live="polite">
         <% carouselItems.forEach((item, index) => { %>
         <div class="carousel-item <%= index === 0 ? 'active' : '' %>">
-          <h6 class="card-subtitle mb-2 text-body-secondary" style="font-size:0.87rem;"><%- getEventType(item) %> · <%= formatEventDate(item) %></h6>
+          <% if (isPast(item)) { %>
+          <h6 class="card-subtitle mb-2 text-body-secondary" style="font-size:0.87rem;background: rgba(134, 112, 112, 0.18); border-color: rgba(134, 112, 112, 0.36); color: #5a4747 !important;">Past Event &middot; <%- getEventType(item) %> &middot; <%= formatEventDate(item) %></h6>
+          <% } else { %>
+          <h6 class="card-subtitle mb-2 text-body-secondary" style="font-size:0.87rem;"><%- getEventType(item) %> &middot; <%= formatEventDate(item) %></h6>
+          <% } %>
           <h5 class="card-title"><%- item.title %></h5>
           <p class="card-text"><%- getEventDescription(item) %></p>
           <a href="<%- item.path %>" class="btn btn-link p-0 fw-semibold small" aria-label="See details for <%- item.title %>">See Event →</a>
