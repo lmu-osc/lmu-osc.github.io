@@ -1,0 +1,117 @@
+```{=html}
+<%
+  const sourceItems = items || [];
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+
+  function parseEventDate(value) {
+    if (!value) return null;
+    if (typeof value === 'string' && /^\d{4}-\d{2}-\d{2}$/.test(value)) {
+      const parts = value.split('-').map(Number);
+      return new Date(parts[0], parts[1] - 1, parts[2]);
+    }
+    const parsed = new Date(value);
+    return isNaN(parsed.getTime()) ? null : parsed;
+  }
+
+  function getComparisonDate(item) {
+    const startDate = parseEventDate(item && item.event && item.event.start_date);
+    const endDate = parseEventDate(item && item.event && item.event.end_date);
+    return endDate || startDate;
+  }
+
+  function isUpcoming(item) {
+    const comparisonDate = getComparisonDate(item);
+    if (!comparisonDate) return false;
+    comparisonDate.setHours(0, 0, 0, 0);
+    return comparisonDate >= today;
+  }
+
+  function sortAscendingByDate(a, b) {
+    const da = getComparisonDate(a);
+    const db = getComparisonDate(b);
+    if (!da && !db) return 0;
+    if (!da) return 1;
+    if (!db) return -1;
+    return da.getTime() - db.getTime();
+  }
+
+  function sortDescendingByDate(a, b) {
+    const da = getComparisonDate(a);
+    const db = getComparisonDate(b);
+    if (!da && !db) return 0;
+    if (!da) return 1;
+    if (!db) return -1;
+    return db.getTime() - da.getTime();
+  }
+
+  function formatEventDate(item) {
+    const startDate = parseEventDate(item && item.event && item.event.start_date);
+    if (!startDate) return '';
+    return startDate.toLocaleDateString('en-US', {
+      month: 'short',
+      day: 'numeric',
+      year: 'numeric'
+    });
+  }
+
+  function getEventType(item) {
+    if (!item) return 'Event';
+    if (item.event && item.event.format && item.event.format.type) {
+      return item.event.format.type;
+    }
+    if (Array.isArray(item.categories) && item.categories.length) {
+      return item.categories[0];
+    }
+    if (item.categories) return item.categories;
+    return 'Event';
+  }
+
+  function getEventDescription(item) {
+    if (!item) return '';
+    if (item.event && item.event.description) return item.event.description;
+    if (item.description) return item.description;
+    return 'See event details from the LMU Open Science Center.';
+  }
+
+  const upcoming = sourceItems.filter(isUpcoming).sort(sortAscendingByDate);
+  const past = sourceItems.filter((item) => !isUpcoming(item)).sort(sortDescendingByDate);
+
+  let carouselItems = upcoming.slice();
+  if (carouselItems.length < 3) {
+    const required = 3 - carouselItems.length;
+    carouselItems = carouselItems.concat(past.slice(0, required));
+  }
+%>
+<div class="card carousel-card h-100 border border-success-subtle">
+  <div class="card-header bg-transparent fw-semibold text-uppercase">
+    <span>Events</span>
+    <a href="events/index.qmd" class="carousel-header-link" aria-label="View all events">View All Events</a>
+  </div>
+  <div class="card-body">
+    <div id="eventsCardCarousel" class="carousel slide" data-bs-ride="false" role="region" aria-roledescription="carousel" aria-label="Upcoming events">
+      <div class="carousel-indicators">
+        <% carouselItems.forEach((item, index) => { %>
+        <button
+          type="button"
+          data-bs-target="#eventsCardCarousel"
+          data-bs-slide-to="<%= index %>"
+          class="<%= index === 0 ? 'active' : '' %>"
+          aria-current="<%= index === 0 ? 'true' : 'false' %>"
+          aria-label="Show event item <%= index + 1 %> of <%= carouselItems.length %>"></button>
+        <% }); %>
+      </div>
+      <div class="carousel-inner" aria-live="polite">
+        <% carouselItems.forEach((item, index) => { %>
+        <div class="carousel-item <%= index === 0 ? 'active' : '' %>">
+          <h6 class="card-subtitle mb-2 text-body-secondary" style="font-size:0.87rem;"><%- getEventType(item) %> · <%= formatEventDate(item) %></h6>
+          <h5 class="card-title"><%- item.title %></h5>
+          <p class="card-text"><%- getEventDescription(item) %></p>
+          <a href="<%- item.path %>" class="btn btn-link p-0 fw-semibold small" aria-label="See details for <%- item.title %>">See Event →</a>
+        </div>
+        <% }); %>
+      </div>
+    </div>
+  </div>
+</div>
+```
