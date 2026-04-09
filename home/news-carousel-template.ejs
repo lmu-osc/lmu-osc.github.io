@@ -1,0 +1,54 @@
+```{=html}
+<%
+  const carouselItems = (items || []).slice(0, 3);
+
+  function formatNewsDate(value) {
+    if (!value) return '';
+    const date = new Date(value);
+    if (isNaN(date.getTime())) return '';
+    return date.toLocaleDateString('en-US', {
+      month: 'short',
+      day: 'numeric',
+      year: 'numeric'
+    });
+  }
+
+  function getNewsDescription(item) {
+    if (!item) return '';
+    if (item.description) return item.description;
+    if (item.subtitle) return item.subtitle;
+    return 'Read the latest update from the LMU Open Science Center.';
+  }
+%>
+<div class="card carousel-card h-100 border border-success-subtle">
+  <div class="card-header bg-transparent fw-semibold text-uppercase">
+    <span>News</span>
+    <a href="news/index.qmd" class="carousel-header-link" aria-label="View all news">View All News</a>
+  </div>
+  <div class="card-body">
+    <div id="newsCardCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="10000" data-bs-pause="hover" role="region" aria-roledescription="carousel" aria-label="Latest news">
+      <div class="carousel-indicators">
+        <% carouselItems.forEach((item, index) => { %>
+        <button
+          type="button"
+          data-bs-target="#newsCardCarousel"
+          data-bs-slide-to="<%= index %>"
+          class="<%= index === 0 ? 'active' : '' %>"
+          aria-current="<%= index === 0 ? 'true' : 'false' %>"
+          aria-label="Show news item <%= index + 1 %> of <%= carouselItems.length %>"></button>
+        <% }); %>
+      </div>
+      <div class="carousel-inner" aria-live="polite">
+        <% carouselItems.forEach((item, index) => { %>
+        <div class="carousel-item <%= index === 0 ? 'active' : '' %>">
+          <h6 class="card-subtitle mb-2 text-body-secondary" style="font-size:0.87rem;"><%= formatNewsDate(item.date) %></h6>
+          <h5 class="card-title"><a href="<%- item.path %>" class="carousel-title-link" aria-label="Open news item: <%- item.title %>"><%- item.title %></a></h5>
+          <p class="card-text"><%- getNewsDescription(item) %></p>
+          <a href="<%- item.path %>" class="btn btn-link p-0 fw-semibold small" aria-label="Read more about <%- item.title %>">Read More →</a>
+        </div>
+        <% }); %>
+      </div>
+    </div>
+  </div>
+</div>
+```

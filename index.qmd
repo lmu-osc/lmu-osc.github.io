@@ -12,16 +12,15 @@ format:
       margin-width: 200px
       gutter-width: 2em
 title-block-banner: "assets/img/osc_image_assets/Banner1_customized_offset_15_up.jpg"  
-# listing:
-#   - id: news-carousel
-#     template: news/news.ejs
-#     contents: news/news
-#     sort: "date desc"
-#   - id: events-carousel
-#     template: events/events.ejs
-#     contents: events/events/*.qmd
-#     sort: "date desc"
 listing:
+  - id: news-carousel
+    template: home/news-carousel-template.ejs
+    contents: news/news
+    sort: "date desc"
+  - id: events-carousel
+    template: home/events-carousel-template.ejs
+    contents: events/events/*.qmd
+    sort: "date desc"
   - id: testimonial-carousel
     template: home/testimonials-carousel-template.ejs
     contents: home/testimonials.yaml
@@ -459,6 +458,12 @@ include-in-header:
           padding-bottom: 2rem;
           --carousel-max-title-lines: 2;
           --carousel-max-body-lines: 3;
+          --home-carousel-slide-duration: 1.1s;
+        }
+
+        #newsCardCarousel .carousel-item,
+        #eventsCardCarousel .carousel-item {
+          transition: transform var(--home-carousel-slide-duration) ease-in-out;
         }
 
         #newsCardCarousel .carousel-item,
@@ -509,6 +514,25 @@ include-in-header:
           -webkit-line-clamp: var(--carousel-max-title-lines);
           overflow: hidden;
           color: #324437;
+        }
+
+        .carousel-card .card-title .carousel-title-link {
+          color: inherit;
+          text-decoration: none;
+          position: relative;
+          display: inline;
+          background-image: linear-gradient(currentColor, currentColor);
+          background-repeat: no-repeat;
+          background-size: 0% 2px;
+          background-position: 0 100%;
+          transition: background-size 0.25s ease;
+          font-weight: bold;
+        }
+
+        .carousel-card .card-title .carousel-title-link:hover,
+        .carousel-card .card-title .carousel-title-link:focus-visible {
+          color: inherit;
+          background-size: 100% 2px;
         }
 
         .carousel-card .btn.btn-link {
@@ -828,70 +852,14 @@ Keep up to date with our latest news releases, and upcoming events.
 ::: {.row .g-4}
 
 ::: {.col-lg-6}
-```{=html}
-<div class="card carousel-card h-100 border border-success-subtle">
-  <div class="card-header bg-transparent fw-semibold text-uppercase">
-    <span>News</span>
-    <a href="news/index.qmd" class="carousel-header-link" aria-label="View all news">View All News</a>
-  </div>
-  <div class="card-body">
-    <div id="newsCardCarousel" class="carousel slide" data-bs-ride="false" role="region" aria-roledescription="carousel" aria-label="Latest news">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#newsCardCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Show news item 1 of 2"></button>
-        <button type="button" data-bs-target="#newsCardCarousel" data-bs-slide-to="1" aria-label="Show news item 2 of 2"></button>
-      </div>
-      <div class="carousel-inner" aria-live="polite">
-        <div class="carousel-item active">
-          <h6 class="card-subtitle mb-2 text-body-secondary" style="font-size:0.87rem;">Jul 7, 2025</h6>
-          <h5 class="card-title">Launching of LMU-FORRT Train-the-Trainer Program</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-link p-0 fw-semibold small" aria-label="Read more about Launching of LMU-FORRT Train-the-Trainer Program">Read More →</a>
-        </div>
-        <div class="carousel-item">
-          <h6 class="card-subtitle mb-2 text-body-secondary" style="font-size:0.87rem;">Mar 18, 2026</h6>
-          <h5 class="card-title">Second news item</h5>
-          <p class="card-text">Another example entry to demonstrate basic carousel behavior inside the card body.</p>
-          <a href="#" class="btn btn-link p-0 fw-semibold small" aria-label="Read more about Second news item">Read More →</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-```
+::: {#news-carousel}
+::: 
 :::
 
 ::: {.col-lg-6}
-```{=html}
-<div class="card carousel-card h-100 border border-success-subtle">
-  <div class="card-header bg-transparent fw-semibold text-uppercase">
-    <span>Events</span>
-    <a href="events/index.qmd" class="carousel-header-link" aria-label="View all events">View All Events</a>
-  </div>
-  <div class="card-body">
-    <div id="eventsCardCarousel" class="carousel slide" data-bs-ride="false" role="region" aria-roledescription="carousel" aria-label="Upcoming events">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#eventsCardCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Show event item 1 of 2"></button>
-        <button type="button" data-bs-target="#eventsCardCarousel" data-bs-slide-to="1" aria-label="Show event item 2 of 2"></button>
-      </div>
-      <div class="carousel-inner" aria-live="polite">
-        <div class="carousel-item active">
-          <h6 class="card-subtitle mb-2 text-body-secondary" style="font-size:0.87rem;">Workshop · May 15, 2026</h6>
-          <h5 class="card-title">Data & AI Ethics</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-link p-0 fw-semibold small" aria-label="See details for Data and AI Ethics">See Event →</a>
-        </div>
-        <div class="carousel-item">
-          <h6 class="card-subtitle mb-2 text-body-secondary" style="font-size:0.87rem;">Seminar · May 22, 2026</h6>
-          <h5 class="card-title">Reproducible Research Methods</h5>
-          <p class="card-text">Another example event entry to demonstrate matching carousel behavior and card layout.</p>
-          <a href="#" class="btn btn-link p-0 fw-semibold small" aria-label="See details for Reproducible Research Methods">See Event →</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-```
+::: {#events-carousel}
 :::
+::: 
 
 :::
 
