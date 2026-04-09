@@ -48,7 +48,8 @@ include-after-body:
 
         function runEqualization() {
           window.requestAnimationFrame(function () {
-            var isSideBySide = window.matchMedia('(min-width: 768px)').matches;
+            // 992px breakpoint is based on Bootstrap's lg breakpoint, which is where the carousel layout changes from 1 item per slide to 2 items per slide. We want to equalize across both carousels when they are side-by-side, and equalize within each carousel when they are stacked.
+            var isSideBySide = window.matchMedia('(min-width: 992px)').matches;
 
             if (isSideBySide) {
               equalizeTextBySelector(
@@ -353,13 +354,116 @@ include-in-header:
         }
 
       /* =============================================
-         news carousel
+         news and events carousel
          ============================================= */
+        .stay-loop-shell {
+          border-radius: 20px;
+          background: linear-gradient(180deg, rgba(0, 136, 58, 0.1) 0%, rgba(0, 136, 58, 0.03) 100%);
+          padding: 1.5rem;
+        }
+
+        .carousel-card {
+          border-radius: 18px;
+          border-color: rgba(0, 136, 58, 0.25) !important;
+          background: #ffffff !important;
+          box-shadow: 0 8px 24px rgba(16, 24, 40, 0.08);
+          transition: transform 0.25s ease, box-shadow 0.25s ease;
+          overflow: hidden;
+        }
+
+        .carousel-card:hover {
+          transform: translateY(-3px);
+          box-shadow: 0 14px 32px rgba(16, 24, 40, 0.12);
+        }
+
+        .carousel-card .card-header {
+          font-size: 0.8rem;
+          letter-spacing: 0.1em;
+          color: #00883A;
+          border-bottom: 1px solid rgba(0, 136, 58, 0.16);
+          padding: 0.95rem 1.1rem 0.85rem;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 0.75rem;
+        }
+
+        .carousel-card .carousel-header-link {
+          font-size: 0.74rem;
+          letter-spacing: 0.08em;
+          font-weight: 600;
+          text-transform: uppercase;
+          color: #0b5f2f;
+          text-decoration: none;
+          border: 1px solid rgba(0, 136, 58, 0.45);
+          border-radius: 999px;
+          background: rgba(0, 136, 58, 0.1);
+          padding: 0.24rem 0.64rem;
+          display: inline-flex;
+          align-items: center;
+          gap: 0.35rem;
+          box-shadow: 0 1px 0 rgba(0, 136, 58, 0.18);
+          transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
+          white-space: nowrap;
+        }
+
+        .carousel-card .carousel-header-link::after {
+          content: "→";
+          font-size: 0.82rem;
+          line-height: 1;
+        }
+
+        .carousel-card .carousel-header-link:hover,
+        .carousel-card .carousel-header-link:focus {
+          background: #00883A;
+          border-color: #00883A;
+          color: #fff;
+          transform: translateY(-1px);
+          box-shadow: 0 4px 10px rgba(0, 136, 58, 0.28);
+        }
+
+        .carousel-card .carousel-header-link:focus-visible {
+          outline: 2px solid rgba(0, 136, 58, 0.4);
+          outline-offset: 2px;
+        }
+
+        .carousel-card .card-body {
+          padding: 1.1rem 1.1rem 0.95rem;
+        }
+
+        .carousel-card .card-footer {
+          border-top: 1px solid rgba(0, 136, 58, 0.12);
+          background: transparent;
+          padding: 0.9rem 1.1rem 1.1rem;
+        }
+
+        .carousel-card .carousel-section-btn {
+          width: 100%;
+          max-width: 190px;
+          background: #00883A;
+          border-color: #00883A;
+          color: #fff !important;
+          letter-spacing: 0.04em;
+          font-weight: 600;
+          transition: background 0.2s ease, border-color 0.2s ease, transform 0.15s ease;
+        }
+
+        .carousel-card .carousel-section-btn:hover {
+          background: #006b2d;
+          border-color: #006b2d;
+          transform: translateY(-1px);
+        }
+
         #newsCardCarousel,
         #eventsCardCarousel {
-          padding-bottom: 3rem;
+          padding-bottom: 2rem;
           --carousel-max-title-lines: 2;
           --carousel-max-body-lines: 3;
+        }
+
+        #newsCardCarousel .carousel-item,
+        #eventsCardCarousel .carousel-item {
+          min-height: 180px;
         }
 
         #newsCardCarousel .carousel-item .card-title,
@@ -373,10 +477,21 @@ include-in-header:
 
         #newsCardCarousel .carousel-item .card-subtitle,
         #eventsCardCarousel .carousel-item .card-subtitle {
-          display: -webkit-box;
-          -webkit-box-orient: vertical;
-          -webkit-line-clamp: 1;
+          display: inline-flex;
+          align-items: center;
+          max-width: 100%;
+          font-size: 0.76rem !important;
+          letter-spacing: 0.08em;
+          text-transform: uppercase;
+          color: #2f4b39 !important;
+          background: rgba(0, 136, 58, 0.1);
+          border: 1px solid rgba(0, 136, 58, 0.2);
+          border-radius: 999px;
+          padding: 0.2rem 0.6rem;
+          margin-bottom: 0.75rem !important;
+          white-space: nowrap;
           overflow: hidden;
+          text-overflow: ellipsis;
         }
 
         #newsCardCarousel .carousel-item .card-text,
@@ -393,77 +508,14 @@ include-in-header:
           -webkit-box-orient: vertical;
           -webkit-line-clamp: var(--carousel-max-title-lines);
           overflow: hidden;
+          color: #324437;
         }
 
-        #newsCardCarousel .carousel-control-prev-icon,
-        #newsCardCarousel .carousel-control-next-icon,
-        #eventsCardCarousel .carousel-control-prev-icon,
-        #eventsCardCarousel .carousel-control-next-icon {
-          filter: brightness(0) saturate(100%);
-        }
-
-        #newsCardCarousel .carousel-indicators,
-        #eventsCardCarousel .carousel-indicators {
-          margin-bottom: 0;
-        }
-
-        #newsCardCarousel .carousel-indicators [data-bs-target],
-        #eventsCardCarousel .carousel-indicators [data-bs-target] {
-          background-color: #000;
-          opacity: 0.4;
-        }
-
-        #newsCardCarousel .carousel-indicators .active,
-        #eventsCardCarousel .carousel-indicators .active {
-          opacity: 1;
-        }
-        #newsCardCarousel .carousel-control-next,
-        #newsCardCarousel .carousel-control-prev,
-        #eventsCardCarousel .carousel-control-next,
-        #eventsCardCarousel .carousel-control-prev {
-          top: 87.5%;
-          width: 25px;
-          height: 25px;
-          color: #000000e6;
-          border: 1px solid #000000b3;
-          border-radius: 50%;
-          transition: background 0.2s;
-        }
-        #newsCardCarousel .carousel-control-prev,
-        #eventsCardCarousel .carousel-control-prev {
-          left: 0; 
-        }
-
-        #newsCardCarousel .carousel-control-next,
-        #eventsCardCarousel .carousel-control-next {
-          left: 35px;  
-          right: auto;   
-        }
-        #newsCardCarousel .carousel-control-next i,
-        #newsCardCarousel .carousel-control-prev i,
-        #eventsCardCarousel .carousel-control-next i,
-        #eventsCardCarousel .carousel-control-prev i {
-          font-size: 0.75rem;
-          line-height: 1;
-        }
-        #newsCardCarousel .carousel-control-next:hover,
-        #newsCardCarousel .carousel-control-prev:hover,
-        #eventsCardCarousel .carousel-control-next:hover,
-        #eventsCardCarousel .carousel-control-prev:hover {
-          background: #00883A;
-          color: #fff;
-          border-color: #00883A;
-        }
-        .carousel-card .card-header {
-          font-size: 0.8rem;
-          letter-spacing: 0.1em;
-          color: #00883A;
-          border-bottom:none;
-        }
         .carousel-card .btn.btn-link {
           position: relative;
           text-decoration: none;
           display: inline-block;
+          color: #00883A;
         }
 
         .carousel-card .btn.btn-link::after {
@@ -479,6 +531,116 @@ include-in-header:
 
         .carousel-card .btn.btn-link:hover::after {
           width: 100%;
+        }
+
+        .carousel-header-controls {
+          display: inline-flex;
+          gap: 0.45rem;
+        }
+
+        .carousel-nav-btn {
+          width: 34px;
+          height: 34px;
+          border: 1px solid rgba(0, 136, 58, 0.35);
+          color: #1c3525;
+          border-radius: 999px;
+          background: #fff;
+          padding: 0;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+        }
+
+        .carousel-nav-btn:hover,
+        .carousel-nav-btn:focus {
+          background: #00883A;
+          border-color: #00883A;
+          color: #fff;
+        }
+
+        .carousel-nav-btn i {
+          font-size: 0.8rem;
+          line-height: 1;
+        }
+
+        #newsCardCarousel .carousel-indicators,
+        #eventsCardCarousel .carousel-indicators {
+          justify-content: flex-start;
+          margin-bottom: 0;
+          margin-left: 0;
+          margin-right: 0;
+        }
+
+        #newsCardCarousel .carousel-indicators [data-bs-target],
+        #eventsCardCarousel .carousel-indicators [data-bs-target] {
+          position: relative;
+          width: 38px;
+          height: 38px;
+          margin: 0 0.12rem;
+          border: 0;
+          background: transparent;
+          opacity: 1;
+          border-radius: 8px;
+        }
+
+        #newsCardCarousel .carousel-indicators [data-bs-target]::before,
+        #eventsCardCarousel .carousel-indicators [data-bs-target]::before {
+          content: "";
+          position: absolute;
+          left: 5px;
+          right: 5px;
+          top: 16px;
+          height: 6px;
+          border-radius: 999px;
+          background-color: #3d5343;
+          opacity: 0.28;
+          transition: opacity 0.2s ease, background-color 0.2s ease;
+        }
+
+        #newsCardCarousel .carousel-indicators .active::before,
+        #eventsCardCarousel .carousel-indicators .active::before {
+          opacity: 1;
+        }
+
+        #newsCardCarousel .carousel-indicators [data-bs-target]:hover::before,
+        #eventsCardCarousel .carousel-indicators [data-bs-target]:hover::before {
+          opacity: 0.65;
+        }
+
+        #newsCardCarousel .carousel-indicators [data-bs-target]:focus-visible,
+        #eventsCardCarousel .carousel-indicators [data-bs-target]:focus-visible {
+          outline: 2px solid #006b2d;
+          outline-offset: 2px;
+        }
+
+        @media (max-width: 767.98px) {
+          .stay-loop-shell {
+            padding: 1rem;
+          }
+
+          .carousel-header-controls {
+            display: none;
+          }
+
+          #newsCardCarousel,
+          #eventsCardCarousel {
+            padding-bottom: 1.7rem;
+          }
+
+          #newsCardCarousel .carousel-indicators [data-bs-target],
+          #eventsCardCarousel .carousel-indicators [data-bs-target] {
+            width: 44px;
+            height: 44px;
+          }
+
+          #newsCardCarousel .carousel-indicators [data-bs-target]::before,
+          #eventsCardCarousel .carousel-indicators [data-bs-target]::before {
+            left: 6px;
+            right: 6px;
+            top: 19px;
+            height: 6px;
+          }
         }
         </style>
       <link href="/assets/bootstrap-5.3.8-dist/css/bootstrap.min.css" rel="stylesheet">
@@ -665,87 +827,67 @@ Keep up to date with our latest news releases, and upcoming events.
 
 ::: {.row .g-4}
 
-::: {.col-md-6}
+::: {.col-lg-6}
 ```{=html}
 <div class="card carousel-card h-100 border border-success-subtle">
   <div class="card-header bg-transparent fw-semibold text-uppercase">
-    News
+    <span>News</span>
+    <a href="news/index.qmd" class="carousel-header-link" aria-label="View all news">View All News</a>
   </div>
   <div class="card-body">
-    <div id="newsCardCarousel" class="carousel slide" data-bs-ride="false">
+    <div id="newsCardCarousel" class="carousel slide" data-bs-ride="false" role="region" aria-roledescription="carousel" aria-label="Latest news">
       <div class="carousel-indicators">
-        <button type="button" data-bs-target="#newsCardCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#newsCardCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#newsCardCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Show news item 1 of 2"></button>
+        <button type="button" data-bs-target="#newsCardCarousel" data-bs-slide-to="1" aria-label="Show news item 2 of 2"></button>
       </div>
-      <div class="carousel-inner">
+      <div class="carousel-inner" aria-live="polite">
         <div class="carousel-item active">
           <h6 class="card-subtitle mb-2 text-body-secondary" style="font-size:0.87rem;">Jul 7, 2025</h6>
           <h5 class="card-title">Launching of LMU-FORRT Train-the-Trainer Program</h5>
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-link p-0 fw-semibold small">Read More →</a>
+          <a href="#" class="btn btn-link p-0 fw-semibold small" aria-label="Read more about Launching of LMU-FORRT Train-the-Trainer Program">Read More →</a>
         </div>
         <div class="carousel-item">
           <h6 class="card-subtitle mb-2 text-body-secondary" style="font-size:0.87rem;">Mar 18, 2026</h6>
           <h5 class="card-title">Second news item</h5>
           <p class="card-text">Another example entry to demonstrate basic carousel behavior inside the card body.</p>
-          <a href="#" class="btn btn-link p-0 fw-semibold small">Read More →</a>
+          <a href="#" class="btn btn-link p-0 fw-semibold small" aria-label="Read more about Second news item">Read More →</a>
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#newsCardCarousel" data-bs-slide="prev">
-        <i class="bi bi-chevron-left" aria-hidden="true"></i>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#newsCardCarousel" data-bs-slide="next">
-        <i class="bi bi-chevron-right" aria-hidden="true"></i>
-        <span class="visually-hidden">Next</span>
-      </button>
     </div>
-  </div>
-  <div class="card-footer text-center bg-transparent">
-    <a href="news/index.qmd" class="btn btn-success btn-sm w-50">All News</a>
   </div>
 </div>
 ```
 :::
 
-::: {.col-md-6}
+::: {.col-lg-6}
 ```{=html}
 <div class="card carousel-card h-100 border border-success-subtle">
   <div class="card-header bg-transparent fw-semibold text-uppercase">
-    Events
+    <span>Events</span>
+    <a href="events/index.qmd" class="carousel-header-link" aria-label="View all events">View All Events</a>
   </div>
   <div class="card-body">
-    <div id="eventsCardCarousel" class="carousel slide" data-bs-ride="false">
+    <div id="eventsCardCarousel" class="carousel slide" data-bs-ride="false" role="region" aria-roledescription="carousel" aria-label="Upcoming events">
       <div class="carousel-indicators">
-        <button type="button" data-bs-target="#eventsCardCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#eventsCardCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#eventsCardCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Show event item 1 of 2"></button>
+        <button type="button" data-bs-target="#eventsCardCarousel" data-bs-slide-to="1" aria-label="Show event item 2 of 2"></button>
       </div>
-      <div class="carousel-inner">
+      <div class="carousel-inner" aria-live="polite">
         <div class="carousel-item active">
-          <h6 class="card-subtitle mb-2 text-body-secondary" style="font-size:0.87rem;">Workshop · Ludwig-Maximilians-Universitat Munchen</h6>
+          <h6 class="card-subtitle mb-2 text-body-secondary" style="font-size:0.87rem;">Workshop · May 15, 2026</h6>
           <h5 class="card-title">Data & AI Ethics</h5>
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-link p-0 fw-semibold small">See Event →</a>
+          <a href="#" class="btn btn-link p-0 fw-semibold small" aria-label="See details for Data and AI Ethics">See Event →</a>
         </div>
         <div class="carousel-item">
-          <h6 class="card-subtitle mb-2 text-body-secondary" style="font-size:0.87rem;">Seminar · Ludwig-Maximilians-Universitat Munchen</h6>
+          <h6 class="card-subtitle mb-2 text-body-secondary" style="font-size:0.87rem;">Seminar · May 22, 2026</h6>
           <h5 class="card-title">Reproducible Research Methods</h5>
           <p class="card-text">Another example event entry to demonstrate matching carousel behavior and card layout.</p>
-          <a href="#" class="btn btn-link p-0 fw-semibold small">See Event →</a>
+          <a href="#" class="btn btn-link p-0 fw-semibold small" aria-label="See details for Reproducible Research Methods">See Event →</a>
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#eventsCardCarousel" data-bs-slide="prev">
-        <i class="bi bi-chevron-left" aria-hidden="true"></i>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#eventsCardCarousel" data-bs-slide="next">
-        <i class="bi bi-chevron-right" aria-hidden="true"></i>
-        <span class="visually-hidden">Next</span>
-      </button>
     </div>
-  </div>
-  <div class="card-footer border-top-none text-center bg-transparent">
-    <a href="events/index.qmd" class="btn btn-sm w-50">All Events</a>
   </div>
 </div>
 ```
