@@ -72,7 +72,7 @@ A research output (e.g. data, code) without a license or statement granting your
 <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
   <div class="d-flex gap-2">
     <div class="orc-card-tool-icon p-2 rounded">
-      <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+      <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
     </div>
     <div class="orc-card-tool-icon p-2 rounded">
       <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Zotero_icon.png" class="img-fluid" alt="Zotero logo">
@@ -358,7 +358,7 @@ Code publicly visible on GitHub without a license or equivalent text explicitly 
 <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
   <div class="d-flex gap-2">
     <div class="orc-card-tool-icon p-2 rounded">
-      <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+      <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
     </div>
     <div class="orc-card-tool-icon p-2 rounded">
       <img src="https://www.svgrepo.com/show/303548/git-icon-logo.svg" class="img-fluid" alt="Zotero logo">
@@ -380,10 +380,10 @@ Code publicly visible on GitHub without a license or equivalent text explicitly 
 <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
   <div class="d-flex gap-2">
     <div class="orc-card-tool-icon p-2 rounded">
-      <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+      <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
     </div>
     <div class="orc-card-tool-icon p-2 rounded">
-      <img src="https://cdn.simpleicons.org/github" class="img-fluid" alt="Zotero logo">
+      <img src="/assets/img/zotero.svg" class="img-fluid" alt="Zotero logo">
     </div>
   </div>
   <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
@@ -401,7 +401,7 @@ Code publicly visible on GitHub without a license or equivalent text explicitly 
 <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
   <div class="d-flex gap-2">
     <div class="orc-card-tool-icon p-2 rounded">
-      <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+      <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
     </div>
   </div>
   <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
@@ -455,7 +455,7 @@ Code publicly visible on GitHub without a license or equivalent text explicitly 
 ```{=html}
 <div class="card orc-card-tool p-3 bg-light-subtle h-100">
 <div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
-<img src="https://cdn.simpleicons.org/github" class="img-fluid" alt="GitHub icon">
+<img src="/assets/img/github.svg" class="img-fluid" alt="GitHub icon">
 </div>
 <h4 class="card-title">GitHub</h4>
 <p class="card-text">Cloud-based platform to collaborate on code.</p>
@@ -600,7 +600,7 @@ For data protection guidance, contact the [LMU Data Protection Officer](https://
 <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
   <div class="d-flex gap-2">
     <div class="orc-card-tool-icon p-2 rounded">
-      <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+      <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
     </div>
   </div>
   <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
@@ -618,7 +618,7 @@ For data protection guidance, contact the [LMU Data Protection Officer](https://
 <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
   <div class="d-flex gap-2">
     <div class="orc-card-tool-icon p-2 rounded">
-      <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+      <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
     </div>
   </div>
   <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
@@ -636,7 +636,7 @@ For data protection guidance, contact the [LMU Data Protection Officer](https://
 <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
   <div class="d-flex gap-2">
     <div class="orc-card-tool-icon p-2 rounded">
-      <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+      <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
     </div>
   </div>
   <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
@@ -708,7 +708,7 @@ The specific questions vary by discipline, data type, and funder requirements. D
 <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
   <div class="d-flex gap-2">
     <div class="orc-card-tool-icon p-2 rounded">
-      <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+      <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
     </div>
   </div>
   <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Lecture</span>
@@ -726,7 +726,7 @@ The specific questions vary by discipline, data type, and funder requirements. D
 <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
   <div class="d-flex gap-2">
     <div class="orc-card-tool-icon p-2 rounded">
-      <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+      <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
     </div>
   </div>
   <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Lecture</span>
@@ -744,7 +744,7 @@ The specific questions vary by discipline, data type, and funder requirements. D
 <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
   <div class="d-flex gap-2">
     <div class="orc-card-tool-icon p-2 rounded">
-      <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+      <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
     </div>
   </div>
   <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
@@ -768,7 +768,7 @@ The specific questions vary by discipline, data type, and funder requirements. D
 <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
   <div class="d-flex gap-2">
     <div class="orc-card-tool-icon p-2 rounded">
-      <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+      <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
     </div>
     <div class="orc-card-tool-icon p-2 rounded">
       <img src="https://rdmorganiser.github.io/img/logos/RDMO-logo.png" class="img-fluid" alt="RDMO logo">
@@ -902,7 +902,7 @@ After completing the study, authors add results and discussion sections, clearly
 <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
   <div class="d-flex gap-2">
     <div class="orc-card-tool-icon p-2 rounded">
-      <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+      <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
     </div>
   </div>
   <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
@@ -926,7 +926,7 @@ After completing the study, authors add results and discussion sections, clearly
 <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
   <div class="d-flex gap-2">
     <div class="orc-card-tool-icon p-2 rounded">
-      <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+      <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
     </div>
   </div>
   <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tool</span>
@@ -1008,7 +1008,7 @@ Generating an artificial dataset in R (see our [simulation tutorial](https://lmu
 <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
   <div class="d-flex gap-2">
     <div class="orc-card-tool-icon p-2 rounded">
-      <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+      <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
     </div>
     <div class="orc-card-tool-icon p-2 rounded">
       <img src="https://www.r-project.org/logo/Rlogo.svg" class="img-fluid" alt="R logo">
@@ -1029,7 +1029,7 @@ Generating an artificial dataset in R (see our [simulation tutorial](https://lmu
 <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
   <div class="d-flex gap-2">
     <div class="orc-card-tool-icon p-2 rounded">
-      <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+      <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
     </div>
   </div>
   <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
@@ -1096,7 +1096,7 @@ The **flawed version of post-hoc power** is called **“observed power”**: If 
 <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
   <div class="d-flex gap-2">
     <div class="orc-card-tool-icon p-2 rounded">
-      <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+      <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
     </div>
     <div class="orc-card-tool-icon p-2 rounded">
       <img src="https://www.r-project.org/logo/Rlogo.svg" class="img-fluid" alt="R logo">
@@ -1117,7 +1117,7 @@ The **flawed version of post-hoc power** is called **“observed power”**: If 
 <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
   <div class="d-flex gap-2">
     <div class="orc-card-tool-icon p-2 rounded">
-      <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+      <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
     </div>
   </div>
   <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>

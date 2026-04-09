@@ -216,7 +216,7 @@ When data comes from instruments, sensors, or APIs (Application Programming Inte
 <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
   <div class="d-flex gap-2">
     <div class="orc-card-tool-icon p-2 rounded">
-      <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+      <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
     </div>
     <div class="orc-card-tool-icon p-2 rounded">
       <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/R_logo.svg/1920px-R_logo.svg.png?20240131042527" class="img-fluid" alt="R logo">
@@ -238,7 +238,7 @@ When data comes from instruments, sensors, or APIs (Application Programming Inte
 <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
   <div class="d-flex gap-2">
     <div class="orc-card-tool-icon p-2 rounded">
-      <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+      <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
     </div>
     <div class="orc-card-tool-icon p-2 rounded">
       <img src="https://git-scm.com/images/logos/logomark-orange@2x.png" class="img-fluid" alt="Git logo">
@@ -334,7 +334,7 @@ Data collection, in this context, consists in developing a judicious reproducibl
 <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
   <div class="d-flex gap-2">
     <div class="orc-card-tool-icon p-2 rounded">
-      <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+      <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
     </div>
   </div>
   <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Workshop</span>
@@ -540,7 +540,7 @@ A pattern like `YYYY-MM-DD_project_condition_type_v01.ext` places files in chron
     <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
         <div class="d-flex gap-2">
             <div class="orc-card-tool-icon p-2 rounded">
-            <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+            <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
             </div>
         </div>
         <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
@@ -565,10 +565,10 @@ A pattern like `YYYY-MM-DD_project_condition_type_v01.ext` places files in chron
     <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
         <div class="d-flex gap-2">
             <div class="orc-card-tool-icon p-2 rounded">
-            <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+            <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
             </div>
             <div class="orc-card-tool-icon p-2 rounded">
-            <img src="https://cdn.simpleicons.org/github"  class="img-fluid" alt="GitHub logo">
+            <img src="/assets/img/github.svg"  class="img-fluid" alt="GitHub logo">
             </div>
         </div>
         <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tool</span>
@@ -662,7 +662,7 @@ Without documentation, a dataset is just a collection of files. Six months from 
     <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
         <div class="d-flex gap-2">
             <div class="orc-card-tool-icon p-2 rounded">
-            <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+            <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
             </div>
         </div>
         <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
@@ -680,7 +680,7 @@ Without documentation, a dataset is just a collection of files. Six months from 
     <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
         <div class="d-flex gap-2">
             <div class="orc-card-tool-icon p-2 rounded">
-            <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+            <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
             </div>
         </div>
         <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
@@ -767,10 +767,10 @@ Standards are community agreements on how to organize and describe research data
     <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
     <div class="d-flex gap-2">
         <div class="orc-card-tool-icon p-2 rounded">
-            <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+            <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
             </div>
         <div class="orc-card-tool-icon p-2 rounded">
-            <img src="https://cdn.simpleicons.org/github"  class="img-fluid" alt="GitHub logo">
+            <img src="/assets/img/github.svg"  class="img-fluid" alt="GitHub logo">
         </div>
     </div>
     <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tool</span>
@@ -830,7 +830,7 @@ In a version controlled workflow, you back up your local Git repositories on eit
     <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
     <div class="d-flex gap-2">
         <div class="orc-card-tool-icon p-2 rounded">
-            <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+            <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
         </div>
         <div class="orc-card-tool-icon p-2 rounded">
             <img src="https://www.svgrepo.com/show/303548/git-icon-logo.svg" class="img-fluid" alt="Git logo">
@@ -851,10 +851,10 @@ In a version controlled workflow, you back up your local Git repositories on eit
     <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
     <div class="d-flex gap-2">
         <div class="orc-card-tool-icon p-2 rounded">
-            <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+            <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
         </div>
         <div class="orc-card-tool-icon p-2 rounded">
-            <img src="https://cdn.simpleicons.org/github" class="img-fluid" alt="GitHub logo">
+            <img src="/assets/img/github.svg" class="img-fluid" alt="GitHub logo">
         </div>
     </div>
     <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
@@ -882,10 +882,10 @@ In a version controlled workflow, you back up your local Git repositories on eit
     <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
     <div class="d-flex gap-2">
         <div class="orc-card-tool-icon p-2 rounded">
-            <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+            <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
         </div>
         <div class="orc-card-tool-icon p-2 rounded">
-            <img src="https://cdn.simpleicons.org/gitlab" class="img-fluid" alt="GitLab logo">
+            <img src="/assets/img/gitlab.svg" class="img-fluid" alt="GitLab logo">
         </div>
     </div>
     <span class="badge rounded-5 bg-success-subtle text-success align-self-start">Supported at LMU</span>
@@ -1010,7 +1010,7 @@ Anonymization protects privacy and determines what you can share.
 <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
   <div class="d-flex gap-2">
     <div class="orc-card-tool-icon p-2 rounded">
-      <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+      <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
     </div>
   </div>
   <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
@@ -1028,7 +1028,7 @@ Anonymization protects privacy and determines what you can share.
 <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
   <div class="d-flex gap-2">
     <div class="orc-card-tool-icon p-2 rounded">
-      <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+      <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
     </div>
   </div>
   <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
@@ -1099,7 +1099,7 @@ Validation checks whether your data meets specifications. For example, values ca
 <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
   <div class="d-flex gap-2">
     <div class="orc-card-tool-icon p-2 rounded">
-      <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+      <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
     </div>
   </div>
   <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
