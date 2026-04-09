@@ -574,16 +574,44 @@ include-in-header:
 
         #newsCardCarousel .carousel-indicators [data-bs-target],
         #eventsCardCarousel .carousel-indicators [data-bs-target] {
-          width: 22px;
-          height: 4px;
+          position: relative;
+          width: 38px;
+          height: 38px;
+          margin: 0 0.12rem;
+          border: 0;
+          background: transparent;
+          opacity: 1;
+          border-radius: 8px;
+        }
+
+        #newsCardCarousel .carousel-indicators [data-bs-target]::before,
+        #eventsCardCarousel .carousel-indicators [data-bs-target]::before {
+          content: "";
+          position: absolute;
+          left: 5px;
+          right: 5px;
+          top: 16px;
+          height: 6px;
           border-radius: 999px;
           background-color: #3d5343;
           opacity: 0.28;
+          transition: opacity 0.2s ease, background-color 0.2s ease;
         }
 
-        #newsCardCarousel .carousel-indicators .active,
-        #eventsCardCarousel .carousel-indicators .active {
+        #newsCardCarousel .carousel-indicators .active::before,
+        #eventsCardCarousel .carousel-indicators .active::before {
           opacity: 1;
+        }
+
+        #newsCardCarousel .carousel-indicators [data-bs-target]:hover::before,
+        #eventsCardCarousel .carousel-indicators [data-bs-target]:hover::before {
+          opacity: 0.65;
+        }
+
+        #newsCardCarousel .carousel-indicators [data-bs-target]:focus-visible,
+        #eventsCardCarousel .carousel-indicators [data-bs-target]:focus-visible {
+          outline: 2px solid #006b2d;
+          outline-offset: 2px;
         }
 
         @media (max-width: 767.98px) {
@@ -602,8 +630,16 @@ include-in-header:
 
           #newsCardCarousel .carousel-indicators [data-bs-target],
           #eventsCardCarousel .carousel-indicators [data-bs-target] {
-            width: 28px;
-            height: 5px;
+            width: 44px;
+            height: 44px;
+          }
+
+          #newsCardCarousel .carousel-indicators [data-bs-target]::before,
+          #eventsCardCarousel .carousel-indicators [data-bs-target]::before {
+            left: 6px;
+            right: 6px;
+            top: 19px;
+            height: 6px;
           }
         }
         </style>
