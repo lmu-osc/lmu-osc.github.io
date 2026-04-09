@@ -93,7 +93,7 @@
     <a href="events/index.qmd" class="carousel-header-link" aria-label="View all events">View All Events</a>
   </div>
   <div class="card-body">
-    <div id="eventsCardCarousel" class="carousel slide" data-bs-ride="false" role="region" aria-roledescription="carousel" aria-label="Upcoming events">
+    <div id="eventsCardCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="7000" data-bs-pause="hover" role="region" aria-roledescription="carousel" aria-label="Upcoming events">
       <div class="carousel-indicators">
         <% carouselItems.forEach((item, index) => { %>
         <button

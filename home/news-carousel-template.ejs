@@ -26,7 +26,7 @@
     <a href="news/index.qmd" class="carousel-header-link" aria-label="View all news">View All News</a>
   </div>
   <div class="card-body">
-    <div id="newsCardCarousel" class="carousel slide" data-bs-ride="false" role="region" aria-roledescription="carousel" aria-label="Latest news">
+    <div id="newsCardCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="7000" data-bs-pause="hover" role="region" aria-roledescription="carousel" aria-label="Latest news">
       <div class="carousel-indicators">
         <% carouselItems.forEach((item, index) => { %>
         <button
