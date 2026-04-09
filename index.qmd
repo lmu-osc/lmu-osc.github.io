@@ -818,14 +818,6 @@ Keep up to date with our latest news releases, and upcoming events.
           <a href="#" class="btn btn-link p-0 fw-semibold small" aria-label="Read more about Second news item">Read More →</a>
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#newsCardCarousel" data-bs-slide="prev" aria-controls="newsCardCarousel" aria-label="Show previous news item">
-        <i class="bi bi-chevron-left" aria-hidden="true"></i>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#newsCardCarousel" data-bs-slide="next" aria-controls="newsCardCarousel" aria-label="Show next news item">
-        <i class="bi bi-chevron-right" aria-hidden="true"></i>
-        <span class="visually-hidden">Next</span>
-      </button>
     </div>
   </div>
 </div>
@@ -859,14 +851,6 @@ Keep up to date with our latest news releases, and upcoming events.
           <a href="#" class="btn btn-link p-0 fw-semibold small" aria-label="See details for Reproducible Research Methods">See Event →</a>
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#eventsCardCarousel" data-bs-slide="prev" aria-controls="eventsCardCarousel" aria-label="Show previous event item">
-        <i class="bi bi-chevron-left" aria-hidden="true"></i>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#eventsCardCarousel" data-bs-slide="next" aria-controls="eventsCardCarousel" aria-label="Show next event item">
-        <i class="bi bi-chevron-right" aria-hidden="true"></i>
-        <span class="visually-hidden">Next</span>
-      </button>
     </div>
   </div>
 </div>
