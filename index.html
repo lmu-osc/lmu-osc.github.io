@@ -75,6 +75,64 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-news-carousel .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-project','listing-website','listing-format','listing-engines','listing-language','listing-execute','listing-title','listing-date','listing-categories','listing-description','listing-path','listing-outputHref','listing-date-modified','listing-author','listing-filename','listing-file-modified','listing-reading-time','listing-word-count','listing-subtitle',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
+      page: 25,
+    pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
+      searchColumns: ["listing-project","listing-website","listing-format","listing-engines","listing-language","listing-execute","listing-title","listing-date","listing-categories","listing-description","listing-path","listing-outputHref","listing-date-modified","listing-author","listing-filename","listing-file-modified","listing-reading-time","listing-word-count","listing-subtitle"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-news-carousel'] = new List('listing-news-carousel', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-events-carousel .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-project','listing-website','listing-format','listing-engines','listing-language','listing-execute','listing-page-layout','listing-title','listing-categories','listing-event','listing-links','listing-event_description','listing-instructors','listing-helpers','listing-contact','listing-organizers','listing-host','listing-template','listing-filters','listing-path','listing-outputHref','listing-author','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-word-count','listing-presenters','listing-date','listing-date-modified',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] }],
+      page: 25,
+    pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
+      searchColumns: ["listing-project","listing-website","listing-format","listing-engines","listing-language","listing-execute","listing-page-layout","listing-title","listing-categories","listing-event","listing-links","listing-event_description","listing-instructors","listing-helpers","listing-contact","listing-organizers","listing-host","listing-template","listing-filters","listing-path","listing-outputHref","listing-author","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count","listing-presenters","listing-date","listing-date-modified"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-events-carousel'] = new List('listing-events-carousel', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
     const listingTargetEl = window.document.querySelector('#listing-testimonial-carousel .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
@@ -505,6 +563,12 @@ background-size: cover;
     padding-bottom: 2rem;
     --carousel-max-title-lines: 2;
     --carousel-max-body-lines: 3;
+    --home-carousel-slide-duration: 1.1s;
+  }
+
+  #newsCardCarousel .carousel-item,
+  #eventsCardCarousel .carousel-item {
+    transition: transform var(--home-carousel-slide-duration) ease-in-out;
   }
 
   #newsCardCarousel .carousel-item,
@@ -555,6 +619,25 @@ background-size: cover;
     -webkit-line-clamp: var(--carousel-max-title-lines);
     overflow: hidden;
     color: #324437;
+  }
+
+  .carousel-card .card-title .carousel-title-link {
+    color: inherit;
+    text-decoration: none;
+    position: relative;
+    display: inline;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    background-position: 0 100%;
+    transition: background-size 0.25s ease;
+    font-weight: bold;
+  }
+
+  .carousel-card .card-title .carousel-title-link:hover,
+  .carousel-card .card-title .carousel-title-link:focus-visible {
+    color: inherit;
+    background-size: 100% 2px;
   }
 
   .carousel-card .btn.btn-link {
@@ -1150,63 +1233,116 @@ window.Quarto = {
 </div>
 <div class="row g-4">
 <div class="col-lg-6">
+<div id="listing-news-carousel" class="quarto-listing quarto-listing-container-custom">
+
 <div class="card carousel-card h-100 border border-success-subtle">
   <div class="card-header bg-transparent fw-semibold text-uppercase">
     <span>News</span>
     <a href="./news/index.html" class="carousel-header-link" aria-label="View all news">View All News</a>
   </div>
   <div class="card-body">
-    <div id="newsCardCarousel" class="carousel slide" data-bs-ride="false" role="region" aria-roledescription="carousel" aria-label="Latest news">
+    <div id="newsCardCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="10000" data-bs-pause="hover" role="region" aria-roledescription="carousel" aria-label="Latest news">
       <div class="carousel-indicators">
-        <button type="button" data-bs-target="#newsCardCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Show news item 1 of 2"></button>
-        <button type="button" data-bs-target="#newsCardCarousel" data-bs-slide-to="1" aria-label="Show news item 2 of 2"></button>
+        
+        <button type="button" data-bs-target="#newsCardCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Show news item 1 of 3"></button>
+        
+        <button type="button" data-bs-target="#newsCardCarousel" data-bs-slide-to="1" class="" aria-current="false" aria-label="Show news item 2 of 3"></button>
+        
+        <button type="button" data-bs-target="#newsCardCarousel" data-bs-slide-to="2" class="" aria-current="false" aria-label="Show news item 3 of 3"></button>
+        
       </div>
       <div class="carousel-inner" aria-live="polite">
+        
         <div class="carousel-item active">
-          <h6 class="card-subtitle mb-2 text-body-secondary" style="font-size:0.87rem;">Jul 7, 2025</h6>
-          <h5 class="card-title">Launching of LMU-FORRT Train-the-Trainer Program</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content. Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-link p-0 fw-semibold small" aria-label="Read more about Launching of LMU-FORRT Train-the-Trainer Program">Read More →</a>
+          <h6 class="card-subtitle mb-2 text-body-secondary" style="font-size:0.87rem;">Jul 22, 2025</h6>
+          <h5 class="card-title"><a href="./news/news/2025-07-22-newsletter-july-2025.html" class="carousel-title-link" aria-label="Open news item: Newsletter July 2025">Newsletter July 2025</a></h5>
+          <p class="card-text">Read the latest news and updates from the LMU Open Science Center in our July 2025 newsletter.</p>
+          <a href="./news/news/2025-07-22-newsletter-july-2025.html" class="btn btn-link p-0 fw-semibold small" aria-label="Read more about Newsletter July 2025">Read More →</a>
         </div>
-        <div class="carousel-item">
-          <h6 class="card-subtitle mb-2 text-body-secondary" style="font-size:0.87rem;">Mar 18, 2026</h6>
-          <h5 class="card-title">Second news item</h5>
-          <p class="card-text">Another example entry to demonstrate basic carousel behavior inside the card body.</p>
-          <a href="#" class="btn btn-link p-0 fw-semibold small" aria-label="Read more about Second news item">Read More →</a>
+        
+        <div class="carousel-item ">
+          <h6 class="card-subtitle mb-2 text-body-secondary" style="font-size:0.87rem;">Jul 10, 2025</h6>
+          <h5 class="card-title"><a href="./news/news/2025-07-10-forrt-train-the-trainer-launch.html" class="carousel-title-link" aria-label="Open news item: Launching of LMU-FORRT Train-the-Trainer Program">Launching of LMU-FORRT Train-the-Trainer Program</a></h5>
+          <p class="card-text">The LMU Open Science Center is excited to announce the launch of the Train-the-Trainer program in partnership with the Framework for Open and Reproducible Research Training (FORRT) to promote open research practices across disciplines.</p>
+          <a href="./news/news/2025-07-10-forrt-train-the-trainer-launch.html" class="btn btn-link p-0 fw-semibold small" aria-label="Read more about Launching of LMU-FORRT Train-the-Trainer Program">Read More →</a>
         </div>
+        
+        <div class="carousel-item ">
+          <h6 class="card-subtitle mb-2 text-body-secondary" style="font-size:0.87rem;">May 15, 2025</h6>
+          <h5 class="card-title"><a href="./news/news/2025-05-15-bmc-open-research-report.html" class="carousel-title-link" aria-label="Open news item: Report about open research at the Biomedical Center of LMU Munich published">Report about open research at the Biomedical Center of LMU Munich published</a></h5>
+          <p class="card-text">The LMU Open Science Center has published a report on the awareness, adoption, and barriers to open research practices among researchers at the Biomedical Center of LMU Munich, revealing an implementation gap and a strong demand for training and support.</p>
+          <a href="./news/news/2025-05-15-bmc-open-research-report.html" class="btn btn-link p-0 fw-semibold small" aria-label="Read more about Report about open research at the Biomedical Center of LMU Munich published">Read More →</a>
+        </div>
+        
       </div>
     </div>
   </div>
 </div>
+<div class="listing-no-matching d-none">No matching items</div>
+<nav id="news-carousel-pagination" class="listing-pagination" aria-label="Page Navigation">
+  <ul class="pagination"></ul>
+</nav>
+</div>
 </div>
 <div class="col-lg-6">
+<div id="listing-events-carousel" class="quarto-listing quarto-listing-container-custom">
+
 <div class="card carousel-card h-100 border border-success-subtle">
   <div class="card-header bg-transparent fw-semibold text-uppercase">
     <span>Events</span>
     <a href="./events/index.html" class="carousel-header-link" aria-label="View all events">View All Events</a>
   </div>
   <div class="card-body">
-    <div id="eventsCardCarousel" class="carousel slide" data-bs-ride="false" role="region" aria-roledescription="carousel" aria-label="Upcoming events">
+    <div id="eventsCardCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="10000" data-bs-pause="hover" role="region" aria-roledescription="carousel" aria-label="Upcoming events">
       <div class="carousel-indicators">
-        <button type="button" data-bs-target="#eventsCardCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Show event item 1 of 2"></button>
-        <button type="button" data-bs-target="#eventsCardCarousel" data-bs-slide-to="1" aria-label="Show event item 2 of 2"></button>
+        
+        <button type="button" data-bs-target="#eventsCardCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Show event item 1 of 3"></button>
+        
+        <button type="button" data-bs-target="#eventsCardCarousel" data-bs-slide-to="1" class="" aria-current="false" aria-label="Show event item 2 of 3"></button>
+        
+        <button type="button" data-bs-target="#eventsCardCarousel" data-bs-slide-to="2" class="" aria-current="false" aria-label="Show event item 3 of 3"></button>
+        
       </div>
       <div class="carousel-inner" aria-live="polite">
+        
         <div class="carousel-item active">
-          <h6 class="card-subtitle mb-2 text-body-secondary" style="font-size:0.87rem;">Workshop · May 15, 2026</h6>
-          <h5 class="card-title">Data &amp; AI Ethics</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-link p-0 fw-semibold small" aria-label="See details for Data and AI Ethics">See Event →</a>
+          
+          <h6 class="card-subtitle mb-2 text-body-secondary" style="font-size:0.87rem;">Hybrid · Jun 10, 2026</h6>
+          
+          <h5 class="card-title"><a href="./events/events/2026-06-10-ospark-bootcamp.html" class="carousel-title-link" aria-label="Open event item: OSPARK Bootcamp Munich - Promote your Open Research Passion!">OSPARK Bootcamp Munich - Promote your Open Research Passion!</a></h5>
+          <p class="card-text">The OSPARK bootcamp is a 6-week online course and a 2-day onsite workshop all about creating visibility through outreach and marketing. It's a learning opportunity for people working in or leading Open Research initiatives, services or infrastructures.
+</p>
+          <a href="./events/events/2026-06-10-ospark-bootcamp.html" class="btn btn-link p-0 fw-semibold small" aria-label="See details for OSPARK Bootcamp Munich - Promote your Open Research Passion!">See Event →</a>
         </div>
-        <div class="carousel-item">
-          <h6 class="card-subtitle mb-2 text-body-secondary" style="font-size:0.87rem;">Seminar · May 22, 2026</h6>
-          <h5 class="card-title">Reproducible Research Methods</h5>
-          <p class="card-text">Another example event entry to demonstrate matching carousel behavior and card layout.</p>
-          <a href="#" class="btn btn-link p-0 fw-semibold small" aria-label="See details for Reproducible Research Methods">See Event →</a>
+        
+        <div class="carousel-item ">
+          
+          <h6 class="card-subtitle mb-2 text-body-secondary" style="font-size:0.87rem;">Hybrid · Sep 7, 2026</h6>
+          
+          <h5 class="card-title"><a href="./events/events/2026-09-07-lmu-open-science-summer-school.html" class="carousel-title-link" aria-label="Open event item: LMU Open Science Summer School 2026">LMU Open Science Summer School 2026</a></h5>
+          <p class="card-text">Save the date! Our annual Summer School will take place from September 7-11, 2026--more details to come!
+</p>
+          <a href="./events/events/2026-09-07-lmu-open-science-summer-school.html" class="btn btn-link p-0 fw-semibold small" aria-label="See details for LMU Open Science Summer School 2026">See Event →</a>
         </div>
+        
+        <div class="carousel-item ">
+          
+          <h6 class="card-subtitle mb-2 text-body-secondary" style="font-size:0.87rem;background: rgba(134, 112, 112, 0.18); border-color: rgba(134, 112, 112, 0.36); color: #5a4747 !important;">Past Event · In-Person · Mar 11, 2026</h6>
+          
+          <h5 class="card-title"><a href="./events/events/2026-03-11-software-carpentry-computing-skills.html" class="carousel-title-link" aria-label="Open event item: Software Carpentry: Essential Computing Skill Training (Shell, Git, Python)">Software Carpentry: Essential Computing Skill Training (Shell, Git, Python)</a></h5>
+          <p class="card-text">Software Carpentry is a global organization that provides training in essential computing skills for researchers. The workshop covers topics such as the command line (Shell), version control with Git, and programming with Python. It is designed to help researchers improve their computational skills and enhance their research productivity.
+</p>
+          <a href="./events/events/2026-03-11-software-carpentry-computing-skills.html" class="btn btn-link p-0 fw-semibold small" aria-label="See details for Software Carpentry: Essential Computing Skill Training (Shell, Git, Python)">See Event →</a>
+        </div>
+        
       </div>
     </div>
   </div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+<nav id="events-carousel-pagination" class="listing-pagination" aria-label="Page Navigation">
+  <ul class="pagination"></ul>
+</nav>
 </div>
 </div>
 </div>
