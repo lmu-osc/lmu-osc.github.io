@@ -458,6 +458,12 @@ include-in-header:
           padding-bottom: 2rem;
           --carousel-max-title-lines: 2;
           --carousel-max-body-lines: 3;
+          --home-carousel-slide-duration: 1.1s;
+        }
+
+        #newsCardCarousel .carousel-item,
+        #eventsCardCarousel .carousel-item {
+          transition: transform var(--home-carousel-slide-duration) ease-in-out;
         }
 
         #newsCardCarousel .carousel-item,
