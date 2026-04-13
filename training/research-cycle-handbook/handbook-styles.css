@@ -38,6 +38,12 @@ h2 i, h3 i{ color: var(--orc-green); margin-right: .5rem; }
 
 .mark,.quarto-xref { background: white; color:var(--orc-gray-400); font-weight:600; font-style: italic; text-decoration: none;}
 
+
+/*Accordion styles*/
+.accordion-item > h2#headingOne.accordion-header {
+  padding-bottom: 0;
+}
+
 .custom-accordion-btn {
   justify-content: center !important;
   position: relative;
