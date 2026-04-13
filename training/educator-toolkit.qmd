@@ -71,11 +71,11 @@ a.btn-toolkit-researchers:focus{
         <div class="d-flex align-items-center justify-content-center gap-3 mb-3">
           <span class="d-flex align-items-center justify-content-center rounded-3 flex-shrink-0"
             style="width:44px; height:44px; background-color:#eaf5ee;">
-            <i class="bi bi-book" style="font-size:1.2rem; color:#00883A;"></i>
+            <i class="bi bi-tools" style="font-size:1.2rem; color:#00883A;"></i>
           </span>
           <h5 class="card-title fw-semibold mb-0" style="color:#00883A;">What does the toolkit offer?</h5>
         </div>
-        <div style="line-height:1.75;">
+        <div style="line-height:1.75; text-align:justify;">
           Do you want to <strong>teach</strong> open, responsible, and reproducible research practices? Then our <strong>educator toolkit</strong> is for you! In this toolkit, you can find:
           <ul>
             <li><strong>Pedagogical materials</strong> and practical <strong>guidance</strong> for effectively <strong>designing and delivering classes and workshops on Open Research topics</strong> to diverse audiences. These materials include core didactic skills, learner engagement strategies, Open Science leadership, and accessibility practices.</li>
@@ -136,7 +136,7 @@ a.btn-toolkit-researchers:focus{
     </h2>
 
     <div id="collapseOne" class="accordion-collapse collapse">
-      <div class="accordion-body">
+      <div class="accordion-body" style="line-height:1.75; text-align:justify;">
         <p>The educator toolkit has been developed by the <a href="https://lmu-osc.github.io/">
               LMU Open Science Center</a> in partnership with the Framework for Open and Reproducible Research Training <a href="http://forrt.org">FORRT</a> community together with funding by the <a href="https://www.volkswagenstiftung.de/de">VolksWagen Foundation</a>. Our training materials are licenced under a <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">CC-BY-SA 4.0</a> Creative Commons Attribution-ShareAlike 4.0 International licence, unless otherwise specified.
         </p>
