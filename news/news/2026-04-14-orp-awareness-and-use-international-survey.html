@@ -6,9 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="From programming to reproducible manuscripts">
+<meta name="dcterms.date" content="2026-04-11">
+<meta name="description" content="Awareness and Use of Open Research Practices: An International Survey of Researchers Across Disciplines">
 
-<title>Reproducible Processes – LMU Open Science Center</title>
+<title>Awareness and Use of Open Research Practices: An International Survey – LMU Open Science Center</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -35,8 +36,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
 <link href="../../assets/img/lmu_osc_logo.jpg" rel="icon" type="image/jpeg">
-<script src="../../site_libs/quarto-listing/list.min.js"></script>
-<script src="../../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
@@ -46,7 +45,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-12f6ae4347380fcd1279738622b49157.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-9b05e9b889e0ff746f5765cab27c02c8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -74,35 +73,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-description','listing-categories','listing-image','listing-type',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 <!-- Matomo -->
 <script>
   var _paq = window._paq = window._paq || [];
@@ -119,35 +89,6 @@ ul.task-list li input[type="checkbox"] {
 </script>
 <!-- End Matomo Code -->
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="https://raw.githubusercontent.com/lmu-osc/branding-resources/refs/heads/main/styles.css">
 <link rel="stylesheet" href="../../assets/bootstrap-5.3.8-dist/css/bootstrap.min.css">
@@ -155,10 +96,9 @@ window.Quarto = {
 <link rel="stylesheet" href="../../styles.css">
 <link rel="stylesheet" href="../../footer/footer-style.css">
 <link rel="stylesheet" href="../../custom-navbar.css">
-<link rel="stylesheet" href="../training.css">
 </head>
 
-<body class="nav-sidebar docked nav-fixed quarto-light">
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -249,7 +189,7 @@ window.Quarto = {
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link active" href="../../training/index.html" aria-current="page"> <i class="bi bi-mortarboard" role="img">
+    <a class="nav-link" href="../../training/index.html"> <i class="bi bi-mortarboard" role="img">
 </i> 
 <span class="menu-text">Training</span></a>
   </li>  
@@ -266,16 +206,6 @@ window.Quarto = {
 </div>
       </div> <!-- /container-fluid -->
     </nav>
-  <nav class="quarto-secondary-nav">
-    <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-        <i class="bi bi-layout-text-sidebar-reverse"></i>
-      </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../training/index.html">Training Tracks</a></li><li class="breadcrumb-item"><a href="../../training/self-learning.html">Self-Learning Catalog</a></li><li class="breadcrumb-item"><a href="../../training/reproducible-processes/index.html">Reproducible Processes</a></li></ol></nav>
-        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-        </a>
-    </div>
-  </nav>
   <div id="quarto-announcement" data-announcement-id="04e26d7279811b0a13da8609e872b406" class="alert alert-primary hidden"><i class="bi bi-info-circle quarto-announcement-icon"></i><div class="quarto-announcement-content">
 <p><strong>Thanks for visiting the LMU Open Science Center–our site is still under construction for now, but we’ll be live soon!</strong></p>
 </div><i class="bi bi-x-lg quarto-announcement-action"></i></div>
@@ -283,185 +213,6 @@ window.Quarto = {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
-    <div class="sidebar-menu-container"> 
-    <ul class="list-unstyled mt-1">
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a href="../../training/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Training Tracks</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a href="../../training/self-learning.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Self-Learning Catalog</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 show">  
-          <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a href="../../training/principles/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Principles</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#" role="navigation" aria-expanded="false" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="" class="collapse list-unstyled sidebar-section depth3 ">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../training/principles/assessing-research-replicability.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Assessing Research Replicability</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../training/principles/credible-science.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Credible Science</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../training/principles/replicability-crisis.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Replicability Crisis</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-          <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a href="../../training/study-planning/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Study Planning</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#" role="navigation" aria-expanded="false" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="" class="collapse list-unstyled sidebar-section depth3 ">  
-      </ul>
-  </li>
-          <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a href="../../training/data-management/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Data Management</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#" role="navigation" aria-expanded="false" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="" class="collapse list-unstyled sidebar-section depth3 ">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../training/data-management/maintaining-privacy-with-open-data.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Maintaining Privacy with Open Data</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../training/data-management/open-data.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Introduction to Open Data</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-          <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a href="../../training/reproducible-processes/index.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Reproducible Processes</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="" class="collapse list-unstyled sidebar-section depth3 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../training/reproducible-processes/advanced-git.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Advanced Git</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../training/reproducible-processes/readable-code.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Readable Code</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../training/reproducible-processes/reproducible-protocols.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Reproducible Protocols</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-          <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a href="../../training/publishing-outputs/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Publishing Outputs</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#" role="navigation" aria-expanded="false" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="" class="collapse list-unstyled sidebar-section depth3 ">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../training/publishing-outputs/open-access-preprints-postprints.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Open Access, Preprints, Postprints</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-      </ul>
-  </li>
-          <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a href="../../training/research-cycle-handbook.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Research Cycle Handbook</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../training/research-cycle-handbook/01-plan-and-design.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Plan &amp; Design</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../training/research-cycle-handbook/02-collect-and-manage.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Collect &amp; Manage</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../training/research-cycle-handbook/03-analyze-and-collaborate.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Analyze &amp; Collaborate</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../training/research-cycle-handbook/04-preserve-and-share.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Preserve &amp; Share</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../training/educator-toolkit.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Educator Toolkit</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-    </ul>
-    </div>
-</nav>
-<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
         
@@ -469,14 +220,17 @@ window.Quarto = {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../training/index.html">Training Tracks</a></li><li class="breadcrumb-item"><a href="../../training/self-learning.html">Self-Learning Catalog</a></li><li class="breadcrumb-item"><a href="../../training/reproducible-processes/index.html">Reproducible Processes</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Reproducible Processes</h1>
-</div>
+<h1 class="title">Awareness and Use of Open Research Practices: An International Survey</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">Publications</div>
+  </div>
+  </div>
 
 <div>
   <div class="description">
-    From <strong>programming</strong> to <strong>reproducible manuscripts</strong>
+    Awareness and Use of Open Research Practices: An International Survey of Researchers Across Disciplines
   </div>
 </div>
 
@@ -484,6 +238,12 @@ window.Quarto = {
 <div class="quarto-title-meta">
 
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">April 11, 2026</p>
+    </div>
+  </div>
   
     
   </div>
@@ -493,270 +253,32 @@ window.Quarto = {
 </header>
 
 
+<p>How widely are <strong>Open Research Practices</strong> (ORPs) known and used across the global research community? A new preprint based on an international survey of over 3,000 researchers across 45 countries and 24 disciplines provides insight into this question. This survey was circulated at LMU Munich through the LMU Open Science Center and co-authored by OSC coordinator <a href="../../people/people/malika-ihle.html">Dr.&nbsp;Malika Ihle</a> and managing director <a href="../../people/people/felix-schoenbrodt.html">Prof.&nbsp;Dr.&nbsp;Felix Schönbrodt</a>.</p>
+<p><strong>Read the full preprint here</strong>: <a href="https://osf.io/preprints/psyarxiv/edzxf_v1" class="uri">https://osf.io/preprints/psyarxiv/edzxf_v1</a></p>
+<p>The study examines both <em>awareness</em> and <em>use</em> of common ORPs. The results show that awareness of these practices is generally high, particularly for:</p>
+<ul>
+<li>Open Access publishing<br>
+</li>
+<li>Preprints<br>
+</li>
+<li>Open Data</li>
+</ul>
+<p>However, a consistent gap emerges between <em>awareness</em> and <em>actual use</em>. Among the practices studied, only Open Access publishing is used by more than half of the respondents. Other practices, such as preregistration, registered reports, replication, and research co-production, remain comparatively underutilized. The study also highlights important differences across regions, disciplines, methodologies, and career stages.</p>
+<p>These findings suggest that the adoption of ORPs is shaped by both disciplinary norms and institutional contexts. Researchers identified several <strong>key strategies</strong> to support broader uptake of ORPs, including:</p>
+<ul>
+<li>stronger incentives from funders, institutions, and regulators<br>
+</li>
+<li>dedicated funding for open practices<br>
+</li>
+<li>recognition in hiring and promotion criteria<br>
+</li>
+<li>increased access to information and training</li>
+</ul>
+<p>Overall, the study highlights that while awareness of Open Science is widespread, meaningful adoption remains uneven. Understanding these gaps can help inform targeted training, policy development, and institutional support to advance open and reproducible research.</p>
 
 
 
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="RG9jdW1lbnRhdGlvbg==" data-listing-file-modified-sort="1776088529872" data-listing-reading-time-sort="1" data-listing-word-count-sort="21">
-<div class="thumbnail"><a href="../../training/reproducible-processes/reproducible-protocols.html" class="no-external">
-
-<img loading="lazy" src="../../training/images/reproducible_protocol_writing.svg" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../../training/reproducible-processes/reproducible-protocols.html" class="no-external">Reproducible Protocols</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('RG9jdW1lbnRhdGlvbg=='); return false;">Documentation</div>
-
-</div>
-<div class="delink listing-description"><a href="../../training/reproducible-processes/reproducible-protocols.html" class="no-external">
-<p>Learn how to write and publish a reusable, step-by-step protocol.</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="../../training/reproducible-processes/reproducible-protocols.html" class="no-external">
-<div class="metadata-value listing-type">
-Lecture
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="Ug==">
-<div class="thumbnail"><a href="https://lmu-osc.github.io/introduction-to-R/" class="no-external">
-
-<img loading="lazy" src="../images/introduction_to_r.svg" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="https://lmu-osc.github.io/introduction-to-R/" class="no-external">Introduction to R</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('Ug=='); return false;">R</div>
-
-</div>
-<div class="delink listing-description"><a href="https://lmu-osc.github.io/introduction-to-R/" class="no-external">
-<p>Learn the basics of the R programming language</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="https://lmu-osc.github.io/introduction-to-R/" class="no-external">
-<div class="metadata-value listing-type">
-Self-Paced Tutorial
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="UiUyQ0dpdA==">
-<div class="thumbnail"><a href="https://lmu-osc.github.io/Introduction-RStudio-Git-GitHub/" class="no-external">
-
-<img loading="lazy" src="../images/introduction_to_git.svg" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="https://lmu-osc.github.io/Introduction-RStudio-Git-GitHub/" class="no-external">Introduction to Version Control within RStudio</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('Ug=='); return false;">R</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('R2l0'); return false;">Git</div>
-
-</div>
-<div class="delink listing-description"><a href="https://lmu-osc.github.io/Introduction-RStudio-Git-GitHub/" class="no-external">
-<p>Explore the git version control software and its integrations with the popular RStudio interactive development environment</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="https://lmu-osc.github.io/Introduction-RStudio-Git-GitHub/" class="no-external">
-<div class="metadata-value listing-type">
-Self-Paced Tutorial
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-categories="UiUyQ0dpdCUyQ0dpdEh1Yg==">
-<div class="thumbnail"><a href="https://lmu-osc.github.io/Collaborative-RStudio-GitHub/" class="no-external">
-
-<img loading="lazy" src="../images/introduction_to_github.svg" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="https://lmu-osc.github.io/Collaborative-RStudio-GitHub/" class="no-external">Collaborative coding with GitHub and RStudio</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('Ug=='); return false;">R</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('R2l0'); return false;">Git</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('R2l0SHVi'); return false;">GitHub</div>
-
-</div>
-<div class="delink listing-description"><a href="https://lmu-osc.github.io/Collaborative-RStudio-GitHub/" class="no-external">
-<p>After learning the basics of git, apply your skills in an interactive tutorial</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="https://lmu-osc.github.io/Collaborative-RStudio-GitHub/" class="no-external">
-<div class="metadata-value listing-type">
-Self-Paced Tutorial
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="4" data-categories="R2l0JTJDR2l0SHVi" data-listing-file-modified-sort="1776088529871" data-listing-reading-time-sort="2" data-listing-word-count-sort="223">
-<div class="thumbnail"><a href="../../training/reproducible-processes/advanced-git.html" class="no-external">
-
-<img loading="lazy" src="../../training/images/advanced_git.svg" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../../training/reproducible-processes/advanced-git.html" class="no-external">Advanced Git</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('R2l0'); return false;">Git</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('R2l0SHVi'); return false;">GitHub</div>
-
-</div>
-<div class="delink listing-description"><a href="../../training/reproducible-processes/advanced-git.html" class="no-external">
-<p>Learn git features like branching and gitflow, and how to take advantage of issues, pull requests, and more on GitHub</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="../../training/reproducible-processes/advanced-git.html" class="no-external">
-<div class="metadata-value listing-type">
-Video Tutorial
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="5" data-categories="UiUyQ1F1YXJ0bw==">
-<div class="thumbnail"><a href="https://lmu-osc.github.io/introduction-to-Quarto/" class="no-external">
-
-<img loading="lazy" src="../images/introduction_to_quarto.svg" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="https://lmu-osc.github.io/introduction-to-Quarto/" class="no-external">Introduction to Quarto</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('Ug=='); return false;">R</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('UXVhcnRv'); return false;">Quarto</div>
-
-</div>
-<div class="delink listing-description"><a href="https://lmu-osc.github.io/introduction-to-Quarto/" class="no-external">
-<p>Discover the basics of setting up computationally reproducible analyses, manuscripts, and presentations</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="https://lmu-osc.github.io/introduction-to-Quarto/" class="no-external">
-<div class="metadata-value listing-type">
-Self-Paced Tutorial
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="6" data-categories="Wm90ZXJvJTJDUXVhcnRv">
-<div class="thumbnail"><a href="https://lmu-osc.github.io/introduction-to-zotero/" class="no-external">
-
-<img loading="lazy" src="../images/introduction_to_zotero.svg" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="https://lmu-osc.github.io/introduction-to-zotero/" class="no-external">Introduction to Zotero</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('Wm90ZXJv'); return false;">Zotero</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('UXVhcnRv'); return false;">Quarto</div>
-
-</div>
-<div class="delink listing-description"><a href="https://lmu-osc.github.io/introduction-to-zotero/" class="no-external">
-<p>Easily save your sources to the Zotero software, and learn how to insert these citations into your documents</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="https://lmu-osc.github.io/introduction-to-zotero/" class="no-external">
-<div class="metadata-value listing-type">
-Self-Paced Tutorial
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="7" data-categories="Ug==">
-<div class="thumbnail"><a href="https://lmu-osc.github.io/introduction-to-renv/" class="no-external">
-
-<img loading="lazy" src="../images/introduction_to_renv.svg" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="https://lmu-osc.github.io/introduction-to-renv/" class="no-external">Introduction to {renv}</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('Ug=='); return false;">R</div>
-
-</div>
-<div class="delink listing-description"><a href="https://lmu-osc.github.io/introduction-to-renv/" class="no-external">
-<p>Make your projects reproducible by learning how to (easily) manage your R packages</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="https://lmu-osc.github.io/introduction-to-renv/" class="no-external">
-<div class="metadata-value listing-type">
-Self-Paced Tutorial
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="8" data-categories="Ug==" data-listing-file-modified-sort="1776088529872" data-listing-reading-time-sort="1" data-listing-word-count-sort="60">
-<div class="thumbnail"><a href="../../training/reproducible-processes/readable-code.html" class="no-external">
-
-<img loading="lazy" src="../../training/images/readable_code.svg" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../../training/reproducible-processes/readable-code.html" class="no-external">Readable Code</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('Ug=='); return false;">R</div>
-
-</div>
-<div class="delink listing-description"><a href="../../training/reproducible-processes/readable-code.html" class="no-external">
-<p>Tips to write clear, understandable, and maintainable code.</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="../../training/reproducible-processes/readable-code.html" class="no-external">
-<div class="metadata-value listing-type">
-Lecture
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
