@@ -99,7 +99,7 @@ Your protocol should specify materials with identifying details (e.g. lot number
 ```{=html}
 <div class="card orc-card-tool p-3 bg-light-subtle h-100">
 <div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
-<img src="../images/reproducibiliteach.jpg" class="img-fluid" alt="reproducibiliteach icon">
+<img src="/training/images/reproducibiliteach.jpg" class="img-fluid" alt="reproducibiliteach icon">
 </div>
 <h4 class="card-title">Write reusable protocols</h4>
 <p class="card-text">Understand the level of details needed for your protocols.</p>
@@ -123,7 +123,7 @@ Your protocol should specify materials with identifying details (e.g. lot number
 <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
   <div class="d-flex gap-2">
     <div class="orc-card-tool-icon p-2 rounded">
-      <img src="https://www.elabftw.net/img/elabftw-logo-only.svg" class="img-fluid" alt="eLabFTW icon">
+      <img src="/assets/img/elabftw-logo.svg" class="img-fluid" alt="eLabFTW icon">
     </div>
   </div>
   <span class="badge rounded-5 bg-success-subtle text-success align-self-start">Supported at LMU</span>
@@ -142,7 +142,7 @@ Your protocol should specify materials with identifying details (e.g. lot number
 <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
   <div class="d-flex gap-2">
     <div class="orc-card-tool-icon p-2 rounded">
-      <img src="https://avatars.githubusercontent.com/u/83013380?v=4" class="img-fluid" alt="Chemotion icon">
+      <img src="/assets/img/chemotion-icon.png" class="img-fluid" alt="Chemotion icon">
     </div>
   </div>
   <span class="badge rounded-5 bg-success-subtle text-success align-self-start">Supported at LMU</span>
@@ -159,7 +159,7 @@ Your protocol should specify materials with identifying details (e.g. lot number
 ```{=html}
 <div class="card orc-card-tool p-3 bg-light-subtle h-100">
 <div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
-<img src="https://www.protocols.io/favicon.ico" class="img-fluid" alt="Protocols.io icon">
+<img src="/assets/img/protocols-io-favicon.ico" class="img-fluid" alt="Protocols.io icon">
 </div>
 <h4 class="card-title">Protocols.io</h4>
 <p class="card-text">Share, discover, cite, and improve research protocols.</p>
@@ -219,7 +219,7 @@ When data comes from instruments, sensors, or APIs (Application Programming Inte
       <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
     </div>
     <div class="orc-card-tool-icon p-2 rounded">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/R_logo.svg/1920px-R_logo.svg.png?20240131042527" class="img-fluid" alt="R logo">
+      <img src="/assets/img/Rlogo.svg" class="img-fluid" alt="R logo">
     </div>
   </div>
   <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
@@ -241,7 +241,7 @@ When data comes from instruments, sensors, or APIs (Application Programming Inte
       <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
     </div>
     <div class="orc-card-tool-icon p-2 rounded">
-      <img src="https://git-scm.com/images/logos/logomark-orange@2x.png" class="img-fluid" alt="Git logo">
+      <img src="/assets/img/git-icon-logo.svg" class="img-fluid" alt="Git logo">
     </div>
   </div>
   <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
@@ -283,7 +283,7 @@ Field and sometimes lab researchers have to work with analogue notebooks first, 
 <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
   <div class="d-flex gap-2">
     <div class="orc-card-tool-icon p-2 rounded">
-      <img src="https://www.postgresql.org/favicon.ico" class="img-fluid" alt="postgreSQL icon">
+      <img src="/assets/img/postgresql-favicon.ico" class="img-fluid" alt="postgreSQL icon">
     </div>
   </div>
 </div>
@@ -360,7 +360,7 @@ Data collection, in this context, consists in developing a judicious reproducibl
 <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
   <div class="d-flex gap-2">
     <div class="orc-card-tool-icon p-2 rounded">
-      <img src="https://images.squarespace-cdn.com/content/v1/65b880e13b6ca75573dfe217/c25c6bce-6fe5-4b33-8913-a1a2d75dbcb8/Prisma-logo-Colour-white-BG.png?format=1500w" class="img-fluid" alt="PRISMA icon">
+      <img src="/assets/img/prisma-logo-color-white.png" class="img-fluid" alt="PRISMA icon">
     </div>
   </div>
 </div>
@@ -378,7 +378,7 @@ Data collection, in this context, consists in developing a judicious reproducibl
 <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
   <div class="d-flex gap-2">
     <div class="orc-card-tool-icon p-2 rounded">
-      <img src="https://camarades.de/logos/favicon.ico" class="img-fluid" alt="CAMARADES icon">
+      <img src="/assets/img/camarades-favicon.ico" class="img-fluid" alt="CAMARADES icon">
     </div>
   </div>
 </div>
@@ -458,7 +458,7 @@ Personal laptops as primary storage, external drives as only copy, consumer clou
     <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
         <div class="d-flex gap-2">
             <div class="orc-card-tool-icon p-2 rounded">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvQdlBHTP2IOvBeJ_S8I9z9S2BX0Qqn0twjw&s" class="img-fluid" alt="LRZ logo">
+            <img src="/assets/img/lrz-logo.png" class="img-fluid" alt="LRZ logo">
             </div>
         </div>
         <span class="badge rounded-5 bg-success-subtle text-success align-self-start">Supported at LMU</span>
@@ -476,7 +476,7 @@ Personal laptops as primary storage, external drives as only copy, consumer clou
     <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
         <div class="d-flex gap-2">
             <div class="orc-card-tool-icon p-2 rounded">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvQdlBHTP2IOvBeJ_S8I9z9S2BX0Qqn0twjw&s" class="img-fluid" alt="LRZ logo">
+            <img src="/assets/img/lrz-logo.png" class="img-fluid" alt="LRZ logo">
             </div>
         </div>
     <span class="badge rounded-5 bg-success-subtle text-success align-self-start">Supported at LMU</span>
@@ -492,7 +492,7 @@ Personal laptops as primary storage, external drives as only copy, consumer clou
 ```{=html}
 <div class="card orc-card-tool p-3 bg-light-subtle h-100">
     <div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Open_Science_Framework_log_%28and_Center_for_Open_Science_logo%29.svg/3840px-Open_Science_Framework_log_%28and_Center_for_Open_Science_logo%29.svg.png" class="img-fluid" alt="OSF logo">
+            <img src="/assets/img/open-science-framework-and-open-science-center.png" class="img-fluid" alt="OSF logo">
     </div>
 <h4 class="card-title">OSF</h4>
 <p class="card-text">Research project management platform including storage.</p>
@@ -584,7 +584,7 @@ A pattern like `YYYY-MM-DD_project_condition_type_v01.ext` places files in chron
 ```{=html}
 <div class="card orc-card-tool p-3 bg-light-subtle h-100">
     <div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
-        <img src="https://rdmkit.elixir-europe.org/assets/img/apple-touch-icon.png" class="img-fluid" alt="RDMkit logo">
+        <img src="/assets/img/elixir-europe-icon.png" class="img-fluid" alt="RDMkit logo">
     </div>
     <h4 class="card-title">RDMkit</h4>
     <p class="card-text">Domain-specific data management standards</p>
@@ -626,7 +626,7 @@ Format issues often surface during quality control. The [2.4. Quality Control](#
 ```{=html}
 <div class="card orc-card-tool p-3 bg-light-subtle h-100">
     <div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
-        <img src="https://rdmkit.elixir-europe.org/assets/img/apple-touch-icon.png" class="img-fluid" alt="RDMkit logo">
+        <img src="/assets/img/elixir-europe-icon.png" class="img-fluid" alt="RDMkit logo">
     </div>
     <h4 class="card-title">RDMkit</h4>
     <p class="card-text">Domain-specific file formats and conventions</p>
@@ -724,7 +724,7 @@ Standards are community agreements on how to organize and describe research data
 ```{=html}
 <div class="card orc-card-tool p-3 bg-light-subtle h-100">
     <div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX4MByesrD50P8W0ZGn_W8RPYV8yzbtRx0RA&s" class="img-fluid" alt="EQUATOR logo">
+        <img src="/assets/img/equator-logo.jpg" class="img-fluid" alt="EQUATOR logo">
     </div>
     <h4 class="card-title">EQUATOR Network</h4>
     <p class="card-text">Comprehensive database of reporting guidelines.</p>
@@ -737,7 +737,7 @@ Standards are community agreements on how to organize and describe research data
 ```{=html}
 <div class="card orc-card-tool p-3 bg-light-subtle h-100">
     <div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
-        <img src="https://avatars.githubusercontent.com/u/29867987?s=280&v=4" class="img-fluid" alt="FAIRsharing logo">
+        <img src="/assets/img/fair-data-sharing-logo.png" class="img-fluid" alt="FAIRsharing logo">
     </div>
     <h4 class="card-title">FAIRsharing</h4>
     <p class="card-text">Search by discipline to find metadata standards, reporting guidelines, and data policies for your field.</p>
@@ -750,7 +750,7 @@ Standards are community agreements on how to organize and describe research data
 ```{=html}
 <div class="card orc-card-tool p-3 bg-light-subtle h-100">
     <div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
-        <img src="https://rdmkit.elixir-europe.org/assets/img/apple-touch-icon.png" class="img-fluid" alt="RDMkit logo">
+        <img src="/assets/img/elixir-europe-icon.png" class="img-fluid" alt="RDMkit logo">
     </div>
     <h4 class="card-title">RDMkit</h4>
     <p class="card-text">Domain-specific metadata standards</p>
@@ -833,7 +833,7 @@ In a version controlled workflow, you back up your local Git repositories on eit
             <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
         </div>
         <div class="orc-card-tool-icon p-2 rounded">
-            <img src="https://www.svgrepo.com/show/303548/git-icon-logo.svg" class="img-fluid" alt="Git logo">
+            <img src="/assets/img/git-icon-logo.svg" class="img-fluid" alt="Git logo">
         </div>
     </div>
     <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
@@ -901,7 +901,7 @@ In a version controlled workflow, you back up your local Git repositories on eit
 ```{=html}
 <div class="card orc-card-tool p-3 bg-light-subtle h-100">
     <div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
-        <img src="https://avatars.githubusercontent.com/u/8927200?s=280&v=4" class="img-fluid" alt="GitLab icon">
+        <img src="/assets/img/datalad-logo.svg" class="img-fluid" alt="DataLad icon">
     </div>
     <h4 class="card-title">DataLad</h4>
     <p class="card-text">Version control for large datasets</p>
@@ -960,7 +960,7 @@ Participants have the right to understand what they are agreeing to. Your consen
 ```{=html}
 <div class="card orc-card-tool p-3 bg-light-subtle h-100">
     <div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
-        <img src="https://www.uu.nl//themes/custom/corp/src/images/favicons/apple-touch-icon.png" class="img-fluid" alt="University of Utrecht icon">
+        <img src="/assets/img/utrecht-uni-icon.png" class="img-fluid" alt="University of Utrecht icon">
     </div>
     <h4 class="card-title">How to write an informed consent form</h4>
     <p class="card-text">University of Utrecht RDM guide.</p>

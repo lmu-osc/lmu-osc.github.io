@@ -280,7 +280,7 @@ During the course of data collection and analyses, you created a README and data
 ```{=html}
 <div class="card orc-card-tool p-3 bg-light-subtle h-100">
 <div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
-<img src="https://avatars.githubusercontent.com/u/29867987?s=280&v=4" class="img-fluid" alt="FAIRsharing logo">
+<img src="/assets/img/fair-data-sharing-logo.png" class="img-fluid" alt="FAIRsharing logo">
 </div>
 <h4 class="card-title">FAIRsharing</h4>
 <p class="card-text">Search by discipline to find metadata standards, reporting guidelines, and data policies for your field.</p>
@@ -293,7 +293,7 @@ During the course of data collection and analyses, you created a README and data
 ```{=html}
 <div class="card orc-card-tool p-3 bg-light-subtle h-100">
 <div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
-<img src="https://rdmkit.elixir-europe.org/assets/img/apple-touch-icon.png" class="img-fluid" alt="RDMkit logo">
+<img src="/assets/img/elixir-europe-icon.png" class="img-fluid" alt="RDMkit logo">
 </div>
 <h4 class="card-title">RDMkit</h4>
 <p class="card-text">Domain-specific metadata standards</p>
@@ -349,7 +349,7 @@ Whichever you choose, ensure the repository provides a **DOI** (Digital Object I
 ```{=html}
 <div class="card orc-card-tool p-3 bg-light-subtle h-100">
     <div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Open_Science_Framework_log_%28and_Center_for_Open_Science_logo%29.svg/3840px-Open_Science_Framework_log_%28and_Center_for_Open_Science_logo%29.svg.png" class="img-fluid" alt="OSF icon">
+        <img src="/assets/img/open-science-framework-and-open-science-center.png" class="img-fluid" alt="OSF icon">
     </div>
     <h4 class="card-title">Open Science Framework</h4>
     <p class="card-text">General-purpose repository for data, materials, reports.</p>
@@ -805,7 +805,7 @@ See the [Creative Common license chooser](https://creativecommons.org/chooser/) 
 ```{=html}
 <div class="card orc-card-tool p-3 bg-light-subtle h-100">
 <div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Open_Science_Framework_log_%28and_Center_for_Open_Science_logo%29.svg/3840px-Open_Science_Framework_log_%28and_Center_for_Open_Science_logo%29.svg.png" class="img-fluid" alt="OSF logo">
+<img src="/assets/img/open-science-framework-and-open-science-center.png" class="img-fluid" alt="OSF logo">
 </div>
 <h4 class="card-title">OSF</h4>
 <p class="card-text">Project management platform including storage and DOI.</p>
@@ -1068,7 +1068,7 @@ To get support for [Open Access LMU](https://epub.ub.uni-muenchen.de/), the LMU 
 ```{=html}
 <div class="card orc-card-tool p-3 bg-light-subtle h-100">
 <div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Open_Science_Framework_log_%28and_Center_for_Open_Science_logo%29.svg/3840px-Open_Science_Framework_log_%28and_Center_for_Open_Science_logo%29.svg.png" class="img-fluid" alt="OSF logo">
+<img src="/assets/img/open-science-framework-and-open-science-center.png" class="img-fluid" alt="OSF logo">
 </div>
 <h4 class="card-title">OSF Preprints</h4>
 <p class="card-text">Multidisciplinary preprint service.</p>
