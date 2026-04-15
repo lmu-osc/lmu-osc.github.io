@@ -9,10 +9,6 @@
   --transition: all 0.3s ease;
 }
 
-/* Partner container */
-.institutional-members-page h1.title{
-  padding-left: 1.5rem;
-}
 
 .partner-container {
   max-width: 1200px;
@@ -309,4 +305,18 @@
   color: white !important;
   border-color: #017132  !important;
   transform: translateY(-2px);
+}
+
+.inst-member-container a.btn.btn-primary{
+  background-color: #00883A;
+  border: 2px solid transparent; /* prevents shifting */
+  color: white;
+  transition: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+}
+
+.inst-member-container a.btn.btn-primary:hover,
+.inst-member-container a.btn.btn-primary:focus{
+  background-color: white;
+  color: #00883A;
+  border-color: #00883A;
 }
