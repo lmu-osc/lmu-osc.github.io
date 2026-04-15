@@ -78,10 +78,10 @@ This section outlines a recommended workflow for R users.
     <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
         <div class="d-flex gap-2">
             <div class="orc-card-tool-icon p-2 rounded">
-                <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+                <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
             </div>
             <div class="orc-card-tool-icon p-2 rounded">
-                <img src="https://www.r-project.org/logo/Rlogo.svg" class="img-fluid" alt="R logo">
+                <img src="/assets/img/Rlogo.svg" class="img-fluid" alt="R programming language logo">
             </div>
         </div>
         <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
@@ -100,7 +100,7 @@ This section outlines a recommended workflow for R users.
     <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
         <div class="d-flex gap-2">
             <div class="orc-card-tool-icon p-2 rounded">
-                <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+                <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
             </div>
         </div>
         <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
@@ -120,7 +120,7 @@ This section outlines a recommended workflow for R users.
     <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
         <div class="d-flex gap-2">
             <div class="orc-card-tool-icon p-2 rounded">
-                <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+                <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
             </div>
         </div>
         <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Lecture</span>
@@ -146,10 +146,10 @@ This section outlines a recommended workflow for R users.
     <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
         <div class="d-flex gap-2">
             <div class="orc-card-tool-icon p-2 rounded">
-                <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+                <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
             </div>
             <div class="orc-card-tool-icon p-2 rounded">
-                <img src="https://cdn.simpleicons.org/github"  class="img-fluid" alt="GitHub logo">
+                <img src="/assets/img/github.svg"  class="img-fluid" alt="GitHub logo">
             </div>
         </div>
         <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tool</span>
@@ -168,7 +168,7 @@ This section outlines a recommended workflow for R users.
     <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
         <div class="d-flex gap-2">
             <div class="orc-card-tool-icon p-2 rounded">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvQdlBHTP2IOvBeJ_S8I9z9S2BX0Qqn0twjw&s" class="img-fluid" alt="LRZ logo">
+                <img src="/assets/img/lrz-logo.png" class="img-fluid" alt="LRZ logo">
             </div>
         </div>
         <span class="badge rounded-5 bg-success-subtle text-success align-self-start">Supported at LMU</span>
@@ -245,10 +245,10 @@ Importantly, if data are removed from an existing repository, they may still rem
   <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
     <div class="d-flex gap-2">
       <div class="orc-card-tool-icon p-2 rounded">
-        <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+        <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
       </div>
       <div class="orc-card-tool-icon p-2 rounded">
-        <img src="https://www.svgrepo.com/show/303548/git-icon-logo.svg" class="img-fluid" alt="Git logo">
+        <img src="/assets/img/git-icon-logo.svg" class="img-fluid" alt="Git logo">
       </div>
     </div>
     <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
@@ -267,10 +267,10 @@ Importantly, if data are removed from an existing repository, they may still rem
   <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
     <div class="d-flex gap-2">
       <div class="orc-card-tool-icon p-2 rounded">
-        <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+        <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
       </div>
       <div class="orc-card-tool-icon p-2 rounded">
-        <img src="https://cdn.simpleicons.org/github" class="img-fluid" alt="GitHub logo">
+        <img src="/assets/img/github.svg" class="img-fluid" alt="GitHub logo">
       </div>
     </div>
     <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
@@ -296,10 +296,10 @@ Importantly, if data are removed from an existing repository, they may still rem
   <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
     <div class="d-flex gap-2">
       <div class="orc-card-tool-icon p-2 rounded">
-        <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+        <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
       </div>
       <div class="orc-card-tool-icon p-2 rounded">
-        <img src="https://cdn.simpleicons.org/gitlab" class="img-fluid" alt="GitLab logo">
+        <img src="/assets/img/gitlab.svg" class="img-fluid" alt="GitLab logo">
       </div>
     </div>
     <span class="badge rounded-5 bg-success-subtle text-success align-self-start">Supported at LMU</span>
@@ -318,10 +318,10 @@ Importantly, if data are removed from an existing repository, they may still rem
   <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
     <div class="d-flex gap-2">
       <div class="orc-card-tool-icon p-2 rounded">
-        <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+        <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
       </div>
       <div class="orc-card-tool-icon p-2 rounded">
-        <img src="https://cdn.simpleicons.org/matrix" class="img-fluid" alt="Matrix logo">
+        <img src="/assets/img/matrix.svg" class="img-fluid" alt="Matrix logo">
       </div>
     </div>
     <span class="badge rounded-5 bg-success-subtle text-success align-self-start">Supported at LMU</span>
@@ -369,10 +369,10 @@ Before publishing your project (see [4. Preserve & share](04-preserve-and-share.
   <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
     <div class="d-flex gap-2">
       <div class="orc-card-tool-icon p-2 rounded">
-        <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+        <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
       </div>
       <div class="orc-card-tool-icon p-2 rounded">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8BF2VLSH1vzKlH0TOWxOjEURG4oADGhxuPg&s" class="img-fluid" alt="Zenodo icon">
+        <img src="/assets/img/renv.svg" class="img-fluid" alt="R package 'renv' icon">
       </div>
     </div>
     <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
@@ -391,10 +391,10 @@ Before publishing your project (see [4. Preserve & share](04-preserve-and-share.
   <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
     <div class="d-flex gap-2">
       <div class="orc-card-tool-icon p-2 rounded">
-        <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+        <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
       </div>
       <div class="orc-card-tool-icon p-2 rounded">
-        <img src="https://about.zenodo.org/static/img/icons/zenodo-icon-blue.svg" class="img-fluid" alt="Zenodo icon">
+        <img src="/assets/img/zenodo-icon-blue.svg" class="img-fluid" alt="Zenodo icon">
       </div>
     </div>
     <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
@@ -418,7 +418,7 @@ Before publishing your project (see [4. Preserve & share](04-preserve-and-share.
 ```{=html}
 <div class="card orc-card-tool p-3 bg-light-subtle h-100">
   <div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
-    <img src="https://mybinder.org/favicon.ico" class="img-fluid" alt="Binder logo">
+    <img src="/assets/img/mybinder-favicon.png" class="img-fluid" alt="Binder logo">
   </div>
 <h4 class="card-title">Binder</h4>
 <p class="card-text">Create online executable environments.</p>
@@ -432,7 +432,7 @@ Before publishing your project (see [4. Preserve & share](04-preserve-and-share.
 ```{=html}
 <div class="card orc-card-tool p-3 bg-light-subtle h-100">
   <div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
-    <img src="https://cdn.simpleicons.org/docker" class="img-fluid" alt="Docker logo">
+    <img src="/assets/img/docker.svg" class="img-fluid" alt="Docker logo">
   </div>
 <h4 class="card-title">Docker</h4>
 <p class="card-text">Containerization for full reproducibility.</p>
@@ -446,7 +446,7 @@ Before publishing your project (see [4. Preserve & share](04-preserve-and-share.
 ```{=html}
 <div class="card orc-card-tool p-3 bg-light-subtle h-100">
   <div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
-    <img src="https://repo2docker.readthedocs.io/en/latest/_static/favicon.ico" class="img-fluid" alt="repo2docker logo">
+    <img src="/assets/img/repo2docker.svg" class="img-fluid" alt="repo2docker logo">
   </div>
 <h4 class="card-title">repo2docker</h4>
 <p class="card-text">Build and run user environment containers.</p>
@@ -500,7 +500,7 @@ Example README to allow team members to review your code:
     <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
     <div class="d-flex gap-2">
         <div class="orc-card-tool-icon p-2 rounded">
-        <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+        <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
         </div>
     </div>
     <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Lecture</span>
@@ -519,7 +519,7 @@ Example README to allow team members to review your code:
 <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
   <div class="d-flex gap-2">
     <div class="orc-card-tool-icon p-2 rounded">
-      <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+      <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
     </div>
   </div>
   <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
@@ -538,10 +538,10 @@ Example README to allow team members to review your code:
 <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
   <div class="d-flex gap-2">
     <div class="orc-card-tool-icon p-2 rounded">
-      <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+      <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
     </div>
     <div class="orc-card-tool-icon p-2 rounded">
-        <img src="https://about.zenodo.org/static/img/icons/zenodo-icon-blue.svg" class="img-fluid" alt="Zenodo icon">
+        <img src="/assets/img/zenodo-icon-blue.svg" class="img-fluid" alt="Zenodo icon">
     </div>
   </div>
   <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
@@ -644,10 +644,10 @@ Using the same Quarto environment, you can also:
 <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
   <div class="d-flex gap-2">
     <div class="orc-card-tool-icon p-2 rounded">
-      <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+      <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
     </div>
     <div class="orc-card-tool-icon p-2 rounded">
-        <img src="https://quarto.org/favicon.png" class="img-fluid" alt="Quarto logo">
+        <img src="/assets/img/quarto-favicon.png" class="img-fluid" alt="Quarto logo">
     </div>
   </div>
   <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
@@ -666,10 +666,10 @@ Using the same Quarto environment, you can also:
 <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
   <div class="d-flex gap-2">
     <div class="orc-card-tool-icon p-2 rounded">
-      <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+      <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
     </div>
     <div class="orc-card-tool-icon p-2 rounded">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Zotero_icon.png" class="img-fluid" alt="Zotero logo">
+        <img src="/assets/img/zotero-icon.png" class="img-fluid" alt="Zotero logo">
     </div>
   </div>
   <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
@@ -689,10 +689,10 @@ Using the same Quarto environment, you can also:
 <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
   <div class="d-flex gap-2">
     <div class="orc-card-tool-icon p-2 rounded">
-      <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+      <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
     </div>
     <div class="orc-card-tool-icon p-2 rounded">
-    <img src="https://www.svgrepo.com/show/303548/git-icon-logo.svg" class="img-fluid" alt="Git logo">
+    <img src="/assets/img/git-icon-logo.svg" class="img-fluid" alt="Git logo">
     </div>
   </div>
   <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
@@ -711,10 +711,10 @@ Using the same Quarto environment, you can also:
 <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
   <div class="d-flex gap-2">
     <div class="orc-card-tool-icon p-2 rounded">
-      <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+      <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
     </div>
     <div class="orc-card-tool-icon p-2 rounded">
-        <img src="https://cdn.simpleicons.org/github" class="img-fluid" alt="GitHub logo">
+        <img src="/assets/img/github.svg" class="img-fluid" alt="GitHub logo">
     </div>
   </div>
   <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
@@ -732,7 +732,7 @@ Using the same Quarto environment, you can also:
 ```{=html}
 <div class="card orc-card-tool p-3 bg-light-subtle h-100">
 <div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
-<img src="https://www.svgrepo.com/show/303548/git-icon-logo.svg" class="img-fluid" alt="GitHub logo">
+<img src="/assets/img/git-icon-logo.svg" class="img-fluid" alt="Git logo">
 </div>
 <h4 class="card-title">Advanced Git Tutorial</h4>
 <p class="card-text">Use Git branches and further collaborative features (2h)</p>
@@ -755,10 +755,10 @@ Using the same Quarto environment, you can also:
 <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
   <div class="d-flex gap-2">
     <div class="orc-card-tool-icon p-2 rounded">
-      <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+      <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
     </div>
     <div class="orc-card-tool-icon p-2 rounded">
-      <img src="https://cdn.simpleicons.org/gitlab" class="img-fluid" alt="GitLab logo">
+      <img src="/assets/img/gitlab.svg" class="img-fluid" alt="GitLab logo">
     </div>
   </div>
   <span class="badge rounded-5 bg-success-subtle text-success align-self-start">Supported at LMU</span>
@@ -777,7 +777,7 @@ Using the same Quarto environment, you can also:
 <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
   <div class="d-flex gap-2">
     <div class="orc-card-tool-icon p-2 rounded">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvQdlBHTP2IOvBeJ_S8I9z9S2BX0Qqn0twjw&s" class="img-fluid" alt="LRZ logo">
+        <img src="/assets/img/lrz-logo.png" class="img-fluid" alt="LRZ logo">
     </div>
   </div>
   <span class="badge rounded-5 bg-success-subtle text-success align-self-start">Supported at LMU</span>
@@ -798,10 +798,10 @@ Using the same Quarto environment, you can also:
 <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
   <div class="d-flex gap-2">
     <div class="orc-card-tool-icon p-2 rounded">
-      <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+      <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
     </div>
     <div class="orc-card-tool-icon p-2 rounded">
-        <img src="https://cdn.simpleicons.org/matrix" class="img-fluid" alt="Matrix logo">
+        <img src="/assets/img/matrix.svg" class="img-fluid" alt="Matrix logo">
     </div>
   </div>
   <span class="badge rounded-5 bg-success-subtle text-success align-self-start">Supported at LMU</span>
@@ -858,7 +858,7 @@ Some of these elements will be refined depending on your study type. Widely used
 ```{=html}
 <div class="card orc-card-tool p-3 bg-light-subtle h-100">
 <div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX4MByesrD50P8W0ZGn_W8RPYV8yzbtRx0RA&s" class="img-fluid" alt="EQUATOR logo">
+<img src="/assets/img/equator-logo.jpg" class="img-fluid" alt="EQUATOR logo">
 </div>
 <h4 class="card-title">EQUATOR Network</h4>
 <p class="card-text">Comprehensive database of reporting guidelines.</p>
