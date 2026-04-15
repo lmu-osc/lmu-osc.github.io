@@ -75,7 +75,7 @@ A research output (e.g. data, code) without a license or statement granting your
       <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
     </div>
     <div class="orc-card-tool-icon p-2 rounded">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Zotero_icon.png" class="img-fluid" alt="Zotero logo">
+      <img src="/assets/img/zotero-icon.png" class="img-fluid" alt="Zotero logo">
     </div>
   </div>
   <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
@@ -99,7 +99,7 @@ A research output (e.g. data, code) without a license or statement granting your
 ```{=html}
 <div class="card orc-card-tool p-3 bg-light-subtle h-100">
   <div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/OpenAlex_2025_favicon.svg/250px-OpenAlex_2025_favicon.svg.png" class="img-fluid" alt="OpenAlex logo">
+    <img src="/assets/img/openalex-2025-favicon.png" class="img-fluid" alt="OpenAlex logo">
   </div>
   <h4 class="card-title">OpenAlex</h4>
   <p class="card-text">All the world's research, connected and open.</p>
@@ -113,7 +113,7 @@ A research output (e.g. data, code) without a license or statement granting your
 ```{=html}
 <div class="card orc-card-tool p-3 bg-light-subtle h-100">
 <div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
-<img src="https://europepmc.org/img/Europe%20PMC%20Basic%20Logo%20RGB.71c1dbf7.png" class="img-fluid" alt="Europe PMC logo">
+<img src="/assets/img/europe-pmc-basic-logo.png" class="img-fluid" alt="Europe PMC logo">
 </div>
 <h4 class="card-title">Europe PubMed Central</h4>
 <p class="card-text">Comprehensive access to life sciences literature.</p>
@@ -145,7 +145,7 @@ A **preregistration** typically consists of a hypothesis and predictions, a plan
 ```{=html}
 <div class="card orc-card-tool p-3 bg-light-subtle h-100">
 <div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Open_Science_Framework_log_%28and_Center_for_Open_Science_logo%29.svg/3840px-Open_Science_Framework_log_%28and_Center_for_Open_Science_logo%29.svg.png" class="img-fluid" alt="OSF icon">
+<img src="/assets/img/open-science-framework-and-open-science-center.png" class="img-fluid" alt="OSF icon">
 </div>
 <h4 class="card-title">Open Science Framework</h4>
 <p class="card-text">Registry of preregistrations. Widely used across fields.</p>
@@ -158,7 +158,7 @@ A **preregistration** typically consists of a hypothesis and predictions, a plan
 ```{=html}
 <div class="card orc-card-tool p-3 bg-light-subtle h-100">
 <div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
-<img src="https://aspredicted.org/favicon.ico" class="img-fluid" alt="AsPredicted icon">
+<img src="/assets/img/aspredicted-favicon.ico" class="img-fluid" alt="AsPredicted icon">
 </div>
 <h4 class="card-title">AsPredicted</h4>
 <p class="card-text">Registry of simple preregistrations</p>
@@ -171,7 +171,7 @@ A **preregistration** typically consists of a hypothesis and predictions, a plan
 ```{=html}
 <div class="card orc-card-tool p-3 bg-light-subtle h-100">
 <div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
-<img src="https://preclinicaltrials.eu/images/logo-pct.jpg" class="img-fluid" alt="PreclinicalTrials.eu icon">
+<img src="/assets/img/preclinical-trials-eu.jpg" class="img-fluid" alt="PreclinicalTrials.eu icon">
 </div>
 <h4 class="card-title">PreclinicalTrials.eu</h4>
 <p class="card-text">Registry of preclinical animal study protocols.</p>
@@ -185,7 +185,7 @@ A **preregistration** typically consists of a hypothesis and predictions, a plan
 ```{=html}
 <div class="card orc-card-tool p-3 bg-light-subtle h-100">
 <div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
-<img src="https://www.animalstudyregistry.org/asr_web/image/asr_logo.png" class="img-fluid" alt="animalstudyregistry.org icon">
+<img src="/assets/img/animal-study-registry-logo.png" class="img-fluid" alt="animalstudyregistry.org icon">
 </div>
 <h4 class="card-title">AnimalStudyRegistry.org</h4>
 <p class="card-text">Registry of animal studies.</p>
@@ -199,7 +199,7 @@ A **preregistration** typically consists of a hypothesis and predictions, a plan
 ```{=html}
 <div class="card orc-card-tool p-3 bg-light-subtle h-100">
 <div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
-<img src="https://clinicaltrials.gov/assets/favicons/favicon.svg" class="img-fluid" alt="ClinicalTrials.gov icon">
+<img src="/assets/img/clinical-trials-gov-favicon.svg" class="img-fluid" alt="ClinicalTrials.gov icon">
 </div>
 <h4 class="card-title">ClinicalTrials.gov</h4>
 <p class="card-text">Registry of clinical trial protocols.</p>
@@ -258,7 +258,7 @@ These platforms either give you access to existing data or provide [**metadata**
 ```{=html}
 <div class="card orc-card-tool p-3 bg-light-subtle h-100">
 <div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
-<img src="https://www.re3data.org/favicon.ico" class="img-fluid" alt="re3data icon">
+<img src="/assets/img/re3data-favicon.ico" class="img-fluid" alt="re3data icon">
 </div>
 <h4 class="card-title">re3data</h4>
 <p class="card-text">Registry of research data repositories.</p>
@@ -273,7 +273,7 @@ These platforms either give you access to existing data or provide [**metadata**
 ```{=html}
 <div class="card orc-card-tool p-3 bg-light-subtle h-100">
 <div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
-<img src="https://datacite.org/wp-content/uploads/2023/07/DataCite-Logo_Schwoop.svg" class="img-fluid" alt="DataCite icon">
+<img src="/assets/img/datacite-logo.svg" class="img-fluid" alt="DataCite icon">
 </div>
 <h4 class="card-title">DataCite Commons</h4>
 <p class="card-text">Discovery tool connecting works, people, and organizations.</p>
@@ -288,7 +288,7 @@ These platforms either give you access to existing data or provide [**metadata**
 ```{=html}
 <div class="card orc-card-tool p-3 bg-light-subtle h-100">
 <div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
-<img src="https://websitev3-p-eu.figstatic.com/assets-v3/97a584d494444650f01c8ba85b077c4f7938fbce/static/media/favicon-70.66d0d88a.png" class="img-fluid" alt="FigShare icon">
+<img src="/assets/img/figshare-icon.png" class="img-fluid" alt="FigShare icon">
 </div>
 <h4 class="card-title">Fig Share</h4>
 <p class="card-text">General-purpose repository for data, software, reports.</p>
@@ -302,7 +302,7 @@ These platforms either give you access to existing data or provide [**metadata**
 ```{=html}
 <div class="card orc-card-tool p-3 bg-light-subtle h-100">
 <div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Open_Science_Framework_log_%28and_Center_for_Open_Science_logo%29.svg/3840px-Open_Science_Framework_log_%28and_Center_for_Open_Science_logo%29.svg.png" class="img-fluid" alt="OSF icon">
+<img src="/assets/img/open-science-framework-and-open-science-center.png" class="img-fluid" alt="OSF icon">
 </div>
 <h4 class="card-title">Open Science Framework</h4>
 <p class="card-text">General-purpose repository for data, materials, reports.</p>
@@ -318,7 +318,7 @@ These platforms either give you access to existing data or provide [**metadata**
 ```{=html}
 <div class="card orc-card-tool p-3 bg-light-subtle h-100">
 <div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
-<img src="https://about.zenodo.org/static/img/icons/zenodo-icon-blue.svg" class="img-fluid" alt="Zenodo icon">
+<img src="/assets/img/zenodo-icon-blue.svg" class="img-fluid" alt="Zenodo icon">
 </div>
 <h4 class="card-title">Zenodo</h4>
 <p class="card-text">General-purpose repository for data, software, reports.</p>
@@ -425,7 +425,7 @@ Code publicly visible on GitHub without a license or equivalent text explicitly 
 ```{=html}
 <div class="card orc-card-tool p-3 bg-light-subtle h-100">
 <div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
-<img src="https://about.zenodo.org/static/img/icons/zenodo-icon-blue.svg" class="img-fluid" alt="Zenodo icon">
+<img src="/assets/img/zenodo-icon-blue.svg" class="img-fluid" alt="Zenodo icon">
 </div>
 <h4 class="card-title">Zenodo</h4>
 <p class="card-text">General-purpose repository for data, software, reports.</p>
