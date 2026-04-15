@@ -361,7 +361,7 @@ Code publicly visible on GitHub without a license or equivalent text explicitly 
       <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
     </div>
     <div class="orc-card-tool-icon p-2 rounded">
-      <img src="https://www.svgrepo.com/show/303548/git-icon-logo.svg" class="img-fluid" alt="Zotero logo">
+      <img src="/assets/img/git-icon-logo.svg" class="img-fluid" alt="Zotero logo">
     </div>
   </div>
   <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
@@ -440,7 +440,7 @@ Code publicly visible on GitHub without a license or equivalent text explicitly 
 ```{=html}
 <div class="card orc-card-tool p-3 bg-light-subtle h-100">
 <div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
-<img src="https://www.softwareheritage.org/wp-content/uploads/2015/08/swh-logo.png" class="img-fluid" alt="Software Heritage icon">
+<img src="/assets/img/software-heritage-logo.png" class="img-fluid" alt="Software Heritage icon">
 </div>
 <h4 class="card-title">Software Heritage</h4>
 <p class="card-text">Collects, preserves, and shares software in source code form.</p>
@@ -543,7 +543,7 @@ See [https://www.go-fair.org/fair-principles/](https://www.go-fair.org/fair-prin
 ```{=html}
 <div class="card orc-card-tool p-3 bg-light-subtle h-100">
 <div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
-<img src="https://cms-cdn.lmu.de/assets/img/favicon.ico" class="img-fluid" alt="LMU logo">
+<img src="/assets/img/lmu-favicon.ico" class="img-fluid" alt="LMU logo">
 </div>
 <h4 class="card-title">LMU Guidelines for Safeguarding Good Scientific Practice</h4>
 <p class="card-text">Implementation of the German Research Foundation's (DFG) Code of Conduct</p>
@@ -771,7 +771,7 @@ The specific questions vary by discipline, data type, and funder requirements. D
       <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
     </div>
     <div class="orc-card-tool-icon p-2 rounded">
-      <img src="https://rdmorganiser.github.io/img/logos/RDMO-logo.png" class="img-fluid" alt="RDMO logo">
+      <img src="/assets/img/rdmo-logo.png" class="img-fluid" alt="RDMO logo">
     </div>
   </div>
   <span class="badge rounded-5 bg-success-subtle text-success align-self-start">Supported at LMU</span>
@@ -789,7 +789,7 @@ The specific questions vary by discipline, data type, and funder requirements. D
 ```{=html}
 <div class="card orc-card-tool p-3 bg-light-subtle h-100">
 <div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
-<img src="https://riojournal.com/i/ico/rio.ico" class="img-fluid" alt="RIOjournal icon">
+<img src="/assets/img/riojournal-icon.png" class="img-fluid" alt="RIOjournal icon">
 </div>
 <h4 class="card-title">RIOjournal</h4>
 <p class="card-text"> Examples of DMPs by discipline. </p>
@@ -942,7 +942,7 @@ After completing the study, authors add results and discussion sections, clearly
 ```{=html}
 <div class="card orc-card-tool p-3 bg-light-subtle h-100">
 <div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Open_Science_Framework_log_%28and_Center_for_Open_Science_logo%29.svg/3840px-Open_Science_Framework_log_%28and_Center_for_Open_Science_logo%29.svg.png" alt="COS icon" class="img-fluid">
+<img src="/assets/img/open-science-framework-and-open-science-center.png" alt="COS icon" class="img-fluid">
 </div>
 <h4 class="card-title">Center for Open Science</h4>
 <p class="card-text">List of journals offering Registered Reports.</p>
@@ -956,7 +956,7 @@ After completing the study, authors add results and discussion sections, clearly
 ```{=html}
 <div class="card orc-card-tool p-3 bg-light-subtle h-100">
 <div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Open_Science_Framework_log_%28and_Center_for_Open_Science_logo%29.svg/3840px-Open_Science_Framework_log_%28and_Center_for_Open_Science_logo%29.svg.png" alt="OSF icon" class="img-fluid">
+<img src="/assets/img/open-science-framework-and-open-science-center.png" alt="OSF icon" class="img-fluid">
 </div>
 <h4 class="card-title">Open Science Framework</h4>
 <p class="card-text">
@@ -1011,7 +1011,7 @@ Generating an artificial dataset in R (see our [simulation tutorial](https://lmu
       <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
     </div>
     <div class="orc-card-tool-icon p-2 rounded">
-      <img src="https://www.r-project.org/logo/Rlogo.svg" class="img-fluid" alt="R logo">
+      <img src="/assets/img/Rlogo.svg" class="img-fluid" alt="R logo">
     </div>
   </div>
   <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
@@ -1099,7 +1099,7 @@ The **flawed version of post-hoc power** is called **“observed power”**: If 
       <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
     </div>
     <div class="orc-card-tool-icon p-2 rounded">
-      <img src="https://www.r-project.org/logo/Rlogo.svg" class="img-fluid" alt="R logo">
+      <img src="/assets/img/Rlogo.svg" class="img-fluid" alt="R logo">
     </div>
   </div>
   <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
