@@ -22,8 +22,8 @@ jobs:
           args: >-
             --root-dir "$(pwd)"
             --no-progress
-            --exclude-path './events/events/templates/event-template.html'
-            --exclude-path './people/people/templates/people-template.html'
+            --exclude-path '(^|.*/)events/events/templates/event-template\.html$'
+            --exclude-path '(^|.*/)people/people/templates/people-template\.html$'
             './**/*.md'
             './**/*.html'
             './**/*.rst'
