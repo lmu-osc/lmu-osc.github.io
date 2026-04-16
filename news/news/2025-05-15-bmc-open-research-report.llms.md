@@ -1,0 +1,23 @@
+# Report about open research at the Biomedical Center of LMU Munich published
+
+Evidence for an implementation gap and demand for training
+
+Reports
+
+The LMU Open Science Center has published a report on the awareness, adoption, and barriers to open research practices among researchers at the Biomedical Center of LMU Munich, revealing an implementation gap and a strong demand for training and support.
+
+Published
+
+May 15, 2025
+
+In order to find out about researchers’ current awareness, perceived barriers, and need for support related to open research practices and responsible research assessment, the LMU Open Science Center (OSC) conducted a survey among researchers at the Biomedical Center (BMC) of LMU Munich between December 2024 and January 2025.
+
+Findings show a high level of awareness of open research practices and strong favorable opinion about them, but a rather low level of adoption. To understand this implementation gap, we asked about downsides associated with the adoption of open research practices and about barriers such as lack of infrastructure, training, support, incentives, or policies. Downsides were infrequent and mitigatable, but barriers were numerous. A majority of respondents expressed a very high demand for training, especially guidance on reproducible workflow, and FAIR data and code sharing, and a need for support through expert consultations, and peer networks. Finally, there also was a misalignment between current assessment criteria (focusing on publication volume and the journal’s reputation) and indicators perceived as more meaningful by researchers, such as research quality, mentorship and teaching, and engagement with open research.
+
+To overcome structural and cultural barriers to the adoption of open research practices, the OSC provides regular training (e.g. annual summer school), close consultation to research groups (e.g. Switch to Open Program), and is currently developing a Train-the-Trainer program.
+
+We welcome BMC members and any other LMU members to collaborate with the OSC and take part in these programs to embed openness and reproducibility in their research practices.
+
+Read the whole research report here: <https://doi.org/10.5281/zenodo.15304213>
+
+Open data, material and code: <https://github.com/MalikaIhle/LMU_BMC_OS_survey>

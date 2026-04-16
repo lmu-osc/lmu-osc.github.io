@@ -1,0 +1,69 @@
+# External Partners
+
+![German Reproducibility Network](images/grn.png)
+
+##### German Reproducibility Network
+
+[ Website](https://reproducibilitynetwork.de/)
+
+The OSC is a member of the German Reproducibility Network (GRN), a multidisciplinary consortium that aims to increase transparency and trustworthiness of scientific research. The Network’s goals are to promote open research practices through training and community building, to conduct meta-research, and to work with stakeholders across the sector to ensure coordination of efforts at the national level.
+
+------------------------------------------------------------------------
+
+![Framework for Open and Reproducible Research Training](images/FORRT.webp)
+
+##### Framework for Open and Reproducible Research Training
+
+[ Website](https://forrt.org/)
+
+The OSC collaborates with FORRT, the Framework for Open and Reproducible Research Training on our Train-the-Trainer program. FORRT is an international grassroots initiative advancing research transparency, reproducibility, rigor, and ethics through pedagogical reform and meta-scientific research.
+
+------------------------------------------------------------------------
+
+![Berkeley Initiative for Transparency in the Social Sciences](images/bitss.png)
+
+##### Berkeley Initiative for Transparency in the Social Sciences
+
+[ Website](https://www.bitss.org/)
+
+The Berkeley Initiative for Transparency in the Social Sciences (BITSS) works to improve the credibility of science by advancing transparency, reproducibility, rigor, and ethics in research.
+
+------------------------------------------------------------------------
+
+![Max Planck Digital Library](images/mpdl-logo.png)
+
+##### Max Planck Digital Library
+
+[ Website](https://www.mpdl.mpg.de/)
+
+The Max Planck Digital Library (MPDL) is a lead provider of infrastructure for research articles, data, and software for Max Planck Society researchers and beyond. The OSC collaborated with the MPDL to provide the 2024's edition of our Open Science Summer School.
+
+------------------------------------------------------------------------
+
+![Berlin Institute of Health at Charité](images/quest-logo.png)
+
+##### Berlin Institute of Health at Charité
+
+[ Website](https://www.bihealth.org/en/translation/innovation-enabler/quest-center/mission-approaches/)
+
+The QUEST Center for Responsible Research (QUEST – Quality \| Ethics \| Open Science \| Translation) of the Berlin Institute of Health strives to increase the trustworthiness, usefulness, and ethical accountability of biomedical research. The OSC regularly collaborates with trainers and meta-researchers from the QUEST Center, from contributing to our reciprocal Open Science Summer Schools, to collaboratively writing articles, for example on research methodology training.
+
+------------------------------------------------------------------------
+
+![Center for Reproducible Science and Research Synthesis](images/crs.jpg)
+
+##### Center for Reproducible Science and Research Synthesis
+
+[ Website](https://www.crs.uzh.ch/en.html)
+
+The Center for Reproducible Science and Research Synthesis (CRS) works to advance scientific methods, practices, norms, and incentives that produce trustworthy and reproducible research at the University of Zürich. Sharing similar missions, the OSC exchanges with the CRS on various topics, from day-to-day activities to strategic vision.
+
+------------------------------------------------------------------------
+
+![Center for Open Science](images/cos_stack.png)
+
+##### Center for Open Science
+
+[ Website](https://www.cos.io/)
+
+The Center for Open Science (COS) based in the USA was founded in 2013 to start, scale, and sustain open research practices in order to democratize access to research, enhance accountability to research integrity, facilitate the self-corrective process of science, and improve research rigor and reproducibility. The OSC uses many of the infrastructures provided by COS to teach open research practices and many OSC members are COS ambassadors.

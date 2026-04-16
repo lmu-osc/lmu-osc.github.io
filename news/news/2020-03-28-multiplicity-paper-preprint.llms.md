@@ -1,0 +1,21 @@
+# Joint interdisciplinary work by OSC members now available as preprint from Meta-Arxiv
+
+‘The multiplicity of analysis strategies jeopardizes replicability: Lessons learned across disciplines’ by S. Hoffmann, F. Schönbrodt, R. Elsas, R. Wilson, U. Strasser and A. Boulesteix
+
+Publications
+
+Published
+
+March 28, 2020
+
+Available from Meta-Arxiv, preprint DOI: [10.31222/osf.io/afb9p](https://doi.org/10.31222/osf.io/afb9p)
+
+This work was conducted by a multidisciplinary team uniting the managing director and two scientific board members of the Open Science Center of the LMU Munich. This collaboration results in a diverse list of authors from psychology, epidemiology, finance, hydroclimatology and statistics.*  *
+
+### Abstract:
+
+For a given research question, there are usually a large variety of possible analysis strategies acceptable according to the scientific standards of the field, and there are concerns that this multiplicity of analysis strategies plays an important role in the non-replicability of research findings. Here, we define a general framework on common sources of uncertainty arising in computational analyses that lead to this multiplicity, and apply this framework within an overview of approaches proposed across disciplines to address the issue. Armed with this framework, and a set of recommendations derived therefrom, researchers will be able to recognize strategies applicable to their field and use them to generate findings more likely to be replicated in future studies, ultimately improving the credibility of the scientific process.
+
+### ![Mulitplicity-Paper](images/2020-03-28-multiplicity-paper-preprint-figure.jpg)
+
+Figure 2: Sources of uncertainty in explanatory, mechanistic predictive and agnostic predictive modelling.

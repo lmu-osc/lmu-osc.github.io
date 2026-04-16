@@ -1,0 +1,40 @@
+# Methodological Hypocrisy in Psychology
+
+#####  Date & Time
+
+11 May 2023  
+
+#####  Location
+
+Leopoldstraße 13, room 3322, Munich  
+
+#####  Format
+
+In-Person  
+
+#####  Language
+
+English  
+
+  
+
+We invite you to an in person guest lecture from J.P. de Ruiter (Tufts University, Department of Computer Science) on “Methodological Hypocrisy in Psychology“ - see abstract below. The talk takes the field of psychology as a starting point, but also makes more general points about statistical practices, NHST, and academic incentive structures that apply to many scientific fields.
+
+After the talk, the ReproducibiliTea Journal Club team will be hosting an open discussion with the presenter from 16:00 to 17:00. Participants will be able to ask follow-up questions to the lecturer and discuss own ideas in a less formal and more open round. There will be no additional presentation on the topic, so it would be best to attend the lecture before (see above).
+
+Both the lecture and the discussion will take place solely in person on this occasion.
+
+### Abstract
+
+It is plausible that the widespread use of Questionable (or worse) Research Practices has substantially contributed to the current replication crisis in psychology. But would we still have a replication crisis if everyone had always played by the rules?  
+We like to believe that we are aiming to be objective and self-critical, working towards a reliable body of knowledge about the mind/brain. Our methodological Superego is still guided by Popperian Falsificationism and Feynmanian “bending over backwards”. However, our methodological Id wants to publish as many influential papers as we can, with as few resources as possible. In this Freudian model, it is the job of the methodological Ego to negotiate between these two conflicting desires.  
+Our current system of methodological conventions, rules, and practices, essentially a fusion of inverse Falsificationism and NHST, is very effective at keeping both Superego and Id happy: it gives the impression of being objective, self-critical, and scientific, while at the same time making it very easy, too easy, to reach evidence standards that allow us to publish our claims. This means that even if we all “played by the rules”, we would still not produce reliable knowledge.  
+It is very difficult to change this situation, because the current incentive structures in scientific psychology strongly reward the publication of attractive findings, while there are hardly (if any) negative consequences for publishing false claims. Nevertheless, I will optimistically suggest a number of potential improvements.
+
+#### Presenters
+
+- Prof. Dr. J.P. de Ruiter
+
+#### Questions?
+
+If you have any questions, please contact [Malika Ihle](mailto:malika.ihle@lmu.de).
