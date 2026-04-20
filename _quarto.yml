@@ -176,7 +176,15 @@ website:
             - text: "Members"
               href: people/members.qmd 
             - text: "Fellows"
-              href: people/fellows.qmd 
+              href: people/fellows.qmd
+
+    - id: news
+      title: "News"
+      contents:
+        - section: "News"
+          href: news/index.qmd
+          contents:
+            - auto: "news/news/*.qmd" 
 
 
 format:
