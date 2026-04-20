@@ -17,6 +17,6 @@ jobs:
         with:
           max-path-length: "65"
           max-depth: "2"
-          file-types: "html,md,qmd,css,scss,rmd,pdf,png,jpg,svg,yml"
+          file-types: "html,md,qmd,css,scss,rmd,pdf,yml"
           ignore-file: ".filenameignore"
           dotfile-mode: "strip-leading-dot"
