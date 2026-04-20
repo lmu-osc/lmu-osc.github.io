@@ -52,14 +52,12 @@ jobs:
             ${{ runner.os }}-quarto-freeze-github-
 
       - name: Render (GitHub profile)
-        run: quarto render --profile github
-
-      - name: Deploy to gh-pages
-        uses: peaceiris/actions-gh-pages@v4
+        uses: quarto-dev/quarto-actions/publish@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # this secret is always available for github actions
+          QUARTO_PROFILE: github
         with:
-          publish_dir: ./_site
-          publish_branch: gh-pages
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          target: gh-pages
 
   build-production:
     runs-on: ubuntu-latest
@@ -98,12 +96,10 @@ jobs:
             ${{ runner.os }}-quarto-freeze-production-
 
       - name: Render (Production profile)
-        run: quarto render --profile production
-
-      - name: Deploy to prod-pages
-        uses: peaceiris/actions-gh-pages@v4
+        uses: quarto-dev/quarto-actions/publish@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # this secret is always available for github actions
+          QUARTO_PROFILE: production
         with:
-          publish_dir: ./_site
-          publish_branch: prod-pages
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          target: prod-pages
          
