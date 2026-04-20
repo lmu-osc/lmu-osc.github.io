@@ -96,10 +96,12 @@ jobs:
             ${{ runner.os }}-quarto-freeze-production-
 
       - name: Render (Production profile)
-        uses: quarto-dev/quarto-actions/publish@v2
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # this secret is always available for github actions
-          QUARTO_PROFILE: production
+        run: quarto render --profile production
+
+      - name: Deploy to prod-pages
+        uses: peaceiris/actions-gh-pages@v4
         with:
-          target: prod-pages
+          publish_dir: ./_site
+          publish_branch: prod-pages
+          github_token: ${{ secrets.GITHUB_TOKEN }}
          
