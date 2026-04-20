@@ -1,0 +1,322 @@
+/* Base styles and reset */
+:root {
+  --primary-color: #00883A;
+  --primary-light: rgba(43, 134, 75, 0.1);
+  --text-dark: #333333;
+  --text-light: #ffffff;
+  --card-bg: #ffffff;
+  --card-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  --transition: all 0.3s ease;
+}
+
+
+.partner-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+}
+
+.intro-text {
+  font-size: 1.2rem;
+  color: #4a5568;
+  line-height: 1.85;
+  margin-bottom: 3rem;
+  text-align: justify;
+}
+
+/* Partner cards - two cards side by side */
+.partners-grid {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.partner-card {
+  flex: 1;
+  background-color: var(--card-bg);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: var(--card-shadow);
+  transition: var(--transition);
+}
+
+.partner-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+}
+
+.card-header {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  color: var(--text-light);
+}
+
+.card-header h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.card-content {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-content p{
+  flex-grow: 1; 
+  color: #4a5568;
+}
+/* Local Initiatives */
+.local-initiatives {
+  margin-top: 3rem;
+}
+
+.local-initiatives h2 {
+  color: var(--primary-color);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.initiatives-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.initiative-card {
+  background-color: var(--card-bg);
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: var(--card-shadow);
+  border-top: 4px solid var(--primary-color);
+}
+
+/* Image container for initiative cards */
+.initiative-img {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 1rem;
+}
+
+.initiative-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.initiative-card h3 {
+  color: var(--primary-color);
+  margin-top: 0;
+  font-size: 1.3rem;
+}
+
+/* Buttons */
+
+.initiative-button{
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 500;
+  margin-top: auto;
+  transition: var(--transition);
+  border: 2px solid var(--primary-color);
+}
+
+.partner-button:hover, .initiative-button:hover,
+.member-info-button:hover {
+  background-color: transparent;
+  color: var(--primary-color);
+  box-shadow: 0 4px 8px rgba(43, 134, 75, 0.2);
+}
+.partner-button{
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 500;
+  margin-top: auto;
+  transition: var(--transition);
+  border: 2px solid var(--primary-color);
+  width:fit-content;
+}
+.initiative-button {
+  padding: 0.6rem 1.2rem;
+  font-size: 0.9rem;
+}
+
+.member-info-button{
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 500;
+  margin-top: auto;
+  transition: var(--transition);
+  border: 2px solid var(--primary-color);
+  display: block;          
+  width: fit-content;     
+  margin: 1rem auto 0;  
+}
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .partners-grid {
+    flex-direction: column;
+  }
+  
+  .initiatives-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .card-header h2, .local-initiatives h2, .ext-partner h2 {
+    font-size: 1.3rem;
+  }
+}
+
+/* Find Help Section */
+.find-help-section {
+  margin-top: 3rem;
+  padding: 1.5rem;
+  background-color: var(--primary-light);
+  border-radius: 8px;
+  text-align: center;
+  border-left: 3px solid var(--primary-color);
+}
+
+.find-help-section p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.help-button {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 500;
+  border: 2px solid var(--primary-color);
+  transition: var(--transition);
+  font-size: 0.9rem;
+}
+
+.help-button:hover {
+  background-color: transparent;
+  color: var(--primary-color);
+  box-shadow: 0 4px 8px rgba(43, 134, 75, 0.2);
+}
+
+.becoming-partner-info h2{
+  color: var(--primary-color);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  border:none;
+}
+
+/* style for institutional members */
+
+.member-grid-item {
+  transition: transform 0.13s, box-shadow 0.13s;
+  box-sizing: border-box;
+  overflow: hidden;
+  min-height:350px;
+  background:#d2e9d61a;
+}
+
+
+.member-grid-item:hover {
+  transform: translateY(-5px) scale(1.025);
+  box-shadow: 0 8px 32px rgba(43,134,75,0.15);
+  border-color: #00883A !important;
+}
+
+.member-grid-item .card-body {
+  position: relative;
+  padding-bottom: 60px;
+}
+
+.website-button {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.member-grid-image {
+  max-width: 110px;
+  min-height: 80px;
+  max-height: 110px;
+  object-fit: contain;
+  border-radius: 0;
+  margin: 0.5rem auto 0.8rem auto;
+  border: none;
+  box-shadow: 0 1px 6px rgba(43,134,75,0.12);
+  flex-shrink: 0;
+}
+
+.social-link {     
+  color: #00883A !important;                 
+  text-decoration: none;                          
+  cursor: pointer;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.social-link:hover {
+  background-color: #BEE3F8 !important;
+  color: white !important;
+  border-color: #00883A !important;
+  transform: translateY(-2px);
+}
+
+.contact-link {
+  color: #00883A !important;
+  text-decoration: underline;
+}
+
+
+.description-text {
+  line-height: 1.85;
+  overflow: hidden;
+  text-align: justify;
+}
+
+.description-text a {
+  color: #00883A !important;
+}
+
+.primary-social-link {                     
+  background: #00883A !important; 
+  border: #00883A !important; 
+  color: white !important;               
+  text-decoration: none;                          
+  cursor: pointer;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.primary-social-link:hover {
+  background-color: #017132 !important; 
+  color: white !important;
+  border-color: #017132  !important;
+  transform: translateY(-2px);
+}
+
+.inst-member-container a.btn.btn-primary{
+  background-color: #00883A;
+  border: 2px solid transparent; /* prevents shifting */
+  color: white;
+  transition: background-color 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+}
+
+.inst-member-container a.btn.btn-primary:hover,
+.inst-member-container a.btn.btn-primary:focus{
+  background-color: white;
+  color: #00883A;
+  border-color: #00883A;
+}

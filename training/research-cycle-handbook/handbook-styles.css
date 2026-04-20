@@ -1,0 +1,479 @@
+/*
+  Open Research Cycle - Stylesheet
+  Uses `orc-` prefix for namespacing.
+*/
+
+/* ========================================
+   1. CSS VARIABLES
+   ======================================== */
+
+:root {
+  --orc-green: var(--osc-accent);
+  --orc-green-dark: #006426;
+  --orc-green-darker: #004d1d;
+  --orc-green-light: #f0f9f6;
+  --orc-gray-100: #f1f5f9;
+  --orc-gray-200: #e2e8f0;
+  --orc-gray-300: var(--osc-divider);
+  --orc-gray-400: #718096;
+  --orc-gray-500: var(--osc-muted);
+  --orc-gray-600: #4a5568;
+  --orc-gray-700: var(--osc-text);
+  --orc-shadow-sm: 0 1px 3px rgba(0,0,0,.08);
+  --orc-shadow-md: 0 4px 12px rgba(0,0,0,.1);
+  --orc-transition: all .2s ease;
+  --orc-radius: 10px;
+  --orc-radius-lg: 12px;
+  --orc-radius-md: 8px;
+  --orc-radius-full: 9999px;
+}
+
+/* ========================================
+   2. BASE & LAYOUT
+   ======================================== */
+
+h2 i, h3 i{ color: var(--orc-green); margin-right: .5rem; }
+
+* a { color: var(--orc-green); }
+
+.mark,.quarto-xref { background: white; color:var(--orc-gray-400); font-weight:600; font-style: italic; text-decoration: none;}
+
+#about-orc-project {
+  padding: 1.25rem 1.75rem;
+}
+
+#about-orc-project summary {
+  cursor: pointer;
+  list-style: none;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#about-orc-project[open] summary{
+  border-bottom: 1px solid var(--orc-gray-300);
+  margin-bottom: 0.8rem;
+  padding-bottom: 0.5rem;
+}
+
+#about-orc-project summary::-webkit-details-marker {
+   display: none; 
+}
+#about-orc-project summary::after {
+  content: '+ '; 
+  color:var(--orc-green);
+  font-weight: 600;
+  font-size: 1.25rem;
+  right:0;
+  position: absolute;
+  transition: transform .2s ease;
+}
+#about-orc-project[open] summary::after{
+   content: '- '; 
+}
+
+#about-orc-project .btn.btn-primary {
+  color: white;
+  background: var(--orc-green);
+  border-color: var(--orc-green);
+  transition: all .2s ease;
+}
+
+#about-orc-project .btn.btn-primary:hover,
+#about-orc-project .btn.btn-primary:focus,
+#about-orc-project .btn.btn-primary:active {    
+  color: white !important;
+  background: var(--orc-green-dark) !important;
+  border-color: var(--orc-green-dark) !important;
+}
+
+.orc-grid-tools {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: .75rem;
+  margin: .75rem 0;
+}
+
+.orc-grid-tools > * {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* Two-column layout */
+.orc-grid-2col {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.orc-two-column {
+  display: grid;
+  grid-template-rows: auto auto;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+.orc-column{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+  align-items: stretch;
+}
+.orc-column > h4:first-child { color: var(--orc-gray-600); }
+.orc-column > h4:first-child i { color: var(--orc-green); }
+
+/* ========================================
+   3. CARDS
+   ======================================== */
+
+.orc-card-tool{
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+  border:none;
+  box-shadow: var(--orc-shadow-sm);
+}
+.orc-card-tool-icon {
+  background: var(--orc-green-light);
+}
+
+.orc-card-tool-icon img { width: 1.5rem; height: 1.5rem; }
+.orc-card-tool h4 { font-size: 1.125rem; font-weight: 600; color: var(--orc-gray-700); line-height: 1.3; }
+.orc-card-tool p { font-size: 1rem; color: var(--orc-gray-400);line-height: 1.5; }
+
+
+.orc-grid-tools a,
+.orc-column a {
+  text-decoration: none;
+  color: inherit;
+  display: block;              
+}
+.orc-column a {text-decoration: none; color: inherit;}
+.orc-card-tool:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+/* ========================================
+   4. DETAILS PANELS
+   ======================================== */
+
+.orc-details-panel {
+  margin: 1.5rem 0;
+  background: #fff;
+  border: 1px solid var(--orc-gray-300);
+  border-radius: var(--orc-radius);
+  overflow: hidden;
+  transition: var(--orc-transition);
+}
+
+.orc-details-panel:hover {
+  border-color: var(--orc-gray-400);
+  box-shadow: var(--orc-shadow-md);
+}
+
+.orc-details-panel[open] { box-shadow: var(--orc-shadow-md); }
+
+.orc-details-panel summary{
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 1.25rem 1.5rem;
+  background: #fff;
+  color: var(--orc-gray-700);
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.4;
+  transition: color .2s;
+  user-select: none;
+}
+
+.orc-details-panel summary:hover { color: var(--orc-green); }
+.orc-details-panel summary::-webkit-details-marker { display: none; }
+
+.orc-details-panel summary i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  background: var(--orc-green-light);
+  color: var(--orc-green);
+  font-size: 1.5rem;
+  border-radius: var(--orc-radius);
+  flex-shrink: 0;
+}
+
+.orc-details-panel summary i + i { display: none; }
+
+.orc-details-panel summary::after {
+  content: '';
+  margin-left: auto;
+  width: 2.25rem;
+  height: 2.25rem;
+  background: var(--orc-gray-100) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23646464' viewBox='0 0 16 16'%3E%3Cpath d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E") no-repeat center / 1rem;
+  border-radius: 50%;
+  transition: all .25s;
+  flex-shrink: 0;
+}
+
+.orc-details-panel summary:hover::after { background-color: var(--orc-gray-200); }
+.orc-details-panel[open] > summary { padding-bottom: 1rem; border-bottom: 1px solid var(--orc-gray-100); }
+.orc-details-panel[open] summary::after {
+  transform: rotate(180deg);
+  background: var(--orc-green-light) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23006426' viewBox='0 0 16 16'%3E%3Cpath d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E") no-repeat center / 1rem;
+}
+
+.orc-details-panel > :not(summary) { padding: .75rem 1.5rem 0.5rem; }
+.orc-details-panel summary h3,
+.header-section-number{ margin-top: 0; color:inherit; font: inherit;}
+.orc-details-panel p { margin: 0; }
+.orc-details-panel > .panel-tabset { padding-top: 0; }
+
+
+
+/* Gradient highlight box - checklist section*/
+.orc-gradient-box {
+  background: linear-gradient(135deg, rgba(0, 136, 58, 0.08) 0%, rgba(0, 100, 38, 0.08) 100%);
+  padding: 2rem;
+  border-radius: var(--orc-radius-md);
+  border-left: 5px solid var(--orc-green);
+  margin: 3.5rem 0;
+  line-height: 1.7rem;
+  color: var(--orc-gray-600);
+}
+
+
+.orc-gradient-box h2 {
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.4;
+}
+
+.orc-gradient-box-desc{
+  background: linear-gradient(135deg, rgb(244 247 244) 0%, rgb(129 201 156 / 8%) 100%);
+  padding: 1rem;
+  border-radius: var(--orc-radius-md);
+  border-left: 5px solid #aed0bbad;
+  margin: 2rem 0;
+}
+
+/* ========================================
+   5. CALLOUTS (Quarto)
+   ======================================== */
+
+div.callout .callout-title { font-size: 1.125rem !important; font-weight: 700 !important; }
+div.callout .callout-body, div.callout .callout-body :is(p, ul, li) { font-size: 1rem !important; line-height: 1.6 !important; }
+
+div.callout-note.callout-style-simple {
+  border-left: 5px solid var(--orc-green) !important;
+  background: var(--orc-green-light) !important;
+  border-radius: .5rem !important;
+}
+
+div.callout-note.callout-style-simple .callout-title { color: var(--orc-green) !important; }
+div.callout-note.callout-style-simple .callout-icon { width: 2rem; height: 2rem; }
+div.callout-note.callout-style-simple .callout-icon::before {
+  content: '' !important;
+  display: block;
+  width: 2rem;
+  height: 2rem;
+  background: url("../assets/img/lmu_osc_logo.jpg") no-repeat center / contain;
+  border-radius: 4px;
+}
+div.callout-note.callout-style-simple .callout-icon i,
+div.callout-note.callout-style-simple .callout-icon .bi { display: none !important; }
+details .callout { margin: .75rem 0; }
+
+/* ========================================
+   6. PANEL TABSETS (Quarto)
+   ======================================== */
+
+.panel-tabset .nav-tabs { border-bottom: 2px solid var(--orc-gray-200); }
+
+.panel-tabset .nav-tabs .nav-link {
+  color: var(--orc-gray-600);
+  border: none;
+  border-bottom: 3px solid transparent;
+  padding: .75rem 1.25rem;
+  font-weight: 500;
+  transition: var(--orc-transition);
+  margin-bottom: -2px;
+}
+
+.panel-tabset .nav-tabs .nav-link:hover { color: var(--orc-green); border-bottom-color: var(--orc-green-light); background: transparent; }
+.panel-tabset .nav-tabs .nav-link.active { color: var(--orc-green); border-bottom-color: var(--orc-green); background: transparent; font-weight: 600; }
+.panel-tabset .tab-content { padding: 1.25rem 0; margin-top: .5rem; border: none; }
+.panel-tabset .tab-pane { border: none; }
+
+/* ========================================
+   7. PHASE MENU & BUTTONS
+   ======================================== */
+
+.cycle-container { text-align: center; margin: 2rem auto; max-width: 600px; }
+.cycle-container svg { max-width: 100%; height: auto; }
+.cycle-container em { display: block; margin-top: 1rem; font-size: 1rem; color: var(--orc-gray-500); }
+
+/*.phase-menu-horizontal {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin: 2rem auto;
+  max-width: 900px;
+}
+
+.phase-btn-h {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.25rem .75rem;
+  background: var(--osc-bg);
+  border: 2px solid var(--orc-gray-200);
+  border-radius: var(--orc-radius-lg);
+  color: var(--orc-gray-700);
+  text-decoration: none;
+  transition: all .3s cubic-bezier(.4,0,.2,1);
+  cursor: pointer;
+  font-weight: 600;
+  box-shadow: var(--orc-shadow-sm);
+  width: 180px;
+  height: 110px;
+  text-align: center;
+}
+
+.phase-btn-h:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--orc-shadow-md);
+  border-color: var(--orc-green);
+  background: var(--orc-green-light);
+}
+
+.phase-btn-h:focus { outline: none; box-shadow: 0 0 0 3px rgba(0,136,58,.3); }
+.phase-btn-h i { font-size: 1.75rem; margin-bottom: .5rem; color: var(--orc-green); }
+.phase-btn-h span { line-height: 1.3; }*/
+
+/* ========================================
+   8. SVG DIAGRAM
+   ======================================== */
+
+svg a { text-decoration: none; cursor: pointer; }
+
+.phase-group {
+  cursor: pointer;
+  transition: all .4s cubic-bezier(.25,.1,.25,1);
+  transform-origin: 1645px 477px;
+}
+
+.phase-group:hover { filter: brightness(1.1) drop-shadow(0 0 8px rgba(0,136,58,.5)); transform: scale(1.02); }
+.phase-group:hover path { stroke: white; stroke-width: 2px; stroke-opacity: .7; }
+svg:has(.phase-group:hover) .phase-group:not(:hover) { opacity: .6; filter: brightness(.95); }
+.phase-group:active { transform: scale(.98); }
+.phase-group:focus { outline: none; filter: drop-shadow(0 0 8px rgba(0,136,58,.6)); }
+svg :is(text, tspan) { font-family: inherit !important; font-weight: bold; pointer-events: none; }
+
+/* ========================================
+   9. BOOTSTRAP MODALS
+   ======================================== */
+/* Define heading colors for each modal to match corresponding svg quadrants */
+#modalPhase1 { --phase-color: #0066ff; --phase-color-hover: #045bdc; }   
+#modalPhase2 { --phase-color: #cc0066; --phase-color-hover: #b9025d; }   
+#modalPhase3 { --phase-color: #ffc000; --phase-color-hover: #dca603; } 
+#modalPhase4 { --phase-color: #00c057; --phase-color-hover: #01a74c;}  
+
+[id^="modalPhase"] .modal-header { background: var(--phase-color); color: white; border-bottom: none; }
+[id^="modalPhase"] .modal-title { font-weight: 700;color:white; }
+[id^="modalPhase"] .btn-close { filter: invert(1) grayscale(100%) brightness(200%); opacity: .8; }
+[id^="modalPhase"] .btn-close:hover { opacity: 1; }
+[id^="modalPhase"] .modal-body { padding: 2rem; font-size: 1.125rem; line-height: 1.6; color: var(--orc-gray-600); text-align: left;}
+[id^="modalPhase"] .modal-footer { border-top: 1px solid var(--orc-gray-200); padding: 1rem 2rem; }
+[id^="modalPhase"] .modal-footer .btn-primary { background: var(--phase-color); border-color: var(--phase-color); padding: .5rem 1.5rem; font-weight: 600; }
+[id^="modalPhase"] .modal-footer .btn-primary:hover { background: var(--phase-color-hover); border-color: var(--phase-color-hover); }
+
+/* ========================================
+   10. PHASE HERO
+   ======================================== */
+
+.orc-hero-cycle[class*="phase-"] [id^="phase-"] { opacity: .20; }
+.orc-hero-cycle[class*="phase-"] [id^="path1"] { fill-opacity: .20; }
+.orc-hero-cycle.phase-1 #phase-1,
+.orc-hero-cycle.phase-2 #phase-2,
+.orc-hero-cycle.phase-3 #phase-3,
+.orc-hero-cycle.phase-4 #phase-4 { opacity: 1; }
+
+.orc-hero-cycle svg {   width: 100%; max-width: 230px;height: auto;}
+.orc-phase-hero .orc-hero-pills span {
+  font-size: 0.98rem;
+  font-weight: 500;
+}
+/* Phase-specific color styles */
+
+.orc-phase-hero.phase-1{ background: #eef2fb;}
+.orc-hero-pills.phase-1, .orc-hero-checkpoint.phase-1 { background:#0066ff;border:1px solid #004ecc;}
+.orc-gradient-box.plan-design-checklist { background:#eef2fb; border-left-color:#0066ff;}
+.orc-gradient-box.plan-design-checklist h2, .orc-gradient-box.plan-design-checklist .checklist-icon{color:#004ecc;}
+.orc-checklist-download.phase-1 .btn.btn-outline-secondary.btn-sm{border-color: #004ecc; color: #004ecc;}
+.orc-checklist-download.phase-1 .btn.btn-outline-secondary.btn-sm:hover{
+  border-color: #0066ff!important;
+  color: white!important;
+  background: #0066ff !important;
+}
+
+.orc-phase-hero.phase-2 { background: #fff5f9;}
+.orc-hero-pills.phase-2, .orc-hero-checkpoint.phase-2 { background: #cc0066; border:1px solid #a8004f;}
+.orc-gradient-box.collect-manage-checklist { background: #fff5f9; border-left-color:#cc0066;}
+.orc-gradient-box.collect-manage-checklist h2, .orc-gradient-box.collect-manage-checklist .checklist-icon{color:#a8004f;}
+.orc-checklist-download.phase-2 .btn.btn-outline-secondary.btn-sm{border-color: #a8004f; color:#a8004f;}
+.orc-checklist-download.phase-2 .btn.btn-outline-secondary.btn-sm:hover{
+  border-color: #cc0066 !important;
+  color: white!important;
+  background:#cc0066!important;
+}
+
+.orc-phase-hero.phase-3 { background:#fffbee;}
+.orc-hero-pills.phase-3, .orc-hero-checkpoint.phase-3 { background: #ffc000; border:1px solid #e6a800;color:#3d2000;}
+.orc-gradient-box.analyze-collaborate-checklist { background: #fffbee; border-left-color: #ffc000;}
+.orc-gradient-box.analyze-collaborate-checklist h2, .orc-gradient-box.analyze-collaborate-checklist .checklist-icon{color:#3d2000;}
+.orc-checklist-download.phase-3 .btn.btn-outline-secondary.btn-sm{border-color:#e6a800; color:#e6a800;}
+.orc-checklist-download.phase-3 .btn.btn-outline-secondary.btn-sm:hover{
+  border-color: #ffc000 !important;
+  color: white!important;
+  background: #ffc000!important;
+}
+
+.orc-phase-hero.phase-4 { background:#edfff5;}
+.orc-hero-pills.phase-4, .orc-hero-checkpoint.phase-4 { background: #00c057; border:1px solid #00a048;color:#002a18;}
+.orc-gradient-box.preserve-share-checklist { background: #edfff5; border-left-color: #00c057;}
+.orc-gradient-box.preserve-share-checklist h2, .orc-gradient-box.preserve-share-checklist .checklist-icon{color: #002a18;}
+.orc-checklist-download.phase-4 .btn.btn-outline-secondary.btn-sm{border-color:#00a048; color:#00a048;}
+.orc-checklist-download.phase-4 .btn.btn-outline-secondary.btn-sm:hover{
+  border-color:#00c057 !important;
+  color: white!important;
+  background: #00c057!important;
+}
+
+
+/* ========================================
+   11. RESPONSIVE
+   ======================================== */
+
+@media (min-width: 1200px) {
+  .orc-grid-tools { grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); }
+}
+
+
+@media (max-width: 600px) {
+  .orc-two-column { grid-template-columns: 1fr; }
+  .phase-menu-horizontal { flex-direction: column; align-items: center; }
+  .phase-btn-h { width: 100%; max-width: 300px; flex-direction: row; justify-content: flex-start; padding: 1rem 1.5rem; height: auto; }
+  .phase-btn-h i { margin-bottom: 0; margin-right: 1rem; font-size: 1.5rem; }
+}
+

@@ -1,0 +1,47 @@
+# Registered Reports and Peer Community in Registered Report are the Future of Science: Sharing Our Experience from over 20 Submissions with a hands-on demonstration of a Replication Registered Report
+
+#####  Date & Time
+
+07 Jun 2023  
+
+#####  Location
+
+Hybrid (Room 3322, Leopoldstraße 13 80802 München and via Zoom)  
+
+#####  Format
+
+Hybrid  
+
+#####  Language
+
+English  
+
+[ Materials](https://osf.io/6vhsw/)
+
+  
+
+The LMU Open Science Center is pleased to welcome Dr Gilad Feldman (Department of Psychology, University of Hong Kong) to offer a workshop for scientists of all career levels (from MSc) from any confirmatory quantitative research, on the topic of Registered Report.
+
+Typically, there is more than one right way to evaluate empirical data. One way to deal with this methodological flexibility are sensitivity analyses. In this short workshop, we will discuss when sensitivity analyses can be useful, what they can look like in practice, and how they can be embedded in scientific publications.
+
+Registered Reports ([https://www.cos.io/initiatives/registered-reports](https://www.cos.io/initiatives/registered-reports)) are a publication process now adopted by over 300 journals in psychological science and beyond, in which Stage 1 journal peer review occurs on a pre-registration plan prior to any data collection. Once the pre¬registration passes peer review and is approved, the journal grants authors an in-principle acceptance guaranteeing the publication of the article provided that data collection and analysis follows and intended plan. This emphasizes design, methods, and rigor, addressing issues of reviewers’ and publication bias with publication of findings regardless of data collection outcomes, with the Stage 2 peer review focused solely on ensuring adherence to the Stage 1 plan (or documenting deviations).
+
+‎“Peer Community in Registered Report”‎ (PCI-RR; [https://rr.peercommunityin.org/](https://rr.peercommunityin.org/)) is a new initiative launched in 2021 that builds on Registered Reports and is aimed at improving further on Registered Reports. It provides community open identified peer-review on posted Registered Report Stage 1 preprints, led by open-science trained recommenders (editors), with in-principle acceptance from the community endorsed for publication by a variety of open-science supportive journals. This initiative also includes an option for a “scheduled review” path which allows timely community expert open-science supportive peer review within two weeks, short enough to fit into an academic year thesis schedule. PCIRR is nothing short of a revolution in science.
+
+With guided thesis students and an early-career researcher team building on work by undergraduate students in my courses, in the last two years we submitted over 20 PCIRR manuscripts, with some already published, and most already granted an in-principle acceptance. Overall, it has been a very positive and rewarding experience for the students and the team. This is part of a large-scale replications project of over 100 classic studies in judgment and decision-making and social psychology. Information on this project and how to join us can be found on: [https://mgto.org/core-team/](https://mgto.org/core-team/)
+
+In this workshop I will share my experience with Registered Reports, PCIRR, and working on Registered Reports with students and early-career researchers. I will go over relevant templates and guides from our many open collaborative resources ([https://mgto.org/resources/](https://mgto.org/resources/)), going over best practices and examples of Registered Reports. Finally, and most importantly, we’ll aim to write a simple Replication Registered Report together, hands-on, to demonstrate the process – step by step.
+
+**Participants**: The targeted audience are scientists of all career levels (from MSc) from any confirmatory quantitative research
+
+**Requirement**: Participants should bring their own laptop.
+
+**About the Instructor**: Dr. Gilad Feldman- Department of Psychology, University of Hong Kong
+
+#### Instructors
+
+- Dr. Gilad Feldman
+
+#### Questions?
+
+If you have any questions, please contact [Malika Ihle](mailto:malika.ihle@lmu.de).

@@ -1,0 +1,1904 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.37">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>LMU Open Science Center</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./assets/img/lmu_osc_logo.jpg" rel="icon" type="image/jpeg">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-d3c8f8e0bda6c8a9badbc2c7644924e9.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script>
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-news-carousel .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-project','listing-profiles','listing-website','listing-format','listing-engines','listing-language','listing-execute','listing-page-navigation','listing-sidebar','listing-title','listing-date','listing-subtitle','listing-categories','listing-path','listing-outputHref','listing-date-modified','listing-author','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-word-count',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
+      page: 25,
+    pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
+      searchColumns: ["listing-project","listing-profiles","listing-website","listing-format","listing-engines","listing-language","listing-execute","listing-page-navigation","listing-sidebar","listing-title","listing-date","listing-subtitle","listing-categories","listing-path","listing-outputHref","listing-date-modified","listing-author","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-news-carousel'] = new List('listing-news-carousel', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-events-carousel .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-project','listing-profiles','listing-website','listing-format','listing-engines','listing-language','listing-execute','listing-page-layout','listing-title','listing-categories','listing-event','listing-links','listing-event_description','listing-instructors','listing-helpers','listing-contact','listing-organizers','listing-host','listing-template','listing-filters','listing-path','listing-outputHref','listing-author','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-word-count','listing-presenters','listing-date','listing-date-modified',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] }],
+      page: 25,
+    pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
+      searchColumns: ["listing-project","listing-profiles","listing-website","listing-format","listing-engines","listing-language","listing-execute","listing-page-layout","listing-title","listing-categories","listing-event","listing-links","listing-event_description","listing-instructors","listing-helpers","listing-contact","listing-organizers","listing-host","listing-template","listing-filters","listing-path","listing-outputHref","listing-author","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count","listing-presenters","listing-date","listing-date-modified"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-events-carousel'] = new List('listing-events-carousel', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-testimonial-carousel .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-name','listing-quote',{ data: ['index'] },{ data: ['categories'] }],
+      
+      searchColumns: ["listing-name","listing-quote"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-testimonial-carousel'] = new List('listing-testimonial-carousel', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+<style>
+
+      .quarto-title-block .quarto-title-banner {
+        background-image: url(assets/img/osc_image_assets/Banner1_customized_offset_15_up.jpg);
+background-size: cover;
+      }
+</style>
+<!-- Matomo: OSC primary + LMU secondary -->
+<script>
+  var _paq = window._paq = window._paq || [];
+
+  // Primary tracker (OSC instance)
+  _paq.push(['setTrackerUrl', '//www.analytics.osc.lmu.de/matomo.php']);
+  _paq.push(['setSiteId', '3']);
+
+  // Secondary tracker (LMU instance)
+  _paq.push(['addTracker', '//web-analytics.uni-muenchen.de/matomo.php', '41']);
+
+  // Preserve current privacy behavior for both trackers
+  _paq.push(['disableCookies']);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+
+  (function() {
+    var u = '//www.analytics.osc.lmu.de/';
+    var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+    g.async = true;
+    g.src = u + 'matomo.js';
+    s.parentNode.insertBefore(g, s);
+  })();
+</script>
+<!-- End Matomo Code -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="assets/javascript/impact_counter.js" defer=""></script>
+<style>
+/* =============================================
+   banner overlay
+   ============================================= */
+.quarto-title-block .quarto-title-banner {
+  background-position-y: center;
+  height: 400px;
+  position: relative;
+  margin-bottom: 0;
+
+}
+.quarto-title-block .quarto-title-banner::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(0,65,28,0.08) 0%,
+    rgba(0,136,59,0.03) 60%,
+    rgba(0,0,0,0.10) 100%
+  );
+  pointer-events: none;
+}
+
+/* =============================================
+   shared style component
+   ============================================= */
+    .card {
+      background-color: #fcfcfc !important;
+    }
+    .osc-section {
+      padding: 2rem 2rem 0;
+    }
+
+    .osc-section + .osc-section {
+      margin-top: 1rem;
+    }
+
+    .osc-section h1 {
+      font-size: clamp(1.75rem, 4vw, 2.25rem);
+      font-weight: 700;
+      line-height: 1.2;
+    }
+    .osc-section h2,
+    .explore-section h2 {
+      font-size: clamp(1.5rem, 3vw, 1.75rem);
+      font-weight: 700;
+      color: #00883A;
+      margin-bottom: 0.5rem;
+      border-bottom:none;
+    }
+    .section-title {
+      font-size: clamp(1.4rem, 2.5vw, 1.6rem);
+      font-weight: 500;
+      color: #333;
+      line-height: 1.5;
+    }
+    .desc.fs-5{
+      font-size: 1.125rem !important;
+      font-weight: 500;
+      color: #666;
+      line-height: 1.7;
+      letter-spacing: 0.01em;
+
+    }
+    .explore-card .card-title,
+    .carousel-card .card-title{
+      font-size: 1.1rem;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+    }
+
+    .explore-card .card-title{
+      color: #00883A;
+    }
+
+    .carousel-card .card-title{
+      color: #555;
+    }
+
+    .explore-card .card-text,
+    .carousel-card .card-text{
+      font-size: 0.9375rem;
+      color: #555;
+      line-height: 1.65;
+    }
+
+    .explore-card a.fw-semibold,
+    .carousel-card a.fw-semibold{
+      font-size: 0.89rem;
+      letter-spacing: 0.03em;
+      color: #00883A;
+    }
+
+    .mission-statement-btn.btn.btn-primary,
+    .carousel-card .btn.btn-sm{
+      background: #00883A;
+      color: white !important;
+      border-color: #00883A;
+      transition: transform .15s ease;
+    }
+    .mission-statement-btn.btn.btn-primary:hover,
+    .carousel-card .btn.btn-sm:hover {
+      transform: scale(1.05);
+    }
+
+/* =============================================
+   mission
+   ============================================= */
+    h3 {
+      border-bottom: 1px solid #dee2e6;
+      padding-bottom: .5rem;
+    }
+    .mission-checklist {
+      list-style: none;
+    }
+    .mission-checklist ul {
+      padding-left: 0;
+      margin-left: 0;
+    }
+    .mission-checklist li {
+      display: flex;
+      gap: 0.65rem;
+      align-items: flex-start;
+      font-size: 1rem;
+      color: #444;
+      font-weight: 400;
+      line-height: 1.75;
+    }
+    .mission-check-icon {
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background: #f4f1f1;
+      color: #00883A;
+      font-size: 0.6rem;
+    }
+
+/* =============================================
+   newsletter section
+   ============================================= */
+
+   .newsletter-section {
+    background: #00883A;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  .newsletter-section h4 {
+    font-size: 1.3rem;
+    letter-spacing: 0.02em;
+  }
+
+  .newsletter-section p {
+    font-size: 0.9375rem;
+    font-weight: 400;
+    line-height: 1.6;
+    opacity: 0.92;
+  }
+
+  .newsletter-btn.btn {
+    transition: color 0.25s ease;
+    cursor: pointer;
+  }
+
+  .newsletter-btn.btn.btn-outline-light:hover{
+    background: #ffffff50 !important;
+    color: white !important;
+    border: 1px solid white !important;
+  }
+
+
+/* =============================================
+   impact section
+   ============================================= */
+    .impact-container {
+      background: #ecf4ec38;
+    }
+    .impact-container .metric-value {
+      font-size: 2.5rem;
+      color: #00883A;
+      line-height: 1;
+      font-weight: 700;
+    }
+    .impact-container .metric-label {
+      font-size: 0.875rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      color: #555;
+    }
+/* =============================================
+   testimonial
+   ============================================= */
+
+    .testimonial-inner blockquote {
+      border-left: 1px solid #d5d3d394;
+      color: #666;
+    }
+    .testimonial-inner blockquote p{
+      margin-left: 0.5rem;
+      font-size: clamp(1rem, 2vw, 1.125rem);
+      font-style: italic;
+      line-height: 1.7;
+     }
+    .testimonial-inner strong {
+      font-size: 0.9rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+    }
+    .testimonial-carousel {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .testimonial-carousel .carousel-item {
+      padding: 0.5rem;
+    }
+    .testimonial-carousel .testimonial-inner blockquote p {
+      line-height: 1.6;
+      min-height: calc(1.6em * 5);
+      max-height: calc(1.6em * 5);
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 5;
+    }
+    .testimonial-carousel .carousel-control-prev,
+    .testimonial-carousel .carousel-control-next {
+      width: 2.5rem;
+    }
+    .testimonial-carousel .carousel-control-prev-icon,
+    .testimonial-carousel .carousel-control-next-icon {
+      filter: invert(38%) sepia(74%) saturate(1200%) hue-rotate(104deg) brightness(92%) contrast(101%);
+    }
+    .testimonial-carousel .carousel-indicators {
+      margin-bottom: -1.5rem;
+    }
+    .testimonial-carousel .carousel-indicators [data-bs-target] {
+      background-color: #00883A;
+    }
+    .testimonial-image img {
+        width: 110px;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+/* =============================================
+   explore cards
+   ============================================= */
+  .explore-card {
+    position: relative;
+    transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    background: white;
+  }
+
+  .explore-card::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    background-color: #00883A;
+    border-radius: 12px;
+    transition: width 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .explore-card:hover::after {
+    width: 100%;
+  }
+
+  .explore-card:hover {
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08), 0 1px 4px rgba(0,0,0,0.04);
+    transform: translateY(-3px);
+  }
+
+/* =============================================
+   news and events carousel
+   ============================================= */
+  .stay-loop-shell {
+    border-radius: 20px;
+    background: linear-gradient(180deg, rgba(0, 136, 58, 0.1) 0%, rgba(0, 136, 58, 0.03) 100%);
+    padding: 1.5rem;
+  }
+
+  .carousel-card {
+    border-radius: 18px;
+    border-color: rgba(0, 136, 58, 0.25) !important;
+    background: #ffffff !important;
+    box-shadow: 0 8px 24px rgba(16, 24, 40, 0.08);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    overflow: hidden;
+  }
+
+  .carousel-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 14px 32px rgba(16, 24, 40, 0.12);
+  }
+
+  .carousel-card .card-header {
+    font-size: 0.8rem;
+    letter-spacing: 0.1em;
+    color: #00883A;
+    border-bottom: 1px solid rgba(0, 136, 58, 0.16);
+    padding: 0.95rem 1.1rem 0.85rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+  }
+
+  .carousel-card .carousel-header-link {
+    font-size: 0.74rem;
+    letter-spacing: 0.08em;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #0b5f2f;
+    text-decoration: none;
+    border: 1px solid rgba(0, 136, 58, 0.45);
+    border-radius: 999px;
+    background: rgba(0, 136, 58, 0.1);
+    padding: 0.24rem 0.64rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    box-shadow: 0 1px 0 rgba(0, 136, 58, 0.18);
+    transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
+    white-space: nowrap;
+  }
+
+  .carousel-card .carousel-header-link::after {
+    content: "→";
+    font-size: 0.82rem;
+    line-height: 1;
+  }
+
+  .carousel-card .carousel-header-link:hover,
+  .carousel-card .carousel-header-link:focus {
+    background: #00883A;
+    border-color: #00883A;
+    color: #fff;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 10px rgba(0, 136, 58, 0.28);
+  }
+
+  .carousel-card .carousel-header-link:focus-visible {
+    outline: 2px solid rgba(0, 136, 58, 0.4);
+    outline-offset: 2px;
+  }
+
+  .carousel-card .card-body {
+    padding: 1.1rem 1.1rem 0.95rem;
+  }
+
+  .carousel-card .card-footer {
+    border-top: 1px solid rgba(0, 136, 58, 0.12);
+    background: transparent;
+    padding: 0.9rem 1.1rem 1.1rem;
+  }
+
+  .carousel-card .carousel-section-btn {
+    width: 100%;
+    max-width: 190px;
+    background: #00883A;
+    border-color: #00883A;
+    color: #fff !important;
+    letter-spacing: 0.04em;
+    font-weight: 600;
+    transition: background 0.2s ease, border-color 0.2s ease, transform 0.15s ease;
+  }
+
+  .carousel-card .carousel-section-btn:hover {
+    background: #006b2d;
+    border-color: #006b2d;
+    transform: translateY(-1px);
+  }
+
+  #newsCardCarousel,
+  #eventsCardCarousel {
+    padding-bottom: 2rem;
+    --carousel-max-title-lines: 2;
+    --carousel-max-body-lines: 3;
+    --home-carousel-slide-duration: 1.1s;
+  }
+
+  #newsCardCarousel .carousel-item,
+  #eventsCardCarousel .carousel-item {
+    transition: transform var(--home-carousel-slide-duration) ease-in-out;
+  }
+
+  #newsCardCarousel .carousel-item,
+  #eventsCardCarousel .carousel-item {
+    min-height: 180px;
+  }
+
+  #newsCardCarousel .carousel-item .card-title,
+  #newsCardCarousel .carousel-item .card-text,
+  #newsCardCarousel .carousel-item .card-subtitle,
+  #eventsCardCarousel .carousel-item .card-title,
+  #eventsCardCarousel .carousel-item .card-text,
+  #eventsCardCarousel .carousel-item .card-subtitle {
+    overflow-wrap: anywhere;
+  }
+
+  #newsCardCarousel .carousel-item .card-subtitle,
+  #eventsCardCarousel .carousel-item .card-subtitle {
+    display: inline-flex;
+    align-items: center;
+    max-width: 100%;
+    font-size: 0.76rem !important;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #2f4b39 !important;
+    background: rgba(0, 136, 58, 0.1);
+    border: 1px solid rgba(0, 136, 58, 0.2);
+    border-radius: 999px;
+    padding: 0.2rem 0.6rem;
+    margin-bottom: 0.75rem !important;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  #newsCardCarousel .carousel-item .card-text,
+  #eventsCardCarousel .carousel-item .card-text {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: var(--carousel-max-body-lines);
+    overflow: hidden;
+  }
+
+  #newsCardCarousel .carousel-item .card-title,
+  #eventsCardCarousel .carousel-item .card-title {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: var(--carousel-max-title-lines);
+    overflow: hidden;
+    color: #324437;
+  }
+
+  .carousel-card .card-title .carousel-title-link {
+    color: inherit;
+    text-decoration: none;
+    position: relative;
+    display: inline;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    background-position: 0 100%;
+    transition: background-size 0.25s ease;
+    font-weight: bold;
+  }
+
+  .carousel-card .card-title .carousel-title-link:hover,
+  .carousel-card .card-title .carousel-title-link:focus-visible {
+    color: inherit;
+    background-size: 100% 2px;
+  }
+
+  .carousel-card .btn.btn-link {
+    position: relative;
+    text-decoration: none;
+    display: inline-block;
+    color: #00883A;
+  }
+
+  .carousel-card .btn.btn-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #00883A;
+    transition: width 0.3s ease;
+  }
+
+  .carousel-card .btn.btn-link:hover::after {
+    width: 100%;
+  }
+
+  .carousel-header-controls {
+    display: inline-flex;
+    gap: 0.45rem;
+  }
+
+  .carousel-nav-btn {
+    width: 34px;
+    height: 34px;
+    border: 1px solid rgba(0, 136, 58, 0.35);
+    color: #1c3525;
+    border-radius: 999px;
+    background: #fff;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+  }
+
+  .carousel-nav-btn:hover,
+  .carousel-nav-btn:focus {
+    background: #00883A;
+    border-color: #00883A;
+    color: #fff;
+  }
+
+  .carousel-nav-btn i {
+    font-size: 0.8rem;
+    line-height: 1;
+  }
+
+  #newsCardCarousel .carousel-indicators,
+  #eventsCardCarousel .carousel-indicators {
+    justify-content: flex-start;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  #newsCardCarousel .carousel-indicators [data-bs-target],
+  #eventsCardCarousel .carousel-indicators [data-bs-target] {
+    position: relative;
+    width: 38px;
+    height: 38px;
+    margin: 0 0.12rem;
+    border: 0;
+    background: transparent;
+    opacity: 1;
+    border-radius: 8px;
+  }
+
+  #newsCardCarousel .carousel-indicators [data-bs-target]::before,
+  #eventsCardCarousel .carousel-indicators [data-bs-target]::before {
+    content: "";
+    position: absolute;
+    left: 5px;
+    right: 5px;
+    top: 16px;
+    height: 6px;
+    border-radius: 999px;
+    background-color: #3d5343;
+    opacity: 0.28;
+    transition: opacity 0.2s ease, background-color 0.2s ease;
+  }
+
+  #newsCardCarousel .carousel-indicators .active::before,
+  #eventsCardCarousel .carousel-indicators .active::before {
+    opacity: 1;
+  }
+
+  #newsCardCarousel .carousel-indicators [data-bs-target]:hover::before,
+  #eventsCardCarousel .carousel-indicators [data-bs-target]:hover::before {
+    opacity: 0.65;
+  }
+
+  #newsCardCarousel .carousel-indicators [data-bs-target]:focus-visible,
+  #eventsCardCarousel .carousel-indicators [data-bs-target]:focus-visible {
+    outline: 2px solid #006b2d;
+    outline-offset: 2px;
+  }
+
+  @media (max-width: 767.98px) {
+    .stay-loop-shell {
+      padding: 1rem;
+    }
+
+    .carousel-header-controls {
+      display: none;
+    }
+
+    #newsCardCarousel,
+    #eventsCardCarousel {
+      padding-bottom: 1.7rem;
+    }
+
+    #newsCardCarousel .carousel-indicators [data-bs-target],
+    #eventsCardCarousel .carousel-indicators [data-bs-target] {
+      width: 44px;
+      height: 44px;
+    }
+
+    #newsCardCarousel .carousel-indicators [data-bs-target]::before,
+    #eventsCardCarousel .carousel-indicators [data-bs-target]::before {
+      left: 6px;
+      right: 6px;
+      top: 19px;
+      height: 6px;
+    }
+  }
+  </style>
+<link href="./assets/bootstrap-5.3.8-dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="https://raw.githubusercontent.com/lmu-osc/branding-resources/refs/heads/main/styles.css">
+<link rel="stylesheet" href="./assets/bootstrap-5.3.8-dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/fontawesome-free-7.1.0-web/css/all.min.css">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="footer/footer-style.css">
+<link rel="stylesheet" href="custom-navbar.css">
+<link rel="stylesheet" href="./custom-navbar.css">
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    <img src="./assets/img/osc_image_assets/LMU_Open_Science_Center_Logo.jpg" alt="" class="navbar-logo light-content">
+    <img src="./assets/img/osc_image_assets/LMU_Open_Science_Center_Logo.jpg" alt="" class="navbar-logo dark-content">
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="./index.html" aria-current="page"> <i class="bi bi-house-door" role="img">
+</i> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./about/index.html"> <i class="bi bi-info-circle" role="img">
+</i> 
+<span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-people" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="bi bi-people" role="img">
+</i> 
+ <span class="menu-text">People</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-people">    
+        <li>
+    <a class="dropdown-item" href="./people/management.html">
+ <span class="dropdown-text">Management</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./people/staff.html">
+ <span class="dropdown-text">Staff</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./people/scientific-board.html">
+ <span class="dropdown-text">Scientific Board</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./people/advisors.html">
+ <span class="dropdown-text">Advisors</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./people/members.html">
+ <span class="dropdown-text">Members</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./people/fellows.html">
+ <span class="dropdown-text">Fellows</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-partners" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="bi bi-boxes" role="img">
+</i> 
+ <span class="menu-text">Partners</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-partners">    
+        <li>
+    <a class="dropdown-item" href="./partners/institutional-members.html">
+ <span class="dropdown-text">Institutional Members</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./partners/local-os-initiatives.html">
+ <span class="dropdown-text">Local Open Science Initiatives</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./partners/other-lmu-support-services.html">
+ <span class="dropdown-text">Other LMU Support Services</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./partners/external-partners.html">
+ <span class="dropdown-text">External Partners</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./partners/funders.html">
+ <span class="dropdown-text">Funders</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="./training/index.html"> <i class="bi bi-mortarboard" role="img">
+</i> 
+<span class="menu-text">Training</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./events/index.html"> <i class="bi bi-calendar-event" role="img">
+</i> 
+<span class="menu-text">Events</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <div id="quarto-announcement" data-announcement-id="04e26d7279811b0a13da8609e872b406" class="alert alert-primary hidden"><i class="bi bi-info-circle quarto-announcement-icon"></i><div class="quarto-announcement-content">
+<p><strong>Thanks for visiting the LMU Open Science Center–our site is still under construction for now, but we’ll be live soon!</strong></p>
+</div><i class="bi bi-x-lg quarto-announcement-action"></i></div>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-page">
+      <h1 class="title">LMU Open Science Center</h1>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta column-page">
+
+      
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content quarto-banner-title-block column-page" id="quarto-document-content">
+
+
+
+
+
+<!-- ══════════════════════════════════════
+     MISSION + NEWSLETTER
+════════════════════════════════════════ -->
+<div class="osc-section">
+<div class="row align-items-center gx-5 no-side-padding">
+<section id="our-mission" class="level1 mb-3 col-lg-8">
+<h1 class="mb-3">Our Mission</h1>
+<section id="the-researcher-led-lmu-open-science-center-osc-advances-research-excellence-at-lmu-munich-by-promoting-open-responsible-and-reproducible-practices." class="level3 mb-3 section-title">
+<h3 class="mb-3 section-title" data-anchor-id="the-researcher-led-lmu-open-science-center-osc-advances-research-excellence-at-lmu-munich-by-promoting-open-responsible-and-reproducible-practices.">The researcher-led LMU Open Science Center (OSC) advances research excellence at LMU Munich by promoting open, responsible, and reproducible practices.</h3>
+<div class="mission-checklist d-flex flex-column gap-1 p-0 my-4">
+<ul>
+<li><span class="mission-check-icon d-flex flex-shrink-0 align-items-center justify-content-center mt-1">✓</span> Essential training in the highest standards of reproducible research methods</li>
+<li><span class="mission-check-icon d-flex flex-shrink-0 align-items-center justify-content-center mt-1">✓</span> Digital sovereignty and resilience to global challenges through open source workflows</li>
+<li><span class="mission-check-icon d-flex flex-shrink-0 align-items-center justify-content-center mt-1">✓</span> Transparency as foundation for trust and evidence-based societal debates</li>
+<li><span class="mission-check-icon d-flex flex-shrink-0 align-items-center justify-content-center mt-1">✓</span> Reliable scientific data as a critical foundation for responsible AI, digitalisation, and societal translation</li>
+</ul>
+</div>
+<p><a href="./about/index.html" class="btn btn-primary mission-statement-btn">Learn More About OSC</a></p>
+</section>
+</section>
+<div class="col-lg-4">
+<section id="stay-updated-with-the-osc" class="level4 mb-3 fw-semibold text-white newsletter-section d-flex flex-column justify-content-center text-center p-5 gap-1">
+<h4 class="mb-3 fw-semibold text-white" data-anchor-id="stay-updated-with-the-osc">Stay updated with the OSC</h4>
+<p>Sign up to our mailing list for the latest workshops, events, and resources.</p>
+<p><a href="https://lists.lrz.de/mailman/listinfo/lmu-osc" class="btn btn-outline-light newsletter-btn">Subscribe</a></p>
+</section>
+</div>
+</div>
+</div>
+<!-- ══════════════════════════════════════
+     accolades plus testimonial carousel
+════════════════════════════════════════ -->
+<div class="container impact-container mt-3">
+<div class="row align-items-center">
+<div class="col-lg-4">
+<div class="row">
+<div class="col-12 text-center">
+<div class="metric-value mb-2" data-target="3000+">
+<p>0</p>
+</div>
+<div class="metric-label text-uppercase text-muted">
+<p>Researchers Trained</p>
+</div>
+</div>
+<div class="col-6 text-center">
+<div class="metric-value mb-2" data-target="150+">
+<p>0</p>
+</div>
+<div class="metric-label text-uppercase text-muted">
+<p>Professors &amp; Students</p>
+</div>
+</div>
+<div class="col-6 text-center">
+<div class="metric-value mb-2" data-target="460+">
+<p>0</p>
+</div>
+<div class="metric-label text-uppercase text-muted">
+<p>Articles on Open Science</p>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-8">
+<div class="testimonial-carousel">
+<div id="listing-testimonial-carousel" class="quarto-listing quarto-listing-container-custom">
+<div id="testimonialCarousel" class="carousel slide" data-bs-interval="10000" role="region" aria-label="Testimonials from OSC community members" aria-live="polite" aria-atomic="false">
+  <div class="carousel-indicators">
+    
+    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Testimonial 1 from Prof. Dr. med. Inga Katharina Koerte, M.D."></button>
+    
+    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1" class="" aria-current="false" aria-label="Testimonial 2 from Summer School Participant"></button>
+    
+    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2" class="" aria-current="false" aria-label="Testimonial 3 from Prof. Dr. Gitta Kutyniok"></button>
+    
+    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="3" class="" aria-current="false" aria-label="Testimonial 4 from Alberto G. Villagran, PhD Candidate"></button>
+    
+    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="4" class="" aria-current="false" aria-label="Testimonial 5 from Workshop participant"></button>
+    
+  </div>
+  <div class="carousel-inner">
+    
+    <div class="carousel-item active">
+      <div class="row d-flex justify-content-center align-items-center">
+        <div class="col-lg-11">
+          <div class="testimonial-inner">
+            <blockquote class="blockquote">
+              <p>Our participation in the Switch to Open Program was highly valuable for our research group. Developing a tailored research practices handbook helped streamline workflows, strengthen reproducibility, and clarify expectations across the team.
+</p>
+              <footer><strong>— Prof. Dr. med. Inga Katharina Koerte, M.D.</strong></footer>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="carousel-item ">
+      <div class="row d-flex justify-content-center align-items-center">
+        <div class="col-lg-11">
+          <div class="testimonial-inner">
+            <blockquote class="blockquote">
+              <p>I really enjoyed this summer school. The topics were well balanced, the tutorials were well organized, the lectures were interesting and broad, the tutors demonstrated know-how from a hands-on-perspective... Overall, <span style="white-space: nowrap;">⭐⭐⭐⭐⭐</span>!
+</p>
+              <footer><strong>— Summer School Participant</strong></footer>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="carousel-item ">
+      <div class="row d-flex justify-content-center align-items-center">
+        <div class="col-lg-11">
+          <div class="testimonial-inner">
+            <blockquote class="blockquote">
+              <p>The LMU Open Science Center was extremely helpful for us to complete the section on Research Data Management in our Cluster of Excellence pre-proposal. In fact, without them we would have not been able to write this part in such a comprehensive manner as it was possible with their amazing support.
+</p>
+              <footer><strong>— Prof. Dr. Gitta Kutyniok</strong></footer>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="carousel-item ">
+      <div class="row d-flex justify-content-center align-items-center">
+        <div class="col-lg-11">
+          <div class="testimonial-inner">
+            <blockquote class="blockquote">
+              <p>I really enjoyed the instructor training. It was a great professional development opportunity that strengthened both my understanding of Open Science and teaching skills, giving me the confidence and tools to design and deliver my own workshops!
+</p>
+              <footer><strong>— Alberto G. Villagran, PhD Candidate</strong></footer>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="carousel-item ">
+      <div class="row d-flex justify-content-center align-items-center">
+        <div class="col-lg-11">
+          <div class="testimonial-inner">
+            <blockquote class="blockquote">
+              <p>The <a href="./training/self-learning.html">self-paced tutorials</a> are super for us as beginners to advance our learning from such organized information. I personally feel that I never want to miss a single lecture from the Open Science Center.
+</p>
+              <footer><strong>— Workshop participant</strong></footer>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next" aria-label="Next testimonial">
+    <i class="bi bi-chevron-right text-success" aria-hidden="true"></i>
+  </button>
+</div>
+
+<script>
+  (function () {
+    function shuffleArray(arr) {
+      for (var i = arr.length - 1; i > 0; i--) {
+        var j = Math.floor(Math.random() * (i + 1));
+        var tmp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = tmp;
+      }
+      return arr;
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+      var carousel = document.getElementById("testimonialCarousel");
+      if (!carousel) return;
+
+      var inner = carousel.querySelector(".carousel-inner");
+      var indicators = carousel.querySelector(".carousel-indicators");
+      if (!inner || !indicators) return;
+
+      var slides = Array.prototype.slice.call(inner.querySelectorAll(".carousel-item"));
+      if (slides.length < 2) return;
+
+      // Randomize slide order for each page load.
+      shuffleArray(slides);
+
+      slides.forEach(function (slide, index) {
+        slide.classList.toggle("active", index === 0);
+        inner.appendChild(slide);
+      });
+
+      var indicatorButtons = Array.prototype.slice.call(indicators.querySelectorAll("button"));
+      indicatorButtons.forEach(function (btn, index) {
+        btn.classList.toggle("active", index === 0);
+        if (index === 0) {
+          btn.setAttribute("aria-current", "true");
+        } else {
+          btn.removeAttribute("aria-current");
+        }
+        btn.setAttribute("data-bs-slide-to", String(index));
+      });
+
+      if (window.bootstrap && window.bootstrap.Carousel) {
+        window.bootstrap.Carousel.getOrCreateInstance(carousel, {
+          interval: 10000,
+          ride: "carousel"
+        });
+      }
+    });
+  })();
+</script>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- ══════════════════════════════════════
+     explore cards
+════════════════════════════════════════ -->
+<div class="osc-section">
+<section id="what-we-offer" class="level2 container explore-section">
+<h2 data-anchor-id="what-we-offer">What We Offer</h2>
+<div class="mb-4 desc fs-5">
+<p>Whether you are a student, early-career researcher, or professor — there’s a place for you at the Open Science Center.</p>
+</div>
+<div class="row row-cols-1 row-cols-lg-3 g-4">
+<div class="col">
+<div class="card explore-card h-100 border border-success-subtle rounded-3 shadow-sm">
+  <div class="card-body d-flex flex-column p-4">
+    <div class="d-flex align-items-center justify-content-between mb-2">
+      <h5 class="mb-0 card-title">Community</h5>
+      <div class="bg-success bg-opacity-10 rounded-3 d-inline-flex align-items-center justify-content-center" style="width:50px;height:50px;color:#00883A;">
+        <i class="bi bi-people fs-5"></i>
+      </div>
+    </div>
+    <p class="card-text flex-grow-1">Meet the researchers, advocates, and partners shaping open science at LMU and beyond.</p>
+    <a href="./people/members.html" class="stretched-link" aria-label="Meet the OSC Community"></a>
+  </div>
+</div>
+</div>
+<div class="col">
+<div class="card explore-card h-100 border border-success-subtle rounded-3 shadow-sm">
+  <div class="card-body d-flex flex-column p-4">
+    <div class="d-flex align-items-center justify-content-between mb-2">
+      <h5 class="mb-0 card-title">Workshops &amp; Self-Learning</h5>
+      <div class="bg-success bg-opacity-10 rounded-3 d-inline-flex align-items-center justify-content-center" style="width:50px;height:50px;color:#00883A;">
+        <i class="bi bi-journal-bookmark fs-5"></i>
+      </div>
+    </div>
+    <p class="card-text flex-grow-1">Build hands-on skills in reproducible research through workshops, summer schools, and self-paced tutorials.</p>
+    <a href="./training/index.html" class="stretched-link" aria-label="Explore Training"></a>
+  </div>
+</div>
+</div>
+<div class="col">
+<div class="card explore-card h-100 border border-success-subtle rounded-3 shadow-sm">
+  <div class="card-body d-flex flex-column p-4">
+    <div class="d-flex align-items-center justify-content-between mb-2">
+      <h5 class="mb-0 card-title">Partners &amp; Networks</h5>
+      <div class="bg-success bg-opacity-10 rounded-3 d-inline-flex align-items-center justify-content-center" style="width:50px;height:50px;color:#00883A;">
+        <i class="bi bi-globe2 fs-5"></i>
+      </div>
+    </div>
+    <p class="card-text flex-grow-1">Discover our institutional collaborators and the international networks we are part of.</p>
+    <a href="./partners/institutional-members.html" class="stretched-link" aria-label="See OSC Partners"></a>
+  </div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- ══════════════════════════════════════
+     NEWS & EVENTS
+════════════════════════════════════════ -->
+<div class="osc-section">
+<section id="stay-in-the-loop" class="level2 container">
+<h2 data-anchor-id="stay-in-the-loop">Stay In the Loop</h2>
+<div class="mb-4 desc fs-5">
+<p>Keep up to date with our latest news releases, and upcoming events.</p>
+</div>
+<div class="row g-4">
+<div class="col-lg-6">
+<div id="listing-news-carousel" class="quarto-listing quarto-listing-container-custom">
+
+<div class="card carousel-card h-100 border border-success-subtle">
+  <div class="card-header bg-transparent fw-semibold text-uppercase">
+    <span>News</span>
+    <a href="./news/index.html" class="carousel-header-link" aria-label="View all news">View All News</a>
+  </div>
+  <div class="card-body">
+    <div id="newsCardCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="10000" data-bs-pause="hover" role="region" aria-roledescription="carousel" aria-label="Latest news">
+      <div class="carousel-indicators">
+        
+        <button type="button" data-bs-target="#newsCardCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Show news item 1 of 3"></button>
+        
+        <button type="button" data-bs-target="#newsCardCarousel" data-bs-slide-to="1" class="" aria-current="false" aria-label="Show news item 2 of 3"></button>
+        
+        <button type="button" data-bs-target="#newsCardCarousel" data-bs-slide-to="2" class="" aria-current="false" aria-label="Show news item 3 of 3"></button>
+        
+      </div>
+      <div class="carousel-inner" aria-live="polite">
+        
+        <div class="carousel-item active">
+          <h6 class="card-subtitle mb-2 text-body-secondary" style="font-size:0.87rem;">Apr 13, 2026</h6>
+          <h5 class="card-title"><a href="./news/news/2026-04-15-os-land-book.html" class="carousel-title-link" aria-label="Open news item: Open Science Land: A travel guide">Open Science Land: A travel guide</a></h5>
+          <p class="card-text">Newly published travel guide “Expedition Open Science Land: A travel guide for business research”</p>
+          <a href="./news/news/2026-04-15-os-land-book.html" class="btn btn-link p-0 fw-semibold small" aria-label="Read more about Open Science Land: A travel guide">Read More →</a>
+        </div>
+        
+        <div class="carousel-item ">
+          <h6 class="card-subtitle mb-2 text-body-secondary" style="font-size:0.87rem;">Apr 12, 2026</h6>
+          <h5 class="card-title"><a href="./news/news/2026-04-13-code-reproducibility-in-social-sciences-paper.html" class="carousel-title-link" aria-label="Open news item: Code Reproducibility in Social Sciences">Code Reproducibility in Social Sciences</a></h5>
+          <p class="card-text">Code Sharing and Reproducibility in Social Sciences: Findings from a Recent Study</p>
+          <a href="./news/news/2026-04-13-code-reproducibility-in-social-sciences-paper.html" class="btn btn-link p-0 fw-semibold small" aria-label="Read more about Code Reproducibility in Social Sciences">Read More →</a>
+        </div>
+        
+        <div class="carousel-item ">
+          <h6 class="card-subtitle mb-2 text-body-secondary" style="font-size:0.87rem;">Apr 11, 2026</h6>
+          <h5 class="card-title"><a href="./news/news/2026-04-14-orp-awareness-and-use-international-survey.html" class="carousel-title-link" aria-label="Open news item: Awareness and Use of Open Research Practices: An International Survey">Awareness and Use of Open Research Practices: An International Survey</a></h5>
+          <p class="card-text">Awareness and Use of Open Research Practices: An International Survey of Researchers Across Disciplines</p>
+          <a href="./news/news/2026-04-14-orp-awareness-and-use-international-survey.html" class="btn btn-link p-0 fw-semibold small" aria-label="Read more about Awareness and Use of Open Research Practices: An International Survey">Read More →</a>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+<nav id="news-carousel-pagination" class="listing-pagination" aria-label="Page Navigation">
+  <ul class="pagination"></ul>
+</nav>
+</div>
+</div>
+<div class="col-lg-6">
+<div id="listing-events-carousel" class="quarto-listing quarto-listing-container-custom">
+
+<div class="card carousel-card h-100 border border-success-subtle">
+  <div class="card-header bg-transparent fw-semibold text-uppercase">
+    <span>Events</span>
+    <a href="./events/index.html" class="carousel-header-link" aria-label="View all events">View All Events</a>
+  </div>
+  <div class="card-body">
+    <div id="eventsCardCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="10000" data-bs-pause="hover" role="region" aria-roledescription="carousel" aria-label="Upcoming events">
+      <div class="carousel-indicators">
+        
+        <button type="button" data-bs-target="#eventsCardCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Show event item 1 of 3"></button>
+        
+        <button type="button" data-bs-target="#eventsCardCarousel" data-bs-slide-to="1" class="" aria-current="false" aria-label="Show event item 2 of 3"></button>
+        
+        <button type="button" data-bs-target="#eventsCardCarousel" data-bs-slide-to="2" class="" aria-current="false" aria-label="Show event item 3 of 3"></button>
+        
+      </div>
+      <div class="carousel-inner" aria-live="polite">
+        
+        <div class="carousel-item active">
+          
+          <h6 class="card-subtitle mb-2 text-body-secondary" style="font-size:0.87rem;">Hybrid · Jun 10, 2026</h6>
+          
+          <h5 class="card-title"><a href="./events/events/2026-06-10-ospark-bootcamp.html" class="carousel-title-link" aria-label="Open event item: OSPARK Bootcamp Munich - Promote your Open Research Passion!">OSPARK Bootcamp Munich - Promote your Open Research Passion!</a></h5>
+          <p class="card-text">The OSPARK bootcamp is a 6-week online course and a 2-day onsite workshop all about creating visibility through outreach and marketing. It's a learning opportunity for people working in or leading Open Research initiatives, services or infrastructures.
+</p>
+          <a href="./events/events/2026-06-10-ospark-bootcamp.html" class="btn btn-link p-0 fw-semibold small" aria-label="See details for OSPARK Bootcamp Munich - Promote your Open Research Passion!">See Event →</a>
+        </div>
+        
+        <div class="carousel-item ">
+          
+          <h6 class="card-subtitle mb-2 text-body-secondary" style="font-size:0.87rem;">Hybrid · Sep 7, 2026</h6>
+          
+          <h5 class="card-title"><a href="./events/events/2026-09-07-lmu-open-science-summer-school.html" class="carousel-title-link" aria-label="Open event item: LMU Open Science Summer School 2026">LMU Open Science Summer School 2026</a></h5>
+          <p class="card-text">Save the date! Our annual Summer School will take place from September 7-11, 2026--more details to come!
+</p>
+          <a href="./events/events/2026-09-07-lmu-open-science-summer-school.html" class="btn btn-link p-0 fw-semibold small" aria-label="See details for LMU Open Science Summer School 2026">See Event →</a>
+        </div>
+        
+        <div class="carousel-item ">
+          
+          <h6 class="card-subtitle mb-2 text-body-secondary" style="font-size:0.87rem;background: rgba(134, 112, 112, 0.18); border-color: rgba(134, 112, 112, 0.36); color: #5a4747 !important;">Past Event · In-Person · Mar 11, 2026</h6>
+          
+          <h5 class="card-title"><a href="./events/events/2026-03-11-software-carpentry-computing-skills.html" class="carousel-title-link" aria-label="Open event item: Software Carpentry: Essential Computing Skill Training (Shell, Git, Python)">Software Carpentry: Essential Computing Skill Training (Shell, Git, Python)</a></h5>
+          <p class="card-text">Software Carpentry is a global organization that provides training in essential computing skills for researchers. The workshop covers topics such as the command line (Shell), version control with Git, and programming with Python. It is designed to help researchers improve their computational skills and enhance their research productivity.
+</p>
+          <a href="./events/events/2026-03-11-software-carpentry-computing-skills.html" class="btn btn-link p-0 fw-semibold small" aria-label="See details for Software Carpentry: Essential Computing Skill Training (Shell, Git, Python)">See Event →</a>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+<nav id="events-carousel-pagination" class="listing-pagination" aria-label="Page Navigation">
+  <ul class="pagination"></ul>
+</nav>
+</div>
+</div>
+</div>
+</section>
+</div>
+
+
+
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="osc-footer-card text-white py-5">
+  <div class="container">
+    <div class="row gy-4">
+      <div class="col-12 col-md-6 col-lg-3 ">
+        <h4 class="fw-bold fs-5 fs-lg-4 text-white">
+          Ludwig-Maximilians-Universität<br>
+          LMU Open Science Center
+        </h4>
+        <p class="mb-0 mt-1 fw-normal fs-5">
+          Leopoldstr. 13<br>
+          80802 München
+        </p>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-3">
+        <h4 class="fw-semibold fs-5 text-white">Contact</h4>
+        <ul class="list-unstyled mt-2 mb-0">
+          <li>
+            <a href="mailto:felix.schoenbrodt@psy.lmu.de" class="text-white text-decoration-underline">
+              <i class="bi bi-envelope me-1"></i>
+              Prof. Dr. Felix Schönbrodt (Managing Director)
+            </a>
+          </li>
+          <li>
+            <a href="mailto:malika.ihle@lmu.de" class="text-white text-decoration-underline">
+              <i class="bi bi-envelope me-1"></i>
+              Dr. Malika Ihle (Coordinator) 
+            </a>
+          </li>
+          <li>
+            <a href="mailto:osc@lmu.de" class="text-white text-decoration-underline">
+              <i class="bi bi-envelope me-1"></i>
+              OSC team
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-3">
+        <h4 class="fw-semibold fs-5 text-white">Join Us</h4>
+        <ul class="list-unstyled mt-2 mb-0">
+          <li>
+            <a href="https://lists.lrz.de/mailman/listinfo/lmu-osc" target="_blank" class="text-white text-decoration-underline" aria-label="Subscribe to our announcement list (opens in new window)">
+              Subscribe to our announcement list
+            </a>
+          </li>
+          <li>
+            <a href="./about/join-us.html" target="_blank" class="text-white text-decoration-underline" aria-label="Become a member (opens in new window)">
+              Become a member
+            </a>
+          </li>
+          <li>
+            <a href="https://matrix.to/#/#lmu-open-science-center:matrix.lmu.de" target="_blank" class="text-white text-decoration-underline" aria-label="Chat with us on Matrix (opens in new window)">
+              Chat with us on Matrix
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-3 d-flex align-items-start gap-3 osc-footer-socials">
+        <a href="https://github.com/lmu-osc" target="_blank" class="text-white fs-3" aria-label="LMU Open Science Center on GitHub (opens in new window)">
+          <i class="bi bi-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/company/lmu-open-science-center/" target="_blank" class="text-white fs-3" aria-label="LMU Open Science Center on LinkedIn (opens in new window)">
+          <i class="bi bi-linkedin"></i>
+        </a>
+        <a href="https://bsky.app/profile/lmu-osc.bsky.social" target="_blank" class="text-white fs-3" aria-label="LMU Open Science Center on Bluesky (opens in new window)">
+          <i class="bi bi-bluesky"></i>
+        </a>
+        <a href="https://scicomm.xyz/@lmu_osc" target="_blank" class="text-white fs-3" aria-label="LMU Open Science Center on Mastodon (opens in new window)">
+          <i class="bi bi-mastodon"></i>
+        </a>
+      </div>
+
+    </div>
+
+    <hr class="my-4 border-light">
+
+    <div class="d-flex flex-wrap gap-3 small">
+      <a href="./footer/imprint.html" class="text-white text-decoration-underline">Imprint</a>
+      <span aria-hidden="true">|</span>
+      <a href="./footer/privacy.html" class="text-white text-decoration-underline">Privacy Policy</a>
+      <span aria-hidden="true">|</span>
+      <a href="./footer/accessibilty.html" class="text-white text-decoration-underline">Accessibility</a>
+    </div>
+
+  </div>
+</footer>
+<script src="./assets/javascript/remove_title.js" defer=""></script>
+<script>
+(function () {
+  function equalizeTextBySelector(selector, scopeRoot) {
+    var elements = Array.prototype.slice.call(scopeRoot.querySelectorAll(selector));
+    if (!elements.length) return;
+
+    elements.forEach(function (el) { el.style.minHeight = ''; });
+
+    var maxHeight = 0;
+    elements.forEach(function (el) {
+      maxHeight = Math.max(maxHeight, el.getBoundingClientRect().height);
+    });
+
+    var heightPx = Math.ceil(maxHeight) + 'px';
+    elements.forEach(function (el) { el.style.minHeight = heightPx; });
+  }
+
+  function runEqualization() {
+    window.requestAnimationFrame(function () {
+      // 992px breakpoint is based on Bootstrap's lg breakpoint, which is where the carousel layout changes from 1 item per slide to 2 items per slide. We want to equalize across both carousels when they are side-by-side, and equalize within each carousel when they are stacked.
+      var isSideBySide = window.matchMedia('(min-width: 992px)').matches;
+
+      if (isSideBySide) {
+        equalizeTextBySelector(
+          '#newsCardCarousel .carousel-item .card-title, #eventsCardCarousel .carousel-item .card-title',
+          document
+        );
+        equalizeTextBySelector(
+          '#newsCardCarousel .carousel-item .card-text, #eventsCardCarousel .carousel-item .card-text',
+          document
+        );
+        return;
+      }
+
+      equalizeTextBySelector('#newsCardCarousel .carousel-item .card-title', document);
+      equalizeTextBySelector('#eventsCardCarousel .carousel-item .card-title', document);
+      equalizeTextBySelector('#newsCardCarousel .carousel-item .card-text', document);
+      equalizeTextBySelector('#eventsCardCarousel .carousel-item .card-text', document);
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', runEqualization);
+  window.addEventListener('load', runEqualization);
+  window.addEventListener('resize', runEqualization);
+})();
+</script>
+
+
+
+
+</body></html>
