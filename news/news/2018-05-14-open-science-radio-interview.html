@@ -343,7 +343,7 @@ Listen to the interview:<br><a href="https://www.openscienceradio.org/2018/05/14
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/lmu-osc\.github\.io\/");
+        var filterRegex = new RegExp("https:\/\/www\.osc\.lmu\.de\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
