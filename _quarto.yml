@@ -8,16 +8,6 @@ project:
 profile:
   default: github
 
-
-profiles:
-  github:
-    website:
-      site-url: https://lmu-osc.github.io/
-
-  production:
-    website:
-      site-url: https://www.osc.lmu.de/
-
 website:
   title: "LMU Open Science Center"
   favicon: assets/img/lmu_osc_logo.jpg
