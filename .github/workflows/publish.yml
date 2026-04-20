@@ -98,7 +98,7 @@ jobs:
       - name: Render Quarto Project (production profile)
         uses: quarto-dev/quarto-actions/render@v2
         env:
-          QUARTO_PROFILE: preview
+          QUARTO_PROFILE: production
         with:
           to: html
 
