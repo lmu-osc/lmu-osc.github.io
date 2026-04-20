@@ -95,11 +95,17 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-quarto-freeze-production-
 
-      - name: Render (Production profile)
-        uses: quarto-dev/quarto-actions/publish@v2
+      - name: Render Quarto Project (production profile)
+        uses: quarto-dev/quarto-actions/render@v2
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # this secret is always available for github actions
           QUARTO_PROFILE: production
         with:
-          target: prod-pages
+          to: html
+
+      - name: Deploy to prod-pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          publish_dir: ./_site
+          publish_branch: prod-pages
+          github_token: ${{ secrets.GITHUB_TOKEN }}
          
