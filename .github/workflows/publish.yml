@@ -95,8 +95,12 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-quarto-freeze-production-
 
-      - name: Render (Production profile)
-        run: quarto render --profile production
+      - name: Render Quarto Project (production profile)
+        uses: quarto-dev/quarto-actions/render@v2
+        env:
+          QUARTO_PROFILE: preview
+        with:
+          to: html
 
       - name: Deploy to prod-pages
         uses: peaceiris/actions-gh-pages@v4
