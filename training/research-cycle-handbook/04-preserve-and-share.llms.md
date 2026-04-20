@@ -39,7 +39,7 @@ When deciding whether data should be shared, consider the following:
 - Ensure that data sharing is compatible with the **informed consent** provided by participants.
 - Check what your **ethics approval** allows.
 - Consider whether the data can be **anonymized** without losing scientific value (see [2.3.2. Anonymization](../../training/research-cycle-handbook/02-collect-and-manage.llms.md#sec-ethics-and-privacy)).
-- If you work with **sensitive data**, you may consult the University’s [data protection officer](https://www.lmu.de/en/about-lmu/structure/organizational-structure/officers-and-representatives/data-protection-officer.html).
+- If you work with **sensitive data**, you may consult the University’s [data protection officer](https://www.lmu.de/en/about-lmu/structure/organizational-structure/officers-representatives-and-contact-persons/data-protection-officer.html).
 - If your research outputs could have **dual-use** implications (e.g. that could also be applied for military or malicious purposes), consult the relevant regulations (e.g. European Commission’s policy ([Dual-Use Regulation 2021/821](https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L:2021:206:FULL&from=EN))) and contact the University’s [Export Control service](mailto:Exportkontrolle@Verwaltung.Uni-Muenchen.DE).
 - If your research may lead to **patents or commercialization**, contact the the University’s [IP Management team](https://www.lmu.de/en/research/research-transfer/inventions-patents-and-exploitation-rights/) before sharing data. Early consultation helps ensure that intellectual property rights are not compromised.
 
@@ -474,7 +474,7 @@ Until 2024, authors publishing in legacy (subscription-based) journals were requ
 
   
 
-The current contract conditions for LMU Munich can be accessed on the [University Library Publication Fees Webpage (in german)](https://www.ub.uni-muenchen.de/schreiben/open-access-publizieren/publikationsgebuehren/index.html). To get support with Article Processing Charges and open access policies, contact the [University Library Open Access team](https://www.en.ub.uni-muenchen.de/writing/open-access-publishing/oa-auxiliary-page/index.html).
+The current contract conditions for LMU Munich can be accessed on the [University Library Publication Fees Webpage (in german)](https://www.ub.lmu.de/en/open-access-publishing/financing-open-access/). To get support with Article Processing Charges and open access policies, contact the [University Library Open Access team](https://www.en.ub.uni-muenchen.de/writing/open-access-publishing/oa-auxiliary-page/index.html).
 
 ####  TOOLS & RESOURCES
 
