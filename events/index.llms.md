@@ -1,5 +1,7 @@
 # Events
 
+Take a peek at the OSC’s upcoming workshops, seminars, and other events, or browse our archive of past events.
+
 ## Upcoming Events
 
 7-11 Sept, 2026
