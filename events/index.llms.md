@@ -68,7 +68,7 @@ Presenter(s): Dr. Malika Ihle, Laura Kropf, Dr. Florian Schreck, Dr. Martin Spen
 
 Host(s): LMU University Library (UB), LMU Open Science Center, LMU Research Funding Unit
 
-[](../events/events/2026-02-09-love-data-week-2026.llms.md) [Training Material](https://zenodo.org/communities/love-data-week-2026-forschungsdaten-info/records?q=&l=list&p=1&s=10&sort=newest)
+[](../events/events/2026-02-09-love-data-week.llms.md) [Training Material](https://zenodo.org/communities/love-data-week-2026-forschungsdaten-info/records?q=&l=list&p=1&s=10&sort=newest)
 
 ### 2025
 
