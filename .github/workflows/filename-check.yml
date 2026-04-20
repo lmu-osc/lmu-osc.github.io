@@ -20,3 +20,5 @@ jobs:
           file-types: "html,md,qmd,css,scss,rmd,pdf,yml"
           ignore-file: ".filenameignore"
           dotfile-mode: "strip-leading-dot"
+          allow-dates-in-file-names: "true"
+          date-format: "%Y-%m-%d"
