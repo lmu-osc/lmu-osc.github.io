@@ -1,0 +1,30 @@
+# Paths to ignore for filename/path validation checks.
+# Patterns use fnmatch syntax and are relative to repo root.
+
+_site/**
+.quarto/**
+.github/**
+
+
+# Common documentation files to ignore
+LICENSE-CODE.md
+LICENSE.md
+LICENSE
+README.md
+README
+CITATION
+_quarto.yml
+
+# OSC site files to ignore
+assets/bootstrap*
+assets/fontawesome*
+404.qmd
+**/_metadata.yml
+**/**_template*.qmd
+news/news/2024-05-10-100th-member-milestone.qmd
+
+# handbook pages to ignore
+training/research-cycle-handbook/01-plan-and-design.qmd 
+training/research-cycle-handbook/02-collect-and-manage.qmd
+training/research-cycle-handbook/03-analyze-and-collaborate.qmd
+training/research-cycle-handbook/04-preserve-and-share.qmd
