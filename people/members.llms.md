@@ -1,7 +1,5 @@
 # Members
 
-Meet the members of the Open Science Center at LMU Munich, including our LMU members, affiliate members, and former members.
-
 Our members actively support the goals of the OSC and contribute to our activities such as training, community building, meta-research, and liaison with stakeholders. [Join us](../about/join-us.llms.md) .
 
 ## LMU Members
