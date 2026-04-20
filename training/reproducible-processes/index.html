@@ -103,18 +103,28 @@ ul.task-list li input[type="checkbox"] {
     }
   })
   </script>
-<!-- Matomo -->
+<!-- Matomo: OSC primary + LMU secondary -->
 <script>
   var _paq = window._paq = window._paq || [];
-  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+
+  // Primary tracker (OSC instance)
+  _paq.push(['setTrackerUrl', '//www.analytics.osc.lmu.de/matomo.php']);
+  _paq.push(['setSiteId', '3']);
+
+  // Secondary tracker (LMU instance)
+  _paq.push(['addTracker', '//web-analytics.uni-muenchen.de/matomo.php', '41']);
+
+  // Preserve current privacy behavior for both trackers
+  _paq.push(['disableCookies']);
   _paq.push(['trackPageView']);
   _paq.push(['enableLinkTracking']);
+
   (function() {
-    var u="//www.analytics.osc.lmu.de/";
-    _paq.push(['setTrackerUrl', u+'matomo.php']);
-    _paq.push(['setSiteId', '3']);
-    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-    g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+    var u = '//www.analytics.osc.lmu.de/';
+    var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+    g.async = true;
+    g.src = u + 'matomo.js';
+    s.parentNode.insertBefore(g, s);
   })();
 </script>
 <!-- End Matomo Code -->
@@ -499,7 +509,7 @@ window.Quarto = {
 
 <div class="quarto-listing quarto-listing-container-default" id="listing-listing">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="RG9jdW1lbnRhdGlvbg==" data-listing-file-modified-sort="1776670245286" data-listing-reading-time-sort="1" data-listing-word-count-sort="42">
+<div class="quarto-post image-right" data-index="0" data-categories="RG9jdW1lbnRhdGlvbg==" data-listing-file-modified-sort="1776671085835" data-listing-reading-time-sort="1" data-listing-word-count-sort="42">
 <div class="thumbnail"><a href="../../training/reproducible-processes/reproducible-protocols.html" class="no-external">
 
 <img loading="lazy" src="../../training/images/reproducible_protocol_writing.svg" class="thumbnail-image">
@@ -613,7 +623,7 @@ Self-Paced Tutorial
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="4" data-categories="R2l0JTJDR2l0SHVi" data-listing-file-modified-sort="1776670245286" data-listing-reading-time-sort="2" data-listing-word-count-sort="231">
+<div class="quarto-post image-right" data-index="4" data-categories="R2l0JTJDR2l0SHVi" data-listing-file-modified-sort="1776671085835" data-listing-reading-time-sort="2" data-listing-word-count-sort="231">
 <div class="thumbnail"><a href="../../training/reproducible-processes/advanced-git.html" class="no-external">
 
 <img loading="lazy" src="../../training/images/advanced_git.svg" class="thumbnail-image">
@@ -727,7 +737,7 @@ Self-Paced Tutorial
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="8" data-categories="Ug==" data-listing-file-modified-sort="1776670245286" data-listing-reading-time-sort="1" data-listing-word-count-sort="60">
+<div class="quarto-post image-right" data-index="8" data-categories="Ug==" data-listing-file-modified-sort="1776671085835" data-listing-reading-time-sort="1" data-listing-word-count-sort="60">
 <div class="thumbnail"><a href="../../training/reproducible-processes/readable-code.html" class="no-external">
 
 <img loading="lazy" src="../../training/images/readable_code.svg" class="thumbnail-image">

@@ -132,18 +132,28 @@ ul.task-list li input[type="checkbox"] {
     }
   })
   </script>
-<!-- Matomo -->
+<!-- Matomo: OSC primary + LMU secondary -->
 <script>
   var _paq = window._paq = window._paq || [];
-  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+
+  // Primary tracker (OSC instance)
+  _paq.push(['setTrackerUrl', '//www.analytics.osc.lmu.de/matomo.php']);
+  _paq.push(['setSiteId', '3']);
+
+  // Secondary tracker (LMU instance)
+  _paq.push(['addTracker', '//web-analytics.uni-muenchen.de/matomo.php', '41']);
+
+  // Preserve current privacy behavior for both trackers
+  _paq.push(['disableCookies']);
   _paq.push(['trackPageView']);
   _paq.push(['enableLinkTracking']);
+
   (function() {
-    var u="//www.analytics.osc.lmu.de/";
-    _paq.push(['setTrackerUrl', u+'matomo.php']);
-    _paq.push(['setSiteId', '3']);
-    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-    g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+    var u = '//www.analytics.osc.lmu.de/';
+    var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+    g.async = true;
+    g.src = u + 'matomo.js';
+    s.parentNode.insertBefore(g, s);
   })();
 </script>
 <!-- End Matomo Code -->
@@ -395,7 +405,7 @@ window.Quarto = {
 <section id="current-scientific-board" class="level2">
 <h2 class="anchored" data-anchor-id="current-scientific-board">Current Scientific Board</h2>
 <div id="listing-current-scientific-board" class="quarto-listing quarto-listing-container-custom">
-<div class="card mb-3" data-index="0" data-categories="TWF0aCUyMEluZm9ybWF0aWNzJTIwJTI2JTIwU3RhdHM=" data-listing-file-modified-sort="1776670245278" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+<div class="card mb-3" data-index="0" data-categories="TWF0aCUyMEluZm9ybWF0aWNzJTIwJTI2JTIwU3RhdHM=" data-listing-file-modified-sort="1776671085826" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
 <h4 class="card-header anchored">
 Head of the Statistical Consulting Laboratory StaBLab
 </h4>
@@ -429,7 +439,7 @@ As a trained statistician, psychologist and epidemiologist, I believe that multi
 </div>
 </div>
 </div>
-<div class="card mb-3" data-index="1" data-categories="U29jaWFsJTIwU2NpZW5jZXM=" data-listing-file-modified-sort="1776670245168" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+<div class="card mb-3" data-index="1" data-categories="U29jaWFsJTIwU2NpZW5jZXM=" data-listing-file-modified-sort="1776671085707" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
 <h4 class="card-header anchored">
 Professor of Communication
 </h4>
@@ -463,7 +473,7 @@ As a Professor of Communication, I bring a strong commitment to advancing Open S
 </div>
 </div>
 </div>
-<div class="card mb-3" data-index="2" data-categories="TWVkaWNpbmU=" data-listing-file-modified-sort="1776670245277" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+<div class="card mb-3" data-index="2" data-categories="TWVkaWNpbmU=" data-listing-file-modified-sort="1776671085825" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
 <h4 class="card-header anchored">
 Professor of Experimental Stroke Research (OSC Speaker)
 </h4>
@@ -497,7 +507,7 @@ Reproducible studies are the basis of science, but reproducibility rates are sti
 </div>
 </div>
 </div>
-<div class="card mb-3" data-index="3" data-categories="TWVkaWNpbmU=" data-listing-file-modified-sort="1776670245279" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+<div class="card mb-3" data-index="3" data-categories="TWVkaWNpbmU=" data-listing-file-modified-sort="1776671085827" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
 <h4 class="card-header anchored">
 Head of the Bioinformatics Core Facility of the Biomedical Center
 </h4>
@@ -531,7 +541,7 @@ As a data analyst working with a wide range of biomedical research groups at the
 </div>
 </div>
 </div>
-<div class="card mb-3" data-index="4" data-categories="U29jaWFsJTIwU2NpZW5jZXM=" data-listing-file-modified-sort="1776670245168" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
+<div class="card mb-3" data-index="4" data-categories="U29jaWFsJTIwU2NpZW5jZXM=" data-listing-file-modified-sort="1776671085707" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
 <h4 class="card-header anchored">
 Professor in Digitalization and Political Behavior
 </h4>

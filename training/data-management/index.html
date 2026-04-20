@@ -103,18 +103,28 @@ ul.task-list li input[type="checkbox"] {
     }
   })
   </script>
-<!-- Matomo -->
+<!-- Matomo: OSC primary + LMU secondary -->
 <script>
   var _paq = window._paq = window._paq || [];
-  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+
+  // Primary tracker (OSC instance)
+  _paq.push(['setTrackerUrl', '//www.analytics.osc.lmu.de/matomo.php']);
+  _paq.push(['setSiteId', '3']);
+
+  // Secondary tracker (LMU instance)
+  _paq.push(['addTracker', '//web-analytics.uni-muenchen.de/matomo.php', '41']);
+
+  // Preserve current privacy behavior for both trackers
+  _paq.push(['disableCookies']);
   _paq.push(['trackPageView']);
   _paq.push(['enableLinkTracking']);
+
   (function() {
-    var u="//www.analytics.osc.lmu.de/";
-    _paq.push(['setTrackerUrl', u+'matomo.php']);
-    _paq.push(['setSiteId', '3']);
-    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-    g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+    var u = '//www.analytics.osc.lmu.de/';
+    var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+    g.async = true;
+    g.src = u + 'matomo.js';
+    s.parentNode.insertBefore(g, s);
   })();
 </script>
 <!-- End Matomo Code -->
@@ -499,7 +509,7 @@ window.Quarto = {
 
 <div class="quarto-listing quarto-listing-container-default" id="listing-listing">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="T3BlbiUyMERhdGE=" data-listing-file-modified-sort="1776670245281" data-listing-reading-time-sort="1" data-listing-word-count-sort="46">
+<div class="quarto-post image-right" data-index="0" data-categories="T3BlbiUyMERhdGE=" data-listing-file-modified-sort="1776671085829" data-listing-reading-time-sort="1" data-listing-word-count-sort="46">
 <div class="thumbnail"><a href="../../training/data-management/open-data.html" class="no-external">
 
 <img loading="lazy" src="../../training/images/open_data.svg" class="thumbnail-image">
@@ -584,7 +594,7 @@ Self-Paced Tutorial
 </a>
 </div>
 </div>
-<div class="quarto-post image-right" data-index="3" data-categories="T3BlbiUyMERhdGElMkNEYXRhJTIwQW5vbnltaXR5" data-listing-file-modified-sort="1776670245281" data-listing-reading-time-sort="1" data-listing-word-count-sort="46">
+<div class="quarto-post image-right" data-index="3" data-categories="T3BlbiUyMERhdGElMkNEYXRhJTIwQW5vbnltaXR5" data-listing-file-modified-sort="1776671085829" data-listing-reading-time-sort="1" data-listing-word-count-sort="46">
 <div class="thumbnail"><a href="../../training/data-management/maintaining-privacy-with-open-data.html" class="no-external">
 
 <img loading="lazy" src="../../training/images/data_privacy.svg" class="thumbnail-image">
