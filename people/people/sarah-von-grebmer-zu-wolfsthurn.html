@@ -247,11 +247,11 @@
                     
 
                     <div class="people-socials">
-                        <a href="https://orcid.org/0000-0002-6413-3895" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Link to orcid">
-              <i class="fa-brands fa-orcid"></i>
-            </a>
                         <a href="https://github.com/SvonGrebmer" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Link to github">
               <i class="fa-brands fa-github"></i>
+            </a>
+                        <a href="https://orcid.org/0000-0002-6413-3895" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Link to orcid">
+              <i class="fa-brands fa-orcid"></i>
             </a>
                       </div>
           
@@ -384,7 +384,7 @@
         }
           var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
           var mailtoRegex = new RegExp(/^mailto:/);
-            var filterRegex = new RegExp("https:\/\/www\.osc\.lmu\.de\/");
+            var filterRegex = new RegExp('/' + window.location.host + '/');
           var isInternal = (href) => {
               return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
           }

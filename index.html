@@ -82,10 +82,10 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-project','listing-website','listing-format','listing-engines','listing-language','listing-execute','listing-page-navigation','listing-sidebar','listing-title','listing-date','listing-subtitle','listing-categories','listing-path','listing-outputHref','listing-date-modified','listing-author','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-word-count',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
+      valueNames: ['listing-project','listing-profiles','listing-website','listing-format','listing-engines','listing-language','listing-execute','listing-page-navigation','listing-sidebar','listing-title','listing-date','listing-subtitle','listing-categories','listing-path','listing-outputHref','listing-date-modified','listing-author','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-word-count',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
       page: 25,
     pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
-      searchColumns: ["listing-project","listing-website","listing-format","listing-engines","listing-language","listing-execute","listing-page-navigation","listing-sidebar","listing-title","listing-date","listing-subtitle","listing-categories","listing-path","listing-outputHref","listing-date-modified","listing-author","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
+      searchColumns: ["listing-project","listing-profiles","listing-website","listing-format","listing-engines","listing-language","listing-execute","listing-page-navigation","listing-sidebar","listing-title","listing-date","listing-subtitle","listing-categories","listing-path","listing-outputHref","listing-date-modified","listing-author","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -111,10 +111,10 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-project','listing-website','listing-format','listing-engines','listing-language','listing-execute','listing-page-layout','listing-title','listing-categories','listing-event','listing-links','listing-event_description','listing-instructors','listing-helpers','listing-contact','listing-organizers','listing-host','listing-template','listing-filters','listing-path','listing-outputHref','listing-author','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-word-count','listing-presenters','listing-date','listing-date-modified',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] }],
+      valueNames: ['listing-project','listing-profiles','listing-website','listing-format','listing-engines','listing-language','listing-execute','listing-page-layout','listing-title','listing-categories','listing-event','listing-links','listing-event_description','listing-instructors','listing-helpers','listing-contact','listing-organizers','listing-host','listing-template','listing-filters','listing-path','listing-outputHref','listing-author','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-word-count','listing-presenters','listing-date','listing-date-modified',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] }],
       page: 25,
     pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
-      searchColumns: ["listing-project","listing-website","listing-format","listing-engines","listing-language","listing-execute","listing-page-layout","listing-title","listing-categories","listing-event","listing-links","listing-event_description","listing-instructors","listing-helpers","listing-contact","listing-organizers","listing-host","listing-template","listing-filters","listing-path","listing-outputHref","listing-author","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count","listing-presenters","listing-date","listing-date-modified"],
+      searchColumns: ["listing-project","listing-profiles","listing-website","listing-format","listing-engines","listing-language","listing-execute","listing-page-layout","listing-title","listing-categories","listing-event","listing-links","listing-event_description","listing-instructors","listing-helpers","listing-contact","listing-organizers","listing-host","listing-template","listing-filters","listing-path","listing-outputHref","listing-author","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count","listing-presenters","listing-date","listing-date-modified"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -1429,7 +1429,7 @@ window.Quarto = {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/www\.osc\.lmu\.de\/");
+        var filterRegex = new RegExp('/' + window.location.host + '/');
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
