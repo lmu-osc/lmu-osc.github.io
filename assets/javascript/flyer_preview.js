@@ -21,6 +21,8 @@ function injectFlyerStyles() {
     .flyer-media {
       display: block;
       width: 100%;
+      max-width: 80%;
+      margin: 0 auto;
       max-height: 70vh;
       object-fit: contain;
       border: 2px solid #000;
@@ -97,7 +99,7 @@ document.addEventListener("DOMContentLoaded", () => {
       <div class="flyer-wrapper">
         <div class="flyer-preview">${preview}</div>
         <a href="${src}" target="_blank" rel="noopener noreferrer" class="flyer-link">
-          Open full flyer ↗
+          Open Full Flyer ↗
         </a>
       </div>
     `;
