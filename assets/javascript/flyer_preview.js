@@ -84,13 +84,20 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
 
+    const flyerLabel = (
+      container.dataset.label ||
+      container.dataset.title ||
+      container.dataset.alt ||
+      "Flyer preview"
+    ).trim();
+
     const ext = src.split(".").pop().toLowerCase();
     let preview = "";
 
     if (["jpg", "jpeg", "png", "webp", "gif"].includes(ext)) {
-      preview = `<img src="${src}" loading="lazy" class="flyer-media" alt="Flyer preview" />`;
+      preview = `<img src="${src}" loading="lazy" class="flyer-media" alt="${flyerLabel}" />`;
     } else if (ext === "pdf") {
-      preview = `<iframe src="${src}" loading="lazy" class="flyer-media flyer-pdf" title="Flyer preview"></iframe>`;
+      preview = `<iframe src="${src}" loading="lazy" class="flyer-media flyer-pdf" title="${flyerLabel}"></iframe>`;
     } else {
       preview = '<div class="flyer-unsupported">Preview not available</div>';
     }
@@ -98,7 +105,7 @@ document.addEventListener("DOMContentLoaded", () => {
     container.innerHTML = `
       <div class="flyer-wrapper">
         <div class="flyer-preview">${preview}</div>
-        <a href="${src}" target="_blank" rel="noopener noreferrer" class="flyer-link">
+        <a href="${src}" target="_blank" rel="noopener noreferrer" class="flyer-link" title="${flyerLabel}">
           Open Full Flyer ↗
         </a>
       </div>

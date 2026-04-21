@@ -180,8 +180,8 @@
 
   $body$
 
-  $if(event.flyer)$
-    <div class="flyer" data-src="$event.flyer$"></div>
+  $if(flyer_data.src)$
+    <div class="flyer" data-src="$flyer_data.src$"$if(flyer_data.label)$ data-label="$flyer_data.label$"$endif$></div>
   $endif$
 
 

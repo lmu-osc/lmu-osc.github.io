@@ -121,6 +121,55 @@ local function filter_people_list(people_list)
   return filtered
 end
 
+local function build_flyer_data(meta)
+  local event = safe_get(meta, "event", {})
+  local flyer = safe_get(event, "flyer", nil)
+
+  if flyer == nil then
+    return nil
+  end
+
+  local file = ""
+  local title = ""
+  local alt = ""
+
+  if type(flyer) == "table" then
+    local flyer_entry = flyer
+
+    -- Allow list syntax, using the first flyer entry.
+    if flyer_entry[1] ~= nil then
+      flyer_entry = flyer_entry[1]
+    end
+
+    if type(flyer_entry) == "table" then
+      file = trim(safe_get(flyer_entry, "file", ""))
+      title = trim(safe_get(flyer_entry, "title", ""))
+      alt = trim(safe_get(flyer_entry, "alt", ""))
+    end
+
+    -- Backward compatibility: event.flyer: <path>
+    if file == "" then
+      file = trim(flyer)
+    end
+  else
+    file = trim(flyer)
+  end
+
+  if file == "" then
+    return nil
+  end
+
+  local label = title
+  if label == "" then
+    label = alt
+  end
+
+  return {
+    src = file,
+    label = label
+  }
+end
+
 local function build_event_data(meta)
   local event = safe_get(meta, "event", {})
 
@@ -136,6 +185,10 @@ local function build_event_data(meta)
 end
 function Meta(meta)
   meta.event_data = build_event_data(meta)
+  local flyer_data = build_flyer_data(meta)
+  if flyer_data then
+    meta.flyer_data = flyer_data
+  end
 
   meta.links = {
     registration = normalize_external_url(safe_get(meta, "links", {})["registration"]),
