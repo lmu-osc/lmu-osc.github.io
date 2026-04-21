@@ -95,7 +95,7 @@ format:
 <div class="accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle" id="accordionExample">
   <div class="accordion-item">
     <h2 class="accordion-header" id="headingOne">
-      <button class="accordion-button collapsed custom-accordion-btn fw-semibold fs-5" type="button" 
+      <button class="accordion-button collapsed fw-semibold fs-5" type="button" 
               data-bs-toggle="collapse" 
               data-bs-target="#collapseOne" 
               aria-expanded="false">
