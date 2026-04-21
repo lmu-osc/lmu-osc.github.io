@@ -39,42 +39,6 @@ h2 i, h3 i{ color: var(--orc-green); margin-right: .5rem; }
 
 .mark,.quarto-xref { background: white; color:var(--orc-gray-400); font-weight:600; font-style: italic; text-decoration: none;}
 
-
-/*Accordion styles*/
-.accordion-item > h2#headingOne.accordion-header {
-  padding-bottom: 0;
-}
-
-.custom-accordion-btn {
-  justify-content: center !important;
-  position: relative;
-  text-align: center;
-}
-
-.custom-accordion-btn::after {
-  position: absolute;
-  right: 1rem;
-}
-.custom-accordion-btn:focus {
-  box-shadow: none!important;
-} 
-
-
-.accordion-body .btn.btn-primary {
-  color: white;
-  background: #00883A;
-  border-color: #00883A;
-  transition: all .2s ease;
-}
-
-.accordion-body .btn.btn-primary:hover,
-.accordion-body .btn.btn-primary:focus,
-.accordion-body .btn.btn-primary:active {    
-  color: white !important;
-  background: #004d1d !important;
-  border-color:#004d1d!important;
-}
-
 .orc-grid-tools {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
