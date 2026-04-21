@@ -13,6 +13,13 @@ jobs:
     steps:
       - uses: actions/checkout@v5
 
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install German dictionary for cspell
+        run: npm install --no-save @cspell/dict-de-de
+
       - name: Spell check site source files
         uses: streetsidesoftware/cspell-action@v8
         with:

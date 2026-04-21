@@ -1,9 +1,12 @@
 version: "0.2"
-language: en-US,de-DE
+language: en-US,de
+
+import:
+  - "@cspell/dict-de-de/cspell-ext.json"
 
 dictionaries:
   - en_US
-  - de_DE
+  - de-de
 
 allowCompoundWords: true
 useGitignore: true
