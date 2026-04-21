@@ -1,4 +1,4 @@
-const FLYER_STYLE_ID = "event-flyer-preview-styles";
+const FLYER_STYLE_ID = "flyer-preview-styles";
 
 function injectFlyerStyles() {
   if (document.getElementById(FLYER_STYLE_ID)) {
