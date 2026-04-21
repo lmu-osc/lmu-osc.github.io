@@ -8,7 +8,6 @@
    ======================================== */
 
 :root {
-  --orc-green: var(--osc-accent);
   --orc-green-dark: #006426;
   --orc-green-darker: #004d1d;
   --orc-green-light: #f0f9f6;
@@ -33,49 +32,12 @@
    2. BASE & LAYOUT
    ======================================== */
 
-h2 i, h3 i{ color: var(--orc-green); margin-right: .5rem; }
+h2 i, h3 i{ color: var(--osc-accent); margin-right: .5rem; }
 
-* a { color: var(--orc-green); }
+* a { color: var(--osc-accent); }
 
 .mark,.quarto-xref { background: white; color:var(--orc-gray-400); font-weight:600; font-style: italic; text-decoration: none;}
 
-.orc-grid-tools {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  gap: .75rem;
-  margin: .75rem 0;
-}
-
-.orc-grid-tools > * {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-
-/* Two-column layout */
-.orc-grid-2col {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
-  margin-top: 1rem;
-}
-
-.orc-two-column {
-  display: grid;
-  grid-template-rows: auto auto;
-  gap: 2rem;
-  margin-bottom: 1rem;
-}
-
-.orc-column{
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 1rem;
-  align-items: stretch;
-}
-.orc-column > h4:first-child { color: var(--orc-gray-600); }
-.orc-column > h4:first-child i { color: var(--orc-green); }
 
 /* ========================================
    3. CARDS
@@ -94,7 +56,6 @@ h2 i, h3 i{ color: var(--orc-green); margin-right: .5rem; }
 .orc-card-tool-icon img { width: 1.5rem; height: 1.5rem; }
 .orc-card-tool h4 { font-size: 1.125rem; font-weight: 600; color: var(--orc-gray-700); line-height: 1.3; }
 .orc-card-tool p { font-size: 1rem; color: var(--orc-gray-400);line-height: 1.5; }
-
 
 .orc-grid-tools a,
 .orc-column a {
@@ -145,7 +106,7 @@ h2 i, h3 i{ color: var(--orc-green); margin-right: .5rem; }
   user-select: none;
 }
 
-.orc-details-panel summary:hover { color: var(--orc-green); }
+.orc-details-panel summary:hover { color: var(--osc-accent); }
 .orc-details-panel summary::-webkit-details-marker { display: none; }
 
 .orc-details-panel summary i {
@@ -155,7 +116,7 @@ h2 i, h3 i{ color: var(--orc-green); margin-right: .5rem; }
   width: 3rem;
   height: 3rem;
   background: var(--orc-green-light);
-  color: var(--orc-green);
+  color: var(--osc-accent);
   font-size: 1.5rem;
   border-radius: var(--orc-radius);
   flex-shrink: 0;
@@ -194,7 +155,7 @@ h2 i, h3 i{ color: var(--orc-green); margin-right: .5rem; }
   background: linear-gradient(135deg, rgba(0, 136, 58, 0.08) 0%, rgba(0, 100, 38, 0.08) 100%);
   padding: 2rem;
   border-radius: var(--orc-radius-md);
-  border-left: 5px solid var(--orc-green);
+  border-left: 5px solid var(--osc-accent);
   margin: 3.5rem 0;
   line-height: 1.7rem;
   color: var(--orc-gray-600);
@@ -223,12 +184,12 @@ div.callout .callout-title { font-size: 1.125rem !important; font-weight: 700 !i
 div.callout .callout-body, div.callout .callout-body :is(p, ul, li) { font-size: 1rem !important; line-height: 1.6 !important; }
 
 div.callout-note.callout-style-simple {
-  border-left: 5px solid var(--orc-green) !important;
+  border-left: 5px solid var(--osc-accent) !important;
   background: var(--orc-green-light) !important;
   border-radius: .5rem !important;
 }
 
-div.callout-note.callout-style-simple .callout-title { color: var(--orc-green) !important; }
+div.callout-note.callout-style-simple .callout-title { color: var(--osc-accent) !important; }
 div.callout-note.callout-style-simple .callout-icon { width: 2rem; height: 2rem; }
 div.callout-note.callout-style-simple .callout-icon::before {
   content: '' !important;
@@ -258,8 +219,8 @@ details .callout { margin: .75rem 0; }
   margin-bottom: -2px;
 }
 
-.panel-tabset .nav-tabs .nav-link:hover { color: var(--orc-green); border-bottom-color: var(--orc-green-light); background: transparent; }
-.panel-tabset .nav-tabs .nav-link.active { color: var(--orc-green); border-bottom-color: var(--orc-green); background: transparent; font-weight: 600; }
+.panel-tabset .nav-tabs .nav-link:hover { color: var(--osc-accent); border-bottom-color: var(--orc-green-light); background: transparent; }
+.panel-tabset .nav-tabs .nav-link.active { color: var(--osc-accent); border-bottom-color: var(--osc-accent); background: transparent; font-weight: 600; }
 .panel-tabset .tab-content { padding: 1.25rem 0; margin-top: .5rem; border: none; }
 .panel-tabset .tab-pane { border: none; }
 
@@ -270,46 +231,6 @@ details .callout { margin: .75rem 0; }
 .cycle-container { text-align: center; margin: 2rem auto; max-width: 600px; }
 .cycle-container svg { max-width: 100%; height: auto; }
 .cycle-container em { display: block; margin-top: 1rem; font-size: 1rem; color: var(--orc-gray-500); }
-
-/*.phase-menu-horizontal {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  justify-content: center;
-  margin: 2rem auto;
-  max-width: 900px;
-}
-
-.phase-btn-h {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 1.25rem .75rem;
-  background: var(--osc-bg);
-  border: 2px solid var(--orc-gray-200);
-  border-radius: var(--orc-radius-lg);
-  color: var(--orc-gray-700);
-  text-decoration: none;
-  transition: all .3s cubic-bezier(.4,0,.2,1);
-  cursor: pointer;
-  font-weight: 600;
-  box-shadow: var(--orc-shadow-sm);
-  width: 180px;
-  height: 110px;
-  text-align: center;
-}
-
-.phase-btn-h:hover {
-  transform: translateY(-5px);
-  box-shadow: var(--orc-shadow-md);
-  border-color: var(--orc-green);
-  background: var(--orc-green-light);
-}
-
-.phase-btn-h:focus { outline: none; box-shadow: 0 0 0 3px rgba(0,136,58,.3); }
-.phase-btn-h i { font-size: 1.75rem; margin-bottom: .5rem; color: var(--orc-green); }
-.phase-btn-h span { line-height: 1.3; }*/
 
 /* ========================================
    8. SVG DIAGRAM
@@ -324,7 +245,7 @@ svg a { text-decoration: none; cursor: pointer; }
 }
 
 .phase-group:hover { filter: brightness(1.1) drop-shadow(0 0 8px rgba(0,136,58,.5)); transform: scale(1.02); }
-.phase-group:hover path { stroke: white; stroke-width: 2px; stroke-opacity: .7; }
+.phase-group:hover path { stroke: #fff; stroke-width: 2px; stroke-opacity: .7; }
 svg:has(.phase-group:hover) .phase-group:not(:hover) { opacity: .6; filter: brightness(.95); }
 .phase-group:active { transform: scale(.98); }
 .phase-group:focus { outline: none; filter: drop-shadow(0 0 8px rgba(0,136,58,.6)); }
@@ -415,13 +336,8 @@ svg :is(text, tspan) { font-family: inherit !important; font-weight: bold; point
    11. RESPONSIVE
    ======================================== */
 
-@media (min-width: 1200px) {
-  .orc-grid-tools { grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); }
-}
-
 
 @media (max-width: 600px) {
-  .orc-two-column { grid-template-columns: 1fr; }
   .phase-menu-horizontal { flex-direction: column; align-items: center; }
   .phase-btn-h { width: 100%; max-width: 300px; flex-direction: row; justify-content: flex-start; padding: 1rem 1.5rem; height: auto; }
   .phase-btn-h i { margin-bottom: 0; margin-right: 1rem; font-size: 1.5rem; }
