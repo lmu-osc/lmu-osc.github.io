@@ -24,6 +24,9 @@ Runs a link check across markdown, HTML, reStructuredText, and Quarto files. If 
 ### `publish.yml`
 Builds and publishes the Quarto site to GitHub Pages on push to `main`, and can also be triggered manually or on a schedule.
 
+### `spell-check.yml`
+Runs cspell on site source content that appears on the website. The check enforces American English spellings, allows German, and fails on configured British variants to maintain spelling consistency.
+
 ## Supporting Files
 
 - `add-new-year-to-events.md` is the issue template used by the year reminder workflow.

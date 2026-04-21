@@ -1,0 +1,32 @@
+name: Spell Check
+
+on:
+  workflow_dispatch:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  cspell:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Spell check site source files
+        uses: streetsidesoftware/cspell-action@v8
+        with:
+          config: cspell.config.yaml
+          strict: true
+          incremental_files_only: false
+          files: |
+            ./404.qmd
+            ./index.qmd
+            ./about/**/*.{qmd,md,html,ejs,yml,yaml}
+            ./events/**/*.{qmd,md,html,ejs,yml,yaml}
+            ./footer/**/*.{qmd,md,html,ejs,yml,yaml}
+            ./home/**/*.{qmd,md,html,ejs,yml,yaml}
+            ./news/**/*.{qmd,md,html,ejs,yml,yaml}
+            ./partners/**/*.{qmd,md,html,ejs,yml,yaml}
+            ./people/**/*.{qmd,md,html,ejs,yml,yaml}
+            ./training/**/*.{qmd,md,html,ejs,yml,yaml}

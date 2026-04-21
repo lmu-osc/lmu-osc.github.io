@@ -1,0 +1,71 @@
+version: "0.2"
+language: en-US,de-DE
+
+dictionaries:
+  - en_US
+  - de_DE
+
+allowCompoundWords: true
+useGitignore: true
+
+ignorePaths:
+  - .git
+  - .github
+  - _site/**
+  - _freeze/**
+  - renv/**
+  - site_libs/**
+  - assets/bootstrap-5.3.8-dist/**
+  - assets/fontawesome-free-7.1.0-web/**
+  - "**/*.svg"
+  - "**/*.png"
+  - "**/*.jpg"
+  - "**/*.jpeg"
+  - "**/*.gif"
+  - "**/*.webp"
+  - "**/*.pdf"
+
+# Reject common British spellings to keep US spelling consistent.
+flagWords:
+  - colour
+  - colours
+  - coloured
+  - colouring
+  - organise
+  - organised
+  - organising
+  - organisation
+  - organisations
+  - recognise
+  - recognised
+  - recognising
+  - analyse
+  - analysed
+  - analysing
+  - behaviour
+  - behaviours
+  - centre
+  - centres
+  - metre
+  - metres
+  - labour
+  - travelled
+  - travelling
+  - traveller
+  - cancelling
+  - cancelled
+  - licence
+  - practise
+  - artefact
+
+words:
+  - preregistration
+  - preregister
+  - reproducibility
+  - OpenSci
+  - Quarto
+  - Matomo
+  - LMU
+  - OSC
+  - Forschendes
+  - Datenmanagement
