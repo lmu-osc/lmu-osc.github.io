@@ -75,8 +75,6 @@ The [LMU Open Science Center coordinator](../../about_us/coordinator/index.llms.
 
  
 
-![Flyer Summer School 2023](images/2023-09-11-open-research-summer-school-flyer.png) 
-
 #### Presenters
 
 - Prof. Dr. Uli Dirnagl

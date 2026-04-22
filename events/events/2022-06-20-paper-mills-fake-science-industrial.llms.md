@@ -31,8 +31,6 @@ Please contact Prof. Bernhard Sabel at [SIA@med.ovgu.de](mailto:SIA@med.ovgu.d
 
  
 
-![Symposium 20.06.22 Flyer](images/2022-06-20-paper-mills-fake-science-industrial-flyer.jpeg)
-
 #### Presenters
 
 - Bernhard Sabel
