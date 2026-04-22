@@ -2,10 +2,6 @@
 
 OSC as one of the monthly winners
 
-Awards/Recognition
-
-Published
-
 January 21, 2021
 
 In March 2020, the [Open Science Center (OSC) was awarded the title “University Pearl”](../../news/news/2020-03-09-hochschulperle-award.llms.md "OSC has been awarded the title of "Hochschulperle" ("University Pearl") by the Stifterverband") by the Stifterverband. Each month another project had been honoured. Now, the Stifterverband awarded the title of “University Pearl 2020” to the winning project “Courage and civil courage in democracy”, supporting it with a prize of 3000€ . There was an open election between all twelve monthly winners of 2020 which took place between January 20th 2021, 12am, and January 21st 2021, 12am. All information about the election results can be found at the [homepage of the “University Pearl”](https://www.stifterverband.org/hochschulperle/2020). There you can also find short presentations of all projects awarded the monthly title “University Pearl” within last year’s competitions. In 2020, the award had the overall theme of “Open Science”. Interesting institutions and projects were awarded alongside the OSC.

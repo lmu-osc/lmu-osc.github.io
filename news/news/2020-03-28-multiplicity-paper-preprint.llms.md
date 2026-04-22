@@ -2,10 +2,6 @@
 
 ‘The multiplicity of analysis strategies jeopardizes replicability: Lessons learned across disciplines’ by S. Hoffmann, F. Schönbrodt, R. Elsas, R. Wilson, U. Strasser and A. Boulesteix
 
-Publications
-
-Published
-
 March 28, 2020
 
 Available from Meta-Arxiv, preprint DOI: [10.31222/osf.io/afb9p](https://doi.org/10.31222/osf.io/afb9p)

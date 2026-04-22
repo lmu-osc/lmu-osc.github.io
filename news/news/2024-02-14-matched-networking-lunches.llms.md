@@ -2,10 +2,6 @@
 
 Get inspired from interdisciplinary discussions with like-minded individuals!
 
-Call for Application
-
-Published
-
 February 14, 2024
 
 ![matchednetworkinglunches](images/matchednetworkinglunches.png)

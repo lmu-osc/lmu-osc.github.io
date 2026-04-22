@@ -2,10 +2,6 @@
 
 The LMU Open Science Center is a founding member
 
-Announcement
-
-Published
-
 February 1, 2021
 
 ![](images/grn-logo.png)

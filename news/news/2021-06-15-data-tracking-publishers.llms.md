@@ -2,10 +2,6 @@
 
 German Research Foundation issued a briefing paper about the digital tracking of researchers by academic publishers
 
-Announcement
-
-Published
-
 June 15, 2021
 
 According to recent [briefing paper issued by the German Research Foundation](https://www.dfg.de/en/research_funding/programmes/infrastructure/lis/awbi/), there is a risk that the shift in the commercial business model towards data analytics will result in the knowledge society becoming privatised. Ultimately, it might no longer be the public sector but increasingly private companies that are privy to knowledge about research content and trends, its institutions and stakeholders.

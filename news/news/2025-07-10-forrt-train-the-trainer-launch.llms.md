@@ -1,11 +1,5 @@
 # Launching of LMU-FORRT Train-the-Trainer Program
 
-Announcement
-
-The LMU Open Science Center is excited to announce the launch of the Train-the-Trainer program in partnership with the Framework for Open and Reproducible Research Training (FORRT) to promote open research practices across disciplines.
-
-Published
-
 July 10, 2025
 
 **LMU Open Science Center launches Train-the-Trainer program to advance open research practices in partnership with the Framework for Open and Reproducible Research Training (FORRT)**

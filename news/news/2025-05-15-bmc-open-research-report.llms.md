@@ -2,12 +2,6 @@
 
 Evidence for an implementation gap and demand for training
 
-Reports
-
-The LMU Open Science Center has published a report on the awareness, adoption, and barriers to open research practices among researchers at the Biomedical Center of LMU Munich, revealing an implementation gap and a strong demand for training and support.
-
-Published
-
 May 15, 2025
 
 In order to find out about researchers’ current awareness, perceived barriers, and need for support related to open research practices and responsible research assessment, the LMU Open Science Center (OSC) conducted a survey among researchers at the Biomedical Center (BMC) of LMU Munich between December 2024 and January 2025.

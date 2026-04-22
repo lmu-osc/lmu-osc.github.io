@@ -2,10 +2,6 @@
 
 This year’s thematic focus will be on FAIR principles of research data (i.e. findable, accessible, interoperable, and reusable) and supporting research data infrastructures.
 
-Event Highlights
-
-Published
-
 January 29, 2018
 
 [The Open Science Conference 2018](https://www.open-science-conference.eu), organized by the Leibniz Research Alliance Science 2.0, is dedicated to the Open Science movement and provides a unique forum for researchers, librarians, practitioners, infrastructure providers, and policy makers to discuss and exchange their ideas and experiences. The thematic focus of this year’s conference will be on FAIR principles of research data (i.e. findable, accessible, interoperable, and reusable) and supporting research data infrastructures.

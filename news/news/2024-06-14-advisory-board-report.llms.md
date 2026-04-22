@@ -1,9 +1,5 @@
 # LMU Open Science Center Advisory Board Report 2024
 
-Reports
-
-Published
-
 June 14, 2024
 
 The [Advisory Board members](../../people/advisors.llms.md "Advisory Board") of the OSC (Dr. Tanita Casci, Prof. Dr. Ulrich Dirnagl, Dr. Chelle Gentemann, Dr. Bernhard Goodwin, Prof. Dr. Stephan Hartmann, Prof. Dr Richard McElreath) met with the Scientific Board, Managing Director, and Scientific Coordinator of the OSC for the first time on April 29, 2024.

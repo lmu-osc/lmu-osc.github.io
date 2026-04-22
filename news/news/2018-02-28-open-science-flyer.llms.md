@@ -1,9 +1,5 @@
 # Info flyer: Open science in 7 easy steps
 
-Announcement
-
-Published
-
 February 28, 2018
 
 Doing transparent and reproducible research might look complicated at first sight. This info flyer outlines in 7 really easy steps how you can increase the openness of your research workflow.

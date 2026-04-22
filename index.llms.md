@@ -71,7 +71,7 @@ News [View All News](news/index.llms.md)
 
 ###### Apr 13, 2026
 
-##### [Open Science Land: A travel guide](news/news/2026-04-15-os-land-book.llms.md)
+##### [Open Science Land: A Travel Guide](news/news/2026-04-15-os-land-book.llms.md)
 
 Newly published travel guide “Expedition Open Science Land: A travel guide for business research”
 

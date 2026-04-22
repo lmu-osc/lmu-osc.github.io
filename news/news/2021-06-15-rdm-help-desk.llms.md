@@ -1,9 +1,5 @@
 # The Help Desk for Research data management (RDM) at the LMU University Library
 
-Announcement
-
-Published
-
 June 15, 2021
 
 The [LMU University Library](https://www.en.ub.uni-muenchen.de/index.html "University Library") is an Institutional Member of the Open Science Center and encourages Open Access and Open Science. To support scholars and students of all LMU faculties with their RDM, the Universtiy Library has established the [RDM Help Desk](https://www.en.ub.uni-muenchen.de/writing/research_data/index.html "Research data") (“FDM-Beratungsstelle”).

@@ -2,10 +2,6 @@
 
 Welcome to the Open Science Center!
 
-New Members
-
-Published
-
 August 7, 2018
 
 The OSC welcomes the [**LMU-ifo Economics & Business Data Center (EBDC)**](../../members/institutional-members/ebdc1/index.llms.md "EBDC") as our latest institutional member!

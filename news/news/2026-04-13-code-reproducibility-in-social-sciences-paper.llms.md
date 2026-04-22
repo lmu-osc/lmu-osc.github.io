@@ -1,11 +1,5 @@
 # Code Reproducibility in Social Sciences
 
-Publications
-
-Code Sharing and Reproducibility in Social Sciences: Findings from a Recent Study
-
-Published
-
 April 12, 2026
 
 Explore how reproducible survey-based research is in the social sciences with this recent publication co-authored by OSC members, [Prof. Dr. Katrin Auspurg](../../people/people/katrin-auspurg.llms.md) and [Daniel Krähmer](../../people/people/daniel-kraehmer.llms.md), and their colleague, Laura Schächtele. It examines this topic by investigating the availability of code and materials needed to reproduce empirical findings.

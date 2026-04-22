@@ -2,10 +2,6 @@
 
 LMU‘s interdisciplinary Open Science Center (OSC) was formally inaugurated on May 8 2018. Its aim is to make scientific research more transparent and to strengthen its self-correcting mechanisms by facilitating the replication of published work. Here’s a portrait of the OSC.
 
-Announcement
-
-Published
-
 July 27, 2018
 
 *\[This is an updated English version of the LMU’s original [press release](https://www.lmu.de/de/newsroom/newsuebersicht/news/open-science-center-der-lmu-wird-eroeffnet-c401f3c0.html)\]*

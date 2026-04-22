@@ -1,9 +1,5 @@
 # The Carpentries (software, data, library) instructor training – call for application
 
-Call for Application
-
-Published
-
 November 13, 2023
 
 **Application form**: <https://tellmi.psy.lmu.de/formr/carpentries-application> **Deadline**: 13.11.2023 8:00 CET  

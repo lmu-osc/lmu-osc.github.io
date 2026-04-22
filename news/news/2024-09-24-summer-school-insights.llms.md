@@ -2,10 +2,6 @@
 
 Insights from the summer school 2024
 
-Event Highlights
-
-Published
-
 September 24, 2024
 
 This year, the 5-day-long Open Science Summer School organized by the **Max Planck Digital Library** and the **LMU Open Science Center** took place on September 9-13 in the new MPDL facilities in Laim, Munich. Forty early-career researchers had the opportunity to gain skills and knowledge to make their research more transparent, reproducible, and credible.

@@ -2,7 +2,7 @@
 
 | Date | Title | Categories |
 |----|----|----|
-| Apr 13, 2026 | [Open Science Land: A travel guide](../news/news/2026-04-15-os-land-book.llms.md) | Publications |
+| Apr 13, 2026 | [Open Science Land: A Travel Guide](../news/news/2026-04-15-os-land-book.llms.md) | Publications |
 | Apr 12, 2026 | [Code Reproducibility in Social Sciences](../news/news/2026-04-13-code-reproducibility-in-social-sciences-paper.llms.md) | Publications |
 | Apr 11, 2026 | [Awareness and Use of Open Research Practices: An International Survey](../news/news/2026-04-14-orp-awareness-and-use-international-survey.llms.md) | Publications |
 | Jul 22, 2025 | [Newsletter July 2025](../news/news/2025-07-22-newsletter-july.llms.md) | Newsletters |

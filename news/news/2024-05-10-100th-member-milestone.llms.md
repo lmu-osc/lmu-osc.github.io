@@ -1,9 +1,5 @@
 # The OSC reached 100 individual members!
 
-Announcement
-
-Published
-
 May 10, 2024
 
 With [Dr. Renata Topinkova](../../people/people/renata-topinkova.llms.md "Topinkova"), the OSC now counts 100 individual members. To celebrate this milestone, our 100th member will be offered a free reproducibility check for her next manuscript.

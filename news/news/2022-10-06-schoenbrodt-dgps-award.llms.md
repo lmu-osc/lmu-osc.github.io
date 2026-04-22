@@ -1,9 +1,5 @@
 # Felix Schönbrodt receives the DGPs Sponsorship Award for Quality Assurance in Psychology
 
-Awards/Recognition
-
-Published
-
 October 6, 2022
 
 On September 12, Felix Schönbrodt, managing director of the OSC, received the Promotion Prize for Quality Assurance in Psychology. He has been working for many years to anchor the topic of Open Science in research and teaching and in the training of young scientists.

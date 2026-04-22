@@ -2,10 +2,6 @@
 
 In November 2017 the „Open Science Center“ (OSC) was founded at LMU Munich, with the goal to promote open, transparent and credible science.
 
-Announcement
-
-Published
-
 November 16, 2017
 
 In recent years, headlines have repeatedly reported that scientific results could not be reproduced, even under the same experimental conditions. The speaker of the newly founded LMU Open Science Center (LMU OSC), sociologist Prof. Dr. Katrin Auspurg, explains these alarming findings: “Competition for funding and professorships has led people to publish as many articles as possible in the shortest time possible in a marketing-effective way. This incentive structure often negatively affects the truthfulness of published research.”

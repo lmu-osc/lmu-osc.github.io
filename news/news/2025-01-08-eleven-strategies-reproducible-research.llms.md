@@ -2,10 +2,6 @@
 
 by the LMU Open Science Center
 
-Publications
-
-Published
-
 January 8, 2025
 
 In an age where trust in science is critical, making research open and reproducible is not just ideal—it is essential. Some members of the LMU Open Science Center have contributed to the publication [“Eleven strategies for making reproducible research and open science training the norm at research institutions”](https://elifesciences.org/articles/89736), which provides a detailed roadmap for implementing transparent and reproducible research at institutions. At LMU Munich, many of these strategies have already been put into practice.

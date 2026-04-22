@@ -1,9 +1,5 @@
 # LMU Open Science Center Impact Report 2017 – 2023
 
-Reports
-
-Published
-
 December 7, 2023
 
 We compiled an **impact report from 2017-2023** which we are excited to share with you here: <https://doi.org/10.5281/zenodo.10285395>

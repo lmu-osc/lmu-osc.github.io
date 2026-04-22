@@ -2,10 +2,6 @@
 
 Candidates for a professorship position in clinical psychology are asked to provide a statement about their open science practice
 
-Announcement
-
-Published
-
 January 18, 2018
 
 In 2015, the Department Psychology of the LMU Munich started to [require an open science statement](http://www.nicebread.de/open-science-hiring-practices/) from applicants for a professorship position. Since then, four more professorship were announced using the same requirement:
