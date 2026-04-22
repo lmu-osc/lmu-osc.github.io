@@ -30,6 +30,7 @@
   $if(math)$
   $math$
   $endif$
+  <script src="/assets/javascript/flyer_preview.js" defer></script>
 </head>
 
 <body>
@@ -179,6 +180,9 @@
 
   $body$
 
+  $if(flyer_data.src)$
+    <div class="flyer" data-src="$flyer_data.src$"$if(flyer_data.label)$ data-label="$flyer_data.label$"$endif$></div>
+  $endif$
 
 
   $if(presenters)$
@@ -239,9 +243,6 @@
     </p>
   </div>
   $endif$
-
-
-
 
   $for(include-after)$
   $include-after$

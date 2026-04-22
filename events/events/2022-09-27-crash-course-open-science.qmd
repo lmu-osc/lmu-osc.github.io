@@ -17,6 +17,9 @@ event:
     primary: English
     primary-code: en
     detail: ''
+  flyer: 
+    - file: images/2022-09-27-crash-course-open-science-flyer.jpg
+      title: "3-Day Crash Course in Open Science Flyer" 
 links:
   registration: ''
   materials: https://osf.io/bvf3c/
@@ -65,7 +68,7 @@ filters:
 <li><strong>Biases &amp; Common statistical mistakes</strong></li>
 <li><strong>Data sharing &amp; Meta-analysis </strong></li>
 </ul>
-<div> <a href="2022-09-27-crash-course-open-science-schedule.pdf" target="_blank">
+<div> <a href="assets/2022-09-27-crash-course-open-science-schedule.pdf" target="_blank">
   Download the full programme here (PDF)
 </a></div>
 <br>
@@ -79,11 +82,6 @@ filters:
 <p>Following acceptance, we require a signed form from the supervisor/PI to indicate that they will support the use of transparent and reproducible practices in the applicant’s research project.</p>
 <p><strong>Contact</strong></p>
 <p>Please contact the LMU Open Science Center Coordinator, Dr Malika Ihle: <a class="g-link-mail" href="mailto:malika.ihle@lmu.de" title="Send email to: malika.ihle@lmu.de">malika.ihle@lmu.de</a> with any questions.</p>
-<p>
-  <img src="images/2022-09-27-crash-course-open-science-flyer.jpg" 
-       alt="crash course flyer" 
-       style="width:80%;">
-</p>
 </div><div class="g-clear"></div>
 
 
