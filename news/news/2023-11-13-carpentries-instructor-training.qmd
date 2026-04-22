@@ -2,6 +2,10 @@
 title: "The Carpentries (software, data, library) instructor training – call for application"
 date: 2023-11-13
 categories: ["Call for Application"]
+
+template: templates/news-template.html
+filters:
+  - templates/process-news-yaml.lua
 ---
 
 

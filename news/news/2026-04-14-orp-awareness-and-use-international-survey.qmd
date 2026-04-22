@@ -3,6 +3,10 @@ title: "Awareness and Use of Open Research Practices: An International Survey"
 date: 2026-04-11
 categories: ["Publications"]
 description: "Awareness and Use of Open Research Practices: An International Survey of Researchers Across Disciplines"
+
+template: templates/news-template.html
+filters:
+  - templates/process-news-yaml.lua
 ---
 
 How widely are **Open Research Practices** (ORPs) known and used across the global research community? A new preprint based on an international survey of over 3,000 researchers across 45 countries and 24 disciplines provides insight into this question. This survey was circulated at LMU Munich through the LMU Open Science Center and co-authored by OSC coordinator [Dr. Malika Ihle](/people/people/malika-ihle.qmd) and managing director [Prof. Dr. Felix Schönbrodt](/people/people/felix-schoenbrodt.qmd).

@@ -3,6 +3,10 @@ title: "German Reproducibility Network was launched recently!"
 date: 2021-02-01
 subtitle: "The LMU Open Science Center is a founding member"
 categories: ["Announcement"]
+
+template: templates/news-template.html
+filters:
+  - templates/process-news-yaml.lua
 ---
 
 ![](images/grn-logo.png){width="20%"}
