@@ -131,7 +131,6 @@ local function build_flyer_data(meta)
 
   local file = ""
   local title = ""
-  local alt = ""
 
   if type(flyer) == "table" then
     local flyer_entry = flyer
@@ -144,7 +143,6 @@ local function build_flyer_data(meta)
     if type(flyer_entry) == "table" then
       file = trim(safe_get(flyer_entry, "file", ""))
       title = trim(safe_get(flyer_entry, "title", ""))
-      alt = trim(safe_get(flyer_entry, "alt", ""))
     end
 
     -- Backward compatibility: event.flyer: <path>
@@ -159,14 +157,9 @@ local function build_flyer_data(meta)
     return nil
   end
 
-  local label = title
-  if label == "" then
-    label = alt
-  end
-
   return {
     src = file,
-    label = label
+    label = title
   }
 end
 
