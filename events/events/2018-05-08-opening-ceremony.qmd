@@ -1,0 +1,82 @@
+---
+format: html
+title: OSC Opening Ceremony
+date: 2018-05-08        # e.g. "2026-09-24"
+categories: ['Event']
+
+# Event Information
+event:
+  start_date: 2018-05-08        
+  time: "18:00 - 20:00"           # e.g. "14:00 - 17:00 CET"
+  description: |
+    "Opening Ceremony for the LMU Open Science Center"
+  location:
+    name: "LMU Hauptgebäude, Senatssaal der LMU, Raum E110"
+    address: "Geschwister-Scholl-Platz 1, 80539 München" 
+    map_url: "http://www.uni-muenchen.de/raumfinder/index.html#/building/bw0000/map?room=001901238_#/building/bw0000/map?room=001901238_"
+  format:
+    type: "In-person"              
+    detail: ""
+  language:
+    primary: "German"
+    primary-code: "de"
+  
+# Registration and Materials
+links:
+  registration: "" 
+  materials: ""    
+  workshop_website: ""   
+
+# Event Description: appears in the Event card an optionally in the Event page itself
+event_description: |
+  <p>We kindly invite to the opening ceremony of the recently founded <a href="https://lmu-osc.github.io/">LMU Open Science Center</a>.</p>
+  <p>The center aims at fostering the engagement for open, transparent, and reproducible research. This goal is supported by: Research on research, training of researchers, and addressing relevant committees in order to create new and innovative incentive structures for open science (see <a href="http://www.osc.uni-muenchen.de">http://www.osc.uni-muenchen.de</a>).</p>
+  <p>We are delighted to announce that the event will be opened by <a href="https://www.lsm.bio.lmu.de/faculty/ehemalige/prof-barbara-conradt/index.html">Prof. Dr. Barbara Conradt</a>, Vice President for Research at the LMU. After a presentation of the OSC’s structure, goals, and key work areas, <a href="http://www.zbw.eu/de/forschung/klaus-tochtermann/">Prof. Dr. Klaus Tochtermann</a> (ZBW Kiel), one of the leading researchers in the Open Science community, will give a keynote on "Shaping the Future of Science: Open Science on a University, National, and European Level".</p>
+  <ul>
+    <li>When: Tuesday, May 8th, 2018, 18:00 to 20:00</li>
+    <li>Where: LMU Senate Hall (<a href="http://www.uni-muenchen.de/raumfinder/index.html#/building/bw0000/map?room=001901238_#/building/bw0000/map?room=001901238_">Room E110</a>), LMU Main Building, Geschwister-Scholl-Platz 1, 80539 Munich</li>
+  </ul>
+  <p>For planning and estimating the number of guests, we would be glad if you could RSVP via <a href="mailto:osc@lmu.de">osc@lmu.de</a>.</p>
+  <p>(The event language will be German).</p>
+  <p>Speaking for the OSC, with best regards,</p>
+  <p> <a href="/people/people/katrin-auspurg.qmd">Prof. Dr. Katrin Auspurg</a> (Speaker)<br> <a href="/people/people/felix-schoenbrodt.qmd">PD Dr. Felix Schönbrodt</a> (Managing Director)
+  </p>
+  <p>
+    <img src="images/2018-05-08-opening-ceremony-poster.png" width="40%" alt="Opening ceremony poster">
+  </p>
+  <div class="g-clear"></div>
+
+# Add as many instructors as needed in the format below
+presenters:
+  - name: "Prof. Dr. Barbara Conradt"
+    url: ""
+  - name: "Prof. Dr. Klaus Tochtermann"
+    url: 
+
+# Add as many helpers as needed in the format below
+helpers: 
+  - name: ""
+
+# Contact Information
+contact:
+  name: "Open Science Center (OSC)"
+  email: "osc@lmu.de"
+
+# Organizers can be individuals or institutions
+organizers:
+  - name: "Open Science Center (OSC)"
+    url: "https://lmu-osc.github.io/"
+
+template: templates/event-template.html
+filters:
+    - templates/process-event-yaml.lua
+---
+
+
+
+ 
+
+
+
+
+ 
