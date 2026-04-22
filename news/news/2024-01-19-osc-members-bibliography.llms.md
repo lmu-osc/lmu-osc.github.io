@@ -2,10 +2,6 @@
 
 Find collaborators and resources!
 
-Announcement
-
-Published
-
 January 19, 2024
 
 We have created a **bibliography of OSC members’ open science and meta-research work**, which you can access as:

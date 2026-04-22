@@ -1,9 +1,5 @@
 # Our project “From local to systemic implementation: Embedding open research in institutional practices” was funded by the Volkswagen Foundation!
 
-Awards/Recognition
-
-Published
-
 December 11, 2023
 
 We applied for the call “Pioneer Projects - Impetus for the German Research System” with a project entitled “**From local to systemic implementation: Embedding open research in institutional practices**” composed of two work packages: (i) a “**switch-to-open**” program, an innovative intervention designed to help individual research groups transition from closed to open workflows, (ii) a complementary **train-the-trainer** program focusing on empowering participants to become instructors of open research practices to increase uptake within their disciplines. We were granted **500.000€ for 3 years**!

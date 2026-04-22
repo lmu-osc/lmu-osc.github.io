@@ -2,10 +2,6 @@
 
 The OSC welcomes its first coordinator
 
-Announcement
-
-Published
-
 May 2, 2022
 
 ![](../../people/people/images/malika_ihle.jpg)

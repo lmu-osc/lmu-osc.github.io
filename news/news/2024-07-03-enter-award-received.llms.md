@@ -1,9 +1,5 @@
 # The LMU Open Science Center received the Open Access Enter-Award!
 
-Awards/Recognition
-
-Published
-
 July 3, 2024
 
 On July 3, the LMU Open Science Center, has received the [Open Access Enter-Award](https://enter-award.irights-lab.de) in the category competence building. This is a great recognition of our work and dedication to promoting open science.

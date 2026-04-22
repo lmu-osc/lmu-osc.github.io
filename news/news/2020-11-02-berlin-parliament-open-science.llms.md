@@ -2,10 +2,6 @@
 
 Discussion on the proposal ‘Strengthen good scientific practice and scientific integrity: Establish an interdisciplinary network office for Open Science and Research Quality’
 
-Event Highlights
-
-Published
-
 November 2, 2020
 
 The committee for science and research of the Berlin regional parliament invited six experts for Open Science to speak about a current proposal for a new Open Science office in Berlin. The statements included interesting political suggestions and topics around Open Science and the replications crisis in the social sciences. For instance, the importance of incentive structures in science (e.g. appointment committees), methodological education for students, and the collaboration between different Open Science stakeholders in Europe (e.g. [Open Access Office Berlin](https://www.open-research-berlin.de/index.html), [European Open Science Cloud](https://eosc-portal.eu/), [Network of Open Science Initiatives (NOSI)](https://osf.io/tbkzh/#!#!)) was highlighted. Furthermore, the experts described the Berlin history of existing institutions (e.g. [Open Access Office Berlin](https://www.open-research-berlin.de/index.html)) and actions (e.g. [Berlin Declaration](https://openaccess.mpg.de/67605/berlin_declaration_engl.pdf)) towards more transparency in science. Subsequently, the specific contents of the proposal (e.g. involvement of university libraries, responsibilities between politics and science) were discussed further by the politicians and related questions were asked to the experts. The recorded meeting gives an interesting overview of present political topics around Open Science.

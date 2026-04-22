@@ -2,10 +2,6 @@
 
 Welcome to the Open Science Center! We want to introduce our latest members.
 
-New Members
-
-Published
-
 June 25, 2018
 
 The OSC started in November 2017 with 17 founding members. It didn’t take long for the community to grow—nearly doubling in size. With these new members, we now span 11 disciplines across 10 of LMU’s 18 faculties.

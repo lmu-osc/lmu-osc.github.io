@@ -2,10 +2,6 @@
 
 Take a look at our new Open Science Toolbox! We offer a collection of helpful links to tools and resources that researchers can use to make their research more transparent and reproducible.
 
-Announcement
-
-Published
-
 May 16, 2018
 
 How exactly can I make my research more transparent? What software can I use? How do I find Open Access journals? Where do I find practical resources on specific Open Science practices? Where do I find workshop material for teaching Open Science?

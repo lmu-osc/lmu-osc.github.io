@@ -2,10 +2,6 @@
 
 The OSC welcomes the Department of Statistics as our latest institutional member!
 
-New Members
-
-Published
-
 March 3, 2020
 
 The Department of Statistics does research on development and application of statistical and machine learning methods. Statistical consulting and teaching are at the core of the department. It is located next to the Siegestor in Munich (see image).

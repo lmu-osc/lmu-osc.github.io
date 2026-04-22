@@ -2,10 +2,6 @@
 
 von 01/01/2025 bis 31/10/2027 - Bewerbungsschluss 15.07.2024!
 
-Job Ads
-
-Published
-
 July 15, 2024
 
 Das LMU Open Science Center (OSC) sucht ab dem **1. Januar 2025 bis zum 31. Dezember 2027** eine Vollzeit- oder zwei Teilzeitstellen als:

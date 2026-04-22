@@ -2,10 +2,6 @@
 
 The Leibniz Information Center for Economics interviewed 4 of our members for their Open Science Magazine
 
-Interviews
-
-Published
-
 May 10, 2022
 
 Dr. Doreen Siegfried from the Leibniz Information Center for Economics interviewed Andreas Peichl, Hans-Bernd Brosius, Anne-Laure Boulesteix and Andreas Beyerlein, which are all members of the OSC. The interviews were published in the Open Science Magazine of the Leibniz Information Center for Economics, which is directed at economic researchers.

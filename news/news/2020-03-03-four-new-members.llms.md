@@ -2,10 +2,6 @@
 
 The Open Science Center counts 54 members! We want to introduce our latest members.
 
-New Members
-
-Published
-
 March 3, 2020
 
 The number of individual members of the OSC is continuously increasing since its foundation in November 2017 with 17 founding members. With our 4 new members, from 4 different disciplines, the OSC counts 54 members from 15 disciplines.

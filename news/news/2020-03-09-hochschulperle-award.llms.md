@@ -1,9 +1,5 @@
 # OSC has been awarded the title of ‘Hochschulperle’ (‘University Pearl’) by the Stifterverband
 
-Awards/Recognition
-
-Published
-
 March 9, 2020
 
 *\[This is a translation of the LMU [press release](https://www.uni-muenchen.de/aktuelles/preise/2020/hochschulperle.html)\]  *

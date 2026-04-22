@@ -2,10 +2,6 @@
 
 The OSC welcomes the Biomedical Center (BMC) as new institutional member
 
-New Members
-
-Published
-
 March 29, 2022
 
 The Biomedical Center (BMC) on the Life Science Campus Großhadern/Martinsried brings together eight institutes and chairs of the Medical Faculty with about 55 research groups. As a center for applied cell science it bridges the gap between basic research and clinical application. The BMC researchers explore cell fates and cell plasticity from basic mechanisms to pathology and repair.

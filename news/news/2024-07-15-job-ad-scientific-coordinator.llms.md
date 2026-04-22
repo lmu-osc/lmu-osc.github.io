@@ -2,10 +2,6 @@
 
 from 01/01/2025 until 31/10/2027 - Application deadline: 15.07.2024!
 
-Job Ads
-
-Published
-
 July 15, 2024
 
 The LMU Open Science Center (OSC) is seeking to fill a full-time or two part-time temporary position(s) from **1st** **January 2025 to 31st December 2027**, as:

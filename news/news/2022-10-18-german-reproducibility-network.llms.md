@@ -1,9 +1,5 @@
 # The LMU Open Science Center joined the German Reproducibility Network!
 
-Announcement
-
-Published
-
 October 18, 2022
 
 The [German Reproducibility Network](https://reproducibilitynetwork.de) (GRN) is a multidisciplinary consortium that aims to increase transparency and trustworthiness of scientific research. The Network’s goals are to promote open research practices through training and community building, to conduct meta-research, and to work with stakeholders across the sector to ensure coordination of efforts at the national level. The GRN was established in 2021 and includes institutional members and a network of grassroots initiatives.

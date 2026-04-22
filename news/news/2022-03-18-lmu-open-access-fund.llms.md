@@ -2,10 +2,6 @@
 
 Open Access is becoming the standard publication model in the sciences.
 
-Announcement
-
-Published
-
 March 18, 2022
 
 The University Library promotes Open Access in a variety of ways, whether through agreements with publishers that grant researchers discounts on publication fees or by providing repositories and consulting services. This is because Open Access to research results enables the rapid and worldwide dissemination of scientific findings.

@@ -1,10 +1,4 @@
-# Open Science Land: A travel guide
-
-Publications
-
-Newly published travel guide “Expedition Open Science Land: A travel guide for business research”
-
-Published
+# Open Science Land: A Travel Guide
 
 April 13, 2026
 

@@ -1,9 +1,5 @@
 # The Faculty of Business Administration becomes an official Institutional Member
 
-New Members
-
-Published
-
 July 16, 2024
 
 [The Faculty of Business Administration – Munich School of Management](https://www.som.lmu.de/en/) has been supporting the OSC financially since 2021. In 2024, they became an official [Institutional Member](../../partners/institutional-members.llms.md "Institutional Member") , approved by their Faculty Committee with the following statement:
