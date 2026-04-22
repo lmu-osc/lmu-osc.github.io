@@ -32,8 +32,6 @@ Since Monday, March 18th, the [DAGStat Conference 2019](https://www.dagstat2019.
 
 Thank you very much for coming!
 
-See the [workshop website](https://www.dagstat2019.statistik.uni-muenchen.de/index.html) for more information.
-
 #### Presenters
 
 - Anne-Laure Boulesteix

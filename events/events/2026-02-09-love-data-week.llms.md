@@ -29,8 +29,6 @@ de/en
 
 The topic of research data management (RDM) is present in many areas of scientific work. Love Data Week raises awareness of current developments in research data and its management worldwide with numerous informational and training events.
 
-See the [workshop website](https://forschungsdaten.info/fdm-im-deutschsprachigen-raum/love-data-week-2026/) for more information.
-
 The topic of research data management (RDM) is present in many areas of scientific work. For several years now, Love Data Week has been raising awareness of current developments in research data and its management worldwide. Numerous information and training events take place during this week-long event.
 
 This year, the Love Data Week will take place from February 9th, 2026, to February 13th, 2026, under the motto “Where’s the Data?”.

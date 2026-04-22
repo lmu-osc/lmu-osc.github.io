@@ -39,8 +39,6 @@ Registration is mandatory, and participation requires setting up the software in
 
 The workshop is free and open to researchers, staff, and students of any discipline. It is funded by the Munich Center for Machine Learning and the LMU Open Science Center.
 
-See the [workshop website](https://lmu-osc.github.io/2026-03-11-LMU-Martinsried/) for more information.
-
 #### Instructors
 
 - Felix Henninger

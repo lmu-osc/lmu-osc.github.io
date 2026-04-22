@@ -29,8 +29,6 @@ English
 For more information, please go to <https://sites.google.com/view/epix-workshop/2025-data-ethics>.  
 **Target audience**: We hope to build inter- and transdisciplinary bridges by bringing together scholars who might otherwise not often have the chance to engage in dialogue on data ethics. We therefore invite anyone interested to join the conversation, regardless of disciplinary or methodological background. This workshop is free and open to members of LMU, TUM, and other institutions.
 
-See the [workshop website](https://sites.google.com/view/epix-workshop/2025-data-ethics) for more information.
-
 ## NA
 
 #### Questions?
