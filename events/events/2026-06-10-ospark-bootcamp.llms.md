@@ -21,6 +21,8 @@ en
 
 [ Register](https://events.digital-research.academy/event/131/registrations/82/)
 
+[ Event Website](https://events.digital-research.academy/event/131/)
+
 ## Overview
 
 The [OSPARK bootcamp](https://oscars-project.eu/projects/ospark-bootcamp-open-science-promotion-and-advocacy-research-knowledge-bootcamp) is all about creating visibility through outreach and marketing. It’s a learning opportunity for people working in or leading Open Research initiatives, services or infrastructures. The bootcamp focuses on the needs of Open Research ambassadors and provides ample space to exchange ideas and learn from one another.

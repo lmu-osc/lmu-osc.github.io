@@ -36,5 +36,3 @@ Daily lectures and tutorials to learn how to:
 - Choose and justify replication targets
 - Collaborate with students on replication projects
 - Write reproducible reports and get certified reproducible results
-
-See the [workshop website](https://forrt.org/LoveReplicationsWeek/) for more information.
