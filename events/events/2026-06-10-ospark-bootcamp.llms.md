@@ -27,10 +27,6 @@ The [OSPARK bootcamp](https://oscars-project.eu/projects/ospark-bootcamp-open-sc
 
 **This bootcamp consists of a 6-week online course and a 2-day onsite workshop in Munich, Germany.**
 
-![](images/2026-06-10-ospark-bootcamp-image.png)
-
-OSPARK bootcamp course structure overview
-
 **Online course** participants can expect:
 
 - Emails with information and tasks (including workbooks) every Tuesday and Thursday

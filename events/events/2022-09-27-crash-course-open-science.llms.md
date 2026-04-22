@@ -36,7 +36,7 @@ The three days crash course will consist of a series of lectures and workshops o
 - **Biases & Common statistical mistakes**
 - **Data sharing & Meta-analysis**
 
-[Download the full programme here (PDF)](2022-09-27-crash-course-open-science-schedule.pdf)
+[Download the full programme here (PDF)](assets/2022-09-27-crash-course-open-science-schedule.pdf)
 
   
 
@@ -53,8 +53,6 @@ Following acceptance, we require a signed form from the supervisor/PI to indicat
 **Contact**
 
 Please contact the LMU Open Science Center Coordinator, Dr Malika Ihle: [malika.ihle@lmu.de](mailto:malika.ihle@lmu.de "Send email to: malika.ihle@lmu.de") with any questions.
-
-![crash course flyer](images/2022-09-27-crash-course-open-science-flyer.jpg)
 
 #### Instructors
 

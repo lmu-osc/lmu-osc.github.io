@@ -41,8 +41,6 @@ With these developments, it is evident that profound changes will come in how ac
 
 The event will be chaired by [Dr Heidi Seibold](../../members/individual_members/associated-members/seibold1/index.llms.md "Seibold"), Open and Reproducible Data Science Consultant, and Associate Member of the LMU Open Science Center.
 
-![flyer](images/2023-03-13-responsible-procedures-research-assess-flyer.jpg) 
-
 #### Presenters
 
 - Prof. Dr. Toma Susi

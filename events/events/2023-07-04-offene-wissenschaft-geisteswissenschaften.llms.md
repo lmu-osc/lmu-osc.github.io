@@ -55,8 +55,6 @@ Die Veranstaltung wird moderiert von Prof. Dr. Ralf Ludwig (Open Science Cente
 
  
 
-![flyer_openhumanities](images/2023-07-04-offene-wissenschaft-geisteswissenschaften-flyer.png) 
-
 #### Presenters
 
 - Dr. Eckhart Arnold

@@ -20,10 +20,6 @@ English
 
   
 
-![FlyerOpenScienceSS24](images/2024-09-09-lmu-open-science-summer-school-flyer.png)
-
- 
-
 The LMU & MPG Open Science Summer School 2024 is organised by the [LMU Open Science Center (OSC)](https://www.osc.uni-muenchen.de/index.html) and the [Max Planck Digital Library (MPDL)](https://www.mpdl.mpg.de/en/).
 
 This intensive 5-day Open Science Summer School provides early career researchers with the knowledge and skills to make their research more **transparent, reproducible** and **credible** in the eyes of their peers, the public and funding agencies.

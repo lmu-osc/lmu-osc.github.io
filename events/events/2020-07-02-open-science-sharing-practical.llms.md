@@ -33,11 +33,6 @@ This time the workshop will be online, consisting of two parts:
 
 Detailed information can be found in the following flyer:
 
-![online_workshop_osim](images/2020-07-02-open-science-sharing-practical-flyer.jpg)  
-  
-
- 
-
 #### Presenters
 
 - Prof. Dr. Nikolaus Plensila
