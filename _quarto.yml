@@ -2,7 +2,8 @@ project:
   type: website
   output-dir: _site
   resources:
-    - assets/
+    - "**/assets/**"
+    - "**/images/**"
 
 
 profile:
