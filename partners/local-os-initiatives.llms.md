@@ -48,4 +48,4 @@ Regular informal meetups where researchers can discuss coding, data analysis, an
 
 Research Software Engineering group supporting high-quality research software development.
 
-[Learn More](local-os-initiatives/munichRSE.llms.md)
+[Learn More](local-os-initiatives/munich-rse.llms.md)
