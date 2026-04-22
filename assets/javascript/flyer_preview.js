@@ -94,7 +94,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const ext = src.split(".").pop().toLowerCase();
     let preview = "";
 
-    if (["jpg", "jpeg", "png", "webp", "gif"].includes(ext)) {
+    if (["jpg", "jpeg", "png", "webp", "gif", "svg", "tiff", "heic", "heif"].includes(ext)) {
       preview = `<img src="${src}" loading="lazy" class="flyer-media" alt="${flyerLabel}" />`;
     } else if (ext === "pdf") {
       preview = `<iframe src="${src}" loading="lazy" class="flyer-media flyer-pdf" title="${flyerLabel}"></iframe>`;
