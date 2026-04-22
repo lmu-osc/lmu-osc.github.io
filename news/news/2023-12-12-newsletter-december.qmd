@@ -2,6 +2,10 @@
 title: "Newsletter December 2023"
 date: 2023-12-12
 categories: ["Newsletters"]
+
+template: templates/news-template.html
+filters:
+  - templates/process-news-yaml.lua
 ---
 
 [Download the newsletter as PDF.](assets/newsletter_2023_december.pdf)

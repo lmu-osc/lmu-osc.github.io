@@ -7,8 +7,7 @@ flyer:
     - file: "assets/newsletter_2025_july.pdf"
       title: LMU OSC Newsletter - July 2025
 
-template: templates/news-template.html
-filters:
+template: templates/news-template.htmlfilters:
   - templates/process-news-yaml.lua
 ---
 

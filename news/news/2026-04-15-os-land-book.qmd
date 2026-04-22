@@ -3,6 +3,10 @@ title: "Open Science Land: A Travel Guide"
 date: 2026-04-13
 categories: ["Publications"]
 description: "Newly published travel guide “Expedition Open Science Land: A travel guide for business research”"
+
+template: templates/news-template.html
+filters:
+  - templates/process-news-yaml.lua
 ---
 
 How to see Open Science as an adventure? Two of our OSC members, [Prof. Dr. Marko Sarstedt](/people/people/marko-sarstedt.qmd) and [Dr. Susanne Adler](/people/people/susanne-adler.qmd), are part of the team that presents a refreshing and imaginative perspective on open science. 
