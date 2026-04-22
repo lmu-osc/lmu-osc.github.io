@@ -5,80 +5,64 @@ format:
     css: styles.css
 page-layout: full
 ---
-
 ```{=html}
-<head>
-    <div class="osc-init-header">
 
-        <!-- Title -->
-        <div class="osc-init-header__title">
-            <p class="osc-init-title__first">Munich RSE</p>
-            <p class="osc-init-title__last">Community</p>
-        </div>
-
-        <!-- About section -->
-        <div class="osc-init-about">
-
-            <!-- Text -->
-            <div class="osc-init-about__text">
-                <p>
-                    Munich RSE is the place to meet other research software engineers in Munich.
-                    We aim for a meeting every two months, followed by dinner and networking.
-                    Our meetings include short talks about anything related to RSE
-                    (research data management, software development, teaching/training, and more),
-                    as well as open discussions on topics brought into the agenda by any attendee.
-                </p>
-            </div>
-
-            <!-- Logo -->
-            <div class="osc-init-about__logo">
-                <img class="osc-init-about__logo-img" src="images/rse.png">
-            </div>
-
-        </div>
-        <!-- Get Involved -->
-        <div class="osc-init-involved">
-
-            <h2 class="osc-init-involved__title">Get Involved</h2>
-
-            <p class="osc-init-involved__text">
-                For questions regarding the group, feel free to contact, for example:
+<div>
+    <h2 class="mb-0" style="border-bottom: none;">
+        <span class="fw-bold">Munich RSE</span>
+        <span class="fw-light"> Community</span>
+    </h2>
+</div>
+<div class="container px-0">
+    <div class="row align-items-center">
+        <div class="col-md-9 p-0">
+            <p style="line-height: 1.6; text-align: justify;" class="m-0">
+               Munich RSE is the place to meet other research software engineers in Munich.
+               We aim for a meeting every two months, followed by dinner and networking.
+                Our meetings include short talks about anything related to RSE
+                (research data management, software development, teaching/training, and more),
+                as well as open discussions on topics brought into the agenda by any attendee.
             </p>
-
-            <ul class="contact-list">
-                <li class="contact-item">
-                    <a href="https://www.mpdl.mpg.de/en/about-us/team.html">Larissa Leiminger</a>, MPDL
-                </li>
-                <li class="contact-item">
-                    <a href="https://www.ub.uni-muenchen.de/ueber-die-ub/kontakt/personen/spenger/index.html">Martin Spenger</a>, LMU
-                </li>
-                <li class="contact-item">
-                    <a href="https://www.cs.cit.tum.de/en/sccs/people/gerasimos-chourdakis/">Gerasimos Chourdakis</a>, Univ. Stuttgart / TUM
-                </li>
-            </ul>
-
-            <p class="osc-init-involved__text">
-                Find out when our next meeting is by visiting our website below, and subscribe to our mailing list to get the latest updates on our activities and events.
-            </p>
-
-            <div class="osc-init-involved__links">
-                <div class="osc-btn">
-                    <a href="https://matrix.to/#/#derse-chapter-muc:gitter.im" class="osc-init-button osc-init-button--matrix"><i class="bi bi-globe"></i>
-                        Website
-                    </a>
-                </div>
-
-                <div class="osc-btn">
-                    <a href="https://lists.lrz.de/mailman/listinfo/rse" class="osc-init-button osc-init-button--newsletter">
-                        <i class="bi bi-box-arrow-up-right"></i> Mailing list
-                    </a>
-                </div>
-            </div>
-
         </div>
-
+        <div class="col-md-3 text-center">
+            <img src="images/rse.png" class="img-fluid" style="max-height:150px;" alt="RSE logo">
+        </div>
     </div>
-</head>
-
-
+</div>
+<div class="container px-0 mb-4 mt-3">
+    <h4 class="mb-2" style="border-bottom: none; color: var(--osc-accent);">
+        Get Involved
+    </h4>
+    <p style="line-height: 1.6;" class="mb-2">
+        For questions regarding the group, feel free to contact, for example:
+    </p>
+    <ul class="mt-0 osc-init-organizer-list">
+        <li>
+            <a href="https://www.mpdl.mpg.de/en/about-us/team.html" class="text-decoration-none text-black osc-init-people-link">
+                Larissa Leiminger, MPDL
+            </a>
+        </li>
+        <li>
+            <a href="https://www.ub.uni-muenchen.de/ueber-die-ub/kontakt/personen/spenger/index.html" class="text-decoration-none text-black osc-init-people-link">
+                Martin Spenger, LMU
+            </a>
+        </li>
+        <li>
+            <a href="https://www.cs.cit.tum.de/en/sccs/people/gerasimos-chourdakis/" class="text-decoration-none text-black osc-init-people-link">
+                Gerasimos Chourdakis, Univ. Stuttgart / TUM
+            </a>
+        </li>
+    </ul>
+    <p style="line-height: 1.6;" class="mb-3">
+    Find out when our next meeting is by visiting our website and subscribe to our mailing list to get the latest updates on our activities and events.
+    </p>
+    <div class="d-flex gap-3 align-items-center flex-wrap justify-content-center mt-3">
+        <a href="https://de-rse.org/chapter/muc/" class="btn btn-primary osc-init-contact-btn">
+            <i class="bi bi-globe"></i> Website
+        </a>
+        <a href="https://lists.lrz.de/mailman/listinfo/rse" class="btn btn-outline-primary osc-init-contact-btn" rel="noopener">
+            <i class="bi bi-envelope"></i> Mailing list
+        </a>
+    </div>
+</div>
 ```
