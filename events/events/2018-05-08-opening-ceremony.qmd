@@ -59,13 +59,13 @@ helpers:
 
 # Contact Information
 contact:
-  name: "Open Science Center (OSC)"
-  email: "osc@lmu.de"
+  name: Felix Schönbrodt
 
 # Organizers can be individuals or institutions
 organizers:
-  - name: "Open Science Center (OSC)"
-    url: "https://lmu-osc.github.io/"
+  - name: Prof. Dr. Katrin Auspurg
+  - name: Prof. Dr. Felix Schönbrodt
+
 
 template: templates/event-template.html
 filters:
