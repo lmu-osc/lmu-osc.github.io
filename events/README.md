@@ -66,13 +66,12 @@ event:
     primary: "English"
     primary-code: "en"
     detail: ""               # optional
+  flyer:
+    - file: images/example-flyer.pdf
+      title: "Example event flyer"
 
 event_description: |
   Longer overview text for the event detail page. That is, the content here displays on the event page.
-
-flyer:
-  - file: images/example-flyer.pdf
-    title: "Example event flyer"
 
 ...
 # people section described below
@@ -130,11 +129,12 @@ contact:
 Flyers use a similar list pattern when you need more than one item, although only the first flyer entry is currently rendered on the event page:
 
 ```yaml
-flyer:
-  - file: images/example-flyer.pdf
-    title: "Example event flyer"
-  - file: images/example-poster.pdf
-    title: "Example event poster"
+event:
+  flyer:
+    - file: images/example-flyer.pdf
+      title: "Example event flyer"
+    - file: images/example-poster.pdf
+      title: "Example event poster"
 ```
 
 Field reference by entity:
