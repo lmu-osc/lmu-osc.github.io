@@ -3,7 +3,13 @@ title: "Newsletter July 2025"
 date: 2025-07-22
 categories: ["Newsletters"]
 description: "Read the latest news and updates from the LMU Open Science Center in our July 2025 newsletter."
+flyer:
+    - file: "assets/newsletter_2025_july.pdf"
+      title: LMU OSC Newsletter - July 2025
+
+template: templates/news-template.html
+filters:
+  - templates/process-news-yaml.lua
 ---
 
-[Download the newsletter as PDF.](assets/newsletter_2025_july.pdf)
 
