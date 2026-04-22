@@ -1,0 +1,18 @@
+version: "0.2"
+
+ignorePaths:
+  - .git
+  - .github
+  - _site/**
+  - _freeze/**
+  - renv/**
+  - site_libs/**
+  - assets/bootstrap-5.3.8-dist/**
+  - assets/fontawesome-free-7.1.0-web/**
+  - "**/*.svg"
+  - "**/*.png"
+  - "**/*.jpg"
+  - "**/*.jpeg"
+  - "**/*.gif"
+  - "**/*.webp"
+  - "**/*.pdf"

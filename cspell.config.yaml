@@ -3,6 +3,7 @@ language: en-US,de
 
 import:
   - "@cspell/dict-de-de/cspell-ext.json"
+  - "./config/cspell/ignore-paths.yaml"
 
 dictionaries:
   - en_US
@@ -14,23 +15,6 @@ dictionaries:
 
 allowCompoundWords: true
 useGitignore: true
-
-ignorePaths:
-  - .git
-  - .github
-  - _site/**
-  - _freeze/**
-  - renv/**
-  - site_libs/**
-  - assets/bootstrap-5.3.8-dist/**
-  - assets/fontawesome-free-7.1.0-web/**
-  - "**/*.svg"
-  - "**/*.png"
-  - "**/*.jpg"
-  - "**/*.jpeg"
-  - "**/*.gif"
-  - "**/*.webp"
-  - "**/*.pdf"
 
 # Reject common British spellings to keep US spelling consistent.
 flagWords:
