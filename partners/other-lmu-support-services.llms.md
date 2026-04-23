@@ -69,22 +69,24 @@ The RDM Information team at the University Library of LMU Munich provides infras
 
 ------------------------------------------------------------------------
 
-![University Library LMU - Open Access team](images/ub.JPG)
+![University Library LMU - Associated Electronic Publishing Divisions: Open Access Publishing Services](images/ub.JPG)
 
-##### University Library LMU - Open Access team
+##### University Library LMU - Associated Electronic Publishing Divisions: Open Access Publishing Services
 
 Contact Person:
 
-[Open Access team](mailto:open-access@ub.uni-muenchen.de)
+[Open Access & Publishing Team](mailto:open-access@ub.uni-muenchen.de)
 
-[ Website](https://www.en.ub.uni-muenchen.de/writing/open-access-publishing/oa-auxiliary-page/index.html)
+[ Website](https://www.ub.lmu.de/en/open-access-publishing/)
 
-The University Library provides:
+The team provides:
 
-- Infrastructure to preserve and share articles or books following the Green or Gold Open Access route (e.g., preprint, postprints, articles, monographs): Open Access LMU
-- Infrastructure for your own Open Access journal: Open Journals LMU
-- Infrastructure to publish your university thesis or monograph in both print and digital form as Open Access publication: Open Publishing LMU
-- Funds to cover article or book processing charges: Open Access publishing Fund
+- Infrastructure and support on collecting, preserve and share publications based on text, following the Green or Gold Open Access route on the institutional repository Open Access LMU
+- Advice on topics around Open Access (e.g. Creative Commons licenses, different versions of manuscripts, Green and Gold Open Access, Predatory Publishing, etc.)
+- Infrastructure for founding your own Open Access journal with the service of Open Journals LMU
+- Infrastructure to publish monographs, conference proceedings or anthologies (including your university thesis) in both print and digital form as Open Access publication with the service of Open Publishing LMU
+- Support through the (partial) funding of open access publications via agreements with publishers and the LMU Open Access Fund
+- Bibliometric consultations
 
 ------------------------------------------------------------------------
 
