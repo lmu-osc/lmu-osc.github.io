@@ -8,12 +8,14 @@ The page structure is defined in `index.qmd`. It creates the News listing table 
 
 Section-level Quarto defaults for News articles are in `_metadata.yml`.
 
-Per-article rendering is handled by the files in `news/templates/`:
+Per-article rendering is handled by the files in `news/news/templates/`:
 
 - `news-template.html`
 - `process-news-yaml.lua`
 
-Article source files live in `news/` and follow date-based filenames.
+Article source files live in `news/news/` and follow date-based filenames.
+
+A starter front matter template is available at `news/news/_news_template.qmd`.
 
 ## How It Fits Together
 
@@ -21,7 +23,7 @@ Article source files live in `news/` and follow date-based filenames.
 
 `_metadata.yml` applies defaults to News articles in this section (for example page navigation and sidebar behavior).
 
-Each News article is a `.qmd` file in `news/` with YAML front matter plus content body. For consistent article rendering, each file should include the shared template and Lua filter in its front matter.
+Each News article is a `.qmd` file in `news/news/` with YAML front matter plus content body. For consistent article rendering, each file should include the shared template and Lua filter in its front matter.
 
 The Lua filter (`process-news-yaml.lua`) preprocesses selected metadata before the HTML template (`news-template.html`) renders the page. At the time of creating this, it is only used to process the `flyer:` field, but can be expanded to other yaml values as needed.
 
@@ -29,7 +31,7 @@ The Lua filter (`process-news-yaml.lua`) preprocesses selected metadata before t
 
 When you make changes in this folder:
 
-1. Update `index.qmd`, `_metadata.yml`, or files in `news/templates/` as needed.
+1. Update `index.qmd`, `_metadata.yml`, files in `news/news/templates/`, or the starter `_news_template.qmd` as needed.
 2. Run `quarto preview` from the repository root.
 3. Verify `/news`:
    - Listing table renders correctly.
@@ -45,7 +47,9 @@ Use this naming convention:
 
 - `YYYY-MM-DD-short-slug.qmd`
 
-A practical YAML front matter pattern is:
+A practical approach is to copy `news/news/_news_template.qmd` and replace its placeholders.
+
+YAML front matter pattern:
 
 ```yaml
 title: "News title"
@@ -82,6 +86,6 @@ The Lua filter normalizes this field into `flyer_data`, which is then consumed b
 2. Keep filenames and slugs lowercase and hyphenated.
 3. Use concise `description` text for metadata clarity.
 4. Keep `template` and `filters` in all News items to ensure consistent rendering.
-5. Use relative flyer paths from the article location.
+5. Use flyer paths relative to the article location (usually under `news/news/images/` or `news/news/assets/`).
 
 After adding or editing a News item, run `quarto preview` from the repository root and check both the `/news` listing page and the article detail page.
