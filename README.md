@@ -37,6 +37,7 @@ The most important top-level directories are:
 - `training/`: training catalog, tutorials, and training-track content
 - `scripts/`: helper scripts used during site maintenance
 - `renv/`: project-local R environment management
+- `_announcements.yml`: optional site-wide announcement bar configuration loaded via `metadata-files` in `_quarto.yml`
 - \*`_site/`: rendered website output
 - \*`_freeze/`: Quarto execution cache
 
@@ -75,6 +76,12 @@ quarto preview
 ```
 
 This starts a local preview server so you can inspect changes before committing them. Quarto writes the rendered output to `_site/`.
+
+### Site Announcement Bar
+
+The file `_announcements.yml` controls the optional announcement bar shown on the website. The file is included by `_quarto.yml` through Quarto `metadata-files`.
+
+When you do not want an announcement, keep `_announcements.yml` valid YAML (for example, use `{}`) rather than leaving it empty.
 
 ## Contribution Guidance
 
