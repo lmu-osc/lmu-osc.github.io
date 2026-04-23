@@ -257,18 +257,6 @@
   width: calc(100% - 10px);
 }
 
-
-.description {
-  font-size: 0.87rem;
-  line-height: 1.6;
-  color: #444444;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  text-align: justify;
-  margin: 0.3em 0 0.5em 0;
-  flex-grow: 1;
-}
-
 .event-date {
   color: #696969;
   font-weight: 500;

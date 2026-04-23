@@ -140,7 +140,6 @@
             </div>
             <div class="title listing-title"><%- item.title %></div>
             <div class="separator"></div>
-            <!--<p class="description listing-description"><%- item.event.description %></p> -->
             <div class="event-footer">
               <div class="event-host-info-group">
                 <%
@@ -204,45 +203,4 @@
 
 </div>
 
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-  document.querySelectorAll('.card').forEach(card => {
-    const title = card.querySelector('.title');
-    const desc = card.querySelector('.description');
-    if (!title || !desc) return;
-
-    // Get computed line height and height of title
-    const lineHeight = parseFloat(getComputedStyle(title).lineHeight);
-    const titleLines = Math.round(title.offsetHeight / lineHeight);
-
-    if (titleLines >= 2) {
-      // Clamp title to 2 lines
-      title.style.display = '-webkit-box';
-      title.style.webkitLineClamp = '2';
-      title.style.webkitBoxOrient = 'vertical';
-      title.style.overflow = 'hidden';
-      title.style.textOverflow = 'ellipsis';
-      // Clamp desc to 1 line
-      desc.style.display = '-webkit-box';
-      desc.style.webkitLineClamp = '1';
-      desc.style.webkitBoxOrient = 'vertical';
-      desc.style.overflow = 'hidden';
-      desc.style.textOverflow = 'ellipsis';
-    } else {
-      // Show full title (remove clamping)
-      title.style.display = '';
-      title.style.webkitLineClamp = '';
-      title.style.webkitBoxOrient = '';
-      title.style.overflow = '';
-      title.style.textOverflow = '';
-      // Clamp desc to 2 lines
-      desc.style.display = '-webkit-box';
-      desc.style.webkitLineClamp = '2';
-      desc.style.webkitBoxOrient = 'vertical';
-      desc.style.overflow = 'hidden';
-      desc.style.textOverflow = 'ellipsis';
-    }
-  });
-});
-</script>
 ```
