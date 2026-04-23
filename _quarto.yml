@@ -9,6 +9,10 @@ project:
 profile:
   default: github
 
+
+metadata-files:
+  - _announcements.yml
+
 website:
   title: "LMU Open Science Center"
   favicon: assets/img/lmu_osc_logo.jpg
@@ -17,13 +21,6 @@ website:
   repo-url: https://github.com/lmu-osc/lmu-osc.github.io
   llms-txt: true
 
-
-  announcement: 
-    icon: info-circle
-    dismissable: true
-    content: "**Thanks for visiting the LMU Open Science Center--our site is still under construction for now, but we'll be live soon!**"
-    type: primary
-    position: below-navbar
 
   navbar:
     title: false
