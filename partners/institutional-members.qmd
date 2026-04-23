@@ -1,5 +1,6 @@
 ---
 title: "Institutional Members"
+description: The OSC is supported by a growing number of institutional members from across the LMU. Institutional members are key partners in our efforts to promote open science and provide support to researchers at the LMU.
 format: 
   html:
     css: styles.css
@@ -8,9 +9,6 @@ format:
 
 ```{=html}
 <div class="container inst-member-container my-3">
-  <p class="mb-4" style="line-height:1.75; text-align:justify;">
-    The OSC is supported by a growing number of institutional members from across the LMU. Institutional members are key partners in our efforts to promote open science and provide support to researchers at the LMU.
-  </p>
 
   <div class="row g-4 p-3">
     <div class="col-md-6">
