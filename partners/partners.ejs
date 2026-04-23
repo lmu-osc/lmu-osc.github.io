@@ -10,11 +10,20 @@
                             <%= item.name %>
                         </h5>
                         <% if (item.contact && item.contact.length) { %>
-                            <% const validContacts = item.contact.filter((c) => c && c.name && c.link); %>
+                            <% const validContacts = item.contact.filter((c) => {
+                                const name = (c && c.name ? c.name : '').toString().trim();
+                                const link = (c && c.link ? c.link : '').toString().trim();
+                                return name && link;
+                            }); %>
                             <% if (validContacts.length) { %>
                                 <p class="card-text text-muted mb-0"><%= validContacts.length > 1 ? 'Contact Persons:' : 'Contact Person:' %></p>
                                 <% validContacts.forEach((c) => { %>
-                                    <a href="<%= c.link %>" class="contact-link d-block mb-2">
+                                    <% const contactLink = c.link.toString().trim(); %>
+                                    <% const isMailto = contactLink.toLowerCase().startsWith('mailto:'); %>
+                                    <a href="<%= contactLink %>" class="contact-link d-block mb-2">
+                                        <% if (isMailto) { %>
+                                            <i class="fa-solid fa-envelope me-1" aria-hidden="true"></i>
+                                        <% } %>
                                         <%= c.name %>
                                     </a>
                                 <% }); %>

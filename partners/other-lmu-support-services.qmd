@@ -1,5 +1,6 @@
 ---
 title: "Other LMU Support Services"
+description: In addition to the institutional members of the OSC, there are a number of other support services at the LMU that provide support to researchers in their open science journey.
 format: 
   html:
     css: styles.css
@@ -89,22 +90,4 @@ listing:
         </ul>
         The ITG is responsible for accompanying digital projects in the humanities, computer science, statistics and computational linguistics as well as the emerging data sciences.
 ---
-
-<script>
-
-document.addEventListener('DOMContentLoaded', () => {
-  document.querySelectorAll('.email-link').forEach(a => {
-    const href = (a.getAttribute('href') || '').trim();
-    const text = (a.textContent || '').trim();
-    const noEmail = !href || href.toLowerCase() === 'mailto:' || (!text || text === '' || text === '\u00A0');
-
-    if (noEmail) {
-      const icon = a.querySelector('i.fa-envelope, i.fa-solid.fa-envelope');
-      if (icon) icon.remove();
-      // optional: also remove empty anchor entirely if you prefer:
-      // if (!a.textContent.trim()) a.remove();
-    }
-  });
-});
-</script>
 
