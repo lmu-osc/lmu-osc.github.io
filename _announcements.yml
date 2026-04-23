@@ -1,0 +1,19 @@
+# This file controls the optional site-wide announcement bar.
+# Quarto reads this file via metadata-files in _quarto.yml.
+#
+# Important: this file cannot be completely empty. Keep at least "{}" when no announcement is active.
+# Docs: https://quarto.org/docs/websites/website-tools.html#announcement-bar
+
+# Default state (no announcement):
+# {}
+
+# To enable an announcement, comment out the "{}" and add the following content, customizing as needed:
+website:
+  announcement:
+    icon: info-circle
+    dismissable: true
+    content: "**Thanks for visiting the LMU Open Science Center. Our site is still under construction for now, but we'll be live soon.**"
+    type: primary
+    position: below-navbar
+
+
