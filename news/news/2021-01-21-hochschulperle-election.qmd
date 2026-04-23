@@ -3,6 +3,10 @@ title: "Election of the 'Hochschulperle' ('University Pearl') of the Year 2020 b
 date: 2021-01-21
 subtitle: "OSC as one of the monthly winners"
 categories: ["Awards/Recognition"]
+
+template: templates/news-template.html
+filters:
+  - templates/process-news-yaml.lua
 ---
 
 

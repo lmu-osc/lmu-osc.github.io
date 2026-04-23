@@ -3,6 +3,10 @@ title: "New speaker of the OSC's Scientific Board!"
 date: 2024-06-26
 subtitle: "Prof. Dr. Nikolaus Plesnila is the new speaker of the Scientific Board of the OSC"
 categories: ["Announcement"]
+
+template: templates/news-template.html
+filters:
+  - templates/process-news-yaml.lua
 ---
 
 

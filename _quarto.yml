@@ -2,7 +2,8 @@ project:
   type: website
   output-dir: _site
   resources:
-    - assets/
+    - "**/assets/**"
+    - "**/images/**"
 
 
 profile:
@@ -189,6 +190,14 @@ website:
           href: news/index.qmd
           contents:
             - auto: "news/news/*.qmd" 
+    
+    - id: events
+      title: "Events"
+      contents:
+        - section: "Events"
+          href: events/index.qmd
+          contents:
+            - auto: "events/events/*.qmd" 
 
 
 format:

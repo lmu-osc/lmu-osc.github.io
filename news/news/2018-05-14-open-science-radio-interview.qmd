@@ -3,6 +3,10 @@ title: "Open Science Radio"
 date: 2018-05-14
 subtitle: "An interview with scientific board member Anne-Laure Boulesteix and the managing director Felix Schönbrodt about the foundation of the LMU Open Science Center."
 categories: ["Interviews"]
+
+template: templates/news-template.html
+filters:
+  - templates/process-news-yaml.lua
 ---
 
 
