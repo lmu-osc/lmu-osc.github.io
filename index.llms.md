@@ -79,7 +79,7 @@ Newly published travel guide “Expedition Open Science Land: A travel guide for
 
 ###### Apr 12, 2026
 
-##### [Code Reproducibility in Social Sciences](news/news/2026-04-13-code-reproducibility-in-social-sciences-paper.llms.md)
+##### [Computational Reproducibility in Social Research](news/news/2026-04-13-code-reproducibility-in-social-sciences-paper.llms.md)
 
 Code Sharing and Reproducibility in Social Sciences: Findings from a Recent Study
 
@@ -107,7 +107,7 @@ The OSPARK bootcamp is a 6-week online course and a 2-day onsite workshop all ab
 
 ##### [LMU Open Science Summer School 2026](events/events/2026-09-07-lmu-open-science-summer-school.llms.md)
 
-Save the date! Our annual Summer School will take place from September 7-11, 2026--more details to come!
+Save the date! Our annual Summer School will take place on Sept 7-11 (Track 1) and Sept 14-15 (Track 2), 2026. Registration will open early June.
 
 [See Event →](events/events/2026-09-07-lmu-open-science-summer-school.llms.md)
 

@@ -12,24 +12,27 @@ Train-the-Trainer Program Coordinator
 
 ## Mission Statement
 
-Sarah von Grebmer zu Wolfsthurn is an Open Science program coordinator at the LMU Open Science Centre (OSC). She coordinates the “Train-the-trainer” programme. She is involved in:
+Sarah von Grebmer zu Wolfsthurn is an Open Science program coordinator at the LMU Open Science Center (OSC). She coordinates the Train-the-Trainer program. She is involved in:
 
-- Coordinating, developing and delivering the “Train-the-Trainer” program at LMU to train future Open Science ambassadors and Open Science trainers
-- Facilitating interdisciplinary workshops, seminars, and networking events for students, researchers and suffort staff to engage and support participants in adopting open research practices
-- Supporting the adoption of open research practices at the LMU and beyond
+- Coordinating, developing and delivering the Train-the-Trainer program at LMU to train future Open Science ambassadors and Open Science trainers.
+- Facilitating interdisciplinary workshops, seminars, and networking events for students, researchers, and support staff to engage and support participants in adopting open research practices.
+- Supporting the adoption of open research practices at the LMU and beyond.
 
-Before her work at the LMU Open Science Centre, Sarah was a Marie Skłodowska-Curie PhD Fellow within the [Horizon2020](https://research-and-innovation.ec.europa.eu/funding/funding-opportunities/funding-programmes-and-open-calls/horizon-2020_en) programme at Leiden University (NL). She has a PhD in Cognitive Psychology and Neurolinguistics and was a lecturer in experimental methods and psycho- and neurolinguistics during and after her PhD at Leiden University.
+Before her work at the LMU Open Science Centre, Sarah was a Marie Skłodowska-Curie PhD Fellow within the [Horizon2020](https://research-and-innovation.ec.europa.eu/funding/funding-opportunities/funding-programmes-and-open-calls/horizon-2020_en) programme at Leiden University (NL). She holds a PhD in Cognitive Psychology and Neurolinguistics and taught experimental methods as well as psycho- and neurolinguistics during and after her PhD at Leiden University.
 
-Please get in touch with Sarah at [s.grebmer@lmu.de](mailto:s.grebmer@lmu.de "Send email to:s.grebmer@lmu.de") if you have any questions, thoughts or ideas connected to her role or Open Science at LMU.
+Please get in touch with Sarah at <s.grebmer@lmu.de> if you have any questions, thoughts, or ideas related to her role or Open Science at LMU.
 
-**Links**  
-BlueSky – @sarahvongrebmer.bsky.social\<br\> LinkedIn – [www.linkedin.com/in/svongrebmer](https://www.linkedin.com/in/svongrebmer)
+**Links**
 
-**Contact**  
-Email – [s.grebmer@lmu.de](mailto:s.grebmer@lmu.de "Send email to:s.grebmer@lmu.de")  
-Phone – +49 89 2180 5872
+- BlueSky – @sarahvongrebmer.bsky.social
+- LinkedIn – [www.linkedin.com/in/svongrebmer](https://www.linkedin.com/in/svongrebmer)
 
-**Working days –** Wednesdays, Thursdays and Fridays
+**Contact**
+
+- Email – <s.grebmer@lmu.de>
+- Phone – +49 89 2180 5872
+
+**Working days** – Wednesdays, Thursdays, and Fridays
 
 ## Research Interests
 
@@ -37,7 +40,7 @@ Open Science
 
 Cognitive Psychology
 
-Exoperimental Methods
+Experimental Methods
 
 EEG
 
