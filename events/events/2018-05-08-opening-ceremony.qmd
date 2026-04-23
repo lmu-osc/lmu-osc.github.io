@@ -20,7 +20,9 @@ event:
   language:
     primary: "German"
     primary-code: "de"
-  flyer: "images/2018-05-08-opening-ceremony-poster.png"
+  flyer: 
+    - file: "images/2018-05-08-opening-ceremony-poster.png"
+      title: "Flyer of the OSC opening ceremony on 08.05.2018"
   
 # Registration and Materials
 links:
