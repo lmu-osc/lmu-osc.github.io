@@ -1624,6 +1624,14 @@ Instructor(s): Prof. Dr. Felix Schönbrodt
 
 Host(s): LMU Open Science Center
 
+8 May, 2018
+
+OSC Opening Ceremony
+
+Organizer(s): Prof. Dr. Katrin Auspurg, Prof. Dr. Felix Schönbrodt
+
+Presenter(s): Prof. Dr. Barbara Conradt, Prof. Dr. Klaus Tochtermann
+
 1 Jan, 2018
 
 Teaching Open Science in Medical Science

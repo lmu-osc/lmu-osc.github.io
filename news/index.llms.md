@@ -11,14 +11,14 @@
 | Jan 8, 2025 | [11 strategies for making reproducible research the norm at LMU Munich](../news/news/2025-01-08-eleven-strategies-reproducible-research.llms.md) | Publications |
 | Sep 24, 2024 | [LMU-MPG Open Science Summer School 2024](../news/news/2024-09-24-summer-school-insights.llms.md) | Event Highlights |
 | Jul 16, 2024 | [The Faculty of Business Administration becomes an official Institutional Member](../news/news/2024-07-16-business-admin-institutional-member.llms.md) | New Members |
-| Jul 15, 2024 | [Stellenausschreibung: Wissenschaftlicher Koordinator (m/w/d) für Open Science](../news/news/2024-07-15-stellenausschreibung-koordinator.llms.md) | Job Ads |
 | Jul 15, 2024 | [Job ad: Scientific Coordinator for Open Science](../news/news/2024-07-15-job-ad-scientific-coordinator.llms.md) | Job Ads |
+| Jul 15, 2024 | [Stellenausschreibung: Wissenschaftlicher Koordinator (m/w/d) für Open Science](../news/news/2024-07-15-stellenausschreibung-koordinator.llms.md) | Job Ads |
 | Jul 3, 2024 | [The LMU Open Science Center received the Open Access Enter-Award!](../news/news/2024-07-03-enter-award-received.llms.md) | Awards/Recognition |
 | Jun 26, 2024 | [New speaker of the OSC’s Scientific Board!](../news/news/2024-06-26-new-scientific-board-speaker.llms.md) | Announcement |
 | Jun 14, 2024 | [LMU Open Science Center Advisory Board Report 2024](../news/news/2024-06-14-advisory-board-report.llms.md) | Reports |
 | May 17, 2024 | [Newsletter May 2024](../news/news/2024-05-17-newsletter-may.llms.md) | Newsletters |
-| May 10, 2024 | [Two clusters of excellence join the OSC as funding institutional members](../news/news/2024-05-10-clusters-excellence-join-osc.llms.md) | New Members |
 | May 10, 2024 | [The OSC reached 100 individual members!](../news/news/2024-05-10-100th-member-milestone.llms.md) | Announcement |
+| May 10, 2024 | [Two clusters of excellence join the OSC as funding institutional members](../news/news/2024-05-10-clusters-excellence-join-osc.llms.md) | New Members |
 | Apr 23, 2024 | [A teaching concept about replicable data analysis now published!](../news/news/2024-04-23-replicable-data-analysis-paper.llms.md) | Publications |
 | Feb 14, 2024 | [Matched Networking Lunches](../news/news/2024-02-14-matched-networking-lunches.llms.md) | Call for Application |
 | Jan 29, 2024 | [More transparency about how science works](../news/news/2024-01-29-gollwitzer-schneck-interview.llms.md) | Interviews |
@@ -43,8 +43,8 @@
 | May 2, 2022 | [New OSC Coordinator](../news/news/2022-05-02-coordinator-hired.llms.md) | Announcement |
 | Mar 29, 2022 | [New Member: Biomedical Center joins the OSC](../news/news/2022-03-29-bmc-joins-osc.llms.md) | New Members |
 | Mar 24, 2022 | [Interview with Andreas Beyerlein](../news/news/2022-03-24-beyerlein-interview.llms.md) | Interviews |
-| Mar 18, 2022 | [LMU Open Access Fund](../news/news/2022-03-18-lmu-open-access-fund.llms.md) | Announcement |
 | Mar 18, 2022 | [Interview with Anne-Laure Boulesteix](../news/news/2022-03-18-boulesteix-interview.llms.md) | Interviews |
+| Mar 18, 2022 | [LMU Open Access Fund](../news/news/2022-03-18-lmu-open-access-fund.llms.md) | Announcement |
 | Nov 21, 2021 | [Stellenausschreibung: Open Science Koordinator\*in](../news/news/2021-11-21-stellenausschreibung-koordinator.llms.md) | Job Ads |
 | Jun 15, 2021 | [Data tracking in research: Aggregation and use or sale of usage data by academic publishers](../news/news/2021-06-15-data-tracking-publishers.llms.md) | Announcement |
 | Jun 15, 2021 | [The Help Desk for Research data management (RDM) at the LMU University Library](../news/news/2021-06-15-rdm-help-desk.llms.md) | Announcement |
