@@ -2,9 +2,11 @@
 
 ## Upcoming Events
 
-7-11 Sept, 2026
+7-15 Sept, 2026
 
 9:00-17:00
+
+Online and Philologicum Library, Ludwigstraße 25, 80539 Munich
 
 Hybrid
 
@@ -12,7 +14,19 @@ EN
 
 LMU Open Science Summer School 2026
 
-Save the date! Our annual Summer School will take place from September 7-11, 2026--more details to come!
+Save the date! Our annual Summer School will take place on Sept 7-11 (Track 1) and Sept 14-15 (Track 2), 2026. Registration will open early June.
+
+Organizer(s): Sarah von Grebmer zu Wolfsthurn
+
+Presenter(s): Alexander Wuttke, Richard McElreath, Tim Errington, Jonas Hagenberg, Danny Maupin
+
+Instructor(s): Sarah von Grebmer, Malika Ihle, Sara Lil Middleton, Laura Meier, Pat Callahan, Florian Kohrt, Reema Gupta
+
+Helper(s): Elizabeth Waterfield
+
+Host(s): LMU Open Science Center, LMU University Library (UB), Professionell in der Lehre (PROFil), Framework for Open and Reproducible Research Training (FORRT)
+
+[](../events/events/2026-09-07-lmu-open-science-summer-school.llms.md) [Sarah Von Grebmer Zu Wolfsthurn](mailto:Sarah.Grebmer@psy.lmu.de?subject=Regarding%20)
 
 10 Jun-25 Jul, 2026
 
