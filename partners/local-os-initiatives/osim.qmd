@@ -13,10 +13,10 @@ page-layout: full
         <span class="fw-light"> Open Science Initiative in Medicine</span>
     </h2>
 </div>
-<div class="container px-0">
+<div class="container px-0 mb-2">
     <div class="row align-items-center">
         <div class="col-md-9 p-0">
-            <p style="line-height: 1.6; text-align: justify;" class="m-0">
+            <p style="line-height: 1.6; text-align: justify;">
                 Founded in January 2019, the LMU Open Science Initiative in Medicine (OSIM) aims to promote open science 
                 in medicine by developing training programs and offering strategies on how to improve effectiveness and 
                 reproducibility of basic and clinical medical research.
@@ -29,9 +29,8 @@ page-layout: full
         </div>
     </div>
 </div>
-<div class="container px-0 mb-4">
+<div class="container px-0 mb-3">
     <h4 class="mb-2" style="border-bottom: none; color: var(--osc-accent);">
-        <i class="bi bi-people"></i>
         Current Organizers
     </h4>
     <ul class="mt-0 osc-init-organizer-list">
@@ -47,9 +46,8 @@ page-layout: full
         </li>
     </ul>
 </div>
-<div class="container px-0 mb-4">
+<div class="container px-0 mb-3">
     <h4 class="mb-2" style="border-bottom: none; color: var(--osc-accent);">
-        <i class="bi bi-people"></i>
         Senior Members
     </h4>
     <ul class="mt-0 osc-init-organizer-list">
@@ -70,9 +68,9 @@ page-layout: full
         </li>
     </ul>
 </div>
-<div class="container px-0 mb-4">
+<div class="container px-0 mb-3">
     <h4 class="mb-2" style="border-bottom: none; color: var(--osc-accent);">
-        <i class="bi bi-link-45deg"></i> Resources
+      Resources
     </h4>
     <ul class="list-unstyled mt-0 d-flex flex-column gap-3">
         <li>
