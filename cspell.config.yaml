@@ -1,0 +1,62 @@
+version: "0.2"
+language: en-US,de
+
+import:
+  - "@cspell/dict-de-de/cspell-ext.json"
+  - "./config/cspell/ignore-paths.yaml"
+
+dictionaries:
+  - en_US
+  - de-de
+  - osc-names
+  - osc-acronyms
+  - osc-german
+  - osc-other
+  - osc-british-english-exceptions
+
+allowCompoundWords: true
+useGitignore: true
+
+# Reject common British spellings to keep US spelling consistent.
+flagWords:
+  - colour
+  - colours
+  - coloured
+  - colouring
+  - organise
+  - organised
+  - organising
+  - recognise
+  - recognised
+  - recognising
+  - analyse
+  - analysed
+  - analysing
+  - metre
+  - metres
+  - labour
+  - travelled
+  - travelling
+  - traveller
+  - cancelling
+  - cancelled
+  - licence
+  - practise
+  - artefact
+
+dictionaryDefinitions:
+  - name: osc-names
+    path: config/cspell/names.txt
+    addWords: true
+  - name: osc-acronyms
+    path: config/cspell/acronyms.txt
+    addWords: true
+  - name: osc-german
+    path: config/cspell/german.txt
+    addWords: true
+  - name: osc-other
+    path: config/cspell/other.txt
+    addWords: true
+  - name: osc-british-english-exceptions
+    path: config/cspell/british-english-exceptions.txt
+    addWords: true
