@@ -20,6 +20,11 @@ h2, h3, h4, h5, h6 {
   color: #00883A;
 }
 
+/* Ensure links inside strong/bold text remain bold */
+strong a, b a {
+  font-weight: inherit;
+}
+
 .sidebar-section {
   padding-left: .6em;
   padding-bottom: .3em;
