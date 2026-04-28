@@ -42,5 +42,3 @@ template: templates/people-template.html
 filters: 
     - templates/people_filter.lua
 ---
-
-<!-- additional content **can** be included here, and appears after the Mission Statement but before the Research Interests. Any content that Quarto can render can be included here, namely R/Python/Julia code chunks, Markdown formatting, more HTML, etc. Main reasons to use this though: code blocks, and to include files. -->
