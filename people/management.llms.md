@@ -12,7 +12,7 @@
 
 Prof. Dr. \| Psychology & Education
 
-Professor at the Department of Psychology, Ludwig-Maximilians-Universität München, Germany. Managing director of the LMU Open Science Center and steering group member of the META-REP priority program (‘A meta-scientific research program to analyse and optimise replicability in the behavioral, social, and cognitive Sciences’). Interested in Open Science, Metascience, implicit motives, machine learning, responsible research assessment (CoARA), solarpunk, piano, and cooking.
+Professor at the Department of Psychology, Ludwig-Maximilians-Universität München, Germany. Managing director of the LMU Open Science Center and steering group member of the META-REP priority program (‘A meta-scientific research program to analyze and optimize replicability in the behavioral, social, and cognitive Sciences’). Interested in Open Science, Metascience, implicit motives, machine learning, responsible research assessment (CoARA), solarpunk, piano, and cooking.
 
 [Read More!](../people/people/felix-schoenbrodt.llms.md)
 

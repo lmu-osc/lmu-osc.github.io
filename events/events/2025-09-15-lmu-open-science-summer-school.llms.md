@@ -49,7 +49,7 @@ Participants of this track learn how to:
 
 - Design and deliver Open Science workshops, and apply basic didactic techniques to diverse audiences;
 - Apply activation methods in the classroom to foster motivation and attention;
-- Develop skills to advocate for Open Science, to lead research groups and discussions around Open Science, and to analyse the potential challenges and issues around the implementation of Open Science practices.
+- Develop skills to advocate for Open Science, to lead research groups and discussions around Open Science, and to analyze the potential challenges and issues around the implementation of Open Science practices.
 
 After joining this track, you will have the opportunity to put your new skills into practice and co-deliver a workshop at LMU to become a certified Open Science instructor.
 

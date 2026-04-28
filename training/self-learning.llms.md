@@ -46,7 +46,7 @@ From sharing **data** and **code** to **publishing articles**
 | Principles | [Credible Science](../training/principles/credible-science.llms.md) | Learn the ins and outs of reliable, reproducible, and open research | Open Research Practices |
 | Principles | [Replicability Crisis](../training/principles/replicability-crisis.llms.md) | A presentation on the replication shortcomings of science and how researchers can improve | Replicability Crisis |
 | Publishing Outputs | [Open Access, Preprints, Postprints](../training/publishing-outputs/open-access-preprints-postprints.llms.md) | Learn about the different ways to make your publications freely accessible. | Open Access, Preprints |
-| Publishing Outputs | [Code Publishing](https://lmu-osc.github.io/code-publishing/) | Tie together your skills and publish your work | Licences, Documentation |
+| Publishing Outputs | [Code Publishing](https://lmu-osc.github.io/code-publishing/) | Tie together your skills and publish your work | Licenses, Documentation |
 | Reproducible Processes | [Advanced Git](../training/reproducible-processes/advanced-git.llms.md) | Learn git features like branching and gitflow, and how to take advantage of issues, pull requests, and more on GitHub | Git, GitHub |
 | Reproducible Processes | [Readable Code](../training/reproducible-processes/readable-code.llms.md) | Tips to write clear, understandable, and maintainable code. | R |
 | Reproducible Processes | [Reproducible Protocols](../training/reproducible-processes/reproducible-protocols.llms.md) | Learn how to write and publish a reusable, step-by-step protocol. | Documentation |

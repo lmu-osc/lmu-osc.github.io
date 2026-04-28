@@ -6,7 +6,7 @@ February 1, 2021
 
 ![](images/grn-logo.png)
 
-Eight key Open Science actors in Germany founded the [German Reproducibility Networ (GRN)](https://reproducibilitynetwork.de/) and the LMU Open Science Center is one of them! The cross-disciplinary consortium is dedicated to promote reproducible and robust research on a national level in Germany. The managing director of the LMU Open Science Center, Professor Felix Schönbrodt, says: “Especially in times when medical and societal challenges require scientifically sound answers, we need an open, cooperative, and credible science. To achieve this goal, the German Reproducibility Network brings together key players in Germany.”
+Eight key Open Science actors in Germany founded the [German Reproducibility Network (GRN)](https://reproducibilitynetwork.de/) and the LMU Open Science Center is one of them! The cross-disciplinary consortium is dedicated to promote reproducible and robust research on a national level in Germany. The managing director of the LMU Open Science Center, Professor Felix Schönbrodt, says: “Especially in times when medical and societal challenges require scientifically sound answers, we need an open, cooperative, and credible science. To achieve this goal, the German Reproducibility Network brings together key players in Germany.”
 
 ### Mission and goals
 

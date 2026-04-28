@@ -20,7 +20,7 @@ English
 
   
 
-The LMU & MPG Open Science Summer School 2024 is organised by the [LMU Open Science Center (OSC)](https://www.osc.uni-muenchen.de/index.html) and the [Max Planck Digital Library (MPDL)](https://www.mpdl.mpg.de/en/).
+The LMU & MPG Open Science Summer School 2024 is organized by the [LMU Open Science Center (OSC)](https://www.osc.uni-muenchen.de/index.html) and the [Max Planck Digital Library (MPDL)](https://www.mpdl.mpg.de/en/).
 
 This intensive 5-day Open Science Summer School provides early career researchers with the knowledge and skills to make their research more **transparent, reproducible** and **credible** in the eyes of their peers, the public and funding agencies.
 
@@ -28,7 +28,7 @@ By joining (or accessing the material after the school), you will learn how to:
 
 - clarify your research design and set up your statistical plans in advance of collecting data to prevent biases in analyses, with the help of **preregistration** and **data simulation**
 - create computationally reproducible workflows so you can be more efficient and spot mistakes in data wrangling or analyses, through **programming** with **version controlled** scripts;
-- prepare, manage and share **data** and **code** in connection with your **articles** by applying the **Findable, Accessible, Interoperable, Reusable principles**, and using adequate **repositories** and **licences**.The summer school will consist of public lectures and workshops for selected applicants.
+- prepare, manage and share **data** and **code** in connection with your **articles** by applying the **Findable, Accessible, Interoperable, Reusable principles**, and using adequate **repositories** and **licenses**.The summer school will consist of public lectures and workshops for selected applicants.
 
 Increase the **impact** of your research and secure the **acknowledgement** of your and others contributions by opening your research practices!
 
@@ -53,7 +53,7 @@ To attend the whole school, i.e. both public lectures and workshops for selecte
 
 **Apply here**: <https://surveys.osc.lmu.de/OpenScienceSummerSchool2024/>
 
-The Summer Schoolis targeted at PhD students of all scientific disciplines (Earth sciences, Medical sciences, Social Sciences, Life Sciences, etc.). Researchers in fields of the Humanities can also apply, but should note that the Summer School contents lean towards quantitative research. Master students and early post docs are also welcome to apply.
+The Summer School is targeted at PhD students of all scientific disciplines (Earth sciences, Medical sciences, Social Sciences, Life Sciences, etc.). Researchers in fields of the Humanities can also apply, but should note that the Summer School contents lean towards quantitative research. Master students and early post docs are also welcome to apply.
 
 The SummerSchool will be held in a hybrid format and you will be able to choose your preferred mode of participation (online or on site). By applying, we expect you to attend all sessions of the school (with justified exception possible). A certificate of attendance will be provided.
 

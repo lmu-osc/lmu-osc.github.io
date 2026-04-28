@@ -540,7 +540,7 @@ Host(s): Open Science Initiative in Medicine
 
 10 May, 2024
 
-The Good, the Bad and the Inbetween - The many facets of quality in scholarly publishing
+The Good, the Bad and the In Between - The many facets of quality in scholarly publishing
 
 Organizer(s): Christina Sauer
 

@@ -18,7 +18,7 @@ German
 
   
 
-Organisiert wird die Veranstaltung von der LMU Open Science Initiatve in Medicine (OSIM).
+Organisiert wird die Veranstaltung von der LMU Open Science Initiative in Medicine (OSIM).
 
 Starten wird das Event mit einem Vortrag von Malcolm Mcleod zu Verschwendung und Replikation in der medizinischen Forschung. Am Nachmittag werden die Themen Reproduzierbarkeit, Data Sharing und Open Science besprochen und diskutiert.
 
@@ -26,7 +26,7 @@ Für Details betrachten Sie bitte den angehängten Flyer und das Poster.
 Bitte leiten Sie diese Nachricht gerne an interessierte Personen weiter oder nutzen Sie das angehängte Material für Aushänge.
 
 Die Veranstaltung ist kostenlos und offen für alle Interessenten.  
-Anmeldung (wichtig für die Planung von Catering und Teilnahmebestätigungen): [bit.ly/2RQtajW](https://terminplaner4.dfn.de/qRxciPo8sMUQPb7g)
+Anmeldung (wichtig für die Planung von Catering und Teilnahmebestätigungen): [terminplaner4.dfn.de](https://terminplaner4.dfn.de/qRxciPo8sMUQPb7g)
 
 Wir freuen uns auf Ihr Kommen!
 

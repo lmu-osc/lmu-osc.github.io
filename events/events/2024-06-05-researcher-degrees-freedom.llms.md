@@ -30,7 +30,7 @@ Ihr seid herzlich eingeladen, an unseren kommenden Treffen teilzunehmen! Um auf 
 
 Wir freuen uns, euch bei einer unserer nächsten Journal-Club-Sitzungen zu sehen!
 
-Organisationsteam:
+organizationsteam:
 
 - Laura Goetz, Studentin in Medizin und Masterstudentin in Psychologie
 - Viktoria Wiegelmann, Bachelorstudentin in Psychologie

@@ -20,13 +20,13 @@ English
 
   
 
-The LMU Open Science Center organises this hybrid open research summer school to allow early-career researchers to gain more trust in the research that they do, and make it as credible as it can be in the eyes of their peers, the public, and funding agencies.
+The LMU Open Science Center organizes this hybrid open research summer school to allow early-career researchers to gain more trust in the research that they do, and make it as credible as it can be in the eyes of their peers, the public, and funding agencies.
 
 By joining (or accessing the material after the school), you will learn how to:
 
 - plan your statistical plans in advance of collecting data to prevent biases in analyses, with the help of **preregistration** and **data simulation**;
 - create computationally reproducible workflows so you can be more efficient and spot mistakes in data wrangling or analyses, through **programming**, creating **dynamic** **reports**, and **version** **controlling** scripts;
-- share **data**, **materials**, **codes**, and **articles** appropriately (using **Findable**, **Accessible**, **Interoperable**, **Reusable** **principles**, sensible data **anonymisation** **techniques**, adequate **repositories** and **licences**) for your research to have more impact, by allowing others to build upon or replicate your work;
+- share **data**, **materials**, **codes**, and **articles** appropriately (using **Findable**, **Accessible**, **Interoperable**, **Reusable** **principles**, sensible data **anonymization** **techniques**, adequate **repositories** and **licenses**) for your research to have more impact, by allowing others to build upon or replicate your work;
 - follow **guidelines to report results** adequately and conduct **systematic reviews**
 
 The summer school will consist of public lectures and workshops for selected applicants.
@@ -71,7 +71,7 @@ Register here: <https://www.pretix.osc.lmu.de/lmu-osc/lectures/>
 
 ## Funding Note
 
-The [LMU Open Science Center coordinator](../../people/people/malika-ihle.llms.md "Scientific Coordinator"), Dr Malika Ihle, organising the summer school, is funded by the **Frontier Fund of LMU Munich**. The summer school is funded by the **Fund for the Promotion of Teaching of LMU Munich**. The **LMU University Library** provides in-kind support.
+The [LMU Open Science Center coordinator](../../people/people/malika-ihle.llms.md "Scientific Coordinator"), Dr Malika Ihle, organizing the summer school, is funded by the **Frontier Fund of LMU Munich**. The summer school is funded by the **Fund for the Promotion of Teaching of LMU Munich**. The **LMU University Library** provides in-kind support.
 
  
 

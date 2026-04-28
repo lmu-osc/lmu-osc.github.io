@@ -18,7 +18,7 @@ To ensure that students develop a strong foundation of open science knowledge it
 
 At the LMU Department of Psychology, PhD students need to decide on a list of open science practices with their supervisors before they start their research. A completed disclosure form highlighting the implemented practices is part of their final PhD thesis submission. Read more and find templates at: <https://www.lmu.de/psy/en/research/open-science-measures/>
 
-To incentivise change, it is important that institutions recognize and reward these practices:
+To incentivize change, it is important that institutions recognize and reward these practices:
 
 **Strategy 3: Include reproducible and open science practices in research(er) assessment**
 

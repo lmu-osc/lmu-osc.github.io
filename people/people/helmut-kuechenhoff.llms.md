@@ -14,4 +14,4 @@ Faculty of Math, Informatics & Stats
 
 ## Mission Statement
 
-I am the retired head of the Statistical Consulting Unit (StaBLab) at the Department of Statistics, LMU. I want to integrate the ideas of open science and reproducable research into our consulting practice.
+I am the retired head of the Statistical Consulting Unit (StaBLab) at the Department of Statistics, LMU. I want to integrate the ideas of open science and reproducible research into our consulting practice.

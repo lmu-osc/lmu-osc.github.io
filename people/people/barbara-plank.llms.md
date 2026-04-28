@@ -16,6 +16,6 @@ Faculty of Languages & Literatures
 
 ## Mission Statement
 
-Sharing is caring! Open science is essential to drive progress, support transparency, reliability, reproducability and replicability of science. My research field is Natural Language Processing (NLP)/Computational Linguistics (CL). In NLP/CL, I strongly believe that sharing resources publicly (data, code, publications) has led to not only foster an inclusive research community, but has also contributed to lifting the field from a small research area into a central field in AI research, where the main goal is to develop inclusive language technology.
+Sharing is caring! Open science is essential to drive progress, support transparency, reliability, reproducibility and replicability of science. My research field is Natural Language Processing (NLP)/Computational Linguistics (CL). In NLP/CL, I strongly believe that sharing resources publicly (data, code, publications) has led to not only foster an inclusive research community, but has also contributed to lifting the field from a small research area into a central field in AI research, where the main goal is to develop inclusive language technology.
 
 Barbara Plank is affiliated with the Faculty of Language and Literatures and the Faculty of Mathematics, Informatics & Statistics, and part of the Center for Information and Language Processing (CIS)

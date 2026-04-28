@@ -6,13 +6,13 @@ LMU Open Science Center Coordinator
 
 [malika.ihle@lmu.de](mailto:malika.ihle@lmu.de)
 
-[](https://www.linkedin.com/malika-ihle) [](https://github.com/malikaihle) [](https://scicomm.xyz/@MalikaIhle) [](https://bsky.app/profile/malikaihle.bsky.social) [](https://orcid.org/0000-0002-3242-5981)
+[](https://bsky.app/profile/malikaihle.bsky.social) [](https://www.linkedin.com/malika-ihle) [](https://github.com/malikaihle) [](https://orcid.org/0000-0002-3242-5981) [](https://scicomm.xyz/@MalikaIhle)
 
 ## Mission Statement
 
 I am the Coordinator of the LMU Open Science Center, developing a comprehensive approach to open research that extends across all disciplines at LMU Munich, using both bottom-up and top-down strategies.
 
-My role is to provide peer-to-peer training and develop an open research curriculum, coordinate grassroots initiatives and organise various events, support meta-research collaborations, liaise with local, national, and international stakeholders to inform the design of incentives and policies, and co-develop a strategic plan to make the OSC a key sustainable entity benefiting LMU Munich.
+My role is to provide peer-to-peer training and develop an open research curriculum, coordinate grassroots initiatives and organize various events, support meta-research collaborations, liaise with local, national, and international stakeholders to inform the design of incentives and policies, and co-develop a strategic plan to make the OSC a key sustainable entity benefiting LMU Munich.
 
 I am the German Reproducibility Network ([GRN](https://reproducibilitynetwork.de/)) local network lead.
 

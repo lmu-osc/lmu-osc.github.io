@@ -31,7 +31,7 @@ Contents:
 
 The workshop contains of both theoretical input and hands-on exercises. Please bring your own laptop (preferably with R and RStudio installed). Skills in R will be beneficial but not essential.
 
-*Notice: End of march or beginning of April, there will be another OSC workshop on “Advanced Power Analysis”. Announcement will be made seperately on the OSC news website.*
+*Notice: End of march or beginning of April, there will be another OSC workshop on “Advanced Power Analysis”. Announcement will be made separately on the OSC news website.*
 
 #### Instructors
 

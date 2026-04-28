@@ -1,6 +1,6 @@
 # Local Open Science Initiatives
 
-The LMU Open Science Center members and fellows organise the following grassroots initiatives.
+The LMU Open Science Center members and fellows organize the following grassroots initiatives.
 
 ![OSIM logo](images/osim.png)
 
@@ -22,7 +22,7 @@ Open Science Initiative in Statistics
 
 ### OSIP
 
-Open Science Intitiative in Psychology
+Open Science Initiative in Psychology
 
 [Learn More](local-os-initiatives/osip.llms.md)
 
