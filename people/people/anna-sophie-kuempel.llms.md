@@ -8,7 +8,7 @@ Faculty of Social Sciences
 
 [anna.kuempel@ifkw.lmu.de](mailto:anna.kuempel@ifkw.lmu.de)
 
-[LMU Profile](https://www.sw.lmu.de/ifkw/de/das-institut/organisation-und-ansprechpartner/menschen-am-ifkw/kontaktseite/anna-sophie-kuempel-37f0dbbd.html)
+[LMU Profile](https://www.sw.lmu.de/ifkw/de/das-institut/organization-und-ansprechpartner/menschen-am-ifkw/kontaktseite/anna-sophie-kuempel-37f0dbbd.html)
 
 [Personal Website](https://anna-kuempel.de/)
 

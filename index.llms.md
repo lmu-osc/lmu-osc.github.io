@@ -5,7 +5,7 @@
 - ✓ Essential training in the highest standards of reproducible research methods
 - ✓ Digital sovereignty and resilience to global challenges through open source workflows
 - ✓ Transparency as foundation for trust and evidence-based societal debates
-- ✓ Reliable scientific data as a critical foundation for responsible AI, digitalisation, and societal translation
+- ✓ Reliable scientific data as a critical foundation for responsible AI, digitalization, and societal translation
 
 [Learn More About OSC](about/index.llms.md)
 

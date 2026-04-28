@@ -48,7 +48,7 @@ Again, we will start with a short summary of the paper and then continue with th
 - How can the system be changed in the long term, so that reproducible research is promoted independently of the research results?
 - How can we promote continuous education among scientists of all ages?
 - What changes are central to the training of young scientists in order promote sustainably robust and reproducible research?
-- What other problems could arise during and through the implementatio of the measures described in the article?
+- What other problems could arise during and through the implementation of the measures described in the article?
 
   
 If you are interested, you are cordially welcome to join the next meetings. You can simply send an e-mail to [stephan.nuding@yahoo.de](mailto:stephan.nuding@yahoo.de "Send email to: stephan.nuding@yahoo.de") to join the mailing list to get information about the next meetings and chosen papers.

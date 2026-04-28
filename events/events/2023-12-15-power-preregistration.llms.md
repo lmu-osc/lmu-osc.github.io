@@ -22,15 +22,15 @@ English
 
 We are excited to invite you to our fifth session this semester. The session will revolve around preregistration, and based on the paper „Reducing bias, increasing transparency and calibrating confidence with preregistration“ by Hardwicke & Wagenmakers, we will discuss functions and benefits of preregistration in scientific research as well as practical challenges and related meta-research. 
 
-**Procedure:** One member of the organising team, Julian Lange, will summarise the paper by Hardwicke & Wagenmakers. There will then be an open discussion where you can contribute your own thoughts and questions. Finally, there will be time to get to know each other and talk in smaller groups.
+**Procedure:** One member of the organizing team, Julian Lange, will summarise the paper by Hardwicke & Wagenmakers. There will then be an open discussion where you can contribute your own thoughts and questions. Finally, there will be time to get to know each other and talk in smaller groups.
 
 **About the journal club: **[Here](../../meetups/reproducibilitea/index.llms.md "ReproducibiliTea Journal Club") you can find further information about the concept of the journal club.
 
 You are cordially invited to attend our upcoming meetings! To stay updated and receive notifications about these gatherings and the selected papers, you can either subscribe to our mailing list by clicking on this link: <https://lists.lrz.de/mailman/listinfo/reproducibilitea>, or you can send an email to [reproducibilitea.munich@gmail.com](mailto:reproducibilitea.munich@gmail.com "Send email to: reproducibilitea.munich@gmail.com"). There is no requirement to have read the designated paper before each session, although it could be beneficial.
 
-The organisation team is looking forward to seeing you at one of the next journal club sessions.
+The organization team is looking forward to seeing you at one of the next journal club sessions.
 
-Organisation team:
+organization team:
 
 - Laura Goetz, Graduate student in Medicine and Psychology
 - Viktoria Wiegelmann, Undergraduate student in Psychology

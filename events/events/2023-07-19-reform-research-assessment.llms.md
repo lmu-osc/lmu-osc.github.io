@@ -6,7 +6,7 @@
 
 #####  Location
 
-Hybrid (Room A 015 in Geschw.-Scholl-Pl. 1 and via Zoom)  
+Hybrid (Room A 015 in Geschwister-Scholl-Pl. 1 and via Zoom)  
 
 #####  Format
 

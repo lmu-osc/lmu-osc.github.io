@@ -20,17 +20,17 @@ English
 
   
 
-We inivite you to attend to the sixth session of our journal club this semester. In this session, we will discuss how the replication crisis has actually led to improvements in how research is conducted, leading to what’s now known as the ‘credibility revolution’. Discussing the paper “The replication crisis has led to positive structural, procedural, and community changes” by Korbmacher et al., we will examine the benefits that have emerged from this time period for research practices and the scientific community.
+We invite you to attend to the sixth session of our journal club this semester. In this session, we will discuss how the replication crisis has actually led to improvements in how research is conducted, leading to what’s now known as the ‘credibility revolution’. Discussing the paper “The replication crisis has led to positive structural, procedural, and community changes” by Korbmacher et al., we will examine the benefits that have emerged from this time period for research practices and the scientific community.
 
-**Procedure:** One member of the organising team, Gracia Prüm, will summarise the paper by Korbmacher et al. There will then be an open discussion where you can contribute your own thoughts and questions. Finally, there will be time to get to know each other and talk in smaller groups.
+**Procedure:** One member of the organizing team, Gracia Prüm, will summarise the paper by Korbmacher et al. There will then be an open discussion where you can contribute your own thoughts and questions. Finally, there will be time to get to know each other and talk in smaller groups.
 
 **About the journal club: **[Here](../../meetups/reproducibilitea/index.llms.md "ReproducibiliTea Journal Club") you can find further information about the concept of the journal club.
 
 You are cordially invited to attend our upcoming meetings! To stay updated and receive notifications about these gatherings and the selected papers, you can either subscribe to our mailing list by clicking on this link: <https://lists.lrz.de/mailman/listinfo/reproducibilitea>, or you can send an email to [reproducibilitea.munich@gmail.com](mailto:reproducibilitea.munich@gmail.com "Send email to: reproducibilitea.munich@gmail.com"). There is no requirement to have read the designated paper before each session, although it could be beneficial.
 
-The organisation team is looking forward to seeing you at one of the next journal club sessions.
+The organization team is looking forward to seeing you at one of the next journal club sessions.
 
-Organisation team:
+organization team:
 
 - Laura Goetz, Graduate student in Medicine and Psychology
 - Viktoria Wiegelmann, Undergraduate student in Psychology

@@ -37,4 +37,4 @@ The workshop consists of information and discussion sessions and invites attende
 
 #### Questions?
 
-If you have any questions, please contact [Forschungs Förderung](mailto:forschungsfoerderung@verwaltung.uni-muenchen.de).
+If you have any questions, please contact [Forschungsförderung](mailto:forschungsfoerderung@verwaltung.uni-muenchen.de).

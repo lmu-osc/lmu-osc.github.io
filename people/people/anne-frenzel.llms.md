@@ -14,6 +14,6 @@ Faculty of Psychology & Education
 
 ## Mission Statement
 
-I am professor for Psychology of Excellence in Buisness and Education at the Department of Psychology.
+I am professor for Psychology of Excellence in Business and Education at the Department of Psychology.
 
 My area of research is educational psychology and my passion is to understand basic psychological principles through exploring their relevance in the applied field of teaching and learning. I consider the Open Science movement a wonderful opportunity to focus again on the key prerequisites of high-quality scientific inquiry- in-depth theorizing, rigorous hypothesizing, precise operationalizing, stringent analyzing, and – only then – wrapping our heads around what the results may mean.

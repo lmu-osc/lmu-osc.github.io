@@ -18,7 +18,7 @@ English
 
   
 
-The Journal Club: “ReproducibiliTea” at LMU Munich continues with its sixth meeting to discuss two interesting papers. The organisation team is happy to announce that the paper’s authors, Dr. Tobias Wingen and Marlene Altenmüller, will give an introductory talk to this session and participate in the open discussion afterwards:
+The Journal Club: “ReproducibiliTea” at LMU Munich continues with its sixth meeting to discuss two interesting papers. The organization team is happy to announce that the paper’s authors, Dr. Tobias Wingen and Marlene Altenmüller, will give an introductory talk to this session and participate in the open discussion afterwards:
 
 Participants can use the following **key questions** to prepare for the discussion:
 
@@ -44,21 +44,21 @@ Marlene Altenmüller is a research associate with the social psychology group at
 
 Dr. Tobias Wingen
 
-The work of Dr. Tobias Wingen focuses on trust in science and science communication, which he often studies from a social-cognitive perspective. A central topic of his work are determinants and consequences of trust in science. For example, his research showed that scientific quality control (such as peer-review or successful replication studies) fosters public trust in science. His work further demonstrated that trust in science, in turn, is a central predictor of various beneficial behaviours, such as protective behaviour during pandemics. Tobias recently completed his doctoral degree at the Social Cognition Center Cologne (University of Cologne) and is now a postdoctoral researcher in the Research Group on Health and Risk Communication at the Institute of General Practice and Family Medicine (University Hospital Bonn).
+The work of Dr. Tobias Wingen focuses on trust in science and science communication, which he often studies from a social-cognitive perspective. A central topic of his work are determinants and consequences of trust in science. For example, his research showed that scientific quality control (such as peer-review or successful replication studies) fosters public trust in science. His work further demonstrated that trust in science, in turn, is a central predictor of various beneficial behaviors, such as protective behavior during pandemics. Tobias recently completed his doctoral degree at the Social Cognition Center Cologne (University of Cologne) and is now a postdoctoral researcher in the Research Group on Health and Risk Communication at the Institute of General Practice and Family Medicine (University Hospital Bonn).
 
 ## Concept of the Journal Club
 
-The interdisciplinary journal club “ReproducibiliTea” is launched every 3-4 weeks and addresses main questions and current topics concerning Open Science and the credibility of research findings. The idea - originated from Great Britain - was already developed in many other countries using the same name. During on-site meetings tea, juice and small snacks are provided to live up to the slogan. However, some meetings are held online due to organisational reasons. No matter where the sessions take place, everybody is welcome to bring their own food and drinks and thus connect the journal club with their lunch break.
+The interdisciplinary journal club “ReproducibiliTea” is launched every 3-4 weeks and addresses main questions and current topics concerning Open Science and the credibility of research findings. The idea - originated from Great Britain - was already developed in many other countries using the same name. During on-site meetings tea, juice and small snacks are provided to live up to the slogan. However, some meetings are held online due to organizational reasons. No matter where the sessions take place, everybody is welcome to bring their own food and drinks and thus connect the journal club with their lunch break.
 
 The Journal Club consists of open talk sessions for discussing Open Science, reproducibility, and other related issues and is explicitly open to all disciplines and institutions to create the most interesting interchange. Each session starts with a short talk about the paper and then continues with an open discussion in which you can contribute your own thoughts and questions.
 
-During a longer break between 2020 and 2021, the concept was slightly revised, and the organisation team decided to invite the speaker(s) of the respective paper that is discussed in each session. The author herself/himself starts with the introductory talk including a short summary of the paper. Afterwards, there is enough time for direct interaction with the author(s) and, as before, an open discussion with all of the participants.
+During a longer break between 2020 and 2021, the concept was slightly revised, and the organization team decided to invite the speaker(s) of the respective paper that is discussed in each session. The author herself/himself starts with the introductory talk including a short summary of the paper. Afterwards, there is enough time for direct interaction with the author(s) and, as before, an open discussion with all of the participants.
 
 You are warmly welcome to join the next meetings. You can simply send an e-mail to [reproducibilitea.munich@gmail.com](mailto:reproducibilitea.munich@gmail.com "Send email to: reproducibilitea.munich@gmail.com") to join the mailing list to get information about the next meetings and chosen papers. For each session it would be helpful to have read the announced paper, but there is no obligation to do so.
 
-The organisation team is looking forward to seeing you at one of the next Journal Club sessions.
+The organization team is looking forward to seeing you at one of the next Journal Club sessions.
 
-Organisation team:
+organization team:
 
 - Laura Goetz, Medical Student at LMU Munich
 - Stephan Nuding, Psychology Student at LMU Munich

@@ -20,7 +20,7 @@ English
 
   
 
-After a short summer break, the Journal Club: “ReproJuicebiliTea” at LMU Munich continues with its fourth meeting to discuss an interesting paper about mistakes and lost confidence in scientific work as well as how to deal with it. The organisation team is happy to announce that the paper’s author, Dr. Julia M. Rohrer, will give an introductory talk to this session and participate in the open discussion afterwards:
+After a short summer break, the Journal Club: “ReproJuicebiliTea” at LMU Munich continues with its fourth meeting to discuss an interesting paper about mistakes and lost confidence in scientific work as well as how to deal with it. The organization team is happy to announce that the paper’s author, Dr. Julia M. Rohrer, will give an introductory talk to this session and participate in the open discussion afterwards:
 
 Participants can use the following **key questions** to prepare for the discussion:
 
@@ -47,13 +47,13 @@ The interdisciplinary journal club “ReproJucibiliTea” is launched every 3-4 
 
 The Journal Club consists of open talk sessions for discussing Open Science, reproducibility, and other related issues and is explicitly open to all disciplines and institutions to create the most interesting interchange. Each session starts with a short talk about the paper and then continues with an open discussion in which you can contribute your own thoughts and questions.
 
-During a longer break between 2020 and 2021, the concept was slightly revised, and the organisation team decided to invite the speaker(s) of the respective paper that is discussed in each session. The author herself/himself starts with the introductory talk including a short summary of the paper. Afterwards, there is enough time for direct interaction with the author(s) and, as before, an open discussion with all of the participants.
+During a longer break between 2020 and 2021, the concept was slightly revised, and the organization team decided to invite the speaker(s) of the respective paper that is discussed in each session. The author herself/himself starts with the introductory talk including a short summary of the paper. Afterwards, there is enough time for direct interaction with the author(s) and, as before, an open discussion with all of the participants.
 
 You are warmly welcome to join the next meetings. You can simply send an e-mail to [reproducibilitea.munich@gmail.com](mailto:reproducibilitea.munich@gmail.com "Send email to: reproducibilitea.munich@gmail.com") to join the mailing list to get information about the next meetings and chosen papers. For each session it would be helpful to have read the announced paper, but there is no obligation to do so.
 
-The organisation team is looking forward to seeing you at one of the next Journal Club sessions.
+The organization team is looking forward to seeing you at one of the next Journal Club sessions.
 
-Organisation team:
+organization team:
 
 - Laura Goetz, Medical Student at LMU Munich
 - Stephan Nuding, Psychology Student at LMU Munich

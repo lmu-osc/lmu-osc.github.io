@@ -46,4 +46,4 @@ Additional online information on good data management can be found in this [blog
 
 #### Questions?
 
-If you have any questions, please contact [Caroline Zyga](mailto:caroline.zyga@psy.lmu.de).
+If you have any questions, please contact [Caroline Zygar-Hoffmann](mailto:caroline.zyga@psy.lmu.de).

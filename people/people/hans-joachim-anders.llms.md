@@ -14,4 +14,4 @@ Faculty of University Hospital
 
 ## Mission Statement
 
-The different aspects of Open Science are important to increase transparency and reproducibility of research. My own focus is to improve the predictive capacity of preclinical studies for the outcome of subsequent clinical trials. We develop concepts and perform preclinical randomized trials (pRCTs), in a single centre or multicenter design, to reduce the existing gap in the design of pRCTs and human RCTs.
+The different aspects of Open Science are important to increase transparency and reproducibility of research. My own focus is to improve the predictive capacity of preclinical studies for the outcome of subsequent clinical trials. We develop concepts and perform preclinical randomized trials (pRCTs), in a single center or multicenter design, to reduce the existing gap in the design of pRCTs and human RCTs.

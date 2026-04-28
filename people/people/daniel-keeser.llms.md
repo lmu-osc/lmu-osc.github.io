@@ -14,4 +14,4 @@ Faculty of University Hospital
 
 ## Mission Statement
 
-I am research assistant and licenced psychologist at Department for Psychiatry and Psychotherapy at the University Hospital Munich.
+I am research assistant and licensed psychologist at Department for Psychiatry and Psychotherapy at the University Hospital Munich.

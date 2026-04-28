@@ -25,7 +25,7 @@ English
 
 ### Materials
 
-- [Announcement](../../news/discussion_predatoryj/index.llms.md)
+- [Announcement](../../news/discussion_predatory/index.llms.md)
 - [Slides](osim_predatorypublishing_2024.pdf)
 
 #### Questions?

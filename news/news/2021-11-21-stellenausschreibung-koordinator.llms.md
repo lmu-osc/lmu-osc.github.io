@@ -17,8 +17,8 @@ Sie sind für die wissenschaftliche und organisatorische Koordination sowie Unte
 
 - Ein aktives, gestaltendes Einbringen bei der Curriculums-/Strategieentwicklung zur Einbindung und Förderung von Open Science an der LMU und darüber hinaus
 - Unterstützung von Forschungskooperationen in Bezug auf Open-Science-Aspekte
-- Organisation von Kolloquien und Workshops, Einladung und Betreuung von Referent:innen
-- Organisation von Aktivitäten wie einem regelmäßigen Open Science-Tag an der LMU
+- organization von Kolloquien und Workshops, Einladung und Betreuung von Referent:innen
+- organization von Aktivitäten wie einem regelmäßigen Open Science-Tag an der LMU
 - Vernetzung von verschiedenen Stellen innerhalb der LMU (z.B. OSC, Bibliothek, Forschungsförderung, LRZ, Fakultäten)
 - Mitarbeit an Finanzierungskonzepten
 - Betreuung der Webseite
@@ -36,7 +36,7 @@ Sie sind für die wissenschaftliche und organisatorische Koordination sowie Unte
 - Open Science-Affinität
 - Sehr gute Kenntnisse wissenschaftlicher Arbeitsmethoden und -techniken
 - Teamfähigkeit
-- Sehr gute Organisationsfähigkeit
+- Sehr gute Organizationsfähigkeit
 - Versierter Umgang mit IT
 
 Die LMU strebt eine Erhöhung des Anteils der Frauen in Forschung und Lehre an und bittet deshalb Wissenschaftlerinnen nachdrücklich, sich zu bewerben. Schwerbehinderte werden bei ansonsten im Wesentlichen gleicher Eignung bevorzugt.

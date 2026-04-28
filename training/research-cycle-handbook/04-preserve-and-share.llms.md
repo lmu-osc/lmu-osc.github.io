@@ -556,7 +556,7 @@ Physics, mathematics, computer science preprints.
 
 ### 4.5 Attributions & Persistent Identifiers
 
-All research outputs and their specific versions should be linked to their authors, organisations, and funders through persistent identifiers.
+All research outputs and their specific versions should be linked to their authors, organizations, and funders through persistent identifiers.
 
 ## 4.5.1. Authorship, Contributorship, and ORCID
 
@@ -685,7 +685,7 @@ Use CRediT taxonomy to give attribution to all contributors
 
 Deposit a preprint (if allowed) on preprint server or institutional repository
 
-Request an open licence (CC-BY 4.0) for the article if possible to allow redistribution
+Request an open license (CC-BY 4.0) for the article if possible to allow redistribution
 
 **After acceptance of an article**
 
@@ -695,6 +695,6 @@ Link the DOI of the published article to the preprint/postprint
 
 Handle data access requests if only metadata were shared
 
-Monitor citations and usage metrics of all research otuputs
+Monitor citations and usage metrics of all research outputs
 
 [Download checklist ](assets/checklists/04-Preserve-Share-Checklist.docx)

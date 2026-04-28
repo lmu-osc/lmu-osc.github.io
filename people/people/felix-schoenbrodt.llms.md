@@ -14,11 +14,11 @@ Faculty of Psychology & Education
 
 [Department of Psychology](https://www.psy.lmu.de/)
 
-[](https://scicomm.xyz/@nicebread) [](https://orcid.org/0000-0002-8282-3910) [](https://github.com/nicebread)
+[](https://orcid.org/0000-0002-8282-3910) [](https://github.com/nicebread) [](https://scicomm.xyz/@nicebread)
 
 ## Mission Statement
 
-I am principal investigator for Psychological Methods and Assessment at the Department of Psychology, the managing director of the LMU Open Science Center, and steering group member of the [META-REP priority program](https://www.lmu.de/psy/de/forschung/meta-rep/) (‘A meta-scientific research program to analyse and optimise replicability in the behavioral, social, and cognitive Sciences’).
+I am principal investigator for Psychological Methods and Assessment at the Department of Psychology, the managing director of the LMU Open Science Center, and steering group member of the [META-REP priority program](https://www.lmu.de/psy/de/forschung/meta-rep/) (‘A meta-scientific research program to analyze and optimize replicability in the behavioral, social, and cognitive Sciences’).
 
 The reproducibility of research findings is a core criterion of science, which however, has been challenged by the failure of recent large-scale replication projects. To foster open science practices, I teamed up with colleagues and established our department’s “Open Science Committee” in 2015. The outcomes of this committee include an open science paragraph which we included in all recent [professorship job descriptions](https://www.lmu.de/psy/en/research/open-science-measures/), adding transparency criteria to the department’s performance-based funding scheme, or introducing [modules on preregistrations, open data, and reproducible scripts](https://www.lmu.de/psy/de/studium/bachelor-psychologie/kern-curriculum-empirische-praktika/) as mandatory components in undergraduate courses.
 

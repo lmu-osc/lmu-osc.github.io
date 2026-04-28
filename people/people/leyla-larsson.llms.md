@@ -12,4 +12,4 @@ Faculty of University Hospital
 
 ## Mission Statement
 
-I am a public health professional working in the intersection between infectious and non-communicable diseases and the application of climate-resilient biomedical and biosocial solutions. I am passionate about translating research into evidence and leveraging data-driven approaches to global public health. To be able to do this, we as a research community need to foster research transparency, reproducibility, data sharing, and especially collaborations in these endeavours.
+I am a public health professional working in the intersection between infectious and non-communicable diseases and the application of climate-resilient biomedical and biosocial solutions. I am passionate about translating research into evidence and leveraging data-driven approaches to global public health. To be able to do this, we as a research community need to foster research transparency, reproducibility, data sharing, and especially collaborations in these endeavors.

@@ -1,4 +1,4 @@
-# The Good, the Bad and the Inbetween - The many facets of quality in scholarly publishing
+# The Good, the Bad and the In Between - The many facets of quality in scholarly publishing
 
 #####  Date & Time
 

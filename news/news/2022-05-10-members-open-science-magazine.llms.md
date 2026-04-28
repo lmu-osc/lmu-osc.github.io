@@ -10,7 +10,7 @@ Dr. Doreen Siegfried from the Leibniz Information Center for Economics intervie
   [Read the whole interview](https://open-science-future.zbw.eu/replikation-vorstellungsgespraech/)
 - **Open Science must not become a mere set of rules**: Hans-Bernd Brosius on science communications and Open Science  
   [Read the whole interview](https://open-science-future.zbw.eu/open-science-kein-blosses-regelwerk/)
-- **How young scientists can be sensitized for Open Science**: Andreas Beyerlein on his teaching experineces with Open and Reproducible Science  
+- **How young scientists can be sensitized for Open Science**: Andreas Beyerlein on his teaching experiences with Open and Reproducible Science  
   [Read the whole interview](https://open-science-future.zbw.eu/junge-wissenschaftlerinnen-fuer-open-science-sensibilisiert/)
 - **Open Science Practices help to reduce the probability of false results**: Anne-Laure Boulesteix on statistics and her own experiences with Open Science  
   [Read the whole interview](https://open-science-future.zbw.eu/open-science-prinzipien-helfen-falsche-ergebnisse-zu-reduzieren/)

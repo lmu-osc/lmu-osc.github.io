@@ -43,7 +43,7 @@ Montag, 13.02.2023 15:00 – 16:00 Uhr
 
 Dienstag, 14.02.2023 13:00 – 13:45 Uhr  
 **Abstract**: Open short lecture for interested researchers and students, with Q&A session.  
-**Topics**: When should one consider publishing data? Data publication prerequisites (legal hurdles, licences, preparatory work), publishing options; what are data journals?  
+**Topics**: When should one consider publishing data? Data publication prerequisites (legal hurdles, licenses, preparatory work), publishing options; what are data journals?  
 **Sprache**: englisch  
 **Teilnahmebedingungen**: öffentlich und für alle Zielgruppen  
 **Registrierung**: [https://ub.fau.de/schulungen/a-short-introduction-to-data-publishing-and-data-journals/](https://ub.fau.de/schulungen/a-short-introduction-to-data-publishing-and-data-journals/) (Informationen mit Zoom-Einwahldaten, keine Registrierung erforderlich)  

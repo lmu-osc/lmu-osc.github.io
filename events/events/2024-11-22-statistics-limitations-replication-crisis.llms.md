@@ -65,4 +65,4 @@ If you have any questions, please do not hesitate to contact [epix.workshop@stat
 
 #### Questions?
 
-If you have any questions, please contact [Epix Workshop](mailto:epix.workshop@stat.uni-muenchen.de.).
+If you have any questions, please contact [EPIX Workshop](mailto:epix.workshop@stat.uni-muenchen.de.).

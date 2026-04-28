@@ -52,7 +52,7 @@ Browse our training resources on open science practices, from data management to
 
 ### Consultations
 
-Get support on your implementation of open research practices and responsible research assessement.
+Get support on your implementation of open research practices and responsible research assessment.
 
 [Request a consultation ](mailto:osc@lmu.de?subject=Consultation%20request:)
 

@@ -26,7 +26,7 @@ Derzeit gibt es aufgrund der Aussetzung üblicher Qualitätsstandards etliche An
 
 Folien:
 
-[Foliensatz_Fieberhafte Forschung_OSC-Kolloquium.](assets/2020-05-14-corona-forschung-zuverlassigkeit-slides.pdf)
+[Foliensatz_Fieberhafte Forschung_OSC-Kolloquium.](assets/2020-05-14-corona-forschung-zuverlaessigkeit-slides.pdf)
 
 #### Presenters
 

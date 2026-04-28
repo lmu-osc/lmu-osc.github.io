@@ -19,6 +19,6 @@ Come along to talk about code, research tools, and open science in a social envi
 
 You can contact [Dr. Malika Ihle ](mailto:malika.ihle@lmu.de) or subscribe to our mailing list to get reminders or suggest themes. You can also join the [LMU Chat](https://www.lmu.de/en/about-lmu/structure/central-university-administration/it-services-division-vi/it-service-desk/central-it-services/lmu-chat-matrix/) , under the Open-Science-Center Team's OSC-hacky-hour channel.
 
-[![](images/idgGdCNeTC_logos-removebg-preview.png) OSC Matrix](https://matrix.to/#/#lmu-open-science-center:matrix.lmu.de#/#lmu-open-science-center:matrix.lmu.de)
+[![](images/matrix-logo-no-background.png) OSC Matrix](https://matrix.to/#/#lmu-open-science-center:matrix.lmu.de#/#lmu-open-science-center:matrix.lmu.de)
 
 [ Mailing list](https://lists.lrz.de/mailman/listinfo/hackyhour)
