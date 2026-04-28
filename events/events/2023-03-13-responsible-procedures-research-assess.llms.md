@@ -39,7 +39,7 @@ With these developments, it is evident that profound changes will come in how ac
 - **Dr Jess Rohmann** **(Scientific Strategic Advisor in the Scientific Director’s Office at the Max Delbrück Center in Berlin)** will present the perspective of Early-Career Researchers and an overview of recent actions taken in selected Berlin Institutions (Charité/BIH, Max Delbrück Center).
 - **Prof Dr Felix Schönbrodt** **(Managing Director of the LMU Open Science Center)** will present the Deutsche Gesellschaft für Psychologie’s working group proposal for practical implementation, for the field of psychology in Germany (see [https://doi.org/10.23668/psycharchives.8162](https://doi.org/10.23668/psycharchives.8162) and [https://doi.org/10.31234/osf.io/5yexm](https://doi.org/10.31234/osf.io/5yexm)).
 
-The event will be chaired by [Dr Heidi Seibold](../../members/individual_members/associated-members/seibold1/index.llms.md "Seibold"), Open and Reproducible Data Science Consultant, and Associate Member of the LMU Open Science Center.
+The event will be chaired by [Dr Heidi Seibold](../../people/people/heidi-seibold.llms.md "Seibold"), Open and Reproducible Data Science Consultant, and Associate Member of the LMU Open Science Center.
 
 #### Presenters
 

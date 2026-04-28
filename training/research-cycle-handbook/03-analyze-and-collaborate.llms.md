@@ -170,7 +170,7 @@ For a R project repository:
 
 Before publishing your project (see [4. Preserve & share](../../training/research-cycle-handbook/04-preserve-and-share.llms.md)):
 
-- **Record your dependencies** in your README file for possible reconstruction with [repo2docker](https://repo2docker.readthedocs.io/en/latest/) or binder (see [Code Publishing tutorial](https://lmu-osc.github.io/code-publishing/make_readme.html)).
+- **Record your dependencies** in your README file for possible reconstruction with [repo2docker](https://repo2docker.readthedocs.io/en/latest/) or binder (see [Code Publishing tutorial](https://lmu-osc.github.io/code-publishing/make-readme.html)).
 
 ####  LEARN MORE
 

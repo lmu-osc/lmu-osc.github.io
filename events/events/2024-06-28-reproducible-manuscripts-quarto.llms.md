@@ -28,9 +28,9 @@ Before the workshop:
 
 It is intended that you familiarize yourself with how Quarto works and have started your own reproducible manuscript **before** attending the workshop. If you have never worked with Quarto, R Markdown, or Jupyter Notebooks before, you should plan at least one workday for preparation. The following sections of the [self-paced online tutorial](https://lmu-osc.github.io/introduction-to-Quarto/) are particularly relevant for you to be able to create a reproducible scientific manuscript:
 
-- [Quarto Tutorials](https://lmu-osc.github.io/introduction-to-Quarto/quarto_tutorials.html): Companion to the beginner tutorials on the official Quarto website.
-- [Exercise: APA 7 Manuscripts](https://lmu-osc.github.io/introduction-to-Quarto/apa7_manuscript.html): An introduction to the Quarto extension [apaquarto](https://github.com/wjschne/apaquarto) , which allows formatting Quarto documents as APA 7 manuscripts.
-- **Optional:** [Exercise: Quarto Manuscripts](https://lmu-osc.github.io/introduction-to-Quarto/quarto_manuscripts.html): Quarto Manuscripts enable you to create a website that showcases your manuscript and provides a bundle with all the code and materials necessary to reproduce your manuscript.
+- [Quarto Tutorials](https://lmu-osc.github.io/introduction-to-Quarto/quarto-tutorials.html): Companion to the beginner tutorials on the official Quarto website.
+- [Exercise: APA 7 Manuscripts](https://lmu-osc.github.io/introduction-to-Quarto/apa7-manuscript.html): An introduction to the Quarto extension [apaquarto](https://github.com/wjschne/apaquarto) , which allows formatting Quarto documents as APA 7 manuscripts.
+- **Optional:** [Exercise: Quarto Manuscripts](https://lmu-osc.github.io/introduction-to-Quarto/quarto-manuscripts.html): Quarto Manuscripts enable you to create a website that showcases your manuscript and provides a bundle with all the code and materials necessary to reproduce your manuscript.
 
 During the workshop:
 

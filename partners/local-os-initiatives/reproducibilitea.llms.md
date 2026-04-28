@@ -18,15 +18,15 @@ As an example of our previous activities, please see: ReproducibiliTea München 
 
 ##  Past Organizers
 
-- [Laura Goetz](../../people/people/laura_goetz.llms.md), 2019–2024
+- [Laura Goetz](../../people/people/laura-goetz.llms.md), 2019–2024
 - [Viktoria Wiedemann](#), 2022–2024
-- [Gracia Prüm](../../people/people/gracia_pruem.llms.md), 2022–2024
+- [Gracia Prüm](../../people/people/gracia-pruem.llms.md), 2022–2024
 - Finia Loeb, 2022–2024
-- [Alp Kaan Aksu](../../people/people/alp_kaan_aksu.llms.md), 2022–2024
-- [Julian Lange](../../people/people/julian_lange.llms.md), 2023–2024
-- [Stephan Nuding](../../people/people/stephen_nuding.llms.md), 2019–2022
-- [Leonhard Schramm](../../people/people/leonhard_schramm.llms.md), 2019–2023
-- [Franka Etzel](../../people/people/franka_etzel.llms.md), 2022–2023
+- [Alp Kaan Aksu](../../people/people/alp-kaan-aksu.llms.md), 2022–2024
+- [Julian Lange](../../people/people/julian-lange.llms.md), 2023–2024
+- [Stephan Nuding](../../people/people/stephen-nuding.llms.md), 2019–2022
+- [Leonhard Schramm](../../people/people/leonhard-schramm.llms.md), 2019–2023
+- [Franka Etzel](../../people/people/franka-etzel.llms.md), 2022–2023
 
 ## Get Involved
 
