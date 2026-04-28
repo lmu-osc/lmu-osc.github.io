@@ -10,13 +10,13 @@ The Department of Statistics is involved in the development and application of s
 
 ##  Members
 
-- [Dr. Andreas Bender](../../people/people/andreas_bender.llms.md)
-- [Dr. Moritz Herrmann](../../people/people/moritz_herrmann.llms.md)
-- [Dr. Matthias Aßenmacher](../../people/people/matthias_assenmacher.llms.md)
-- [Lisa Wimmer](../../people/people/lisa_wimmer.llms.md)
+- [Dr. Andreas Bender](../../people/people/andreas-bender.llms.md)
+- [Dr. Moritz Herrmann](../../people/people/moritz-herrmann.llms.md)
+- [Dr. Matthias Aßenmacher](../../people/people/matthias-assenmacher.llms.md)
+- [Lisa Wimmer](../../people/people/lisa-wimmer.llms.md)
 - [Martje Rave](#)
-- [Patrick Schenk](../../people/people/patrick_oliver_schenk.llms.md)
-- [Felix Henninger](../../people/people/felix_henninger.llms.md)
+- [Patrick Schenk](../../people/people/patrick-oliver-schenk.llms.md)
+- [Felix Henninger](../../people/people/felix-henninger.llms.md)
 
 ## Get Involved
 

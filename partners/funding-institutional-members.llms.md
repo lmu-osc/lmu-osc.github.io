@@ -36,9 +36,9 @@ Contact Person:
 
 [Prof. Dr. Frank Fischer](../people/people/frank-fischer.llms.md)
 
-[ Website](https://www.en.mcls.uni-muenchen.de/research/sharp-initiative/index.html)
+[ Website](http://www.trr419-sharp.de/)
 
-"Simulation-Based Learning in Higher Education. Advancing Research on Process Diagnostics and Personalised Interventions" (SHARP) - mission statement tba.
+As a DFG-funded Collaborative Research Centre, TRR419 SHARP is committed to advancing rigorous, transparent, and reproducible research in the learning sciences. Our work brings together interdisciplinary expertise from LMU Munich, TUM, the University of Augsburg, and the Leibniz Supercomputing Centre to investigate simulation-based learning, process diagnostics, and AI-supported personalized interventions in higher education. As an institutional member of the LMU Open Science Center, we support the development of open research practices, sustainable research data management, and reproducible workflows across collaborative projects. Our involvement reflects our commitment to methodological rigor, shared infrastructures, and the transparent dissemination of scientific knowledge in interdisciplinary and data-intensive research.
 
 ------------------------------------------------------------------------
 

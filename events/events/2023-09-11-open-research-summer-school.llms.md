@@ -71,7 +71,7 @@ Register here: <https://www.pretix.osc.lmu.de/lmu-osc/lectures/>
 
 ## Funding Note
 
-The [LMU Open Science Center coordinator](../../about_us/coordinator/index.llms.md "Scientific Coordinator"), Dr Malika Ihle, organising the summer school, is funded by the **Frontier Fund of LMU Munich**. The summer school is funded by the **Fund for the Promotion of Teaching of LMU Munich**. The **LMU University Library** provides in-kind support.
+The [LMU Open Science Center coordinator](../../people/people/malika-ihle.llms.md "Scientific Coordinator"), Dr Malika Ihle, organising the summer school, is funded by the **Frontier Fund of LMU Munich**. The summer school is funded by the **Fund for the Promotion of Teaching of LMU Munich**. The **LMU University Library** provides in-kind support.
 
  
 

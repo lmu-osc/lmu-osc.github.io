@@ -18,7 +18,7 @@ German
 
   
 
-The LMU Open Science Initiative in Psychology (OSIP) cordially invites to the online workshop “Tips and tools for a reproducible workflow?” led and organized by [Dr. Caroline Hygar-Hoffmann](../../members/individual_members/lmu-members/zygar-hoffmann/index.llms.md "Zygar-Hoffmann") and Moritz Fischer.
+The LMU Open Science Initiative in Psychology (OSIP) cordially invites to the online workshop “Tips and tools for a reproducible workflow?” led and organized by [Dr. Caroline Hygar-Hoffmann](../../people/people/caroline-zygar-hoffmann.llms.md "Zygar-Hoffmann") and Moritz Fischer.
 
 In a mix of input and hand-on sessions you can learn more about how to design your workflow in research projects in a way that you as well as everyone who will be involved with your projects (e.g. project members, reviewers, or your research community) will be able to reproduce it later and you will work more efficiently.
 

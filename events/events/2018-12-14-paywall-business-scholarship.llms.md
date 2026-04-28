@@ -29,9 +29,9 @@ We will live-screen the movie, and have a **subsequent panel discussion**, featu
 - Prof. Jason Schmitt (Director and producer of the movie; Clarkson University, USA)
 - Prof. Michael Bosnjak (Leibniz Institute for Psychology Information, ZPID, Trier)
 - Volker Schallehn (Head of Open Access Publishing, University Library, LMU)
-- [Prof. Nikolaus Plesnila](../../members/individual_members/lmu-members/plesnila/index.llms.md "Plesnila") (LMU Open Science Center; University Hospital of Munich)
+- [Prof. Nikolaus Plesnila](../../people/people/nikolaus-plesnila.llms.md "Plesnila") (LMU Open Science Center; University Hospital of Munich)
 
-The event will start by a short opening speech by our speaker, [Prof. Katrin Auspurg](../../members/individual_members/lmu-members/auspurg/index.llms.md "Auspurg"), and will be moderated by OSC member [Dr. Sabine Hoffmann](https://www.stat.lmu.de/stablab/de/team/kontaktseite/sabine-hoffmann-1b1ce4c9.html).
+The event will start by a short opening speech by our speaker, [Prof. Katrin Auspurg](../../people/people/katrin-auspurg.llms.md "Auspurg"), and will be moderated by OSC member [Dr. Sabine Hoffmann](https://www.stat.lmu.de/stablab/de/team/kontaktseite/sabine-hoffmann-1b1ce4c9.html).
 
 See the **trailer** here: <https://www.youtube.com/watch?v=YaHlcwyn2Jk&feature=youtu.be>
 

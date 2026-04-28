@@ -196,7 +196,7 @@ Common open licenses for data are:
 
   
 
-Learn more about open licenses for data and code in our [code publishing tutorial](https://lmu-osc.github.io/code-publishing/choose_license.html).
+Learn more about open licenses for data and code in our [code publishing tutorial](https://lmu-osc.github.io/code-publishing/choose-license.html).
 
   
 
@@ -322,7 +322,7 @@ A license tells others what they can do with your code. Licensing your code cons
 
   
 
-Learn more about open licenses for data and code in our [code publishing tutorial](https://lmu-osc.github.io/code-publishing/choose_license.html) or using the tool ‘[Choose an open source license](https://choosealicense.com/licenses/)’.
+Learn more about open licenses for data and code in our [code publishing tutorial](https://lmu-osc.github.io/code-publishing/choose-license.html) or using the tool ‘[Choose an open source license](https://choosealicense.com/licenses/)’.
 
 ####  LEARN MORE
 

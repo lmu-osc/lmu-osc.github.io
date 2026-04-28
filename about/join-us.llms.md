@@ -22,6 +22,6 @@ Become an OSC Fellow if you are a PhD candidate or a student from LMU Munich wan
 
 #### Institutional Members
 
-Departments, faculties, units, or central institutions of the LMU that provide infrastructure or other services that facilitate the goals of the OSC can become [institutional members](../partners/institutional_members.llms.md). Learn more about the benefits of becoming a funding institutional member below and schedule a call with us!
+Departments, faculties, units, or central institutions of the LMU that provide infrastructure or other services that facilitate the goals of the OSC can become [institutional members](../partners/institutional-members.llms.md). Learn more about the benefits of becoming a funding institutional member below and schedule a call with us!
 
-[Learn more ](../partners/becoming_institutional_members.llms.md)
+[Learn more ](../partners/becoming-institutional-members.llms.md)
