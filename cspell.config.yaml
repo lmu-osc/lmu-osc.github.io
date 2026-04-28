@@ -12,6 +12,7 @@ dictionaries:
   - osc-acronyms
   - osc-german
   - osc-other
+  - osc-british-english-exceptions
 
 allowCompoundWords: true
 useGitignore: true
@@ -61,4 +62,7 @@ dictionaryDefinitions:
     addWords: true
   - name: osc-other
     path: config/cspell/other.txt
+    addWords: true
+  - name: osc-british-english-exceptions
+    path: config/cspell/british-english-exceptions.txt
     addWords: true
