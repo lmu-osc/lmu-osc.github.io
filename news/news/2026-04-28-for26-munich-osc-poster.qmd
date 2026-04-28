@@ -1,0 +1,29 @@
+---
+title: "LMU OSC's Poster on 'Open Research Practices' at FOR2026 Munich"
+date: 2026-04-28
+categories: ["Announcement"]
+description: "LMU Open Science Center to present a poster at FOR2026 Munich about the actions taken to embed Open Research Practices at LMU and beyond."
+
+flyer:
+    - file: "images/2026-04-28-for26-munich-osc-poster.pdf"
+      title: "Embedding Open Research Practices at LMU and Beyond - LMU OSC Poster"  
+
+template: templates/news-template.html
+filters:
+  - templates/process-news-yaml.lua
+---
+
+The LMU Open Science Center (OSC) will present a poster at **[FOR2026 Munich – The Future of Open Research: Reliable, Responsible, Equitable](https://opensciencestudies.eu/for-2026-conference/)**, taking place from **4–6 May 2026** at the Institute for Advanced Study, Technical University of Munich.
+
+The poster showcases how the LMU OSC works to embed open research practices at LMU Munich and beyond through a multi-layered approach that combines structured training programs, practical resources, and community learning opportunities. The goal is to make open research practices more practical, scalable, and sustainable across disciplines.
+
+A key focus of the poster is the OSC’s **Switch-to-Open** program, a structured training and consultation initiative that helps research groups integrate open research practices across the full research life-cycle. This includes support with study planning, preregistration, data management, reproducible analysis workflows, and FAIR sharing of data, code, and research materials.
+
+Also highlighted is the **Train-the-Trainer** program, which equips researchers and research support staff with pedagogical skills to teach and advocate for Open Research practices in their own institutions and communities. Participants are given tools and materials to facilitate their own learning sessions and promote open research culture more broadly.
+
+These initiatives are supported by a broader ecosystem of accessible learning opportunities. Through the OSC’s free **[self-learning catalogue](https://www.osc.lmu.de/training/self-learning.html)**, researchers can access online tutorials and lecture recordings on topics such as **R for reproducible analyses, Quarto for dynamic documents, Git/GitHub for version control, preregistration, open data, and reproducible workflows**. The OSC also hosts regular workshops throughout the year and organizes its annual **[Open Science Summer School](https://lmu-osc.github.io/Open-Science-Summer-School-2026/)**, which provides participants with hands-on training in open research practices.
+
+Together, these initiatives reflect the OSC’s broader mission of helping researchers build practical open research skills while supporting long-term institutional and cultural change.
+
+The poster can be viewed and downloaded here:  
+<https://doi.org/10.5281/zenodo.19626906>
