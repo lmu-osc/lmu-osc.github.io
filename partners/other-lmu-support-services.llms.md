@@ -58,14 +58,17 @@ Contact Person:
 
 [RDM team](mailto:rdm@ub.uni-muenchen.de)
 
-[ Website](https://www.en.ub.uni-muenchen.de/writing/research_data/index.html)
+[ Website](https://www.ub.lmu.de/en/open-access-publishing/research-data/)
 
-The RDM Information team at the University Library of LMU Munich provides infrastructure and gives advice on:
+The [RDM Information team](https://www.ub.lmu.de/en/open-access-publishing/research-data/) at the University Library of LMU Munich supports researchers throughout the research data lifecycle by providing infrastructure, guidance, and training in:
 
-- How to start your research data management
-- How to write RDM plans (e.g., with the tool RDMO)
-- How to make your data FAIR (findable, accessible, interoperable, reusable)
-- How to use data repositories, including the infrastructure "Open Data LMU"
+- Research data management planning and implementation
+- Research data management plans (e.g. with the tool [RDMO](https://rdmo.ub.lmu.de))
+- FAIR data practices (findable, accessible, interoperable, reusable)
+- Data publication and repositories, including [Open Data LMU](https://data.ub.uni-muenchen.de)
+- Electronic Lab Notebooks (ELNs), including eLabFTW, for structured research documentation
+
+Information on research data management is centrally available on [Research Data LMU](https://fdm.ub.lmu.de).
 
 ------------------------------------------------------------------------
 

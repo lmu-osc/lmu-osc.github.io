@@ -112,6 +112,6 @@ The Munich Center for Neurosciences - Brain & Mind (MCN-LMU) and its teaching en
 
 ##### Universitätsbibliothek
 
-[ Website](https://www.ub.uni-muenchen.de/index.html)
+[ Website](https://www.ub.lmu.de/en/)
 
-The University Library supports Open Access and Open Science and offers a variety of related services for all LMU faculties.
+The University Library supports research, teaching, and learning through a broad range of services and infrastructures for all LMU faculties. Alongside providing access to information resources and study environments, the library offers comprehensive support in the field of Open Science, including all kinds of Open Access publishing, research data management (RDM), and services and infrastructures that promote transparent, accessible, and sustainable research practices.
