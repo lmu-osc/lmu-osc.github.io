@@ -1,0 +1,22 @@
+# OSC’s Conference Poster
+
+April 28, 2026
+
+The LMU Open Science Center (OSC) will present a poster at **[FOR2026 Munich – The Future of Open Research: Reliable, Responsible, Equitable](https://opensciencestudies.eu/for-2026-conference/)**, taking place from **4–6 May 2026** at the Institute for Advanced Study, Technical University of Munich.
+
+Our poster can be viewed and downloaded here: <https://doi.org/10.5281/zenodo.19626906>.
+
+It highlights our efforts to embed open research practices - such as preregistration, data management, reproducible analysis workflows, and FAIR sharing of data, code, and research materials - at LMU Munich and beyond through a multi-angle approach.
+
+We focus on two key initiatives:
+
+- [**Switch-to-Open**](https://www.osc.lmu.de/training/research-cycle-handbook.html): a structured training and consultation program that helps research groups integrate open research practices across the full project life-cycle, from planning and data management to reproducible analysis and FAIR sharing.
+- [**Train-the-Trainer**](https://www.osc.lmu.de/training/educator-toolkit.html): a program designed to equip researchers and research support staff with the pedagogical skills needed to teach and advocate for Open Research practices and tools within their own communities.
+
+These initiatives are built on a broader foundation of accessible learning opportunities, including:
+
+- A free **[self-learning catalogue](https://www.osc.lmu.de/training/self-learning.html)** of online tutorials and lecture recordings
+- Regular **[workshops and events](https://www.osc.lmu.de/events/)** throughout the year
+- Our annual **[Open Science Summer School](https://lmu-osc.github.io/Open-Science-Summer-School-2026/)**
+
+Together, these initiatives aim to make open research practices more practical, scalable, and sustainable across disciplines.

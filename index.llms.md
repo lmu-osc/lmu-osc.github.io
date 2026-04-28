@@ -69,6 +69,14 @@ Keep up to date with our latest news releases, and upcoming events.
 
 News [View All News](news/index.llms.md)
 
+###### Apr 28, 2026
+
+##### [OSC's Conference Poster](news/news/2026-04-28-osc-poster.llms.md)
+
+All the activities of the LMU Open Science Center in a poster format! First presented at FOR2026 Munich.
+
+[Read More →](news/news/2026-04-28-osc-poster.llms.md)
+
 ###### Apr 13, 2026
 
 ##### [Open Science Land: A Travel Guide](news/news/2026-04-15-os-land-book.llms.md)
@@ -84,14 +92,6 @@ Newly published travel guide “Expedition Open Science Land: A travel guide for
 Code Sharing and Reproducibility in Social Sciences: Findings from a Recent Study
 
 [Read More →](news/news/2026-04-13-code-reproducibility-in-social-sciences-paper.llms.md)
-
-###### Apr 11, 2026
-
-##### [Awareness and Use of Open Research Practices: An International Survey](news/news/2026-04-14-orp-awareness-and-use-international-survey.llms.md)
-
-Awareness and Use of Open Research Practices: An International Survey of Researchers Across Disciplines
-
-[Read More →](news/news/2026-04-14-orp-awareness-and-use-international-survey.llms.md)
 
 Events [View All Events](events/index.llms.md)
 
