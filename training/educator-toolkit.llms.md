@@ -13,9 +13,9 @@ Simply select your intended target audience below and off you go! All materials 
 
 [Develop your pedagogical **skills**!](https://lmu-osc.github.io/train-the-trainer-student-track-pedagogy/)
 
-[View teaching materials for **students**!](https://https://lmu-osc.github.io/train-the-trainer-student-track-OS/)
+[View teaching materials for **students**!](https://lmu-osc.github.io/train-the-trainer-student-track-OS/)
 
-[View teaching materials for **researchers**!](https://osc.lmu.de/training/self-learning.html/)
+[View teaching materials for **researchers**!](../training/self-learning.llms.md)
 
 ## About this project
 
