@@ -4,7 +4,7 @@
 
 7-15 Sept, 2026
 
-9:00-17:00
+9:00-17:30
 
 Online and Philologicum Library, Ludwigstraße 25, 80539 Munich
 
@@ -20,7 +20,7 @@ Organizer(s): Sarah von Grebmer zu Wolfsthurn
 
 Presenter(s): Alexander Wuttke, Richard McElreath, Tim Errington, Jonas Hagenberg, Danny Maupin
 
-Instructor(s): Sarah von Grebmer, Malika Ihle, Sara Lil Middleton, Laura Meier, Pat Callahan, Florian Kohrt, Reema Gupta
+Instructor(s): Sarah von Grebmer, Malika Ihle, Sara Lil Middleton, Laura Meier, Pat Callahan, Florian Kohrt, Reema Gupta, Edouard Bonneville
 
 Helper(s): Elizabeth Waterfield
 
