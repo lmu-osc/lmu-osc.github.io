@@ -7,38 +7,91 @@ format: html
 
 <script>
 const path = window.location.pathname;
+const content = document.getElementById('content');
 
 if (path.startsWith('/toolbox')) {
-  document.getElementById('content').innerHTML = `
+  content.innerHTML=`
     <h2>Looking for the Toolbox?</h2>
     <p>
-      The Toolbox section has been retired and is no longer available at this address.
-      All resources previously found in the Toolbox have been moved to our
-      <a href="/training/">Training</a> section, where you will find our self-learning
-      catalog, tutorials, and other open science resources.
+      The Toolbox section has been retired, so links to it no longer work.
+      The resources that used to live there have been moved to our
+      <a href="/training/">Training</a> section.
     </p>
     <p>
-      Please update any bookmarks or links to point to the
-      <a href="/training/">Training section</a> of the LMU Open Science Center website.
+      In Training, you will find our self-learning catalog, tutorials, and other open science
+      resources. Please update any bookmarks or saved links to point there instead.
+    </p>
+  `;
+} else if (/^\/news(?:\/|$)/.test(path)) {
+  content.innerHTML=`
+    <h2>Looking for an old News link?</h2>
+    <p>
+      Some older <a href="/news/">News</a> links no longer work because the news pages were
+      renamed when the site structure changed.
+    </p>
+    <p>
+      Please visit the current <a href="/news/">News</a> page to browse recent posts, or use
+      the site search function to find the page you were expecting.
+    </p>
+  `;
+} else if (/^\/individual_members(?:\/|$)/.test(path)) {
+  content.innerHTML=`
+    <h2>Individual member pages have moved</h2>
+    <p>
+      The individual member pages now live in our <a href="/people/">People</a> section.
+      Please update any bookmarks or links that still point to the old address.
+    </p>
+  `;
+} else if (/^\/partners(?:\/|$)/.test(path)) {
+  content.innerHTML=`
+    <h2>Partner information has moved</h2>
+    <p>
+      Links to our funders, institutional members, external partners, and local Open Science
+      initiatives now live in the <a href="/partners/">Partners</a> section.
+    </p>
+    <p>
+      If you were looking for a specific partner page, start from the Partners overview and
+      follow the category that best matches what you need.
+    </p>
+  `;
+} else if (/^\/meetups(?:\/|$)/.test(path)) {
+  content.innerHTML=`
+    <h2>Meetups are no longer listed here</h2>
+    <p>
+      The old meetups section is no longer available at this address.
+      Most related content can now be found in the <a href="/partners/">Partners</a> section for
+      local Open Science initiatives, in the <a href="/events/">Events</a> section for
+      upcoming and past events, or via the search function for any remaining content.
+
+      If you're not able to find the specific meetup information you were looking for, please contact us so we can help you find it and update any links that may be out of date.
+    </p>
+  `;
+} else if (/^\/contact(?:\/|$)/.test(path)) {
+  content.innerHTML=`
+    <h2>Looking for the contact page?</h2>
+    <p>
+      The old contact page has been replaced by our <a href="/about/join-us.html">Join Us</a>
+      page, which explains how to get involved and reach the right team.
     </p>
   `;
 } else {
-  document.getElementById('content').innerHTML = `
+  content.innerHTML=`
     <h2>Oops -- we can't find that page!</h2>
     <p>
-      The page you're looking for doesn't exist or may have been moved.
-      Here are some helpful links to get you back on track:
+      The address you opened may be incorrect, the page may have moved, or the link may be out
+      of date. Try one of the links below to get back to the main site:
     </p>
     <ul>
       <li><a href="/">Home</a></li>
       <li><a href="/about/">About the LMU Open Science Center</a></li>
       <li><a href="/training/">Training resources</a></li>
       <li><a href="/events/">Events</a></li>
+      <li><a href="/news/">News</a></li>
     </ul>
     <p>
-      If you followed a link and ended up here, please feel free to
-      <a href="https://github.com/lmu-osc/lmu-osc.github.io/issues">let us know</a>
-      so we can fix it.
+      If you reached this page from a link on our site, please
+      <a href="https://github.com/lmu-osc/lmu-osc.github.io/issues">let us know on GitHub</a> or send an email to a staff or management team member so we can
+      fix it.
     </p>
   `;
 }
