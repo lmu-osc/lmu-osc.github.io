@@ -1,0 +1,13 @@
+---
+title: "Newsletter December 2023"
+date: 2023-12-12
+categories: ["Newsletters"]
+flyer:
+    - file: "assets/newsletter_2023_december.pdf"
+      title: LMU OSC Newsletter - December 2023
+
+template: templates/news-template.html
+filters:
+  - templates/process-news-yaml.lua
+---
+

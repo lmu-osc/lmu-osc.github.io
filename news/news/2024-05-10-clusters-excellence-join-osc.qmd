@@ -3,10 +3,14 @@ title: "Two clusters of excellence join the OSC as funding institutional members
 date: 2024-05-10
 subtitle: "The OSC is looking forward to collaborate more closely with their members!"
 categories: ["New Members"]
+
+template: templates/news-template.html
+filters:
+  - templates/process-news-yaml.lua
 ---
 
 
 <p>We're happy to announce that the Excellence Cluster ORIGINS, represented by the OSC member <a href="/people/people/thomas-kuhr.qmd">Prof. Dr. Thomas Kuhr</a> and the Cluster of Excellence SyNergy represented by OSC member <a href="/people/people/martin-dichgans.qmd">Prof. Dr. Martin Dichgans</a>, have joined the OSC as financially contributing institutional members. </p>
-<p>To learn more about the benefits of becoming a funding institutional member, please visit <a href="../../partners/funding-institutional-members.qmd">here </a>. </p>
+<p>To learn more about the benefits of becoming a funding institutional member, please visit <a href="/partners/funding-institutional-members.qmd">here </a>. </p>
 <p> </p>
 <div class="g-clear"></div>

@@ -60,7 +60,7 @@ These steps are straightforward if you followed previous recommendations: by thi
 ::: {.panel-tabset}
 
 #### 4.1.1. Open vs Restricted 
-<!-- I edited this a bit Reema, is this correct? overall I think this section could use more information and clarity. How about embargoe?-->
+<!-- I edited this a bit Reema, is this correct? overall I think this section could use more information and clarity. How about embargo?-->
 
 Not all data can or should be shared openly. Your sharing options depend on what consent participants gave and what your ethics approval permits (see [1.2.3. Ethics](01-plan-and-design.qmd#sec-legal-requirements){.mark}).
 
@@ -79,7 +79,7 @@ When deciding whether data should be shared, consider the following:
 - Ensure that data sharing is compatible with the **informed consent** provided by participants. 
 - Check what your **ethics approval** allows.
 - Consider whether the data can be **anonymized** without losing scientific value (see [2.3.2. Anonymization](02-collect-and-manage.qmd#sec-ethics-and-privacy){.mark}).
-- If you work with **sensitive data**, you may consult the University's [data protection officer](https://www.lmu.de/en/about-lmu/structure/organizational-structure/officers-and-representatives/data-protection-officer.html). 
+- If you work with **sensitive data**, you may consult the University's [data protection officer](https://www.lmu.de/en/about-lmu/structure/organizational-structure/officers-representatives-and-contact-persons/data-protection-officer.html). 
 - If your research outputs could have **dual-use** implications (e.g. that could also be applied for military or malicious purposes), consult the relevant regulations (e.g. European Commission's policy ([Dual-Use Regulation 2021/821](https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L:2021:206:FULL&from=EN))) and contact the University's [Export Control service](mailto:Exportkontrolle@Verwaltung.Uni-Muenchen.DE).
 - If your research may lead to **patents or commercialization**, contact the the University's [IP Management team](https://www.lmu.de/en/research/research-transfer/inventions-patents-and-exploitation-rights/) before sharing data. Early consultation helps ensure that intellectual property rights are not compromised.
 
@@ -99,7 +99,7 @@ When deciding whether data should be shared, consider the following:
 <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
   <div class="d-flex gap-2">
     <div class="orc-card-tool-icon p-2 rounded">
-      <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+      <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
     </div>
   </div>
   <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Lecture</span>
@@ -117,7 +117,7 @@ When deciding whether data should be shared, consider the following:
 <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
   <div class="d-flex gap-2">
     <div class="orc-card-tool-icon p-2 rounded">
-      <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+      <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
     </div>
   </div>
   <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Lecture</span>
@@ -136,7 +136,7 @@ When deciding whether data should be shared, consider the following:
 <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
   <div class="d-flex gap-2">
     <div class="orc-card-tool-icon p-2 rounded">
-      <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+      <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
     </div>
   </div>
   <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
@@ -159,7 +159,7 @@ When deciding whether data should be shared, consider the following:
 ```{=html}
 <div class="card orc-card-tool p-3 bg-light-subtle h-100">
 <div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
-<img src="https://cms-cdn.lmu.de/assets/img/favicon.ico" class="img-fluid" alt="LMU logo">
+<img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
 </div>
 <h4 class="card-title">LMU Guidelines for Safeguarding Good Scientific Practice</h4>
 <p class="card-text">Implementation of the German Research Foundation's (DFG) Code of Conduct</p>
@@ -172,7 +172,7 @@ When deciding whether data should be shared, consider the following:
 ```{=html}
 <div class="card orc-card-tool p-3 bg-light-subtle h-100">
 <div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
-<img src="https://europa.eu/assets/comm/infogram/EU-flag/en/data/aea86fce95146ce706844aeec4f57daa.jpg" class="img-fluid" alt="LMU logo">
+<img src="/assets/img/eu-flag.jpg" class="img-fluid" alt="European Union flag">
 </div>
 <h4 class="card-title">EU Dual-Use Regulation 2021/821</h4>
 <p class="card-text">List of regulated research outputs that could lead to military or malicious purposes.</p>
@@ -217,7 +217,7 @@ During the course of data collection and analyses, you created a README and data
 <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
   <div class="d-flex gap-2">
     <div class="orc-card-tool-icon p-2 rounded">
-      <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+      <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
     </div>
   </div>
   <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
@@ -236,7 +236,7 @@ During the course of data collection and analyses, you created a README and data
 <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
   <div class="d-flex gap-2">
     <div class="orc-card-tool-icon p-2 rounded">
-      <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+      <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
     </div>
   </div>
   <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
@@ -255,7 +255,7 @@ During the course of data collection and analyses, you created a README and data
 <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
   <div class="d-flex gap-2">
     <div class="orc-card-tool-icon p-2 rounded">
-      <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+      <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
     </div>
   </div>
   <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
@@ -280,7 +280,7 @@ During the course of data collection and analyses, you created a README and data
 ```{=html}
 <div class="card orc-card-tool p-3 bg-light-subtle h-100">
 <div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
-<img src="https://avatars.githubusercontent.com/u/29867987?s=280&v=4" class="img-fluid" alt="FAIRsharing logo">
+<img src="/assets/img/fair-data-sharing-logo.png" class="img-fluid" alt="FAIRsharing logo">
 </div>
 <h4 class="card-title">FAIRsharing</h4>
 <p class="card-text">Search by discipline to find metadata standards, reporting guidelines, and data policies for your field.</p>
@@ -293,7 +293,7 @@ During the course of data collection and analyses, you created a README and data
 ```{=html}
 <div class="card orc-card-tool p-3 bg-light-subtle h-100">
 <div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
-<img src="https://rdmkit.elixir-europe.org/assets/img/apple-touch-icon.png" class="img-fluid" alt="RDMkit logo">
+<img src="/assets/img/elixir-europe-icon.png" class="img-fluid" alt="RDMkit logo">
 </div>
 <h4 class="card-title">RDMkit</h4>
 <p class="card-text">Domain-specific metadata standards</p>
@@ -335,7 +335,7 @@ Whichever you choose, ensure the repository provides a **DOI** (Digital Object I
 ```{=html}
 <div class="card orc-card-tool p-3 bg-light-subtle h-100">
 <div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;">  
-<img src="https://www.re3data.org/favicon.ico" class="img-fluid" alt="re3data icon">
+<img src="/assets/img/re3data-favicon.ico" class="img-fluid" alt="re3data icon">
 </div>
 <h4 class="card-title">re3data</h4>
 <p class="card-text">Registry of research data repositories.</p>
@@ -349,7 +349,7 @@ Whichever you choose, ensure the repository provides a **DOI** (Digital Object I
 ```{=html}
 <div class="card orc-card-tool p-3 bg-light-subtle h-100">
     <div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Open_Science_Framework_log_%28and_Center_for_Open_Science_logo%29.svg/3840px-Open_Science_Framework_log_%28and_Center_for_Open_Science_logo%29.svg.png" class="img-fluid" alt="OSF icon">
+        <img src="/assets/img/open-science-framework-and-open-science-center.png" class="img-fluid" alt="OSF icon">
     </div>
     <h4 class="card-title">Open Science Framework</h4>
     <p class="card-text">General-purpose repository for data, materials, reports.</p>
@@ -364,7 +364,7 @@ Whichever you choose, ensure the repository provides a **DOI** (Digital Object I
 ```{=html}
 <div class="card orc-card-tool p-3 bg-light-subtle h-100">
 <div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
-<img src="https://about.zenodo.org/static/img/icons/zenodo-icon-blue.svg" class="img-fluid" alt="Zenodo icon">
+<img src="/assets/img/zenodo-icon-blue.svg" class="img-fluid" alt="Zenodo icon">
 </div>
 <h4 class="card-title">Zenodo</h4>
 <p class="card-text">General-purpose repository for data, software, reports.</p>
@@ -379,7 +379,7 @@ Whichever you choose, ensure the repository provides a **DOI** (Digital Object I
 <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
   <div class="d-flex gap-2">
     <div class="orc-card-tool-icon p-2 rounded">
-        <img src="https://cms-cdn.lmu.de/assets/img/favicon.ico" class="img-fluid" alt="LMU logo">
+        <img src="/assets/img/lmu-favicon.ico" class="img-fluid" alt="LMU logo">
     </div>
   </div>
   <span class="badge rounded-5 bg-success-subtle text-success align-self-start">Supported at LMU</span>
@@ -413,7 +413,7 @@ Common open licenses for data are:
 
 <br>
 
-Learn more about open licenses for data and code in our [code publishing tutorial](https://lmu-osc.github.io/code-publishing/choose_license.html).
+Learn more about open licenses for data and code in our [code publishing tutorial](https://lmu-osc.github.io/code-publishing/choose-license.html).
 
 <br>
 
@@ -432,14 +432,14 @@ For restricted-access data, a **Data Use Agreement** specifies conditions beyond
 <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
   <div class="d-flex gap-2">
     <div class="orc-card-tool-icon p-2 rounded">
-      <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+      <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
     </div>
   </div>
   <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
 </div>
 <h4 class="card-title">Choose a License</h4>
 <p class="card-text">License decision flowchart for data and code.</p>
-<a href="https://lmu-osc.github.io/code-publishing/choose_license.html" class="stretched-link" target="_blank" rel="noopener"> </a>
+<a href="https://lmu-osc.github.io/code-publishing/choose-license.html" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
 ```
 :::
@@ -531,7 +531,7 @@ Importantly, if data are removed from an existing repository, they may still rem
 <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
   <div class="d-flex gap-2">
     <div class="orc-card-tool-icon p-2 rounded">
-      <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+      <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
     </div>
   </div>
   <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
@@ -575,7 +575,7 @@ You can provide the data required to run the code in several ways:
 <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
   <div class="d-flex gap-2">
     <div class="orc-card-tool-icon p-2 rounded">
-      <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+      <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
     </div>
   </div>
   <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
@@ -594,7 +594,7 @@ You can provide the data required to run the code in several ways:
 <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
   <div class="d-flex gap-2">
     <div class="orc-card-tool-icon p-2 rounded">
-      <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+      <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
     </div>
   </div>
   <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
@@ -612,7 +612,7 @@ You can provide the data required to run the code in several ways:
 <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
   <div class="d-flex gap-2">
     <div class="orc-card-tool-icon p-2 rounded">
-      <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+      <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
     </div>
   </div>
   <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
@@ -642,7 +642,7 @@ A license tells others what they can do with your code. Licensing your code cons
 
 <br>
 
-Learn more about open licenses for data and code in our [code publishing tutorial](https://lmu-osc.github.io/code-publishing/choose_license.html) or using the tool '[Choose an open source license](https://choosealicense.com/licenses/)'.
+Learn more about open licenses for data and code in our [code publishing tutorial](https://lmu-osc.github.io/code-publishing/choose-license.html) or using the tool '[Choose an open source license](https://choosealicense.com/licenses/)'.
 
 ::: {.container .my-4 }
 
@@ -657,14 +657,14 @@ Learn more about open licenses for data and code in our [code publishing tutoria
 <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
   <div class="d-flex gap-2">
     <div class="orc-card-tool-icon p-2 rounded">
-      <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+      <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
     </div>
   </div>
   <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
 </div>
 <h4 class="card-title">Choose a License</h4>
 <p class="card-text">License decision flowchart for data and code.</p>
-<a href="https://lmu-osc.github.io/code-publishing/choose_license.html" class="stretched-link" target="_blank" rel="noopener"> </a>
+<a href="https://lmu-osc.github.io/code-publishing/choose-license.html" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
 ```
 :::
@@ -673,7 +673,7 @@ Learn more about open licenses for data and code in our [code publishing tutoria
 ```{=html}
 <div class="card orc-card-tool p-3 bg-light-subtle h-100">
 <div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
-<img src="https://choosealicense.com/favicon.ico" class="img-fluid" alt="Choose an open source license logo">
+<img src="/assets/img/choose-a-license-favicon.ico" class="img-fluid" alt="Choose an open source license logo">
 </div>
 <h4 class="card-title">Choose an open source license</h4>
 <p class="card-text">Tool comparing open software licenses.</p>
@@ -716,7 +716,7 @@ To publish you code on Zenodo, we recommend to<!-- these instructions contradict
 <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
   <div class="d-flex gap-2">
     <div class="orc-card-tool-icon p-2 rounded">
-      <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+      <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
     </div>
   </div>
   <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
@@ -740,7 +740,7 @@ To publish you code on Zenodo, we recommend to<!-- these instructions contradict
 ```{=html}
 <div class="card orc-card-tool p-3 bg-light-subtle h-100">
 <div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
-<img src="https://about.zenodo.org/static/img/icons/zenodo-icon-blue.svg" class="img-fluid" alt="Zenodo icon">
+<img src="/assets/img/zenodo-icon-blue.svg" class="img-fluid" alt="Zenodo icon">
 </div>
 <h4 class="card-title">Zenodo</h4>
 <p class="card-text">General-purpose repository for data, software, reports.</p>
@@ -792,7 +792,7 @@ See the [Creative Common license chooser](https://creativecommons.org/chooser/) 
 ```{=html}
 <div class="card orc-card-tool p-3 bg-light-subtle h-100">
 <div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
-<img src="https://www.protocols.io/favicon.ico" class="img-fluid" alt="Protocols.io icon">
+<img src="/assets/img/protocols-io-favicon.ico" class="img-fluid" alt="Protocols.io icon">
 </div>
 <h4 class="card-title">Protocols.io</h4>
 <p class="card-text">Share, discover, cite, and improve research protocols.</p>
@@ -805,7 +805,7 @@ See the [Creative Common license chooser](https://creativecommons.org/chooser/) 
 ```{=html}
 <div class="card orc-card-tool p-3 bg-light-subtle h-100">
 <div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Open_Science_Framework_log_%28and_Center_for_Open_Science_logo%29.svg/3840px-Open_Science_Framework_log_%28and_Center_for_Open_Science_logo%29.svg.png" class="img-fluid" alt="OSF logo">
+<img src="/assets/img/open-science-framework-and-open-science-center.png" class="img-fluid" alt="OSF logo">
 </div>
 <h4 class="card-title">OSF</h4>
 <p class="card-text">Project management platform including storage and DOI.</p>
@@ -818,7 +818,7 @@ See the [Creative Common license chooser](https://creativecommons.org/chooser/) 
 ```{=html}
 <div class="card orc-card-tool p-3 bg-light-subtle h-100">
 <div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
-<img src="https://creativecommons.org/wp-content/themes/vocabulary-theme/vocabulary/favicon/apple-touch-icon.png" class="img-fluid" alt="Creative Commons logo">
+<img src="/assets/img/creative-commons-logo.png" class="img-fluid" alt="Creative Commons logo">
 </div>
 <h4 class="card-title">Creative Commons licenses</h4>
 <p class="card-text">Tool comparing licenses for diverse creative work.</p>
@@ -898,7 +898,7 @@ Depending on the contract negotiated by the University and each publisher (see [
 ```{=html}
 <div class="card orc-card-tool p-3 bg-light-subtle h-100">
 <div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
-<img src="https://doaj.org/assets/img/favicon/apple-touch-icon.png" class="img-fluid" alt="DOAJ logo">
+<img src="/assets/img/doaj-logo.png" class="img-fluid" alt="DOAJ logo">
 </div>
 <h4 class="card-title">Directory of Open Access Journals (DOAJ) </h4>
 <p class="card-text">Index of trusted open access journals.</p>
@@ -912,7 +912,7 @@ Depending on the contract negotiated by the University and each publisher (see [
 ```{=html}
 <div class="card orc-card-tool p-3 bg-light-subtle h-100">
 <div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
-<img src="https://openpolicyfinder.jisc.ac.uk/images/jisc-logo.svg" class="img-fluid" alt="Jisc logo">
+<img src="/assets/img/jisc-logo.svg" class="img-fluid" alt="Jisc logo">
 </div>
 <h4 class="card-title">Jisc' Open Policy Finder</h4>
 <p class="card-text">Clear summary of journals' open access policies.</p>
@@ -939,7 +939,7 @@ These procedures, which are **free to the authors**, are collectively known as '
 
 <br>
 
-The current contract conditions for LMU Munich can be accessed on the [University Library Publication Fees Webpage (in german)](https://www.ub.uni-muenchen.de/schreiben/open-access-publizieren/publikationsgebuehren/index.html). To get support with Article Processing Charges and open access policies, contact the [University Library Open Access team](https://www.en.ub.uni-muenchen.de/writing/open-access-publishing/oa-auxiliary-page/index.html).
+The current contract conditions for LMU Munich can be accessed on the [University Library Publication Fees Webpage (in german)](https://www.ub.lmu.de/en/open-access-publishing/financing-open-access/). To get support with Article Processing Charges and open access policies, contact the [University Library Open Access team](https://www.en.ub.uni-muenchen.de/writing/open-access-publishing/oa-auxiliary-page/index.html).
 
 ::: {.container .my-4 }
 
@@ -953,14 +953,14 @@ The current contract conditions for LMU Munich can be accessed on the [Universit
 <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
   <div class="d-flex gap-2">
     <div class="orc-card-tool-icon p-2 rounded">
-      <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+      <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
     </div>
   </div>
   <span class="badge rounded-5 bg-success-subtle text-success align-self-start">Supported at LMU</span>
 </div>
 <h4 class="card-title">LMU University Library</h4>
 <p class="card-text">Publisher contracts and publication fees.</p>
-<a href="https://www.ub.uni-muenchen.de/schreiben/open-access-publizieren/publikationsgebuehren/index.html" class="stretched-link" target="_blank" rel="noopener"></a>
+<a href="https://www.ub.lmu.de/en/open-access-publishing/financing-open-access/" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
 ```
 :::
@@ -1037,7 +1037,7 @@ To get support for [Open Access LMU](https://epub.ub.uni-muenchen.de/), the LMU 
 ```{=html}
 <div class="card orc-card-tool p-3 bg-light-subtle h-100">
 <div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
-<img src="https://openpolicyfinder.jisc.ac.uk/images/jisc-logo.svg" class="img-fluid" alt="Jisc logo">
+<img src="/assets/img/jisc-logo.svg" class="img-fluid" alt="Jisc logo">
 </div>
 <h4 class="card-title">Jisc' Open Policy Finder</h4>
 <p class="card-text">Clear summary of journals' open access policies.</p>
@@ -1052,7 +1052,7 @@ To get support for [Open Access LMU](https://epub.ub.uni-muenchen.de/), the LMU 
 <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
   <div class="d-flex gap-2">
     <div class="orc-card-tool-icon p-2 rounded">
-        <img src="https://cms-cdn.lmu.de/assets/img/favicon.ico" class="img-fluid" alt="LMU logo">
+        <img src="/assets/img/lmu-favicon.ico" class="img-fluid" alt="LMU logo">
     </div>
   </div>
   <span class="badge rounded-5 bg-success-subtle text-success align-self-start">Supported at LMU</span>
@@ -1068,7 +1068,7 @@ To get support for [Open Access LMU](https://epub.ub.uni-muenchen.de/), the LMU 
 ```{=html}
 <div class="card orc-card-tool p-3 bg-light-subtle h-100">
 <div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Open_Science_Framework_log_%28and_Center_for_Open_Science_logo%29.svg/3840px-Open_Science_Framework_log_%28and_Center_for_Open_Science_logo%29.svg.png" class="img-fluid" alt="OSF logo">
+<img src="/assets/img/open-science-framework-and-open-science-center.png" class="img-fluid" alt="OSF logo">
 </div>
 <h4 class="card-title">OSF Preprints</h4>
 <p class="card-text">Multidisciplinary preprint service.</p>
@@ -1132,7 +1132,7 @@ To get support for [Open Access LMU](https://epub.ub.uni-muenchen.de/), the LMU 
 
 </summary>
 
-All research outputs and their specific versions should be linked to their authors, organisations, and funders through persistent identifiers.
+All research outputs and their specific versions should be linked to their authors, organizations, and funders through persistent identifiers.
 
 ::: {.panel-tabset}
 
@@ -1181,7 +1181,7 @@ We recommend to **start discussions on authorship, roles, and responsibilities a
 ```{=html}
 <div class="card orc-card-tool p-3 bg-light-subtle h-100">
 <div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
-<img src="https://cms-cdn.lmu.de/assets/img/favicon.ico" class="img-fluid" alt="LMU logo">
+<img src="/assets/img/lmu-favicon.ico" class="img-fluid" alt="LMU logo">
 </div>
 <h4 class="card-title">LMU Guidelines for Safeguarding Good Scientific Practice</h4>
 <p class="card-text">Implementation of the German Research Foundation's (DFG) Code of Conduct</p>
@@ -1195,7 +1195,7 @@ We recommend to **start discussions on authorship, roles, and responsibilities a
 ```{=html}
 <div class="card orc-card-tool p-3 bg-light-subtle h-100">
 <div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
-<img src="https://credit.niso.org/wp-content/uploads/2020/04/credit-icon-499x500-1-150x150.png" class="img-fluid" alt="CRediT logo">
+<img src="/assets/img/credit-logo.png" class="img-fluid" alt="CRediT logo">
 </div>
 <h4 class="card-title">CRediT</h4>
 <p class="card-text">Contributor Role Taxonomy.</p>
@@ -1209,7 +1209,7 @@ We recommend to **start discussions on authorship, roles, and responsibilities a
 ```{=html}
 <div class="card orc-card-tool p-3 bg-light-subtle h-100">
 <div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/ORCID_iD.svg/330px-ORCID_iD.svg.png" class="img-fluid" alt="ORCID logo">
+<img src="/assets/img/orcid-logo.svg" class="img-fluid" alt="ORCID logo">
 </div>
 <h4 class="card-title">ORCID</h4>
 <p class="card-text">Free, unique, persistent identifier for researchers.</p>
@@ -1254,7 +1254,7 @@ The LMU Open Science Center is one of the many child organizations of LMU Munich
 ```{=html}
 <div class="card orc-card-tool p-3 bg-light-subtle h-100">
 <div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
-<img src="https://ror.org/img/apple-touch-icon.png" class="img-fluid" alt="ROR logo">
+<img src="/assets/img/ror-icon-rgb.svg" class="img-fluid" alt="ROR logo">
 </div>
 <h4 class="card-title">Research Organization Registry (ROR)</h4>
 <p class="card-text">Persistent identifiers for research and funding organizations</p>
@@ -1321,14 +1321,14 @@ Not all items are relevant for all fields of research or study types.
 - [ ] Include the DOI of all resources (data, code, materials, conceptual figures) in the manuscript 
 - [ ] Use CRediT taxonomy to give attribution to all contributors
 - [ ] Deposit a preprint (if allowed) on preprint server or institutional repository 
-- [ ] Request an open licence (CC-BY 4.0) for the article if possible to allow redistribution
+- [ ] Request an open license (CC-BY 4.0) for the article if possible to allow redistribution
 
 **After acceptance of an article**
 
 - [ ] Update the preprint with a postprint (if allowed)
 - [ ] Link the DOI of the published article to the preprint/postprint
 - [ ] Handle data access requests if only metadata were shared
-- [ ] Monitor citations and usage metrics of all research otuputs
+- [ ] Monitor citations and usage metrics of all research outputs
 
 ::: {.d-flex .justify-content-center .mt-4 .orc-checklist-download .phase-4} 
 <!-- RL hasn't created button for checklist 4 yet -->

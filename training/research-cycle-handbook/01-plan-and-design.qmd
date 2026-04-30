@@ -25,12 +25,12 @@ title-block-style: none
 <p class="lead fw-bold mb-3 fs-4 text-muted"> Set the foundation for open & reliable research</p>
 <!-- Pills -->
 <div class="d-flex flex-wrap gap-3 mb-3">
-<span class="badge rounded-5 fs-6 fw-normal text-wrap orc-hero-pills phase-1 text-white"><i class="bi bi-check2-circle me-1"></i> Explore & Reuse</span>
-<span class="badge rounded-5 fs-6 fw-normal text-wrap orc-hero-pills phase-1 text-white"><i class="bi bi-check2-circle me-1"></i> Check Legal Frameworks</span>
-<span class="badge rounded-5 fs-6 fw-normal text-wrap orc-hero-pills phase-1 text-white"><i class="bi bi-check2-circle me-1"></i> Write Data Management Plan</span>
-<span class="badge rounded-5 fs-6 fw-normal text-wrap orc-hero-pills phase-1 text-white"><i class="bi bi-check2-circle me-1"></i> Design Study</span>
+<span class="badge rounded-5 fs-6 fw-normal text-wrap orc-hero-pills phase-1 "><i class="bi bi-check2-circle me-1"></i> Explore & Reuse</span>
+<span class="badge rounded-5 fs-6 fw-normal text-wrap orc-hero-pills phase-1 "><i class="bi bi-check2-circle me-1"></i> Check Legal Frameworks</span>
+<span class="badge rounded-5 fs-6 fw-normal text-wrap orc-hero-pills phase-1 "><i class="bi bi-check2-circle me-1"></i> Write Data Management Plan</span>
+<span class="badge rounded-5 fs-6 fw-normal text-wrap orc-hero-pills phase-1 "><i class="bi bi-check2-circle me-1"></i> Design Study</span>
 </div>
-<div class="orc-hero-checkpoint phase-1 badge rounded-5 d-inline-flex align-items-center justify-content-center text-wrap white-space-normal fs-6 fw-normal text-white">
+<div class="orc-hero-checkpoint phase-1 badge rounded-5 d-inline-flex align-items-center justify-content-center text-wrap white-space-normal fs-6 fw-normal">
 <i class="bi bi-people-fill me-2"></i>
 Checkpoints: Study Plan Presentation & Preregistration Submission
 </div>
@@ -72,10 +72,10 @@ A research output (e.g. data, code) without a license or statement granting your
 <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
   <div class="d-flex gap-2">
     <div class="orc-card-tool-icon p-2 rounded">
-      <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+      <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
     </div>
     <div class="orc-card-tool-icon p-2 rounded">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Zotero_icon.png" class="img-fluid" alt="Zotero logo">
+      <img src="/assets/img/zotero-icon.png" class="img-fluid" alt="Zotero logo">
     </div>
   </div>
   <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
@@ -99,7 +99,7 @@ A research output (e.g. data, code) without a license or statement granting your
 ```{=html}
 <div class="card orc-card-tool p-3 bg-light-subtle h-100">
   <div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/OpenAlex_2025_favicon.svg/250px-OpenAlex_2025_favicon.svg.png" class="img-fluid" alt="OpenAlex logo">
+    <img src="/assets/img/openalex-2025-favicon.png" class="img-fluid" alt="OpenAlex logo">
   </div>
   <h4 class="card-title">OpenAlex</h4>
   <p class="card-text">All the world's research, connected and open.</p>
@@ -113,7 +113,7 @@ A research output (e.g. data, code) without a license or statement granting your
 ```{=html}
 <div class="card orc-card-tool p-3 bg-light-subtle h-100">
 <div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
-<img src="https://europepmc.org/img/Europe%20PMC%20Basic%20Logo%20RGB.71c1dbf7.png" class="img-fluid" alt="Europe PMC logo">
+<img src="/assets/img/europe-pmc-basic-logo.png" class="img-fluid" alt="Europe PMC logo">
 </div>
 <h4 class="card-title">Europe PubMed Central</h4>
 <p class="card-text">Comprehensive access to life sciences literature.</p>
@@ -145,7 +145,7 @@ A **preregistration** typically consists of a hypothesis and predictions, a plan
 ```{=html}
 <div class="card orc-card-tool p-3 bg-light-subtle h-100">
 <div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Open_Science_Framework_log_%28and_Center_for_Open_Science_logo%29.svg/3840px-Open_Science_Framework_log_%28and_Center_for_Open_Science_logo%29.svg.png" class="img-fluid" alt="OSF icon">
+<img src="/assets/img/open-science-framework-and-open-science-center.png" class="img-fluid" alt="OSF icon">
 </div>
 <h4 class="card-title">Open Science Framework</h4>
 <p class="card-text">Registry of preregistrations. Widely used across fields.</p>
@@ -158,7 +158,7 @@ A **preregistration** typically consists of a hypothesis and predictions, a plan
 ```{=html}
 <div class="card orc-card-tool p-3 bg-light-subtle h-100">
 <div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
-<img src="https://aspredicted.org/favicon.ico" class="img-fluid" alt="AsPredicted icon">
+<img src="/assets/img/aspredicted-favicon.ico" class="img-fluid" alt="AsPredicted icon">
 </div>
 <h4 class="card-title">AsPredicted</h4>
 <p class="card-text">Registry of simple preregistrations</p>
@@ -171,7 +171,7 @@ A **preregistration** typically consists of a hypothesis and predictions, a plan
 ```{=html}
 <div class="card orc-card-tool p-3 bg-light-subtle h-100">
 <div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
-<img src="https://preclinicaltrials.eu/images/logo-pct.jpg" class="img-fluid" alt="PreclinicalTrials.eu icon">
+<img src="/assets/img/preclinical-trials-eu.jpg" class="img-fluid" alt="PreclinicalTrials.eu icon">
 </div>
 <h4 class="card-title">PreclinicalTrials.eu</h4>
 <p class="card-text">Registry of preclinical animal study protocols.</p>
@@ -185,7 +185,7 @@ A **preregistration** typically consists of a hypothesis and predictions, a plan
 ```{=html}
 <div class="card orc-card-tool p-3 bg-light-subtle h-100">
 <div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
-<img src="https://www.animalstudyregistry.org/asr_web/image/asr_logo.png" class="img-fluid" alt="animalstudyregistry.org icon">
+<img src="/assets/img/animal-study-registry-logo.png" class="img-fluid" alt="animalstudyregistry.org icon">
 </div>
 <h4 class="card-title">AnimalStudyRegistry.org</h4>
 <p class="card-text">Registry of animal studies.</p>
@@ -199,7 +199,7 @@ A **preregistration** typically consists of a hypothesis and predictions, a plan
 ```{=html}
 <div class="card orc-card-tool p-3 bg-light-subtle h-100">
 <div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
-<img src="https://clinicaltrials.gov/assets/favicons/favicon.svg" class="img-fluid" alt="ClinicalTrials.gov icon">
+<img src="/assets/img/clinical-trials-gov-favicon.svg" class="img-fluid" alt="ClinicalTrials.gov icon">
 </div>
 <h4 class="card-title">ClinicalTrials.gov</h4>
 <p class="card-text">Registry of clinical trial protocols.</p>
@@ -258,7 +258,7 @@ These platforms either give you access to existing data or provide [**metadata**
 ```{=html}
 <div class="card orc-card-tool p-3 bg-light-subtle h-100">
 <div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
-<img src="https://www.re3data.org/favicon.ico" class="img-fluid" alt="re3data icon">
+<img src="/assets/img/re3data-favicon.ico" class="img-fluid" alt="re3data icon">
 </div>
 <h4 class="card-title">re3data</h4>
 <p class="card-text">Registry of research data repositories.</p>
@@ -273,7 +273,7 @@ These platforms either give you access to existing data or provide [**metadata**
 ```{=html}
 <div class="card orc-card-tool p-3 bg-light-subtle h-100">
 <div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
-<img src="https://datacite.org/wp-content/uploads/2023/07/DataCite-Logo_Schwoop.svg" class="img-fluid" alt="DataCite icon">
+<img src="/assets/img/datacite-logo.svg" class="img-fluid" alt="DataCite icon">
 </div>
 <h4 class="card-title">DataCite Commons</h4>
 <p class="card-text">Discovery tool connecting works, people, and organizations.</p>
@@ -288,7 +288,7 @@ These platforms either give you access to existing data or provide [**metadata**
 ```{=html}
 <div class="card orc-card-tool p-3 bg-light-subtle h-100">
 <div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
-<img src="https://websitev3-p-eu.figstatic.com/assets-v3/97a584d494444650f01c8ba85b077c4f7938fbce/static/media/favicon-70.66d0d88a.png" class="img-fluid" alt="FigShare icon">
+<img src="/assets/img/figshare-icon.png" class="img-fluid" alt="FigShare icon">
 </div>
 <h4 class="card-title">Fig Share</h4>
 <p class="card-text">General-purpose repository for data, software, reports.</p>
@@ -302,7 +302,7 @@ These platforms either give you access to existing data or provide [**metadata**
 ```{=html}
 <div class="card orc-card-tool p-3 bg-light-subtle h-100">
 <div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Open_Science_Framework_log_%28and_Center_for_Open_Science_logo%29.svg/3840px-Open_Science_Framework_log_%28and_Center_for_Open_Science_logo%29.svg.png" class="img-fluid" alt="OSF icon">
+<img src="/assets/img/open-science-framework-and-open-science-center.png" class="img-fluid" alt="OSF icon">
 </div>
 <h4 class="card-title">Open Science Framework</h4>
 <p class="card-text">General-purpose repository for data, materials, reports.</p>
@@ -318,7 +318,7 @@ These platforms either give you access to existing data or provide [**metadata**
 ```{=html}
 <div class="card orc-card-tool p-3 bg-light-subtle h-100">
 <div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
-<img src="https://about.zenodo.org/static/img/icons/zenodo-icon-blue.svg" class="img-fluid" alt="Zenodo icon">
+<img src="/assets/img/zenodo-icon-blue.svg" class="img-fluid" alt="Zenodo icon">
 </div>
 <h4 class="card-title">Zenodo</h4>
 <p class="card-text">General-purpose repository for data, software, reports.</p>
@@ -340,7 +340,7 @@ These platforms either give you access to existing data or provide [**metadata**
 <br>
 
 :::{.callout-important}
-Code publicly visible on GitHub without a license or equivalent text explicitly stating permission for reuse cannot be legally reused. It is best to ask the authors to add an **open license** to their repository to explicitly allow reuse (to do this, they can, for instance, add a file called LICENSE.txt with the [Apache 2.0 license text](https://www.apache.org/licenses/LICENSE-2.0.txt) - see our [code publishing tutorial](https://lmu-osc.github.io/code-publishing/choose_license.html) to learn more about licenses).
+Code publicly visible on GitHub without a license or equivalent text explicitly stating permission for reuse cannot be legally reused. It is best to ask the authors to add an **open license** to their repository to explicitly allow reuse (to do this, they can, for instance, add a file called LICENSE.txt with the [Apache 2.0 license text](https://www.apache.org/licenses/LICENSE-2.0.txt) - see our [code publishing tutorial](https://lmu-osc.github.io/code-publishing/choose-license.html) to learn more about licenses).
 :::
 
 
@@ -358,10 +358,10 @@ Code publicly visible on GitHub without a license or equivalent text explicitly 
 <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
   <div class="d-flex gap-2">
     <div class="orc-card-tool-icon p-2 rounded">
-      <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+      <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
     </div>
     <div class="orc-card-tool-icon p-2 rounded">
-      <img src="https://www.svgrepo.com/show/303548/git-icon-logo.svg" class="img-fluid" alt="Zotero logo">
+      <img src="/assets/img/git-icon-logo.svg" class="img-fluid" alt="Git logo">
     </div>
   </div>
   <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
@@ -380,10 +380,10 @@ Code publicly visible on GitHub without a license or equivalent text explicitly 
 <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
   <div class="d-flex gap-2">
     <div class="orc-card-tool-icon p-2 rounded">
-      <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+      <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
     </div>
     <div class="orc-card-tool-icon p-2 rounded">
-      <img src="https://cdn.simpleicons.org/github" class="img-fluid" alt="Zotero logo">
+      <img src="/assets/img/zotero.svg" class="img-fluid" alt="Zotero logo">
     </div>
   </div>
   <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
@@ -401,7 +401,7 @@ Code publicly visible on GitHub without a license or equivalent text explicitly 
 <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
   <div class="d-flex gap-2">
     <div class="orc-card-tool-icon p-2 rounded">
-      <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+      <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
     </div>
   </div>
   <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
@@ -425,7 +425,7 @@ Code publicly visible on GitHub without a license or equivalent text explicitly 
 ```{=html}
 <div class="card orc-card-tool p-3 bg-light-subtle h-100">
 <div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
-<img src="https://about.zenodo.org/static/img/icons/zenodo-icon-blue.svg" class="img-fluid" alt="Zenodo icon">
+<img src="/assets/img/zenodo-icon-blue.svg" class="img-fluid" alt="Zenodo icon">
 </div>
 <h4 class="card-title">Zenodo</h4>
 <p class="card-text">General-purpose repository for data, software, reports.</p>
@@ -440,7 +440,7 @@ Code publicly visible on GitHub without a license or equivalent text explicitly 
 ```{=html}
 <div class="card orc-card-tool p-3 bg-light-subtle h-100">
 <div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
-<img src="https://www.softwareheritage.org/wp-content/uploads/2015/08/swh-logo.png" class="img-fluid" alt="Software Heritage icon">
+<img src="/assets/img/software-heritage-logo.png" class="img-fluid" alt="Software Heritage icon">
 </div>
 <h4 class="card-title">Software Heritage</h4>
 <p class="card-text">Collects, preserves, and shares software in source code form.</p>
@@ -455,7 +455,7 @@ Code publicly visible on GitHub without a license or equivalent text explicitly 
 ```{=html}
 <div class="card orc-card-tool p-3 bg-light-subtle h-100">
 <div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
-<img src="https://cdn.simpleicons.org/github" class="img-fluid" alt="GitHub icon">
+<img src="/assets/img/github.svg" class="img-fluid" alt="GitHub icon">
 </div>
 <h4 class="card-title">GitHub</h4>
 <p class="card-text">Cloud-based platform to collaborate on code.</p>
@@ -543,7 +543,7 @@ See [https://www.go-fair.org/fair-principles/](https://www.go-fair.org/fair-prin
 ```{=html}
 <div class="card orc-card-tool p-3 bg-light-subtle h-100">
 <div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
-<img src="https://cms-cdn.lmu.de/assets/img/favicon.ico" class="img-fluid" alt="LMU logo">
+<img src="/assets/img/lmu-favicon.ico" class="img-fluid" alt="LMU logo">
 </div>
 <h4 class="card-title">LMU Guidelines for Safeguarding Good Scientific Practice</h4>
 <p class="card-text">Implementation of the German Research Foundation's (DFG) Code of Conduct</p>
@@ -577,7 +577,7 @@ Data collection and analyses involving human participants or animal subjects typ
 - **Informed consent forms language** – ensuring that participants clearly understand the purpose, procedures, and any potential risks of the study. Conditions for sharing their data should be clearly explained here (see [2.3.1. Informed Consent](02-collect-and-manage.qmd#sec-ethics-and-privacy){.mark}). 
 - **Power analysis** to justify sample size – providing a statistical rationale for the number of participants, which supports the validity and ethical justification of the study. This, and more detailed information on the statistical plan, can be extracted from your pre-analysis plan (see [1.4.1. Pre-analysis planning](#sec-study-design-analysis-plan){.mark} and [1.4.3. Power analyses](#sec-study-design-analysis-plan){.mark}). 
 
-For data protection guidance, contact the [LMU Data Protection Officer](https://www.lmu.de/en/about-lmu/structure/organizational-structure/officers-and-representatives/data-protection-officer.html) or the [Research Data Management team of the University Library ](https://www.en.ub.uni-muenchen.de/writing/research_data/research-data-management/index.html).
+For data protection guidance, contact the [LMU Data Protection Officer](https://www.lmu.de/en/about-lmu/structure/organizational-structure/officers-representatives-and-contact-persons/data-protection-officer.html) or the [Research Data Management team of the University Library ](https://www.en.ub.uni-muenchen.de/writing/research_data/research-data-management/index.html).
 
 <br>
 
@@ -600,7 +600,7 @@ For data protection guidance, contact the [LMU Data Protection Officer](https://
 <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
   <div class="d-flex gap-2">
     <div class="orc-card-tool-icon p-2 rounded">
-      <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+      <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
     </div>
   </div>
   <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
@@ -618,7 +618,7 @@ For data protection guidance, contact the [LMU Data Protection Officer](https://
 <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
   <div class="d-flex gap-2">
     <div class="orc-card-tool-icon p-2 rounded">
-      <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+      <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
     </div>
   </div>
   <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
@@ -636,7 +636,7 @@ For data protection guidance, contact the [LMU Data Protection Officer](https://
 <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
   <div class="d-flex gap-2">
     <div class="orc-card-tool-icon p-2 rounded">
-      <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+      <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
     </div>
   </div>
   <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
@@ -708,7 +708,7 @@ The specific questions vary by discipline, data type, and funder requirements. D
 <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
   <div class="d-flex gap-2">
     <div class="orc-card-tool-icon p-2 rounded">
-      <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+      <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
     </div>
   </div>
   <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Lecture</span>
@@ -726,7 +726,7 @@ The specific questions vary by discipline, data type, and funder requirements. D
 <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
   <div class="d-flex gap-2">
     <div class="orc-card-tool-icon p-2 rounded">
-      <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+      <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
     </div>
   </div>
   <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Lecture</span>
@@ -744,7 +744,7 @@ The specific questions vary by discipline, data type, and funder requirements. D
 <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
   <div class="d-flex gap-2">
     <div class="orc-card-tool-icon p-2 rounded">
-      <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+      <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
     </div>
   </div>
   <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
@@ -768,10 +768,10 @@ The specific questions vary by discipline, data type, and funder requirements. D
 <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
   <div class="d-flex gap-2">
     <div class="orc-card-tool-icon p-2 rounded">
-      <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+      <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
     </div>
     <div class="orc-card-tool-icon p-2 rounded">
-      <img src="https://rdmorganiser.github.io/img/logos/RDMO-logo.png" class="img-fluid" alt="RDMO logo">
+      <img src="/assets/img/rdmo-logo.png" class="img-fluid" alt="RDMO logo">
     </div>
   </div>
   <span class="badge rounded-5 bg-success-subtle text-success align-self-start">Supported at LMU</span>
@@ -789,7 +789,7 @@ The specific questions vary by discipline, data type, and funder requirements. D
 ```{=html}
 <div class="card orc-card-tool p-3 bg-light-subtle h-100">
 <div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
-<img src="https://riojournal.com/i/ico/rio.ico" class="img-fluid" alt="RIOjournal icon">
+<img src="/assets/img/rio-journal-icon.ico" class="img-fluid" alt="RIOjournal icon">
 </div>
 <h4 class="card-title">RIOjournal</h4>
 <p class="card-text"> Examples of DMPs by discipline. </p>
@@ -902,7 +902,7 @@ After completing the study, authors add results and discussion sections, clearly
 <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
   <div class="d-flex gap-2">
     <div class="orc-card-tool-icon p-2 rounded">
-      <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+      <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
     </div>
   </div>
   <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
@@ -926,7 +926,7 @@ After completing the study, authors add results and discussion sections, clearly
 <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
   <div class="d-flex gap-2">
     <div class="orc-card-tool-icon p-2 rounded">
-      <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+      <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
     </div>
   </div>
   <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tool</span>
@@ -942,7 +942,7 @@ After completing the study, authors add results and discussion sections, clearly
 ```{=html}
 <div class="card orc-card-tool p-3 bg-light-subtle h-100">
 <div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Open_Science_Framework_log_%28and_Center_for_Open_Science_logo%29.svg/3840px-Open_Science_Framework_log_%28and_Center_for_Open_Science_logo%29.svg.png" alt="COS icon" class="img-fluid">
+<img src="/assets/img/open-science-framework-and-open-science-center.png" alt="COS icon" class="img-fluid">
 </div>
 <h4 class="card-title">Center for Open Science</h4>
 <p class="card-text">List of journals offering Registered Reports.</p>
@@ -956,7 +956,7 @@ After completing the study, authors add results and discussion sections, clearly
 ```{=html}
 <div class="card orc-card-tool p-3 bg-light-subtle h-100">
 <div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Open_Science_Framework_log_%28and_Center_for_Open_Science_logo%29.svg/3840px-Open_Science_Framework_log_%28and_Center_for_Open_Science_logo%29.svg.png" alt="OSF icon" class="img-fluid">
+<img src="/assets/img/open-science-framework-and-open-science-center.png" alt="OSF icon" class="img-fluid">
 </div>
 <h4 class="card-title">Open Science Framework</h4>
 <p class="card-text">
@@ -1008,10 +1008,10 @@ Generating an artificial dataset in R (see our [simulation tutorial](https://lmu
 <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
   <div class="d-flex gap-2">
     <div class="orc-card-tool-icon p-2 rounded">
-      <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+      <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
     </div>
     <div class="orc-card-tool-icon p-2 rounded">
-      <img src="https://www.r-project.org/logo/Rlogo.svg" class="img-fluid" alt="R logo">
+      <img src="/assets/img/Rlogo.svg" class="img-fluid" alt="R logo">
     </div>
   </div>
   <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
@@ -1029,7 +1029,7 @@ Generating an artificial dataset in R (see our [simulation tutorial](https://lmu
 <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
   <div class="d-flex gap-2">
     <div class="orc-card-tool-icon p-2 rounded">
-      <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+      <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
     </div>
   </div>
   <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
@@ -1096,10 +1096,10 @@ The **flawed version of post-hoc power** is called **“observed power”**: If 
 <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
   <div class="d-flex gap-2">
     <div class="orc-card-tool-icon p-2 rounded">
-      <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+      <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
     </div>
     <div class="orc-card-tool-icon p-2 rounded">
-      <img src="https://www.r-project.org/logo/Rlogo.svg" class="img-fluid" alt="R logo">
+      <img src="/assets/img/Rlogo.svg" class="img-fluid" alt="R logo">
     </div>
   </div>
   <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
@@ -1117,7 +1117,7 @@ The **flawed version of post-hoc power** is called **“observed power”**: If 
 <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
   <div class="d-flex gap-2">
     <div class="orc-card-tool-icon p-2 rounded">
-      <img src="../../assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+      <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
     </div>
   </div>
   <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>

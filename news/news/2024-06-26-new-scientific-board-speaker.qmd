@@ -3,9 +3,13 @@ title: "New speaker of the OSC's Scientific Board!"
 date: 2024-06-26
 subtitle: "Prof. Dr. Nikolaus Plesnila is the new speaker of the Scientific Board of the OSC"
 categories: ["Announcement"]
+
+template: templates/news-template.html
+filters:
+  - templates/process-news-yaml.lua
 ---
 
 
-<p>The OSC's Scientific Board now has a new speaker: <a href="/people/people/nikolaus-plesnila.qmd" title="Plesnila">Prof. Dr. Nikolaus Plesnila</a>. Additionally <a href="/people/people/tobias-straub.qmd" title="Straub">Dr. Tobias Straub</a> has joined the Scientifc Board as <a href="/people/people/ralf-ludwig.qmd" title="Ludwig">Prof. Dr. Ralf Ludwig</a> has stepped down from the board.</p>
-<p>More information about the members of the OSC's Scientific Board can be found <a href="../../people/scientific-board.qmd" title="Scientific Board">here</a>.</p>
+<p>The OSC's Scientific Board now has a new speaker: <a href="/people/people/nikolaus-plesnila.qmd" title="Plesnila">Prof. Dr. Nikolaus Plesnila</a>. Additionally <a href="/people/people/tobias-straub.qmd" title="Straub">Dr. Tobias Straub</a> has joined the Scientific Board as <a href="/people/people/ralf-ludwig.qmd" title="Ludwig">Prof. Dr. Ralf Ludwig</a> has stepped down from the board.</p>
+<p>More information about the members of the OSC's Scientific Board can be found <a href="/people/scientific-board.qmd" title="Scientific Board">here</a>.</p>
 <div class="g-clear"></div>

@@ -21,17 +21,18 @@ event:
     primary: English
     primary-code: en
     detail: en
+  flyer: 
+    - file: images/2026-06-10-ospark-bootcamp-image.png
+      title: "OSPARK Bootcamp Image"
 
 links:
   registration: https://events.digital-research.academy/event/131/registrations/82/
   materials:  
-  workshop_website: 
+  workshop_website: https://events.digital-research.academy/event/131/
 event_description: |
   The [OSPARK bootcamp](https://oscars-project.eu/projects/ospark-bootcamp-open-science-promotion-and-advocacy-research-knowledge-bootcamp) is all about creating visibility through outreach and marketing. It's a learning opportunity for people working in or leading Open Research initiatives, services or infrastructures. The bootcamp focuses on the needs of Open Research ambassadors and provides ample space to exchange ideas and learn from one another.
 
   **This bootcamp consists of a 6-week online course and a 2-day onsite workshop in Munich, Germany.**
-
-  ![OSPARK bootcamp course structure overview](images/2026-06-10-ospark-bootcamp-image.png){fig-align="center" width="50%"}
 
   **Online course** participants can expect:
 

@@ -21,6 +21,9 @@ event:
     primary: "English"
     primary-code: "en"
     detail: "(German Transcript)"    # other language details, non-mandatory field
+  flyer:
+    - file: "FLYER FILE PATH"   # e.g. "images/event_flyer.pdf"
+      title: "FLYER TITLE"  # This should be a descriptive title--it will be used for screenreaders and as the link text for the flyer. e.g. "Event Flyer PDF"
   
 # Registration and Materials
 links:

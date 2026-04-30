@@ -1,18 +1,20 @@
 ---
 title: LMU Open Science Summer School 2026
-date: 2026-02-23
+date: 2026-04-22
 categories:
   - Summer School
 event:
   start_date: '2026-09-07'
-  end_date: '2026-09-11'
+  end_date: '2026-09-15'
   description: |
-    Save the date! Our annual Summer School will take place from September 7-11, 2026--more details to come!
-  time: '9:00-17:00'
+    Save the date! 
+    Our annual Summer School will take place on Sept 7-11 (Track 1) and Sept 14-15 (Track 2), 2026. 
+    Registration will open early June.
+  time: '9:00-17:30'
   location:
-    name: 
+    name: Online and Philologicum Library, Ludwigstraße 25, 80539 Munich
     address: 
-    map_url: 
+    map_url: https://maps.app.goo.gl/Rvq24yLKyRz92sjQ8
   format:
     type: Hybrid
     detail: ''
@@ -22,31 +24,85 @@ event:
     detail: en
 links:
   registration: 
-  materials: 
-  workshop_website:
+  materials: https://osf.io/r2j8h/overview
+  workshop_website: http://lmu-osc.github.io/Open-Science-Summer-School-2026/
 event_description: |
-  Save the date! Our annual Summer School will take place from September 7-11, 2026--more details to come!
-instructors:
-  - name: 
-    url: ''
+
+  The LMU Open Science Center is hosting its **5th hybrid Open Science Summer School**, offering participants the option to join **in person in Munich** or **online via Zoom**.
+
+  The summer school is designed to equip early career researchers and research support staff with practical Open Science skills through two complementary tracks.
+
+  ### Track 1: Open Science knowledge and skills  
+  **07–11 September 2026**
+
+  This track introduces participants to core Open Science practices aimed at improving the transparency, reproducibility, and credibility of research. It combines public lectures with hands-on workshops.
+
+  Participants will learn how to:
+  
+  - Plan research designs and statistical analyses in advance (e.g. preregistration, data simulation)  
+  - Build computationally reproducible workflows using version-controlled scripts  
+  - Prepare and share data and code following FAIR principles and best practices  
+
+  ### Track 2: Open Science instructor training  
+  **14–15 September 2026**
+
+  This track focuses on developing pedagogical and leadership skills for those interested in teaching and promoting Open Science. No prior teaching experience is required.
+
+  Participants will:
+
+  - Learn how to design and deliver Open Science workshops
+  - Apply effective teaching and engagement strategies  
+  - Develop skills to advocate for Open Science within their communities  
+  - Design and present their own workshop for future delivery  
+
+  Participants are encouraged to implement their workshops after the program, with support from the LMU Open Science Center.
+
+  ### Funding & Partners
+
+  The summer school is organized by LMU Open Science Center Train-the-Trainer program coordinator
+  [Dr. Sarah von Grebmer zu Wolfsthurn](/people/people/sarah-von-grebmer-zu-wolfsthurn.qmd).
+
+  The program is funded by the LMU Central Study Fund and the Volkswagen Foundation Pioneer Project grant, with in-kind support from the University Library of LMU Munich. Materials were developed in collaboration with [PROFiL](https://www.lmu.de/profil/de/) and [FORRT](https://forrt.org/). 
+
+  ![](images/2026-09-07-lmu-open-science-summer-school-funders-logo.jpg){width=60%}
+  
+  For more information and full program, visit: <http://lmu-osc.github.io/Open-Science-Summer-School-2026/>
+instructors: 
+  - name: Sarah von Grebmer
+  - name: Malika Ihle 
+  - name: Sara Lil Middleton
+  - name: Laura Meier
+  - name: Pat Callahan
+  - name: Florian Kohrt
+  - name: Reema Gupta
+  - name: Edouard Bonneville
 
 helpers:
-  - name: 
+  - name: Elizabeth Waterfield
 contact:
-  name: ''
-  email: 
-organizers:
-  - name: ''
+  name: Sarah Von Grebmer Zu Wolfsthurn
+  email: Sarah.Grebmer@psy.lmu.de
+organizers: 
+  - name: Sarah von Grebmer zu Wolfsthurn
 presenters:
-  - name: ''
-    url: ''
+  - name: Alexander Wuttke
+  - name: Richard McElreath
+  - name: Tim Errington
+  - name: Jonas Hagenberg
+  - name: Danny Maupin
+
 host:
-  - name: ''
-    url: ''
+  - name: LMU Open Science Center
+    url: https://lmu-osc.github.io/
+  - name: LMU University Library (UB)
+  - name: Professionell in der Lehre (PROFil)
+    url: https://www.lmu.de/profil/de/
+  - name: Framework for Open and Reproducible Research Training (FORRT)
+    url: https://forrt.org/ 
 
 template: templates/event-template.html
 filters:
     - templates/process-event-yaml.lua
 ---
 
- 
+  

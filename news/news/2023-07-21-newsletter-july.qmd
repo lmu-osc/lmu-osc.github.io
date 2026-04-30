@@ -1,0 +1,13 @@
+---
+title: "Newsletter July 2023"
+date: 2023-07-21
+categories: ["Newsletters"]
+flyer:
+    - file: "assets/newsletter_2023_july.pdf"
+      title: LMU OSC Newsletter - July 2023
+
+template: templates/news-template.html
+filters:
+  - templates/process-news-yaml.lua
+---
+

@@ -1,0 +1,14 @@
+---
+title: "Newsletter October 2022"
+date: 2022-10-24
+subtitle: "Our second newsletter"
+categories: ["Newsletters"]
+flyer:
+    - file: "assets/newsletter_2022_october.pdf"
+      title: LMU OSC Newsletter - October 2022
+
+template: templates/news-template.html
+filters:
+  - templates/process-news-yaml.lua
+---
+

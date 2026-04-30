@@ -3,6 +3,10 @@ title: "Job ad: Scientific Coordinator for Open Science"
 date: 2024-07-15
 subtitle: "from 01/01/2025 until 31/10/2027 - Application deadline: 15.07.2024!"
 categories: ["Job Ads"]
+
+template: templates/news-template.html
+filters:
+  - templates/process-news-yaml.lua
 ---
 
 <p>The LMU Open Science Center (OSC) is seeking to fill a full-time or two part-time temporary position(s) from <strong>1st</strong> <strong>January 2025 to 31st December 2027</strong>, as:</p>

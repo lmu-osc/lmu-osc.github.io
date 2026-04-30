@@ -1,3 +1,5 @@
+name: Render and Publish Site
+
 on:
   workflow_dispatch:
   schedule:
@@ -5,16 +7,17 @@ on:
   push:
     branches: [main]
 
-name: Quarto Publish
+permissions:
+  contents: write
+
+env:
+  RENV_CONFIG_AUTO_SNAPSHOT: "false"
+  RENV_CONFIG_SNAPSHOT_TYPE: "explicit"
 
 jobs:
-  build-deploy:
+  build-github:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
-    env:
-      RENV_CONFIG_AUTO_SNAPSHOT: "false"
-      RENV_CONFIG_SNAPSHOT_TYPE: "explicit"
+
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
@@ -26,7 +29,7 @@ jobs:
             libcurl4-openssl-dev \
             libssl-dev \
             libxml2-dev
-      
+
       - name: Install R
         uses: r-lib/actions/setup-r@v2
         with:
@@ -39,66 +42,70 @@ jobs:
 
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
-        
-      - name: Restore Quarto _freeze/ cache
+
+      - name: Restore Quarto freeze cache (github)
         uses: actions/cache@v3
-        id: quarto-cache
         with:
           path: _freeze
-          key: ${{ runner.os }}-quarto-freeze-${{ hashFiles('**/*.qmd') }}
+          key: ${{ runner.os }}-quarto-freeze-github-${{ hashFiles('**/*.qmd') }}
           restore-keys: |
-            ${{ runner.os }}-quarto-freeze-
+            ${{ runner.os }}-quarto-freeze-github-
 
-      - name: Render and Publish
+      - name: Render (GitHub profile)
         uses: quarto-dev/quarto-actions/publish@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # this secret is always available for github actions
+          QUARTO_PROFILE: github
         with:
           target: gh-pages
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-         
-  push-to-lrz-gitlab:
-    needs: build-deploy
+
+  build-production:
     runs-on: ubuntu-latest
+
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
+
+      - name: Install system dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends \
+            libcurl4-openssl-dev \
+            libssl-dev \
+            libxml2-dev
+
+      - name: Install R
+        uses: r-lib/actions/setup-r@v2
         with:
-          fetch-depth: 0
-          
-      - name: Set up SSH
-        uses: webfactory/ssh-agent@v0.9.0
+          r-version: renv
+
+      - name: Install R Dependencies
+        uses: r-lib/actions/setup-renv@v2
         with:
-          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
-          
-      - name: Add GitLab to known hosts
-        run: |
-          mkdir -p ~/.ssh
-          ssh-keyscan gitlab.lrz.de >> ~/.ssh/known_hosts
-          # You can also verify the fingerprint manually (optional)
-          # ssh-keyscan gitlab.lrz.de | tee -a ~/.ssh/known_hosts
-          
-      - name: Check LRZ connection
-        run: |
-          ssh -T git@gitlab.lrz.de
-          
-      - name: Add LRZ GitLab remote
-        run: |
-          git remote add lrz_gitlab_remote git@gitlab.lrz.de:lmu-open-science-center/lmu-osc-website.git
-          git remote -v
-          
-      - name: Fetch and checkout branch
-        run: |
-          git status
-          git branch
-          git fetch origin gh-pages
-          git branch
-          git checkout -b gh-pages origin/gh-pages
-          git branch
-          git status
-        
-      - name: Push gh-pages to LRZ
-        run: |
-          # push gh-pages
-          git push --force lrz_gitlab_remote gh-pages
-        
-      
+          cache-version: 1
+
+      - name: Set up Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+
+      - name: Restore Quarto freeze cache (production)
+        uses: actions/cache@v3
+        with:
+          path: _freeze
+          key: ${{ runner.os }}-quarto-freeze-production-${{ hashFiles('**/*.qmd') }}
+          restore-keys: |
+            ${{ runner.os }}-quarto-freeze-production-
+
+      - name: Render Quarto Project (production profile)
+        uses: quarto-dev/quarto-actions/render@v2
+        env:
+          QUARTO_PROFILE: production
+        with:
+          to: html
+
+      - name: Deploy to prod-pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          publish_dir: ./_site
+          publish_branch: prod-pages
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+         

@@ -1,3 +1,11 @@
 execute: 
   echo: false
   freeze: auto
+
+
+# we want page-navigation for the news articles so we set true here, but it is false for the index.qmd in the news
+# directory because that page is just a listing of news articles and doesn't need page navigation. likewise, we
+# turn off sidebar for the news articles because we don't want the sidebar to show up on the news article pages, 
+# but we need the features offered by "sidebar" in the _quarto.yml file (i.e. breadcrumbs and page-navigation).
+page-navigation: true
+sidebar: false

@@ -3,6 +3,10 @@ title: "Stellenausschreibung: Wissenschaftlicher Koordinator (m/w/d) für Open S
 date: 2024-07-15
 subtitle: "von 01/01/2025 bis 31/10/2027 - Bewerbungsschluss 15.07.2024!"
 categories: ["Job Ads"]
+
+template: templates/news-template.html
+filters:
+  - templates/process-news-yaml.lua
 ---
 
 

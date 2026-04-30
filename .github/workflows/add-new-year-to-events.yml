@@ -1,3 +1,5 @@
+name: Notice to add new year to events
+
 on:
   repository_dispatch:
   workflow_dispatch:
