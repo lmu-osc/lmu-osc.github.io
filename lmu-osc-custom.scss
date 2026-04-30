@@ -19,7 +19,7 @@ $sidebar-hl: #006426;
   --bs-accordion-btn-color: var(--osc-accent);
   --bs-accordion-active-color: var(--osc-accent);
   --bs-accordion-active-bg: #90a09b12;
-  --bs-accordion-btn-focus-box-shadow: none !important;
+  --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0);
 }
 
 /*--accordion style overrides specific to the research cycle handbook page --*/
@@ -28,11 +28,9 @@ $sidebar-hl: #006426;
 .orc-accordion .accordion-body {
   .btn-primary {
     --bs-btn-bg: var(--osc-accent);
-    --bs-btn-border-color:var(--osc-accent);
-    
+    --bs-btn-border-color:var(--osc-accent);   
     --bs-btn-hover-bg: color-mix(in srgb, var(--osc-accent) 80%, black);
     --bs-btn-hover-border-color: color-mix(in srgb, var(--osc-accent) 80%, black);
-    
     --bs-btn-active-bg: color-mix(in srgb, var(--osc-accent) 80%, black);
     --bs-btn-active-border-color: color-mix(in srgb, var(--osc-accent) 80%, black);
   }
