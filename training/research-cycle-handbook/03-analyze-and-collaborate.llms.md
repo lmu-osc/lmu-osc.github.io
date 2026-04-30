@@ -148,7 +148,7 @@ Supported at LMU
 
 Institutional Git hosting for LMU Munich.
 
-![LMU OSC logo](../../assets/img/lmu_osc_logo.jpg)
+![LMU OSC logo](https://cms-cdn.lmu.de/assets/img/favicon.ico)
 
 ![Matrix logo](../../assets/img/matrix.svg)
 
@@ -390,7 +390,7 @@ Supported at LMU
 
 Cloud storage service for LMU Munich
 
-![LMU OSC logo](../../assets/img/lmu_osc_logo.jpg)
+![LMU OSC logo](https://cms-cdn.lmu.de/assets/img/favicon.ico)
 
 ![Matrix logo](../../assets/img/matrix.svg)
 
