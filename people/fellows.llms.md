@@ -204,16 +204,6 @@ M.Sc. Student
 
 Psychology & Education
 
-[](https://orcid.org/0009-0009-7928-6075)
-
-[![Profile](people/images/wimmer_lisa.jpg)](../people/people/lisa-wimmer.llms.md)
-
-[Lisa Wimmer](../people/people/lisa-wimmer.llms.md)
-
-Ph.D. Candidate
-
-Math, Informatics & Stats
-
 ## Former Fellows
 
 - [Ben Abrahams (2025 - 2025), M.Sc.](../people/people/ben-abrahams.llms.md)
@@ -232,3 +222,4 @@ Math, Informatics & Stats
 - [Yijing Wang, M.Sc.](../people/people/yijing-wang.llms.md)
 - [Viktoria Wiegelmann, B.Sc.](../people/people/viktoria-wiegelmann.llms.md)
 - [Martin Wiehr, B.Sc. Student](../people/people/martin-wiehr.llms.md)
+- [Lisa Wimmer, Dr.](../people/people/lisa-wimmer.llms.md)
