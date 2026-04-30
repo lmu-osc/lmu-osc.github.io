@@ -5,7 +5,7 @@ April 22, 2026
 #####  Date & Time
 
 07 Sep - 15 Sep 2026  
-9:00-17:00
+9:00-17:30
 
 #####  Location
 
@@ -85,6 +85,7 @@ For more information and full program, visit: <http://lmu-osc.github.io/Open-Sci
 - Pat Callahan
 - Florian Kohrt
 - Reema Gupta
+- Edouard Bonneville
 
 #### Helpers
 
