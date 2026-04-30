@@ -2,6 +2,10 @@
 title: "Info flyer: Open science in 7 easy steps"
 date: 2018-02-28
 categories: ["Announcement"]
+
+template: templates/news-template.html
+filters:
+  - templates/process-news-yaml.lua
 ---
 
 <p>Doing transparent and reproducible research might look complicated at first sight. This info flyer outlines in 7 really easy steps how you can increase the openness of your research workflow.</p>

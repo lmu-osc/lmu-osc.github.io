@@ -4,6 +4,10 @@ date: 2025-05-15
 subtitle: "Evidence for an implementation gap and demand for training"
 categories: ["Reports"]
 description: "The LMU Open Science Center has published a report on the awareness, adoption, and barriers to open research practices among researchers at the Biomedical Center of LMU Munich, revealing an implementation gap and a strong demand for training and support."
+
+template: templates/news-template.html
+filters:
+  - templates/process-news-yaml.lua
 ---
 
 

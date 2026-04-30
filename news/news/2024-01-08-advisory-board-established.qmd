@@ -3,8 +3,12 @@ title: "The OSC now has an advisory board!"
 date: 2024-01-08
 subtitle: "We will benefit from the advice of key internal and external actors for 2024 - 2027"
 categories: ["Announcement"]
+
+template: templates/news-template.html
+filters:
+  - templates/process-news-yaml.lua
 ---
 
 
-<p>The OSC is advised by key internal and external actors appointed for 3-year terms. Find who is part of our advisory board this term here: <a href="../../people/advisors.qmd">Advisory Board</a></p>
+<p>The OSC is advised by key internal and external actors appointed for 3-year terms. Find who is part of our advisory board this term here: <a href="/people/advisors.qmd">Advisory Board</a></p>
 <div class="g-clear"></div>

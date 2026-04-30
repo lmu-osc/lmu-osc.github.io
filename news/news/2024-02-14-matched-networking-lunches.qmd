@@ -3,6 +3,10 @@ title: "Matched Networking Lunches"
 date: 2024-02-14
 subtitle: "Get inspired from interdisciplinary discussions with like-minded individuals!"
 categories: ["Call for Application"]
+
+template: templates/news-template.html
+filters:
+  - templates/process-news-yaml.lua
 ---
 
 

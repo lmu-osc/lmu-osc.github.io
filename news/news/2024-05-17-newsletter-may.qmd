@@ -1,0 +1,14 @@
+---
+title: "Newsletter May 2024"
+date: 2024-05-17
+categories: ["Newsletters"]
+flyer:
+    - file: "assets/newsletter_2024_may.pdf"
+      title: LMU OSC Newsletter - May 2024
+
+template: templates/news-template.html
+filters:
+  - templates/process-news-yaml.lua
+---
+
+

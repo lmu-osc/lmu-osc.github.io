@@ -2,7 +2,16 @@ project:
   type: website
   output-dir: _site
   resources:
-    - assets/
+    - "**/assets/**"
+    - "**/images/**"
+
+
+profile:
+  default: github
+
+
+metadata-files:
+  - _announcements.yml
 
 website:
   title: "LMU Open Science Center"
@@ -10,14 +19,8 @@ website:
   search: true
   page-navigation: false
   repo-url: https://github.com/lmu-osc/lmu-osc.github.io
+  llms-txt: true
 
-
-  announcement: 
-    icon: info-circle
-    dismissable: true
-    content: "**Thanks for visiting the LMU Open Science Center--our site is still under construction for now, but we'll be live soon!**"
-    type: primary
-    position: below-navbar
 
   navbar:
     title: false
@@ -175,7 +178,23 @@ website:
             - text: "Members"
               href: people/members.qmd 
             - text: "Fellows"
-              href: people/fellows.qmd 
+              href: people/fellows.qmd
+
+    - id: news
+      title: "News"
+      contents:
+        - section: "News"
+          href: news/index.qmd
+          contents:
+            - auto: "news/news/*.qmd" 
+    
+    - id: events
+      title: "Events"
+      contents:
+        - section: "Events"
+          href: events/index.qmd
+          contents:
+            - auto: "events/events/*.qmd" 
 
 
 format:

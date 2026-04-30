@@ -3,6 +3,10 @@ title: "Stellenausschreibung: Open Science Koordinator*in"
 date: 2021-11-21
 subtitle: "von 02/2022 bis 12/2024 - Bewerbungsschluss 21.11.2021!"
 categories: ["Job Ads"]
+
+template: templates/news-template.html
+filters:
+  - templates/process-news-yaml.lua
 ---
 
 
@@ -14,8 +18,8 @@ categories: ["Job Ads"]
 <ul>
 <li>Ein aktives, gestaltendes Einbringen bei der Curriculums-/Strategieentwicklung zur Einbindung und Förderung von Open Science an der LMU und darüber hinaus</li>
 <li>Unterstützung von Forschungskooperationen in Bezug auf Open-Science-Aspekte</li>
-<li>Organisation von Kolloquien und Workshops, Einladung und Betreuung von Referent:innen</li>
-<li>Organisation von Aktivitäten wie einem regelmäßigen Open Science-Tag an der LMU</li>
+<li>organization von Kolloquien und Workshops, Einladung und Betreuung von Referent:innen</li>
+<li>organization von Aktivitäten wie einem regelmäßigen Open Science-Tag an der LMU</li>
 <li>Vernetzung von verschiedenen Stellen innerhalb der LMU (z.B. OSC, Bibliothek, Forschungsförderung, LRZ, Fakultäten)</li>
 <li>Mitarbeit an Finanzierungskonzepten</li>
 <li>Betreuung der Webseite</li>
@@ -35,7 +39,7 @@ categories: ["Job Ads"]
 <li>Open Science-Affinität</li>
 <li>Sehr gute Kenntnisse wissenschaftlicher Arbeitsmethoden und -techniken</li>
 <li>Teamfähigkeit</li>
-<li>Sehr gute Organisationsfähigkeit</li>
+<li>Sehr gute Organizationsfähigkeit</li>
 <li>Versierter Umgang mit IT</li>
 </ul>
 

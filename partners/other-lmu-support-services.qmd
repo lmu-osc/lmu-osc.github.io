@@ -50,29 +50,33 @@ listing:
       contact:
         - name: "RDM team"
           link: "mailto:rdm@ub.uni-muenchen.de"
-      website_url: "https://www.en.ub.uni-muenchen.de/writing/research_data/index.html"
+      website_url: "https://www.ub.lmu.de/en/open-access-publishing/research-data/"
       description: |
-        The RDM Information team at the University Library of LMU Munich provides infrastructure and gives advice on:
+        The <a href="https://www.ub.lmu.de/en/open-access-publishing/research-data/">RDM Information team</a> at the University Library of LMU Munich supports researchers throughout the research data lifecycle by providing infrastructure, guidance, and training in:
         <ul>
-          <li>How to start your research data management</li>
-          <li>How to write RDM plans (e.g., with the tool RDMO)</li>
-          <li>How to make your data FAIR (findable, accessible, interoperable, reusable)</li>
-          <li>How to use data repositories, including the infrastructure "Open Data LMU"</li>
+          <li>Research data management planning and implementation</li>
+          <li>Research data management plans (e.g. with the tool <a href="https://rdmo.ub.lmu.de">RDMO</a>)</li>
+          <li>FAIR data practices (findable, accessible, interoperable, reusable)</li>
+          <li>Data publication and repositories, including <a href="https://data.ub.uni-muenchen.de">Open Data LMU</a></li>
+          <li>Electronic Lab Notebooks (ELNs), including eLabFTW, for structured research documentation</li>
         </ul>
+        Information on research data management is centrally available on <a href="https://fdm.ub.lmu.de">Research Data LMU</a>.
 
-    - name: "University Library LMU - Open Access team"
+    - name: "University Library LMU - Associated Electronic Publishing Divisions: Open Access Publishing Services"
       image_url: "images/ub.JPG"
       contact:
-        - name: "Open Access team"
+        - name: "Open Access & Publishing Team"
           link: "mailto:open-access@ub.uni-muenchen.de"
-      website_url: "https://www.en.ub.uni-muenchen.de/writing/open-access-publishing/oa-auxiliary-page/index.html"
+      website_url: "https://www.ub.lmu.de/en/open-access-publishing/"
       description: |
-        The University Library provides:
+        The team provides:
         <ul>
-          <li>Infrastructure to preserve and share articles or books following the Green or Gold Open Access route (e.g., preprint, postprints, articles, monographs): Open Access LMU</li>
-          <li>Infrastructure for your own Open Access journal: Open Journals LMU</li>
-          <li>Infrastructure to publish your university thesis or monograph in both print and digital form as Open Access publication: Open Publishing LMU</li>
-          <li>Funds to cover article or book processing charges: Open Access publishing Fund</li>
+          <li>Infrastructure and support on collecting, preserve and share publications based on text, following the Green or Gold Open Access route on the institutional repository Open Access LMU</li>
+          <li>Advice on topics around Open Access (e.g. Creative Commons licenses, different versions of manuscripts, Green and Gold Open Access, Predatory Publishing, etc.)</li>
+          <li>Infrastructure for founding your own Open Access journal with the service of Open Journals LMU</li>
+          <li>Infrastructure to publish monographs, conference proceedings or anthologies (including your university thesis) in both print and digital form as Open Access publication with the service of Open Publishing LMU</li>
+          <li>Support through the (partial) funding of open access publications via agreements with publishers and the LMU Open Access Fund</li>
+          <li>Bibliometric consultations</li>
         </ul>
 
     - name: "IT-Gruppe Geisteswissenschaften (ITG) - LMU Center for Digital Humanities"
