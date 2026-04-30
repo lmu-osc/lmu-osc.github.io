@@ -26,7 +26,7 @@ The ReproducibiliTea Journal Club was active from December 2019 to July 2024. An
 
 #### Resources
 
-- [ ReproducibiliTea München – Sommersemester 2024 Meetup materials ](https://www.osc.uni-muenchen.de/meetups/reproducibilitea/reprot_programm_sose2024.pdf)
+- [ ReproducibiliTea München – Sommersemester 2024 Meetup materials ](../../assets/pdf/reproducibilitea_program_summer_semester_2024.pdf)
 
 #### Get Involved
 
