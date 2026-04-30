@@ -4,21 +4,21 @@ Founded in January 2019, the LMU Open Science Initiative in Medicine (OSIM) aims
 
 ![OSIM logo](images/osim.png)
 
-####  Current Organizers
+#### Current Organizers
 
 - [PD. Dr. Luisa F. Jiménez-Soto (Chair)](../../people/people/luisa-jimenez-soto.llms.md)
 - [Julian Lange, M.Sc. (Coordinator)](../../people/people/julian-lange.llms.md)
 
-####  Senior Members
+#### Senior Members
 
 - [Prof. Dr. Anne-Laure Boulesteix](../../people/people/anne-laure-boulesteix.llms.md)
 - [Prof. Dr. Eva Hoster](../../people/people/eva-hoster.llms.md)
 - [Prof. Dr. Nikolaus Plesnila](../../people/people/nikolaus-plesnila.llms.md)
 
-####  Resources
+#### Resources
 
-- [ YouTube channel Recorded talks ](https://www.youtube.com/@lmuopenscienceinitiativein447/videos)
-- [![OSF](https://osf.io/static/img/institutions/shields/cos-shield.png) OSF repository Workshops and meetup materials ](https://osf.io/kyvut/overview)
+- [ YouTube Channel Recorded talks ](https://www.youtube.com/@lmuopenscienceinitiativein447/videos)
+- [![OSF](https://osf.io/static/img/institutions/shields/cos-shield.png) OSF Repository Workshops and meetup materials ](https://osf.io/kyvut/overview)
 
 #### Get Involved
 
