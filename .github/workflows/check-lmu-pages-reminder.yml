@@ -1,0 +1,25 @@
+
+
+name: Reminder to check LMU pages
+
+# Run the workflow on a schedule or by dispatch
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 7 1 1,7 *'
+
+permissions:
+  issues: write
+
+jobs:
+  create_issue:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      - name: Create issue
+        uses: JasonEtco/create-an-issue@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          filename: .github/reminder-to-check-lmu-pages-template.md

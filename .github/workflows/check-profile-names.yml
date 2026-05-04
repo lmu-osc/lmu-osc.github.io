@@ -1,0 +1,24 @@
+name: Check Profile Naming Conventions
+
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - 'people/people/**'
+  push:
+    branches:
+      - main
+    paths:
+      - 'people/people/**'
+
+jobs:
+  check-names:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Run profile name checker
+        run: |
+          python .github/_name_checker.py

@@ -1,0 +1,59 @@
+---
+title: "Institutional Members"
+format: 
+  html:
+    css: styles.css
+    page-layout: full
+---
+
+```{=html}
+<div class="container inst-member-container my-3">
+  <p class="mb-4" style="line-height:1.75; text-align:justify;">
+    The OSC is supported by a growing number of institutional members from across the LMU. Institutional members are key partners in our efforts to promote open science and provide support to researchers at the LMU.
+  </p>
+
+  <div class="row g-4 p-3">
+    <div class="col-md-6">
+      <div class="card h-100 border-light shadow-sm" style='border-top: 4px solid #00883A !important;'>
+        <div class="card-body d-flex flex-column p-4">
+          <h5 class="card-title mb-3 fw-semibold" style='color: #00883A; font-size: 1.3rem;'>Funding Institutional Members</h5>
+          <p class="card-text">
+            Funding institutional members provide the OSC with a yearly membership fee to get priority in our training programmes and consultations.
+          </p>
+          <a href="funding-institutional-members.html" class="btn btn-primary mt-auto align-self-start">
+            View Funding Institutional Members
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="card h-100 border-light shadow-sm" style='border-top: 4px solid #00883A !important;'>
+        <div class="card-body d-flex flex-column p-4" >
+          <h5 class="card-title mb-3 fw-semibold" style='color: #00883A;font-size: 1.3rem;'>Affiliate Institutional Members</h5>
+          <p class="card-text">
+            Affiliate institutional members share the goals of the OSC and provide support in kind (e.g. infrastructure, services, collaborations).
+          </p>
+          <a href="affiliate-institutional-members.html" class="btn btn-primary mt-auto align-self-start">
+            View Affiliate Institutional Members
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container inst-member-container mt-3 mb-4">
+  <div class="row">
+      <h3 class="mb-2 border-0">Become an Institutional Member of the OSC</h3>
+      <p class="mb-4" style="line-height:1.75; text-align:justify;">
+        With a statement of commitment to work towards the OSC goals - LMU institutions can become Affiliate Institutional Members. Institutional Members are also encouraged to provide yearly funds to the OSC (depending on the size of the institution) - they then become Funding Institutional Members, which have additional benefits.
+      </p>
+      <div class="d-flex justify-content-center">
+        <a href="becoming-institutional-members.html" class="btn btn-primary btn-pop">
+          Learn More
+        </a>
+      </div>
+  </div>
+</div>
+```

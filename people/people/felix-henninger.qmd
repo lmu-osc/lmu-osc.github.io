@@ -1,0 +1,29 @@
+---
+title: Felix Henninger
+academic_title: M.Sc.
+name: Felix Henninger
+surname: Henninger
+first_name: Felix
+categories:
+  - Math Informatics & Stats
+memberships:
+  - type: fellow
+    status: active
+    position: Ph.D. Candidate
+    faculty: Math, Informatics & Stats
+email: mailbox@felixhenninger.com
+photo: 'images/henninger_felix.jpg'
+links:
+  - label: 'Personal Website'
+    url: https://felixhenninger.com
+social_media:
+  ORCID: 'https://orcid.org/0000-0002-7730-9511'
+mission_statement: |
+  I support individual researchers in adopting best practices by making better science easier, providing tools, spreading knowledge, and reducing barriers to adoption. As a trained experimental psychologist and budding statistician, I focus on reproducibility in the data collection, analysis and archival pipeline. In the past, I have worked with colleagues in the Open Science Collaboration, on the Open Scholarship Knowledge Base, and the Psych-DS standard, among others.
+
+
+template: templates/people-template.html
+filters: 
+    - templates/people_filter.lua
+---
+

@@ -1,0 +1,36 @@
+.osc-init-organizer-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 0.5rem 1rem;
+    color:#606060; 
+  }
+
+.osc-init-people-link:hover {
+  color: var(--osc-accent) !important;
+  text-decoration: underline !important;
+}
+
+
+a.btn.btn-primary.osc-init-contact-btn {
+  background-color: var(--osc-accent);
+  border-color: var(--osc-accent);
+}
+
+a.btn.btn-primary.osc-init-contact-btn:hover {
+  background-color: #006622;
+  border-color: #006622;
+}
+
+a.btn.btn-outline-primary.osc-init-contact-btn {
+  color: var(--osc-accent);
+  border-color: var(--osc-accent);
+}
+
+a.btn.btn-outline-primary.osc-init-contact-btn:hover {
+  color: #fff;
+  background-color: var(--osc-accent);
+  border-color: var(--osc-accent);
+}
+
+
+

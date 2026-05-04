@@ -1,0 +1,114 @@
+---
+title: "Other LMU Support Services"
+format: 
+  html:
+    css: styles.css
+    page-layout: full
+    toc: false
+listing:
+  template: partners.ejs
+  contents:
+    - name: "Research Funding Unit"
+      image_url: "images/lmu_logo.jpg"
+      contact:
+        - name: "Dr. Florian Schreck"
+          link: "mailto:florian.schreck@verwaltung.uni-muenchen.de"
+      website_url: "https://fdm.ub.lmu.de/services-networks/research-funding/"
+      description: |
+        The Research Funding Unit is here to help researchers comply to requirements of funding agencies to increase your chances of getting funded.
+
+    - name: "StaBLab: Statistical consulting unit"
+      image_url: "images/stablab_logo.jpeg"
+      contact:
+        - name: "StaBLab team"
+          link: "mailto:kontakt@stablab.stat.uni-muenchen.de"
+      website_url: "https://www.stat.lmu.de/stablab/en/"
+      description: |
+        The StaBLab team provide free statistical consultations for LMU students and researchers to support them with their thesis and research projects with: 
+        <ul>
+          <li>Experimental design and sampling planning</li>
+          <li>Statistical modelling</li>
+          <li>Big Data Analyses & Machine Learning</li>
+        </ul>
+
+    - name: "MLCU: Machine Learning Consulting Unit"
+      image_url: "images/lmu_logo.jpg"
+      contact:
+        - name: "MLCU"
+          link: "https://www.slds.stat.uni-muenchen.de/consulting/webform.html"
+      website_url: "https://www.slds.stat.uni-muenchen.de/consulting/"
+      description: |
+        The MLCU provides machine learning consulting to LMU students and researchers. We offer:
+        <ul>
+          <li>Help with selection of appropriate methods to answer specific research questions</li>
+          <li>Support with implementation and interpretation of machine and deep learning methods</li>
+          <li>Support in setup and implementation of reproducible benchmark experiments (including hyperparameter optimization and benchmark evaluation)</li>
+        </ul>
+
+    - name: "University Library LMU - Research Data Management Information"
+      image_url: "images/ub.JPG"
+      contact:
+        - name: "RDM team"
+          link: "mailto:rdm@ub.uni-muenchen.de"
+      website_url: "https://www.ub.lmu.de/en/open-access-publishing/research-data/"
+      description: |
+        The <a href="https://www.ub.lmu.de/en/open-access-publishing/research-data/">RDM Information team</a> at the University Library of LMU Munich supports researchers throughout the research data lifecycle by providing infrastructure, guidance, and training in:
+        <ul>
+          <li>Research data management planning and implementation</li>
+          <li>Research data management plans (e.g. with the tool <a href="https://rdmo.ub.lmu.de">RDMO</a>)</li>
+          <li>FAIR data practices (findable, accessible, interoperable, reusable)</li>
+          <li>Data publication and repositories, including <a href="https://data.ub.uni-muenchen.de">Open Data LMU</a></li>
+          <li>Electronic Lab Notebooks (ELNs), including eLabFTW, for structured research documentation</li>
+        </ul>
+        Information on research data management is centrally available on <a href="https://fdm.ub.lmu.de">Research Data LMU</a>.
+
+    - name: "University Library LMU - Associated Electronic Publishing Divisions: Open Access Publishing Services"
+      image_url: "images/ub.JPG"
+      contact:
+        - name: "Open Access & Publishing Team"
+          link: "mailto:open-access@ub.uni-muenchen.de"
+      website_url: "https://www.ub.lmu.de/en/open-access-publishing/"
+      description: |
+        The team provides:
+        <ul>
+          <li>Infrastructure and support on collecting, preserve and share publications based on text, following the Green or Gold Open Access route on the institutional repository Open Access LMU</li>
+          <li>Advice on topics around Open Access (e.g. Creative Commons licenses, different versions of manuscripts, Green and Gold Open Access, Predatory Publishing, etc.)</li>
+          <li>Infrastructure for founding your own Open Access journal with the service of Open Journals LMU</li>
+          <li>Infrastructure to publish monographs, conference proceedings or anthologies (including your university thesis) in both print and digital form as Open Access publication with the service of Open Publishing LMU</li>
+          <li>Support through the (partial) funding of open access publications via agreements with publishers and the LMU Open Access Fund</li>
+          <li>Bibliometric consultations</li>
+        </ul>
+
+    - name: "IT-Gruppe Geisteswissenschaften (ITG) - LMU Center for Digital Humanities"
+      image_url: "images/itg.png"
+      contact:
+        - name: "Dr. Stephan Lücke"
+          link: "mailto:luecke@lmu.de"
+      website_url: "https://www.itg.uni-muenchen.de/index.html"
+      description: |
+        The ITG provides advice and assistance with:
+        <ul>
+          <li>Planning and conducting projects with substantial shares of digital methods in the humanities</li>
+          <li>Research data management</li>
+        </ul>
+        The ITG is responsible for accompanying digital projects in the humanities, computer science, statistics and computational linguistics as well as the emerging data sciences.
+---
+
+<script>
+
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.email-link').forEach(a => {
+    const href = (a.getAttribute('href') || '').trim();
+    const text = (a.textContent || '').trim();
+    const noEmail = !href || href.toLowerCase() === 'mailto:' || (!text || text === '' || text === '\u00A0');
+
+    if (noEmail) {
+      const icon = a.querySelector('i.fa-envelope, i.fa-solid.fa-envelope');
+      if (icon) icon.remove();
+      // optional: also remove empty anchor entirely if you prefer:
+      // if (!a.textContent.trim()) a.remove();
+    }
+  });
+});
+</script>
+

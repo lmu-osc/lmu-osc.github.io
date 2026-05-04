@@ -1,0 +1,42 @@
+---
+title: "Advisors"
+listing:
+  - id: current-advisory-board
+    contents: 
+      - people
+    template: listings/active-advisory-board-listing.ejs
+    sort: "display_weight asc"
+
+  - id: special-advisors
+    contents: 
+      - people
+    template: listings/active-special-advisors-listing.ejs
+    sort: "display_weight asc"
+
+  - id: past-advisory-board
+    contents: 
+      - people
+    template: listings/alumni-advisory-board-listing.ejs
+    sort: "surname asc"
+
+---
+
+## Current Advisory Board
+
+The OSC is advised by key internal and external actors appointed for 3-year terms. Advisory board members for the term 2024 - 2027 are:
+
+::: {#current-advisory-board}
+:::
+
+
+## Special Advisors
+
+We benefit from the expertise of additional advisors on specific topics such as politics and didactics.
+
+::: {#special-advisors}
+:::
+
+## Former Advisory Board Members
+
+::: {#past-advisory-board}
+:::

@@ -1,0 +1,31 @@
+---
+title: Christian L. Müller
+academic_title: Prof. Dr.
+name: Christian L. Müller
+surname: Müller
+first_name: Christian L.
+categories:
+  - Math Informatics & Stats
+memberships:
+  - type: lmu-individual
+    status: active
+    position: Chair
+    faculty: Math, Informatics & Stats
+email: christian.mueller@stat.uni-muenchen.de
+photo: 'images/mueller_christian-l.png'
+links:
+  - label: 'LMU Profile'
+    url: https://www.stat.lmu.de/en/people/contact-page/christian-l-mueller-67b813c3.html
+social_media:
+  ORCID: 'https://orcid.org/0000-0002-3821-7083'
+mission_statement: |
+  I'm a group leader at the Institute of Computational Biology at the Helmholtz Zentrum München and a Professor for Biomedical Statistics and Data Science at the Department of Statistics.
+
+  I deeply care about open source software development in statistics and optimization and encourage students and collaborators to use public code repositories, open preprint servers, and permanent object identifiers for data sets for any of our research projects. In addition, I support fully reproducible open access analysis workflows accompanying any of our statistical or computational scientific articles.
+
+
+template: templates/people-template.html
+filters: 
+    - templates/people_filter.lua
+---
+

@@ -1,0 +1,251 @@
+```{=html}
+<div class="content-wrapper osc-upcoming-events">
+<div class="card-grid list">
+<% 
+// --- Helpers: normalize and parse dates safely ---
+const today = new Date();
+today.setHours(0, 0, 0, 0); // midnight for comparisons
+
+// Robust parser that accepts both "19 Sep, 2025" and "July 04, 2025" (month-day-year or day-month-year)
+const parseEventDate = (dateStr) => {
+  if (!dateStr) return null;
+  const cleaned = String(dateStr).replace(/,/g, '').trim();
+  const parts = cleaned.split(/\s+/);
+  const months = ['jan','feb','mar','apr','may','jun','jul','aug','sep','oct','nov','dec'];
+
+  // helper to build date when we have numeric day, monthKey and year
+  const build = (day, monthKey, year) => {
+    const monthIndex = months.indexOf(monthKey);
+    if (!isNaN(day) && monthIndex !== -1 && !isNaN(year)) {
+      return new Date(year, monthIndex, day);
+    }
+    return null;
+  };
+
+  // Case A: day-month-year (e.g. "19 Sep 2025" or "19 Sep, 2025")
+  if (/^\d{1,2}$/.test(parts[0]) && parts.length >= 3) {
+    const day = parseInt(parts[0], 10);
+    const monthKey = parts[1].toLowerCase().slice(0,3);
+    const year = parseInt(parts[2], 10);
+    const d = build(day, monthKey, year);
+    if (d) return d;
+  }
+
+  // Case B: month-day-year (e.g. "July 04 2025" or "July 04, 2025")
+  if (/^[A-Za-z]+$/.test(parts[0]) && parts.length >= 3) {
+    const monthKey = parts[0].toLowerCase().slice(0,3);
+    const day = parseInt(parts[1], 10);
+    const year = parseInt(parts[2], 10);
+    const d = build(day, monthKey, year);
+    if (d) return d;
+  }
+
+  // Fallback to Date constructor; return null if invalid
+  const fallback = new Date(dateStr);
+  return isNaN(fallback.getTime()) ? null : fallback;
+};
+
+const normalizeToMidnight = (d) => {
+if (!d) return null;
+const copy = new Date(d.getTime());
+copy.setHours(0, 0, 0, 0);
+return copy;
+};
+
+// --- Filtering logic ---
+let futureItems = (items || []).filter(item => {
+// item.event.start_date is guaranteed to exist per your statement
+const startDate = parseEventDate(item.event.start_date);
+if (!startDate) return false; // skip malformed start date
+
+const endDate = item.event.end_date ? parseEventDate(item.event.end_date) : null;
+
+// Use endDate for comparison when it exists and is valid; otherwise use startDate
+const comparisonDate = endDate ? endDate : startDate;
+
+const cmp = normalizeToMidnight(comparisonDate);
+if (!cmp) return false;
+
+return cmp >= today;
+});
+
+// Sort future items by parsed start date (most recent first)
+futureItems.sort(function(a, b) {
+  const da = parseEventDate(a && a.event && a.event.start_date);
+  const db = parseEventDate(b && b.event && b.event.start_date);
+  if (!da && !db) return 0;
+  if (!da) return 1;
+  if (!db) return -1;
+  return db.getTime() - da.getTime();
+});
+
+for (const item of futureItems) {
+%>
+<div class="card" <%= metadataAttrs(item) %>>
+<a href="<%- item.path %>" class="card-link">
+<div class="card-content-wrapper">
+
+<div class="event-category listing-categories">
+<%- (item.categories ? (Array.isArray(item.categories) ? item.categories[0] : item.categories) : 'EVENT').toUpperCase() %>
+</div>
+
+<div class="card-metadata">
+<div class="event-date listing-date">
+<% 
+// Use the same parser for display to keep things consistent
+const startDate = parseEventDate(item.event.start_date);
+const startDay = startDate ? startDate.getDate() : '';
+const startMonth = startDate ? startDate.toLocaleString('en-GB', { month: 'short' }) : '';
+const startYear = startDate ? startDate.getFullYear() : '';
+
+let dateDisplay = '';
+
+if (item.event.end_date) {
+const endDate = parseEventDate(item.event.end_date);
+if (endDate) {
+const endDay = endDate.getDate();
+const endMonth = endDate.toLocaleString('en-GB', { month: 'short' });
+const endYear = endDate.getFullYear();
+
+if (startMonth === endMonth && startYear === endYear) {
+if (startDay === endDay) {
+dateDisplay = `${startDay} ${startMonth}, ${startYear}`;
+} else {
+dateDisplay = `${startDay}-${endDay} ${startMonth}, ${startYear}`;
+}
+} else if (startYear === endYear) {
+dateDisplay = `${startDay} ${startMonth}-${endDay} ${endMonth}, ${startYear}`;
+} else {
+dateDisplay = `${startDay} ${startMonth}, ${startYear}-${endDay} ${endMonth}, ${endYear}`;
+}
+} else {
+// end_date provided but invalid -> show start date only
+dateDisplay = `${startDay} ${startMonth}, ${startYear}`;
+}
+} else {
+dateDisplay = `${startDay} ${startMonth}, ${startYear}`;
+}
+%>
+<%= dateDisplay %>
+</div>
+
+<div class="event-time-loc">
+<% let shown = false; %>
+
+<% if (item.event.time) { %>
+<div class="event-time listing-time">
+<i class="bi bi-clock"></i>
+<%- item.event.time || '' %>
+</div>
+<% shown = true; %>
+<% } %>
+
+<% if (item.event.location.name) { %>
+<% if (shown) { %><div class="divider"></div><% } %>
+<div class="event-location listing-location">
+<i class="bi bi-geo-alt-fill"></i>
+<%- item.event.location.name || '' %>
+</div>
+<% shown = true; %>
+<% } %>
+
+<% if (item.event.format.type) { %>
+<% if (shown) { %><div class="divider"></div><% } %>
+<div class="event-form listing-form">
+<%
+let formIcon = '';
+if (item.event.format.type?.toLowerCase().includes('in-person')) {
+formIcon = '<i class="bi bi-person"></i>';
+} else if (item.event.format.type?.toLowerCase().includes('hybrid')) {
+formIcon = '<i class="bi bi-person-video3"></i>';
+} else if (item.event.format.type?.toLowerCase().includes('online')) {
+formIcon = '<i class="bi bi-laptop"></i>';
+}
+%>
+<%= formIcon %> <%- item.event.format.type || '' %>
+</div>
+<% shown = true; %>
+<% } %>
+
+<% if (item.event.language['primary-code']) { %>
+<% if (shown) { %><div class="divider"></div><% } %>
+<div class="event-language listing-language">
+<i class="bi bi-translate"></i>
+<%- (typeof item.event.language['primary-code'] === 'string' ? item.event.language['primary-code'] : '').toUpperCase() %>
+</div>
+<% shown = true; %>
+<% } %>
+</div>
+</div>
+
+<div class="title listing-title"><%- item.title %></div>
+<div class="separator"></div>
+
+<p class="description listing-description"><%- item.event.description %></p>
+
+<div class="event-footer">
+<div class="event-host-info-group">
+<%
+                const peopleBlocks = [
+                    { label: 'Organizer(s)', data: item.organizers},
+                    { label: 'Presenter(s)', data: item.presenters},
+                    { label: 'Instructor(s)', data: item.instructors},
+                    { label: 'Helper(s)', data: item.helpers},
+                    { label: 'Host(s)', data: item.host},
+                  ];
+                %>
+<% peopleBlocks.forEach(function(block) { %>
+<% 
+// check if block has valid data i.e. non-empty fields
+  const hasValidData = block.data && block.data.length > 0 && block.data.some(function(person) {
+  if (!person) return false;
+  if (typeof person === 'string') return person.trim().length > 0;
+  return (person.name || '').toString().trim().length > 0;
+  });
+%>
+<% if (hasValidData) { %>
+<div class="event-person-group" style="display: block;">
+<span class="person-label"><%= block.label %>:</span>
+<span class="person-list" style="white-space: normal;">
+<%= block.data
+.map(function(person){
+if (!person) return '';
+if (typeof person === 'string') return person.trim();
+var name = (person.name || '').toString().trim();
+var url  = (person.url || '').toString().trim();
+if (!name) return '';
+return name;
+})
+.filter(function(x){ return x && x.length > 0; })
+.join(', ')
+%>
+</span>
+</div>
+<% } %>
+<% }) %>
+<% if (item.contact && item.contact.name && item.contact.email) { %>
+<div class="event-contact-info">
+<i class="bi bi-envelope"></i>
+<a href="mailto:<%- item.contact.email %>?subject=Regarding <%- item.pagetitle %>">
+<%- item.contact.name %>
+</a>
+</div>
+<% } %>
+</div>
+
+<div class="read-more-button">
+<i class="bi bi-arrow-right"></i> 
+</div>
+</div>
+
+</div>
+</a>
+</div>
+<% } %>
+</div>
+</div>
+
+```
+
+
+

@@ -1,0 +1,284 @@
+---
+title: About Us
+body-classes: about-page
+pagetitle: About
+format:
+  html:
+    css: 
+      - /about/about.css
+page-layout: full
+---
+
+```{=html}
+<section class="hero mb-0 mt-1">
+  <div class="row align-items-center g-0 py-1 px-4 px-lg-5">
+    <div class="container">
+      <p class="text-align-justify about-us-text fs-5">
+        The interdisciplinary LMU Open Science Center (OSC) promotes and fosters open research practices at LMU Munich and beyond, supporting LMU’s strategic commitment to excellent, responsible, and internationally competitive research. In a global research environment where world-leading institutions are redefining standards of good research practice, the OSC ensures that LMU researchers are equipped to meet and actively shape these evolving standards.<br><br>
+        The LMU Open Science Center was supported by LMUexcellent, funded by the Federal Ministry of Education and Research (BMBF) and the Free State of Bavaria under the Excellence Strategy of the Federal Government and the Länder.
+          <a href="/partners/funders.html" class="text-success">View all our Funders
+          <i class="fa-solid fa-arrow-up-right-from-square fa-xs"></i>
+        </a>
+      </p>
+    </div>
+  </div>
+</section>
+
+<div class="container px-4 py-0 p-lg-5">
+    <div class="row justify-content-center align-items-stretch g-4">     
+      <!-- YouTube video -->
+      <div class="col-md-5 col-12 d-flex justify-content-center">
+        <div class="ratio ratio-16x9 flex-grow-1">
+          <iframe
+            src="https://www.youtube.com/embed/wJj7RkvIrtk?si=XLo-MP-LjVB2lKOE"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+
+      <!-- Impact report card -->
+      <div class="col-md-5 col-12 d-flex justify-content-center">
+        <div class="h-100 p-2 border flex-grow-1">
+          <img src="/about/img/impact-report.png" class="img-fluid" alt="PDF thumbnail image for the 2023 Impact Report">
+          <a href="https://zenodo.org/records/10285395" class="btn btn-primary w-100 bg-brand-green border-brand-green mt-auto" download>
+            Download PDF <i class="bi bi-download"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+</div>
+
+<!--- mission statement continued--->
+<section class="py-3 mb-0 mt-2">
+  <div class="container">
+    <div class="bg-body-tertiary rounded-4 p-4 p-lg-5">
+      <h2 class="mb-0 fs-4 fw-bold">What We Aim For</h2>
+      <p class="mb-0 mt-3 fs-5 text-align-justify about-us-text">
+        The OSC’s mission is to promote and foster open research practices at LMU Munich and beyond. We do this by providing training, resources, and support for researchers at all career stages, and by advocating for institutional and cultural changes that facilitate the adoption of open research practices. We are committed to fostering a collaborative and inclusive community that values transparency, reproducibility, and accessibility in research.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- Staff and Governance -->
+<section class="py-3 mb-0">
+  <div class="container">
+    <div class="bg-body-tertiary rounded-4 p-4 p-lg-5">
+      <h2 class="mb-0 fs-4 fw-bold">Who We Are</h2>
+
+      <!-- Single-row card rail -->
+      <div class="staff-governance-rail d-flex flex-wrap justify-content-center gap-4 mt-4">
+
+        <!-- Leadership -->
+          <div class="card shadow-sm">
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex align-items-center gap-2 mb-2">
+                <i class="fa-solid fa-user-tie fs-3 text-success" aria-hidden="true"></i>
+                <h3 class="card-title fs-5 mb-0">Leadership</h3>
+              </div>
+              <p class="card-text mb-4 text-muted">Executive and scientific leadership.</p>
+              <div class="actions mt-auto d-grid gap-2">
+                <a class="btn btn-primary btn-pop w-100 bg-brand-green border-brand-green" href="/people/people/felix-schoenbrodt.qmd">
+                  Managing Director
+                </a>
+                <a class="btn btn-outline-primary btn-pop w-100" href="/people/people/malika-ihle.qmd">
+                  Scientific Coordinator
+                </a>
+              </div>
+            </div>
+          </div>
+        <!-- Governance -->
+          <div class="card shadow-sm">
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex align-items-center gap-2 mb-2">
+                <i class="fa-solid fa-users fs-3 text-success" aria-hidden="true"></i> 
+                <h3 class="card-title fs-5 mb-0">Governance</h3>
+              </div>
+              <p class="card-text mb-4 text-muted">Oversight and advisory structures.</p>
+              <div class="actions mt-auto d-grid gap-2 ">
+                <a class="btn btn-primary btn-pop w-100 bg-brand-green border-brand-green" href="/people/scientific-board.html"> Scientific Board
+                </a>
+                <a class="btn btn-outline-primary btn-pop w-100"  href="/people/advisors.qmd">
+                  Advisors
+                </a>
+              </div>
+            </div>
+          </div>
+
+        <!-- Staff and members-->
+          <div class="card shadow-sm">
+            <div class="card-body d-flex flex-column">
+              <div class="d-flex align-items-center gap-2 mb-2">
+                <i class="fa-solid fa-people-group text-success fs-3"  aria-hidden="true"></i> 
+                <h3 class="card-title fs-5 mb-0">Staff &amp; Members</h3>
+              </div>
+              <p class="card-text mb-4 text-muted">Our people.</p>
+              <div class="actions mt-auto d-grid gap-2">
+                <a class="btn btn-primary btn-pop w-100 bg-brand-green border-brand-green" href="/people/staff.html">
+                  OSC Staff
+                </a>
+                <a class="btn btn-outline-primary btn-pop w-100" href="/people/members.html">
+                  OSC members
+                </a>
+              </div>
+            </div>
+          </div>
+      </div>
+
+      <!-- Statute CTA -->
+      <div class="d-flex mt-4 justify-content-center">
+        <a class="btn btn-primary btn-pop bg-brand-green border-brand-green" href="/about/statutes.html">
+          Read our Statutes <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- section for trainings and events-->
+
+<section class="py-3 mb-0">
+  <div class="container">
+    <div class="bg-body-tertiary rounded-4 p-4 p-lg-5">
+      <h2 class="mb-0 fs-4 fw-bold">What We Do</h2>
+      <div class="row row-cols-1 row-cols-md-2 g-4 mt-2">
+        <!-- Events card -->
+        <div class="col">
+          <div class="card shadow-sm hover-pop h-100">
+            <div class="card-body d-flex flex-column p-4">
+              <div class="d-flex align-items-center gap-2 mb-2">
+                <i class="fa-solid fa-calendar-days fs-3 text-success" aria-hidden="true"></i>
+                <h3 class="card-title fs-5 mb-0">Events</h3>
+              </div>
+              <p class="card-text mb-4 text-muted" style="text-align: justify;">
+                Explore upcoming and past events from the OSC community.
+              </p>
+              <div class="d-grid gap-2 mt-auto">
+                <a class="btn btn-primary btn-pop bg-brand-green border-brand-green" href="/events">
+                  View Events <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Training card -->
+        <div class="col">
+          <div class="card shadow-sm hover-pop h-100">
+            <div class="card-body d-flex flex-column p-4">
+              <div class="d-flex align-items-center gap-2 mb-2">
+                <i class="fa-solid fa-chalkboard-user fs-3 text-success" aria-hidden="true"></i>
+                <h3 class="card-title fs-5 mb-0">Training</h3>
+              </div>
+              <p class="card-text mb-4 text-muted" style="text-align: justify;">
+                Browse our training resources on open science practices, from data management to reproducible workflows.
+              </p>
+              <div class="d-grid gap-2 mt-auto">
+                <a class="btn btn-primary btn-pop bg-brand-green border-brand-green" href="/training">
+                  Explore Training <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm hover-pop h-100">
+            <div class="card-body d-flex flex-column p-4">
+              <div class="d-flex align-items-center gap-2 mb-2">
+                <i class="bi bi-person-video fs-3 text-success" aria-hidden="true"></i>
+                <h3 class="card-title fs-5 mb-0">Consultations</h3>
+              </div>
+              <p class="card-text mb-4 text-muted" style="text-align: justify;">
+                Get support on your implementation of open research practices and responsible research assessment.
+              </p>
+              <div class="d-grid gap-2 mt-auto">
+                <a class="btn btn-primary btn-pop bg-brand-green border-brand-green" href="mailto:osc@lmu.de?subject=Consultation request:">
+                  Request a consultation <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm hover-pop h-100">
+            <div class="card-body d-flex flex-column p-4">
+              <div class="d-flex align-items-center gap-2 mb-2">
+                <i class="fa-solid fa-handshake fs-3 text-success" aria-hidden="true"></i>
+                <h3 class="card-title fs-5 mb-0">Meta-research Hub</h3>
+              </div>
+              <p class="card-text mb-4 text-muted" style="text-align: justify;">
+                Collaborate with meta researchers and open science enthusiasts across disciplines.
+              </p>
+              <div class="d-grid gap-2 mt-auto">
+                <a class="btn btn-primary btn-pop bg-brand-green border-brand-green" href="https://www.resources.osc.lmu.de/bibliography/" target="_blank">
+                  Bibliography Network <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Join Us Section -->
+<section class="py-3 mb-0">
+  <div class="container">
+    <div class="bg-body-tertiary about-joinus rounded-4 p-4 p-lg-5">
+      <h2 class="mb-0 fs-4 fw-bold">Join Us</h2>
+      <div class="row row-cols-1 row-cols-md-2 g-4 mt-2">
+        <!-- Mailing List Card -->
+        <div class="col">
+          <div class="card shadow-sm hover-pop h-100">
+            <div class="card-body d-flex flex-column p-4">
+              <div class="d-flex align-items-center gap-2 mb-2">
+                <i class="bi bi-envelope-fill fs-3 text-success" aria-hidden="true"></i> 
+                <h3 class="card-title fs-5 mb-0">Subscribe to our Announcement List</h3>
+              </div>
+              <p class="card-text mb-4 text-muted text-align-justify">
+                Stay up-to-date with our activities and events!
+              </p>
+              <div class="d-grid gap-2 mt-auto">
+                <a class="btn btn-primary btn-pop bg-brand-green border-brand-green w-100" href="https://lists.lrz.de/mailman/listinfo/lmu-osc" target="_blank">
+                Subscribe
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Become a Member Card -->
+        <div class="col">
+          <div class="card shadow-sm hover-pop h-100">
+            <div class="card-body d-flex flex-column p-4">
+              <div class="d-flex align-items-center gap-2 mb-2">
+                <i class="bi bi-person-plus-fill fs-3 text-success" aria-hidden="true"></i> 
+                <h3 class="card-title fs-5 mb-0">Become a Member</h3>
+              </div>
+              <p class="card-text mb-4 text-muted text-align-justify">
+                Support and shape the OSC's goals and activities by becoming a member!
+              </p>
+              <div class="d-grid gap-2 mt-auto">
+                <a class="btn btn-primary btn-pop bg-brand-green border-brand-green w-100" href="/about/join-us.html">
+                  Join as Member
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> 
+    </div> 
+  </div> 
+</section>
+
+
+```
+
+
+
+
+

@@ -1,0 +1,13 @@
+---
+title: TITLE
+date: YYYY-MM-DD
+categories: ["Announcement", "Awards/Recognition", "Call for Application", "Event Highlights", "Interviews", "Job Ads", "New Members", "Newsletters", "Publications", "Reports"]
+description: A brief description of the news item that will appear in the news card on the main News page. Keep it concise and engaging to attract readers. MAX 2-3 SENTENCES.
+flyer:
+    - file: "FLYER FILE PATH"   # e.g. "images/event_flyer.pdf"
+      title: "FLYER TITLE"  # This should be a descriptive title--it will be used for screenreaders and as the link text for the flyer. e.g. "Event Flyer PDF"
+
+template: templates/news-template.html
+filters:
+  - templates/process-news-yaml.lua
+---

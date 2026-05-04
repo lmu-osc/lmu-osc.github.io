@@ -1,0 +1,121 @@
+---
+pagetitle: "ReproducibiliTea"
+format: 
+  html:
+    css: styles.css
+page-layout: full
+---
+
+
+```{=html}
+<div>
+    <h2 class="mb-0" style="border-bottom: none;">
+        <span class="fw-bold">ReproducibiliTea</span>
+        <span class="fw-light"> Journal Club</span>
+    </h2>
+</div>
+<div class="container px-0 mb-2">
+    <div class="row align-items-center">
+        <div class="col-md-9 p-0">
+            <p style="line-height: 1.6; text-align: justify;" class="m-0">
+                    Founded in December 2019, the interdisciplinary journal club "ReproducibiliTea" takes place regularly 
+                    to explore main questions and current topics concerning Open Science and the credibility of research findings. 
+                    This concept, which originated in Great Britain, has gained widespread recognition and adoption in numerous 
+                    countries under the same name.
+                    <br><br>
+                    <strong>What we do?</strong>
+                    <ul>
+                        <li>Open discussions on open science, reproducibility, and related topics</li>
+                        <li>Foster exchange of diverse ideas across participants from all academic levels, fields, and institutions</li>
+                        <li>In-person meetings, and everyone is encouraged to bring their own snacks and drinks</li>
+                    </ul>
+            </p>
+        </div>
+        <div class="col-md-3 text-center">
+            <img src="images/reproducibilitea_logo1.jpeg" class="img-fluid" style="max-height:150px;" alt="ReproducibiliTea logo">
+        </div>
+    </div>
+</div>
+
+<!-- Past activity note -->
+<div class="alert alert-success text-success" role="alert" style="font-style:italic; font-size:0.95rem;">
+    The ReproducibiliTea Journal Club was active from December 2019 to July 2024. Any interested parties wanting support to revive it or support for a one-off event can contact the LMU Open Science Center coordinator, <a href="mailto:malika.ihle@lmu.de" class="text-success">Dr. Malika Ihle</a>
+</div>
+
+
+<div class="container px-0 mb-4">
+    <h4 class="mb-2" style="border-bottom: none; color: var(--osc-accent);">
+        Past Organizers
+    </h4>
+    <ul class="mt-0 osc-init-organizer-list">
+                <li>
+                    <a href="/people/people/laura-goetz.qmd" class="text-decoration-none text-black osc-init-people-link">Laura Goetz</a>, 2019–2024
+                </li>
+                <li>
+                    <a href="#" class="text-decoration-none text-black osc-init-people-link">Viktoria Wiedemann</a>, 2022–2024
+                </li>
+                <li>
+                    <a href="/people/people/gracia-pruem.qmd" class="text-decoration-none text-black osc-init-people-link">Gracia Prüm</a>, 2022–2024
+                </li>
+                <li>
+                    <a href="#" class="text-decoration-none text-black osc-init-people-link">Finia Loeb</a>, 2022–2024
+                </li>
+                <li>
+                    <a href="/people/people/alp-kaan-aksu.qmd" class="text-decoration-none text-black osc-init-people-link">Alp Kaan Aksu</a>, 2022–2024
+                </li>
+                <li>
+                    <a href="/people/people/julian-lange.qmd" class="text-decoration-none text-black osc-init-people-link">Julian Lange</a>, 2023–2024
+                </li>
+                <li>
+                    <a href="/people/people/stephan-nuding.qmd" class="text-decoration-none text-black osc-init-people-link">Stephan Nuding</a>, 2019–2022
+                </li>
+                <li>
+                    <a href="/people/people/leonhard-schramm.qmd" class="text-decoration-none text-black osc-init-people-link">Leonhard Schramm</a>, 2019–2023
+                </li>
+                <li>
+                    <a href="/people/people/franka-etzel.qmd" class="text-decoration-none text-black osc-init-people-link">Franka Etzel</a>, 2022–2023
+                </li>
+    </ul>
+</div>
+
+<div class="container px-0 mb-4">
+    <h4 class="mb-2" style="border-bottom: none; color: var(--osc-accent);">
+      Resources
+    </h4>
+    <ul class="list-unstyled mt-0 d-flex flex-column gap-3">
+        <li>
+                <a href="/assets/pdf/reproducibilitea_program_summer_semester_2024.pdf" target="_blank" rel="noopener"
+               class="d-flex align-items-center gap-3 text-decoration-none" style="cursor: pointer; width:fit-content;">
+                <span class="d-flex align-items-center justify-content-center rounded-3 flex-shrink-0 shadow-sm bg-success-subtle"
+                      style="width:56px; height:56px;">
+                    <i class="bi bi-file-earmark" style="font-size:1.6rem; color:var(--osc-accent);"></i>
+                </span>
+                <span>
+                    <span class="d-block fw-semibold text-black">ReproducibiliTea München – Sommersemester 2024</span>
+                    <span class="d-block text-muted small">Meetup materials</span>
+                </span>
+            </a>
+        </li>
+    </ul>
+</div>
+
+<div class="container px-0">
+    <h4 class="mb-2" style="border-bottom: none; color: var(--osc-accent);">
+        Get Involved
+    </h4>
+    <p style="line-height: 1.6;" class="mb-3">
+            You are cordially invited to attend our upcoming meetings! Stay updated and receive notifications about these gatherings and the selected papers.
+    </p>
+    <div class="d-flex gap-3 align-items-center flex-wrap justify-content-center mt-3">
+        <a href="mailto:reproducibilitea.munich@gmail.com" class="btn btn-primary osc-init-contact-btn">
+          <i class="bi bi-envelope"></i>
+            ReproducibiliTea team
+        </a>
+        <a href="https://lists.lrz.de/mailman/listinfo/reproducibilitea" class="btn btn-outline-primary osc-init-contact-btn" rel="noopener">
+            <i class="bi bi-box-arrow-up-right"></i> 
+            Join Mailing list
+        </a>
+    </div>
+
+</div>
+```

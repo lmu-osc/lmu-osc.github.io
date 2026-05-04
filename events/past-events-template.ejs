@@ -1,0 +1,248 @@
+```{=html}
+<div class="content-wrapper osc-past-events">
+  <div class="card-grid list">
+    <% 
+      // Filter items to:
+      // 1) occur in the year == templateParams.year
+      // 2) have end_date (if present) older than now, otherwise date older than now
+      const yearNum = Number(templateParams.year);
+      const now = new Date();
+
+      // parseEventDate: accepts "July 04, 2025" (month-day-year) and "19 Sep, 2025" (day-month-year)
+      const parseEventDate = (dateStr) => {
+        if (!dateStr) return null;
+        const cleaned = String(dateStr).replace(/,/g, '').trim();
+        const parts = cleaned.split(/\s+/);
+        const months = ['jan','feb','mar','apr','may','jun','jul','aug','sep','oct','nov','dec'];
+
+        const build = (day, monthKey, year) => {
+          const monthIndex = months.indexOf(monthKey.toLowerCase().slice(0,3));
+          if (!isNaN(day) && monthIndex !== -1 && !isNaN(year)) {
+            return new Date(Number(year), monthIndex, Number(day));
+          }
+          return null;
+        };
+
+        // Case: day-month-year (e.g. "19 Sep 2025")
+        if (/^\d{1,2}$/.test(parts[0]) && parts.length >= 3) {
+          const day = parseInt(parts[0], 10);
+          const monthKey = parts[1];
+          const year = parseInt(parts[2], 10);
+          const d = build(day, monthKey, year);
+          if (d && !isNaN(d.getTime())) return d;
+        }
+
+        // Case: month-day-year (e.g. "July 04 2025")
+        if (/^[A-Za-z]+$/.test(parts[0]) && parts.length >= 3) {
+          const monthKey = parts[0];
+          const day = parseInt(parts[1], 10);
+          const year = parseInt(parts[2], 10);
+          const d = build(day, monthKey, year);
+          if (d && !isNaN(d.getTime())) return d;
+        }
+
+        // fallback
+        const fallback = new Date(dateStr);
+        return isNaN(fallback.getTime()) ? null : fallback;
+      };
+
+      let filteredItems = (items || []).filter(item => {
+        if (!item || !item.event.start_date) return false;
+        const startDate = parseEventDate(item.event.start_date);
+        if (!startDate) return false;
+        const startYear = startDate.getFullYear();
+
+        let endDate = null;
+        let endYear = null;
+        if (item.event.end_date) {
+          const parsedEnd = parseEventDate(item.event.end_date);
+          if (parsedEnd) {
+            endDate = parsedEnd;
+            endYear = endDate.getFullYear();
+          }
+        }
+
+        // Determine whether the event occurs in the target year.
+        let occursInYear = false;
+        if (endDate) {
+          // event spans from startDate to endDate: check if target year is within span
+          if (startYear <= yearNum && endYear >= yearNum) occursInYear = true;
+        } else {
+          // single-date event: year must match exactly
+          occursInYear = (startYear === yearNum);
+        }
+        if (!occursInYear) return false;
+
+        // Determine whether event is older than now.
+        if (endDate) {
+          if (!(endDate.getTime() < now.getTime())) return false;
+        } else {
+          if (!(startDate.getTime() < now.getTime())) return false;
+        }
+
+        return true;
+      });
+
+      // Sort filtered items by parsed start date (most recent first)
+      filteredItems.sort(function(a, b) {
+        const da = parseEventDate(a && a.event && a.event.start_date);
+        const db = parseEventDate(b && b.event && b.event.start_date);
+        if (!da && !db) return 0;
+        if (!da) return 1;
+        if (!db) return -1;
+        return db.getTime() - da.getTime();
+      });
+    %>
+
+    <% for (const item of filteredItems) { %>
+      <div class="card" <%= metadataAttrs(item) %>>
+        <a href="<%- item.path %>" class="card-link">
+          <div class="card-content-wrapper">
+            
+            <div class="event-date listing-date">
+              <% 
+                const startDate = parseEventDate(item.event.start_date);
+                const startDay = startDate.getDate();
+                const startMonth = startDate.toLocaleString('en-GB', { month: 'short' });
+                const startYear = startDate.getFullYear();
+                
+                let dateDisplay = '';
+            
+                if (item.event.end_date && parseEventDate(item.event.end_date)) {
+                  const endDate = parseEventDate(item.event.end_date);
+                  const endDay = endDate.getDate();
+                  const endMonth = endDate.toLocaleString('en-GB', { month: 'short' });
+                  const endYear = endDate.getFullYear();
+            
+                  if (startMonth === endMonth && startYear === endYear) {
+                    if (startDay === endDay) {
+                      dateDisplay = `${startDay} ${startMonth}, ${startYear}`;
+                    } else {
+                      dateDisplay = `${startDay}-${endDay} ${startMonth}, ${startYear}`;
+                    }
+                  } else if (startYear === endYear) {
+                    dateDisplay = `${startDay} ${startMonth}-${endDay} ${endMonth}, ${startYear}`;
+                  } else {
+                    dateDisplay = `${startDay} ${startMonth}, ${startYear}-${endDay} ${endMonth}, ${endYear}`;
+                  }
+                } else {
+                  dateDisplay = `${startDay} ${startMonth}, ${startYear}`;
+                }
+              %>
+              <%= dateDisplay %>
+            </div>
+
+            <div class="event-labels">
+              <div class="event-category listing-categories">
+              <%- (item.categories ? (Array.isArray(item.categories) ? item.categories[0] : item.categories) : 'EVENT').toUpperCase() %>
+              </div>
+
+            </div>
+            <div class="title listing-title"><%- item.title %></div>
+            <div class="separator"></div>
+            <!--<p class="description listing-description"><%- item.event.description %></p> -->
+            <div class="event-footer">
+              <div class="event-host-info-group">
+                <%
+                const peopleBlocks = [
+                    { label: 'Organizer(s)', data: item.organizers},
+                    { label: 'Presenter(s)', data: item.presenters},
+                    { label: 'Instructor(s)', data: item.instructors},
+                    { label: 'Helper(s)', data: item.helpers},
+                    { label: 'Host(s)', data: item.host},
+                  ];
+                %>
+                
+                <% peopleBlocks.forEach(function(block) { %>
+                <% 
+                // check if block has valid data i.e. non-empty fields
+                  const hasValidData = block.data && block.data.length > 0 && block.data.some(function(person) {
+                  if (!person) return false;
+                  if (typeof person === 'string') return person.trim().length > 0;
+                  return (person.name || '').toString().trim().length > 0;
+                  });
+                %>
+                <% if (hasValidData) { %>
+
+                  <div class="event-person-group" style="display: block;">
+                  <span class="person-label"><%= block.label %>:</span>
+                  <span class="person-list" style="white-space: normal;">
+                    <%= block.data
+                    .map(function(person){
+                      if (!person) return '';
+                      if (typeof person === 'string') return person.trim();
+                      var name = (person.name || '').toString().trim();
+                      var url  = (person.url || '').toString().trim();
+                    if (!name) return '';
+                    return name;
+                    })
+                    .filter(function(x){ return x && x.length > 0; })
+                    .join(', ')
+                %>
+                </span>
+                  </div>
+
+                <% } %>
+                <% }) %>
+
+                </div>
+                <% if (item.links && item.links.materials){ %>
+                <div class="event-material">
+                  <div class="trainingurl listing-training">
+                    <i class="bi bi-folder2"></i>
+                    <a href="<%- item.links.materials %>" target="_blank"> Training Material</a>
+                  </div>
+                </div>
+              <% } %>
+            </div>
+
+          </div>
+        </a>
+      </div>
+    <% } %>
+  </div>
+
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  document.querySelectorAll('.card').forEach(card => {
+    const title = card.querySelector('.title');
+    const desc = card.querySelector('.description');
+    if (!title || !desc) return;
+
+    // Get computed line height and height of title
+    const lineHeight = parseFloat(getComputedStyle(title).lineHeight);
+    const titleLines = Math.round(title.offsetHeight / lineHeight);
+
+    if (titleLines >= 2) {
+      // Clamp title to 2 lines
+      title.style.display = '-webkit-box';
+      title.style.webkitLineClamp = '2';
+      title.style.webkitBoxOrient = 'vertical';
+      title.style.overflow = 'hidden';
+      title.style.textOverflow = 'ellipsis';
+      // Clamp desc to 1 line
+      desc.style.display = '-webkit-box';
+      desc.style.webkitLineClamp = '1';
+      desc.style.webkitBoxOrient = 'vertical';
+      desc.style.overflow = 'hidden';
+      desc.style.textOverflow = 'ellipsis';
+    } else {
+      // Show full title (remove clamping)
+      title.style.display = '';
+      title.style.webkitLineClamp = '';
+      title.style.webkitBoxOrient = '';
+      title.style.overflow = '';
+      title.style.textOverflow = '';
+      // Clamp desc to 2 lines
+      desc.style.display = '-webkit-box';
+      desc.style.webkitLineClamp = '2';
+      desc.style.webkitBoxOrient = 'vertical';
+      desc.style.overflow = 'hidden';
+      desc.style.textOverflow = 'ellipsis';
+    }
+  });
+});
+</script>
+```

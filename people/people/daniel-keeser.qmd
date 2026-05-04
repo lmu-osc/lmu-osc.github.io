@@ -1,0 +1,29 @@
+---
+title: Daniel Keeser
+academic_title: Dr.
+name: Daniel Keeser
+surname: Keeser
+first_name: Daniel
+categories:
+  - University Hospital
+memberships:
+  - type: lmu-individual
+    status: active
+    position: Researcher
+    faculty: University Hospital
+email: daniel.keeser@med.uni-muenchen.de
+photo: 'images/keeser_daniel.jpg'
+links:
+  - label: 'LMU Profile'
+    url: https://www.mcn.uni-muenchen.de/members_invisible/all/keeser_daniel/index.html
+social_media:
+  ORCID: 'https://orcid.org/0000-0002-0244-1024'
+mission_statement: |
+  I am research assistant and licensed psychologist at Department for Psychiatry and Psychotherapy at the University Hospital Munich.
+
+
+template: templates/people-template.html
+filters: 
+    - templates/people_filter.lua
+---
+

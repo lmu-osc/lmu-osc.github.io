@@ -1,14 +1,21 @@
 format: 
   html:
+    grid:
+      sidebar-width: 225px
+      body-width: 1000px
+      margin-width: 300px
+      gutter-width: 1.5rem
     css: 
       - ../styles.css
-      - ../people.css
+      - people.css
     page-layout: full
     toc: false
     include-in-header: 
       - text: |
           <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
-          <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"> 
+
 execute: 
-  echo: false   
+  echo: false
+  freeze: auto
+
+          

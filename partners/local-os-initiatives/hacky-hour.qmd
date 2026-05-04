@@ -1,0 +1,69 @@
+---
+pagetitle: "Hacky Hour"
+format: 
+  html:
+    css: styles.css
+page-layout: full
+---
+```{=html}
+<div>
+    <h2 class="mb-0" style="border-bottom: none;">
+        <span class="fw-bold">Hacky</span>
+        <span class="fw-light"> Hour</span>
+    </h2>
+</div>
+<div class="container px-0 mb-2">
+    <div class="row align-items-center">
+        <div class="col-md-9 p-0">
+            <p style="line-height: 1.6; text-align: justify;">
+                Come along to talk about code, research tools, and open science in a social environment!
+                We hold sessions on the last Monday of the month, in person at Wikipedia Munich,
+                Angertorstraße 3, Munich, from 16:30 to 18:00. Each session has a theme. If you have
+                a related problem, bring it along to work on it and get help or pointers! We will ensure
+                that there is at least one knowledgeable person in the room, and a facilitator to keep
+                things in check (and order pizza).
+                <br><br>
+                <strong>Typical Session Agenda:</strong>
+                <ul>
+                    <li>
+                        Brief round of introductions and description of the problems you’ll be working on during that session
+                    </li>
+                    <li>
+                        Formation of possible groups or tandems, if participants have tips to exchange on certain topics
+                    </li>
+                    <li>Hack</li>
+                    <li>Wrap-up: progress and next steps</li>
+                </ul>
+            </p>
+        </div>
+        <div class="col-md-3 text-center">
+            <img src="images/hackyhour.svg" class="img-fluid" style="max-height:150px;" alt="Hacky Hour logo">
+        </div>
+    </div>
+</div>
+
+<!-- Past activity note -->
+<div class="alert alert-success text-success" role="alert" style="font-style:italic; font-size:0.95rem;">
+    Hacky Hour was active in 2024. Any interested parties wanting support to revive it or support for a one-off event can contact the LMU Open Science Center coordinator, <a href="mailto:malika.ihle@lmu.de" class="text-success">Dr. Malika Ihle</a>
+</div>
+
+<div class="container px-0">
+    <h4 class="mb-2" style="border-bottom: none; color: var(--osc-accent);">
+        Get Involved
+    </h4>
+    <p style="line-height: 1.6;" class="mb-3">
+        You can contact <a href="mailto:malika.ihle@lmu.de" class="text-success">
+        Dr. Malika Ihle </a> or subscribe to our mailing list to get reminders or suggest themes. You can also join the <a href="https://www.lmu.de/en/about-lmu/structure/central-university-administration/it-services-division-vi/it-service-desk/central-it-services/lmu-chat-matrix/" class="text-success">LMU Chat</a>, under the Open-Science-Center Team's OSC-hacky-hour channel.
+    </p>
+    <div class="d-flex gap-3 align-items-center flex-wrap justify-content-center mt-3">
+        <a href="https://matrix.to/#/#lmu-open-science-center:matrix.lmu.de#/#lmu-open-science-center:matrix.lmu.de" class="btn btn-primary osc-init-contact-btn">
+            <img src="images/matrix-logo-no-background.png" style="height:25px;">
+                OSC Matrix
+        </a>
+        <a href="https://lists.lrz.de/mailman/listinfo/hackyhour" class="btn btn-outline-primary osc-init-contact-btn" rel="noopener">
+            <i class="bi bi-bi-box-arrow-up-right"></i> 
+            Join Mailing list
+        </a>
+    </div>
+</div>
+```

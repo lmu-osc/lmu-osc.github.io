@@ -1,0 +1,283 @@
+---
+title: "Research Cycle Handbook"
+page-navigation: false
+toc: false
+css: research-cycle-handbook/handbook-styles.css
+format:
+  html:
+    page-layout: article
+    anchor-sections: false
+---
+
+```{=html}
+<!-- what and who section -->
+<div class="row g-3 mb-4">
+  <div class="col-md-6">
+    <div class="card bg-light-subtle border shadow-sm h-100 rounded-3 p-2">
+      <div class="card-body">
+        <div class="d-flex align-items-center gap-3 mb-3">
+          <span class="d-flex align-items-center justify-content-center rounded-3 flex-shrink-0"
+                style="width:44px; height:44px; background-color:#eaf5ee;">
+            <i class="bi bi-book" style="font-size:1.2rem; color:#00883A;"></i>
+          </span>
+          <h5 class="card-title fw-semibold mb-0" style="color:#00883A;">What is this handbook?</h5>
+        </div>
+        <p class="card-text" style="line-height:1.75; text-align:justify;">
+          This open research cycle handbook provides <strong class="text-black">detailed practical guidance for making research open, responsible, and reproducible by design</strong>. It covers the full research life cycle, from formulating questions and preregistering studies to publishing articles, data, and code. It links to our self-paced tutorials, LMU support services, and essential tools to support open research in everyday practice.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="card bg-light-subtle border shadow-sm h-100 rounded-3 p-2">
+      <div class="card-body">
+        <div class="d-flex align-items-center gap-3 mb-3">
+          <span class="d-flex align-items-center justify-content-center rounded-3 flex-shrink-0"
+                style="width:44px; height:44px; background-color:#eaf5ee;">
+            <i class="bi bi-people" style="font-size:1.2rem; color:#00883A;"></i>
+          </span>
+          <h5 class="card-title fw-semibold mb-0" style="color:#00883A;">Who is it for?</h5>
+        </div>
+        <p class="card-text" style="line-height:1.75;text-align:justify;">
+          This manual can be used by <strong class="text-black">individual researchers in any scientific field </strong> but is primarily designed to be adapted and adopted by  <strong class="text-black">research groups</strong> as a whole. Each section outlines concrete actions for ongoing projects and concludes with a team checkpoint.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- navigate orc section -->
+<div class="row g-3 mb-4">
+  <div class="col-12">
+    <div class="card bg-light-subtle border shadow-sm rounded-3 p-2">
+      <div class="card-body">
+        <div class="d-flex align-items-center justify-content-center gap-3 mb-3">
+          <span class="d-flex align-items-center justify-content-center rounded-3 flex-shrink-0"
+          style="width:44px; height:44px; background-color:#eaf5ee;">
+            <i class="bi bi-arrow-clockwise" style="font-size:1.2rem; color:#00883A;"></i>
+          </span>
+          <h5 class="card-title fw-semibold mb-0" style="color:#00883A;">Navigate our open research cycle handbook</h5>
+        </div>
+        <div class="d-flex justify-content-center">
+          {{< include images/os-cycle.svg >}}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- how to build section -->
+<div class="row g-3 mb-4">
+  <div class="col-12">
+    <div class="card bg-light-subtle border shadow-sm rounded-3 p-2">
+      <div class="card-body">
+        <div class="d-flex align-items-center  justify-content-center gap-3 mb-3">
+          <span class="d-flex align-items-center justify-content-center rounded-3 flex-shrink-0"
+                style="width:44px; height:44px; background-color:#eaf5ee;">
+            <i class="bi bi-tools" style="font-size:1.2rem; color:#00883A;"></i>
+          </span>
+          <h5 class="card-title fw-semibold mb-0" style="color:#00883A;">How to build your own lab handbook?</h5>
+        </div>
+        <div class="justify-content-center" style="line-height:1.75;">
+        Based on our material, it is easy to build a tailored research practice handbook for your own research group (see <a href="https://doi.org/10.5281/zenodo.16262260">example</a>):
+        <ul>
+          <li>review the core discipline-agnostic sections by clicking on one of the quadrants in the figure above, </li>
+          <li>consult discipline-specific guidance (in development - ETA end 2026)<!--to link to Reema's expert pages when built - with the design of internal link button? -->, </li>
+          <li>tailor the <a href="https://doi.org/10.5281/zenodo.15630229">overview checklist figure</a> <!-- create/share an editable file, e.g. pptx on zenodo-->, </li>
+          <li>use our lab-handbook template as a starting place (in development - ETA end 2026) <!-- should this be a quarto website or something easier to edit? --></li>
+        </ul>
+        You can request a consultation with the LMU Open Science Center: ranging from a 1h one-on-one consultation up to a 6-month training and consultation program for your entire research group (see <a href="#about-orc-project">About this Project</a> below).
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--About this project-->
+<details id="about-orc-project" class="my-4 mx-2 rounded-3 shadow-sm bg-light-subtle border">
+  <summary><h5 class="text-center fw-semibold mb-0">About this project</h5></summary>
+  <div class="p-3 pt-0" style="line-height:1.75;">
+    <p>
+      This work is part of the <strong class="text-black">“Switch-to-Open Program”</strong> (SwOP) funded by the 
+      <a href="https://www.volkswagenstiftung.de/en">Volkswagen Foundation</a>.
+    </p>
+    <p>
+      This program consists of a <strong class="text-black">6-month structured development program for research groups</strong>, 
+      centered on the co-creation of a tailored research practices lab handbook and culminating in a departmental seminar to facilitate adoption by other groups.
+    </p>
+    <p>This program is designed to:</p>
+      <ul>
+        <li>improve workflow efficiency and reproducibility by establishing clear, standardized procedures and documentation</li>
+        <li>facilitate onboarding and collaboration through a shared, practice-oriented lab handbook</li>
+        <li>
+          support compliance with FAIR and Open Science requirements 
+          (see e.g. 
+          <a href="https://cms-cdn.lmu.de/media/contenthub/amtliche-veroeffentlichungen/gwp-ordnung.pdf">
+            LMU good research practice guidelines
+          </a>)
+          and enable researchers to meet evolving recruitment and funding expectations
+        </li>
+      </ul>
+    <h5 class="fw-semibold">Interested in entering the Switch-to-Open Program (SwOP) with your research group?</h5>
+    <a href="mailto:Malika.ihle@lmu.de?subject=Interest%20in%20the%20Switch-to-Open%20Program"
+       class="btn btn-primary btn-pop my-2">
+      Contact us
+    </a>
+    <h5 class="fw-semibold">How to cite our handbook</h5>
+    <p>
+      Our handbook and other material are licensed 
+      <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">CC-BY-SA 4.0</a>.
+      Please feel free to reuse, adapt, and share openly by citing 
+      <br>
+      <strong class="text-black">
+      Ihle Malika, Gupta Reema, Schönbrodt Felix, April 2026, Open Research Cycle Handbook <a href="https://lmu-osc.github.io/training/research-cycle-handbook.html">https://lmu-osc.github.io/training/research-cycle-handbook.html</a> CC-BY-SA 4.0 LMU Open Science Center</strong>
+    </p>
+    <h5 class="fw-semibold">Acknowledgements</h5>
+    <p>
+      The following people contributed to the writing and revisions of this handbook: Alberto Villagran Asiares, Anja Betz, Pat Callahan, Sara Lil Middleton, Sarah Von Grebmer Zu Wolfsthurn.  
+    </p>
+  </div>
+</details>
+<!-- Modals for Pop-out Content -->
+<!-- Wrapped in raw HTML block to prevent rendering issues -->
+<!-- Phase 1 Modal -->
+<div class="modal fade" id="modalPhase1" tabindex="-1" aria-labelledby="modalPhase1Label" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalPhase1Label">
+          <i class="bi bi-clipboard-check me-2"></i> 1. Plan & Design
+        </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <ul>
+          <li>Explore / reuse research outputs</li>
+          <li>Check legal frameworks</li>
+          <li>Write Research Data Management (RDM) plan</li>
+          <li>Design study and plan statistical analyses</li>
+        </ul>
+        <hr>
+        <p><strong>Team checkpoints:</strong> study plan presentation + preregistration submission</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a href="/training/research-cycle-handbook/01-plan-and-design.qmd" class="btn btn-primary">Go to Handbook - Plan & Design</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Phase 2 Modal -->
+<div class="modal fade" id="modalPhase2" tabindex="-1" aria-labelledby="modalPhase2Label" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalPhase2Label">
+          <i class="bi bi-hdd-network me-2"></i> 2. Collect & Manage
+        </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <ul>
+          <li>Collect data following standard protocols</li>
+          <li>Manage data efficiently, and FAIR-ly by design</li>
+          <li>Anonymise data</li>
+          <li>Control data quality</li>
+        </ul>
+        <hr>
+        <p><strong>Team checkpoint:</strong> data quality validation meeting</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a href="/training/research-cycle-handbook/02-collect-and-manage.qmd" class="btn btn-primary">Go to Handbook - Collect & Manage</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Phase 3 Modal -->
+<div class="modal fade" id="modalPhase3" tabindex="-1" aria-labelledby="modalPhase3Label" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalPhase3Label">
+          <i class="bi bi-graph-up me-2"></i> 3. Analyze & Collaborate
+        </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <ul>
+          <li>Process and analyze data reproducibly</li>
+          <li>Write reproducible reports and follow reporting guidelines</li>
+        </ul>
+        <hr>
+        <p><strong>Team checkpoints:</strong> repository & code peer-review + result presentation</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a href="/training/research-cycle-handbook/03-analyze-and-collaborate.qmd" class="btn btn-primary">Go to Handbook - Analyze & Collaborate</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Phase 4 Modal -->
+<div class="modal fade" id="modalPhase4" tabindex="-1" aria-labelledby="modalPhase4Label" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalPhase4Label">
+          <i class="bi bi-share me-2"></i> 4. Preserve & Share
+        </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <ul>
+          <li>Publish data and/or metadata and data use agreement</li>
+          <li>Publish code (with real, simulated or synthetic data)</li>
+          <li>Deposit a preprint</li>
+        </ul>
+        <p>each with contributorships, persistent identifiers, license.</p>
+        <hr>
+        <p><strong>Team checkpoint:</strong> manuscript submission with DOIs for all materials</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a href="/training/research-cycle-handbook/04-preserve-and-share.qmd" class="btn btn-primary">Go to Handbook - Preserve & Share</a>
+      </div>
+    </div>
+  </div>
+</div>
+```
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+
+  function triggerModal(phaseId) {
+    var modalId = '#modalPhase' + phaseId.split('-')[1];
+    var modalEl = document.querySelector(modalId);
+    if (modalEl) {
+      var modal = new bootstrap.Modal(modalEl);
+      modal.show();
+    }
+  }
+
+  ['phase-1', 'phase-2', 'phase-3', 'phase-4'].forEach(function(id) {
+    var el = document.getElementById(id);
+    if (!el) return;
+
+    el.addEventListener('click', function(e) {
+      e.preventDefault();      // 🚫 stop DOI navigation
+      e.stopPropagation();     // 🚫 stop bubbling to <a> in SVG
+      triggerModal(id);
+    });
+
+    el.addEventListener('keydown', function(e) {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        e.stopPropagation();
+        triggerModal(id);
+      }
+    });
+  });
+});
+</script>
+

@@ -1,0 +1,957 @@
+---
+title: "3. Analyze & Collaborate"
+description: "Create reproducible analyses, document workflows, collaborate effectively, and ensure computational reproducibility"
+phase_order: 3
+sidebar: training
+number-depth: 4
+number-sections: true
+number-offset: [0,3,0]
+page-layout: full
+css: handbook-styles.css
+toc: false
+title-block-style: none
+---
+
+```{=html}
+<div class="orc-phase-hero phase-3 container shadow rounded-4">
+<div class="row align-items-center p-3 p-lg-4 mt-4 mb-3">
+<!-- Cycle image -->
+<div class="col-12 col-lg-3 orc-hero-cycle text-center phase-3">
+{{< include ../images/os-cycle.svg >}}
+</div>
+<!-- Text content -->
+<div class="col-12 col-lg-9">
+<p class="lead fw-bold mb-3 fs-4 text-muted">Create reproducible analyses and collaborate effectively</p>
+<!-- Pills -->
+<div class="d-flex flex-wrap gap-3 mb-3">
+<span class="badge rounded-5 fs-6 fw-normal text-wrap orc-hero-pills phase-3"><i class="bi bi-check2-circle me-1"></i> Readable Code</span>
+<span class="badge rounded-5 fs-6 fw-normal text-wrap orc-hero-pills phase-3 "><i class="bi bi-check2-circle me-1"></i> Version Control</span>
+<span class="badge rounded-5 fs-6 fw-normal text-wrap orc-hero-pills phase-3 "><i class="bi bi-check2-circle me-1"></i> Reproducible Computational Environment</span>
+<span class="badge rounded-5 fs-6 fw-normal text-wrap orc-hero-pills phase-3 "><i class="bi bi-check2-circle me-1"></i> Reproducible Manuscript</span>
+</div>
+<div class="orc-hero-checkpoint phase-3 badge rounded-5 d-inline-flex align-items-center justify-content-center text-wrap white-space-normal fs-6 fw-normal">
+<i class="bi bi-people-fill me-2"></i>
+Checkpoints: Repository & Code Peer-Review + Result Presentation
+</div>
+</div>
+</div>
+</div>
+```
+
+<details class="orc-details-panel">
+<summary><i class="bi bi-gear-wide-connected"></i> 
+
+### Data Processing & Analysis {#sec-data-processing-analysis}
+
+</summary>
+
+Data processing and analysis should be reproducible – independent of which software, programming language, or operating system you use. 
+This is best achieved by choosing automated **script-based workflows** (over manual point-and-click procedures), and supported by **adequate documentation** and shared code that allows others to regenerate results. 
+Because analysis scripts are run repeatedly, due to iterative development through corrections and refinements, automation is **essential for both reproducibility and efficiency**. 
+This section outlines a recommended workflow for R users.
+
+::: {.panel-tabset}
+
+#### 3.1.1. Programming
+
+- **Create a self-contained project folder**. Include data, code, documentation, and outputs in a single structured environment, ensuring the project remains understandable, reproducible, and portable across systems and collaborators. If you use the free and open source software RStudio to manage your R project, your project directory (or folder) should contain a .Rproj file (see [R tutorial](https://lmu-osc.github.io/introduction-to-R/)). **Use relative paths** (i.e. `“./subfolder”`, where `.` represents the root of your .Rproj directory) or the library `here`, so the project stays portable to another environment
+- **Use a standard folder structure**. Your code repository should include a standard folder structure that make sense for your type of research, ideally shared across your team members. You can for instance use our [research project template](https://github.com/lmu-osc/research-project-template). 
+- **Stop clicking, start coding**. Automatize all possible steps, including data acquisition (see [2.1. Data Collection](02-collect-and-manage.qmd#sec-data-collection){.mark}), data processing and transformation, data analyses, data visualization, and results reporting (see [3.2. Reporting Results](#sec-reproducible-reporting){.mark})
+- **Structure, comment, and standardize your scripts.** R scripts themselves should follow current standards to increase their readability (see [Readable Code Lecture](https://lmu-osc.github.io/training/reproducible-processes/readable-code.html)). Use meaningful names for variables, functions, and scripts. Add comments to your code explaining _why_ you made a decision, any known limitations to your code, and citations of methods. **Do not include sensitive information such as credentials or name of excluded patient as comments in your code!**
+    - **Define your own functions** rather than copy pasting pieces of code which makes it hard to maintain error-free. Functions are ‘self-contained’ sets of commands that accomplish a specific task. They usually ‘take in’ data or parameter values (these inputs are called ‘function arguments’), process them, and ‘return’ a result. See our [R tutorial](https://lmu-osc.github.io/introduction-to-R/) and [data simulation tutorial](https://lmu-osc.github.io/Introduction-Simulations-in-R/) for examples.
+    - **Set seeds for random processes** to enable exact replication. A seed is a number used to initialize a pseudorandom number generator algorithm. It serves as the starting point for a sequence of numbers that appear random but are actually produced by a deterministic, fixed algorithm. See e.g. our [data simulation tutorial](https://lmu-osc.github.io/Introduction-Simulations-in-R/) for examples.
+    - **Follow accessibility standards when generating outputs** (e.g. use colorblind-friendly color scheme for figures)
+    - **Follow a style guide** to increase readability. Use automated styling tools (e.g. `styler`, `lintR`).
+- **Use LRZ Compute Cloud for data-intensive analyses**. [LRZ Supercomputing](https://www.lrz.de/en/technologies/supercomputing) provide virtual machines, high-performance computing, and storage to researchers of LMU Munich.
+
+
+::: {.container .my-4}
+
+<h4 class="fs-5"><i class="bi bi-mortarboard"></i> LEARN MORE</h4>
+
+::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
+
+<!-- card -->
+::: {.col}
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+    <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+        <div class="d-flex gap-2">
+            <div class="orc-card-tool-icon p-2 rounded">
+                <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+            </div>
+            <div class="orc-card-tool-icon p-2 rounded">
+                <img src="/assets/img/Rlogo.svg" class="img-fluid" alt="R programming language logo">
+            </div>
+        </div>
+        <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
+    </div>
+    <h4 class="card-title">R Tutorial</h4>
+    <p class="card-text">Process your data reproducibly in R. (3h)</p>
+    <a href="https://lmu-osc.github.io/introduction-to-R/" class="stretched-link" target="_blank" rel="noopener"> </a>
+</div>
+```
+:::
+
+<!-- card -->
+::: {.col}
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+    <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+        <div class="d-flex gap-2">
+            <div class="orc-card-tool-icon p-2 rounded">
+                <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+            </div>
+        </div>
+        <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
+    </div>
+<h4 class="card-title">Data simulation in R</h4>
+<p class="card-text">Set seeds and define functions to generate random data (2h)</p>
+<a href="https://lmu-osc.github.io/Introduction-Simulations-in-R/" class="stretched-link" target="_blank" rel="noopener"></a>
+</div>
+```
+:::
+
+
+<!-- card -->
+::: {.col}
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+    <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+        <div class="d-flex gap-2">
+            <div class="orc-card-tool-icon p-2 rounded">
+                <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+            </div>
+        </div>
+        <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Lecture</span>
+    </div>
+<h4 class="card-title">Readable code lecture</h4>
+<p class="card-text">Tips to write clear, understandable, and maintainable code. (1h)</p>
+<a href="https://lmu-osc.github.io/training/reproducible-processes/readable-code.html" class="stretched-link" target="_blank" rel="noopener"> </a>
+</div>
+```
+:::
+
+
+:::
+
+<h4 class="fs-5 mt-3"><i class="bi bi-tools"></i> TOOLS & RESOURCES</h4>
+
+::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
+
+<!-- card -->
+::: {.col}
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+    <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+        <div class="d-flex gap-2">
+            <div class="orc-card-tool-icon p-2 rounded">
+                <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+            </div>
+            <div class="orc-card-tool-icon p-2 rounded">
+                <img src="/assets/img/github.svg"  class="img-fluid" alt="GitHub logo">
+            </div>
+        </div>
+        <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tool</span>
+    </div>
+<h4 class="card-title">Research Project Template</h4>
+<p class="card-text">Project folder separating raw & processed data, code, and outputs.</p>
+<a href="https://github.com/lmu-osc/research-project-template" class="stretched-link" target="_blank" rel="noopener"></a>
+</div>
+```
+:::
+
+<!-- card -->
+::: {.col}
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+    <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+        <div class="d-flex gap-2">
+            <div class="orc-card-tool-icon p-2 rounded">
+                <img src="/assets/img/lrz-logo.png" class="img-fluid" alt="LRZ logo">
+            </div>
+        </div>
+        <span class="badge rounded-5 bg-success-subtle text-success align-self-start">Supported at LMU</span>
+    </div>
+<h4 class="card-title">LRZ Supercomputing</h4>
+<p class="card-text">Virtual machines and HPC for LMU Munich</p>
+<a href="https://www.lrz.de/en/technologies/supercomputing" class="stretched-link" target="_blank" rel="noopener"> </a>
+</div>
+```
+:::
+
+:::
+
+:::
+
+
+#### 3.1.2. Version Control
+
+Version control tracks changes to files over time. You can see what changed, when, and why. You can revert to previous versions. Collaborators can work without overwriting each other.
+
+<br>
+
+In a version controlled workflow, you back up your local Git repositories on the cloud-based platforms GitHub or LRZ GitLab and share access to the online version of your repositories with your collaborators.
+
+<br>
+
+- **Learn to create git branches to collaborate on the same piece of code in a unique repository.** i.e. temporary copies where you can work without breaking the original source code, which you later merge back to the main branch (see [Advanced Git tutorial](https://lmu-osc.github.io/training/reproducible-processes/advanced-git.html)). 
+
+- **Maintain efficient communication to coordinate collaborative work.** GitHub or GitLab facilitate collaboration through "issues" (a precise description of something to fix), "discussions" (asynchronous thinking through figuring out how to resolve a problem), and can still very well resolve "conflicts" (i.e. collaborators wanting to merge changes on the exact same line of script). To complement this, LMU Munich offers [LMU chat (Matrix)](https://www.lmu.de/de/die-lmu/struktur/zentrale-universitaetsverwaltung/informations-und-kommunikationstechnik-dezernat-vi/it-servicedesk/zentrale-it-angebote/lmu-chat-matrix/), a secured open source chat service with all LMU members on which you can also invite external collaborators. 
+
+<br>
+
+:::{.callout-note} 
+## Difference between Git, GitHub and GitLab 
+<!-- copied to 2.2.6 manually -->
+- **Git** is a version control system that tracks changes in text files (e.g. CSV, plain text, R, Python). The Git software and your Git repositories should be, respectively, installed and located in your local environment (i.e. on your computer, not on a drive, see [Git tutorial](https://lmu-osc.github.io/Introduction-RStudio-Git-GitHub/)).   
+- **GitHub** is the most popular, free but proprietary and US-based cloud-based platform for software development with Git, providing collaboration features like pull requests and issues (see [GitHub tutorial](https://lmu-osc.github.io/Collaborative-RStudio-GitHub/)). **You should not have any sensitive information on GitHub even in a private repository.**
+- **LRZ GitLab** is a cloud-based hosting platform that works exactly the same as GitHub but is free and open source and is installed on the LRZ servers for LMU Munich and can therefore be considered secure when the repository is private. 
+
+While your LRZ GitLab account is associated with your LMU Munich affiliation, your GitHub account can be associated with your private email, be included in your CV, and be used for public sharing of your data and code (see [4. Preserve & Share](04-preserve-and-share.qmd){.mark}). 
+
+In a version controlled workflow, you back up your local Git repositories on either GitHub or LRZ GitLab through a secure SSH connection (see GitHub tutorial) and share access to your repositories with your collaborators through the cloud-based platform GitHub or LRZ GitLab.
+:::
+
+::: {.callout-important}
+If you work with **sensitive data**, you must not include the raw or processed data in the version-controlled repository that will end up being shared publicly. 
+
+<br>
+
+Instead, explicitly **exclude the data directory using the .gitignore file from the start**, **or, at the time of sharing, create a new local repository that contains all project files except the data**.
+
+<br>
+
+Importantly, if data are removed from an existing repository, they may still remain accessible in the repository’s history, since previous states of the project can be restored. If sensitive data are accidentally committed and pushed, it is possible to [rewrite the repository history](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository) to remove them retrospectively. However, this process is complex and error-prone, so it is best avoided by ensuring that sensitive data are excluded from version control from the outset.
+:::
+
+:::{.callout-tip}
+## Tips for research groups:
+**Create a LRZ GitLab "organization" for the team.**  This allows repositories, permissions, and project resources to be managed centrally rather than under individual accounts. This ensures continuity when team members leave, as ownership can be transferred to e.g. the PI and other administrators of the organization. 
+:::
+
+
+::: {.container .my-4 }
+
+<h4 class="fs-5"><i class="bi bi-mortarboard"></i> LEARN MORE</h4>
+
+<!-- row for Learn More section -->
+::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
+
+<!-- card -->
+::: {.col}
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+  <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+    <div class="d-flex gap-2">
+      <div class="orc-card-tool-icon p-2 rounded">
+        <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+      </div>
+      <div class="orc-card-tool-icon p-2 rounded">
+        <img src="/assets/img/git-icon-logo.svg" class="img-fluid" alt="Git logo">
+      </div>
+    </div>
+    <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
+  </div>
+<h4 class="card-title">Git Tutorial</h4>
+<p class="card-text">Use version control system Git from within RStudio. (2h)</p>
+<a href="https://lmu-osc.github.io/Introduction-RStudio-Git-GitHub/" class="stretched-link" target="_blank" rel="noopener"> </a>
+</div>
+```
+:::
+
+<!-- card -->
+::: {.col}
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+  <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+    <div class="d-flex gap-2">
+      <div class="orc-card-tool-icon p-2 rounded">
+        <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+      </div>
+      <div class="orc-card-tool-icon p-2 rounded">
+        <img src="/assets/img/github.svg" class="img-fluid" alt="GitHub logo">
+      </div>
+    </div>
+    <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
+  </div>
+<h4 class="card-title">GitHub Tutorial</h4>
+<p class="card-text">Collaborative coding with GitHub and RStudio (1h)</p>
+<a href="https://lmu-osc.github.io/Collaborative-RStudio-GitHub/" class="stretched-link" target="_blank" rel="noopener"> </a>
+</div>
+```
+:::
+
+:::
+
+<h4 class="fs-5 mt-3"><i class="bi bi-tools"></i> TOOLS & RESOURCES</h4>
+<!-- row for Tools & Resources section -->
+
+::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
+
+<!-- card -->
+::: {.col}
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+  <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+    <div class="d-flex gap-2">
+      <div class="orc-card-tool-icon p-2 rounded">
+        <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+      </div>
+      <div class="orc-card-tool-icon p-2 rounded">
+        <img src="/assets/img/gitlab.svg" class="img-fluid" alt="GitLab logo">
+      </div>
+    </div>
+    <span class="badge rounded-5 bg-success-subtle text-success align-self-start">Supported at LMU</span>
+  </div>
+<h4 class="card-title">LRZ Gitlab</h4>
+<p class="card-text">Institutional Git hosting for LMU Munich.</p>
+<a href="https://gitlab.lrz.de/" class="stretched-link" target="_blank" rel="noopener"></a>
+</div>
+```
+:::
+
+<!-- card -->
+::: {.col}
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+  <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+    <div class="d-flex gap-2">
+      <div class="orc-card-tool-icon p-2 rounded">
+        <img src="https://cms-cdn.lmu.de/assets/img/favicon.ico" class="img-fluid" alt="LMU OSC logo">
+      </div>
+      <div class="orc-card-tool-icon p-2 rounded">
+        <img src="/assets/img/matrix.svg" class="img-fluid" alt="Matrix logo">
+      </div>
+    </div>
+    <span class="badge rounded-5 bg-success-subtle text-success align-self-start">Supported at LMU</span>
+  </div>
+<h4 class="card-title">LMU Chat (Matrix)</h4>
+<p class="card-text">Institutional open source chat service for LMU Munich.</p>
+<a href="https://www.lmu.de/en/about-lmu/structure/central-university-administration/it-services-division/it-service-desk/central-it-services/lmu-chat-matrix/" class="stretched-link" target="_blank" rel="noopener"></a>
+</div>
+```
+:::
+
+:::
+
+:::
+
+
+#### 3.1.3. Computational Environment Management
+
+Manage your computational environment by explicitly recording the software, package versions, and dependencies required for your analyses, ensuring results can be reproduced across systems and over time. Tools such as packages managers (e.g. [Renv](https://rstudio.github.io/renv/) for R packages, [Conda](https://anaconda.org/channels/anaconda/packages/conda/overview) for Python packages) or broader containers (e.g. [Docker](https://www.docker.com/) or [Binder](https://mybinder.org/)) help stabilize workflows and prevent inconsistencies caused by packages or software updates.
+
+<br>
+
+For a R project repository:
+
+- **Activate Renv to keep track of all packages versions** (see our [renv tutorial](https://lmu-osc.github.io/introduction-to-renv/)). This way, you or someone else can  reproduce your results on another computer or at a later time using the same R packages versions.
+
+Before publishing your project (see [4. Preserve & share](04-preserve-and-share.qmd){.mark}):
+
+- **Record your dependencies** in your README file for possible reconstruction with [repo2docker](https://repo2docker.readthedocs.io/en/latest/) or binder (see [Code Publishing tutorial](https://lmu-osc.github.io/code-publishing/make-readme.html)).
+
+
+
+
+::: {.container .my-4 }
+
+<h4 class="fs-5"><i class="bi bi-mortarboard"></i> LEARN MORE</h4>
+
+<!-- row for Learn More section -->
+::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
+
+<!-- card -->
+::: {.col}
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+  <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+    <div class="d-flex gap-2">
+      <div class="orc-card-tool-icon p-2 rounded">
+        <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+      </div>
+      <div class="orc-card-tool-icon p-2 rounded">
+        <img src="/assets/img/renv.svg" class="img-fluid" alt="R package 'renv' icon">
+      </div>
+    </div>
+    <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
+  </div>
+<h4 class="card-title">Renv Tutorial</h4>
+<p class="card-text"> Manage the version of your R packages (1h)</p>
+<a href="https://lmu-osc.github.io/introduction-to-renv/" class="stretched-link" target="_blank" rel="noopener"> </a>
+</div>
+```
+:::
+
+<!-- card -->
+::: {.col}
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+  <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+    <div class="d-flex gap-2">
+      <div class="orc-card-tool-icon p-2 rounded">
+        <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+      </div>
+      <div class="orc-card-tool-icon p-2 rounded">
+        <img src="/assets/img/zenodo-icon-blue.svg" class="img-fluid" alt="Zenodo icon">
+      </div>
+    </div>
+    <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
+  </div>
+<h4 class="card-title">Code Publishing Tutorial</h4>
+<p class="card-text">Publish your reproducible project on Zenodo (2h)</p>
+<a href="https://lmu-osc.github.io/code-publishing/" class="stretched-link" target="_blank" rel="noopener"> </a>
+</div>
+```
+:::
+
+:::
+
+<h4 class="fs-5 mt-3"><i class="bi bi-tools"></i> TOOLS & RESOURCES</h4>
+<!-- row for Tools & Resources section -->
+
+::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
+
+<!-- card -->
+::: {.col}
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+  <div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
+    <img src="/assets/img/mybinder-favicon.png" class="img-fluid" alt="Binder logo">
+  </div>
+<h4 class="card-title">Binder</h4>
+<p class="card-text">Create online executable environments.</p>
+<a href="https://mybinder.org/" class="stretched-link" target="_blank" rel="noopener"> </a>
+</div>
+```
+:::
+
+<!-- card -->
+::: {.col}
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+  <div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
+    <img src="/assets/img/docker.svg" class="img-fluid" alt="Docker logo">
+  </div>
+<h4 class="card-title">Docker</h4>
+<p class="card-text">Containerization for full reproducibility.</p>
+<a href="https://www.docker.com/" class="stretched-link" target="_blank" rel="noopener"> </a>
+</div>
+```
+:::
+
+<!-- card -->
+::: {.col}
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+  <div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
+    <img src="/assets/img/repo2docker.svg" class="img-fluid" alt="repo2docker logo">
+  </div>
+<h4 class="card-title">repo2docker</h4>
+<p class="card-text">Build and run user environment containers.</p>
+<a href="https://repo2docker.readthedocs.io/en/latest/ " class="stretched-link" target="_blank" rel="noopener"> </a>
+</div>
+```
+:::
+
+:::
+
+:::
+
+
+
+#### 3.1.4. Documentation
+
+As with all documentation, your project repository’s documentation should be written early - initially for your near-future self to support efficient re-engagement after interruptions, then revised for internal team review, and ultimately expanded and refined for public sharing (see [4.2. Open Source Code](04-preserve-and-share.qmd#sec-open-source-code){.mark}).  
+
+<br>
+
+- **Create a README (e.g. a .md or .txt file) early and update it as you go.** Your README is the entry point to your project. A good README answers the essential questions: who created the script, what it contains, how they relate to other scripts and in which order scripts should be run, what the dependencies of the project are, how to obtain/access the input data, whether the code can be reused. 
+- **Annotate your code explaining _why_ you made a decision.** All parameter values used as input for a function, or other decisions, should be justified minimally as comments in your code to later be included in your manuscript. **Do not include sensitive information such as credentials or name of excluded patient as comments in your code!**
+- **Update your data dictionary and README files.** Your data documentation should be updated to include all data exclusion, change in range of possible values, etc. (see [2.2.4. Documentation](02-collect-and-manage.qmd#sec-data-management){.mark}).
+
+
+Example README to allow team members to review your code:
+```markdown
+# Analysis of Treatment Effects
+
+## Requirements
+- R version 4.3+
+- Packages listed in renv.lock
+
+## Running the Analysis
+1. Install dependencies: `renv::restore()`
+2. Run scripts in order: 01_preprocessing.R, 02_analysis.R
+```
+
+
+::: {.container .my-4 }
+
+<h4 class="fs-5"><i class="bi bi-mortarboard"></i> LEARN MORE</h4>
+
+<!-- row for Learn More section -->
+::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
+
+<!-- card -->
+::: {.col}
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+    <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+    <div class="d-flex gap-2">
+        <div class="orc-card-tool-icon p-2 rounded">
+        <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+        </div>
+    </div>
+    <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Lecture</span>
+    </div>
+    <h4 class="card-title">Readable code lecture</h4> 
+    <p class="card-text">Tips to write clear, understandable, and maintainable code.(1h)</p>
+    <a href="https://lmu-osc.github.io/training/reproducible-processes/readable-code.html" class="stretched-link" target="_blank" rel="noopener"> </a>
+</div>
+```
+:::
+
+<!-- card  -->
+::: {.col}
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+  <div class="d-flex gap-2">
+    <div class="orc-card-tool-icon p-2 rounded">
+      <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+    </div>
+  </div>
+  <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
+</div>
+<h4 class="card-title">Data Documentation & Validation</h4>
+<p class="card-text">Create validation rules and automated checks for your research data. (1h)</p>
+<a href="https://lmu-osc.github.io/data-documentation-validation-R/" class="stretched-link" target="_blank" rel="noopener"> </a>
+</div>
+```
+:::
+
+<!-- card -->
+::: {.col}
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+  <div class="d-flex gap-2">
+    <div class="orc-card-tool-icon p-2 rounded">
+      <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+    </div>
+    <div class="orc-card-tool-icon p-2 rounded">
+        <img src="/assets/img/zenodo-icon-blue.svg" class="img-fluid" alt="Zenodo icon">
+    </div>
+  </div>
+  <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
+</div>
+<h4 class="card-title">Code Publishing Tutorial</h4>
+<p class="card-text">Publish your reproducible project on Zenodo (2h)</p>
+<a href="https://lmu-osc.github.io/code-publishing/" class="stretched-link" target="_blank" rel="noopener"> </a>
+</div>
+```
+:::
+
+
+:::
+
+:::
+
+
+</details>
+
+
+<details class="orc-details-panel">
+<summary><i class="bi bi-file-earmark-richtext"></i> 
+
+### Reporting Results {#sec-reporting-results}
+
+</summary>
+
+Your results should be **computationally reproducible** to ensure that the analysis can be independently verified. They should also be **reported comprehensively and in line with reporting guidelines** to facilitate statistical checks and future meta-analyses.
+
+::: {.panel-tabset}
+
+#### 3.2.1. Results reproducibility 
+
+A practical way to make results and analysis decisions transparent and traceable is to use **literate programming**, which **combines narrative text** explaining the logic of the analysis with **executable code** that performs data processing and statistical procedures. **When the document is compiled, outputs such as tables, figures, and references are generated directly from the code and updated automatically whenever the code changes, ensuring that the reported methods and results remain consistent with the analysis.** This eliminates repeated copy-and-paste and reduces the risk of uncertainty about which version of, for example, a figure is actually included in the manuscript.
+
+<br>
+
+For users of R, Python, and Julia, **Quarto** has become the standard tool for creating reproducible reports, superseding R Markdown and enabling **rendering to formats such as HTML, PDF, and Microsoft Word** (see our [Quarto tutorial](https://lmu-osc.github.io/introduction-to-Quarto/)).
+
+<br>
+
+<h5 class="fs-5 no-anchor">Reproducible Analysis Report: The Minimum Standard for Computational Reproducibility</h5>
+
+<br>
+
+- **Create an analysis report with Quarto.** To make your results reproducible, you should provide the analysis code that creates the results of the manuscript with explanations for each of the steps. Quarto is an ideal tool for this (see [Quarto tutorial](https://lmu-osc.github.io/introduction-to-Quarto/)). Your analysis report should contain your research question, data loading instructions, preprocessing steps, statistical procedures, tables and figures, session info and software versions (in the report itself or in your README).
+
+This will facilitate your own revisions, code-review by your team, **reproducibility checks** that some journals conduct as part of peer-review, and verification of results reproducibility by other researchers. The code repository can be published with simulated, synthetic, or real data, depending on the project, together with the respective article (see [4.2. Open Source Code](04-preserve-and-share.qmd#sec-open-source-code){.mark}).
+
+<br>
+
+Creating a reproducible analysis report in Quarto currently represents **state-of-the-art practice for demonstrating the computational reproducibility of a study**, and we recommend adopting this approach as a minimum standard.
+
+<br>
+
+Quarto can also be used to generate additional reporting outputs, such as manuscripts, presentations, and websites, in a fully reproducible manner. However, adopting a fully **reproducible workflow for all outputs will require additional coordination and time**, particularly when working with collaborators who use different tools or workflows.
+
+<br>
+
+<h5 class="fs-5 no-anchor">Reproducible Manuscript: The Ultimate Reproducible Report</h5>
+
+If you do not want to break the reproducibility chain by copy and pasting new results, tables, and figures into e.g. a Word document, you can write your entire manuscript in Quarto.
+
+<br>
+
+- **Include bibliographic references in your Quarto document**. 
+You can directly source .bib files into your Quarto document or use the open source reference management software Zotero integrated in RStudio to cite articles and have them automatically formatted in any journal standards (see [Quarto tutorial](https://lmu-osc.github.io/introduction-to-Quarto/) and [Zotero tutorial](https://lmu-osc.github.io/introduction-to-zotero/)). 
+
+- **Use a template document for major formatting aspects**. 
+You can use e.g. a Word template to create your output with e.g. specific header and legend formatting. 
+Some journals offer Quarto templates for further formatting requirements (see [list of Quarto extensions](https://quarto.org/docs/extensions/listing-journals.html)). 
+Some journals offer LaTeX or Word templates; you can adapt these by modifying Quarto’s YAML header and markdown content to create your own Quarto template.
+
+- **Adapt your workflow to your collaborators.** Ideally, all your team mates have also adopted the use of Git and GitHub or LRZ GitLab and the use of issues and branches to work collaboratively (see [3.1.2. Version Control](#sec-data-processing-analysis)). A compromise with collaborators who do not use Git is to render your draft manuscript to e.g. Word and share it through cloud-based collaborative document editing e.g. [LRZ Sync & Share](https://syncandshare.lrz.de/login) or [Google Docs](https://docs.google.com/) with collaborators using the suggestion / track changes mode. Then, the lead author transcribes all edits manually, or with the help of e.g. R packages such as `trackdown` or `officer`, and addresses all comments in their quarto version before re-rendering for a second round of revisions, potentially with additional analyses.
+
+<br>
+
+<h5 class="fs-5 no-anchor">Reproducible Presentations & Websites: Further Reproducible Outputs for Outreach</h5>
+
+Using the same Quarto environment, you can also:
+
+<br>
+
+- **Convert your analyses report into a reproducible presentation.** To get feedback on your analyses, you can output a report into a slide presentation with presenter notes. Slides remain dynamically linked to the underlying analyses. Any modification to the data or code automatically propagates to tables, visualizations, and reported results, eliminating inconsistencies between presentation and computation.
+
+- **Create reproducible website to support your research or teaching**. Quarto also enables the creation of reproducible and interactive websites by linking content directly to data, code, and analyses within a unified publishing workflow. Pages, figures, tables, and teaching materials update automatically when the underlying sources change, ensuring consistency across outputs. This approach simplifies maintenance, and allows websites to evolve as living, version-controlled resources rather than static collections of files. Examples of websites, interactive reports and other formats can be explored on the [Quarto Gallery](https://quarto.org/docs/gallery/). This website and our self-paced tutorials are all Quarto websites. 
+
+
+::: {.container .my-4 }
+
+<h4 class="fs-5"><i class="bi bi-mortarboard"></i> LEARN MORE</h4>
+
+<!-- row for Learn More section -->
+::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
+
+<!-- card -->
+::: {.col}
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+  <div class="d-flex gap-2">
+    <div class="orc-card-tool-icon p-2 rounded">
+      <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+    </div>
+    <div class="orc-card-tool-icon p-2 rounded">
+        <img src="/assets/img/quarto-favicon.png" class="img-fluid" alt="Quarto logo">
+    </div>
+  </div>
+  <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
+</div>
+<h4 class="card-title">Quarto Tutorial</h4>
+<p class="card-text">Reproducible documents combining code and narrative (2h)</p>
+<a href="https://lmu-osc.github.io/introduction-to-Quarto/" class="stretched-link" target="_blank" rel="noopener"> </a>
+</div>
+```
+:::
+
+<!-- card -->
+::: {.col}
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+  <div class="d-flex gap-2">
+    <div class="orc-card-tool-icon p-2 rounded">
+      <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+    </div>
+    <div class="orc-card-tool-icon p-2 rounded">
+        <img src="/assets/img/zotero-icon.png" class="img-fluid" alt="Zotero logo">
+    </div>
+  </div>
+  <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
+</div>
+<h4 class="card-title">Introduction to Zotero</h4>
+<p class="card-text">Use a reference manager that integrates to RStudio. (1h)</p>
+<a href="https://lmu-osc.github.io/introduction-to-zotero/" class="stretched-link" target="_blank" rel="noopener"> </a>
+</div>
+```
+:::
+
+
+<!-- card -->
+::: {.col}
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+  <div class="d-flex gap-2">
+    <div class="orc-card-tool-icon p-2 rounded">
+      <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+    </div>
+    <div class="orc-card-tool-icon p-2 rounded">
+    <img src="/assets/img/git-icon-logo.svg" class="img-fluid" alt="Git logo">
+    </div>
+  </div>
+  <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
+</div>
+<h4 class="card-title">Git Tutorial</h4>
+<p class="card-text">Use version control system Git from within RStudio. (2h)</p>
+<a href="https://lmu-osc.github.io/Introduction-RStudio-Git-GitHub/" class="stretched-link" target="_blank" rel="noopener"> </a>
+</div>
+```
+:::
+
+<!-- card -->
+::: {.col}
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+  <div class="d-flex gap-2">
+    <div class="orc-card-tool-icon p-2 rounded">
+      <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+    </div>
+    <div class="orc-card-tool-icon p-2 rounded">
+        <img src="/assets/img/github.svg" class="img-fluid" alt="GitHub logo">
+    </div>
+  </div>
+  <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
+</div>
+<h4 class="card-title">GitHub Tutorial</h4>
+<p class="card-text">Collaborative coding with GitHub and RStudio (1h)</p>
+<a href="https://lmu-osc.github.io/Collaborative-RStudio-GitHub/" class="stretched-link" target="_blank" rel="noopener"> </a>
+</div>
+```
+:::
+
+<!-- card -->
+::: {.col}
+
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
+<img src="/assets/img/git-icon-logo.svg" class="img-fluid" alt="Git logo">
+</div>
+<h4 class="card-title">Advanced Git Tutorial</h4>
+<p class="card-text">Use Git branches and further collaborative features (2h)</p>
+<a href="https://lmu-osc.github.io/training/reproducible-processes/advanced-git.html" class="stretched-link" target="_blank" rel="noopener"> </a>
+</div>
+```
+:::
+
+:::
+
+<h4 class="fs-5 mt-3"><i class="bi bi-tools"></i> TOOLS & RESOURCES</h4>
+<!-- row for Tools & Resources section -->
+
+::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
+
+<!-- card -->
+::: {.col}
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+  <div class="d-flex gap-2">
+    <div class="orc-card-tool-icon p-2 rounded">
+      <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+    </div>
+    <div class="orc-card-tool-icon p-2 rounded">
+      <img src="/assets/img/gitlab.svg" class="img-fluid" alt="GitLab logo">
+    </div>
+  </div>
+  <span class="badge rounded-5 bg-success-subtle text-success align-self-start">Supported at LMU</span>
+</div>
+<h4 class="card-title">LRZ Gitlab</h4>
+<p class="card-text">Institutional Git hosting for LMU Munich.</p>
+<a href="https://gitlab.lrz.de/" class="stretched-link" target="_blank" rel="noopener"></a>
+</div>
+```
+:::
+
+<!-- card -->
+::: {.col}
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+  <div class="d-flex gap-2">
+    <div class="orc-card-tool-icon p-2 rounded">
+        <img src="/assets/img/lrz-logo.png" class="img-fluid" alt="LRZ logo">
+    </div>
+  </div>
+  <span class="badge rounded-5 bg-success-subtle text-success align-self-start">Supported at LMU</span>
+</div>
+<h4 class="card-title">LRZ Sync & Share</h4>
+<p class="card-text">Cloud storage service for LMU Munich</p>
+<a href="https://syncandshare.lrz.de/login" class="stretched-link" target="_blank" rel="noopener"> </a>
+</div>
+```
+:::
+
+
+
+<!-- card -->
+::: {.col}
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+  <div class="d-flex gap-2">
+    <div class="orc-card-tool-icon p-2 rounded">
+      <img src="https://cms-cdn.lmu.de/assets/img/favicon.ico" class="img-fluid" alt="LMU OSC logo">
+    </div>
+    <div class="orc-card-tool-icon p-2 rounded">
+        <img src="/assets/img/matrix.svg" class="img-fluid" alt="Matrix logo">
+    </div>
+  </div>
+  <span class="badge rounded-5 bg-success-subtle text-success align-self-start">Supported at LMU</span>
+</div>
+<h4 class="card-title">LMU Chat (Matrix)</h4>
+<p class="card-text">Institutional open source chat service for LMU Munich.</p>
+<a href="https://www.lmu.de/en/about-lmu/structure/central-university-administration/it-services-division/it-service-desk/central-it-services/lmu-chat-matrix/" class="stretched-link" target="_blank" rel="noopener"></a>
+</div>
+```
+:::
+
+:::
+
+:::
+
+#### 3.2.2. Reporting guidelines
+
+Transparent and complete reporting is essential for the interpretation, verification, and reuse of scientific results. To support this, many disciplines have developed reporting guidelines that specify the **minimum information that should be included when describing study design, data collection, analysis, and results**. These guidelines help ensure that studies can be critically evaluated, replicated, and included in evidence syntheses such as systematic reviews and meta-analyses.
+
+<br> 
+
+ A central resource for such guidelines is the [EQUATOR Network](https://www.equator-network.org/reporting-guidelines/), an international initiative collecting and promoting reporting standards across many study types and disciplines. 
+ 
+<br> 
+
+##### <i class="bi bi-list-check"></i> Typical items that should be reported include:
+
+- **Study design and setting** – the type of study (e.g., randomized trial, cohort study), where and when it was conducted, and relevant contextual factors.
+- **Participants or data sources** – eligibility criteria, recruitment or sampling procedures, sample size, and reasons for exclusions or dropouts.
+- **Variables and measurements** – definitions of exposures, outcomes, predictors, and covariates, including how and when they were measured.
+- **Sample size justification** – power calculations or other reasoning behind the chosen sample size.
+- **Statistical methods** – the models used, assumptions checked, handling of missing data, variable transformations, and any sensitivity or robustness analyses.
+- **Data preprocessing and analysis workflow** – steps such as cleaning, filtering, or derived variables that affect the final dataset used for analysis.
+- **Results with appropriate uncertainty** – effect estimates, confidence intervals, *p*‑values, and clear descriptions of the comparisons performed.
+- **Participant flow and descriptive statistics** – numbers of observations at each stage and summary statistics of the analyzed sample.
+- **Limitations and potential sources of bias** – issues such as confounding, measurement error, or selection bias.
+- **Data, code, and materials availability** – where readers can access datasets, analysis scripts, or supplementary materials to reproduce the analysis.
+
+A lot of these elements are those of a preregistration (see [1.4.1. Pre-analysis planning](01-plan-and-design.qmd#sec-study-design-analysis-plan){.mark}). Describe them in your methods section, adding they were **planned a priori in your preregistration** and citing its DOI, and **separate results into e.g. preregistered confirmatory analyses and non-preregistered exploratory analyses**.
+
+<br>
+
+Some of these elements will be refined depending on your study type. Widely used examples of guidelines include [CONSORT](https://www.equator-network.org/reporting-guidelines/consort/) for randomized controlled trials, [ARRIVE](https://www.equator-network.org/reporting-guidelines/improving-bioscience-research-reporting-the-arrive-guidelines-for-reporting-animal-research/) for animal studies, and [PRISMA](https://www.equator-network.org/reporting-guidelines/prisma/) for systematic reviews.
+
+
+::: {.container .my-4 }
+
+<h4 class="fs-5 mt-3"><i class="bi bi-tools"></i> TOOLS & RESOURCES</h4>
+
+::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
+
+<!-- card -->
+::: {.col}
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
+<img src="/assets/img/equator-logo.jpg" class="img-fluid" alt="EQUATOR logo">
+</div>
+<h4 class="card-title">EQUATOR Network</h4>
+<p class="card-text">Comprehensive database of reporting guidelines.</p>
+<a href="https://www.equator-network.org/reporting-guidelines/" class="stretched-link" target="_blank" rel="noopener"> </a>
+</div>
+```
+:::
+
+:::
+
+:::
+
+
+</details>
+
+
+
+::: {.orc-gradient-box .analyze-collaborate-checklist} 
+<!-- RL still working on -->
+
+## <i class="bi bi-card-checklist checklist-icon"></i> Analyze & Collaborate Checklist {.unnumbered}
+
+This assumes a reproducible workflow using R. Not all items are relevant for all fields of research or study types.
+
+**1. During data analyses: create and maintain a repository**
+
+::: {.row .row-cols-1 .row-cols-lg-2 .g-4}
+
+::: {.col}
+**Repository Setup** <!-- don't manage to make this one indented-->
+
+- [ ] Use the lab’s standard folder structure
+- [ ] Use version-control with Git and LRZ GitLab or GitHub
+- [ ] Use Renv or equivalent for package management
+
+**Repository Content** <!-- don't manage to make this one indented-->
+
+- [ ] Raw data or access procedure documented
+- [ ] Data dictionary (codebook) available
+- [ ] Scripts ordered for raw data extraction, processing, and analysis
+- [ ] Results generated from a Quarto reproducible analysis report
+- [ ] README describing usage, dependencies, and session info
+
+:::
+
+::: {.col}
+**R Scripts** <!-- don't manage to make this one indented-->
+
+- [ ] Metadata/header identifying author, date, and purpose
+- [ ] Readable structure and consistent naming
+- [ ] Informative comments about analytic decisions
+- [ ] No sensitive information in the code (e.g., passwords, patient identifiers)
+- [ ] Functions used to avoid duplication
+- [ ] Seeds set to create reproducible random computations
+- [ ] Figures and other generated outputs are accessible (e.g. colorblind friendly)
+- [ ] Style guide followed (e.g., styler, lintR)
+
+:::
+
+::: {.col}
+**2. Before presenting results to the research group: conduct internal code peer review**
+
+- [ ] Collaboration workflow established (e.g., branch or live review)
+- [ ] Code runs without errors on a different computer
+- [ ] Results, figures, tables are reproducible
+- [ ] Code is well-organized, readable, and commented
+- [ ] All functions are documented
+- [ ] Sensitive information removed
+- [ ] (for co-authors): Methods used are correct
+- [ ] (for co-authors): Methods match the pre-analysis plan or deviation are documented
+
+:::
+
+
+::: {.col}
+**3. Before sharing outside the group**
+
+- [ ] README provides complete instructions to reproduce results
+- [ ] Results reproducible from the report
+- [ ] Sensitive information removed and restricted data protected
+- [ ] Code peer-reviewed by co-authors
+- [ ] Reporting of results follow relevant guidelines (e.g. effect size, confidence intervals, model specification)
+- [ ] Results are separated in preregistered confirmatory vs non preregistered exploratory analyses
+
+:::
+
+:::
+
+::: {.d-flex .justify-content-center .mt-4 .orc-checklist-download .phase-3} 
+<!-- RL hasn't created button for checklist 3 yet -->
+
+<a href="assets/checklists/03-Analyze-Collaborate-Checklist.docx" class="btn btn-outline-secondary btn-sm">Download checklist <i class="bi bi-download"></i></a>
+<!-- need to update manually the  downloadable file with checklist in word doc-->
+:::
+
+:::

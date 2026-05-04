@@ -1,0 +1,152 @@
+---
+title: "Educator Toolkit"
+page-navigation: false
+toc: false
+css: research-cycle-handbook/handbook-styles.css
+format:
+  html:
+    page-layout: article
+    anchor-sections: false
+---
+
+<style>
+a.btn-toolkit {
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+  color: white;
+  text-align: center;
+}
+
+a.btn-toolkit:hover,
+a.btn-toolkit:focus {
+  color: white;
+}
+
+a.btn-toolkit-pedagogy {
+  background-color: #009933;
+  border-color: #009933;
+}
+
+a.btn-toolkit-students {
+  background-color: #00008B;
+  border-color: #00008B;
+}
+
+a.btn-toolkit-researchers {
+  background-color: #8B7500;
+  border-color: #8B7500;
+}
+
+a.btn-toolkit-pedagogy:hover,
+a.btn-toolkit-pedagogy:focus {
+  background-color: #007f2a;
+  border-color: #007f2a;
+}
+
+a.btn-toolkit-students:hover,
+a.btn-toolkit-students:focus{
+  background-color: #000070;
+  border-color: #000070;
+}
+
+a.btn-toolkit-researchers:hover,
+a.btn-toolkit-researchers:focus{
+  background-color: #735f00;
+  border-color: #735f00;
+}
+</style>
+
+<!-- ## What is the educator toolkit? -->
+
+<!-- Our educator toolkit follows a 'train-the-trainer' model, where we provide pedagogical training and training materials for educators to build on their Open Research knowledge and pedagogy skills to deliver high quality and engaging Open Research content for their learners. The broader goal of the toolkit is to **promote open and reproducible research** across academic disciplines.  -->
+<!-- navigate orc section -->
+
+
+```{=html}
+<div class="row g-3 mb-4">
+  <div class="col-12">
+    <div class="card bg-light-subtle border shadow-sm rounded-3 p-2">
+      <div class="card-body">
+        <div class="d-flex align-items-center justify-content-center gap-3 mb-3">
+          <span class="d-flex align-items-center justify-content-center rounded-3 flex-shrink-0"
+            style="width:44px; height:44px; background-color:#eaf5ee;">
+            <i class="bi bi-tools" style="font-size:1.2rem; color:#00883A;"></i>
+          </span>
+          <h5 class="card-title fw-semibold mb-0" style="color:#00883A;">What does the toolkit offer?</h5>
+        </div>
+        <div style="line-height:1.75; text-align:justify;">
+          Do you want to <strong>teach</strong> open, responsible, and reproducible research practices? Then our <strong>educator toolkit</strong> is for you! In this toolkit, you can find:
+          <ul>
+            <li><strong>Pedagogical materials</strong> and practical <strong>guidance</strong> for effectively <strong>designing and delivering classes and workshops on Open Research topics</strong> to diverse audiences. These materials include core didactic skills, learner engagement strategies, Open Science leadership, and accessibility practices.</li>
+            <li><strong>Ready-to-use materials</strong> for teaching open research practices such as <strong>methodological foundations of Open Science, computational reproducibility, data management and sharing.</strong> This material consist of slides and activity sheets. Slides include presenter notes (intended narrative of the presentation), and further instructor notes (additional guidance intended only for the presenter such as didactic and accessibility tips).</li>
+          </ul>
+          Simply select your intended target audience below and off you go! All materials are grounded in empirical and pedagogical theory. Depending on the topic, materials come in a variety of formats (Quarto slides, HTML, PDF, MS PowerPoint and Google Documents).
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-12">
+    <div class="card bg-light-subtle border shadow-sm rounded-3 p-2">
+      <div class="card-body">
+        <div class="d-flex align-items-center justify-content-center gap-3 mb-3">
+          <span class="d-flex align-items-center justify-content-center rounded-3 flex-shrink-0"
+            style="width:44px; height:44px; background-color:#eaf5ee;">
+            <i class="bi bi-signpost-split" style="font-size:1.2rem; color:#00883A;"></i>
+          </span>
+          <h5 class="card-title fw-semibold mb-0" style="color:#00883A;">Navigate our educator toolkit</h5>
+        </div>
+        <div class="row g-3 mt-2">
+          <div class="col-12 col-md-4">
+            <a href="https://lmu-osc.github.io/train-the-trainer-student-track-pedagogy/"
+              class="btn btn-lg btn-toolkit btn-toolkit-pedagogy w-100 h-100 d-flex align-items-center justify-content-center"
+              aria-label="Develop your pedagogical skills">
+              <span>Develop your pedagogical <strong>skills</strong>!</span>
+            </a>
+          </div>
+          <div class="col-12 col-md-4">
+            <a href="https://lmu-osc.github.io/train-the-trainer-student-track-OS/"
+              class="btn btn-lg btn-toolkit btn-toolkit-students w-100 h-100 d-flex align-items-center justify-content-center"
+              aria-label="View teaching materials for students">
+              <span>View teaching materials for <strong>students</strong>!</span>
+            </a>
+          </div>
+          <div class="col-12 col-md-4">
+            <a href="/training/self-learning.html"
+              class="btn btn-lg btn-toolkit btn-toolkit-researchers w-100 h-100 d-flex align-items-center justify-content-center"
+              aria-label="View teaching materials for researchers">
+              <span>View teaching materials for <strong>researchers</strong>!</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button collapsed custom-accordion-btn fw-semibold fs-5" type="button" 
+              data-bs-toggle="collapse" 
+              data-bs-target="#collapseOne" 
+              aria-expanded="false">
+        About this project
+      </button>
+    </h2>
+
+    <div id="collapseOne" class="accordion-collapse collapse">
+      <div class="accordion-body" style="line-height:1.75; text-align:justify;">
+        <p>The educator toolkit has been developed by the <a href="https://lmu-osc.github.io/">
+              LMU Open Science Center</a> in partnership with the Framework for Open and Reproducible Research Training <a href="http://forrt.org">FORRT</a> community together with funding by the <a href="https://www.volkswagenstiftung.de/de">Volkswagen Foundation</a>. Our training materials are licensed under a <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">CC-BY-SA 4.0</a> Creative Commons Attribution-ShareAlike 4.0 International license, unless otherwise specified.
+        </p>
+        <h5 class="fw-semibold">Questions about the educator toolkit?</h5>
+        <a href="mailto:s.grebmer@lmu.de?subject=Question about the educator toolkit"
+          class="btn btn-primary btn-pop my-2">
+          Contact us
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+```

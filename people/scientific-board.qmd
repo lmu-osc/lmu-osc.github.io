@@ -1,0 +1,30 @@
+---
+title: "Scientific Board"
+listing:
+  - id: current-scientific-board
+    contents: 
+      - people
+    template: listings/active-scientific-board-listing.ejs
+    sort: "surname asc"
+  - id: alumni-scientific-board
+    contents:
+      - people
+    template: listings/alumni-scientific-board-listing.ejs
+    sort: "surname asc"
+
+---
+The OSC is steered by an interdisciplinary scientific board elected every two years by the members of the OSC during a general assembly.
+
+## Current Scientific Board
+
+::: {#current-scientific-board}
+:::
+
+
+## Former Scientific Board Members
+
+
+::: {#alumni-scientific-board}
+:::   
+ 
+

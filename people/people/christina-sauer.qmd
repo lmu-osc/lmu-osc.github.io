@@ -1,0 +1,29 @@
+---
+title: Christina Sauer
+academic_title: M.Sc.
+name: Christina Sauer
+surname: Sauer
+first_name: Christina
+categories:
+  - Medicine
+memberships:
+  - type: fellow
+    status: active
+    position: Ph.D. Candidate
+    faculty: Medicine
+email: christina.sauer@ibe.med.uni-muenchen.de
+links:
+  - label: 'LMU Profile'
+    url: https://www.stat.lmu.de/stablab/de/team/kontaktseite/christina-sauer-144771f9.html
+photo: 'images/sauer_christina.jpg'
+social_media:
+  ORCID: 'https://orcid.org/0000-0003-2425-7858'
+mission_statement: |
+  I am a PhD student at the Institute for Medical Information Processing, Biometry, and Epidemiology and co-organizer of the LMU Open Science Initiative in Medicine (OSIM). My research focuses on the researcher degrees of freedom in the evaluation of statistical methods and the risk of over-optimistic conclusions. In this context, I also realized that the practice of making code and data openly available is still far from being the standard in the methodological literature and that many results are not fully reproducible.
+
+
+template: templates/people-template.html
+filters: 
+    - templates/people_filter.lua
+---
+

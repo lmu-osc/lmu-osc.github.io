@@ -1,0 +1,13 @@
+---
+title: "Management"
+listing:
+  - id: management
+    contents: 
+      - people
+    template: listings/active-management-listing.ejs
+    sort: "display_weight_management asc"
+
+---
+
+::: {#management}
+:::

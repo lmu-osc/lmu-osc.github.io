@@ -1,0 +1,60 @@
+---
+title: "Members"
+include-in-header:
+  - text: |
+      <script src="/assets/javascript/clear_filter_button.js" defer></script>
+      <script src="/assets/javascript/change_categories_header.js" defer></script>
+
+listing:
+  - id: lmu-members
+    contents: 
+      - people
+    template: listings/active-lmu-members-listing.ejs
+    sort: "surname asc"
+    categories: unnumbered
+    page-size: 999
+
+  - id: affiliate-members
+    contents: 
+      - people
+    template: listings/active-affiliate-listing.ejs
+    sort: "surname asc"
+    categories: unnumbered
+    page-size: 999
+
+  - id: former-members
+    contents: 
+      - people
+    template: listings/alumni-lmu-members-affiliates-listing.ejs
+    sort: "surname asc"
+
+---
+<style>
+.osc-members-description a,
+.osc-members-description i{
+  color:#00883A;
+  text-decoration:none;
+}
+.osc-members-description i{
+  font-size:0.9rem;
+  font-weight:500;
+}
+</style>
+:::{.osc-members-description}
+Our members actively support the goals of the OSC and contribute to our activities such as training, community building, meta-research, and liaison with stakeholders. [Join us](/about/join-us.qmd) <i class="bi bi-box-arrow-up-right"></i>.
+:::
+## LMU Members
+
+::: {#lmu-members}
+:::
+
+## Affiliate Members
+
+::: {#affiliate-members}
+:::
+
+
+## Former Members
+
+::: {#former-members}
+:::

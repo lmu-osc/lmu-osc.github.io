@@ -1,0 +1,55 @@
+---
+title: "Funders"
+format: 
+  html:
+    css: styles.css
+    page-layout: full
+    toc: false
+listing:
+  template: partners.ejs
+  contents:
+  - name: "LMU Project Funding"
+    image_url: "images/lmu_logo.jpg"
+    website_url: "https://www.lmu.de/de/index.html"
+    funding:
+      - name: "Frontiers LMU Excellence"
+        date: "2022 - 2024"
+        amount: "€250K"
+        project: "Meta-Research Hub"
+      - name: "Fund for the Promotion of Teaching"
+        date: "2022"
+        amount: "€15K+"
+        project: "Hybrid Open Science Summer School 2023"
+      - name: "Central Study Grant"
+        date: "2024 - 2025"
+        amount: "€140K+"
+        project: "Open Hybrid Facilitated Self-paced Tutorial (Open HyFaST)"
+
+  - name: "Volkswagen Foundation"
+    image_url: "images/VW.png"
+    website_url: "https://www.volkswagenstiftung.de/en"
+    funding:
+      - name: "Pioneer Project – Impetus for the German Science System"
+        date: "2025 - 2027"
+        amount: "€550K"
+        project: "From local to systemic implementation: Embedding open research in institutional practices"
+    press_release_url: "https://www.lmu.de/en/newsroom/news-overview/news/bringing-transparency-to-research-practice-28b91a8c.html"
+
+  - name: "LMU Funding Institutional Members"
+    image_url: "images/lmu_logo.jpg"
+    website_url: "funding-institutional-members.html"
+    funding:
+      - name: "Yearly membership fee"
+        date: "Ongoing"
+        amount: "€10K+/year"
+        project: "Funding institutional members such as LMU Faculties and Clusters of Excellence provide the center with a yearly membership fee to get priority access to our training programmes and consultations."
+
+  - name: "LMU Psychology Department"
+    image_url: "images/lmu_logo.jpg"
+    website_url: "https://www.lmu.de/psy/de/"
+    funding:
+      - name: "Departmental Study Grant"
+        date: "2026"
+        amount: "€5K+"
+        project: "Integration of Open Science training material into the Psychology curriculum"
+---

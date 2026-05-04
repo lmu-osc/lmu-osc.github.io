@@ -1,0 +1,56 @@
+<%
+// Match alumni fellow memberships only.
+const isAlumniFellow = (membership) =>
+  membership &&
+  typeof membership === 'object' &&
+  membership.type === 'fellow' &&
+  membership.status === 'alumni';
+
+// Keep people who have at least one matching alumni fellow membership.
+const alumnaeItems = (items || []).filter((item) => {
+  const memberships = Array.isArray(item.memberships) ? item.memberships : [];
+  return memberships.some(isAlumniFellow);
+});
+%>
+
+<%
+// Build a flat list of rendered entries (one per alumni-fellow membership)
+const entries = [];
+for (const item of alumnaeItems) {
+  const memberships = Array.isArray(item.memberships) ? item.memberships : [];
+  const alumniFellowMemberships = memberships.filter(isAlumniFellow);
+  for (const m of alumniFellowMemberships) {
+    const start = m.start || '';
+    const end = m.end || '';
+    let dateRange = '';
+    if (start) {
+      dateRange = end ? ' (' + start + ' - ' + end + ')' : ' (' + start + ')';
+    }
+    entries.push({ path: item.path, name: item.name, academic_title: item.academic_title || '', dateRange });
+  }
+}
+
+// split entries into two roughly equal columns
+const half = Math.ceil(entries.length / 2);
+const left = entries.slice(0, half);
+const right = entries.slice(half);
+%>
+
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<% for (const e of left) { %>
+<li><a href="<%= e.path %>"><%= e.name %><%= e.dateRange %><%= e.academic_title ? ', ' + e.academic_title : '' %></a></li>
+<% } %>
+</ul>
+</div>
+
+<div class="column" style="width:50%;">
+<ul>
+<% for (const e of right) { %>
+<li><a href="<%= e.path %>"><%= e.name %><%= e.dateRange %><%= e.academic_title ? ', ' + e.academic_title : '' %></a></li>
+<% } %>
+</ul>
+</div>
+</div>
+

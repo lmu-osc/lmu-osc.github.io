@@ -1,0 +1,37 @@
+---
+title: Elizabeth Waterfield
+academic_title: M.Sc. Student
+name: Elizabeth Waterfield
+surname: Waterfield
+first_name: Elizabeth
+categories:
+  - Psychology & Education
+memberships:
+  - type: fellow
+    status: active
+    position: M.Sc. Student
+    faculty: Psychology & Education
+  - type: staff
+    status: active
+    position: Research Assistant - Training Development , Event Logistics & Public Outreach
+    faculty: Psychology & Education
+display_weight_staff: 99
+email: e.waterfield@lmu.de
+photo: 'images/waterfield_elizabeth.png'
+website:
+  - label: 'Professional Profile Page'
+    url: https://www.linkedin.com/in/elizabeth-waterfield/
+social_media:
+  ORCID: https://orcid.org/0009-0006-3725-6730
+  GitHub: 'https://github.com/bethwater1'
+personal: |
+  I am an M.Sc. student in Psychology- Learning Sciences at LMU Munich with a background in Psychology and Gender and Development. I value Open and Reproducible Science as a foundation for collaborative research and sustainable knowledge building. My interests focus on education, teaching, and creating environments and resources that empower learners. At the LMU Open Science Center, I support administration, public outreach, and the development of learning materials for the Train-the-Trainer programme.
+mission_statement: |
+  I am an M.Sc. student in Psychology- Learning Sciences at LMU Munich with a background in Psychology and Gender and Development. I value Open and Reproducible Science as a foundation for collaborative research and sustainable knowledge building. My interests focus on education, teaching, and creating environments and resources that empower learners. At the LMU Open Science Center, I support administration, public outreach, and the development of learning materials for the Train-the-Trainer programme.
+
+  
+
+template: templates/people-template.html
+filters: 
+    - templates/people_filter.lua
+---
