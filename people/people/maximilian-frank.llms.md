@@ -2,7 +2,7 @@
 
 ![Profile photo of Maximilian Frank](images/frank_maximilian.jpg)
 
-Ph.D. Candidate
+Strategy Advisor
 
 Faculty of Psychology & Education
 

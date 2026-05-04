@@ -68,23 +68,23 @@ Max Planck Institute for Evolutionary Anthropology
 
 We benefit from the expertise of additional advisors on specific topics such as politics and didactics.
 
-[![Profile photo of Peter Edelsbrunner](people/images/edelsbrunner_peter.png)](https://www.psy.lmu.de/ffp_en/persons/w2-professorship/edelsbrunner_peter1/index.html)
+[![Profile photo of Peter Edelsbrunner](people/images/edelsbrunner_peter.png)](../people/people/peter-edelsbrunner.llms.md)
 
-[Peter Edelsbrunner](https://www.psy.lmu.de/ffp_en/persons/w2-professorship/edelsbrunner_peter1/index.html)
+[Peter Edelsbrunner](../people/people/peter-edelsbrunner.llms.md)
 
 Prof. Dr.
 
-Chair
+Instructional Design Advisor
 
 Psychology & Education
 
-[![Profile photo of Maximilian Frank](people/images/frank_maximilian.jpg)](https://www.meta-rep.uni-muenchen.de/people/team_heene/index.html)
+[![Profile photo of Maximilian Frank](people/images/frank_maximilian.jpg)](../people/people/maximilian-frank.llms.md)
 
-[Maximilian Frank](https://www.meta-rep.uni-muenchen.de/people/team_heene/index.html)
+[Maximilian Frank](../people/people/maximilian-frank.llms.md)
 
 M.Sc.
 
-Ph.D. Candidate
+Strategy Advisor
 
 Psychology & Education
 
