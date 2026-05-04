@@ -2,7 +2,7 @@
 
 ![Profile photo of Peter Edelsbrunner](images/edelsbrunner_peter.png)
 
-Chair
+Instructional Design Advisor
 
 Faculty of Psychology & Education
 

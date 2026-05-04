@@ -6,7 +6,7 @@ LMU Open Science Center Coordinator
 
 [malika.ihle@lmu.de](mailto:malika.ihle@lmu.de)
 
-[](https://github.com/malikaihle) [](https://bsky.app/profile/malikaihle.bsky.social) [](https://orcid.org/0000-0002-3242-5981) [](https://www.linkedin.com/malika-ihle) [](https://scicomm.xyz/@MalikaIhle)
+[](https://bsky.app/profile/malikaihle.bsky.social) [](https://scicomm.xyz/@MalikaIhle) [](https://www.linkedin.com/malika-ihle) [](https://orcid.org/0000-0002-3242-5981) [](https://github.com/malikaihle)
 
 ## Mission Statement
 

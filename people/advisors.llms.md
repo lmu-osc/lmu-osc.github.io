@@ -74,7 +74,7 @@ We benefit from the expertise of additional advisors on specific topics such as 
 
 Prof. Dr.
 
-Chair
+Instructional Design Advisor
 
 Psychology & Education
 
@@ -84,7 +84,7 @@ Psychology & Education
 
 M.Sc.
 
-Ph.D. Candidate
+Strategy Advisor
 
 Psychology & Education
 
