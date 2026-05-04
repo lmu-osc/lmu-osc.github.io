@@ -32,7 +32,7 @@ Advanced: <https://happygitwithr.com/>
 - Hack
 - Wrap-up: progress and next steps
 
-Learn more about the Hacky Hour initiative [here](../../meetups/hackyhour/index.llms.md "Hacky Hour").
+Learn more about the Hacky Hour initiative [here](../../partners/local-os-initiatives/hacky-hour.llms.md "Hacky Hour").
 
 #### Questions?
 
