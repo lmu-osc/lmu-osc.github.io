@@ -24,7 +24,7 @@ After a successful third session this semester, we are excited to invite you to 
 
 **Procedure:** Two members of the organizing team, Finia Loeb and Gracia Prüm, will summarise the paper by Haucke et al. There will then be an open discussion where you can contribute your own thoughts and questions. Finally, there will be time to get to know each other and talk in smaller groups.
 
-**About the journal club: **[Here](../../meetups/reproducibilitea/index.llms.md "ReproducibiliTea Journal Club") you can find further information about the concept of the journal club.
+**About the journal club: **[Here](../../partners/local-os-initiatives/reproducibilitea.llms.md "ReproducibiliTea Journal Club") you can find further information about the concept of the journal club.
 
 You are cordially invited to attend our upcoming meetings! To stay updated and receive notifications about these gatherings and the selected papers, you can either subscribe to our mailing list by clicking on this link: <https://lists.lrz.de/mailman/listinfo/reproducibilitea>, or you can send an email to [reproducibilitea.munich@gmail.com](mailto:reproducibilitea.munich@gmail.com "Send email to: reproducibilitea.munich@gmail.com"). There is no requirement to have read the designated paper before each session, although it could be beneficial.
 

@@ -24,7 +24,7 @@ The ReproducibiliTea journal club at LMU Munich continues after a long summer br
 
 **Procedure: **Two members of the organizing team, Laura Goetz and Gracia Prüm, will give an introductory talk on Open Science and the replication crisis and summarise the paper by Munafò et al. There will then be an open discussion where you can contribute your own thoughts and questions. Finally, there will be time to get to know each other and talk in smaller groups.
 
-**About the journal club: **[Here](../../meetups/reproducibilitea/index.llms.md "ReproducibiliTea Journal Club") you can find further information about the concept of the journal club.
+**About the journal club: **[Here](../../partners/local-os-initiatives/reproducibilitea.llms.md "ReproducibiliTea Journal Club") you can find further information about the concept of the journal club.
 
 You are cordially invited to attend our upcoming meetings! To stay updated and receive notifications about these gatherings and the selected papers, you can either subscribe to our mailing list by clicking on this link: <https://lists.lrz.de/mailman/listinfo/reproducibilitea>, or you can send an email to [reproducibilitea.munich@gmail.com](mailto:reproducibilitea.munich@gmail.com "Send email to: reproducibilitea.munich@gmail.com"). There is no requirement to have read the designated paper before each session, although it could be beneficial.
 

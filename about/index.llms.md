@@ -42,13 +42,13 @@ Our people.
 
 Explore upcoming and past events from the OSC community.
 
-[View Events ](../events/index.llms.md)
+[View Events ](../events)
 
 ### Training
 
 Browse our training resources on open science practices, from data management to reproducible workflows.
 
-[Explore Training ](../training.llms.md)
+[Explore Training ](../training)
 
 ### Consultations
 
