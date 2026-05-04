@@ -984,7 +984,7 @@ Anonymization protects privacy and determines what you can share.
 
 - **Remove direct identifiers during collection.** Names, addresses, ID numbers, photographs, email addresses. Replace these with codes.
 
-- **Assess indirect identifiers carefully.** A combination of age, location, profession, and a rare condition might identify someone even without their name. Timestamps reveal patterns. Free-text responses often contain identifying details participants did not intend to share. Follow our [anonymization tutorial (TBA)](<!-- link tba-->) to learn to evaluate and implement anonymization techniques in R.
+- **Assess indirect identifiers carefully.** A combination of age, location, profession, and a rare condition might identify someone even without their name. Timestamps reveal patterns. Free-text responses often contain identifying details participants did not intend to share. Follow our [data anonymization tutorial](https://lmu-osc.github.io/data-anonymization/) to learn to evaluate and implement anonymization techniques in R.
 
 - **Generate synthetic data when full anonymization or real data sharing is not possible.** Synthetic data is artificially generated data that can serve as a privacy-preserving alternative to sensitive datasets, enabling researchers to reproduce analyses, verify findings, and initiate model development when access to real data is restricted. Sharing synthetic data together with code, rather than sharing no data at all, increases the utility of your research (see [4. Preserve & Share](04-preserve-and-share.qmd){.mark}).
 
