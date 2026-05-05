@@ -34,11 +34,11 @@ if (path.startsWith('/toolbox')) {
       the site search function to find the page you were expecting.
     </p>
   `;
-} else if (/^\/individual_members(?:\/|$)/.test(path)) {
+} else if (/^\/members(?:\/|$)/.test(path)) {
   content.innerHTML=`
-    <h2>Individual member pages have moved</h2>
+    <h2>Our Members Pages Have Moved!</h2>
     <p>
-      The individual member pages now live in our <a href="/people/">People</a> section.
+      The individual member pages now live in our <a href="/people/members">People</a> section.
       Please update any bookmarks or links that still point to the old address.
     </p>
   `;
