@@ -23,7 +23,7 @@ Based on our material, it is easy to build a tailored research practice handbook
 
 You can request a consultation with the LMU Open Science Center: ranging from a 1h one-on-one consultation up to a 6-month training and consultation program for your entire research group (see [About this Project](#about-orc-project) below).
 
-##### About this project
+## About this project
 
 This work is part of the **“Switch-to-Open Program”** (SwOP) funded by the [Volkswagen Foundation](https://www.volkswagenstiftung.de/en).
 
