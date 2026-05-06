@@ -176,16 +176,6 @@
       align-items: stretch;
     }
 
-    .card {
-      display: flex;
-      flex-direction: column;
-      box-sizing: border-box;
-      padding: 1.2em;
-      flex: 1 1 100%;
-      /*min-height: 200px;*/
-      line-height: 1.6;
-      border-color: 1px #b3b4b2;
-    }
 
     .card-link {
       text-decoration: none;
@@ -197,13 +187,7 @@
       box-shadow: 0 0 12px rgba(0,0,0,0.15);
       cursor: pointer;
     }
-    .card:hover {
-      background:var(--osc-accent-strong);
-      border-color: var(--osc-accent-strong);
-      transform: scale(1.0);
-      box-shadow: 0 6px 12px rgba(43, 134, 75, 0.3);
-      transition: all 0.2s ease;
-    }
+
     .event-labels {
       position: absolute;
       top: 0em;

@@ -16,55 +16,55 @@ listing:
     template: past-events-template.ejs
     template-params:
       year: 2026
-  - id: year_2025
-    contents: events/
-    page-size: 999
-    template: past-events-template.ejs
-    template-params:
-      year: 2025
-  - id: year_2024
-    contents: events/
-    page-size: 999
-    template: past-events-template.ejs
-    template-params:
-      year: 2024
-  - id: year_2023
-    contents: events/
-    page-size: 999
-    template: past-events-template.ejs
-    template-params:
-      year: 2023
-  - id: year_2022
-    contents: events/
-    sort: "date desc"
-    page-size: 999
-    template: past-events-template.ejs
-    template-params:
-      year: 2022
-  - id: year_2021
-    contents: events/
-    page-size: 999
-    template: past-events-template.ejs
-    template-params:
-      year: 2021
-  - id: year_2020
-    contents: events/
-    page-size: 999
-    template: past-events-template.ejs
-    template-params:
-      year: 2020
-  - id: year_2019
-    contents: events/
-    page-size: 999
-    template: past-events-template.ejs
-    template-params:
-      year: 2019
-  - id: year_2018
-    contents: events/
-    page-size: 999
-    template: past-events-template.ejs
-    template-params:
-      year: 2018
+  # - id: year_2025
+  #   contents: events/
+  #   page-size: 999
+  #   template: past-events-template.ejs
+  #   template-params:
+  #     year: 2025
+  # - id: year_2024
+  #   contents: events/
+  #   page-size: 999
+  #   template: past-events-template.ejs
+  #   template-params:
+  #     year: 2024
+  # - id: year_2023
+  #   contents: events/
+  #   page-size: 999
+  #   template: past-events-template.ejs
+  #   template-params:
+  #     year: 2023
+  # - id: year_2022
+  #   contents: events/
+  #   sort: "date desc"
+  #   page-size: 999
+  #   template: past-events-template.ejs
+  #   template-params:
+  #     year: 2022
+  # - id: year_2021
+  #   contents: events/
+  #   page-size: 999
+  #   template: past-events-template.ejs
+  #   template-params:
+  #     year: 2021
+  # - id: year_2020
+  #   contents: events/
+  #   page-size: 999
+  #   template: past-events-template.ejs
+  #   template-params:
+  #     year: 2020
+  # - id: year_2019
+  #   contents: events/
+  #   page-size: 999
+  #   template: past-events-template.ejs
+  #   template-params:
+  #     year: 2019
+  # - id: year_2018
+  #   contents: events/
+  #   page-size: 999
+  #   template: past-events-template.ejs
+  #   template-params:
+  #     year: 2018
 toc: true
 toc-depth: 3
 toc-expand: 3
@@ -95,6 +95,131 @@ h2{
   background: var(--theme-main-dark)!important;
 }
 </style>
+
+
+
+
+```{=html}
+<div class="card">
+
+  <div class="card-header d-flex align-items-center justify-content-between gap-2">
+    <span class="flex-grow-1 text-truncate">This Title Is A Bit Too Long, but the card-header Automatically Truncates It When It Gets to the Badge on the Right</span>
+    <span class="badge text-bg-light border ms-2 text-nowrap">Conference</span>
+  </div>
+
+
+  <!-- start row -->
+  <div class="row g-0">
+    <div class="col-md-2">
+      <img src="/events/images/conference.svg" class="img-fluid rounded-start" alt="...">
+    </div>
+
+
+    <div class="col-md-10">
+      <div class="card-body">
+        <h6 class="card-subtitle mb-2">07-15 Sept, 2026</h6>
+        <h6 class="card-subtitle mb-2">9:00-17:30 | Library, Address Here 80549 Munich | Hybrid | EN</h6>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer. This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer. This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <p class="card-text">
+          <small class="text-body-secondary">
+          Organizers: John Doe
+          <br>
+          Presenters: Jane Doe, John Smith, Jane Smith
+          <br>
+          Host(s): John Doe, Jane Doe
+          </small>
+        </p>
+
+      <!-- end card-body -->
+      </div>
+    <!-- end col-md-10 -->
+    </div>
+  <!-- end row -->
+  </div>
+  
+
+
+  <div class="card-footer">
+    Maybe Contact here? OR better would be the hosts to highlight them?
+  </div>
+
+
+</div>
+<!-- add some space before the upcoming events header -->
+<br>
+<br>
+```
+
+
+
+<!-- another card option, or at least some ideas for handling people -->
+```{=html}
+<div class="card">
+  <div class="card-header d-flex align-items-center justify-content-between gap-2">
+    <span class="flex-grow-1 text-truncate">Open Science in Practice</span>
+    <span class="badge text-bg-light border ms-2 text-nowrap">Conference</span>
+  </div>
+
+  <div class="card-body">
+    <h6 class="card-subtitle mb-2">07–15 Sept 2026</h6>
+    <h6 class="card-subtitle mb-3">9:00–17:30 | Library, Address Here | Hybrid | EN</h6>
+
+    <p class="card-text">
+      This is a wider card with supporting text below as a natural lead-in to additional content.
+    </p>
+
+    <div class="mt-4">
+      <h6 class="text-uppercase text-body-secondary fw-semibold mb-3">People</h6>
+
+      <div class="row row-cols-1 row-cols-md-2 g-3">
+        <div class="col">
+          <div class="small text-body-secondary fw-semibold">Organizers</div>
+          <div class="d-flex flex-wrap gap-2 mt-1">
+            <span class="badge rounded-pill text-bg-secondary">Anna Meier</span>
+            <span class="badge rounded-pill text-bg-secondary">Ben Fischer</span>
+            <span class="badge rounded-pill text-bg-secondary">Clara Novak</span>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="small text-body-secondary fw-semibold">Presenters</div>
+          <div class="d-flex flex-wrap gap-2 mt-1">
+            <span class="badge rounded-pill text-bg-secondary">Daniel Klein</span>
+            <span class="badge rounded-pill text-bg-secondary">Eva Smith</span>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="small text-body-secondary fw-semibold">Instructors</div>
+          <div class="d-flex flex-wrap gap-2 mt-1">
+            <span class="badge rounded-pill text-bg-secondary">Fatima Ali</span>
+            <span class="badge rounded-pill text-bg-secondary">Jonas Weber</span>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="small text-body-secondary fw-semibold">Helpers</div>
+          <div class="d-flex flex-wrap gap-2 mt-1">
+            <span class="badge rounded-pill text-bg-secondary">Lea Vogel</span>
+            <span class="badge rounded-pill text-bg-secondary">Max Roth</span>
+            <span class="badge rounded-pill text-bg-secondary">Nina Scholz</span>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="small text-body-secondary fw-semibold">Hosts</div>
+          <div class="d-flex flex-wrap gap-2 mt-1">
+            <span class="badge rounded-pill text-bg-secondary">OSC Team</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+```
+
+
+
 ## Upcoming Events
 
 ::: {#upcoming-events}
@@ -109,7 +234,7 @@ h2{
 :::
 
 
-### 2025
+<!-- ### 2025
 
 ::: {#year_2025}
 :::
@@ -143,4 +268,4 @@ h2{
 
 ### 2018
 ::: {#year_2018}
-:::
+::: -->
