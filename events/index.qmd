@@ -103,27 +103,42 @@ h2{
 <div class="card">
 
   <div class="card-header d-flex align-items-center justify-content-between gap-2">
-    <span class="flex-grow-1 text-truncate">This Title Is A Bit Too Long, but the card-header Automatically Truncates It When It Gets to the Badge on the Right</span>
-    <span class="badge text-bg-light border ms-2 text-nowrap">Conference</span>
-  </div>
+      <span class="flex-grow-1 text-truncate">This Title Is A Bit Too Long, but the card-header Automatically Truncates It When It Gets to the Badge on the Right</span>
+      <span class="badge text-bg-light border ms-2 text-nowrap">Conference</span>
+    </div>
 
-  <div class="card-body">
-    <h6 class="card-subtitle mb-2">07-15 Sept, 2026</h6>
-    <h6 class="card-subtitle mb-2">9:00-17:30 | Library, Address Here 80549 Munich | Hybrid | EN</h6>
-    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer. This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer. This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-    <p class="card-text">
-      <small class="text-body-secondary">
-      Organizers: John Doe
-      <br>
-      Presenters: Jane Doe, John Smith, Jane Smith
-      <br>
-      Host(s): John Doe, Jane Doe
-      </small>
-    </p>
+
+  <div class="row g-0">
+    <div class="col-md-2">
+      <img src="/events/images/conference.svg" class="img-fluid rounded-start" alt="...">
+    </div>
+
+
+  <div class="col-md-10">
+    
+    <div class="card-body">
+      <h6 class="card-subtitle mb-2">07-15 Sept, 2026</h6>
+      <h6 class="card-subtitle mb-2">9:00-17:30 | Library, Address Here 80549 Munich | Hybrid | EN</h6>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer. This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer. This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      <p class="card-text">
+        <small class="text-body-secondary">
+        Organizers: John Doe
+        <br>
+        Presenters: Jane Doe, John Smith, Jane Smith
+        <br>
+        Host(s): John Doe, Jane Doe
+        </small>
+      </p>
+
+    </div>
+  </div>
 
   </div>
 
 </div>
+<!-- add some space before the upcoming events header -->
+<br>
+<br>
 ```
 
 ## Upcoming Events
