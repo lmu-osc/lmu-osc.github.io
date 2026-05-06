@@ -8,3 +8,43 @@ $sidebar-hl: #006426;
     right: 0 !important;
     left: auto !important;
   }
+
+/*--accordion style overrides- applicable to all accordions --*/
+
+.accordion-item > h2.accordion-header {
+  padding-bottom: 0;
+}
+
+.accordion-button {
+  --bs-accordion-btn-color: var(--osc-accent);
+  --bs-accordion-active-color: var(--osc-accent);
+  --bs-accordion-active-bg: #90a09b12;
+  --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0);
+}
+
+/*--accordion style overrides specific to the research cycle handbook page --*/
+
+// Applies to the accordion body buttons in the research cycle handbook page
+.orc-accordion .accordion-body {
+  .btn-primary {
+    --bs-btn-bg: var(--osc-accent);
+    --bs-btn-border-color:var(--osc-accent);   
+    --bs-btn-hover-bg: color-mix(in srgb, var(--osc-accent) 80%, black);
+    --bs-btn-hover-border-color: color-mix(in srgb, var(--osc-accent) 80%, black);
+    --bs-btn-active-bg: color-mix(in srgb, var(--osc-accent) 80%, black);
+    --bs-btn-active-border-color: color-mix(in srgb, var(--osc-accent) 80%, black);
+  }
+}
+
+// Center the accordion button text and position the toggle icon to the right
+.orc-accordion .accordion-button{
+  justify-content: center;
+  text-align: center;
+  position: relative;
+
+  &::after{
+    position:absolute;
+    right: 1rem;
+  }
+}
+
