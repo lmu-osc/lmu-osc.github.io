@@ -787,7 +787,7 @@ Whether you are a student, early-career researcher, or professor — there's a p
     <div class="d-flex align-items-center justify-content-between mb-2">
       <h5 class="mb-0 card-title">Community</h5>
       <div class="bg-success bg-opacity-10 rounded-3 d-inline-flex align-items-center justify-content-center" style="width:50px;height:50px;color:#00883A;">
-        <i class="bi bi-people fs-5"></i>
+        <i class="bi bi-people fs-5" aria-hidden="true"></i>
       </div>
     </div>
     <p class="card-text flex-grow-1">Meet the researchers, advocates, and partners shaping open science at LMU and beyond.</p>
@@ -804,7 +804,7 @@ Whether you are a student, early-career researcher, or professor — there's a p
     <div class="d-flex align-items-center justify-content-between mb-2">
       <h5 class="mb-0 card-title">Workshops & Self-Learning</h5>
       <div class="bg-success bg-opacity-10 rounded-3 d-inline-flex align-items-center justify-content-center" style="width:50px;height:50px;color:#00883A;">
-        <i class="bi bi-journal-bookmark fs-5"></i>
+        <i class="bi bi-journal-bookmark fs-5" aria-hidden="true"></i>
       </div>
     </div>
     <p class="card-text flex-grow-1">Build hands-on skills in reproducible research through workshops, summer schools, and self-paced tutorials.</p>
@@ -821,7 +821,7 @@ Whether you are a student, early-career researcher, or professor — there's a p
     <div class="d-flex align-items-center justify-content-between mb-2">
       <h5 class="mb-0 card-title">Partners & Networks</h5>
       <div class="bg-success bg-opacity-10 rounded-3 d-inline-flex align-items-center justify-content-center" style="width:50px;height:50px;color:#00883A;">
-        <i class="bi bi-globe2 fs-5"></i>
+        <i class="bi bi-globe2 fs-5" aria-hidden="true"></i>
       </div>
     </div>
     <p class="card-text flex-grow-1">Discover our institutional collaborators and the international networks we are part of.</p>
