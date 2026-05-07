@@ -120,7 +120,7 @@ h2{
         <h6 class="card-subtitle mb-2">07-15 Sept, 2026</h6>
         <h6 class="card-subtitle mb-2">9:00-17:30 | Library, Address Here 80549 Munich | Hybrid | EN</h6>
         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer. This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer. This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        <div class="card-text">
+        <div class="card-text d-none d-md-block">
           <div class="d-flex flex-wrap align-items-center gap-2">
             <span class="small text-body-secondary fw-semibold text-nowrap">Organizers:</span>
             <span class="badge rounded-pill text-bg-secondary">Anna Meier</span>
