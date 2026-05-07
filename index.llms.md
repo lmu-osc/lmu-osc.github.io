@@ -69,6 +69,14 @@ Keep up to date with our latest news releases, and upcoming events.
 
 News [View All News](news/index.llms.md)
 
+###### May 5, 2026
+
+##### [SHARP Becomes a Funding Institutional Member](news/news/2026-05-05-sharp-as-new-funding-institutional-member.llms.md)
+
+Collaborative Research Centre, TRR419 SHARP becomes a funding institutional member of the OSC!
+
+[Read More →](news/news/2026-05-05-sharp-as-new-funding-institutional-member.llms.md)
+
 ###### Apr 28, 2026
 
 ##### [OSC's Conference Poster](news/news/2026-04-28-osc-poster.llms.md)
@@ -84,14 +92,6 @@ All the activities of the LMU Open Science Center in a poster format! First pres
 Newly published travel guide “Expedition Open Science Land: A travel guide for business research”
 
 [Read More →](news/news/2026-04-15-os-land-book.llms.md)
-
-###### Apr 12, 2026
-
-##### [Computational Reproducibility in Social Research](news/news/2026-04-13-code-reproducibility-in-social-sciences-paper.llms.md)
-
-Code Sharing and Reproducibility in Social Sciences: Findings from a Recent Study
-
-[Read More →](news/news/2026-04-13-code-reproducibility-in-social-sciences-paper.llms.md)
 
 Events [View All Events](events/index.llms.md)
 

@@ -2,6 +2,7 @@
 
 | Date | Title | Categories |
 |----|----|----|
+| May 5, 2026 | [SHARP Becomes a Funding Institutional Member](../news/news/2026-05-05-sharp-as-new-funding-institutional-member.llms.md) | New Members |
 | Apr 28, 2026 | [OSC’s Conference Poster](../news/news/2026-04-28-osc-poster.llms.md) | Announcement |
 | Apr 13, 2026 | [Open Science Land: A Travel Guide](../news/news/2026-04-15-os-land-book.llms.md) | Publications |
 | Apr 12, 2026 | [Computational Reproducibility in Social Research](../news/news/2026-04-13-code-reproducibility-in-social-sciences-paper.llms.md) | Publications |
