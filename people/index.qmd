@@ -1,3 +1,85 @@
 ---
 title: People
 ---
+
+```{=html}
+<div class="container mt-3">
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+    <div class="col">
+        <div class="card people-card h-100 border shadow-sm rounded" style="border-top: 4px solid var(--osc-accent) !important;">
+            <div class="card-body">
+                <div class="p-3 rounded-circle bg-success-subtle d-flex align-items-center justify-content-center mb-3" style="width: 50px; height: 50px;">
+                    <i class='bi bi-briefcase fs-3 text-success'></i>
+                </div>
+                <h5 class="card-title" style="color: var(--osc-accent);">Management</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="management.qmd" class="btn btn-primary">Learn more</a>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card people-card h-100 border shadow-sm rounded" style="border-top: 4px solid var(--osc-accent) !important;">
+            <div class="card-body ">
+                <div>
+                    <i class='bi bi-people fs-3 text-success'></i>
+                </div>
+                <h5 class="card-title" style="color: var(--osc-accent);">Staff</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="staff.qmd" class="btn btn-primary">Learn more</a>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card people-card h-100 border shadow-sm rounded" style="border-top: 4px solid var(--osc-accent) !important;">
+            <div class="card-body">
+                <div>
+                    <i class='bi bi-mortarboard
+                     fs-3 text-success'></i>
+                </div>
+                <h5 class="card-title" style="color: var(--osc-accent);">Scientific Board</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="scientific-board.qmd" class="btn btn-primary">Learn more</a>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card people-card h-100 border shadow-sm rounded" style="border-top: 4px solid var(--osc-accent) !important;">
+            <div class="card-body">
+                <div>
+                    <i class='bi bi-patch-question fs-3 text-success'></i>
+                </div>
+                <h5 class="card-title" style="color: var(--osc-accent);">Advisors</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="advisors.qmd" class="btn btn-primary">Learn more</a>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card people-card h-100 border shadow-sm rounded" style="border-top: 4px solid var(--osc-accent) !important;">
+            <div class="card-body">
+                <div>
+                    <i class='bi bi-person-badge fs-3 text-success'></i>
+                </div>
+                <h5 class="card-title" style="color: var(--osc-accent);">Members</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="members.qmd" class="btn btn-primary">Learn more</a>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card people-card h-100 border shadow-sm rounded" style="border-top: 4px solid var(--osc-accent) !important;">
+            <div class="card-body">
+                <div>
+                    <i class='bi bi-award fs-3 text-success'></i>
+                </div>
+                <h5 class="card-title" style="color: var(--osc-accent);">Fellows</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="fellows.qmd" class="btn btn-primary">Learn more</a>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+```
+
