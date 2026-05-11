@@ -74,6 +74,7 @@ repo-actions: false
 include-in-header:
   - text: |
       <script src="/assets/javascript/clear_filter_button.js" defer></script>
+      <script src="/assets/bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js" defer></script>
 ---
 <style>
 :root{
@@ -153,9 +154,9 @@ h2{
           </div>
           <div class="d-flex flex-wrap align-items-center gap-2 mt-2">
             <span class="small text-body-secondary fw-semibold text-nowrap">Hosts:</span>
-            <span class="badge rounded-pill text-bg-secondary">LMU Open Science Center</span>
-            <span class="badge rounded-pill text-bg-secondary">FORRT</span>
-            <span class="badge rounded-pill text-bg-secondary">PROFil</span>
+            <span class="badge rounded-pill text-bg-secondary" data-bs-toggle="tooltip" title="LMU Open Science Center">LMU Open Science Center</span>
+            <span class="badge rounded-pill text-bg-secondary" data-bs-toggle="tooltip" title="Framework for Open and Reproducible Research Training">FORRT</span>
+            <span class="badge rounded-pill text-bg-secondary" data-bs-toggle="tooltip" title="Professionell in der Lehre">PROFil</span>
           </div>
         </div>
 
@@ -179,6 +180,13 @@ h2{
 <br>
 ```
 
+
+```{=html}
+<script>
+const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+</script>
+```
 
 
 <!-- another card option, or at least some ideas for handling people -->
