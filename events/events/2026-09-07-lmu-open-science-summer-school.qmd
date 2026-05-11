@@ -95,10 +95,12 @@ host:
   - name: LMU Open Science Center
     url: https://lmu-osc.github.io/
   - name: LMU University Library (UB)
-  - name: Professionell in der Lehre (PROFil)
+  - name: Professionell in der Lehre
     url: https://www.lmu.de/profil/de/
-  - name: Framework for Open and Reproducible Research Training (FORRT)
+    abbreviation: PROFiL
+  - name: Framework for Open and Reproducible Research Training
     url: https://forrt.org/ 
+    abbreviation: FORRT
 
 template: templates/event-template.html
 filters:
