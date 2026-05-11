@@ -1,9 +1,9 @@
 ---
 title: Events
 page-navigation: false
-css: 
-  - past-events-styles.css
-  - upcoming-events-styles.css 
+# css: 
+#   - past-events-styles.css
+#   - upcoming-events-styles.css 
 listing:
   - id: upcoming-events
     template: upcoming-events-template.ejs
@@ -104,7 +104,7 @@ h2{
 <div class="card">
 
   <div class="card-header d-flex align-items-center justify-content-between gap-2">
-    <span class="flex-grow-1 text-truncate">This Title Is A Bit Too Long, but the card-header Automatically Truncates It When It Gets to the Badge on the Right</span>
+    <a class="flex-grow-1 text-truncate fw-semibold fs-5 lh-sm" href="#">This Title Is A Bit Too Long, but the card-header Automatically Truncates It When It Gets to the Badge on the Right</a>
     <span class="badge text-bg-light border ms-2 text-nowrap">Conference</span>
   </div>
 
