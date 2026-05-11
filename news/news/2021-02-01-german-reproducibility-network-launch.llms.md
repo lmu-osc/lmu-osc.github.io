@@ -28,7 +28,7 @@ The founding members are the following eight Open Science actors in Germany:
 - [German Psychological Society (DGPs)](https://www.dgps.de)
 - [Helmholtz AI](https://www.helmholtz.ai/)
 - [Helmholtz Open Science Office](https://os.helmholtz.de/)
-- [LMU Open Science Center](https://lmu-osc.github.io/ "Welcome to the Open Science Center")
+- [LMU Open Science Center](../../ "Welcome to the Open Science Center")
 - [NOSI (Network of Open Science Initiatives)](https://osf.io/tbkzh/)
 - [ZBW (Leibniz Information Centre for Economics)](http://www.zbw.eu/en/home/)
 

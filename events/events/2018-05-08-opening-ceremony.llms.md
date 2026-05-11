@@ -22,7 +22,7 @@ German
 
 ## Overview
 
-We kindly invite to the opening ceremony of the recently founded [LMU Open Science Center](https://lmu-osc.github.io/).
+We kindly invite to the opening ceremony of the recently founded [LMU Open Science Center](../../).
 
 The center aims at fostering the engagement for open, transparent, and reproducible research. This goal is supported by: Research on research, training of researchers, and addressing relevant committees in order to create new and innovative incentive structures for open science (see <http://www.osc.uni-muenchen.de>).
 
