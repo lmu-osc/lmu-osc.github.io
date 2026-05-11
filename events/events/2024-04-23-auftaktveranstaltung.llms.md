@@ -22,7 +22,7 @@ Zum Start in das neue Semester möchte der ReproducibiliTea Journal Club euch ge
 
 **Ablauf: **Zu Beginn der Sitzung habt ihr die Möglichkeit mehr über unseren Journal Club und das Semesterprogramm zu erfahren. Danach habt ihr Zeit, euch bei Tee und Keksen kennenzulernen und zu vernetzen. 
 
-**Über den Journal Club: **[Hier](https://www.osc.uni-muenchen.de/meetups/reproducibilitea/index.html) findet ihr mehr Informationen über das Konzept des Journal Clubs.
+**Über den Journal Club: **[Hier](https://www.osc.lmu.de/partners/local-os-initiatives/reproducibilitea.html) findet ihr mehr Informationen über das Konzept des Journal Clubs.
 
 Ihr seid herzlich eingeladen, an unseren kommenden Treffen teilzunehmen! Um auf dem Laufenden zu bleiben und Benachrichtigungen über unsere Sessions und die ausgewählten Artikel zu erhalten, könnt ihr unsere Mailingliste abonnieren, entweder indem ihr auf den folgenden Link klickt, <https://lists.lrz.de/mailman/listinfo/reproducibilitea>, oder indem ihr uns eine E-Mail an [reproducibilitea.munich@gmail.com](mailto:reproducibilitea.munich@gmail.com "Send email to: reproducibilitea.munich@gmail.com") schreibt. Es ist nicht erforderlich, das behandelte Paper vor jeder Sitzung gelesen zu haben, es könnte allerdings von Vorteil sein.
 
