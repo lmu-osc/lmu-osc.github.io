@@ -151,6 +151,12 @@ h2{
             <span class="badge rounded-pill text-bg-secondary">Ben Fischer</span>
             <span class="badge rounded-pill text-bg-secondary">Clara Novak</span>
           </div>
+          <div class="d-flex flex-wrap align-items-center gap-2 mt-2">
+            <span class="small text-body-secondary fw-semibold text-nowrap">Hosts:</span>
+            <span class="badge rounded-pill text-bg-secondary">LMU Open Science Center</span>
+            <span class="badge rounded-pill text-bg-secondary">FORRT</span>
+            <span class="badge rounded-pill text-bg-secondary">PROFil</span>
+          </div>
         </div>
 
       <!-- end card-body -->
@@ -163,7 +169,7 @@ h2{
 
 
   <div class="card-footer">
-    Maybe Contact here? OR better would be the hosts to highlight them?
+    Questions? Contact the organizers: <a href="mailto:organizers@example.com">Person Name</a>
   </div>
 
 
