@@ -111,7 +111,9 @@ include-in-header:
   <!-- start row -->
   <div class="row g-0 align-items-center">
     <div class="col-md-2 px-2 d-none d-md-block">
-      <img src="/events/images/conference.svg" class="img-fluid d-block mx-auto rounded-start" alt="..."> 
+      <a href="#">
+        <img src="/events/images/conference.svg" class="img-fluid d-block mx-auto rounded-start" alt="...">
+      </a>
     </div>
 
 
