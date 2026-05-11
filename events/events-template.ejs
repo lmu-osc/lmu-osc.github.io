@@ -1,0 +1,508 @@
+```{=html}
+<%
+const monthAbbreviations = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+
+function padNumber(value) {
+	return String(value).padStart(2, '0');
+}
+
+function asArray(value) {
+	if (Array.isArray(value)) {
+		return value;
+	}
+
+	if (value === null || value === undefined || value === '') {
+		return [];
+	}
+
+	return [value];
+}
+
+function toDate(value) {
+	if (!value) {
+		return null;
+	}
+
+	if (value instanceof Date) {
+		return value;
+	}
+
+	const parts = String(value).split('-').map(Number);
+	if (parts.length !== 3 || parts.some(Number.isNaN)) {
+		return null;
+	}
+
+	return new Date(parts[0], parts[1] - 1, parts[2]);
+}
+
+function dateKey(value) {
+	const date = toDate(value);
+	if (!date) {
+		return '';
+	}
+
+	return `${date.getFullYear()}-${padNumber(date.getMonth() + 1)}-${padNumber(date.getDate())}`;
+}
+
+function formatDate(value) {
+	const date = toDate(value);
+	if (!date) {
+		return '';
+	}
+
+	return `${padNumber(date.getDate())} ${monthAbbreviations[date.getMonth()]}, ${date.getFullYear()}`;
+}
+
+function firstCategory(item) {
+	return asArray(item.categories)
+		.map((entry) => String(entry || '').trim())
+		.find(Boolean) || '';
+}
+
+function normalizeRoleEntries(value) {
+	return asArray(value)
+		.map((entry) => {
+			if (!entry) {
+				return null;
+			}
+
+			if (typeof entry === 'string') {
+				const name = entry.trim();
+				return name ? { name } : null;
+			}
+
+			const name = String(entry.name || '').trim();
+			const abbreviation = String(entry.abbreviation || '').trim();
+
+			if (!name && !abbreviation) {
+				return null;
+			}
+
+			return { ...entry, name, abbreviation };
+		})
+		.filter(Boolean);
+}
+
+function normalizeHostEntries(value) {
+	return asArray(value)
+		.map((entry) => {
+			if (!entry) {
+				return null;
+			}
+
+			if (typeof entry === 'string') {
+				const name = entry.trim();
+				return name ? { label: name, tooltip: name } : null;
+			}
+
+			const name = String(entry.name || '').trim();
+			const abbreviation = String(entry.abbreviation || '').trim();
+			const label = abbreviation || name;
+			const tooltip = name || abbreviation;
+
+			if (!label) {
+				return null;
+			}
+
+			return { ...entry, label, tooltip };
+		})
+		.filter(Boolean);
+}
+
+function normalizeContactEntries(value) {
+	return asArray(value)
+		.map((entry) => {
+			if (!entry) {
+				return null;
+			}
+
+			if (typeof entry === 'string') {
+				const name = entry.trim();
+				return name ? { name, email: '' } : null;
+			}
+
+			const name = String(entry.name || '').trim();
+			const email = String(entry.email || '').trim();
+
+			if (!name && !email) {
+				return null;
+			}
+
+			return { ...entry, name, email };
+		})
+		.filter(Boolean);
+}
+
+function formatEventMetaLine(event) {
+	const details = [];
+	const time = String(event.time || '').trim();
+	const location = event.location || {};
+	const locationParts = [location.name, location.address]
+		.map((entry) => String(entry || '').trim())
+		.filter(Boolean);
+	const eventType = String((event.format || {}).type || '').trim();
+	const languageCode = String((event.language || {})['primary-code'] || '').trim().toUpperCase();
+
+	if (time) {
+		details.push(time);
+	}
+
+	if (locationParts.length) {
+		details.push(locationParts.join(', '));
+	}
+
+	if (eventType) {
+		details.push(eventType);
+	}
+
+	if (languageCode) {
+		details.push(languageCode);
+	}
+
+	return details.join(' | ');
+}
+
+function cardDescription(item) {
+	const event = item.event || {};
+	const description = String(event.description || '').trim();
+	if (description) {
+		return description;
+	}
+
+	return String(item.event_description || '').trim();
+}
+
+function imageForCategory(category) {
+	const categoryImageMap = {
+		'Workshop': 'workshop.svg',
+		'Lecture': 'lecture.svg',
+		'Discussion': 'discussion.svg',
+		'Symposium': 'symposium.svg',
+		'Conference': 'conference.svg',
+		'Summer School': 'summer_school.svg',
+		'Hacky Hour': 'hacky_hour.svg',
+		'Event': 'event.svg',
+		'OSIM Meetup': 'event.svg',
+		'ReproducibiliTea Journal Club': 'reproducibilitea_logo.jpeg',
+		'Award': 'award.svg',
+		'Grant': 'grant.svg',
+		'Interview': 'interview.svg',
+		'Video': 'video.svg',
+		'Toolbox': 'toolbox.svg',
+		'Hackathon': 'event.svg',
+		'New Member': 'new_member.svg',
+		'New Institutional Member': 'new_institutional_member.svg',
+		'Panel Discussion Series': 'discussion.svg',
+		'Application call': 'event.svg'
+	};
+
+	if (category && categoryImageMap[category]) {
+		return categoryImageMap[category];
+	}
+
+	const slug = String(category || 'event')
+		.toLowerCase()
+		.replace(/[^a-z0-9]+/g, '_')
+		.replace(/^_+|_+$/g, '');
+
+	return `${slug || 'event'}.svg`;
+}
+
+const todayKey = dateKey(new Date());
+const cards = items
+	.map((item) => {
+		const event = item.event || {};
+		const startKey = dateKey(event.start_date);
+		const endKey = dateKey(event.end_date);
+		const sortKey = startKey || endKey || '';
+		const category = firstCategory(item);
+
+		return {
+			item,
+			event,
+			title: String(item.title || ''),
+			href: item.path || '#',
+			category,
+			imageFile: imageForCategory(category),
+			description: cardDescription(item),
+			startDate: event.start_date || '',
+			endDate: event.end_date || '',
+			sortKey,
+			year: sortKey ? sortKey.slice(0, 4) : '',
+			isUpcoming: sortKey ? sortKey >= todayKey : false,
+			organizers: normalizeRoleEntries(item.organizers),
+			presenters: normalizeRoleEntries(item.presenters),
+			instructors: normalizeRoleEntries(item.instructors),
+			helpers: normalizeRoleEntries(item.helpers),
+			hosts: normalizeHostEntries(item.host),
+			contacts: normalizeContactEntries(item.contact)
+		};
+	})
+	.filter((card) => card.sortKey);
+
+const upcomingCards = cards
+	.filter((card) => card.isUpcoming)
+	.sort((left, right) => left.sortKey.localeCompare(right.sortKey) || left.title.localeCompare(right.title));
+
+const pastCards = cards
+	.filter((card) => !card.isUpcoming)
+	.sort((left, right) => right.sortKey.localeCompare(left.sortKey) || left.title.localeCompare(right.title));
+
+const pastYears = [...new Set(pastCards.map((card) => card.year).filter(Boolean))].sort((left, right) => Number(right) - Number(left));
+%>
+
+<style>
+.card-header a {
+	text-decoration: none;
+	color: var(--osc-green);
+}
+
+.card-header a:hover {
+	text-decoration: underline;
+}
+
+.card-text-clamp {
+	display: -webkit-box;
+	line-clamp: 4;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 4;
+	overflow: hidden;
+}
+</style>
+
+<div class="container py-3">
+	<h2 class="mb-4">Upcoming Events</h2>
+
+	<% if (upcomingCards.length) { %>
+		<div class="d-grid gap-4">
+			<% upcomingCards.forEach((card) => { %>
+				<div class="card shadow-sm">
+					<div class="card-header d-flex align-items-center justify-content-between gap-2">
+						<a class="flex-grow-1 text-truncate fw-semibold fs-5 lh-sm" href="<%= card.href %>"><%= card.title %></a>
+						<% if (card.category) { %>
+							<span class="badge text-bg-light border ms-2 text-nowrap d-none d-md-block"><%= card.category %></span>
+						<% } %>
+					</div>
+
+					<div class="row g-0 align-items-stretch">
+						<div class="col-md-2 px-2 d-none d-md-flex align-items-center justify-content-center">
+							<a href="<%= card.href %>">
+								<img src="/events/images/<%= card.imageFile %>" class="img-fluid d-block mx-auto rounded-start" alt="<%= card.title %>">
+							</a>
+						</div>
+
+						<div class="col-md-10">
+							<div class="card-body">
+								<h6 class="card-subtitle mb-2">
+									<%= formatDate(card.startDate || card.endDate) %><% if (card.startDate && card.endDate && card.startDate !== card.endDate) { %> &ndash; <%= formatDate(card.endDate) %><% } %>
+								</h6>
+
+								<% const metaLine = formatEventMetaLine(card.event); %>
+								<% if (metaLine) { %>
+									<h6 class="card-subtitle mb-2 d-none d-md-block"><%= metaLine %></h6>
+								<% } %>
+
+								<% if (card.description) { %>
+									<p class="card-text card-text-clamp"><%= card.description %></p>
+								<% } %>
+
+								<div class="card-text">
+									<% if (card.organizers.length) { %>
+										<div class="d-flex flex-wrap align-items-center gap-2">
+											<span class="small text-body-secondary fw-semibold text-nowrap">Organizers:</span>
+											<% card.organizers.forEach((person) => { %>
+												<span class="badge rounded-pill text-bg-secondary"><%= person.name %></span>
+											<% }); %>
+										</div>
+									<% } %>
+
+									<% if (card.presenters.length) { %>
+										<div class="d-flex flex-wrap align-items-center gap-2 mt-2">
+											<span class="small text-body-secondary fw-semibold text-nowrap">Presenters:</span>
+											<% card.presenters.forEach((person) => { %>
+												<span class="badge rounded-pill text-bg-secondary"><%= person.name %></span>
+											<% }); %>
+										</div>
+									<% } %>
+
+									<% if (card.instructors.length) { %>
+										<div class="d-flex flex-wrap align-items-center gap-2 mt-2">
+											<span class="small text-body-secondary fw-semibold text-nowrap">Instructors:</span>
+											<% card.instructors.forEach((person) => { %>
+												<span class="badge rounded-pill text-bg-secondary"><%= person.name %></span>
+											<% }); %>
+										</div>
+									<% } %>
+
+									<% if (card.helpers.length) { %>
+										<div class="d-flex flex-wrap align-items-center gap-2 mt-2">
+											<span class="small text-body-secondary fw-semibold text-nowrap">Helpers:</span>
+											<% card.helpers.forEach((person) => { %>
+												<span class="badge rounded-pill text-bg-secondary"><%= person.name %></span>
+											<% }); %>
+										</div>
+									<% } %>
+
+									<% if (card.hosts.length) { %>
+										<div class="d-flex flex-wrap align-items-center gap-2 mt-2">
+											<span class="small text-body-secondary fw-semibold text-nowrap">Hosts:</span>
+											<% card.hosts.forEach((host) => { %>
+												<span class="badge rounded-pill text-bg-secondary" data-bs-toggle="tooltip" title="<%= host.tooltip %>"><%= host.label %></span>
+											<% }); %>
+										</div>
+									<% } %>
+
+									<% if (card.contacts.length) { %>
+										<div class="d-flex flex-wrap align-items-center gap-2 mt-2">
+											<span class="small text-body-secondary fw-semibold text-nowrap">Contact:</span>
+											<% card.contacts.forEach((contact) => { %>
+												<% if (contact.email) { %>
+													<a class="badge rounded-pill text-bg-secondary text-decoration-none" href="mailto:<%= contact.email %>"><%= contact.name || contact.email %></a>
+												<% } else { %>
+													<span class="badge rounded-pill text-bg-secondary"><%= contact.name %></span>
+												<% } %>
+											<% }); %>
+										</div>
+									<% } %>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="card-footer">
+						<div class="row g-2 align-items-center">
+							<div class="col"></div>
+							<div class="col-auto">
+								<a class="btn btn-primary btn-sm text-nowrap" href="<%= card.href %>">Read More</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			<% }); %>
+		</div>
+	<% } else { %>
+		<p class="text-body-secondary">No upcoming events.</p>
+	<% } %>
+
+	<h2 class="mt-5 mb-4">Past Events</h2>
+
+	<% if (pastYears.length) { %>
+		<% pastYears.forEach((year) => { %>
+			<h3 class="mt-4 mb-3"><%= year %></h3>
+
+			<div class="d-grid gap-4 mb-4">
+				<% pastCards.filter((card) => card.year === year).forEach((card) => { %>
+					<div class="card shadow-sm">
+						<div class="card-header d-flex align-items-center justify-content-between gap-2">
+							<a class="flex-grow-1 text-truncate fw-semibold fs-5 lh-sm" href="<%= card.href %>"><%= card.title %></a>
+							<% if (card.category) { %>
+								<span class="badge text-bg-light border ms-2 text-nowrap d-none d-md-block"><%= card.category %></span>
+							<% } %>
+						</div>
+
+						<div class="row g-0 align-items-stretch">
+							<div class="col-md-2 px-2 d-none d-md-flex align-items-center justify-content-center">
+								<a href="<%= card.href %>">
+									<img src="/events/images/<%= card.imageFile %>" class="img-fluid d-block mx-auto rounded-start" alt="<%= card.title %>">
+								</a>
+							</div>
+
+							<div class="col-md-10">
+								<div class="card-body">
+									<h6 class="card-subtitle mb-2">
+										<%= formatDate(card.startDate || card.endDate) %><% if (card.startDate && card.endDate && card.startDate !== card.endDate) { %> &ndash; <%= formatDate(card.endDate) %><% } %>
+									</h6>
+
+									<% const metaLine = formatEventMetaLine(card.event); %>
+									<% if (metaLine) { %>
+										<h6 class="card-subtitle mb-2 d-none d-md-block"><%= metaLine %></h6>
+									<% } %>
+
+									<% if (card.description) { %>
+										<p class="card-text card-text-clamp"><%= card.description %></p>
+									<% } %>
+
+									<div class="card-text">
+										<% if (card.organizers.length) { %>
+											<div class="d-flex flex-wrap align-items-center gap-2">
+												<span class="small text-body-secondary fw-semibold text-nowrap">Organizers:</span>
+												<% card.organizers.forEach((person) => { %>
+													<span class="badge rounded-pill text-bg-secondary"><%= person.name %></span>
+												<% }); %>
+											</div>
+										<% } %>
+
+										<% if (card.presenters.length) { %>
+											<div class="d-flex flex-wrap align-items-center gap-2 mt-2">
+												<span class="small text-body-secondary fw-semibold text-nowrap">Presenters:</span>
+												<% card.presenters.forEach((person) => { %>
+													<span class="badge rounded-pill text-bg-secondary"><%= person.name %></span>
+												<% }); %>
+											</div>
+										<% } %>
+
+										<% if (card.instructors.length) { %>
+											<div class="d-flex flex-wrap align-items-center gap-2 mt-2">
+												<span class="small text-body-secondary fw-semibold text-nowrap">Instructors:</span>
+												<% card.instructors.forEach((person) => { %>
+													<span class="badge rounded-pill text-bg-secondary"><%= person.name %></span>
+												<% }); %>
+											</div>
+										<% } %>
+
+										<% if (card.helpers.length) { %>
+											<div class="d-flex flex-wrap align-items-center gap-2 mt-2">
+												<span class="small text-body-secondary fw-semibold text-nowrap">Helpers:</span>
+												<% card.helpers.forEach((person) => { %>
+													<span class="badge rounded-pill text-bg-secondary"><%= person.name %></span>
+												<% }); %>
+											</div>
+										<% } %>
+
+										<% if (card.hosts.length) { %>
+											<div class="d-flex flex-wrap align-items-center gap-2 mt-2">
+												<span class="small text-body-secondary fw-semibold text-nowrap">Hosts:</span>
+												<% card.hosts.forEach((host) => { %>
+													<span class="badge rounded-pill text-bg-secondary" data-bs-toggle="tooltip" title="<%= host.tooltip %>"><%= host.label %></span>
+												<% }); %>
+											</div>
+										<% } %>
+
+											<% if (card.contacts.length) { %>
+												<div class="d-flex flex-wrap align-items-center gap-2 mt-2">
+													<span class="small text-body-secondary fw-semibold text-nowrap">Contact:</span>
+													<% card.contacts.forEach((contact) => { %>
+														<% if (contact.email) { %>
+															<a class="badge rounded-pill text-bg-secondary text-decoration-none" href="mailto:<%= contact.email %>"><%= contact.name || contact.email %></a>
+														<% } else { %>
+															<span class="badge rounded-pill text-bg-secondary"><%= contact.name %></span>
+														<% } %>
+													<% }); %>
+												</div>
+											<% } %>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="card-footer">
+							<div class="row g-2 align-items-center">
+								<div class="col"></div>
+								<div class="col-auto">
+									<a class="btn btn-primary btn-sm text-nowrap" href="<%= card.href %>">Read More</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				<% }); %>
+			</div>
+		<% }); %>
+	<% } else { %>
+		<p class="text-body-secondary">No past events yet.</p>
+	<% } %>
+</div>
+
+<script>
+const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+const tooltipList = [...tooltipTriggerList].map((tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl));
+</script>
