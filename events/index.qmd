@@ -76,31 +76,23 @@ include-in-header:
       <script src="/assets/javascript/clear_filter_button.js" defer></script>
       <script src="/assets/bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js" defer></script>
 ---
-<style>
-:root{
-  --theme-main: #00883A;
-  --theme-main-dark: #246f3f;
-}
-  
-.listing-actions-group{
-  gap:3rem;
-}
-h2{
-  border:none;
-}
-.btn-primary{
-  background: var(--theme-main) !important;
-  border: 1px solid var(--theme-main) !important;
-}
-.btn-primary:hover{
-  background: var(--theme-main-dark)!important;
-}
-</style>
 
 
 
 
 ```{=html}
+
+<style>
+.card-header a {
+  text-decoration: none;
+  color: var(--osc-green);
+}
+
+.card-header a:hover {
+  text-decoration: underline;
+}
+</style>
+
 <div class="card">
 
   <div class="card-header d-flex align-items-center justify-content-between gap-2">
