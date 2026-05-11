@@ -123,6 +123,16 @@
   flex-grow:1;
 }
 
+/* Clamp card text to a maximum of 4 lines (fallback for cards using .card-text) */
+.osc-upcoming-events .card-text,
+.osc-past-events .card-text {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 /* footer */
 .osc-upcoming-events .event-footer{
   display:flex;
