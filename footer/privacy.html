@@ -73,6 +73,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 <!-- Matomo: OSC primary + LMU secondary -->
 <script>
+if (location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') {
   var _paq = window._paq = window._paq || [];
 
   // Primary tracker (OSC instance)
@@ -94,6 +95,7 @@ ul.task-list li input[type="checkbox"] {
     g.src = u + 'matomo.js';
     s.parentNode.insertBefore(g, s);
   })();
+}
 </script>
 <!-- End Matomo Code -->
 
