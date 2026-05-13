@@ -39,7 +39,7 @@ Checkpoint: Manuscript submission with DOIs for preregistration, data, and code
 </div>
 ```
 
-<div class="accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle">
+<div class="accordion rh-accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle">
 <div class="accordion-item">
 <h2 class="accordion-header no-anchor" id="sec-fair-data-sharing">
 <button class="accordion-button collapsed fw-semibold d-flex align-items-center gap-3" type="button"
@@ -47,11 +47,11 @@ Checkpoint: Manuscript submission with DOIs for preregistration, data, and code
   data-bs-target="#collapseOne"
   aria-expanded="false">
 <span class="icon-wrapper rounded-4 bg-success-subtle text-primary p-3">
-<i class="bi bi-database-up m-0 fs-5"></i> 
+<i class="bi bi-database-up m-0 fs-4"></i> 
 </span>
 <div class="accordion-title">
 
-### FAIR Data Sharing {.fs-5}
+### FAIR Data Sharing 
 </div>
 </button>
 </h2>
@@ -464,7 +464,7 @@ _in construction_<!-- Reema? -->
 
 <!--second accordion-->
 
-<div class="accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle" id="accordionExample">
+<div class="accordion rh-accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle" id="accordionExample">
 <div class="accordion-item">
 <h2 class="accordion-header no-anchor" id="sec-open-source-code">
 <button class="accordion-button collapsed fw-semibold d-flex align-items-center gap-3" type="button"
@@ -472,11 +472,11 @@ _in construction_<!-- Reema? -->
   data-bs-target="#collapseTwo"
   aria-expanded="false">
 <span class="icon-wrapper rounded-4 bg-success-subtle text-primary p-3 d-flex align-items-center justify-content-center">
-<i class="bi bi-file-code m-0 fs-5"></i> 
+<i class="bi bi-file-code m-0 fs-4"></i> 
 </span>
 <div class="accordion-title">
 
-### Open Source Code {.fs-5}
+### Open Source Code 
 </div>
 </button>
 </h2>
@@ -765,7 +765,7 @@ To publish you code on Zenodo, we recommend to<!-- these instructions contradict
 
 <!--third accordion-->
 
-<div class="accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle" id="accordionExample">
+<div class="accordion rh-accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle" id="accordionExample">
 <div class="accordion-item">
 <h2 class="accordion-header no-anchor" id="sec-open-materials">
 <button class="accordion-button collapsed fw-semibold d-flex align-items-center gap-3" type="button"
@@ -773,11 +773,11 @@ To publish you code on Zenodo, we recommend to<!-- these instructions contradict
   data-bs-target="#collapseThree"
   aria-expanded="false">
 <span class="icon-wrapper rounded-4 bg-success-subtle text-primary p-3 d-flex align-items-center justify-content-center">
-<i class="bi bi-journal-arrow-up m-0 fs-5"></i> 
+<i class="bi bi-journal-arrow-up m-0 fs-4"></i> 
 </span>
 <div class="accordion-title">
 
-### Open Materials {.fs-5}
+### Open Materials
 </div>
 </button>
 </h2>
@@ -878,7 +878,7 @@ Regardless of your discipline:
 
 <!--forth accordion-->
 
-<div class="accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle" id="accordionExample">
+<div class="accordion rh-accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle" id="accordionExample">
 <div class="accordion-item">
 <h2 class="accordion-header no-anchor" id="sec-open-access-articles">
 <button class="accordion-button collapsed fw-semibold d-flex align-items-center gap-3" type="button"
@@ -886,11 +886,11 @@ Regardless of your discipline:
   data-bs-target="#collapseFour"
   aria-expanded="false">
 <span class="icon-wrapper rounded-4 bg-success-subtle text-primary p-3 d-flex align-items-center justify-content-center">
-<i class="bi bi-unlock2 m-0 fs-5"></i> 
+<i class="bi bi-unlock2 m-0 fs-4"></i> 
 </span>
 <div class="accordion-title">
 
-### Open Access Articles {.fs-5}
+### Open Access Articles 
 </div>
 </button>
 </h2>
@@ -917,8 +917,6 @@ Depending on the contract negotiated by the University and each publisher (see [
 :::{.callout-note}
 ## Definitions
 [**preprint**]{.underline}: article, book chapter, book, or other scholarly work that is deposited in a repository with unrestricted access (i.e. available to the public to view online, or download, without registration, payment, or approval) ahead of peer review. Equivalent terms used in some disciplines are ‘working paper’ and ‘unpublished manuscript’.
-
-<br>
 
 [**postprint**]{.underline}: accepted version of an article, book chapter, book, or other scholarly work that is released by the author(s) on a repository with unrestricted access (i.e. available to the public to view online, or download, without registration, payment, or approval)
 :::
@@ -1161,7 +1159,7 @@ To get support for [Open Access LMU](https://epub.ub.uni-muenchen.de/), the LMU 
 
 <!--fifth accordion-->
 
-<div class="accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle" id="accordionExample">
+<div class="accordion rh-accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle" id="accordionExample">
 <div class="accordion-item">
 <h2 class="accordion-header no-anchor" id="sec-attributions-and-persistent-identifiers">
 <button class="accordion-button collapsed fw-semibold d-flex align-items-center gap-3" type="button"
@@ -1169,11 +1167,11 @@ To get support for [Open Access LMU](https://epub.ub.uni-muenchen.de/), the LMU 
   data-bs-target="#collapseFive"
   aria-expanded="false">
 <span class="icon-wrapper rounded-4 bg-success-subtle text-primary p-3 d-flex align-items-center justify-content-center">
-<i class="bi bi-person-badge m-0 fs-5"></i> 
+<i class="bi bi-person-badge m-0 fs-4"></i> 
 </span>
 <div class="accordion-title">
 
-### Attributions & Persistent Identifiers {.fs-5}
+### Attributions & Persistent Identifiers 
 </div>
 </button>
 </h2>

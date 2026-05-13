@@ -40,24 +40,24 @@ Checkpoints: Study Plan Presentation & Preregistration Submission
 ```
 
 <!-- first accordion -->
-<div class="accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle" id="accordion-explore-reuse">
+<div class="accordion rh-accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle" id="accordion-explore-reuse">
 <div class="accordion-item">
 <h2 class="accordion-header no-anchor" id="sec-explore-reuse">
 <button class="accordion-button collapsed fw-semibold d-flex align-items-center gap-3" type="button"
   data-bs-toggle="collapse"
   data-bs-target="#collapseOne"
   aria-expanded="false">
-<span class="icon-wrapper rounded-4 bg-success-subtle text-primary p-3">
-<i class="bi bi-search m-0 fs-5"></i>
+<span class="icon-wrapper rounded-4 text-primary bg-success-subtle p-3">
+<i class="bi bi-search m-0 fs-4"></i>
 </span>
 <div class="accordion-title">
 
-### Explore & Reuse {.fs-5}
+### Explore & Reuse
 </div>
 </button>
 </h2>
 <div id="collapseOne" class="accordion-collapse collapse">
-<div class="accordion-body p-4" style="line-height:1.75;text-align:justify;">
+<div class="accordion-body p-4">
 
 Any resource that inspires you or that you want to reuse and/or adapt must minimally be **cited using their persistent identifiers** e.g. DOIs (Digital Object Identifiers) - and otherwise URL with author, date, and time of access - and you must **follow the license and/or usage agreement** provided by the authors. 
 A research output (e.g. data, code) without a license or statement granting your permission for reuse cannot legally be reused even if they appear publicly online.
@@ -69,6 +69,7 @@ A research output (e.g. data, code) without a license or statement granting your
 #### 1.1.1. Articles
 
 * **Review existing literature** to come up with a well-founded research question. We recommend to use open source discipline-agnostic registries like [OpenAlex](https://openalex.org/) which contains published articles, thesis, and preprints (scholarly work that are not (yet) peer-reviewed) of all disciplines, or discipline-specific open source registries such as [Europe PubMed Central](https://europepmc.org/) for life sciences preprints and published articles.
+
 * **Use a reference manager** to keep track of your bibliography. [Zotero](https://www.zotero.org/) is an open source software formatting your bibliography in any desired format and that can be integrated within e.g. Microsoft Word, Google Doc, or RStudio for writing reproducible manuscripts (see [3. Analyze & Collaborate](03-analyze-and-collaborate.qmd){.mark}).
 
 
@@ -488,7 +489,7 @@ Code publicly visible on GitHub without a license or equivalent text explicitly 
 
 <!-- second accordion -->
 
-<div class="accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle" id="accordion-legal-requirements">
+<div class="accordion rh-accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle" id="accordion-legal-requirements">
 <div class="accordion-item">
 <h2 class="accordion-header no-anchor" id="sec-legal-requirements">
 <button class="accordion-button collapsed fw-semibold d-flex align-items-center gap-3" type="button"
@@ -496,16 +497,16 @@ Code publicly visible on GitHub without a license or equivalent text explicitly 
   data-bs-target="#collapseTwo"
   aria-expanded="false">
 <span class="icon-wrapper rounded-4 bg-success-subtle text-primary p-3">
-<i class="bi bi-shield-check m-0 fs-5"></i>
+<i class="bi bi-shield-check m-0 fs-4"></i>
 </span>
 <div class="accordion-title">
 
-### Legal Requirements {.fs-5}
+### Legal Requirements
 </div>
 </button>
 </h2>
 <div id="collapseTwo" class="accordion-collapse collapse">
-<div class="accordion-body p-4" style="line-height:1.75;text-align:justify;">
+<div class="accordion-body p-4">
 
 :::{.content}
 :::{.panel-tabset}
@@ -681,7 +682,7 @@ For data protection guidance, contact the [LMU Data Protection Officer](https://
 
 <!-- third accordion -->
 
-<div class="accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle" id="accordion-research-data-management">
+<div class="accordion rh-accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle" id="accordion-research-data-management">
 <div class="accordion-item">
 <h2 class="accordion-header no-anchor" id="sec-research-data-management">
 <button class="accordion-button collapsed fw-semibold d-flex align-items-center gap-3" type="button"
@@ -689,16 +690,16 @@ For data protection guidance, contact the [LMU Data Protection Officer](https://
   data-bs-target="#collapseThree"
   aria-expanded="false">
 <span class="icon-wrapper rounded-4 bg-success-subtle text-primary p-3">
-<i class="bi bi-folder2-open fs-5 m-0"></i>
+<i class="bi bi-folder2-open fs-4 m-0"></i>
 </span>
 <div class="accordion-title">
 
-### Research Data Management Plans {.fs-5}
+### Research Data Management Plans
 </div>
 </button>
 </h2>
 <div id="collapseThree" class="accordion-collapse collapse">
-<div class="accordion-body p-4" style="line-height:1.75;text-align:justify;">
+<div class="accordion-body p-4">
 
 :::{.content}
 
@@ -842,7 +843,7 @@ The specific questions vary by discipline, data type, and funder requirements. D
 </div>
 
 <!-- fourth accordion -->
-<div class="accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle" id="accordion-study-design-analysis-plan">
+<div class="accordion rh-accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle" id="accordion-study-design-analysis-plan">
 <div class="accordion-item">
 <h2 class="accordion-header no-anchor" id="sec-study-design-analysis-plan">
 <button class="accordion-button collapsed fw-semibold d-flex align-items-center gap-3" type="button"
@@ -850,16 +851,16 @@ The specific questions vary by discipline, data type, and funder requirements. D
   data-bs-target="#collapseFour"
   aria-expanded="false">
 <span class="icon-wrapper rounded-4 bg-success-subtle text-primary p-3">
-<i class="bi bi-clipboard-check m-0 fs-5"></i>
+<i class="bi bi-clipboard-check m-0 fs-4"></i>
 </span>
 <div class="accordion-title">
 
-### Study Design & Analysis Plan {.fs-5}
+### Study Design & Analysis Plan
 </div>
 </button>
 </h2>
 <div id="collapseFour" class="accordion-collapse collapse">
-<div class="accordion-body p-4" style="line-height:1.75;text-align:justify;">
+<div class="accordion-body p-4">
 
 :::{.content}
 

@@ -39,7 +39,7 @@ Checkpoints: Repository & Code Peer-Review + Result Presentation
 ```
 <!--first accordion-->
 
-<div class="accordion handbook-accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle" id="accordionExample">
+<div class="accordion rh-accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle" id="accordionExample">
 <div class="accordion-item">
 <h2 class="accordion-header no-anchor" id="sec-data-processing-analysis">
 <button class="accordion-button collapsed fw-semibold d-flex align-items-center gap-3" type="button"
@@ -47,11 +47,11 @@ Checkpoints: Repository & Code Peer-Review + Result Presentation
   data-bs-target="#collapseOne"
   aria-expanded="false">
 <span class="icon-wrapper rounded-4 bg-success-subtle text-primary p-3">
-<i class="bi bi-gear-wide-connected m-0 fs-5"></i> 
+<i class="bi bi-gear-wide-connected m-0 fs-4"></i> 
 </span>
 <div class="accordion-title">
 
-### Data Processing & Analysis {.fs-5}
+### Data Processing & Analysis 
 </div>
 </button>
 </h2>
@@ -566,7 +566,7 @@ Example README to allow team members to review your code:
 
 <!--second accordion-->
 
-<div class="accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle" id="accordionExample">
+<div class="accordion rh-accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle" id="accordionExample">
 <div class="accordion-item">
 <h2 class="accordion-header no-anchor fs-6" id="sec-reporting-results">
 <button class="accordion-button collapsed fw-semibold d-flex align-items-center gap-3" type="button"
@@ -574,11 +574,11 @@ Example README to allow team members to review your code:
   data-bs-target="#collapseTwo"
   aria-expanded="false">
 <span class="icon-wrapper rounded-4 bg-success-subtle text-primary p-3">
-<i class="bi bi-file-earmark-richtext m-0 fs-5"></i> 
+<i class="bi bi-file-earmark-richtext m-0 fs-4"></i> 
 </span>
 <div class="accordion-title">
 
-### Reporting Results {.fs-5}
+### Reporting Results
 </div>
 </button>
 </h2>
