@@ -107,7 +107,7 @@ The OSPARK bootcamp is a 6-week online course and a 2-day onsite workshop all ab
 
 ##### [LMU Open Science Summer School 2026](events/events/2026-09-07-lmu-open-science-summer-school.llms.md)
 
-Save the date! Our annual Summer School will take place on Sept 7-11 (Track 1) and Sept 14-15 (Track 2), 2026. Registration will open early June.
+Save the date! Our annual Summer School will take place on Sept 7-11 (Track 1) and Sept 14-15 (Track 2), 2026. Registration will open on 01 June 2026.
 
 [See Event →](events/events/2026-09-07-lmu-open-science-summer-school.llms.md)
 

@@ -31,6 +31,8 @@ The LMU Open Science Center is hosting its **5th hybrid Open Science Summer Scho
 
 The summer school is designed to equip early career researchers and research support staff with practical Open Science skills through two complementary tracks.
 
+**Registration opens 01 June 2026!**
+
 ### Track 1: Open Science knowledge and skills
 
 **07–11 September 2026**
@@ -78,7 +80,7 @@ For more information and full program, visit: <http://lmu-osc.github.io/Open-Sci
 
 #### Instructors
 
-- Sarah von Grebmer
+- Sarah von Grebmer zu Wolfsthurn
 - Malika Ihle
 - Sara Lil Middleton
 - Laura Meier
@@ -86,6 +88,7 @@ For more information and full program, visit: <http://lmu-osc.github.io/Open-Sci
 - Florian Kohrt
 - Reema Gupta
 - Edouard Bonneville
+- Sophie Renard
 
 #### Helpers
 
