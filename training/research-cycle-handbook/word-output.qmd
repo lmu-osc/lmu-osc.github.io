@@ -1,0 +1,22 @@
+---
+format:
+  docx:
+    toc: true
+---
+
+
+# 1. Plan & Design
+
+{{< include _plan-and-design.qmd >}}
+
+# 2. Collect & Manage
+
+{{< include _collect-and-manage.qmd >}}
+
+# 3. Analyze & Collaborate
+
+{{< include _analyze-and-collaborate.qmd >}}
+
+# 4. Preserve & Share
+
+{{< include _preserve-and-share.qmd >}}
