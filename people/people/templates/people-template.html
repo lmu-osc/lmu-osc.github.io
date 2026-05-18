@@ -79,7 +79,11 @@
       <div class="people-info">
         <p class="people-position">$position$</p>
         $if(faculty)$
+        $if(strip_faculty_label)$
+        <p class="people-faculty">$faculty$</p>
+        $else$
         <p class="people-faculty">Faculty of $faculty$</p>
+        $endif$
         $endif$
         <div class="people-contact">
           $if(email)$

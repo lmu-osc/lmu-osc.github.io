@@ -206,10 +206,20 @@ local function transform_social_media(meta)
   return transformed
 end
 
+local function is_university_library(faculty)
+  local f = trim(faculty)
+  if f == "" then
+    return false
+  end
+  return f:lower() == "university library"
+end
+
 function Meta(meta)
   local position, faculty = derive_position_and_faculty(meta)
   meta.position = pandoc.MetaString(position)
   meta.faculty = pandoc.MetaString(faculty)
+  -- set a boolean flag to allow templates to strip/hide the faculty label
+  meta.strip_faculty_label = pandoc.MetaBool(is_university_library(faculty))
   meta.links = order_links(meta)
 
   local transformed_social = transform_social_media(meta)
