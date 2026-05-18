@@ -175,6 +175,10 @@ The currently supported membership `type` values are:
 
 Most internal OSC and LMU roles use the same basic shape: `position` plus `faculty`.
 
+If a profile ever needs to suppress the `Faculty of` label in the rendered profile, an optional `strip-faculty-label` flag can be added to the most important membership entry. This flag defaults to `false` and should normally be omitted. When it is `true`, the template shows the raw `faculty` value instead of prefixing it.
+
+Entries whose faculty is `University Library` are handled automatically and will also render without the `Faculty of` text. The excluded-label list for this behavior lives in `people/people/templates/people_filter.lua` and can be expanded there if needed.
+
 ```yaml
 memberships:
   - type: staff
