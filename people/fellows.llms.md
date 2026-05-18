@@ -140,7 +140,7 @@ Math, Informatics & Stats
 
 [Laura Meier](../people/people/laura-meier.llms.md)
 
-B.Sc Student
+B.Sc
 
 University Library
 
