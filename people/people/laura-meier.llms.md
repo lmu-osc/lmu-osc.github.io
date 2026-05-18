@@ -4,7 +4,7 @@
 
 B.Sc Student
 
-Faculty of University Library
+University Library
 
 [laura.meier@ub.uni-muenchen.de](mailto:laura.meier@ub.uni-muenchen.de)
 
