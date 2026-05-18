@@ -42,7 +42,7 @@ Checkpoint: Data quality validation meeting
 <!--first accordion -->
 <div class="accordion rh-accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle" id="accordionExample">
 <div class="accordion-item">
-<h2 class="accordion-header no-anchor" id="sec-data-collection">
+<div class="accordion-header no-anchor" id="sec-data-collection">
 <button class="accordion-button collapsed fw-semibold d-flex align-items-center gap-3" type="button"
   data-bs-toggle="collapse"
   data-bs-target="#collapseOne"
@@ -55,7 +55,7 @@ Checkpoint: Data quality validation meeting
 ### Data Collection
 </div>
 </button>
-</h2>
+</div>
 
 <div id="collapseOne" class="accordion-collapse collapse">
 <div class="accordion-body p-4" style="line-height:1.75;text-align:justify;">
@@ -410,7 +410,7 @@ Data collection, in this context, consists in developing a judicious reproducibl
 
 <div class="accordion rh-accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle" id="accordionExample">
 <div class="accordion-item">
-<h2 class="accordion-header no-anchor" id="sec-data-management">
+<div class="accordion-header no-anchor" id="sec-data-management">
 <button class="accordion-button collapsed fw-semibold d-flex align-items-center gap-3" type="button"
   data-bs-toggle="collapse"
   data-bs-target="#collapseTwo"
@@ -423,7 +423,7 @@ Data collection, in this context, consists in developing a judicious reproducibl
 ### Data Management 
 </div>
 </button>
-</h2>
+</div>
 <div id="collapseTwo" class="accordion-collapse collapse">
 <div class="accordion-body p-4" style="line-height:1.75;text-align:justify;">
 
@@ -937,7 +937,7 @@ In a version controlled workflow, you back up your local Git repositories on eit
 
 <div class="accordion rh-accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle" id="accordionExample">
 <div class="accordion-item">
-<h2 class="accordion-header no-anchor" id="sec-ethics-and-privacy">
+<div class="accordion-header no-anchor" id="sec-ethics-and-privacy">
 <button class="accordion-button collapsed fw-semibold d-flex align-items-center gap-3" type="button"
   data-bs-toggle="collapse"
   data-bs-target="#collapseThree"
@@ -950,7 +950,7 @@ In a version controlled workflow, you back up your local Git repositories on eit
 ### Ethics & Privacy
 </div>
 </button>
-</h2>
+</div>
 <div id="collapseThree" class="accordion-collapse collapse">
 <div class="accordion-body p-4" style="line-height:1.75;text-align:justify;">
 
@@ -1096,7 +1096,7 @@ For data protection guidance, contact the [LMU Data Protection Officer](https://
 
 <div class="accordion rh-accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle" id="accordionExample">
 <div class="accordion-item">
-<h2 class="accordion-header no-anchor" id="sec-quality-control">
+<div class="accordion-header no-anchor" id="sec-quality-control">
 <button class="accordion-button collapsed fw-semibold d-flex align-items-center gap-3" type="button"
   data-bs-toggle="collapse"
   data-bs-target="#collapseFour"
@@ -1109,7 +1109,7 @@ For data protection guidance, contact the [LMU Data Protection Officer](https://
 ### Quality Control
 </div>
 </button>
-</h2>
+</div>
 <div id="collapseFour" class="accordion-collapse collapse">
 <div class="accordion-body p-4" style="line-height:1.75;text-align:justify;">
 

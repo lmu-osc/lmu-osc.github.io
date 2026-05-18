@@ -41,7 +41,7 @@ Checkpoint: Manuscript submission with DOIs for preregistration, data, and code
 
 <div class="accordion rh-accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle">
 <div class="accordion-item">
-<h2 class="accordion-header no-anchor" id="sec-fair-data-sharing">
+<div class="accordion-header no-anchor" id="sec-fair-data-sharing">
 <button class="accordion-button collapsed fw-semibold d-flex align-items-center gap-3" type="button"
   data-bs-toggle="collapse"
   data-bs-target="#collapseOne"
@@ -54,7 +54,7 @@ Checkpoint: Manuscript submission with DOIs for preregistration, data, and code
 ### FAIR Data Sharing 
 </div>
 </button>
-</h2>
+</div>
 <div id="collapseOne" class="accordion-collapse collapse">
 <div class="accordion-body p-4" style="line-height:1.75;text-align:justify;">
 
@@ -466,7 +466,7 @@ _in construction_<!-- Reema? -->
 
 <div class="accordion rh-accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle" id="accordionExample">
 <div class="accordion-item">
-<h2 class="accordion-header no-anchor" id="sec-open-source-code">
+<div class="accordion-header no-anchor" id="sec-open-source-code">
 <button class="accordion-button collapsed fw-semibold d-flex align-items-center gap-3" type="button"
   data-bs-toggle="collapse"
   data-bs-target="#collapseTwo"
@@ -479,7 +479,7 @@ _in construction_<!-- Reema? -->
 ### Open Source Code 
 </div>
 </button>
-</h2>
+</div>
 <div id="collapseTwo" class="accordion-collapse collapse">
 <div class="accordion-body p-4" style="line-height:1.75;text-align:justify;">
 
@@ -767,7 +767,7 @@ To publish you code on Zenodo, we recommend to<!-- these instructions contradict
 
 <div class="accordion rh-accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle" id="accordionExample">
 <div class="accordion-item">
-<h2 class="accordion-header no-anchor" id="sec-open-materials">
+<div class="accordion-header no-anchor" id="sec-open-materials">
 <button class="accordion-button collapsed fw-semibold d-flex align-items-center gap-3" type="button"
   data-bs-toggle="collapse"
   data-bs-target="#collapseThree"
@@ -780,7 +780,7 @@ To publish you code on Zenodo, we recommend to<!-- these instructions contradict
 ### Open Materials
 </div>
 </button>
-</h2>
+</div>
 
 <div id="collapseThree" class="accordion-collapse collapse">
 <div class="accordion-body p-4" style="line-height:1.75;text-align:justify;">
@@ -880,7 +880,7 @@ Regardless of your discipline:
 
 <div class="accordion rh-accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle" id="accordionExample">
 <div class="accordion-item">
-<h2 class="accordion-header no-anchor" id="sec-open-access-articles">
+<div class="accordion-header no-anchor" id="sec-open-access-articles">
 <button class="accordion-button collapsed fw-semibold d-flex align-items-center gap-3" type="button"
   data-bs-toggle="collapse"
   data-bs-target="#collapseFour"
@@ -893,7 +893,7 @@ Regardless of your discipline:
 ### Open Access Articles 
 </div>
 </button>
-</h2>
+</div>
 
 <div id="collapseFour" class="accordion-collapse collapse">
 <div class="accordion-body p-4" style="line-height:1.75;text-align:justify;">
@@ -1161,7 +1161,7 @@ To get support for [Open Access LMU](https://epub.ub.uni-muenchen.de/), the LMU 
 
 <div class="accordion rh-accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle" id="accordionExample">
 <div class="accordion-item">
-<h2 class="accordion-header no-anchor" id="sec-attributions-and-persistent-identifiers">
+<div class="accordion-header no-anchor" id="sec-attributions-and-persistent-identifiers">
 <button class="accordion-button collapsed fw-semibold d-flex align-items-center gap-3" type="button"
   data-bs-toggle="collapse"
   data-bs-target="#collapseFive"
@@ -1174,7 +1174,7 @@ To get support for [Open Access LMU](https://epub.ub.uni-muenchen.de/), the LMU 
 ### Attributions & Persistent Identifiers 
 </div>
 </button>
-</h2>
+</div>
 
 <div id="collapseFive" class="accordion-collapse collapse">
 <div class="accordion-body p-4" style="line-height:1.75;text-align:justify;">

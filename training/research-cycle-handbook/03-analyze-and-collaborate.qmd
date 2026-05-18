@@ -41,7 +41,7 @@ Checkpoints: Repository & Code Peer-Review + Result Presentation
 
 <div class="accordion rh-accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle" id="accordionExample">
 <div class="accordion-item">
-<h2 class="accordion-header no-anchor" id="sec-data-processing-analysis">
+<div class="accordion-header no-anchor" id="sec-data-processing-analysis">
 <button class="accordion-button collapsed fw-semibold d-flex align-items-center gap-3" type="button"
   data-bs-toggle="collapse"
   data-bs-target="#collapseOne"
@@ -54,7 +54,7 @@ Checkpoints: Repository & Code Peer-Review + Result Presentation
 ### Data Processing & Analysis 
 </div>
 </button>
-</h2>
+</div>
 <div id="collapseOne" class="accordion-collapse collapse">
 <div class="accordion-body p-4" style="line-height:1.75;text-align:justify;">
 
@@ -568,7 +568,7 @@ Example README to allow team members to review your code:
 
 <div class="accordion rh-accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle" id="accordionExample">
 <div class="accordion-item">
-<h2 class="accordion-header no-anchor fs-6" id="sec-reporting-results">
+<div class="accordion-header no-anchor fs-6" id="sec-reporting-results">
 <button class="accordion-button collapsed fw-semibold d-flex align-items-center gap-3" type="button"
   data-bs-toggle="collapse"
   data-bs-target="#collapseTwo"
@@ -581,7 +581,7 @@ Example README to allow team members to review your code:
 ### Reporting Results
 </div>
 </button>
-</h2>
+</div>
 <div id="collapseTwo" class="accordion-collapse collapse">
 <div class="accordion-body p-4" style="line-height:1.75;text-align:justify;">
 
