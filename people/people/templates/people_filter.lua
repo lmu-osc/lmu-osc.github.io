@@ -24,6 +24,43 @@ local function list_length(value)
   return #value
 end
 
+local excluded_faculty_labels = {
+  "University Library"
+}
+
+local function strip_faculty_label(faculty, membership)
+  if membership ~= nil then
+    local membership_flag = membership["strip-faculty-label"]
+    if membership_flag == nil then
+      membership_flag = membership.strip_faculty_label
+    end
+
+    if type(membership_flag) == "boolean" then
+      if membership_flag then
+        return true
+      end
+    elseif membership_flag ~= nil then
+      local membership_flag_text = trim(membership_flag):lower()
+      if membership_flag_text == "true" or membership_flag_text == "yes" or membership_flag_text == "1" then
+        return true
+      end
+    end
+  end
+
+  local faculty_label = trim(faculty)
+  if faculty_label == "" then
+    return false
+  end
+
+  for _, excluded_label in ipairs(excluded_faculty_labels) do
+    if faculty_label == excluded_label then
+      return true
+    end
+  end
+
+  return false
+end
+
 local function membership_sort_key(membership, type_priority)
   local membership_type = trim(membership.type)
   local idx = type_priority[membership_type]
@@ -76,9 +113,10 @@ local function derive_position_and_faculty(meta)
   local memberships = get_meta(meta, "memberships", pandoc.List({}))
   local position = ""
   local faculty = ""
+  local should_strip_faculty_label = false
 
   if list_length(memberships) == 0 then
-    return position, faculty
+    return position, faculty, false
   end
 
   local type_priority = {
@@ -125,9 +163,11 @@ local function derive_position_and_faculty(meta)
     elseif trim(best_membership.affiliation) ~= "" then
       faculty = trim(best_membership.affiliation)
     end
+
+    should_strip_faculty_label = strip_faculty_label(faculty, best_membership)
   end
 
-  return position, faculty
+  return position, faculty, should_strip_faculty_label
 end
 
 local function order_links(meta)
@@ -207,9 +247,11 @@ local function transform_social_media(meta)
 end
 
 function Meta(meta)
-  local position, faculty = derive_position_and_faculty(meta)
+  local position, faculty, strip_faculty_label = derive_position_and_faculty(meta)
   meta.position = pandoc.MetaString(position)
   meta.faculty = pandoc.MetaString(faculty)
+  -- set a boolean flag to allow templates to strip/hide the faculty label
+  meta.strip_faculty_label = pandoc.MetaBool(strip_faculty_label)
   meta.links = order_links(meta)
 
   local transformed_social = transform_social_media(meta)
