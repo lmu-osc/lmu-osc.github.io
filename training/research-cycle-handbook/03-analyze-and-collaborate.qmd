@@ -46,7 +46,7 @@ Checkpoints: Repository & Code Peer-Review + Result Presentation
   data-bs-toggle="collapse"
   data-bs-target="#collapseOne"
   aria-expanded="false">
-<span class="icon-wrapper rounded-4 bg-success-subtle text-primary p-3">
+<span class="icon-wrapper rounded-4 bg-success-subtle text-success p-3">
 <i class="bi bi-gear-wide-connected m-0 fs-4"></i> 
 </span>
 <div class="accordion-title">
@@ -56,7 +56,7 @@ Checkpoints: Repository & Code Peer-Review + Result Presentation
 </button>
 </div>
 <div id="collapseOne" class="accordion-collapse collapse">
-<div class="accordion-body p-4" style="line-height:1.75;text-align:justify;">
+<div class="accordion-body p-4">
 
 ::: {.content}
 Data processing and analysis should be reproducible – independent of which software, programming language, or operating system you use. 
@@ -573,7 +573,7 @@ Example README to allow team members to review your code:
   data-bs-toggle="collapse"
   data-bs-target="#collapseTwo"
   aria-expanded="false">
-<span class="icon-wrapper rounded-4 bg-success-subtle text-primary p-3">
+<span class="icon-wrapper rounded-4 bg-success-subtle text-success p-3">
 <i class="bi bi-file-earmark-richtext m-0 fs-4"></i> 
 </span>
 <div class="accordion-title">
@@ -583,7 +583,7 @@ Example README to allow team members to review your code:
 </button>
 </div>
 <div id="collapseTwo" class="accordion-collapse collapse">
-<div class="accordion-body p-4" style="line-height:1.75;text-align:justify;">
+<div class="accordion-body p-4">
 
 ::: {.content}
 

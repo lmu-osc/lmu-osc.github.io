@@ -46,7 +46,7 @@ Checkpoint: Manuscript submission with DOIs for preregistration, data, and code
   data-bs-toggle="collapse"
   data-bs-target="#collapseOne"
   aria-expanded="false">
-<span class="icon-wrapper rounded-4 bg-success-subtle text-primary p-3">
+<span class="icon-wrapper rounded-4 bg-success-subtle text-success p-3">
 <i class="bi bi-database-up m-0 fs-4"></i> 
 </span>
 <div class="accordion-title">
@@ -56,7 +56,7 @@ Checkpoint: Manuscript submission with DOIs for preregistration, data, and code
 </button>
 </div>
 <div id="collapseOne" class="accordion-collapse collapse">
-<div class="accordion-body p-4" style="line-height:1.75;text-align:justify;">
+<div class="accordion-body p-4">
 
 ::: {.container}
 Sharing your data allows others to verify your findings, build on your work, and increase the impact of your research. But sharing does not always mean making everything publicly available. What you can share depends on the consent you obtained, the sensitivity of your data, and your ethics approval.
@@ -471,7 +471,7 @@ _in construction_<!-- Reema? -->
   data-bs-toggle="collapse"
   data-bs-target="#collapseTwo"
   aria-expanded="false">
-<span class="icon-wrapper rounded-4 bg-success-subtle text-primary p-3 d-flex align-items-center justify-content-center">
+<span class="icon-wrapper rounded-4 bg-success-subtle text-success p-3">
 <i class="bi bi-file-code m-0 fs-4"></i> 
 </span>
 <div class="accordion-title">
@@ -481,7 +481,7 @@ _in construction_<!-- Reema? -->
 </button>
 </div>
 <div id="collapseTwo" class="accordion-collapse collapse">
-<div class="accordion-body p-4" style="line-height:1.75;text-align:justify;">
+<div class="accordion-body p-4">
 
 ::: {.content}
 
@@ -772,7 +772,7 @@ To publish you code on Zenodo, we recommend to<!-- these instructions contradict
   data-bs-toggle="collapse"
   data-bs-target="#collapseThree"
   aria-expanded="false">
-<span class="icon-wrapper rounded-4 bg-success-subtle text-primary p-3 d-flex align-items-center justify-content-center">
+<span class="icon-wrapper rounded-4 bg-success-subtle text-success p-3">
 <i class="bi bi-journal-arrow-up m-0 fs-4"></i> 
 </span>
 <div class="accordion-title">
@@ -783,7 +783,7 @@ To publish you code on Zenodo, we recommend to<!-- these instructions contradict
 </div>
 
 <div id="collapseThree" class="accordion-collapse collapse">
-<div class="accordion-body p-4" style="line-height:1.75;text-align:justify;">
+<div class="accordion-body p-4">
 
 ::: {.content}
 
@@ -885,7 +885,7 @@ Regardless of your discipline:
   data-bs-toggle="collapse"
   data-bs-target="#collapseFour"
   aria-expanded="false">
-<span class="icon-wrapper rounded-4 bg-success-subtle text-primary p-3 d-flex align-items-center justify-content-center">
+<span class="icon-wrapper rounded-4 bg-success-subtle text-success p-3">
 <i class="bi bi-unlock2 m-0 fs-4"></i> 
 </span>
 <div class="accordion-title">
@@ -896,7 +896,7 @@ Regardless of your discipline:
 </div>
 
 <div id="collapseFour" class="accordion-collapse collapse">
-<div class="accordion-body p-4" style="line-height:1.75;text-align:justify;">
+<div class="accordion-body p-4">
 
 ::: {.content}
 
@@ -1166,7 +1166,7 @@ To get support for [Open Access LMU](https://epub.ub.uni-muenchen.de/), the LMU 
   data-bs-toggle="collapse"
   data-bs-target="#collapseFive"
   aria-expanded="false">
-<span class="icon-wrapper rounded-4 bg-success-subtle text-primary p-3 d-flex align-items-center justify-content-center">
+<span class="icon-wrapper rounded-4 bg-success-subtle text-success p-3">
 <i class="bi bi-person-badge m-0 fs-4"></i> 
 </span>
 <div class="accordion-title">
@@ -1177,7 +1177,7 @@ To get support for [Open Access LMU](https://epub.ub.uni-muenchen.de/), the LMU 
 </div>
 
 <div id="collapseFive" class="accordion-collapse collapse">
-<div class="accordion-body p-4" style="line-height:1.75;text-align:justify;">
+<div class="accordion-body p-4">
 
 ::: {.content}
 All research outputs and their specific versions should be linked to their authors, organizations, and funders through persistent identifiers.
@@ -1377,10 +1377,10 @@ Not all items are relevant for all fields of research or study types.
 - [ ] Monitor citations and usage metrics of all research outputs
 
 ::: {.d-flex .justify-content-center .mt-4 .orc-checklist-download .phase-4} 
-<!-- RL hasn't created button for checklist 4 yet -->
 
 <a href="assets/checklists/04-Preserve-Share-Checklist.docx" class="btn btn-outline-secondary btn-sm">Download checklist <i class="bi bi-download"></i></a>
 <!-- need to update manually the  downloadable file with checklist in word doc-->
+
 :::
 
 :::

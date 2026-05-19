@@ -47,7 +47,7 @@ Checkpoint: Data quality validation meeting
   data-bs-toggle="collapse"
   data-bs-target="#collapseOne"
   aria-expanded="false">
-<span class="icon-wrapper rounded-4 bg-success-subtle text-primary p-3">
+<span class="icon-wrapper rounded-4 bg-success-subtle text-success p-3">
 <i class="bi bi-journal-code m-0 fs-4"></i>
 </span>
 <div class="accordion-title">
@@ -58,7 +58,7 @@ Checkpoint: Data quality validation meeting
 </div>
 
 <div id="collapseOne" class="accordion-collapse collapse">
-<div class="accordion-body p-4" style="line-height:1.75;text-align:justify;">
+<div class="accordion-body p-4">
 
 ::: {.content}
 
@@ -415,7 +415,7 @@ Data collection, in this context, consists in developing a judicious reproducibl
   data-bs-toggle="collapse"
   data-bs-target="#collapseTwo"
   aria-expanded="false">
-<span class="icon-wrapper rounded-4 bg-success-subtle text-primary p-3">
+<span class="icon-wrapper rounded-4 bg-success-subtle text-success p-3">
 <i class="bi bi-folder-check m-0 fs-4"></i>
 </span>
 <div class="accordion-title">
@@ -425,7 +425,7 @@ Data collection, in this context, consists in developing a judicious reproducibl
 </button>
 </div>
 <div id="collapseTwo" class="accordion-collapse collapse">
-<div class="accordion-body p-4" style="line-height:1.75;text-align:justify;">
+<div class="accordion-body p-4">
 
 ::: {.content}
 
@@ -942,7 +942,7 @@ In a version controlled workflow, you back up your local Git repositories on eit
   data-bs-toggle="collapse"
   data-bs-target="#collapseThree"
   aria-expanded="false">
-<span class="icon-wrapper rounded-4 bg-success-subtle text-primary p-3">
+<span class="icon-wrapper rounded-4 bg-success-subtle text-success p-3">
 <i class="bi bi-shield-lock m-0 fs-4"></i>
 </span>
 <div class="accordion-title">
@@ -952,7 +952,7 @@ In a version controlled workflow, you back up your local Git repositories on eit
 </button>
 </div>
 <div id="collapseThree" class="accordion-collapse collapse">
-<div class="accordion-body p-4" style="line-height:1.75;text-align:justify;">
+<div class="accordion-body p-4">
 
 ::: {.content}
 
@@ -1101,7 +1101,7 @@ For data protection guidance, contact the [LMU Data Protection Officer](https://
   data-bs-toggle="collapse"
   data-bs-target="#collapseFour"
   aria-expanded="false">
-<span class="icon-wrapper rounded-4 bg-success-subtle text-primary p-3">
+<span class="icon-wrapper rounded-4 bg-success-subtle text-success p-3">
 <i class="bi bi-check2-square m-0 fs-4"></i>
 </span>
 <div class="accordion-title">
@@ -1111,7 +1111,7 @@ For data protection guidance, contact the [LMU Data Protection Officer](https://
 </button>
 </div>
 <div id="collapseFour" class="accordion-collapse collapse">
-<div class="accordion-body p-4" style="line-height:1.75;text-align:justify;">
+<div class="accordion-body p-4">
 
 ::: {.content}
 
