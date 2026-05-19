@@ -66,7 +66,7 @@ The [RDM Information team](https://www.ub.lmu.de/en/open-access-publishing/resea
 - Research data management plans (e.g. with the tool [RDMO](https://rdmo.ub.lmu.de))
 - FAIR data practices (findable, accessible, interoperable, reusable)
 - Data publication and repositories, including [Open Data LMU](https://data.ub.uni-muenchen.de)
-- Electronic Lab Notebooks (ELNs), including eLabFTW, for structured research documentation
+- Electronic Lab Notebooks (ELNs), including [eLabFTW](https://elab.ub.lmu.de/), for structured research documentation
 
 Information on research data management is centrally available on [Research Data LMU](https://fdm.ub.lmu.de).
 
