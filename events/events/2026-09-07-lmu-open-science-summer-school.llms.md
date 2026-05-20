@@ -31,7 +31,7 @@ The LMU Open Science Center is hosting its **5th hybrid Open Science Summer Scho
 
 The summer school is designed to equip early career researchers and research support staff with practical Open Science skills through two complementary tracks.
 
-**Registration opens 01 June 2026!**
+**Apply or register now!**
 
 ### Track 1: Open Science knowledge and skills
 
@@ -89,6 +89,7 @@ For more information and full program, visit: <http://lmu-osc.github.io/Open-Sci
 - Reema Gupta
 - Edouard Bonneville
 - Sophie Renard
+- Flavio Azevedo
 
 #### Helpers
 

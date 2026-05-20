@@ -14,13 +14,13 @@ EN
 
 LMU Open Science Summer School 2026
 
-Save the date! Our annual Summer School will take place on Sept 7-11 (Track 1) and Sept 14-15 (Track 2), 2026. Registration will open on 01 June 2026.
+Save the date! Our annual Summer School will take place on Sept 7-11 (Track 1) and Sept 14-15 (Track 2), 2026.
 
 Organizer(s): Sarah von Grebmer zu Wolfsthurn
 
 Presenter(s): Alexander Wuttke, Richard McElreath, Tim Errington, Jonas Hagenberg, Danny Maupin
 
-Instructor(s): Sarah von Grebmer zu Wolfsthurn, Malika Ihle, Sara Lil Middleton, Laura Meier, Pat Callahan, Florian Kohrt, Reema Gupta, Edouard Bonneville, Sophie Renard
+Instructor(s): Sarah von Grebmer zu Wolfsthurn, Malika Ihle, Sara Lil Middleton, Laura Meier, Pat Callahan, Florian Kohrt, Reema Gupta, Edouard Bonneville, Sophie Renard, Flavio Azevedo
 
 Helper(s): Elizabeth Waterfield
 
