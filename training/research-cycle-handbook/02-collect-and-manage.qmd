@@ -38,12 +38,29 @@ Checkpoint: Data quality validation meeting
 </div>
 </div>
 ```
-<details class="orc-details-panel">
-<summary><i class="bi bi-journal-code"></i>
 
-### Data Collection {#sec-data-collection}
+<!--first accordion -->
+<div class="accordion rh-accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle" id="accordionExample">
+<div class="accordion-item">
+<div class="accordion-header no-anchor" id="sec-data-collection">
+<button class="accordion-button collapsed fw-semibold d-flex align-items-center gap-3" type="button"
+  data-bs-toggle="collapse"
+  data-bs-target="#collapseOne"
+  aria-expanded="false">
+<span class="icon-wrapper rounded-4 bg-success-subtle text-success p-3">
+<i class="bi bi-journal-code m-0 fs-4"></i>
+</span>
+<div class="accordion-title">
 
-</summary>
+### Data Collection
+</div>
+</button>
+</div>
+
+<div id="collapseOne" class="accordion-collapse collapse">
+<div class="accordion-body p-4">
+
+::: {.content}
 
 Your data acquisition procedures must be documented in sufficient detail to allow replication by another researcher (see [LMU Guidelines for Safeguarding Good Scientific Practice](https://cms-cdn.lmu.de/media/contenthub/amtliche-veroeffentlichungen/gwp-ordnung.pdf)). Reproducible data collection processes build team expertise, reduce errors, and improve data quality and consistency.
 
@@ -56,19 +73,16 @@ State-of-the-art practices for reproducible data acquisition include:
 - **build in automation through programming**
 :::
 
-<!-- why is there a weird white space between the frame and the text in this call outbox?-->
-::: {.callout-note .mx-4}
+::: {.callout-note}
 ## Definition
 [**Metadata**]{.underline} are data about data; they provide context to your data. Metadata such as equipment settings, environmental conditions, software versions, and calibration records should be recorded contemporaneously, not reconstructed afterward. Electronic lab notebooks, instrument logs, and automated logging all help to document your metadata.
 :::
 
-<!-- why is there a weird white space between the frame and the text in this call outbox?-->
-::: {.callout-tip .mx-4}
+::: {.callout-tip}
 ## Tips for research groups to streamline this process
 - **Create standard data acquisition procedures within the team.** From step-by-step wet-lab procedure, to the settings of measuring devices and the reproducible data pre-processing using script, all regularly repeated steps should be documented and standardized to be replicated precisely by all team members. 
 - **Share standard operating procedures** through common server space such as [LRZ Sync & Share](https://syncandshare.lrz.de/login), specialized online tools like [protocols.io](https://www.protocols.io/) or electronic lab notebooks, or [LRZ GitLab](https://gitlab.lrz.de/users/sign_in) for scripts.
 :::
-
 
 ::: {.panel-tabset}
 
@@ -76,14 +90,11 @@ State-of-the-art practices for reproducible data acquisition include:
 
 Your protocol should specify materials with identifying details (e.g. lot numbers, versions, sources), equipment settings, step-by-step instructions with timing, and expected outcomes at each stage. What counts as "materials" varies by field: reagent concentrations in wet lab work, scanner parameters in neuroimaging, sampling coordinates in field ecology. But the principle is the same: enough detail that someone else could replicate your procedure exactly.
 
-<br>
-
 - **Write detailed methods and reusable protocols.** Write your protocol before you start, with all the details that would be needed for an exact replication (see the ReproducibiliTeach [lecture on reusable protocols](https://youtu.be/aKiXFzj15dg?si=ilB8aOsXArphMpfm))
 
 - **Track deviations in real time.** Follow your protocol precisely, and record any deviations as they happen. When you need to adapt, note it immediately. These deviations often explain unexpected results and guide protocol improvements. **Electronic lab notebooks (ELNs)** make this easier by creating version-controlled, timestamped records automatically, providing an audit trail that paper cannot match.
 
 - **Publish your protocols.** A detailed, tested protocol is a contribution to your field. Publishing establishes priority, enables citation, and makes your methods reusable. Platforms like [protocols.io](https://www.protocols.io/) provide version control and DOI assignment.
-
 
 
 ::: {.container .my-4 }
@@ -178,11 +189,9 @@ Your protocol should specify materials with identifying details (e.g. lot number
 
 **Document both the instrument and the administration procedure completely.** The data dictionary (or 'codebook') should record the exact version of the questionnaire used; if copyright allows it, document the item wording itself. 
 
-<br>
 
 Questionnaires should be objective, reliable, and valid:
 
-<br>
 
 - **Objective:** Results should not depend on who administers or scores the questionnaire.
 - **Reliable:** Responses should be consistent across repeated measurements when the underlying construct is unchanged (i.e., they should have low measurement error)
@@ -195,7 +204,6 @@ For well-validated instruments, published studies extensively assess reliability
 
 When data comes from instruments, sensors, or APIs (Application Programming Interface), scripting the acquisition creates a reproducible record of exactly what was collected and how. Programming languages like R or Python work well for straightforward pipelines. For more complex multi-step workflows which are common in e.g. in bioinformatics and neuroimaging, workflow managers like [Snakemake](https://snakemake.readthedocs.io/) ensure steps run in the correct order and can resume after failures.
 
-<br>
 
 - **Structure data correctly from the start.** Variables in columns, observations in rows. This makes your data immediately interoperable with analysis tools rather than requiring cleanup later. Scripts can also automate organization, file renaming, and conversion to open formats. See [2.2 Data Management](#sec-data-management){.mark} for guidelines.
 
@@ -262,7 +270,6 @@ When data comes from instruments, sensors, or APIs (Application Programming Inte
 
 Field and sometimes lab researchers have to work with analogue notebooks first, and use temporary storage solution for images and video-recordings.
 
-<br>
 
 - **Digitalize your data soon after data collection**, e.g. using data entry form from a relational database such as [postgreSQL](https://www.postgresql.org/)
 - **Create automatic validation checks** for data entry so e.g. values outside of expected range get immediately identified (see [2.4. Quality control](#sec-quality-control){.mark})
@@ -303,7 +310,6 @@ Field and sometimes lab researchers have to work with analogue notebooks first, 
 
 A high-quality systematic review, whether it includes a meta-analysis or not, uses a **rigorous, transparent, and reproducible methodology to select the relevant literature** and later provide a thorough summary and critical evaluation of research within a given field. Its defining features include:
 
-<br>
 
 - clearly defined objectives supported by an explicit and reproducible methodology
 - a comprehensive, systematic search designed to identify all studies meeting the eligibility criteria
@@ -312,7 +318,6 @@ A high-quality systematic review, whether it includes a meta-analysis or not, us
 
 Data collection, in this context, consists in developing a judicious reproducible methods to selecting relevant literature. 
 
-<br>
 
 -  **Use tools** such as  
 
@@ -393,18 +398,36 @@ Data collection, in this context, consists in developing a judicious reproducibl
 :::
 
 :::
+:::
+:::
+</div>
+</div>
+</div>
+</div>
 
 
+<!--second accordion -->
 
-</details>
+<div class="accordion rh-accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle" id="accordionExample">
+<div class="accordion-item">
+<div class="accordion-header no-anchor" id="sec-data-management">
+<button class="accordion-button collapsed fw-semibold d-flex align-items-center gap-3" type="button"
+  data-bs-toggle="collapse"
+  data-bs-target="#collapseTwo"
+  aria-expanded="false">
+<span class="icon-wrapper rounded-4 bg-success-subtle text-success p-3">
+<i class="bi bi-folder-check m-0 fs-4"></i>
+</span>
+<div class="accordion-title">
 
+### Data Management 
+</div>
+</button>
+</div>
+<div id="collapseTwo" class="accordion-collapse collapse">
+<div class="accordion-body p-4">
 
-<details class="orc-details-panel">
-<summary><i class="bi bi-folder-check"></i>
-
-### Data Management {#sec-data-management}
- 
-</summary>
+::: {.content}
 
 In [1. Plan & Design](01-plan-and-design.qmd){.mark} you created a Research Data Management Plan. It's now time to put this plan into practice, refining it as you learn what actually works for your project.
 
@@ -431,8 +454,6 @@ What follows are general practices. Your domain has specific conventions for fil
 #### 2.2.1. Storage
 
 This section covers storage for data you are actively collecting. Long-term archiving for sharing is covered in [4. Preserve & Share](04-preserve-and-share.qmd){.mark}.
-
-<br>
 
 - **Use institutional storage.** LMU Munich provides storage such as [LRZ Sync and Share](https://syncandshare.lrz.de/login) or [LRZ DSS](https://doku.lrz.de/data-science-storage-10745685.html) with automated backups, access controls, and GDPR compliance. Additional options vary by department. Contact the [Research Data Management team of the University Library ](https://www.en.ub.uni-muenchen.de/writing/research_data/research-data-management/index.html) to find what is available to you. When choosing, consider how much data you will generate, who needs access, and whether your data includes personal information requiring stricter controls.
 - **Follow the 3-2-1 backup rule.** Keep three copies on two media types with one off-site. Designate one location as the master copy, the authoritative version everything else syncs from. Working with multiple "equal" copies creates version conflicts. Remember that syncing is not backup: if you delete a file from a synced folder, the deletion propagates everywhere. True backups preserve previous versions independently.
@@ -511,8 +532,6 @@ Personal laptops as primary storage, external drives as only copy, consumer clou
 
 Your folder structure and file naming conventions determine whether you and others can navigate your project months or years later. Establish these conventions at the start of your project and document them. When collaborating, ensure everyone follows the same system.
 
-<br>
-
 - **Separate raw from processed data.** Raw data should not be modified: once collected, these files should never be touched. All cleaning, data processing, transformations, and analyses happen on copies or through scripts in a separate folder. This preserves your ability to verify results or reprocess from the original source.
 
 - **Develop a file naming convention.** Good file names identify contents at a glance and sort correctly. Balance specificity with readability: too many elements make names unwieldy, too few make them ambiguous. Order elements from general to specific.
@@ -522,7 +541,6 @@ Your folder structure and file naming conventions determine whether you and othe
     - Use meaningful abbreviations and document what they mean
 
 A pattern like `YYYY-MM-DD_project_condition_type_v01.ext` places files in chronological order while preserving context. For example, `2024-03-15_sleep-study_control_survey_v02.csv` immediately tells you when it was created, which project it belongs to, the experimental condition, data type, and revision. Document your convention in a README file stored next to your data files so collaborators can parse filenames without asking.
-<br>
 
 - **Follow domain standards where they exist.** Many fields have established organizational conventions that tools and collaborators expect. Using these means your data can immediately be integrated in existing analysis pipelines and reviewers recognize the structure. Search [RDMkit](https://rdmkit.elixir-europe.org/your_domain) for standards in your domain.
 
@@ -603,7 +621,6 @@ A pattern like `YYYY-MM-DD_project_condition_type_v01.ext` places files in chron
 
 File format choices affect who can work with your data now and whether it remains readable in the future. Open formats have publicly documented specifications that anyone can implement, so many programs can read them and they remain accessible even if the original software disappears. Proprietary formats lock you into specific tools, complicate collaboration, and risk becoming unreadable if the company stops supporting them.
 
-<br>
 
 - **Keep raw data in its original format.** Whatever your instrument or source produces, preserve that original as your ground truth. Even if it is proprietary, you need it for verification and potential reprocessing.
 
@@ -613,7 +630,6 @@ File format choices affect who can work with your data now and whether it remain
 
 - **Check domain recommendations.** Your field likely has established conventions balancing openness with practical needs like performance or metadata preservation. Consult the [RDMKit](https://rdmkit.elixir-europe.org/your_domain) to find conventions for your field.
 
-<br>
 
 Format issues often surface during quality control. The [2.4. Quality Control](#sec-quality-control){.mark} panel below covers validation checks that can catch encoding problems, unexpected conversions, and structural inconsistencies early.
 
@@ -644,8 +660,6 @@ Format issues often surface during quality control. The [2.4. Quality Control](#
 #### 2.2.4. Documentation
 
 Without documentation, a dataset is just a collection of files. Six months from now, you will not remember what each column means, why certain values are missing, or how files relate to each other. Documentation makes your data usable by your future self, your collaborators, and any other researchers.
-
-<br>
 
 - **Create a README file (as .md or .txt) early and update it as you go.** Your README is the entry point to your project. Start it when you begin, not when preparing to publish. A good README answers the essential questions: who created the data, what it contains, when and where it was collected, why it was generated, how it was produced, and whether it can be reused. These answers let someone unfamiliar with your project understand and work with your data.
 - **Create a data dictionary defining every variable.** A data dictionary (or "codebook") makes your dataset self-explanatory. For each variable, document what it measures, its data type, valid values, units of measurement, and how missing data is coded. Use appropriate missing codes to distinguish why data is absent (declined to answer, not applicable, technical failure) since this distinction matters for analysis.
@@ -702,7 +716,6 @@ Without documentation, a dataset is just a collection of files. Six months from 
 
 Standards are community agreements on how to organize and describe research data. Using them means others in your field immediately understand your data. Three types of standards matter here:
 
-<br>
 
 - **Organizational standards** specify how to structure files and folders. Some fields have well-established conventions, like [BIDS](https://bids.neuroimaging.io/) for neuroimaging data. When such standards exist, use them. Your data will work immediately with existing tools, and collaborators will recognize the structure without explanation. If no standard exists for your domain, create a consistent structure and document it in your README. See for instance our [research project template](https://github.com/lmu-osc/research-project-template).
 
@@ -710,7 +723,6 @@ Standards are community agreements on how to organize and describe research data
 
 - **Metadata standards** define what descriptive information to record and how to structure it. Scientific metadata describes how your data was produced: equipment specifications, acquisition parameters, protocols followed. This is distinct from discovery metadata (titles, keywords, descriptions) which you will prepare when sharing in [4. Preserve & Share](04-preserve-and-share.qmd){.mark}. Your field has conventions for which parameters matter. [FAIRsharing](https://fairsharing.org/) catalogs metadata standards by discipline.<!-- include ref to discipline specific section when available -->
 
-<br> 
 
 **Think of your data as a first-class research output.** Comprehensive metadata transforms a project artifact into a reusable resource. Someone reanalyzing your data years later needs to understand exactly how it was produced.
 
@@ -792,7 +804,6 @@ Standards are community agreements on how to organize and describe research data
 
 Version control system like Git tracks changes to files over time. You can see what changed, when, and why. You can revert to previous versions. Collaborators can work without overwriting each other.
 
-<br>
 
 - **Git usually suffices for data files.** Text-based formats (CSV, JSON, plain text) and smaller binary files work well in standard Git repositories. You get a complete history of changes and can share easily via GitHub or GitLab. 
 
@@ -810,7 +821,6 @@ Version control system like Git tracks changes to files over time. You can see w
 
 While your LRZ GitLab account is associated with your LMU Munich affiliation, your GitHub account can be associated with your private email, be included in your CV, and be used for public sharing of your data and code (see [3. Analyze & Collaborate](03-analyze-and-collaborate.qmd){.mark} and [4. Preserve & Share](04-preserve-and-share.qmd){.mark}).  
 
-<br>
 
 In a version controlled workflow, you back up your local Git repositories on either GitHub or LRZ GitLab through a secure SSH connection (see [GitHub tutorial](https://lmu-osc.github.io/Collaborative-RStudio-GitHub/)) and share access to your repositories with your collaborators through the cloud-based platform GitHub or LRZ GitLab.
 
@@ -914,19 +924,37 @@ In a version controlled workflow, you back up your local Git repositories on eit
 :::
 
 :::
+:::
+:::
+</div>
+</div>
+</div>
+</div>
 
 
-
-</details>
-
+<!--third accordion -->
 
 
-<details class="orc-details-panel">
-<summary><i class="bi bi-shield-lock"></i>
+<div class="accordion rh-accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle" id="accordionExample">
+<div class="accordion-item">
+<div class="accordion-header no-anchor" id="sec-ethics-and-privacy">
+<button class="accordion-button collapsed fw-semibold d-flex align-items-center gap-3" type="button"
+  data-bs-toggle="collapse"
+  data-bs-target="#collapseThree"
+  aria-expanded="false">
+<span class="icon-wrapper rounded-4 bg-success-subtle text-success p-3">
+<i class="bi bi-shield-lock m-0 fs-4"></i>
+</span>
+<div class="accordion-title">
 
-### Ethics & Privacy {#sec-ethics-and-privacy}
+### Ethics & Privacy
+</div>
+</button>
+</div>
+<div id="collapseThree" class="accordion-collapse collapse">
+<div class="accordion-body p-4">
 
-</summary> 
+::: {.content}
 
 Research involving human participants requires ethics approval and data protection compliance. In your ethics proposal (see [1.2.3. Ethics](01-plan-and-design.qmd#sec-legal-requirements){.mark}) you planned for safeguards for the people contributing to your research and you now need to implement them before or while collecting your data.
 
@@ -937,7 +965,6 @@ Research involving human participants requires ethics approval and data protecti
 
 Participants have the right to understand what they are agreeing to. Your consent form should explain the research purpose in plain language, describe what data you will collect and how you will protect it, specify who will have access and for how long, and make clear that participation is voluntary. See "[How to write an informed consent form](https://www.uu.nl/en/research/research-data-management/guides/legal-considerations/how-to-write-an-informed-consent-form)" from the University to Utrecht and an [example template from the LMU Psychology Department](https://osf.io/mgwk8/files/fvgsx).
 
-<br>
 
 - **Use tiered consent when you plan to share data.** Some participants may consent to their data being used for your study but not shared publicly. Others may be comfortable with broader sharing. Giving options respects autonomy while maximizing what you can eventually share.
 
@@ -980,7 +1007,6 @@ Participants have the right to understand what they are agreeing to. Your consen
 
 Anonymization protects privacy and determines what you can share. 
 
-<br>
 
 - **Remove direct identifiers during collection.** Names, addresses, ID numbers, photographs, email addresses. Replace these with codes.
 
@@ -1051,25 +1077,46 @@ Anonymization protects privacy and determines what you can share.
 
 Research at LMU Munich must comply with EU data protection regulations. The core principles: have a lawful basis for processing personal data (usually consent or legitimate research interest), use data only for stated purposes, collect only what you need, delete data when you no longer need it, and protect it against unauthorized access.
 
-<br>
 
 **In practice:** document your lawful basis, include data protection language in consent forms, use institutional storage rather than personal cloud services, restrict access to those who need it, and plan when and how you will delete data.
 
-<br>
 
 For data protection guidance, contact the [LMU Data Protection Officer](https://www.lmu.de/en/about-lmu/structure/organizational-structure/officers-representatives-and-contact-persons/data-protection-officer.html) or the [Research Data Management team of the University Library ](https://www.en.ub.uni-muenchen.de/writing/research_data/research-data-management/index.html).
 
 :::
+:::
+</div>
+</div>
+</div>
+</div>
 
-</details>
+
+<!--forth accordion -->
 
 
-<details class="orc-details-panel">
-<summary><i class="bi bi-check2-square"></i>
+<div class="accordion rh-accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle" id="accordionExample">
+<div class="accordion-item">
+<div class="accordion-header no-anchor" id="sec-quality-control">
+<button class="accordion-button collapsed fw-semibold d-flex align-items-center gap-3" type="button"
+  data-bs-toggle="collapse"
+  data-bs-target="#collapseFour"
+  aria-expanded="false">
+<span class="icon-wrapper rounded-4 bg-success-subtle text-success p-3">
+<i class="bi bi-check2-square m-0 fs-4"></i>
+</span>
+<div class="accordion-title">
 
-### Quality Control {#sec-quality-control}
+### Quality Control
+</div>
+</button>
+</div>
+<div id="collapseFour" class="accordion-collapse collapse">
+<div class="accordion-body p-4">
+
+::: {.content}
+
 <!-- Reema: not sure tabs are needed here, could be h5 no anchor titles and ::: {.ms-1} block for lists, this is all done through the same tutorial, it seems there are several concepts that are the same just phrased differently, could be merged coherently to avoid redundancy and consolidate the structure and order of these concepts-->
-</summary>
+
 
 Quality control catches problems before they propagate into your analysis. The practices here ensure your data is trustworthy and your exclusions are well-founded.
 
@@ -1081,7 +1128,6 @@ Quality control catches problems before they propagate into your analysis. The p
 
 Validation checks whether your data meets specifications. For example, values can be verified to fall within valid ranges (e.g., age ≥ 0), required fields can be checked for missing entries, categorical variables can be restricted to allowed levels (e.g., "yes/no"), dates can be validated for proper format, and cross-variable constraints can be enforced (e.g., discharge date ≥ admission date). Run checks during collection to catch problems immediately, after collection for systematic review, and after any processing to verify transformations worked correctly.
 
-<br>
 
 - **Automate what you can.** Check that data types are correct, values fall within expected ranges, required fields are populated, and formats are consistent. These checks should run automatically and flag problems for review.
 
@@ -1121,7 +1167,6 @@ Validation checks whether your data meets specifications. For example, values ca
 
 Data cleaning handles errors, inconsistencies, and missing values. The cardinal rule: never modify your raw data. All cleaning happens on copies, ideally by scripts and not through manual changes.
 
-<br>
 
 - **Correct unambiguous errors.** Clear typos, obvious data entry mistakes. For ambiguous cases, flag them for review rather than making assumptions. Document your reasoning for every judgment call.
 
@@ -1135,7 +1180,6 @@ Data cleaning handles errors, inconsistencies, and missing values. The cardinal 
 
 Exclusion criteria specify which data points will be removed from analysis and why. Define these before you see your results (see [1.4. Study Design & Analysis Plan](01-plan-and-design.qmd#sec-study-design-analysis-plan){.mark}).
 
-<br>
 
 - **Review common exclusion criteria.** Technical failures (equipment malfunction, incomplete recording), protocol violations (wrong procedure followed, participant did not comply), quality thresholds (too much missing data, failed attention checks), and participant criteria (did not meet stated inclusion criteria).
 
@@ -1143,7 +1187,17 @@ Exclusion criteria specify which data points will be removed from analysis and w
 
 :::
 
-</details>
+
+:::
+
+</div>
+</div>
+</div>
+</div>
+
+
+<!--checklist -->
+
 
 
 ::: {.orc-gradient-box .collect-manage-checklist}
