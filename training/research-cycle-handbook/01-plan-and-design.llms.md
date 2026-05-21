@@ -15,6 +15,7 @@ Any resource that inspires you or that you want to reuse and/or adapt must minim
 ## 1.1.1. Articles
 
 - **Review existing literature** to come up with a well-founded research question. We recommend to use open source discipline-agnostic registries like [OpenAlex](https://openalex.org/) which contains published articles, thesis, and preprints (scholarly work that are not (yet) peer-reviewed) of all disciplines, or discipline-specific open source registries such as [Europe PubMed Central](https://europepmc.org/) for life sciences preprints and published articles.
+
 - **Use a reference manager** to keep track of your bibliography. [Zotero](https://www.zotero.org/) is an open source software formatting your bibliography in any desired format and that can be integrated within e.g. Microsoft Word, Google Doc, or RStudio for writing reproducible manuscripts (see [3. Analyze & Collaborate](../../training/research-cycle-handbook/03-analyze-and-collaborate.llms.md)).
 
 ####  LEARN MORE
@@ -46,8 +47,6 @@ Comprehensive access to life sciences literature.
 ## 1.1.2. Preregistrations
 
 A **preregistration** typically consists of a hypothesis and predictions, a plan for data collection (when relevant), and a plan for data analysis, that researchers upload onto a registry before starting their projects, often in order to increase the rigor of confirmatory research (see [1.4.1. Pre-analysis planning](#sec-study-design-analysis-plan)).
-
-  
 
 - **Get insight into projects that are not (yet) published**, either currently ongoing or abandoned, by looking for projects that were preregistered. Projects that are left unpublished typically have a note attached to their preregistration. Some registries are discipline-specific while others are discipline-agnostic (see below).
 
@@ -96,8 +95,6 @@ These platforms either give you access to existing data or provide ***metadata**
 >
 > ***Metadata*** are data about your data, such as author, date, measurement device, unit of measurement, context of data collection, etc.
 
-  
-
 ##### How to reuse a dataset?
 
 - **Review the license and data use agreement.** Make sure you understand what you are allowed to do with the data and under what conditions. Even if the license does not request attribution of the authors, scholarly norms require you to cite the source of the data for any of your work based on it.
@@ -108,8 +105,6 @@ These platforms either give you access to existing data or provide ***metadata**
 > **NOTE:**
 >
 > ***Confirmation bias***: The tendency to seek, interpret, and remember information that confirms one’s existing beliefs or expectations.
->
->   
 >
 > ***Hinsight bias*** Seeing past events as predictable after the outcome is known (“I knew it all along”).
 
@@ -148,8 +143,6 @@ General-purpose repository for data, software, reports.
 ## 1.1.4. Code
 
 **Find code available for reuse** archived on [Zenodo](https://zenodo.org/), [Software Heritage](https://www.softwareheritage.org) or actively developed on [GitHub](https://github.com/) and other code repositories. Start learning Git version control now or learn to take advantage of more collaborative features on the GitHub platform in more details in [3. Analyze & Collaborate](../../training/research-cycle-handbook/03-analyze-and-collaborate.llms.md).
-
-  
 
 > **IMPORTANT:**
 >
@@ -211,8 +204,6 @@ Cloud-based platform to collaborate on code.
 
 The [LMU Guidelines for Safeguarding Good Scientific Practice](https://cms-cdn.lmu.de/media/contenthub/amtliche-veroeffentlichungen/gwp-ordnung.pdf) are legally binding for all academics, researchers, research support staff, teachers, and students at LMU Munich. Only the original text in German prevails, but we provide an English summary of relevant aspects for this guide:
 
-  
-
 ##### Appropriate level of documentation and standards to allow ***reproduction***:
 
 - **Reproducible methods must be used.** (§11)
@@ -231,8 +222,6 @@ The [LMU Guidelines for Safeguarding Good Scientific Practice](https://cms-cdn.l
 
 In later sections, you will acquire skills in data management and reproducible workflow that will enable you to comply with these guidelines and the ***FAIR principles***.
 
-  
-
 > **NOTE:**
 >
 > The ***FAIR principles*** are defined as:
@@ -244,11 +233,7 @@ In later sections, you will acquire skills in data management and reproducible w
 >
 > ***Metadata*** are data about your data, such as author, date, measurement device, unit of measurement, context of data collection, etc.
 >
->   
->
 > ***Reproducibility***: The ability of a researcher to re-derive the same results using the *same data and methods*; also known as computational reproducibility.
->
->   
 >
 > ***Replicability***: The ability of an independent researcher to achieve results consistent with teh original study by following the same experimental or analytical approach but collecting *new data*.
 
@@ -270,8 +255,6 @@ Implementation of the German Research Foundation's (DFG) Code of Conduct
 
 Data collection and analyses involving human participants or animal subjects typically require approval from ethics committees to ensure responsible conduct and the protection of data.
 
-  
-
 #####  Your ethics proposal will typically include information on:
 
 - **Data storage and retention** – outlining how data will be securely stored, backed up, and retained over time. This information can be extracted from a more detailed Research Data Management plan (see [1.3. Research Data Management Plans](#sec-research-data-management)).
@@ -281,8 +264,6 @@ Data collection and analyses involving human participants or animal subjects typ
 - **Power analysis** to justify sample size – providing a statistical rationale for the number of participants, which supports the validity and ethical justification of the study. This, and more detailed information on the statistical plan, can be extracted from your pre-analysis plan (see [1.4.1. Pre-analysis planning](#sec-study-design-analysis-plan) and [1.4.3. Power analyses](#sec-study-design-analysis-plan)).
 
 For data protection guidance, contact the [LMU Data Protection Officer](https://www.lmu.de/en/about-lmu/structure/organizational-structure/officers-representatives-and-contact-persons/data-protection-officer.html) or the [Research Data Management team of the University Library](https://www.en.ub.uni-muenchen.de/writing/research_data/research-data-management/index.html).
-
-  
 
 > **TIP:**
 >
@@ -332,11 +313,7 @@ A **Data Management Plan (DMP)** documents how you will handle research data thr
 - **How will you share outputs** (repositories, licenses, embargo periods)? See our lecture “[Why share data openly?](https://lmu-osc.github.io/training/data-management/open-data.html)” and [4.1. FAIR Data Sharing](../../training/research-cycle-handbook/04-preserve-and-share.llms.md#sec-fair-data-sharing)
 - **What constraints apply** (consent, anonymization, GDPR, data use agreements)? See our lecture “[Maintaining privacy with open data](https://lmu-osc.github.io/training/data-management/maintaining-privacy-with-open-data.html)”, [1.2.3. Ethics](#sec-legal-requirements) and [2.3. Ethics & Privacy](../../training/research-cycle-handbook/02-collect-and-manage.llms.md#sec-ethics-and-privacy).
 
-  
-
 The specific questions vary by discipline, data type, and funder requirements. DMP tools like [RDMO](https://rdmo.ub.lmu.de/) guide you through the relevant questions with funder-specific templates.
-
-  
 
 > **TIP:**
 >
@@ -395,17 +372,11 @@ Examples of DMPs by discipline.
 
 Humans are prone to cognitive biases such as **confirmation bias** (seeking information that supports existing beliefs) and **hindsight bias** (believing outcomes were predictable after the fact). In research, these biases can distort findings, especially when researchers make analytic decisions after seeing results. Although statistical testing typically accepts a 5% false positive rate, **“researcher degrees of freedom”** — choices about data collection, exclusions, transformations, sample size, covariates, etc. — can dramatically inflate false positives when decisions are made post hoc. Practices like increasing sample size until reaching statistical significance, selectively removing outliers, or trying multiple analytic strategies **increase the likelihood of false-positive results**. See how easy it is to find false “significant” results by using our [p-hacking tool](https://shinyapps.org/apps/p-hacker/).
 
-  
-
 The core problem is that analyses guided by observed outcomes allow biases to influence decisions, making many reported effects unreliable. A key **remedy is transparency and preregistration.**
-
-  
 
 ##### Benefits of preregistration
 
 Preregistration, that is, specifying hypotheses, methods, and analysis plans before data collection or analysis, limits bias in confirmatory testing while still allowing exploratory analyses, clearly **distinguishing robust hypothesis tests from hypothesis-generating work**. This improves credibility, limits false positives, and often leads to better study design through **early methodological feedback**.
-
-  
 
 Preregistration can be beneficial for various type of studies, including:
 
@@ -413,15 +384,11 @@ Preregistration can be beneficial for various type of studies, including:
 - observational or exploratory studies: it will help you move along the exploratory-confirmatory continuum
 - qualitative studies: it will provide a way to document e.g. your positionality towards a subject in the course of a project.
 
-  
-
 #####  What is included in a preregistration?
 
 Several [preregistration templates](https://help.osf.io/article/330-welcome-to-registrations) exist. While the [standard Open Science Framework (OSF) preregistration template](https://docs.google.com/document/d/1gkN0Jp6Gu7GIA4Ne4YCDZ61nCLQRgt32moRdUg9AnVg/edit?tab=t.0#heading=h.fwbi14d4b65g) is most commonly used, some are tailored for specific field or specific methods (e.g. systematic review, qualitative work, secondary data analysis).
 
-  
-
-Your preregistration will define your study’s:  
+Your preregistration will define your study’s:
 
 - **Hypothesis and predictions**
 - **Data collection procedures**
@@ -429,21 +396,15 @@ Your preregistration will define your study’s:
 - **Variables** (manipulated, measured, indices)
 - **Statistical method** (model, dependent and independent variables, covariables, transformations)
 - **Data exclusion criteria**
-- **How to deal with missing data**  
+- **How to deal with missing data**
 
 A great tool to create your statistical plan, especially for early career researchers still learning statistics and needing feedback from supervisors, collaborators, or statisticians on their design, is to **simulate data, and write the possible statistical tests to analyze that data** (see [1.4.2. Simulation of data](#sec-study-design-analysis-plan) and [1.4.3. Power analyses](#sec-study-design-analysis-plan)). Including an analyses script (developed on simulated data) with your preregistration is optional but recommended.
 
-  
-
 To get support with planning your analytical approach, you can book a consultation with the [LMU statistical consulting unit (StaBLab)](https://www.stat.lmu.de/stablab/de/).
-
-  
 
 ##### Publishing process
 
 Once your study plan is finalized:
-
-  
 
 - **Submit your preregistration before collecting new or analyzing existing data.** You can do so on discipline specific registries (see [1.1.2. Preregistrations](#sec-explore-and-reuse)) or discipline agnostic repositories such as the [OSF](https://osf.io/).
 - **Embargo your plan if you are concerned about scooping.** On the OSF, your preregistration can be kept private for a predetermined amount of time, and for a maximum of 4 years.
@@ -451,13 +412,9 @@ Once your study plan is finalized:
 
 Creating a preregistration improves transparency and allows for valuable **early feedback from collaborators**. An even stronger approach is **submitting preregistrations directly to journals** (then called **“Registered Reports”**), enabling peer review at a stage where methodological adjustments are still possible.
 
-  
-
 ##### Registered Reports
 
 Registered Reports are a publication format, now adopted by over 300 journals (see [participating journals](https://www.cos.io/initiatives/registered-reports)), where **preregistrations are peer-reviewed before data collection**. Reviewers evaluate the hypotheses, methods, and planned analyses, allowing methodological improvements. If the plan is approved, the journal grants in-principle acceptance, meaning publication is guaranteed provided researchers follow the protocol.
-
-  
 
 After completing the study, authors add results and discussion sections, clearly separating preregistered confirmatory analyses from exploratory ones. Final review focuses on adherence to the approved plan and the validity of conclusions, not on whether results are significant. This model **shifts incentives toward asking important questions and using rigorous methods rather than chasing striking or ‘novel’ outcomes**.
 
@@ -497,8 +454,6 @@ Preregistration templates, embargoes, file storage.
 
 In our context, a computer simulation is the generation of artificial data to build up an understanding of real data and the statistical models we use to analyze them. You can simulate data to:
 
-  
-
 - **Test your statistical intuition or demonstrate mathematical properties you cannot easily anticipate**.  
   *Example: Check whether there are more than 5% significant effects (assuming \\\alpha = .05\\) when random data from \\H_0\\ are generated.*
 
@@ -510,8 +465,6 @@ In our context, a computer simulation is the generation of artificial data to bu
 
 - **Prepare a pre-analysis plan.**  
   *Example: To strengthen your planned confirmatory analyses before collecting data, consider sharing a simulated dataset with a statistician or mentor. This allows for specific feedback on suitable statistical tests. The resulting analysis code can accompany your preregistration or registered report (see [1.4.1. Pre-analysis planning](#sec-explore-and-reuse)) so reviewers can clearly see your intended approach. When real data are collected, they can be directly substituted into the code to generate results.*
-
-  
 
 Generating an artificial dataset in R (see our [simulation tutorial](https://lmu-osc.github.io/Introduction-Simulations-in-R/)) is much easier than you might think and is often very helpful, even when you need to make assumptions about variable distribution or when the parameter space is not well known.
 
@@ -539,13 +492,9 @@ Easy data simulations in R. (2h)
 
 Power analysis is relevant whether you are designing a project from scratch or running an analysis on already existing data. There are two main types of power analyses:
 
-  
-
 ##### A priori power analysis
 
 **Simulate data to calculate the smallest sample size required to detect the smallest effect of interest.** See our [advanced power analyses tutorial using R](https://lmu-osc.github.io/Simulations-for-Advanced-Power-Analyses/).
-
-  
 
 For a very basic power calculation, you can use simple R functions if you know 3 out of 4 of these parameters:
 
@@ -556,17 +505,11 @@ For a very basic power calculation, you can use simple R functions if you know 3
 
 To get support with pre-analysis planning, you can book a consultation with the [LMU statistical consulting unit (StaBLab)](https://www.stat.lmu.de/stablab/de/).
 
-  
-
 ##### Post-hoc power analysis
 
 **Compute a post-hoc power when you are not be able to control the sample size for your project.** Beware: This power computation comes in two flavors - one is legitimate, and one is flawed and not defensible.
 
-  
-
 The **legitimate post-hoc power** is computed with your actual *n*, and the same effect size that you plugged into your a-priori power analysis. This analysis gives you the achieved power to detect your assumed effect.
-
-  
 
 The **flawed version of post-hoc power** is called **“observed power”**: If an analysis yields a non-significant result, some researchers calculate the post-hoc power, but plug in the observed effect size. “Observed power”, however, is just a one‑to‑one function of the *p*‑value (a non-significant *p*-value returns a low power \< 50 %, a just significant *p*‑value of .05 always yields a power of exactly 50%). Observed power adds no new information to the *p*‑value and is essentially meaningless. Do not compute this type of post-hoc power!
 

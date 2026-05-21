@@ -76,17 +76,11 @@ Virtual machines and HPC for LMU Munich
 
 Version control tracks changes to files over time. You can see what changed, when, and why. You can revert to previous versions. Collaborators can work without overwriting each other.
 
-  
-
 In a version controlled workflow, you back up your local Git repositories on the cloud-based platforms GitHub or LRZ GitLab and share access to the online version of your repositories with your collaborators.
-
-  
 
 - **Learn to create git branches to collaborate on the same piece of code in a unique repository.** i.e. temporary copies where you can work without breaking the original source code, which you later merge back to the main branch (see [Advanced Git tutorial](https://lmu-osc.github.io/training/reproducible-processes/advanced-git.html)).
 
 - **Maintain efficient communication to coordinate collaborative work.** GitHub or GitLab facilitate collaboration through “issues” (a precise description of something to fix), “discussions” (asynchronous thinking through figuring out how to resolve a problem), and can still very well resolve “conflicts” (i.e. collaborators wanting to merge changes on the exact same line of script). To complement this, LMU Munich offers [LMU chat (Matrix)](https://www.lmu.de/de/die-lmu/struktur/zentrale-universitaetsverwaltung/informations-und-kommunikationstechnik-dezernat-vi/it-servicedesk/zentrale-it-angebote/lmu-chat-matrix/), a secured open source chat service with all LMU members on which you can also invite external collaborators.
-
-  
 
 > **NOTE:**
 >
@@ -102,11 +96,7 @@ In a version controlled workflow, you back up your local Git repositories on the
 >
 > If you work with **sensitive data**, you must not include the raw or processed data in the version-controlled repository that will end up being shared publicly.
 >
->   
->
 > Instead, explicitly **exclude the data directory using the .gitignore file from the start**, **or, at the time of sharing, create a new local repository that contains all project files except the data**.
->
->   
 >
 > Importantly, if data are removed from an existing repository, they may still remain accessible in the repository’s history, since previous states of the project can be restored. If sensitive data are accidentally committed and pushed, it is possible to [rewrite the repository history](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository) to remove them retrospectively. However, this process is complex and error-prone, so it is best avoided by ensuring that sensitive data are excluded from version control from the outset.
 
@@ -162,8 +152,6 @@ Institutional open source chat service for LMU Munich.
 
 Manage your computational environment by explicitly recording the software, package versions, and dependencies required for your analyses, ensuring results can be reproduced across systems and over time. Tools such as packages managers (e.g. [Renv](https://rstudio.github.io/renv/) for R packages, [Conda](https://anaconda.org/channels/anaconda/packages/conda/overview) for Python packages) or broader containers (e.g. [Docker](https://www.docker.com/) or [Binder](https://mybinder.org/)) help stabilize workflows and prevent inconsistencies caused by packages or software updates.
 
-  
-
 For a R project repository:
 
 - **Activate Renv to keep track of all packages versions** (see our [renv tutorial](https://lmu-osc.github.io/introduction-to-renv/)). This way, you or someone else can reproduce your results on another computer or at a later time using the same R packages versions.
@@ -217,8 +205,6 @@ Build and run user environment containers.
 ## 3.1.4. Documentation
 
 As with all documentation, your project repository’s documentation should be written early - initially for your near-future self to support efficient re-engagement after interruptions, then revised for internal team review, and ultimately expanded and refined for public sharing (see [4.2. Open Source Code](../../training/research-cycle-handbook/04-preserve-and-share.llms.md#sec-open-source-code)).
-
-  
 
 - **Create a README (e.g. a .md or .txt file) early and update it as you go.** Your README is the entry point to your project. A good README answers the essential questions: who created the script, what it contains, how they relate to other scripts and in which order scripts should be run, what the dependencies of the project are, how to obtain/access the input data, whether the code can be reused.
 - **Annotate your code explaining *why* you made a decision.** All parameter values used as input for a function, or other decisions, should be justified minimally as comments in your code to later be included in your manuscript. **Do not include sensitive information such as credentials or name of excluded patient as comments in your code!**
@@ -274,35 +260,21 @@ Your results should be **computationally reproducible** to ensure that the analy
 
 A practical way to make results and analysis decisions transparent and traceable is to use **literate programming**, which **combines narrative text** explaining the logic of the analysis with **executable code** that performs data processing and statistical procedures. **When the document is compiled, outputs such as tables, figures, and references are generated directly from the code and updated automatically whenever the code changes, ensuring that the reported methods and results remain consistent with the analysis.** This eliminates repeated copy-and-paste and reduces the risk of uncertainty about which version of, for example, a figure is actually included in the manuscript.
 
-  
-
 For users of R, Python, and Julia, **Quarto** has become the standard tool for creating reproducible reports, superseding R Markdown and enabling **rendering to formats such as HTML, PDF, and Microsoft Word** (see our [Quarto tutorial](https://lmu-osc.github.io/introduction-to-Quarto/)).
 
-  
-
 ##### Reproducible Analysis Report: The Minimum Standard for Computational Reproducibility
-
-  
 
 - **Create an analysis report with Quarto.** To make your results reproducible, you should provide the analysis code that creates the results of the manuscript with explanations for each of the steps. Quarto is an ideal tool for this (see [Quarto tutorial](https://lmu-osc.github.io/introduction-to-Quarto/)). Your analysis report should contain your research question, data loading instructions, preprocessing steps, statistical procedures, tables and figures, session info and software versions (in the report itself or in your README).
 
 This will facilitate your own revisions, code-review by your team, **reproducibility checks** that some journals conduct as part of peer-review, and verification of results reproducibility by other researchers. The code repository can be published with simulated, synthetic, or real data, depending on the project, together with the respective article (see [4.2. Open Source Code](../../training/research-cycle-handbook/04-preserve-and-share.llms.md#sec-open-source-code)).
 
-  
-
 Creating a reproducible analysis report in Quarto currently represents **state-of-the-art practice for demonstrating the computational reproducibility of a study**, and we recommend adopting this approach as a minimum standard.
 
-  
-
 Quarto can also be used to generate additional reporting outputs, such as manuscripts, presentations, and websites, in a fully reproducible manner. However, adopting a fully **reproducible workflow for all outputs will require additional coordination and time**, particularly when working with collaborators who use different tools or workflows.
-
-  
 
 ##### Reproducible Manuscript: The Ultimate Reproducible Report
 
 If you do not want to break the reproducibility chain by copy and pasting new results, tables, and figures into e.g. a Word document, you can write your entire manuscript in Quarto.
-
-  
 
 - **Include bibliographic references in your Quarto document**. You can directly source .bib files into your Quarto document or use the open source reference management software Zotero integrated in RStudio to cite articles and have them automatically formatted in any journal standards (see [Quarto tutorial](https://lmu-osc.github.io/introduction-to-Quarto/) and [Zotero tutorial](https://lmu-osc.github.io/introduction-to-zotero/)).
 
@@ -310,13 +282,9 @@ If you do not want to break the reproducibility chain by copy and pasting new re
 
 - **Adapt your workflow to your collaborators.** Ideally, all your team mates have also adopted the use of Git and GitHub or LRZ GitLab and the use of issues and branches to work collaboratively (see [3.1.2. Version Control](#sec-data-processing-analysis)). A compromise with collaborators who do not use Git is to render your draft manuscript to e.g. Word and share it through cloud-based collaborative document editing e.g. [LRZ Sync & Share](https://syncandshare.lrz.de/login) or [Google Docs](https://docs.google.com/) with collaborators using the suggestion / track changes mode. Then, the lead author transcribes all edits manually, or with the help of e.g. R packages such as `trackdown` or `officer`, and addresses all comments in their quarto version before re-rendering for a second round of revisions, potentially with additional analyses.
 
-  
-
 ##### Reproducible Presentations & Websites: Further Reproducible Outputs for Outreach
 
 Using the same Quarto environment, you can also:
-
-  
 
 - **Convert your analyses report into a reproducible presentation.** To get feedback on your analyses, you can output a report into a slide presentation with presenter notes. Slides remain dynamically linked to the underlying analyses. Any modification to the data or code automatically propagates to tables, visualizations, and reported results, eliminating inconsistencies between presentation and computation.
 
@@ -404,11 +372,7 @@ Institutional open source chat service for LMU Munich.
 
 Transparent and complete reporting is essential for the interpretation, verification, and reuse of scientific results. To support this, many disciplines have developed reporting guidelines that specify the **minimum information that should be included when describing study design, data collection, analysis, and results**. These guidelines help ensure that studies can be critically evaluated, replicated, and included in evidence syntheses such as systematic reviews and meta-analyses.
 
-  
-
 A central resource for such guidelines is the [EQUATOR Network](https://www.equator-network.org/reporting-guidelines/), an international initiative collecting and promoting reporting standards across many study types and disciplines.
-
-  
 
 #####  Typical items that should be reported include:
 
@@ -424,8 +388,6 @@ A central resource for such guidelines is the [EQUATOR Network](https://www.equa
 - **Data, code, and materials availability** – where readers can access datasets, analysis scripts, or supplementary materials to reproduce the analysis.
 
 A lot of these elements are those of a preregistration (see [1.4.1. Pre-analysis planning](../../training/research-cycle-handbook/01-plan-and-design.llms.md#sec-study-design-analysis-plan)). Describe them in your methods section, adding they were **planned a priori in your preregistration** and citing its DOI, and **separate results into e.g. preregistered confirmatory analyses and non-preregistered exploratory analyses**.
-
-  
 
 Some of these elements will be refined depending on your study type. Widely used examples of guidelines include [CONSORT](https://www.equator-network.org/reporting-guidelines/consort/) for randomized controlled trials, [ARRIVE](https://www.equator-network.org/reporting-guidelines/improving-bioscience-research-reporting-the-arrive-guidelines-for-reporting-animal-research/) for animal studies, and [PRISMA](https://www.equator-network.org/reporting-guidelines/prisma/) for systematic reviews.
 

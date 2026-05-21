@@ -79,7 +79,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-fe9b9235b005db5ae2ecbb674ed511fe.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-a7c386534ad53eac38c2d6ee6e5d9f27.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -486,17 +486,25 @@ Checkpoints: Repository &amp; Code Peer-Review + Result Presentation
 </div>
 </div>
 </div>
-<details class="orc-details-panel">
-<summary>
-<p><i class="bi bi-gear-wide-connected"></i></p>
-<section id="sec-data-processing-analysis" class="level3" data-number="3.1">
-<h3 data-number="3.1" class="anchored" data-anchor-id="sec-data-processing-analysis"><span class="header-section-number">3.1</span> Data Processing &amp; Analysis</h3>
-</section></summary>
+<!--first accordion-->
+<div id="accordionExample" class="accordion rh-accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle">
+<div class="accordion-item">
+<div id="sec-data-processing-analysis" class="accordion-header no-anchor">
+<button class="accordion-button collapsed fw-semibold d-flex align-items-center gap-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false">
+<span class="icon-wrapper rounded-4 bg-success-subtle text-success p-3"> <i class="bi bi-gear-wide-connected m-0 fs-4"></i> </span>
+<section id="data-processing-analysis" class="level3 accordion-title" data-number="3.1">
+<h3 data-number="3.1" class="anchored" data-anchor-id="data-processing-analysis"><span class="header-section-number">3.1</span> Data Processing &amp; Analysis</h3>
+</section>
+</button>
+</div>
+<div id="collapseOne" class="accordion-collapse collapse">
+<div class="accordion-body p-4">
+<div class="content">
 <p>Data processing and analysis should be reproducible – independent of which software, programming language, or operating system you use. This is best achieved by choosing automated <strong>script-based workflows</strong> (over manual point-and-click procedures), and supported by <strong>adequate documentation</strong> and shared code that allows others to regenerate results. Because analysis scripts are run repeatedly, due to iterative development through corrections and refinements, automation is <strong>essential for both reproducibility and efficiency</strong>. This section outlines a recommended workflow for R users.</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true" href="">3.1.1. Programming</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false" href="">3.1.2. Version Control</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-3" role="tab" aria-controls="tabset-2-3" aria-selected="false" href="">3.1.3. Computational Environment Management</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-4" role="tab" aria-controls="tabset-2-4" aria-selected="false" href="">3.1.4. Documentation</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">3.1.1. Programming</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">3.1.2. Version Control</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false" href="">3.1.3. Computational Environment Management</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-4" role="tab" aria-controls="tabset-1-4" aria-selected="false" href="">3.1.4. Documentation</a></li></ul>
 <div class="tab-content">
-<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
 <ul>
 <li><strong>Create a self-contained project folder</strong>. Include data, code, documentation, and outputs in a single structured environment, ensuring the project remains understandable, reproducible, and portable across systems and collaborators. If you use the free and open source software RStudio to manage your R project, your project directory (or folder) should contain a .Rproj file (see <a href="https://lmu-osc.github.io/introduction-to-R/">R tutorial</a>). <strong>Use relative paths</strong> (i.e.&nbsp;<code>“./subfolder”</code>, where <code>.</code> represents the root of your .Rproj directory) or the library <code>here</code>, so the project stays portable to another environment</li>
 <li><strong>Use a standard folder structure</strong>. Your code repository should include a standard folder structure that make sense for your type of research, ideally shared across your team members. You can for instance use our <a href="https://github.com/lmu-osc/research-project-template">research project template</a>.</li>
@@ -609,16 +617,13 @@ Checkpoints: Repository &amp; Code Peer-Review + Result Presentation
 </div>
 </div>
 </div>
-<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
 <p>Version control tracks changes to files over time. You can see what changed, when, and why. You can revert to previous versions. Collaborators can work without overwriting each other.</p>
-<p><br></p>
 <p>In a version controlled workflow, you back up your local Git repositories on the cloud-based platforms GitHub or LRZ GitLab and share access to the online version of your repositories with your collaborators.</p>
-<p><br></p>
 <ul>
 <li><p><strong>Learn to create git branches to collaborate on the same piece of code in a unique repository.</strong> i.e.&nbsp;temporary copies where you can work without breaking the original source code, which you later merge back to the main branch (see <a href="https://lmu-osc.github.io/training/reproducible-processes/advanced-git.html">Advanced Git tutorial</a>).</p></li>
 <li><p><strong>Maintain efficient communication to coordinate collaborative work.</strong> GitHub or GitLab facilitate collaboration through “issues” (a precise description of something to fix), “discussions” (asynchronous thinking through figuring out how to resolve a problem), and can still very well resolve “conflicts” (i.e.&nbsp;collaborators wanting to merge changes on the exact same line of script). To complement this, LMU Munich offers <a href="https://www.lmu.de/de/die-lmu/struktur/zentrale-universitaetsverwaltung/informations-und-kommunikationstechnik-dezernat-vi/it-servicedesk/zentrale-it-angebote/lmu-chat-matrix/">LMU chat (Matrix)</a>, a secured open source chat service with all LMU members on which you can also invite external collaborators.</p></li>
 </ul>
-<p><br></p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -651,9 +656,7 @@ Important
 </div>
 <div class="callout-body-container callout-body">
 <p>If you work with <strong>sensitive data</strong>, you must not include the raw or processed data in the version-controlled repository that will end up being shared publicly.</p>
-<p><br></p>
 <p>Instead, explicitly <strong>exclude the data directory using the .gitignore file from the start</strong>, <strong>or, at the time of sharing, create a new local repository that contains all project files except the data</strong>.</p>
-<p><br></p>
 <p>Importantly, if data are removed from an existing repository, they may still remain accessible in the repository’s history, since previous states of the project can be restored. If sensitive data are accidentally committed and pushed, it is possible to <a href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository">rewrite the repository history</a> to remove them retrospectively. However, this process is complex and error-prone, so it is best avoided by ensuring that sensitive data are excluded from version control from the outset.</p>
 </div>
 </div>
@@ -761,9 +764,8 @@ Important
 </div>
 </div>
 </div>
-<div id="tabset-2-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-3-tab">
+<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
 <p>Manage your computational environment by explicitly recording the software, package versions, and dependencies required for your analyses, ensuring results can be reproduced across systems and over time. Tools such as packages managers (e.g.&nbsp;<a href="https://rstudio.github.io/renv/">Renv</a> for R packages, <a href="https://anaconda.org/channels/anaconda/packages/conda/overview">Conda</a> for Python packages) or broader containers (e.g.&nbsp;<a href="https://www.docker.com/">Docker</a> or <a href="https://mybinder.org/">Binder</a>) help stabilize workflows and prevent inconsistencies caused by packages or software updates.</p>
-<p><br></p>
 <p>For a R project repository:</p>
 <ul>
 <li><strong>Activate Renv to keep track of all packages versions</strong> (see our <a href="https://lmu-osc.github.io/introduction-to-renv/">renv tutorial</a>). This way, you or someone else can reproduce your results on another computer or at a later time using the same R packages versions.</li>
@@ -858,9 +860,8 @@ Important
 </div>
 </div>
 </div>
-<div id="tabset-2-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-4-tab">
+<div id="tabset-1-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-4-tab">
 <p>As with all documentation, your project repository’s documentation should be written early - initially for your near-future self to support efficient re-engagement after interruptions, then revised for internal team review, and ultimately expanded and refined for public sharing (see <a href="../../training/research-cycle-handbook/04-preserve-and-share.html#sec-open-source-code" class="mark">4.2. Open Source Code</a>).</p>
-<p><br></p>
 <ul>
 <li><strong>Create a README (e.g.&nbsp;a .md or .txt file) early and update it as you go.</strong> Your README is the entry point to your project. A good README answers the essential questions: who created the script, what it contains, how they relate to other scripts and in which order scripts should be run, what the dependencies of the project are, how to obtain/access the input data, whether the code can be reused.</li>
 <li><strong>Annotate your code explaining <em>why</em> you made a decision.</strong> All parameter values used as input for a function, or other decisions, should be justified minimally as comments in your code to later be included in your manuscript. <strong>Do not include sensitive information such as credentials or name of excluded patient as comments in your code!</strong></li>
@@ -935,51 +936,57 @@ Important
 </div>
 </div>
 </div>
-</div></div></div></details>
-<details class="orc-details-panel">
-<summary>
-<p><i class="bi bi-file-earmark-richtext"></i></p>
-<section id="sec-reporting-results" class="level3" data-number="3.2">
-<h3 data-number="3.2" class="anchored" data-anchor-id="sec-reporting-results"><span class="header-section-number">3.2</span> Reporting Results</h3>
-</section></summary>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--second accordion-->
+<div id="accordionExample" class="accordion rh-accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle">
+<div class="accordion-item">
+<div id="sec-reporting-results" class="accordion-header no-anchor fs-6">
+<button class="accordion-button collapsed fw-semibold d-flex align-items-center gap-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false">
+<span class="icon-wrapper rounded-4 bg-success-subtle text-success p-3"> <i class="bi bi-file-earmark-richtext m-0 fs-4"></i> </span>
+<section id="reporting-results" class="level3 accordion-title" data-number="3.2">
+<h3 data-number="3.2" class="anchored" data-anchor-id="reporting-results"><span class="header-section-number">3.2</span> Reporting Results</h3>
+</section>
+</button>
+</div>
+<div id="collapseTwo" class="accordion-collapse collapse">
+<div class="accordion-body p-4">
+<div class="content">
 <p>Your results should be <strong>computationally reproducible</strong> to ensure that the analysis can be independently verified. They should also be <strong>reported comprehensively and in line with reporting guidelines</strong> to facilitate statistical checks and future meta-analyses.</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">3.2.1. Results reproducibility</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">3.2.2. Reporting guidelines</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true" href="">3.2.1. Results reproducibility</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false" href="">3.2.2. Reporting guidelines</a></li></ul>
 <div class="tab-content">
-<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
 <p>A practical way to make results and analysis decisions transparent and traceable is to use <strong>literate programming</strong>, which <strong>combines narrative text</strong> explaining the logic of the analysis with <strong>executable code</strong> that performs data processing and statistical procedures. <strong>When the document is compiled, outputs such as tables, figures, and references are generated directly from the code and updated automatically whenever the code changes, ensuring that the reported methods and results remain consistent with the analysis.</strong> This eliminates repeated copy-and-paste and reduces the risk of uncertainty about which version of, for example, a figure is actually included in the manuscript.</p>
-<p><br></p>
 <p>For users of R, Python, and Julia, <strong>Quarto</strong> has become the standard tool for creating reproducible reports, superseding R Markdown and enabling <strong>rendering to formats such as HTML, PDF, and Microsoft Word</strong> (see our <a href="https://lmu-osc.github.io/introduction-to-Quarto/">Quarto tutorial</a>).</p>
-<p><br></p>
 <h5 class="fs-5 no-anchor">
 Reproducible Analysis Report: The Minimum Standard for Computational Reproducibility
 </h5>
-<p><br></p>
 <ul>
 <li><strong>Create an analysis report with Quarto.</strong> To make your results reproducible, you should provide the analysis code that creates the results of the manuscript with explanations for each of the steps. Quarto is an ideal tool for this (see <a href="https://lmu-osc.github.io/introduction-to-Quarto/">Quarto tutorial</a>). Your analysis report should contain your research question, data loading instructions, preprocessing steps, statistical procedures, tables and figures, session info and software versions (in the report itself or in your README).</li>
 </ul>
 <p>This will facilitate your own revisions, code-review by your team, <strong>reproducibility checks</strong> that some journals conduct as part of peer-review, and verification of results reproducibility by other researchers. The code repository can be published with simulated, synthetic, or real data, depending on the project, together with the respective article (see <a href="../../training/research-cycle-handbook/04-preserve-and-share.html#sec-open-source-code" class="mark">4.2. Open Source Code</a>).</p>
-<p><br></p>
 <p>Creating a reproducible analysis report in Quarto currently represents <strong>state-of-the-art practice for demonstrating the computational reproducibility of a study</strong>, and we recommend adopting this approach as a minimum standard.</p>
-<p><br></p>
 <p>Quarto can also be used to generate additional reporting outputs, such as manuscripts, presentations, and websites, in a fully reproducible manner. However, adopting a fully <strong>reproducible workflow for all outputs will require additional coordination and time</strong>, particularly when working with collaborators who use different tools or workflows.</p>
-<p><br></p>
 <h5 class="fs-5 no-anchor">
 Reproducible Manuscript: The Ultimate Reproducible Report
 </h5>
 <p>If you do not want to break the reproducibility chain by copy and pasting new results, tables, and figures into e.g.&nbsp;a Word document, you can write your entire manuscript in Quarto.</p>
-<p><br></p>
 <ul>
 <li><p><strong>Include bibliographic references in your Quarto document</strong>. You can directly source .bib files into your Quarto document or use the open source reference management software Zotero integrated in RStudio to cite articles and have them automatically formatted in any journal standards (see <a href="https://lmu-osc.github.io/introduction-to-Quarto/">Quarto tutorial</a> and <a href="https://lmu-osc.github.io/introduction-to-zotero/">Zotero tutorial</a>).</p></li>
 <li><p><strong>Use a template document for major formatting aspects</strong>. You can use e.g.&nbsp;a Word template to create your output with e.g.&nbsp;specific header and legend formatting. Some journals offer Quarto templates for further formatting requirements (see <a href="https://quarto.org/docs/extensions/listing-journals.html">list of Quarto extensions</a>). Some journals offer LaTeX or Word templates; you can adapt these by modifying Quarto’s YAML header and markdown content to create your own Quarto template.</p></li>
 <li><p><strong>Adapt your workflow to your collaborators.</strong> Ideally, all your team mates have also adopted the use of Git and GitHub or LRZ GitLab and the use of issues and branches to work collaboratively (see <a href="#sec-data-processing-analysis">3.1.2. Version Control</a>). A compromise with collaborators who do not use Git is to render your draft manuscript to e.g.&nbsp;Word and share it through cloud-based collaborative document editing e.g.&nbsp;<a href="https://syncandshare.lrz.de/login">LRZ Sync &amp; Share</a> or <a href="https://docs.google.com/">Google Docs</a> with collaborators using the suggestion / track changes mode. Then, the lead author transcribes all edits manually, or with the help of e.g.&nbsp;R packages such as <code>trackdown</code> or <code>officer</code>, and addresses all comments in their quarto version before re-rendering for a second round of revisions, potentially with additional analyses.</p></li>
 </ul>
-<p><br></p>
 <h5 class="fs-5 no-anchor">
 Reproducible Presentations &amp; Websites: Further Reproducible Outputs for Outreach
 </h5>
 <p>Using the same Quarto environment, you can also:</p>
-<p><br></p>
 <ul>
 <li><p><strong>Convert your analyses report into a reproducible presentation.</strong> To get feedback on your analyses, you can output a report into a slide presentation with presenter notes. Slides remain dynamically linked to the underlying analyses. Any modification to the data or code automatically propagates to tables, visualizations, and reported results, eliminating inconsistencies between presentation and computation.</p></li>
 <li><p><strong>Create reproducible website to support your research or teaching</strong>. Quarto also enables the creation of reproducible and interactive websites by linking content directly to data, code, and analyses within a unified publishing workflow. Pages, figures, tables, and teaching materials update automatically when the underlying sources change, ensuring consistency across outputs. This approach simplifies maintenance, and allows websites to evolve as living, version-controlled resources rather than static collections of files. Examples of websites, interactive reports and other formats can be explored on the <a href="https://quarto.org/docs/gallery/">Quarto Gallery</a>. This website and our self-paced tutorials are all Quarto websites.</p></li>
@@ -1140,11 +1147,9 @@ Reproducible Presentations &amp; Websites: Further Reproducible Outputs for Outr
 </div>
 </div>
 </div>
-<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
 <p>Transparent and complete reporting is essential for the interpretation, verification, and reuse of scientific results. To support this, many disciplines have developed reporting guidelines that specify the <strong>minimum information that should be included when describing study design, data collection, analysis, and results</strong>. These guidelines help ensure that studies can be critically evaluated, replicated, and included in evidence syntheses such as systematic reviews and meta-analyses.</p>
-<p><br></p>
 <p>A central resource for such guidelines is the <a href="https://www.equator-network.org/reporting-guidelines/">EQUATOR Network</a>, an international initiative collecting and promoting reporting standards across many study types and disciplines.</p>
-<p><br></p>
 <section id="typical-items-that-should-be-reported-include" class="level5">
 <h5 class="anchored"><i class="bi bi-list-check"></i> Typical items that should be reported include:</h5>
 <ul>
@@ -1160,7 +1165,6 @@ Reproducible Presentations &amp; Websites: Further Reproducible Outputs for Outr
 <li><strong>Data, code, and materials availability</strong> – where readers can access datasets, analysis scripts, or supplementary materials to reproduce the analysis.</li>
 </ul>
 <p>A lot of these elements are those of a preregistration (see <a href="../../training/research-cycle-handbook/01-plan-and-design.html#sec-study-design-analysis-plan" class="mark">1.4.1. Pre-analysis planning</a>). Describe them in your methods section, adding they were <strong>planned a priori in your preregistration</strong> and citing its DOI, and <strong>separate results into e.g.&nbsp;preregistered confirmatory analyses and non-preregistered exploratory analyses</strong>.</p>
-<p><br></p>
 <p>Some of these elements will be refined depending on your study type. Widely used examples of guidelines include <a href="https://www.equator-network.org/reporting-guidelines/consort/">CONSORT</a> for randomized controlled trials, <a href="https://www.equator-network.org/reporting-guidelines/improving-bioscience-research-reporting-the-arrive-guidelines-for-reporting-animal-research/">ARRIVE</a> for animal studies, and <a href="https://www.equator-network.org/reporting-guidelines/prisma/">PRISMA</a> for systematic reviews.</p>
 <div class="container my-4">
 <h4 class="fs-5 mt-3 anchored" data-anchor-id="typical-items-that-should-be-reported-include">
@@ -1180,10 +1184,17 @@ Reproducible Presentations &amp; Websites: Further Reproducible Outputs for Outr
 </div>
 </div>
 </div>
-</section></div></div></div></details>
-<div class="orc-gradient-box analyze-collaborate-checklist">
-<!-- RL still working on -->
-<section id="analyze-collaborate-checklist" class="level2 unnumbered">
+</section>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- checklist -->
+<section id="analyze-collaborate-checklist" class="level2 unnumbered orc-gradient-box analyze-collaborate-checklist">
 <h2 class="unnumbered anchored" data-anchor-id="analyze-collaborate-checklist"><i class="bi bi-card-checklist checklist-icon"></i> Analyze &amp; Collaborate Checklist</h2>
 <p>This assumes a reproducible workflow using R. Not all items are relevant for all fields of research or study types.</p>
 <p><strong>1. During data analyses: create and maintain a repository</strong></p>
@@ -1247,20 +1258,10 @@ Reproducible Presentations &amp; Websites: Further Reproducible Outputs for Outr
 <p><a href="assets/checklists/03-Analyze-Collaborate-Checklist.docx" class="btn btn-outline-secondary btn-sm">Download checklist <i class="bi bi-download"></i></a> <!-- need to update manually the  downloadable file with checklist in word doc--></p>
 </div>
 </section>
-</div>
 
 
 
-</main></div>
-
-
-
-
-
-
-
-
- <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -1666,7 +1667,7 @@ Reproducible Presentations &amp; Websites: Further Reproducible Outputs for Outr
     }
   });
   </script>
- <!-- /content -->
+</div> <!-- /content -->
 <footer class="osc-footer-card text-white py-5">
   <div class="container">
     <div class="row gy-4">
