@@ -221,7 +221,9 @@
 
 /* people landing page card styling */
 .people-card.card {
+  border: none;
   border-top: 4px solid #00883A;
+
 }
 
 .people-card .btn.btn-primary {
