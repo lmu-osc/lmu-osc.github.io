@@ -44,7 +44,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-fe9b9235b005db5ae2ecbb674ed511fe.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-a7c386534ad53eac38c2d6ee6e5d9f27.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -451,12 +451,19 @@ Checkpoint: Manuscript submission with DOIs for preregistration, data, and code
 </div>
 </div>
 </div>
-<details class="orc-details-panel">
-<summary>
-<p><i class="bi bi-database-up"></i></p>
-<section id="sec-fair-data-sharing" class="level3" data-number="4.1">
-<h3 data-number="4.1" class="anchored" data-anchor-id="sec-fair-data-sharing"><span class="header-section-number">4.1</span> FAIR Data Sharing</h3>
-</section></summary>
+<div class="accordion rh-accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle">
+<div class="accordion-item">
+<div id="sec-fair-data-sharing" class="accordion-header no-anchor">
+<button class="accordion-button collapsed fw-semibold d-flex align-items-center gap-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false">
+<span class="icon-wrapper rounded-4 bg-success-subtle text-success p-3"> <i class="bi bi-database-up m-0 fs-4"></i> </span>
+<section id="fair-data-sharing" class="level3 accordion-title" data-number="4.1">
+<h3 data-number="4.1" class="anchored" data-anchor-id="fair-data-sharing"><span class="header-section-number">4.1</span> FAIR Data Sharing</h3>
+</section>
+</button>
+</div>
+<div id="collapseOne" class="accordion-collapse collapse">
+<div class="accordion-body p-4">
+<div class="container">
 <p>Sharing your data allows others to verify your findings, build on your work, and increase the impact of your research. But sharing does not always mean making everything publicly available. What you can share depends on the consent you obtained, the sensitivity of your data, and your ethics approval.</p>
 <p>In <a href="../../training/research-cycle-handbook/01-plan-and-design.html" class="mark">1. Plan &amp; Design</a>, you wrote a Data Management Plan, in <a href="../../training/research-cycle-handbook/02-collect-and-manage.html" class="mark">2. Collect &amp; Manage</a>, you created documentation for yourself, and in <a href="../../training/research-cycle-handbook/03-analyze-and-collaborate.html" class="mark">3. Analyze &amp; Collaborate</a> you updated that documentation for your collaborators. Now you prepare that documentation for people who have no prior knowledge of your project and reassess you plan:</p>
 <div class="ms-1">
@@ -473,13 +480,11 @@ Checkpoint: Manuscript submission with DOIs for preregistration, data, and code
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
 <!-- I edited this a bit Reema, is this correct? overall I think this section could use more information and clarity. How about embargo?-->
 <p>Not all data can or should be shared openly. Your sharing options depend on what consent participants gave and what your ethics approval permits (see <a href="../../training/research-cycle-handbook/01-plan-and-design.html#sec-legal-requirements" class="mark">1.2.3. Ethics</a>).</p>
-<p><br></p>
 <ul>
 <li><p><strong>Open data</strong> can be downloaded by anyone without restrictions. This maximizes reuse but is only appropriate when data contains no personal information or has been fully anonymized.</p></li>
 <li><p><strong>Restricted access</strong> means the metadata is available on a professional repository and clear instructions of the conditions of access to the data are provided. Requesting the data often requires describing the purpose of reuse (sometimes in the form of a preregistration, see <a href="../../training/research-cycle-handbook/01-plan-and-design.html#sec-study-design-analysis-plan" class="mark">1.4.1. Pre-analysis planning</a>), signing a Data Use Agreement, and agreeing to further conditions. This can be organized automatically through the repository or through contacting the authors<!--if so what's the difference with the option below?-->. This balances reuse with protection.</p></li>
 <li><p><strong>Metadata only</strong> describes what data exists without sharing the data itself. Others can discover your work and contact you to discuss access. This is appropriate when data cannot be shared due to legal or ethical constraints.<!--would that be considered Accessible though?--> Making your data Findable by sharing your metadata on a professional repository is the first step to making your data FAIR, as emphasized by the <a href="https://cms-cdn.lmu.de/media/contenthub/amtliche-veroeffentlichungen/gwp-ordnung.pdf">LMU Guidelines for Safeguarding Good Scientific Practice</a> (see also <a href="../../training/research-cycle-handbook/01-plan-and-design.html#sec-legal-requirements" class="mark">1.2. Legal Requirements</a>)</p></li>
 </ul>
-<p><br></p>
 <p>When deciding whether data should be shared, consider the following:</p>
 <ul>
 <li>Ensure that data sharing is compatible with the <strong>informed consent</strong> provided by participants.</li>
@@ -570,7 +575,6 @@ Checkpoint: Manuscript submission with DOIs for preregistration, data, and code
 </div>
 <div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
 <p>During the course of data collection and analyses, you created a README and data dictionary for yourself and collaborators. Before sharing publicly, review them from the perspective of someone who knows nothing about your project.</p>
-<p><br></p>
 <ul>
 <li><p><strong>Expand your README</strong> to include the research context (who created the data, what it contains, when and where it was collected, why it was generated, how it was produced), how to cite the dataset, and any access conditions.</p></li>
 <li><p><strong>Review your data dictionary</strong> to ensure every variable is fully described. What was obvious to you during analysis may need explanation for others.</p></li>
@@ -660,13 +664,11 @@ Checkpoint: Manuscript submission with DOIs for preregistration, data, and code
 </div>
 <div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
 <p>Choose a repository that suits your data type, your field’s expectations, and your access requirements.</p>
-<p><br></p>
 <ul>
 <li><p><strong>Discipline-specific repositories</strong> are often the best choice. They use metadata standards your community expects, making your data findable by researchers in your field. Search <a href="https://www.re3data.org/">re3data</a> to find repositories for your domain.</p></li>
 <li><p><strong>General-purpose repositories</strong> like <a href="https://zenodo.org/">Zenodo</a> or <a href="https://osf.io/">OSF</a> accept any data type. They provide DOIs and long-term preservation, but may lack the specialized metadata fields of discipline-specific options.</p></li>
 <li><p><strong>Institutional repositories</strong> may be required by your funder. Choosing the LMU repository <a href="https://data.ub.uni-muenchen.de/">Open Data LMU</a> also ensures you can get the support of the <a href="https://www.en.ub.uni-muenchen.de/writing/research_data/research-data-management/index.html">Research Data Management team of the University Library</a>.</p></li>
 </ul>
-<p><br></p>
 <p>Whichever you choose, ensure the repository provides a <strong>DOI</strong> (Digital Object Identifier) so your data can be cited and tracked.</p>
 <div class="container my-4">
 <h4 class="fs-5 mt-3 anchored">
@@ -725,7 +727,6 @@ Checkpoint: Manuscript submission with DOIs for preregistration, data, and code
 </div>
 <div id="tabset-1-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-4-tab">
 <p>A license tells others what they can do with your data. Licensing your data consists in adding a file called LICENSE.txt next to your data, that contains the appropriate legal text. Without one, or equivalent statements, others cannot legally reuse your research outputs, even if it is publicly available.</p>
-<p><br></p>
 <p>Common open licenses for data are:</p>
 <ul>
 <li><strong>CC0 (Public Domain)</strong> places no restrictions. Anyone can use, modify, and redistribute without attribution. Recommended for factual data where maximum reuse is the goal.</li>
@@ -733,9 +734,7 @@ Checkpoint: Manuscript submission with DOIs for preregistration, data, and code
 <li><strong>CC BY-NC (Non-Commercial)</strong> adds a restriction against commercial use. Consider whether this limitation actually serves your goals.</li>
 <li>A <strong>Scientific Use License (Public Use)</strong> only allows re-use for scientific purposes (but with all freedoms within that scope). The Leibniz Institute for Psychology (ZPID) developed such a <a href="https://www.psycharchives.org/en/item/7466aa16-69bd-49ea-baef-7f828f5b223f">standard license</a> together with legal experts.</li>
 </ul>
-<p><br></p>
 <p>Learn more about open licenses for data and code in our <a href="https://lmu-osc.github.io/code-publishing/choose-license.html">code publishing tutorial</a>.</p>
-<p><br></p>
 <p>For restricted-access data, a <strong>Data Use Agreement</strong> specifies conditions beyond a standard license: approved purposes, security requirements, publication terms, and data destruction timelines.<!-- Reema - I think we might need a section just for DUA? also does this mean it's either  or? license when simple cases, DUA when complex and typically not open?--></p>
 <div class="container my-4">
 <h4 class="fs-5 anchored">
@@ -771,14 +770,25 @@ Checkpoint: Manuscript submission with DOIs for preregistration, data, and code
 </div>
 </div>
 </div>
-</details>
-<details class="orc-details-panel">
-<summary>
-<p><i class="bi bi-file-code"></i></p>
-
-<section id="sec-open-source-code" class="level3" data-number="4.2">
-<h3 data-number="4.2" class="anchored" data-anchor-id="sec-open-source-code"><span class="header-section-number">4.2</span> Open Source Code</h3>
-</section></summary>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--second accordion-->
+<div id="accordionExample" class="accordion rh-accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle">
+<div class="accordion-item">
+<div id="sec-open-source-code" class="accordion-header no-anchor">
+<button class="accordion-button collapsed fw-semibold d-flex align-items-center gap-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false">
+<span class="icon-wrapper rounded-4 bg-success-subtle text-success p-3"> <i class="bi bi-file-code m-0 fs-4"></i> </span>
+<section id="open-source-code" class="level3 accordion-title" data-number="4.2">
+<h3 data-number="4.2" class="anchored" data-anchor-id="open-source-code"><span class="header-section-number">4.2</span> Open Source Code</h3>
+</section>
+</button>
+</div>
+<div id="collapseTwo" class="accordion-collapse collapse">
+<div class="accordion-body p-4">
+<div class="content">
 <p>Making code publicly available demonstrates the reproducibility of your results and enables others to understand, verify, and build upon your analytical methods.</p>
 <p>So far, your code was either backed up on the secured <a href="https://gitlab.lrz.de/">LRZ Gitlab</a> (e.g.&nbsp;if your data and/or code are sensitive), or on <a href="https://github.com/">GitHub</a> (see <a href="../../training/research-cycle-handbook/03-analyze-and-collaborate.html" class="mark">3. Analyze &amp; Collaborate</a>). Before the submission of a manuscript to a journal and/or upon the acceptance of a manuscript, there are small additional steps that need to be done to publish your code.</p>
 <div class="ms-1">
@@ -801,14 +811,12 @@ Checkpoint: Manuscript submission with DOIs for preregistration, data, and code
 <div class="tab-content">
 <div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
 <p>During the course of data analyses, you created scripts and documentation such as README and data dictionary for yourself and collaborators. Before sharing publicly, review them from the perspective of someone who knows nothing about your project.</p>
-<p><br></p>
 <ul>
 <li><strong>Expand your README</strong> to include a description, involved data, computational requirements and dependencies (i.e.&nbsp;what software, packages, and their version, need to be installed to run the analyses), list of results.</li>
 <li><strong>Document your code</strong> from an external perspective, using literate programming (e.g.&nbsp;Quarto) or comments.</li>
 <li><strong>Double check that no sensitive information remains in your repository</strong> (e.g.&nbsp;code comments, history of sensitive data)</li>
 </ul>
 <p>See our <a href="https://lmu-osc.github.io/code-publishing/">code publishing tutorial</a> for more information on how to prepare your code repository for sharing.</p>
-<p><br></p>
 <div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -820,9 +828,7 @@ Important
 </div>
 <div class="callout-body-container callout-body">
 <p>If you work with <strong>sensitive data</strong>, you must not include the raw or processed data in the version-controlled repository to be shared.</p>
-<p><br></p>
 <p>Instead, explicitly <strong>exclude the data directory using the .gitignore file from the start</strong>. An easy solution (which, however, discards the version history for all files), is to <strong>create a new local repository that contains all project files except the data</strong> and only push that to the public repository.</p>
-<p><br></p>
 <p>Importantly, if data are removed from an existing repository, they may still remain accessible in the repository’s history, since previous states of the project can be restored. If sensitive data are accidentally committed and pushed, it is possible to <a href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository">rewrite the repository history</a> to remove them retrospectively. However, this process is complex and error-prone, so it is best avoided by ensuring that sensitive data are excluded from version control from the outset.</p>
 </div>
 </div>
@@ -853,7 +859,6 @@ Important
 <div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
 <!-- TODO: This does not fit so well under 4.2 Open Source Code? -->
 <p>Sharing your code allows for other researchers to clearly see which analytic methods were applied to the data. Ideally, they should also be able to rerun the code and verify the reproducibility of the reported results.</p>
-<p><br></p>
 <p>You can provide the data required to run the code in several ways:</p>
 <ul>
 <li><strong>The real (anonymized) data.</strong> This can be done either (1) by including the dataset in the repository so that the code can access it locally and run directly, or (2) by configuring the code to retrieve the data from an external source, such as a database, API, or external data repository. A practical workflow is to include “small”/one-shot datasets directly into a combined code/data-project (e.g.&nbsp;on GitHub), and to store “large”/reusable datasets (which deserve their own DOI) separately in a repository specialized for research data.</li>
@@ -916,13 +921,11 @@ Important
 </div>
 <div id="tabset-2-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-3-tab">
 <p>A license tells others what they can do with your code. Licensing your code consists in adding a file called LICENSE.txt next to your code, that contains the appropriate legal text. Without one, or equivalent statements, others cannot legally reuse your code, even if it is publicly available e.g.&nbsp;on <a href="https://github.com/">GitHub</a>. Common open licenses for code are:</p>
-<p><br></p>
 <ul>
 <li><strong>CC0 (Public Domain)</strong> places no restrictions. Anyone can use, modify, and redistribute without attribution. Recommended for generic code where maximum reuse is the goal.</li>
 <li><strong>MIT</strong> is a simple license that requires users to credit you when they reuse, modify, and redistribute your code.</li>
 <li><strong>Apache 2.0</strong> is a safer license (covering more legal cases) that requires users to credit you and state the changes you made to the code.</li>
 </ul>
-<p><br></p>
 <p>Learn more about open licenses for data and code in our <a href="https://lmu-osc.github.io/code-publishing/choose-license.html">code publishing tutorial</a> or using the tool ‘<a href="https://choosealicense.com/licenses/">Choose an open source license</a>’.</p>
 <div class="container my-4">
 <h4 class="fs-5 anchored">
@@ -1025,14 +1028,25 @@ Important
 </div>
 </div>
 </div>
-</details>
-<details class="orc-details-panel">
-<summary>
-<p><i class="bi bi-journal-arrow-up"></i></p>
-
-<section id="sec-open-materials" class="level3" data-number="4.3">
-<h3 data-number="4.3" class="anchored" data-anchor-id="sec-open-materials"><span class="header-section-number">4.3</span> Open Materials</h3>
-</section></summary>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--third accordion-->
+<div id="accordionExample" class="accordion rh-accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle">
+<div class="accordion-item">
+<div id="sec-open-materials" class="accordion-header no-anchor">
+<button class="accordion-button collapsed fw-semibold d-flex align-items-center gap-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false">
+<span class="icon-wrapper rounded-4 bg-success-subtle text-success p-3"> <i class="bi bi-journal-arrow-up m-0 fs-4"></i> </span>
+<section id="open-materials" class="level3 accordion-title" data-number="4.3">
+<h3 data-number="4.3" class="anchored" data-anchor-id="open-materials"><span class="header-section-number">4.3</span> Open Materials</h3>
+</section>
+</button>
+</div>
+<div id="collapseThree" class="accordion-collapse collapse">
+<div class="accordion-body p-4">
+<div class="content">
 <p>Any material needed to reproduce or replicate your study should also be shared openly unless there are dual-use, patent, or privacy concerns.</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true" href="">4.3.1. Digital materials</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-2" role="tab" aria-controls="tabset-3-2" aria-selected="false" href="">4.3.2. Physical materials</a></li></ul>
@@ -1090,9 +1104,7 @@ Important
 </div>
 <div id="tabset-3-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-2-tab">
 <p>Repositories for physical research materials (e.g., biological samples, chemicals, specimens, hardware, or other tangible resources) are usually called biobanks, material repositories, or research infrastructure collections and are domain specific or specialized to one kind of material (e.g.&nbsp;DNA).</p>
-<p><br></p>
 <p>For instance, <a href="https://www.addgene.org/">Addgene</a> is a nonprofit plasmid repository deposited by thousands of research labs around the world, while <a href="https://www.ariadne-research-infrastructure.eu/">ARIADNE</a>’s mission is to create a sustainable infrastructure for archaeological data sharing across institutions and nations.</p>
-<p><br></p>
 <p>Regardless of your discipline:</p>
 <ul>
 <li><strong>Use repositories that assign persistent identifiers</strong> for proper citation.</li>
@@ -1103,14 +1115,25 @@ Important
 </div>
 </div>
 </div>
-</details>
-<details class="orc-details-panel">
-<summary>
-<p><i class="bi bi-unlock2"></i></p>
-
-<section id="sec-open-access-articles" class="level3" data-number="4.4">
-<h3 data-number="4.4" class="anchored" data-anchor-id="sec-open-access-articles"><span class="header-section-number">4.4</span> Open Access Articles</h3>
-</section></summary>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--forth accordion-->
+<div id="accordionExample" class="accordion rh-accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle">
+<div class="accordion-item">
+<div id="sec-open-access-articles" class="accordion-header no-anchor">
+<button class="accordion-button collapsed fw-semibold d-flex align-items-center gap-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false">
+<span class="icon-wrapper rounded-4 bg-success-subtle text-success p-3"> <i class="bi bi-unlock2 m-0 fs-4"></i> </span>
+<section id="open-access-articles" class="level3 accordion-title" data-number="4.4">
+<h3 data-number="4.4" class="anchored" data-anchor-id="open-access-articles"><span class="header-section-number">4.4</span> Open Access Articles</h3>
+</section>
+</button>
+</div>
+<div id="collapseFour" class="accordion-collapse collapse">
+<div class="accordion-body p-4">
+<div class="content">
 <p>Publishing open access articles (i.e.&nbsp;which are free to readers) <strong>increases the visibility, citation, and impact</strong> of research by removing paywall barriers, enabling scholars, practitioners, and policymakers worldwide to access and build upon the work without restriction. It also <strong>accelerates knowledge dissemination and promotes equity</strong> in scholarship by providing institutions and researchers - especially in low-resource settings - free and immediate access to scientific findings. Finally, tax-payer funded projects often have particular requirements for open access.</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-4-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-1" role="tab" aria-controls="tabset-4-1" aria-selected="true" href="">4.4.1. Pathways to Open Access</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-2" role="tab" aria-controls="tabset-4-2" aria-selected="false" href="">4.4.2. Contracts with Publishers</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-3" role="tab" aria-controls="tabset-4-3" aria-selected="false" href="">4.4.3. Publishing Preprints and Retaining Rights</a></li></ul>
@@ -1134,7 +1157,6 @@ Important
 </div>
 <div class="callout-body-container callout-body">
 <p><u><strong>preprint</strong></u>: article, book chapter, book, or other scholarly work that is deposited in a repository with unrestricted access (i.e.&nbsp;available to the public to view online, or download, without registration, payment, or approval) ahead of peer review. Equivalent terms used in some disciplines are ‘working paper’ and ‘unpublished manuscript’.</p>
-<p><br></p>
 <p><u><strong>postprint</strong></u>: accepted version of an article, book chapter, book, or other scholarly work that is released by the author(s) on a repository with unrestricted access (i.e.&nbsp;available to the public to view online, or download, without registration, payment, or approval)</p>
 </div>
 </div>
@@ -1168,9 +1190,7 @@ Important
 </div>
 <div id="tabset-4-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-2-tab">
 <p>Until 2024, authors publishing in legacy (subscription-based) journals were required to pay an <strong>Article Processing Charge (APC)</strong> to make their work immediately open access upon publication, the model commonly referred to as ‘<em>gold open access</em>’. To <strong>avoid these fees</strong> while still ensuring public accessibility, authors were encouraged to disseminate a <strong>preprint and/or postprint</strong>, or to deposit the publisher’s version in an institutional repository after the embargo period had expired. These procedures, which are <strong>free to the authors</strong>, are collectively known as ‘<em>green open access</em>’.</p>
-<p><br></p>
 <p><strong>Since 2025</strong>, however, at LMU Munich and other universities that are part of the <a href="https://deal-konsortium.de/en/">DEAL Konsortium</a> in Germany, the agreements with Elsevier, Wiley, and Springer Nature, stipulate that the <strong>authors publishing in hybrid journals</strong> (i.e., journals offering both subscription-based and open access options) <strong>incur an Article Processing Charge (APC) regardless of whether the article is published closed or open access</strong>. Consequently, authors who elect to publish in these venues and pay the APC are generally advised to opt for immediate open access through the publisher. Although preprinting remains possible and may expedite dissemination, it no longer constitutes a cost-free alternative for hybrid journals operating under these uniform APC conditions.</p>
-<p><br></p>
 <p>The current contract conditions for LMU Munich can be accessed on the <a href="https://www.ub.lmu.de/en/open-access-publishing/financing-open-access/">University Library Publication Fees Webpage (in german)</a>. To get support with Article Processing Charges and open access policies, contact the <a href="https://www.en.ub.uni-muenchen.de/writing/open-access-publishing/oa-auxiliary-page/index.html">University Library Open Access team</a>.</p>
 <div class="container my-4">
 <h4 class="fs-5 mt-3 anchored">
@@ -1197,7 +1217,6 @@ Important
 </div>
 <div id="tabset-4-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-3-tab">
 <p>To increase the accessibility and impact of your article we recommend you to:</p>
-<p><br></p>
 <ul>
 <li><p><strong>Check what your target journal’s open access policies are.</strong> <a href="https://openpolicyfinder.jisc.ac.uk/">Jisc’ Open Policy Finder</a> provides clear information about whether you are allowed to archive various versions of manuscripts. For instance, your target journal may, or may not, allow you to deposit:</p>
 <ul>
@@ -1236,7 +1255,6 @@ Important
 ![image](/assets/diagrams/preprint-flow.svg)
 
 </div> -->
-<p><br></p>
 <p>To get support for <a href="https://epub.ub.uni-muenchen.de/">Open Access LMU</a>, the LMU Munich institutional repository for articles and books, contact the <a href="https://www.en.ub.uni-muenchen.de/writing/open-access-publishing/oa-auxiliary-page/index.html">University Library Open Access team</a>.</p>
 <div class="container my-4">
 <h4 class="fs-5 mt-3 anchored">
@@ -1313,14 +1331,25 @@ Important
 </div>
 </div>
 </div>
-</details>
-<details class="orc-details-panel">
-<summary>
-<p><i class="bi bi-person-badge"></i></p>
-
-<section id="sec-attributions-and-persistent-identifiers" class="level3" data-number="4.5">
-<h3 data-number="4.5" class="anchored" data-anchor-id="sec-attributions-and-persistent-identifiers"><span class="header-section-number">4.5</span> Attributions &amp; Persistent Identifiers</h3>
-</section></summary>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--fifth accordion-->
+<div id="accordionExample" class="accordion rh-accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle">
+<div class="accordion-item">
+<div id="sec-attributions-and-persistent-identifiers" class="accordion-header no-anchor">
+<button class="accordion-button collapsed fw-semibold d-flex align-items-center gap-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false">
+<span class="icon-wrapper rounded-4 bg-success-subtle text-success p-3"> <i class="bi bi-person-badge m-0 fs-4"></i> </span>
+<section id="attributions-persistent-identifiers" class="level3 accordion-title" data-number="4.5">
+<h3 data-number="4.5" class="anchored" data-anchor-id="attributions-persistent-identifiers"><span class="header-section-number">4.5</span> Attributions &amp; Persistent Identifiers</h3>
+</section>
+</button>
+</div>
+<div id="collapseFive" class="accordion-collapse collapse">
+<div class="accordion-body p-4">
+<div class="content">
 <p>All research outputs and their specific versions should be linked to their authors, organizations, and funders through persistent identifiers.</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-5-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-1" role="tab" aria-controls="tabset-5-1" aria-selected="true" href="">4.5.1. Authorship, Contributorship, and ORCID</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-5-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-2" role="tab" aria-controls="tabset-5-2" aria-selected="false" href="">4.5.2. Institution, Funders, and ROR</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-5-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-3" role="tab" aria-controls="tabset-5-3" aria-selected="false" href="">4.5.3. Connecting Your Work</a></li></ul>
@@ -1335,9 +1364,7 @@ Authorship
 <li><strong>agree to the final version</strong> of the work to be published and <strong>bear joint responsibility</strong> for the publication unless explicitly stated otherwise.</li>
 </ul>
 <p>Publishers can provide additional guidance on authorship decisions (often based on the recommendations of the <a href="https://www.icmje.org/recommendations/browse/roles-and-responsibilities/defining-the-role-of-authors-and-contributors.html">International Committee of Medical Journal Editors</a>.</p>
-<p><br></p>
 <p>We recommend to <strong>start discussions on authorship, roles, and responsibilities as early as possible</strong>. First discussions can for instance take place at the end of <a href="../../training/research-cycle-handbook/01-plan-and-design.html" class="mark">1. Plan &amp; Design</a>, e.g.&nbsp;during the presentation of the study plan to the research group (see <a href="../../training/research-cycle-handbook/01-plan-and-design.html#plan-design-checklist" class="mark">Plan &amp; Design Checklist</a>). As roles may shift in the course of a project, a review is warranted at the write-up stage.</p>
-<p><br></p>
 <h5 class="anchored">
 Contributorship
 </h5>
@@ -1349,7 +1376,6 @@ Contributorship
 </ul></li>
 <li><strong>Use the <a href="https://doi.org/10.1038/s41467-023-37039-1">Method Reporting with Initials for Transparency (MeRIT)</a></strong> when relevant. This consists in adding initials to the Methods section, identifying with greater transparency who did what when several team members contributed to e.g.&nbsp;data curation or software.</li>
 </ul>
-<p><br></p>
 <h5 class="anchored">
 ORCID
 </h5>
@@ -1411,9 +1437,7 @@ Note
 </div>
 <div class="callout-body-container callout-body">
 <p>The official names of LMU Munich are Ludwig-Maximilians-Universität München in German, and LMU Munich in English. This university’s ROR ID is <a href="https://ror.org/05591te55">https://ror.org/05591te55</a>.</p>
-<p><br></p>
 <p>LMU Munich is mostly funded by the German Research Foundation, whose ROR ID is <a href="https://ror.org/018mejw64">https://ror.org/018mejw64</a></p>
-<p><br></p>
 <p>The LMU Open Science Center is one of the many child organizations of LMU Munich; its ROR ID is <a href="https://ror.org/029e6qe04">https://ror.org/029e6qe04</a>. The funder of this handbook’s project is the Volkswagen Foundation, <a href="https://ror.org/03bsmfz84">https://ror.org/03bsmfz84</a>.</p>
 </div>
 </div>
@@ -1458,10 +1482,13 @@ Note
 </div>
 </div>
 </div>
-</details>
-<div class="orc-gradient-box preserve-share-checklist">
-<!-- RL hasn't customized this one yet -->
-<section id="preserve-share-checklist" class="level2 unnumbered">
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--checklist-->
+<section id="preserve-share-checklist" class="level2 unnumbered orc-gradient-box preserve-share-checklist">
 <h2 class="unnumbered anchored" data-anchor-id="preserve-share-checklist"><i class="bi bi-card-checklist checklist-icon"></i> Preserve &amp; Share Checklist</h2>
 <p>Not all items are relevant for all fields of research or study types.</p>
 <p><strong>Before sharing resources</strong></p>
@@ -1496,12 +1523,9 @@ Note
 <li><label><input type="checkbox">Monitor citations and usage metrics of all research outputs</label></li>
 </ul>
 <div class="d-flex justify-content-center mt-4 orc-checklist-download phase-4">
-<!-- RL hasn't created button for checklist 4 yet -->
 <p><a href="assets/checklists/04-Preserve-Share-Checklist.docx" class="btn btn-outline-secondary btn-sm">Download checklist <i class="bi bi-download"></i></a> <!-- need to update manually the  downloadable file with checklist in word doc--></p>
 </div>
 </section>
-</div>
-
 
 
 

@@ -44,7 +44,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-fe9b9235b005db5ae2ecbb674ed511fe.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-a7c386534ad53eac38c2d6ee6e5d9f27.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -480,20 +480,28 @@ Checkpoints: Study Plan Presentation &amp; Preregistration Submission
 </div>
 </div>
 </div>
-<details class="orc-details-panel">
-<summary>
-<p><i class="bi bi-search"></i></p>
-<section id="sec-explore-reuse" class="level3" data-number="1.1">
-<h3 data-number="1.1" class="anchored" data-anchor-id="sec-explore-reuse"><span class="header-section-number">1.1</span> Explore &amp; Reuse</h3>
-</section></summary>
+<!-- first accordion -->
+<div id="accordion-explore-reuse" class="accordion rh-accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle">
+<div class="accordion-item">
+<div id="sec-explore-reuse" class="accordion-header no-anchor">
+<button class="accordion-button collapsed fw-semibold d-flex align-items-center gap-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false">
+<span class="icon-wrapper rounded-4 text-success bg-success-subtle p-3"> <i class="bi bi-search m-0 fs-4"></i> </span>
+<section id="explore-reuse" class="level3 accordion-title" data-number="1.1">
+<h3 data-number="1.1" class="anchored" data-anchor-id="explore-reuse"><span class="header-section-number">1.1</span> Explore &amp; Reuse</h3>
+</section>
+</button>
+</div>
+<div id="collapseOne" class="accordion-collapse collapse">
+<div class="accordion-body p-4">
 <p>Any resource that inspires you or that you want to reuse and/or adapt must minimally be <strong>cited using their persistent identifiers</strong> e.g.&nbsp;DOIs (Digital Object Identifiers) - and otherwise URL with author, date, and time of access - and you must <strong>follow the license and/or usage agreement</strong> provided by the authors. A research output (e.g.&nbsp;data, code) without a license or statement granting your permission for reuse cannot legally be reused even if they appear publicly online.</p>
+<div class="content">
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true" href="">1.1.1. Articles</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-2" role="tab" aria-controls="tabset-3-2" aria-selected="false" href="">1.1.2. Preregistrations</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-3" role="tab" aria-controls="tabset-3-3" aria-selected="false" href="">1.1.3. Data</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-4" role="tab" aria-controls="tabset-3-4" aria-selected="false" href="">1.1.4. Code</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">1.1.1. Articles</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">1.1.2. Preregistrations</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false" href="">1.1.3. Data</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-4" role="tab" aria-controls="tabset-1-4" aria-selected="false" href="">1.1.4. Code</a></li></ul>
 <div class="tab-content">
-<div id="tabset-3-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-3-1-tab">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
 <ul>
-<li><strong>Review existing literature</strong> to come up with a well-founded research question. We recommend to use open source discipline-agnostic registries like <a href="https://openalex.org/">OpenAlex</a> which contains published articles, thesis, and preprints (scholarly work that are not (yet) peer-reviewed) of all disciplines, or discipline-specific open source registries such as <a href="https://europepmc.org/">Europe PubMed Central</a> for life sciences preprints and published articles.</li>
-<li><strong>Use a reference manager</strong> to keep track of your bibliography. <a href="https://www.zotero.org/">Zotero</a> is an open source software formatting your bibliography in any desired format and that can be integrated within e.g.&nbsp;Microsoft Word, Google Doc, or RStudio for writing reproducible manuscripts (see <a href="../../training/research-cycle-handbook/03-analyze-and-collaborate.html" class="mark">3. Analyze &amp; Collaborate</a>).</li>
+<li><p><strong>Review existing literature</strong> to come up with a well-founded research question. We recommend to use open source discipline-agnostic registries like <a href="https://openalex.org/">OpenAlex</a> which contains published articles, thesis, and preprints (scholarly work that are not (yet) peer-reviewed) of all disciplines, or discipline-specific open source registries such as <a href="https://europepmc.org/">Europe PubMed Central</a> for life sciences preprints and published articles.</p></li>
+<li><p><strong>Use a reference manager</strong> to keep track of your bibliography. <a href="https://www.zotero.org/">Zotero</a> is an open source software formatting your bibliography in any desired format and that can be integrated within e.g.&nbsp;Microsoft Word, Google Doc, or RStudio for writing reproducible manuscripts (see <a href="../../training/research-cycle-handbook/03-analyze-and-collaborate.html" class="mark">3. Analyze &amp; Collaborate</a>).</p></li>
 </ul>
 <!-- main container div -->
 <div class="container my-4">
@@ -554,9 +562,8 @@ Checkpoints: Study Plan Presentation &amp; Preregistration Submission
 </div>
 </div>
 </div>
-<div id="tabset-3-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-2-tab">
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
 <p>A <strong>preregistration</strong> typically consists of a hypothesis and predictions, a plan for data collection (when relevant), and a plan for data analysis, that researchers upload onto a registry before starting their projects, often in order to increase the rigor of confirmatory research (see <a href="#sec-study-design-analysis-plan" class="mark">1.4.1. Pre-analysis planning</a>).</p>
-<p><br></p>
 <ul>
 <li><strong>Get insight into projects that are not (yet) published</strong>, either currently ongoing or abandoned, by looking for projects that were preregistered. Projects that are left unpublished typically have a note attached to their preregistration. Some registries are discipline-specific while others are discipline-agnostic (see below).</li>
 </ul>
@@ -621,7 +628,7 @@ Checkpoints: Study Plan Presentation &amp; Preregistration Submission
 </div>
 </div>
 </div>
-<div id="tabset-3-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-3-tab">
+<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
 <h5 class="fs-5 no-anchor">
 How to find existing datasets?
 </h5>
@@ -643,7 +650,6 @@ How to find existing datasets?
 <p><u><strong>Metadata</strong></u> are data about your data, such as author, date, measurement device, unit of measurement, context of data collection, etc.</p>
 </div>
 </div>
-<p><br></p>
 <h5 class="fs-5 no-anchor">
 How to reuse a dataset?
 </h5>
@@ -664,7 +670,6 @@ How to reuse a dataset?
 </div>
 <div class="callout-body-container callout-body">
 <p><u><strong>Confirmation bias</strong></u>: The tendency to seek, interpret, and remember information that confirms one’s existing beliefs or expectations.</p>
-<p><br></p>
 <p><u><strong>Hinsight bias</strong></u> Seeing past events as predictable after the outcome is known (“I knew it all along”).</p>
 </div>
 </div>
@@ -735,9 +740,8 @@ How to reuse a dataset?
 </div>
 </div>
 </div>
-<div id="tabset-3-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-4-tab">
+<div id="tabset-1-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-4-tab">
 <p><strong>Find code available for reuse</strong> archived on <a href="https://zenodo.org/">Zenodo</a>, <a href="https://www.softwareheritage.org">Software Heritage</a> or actively developed on <a href="https://github.com/">GitHub</a> and other code repositories. Start learning Git version control now or learn to take advantage of more collaborative features on the GitHub platform in more details in <a href="../../training/research-cycle-handbook/03-analyze-and-collaborate.html" class="mark">3. Analyze &amp; Collaborate</a>.</p>
-<p><br></p>
 <div class="callout callout-style-default callout-important callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -854,19 +858,33 @@ Important
 </div>
 </div>
 </div>
-</div></div></div></details>
-<details class="orc-details-panel">
-<summary>
-<p><i class="bi bi-shield-check"></i></p>
-<section id="sec-legal-requirements" class="level3" data-number="1.2">
-<h3 data-number="1.2" class="anchored" data-anchor-id="sec-legal-requirements"><span class="header-section-number">1.2</span> Legal Requirements</h3>
-</section></summary>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- second accordion -->
+<div id="accordion-legal-requirements" class="accordion rh-accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle">
+<div class="accordion-item">
+<div id="sec-legal-requirements" class="accordion-header no-anchor">
+<button class="accordion-button collapsed fw-semibold d-flex align-items-center gap-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false">
+<span class="icon-wrapper rounded-4 bg-success-subtle text-success p-3"> <i class="bi bi-shield-check m-0 fs-4"></i> </span>
+<section id="legal-requirements" class="level3 accordion-title" data-number="1.2">
+<h3 data-number="1.2" class="anchored" data-anchor-id="legal-requirements"><span class="header-section-number">1.2</span> Legal Requirements</h3>
+</section>
+</button>
+</div>
+<div id="collapseTwo" class="accordion-collapse collapse">
+<div class="accordion-body p-4">
+<div class="content">
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">1.2.1. LMU guidelines</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">1.2.2. Funders</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false" href="">1.2.3. Ethics</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true" href="">1.2.1. LMU guidelines</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false" href="">1.2.2. Funders</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-3" role="tab" aria-controls="tabset-2-3" aria-selected="false" href="">1.2.3. Ethics</a></li></ul>
 <div class="tab-content">
-<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
 <p>The <a href="https://cms-cdn.lmu.de/media/contenthub/amtliche-veroeffentlichungen/gwp-ordnung.pdf">LMU Guidelines for Safeguarding Good Scientific Practice</a> are legally binding for all academics, researchers, research support staff, teachers, and students at LMU Munich. Only the original text in German prevails, but we provide an English summary of relevant aspects for this guide:</p>
-<p><br></p>
 <h5 class="fs-5 no-anchor">
 Appropriate level of documentation and standards to allow <u><strong>reproduction</strong></u>:
 </h5>
@@ -890,7 +908,6 @@ Public access to research results:
 <li>Data, material, software made publicly accessible must be appropriately archived, usually for a period of 10 years (§17).</li>
 </ul>
 <p>In later sections, you will acquire skills in data management and reproducible workflow that will enable you to comply with these guidelines and the <strong><u>FAIR principles</u></strong>.</p>
-<p><br></p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -912,9 +929,7 @@ Public access to research results:
 <li><strong>R</strong>eusable: the data is richly documented (e.g.&nbsp;with a data dictionary) and is accompanied by a data usage license See <a href="https://www.go-fair.org/fair-principles/">https://www.go-fair.org/fair-principles/</a> for more information.</li>
 </ul>
 <p><u><strong>Metadata</strong></u> are data about your data, such as author, date, measurement device, unit of measurement, context of data collection, etc.</p>
-<p><br></p>
 <p><u><strong>Reproducibility</strong></u>: The ability of a researcher to re-derive the same results using the <em>same data and methods</em>; also known as computational reproducibility.</p>
-<p><br></p>
 <p><u><strong>Replicability</strong></u>: The ability of an independent researcher to achieve results consistent with teh original study by following the same experimental or analytical approach but collecting <em>new data</em>.</p>
 </div>
 </div>
@@ -936,15 +951,14 @@ Public access to research results:
 </div>
 </div>
 </div>
-<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
 <ul>
 <li><p><strong>Check all funders’ open science requirements.</strong> Funders may have additional requirements on top of those indicated in the LMU guidelines. For instance, some funding lines request a Research Data Management plan before making their second payment, some specify the extent and timing of data sharing and provide funds for such activity.</p></li>
 <li><p><strong>Contact the <a href="https://www.lmu.de/en/research/research-services/contact.html">LMU Research Funding Unit</a> to review your grant proposal</strong> and assess if your proposal is meeting your funders’ open science requirements.</p></li>
 </ul>
 </div>
-<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
+<div id="tabset-2-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-3-tab">
 <p>Data collection and analyses involving human participants or animal subjects typically require approval from ethics committees to ensure responsible conduct and the protection of data.</p>
-<p><br></p>
 <h5 class="fs-5 no-anchor">
 <i class="bi bi-list-check"></i> Your ethics proposal will typically include information on:
 </h5>
@@ -956,7 +970,6 @@ Public access to research results:
 <li><strong>Power analysis</strong> to justify sample size – providing a statistical rationale for the number of participants, which supports the validity and ethical justification of the study. This, and more detailed information on the statistical plan, can be extracted from your pre-analysis plan (see <a href="#sec-study-design-analysis-plan" class="mark">1.4.1. Pre-analysis planning</a> and <a href="#sec-study-design-analysis-plan" class="mark">1.4.3. Power analyses</a>).</li>
 </ul>
 <p>For data protection guidance, contact the <a href="https://www.lmu.de/en/about-lmu/structure/organizational-structure/officers-representatives-and-contact-persons/data-protection-officer.html">LMU Data Protection Officer</a> or the <a href="https://www.en.ub.uni-muenchen.de/writing/research_data/research-data-management/index.html">Research Data Management team of the University Library</a>.</p>
-<p><br></p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -1029,14 +1042,25 @@ Public access to research results:
 </div>
 </div>
 </div>
-</details>
-<details class="orc-details-panel">
-<summary>
-<p><i class="bi bi-folder2-open"></i></p>
-
-<section id="sec-research-data-management" class="level3" data-number="1.3">
-<h3 data-number="1.3" class="anchored" data-anchor-id="sec-research-data-management"><span class="header-section-number">1.3</span> Research Data Management Plans</h3>
-</section></summary>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- third accordion -->
+<div id="accordion-research-data-management" class="accordion rh-accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle">
+<div class="accordion-item">
+<div id="sec-research-data-management" class="accordion-header no-anchor">
+<button class="accordion-button collapsed fw-semibold d-flex align-items-center gap-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false">
+<span class="icon-wrapper rounded-4 bg-success-subtle text-success p-3"> <i class="bi bi-folder2-open fs-4 m-0"></i> </span>
+<section id="research-data-management-plans" class="level3 accordion-title" data-number="1.3">
+<h3 data-number="1.3" class="anchored" data-anchor-id="research-data-management-plans"><span class="header-section-number">1.3</span> Research Data Management Plans</h3>
+</section>
+</button>
+</div>
+<div id="collapseThree" class="accordion-collapse collapse">
+<div class="accordion-body p-4">
+<div class="content">
 <p>A <strong>Data Management Plan (DMP)</strong> documents how you will handle research data throughout your project. Writing a DMP prompts you to think and document decisions you might otherwise leave implicit.</p>
 <div class="ms-1">
 <ul>
@@ -1055,9 +1079,7 @@ Public access to research results:
 <li><strong>How will you share outputs</strong> (repositories, licenses, embargo periods)? See our lecture “<a href="https://lmu-osc.github.io/training/data-management/open-data.html">Why share data openly?</a>” and <a href="../../training/research-cycle-handbook/04-preserve-and-share.html#sec-fair-data-sharing" class="mark">4.1. FAIR Data Sharing</a></li>
 <li><strong>What constraints apply</strong> (consent, anonymization, GDPR, data use agreements)? See our lecture “<a href="https://lmu-osc.github.io/training/data-management/maintaining-privacy-with-open-data.html">Maintaining privacy with open data</a>”, <a href="#sec-legal-requirements" class="mark">1.2.3. Ethics</a> and <a href="../../training/research-cycle-handbook/02-collect-and-manage.html#sec-ethics-and-privacy" class="mark">2.3. Ethics &amp; Privacy</a>.</li>
 </ul>
-<p><br></p>
 <p>The specific questions vary by discipline, data type, and funder requirements. DMP tools like <a href="https://rdmo.ub.lmu.de/">RDMO</a> guide you through the relevant questions with funder-specific templates.</p>
-<p><br></p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -1159,44 +1181,50 @@ Public access to research results:
 </div>
 </div>
 </div>
-</section></details>
-<details class="orc-details-panel">
-<summary>
-<p><i class="bi bi-clipboard-check"></i></p>
-
-
-<section id="sec-study-design-analysis-plan" class="level3" data-number="1.4">
-<h3 data-number="1.4" class="anchored" data-anchor-id="sec-study-design-analysis-plan"><span class="header-section-number">1.4</span> Study Design &amp; Analysis Plan</h3>
-</section></summary>
+</section>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- fourth accordion -->
+<div id="accordion-study-design-analysis-plan" class="accordion rh-accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle">
+<div class="accordion-item">
+<div id="sec-study-design-analysis-plan" class="accordion-header no-anchor">
+<button class="accordion-button collapsed fw-semibold d-flex align-items-center gap-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false">
+<span class="icon-wrapper rounded-4 bg-success-subtle text-success p-3"> <i class="bi bi-clipboard-check m-0 fs-4"></i> </span>
+<section id="study-design-analysis-plan" class="level3 accordion-title" data-number="1.4">
+<h3 data-number="1.4" class="anchored" data-anchor-id="study-design-analysis-plan"><span class="header-section-number">1.4</span> Study Design &amp; Analysis Plan</h3>
+</section>
+</button>
+</div>
+<div id="collapseFour" class="accordion-collapse collapse">
+<div class="accordion-body p-4">
+<div class="content">
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true" href="">1.4.1. Pre-analysis planning</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false" href="">1.4.2. Simulation of Data</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-3" role="tab" aria-controls="tabset-2-3" aria-selected="false" href="">1.4.3. Power analyses</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true" href="">1.4.1. Pre-analysis planning</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-2" role="tab" aria-controls="tabset-3-2" aria-selected="false" href="">1.4.2. Simulation of Data</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-3" role="tab" aria-controls="tabset-3-3" aria-selected="false" href="">1.4.3. Power analyses</a></li></ul>
 <div class="tab-content">
-<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
+<div id="tabset-3-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-3-1-tab">
 <h5 class="fs-5 no-anchor">
 Why should you plan your statistical plan prior to collecting data?
 </h5>
 <p>Humans are prone to cognitive biases such as <strong>confirmation bias</strong> (seeking information that supports existing beliefs) and <strong>hindsight bias</strong> (believing outcomes were predictable after the fact). In research, these biases can distort findings, especially when researchers make analytic decisions after seeing results. Although statistical testing typically accepts a 5% false positive rate, <strong>“researcher degrees of freedom”</strong> — choices about data collection, exclusions, transformations, sample size, covariates, etc. — can dramatically inflate false positives when decisions are made post hoc. Practices like increasing sample size until reaching statistical significance, selectively removing outliers, or trying multiple analytic strategies <strong>increase the likelihood of false-positive results</strong>. See how easy it is to find false “significant” results by using our <a href="https://shinyapps.org/apps/p-hacker/">p-hacking tool</a>.</p>
-<p><br></p>
 <p>The core problem is that analyses guided by observed outcomes allow biases to influence decisions, making many reported effects unreliable. A key <strong>remedy is transparency and preregistration.</strong></p>
-<p><br></p>
 <h5 class="fs-5 no-anchor">
 Benefits of preregistration
 </h5>
 <p>Preregistration, that is, specifying hypotheses, methods, and analysis plans before data collection or analysis, limits bias in confirmatory testing while still allowing exploratory analyses, clearly <strong>distinguishing robust hypothesis tests from hypothesis-generating work</strong>. This improves credibility, limits false positives, and often leads to better study design through <strong>early methodological feedback</strong>.</p>
-<p><br></p>
 <p>Preregistration can be beneficial for various type of studies, including:</p>
 <ul>
 <li>experimental studies (i.e.&nbsp;studies with a manipulated variable): it will define what will be your confirmatory analysis and strengthens your claim</li>
 <li>observational or exploratory studies: it will help you move along the exploratory-confirmatory continuum</li>
 <li>qualitative studies: it will provide a way to document e.g.&nbsp;your positionality towards a subject in the course of a project.</li>
 </ul>
-<p><br></p>
 <h5 class="fs-5 no-anchor">
 <i class="bi bi-list-check"></i> What is included in a preregistration?
 </h5>
 <p>Several <a href="https://help.osf.io/article/330-welcome-to-registrations">preregistration templates</a> exist. While the <a href="https://docs.google.com/document/d/1gkN0Jp6Gu7GIA4Ne4YCDZ61nCLQRgt32moRdUg9AnVg/edit?tab=t.0#heading=h.fwbi14d4b65g">standard Open Science Framework (OSF) preregistration template</a> is most commonly used, some are tailored for specific field or specific methods (e.g.&nbsp;systematic review, qualitative work, secondary data analysis).</p>
-<p><br></p>
-<p>Your preregistration will define your study’s: <br></p>
+<p>Your preregistration will define your study’s:</p>
 <ul>
 <li><strong>Hypothesis and predictions</strong></li>
 <li><strong>Data collection procedures</strong></li>
@@ -1204,29 +1232,24 @@ Benefits of preregistration
 <li><strong>Variables</strong> (manipulated, measured, indices)</li>
 <li><strong>Statistical method</strong> (model, dependent and independent variables, covariables, transformations)</li>
 <li><strong>Data exclusion criteria</strong></li>
-<li><strong>How to deal with missing data</strong> <br></li>
+<li><strong>How to deal with missing data</strong></li>
 </ul>
 <p>A great tool to create your statistical plan, especially for early career researchers still learning statistics and needing feedback from supervisors, collaborators, or statisticians on their design, is to <strong>simulate data, and write the possible statistical tests to analyze that data</strong> (see <a href="#sec-study-design-analysis-plan" class="mark">1.4.2. Simulation of data</a> and <a href="#sec-study-design-analysis-plan" class="mark">1.4.3. Power analyses</a>). Including an analyses script (developed on simulated data) with your preregistration is optional but recommended.</p>
-<p><br></p>
 <p>To get support with planning your analytical approach, you can book a consultation with the <a href="https://www.stat.lmu.de/stablab/de/">LMU statistical consulting unit (StaBLab)</a>.</p>
-<p><br></p>
 <h5 class="fs-5 no-anchor">
 Publishing process
 </h5>
 <p>Once your study plan is finalized:</p>
-<p><br></p>
 <ul>
 <li><strong>Submit your preregistration before collecting new or analyzing existing data.</strong> You can do so on discipline specific registries (see <a href="#sec-explore-and-reuse" class="mark">1.1.2. Preregistrations</a>) or discipline agnostic repositories such as the <a href="https://osf.io/">OSF</a>.</li>
 <li><strong>Embargo your plan if you are concerned about scooping.</strong> On the OSF, your preregistration can be kept private for a predetermined amount of time, and for a maximum of 4 years.</li>
 <li><strong>Include your preregistration’s DOI in your manuscript.</strong> Make your registration public upon the publication of your manuscript.</li>
 </ul>
 <p>Creating a preregistration improves transparency and allows for valuable <strong>early feedback from collaborators</strong>. An even stronger approach is <strong>submitting preregistrations directly to journals</strong> (then called <strong>“Registered Reports”</strong>), enabling peer review at a stage where methodological adjustments are still possible.</p>
-<p><br></p>
 <h5 class="fs-5 no-anchor">
 Registered Reports
 </h5>
 <p>Registered Reports are a publication format, now adopted by over 300 journals (see <a href="https://www.cos.io/initiatives/registered-reports">participating journals</a>), where <strong>preregistrations are peer-reviewed before data collection</strong>. Reviewers evaluate the hypotheses, methods, and planned analyses, allowing methodological improvements. If the plan is approved, the journal grants in-principle acceptance, meaning publication is guaranteed provided researchers follow the protocol.</p>
-<p><br></p>
 <p>After completing the study, authors add results and discussion sections, clearly separating preregistered confirmatory analyses from exploratory ones. Final review focuses on adherence to the approved plan and the validity of conclusions, not on whether results are significant. This model <strong>shifts incentives toward asking important questions and using rigorous methods rather than chasing striking or ‘novel’ outcomes</strong>.</p>
 <div class="container my-4">
 <h4 class="fs-5 anchored">
@@ -1294,9 +1317,8 @@ Preregistration templates, embargoes, file storage.
 </div>
 </div>
 </div>
-<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
+<div id="tabset-3-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-2-tab">
 <p>In our context, a computer simulation is the generation of artificial data to build up an understanding of real data and the statistical models we use to analyze them. You can simulate data to:</p>
-<p><br></p>
 <ul>
 <li><p><strong>Test your statistical intuition or demonstrate mathematical properties you cannot easily anticipate</strong>.<br>
 <em>Example: Check whether there are more than 5% significant effects (assuming <span class="math inline">\(\alpha = .05\)</span>) when random data from <span class="math inline">\(H_0\)</span> are generated.</em></p></li>
@@ -1307,7 +1329,6 @@ Preregistration templates, embargoes, file storage.
 <li><p><strong>Prepare a pre-analysis plan.</strong><br>
 <em>Example: To strengthen your planned confirmatory analyses before collecting data, consider sharing a simulated dataset with a statistician or mentor. This allows for specific feedback on suitable statistical tests. The resulting analysis code can accompany your preregistration or registered report (see <a href="#sec-explore-and-reuse" class="mark">1.4.1. Pre-analysis planning</a>) so reviewers can clearly see your intended approach. When real data are collected, they can be directly substituted into the code to generate results.</em></p></li>
 </ul>
-<p><br></p>
 <p>Generating an artificial dataset in R (see our <a href="https://lmu-osc.github.io/Introduction-Simulations-in-R/">simulation tutorial</a>) is much easier than you might think and is often very helpful, even when you need to make assumptions about variable distribution or when the parameter space is not well known.</p>
 <div class="container my-4">
 <h4 class="fs-5 anchored">
@@ -1351,14 +1372,12 @@ Preregistration templates, embargoes, file storage.
 </div>
 </div>
 </div>
-<div id="tabset-2-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-3-tab">
+<div id="tabset-3-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-3-tab">
 <p>Power analysis is relevant whether you are designing a project from scratch or running an analysis on already existing data. There are two main types of power analyses:</p>
-<p><br></p>
 <h5 class="fs-5 no-anchor">
 A priori power analysis
 </h5>
 <p><strong>Simulate data to calculate the smallest sample size required to detect the smallest effect of interest.</strong> See our <a href="https://lmu-osc.github.io/Simulations-for-Advanced-Power-Analyses/">advanced power analyses tutorial using R</a>.</p>
-<p><br></p>
 <p>For a very basic power calculation, you can use simple R functions if you know 3 out of 4 of these parameters:</p>
 <ul>
 <li>required sample size <em>n</em> (usually the one missing)</li>
@@ -1367,14 +1386,11 @@ A priori power analysis
 <li>the expected effect size (has to be estimated or extracted from the literature on the form of <em>d</em>, <em>f</em>, etc.)</li>
 </ul>
 <p>To get support with pre-analysis planning, you can book a consultation with the <a href="https://www.stat.lmu.de/stablab/de/">LMU statistical consulting unit (StaBLab)</a>.</p>
-<p><br></p>
 <h5 class="fs-5 no-anchor">
 Post-hoc power analysis
 </h5>
 <p><strong>Compute a post-hoc power when you are not be able to control the sample size for your project.</strong> Beware: This power computation comes in two flavors - one is legitimate, and one is flawed and not defensible.</p>
-<p><br></p>
 <p>The <strong>legitimate post-hoc power</strong> is computed with your actual <em>n</em>, and the same effect size that you plugged into your a-priori power analysis. This analysis gives you the achieved power to detect your assumed effect.</p>
-<p><br></p>
 <p>The <strong>flawed version of post-hoc power</strong> is called <strong>“observed power”</strong>: If an analysis yields a non-significant result, some researchers calculate the post-hoc power, but plug in the observed effect size. “Observed power”, however, is just a one‑to‑one function of the <em>p</em>‑value (a non-significant <em>p</em>-value returns a low power &lt; 50 %, a just significant <em>p</em>‑value of .05 always yields a power of exactly 50%). Observed power adds no new information to the <em>p</em>‑value and is essentially meaningless. Do not compute this type of post-hoc power!</p>
 <div class="container my-4">
 <h4 class="fs-5 anchored">
@@ -1420,8 +1436,12 @@ Post-hoc power analysis
 </div>
 </div>
 </div>
-</details>
-
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--Checklist-->
 <section id="plan-design-checklist" class="level2 unnumbered orc-gradient-box plan-design-checklist">
 <h2 class="unnumbered anchored" data-anchor-id="plan-design-checklist"><i class="bi bi-card-checklist checklist-icon"></i> Plan &amp; Design Checklist</h2>
 <p>To complete before presenting your final study plan to your research group and, if applicable, submitting your ethics proposal and/or preregistration. Not all items are relevant for all fields of research or study types.</p>
@@ -1475,12 +1495,8 @@ Post-hoc power analysis
 </section>
 
 
-</main></div>
 
-
-
-
- <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -1886,7 +1902,7 @@ Post-hoc power analysis
     }
   });
   </script>
- <!-- /content -->
+</div> <!-- /content -->
 <footer class="osc-footer-card text-white py-5">
   <div class="container">
     <div class="row gy-4">

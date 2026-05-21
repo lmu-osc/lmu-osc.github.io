@@ -24,15 +24,11 @@ These steps are straightforward if you followed previous recommendations: by thi
 
 Not all data can or should be shared openly. Your sharing options depend on what consent participants gave and what your ethics approval permits (see [1.2.3. Ethics](../../training/research-cycle-handbook/01-plan-and-design.llms.md#sec-legal-requirements)).
 
-  
-
 - **Open data** can be downloaded by anyone without restrictions. This maximizes reuse but is only appropriate when data contains no personal information or has been fully anonymized.
 
 - **Restricted access** means the metadata is available on a professional repository and clear instructions of the conditions of access to the data are provided. Requesting the data often requires describing the purpose of reuse (sometimes in the form of a preregistration, see [1.4.1. Pre-analysis planning](../../training/research-cycle-handbook/01-plan-and-design.llms.md#sec-study-design-analysis-plan)), signing a Data Use Agreement, and agreeing to further conditions. This can be organized automatically through the repository or through contacting the authors. This balances reuse with protection.
 
 - **Metadata only** describes what data exists without sharing the data itself. Others can discover your work and contact you to discuss access. This is appropriate when data cannot be shared due to legal or ethical constraints. Making your data Findable by sharing your metadata on a professional repository is the first step to making your data FAIR, as emphasized by the [LMU Guidelines for Safeguarding Good Scientific Practice](https://cms-cdn.lmu.de/media/contenthub/amtliche-veroeffentlichungen/gwp-ordnung.pdf) (see also [1.2. Legal Requirements](../../training/research-cycle-handbook/01-plan-and-design.llms.md#sec-legal-requirements))
-
-  
 
 When deciding whether data should be shared, consider the following:
 
@@ -87,8 +83,6 @@ List of regulated research outputs that could lead to military or malicious purp
 
 During the course of data collection and analyses, you created a README and data dictionary for yourself and collaborators. Before sharing publicly, review them from the perspective of someone who knows nothing about your project.
 
-  
-
 - **Expand your README** to include the research context (who created the data, what it contains, when and where it was collected, why it was generated, how it was produced), how to cite the dataset, and any access conditions.
 
 - **Review your data dictionary** to ensure every variable is fully described. What was obvious to you during analysis may need explanation for others.
@@ -141,15 +135,11 @@ Domain-specific metadata standards
 
 Choose a repository that suits your data type, your field’s expectations, and your access requirements.
 
-  
-
 - **Discipline-specific repositories** are often the best choice. They use metadata standards your community expects, making your data findable by researchers in your field. Search [re3data](https://www.re3data.org/) to find repositories for your domain.
 
 - **General-purpose repositories** like [Zenodo](https://zenodo.org/) or [OSF](https://osf.io/) accept any data type. They provide DOIs and long-term preservation, but may lack the specialized metadata fields of discipline-specific options.
 
 - **Institutional repositories** may be required by your funder. Choosing the LMU repository [Open Data LMU](https://data.ub.uni-muenchen.de/) also ensures you can get the support of the [Research Data Management team of the University Library](https://www.en.ub.uni-muenchen.de/writing/research_data/research-data-management/index.html).
-
-  
 
 Whichever you choose, ensure the repository provides a **DOI** (Digital Object Identifier) so your data can be cited and tracked.
 
@@ -185,8 +175,6 @@ Institutional data repository.
 
 A license tells others what they can do with your data. Licensing your data consists in adding a file called LICENSE.txt next to your data, that contains the appropriate legal text. Without one, or equivalent statements, others cannot legally reuse your research outputs, even if it is publicly available.
 
-  
-
 Common open licenses for data are:
 
 - **CC0 (Public Domain)** places no restrictions. Anyone can use, modify, and redistribute without attribution. Recommended for factual data where maximum reuse is the goal.
@@ -194,11 +182,7 @@ Common open licenses for data are:
 - **CC BY-NC (Non-Commercial)** adds a restriction against commercial use. Consider whether this limitation actually serves your goals.
 - A **Scientific Use License (Public Use)** only allows re-use for scientific purposes (but with all freedoms within that scope). The Leibniz Institute for Psychology (ZPID) developed such a [standard license](https://www.psycharchives.org/en/item/7466aa16-69bd-49ea-baef-7f828f5b223f) together with legal experts.
 
-  
-
 Learn more about open licenses for data and code in our [code publishing tutorial](https://lmu-osc.github.io/code-publishing/choose-license.html).
-
-  
 
 For restricted-access data, a **Data Use Agreement** specifies conditions beyond a standard license: approved purposes, security requirements, publication terms, and data destruction timelines.
 
@@ -240,25 +224,17 @@ If you work with **sensitive data that cannot be anonymized** and shared:
 
 During the course of data analyses, you created scripts and documentation such as README and data dictionary for yourself and collaborators. Before sharing publicly, review them from the perspective of someone who knows nothing about your project.
 
-  
-
 - **Expand your README** to include a description, involved data, computational requirements and dependencies (i.e. what software, packages, and their version, need to be installed to run the analyses), list of results.
 - **Document your code** from an external perspective, using literate programming (e.g. Quarto) or comments.
 - **Double check that no sensitive information remains in your repository** (e.g. code comments, history of sensitive data)
 
 See our [code publishing tutorial](https://lmu-osc.github.io/code-publishing/) for more information on how to prepare your code repository for sharing.
 
-  
-
 > **IMPORTANT:**
 >
 > If you work with **sensitive data**, you must not include the raw or processed data in the version-controlled repository to be shared.
 >
->   
->
 > Instead, explicitly **exclude the data directory using the .gitignore file from the start**. An easy solution (which, however, discards the version history for all files), is to **create a new local repository that contains all project files except the data** and only push that to the public repository.
->
->   
 >
 > Importantly, if data are removed from an existing repository, they may still remain accessible in the repository’s history, since previous states of the project can be restored. If sensitive data are accidentally committed and pushed, it is possible to [rewrite the repository history](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository) to remove them retrospectively. However, this process is complex and error-prone, so it is best avoided by ensuring that sensitive data are excluded from version control from the outset.
 
@@ -275,8 +251,6 @@ Add all elements of a reproducible project to your repository.
 ## 4.2.2. Real, Simulated, or Synthetic Data
 
 Sharing your code allows for other researchers to clearly see which analytic methods were applied to the data. Ideally, they should also be able to rerun the code and verify the reproducibility of the reported results.
-
-  
 
 You can provide the data required to run the code in several ways:
 
@@ -314,13 +288,9 @@ Synthetic data creation in R to balance utility and privacy when sharing data. (
 
 A license tells others what they can do with your code. Licensing your code consists in adding a file called LICENSE.txt next to your code, that contains the appropriate legal text. Without one, or equivalent statements, others cannot legally reuse your code, even if it is publicly available e.g. on [GitHub](https://github.com/). Common open licenses for code are:
 
-  
-
 - **CC0 (Public Domain)** places no restrictions. Anyone can use, modify, and redistribute without attribution. Recommended for generic code where maximum reuse is the goal.
 - **MIT** is a simple license that requires users to credit you when they reuse, modify, and redistribute your code.
 - **Apache 2.0** is a safer license (covering more legal cases) that requires users to credit you and state the changes you made to the code.
-
-  
 
 Learn more about open licenses for data and code in our [code publishing tutorial](https://lmu-osc.github.io/code-publishing/choose-license.html) or using the tool ‘[Choose an open source license](https://choosealicense.com/licenses/)’.
 
@@ -415,11 +385,7 @@ Tool comparing licenses for diverse creative work.
 
 Repositories for physical research materials (e.g., biological samples, chemicals, specimens, hardware, or other tangible resources) are usually called biobanks, material repositories, or research infrastructure collections and are domain specific or specialized to one kind of material (e.g. DNA).
 
-  
-
 For instance, [Addgene](https://www.addgene.org/) is a nonprofit plasmid repository deposited by thousands of research labs around the world, while [ARIADNE](https://www.ariadne-research-infrastructure.eu/)’s mission is to create a sustainable infrastructure for archaeological data sharing across institutions and nations.
-
-  
 
 Regardless of your discipline:
 
@@ -446,8 +412,6 @@ Depending on the contract negotiated by the University and each publisher (see [
 >
 > ***preprint***: article, book chapter, book, or other scholarly work that is deposited in a repository with unrestricted access (i.e. available to the public to view online, or download, without registration, payment, or approval) ahead of peer review. Equivalent terms used in some disciplines are ‘working paper’ and ‘unpublished manuscript’.
 >
->   
->
 > ***postprint***: accepted version of an article, book chapter, book, or other scholarly work that is released by the author(s) on a repository with unrestricted access (i.e. available to the public to view online, or download, without registration, payment, or approval)
 
 ####  TOOLS & RESOURCES
@@ -468,11 +432,7 @@ Clear summary of journals' open access policies.
 
 Until 2024, authors publishing in legacy (subscription-based) journals were required to pay an **Article Processing Charge (APC)** to make their work immediately open access upon publication, the model commonly referred to as ‘*gold open access*’. To **avoid these fees** while still ensuring public accessibility, authors were encouraged to disseminate a **preprint and/or postprint**, or to deposit the publisher’s version in an institutional repository after the embargo period had expired. These procedures, which are **free to the authors**, are collectively known as ‘*green open access*’.
 
-  
-
 **Since 2025**, however, at LMU Munich and other universities that are part of the [DEAL Konsortium](https://deal-konsortium.de/en/) in Germany, the agreements with Elsevier, Wiley, and Springer Nature, stipulate that the **authors publishing in hybrid journals** (i.e., journals offering both subscription-based and open access options) **incur an Article Processing Charge (APC) regardless of whether the article is published closed or open access**. Consequently, authors who elect to publish in these venues and pay the APC are generally advised to opt for immediate open access through the publisher. Although preprinting remains possible and may expedite dissemination, it no longer constitutes a cost-free alternative for hybrid journals operating under these uniform APC conditions.
-
-  
 
 The current contract conditions for LMU Munich can be accessed on the [University Library Publication Fees Webpage (in german)](https://www.ub.lmu.de/en/open-access-publishing/financing-open-access/). To get support with Article Processing Charges and open access policies, contact the [University Library Open Access team](https://www.en.ub.uni-muenchen.de/writing/open-access-publishing/oa-auxiliary-page/index.html).
 
@@ -489,8 +449,6 @@ Publisher contracts and publication fees.
 ## 4.4.3. Publishing Preprints and Retaining Rights
 
 To increase the accessibility and impact of your article we recommend you to:
-
-  
 
 - **Check what your target journal’s open access policies are.** [Jisc’ Open Policy Finder](https://openpolicyfinder.jisc.ac.uk/) provides clear information about whether you are allowed to archive various versions of manuscripts. For instance, your target journal may, or may not, allow you to deposit:
 
@@ -515,8 +473,6 @@ To increase the accessibility and impact of your article we recommend you to:
 Preprint flow
 
 In practice, we recommend to follow the process of version releases illustrated in the figure, starting with a manuscript draft, should you wish to obtain feedback from your community, or preprinting the submitted version, should you want to e.g. accelerate dissemination of findings that are unlikely to change during revision, or postprinting the accepted version to have a free peer-reviewed version available to anyone. Note that submissions to some preprint servers are moderated (e.g. to prevent submission out of scope or generated by AI) which can take a few days.
-
-  
 
 To get support for [Open Access LMU](https://epub.ub.uni-muenchen.de/), the LMU Munich institutional repository for articles and books, contact the [University Library Open Access team](https://www.en.ub.uni-muenchen.de/writing/open-access-publishing/oa-auxiliary-page/index.html).
 
@@ -569,11 +525,7 @@ According to §14 of the [LMU Guidelines for Safeguarding Good Scientific Practi
 
 Publishers can provide additional guidance on authorship decisions (often based on the recommendations of the [International Committee of Medical Journal Editors](https://www.icmje.org/recommendations/browse/roles-and-responsibilities/defining-the-role-of-authors-and-contributors.html).
 
-  
-
 We recommend to **start discussions on authorship, roles, and responsibilities as early as possible**. First discussions can for instance take place at the end of [1. Plan & Design](../../training/research-cycle-handbook/01-plan-and-design.llms.md), e.g. during the presentation of the study plan to the research group (see [Plan & Design Checklist](../../training/research-cycle-handbook/01-plan-and-design.llms.md#plan-design-checklist)). As roles may shift in the course of a project, a review is warranted at the write-up stage.
-
-  
 
 ##### Contributorship
 
@@ -581,8 +533,6 @@ We recommend to **start discussions on authorship, roles, and responsibilities a
   - Use the [Tenzing App](https://rollercoaster.shinyapps.io/tenzing/) to keep track of contributorships in large collaborations and export the information into various reusable formats.
   - Include the CRediT statement in the acknowledgement section of your manuscript if your publisher is not a [formal CRediT adopter](https://credit.niso.org/adopters/) and does not otherwise prompt you upon submission of your article.
 - **Use the [Method Reporting with Initials for Transparency (MeRIT)](https://doi.org/10.1038/s41467-023-37039-1)** when relevant. This consists in adding initials to the Methods section, identifying with greater transparency who did what when several team members contributed to e.g. data curation or software.
-
-  
 
 ##### ORCID
 
@@ -618,11 +568,7 @@ Free, unique, persistent identifier for researchers.
 >
 > The official names of LMU Munich are Ludwig-Maximilians-Universität München in German, and LMU Munich in English. This university’s ROR ID is <https://ror.org/05591te55>.
 >
->   
->
 > LMU Munich is mostly funded by the German Research Foundation, whose ROR ID is <https://ror.org/018mejw64>
->
->   
 >
 > The LMU Open Science Center is one of the many child organizations of LMU Munich; its ROR ID is <https://ror.org/029e6qe04>. The funder of this handbook’s project is the Volkswagen Foundation, <https://ror.org/03bsmfz84>.
 

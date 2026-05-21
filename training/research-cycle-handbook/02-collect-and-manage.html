@@ -44,7 +44,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-fe9b9235b005db5ae2ecbb674ed511fe.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-a7c386534ad53eac38c2d6ee6e5d9f27.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -452,12 +452,20 @@ Checkpoint: Data quality validation meeting
 </div>
 </div>
 </div>
-<details class="orc-details-panel">
-<summary>
-<p><i class="bi bi-journal-code"></i></p>
-<section id="sec-data-collection" class="level3" data-number="2.1">
-<h3 data-number="2.1" class="anchored" data-anchor-id="sec-data-collection"><span class="header-section-number">2.1</span> Data Collection</h3>
-</section></summary>
+<!--first accordion -->
+<div id="accordionExample" class="accordion rh-accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle">
+<div class="accordion-item">
+<div id="sec-data-collection" class="accordion-header no-anchor">
+<button class="accordion-button collapsed fw-semibold d-flex align-items-center gap-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false">
+<span class="icon-wrapper rounded-4 bg-success-subtle text-success p-3"> <i class="bi bi-journal-code m-0 fs-4"></i> </span>
+<section id="data-collection" class="level3 accordion-title" data-number="2.1">
+<h3 data-number="2.1" class="anchored" data-anchor-id="data-collection"><span class="header-section-number">2.1</span> Data Collection</h3>
+</section>
+</button>
+</div>
+<div id="collapseOne" class="accordion-collapse collapse">
+<div class="accordion-body p-4">
+<div class="content">
 <p>Your data acquisition procedures must be documented in sufficient detail to allow replication by another researcher (see <a href="https://cms-cdn.lmu.de/media/contenthub/amtliche-veroeffentlichungen/gwp-ordnung.pdf">LMU Guidelines for Safeguarding Good Scientific Practice</a>). Reproducible data collection processes build team expertise, reduce errors, and improve data quality and consistency.</p>
 <p>State-of-the-art practices for reproducible data acquisition include:</p>
 <div class="ms-1">
@@ -467,8 +475,7 @@ Checkpoint: Data quality validation meeting
 <li><strong>build in automation through programming</strong></li>
 </ul>
 </div>
-<!-- why is there a weird white space between the frame and the text in this call outbox?-->
-<div class="mx-4 callout callout-style-default callout-note callout-titled">
+<div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
@@ -481,8 +488,7 @@ Checkpoint: Data quality validation meeting
 <p><u><strong>Metadata</strong></u> are data about data; they provide context to your data. Metadata such as equipment settings, environmental conditions, software versions, and calibration records should be recorded contemporaneously, not reconstructed afterward. Electronic lab notebooks, instrument logs, and automated logging all help to document your metadata.</p>
 </div>
 </div>
-<!-- why is there a weird white space between the frame and the text in this call outbox?-->
-<div class="mx-4 callout callout-style-default callout-tip callout-titled">
+<div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
@@ -499,11 +505,10 @@ Checkpoint: Data quality validation meeting
 </div>
 </div>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-4-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-1" role="tab" aria-controls="tabset-4-1" aria-selected="true" href="">2.1.1. Lab Protocols</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-2" role="tab" aria-controls="tabset-4-2" aria-selected="false" href="">2.1.2. Questionnaires</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-3" role="tab" aria-controls="tabset-4-3" aria-selected="false" href="">2.1.3. Software-based data acquisition</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-4" role="tab" aria-controls="tabset-4-4" aria-selected="false" href="">2.1.4. Field and lab work</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-5" role="tab" aria-controls="tabset-4-5" aria-selected="false" href="">2.1.5. Systematic reviews</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">2.1.1. Lab Protocols</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">2.1.2. Questionnaires</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false" href="">2.1.3. Software-based data acquisition</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-4" role="tab" aria-controls="tabset-1-4" aria-selected="false" href="">2.1.4. Field and lab work</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-5" role="tab" aria-controls="tabset-1-5" aria-selected="false" href="">2.1.5. Systematic reviews</a></li></ul>
 <div class="tab-content">
-<div id="tabset-4-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-4-1-tab">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
 <p>Your protocol should specify materials with identifying details (e.g.&nbsp;lot numbers, versions, sources), equipment settings, step-by-step instructions with timing, and expected outcomes at each stage. What counts as “materials” varies by field: reagent concentrations in wet lab work, scanner parameters in neuroimaging, sampling coordinates in field ecology. But the principle is the same: enough detail that someone else could replicate your procedure exactly.</p>
-<p><br></p>
 <ul>
 <li><p><strong>Write detailed methods and reusable protocols.</strong> Write your protocol before you start, with all the details that would be needed for an exact replication (see the ReproducibiliTeach <a href="https://youtu.be/aKiXFzj15dg?si=ilB8aOsXArphMpfm">lecture on reusable protocols</a>)</p></li>
 <li><p><strong>Track deviations in real time.</strong> Follow your protocol precisely, and record any deviations as they happen. When you need to adapt, note it immediately. These deviations often explain unexpected results and guide protocol improvements. <strong>Electronic lab notebooks (ELNs)</strong> make this easier by creating version-controlled, timestamped records automatically, providing an audit trail that paper cannot match.</p></li>
@@ -578,11 +583,9 @@ Checkpoint: Data quality validation meeting
 </div>
 </div>
 </div>
-<div id="tabset-4-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-2-tab">
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
 <p><strong>Document both the instrument and the administration procedure completely.</strong> The data dictionary (or ‘codebook’) should record the exact version of the questionnaire used; if copyright allows it, document the item wording itself.</p>
-<p><br></p>
 <p>Questionnaires should be objective, reliable, and valid:</p>
-<p><br></p>
 <ul>
 <li><strong>Objective:</strong> Results should not depend on who administers or scores the questionnaire.</li>
 <li><strong>Reliable:</strong> Responses should be consistent across repeated measurements when the underlying construct is unchanged (i.e., they should have low measurement error)</li>
@@ -590,9 +593,8 @@ Checkpoint: Data quality validation meeting
 </ul>
 <p>For well-validated instruments, published studies extensively assess reliability and validity across several populations and contexts. If these quality criteria of measurement instruments are met, your effect size and statistical power will be increased.</p>
 </div>
-<div id="tabset-4-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-3-tab">
+<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
 <p>When data comes from instruments, sensors, or APIs (Application Programming Interface), scripting the acquisition creates a reproducible record of exactly what was collected and how. Programming languages like R or Python work well for straightforward pipelines. For more complex multi-step workflows which are common in e.g.&nbsp;in bioinformatics and neuroimaging, workflow managers like <a href="https://snakemake.readthedocs.io/">Snakemake</a> ensure steps run in the correct order and can resume after failures.</p>
-<p><br></p>
 <ul>
 <li><p><strong>Structure data correctly from the start.</strong> Variables in columns, observations in rows. This makes your data immediately interoperable with analysis tools rather than requiring cleanup later. Scripts can also automate organization, file renaming, and conversion to open formats. See <a href="#sec-data-management" class="mark">2.2 Data Management</a> for guidelines.</p></li>
 <li><p><strong>Keep records of what ran and when.</strong> Include error handling so failures are recorded rather than silently corrupting data. When something fails months later, you need to know what happened. Always test acquisition scripts on sample data before production runs. A bug in your collection pipeline can invalidate an entire dataset.</p></li>
@@ -645,9 +647,8 @@ Checkpoint: Data quality validation meeting
 </div>
 </div>
 </div>
-<div id="tabset-4-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-4-tab">
+<div id="tabset-1-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-4-tab">
 <p>Field and sometimes lab researchers have to work with analogue notebooks first, and use temporary storage solution for images and video-recordings.</p>
-<p><br></p>
 <ul>
 <li><strong>Digitalize your data soon after data collection</strong>, e.g.&nbsp;using data entry form from a relational database such as <a href="https://www.postgresql.org/">postgreSQL</a></li>
 <li><strong>Create automatic validation checks</strong> for data entry so e.g.&nbsp;values outside of expected range get immediately identified (see <a href="#sec-quality-control" class="mark">2.4. Quality control</a>)</li>
@@ -679,9 +680,8 @@ Checkpoint: Data quality validation meeting
 </div>
 </div>
 </div>
-<div id="tabset-4-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-5-tab">
+<div id="tabset-1-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-5-tab">
 <p>A high-quality systematic review, whether it includes a meta-analysis or not, uses a <strong>rigorous, transparent, and reproducible methodology to select the relevant literature</strong> and later provide a thorough summary and critical evaluation of research within a given field. Its defining features include:</p>
-<p><br></p>
 <ul>
 <li>clearly defined objectives supported by an explicit and reproducible methodology</li>
 <li>a comprehensive, systematic search designed to identify all studies meeting the eligibility criteria</li>
@@ -689,7 +689,6 @@ Checkpoint: Data quality validation meeting
 <li>a structured presentation and synthesis of the characteristics and findings of the included studies</li>
 </ul>
 <p>Data collection, in this context, consists in developing a judicious reproducible methods to selecting relevant literature.</p>
-<p><br></p>
 <ul>
 <li><p><strong>Use tools</strong> such as</p>
 <ul>
@@ -758,13 +757,28 @@ Checkpoint: Data quality validation meeting
 </div>
 </div>
 </div>
-</div></div></div></details>
-<details class="orc-details-panel">
-<summary>
-<p><i class="bi bi-folder-check"></i></p>
-<section id="sec-data-management" class="level3" data-number="2.2">
-<h3 data-number="2.2" class="anchored" data-anchor-id="sec-data-management"><span class="header-section-number">2.2</span> Data Management</h3>
-</section></summary>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--second accordion -->
+<div id="accordionExample" class="accordion rh-accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle">
+<div class="accordion-item">
+<div id="sec-data-management" class="accordion-header no-anchor">
+<button class="accordion-button collapsed fw-semibold d-flex align-items-center gap-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false">
+<span class="icon-wrapper rounded-4 bg-success-subtle text-success p-3"> <i class="bi bi-folder-check m-0 fs-4"></i> </span>
+<section id="data-management" class="level3 accordion-title" data-number="2.2">
+<h3 data-number="2.2" class="anchored" data-anchor-id="data-management"><span class="header-section-number">2.2</span> Data Management</h3>
+</section>
+</button>
+</div>
+<div id="collapseTwo" class="accordion-collapse collapse">
+<div class="accordion-body p-4">
+<div class="content">
 <p>In <a href="../../training/research-cycle-handbook/01-plan-and-design.html" class="mark">1. Plan &amp; Design</a> you created a Research Data Management Plan. It’s now time to put this plan into practice, refining it as you learn what actually works for your project.</p>
 <div class="ms-1">
 <ul>
@@ -791,11 +805,10 @@ Checkpoint: Data quality validation meeting
 </div>
 </div>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true" href="">2.2.1. Storage</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-2" role="tab" aria-controls="tabset-3-2" aria-selected="false" href="">2.2.2. Organization</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-3" role="tab" aria-controls="tabset-3-3" aria-selected="false" href="">2.2.3. File Formats</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-4" role="tab" aria-controls="tabset-3-4" aria-selected="false" href="">2.2.4. Documentation</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-5" role="tab" aria-controls="tabset-3-5" aria-selected="false" href="">2.2.5. Standards</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-6-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-6" role="tab" aria-controls="tabset-3-6" aria-selected="false" href="">2.2.6. Version Control</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true" href="">2.2.1. Storage</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false" href="">2.2.2. Organization</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-3" role="tab" aria-controls="tabset-2-3" aria-selected="false" href="">2.2.3. File Formats</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-4" role="tab" aria-controls="tabset-2-4" aria-selected="false" href="">2.2.4. Documentation</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-5" role="tab" aria-controls="tabset-2-5" aria-selected="false" href="">2.2.5. Standards</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-6-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-6" role="tab" aria-controls="tabset-2-6" aria-selected="false" href="">2.2.6. Version Control</a></li></ul>
 <div class="tab-content">
-<div id="tabset-3-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-3-1-tab">
+<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
 <p>This section covers storage for data you are actively collecting. Long-term archiving for sharing is covered in <a href="../../training/research-cycle-handbook/04-preserve-and-share.html" class="mark">4. Preserve &amp; Share</a>.</p>
-<p><br></p>
 <ul>
 <li><strong>Use institutional storage.</strong> LMU Munich provides storage such as <a href="https://syncandshare.lrz.de/login">LRZ Sync and Share</a> or <a href="https://doku.lrz.de/data-science-storage-10745685.html">LRZ DSS</a> with automated backups, access controls, and GDPR compliance. Additional options vary by department. Contact the <a href="https://www.en.ub.uni-muenchen.de/writing/research_data/research-data-management/index.html">Research Data Management team of the University Library</a> to find what is available to you. When choosing, consider how much data you will generate, who needs access, and whether your data includes personal information requiring stricter controls.</li>
 <li><strong>Follow the 3-2-1 backup rule.</strong> Keep three copies on two media types with one off-site. Designate one location as the master copy, the authoritative version everything else syncs from. Working with multiple “equal” copies creates version conflicts. Remember that syncing is not backup: if you delete a file from a synced folder, the deletion propagates everywhere. True backups preserve previous versions independently.</li>
@@ -865,9 +878,8 @@ Checkpoint: Data quality validation meeting
 </div>
 </div>
 </div>
-<div id="tabset-3-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-2-tab">
+<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
 <p>Your folder structure and file naming conventions determine whether you and others can navigate your project months or years later. Establish these conventions at the start of your project and document them. When collaborating, ensure everyone follows the same system.</p>
-<p><br></p>
 <ul>
 <li><p><strong>Separate raw from processed data.</strong> Raw data should not be modified: once collected, these files should never be touched. All cleaning, data processing, transformations, and analyses happen on copies or through scripts in a separate folder. This preserves your ability to verify results or reprocess from the original source.</p></li>
 <li><p><strong>Develop a file naming convention.</strong> Good file names identify contents at a glance and sort correctly. Balance specificity with readability: too many elements make names unwieldy, too few make them ambiguous. Order elements from general to specific.</p>
@@ -878,7 +890,7 @@ Checkpoint: Data quality validation meeting
 <li>Use meaningful abbreviations and document what they mean</li>
 </ul></li>
 </ul>
-<p>A pattern like <code>YYYY-MM-DD_project_condition_type_v01.ext</code> places files in chronological order while preserving context. For example, <code>2024-03-15_sleep-study_control_survey_v02.csv</code> immediately tells you when it was created, which project it belongs to, the experimental condition, data type, and revision. Document your convention in a README file stored next to your data files so collaborators can parse filenames without asking. <br></p>
+<p>A pattern like <code>YYYY-MM-DD_project_condition_type_v01.ext</code> places files in chronological order while preserving context. For example, <code>2024-03-15_sleep-study_control_survey_v02.csv</code> immediately tells you when it was created, which project it belongs to, the experimental condition, data type, and revision. Document your convention in a README file stored next to your data files so collaborators can parse filenames without asking.</p>
 <ul>
 <li><strong>Follow domain standards where they exist.</strong> Many fields have established organizational conventions that tools and collaborators expect. Using these means your data can immediately be integrated in existing analysis pipelines and reviewers recognize the structure. Search <a href="https://rdmkit.elixir-europe.org/your_domain">RDMkit</a> for standards in your domain.</li>
 </ul>
@@ -941,16 +953,14 @@ Checkpoint: Data quality validation meeting
 </div>
 </div>
 </div>
-<div id="tabset-3-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-3-tab">
+<div id="tabset-2-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-3-tab">
 <p>File format choices affect who can work with your data now and whether it remains readable in the future. Open formats have publicly documented specifications that anyone can implement, so many programs can read them and they remain accessible even if the original software disappears. Proprietary formats lock you into specific tools, complicate collaboration, and risk becoming unreadable if the company stops supporting them.</p>
-<p><br></p>
 <ul>
 <li><p><strong>Keep raw data in its original format.</strong> Whatever your instrument or source produces, preserve that original as your ground truth. Even if it is proprietary, you need it for verification and potential reprocessing.</p></li>
 <li><p><strong>Work in open formats.</strong> For analysis, convert to open formats like CSV, JSON, or plain text. This makes your workflow reproducible, enables collaboration across different tools, and ensures your data can be shared. If conversion loses important information (metadata, precision, structure), document what is lost and keep both versions.</p></li>
 <li><p><strong>Be careful with spreadsheets.</strong> Excel is convenient for data entry but causes real problems. It silently converts data: gene names like MARCH1 become dates, leading zeros in IDs disappear, and long numbers lose precision. Formatting (colors, merged cells) breaks machine-readability since scripts cannot see it. If you use spreadsheets for entry, keep them simple (one header row, one observation per row, no merged cells) and export to CSV immediately. Save CSVs with UTF-8 encoding to avoid character corruption when sharing across systems. For more guidance on spreadsheet best practices, see <a href="https://book.the-turing-way.org/reproducible-research/rdm/rdm-spreadsheets/">The Turing Way</a> and <a href="https://ucdavisdatalab.github.io/workshop_keeping_data_tidy/#spreadsheet-best-practices">UC Davis DataLab</a>.</p></li>
 <li><p><strong>Check domain recommendations.</strong> Your field likely has established conventions balancing openness with practical needs like performance or metadata preservation. Consult the <a href="https://rdmkit.elixir-europe.org/your_domain">RDMKit</a> to find conventions for your field.</p></li>
 </ul>
-<p><br></p>
 <p>Format issues often surface during quality control. The <a href="#sec-quality-control" class="mark">2.4. Quality Control</a> panel below covers validation checks that can catch encoding problems, unexpected conversions, and structural inconsistencies early.</p>
 <div class="container my-4">
 <h4 class="fs-5 mt-3 anchored">
@@ -970,9 +980,8 @@ Checkpoint: Data quality validation meeting
 </div>
 </div>
 </div>
-<div id="tabset-3-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-4-tab">
+<div id="tabset-2-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-4-tab">
 <p>Without documentation, a dataset is just a collection of files. Six months from now, you will not remember what each column means, why certain values are missing, or how files relate to each other. Documentation makes your data usable by your future self, your collaborators, and any other researchers.</p>
-<p><br></p>
 <ul>
 <li><strong>Create a README file (as .md or .txt) early and update it as you go.</strong> Your README is the entry point to your project. Start it when you begin, not when preparing to publish. A good README answers the essential questions: who created the data, what it contains, when and where it was collected, why it was generated, how it was produced, and whether it can be reused. These answers let someone unfamiliar with your project understand and work with your data.</li>
 <li><strong>Create a data dictionary defining every variable.</strong> A data dictionary (or “codebook”) makes your dataset self-explanatory. For each variable, document what it measures, its data type, valid values, units of measurement, and how missing data is coded. Use appropriate missing codes to distinguish why data is absent (declined to answer, not applicable, technical failure) since this distinction matters for analysis.</li>
@@ -1015,15 +1024,13 @@ Checkpoint: Data quality validation meeting
 </div>
 </div>
 </div>
-<div id="tabset-3-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-5-tab">
+<div id="tabset-2-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-5-tab">
 <p>Standards are community agreements on how to organize and describe research data. Using them means others in your field immediately understand your data. Three types of standards matter here:</p>
-<p><br></p>
 <ul>
 <li><p><strong>Organizational standards</strong> specify how to structure files and folders. Some fields have well-established conventions, like <a href="https://bids.neuroimaging.io/">BIDS</a> for neuroimaging data. When such standards exist, use them. Your data will work immediately with existing tools, and collaborators will recognize the structure without explanation. If no standard exists for your domain, create a consistent structure and document it in your README. See for instance our <a href="https://github.com/lmu-osc/research-project-template">research project template</a>.</p></li>
 <li><p><strong>Reporting guidelines</strong> specify what methodological details to document for different study types. The <a href="https://www.equator-network.org/">EQUATOR Network</a> maintains a searchable database of guidelines for clinical trials, observational studies, animal research, and many other study types. Following these ensures you capture everything others need to understand or replicate your work.</p></li>
 <li><p><strong>Metadata standards</strong> define what descriptive information to record and how to structure it. Scientific metadata describes how your data was produced: equipment specifications, acquisition parameters, protocols followed. This is distinct from discovery metadata (titles, keywords, descriptions) which you will prepare when sharing in <a href="../../training/research-cycle-handbook/04-preserve-and-share.html" class="mark">4. Preserve &amp; Share</a>. Your field has conventions for which parameters matter. <a href="https://fairsharing.org/">FAIRsharing</a> catalogs metadata standards by discipline.<!-- include ref to discipline specific section when available --></p></li>
 </ul>
-<p><br></p>
 <p><strong>Think of your data as a first-class research output.</strong> Comprehensive metadata transforms a project artifact into a reusable resource. Someone reanalyzing your data years later needs to understand exactly how it was produced.</p>
 <div class="container my-4">
 <h4 class="fs-5 mt-3 anchored">
@@ -1082,9 +1089,8 @@ Checkpoint: Data quality validation meeting
 </div>
 </div>
 </div>
-<div id="tabset-3-6" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-6-tab">
+<div id="tabset-2-6" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-6-tab">
 <p>Version control system like Git tracks changes to files over time. You can see what changed, when, and why. You can revert to previous versions. Collaborators can work without overwriting each other.</p>
-<p><br></p>
 <ul>
 <li><p><strong>Git usually suffices for data files.</strong> Text-based formats (CSV, JSON, plain text) and smaller binary files work well in standard Git repositories. You get a complete history of changes and can share easily via GitHub or GitLab.</p></li>
 <li><p><strong>Use specialized tools for large or frequently changing binary files.</strong> Standard Git stores each version in full, so repositories become unwieldy with large datasets. Git LFS (Large File Storage) stores large files separately while keeping them tracked. Git-annex manages files across multiple storage locations. <a href="https://www.datalad.org/">DataLad</a> builds on git-annex and works with standard Git workflows.</p></li>
@@ -1106,7 +1112,6 @@ Checkpoint: Data quality validation meeting
 <li><p><strong>LRZ GitLab</strong> is a cloud-based hosting platform that provides essentially the same features as GitHub but is open source and is installed on the LRZ servers for LMU Munich and can therefore be considered secure when the repository is private.</p></li>
 </ul>
 <p>While your LRZ GitLab account is associated with your LMU Munich affiliation, your GitHub account can be associated with your private email, be included in your CV, and be used for public sharing of your data and code (see <a href="../../training/research-cycle-handbook/03-analyze-and-collaborate.html" class="mark">3. Analyze &amp; Collaborate</a> and <a href="../../training/research-cycle-handbook/04-preserve-and-share.html" class="mark">4. Preserve &amp; Share</a>).</p>
-<p><br></p>
 <p>In a version controlled workflow, you back up your local Git repositories on either GitHub or LRZ GitLab through a secure SSH connection (see <a href="https://lmu-osc.github.io/Collaborative-RStudio-GitHub/">GitHub tutorial</a>) and share access to your repositories with your collaborators through the cloud-based platform GitHub or LRZ GitLab.</p>
 </div>
 </div>
@@ -1190,20 +1195,34 @@ Checkpoint: Data quality validation meeting
 </div>
 </div>
 </div>
-</div></div></div></details>
-<details class="orc-details-panel">
-<summary>
-<p><i class="bi bi-shield-lock"></i></p>
-<section id="sec-ethics-and-privacy" class="level3" data-number="2.3">
-<h3 data-number="2.3" class="anchored" data-anchor-id="sec-ethics-and-privacy"><span class="header-section-number">2.3</span> Ethics &amp; Privacy</h3>
-</section></summary>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--third accordion -->
+<div id="accordionExample" class="accordion rh-accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle">
+<div class="accordion-item">
+<div id="sec-ethics-and-privacy" class="accordion-header no-anchor">
+<button class="accordion-button collapsed fw-semibold d-flex align-items-center gap-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false">
+<span class="icon-wrapper rounded-4 bg-success-subtle text-success p-3"> <i class="bi bi-shield-lock m-0 fs-4"></i> </span>
+<section id="ethics-privacy" class="level3 accordion-title" data-number="2.3">
+<h3 data-number="2.3" class="anchored" data-anchor-id="ethics-privacy"><span class="header-section-number">2.3</span> Ethics &amp; Privacy</h3>
+</section>
+</button>
+</div>
+<div id="collapseThree" class="accordion-collapse collapse">
+<div class="accordion-body p-4">
+<div class="content">
 <p>Research involving human participants requires ethics approval and data protection compliance. In your ethics proposal (see <a href="../../training/research-cycle-handbook/01-plan-and-design.html#sec-legal-requirements" class="mark">1.2.3. Ethics</a>) you planned for safeguards for the people contributing to your research and you now need to implement them before or while collecting your data.</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">2.3.1. Informed Consent</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">2.3.2. Anonymization</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false" href="">2.3.3. GDPR Compliance</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true" href="">2.3.1. Informed Consent</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-2" role="tab" aria-controls="tabset-3-2" aria-selected="false" href="">2.3.2. Anonymization</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-3" role="tab" aria-controls="tabset-3-3" aria-selected="false" href="">2.3.3. GDPR Compliance</a></li></ul>
 <div class="tab-content">
-<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<div id="tabset-3-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-3-1-tab">
 <p>Participants have the right to understand what they are agreeing to. Your consent form should explain the research purpose in plain language, describe what data you will collect and how you will protect it, specify who will have access and for how long, and make clear that participation is voluntary. See “<a href="https://www.uu.nl/en/research/research-data-management/guides/legal-considerations/how-to-write-an-informed-consent-form">How to write an informed consent form</a>” from the University to Utrecht and an <a href="https://osf.io/mgwk8/files/fvgsx">example template from the LMU Psychology Department</a>.</p>
-<p><br></p>
 <ul>
 <li><p><strong>Use tiered consent when you plan to share data.</strong> Some participants may consent to their data being used for your study but not shared publicly. Others may be comfortable with broader sharing. Giving options respects autonomy while maximizing what you can eventually share.</p></li>
 <li><p><strong>Store consent forms separately from data.</strong> The consent form links a name to participation. Keeping it with your data undermines any pseudonymization you apply.</p></li>
@@ -1242,9 +1261,8 @@ Checkpoint: Data quality validation meeting
 </div>
 <!-- @Felix: can we add example consent form as resources or other resources on how to prepare such language ?-->
 </div>
-<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<div id="tabset-3-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-2-tab">
 <p>Anonymization protects privacy and determines what you can share.</p>
-<p><br></p>
 <ul>
 <li><p><strong>Remove direct identifiers during collection.</strong> Names, addresses, ID numbers, photographs, email addresses. Replace these with codes.</p></li>
 <li><p><strong>Assess indirect identifiers carefully.</strong> A combination of age, location, profession, and a rare condition might identify someone even without their name. Timestamps reveal patterns. Free-text responses often contain identifying details participants did not intend to share. Follow our <a href="https://lmu-osc.github.io/data-anonymization/">data anonymization tutorial</a> to learn to evaluate and implement anonymization techniques in R.</p></li>
@@ -1306,32 +1324,40 @@ Checkpoint: Data quality validation meeting
 </div>
 </div>
 </div>
-<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
+<div id="tabset-3-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-3-tab">
 <p>Research at LMU Munich must comply with EU data protection regulations. The core principles: have a lawful basis for processing personal data (usually consent or legitimate research interest), use data only for stated purposes, collect only what you need, delete data when you no longer need it, and protect it against unauthorized access.</p>
-<p><br></p>
 <p><strong>In practice:</strong> document your lawful basis, include data protection language in consent forms, use institutional storage rather than personal cloud services, restrict access to those who need it, and plan when and how you will delete data.</p>
-<p><br></p>
 <p>For data protection guidance, contact the <a href="https://www.lmu.de/en/about-lmu/structure/organizational-structure/officers-representatives-and-contact-persons/data-protection-officer.html">LMU Data Protection Officer</a> or the <a href="https://www.en.ub.uni-muenchen.de/writing/research_data/research-data-management/index.html">Research Data Management team of the University Library</a>.</p>
 </div>
 </div>
 </div>
-</details>
-<details class="orc-details-panel">
-<summary>
-<p><i class="bi bi-check2-square"></i></p>
-
-<section id="sec-quality-control" class="level3" data-number="2.4">
-<h3 data-number="2.4" class="anchored" data-anchor-id="sec-quality-control"><span class="header-section-number">2.4</span> Quality Control</h3>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--forth accordion -->
+<div id="accordionExample" class="accordion rh-accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle">
+<div class="accordion-item">
+<div id="sec-quality-control" class="accordion-header no-anchor">
+<button class="accordion-button collapsed fw-semibold d-flex align-items-center gap-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false">
+<span class="icon-wrapper rounded-4 bg-success-subtle text-success p-3"> <i class="bi bi-check2-square m-0 fs-4"></i> </span>
+<section id="quality-control" class="level3 accordion-title" data-number="2.4">
+<h3 data-number="2.4" class="anchored" data-anchor-id="quality-control"><span class="header-section-number">2.4</span> Quality Control</h3>
+</section>
+</button>
+</div>
+<div id="collapseFour" class="accordion-collapse collapse">
+<div class="accordion-body p-4">
+<div class="content">
 <!-- Reema: not sure tabs are needed here, could be h5 no anchor titles and ::: {.ms-1} block for lists, this is all done through the same tutorial, it seems there are several concepts that are the same just phrased differently, could be merged coherently to avoid redundancy and consolidate the structure and order of these concepts-->
-</section></summary>
 <p>Quality control catches problems before they propagate into your analysis. The practices here ensure your data is trustworthy and your exclusions are well-founded.</p>
 <p><strong>Define criteria before looking at your data.</strong> This prevents unconscious bias in what you keep and exclude, and demonstrates that your decisions are principled rather than convenient (see <a href="../../training/research-cycle-handbook/01-plan-and-design.html#sec-study-design-analysis-plan" class="mark">1.4. Study Design &amp; Analysis Plan</a>).</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true" href="">2.4.1. Validation</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false" href="">2.4.2. Cleaning</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-3" role="tab" aria-controls="tabset-2-3" aria-selected="false" href="">2.4.3. Exclusions</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-4-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-1" role="tab" aria-controls="tabset-4-1" aria-selected="true" href="">2.4.1. Validation</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-2" role="tab" aria-controls="tabset-4-2" aria-selected="false" href="">2.4.2. Cleaning</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-3" role="tab" aria-controls="tabset-4-3" aria-selected="false" href="">2.4.3. Exclusions</a></li></ul>
 <div class="tab-content">
-<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
+<div id="tabset-4-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-4-1-tab">
 <p>Validation checks whether your data meets specifications. For example, values can be verified to fall within valid ranges (e.g., age ≥ 0), required fields can be checked for missing entries, categorical variables can be restricted to allowed levels (e.g., “yes/no”), dates can be validated for proper format, and cross-variable constraints can be enforced (e.g., discharge date ≥ admission date). Run checks during collection to catch problems immediately, after collection for systematic review, and after any processing to verify transformations worked correctly.</p>
-<p><br></p>
 <ul>
 <li><p><strong>Automate what you can.</strong> Check that data types are correct, values fall within expected ranges, required fields are populated, and formats are consistent. These checks should run automatically and flag problems for review.</p></li>
 <li><p><strong>Catch what automation misses with manual review.</strong> Sample your data and verify it against the source. Inspect outliers to determine whether they are errors or genuine extreme values. Look for suspicious patterns: survey responses that alternate predictably, reaction times that are impossibly fast.</p></li>
@@ -1360,9 +1386,8 @@ Checkpoint: Data quality validation meeting
 </div>
 </div>
 </div>
-<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
+<div id="tabset-4-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-2-tab">
 <p>Data cleaning handles errors, inconsistencies, and missing values. The cardinal rule: never modify your raw data. All cleaning happens on copies, ideally by scripts and not through manual changes.</p>
-<p><br></p>
 <ul>
 <li><p><strong>Correct unambiguous errors.</strong> Clear typos, obvious data entry mistakes. For ambiguous cases, flag them for review rather than making assumptions. Document your reasoning for every judgment call.</p></li>
 <li><p><strong>Handle missing data consistently.</strong> Decide on a coding scheme (NA, -999, blank) and apply it uniformly. When you know why data is missing, record that information. It may matter for analysis.</p></li>
@@ -1370,9 +1395,8 @@ Checkpoint: Data quality validation meeting
 <li><p><strong>Write cleaning as a script.</strong> A script documents exactly what you did and lets you reproduce it. Keep a decision log for choices that cannot be automated.</p></li>
 </ul>
 </div>
-<div id="tabset-2-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-3-tab">
+<div id="tabset-4-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-3-tab">
 <p>Exclusion criteria specify which data points will be removed from analysis and why. Define these before you see your results (see <a href="../../training/research-cycle-handbook/01-plan-and-design.html#sec-study-design-analysis-plan" class="mark">1.4. Study Design &amp; Analysis Plan</a>).</p>
-<p><br></p>
 <ul>
 <li><p><strong>Review common exclusion criteria.</strong> Technical failures (equipment malfunction, incomplete recording), protocol violations (wrong procedure followed, participant did not comply), quality thresholds (too much missing data, failed attention checks), and participant criteria (did not meet stated inclusion criteria).</p></li>
 <li><p><strong>Document everything.</strong> Record criteria before analysis begins. Report how many data points were excluded for each criterion in a log with the date and reviewer’s identity. Plan sensitivity analyses comparing results with and without exclusions to show your findings are robust.</p></li>
@@ -1380,8 +1404,12 @@ Checkpoint: Data quality validation meeting
 </div>
 </div>
 </div>
-</details>
-
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--checklist -->
 <section id="collect-manage-checklist" class="level2 unnumbered orc-gradient-box collect-manage-checklist">
 <h2 class="unnumbered anchored" data-anchor-id="collect-manage-checklist"><i class="bi bi-card-checklist checklist-icon"></i> Collect &amp; Manage Checklist</h2>
 <p>To complete before conducting a data validation meeting with members of the project. Not all items are relevant for all fields of research or study types.</p>
@@ -1417,16 +1445,8 @@ Checkpoint: Data quality validation meeting
 </section>
 
 
-</main></div>
 
-
-
-
-
-
-
-
- <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -1832,7 +1852,7 @@ Checkpoint: Data quality validation meeting
     }
   });
   </script>
- <!-- /content -->
+</div> <!-- /content -->
 <footer class="osc-footer-card text-white py-5">
   <div class="container">
     <div class="row gy-4">
