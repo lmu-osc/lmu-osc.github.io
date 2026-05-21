@@ -68,36 +68,14 @@
   color: #4a5568;
 }
 /* Local Initiatives */
-.local-initiatives {
-  margin-top: 3rem;
-}
-
-.local-initiatives h2 {
-  color: var(--primary-color);
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-.initiatives-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 1.5rem;
-  margin-top: 2rem;
-}
 
 .initiative-card {
-  background-color: var(--card-bg);
-  border-radius: 8px;
-  padding: 1.5rem;
-  box-shadow: var(--card-shadow);
-  border-top: 4px solid var(--primary-color);
+  border: none;
+  border-top: 4px solid var(--osc-accent);
 }
-
-/* Image container for initiative cards */
 .initiative-img {
-  width: 64px;
-  height: 64px;
-  margin-bottom: 1rem;
+  width: 50px;
+  height: 50px;
 }
 
 .initiative-img img {
@@ -106,28 +84,22 @@
   object-fit: cover;
 }
 
-.initiative-card h3 {
-  color: var(--primary-color);
-  margin-top: 0;
-  font-size: 1.3rem;
+.initiative-card .btn.btn-primary {
+  background-color: var(--osc-accent);
+  border: 2px solid var(--osc-accent);
+  color: white;
 }
+.initiative-card .btn.btn-primary:hover {
+  border-color: color-mix(in srgb, var(--osc-accent) 80%, black);
+  background-color: color-mix(in srgb, var(--osc-accent) 80%, black);
+}
+
+
 
 /* Buttons */
 
-.initiative-button{
-  display: inline-block;
-  background-color: var(--primary-color);
-  color: white;
-  padding: 0.8rem 1.5rem;
-  border-radius: 4px;
-  text-decoration: none;
-  font-weight: 500;
-  margin-top: auto;
-  transition: var(--transition);
-  border: 2px solid var(--primary-color);
-}
 
-.partner-button:hover, .initiative-button:hover,
+.partner-button:hover,
 .member-info-button:hover {
   background-color: transparent;
   color: var(--primary-color);
@@ -144,10 +116,6 @@
   transition: var(--transition);
   border: 2px solid var(--primary-color);
   width:fit-content;
-}
-.initiative-button {
-  padding: 0.6rem 1.2rem;
-  font-size: 0.9rem;
 }
 
 .member-info-button{
@@ -170,11 +138,7 @@
     flex-direction: column;
   }
   
-  .initiatives-grid {
-    grid-template-columns: 1fr;
-  }
-  
-  .card-header h2, .local-initiatives h2, .ext-partner h2 {
+  .card-header h2, .ext-partner h2 {
     font-size: 1.3rem;
   }
 }
