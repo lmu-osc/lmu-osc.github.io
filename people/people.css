@@ -219,6 +219,24 @@
   text-decoration: underline;
 }
 
+/* people landing page card styling */
+.people-card.card {
+  border: none;
+  border-top: 4px solid #00883A;
+
+}
+
+.people-card .btn.btn-primary {
+  background-color: #00883A;
+  border: 2px solid #00883A;
+  color: white;
+}
+
+.people-card .btn.btn-primary:hover {
+  border-color: color-mix(in srgb, var(--osc-accent) 80%, black);
+  background-color: color-mix(in srgb, var(--osc-accent) 80%, black);
+}
+
 /* Responsive design */
 @media (max-width: 768px) {
   .people-header {
