@@ -228,14 +228,11 @@
   background-color: #00883A;
   border: 2px solid #00883A;
   color: white;
-  transition: background-color 0.2s, border-color 0.2s;
 }
 
 .people-card .btn.btn-primary:hover {
-  background-color: white;
-  border-color: var(--osc-accent);
-  color: var(--osc-accent);
-  box-shadow: 0 4px 8px rgba(43, 134, 75, 0.2);
+  border-color: color-mix(in srgb, var(--osc-accent) 80%, black);
+  background-color: color-mix(in srgb, var(--osc-accent) 80%, black);
 }
 
 /* Responsive design */
