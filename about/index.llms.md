@@ -32,7 +32,7 @@ Oversight and advisory structures.
 
 Our people.
 
-[OSC Staff](../people/staff.llms.md) [OSC members](../people/members.llms.md)
+[OSC Staff](../people/staff.llms.md) [OSC Members](../people/members.llms.md)
 
 [Read our Statutes ](../about/statutes.llms.md)
 
