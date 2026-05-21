@@ -12,7 +12,7 @@ format:
     <div class="col">
         <div class="card people-card h-100 shadow-sm rounded">
             <div class="card-body d-flex flex-column">
-                <div class='d-flex flex-row flex-wrap align-items-center gap-2 mb-2'>
+                <div class='d-flex flex-row flex-wrap flex-sm-nowrap align-items-center gap-2 mb-2'>
                     <div class='p-2 rounded-2 d-flex align-items-center justify-content-center flex-shrink-0' style="width: 50px; height: 50px; background-color: #f1f9f5b9; color: var(--osc-accent)">
                         <i class='bi bi-briefcase fs-4' aria-hidden="true"></i>
                     </div>
@@ -26,7 +26,7 @@ format:
     <div class="col">
         <div class="card people-card h-100 shadow-sm rounded">
             <div class="card-body d-flex flex-column">
-                <div class='d-flex flex-row flex-wrap align-items-center gap-2 mb-2'>
+                <div class='d-flex flex-row flex-wrap flex-sm-nowrap align-items-center gap-2 mb-2'>
                     <div class='p-2 rounded-2 d-flex align-items-center justify-content-center flex-shrink-0' style="width: 50px; height: 50px; background-color: #f1f9f5b9; color: var(--osc-accent)">
                         <i class='bi bi-people fs-4' aria-hidden="true"></i>
                     </div>
@@ -40,7 +40,7 @@ format:
     <div class="col">
         <div class="card people-card h-100 shadow-sm rounded">
             <div class="card-body d-flex flex-column">
-                <div class='d-flex flex-row flex-wrap align-items-center gap-2 mb-2'>
+                <div class='d-flex flex-row flex-wrap flex-sm-nowrap align-items-center gap-2 mb-2'>
                     <div class='p-2 rounded-2 d-flex align-items-center justify-content-center flex-shrink-0' style="width: 50px; height: 50px; background-color: #f1f9f5b9; color: var(--osc-accent)">
                         <i class='bi bi-mortarboard fs-4' aria-hidden="true"></i>
                     </div>
@@ -54,7 +54,7 @@ format:
     <div class="col">
         <div class="card people-card h-100 shadow-sm rounded">
             <div class="card-body d-flex flex-column">
-                <div class='d-flex flex-row flex-wrap align-items-center gap-2 mb-2'>
+                <div class='d-flex flex-row flex-wrap flex-sm-nowrap align-items-center gap-2 mb-2'>
                     <div class='p-2 rounded-2 d-flex align-items-center justify-content-center flex-shrink-0' style="width: 50px; height: 50px; background-color: #f1f9f5b9; color: var(--osc-accent)">
                     <i class='bi bi-patch-question fs-4' aria-hidden="true"></i>
                     </div>
@@ -68,7 +68,7 @@ format:
     <div class="col">
         <div class="card people-card h-100 shadow-sm rounded">
             <div class="card-body d-flex flex-column">
-                <div class='d-flex flex-row flex-wrap align-items-center gap-2 mb-2'>
+                <div class='d-flex flex-row flex-wrap flex-sm-nowrap align-items-center gap-2 mb-2'>
                     <div class='p-2 rounded-2 d-flex align-items-center justify-content-center flex-shrink-0' style="width: 50px; height: 50px; background-color: #f1f9f5b9; color: var(--osc-accent)">
                         <i class='bi bi-person-badge fs-4' aria-hidden="true"></i>
                     </div>
@@ -82,7 +82,7 @@ format:
     <div class="col">
         <div class="card people-card h-100 shadow-sm rounded">
             <div class="card-body d-flex flex-column">
-                <div class='d-flex flex-row flex-wrap align-items-center gap-2 mb-2'>
+                <div class='d-flex flex-row flex-wrap flex-sm-nowrap align-items-center gap-2 mb-2'>
                     <div class='p-2 rounded-2 d-flex align-items-center justify-content-center flex-shrink-0' style="width: 50px; height: 50px; background-color: #f1f9f5b9; color: var(--osc-accent)">
                         <i class='bi bi-award fs-4' aria-hidden="true"></i>
                     </div>
