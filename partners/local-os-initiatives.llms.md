@@ -4,48 +4,48 @@ The LMU Open Science Center members and fellows organize the following grassroot
 
 ![OSIM logo](images/osim.png)
 
-### OSIM
+##### OSIM
 
 Open Science Initiative in Medicine
 
-[Learn More](local-os-initiatives/osim.llms.md)
+[Learn More](../partners/local-os-initiatives/osim.llms.md)
 
 ![OSIS logo](images/osis.png)
 
-### OSIS
+##### OSIS
 
-Open Science Initiative in Statistics
+Open Science Initiative in Social Sciences
 
-[Learn More](local-os-initiatives/osis.llms.md)
+[Learn More](../partners/local-os-initiatives/osis.llms.md)
 
 ![OSIP logo](images/osip.png)
 
-### OSIP
+##### OSIP
 
 Open Science Initiative in Psychology
 
-[Learn More](local-os-initiatives/osip.llms.md)
+[Learn More](../partners/local-os-initiatives/osip.llms.md)
 
 ![ReproducibiliTea logo](images/reproducibilitea.jpeg)
 
-### ReproducibiliTea
+##### ReproducibiliTea
 
-Journal club initiative that promotes reproducible research practices through regular discussions.
+A journal club for open and reproducible science.
 
-[Learn More](local-os-initiatives/reproducibilitea.llms.md)
+[Learn More](../partners/local-os-initiatives/reproducibilitea.llms.md)
 
 ![Hacky Hour logo](images/hackyhour.svg)
 
-### Hacky Hour
+##### Hacky Hour
 
-Regular informal meetups where researchers can discuss coding, data analysis, and research tools.
+Informal meetups for coding, data, and research tools.
 
-[Learn More](local-os-initiatives/hacky-hour.llms.md)
+[Learn More](../partners/local-os-initiatives/hacky-hour.llms.md)
 
 ![Munich RSE logo](images/rse.png)
 
-### Munich RSE
+##### Munich RSE
 
-Research Software Engineering group supporting high-quality research software development.
+Group supporting high-quality research software development.
 
-[Learn More](local-os-initiatives/munich-rse.llms.md)
+[Learn More](../partners/local-os-initiatives/munich-rse.llms.md)
