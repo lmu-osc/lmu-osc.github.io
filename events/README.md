@@ -51,8 +51,8 @@ date: YYYY-MM-DD # NOTE: this appears as the Published Date
 categories: ['Discussion', 'Hacky Hour', 'ReproducibiliTea Journal Club', 'Workshop', 'Lecture', 'Symposium', 'Conference', 'Summer School', 'Panel Discussion Series', 'Application call'] 
 
 event:
-  start_date: "2026-03-11"
-  end_date: "2026-03-12"   # optional
+  start_date: 2026-03-11
+  end_date: 2026-03-12   # optional
   description: "Short card description shown on /events"
   time: "09:00-17:00"
   location:
