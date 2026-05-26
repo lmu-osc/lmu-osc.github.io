@@ -161,6 +161,14 @@
   <div class="card-footer">
     <div class="row g-2 align-items-center">
       <div class="col">
+        <% if (item.links && item.links.materials){ %>
+          <div class="event-material">
+            <div class="trainingurl listing-training">
+              <i class="bi bi-folder2"></i>
+              <a href="<%- item.links.materials %>" target="_blank"> Training Material</a>
+            </div>
+          </div>
+        <% } %>
       </div>
       <div class="col-auto ms-auto">
         <a class="btn btn-primary btn-sm text-nowrap" href="<%- item.path %>">Read More</a>

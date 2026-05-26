@@ -109,6 +109,30 @@ document.addEventListener('DOMContentLoaded', () => {
   -webkit-line-clamp: 2;
   overflow: hidden;
 }
+
+
+
+.trainingurl{
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  margin: 0.2em 0 0.3em 0;
+  border: 1px var(--osc-accent-secondary);
+  width: fit-content;
+  padding: 0 0.30em;
+  border-radius: 5px;
+  background:rgba(166, 200, 113,0.8);
+  color: white;
+}
+
+.trainingurl a {
+  color: #000000;
+  text-decoration: none;
+}
+.card:hover .trainingurl{
+  color:var(--osc-accent);
+}
+
 </style>
 
 
