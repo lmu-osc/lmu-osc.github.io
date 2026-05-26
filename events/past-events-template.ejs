@@ -3,6 +3,8 @@
   const today = new Date();
   today.setHours(0, 0, 0, 0);
 
+  let targetYear = (typeof templateParams !== 'undefined' && templateParams.year) ? templateParams.year : null;
+
   const pastItems = [];
   for (const item of items) {
     let keep = false;
@@ -11,6 +13,13 @@
         if (new Date(item.event.end_date) < today) keep = true;
       } else if (item.event.start_date) {
         if (new Date(item.event.start_date) < today) keep = true;
+      }
+    }
+    if (keep && targetYear) {
+      let aDateStr = item.event && item.event.start_date ? item.event.start_date : null;
+      let itemYear = aDateStr ? aDateStr.split('-')[0] : null;
+      if (itemYear != targetYear) {
+        keep = false;
       }
     }
     if (keep) pastItems.push(item);
