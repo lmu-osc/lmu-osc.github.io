@@ -3,11 +3,16 @@ title: Events
 page-navigation: false
 
 listing:
-  - id: events
-    template: events-template.ejs
+  - id: upcoming-events
+    template: upcoming-events-template.ejs
     contents: events/
     page-size: 999
-    categories: true 
+    categories: unnumbered
+  # - id: past-events
+  #   template: past-events-template.ejs
+  #   contents: events/
+  #   page-size: 999
+  #   categories: unnumbered 
 toc-location: left
 page-layout: full #right 
 repo-actions: false
@@ -138,5 +143,8 @@ const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstra
 
 
 
-::: {#events}
+::: {#upcoming-events}
+:::
+
+::: {#past-events}
 :::         

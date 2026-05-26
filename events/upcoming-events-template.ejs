@@ -1,0 +1,202 @@
+```{=html}
+<%
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+
+  const upcomingItems = [];
+  for (const item of items) {
+    let keep = false;
+    if (item.event) {
+      if (item.event.start_date) {
+        if (new Date(item.event.start_date) >= today) keep = true;
+      }
+      if (item.event.end_date) {
+        if (new Date(item.event.end_date) >= today) keep = true;
+      }
+    }
+    if (keep) upcomingItems.push(item);
+  }
+
+  // Sort upcoming events by start_date ascending
+  upcomingItems.sort((a, b) => {
+    let aDate = a.event && a.event.start_date ? new Date(a.event.start_date) : new Date('9999-12-31');
+    let bDate = b.event && b.event.start_date ? new Date(b.event.start_date) : new Date('9999-12-31');
+    return aDate - bDate;
+  });
+
+  function formatDate(dStr) {
+    if (!dStr) return '';
+    const parts = dStr.split('-');
+    if (parts.length === 3) {
+      const d = new Date(parts[0], parts[1] - 1, parts[2]);
+      const day = String(d.getDate()).padStart(2, '0');
+      const month = d.toLocaleString('en-US', { month: 'short' });
+      const year = d.getFullYear();
+      return `${day} ${month}, ${year}`;
+    }
+    return dStr;
+  }
+%>
+<div class="events-list">
+
+<% for (const item of upcomingItems) { 
+  let category = (item.categories && item.categories.length > 0) ? item.categories[0] : '';
+  let cat_img = category ? category.toLowerCase().replace(/ /g, '_').replace(/-/g, '_') : 'default';
+
+  let dateText = '';
+  if (item.event && item.event.start_date && item.event.end_date && item.event.start_date !== item.event.end_date) {
+      dateText = `${formatDate(item.event.start_date)} - ${formatDate(item.event.end_date)}`;
+  } else if (item.event && item.event.start_date) {
+      dateText = formatDate(item.event.start_date);
+  }
+
+  let description = item.event && item.event.description ? item.event.description : item.event_description;
+
+  function getNonEmptyItems(arr) {
+    if (!arr || !Array.isArray(arr)) return [];
+    return arr.filter(x => {
+      if (typeof x === 'string') return x.trim() !== '';
+      if (x && typeof x === 'object') {
+        const name = x.name || x.abbreviation || '';
+        return typeof name === 'string' && name.trim() !== '';
+      }
+      return false;
+    });
+  }
+
+  let validOrganizers = getNonEmptyItems(item.organizers);
+  let validPresenters = getNonEmptyItems(item.presenters);
+  let validInstructors = getNonEmptyItems(item.instructors);
+  let validHelpers = getNonEmptyItems(item.helpers);
+  let validHosts = getNonEmptyItems(item.host || item.hosts);
+%>
+
+<div class="card mb-4">
+  <div class="card-header d-flex align-items-center justify-content-between gap-2">
+    <a class="flex-grow-1 text-truncate fw-semibold fs-5 lh-sm" href="<%- item.path %>"><%- item.title %></a>
+    <% if (category) { %>
+      <span class="badge text-bg-light border ms-2 text-nowrap d-none d-md-block"><%- category %></span>
+    <% } %>
+  </div>
+
+  <!-- start row -->
+  <div class="row g-0 align-items-center">
+    <div class="col-md-2 px-2 d-none d-md-block">
+      <a href="<%- item.path %>">
+        <img src="/events/images/<%- cat_img %>.svg" class="img-fluid d-block mx-auto rounded-start" alt="<%- category %>">
+      </a>
+    </div>
+
+    <div class="col-md-10">
+      <div class="card-body">
+        <h6 class="card-subtitle mb-2"><%- dateText %></h6>
+        <% if (item.event) { 
+             let infoStringFull = [];
+             let infoStringMobile = [];
+             
+             if (item.event.time) {
+                infoStringFull.push(item.event.time);
+                infoStringMobile.push(item.event.time);
+             }
+             if (item.event.location && item.event.location.name) {
+                infoStringFull.push(item.event.location.name);
+             } else if (item.event.location && typeof item.event.location === 'string') {
+                infoStringFull.push(item.event.location);
+             }
+             if (item.event.format && item.event.format.type) {
+                infoStringFull.push(item.event.format.type);
+                infoStringMobile.push(item.event.format.type);
+             } else if (item.event.format && typeof item.event.format === 'string') {
+                infoStringFull.push(item.event.format);
+                infoStringMobile.push(item.event.format);
+             }
+             if (item.event.language && item.event.language.primary) {
+                infoStringFull.push(item.event.language.primary);
+                infoStringMobile.push(item.event.language.primary);
+             } else if (item.event.language && typeof item.event.language === 'string') {
+                infoStringFull.push(item.event.language);
+                infoStringMobile.push(item.event.language);
+             }
+             let fullText = infoStringFull.join(' | ');
+             let mobileText = infoStringMobile.join(' | ');
+        %>
+          <% if (fullText) { %>
+            <h6 class="card-subtitle mb-2 d-none d-md-block"><%- fullText %></h6>
+          <% } %>
+          <% if (mobileText) { %>
+            <h6 class="card-subtitle mb-2 d-block d-md-none"><%- mobileText %></h6>
+          <% } %>
+        <% } %>
+
+        <p class="card-text card-text-clamp"><%- description %></p>
+        <div class="card-text">
+          <% if (validOrganizers.length > 0) { %>
+            <div class="d-flex flex-wrap align-items-center gap-2 mt-2 d-none d-md-block">
+              <span class="small text-body-secondary fw-semibold text-nowrap">Organizers:</span>
+              <% for (const org of validOrganizers) { %>
+                <span class="badge rounded-pill text-bg-secondary"><%- typeof org === 'string' ? org : (org.name || org.abbreviation) %></span>
+              <% } %>
+            </div>
+          <% } %>
+          
+          <% if (validPresenters.length > 0) { %>
+            <div class="d-flex flex-wrap align-items-center gap-2 mt-2 d-none d-md-block">
+              <span class="small text-body-secondary fw-semibold text-nowrap">Presenters:</span>
+              <% for (const pres of validPresenters) { %>
+                <span class="badge rounded-pill text-bg-secondary"><%- typeof pres === 'string' ? pres : (pres.name || pres.abbreviation) %></span>
+              <% } %>
+            </div>
+          <% } %>
+
+          <% if (validInstructors.length > 0) { %>
+            <div class="d-flex flex-wrap align-items-center gap-2 mt-2 d-none d-md-block">
+              <span class="small text-body-secondary fw-semibold text-nowrap">Instructors:</span>
+              <% for (const inst of validInstructors) { %>
+                <span class="badge rounded-pill text-bg-secondary"><%- typeof inst === 'string' ? inst : (inst.name || inst.abbreviation) %></span>
+              <% } %>
+            </div>
+          <% } %>
+
+          <% if (validHelpers.length > 0) { %>
+            <div class="d-flex flex-wrap align-items-center gap-2 mt-2 d-none d-md-block">
+              <span class="small text-body-secondary fw-semibold text-nowrap">Helpers:</span>
+              <% for (const helper of validHelpers) { %>
+                <span class="badge rounded-pill text-bg-secondary"><%- typeof helper === 'string' ? helper : (helper.name || helper.abbreviation) %></span>
+              <% } %>
+            </div>
+          <% } %>
+
+          <% if (validHosts.length > 0) { %>
+            <div class="d-flex flex-wrap align-items-center gap-2 mt-2">
+              <span class="small text-body-secondary fw-semibold text-nowrap">Hosts:</span>
+              <% for (const host of validHosts) { %>
+                <span class="badge rounded-pill text-bg-secondary" data-bs-toggle="tooltip" title="<%- typeof host === 'string' ? host : (host.name || host.abbreviation) %>"><%- typeof host === 'string' ? host : (host.abbreviation || host.name) %></span>
+              <% } %>
+            </div>
+          <% } %>
+        </div>
+
+      <!-- end card-body -->
+      </div>
+    <!-- end col-md-10 -->
+    </div>
+  <!-- end row -->
+  </div>
+  
+  <div class="card-footer">
+    <div class="row g-2 align-items-center">
+      <div class="col">
+        <% if (item.contact && item.contact.email) { %>
+            Questions? Contact <a href="mailto:<%- item.contact.email %>"><%- item.contact.name || item.contact.email %></a>
+        <% } %>
+      </div>
+      <div class="col-auto ms-auto">
+        <a class="btn btn-primary btn-sm text-nowrap" href="<%- item.path %>">Read More</a>
+      </div>
+    </div>
+  </div>
+
+</div>
+<% } %>
+</div>
+```
