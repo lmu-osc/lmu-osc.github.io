@@ -8,11 +8,11 @@ listing:
     contents: events/
     page-size: 999
     categories: unnumbered
-  # - id: past-events
-  #   template: past-events-template.ejs
-  #   contents: events/
-  #   page-size: 999
-  #   categories: unnumbered 
+  - id: past-events
+    template: past-events-template.ejs
+    contents: events/
+    page-size: 999
+    categories: unnumbered 
 toc-location: left
 page-layout: full #right 
 repo-actions: false
@@ -57,6 +57,8 @@ document.addEventListener('DOMContentLoaded', () => {
   overflow: hidden;
 }
 </style>
+
+
 
 <div class="card">
 
@@ -146,15 +148,20 @@ document.addEventListener('DOMContentLoaded', () => {
 <!-- add some space before the upcoming events header -->
 <br>
 <br>
+
+
 ```
 
 
 
 
-
+## Upcoming Events
 
 ::: {#upcoming-events}
 :::
+
+
+## Past Events
 
 ::: {#past-events}
 :::         
