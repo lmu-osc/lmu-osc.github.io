@@ -25,6 +25,7 @@ jobs:
             --no-progress
             --exclude-path '(^|.*/)events/events/templates/event-template\.html$'
             --exclude-path '(^|.*/)people/people/templates/people-template\.html$'
+            --exclude-path '(^|.*/)news/news/templates/news-template\.html$'
             --exclude-path '(^|.*/)_[^/]*\.qmd$'
             './**/*.md'
             './**/*.html'

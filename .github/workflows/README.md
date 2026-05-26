@@ -7,9 +7,6 @@ This folder contains GitHub Actions workflows and supporting files that automate
 ### `add-new-year-to-events.yml`
 Creates an issue at the start of each year to remind maintainers to update the events section for the new year. This workflow can also be triggered manually.
 
-### `auto-assign-issues.yml`
-Adds newly assigned issues to the assignee's GitHub Projects board. It reads the issue assignees from the event payload, looks up the matching project, and adds the issue to that project.
-
 Note: this workflow has been manually disabled for several months, and will likely be deleted in the future.
 
 ### `check-lmu-pages-reminder.yml`
@@ -36,5 +33,4 @@ Runs cspell on site source content that appears on the website. The check enforc
 ## Notes
 
 - Some workflows create GitHub issues automatically. Review the issue templates before changing the workflows that use them.
-- The issue assignment workflow depends on a repository or organization secret named `PROJECT_ISSUES_PAT`.
 - If you add a new workflow, document its trigger and purpose here so the folder stays easy to maintain.

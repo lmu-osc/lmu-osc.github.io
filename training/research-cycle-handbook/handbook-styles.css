@@ -25,7 +25,6 @@
   --orc-radius-lg: 12px;
   --orc-radius-md: 8px;
   --orc-radius-full: 9999px;
-
 }
 
 /* ========================================
@@ -49,6 +48,11 @@ h2 i, h3 i{ color: var(--osc-accent); margin-right: .5rem; }
   border:none;
   box-shadow: var(--orc-shadow-sm);
 }
+.orc-card-tool:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
 .orc-card-tool-icon {
   background: var(--orc-green-light);
 }
@@ -57,97 +61,14 @@ h2 i, h3 i{ color: var(--osc-accent); margin-right: .5rem; }
 .orc-card-tool h4 { font-size: 1.125rem; font-weight: 600; color: var(--orc-gray-700); line-height: 1.3; }
 .orc-card-tool p { font-size: 1rem; color: var(--orc-gray-400);line-height: 1.5; }
 
-.orc-grid-tools a,
-.orc-column a {
-  text-decoration: none;
-  color: inherit;
-  display: block;              
-}
-.orc-column a {text-decoration: none; color: inherit;}
-.orc-card-tool:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-  cursor: pointer;
-}
-
-/* ========================================
-   4. DETAILS PANELS
-   ======================================== */
-
-.orc-details-panel {
-  margin: 1.5rem 0;
-  background: #fff;
-  border: 1px solid var(--orc-gray-300);
-  border-radius: var(--orc-radius);
-  overflow: hidden;
-  transition: var(--orc-transition);
-}
-
-.orc-details-panel:hover {
-  border-color: var(--orc-gray-400);
-  box-shadow: var(--orc-shadow-md);
-}
-
-.orc-details-panel[open] { box-shadow: var(--orc-shadow-md); }
-
-.orc-details-panel summary{
-  cursor: pointer;
-  list-style: none;
-  display: flex;
-  align-items: center;
-  gap: 1.25rem;
-  padding: 1.25rem 1.5rem;
-  background: #fff;
-  color: var(--orc-gray-700);
+/* accordion button header*/
+.accordion-title h3 {
+  font-size: 1.2rem;
   font-weight: 700;
-  font-size: 1.25rem;
-  line-height: 1.4;
-  transition: color .2s;
-  user-select: none;
+  color: inherit;
 }
 
-.orc-details-panel summary:hover { color: var(--osc-accent); }
-.orc-details-panel summary::-webkit-details-marker { display: none; }
-
-.orc-details-panel summary i {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 3rem;
-  height: 3rem;
-  background: var(--orc-green-light);
-  color: var(--osc-accent);
-  font-size: 1.5rem;
-  border-radius: var(--orc-radius);
-  flex-shrink: 0;
-}
-
-.orc-details-panel summary i + i { display: none; }
-
-.orc-details-panel summary::after {
-  content: '';
-  margin-left: auto;
-  width: 2.25rem;
-  height: 2.25rem;
-  background: var(--orc-gray-100) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23646464' viewBox='0 0 16 16'%3E%3Cpath d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E") no-repeat center / 1rem;
-  border-radius: 50%;
-  transition: all .25s;
-  flex-shrink: 0;
-}
-
-.orc-details-panel summary:hover::after { background-color: var(--orc-gray-200); }
-.orc-details-panel[open] > summary { padding-bottom: 1rem; border-bottom: 1px solid var(--orc-gray-100); }
-.orc-details-panel[open] summary::after {
-  transform: rotate(180deg);
-  background: var(--orc-green-light) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23006426' viewBox='0 0 16 16'%3E%3Cpath d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E") no-repeat center / 1rem;
-}
-
-.orc-details-panel > :not(summary) { padding: .75rem 1.5rem 0.5rem; }
-.orc-details-panel summary h3,
-.header-section-number{ margin-top: 0; color:inherit; font: inherit;}
-.orc-details-panel p { margin: 0; }
-.orc-details-panel > .panel-tabset { padding-top: 0; }
-
+.header-section-number{ margin-top: 0; color:inherit; font: inherit}
 
 
 /* Gradient highlight box - checklist section*/
@@ -160,47 +81,11 @@ h2 i, h3 i{ color: var(--osc-accent); margin-right: .5rem; }
   line-height: 1.7rem;
 }
 
-
 .orc-gradient-box h2 {
   font-weight: 700;
   font-size: 1.25rem;
   line-height: 1.4;
 }
-
-.orc-gradient-box-desc{
-  background: linear-gradient(135deg, rgb(244 247 244) 0%, rgb(129 201 156 / 8%) 100%);
-  padding: 1rem;
-  border-radius: var(--orc-radius-md);
-  border-left: 5px solid #aed0bbad;
-  margin: 2rem 0;
-}
-
-/* ========================================
-   5. CALLOUTS (Quarto)
-   ======================================== */
-
-div.callout .callout-title { font-size: 1.125rem !important; font-weight: 700 !important; }
-div.callout .callout-body, div.callout .callout-body :is(p, ul, li) { font-size: 1rem !important; line-height: 1.6 !important; }
-
-div.callout-note.callout-style-simple {
-  border-left: 5px solid var(--osc-accent) !important;
-  background: var(--orc-green-light) !important;
-  border-radius: .5rem !important;
-}
-
-div.callout-note.callout-style-simple .callout-title { color: var(--osc-accent) !important; }
-div.callout-note.callout-style-simple .callout-icon { width: 2rem; height: 2rem; }
-div.callout-note.callout-style-simple .callout-icon::before {
-  content: '' !important;
-  display: block;
-  width: 2rem;
-  height: 2rem;
-  background: url("../assets/img/lmu_osc_logo.jpg") no-repeat center / contain;
-  border-radius: 4px;
-}
-div.callout-note.callout-style-simple .callout-icon i,
-div.callout-note.callout-style-simple .callout-icon .bi { display: none !important; }
-details .callout { margin: .75rem 0; }
 
 /* ========================================
    6. PANEL TABSETS (Quarto)
@@ -330,15 +215,4 @@ svg :is(text, tspan) { font-family: inherit !important; font-weight: bold; point
   background: #00c057a6!important;
 }
 
-
-/* ========================================
-   11. RESPONSIVE
-   ======================================== */
-
-
-@media (max-width: 600px) {
-  .phase-menu-horizontal { flex-direction: column; align-items: center; }
-  .phase-btn-h { width: 100%; max-width: 300px; flex-direction: row; justify-content: flex-start; padding: 1rem 1.5rem; height: auto; }
-  .phase-btn-h i { margin-bottom: 0; margin-right: 1rem; font-size: 1.5rem; }
-}
 
