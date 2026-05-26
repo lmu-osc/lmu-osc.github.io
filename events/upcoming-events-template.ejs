@@ -172,7 +172,11 @@
             <div class="d-flex flex-wrap align-items-center gap-2 mt-2">
               <span class="small text-body-secondary fw-semibold text-nowrap">Hosts:</span>
               <% for (const host of validHosts) { %>
-                <span class="badge rounded-pill text-bg-secondary" data-bs-toggle="tooltip" title="<%- typeof host === 'string' ? host : (host.name || host.abbreviation) %>"><%- typeof host === 'string' ? host : (host.abbreviation || host.name) %></span>
+                <% if (typeof host === 'object' && host.abbreviation && host.name) { %>
+                  <span class="badge rounded-pill text-bg-secondary" data-bs-toggle="tooltip" title="<%- host.name %>"><%- host.abbreviation %></span>
+                <% } else { %>
+                  <span class="badge rounded-pill text-bg-secondary"><%- typeof host === 'string' ? host : (host.abbreviation || host.name) %></span>
+                <% } %>
               <% } %>
             </div>
           <% } %>
