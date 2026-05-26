@@ -94,40 +94,48 @@
         <h6 class="card-subtitle mb-2 listing-date" style="display:none;"><%- item.event && item.event.start_date ? formatDate(item.event.start_date) : '' %></h6>
         <h6 class="card-subtitle mb-2"><%- dateText %></h6>
         <% if (item.event) { 
-             let infoStringFull = [];
-             let infoStringMobile = [];
+             let infosFull = [];
+             let infosMobile = [];
              
              if (item.event.time) {
-                infoStringFull.push(item.event.time);
-                infoStringMobile.push(item.event.time);
+                let obj = { icon: 'bi-clock', text: item.event.time };
+                infosFull.push(obj);
+                infosMobile.push(obj);
              }
-             if (item.event.location && item.event.location.name) {
-                infoStringFull.push(item.event.location.name);
-             } else if (item.event.location && typeof item.event.location === 'string') {
-                infoStringFull.push(item.event.location);
+             if (item.event.location) {
+                let locText = item.event.location.name ? item.event.location.name : item.event.location;
+                if (typeof locText === 'string') {
+                  infosFull.push({ icon: 'bi-geo-alt-fill', text: locText });
+                }
              }
-             if (item.event.format && item.event.format.type) {
-                infoStringFull.push(item.event.format.type);
-                infoStringMobile.push(item.event.format.type);
-             } else if (item.event.format && typeof item.event.format === 'string') {
-                infoStringFull.push(item.event.format);
-                infoStringMobile.push(item.event.format);
+             if (item.event.format) {
+                let fmtText = item.event.format.type ? item.event.format.type : item.event.format;
+                if (typeof fmtText === 'string') {
+                  infosFull.push({ icon: 'bi-person-video3', text: fmtText });
+                  infosMobile.push({ icon: 'bi-person-video3', text: fmtText });
+                }
              }
-             if (item.event.language && item.event.language.primary) {
-                infoStringFull.push(item.event.language.primary);
-                infoStringMobile.push(item.event.language.primary);
-             } else if (item.event.language && typeof item.event.language === 'string') {
-                infoStringFull.push(item.event.language);
-                infoStringMobile.push(item.event.language);
+             if (item.event.language) {
+                let langText = item.event.language.primary ? item.event.language.primary : item.event.language;
+                if (typeof langText === 'string') {
+                  infosFull.push({ icon: 'bi-translate', text: langText });
+                  infosMobile.push({ icon: 'bi-translate', text: langText });
+                }
              }
-             let fullText = infoStringFull.join(' | ');
-             let mobileText = infoStringMobile.join(' | ');
         %>
-          <% if (fullText) { %>
-            <h6 class="card-subtitle mb-2 d-none d-md-block"><%- fullText %></h6>
+          <% if (infosFull.length > 0) { %>
+            <h6 class="card-subtitle mb-2 d-none d-md-block">
+              <% for (let i = 0; i < infosFull.length; i++) { %>
+                <i class="bi <%= infosFull[i].icon %>"></i> <%- infosFull[i].text %><% if (i < infosFull.length - 1) { %> | <% } %>
+              <% } %>
+            </h6>
           <% } %>
-          <% if (mobileText) { %>
-            <h6 class="card-subtitle mb-2 d-block d-md-none"><%- mobileText %></h6>
+          <% if (infosMobile.length > 0) { %>
+            <h6 class="card-subtitle mb-2 d-block d-md-none">
+              <% for (let i = 0; i < infosMobile.length; i++) { %>
+                <i class="bi <%= infosMobile[i].icon %>"></i> <%- infosMobile[i].text %><% if (i < infosMobile.length - 1) { %> | <% } %>
+              <% } %>
+            </h6>
           <% } %>
         <% } %>
 

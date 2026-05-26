@@ -99,6 +99,51 @@
       <div class="card-body">
         <h6 class="card-subtitle mb-2 listing-date" style="display:none;"><%- item.event && item.event.start_date ? formatDate(item.event.start_date) : '' %></h6>
         <h6 class="card-subtitle mb-2"><%- dateText %></h6>
+        <% if (item.event) { 
+             let infosFull = [];
+             let infosMobile = [];
+             
+             if (item.event.time) {
+                let obj = { icon: 'bi-clock', text: item.event.time };
+                infosFull.push(obj);
+                infosMobile.push(obj);
+             }
+             if (item.event.location) {
+                let locText = item.event.location.name ? item.event.location.name : item.event.location;
+                if (typeof locText === 'string') {
+                  infosFull.push({ icon: 'bi-geo-alt-fill', text: locText });
+                }
+             }
+             if (item.event.format) {
+                let fmtText = item.event.format.type ? item.event.format.type : item.event.format;
+                if (typeof fmtText === 'string') {
+                  infosFull.push({ icon: 'bi-person-video3', text: fmtText });
+                  infosMobile.push({ icon: 'bi-person-video3', text: fmtText });
+                }
+             }
+             if (item.event.language) {
+                let langText = item.event.language.primary ? item.event.language.primary : item.event.language;
+                if (typeof langText === 'string') {
+                  infosFull.push({ icon: 'bi-translate', text: langText });
+                  infosMobile.push({ icon: 'bi-translate', text: langText });
+                }
+             }
+        %>
+          <% if (infosFull.length > 0) { %>
+            <h6 class="card-subtitle mb-2 d-none d-md-block">
+              <% for (let i = 0; i < infosFull.length; i++) { %>
+                <i class="bi <%= infosFull[i].icon %>"></i> <%- infosFull[i].text %><% if (i < infosFull.length - 1) { %> | <% } %>
+              <% } %>
+            </h6>
+          <% } %>
+          <% if (infosMobile.length > 0) { %>
+            <h6 class="card-subtitle mb-2 d-block d-md-none">
+              <% for (let i = 0; i < infosMobile.length; i++) { %>
+                <i class="bi <%= infosMobile[i].icon %>"></i> <%- infosMobile[i].text %><% if (i < infosMobile.length - 1) { %> | <% } %>
+              <% } %>
+            </h6>
+          <% } %>
+        <% } %>
 
         <div class="card-text">
           <% if (validOrganizers.length > 0) { %>
