@@ -38,8 +38,9 @@ host:
 - name: Munich Center for Machine Learning
   url: ''
   abbreviation: MCML
-- name: Open Science Initiative in Statistics (OSIS)
+- name: Open Science Initiative in Statistics
   url: ''
+  abbreviation: OSIS
 template: templates/event-template.html
 filters:
     - templates/process-event-yaml.lua

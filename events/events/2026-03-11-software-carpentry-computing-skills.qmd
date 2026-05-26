@@ -55,7 +55,7 @@ host:
 - name: Munich Center for Machine Learning
   url: ''
   abbreviation: MCML
-- name: LMU Open Science Center (OSC)
+- name: LMU Open Science Center
   url: 
 template: templates/event-template.html
 filters:

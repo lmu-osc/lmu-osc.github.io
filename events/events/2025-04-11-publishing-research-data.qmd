@@ -26,6 +26,7 @@ organizers:
 - name: Luisa Jiménez-Soto
 host:
 - name: Open Science Initiative in Medicine
+  abbreviation: OSIM
 template: templates/event-template.html
 filters:
     - templates/process-event-yaml.lua
