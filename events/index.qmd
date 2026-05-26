@@ -133,6 +133,23 @@ document.addEventListener('DOMContentLoaded', () => {
   color:var(--osc-accent);
 }
 
+#toc-title {
+  font-size: 1.1em;
+}
+
+#quarto-margin-sidebar .quarto-listing-category-title {
+  font-size: 1.1em;
+}
+
+#quarto-margin-sidebar .quarto-listing-category {
+  margin-left: 0.3rem;
+  padding-left: 0.7rem;
+  border-left: 1px solid var(--osc-accent-secondary);
+  line-height: 1;
+  font-size: 0.9em;
+  font-weight: 300;
+}
+
 </style>
 
 
