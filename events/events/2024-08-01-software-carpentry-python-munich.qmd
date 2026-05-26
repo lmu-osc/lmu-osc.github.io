@@ -40,8 +40,9 @@ organizers:
 host:
 - name: LMU Open Science Center
   url: ''
-- name: Munich Center for Machine Learning (MCML)
+- name: Munich Center for Machine Learning
   url: ''
+  abbreviation: MCML
 - name: Graduate School of Systemic Neurosciences
   url: ''
 template: templates/event-template.html

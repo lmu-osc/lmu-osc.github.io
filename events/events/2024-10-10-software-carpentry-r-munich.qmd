@@ -42,8 +42,9 @@ organizers:
 host:
 - name: LMU Open Science Center
   url: ''
-- name: Munich Center for Machine Learning (MCML)
+- name: Munich Center for Machine Learning
   url: ''
+  abbreviation: MCML
 template: templates/event-template.html
 filters:
     - templates/process-event-yaml.lua

@@ -59,10 +59,12 @@ presenters:
   - name: 
     url: 
 host:
-  - name: Framework for Open and Reproducible Research Training (FORRT)
+  - name: Framework for Open and Reproducible Research Training
     url: https://forrt.org/
-  - name: German Reproducibility Network (GRN)
+    abbreviation: FORRT
+  - name: German Reproducibility Network 
     url:
+    abbreviation: GRN
   - name: LMU Open Science Center (OSC)
 
 template: templates/event-template.html
