@@ -73,7 +73,9 @@
 
 <div class="card mb-4">
   <div class="card-header d-flex align-items-center justify-content-between gap-2">
-    <a class="flex-grow-1 text-truncate fw-semibold fs-5 lh-sm" href="<%- item.path %>"><%- item.title %></a>
+    <!-- different titles for different screen sizes -->
+    <a class="flex-grow-1 card-title-clamp fw-semibold fs-5 lh-sm d-md-none" href="<%- item.path %>"><%- item.title %></a>
+    <a class="flex-grow-1 text-truncate fw-semibold fs-5 lh-sm d-none d-md-block" href="<%- item.path %>"><%- item.title %></a>
     <% if (category) { %>
       <span class="badge text-bg-light border ms-2 text-nowrap d-none d-md-block"><%- category %></span>
     <% } %>
