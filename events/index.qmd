@@ -21,6 +21,11 @@ include-in-header:
 
 ```{=html}
 
+<script>
+const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+</script>
+
 <style>
 .card-header a {
   text-decoration: none;
@@ -129,12 +134,7 @@ include-in-header:
 ```
 
 
-```{=html}
-<script>
-const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
-const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
-</script>
-```
+
 
 
 
