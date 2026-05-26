@@ -36,8 +36,9 @@ organizers:
 host:
 - name: LMU Open Science Center
   url: ''
-- name: Wikipedia Munich (WikiMUC)
+- name: Wikipedia Munich
   url: ''
+  abbreviation: WikiMUC
 template: templates/event-template.html
 filters:
     - templates/process-event-yaml.lua
