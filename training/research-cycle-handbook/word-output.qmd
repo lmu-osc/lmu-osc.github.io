@@ -2,6 +2,7 @@
 format:
   docx:
     toc: true
+    toc-depth: 5
 ---
 
 
@@ -23,4 +24,4 @@ format:
 
 # 4. Preserve & Share
 
-{{< include _preserve-and-share.qmd >}}
+{{< include _preserve-and-share.qmd >}}  
