@@ -7,6 +7,7 @@
 .initiative-img {
   width: 50px;
   height: 50px;
+  flex-shrink: 0;
 }
 
 .initiative-img img {
@@ -18,7 +19,7 @@
 .initiative-card .btn.btn-primary {
   background-color: var(--osc-accent);
   border: 2px solid var(--osc-accent);
-  color: white;
+  color: #fff;
 }
 .initiative-card .btn.btn-primary:hover {
   border-color: color-mix(in srgb, var(--osc-accent) 80%, black);
@@ -32,14 +33,14 @@
   transition: transform 0.13s, box-shadow 0.13s;
   box-sizing: border-box;
   overflow: hidden;
-  min-height:350px;
+  min-height: 350px;
   background:#d2e9d61a;
 }
 
-.member-grid-item:hover {
+.member-grid-item.border-light-subtle.card:hover {
   transform: translateY(-5px) scale(1.025);
   box-shadow: 0 8px 32px rgba(43,134,75,0.15);
-  border-color: var(--osc-accent) !important;
+  border-color: var(--osc-accent)!important;
 }
 
 .member-grid-item .card-body {
@@ -66,25 +67,25 @@
   flex-shrink: 0;
 }
 
-.social-link {     
-  color: var(--osc-accent) !important;                 
+.social-link.btn.btn-outline-secondary{     
+  color: var(--osc-accent);                 
   text-decoration: none;                          
   cursor: pointer;
   transition: color 0.2s, border-color 0.2s;
 }
 
-.social-link:hover {
-  background-color: #BEE3F8 !important;
-  color: #fff !important;
-  border-color: var(--osc-accent) !important;
+.social-link.btn.btn-outline-secondary:hover,
+.social-link.btn.btn-outline-secondary:focus {
+  background-color: #BEE3F8;
+  color: #fff;
+  border-color: var(--osc-accent);
   transform: translateY(-2px);
 }
 
 .contact-link {
-  color: var(--osc-accent) !important;
+  color: var(--osc-accent);
   text-decoration: underline;
 }
-
 
 .description-text {
   line-height: 1.85;
@@ -93,23 +94,21 @@
 }
 
 .description-text a {
-  color: var(--osc-accent) !important;
+  color: var(--osc-accent);
 }
 
-.primary-social-link {                     
-  background: var(--osc-accent) !important; 
-  border: var(--osc-accent) !important; 
-  color: #fff !important;               
+.primary-social-link.btn.btn-primary {                     
+  background: var(--osc-accent) ; 
+  border: var(--osc-accent) ; 
+  color: #fff ;               
   text-decoration: none;                          
   cursor: pointer;
-  transition: color 0.2s, border-color 0.2s;
 }
 
-.primary-social-link:hover {
-  background-color: #017132 !important; 
-  color: #fff !important;
-  border-color: #017132  !important;
-  transform: translateY(-2px);
+.primary-social-link.btn.btn-primary:hover,
+.primary-social-link.btn.btn-primary:focus {
+  border-color: color-mix(in srgb, var(--osc-accent) 80%, black);
+  background-color: color-mix(in srgb, var(--osc-accent) 80%, black);
 }
 
 .inst-member-container a.btn.btn-primary{
