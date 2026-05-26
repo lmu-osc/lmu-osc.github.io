@@ -37,7 +37,7 @@
     return dStr;
   }
 %>
-<div class="events-list">
+<div class="events-list list">
 
 <% for (const item of upcomingItems) { 
   let category = (item.categories && item.categories.length > 0) ? item.categories[0] : '';
@@ -71,13 +71,13 @@
   let validHosts = getNonEmptyItems(item.host || item.hosts);
 %>
 
-<div class="card mb-4">
+<div class="card mb-4" <%= metadataAttrs(item) %>>
   <div class="card-header d-flex align-items-center justify-content-between gap-2">
     <!-- different titles for different screen sizes -->
-    <a class="flex-grow-1 card-title-clamp fw-semibold fs-5 lh-sm d-md-none" href="<%- item.path %>"><%- item.title %></a>
-    <a class="flex-grow-1 text-truncate fw-semibold fs-5 lh-sm d-none d-md-block" href="<%- item.path %>"><%- item.title %></a>
+    <a class="flex-grow-1 card-title-clamp fw-semibold fs-5 lh-sm d-md-none listing-title" href="<%- item.path %>"><%- item.title %></a>
+    <a class="flex-grow-1 text-truncate fw-semibold fs-5 lh-sm d-none d-md-block listing-title" href="<%- item.path %>"><%- item.title %></a>
     <% if (category) { %>
-      <span class="badge text-bg-light border ms-2 text-nowrap d-none d-md-block"><%- category %></span>
+      <span class="badge text-bg-light border ms-2 text-nowrap d-none d-md-block listing-categories"><%- category %></span>
     <% } %>
   </div>
 
@@ -91,6 +91,7 @@
 
     <div class="col-md-10">
       <div class="card-body">
+        <h6 class="card-subtitle mb-2 listing-date" style="display:none;"><%- item.event && item.event.start_date ? formatDate(item.event.start_date) : '' %></h6>
         <h6 class="card-subtitle mb-2"><%- dateText %></h6>
         <% if (item.event) { 
              let infoStringFull = [];
@@ -130,7 +131,7 @@
           <% } %>
         <% } %>
 
-        <p class="card-text card-text-clamp"><%- description %></p>
+        <p class="card-text card-text-clamp listing-description"><%- description %></p>
         <div class="card-text">
           <% if (validOrganizers.length > 0) { %>
             <div class="d-flex flex-wrap align-items-center gap-2 mt-2 d-none d-md-block">
