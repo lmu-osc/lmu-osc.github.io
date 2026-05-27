@@ -50,6 +50,7 @@
 <% for (const item of pastItems) { 
   let category = (item.categories && item.categories.length > 0) ? item.categories[0] : '';
   let cat_img = category ? category.toLowerCase().replace(/ /g, '_').replace(/-/g, '_') : 'default';
+  let imgSrc = item.card_image ? item.card_image : `/events/images/${cat_img}.svg`;
 
   let dateText = '';
   if (item.event && item.event.start_date && item.event.end_date && item.event.start_date !== item.event.end_date) {
@@ -91,7 +92,7 @@
   <div class="row g-0 align-items-center">
     <div class="col-md-2 px-2 py-3 d-none d-md-block">
       <a href="<%- item.path %>">
-        <img src="/events/images/<%- cat_img %>.svg" onerror="this.onerror=null; this.src='/events/images/default.svg';" class="img-fluid d-block mx-auto rounded-start" alt="<%- category %>">
+        <img src="<%- imgSrc %>" onerror="this.onerror=null; this.src='/events/images/default.svg';" class="img-fluid d-block mx-auto rounded-start" alt="<%- category %>">
       </a>
     </div>
 
