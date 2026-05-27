@@ -1,10 +1,10 @@
-# Dr. Maliheh Nazari-Jahantigh
+# Maliheh Nazari-Jahantigh
 
 ![Profile photo of Maliheh Nazari-Jahantigh](images/maliheh_nazari-jahantigh.png)
 
 Principal Investigator at the Institute for Cardiovascular Prevention (IPEK)
 
-Faculty of University Hospital
+University Hospital
 
 [mnazari@med.lmu.de](mailto:mnazari@med.lmu.de)
 

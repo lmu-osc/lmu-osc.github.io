@@ -4,7 +4,7 @@
 
 Head of Department
 
-Faculty of University Hospital
+University Hospital
 
 [hjanders@med.uni-muenchen.de](mailto:hjanders@med.uni-muenchen.de)
 

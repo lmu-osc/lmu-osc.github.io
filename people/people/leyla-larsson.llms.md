@@ -4,7 +4,7 @@
 
 Ph.D. Candidate
 
-Faculty of University Hospital
+University Hospital
 
 [leyla.larsson@med.uni-muenchen.de](mailto:leyla.larsson@med.uni-muenchen.de)
 

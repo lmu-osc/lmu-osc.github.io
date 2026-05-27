@@ -4,7 +4,7 @@
 
 Chair
 
-Faculty of University Hospital
+University Hospital
 
 [Robert.Perneczky@med.uni-muenchen.de](mailto:Robert.Perneczky@med.uni-muenchen.de)
 

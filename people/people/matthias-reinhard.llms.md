@@ -4,7 +4,7 @@
 
 Researcher
 
-Faculty of University Hospital
+University Hospital
 
 [matthias.reinhard@med.uni-muenchen.de](mailto:matthias.reinhard@med.uni-muenchen.de)
 

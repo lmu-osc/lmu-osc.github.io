@@ -4,7 +4,7 @@
 
 Researcher
 
-Faculty of University Hospital
+University Hospital
 
 [Johan.Duchene@med.uni-muenchen.de](mailto:Johan.Duchene@med.uni-muenchen.de)
 

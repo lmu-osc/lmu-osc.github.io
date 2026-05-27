@@ -4,7 +4,7 @@
 
 Researcher
 
-Faculty of University Hospital
+University Hospital
 
 [reka.kugyelka@med.uni-muenchen.de](mailto:reka.kugyelka@med.uni-muenchen.de)
 

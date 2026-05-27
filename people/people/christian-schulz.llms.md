@@ -4,7 +4,7 @@
 
 Deputy Director of the Medical Clinic and Polyclinic II
 
-Faculty of University Hospital
+University Hospital
 
 [Christian.Schulz@med.uni-muenchen.de](mailto:Christian.Schulz@med.uni-muenchen.de)
 

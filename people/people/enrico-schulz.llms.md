@@ -4,7 +4,7 @@
 
 Researcher
 
-Faculty of University Hospital
+University Hospital
 
 [es@pain.sc](mailto:es@pain.sc)
 

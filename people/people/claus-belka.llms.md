@@ -4,7 +4,7 @@
 
 Head of Department
 
-Faculty of University Hospital
+University Hospital
 
 [claus.belka@med.uni-muenchen.de](mailto:claus.belka@med.uni-muenchen.de)
 
