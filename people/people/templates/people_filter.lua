@@ -25,7 +25,8 @@ local function list_length(value)
 end
 
 local excluded_faculty_labels = {
-  "University Library"
+  "University Library",
+  "University Hospital"
 }
 
 local function strip_faculty_label(faculty, membership)
