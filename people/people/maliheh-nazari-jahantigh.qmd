@@ -1,0 +1,50 @@
+---
+# Member parameters
+title: Dr. Maliheh Nazari-Jahantigh
+academic_title: Dr.
+name: Maliheh Nazari-Jahantigh
+first_name: Maliheh
+surname: Nazari-Jahantigh
+categories:
+  - University Hospital
+
+# There is no limit to the number of memberships a person can have. All memberships must have a type, status, and start year.
+# See documentation for more details on the different types of memberships and their status options.
+memberships:
+  - type: lmu-individual
+    status: active
+    position: Principal Investigator at the Institute for Cardiovascular Prevention (IPEK)
+    faculty: University Hospital
+
+# if desired by the member, add a photo to the people/people/images folder and link to it here
+photo: "images/maliheh_nazari-jahantigh.png"
+email: mnazari@med.lmu.de
+personal: |
+
+# certain keywords for the label are recognized and the output is sorted in this priority: LMU Profile, Professional Profile, Personal Website, and Professional Website. see documentation for details on these labels. other links appear in the order they are listed in the YAML file.
+links:
+  - label: "LMU Profile"
+    url: "https://www.ipek-research.com/7f1f5cebeaadfdb5/7f1f5cebeaadfdb5"
+
+# Social media links - variable number
+social_media:
+  ORCID: "https://orcid.org/0000-0002-1094-107X"
+
+# Mission statement paragraphs - variable number
+mission_statement: |
+  I find Open Science important because transparent and reproducible research strengthens both scientific quality and public trust. In my own work, I already value clear documentation, reproducible workflows, and sharing methods and technical insights whenever possible. I am especially interested in improving accessibility of research tools and promoting interdisciplinary collaboration between applied research, data science, and real-world implementation. I see the most important areas of Open Science in reproducibility, open methodologies, and creating research practices that make scientific knowledge easier to verify, reuse, and build upon.
+
+# Research interests - variable number
+research_interests:
+
+# Publications - variable number
+publications:
+
+
+# these must be included always.
+template: templates/people-template.html
+filters: 
+    - templates/people_filter.lua
+---
+
+<!-- additional content **can** be included here, and appears after the Mission Statement but before the Research Interests. Any content that Quarto can render can be included here, namely R/Python/Julia code chunks, Markdown formatting, more HTML, etc. Main reasons to use this though: code blocks, and to include files. -->
