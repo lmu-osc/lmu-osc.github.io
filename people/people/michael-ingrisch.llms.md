@@ -4,7 +4,7 @@
 
 Research Group Leader
 
-Faculty of University Hospital
+University Hospital
 
 [michael.ingrisch@med.uni-muenchen.de](mailto:michael.ingrisch@med.uni-muenchen.de)
 

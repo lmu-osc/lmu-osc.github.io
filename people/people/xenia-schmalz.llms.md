@@ -4,7 +4,7 @@
 
 Researcher
 
-Faculty of University Hospital
+University Hospital
 
 [xenia.schmalz@gmail.com](mailto:xenia.schmalz@gmail.com)
 

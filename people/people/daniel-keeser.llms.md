@@ -4,7 +4,7 @@
 
 Researcher
 
-Faculty of University Hospital
+University Hospital
 
 [daniel.keeser@med.uni-muenchen.de](mailto:daniel.keeser@med.uni-muenchen.de)
 

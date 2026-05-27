@@ -4,7 +4,7 @@
 
 Research Group Leader
 
-Faculty of University Hospital
+University Hospital
 
 [Frank.Padberg@med.uni-muenchen.de](mailto:Frank.Padberg@med.uni-muenchen.de)
 

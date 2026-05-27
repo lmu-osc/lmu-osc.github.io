@@ -4,7 +4,7 @@
 
 Researcher
 
-Faculty of University Hospital
+University Hospital
 
 [gerrit.burkhardt@med.uni-muenchen.de](mailto:gerrit.burkhardt@med.uni-muenchen.de)
 

@@ -4,7 +4,7 @@
 
 Director of Clinic
 
-Faculty of University Hospital
+University Hospital
 
 [peter.falkai@med.uni-muenchen.de](mailto:peter.falkai@med.uni-muenchen.de)
 

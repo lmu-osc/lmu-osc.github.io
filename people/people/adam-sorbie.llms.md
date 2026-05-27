@@ -4,7 +4,7 @@
 
 Researcher
 
-Faculty of University Hospital
+University Hospital
 
 [adam.sorbie@med.uni-muenchen.de](mailto:adam.sorbie@med.uni-muenchen.de)
 

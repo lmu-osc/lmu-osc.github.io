@@ -4,7 +4,7 @@
 
 Researcher
 
-Faculty of University Hospital
+University Hospital
 
 [Belinda.Platt@med.uni-muenchen.de](mailto:Belinda.Platt@med.uni-muenchen.de)
 

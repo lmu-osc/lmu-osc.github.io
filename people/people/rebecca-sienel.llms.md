@@ -4,7 +4,7 @@
 
 Researcher
 
-Faculty of University Hospital
+University Hospital
 
 [Rebecca.sienel@med.uni-muenchen.de](mailto:Rebecca.sienel@med.uni-muenchen.de)
 
