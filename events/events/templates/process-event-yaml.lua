@@ -189,7 +189,7 @@ function Meta(meta)
     workshop_website = normalize_external_url(safe_get(meta, "links", {})["workshop_website"])
   }
   meta.location = {
-    map_url = normalize_external_url(safe_get(meta, "event.location.map_url", ""))
+    map_url = (safe_get(meta, "event.location.map_url", ""))
   }
   meta.presenters = filter_people_list(safe_get(meta, "presenters", nil))
   meta.instructors = filter_people_list(safe_get(meta, "instructors", nil))
