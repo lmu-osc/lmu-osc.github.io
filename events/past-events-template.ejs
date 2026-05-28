@@ -84,7 +84,7 @@
     <a class="flex-grow-1 card-title-clamp fw-semibold fs-5 lh-sm d-md-none listing-title" href="<%- item.path %>"><%- item.title %></a>
     <a class="flex-grow-1 text-truncate fw-semibold fs-5 lh-sm d-none d-md-block listing-title" href="<%- item.path %>"><%- item.title %></a>
     <% if (category) { %>
-      <span class="badge text-bg-light border ms-2 text-nowrap d-none d-md-block listing-categories"><%- category %></span>
+      <span class="badge text-bg-light border ms-2 text-wrap d-none d-md-block listing-categories"><%- category %></span>
     <% } %>
   </div>
 
@@ -151,7 +151,7 @@
             <div class="d-flex flex-wrap align-items-center gap-2 mt-2 d-none d-md-block">
               <span class="small text-body-secondary fw-semibold text-nowrap">Organizers:</span>
               <% for (const org of validOrganizers) { %>
-                <span class="badge rounded-pill text-bg-secondary"><%- typeof org === 'string' ? org : (org.name || org.abbreviation) %></span>
+                <span class="badge rounded-pill text-bg-light border text-dark text-wrap"><%- typeof org === 'string' ? org : (org.name || org.abbreviation) %></span>
               <% } %>
             </div>
           <% } %>
@@ -160,7 +160,7 @@
             <div class="d-flex flex-wrap align-items-center gap-2 mt-2 d-none d-md-block">
               <span class="small text-body-secondary fw-semibold text-nowrap">Presenters:</span>
               <% for (const pres of validPresenters) { %>
-                <span class="badge rounded-pill text-bg-secondary"><%- typeof pres === 'string' ? pres : (pres.name || pres.abbreviation) %></span>
+                <span class="badge rounded-pill text-bg-light border text-dark text-wrap"><%- typeof pres === 'string' ? pres : (pres.name || pres.abbreviation) %></span>
               <% } %>
             </div>
           <% } %>
@@ -169,7 +169,7 @@
             <div class="d-flex flex-wrap align-items-center gap-2 mt-2 d-none d-md-block">
               <span class="small text-body-secondary fw-semibold text-nowrap">Instructors:</span>
               <% for (const inst of validInstructors) { %>
-                <span class="badge rounded-pill text-bg-secondary"><%- typeof inst === 'string' ? inst : (inst.name || inst.abbreviation) %></span>
+                <span class="badge rounded-pill text-bg-light border text-dark text-wrap"><%- typeof inst === 'string' ? inst : (inst.name || inst.abbreviation) %></span>
               <% } %>
             </div>
           <% } %>
@@ -178,7 +178,7 @@
             <div class="d-flex flex-wrap align-items-center gap-2 mt-2 d-none d-md-block">
               <span class="small text-body-secondary fw-semibold text-nowrap">Helpers:</span>
               <% for (const helper of validHelpers) { %>
-                <span class="badge rounded-pill text-bg-secondary"><%- typeof helper === 'string' ? helper : (helper.name || helper.abbreviation) %></span>
+                <span class="badge rounded-pill text-bg-light border text-dark text-wrap"><%- typeof helper === 'string' ? helper : (helper.name || helper.abbreviation) %></span>
               <% } %>
             </div>
           <% } %>
@@ -188,9 +188,9 @@
               <span class="small text-body-secondary fw-semibold text-nowrap">Hosts:</span>
               <% for (const host of validHosts) { %>
                 <% if (typeof host === 'object' && host.abbreviation && host.name) { %>
-                  <span class="badge rounded-pill text-bg-secondary" data-bs-toggle="tooltip" title="<%- host.name %>"><%- host.abbreviation %></span>
+                  <span class="badge rounded-pill text-bg-light border text-dark text-wrap" data-bs-toggle="tooltip" title="<%- host.name %>"><%- host.abbreviation %></span>
                 <% } else { %>
-                  <span class="badge rounded-pill text-bg-secondary"><%- typeof host === 'string' ? host : (host.abbreviation || host.name) %></span>
+                  <span class="badge rounded-pill text-bg-light border text-dark text-wrap"><%- typeof host === 'string' ? host : (host.abbreviation || host.name) %></span>
                 <% } %>
               <% } %>
             </div>
