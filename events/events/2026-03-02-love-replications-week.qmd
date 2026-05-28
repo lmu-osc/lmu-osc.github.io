@@ -6,10 +6,22 @@ categories:
 event:
   start_date: '2026-03-02'
   end_date: '2026-03-06'
-  description: |
+  card_description: |
     Granting replications the spotlight for one entire week - learn about best practices, get in touch with experts, and join an open community!
 
   time: '10:00-17:00'
+  description: |
+    In the Love Replications Week, learn how to do reproduction and replication studies yourself, submit your own local or virtual events, and show your love for replications — regardless of the type of research that you do!
+    
+    The OSC was excited to be a partner in this online event where you learn about doing reproduction and replication studies.
+  
+    Daily lectures and tutorials to learn how to:
+    
+    - Do reproduction and replication studies
+    - Choose and justify replication targets
+    - Collaborate with students on replication projects
+    - Write reproducible reports and get certified reproducible results
+    
   location:
     name:  
     address: 
@@ -26,18 +38,6 @@ links:
   registration: 
   materials: https://zenodo.org/communities/lrw/records?q=&l=list&p=1&s=10&sort=newest
   workshop_website: https://forrt.org/LoveReplicationsWeek/
-event_description: |
-  In the Love Replications Week, learn how to do reproduction and replication studies yourself, submit your own local or virtual events, and show your love for replications — regardless of the type of research that you do!
-  
-  The OSC was excited to be a partner in this online event where you learn about doing reproduction and replication studies.
-
-  Daily lectures and tutorials to learn how to:
-  
-  - Do reproduction and replication studies
-  - Choose and justify replication targets
-  - Collaborate with students on replication projects
-  - Write reproducible reports and get certified reproducible results
-  
 instructors:
   - name: 
     url: ''

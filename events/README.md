@@ -54,7 +54,10 @@ categories: ['Discussion', 'Hacky Hour', 'ReproducibiliTea Journal Club', 'Works
 event:
   start_date: 2026-03-11
   end_date: 2026-03-12   # optional
-  description: "Short card description shown on /events"
+  description: |
+    LONGER OVERVIEW TEXT FOR THE EVENT DETAIL PAGE. This appears on the event detail page and may include markdown, links, and images.
+  card_description: |
+    SHORT DESCRIPTION FOR THE EVENT CARD. Keep this to 1–2 short sentences for display on the /events listing. If no value is provided here, the description value will be used in the card instead (up to 5 lines of text).
   time: "09:00-17:00"
   location:
     name: "Venue name"
@@ -71,9 +74,6 @@ event:
     - file: images/example-flyer.pdf
       title: "Example event flyer"
 
-event_description: |
-  Longer overview text for the event detail page. That is, the content here displays on the event page.
-
 ...
 # people section described below
 
@@ -82,7 +82,7 @@ filters:
     - templates/process-event-yaml.lua
 ```
 
-For the event detail page itself, use `event_description` for the longer overview content and fill optional flyer, people, and contact blocks (`flyer`, `presenters`, `instructors`, `helpers`, `organizers`, `host`, `contact`) as needed (described below).
+For the event detail page itself, use `event.description` for the longer overview content and `event.card_description` for the short summary shown on the listing cards. Fill optional flyer, people, and contact blocks (`flyer`, `presenters`, `instructors`, `helpers`, `organizers`, `host`, `contact`) as needed (described below).
 
 Keep `template` and `filters` as shown above so page rendering stays consistent. The Lua filter processes some of the YAML variables, and all of the variables are then passed to the HTML template file, `templates/event-template.html` which creates a consistent look for all of the Events pages.
 
