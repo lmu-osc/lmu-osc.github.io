@@ -1,0 +1,759 @@
+
+
+
+<!-- second accordion -->
+
+<div class="accordion rh-accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle" id="accordion-legal-requirements">
+<div class="accordion-item">
+<div class="accordion-header no-anchor" id="sec-legal-requirements">
+<button class="accordion-button collapsed fw-semibold d-flex align-items-center gap-3" type="button"
+  data-bs-toggle="collapse"
+  data-bs-target="#collapseTwo"
+  aria-expanded="false">
+<span class="icon-wrapper rounded-4 bg-success-subtle text-success p-3">
+<i class="bi bi-shield-check m-0 fs-4"></i>
+</span>
+<div class="accordion-title">
+
+### Legal Requirements
+</div>
+</button>
+</div>
+<div id="collapseTwo" class="accordion-collapse collapse">
+<div class="accordion-body p-4">
+
+:::{.content}
+:::{.panel-tabset}
+
+#### 1.2.1. LMU guidelines
+
+The [LMU Guidelines for Safeguarding Good Scientific Practice](https://cms-cdn.lmu.de/media/contenthub/amtliche-veroeffentlichungen/gwp-ordnung.pdf) are legally binding for all academics, researchers, research support staff, teachers, and students at LMU Munich. Only the original text in German prevails, but we provide an English summary of relevant aspects for this guide: 
+
+<h5 class="fs-5 no-anchor">Appropriate level of documentation and standards to allow [**reproduction**]{.underline}:</h5> 
+
+* **Reproducible methods must be used.** (§11)
+* When research software is developed, its source code must be documented. (§12)
+
+<h5 class="fs-5 no-anchor">Appropriate level of documentation and standards to allow [**replication**]{.underline}:</h5>
+
+* All information relevant to the production of a research result must be documented comprehensively to enable replication. (§7 and §12)
+* If specific professional recommendations exist for review and evaluation, the results must be documented in accordance with these respective specifications. (§12) 
+* Individual results that do not support the hypothesis must also be documented; **a selection of results is not permitted**. (§12)
+
+<h5 class="fs-5 no-anchor">Public access to research results:</h5>
+
+* Apart from specific exceptions, **all findings should be made public**. For this, they must be described in a detailed and comprehensible manner which includes making available the research data, materials and information on which the results are based, as well as the methods used and the software employed (including appropriately licensed self-written software) **according to the [FAIR principles]{.underline}**. (§13)
+* Data, material, software made publicly accessible must be appropriately archived, usually for a period of 10 years (§17).
+
+
+ In later sections, you will acquire skills in data management and reproducible workflow that will enable you to comply with these guidelines and the **[FAIR principles]{.underline}**.
+
+:::{.callout-note}
+## Definitions
+The **[FAIR principles]{.underline}** are defined as:  
+
+- **F**indable: [**metadata**]{.underline} should be deposited in a searchable repository and be assigned a permanent identifier\
+- **A**ccessible: the data is either open, or accessible upon some authentication process, or closed, but with open [**metadata**]{.underline}.\
+- **I**nteroperable: the data is described with a standard terminology (so the dataset can be merged with other ones) and saved in a stable file format\
+- **R**eusable: the data is richly documented (e.g. with a data dictionary) and is accompanied by a data usage license
+See [https://www.go-fair.org/fair-principles/](https://www.go-fair.org/fair-principles/) for more information.
+
+
+[**Metadata**]{.underline} are data about your data, such as author, date, measurement device, unit of measurement, context of data collection, etc.
+
+[**Reproducibility**]{.underline}: The ability of a researcher to re-derive the same results using the _same data and methods_; also known as computational reproducibility. 
+
+[**Replicability**]{.underline}: The ability of an independent researcher to achieve results consistent with teh original study by following the same experimental or analytical approach but collecting  _new data_.
+
+:::
+
+::: {.container .my-4}
+
+<h4 class="fs-5"><i class="bi bi-tools"></i> TOOLS & RESOURCES</h4>
+
+::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
+
+::: {.col}
+
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
+<img src="/assets/img/lmu-favicon.ico" class="img-fluid" alt="LMU logo">
+</div>
+<h4 class="card-title">LMU Guidelines for Safeguarding Good Scientific Practice</h4>
+<p class="card-text">Implementation of the German Research Foundation's (DFG) Code of Conduct</p>
+<a href="https://cms-cdn.lmu.de/media/contenthub/amtliche-veroeffentlichungen/gwp-ordnung.pdf" class="stretched-link" target="_blank" rel="noopener"></a>
+</div>
+```
+:::
+
+:::
+
+:::
+
+#### 1.2.2. Funders
+
+- **Check all funders' open science requirements.** Funders may have additional requirements on top of those indicated in the LMU guidelines. For instance, some funding lines request a Research Data Management plan before making their second payment, some specify the extent and timing of data sharing and provide funds for such activity. 
+
+
+- **Contact the [LMU Research Funding Unit](https://www.lmu.de/en/research/research-services/contact.html) to review your grant proposal** and assess if your proposal is meeting your funders' open science requirements. 
+
+#### 1.2.3. Ethics
+
+Data collection and analyses involving human participants or animal subjects typically require approval from ethics committees to ensure responsible conduct and the protection of data.
+
+
+<h5 class="fs-5 no-anchor"><i class="bi bi-list-check"></i> Your ethics proposal will typically include information on:</h5>
+
+- **Data storage and retention** – outlining how data will be securely stored, backed up, and retained over time. This information can be extracted from a more detailed Research Data Management plan (see [1.3. Research Data Management Plans](#sec-research-data-management){.mark}).
+- **Risks if the data were leaked** – identifying potential consequences for participants or the research project if confidentiality is breached.
+- **Data anonymization** – describing procedures to remove or obscure personally identifiable information to protect participant privacy (see [2.3.2. Anonymization](02-collect-and-manage.qmd#sec-ethics-and-privacy){.mark} for options, from simple techniques of anonymization to the creation of synthetic data).
+- **Informed consent forms language** – ensuring that participants clearly understand the purpose, procedures, and any potential risks of the study. Conditions for sharing their data should be clearly explained here (see [2.3.1. Informed Consent](02-collect-and-manage.qmd#sec-ethics-and-privacy){.mark}). 
+- **Power analysis** to justify sample size – providing a statistical rationale for the number of participants, which supports the validity and ethical justification of the study. This, and more detailed information on the statistical plan, can be extracted from your pre-analysis plan (see [1.4.1. Pre-analysis planning](#sec-study-design-analysis-plan){.mark} and [1.4.3. Power analyses](#sec-study-design-analysis-plan){.mark}). 
+
+For data protection guidance, contact the [LMU Data Protection Officer](https://www.lmu.de/en/about-lmu/structure/organizational-structure/officers-representatives-and-contact-persons/data-protection-officer.html) or the [Research Data Management team of the University Library ](https://www.en.ub.uni-muenchen.de/writing/research_data/research-data-management/index.html).
+
+
+:::{.callout-tip}
+## Tips for research groups to streamline this process
+- **Share templates and example resources amongst team members.** For example, include previously approved ethics proposals, approved Data Protection Impact Assessment forms, or Data Management Plans on a common server space.
+- **Create Standard Operating Procedures (SOPs) for the team** for processes such as appropriate anonymization technique for a specific data type, power analyses script for common analyses, define when a data management plan must be updated, who is responsible, and how updates are reviewed/approved and communicated.
+:::
+
+::: {.container .my-4}
+
+<h4 class="fs-5"><i class="bi bi-mortarboard"></i> LEARN MORE</h4>
+
+::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
+
+
+::: {.col}
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+  <div class="d-flex gap-2">
+    <div class="orc-card-tool-icon p-2 rounded">
+      <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+    </div>
+  </div>
+  <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
+</div>
+<h4 class="card-title">Data Management Plans</h4>
+<p class="card-text">Overview of components, tips, and tools. (30 min)</p>
+<a href="https://lmu-osc.github.io/FAIR-Data-Management/dmp.html" class="stretched-link" target="_blank" rel="noopener"></a>
+</div>
+```
+:::
+
+::: {.col}
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+  <div class="d-flex gap-2">
+    <div class="orc-card-tool-icon p-2 rounded">
+      <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+    </div>
+  </div>
+  <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
+</div>
+<h4 class="card-title">TBA: Data Anonymization</h4> <!-- TODO: edit when available -->
+<p class="card-text">Implement data anonymization techniques in R. (X h)</p> <!-- edit when available -->
+<a href="#" class="stretched-link" rel="noopener"></a><!-- Add link when available -->
+</div>
+```
+:::
+
+::: {.col}
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+  <div class="d-flex gap-2">
+    <div class="orc-card-tool-icon p-2 rounded">
+      <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+    </div>
+  </div>
+  <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
+</div>
+<h4 class="card-title">Power Analysis</h4>
+<p class="card-text">Data simulations for GLMs, LMEs, and SEMs in R. (6h)</p>
+<a href="https://lmu-osc.github.io/Simulations-for-Advanced-Power-Analyses/" class="stretched-link" target="_blank" rel="noopener">
+</a>
+</div>
+```
+:::
+
+:::
+
+:::
+
+
+:::
+:::
+</div>
+</div>
+</div>
+</div>
+
+<!-- third accordion -->
+
+<div class="accordion rh-accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle" id="accordion-research-data-management">
+<div class="accordion-item">
+<div class="accordion-header no-anchor" id="sec-research-data-management">
+<button class="accordion-button collapsed fw-semibold d-flex align-items-center gap-3" type="button"
+  data-bs-toggle="collapse"
+  data-bs-target="#collapseThree"
+  aria-expanded="false">
+<span class="icon-wrapper rounded-4 bg-success-subtle text-success p-3">
+<i class="bi bi-folder2-open fs-4 m-0"></i>
+</span>
+<div class="accordion-title">
+
+### Research Data Management Plans
+</div>
+</button>
+</div>
+<div id="collapseThree" class="accordion-collapse collapse">
+<div class="accordion-body p-4">
+
+:::{.content}
+
+
+A **Data Management Plan (DMP)** documents how you will handle research data throughout your project. Writing a DMP prompts you to think and document decisions you might otherwise leave implicit. 
+
+::: {.ms-1} 
+- **Decide _before_ data collection whether you will eventually share your data publicly (and where)**, in order to (i) get ethics approval on the right plan, (ii) design consent forms for participants, (iii) collect appropriate metadata for the target repository, etc.
+- **Start with what you know, and refine the details as your project develops.** Your DMP is a living document that you will refine to match the reality of your project while ensuring data protection and streamline collaborations (see [2.2. Data Management](02-collect-and-manage.qmd#sec-data-management){.mark}, [3.1. Data Processing & Analysis](03-analyze-and-collaborate.qmd#sec-data-processing-analysis){.mark}, and [4.1. FAIR Data Sharing](04-preserve-and-share.qmd#sec-fair-data-sharing){.mark}).
+:::
+
+##### <i class="bi bi-list-check"></i> Your DMP will ask:
+
+- **What data** will you collect or generate (types, formats, volume, sources)? See [2.1. Data Collection](02-collect-and-manage.qmd#sec-data-collection){.mark}.
+- **How will you describe it** (metadata standards, documentation practices)? See [2.2. Data Management](02-collect-and-manage.qmd#sec-data-management){.mark} for these and the next questions.
+- **How will you organize files** (naming conventions, folder structure, versioning)?
+- **Where will you store it** (locations, backups, access controls)?
+- **How will you ensure quality** (validation checks, error-handling)?
+- **How will you share outputs** (repositories, licenses, embargo periods)? See our lecture "[Why share data openly?](https://lmu-osc.github.io/training/data-management/open-data.html)" and [4.1. FAIR Data Sharing](04-preserve-and-share.qmd#sec-fair-data-sharing){.mark}
+- **What constraints apply** (consent, anonymization, GDPR, data use agreements)? See our lecture "[Maintaining privacy with open data](https://lmu-osc.github.io/training/data-management/maintaining-privacy-with-open-data.html)", [1.2.3. Ethics](#sec-legal-requirements){.mark} and [2.3. Ethics & Privacy](02-collect-and-manage.qmd#sec-ethics-and-privacy){.mark}.
+
+
+The specific questions vary by discipline, data type, and funder requirements. DMP tools like [RDMO](https://rdmo.ub.lmu.de/) guide you through the relevant questions with funder-specific templates. 
+
+
+:::{.callout-tip}
+## Tips for research groups to streamline this process
+- **Share templates and example DMP amongst team members** on a common server space.
+- **Create Standard Operating Procedures for the team.** Define when a data management plan must be updated, who is responsible, and how updates are reviewed/approved and communicated.
+:::
+
+
+::: {.container .my-4}
+<h4 class="fs-5"><i class="bi bi-mortarboard"></i> LEARN MORE</h4>
+
+::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4 .mb-4}
+
+::: {.col}
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+  <div class="d-flex gap-2">
+    <div class="orc-card-tool-icon p-2 rounded">
+      <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+    </div>
+  </div>
+  <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Lecture</span>
+</div>
+<h4 class="card-title">Why share data openly?</h4>
+<p class="card-text">An introduction to the what, why, and how to make data open (30 min)</p>
+<a href="https://lmu-osc.github.io/training/data-management/open-data.html" class="stretched-link" target="_blank" rel="noopener"></a>
+</div>
+```
+:::
+
+::: {.col}
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+  <div class="d-flex gap-2">
+    <div class="orc-card-tool-icon p-2 rounded">
+      <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+    </div>
+  </div>
+  <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Lecture</span>
+</div>
+<h4 class="card-title">Maintaining Privacy with Open Data</h4>
+<p class="card-text">How to make data open without revealing sensitive information (1h)</p>
+<a href="https://lmu-osc.github.io/training/data-management/maintaining-privacy-with-open-data.html" class="stretched-link" target="_blank" rel="noopener"></a>
+</div>
+```
+:::
+
+::: {.col}
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+  <div class="d-flex gap-2">
+    <div class="orc-card-tool-icon p-2 rounded">
+      <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+    </div>
+  </div>
+  <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
+</div>
+<h4 class="card-title">Data Management Plans</h4>
+<p class="card-text">Overview of components, tips, and tools. (30 min)</p>
+<a href="https://lmu-osc.github.io/FAIR-Data-Management/dmp.html" class="stretched-link" target="_blank" rel="noopener"></a>
+</div>
+```
+:::
+
+:::
+
+<h4 class="fs-5"><i class="bi bi-tools"></i> TOOLS & RESOURCES</h4>
+
+::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
+
+::: {.col}
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+  <div class="d-flex gap-2">
+    <div class="orc-card-tool-icon p-2 rounded">
+      <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+    </div>
+    <div class="orc-card-tool-icon p-2 rounded">
+      <img src="/assets/img/rdmo-logo.png" class="img-fluid" alt="RDMO logo">
+    </div>
+  </div>
+  <span class="badge rounded-5 bg-success-subtle text-success align-self-start">Supported at LMU</span>
+</div>
+<h4 class="card-title">RDMO</h4>
+<p class="card-text">Funder-compliant DMP templates (e.g. DFG, ERC).</p>
+<a href="https://rdmo.ub.lmu.de/" class="stretched-link" target="_blank" rel="noopener"> </a>
+</div>
+```
+:::
+
+
+::: {.col}
+
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
+<img src="/assets/img/rio-journal-icon.ico" class="img-fluid" alt="RIOjournal icon">
+</div>
+<h4 class="card-title">RIOjournal</h4>
+<p class="card-text"> Examples of DMPs by discipline. </p>
+<a href="https://riojournal.com/browse_journal_articles.php?form_name=filter_articles&selfurl=&backurl=&sortby=0&journal_id=17" class="stretched-link" target="_blank" rel="noopener"></a>
+</div>
+```
+:::
+
+:::
+
+:::
+:::
+</div>
+</div>
+</div>
+</div>
+
+<!-- fourth accordion -->
+<div class="accordion rh-accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle" id="accordion-study-design-analysis-plan">
+<div class="accordion-item">
+<div class="accordion-header no-anchor" id="sec-study-design-analysis-plan">
+<button class="accordion-button collapsed fw-semibold d-flex align-items-center gap-3" type="button"
+  data-bs-toggle="collapse"
+  data-bs-target="#collapseFour"
+  aria-expanded="false">
+<span class="icon-wrapper rounded-4 bg-success-subtle text-success p-3">
+<i class="bi bi-clipboard-check m-0 fs-4"></i>
+</span>
+<div class="accordion-title">
+
+### Study Design & Analysis Plan
+</div>
+</button>
+</div>
+<div id="collapseFour" class="accordion-collapse collapse">
+<div class="accordion-body p-4">
+
+:::{.content}
+
+::: {.panel-tabset}
+
+#### 1.4.1. Pre-analysis planning 
+
+<h5 class="fs-5 no-anchor">Why should you plan your statistical plan prior to collecting data?</h5>
+
+Humans are prone to cognitive biases such as **confirmation bias** (seeking information that supports existing beliefs) and **hindsight bias** (believing outcomes were predictable after the fact). In research, these biases can distort findings, especially when researchers make analytic decisions after seeing results. Although statistical testing typically accepts a 5% false positive rate, **"researcher degrees of freedom"** — choices about data collection, exclusions, transformations, sample size, covariates, etc. — can dramatically inflate false positives when decisions are made post hoc. Practices like increasing sample size until reaching statistical significance, selectively removing outliers, or trying multiple analytic strategies **increase the likelihood of false-positive results**. See how easy it is to find false "significant" results by using our [p-hacking tool](https://shinyapps.org/apps/p-hacker/).
+
+
+The core problem is that analyses guided by observed outcomes allow biases to influence decisions, making many reported effects unreliable. A key **remedy is transparency and preregistration.**
+
+
+<h5 class="fs-5 no-anchor">Benefits of preregistration</h5>
+
+ Preregistration, that is, specifying hypotheses, methods, and analysis plans before data collection or analysis, limits bias in confirmatory testing while still allowing exploratory analyses, clearly **distinguishing robust hypothesis tests from hypothesis-generating work**. This improves credibility, limits false positives, and often leads to better study design through **early methodological feedback**.
+
+Preregistration can be beneficial for various type of studies, including: 
+
+- experimental studies (i.e. studies with a manipulated variable): it will define what will be your confirmatory analysis and strengthens your claim
+- observational or exploratory studies: it will help you move along the exploratory-confirmatory continuum
+- qualitative studies: it will provide a way to document e.g. your positionality towards a subject in the course of a project.
+
+<h5 class="fs-5 no-anchor"><i class="bi bi-list-check"></i> What is included in a preregistration?</h5>
+
+Several [preregistration templates](https://help.osf.io/article/330-welcome-to-registrations) exist. While the [standard Open Science Framework (OSF) preregistration template](https://docs.google.com/document/d/1gkN0Jp6Gu7GIA4Ne4YCDZ61nCLQRgt32moRdUg9AnVg/edit?tab=t.0#heading=h.fwbi14d4b65g) is most commonly used, some are tailored for specific field or specific methods (e.g. systematic review, qualitative work, secondary data analysis).
+
+
+Your preregistration will define your study's:
+
+
+- **Hypothesis and predictions**
+- **Data collection procedures**
+- **Sample size and stopping rule**
+- **Variables** (manipulated, measured, indices)
+- **Statistical method** (model, dependent and independent variables, covariables, transformations)
+- **Data exclusion criteria**
+- **How to deal with missing data**
+
+A great tool to create your statistical plan, especially for early career researchers still learning statistics and needing feedback from supervisors, collaborators, or statisticians on their design, is to **simulate data, and write the possible statistical tests to analyze that data** (see [1.4.2. Simulation of data](#sec-study-design-analysis-plan){.mark} and [1.4.3. Power analyses](#sec-study-design-analysis-plan){.mark}). Including an analyses script (developed on simulated data) with your preregistration is optional but recommended.
+
+
+To get support with planning your analytical approach, you can book a consultation with the [LMU statistical consulting unit (StaBLab)](https://www.stat.lmu.de/stablab/de/). 
+
+
+
+<h5 class="fs-5 no-anchor">Publishing process</h5>
+
+Once your study plan is finalized:
+
+
+- **Submit your preregistration before collecting new or analyzing existing data.** You can do so on discipline specific registries (see [1.1.2. Preregistrations](#sec-explore-and-reuse){.mark}) or discipline agnostic repositories such as the [OSF](https://osf.io/). 
+- **Embargo your plan if you are concerned about scooping.** On the OSF, your preregistration can be kept private for a predetermined amount of time, and for a maximum of 4 years.
+- **Include your preregistration's DOI in your manuscript.** Make your registration public upon the publication of your manuscript. 
+
+Creating a preregistration improves transparency and allows for valuable **early feedback from collaborators**. An even stronger approach is **submitting preregistrations directly to journals** (then called **"Registered Reports"**), enabling peer review at a stage where methodological adjustments are still possible.
+
+
+<h5 class="fs-5 no-anchor">Registered Reports</h5>
+
+Registered Reports are a publication format, now adopted by over 300 journals (see [participating journals](https://www.cos.io/initiatives/registered-reports)), where **preregistrations are peer-reviewed before data collection**. Reviewers evaluate the hypotheses, methods, and planned analyses, allowing methodological improvements. If the plan is approved, the journal grants in-principle acceptance, meaning publication is guaranteed provided researchers follow the protocol.
+
+
+After completing the study, authors add results and discussion sections, clearly separating preregistered confirmatory analyses from exploratory ones. Final review focuses on adherence to the approved plan and the validity of conclusions, not on whether results are significant. This model **shifts incentives toward asking important questions and using rigorous methods rather than chasing striking or 'novel' outcomes**.
+
+
+::: {.container .my-4}
+
+<h4 class="fs-5"><i class="bi bi-mortarboard"></i> LEARN MORE</h4>
+
+::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4 .mb-4}
+
+::: {.col}
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+  <div class="d-flex gap-2">
+    <div class="orc-card-tool-icon p-2 rounded">
+      <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+    </div>
+  </div>
+  <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
+</div>
+<h4 class="card-title">TBA: Preregistration tutorial</h4><!-- edit when available -->
+<p class="card-text">Step-by-step guide to creating preregistration. (Xh)</p><!-- edit when available -->
+<a href="#" class="stretched-link"></a><!-- edit when available -->
+</div>
+```
+:::
+
+:::
+
+<h4 class="fs-5"><i class="bi bi-tools"></i> TOOLS & RESOURCES</h4>
+
+::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
+
+::: {.col}
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+  <div class="d-flex gap-2">
+    <div class="orc-card-tool-icon p-2 rounded">
+      <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+    </div>
+  </div>
+  <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tool</span>
+</div>
+<h4 class="card-title">P-hacking tool</h4>
+<p class="card-text">Interactive app to realize how easy it is to find false "significant" results.</p>
+<a href="https://shinyapps.org/apps/p-hacker/" class="stretched-link"></a>
+</div>
+```
+:::
+
+::: {.col}
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
+<img src="/assets/img/open-science-framework-and-open-science-center.png" alt="COS icon" class="img-fluid">
+</div>
+<h4 class="card-title">Center for Open Science</h4>
+<p class="card-text">List of journals offering Registered Reports.</p>
+<a href="https://www.cos.io/initiatives/registered-reports" class="stretched-link" target="_blank" rel="noopener">
+</a>
+</div>
+```
+:::
+
+::: {.col}
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
+<img src="/assets/img/open-science-framework-and-open-science-center.png" alt="OSF icon" class="img-fluid">
+</div>
+<h4 class="card-title">Open Science Framework</h4>
+<p class="card-text">
+Preregistration templates, embargoes, file storage.
+</p>
+<a href="https://help.osf.io/article/330-welcome-to-registrations" class="stretched-link" target="_blank" rel="noopener"></a>
+</div>
+```
+:::
+
+:::
+
+:::
+
+#### 1.4.2. Simulation of Data
+
+In our context, a computer simulation is the generation of artificial data to build up an understanding of real data and the statistical models we use to analyze them. You can simulate data to:
+
+
+- **Test your statistical intuition or demonstrate mathematical properties you cannot easily anticipate**.  
+_Example: Check whether there are more than 5% significant effects (assuming $\alpha = .05$) when random data from $H_0$ are generated._
+
+- **Understand sampling theory and probability distributions or test whether you understand the underlying processes of your system.**  
+_Example: See whether simulated data drawn from specific distributions is comparable to real data._
+
+- **Perform power analyses.**  
+_Example: Assess whether the sample size (within a simulation repetition) is high enough to detect a simulated effect in more than 80% of the cases. (see [1.4.3. Power analyses](#sec-explore-and-reuse){.mark})_
+
+- **Prepare a pre-analysis plan.**  
+_Example: To strengthen your planned confirmatory analyses before collecting data, consider sharing a simulated dataset with a statistician or mentor. This allows for specific feedback on suitable statistical tests. The resulting analysis code can accompany your preregistration or registered report (see [1.4.1. Pre-analysis planning](#sec-explore-and-reuse){.mark}) so reviewers can clearly see your intended approach. When real data are collected, they can be directly substituted into the code to generate results._
+
+
+Generating an artificial dataset in R (see our [simulation tutorial](https://lmu-osc.github.io/Introduction-Simulations-in-R/)) is much easier than you might think and is often very helpful, even when you need to make assumptions about variable distribution or when the parameter space is not well known.
+
+
+
+::: {.container .my-4}
+
+<h4 class="fs-5"><i class="bi bi-mortarboard"></i> LEARN MORE</h4>
+
+::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4 .mb-4}
+
+<!-- card -->
+::: {.col}
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+  <div class="d-flex gap-2">
+    <div class="orc-card-tool-icon p-2 rounded">
+      <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+    </div>
+    <div class="orc-card-tool-icon p-2 rounded">
+      <img src="/assets/img/Rlogo.svg" class="img-fluid" alt="R logo">
+    </div>
+  </div>
+  <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
+</div>
+<h4 class="card-title">R Tutorial</h4>
+<p class="card-text">Learn R programming. (3h)</p>
+<a href="https://lmu-osc.github.io/introduction-to-R/" class="stretched-link" target="_blank" rel="noopener"> </a>
+</div>
+```
+:::
+
+::: {.col}
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+  <div class="d-flex gap-2">
+    <div class="orc-card-tool-icon p-2 rounded">
+      <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+    </div>
+  </div>
+  <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
+</div>
+<h4 class="card-title">Data simulation in R</h4>
+<p class="card-text">Easy data simulations in R. (2h)</p>
+<a href="https://lmu-osc.github.io/Introduction-Simulations-in-R/" class="stretched-link" target="_blank" rel="noopener"></a>
+</div>
+```
+:::
+
+:::
+
+:::
+
+
+
+#### 1.4.3. Power analyses 
+
+Power analysis is relevant whether you are designing a project from scratch or running an analysis on already existing data. There are two main types of power analyses: 
+
+
+<h5 class="fs-5 no-anchor">A priori power analysis</h5>
+
+**Simulate data to calculate the smallest sample size required to detect the smallest effect of interest.** See our [advanced power analyses tutorial using R](https://lmu-osc.github.io/Simulations-for-Advanced-Power-Analyses/). 
+
+
+For a very basic power calculation, you can use simple R functions if you know 3 out of 4 of these parameters: 
+
+- required sample size *n* (usually the one missing)
+- desired power *1 - β* (default 0.80)
+- the alpha level *α* (default 0.05)
+- the expected effect size (has to be estimated or extracted from the literature on the form of *d*, *f*, etc.)
+
+To get support with pre-analysis planning, you can book a consultation with the [LMU statistical consulting unit (StaBLab)](https://www.stat.lmu.de/stablab/de/).
+
+
+<h5 class="fs-5 no-anchor">Post-hoc power analysis</h5>
+
+**Compute a post-hoc power when you are not be able to control the sample size for your project.** Beware: This power computation comes in two flavors - one is legitimate, and one is flawed and not defensible. 
+
+
+The **legitimate post-hoc power** is computed with your actual *n*, and the same effect size that you plugged into your a-priori power analysis. This analysis gives you the achieved power to detect your assumed effect.
+
+
+The **flawed version of post-hoc power** is called **“observed power”**: If an analysis yields a non-significant result, some researchers calculate the post-hoc power, but plug in the observed effect size. “Observed power”, however, is just a one‑to‑one function of the *p*‑value (a non-significant *p*-value returns a low power < 50 %, a just significant *p*‑value of .05 always yields a power of exactly 50%). Observed power adds no new information to the *p*‑value and is essentially meaningless. Do not compute this type of post-hoc power!
+
+
+::: {.container .my-4}
+
+<h4 class="fs-5"><i class="bi bi-mortarboard"></i> LEARN MORE</h4>
+
+::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4 .mb-4}
+
+<!-- card -->
+::: {.col}
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+  <div class="d-flex gap-2">
+    <div class="orc-card-tool-icon p-2 rounded">
+      <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+    </div>
+    <div class="orc-card-tool-icon p-2 rounded">
+      <img src="/assets/img/Rlogo.svg" class="img-fluid" alt="R logo">
+    </div>
+  </div>
+  <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
+</div>
+<h4 class="card-title">R Tutorial</h4>
+<p class="card-text">Learn R programming. (3h)</p>
+<a href="https://lmu-osc.github.io/introduction-to-R/" class="stretched-link" target="_blank" rel="noopener"> </a>
+</div>
+```
+:::
+
+::: {.col}
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+  <div class="d-flex gap-2">
+    <div class="orc-card-tool-icon p-2 rounded">
+      <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+    </div>
+  </div>
+  <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
+</div>
+<h4 class="card-title">Power Analyses</h4>
+<p class="card-text">Data simulations for GLMs, LMEs, and SEMs in R. (6h)</p>
+<a href="https://lmu-osc.github.io/Simulations-for-Advanced-Power-Analyses/" class="stretched-link" target="_blank" rel="noopener"></a>
+</div>
+```
+:::
+
+:::
+
+:::
+
+
+:::
+
+:::
+</div>
+</div>
+</div>
+</div>
+
+<!--Checklist-->
+
+::: {.orc-gradient-box .plan-design-checklist }
+
+## <i class="bi bi-card-checklist checklist-icon"></i> Plan & Design Checklist {.unnumbered}
+
+To complete before presenting your final study plan to your research group and, if applicable, submitting your ethics proposal and/or preregistration. Not all items are relevant for all fields of research or study types.
+
+
+::: {.row .row-cols-1 .row-cols-lg-2 .g-4}
+
+::: {.col-md-6}
+
+
+**Background Information**
+
+- [ ] Literature reviewed 
+- [ ] Existing research outputs searched
+- [ ] Funder's Open Science requirements identified
+- [ ] Ethics committee instructions consulted
+
+**Study Design**
+
+- [ ] Research questions clearly defined
+- [ ] Hypotheses and predictions specified
+- [ ] Study design chosen and justified
+- [ ] Variables and measures to collect identified
+- [ ] Analysis plan prepared (with simulated data)
+- [ ] Sample size determined (with power analysis)
+- [ ] Inclusion/exclusion criteria defined
+- [ ] Handling of missing data defined
+
+:::
+
+::: {.col-md-6}
+
+**Data Management Planning**
+
+- [ ] Data storage and backup solutions documented
+- [ ] File organization and naming conventions established
+- [ ] Anonymization procedures defined
+- [ ] Repository for data publishing selected
+
+**Project Management**
+
+- [ ] Team roles and responsibilities defined
+- [ ] Resources needed for the project identified
+- [ ] Timeline estimated and milestones defined
+
+**Before Data Collection**
+
+- [ ] Data Management Plan completed 
+- [ ] Consent forms prepared
+- [ ] Preregistration submitted 
+- [ ] Ethical approval obtained 
+
+:::
+
+:::
+
+::: {.d-flex .justify-content-center .mt-4 .orc-checklist-download .phase-1}
+
+<a href="assets/checklists/01-Plan-Design-Checklist.docx" class="btn btn-outline-secondary btn-sm">Download checklist <i class="bi bi-download"></i></a>
+<!-- need to update manually the  downloadable file with checklist in word doc-->
+
+:::
+
+
+:::
