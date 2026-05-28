@@ -36,6 +36,28 @@
     }
     return dStr;
   }
+
+  function formatDateRange(startDate, endDate) {
+    if (!startDate || !endDate) return '';
+
+    const startParts = startDate.split('-');
+    const endParts = endDate.split('-');
+    if (startParts.length !== 3 || endParts.length !== 3) {
+      return `${formatDate(startDate)} - ${formatDate(endDate)}`;
+    }
+
+    const start = new Date(startParts[0], startParts[1] - 1, startParts[2]);
+    const end = new Date(endParts[0], endParts[1] - 1, endParts[2]);
+
+    if (start.getFullYear() === end.getFullYear() && start.getMonth() === end.getMonth()) {
+      const startDay = String(start.getDate()).padStart(2, '0');
+      const endDay = String(end.getDate()).padStart(2, '0');
+      const month = start.toLocaleString('en-US', { month: 'short' });
+      return `${startDay}-${endDay} ${month}, ${start.getFullYear()}`;
+    }
+
+    return `${formatDate(startDate)} - ${formatDate(endDate)}`;
+  }
 %>
 <div class="events-list list">
 
@@ -46,7 +68,7 @@
 
   let dateText = '';
   if (item.event && item.event.start_date && item.event.end_date && item.event.start_date !== item.event.end_date) {
-      dateText = `${formatDate(item.event.start_date)} - ${formatDate(item.event.end_date)}`;
+      dateText = formatDateRange(item.event.start_date, item.event.end_date);
   } else if (item.event && item.event.start_date) {
       dateText = formatDate(item.event.start_date);
   }
