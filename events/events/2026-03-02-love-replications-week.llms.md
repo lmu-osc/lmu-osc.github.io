@@ -9,7 +9,7 @@ March 2, 2026
 
 #####  Location
 
-Online (Zoom)  
+  
 
 #####  Format
 

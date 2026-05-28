@@ -2,7 +2,7 @@
 
 #####  Date & Time
 
-08 Mar, 2024  
+08 Mar 2024  
 14:00 CET
 
 #####  Location

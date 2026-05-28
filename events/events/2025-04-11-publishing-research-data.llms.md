@@ -2,7 +2,7 @@
 
 #####  Date & Time
 
-11 Apr, 2025  
+11 Apr 2025  
 14:00 CET
 
 #####  Location

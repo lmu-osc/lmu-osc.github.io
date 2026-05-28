@@ -6,7 +6,8 @@
 
 #####  Location
 
-Hybrid (Theresienstr. 39 and via Zoom)  
+Math Institute of LMU  
+Theresienstr. 39, 80333 Munich
 
 #####  Format
 

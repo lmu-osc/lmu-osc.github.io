@@ -6,7 +6,8 @@
 
 #####  Location
 
-Philologicum room (Veranstaltungsraum) Ludwigstraße 25, 80539 Munich  
+[Philologicum Library  
+Ludwigstraße 25, 80539 Munich](https://maps.app.goo.gl/Rvq24yLKyRz92sjQ8)
 
 #####  Format
 

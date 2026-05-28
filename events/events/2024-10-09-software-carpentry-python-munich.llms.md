@@ -6,7 +6,8 @@
 
 #####  Location
 
-Campus Martinsried-Großhadern, Butenandtstr. 5, B 0.022,81377 München  
+Campus Martinsried-Großhadern  
+Butenandtstr. 5, B 0.022,81377 München
 
 #####  Format
 

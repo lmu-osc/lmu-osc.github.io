@@ -2,1642 +2,3118 @@
 
 ## Upcoming Events
 
-7-15 Sept, 2026
+[OSPARK Bootcamp Munich - Promote your Open Research Passion!](../events/events/2026-06-10-ospark-bootcamp.llms.md) [OSPARK Bootcamp Munich - Promote your Open Research Passion!](../events/events/2026-06-10-ospark-bootcamp.llms.md) Event
 
-9:00-17:30
+[![Event](../events/images/event.svg)](../events/events/2026-06-10-ospark-bootcamp.llms.md)
 
-Online and Philologicum Library, Ludwigstraße 25, 80539 Munich
+###### 10 Jun, 2026
 
-Hybrid
+###### 10 Jun, 2026 - 25 Jul, 2026
 
-EN
+######  Munich, Germany \|  Hybrid \|  English
 
-LMU Open Science Summer School 2026
-
-Save the date! Our annual Summer School will take place on Sept 7-11 (Track 1) and Sept 14-15 (Track 2), 2026.
-
-Organizer(s): Sarah von Grebmer zu Wolfsthurn
-
-Presenter(s): Alexander Wuttke, Richard McElreath, Tim Errington, Jonas Hagenberg, Danny Maupin
-
-Instructor(s): Sarah von Grebmer zu Wolfsthurn, Malika Ihle, Sara Lil Middleton, Laura Meier, Pat Callahan, Florian Kohrt, Reema Gupta, Edouard Bonneville, Sophie Renard, Flavio Azevedo
-
-Helper(s): Elizabeth Waterfield
-
-Host(s): LMU Open Science Center, LMU University Library (UB), Professionell in der Lehre (PROFil), Framework for Open and Reproducible Research Training (FORRT)
-
-[](../events/events/2026-09-07-lmu-open-science-summer-school.llms.md) [Sarah Von Grebmer Zu Wolfsthurn](mailto:Sarah.Grebmer@psy.lmu.de?subject=Regarding%20)
-
-10 Jun-25 Jul, 2026
-
-Online and Munich, Germany
-
-Hybrid
-
-EN
-
-OSPARK Bootcamp Munich - Promote your Open Research Passion!
+######  Hybrid \|  English
 
 The OSPARK bootcamp is a 6-week online course and a 2-day onsite workshop all about creating visibility through outreach and marketing. It's a learning opportunity for people working in or leading Open Research initiatives, services or infrastructures.
 
-Organizer(s): Dr. Heidi Seibold
+Organizers: Dr. Heidi Seibold
 
-Host(s): Digital Research Academy, OLS, LMU Open Science Center, OSCARS Project
+Hosts: Digital Research Academy OLS LMU Open Science Center OSCARS
 
-[](../events/events/2026-06-10-ospark-bootcamp.llms.md) [Digital Research Academy](mailto:hello@digiresacademy.org?subject=Regarding%20)
+Questions? Contact [Digital Research Academy](mailto:hello@digiresacademy.org)
+
+[Read More](../events/events/2026-06-10-ospark-bootcamp.llms.md)
+
+[LMU Open Science Summer School 2026](../events/events/2026-09-07-lmu-open-science-summer-school.llms.md) [LMU Open Science Summer School 2026](../events/events/2026-09-07-lmu-open-science-summer-school.llms.md) Summer School
+
+[![Summer School](../events/images/summer_school.svg)](../events/events/2026-09-07-lmu-open-science-summer-school.llms.md)
+
+###### 07 Sep, 2026
+
+###### 07-15 Sep, 2026
+
+######  9:00-17:30 \|  Philologicum Library \|  Hybrid \|  English
+
+######  9:00-17:30 \|  Hybrid \|  English
+
+Save the date! Our annual Summer School will take place on Sept 7-11 (Track 1) and Sept 14-15 (Track 2), 2026.
+
+Organizers: Sarah von Grebmer zu Wolfsthurn
+
+Presenters: Alexander Wuttke Richard McElreath Tim Errington Jonas Hagenberg Danny Maupin
+
+Instructors: Sarah von Grebmer zu Wolfsthurn Malika Ihle Sara Lil Middleton Laura Meier Pat Callahan Florian Kohrt Reema Gupta Edouard Bonneville Sophie Renard Flavio Azevedo
+
+Helpers: Elizabeth Waterfield
+
+Hosts: LMU Open Science Center LMU University Library (UB) PROFiL FORRT
+
+Questions? Contact [Sarah Von Grebmer Zu Wolfsthurn](mailto:Sarah.Grebmer@psy.lmu.de)
+
+[Read More](../events/events/2026-09-07-lmu-open-science-summer-school.llms.md)
 
 ## Past Events
 
 ### 2026
 
-11-12 Mar, 2026
+[Software Carpentry: Essential Computing Skill Training (Shell, Git, Python)](../events/events/2026-03-11-software-carpentry-computing-skills.llms.md) [Software Carpentry: Essential Computing Skill Training (Shell, Git, Python)](../events/events/2026-03-11-software-carpentry-computing-skills.llms.md) Workshop
 
-Software Carpentry: Essential Computing Skill Training (Shell, Git, Python)
+[![Workshop](../events/images/workshop.svg)](../events/events/2026-03-11-software-carpentry-computing-skills.llms.md)
 
-Organizer(s): Edouard Bonneville
+###### 11 Mar, 2026
 
-Instructor(s): Felix Henninger, Balthasar Schachtner, Jan Simson
+###### 11-12 Mar, 2026
 
-Helper(s): Edouard Bonneville, Pat Callahan
+######  LMU Biozentrum \|  In-Person \|  English
 
-Host(s): Munich Center for Machine Learning (MCML), LMU Open Science Center (OSC)
+######  In-Person \|  English
 
-[](../events/events/2026-03-11-software-carpentry-computing-skills.llms.md) [Training Material](https://lmu-osc.github.io/2026-03-11-LMU-Martinsried/)
+Organizers: Edouard Bonneville
 
-2-6 Mar, 2026
+Instructors: Felix Henninger Balthasar Schachtner Jan Simson
 
-Love Replications Week
+Helpers: Edouard Bonneville Pat Callahan
 
-Organizer(s): Lukas Röseler
+Hosts: MCML LMU Open Science Center
 
-Host(s): Framework for Open and Reproducible Research Training (FORRT), German Reproducibility Network (GRN), LMU Open Science Center (OSC)
+[Training Material](https://lmu-osc.github.io/2026-03-11-LMU-Martinsried/)
 
-[](../events/events/2026-03-02-love-replications-week.llms.md) [Training Material](https://zenodo.org/communities/lrw/records?q=&l=list&p=1&s=10&sort=newest)
+[Read More](../events/events/2026-03-11-software-carpentry-computing-skills.llms.md)
 
-9-13 Feb, 2026
+[Love Replications Week](../events/events/2026-03-02-love-replications-week.llms.md) [Love Replications Week](../events/events/2026-03-02-love-replications-week.llms.md) Event
 
-Love Data Week: a Series of Events on Research Data Management
+[![Event](../events/images/event.svg)](../events/events/2026-03-02-love-replications-week.llms.md)
 
-Presenter(s): Dr. Malika Ihle, Laura Kropf, Dr. Florian Schreck, Dr. Martin Spenger, Laure Sigalla
+###### 02 Mar, 2026
 
-Host(s): LMU University Library (UB), LMU Open Science Center, LMU Research Funding Unit
+###### 02-06 Mar, 2026
 
-[](../events/events/2026-02-09-love-data-week.llms.md) [Training Material](https://zenodo.org/communities/love-data-week-2026-forschungsdaten-info/records?q=&l=list&p=1&s=10&sort=newest)
+######  Online \|  English
+
+######  Online \|  English
+
+Organizers: Lukas Röseler
+
+Hosts: FORRT GRN LMU Open Science Center
+
+[Training Material](https://zenodo.org/communities/lrw/records?q=&l=list&p=1&s=10&sort=newest)
+
+[Read More](../events/events/2026-03-02-love-replications-week.llms.md)
+
+[Love Data Week: a Series of Events on Research Data Management](../events/events/2026-02-09-love-data-week.llms.md) [Love Data Week: a Series of Events on Research Data Management](../events/events/2026-02-09-love-data-week.llms.md) Event
+
+[![Event](../events/images/event.svg)](../events/events/2026-02-09-love-data-week.llms.md)
+
+###### 09 Feb, 2026
+
+###### 09-13 Feb, 2026
+
+######  Online \|  English and German
+
+######  Online \|  English and German
+
+Presenters: Dr. Malika Ihle Laura Kropf Dr. Florian Schreck Dr. Martin Spenger Laure Sigalla
+
+Hosts: LMU University Library (UB) LMU Open Science Center LMU Research Funding Unit
+
+[Training Material](https://zenodo.org/communities/love-data-week-2026-forschungsdaten-info/records?q=&l=list&p=1&s=10&sort=newest)
+
+[Read More](../events/events/2026-02-09-love-data-week.llms.md)
 
 ### 2025
 
-12 Dec, 2025
+[OSIM Meetup: Clinical Data Sharing](../events/events/2025-12-12-clinical-data-sharing.llms.md) [OSIM Meetup: Clinical Data Sharing](../events/events/2025-12-12-clinical-data-sharing.llms.md) OSIM Meetup
 
-OSIM Meetup: Clinical Data Sharing
+[![OSIM Meetup](../events/images/osim_meetup.svg)](../events/events/2025-12-12-clinical-data-sharing.llms.md)
 
-Organizer(s): Julian Lange, PD Dr. Luisa Jiménez-Soto
+###### 12 Dec, 2025
 
-Presenter(s): Prof. Dr. Ulrich Mansmann
+###### 12 Dec, 2025
 
-Host(s): Open Science Initiative in Medicine
+######  Hybrid \|  English
 
-[](../events/events/2025-12-12-clinical-data-sharing.llms.md) [Training Material](https://osf.io/kyvut/files/7afyn)
+######  Hybrid \|  English
 
-14 Nov, 2025
+Organizers: Julian Lange PD Dr. Luisa Jiménez-Soto
 
-Data & AI Ethics
+Presenters: Prof. Dr. Ulrich Mansmann
 
-Organizer(s): Patrick Schenk, Moritz Herrmann
+Hosts: OSIM
 
-Host(s): Data Ethics Initiative at the LMU Department of Statistics, Munich Center for Machine Learning (MCML), Open Science Initiative in Statistics (OSIS)
+[Training Material](https://osf.io/kyvut/files/7afyn)
 
-[](../events/events/2025-11-14-data-and-ai-ethics.llms.md) [Training Material](https://sites.google.com/view/epix-workshop/2025-data-ethics)
+[Read More](../events/events/2025-12-12-clinical-data-sharing.llms.md)
 
-14 Nov, 2025
+[Data & AI Ethics](../events/events/2025-11-14-data-and-ai-ethics.llms.md) [Data & AI Ethics](../events/events/2025-11-14-data-and-ai-ethics.llms.md) Conference
 
-OSIM Meetup: Data Sharing in Psychiatric Genetics
+[![Conference](../events/images/conference.svg)](../events/events/2025-11-14-data-and-ai-ethics.llms.md)
 
-Presenter(s): Dr. Urs Heilbronner
+###### 14 Nov, 2025
 
-Host(s): Open Science Initiative in Medicine
+###### 14 Nov, 2025
 
-[](../events/events/2025-11-14-psychiatric-genetics-data-sharing.llms.md) [Training Material](https://osf.io/w2bmt/overview)
+######  Ludwig-Maximilians-Universität München \|  In-Person \|  English
 
-15 Sept, 2025
+######  In-Person \|  English
 
-LMU Open Science Summer School 2025
+Organizers: Patrick Schenk Moritz Herrmann
 
-Organizer(s): Dr. Malika Ihle, Dr. Sarah von Grebmer zu Wolfsthurn
+Hosts: Data Ethics Initiative at the LMU Department of Statistics MCML OSIS
 
-Presenter(s): Prof. Dr. Richard McElreath, Vera Karlbauer, Dr. Jonas Hagenberg, Dr. Tim Errington, Dr. Barbara Beege, Franziska Schrade
+[Training Material](https://sites.google.com/view/epix-workshop/2025-data-ethics)
 
-Instructor(s): Florian Kohrt, Laura Meier, Reema Gupta, Pat Callahan, Dr. Sarah von Grebmer, Dr. Malika Ihle
+[Read More](../events/events/2025-11-14-data-and-ai-ethics.llms.md)
 
-Host(s): LMU Open Science Center, LMU University Library (UB)
+[OSIM Meetup: Data Sharing in Psychiatric Genetics](../events/events/2025-11-14-psychiatric-genetics-data-sharing.llms.md) [OSIM Meetup: Data Sharing in Psychiatric Genetics](../events/events/2025-11-14-psychiatric-genetics-data-sharing.llms.md) OSIM Meetup
 
-[](../events/events/2025-09-15-lmu-open-science-summer-school.llms.md) [Training Material](https://osf.io/m7h4c/overview)
+[![OSIM Meetup](../events/images/osim_meetup.svg)](../events/events/2025-11-14-psychiatric-genetics-data-sharing.llms.md)
 
-7 Aug, 2025
+###### 14 Nov, 2025
 
-Data Under Threat — Join the Data Rescue Hackathon
+###### 14 Nov, 2025
 
-Organizer(s): Prof. Dr. Felix Schönbrodt
+######  Hybrid \|  English
 
-Presenter(s): Henrik Schönemann
+######  Hybrid \|  English
 
-Host(s): LMU Open Science Center
+Presenters: Dr. Urs Heilbronner
 
-[](../events/events/2025-08-07-data-rescue-hackathon.llms.md) [Training Material](https://safeguar.de/)
+Hosts: OSIM
 
-21 Jul, 2025
+[Training Material](https://osf.io/w2bmt/overview)
 
-Helmholtz Open Science Strategy
+[Read More](../events/events/2025-11-14-psychiatric-genetics-data-sharing.llms.md)
 
-Organizer(s): Dr. Malika Ihle
+[OSIM Meetup: Disadvantages of Data Sharing](../events/events/2024-11-08-data-sharing-disadvantages.llms.md) [OSIM Meetup: Disadvantages of Data Sharing](../events/events/2024-11-08-data-sharing-disadvantages.llms.md) OSIM Meetup
 
-Presenter(s): Dr. Mathijs Vleugel
+[![OSIM Meetup](../events/images/osim_meetup.svg)](../events/events/2024-11-08-data-sharing-disadvantages.llms.md)
 
-Host(s): LMU Open Science Center
+###### 08 Nov, 2025
 
-[](../events/events/2025-07-21-helmholtz-open-science-strategy.llms.md) [Training Material](https://osf.io/c826k)
+###### 08 Nov, 2025
 
-11 Jul, 2025
+######  Hybrid \|  English
 
-OSIM Meetup: Data Sharing in Systems Biology
+######  Hybrid \|  English
 
-Organizer(s): Julian Lange, Luisa Jiménez-Soto
+Organizers: Anne-Laure Boulesteix Christina Nießl
 
-Presenter(s): Christian Behrends
+Presenters: Jürgen Bernhagen
 
-Host(s): Open Science Initiative in Medicine
+Hosts: OSIM
 
-[](../events/events/2025-07-11-systems-biology-data-sharing.llms.md) [Training Material](https://osf.io/kyvut/files/db9zg)
+[Read More](../events/events/2024-11-08-data-sharing-disadvantages.llms.md)
 
-24 Jun, 2025
+[LMU Open Science Summer School 2025](../events/events/2025-09-15-lmu-open-science-summer-school.llms.md) [LMU Open Science Summer School 2025](../events/events/2025-09-15-lmu-open-science-summer-school.llms.md) Summer School
 
-Von "DEAL" Zu "Diamond"?
+[![Summer School](../events/images/summer_school.svg)](../events/events/2025-09-15-lmu-open-science-summer-school.llms.md)
 
-Organizer(s): Prof. Dr. Felix Schönbrodt
+###### 15 Sep, 2025
 
-Presenter(s): Veronika Reinertshofer, Prof. Markus Gebhardt, Prof. Björn Brembs, Prof. Dr. Felix Schönbrodt
+###### 15 Sep, 2025
 
-Host(s): LMU Open Science Center
+######  Philologicum Library \|  Hybrid \|  English
 
-[](../events/events/2025-06-24-von-deal-zu-diamond.llms.md) [Training Material](https://osf.io/r49ng/files)
+######  Hybrid \|  English
 
-13 Jun, 2025
+Organizers: Dr. Malika Ihle Dr. Sarah von Grebmer zu Wolfsthurn
 
-OSIM Meetup: Open Data and Scientific Integrity
+Presenters: Prof. Dr. Richard McElreath Vera Karlbauer Dr. Jonas Hagenberg Dr. Tim Errington Dr. Barbara Beege Franziska Schrade
 
-Organizer(s): Julian Lange, Luisa Jiménez-Soto
+Instructors: Florian Kohrt Laura Meier Reema Gupta Pat Callahan Dr. Sarah von Grebmer Dr. Malika Ihle
 
-Presenter(s): Darla P. Henderson
+Hosts: LMU Open Science Center LMU University Library (UB)
 
-Host(s): Open Science Initiative in Medicine
+[Training Material](https://osf.io/m7h4c/overview)
 
-[](../events/events/2025-06-13-open-data-scientific-integrity.llms.md) [Training Material](https://osf.io/kyvut/files/e8tfz)
+[Read More](../events/events/2025-09-15-lmu-open-science-summer-school.llms.md)
 
-9 May, 2025
+[Data Under Threat — Join the Data Rescue Hackathon](../events/events/2025-08-07-data-rescue-hackathon.llms.md) [Data Under Threat — Join the Data Rescue Hackathon](../events/events/2025-08-07-data-rescue-hackathon.llms.md) Hackathon
 
-OSIM Meetup: Data Management Plans
+[![Hackathon](../events/images/hacky_hour.svg)](../events/events/2025-08-07-data-rescue-hackathon.llms.md)
 
-Organizer(s): Julian Lange, Luisa Jiménez-Soto
+###### 07 Aug, 2025
 
-Presenter(s): Luisa Jiménez-Soto
+###### 07 Aug, 2025
 
-Host(s): Open Science Initiative in Medicine
+######  LMU Open Science Center (Giselastr.) \|  In-Person \|  English
 
-11 Apr, 2025
+######  In-Person \|  English
 
-OSIM Meetup: Publishing Research Data
+Organizers: Prof. Dr. Felix Schönbrodt
 
-Organizer(s): Julian Lange, Luisa Jiménez-Soto
+Presenters: Henrik Schönemann
 
-Presenter(s): Martin Spenger, Laura Meier
+Hosts: LMU Open Science Center
 
-Host(s): Open Science Initiative in Medicine
+[Training Material](https://safeguar.de/)
 
-[](../events/events/2025-04-11-publishing-research-data.llms.md) [Training Material](https://osf.io/kyvut/files/ar4dj)
+[Read More](../events/events/2025-08-07-data-rescue-hackathon.llms.md)
 
-24 Mar, 2025
+[Helmholtz Open Science Strategy](../events/events/2025-07-21-helmholtz-open-science-strategy.llms.md) [Helmholtz Open Science Strategy](../events/events/2025-07-21-helmholtz-open-science-strategy.llms.md) Lecture
 
-Software Carpentry - R Flavored - Philologicum
+[![Lecture](../events/images/lecture.svg)](../events/events/2025-07-21-helmholtz-open-science-strategy.llms.md)
 
-Organizer(s): Dr. Malika Ihle
+###### 21 Jul, 2025
 
-Instructor(s): Laura Meier, Maximilian Frank, Florian Kohrt
+###### 21 Jul, 2025
 
-Helper(s): Pat Callahan, Dr. Sarah von Grebmer zu Wolfsthurn
+######  Math Institute of LMU \|  Hybrid \|  English
 
-Host(s): LMU Open Science Center
+######  Hybrid \|  English
 
-[](../events/events/2025-03-24-software-carpentry-r-munich.llms.md) [Training Material](https://lmu-osc.github.io/2025-03-24-LMU-Humanities/)
+Organizers: Dr. Malika Ihle
 
-14 Mar, 2025
+Presenters: Dr. Mathijs Vleugel
 
-OSIM Meetup: Data Usage Agreements
+Hosts: LMU Open Science Center
 
-Organizer(s): Julian Lange, Luisa Jiménez-Soto
+[Training Material](https://osf.io/c826k)
 
-Host(s): Open Science Initiative in Medicine
+[Read More](../events/events/2025-07-21-helmholtz-open-science-strategy.llms.md)
+
+[OSIM Meetup: Data Sharing in Systems Biology](../events/events/2025-07-11-systems-biology-data-sharing.llms.md) [OSIM Meetup: Data Sharing in Systems Biology](../events/events/2025-07-11-systems-biology-data-sharing.llms.md) OSIM Meetup
+
+[![OSIM Meetup](../events/images/osim_meetup.svg)](../events/events/2025-07-11-systems-biology-data-sharing.llms.md)
+
+###### 11 Jul, 2025
+
+###### 11 Jul, 2025
+
+######  Hybrid \|  English
+
+######  Hybrid \|  English
+
+Organizers: Julian Lange Luisa Jiménez-Soto
+
+Presenters: Christian Behrends
+
+Hosts: OSIM
+
+[Training Material](https://osf.io/kyvut/files/db9zg)
+
+[Read More](../events/events/2025-07-11-systems-biology-data-sharing.llms.md)
+
+[Von "DEAL" Zu "Diamond"?](../events/events/2025-06-24-von-deal-zu-diamond.llms.md) [Von "DEAL" Zu "Diamond"?](../events/events/2025-06-24-von-deal-zu-diamond.llms.md) Symposium
+
+[![Symposium](../events/images/symposium.svg)](../events/events/2025-06-24-von-deal-zu-diamond.llms.md)
+
+###### 24 Jun, 2025
+
+###### 24 Jun, 2025
+
+######  Philologicum Library \|  Hybrid \|  German
+
+######  Hybrid \|  German
+
+Organizers: Prof. Dr. Felix Schönbrodt
+
+Presenters: Veronika Reinertshofer Prof. Markus Gebhardt Prof. Björn Brembs Prof. Dr. Felix Schönbrodt
+
+Hosts: LMU Open Science Center
+
+[Training Material](https://osf.io/r49ng/files)
+
+[Read More](../events/events/2025-06-24-von-deal-zu-diamond.llms.md)
+
+[OSIM Meetup: Open Data and Scientific Integrity](../events/events/2025-06-13-open-data-scientific-integrity.llms.md) [OSIM Meetup: Open Data and Scientific Integrity](../events/events/2025-06-13-open-data-scientific-integrity.llms.md) OSIM Meetup
+
+[![OSIM Meetup](../events/images/osim_meetup.svg)](../events/events/2025-06-13-open-data-scientific-integrity.llms.md)
+
+###### 13 Jun, 2025
+
+###### 13 Jun, 2025
+
+######  Hybrid \|  English
+
+######  Hybrid \|  English
+
+Organizers: Julian Lange Luisa Jiménez-Soto
+
+Presenters: Darla P. Henderson
+
+Hosts: OSIM
+
+[Training Material](https://osf.io/kyvut/files/e8tfz)
+
+[Read More](../events/events/2025-06-13-open-data-scientific-integrity.llms.md)
+
+[OSIM Meetup: Data Management Plans](../events/events/2025-05-09-data-management-plans.llms.md) [OSIM Meetup: Data Management Plans](../events/events/2025-05-09-data-management-plans.llms.md) OSIM Meetup
+
+[![OSIM Meetup](../events/images/osim_meetup.svg)](../events/events/2025-05-09-data-management-plans.llms.md)
+
+###### 09 May, 2025
+
+###### 09 May, 2025
+
+######  Hybrid \|  English
+
+######  Hybrid \|  English
+
+Organizers: Julian Lange Luisa Jiménez-Soto
+
+Presenters: Luisa Jiménez-Soto
+
+Hosts: OSIM
+
+[Read More](../events/events/2025-05-09-data-management-plans.llms.md)
+
+[OSIM Meetup: Publishing Research Data](../events/events/2025-04-11-publishing-research-data.llms.md) [OSIM Meetup: Publishing Research Data](../events/events/2025-04-11-publishing-research-data.llms.md) OSIM Meetup
+
+[![OSIM Meetup](../events/images/osim_meetup.svg)](../events/events/2025-04-11-publishing-research-data.llms.md)
+
+###### 11 Apr, 2025
+
+###### 11 Apr, 2025
+
+######  Hybrid \|  English
+
+######  Hybrid \|  English
+
+Organizers: Julian Lange Luisa Jiménez-Soto
+
+Presenters: Martin Spenger Laura Meier
+
+Hosts: OSIM
+
+[Training Material](https://osf.io/kyvut/files/ar4dj)
+
+[Read More](../events/events/2025-04-11-publishing-research-data.llms.md)
+
+[Software Carpentry - R Flavored - Philologicum](../events/events/2025-03-24-software-carpentry-r-munich.llms.md) [Software Carpentry - R Flavored - Philologicum](../events/events/2025-03-24-software-carpentry-r-munich.llms.md) Workshop
+
+[![Workshop](../events/images/workshop.svg)](../events/events/2025-03-24-software-carpentry-r-munich.llms.md)
+
+###### 24 Mar, 2025
+
+###### 24 Mar, 2025
+
+######  Philologicum Library \|  In-Person \|  English
+
+######  In-Person \|  English
+
+Organizers: Dr. Malika Ihle
+
+Instructors: Laura Meier Maximilian Frank Florian Kohrt
+
+Helpers: Pat Callahan Dr. Sarah von Grebmer zu Wolfsthurn
+
+Hosts: LMU Open Science Center
+
+[Training Material](https://lmu-osc.github.io/2025-03-24-LMU-Humanities/)
+
+[Read More](../events/events/2025-03-24-software-carpentry-r-munich.llms.md)
+
+[OSIM Meetup: Data Usage Agreements](../events/events/2025-03-14-data-usage-agreements.llms.md) [OSIM Meetup: Data Usage Agreements](../events/events/2025-03-14-data-usage-agreements.llms.md) OSIM Meetup
+
+[![OSIM Meetup](../events/images/osim_meetup.svg)](../events/events/2025-03-14-data-usage-agreements.llms.md)
+
+###### 14 Mar, 2025
+
+###### 14 Mar, 2025
+
+######  Hybrid \|  English
+
+######  Hybrid \|  English
+
+Organizers: Julian Lange Luisa Jiménez-Soto
+
+Hosts: OSIM
+
+[Read More](../events/events/2025-03-14-data-usage-agreements.llms.md)
 
 ### 2024
 
-27 Nov, 2024
+[Navigating the Landscape of Scientific Integrity: Insights into Open Science, Replicability, data sharing and questionable research practices in the field of medicine](../events/events/2024-11-27-sci-integrity-open-science-medicine.llms.md) [Navigating the Landscape of Scientific Integrity: Insights into Open Science, Replicability, data sharing and questionable research practices in the field of medicine](../events/events/2024-11-27-sci-integrity-open-science-medicine.llms.md) Symposium
 
-Navigating the Landscape of Scientific Integrity: Insights into Open Science, Replicability, data sharing and questionable research practices in the field of medicine
+[![Symposium](../events/images/symposium.svg)](../events/events/2024-11-27-sci-integrity-open-science-medicine.llms.md)
 
-Organizer(s): Prof. Dr. Anne-Laure Boulesteix, Dr. Sabine Hoffmann
+###### 27 Nov, 2024
 
-Presenter(s): Tim Morris, Laure Wynants, Balazs Aczel, Prof. Dr. Leonhard Held, Willi Sauerbrei, Sarah Friedrich, Prof. Dr. Ulrich Mansmann
+###### 27 Nov, 2024
 
-Host(s): LMU Center for Advanced Studies (CAS)
+######  CAS LMU \|  In-Person \|  English
 
-[](../events/events/2024-11-27-sci-integrity-open-science-medicine.llms.md) [Training Material](https://osf.io/zqu46/)
+######  In-Person \|  English
 
-25 Nov, 2024
+Organizers: Prof. Dr. Anne-Laure Boulesteix Dr. Sabine Hoffmann
 
-LMU Wikipedia Editathon
+Presenters: Tim Morris Laure Wynants Balazs Aczel Prof. Dr. Leonhard Held Willi Sauerbrei Sarah Friedrich Prof. Dr. Ulrich Mansmann
 
-Organizer(s): Max Kristen
+Hosts: LMU Center for Advanced Studies (CAS)
 
-Host(s): LMU Open Science Center, Wikipedia Munich (WikiMUC)
+[Training Material](https://osf.io/zqu46/)
 
-[](../events/events/2024-11-25-lmu-wikipedia-editathon.llms.md) [Training Material](https://de.wikipedia.org/wiki/Wikipedia:WikiMUC/2024-11-25_LMU-Editathon)
+[Read More](../events/events/2024-11-27-sci-integrity-open-science-medicine.llms.md)
 
-22 Nov, 2024
+[LMU Wikipedia Editathon](../events/events/2024-11-25-lmu-wikipedia-editathon.llms.md) [LMU Wikipedia Editathon](../events/events/2024-11-25-lmu-wikipedia-editathon.llms.md) Hacky Hour
 
-Epistemic Foundations and Limitations of Statistics and Science - Explaining the Replication Crisis?
+[![Hacky Hour](../events/images/hacky_hour.svg)](../events/events/2024-11-25-lmu-wikipedia-editathon.llms.md)
 
-Organizer(s): Patrick Schenk, Moritz Herrmann
+###### 25 Nov, 2024
 
-Presenter(s): Sabina Leonelli, Uwe Saint-Mont, Walter Radermacher, Rudolf Seising, Michael Schomaker
+###### 25 Nov, 2024
 
-Host(s): Open Science Initiative in Statistics (OSIS), Munich Center for Machine Learning (MCML)
+######  Wikipedia Munich \|  In-Person \|  English/German
 
-[](../events/events/2024-11-22-statistics-limitations-replication-crisis.llms.md) [Training Material](https://sites.google.com/view/epix-workshop/)
+######  In-Person \|  English/German
 
-8 Nov, 2024
+Organizers: Max Kristen
 
-OSIM Meetup: Disadvantages of Data Sharing
+Hosts: LMU Open Science Center WikiMUC
 
-Organizer(s): Anne-Laure Boulesteix, Christina Nießl
+[Training Material](https://de.wikipedia.org/wiki/Wikipedia:WikiMUC/2024-11-25_LMU-Editathon)
 
-Presenter(s): Jürgen Bernhagen
+[Read More](../events/events/2024-11-25-lmu-wikipedia-editathon.llms.md)
 
-Host(s): Open Science Initiative in Medicine
+[Epistemic Foundations and Limitations of Statistics and Science - Explaining the Replication Crisis?](../events/events/2024-11-22-statistics-limitations-replication-crisis.llms.md) [Epistemic Foundations and Limitations of Statistics and Science - Explaining the Replication Crisis?](../events/events/2024-11-22-statistics-limitations-replication-crisis.llms.md) Symposium
 
-28-31 Oct, 2024
+[![Symposium](../events/images/symposium.svg)](../events/events/2024-11-22-statistics-limitations-replication-crisis.llms.md)
 
-META-REP 2024 on Meta-Science and Replicability in the Social, Behavioral, and Cognitive Sciences
+###### 22 Nov, 2024
 
-Organizer(s): Dr. Johannes Ziegler
+###### 22 Nov, 2024
 
-Presenter(s): Fiona Fidler, Daniël Lakens
+######  Munich \|  In-Person \|  English
 
-Host(s): META-REP consortium, Deutsche Forschungsgemeinschaft (DFG), German Reproducibility Network (GRN)
+######  In-Person \|  English
 
-[](../events/events/2024-10-28-metarep-replicability-social-behavioral.llms.md) [Training Material](https://www.lmu.de/psy/de/forschung/meta-rep/)
+Organizers: Patrick Schenk Moritz Herrmann
 
-11 Oct, 2024
+Presenters: Sabina Leonelli Uwe Saint-Mont Walter Radermacher Rudolf Seising Michael Schomaker
 
-OSIM Meetup: Q&A Data Sharing
+Hosts: OSIS MCML
 
-Organizer(s): Anne-Laure Boulesteix, Christina Nießl
+[Training Material](https://sites.google.com/view/epix-workshop/)
 
-Host(s): Open Science Initiative in Medicine
+[Read More](../events/events/2024-11-22-statistics-limitations-replication-crisis.llms.md)
 
-10-11 Oct, 2024
+[META-REP 2024 on Meta-Science and Replicability in the Social, Behavioral, and Cognitive Sciences](../events/events/2024-10-28-metarep-replicability-social-behavioral.llms.md) [META-REP 2024 on Meta-Science and Replicability in the Social, Behavioral, and Cognitive Sciences](../events/events/2024-10-28-metarep-replicability-social-behavioral.llms.md) Conference
 
-Software Carpentry - R Flavored - Mensa Leopoldstraße
+[![Conference](../events/images/conference.svg)](../events/events/2024-10-28-metarep-replicability-social-behavioral.llms.md)
 
-Organizer(s): Dr. Malika Ihle
+###### 28 Oct, 2024
 
-Instructor(s): Alberto Villagran Asiares, Alp Kaan Aksu, Renata Topinkova, Po-chun Tseng
+###### 28-31 Oct, 2024
 
-Host(s): LMU Open Science Center, Munich Center for Machine Learning (MCML)
+######  Munich \|  In-Person \|  English
 
-[](../events/events/2024-10-10-software-carpentry-r-munich.llms.md) [Training Material](https://lmu-osc.github.io/2024-10-10-LMU-Leo/)
+######  In-Person \|  English
 
-9-10 Oct, 2024
+Organizers: Dr. Johannes Ziegler
 
-Software Carpentry - Python Flavored - Grosshadern
+Presenters: Fiona Fidler Daniël Lakens
 
-Organizer(s): Dr. Malika Ihle
+Hosts: META-REP consortium DFG GRN
 
-Instructor(s): Dr. Balthasar Schachtner, Maria Matveev, Dr. Sonja Grath
+[Training Material](https://www.lmu.de/psy/de/forschung/meta-rep/)
 
-Host(s): LMU Open Science Center, Munich Center for Machine Learning (MCML)
+[Read More](../events/events/2024-10-28-metarep-replicability-social-behavioral.llms.md)
 
-[](../events/events/2024-10-09-software-carpentry-python-munich.llms.md) [Training Material](https://lmu-osc.github.io/2024-10-09-LMU-Klinikum/)
+[OSIM Meetup: Q&A Data Sharing](../events/events/2024-10-11-qa-on-data-sharing.llms.md) [OSIM Meetup: Q&A Data Sharing](../events/events/2024-10-11-qa-on-data-sharing.llms.md) OSIM Meetup
 
-30 Sept, 2024
+[![OSIM Meetup](../events/images/osim_meetup.svg)](../events/events/2024-10-11-qa-on-data-sharing.llms.md)
 
-Reviewing Essential Computing Skills for Reproducible Workflow
+###### 11 Oct, 2024
 
-Organizer(s): Dr. Malika Ihle
+###### 11 Oct, 2024
 
-Host(s): LMU Open Science Center
+######  Hybrid \|  English
 
-9-13 Sept, 2024
+######  Hybrid \|  English
 
-LMU-MPG Open Science Summer School 2024
+Organizers: Anne-Laure Boulesteix Christina Nießl
 
-Organizer(s): Larissa Leiminger, Dr. Malika Ihle
+Hosts: OSIM
 
-Presenter(s): Prof. Dr. Sabina Leonelli, Dr. Malvika Sharan, Prof. Dr. Richard McElreath, Dr. Tim Errington, Ádám Dér, Jonas Hagenberg, Dr. Angela Holzer, Dr. Miriam Kip, Dr. Angela Holzer, Dr. Irene Haslinger
+[Read More](../events/events/2024-10-11-qa-on-data-sharing.llms.md)
 
-Instructor(s): Dr. Malika Ihle, Maximilian Mandl, Jean-Claude Passy, Laura Meier, Pat Callahan, Dr. Florian Pargent, Florian Kohrt, David Philip Morgan
+[Software Carpentry - R Flavored - Mensa Leopoldstraße](../events/events/2024-10-10-software-carpentry-r-munich.llms.md) [Software Carpentry - R Flavored - Mensa Leopoldstraße](../events/events/2024-10-10-software-carpentry-r-munich.llms.md) Workshop
 
-Helper(s): Barbara Kovačić, Julian Lange, Maike Kleemeyer, David Walter, Valkyrie Felso, Diego Theuerkauf, Kathy Su
+[![Workshop](../events/images/workshop.svg)](../events/events/2024-10-10-software-carpentry-r-munich.llms.md)
 
-Host(s): Max Planck Digital Library (MPDL), LMU Open Science Center
+###### 10 Oct, 2024
 
-[](../events/events/2024-09-09-lmu-open-science-summer-school.llms.md) [Training Material](https://osf.io/pxgsc/overview)
+###### 10-11 Oct, 2024
 
-1 Aug, 2024
+######  Mensa Giselastraße \|  In-Person \|  English
 
-Software Carpentry - Python Flavored - Martinsried
+######  In-Person \|  English
 
-Organizer(s): Dr. Malika Ihle
+Organizers: Dr. Malika Ihle
 
-Instructor(s): Dr. Luisa F. Jiménez-Soto, Felix Henninger, Reema Gupta
+Instructors: Alberto Villagran Asiares Alp Kaan Aksu Renata Topinkova Po-chun Tseng
 
-Host(s): LMU Open Science Center, Munich Center for Machine Learning (MCML), Graduate School of Systemic Neurosciences
+Hosts: LMU Open Science Center MCML
 
-[](../events/events/2024-08-01-software-carpentry-python-munich.llms.md) [Training Material](https://lmu-osc.github.io/2024-08-01-LMU/)
+[Training Material](https://lmu-osc.github.io/2024-10-10-LMU-Leo/)
 
-29 Jul, 2024
+[Read More](../events/events/2024-10-10-software-carpentry-r-munich.llms.md)
 
-Peer Code Review
+[Software Carpentry - Python Flavored - Grosshadern](../events/events/2024-10-09-software-carpentry-python-munich.llms.md) [Software Carpentry - Python Flavored - Grosshadern](../events/events/2024-10-09-software-carpentry-python-munich.llms.md) Workshop
 
-Host(s): LMU Open Science Center
+[![Workshop](../events/images/workshop.svg)](../events/events/2024-10-09-software-carpentry-python-munich.llms.md)
 
-12 Jul, 2024
+###### 09 Oct, 2024
 
-OSIM Meetup: Open Code
+###### 09-10 Oct, 2024
 
-Organizer(s): Anne-Laure Boulesteix, Christina Nießl
+######  Campus Martinsried-Großhadern \|  In-Person \|  English
 
-Host(s): Open Science Initiative in Medicine
+######  In-Person \|  English
 
-11 Jul, 2024
+Organizers: Dr. Malika Ihle
 
-Creating Interactive Graphics in R with Plotly
+Instructors: Dr. Balthasar Schachtner Maria Matveev Dr. Sonja Grath
 
-Organizer(s): Dr. Angelika Stefan, Lena Schiestel
+Hosts: LMU Open Science Center MCML
 
-Instructor(s): Maximilian Frank
+[Training Material](https://lmu-osc.github.io/2024-10-09-LMU-Klinikum/)
 
-Host(s): Open Science Initiative for Psychology (OSIP)
+[Read More](../events/events/2024-10-09-software-carpentry-python-munich.llms.md)
 
-3 Jul, 2024
+[Reviewing Essential Computing Skills for Reproducible Workflow](../events/events/2024-09-30-computing-skills-reproducible.llms.md) [Reviewing Essential Computing Skills for Reproducible Workflow](../events/events/2024-09-30-computing-skills-reproducible.llms.md) Hacky Hour
 
-Prosozialität in Der Wissenschaft
+[![Hacky Hour](../events/images/hacky_hour.svg)](../events/events/2024-09-30-computing-skills-reproducible.llms.md)
 
-Organizer(s): Laura Goetz, Viktoria Wiegelmann, Gracia Prüm, Finia Loeb, Alp Kaan Aksu, Julian Lange
+###### 30 Sep, 2024
 
-Host(s): ReproducibiliTea Team
+###### 30 Sep, 2024
 
-28 Jun, 2024
+######  Wikipedia Munich \|  In-Person \|  English
 
-Reproducible Manuscripts with Quarto
+######  In-Person \|  English
 
-Organizer(s): Dr. Angelika Stefan, Lena Schiestel
+Organizers: Dr. Malika Ihle
 
-Instructor(s): Dr. Florian Pargent, Florian Kohrt
+Hosts: LMU Open Science Center
 
-Host(s): Open Science Initiative for Psychology (OSIP)
+[Read More](../events/events/2024-09-30-computing-skills-reproducible.llms.md)
 
-[](../events/events/2024-06-28-reproducible-manuscripts-quarto.llms.md) [Training Material](https://lmu-osc.github.io/introduction-to-Quarto/)
+[LMU-MPG Open Science Summer School 2024](../events/events/2024-09-09-lmu-open-science-summer-school.llms.md) [LMU-MPG Open Science Summer School 2024](../events/events/2024-09-09-lmu-open-science-summer-school.llms.md) Summer School
 
-24 Jun, 2024
+[![Summer School](../events/images/summer_school.svg)](../events/events/2024-09-09-lmu-open-science-summer-school.llms.md)
 
-Peer Code Review
+###### 09 Sep, 2024
 
-Organizer(s): Dr. Malika Ihle
+###### 09-13 Sep, 2024
 
-Instructor(s): Vera Karlbauer
+######  Hybrid (Max Planck Digital Library in Laim) \|  Hybrid \|  English
 
-Host(s): LMU Open Science Center
+######  Hybrid \|  English
 
-19 Jun, 2024
+Organizers: Larissa Leiminger Dr. Malika Ihle
 
-Präregistrierung
+Presenters: Prof. Dr. Sabina Leonelli Dr. Malvika Sharan Prof. Dr. Richard McElreath Dr. Tim Errington Ádám Dér Jonas Hagenberg Dr. Angela Holzer Dr. Miriam Kip Dr. Angela Holzer Dr. Irene Haslinger
 
-Organizer(s): ReproducibiliTea Team
+Instructors: Dr. Malika Ihle Maximilian Mandl Jean-Claude Passy Laura Meier Pat Callahan Dr. Florian Pargent Florian Kohrt David Philip Morgan
 
-Host(s): ReproducibiliTea Team
+Helpers: Barbara Kovačić Julian Lange Maike Kleemeyer David Walter Valkyrie Felso Diego Theuerkauf Kathy Su
 
-18 Jun, 2024
+Hosts: MPDL LMU Open Science Center
 
-Making Tacit Knowledge Open - Part II: Hello World - Academia Abroad
+[Training Material](https://osf.io/pxgsc/overview)
 
-Organizer(s): Dr. Angelika Stefan, Lena Schiestel
+[Read More](../events/events/2024-09-09-lmu-open-science-summer-school.llms.md)
 
-Presenter(s): Prof. Dr. Christopher Donkin, Dr. Nathan Evans, Prof. Dr. Friederike Funk, Prof. Dr. David Goretzko, Dr. Malika Ihle, Prof. Dr. Clemens Stachl
+[Software Carpentry - Python Flavored - Martinsried](../events/events/2024-08-01-software-carpentry-python-munich.llms.md) [Software Carpentry - Python Flavored - Martinsried](../events/events/2024-08-01-software-carpentry-python-munich.llms.md) Workshop
 
-Host(s): Open Science Initiative for Psychology (OSIP)
+[![Workshop](../events/images/workshop.svg)](../events/events/2024-08-01-software-carpentry-python-munich.llms.md)
 
-14 Jun, 2024
+###### 01 Aug, 2024
 
-OSIM Meetup: Preprints
+###### 01 Aug, 2024
 
-Organizer(s): Anne-Laure Boulesteix, Christina Nießl
+######  LMU Biozentrum Martinsried \|  In-Person \|  English
 
-Presenter(s): Vanessa Gabriel
+######  In-Person \|  English
 
-Host(s): Open Science Initiative in Medicine
+Organizers: Dr. Malika Ihle
 
-[](../events/events/2024-06-14-preprints.llms.md) [Training Material](https://osf.io/kyvut/files/r8v39)
+Instructors: Dr. Luisa F. Jiménez-Soto Felix Henninger Reema Gupta
 
-5 Jun, 2024
+Hosts: LMU Open Science Center MCML Graduate School of Systemic Neurosciences
 
-Multiverse Analysis: On the Robustness of Functional Form and Data Pre-Processing Decisions
+[Training Material](https://lmu-osc.github.io/2024-08-01-LMU/)
 
-Organizer(s): Prof. Dr. Katrin Auspurg
+[Read More](../events/events/2024-08-01-software-carpentry-python-munich.llms.md)
 
-Presenter(s): Prof. Cristobal Young
+[Peer Code Review](../events/events/2024-07-29-peer-code-review.llms.md) [Peer Code Review](../events/events/2024-07-29-peer-code-review.llms.md) Hacky Hour
 
-Instructor(s): Prof. Cristobal Young (Ph.D. Cornell University)
+[![Hacky Hour](../events/images/hacky_hour.svg)](../events/events/2024-07-29-peer-code-review.llms.md)
 
-Host(s): LMU Open Science Center
+###### 29 Jul, 2024
 
-5 Jun, 2024
+###### 29 Jul, 2024
 
-Researcher Degrees of Freedom
+######  Wikipedia Munich \|  In-Person \|  English
 
-Organizer(s): Laura Goetz, Viktoria Wiegelmann, Gracia Prüm, Finia Loeb, Alp Kaan Aksu, Julian Lange
+######  In-Person \|  English
 
-Presenter(s): Finia Loeb, Gracia Prüm
+Hosts: LMU Open Science Center
 
-Host(s): ReproducibiliTea Team
+[Read More](../events/events/2024-07-29-peer-code-review.llms.md)
 
-[](../events/events/2024-06-05-researcher-degrees-freedom.llms.md) [Training Material](https://www.pnas.org/doi/10.1073/pnas.2203150119)
+[OSIM Meetup: Open Code](../events/events/2024-07-12-open-code.llms.md) [OSIM Meetup: Open Code](../events/events/2024-07-12-open-code.llms.md) OSIM Meetup
 
-27 May, 2024
+[![OSIM Meetup](../events/images/osim_meetup.svg)](../events/events/2024-07-12-open-code.llms.md)
 
-Code Documentation
+###### 12 Jul, 2024
 
-Organizer(s): Dr. Malika Ihle
+###### 12 Jul, 2024
 
-Host(s): LMU Open Science Center
+######  Hybrid \|  English
 
-27 May, 2024
+######  Hybrid \|  English
 
-Making Tacit Knowledge Open - Part I: Practices and Practicalities of Peer Review
+Organizers: Anne-Laure Boulesteix Christina Nießl
 
-Organizer(s): Dr. Angelika Stefan, Lena Schiestel
+Hosts: OSIM
 
-Presenter(s): Dr. Marlene Altenmüller, Dr. Peter Edelsbrunner, Dr. Nathan Evans, Dr. Florian Pargent, Prof. Dr. Tobias Staudigl, Dr. Charlotte Wittekind
+[Read More](../events/events/2024-07-12-open-code.llms.md)
 
-Host(s): Open Science Initiative for Psychology (OSIP)
+[Creating Interactive Graphics in R with Plotly](../events/events/2024-07-11-interactive-graphics-plotly-r.llms.md) [Creating Interactive Graphics in R with Plotly](../events/events/2024-07-11-interactive-graphics-plotly-r.llms.md) Workshop
 
-22 May, 2024
+[![Workshop](../events/images/workshop.svg)](../events/events/2024-07-11-interactive-graphics-plotly-r.llms.md)
 
-Open Access
+###### 11 Jul, 2024
 
-Organizer(s): Laura Goetz, Viktoria Wiegelmann, Gracia Prüm, Finia Loeb, Alp Kaan Aksu, Julian Lange
+###### 11 Jul, 2024
 
-Host(s): ReproducibiliTea Team
+######  LMU Open Science Center (Giselastr.) \|  English
 
-15 May, 2024
+######  English
 
-A Co-Creation Workshop to Democratize Open Science at LMU
+Organizers: Dr. Angelika Stefan Lena Schiestel
 
-Organizer(s): Dr. Malika Ihle
+Instructors: Maximilian Frank
 
-Instructor(s): Iris Lechner
+Hosts: Open Science Initiative for Psychology (OSIP)
 
-Host(s): LMU Open Science Center
+[Read More](../events/events/2024-07-11-interactive-graphics-plotly-r.llms.md)
 
-15 May, 2024
+[Prosozialität in Der Wissenschaft](../events/events/2024-07-03-prosozialitat-wissenschaft.llms.md) [Prosozialität in Der Wissenschaft](../events/events/2024-07-03-prosozialitat-wissenschaft.llms.md) ReproducibiliTea Journal Club
 
-RDM for Medical and Biomedical Sciences: Workshop on Data Management Plans (DMPs)
+[![ReproducibiliTea Journal Club](../events/images/reproducibilitea_journal_club.svg)](../events/events/2024-07-03-prosozialitat-wissenschaft.llms.md)
 
-Organizer(s): Laura Meier
+###### 03 Jul, 2024
 
-Instructor(s): ZB MED, LMU University Library (UB)
+###### 03 Jul, 2024
 
-Host(s): LMU University Library (UB)
+######  LMU Open Science Center (Giselastr.) \|  German
 
-13 May, 2024
+######  German
 
-Registered Reports: Hype and Reality
+Organizers: Laura Goetz Viktoria Wiegelmann Gracia Prüm Finia Loeb Alp Kaan Aksu Julian Lange
 
-Organizer(s): Dr. Malika Ihle
+Hosts: ReproducibiliTea Team
 
-Presenter(s): Prof. Dr. Alexander Wuttke
+[Read More](../events/events/2024-07-03-prosozialitat-wissenschaft.llms.md)
 
-Instructor(s): Prof. Dr. Alexander Wuttke (LMU Geschwister-Scholl-Institute of Political Science)
+[Reproducible Manuscripts with Quarto](../events/events/2024-06-28-reproducible-manuscripts-quarto.llms.md) [Reproducible Manuscripts with Quarto](../events/events/2024-06-28-reproducible-manuscripts-quarto.llms.md) Workshop
 
-Host(s): LMU Open Science Center
+[![Workshop](../events/images/workshop.svg)](../events/events/2024-06-28-reproducible-manuscripts-quarto.llms.md)
 
-10 May, 2024
+###### 28 Jun, 2024
 
-OSIM Meetup: Predatory Journals Workshop
+###### 28 Jun, 2024
 
-Organizer(s): Anne-Laure Boulesteix, Christina Nießl
+######  LMU Open Science Center (Giselastr.) \|  English
 
-Host(s): Open Science Initiative in Medicine
+######  English
 
-[](../events/events/2024-05-10-predatory-journals.llms.md) [Training Material](https://osf.io/kyvut/files/rv5p7)
+Organizers: Dr. Angelika Stefan Lena Schiestel
 
-10 May, 2024
+Instructors: Dr. Florian Pargent Florian Kohrt
 
-The Good, the Bad and the In Between - The many facets of quality in scholarly publishing
+Hosts: Open Science Initiative for Psychology (OSIP)
 
-Organizer(s): Christina Sauer
+[Training Material](https://lmu-osc.github.io/introduction-to-Quarto/)
 
-Presenter(s): Susanne Lugner, Clara Ginter, Veronika Reinertshofer
+[Read More](../events/events/2024-06-28-reproducible-manuscripts-quarto.llms.md)
 
-Host(s): Open Science Initiative in Medicine (OSIM)
+[Peer Code Review](../events/events/2024-06-24-peer-code-review.llms.md) [Peer Code Review](../events/events/2024-06-24-peer-code-review.llms.md) Hacky Hour
 
-8 May, 2024
+[![Hacky Hour](../events/images/hacky_hour.svg)](../events/events/2024-06-24-peer-code-review.llms.md)
 
-Open Science
+###### 24 Jun, 2024
 
-Organizer(s): Laura Goetz, Viktoria Wiegelmann, Gracia Prüm, Finia Loeb, Alp Kaan Aksu, Julian Lange
+###### 24 Jun, 2024
 
-Host(s): ReproducibiliTea Team
+######  Wikipedia Munich \|  In-Person \|  English
 
-7 May, 2024
+######  In-Person \|  English
 
-RDM for Medical and Biomedical Sciences: Workshop on Data Sharing and Publication
+Organizers: Dr. Malika Ihle
 
-Organizer(s): Laura Meier
+Instructors: Vera Karlbauer
 
-Instructor(s): ZB MED, LMU University Library (UB)
+Hosts: LMU Open Science Center
 
-Host(s): LMU University Library (UB)
+[Read More](../events/events/2024-06-24-peer-code-review.llms.md)
 
-30 Apr, 2024
+[Präregistrierung](../events/events/2024-06-19-praregistrierung.llms.md) [Präregistrierung](../events/events/2024-06-19-praregistrierung.llms.md) ReproducibiliTea Journal Club
 
-FAIR Data Documentation in the Social Sciences - a Workshop Providing Hands-on Guidance
+[![ReproducibiliTea Journal Club](../events/images/reproducibilitea_journal_club.svg)](../events/events/2024-06-19-praregistrierung.llms.md)
 
-Organizer(s): Dr. Malika Ihle
+###### 19 Jun, 2024
 
-Instructor(s): Dr. Katarina Blask
+###### 19 Jun, 2024
 
-Host(s): LMU Open Science Center
+######  LMU Open Science Center (Giselastr.) \|  German
 
-[](../events/events/2024-04-30-fair-data-documentation-social-sci.llms.md) [Training Material](https://osf.io/3fzyj)
+######  German
 
-24 Apr, 2024
+Organizers: ReproducibiliTea Team
 
-Preregistration in Psychology: Past, Present, and Prospects
+Hosts: ReproducibiliTea Team
 
-Organizer(s): Prof. Dr. Katrin Auspurg
+[Read More](../events/events/2024-06-19-praregistrierung.llms.md)
 
-Presenter(s): Dr. Olmo van den Akker
+[Making Tacit Knowledge Open - Part II: Hello World - Academia Abroad](../events/events/2024-06-18-academia-abroad-experiences.llms.md) [Making Tacit Knowledge Open - Part II: Hello World - Academia Abroad](../events/events/2024-06-18-academia-abroad-experiences.llms.md) Discussion
 
-Instructor(s): Dr. Olmo van den Akker (Tilburg University)
+[![Discussion](../events/images/discussion.svg)](../events/events/2024-06-18-academia-abroad-experiences.llms.md)
 
-Host(s): LMU Department of Sociology
+###### 18 Jun, 2024
 
-23 Apr, 2024
+###### 18 Jun, 2024
 
-Auftaktveranstaltung
+######  Online \|  English
 
-Organizer(s): Laura Goetz, Viktoria Wiegelmann, Gracia Prüm, Finia Loeb, Alp Kaan Aksu, Julian Lange
+######  Online \|  English
 
-Host(s): ReproducibiliTea Team
+Organizers: Dr. Angelika Stefan Lena Schiestel
 
-22 Apr, 2024
+Presenters: Prof. Dr. Christopher Donkin Dr. Nathan Evans Prof. Dr. Friederike Funk Prof. Dr. David Goretzko Dr. Malika Ihle Prof. Dr. Clemens Stachl
 
-Reproducible Computational Environment
+Hosts: Open Science Initiative for Psychology (OSIP)
 
-Organizer(s): Dr. Malika Ihle
+[Read More](../events/events/2024-06-18-academia-abroad-experiences.llms.md)
 
-Host(s): LMU Open Science Center
+[OSIM Meetup: Preprints](../events/events/2024-06-14-preprints.llms.md) [OSIM Meetup: Preprints](../events/events/2024-06-14-preprints.llms.md) OSIM Meetup
 
-25 Mar, 2024
+[![OSIM Meetup](../events/images/osim_meetup.svg)](../events/events/2024-06-14-preprints.llms.md)
 
-Reproducible Manuscripts
+###### 14 Jun, 2024
 
-Organizer(s): Dr. Malika Ihle
+###### 14 Jun, 2024
 
-Host(s): LMU Open Science Center
+######  Hybrid \|  English
 
-15 Mar, 2024
+######  Hybrid \|  English
 
-Making the Black Box Transparent: Multiverse Analysis and Visualizations in R
+Organizers: Anne-Laure Boulesteix Christina Nießl
 
-Organizer(s): Dr. Malika Ihle
+Presenters: Vanessa Gabriel
 
-Instructor(s): Prof. Dr. Andrea Hildebrandt, Dr. Cassie Short
+Hosts: OSIM
 
-Host(s): LMU Open Science Center
+[Training Material](https://osf.io/kyvut/files/r8v39)
 
-[](../events/events/2024-03-15-multiverse-analysis-visualization-r.llms.md) [Training Material](https://osf.io/7qr4x/)
+[Read More](../events/events/2024-06-14-preprints.llms.md)
 
-14 Mar, 2024
+[Multiverse Analysis: On the Robustness of Functional Form and Data Pre-Processing Decisions](../events/events/2024-06-05-functional-form-robustness-data.llms.md) [Multiverse Analysis: On the Robustness of Functional Form and Data Pre-Processing Decisions](../events/events/2024-06-05-functional-form-robustness-data.llms.md) Lecture
 
-Increasing Transparency Through Preregistration and/or Multiverse Analyses
+[![Lecture](../events/images/lecture.svg)](../events/events/2024-06-05-functional-form-robustness-data.llms.md)
 
-Organizer(s): Dr. Malika Ihle
+###### 05 Jun, 2024
 
-Presenter(s): Prof. Dr. Andrea Hildebrandt
+###### 05 Jun, 2024
 
-Host(s): LMU Open Science Center
+######  Hybrid (LMU Department of Sociology, IfS 309, Munich and via Zoom) \|  In-Person \|  English
 
-[](../events/events/2024-03-14-transparency-preregistration-multiverse.llms.md) [Training Material](https://osf.io/7qr4x/)
+######  In-Person \|  English
 
-8 Mar, 2024
+Organizers: Prof. Dr. Katrin Auspurg
 
-OSIM Meetup: Use of ChatGPT in Science
+Presenters: Prof. Cristobal Young
 
-Organizer(s): Anne-Laure Boulesteix, Christina Nießl
+Instructors: Prof. Cristobal Young (Ph.D. Cornell University)
 
-Presenter(s): Eva Grill, Antje Hentrich
+Hosts: LMU Open Science Center
 
-Host(s): Open Science Initiative in Medicine
+[Read More](../events/events/2024-06-05-functional-form-robustness-data.llms.md)
 
-6 Mar, 2024
+[Researcher Degrees of Freedom](../events/events/2024-06-05-researcher-degrees-freedom.llms.md) [Researcher Degrees of Freedom](../events/events/2024-06-05-researcher-degrees-freedom.llms.md) ReproducibiliTea Journal Club
 
-Reproducible Manuscripts with Quarto
+[![ReproducibiliTea Journal Club](../events/images/reproducibilitea_journal_club.svg)](../events/events/2024-06-05-researcher-degrees-freedom.llms.md)
 
-Organizer(s): Dr. Malika Ihle
+###### 05 Jun, 2024
 
-Instructor(s): Dr. Florian Pargent, Florian Kohrt
+###### 05 Jun, 2024
 
-Host(s): LMU Open Science Center
+######  LMU Open Science Center (Giselastr.) \|  Hybrid \|  German
 
-[](../events/events/2024-03-06-reproducible-manuscripts-quarto.llms.md) [Training Material](https://lmu-osc.github.io/introduction-to-Quarto/)
+######  Hybrid \|  German
 
-26 Feb, 2024
+Organizers: Laura Goetz Viktoria Wiegelmann Gracia Prüm Finia Loeb Alp Kaan Aksu Julian Lange
 
-Version Control
+Presenters: Finia Loeb Gracia Prüm
 
-Organizer(s): Dr. Malika Ihle
+Hosts: ReproducibiliTea Team
 
-Host(s): LMU Open Science Center
+[Training Material](https://www.pnas.org/doi/10.1073/pnas.2203150119)
 
-23 Feb, 2024
+[Read More](../events/events/2024-06-05-researcher-degrees-freedom.llms.md)
 
-From Stories to Models - (How) can We Formalize 'Narrative Theories'?
+[Code Documentation](../events/events/2024-05-27-code-documentation.llms.md) [Code Documentation](../events/events/2024-05-27-code-documentation.llms.md) Hacky Hour
 
-Organizer(s): Dr. Malika Ihle
+[![Hacky Hour](../events/images/hacky_hour.svg)](../events/events/2024-05-27-code-documentation.llms.md)
 
-Instructor(s): Prof. Dr. Daniel Leising
+###### 27 May, 2024
 
-Host(s): LMU Open Science Center
+###### 27 May, 2024
 
-[](../events/events/2024-02-23-narrative-theories-formalization.llms.md) [Training Material](https://osf.io/v593f)
+######  Wikipedia Munich \|  In-Person \|  English
 
-9 Feb, 2024
+######  In-Person \|  English
 
-OSIM Meetup: Publishing Scientific Research Protocols
+Organizers: Dr. Malika Ihle
 
-Organizer(s): Anne-Laure Boulesteix, Christina Nießl
+Hosts: LMU Open Science Center
 
-Presenter(s): Emma Ganley
+[Read More](../events/events/2024-05-27-code-documentation.llms.md)
 
-Host(s): Open Science Initiative in Medicine
+[Making Tacit Knowledge Open - Part I: Practices and Practicalities of Peer Review](../events/events/2024-05-27-peer-review-practices.llms.md) [Making Tacit Knowledge Open - Part I: Practices and Practicalities of Peer Review](../events/events/2024-05-27-peer-review-practices.llms.md) Discussion
 
-[](../events/events/2024-02-09-protocols-io.llms.md) [Training Material](https://osf.io/kyvut/files/p53wt)
+[![Discussion](../events/images/discussion.svg)](../events/events/2024-05-27-peer-review-practices.llms.md)
 
-7 Feb, 2024
+###### 27 May, 2024
 
-Dos Und Don'ts Bei Der Erstellung Eines Ethikantrags Für Eine Psychologische Studie
+###### 27 May, 2024
 
-Organizer(s): Dr. Angelika Stefan, Lena Schiestel
+######  Hybrid (Leopoldstraße 13, room 3322 and via Zoom) \|  Hybrid \|  English
 
-Instructor(s): Prof. Dr. Moritz Henne
+######  Hybrid \|  English
 
-Host(s): Open Science Initiative in Psychology (OSIP), LMU Open Science Center
+Organizers: Dr. Angelika Stefan Lena Schiestel
 
-[](../events/events/2024-02-07-ethikantrag-psychologische-studie.llms.md) [Training Material](https://osf.io/wyz9h/)
+Presenters: Dr. Marlene Altenmüller Dr. Peter Edelsbrunner Dr. Nathan Evans Dr. Florian Pargent Prof. Dr. Tobias Staudigl Dr. Charlotte Wittekind
 
-6 Feb, 2024
+Hosts: Open Science Initiative for Psychology (OSIP)
 
-Wie Robust Kann/Muss Wissenschaft Sein?
+[Read More](../events/events/2024-05-27-peer-review-practices.llms.md)
 
-Organizer(s): Dr. Johannes Ziegler
+[Open Access](../events/events/2024-05-22-open-access.llms.md) [Open Access](../events/events/2024-05-22-open-access.llms.md) ReproducibiliTea Journal Club
 
-Presenter(s): Deutsche Forschungsgemeinschaft (DFG), Süddeutsche Zeitung
+[![ReproducibiliTea Journal Club](../events/images/reproducibilitea_journal_club.svg)](../events/events/2024-05-22-open-access.llms.md)
 
-Host(s): junge Kolleg der Bayerischen Akademie der Wissenschaften, META-REP consortium, DFG
+###### 22 May, 2024
 
-29 Jan, 2024
+###### 22 May, 2024
 
-Improve the Readability of your Code
+######  LMU Open Science Center (Giselastr.) \|  German
 
-Organizer(s): Dr. Malika Ihle
+######  German
 
-Host(s): LMU Open Science Center
+Organizers: Laura Goetz Viktoria Wiegelmann Gracia Prüm Finia Loeb Alp Kaan Aksu Julian Lange
 
-15 Jan, 2024
+Hosts: ReproducibiliTea Team
 
-Version Control with Git and GitHub Within RStudio
+[Read More](../events/events/2024-05-22-open-access.llms.md)
 
-Organizer(s): Dr. Malika Ihle
+[A Co-Creation Workshop to Democratize Open Science at LMU](../events/events/2024-05-15-democratize-open-science-lmu.llms.md) [A Co-Creation Workshop to Democratize Open Science at LMU](../events/events/2024-05-15-democratize-open-science-lmu.llms.md) Workshop
 
-Instructor(s): Dr. Malika Ihle
+[![Workshop](../events/images/workshop.svg)](../events/events/2024-05-15-democratize-open-science-lmu.llms.md)
 
-Helper(s): Pat Callahan, Felix Henninger, Alp Aksu
+###### 15 May, 2024
 
-Host(s): LMU Open Science Center
+###### 15 May, 2024
 
-[](../events/events/2024-01-15-git-github-version-control.llms.md) [Training Material](https://github.com/lmu-osc/Introduction-RStudio-Git-GitHub)
+######  LMU Open Science Center (Giselastr.) \|  In-Person \|  English
 
-12 Jan, 2024
+######  In-Person \|  English
 
-The Replication Crisis' Positive Impact on Research
+Organizers: Dr. Malika Ihle
 
-Organizer(s): Laura Goetz, Viktoria Wiegelmann, Gracia Prüm, Finia Loeb, Alp Kaan Aksu, Julian Lange
+Instructors: Iris Lechner
 
-Presenter(s): Gracia Prüm
+Hosts: LMU Open Science Center
 
-Host(s): ReproducibiliTea Team
+[Read More](../events/events/2024-05-15-democratize-open-science-lmu.llms.md)
 
-[](../events/events/2024-01-12-replication-crisis-positive.llms.md) [Training Material](https://doi.org/10.1038/s44271-023-00003-2)
+[RDM for Medical and Biomedical Sciences: Workshop on Data Management Plans (DMPs)](../events/events/2024-05-15-data-management-plans-workshop.llms.md) [RDM for Medical and Biomedical Sciences: Workshop on Data Management Plans (DMPs)](../events/events/2024-05-15-data-management-plans-workshop.llms.md) Workshop
 
-8 Jan, 2024
+[![Workshop](../events/images/workshop.svg)](../events/events/2024-05-15-data-management-plans-workshop.llms.md)
 
-How to Review from an Open Science Perspective
+###### 15 May, 2024
 
-Organizer(s): Dr. Malika Ihle
+###### 15 May, 2024
 
-Presenter(s): Prof. Dr. Felix Schönbrodt
+######  Online \|  English
 
-Host(s): LMU Open Science Center
+######  Online \|  English
 
-[](../events/events/2024-01-08-review-open-science-perspective.llms.md) [Training Material](https://osf.io/82j4x/)
+Organizers: Laura Meier
+
+Instructors: ZB MED LMU University Library (UB)
+
+Hosts: LMU University Library (UB)
+
+[Read More](../events/events/2024-05-15-data-management-plans-workshop.llms.md)
+
+[Registered Reports: Hype and Reality](../events/events/2024-05-13-hype-and-reality.llms.md) [Registered Reports: Hype and Reality](../events/events/2024-05-13-hype-and-reality.llms.md) Lecture
+
+[![Lecture](../events/images/lecture.svg)](../events/events/2024-05-13-hype-and-reality.llms.md)
+
+###### 13 May, 2024
+
+###### 13 May, 2024
+
+######  Hybrid (Luisenstr 37, room C 024 and via Zoom) \|  Hybrid \|  English
+
+######  Hybrid \|  English
+
+Organizers: Dr. Malika Ihle
+
+Presenters: Prof. Dr. Alexander Wuttke
+
+Instructors: Prof. Dr. Alexander Wuttke (LMU Geschwister-Scholl-Institute of Political Science)
+
+Hosts: LMU Open Science Center
+
+[Read More](../events/events/2024-05-13-hype-and-reality.llms.md)
+
+[OSIM Meetup: Predatory Journals Workshop](../events/events/2024-05-10-predatory-journals.llms.md) [OSIM Meetup: Predatory Journals Workshop](../events/events/2024-05-10-predatory-journals.llms.md) OSIM Meetup
+
+[![OSIM Meetup](../events/images/osim_meetup.svg)](../events/events/2024-05-10-predatory-journals.llms.md)
+
+###### 10 May, 2024
+
+###### 10 May, 2024
+
+######  Hybrid \|  English
+
+######  Hybrid \|  English
+
+Organizers: Anne-Laure Boulesteix Christina Nießl
+
+Hosts: OSIM
+
+[Training Material](https://osf.io/kyvut/files/rv5p7)
+
+[Read More](../events/events/2024-05-10-predatory-journals.llms.md)
+
+[The Good, the Bad and the In Between - The many facets of quality in scholarly publishing](../events/events/2024-05-10-quality-scholarly-publishing-facets.llms.md) [The Good, the Bad and the In Between - The many facets of quality in scholarly publishing](../events/events/2024-05-10-quality-scholarly-publishing-facets.llms.md) Discussion
+
+[![Discussion](../events/images/discussion.svg)](../events/events/2024-05-10-quality-scholarly-publishing-facets.llms.md)
+
+###### 10 May, 2024
+
+###### 10 May, 2024
+
+######  Zoom (online) \|  Online \|  English
+
+######  Online \|  English
+
+Organizers: Christina Sauer
+
+Presenters: Susanne Lugner Clara Ginter Veronika Reinertshofer
+
+Hosts: OSIM
+
+[Read More](../events/events/2024-05-10-quality-scholarly-publishing-facets.llms.md)
+
+[Open Science](../events/events/2024-05-08-open-science.llms.md) [Open Science](../events/events/2024-05-08-open-science.llms.md) ReproducibiliTea Journal Club
+
+[![ReproducibiliTea Journal Club](../events/images/reproducibilitea_journal_club.svg)](../events/events/2024-05-08-open-science.llms.md)
+
+###### 08 May, 2024
+
+###### 08 May, 2024
+
+######  LMU Open Science Center (Giselastr.) \|  German
+
+######  German
+
+Organizers: Laura Goetz Viktoria Wiegelmann Gracia Prüm Finia Loeb Alp Kaan Aksu Julian Lange
+
+Hosts: ReproducibiliTea Team
+
+[Read More](../events/events/2024-05-08-open-science.llms.md)
+
+[RDM for Medical and Biomedical Sciences: Workshop on Data Sharing and Publication](../events/events/2024-05-07-data-sharing-publication-workshop.llms.md) [RDM for Medical and Biomedical Sciences: Workshop on Data Sharing and Publication](../events/events/2024-05-07-data-sharing-publication-workshop.llms.md) Workshop
+
+[![Workshop](../events/images/workshop.svg)](../events/events/2024-05-07-data-sharing-publication-workshop.llms.md)
+
+###### 07 May, 2024
+
+###### 07 May, 2024
+
+######  Online \|  English
+
+######  Online \|  English
+
+Organizers: Laura Meier
+
+Instructors: ZB MED LMU University Library (UB)
+
+Hosts: LMU University Library (UB)
+
+[Read More](../events/events/2024-05-07-data-sharing-publication-workshop.llms.md)
+
+[FAIR Data Documentation in the Social Sciences - a Workshop Providing Hands-on Guidance](../events/events/2024-04-30-fair-data-documentation-social-sci.llms.md) [FAIR Data Documentation in the Social Sciences - a Workshop Providing Hands-on Guidance](../events/events/2024-04-30-fair-data-documentation-social-sci.llms.md) Workshop
+
+[![Workshop](../events/images/workshop.svg)](../events/events/2024-04-30-fair-data-documentation-social-sci.llms.md)
+
+###### 30 Apr, 2024
+
+###### 30 Apr, 2024
+
+######  Online \|  English
+
+######  Online \|  English
+
+Organizers: Dr. Malika Ihle
+
+Instructors: Dr. Katarina Blask
+
+Hosts: LMU Open Science Center
+
+[Training Material](https://osf.io/3fzyj)
+
+[Read More](../events/events/2024-04-30-fair-data-documentation-social-sci.llms.md)
+
+[Preregistration in Psychology: Past, Present, and Prospects](../events/events/2024-04-24-past-present-prospects.llms.md) [Preregistration in Psychology: Past, Present, and Prospects](../events/events/2024-04-24-past-present-prospects.llms.md) Lecture
+
+[![Lecture](../events/images/lecture.svg)](../events/events/2024-04-24-past-present-prospects.llms.md)
+
+###### 24 Apr, 2024
+
+###### 24 Apr, 2024
+
+######  Hybrid (LMU Department of Sociology, IfS 309, Munich and via Zoom) \|  Hybrid \|  English
+
+######  Hybrid \|  English
+
+Organizers: Prof. Dr. Katrin Auspurg
+
+Presenters: Dr. Olmo van den Akker
+
+Instructors: Dr. Olmo van den Akker (Tilburg University)
+
+Hosts: LMU Department of Sociology
+
+[Read More](../events/events/2024-04-24-past-present-prospects.llms.md)
+
+[Auftaktveranstaltung](../events/events/2024-04-23-auftaktveranstaltung.llms.md) [Auftaktveranstaltung](../events/events/2024-04-23-auftaktveranstaltung.llms.md) ReproducibiliTea Journal Club
+
+[![ReproducibiliTea Journal Club](../events/images/reproducibilitea_journal_club.svg)](../events/events/2024-04-23-auftaktveranstaltung.llms.md)
+
+###### 23 Apr, 2024
+
+###### 23 Apr, 2024
+
+######  LMU Open Science Center (Giselastr.) \|  German
+
+######  German
+
+Organizers: Laura Goetz Viktoria Wiegelmann Gracia Prüm Finia Loeb Alp Kaan Aksu Julian Lange
+
+Hosts: ReproducibiliTea Team
+
+[Read More](../events/events/2024-04-23-auftaktveranstaltung.llms.md)
+
+[Reproducible Computational Environment](../events/events/2024-04-22-reproducible-computational-environment.llms.md) [Reproducible Computational Environment](../events/events/2024-04-22-reproducible-computational-environment.llms.md) Hacky Hour
+
+[![Hacky Hour](../events/images/hacky_hour.svg)](../events/events/2024-04-22-reproducible-computational-environment.llms.md)
+
+###### 22 Apr, 2024
+
+###### 22 Apr, 2024
+
+######  Wikipedia Munich \|  In-Person \|  English
+
+######  In-Person \|  English
+
+Organizers: Dr. Malika Ihle
+
+Hosts: LMU Open Science Center
+
+[Read More](../events/events/2024-04-22-reproducible-computational-environment.llms.md)
+
+[Reproducible Manuscripts](../events/events/2024-03-25-reproducible-manuscripts.llms.md) [Reproducible Manuscripts](../events/events/2024-03-25-reproducible-manuscripts.llms.md) Hacky Hour
+
+[![Hacky Hour](../events/images/hacky_hour.svg)](../events/events/2024-03-25-reproducible-manuscripts.llms.md)
+
+###### 25 Mar, 2024
+
+###### 25 Mar, 2024
+
+######  Wikipedia Munich \|  In-Person \|  English
+
+######  In-Person \|  English
+
+Organizers: Dr. Malika Ihle
+
+Hosts: LMU Open Science Center
+
+[Read More](../events/events/2024-03-25-reproducible-manuscripts.llms.md)
+
+[Making the Black Box Transparent: Multiverse Analysis and Visualizations in R](../events/events/2024-03-15-multiverse-analysis-visualization-r.llms.md) [Making the Black Box Transparent: Multiverse Analysis and Visualizations in R](../events/events/2024-03-15-multiverse-analysis-visualization-r.llms.md) Workshop
+
+[![Workshop](../events/images/workshop.svg)](../events/events/2024-03-15-multiverse-analysis-visualization-r.llms.md)
+
+###### 15 Mar, 2024
+
+###### 15 Mar, 2024
+
+######  LMU Open Science Center (Giselastr.) \|  In-Person \|  English
+
+######  In-Person \|  English
+
+Organizers: Dr. Malika Ihle
+
+Instructors: Prof. Dr. Andrea Hildebrandt Dr. Cassie Short
+
+Hosts: LMU Open Science Center
+
+[Training Material](https://osf.io/7qr4x/)
+
+[Read More](../events/events/2024-03-15-multiverse-analysis-visualization-r.llms.md)
+
+[Increasing Transparency Through Preregistration and/or Multiverse Analyses](../events/events/2024-03-14-transparency-preregistration-multiverse.llms.md) [Increasing Transparency Through Preregistration and/or Multiverse Analyses](../events/events/2024-03-14-transparency-preregistration-multiverse.llms.md) Lecture
+
+[![Lecture](../events/images/lecture.svg)](../events/events/2024-03-14-transparency-preregistration-multiverse.llms.md)
+
+###### 14 Mar, 2024
+
+###### 14 Mar, 2024
+
+######  LMU Open Science Center (Giselastr.) \|  Hybrid \|  English
+
+######  Hybrid \|  English
+
+Organizers: Dr. Malika Ihle
+
+Presenters: Prof. Dr. Andrea Hildebrandt
+
+Hosts: LMU Open Science Center
+
+[Training Material](https://osf.io/7qr4x/)
+
+[Read More](../events/events/2024-03-14-transparency-preregistration-multiverse.llms.md)
+
+[OSIM Meetup: Use of ChatGPT in Science](../events/events/2024-03-08-chatgpt-and-science.llms.md) [OSIM Meetup: Use of ChatGPT in Science](../events/events/2024-03-08-chatgpt-and-science.llms.md) OSIM Meetup
+
+[![OSIM Meetup](../events/images/osim_meetup.svg)](../events/events/2024-03-08-chatgpt-and-science.llms.md)
+
+###### 08 Mar, 2024
+
+###### 08 Mar, 2024
+
+######  Hybrid \|  English
+
+######  Hybrid \|  English
+
+Organizers: Anne-Laure Boulesteix Christina Nießl
+
+Presenters: Eva Grill Antje Hentrich
+
+Hosts: OSIM
+
+[Read More](../events/events/2024-03-08-chatgpt-and-science.llms.md)
+
+[Reproducible Manuscripts with Quarto](../events/events/2024-03-06-reproducible-manuscripts-quarto.llms.md) [Reproducible Manuscripts with Quarto](../events/events/2024-03-06-reproducible-manuscripts-quarto.llms.md) Workshop
+
+[![Workshop](../events/images/workshop.svg)](../events/events/2024-03-06-reproducible-manuscripts-quarto.llms.md)
+
+###### 06 Mar, 2024
+
+###### 06 Mar, 2024
+
+######  LMU Open Science Center (Giselastr.) \|  Hybrid \|  English
+
+######  Hybrid \|  English
+
+Organizers: Dr. Malika Ihle
+
+Instructors: Dr. Florian Pargent Florian Kohrt
+
+Hosts: LMU Open Science Center
+
+[Training Material](https://lmu-osc.github.io/introduction-to-Quarto/)
+
+[Read More](../events/events/2024-03-06-reproducible-manuscripts-quarto.llms.md)
+
+[Version Control](../events/events/2024-02-26-version-control.llms.md) [Version Control](../events/events/2024-02-26-version-control.llms.md) Hacky Hour
+
+[![Hacky Hour](../events/images/hacky_hour.svg)](../events/events/2024-02-26-version-control.llms.md)
+
+###### 26 Feb, 2024
+
+###### 26 Feb, 2024
+
+######  Wikipedia Munich \|  In-Person \|  German/English
+
+######  In-Person \|  German/English
+
+Organizers: Dr. Malika Ihle
+
+Hosts: LMU Open Science Center
+
+[Read More](../events/events/2024-02-26-version-control.llms.md)
+
+[From Stories to Models - (How) can We Formalize 'Narrative Theories'?](../events/events/2024-02-23-narrative-theories-formalization.llms.md) [From Stories to Models - (How) can We Formalize 'Narrative Theories'?](../events/events/2024-02-23-narrative-theories-formalization.llms.md) Workshop
+
+[![Workshop](../events/images/workshop.svg)](../events/events/2024-02-23-narrative-theories-formalization.llms.md)
+
+###### 23 Feb, 2024
+
+###### 23 Feb, 2024
+
+######  LMU Open Science Center (Giselastr.) \|  Hybrid \|  English
+
+######  Hybrid \|  English
+
+Organizers: Dr. Malika Ihle
+
+Instructors: Prof. Dr. Daniel Leising
+
+Hosts: LMU Open Science Center
+
+[Training Material](https://osf.io/v593f)
+
+[Read More](../events/events/2024-02-23-narrative-theories-formalization.llms.md)
+
+[OSIM Meetup: Publishing Scientific Research Protocols](../events/events/2024-02-09-protocols-io.llms.md) [OSIM Meetup: Publishing Scientific Research Protocols](../events/events/2024-02-09-protocols-io.llms.md) OSIM Meetup
+
+[![OSIM Meetup](../events/images/osim_meetup.svg)](../events/events/2024-02-09-protocols-io.llms.md)
+
+###### 09 Feb, 2024
+
+###### 09 Feb, 2024
+
+######  Hybrid \|  English
+
+######  Hybrid \|  English
+
+Organizers: Anne-Laure Boulesteix Christina Nießl
+
+Presenters: Emma Ganley
+
+Hosts: OSIM
+
+[Training Material](https://osf.io/kyvut/files/p53wt)
+
+[Read More](../events/events/2024-02-09-protocols-io.llms.md)
+
+[Dos Und Don'ts Bei Der Erstellung Eines Ethikantrags Für Eine Psychologische Studie](../events/events/2024-02-07-ethikantrag-psychologische-studie.llms.md) [Dos Und Don'ts Bei Der Erstellung Eines Ethikantrags Für Eine Psychologische Studie](../events/events/2024-02-07-ethikantrag-psychologische-studie.llms.md) Workshop
+
+[![Workshop](../events/images/workshop.svg)](../events/events/2024-02-07-ethikantrag-psychologische-studie.llms.md)
+
+###### 07 Feb, 2024
+
+###### 07 Feb, 2024
+
+######  LMU Open Science Center (Giselastr.) \|  Hybrid \|  German
+
+######  Hybrid \|  German
+
+Organizers: Dr. Angelika Stefan Lena Schiestel
+
+Instructors: Prof. Dr. Moritz Henne
+
+Hosts: OSIP LMU Open Science Center
+
+[Training Material](https://osf.io/wyz9h/)
+
+[Read More](../events/events/2024-02-07-ethikantrag-psychologische-studie.llms.md)
+
+[Wie Robust Kann/Muss Wissenschaft Sein?](../events/events/2024-02-06-robustheit-wissenschaft.llms.md) [Wie Robust Kann/Muss Wissenschaft Sein?](../events/events/2024-02-06-robustheit-wissenschaft.llms.md) Discussion
+
+[![Discussion](../events/images/discussion.svg)](../events/events/2024-02-06-robustheit-wissenschaft.llms.md)
+
+###### 06 Feb, 2024
+
+###### 06 Feb, 2024
+
+######  Bayerische Akademie der Wissenschaften, Alfons-Goppel-Str. 11 (Residenz), 80539 München \|  In-Person \|  German
+
+######  In-Person \|  German
+
+Organizers: Dr. Johannes Ziegler
+
+Presenters: Deutsche Forschungsgemeinschaft (DFG) Süddeutsche Zeitung
+
+Hosts: junge Kolleg der Bayerischen Akademie der Wissenschaften META-REP consortium DFG
+
+[Read More](../events/events/2024-02-06-robustheit-wissenschaft.llms.md)
+
+[Improve the Readability of your Code](../events/events/2024-01-29-code-readability-improvement.llms.md) [Improve the Readability of your Code](../events/events/2024-01-29-code-readability-improvement.llms.md) Hacky Hour
+
+[![Hacky Hour](../events/images/hacky_hour.svg)](../events/events/2024-01-29-code-readability-improvement.llms.md)
+
+###### 29 Jan, 2024
+
+###### 29 Jan, 2024
+
+######  Wikipedia Munich \|  In-Person \|  German/ English
+
+######  In-Person \|  German/ English
+
+Organizers: Dr. Malika Ihle
+
+Hosts: LMU Open Science Center
+
+[Read More](../events/events/2024-01-29-code-readability-improvement.llms.md)
+
+[Version Control with Git and GitHub Within RStudio](../events/events/2024-01-15-git-github-version-control.llms.md) [Version Control with Git and GitHub Within RStudio](../events/events/2024-01-15-git-github-version-control.llms.md) Workshop
+
+[![Workshop](../events/images/workshop.svg)](../events/events/2024-01-15-git-github-version-control.llms.md)
+
+###### 15 Jan, 2024
+
+###### 15 Jan, 2024
+
+######  LMU Open Science Center (Giselastr.) \|  Hybrid \|  English
+
+######  Hybrid \|  English
+
+Organizers: Dr. Malika Ihle
+
+Instructors: Dr. Malika Ihle
+
+Helpers: Pat Callahan Felix Henninger Alp Aksu
+
+Hosts: LMU Open Science Center
+
+[Training Material](https://github.com/lmu-osc/Introduction-RStudio-Git-GitHub)
+
+[Read More](../events/events/2024-01-15-git-github-version-control.llms.md)
+
+[The Replication Crisis' Positive Impact on Research](../events/events/2024-01-12-replication-crisis-positive.llms.md) [The Replication Crisis' Positive Impact on Research](../events/events/2024-01-12-replication-crisis-positive.llms.md) ReproducibiliTea Journal Club
+
+[![ReproducibiliTea Journal Club](../events/images/reproducibilitea_journal_club.svg)](../events/events/2024-01-12-replication-crisis-positive.llms.md)
+
+###### 12 Jan, 2024
+
+###### 12 Jan, 2024
+
+######  LMU Open Science Center (Giselastr.) \|  Hybrid \|  English
+
+######  Hybrid \|  English
+
+Organizers: Laura Goetz Viktoria Wiegelmann Gracia Prüm Finia Loeb Alp Kaan Aksu Julian Lange
+
+Presenters: Gracia Prüm
+
+Hosts: ReproducibiliTea Team
+
+[Training Material](https://doi.org/10.1038/s44271-023-00003-2)
+
+[Read More](../events/events/2024-01-12-replication-crisis-positive.llms.md)
+
+[How to Review from an Open Science Perspective](../events/events/2024-01-08-review-open-science-perspective.llms.md) [How to Review from an Open Science Perspective](../events/events/2024-01-08-review-open-science-perspective.llms.md) Discussion
+
+[![Discussion](../events/images/discussion.svg)](../events/events/2024-01-08-review-open-science-perspective.llms.md)
+
+###### 08 Jan, 2024
+
+###### 08 Jan, 2024
+
+######  LMU Open Science Center (Giselastr.) \|  English
+
+######  English
+
+Organizers: Dr. Malika Ihle
+
+Presenters: Prof. Dr. Felix Schönbrodt
+
+Hosts: LMU Open Science Center
+
+[Training Material](https://osf.io/82j4x/)
+
+[Read More](../events/events/2024-01-08-review-open-science-perspective.llms.md)
 
 ### 2023
 
-15 Dec, 2023
+[The Power of Preregistration](../events/events/2023-12-15-power-preregistration.llms.md) [The Power of Preregistration](../events/events/2023-12-15-power-preregistration.llms.md) ReproducibiliTea Journal Club
 
-The Power of Preregistration
+[![ReproducibiliTea Journal Club](../events/images/reproducibilitea_journal_club.svg)](../events/events/2023-12-15-power-preregistration.llms.md)
 
-Organizer(s): Laura Goetz, Viktoria Wiegelmann, Gracia Prüm, Finia Loeb, Alp Kaan Aksu, Julian Lange
+###### 15 Dec, 2023
 
-Presenter(s): Julian Lange
+###### 15 Dec, 2023
 
-Host(s): ReproducibiliTea Team
+######  LMU Open Science Center (Giselastr.) \|  Hybrid \|  English
 
-[](../events/events/2023-12-15-power-preregistration.llms.md) [Training Material](https://doi.org/10.1038/s41562-022-01497-2)
+######  Hybrid \|  English
 
-8 Dec, 2023
+Organizers: Laura Goetz Viktoria Wiegelmann Gracia Prüm Finia Loeb Alp Kaan Aksu Julian Lange
 
-OSIM Meetup: Metascience
+Presenters: Julian Lange
 
-Organizer(s): Prof. Dr. Anne-Laure Boulesteix, Dr. Christina Nießl
+Hosts: ReproducibiliTea Team
 
-Presenter(s): Prof. Dr. Felix Schönbrodt
+[Training Material](https://doi.org/10.1038/s41562-022-01497-2)
 
-Host(s): Open Science Initiative in Medicine
+[Read More](../events/events/2023-12-15-power-preregistration.llms.md)
 
-1 Dec, 2023
+[OSIM Meetup: Metascience](../events/events/2023-12-08-metascience.llms.md) [OSIM Meetup: Metascience](../events/events/2023-12-08-metascience.llms.md) OSIM Meetup
 
-Operationalization's Hidden Role in Scientific Reproducibility
+[![OSIM Meetup](../events/images/osim_meetup.svg)](../events/events/2023-12-08-metascience.llms.md)
 
-Organizer(s): Laura Goetz, Viktoria Wiegelmann, Gracia Prüm, Finia Loeb, Alp Kaan Aksu, Julian Lange
+###### 08 Dec, 2023
 
-Presenter(s): Finia Loeb, Gracia Prüm
+###### 08 Dec, 2023
 
-Host(s): ReproducibiliTea Team
+######  Hybrid \|  English
 
-[](../events/events/2023-12-01-operationalization-reproducibility.llms.md) [Training Material](https://doi.org/10.1098/rsos.191354)
+######  Hybrid \|  English
 
-17 Nov, 2023
+Organizers: Prof. Dr. Anne-Laure Boulesteix Dr. Christina Nießl
 
-Opening the Door to Knowledge Through Open Access
+Presenters: Prof. Dr. Felix Schönbrodt
 
-Organizer(s): Laura Goetz, Viktoria Wiegelmann, Gracia Prüm, Finia Loeb, Alp Kaan Aksu, Julian Lange
+Hosts: OSIM
 
-Presenter(s): Alp Kaan Aksu
+[Read More](../events/events/2023-12-08-metascience.llms.md)
 
-Host(s): ReproducibiliTea Team
+[Operationalization's Hidden Role in Scientific Reproducibility](../events/events/2023-12-01-operationalization-reproducibility.llms.md) [Operationalization's Hidden Role in Scientific Reproducibility](../events/events/2023-12-01-operationalization-reproducibility.llms.md) ReproducibiliTea Journal Club
 
-[](../events/events/2023-11-17-open-access-knowledge.llms.md) [Training Material](https://doi.org/10.12688/f1000research.8460.3)
+[![ReproducibiliTea Journal Club](../events/images/reproducibilitea_journal_club.svg)](../events/events/2023-12-01-operationalization-reproducibility.llms.md)
 
-10 Nov, 2023
+###### 01 Dec, 2023
 
-OSIM Meetup: Open Science in ML and Medicine
+###### 01 Dec, 2023
 
-Organizer(s): Anne-Laure Boulesteix, Christina Nießl
+######  Hybrid (Leopoldstraße 13, room 1302, Munich and via Zoom) \|  Hybrid \|  English
 
-Presenter(s): Michael Ingrisch, Guillaume Landry
+######  Hybrid \|  English
 
-Host(s): Open Science Initiative in Medicine
+Organizers: Laura Goetz Viktoria Wiegelmann Gracia Prüm Finia Loeb Alp Kaan Aksu Julian Lange
 
-3 Nov, 2023
+Presenters: Finia Loeb Gracia Prüm
 
-Dealing with Uncertainty in Data Analysis
+Hosts: ReproducibiliTea Team
 
-Organizer(s): Laura Goetz, Viktoria Wiegelmann, Gracia Prüm, Finia Loeb, Alp Kaan Aksu, Julian Lange
+[Training Material](https://doi.org/10.1098/rsos.191354)
 
-Presenter(s): Viktoria Wiegelmann
+[Read More](../events/events/2023-12-01-operationalization-reproducibility.llms.md)
 
-Host(s): ReproducibiliTea Team
+[Opening the Door to Knowledge Through Open Access](../events/events/2023-11-17-open-access-knowledge.llms.md) [Opening the Door to Knowledge Through Open Access](../events/events/2023-11-17-open-access-knowledge.llms.md) ReproducibiliTea Journal Club
 
-[](../events/events/2023-11-03-uncertainty-data-analysis.llms.md) [Training Material](https://doi.org/10.1177/09637214231168565)
+[![ReproducibiliTea Journal Club](../events/images/reproducibilitea_journal_club.svg)](../events/events/2023-11-17-open-access-knowledge.llms.md)
 
-27 Oct, 2023
+###### 17 Nov, 2023
 
-Welcome to the Open Science Universe
+###### 17 Nov, 2023
 
-Organizer(s): Laura Goetz, Viktoria Wiegelmann, Gracia Prüm, Finia Loeb, Alp Kaan Aksu, Julian Lange
+######  LMU Open Science Center (Giselastr.) \|  Hybrid \|  English
 
-Presenter(s): Laura Goetz, Gracia Prüm
+######  Hybrid \|  English
 
-Host(s): ReproducibiliTea Team
+Organizers: Laura Goetz Viktoria Wiegelmann Gracia Prüm Finia Loeb Alp Kaan Aksu Julian Lange
 
-[](../events/events/2023-10-27-welcome-open-science-universe.llms.md) [Training Material](https://doi.org/10.1038/s41562-016-0021)
+Presenters: Alp Kaan Aksu
 
-13 Oct, 2023
+Hosts: ReproducibiliTea Team
 
-OSIM Meetup: RDM, OA, and Open Science Services
+[Training Material](https://doi.org/10.12688/f1000research.8460.3)
 
-Organizer(s): Prof. Dr. Anne-Laure Boulesteix, Dr. Christina Nießl
+[Read More](../events/events/2023-11-17-open-access-knowledge.llms.md)
 
-Presenter(s): Dr. Martin Spenger, Dr. Veit Schwab, Prof. Dr. Felix Schönbrodt
+[OSIM Meetup: Open Science in ML and Medicine](../events/events/2023-11-10-machine-learning-medicine-open-sci.llms.md) [OSIM Meetup: Open Science in ML and Medicine](../events/events/2023-11-10-machine-learning-medicine-open-sci.llms.md) OSIM Meetup
 
-Host(s): Open Science Initiative in Medicine
+[![OSIM Meetup](../events/images/osim_meetup.svg)](../events/events/2023-11-10-machine-learning-medicine-open-sci.llms.md)
 
-5-6 Oct, 2023
+###### 10 Nov, 2023
 
-Open Replicable Research by the International Biometric Society
+###### 10 Nov, 2023
 
-Organizer(s): Sabine Hoffmann, Michael Lauseker
+######  Hybrid \|  English
 
-Presenter(s): Prof. Dr. Ulrich Dirnagl, Prof. Dr. Ioana Cristea
+######  Hybrid \|  English
 
-Host(s): """Ethics and Responsibility"" working group of the IBS-DR", LMU Open Science Center, LMU Institute for Medical Information Processing, Biometry, and Epidemiology (IBE), LMU Institute for Statistics
+Organizers: Anne-Laure Boulesteix Christina Nießl
 
-11-15 Sept, 2023
+Presenters: Michael Ingrisch Guillaume Landry
 
-5-Day Open Research Summer School 2023
+Hosts: OSIM
 
-Organizer(s): Dr. Malika Ihle
+[Read More](../events/events/2023-11-10-machine-learning-medicine-open-sci.llms.md)
 
-Presenter(s): Prof. Dr. Uli Dirnagl, Prof. Dr. Stephan Hartmann, Dr. Tony Ross-Hellauer, Prof. Dr. Richard McElreath, P.D. Dr. Joachim Wuttke, Dr. Tim Errington, Valérie Labonté, Dr. Raphael Ritz, Prof. Dr. Denis Kenji Kipker
+[Dealing with Uncertainty in Data Analysis](../events/events/2023-11-03-uncertainty-data-analysis.llms.md) [Dealing with Uncertainty in Data Analysis](../events/events/2023-11-03-uncertainty-data-analysis.llms.md) ReproducibiliTea Journal Club
 
-Instructor(s): Nicklas Hafiz, Dr. Aaron Peikert, Laura Meier, Dr. Florian Pargent, Dr. Verena Heise, Sofija Vojvodic, Florian Kohrt, Dr. Malika Ihle
+[![ReproducibiliTea Journal Club](../events/images/reproducibilitea_journal_club.svg)](../events/events/2023-11-03-uncertainty-data-analysis.llms.md)
 
-Helper(s): Felix Henninger, Pat Callahan, Moritz Ketzer, Maximilian Ernst, Dr. Karoline Sachse
+###### 03 Nov, 2023
 
-Host(s): LMU Open Science Center, LMU University Library (UB)
+###### 03 Nov, 2023
 
-[](../events/events/2023-09-11-open-research-summer-school.llms.md) [Training Material](https://osf.io/nymr5/)
+######  LMU Open Science Center (Giselastr.) \|  Hybrid \|  English
 
-11 Sept, 2023
+######  Hybrid \|  English
 
-Julia - A Fresh Approach to Scientific Computing
+Organizers: Laura Goetz Viktoria Wiegelmann Gracia Prüm Finia Loeb Alp Kaan Aksu Julian Lange
 
-Organizer(s): Dr. Malika Ihle
+Presenters: Viktoria Wiegelmann
 
-Instructor(s): Dr. Aaron Peikert, Maximilian Ernst, Moritz Ketzer
+Hosts: ReproducibiliTea Team
 
-Host(s): LMU Open Science Center
+[Training Material](https://doi.org/10.1177/09637214231168565)
 
-19 Jul, 2023
+[Read More](../events/events/2023-11-03-uncertainty-data-analysis.llms.md)
 
-Reforming Research Assessment Locally
+[Welcome to the Open Science Universe](../events/events/2023-10-27-welcome-open-science-universe.llms.md) [Welcome to the Open Science Universe](../events/events/2023-10-27-welcome-open-science-universe.llms.md) ReproducibiliTea Journal Club
 
-Organizer(s): Dr. Malika Ihle
+[![ReproducibiliTea Journal Club](../events/images/reproducibilitea_journal_club.svg)](../events/events/2023-10-27-welcome-open-science-universe.llms.md)
 
-Presenter(s): Prof. Dr. Felix Schönbrodt, Prof. Dr. Ulrich Mansmann, PD Dr. Hendrik Ballhausen
+###### 27 Oct, 2023
 
-Host(s): LMU Open Science Center
+###### 27 Oct, 2023
 
-14 Jul, 2023
+######  LMU Open Science Center (Giselastr.) \|  Hybrid \|  English
 
-OSIM Meetup: Statistical Routines and Replication Crisis
+######  Hybrid \|  English
 
-Organizer(s): Anne-Laure Boulesteix, Christina Nießl
+Organizers: Laura Goetz Viktoria Wiegelmann Gracia Prüm Finia Loeb Alp Kaan Aksu Julian Lange
 
-Presenter(s): Tom Sterkenburg
+Presenters: Laura Goetz Gracia Prüm
 
-Host(s): Open Science Initiative in Medicine
+Hosts: ReproducibiliTea Team
 
-5 Jul, 2023
+[Training Material](https://doi.org/10.1038/s41562-016-0021)
 
-Sensitivity Analyses: Why and How?
+[Read More](../events/events/2023-10-27-welcome-open-science-universe.llms.md)
 
-Organizer(s): Dr. Malika Ihle
+[OSIM Meetup: RDM, OA, and Open Science Services](../events/events/2023-10-13-lmu-services.llms.md) [OSIM Meetup: RDM, OA, and Open Science Services](../events/events/2023-10-13-lmu-services.llms.md) OSIM Meetup
 
-Instructor(s): Dr. Angelika Stefan
+[![OSIM Meetup](../events/images/osim_meetup.svg)](../events/events/2023-10-13-lmu-services.llms.md)
 
-Host(s): Open Science Initiative in Psychology (OSIP)
+###### 13 Oct, 2023
 
-4 Jul, 2023
+###### 13 Oct, 2023
 
-Open Humanities: Anwendungen Und Grenzen Offener Wissenschaftspraktiken in Den Geisteswissenschaften
+######  Hybrid \|  English
 
-Organizer(s): Dr. Martin Spenger, Dr. Malika Ihle
+######  Hybrid \|  English
 
-Presenter(s): Dr. Eckhart Arnold, Prof. Dr. Thomas Krefeld, Dr. Christiane Sibille, Prof. Dr. Stephan Hoppe, Prof. Dr. Ralf Ludwig, Dr. Stephan Lücke
+Organizers: Prof. Dr. Anne-Laure Boulesteix Dr. Christina Nießl
 
-Host(s): LMU Open Science Center, LMU University Library (UB), IT-Gruppe Geisteswissenschaften (ITG)
+Presenters: Dr. Martin Spenger Dr. Veit Schwab Prof. Dr. Felix Schönbrodt
 
-[](../events/events/2023-07-04-offene-wissenschaft-geisteswissenschaften.llms.md) [Training Material](https://osf.io/8dmz2/)
+Hosts: OSIM
 
-23 Jun, 2023
+[Read More](../events/events/2023-10-13-lmu-services.llms.md)
 
-Theoretical Frameworks as Lifesavers for Psychology
+[Open Replicable Research by the International Biometric Society](../events/events/2023-10-05-biometric-society-open-research.llms.md) [Open Replicable Research by the International Biometric Society](../events/events/2023-10-05-biometric-society-open-research.llms.md) Conference
 
-Organizer(s): Laura Goetz, Stephan Nuding, Leonhard Schramm, Franka Etzel, Viktoria Wiegelmann, Gracia Prüm, Alp Kaan Aksu, Finia Loeb
+[![Conference](../events/images/conference.svg)](../events/events/2023-10-05-biometric-society-open-research.llms.md)
 
-Presenter(s): ReproducibiliTea Team
+###### 05 Oct, 2023
 
-Host(s): ReproducibiliTea Team
+###### 05-06 Oct, 2023
 
-[](../events/events/2023-06-23-theoretical-frameworks-psychology.llms.md) [Training Material](https://www.nature.com/articles/s41562-018-0522-1)
+######  Großhadern, Butenandtstr. 5, Room B0.022 \|  In-Person \|  English
 
-9 Jun, 2023
+######  In-Person \|  English
 
-Current Debates About Registered Reports
+Organizers: Sabine Hoffmann Michael Lauseker
 
-Organizer(s): Laura Goetz, Stephan Nuding, Leonhard Schramm, Franka Etzel, Viktoria Wiegelmann, Gracia Prüm, Alp Kaan Aksu, Finia Loeb
+Presenters: Prof. Dr. Ulrich Dirnagl Prof. Dr. Ioana Cristea
 
-Presenter(s): Dr. Gilad Feldman
+Hosts: """Ethics and Responsibility"" working group of the IBS-DR" LMU Open Science Center LMU Institute for Medical Information Processing, Biometry, and Epidemiology (IBE) LMU Institute for Statistics
 
-Host(s): ReproducibiliTea Team
+[Read More](../events/events/2023-10-05-biometric-society-open-research.llms.md)
 
-[](../events/events/2023-06-09-registered-reports-debate.llms.md) [Training Material](https://www.nature.com/articles/s41562-021-01193-7)
+[5-Day Open Research Summer School 2023](../events/events/2023-09-11-open-research-summer-school.llms.md) [5-Day Open Research Summer School 2023](../events/events/2023-09-11-open-research-summer-school.llms.md) Summer School
 
-7 Jun, 2023
+[![Summer School](../events/images/summer_school.svg)](../events/events/2023-09-11-open-research-summer-school.llms.md)
 
-Registered Reports and Peer Community in Registered Report are the Future of Science: Sharing Our Experience from over 20 Submissions with a hands-on demonstration of a Replication Registered Report
+###### 11 Sep, 2023
 
-Organizer(s): Dr. Malika Ihle
+###### 11-15 Sep, 2023
 
-Instructor(s): Dr. Gilad Feldman
+######  Philologicum Library \|  Hybrid \|  English
 
-Host(s): LMU Open Science Center
+######  Hybrid \|  English
 
-[](../events/events/2023-06-07-registered-reports-submission-experience.llms.md) [Training Material](https://osf.io/6vhsw/)
+Organizers: Dr. Malika Ihle
 
-2 Jun, 2023
+Presenters: Prof. Dr. Uli Dirnagl Prof. Dr. Stephan Hartmann Dr. Tony Ross-Hellauer Prof. Dr. Richard McElreath P.D. Dr. Joachim Wuttke Dr. Tim Errington Valérie Labonté Dr. Raphael Ritz Prof. Dr. Denis Kenji Kipker
 
-The Generalizability Crisis – when Verbal and Statistical Expressions Don't Match
+Instructors: Nicklas Hafiz Dr. Aaron Peikert Laura Meier Dr. Florian Pargent Dr. Verena Heise Sofija Vojvodic Florian Kohrt Dr. Malika Ihle
 
-Organizer(s): Laura Goetz, Stephan Nuding, Leonhard Schramm, Franka Etzel, Viktoria Wiegelmann, Gracia Prüm, Alp Kaan Aksu, Finia Loeb
+Helpers: Felix Henninger Pat Callahan Moritz Ketzer Maximilian Ernst Dr. Karoline Sachse
 
-Host(s): ReproducibiliTea Team
+Hosts: LMU Open Science Center LMU University Library (UB)
 
-[](../events/events/2023-06-02-generalizability-crisis-statistics.llms.md) [Training Material](https://doi.org/10.1017/S0140525X20001685)
+[Training Material](https://osf.io/nymr5/)
 
-19 May, 2023
+[Read More](../events/events/2023-09-11-open-research-summer-school.llms.md)
 
-The Importance of Good Working Conditions for High Quality Research
+[Julia - A Fresh Approach to Scientific Computing](../events/events/2023-09-11-julia-scientific-computing.llms.md) [Julia - A Fresh Approach to Scientific Computing](../events/events/2023-09-11-julia-scientific-computing.llms.md) Workshop
 
-Organizer(s): Laura Goetz, Stephan Nuding, Leonhard Schramm, Franka Etzel, Viktoria Wiegelmann, Gracia Prüm
+[![Workshop](../events/images/workshop.svg)](../events/events/2023-09-11-julia-scientific-computing.llms.md)
 
-Host(s): ReproducibiliTea Team
+###### 11 Sep, 2023
 
-[](../events/events/2023-05-19-working-conditions-research-quality.llms.md) [Training Material](https://doi.org/10.1038/s41562-022-01508-2)
+###### 11 Sep, 2023
 
-11 May, 2023
+######  Philologicum Library \|  Hybrid \|  English
 
-Methodological Hypocrisy in Psychology
+######  Hybrid \|  English
 
-Organizer(s): Dr. Malika Ihle
+Organizers: Dr. Malika Ihle
 
-Presenter(s): Prof. Dr. J.P. de Ruiter
+Instructors: Dr. Aaron Peikert Maximilian Ernst Moritz Ketzer
 
-Host(s): ReproducibiliTea Team, LMU Open Science Center
+Hosts: LMU Open Science Center
 
-5 May, 2023
+[Read More](../events/events/2023-09-11-julia-scientific-computing.llms.md)
 
-Welcome to the Open Science Universe
+[Reforming Research Assessment Locally](../events/events/2023-07-19-reform-research-assessment.llms.md) [Reforming Research Assessment Locally](../events/events/2023-07-19-reform-research-assessment.llms.md) Discussion
 
-Organizer(s): Laura Goetz, Stephan Nuding, Leonhard Schramm, Franka Etzel, Viktoria Wiegelmann, Gracia Prüm
+[![Discussion](../events/images/discussion.svg)](../events/events/2023-07-19-reform-research-assessment.llms.md)
 
-Presenter(s): Gracia Prüm, Laura Goetz
+###### 19 Jul, 2023
 
-Host(s): ReproducibiliTea Team
+###### 19 Jul, 2023
 
-31 Mar, 2023
+######  Hybrid (Room A 015 in Geschwister-Scholl-Pl. 1 and via Zoom) \|  Hybrid \|  English
 
-OSIM Meetup: Reporting of Clinical Studies
+######  Hybrid \|  English
 
-Organizer(s): Anne-Laure Boulesteix, Christina Nießl
+Organizers: Dr. Malika Ihle
 
-Presenter(s): Antje Hentrich, Annette Hartmann
+Presenters: Prof. Dr. Felix Schönbrodt Prof. Dr. Ulrich Mansmann PD Dr. Hendrik Ballhausen
 
-Host(s): Open Science Initiative in Medicine
+Hosts: LMU Open Science Center
 
-13 Mar, 2023
+[Read More](../events/events/2023-07-19-reform-research-assessment.llms.md)
 
-Reforming Research Assessment: How to Implement Responsible Procedures and Move Beyond Impact Factors and h-Index?
+[OSIM Meetup: Statistical Routines and Replication Crisis](../events/events/2023-07-14-statistical-routines.llms.md) [OSIM Meetup: Statistical Routines and Replication Crisis](../events/events/2023-07-14-statistical-routines.llms.md) OSIM Meetup
 
-Organizer(s): Dr. Malika Ihle, Dr. Heidi Seibold
+[![OSIM Meetup](../events/images/osim_meetup.svg)](../events/events/2023-07-14-statistical-routines.llms.md)
 
-Presenter(s): Prof. Dr. Toma Susi, Dr.Tobias Grimm, Dr.Jess Rohmann, Prof. Dr. Kristin Mitte, Prof. Dr. Felix Schönbrodt
+###### 14 Jul, 2023
 
-Host(s): LMU Open Science Center
+###### 14 Jul, 2023
 
-[](../events/events/2023-03-13-responsible-procedures-research-assess.llms.md) [Training Material](https://osf.io/eqkjz/)
+######  Hybrid \|  English
 
-10 Mar, 2023
+######  Hybrid \|  English
 
-OSIM Meetup: Reporting of Clinical Studies - CCCMunich
+Organizers: Anne-Laure Boulesteix Christina Nießl
 
-Organizer(s): Anne-Laure Boulesteix, Christina Nießl
+Presenters: Tom Sterkenburg
 
-Presenter(s): Martin Dreyling
+Hosts: OSIM
 
-Host(s): Open Science Initiative in Medicine
+[Read More](../events/events/2023-07-14-statistical-routines.llms.md)
 
-7 Mar, 2023
+[Sensitivity Analyses: Why and How?](../events/events/2023-07-05-why-and-how.llms.md) [Sensitivity Analyses: Why and How?](../events/events/2023-07-05-why-and-how.llms.md) Workshop
 
-Version Control with Git/GitHub Within RStudio
+[![Workshop](../events/images/workshop.svg)](../events/events/2023-07-05-why-and-how.llms.md)
 
-Organizer(s): Dr. Malika Ihle
+###### 05 Jul, 2023
 
-Instructor(s): Dr. Malika Ihle
+###### 05 Jul, 2023
 
-Helper(s): Dr. Luisa Jiménez-Soto, Pat Callahan
+######  Hybrid (Room 3322, Leopoldstr 13, Munich and on Zoom) \|  Hybrid \|  English
 
-Host(s): LMU Open Science Center
+######  Hybrid \|  English
 
-[](../events/events/2023-03-07-git-github-version-control.llms.md) [Training Material](https://github.com/MalikaIhle/Introduction-RStudio-Git-GitHub)
+Organizers: Dr. Malika Ihle
 
-27 Feb, 2023
+Instructors: Dr. Angelika Stefan
 
-Introduction to Credible Research
+Hosts: OSIP
 
-Organizer(s): Dr. Malika Ihle
+[Read More](../events/events/2023-07-05-why-and-how.llms.md)
 
-Presenter(s): Dr. Malika Ihle
+[Open Humanities: Anwendungen Und Grenzen Offener Wissenschaftspraktiken in Den Geisteswissenschaften](../events/events/2023-07-04-offene-wissenschaft-geisteswissenschaften.llms.md) [Open Humanities: Anwendungen Und Grenzen Offener Wissenschaftspraktiken in Den Geisteswissenschaften](../events/events/2023-07-04-offene-wissenschaft-geisteswissenschaften.llms.md) Symposium
 
-Host(s): LMU Open Science Center
+[![Symposium](../events/images/symposium.svg)](../events/events/2023-07-04-offene-wissenschaft-geisteswissenschaften.llms.md)
 
-[](../events/events/2023-02-27-credible-research-introduction.llms.md) [Training Material](https://osf.io/nd9ga)
+###### 04 Jul, 2023
 
-13-17 Feb, 2023
+###### 04 Jul, 2023
 
-Love Data Week: a Series of Events on Research Data Management
+######  Hybrid (Geschwister-Scholl-Platz 1, room F002 (Zentralbibliothek, EG), Munich and via Zoom) \|  Hybrid \|  German
 
-Organizer(s): LMU University Library (UB), Dr. Martin Spenger
+######  Hybrid \|  German
 
-Presenter(s): Dr. Veit Schwab, Dr. Florian Schreck, Prof. Dr. Felix Schönbrodt, Laura Meier, Dr. Martin Spenger, Vanessa Gabriel, Christiane Bayer
+Organizers: Dr. Martin Spenger Dr. Malika Ihle
 
-Host(s): LMU University Library (UB)
+Presenters: Dr. Eckhart Arnold Prof. Dr. Thomas Krefeld Dr. Christiane Sibille Prof. Dr. Stephan Hoppe Prof. Dr. Ralf Ludwig Dr. Stephan Lücke
 
-10 Feb, 2023
+Hosts: LMU Open Science Center LMU University Library (UB) IT-Gruppe Geisteswissenschaften (ITG)
 
-OSIM Meetup: Open Science in Animal Research
+[Training Material](https://osf.io/8dmz2/)
 
-Organizer(s): Anne-Laure Boulesteix, Christina Nießl
+[Read More](../events/events/2023-07-04-offene-wissenschaft-geisteswissenschaften.llms.md)
 
-Presenter(s): Eckart Thein
+[Theoretical Frameworks as Lifesavers for Psychology](../events/events/2023-06-23-theoretical-frameworks-psychology.llms.md) [Theoretical Frameworks as Lifesavers for Psychology](../events/events/2023-06-23-theoretical-frameworks-psychology.llms.md) ReproducibiliTea Journal Club
 
-Host(s): Open Science Initiative in Medicine
+[![ReproducibiliTea Journal Club](../events/images/reproducibilitea_journal_club.svg)](../events/events/2023-06-23-theoretical-frameworks-psychology.llms.md)
 
-10 Feb, 2023
+###### 23 Jun, 2023
 
-Offene Forschungsdaten vs. Datenschutz Und Anonymität?
+###### 23 Jun, 2023
 
-Organizer(s): Ramona Schödel, Larissa Sust, Lena Schiestel, Dr. Malika Ihle
+######  LMU Open Science Center (Giselastr.) \|  Hybrid \|  English
 
-Instructor(s): Prof. Felix Schoenbrodt, Dr. Anton Marx
+######  Hybrid \|  English
 
-Host(s): Open Science Initiative in Psychology (OSIP), LMU Open Science Center
+Organizers: Laura Goetz Stephan Nuding Leonhard Schramm Franka Etzel Viktoria Wiegelmann Gracia Prüm Alp Kaan Aksu Finia Loeb
 
-[](../events/events/2023-02-10-forschungsdaten-datenschutz.llms.md) [Training Material](https://osf.io/xpj38/)
+Presenters: ReproducibiliTea Team
 
-27 Jan, 2023
+Hosts: ReproducibiliTea Team
 
-The Ideal of Preregistration and What Warrants it
+[Training Material](https://www.nature.com/articles/s41562-018-0522-1)
 
-Organizer(s): Laura Goetz, Stephan Nuding, Leonhard Schramm, Franka Etzel, Viktoria Wiegelmann, Gracia Prüm, Alp Kaan Aksu, Finia Loeb
+[Read More](../events/events/2023-06-23-theoretical-frameworks-psychology.llms.md)
 
-Presenter(s): Aaron Peikert
+[Current Debates About Registered Reports](../events/events/2023-06-09-registered-reports-debate.llms.md) [Current Debates About Registered Reports](../events/events/2023-06-09-registered-reports-debate.llms.md) ReproducibiliTea Journal Club
 
-Host(s): ReproducibiliTea Team
+[![ReproducibiliTea Journal Club](../events/images/reproducibilitea_journal_club.svg)](../events/events/2023-06-09-registered-reports-debate.llms.md)
 
-[](../events/events/2023-01-27-preregistration-ideal-warrant.llms.md) [Training Material](https://aaronpeikert.github.io/bayes-prereg/manuscript.pdf)
+###### 09 Jun, 2023
 
-26 Jan, 2023
+###### 09 Jun, 2023
 
-Reproducible Research in R \| How to Do the Same Thing more than Once
+######  LMU Open Science Center (Giselastr.) \|  Hybrid \|  English
 
-Organizer(s): Dr. Malika Ihle
+######  Hybrid \|  English
 
-Instructor(s): Dr. Aaron Peikert
+Organizers: Laura Goetz Stephan Nuding Leonhard Schramm Franka Etzel Viktoria Wiegelmann Gracia Prüm Alp Kaan Aksu Finia Loeb
 
-Helper(s): Felix Henninger
+Presenters: Dr. Gilad Feldman
 
-Host(s): LMU Open Science Center
+Hosts: ReproducibiliTea Team
 
-[](../events/events/2023-01-26-reproducible-research-in-r.llms.md) [Training Material](https://aaronpeikert.github.io/repro-workshop/)
+[Training Material](https://www.nature.com/articles/s41562-021-01193-7)
 
-17 Jan, 2023
+[Read More](../events/events/2023-06-09-registered-reports-debate.llms.md)
 
-Theoriebildung in Der Psychologie
+[Registered Reports and Peer Community in Registered Report are the Future of Science: Sharing Our Experience from over 20 Submissions with a hands-on demonstration of a Replication Registered Report](../events/events/2023-06-07-registered-reports-submission-experience.llms.md) [Registered Reports and Peer Community in Registered Report are the Future of Science: Sharing Our Experience from over 20 Submissions with a hands-on demonstration of a Replication Registered Report](../events/events/2023-06-07-registered-reports-submission-experience.llms.md) Workshop
 
-Organizer(s): Ramona Schödel, Larissa Sust, Lena Schiestel
+[![Workshop](../events/images/workshop.svg)](../events/events/2023-06-07-registered-reports-submission-experience.llms.md)
 
-Instructor(s): Lena Schiestel
+###### 07 Jun, 2023
 
-Host(s): Open Science Initiative in Psychology (OSIP), LMU Open Science Center
+###### 07 Jun, 2023
+
+######  Hybrid (Room 3322, Leopoldstraße 13 80802 München and via Zoom) \|  Hybrid \|  English
+
+######  Hybrid \|  English
+
+Organizers: Dr. Malika Ihle
+
+Instructors: Dr. Gilad Feldman
+
+Hosts: LMU Open Science Center
+
+[Training Material](https://osf.io/6vhsw/)
+
+[Read More](../events/events/2023-06-07-registered-reports-submission-experience.llms.md)
+
+[The Generalizability Crisis – when Verbal and Statistical Expressions Don't Match](../events/events/2023-06-02-generalizability-crisis-statistics.llms.md) [The Generalizability Crisis – when Verbal and Statistical Expressions Don't Match](../events/events/2023-06-02-generalizability-crisis-statistics.llms.md) ReproducibiliTea Journal Club
+
+[![ReproducibiliTea Journal Club](../events/images/reproducibilitea_journal_club.svg)](../events/events/2023-06-02-generalizability-crisis-statistics.llms.md)
+
+###### 02 Jun, 2023
+
+###### 02 Jun, 2023
+
+######  LMU Open Science Center (Giselastr.) \|  Hybrid \|  English
+
+######  Hybrid \|  English
+
+Organizers: Laura Goetz Stephan Nuding Leonhard Schramm Franka Etzel Viktoria Wiegelmann Gracia Prüm Alp Kaan Aksu Finia Loeb
+
+Hosts: ReproducibiliTea Team
+
+[Training Material](https://doi.org/10.1017/S0140525X20001685)
+
+[Read More](../events/events/2023-06-02-generalizability-crisis-statistics.llms.md)
+
+[The Importance of Good Working Conditions for High Quality Research](../events/events/2023-05-19-working-conditions-research-quality.llms.md) [The Importance of Good Working Conditions for High Quality Research](../events/events/2023-05-19-working-conditions-research-quality.llms.md) ReproducibiliTea Journal Club
+
+[![ReproducibiliTea Journal Club](../events/images/reproducibilitea_journal_club.svg)](../events/events/2023-05-19-working-conditions-research-quality.llms.md)
+
+###### 19 May, 2023
+
+###### 19 May, 2023
+
+######  LMU Open Science Center (Giselastr.) \|  Hybrid \|  English
+
+######  Hybrid \|  English
+
+Organizers: Laura Goetz Stephan Nuding Leonhard Schramm Franka Etzel Viktoria Wiegelmann Gracia Prüm
+
+Hosts: ReproducibiliTea Team
+
+[Training Material](https://doi.org/10.1038/s41562-022-01508-2)
+
+[Read More](../events/events/2023-05-19-working-conditions-research-quality.llms.md)
+
+[Methodological Hypocrisy in Psychology](../events/events/2023-05-11-methodology-hypocrisy-psychology.llms.md) [Methodological Hypocrisy in Psychology](../events/events/2023-05-11-methodology-hypocrisy-psychology.llms.md) Lecture
+
+[![Lecture](../events/images/lecture.svg)](../events/events/2023-05-11-methodology-hypocrisy-psychology.llms.md)
+
+###### 11 May, 2023
+
+###### 11 May, 2023
+
+######  LMU Open Science Center (Giselastr.) \|  English
+
+######  English
+
+Organizers: Dr. Malika Ihle
+
+Presenters: Prof. Dr. J.P. de Ruiter
+
+Hosts: ReproducibiliTea Team LMU Open Science Center
+
+[Read More](../events/events/2023-05-11-methodology-hypocrisy-psychology.llms.md)
+
+[Welcome to the Open Science Universe](../events/events/2023-05-05-welcome-open-science-universe.llms.md) [Welcome to the Open Science Universe](../events/events/2023-05-05-welcome-open-science-universe.llms.md) ReproducibiliTea Journal Club
+
+[![ReproducibiliTea Journal Club](../events/images/reproducibilitea_journal_club.svg)](../events/events/2023-05-05-welcome-open-science-universe.llms.md)
+
+###### 05 May, 2023
+
+###### 05 May, 2023
+
+######  Hybrid (Leopoldstraße 13, room 1301, Munich and via Zoom) \|  Hybrid \|  English
+
+######  Hybrid \|  English
+
+Organizers: Laura Goetz Stephan Nuding Leonhard Schramm Franka Etzel Viktoria Wiegelmann Gracia Prüm
+
+Presenters: Gracia Prüm Laura Goetz
+
+Hosts: ReproducibiliTea Team
+
+[Read More](../events/events/2023-05-05-welcome-open-science-universe.llms.md)
+
+[OSIM Meetup: Reporting of Clinical Studies](../events/events/2023-03-31-clinical-studies-reporting.llms.md) [OSIM Meetup: Reporting of Clinical Studies](../events/events/2023-03-31-clinical-studies-reporting.llms.md) OSIM Meetup
+
+[![OSIM Meetup](../events/images/osim_meetup.svg)](../events/events/2023-03-31-clinical-studies-reporting.llms.md)
+
+###### 31 Mar, 2023
+
+###### 31 Mar, 2023
+
+######  Hybrid \|  English
+
+######  Hybrid \|  English
+
+Organizers: Anne-Laure Boulesteix Christina Nießl
+
+Presenters: Antje Hentrich Annette Hartmann
+
+Hosts: OSIM
+
+[Read More](../events/events/2023-03-31-clinical-studies-reporting.llms.md)
+
+[Reforming Research Assessment: How to Implement Responsible Procedures and Move Beyond Impact Factors and h-Index?](../events/events/2023-03-13-responsible-procedures-research-assess.llms.md) [Reforming Research Assessment: How to Implement Responsible Procedures and Move Beyond Impact Factors and h-Index?](../events/events/2023-03-13-responsible-procedures-research-assess.llms.md) Symposium
+
+[![Symposium](../events/images/symposium.svg)](../events/events/2023-03-13-responsible-procedures-research-assess.llms.md)
+
+###### 13 Mar, 2023
+
+###### 13 Mar, 2023
+
+######  Hybrid (Geschwister-Scholl-Platz 1, Munich and via Zoom) \|  Hybrid \|  English
+
+######  Hybrid \|  English
+
+Organizers: Dr. Malika Ihle Dr. Heidi Seibold
+
+Presenters: Prof. Dr. Toma Susi Dr.Tobias Grimm Dr.Jess Rohmann Prof. Dr. Kristin Mitte Prof. Dr. Felix Schönbrodt
+
+Hosts: LMU Open Science Center
+
+[Training Material](https://osf.io/eqkjz/)
+
+[Read More](../events/events/2023-03-13-responsible-procedures-research-assess.llms.md)
+
+[OSIM Meetup: Reporting of Clinical Studies - CCCMunich](../events/events/2023-03-10-clinical-studies-reporting.llms.md) [OSIM Meetup: Reporting of Clinical Studies - CCCMunich](../events/events/2023-03-10-clinical-studies-reporting.llms.md) OSIM Meetup
+
+[![OSIM Meetup](../events/images/osim_meetup.svg)](../events/events/2023-03-10-clinical-studies-reporting.llms.md)
+
+###### 10 Mar, 2023
+
+###### 10 Mar, 2023
+
+######  Hybrid \|  English
+
+######  Hybrid \|  English
+
+Organizers: Anne-Laure Boulesteix Christina Nießl
+
+Presenters: Martin Dreyling
+
+Hosts: OSIM
+
+[Read More](../events/events/2023-03-10-clinical-studies-reporting.llms.md)
+
+[Version Control with Git/GitHub Within RStudio](../events/events/2023-03-07-git-github-version-control.llms.md) [Version Control with Git/GitHub Within RStudio](../events/events/2023-03-07-git-github-version-control.llms.md) Workshop
+
+[![Workshop](../events/images/workshop.svg)](../events/events/2023-03-07-git-github-version-control.llms.md)
+
+###### 07 Mar, 2023
+
+###### 07 Mar, 2023
+
+######  Online \|  English
+
+######  Online \|  English
+
+Organizers: Dr. Malika Ihle
+
+Instructors: Dr. Malika Ihle
+
+Helpers: Dr. Luisa Jiménez-Soto Pat Callahan
+
+Hosts: LMU Open Science Center
+
+[Training Material](https://github.com/MalikaIhle/Introduction-RStudio-Git-GitHub)
+
+[Read More](../events/events/2023-03-07-git-github-version-control.llms.md)
+
+[Introduction to Credible Research](../events/events/2023-02-27-credible-research-introduction.llms.md) [Introduction to Credible Research](../events/events/2023-02-27-credible-research-introduction.llms.md) Lecture
+
+[![Lecture](../events/images/lecture.svg)](../events/events/2023-02-27-credible-research-introduction.llms.md)
+
+###### 27 Feb, 2023
+
+###### 27 Feb, 2023
+
+######  Online \|  English
+
+######  Online \|  English
+
+Organizers: Dr. Malika Ihle
+
+Presenters: Dr. Malika Ihle
+
+Hosts: LMU Open Science Center
+
+[Training Material](https://osf.io/nd9ga)
+
+[Read More](../events/events/2023-02-27-credible-research-introduction.llms.md)
+
+[Love Data Week: a Series of Events on Research Data Management](../events/events/2023-02-13-research-data-management-events.llms.md) [Love Data Week: a Series of Events on Research Data Management](../events/events/2023-02-13-research-data-management-events.llms.md) Event
+
+[![Event](../events/images/event.svg)](../events/events/2023-02-13-research-data-management-events.llms.md)
+
+###### 13 Feb, 2023
+
+###### 13-17 Feb, 2023
+
+######  Online \|  German and English
+
+######  Online \|  German and English
+
+Organizers: LMU University Library (UB) Dr. Martin Spenger
+
+Presenters: Dr. Veit Schwab Dr. Florian Schreck Prof. Dr. Felix Schönbrodt Laura Meier Dr. Martin Spenger Vanessa Gabriel Christiane Bayer
+
+Hosts: LMU University Library (UB)
+
+[Read More](../events/events/2023-02-13-research-data-management-events.llms.md)
+
+[OSIM Meetup: Open Science in Animal Research](../events/events/2023-02-10-animal-research-open-science.llms.md) [OSIM Meetup: Open Science in Animal Research](../events/events/2023-02-10-animal-research-open-science.llms.md) OSIM Meetup
+
+[![OSIM Meetup](../events/images/osim_meetup.svg)](../events/events/2023-02-10-animal-research-open-science.llms.md)
+
+###### 10 Feb, 2023
+
+###### 10 Feb, 2023
+
+######  Hybrid \|  English
+
+######  Hybrid \|  English
+
+Organizers: Anne-Laure Boulesteix Christina Nießl
+
+Presenters: Eckart Thein
+
+Hosts: OSIM
+
+[Read More](../events/events/2023-02-10-animal-research-open-science.llms.md)
+
+[Offene Forschungsdaten vs. Datenschutz Und Anonymität?](../events/events/2023-02-10-forschungsdaten-datenschutz.llms.md) [Offene Forschungsdaten vs. Datenschutz Und Anonymität?](../events/events/2023-02-10-forschungsdaten-datenschutz.llms.md) Workshop
+
+[![Workshop](../events/images/workshop.svg)](../events/events/2023-02-10-forschungsdaten-datenschutz.llms.md)
+
+###### 10 Feb, 2023
+
+###### 10 Feb, 2023
+
+######  LMU Open Science Center (Giselastr.) \|  Hybrid \|  German
+
+######  Hybrid \|  German
+
+Organizers: Ramona Schödel Larissa Sust Lena Schiestel Dr. Malika Ihle
+
+Instructors: Prof. Felix Schoenbrodt Dr. Anton Marx
+
+Hosts: OSIP LMU Open Science Center
+
+[Training Material](https://osf.io/xpj38/)
+
+[Read More](../events/events/2023-02-10-forschungsdaten-datenschutz.llms.md)
+
+[The Ideal of Preregistration and What Warrants it](../events/events/2023-01-27-preregistration-ideal-warrant.llms.md) [The Ideal of Preregistration and What Warrants it](../events/events/2023-01-27-preregistration-ideal-warrant.llms.md) ReproducibiliTea Journal Club
+
+[![ReproducibiliTea Journal Club](../events/images/reproducibilitea_journal_club.svg)](../events/events/2023-01-27-preregistration-ideal-warrant.llms.md)
+
+###### 27 Jan, 2023
+
+###### 27 Jan, 2023
+
+######  LMU Open Science Center (Giselastr.) \|  Hybrid \|  English
+
+######  Hybrid \|  English
+
+Organizers: Laura Goetz Stephan Nuding Leonhard Schramm Franka Etzel Viktoria Wiegelmann Gracia Prüm Alp Kaan Aksu Finia Loeb
+
+Presenters: Aaron Peikert
+
+Hosts: ReproducibiliTea Team
+
+[Training Material](https://aaronpeikert.github.io/bayes-prereg/manuscript.pdf)
+
+[Read More](../events/events/2023-01-27-preregistration-ideal-warrant.llms.md)
+
+[Reproducible Research in R \| How to Do the Same Thing more than Once](../events/events/2023-01-26-reproducible-research-in-r.llms.md) [Reproducible Research in R \| How to Do the Same Thing more than Once](../events/events/2023-01-26-reproducible-research-in-r.llms.md) Workshop
+
+[![Workshop](../events/images/workshop.svg)](../events/events/2023-01-26-reproducible-research-in-r.llms.md)
+
+###### 26 Jan, 2023
+
+###### 26 Jan, 2023
+
+######  LMU Open Science Center (Giselastr.) \|  English
+
+######  English
+
+Organizers: Dr. Malika Ihle
+
+Instructors: Dr. Aaron Peikert
+
+Helpers: Felix Henninger
+
+Hosts: LMU Open Science Center
+
+[Training Material](https://aaronpeikert.github.io/repro-workshop/)
+
+[Read More](../events/events/2023-01-26-reproducible-research-in-r.llms.md)
+
+[Theoriebildung in Der Psychologie](../events/events/2023-01-17-theoriebildung-psychologie.llms.md) [Theoriebildung in Der Psychologie](../events/events/2023-01-17-theoriebildung-psychologie.llms.md) Workshop
+
+[![Workshop](../events/images/workshop.svg)](../events/events/2023-01-17-theoriebildung-psychologie.llms.md)
+
+###### 17 Jan, 2023
+
+###### 17 Jan, 2023
+
+######  LMU Open Science Center (Giselastr.) \|  German
+
+######  German
+
+Organizers: Ramona Schödel Larissa Sust Lena Schiestel
+
+Instructors: Lena Schiestel
+
+Hosts: OSIP LMU Open Science Center
+
+[Read More](../events/events/2023-01-17-theoriebildung-psychologie.llms.md)
 
 ### 2022
 
-16 Dec, 2022
+[Positionality Statements - Should Authors be more Transparent About Themselves?](../events/events/2022-12-16-positionality-author-transparency.llms.md) [Positionality Statements - Should Authors be more Transparent About Themselves?](../events/events/2022-12-16-positionality-author-transparency.llms.md) ReproducibiliTea Journal Club
 
-Positionality Statements - Should Authors be more Transparent About Themselves?
+[![ReproducibiliTea Journal Club](../events/images/reproducibilitea_journal_club.svg)](../events/events/2022-12-16-positionality-author-transparency.llms.md)
 
-Organizer(s): Laura Goetz, Stephan Nuding, Leonhard Schramm, Franka Etzel, Viktoria Wiegelmann, Gracia Prüm, Alp Kaan Aksu
+###### 16 Dec, 2022
 
-Host(s): ReproducibiliTea Team
+###### 16 Dec, 2022
 
-[](../events/events/2022-12-16-positionality-author-transparency.llms.md) [Training Material](https://doi.org/10.1177/1745691620927709)
+######  Hybrid (Room 1307 at Leopoldstraße 13, Munich and via Zoom) \|  Hybrid \|  English
 
-25 Nov, 2022
+######  Hybrid \|  English
 
-Elaborating the Umbrella Term: What is your Idea of Open Science?
+Organizers: Laura Goetz Stephan Nuding Leonhard Schramm Franka Etzel Viktoria Wiegelmann Gracia Prüm Alp Kaan Aksu
 
-Organizer(s): Laura Goetz, Stephan Nuding, Leonhard Schramm, Franka Etzel, Viktoria Wiegelmann, Gracia Pruem
+Hosts: ReproducibiliTea Team
 
-Host(s): ReproducibiliTea Team
+[Training Material](https://doi.org/10.1177/1745691620927709)
 
-17 Nov, 2022
+[Read More](../events/events/2022-12-16-positionality-author-transparency.llms.md)
 
-Meta Research and the QUEST for Responsible Research
+[Elaborating the Umbrella Term: What is your Idea of Open Science?](../events/events/2022-11-25-idea-open-science-perspectives.llms.md) [Elaborating the Umbrella Term: What is your Idea of Open Science?](../events/events/2022-11-25-idea-open-science-perspectives.llms.md) ReproducibiliTea Journal Club
 
-Organizer(s): Dr. Malika Ihle
+[![ReproducibiliTea Journal Club](../events/images/reproducibilitea_journal_club.svg)](../events/events/2022-11-25-idea-open-science-perspectives.llms.md)
 
-Presenter(s): PD Dr. Ulf Tölch
+###### 25 Nov, 2022
 
-Host(s): LMU Open Science Center
+###### 25 Nov, 2022
 
-[](../events/events/2022-11-17-meta-research-responsible.llms.md) [Training Material](https://osf.io/pef9u/)
+######  Hybrid (Room 3322 at Leopoldstraße 13, Munich and via Zoom) \|  Hybrid \|  English
 
-11 Nov, 2022
+######  Hybrid \|  English
 
-Welcome to the Open Science Universe
+Organizers: Laura Goetz Stephan Nuding Leonhard Schramm Franka Etzel Viktoria Wiegelmann Gracia Pruem
 
-Organizer(s): Laura Goetz, Stephan Nuding, Leonhard Schramm, Franka Etzel, Viktoria Wiegelmann, Gracia Pruem
+Hosts: ReproducibiliTea Team
 
-Presenter(s): Franka Etzel, Laura Goetz
+[Read More](../events/events/2022-11-25-idea-open-science-perspectives.llms.md)
 
-Host(s): ReproducibiliTea Team
+[Meta Research and the QUEST for Responsible Research](../events/events/2022-11-17-meta-research-responsible.llms.md) [Meta Research and the QUEST for Responsible Research](../events/events/2022-11-17-meta-research-responsible.llms.md) Lecture
 
-27 Oct, 2022
+[![Lecture](../events/images/lecture.svg)](../events/events/2022-11-17-meta-research-responsible.llms.md)
 
-Version Control with Git/GitHub Within RStudio
+###### 17 Nov, 2022
 
-Organizer(s): Dr. Malika Ihle, Ramona Schödel, Larissa Sust, Lena Schiestel
+###### 17 Nov, 2022
 
-Instructor(s): Dr. Malika Ihle, OSC Fellows
+######  Hybrid (Geschwister-Scholl-Platz 1, room M-001, Munich and via Zoom) \|  Hybrid \|  English
 
-Helper(s): Felix Henninger
+######  Hybrid \|  English
 
-Host(s): Open Science Initiative in Psychology (OSIP), LMU Open Science Center
+Organizers: Dr. Malika Ihle
 
-[](../events/events/2022-10-27-git-github-version-control.llms.md) [Training Material](https://github.com/MalikaIhle/Introduction-RStudio-Git-GitHub)
+Presenters: PD Dr. Ulf Tölch
 
-14 Oct, 2022
+Hosts: LMU Open Science Center
 
-Advanced Power Analyses
+[Training Material](https://osf.io/pef9u/)
 
-Organizer(s): Ramona Schödel, Larissa Sust, Lena Schiestel, Dr. Malika Ihle
+[Read More](../events/events/2022-11-17-meta-research-responsible.llms.md)
 
-Instructor(s): Prof. Dr. Felix Schönbrodt, Dr. Moritz Fischer
+[Welcome to the Open Science Universe](../events/events/2022-11-11-welcome-open-science-universe.llms.md) [Welcome to the Open Science Universe](../events/events/2022-11-11-welcome-open-science-universe.llms.md) ReproducibiliTea Journal Club
 
-Host(s): Open Science Initiative in Psychology (OSIP), LMU Open Science Center
+[![ReproducibiliTea Journal Club](../events/images/reproducibilitea_journal_club.svg)](../events/events/2022-11-11-welcome-open-science-universe.llms.md)
 
-[](../events/events/2022-10-14-advanced-power-analyses.llms.md) [Training Material](https://osf.io/tcwyb)
+###### 11 Nov, 2022
 
-27-29 Sept, 2022
+###### 11 Nov, 2022
 
-3-Day Crash Course in Open Science
+######  Hybrid (Room 3322 at Leopoldstraße 13, Munich and via Zoom) \|  Hybrid \|  English
 
-Organizer(s): Dr. Malika Ihle
+######  Hybrid \|  English
 
-Instructor(s): Prof. Tim Parker, Dr. Dominique Roche, Dr. Malika Ihle, Dr. Rose O'Dea, Dr. Wolfgang Forstmeier
+Organizers: Laura Goetz Stephan Nuding Leonhard Schramm Franka Etzel Viktoria Wiegelmann Gracia Pruem
 
-Host(s): LMU Faculty of Biology, LMU Open Science Center
+Presenters: Franka Etzel Laura Goetz
 
-[](../events/events/2022-09-27-crash-course-open-science.llms.md) [Training Material](https://osf.io/bvf3c/)
+Hosts: ReproducibiliTea Team
 
-12 Sept, 2022
+[Read More](../events/events/2022-11-11-welcome-open-science-universe.llms.md)
 
-One Step Towards Reproducible Science: Git Basic Training
+[Version Control with Git/GitHub Within RStudio](../events/events/2022-10-27-git-github-version-control.llms.md) [Version Control with Git/GitHub Within RStudio](../events/events/2022-10-27-git-github-version-control.llms.md) Workshop
 
-Organizer(s): Christina Nießl
+[![Workshop](../events/images/workshop.svg)](../events/events/2022-10-27-git-github-version-control.llms.md)
 
-Instructor(s): PD Dr. Luisa Jimenez-Soto
+###### 27 Oct, 2022
 
-Host(s): Open Science Initiative in Medicine (OSIM), "Institute for Medical Information Processing, and Epidemiology (IBE)"
+###### 27 Oct, 2022
 
-29 Jul, 2022
+######  LMU Open Science Center (Giselastr.) \|  Hybrid \|  English
 
-Better Theory Development as a Response to the Prevalence of QRPs
+######  Hybrid \|  English
 
-Organizer(s): Laura Goetz, Stephan Nuding, Leonhard Schramm
+Organizers: Dr. Malika Ihle Ramona Schödel Larissa Sust Lena Schiestel
 
-Presenter(s): Prof. Dr. Chris Donkin
+Instructors: Dr. Malika Ihle OSC Fellows
 
-Host(s): ReproducibiliTea Team
+Helpers: Felix Henninger
 
-[](../events/events/2022-07-29-theory-development-qrps-response.llms.md) [Training Material](https://doi.org/10.1177/1745691620966796)
+Hosts: OSIP LMU Open Science Center
 
-22 Jul, 2022
+[Training Material](https://github.com/MalikaIhle/Introduction-RStudio-Git-GitHub)
 
-Open Science Knowledge and Prevalence of QRPs among Students - a Call to Update Our Curricula
+[Read More](../events/events/2022-10-27-git-github-version-control.llms.md)
 
-Organizer(s): Laura Goetz, Stephan Nuding, Leonhard Schramm
+[Advanced Power Analyses](../events/events/2022-10-14-advanced-power-analyses.llms.md) [Advanced Power Analyses](../events/events/2022-10-14-advanced-power-analyses.llms.md) Workshop
 
-Presenter(s): Maximilian Frank
+[![Workshop](../events/images/workshop.svg)](../events/events/2022-10-14-advanced-power-analyses.llms.md)
 
-Host(s): ReproducibiliTea Team
+###### 14 Oct, 2022
 
-[](../events/events/2022-07-22-qrps-students-curriculum-update.llms.md) [Training Material](https://doi.org/10.1026/0033-3042/a000562)
+###### 14 Oct, 2022
 
-8 Jul, 2022
+######  LMU Open Science Center (Giselastr.) \|  German/ English
 
-Getting Active - How can We Foster Open Science Within Our University?
+######  German/ English
 
-Organizer(s): Laura Goetz, Stephan Nuding, Leonhard Schramm
+Organizers: Ramona Schödel Larissa Sust Lena Schiestel Dr. Malika Ihle
 
-Presenter(s): Dr. Malika Ihle
+Instructors: Prof. Dr. Felix Schönbrodt Dr. Moritz Fischer
 
-Host(s): ReproducibiliTea Team
+Hosts: OSIP LMU Open Science Center
 
-1 Jul, 2022
+[Training Material](https://osf.io/tcwyb)
 
-Public Trust in Science and the Replication Crisis: Challenges and Opportunities for Science Communication
+[Read More](../events/events/2022-10-14-advanced-power-analyses.llms.md)
 
-Organizer(s): Laura Goetz, Stephan Nuding, Leonhard Schramm
+[3-Day Crash Course in Open Science](../events/events/2022-09-27-crash-course-open-science.llms.md) [3-Day Crash Course in Open Science](../events/events/2022-09-27-crash-course-open-science.llms.md) Summer School
 
-Presenter(s): Marlene Altenmüller, Dr. Tobias Wingen
+[![Summer School](../events/images/summer_school.svg)](../events/events/2022-09-27-crash-course-open-science.llms.md)
 
-Host(s): ReproducibiliTea Team
+###### 27 Sep, 2022
 
-20 Jun, 2022
+###### 27-29 Sep, 2022
 
-How Paper Mills Publish Fake Science Industrial-Style - is There Really a Problem and How Does it Work?
+######  Planegg-Martinsried, Munich \|  In-Person \|  English
 
-Organizer(s): Dr. Malika Ihle, Prof. Dr. Bernhard A. Sabel, Prof. Dr. Felix Schönbrodt
+######  In-Person \|  English
 
-Presenter(s): Bernhard Sabel, Jennifer Byrne, Dorothy Bishop
+Organizers: Dr. Malika Ihle
 
-Host(s): LMU Open Science Center
+Instructors: Prof. Tim Parker Dr. Dominique Roche Dr. Malika Ihle Dr. Rose O'Dea Dr. Wolfgang Forstmeier
 
-[](../events/events/2022-06-20-paper-mills-fake-science-industrial.llms.md) [Training Material](https://osf.io/47utb/)
+Hosts: LMU Faculty of Biology LMU Open Science Center
 
-10 Jun, 2022
+[Training Material](https://osf.io/bvf3c/)
 
-Big Little Lies: p-Hacking and Effective Countermeasures
+[Read More](../events/events/2022-09-27-crash-course-open-science.llms.md)
 
-Organizer(s): Laura Goetz, Stephan Nuding, Leonhard Schramm
+[One Step Towards Reproducible Science: Git Basic Training](../events/events/2022-09-12-git-basic-training.llms.md) [One Step Towards Reproducible Science: Git Basic Training](../events/events/2022-09-12-git-basic-training.llms.md) Workshop
 
-Presenter(s): Angelika Stefan
+[![Workshop](../events/images/workshop.svg)](../events/events/2022-09-12-git-basic-training.llms.md)
 
-Host(s): ReproducibiliTea Team
+###### 12 Sep, 2022
 
-[](../events/events/2022-06-10-phacking-countermeasures.llms.md) [Training Material](https://doi.org/10.31234/osf.io/xy2dk)
+###### 12 Sep, 2022
 
-8 Jun, 2022
+######  Lecture Hall 2 Hörsaaltrakt in Klinikum Großhadern \|  In-Person \|  English/German
 
-Open Access
+######  In-Person \|  English/German
 
-Instructor(s): Prof. Dr. Felix Schönbrodt, Maximilian Frank
+Organizers: Christina Nießl
 
-Host(s): Open Science Initiative in Psychology (OSIP)
+Instructors: PD Dr. Luisa Jimenez-Soto
 
-[](../events/events/2022-06-08-open-access.llms.md) [Training Material](https://osf.io/j3mnc/)
+Hosts: OSIM "Institute for Medical Information Processing and Epidemiology (IBE)"
 
-23 May, 2022
+[Read More](../events/events/2022-09-12-git-basic-training.llms.md)
 
-Open Research at Oxford - Survey Results
+[Better Theory Development as a Response to the Prevalence of QRPs](../events/events/2022-07-29-theory-development-qrps-response.llms.md) [Better Theory Development as a Response to the Prevalence of QRPs](../events/events/2022-07-29-theory-development-qrps-response.llms.md) ReproducibiliTea Journal Club
 
-Organizer(s): Dr. Malika Ihle
+[![ReproducibiliTea Journal Club](../events/images/reproducibilitea_journal_club.svg)](../events/events/2022-07-29-theory-development-qrps-response.llms.md)
 
-Presenter(s): Dr. Malika Ihle
+###### 29 Jul, 2022
 
-Host(s): LMU Open Science Center
+###### 29 Jul, 2022
 
-[](../events/events/2022-05-23-oxford-open-research-survey.llms.md) [Training Material](https://osf.io/p9sev/files/wxmpz)
+######  Online \|  English
 
-8 Mar, 2022
+######  Online \|  English
 
-Open Data, Data Sharing und Datenschutz in der Medizin: Wunsch und Wirklichkeit
+Organizers: Laura Goetz Stephan Nuding Leonhard Schramm
 
-Organizer(s): Dr. Christina Nießl
+Presenters: Prof. Dr. Chris Donkin
 
-Presenter(s): Prof. Dr. Ulrich Mansmann, Arne Rheinwald-Kolb, Prof. Dr. Andreas Spickhoff, Fabian Prasser, Patrick Thoral, Jeroen Maas
+Hosts: ReproducibiliTea Team
 
-Host(s): Open Science Initiative in Medicine (OSIM), Institute for Medical Information Processing, Biometry, and Epidemiology (IBE)
+[Training Material](https://doi.org/10.1177/1745691620966796)
 
-[](../events/events/2022-03-08-wunsch-und-wirklichkeit.llms.md) [Training Material](https://osf.io/wur7s/overview)
+[Read More](../events/events/2022-07-29-theory-development-qrps-response.llms.md)
+
+[Open Science Knowledge and Prevalence of QRPs among Students - a Call to Update Our Curricula](../events/events/2022-07-22-qrps-students-curriculum-update.llms.md) [Open Science Knowledge and Prevalence of QRPs among Students - a Call to Update Our Curricula](../events/events/2022-07-22-qrps-students-curriculum-update.llms.md) ReproducibiliTea Journal Club
+
+[![ReproducibiliTea Journal Club](../events/images/reproducibilitea_journal_club.svg)](../events/events/2022-07-22-qrps-students-curriculum-update.llms.md)
+
+###### 22 Jul, 2022
+
+###### 22 Jul, 2022
+
+######  Hybrid (Room 3322 at Leopoldstraße 13, Munich or via Zoom) \|  Hybrid \|  English
+
+######  Hybrid \|  English
+
+Organizers: Laura Goetz Stephan Nuding Leonhard Schramm
+
+Presenters: Maximilian Frank
+
+Hosts: ReproducibiliTea Team
+
+[Training Material](https://doi.org/10.1026/0033-3042/a000562)
+
+[Read More](../events/events/2022-07-22-qrps-students-curriculum-update.llms.md)
+
+[Getting Active - How can We Foster Open Science Within Our University?](../events/events/2022-07-08-foster-open-science-university.llms.md) [Getting Active - How can We Foster Open Science Within Our University?](../events/events/2022-07-08-foster-open-science-university.llms.md) ReproducibiliTea Journal Club
+
+[![ReproducibiliTea Journal Club](../events/images/reproducibilitea_journal_club.svg)](../events/events/2022-07-08-foster-open-science-university.llms.md)
+
+###### 08 Jul, 2022
+
+###### 08 Jul, 2022
+
+######  Hybrid (Room 3322 at Leopoldstraße 13, Munich or via Zoom) \|  Hybrid \|  English
+
+######  Hybrid \|  English
+
+Organizers: Laura Goetz Stephan Nuding Leonhard Schramm
+
+Presenters: Dr. Malika Ihle
+
+Hosts: ReproducibiliTea Team
+
+[Read More](../events/events/2022-07-08-foster-open-science-university.llms.md)
+
+[Public Trust in Science and the Replication Crisis: Challenges and Opportunities for Science Communication](../events/events/2022-07-01-science-communication-challenges.llms.md) [Public Trust in Science and the Replication Crisis: Challenges and Opportunities for Science Communication](../events/events/2022-07-01-science-communication-challenges.llms.md) ReproducibiliTea Journal Club
+
+[![ReproducibiliTea Journal Club](../events/images/reproducibilitea_journal_club.svg)](../events/events/2022-07-01-science-communication-challenges.llms.md)
+
+###### 01 Jul, 2022
+
+###### 01 Jul, 2022
+
+######  Online \|  English
+
+######  Online \|  English
+
+Organizers: Laura Goetz Stephan Nuding Leonhard Schramm
+
+Presenters: Marlene Altenmüller Dr. Tobias Wingen
+
+Hosts: ReproducibiliTea Team
+
+[Read More](../events/events/2022-07-01-science-communication-challenges.llms.md)
+
+[How Paper Mills Publish Fake Science Industrial-Style - is There Really a Problem and How Does it Work?](../events/events/2022-06-20-paper-mills-fake-science-industrial.llms.md) [How Paper Mills Publish Fake Science Industrial-Style - is There Really a Problem and How Does it Work?](../events/events/2022-06-20-paper-mills-fake-science-industrial.llms.md) Symposium
+
+[![Symposium](../events/images/symposium.svg)](../events/events/2022-06-20-paper-mills-fake-science-industrial.llms.md)
+
+###### 20 Jun, 2022
+
+###### 20 Jun, 2022
+
+######  Hybrid (Luisenstraße 37, Munich and via Zoom) \|  Hybrid \|  English
+
+######  Hybrid \|  English
+
+Organizers: Dr. Malika Ihle Prof. Dr. Bernhard A. Sabel Prof. Dr. Felix Schönbrodt
+
+Presenters: Bernhard Sabel Jennifer Byrne Dorothy Bishop
+
+Hosts: LMU Open Science Center
+
+[Training Material](https://osf.io/47utb/)
+
+[Read More](../events/events/2022-06-20-paper-mills-fake-science-industrial.llms.md)
+
+[Big Little Lies: p-Hacking and Effective Countermeasures](../events/events/2022-06-10-phacking-countermeasures.llms.md) [Big Little Lies: p-Hacking and Effective Countermeasures](../events/events/2022-06-10-phacking-countermeasures.llms.md) ReproducibiliTea Journal Club
+
+[![ReproducibiliTea Journal Club](../events/images/reproducibilitea_journal_club.svg)](../events/events/2022-06-10-phacking-countermeasures.llms.md)
+
+###### 10 Jun, 2022
+
+###### 10 Jun, 2022
+
+######  Online \|  English
+
+######  Online \|  English
+
+Organizers: Laura Goetz Stephan Nuding Leonhard Schramm
+
+Presenters: Angelika Stefan
+
+Hosts: ReproducibiliTea Team
+
+[Training Material](https://doi.org/10.31234/osf.io/xy2dk)
+
+[Read More](../events/events/2022-06-10-phacking-countermeasures.llms.md)
+
+[Open Access](../events/events/2022-06-08-open-access.llms.md) [Open Access](../events/events/2022-06-08-open-access.llms.md) Workshop
+
+[![Workshop](../events/images/workshop.svg)](../events/events/2022-06-08-open-access.llms.md)
+
+###### 08 Jun, 2022
+
+###### 08 Jun, 2022
+
+######  LMU Open Science Center (Giselastr.) \|  Hybrid \|  German/English
+
+######  Hybrid \|  German/English
+
+Instructors: Prof. Dr. Felix Schönbrodt Maximilian Frank
+
+Hosts: OSIP
+
+[Training Material](https://osf.io/j3mnc/)
+
+[Read More](../events/events/2022-06-08-open-access.llms.md)
+
+[Open Research at Oxford - Survey Results](../events/events/2022-05-23-oxford-open-research-survey.llms.md) [Open Research at Oxford - Survey Results](../events/events/2022-05-23-oxford-open-research-survey.llms.md) Lecture
+
+[![Lecture](../events/images/lecture.svg)](../events/events/2022-05-23-oxford-open-research-survey.llms.md)
+
+###### 23 May, 2022
+
+###### 23 May, 2022
+
+######  Online \|  English
+
+######  Online \|  English
+
+Organizers: Dr. Malika Ihle
+
+Presenters: Dr. Malika Ihle
+
+Hosts: LMU Open Science Center
+
+[Training Material](https://osf.io/p9sev/files/wxmpz)
+
+[Read More](../events/events/2022-05-23-oxford-open-research-survey.llms.md)
+
+[Open Data, Data Sharing und Datenschutz in der Medizin: Wunsch und Wirklichkeit](../events/events/2022-03-08-wunsch-und-wirklichkeit.llms.md) [Open Data, Data Sharing und Datenschutz in der Medizin: Wunsch und Wirklichkeit](../events/events/2022-03-08-wunsch-und-wirklichkeit.llms.md) Symposium
+
+[![Symposium](../events/images/symposium.svg)](../events/events/2022-03-08-wunsch-und-wirklichkeit.llms.md)
+
+###### 08 Mar, 2022
+
+###### 08 Mar, 2022
+
+######  Online \|  German
+
+######  Online \|  German
+
+Organizers: Dr. Christina Nießl
+
+Presenters: Prof. Dr. Ulrich Mansmann Arne Rheinwald-Kolb Prof. Dr. Andreas Spickhoff Fabian Prasser Patrick Thoral Jeroen Maas
+
+Hosts: OSIM LMU IBE
+
+[Training Material](https://osf.io/wur7s/overview)
+
+[Read More](../events/events/2022-03-08-wunsch-und-wirklichkeit.llms.md)
 
 ### 2021
 
-16 Nov, 2021
+[German Reproducibility Day](../events/events/2021-11-16-german-reproducibility-day.llms.md) [German Reproducibility Day](../events/events/2021-11-16-german-reproducibility-day.llms.md)
 
-German Reproducibility Day
+[![](../events/images/default.svg)](../events/events/2021-11-16-german-reproducibility-day.llms.md)
 
-Organizer(s): Prof. Dr. Felix Schönbrodt
+###### 16 Nov, 2021
 
-Host(s): German Reproducibility Network (GRN)
+###### 16 Nov, 2021
 
-10-24 Nov, 2021
+######  In-Person \|  English
 
-Tips and Tools for a Reproducible Workflow
+######  In-Person \|  English
 
-Organizer(s): Dr. Caroline Zygar-Hoffmann, Moritz Fischer
+Organizers: Prof. Dr. Felix Schönbrodt
 
-Instructor(s): Dr. Caroline Zygar-Hoffmann, Dr. Moritz Fischer
+Hosts: German Reproducibility Network (GRN)
 
-Host(s): Open Science Initiative in Psychology (OSIP)
+[Read More](../events/events/2021-11-16-german-reproducibility-day.llms.md)
 
-29 Sept, 2021
+[Tips and Tools for a Reproducible Workflow](../events/events/2021-11-10-reproducible-workflow-tools.llms.md) [Tips and Tools for a Reproducible Workflow](../events/events/2021-11-10-reproducible-workflow-tools.llms.md) Workshop
 
-Loss-of-Confidence Project - Have you Ever Lost Faith in your Scientific Work?
+[![Workshop](../events/images/workshop.svg)](../events/events/2021-11-10-reproducible-workflow-tools.llms.md)
 
-Organizer(s): Laura Goetz, Stephan Nuding, Leonhard Schramm
+###### 10 Nov, 2021
 
-Host(s): ReproducibiliTea Team
+###### 10-24 Nov, 2021
 
-[](../events/events/2021-09-29-loss-of-confidence-project.llms.md) [Training Material](https://doi.org/10.1177/1745691620964106)
+######  Online (Zoom-Meeting) \|  Online \|  German
 
-9 Jul, 2021
+######  Online \|  German
 
-Doing Good Research Should not be Bad for your Career
+Organizers: Dr. Caroline Zygar-Hoffmann Moritz Fischer
 
-Organizer(s): Laura Goetz, Stephan Nuding, Leonhard Schramm
+Instructors: Dr. Caroline Zygar-Hoffmann Dr. Moritz Fischer
 
-Host(s): ReproducibiliTea Team
+Hosts: OSIP
 
-[](../events/events/2021-07-09-good-research-career-impact.llms.md) [Training Material](https://psyarxiv.com/6btc3/)
+[Read More](../events/events/2021-11-10-reproducible-workflow-tools.llms.md)
 
-8 Jul, 2021
+[Loss-of-Confidence Project - Have you Ever Lost Faith in your Scientific Work?](../events/events/2021-09-29-loss-of-confidence-project.llms.md) [Loss-of-Confidence Project - Have you Ever Lost Faith in your Scientific Work?](../events/events/2021-09-29-loss-of-confidence-project.llms.md) ReproducibiliTea Journal Club
 
-Introducing Mechanisms of Robustness and Transparency into the Institutional Incentive and Reward System (MERIT)
+[![ReproducibiliTea Journal Club](../events/images/reproducibilitea_journal_club.svg)](../events/events/2021-09-29-loss-of-confidence-project.llms.md)
 
-Organizer(s): Prof. Dr. Ralf Ludwig, Dr. Miriam Kip
+###### 29 Sep, 2021
 
-Instructor(s): Dr. Miriam Kip
+###### 29 Sep, 2021
 
-Host(s): LMU Open Science Center
+######  Online \|  English
 
-1-3 Jun, 2021
+######  Online \|  English
 
-Philosophy and Methodology of Medicine
+Organizers: Laura Goetz Stephan Nuding Leonhard Schramm
 
-Organizer(s): Dr. Jürgen Landes, Dr. Michael Wild
+Hosts: ReproducibiliTea Team
 
-Host(s): Munich Center for Mathematical Philosophy (MCMP)
+[Training Material](https://doi.org/10.1177/1745691620964106)
 
-1-2 Jun, 2021
+[Read More](../events/events/2021-09-29-loss-of-confidence-project.llms.md)
 
-Prediction, Registration, and Replication of Scientific Findings
+[Doing Good Research Should not be Bad for your Career](../events/events/2021-07-09-good-research-career-impact.llms.md) [Doing Good Research Should not be Bad for your Career](../events/events/2021-07-09-good-research-career-impact.llms.md) ReproducibiliTea Journal Club
 
-Organizer(s): Dr. Taisuke Imai
+[![ReproducibiliTea Journal Club](../events/images/reproducibilitea_journal_club.svg)](../events/events/2021-07-09-good-research-career-impact.llms.md)
 
-Presenter(s): Abel Brodeur, Christopher Chambers, Anna Dreber, Tom Hardwicke, Sabine Hoffmann, Macartan Humphreys, Maximilian Kasy, Prof. Dr. Felix Schönbrodt, Eva Vivalt
+###### 09 Jul, 2021
 
-Host(s): LMU Center for Advanced Studies (CAS), LMU Open Science Center
+###### 09 Jul, 2021
 
-29 Apr, 2021
+######  Online \|  English
 
-Publication of Clinical Studies
+######  Online \|  English
 
-Organizer(s): Christina Nießl
+Organizers: Laura Goetz Stephan Nuding Leonhard Schramm
 
-Presenter(s): Dr. Till Bruckner, Dr. Anja Baumgartner
+Hosts: ReproducibiliTea Team
 
-Host(s): Open Science Initiative in Medicine (OSIM)
+[Training Material](https://psyarxiv.com/6btc3/)
 
-22 Apr, 2021
+[Read More](../events/events/2021-07-09-good-research-career-impact.llms.md)
 
-Research Data Management & Open Science: Trends, Funding Requirements and Services at LMU
+[Introducing Mechanisms of Robustness and Transparency into the Institutional Incentive and Reward System (MERIT)](../events/events/2021-07-08-institutional-incentive-reward-system.llms.md) [Introducing Mechanisms of Robustness and Transparency into the Institutional Incentive and Reward System (MERIT)](../events/events/2021-07-08-institutional-incentive-reward-system.llms.md) Workshop
 
-Organizer(s): Prof. Dr. Felix Schönbrodt
+[![Workshop](../events/images/workshop.svg)](../events/events/2021-07-08-institutional-incentive-reward-system.llms.md)
 
-Instructor(s): Prof. Dr. Felix Schönbrodt, Dr. Florian Schreck, Dr. Veit Schwab, Laura Meier, Dr. Martin Spenger
+###### 08 Jul, 2021
 
-Host(s): LMU Open Science Center, LMU University Library (UB), LMU Research Funding Unit
+###### 08 Jul, 2021
+
+######  Online \|  English
+
+######  Online \|  English
+
+Organizers: Prof. Dr. Ralf Ludwig Dr. Miriam Kip
+
+Instructors: Dr. Miriam Kip
+
+Hosts: LMU Open Science Center
+
+[Read More](../events/events/2021-07-08-institutional-incentive-reward-system.llms.md)
+
+[Philosophy and Methodology of Medicine](../events/events/2021-06-01-philosophy-methodology-medicine.llms.md) [Philosophy and Methodology of Medicine](../events/events/2021-06-01-philosophy-methodology-medicine.llms.md) Conference
+
+[![Conference](../events/images/conference.svg)](../events/events/2021-06-01-philosophy-methodology-medicine.llms.md)
+
+###### 01 Jun, 2021
+
+###### 01-03 Jun, 2021
+
+######  Online \|  Online \|  English
+
+######  Online \|  English
+
+Organizers: Dr. Jürgen Landes Dr. Michael Wild
+
+Hosts: Munich Center for Mathematical Philosophy (MCMP)
+
+[Read More](../events/events/2021-06-01-philosophy-methodology-medicine.llms.md)
+
+[Prediction, Registration, and Replication of Scientific Findings](../events/events/2021-06-01-prediction-registration-replication.llms.md) [Prediction, Registration, and Replication of Scientific Findings](../events/events/2021-06-01-prediction-registration-replication.llms.md) Symposium
+
+[![Symposium](../events/images/symposium.svg)](../events/events/2021-06-01-prediction-registration-replication.llms.md)
+
+###### 01 Jun, 2021
+
+###### 01-02 Jun, 2021
+
+######  Online \|  English
+
+######  Online \|  English
+
+Organizers: Dr. Taisuke Imai
+
+Presenters: Abel Brodeur Christopher Chambers Anna Dreber Tom Hardwicke Sabine Hoffmann Macartan Humphreys Maximilian Kasy Prof. Dr. Felix Schönbrodt Eva Vivalt
+
+Hosts: LMU Center for Advanced Studies (CAS) LMU Open Science Center
+
+[Read More](../events/events/2021-06-01-prediction-registration-replication.llms.md)
+
+[Publication of Clinical Studies](../events/events/2021-04-29-clinical-studies-publication.llms.md) [Publication of Clinical Studies](../events/events/2021-04-29-clinical-studies-publication.llms.md) Workshop
+
+[![Workshop](../events/images/workshop.svg)](../events/events/2021-04-29-clinical-studies-publication.llms.md)
+
+###### 29 Apr, 2021
+
+###### 29 Apr, 2021
+
+######  Online \|  German/English
+
+######  Online \|  German/English
+
+Organizers: Christina Nießl
+
+Presenters: Dr. Till Bruckner Dr. Anja Baumgartner
+
+Hosts: OSIM
+
+[Read More](../events/events/2021-04-29-clinical-studies-publication.llms.md)
+
+[Research Data Management & Open Science: Trends, Funding Requirements and Services at LMU](../events/events/2021-04-22-lmu-funding-requirements-services.llms.md) [Research Data Management & Open Science: Trends, Funding Requirements and Services at LMU](../events/events/2021-04-22-lmu-funding-requirements-services.llms.md) Workshop
+
+[![Workshop](../events/images/workshop.svg)](../events/events/2021-04-22-lmu-funding-requirements-services.llms.md)
+
+###### 22 Apr, 2021
+
+###### 22 Apr, 2021
+
+######  Online \|  English
+
+######  Online \|  English
+
+Organizers: Prof. Dr. Felix Schönbrodt
+
+Instructors: Prof. Dr. Felix Schönbrodt Dr. Florian Schreck Dr. Veit Schwab Laura Meier Dr. Martin Spenger
+
+Hosts: LMU Open Science Center LMU University Library (UB) LMU Research Funding Unit
+
+[Read More](../events/events/2021-04-22-lmu-funding-requirements-services.llms.md)
 
 ### 2020
 
-4 Dec, 2020
+[Corona & Open Science](../events/events/2020-12-04-corona-and-open-science.llms.md) [Corona & Open Science](../events/events/2020-12-04-corona-and-open-science.llms.md) Symposium
 
-Corona & Open Science
+[![Symposium](../events/images/symposium.svg)](../events/events/2020-12-04-corona-and-open-science.llms.md)
 
-Organizer(s): Prof. Dr. Felix Schönbrodt
+###### 04 Dec, 2020
 
-Presenter(s): Sabine Hoffmann, Prof. Dr. Helmut Küchenhoff, Felix Günther, Prof. Dr. Michael Ewers, Prof. Dr. Nikolaus Plesnila, Dr. Claudia Schmiedeberg, Prof. Dr. Josef Brüderl
+###### 04 Dec, 2020
 
-Host(s): LMU Open Science Center
+######  Online \|  German
 
-2 Jul, 2020
+######  Online \|  German
 
-Open Science - Reproduciblity, Data Sharing, Practical Aspects Symposium
+Organizers: Prof. Dr. Felix Schönbrodt
 
-Organizer(s): Dr. Heidi Seibold, Prof. Dr. Michael Ingrisch
+Presenters: Sabine Hoffmann Prof. Dr. Helmut Küchenhoff Felix Günther Prof. Dr. Michael Ewers Prof. Dr. Nikolaus Plesnila Dr. Claudia Schmiedeberg Prof. Dr. Josef Brüderl
 
-Presenter(s): Prof. Dr. Nikolaus Plensila, Prof. Dr. Anne-Laure Boulesteix, Prof. Dr. Felix Schönbrodt, Dr. Urs Heilbronner, Prof. Dr. Ulrich Mansmann, Dr. Heidi Seibold, Dr. Xenia Schmalz
+Hosts: LMU Open Science Center
 
-Host(s): Open Science Initiative in Medicine (OSIM)
+[Read More](../events/events/2020-12-04-corona-and-open-science.llms.md)
 
-[](../events/events/2020-07-02-open-science-sharing-practical.llms.md) [Training Material](https://www.youtube.com/@lmuopenscienceinitiativein447/videos)
+[Open Science - Reproduciblity, Data Sharing, Practical Aspects Symposium](../events/events/2020-07-02-open-science-sharing-practical.llms.md) [Open Science - Reproduciblity, Data Sharing, Practical Aspects Symposium](../events/events/2020-07-02-open-science-sharing-practical.llms.md) Symposium
 
-14 May, 2020
+[![Symposium](../events/images/symposium.svg)](../events/events/2020-07-02-open-science-sharing-practical.llms.md)
 
-Corona & Open Science: Fieberhafte Forschung – Warum Forschung Derzeit Wenig Verlässlich Ist Und Was Wir Dagegen Tun Können
+###### 02 Jul, 2020
 
-Organizer(s): Prof. Dr. Felix Schönbrodt
+###### 02 Jul, 2020
 
-Presenter(s): Prof. Dr. Katrin Auspurg
+######  Online \|  English
 
-Host(s): LMU Open Science Center
+######  Online \|  English
 
-6 Feb, 2020
+Organizers: Dr. Heidi Seibold Prof. Dr. Michael Ingrisch
 
-Design of Replication Experiments
+Presenters: Prof. Dr. Nikolaus Plensila Prof. Dr. Anne-Laure Boulesteix Prof. Dr. Felix Schönbrodt Dr. Urs Heilbronner Prof. Dr. Ulrich Mansmann Dr. Heidi Seibold Dr. Xenia Schmalz
 
-Organizer(s): Prof. Dr. Ulrich Mansmann
+Hosts: OSIM
 
-Instructor(s): Leonhard Held, Charlotte Micheloud, Samuel Pawel
+[Training Material](https://www.youtube.com/@lmuopenscienceinitiativein447/videos)
 
-Host(s): LMU Open Science Center
+[Read More](../events/events/2020-07-02-open-science-sharing-practical.llms.md)
 
-5 Feb, 2020
+[Corona & Open Science: Fieberhafte Forschung – Warum Forschung Derzeit Wenig Verlässlich Ist Und Was Wir Dagegen Tun Können](../events/events/2020-05-14-corona-forschung-zuverlassigkeit.llms.md) [Corona & Open Science: Fieberhafte Forschung – Warum Forschung Derzeit Wenig Verlässlich Ist Und Was Wir Dagegen Tun Können](../events/events/2020-05-14-corona-forschung-zuverlassigkeit.llms.md) Lecture
 
-The Harmonic Mean Chi-Squared Test to Substantiate Scientific Findings
+[![Lecture](../events/images/lecture.svg)](../events/events/2020-05-14-corona-forschung-zuverlassigkeit.llms.md)
 
-Organizer(s): Prof. Dr. Ulrich Mansmann
+###### 14 May, 2020
 
-Presenter(s): Prof. Dr. Leonhard Held
+###### 14 May, 2020
 
-Host(s): LMU Open Science Center
+######  In-Person \|  German
 
-29 Jan, 2020
+######  In-Person \|  German
 
-Discussion of Central Issues and Papers Concerning Open Science and Related Topics
+Organizers: Prof. Dr. Felix Schönbrodt
 
-Organizer(s): Prof. Dr. Felix Schönbrodt, Laura Goetz, Stephan Nuding, Leonhard Schramm
+Presenters: Prof. Dr. Katrin Auspurg
 
-Host(s): ReproducibiliTea Team
+Hosts: LMU Open Science Center
 
-[](../events/events/2020-01-29-open-science-discussion-journal-club.llms.md) [Training Material](https://doi.org/10.1038/s41562-016-0021)
+[Read More](../events/events/2020-05-14-corona-forschung-zuverlassigkeit.llms.md)
 
-20 Jan, 2020
+[Design of Replication Experiments](../events/events/2020-02-06-replication-experiments-design.llms.md) [Design of Replication Experiments](../events/events/2020-02-06-replication-experiments-design.llms.md) Workshop
 
-Open Access: Options, Requirements, and Funding Possibilities
+[![Workshop](../events/images/workshop.svg)](../events/events/2020-02-06-replication-experiments-design.llms.md)
 
-Organizer(s): Dr. Veit Schwab, Dr. Anna Pahl
+###### 06 Feb, 2020
 
-Instructor(s): Prof. Dr. Felix Schönbrodt, Volker Schallehn, Andrea Dorner, Vanessa Gabriel, Dr. Veit Schwab, Dr. Anna Pahl
+###### 06 Feb, 2020
 
-Host(s): LMU Open Science Center, LMU University Library (UB), LMU Research Funding Unit
+######  Richard-Wagner-Straße 10, D105 \|  In-Person \|  English
+
+######  In-Person \|  English
+
+Organizers: Prof. Dr. Ulrich Mansmann
+
+Instructors: Leonhard Held Charlotte Micheloud Samuel Pawel
+
+Hosts: LMU Open Science Center
+
+[Read More](../events/events/2020-02-06-replication-experiments-design.llms.md)
+
+[The Harmonic Mean Chi-Squared Test to Substantiate Scientific Findings](../events/events/2020-02-05-harmonic-mean-chi-squared-test.llms.md) [The Harmonic Mean Chi-Squared Test to Substantiate Scientific Findings](../events/events/2020-02-05-harmonic-mean-chi-squared-test.llms.md) Lecture
+
+[![Lecture](../events/images/lecture.svg)](../events/events/2020-02-05-harmonic-mean-chi-squared-test.llms.md)
+
+###### 05 Feb, 2020
+
+###### 05 Feb, 2020
+
+######  Luisenstraße 37, Room C006 \|  In-Person \|  English
+
+######  In-Person \|  English
+
+Organizers: Prof. Dr. Ulrich Mansmann
+
+Presenters: Prof. Dr. Leonhard Held
+
+Hosts: LMU Open Science Center
+
+[Read More](../events/events/2020-02-05-harmonic-mean-chi-squared-test.llms.md)
+
+[Discussion of Central Issues and Papers Concerning Open Science and Related Topics](../events/events/2020-01-29-open-science-discussion-journal-club.llms.md) [Discussion of Central Issues and Papers Concerning Open Science and Related Topics](../events/events/2020-01-29-open-science-discussion-journal-club.llms.md) ReproducibiliTea Journal Club
+
+[![ReproducibiliTea Journal Club](../events/images/reproducibilitea_journal_club.svg)](../events/events/2020-01-29-open-science-discussion-journal-club.llms.md)
+
+###### 29 Jan, 2020
+
+###### 29 Jan, 2020
+
+######  LMU Open Science Center (Giselastr.) \|  In-Person \|  English
+
+######  In-Person \|  English
+
+Organizers: Prof. Dr. Felix Schönbrodt Laura Goetz Stephan Nuding Leonhard Schramm
+
+Hosts: ReproducibiliTea Team
+
+[Training Material](https://doi.org/10.1038/s41562-016-0021)
+
+[Read More](../events/events/2020-01-29-open-science-discussion-journal-club.llms.md)
+
+[Open Access: Options, Requirements, and Funding Possibilities](../events/events/2020-01-20-funding-options-requirements.llms.md) [Open Access: Options, Requirements, and Funding Possibilities](../events/events/2020-01-20-funding-options-requirements.llms.md) Workshop
+
+[![Workshop](../events/images/workshop.svg)](../events/events/2020-01-20-funding-options-requirements.llms.md)
+
+###### 20 Jan, 2020
+
+###### 20 Jan, 2020
+
+######  Leopoldstr. 30, Training room S1, ground floor \|  In-Person \|  English
+
+######  In-Person \|  English
+
+Organizers: Dr. Veit Schwab Dr. Anna Pahl
+
+Instructors: Prof. Dr. Felix Schönbrodt Volker Schallehn Andrea Dorner Vanessa Gabriel Dr. Veit Schwab Dr. Anna Pahl
+
+Hosts: LMU Open Science Center LMU University Library (UB) LMU Research Funding Unit
+
+[Read More](../events/events/2020-01-20-funding-options-requirements.llms.md)
 
 ### 2019
 
-18 Dec, 2019
+[Discussion of Central Issues and Papers Concerning Open Science and Related Topics](../events/events/2019-12-18-open-science-discussion-journal-club.llms.md) [Discussion of Central Issues and Papers Concerning Open Science and Related Topics](../events/events/2019-12-18-open-science-discussion-journal-club.llms.md) ReproducibiliTea Journal Club
 
-Discussion of Central Issues and Papers Concerning Open Science and Related Topics
+[![ReproducibiliTea Journal Club](../events/images/reproducibilitea_journal_club.svg)](../events/events/2019-12-18-open-science-discussion-journal-club.llms.md)
 
-Organizer(s): Prof. Dr. Felix Schönbrodt, Laura Goetz, Stephan Nuding, Leonhard Schramm
+###### 18 Dec, 2019
 
-Host(s): ReproducibiliTea Team
+###### 18 Dec, 2019
 
-[](../events/events/2019-12-18-open-science-discussion-journal-club.llms.md) [Training Material](https://doi.org/10.1371/journal.pmed.0020124)
+######  LMU Open Science Center (Giselastr.) \|  In-Person \|  English
 
-28-30 Nov, 2019
+######  In-Person \|  English
 
-Open Science Bottom-Up
+Organizers: Prof. Dr. Felix Schönbrodt Laura Goetz Stephan Nuding Leonhard Schramm
 
-Organizer(s): Dr. Angelika Stefan, Prof. Dr. Felix Schönbrodt, Leonhard Schramm
+Hosts: ReproducibiliTea Team
 
-Instructor(s): Dr. Angelika Stefan, Prof. Dr. Felix Schönbrodt
+[Training Material](https://doi.org/10.1371/journal.pmed.0020124)
 
-Host(s): PsyFaKo, LMU Open Science Center, EU-project Fit4RRI
+[Read More](../events/events/2019-12-18-open-science-discussion-journal-club.llms.md)
 
-25 Nov, 2019
+[Open Science Bottom-Up](../events/events/2019-11-28-open-science-bottom-up.llms.md) [Open Science Bottom-Up](../events/events/2019-11-28-open-science-bottom-up.llms.md) Workshop
 
-Open Science in Der Promotion
+[![Workshop](../events/images/workshop.svg)](../events/events/2019-11-28-open-science-bottom-up.llms.md)
 
-Organizer(s): GraduateCenterLMU
+###### 28 Nov, 2019
 
-Host(s): LMU Open Science Center
+###### 28-30 Nov, 2019
 
-4 Nov, 2019
+######  Pettenkoferstraße 12 \|  In-Person \|  German
 
-Reproducible Research: Transparency and Translational Impact
+######  In-Person \|  German
 
-Organizer(s): Prof. Dr. Anne-Laure Boulesteix
+Organizers: Dr. Angelika Stefan Prof. Dr. Felix Schönbrodt Leonhard Schramm
 
-Presenter(s): Prof. Dr. John P.A. Ioannidis
+Instructors: Dr. Angelika Stefan Prof. Dr. Felix Schönbrodt
 
-Host(s): LMU Open Science Center
+Hosts: PsyFaKo LMU Open Science Center EU-project Fit4RRI
 
-13 Jun, 2019
+[Read More](../events/events/2019-11-28-open-science-bottom-up.llms.md)
 
-Replication and Reproducibility in Social Sciences and Statistics: Context, Concerns, and Concrete Measures
+[Open Science in Der Promotion](../events/events/2019-11-25-open-science-promotion.llms.md) [Open Science in Der Promotion](../events/events/2019-11-25-open-science-promotion.llms.md) Discussion
 
-Organizer(s): Sebastian Wichert
+[![Discussion](../events/images/discussion.svg)](../events/events/2019-11-25-open-science-promotion.llms.md)
 
-Presenter(s): Dr. Lars Vilhuber
+###### 25 Nov, 2019
 
-Host(s): Collaborative Research Center Transregio "Rationality and Competition", LMU-ifo Economics & Business Data Center, LMU Open Science Center, LMU Center for Advanced Studies research focus "Evidence Based Practice"
+###### 25 Nov, 2019
 
-[](../events/events/2019-06-13-context-concerns-measures.llms.md) [Training Material](http://doi.org/10.5281/zenodo.3245369)
+######  Rooms announced after registration \|  In-Person \|  German
 
-1 Apr, 2019
+######  In-Person \|  German
 
-Wissenschaftliches Arbeiten in Der Medizin
+Organizers: GraduateCenterLMU
 
-Organizer(s): Dr. Heidi Seibold
+Hosts: LMU Open Science Center
 
-Presenter(s): Prof. Dr. Felix Schönbrodt, Dr. Heidi Seibold, Prof. Dr. Anne-Laure Boulesteix, Prof. Dr. Nikolaus Plesnila, Prof. Dr. Ulrich Mansmann
+[Read More](../events/events/2019-11-25-open-science-promotion.llms.md)
 
-Host(s): Open Science Initiative in Medicine (OSIM)
+[Reproducible Research: Transparency and Translational Impact](../events/events/2019-11-04-transparency-translational-impact.llms.md) [Reproducible Research: Transparency and Translational Impact](../events/events/2019-11-04-transparency-translational-impact.llms.md) Lecture
 
-18 Mar, 2019
+[![Lecture](../events/images/lecture.svg)](../events/events/2019-11-04-transparency-translational-impact.llms.md)
 
-Joint OSC Symposium on the DAGStat Conference 2019
+###### 04 Nov, 2019
 
-Organizer(s): Deutsche Arbeitsgemeinschaft Statistik (DAGStat)
+###### 04 Nov, 2019
 
-Presenter(s): Anne-Laure Boulesteix, Heidi Seibold, Fabian Scheipl, Felix D. Schönbrodt, Sabine Hoffmann
+######  Geschwister-Scholl-Platz 1, Room E110 \|  In-Person \|  English
 
-Host(s): LMU Department of Statistics, LMU Open Science Center (OSC)
+######  In-Person \|  English
 
-[](../events/events/2019-03-18-joint-osc-symposium.llms.md) [Training Material](https://osf.io/pjthu/files/osfstorage)
+Organizers: Prof. Dr. Anne-Laure Boulesteix
 
-18 Feb, 2019
+Presenters: Prof. Dr. John P.A. Ioannidis
 
-Maintaining Privacy with Open Data
+Hosts: LMU Open Science Center
 
-Organizer(s): Prof. Dr. Felix Schönbrodt
+[Read More](../events/events/2019-11-04-transparency-translational-impact.llms.md)
 
-Instructor(s): Prof. Dr. Felix Schönbrodt, Dr. Anton Marx
+[Replication and Reproducibility in Social Sciences and Statistics: Context, Concerns, and Concrete Measures](../events/events/2019-06-13-context-concerns-measures.llms.md) [Replication and Reproducibility in Social Sciences and Statistics: Context, Concerns, and Concrete Measures](../events/events/2019-06-13-context-concerns-measures.llms.md) Lecture
 
-Host(s): LMU Open Science Center
+[![Lecture](../events/images/lecture.svg)](../events/events/2019-06-13-context-concerns-measures.llms.md)
 
-12 Feb, 2019
+###### 13 Jun, 2019
 
-Good Scientific Practices
+###### 13 Jun, 2019
 
-Organizer(s): Prof. Dr. Felix Schönbrodt
+######  Ludwigstr. 28,Room 221 \|  In-Person \|  English
 
-Instructor(s): Dr. Michael Mende
+######  In-Person \|  English
 
-Host(s): LMU Open Science Center
+Organizers: Sebastian Wichert
 
-25-27 Jan, 2019
+Presenters: Dr. Lars Vilhuber
 
-Open Social Science Conference (@opensocsci)
+Hosts: Collaborative Research Center Transregio "Rationality and Competition" LMU-ifo Economics & Business Data Center LMU Open Science Center LMU Center for Advanced Studies research focus "Evidence Based Practice"
 
-Organizer(s): Mannheim Centre for European Social Research (MZES)
+[Training Material](http://doi.org/10.5281/zenodo.3245369)
 
-Host(s): Mannheim Centre for European Social Research (MZES), Berkeley Initiative for Transparency in the Social Sciences (BITSS), LMU Open Science Center (OSC)
+[Read More](../events/events/2019-06-13-context-concerns-measures.llms.md)
 
-[](../events/events/2019-01-25-open-social-science-conference.llms.md) [Training Material](https://www.youtube.com/@opensocialscience4758)
+[Wissenschaftliches Arbeiten in Der Medizin](../events/events/2019-04-01-wissenschaftliches-arbeiten-medizin.llms.md) [Wissenschaftliches Arbeiten in Der Medizin](../events/events/2019-04-01-wissenschaftliches-arbeiten-medizin.llms.md) Symposium
+
+[![Symposium](../events/images/symposium.svg)](../events/events/2019-04-01-wissenschaftliches-arbeiten-medizin.llms.md)
+
+###### 01 Apr, 2019
+
+###### 01 Apr, 2019
+
+######  HörsaaltraktKlinikum Großhadern \|  In-Person \|  German
+
+######  In-Person \|  German
+
+Organizers: Dr. Heidi Seibold
+
+Presenters: Prof. Dr. Felix Schönbrodt Dr. Heidi Seibold Prof. Dr. Anne-Laure Boulesteix Prof. Dr. Nikolaus Plesnila Prof. Dr. Ulrich Mansmann
+
+Hosts: OSIM
+
+[Read More](../events/events/2019-04-01-wissenschaftliches-arbeiten-medizin.llms.md)
+
+[Joint OSC Symposium on the DAGStat Conference 2019](../events/events/2019-03-18-joint-osc-symposium.llms.md) [Joint OSC Symposium on the DAGStat Conference 2019](../events/events/2019-03-18-joint-osc-symposium.llms.md) Symposium
+
+[![Symposium](../events/images/symposium.svg)](../events/events/2019-03-18-joint-osc-symposium.llms.md)
+
+###### 18 Mar, 2019
+
+###### 18 Mar, 2019
+
+######  online \|  Online \|  English
+
+######  Online \|  English
+
+Organizers: Deutsche Arbeitsgemeinschaft Statistik (DAGStat)
+
+Presenters: Anne-Laure Boulesteix Heidi Seibold Fabian Scheipl Felix D. Schönbrodt Sabine Hoffmann
+
+Hosts: LMU Department of Statistics LMU Open Science Center
+
+[Training Material](https://osf.io/pjthu/files/osfstorage)
+
+[Read More](../events/events/2019-03-18-joint-osc-symposium.llms.md)
+
+[Maintaining Privacy with Open Data](../events/events/2019-02-18-privacy-open-data.llms.md) [Maintaining Privacy with Open Data](../events/events/2019-02-18-privacy-open-data.llms.md) Workshop
+
+[![Workshop](../events/images/workshop.svg)](../events/events/2019-02-18-privacy-open-data.llms.md)
+
+###### 18 Feb, 2019
+
+###### 18 Feb, 2019
+
+######  In-Person \|  German
+
+######  In-Person \|  German
+
+Organizers: Prof. Dr. Felix Schönbrodt
+
+Instructors: Prof. Dr. Felix Schönbrodt Dr. Anton Marx
+
+Hosts: LMU Open Science Center
+
+[Read More](../events/events/2019-02-18-privacy-open-data.llms.md)
+
+[Good Scientific Practices](../events/events/2019-02-12-good-scientific-practices.llms.md) [Good Scientific Practices](../events/events/2019-02-12-good-scientific-practices.llms.md) Workshop
+
+[![Workshop](../events/images/workshop.svg)](../events/events/2019-02-12-good-scientific-practices.llms.md)
+
+###### 12 Feb, 2019
+
+###### 12 Feb, 2019
+
+######  LMU Open Science Center (Giselastr.) \|  In-Person \|  English
+
+######  In-Person \|  English
+
+Organizers: Prof. Dr. Felix Schönbrodt
+
+Instructors: Dr. Michael Mende
+
+Hosts: LMU Open Science Center
+
+[Read More](../events/events/2019-02-12-good-scientific-practices.llms.md)
+
+[Open Social Science Conference (@opensocsci)](../events/events/2019-01-25-open-social-science-conference.llms.md) [Open Social Science Conference (@opensocsci)](../events/events/2019-01-25-open-social-science-conference.llms.md) Conference
+
+[![Conference](../events/images/conference.svg)](../events/events/2019-01-25-open-social-science-conference.llms.md)
+
+###### 25 Jan, 2019
+
+###### 25-27 Jan, 2019
+
+######  Mannheim, Germany \|  In-person \|  English
+
+######  In-person \|  English
+
+Organizers: Mannheim Centre for European Social Research (MZES)
+
+Hosts: Mannheim Centre for European Social Research (MZES) Berkeley Initiative for Transparency in the Social Sciences (BITSS) LMU Open Science Center
+
+[Training Material](https://www.youtube.com/@opensocialscience4758)
+
+[Read More](../events/events/2019-01-25-open-social-science-conference.llms.md)
 
 ### 2018
 
-14 Dec, 2018
+[Paywall - The Business of Scholarship](../events/events/2018-12-14-paywall-business-scholarship.llms.md) [Paywall - The Business of Scholarship](../events/events/2018-12-14-paywall-business-scholarship.llms.md) Symposium
 
-Paywall - The Business of Scholarship
+[![Symposium](../events/images/symposium.svg)](../events/events/2018-12-14-paywall-business-scholarship.llms.md)
 
-Organizer(s): Prof. Dr. Felix Schönbrodt
+###### 14 Dec, 2018
 
-Presenter(s): Prof. Jason Schmitt, Prof. Michael Bosnjak, Volker Schallehn, Prof. Nikolaus Plesnila
+###### 14 Dec, 2018
 
-Host(s): ZPID, LMU Open Science Center, LMU University Library (UB)
+######  Geschwister-Scholl-Platz 1,Lecture Hall M 018 \|  In-Person \|  English
 
-[](../events/events/2018-12-14-paywall-business-scholarship.llms.md) [Training Material](https://www.youtube.com/watch?v=zAzTR8eq20k&t=141s)
+######  In-Person \|  English
 
-5 Dec, 2018
+Organizers: Prof. Dr. Felix Schönbrodt
 
-Reproducibility of Omics Research: Shared Responsibility and Consequences of Ignorance
+Presenters: Prof. Jason Schmitt Prof. Michael Bosnjak Volker Schallehn Prof. Nikolaus Plesnila
 
-Organizer(s): Prof. Dr. Anne-Laure Boulesteix
+Hosts: ZPID LMU Open Science Center LMU University Library (UB)
 
-Presenter(s): Dr. Lisa McShane
+[Training Material](https://www.youtube.com/watch?v=zAzTR8eq20k&t=141s)
 
-Host(s): LMU Institute for Medical Information Processing, Biometry, and Epidemiology (IBE), LMU Open Science Center, STRATOS, The European Bioconductor Meeting
+[Read More](../events/events/2018-12-14-paywall-business-scholarship.llms.md)
 
-1 Oct, 2018
+[Reproducibility of Omics Research: Shared Responsibility and Consequences of Ignorance](../events/events/2018-12-05-responsibility-consequences.llms.md) [Reproducibility of Omics Research: Shared Responsibility and Consequences of Ignorance](../events/events/2018-12-05-responsibility-consequences.llms.md) Discussion
 
-Crash Course (Crashkurs): Open Science
+[![Discussion](../events/images/discussion.svg)](../events/events/2018-12-05-responsibility-consequences.llms.md)
 
-Organizer(s): Prof. Dr. Felix Schönbrodt
+###### 05 Dec, 2018
 
-Instructor(s): Prof. Dr. Felix Schönbrodt
+###### 05 Dec, 2018
 
-Host(s): LMU Open Science Center
+######  Schellingstr. 3 Room S005 \|  In-Person \|  English
 
-8 May, 2018
+######  In-Person \|  English
 
-OSC Opening Ceremony
+Organizers: Prof. Dr. Anne-Laure Boulesteix
 
-Organizer(s): Prof. Dr. Katrin Auspurg, Prof. Dr. Felix Schönbrodt
+Presenters: Dr. Lisa McShane
 
-Presenter(s): Prof. Dr. Barbara Conradt, Prof. Dr. Klaus Tochtermann
+Hosts: LMU Institute for Medical Information Processing, Biometry, and Epidemiology (IBE) LMU Open Science Center STRATOS The European Bioconductor Meeting
 
-1 Jan, 2018
+[Read More](../events/events/2018-12-05-responsibility-consequences.llms.md)
 
-Teaching Open Science in Medical Science
+[Crash Course (Crashkurs): Open Science](../events/events/2018-10-01-crashkurs-open-science.llms.md) [Crash Course (Crashkurs): Open Science](../events/events/2018-10-01-crashkurs-open-science.llms.md) Workshop
 
-Organizer(s): Prof. Dr. Felix Schönbrodt
+[![Workshop](../events/images/workshop.svg)](../events/events/2018-10-01-crashkurs-open-science.llms.md)
 
-Instructor(s): Prof. Dr. Nick Plesnila, Gunther Löfflmann, Prof. Dr. Felix Schönbrodt
+###### 01 Oct, 2018
 
-Host(s): LMU Open Science Center
+###### 01 Oct, 2018
+
+######  In-Person \|  German
+
+######  In-Person \|  German
+
+Organizers: Prof. Dr. Felix Schönbrodt
+
+Instructors: Prof. Dr. Felix Schönbrodt
+
+Hosts: LMU Open Science Center
+
+[Read More](../events/events/2018-10-01-crashkurs-open-science.llms.md)
+
+[OSC Opening Ceremony](../events/events/2018-05-08-opening-ceremony.llms.md) [OSC Opening Ceremony](../events/events/2018-05-08-opening-ceremony.llms.md) Event
+
+[![Event](../events/images/event.svg)](../events/events/2018-05-08-opening-ceremony.llms.md)
+
+###### 08 May, 2018
+
+###### 08 May, 2018
+
+######  LMU Hauptgebäude, Senatssaal der LMU, Raum E110 \|  In-person \|  German
+
+######  In-person \|  German
+
+Organizers: Prof. Dr. Katrin Auspurg Prof. Dr. Felix Schönbrodt
+
+Presenters: Prof. Dr. Barbara Conradt Prof. Dr. Klaus Tochtermann
+
+[Read More](../events/events/2018-05-08-opening-ceremony.llms.md)
+
+[Teaching Open Science in Medical Science](../events/events/2018-01-01-open-science-medical-science.llms.md) [Teaching Open Science in Medical Science](../events/events/2018-01-01-open-science-medical-science.llms.md) Workshop
+
+[![Workshop](../events/images/workshop.svg)](../events/events/2018-01-01-open-science-medical-science.llms.md)
+
+###### 01 Jan, 2018
+
+###### 01 Jan, 2018
+
+######  In-Person \|  English/German
+
+######  In-Person \|  English/German
+
+Organizers: Prof. Dr. Felix Schönbrodt
+
+Instructors: Prof. Dr. Nick Plesnila Gunther Löfflmann Prof. Dr. Felix Schönbrodt
+
+Hosts: LMU Open Science Center
+
+[Read More](../events/events/2018-01-01-open-science-medical-science.llms.md)

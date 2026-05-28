@@ -6,7 +6,7 @@
 
 #####  Location
 
-Online (Zoom)  
+  
 
 #####  Format
 

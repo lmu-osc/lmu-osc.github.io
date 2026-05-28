@@ -2,7 +2,7 @@
 
 #####  Date & Time
 
-12 Dec, 2025  
+12 Dec 2025  
 14:00 CET
 
 #####  Location
