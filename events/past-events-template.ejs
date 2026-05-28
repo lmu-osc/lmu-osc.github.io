@@ -104,11 +104,6 @@
              let infosFull = [];
              let infosMobile = [];
              
-             if (item.event.time) {
-                let obj = { icon: 'bi-clock', text: item.event.time };
-                infosFull.push(obj);
-                infosMobile.push(obj);
-             }
              if (item.event.location) {
                 let locText = item.event.location.name ? item.event.location.name : item.event.location;
                 if (typeof locText === 'string') {
