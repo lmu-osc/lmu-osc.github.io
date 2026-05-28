@@ -188,9 +188,15 @@ function Meta(meta)
     materials = normalize_external_url(safe_get(meta, "links", {})["materials"]),
     workshop_website = normalize_external_url(safe_get(meta, "links", {})["workshop_website"])
   }
-  meta.location = {
-    map_url = normalize_external_url(safe_get(meta, "event.location.map_url", ""))
-  }
+
+  if meta.event and type(meta.event) == "table" then
+    if meta.event.location and type(meta.event.location) == "table" then
+      if meta.event.location.map_url then
+        meta.event.location.map_url = normalize_external_url(meta.event.location.map_url)
+      end
+    end
+  end
+
   meta.presenters = filter_people_list(safe_get(meta, "presenters", nil))
   meta.instructors = filter_people_list(safe_get(meta, "instructors", nil))
   meta.helpers = filter_people_list(safe_get(meta, "helpers", nil))

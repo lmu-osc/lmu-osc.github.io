@@ -11,7 +11,7 @@ event:
 
   time: '10:00-17:00'
   location:
-    name: Online (Zoom) 
+    name:  
     address: 
     map_url: 
   format:
@@ -59,11 +59,13 @@ presenters:
   - name: 
     url: 
 host:
-  - name: Framework for Open and Reproducible Research Training (FORRT)
+  - name: Framework for Open and Reproducible Research Training
     url: https://forrt.org/
-  - name: German Reproducibility Network (GRN)
+    abbreviation: FORRT
+  - name: German Reproducibility Network 
     url:
-  - name: LMU Open Science Center (OSC)
+    abbreviation: GRN
+  - name: LMU Open Science Center
 
 template: templates/event-template.html
 filters:

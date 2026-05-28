@@ -11,7 +11,7 @@ event:
   
   time: ''
   location:
-    name: 'Online and Munich, Germany'
+    name: 'Munich, Germany'
     address: 
     map_url: 
   format:
@@ -102,12 +102,14 @@ presenters:
 host:
   - name: 'Digital Research Academy'
     url: 'https://digital-research.academy/'
-  - name: 'OLS'
+  - name: OpenLifeSci
     url: 'https://we-are-ols.org/'
+    abbreviation: OLS
   - name: 'LMU Open Science Center'
     url: 
-  - name: 'OSCARS Project'
+  - name: Open Science Clusters' Action for Research & Society
     url: 'https://oscars-project.eu/'
+    abbreviation: OSCARS
 
 template: templates/event-template.html
 filters:

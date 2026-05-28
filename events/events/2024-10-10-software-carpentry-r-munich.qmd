@@ -7,8 +7,8 @@ event:
   end_date: '2024-10-11'
   time: ''
   location:
-    name: Mensa Leopoldstr 13A, room 046
-    address: ''
+    name: Mensa Giselastraße 
+    address: Leopoldstr. 13A, Room 046, 80802 München
     map_url: ''
   format:
     type: In-Person
@@ -42,8 +42,9 @@ organizers:
 host:
 - name: LMU Open Science Center
   url: ''
-- name: Munich Center for Machine Learning (MCML)
+- name: Munich Center for Machine Learning
   url: ''
+  abbreviation: MCML
 template: templates/event-template.html
 filters:
     - templates/process-event-yaml.lua

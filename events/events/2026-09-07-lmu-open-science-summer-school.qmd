@@ -11,8 +11,8 @@ event:
     Our annual Summer School will take place on Sept 7-11 (Track 1) and Sept 14-15 (Track 2), 2026.
   time: '9:00-17:30'
   location:
-    name: Online and Philologicum Library, Ludwigstraße 25, 80539 Munich
-    address: 
+    name: Philologicum Library
+    address: Ludwigstraße 25, 80539 Munich
     map_url: https://maps.app.goo.gl/Rvq24yLKyRz92sjQ8
   format:
     type: Hybrid
@@ -73,6 +73,7 @@ event_description: |
   ![](images/2026-09-07-lmu-open-science-summer-school-funders-logo.jpg){width=60%}
   
   For more information and full program, visit: <http://lmu-osc.github.io/Open-Science-Summer-School-2026/>
+  
 instructors: 
   - name: Sarah von Grebmer zu Wolfsthurn
   - name: Malika Ihle 
@@ -103,10 +104,12 @@ host:
   - name: LMU Open Science Center
     url: https://lmu-osc.github.io/
   - name: LMU University Library (UB)
-  - name: Professionell in der Lehre (PROFil)
+  - name: Professionell in der Lehre
     url: https://www.lmu.de/profil/de/
-  - name: Framework for Open and Reproducible Research Training (FORRT)
+    abbreviation: PROFiL
+  - name: Framework for Open and Reproducible Research Training
     url: https://forrt.org/ 
+    abbreviation: FORRT
 
 template: templates/event-template.html
 filters:

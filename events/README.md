@@ -49,10 +49,11 @@ title: "Event title"
 date: YYYY-MM-DD # NOTE: this appears as the Published Date
 # choose one of the categories
 categories: ['Discussion', 'Hacky Hour', 'ReproducibiliTea Journal Club', 'Workshop', 'Lecture', 'Symposium', 'Conference', 'Summer School', 'Panel Discussion Series', 'Application call'] 
+# card_image: /events/images/example-override.svg # optional and should ONLY BE USED RARELY: overrides the category default image
 
 event:
-  start_date: "2026-03-11"
-  end_date: "2026-03-12"   # optional
+  start_date: 2026-03-11
+  end_date: 2026-03-12   # optional
   description: "Short card description shown on /events"
   time: "09:00-17:00"
   location:
@@ -119,6 +120,7 @@ helpers:
 host:
   - name: "Host Name"
     url: "https://example.org/profile"
+    # abbreviation: optional field containing a host's abbreviation e.g. OSC, FORRT, etc. This will be displayed on the card and a tooltip appears above the abbreviation containing the name: field used above.
 
 # the contact field only supports inclusion of one contact point. prefer organization emails when available
 contact:
@@ -144,8 +146,9 @@ Field reference by entity:
 3. `presenters`: supports `name`, optional `url`, and optional `affiliation`.
 4. `instructors`: supports `name` and optional `url`.
 5. `helpers`: supports `name` and optional `url`.
-6. `host`: supports `name` and optional `url`.
+6. `host`: supports `name` and optional `url` and optional `abbreviation`
 7. `contact`: supports `name` and `email`.
+8. `card_image`: optional. Override the automatic category image selection by pointing to a specific image path (e.g., `/events/images/custom.svg`).
 
 Conventions:
 
@@ -157,10 +160,11 @@ Conventions:
 
 Rendering notes:
 
-1. On the events listing page, names from `organizers`, `presenters`, `instructors`, `helpers`, and `host` can appear on cards.
+1. On the events listing page, names from `organizers`, `presenters`, `instructors`, `helpers`, and `host` can appear on cards. The `host.abbreviation` value will be displayed as text if an abbreviation is used, and the `host.name` will appear in a tooltip when hovering over the abbreviation.
 2. On event detail pages, `url` values are used to make names clickable.
 3. The flyer preview appears on the event detail page when `flyer` is provided.
 4. The contact section appears when `contact.name` is provided; `contact.email` adds a mailto link.
+5. Listing cards automatically display a thumbnail based on the primary category (e.g., `'Hacky Hour'` will look for `/events/images/hacky_hour.svg`, replacing spaces with underscores). If no image exists, a fallback default image is used. You can override this automatic behavior by specifying an image path in the top-level `card_image` field.
 
 Only include real entries and omit placeholders. Empty person entries are typically filtered out, but keeping files clean makes maintenance easier.
 

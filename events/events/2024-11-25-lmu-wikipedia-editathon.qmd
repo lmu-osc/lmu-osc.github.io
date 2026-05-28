@@ -7,8 +7,8 @@ event:
   end_date: ''
   time: ''
   location:
-    name: Wikipedia Munich, Angertorstraße 3
-    address: ''
+    name: Wikipedia Munich
+    address: Angertorstraße 3, 80469 Munich
     map_url: ''
   format:
     type: "In-Person"
@@ -36,8 +36,9 @@ organizers:
 host:
 - name: LMU Open Science Center
   url: ''
-- name: Wikipedia Munich (WikiMUC)
+- name: Wikipedia Munich
   url: ''
+  abbreviation: WikiMUC
 template: templates/event-template.html
 filters:
     - templates/process-event-yaml.lua

@@ -37,10 +37,12 @@ organizers:
 host:
 - name: META-REP consortium
   url: ''
-- name: Deutsche Forschungsgemeinschaft (DFG)
+- name: Deutsche Forschungsgemeinschaft
   url: ''
-- name: German Reproducibility Network (GRN)
+  abbreviation: DFG
+- name: German Reproducibility Network
   url: ''
+  abbreviation: GRN
 presenters:
 - name: Fiona Fidler
   url: ''

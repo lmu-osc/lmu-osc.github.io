@@ -4,7 +4,7 @@ categories: OSIM Meetup
 
 event:
   description: "Discussion on open science challenges and practices in machine learning and medicine"
-  start_date: "10 Nov, 2023"
+  start_date: 2023-11-10
   time: "14:00 CET"
   format:
     type: "Hybrid"
@@ -31,6 +31,7 @@ organizers:
 
 host:
   - name: Open Science Initiative in Medicine
+    abbreviation: OSIM
   
 template: templates/event-template.html
 filters:

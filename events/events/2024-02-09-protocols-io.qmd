@@ -4,7 +4,7 @@ categories: OSIM Meetup
 event:
   description: Discussion on publishing scientific research protocols on protocols.io
     platform
-  start_date: 09 Feb, 2024
+  start_date: 2024-02-09
   time: 14:00 CET
   format:
     type: Hybrid
@@ -24,6 +24,7 @@ organizers:
 - name: Christina Nießl
 host:
 - name: Open Science Initiative in Medicine
+  abbreviation: OSIM
 template: templates/event-template.html
 filters:
     - templates/process-event-yaml.lua

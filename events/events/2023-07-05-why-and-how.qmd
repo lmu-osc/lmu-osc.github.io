@@ -34,8 +34,9 @@ organizers:
   - name: Dr. Malika Ihle
     url: ''
 host:
-  - name: Open Science Initiative in Psychology (OSIP)
+  - name: Open Science Initiative in Psychology
     url: ''
+    abbreviation: OSIP
 
 template: templates/event-template.html
 filters:

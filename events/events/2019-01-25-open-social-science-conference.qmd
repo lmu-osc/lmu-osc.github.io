@@ -53,7 +53,7 @@ host:
   - name: Mannheim Centre for European Social Research (MZES)
     url: ''
   - name: Berkeley Initiative for Transparency in the Social Sciences (BITSS)
-  - name: LMU Open Science Center (OSC)
+  - name: LMU Open Science Center
 
 template: templates/event-template.html
 filters:

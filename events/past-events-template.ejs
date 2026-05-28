@@ -1,248 +1,245 @@
 ```{=html}
-<div class="content-wrapper osc-past-events">
-  <div class="card-grid list">
-    <% 
-      // Filter items to:
-      // 1) occur in the year == templateParams.year
-      // 2) have end_date (if present) older than now, otherwise date older than now
-      const yearNum = Number(templateParams.year);
-      const now = new Date();
+<%
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
 
-      // parseEventDate: accepts "July 04, 2025" (month-day-year) and "19 Sep, 2025" (day-month-year)
-      const parseEventDate = (dateStr) => {
-        if (!dateStr) return null;
-        const cleaned = String(dateStr).replace(/,/g, '').trim();
-        const parts = cleaned.split(/\s+/);
-        const months = ['jan','feb','mar','apr','may','jun','jul','aug','sep','oct','nov','dec'];
+  let targetYear = (typeof templateParams !== 'undefined' && templateParams.year) ? templateParams.year : null;
 
-        const build = (day, monthKey, year) => {
-          const monthIndex = months.indexOf(monthKey.toLowerCase().slice(0,3));
-          if (!isNaN(day) && monthIndex !== -1 && !isNaN(year)) {
-            return new Date(Number(year), monthIndex, Number(day));
-          }
-          return null;
-        };
+  const pastItems = [];
+  for (const item of items) {
+    let keep = false;
+    if (item.event) {
+      if (item.event.end_date) {
+        if (new Date(item.event.end_date) < today) keep = true;
+      } else if (item.event.start_date) {
+        if (new Date(item.event.start_date) < today) keep = true;
+      }
+    }
+    if (keep && targetYear) {
+      let aDateStr = item.event && item.event.start_date ? item.event.start_date : null;
+      let itemYear = aDateStr ? aDateStr.split('-')[0] : null;
+      if (itemYear != targetYear) {
+        keep = false;
+      }
+    }
+    if (keep) pastItems.push(item);
+  }
 
-        // Case: day-month-year (e.g. "19 Sep 2025")
-        if (/^\d{1,2}$/.test(parts[0]) && parts.length >= 3) {
-          const day = parseInt(parts[0], 10);
-          const monthKey = parts[1];
-          const year = parseInt(parts[2], 10);
-          const d = build(day, monthKey, year);
-          if (d && !isNaN(d.getTime())) return d;
-        }
+  // Sort past events by start_date descending
+  pastItems.sort((a, b) => {
+    let aDate = a.event && a.event.start_date ? new Date(a.event.start_date) : new Date('1000-01-01');
+    let bDate = b.event && b.event.start_date ? new Date(b.event.start_date) : new Date('1000-01-01');
+    return bDate - aDate;
+  });
 
-        // Case: month-day-year (e.g. "July 04 2025")
-        if (/^[A-Za-z]+$/.test(parts[0]) && parts.length >= 3) {
-          const monthKey = parts[0];
-          const day = parseInt(parts[1], 10);
-          const year = parseInt(parts[2], 10);
-          const d = build(day, monthKey, year);
-          if (d && !isNaN(d.getTime())) return d;
-        }
+  function formatDate(dStr) {
+    if (!dStr) return '';
+    const parts = dStr.split('-');
+    if (parts.length === 3) {
+      const d = new Date(parts[0], parts[1] - 1, parts[2]);
+      const day = String(d.getDate()).padStart(2, '0');
+      const month = d.toLocaleString('en-US', { month: 'short' });
+      const year = d.getFullYear();
+      return `${day} ${month}, ${year}`;
+    }
+    return dStr;
+  }
 
-        // fallback
-        const fallback = new Date(dateStr);
-        return isNaN(fallback.getTime()) ? null : fallback;
-      };
+  function formatDateRange(startDate, endDate) {
+    if (!startDate || !endDate) return '';
 
-      let filteredItems = (items || []).filter(item => {
-        if (!item || !item.event.start_date) return false;
-        const startDate = parseEventDate(item.event.start_date);
-        if (!startDate) return false;
-        const startYear = startDate.getFullYear();
+    const startParts = startDate.split('-');
+    const endParts = endDate.split('-');
+    if (startParts.length !== 3 || endParts.length !== 3) {
+      return `${formatDate(startDate)} - ${formatDate(endDate)}`;
+    }
 
-        let endDate = null;
-        let endYear = null;
-        if (item.event.end_date) {
-          const parsedEnd = parseEventDate(item.event.end_date);
-          if (parsedEnd) {
-            endDate = parsedEnd;
-            endYear = endDate.getFullYear();
-          }
-        }
+    const start = new Date(startParts[0], startParts[1] - 1, startParts[2]);
+    const end = new Date(endParts[0], endParts[1] - 1, endParts[2]);
 
-        // Determine whether the event occurs in the target year.
-        let occursInYear = false;
-        if (endDate) {
-          // event spans from startDate to endDate: check if target year is within span
-          if (startYear <= yearNum && endYear >= yearNum) occursInYear = true;
-        } else {
-          // single-date event: year must match exactly
-          occursInYear = (startYear === yearNum);
-        }
-        if (!occursInYear) return false;
+    if (start.getFullYear() === end.getFullYear() && start.getMonth() === end.getMonth()) {
+      const startDay = String(start.getDate()).padStart(2, '0');
+      const endDay = String(end.getDate()).padStart(2, '0');
+      const month = start.toLocaleString('en-US', { month: 'short' });
+      return `${startDay}-${endDay} ${month}, ${start.getFullYear()}`;
+    }
 
-        // Determine whether event is older than now.
-        if (endDate) {
-          if (!(endDate.getTime() < now.getTime())) return false;
-        } else {
-          if (!(startDate.getTime() < now.getTime())) return false;
-        }
+    return `${formatDate(startDate)} - ${formatDate(endDate)}`;
+  }
+%>
+<div class="events-list list">
 
-        return true;
-      });
+<% for (const item of pastItems) { 
+  let category = (item.categories && item.categories.length > 0) ? item.categories[0] : '';
+  let cat_img = category ? category.toLowerCase().replace(/ /g, '_').replace(/-/g, '_') : 'default';
+  let imgSrc = item.card_image ? item.card_image : `/events/images/${cat_img}.svg`;
 
-      // Sort filtered items by parsed start date (most recent first)
-      filteredItems.sort(function(a, b) {
-        const da = parseEventDate(a && a.event && a.event.start_date);
-        const db = parseEventDate(b && b.event && b.event.start_date);
-        if (!da && !db) return 0;
-        if (!da) return 1;
-        if (!db) return -1;
-        return db.getTime() - da.getTime();
-      });
-    %>
+  let dateText = '';
+  if (item.event && item.event.start_date && item.event.end_date && item.event.start_date !== item.event.end_date) {
+      dateText = formatDateRange(item.event.start_date, item.event.end_date);
+  } else if (item.event && item.event.start_date) {
+      dateText = formatDate(item.event.start_date);
+  }
 
-    <% for (const item of filteredItems) { %>
-      <div class="card" <%= metadataAttrs(item) %>>
-        <a href="<%- item.path %>" class="card-link">
-          <div class="card-content-wrapper">
-            
-            <div class="event-date listing-date">
-              <% 
-                const startDate = parseEventDate(item.event.start_date);
-                const startDay = startDate.getDate();
-                const startMonth = startDate.toLocaleString('en-GB', { month: 'short' });
-                const startYear = startDate.getFullYear();
-                
-                let dateDisplay = '';
-            
-                if (item.event.end_date && parseEventDate(item.event.end_date)) {
-                  const endDate = parseEventDate(item.event.end_date);
-                  const endDay = endDate.getDate();
-                  const endMonth = endDate.toLocaleString('en-GB', { month: 'short' });
-                  const endYear = endDate.getFullYear();
-            
-                  if (startMonth === endMonth && startYear === endYear) {
-                    if (startDay === endDay) {
-                      dateDisplay = `${startDay} ${startMonth}, ${startYear}`;
-                    } else {
-                      dateDisplay = `${startDay}-${endDay} ${startMonth}, ${startYear}`;
-                    }
-                  } else if (startYear === endYear) {
-                    dateDisplay = `${startDay} ${startMonth}-${endDay} ${endMonth}, ${startYear}`;
-                  } else {
-                    dateDisplay = `${startDay} ${startMonth}, ${startYear}-${endDay} ${endMonth}, ${endYear}`;
-                  }
-                } else {
-                  dateDisplay = `${startDay} ${startMonth}, ${startYear}`;
-                }
-              %>
-              <%= dateDisplay %>
-            </div>
+  function getNonEmptyItems(arr) {
+    if (!arr || !Array.isArray(arr)) return [];
+    return arr.filter(x => {
+      if (typeof x === 'string') return x.trim() !== '';
+      if (x && typeof x === 'object') {
+        const name = x.name || x.abbreviation || '';
+        return typeof name === 'string' && name.trim() !== '';
+      }
+      return false;
+    });
+  }
 
-            <div class="event-labels">
-              <div class="event-category listing-categories">
-              <%- (item.categories ? (Array.isArray(item.categories) ? item.categories[0] : item.categories) : 'EVENT').toUpperCase() %>
-              </div>
+  let validOrganizers = getNonEmptyItems(item.organizers);
+  let validPresenters = getNonEmptyItems(item.presenters);
+  let validInstructors = getNonEmptyItems(item.instructors);
+  let validHelpers = getNonEmptyItems(item.helpers);
+  let validHosts = getNonEmptyItems(item.host || item.hosts);
+%>
 
-            </div>
-            <div class="title listing-title"><%- item.title %></div>
-            <div class="separator"></div>
-            <!--<p class="description listing-description"><%- item.event.description %></p> -->
-            <div class="event-footer">
-              <div class="event-host-info-group">
-                <%
-                const peopleBlocks = [
-                    { label: 'Organizer(s)', data: item.organizers},
-                    { label: 'Presenter(s)', data: item.presenters},
-                    { label: 'Instructor(s)', data: item.instructors},
-                    { label: 'Helper(s)', data: item.helpers},
-                    { label: 'Host(s)', data: item.host},
-                  ];
-                %>
-                
-                <% peopleBlocks.forEach(function(block) { %>
-                <% 
-                // check if block has valid data i.e. non-empty fields
-                  const hasValidData = block.data && block.data.length > 0 && block.data.some(function(person) {
-                  if (!person) return false;
-                  if (typeof person === 'string') return person.trim().length > 0;
-                  return (person.name || '').toString().trim().length > 0;
-                  });
-                %>
-                <% if (hasValidData) { %>
-
-                  <div class="event-person-group" style="display: block;">
-                  <span class="person-label"><%= block.label %>:</span>
-                  <span class="person-list" style="white-space: normal;">
-                    <%= block.data
-                    .map(function(person){
-                      if (!person) return '';
-                      if (typeof person === 'string') return person.trim();
-                      var name = (person.name || '').toString().trim();
-                      var url  = (person.url || '').toString().trim();
-                    if (!name) return '';
-                    return name;
-                    })
-                    .filter(function(x){ return x && x.length > 0; })
-                    .join(', ')
-                %>
-                </span>
-                  </div>
-
-                <% } %>
-                <% }) %>
-
-                </div>
-                <% if (item.links && item.links.materials){ %>
-                <div class="event-material">
-                  <div class="trainingurl listing-training">
-                    <i class="bi bi-folder2"></i>
-                    <a href="<%- item.links.materials %>" target="_blank"> Training Material</a>
-                  </div>
-                </div>
-              <% } %>
-            </div>
-
-          </div>
-        </a>
-      </div>
+<div class="card mb-4" <%= metadataAttrs(item) %>>
+  <div class="card-header d-flex align-items-center justify-content-between gap-2">
+    <!-- different titles for different screen sizes -->
+    <a class="flex-grow-1 card-title-clamp fw-semibold fs-5 lh-sm d-md-none listing-title" href="<%- item.path %>"><%- item.title %></a>
+    <a class="flex-grow-1 text-truncate fw-semibold fs-5 lh-sm d-none d-md-block listing-title" href="<%- item.path %>"><%- item.title %></a>
+    <% if (category) { %>
+      <span class="badge rounded-pill bg-body-tertiary text-secondary border border-secondary-subtle ms-2 px-2 py-1 lh-sm fw-normal small flex-shrink-0 d-none d-md-inline-flex align-items-center listing-categories"><%- category %></span>
     <% } %>
   </div>
 
+  <!-- start row -->
+  <div class="row g-0 align-items-center">
+    <div class="col-md-2 px-2 py-3 d-none d-md-block">
+      <a href="<%- item.path %>">
+        <img src="<%- imgSrc %>" onerror="this.onerror=null; this.src='/events/images/default.svg';" class="img-fluid d-block mx-auto rounded-start" alt="<%- category %>">
+      </a>
+    </div>
+
+    <div class="col-md-10">
+      <div class="card-body">
+        <h6 class="card-subtitle mb-2 listing-date" style="display:none;"><%- item.event && item.event.start_date ? formatDate(item.event.start_date) : '' %></h6>
+        <h6 class="card-subtitle mb-2"><%- dateText %></h6>
+        <% if (item.event) { 
+             let infosFull = [];
+             let infosMobile = [];
+             
+             if (item.event.location) {
+                let locText = item.event.location.name ? item.event.location.name : item.event.location;
+                if (typeof locText === 'string') {
+                  infosFull.push({ icon: 'bi-geo-alt-fill', text: locText });
+                }
+             }
+             if (item.event.format) {
+                let fmtText = item.event.format.type ? item.event.format.type : item.event.format;
+                if (typeof fmtText === 'string') {
+                  infosFull.push({ icon: 'bi-person-video3', text: fmtText });
+                  infosMobile.push({ icon: 'bi-person-video3', text: fmtText });
+                }
+             }
+             if (item.event.language) {
+                let langText = item.event.language.primary ? item.event.language.primary : item.event.language;
+                if (typeof langText === 'string') {
+                  infosFull.push({ icon: 'bi-translate', text: langText });
+                  infosMobile.push({ icon: 'bi-translate', text: langText });
+                }
+             }
+        %>
+          <% if (infosFull.length > 0) { %>
+            <h6 class="card-subtitle mb-2 d-none d-md-block">
+              <% for (let i = 0; i < infosFull.length; i++) { %>
+                <i class="bi <%= infosFull[i].icon %>"></i> <%- infosFull[i].text %><% if (i < infosFull.length - 1) { %> | <% } %>
+              <% } %>
+            </h6>
+          <% } %>
+          <% if (infosMobile.length > 0) { %>
+            <h6 class="card-subtitle mb-2 d-block d-md-none">
+              <% for (let i = 0; i < infosMobile.length; i++) { %>
+                <i class="bi <%= infosMobile[i].icon %>"></i> <%- infosMobile[i].text %><% if (i < infosMobile.length - 1) { %> | <% } %>
+              <% } %>
+            </h6>
+          <% } %>
+        <% } %>
+
+        <div class="card-text">
+          <% if (validOrganizers.length > 0) { %>
+            <div class="d-flex flex-wrap align-items-center gap-2 mt-2 d-none d-md-block">
+              <span class="small text-body-secondary fw-semibold text-nowrap">Organizers:</span>
+              <% for (const org of validOrganizers) { %>
+                <span class="badge rounded-pill text-bg-light border text-dark text-wrap"><%- typeof org === 'string' ? org : (org.name || org.abbreviation) %></span>
+              <% } %>
+            </div>
+          <% } %>
+          
+          <% if (validPresenters.length > 0) { %>
+            <div class="d-flex flex-wrap align-items-center gap-2 mt-2 d-none d-md-block">
+              <span class="small text-body-secondary fw-semibold text-nowrap">Presenters:</span>
+              <% for (const pres of validPresenters) { %>
+                <span class="badge rounded-pill text-bg-light border text-dark text-wrap"><%- typeof pres === 'string' ? pres : (pres.name || pres.abbreviation) %></span>
+              <% } %>
+            </div>
+          <% } %>
+
+          <% if (validInstructors.length > 0) { %>
+            <div class="d-flex flex-wrap align-items-center gap-2 mt-2 d-none d-md-block">
+              <span class="small text-body-secondary fw-semibold text-nowrap">Instructors:</span>
+              <% for (const inst of validInstructors) { %>
+                <span class="badge rounded-pill text-bg-light border text-dark text-wrap"><%- typeof inst === 'string' ? inst : (inst.name || inst.abbreviation) %></span>
+              <% } %>
+            </div>
+          <% } %>
+
+          <% if (validHelpers.length > 0) { %>
+            <div class="d-flex flex-wrap align-items-center gap-2 mt-2 d-none d-md-block">
+              <span class="small text-body-secondary fw-semibold text-nowrap">Helpers:</span>
+              <% for (const helper of validHelpers) { %>
+                <span class="badge rounded-pill text-bg-light border text-dark text-wrap"><%- typeof helper === 'string' ? helper : (helper.name || helper.abbreviation) %></span>
+              <% } %>
+            </div>
+          <% } %>
+
+          <% if (validHosts.length > 0) { %>
+            <div class="d-flex flex-wrap align-items-center gap-2 mt-2">
+              <span class="small text-body-secondary fw-semibold text-nowrap">Hosts:</span>
+              <% for (const host of validHosts) { %>
+                <% if (typeof host === 'object' && host.abbreviation && host.name) { %>
+                  <span class="badge rounded-pill text-bg-light border text-dark text-wrap" data-bs-toggle="tooltip" title="<%- host.name %>"><%- host.abbreviation %></span>
+                <% } else { %>
+                  <span class="badge rounded-pill text-bg-light border text-dark text-wrap"><%- typeof host === 'string' ? host : (host.abbreviation || host.name) %></span>
+                <% } %>
+              <% } %>
+            </div>
+          <% } %>
+        </div>
+
+      <!-- end card-body -->
+      </div>
+    <!-- end col-md-10 -->
+    </div>
+  <!-- end row -->
+  </div>
+  
+  <div class="card-footer">
+    <div class="row g-2 align-items-center">
+      <div class="col">
+        <% if (item.links && item.links.materials){ %>
+          <div class="event-material">
+            <div class="trainingurl listing-training">
+              <i class="bi bi-folder2"></i>
+              <a href="<%- item.links.materials %>" target="_blank"> Training Material</a>
+            </div>
+          </div>
+        <% } %>
+      </div>
+      <div class="col-auto ms-auto">
+        <a class="btn btn-primary btn-sm text-nowrap" href="<%- item.path %>">Read More</a>
+      </div>
+    </div>
+  </div>
+
 </div>
-
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-  document.querySelectorAll('.card').forEach(card => {
-    const title = card.querySelector('.title');
-    const desc = card.querySelector('.description');
-    if (!title || !desc) return;
-
-    // Get computed line height and height of title
-    const lineHeight = parseFloat(getComputedStyle(title).lineHeight);
-    const titleLines = Math.round(title.offsetHeight / lineHeight);
-
-    if (titleLines >= 2) {
-      // Clamp title to 2 lines
-      title.style.display = '-webkit-box';
-      title.style.webkitLineClamp = '2';
-      title.style.webkitBoxOrient = 'vertical';
-      title.style.overflow = 'hidden';
-      title.style.textOverflow = 'ellipsis';
-      // Clamp desc to 1 line
-      desc.style.display = '-webkit-box';
-      desc.style.webkitLineClamp = '1';
-      desc.style.webkitBoxOrient = 'vertical';
-      desc.style.overflow = 'hidden';
-      desc.style.textOverflow = 'ellipsis';
-    } else {
-      // Show full title (remove clamping)
-      title.style.display = '';
-      title.style.webkitLineClamp = '';
-      title.style.webkitBoxOrient = '';
-      title.style.overflow = '';
-      title.style.textOverflow = '';
-      // Clamp desc to 2 lines
-      desc.style.display = '-webkit-box';
-      desc.style.webkitLineClamp = '2';
-      desc.style.webkitBoxOrient = 'vertical';
-      desc.style.overflow = 'hidden';
-      desc.style.textOverflow = 'ellipsis';
-    }
-  });
-});
-</script>
+<% } %>
+</div>
 ```

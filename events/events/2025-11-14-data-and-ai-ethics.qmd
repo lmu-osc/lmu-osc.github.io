@@ -35,13 +35,14 @@ contact:
 host:
 - name: Data Ethics Initiative at the LMU Department of Statistics
   url: ''
-- name: Munich Center for Machine Learning (MCML)
+- name: Munich Center for Machine Learning
   url: ''
-- name: Open Science Initiative in Statistics (OSIS)
+  abbreviation: MCML
+- name: Open Science Initiative in Statistics
   url: ''
+  abbreviation: OSIS
 template: templates/event-template.html
 filters:
     - templates/process-event-yaml.lua
 ---
-NA
----
+
