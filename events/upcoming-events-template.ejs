@@ -64,7 +64,9 @@
 <% for (const item of upcomingItems) { 
   let category = (item.categories && item.categories.length > 0) ? item.categories[0] : '';
   let cat_img = category ? category.toLowerCase().replace(/ /g, '_').replace(/-/g, '_') : 'default';
-  let imgSrc = item.card_image ? item.card_image : `/events/images/${cat_img}.svg`;
+  let hasCardImage = !!item.card_image;
+  let imgBase = `/events/images/${cat_img}`;
+  let imgSrc = hasCardImage ? item.card_image : `${imgBase}.svg`;
 
   let dateText = '';
   if (item.event && item.event.start_date && item.event.end_date && item.event.start_date !== item.event.end_date) {
@@ -108,7 +110,11 @@
   <div class="row g-0 align-items-center">
     <div class="col-md-2 px-2 py-3 d-none d-md-block">
       <a href="<%- item.path %>">
-        <img src="<%- imgSrc %>" onerror="this.onerror=null; this.src='/events/images/default.svg';" class="img-fluid d-block mx-auto rounded-start" alt="<%- category %>">
+        <% if (hasCardImage) { %>
+          <img src="<%- imgSrc %>" onerror="this.onerror=null; this.src='/events/images/default.svg';" class="img-fluid d-block mx-auto rounded-start" alt="<%- category %>">
+        <% } else { %>
+          <img src="<%- imgSrc %>" onerror="if(!this._tried){this._tried=1; this.src='<%- imgBase %>.png';}else if(this._tried==1){this._tried=2; this.src='<%- imgBase %>.jpg';}else if(this._tried==2){this._tried=3; this.src='<%- imgBase %>.jpeg';}else{this.onerror=null; this.src='/events/images/default.svg';}" class="img-fluid d-block mx-auto rounded-start" alt="<%- category %>">
+        <% } %>
       </a>
     </div>
 
