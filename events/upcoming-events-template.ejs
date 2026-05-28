@@ -73,7 +73,7 @@
       dateText = formatDate(item.event.start_date);
   }
 
-  let description = item.event && item.event.description ? item.event.description : item.event_description;
+  let description = item.event && item.event.card_description ? item.event.card_description : item.event.description;
 
   function getNonEmptyItems(arr) {
     if (!arr || !Array.isArray(arr)) return [];

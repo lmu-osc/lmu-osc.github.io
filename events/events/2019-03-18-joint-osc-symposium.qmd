@@ -6,10 +6,23 @@ categories:
 event:
   start_date: '2019-03-18'
   end_date: ''
-  description: |
+  card_description: |
     Computational Statstics and Statistical Software III Symposium on the DAGStat Conference 2019
 
   time: '9:00-10:40'
+  description: |
+    Since Monday, March 18th, the [DAGStat Conference 2019](https://www.dagstat2019.statistik.uni-muenchen.de/index.html) has been taking place in Munich with the motto *"Statistics under one umbrella"*. Accordingly, we contributed a joint OSC symposium *"Computational Statistics and Statistical Software III (Open science and reproducibility)"*. Each talk and a link to the respective slides can be found below:
+  
+    | Time | Talk |
+    |------|------|
+    | 09:00 am – 09:20 am | **Open Science and statistics**  <br>*[Anne-Laure Boulesteix](/people/people/anne-laure-boulesteix.qmd)*  <br>slides: <https://osf.io/u2zbc/> |
+    | 09:20 am – 09:40 am | **Research Software Engineers**  <br>*[Heidi Seibold](/people/people/heidi-seibold.qmd)*  <br>slides: <https://osf.io/eaj6m/> |
+    | 09:40 am – 10:00 am | **Reproducible Methodological Research and Scientific Publishing**  <br>*[Fabian Scheipl](/people/people/fabian-scheipl.qmd)*  <br>slides: <https://osf.io/5ahkb/> |
+    | 10:00 am – 10:20 am | **Correcting for bias in the literature: A comparison of metaanalytic methods for bias-correction**  <br>*[Felix D. Schönbrodt](/people/people/felix-schoenbrodt.qmd)*  <br>slides: <https://osf.io/hkyrx/> |
+    | 10:20 am – 10:40 am | **The multiplicity of possible analysis strategies and how it is handled across scientific disciplines**  <br>*[Sabine Hoffmann](/people/people/sabine-hoffmann.qmd)*  <br>slides: <https://osf.io/ykbux/> |
+  
+    Thank you very much for coming!
+    
   location:
     name: online
     address: 
@@ -26,19 +39,6 @@ links:
   registration: 
   materials:  https://osf.io/pjthu/files/osfstorage
   workshop_website: https://www.dagstat2019.statistik.uni-muenchen.de/index.html
-event_description: |
-  Since Monday, March 18th, the [DAGStat Conference 2019](https://www.dagstat2019.statistik.uni-muenchen.de/index.html) has been taking place in Munich with the motto *"Statistics under one umbrella"*. Accordingly, we contributed a joint OSC symposium *"Computational Statistics and Statistical Software III (Open science and reproducibility)"*. Each talk and a link to the respective slides can be found below:
-
-  | Time | Talk |
-  |------|------|
-  | 09:00 am – 09:20 am | **Open Science and statistics**  <br>*[Anne-Laure Boulesteix](/people/people/anne-laure-boulesteix.qmd)*  <br>slides: <https://osf.io/u2zbc/> |
-  | 09:20 am – 09:40 am | **Research Software Engineers**  <br>*[Heidi Seibold](/people/people/heidi-seibold.qmd)*  <br>slides: <https://osf.io/eaj6m/> |
-  | 09:40 am – 10:00 am | **Reproducible Methodological Research and Scientific Publishing**  <br>*[Fabian Scheipl](/people/people/fabian-scheipl.qmd)*  <br>slides: <https://osf.io/5ahkb/> |
-  | 10:00 am – 10:20 am | **Correcting for bias in the literature: A comparison of metaanalytic methods for bias-correction**  <br>*[Felix D. Schönbrodt](/people/people/felix-schoenbrodt.qmd)*  <br>slides: <https://osf.io/hkyrx/> |
-  | 10:20 am – 10:40 am | **The multiplicity of possible analysis strategies and how it is handled across scientific disciplines**  <br>*[Sabine Hoffmann](/people/people/sabine-hoffmann.qmd)*  <br>slides: <https://osf.io/ykbux/> |
-
-  Thank you very much for coming!
-  
 instructors:
   - name: 
     url: ''

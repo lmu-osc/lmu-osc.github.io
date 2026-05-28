@@ -9,6 +9,9 @@ event:
   end_date: YYYY-MM-DD     # e.g. "2026-09-24", non-mandatory field
   time: "START-END CET"           # e.g. "14:00 - 17:00 CET"
   description: |
+    Longer overview text for the event detail page. That is, the content here displays on the event page. You can use markdown formatting here to structure the content, add links, images, etc. 
+  
+  card_description: |
     "SHORT DESCRIPTION OF THE EVENT. This will appear in the event card on the main Events page. Keep it concise and engaging to attract attendees. MAX 2-3 SENTENCES."
   location:
     name: "BUILDING NAME, ROOM NAME"    # e.g. "LMU Main Building, Room 123"
@@ -32,9 +35,6 @@ links:
   workshop_website: "WORKSHOP WEBSITE URL"   # e.g. "https://lmu-osc.github.io/introduction-to-renv/"
 
 # Event Description: appears in the Event card an optionally in the Event page itself
-event_description: |
-  Longer overview text for the event detail page. That is, the content here displays on the event page. You can use markdown formatting here to structure the content, add links, images, etc. 
-
 # Add as many instructors as needed in the format below
 instructors:
   - name: "INSTRUCTOR 1 NAME"
