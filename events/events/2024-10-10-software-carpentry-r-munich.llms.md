@@ -6,7 +6,8 @@
 
 #####  Location
 
-Mensa Leopoldstr 13A, room 046  
+Mensa Giselastraße  
+Leopoldstr. 13A, Room 046, 80802 München
 
 #####  Format
 

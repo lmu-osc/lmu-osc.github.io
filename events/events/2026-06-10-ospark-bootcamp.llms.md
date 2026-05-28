@@ -8,7 +8,7 @@ March 13, 2026
 
 #####  Location
 
-Online and Munich, Germany  
+Munich, Germany  
 
 #####  Format
 

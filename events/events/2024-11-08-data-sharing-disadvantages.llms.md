@@ -2,7 +2,7 @@
 
 #####  Date & Time
 
-08 Nov, 2024  
+08 Nov 2025  
 14:00 CET
 
 #####  Location

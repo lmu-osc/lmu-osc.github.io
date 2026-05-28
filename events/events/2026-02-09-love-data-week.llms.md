@@ -8,7 +8,7 @@ February 9, 2026
 
 #####  Location
 
-Online (Zoom)  
+  
 
 #####  Format
 

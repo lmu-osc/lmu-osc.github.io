@@ -2,7 +2,7 @@
 
 #####  Date & Time
 
-14 Jul, 2023  
+14 Jul 2023  
 14:00 CET
 
 #####  Location

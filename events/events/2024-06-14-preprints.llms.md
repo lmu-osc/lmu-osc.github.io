@@ -2,7 +2,7 @@
 
 #####  Date & Time
 
-14 Jun, 2024  
+14 Jun 2024  
 14:00 CET
 
 #####  Location

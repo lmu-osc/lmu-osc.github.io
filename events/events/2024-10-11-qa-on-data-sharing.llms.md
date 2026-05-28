@@ -2,7 +2,7 @@
 
 #####  Date & Time
 
-11 Oct, 2024  
+11 Oct 2024  
 14:00 CET
 
 #####  Location

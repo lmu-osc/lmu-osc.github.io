@@ -6,7 +6,8 @@
 
 #####  Location
 
-Hybrid (Ludwigstraße 25, Munich and via Zoom)  
+[Philologicum Library  
+Ludwigstraße 25, 80539 Munich](https://maps.app.goo.gl/Rvq24yLKyRz92sjQ8)
 
 #####  Format
 

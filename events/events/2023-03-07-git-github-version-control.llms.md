@@ -2,11 +2,11 @@
 
 #####  Date & Time
 
-March 07, 2023  
+07 Mar 2023  
 
 #####  Location
 
-Online (Zoom)  
+  
 
 #####  Format
 

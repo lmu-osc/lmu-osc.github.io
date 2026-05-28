@@ -6,7 +6,8 @@
 
 #####  Location
 
-CAS LMU, Seestraße 13, 80802 Munich  
+CAS LMU  
+Seestraße 13, 80802 Munich
 
 #####  Format
 

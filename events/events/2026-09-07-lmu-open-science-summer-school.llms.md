@@ -9,8 +9,8 @@ April 22, 2026
 
 #####  Location
 
-[Online and Philologicum Library, Ludwigstraße 25, 80539 Munich  
-](https://maps.app.goo.gl/Rvq24yLKyRz92sjQ8)
+[Philologicum Library  
+Ludwigstraße 25, 80539 Munich](https://maps.app.goo.gl/Rvq24yLKyRz92sjQ8)
 
 #####  Format
 

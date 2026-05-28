@@ -6,7 +6,8 @@
 
 #####  Location
 
-Wikipedia Munich, Angertorstraße 3  
+Wikipedia Munich  
+Angertorstraße 3, 80469 Munich
 
 #####  Format
 

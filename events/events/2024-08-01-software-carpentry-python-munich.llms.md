@@ -6,7 +6,8 @@
 
 #####  Location
 
-LMU Biozentrum, Großhaderner Str. 2, 82152 Planegg-Martinsried  
+LMU Biozentrum Martinsried  
+Großhaderner Str. 2, 82152 Planegg-Martinsried
 
 #####  Format
 

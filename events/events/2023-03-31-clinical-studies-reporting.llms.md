@@ -2,7 +2,7 @@
 
 #####  Date & Time
 
-31 Mar, 2023  
+31 Mar 2023  
 14:00 CET
 
 #####  Location
