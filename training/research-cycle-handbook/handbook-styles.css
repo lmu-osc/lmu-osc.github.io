@@ -216,3 +216,32 @@ svg :is(text, tspan) { font-family: inherit !important; font-weight: bold; point
 }
 
 
+/* 
+customizations for the accordions
+*/
+
+.rh-accordion > .accordion-item > .accordion-header {
+  display: flex;
+  align-items: stretch;
+}
+
+.rh-accordion > .accordion-item > .accordion-header .accordion-header-content {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: var(--bs-accordion-btn-padding-y) var(--bs-accordion-btn-padding-x);
+}
+
+.rh-accordion > .accordion-item > .accordion-header .accordion-toggle-only {
+  width: auto;
+  flex: 0 0 auto;
+  padding: var(--bs-accordion-btn-padding-y) 1rem;
+  border: 0;
+  border-left: var(--bs-accordion-border-width) solid var(--bs-accordion-border-color);
+  border-radius: 0;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: var(--bs-accordion-active-bg);
+}

@@ -16,51 +16,6 @@ anchor-sections: true
 
 ```{=html}
 
-
-
-<style>
-.rh-accordion > .accordion-item > .accordion-header {
-  display: flex;
-  align-items: stretch;
-}
-
-.rh-accordion > .accordion-item > .accordion-header .accordion-header-content {
-  flex: 1 1 auto;
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  padding: var(--bs-accordion-btn-padding-y) var(--bs-accordion-btn-padding-x);
-  background-color: var(--bs-accordion-btn-bg);
-}
-
-.rh-accordion > .accordion-item > .accordion-header .accordion-toggle-only {
-  width: auto;
-  flex: 0 0 auto;
-  padding: var(--bs-accordion-btn-padding-y) 1rem;
-  background-color: var(--bs-accordion-btn-bg);
-  border: 0;
-  border-left: var(--bs-accordion-border-width) solid var(--bs-accordion-border-color);
-  border-radius: 0;
-}
-
-.rh-accordion > .accordion-item > .accordion-header .accordion-toggle-only::after {
-  margin-left: 0;
-}
-
-.rh-accordion > .accordion-item:first-of-type > .accordion-header .accordion-header-content,
-.rh-accordion > .accordion-item:first-of-type > .accordion-header .accordion-toggle-only {
-  border-top-left-radius: var(--bs-accordion-inner-border-radius);
-  border-top-right-radius: var(--bs-accordion-inner-border-radius);
-}
-
-.rh-accordion > .accordion-item:last-of-type > .accordion-header .accordion-header-content,
-.rh-accordion > .accordion-item:last-of-type > .accordion-header .accordion-toggle-only.collapsed {
-  border-bottom-left-radius: var(--bs-accordion-inner-border-radius);
-  border-bottom-right-radius: var(--bs-accordion-inner-border-radius);
-}
-</style>
-
-
 <div class="orc-phase-hero phase-1 container shadow rounded-4">
 <div class="row align-items-center p-3 p-lg-4 mt-4 mb-3">
 <!-- Cycle image -->
@@ -89,7 +44,7 @@ Checkpoints: Study Plan Presentation & Preregistration Submission
 <!-- first accordion -->
 <div class="accordion rh-accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle" id="accordion-explore-reuse">
 <div class="accordion-item">
-<div class="accordion-header" id="sec-explore-reuse">
+<div class="accordion-header no-anchor" id="sec-explore-reuse">
 <div class="accordion-header-content">
 <span class="icon-wrapper rounded-4 text-success bg-success-subtle p-3">
 <i class="bi bi-search m-0 fs-4"></i>
