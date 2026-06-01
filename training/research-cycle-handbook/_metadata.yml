@@ -1,0 +1,17 @@
+css: 
+  - handbook-styles.css
+
+format:
+  html:
+    page-layout: full
+    toc: false
+    css: handbook-styles.css
+    title-block-style: none
+    anchor-sections: true
+    sidebar: training
+    number-depth: 4
+    number-sections: true
+
+
+
+  # <script src="/assets/javascript/open_accordion_anchors.js"></script>
