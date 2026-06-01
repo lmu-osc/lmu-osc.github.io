@@ -2,14 +2,7 @@
 title: "3. Analyze & Collaborate"
 description: "Create reproducible analyses, document workflows, collaborate effectively, and ensure computational reproducibility"
 phase_order: 3
-sidebar: training
-number-depth: 4
-number-sections: true
 number-offset: [0,3,0]
-page-layout: full
-css: handbook-styles.css
-toc: false
-title-block-style: none
 ---
 
 ```{=html}
@@ -42,10 +35,7 @@ Checkpoints: Repository & Code Peer-Review + Result Presentation
 <div class="accordion rh-accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle" id="accordionExample">
 <div class="accordion-item">
 <div class="accordion-header no-anchor" id="sec-data-processing-analysis">
-<button class="accordion-button collapsed fw-semibold d-flex align-items-center gap-3" type="button"
-  data-bs-toggle="collapse"
-  data-bs-target="#collapseOne"
-  aria-expanded="false">
+<div class="accordion-header-content">
 <span class="icon-wrapper rounded-4 bg-success-subtle text-success p-3">
 <i class="bi bi-gear-wide-connected m-0 fs-4"></i> 
 </span>
@@ -53,7 +43,12 @@ Checkpoints: Repository & Code Peer-Review + Result Presentation
 
 ### Data Processing & Analysis 
 </div>
-</button>
+</div>
+<button class="accordion-button collapsed accordion-toggle-only" type="button"
+  data-bs-toggle="collapse"
+  data-bs-target="#collapseOne"
+  aria-expanded="false"
+  aria-label="Toggle Data Processing & Analysis section"></button>
 </div>
 <div id="collapseOne" class="accordion-collapse collapse">
 <div class="accordion-body p-4">
@@ -569,10 +564,7 @@ Example README to allow team members to review your code:
 <div class="accordion rh-accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle" id="accordionExample">
 <div class="accordion-item">
 <div class="accordion-header no-anchor fs-6" id="sec-reporting-results">
-<button class="accordion-button collapsed fw-semibold d-flex align-items-center gap-3" type="button"
-  data-bs-toggle="collapse"
-  data-bs-target="#collapseTwo"
-  aria-expanded="false">
+<div class="accordion-header-content">
 <span class="icon-wrapper rounded-4 bg-success-subtle text-success p-3">
 <i class="bi bi-file-earmark-richtext m-0 fs-4"></i> 
 </span>
@@ -580,7 +572,12 @@ Example README to allow team members to review your code:
 
 ### Reporting Results
 </div>
-</button>
+</div>
+<button class="accordion-button collapsed accordion-toggle-only" type="button"
+  data-bs-toggle="collapse"
+  data-bs-target="#collapseTwo"
+  aria-expanded="false"
+  aria-label="Toggle Reporting Results section"></button>
 </div>
 <div id="collapseTwo" class="accordion-collapse collapse">
 <div class="accordion-body p-4">

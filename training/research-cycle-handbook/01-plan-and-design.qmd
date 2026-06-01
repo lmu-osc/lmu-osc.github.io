@@ -3,17 +3,11 @@ title: "1. Plan & Design"
 description: "Explore existing resources, check legal requirements, write data management plans, design studies, and prepare preregistrations"
 body-class: orc-phase-1
 phase_order: 1
-sidebar: training
-number-depth: 4
-number-sections: true
 number-offset: [0,1,0]
-page-layout: full
-toc: false
-css: handbook-styles.css
-title-block-style: none
 ---
 
 ```{=html}
+
 <div class="orc-phase-hero phase-1 container shadow rounded-4">
 <div class="row align-items-center p-3 p-lg-4 mt-4 mb-3">
 <!-- Cycle image -->
@@ -43,10 +37,7 @@ Checkpoints: Study Plan Presentation & Preregistration Submission
 <div class="accordion rh-accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle" id="accordion-explore-reuse">
 <div class="accordion-item">
 <div class="accordion-header no-anchor" id="sec-explore-reuse">
-<button class="accordion-button collapsed fw-semibold d-flex align-items-center gap-3" type="button"
-  data-bs-toggle="collapse"
-  data-bs-target="#collapseOne"
-  aria-expanded="false">
+<div class="accordion-header-content">
 <span class="icon-wrapper rounded-4 text-success bg-success-subtle p-3">
 <i class="bi bi-search m-0 fs-4"></i>
 </span>
@@ -54,7 +45,12 @@ Checkpoints: Study Plan Presentation & Preregistration Submission
 
 ### Explore & Reuse
 </div>
-</button>
+</div>
+<button class="accordion-button collapsed accordion-toggle-only" type="button"
+  data-bs-toggle="collapse"
+  data-bs-target="#collapseOne"
+  aria-expanded="false"
+  aria-label="Toggle Explore & Reuse section"></button>
 </div>
 <div id="collapseOne" class="accordion-collapse collapse">
 <div class="accordion-body p-4">
@@ -492,10 +488,7 @@ Code publicly visible on GitHub without a license or equivalent text explicitly 
 <div class="accordion rh-accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle" id="accordion-legal-requirements">
 <div class="accordion-item">
 <div class="accordion-header no-anchor" id="sec-legal-requirements">
-<button class="accordion-button collapsed fw-semibold d-flex align-items-center gap-3" type="button"
-  data-bs-toggle="collapse"
-  data-bs-target="#collapseTwo"
-  aria-expanded="false">
+<div class="accordion-header-content">
 <span class="icon-wrapper rounded-4 bg-success-subtle text-success p-3">
 <i class="bi bi-shield-check m-0 fs-4"></i>
 </span>
@@ -503,7 +496,12 @@ Code publicly visible on GitHub without a license or equivalent text explicitly 
 
 ### Legal Requirements
 </div>
-</button>
+</div>
+<button class="accordion-button collapsed accordion-toggle-only" type="button"
+  data-bs-toggle="collapse"
+  data-bs-target="#collapseTwo"
+  aria-expanded="false"
+  aria-label="Toggle Legal Requirements section"></button>
 </div>
 <div id="collapseTwo" class="accordion-collapse collapse">
 <div class="accordion-body p-4">
@@ -685,10 +683,7 @@ For data protection guidance, contact the [LMU Data Protection Officer](https://
 <div class="accordion rh-accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle" id="accordion-research-data-management">
 <div class="accordion-item">
 <div class="accordion-header no-anchor" id="sec-research-data-management">
-<button class="accordion-button collapsed fw-semibold d-flex align-items-center gap-3" type="button"
-  data-bs-toggle="collapse"
-  data-bs-target="#collapseThree"
-  aria-expanded="false">
+<div class="accordion-header-content">
 <span class="icon-wrapper rounded-4 bg-success-subtle text-success p-3">
 <i class="bi bi-folder2-open fs-4 m-0"></i>
 </span>
@@ -696,7 +691,12 @@ For data protection guidance, contact the [LMU Data Protection Officer](https://
 
 ### Research Data Management Plans
 </div>
-</button>
+</div>
+<button class="accordion-button collapsed accordion-toggle-only" type="button"
+  data-bs-toggle="collapse"
+  data-bs-target="#collapseThree"
+  aria-expanded="false"
+  aria-label="Toggle Research Data Management Plans section"></button>
 </div>
 <div id="collapseThree" class="accordion-collapse collapse">
 <div class="accordion-body p-4">
@@ -846,10 +846,7 @@ The specific questions vary by discipline, data type, and funder requirements. D
 <div class="accordion rh-accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle" id="accordion-study-design-analysis-plan">
 <div class="accordion-item">
 <div class="accordion-header no-anchor" id="sec-study-design-analysis-plan">
-<button class="accordion-button collapsed fw-semibold d-flex align-items-center gap-3" type="button"
-  data-bs-toggle="collapse"
-  data-bs-target="#collapseFour"
-  aria-expanded="false">
+<div class="accordion-header-content">
 <span class="icon-wrapper rounded-4 bg-success-subtle text-success p-3">
 <i class="bi bi-clipboard-check m-0 fs-4"></i>
 </span>
@@ -857,7 +854,12 @@ The specific questions vary by discipline, data type, and funder requirements. D
 
 ### Study Design & Analysis Plan
 </div>
-</button>
+</div>
+<button class="accordion-button collapsed accordion-toggle-only" type="button"
+  data-bs-toggle="collapse"
+  data-bs-target="#collapseFour"
+  aria-expanded="false"
+  aria-label="Toggle Study Design & Analysis Plan section"></button>
 </div>
 <div id="collapseFour" class="accordion-collapse collapse">
 <div class="accordion-body p-4">

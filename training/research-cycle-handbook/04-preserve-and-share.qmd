@@ -2,14 +2,7 @@
 title: "4. Preserve & Share"
 description: "Archive research outputs, publish openly, obtain persistent identifiers, and maximize research impact"
 phase_order: 4
-sidebar: training
-number-depth: 4
-number-sections: true
 number-offset: [0,4,0]
-page-layout: full
-toc: false
-css: handbook-styles.css
-title-block-style: none
 ---
 
 
@@ -42,10 +35,7 @@ Checkpoint: Manuscript submission with DOIs for preregistration, data, and code
 <div class="accordion rh-accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle">
 <div class="accordion-item">
 <div class="accordion-header no-anchor" id="sec-fair-data-sharing">
-<button class="accordion-button collapsed fw-semibold d-flex align-items-center gap-3" type="button"
-  data-bs-toggle="collapse"
-  data-bs-target="#collapseOne"
-  aria-expanded="false">
+<div class="accordion-header-content">
 <span class="icon-wrapper rounded-4 bg-success-subtle text-success p-3">
 <i class="bi bi-database-up m-0 fs-4"></i> 
 </span>
@@ -53,7 +43,12 @@ Checkpoint: Manuscript submission with DOIs for preregistration, data, and code
 
 ### FAIR Data Sharing 
 </div>
-</button>
+</div>
+<button class="accordion-button collapsed accordion-toggle-only" type="button"
+  data-bs-toggle="collapse"
+  data-bs-target="#collapseOne"
+  aria-expanded="false"
+  aria-label="Toggle FAIR Data Sharing section"></button>
 </div>
 <div id="collapseOne" class="accordion-collapse collapse">
 <div class="accordion-body p-4">
@@ -467,10 +462,7 @@ _in construction_<!-- Reema? -->
 <div class="accordion rh-accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle" id="accordionExample">
 <div class="accordion-item">
 <div class="accordion-header no-anchor" id="sec-open-source-code">
-<button class="accordion-button collapsed fw-semibold d-flex align-items-center gap-3" type="button"
-  data-bs-toggle="collapse"
-  data-bs-target="#collapseTwo"
-  aria-expanded="false">
+<div class="accordion-header-content">
 <span class="icon-wrapper rounded-4 bg-success-subtle text-success p-3">
 <i class="bi bi-file-code m-0 fs-4"></i> 
 </span>
@@ -478,7 +470,12 @@ _in construction_<!-- Reema? -->
 
 ### Open Source Code 
 </div>
-</button>
+</div>
+<button class="accordion-button collapsed accordion-toggle-only" type="button"
+  data-bs-toggle="collapse"
+  data-bs-target="#collapseTwo"
+  aria-expanded="false"
+  aria-label="Toggle Open Source Code section"></button>
 </div>
 <div id="collapseTwo" class="accordion-collapse collapse">
 <div class="accordion-body p-4">
@@ -768,10 +765,7 @@ To publish you code on Zenodo, we recommend to<!-- these instructions contradict
 <div class="accordion rh-accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle" id="accordionExample">
 <div class="accordion-item">
 <div class="accordion-header no-anchor" id="sec-open-materials">
-<button class="accordion-button collapsed fw-semibold d-flex align-items-center gap-3" type="button"
-  data-bs-toggle="collapse"
-  data-bs-target="#collapseThree"
-  aria-expanded="false">
+<div class="accordion-header-content">
 <span class="icon-wrapper rounded-4 bg-success-subtle text-success p-3">
 <i class="bi bi-journal-arrow-up m-0 fs-4"></i> 
 </span>
@@ -779,7 +773,12 @@ To publish you code on Zenodo, we recommend to<!-- these instructions contradict
 
 ### Open Materials
 </div>
-</button>
+</div>
+<button class="accordion-button collapsed accordion-toggle-only" type="button"
+  data-bs-toggle="collapse"
+  data-bs-target="#collapseThree"
+  aria-expanded="false"
+  aria-label="Toggle Open Materials section"></button>
 </div>
 
 <div id="collapseThree" class="accordion-collapse collapse">
@@ -881,10 +880,7 @@ Regardless of your discipline:
 <div class="accordion rh-accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle" id="accordionExample">
 <div class="accordion-item">
 <div class="accordion-header no-anchor" id="sec-open-access-articles">
-<button class="accordion-button collapsed fw-semibold d-flex align-items-center gap-3" type="button"
-  data-bs-toggle="collapse"
-  data-bs-target="#collapseFour"
-  aria-expanded="false">
+<div class="accordion-header-content">
 <span class="icon-wrapper rounded-4 bg-success-subtle text-success p-3">
 <i class="bi bi-unlock2 m-0 fs-4"></i> 
 </span>
@@ -892,7 +888,12 @@ Regardless of your discipline:
 
 ### Open Access Articles 
 </div>
-</button>
+</div>
+<button class="accordion-button collapsed accordion-toggle-only" type="button"
+  data-bs-toggle="collapse"
+  data-bs-target="#collapseFour"
+  aria-expanded="false"
+  aria-label="Toggle Open Access Articles section"></button>
 </div>
 
 <div id="collapseFour" class="accordion-collapse collapse">
@@ -1162,10 +1163,7 @@ To get support for [Open Access LMU](https://epub.ub.uni-muenchen.de/), the LMU 
 <div class="accordion rh-accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle" id="accordionExample">
 <div class="accordion-item">
 <div class="accordion-header no-anchor" id="sec-attributions-and-persistent-identifiers">
-<button class="accordion-button collapsed fw-semibold d-flex align-items-center gap-3" type="button"
-  data-bs-toggle="collapse"
-  data-bs-target="#collapseFive"
-  aria-expanded="false">
+<div class="accordion-header-content">
 <span class="icon-wrapper rounded-4 bg-success-subtle text-success p-3">
 <i class="bi bi-person-badge m-0 fs-4"></i> 
 </span>
@@ -1173,7 +1171,12 @@ To get support for [Open Access LMU](https://epub.ub.uni-muenchen.de/), the LMU 
 
 ### Attributions & Persistent Identifiers 
 </div>
-</button>
+</div>
+<button class="accordion-button collapsed accordion-toggle-only" type="button"
+  data-bs-toggle="collapse"
+  data-bs-target="#collapseFive"
+  aria-expanded="false"
+  aria-label="Toggle Attributions & Persistent Identifiers section"></button>
 </div>
 
 <div id="collapseFive" class="accordion-collapse collapse">

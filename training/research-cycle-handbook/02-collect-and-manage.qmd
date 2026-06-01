@@ -2,14 +2,7 @@
 title: "2. Collect & Manage"
 description: "Implement FAIR data management, organize research outputs, maintain privacy, and ensure quality"
 phase_order: 2
-sidebar: training
-page-layout: full
-number-depth: 4
-number-sections: true
 number-offset: [0,2,0]
-toc: false
-css: handbook-styles.css
-title-block-style: none
 ---
 
 ```{=html}
@@ -43,10 +36,7 @@ Checkpoint: Data quality validation meeting
 <div class="accordion rh-accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle" id="accordionExample">
 <div class="accordion-item">
 <div class="accordion-header no-anchor" id="sec-data-collection">
-<button class="accordion-button collapsed fw-semibold d-flex align-items-center gap-3" type="button"
-  data-bs-toggle="collapse"
-  data-bs-target="#collapseOne"
-  aria-expanded="false">
+<div class="accordion-header-content">
 <span class="icon-wrapper rounded-4 bg-success-subtle text-success p-3">
 <i class="bi bi-journal-code m-0 fs-4"></i>
 </span>
@@ -54,7 +44,12 @@ Checkpoint: Data quality validation meeting
 
 ### Data Collection
 </div>
-</button>
+</div>
+<button class="accordion-button collapsed accordion-toggle-only" type="button"
+  data-bs-toggle="collapse"
+  data-bs-target="#collapseOne"
+  aria-expanded="false"
+  aria-label="Toggle Data Collection section"></button>
 </div>
 
 <div id="collapseOne" class="accordion-collapse collapse">
@@ -411,10 +406,7 @@ Data collection, in this context, consists in developing a judicious reproducibl
 <div class="accordion rh-accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle" id="accordionExample">
 <div class="accordion-item">
 <div class="accordion-header no-anchor" id="sec-data-management">
-<button class="accordion-button collapsed fw-semibold d-flex align-items-center gap-3" type="button"
-  data-bs-toggle="collapse"
-  data-bs-target="#collapseTwo"
-  aria-expanded="false">
+<div class="accordion-header-content">
 <span class="icon-wrapper rounded-4 bg-success-subtle text-success p-3">
 <i class="bi bi-folder-check m-0 fs-4"></i>
 </span>
@@ -422,7 +414,12 @@ Data collection, in this context, consists in developing a judicious reproducibl
 
 ### Data Management 
 </div>
-</button>
+</div>
+<button class="accordion-button collapsed accordion-toggle-only" type="button"
+  data-bs-toggle="collapse"
+  data-bs-target="#collapseTwo"
+  aria-expanded="false"
+  aria-label="Toggle Data Management section"></button>
 </div>
 <div id="collapseTwo" class="accordion-collapse collapse">
 <div class="accordion-body p-4">
@@ -938,10 +935,7 @@ In a version controlled workflow, you back up your local Git repositories on eit
 <div class="accordion rh-accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle" id="accordionExample">
 <div class="accordion-item">
 <div class="accordion-header no-anchor" id="sec-ethics-and-privacy">
-<button class="accordion-button collapsed fw-semibold d-flex align-items-center gap-3" type="button"
-  data-bs-toggle="collapse"
-  data-bs-target="#collapseThree"
-  aria-expanded="false">
+<div class="accordion-header-content">
 <span class="icon-wrapper rounded-4 bg-success-subtle text-success p-3">
 <i class="bi bi-shield-lock m-0 fs-4"></i>
 </span>
@@ -949,7 +943,12 @@ In a version controlled workflow, you back up your local Git repositories on eit
 
 ### Ethics & Privacy
 </div>
-</button>
+</div>
+<button class="accordion-button collapsed accordion-toggle-only" type="button"
+  data-bs-toggle="collapse"
+  data-bs-target="#collapseThree"
+  aria-expanded="false"
+  aria-label="Toggle Ethics & Privacy section"></button>
 </div>
 <div id="collapseThree" class="accordion-collapse collapse">
 <div class="accordion-body p-4">
@@ -1097,10 +1096,7 @@ For data protection guidance, contact the [LMU Data Protection Officer](https://
 <div class="accordion rh-accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle" id="accordionExample">
 <div class="accordion-item">
 <div class="accordion-header no-anchor" id="sec-quality-control">
-<button class="accordion-button collapsed fw-semibold d-flex align-items-center gap-3" type="button"
-  data-bs-toggle="collapse"
-  data-bs-target="#collapseFour"
-  aria-expanded="false">
+<div class="accordion-header-content">
 <span class="icon-wrapper rounded-4 bg-success-subtle text-success p-3">
 <i class="bi bi-check2-square m-0 fs-4"></i>
 </span>
@@ -1108,7 +1104,12 @@ For data protection guidance, contact the [LMU Data Protection Officer](https://
 
 ### Quality Control
 </div>
-</button>
+</div>
+<button class="accordion-button collapsed accordion-toggle-only" type="button"
+  data-bs-toggle="collapse"
+  data-bs-target="#collapseFour"
+  aria-expanded="false"
+  aria-label="Toggle Quality Control section"></button>
 </div>
 <div id="collapseFour" class="accordion-collapse collapse">
 <div class="accordion-body p-4">
