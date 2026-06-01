@@ -11,7 +11,7 @@ format:
     sidebar: training
     number-depth: 4
     number-sections: true
+    include-in-header:
+      - text: |
+          <script src="/assets/javascript/open_accordion_anchors.js" defer></script>
 
-
-
-  # <script src="/assets/javascript/open_accordion_anchors.js"></script>
