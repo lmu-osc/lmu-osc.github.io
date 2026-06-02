@@ -1,4 +1,6 @@
 
+## Preserve & Share Phase {#sec-preserve-and-share .visually-hidden}
+
 ```{=html}
 <div class="orc-phase-hero phase-4 container shadow rounded-4">
 <div class="row align-items-center p-3 p-lg-4 mt-4 mb-3">
@@ -33,7 +35,7 @@ Checkpoint: Manuscript submission with DOIs for preregistration, data, and code
 
 Sharing your data allows others to verify your findings, build on your work, and increase the impact of your research. But sharing does not always mean making everything publicly available. What you can share depends on the consent you obtained, the sensitivity of your data, and your ethics approval.
 
-In [1. Plan & Design](01-plan-and-design.qmd){.mark}, you wrote a Data Management Plan, in [2. Collect & Manage](02-collect-and-manage.qmd){.mark}, you created documentation for yourself, and in [3. Analyze & Collaborate](03-analyze-and-collaborate.qmd){.mark} you updated that documentation for your collaborators. Now you prepare that documentation for people who have no prior knowledge of your project and reassess you plan:
+In @sec-plan-and-design, you wrote a Data Management Plan, in @sec-collect-and-manage, you created documentation for yourself, and in @sec-analyze-and-collaborate you updated that documentation for your collaborators. Now you prepare that documentation for people who have no prior knowledge of your project and reassess you plan:
 
 ::: {.ms-1} 
 - **Make a final decision on how openly your data will be shared.**
@@ -48,15 +50,15 @@ These steps are straightforward if you followed previous recommendations: by thi
 #### 4.1.1. Open vs Restricted 
 <!-- I edited this a bit Reema, is this correct? overall I think this section could use more information and clarity. How about embargo?-->
 
-Not all data can or should be shared openly. Your sharing options depend on what consent participants gave and what your ethics approval permits (see [1.2.3. Ethics](01-plan-and-design.qmd#sec-legal-requirements){.mark}).
+Not all data can or should be shared openly. Your sharing options depend on what consent participants gave and what your ethics approval permits (see @sec-legal-requirements).
 
 <br>
 
 - **Open data** can be downloaded by anyone without restrictions. This maximizes reuse but is only appropriate when data contains no personal information or has been fully anonymized.
 
-- **Restricted access** means the metadata is available on a professional repository and clear instructions of the conditions of access to the data are provided. Requesting the data often requires describing the purpose of reuse (sometimes in the form of a preregistration, see [1.4.1. Pre-analysis planning](01-plan-and-design.qmd#sec-study-design-analysis-plan){.mark}), signing a Data Use Agreement, and agreeing to further conditions. This can be organized automatically through the repository or through contacting the authors<!--if so what's the difference with the option below?-->. This balances reuse with protection. 
+- **Restricted access** means the metadata is available on a professional repository and clear instructions of the conditions of access to the data are provided. Requesting the data often requires describing the purpose of reuse (sometimes in the form of a preregistration, see @sec-study-design-analysis-plan), signing a Data Use Agreement, and agreeing to further conditions. This can be organized automatically through the repository or through contacting the authors<!--if so what's the difference with the option below?-->. This balances reuse with protection. 
 
-- **Metadata only** describes what data exists without sharing the data itself. Others can discover your work and contact you to discuss access. This is appropriate when data cannot be shared due to legal or ethical constraints.<!--would that be considered Accessible though?--> Making your data Findable by sharing your metadata on a professional repository is the first step to making your data FAIR, as emphasized by the [LMU Guidelines for Safeguarding Good Scientific Practice](https://cms-cdn.lmu.de/media/contenthub/amtliche-veroeffentlichungen/gwp-ordnung.pdf) (see also [1.2. Legal Requirements](01-plan-and-design.qmd#sec-legal-requirements){.mark})
+- **Metadata only** describes what data exists without sharing the data itself. Others can discover your work and contact you to discuss access. This is appropriate when data cannot be shared due to legal or ethical constraints.<!--would that be considered Accessible though?--> Making your data Findable by sharing your metadata on a professional repository is the first step to making your data FAIR, as emphasized by the [LMU Guidelines for Safeguarding Good Scientific Practice](https://cms-cdn.lmu.de/media/contenthub/amtliche-veroeffentlichungen/gwp-ordnung.pdf) (see also @sec-legal-requirements)
 
 <br>
 
@@ -64,7 +66,7 @@ When deciding whether data should be shared, consider the following:
 
 - Ensure that data sharing is compatible with the **informed consent** provided by participants. 
 - Check what your **ethics approval** allows.
-- Consider whether the data can be **anonymized** without losing scientific value (see [2.3.2. Anonymization](02-collect-and-manage.qmd#sec-ethics-and-privacy){.mark}).
+- Consider whether the data can be **anonymized** without losing scientific value (see @sec-ethics-and-privacy).
 - If you work with **sensitive data**, you may consult the University's [data protection officer](https://www.lmu.de/en/about-lmu/structure/organizational-structure/officers-representatives-and-contact-persons/data-protection-officer.html). 
 - If your research outputs could have **dual-use** implications (e.g. that could also be applied for military or malicious purposes), consult the relevant regulations (e.g. European Commission's policy ([Dual-Use Regulation 2021/821](https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L:2021:206:FULL&from=EN))) and contact the University's [Export Control service](mailto:Exportkontrolle@Verwaltung.Uni-Muenchen.DE).
 - If your research may lead to **patents or commercialization**, contact the the University's [IP Management team](https://www.lmu.de/en/research/research-transfer/inventions-patents-and-exploitation-rights/) before sharing data. Early consultation helps ensure that intellectual property rights are not compromised.
@@ -185,7 +187,7 @@ During the course of data collection and analyses, you created a README and data
 
 - **Review your data dictionary** to ensure every variable is fully described. What was obvious to you during analysis may need explanation for others.
 
-- **Confirm you follow community standards.** Many fields have established formats for sharing data (e.g., [BIDS](https://bids.neuroimaging.io/index.html) for neuroimaging, see [FAIRsharing](https://fairsharing.org/) and [RDMkit](https://rdmkit.elixir-europe.org/your_domain) to review discipline specific organizational and metadata standards). Using these makes your data immediately usable with existing tools (see also [2.2.5. Standards](02-collect-and-manage.qmd#sec-data-management){.mark}).<!-- link to discipline specific guidance when exist--> 
+- **Confirm you follow community standards.** Many fields have established formats for sharing data (e.g., [BIDS](https://bids.neuroimaging.io/index.html) for neuroimaging, see [FAIRsharing](https://fairsharing.org/) and [RDMkit](https://rdmkit.elixir-europe.org/your_domain) to review discipline specific organizational and metadata standards). Using these makes your data immediately usable with existing tools (see also @sec-data-management).<!-- link to discipline specific guidance when exist--> 
 
 - **Verify anonymization.** Check that no personal information remains in the data files, metadata, or filenames.
 
@@ -460,10 +462,10 @@ _in construction_<!-- Reema? -->
 
 Making code publicly available demonstrates the reproducibility of your results and enables others to understand, verify, and build upon your analytical methods.
 
-So far, your code was either backed up on the secured [LRZ Gitlab](https://gitlab.lrz.de/) (e.g. if your data and/or code are sensitive), or on [GitHub](https://github.com/)  (see [3. Analyze & Collaborate](03-analyze-and-collaborate.qmd){.mark}). Before the submission of a manuscript to a journal and/or upon the acceptance of a manuscript, there are small additional steps that need to be done to publish your code.
+So far, your code was either backed up on the secured [LRZ Gitlab](https://gitlab.lrz.de/) (e.g. if your data and/or code are sensitive), or on [GitHub](https://github.com/)  (see @sec-analyze-and-collaborate). Before the submission of a manuscript to a journal and/or upon the acceptance of a manuscript, there are small additional steps that need to be done to publish your code.
 
 ::: {.ms-1} 
-- **verify** the structure of your repository, the readability of your scripts, the completeness of the documentation (see [Analyze & Collaborate Checklist](03-analyze-and-collaborate.qmd#analyze-collaborate-checklist){.mark}).
+- **verify** the structure of your repository, the readability of your scripts, the completeness of the documentation (see @sec-analyze-collaborate-checklist).
 - **make a clean version public**, e.g. on [GitHub](https://github.com/)
 - **add a license**
 - **get a DOI**, e.g. through [Zenodo](https://zenodo.org/)
@@ -472,7 +474,7 @@ So far, your code was either backed up on the secured [LRZ Gitlab](https://gitla
 If you work with **sensitive data that cannot be anonymized** and shared:
 
 ::: {.ms-1} 
-- **generate a simulated random dataset** to allow for the published code to run (which you may have already done if you simulated data in order to prepare a preregistration, see [1.4. Study Design & Analysis Plan](01-plan-and-design.qmd#sec-study-design-analysis-plan){.mark}), _or_ 
+- **generate a simulated random dataset** to allow for the published code to run (which you may have already done if you simulated data in order to prepare a preregistration, see @sec-study-design-analysis-plan), _or_ 
 - **create a synthetic dataset with the same properties as the original dataset** to allow others to re-derive an approximation of the original results and conduct further exploratory analyses.
 :::
 
@@ -758,7 +760,7 @@ Any material needed to reproduce or replicate your study should also be shared o
 
 For instance, you can share your:
 
-- **Share wet-lab protocols** on e.g. [protocols.io](https://www.protocols.io/), see [2.1.1. Lab Protocols](02-collect-and-manage.qmd#sec-data-collection){.mark}.
+- **Share wet-lab protocols** on e.g. [protocols.io](https://www.protocols.io/), see @sec-data-collection.
 - **Share survey text, instructions, or scoring sheets** on e.g. [OSF](https://osf.io/)
 
 We recommend to use a creative Common license such as
@@ -1136,7 +1138,7 @@ Publishers can provide additional guidance on authorship decisions (often based 
 
 <br>
 
-We recommend to **start discussions on authorship, roles, and responsibilities as early as possible**. First discussions can for instance take place at the end of [1. Plan & Design](01-plan-and-design.qmd){.mark}, e.g. during the presentation of the study plan to the research group (see [Plan & Design Checklist](01-plan-and-design.qmd#plan-design-checklist){.mark}). As roles may shift in the course of a project, a review is warranted at the write-up stage. 
+We recommend to **start discussions on authorship, roles, and responsibilities as early as possible**. First discussions can for instance take place at the end of @sec-plan-and-design, e.g. during the presentation of the study plan to the research group (see @sec-plan-design-checklist). As roles may shift in the course of a project, a review is warranted at the write-up stage. 
 
 <br>
 
@@ -1281,7 +1283,7 @@ The LMU Open Science Center is one of the many child organizations of LMU Munich
 ::: {.orc-gradient-box .preserve-share-checklist}
 <!-- RL hasn't customized this one yet -->
 
-## <i class="bi bi-card-checklist checklist-icon"></i> Preserve & Share Checklist {.unnumbered}
+## <i class="bi bi-card-checklist checklist-icon"></i> Preserve & Share Checklist {#sec-preserve-share-checklist}
 
 Not all items are relevant for all fields of research or study types.
 

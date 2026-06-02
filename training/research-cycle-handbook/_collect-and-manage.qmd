@@ -1,4 +1,6 @@
 
+## Collect & Manage Phase {#sec-collect-and-manage .visually-hidden}
+
 ```{=html}
 <div class="orc-phase-hero phase-2 container shadow rounded-4">
 <div class="row align-items-center p-3 p-lg-4 mt-4 mb-3">
@@ -393,11 +395,11 @@ Data collection, in this context, consists in developing a judicious reproducibl
  
 </summary>
 
-In [1. Plan & Design](01-plan-and-design.qmd){.mark} you created a Research Data Management Plan. It's now time to put this plan into practice, refining it as you learn what actually works for your project.
+In @sec-plan-and-design you created a Research Data Management Plan. It's now time to put this plan into practice, refining it as you learn what actually works for your project.
 
 ::: {.ms-1} 
 
-- **Keep your raw data as read-only files.** The unmodified output of your instruments, surveys, or observations should never be modified directly. You should provide enough documentation to recreate your processed datasets and results from your raw data (see [3.1. Data Processing & Analyses](03-analyze-and-collaborate.qmd#sec-data-processing-analysis){.mark}).
+- **Keep your raw data as read-only files.** The unmodified output of your instruments, surveys, or observations should never be modified directly. You should provide enough documentation to recreate your processed datasets and results from your raw data (see @sec-data-processing-analysis).
 
 - **Organize, document, and store your research files so they remain usable, and become FAIR upon sharing.** Beyond raw data, you will generate processed data, code, documentation, and metadata. How you organize, describe, and store these determines whether your work remains usable and reproducible. The [FAIR principles](https://www.go-fair.org/fair-principles/) guide these decisions: making outputs Findable, Accessible, Interoperable, and Reusable.
 
@@ -409,7 +411,7 @@ What follows are general practices. Your domain has specific conventions for fil
 ::: {.callout-tip .mx-4}
 ## Tips for research groups to streamline this process
 - **Create standard operating procedures (SOPs) within the team.** For instance: where and when data back up should be made and in which file format, what project folder structure and conventions for naming files should be adopted, which metadata should routinely be acquired, what documentation should be created and when, and how and where a history of versions should be preserved. 
-- **Assign responsibilities.** For developing such SOPs for a specific kind of project and for checking all members have implemented those SOPs at a specified time point in their project (e.g. hold a data quality validation meeting prior to starting data analyses, see [Collect & Manage Checklist](#collect-manage-checklist){.mark}).
+- **Assign responsibilities.** For developing such SOPs for a specific kind of project and for checking all members have implemented those SOPs at a specified time point in their project (e.g. hold a data quality validation meeting prior to starting data analyses, see @sec-collect-manage-checklist).
 :::
 
 
@@ -417,7 +419,7 @@ What follows are general practices. Your domain has specific conventions for fil
 
 #### 2.2.1. Storage
 
-This section covers storage for data you are actively collecting. Long-term archiving for sharing is covered in [4. Preserve & Share](04-preserve-and-share.qmd){.mark}.
+This section covers storage for data you are actively collecting. Long-term archiving for sharing is covered in @sec-preserve-and-share.
 
 <br>
 
@@ -695,7 +697,7 @@ Standards are community agreements on how to organize and describe research data
 
 - **Reporting guidelines** specify what methodological details to document for different study types. The [EQUATOR Network](https://www.equator-network.org/) maintains a searchable database of guidelines for clinical trials, observational studies, animal research, and many other study types. Following these ensures you capture everything others need to understand or replicate your work.
 
-- **Metadata standards** define what descriptive information to record and how to structure it. Scientific metadata describes how your data was produced: equipment specifications, acquisition parameters, protocols followed. This is distinct from discovery metadata (titles, keywords, descriptions) which you will prepare when sharing in [4. Preserve & Share](04-preserve-and-share.qmd){.mark}. Your field has conventions for which parameters matter. [FAIRsharing](https://fairsharing.org/) catalogs metadata standards by discipline.<!-- include ref to discipline specific section when available -->
+- **Metadata standards** define what descriptive information to record and how to structure it. Scientific metadata describes how your data was produced: equipment specifications, acquisition parameters, protocols followed. This is distinct from discovery metadata (titles, keywords, descriptions) which you will prepare when sharing in @sec-preserve-and-share. Your field has conventions for which parameters matter. [FAIRsharing](https://fairsharing.org/) catalogs metadata standards by discipline.<!-- include ref to discipline specific section when available -->
 
 <br> 
 
@@ -795,7 +797,7 @@ Version control system like Git tracks changes to files over time. You can see w
 
 - **LRZ GitLab** is a cloud-based hosting platform that provides essentially the same features as GitHub but is open source and is installed on the LRZ servers for LMU Munich and can therefore be considered secure when the repository is private. 
 
-While your LRZ GitLab account is associated with your LMU Munich affiliation, your GitHub account can be associated with your private email, be included in your CV, and be used for public sharing of your data and code (see [3. Analyze & Collaborate](03-analyze-and-collaborate.qmd){.mark} and [4. Preserve & Share](04-preserve-and-share.qmd){.mark}).  
+While your LRZ GitLab account is associated with your LMU Munich affiliation, your GitHub account can be associated with your private email, be included in your CV, and be used for public sharing of your data and code (see @sec-analyze-and-collaborate and @sec-preserve-and-share).  
 
 <br>
 
@@ -915,7 +917,7 @@ In a version controlled workflow, you back up your local Git repositories on eit
 
 </summary> 
 
-Research involving human participants requires ethics approval and data protection compliance. In your ethics proposal (see [1.2.3. Ethics](01-plan-and-design.qmd#sec-legal-requirements){.mark}) you planned for safeguards for the people contributing to your research and you now need to implement them before or while collecting your data.
+Research involving human participants requires ethics approval and data protection compliance. In your ethics proposal (see @sec-legal-requirements) you planned for safeguards for the people contributing to your research and you now need to implement them before or while collecting your data.
 
 
 ::: {.panel-tabset}
@@ -973,7 +975,7 @@ Anonymization protects privacy and determines what you can share.
 
 - **Assess indirect identifiers carefully.** A combination of age, location, profession, and a rare condition might identify someone even without their name. Timestamps reveal patterns. Free-text responses often contain identifying details participants did not intend to share. Follow our [data anonymization tutorial](https://lmu-osc.github.io/data-anonymization/) to learn to evaluate and implement anonymization techniques in R.
 
-- **Generate synthetic data when full anonymization or real data sharing is not possible.** Synthetic data is artificially generated data that can serve as a privacy-preserving alternative to sensitive datasets, enabling researchers to reproduce analyses, verify findings, and initiate model development when access to real data is restricted. Sharing synthetic data together with code, rather than sharing no data at all, increases the utility of your research (see [4. Preserve & Share](04-preserve-and-share.qmd){.mark}).
+- **Generate synthetic data when full anonymization or real data sharing is not possible.** Synthetic data is artificially generated data that can serve as a privacy-preserving alternative to sensitive datasets, enabling researchers to reproduce analyses, verify findings, and initiate model development when access to real data is restricted. Sharing synthetic data together with code, rather than sharing no data at all, increases the utility of your research (see @sec-preserve-and-share).
 
 :::{.callout-note}
 ## Distinction between pseudonymization and anonymization
@@ -1060,7 +1062,7 @@ For data protection guidance, contact the [LMU Data Protection Officer](https://
 
 Quality control catches problems before they propagate into your analysis. The practices here ensure your data is trustworthy and your exclusions are well-founded.
 
-**Define criteria before looking at your data.** This prevents unconscious bias in what you keep and exclude, and demonstrates that your decisions are principled rather than convenient (see [1.4. Study Design & Analysis Plan](01-plan-and-design.qmd#sec-study-design-analysis-plan){.mark}).
+**Define criteria before looking at your data.** This prevents unconscious bias in what you keep and exclude, and demonstrates that your decisions are principled rather than convenient (see @sec-study-design-analysis-plan).
 
 ::: {.panel-tabset}
 
@@ -1120,7 +1122,7 @@ Data cleaning handles errors, inconsistencies, and missing values. The cardinal 
 
 #### 2.4.3. Exclusions
 
-Exclusion criteria specify which data points will be removed from analysis and why. Define these before you see your results (see [1.4. Study Design & Analysis Plan](01-plan-and-design.qmd#sec-study-design-analysis-plan){.mark}).
+Exclusion criteria specify which data points will be removed from analysis and why. Define these before you see your results (see @sec-study-design-analysis-plan).
 
 <br>
 
@@ -1135,7 +1137,7 @@ Exclusion criteria specify which data points will be removed from analysis and w
 
 ::: {.orc-gradient-box .collect-manage-checklist}
 
-## <i class="bi bi-card-checklist checklist-icon"></i> Collect & Manage Checklist {.unnumbered}
+## <i class="bi bi-card-checklist checklist-icon"></i> Collect & Manage Checklist {#sec-collect-manage-checklist}
 
 To complete before conducting a data validation meeting with members of the project. Not all items are relevant for all fields of research or study types.
 

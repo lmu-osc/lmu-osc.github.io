@@ -28,7 +28,7 @@ Checkpoints: Study Plan Presentation & Preregistration Submission
 <details class="orc-details-panel">
 <summary><i class="bi bi-search"></i>
 
-### Explore & Reuse {#sec-explore-reuse}
+## Explore & Reuse {#sec-explore-reuse}
 
 </summary> 
 
@@ -37,10 +37,10 @@ A research output (e.g. data, code) without a license or statement granting your
 
 ::: {.panel-tabset}
 
-#### 1.1.1. Articles
+### 1.1.1. Articles
 
 * **Review existing literature** to come up with a well-founded research question. We recommend to use open source discipline-agnostic registries like [OpenAlex](https://openalex.org/) which contains published articles, thesis, and preprints (scholarly work that are not (yet) peer-reviewed) of all disciplines, or discipline-specific open source registries such as [Europe PubMed Central](https://europepmc.org/) for life sciences preprints and published articles.
-* **Use a reference manager** to keep track of your bibliography. [Zotero](https://www.zotero.org/) is an open source software formatting your bibliography in any desired format and that can be integrated within e.g. Microsoft Word, Google Doc, or RStudio for writing reproducible manuscripts (see [3. Analyze & Collaborate](03-analyze-and-collaborate.qmd){.mark}).
+* **Use a reference manager** to keep track of your bibliography. [Zotero](https://www.zotero.org/) is an open source software formatting your bibliography in any desired format and that can be integrated within e.g. Microsoft Word, Google Doc, or RStudio for writing reproducible manuscripts (see @sec-analyze-and-collaborate).
 
 
 <!-- main container div -->
@@ -113,7 +113,7 @@ A research output (e.g. data, code) without a license or statement granting your
 
 :::
 
-#### 1.1.2. Preregistrations
+### 1.1.2. Preregistrations
 
 A **preregistration** typically consists of a hypothesis and predictions, a plan for data collection (when relevant), and a plan for data analysis, that researchers upload onto a registry before starting their projects, often in order to increase the rigor of confirmatory research (see [1.4.1. Pre-analysis planning](#sec-study-design-analysis-plan){.mark}). 
 
@@ -200,7 +200,7 @@ A **preregistration** typically consists of a hypothesis and predictions, a plan
 :::
 
 
-#### 1.1.3. Data
+### 1.1.3. Data
 
 <h5 class="fs-5 no-anchor">How to find existing datasets?</h5>
 
@@ -319,9 +319,9 @@ These platforms either give you access to existing data or provide [**metadata**
 :::
 
 
-#### 1.1.4. Code
+### 1.1.4. Code
 
-**Find code available for reuse** archived on [Zenodo](https://zenodo.org/), [Software Heritage](https://www.softwareheritage.org) or actively developed on [GitHub](https://github.com/) and other code repositories. Start learning Git version control now or learn to take advantage of more collaborative features on the GitHub platform in more details in [3. Analyze & Collaborate](03-analyze-and-collaborate.qmd){.mark}. 
+**Find code available for reuse** archived on [Zenodo](https://zenodo.org/), [Software Heritage](https://www.softwareheritage.org) or actively developed on [GitHub](https://github.com/) and other code repositories. Start learning Git version control now or learn to take advantage of more collaborative features on the GitHub platform in more details in @sec-analyze-and-collaborate. 
  
 <br>
 
@@ -462,13 +462,13 @@ Code publicly visible on GitHub without a license or equivalent text explicitly 
 <details class="orc-details-panel">
 <summary><i class="bi bi-shield-check"></i>
 
-### Legal Requirements {#sec-legal-requirements}
+## Legal Requirements {#sec-legal-requirements}
 
 </summary>
 
 ::: {.panel-tabset}
 
-#### 1.2.1. LMU guidelines
+### 1.2.1. LMU guidelines
 
 The [LMU Guidelines for Safeguarding Good Scientific Practice](https://cms-cdn.lmu.de/media/contenthub/amtliche-veroeffentlichungen/gwp-ordnung.pdf) are legally binding for all academics, researchers, research support staff, teachers, and students at LMU Munich. Only the original text in German prevails, but we provide an English summary of relevant aspects for this guide: 
 
@@ -542,14 +542,14 @@ See [https://www.go-fair.org/fair-principles/](https://www.go-fair.org/fair-prin
 
 :::
 
-#### 1.2.2. Funders
+### 1.2.2. Funders
 
 - **Check all funders' open science requirements.** Funders may have additional requirements on top of those indicated in the LMU guidelines. For instance, some funding lines request a Research Data Management plan before making their second payment, some specify the extent and timing of data sharing and provide funds for such activity. 
 
 
 - **Contact the [LMU Research Funding Unit](https://www.lmu.de/en/research/research-services/contact.html) to review your grant proposal** and assess if your proposal is meeting your funders' open science requirements. 
 
-#### 1.2.3. Ethics
+### 1.2.3. Ethics
 
 Data collection and analyses involving human participants or animal subjects typically require approval from ethics committees to ensure responsible conduct and the protection of data.
 
@@ -559,8 +559,8 @@ Data collection and analyses involving human participants or animal subjects typ
 
 - **Data storage and retention** – outlining how data will be securely stored, backed up, and retained over time. This information can be extracted from a more detailed Research Data Management plan (see [1.3. Research Data Management Plans](#sec-research-data-management){.mark}).
 - **Risks if the data were leaked** – identifying potential consequences for participants or the research project if confidentiality is breached.
-- **Data anonymization** – describing procedures to remove or obscure personally identifiable information to protect participant privacy (see [2.3.2. Anonymization](02-collect-and-manage.qmd#sec-ethics-and-privacy){.mark} for options, from simple techniques of anonymization to the creation of synthetic data).
-- **Informed consent forms language** – ensuring that participants clearly understand the purpose, procedures, and any potential risks of the study. Conditions for sharing their data should be clearly explained here (see [2.3.1. Informed Consent](02-collect-and-manage.qmd#sec-ethics-and-privacy){.mark}). 
+- **Data anonymization** – describing procedures to remove or obscure personally identifiable information to protect participant privacy (see @sec-ethics-and-privacy for options, from simple techniques of anonymization to the creation of synthetic data).
+- **Informed consent forms language** – ensuring that participants clearly understand the purpose, procedures, and any potential risks of the study. Conditions for sharing their data should be clearly explained here (see @sec-ethics-and-privacy). 
 - **Power analysis** to justify sample size – providing a statistical rationale for the number of participants, which supports the validity and ethical justification of the study. This, and more detailed information on the statistical plan, can be extracted from your pre-analysis plan (see [1.4.1. Pre-analysis planning](#sec-study-design-analysis-plan){.mark} and [1.4.3. Power analyses](#sec-study-design-analysis-plan){.mark}). 
 
 For data protection guidance, contact the [LMU Data Protection Officer](https://www.lmu.de/en/about-lmu/structure/organizational-structure/officers-representatives-and-contact-persons/data-protection-officer.html) or the [Research Data Management team of the University Library ](https://www.en.ub.uni-muenchen.de/writing/research_data/research-data-management/index.html).
@@ -649,7 +649,7 @@ For data protection guidance, contact the [LMU Data Protection Officer](https://
 <details class="orc-details-panel">
 <summary><i class="bi bi-folder2-open"></i>
 
-### Research Data Management Plans {#sec-research-data-management}
+## Research Data Management Plans {#sec-research-data-management}
 
 </summary>
 
@@ -657,18 +657,18 @@ A **Data Management Plan (DMP)** documents how you will handle research data thr
 
 ::: {.ms-1} 
 - **Decide _before_ data collection whether you will eventually share your data publicly (and where)**, in order to (i) get ethics approval on the right plan, (ii) design consent forms for participants, (iii) collect appropriate metadata for the target repository, etc.
-- **Start with what you know, and refine the details as your project develops.** Your DMP is a living document that you will refine to match the reality of your project while ensuring data protection and streamline collaborations (see [2.2. Data Management](02-collect-and-manage.qmd#sec-data-management){.mark}, [3.1. Data Processing & Analysis](03-analyze-and-collaborate.qmd#sec-data-processing-analysis){.mark}, and [4.1. FAIR Data Sharing](04-preserve-and-share.qmd#sec-fair-data-sharing){.mark}).
+- **Start with what you know, and refine the details as your project develops.** Your DMP is a living document that you will refine to match the reality of your project while ensuring data protection and streamline collaborations (see @sec-data-management, @sec-data-processing-analysis, and @sec-fair-data-sharing).
 :::
 
-##### <i class="bi bi-list-check"></i> Your DMP will ask:
+#### <i class="bi bi-list-check"></i> Your DMP will ask:
 
-- **What data** will you collect or generate (types, formats, volume, sources)? See [2.1. Data Collection](02-collect-and-manage.qmd#sec-data-collection){.mark}.
-- **How will you describe it** (metadata standards, documentation practices)? See [2.2. Data Management](02-collect-and-manage.qmd#sec-data-management){.mark} for these and the next questions.
+- **What data** will you collect or generate (types, formats, volume, sources)? See @sec-data-collection.
+- **How will you describe it** (metadata standards, documentation practices)? See @sec-data-management for these and the next questions.
 - **How will you organize files** (naming conventions, folder structure, versioning)?
 - **Where will you store it** (locations, backups, access controls)?
 - **How will you ensure quality** (validation checks, error-handling)?
-- **How will you share outputs** (repositories, licenses, embargo periods)? See our lecture "[Why share data openly?](https://lmu-osc.github.io/training/data-management/open-data.html)" and [4.1. FAIR Data Sharing](04-preserve-and-share.qmd#sec-fair-data-sharing){.mark}
-- **What constraints apply** (consent, anonymization, GDPR, data use agreements)? See our lecture "[Maintaining privacy with open data](https://lmu-osc.github.io/training/data-management/maintaining-privacy-with-open-data.html)", [1.2.3. Ethics](#sec-legal-requirements){.mark} and [2.3. Ethics & Privacy](02-collect-and-manage.qmd#sec-ethics-and-privacy){.mark}.
+- **How will you share outputs** (repositories, licenses, embargo periods)? See our lecture "[Why share data openly?](https://lmu-osc.github.io/training/data-management/open-data.html)" and @sec-fair-data-sharing
+- **What constraints apply** (consent, anonymization, GDPR, data use agreements)? See our lecture "[Maintaining privacy with open data](https://lmu-osc.github.io/training/data-management/maintaining-privacy-with-open-data.html)", [1.2.3. Ethics](#sec-legal-requirements){.mark} and @sec-ethics-and-privacy.
 
 <br>
 
@@ -795,13 +795,13 @@ The specific questions vary by discipline, data type, and funder requirements. D
 <details class="orc-details-panel">
 <summary><i class="bi bi-clipboard-check"></i>
 
-### Study Design & Analysis Plan {#sec-study-design-analysis-plan}
+## Study Design & Analysis Plan {#sec-study-design-analysis-plan}
 
 </summary>
 
 ::: {.panel-tabset}
 
-#### 1.4.1. Pre-analysis planning 
+### 1.4.1. Pre-analysis planning 
 
 <h5 class="fs-5 no-anchor">Why should you plan your statistical plan prior to collecting data?</h5>
 
@@ -957,7 +957,7 @@ Preregistration templates, embargoes, file storage.
 
 :::
 
-#### 1.4.2. Simulation of Data
+### 1.4.2. Simulation of Data
 
 In our context, a computer simulation is the generation of artificial data to build up an understanding of real data and the statistical models we use to analyze them. You can simulate data to:
 
@@ -1033,7 +1033,7 @@ Generating an artificial dataset in R (see our [simulation tutorial](https://lmu
 
 
 
-#### 1.4.3. Power analyses 
+### 1.4.3. Power analyses 
 
 Power analysis is relevant whether you are designing a project from scratch or running an analysis on already existing data. There are two main types of power analyses: 
 
@@ -1127,7 +1127,7 @@ The **flawed version of post-hoc power** is called **“observed power”**: If 
 
 ::: {.orc-gradient-box .plan-design-checklist }
 
-## <i class="bi bi-card-checklist checklist-icon"></i> Plan & Design Checklist {.unnumbered}
+## <i class="bi bi-card-checklist checklist-icon"></i> Plan & Design Checklist {#sec-plan-design-checklist}
 
 To complete before presenting your final study plan to your research group and, if applicable, submitting your ethics proposal and/or preregistration. Not all items are relevant for all fields of research or study types.
 

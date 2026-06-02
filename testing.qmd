@@ -1,0 +1,25 @@
+---
+title: "Title Here"
+number-depth: 4
+number-sections: true
+number-offset: [0,0,0]
+shift-heading-level-by: 1
+page-layout: full
+toc: false
+title-block-style: none
+---
+
+
+## Level 2 Heading {#sec-level-2-heading}
+
+### Level 3 Heading {#sec-level-3-heading}
+
+
+@sec-level-3-heading
+
+
+a bunch of text
+
+## Another Level 2 Heading {#sec-another-level-2-heading}
+
+@sec-level-2-heading
