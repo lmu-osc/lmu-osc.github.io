@@ -28,7 +28,7 @@ listing:
       - people
     template: listings/alumni-lmu-members-affiliates-listing.ejs
     sort: "surname asc"
-
+anchor-sections: false
 
 ---
 <style>
