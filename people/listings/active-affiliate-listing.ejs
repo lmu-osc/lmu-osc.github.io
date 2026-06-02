@@ -28,7 +28,7 @@ const activeAffiliateItems = (items || []).filter((item) => {
 %>
 
 
-<div class="col" <%= metadataAttrs(item) %>>
+<div class="col search-item" data-name="<%= item.name.toLowerCase() %>" data-faculty="<%= (affiliateOrganization || '').toLowerCase() %>" <%= metadataAttrs(item) %>>
 <div class="card h-100">
 <div class="position-absolute top-0 end-0 p-1">
 <% if (item.social_media && item.social_media.ORCID) { %>
@@ -37,16 +37,14 @@ const activeAffiliateItems = (items || []).filter((item) => {
 </a>
 <% } %>
 </div>
-<div class="card-body d-flex flex-column align-items-center">
-<img src="people/<%= item.photo || '/images/default.svg' %>" class="rounded-circle border border-3 mb-4" alt="Profile <%= item.name %>"
-width="120" height="120"  >
-<h5 class="card-title fw-bold text-center listing-name mb-4"><%= item.name %></h5>
-<div class="mt-auto">
-<h6 class="card-subtitle text-center fw-semibold lh-base text-muted mb-1"><%= item.academic_title %></h6>
+<img src="people/<%= item.photo || '/images/default.svg' %>" class="rounded-circle border border-3 mt-3 mx-auto d-block" alt="Profile of <%= item.name %>"
+width="110" height="110">
+<div class="card-body text-center">
+<h5 class="card-title fw-bold listing-name"><%= item.name %></h5>
+<h6 class="card-subtitle fs-6 fw-semibold lh-base text-muted"><%= item.academic_title %></h6>
 <% if (affiliateOrganization) { %>
-<p class="card-text lh-base"><%= affiliateOrganization %></p>
+<p class="card-text fs-6 lh-base"><%= affiliateOrganization %></p>
 <% } %>
-</div>
 </div>
 <a href="<%= item.path %>" class="stretched-link"></a>
 </div>
@@ -74,9 +72,6 @@ width="120" height="120"  >
 }
 
 </style>
-
-
-
 
 
 
