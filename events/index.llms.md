@@ -36,7 +36,7 @@ Questions? Contact [Digital Research Academy](mailto:hello@digiresacademy.org)
 
 ######  9:00-17:30 \|  Hybrid \|  English
 
-Save the date! Our annual Summer School will take place on Sept 7-11 (Track 1) and Sept 14-15 (Track 2), 2026.
+Apply to attend the workshops or register to attend the public lectures now! Our annual Summer School will take place on Sept 7-11 (Track 1) and Sept 14-15 (Track 2), 2026.
 
 Organizers: Sarah von Grebmer zu Wolfsthurn
 
