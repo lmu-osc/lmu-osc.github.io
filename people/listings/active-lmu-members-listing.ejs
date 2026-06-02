@@ -9,8 +9,8 @@ const activeLmuIndividualItems = (items || []).filter((item) => {
   });
 });
 %>
-
-<div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 g-3 py-4 list">
+<!-- Desktop view-->
+<div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 g-3 py-4 d-none d-sm-flex list">
 <% for (const item of activeLmuIndividualItems) { %>
 <%
   const activeLmuIndividualMembership = (Array.isArray(item.memberships) ? item.memberships : [])
@@ -50,9 +50,56 @@ width="110" height="110">
 <% } %>
 </div>
 
+<!-- Mobile only view-->
+<% let i = 0; %>
+
+<% for (const item of activeLmuIndividualItems) { %>
+<%
+  const activeLmuIndividualMembership = (Array.isArray(item.memberships) ? item.memberships : [])
+    .find((membership) =>
+      membership &&
+      typeof membership === 'object' &&
+      membership.type === 'lmu-individual' &&
+      membership.status === 'active'
+    );
+
+  const lmuIndividualFaculty = (typeof activeLmuIndividualMembership?.faculty === 'string' && activeLmuIndividualMembership.faculty.trim() !== '' && activeLmuIndividualMembership.faculty !== 'NA')
+    ? activeLmuIndividualMembership.faculty
+    : item.faculty;
+%>
+
+<div class="accordion members-accordion d-block d-sm-none my-3 mx-2 shadow-sm bg-light-subtle rounded-3" id="accordion-<%= i %>">
+<div class="accordion-item search-item" data-name="<%= item.name.toLowerCase() %>" data-faculty="<%= (lmuIndividualFaculty || '').toLowerCase() %>" <%= metadataAttrs(item) %>">
+<button class="accordion-button collapsed fw-semibold fs-6" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-<%= i %>" aria-controls="collapse-<%= i %>" >
+<img src="people/<%= item.photo || '/images/default.svg' %>"
+class="rounded-circle border border-3 me-2"
+width="60" height="60"
+alt="Profile of <%= item.name %>">
+<%= item.name %>
+<% if (item.social_media && item.social_media.ORCID) { %>
+<a href="<%= item.social_media.ORCID %>" target="_blank" class="ms-2">
+<i class="fa-brands fa-orcid fa-lg" style="color:#A6CE39;"></i>
+</a>
+<% } %>
+</button>
+<div id="collapse-<%= i %>" class="accordion-collapse collapse">
+<div class="accordion-body d-flex flex-row flex-wrap justify-content-between align-items-center">
+<div>
+<div class="fw-semibold fs-6 text-muted">Title: <%= item.academic_title %></div>
+<% if (lmuIndividualFaculty && lmuIndividualFaculty !== 'NA') { %>
+<div class="mt-1 small fs-6">Faculty: <%= lmuIndividualFaculty %></div>
+<% } %>
+</div>
+<a href="<%= item.path %>" type="button" class="btn btn-primary mt-2 btn-sm">View Profile</a>
+</div>
+</div>
+</div>
+</div>
+<% i++; %>
+<% } %>
+
+
 <style>
-
-
 .card {
   transition: all 0.4s ease;  /* adjust speed here */
 }
@@ -63,11 +110,10 @@ width="110" height="110">
   border-color: var(--osc-accent);
 }
 
-
-.card img {
+.card img,
+.accordion-button img {
   object-fit: cover;
   border-color: var(--osc-accent) !important;
 }
-
 
 </style>
