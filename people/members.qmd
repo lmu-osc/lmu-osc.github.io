@@ -4,6 +4,7 @@ include-in-header:
   - text: |
       <script src="/assets/javascript/clear_filter_button.js" defer></script>
       <script src="/assets/javascript/change_categories_header.js" defer></script>
+      <script src="/assets/javascript/custom_filter.js" defer></script>
 
 listing:
   - id: lmu-members
@@ -28,6 +29,7 @@ listing:
     template: listings/alumni-lmu-members-affiliates-listing.ejs
     sort: "surname asc"
 
+
 ---
 <style>
 .osc-members-description a,
@@ -42,6 +44,16 @@ listing:
 </style>
 :::{.osc-members-description}
 Our members actively support the goals of the OSC and contribute to our activities such as training, community building, meta-research, and liaison with stakeholders. [Join us](/about/join-us.qmd) <i class="bi bi-box-arrow-up-right"></i>.
+
+<!-- native quarto filter is isolated per listing id at the moment, so we would end up with multiple filters. To prevent this, creating a global filter that allows filtering across all listings regardless of their id.-->
+
+```{=html}
+<div class="input-group input-group-sm w-100 w-md-75 mb-3">
+  <span class="input-group-prepend input-group-text"><i class="bi bi-search"></i></span>
+  <input type="text" class="form-control form-control-lg" id="global-filter" placeholder="Search by name or faculty" aria-label="Search by name or faculty">
+</div>
+```
+
 :::
 ## LMU Members
 
