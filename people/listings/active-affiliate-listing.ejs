@@ -10,7 +10,7 @@ const activeAffiliateItems = (items || []).filter((item) => {
 });
 %>
 
-<div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 d-none d-sm-flex g-3 py-4 list">
+<div class="row row-cols-sm-2 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-3 py-4 d-none d-sm-flex list">
 
 <% for (const item of activeAffiliateItems) { %>
 <%
@@ -40,10 +40,10 @@ const activeAffiliateItems = (items || []).filter((item) => {
 <img src="people/<%= item.photo || '/images/default.svg' %>" class="rounded-circle border border-3 mt-3 mx-auto d-block" alt="Profile of <%= item.name %>"
 width="110" height="110">
 <div class="card-body text-center">
-<h5 class="card-title fw-bold listing-name"><%= item.name %></h5>
-<h6 class="card-subtitle fs-6 fw-semibold lh-base text-muted"><%= item.academic_title %></h6>
+<div class="card-title fw-bold listing-name"><%= item.name %></div>
+<div class="card-subtitle fs-6 fw-semibold mt-auto text-muted"><%= item.academic_title %></div>
 <% if (affiliateOrganization) { %>
-<p class="card-text fs-6 lh-base"><%= affiliateOrganization %></p>
+<div class="card-text fs-6 mt-auto lh-base"><%= affiliateOrganization %></div>
 <% } %>
 </div>
 <a href="<%= item.path %>" class="stretched-link"></a>
@@ -78,11 +78,13 @@ class="rounded-circle border border-3 me-2"
 width="60" height="60"
 alt="Profile of <%= item.name %>">
 <%= item.name %>
+<div class="position-absolute top-0 end-0 p-1">
 <% if (item.social_media && item.social_media.ORCID) { %>
-<a href="<%= item.social_media.ORCID %>" target="_blank" class="ms-2">
-<i class="fa-brands fa-orcid fa-lg" style="color:#A6CE39;"></i>
+<a href="<%= item.social_media.ORCID %>" target="_blank">
+<i class="fa-brands fa-orcid fa-lg" style="color: #A6CE39;"></i>
 </a>
 <% } %>
+</div>
 </button>
 <div id="collapse-<%= i %>" class="accordion-collapse collapse">
 <div class="accordion-body d-flex flex-row flex-wrap justify-content-between align-items-center">
