@@ -73,7 +73,7 @@
 
   function getEventDescription(item) {
     if (!item) return '';
-    if (item.event && item.event.description) return item.event.description;
+    if (item.event && item.event.card_description) return item.event.card_description;
     if (item.description) return item.description;
     return 'See event details from the LMU Open Science Center.';
   }
