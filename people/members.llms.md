@@ -822,16 +822,6 @@ University Hospital
 
 Social Sciences
 
-[](https://orcid.org/0000-0002-8149-0747)
-
-![Profile of Christian Schulz](people/images/schulz_christian.jpg)
-
-##### Christian Schulz
-
-###### Prof. Dr.
-
-University Hospital
-
 [](https://orcid.org/0000-0001-8188-380X)
 
 ![Profile of Enrico Schulz](people/images/schulz_enrico.jpg)
@@ -839,6 +829,16 @@ University Hospital
 ##### Enrico Schulz
 
 ###### Dr.
+
+University Hospital
+
+[](https://orcid.org/0000-0002-8149-0747)
+
+![Profile of Christian Schulz](people/images/schulz_christian.jpg)
+
+##### Christian Schulz
+
+###### Prof. Dr.
 
 University Hospital
 

@@ -69,6 +69,22 @@ Keep up to date with our latest news releases, and upcoming events.
 
 News [View All News](news/index.llms.md)
 
+###### Jun 12, 2026
+
+##### [International Guideline for Routinely Collected Health Data](news/news/2026-06-12-guidelines-for-routinely-collected-health-data.llms.md)
+
+OSC member, Dr. Sabine Hoffmann, is the lead author of a newly published international guideline in The BMJ for improving the quality, transparency, and reproducibility of research based on routinely collected health data.
+
+[Read More →](news/news/2026-06-12-guidelines-for-routinely-collected-health-data.llms.md)
+
+###### Jun 11, 2026
+
+##### [Credible Research in the Social and Behavioral Sciences in Nature Collection 2026](news/news/2026-06-11-collection-of-papers-published-in-nature.llms.md)
+
+Work done by OSC members were featured Nature as part of larger collection of publications for research credibility.
+
+[Read More →](news/news/2026-06-11-collection-of-papers-published-in-nature.llms.md)
+
 ###### May 5, 2026
 
 ##### [SHARP Becomes a Funding Institutional Member](news/news/2026-05-05-sharp-as-new-funding-institutional-member.llms.md)
@@ -76,22 +92,6 @@ News [View All News](news/index.llms.md)
 Collaborative Research Centre, TRR419 SHARP becomes a funding institutional member of the OSC!
 
 [Read More →](news/news/2026-05-05-sharp-as-new-funding-institutional-member.llms.md)
-
-###### Apr 28, 2026
-
-##### [OSC's Conference Poster](news/news/2026-04-28-osc-poster.llms.md)
-
-All the activities of the LMU Open Science Center in a poster format! First presented at FOR2026 Munich.
-
-[Read More →](news/news/2026-04-28-osc-poster.llms.md)
-
-###### Apr 13, 2026
-
-##### [Open Science Land: A Travel Guide](news/news/2026-04-15-os-land-book.llms.md)
-
-Newly published travel guide “Expedition Open Science Land: A travel guide for business research”
-
-[Read More →](news/news/2026-04-15-os-land-book.llms.md)
 
 Events [View All Events](events/index.llms.md)
 
