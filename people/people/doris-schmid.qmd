@@ -1,0 +1,56 @@
+---
+# Member parameters
+title: Doris Schmid
+academic_title: Dr.
+name: Doris Schmid
+first_name: Doris
+surname: Schmid
+categories:
+  - Psychology & Educational
+
+# There is no limit to the number of memberships a person can have. All memberships must have a type, status, and start year.
+# See documentation for more details on the different types of memberships and their status options.
+memberships:
+  - type: lmu-individual
+    status: active
+    position: Researcher at Department of Psychology- Clinical Neuropsychology
+    faculty: Psychology & Education
+
+# if desired by the member, add a photo to the people/people/images folder and link to it here
+photo: "images/doris_schmid.png"
+email: doris.schmid@psy.lmu.de
+personal: |
+
+# certain keywords for the label are recognized and the output is sorted in this priority: LMU Profile, Professional Profile, Personal Website, and Professional Website. see documentation for details on these labels. other links appear in the order they are listed in the YAML file.
+links:
+  - label: "LMU Profile"
+    url: "https://www.lmu.de/psy/de/personen/kontaktseite/doris-schmid-26b9fa6a.html"
+
+# Social media links - variable number
+social_media:
+  ORCID: "https://orcid.org/0000-0002-9460-4344"
+
+# Mission statement paragraphs - variable number
+mission_statement: |
+  My research focuses on (visual) impairments following acquired brain injury. Through my work, I aim to advance the application of open science practices in the field of clinical neuropsychology and demonstrate that transparent, reproducible research is both feasible and valuable when working with clinical data.
+
+# Research interests - variable number
+research_interests:
+  - "Neuropsychology"
+
+# Publications - variable number
+publications:
+  - year: 2026
+    title: Rechtliche Herausforderungen und Lösungsvorschläge zu Open Data in der klinisch-psychologischen Forschung
+    authors: "Anja Kräplin, Jan Schürmann-Vengels, Edwin J. Schenkel, Juliane Burghardt, Helen Niemeyer, Katarina Blask, Annika C. Konrad, Bianca A. Bauer, Edgar Nazarenus, Lars Schulze, Jan Christopher Cwik, Stefan Lüttke, Anja C. Feneberg, Marcel Riehle, Simon E. Blackwell, Johannes C. Ehrenthal, Johanna Freund, Anke Haberkamp, Dorothée Bentz, Doris Schmid, Caroline T. A. Kuhn, and Anne Möllmann"
+    journal: Zeitschrift für Klinische Psychologie und Psychotherapie
+    doi_url: https://doi.org/10.1026/1616-3443/a000865
+
+
+# these must be included always.
+template: templates/people-template.html
+filters: 
+    - templates/people_filter.lua
+---
+
+<!-- additional content **can** be included here, and appears after the Mission Statement but before the Research Interests. Any content that Quarto can render can be included here, namely R/Python/Julia code chunks, Markdown formatting, more HTML, etc. Main reasons to use this though: code blocks, and to include files. -->
