@@ -812,6 +812,16 @@ Psychology & Education
 
 University Hospital
 
+[](https://orcid.org/0000-0002-9460-4344)
+
+![Profile of Doris Schmid](people/images/doris_schmid.png)
+
+##### Doris Schmid
+
+###### Dr.
+
+Psychology & Education
+
 [](https://orcid.org/0000-0001-7223-3602)
 
 ![Profile of Julia Schulte-Cloos](people/images/schulte-cloos_julia.jpg)
