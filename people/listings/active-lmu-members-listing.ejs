@@ -28,7 +28,7 @@ const activeLmuIndividualItems = (items || []).filter((item) => {
 <!-- update the existing metadata attributes to include name and faculty-->
 <div class="col search-item" data-name="<%= item.name.toLowerCase() %>" data-faculty="<%= (lmuIndividualFaculty || '').toLowerCase() %>" <%= metadataAttrs(item) %>>
 <div class="card h-100">
-<div class="position-absolute top-0 end-0 p-1">
+<div class="position-absolute z-2 top-0 end-0 p-1">
 <% if (item.social_media && item.social_media.ORCID) { %>
 <a href="<%= item.social_media.ORCID %>" target="_blank">
 <i class="fa-brands fa-orcid fa-lg" style="color: #A6CE39;"></i>
