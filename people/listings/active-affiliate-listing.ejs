@@ -73,18 +73,18 @@ width="110" height="110">
 <div class="accordion members-accordion d-block d-sm-none my-3 mx-2 shadow-sm bg-light-subtle rounded-3" id="accordion-<%= i %>">
 <div class="accordion-item search-item" data-name="<%= item.name.toLowerCase() %>" data-faculty="<%= (affiliateOrganization || '').toLowerCase() %>" <%= metadataAttrs(item) %>>
 <button class="accordion-button collapsed fw-semibold fs-6" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-<%= i %>" aria-controls="collapse-<%= i %>" >
+<div class="d-flex align-items-center gap-3 flex-grow-1" style="min-width:0;">
 <img src="people/<%= item.photo || '/images/default.svg' %>"
 class="rounded-circle border border-3 me-2"
 width="60" height="60"
 alt="Profile of <%= item.name %>">
-<%= item.name %>
-<div class="position-absolute top-0 end-0 p-1">
+<span class="card-name-text"><%= item.name %></span>
+</div>
 <% if (item.social_media && item.social_media.ORCID) { %>
-<a href="<%= item.social_media.ORCID %>" target="_blank">
+<a href="<%= item.social_media.ORCID %>" target="_blank" class="ms-2 flex-shrink-0" onclick="event.stopPropagation();">
 <i class="fa-brands fa-orcid fa-lg" style="color: #A6CE39;"></i>
 </a>
 <% } %>
-</div>
 </button>
 <div id="collapse-<%= i %>" class="accordion-collapse collapse">
 <div class="accordion-body d-flex flex-row flex-wrap justify-content-between align-items-center">
@@ -101,11 +101,6 @@ alt="Profile of <%= item.name %>">
 </div>
 <% i++; %>
 <% } %>
-
-
-
-
-
 
 
 <style>
