@@ -8,7 +8,7 @@ Faculty of Social Sciences
 
 [haim@ifkw.lmu.de](mailto:haim@ifkw.lmu.de)
 
-[LMU Profile](https://www.sw.lmu.de/ifkw/de/das-institut/organization-und-ansprechpartner/menschen-am-ifkw/kontaktseite/mario-haim-fd3a3c01.html)
+[LMU Profile](https://www.sw.lmu.de/ifkw/de/das-institut/organisation-und-ansprechpartner/menschen-am-ifkw/kontaktseite/mario-haim-fd3a3c01.html)
 
 [Personal Website](https://haim.it/academia/)
 

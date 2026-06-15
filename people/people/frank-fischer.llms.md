@@ -8,7 +8,7 @@ Faculty of Psychology & Education
 
 [frank.fischer@psy.lmu.de](mailto:frank.fischer@psy.lmu.de)
 
-[LMU Profile](https://www.lmu.de/psy/en/persons/contact-page/frank-fischer-607c6126.htmll)
+[LMU Profile](https://www.lmu.de/psy/de/personen/kontaktseite/frank-fischer-607c6126.html)
 
 [](https://orcid.org/0000-0003-0253-659X)
 
