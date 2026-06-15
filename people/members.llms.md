@@ -8,9 +8,9 @@ Our members actively support the goals of the OSC and contribute to our activiti
 
 ![Profile of Susanne Adler](people/images/adler_susanne.jpg)
 
-##### Susanne Adler
+Susanne Adler
 
-###### Dr.
+Dr.
 
 Business Administration
 
@@ -18,9 +18,9 @@ Business Administration
 
 ![Profile of Hans-Joachim Anders](people/images/anders_hans-joachim.jpg)
 
-##### Hans-Joachim Anders
+Hans-Joachim Anders
 
-###### Prof. Dr.
+Prof. Dr.
 
 University Hospital
 
@@ -28,9 +28,9 @@ University Hospital
 
 ![Profile of Katrin Auspurg](people/images/auspurg_katrin.jpg)
 
-##### Katrin Auspurg
+Katrin Auspurg
 
-###### Prof. Dr.
+Prof. Dr.
 
 Social Sciences
 
@@ -38,9 +38,9 @@ Social Sciences
 
 ![Profile of Matthias Aßenmacher](people/images/assenmacher_matthias.png)
 
-##### Matthias Aßenmacher
+Matthias Aßenmacher
 
-###### Dr.
+Dr.
 
 Math, Informatics & Stats
 
@@ -48,9 +48,9 @@ Math, Informatics & Stats
 
 ![Profile of Christian Behrends](people/images/behrends_christian.jpg)
 
-##### Christian Behrends
+Christian Behrends
 
-###### Prof. Dr.
+Prof. Dr.
 
 Medicine
 
@@ -58,9 +58,9 @@ Medicine
 
 ![Profile of Claus Belka](people/images/belka_claus.jpg)
 
-##### Claus Belka
+Claus Belka
 
-###### Prof. Dr.
+Prof. Dr.
 
 University Hospital
 
@@ -68,9 +68,9 @@ University Hospital
 
 ![Profile of Andreas Bender](people/images/bender_andreas.jpg)
 
-##### Andreas Bender
+Andreas Bender
 
-###### Dr.
+Dr.
 
 Math, Informatics & Stats
 
@@ -78,9 +78,9 @@ Math, Informatics & Stats
 
 ![Profile of Bernd Bischl](people/images/bischl_bernd.jpg)
 
-##### Bernd Bischl
+Bernd Bischl
 
-###### Prof. Dr.
+Prof. Dr.
 
 Math, Informatics & Stats
 
@@ -88,9 +88,9 @@ Math, Informatics & Stats
 
 ![Profile of Edouard Bonneville](people/images/bonneville_edouard.jpg)
 
-##### Edouard Bonneville
+Edouard Bonneville
 
-###### Dr.
+Dr.
 
 Medicine
 
@@ -98,9 +98,9 @@ Medicine
 
 ![Profile of Judith Bopp](people/images/bopp_judith.jpg)
 
-##### Judith Bopp
+Judith Bopp
 
-###### Dr.
+Dr.
 
 Geosciences
 
@@ -108,9 +108,9 @@ Geosciences
 
 ![Profile of Anne-Laure Boulesteix](people/images/boulesteix_anne-laure.jpg)
 
-##### Anne-Laure Boulesteix
+Anne-Laure Boulesteix
 
-###### Prof. Dr.
+Prof. Dr.
 
 Medicine
 
@@ -118,9 +118,9 @@ Medicine
 
 ![Profile of Hans-Bernd Brosius](people/images/brosius_hans-bernd.jpg)
 
-##### Hans-Bernd Brosius
+Hans-Bernd Brosius
 
-###### Prof. Dr.
+Prof. Dr.
 
 Social Sciences
 
@@ -128,9 +128,9 @@ Social Sciences
 
 ![Profile of Josef Brüderl](people/images/bruederl_josef.jpg)
 
-##### Josef Brüderl
+Josef Brüderl
 
-###### Prof. Dr.
+Prof. Dr.
 
 Social Sciences
 
@@ -138,9 +138,9 @@ Social Sciences
 
 ![Profile of Gerrit Burkhardt](people/images/burkhardt_gerrit.jpeg)
 
-##### Gerrit Burkhardt
+Gerrit Burkhardt
 
-###### Dr.
+Dr.
 
 University Hospital
 
@@ -148,9 +148,9 @@ University Hospital
 
 ![Profile of Markus Bühner](people/images/buehner_markus.jpg)
 
-##### Markus Bühner
+Markus Bühner
 
-###### Prof. Dr.
+Prof. Dr.
 
 Psychology & Education
 
@@ -158,9 +158,9 @@ Psychology & Education
 
 ![Profile of Annie Chan](people/images/chan_annie.jpg)
 
-##### Annie Chan
+Annie Chan
 
-###### Dr.
+Dr.
 
 Study of Culture
 
@@ -168,9 +168,9 @@ Study of Culture
 
 ![Profile of Martin Dichgans](people/images/dichgans_martin.jpeg)
 
-##### Martin Dichgans
+Martin Dichgans
 
-###### Prof. Dr.
+Prof. Dr.
 
 Medicine
 
@@ -178,9 +178,9 @@ Medicine
 
 ![Profile of Niels Dingemanse](people/images/dingemanse_niels.jpg)
 
-##### Niels Dingemanse
+Niels Dingemanse
 
-###### Prof. Dr.
+Prof. Dr.
 
 Biology
 
@@ -188,9 +188,9 @@ Biology
 
 ![Profile of Johan Duchêne](people/images/duchene_johan.png)
 
-##### Johan Duchêne
+Johan Duchêne
 
-###### Dr.
+Dr.
 
 University Hospital
 
@@ -198,9 +198,9 @@ University Hospital
 
 ![Profile of Marco Düring](people/images/duering_marco.jpg)
 
-##### Marco Düring
+Marco Düring
 
-###### Prof. Dr.
+Prof. Dr.
 
 Medicine
 
@@ -208,9 +208,9 @@ Medicine
 
 ![Profile of Nikola Ebenbeck](people/images/ebenbeck_nikola.jpg)
 
-##### Nikola Ebenbeck
+Nikola Ebenbeck
 
-###### Dr.
+Dr.
 
 Psychology & Education
 
@@ -218,9 +218,9 @@ Psychology & Education
 
 ![Profile of Peter Edelsbrunner](people/images/edelsbrunner_peter.png)
 
-##### Peter Edelsbrunner
+Peter Edelsbrunner
 
-###### Prof. Dr.
+Prof. Dr.
 
 Psychology & Education
 
@@ -228,9 +228,9 @@ Psychology & Education
 
 ![Profile of Thomas Ehring](people/images/ehring_thomas.png)
 
-##### Thomas Ehring
+Thomas Ehring
 
-###### Prof. Dr.
+Prof. Dr.
 
 Psychology & Education
 
@@ -238,9 +238,9 @@ Psychology & Education
 
 ![Profile of Ralf Elsas](people/images/elsas_ralf.jpg)
 
-##### Ralf Elsas
+Ralf Elsas
 
-###### Prof. Dr.
+Prof. Dr.
 
 Business Administration
 
@@ -248,9 +248,9 @@ Business Administration
 
 ![Profile of Michael Ewers](people/images/ewers_michael.jpg)
 
-##### Michael Ewers
+Michael Ewers
 
-###### Prof. Dr.
+Prof. Dr.
 
 Medicine
 
@@ -258,9 +258,9 @@ Medicine
 
 ![Profile of Peter Falkai](people/images/falkai_peter.jpg)
 
-##### Peter Falkai
+Peter Falkai
 
-###### Prof. Dr.
+Prof. Dr.
 
 University Hospital
 
@@ -268,9 +268,9 @@ University Hospital
 
 ![Profile of Xavier Fernández-i-Marín](people/images/fernandez-i-marin_xavier.jpg)
 
-##### Xavier Fernández-i-Marín
+Xavier Fernández-i-Marín
 
-###### Dr.
+Dr.
 
 Social Sciences
 
@@ -278,9 +278,9 @@ Social Sciences
 
 ![Profile of Stefan Feuerriegel](people/images/feuerriegel_stefan.jpg)
 
-##### Stefan Feuerriegel
+Stefan Feuerriegel
 
-###### Prof.
+Prof.
 
 Business Administration
 
@@ -288,9 +288,9 @@ Business Administration
 
 ![Profile of Frank Fischer](people/images/fischer_frank.jpg)
 
-##### Frank Fischer
+Frank Fischer
 
-###### Prof Dr.
+Prof Dr.
 
 Psychology & Education
 
@@ -298,9 +298,9 @@ Psychology & Education
 
 ![Profile of Anne Frenzel](people/images/frenzel_anne.jpg)
 
-##### Anne Frenzel
+Anne Frenzel
 
-###### Prof. Dr.
+Prof. Dr.
 
 Psychology & Education
 
@@ -308,9 +308,9 @@ Psychology & Education
 
 ![Profile of Markus Gebhardt](people/images/gebhardt_markus.jpeg)
 
-##### Markus Gebhardt
+Markus Gebhardt
 
-###### Prof. Dr.
+Prof. Dr.
 
 Psychology & Education
 
@@ -318,9 +318,9 @@ Psychology & Education
 
 ![Profile of Mario Gollwitzer](people/images/gollwitzer_mario.jpg)
 
-##### Mario Gollwitzer
+Mario Gollwitzer
 
-###### Prof. Dr.
+Prof. Dr.
 
 Psychology & Education
 
@@ -328,9 +328,9 @@ Psychology & Education
 
 ![Profile of Sonja Grath](people/images/grath_sonja.jpg)
 
-##### Sonja Grath
+Sonja Grath
 
-###### Dr.
+Dr.
 
 Biology
 
@@ -338,9 +338,9 @@ Biology
 
 ![Profile of Eva Grill](people/images/grill_eva.jpg)
 
-##### Eva Grill
+Eva Grill
 
-###### Prof. Dr.
+Prof. Dr.
 
 Medicine
 
@@ -348,9 +348,9 @@ Medicine
 
 ![Profile of Anna-Carolina Haensch](people/images/haensch_anna-carolina.png)
 
-##### Anna-Carolina Haensch
+Anna-Carolina Haensch
 
-###### Dr.
+Dr.
 
 Math, Informatics & Stats
 
@@ -358,9 +358,9 @@ Math, Informatics & Stats
 
 ![Profile of Mario Haim](people/images/haim_mario.jpg)
 
-##### Mario Haim
+Mario Haim
 
-###### Prof. Dr.
+Prof. Dr.
 
 Social Sciences
 
@@ -368,9 +368,9 @@ Social Sciences
 
 ![Profile of Moritz Heene](people/images/heene_moritz.jpg)
 
-##### Moritz Heene
+Moritz Heene
 
-###### Prof. Dr.
+Prof. Dr.
 
 Psychology & Education
 
@@ -378,9 +378,9 @@ Psychology & Education
 
 ![Profile of Moritz Herrmann](people/images/herrmann_moritz.jpg)
 
-##### Moritz Herrmann
+Moritz Herrmann
 
-###### Dr.
+Dr.
 
 Medicine
 
@@ -388,9 +388,9 @@ Medicine
 
 ![Profile of Sabine Hoffmann](people/images/hoffmann_sabine.jpg)
 
-##### Sabine Hoffmann
+Sabine Hoffmann
 
-###### Dr.
+Dr.
 
 Math, Informatics & Stats
 
@@ -398,9 +398,9 @@ Math, Informatics & Stats
 
 ![Profile of Michael Ingrisch](people/images/ingrisch_michael.jpg)
 
-##### Michael Ingrisch
+Michael Ingrisch
 
-###### Prof. Dr.
+Prof. Dr.
 
 University Hospital
 
@@ -408,9 +408,9 @@ University Hospital
 
 ![Profile of Luisa F. Jiménez-Soto](people/images/jimenez-soto_luisa_f..jpeg)
 
-##### Luisa F. Jiménez-Soto
+Luisa F. Jiménez-Soto
 
-###### PD. Dr.
+PD. Dr.
 
 Medicine
 
@@ -418,9 +418,9 @@ Medicine
 
 ![Profile of Daniel Keeser](people/images/keeser_daniel.jpg)
 
-##### Daniel Keeser
+Daniel Keeser
 
-###### Dr.
+Dr.
 
 University Hospital
 
@@ -428,9 +428,9 @@ University Hospital
 
 ![Profile of Anne-Kathrin Kleine](people/images/kleine_anne-kathrin.jpeg)
 
-##### Anne-Kathrin Kleine
+Anne-Kathrin Kleine
 
-###### Dr.
+Dr.
 
 Psychology & Education
 
@@ -438,9 +438,9 @@ Psychology & Education
 
 ![Profile of Inga Koerte](people/images/koerte_inga.jpg)
 
-##### Inga Koerte
+Inga Koerte
 
-###### Prof. Dr.
+Prof. Dr.
 
 Medicine
 
@@ -448,9 +448,9 @@ Medicine
 
 ![Profile of Johannes Kopf-Beck](people/images/kopf-beck_johannes.jpg)
 
-##### Johannes Kopf-Beck
+Johannes Kopf-Beck
 
-###### PD Dr.
+PD Dr.
 
 Psychology & Education
 
@@ -458,9 +458,9 @@ Psychology & Education
 
 ![Profile of Dieter Kranzlmüller](people/images/kranzlmueller_dieter.jpg)
 
-##### Dieter Kranzlmüller
+Dieter Kranzlmüller
 
-###### Prof. Dr.
+Prof. Dr.
 
 Math, Informatics & Stats
 
@@ -468,9 +468,9 @@ Math, Informatics & Stats
 
 ![Profile of Thomas Krefeld](people/images/krefeld_thomas.jpg)
 
-##### Thomas Krefeld
+Thomas Krefeld
 
-###### Prof. Dr.
+Prof. Dr.
 
 Languages & Literatures
 
@@ -478,9 +478,9 @@ Languages & Literatures
 
 ![Profile of Frauke Kreuter](people/images/kreuter_frauke.jpg)
 
-##### Frauke Kreuter
+Frauke Kreuter
 
-###### Prof. Dr.
+Prof. Dr.
 
 Math, Informatics & Stats
 
@@ -488,17 +488,17 @@ Math, Informatics & Stats
 
 ![Profile of Andreas Kruck](people/images/kruck_andreas.jpeg)
 
-##### Andreas Kruck
+Andreas Kruck
 
-###### PD Dr.
+PD Dr.
 
 Social Sciences
 
 ![Profile of Reka Kugyelka](people/images/kugyelka_reka.jpg)
 
-##### Reka Kugyelka
+Reka Kugyelka
 
-###### Dr.
+Dr.
 
 University Hospital
 
@@ -506,9 +506,9 @@ University Hospital
 
 ![Profile of Thomas Kuhr](people/images/kuhr_thomas.jpg)
 
-##### Thomas Kuhr
+Thomas Kuhr
 
-###### Prof. Dr.
+Prof. Dr.
 
 Physics
 
@@ -516,9 +516,9 @@ Physics
 
 ![Profile of Gitta Kutyniok](people/images/kutyniok_gitta.jpeg)
 
-##### Gitta Kutyniok
+Gitta Kutyniok
 
-###### Prof. Dr.
+Prof. Dr.
 
 Math, Informatics & Stats
 
@@ -526,9 +526,9 @@ Math, Informatics & Stats
 
 ![Profile of Helmut Küchenhoff](people/images/kuechenhoff_helmut.jpg)
 
-##### Helmut Küchenhoff
+Helmut Küchenhoff
 
-###### Prof. Dr.
+Prof. Dr.
 
 Math, Informatics & Stats
 
@@ -536,9 +536,9 @@ Math, Informatics & Stats
 
 ![Profile of Anna Sophie Kümpel](people/images/kuempel_anna_sophie.jpg)
 
-##### Anna Sophie Kümpel
+Anna Sophie Kümpel
 
-###### Prof. Dr.
+Prof. Dr.
 
 Social Sciences
 
@@ -546,9 +546,9 @@ Social Sciences
 
 ![Profile of Jürgen Landes](people/images/landes_juergen.jpg)
 
-##### Jürgen Landes
+Jürgen Landes
 
-###### Dr.
+Dr.
 
 Philosophy
 
@@ -556,9 +556,9 @@ Philosophy
 
 ![Profile of Michael Lauseker](people/images/lauseker_michael.jpg)
 
-##### Michael Lauseker
+Michael Lauseker
 
-###### PD. Dr.
+PD. Dr.
 
 Medicine
 
@@ -566,9 +566,9 @@ Medicine
 
 ![Profile of Ralf Ludwig](people/images/ludwig_ralf.jpg)
 
-##### Ralf Ludwig
+Ralf Ludwig
 
-###### Prof. Dr.
+Prof. Dr.
 
 Geosciences
 
@@ -576,9 +576,9 @@ Geosciences
 
 ![Profile of Markus Maier](people/images/maier_markus.JPG)
 
-##### Markus Maier
+Markus Maier
 
-###### Prof. Dr.
+Prof. Dr.
 
 Psychology & Education
 
@@ -586,9 +586,9 @@ Psychology & Education
 
 ![Profile of Ulrich Mansmann](people/images/mansmann_ulrich.jpg)
 
-##### Ulrich Mansmann
+Ulrich Mansmann
 
-###### Prof. Dr.
+Prof. Dr.
 
 Medicine
 
@@ -596,9 +596,9 @@ Medicine
 
 ![Profile of Anton Marx](people/images/marx_anton.jpg)
 
-##### Anton Marx
+Anton Marx
 
-###### Dr.
+Dr.
 
 Psychology & Education
 
@@ -606,9 +606,9 @@ Psychology & Education
 
 ![Profile of Marko Mijic](people/images/mijic_marko.jpg)
 
-##### Marko Mijic
+Marko Mijic
 
-###### Dr.
+Dr.
 
 Medicine
 
@@ -616,9 +616,9 @@ Medicine
 
 ![Profile of Antonia Misch](people/images/misch_antonia.jpg)
 
-##### Antonia Misch
+Antonia Misch
 
-###### Dr.
+Dr.
 
 Psychology & Education
 
@@ -626,9 +626,9 @@ Psychology & Education
 
 ![Profile of Christian L. Müller](people/images/mueller_christian-l.png)
 
-##### Christian L. Müller
+Christian L. Müller
 
-###### Prof. Dr.
+Prof. Dr.
 
 Math, Informatics & Stats
 
@@ -636,9 +636,9 @@ Math, Informatics & Stats
 
 ![Profile of Maliheh Nazari-Jahantigh](people/images/maliheh_nazari-jahantigh.png)
 
-##### Maliheh Nazari-Jahantigh
+Maliheh Nazari-Jahantigh
 
-###### Dr.
+Dr.
 
 University Hospital
 
@@ -646,9 +646,9 @@ University Hospital
 
 ![Profile of Marcel Neunhoeffer](people/images/neunhoeffer_marcel.jpg)
 
-##### Marcel Neunhoeffer
+Marcel Neunhoeffer
 
-###### Dr.
+Dr.
 
 Math, Informatics & Stats
 
@@ -656,9 +656,9 @@ Math, Informatics & Stats
 
 ![Profile of Frank Padberg](people/images/padberg_frank.jpg)
 
-##### Frank Padberg
+Frank Padberg
 
-###### Prof. Dr.
+Prof. Dr.
 
 University Hospital
 
@@ -666,9 +666,9 @@ University Hospital
 
 ![Profile of Florian Pargent](people/images/pargent_florian.png)
 
-##### Florian Pargent
+Florian Pargent
 
-###### Dr.
+Dr.
 
 Psychology & Education
 
@@ -676,9 +676,9 @@ Psychology & Education
 
 ![Profile of Andreas Peichl](people/images/peichl_andreas.jpg)
 
-##### Andreas Peichl
+Andreas Peichl
 
-###### Prof. Dr.
+Prof. Dr.
 
 Economics
 
@@ -686,9 +686,9 @@ Economics
 
 ![Profile of Robert Perneczky](people/images/perneczky_robert.jpg)
 
-##### Robert Perneczky
+Robert Perneczky
 
-###### Prof. Dr.
+Prof. Dr.
 
 University Hospital
 
@@ -696,9 +696,9 @@ University Hospital
 
 ![Profile of Giovanni Picogna](people/images/picogna_giovanni.jpg)
 
-##### Giovanni Picogna
+Giovanni Picogna
 
-###### Dr.
+Dr.
 
 Physics
 
@@ -706,9 +706,9 @@ Physics
 
 ![Profile of Barbara Plank](people/images/plank_barbara.jpg)
 
-##### Barbara Plank
+Barbara Plank
 
-###### Prof. Dr.
+Prof. Dr.
 
 Languages & Literatures
 
@@ -716,9 +716,9 @@ Languages & Literatures
 
 ![Profile of Belinda Platt](people/images/platt_belinda.jpg)
 
-##### Belinda Platt
+Belinda Platt
 
-###### Dr.
+Dr.
 
 University Hospital
 
@@ -726,9 +726,9 @@ University Hospital
 
 ![Profile of Nikolaus Plesnila](people/images/plesnila_nikolaus.jpg)
 
-##### Nikolaus Plesnila
+Nikolaus Plesnila
 
-###### Prof. Dr.
+Prof. Dr.
 
 Medicine
 
@@ -736,9 +736,9 @@ Medicine
 
 ![Profile of Matthias Reinhard](people/images/reinhard_matthias.jpg)
 
-##### Matthias Reinhard
+Matthias Reinhard
 
-###### Dr.
+Dr.
 
 University Hospital
 
@@ -746,9 +746,9 @@ University Hospital
 
 ![Profile of Jörg Renkawitz](people/images/renkawitz_joerg.jpg)
 
-##### Jörg Renkawitz
+Jörg Renkawitz
 
-###### Prof. Dr.
+Prof. Dr.
 
 Medicine
 
@@ -756,9 +756,9 @@ Medicine
 
 ![Profile of Saskia Rusche](people/images/rusche_saskia.jpg)
 
-##### Saskia Rusche
+Saskia Rusche
 
-###### Dr.
+Dr.
 
 Medicine
 
@@ -766,9 +766,9 @@ Medicine
 
 ![Profile of Marko Sarstedt](people/images/sarstedt_marko.jpg)
 
-##### Marko Sarstedt
+Marko Sarstedt
 
-###### Prof. Dr.
+Prof. Dr.
 
 Business Administration
 
@@ -776,9 +776,9 @@ Business Administration
 
 ![Profile of Balthasar Schachtner](people/images/schachtner_balthasar.jpg)
 
-##### Balthasar Schachtner
+Balthasar Schachtner
 
-###### Dr.
+Dr.
 
 Medicine
 
@@ -786,9 +786,9 @@ Medicine
 
 ![Profile of Fabian Scheipl](people/images/scheipl_fabian.jpg)
 
-##### Fabian Scheipl
+Fabian Scheipl
 
-###### PD Dr.
+PD Dr.
 
 Math, Informatics & Stats
 
@@ -796,9 +796,9 @@ Math, Informatics & Stats
 
 ![Profile of Moritz Schiltenwolf](people/images/schiltenwolf_moritz.png)
 
-##### Moritz Schiltenwolf
+Moritz Schiltenwolf
 
-###### Dr.
+Dr.
 
 Psychology & Education
 
@@ -806,9 +806,9 @@ Psychology & Education
 
 ![Profile of Xenia Schmalz](people/images/schmalz_xenia.jpg)
 
-##### Xenia Schmalz
+Xenia Schmalz
 
-###### Dr.
+Dr.
 
 University Hospital
 
@@ -816,9 +816,9 @@ University Hospital
 
 ![Profile of Doris Schmid](people/images/doris_schmid.png)
 
-##### Doris Schmid
+Doris Schmid
 
-###### Dr.
+Dr.
 
 Psychology & Education
 
@@ -826,9 +826,9 @@ Psychology & Education
 
 ![Profile of Julia Schulte-Cloos](people/images/schulte-cloos_julia.jpg)
 
-##### Julia Schulte-Cloos
+Julia Schulte-Cloos
 
-###### Dr.
+Dr.
 
 Social Sciences
 
@@ -836,9 +836,9 @@ Social Sciences
 
 ![Profile of Enrico Schulz](people/images/schulz_enrico.jpg)
 
-##### Enrico Schulz
+Enrico Schulz
 
-###### Dr.
+Dr.
 
 University Hospital
 
@@ -846,9 +846,9 @@ University Hospital
 
 ![Profile of Christian Schulz](people/images/schulz_christian.jpg)
 
-##### Christian Schulz
+Christian Schulz
 
-###### Prof. Dr.
+Prof. Dr.
 
 University Hospital
 
@@ -856,9 +856,9 @@ University Hospital
 
 ![Profile of Carsten Schwemmer](people/images/schwemmer_carsten.jpg)
 
-##### Carsten Schwemmer
+Carsten Schwemmer
 
-###### Prof.
+Prof.
 
 Social Sciences
 
@@ -866,9 +866,9 @@ Social Sciences
 
 ![Profile of Ramona Schödel](people/images/schoedel_ramona.jpg)
 
-##### Ramona Schödel
+Ramona Schödel
 
-###### Dr.
+Dr.
 
 Psychology & Education
 
@@ -876,9 +876,9 @@ Psychology & Education
 
 ![Profile of Laura Seelkopf](people/images/seelkopf_laura.JPG)
 
-##### Laura Seelkopf
+Laura Seelkopf
 
-###### Prof. Dr.
+Prof. Dr.
 
 Social Sciences
 
@@ -886,9 +886,9 @@ Social Sciences
 
 ![Profile of Ksenia Shagal](people/images/shagal_ksenia.jpg)
 
-##### Ksenia Shagal
+Ksenia Shagal
 
-###### Prof. Dr.
+Prof. Dr.
 
 Languages & Literatures
 
@@ -896,9 +896,9 @@ Languages & Literatures
 
 ![Profile of Rebecca I. Sienel](people/images/sienel_rebecca_i..jpg)
 
-##### Rebecca I. Sienel
+Rebecca I. Sienel
 
-###### Dr.
+Dr.
 
 University Hospital
 
@@ -906,9 +906,9 @@ University Hospital
 
 ![Profile of Adam Sorbie](people/images/sorbie_adam.jpg)
 
-##### Adam Sorbie
+Adam Sorbie
 
-###### Dr.
+Dr.
 
 University Hospital
 
@@ -916,9 +916,9 @@ University Hospital
 
 ![Profile of Tobias Straub](people/images/straub_tobias.jpg)
 
-##### Tobias Straub
+Tobias Straub
 
-###### Dr.
+Dr.
 
 Medicine
 
@@ -926,9 +926,9 @@ Medicine
 
 ![Profile of Justin Sulik](people/images/sulik_justin.jpg)
 
-##### Justin Sulik
+Justin Sulik
 
-###### Dr.
+Dr.
 
 Philosophy
 
@@ -936,9 +936,9 @@ Philosophy
 
 ![Profile of Paul C.J. Taylor](people/images/taylor_paul_cj.jpg)
 
-##### Paul C.J. Taylor
+Paul C.J. Taylor
 
-###### Prof. Dr.
+Prof. Dr.
 
 Psychology & Education
 
@@ -946,9 +946,9 @@ Psychology & Education
 
 ![Profile of Paul W. Thurner](people/images/thurner_paul_w.jpg)
 
-##### Paul W. Thurner
+Paul W. Thurner
 
-###### Prof. Dr.
+Prof. Dr.
 
 Social Sciences
 
@@ -956,9 +956,9 @@ Social Sciences
 
 ![Profile of Renata Topinkova](people/images/topinkova_renata.jpg)
 
-##### Renata Topinkova
+Renata Topinkova
 
-###### Dr.
+Dr.
 
 Social Sciences
 
@@ -966,9 +966,9 @@ Social Sciences
 
 ![Profile of Mathias Twardawski](people/images/twardawski_mathias.jpeg)
 
-##### Mathias Twardawski
+Mathias Twardawski
 
-###### Dr.
+Dr.
 
 Psychology & Education
 
@@ -976,9 +976,9 @@ Psychology & Education
 
 ![Profile of Elisabeth Vogl](people/images/vogl_elisabeth.jpeg)
 
-##### Elisabeth Vogl
+Elisabeth Vogl
 
-###### Dr.
+Dr.
 
 Psychology & Education
 
@@ -986,9 +986,9 @@ Psychology & Education
 
 ![Profile of Sebastian Wichert](people/images/wichert_sebastian.jpg)
 
-##### Sebastian Wichert
+Sebastian Wichert
 
-###### Dr.
+Dr.
 
 Economics
 
@@ -996,9 +996,9 @@ Economics
 
 ![Profile of Juliane Wilcke](people/images/wilcke_juliane.jpg)
 
-##### Juliane Wilcke
+Juliane Wilcke
 
-###### Dr.
+Dr.
 
 Medicine
 
@@ -1006,9 +1006,9 @@ Medicine
 
 ![Profile of Joachim Winter](people/images/winter_joachim.jpg)
 
-##### Joachim Winter
+Joachim Winter
 
-###### Prof. Dr.
+Prof. Dr.
 
 Economics
 
@@ -1016,9 +1016,9 @@ Economics
 
 ![Profile of Eckhard Wolf](people/images/wolf_eckhard.jpg)
 
-##### Eckhard Wolf
+Eckhard Wolf
 
-###### Prof. Dr.
+Prof. Dr.
 
 Veterinary Medicine
 
@@ -1026,9 +1026,9 @@ Veterinary Medicine
 
 ![Profile of Alexander Wuttke](people/images/wuttke_alexander.jpg)
 
-##### Alexander Wuttke
+Alexander Wuttke
 
-###### Prof. Dr.
+Prof. Dr.
 
 Social Sciences
 
@@ -1036,9 +1036,9 @@ Social Sciences
 
 ![Profile of Gert Wörheide](people/images/woerheide_gert.jpg)
 
-##### Gert Wörheide
+Gert Wörheide
 
-###### Prof. Dr.
+Prof. Dr.
 
 Geosciences
 
@@ -1046,9 +1046,9 @@ Geosciences
 
 ![Profile of Quirin Würschinger](people/images/wuerschinger_quirin.png)
 
-##### Quirin Würschinger
+Quirin Würschinger
 
-###### Dr.
+Dr.
 
 Languages & Literatures
 
@@ -1056,9 +1056,9 @@ Languages & Literatures
 
 ![Profile of Dietmar Zaefferer](people/images/zaefferer_dietmar.JPG)
 
-##### Dietmar Zaefferer
+Dietmar Zaefferer
 
-###### Prof. Dr.
+Prof. Dr.
 
 Languages & Literatures
 
@@ -1066,9 +1066,9 @@ Languages & Literatures
 
 ![Profile of Judith Zellner](people/images/judith_zellner.jpeg)
 
-##### Judith Zellner
+Judith Zellner
 
-###### Dr. des.
+Dr. des.
 
 Psychology & Education
 
@@ -1076,11 +1076,1089 @@ Psychology & Education
 
 ![Profile of Caroline Zygar-Hoffmann](people/images/zygar-hoffmann_caroline.jpg)
 
-##### Caroline Zygar-Hoffmann
+Caroline Zygar-Hoffmann
 
-###### Dr.
+Dr.
 
 Psychology & Education
+
+![Profile of Susanne Adler](people/images/adler_susanne.jpg) Susanne Adler
+
+[](https://orcid.org/0000-0002-3211-6871)
+
+Title: Dr.
+
+Faculty: Business Administration
+
+[View Profile](../people/people/susanne-adler.llms.md)
+
+![Profile of Hans-Joachim Anders](people/images/anders_hans-joachim.jpg) Hans-Joachim Anders
+
+[](https://orcid.org/0000-0003-2434-2956)
+
+Title: Prof. Dr.
+
+Faculty: University Hospital
+
+[View Profile](../people/people/hans-joachim-anders.llms.md)
+
+![Profile of Katrin Auspurg](people/images/auspurg_katrin.jpg) Katrin Auspurg
+
+[](https://orcid.org/0000-0003-4504-0391)
+
+Title: Prof. Dr.
+
+Faculty: Social Sciences
+
+[View Profile](../people/people/katrin-auspurg.llms.md)
+
+![Profile of Matthias Aßenmacher](people/images/assenmacher_matthias.png) Matthias Aßenmacher
+
+[](https://orcid.org/0000-0003-2154-5774)
+
+Title: Dr.
+
+Faculty: Math, Informatics & Stats
+
+[View Profile](../people/people/matthias-assenmacher.llms.md)
+
+![Profile of Christian Behrends](people/images/behrends_christian.jpg) Christian Behrends
+
+[](https://orcid.org/0000-0002-9184-7607)
+
+Title: Prof. Dr.
+
+Faculty: Medicine
+
+[View Profile](../people/people/christian-behrends.llms.md)
+
+![Profile of Claus Belka](people/images/belka_claus.jpg) Claus Belka
+
+[](https://orcid.org/0000-0002-1287-7825)
+
+Title: Prof. Dr.
+
+Faculty: University Hospital
+
+[View Profile](../people/people/claus-belka.llms.md)
+
+![Profile of Andreas Bender](people/images/bender_andreas.jpg) Andreas Bender
+
+[](https://orcid.org/0000-0001-5628-8611)
+
+Title: Dr.
+
+Faculty: Math, Informatics & Stats
+
+[View Profile](../people/people/andreas-bender.llms.md)
+
+![Profile of Bernd Bischl](people/images/bischl_bernd.jpg) Bernd Bischl
+
+[](https://orcid.org/0000-0001-6002-6980)
+
+Title: Prof. Dr.
+
+Faculty: Math, Informatics & Stats
+
+[View Profile](../people/people/bernd-bischl.llms.md)
+
+![Profile of Edouard Bonneville](people/images/bonneville_edouard.jpg) Edouard Bonneville
+
+[](https://orcid.org/0000-0001-7542-4498)
+
+Title: Dr.
+
+Faculty: Medicine
+
+[View Profile](../people/people/edouard-bonneville.llms.md)
+
+![Profile of Judith Bopp](people/images/bopp_judith.jpg) Judith Bopp
+
+[](https://orcid.org/0000-0001-9399-7484)
+
+Title: Dr.
+
+Faculty: Geosciences
+
+[View Profile](../people/people/judith-bopp.llms.md)
+
+![Profile of Anne-Laure Boulesteix](people/images/boulesteix_anne-laure.jpg) Anne-Laure Boulesteix
+
+[](https://orcid.org/0000-0002-2729-0947)
+
+Title: Prof. Dr.
+
+Faculty: Medicine
+
+[View Profile](../people/people/anne-laure-boulesteix.llms.md)
+
+![Profile of Hans-Bernd Brosius](people/images/brosius_hans-bernd.jpg) Hans-Bernd Brosius
+
+[](https://orcid.org/0000-0001-7544-398X)
+
+Title: Prof. Dr.
+
+Faculty: Social Sciences
+
+[View Profile](../people/people/hans-bernd-brosius.llms.md)
+
+![Profile of Josef Brüderl](people/images/bruederl_josef.jpg) Josef Brüderl
+
+[](https://orcid.org/0000-0001-8636-9922)
+
+Title: Prof. Dr.
+
+Faculty: Social Sciences
+
+[View Profile](../people/people/josef-bruederl.llms.md)
+
+![Profile of Gerrit Burkhardt](people/images/burkhardt_gerrit.jpeg) Gerrit Burkhardt
+
+[](https://orcid.org/0000-0003-3965-5664)
+
+Title: Dr.
+
+Faculty: University Hospital
+
+[View Profile](../people/people/gerrit-burkhardt.llms.md)
+
+![Profile of Markus Bühner](people/images/buehner_markus.jpg) Markus Bühner
+
+[](https://orcid.org/0000-0002-0597-8708)
+
+Title: Prof. Dr.
+
+Faculty: Psychology & Education
+
+[View Profile](../people/people/markus-buehner.llms.md)
+
+![Profile of Annie Chan](people/images/chan_annie.jpg) Annie Chan
+
+[](https://orcid.org/0000-0002-4435-3209)
+
+Title: Dr.
+
+Faculty: Study of Culture
+
+[View Profile](../people/people/annie-chan.llms.md)
+
+![Profile of Martin Dichgans](people/images/dichgans_martin.jpeg) Martin Dichgans
+
+[](https://orcid.org/0000-0002-0654-387X)
+
+Title: Prof. Dr.
+
+Faculty: Medicine
+
+[View Profile](../people/people/martin-dichgans.llms.md)
+
+![Profile of Niels Dingemanse](people/images/dingemanse_niels.jpg) Niels Dingemanse
+
+[](https://orcid.org/0000-0003-3320-0861)
+
+Title: Prof. Dr.
+
+Faculty: Biology
+
+[View Profile](../people/people/niels-dingemanse.llms.md)
+
+![Profile of Johan Duchêne](people/images/duchene_johan.png) Johan Duchêne
+
+[](https://orcid.org/0000-0002-3973-0022)
+
+Title: Dr.
+
+Faculty: University Hospital
+
+[View Profile](../people/people/johan-duchene.llms.md)
+
+![Profile of Marco Düring](people/images/duering_marco.jpg) Marco Düring
+
+[](https://orcid.org/0000-0003-2302-3136)
+
+Title: Prof. Dr.
+
+Faculty: Medicine
+
+[View Profile](../people/people/marco-duering.llms.md)
+
+![Profile of Nikola Ebenbeck](people/images/ebenbeck_nikola.jpg) Nikola Ebenbeck
+
+[](https://orcid.org/0000-0002-4167-981X)
+
+Title: Dr.
+
+Faculty: Psychology & Education
+
+[View Profile](../people/people/nikola-ebenbeck.llms.md)
+
+![Profile of Peter Edelsbrunner](people/images/edelsbrunner_peter.png) Peter Edelsbrunner
+
+[](https://orcid.org/0000-0001-9102-1090)
+
+Title: Prof. Dr.
+
+Faculty: Psychology & Education
+
+[View Profile](../people/people/peter-edelsbrunner.llms.md)
+
+![Profile of Thomas Ehring](people/images/ehring_thomas.png) Thomas Ehring
+
+[](https://orcid.org/0000-0001-9502-6868)
+
+Title: Prof. Dr.
+
+Faculty: Psychology & Education
+
+[View Profile](../people/people/thomas-ehring.llms.md)
+
+![Profile of Ralf Elsas](people/images/elsas_ralf.jpg) Ralf Elsas
+
+[](https://orcid.org/0000-0001-8117-1175)
+
+Title: Prof. Dr.
+
+Faculty: Business Administration
+
+[View Profile](../people/people/ralf-elsas.llms.md)
+
+![Profile of Michael Ewers](people/images/ewers_michael.jpg) Michael Ewers
+
+[](https://orcid.org/0000-0001-5231-1714)
+
+Title: Prof. Dr.
+
+Faculty: Medicine
+
+[View Profile](../people/people/michael-ewers.llms.md)
+
+![Profile of Peter Falkai](people/images/falkai_peter.jpg) Peter Falkai
+
+[](https://orcid.org/0000-0003-2873-8667)
+
+Title: Prof. Dr.
+
+Faculty: University Hospital
+
+[View Profile](../people/people/peter-falkai.llms.md)
+
+![Profile of Xavier Fernández-i-Marín](people/images/fernandez-i-marin_xavier.jpg) Xavier Fernández-i-Marín
+
+[](https://orcid.org/0000-0002-9522-8870)
+
+Title: Dr.
+
+Faculty: Social Sciences
+
+[View Profile](../people/people/xavier-fernandez-marin.llms.md)
+
+![Profile of Stefan Feuerriegel](people/images/feuerriegel_stefan.jpg) Stefan Feuerriegel
+
+[](https://orcid.org/0000-0001-7856-8729)
+
+Title: Prof.
+
+Faculty: Business Administration
+
+[View Profile](../people/people/stefan-feuerriegel.llms.md)
+
+![Profile of Frank Fischer](people/images/fischer_frank.jpg) Frank Fischer
+
+[](https://orcid.org/0000-0003-0253-659X)
+
+Title: Prof Dr.
+
+Faculty: Psychology & Education
+
+[View Profile](../people/people/frank-fischer.llms.md)
+
+![Profile of Anne Frenzel](people/images/frenzel_anne.jpg) Anne Frenzel
+
+[](https://orcid.org/0000-0002-9068-9926)
+
+Title: Prof. Dr.
+
+Faculty: Psychology & Education
+
+[View Profile](../people/people/anne-frenzel.llms.md)
+
+![Profile of Markus Gebhardt](people/images/gebhardt_markus.jpeg) Markus Gebhardt
+
+[](https://orcid.org/0000-0002-9122-0556)
+
+Title: Prof. Dr.
+
+Faculty: Psychology & Education
+
+[View Profile](../people/people/markus-gebhardt.llms.md)
+
+![Profile of Mario Gollwitzer](people/images/gollwitzer_mario.jpg) Mario Gollwitzer
+
+[](https://orcid.org/0000-0003-4310-4793)
+
+Title: Prof. Dr.
+
+Faculty: Psychology & Education
+
+[View Profile](../people/people/mario-gollwitzer.llms.md)
+
+![Profile of Sonja Grath](people/images/grath_sonja.jpg) Sonja Grath
+
+[](https://orcid.org/0000-0003-3621-736X)
+
+Title: Dr.
+
+Faculty: Biology
+
+[View Profile](../people/people/sonja-grath.llms.md)
+
+![Profile of Eva Grill](people/images/grill_eva.jpg) Eva Grill
+
+[](https://orcid.org/0000-0002-0273-7984)
+
+Title: Prof. Dr.
+
+Faculty: Medicine
+
+[View Profile](../people/people/eva-grill.llms.md)
+
+![Profile of Anna-Carolina Haensch](people/images/haensch_anna-carolina.png) Anna-Carolina Haensch
+
+[](https://orcid.org/0000-0001-6772-0393)
+
+Title: Dr.
+
+Faculty: Math, Informatics & Stats
+
+[View Profile](../people/people/anna-carolina-haensch.llms.md)
+
+![Profile of Mario Haim](people/images/haim_mario.jpg) Mario Haim
+
+[](https://orcid.org/0000-0002-0643-2299)
+
+Title: Prof. Dr.
+
+Faculty: Social Sciences
+
+[View Profile](../people/people/mario-haim.llms.md)
+
+![Profile of Moritz Heene](people/images/heene_moritz.jpg) Moritz Heene
+
+[](https://orcid.org/0009-0007-4956-2417)
+
+Title: Prof. Dr.
+
+Faculty: Psychology & Education
+
+[View Profile](../people/people/moritz-heene.llms.md)
+
+![Profile of Moritz Herrmann](people/images/herrmann_moritz.jpg) Moritz Herrmann
+
+[](https://orcid.org/0000-0002-4893-5812)
+
+Title: Dr.
+
+Faculty: Medicine
+
+[View Profile](../people/people/moritz-herrmann.llms.md)
+
+![Profile of Sabine Hoffmann](people/images/hoffmann_sabine.jpg) Sabine Hoffmann
+
+[](https://orcid.org/0000-0001-6197-8801)
+
+Title: Dr.
+
+Faculty: Math, Informatics & Stats
+
+[View Profile](../people/people/sabine-hoffmann.llms.md)
+
+![Profile of Michael Ingrisch](people/images/ingrisch_michael.jpg) Michael Ingrisch
+
+[](https://orcid.org/0000-0003-0268-9078)
+
+Title: Prof. Dr.
+
+Faculty: University Hospital
+
+[View Profile](../people/people/michael-ingrisch.llms.md)
+
+![Profile of Luisa F. Jiménez-Soto](people/images/jimenez-soto_luisa_f..jpeg) Luisa F. Jiménez-Soto
+
+[](https://orcid.org/0000-0001-8551-5019)
+
+Title: PD. Dr.
+
+Faculty: Medicine
+
+[View Profile](../people/people/luisa-jimenez-soto.llms.md)
+
+![Profile of Daniel Keeser](people/images/keeser_daniel.jpg) Daniel Keeser
+
+[](https://orcid.org/0000-0002-0244-1024)
+
+Title: Dr.
+
+Faculty: University Hospital
+
+[View Profile](../people/people/daniel-keeser.llms.md)
+
+![Profile of Anne-Kathrin Kleine](people/images/kleine_anne-kathrin.jpeg) Anne-Kathrin Kleine
+
+[](https://orcid.org/0000-0003-1919-2834)
+
+Title: Dr.
+
+Faculty: Psychology & Education
+
+[View Profile](../people/people/anne-kathrin-kleine.llms.md)
+
+![Profile of Inga Koerte](people/images/koerte_inga.jpg) Inga Koerte
+
+[](https://orcid.org/0000-0003-1281-9286)
+
+Title: Prof. Dr.
+
+Faculty: Medicine
+
+[View Profile](../people/people/inga-koerte.llms.md)
+
+![Profile of Johannes Kopf-Beck](people/images/kopf-beck_johannes.jpg) Johannes Kopf-Beck
+
+[](https://orcid.org/0000-0002-0368-3930)
+
+Title: PD Dr.
+
+Faculty: Psychology & Education
+
+[View Profile](../people/people/johannes-kopf-beck.llms.md)
+
+![Profile of Dieter Kranzlmüller](people/images/kranzlmueller_dieter.jpg) Dieter Kranzlmüller
+
+[](https://orcid.org/0000-0002-8319-0123)
+
+Title: Prof. Dr.
+
+Faculty: Math, Informatics & Stats
+
+[View Profile](../people/people/dieter-kranzlmueller.llms.md)
+
+![Profile of Thomas Krefeld](people/images/krefeld_thomas.jpg) Thomas Krefeld
+
+[](https://orcid.org/0000-0001-9657-6052)
+
+Title: Prof. Dr.
+
+Faculty: Languages & Literatures
+
+[View Profile](../people/people/thomas-krefeld.llms.md)
+
+![Profile of Frauke Kreuter](people/images/kreuter_frauke.jpg) Frauke Kreuter
+
+[](https://orcid.org/0000-0002-7339-2645)
+
+Title: Prof. Dr.
+
+Faculty: Math, Informatics & Stats
+
+[View Profile](../people/people/frauke-kreuter.llms.md)
+
+![Profile of Andreas Kruck](people/images/kruck_andreas.jpeg) Andreas Kruck
+
+[](https://orcid.org/0000-0002-2145-9326)
+
+Title: PD Dr.
+
+Faculty: Social Sciences
+
+[View Profile](../people/people/andreas-kruck.llms.md)
+
+![Profile of Reka Kugyelka](people/images/kugyelka_reka.jpg) Reka Kugyelka
+
+Title: Dr.
+
+Faculty: University Hospital
+
+[View Profile](../people/people/reka-kugyelka.llms.md)
+
+![Profile of Thomas Kuhr](people/images/kuhr_thomas.jpg) Thomas Kuhr
+
+[](https://orcid.org/0000-0001-6251-8049)
+
+Title: Prof. Dr.
+
+Faculty: Physics
+
+[View Profile](../people/people/thomas-kuhr.llms.md)
+
+![Profile of Gitta Kutyniok](people/images/kutyniok_gitta.jpeg) Gitta Kutyniok
+
+[](https://orcid.org/0000-0001-9738-2487)
+
+Title: Prof. Dr.
+
+Faculty: Math, Informatics & Stats
+
+[View Profile](../people/people/gitta-kutyniok.llms.md)
+
+![Profile of Helmut Küchenhoff](people/images/kuechenhoff_helmut.jpg) Helmut Küchenhoff
+
+[](https://orcid.org/0000-0002-6372-2487)
+
+Title: Prof. Dr.
+
+Faculty: Math, Informatics & Stats
+
+[View Profile](../people/people/helmut-kuechenhoff.llms.md)
+
+![Profile of Anna Sophie Kümpel](people/images/kuempel_anna_sophie.jpg) Anna Sophie Kümpel
+
+[](https://orcid.org/0000-0001-7184-4057)
+
+Title: Prof. Dr.
+
+Faculty: Social Sciences
+
+[View Profile](../people/people/anna-sophie-kuempel.llms.md)
+
+![Profile of Jürgen Landes](people/images/landes_juergen.jpg) Jürgen Landes
+
+[](https://orcid.org/0000-0003-3105-6624)
+
+Title: Dr.
+
+Faculty: Philosophy
+
+[View Profile](../people/people/juergen-landes.llms.md)
+
+![Profile of Michael Lauseker](people/images/lauseker_michael.jpg) Michael Lauseker
+
+[](https://orcid.org/0000-0002-6662-7127)
+
+Title: PD. Dr.
+
+Faculty: Medicine
+
+[View Profile](../people/people/michael-lauseker.llms.md)
+
+![Profile of Ralf Ludwig](people/images/ludwig_ralf.jpg) Ralf Ludwig
+
+[](https://orcid.org/0000-0002-4225-4098)
+
+Title: Prof. Dr.
+
+Faculty: Geosciences
+
+[View Profile](../people/people/ralf-ludwig.llms.md)
+
+![Profile of Markus Maier](people/images/maier_markus.JPG) Markus Maier
+
+[](https://orcid.org/0000-0002-8115-4612)
+
+Title: Prof. Dr.
+
+Faculty: Psychology & Education
+
+[View Profile](../people/people/markus-maier.llms.md)
+
+![Profile of Ulrich Mansmann](people/images/mansmann_ulrich.jpg) Ulrich Mansmann
+
+[](https://orcid.org/0000-0002-9955-8906)
+
+Title: Prof. Dr.
+
+Faculty: Medicine
+
+[View Profile](../people/people/ulrich-mansmann.llms.md)
+
+![Profile of Anton Marx](people/images/marx_anton.jpg) Anton Marx
+
+[](https://orcid.org/0000-0001-9611-9759)
+
+Title: Dr.
+
+Faculty: Psychology & Education
+
+[View Profile](../people/people/anton-marx.llms.md)
+
+![Profile of Marko Mijic](people/images/mijic_marko.jpg) Marko Mijic
+
+[](https://orcid.org/0000-0002-7064-0471)
+
+Title: Dr.
+
+Faculty: Medicine
+
+[View Profile](../people/people/marko-mijic.llms.md)
+
+![Profile of Antonia Misch](people/images/misch_antonia.jpg) Antonia Misch
+
+[](https://orcid.org/0000-0001-9184-5006)
+
+Title: Dr.
+
+Faculty: Psychology & Education
+
+[View Profile](../people/people/antonia-misch.llms.md)
+
+![Profile of Christian L. Müller](people/images/mueller_christian-l.png) Christian L. Müller
+
+[](https://orcid.org/0000-0002-3821-7083)
+
+Title: Prof. Dr.
+
+Faculty: Math, Informatics & Stats
+
+[View Profile](../people/people/christian-mueller.llms.md)
+
+![Profile of Maliheh Nazari-Jahantigh](people/images/maliheh_nazari-jahantigh.png) Maliheh Nazari-Jahantigh
+
+[](https://orcid.org/0000-0002-1094-107X)
+
+Title: Dr.
+
+Faculty: University Hospital
+
+[View Profile](../people/people/maliheh-nazari-jahantigh.llms.md)
+
+![Profile of Marcel Neunhoeffer](people/images/neunhoeffer_marcel.jpg) Marcel Neunhoeffer
+
+[](https://orcid.org/0000-0002-9137-5785)
+
+Title: Dr.
+
+Faculty: Math, Informatics & Stats
+
+[View Profile](../people/people/marcel-neunhoeffer.llms.md)
+
+![Profile of Frank Padberg](people/images/padberg_frank.jpg) Frank Padberg
+
+[](https://orcid.org/0000-0001-7638-8310)
+
+Title: Prof. Dr.
+
+Faculty: University Hospital
+
+[View Profile](../people/people/frank-padberg.llms.md)
+
+![Profile of Florian Pargent](people/images/pargent_florian.png) Florian Pargent
+
+[](https://orcid.org/0000-0002-2388-553X)
+
+Title: Dr.
+
+Faculty: Psychology & Education
+
+[View Profile](../people/people/florian-pargent.llms.md)
+
+![Profile of Andreas Peichl](people/images/peichl_andreas.jpg) Andreas Peichl
+
+[](https://orcid.org/0000-0002-0680-8321)
+
+Title: Prof. Dr.
+
+Faculty: Economics
+
+[View Profile](../people/people/andreas-peichl.llms.md)
+
+![Profile of Robert Perneczky](people/images/perneczky_robert.jpg) Robert Perneczky
+
+[](https://orcid.org/0000-0003-1981-7435)
+
+Title: Prof. Dr.
+
+Faculty: University Hospital
+
+[View Profile](../people/people/robert-perneczky.llms.md)
+
+![Profile of Giovanni Picogna](people/images/picogna_giovanni.jpg) Giovanni Picogna
+
+[](https://orcid.org/0000-0003-3754-1639)
+
+Title: Dr.
+
+Faculty: Physics
+
+[View Profile](../people/people/giovanni-picogna.llms.md)
+
+![Profile of Barbara Plank](people/images/plank_barbara.jpg) Barbara Plank
+
+[](https://orcid.org/0000-0002-4394-1965)
+
+Title: Prof. Dr.
+
+Faculty: Languages & Literatures
+
+[View Profile](../people/people/barbara-plank.llms.md)
+
+![Profile of Belinda Platt](people/images/platt_belinda.jpg) Belinda Platt
+
+[](https://orcid.org/0000-0002-7501-7494)
+
+Title: Dr.
+
+Faculty: University Hospital
+
+[View Profile](../people/people/belinda-platt.llms.md)
+
+![Profile of Nikolaus Plesnila](people/images/plesnila_nikolaus.jpg) Nikolaus Plesnila
+
+[](https://orcid.org/0000-0001-8832-228X)
+
+Title: Prof. Dr.
+
+Faculty: Medicine
+
+[View Profile](../people/people/nikolaus-plesnila.llms.md)
+
+![Profile of Matthias Reinhard](people/images/reinhard_matthias.jpg) Matthias Reinhard
+
+[](https://orcid.org/0000-0002-8374-5467)
+
+Title: Dr.
+
+Faculty: University Hospital
+
+[View Profile](../people/people/matthias-reinhard.llms.md)
+
+![Profile of Jörg Renkawitz](people/images/renkawitz_joerg.jpg) Jörg Renkawitz
+
+[](https://orcid.org/0000-0003-2856-3369)
+
+Title: Prof. Dr.
+
+Faculty: Medicine
+
+[View Profile](../people/people/joerg-renkawitz.llms.md)
+
+![Profile of Saskia Rusche](people/images/rusche_saskia.jpg) Saskia Rusche
+
+[](https://orcid.org/0000-0002-5878-8828)
+
+Title: Dr.
+
+Faculty: Medicine
+
+[View Profile](../people/people/rusche-saskia.llms.md)
+
+![Profile of Marko Sarstedt](people/images/sarstedt_marko.jpg) Marko Sarstedt
+
+[](https://orcid.org/0000-0002-5424-4268)
+
+Title: Prof. Dr.
+
+Faculty: Business Administration
+
+[View Profile](../people/people/marko-sarstedt.llms.md)
+
+![Profile of Balthasar Schachtner](people/images/schachtner_balthasar.jpg) Balthasar Schachtner
+
+[](https://orcid.org/0000-0002-8712-3948)
+
+Title: Dr.
+
+Faculty: Medicine
+
+[View Profile](../people/people/balthasar-schachtner.llms.md)
+
+![Profile of Fabian Scheipl](people/images/scheipl_fabian.jpg) Fabian Scheipl
+
+[](https://orcid.org/0000-0001-8172-3603)
+
+Title: PD Dr.
+
+Faculty: Math, Informatics & Stats
+
+[View Profile](../people/people/fabian-scheipl.llms.md)
+
+![Profile of Moritz Schiltenwolf](people/images/schiltenwolf_moritz.png) Moritz Schiltenwolf
+
+[](https://orcid.org/0000-0002-6539-5512)
+
+Title: Dr.
+
+Faculty: Psychology & Education
+
+[View Profile](../people/people/moritz-schiltenwolf.llms.md)
+
+![Profile of Xenia Schmalz](people/images/schmalz_xenia.jpg) Xenia Schmalz
+
+[](https://orcid.org/0000-0002-3365-257X)
+
+Title: Dr.
+
+Faculty: University Hospital
+
+[View Profile](../people/people/xenia-schmalz.llms.md)
+
+![Profile of Doris Schmid](people/images/doris_schmid.png) Doris Schmid
+
+[](https://orcid.org/0000-0002-9460-4344)
+
+Title: Dr.
+
+Faculty: Psychology & Education
+
+[View Profile](../people/people/doris-schmid.llms.md)
+
+![Profile of Julia Schulte-Cloos](people/images/schulte-cloos_julia.jpg) Julia Schulte-Cloos
+
+[](https://orcid.org/0000-0001-7223-3602)
+
+Title: Dr.
+
+Faculty: Social Sciences
+
+[View Profile](../people/people/julia-schulte-cloos.llms.md)
+
+![Profile of Enrico Schulz](people/images/schulz_enrico.jpg) Enrico Schulz
+
+[](https://orcid.org/0000-0001-8188-380X)
+
+Title: Dr.
+
+Faculty: University Hospital
+
+[View Profile](../people/people/enrico-schulz.llms.md)
+
+![Profile of Christian Schulz](people/images/schulz_christian.jpg) Christian Schulz
+
+[](https://orcid.org/0000-0002-8149-0747)
+
+Title: Prof. Dr.
+
+Faculty: University Hospital
+
+[View Profile](../people/people/christian-schulz.llms.md)
+
+![Profile of Carsten Schwemmer](people/images/schwemmer_carsten.jpg) Carsten Schwemmer
+
+[](https://orcid.org/0000-0001-9084-946X)
+
+Title: Prof.
+
+Faculty: Social Sciences
+
+[View Profile](../people/people/carsten-schwemmer.llms.md)
+
+![Profile of Ramona Schödel](people/images/schoedel_ramona.jpg) Ramona Schödel
+
+[](https://orcid.org/0000-0001-7275-0626)
+
+Title: Dr.
+
+Faculty: Psychology & Education
+
+[View Profile](../people/people/ramona-schoedel.llms.md)
+
+![Profile of Laura Seelkopf](people/images/seelkopf_laura.JPG) Laura Seelkopf
+
+[](https://orcid.org/0000-0002-2251-3830)
+
+Title: Prof. Dr.
+
+Faculty: Social Sciences
+
+[View Profile](../people/people/laura-seelkopf.llms.md)
+
+![Profile of Ksenia Shagal](people/images/shagal_ksenia.jpg) Ksenia Shagal
+
+[](https://orcid.org/0000-0001-6696-7992)
+
+Title: Prof. Dr.
+
+Faculty: Languages & Literatures
+
+[View Profile](../people/people/ksenia-shagal.llms.md)
+
+![Profile of Rebecca I. Sienel](people/images/sienel_rebecca_i..jpg) Rebecca I. Sienel
+
+[](https://orcid.org/0000-0001-7291-7676)
+
+Title: Dr.
+
+Faculty: University Hospital
+
+[View Profile](../people/people/rebecca-sienel.llms.md)
+
+![Profile of Adam Sorbie](people/images/sorbie_adam.jpg) Adam Sorbie
+
+[](https://orcid.org/0000-0002-3330-4612)
+
+Title: Dr.
+
+Faculty: University Hospital
+
+[View Profile](../people/people/adam-sorbie.llms.md)
+
+![Profile of Tobias Straub](people/images/straub_tobias.jpg) Tobias Straub
+
+[](https://orcid.org/0000-0002-0547-0453)
+
+Title: Dr.
+
+Faculty: Medicine
+
+[View Profile](../people/people/tobias-straub.llms.md)
+
+![Profile of Justin Sulik](people/images/sulik_justin.jpg) Justin Sulik
+
+[](https://orcid.org/0000-0002-0978-9496)
+
+Title: Dr.
+
+Faculty: Philosophy
+
+[View Profile](../people/people/justin-sulik.llms.md)
+
+![Profile of Paul C.J. Taylor](people/images/taylor_paul_cj.jpg) Paul C.J. Taylor
+
+[](https://orcid.org/0000-0002-6296-2948)
+
+Title: Prof. Dr.
+
+Faculty: Psychology & Education
+
+[View Profile](../people/people/paul-cj-taylor.llms.md)
+
+![Profile of Paul W. Thurner](people/images/thurner_paul_w.jpg) Paul W. Thurner
+
+[](https://orcid.org/0000-0001-7336-9878)
+
+Title: Prof. Dr.
+
+Faculty: Social Sciences
+
+[View Profile](../people/people/paul-thurner.llms.md)
+
+![Profile of Renata Topinkova](people/images/topinkova_renata.jpg) Renata Topinkova
+
+[](https://orcid.org/0000-0003-0362-7290)
+
+Title: Dr.
+
+Faculty: Social Sciences
+
+[View Profile](../people/people/renata-topinkova.llms.md)
+
+![Profile of Mathias Twardawski](people/images/twardawski_mathias.jpeg) Mathias Twardawski
+
+[](https://orcid.org/0000-0003-0543-277X)
+
+Title: Dr.
+
+Faculty: Psychology & Education
+
+[View Profile](../people/people/mathias-twardawski.llms.md)
+
+![Profile of Elisabeth Vogl](people/images/vogl_elisabeth.jpeg) Elisabeth Vogl
+
+[](https://orcid.org/0000-0002-5502-7900)
+
+Title: Dr.
+
+Faculty: Psychology & Education
+
+[View Profile](../people/people/elisabeth-vogl.llms.md)
+
+![Profile of Sebastian Wichert](people/images/wichert_sebastian.jpg) Sebastian Wichert
+
+[](https://orcid.org/0000-0002-0719-1925)
+
+Title: Dr.
+
+Faculty: Economics
+
+[View Profile](../people/people/sebastian-wichert.llms.md)
+
+![Profile of Juliane Wilcke](people/images/wilcke_juliane.jpg) Juliane Wilcke
+
+[](https://orcid.org/0009-0005-7675-6669)
+
+Title: Dr.
+
+Faculty: Medicine
+
+[View Profile](../people/people/juliane-wilcke.llms.md)
+
+![Profile of Joachim Winter](people/images/winter_joachim.jpg) Joachim Winter
+
+[](https://orcid.org/0000-0003-2460-619X)
+
+Title: Prof. Dr.
+
+Faculty: Economics
+
+[View Profile](../people/people/joachim-winter.llms.md)
+
+![Profile of Eckhard Wolf](people/images/wolf_eckhard.jpg) Eckhard Wolf
+
+[](https://orcid.org/0000-0002-0430-9510)
+
+Title: Prof. Dr.
+
+Faculty: Veterinary Medicine
+
+[View Profile](../people/people/eckhard-wolf.llms.md)
+
+![Profile of Alexander Wuttke](people/images/wuttke_alexander.jpg) Alexander Wuttke
+
+[](https://orcid.org/0000-0002-9579-5357)
+
+Title: Prof. Dr.
+
+Faculty: Social Sciences
+
+[View Profile](../people/people/alexander-wuttke.llms.md)
+
+![Profile of Gert Wörheide](people/images/woerheide_gert.jpg) Gert Wörheide
+
+[](https://orcid.org/0000-0002-6380-7421)
+
+Title: Prof. Dr.
+
+Faculty: Geosciences
+
+[View Profile](../people/people/gert-woerheide.llms.md)
+
+![Profile of Quirin Würschinger](people/images/wuerschinger_quirin.png) Quirin Würschinger
+
+[](https://orcid.org/0000-0003-3679-0190)
+
+Title: Dr.
+
+Faculty: Languages & Literatures
+
+[View Profile](../people/people/quirin-wuerschinger.llms.md)
+
+![Profile of Dietmar Zaefferer](people/images/zaefferer_dietmar.JPG) Dietmar Zaefferer
+
+[](https://orcid.org/0000-0003-1021-6078)
+
+Title: Prof. Dr.
+
+Faculty: Languages & Literatures
+
+[View Profile](../people/people/dietmar-zaefferer.llms.md)
+
+![Profile of Judith Zellner](people/images/judith_zellner.jpeg) Judith Zellner
+
+[](https://orcid.org/0009-0006-5113-9872)
+
+Title: Dr. des.
+
+Faculty: Psychology & Education
+
+[View Profile](../people/people/judith-zellner.llms.md)
+
+![Profile of Caroline Zygar-Hoffmann](people/images/zygar-hoffmann_caroline.jpg) Caroline Zygar-Hoffmann
+
+[](https://orcid.org/0000-0002-8677-2276)
+
+Title: Dr.
+
+Faculty: Psychology & Education
+
+[View Profile](../people/people/caroline-zygar-hoffmann.llms.md)
 
 ## Affiliate Members
 
@@ -1088,9 +2166,9 @@ Psychology & Education
 
 ![Profile of Andreas Beyerlein](people/images/beyerlein_andreas.jpg)
 
-##### Andreas Beyerlein
+Andreas Beyerlein
 
-###### PD Dr.
+PD Dr.
 
 Bayerischen LGL
 
@@ -1098,9 +2176,9 @@ Bayerischen LGL
 
 ![Profile of Christiane Fuchs](people/images/fuchs_christiane.jpeg)
 
-##### Christiane Fuchs
+Christiane Fuchs
 
-###### Prof. Dr.
+Prof. Dr.
 
 Helmholtz Munich: Institute of Computational Biology
 
@@ -1108,9 +2186,9 @@ Helmholtz Munich: Institute of Computational Biology
 
 ![Profile of Annika Hoyer](people/images/hoyer_annika.jpg)
 
-##### Annika Hoyer
+Annika Hoyer
 
-###### Prof. Dr.
+Prof. Dr.
 
 University of Bielefeld
 
@@ -1118,9 +2196,9 @@ University of Bielefeld
 
 ![Profile of Thomas Misgeld](people/images/misgeld_thomas.jpg)
 
-##### Thomas Misgeld
+Thomas Misgeld
 
-###### Prof. Dr.
+Prof. Dr.
 
 TUM Medicine & Health
 
@@ -1128,9 +2206,9 @@ TUM Medicine & Health
 
 ![Profile of Christina Peter](people/images/peter_christina.jpg)
 
-##### Christina Peter
+Christina Peter
 
-###### Prof. Dr.
+Prof. Dr.
 
 University of Klagenfurt
 
@@ -1138,9 +2216,9 @@ University of Klagenfurt
 
 ![Profile of Markus Ploner](people/images/ploner_markus.jpg)
 
-##### Markus Ploner
+Markus Ploner
 
-###### Prof. Dr.
+Prof. Dr.
 
 TUM
 
@@ -1148,9 +2226,9 @@ TUM
 
 ![Profile of Tom Ratz](people/images/ratz_tom.jpg)
 
-##### Tom Ratz
+Tom Ratz
 
-###### Dr.
+Dr.
 
 University of Zürich
 
@@ -1158,9 +2236,9 @@ University of Zürich
 
 ![Profile of Heidi Seibold](people/images/seibold_heidi.jpg)
 
-##### Heidi Seibold
+Heidi Seibold
 
-###### Dr.
+Dr.
 
 Digital Research Academy
 
@@ -1168,11 +2246,101 @@ Digital Research Academy
 
 ![Profile of Elmar Spiegel](people/images/spiegel_elmar.jpg)
 
-##### Elmar Spiegel
+Elmar Spiegel
 
-###### Dr.
+Dr.
 
 Helmholtz Zentrum Munich
+
+![Profile of Andreas Beyerlein](people/images/beyerlein_andreas.jpg) Andreas Beyerlein
+
+[](https://orcid.org/0000-0001-6603-5036)
+
+Title: PD Dr.
+
+Affiliation: Bayerischen LGL
+
+[View Profile](../people/people/andreas-beyerlein.llms.md)
+
+![Profile of Christiane Fuchs](people/images/fuchs_christiane.jpeg) Christiane Fuchs
+
+[](https://orcid.org/0000-0003-3565-8315)
+
+Title: Prof. Dr.
+
+Affiliation: Helmholtz Munich: Institute of Computational Biology
+
+[View Profile](../people/people/christiane-fuchs.llms.md)
+
+![Profile of Annika Hoyer](people/images/hoyer_annika.jpg) Annika Hoyer
+
+[](https://orcid.org/0000-0002-0241-9951)
+
+Title: Prof. Dr.
+
+Affiliation: University of Bielefeld
+
+[View Profile](../people/people/annika-hoyer.llms.md)
+
+![Profile of Thomas Misgeld](people/images/misgeld_thomas.jpg) Thomas Misgeld
+
+[](https://orcid.org/0000-0001-9875-6794)
+
+Title: Prof. Dr.
+
+Affiliation: TUM Medicine & Health
+
+[View Profile](../people/people/thomas-misgeld.llms.md)
+
+![Profile of Christina Peter](people/images/peter_christina.jpg) Christina Peter
+
+[](https://orcid.org/0000-0002-1949-259X)
+
+Title: Prof. Dr.
+
+Affiliation: University of Klagenfurt
+
+[View Profile](../people/people/christina-peter.llms.md)
+
+![Profile of Markus Ploner](people/images/ploner_markus.jpg) Markus Ploner
+
+[](https://orcid.org/0000-0002-7767-7170)
+
+Title: Prof. Dr.
+
+Affiliation: TUM
+
+[View Profile](../people/people/markus-ploner.llms.md)
+
+![Profile of Tom Ratz](people/images/ratz_tom.jpg) Tom Ratz
+
+[](https://orcid.org/0000-0002-4215-277X)
+
+Title: Dr.
+
+Affiliation: University of Zürich
+
+[View Profile](../people/people/tom-ratz.llms.md)
+
+![Profile of Heidi Seibold](people/images/seibold_heidi.jpg) Heidi Seibold
+
+[](https://orcid.org/0000-0002-8960-9642)
+
+Title: Dr.
+
+Affiliation: Digital Research Academy
+
+[View Profile](../people/people/heidi-seibold.llms.md)
+
+![Profile of Elmar Spiegel](people/images/spiegel_elmar.jpg) Elmar Spiegel
+
+[](https://orcid.org/0000-0002-5834-2383)
+
+Title: Dr.
+
+Affiliation: Helmholtz Zentrum Munich
+
+[View Profile](../people/people/elmar-spiegel.llms.md)
 
 ## Former Members
 
