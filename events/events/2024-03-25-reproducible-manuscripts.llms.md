@@ -30,7 +30,7 @@ Beginner:
 
 Advanced:
 
-- [https://plain-text.co/ ](https://plain-text.co/)
+- [https://plain-text.co/](https://plain-text.co/)
 - [https://osf.io/ngd9t](https://osf.io/ngd9t) (10 min demonstration for executable manuscripts using Emacs/Sweave/Bib/Version control)
 
 **Sessions’ agenda:**

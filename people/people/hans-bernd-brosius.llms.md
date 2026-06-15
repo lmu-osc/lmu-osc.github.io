@@ -8,7 +8,7 @@ Faculty of Social Sciences
 
 [hans-bernd.brosius@ifkw.lmu.de](mailto:hans-bernd.brosius@ifkw.lmu.de)
 
-[LMU Profile](https://www.en.ls1.ifkw.uni-muenchen.de/staff/chair/brosius_hansbernd/index.html)
+[LMU Profile](https://www.sw.lmu.de/ifkw/de/das-institut/organisation-und-ansprechpartner/menschen-am-ifkw/kontaktseite/hans-bernd-brosius-cd2cc823.html)
 
 [](https://orcid.org/0000-0001-7544-398X)
 
