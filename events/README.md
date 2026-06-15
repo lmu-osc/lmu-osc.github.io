@@ -57,7 +57,7 @@ event:
   description: |
     LONGER OVERVIEW TEXT FOR THE EVENT DETAIL PAGE. This appears on the event detail page and may include markdown, links, and images.
   card_description: |
-    SHORT DESCRIPTION FOR THE EVENT CARD. Keep this to 1–2 short sentences for display on the /events listing. If no value is provided here, the description value will be used in the card instead (up to 5 lines of text).
+    SHORT DESCRIPTION FOR THE EVENT CARD AND EVENT CAROUSEL. Keep this to 1–2 short sentences for display on the /events listing. If no value is provided here, the description value will be used in the card instead (up to 5 lines of text). You should not use any Markdown here as it will be displayed as raw text in the card and carousel.
   time: "09:00-17:00"
   location:
     name: "Venue name"
