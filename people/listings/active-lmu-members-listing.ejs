@@ -9,8 +9,8 @@ const activeLmuIndividualItems = (items || []).filter((item) => {
   });
 });
 %>
-
-<div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 g-3 py-4 list">
+<!-- Desktop view-->
+<div class="row row-cols-sm-2 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-3 py-4 d-none d-sm-flex list">
 <% for (const item of activeLmuIndividualItems) { %>
 <%
   const activeLmuIndividualMembership = (Array.isArray(item.memberships) ? item.memberships : [])
@@ -28,7 +28,7 @@ const activeLmuIndividualItems = (items || []).filter((item) => {
 <!-- update the existing metadata attributes to include name and faculty-->
 <div class="col search-item" data-name="<%= item.name.toLowerCase() %>" data-faculty="<%= (lmuIndividualFaculty || '').toLowerCase() %>" <%= metadataAttrs(item) %>>
 <div class="card h-100">
-<div class="position-absolute top-0 end-0 p-1">
+<div class="position-absolute z-2 top-0 end-0 p-1">
 <% if (item.social_media && item.social_media.ORCID) { %>
 <a href="<%= item.social_media.ORCID %>" target="_blank">
 <i class="fa-brands fa-orcid fa-lg" style="color: #A6CE39;"></i>
@@ -38,10 +38,10 @@ const activeLmuIndividualItems = (items || []).filter((item) => {
 <img src="people/<%= item.photo || '/images/default.svg' %>" class="rounded-circle border border-3 mt-3 mx-auto d-block" alt="Profile of <%= item.name %>"
 width="110" height="110">
 <div class="card-body text-center">
-<h5 class="card-title fw-bold listing-name"><%= item.name %></h5>
-<h6 class="card-subtitle fs-6 fw-semibold lh-base text-muted"><%= item.academic_title %></h6>
+<div class="card-title fw-bold listing-name"><%= item.name %></div>
+<div class="card-subtitle fs-6 fw-semibold mt-auto text-muted"><%= item.academic_title %></div>
 <% if (lmuIndividualFaculty && lmuIndividualFaculty !== 'NA') { %>
-<p class="card-text fs-6 lh-base"><%= lmuIndividualFaculty %></p>
+<div class="card-text fs-6 mt-auto lh-base"><%= lmuIndividualFaculty %></div>
 <% } %>
 </div>
 <a href="<%= item.path %>" class="stretched-link"></a>
@@ -50,9 +50,58 @@ width="110" height="110">
 <% } %>
 </div>
 
+<!-- Mobile only view-->
+<% let i = 0; %>
+
+<% for (const item of activeLmuIndividualItems) { %>
+<%
+  const activeLmuIndividualMembership = (Array.isArray(item.memberships) ? item.memberships : [])
+    .find((membership) =>
+      membership &&
+      typeof membership === 'object' &&
+      membership.type === 'lmu-individual' &&
+      membership.status === 'active'
+    );
+
+  const lmuIndividualFaculty = (typeof activeLmuIndividualMembership?.faculty === 'string' && activeLmuIndividualMembership.faculty.trim() !== '' && activeLmuIndividualMembership.faculty !== 'NA')
+    ? activeLmuIndividualMembership.faculty
+    : item.faculty;
+%>
+
+<div class="accordion members-accordion d-block d-sm-none my-3 mx-2 shadow-sm bg-light-subtle rounded-3" id="accordion-<%= i %>">
+<div class="accordion-item search-item" data-name="<%= item.name.toLowerCase() %>" data-faculty="<%= (lmuIndividualFaculty || '').toLowerCase() %>" <%= metadataAttrs(item) %>">
+<button class="accordion-button collapsed fw-semibold fs-6" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-<%= i %>" aria-controls="collapse-<%= i %>" >
+<div class="d-flex align-items-center gap-3 flex-grow-1" style="min-width:0;">
+<img src="people/<%= item.photo || '/images/default.svg' %>"
+class="rounded-circle border border-3 me-2"
+width="60" height="60"
+alt="Profile of <%= item.name %>">
+<span class="card-name-text"><%= item.name %></span>
+</div>
+<% if (item.social_media && item.social_media.ORCID) { %>
+<a href="<%= item.social_media.ORCID %>" target="_blank" class="ms-2 flex-shrink-0" onclick="event.stopPropagation();">
+<i class="fa-brands fa-orcid fa-lg" style="color: #A6CE39;"></i>
+</a>
+<% } %>
+</button>
+<div id="collapse-<%= i %>" class="accordion-collapse collapse">
+<div class="accordion-body d-flex flex-row flex-wrap justify-content-between align-items-center">
+<div>
+<div class="fw-semibold fs-6 text-muted">Title: <%= item.academic_title %></div>
+<% if (lmuIndividualFaculty && lmuIndividualFaculty !== 'NA') { %>
+<div class="mt-1 small fs-6">Faculty: <%= lmuIndividualFaculty %></div>
+<% } %>
+</div>
+<a href="<%= item.path %>" type="button" class="btn btn-primary mt-2 btn-sm">View Profile</a>
+</div>
+</div>
+</div>
+</div>
+<% i++; %>
+<% } %>
+
+
 <style>
-
-
 .card {
   transition: all 0.4s ease;  /* adjust speed here */
 }
@@ -63,11 +112,10 @@ width="110" height="110">
   border-color: var(--osc-accent);
 }
 
-
-.card img {
+.card img,
+.accordion-button img {
   object-fit: cover;
   border-color: var(--osc-accent) !important;
 }
-
 
 </style>
