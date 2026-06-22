@@ -8,7 +8,7 @@ Faculty of Social Sciences
 
 [katrin.auspurg@lmu.de](mailto:katrin.auspurg@lmu.de)
 
-[LMU Profile](https://www.ls4.soziologie.uni-muenchen.de/personen/leitung/auspurg_katrin/index.html)
+[LMU Profile](https://www.soziologie.lmu.de/de/das-institut/personen/kontaktseite/katrin-auspurg-d92c4926.html)
 
 [](https://orcid.org/0000-0003-4504-0391)
 
