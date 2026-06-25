@@ -1,6 +1,6 @@
 # Members
 
-Our members actively support the goals of the OSC and contribute to our activities such as training, community building, meta-research, and liaison with stakeholders. [Join us](../about/join-us.llms.md) .
+Our 117 members actively support the goals of the OSC and contribute to our activities such as training, community building, meta-research, and liaison with stakeholders. [Join us](../about/join-us.llms.md) .
 
 ## LMU Members
 
