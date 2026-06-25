@@ -32,6 +32,32 @@ anchor-sections: false
 
 
 ---
+
+```{r warning=FALSE, message=FALSE, echo=FALSE}
+member_type <- c("lmu-individual", "affiliate")
+member_status <- "active"
+
+qmd_files <- dir("people", pattern = "\\.qmd$", full.names = TRUE)
+active_members_count <- sum(
+  sapply(qmd_files, function(path) {
+    memberships <- yaml::read_yaml(path)[["memberships"]]
+    if (is.null(memberships)) return(0)
+    sum(vapply(
+      memberships,
+      function(membership) {
+        as.integer(
+          membership[["type"]] %in% member_type &&
+            membership[["status"]] == member_status
+        )
+      },
+      integer(1)
+    ))
+  })
+)
+```
+
+
+
 <style>
 .osc-members-description a,
 .osc-members-description i{
@@ -44,7 +70,7 @@ anchor-sections: false
 }
 </style>
 :::{.osc-members-description}
-Our members actively support the goals of the OSC and contribute to our activities such as training, community building, meta-research, and liaison with stakeholders. [Join us](/about/join-us.qmd) <i class="bi bi-box-arrow-up-right"></i>.
+Our `r active_members_count` members actively support the goals of the OSC and contribute to our activities such as training, community building, meta-research, and liaison with stakeholders. [Join us](/about/join-us.qmd) <i class="bi bi-box-arrow-up-right"></i>.
 
 <!-- native quarto filter is isolated per listing id at the moment, so we would end up with multiple filters. To prevent this, creating a global filter that allows filtering across all listings regardless of their id.-->
 
