@@ -2,6 +2,7 @@
 
 | Date | Title | Categories |
 |----|----|----|
+| Jul 1, 2026 | [OSC Members Contribute to GUIDE-LLM Reporting Guidelines](../news/news/2026-07-01-llm-guidelines-publication.llms.md) | Publications |
 | Jun 12, 2026 | [International Guideline for Routinely Collected Health Data](../news/news/2026-06-12-guidelines-for-routinely-collected-health-data.llms.md) | Publications |
 | Jun 11, 2026 | [Credible Research in the Social and Behavioral Sciences in Nature Collection 2026](../news/news/2026-06-11-collection-of-papers-published-in-nature.llms.md) | Publications |
 | May 5, 2026 | [SHARP Becomes a Funding Institutional Member](../news/news/2026-05-05-sharp-as-new-funding-institutional-member.llms.md) | New Members |
