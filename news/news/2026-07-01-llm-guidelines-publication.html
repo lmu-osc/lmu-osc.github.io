@@ -1,186 +1,116 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../news/news/2026-06-12-guidelines-for-routinely-collected-health-data.html" rel="prev">
+<link href="../../assets/img/lmu_osc_logo.jpg" rel="icon" type="image/jpeg">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-af030a3bbbf0455052b8b5d9a3808bac.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light"><meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <meta name="dcterms.date" content="2026-07-01">
+  <meta name="description" content="New GUIDE-LLM reporting guidelines, co-authored by OSC members Stefan Feuerriegel and Barbara Plank, provide researchers with a framework for transparently reporting the use of LLMs in research.">
+  <title>LMU Open Science Center – OSC Members Contribute to GUIDE-LLM Reporting Guidelines</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="https://raw.githubusercontent.com/lmu-osc/branding-resources/refs/heads/main/styles.css">
+  <link rel="stylesheet" href="../../assets/bootstrap-5.3.8-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../assets/fontawesome-free-7.1.0-web/css/all.min.css">
+  <link rel="stylesheet" href="../../styles.css">
+  <link rel="stylesheet" href="../../footer/footer-style.css">
+  <link rel="stylesheet" href="../../custom-navbar.css">
+  <script id="quarto-search-options" type="application/json">{
+    "location": "navbar",
+    "copy-button": false,
+    "collapse-after": 3,
+    "panel-placement": "end",
+    "type": "overlay",
+    "limit": 50,
+    "keyboard-shortcut": [
+      "f",
+      "/",
+      "s"
+    ],
+    "show-item-context": false,
+    "language": {
+      "search-no-results-text": "No results",
+      "search-matching-documents-text": "matching documents",
+      "search-copy-link-title": "Copy link to search",
+      "search-hide-matches-text": "Hide additional matches",
+      "search-more-match-text": "more match in this document",
+      "search-more-matches-text": "more matches in this document",
+      "search-clear-button-title": "Clear",
+      "search-text-placeholder": "",
+      "search-detached-cancel-button-title": "Cancel",
+      "search-submit-button-title": "Submit",
+      "search-label": "Search"
+    }
+  }</script>
+  <!-- Matomo: OSC primary + LMU secondary -->
+  <script>
+  if (location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') {
+    var _paq = window._paq = window._paq || [];
 
-<meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.38">
+    // Primary tracker (OSC instance)
+    _paq.push(['setTrackerUrl', '//www.analytics.osc.lmu.de/matomo.php']);
+    _paq.push(['setSiteId', '3']);
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    // Secondary tracker (LMU instance)
+    _paq.push(['addTracker', '//web-analytics.uni-muenchen.de/matomo.php', '41']);
 
+    // Preserve current privacy behavior for both trackers
+    _paq.push(['disableCookies']);
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
 
-<title>Management – LMU Open Science Center</title>
-<style>
-/* Default styles provided by pandoc.
-** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
-*/
-code{white-space: pre-wrap;}
-span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
-div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-ul.task-list{list-style: none;}
-ul.task-list li input[type="checkbox"] {
-  width: 0.8em;
-  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
-  vertical-align: middle;
-}
-</style>
-
-
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<link href="../assets/img/lmu_osc_logo.jpg" rel="icon" type="image/jpeg">
-<script src="../site_libs/quarto-listing/list.min.js"></script>
-<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-028a9ff26a9606109cd8c28b1deafd29.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
-<script id="quarto-search-options" type="application/json">{
-  "location": "navbar",
-  "copy-button": false,
-  "collapse-after": 3,
-  "panel-placement": "end",
-  "type": "overlay",
-  "limit": 50,
-  "keyboard-shortcut": [
-    "f",
-    "/",
-    "s"
-  ],
-  "show-item-context": false,
-  "language": {
-    "search-no-results-text": "No results",
-    "search-matching-documents-text": "matching documents",
-    "search-copy-link-title": "Copy link to search",
-    "search-hide-matches-text": "Hide additional matches",
-    "search-more-match-text": "more match in this document",
-    "search-more-matches-text": "more matches in this document",
-    "search-clear-button-title": "Clear",
-    "search-text-placeholder": "",
-    "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit",
-    "search-label": "Search"
+    (function() {
+      var u = '//www.analytics.osc.lmu.de/';
+      var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+      g.async = true;
+      g.src = u + 'matomo.js';
+      s.parentNode.insertBefore(g, s);
+    })();
   }
-}</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-management .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-project','listing-website','listing-format','listing-engines','listing-language','listing-execute','listing-title','listing-academic_title','listing-name','listing-surname','listing-first_name','listing-categories','listing-memberships','listing-email','listing-photo','listing-links','listing-social_media','listing-mission_statement','listing-template','listing-filters','listing-path','listing-outputHref','listing-author','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-word-count','listing-display_weight','listing-display_weight_management','listing-display_weight_staff','listing-osc_staff_title','listing-personal','listing-research_interests','listing-publications',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
-      page: 25,
-    pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
-      searchColumns: ["listing-project","listing-website","listing-format","listing-engines","listing-language","listing-execute","listing-title","listing-academic_title","listing-name","listing-surname","listing-first_name","listing-categories","listing-memberships","listing-email","listing-photo","listing-links","listing-social_media","listing-mission_statement","listing-template","listing-filters","listing-path","listing-outputHref","listing-author","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count","listing-display_weight","listing-display_weight_management","listing-display_weight_staff","listing-osc_staff_title","listing-personal","listing-research_interests","listing-publications"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-management'] = new List('listing-management', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
   </script>
-<!-- Matomo: OSC primary + LMU secondary -->
-<script>
-if (location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') {
-  var _paq = window._paq = window._paq || [];
-
-  // Primary tracker (OSC instance)
-  _paq.push(['setTrackerUrl', '//www.analytics.osc.lmu.de/matomo.php']);
-  _paq.push(['setSiteId', '3']);
-
-  // Secondary tracker (LMU instance)
-  _paq.push(['addTracker', '//web-analytics.uni-muenchen.de/matomo.php', '41']);
-
-  // Preserve current privacy behavior for both trackers
-  _paq.push(['disableCookies']);
-  _paq.push(['trackPageView']);
-  _paq.push(['enableLinkTracking']);
-
-  (function() {
-    var u = '//www.analytics.osc.lmu.de/';
-    var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
-    g.async = true;
-    g.src = u + 'matomo.js';
-    s.parentNode.insertBefore(g, s);
-  })();
-}
-</script>
-<!-- End Matomo Code -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="https://raw.githubusercontent.com/lmu-osc/branding-resources/refs/heads/main/styles.css">
-<link rel="stylesheet" href="../assets/bootstrap-5.3.8-dist/css/bootstrap.min.css">
-<link rel="stylesheet" href="../assets/fontawesome-free-7.1.0-web/css/all.min.css">
-<link rel="stylesheet" href="../styles.css">
-<link rel="stylesheet" href="../footer/footer-style.css">
-<link rel="stylesheet" href="../custom-navbar.css">
-<link rel="stylesheet" href="people.css">
+  <!-- End Matomo Code -->
+<script src="../../assets/javascript/flyer_preview.js" defer=""></script>
 </head>
-
-<body class="nav-sidebar docked nav-fixed quarto-light">
-
+<body class="nav-fixed quarto-light">
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../assets/img/osc_image_assets/LMU_Open_Science_Center_Logo.jpg" alt="" class="navbar-logo light-content">
-    <img src="../assets/img/osc_image_assets/LMU_Open_Science_Center_Logo.jpg" alt="" class="navbar-logo dark-content">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../assets/img/osc_image_assets/LMU_Open_Science_Center_Logo.jpg" alt="" class="navbar-logo light-content">
+    <img src="../../assets/img/osc_image_assets/LMU_Open_Science_Center_Logo.jpg" alt="" class="navbar-logo dark-content">
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -190,12 +120,12 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html"> <i class="bi bi-house-door" role="img">
+    <a class="nav-link" href="../../index.html"> <i class="bi bi-house-door" role="img">
 </i> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../about/index.html"> <i class="bi bi-info-circle" role="img">
+    <a class="nav-link" href="../../about/index.html"> <i class="bi bi-info-circle" role="img">
 </i> 
 <span class="menu-text">About</span></a>
   </li>  
@@ -207,27 +137,27 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-people">    
         <li>
-    <a class="dropdown-item" href="../people/management.html">
+    <a class="dropdown-item" href="../../people/management.html">
  <span class="dropdown-text">Management</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../people/staff.html">
+    <a class="dropdown-item" href="../../people/staff.html">
  <span class="dropdown-text">Staff</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../people/scientific-board.html">
+    <a class="dropdown-item" href="../../people/scientific-board.html">
  <span class="dropdown-text">Scientific Board</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../people/advisors.html">
+    <a class="dropdown-item" href="../../people/advisors.html">
  <span class="dropdown-text">Advisors</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../people/members.html">
+    <a class="dropdown-item" href="../../people/members.html">
  <span class="dropdown-text">Members</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../people/fellows.html">
+    <a class="dropdown-item" href="../../people/fellows.html">
  <span class="dropdown-text">Fellows</span></a>
   </li>  
     </ul>
@@ -240,34 +170,34 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-partners">    
         <li>
-    <a class="dropdown-item" href="../partners/institutional-members.html">
+    <a class="dropdown-item" href="../../partners/institutional-members.html">
  <span class="dropdown-text">Institutional Members</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../partners/local-os-initiatives.html">
+    <a class="dropdown-item" href="../../partners/local-os-initiatives.html">
  <span class="dropdown-text">Local Open Science Initiatives</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../partners/other-lmu-support-services.html">
+    <a class="dropdown-item" href="../../partners/other-lmu-support-services.html">
  <span class="dropdown-text">Other LMU Support Services</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../partners/external-partners.html">
+    <a class="dropdown-item" href="../../partners/external-partners.html">
  <span class="dropdown-text">External Partners</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../partners/funders.html">
+    <a class="dropdown-item" href="../../partners/funders.html">
  <span class="dropdown-text">Funders</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="../training/index.html"> <i class="bi bi-mortarboard" role="img">
+    <a class="nav-link" href="../../training/index.html"> <i class="bi bi-mortarboard" role="img">
 </i> 
 <span class="menu-text">Training</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../events/index.html"> <i class="bi bi-calendar-event" role="img">
+    <a class="nav-link" href="../../events/index.html"> <i class="bi bi-calendar-event" role="img">
 </i> 
 <span class="menu-text">Events</span></a>
   </li>  
@@ -279,252 +209,40 @@ window.Quarto = {
 </div>
       </div> <!-- /container-fluid -->
     </nav>
-  <nav class="quarto-secondary-nav">
-    <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-        <i class="bi bi-layout-text-sidebar-reverse"></i>
-      </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../people/index.html">People</a></li><li class="breadcrumb-item"><a href="../people/management.html">Management</a></li></ol></nav>
-        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-        </a>
-    </div>
-  </nav>
   <div id="quarto-announcement" data-announcement-id="ae675cc4fe462dfdc6999e11d51beb33" class="alert alert-primary hidden"><i class="bi bi-info-circle quarto-announcement-icon"></i><div class="quarto-announcement-content">
 <p><strong>Welcome to the new LMU Open Science Center website! Notice something out of date or incorrect? <a href="mailto:patrick.callahan@lmu.de?subject=OSC%20Website%20Edits">Let us know!</a></strong></p>
 </div><i class="bi bi-x-lg quarto-announcement-action"></i></div>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
-    <div class="sidebar-menu-container"> 
-    <ul class="list-unstyled mt-1">
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a href="../people/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">People</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../people/management.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Management</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../people/staff.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Staff &amp; Research Assistants</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../people/scientific-board.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Scientific Board</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../people/advisors.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Advisors</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../people/members.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Members</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../people/fellows.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Fellows</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-    </ul>
-    </div>
-</nav>
-<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+<h2 id="toc-title">On this page</h2>
+<ul>
+<li><a href="#read-the-publication" id="toc-read-the-publication" class="nav-link active" data-scroll-target="#read-the-publication">Read the Publication</a></li>
+</ul>
+</nav>
+    </div>
 <!-- main -->
-<main class="content column-page-right" id="quarto-document-content">
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../news/index.html">News</a></li><li class="breadcrumb-item"><a href="../../news/news/2026-07-01-llm-guidelines-publication.html">OSC Members Contribute to GUIDE-LLM Reporting Guidelines</a></li></ol></nav><h1 class="title display-7">OSC Members Contribute to GUIDE-LLM Reporting Guidelines</h1></header>
+<header id="title-block-header">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../people/index.html">People</a></li><li class="breadcrumb-item"><a href="../people/management.html">Management</a></li></ol></nav>
-<div class="quarto-title">
-<h1 class="title">Management</h1>
-</div>
-
-
-
-<div class="quarto-title-meta column-page-right">
-
-    
-  
-    
-  </div>
-  
-
-
+<p class="date">July 1, 2026</p>
 </header>
 
-
-<div id="listing-management" class="quarto-listing quarto-listing-container-custom">
-<div class="card mb-3" data-index="0" data-categories="UHN5Y2hvbG9neSUyMCUyNiUyMEVkdWNhdGlvbg==" data-listing-file-modified-sort="1782906559849" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
-<h4 class="card-header anchored">
-Managing Director of the OSC
-</h4>
-<div class="row g-0">
-<!-- Profile Image Column -->
-<div class="col-md-3 d-flex justify-content-center align-items-center">
-<p><a href="../people/people/felix-schoenbrodt.html"> <img src="people/images/felix_schoenbrodt.jpeg" class="profile-image" alt="Profile photo of Felix Schönbrodt"> </a></p>
-</div>
-<!-- Social Icons Column -->
-<div class="col-md-1 d-flex justify-content-center align-items-center">
-<ul class="d-flex flex-row flex-md-column list-unstyled gap-3">
-<li>
-<a href="https://orcid.org/0000-0002-8282-3910" target="_blank" aria-label="ORCID"> <i class="social-icons fa-brands fa-orcid fa-2xl" aria-hidden="true"></i> </a>
-</li>
-<li>
-<a href="https://github.com/nicebread" target="_blank" aria-label="GitHub"> <i class="social-icons fa-brands fa-github fa-2xl" aria-hidden="true"></i> </a>
-</li>
-<li>
-<a href="https://scicomm.xyz/@nicebread" target="_blank" aria-label="Mastodon"> <i class="social-icons fa-brands fa-mastodon fa-2xl" aria-hidden="true"></i> </a>
-</li>
+<p>As discussions around the responsible use of AI and large language models (LLMs) in research continue, OSC members <a href="../../people/people/stefan-feuerriegel.html">Stefan Feuerriegel</a> and <a href="../../people/people/barbara-plank.html">Barbara Plank</a> contributed to a newly published paper introducing the <strong>GUIDE-LLM</strong> reporting guidelines, which help researchers transparently report their use of LLMs to support reproducibility, accountability, and research integrity.</p>
+<p>The publication and accompanying guidelines have recently been highlighted by both the <a href="https://mcml.ai/news/2026-06-10-research-insight-feuerriegel/">Munich Center for Machine Learning (MCML)</a> and the <a href="https://www.berd-nfdi.de/wp-admin/admin-ajax.php?action=tnp&amp;na=v&amp;nk=125-4af1e79264&amp;id=29">BERD@NFDI newsletter</a>, reflecting their growing relevance to the research community.</p>
+<section id="read-the-publication" class="level2">
+<h2 class="anchored" data-anchor-id="read-the-publication">Read the Publication</h2>
+<ul>
+<li><p>Feuerriegel, S., Plank, B., et al.&nbsp;(2026). GUIDE-LLM: Guidelines for Reporting the Use of Large Language Models in Research. Nature Human Behaviour. <a href="https://www.nature.com/articles/s41562-026-02492-7">DOI:10.1038/s41562-026-02492-7</a></p></li>
+<li><p>The complete GUIDE-LLM checklist and supporting resources are available at: <a href="https://www.llm-checklist.com/" class="uri">https://www.llm-checklist.com/</a></p></li>
 </ul>
-</div>
-<!-- Card Body Column -->
-<div class="col-md-8">
-<div class="card-body">
-<h4 class="card-title anchored">
-Felix Schönbrodt
-</h4>
-<div class="d-flex align-items-center">
-<p><span class="card-subtitle mb-0 fs-5 fw-bold text-secondary"> Prof.&nbsp;Dr.&nbsp;| Psychology &amp; Education </span></p>
-</div>
-<p class="personal-statement card-text text-justify">
-Professor at the Department of Psychology, Ludwig-Maximilians-Universität München, Germany. Managing director of the LMU Open Science Center and steering group member of the META-REP priority program (‘A meta-scientific research program to analyze and optimize replicability in the behavioral, social, and cognitive Sciences’). Interested in Open Science, Metascience, implicit motives, machine learning, responsible research assessment (CoARA), solarpunk, piano, and cooking.
-</p>
-<p><a href="../people/people/felix-schoenbrodt.html" class="btn btn-primary">Read More!</a></p>
-</div>
-</div>
-</div>
-</div>
-<div class="card mb-3" data-index="1" data-listing-file-modified-sort="1782906559996" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
-<h4 class="card-header anchored">
-LMU Open Science Center Coordinator
-</h4>
-<div class="row g-0">
-<!-- Profile Image Column -->
-<div class="col-md-3 d-flex justify-content-center align-items-center">
-<p><a href="../people/people/malika-ihle.html"> <img src="people/images/malika_ihle.JPG" class="profile-image" alt="Profile photo of Malika Ihle"> </a></p>
-</div>
-<!-- Social Icons Column -->
-<div class="col-md-1 d-flex justify-content-center align-items-center">
-<ul class="d-flex flex-row flex-md-column list-unstyled gap-3">
-<li>
-<a href="https://orcid.org/0000-0002-3242-5981" target="_blank" aria-label="ORCID"> <i class="social-icons fa-brands fa-orcid fa-2xl" aria-hidden="true"></i> </a>
-</li>
-<li>
-<a href="https://github.com/malikaihle" target="_blank" aria-label="GitHub"> <i class="social-icons fa-brands fa-github fa-2xl" aria-hidden="true"></i> </a>
-</li>
-<li>
-<a href="https://bsky.app/profile/malikaihle.bsky.social" target="_blank" aria-label="Bluesky"> <i class="social-icons fa-brands fa-bluesky fa-2xl" aria-hidden="true"></i> </a>
-</li>
-<li>
-<a href="https://www.linkedin.com/malika-ihle" target="_blank" aria-label="Linkedin"> <i class="social-icons fa-brands fa-linkedin fa-2xl" aria-hidden="true"></i> </a>
-</li>
-<li>
-<a href="https://scicomm.xyz/@MalikaIhle" target="_blank" aria-label="Mastodon"> <i class="social-icons fa-brands fa-mastodon fa-2xl" aria-hidden="true"></i> </a>
-</li>
-</ul>
-</div>
-<!-- Card Body Column -->
-<div class="col-md-8">
-<div class="card-body">
-<h4 class="card-title anchored">
-Malika Ihle
-</h4>
-<div class="d-flex align-items-center">
-<p><span class="card-subtitle mb-0 fs-5 fw-bold text-secondary"> Dr. </span></p>
-</div>
-<p class="personal-statement card-text text-justify">
-I am the Coordinator of the LMU Open Science Center, developing a comprehensive approach to open research that extends across all disciplines, using both bottom-up and top-down strategies. My role is to provide peer-to-peer training and develop an open research curriculum, coordinate grassroots initiatives and organize various events, support meta-research collaborations, liaise with local, national, and international stakeholders to inform the design of incentives and policies, and co-develop a strategic plan to make the LMU Open Science Center a sustainable entity.
-</p>
-<p><a href="../people/people/malika-ihle.html" class="btn btn-primary">Read More!</a></p>
-</div>
-</div>
-</div>
-</div>
-<style>
-:root {
-  --theme-main: #00883A;
-  --theme-main-dark: #246f3f;
-  --theme-bg: #f5f6fa;
-  --theme-card-bg: #fff;
-  --theme-card-shadow: 0 2px 10px rgba(43,134,75,0.10);
-  --theme-border: #e3e7ed;
-}
-
-.profile-image {
-  width: 175px;
-  height: 175px;
-  object-fit: cover;
-  border-radius: 50%;
-  margin: 0.5rem auto 0.8rem auto;
-  border: 3px solid var(--theme-main);
-  box-shadow: 0 1px 6px rgba(43,134,75,0.12);
-  flex-shrink: 0;
-}
-
-.card-text {
-  display: -webkit-box;
-  line-clamp: 5;
-  -webkit-line-clamp: 5; 
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
-} 
-.text-justify {
-  text-align: justify;
-}
-/*define colors for icons and buttons*/
-.social-icons {
-  color: var(--theme-main);
-  cursor: pointer;
-  transition: color 0.2s;
-}
-.social-icons:hover {
-  color: var(--theme-main-dark);           
-}
-.btn-primary {
-  background-color: var(--theme-main);
-  border-color: var(--theme-main);
-  cursor: pointer;
-  transition: color 0.2s;
-}
-.btn-primary:hover {
-  background-color: white;
-  border-color: var(--theme-main);
-  color: var(--theme-main);
-}
-
-.personal-statement a{
-  color: var(--theme-main);
-}
-</style>
-<div class="listing-no-matching d-none">No matching items</div>
-<nav id="management-pagination" class="listing-pagination" aria-label="Page Navigation">
-  <ul class="pagination"></ul>
-</nav>
-</div>
 
 
+</section>
 
 
 </main> <!-- /main -->
@@ -933,6 +651,15 @@ I am the Coordinator of the LMU Open Science Center, developing a comprehensive 
     }
   });
   </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../../news/news/2026-06-12-guidelines-for-routinely-collected-health-data.html" class="pagination-link" aria-label="International Guideline for Routinely Collected Health Data">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">International Guideline for Routinely Collected Health Data</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+  </div>
+</nav>
 </div> <!-- /content -->
 <footer class="osc-footer-card text-white py-5">
   <div class="container">
@@ -981,7 +708,7 @@ I am the Coordinator of the LMU Open Science Center, developing a comprehensive 
             </a>
           </li>
           <li>
-            <a href="../about/join-us.html" target="_blank" class="text-white text-decoration-underline" aria-label="Become a member (opens in new window)">
+            <a href="../../about/join-us.html" target="_blank" class="text-white text-decoration-underline" aria-label="Become a member (opens in new window)">
               Become a member
             </a>
           </li>
@@ -1013,17 +740,14 @@ I am the Coordinator of the LMU Open Science Center, developing a comprehensive 
     <hr class="my-4 border-light">
 
     <div class="d-flex flex-wrap gap-3 small">
-      <a href="../footer/imprint.html" class="text-white text-decoration-underline">Imprint</a>
+      <a href="../../footer/imprint.html" class="text-white text-decoration-underline">Imprint</a>
       <span aria-hidden="true">|</span>
-      <a href="../footer/privacy.html" class="text-white text-decoration-underline">Privacy Policy</a>
+      <a href="../../footer/privacy.html" class="text-white text-decoration-underline">Privacy Policy</a>
       <span aria-hidden="true">|</span>
-      <a href="../footer/accessibilty.html" class="text-white text-decoration-underline">Accessibility</a>
+      <a href="../../footer/accessibilty.html" class="text-white text-decoration-underline">Accessibility</a>
     </div>
 
   </div>
 </footer>
-
-
-
 
 </body></html>

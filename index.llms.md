@@ -69,6 +69,14 @@ Keep up to date with our latest news releases, and upcoming events.
 
 News [View All News](news/index.llms.md)
 
+###### Jul 1, 2026
+
+##### [OSC Members Contribute to GUIDE-LLM Reporting Guidelines](news/news/2026-07-01-llm-guidelines-publication.llms.md)
+
+New GUIDE-LLM reporting guidelines, co-authored by OSC members Stefan Feuerriegel and Barbara Plank, provide researchers with a framework for transparently reporting the use of LLMs in research.
+
+[Read More →](news/news/2026-07-01-llm-guidelines-publication.llms.md)
+
 ###### Jun 12, 2026
 
 ##### [International Guideline for Routinely Collected Health Data](news/news/2026-06-12-guidelines-for-routinely-collected-health-data.llms.md)
@@ -84,14 +92,6 @@ OSC member, Dr. Sabine Hoffmann, is the lead author of a newly published interna
 Work done by OSC members were featured Nature as part of larger collection of publications for research credibility.
 
 [Read More →](news/news/2026-06-11-collection-of-papers-published-in-nature.llms.md)
-
-###### May 5, 2026
-
-##### [SHARP Becomes a Funding Institutional Member](news/news/2026-05-05-sharp-as-new-funding-institutional-member.llms.md)
-
-Collaborative Research Centre, TRR419 SHARP becomes a funding institutional member of the OSC!
-
-[Read More →](news/news/2026-05-05-sharp-as-new-funding-institutional-member.llms.md)
 
 Events [View All Events](events/index.llms.md)
 
