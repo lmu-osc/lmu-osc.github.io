@@ -1,0 +1,20 @@
+---
+title: OSC Members Contribute to GUIDE-LLM Reporting Guidelines
+date: 2026-07-01
+categories: ["Publications"]
+description: New GUIDE-LLM reporting guidelines, co-authored by OSC members Stefan Feuerriegel and Barbara Plank, provide researchers with a framework for transparently reporting the use of LLMs in research.
+
+template: templates/news-template.html
+filters:
+  - templates/process-news-yaml.lua
+---
+
+As discussions around the responsible use of AI and large language models (LLMs) in research continue, OSC members [Stefan Feuerriegel](../../people/people/stefan-feuerriegel.qmd) and [Barbara Plank](../../people/people/barbara-plank.qmd) contributed to a newly published paper introducing the **GUIDE-LLM** reporting guidelines, which help researchers transparently report their use of LLMs to support reproducibility, accountability, and research integrity.
+
+The publication and accompanying guidelines have recently been highlighted by both the [Munich Center for Machine Learning (MCML)](https://mcml.ai/news/2026-06-10-research-insight-feuerriegel/) and the [BERD@NFDI newsletter](https://www.berd-nfdi.de/wp-admin/admin-ajax.php?action=tnp&na=v&nk=125-4af1e79264&id=29), reflecting their growing relevance to the research community.
+
+## Read the Publication
+
+- Feuerriegel, S., Plank, B., et al. (2026). GUIDE-LLM: Guidelines for Reporting the Use of Large Language Models in Research. Nature Human Behaviour. [DOI:10.1038/s41562-026-02492-7](https://www.nature.com/articles/s41562-026-02492-7)
+
+- The complete GUIDE-LLM checklist and supporting resources are available at: <https://www.llm-checklist.com/>
