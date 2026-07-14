@@ -732,6 +732,16 @@ Prof. Dr.
 
 Medicine
 
+[](https://orcid.org/0000-0003-1506-0252)
+
+![Profile of Heidrun Potschka](people/images/potschka-heidrun.jpg)
+
+Heidrun Potschka
+
+Prof Dr.
+
+Veterinary Medicine
+
 [](https://orcid.org/0000-0002-8374-5467)
 
 ![Profile of Matthias Reinhard](people/images/reinhard_matthias.jpg)
@@ -1809,6 +1819,16 @@ Title: Prof. Dr.
 Faculty: Medicine
 
 [View Profile](../people/people/nikolaus-plesnila.llms.md)
+
+![Profile of Heidrun Potschka](people/images/potschka-heidrun.jpg) Heidrun Potschka
+
+[](https://orcid.org/0000-0003-1506-0252)
+
+Title: Prof Dr.
+
+Faculty: Veterinary Medicine
+
+[View Profile](../people/people/heidrun-potschka.llms.md)
 
 ![Profile of Matthias Reinhard](people/images/reinhard_matthias.jpg) Matthias Reinhard
 
