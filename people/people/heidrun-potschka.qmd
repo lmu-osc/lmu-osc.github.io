@@ -1,0 +1,57 @@
+---
+# Member parameters
+title: Prof. Dr. Heidrun Potschka
+academic_title: Prof Dr.
+name: Heidrun Potschka
+first_name: Heidrun
+surname: Potschka
+categories:
+  - Veterinary Medicine
+
+# There is no limit to the number of memberships a person can have. All memberships must have a type, status, and start year.
+# See documentation for more details on the different types of memberships and their status options.
+memberships:
+  - type: lmu-individual
+    status: active
+    notes: Psychology
+    position: Chair of Pharmacology, Toxicology and Pharmacy
+    faculty: Veterinary Medicine
+
+# if desired by the member, add a photo to the people/people/images folder and link to it here
+photo: "images/potschka-heidrun.jpg"
+email: h.potschka@lmu.de
+personal: |
+
+# certain keywords for the label are recognized and the output is sorted in this priority: LMU Profile, Professional Profile, Personal Website, and Professional Website. see documentation for details on these labels. other links appear in the order they are listed in the YAML file.
+links:
+  - label: "LMU Profile"
+    url: "https://www.pharmtox.vetmed.uni-muenchen.de/index.html"
+
+# Social media links - variable number
+social_media:
+  ORCID: "https://orcid.org/0000-0003-1506-0252"
+
+# Mission statement paragraphs - variable number
+mission_statement: |
+    FAIR-by-design data sharing maximizes the value of research investments and accelerates biomedical progress. It will become increasingly important for the visibility and discoverability of research outputs. Achieving interoperability requires community-wide agreement on common data and metadata standards that can be integrated into user-friendly tools and platforms.
+  
+# Research interests - variable number
+research_interests: 
+  - "Veterinary Medicine"
+
+# Publications - variable number
+publications:
+  - year:
+    title: 
+    authors: 
+    journal: 
+    doi_url: 
+
+
+# these must be included always.
+template: templates/people-template.html
+filters: 
+    - templates/people_filter.lua
+---
+
+<!-- additional content **can** be included here, and appears after the Mission Statement but before the Research Interests. Any content that Quarto can render can be included here, namely R/Python/Julia code chunks, Markdown formatting, more HTML, etc. Main reasons to use this though: code blocks, and to include files. -->
