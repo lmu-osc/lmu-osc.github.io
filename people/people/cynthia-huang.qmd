@@ -19,7 +19,7 @@ memberships:
 # if desired by the member, add a photo to the people/people/images folder and link to it here
 photo: "images/cynthia-huang.jpg"
 email: cynthia.huang@lmu.de
-personal: |
+# personal: |
 
 # certain keywords for the label are recognized and the output is sorted in this priority: LMU Profile, Professional Profile, Personal Website, and Professional Website. see documentation for details on these labels. other links appear in the order they are listed in the YAML file.
 links:
@@ -36,10 +36,10 @@ mission_statement: |
   Open science tools and approaches are central to the development and communication of trustworthy data science. I have taught literate programming, version control and other reproducibility practices across a variety of contexts. I also regularly contribute to the wider R community, including various templates and talks about ggplot2 and Quarto. My research includes work on frameworks and software for transparent and legible data preprocessing, exploratory data analysis and visualization. 
   
 # Research interests - variable number
-research_interests: 
+# research_interests: 
 
 # Publications - variable number
-publications:
+# publications:
   # - year:
   #   title:
   #   authors:

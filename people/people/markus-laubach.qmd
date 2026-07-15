@@ -2,6 +2,7 @@
 # Member parameters
 title: Dr. med. Markus Laubach
 academic_title: Dr. med.
+name: Markus Laubach
 first_name: Markus
 surname: Laubach
 categories:
@@ -20,7 +21,7 @@ memberships:
 # if desired by the member, add a photo to the people/people/images folder and link to it here
 photo: "images/markus-laubach.jpg"
 email: markus.laubach@med.uni-muenchen.de
-personal: |
+# personal: |
 
 # certain keywords for the label are recognized and the output is sorted in this priority: LMU Profile, Professional Profile, Personal Website, and Professional Website. see documentation for details on these labels. other links appear in the order they are listed in the YAML file.
 links:
@@ -36,10 +37,10 @@ mission_statement: |
     As a member of the LMU Open Science Center, I support the advancement of transparent, reproducible, and open research practices. In my work as a surgeon-scientist and clinician at the Department of Orthopaedics and Trauma Surgery (Musculoskeletal University Center Munich, MUM) of the LMU University Hospital, I focus on translational orthopaedic and trauma research, including the development of innovative 3D-printed solutions and tissue engineering approaches to improve bone regeneration and patient care. My involvement in the Center reflects my commitment to rigorous methodology, interdisciplinary collaboration, and responsible dissemination of research that bridges laboratory innovation and clinical impact.
 
 # Research interests - variable number
-research_interests:
+# research_interests:
 
 # Publications - variable number
-publications:
+# publications:
   # - year:
   #   title:
   #   authors:
