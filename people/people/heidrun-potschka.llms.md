@@ -19,7 +19,3 @@ FAIR-by-design data sharing maximizes the value of research investments and acce
 ## Research Interests
 
 Veterinary Medicine
-
-## Selected Publications
-
-### 
