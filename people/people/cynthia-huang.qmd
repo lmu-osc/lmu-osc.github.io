@@ -1,51 +1,50 @@
 ---
 # Member parameters
-title: Prof. Dr. Heidrun Potschka
-academic_title: Prof Dr.
-name: Heidrun Potschka
-first_name: Heidrun
-surname: Potschka
+title: Dr. Cynthia A. Huang
+academic_title: Dr.
+name: Cynthia A. Huang
+first_name: Cynthia
+surname: Huang
 categories:
-  - Veterinary Medicine
+  - Math Informatics & Stats
 
 # There is no limit to the number of memberships a person can have. All memberships must have a type, status, and start year.
 # See documentation for more details on the different types of memberships and their status options.
 memberships:
   - type: lmu-individual
     status: active
-    position: Chair of Pharmacology, Toxicology and Pharmacy
-    faculty: Veterinary Medicine
+    position: Post-Doctoral Researcher at the Institute of Statistics, Social Data Science and AI Lab
+    faculty: Math, Informatics & Stats
 
 # if desired by the member, add a photo to the people/people/images folder and link to it here
-photo: "images/potschka-heidrun.jpg"
-email: h.potschka@lmu.de
+photo: "images/cynthia-huang.jpg"
+email: cynthia.huang@lmu.de
 personal: |
 
 # certain keywords for the label are recognized and the output is sorted in this priority: LMU Profile, Professional Profile, Personal Website, and Professional Website. see documentation for details on these labels. other links appear in the order they are listed in the YAML file.
 links:
-  - label: "LMU Profile"
-    url: "https://www.pharmtox.vetmed.uni-muenchen.de/index.html"
+  - label: "Personal Website"
+    url: "cynthiahqy.com"
 
 # Social media links - variable number
 social_media:
-  ORCID: "https://orcid.org/0000-0003-1506-0252"
+  GitHub: "https://github.com/cynthiahqy"
+  ORCID: "https://orcid.org/0000-0002-9218-987X"
 
 # Mission statement paragraphs - variable number
 mission_statement: |
-    FAIR-by-design data sharing maximizes the value of research investments and accelerates biomedical progress. It will become increasingly important for the visibility and discoverability of research outputs. Achieving interoperability requires community-wide agreement on common data and metadata standards that can be integrated into user-friendly tools and platforms.
+  Open science tools and approaches are central to the development and communication of trustworthy data science. I have taught literate programming, version control and other reproducibility practices across a variety of contexts. I also regularly contribute to the wider R community, including various templates and talks about ggplot2 and Quarto. My research includes work on frameworks and software for transparent and legible data preprocessing, exploratory data analysis and visualization. 
   
 # Research interests - variable number
 research_interests: 
-  - "Veterinary Medicine"
 
 # Publications - variable number
 publications:
   # - year:
-  #   title: 
-  #   authors: 
-  #   journal: 
-  #   doi_url: 
-
+  #   title:
+  #   authors:
+  #   journal:
+  #   doi_url:
 
 # these must be included always.
 template: templates/people-template.html
