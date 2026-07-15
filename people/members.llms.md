@@ -394,6 +394,16 @@ Dr.
 
 Math, Informatics & Stats
 
+[](https://orcid.org/0000-0002-9218-987X)
+
+![Profile of Cynthia A. Huang](people/images/cynthia-huang.jpg)
+
+Cynthia A. Huang
+
+Dr.
+
+Math, Informatics & Stats
+
 [](https://orcid.org/0000-0003-0268-9078)
 
 ![Profile of Michael Ingrisch](people/images/ingrisch_michael.jpg)
@@ -1481,6 +1491,16 @@ Title: Dr.
 Faculty: Math, Informatics & Stats
 
 [View Profile](../people/people/sabine-hoffmann.llms.md)
+
+![Profile of Cynthia A. Huang](people/images/cynthia-huang.jpg) Cynthia A. Huang
+
+[](https://orcid.org/0000-0002-9218-987X)
+
+Title: Dr.
+
+Faculty: Math, Informatics & Stats
+
+[View Profile](../people/people/cynthia-huang.llms.md)
 
 ![Profile of Michael Ingrisch](people/images/ingrisch_michael.jpg) Michael Ingrisch
 
