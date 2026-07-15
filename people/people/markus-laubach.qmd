@@ -1,0 +1,56 @@
+---
+# Member parameters
+title: Dr. med. Markus Laubach
+academic_title: Dr. med.
+first_name: Markus
+surname: Laubach
+categories:
+  - University Hospital
+
+# There is no limit to the number of memberships a person can have. All memberships must have a type, status, and start year.
+# See documentation for more details on the different types of memberships and their status options.
+memberships:
+  - type: lmu-individual
+    status: active
+    start_year: 2026
+    position: Surgeon-scientist at Musculoskeletal University Center Munich (MUM)
+    faculty: University Hospital
+    
+
+# if desired by the member, add a photo to the people/people/images folder and link to it here
+photo: "images/markus-laubach.jpg"
+email: markus.laubach@med.uni-muenchen.de
+personal: |
+
+# certain keywords for the label are recognized and the output is sorted in this priority: LMU Profile, Professional Profile, Personal Website, and Professional Website. see documentation for details on these labels. other links appear in the order they are listed in the YAML file.
+links:
+  - label: "LMU Profile"
+    url: "https://www.lmu-klinikum.de/mum-lmu/6eff8b2b49e54ab7/383af7251a6e8a47"
+
+# Social media links - variable number
+social_media:
+  ORCID: "https://orcid.org/0000-0002-3451-1445"
+
+# Mission statement paragraphs - variable number
+mission_statement: |
+    As a member of the LMU Open Science Center, I support the advancement of transparent, reproducible, and open research practices. In my work as a surgeon-scientist and clinician at the Department of Orthopaedics and Trauma Surgery (Musculoskeletal University Center Munich, MUM) of the LMU University Hospital, I focus on translational orthopaedic and trauma research, including the development of innovative 3D-printed solutions and tissue engineering approaches to improve bone regeneration and patient care. My involvement in the Center reflects my commitment to rigorous methodology, interdisciplinary collaboration, and responsible dissemination of research that bridges laboratory innovation and clinical impact.
+
+# Research interests - variable number
+research_interests:
+
+# Publications - variable number
+publications:
+  # - year:
+  #   title:
+  #   authors:
+  #   journal:
+  #   doi_url:
+
+
+# these must be included always.
+template: templates/people-template.html
+filters: 
+    - templates/people_filter.lua
+---
+
+<!-- additional content **can** be included here, and appears after the Mission Statement but before the Research Interests. Any content that Quarto can render can be included here, namely R/Python/Julia code chunks, Markdown formatting, more HTML, etc. Main reasons to use this though: code blocks, and to include files. -->
