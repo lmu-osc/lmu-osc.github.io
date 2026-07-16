@@ -562,6 +562,16 @@ Dr.
 
 Philosophy
 
+[](https://orcid.org/0000-0002-3451-1445)
+
+![Profile of Markus Laubach](people/images/markus-laubach.jpg)
+
+Markus Laubach
+
+Dr. med.
+
+University Hospital
+
 [](https://orcid.org/0000-0002-6662-7127)
 
 ![Profile of Michael Lauseker](people/images/lauseker_michael.jpg)
@@ -1659,6 +1669,16 @@ Title: Dr.
 Faculty: Philosophy
 
 [View Profile](../people/people/juergen-landes.llms.md)
+
+![Profile of Markus Laubach](people/images/markus-laubach.jpg) Markus Laubach
+
+[](https://orcid.org/0000-0002-3451-1445)
+
+Title: Dr. med.
+
+Faculty: University Hospital
+
+[View Profile](../people/people/markus-laubach.llms.md)
 
 ![Profile of Michael Lauseker](people/images/lauseker_michael.jpg) Michael Lauseker
 

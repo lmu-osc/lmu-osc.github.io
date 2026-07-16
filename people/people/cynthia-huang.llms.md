@@ -8,7 +8,7 @@ Faculty of Math, Informatics & Stats
 
 [cynthia.huang@lmu.de](mailto:cynthia.huang@lmu.de)
 
-[Personal Website](cynthiahqy.com)
+[Personal Website](https://www.cynthiahqy.com/)
 
 [](https://orcid.org/0000-0002-9218-987X) [](https://github.com/cynthiahqy)
 
