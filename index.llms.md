@@ -69,6 +69,14 @@ Keep up to date with our latest news releases, and upcoming events.
 
 News [View All News](news/index.llms.md)
 
+###### Jul 20, 2026
+
+##### [OSC Member Maximilian Frank Receives 2026 DGPs Quality Assurance Award](news/news/2026-07-20-maximilian-frank-dpg-award.llms.md)
+
+OSC Member and Special Advisor Maximilian Frank receives the Award for Quality Assurance in Psychology by the German Psychological Society (DGPs)
+
+[Read More →](news/news/2026-07-20-maximilian-frank-dpg-award.llms.md)
+
 ###### Jul 1, 2026
 
 ##### [OSC Members Contribute to GUIDE-LLM Reporting Guidelines](news/news/2026-07-01-llm-guidelines-publication.llms.md)
@@ -84,14 +92,6 @@ New GUIDE-LLM reporting guidelines, co-authored by OSC members Stefan Feuerriege
 OSC member, Dr. Sabine Hoffmann, is the lead author of a newly published international guideline in The BMJ for improving the quality, transparency, and reproducibility of research based on routinely collected health data.
 
 [Read More →](news/news/2026-06-12-guidelines-for-routinely-collected-health-data.llms.md)
-
-###### Jun 11, 2026
-
-##### [Credible Research in the Social and Behavioral Sciences in Nature Collection 2026](news/news/2026-06-11-collection-of-papers-published-in-nature.llms.md)
-
-Work done by OSC members were featured Nature as part of larger collection of publications for research credibility.
-
-[Read More →](news/news/2026-06-11-collection-of-papers-published-in-nature.llms.md)
 
 Events [View All Events](events/index.llms.md)
 
