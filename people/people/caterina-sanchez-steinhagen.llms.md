@@ -1,6 +1,6 @@
 # Caterina Luz Sanchez Steinhagen
 
-![Profile photo of Caterina Sanchez Steinhagen](images/default.svg)
+![Profile photo of ](images/default.svg)
 
 Research Assistant - Training Material Developer
 

@@ -1,6 +1,6 @@
 # Maximilian Kristen
 
-![Profile photo of Maximilian Kristen](images/default.svg)
+![Profile photo of ](images/default.svg)
 
 M.Sc. Student
 

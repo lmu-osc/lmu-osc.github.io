@@ -1,6 +1,6 @@
 # Thomas Krefeld
 
-![Profile photo of Thomas Krefeld](images/krefeld_thomas.jpg)
+![Profile photo of ](images/krefeld_thomas.jpg)
 
 Professor Emeritus
 

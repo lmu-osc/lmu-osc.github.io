@@ -1,6 +1,6 @@
 # Dr. med. Markus Laubach
 
-![Profile photo of Markus Laubach](images/markus-laubach.jpg)
+![Profile photo of ](images/markus-laubach.jpg)
 
 Surgeon-scientist at Musculoskeletal University Center Munich (MUM)
 

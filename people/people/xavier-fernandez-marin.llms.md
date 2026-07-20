@@ -1,6 +1,6 @@
 # Xavier Fernández-i-Marín
 
-![Profile photo of Xavier Fernández-i-Marín](images/fernandez-i-marin_xavier.jpg)
+![Profile photo of ](images/fernandez-i-marin_xavier.jpg)
 
 Researcher
 

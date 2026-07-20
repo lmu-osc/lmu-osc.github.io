@@ -1,6 +1,6 @@
 # Gitta Kutyniok
 
-![Profile photo of Gitta Kutyniok](images/kutyniok_gitta.jpeg)
+![Profile photo of ](images/kutyniok_gitta.jpeg)
 
 Chair
 

@@ -1,6 +1,6 @@
 # Anne-Laure Boulesteix
 
-![Profile photo of Anne-Laure Boulesteix](images/boulesteix_anne-laure.jpg)
+![Profile photo of ](images/boulesteix_anne-laure.jpg)
 
 Chair
 

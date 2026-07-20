@@ -1,6 +1,6 @@
 # Larissa Neumann
 
-![Profile photo of Larissa Neumann](images/neumann_larissa.jpg)
+![Profile photo of ](images/neumann_larissa.jpg)
 
 Medical Informatics, Biometry and Epidemiology
 

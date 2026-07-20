@@ -1,6 +1,6 @@
 # Rebecca I. Sienel
 
-![Profile photo of Rebecca I. Sienel](images/sienel_rebecca_i..jpg)
+![Profile photo of ](images/sienel_rebecca_i..jpg)
 
 Researcher
 

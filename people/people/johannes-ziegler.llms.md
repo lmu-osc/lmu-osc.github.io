@@ -1,6 +1,6 @@
 # Johannes Ziegler
 
-![Profile photo of Johannes Ziegler](images/default.svg)
+![Profile photo of ](images/default.svg)
 
 Researcher
 

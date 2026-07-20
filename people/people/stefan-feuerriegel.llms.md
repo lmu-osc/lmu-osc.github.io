@@ -1,6 +1,6 @@
 # Stefan Feuerriegel
 
-![Profile photo of Stefan Feuerriegel](images/feuerriegel_stefan.jpg)
+![Profile photo of ](images/feuerriegel_stefan.jpg)
 
 Chair
 

@@ -1,6 +1,6 @@
 # Alexander Wuttke
 
-![Profile photo of Alexander Wuttke](images/wuttke_alexander.jpg)
+![Profile photo of ](images/wuttke_alexander.jpg)
 
 Professor in Digitalization and Political Behavior
 

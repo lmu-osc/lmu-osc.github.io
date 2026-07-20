@@ -1,6 +1,6 @@
 # Christian Woll
 
-![Profile photo of Christian Woll](images/woll_christian.jpg)
+![Profile photo of ](images/woll_christian.jpg)
 
 Researcher
 

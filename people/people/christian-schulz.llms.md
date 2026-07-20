@@ -1,6 +1,6 @@
 # Christian Schulz
 
-![Profile photo of Christian Schulz](images/schulz_christian.jpg)
+![Profile photo of ](images/schulz_christian.jpg)
 
 Deputy Director of the Medical Clinic and Polyclinic II
 

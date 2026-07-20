@@ -1,6 +1,6 @@
 # Florian Kohrt
 
-![Profile photo of Florian Kohrt](images/default.svg)
+![Profile photo of ](images/default.svg)
 
 Ph.D. Candidate
 

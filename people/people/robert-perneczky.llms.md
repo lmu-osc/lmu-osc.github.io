@@ -1,6 +1,6 @@
 # Robert Perneczky
 
-![Profile photo of Robert Perneczky](images/perneczky_robert.jpg)
+![Profile photo of ](images/perneczky_robert.jpg)
 
 Chair
 

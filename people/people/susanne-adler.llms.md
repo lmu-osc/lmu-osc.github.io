@@ -1,6 +1,6 @@
 # Susanne Adler
 
-![Profile photo of Susanne Adler](images/adler_susanne.jpg)
+![Profile photo of ](images/adler_susanne.jpg)
 
 Researcher
 

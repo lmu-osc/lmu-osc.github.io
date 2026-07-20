@@ -1,6 +1,6 @@
 # Caspar Schumacher
 
-![Profile photo of Caspar Schumacher](images/schumacher_caspar.jpeg)
+![Profile photo of ](images/schumacher_caspar.jpeg)
 
 B.Sc. Student
 

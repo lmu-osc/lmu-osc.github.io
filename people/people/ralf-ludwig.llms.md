@@ -1,6 +1,6 @@
 # Ralf Ludwig
 
-![Profile photo of Ralf Ludwig](images/ludwig_ralf.jpg)
+![Profile photo of ](images/ludwig_ralf.jpg)
 
 Chair
 

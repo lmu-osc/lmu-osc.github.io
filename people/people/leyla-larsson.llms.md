@@ -1,6 +1,6 @@
 # Leyla Larsson
 
-![Profile photo of Leyla Larsson](images/larsson_leyla.jpg)
+![Profile photo of ](images/larsson_leyla.jpg)
 
 Ph.D. Candidate
 

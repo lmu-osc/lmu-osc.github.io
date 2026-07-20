@@ -1,6 +1,6 @@
 # Laura Seelkopf
 
-![Profile photo of Laura Seelkopf](images/seelkopf_laura.JPG)
+![Profile photo of ](images/seelkopf_laura.JPG)
 
 Chair
 

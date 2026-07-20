@@ -1,6 +1,6 @@
 # Prof. Dr. Heidrun Potschka
 
-![Profile photo of Heidrun Potschka](images/potschka-heidrun.jpg)
+![Profile photo of ](images/potschka-heidrun.jpg)
 
 Chair of Pharmacology, Toxicology and Pharmacy
 

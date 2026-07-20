@@ -1,6 +1,6 @@
 # Edouard Bonneville
 
-![Profile photo of Edouard Bonneville](images/bonneville_edouard.jpg)
+![Profile photo of ](images/bonneville_edouard.jpg)
 
 Researcher
 

@@ -1,6 +1,6 @@
 # Thomas Misgeld
 
-![Profile photo of Thomas Misgeld](images/misgeld_thomas.jpg)
+![Profile photo of ](images/misgeld_thomas.jpg)
 
 [thomas.misgeld@tum.de](mailto:thomas.misgeld@tum.de)
 

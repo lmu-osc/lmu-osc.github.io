@@ -1,6 +1,6 @@
 # Anna Sophie Kümpel
 
-![Profile photo of Anna Sophie Kümpel](images/kuempel_anna_sophie.jpg)
+![Profile photo of ](images/kuempel_anna_sophie.jpg)
 
 Professor of Communication
 

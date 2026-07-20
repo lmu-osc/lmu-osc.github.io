@@ -1,6 +1,6 @@
 # Christiane Fuchs
 
-![Profile photo of Christiane Fuchs](images/fuchs_christiane.jpeg)
+![Profile photo of ](images/fuchs_christiane.jpeg)
 
 [christiane.fuchs@helmholtz-muenchen.de](mailto:christiane.fuchs@helmholtz-muenchen.de)
 

@@ -1,6 +1,6 @@
 # Laura Meier
 
-![Profile photo of Laura Meier](images/meier_laura.jpg)
+![Profile photo of ](images/meier_laura.jpg)
 
 B.Sc
 

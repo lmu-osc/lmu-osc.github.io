@@ -1,6 +1,6 @@
 # Jürgen Landes
 
-![Profile photo of Jürgen Landes](images/landes_juergen.jpg)
+![Profile photo of ](images/landes_juergen.jpg)
 
 Researcher
 

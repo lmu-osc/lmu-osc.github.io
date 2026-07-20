@@ -1,6 +1,6 @@
 # Ben Abrahams
 
-![Profile photo of Ben Abrahams](images/default.svg)
+![Profile photo of ](images/default.svg)
 
 Research Assistant - Software Developer
 

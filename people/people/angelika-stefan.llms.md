@@ -1,6 +1,6 @@
 # Angelika Stefan
 
-![Profile photo of Angelika Stefan](images/stefan_angelika.jpeg)
+![Profile photo of ](images/stefan_angelika.jpeg)
 
 Researcher
 

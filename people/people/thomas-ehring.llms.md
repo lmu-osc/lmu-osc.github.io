@@ -1,6 +1,6 @@
 # Thomas Ehring
 
-![Profile photo of Thomas Ehring](images/ehring_thomas.png)
+![Profile photo of ](images/ehring_thomas.png)
 
 Chair
 

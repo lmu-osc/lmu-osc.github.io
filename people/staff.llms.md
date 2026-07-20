@@ -95,21 +95,6 @@ I am a Master’s student in Epidemiology at the Institute for Medical Informati
 
 [Read More!](../people/people/riya-lamichhane.llms.md)
 
-#### Research Assistant - Training Development
-
-[![Profile photo of Tejaswini Sharma](people/images/tejaswini-sharma_25-09-26_164-web.jpg)](../people/people/tejaswini-sharma.llms.md)
-
-- [](https://orcid.org/0009-0000-0305-9751)
-
-#### Tejaswini Sharma
-
-M.Sc. Student \| Psychology & Education
-
-I am an M.Sc. student in Psychology: Learning Sciences at LMU Munich, passionate about integrating educational research with Open Science. My broader research interest lies in creating inclusive and research-driven learning environments, and I see Open Science as a key foundation for ensuring that research is transparent, collaborative, and impactful across disciplines.  
-At the OSC, I support the development of training materials for the Train-the-Trainer programme, focusing on reproducible workflows, FAIR data principles, and instructional design for academic contexts.
-
-[Read More!](../people/people/tejaswini-sharma.llms.md)
-
 #### Research Assistant - Training Development , Event Logistics & Public Outreach
 
 [![Profile photo of Elizabeth Waterfield](people/images/waterfield_elizabeth.png)](../people/people/elizabeth-waterfield.llms.md)
@@ -136,6 +121,7 @@ I am an M.Sc. student in Psychology- Learning Sciences at LMU Munich with a back
 - [Gracia Prüm (2023 - 2025): Research Assistant - Public outreach, Event Logistics](../people/people/gracia-pruem.llms.md)
 - [Caterina Sanchez Steinhagen (2025 - 2025): Research Assistant - Training Material Developer](../people/people/caterina-sanchez-steinhagen.llms.md)
 - [Leonhard Schramm (2019 - 2022): Research Assistant - Members Onboarding, Guidelines Creator](../people/people/leonhard-schramm.llms.md)
+- [Tejaswini Sharma (2025 - 2026): Research Assistant - Training Development](../people/people/tejaswini-sharma.llms.md)
 - [Martin Wiehr (2023 - 2024): Research Assistant - Members Onboarding, Event Logistics](../people/people/martin-wiehr.llms.md)
 
 &nbsp;

@@ -1,6 +1,6 @@
 # Anna-Carolina Haensch
 
-![Profile photo of Anna-Carolina Haensch](images/haensch_anna-carolina.png)
+![Profile photo of ](images/haensch_anna-carolina.png)
 
 Researcher
 

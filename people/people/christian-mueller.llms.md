@@ -1,6 +1,6 @@
 # Christian L. Müller
 
-![Profile photo of Christian L. Müller](images/mueller_christian-l.png)
+![Profile photo of ](images/mueller_christian-l.png)
 
 Chair
 

@@ -1,6 +1,6 @@
 # Markus Maier
 
-![Profile photo of Markus Maier](images/maier_markus.JPG)
+![Profile photo of ](images/maier_markus.JPG)
 
 Chair
 

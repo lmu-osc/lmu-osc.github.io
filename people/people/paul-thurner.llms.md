@@ -1,6 +1,6 @@
 # Paul W. Thurner
 
-![Profile photo of Paul W. Thurner](images/thurner_paul_w.jpg)
+![Profile photo of ](images/thurner_paul_w.jpg)
 
 Chair
 

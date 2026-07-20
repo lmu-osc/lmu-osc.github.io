@@ -1,6 +1,6 @@
 # Johannes Kopf-Beck
 
-![Profile photo of Johannes Kopf-Beck](images/kopf-beck_johannes.jpg)
+![Profile photo of ](images/kopf-beck_johannes.jpg)
 
 Research Group Leader
 

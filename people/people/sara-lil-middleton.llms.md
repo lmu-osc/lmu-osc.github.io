@@ -1,6 +1,6 @@
 # Sara Lil Middleton
 
-![Profile photo of Sara Lil Middleton](images/middleton_sara_lil.jpeg)
+![Profile photo of ](images/middleton_sara_lil.jpeg)
 
 Training Development Coordinator and Community Engagement Manager
 

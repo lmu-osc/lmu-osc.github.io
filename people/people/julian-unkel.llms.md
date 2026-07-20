@@ -1,6 +1,6 @@
 # Julian Unkel
 
-![Profile photo of Julian Unkel](images/unkel_julian.png)
+![Profile photo of ](images/unkel_julian.png)
 
 Department of Media and Communication
 

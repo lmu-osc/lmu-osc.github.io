@@ -1,6 +1,6 @@
 # Stefano Coretta
 
-![Profile photo of Stefano Coretta](images/coretta_stefano.jpg)
+![Profile photo of ](images/coretta_stefano.jpg)
 
 University of Edinburgh
 

@@ -1,6 +1,6 @@
 # Ksenia Shagal
 
-![Profile photo of Ksenia Shagal](images/shagal_ksenia.jpg)
+![Profile photo of ](images/shagal_ksenia.jpg)
 
 Chair
 

@@ -1,6 +1,6 @@
 # Jörg Renkawitz
 
-![Profile photo of Jörg Renkawitz](images/renkawitz_joerg.jpg)
+![Profile photo of ](images/renkawitz_joerg.jpg)
 
 Principal Investigator
 

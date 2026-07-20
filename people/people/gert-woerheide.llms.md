@@ -1,6 +1,6 @@
 # Gert Wörheide
 
-![Profile photo of Gert Wörheide](images/woerheide_gert.jpg)
+![Profile photo of ](images/woerheide_gert.jpg)
 
 Chair
 

@@ -1,6 +1,6 @@
 # Peter Falkai
 
-![Profile photo of Peter Falkai](images/falkai_peter.jpg)
+![Profile photo of ](images/falkai_peter.jpg)
 
 Director of Clinic
 

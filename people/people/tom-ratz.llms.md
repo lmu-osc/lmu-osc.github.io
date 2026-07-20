@@ -1,6 +1,6 @@
 # Tom Ratz
 
-![Profile photo of Tom Ratz](images/ratz_tom.jpg)
+![Profile photo of ](images/ratz_tom.jpg)
 
 [tom.ratz@uzh.ch](mailto:tom.ratz@uzh.ch)
 

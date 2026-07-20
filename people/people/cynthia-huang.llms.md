@@ -1,6 +1,6 @@
 # Dr. Cynthia A. Huang
 
-![Profile photo of Cynthia A. Huang](images/cynthia-huang.jpg)
+![Profile photo of ](images/cynthia-huang.jpg)
 
 Post-Doctoral Researcher at the Institute of Statistics, Social Data Science and AI Lab
 
@@ -10,7 +10,7 @@ Faculty of Math, Informatics & Stats
 
 [Personal Website](https://www.cynthiahqy.com/)
 
-[](https://github.com/cynthiahqy) [](https://orcid.org/0000-0002-9218-987X)
+[](https://orcid.org/0000-0002-9218-987X) [](https://github.com/cynthiahqy)
 
 ## Mission Statement
 

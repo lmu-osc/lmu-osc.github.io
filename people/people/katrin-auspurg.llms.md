@@ -1,6 +1,6 @@
 # Katrin Auspurg
 
-![Profile photo of Katrin Auspurg](images/auspurg_katrin.jpg)
+![Profile photo of ](images/auspurg_katrin.jpg)
 
 Chair
 

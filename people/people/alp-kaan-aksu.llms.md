@@ -1,6 +1,6 @@
 # Alp Kaan Aksu
 
-![Profile photo of Alp Kaan Aksu](images/aksu_alp_kaan.jpg)
+![Profile photo of ](images/aksu_alp_kaan.jpg)
 
 B.Sc. Student
 

@@ -1,6 +1,6 @@
 # Andreas Schneck
 
-![Profile photo of Andreas Schneck](images/schneck_andreas.jpg)
+![Profile photo of ](images/schneck_andreas.jpg)
 
 Researcher
 

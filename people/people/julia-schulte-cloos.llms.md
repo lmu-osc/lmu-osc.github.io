@@ -1,6 +1,6 @@
 # Julia Schulte-Cloos
 
-![Profile photo of Julia Schulte-Cloos](images/schulte-cloos_julia.jpg)
+![Profile photo of ](images/schulte-cloos_julia.jpg)
 
 Researcher
 

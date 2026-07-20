@@ -1,6 +1,6 @@
 # Elizabeth Waterfield
 
-![Profile photo of Elizabeth Waterfield](images/waterfield_elizabeth.png)
+![Profile photo of ](images/waterfield_elizabeth.png)
 
 Research Assistant - Training Development , Event Logistics & Public Outreach
 
@@ -8,7 +8,7 @@ Faculty of Psychology & Education
 
 [e.waterfield@lmu.de](mailto:e.waterfield@lmu.de)
 
-[](https://github.com/bethwater1) [](https://orcid.org/0009-0006-3725-6730)
+[](https://orcid.org/0009-0006-3725-6730) [](https://github.com/bethwater1)
 
 ## Mission Statement
 

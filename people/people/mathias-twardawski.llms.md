@@ -1,6 +1,6 @@
 # Mathias Twardawski
 
-![Profile photo of Mathias Twardawski](images/twardawski_mathias.jpeg)
+![Profile photo of ](images/twardawski_mathias.jpeg)
 
 Researcher
 

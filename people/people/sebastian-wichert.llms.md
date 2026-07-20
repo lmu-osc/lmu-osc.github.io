@@ -1,6 +1,6 @@
 # Sebastian Wichert
 
-![Profile photo of Sebastian Wichert](images/wichert_sebastian.jpg)
+![Profile photo of ](images/wichert_sebastian.jpg)
 
 Researcher
 

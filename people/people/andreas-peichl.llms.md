@@ -1,6 +1,6 @@
 # Andreas Peichl
 
-![Profile photo of Andreas Peichl](images/peichl_andreas.jpg)
+![Profile photo of ](images/peichl_andreas.jpg)
 
 Director of Institute
 

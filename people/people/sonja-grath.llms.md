@@ -1,6 +1,6 @@
 # Sonja Grath
 
-![Profile photo of Sonja Grath](images/grath_sonja.jpg)
+![Profile photo of ](images/grath_sonja.jpg)
 
 Research Group Leader
 

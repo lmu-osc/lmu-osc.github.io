@@ -1,6 +1,6 @@
 # Daniel Krähmer
 
-![Profile photo of Daniel Krähmer](images/kraehmer_daniel.jpeg)
+![Profile photo of ](images/kraehmer_daniel.jpeg)
 
 Ph.D. Candidate
 

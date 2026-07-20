@@ -1,6 +1,6 @@
 # Dieter Kranzlmüller
 
-![Profile photo of Dieter Kranzlmüller](images/kranzlmueller_dieter.jpg)
+![Profile photo of ](images/kranzlmueller_dieter.jpg)
 
 Chair
 

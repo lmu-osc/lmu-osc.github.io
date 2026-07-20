@@ -1,6 +1,6 @@
 # Judith Zellner
 
-![Profile photo of Judith Zellner](images/judith_zellner.jpeg)
+![Profile photo of ](images/judith_zellner.jpeg)
 
 Researcher
 

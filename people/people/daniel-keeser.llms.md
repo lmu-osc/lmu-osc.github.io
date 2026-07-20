@@ -1,6 +1,6 @@
 # Daniel Keeser
 
-![Profile photo of Daniel Keeser](images/keeser_daniel.jpg)
+![Profile photo of ](images/keeser_daniel.jpg)
 
 Researcher
 

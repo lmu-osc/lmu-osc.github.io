@@ -1,6 +1,6 @@
 # Fabian Scheipl
 
-![Profile photo of Fabian Scheipl](images/scheipl_fabian.jpg)
+![Profile photo of ](images/scheipl_fabian.jpg)
 
 Chair
 

@@ -1,6 +1,6 @@
 # Ivett Guntersdorfer
 
-![Profile photo of Ivett Guntersdorfer](images/guntersdorfer_ivett.jpg)
+![Profile photo of ](images/guntersdorfer_ivett.jpg)
 
 Universität Salzburg
 

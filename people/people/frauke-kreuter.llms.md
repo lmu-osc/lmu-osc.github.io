@@ -1,6 +1,6 @@
 # Frauke Kreuter
 
-![Profile photo of Frauke Kreuter](images/kreuter_frauke.jpg)
+![Profile photo of ](images/kreuter_frauke.jpg)
 
 Chair
 

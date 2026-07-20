@@ -1,6 +1,6 @@
 # Markus Ploner
 
-![Profile photo of Markus Ploner](images/ploner_markus.jpg)
+![Profile photo of ](images/ploner_markus.jpg)
 
 [markus.ploner@tum.de](mailto:markus.ploner@tum.de)
 

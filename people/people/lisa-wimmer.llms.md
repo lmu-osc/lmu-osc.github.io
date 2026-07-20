@@ -1,6 +1,6 @@
 # Lisa Wimmer
 
-![Profile photo of Lisa Wimmer](images/wimmer_lisa.jpg)
+![Profile photo of ](images/wimmer_lisa.jpg)
 
 Ph.D. Candidate
 

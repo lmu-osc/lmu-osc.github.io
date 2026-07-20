@@ -1,6 +1,6 @@
 # Mario Haim
 
-![Profile photo of Mario Haim](images/haim_mario.jpg)
+![Profile photo of ](images/haim_mario.jpg)
 
 Chair
 

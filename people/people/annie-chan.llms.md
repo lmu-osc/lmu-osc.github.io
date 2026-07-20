@@ -1,6 +1,6 @@
 # Annie Chan
 
-![Profile photo of Annie Chan](images/chan_annie.jpg)
+![Profile photo of ](images/chan_annie.jpg)
 
 Researcher
 

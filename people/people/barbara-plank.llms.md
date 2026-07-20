@@ -1,6 +1,6 @@
 # Barbara Plank
 
-![Profile photo of Barbara Plank](images/plank_barbara.jpg)
+![Profile photo of ](images/plank_barbara.jpg)
 
 Chair for AI and Computational Linguistics, Co-Director Center for Information and Language Processing (CIS), MaiNLP (Munich AI & NLP lab) Research Group Leader
 

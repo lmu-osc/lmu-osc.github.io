@@ -1,6 +1,6 @@
 # Anne Frenzel
 
-![Profile photo of Anne Frenzel](images/frenzel_anne.jpg)
+![Profile photo of ](images/frenzel_anne.jpg)
 
 Student Dean
 

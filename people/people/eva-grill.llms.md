@@ -1,6 +1,6 @@
 # Eva Grill
 
-![Profile photo of Eva Grill](images/grill_eva.jpg)
+![Profile photo of ](images/grill_eva.jpg)
 
 Chair
 

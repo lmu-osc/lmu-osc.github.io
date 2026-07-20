@@ -1,6 +1,6 @@
 # Franka Etzel
 
-![Profile photo of Franka Etzel](images/etzel_franka.jpeg)
+![Profile photo of ](images/etzel_franka.jpeg)
 
 Research Assistant - Members Onboarding, Public Outreach
 

@@ -1,6 +1,6 @@
 # Dejana Damjanovic
 
-![Profile photo of Dejana Damjanovic](images/default.svg)
+![Profile photo of ](images/default.svg)
 
 Research Assistant - Members Onboarding, Event Logistics
 

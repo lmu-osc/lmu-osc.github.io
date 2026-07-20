@@ -1,6 +1,6 @@
 # Felix Henninger
 
-![Profile photo of Felix Henninger](images/henninger_felix.jpg)
+![Profile photo of ](images/henninger_felix.jpg)
 
 Ph.D. Candidate
 

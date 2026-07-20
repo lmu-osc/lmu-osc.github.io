@@ -1,6 +1,6 @@
 # Juliane Wilcke
 
-![Profile photo of Juliane Wilcke](images/wilcke_juliane.jpg)
+![Profile photo of ](images/wilcke_juliane.jpg)
 
 Researcher
 

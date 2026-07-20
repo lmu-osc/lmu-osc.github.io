@@ -1,6 +1,6 @@
 # Caroline Zygar-Hoffmann
 
-![Profile photo of Caroline Zygar-Hoffmann](images/zygar-hoffmann_caroline.jpg)
+![Profile photo of ](images/zygar-hoffmann_caroline.jpg)
 
 Researcher
 

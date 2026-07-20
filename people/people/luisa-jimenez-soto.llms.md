@@ -1,6 +1,6 @@
 # Luisa F. Jiménez-Soto
 
-![Profile photo of Luisa F. Jiménez-Soto](images/jimenez-soto_luisa_f..jpeg)
+![Profile photo of ](images/jimenez-soto_luisa_f..jpeg)
 
 Research Group Leader
 

@@ -1,6 +1,6 @@
 # Xenia Schmalz
 
-![Profile photo of Xenia Schmalz](images/schmalz_xenia.jpg)
+![Profile photo of ](images/schmalz_xenia.jpg)
 
 Researcher
 

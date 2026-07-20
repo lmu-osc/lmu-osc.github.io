@@ -1,6 +1,6 @@
 # Markus Herklotz
 
-![Profile photo of Markus Herklotz](images/herklotz_markus.jpeg)
+![Profile photo of ](images/herklotz_markus.jpeg)
 
 Researcher
 

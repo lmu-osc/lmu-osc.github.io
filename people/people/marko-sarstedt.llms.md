@@ -1,6 +1,6 @@
 # Marko Sarstedt
 
-![Profile photo of Marko Sarstedt](images/sarstedt_marko.jpg)
+![Profile photo of ](images/sarstedt_marko.jpg)
 
 Director of Institute
 

@@ -1,6 +1,6 @@
 # Alberto G. Villagran
 
-![Profile photo of Alberto G. Villagran](images/villagran_alberto_g..jpg)
+![Profile photo of ](images/villagran_alberto_g..jpg)
 
 Researcher
 

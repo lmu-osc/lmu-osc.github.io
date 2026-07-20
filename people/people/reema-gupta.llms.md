@@ -1,6 +1,6 @@
 # Reema Gupta
 
-![Profile photo of Reema Gupta](images/gupta_reema.jpg)
+![Profile photo of ](images/gupta_reema.jpg)
 
 FAIR Research Data Management Consultant
 
@@ -8,7 +8,7 @@ FAIR Research Data Management Consultant
 
 [LMU Profile](https://www.neuro.bio.lmu.de/members/comp_neuro_wachtler/gupta_r/index.html)
 
-[](https://orcid.org/0000-0003-4509-6969) [](https://www.linkedin.com/in/ree-gupta/) [](https://github.com/ree-gupta)
+[](https://github.com/ree-gupta) [](https://orcid.org/0000-0003-4509-6969) [](https://www.linkedin.com/in/ree-gupta/)
 
 ## Mission Statement
 

@@ -1,6 +1,6 @@
 # Barbara Osimani
 
-![Profile photo of Barbara Osimani](images/osimani_barbara.jpg)
+![Profile photo of ](images/osimani_barbara.jpg)
 
 [B.Osimani@lmu.de](mailto:B.Osimani@lmu.de)
 

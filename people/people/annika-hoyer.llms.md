@@ -1,6 +1,6 @@
 # Annika Hoyer
 
-![Profile photo of Annika Hoyer](images/hoyer_annika.jpg)
+![Profile photo of ](images/hoyer_annika.jpg)
 
 [annika.hoyer@stat.uni-muenchen.de](mailto:annika.hoyer@stat.uni-muenchen.de)
 

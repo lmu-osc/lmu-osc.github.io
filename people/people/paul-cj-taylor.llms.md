@@ -1,6 +1,6 @@
 # Paul C.J. Taylor
 
-![Profile photo of Paul C.J. Taylor](images/taylor_paul_cj.jpg)
+![Profile photo of ](images/taylor_paul_cj.jpg)
 
 Research Group Leader
 

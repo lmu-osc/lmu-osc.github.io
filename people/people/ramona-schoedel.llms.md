@@ -1,6 +1,6 @@
 # Ramona Schödel
 
-![Profile photo of Ramona Schödel](images/schoedel_ramona.jpg)
+![Profile photo of ](images/schoedel_ramona.jpg)
 
 Researcher
 

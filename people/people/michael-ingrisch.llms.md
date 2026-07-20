@@ -1,6 +1,6 @@
 # Michael Ingrisch
 
-![Profile photo of Michael Ingrisch](images/ingrisch_michael.jpg)
+![Profile photo of ](images/ingrisch_michael.jpg)
 
 Research Group Leader
 

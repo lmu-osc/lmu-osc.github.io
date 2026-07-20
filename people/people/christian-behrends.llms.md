@@ -1,6 +1,6 @@
 # Christian Behrends
 
-![Profile photo of Christian Behrends](images/behrends_christian.jpg)
+![Profile photo of ](images/behrends_christian.jpg)
 
 Researcher
 

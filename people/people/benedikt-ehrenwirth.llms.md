@@ -1,6 +1,6 @@
 # Benedikt Ehrenwirth
 
-![Profile photo of Benedikt Ehrenwirth](images/ehrenwirth_benedikt.jpeg)
+![Profile photo of ](images/ehrenwirth_benedikt.jpeg)
 
 B.Sc. Student
 

@@ -1,6 +1,6 @@
 # Maliheh Nazari-Jahantigh
 
-![Profile photo of Maliheh Nazari-Jahantigh](images/maliheh_nazari-jahantigh.png)
+![Profile photo of ](images/maliheh_nazari-jahantigh.png)
 
 Principal Investigator at the Institute for Cardiovascular Prevention (IPEK)
 

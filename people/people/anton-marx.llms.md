@@ -1,6 +1,6 @@
 # Anton Marx
 
-![Profile photo of Anton Marx](images/marx_anton.jpg)
+![Profile photo of ](images/marx_anton.jpg)
 
 Researcher
 

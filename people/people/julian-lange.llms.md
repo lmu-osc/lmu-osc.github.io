@@ -1,6 +1,6 @@
 # Julian Lange
 
-![Profile photo of Julian Lange](images/default.svg)
+![Profile photo of ](images/default.svg)
 
 Ph.D. Candidate
 

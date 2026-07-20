@@ -1,6 +1,6 @@
 # Inga Koerte
 
-![Profile photo of Inga Koerte](images/koerte_inga.jpg)
+![Profile photo of ](images/koerte_inga.jpg)
 
 Research Group Leader
 
