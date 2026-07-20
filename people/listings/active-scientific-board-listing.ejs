@@ -8,6 +8,7 @@ const activeManagementItems = (items || []).filter((item) => {
     return ['scientific board'].includes(membership.type) && membership.status === 'active';
   });
 });
+const personName = (i) => i['given-names'] && i['family-names'] ? i['given-names'] + ' ' + i['family-names'] : '';
 %>
 
 <% for (const item of activeManagementItems) { %>
@@ -34,7 +35,7 @@ const scientificBoardFaculty = (typeof activeScientificBoardMembership?.faculty 
 <!-- Profile Image Column -->
 <div class="col-md-3 d-flex justify-content-center align-items-center">
 <a href="<%= item.path %>">
-<img src="people/<%= item.photo || '/images/default.svg' %>" class="profile-image" alt="Profile photo of <%= item.name %>">
+<img src="people/<%= item.photo || '/images/default.svg' %>" class="profile-image" alt="Profile photo of <%= personName(item) %>">
 </a>
 </div>
 
@@ -84,7 +85,7 @@ const scientificBoardFaculty = (typeof activeScientificBoardMembership?.faculty 
 <!-- Card Body Column -->
 <div class="col-md-8">
 <div class="card-body">
-<h4 class="card-title"><%= item.name %></h4>
+<h4 class="card-title"><%= personName(item) %></h4>
 <div class="d-flex align-items-center">
 <span class="card-subtitle mb-0 fs-5 fw-bold text-secondary">
   <%= item.academic_title %><%= (scientificBoardFaculty && scientificBoardFaculty !== 'NA') ? '  |  ' + scientificBoardFaculty : '' %>
