@@ -1,0 +1,9 @@
+# OSC Member Maximilian Frank Receives 2026 DGPs Quality Assurance Award
+
+July 20, 2026
+
+Congratulations to OSC Member and Special Advisor [Maximilian Frank](../../people/people/maximilian-frank.llms.md) for receiving the Award for Quality Assurance in Psychology by the German Psychological Society (DGPs)! As a doctoral researcher at LMU, Maximilian focuses on improving the quality and reliability of research through meta-analysis, Open Science initiatives, and the development of sustainable practices to advance transparent and reproducible science.
+
+This well-deserved accomplishment highlights his commitment to transparent, reproducible, and trustworthy research, as well as sustainable structures that strengthen research quality. We appreciate his contributions to promoting Open Science - and supporting the LMU Open Science Center specifically - and wish him continued success in his future work.
+
+Read more about his work and this achievement in the LMU Newsroom: <https://www.lmu.de/en/newsroom/news-overview/news/dgps-award-for-maximilian-frank-a8cd5068.html>
