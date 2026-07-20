@@ -1,6 +1,6 @@
 # Elmar Spiegel
 
-![Profile photo of Elmar Spiegel](images/spiegel_elmar.jpg)
+![Profile photo of ](images/spiegel_elmar.jpg)
 
 [elmar.spiegel@helmholtz-munich.de](mailto:elmar.spiegel@helmholtz-munich.de)
 

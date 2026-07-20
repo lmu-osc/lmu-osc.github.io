@@ -1,6 +1,6 @@
 # Helmut Küchenhoff
 
-![Profile photo of Helmut Küchenhoff](images/kuechenhoff_helmut.jpg)
+![Profile photo of ](images/kuechenhoff_helmut.jpg)
 
 Retired Head of the Statistical Consulting Laboratory
 

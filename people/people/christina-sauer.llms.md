@@ -1,6 +1,6 @@
 # Christina Sauer
 
-![Profile photo of Christina Sauer](images/sauer_christina.jpg)
+![Profile photo of ](images/sauer_christina.jpg)
 
 Ph.D. Candidate
 

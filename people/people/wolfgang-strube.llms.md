@@ -1,6 +1,6 @@
 # Wolfgang Strube
 
-![Profile photo of Wolfgang Strube](images/strube_wolfgang.jpg)
+![Profile photo of ](images/strube_wolfgang.jpg)
 
 BKH Augsburg
 

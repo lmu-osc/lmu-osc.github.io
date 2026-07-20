@@ -1,6 +1,6 @@
 # Andreas Bender
 
-![Profile photo of Andreas Bender](images/bender_andreas.jpg)
+![Profile photo of ](images/bender_andreas.jpg)
 
 Researcher
 

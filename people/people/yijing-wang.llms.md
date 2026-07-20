@@ -1,6 +1,6 @@
 # Yijing Wang
 
-![Profile photo of Yijing Wang](images/default.svg)
+![Profile photo of ](images/default.svg)
 
 Ph.D. Candidate
 

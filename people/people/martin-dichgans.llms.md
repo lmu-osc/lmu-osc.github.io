@@ -1,6 +1,6 @@
 # Martin Dichgans
 
-![Profile photo of Martin Dichgans](images/dichgans_martin.jpeg)
+![Profile photo of ](images/dichgans_martin.jpeg)
 
 Director of Institute
 

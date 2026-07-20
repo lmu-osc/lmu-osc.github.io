@@ -1,6 +1,6 @@
 # Peter Edelsbrunner
 
-![Profile photo of Peter Edelsbrunner](images/edelsbrunner_peter.png)
+![Profile photo of ](images/edelsbrunner_peter.png)
 
 Instructional Design Advisor
 

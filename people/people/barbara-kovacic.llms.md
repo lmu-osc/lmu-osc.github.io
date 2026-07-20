@@ -1,6 +1,6 @@
 # Barbara Kovačić
 
-![Profile photo of Barbara Kovačić](images/kovacic_barbara.jpg)
+![Profile photo of ](images/kovacic_barbara.jpg)
 
 B.Sc. Student
 

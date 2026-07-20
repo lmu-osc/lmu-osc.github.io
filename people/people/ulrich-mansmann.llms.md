@@ -1,6 +1,6 @@
 # Ulrich Mansmann
 
-![Profile photo of Ulrich Mansmann](images/mansmann_ulrich.jpg)
+![Profile photo of ](images/mansmann_ulrich.jpg)
 
 Director of Institute
 

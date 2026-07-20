@@ -1,6 +1,6 @@
 # Hans-Bernd Brosius
 
-![Profile photo of Hans-Bernd Brosius](images/brosius_hans-bernd.jpg)
+![Profile photo of ](images/brosius_hans-bernd.jpg)
 
 Chair
 

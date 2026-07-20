@@ -1,6 +1,6 @@
 # Gerrit Burkhardt
 
-![Profile photo of Gerrit Burkhardt](images/burkhardt_gerrit.jpeg)
+![Profile photo of ](images/burkhardt_gerrit.jpeg)
 
 Researcher
 

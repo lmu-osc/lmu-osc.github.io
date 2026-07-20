@@ -1,6 +1,6 @@
 # Markus Bühner
 
-![Profile photo of Markus Bühner](images/buehner_markus.jpg)
+![Profile photo of ](images/buehner_markus.jpg)
 
 Chair
 

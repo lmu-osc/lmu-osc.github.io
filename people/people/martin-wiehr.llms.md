@@ -1,6 +1,6 @@
 # Martin Wiehr
 
-![Profile photo of Martin Wiehr](images/wiehr_martin.jpg)
+![Profile photo of ](images/wiehr_martin.jpg)
 
 Research Assistant - Members Onboarding, Event Logistics
 

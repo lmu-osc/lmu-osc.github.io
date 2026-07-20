@@ -1,6 +1,6 @@
 # Saskia Rusche
 
-![Profile photo of Saskia Rusche](images/rusche_saskia.jpg)
+![Profile photo of ](images/rusche_saskia.jpg)
 
 Researcher
 

@@ -1,6 +1,6 @@
 # Judith Bopp
 
-![Profile photo of Judith Bopp](images/bopp_judith.jpg)
+![Profile photo of ](images/bopp_judith.jpg)
 
 Researcher
 

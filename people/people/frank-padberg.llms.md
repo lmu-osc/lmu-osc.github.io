@@ -1,6 +1,6 @@
 # Frank Padberg
 
-![Profile photo of Frank Padberg](images/padberg_frank.jpg)
+![Profile photo of ](images/padberg_frank.jpg)
 
 Research Group Leader
 

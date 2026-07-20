@@ -1,6 +1,6 @@
 # Bernd Bischl
 
-![Profile photo of Bernd Bischl](images/bischl_bernd.jpg)
+![Profile photo of ](images/bischl_bernd.jpg)
 
 Chair
 

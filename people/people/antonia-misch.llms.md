@@ -1,6 +1,6 @@
 # Antonia Misch
 
-![Profile photo of Antonia Misch](images/misch_antonia.jpg)
+![Profile photo of ](images/misch_antonia.jpg)
 
 Researcher
 

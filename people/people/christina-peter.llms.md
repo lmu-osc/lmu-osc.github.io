@@ -1,6 +1,6 @@
 # Christina Peter
 
-![Profile photo of Christina Peter](images/peter_christina.jpg)
+![Profile photo of ](images/peter_christina.jpg)
 
 [christina.peter@aau.at](mailto:christina.peter@aau.at)
 

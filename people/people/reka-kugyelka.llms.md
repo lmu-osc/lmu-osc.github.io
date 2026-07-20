@@ -1,6 +1,6 @@
 # Reka Kugyelka
 
-![Profile photo of Reka Kugyelka](images/kugyelka_reka.jpg)
+![Profile photo of ](images/kugyelka_reka.jpg)
 
 Researcher
 

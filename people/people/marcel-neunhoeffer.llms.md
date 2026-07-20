@@ -1,6 +1,6 @@
 # Marcel Neunhoeffer
 
-![Profile photo of Marcel Neunhoeffer](images/neunhoeffer_marcel.jpg)
+![Profile photo of ](images/neunhoeffer_marcel.jpg)
 
 Researcher
 

@@ -1,6 +1,6 @@
 # Enrico Schulz
 
-![Profile photo of Enrico Schulz](images/schulz_enrico.jpg)
+![Profile photo of ](images/schulz_enrico.jpg)
 
 Researcher
 

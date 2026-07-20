@@ -1,6 +1,6 @@
 # Laura Goetz
 
-![Profile photo of Laura Goetz](images/goetz_laura.jpg)
+![Profile photo of ](images/goetz_laura.jpg)
 
 M.Sc. Student
 

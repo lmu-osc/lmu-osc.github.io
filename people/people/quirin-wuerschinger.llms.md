@@ -1,6 +1,6 @@
 # Quirin Würschinger
 
-![Profile photo of Quirin Würschinger](images/wuerschinger_quirin.png)
+![Profile photo of ](images/wuerschinger_quirin.png)
 
 Researcher
 

@@ -1,6 +1,6 @@
 # Hans-Joachim Anders
 
-![Profile photo of Hans-Joachim Anders](images/anders_hans-joachim.jpg)
+![Profile photo of ](images/anders_hans-joachim.jpg)
 
 Head of Department
 

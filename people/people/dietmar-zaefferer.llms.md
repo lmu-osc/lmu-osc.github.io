@@ -1,6 +1,6 @@
 # Dietmar Zaefferer
 
-![Profile photo of Dietmar Zaefferer](images/zaefferer_dietmar.JPG)
+![Profile photo of ](images/zaefferer_dietmar.JPG)
 
 Professor Emeritus
 

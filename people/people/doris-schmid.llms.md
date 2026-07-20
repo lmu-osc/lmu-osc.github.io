@@ -1,6 +1,6 @@
 # Doris Schmid
 
-![Profile photo of Doris Schmid](images/doris_schmid.png)
+![Profile photo of ](images/doris_schmid.png)
 
 Researcher at Department of Psychology- Clinical Neuropsychology
 

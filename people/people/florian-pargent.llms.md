@@ -1,6 +1,6 @@
 # Florian Pargent
 
-![Profile photo of Florian Pargent](images/pargent_florian.png)
+![Profile photo of ](images/pargent_florian.png)
 
 Researcher
 

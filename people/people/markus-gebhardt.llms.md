@@ -1,6 +1,6 @@
 # Markus Gebhardt
 
-![Profile photo of Markus Gebhardt](images/gebhardt_markus.jpeg)
+![Profile photo of ](images/gebhardt_markus.jpeg)
 
 Chair
 

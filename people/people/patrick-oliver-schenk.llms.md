@@ -1,6 +1,6 @@
 # Patrick Oliver Schenk
 
-![Profile photo of Patrick Oliver Schenk](images/default.svg)
+![Profile photo of ](images/default.svg)
 
 Ph.D. Candidate
 

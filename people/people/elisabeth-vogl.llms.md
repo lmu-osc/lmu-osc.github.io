@@ -1,6 +1,6 @@
 # Elisabeth Vogl
 
-![Profile photo of Elisabeth Vogl](images/vogl_elisabeth.jpeg)
+![Profile photo of ](images/vogl_elisabeth.jpeg)
 
 Researcher
 

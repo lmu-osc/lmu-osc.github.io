@@ -1,6 +1,6 @@
 # Claus Belka
 
-![Profile photo of Claus Belka](images/belka_claus.jpg)
+![Profile photo of ](images/belka_claus.jpg)
 
 Head of Department
 

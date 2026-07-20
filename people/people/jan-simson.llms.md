@@ -1,6 +1,6 @@
 # Jan Simson
 
-![Profile photo of Jan Simson](images/simson_jan.jpg)
+![Profile photo of ](images/simson_jan.jpg)
 
 Ph.D. Candidate
 

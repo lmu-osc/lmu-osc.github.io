@@ -1,6 +1,6 @@
 # Mario Gollwitzer
 
-![Profile photo of Mario Gollwitzer](images/gollwitzer_mario.jpg)
+![Profile photo of ](images/gollwitzer_mario.jpg)
 
 Head of Department
 

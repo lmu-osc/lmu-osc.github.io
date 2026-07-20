@@ -1,6 +1,6 @@
 # Marko Mijic
 
-![Profile photo of Marko Mijic](images/mijic_marko.jpg)
+![Profile photo of ](images/mijic_marko.jpg)
 
 Researcher
 

@@ -1,6 +1,6 @@
 # Balthasar Schachtner
 
-![Profile photo of Balthasar Schachtner](images/schachtner_balthasar.jpg)
+![Profile photo of ](images/schachtner_balthasar.jpg)
 
 Researcher
 

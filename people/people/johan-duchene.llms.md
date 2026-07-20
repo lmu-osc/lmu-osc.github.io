@@ -1,6 +1,6 @@
 # Johan Duchêne
 
-![Profile photo of Johan Duchêne](images/duchene_johan.png)
+![Profile photo of ](images/duchene_johan.png)
 
 Researcher
 

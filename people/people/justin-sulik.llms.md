@@ -1,6 +1,6 @@
 # Justin Sulik
 
-![Profile photo of Justin Sulik](images/sulik_justin.jpg)
+![Profile photo of ](images/sulik_justin.jpg)
 
 Researcher
 

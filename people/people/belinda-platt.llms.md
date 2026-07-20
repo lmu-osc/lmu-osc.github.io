@@ -1,6 +1,6 @@
 # Belinda Platt
 
-![Profile photo of Belinda Platt](images/platt_belinda.jpg)
+![Profile photo of ](images/platt_belinda.jpg)
 
 Researcher
 

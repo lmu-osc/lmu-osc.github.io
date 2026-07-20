@@ -1,6 +1,6 @@
 # Josef Brüderl
 
-![Profile photo of Josef Brüderl](images/bruederl_josef.jpg)
+![Profile photo of ](images/bruederl_josef.jpg)
 
 Chair
 

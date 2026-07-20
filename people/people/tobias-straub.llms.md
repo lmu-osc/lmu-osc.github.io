@@ -1,6 +1,6 @@
 # Tobias Straub
 
-![Profile photo of Tobias Straub](images/straub_tobias.jpg)
+![Profile photo of ](images/straub_tobias.jpg)
 
 Head of the Bioinformatics Core Facility of the Biomedical Center
 

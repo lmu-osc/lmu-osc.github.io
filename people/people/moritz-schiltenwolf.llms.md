@@ -1,6 +1,6 @@
 # Moritz Schiltenwolf
 
-![Profile photo of Moritz Schiltenwolf](images/schiltenwolf_moritz.png)
+![Profile photo of ](images/schiltenwolf_moritz.png)
 
 Researcher and Program Coordinator
 

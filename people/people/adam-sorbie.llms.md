@@ -1,6 +1,6 @@
 # Adam Sorbie
 
-![Profile photo of Adam Sorbie](images/sorbie_adam.jpg)
+![Profile photo of ](images/sorbie_adam.jpg)
 
 Researcher
 

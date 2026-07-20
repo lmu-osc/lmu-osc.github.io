@@ -1,6 +1,6 @@
 # Maria Matveev
 
-![Profile photo of Maria Matveev](images/matveev_maria.jpg)
+![Profile photo of ](images/matveev_maria.jpg)
 
 Ph.D. Candidate
 

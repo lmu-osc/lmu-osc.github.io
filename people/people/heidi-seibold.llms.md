@@ -1,6 +1,6 @@
 # Heidi Seibold
 
-![Profile photo of Heidi Seibold](images/seibold_heidi.jpg)
+![Profile photo of ](images/seibold_heidi.jpg)
 
 [heidi@seibold.co](mailto:heidi@seibold.co)
 

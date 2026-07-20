@@ -1,6 +1,6 @@
 # Lutz Heil
 
-![Profile photo of Lutz Heil](images/default.svg)
+![Profile photo of ](images/default.svg)
 
 Research Assistant - Original Website Content Creator
 

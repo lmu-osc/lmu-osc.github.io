@@ -1,6 +1,6 @@
 # Leonhard Schramm
 
-![Profile photo of Leonhard Schramm](images/schramm_leonhard.jpg)
+![Profile photo of ](images/schramm_leonhard.jpg)
 
 Research Assistant - Members Onboarding, Guidelines Creator
 

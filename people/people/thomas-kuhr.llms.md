@@ -1,6 +1,6 @@
 # Thomas Kuhr
 
-![Profile photo of Thomas Kuhr](images/kuhr_thomas.jpg)
+![Profile photo of ](images/kuhr_thomas.jpg)
 
 Research Group Leader
 

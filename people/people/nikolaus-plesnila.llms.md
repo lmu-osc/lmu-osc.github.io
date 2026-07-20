@@ -1,6 +1,6 @@
 # Nikolaus Plesnila
 
-![Profile photo of Nikolaus Plesnila](images/plesnila_nikolaus.jpg)
+![Profile photo of ](images/plesnila_nikolaus.jpg)
 
 Professor of Experimental Stroke Research (OSC Speaker)
 

@@ -1,8 +1,8 @@
 # Tejaswini Sharma
 
-![Profile photo of Tejaswini Sharma](images/tejaswini-sharma_25-09-26_164-web.jpg)
+![Profile photo of ](images/tejaswini-sharma_25-09-26_164-web.jpg)
 
-Research Assistant - Training Development
+M.Sc. Student
 
 Faculty of Psychology & Education
 

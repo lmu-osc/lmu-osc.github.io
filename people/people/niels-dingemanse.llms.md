@@ -1,6 +1,6 @@
 # Niels Dingemanse
 
-![Profile photo of Niels Dingemanse](images/dingemanse_niels.jpg)
+![Profile photo of ](images/dingemanse_niels.jpg)
 
 Chair
 

@@ -1,6 +1,6 @@
 # Riya Lamichhane
 
-![Profile photo of Riya Lamichhane](images/default.svg)
+![Profile photo of ](images/default.svg)
 
 Research Assistant - Software Development
 

@@ -1,6 +1,6 @@
 # Anne-Kathrin Kleine
 
-![Profile photo of Anne-Kathrin Kleine](images/kleine_anne-kathrin.jpeg)
+![Profile photo of ](images/kleine_anne-kathrin.jpeg)
 
 Researcher
 

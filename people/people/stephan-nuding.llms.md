@@ -1,6 +1,6 @@
 # Stephan Nuding
 
-![Profile photo of Stephan Nuding](images/nuding_stephan.jpg)
+![Profile photo of ](images/nuding_stephan.jpg)
 
 Ph.D. Candidate
 

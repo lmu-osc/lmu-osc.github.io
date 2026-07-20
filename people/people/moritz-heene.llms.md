@@ -1,6 +1,6 @@
 # Moritz Heene
 
-![Profile photo of Moritz Heene](images/heene_moritz.jpg)
+![Profile photo of ](images/heene_moritz.jpg)
 
 Doctoral Training Program Director
 

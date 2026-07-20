@@ -1,6 +1,6 @@
 # Ralf Elsas
 
-![Profile photo of Ralf Elsas](images/elsas_ralf.jpg)
+![Profile photo of ](images/elsas_ralf.jpg)
 
 Director of Institute
 

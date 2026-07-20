@@ -1,6 +1,6 @@
 # Gracia Prüm
 
-![Profile photo of Gracia Prüm](images/pruem_gracia.jpg)
+![Profile photo of ](images/pruem_gracia.jpg)
 
 Research Assistant - Public outreach, Event Logistics
 

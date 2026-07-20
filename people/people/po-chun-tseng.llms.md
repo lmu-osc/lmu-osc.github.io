@@ -1,6 +1,6 @@
 # Po-Chun Tseng
 
-![Profile photo of Po-Chun Tseng](images/tseng_po-chun.jpg)
+![Profile photo of ](images/tseng_po-chun.jpg)
 
 Ph.D. Candidate
 

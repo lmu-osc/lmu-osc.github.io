@@ -1,6 +1,6 @@
 # Joachim Winter
 
-![Profile photo of Joachim Winter](images/winter_joachim.jpg)
+![Profile photo of ](images/winter_joachim.jpg)
 
 Chair
 

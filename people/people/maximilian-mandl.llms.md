@@ -1,6 +1,6 @@
 # Maximilian Mandl
 
-![Profile photo of Maximilian Mandl](images/mandl_maximilian.jpg)
+![Profile photo of ](images/mandl_maximilian.jpg)
 
 Ph.D. Candidate
 

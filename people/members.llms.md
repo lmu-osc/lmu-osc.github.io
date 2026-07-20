@@ -1,6 +1,6 @@
 # Members
 
-Our 117 members actively support the goals of the OSC and contribute to our activities such as training, community building, meta-research, and liaison with stakeholders. [Join us](../about/join-us.llms.md) .
+Our 120 members actively support the goals of the OSC and contribute to our activities such as training, community building, meta-research, and liaison with stakeholders. [Join us](../about/join-us.llms.md) .
 
 ## LMU Members
 
@@ -396,9 +396,9 @@ Math, Informatics & Stats
 
 [](https://orcid.org/0000-0002-9218-987X)
 
-![Profile of Cynthia A. Huang](people/images/cynthia-huang.jpg)
+![Profile of Cynthia Huang](people/images/cynthia-huang.jpg)
 
-Cynthia A. Huang
+Cynthia Huang
 
 Dr.
 
@@ -1502,7 +1502,7 @@ Faculty: Math, Informatics & Stats
 
 [View Profile](../people/people/sabine-hoffmann.llms.md)
 
-![Profile of Cynthia A. Huang](people/images/cynthia-huang.jpg) Cynthia A. Huang
+![Profile of Cynthia Huang](people/images/cynthia-huang.jpg) Cynthia Huang
 
 [](https://orcid.org/0000-0002-9218-987X)
 

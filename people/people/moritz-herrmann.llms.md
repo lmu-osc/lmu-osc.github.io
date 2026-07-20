@@ -1,6 +1,6 @@
 # Moritz Herrmann
 
-![Profile photo of Moritz Herrmann](images/herrmann_moritz.jpg)
+![Profile photo of ](images/herrmann_moritz.jpg)
 
 Coordinator
 

@@ -1,6 +1,6 @@
 # Giacomo De Nicola
 
-![Profile photo of Giacomo De Nicola](images/de_nicola_giacomo.png)
+![Profile photo of ](images/de_nicola_giacomo.png)
 
 Ph.D. Candidate
 

@@ -1,6 +1,6 @@
 # Carsten Schwemmer
 
-![Profile photo of Carsten Schwemmer](images/schwemmer_carsten.jpg)
+![Profile photo of ](images/schwemmer_carsten.jpg)
 
 Chair
 

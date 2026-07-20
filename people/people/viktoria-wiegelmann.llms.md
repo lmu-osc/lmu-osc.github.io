@@ -1,6 +1,6 @@
 # Viktoria Wiegelmann
 
-![Profile photo of Viktoria Wiegelmann](images/wiegelmann_viktoria.jpeg)
+![Profile photo of ](images/wiegelmann_viktoria.jpeg)
 
 B.Sc. Student
 

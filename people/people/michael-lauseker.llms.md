@@ -1,6 +1,6 @@
 # Michael Lauseker
 
-![Profile photo of Michael Lauseker](images/lauseker_michael.jpg)
+![Profile photo of ](images/lauseker_michael.jpg)
 
 Researcher
 

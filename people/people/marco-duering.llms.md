@@ -1,6 +1,6 @@
 # Marco Düring
 
-![Profile photo of Marco Düring](images/duering_marco.jpg)
+![Profile photo of ](images/duering_marco.jpg)
 
 Research Group Leader
 

@@ -1,6 +1,6 @@
 # Sabine Hoffmann
 
-![Profile photo of Sabine Hoffmann](images/hoffmann_sabine.jpg)
+![Profile photo of ](images/hoffmann_sabine.jpg)
 
 Head of the Statistical Consulting Laboratory StaBLab
 

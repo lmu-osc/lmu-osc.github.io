@@ -1,6 +1,6 @@
 # Maximilian Frank
 
-![Profile photo of Maximilian Frank](images/frank_maximilian.jpg)
+![Profile photo of ](images/frank_maximilian.jpg)
 
 Strategy Advisor
 

@@ -1,6 +1,6 @@
 # Andreas Beyerlein
 
-![Profile photo of Andreas Beyerlein](images/beyerlein_andreas.jpg)
+![Profile photo of ](images/beyerlein_andreas.jpg)
 
 [andreas.beyerlein@tum.de](mailto:andreas.beyerlein@tum.de)
 

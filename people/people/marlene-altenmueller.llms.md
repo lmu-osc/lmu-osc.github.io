@@ -1,6 +1,6 @@
 # Marlene Altenmüller
 
-![Profile photo of Marlene Altenmüller](images/altenmueller_marlene.jpg)
+![Profile photo of ](images/altenmueller_marlene.jpg)
 
 Researcher
 

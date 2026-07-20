@@ -1,6 +1,6 @@
 # Giovanni Picogna
 
-![Profile photo of Giovanni Picogna](images/picogna_giovanni.jpg)
+![Profile photo of ](images/picogna_giovanni.jpg)
 
 Researcher
 

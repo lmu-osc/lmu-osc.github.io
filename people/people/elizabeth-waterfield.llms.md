@@ -1,6 +1,6 @@
 # Elizabeth Waterfield
 
-![Profile photo of Elizabeth Waterfield](images/waterfield_elizabeth.png)
+![Profile photo of ](images/waterfield_elizabeth.png)
 
 Research Assistant - Training Development , Event Logistics & Public Outreach
 

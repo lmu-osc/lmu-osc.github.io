@@ -1,6 +1,6 @@
 # Frank Fischer
 
-![Profile photo of Frank Fischer](images/fischer_frank.jpg)
+![Profile photo of ](images/fischer_frank.jpg)
 
 Director of the Munich Center of the Learning Sciences
 

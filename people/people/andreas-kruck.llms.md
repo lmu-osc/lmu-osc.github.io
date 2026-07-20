@@ -1,6 +1,6 @@
 # Andreas Kruck
 
-![Profile photo of Andreas Kruck](images/kruck_andreas.jpeg)
+![Profile photo of ](images/kruck_andreas.jpeg)
 
 Researcher
 

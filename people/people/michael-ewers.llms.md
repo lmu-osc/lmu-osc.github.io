@@ -1,6 +1,6 @@
 # Michael Ewers
 
-![Profile photo of Michael Ewers](images/ewers_michael.jpg)
+![Profile photo of ](images/ewers_michael.jpg)
 
 Research Group Leader
 

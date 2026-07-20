@@ -1,6 +1,6 @@
 # Renata Topinkova
 
-![Profile photo of Renata Topinkova](images/topinkova_renata.jpg)
+![Profile photo of ](images/topinkova_renata.jpg)
 
 Researcher
 

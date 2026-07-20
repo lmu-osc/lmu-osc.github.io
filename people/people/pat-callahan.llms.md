@@ -1,6 +1,6 @@
 # Pat Callahan
 
-![Profile photo of Pat Callahan](images/default.svg)
+![Profile photo of ](images/default.svg)
 
 Software Developer & Research Support
 
@@ -8,7 +8,7 @@ Software Developer & Research Support
 
 [Personal Website](https://neuroshepherd.github.io/)
 
-[](https://github.com/NeuroShepherd) [](https://orcid.org/0000-0003-1769-7580)
+[](https://orcid.org/0000-0003-1769-7580) [](https://github.com/NeuroShepherd)
 
 ## Mission Statement
 

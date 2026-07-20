@@ -1,6 +1,6 @@
 # Matthias Aßenmacher
 
-![Profile photo of Matthias Aßenmacher](images/assenmacher_matthias.png)
+![Profile photo of ](images/assenmacher_matthias.png)
 
 Researcher
 

@@ -1,6 +1,6 @@
 # Nikola Ebenbeck
 
-![Profile photo of Nikola Ebenbeck](images/ebenbeck_nikola.jpg)
+![Profile photo of ](images/ebenbeck_nikola.jpg)
 
 Researcher
 

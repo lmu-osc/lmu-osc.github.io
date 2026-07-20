@@ -1,6 +1,6 @@
 # Imai Taisuke
 
-![Profile photo of Imai Taisuke](images/default.svg)
+![Profile photo of ](images/default.svg)
 
 Researcher
 

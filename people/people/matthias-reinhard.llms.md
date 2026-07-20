@@ -1,6 +1,6 @@
 # Matthias Reinhard
 
-![Profile photo of Matthias Reinhard](images/reinhard_matthias.jpg)
+![Profile photo of ](images/reinhard_matthias.jpg)
 
 Researcher
 

@@ -1,6 +1,6 @@
 # Eckhard Wolf
 
-![Profile photo of Eckhard Wolf](images/wolf_eckhard.jpg)
+![Profile photo of ](images/wolf_eckhard.jpg)
 
 Director of Institute
 
