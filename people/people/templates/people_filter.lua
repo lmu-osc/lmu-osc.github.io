@@ -1,3 +1,33 @@
+-- Validate that required fields are present and non-empty.
+-- Returns a list of error messages (empty list means no errors).
+local function validate_required_fields(meta)
+  local errors = pandoc.List({})
+
+  -- Validate family-names
+  local family_names = meta["family-names"]
+  if family_names == nil then
+    table.insert(errors, "Missing required field: 'family-names'")
+  else
+    local fn_str = pandoc.utils.stringify(family_names)
+    if fn_str == "" or fn_str:match("^%s*$") then
+      table.insert(errors, "'family-names' must not be empty")
+    end
+  end
+
+  -- Validate given-names
+  local given_names = meta["given-names"]
+  if given_names == nil then
+    table.insert(errors, "Missing required field: 'given-names'")
+  else
+    local gn_str = pandoc.utils.stringify(given_names)
+    if gn_str == "" or gn_str:match("^%s*$") then
+      table.insert(errors, "'given-names' must not be empty")
+    end
+  end
+
+  return errors
+end
+
 local function stringify(value)
   if value == nil then
     return ""
@@ -248,6 +278,16 @@ local function transform_social_media(meta)
 end
 
 function Meta(meta)
+  -- Validate required fields before any processing
+  local validation_errors = validate_required_fields(meta)
+  if #validation_errors > 0 then
+    local file_info = ""
+    if quarto and quarto.doc then
+      file_info = " in " .. tostring(quarto.doc.input_file)
+    end
+    error("People YAML validation failed" .. file_info .. ":\n  " .. table.concat(validation_errors, "\n  "))
+  end
+
   local position, faculty, strip_faculty_label = derive_position_and_faculty(meta)
   meta.position = pandoc.MetaString(position)
   meta.faculty = pandoc.MetaString(faculty)
