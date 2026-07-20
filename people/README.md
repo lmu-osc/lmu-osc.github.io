@@ -65,7 +65,7 @@ In other words, each person file has two responsibilities at once:
 
 Most of the useful information for listings lives in the YAML front matter. Important fields include:
 
-- `title`, `academic_title`, `name`, `first_name`, and `surname` for display and sorting.
+- `title`, `academic_title`, `given-names`, `family-names` for display and sorting.
 - `memberships`, which determines where a person appears across the different people pages.
 - `photo`, `email`, `links`, and `social_media` for profile and card display.
 - `personal`, which is the short preview text used on some listing cards.

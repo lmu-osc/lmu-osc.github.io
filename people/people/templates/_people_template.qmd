@@ -1,9 +1,17 @@
 ---
 # Member parameters
-title: Complete title (academic title + name) which appears at the top of the profile page
+title: Complete title (academic title + full name) which appears at the top of the profile page
 academic_title: Complete academic title (e.g. Dr., Prof Dr., PhD, MSc.)
-family-names: Last name (field used for sorting people alphabetically!)
-given-names: First name(s)
+
+# Name fields — these replace the old single `name` + `surname` + `first_name` fields.
+# The full display name is automatically constructed from given-names + family-names.
+# family-names is used for alphabetical sorting across all listing pages.
+
+family-names: Family name / surname (used for sorting people alphabetically!)
+given-names: Given name(s) / first name(s)
+
+# No separate "name" or "surname" or "first_name" fields should be used.
+
 categories:
   - Name of Faculty. This appears in the "Faculty" sidebar for Fellows and Members
 
