@@ -10,7 +10,7 @@ listing:
     contents: 
       - people
     template: listings/active-fellow-listing.ejs
-    sort: "surname asc"
+    sort: "family-names asc"
     categories: unnumbered
     page-size: 999
 
@@ -18,7 +18,7 @@ listing:
     contents: 
       - people
     template: listings/alumni-fellow-listing.ejs
-    sort: "surname asc"
+    sort: "family-names asc"
 
 ---
 OSC Fellows are early career researchers who do not have a PhD degree and who are (co-)leading grassroots initiatives or (co-)deliver training on open research. We are grateful for their valuable contributions! [Become a Fellow](/about/join-us.qmd) <i class="bi bi-box-arrow-up-right"></i>.

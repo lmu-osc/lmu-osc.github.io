@@ -7,14 +7,14 @@ listing:
     template: listings/active-staff-listing.ejs
     sort:
       - "display_weight_staff asc"
-      - "surname asc"
+      - "family-names asc"
 
   - id: alumni-staff
     contents: 
       - people
     template: listings/alumni-staff-listing.ejs
     sort:
-      - "surname asc"
+      - "family-names asc"
 
 
 ---

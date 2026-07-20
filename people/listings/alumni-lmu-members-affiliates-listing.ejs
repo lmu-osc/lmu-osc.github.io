@@ -11,6 +11,7 @@ const alumnaeItems = (items || []).filter((item) => {
   const memberships = Array.isArray(item.memberships) ? item.memberships : [];
   return memberships.some(isAlumniMemberAffiliate);
 });
+const personName = (i) => i['given-names'] && i['family-names'] ? i['given-names'] + ' ' + i['family-names'] : '';
 %>
 
 <ul>
@@ -18,7 +19,7 @@ const alumnaeItems = (items || []).filter((item) => {
 <%
 const memberships = Array.isArray(item.memberships) ? item.memberships : [];
 const alumniMemberships = memberships.filter(isAlumniMemberAffiliate);
-const personLabel = [item.academic_title, item.name].filter(Boolean).join(' ');
+const personLabel = [item.academic_title, personName(item)].filter(Boolean).join(' ');
 %>
 
 <% if (alumniMemberships.length === 0) { %>

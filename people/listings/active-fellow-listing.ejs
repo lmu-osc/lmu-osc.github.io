@@ -8,6 +8,7 @@ const activeFellowItems = (items || []).filter((item) => {
     return ['fellow'].includes(membership.type) && membership.status === 'active';
   });
 });
+const personName = (i) => i['given-names'] && i['family-names'] ? i['given-names'] + ' ' + i['family-names'] : '';
 %>
 
 <div class="container py-4">
@@ -36,7 +37,7 @@ const activeFellowItems = (items || []).filter((item) => {
 <img src="people/<%= item.photo || '/images/default.svg' %>" alt="Profile" class="profile-image">
 </a>
 <div class="card-body flex-column text-center">
-<a href="<%= item.path %>" class="card-title"><%= item.name %></a>
+<a href="<%= item.path %>" class="card-title"><%= personName(item) %></a>
 <% if (fellowPosition && typeof fellowPosition === 'string' && fellowPosition !== 'NA') { %>
 <div class="card-subtitle mt-auto text-muted"><%= fellowPosition %></div>
 <% } %>

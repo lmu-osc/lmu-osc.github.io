@@ -11,7 +11,7 @@ listing:
     contents: 
       - people
     template: listings/active-lmu-members-listing.ejs
-    sort: "surname asc"
+    sort: "family-names asc"
     categories: unnumbered
     page-size: 999
 
@@ -19,7 +19,7 @@ listing:
     contents: 
       - people
     template: listings/active-affiliate-listing.ejs
-    sort: "surname asc"
+    sort: "family-names asc"
     categories: unnumbered
     page-size: 999
 
@@ -27,10 +27,12 @@ listing:
     contents: 
       - people
     template: listings/alumni-lmu-members-affiliates-listing.ejs
-    sort: "surname asc"
+    sort: "family-names asc"
 anchor-sections: false
 
-
+execute: 
+  cache: false
+  freeze: false
 ---
 
 ```{r warning=FALSE, message=FALSE, echo=FALSE}
@@ -41,12 +43,15 @@ qmd_files <- dir("people", pattern = "\\.qmd$", full.names = TRUE)
 active_members_count <- sum(
   sapply(qmd_files, function(path) {
     memberships <- yaml::read_yaml(path)[["memberships"]]
-    if (is.null(memberships)) return(0)
+    if (is.null(memberships)) {
+      return(0)
+    }
     sum(vapply(
       memberships,
       function(membership) {
         as.integer(
-          membership[["type"]] %in% member_type &&
+          membership[["type"]] %in%
+            member_type &&
             membership[["status"]] == member_status
         )
       },
