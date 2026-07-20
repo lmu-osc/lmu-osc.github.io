@@ -4,9 +4,9 @@ The interdisciplinary LMU Open Science Center (OSC) promotes and fosters open re
   
 The LMU Open Science Center was supported by LMUexcellent, funded by the Federal Ministry of Education and Research (BMBF) and the Free State of Bavaria under the Excellence Strategy of the Federal Government and the Länder. [View all our Funders ](../partners/funders.llms.md)
 
-# An error occurred.
+# Se produjo un error.
 
-Unable to execute JavaScript.
+No se puede ejecutar JavaScript.
 
 ![PDF thumbnail image for the 2023 Impact Report](../about/img/impact-report.png) [Download PDF ](https://zenodo.org/records/10285395)
 
