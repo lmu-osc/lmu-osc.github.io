@@ -1,0 +1,65 @@
+---
+# Member parameters
+title: Mia Grünewald
+academic_title: MA.
+
+# Name fields — these replace the old single `name` + `surname` + `first_name` fields.
+# The full display name is automatically constructed from given-names + family-names.
+# family-names is used for alphabetical sorting across all listing pages.
+
+family-names: Grünewald
+given-names: Mia
+
+# No separate "name" or "surname" or "first_name" fields should be used.
+
+categories:
+  - Social Sciences
+
+# There is no limit to the number of memberships a person can have. All memberships must have a type, status, and start year.
+# See documentation for more details on the different types of memberships and their status options.
+memberships:
+  - type: fellow
+    status: active
+    start: 2026
+    position: Ph.D. Candidate
+    faculty: Social Sciences
+
+# if desired by the member, add a photo to the people/people/images folder and link to it here
+photo: "images/mia-gruenewald.jpg"
+email: mia.gruenewald@ifkw.lmu.de
+personal: |
+  Ph.D. Candidate at Department of Media and Communication, Research Unit Journalism Research (Professor Thomas Hanitzsch)
+
+# certain keywords for the label are recognized and the output is sorted in this priority: LMU Profile, Professional Profile, Personal Website, and Professional Website. see documentation for details on these labels. other links appear in the order they are listed in the YAML file.
+links:
+  - label: "LMU Profile"
+    url: "https://www.sw.lmu.de/ifkw/en/department/people-contacts-and-organization/people-at-the-ifkw/contact-page/mia-gruenewald-e038f427.html"
+
+# Social media links - variable number
+social_media:
+  ORCID: "https://orcid.org/0009-0003-5516-511X"
+
+# Mission statement paragraphs - variable number
+mission_statement: |
+  I am a research associate and PhD student at the Journalism Research Unit at the Department of Media and Communication. My dissertation project focuses on the image of journalists. As one of two data managers of the [Worlds of Journalism Study](https://worldsofjournalism.org/), I contribute to implementing open science practices in a global large-scale collaborative research project. I consider it particularly important to teach open science principles to students and, through interdisciplinary exchange, to make scientific knowledge more accessible both within and beyond the scientific community.
+
+# Research interests - variable number
+# research_interests:
+#   - "Open Science"
+
+# Publications - variable number
+# publications:
+#   - year: 2025
+#     title: Paper title
+#     authors: List of authors, likely in the format "LastName Initials, LastName Initials, ..."
+#     journal: Journal name
+#     doi_url: DOI link to the publication
+
+
+# these must be included always.
+template: templates/people-template.html
+filters: 
+    - templates/people_filter.lua
+---
+
+<!-- additional content **can** be included here, and appears after the Mission Statement but before the Research Interests. Any content that Quarto can render can be included here, namely R/Python/Julia code chunks, Markdown formatting, more HTML, etc. Main reasons to use this though: code blocks, and to include files. -->
