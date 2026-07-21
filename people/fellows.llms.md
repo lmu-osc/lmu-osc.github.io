@@ -30,6 +30,16 @@ M.Sc. Student
 
 Medicine, Psychology & Education
 
+[](https://orcid.org/0009-0003-5516-511X)
+
+[![Profile](people/images/mia-gruenewald.jpg)](../people/people/mia-gruenewald.llms.md)
+
+[Mia Grünewald](../people/people/mia-gruenewald.llms.md)
+
+Ph.D. Candidate
+
+Social Sciences
+
 [](https://orcid.org/0000-0003-4509-6969)
 
 [![Profile](people/images/gupta_reema.jpg)](../people/people/reema-gupta.llms.md)
