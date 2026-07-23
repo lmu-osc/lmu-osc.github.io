@@ -34,11 +34,11 @@ A presentation on how to make data open to the public without revealing sensitiv
 
 Lecture
 
-[![](../images/data_anonymity.svg)]()
+[![](../images/data_anonymity.svg)](https://lmu-osc.github.io/data-anonymization/)
 
-### [*In Development*: Data Anonymity]()
+### [Data Anonymization](https://lmu-osc.github.io/data-anonymization/)
 
-Implementing and evaluating data anonymization techniques in R for safely sharing sensitive research data
+Implement and evaluate data anonymization techniques in R for safely sharing sensitive research data
 
 Self-Paced Tutorial
 
@@ -46,6 +46,6 @@ Self-Paced Tutorial
 
 ### [Generating Synthetic Data](https://lmu-osc.github.io/synthetic-data-tutorial/)
 
-Generating Synthetic Data in R and balancing utility and privacy-preserving data sharing
+Generate synthetic data in R, balancing utility and privacy-preserving data sharing
 
 Self-Paced Tutorial
