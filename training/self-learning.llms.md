@@ -40,8 +40,8 @@ From sharing **data** and **code** to **publishing articles**
 | Data Management | [Introduction to Open Data](../training/data-management/open-data.llms.md) | An introductory presentation on the what, why, and how of making research data open | Open Data |
 | Data Management | [FAIR Data Management](https://lmu-osc.github.io/FAIR-Data-Management/) | Take steps towards making your data FAIR: **F**indable, **A**ccessible, **I**nteroperable, **R**eusable | FAIR data, Data Management, Documentation |
 | Data Management | [Data Documentation & Validation in R](https://lmu-osc.github.io/data-documentation-validation-R/) | How to document, summarize, and validate your research data using R. | Documentation |
-| Data Management | *In Development*: Data Anonymity | Implementing and evaluating data anonymization techniques in R for safely sharing sensitive research data | Data Anonymity |
-| Data Management | [Generating Synthetic Data](https://lmu-osc.github.io/synthetic-data-tutorial/) | Generating Synthetic Data in R and balancing utility and privacy-preserving data sharing | Data Simulation, Data Anonymity |
+| Data Management | [Data Anonymization](https://lmu-osc.github.io/data-anonymization/) | Implement and evaluate data anonymization techniques in R for safely sharing sensitive research data | Data Anonymity |
+| Data Management | [Generating Synthetic Data](https://lmu-osc.github.io/synthetic-data-tutorial/) | Generate synthetic data in R, balancing utility and privacy-preserving data sharing | Data Simulation, Data Anonymity |
 | Principles | [Assessing Research Replicability](../training/principles/assessing-research-replicability.llms.md) | Lessons learned from replicating experiments in cancer biology | Replicability Crisis |
 | Principles | [Credible Science](../training/principles/credible-science.llms.md) | Learn the ins and outs of reliable, reproducible, and open research | Open Research Practices |
 | Principles | [Replicability Crisis](../training/principles/replicability-crisis.llms.md) | A presentation on the replication shortcomings of science and how researchers can improve | Replicability Crisis |
