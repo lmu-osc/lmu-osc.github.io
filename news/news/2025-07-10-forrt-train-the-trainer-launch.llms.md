@@ -18,13 +18,13 @@ A key strength of the program lies in its close partnership with the **Framework
 
 Over a three-year period, the program aims to train around 50 instructors, who will then go on to train students and researchers within their respective disciplines. The **curriculum** includes topics such as **methodological foundations of Open Science, computational reproducibility, tools for collaborative working, data management and data sharing**. In addition, the curriculum also includes crucial modules on **pedagogical skills in teaching about Open Science, such as basic didactic skills, activation tools for student-trainer interactions, leadership skills as well as modules on broader issues connected to teaching Open Science such as diversity, accessibility and cultural awareness.** It will be delivered through interactive flipped-classroom formats and as self-paced hands-on online materials. Participants will receive certification upon completion, ensuring academic recognition of their new skills. In this, the program aims to build sustainable capacity within departments and to create a multiplier effect, fostering systemic shifts toward transparency and openness.
 
-  
-*“We want to create a freely accessible program covering not only the know-how of open research Practices, but also to provide program participants with the pedagogical tools to confidently pass on their knowledge about Open Science to different audiences.”*  
+\
+*“We want to create a freely accessible program covering not only the know-how of open research Practices, but also to provide program participants with the pedagogical tools to confidently pass on their knowledge about Open Science to different audiences.”*\
 — Dr. Sarah von Grebmer zu Wolfsthurn, LMU OSC Train-the-Trainer Program Coordinator
 
-  
-*“At FORRT, we believe that equipping educators with both the tools and the values of Open Science is key to changing how research is taught and practiced. This collaboration with LMU is about more than building skills— it’s about cultivating a culture of transparency, inclusion, and better research and teaching practices across disciplines and borders.”*  
+\
+*“At FORRT, we believe that equipping educators with both the tools and the values of Open Science is key to changing how research is taught and practiced. This collaboration with LMU is about more than building skills— it’s about cultivating a culture of transparency, inclusion, and better research and teaching practices across disciplines and borders.”*\
 — Dr. Flavio Azevedo, Director of FORRT
 
-  
+\
 For any questions about the Train-the-Trainer program, please get in touch with the Train-the-Trainer program coordinator, Dr. Sarah von Grebmer zu Wolfsthurn ([s.grebmer@lmu.de](mailto:s.grebmer@lmu.de "Send email to: s.grebmer@lmu.de")).

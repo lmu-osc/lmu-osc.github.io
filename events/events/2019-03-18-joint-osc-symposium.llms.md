@@ -4,20 +4,20 @@ February 23, 2026
 
 #####  Date & Time
 
-18 Mar 2019  
+18 Mar 2019\
 9:00-10:40
 
 #####  Location
 
-online  
+online\
 
 #####  Format
 
-Online  
+Online\
 
 #####  Language
 
-English  
+English\
 en
 
 [ Materials](https://osf.io/pjthu/files/osfstorage)

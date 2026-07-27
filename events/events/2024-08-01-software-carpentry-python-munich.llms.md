@@ -2,26 +2,26 @@
 
 #####  Date & Time
 
-01 Aug 2024  
+01 Aug 2024\
 
 #####  Location
 
-LMU Biozentrum Martinsried  
+LMU Biozentrum Martinsried\
 Großhaderner Str. 2, 82152 Planegg-Martinsried
 
 #####  Format
 
-In-Person  
+In-Person\
 
 #####  Language
 
-English  
+English\
 
 [ Materials](https://lmu-osc.github.io/2024-08-01-LMU/)
 
-  
+\
 
-The workshop will cover the **Unix shell**, version control in **git**, and programming in **Python**.  
+The workshop will cover the **Unix shell**, version control in **git**, and programming in **Python**.\
 It is free and open to researchers, staff, and students.
 
 This workshop teaches c**ore computing skills** that will help you be **more productive and effective**. We will alternate short tutorials with hands-on practical exercises. Participants will be encouraged to help one another and to apply what they have learned to their own research problems.

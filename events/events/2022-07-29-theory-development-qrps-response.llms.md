@@ -2,23 +2,23 @@
 
 #####  Date & Time
 
-29 Jul 2022  
+29 Jul 2022\
 
 #####  Location
 
-  
+\
 
 #####  Format
 
-Online  
+Online\
 
 #####  Language
 
-English  
+English\
 
 [ Materials](https://doi.org/10.1177/1745691620966796)
 
-  
+\
 
 The Journal Club: “ReproducibiliTea” at LMU Munich continues with its ninth meeting to discuss an interesting paper on how better theory development could be an answer to current replicability problems. The organization team is happy to announce that the paper’s author, Prof. Dr. Chris Donkin, will give an introductory talk to this session and participate in the open discussion afterwards:
 
@@ -30,7 +30,7 @@ Participants can use the following **key questions** to prepare for the discussi
 
 You can find a short abstract for the introductory talk by Prof. Dr. Chris Donkin below:
 
-### Better theory development as a response to the prevalence of QRPs 
+### Better theory development as a response to the prevalence of QRPs\
 
 Concerns about so-called QRPs, and especially p-hacking, are typically based on concerns about false-positive statistical outcomes. However, the outcome of a statistical test is not equivalent to a scientific claim, and so elevated Type-I error rates do not speak directly to reduced replicability. We will explain why certain kinds of statistical analyses, including those forms of p-hacking that seem most egregious, will indeed lead to an inability to predict the outcome of future experiments. The problem, simply put, is that without sufficient scientific argument, any statistical analysis taken at face value is an ad hoc explanation, from which there is no good reason to expect to understand the world. We contrast such explanations with good theories and discuss what those are. Thinking about p-hacking from this perspective helps provide a way of deciding what kinds of analyses are good or bad, independent of whether they are p-hacked, ‘exploratory’, or ‘confirmatory’.
 

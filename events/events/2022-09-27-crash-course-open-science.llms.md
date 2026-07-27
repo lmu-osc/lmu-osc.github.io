@@ -2,23 +2,23 @@
 
 #####  Date & Time
 
-27 Sep - 29 Sep 2022  
+27 Sep - 29 Sep 2022\
 
 #####  Location
 
-Planegg-Martinsried, Munich  
+Planegg-Martinsried, Munich\
 
 #####  Format
 
-In-Person  
+In-Person\
 
 #####  Language
 
-English  
+English\
 
 [ Materials](https://osf.io/bvf3c/)
 
-  
+\
 
 Good scientific practice in empirical disciplines nowadays goes beyond the avoidance of bad practices, such as plagiarism or data fabrication: science is expected to be reproducible, funders and journals increasingly demand open data as a precondition for funding and publication, and the need for preregistration of studies expands beyond the medical sciences. More generally, open research refers to efforts to ensure that the research process is transparent, with equitable access for all to learn, understand, contextualize, build upon, or even assess or verify the research.
 
@@ -38,10 +38,10 @@ The three days crash course will consist of a series of lectures and workshops o
 
 [Download the full programme here (PDF)](assets/2022-09-27-crash-course-open-science-schedule.pdf)
 
-  
+\
 
-****Application process  ****
-LMU members from any scientific discipline can apply.  
+****Application process\****
+LMU members from any scientific discipline can apply.\
 Members of the Faculty of Biology, which is sponsoring this event, will be given up to 30 seats, and 10 seats will be reserved for any other LMU members or researchers in the Munich area.
 
 Applicants will be asked to provide a brief statement (max. 300 words) about their motivation and future or recently started research projects in which they would like to apply open and reproducible research practices. When relevant, the statement should address what particular challenges applicants encountered in their work which would be addressed by the crash course; what open research practices they already practice; if any other courses were attended; etc.

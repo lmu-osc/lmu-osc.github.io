@@ -2,23 +2,23 @@
 
 #####  Date & Time
 
-17 Nov 2022  
+17 Nov 2022\
 
 #####  Location
 
-Hybrid (Geschwister-Scholl-Platz 1, room M-001, Munich and via Zoom)  
+Hybrid (Geschwister-Scholl-Platz 1, room M-001, Munich and via Zoom)\
 
 #####  Format
 
-Hybrid  
+Hybrid\
 
 #####  Language
 
-English  
+English\
 
 [ Materials](https://osf.io/pef9u/)
 
-  
+\
 
 The Open Science Initiative Psychology (OSIP) and the LMU Open Science Center (OSC) are please to welcome PD Dr. Ulf Tölch to present an introduction to meta research on November 17, 2022 from 14:00 to 15:00.
 

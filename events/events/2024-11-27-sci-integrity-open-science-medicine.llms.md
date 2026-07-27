@@ -2,24 +2,24 @@
 
 #####  Date & Time
 
-27 Nov 2024  
+27 Nov 2024\
 
 #####  Location
 
-CAS LMU  
+CAS LMU\
 Seestraße 13, 80802 Munich
 
 #####  Format
 
-In-Person  
+In-Person\
 
 #####  Language
 
-English  
+English\
 
 [ Materials](https://osf.io/zqu46/)
 
-  
+\
 
  
 

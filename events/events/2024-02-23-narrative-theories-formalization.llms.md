@@ -2,24 +2,24 @@
 
 #####  Date & Time
 
-23 Feb 2024  
+23 Feb 2024\
 
 #####  Location
 
-[LMU Open Science Center (Giselastr.)  
+[LMU Open Science Center (Giselastr.)\
 Leopoldstraße 13, Room 3322, 80802 Munich](https://www.google.com/maps/place/Ludwig-Maximilian-Universit%C3%A4t+M%C3%BCnchen/@48.1559372,11.5833416,19.19z/data=!3m1!5s0x479e75bf863d5581:0x29d36540810c2590!4m6!3m5!1s0x479e75c07933e683:0x4851cac28ba68cb4!8m2!3d48.1558072!4d11.5829777!16s%2Fg%2F1hc2d61v7?entry=ttu&g_ep=EgoyMDI2MDUyMC4wIKXMDSoASAFQAw%3D%3D)
 
 #####  Format
 
-Hybrid  
+Hybrid\
 
 #####  Language
 
-English  
+English\
 
 [ Materials](https://osf.io/v593f)
 
-  
+\
 
 **Abstract: **There is growing consensus that psychology and other fields need to better specify their theories, and formalization offers a promising path to achieving that goal. I will briefly talk about the advantages of formal models over narrative ones, and present a few examples from my own lab in which such a formalization was attempted more or less successfully. However, the largest part of the workshop shall be reserved for participants working on formal versions of narrative theory paragraphs that they themselves pick and bring along. As this is likely to be a relatively new kind of challenge to most participants, and given that formalization can actually be fairly difficult, the overall objective is not to achieve perfect results, but rather to get people interested in this crucial type of work, and to help them overcome initial hesitations they may have to invest their valuable time and energy into it.
 

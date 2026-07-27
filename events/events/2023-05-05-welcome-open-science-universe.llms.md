@@ -2,21 +2,21 @@
 
 #####  Date & Time
 
-05 May 2023  
+05 May 2023\
 
 #####  Location
 
-Hybrid (Leopoldstraße 13, room 1301, Munich and via Zoom)  
+Hybrid (Leopoldstraße 13, room 1301, Munich and via Zoom)\
 
 #####  Format
 
-Hybrid  
+Hybrid\
 
 #####  Language
 
-English  
+English\
 
-  
+\
 
 The Journal Club: “ReproducibiliTea” at LMU Munich continues after a break with its 14th meeting, the first one for this semester. It will take place next Friday and consist of an introductory session to Open Science. Its purpose is to introduce new people to Open Science and our journal club, but also give an overview about the topic for those who are already familiar with it.
 

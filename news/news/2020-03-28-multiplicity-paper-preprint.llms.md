@@ -6,7 +6,7 @@ March 28, 2020
 
 Available from Meta-Arxiv, preprint DOI: [10.31222/osf.io/afb9p](https://doi.org/10.31222/osf.io/afb9p)
 
-This work was conducted by a multidisciplinary team uniting the managing director and two scientific board members of the Open Science Center of the LMU Munich. This collaboration results in a diverse list of authors from psychology, epidemiology, finance, hydroclimatology and statistics.*  *
+This work was conducted by a multidisciplinary team uniting the managing director and two scientific board members of the Open Science Center of the LMU Munich. This collaboration results in a diverse list of authors from psychology, epidemiology, finance, hydroclimatology and statistics.*\*
 
 ### Abstract:
 

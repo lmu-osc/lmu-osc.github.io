@@ -1,7 +1,7 @@
 ## LMU  Open Science Initiative in Statistics
 
-Founded in June 2021, the LMU Open Science Initiative in Statistics (OSIS) at the Department of Statistics supports the goals of the OSC and wants to take on a leading role in fostering good research practices and promoting open science. The department believes that statistics as a subject plays a major role in solving the reproducibility crisis and in working towards better, open research.  
-  
+Founded in June 2021, the LMU Open Science Initiative in Statistics (OSIS) at the Department of Statistics supports the goals of the OSC and wants to take on a leading role in fostering good research practices and promoting open science. The department believes that statistics as a subject plays a major role in solving the reproducibility crisis and in working towards better, open research.\
+\
 The Department of Statistics is involved in the development and application of statistical and machine learning methods. Statistical consulting and teaching are at the core of the department's activities.
 
 ![OSIS logo](images/osis.png)

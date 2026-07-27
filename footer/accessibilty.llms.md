@@ -34,10 +34,10 @@ List and explanation of the problems encountered when implementing the accessibi
 
 #### Explanation
 
-All LMU websites are currently undergoing a complete relaunch. It therefore no longer makes sense to revise the existing websites.  
+All LMU websites are currently undergoing a complete relaunch. It therefore no longer makes sense to revise the existing websites.\
 The deficiencies of the old website have been listed above.
 
-**Creation Date**: 09/22/2019  
+**Creation Date**: 09/22/2019\
 **Methodology**: Self-assessment
 
 #### Feedback Mechanism
@@ -46,10 +46,10 @@ As a user, you can inform us of any shortcomings in complying with accessibility
 
 ##### Contact Information
 
-Unit VI.5 Internet Services  
-Martiusstraße 4  
-80802 Munich  
-Mail: <it.internet@verwaltung.uni-muenchen.de>  
+Unit VI.5 Internet Services\
+Martiusstraße 4\
+80802 Munich\
+Mail: <it.internet@verwaltung.uni-muenchen.de>\
 Phone: +49 (0) 89 / 2180-9832
 
 #### Enforcement Procedure
@@ -58,11 +58,11 @@ If a request for contact remains unanswered in whole or in part within six weeks
 
 ##### Contact information of the agency responsible for the enforcement procedure
 
-Landesamt für Digitalisierung, Breitband und Vermessung Alexandrastraße 4  
-80538 Munich  
-Phone: +49 89 2129-1111  
-Fax: +49 89 2129-1113  
-Email:<service@geodaten.bayern.de>  
+Landesamt für Digitalisierung, Breitband und Vermessung Alexandrastraße 4\
+80538 Munich\
+Phone: +49 89 2129-1111\
+Fax: +49 89 2129-1113\
+Email:<service@geodaten.bayern.de>\
 <https://www.ldbv.bayern.de/service/kontakt/>
 
 ##### Other Help Services

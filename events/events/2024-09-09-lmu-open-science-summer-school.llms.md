@@ -2,23 +2,23 @@
 
 #####  Date & Time
 
-09 Sep - 13 Sep 2024  
+09 Sep - 13 Sep 2024\
 
 #####  Location
 
-Hybrid (Max Planck Digital Library in Laim)  
+Hybrid (Max Planck Digital Library in Laim)\
 
 #####  Format
 
-Hybrid  
+Hybrid\
 
 #####  Language
 
-English  
+English\
 
 [ Materials](https://osf.io/pxgsc/overview)
 
-  
+\
 
 The LMU & MPG Open Science Summer School 2024 is organized by the [LMU Open Science Center (OSC)](https://www.osc.uni-muenchen.de/index.html) and the [Max Planck Digital Library (MPDL)](https://www.mpdl.mpg.de/en/).
 

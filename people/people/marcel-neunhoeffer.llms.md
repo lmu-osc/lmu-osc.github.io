@@ -22,4 +22,4 @@ Open science is at the heart of any scientific endeavor, as the goal of science 
 
 In my research, I focus on balancing the seemingly contradictory goals of open science/open data and privacy protection, for example, through synthetic data with formal privacy guarantees.
 
-***  ***
+***\***

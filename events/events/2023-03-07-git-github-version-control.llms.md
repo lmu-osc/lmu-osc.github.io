@@ -2,23 +2,23 @@
 
 #####  Date & Time
 
-07 Mar 2023  
+07 Mar 2023\
 
 #####  Location
 
-  
+\
 
 #####  Format
 
-Online  
+Online\
 
 #####  Language
 
-English  
+English\
 
 [ Materials](https://github.com/MalikaIhle/Introduction-RStudio-Git-GitHub)
 
-  
+\
 
 Are you working within RStudio to wrangle and analyses your data?
 

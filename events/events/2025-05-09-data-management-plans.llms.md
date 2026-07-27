@@ -2,20 +2,20 @@
 
 #####  Date & Time
 
-09 May 2025  
+09 May 2025\
 14:00 CET
 
 #####  Location
 
-  
+\
 
 #####  Format
 
-Hybrid  
+Hybrid\
 
 #####  Language
 
-English  
+English\
 
 ## Event Details
 

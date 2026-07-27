@@ -2,24 +2,24 @@
 
 #####  Date & Time
 
-29 Jul 2024  
+29 Jul 2024\
 
 #####  Location
 
-Wikipedia Munich  
+Wikipedia Munich\
 Angertorstraße 3, 80469 Munich
 
 #####  Format
 
-In-Person  
+In-Person\
 
 #####  Language
 
-English  
+English\
 
-  
+\
 
-We will run some mini peer code review! Bring small pieces of your code along and discuss it with others over pastries!  
+We will run some mini peer code review! Bring small pieces of your code along and discuss it with others over pastries!\
 Any level and any programming language welcome!
 
 **Possible resources to prepare your session’s hack:**

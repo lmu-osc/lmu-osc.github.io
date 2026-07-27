@@ -4,19 +4,19 @@ March 13, 2026
 
 #####  Date & Time
 
-10 Jun - 25 Jul 2026  
+10 Jun - 25 Jul 2026\
 
 #####  Location
 
-Munich, Germany  
+Munich, Germany\
 
 #####  Format
 
-Hybrid  
+Hybrid\
 
 #####  Language
 
-English  
+English\
 en
 
 [ Register](https://events.digital-research.academy/event/131/registrations/82/)

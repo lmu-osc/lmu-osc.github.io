@@ -2,21 +2,21 @@
 
 #####  Date & Time
 
-06 Feb 2020  
+06 Feb 2020\
 
 #####  Location
 
-Richard-Wagner-Straße 10, D105  
+Richard-Wagner-Straße 10, D105\
 
 #####  Format
 
-In-Person  
+In-Person\
 
 #####  Language
 
-English  
+English\
 
-  
+\
 
 Statistical power is of central importance in assessing the reliability of science. Appropriate design of a replication study is key to tackling the replication crisis as many such studies are currently severely under-powered. The workshop will describe standard and more advanced methods to calculate the required sample size of a replication study taking into account the results of an original discovery study. Participants will learn how to use the R-package ReplicationSuccess. Prerequisites include basic R-knowledge and familiarity with concepts of statistical inference.
 

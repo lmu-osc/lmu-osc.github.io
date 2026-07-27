@@ -8,5 +8,5 @@ How was the programme of the LMU Open Research Hybrid Summer School 2023 put tog
 
 <https://open-science-future.zbw.eu/en/didactics-meets-openness/>
 
-  
+\
 <https://open-science-future.zbw.eu/didaktik-trifft-offenheit>/ (translated version)

@@ -1,7 +1,7 @@
 # About Us
 
-The interdisciplinary LMU Open Science Center (OSC) promotes and fosters open research practices at LMU Munich and beyond, supporting LMU’s strategic commitment to excellent, responsible, and internationally competitive research. In a global research environment where world-leading institutions are redefining standards of good research practice, the OSC ensures that LMU researchers are equipped to meet and actively shape these evolving standards.  
-  
+The interdisciplinary LMU Open Science Center (OSC) promotes and fosters open research practices at LMU Munich and beyond, supporting LMU’s strategic commitment to excellent, responsible, and internationally competitive research. In a global research environment where world-leading institutions are redefining standards of good research practice, the OSC ensures that LMU researchers are equipped to meet and actively shape these evolving standards.\
+\
 The LMU Open Science Center was supported by LMUexcellent, funded by the Federal Ministry of Education and Research (BMBF) and the Free State of Bavaria under the Excellence Strategy of the Federal Government and the Länder. [View all our Funders ](../partners/funders.llms.md)
 
 # An error occurred.

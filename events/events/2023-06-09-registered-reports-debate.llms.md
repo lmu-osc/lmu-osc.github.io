@@ -2,24 +2,24 @@
 
 #####  Date & Time
 
-09 Jun 2023  
+09 Jun 2023\
 
 #####  Location
 
-[LMU Open Science Center (Giselastr.)  
+[LMU Open Science Center (Giselastr.)\
 Leopoldstraße 13, Room 3322, 80802 Munich](https://www.google.com/maps/place/Ludwig-Maximilian-Universit%C3%A4t+M%C3%BCnchen/@48.1559372,11.5833416,19.19z/data=!3m1!5s0x479e75bf863d5581:0x29d36540810c2590!4m6!3m5!1s0x479e75c07933e683:0x4851cac28ba68cb4!8m2!3d48.1558072!4d11.5829777!16s%2Fg%2F1hc2d61v7?entry=ttu&g_ep=EgoyMDI2MDUyMC4wIKXMDSoASAFQAw%3D%3D)
 
 #####  Format
 
-Hybrid  
+Hybrid\
 
 #####  Language
 
-English  
+English\
 
 [ Materials](https://www.nature.com/articles/s41562-021-01193-7)
 
-  
+\
 
 The Journal Club: “ReproducibiliTea” at LMU Munich continues with its 17th meeting, the fifth one for this semester. It will take place this Friday and we will talk about the current Debates about Registered Reports. This week, we are very happy to host Gilad Feldman as our guest. He is an assistant professor at the University of Hong Kong and conducts research in the field of social psychology and decision making. Additionally he has taken special interest in the movement for improvement of psychological science to implement and promote open-science and meta-research. Together with him we will discuss the format of Registered Reports and its prospects as well as limitations. You can find the recommended article and a short abstract about the topic of the session below.
 

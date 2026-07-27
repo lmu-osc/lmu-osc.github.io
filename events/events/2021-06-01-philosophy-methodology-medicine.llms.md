@@ -2,21 +2,21 @@
 
 #####  Date & Time
 
-01 Jun - 03 Jun 2021  
+01 Jun - 03 Jun 2021\
 
 #####  Location
 
-Online  
+Online\
 
 #####  Format
 
-Online  
+Online\
 
 #####  Language
 
-English  
+English\
 
-  
+\
 
 We are incredibly excited to announce an interesting online conference by the Munich Center for Mathematical Philosophy (MCMP):
 

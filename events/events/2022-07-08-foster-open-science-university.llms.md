@@ -2,21 +2,21 @@
 
 #####  Date & Time
 
-08 Jul 2022  
+08 Jul 2022\
 
 #####  Location
 
-Hybrid (Room 3322 at Leopoldstraße 13, Munich or via Zoom)  
+Hybrid (Room 3322 at Leopoldstraße 13, Munich or via Zoom)\
 
 #####  Format
 
-Hybrid  
+Hybrid\
 
 #####  Language
 
-English  
+English\
 
-  
+\
 
 The Journal Club: “ReproducibiliTea” at LMU Munich continues with its seventh meeting to discuss how we can foster Open Science within our university. The organization team is happy to announce that Dr. Malika Ihle (LMU Munich) will start with an introduction to the topic (roughly 20-30min). We will then continue with an open discussion in which you can contribute your own thoughts and questions.
 

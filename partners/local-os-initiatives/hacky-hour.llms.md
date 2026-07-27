@@ -1,7 +1,7 @@
 ## Hacky  Hour
 
-Come along to talk about code, research tools, and open science in a social environment! We hold sessions on the last Monday of the month, in person at Wikipedia Munich, Angertorstraße 3, Munich, from 16:30 to 18:00. Each session has a theme. If you have a related problem, bring it along to work on it and get help or pointers! We will ensure that there is at least one knowledgeable person in the room, and a facilitator to keep things in check (and order pizza).  
-  
+Come along to talk about code, research tools, and open science in a social environment! We hold sessions on the last Monday of the month, in person at Wikipedia Munich, Angertorstraße 3, Munich, from 16:30 to 18:00. Each session has a theme. If you have a related problem, bring it along to work on it and get help or pointers! We will ensure that there is at least one knowledgeable person in the room, and a facilitator to keep things in check (and order pizza).\
+\
 **Typical Session Agenda:**
 
 - Brief round of introductions and description of the problems you’ll be working on during that session

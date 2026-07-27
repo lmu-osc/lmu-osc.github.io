@@ -2,20 +2,20 @@
 
 #####  Date & Time
 
-13 Jun 2025  
+13 Jun 2025\
 14:00 CET
 
 #####  Location
 
-  
+\
 
 #####  Format
 
-Hybrid  
+Hybrid\
 
 #####  Language
 
-English  
+English\
 
 [ Materials](https://osf.io/kyvut/files/e8tfz)
 

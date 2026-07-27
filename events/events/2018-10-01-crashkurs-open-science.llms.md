@@ -2,21 +2,21 @@
 
 #####  Date & Time
 
-01 Oct 2018  
+01 Oct 2018\
 
 #####  Location
 
-  
+\
 
 #####  Format
 
-In-Person  
+In-Person\
 
 #####  Language
 
-German  
+German\
 
-  
+\
 
 #### Instructors
 

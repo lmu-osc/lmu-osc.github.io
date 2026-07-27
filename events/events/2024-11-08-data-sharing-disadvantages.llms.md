@@ -2,20 +2,20 @@
 
 #####  Date & Time
 
-08 Nov 2025  
+08 Nov 2025\
 14:00 CET
 
 #####  Location
 
-  
+\
 
 #####  Format
 
-Hybrid  
+Hybrid\
 
 #####  Language
 
-English  
+English\
 
 ## Event Details
 

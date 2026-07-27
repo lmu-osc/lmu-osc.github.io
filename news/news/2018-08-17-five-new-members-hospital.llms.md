@@ -10,35 +10,35 @@ The number of individual members of the OSC is continuously increasing since its
 
 ![](../../people/people/images/belka_claus.jpg)
 
-**[Prof. Dr. Claus Belka](../../people/people/claus-belka.llms.md)**  
+**[Prof. Dr. Claus Belka](../../people/people/claus-belka.llms.md)**\
 Department of Radiation Oncology
 
 ------------------------------------------------------------------------
 
 ![](../../people/people/images/ingrisch_michael.jpg)
 
-**[Dr. Michael Ingrisch](../../people/people/michael-ingrisch.llms.md)**  
+**[Dr. Michael Ingrisch](../../people/people/michael-ingrisch.llms.md)**\
 Department of Radiology
 
 ------------------------------------------------------------------------
 
 ![](../../people/people/images/perneczky_robert.jpg)
 
-**[Prof. Dr. Robert Perneczky](../../people/people/robert-perneczky.llms.md)**  
+**[Prof. Dr. Robert Perneczky](../../people/people/robert-perneczky.llms.md)**\
 Department of Psychiatry and Psychotherapy
 
 ------------------------------------------------------------------------
 
 ![](../../people/people/images/schulz_enrico.jpg)
 
-**[Dr. Enrico Schulz](../../people/people/enrico-schulz.llms.md)**  
+**[Dr. Enrico Schulz](../../people/people/enrico-schulz.llms.md)**\
 Department of Neurology
 
 ------------------------------------------------------------------------
 
 ![](../../people/people/images/strube_wolfgang.jpg)
 
-**[Dr. Wolfgang Strube](../../people/people/wolfgang-strube.llms.md)**  
+**[Dr. Wolfgang Strube](../../people/people/wolfgang-strube.llms.md)**\
 Department of Psychiatry and Psychotherapy
 
 ------------------------------------------------------------------------

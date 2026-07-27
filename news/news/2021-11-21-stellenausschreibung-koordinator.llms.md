@@ -8,7 +8,7 @@ Am LMU Open Science Center ist zum 1.2.2022 eine befristete Stelle (Umfang 50% o
 
 **Open Science Koordinator\*in (m/w/d; E13 TV-L)**
 
-zu besetzen. Die Stelle ist zunächst bis Dezember 2024 befristet; eine Verlängerung wird vorbehaltlich der Finanzierung angestrebt. Das LMU Open Science Center (OSC) ist eine fakultätsübergreifende Einrichtung der Ludwig-Maximilians-Universität (LMU), mit der Aufgabe, Open-Science-Praktiken an der LMU München und darüber hinaus zu fördern und mit meta-wissenschaftlicher Forschung zu untersuchen. Darüber hinaus strebt das OSC an, die Einführung offener Wissenschaftspraktiken auch durch die Etablierung entsprechender Anreizstrukturen in der Wissenschaft zu fördern (etwa Anreize für Replikationen und transparente Forschung; Erhöhung der Reputation für offene, replizierbare Forschung).  
+zu besetzen. Die Stelle ist zunächst bis Dezember 2024 befristet; eine Verlängerung wird vorbehaltlich der Finanzierung angestrebt. Das LMU Open Science Center (OSC) ist eine fakultätsübergreifende Einrichtung der Ludwig-Maximilians-Universität (LMU), mit der Aufgabe, Open-Science-Praktiken an der LMU München und darüber hinaus zu fördern und mit meta-wissenschaftlicher Forschung zu untersuchen. Darüber hinaus strebt das OSC an, die Einführung offener Wissenschaftspraktiken auch durch die Etablierung entsprechender Anreizstrukturen in der Wissenschaft zu fördern (etwa Anreize für Replikationen und transparente Forschung; Erhöhung der Reputation für offene, replizierbare Forschung).\
 Arbeitssprachen am OSC sind Deutsch und Englisch, verhandlungssichere Deutschkenntnisse werden erwartet.
 
 **Ihre Aufgaben:**

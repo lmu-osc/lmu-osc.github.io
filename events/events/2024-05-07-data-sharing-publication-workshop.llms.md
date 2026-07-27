@@ -2,21 +2,21 @@
 
 #####  Date & Time
 
-07 May 2024  
+07 May 2024\
 
 #####  Location
 
-  
+\
 
 #####  Format
 
-Online  
+Online\
 
 #####  Language
 
-English  
+English\
 
-  
+\
 
 This workshop builds upon the lecture “Introduction to Research Data Management for Medical and Biomedical Sciences” offered jointly by ZB MED \[1\] and LMU University Library \[2\] in December 2023. The workshop gives a more detailed introduction to data sharing and publication and explores its practical aspects, focusing on the needs in medical and biomedical research. Participants will learn strategies for implementing access control mechanisms that enable data sharing while protecting sensitive information. Further topics are the benefits of using persistent identifiers (PIDs) and their connection to the FAIR data principles. Finally, the workshop provides participants with best practices for preparing and publishing data and gives an overview of data repositories in the medical and biomedical field. Through interactive sessions and discussions, participants will deepen their knowledge to effectively manage, share, and publish their research data, fostering transparency and reproducibility in their scientific work.
 
@@ -30,7 +30,7 @@ This workshop builds upon the lecture “Introduction to Research Data Managemen
 
 **Contact details:** [rdm@ub.uni-muenchen.de](mailto:%20rdm@ub.uni-muenchen.de)
 
-\[1\]: <https://www.zbmed.de/>  
+\[1\]: <https://www.zbmed.de/>\
 \[2\]: <https://www.ub.uni-muenchen.de/index.html>
 
 - 

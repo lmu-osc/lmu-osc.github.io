@@ -2,23 +2,23 @@
 
 #####  Date & Time
 
-09 Jul 2021  
+09 Jul 2021\
 
 #####  Location
 
-  
+\
 
 #####  Format
 
-Online  
+Online\
 
 #####  Language
 
-English  
+English\
 
 [ Materials](https://psyarxiv.com/6btc3/)
 
-  
+\
 
 After a longer break, the Journal Club: “ReproJuicebiliTea” at LMU Munich will be relaunched with its third meeting to discuss a current pre-print about quality standards and incentive structures in science and possible ways to bring them together. The organization team is happy to announce that one of the paper’s authors, Daniel Leising, will give an introductory talk to this session and participate in the open discussion afterwards:
 
@@ -28,7 +28,7 @@ Participants can use the following **key questions** to prepare for the discussi
 - Which are the main problems in the current incentive structures in science and how can they be addressed most effectively? You can think about the suggestions from the paper, but also bring in your own ideas.
 - Which types of consensus building do already exist (in your discipline) and do they meet the requirements suggested in the paper? You can think about the different aspects mentioned in the paper (e. g. common terminology, research questions), but also about how the consensus is built (e. g. special types of reviews, position papers by expert groups).
 
-  
+\
 You can find a short abstract for the introductory talk by Daniel Leising (TU Dresden) below:
 
 ### Doing good research should not be bad for your career

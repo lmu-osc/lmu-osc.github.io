@@ -2,26 +2,26 @@
 
 #####  Date & Time
 
-27 May 2024  
+27 May 2024\
 
 #####  Location
 
-Hybrid (Leopoldstraße 13, room 3322 and via Zoom)  
+Hybrid (Leopoldstraße 13, room 3322 and via Zoom)\
 
 #####  Format
 
-Hybrid  
+Hybrid\
 
 #####  Language
 
-English  
+English\
 
-  
+\
 
-MAKING TACIT KNOWLEDGE OPEN – A Panel Discussion Series  
+MAKING TACIT KNOWLEDGE OPEN – A Panel Discussion Series\
 Academia is full of tacit knowledge that is difficult to access for early career researchers and first-generation academics who do not (yet) have large academic networks. In our new panel discussion series, we try to make this tacit knowledge open by asking the relevant questions to a diverse set of experts.
 
-PRACTICES AND PRACTICALITIES OF PEER REVIEW  
+PRACTICES AND PRACTICALITIES OF PEER REVIEW\
 Most researchers spend a significant amount of time and effort on peer reviewing. However, there is large variability in peer reviewing practices and little guidance for early career researchers on the topic. For this panel discussion, we assemble experts from different fields of psychology to talk about their experiences with peer review from a reviewer’s and/or editor’s perspective. We talk about how they developed their own style of peer reviewing, what they consider a good peer review, tips and tricks for peer-reviewing efficiently, and how their personal scientific philosophy influences their peer reviews.
 
 **Panel Members:**

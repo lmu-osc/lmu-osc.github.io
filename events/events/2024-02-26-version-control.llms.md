@@ -2,28 +2,28 @@
 
 #####  Date & Time
 
-26 Feb 2024  
+26 Feb 2024\
 
 #####  Location
 
-Wikipedia Munich  
+Wikipedia Munich\
 Angertorstraße 3, 80469 Munich
 
 #####  Format
 
-In-Person  
+In-Person\
 
 #####  Language
 
-German/English  
+German/English\
 
-  
+\
 
 Come along to talk about code, research tools, and open science in a social environment!
 
 Possible resources to prepare your session’s hack:
 
-Beginner: <https://malikaihle.github.io/Introduction-RStudio-Git-GitHub/> and <https://malikaihle.github.io/Collaborative-RStudio-GitHub/>  
+Beginner: <https://malikaihle.github.io/Introduction-RStudio-Git-GitHub/> and <https://malikaihle.github.io/Collaborative-RStudio-GitHub/>\
 Advanced: <https://happygitwithr.com/>
 
 **Sessions’ agenda:**

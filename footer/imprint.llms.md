@@ -6,13 +6,13 @@ Ludwig-Maximilians-Universität München is a state institution of the Free Stat
 
 #### Address
 
-Ludwig-Maximilians-Universität München  
-Geschwister-Scholl-Platz 1  
-80539 Munich  
+Ludwig-Maximilians-Universität München\
+Geschwister-Scholl-Platz 1\
+80539 Munich\
 Phone: +49 (0) 89 / 2180-0
 
-Web presence: <https://www.lmu.de/de/index.html>  
-Contact: <poststelle@verwaltung.uni-muenchen.de>  
+Web presence: <https://www.lmu.de/de/index.html>\
+Contact: <poststelle@verwaltung.uni-muenchen.de>\
 [Addition contact information](https://www.lmu.de/en/index.html)
 
 #### Notices for encrypted communication
@@ -21,21 +21,21 @@ In the event that you wish to send us an encrypted message, please use the follo
 
 #### Authorized Oversight Agency
 
-Bavarian State Ministry for Science and Art  
-Salvatorstraße 2  
+Bavarian State Ministry for Science and Art\
+Salvatorstraße 2\
 80333 Munich
 
 Internet: <https://www.stmwk.bayern.de>
 
 #### Sales Tax ID Number of the LMU
 
-Sales tax ID number pursuant to § 27 a Sales Tax Law:  
+Sales tax ID number pursuant to § 27 a Sales Tax Law:\
 DE 811205325
 
 #### Responsible for content according to § 18 para. 2 MStV
 
-Ludwig-Maximilians-Universität München  
-Felix Schönbrodt  
+Ludwig-Maximilians-Universität München\
+Felix Schönbrodt\
 Email: <felix.schoenbrodt@psy.lmu.de>
 
 #### Responsible party for technical implementation

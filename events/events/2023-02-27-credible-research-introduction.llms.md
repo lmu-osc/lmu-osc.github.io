@@ -2,25 +2,25 @@
 
 #####  Date & Time
 
-27 Feb 2023  
+27 Feb 2023\
 
 #####  Location
 
-  
+\
 
 #####  Format
 
-Online  
+Online\
 
 #####  Language
 
-English  
+English\
 
 [ Materials](https://osf.io/nd9ga)
 
-  
+\
 
-Do you want to gain more trust in the research that you do, and make it as credible as it can be in the eyes of your peers, the public, and funding agencies?  
+Do you want to gain more trust in the research that you do, and make it as credible as it can be in the eyes of your peers, the public, and funding agencies?\
 Join and learn about creating:
 
 - statistical plans in advance of collecting data to prevent biases in analyses, with the help of preregistration and data simulation;

@@ -14,6 +14,6 @@ Faculty of Medicine
 
 ## Mission Statement
 
-I am working at cBRAIN lab (KJP LMU) as a computer scientist, supporting the lab with data management and analysis.  
-While immersing myself into the open science initiative, I am dedicated to promoting its principles and actively implementing them in practice  
+I am working at cBRAIN lab (KJP LMU) as a computer scientist, supporting the lab with data management and analysis.\
+While immersing myself into the open science initiative, I am dedicated to promoting its principles and actively implementing them in practice\
 Open science practices ensure research integrity and credibility advocating for transparency, reproducibility, accessibility, and inclusion in scientific research worldwide, benefiting both the scientific community and the general public. It is important to incorporate open science principles and guidelines to good scientific practices in all disciplines, with the mindset of implementing them every day.

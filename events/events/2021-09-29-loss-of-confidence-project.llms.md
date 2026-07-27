@@ -2,23 +2,23 @@
 
 #####  Date & Time
 
-29 Sep 2021  
+29 Sep 2021\
 
 #####  Location
 
-  
+\
 
 #####  Format
 
-Online  
+Online\
 
 #####  Language
 
-English  
+English\
 
 [ Materials](https://doi.org/10.1177/1745691620964106)
 
-  
+\
 
 After a short summer break, the Journal Club: “ReproJuicebiliTea” at LMU Munich continues with its fourth meeting to discuss an interesting paper about mistakes and lost confidence in scientific work as well as how to deal with it. The organization team is happy to announce that the paper’s author, Dr. Julia M. Rohrer, will give an introductory talk to this session and participate in the open discussion afterwards:
 
@@ -28,7 +28,7 @@ Participants can use the following **key questions** to prepare for the discussi
 - What mechanisms and practical handling of discoveries of errors or lost confidence in previous research would be desirable? Or are the structures already in place and just not being used sufficiently? If so, why not?
 - What are individuals missing in order to talk more openly about lost trust in their own work? And when does an open exchange about it take place instead?
 
-  
+\
 You can find a short abstract for the introductory talk by Dr. Julia M. Rohrer (University of Leipzig) below:
 
 ### Loss-of-Confidence Project – Have you ever lost faith in your scientific work?

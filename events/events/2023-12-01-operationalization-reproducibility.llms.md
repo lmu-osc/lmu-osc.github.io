@@ -2,23 +2,23 @@
 
 #####  Date & Time
 
-01 Dec 2023  
+01 Dec 2023\
 
 #####  Location
 
-Hybrid (Leopoldstraße 13, room 1302, Munich and via Zoom)  
+Hybrid (Leopoldstraße 13, room 1302, Munich and via Zoom)\
 
 #####  Format
 
-Hybrid  
+Hybrid\
 
 #####  Language
 
-English  
+English\
 
 [ Materials](https://doi.org/10.1098/rsos.191354)
 
-  
+\
 
 After a successful third session this semester, we are excited to invite you to the next session of our journal club. The session will revolve around the topic of operationalization in psychological research, and with the session based on the paper „When numbers fail: do researchers agree on operationalization of published research?“ by Haucke et al., we will discuss how the validity of operationalization in scientific studies affects researchers’ ability to infer research questions and their judgments of study quality. 
 

@@ -2,23 +2,23 @@
 
 #####  Date & Time
 
-16 Dec 2022  
+16 Dec 2022\
 
 #####  Location
 
-Hybrid (Room 1307 at Leopoldstraße 13, Munich and via Zoom)  
+Hybrid (Room 1307 at Leopoldstraße 13, Munich and via Zoom)\
 
 #####  Format
 
-Hybrid  
+Hybrid\
 
 #####  Language
 
-English  
+English\
 
 [ Materials](https://doi.org/10.1177/1745691620927709)
 
-  
+\
 
 The Journal Club: “ReproducibiliTea” at LMU Munich continues with its twelfth meeting, the third one for this semester. It will already take place this Friday and we will discuss “Positionality statements”. 
 
@@ -34,7 +34,7 @@ Below, you can find a short abstract for the session.
 
 ### Positionality statements - Should authors be more transparent about themselves?
 
-Following the theme of this year’s Journal Club “Pushing Open Science to its limits”, the upcoming session is dedicated to a less common open research practice that may be of particular interest in the social sciences. In positionality statements, authors describe their own connection to the research topic/question. They might make aspects of their  
+Following the theme of this year’s Journal Club “Pushing Open Science to its limits”, the upcoming session is dedicated to a less common open research practice that may be of particular interest in the social sciences. In positionality statements, authors describe their own connection to the research topic/question. They might make aspects of their\
 own identity transparent (e.g. belonging to an ethnic group) or explain their interest in the topic. For example, researchers examining aspects of discrimination against a particular group could inform readers whether or not they themselves belong to the discriminated group. So far, this method has been more common among qualitative researchers, where it is often part of the researcher’s general reflection on the methods used. Recently - also in the context of social, anti-discriminatory and epistemological debates - calls have been made to include such statements in quantitative research as well. In this session we want to briefly introduce the idea of such statements and openly discuss possible advantages and disadvantages.
 
 ## Concept of the Journal Club

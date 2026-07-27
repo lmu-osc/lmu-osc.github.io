@@ -2,23 +2,23 @@
 
 #####  Date & Time
 
-02 Jul 2020  
+02 Jul 2020\
 
 #####  Location
 
-  
+\
 
 #####  Format
 
-Online  
+Online\
 
 #####  Language
 
-English  
+English\
 
 [ Materials](https://www.youtube.com/@lmuopenscienceinitiativein447/videos)
 
-  
+\
 
  
 

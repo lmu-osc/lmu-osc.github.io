@@ -2,24 +2,24 @@
 
 #####  Date & Time
 
-25 Nov 2024  
+25 Nov 2024\
 
 #####  Location
 
-Wikipedia Munich  
+Wikipedia Munich\
 Angertorstraße 3, 80469 Munich
 
 #####  Format
 
-In-Person  
+In-Person\
 
 #####  Language
 
-English/German  
+English/German\
 
 [ Materials](https://de.wikipedia.org/wiki/Wikipedia:WikiMUC/2024-11-25_LMU-Editathon)
 
-  
+\
 
 The LMU is an important part of life in Munich, but still many of the parts that make up this large project are not well documented on Wikimedia projects like Wikipedia and Wikidata. This hinders public understanding of how such a large research university works. If you are interested in helping to better document the different teams, institutes, and research projects that define the LMU, this “LMU Editathon” will teach you how to do exactly that. No prior knowledge required!
 

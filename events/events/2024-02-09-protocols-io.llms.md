@@ -2,20 +2,20 @@
 
 #####  Date & Time
 
-09 Feb 2024  
+09 Feb 2024\
 14:00 CET
 
 #####  Location
 
-  
+\
 
 #####  Format
 
-Hybrid  
+Hybrid\
 
 #####  Language
 
-English  
+English\
 
 [ Materials](https://osf.io/kyvut/files/p53wt)
 

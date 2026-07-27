@@ -4,21 +4,21 @@ February 17, 2026
 
 #####  Date & Time
 
-11 Mar - 12 Mar 2026  
+11 Mar - 12 Mar 2026\
 9:00-17:00
 
 #####  Location
 
-[LMU Biozentrum  
+[LMU Biozentrum\
 Room G00.031 Großhaderner Str. 4, 82152 Martinsried](https://maps.app.goo.gl/jipjazeZf5FTwhNFA)
 
 #####  Format
 
-In-Person  
+In-Person\
 
 #####  Language
 
-English  
+English\
 en
 
 [ Register](https://www.pretix.osc.lmu.de/lmu-osc/swc-2026-03-11/)

@@ -14,5 +14,5 @@ Faculty of Medicine
 
 ## Mission Statement
 
-Our investigators at the Institute for Stroke and Dementia Research (ISD) are interested in the molecular, cellular, and physiological mechanisms of stroke and cerebrovascular disease. More specifically, my group uses genetic approaches to identify novel risk genes and explore their functional role in various model systems including mouse models and using state of the art technologies.  
+Our investigators at the Institute for Stroke and Dementia Research (ISD) are interested in the molecular, cellular, and physiological mechanisms of stroke and cerebrovascular disease. More specifically, my group uses genetic approaches to identify novel risk genes and explore their functional role in various model systems including mouse models and using state of the art technologies.\
 I am convinced that unrestricted accessibility to scientific publications and data is critical, enhances quality, accelerates research, and provides new opportunities for scientists all over the world.

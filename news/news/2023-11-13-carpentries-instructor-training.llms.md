@@ -22,12 +22,12 @@ If interested, please read the information below and fill out this [application 
 
 ## Eligibility criteria
 
-  
+\
 This call is aimed at postgraduate research students, research staff or fellows, and research support staff from any department, who expect to be based in Munich at least through the end of June 2025.
 
 ## Selection criteria
 
-  
+\
 Places will be allocated in line with the goal of building a sustainable community of instructors based in Munich. Criteria include:
 
 - career stage, motivation, and experience (i.e., balance between early-career researchers interested in building a community of peers, and permanent university staff already involved in training);
@@ -35,7 +35,7 @@ Places will be allocated in line with the goal of building a sustainable communi
 - previous involvement with the LMU Open Science Center and/or with The Carpentries (both favoured, but not necessary);
 - a commitment to diversity, equity, inclusion, and accessibility, to ensure that all future workshop participants are able to access training in a welcoming environment.
 
-  
+\
 We warmly encourage recent practitioners of software, data or library skills (e.g. students or early career researchers), and members who identify with groups that have been historically excluded from computer science and related fields (e.g., women, people of color and/or from ethnic minority backgrounds, people with disabilities, and members of the LGBTQIA+ community) to apply.
 
 Are you already a certified Carpentries instructor and want to contribute to the teaching of future workshops? Email [malika.ihle@lmu.de](mailto:malika.ihle@lmu.de "Send email to: malika.ihle@lmu.de") to be added to our local instructors mailing list!

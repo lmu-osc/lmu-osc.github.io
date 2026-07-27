@@ -2,21 +2,21 @@
 
 #####  Date & Time
 
-12 Sep 2022  
+12 Sep 2022\
 
 #####  Location
 
-Lecture Hall 2 Hörsaaltrakt in Klinikum Großhadern  
+Lecture Hall 2 Hörsaaltrakt in Klinikum Großhadern\
 
 #####  Format
 
-In-Person  
+In-Person\
 
 #####  Language
 
-English/German  
+English/German\
 
-  
+\
 
 We are incredibly excited to announce the fifth workshop held by the LMU Open Science Initiative in Medicine (OSIM) and the Institute for Medical Information Processing, Biometry, and Epidemiology (IBE):
 
@@ -33,7 +33,7 @@ As part of the activities considered by Open Science in Medicine (OSIM) team, we
 - **Hardware: Personal computer (laptop) with 64-bit architecture and wlan connection.**
 - **Access to Eduroam / LRZ system**
 
-**  **
+**\**
 
 **Target audience:** Members of the Medical and Biology Faculty interested in learning the git version control system using the command line. However, depending on inscriptions, participation priority will be given to Medical faculty members (Principal investigators, Medical students, Postgraduate students and Postdoctoral fellows).
 

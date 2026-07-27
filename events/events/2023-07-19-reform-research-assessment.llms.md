@@ -2,23 +2,23 @@
 
 #####  Date & Time
 
-19 Jul 2023  
+19 Jul 2023\
 
 #####  Location
 
-Hybrid (Room A 015 in Geschwister-Scholl-Pl. 1 and via Zoom)  
+Hybrid (Room A 015 in Geschwister-Scholl-Pl. 1 and via Zoom)\
 
 #####  Format
 
-Hybrid  
+Hybrid\
 
 #####  Language
 
-English  
+English\
 
-  
+\
 
-Agenda:  
+Agenda:\
 Discussion on research assessment reforms
 
 - Summary of CoARA principles and of our March symposium (recording and slides here: [https://osf.io/eqkjz/](https://osf.io/eqkjz/))

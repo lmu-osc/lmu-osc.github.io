@@ -2,20 +2,20 @@
 
 #####  Date & Time
 
-14 Nov 2025  
+14 Nov 2025\
 14:00 CET
 
 #####  Location
 
-  
+\
 
 #####  Format
 
-Hybrid  
+Hybrid\
 
 #####  Language
 
-English  
+English\
 
 [ Materials](https://osf.io/w2bmt/overview)
 

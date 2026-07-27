@@ -2,27 +2,27 @@
 
 #####  Date & Time
 
-13 Mar 2023  
+13 Mar 2023\
 
 #####  Location
 
-Hybrid (Geschwister-Scholl-Platz 1, Munich and via Zoom)  
+Hybrid (Geschwister-Scholl-Platz 1, Munich and via Zoom)\
 
 #####  Format
 
-Hybrid  
+Hybrid\
 
 #####  Language
 
-English  
+English\
 
 [ Materials](https://osf.io/eqkjz/)
 
-  
+\
 
 “The use of journal impact factors and other metric indicators of research productivity, such as the h-index, has been heavily criticized for being invalid for the assessment of individual researchers and for fueling a detrimental “publish or perish” culture. Multiple initiatives call for developing alternatives to existing metrics that better reflect quality (instead of quantity) in research assessment.” ([https://doi.org/10.23668/psycharchives.8162](https://doi.org/10.23668/psycharchives.8162))
 
-  
+\
 A number of themes run through the recommendations of initiatives such as The Declaration on Research Assessment (DORA, [https://sfdora.org/](https://sfdora.org/)) and the Coalition for Advancing Research Assessment (CoARA, [https://www.coara.org/](https://www.coara.org/)):
 
 - the need to eliminate the use of journal-based metrics, such as Journal Impact Factors, in funding, appointment, and promotion considerations;

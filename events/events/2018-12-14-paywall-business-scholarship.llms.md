@@ -2,23 +2,23 @@
 
 #####  Date & Time
 
-14 Dec 2018  
+14 Dec 2018\
 
 #####  Location
 
-Geschwister-Scholl-Platz 1,Lecture Hall M 018  
+Geschwister-Scholl-Platz 1,Lecture Hall M 018\
 
 #####  Format
 
-In-Person  
+In-Person\
 
 #####  Language
 
-English  
+English\
 
 [ Materials](https://www.youtube.com/watch?v=zAzTR8eq20k&t=141s)
 
-  
+\
 
 We are happy to announce that a collaboration of [ZPID](https://leibniz-psychology.org/), LMU OSC, and LMU University Library will present the movie “[Paywall - The Business of Scholarship](https://paywallthemovie.com/)” in Munich.
 
@@ -41,11 +41,11 @@ The event will take place on **Friday, Dec 14, 2018 from 14:30 to 16:30 in Lectu
 
 ![paywall_qr](../../images/paywall_qr.png)
 
-**  **
+**\**
 
-**  **
+**\**
 
-**  **
+**\**
 
 **Organized by:**
 
@@ -61,9 +61,9 @@ The event will take place on **Friday, Dec 14, 2018 from 14:30 to 16:30 in Lectu
 
  
 
- **[University Library of the LMU](https://www.en.ub.uni-muenchen.de/index.html)  **
+ **[University Library of the LMU](https://www.en.ub.uni-muenchen.de/index.html)\**
 
-**  **
+**\**
 
  [![paywall_poster](paywall_poster.jpg)](paywall_poster.jpg "paywall_poster")
 

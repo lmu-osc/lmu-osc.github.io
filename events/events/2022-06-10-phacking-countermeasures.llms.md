@@ -2,23 +2,23 @@
 
 #####  Date & Time
 
-10 Jun 2022  
+10 Jun 2022\
 
 #####  Location
 
-  
+\
 
 #####  Format
 
-Online  
+Online\
 
 #####  Language
 
-English  
+English\
 
 [ Materials](https://doi.org/10.31234/osf.io/xy2dk)
 
-  
+\
 
 The Journal Club: “ReproducibiliTea” at LMU Munich continues with its fifth meeting to discuss an interesting paper about p-hacking strategies and effective countermeasures. The organization team is happy to announce that the paper’s author, Angelika Stefan, will give an introductory talk to this session and participate in the open discussion afterwards:
 
@@ -28,7 +28,7 @@ Participants can use the following **key questions** to prepare for the discussi
 - Which potential solutions (described on pages 37-45) do you find the most convincing?
 - Which questions about QRPs do you still have? Which questions do you think are not answered by the scientific community, yet (both empirical questions e.g. specific prevalence rates and theoretical questions)?
 
-  
+\
 You can find a short abstract for the introductory talk by Angelika Stefan (University of Amsterdam) below:
 
 ### Big Little Lies: p-hacking and effective countermeasures

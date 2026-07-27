@@ -2,23 +2,23 @@
 
 #####  Date & Time
 
-29 Jan 2024  
+29 Jan 2024\
 
 #####  Location
 
-Wikipedia Munich  
+Wikipedia Munich\
 Angertorstraße 3, 80469 Munich
 
 #####  Format
 
-In-Person  
+In-Person\
 
 #####  Language
 
-German/ English  
+German/ English\
 de/en
 
-  
+\
 
 Come along to talk about code, research tools, and open science in a social environment!
 

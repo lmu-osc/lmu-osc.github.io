@@ -2,21 +2,21 @@
 
 #####  Date & Time
 
-10 Nov - 24 Nov 2021  
+10 Nov - 24 Nov 2021\
 
 #####  Location
 
-Online (Zoom-Meeting)  
+Online (Zoom-Meeting)\
 
 #####  Format
 
-Online  
+Online\
 
 #####  Language
 
-German  
+German\
 
-  
+\
 
 The LMU Open Science Initiative in Psychology (OSIP) cordially invites to the online workshop “Tips and tools for a reproducible workflow?” led and organized by [Dr. Caroline Hygar-Hoffmann](../../people/people/caroline-zygar-hoffmann.llms.md "Zygar-Hoffmann") and Moritz Fischer.
 

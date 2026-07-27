@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.38">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -12,10 +12,13 @@
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -41,10 +44,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-eb3a9d22c3f4f73d2fd349c9e154b070.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-032b9ecbda65f721820d8c280e55d5fa.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -82,10 +85,10 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-project','listing-website','listing-format','listing-engines','listing-language','listing-execute','listing-page-navigation','listing-sidebar','listing-title','listing-date','listing-categories','listing-description','listing-template','listing-filters','listing-path','listing-outputHref','listing-date-modified','listing-author','listing-filename','listing-file-modified','listing-reading-time','listing-word-count','listing-subtitle','listing-flyer',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
+      valueNames: ['listing-project','listing-website','listing-format','listing-engines','listing-language','listing-execute','listing-page-navigation','listing-sidebar','listing-title','listing-date','listing-categories','listing-template','listing-filters','listing-path','listing-outputHref','listing-date-modified','listing-author','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-word-count','listing-subtitle','listing-flyer',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
       page: 25,
     pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
-      searchColumns: ["listing-project","listing-website","listing-format","listing-engines","listing-language","listing-execute","listing-page-navigation","listing-sidebar","listing-title","listing-date","listing-categories","listing-description","listing-template","listing-filters","listing-path","listing-outputHref","listing-date-modified","listing-author","listing-filename","listing-file-modified","listing-reading-time","listing-word-count","listing-subtitle","listing-flyer"],
+      searchColumns: ["listing-project","listing-website","listing-format","listing-engines","listing-language","listing-execute","listing-page-navigation","listing-sidebar","listing-title","listing-date","listing-categories","listing-template","listing-filters","listing-path","listing-outputHref","listing-date-modified","listing-author","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count","listing-subtitle","listing-flyer"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -787,7 +790,7 @@ if (location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') {
 <link href="./assets/bootstrap-5.3.8-dist/css/bootstrap.min.css" rel="stylesheet">
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
 
 <script type="text/javascript">
 const typesetMath = (el) => {
@@ -1319,16 +1322,6 @@ window.Quarto = {
         
         <div class="carousel-item active">
           
-          <h6 class="card-subtitle mb-2 text-body-secondary" style="font-size:0.87rem;">Hybrid · Jun 10, 2026</h6>
-          
-          <h5 class="card-title"><a href="./events/events/2026-06-10-ospark-bootcamp.html" class="carousel-title-link" aria-label="Open event item: OSPARK Bootcamp Munich - Promote your Open Research Passion!">OSPARK Bootcamp Munich - Promote your Open Research Passion!</a></h5>
-          <p class="card-text">The OSPARK bootcamp is a 6-week online course and a 2-day onsite workshop all about creating visibility through outreach and marketing. It's a learning opportunity for people working in or leading Open Research initiatives, services or infrastructures.
-</p>
-          <a href="./events/events/2026-06-10-ospark-bootcamp.html" class="btn btn-link p-0 fw-semibold small" aria-label="See details for OSPARK Bootcamp Munich - Promote your Open Research Passion!">See Event →</a>
-        </div>
-        
-        <div class="carousel-item ">
-          
           <h6 class="card-subtitle mb-2 text-body-secondary" style="font-size:0.87rem;">Hybrid · Sep 7, 2026</h6>
           
           <h5 class="card-title"><a href="./events/events/2026-09-07-lmu-open-science-summer-school.html" class="carousel-title-link" aria-label="Open event item: LMU Open Science Summer School 2026">LMU Open Science Summer School 2026</a></h5>
@@ -1336,6 +1329,16 @@ window.Quarto = {
 Our annual Summer School will take place on Sept 7-11 (Track 1) and Sept 14-15 (Track 2), 2026.
 </p>
           <a href="./events/events/2026-09-07-lmu-open-science-summer-school.html" class="btn btn-link p-0 fw-semibold small" aria-label="See details for LMU Open Science Summer School 2026">See Event →</a>
+        </div>
+        
+        <div class="carousel-item ">
+          
+          <h6 class="card-subtitle mb-2 text-body-secondary" style="font-size:0.87rem;background: rgba(134, 112, 112, 0.18); border-color: rgba(134, 112, 112, 0.36); color: #5a4747 !important;">Past Event · Hybrid · Jun 10, 2026</h6>
+          
+          <h5 class="card-title"><a href="./events/events/2026-06-10-ospark-bootcamp.html" class="carousel-title-link" aria-label="Open event item: OSPARK Bootcamp Munich - Promote your Open Research Passion!">OSPARK Bootcamp Munich - Promote your Open Research Passion!</a></h5>
+          <p class="card-text">The OSPARK bootcamp is a 6-week online course and a 2-day onsite workshop all about creating visibility through outreach and marketing. It's a learning opportunity for people working in or leading Open Research initiatives, services or infrastructures.
+</p>
+          <a href="./events/events/2026-06-10-ospark-bootcamp.html" class="btn btn-link p-0 fw-semibold small" aria-label="See details for OSPARK Bootcamp Munich - Promote your Open Research Passion!">See Event →</a>
         </div>
         
         <div class="carousel-item ">

@@ -4,20 +4,20 @@ April 7, 2026
 
 #####  Date & Time
 
-25 Jan - 27 Jan 2019  
+25 Jan - 27 Jan 2019\
 9:00-18:00
 
 #####  Location
 
-Mannheim, Germany  
+Mannheim, Germany\
 
 #####  Format
 
-In-person  
+In-person\
 
 #####  Language
 
-English  
+English\
 en
 
 [ Materials](https://www.youtube.com/@opensocialscience4758)

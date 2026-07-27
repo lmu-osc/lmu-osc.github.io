@@ -2,22 +2,22 @@
 
 #####  Date & Time
 
-22 Apr 2024  
+22 Apr 2024\
 
 #####  Location
 
-Wikipedia Munich  
+Wikipedia Munich\
 Angertorstraße 3, 80469 Munich
 
 #####  Format
 
-In-Person  
+In-Person\
 
 #####  Language
 
-English  
+English\
 
-  
+\
 
 Are you using programming languages such as R or Python? Are you, or your collaborators, sometimes struggling to get the same results on a different computer?
 

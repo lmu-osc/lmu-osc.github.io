@@ -2,24 +2,24 @@
 
 #####  Date & Time
 
-12 Jan 2024  
+12 Jan 2024\
 
 #####  Location
 
-[LMU Open Science Center (Giselastr.)  
+[LMU Open Science Center (Giselastr.)\
 Leopoldstraße 13, Room 3322, 80802 Munich](https://www.google.com/maps/place/Ludwig-Maximilian-Universit%C3%A4t+M%C3%BCnchen/@48.1559372,11.5833416,19.19z/data=!3m1!5s0x479e75bf863d5581:0x29d36540810c2590!4m6!3m5!1s0x479e75c07933e683:0x4851cac28ba68cb4!8m2!3d48.1558072!4d11.5829777!16s%2Fg%2F1hc2d61v7?entry=ttu&g_ep=EgoyMDI2MDUyMC4wIKXMDSoASAFQAw%3D%3D)
 
 #####  Format
 
-Hybrid  
+Hybrid\
 
 #####  Language
 
-English  
+English\
 
 [ Materials](https://doi.org/10.1038/s44271-023-00003-2)
 
-  
+\
 
 We invite you to attend to the sixth session of our journal club this semester. In this session, we will discuss how the replication crisis has actually led to improvements in how research is conducted, leading to what’s now known as the ‘credibility revolution’. Discussing the paper “The replication crisis has led to positive structural, procedural, and community changes” by Korbmacher et al., we will examine the benefits that have emerged from this time period for research practices and the scientific community.
 

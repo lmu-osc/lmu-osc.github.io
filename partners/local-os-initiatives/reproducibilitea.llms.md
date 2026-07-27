@@ -1,7 +1,7 @@
 ## ReproducibiliTea  Journal Club
 
-Founded in December 2019, the interdisciplinary journal club "ReproducibiliTea" takes place regularly to explore main questions and current topics concerning Open Science and the credibility of research findings. This concept, which originated in Great Britain, has gained widespread recognition and adoption in numerous countries under the same name.  
-  
+Founded in December 2019, the interdisciplinary journal club "ReproducibiliTea" takes place regularly to explore main questions and current topics concerning Open Science and the credibility of research findings. This concept, which originated in Great Britain, has gained widespread recognition and adoption in numerous countries under the same name.\
+\
 **What we do?**
 
 - Open discussions on open science, reproducibility, and related topics

@@ -8,17 +8,17 @@ How widely are **Open Research Practices** (ORPs) known and used across the glob
 
 The study examines both *awareness* and *use* of common ORPs. The results show that awareness of these practices is generally high, particularly for:
 
-- Open Access publishing  
-- Preprints  
+- Open Access publishing\
+- Preprints\
 - Open Data
 
 However, a consistent gap emerges between *awareness* and *actual use*. Among the practices studied, only Open Access publishing is used by more than half of the respondents. Other practices, such as preregistration, registered reports, replication, and research co-production, remain comparatively underutilized. The study also highlights important differences across regions, disciplines, methodologies, and career stages.
 
 These findings suggest that the adoption of ORPs is shaped by both disciplinary norms and institutional contexts. Researchers identified several **key strategies** to support broader uptake of ORPs, including:
 
-- stronger incentives from funders, institutions, and regulators  
-- dedicated funding for open practices  
-- recognition in hiring and promotion criteria  
+- stronger incentives from funders, institutions, and regulators\
+- dedicated funding for open practices\
+- recognition in hiring and promotion criteria\
 - increased access to information and training
 
 Overall, the study highlights that while awareness of Open Science is widespread, meaningful adoption remains uneven. Understanding these gaps can help inform targeted training, policy development, and institutional support to advance open and reproducible research.
