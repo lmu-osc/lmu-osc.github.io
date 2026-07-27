@@ -2,22 +2,22 @@
 
 #####  Date & Time
 
-11 Sep 2023  
+11 Sep 2023\
 
 #####  Location
 
-[Philologicum Library  
+[Philologicum Library\
 Ludwigstraße 25, 80539 Munich](https://maps.app.goo.gl/Rvq24yLKyRz92sjQ8)
 
 #####  Format
 
-Hybrid  
+Hybrid\
 
 #####  Language
 
-English  
+English\
 
-  
+\
 
 Julia is a high-level dynamic programming language designed for numerical and scientific computing, data analysis, machine learning, and more. Julia’s user-friendly interface, resembling popular languages like R, Python, and Matlab, makes it easily accessible for learners. Its focus on performance, however, enables computational speeds that often rival, or even surpass, those of low-level languages such as C or Fortran. Therefore, Julia is an ideal choice for large-scale data analysis and other computationally intensive tasks, as it can be orders of magnitude faster than R or Python.
 

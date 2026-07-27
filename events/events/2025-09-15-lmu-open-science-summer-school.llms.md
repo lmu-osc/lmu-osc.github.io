@@ -2,24 +2,24 @@
 
 #####  Date & Time
 
-15 Sep 2025  
+15 Sep 2025\
 
 #####  Location
 
-[Philologicum Library  
+[Philologicum Library\
 Ludwigstraße 25, 80539 Munich](https://maps.app.goo.gl/Rvq24yLKyRz92sjQ8)
 
 #####  Format
 
-Hybrid  
+Hybrid\
 
 #####  Language
 
-English  
+English\
 
 [ Materials](https://osf.io/m7h4c/overview)
 
-  
+\
 
  
 

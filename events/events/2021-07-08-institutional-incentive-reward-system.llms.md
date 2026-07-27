@@ -2,21 +2,21 @@
 
 #####  Date & Time
 
-08 Jul 2021  
+08 Jul 2021\
 
 #####  Location
 
-  
+\
 
 #####  Format
 
-Online  
+Online\
 
 #####  Language
 
-English  
+English\
 
-  
+\
 
 The event will be opened by a keynote from Dr. Miriam Kip ([BIH/QUEST Berlin](https://www.bihealth.org/de/translation/innovationstreiber/quest-center/teams)) speaking about “Introducing mechanisms of robustness and transparency into the institutional incentive and reward system (MERIT)”. Afterwards, the speaker will lead a workshop discussing how performance-based funding and appointment practices can be restructured and designed to reward good scientific practice.
 

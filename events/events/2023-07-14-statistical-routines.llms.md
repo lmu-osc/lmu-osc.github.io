@@ -2,20 +2,20 @@
 
 #####  Date & Time
 
-14 Jul 2023  
+14 Jul 2023\
 14:00 CET
 
 #####  Location
 
-  
+\
 
 #####  Format
 
-Hybrid  
+Hybrid\
 
 #####  Language
 
-English  
+English\
 
 ## Event Details
 

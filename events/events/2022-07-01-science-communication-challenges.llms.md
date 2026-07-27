@@ -2,21 +2,21 @@
 
 #####  Date & Time
 
-01 Jul 2022  
+01 Jul 2022\
 
 #####  Location
 
-  
+\
 
 #####  Format
 
-Online  
+Online\
 
 #####  Language
 
-English  
+English\
 
-  
+\
 
 The Journal Club: “ReproducibiliTea” at LMU Munich continues with its sixth meeting to discuss two interesting papers. The organization team is happy to announce that the paper’s authors, Dr. Tobias Wingen and Marlene Altenmüller, will give an introductory talk to this session and participate in the open discussion afterwards:
 

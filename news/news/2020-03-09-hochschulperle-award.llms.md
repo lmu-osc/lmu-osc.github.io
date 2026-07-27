@@ -2,7 +2,7 @@
 
 March 9, 2020
 
-*\[This is a translation of the LMU [press release](https://www.uni-muenchen.de/aktuelles/preise/2020/hochschulperle.html)\]  *
+*\[This is a translation of the LMU [press release](https://www.uni-muenchen.de/aktuelles/preise/2020/hochschulperle.html)\]\*
 
 *The LMU’s Open Science Center strengthens the commitment to open, transparent and replicable research. Its interdisciplinarity and breadth of expertise make it the first university center of its kind. [It has now been awarded the title of “University Pearl” by the Stifterverband.](https://www.stifterverband.org/hochschulperle)*
 

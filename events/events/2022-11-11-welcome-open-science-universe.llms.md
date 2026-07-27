@@ -2,21 +2,21 @@
 
 #####  Date & Time
 
-11 Nov 2022  
+11 Nov 2022\
 
 #####  Location
 
-Hybrid (Room 3322 at Leopoldstraße 13, Munich and via Zoom)  
+Hybrid (Room 3322 at Leopoldstraße 13, Munich and via Zoom)\
 
 #####  Format
 
-Hybrid  
+Hybrid\
 
 #####  Language
 
-English  
+English\
 
-  
+\
 
 The Journal Club: “ReproducibiliTea” at LMU Munich continues after a long summer break with its tenth meeting, the first one for this semester. It will already take place this Friday and consist of an introductory session to Open Science. Its purpose is to introduce new people to Open Science and our journal club, but also give an overview about the topic for those who are already familiar with it.
 

@@ -2,23 +2,23 @@
 
 #####  Date & Time
 
-07 Jun 2023  
+07 Jun 2023\
 
 #####  Location
 
-Hybrid (Room 3322, Leopoldstraße 13 80802 München and via Zoom)  
+Hybrid (Room 3322, Leopoldstraße 13 80802 München and via Zoom)\
 
 #####  Format
 
-Hybrid  
+Hybrid\
 
 #####  Language
 
-English  
+English\
 
 [ Materials](https://osf.io/6vhsw/)
 
-  
+\
 
 The LMU Open Science Center is pleased to welcome Dr Gilad Feldman (Department of Psychology, University of Hong Kong) to offer a workshop for scientists of all career levels (from MSc) from any confirmatory quantitative research, on the topic of Registered Report.
 

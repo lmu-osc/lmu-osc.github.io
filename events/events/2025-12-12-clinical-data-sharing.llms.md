@@ -2,20 +2,20 @@
 
 #####  Date & Time
 
-12 Dec 2025  
+12 Dec 2025\
 14:00 CET
 
 #####  Location
 
-  
+\
 
 #####  Format
 
-Hybrid  
+Hybrid\
 
 #####  Language
 
-English  
+English\
 
 [ Materials](https://osf.io/kyvut/files/7afyn)
 

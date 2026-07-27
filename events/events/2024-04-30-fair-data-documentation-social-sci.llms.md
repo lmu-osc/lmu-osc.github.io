@@ -2,23 +2,23 @@
 
 #####  Date & Time
 
-30 Apr 2024  
+30 Apr 2024\
 
 #####  Location
 
-  
+\
 
 #####  Format
 
-Online  
+Online\
 
 #####  Language
 
-English  
+English\
 
 [ Materials](https://osf.io/3fzyj)
 
-  
+\
 
 Transparency and openness in the research process are becoming increasingly important in all scientific fields - including the social sciences. Accordingly, researchers should not only make research results freely available, for example in the form of scientific articles (open access), but also provide research data, analysis scripts and study materials. However, the reusability of the data made available requires comprehensive research data management (RDM) on the part of the researchers. In particular, research data should be made available in accordance with the FAIR principles, meaning that research data should be Findable, Accessible, and usable (Interoperable and Reusable). In this workshop, you will learn about FAIR data management in the social sciences. Specifically, you will 1) create a data management plan and 2) get an introduction to FAIR data documentation.
 

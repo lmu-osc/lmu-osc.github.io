@@ -2,21 +2,21 @@
 
 #####  Date & Time
 
-29 Apr 2021  
+29 Apr 2021\
 
 #####  Location
 
-  
+\
 
 #####  Format
 
-Online  
+Online\
 
 #####  Language
 
-German/English  
+German/English\
 
-  
+\
 
 We are incredibly excited to announce the third workshop held by the LMU Open Science Initiative in Medicine (OSIM):
 

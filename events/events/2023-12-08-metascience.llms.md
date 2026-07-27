@@ -2,20 +2,20 @@
 
 #####  Date & Time
 
-08 Dec 2023  
+08 Dec 2023\
 14:00 CET
 
 #####  Location
 
-  
+\
 
 #####  Format
 
-Hybrid  
+Hybrid\
 
 #####  Language
 
-English  
+English\
 
 ## Event Details
 

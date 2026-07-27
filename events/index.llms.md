@@ -2,28 +2,6 @@
 
 ## Upcoming Events
 
-[OSPARK Bootcamp Munich - Promote your Open Research Passion!](../events/events/2026-06-10-ospark-bootcamp.llms.md) [OSPARK Bootcamp Munich - Promote your Open Research Passion!](../events/events/2026-06-10-ospark-bootcamp.llms.md) Event
-
-[![Event](../events/images/event.svg)](../events/events/2026-06-10-ospark-bootcamp.llms.md)
-
-###### 10 Jun, 2026
-
-###### 10 Jun, 2026 - 25 Jul, 2026
-
-######  Munich, Germany \|  Hybrid \|  English
-
-######  Hybrid \|  English
-
-The OSPARK bootcamp is a 6-week online course and a 2-day onsite workshop all about creating visibility through outreach and marketing. It's a learning opportunity for people working in or leading Open Research initiatives, services or infrastructures.
-
-Organizers: Dr. Heidi Seibold
-
-Hosts: Digital Research Academy OLS LMU Open Science Center OSCARS
-
-Questions? Contact [Digital Research Academy](mailto:hello@digiresacademy.org)
-
-[Read More](../events/events/2026-06-10-ospark-bootcamp.llms.md)
-
 [LMU Open Science Summer School 2026](../events/events/2026-09-07-lmu-open-science-summer-school.llms.md) [LMU Open Science Summer School 2026](../events/events/2026-09-07-lmu-open-science-summer-school.llms.md) Summer School
 
 [![Summer School](../events/images/summer_school.svg)](../events/events/2026-09-07-lmu-open-science-summer-school.llms.md)
@@ -55,6 +33,24 @@ Questions? Contact [Sarah Von Grebmer Zu Wolfsthurn](mailto:Sarah.Grebmer@psy.lm
 ## Past Events
 
 ### 2026
+
+[OSPARK Bootcamp Munich - Promote your Open Research Passion!](../events/events/2026-06-10-ospark-bootcamp.llms.md) [OSPARK Bootcamp Munich - Promote your Open Research Passion!](../events/events/2026-06-10-ospark-bootcamp.llms.md) Event
+
+[![Event](../events/images/event.svg)](../events/events/2026-06-10-ospark-bootcamp.llms.md)
+
+###### 10 Jun, 2026
+
+###### 10 Jun, 2026 - 25 Jul, 2026
+
+######  Munich, Germany \|  Hybrid \|  English
+
+######  Hybrid \|  English
+
+Organizers: Dr. Heidi Seibold
+
+Hosts: Digital Research Academy OLS LMU Open Science Center OSCARS
+
+[Read More](../events/events/2026-06-10-ospark-bootcamp.llms.md)
 
 [Software Carpentry: Essential Computing Skill Training (Shell, Git, Python)](../events/events/2026-03-11-software-carpentry-computing-skills.llms.md) [Software Carpentry: Essential Computing Skill Training (Shell, Git, Python)](../events/events/2026-03-11-software-carpentry-computing-skills.llms.md) Workshop
 

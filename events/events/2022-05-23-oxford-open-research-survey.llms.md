@@ -2,23 +2,23 @@
 
 #####  Date & Time
 
-23 May 2022  
+23 May 2022\
 
 #####  Location
 
-  
+\
 
 #####  Format
 
-Online  
+Online\
 
 #####  Language
 
-English  
+English\
 
 [ Materials](https://osf.io/p9sev/files/wxmpz)
 
-  
+\
 
 #### Presenters
 

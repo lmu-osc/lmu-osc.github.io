@@ -2,23 +2,23 @@
 
 #####  Date & Time
 
-13 Jun 2019  
+13 Jun 2019\
 
 #####  Location
 
-Ludwigstr. 28,Room 221  
+Ludwigstr. 28,Room 221\
 
 #####  Format
 
-In-Person  
+In-Person\
 
 #####  Language
 
-English  
+English\
 
 [ Materials](http://doi.org/10.5281/zenodo.3245369)
 
-  
+\
 
 We cordially invite you to the **workshop “Open Replicable Research”** on **October 5th and 6th in Munich**. The workshop is organized by the AG “Ethik und Verantwortung” of the [IBS-DR](https://www.biometrische-gesellschaft.de/) in cooperation with the Open Science Center der LMU, the [IBE](https://www.ibe.med.uni-muenchen.de/index.html) and the [Department of Statistics](https://www.stat.lmu.de/en/). We are delighted to welcome [Prof. Dr. Ulrich Dirnagl](https://www.charite.de/service/person/person/address_detail/prof_dr_med_ulrich_dirnagl-1) from Berlin and [Prof. Dr. Ioana Cristea](https://www.dpg.unipd.it/en/en/ioana-alina-cristea) from Padova as invited speakers. **Prof. Cristea** will speak about **“Implementation of data sharing in clinical research: tractable and intractable problems”**, **Prof. Dirnagl** will give a talk on **“Can statistics save preclinical research?”**.
 

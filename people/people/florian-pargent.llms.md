@@ -18,4 +18,4 @@ I am a postdoctoral researcher at the Chair of Psychological Methods and Assessm
 
 I teach introductory and advanced statistical analysis to new psychologists, including topics on Open Science. In my own research, I try my best to publish reproducible analysis code, make available or use open data, and convince my coauthors to publish preprints or select journals with sustainable open access policies. In the future, I hope to contribute to meta scientific research to increase the replicability of psychological science.
 
-***  ***
+***\***

@@ -2,21 +2,21 @@
 
 #####  Date & Time
 
-05 Feb 2020  
+05 Feb 2020\
 
 #####  Location
 
-Luisenstraße 37, Room C006  
+Luisenstraße 37, Room C006\
 
 #####  Format
 
-In-Person  
+In-Person\
 
 #####  Language
 
-English  
+English\
 
-  
+\
 
 We are glad to announce the following upcoming talk “**The harmonic mean chi-squared test to substantiate scientific findings**” by **Prof. Dr. Leonhard Held** who is Professor of Biostatistics at the University of Zurich and Director of the Center for Reproducible Science
 

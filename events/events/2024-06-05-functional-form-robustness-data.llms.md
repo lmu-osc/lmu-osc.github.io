@@ -2,21 +2,21 @@
 
 #####  Date & Time
 
-05 Jun 2024  
+05 Jun 2024\
 
 #####  Location
 
-Hybrid (LMU Department of Sociology, IfS 309, Munich and via Zoom)  
+Hybrid (LMU Department of Sociology, IfS 309, Munich and via Zoom)\
 
 #####  Format
 
-In-Person  
+In-Person\
 
 #####  Language
 
-English  
+English\
 
-  
+\
 
 Functional form assumptions are central ingredients of a model specification.
 

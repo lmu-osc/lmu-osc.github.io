@@ -2,21 +2,21 @@
 
 #####  Date & Time
 
-13 May 2024  
+13 May 2024\
 
 #####  Location
 
-Hybrid (Luisenstr 37, room C 024 and via Zoom)  
+Hybrid (Luisenstr 37, room C 024 and via Zoom)\
 
 #####  Format
 
-Hybrid  
+Hybrid\
 
 #####  Language
 
-English  
+English\
 
-  
+\
 
 #### Presenters
 

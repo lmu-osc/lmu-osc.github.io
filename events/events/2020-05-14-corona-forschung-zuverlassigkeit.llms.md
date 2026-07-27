@@ -2,21 +2,21 @@
 
 #####  Date & Time
 
-14 May 2020  
+14 May 2020\
 
 #####  Location
 
-  
+\
 
 #####  Format
 
-In-Person  
+In-Person\
 
 #####  Language
 
-German  
+German\
 
-  
+\
 
 Am 14.05.2020 fand um 16 Uhr der erste Vortrag des OSC-Kolloquiums zu Corona & Open Science als Online-Veranstaltung auf Zoom statt. Prof. Katrin Auspurg hielt dabei einen Vortrag mit dem Thema “Fieberhafte Forschung –Warum Forschung derzeit wenig verlässlich ist und was wir dagegen tun können”.
 

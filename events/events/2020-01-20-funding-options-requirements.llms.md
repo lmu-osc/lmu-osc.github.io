@@ -2,21 +2,21 @@
 
 #####  Date & Time
 
-20 Jan 2020  
+20 Jan 2020\
 
 #####  Location
 
-Leopoldstr. 30, Training room S1, ground floor  
+Leopoldstr. 30, Training room S1, ground floor\
 
 #####  Format
 
-In-Person  
+In-Person\
 
 #####  Language
 
-English  
+English\
 
-  
+\
 
 We are offering a workshop on Open Access addressing LMU researches from all disciplines and of all career levels above PhD on 20 January 2020. The workshop aims at providing orientation on Open Access publications in general, on the available options before, during and after a research project as well as on specific requirements and funding possibilities by different funders.
 

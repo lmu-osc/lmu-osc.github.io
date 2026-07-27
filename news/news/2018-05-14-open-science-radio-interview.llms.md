@@ -4,5 +4,5 @@ An interview with scientific board member Anne-Laure Boulesteix and the managing
 
 May 14, 2018
 
-Listen to the interview:  
+Listen to the interview:\
 <https://www.openscienceradio.org/2018/05/14/osr124-open-science-center-at-lmu-munich-en/>

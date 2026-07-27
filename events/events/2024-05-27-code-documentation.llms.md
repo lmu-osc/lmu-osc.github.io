@@ -2,22 +2,22 @@
 
 #####  Date & Time
 
-27 May 2024  
+27 May 2024\
 
 #####  Location
 
-Wikipedia Munich  
+Wikipedia Munich\
 Angertorstraße 3, 80469 Munich
 
 #####  Format
 
-In-Person  
+In-Person\
 
 #####  Language
 
-English  
+English\
 
-  
+\
 
 In this session, we will discuss the differences between code commenting and documenting and exchange tips on best practices!
 

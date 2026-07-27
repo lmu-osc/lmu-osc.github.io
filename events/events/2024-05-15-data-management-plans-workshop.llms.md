@@ -2,21 +2,21 @@
 
 #####  Date & Time
 
-15 May 2024  
+15 May 2024\
 
 #####  Location
 
-  
+\
 
 #####  Format
 
-Online  
+Online\
 
 #####  Language
 
-English  
+English\
 
-  
+\
 
 This workshop builds upon the lecture “Introduction to Research Data Management for Medical and Biomedical Sciences,” offered jointly by ZB MED \[1\] and LMU University Library \[2\] in December 2023. The workshop focuses on Data Management Plans (DMPs), a crucial element of successful research data management (RDM) and discipline-specific characteristics in medical and biomedical fields. The workshop will start with a basic introduction to data management plans, including their structure, advantages and possibilities. Through interactive exercises and expert guidance, the workshop will provide participants with the skills necessary to develop DMPs that ensure responsible and efficient data management throughout the research lifecycle. Also, an introduction and demonstration of the use of DMP tools will be provided, focussing on the DMP tool RDMO, which is well established in the German scientific community. This work-shop empowers researchers in medical and biomedical fields to meet funder requirements, enhance research transparency, and promote data sharing and reproducibility.
 
@@ -30,7 +30,7 @@ This workshop builds upon the lecture “Introduction to Research Data Managemen
 
 **Contact details:** [rdm@ub.uni-muenchen.de](mailto:%20rdm@ub.uni-muenchen.de)
 
-\[1\]: <https://www.zbmed.de/>  
+\[1\]: <https://www.zbmed.de/>\
 \[2\]: <https://www.ub.uni-muenchen.de/index.html>
 
 - 

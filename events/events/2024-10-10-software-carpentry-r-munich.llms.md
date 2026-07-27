@@ -2,24 +2,24 @@
 
 #####  Date & Time
 
-10 Oct - 11 Oct 2024  
+10 Oct - 11 Oct 2024\
 
 #####  Location
 
-Mensa Giselastraße  
+Mensa Giselastraße\
 Leopoldstr. 13A, Room 046, 80802 München
 
 #####  Format
 
-In-Person  
+In-Person\
 
 #####  Language
 
-English  
+English\
 
 [ Materials](https://lmu-osc.github.io/2024-10-10-LMU-Leo/)
 
-  
+\
 
 In this Software Carpentry Workshop you will learn the **Unix Shell, Git and R**.
 

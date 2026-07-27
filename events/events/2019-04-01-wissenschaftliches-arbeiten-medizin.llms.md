@@ -2,30 +2,30 @@
 
 #####  Date & Time
 
-01 Apr 2019  
+01 Apr 2019\
 
 #####  Location
 
-HörsaaltraktKlinikum Großhadern  
+HörsaaltraktKlinikum Großhadern\
 
 #####  Format
 
-In-Person  
+In-Person\
 
 #####  Language
 
-German  
+German\
 
-  
+\
 
 Organisiert wird die Veranstaltung von der LMU Open Science Initiative in Medicine (OSIM).
 
 Starten wird das Event mit einem Vortrag von Malcolm Mcleod zu Verschwendung und Replikation in der medizinischen Forschung. Am Nachmittag werden die Themen Reproduzierbarkeit, Data Sharing und Open Science besprochen und diskutiert.
 
-Für Details betrachten Sie bitte den angehängten Flyer und das Poster.  
+Für Details betrachten Sie bitte den angehängten Flyer und das Poster.\
 Bitte leiten Sie diese Nachricht gerne an interessierte Personen weiter oder nutzen Sie das angehängte Material für Aushänge.
 
-Die Veranstaltung ist kostenlos und offen für alle Interessenten.  
+Die Veranstaltung ist kostenlos und offen für alle Interessenten.\
 Anmeldung (wichtig für die Planung von Catering und Teilnahmebestätigungen): [terminplaner4.dfn.de](https://terminplaner4.dfn.de/qRxciPo8sMUQPb7g)
 
 Wir freuen uns auf Ihr Kommen!

@@ -4,5 +4,5 @@ A short radio interview with Felix Schönbrodt by the Bayerischer Rundfunk (Bava
 
 May 13, 2018
 
-Listen to the interview:  
+Listen to the interview:\
 <https://www.br.de/radio/br24/sendungen/campusmagazin/campus-gespraech-felix-schoenbrodt-open-science-center-lmu-100.html>

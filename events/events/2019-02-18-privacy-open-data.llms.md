@@ -2,21 +2,21 @@
 
 #####  Date & Time
 
-18 Feb 2019  
+18 Feb 2019\
 
 #####  Location
 
-  
+\
 
 #####  Format
 
-In-Person  
+In-Person\
 
 #####  Language
 
-German  
+German\
 
-  
+\
 
 The OSC offers a workshop on data privacy and anonymity for participants ranging from graduate students to professors. The workhop will be held by Felix Schönbrodt and Anton Marx.
 

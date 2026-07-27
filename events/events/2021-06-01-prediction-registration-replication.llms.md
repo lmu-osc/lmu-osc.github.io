@@ -2,21 +2,21 @@
 
 #####  Date & Time
 
-01 Jun - 02 Jun 2021  
+01 Jun - 02 Jun 2021\
 
 #####  Location
 
-  
+\
 
 #####  Format
 
-Online  
+Online\
 
 #####  Language
 
-English  
+English\
 
-  
+\
 
 We are incredibly excited to announce an interdisciplinary symposium by the LMU Center for Advanced Studies (CAS) which is co-organized by the [LMU Open Science Center (OSC)](../../index.llms.md "eOpen Science Center"):
 
@@ -24,7 +24,7 @@ We are incredibly excited to announce an interdisciplinary symposium by the LMU 
 
 **“Prediction, Registration, and Replication of Scientific Findings”**
 
-**  **
+**\**
 
 The symposium aims to bring together researchers from several disciplines to discuss recent developments in the agenda of transparent and reproducible science. It consists of presentation for around 40 minutes each followed by short discussions with the audience. Each day of the symposium closes with a general discussion. Among others, the following topics are covered in the symposium:
 

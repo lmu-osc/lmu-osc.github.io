@@ -4,20 +4,20 @@ March 2, 2026
 
 #####  Date & Time
 
-02 Mar - 06 Mar 2026  
+02 Mar - 06 Mar 2026\
 10:00-17:00
 
 #####  Location
 
-  
+\
 
 #####  Format
 
-Online  
+Online\
 
 #####  Language
 
-English  
+English\
 en
 
 [ Materials](https://zenodo.org/communities/lrw/records?q=&l=list&p=1&s=10&sort=newest)

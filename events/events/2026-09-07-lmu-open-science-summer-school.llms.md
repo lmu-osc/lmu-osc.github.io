@@ -4,21 +4,21 @@ April 22, 2026
 
 #####  Date & Time
 
-07 Sep - 15 Sep 2026  
+07 Sep - 15 Sep 2026\
 9:00-17:30
 
 #####  Location
 
-[Philologicum Library  
+[Philologicum Library\
 Ludwigstraße 25, 80539 Munich](https://maps.app.goo.gl/Rvq24yLKyRz92sjQ8)
 
 #####  Format
 
-Hybrid  
+Hybrid\
 
 #####  Language
 
-English  
+English\
 en
 
 [ Materials](https://osf.io/r2j8h/overview)

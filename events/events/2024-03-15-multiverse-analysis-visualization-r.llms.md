@@ -2,24 +2,24 @@
 
 #####  Date & Time
 
-15 Mar 2024  
+15 Mar 2024\
 
 #####  Location
 
-[LMU Open Science Center (Giselastr.)  
+[LMU Open Science Center (Giselastr.)\
 Leopoldstraße 13, Room 2201, 80802 Munich](https://www.google.com/maps/place/Ludwig-Maximilian-Universit%C3%A4t+M%C3%BCnchen/@48.1559372,11.5833416,19.19z/data=!3m1!5s0x479e75bf863d5581:0x29d36540810c2590!4m6!3m5!1s0x479e75c07933e683:0x4851cac28ba68cb4!8m2!3d48.1558072!4d11.5829777!16s%2Fg%2F1hc2d61v7?entry=ttu&g_ep=EgoyMDI2MDUyMC4wIKXMDSoASAFQAw%3D%3D)
 
 #####  Format
 
-In-Person  
+In-Person\
 
 #####  Language
 
-English  
+English\
 
 [ Materials](https://osf.io/7qr4x/)
 
-  
+\
 
 **Abstract**: To describe the multitude of researchers’ methodological choices when analyzing data, Gelman and Loken (2013) coined the term “garden of forking paths”. Multiple defensible alternative options are available for selection throughout the study design, data preprocessing and data analysis workflow. In line with a traditional analysis approach, researchers will select one sole workflow of defensible options and often do not specifically disclose how the decisions were made. However, a multiple comparison problem occurs even if only one constructed dataset following one single workflow of decisions is used for statistical inferences. The reason is that theoretically a large variety of workflows is possible, but researchers do not correct their hypothesis tests for potential comparisons that they did not explicitly carry out.
 

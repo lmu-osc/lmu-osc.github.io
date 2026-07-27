@@ -2,21 +2,21 @@
 
 #####  Date & Time
 
-24 Apr 2024  
+24 Apr 2024\
 
 #####  Location
 
-Hybrid (LMU Department of Sociology, IfS 309, Munich and via Zoom)  
+Hybrid (LMU Department of Sociology, IfS 309, Munich and via Zoom)\
 
 #####  Format
 
-Hybrid  
+Hybrid\
 
 #####  Language
 
-English  
+English\
 
-  
+\
 
 #### Presenters
 

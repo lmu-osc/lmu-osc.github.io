@@ -2,23 +2,23 @@
 
 #####  Date & Time
 
-22 Jul 2022  
+22 Jul 2022\
 
 #####  Location
 
-Hybrid (Room 3322 at Leopoldstraße 13, Munich or via Zoom)  
+Hybrid (Room 3322 at Leopoldstraße 13, Munich or via Zoom)\
 
 #####  Format
 
-Hybrid  
+Hybrid\
 
 #####  Language
 
-English  
+English\
 
 [ Materials](https://doi.org/10.1026/0033-3042/a000562)
 
-  
+\
 
 The Journal Club: “ReproducibiliTea” at LMU Munich continues with its eighth meeting to discuss Open Science knowledge and prevalence of QRPs among students. The organization team is happy to announce that one of the paper’s and the position paper’s authors, Maximilian Frank, will give an introductory talk to this session and participate in the open discussion afterwards:
 
@@ -36,7 +36,7 @@ In recent years, there has been an intensive debate within psychology about the
 
 About the speaker:
 
-Maximilian Frank studied psychology at the Ludwig-Maximilians-University of Munich and graduated in the interdisciplinary master’s program Human Factors in Engineering at the Technical University of Munich. Since 2022 he  
+Maximilian Frank studied psychology at the Ludwig-Maximilians-University of Munich and graduated in the interdisciplinary master’s program Human Factors in Engineering at the Technical University of Munich. Since 2022 he\
 is a doctoral candidate in the DFG priority program “META-REP” and conducts research on heterogeneity estimations in meta-analyses. As coordinator of the Open Science Working Group of the Psychologie-Fachschaften-Konferenz (PsyFaKo) he is committed to open research practices and their communication in academic teaching.
 
 ## Concept of the Journal Club

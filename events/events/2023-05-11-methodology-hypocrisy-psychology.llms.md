@@ -2,22 +2,22 @@
 
 #####  Date & Time
 
-11 May 2023  
+11 May 2023\
 
 #####  Location
 
-[LMU Open Science Center (Giselastr.)  
+[LMU Open Science Center (Giselastr.)\
 Leopoldstraße 13, Room 3322, 80802 Munich](https://www.google.com/maps/place/Ludwig-Maximilian-Universit%C3%A4t+M%C3%BCnchen/@48.1559372,11.5833416,19.19z/data=!3m1!5s0x479e75bf863d5581:0x29d36540810c2590!4m6!3m5!1s0x479e75c07933e683:0x4851cac28ba68cb4!8m2!3d48.1558072!4d11.5829777!16s%2Fg%2F1hc2d61v7?entry=ttu&g_ep=EgoyMDI2MDUyMC4wIKXMDSoASAFQAw%3D%3D)
 
 #####  Format
 
-  
+\
 
 #####  Language
 
-English  
+English\
 
-  
+\
 
 We invite you to an in person guest lecture from J.P. de Ruiter (Tufts University, Department of Computer Science) on “Methodological Hypocrisy in Psychology“ - see abstract below. The talk takes the field of psychology as a starting point, but also makes more general points about statistical practices, NHST, and academic incentive structures that apply to many scientific fields.
 
@@ -27,9 +27,9 @@ Both the lecture and the discussion will take place solely in person on this occ
 
 ### Abstract
 
-It is plausible that the widespread use of Questionable (or worse) Research Practices has substantially contributed to the current replication crisis in psychology. But would we still have a replication crisis if everyone had always played by the rules?  
-We like to believe that we are aiming to be objective and self-critical, working towards a reliable body of knowledge about the mind/brain. Our methodological Superego is still guided by Popperian Falsificationism and Feynmanian “bending over backwards”. However, our methodological Id wants to publish as many influential papers as we can, with as few resources as possible. In this Freudian model, it is the job of the methodological Ego to negotiate between these two conflicting desires.  
-Our current system of methodological conventions, rules, and practices, essentially a fusion of inverse Falsificationism and NHST, is very effective at keeping both Superego and Id happy: it gives the impression of being objective, self-critical, and scientific, while at the same time making it very easy, too easy, to reach evidence standards that allow us to publish our claims. This means that even if we all “played by the rules”, we would still not produce reliable knowledge.  
+It is plausible that the widespread use of Questionable (or worse) Research Practices has substantially contributed to the current replication crisis in psychology. But would we still have a replication crisis if everyone had always played by the rules?\
+We like to believe that we are aiming to be objective and self-critical, working towards a reliable body of knowledge about the mind/brain. Our methodological Superego is still guided by Popperian Falsificationism and Feynmanian “bending over backwards”. However, our methodological Id wants to publish as many influential papers as we can, with as few resources as possible. In this Freudian model, it is the job of the methodological Ego to negotiate between these two conflicting desires.\
+Our current system of methodological conventions, rules, and practices, essentially a fusion of inverse Falsificationism and NHST, is very effective at keeping both Superego and Id happy: it gives the impression of being objective, self-critical, and scientific, while at the same time making it very easy, too easy, to reach evidence standards that allow us to publish our claims. This means that even if we all “played by the rules”, we would still not produce reliable knowledge.\
 It is very difficult to change this situation, because the current incentive structures in scientific psychology strongly reward the publication of attractive findings, while there are hardly (if any) negative consequences for publishing false claims. Nevertheless, I will optimistically suggest a number of potential improvements.
 
 #### Presenters

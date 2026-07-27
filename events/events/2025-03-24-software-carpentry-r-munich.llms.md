@@ -2,24 +2,24 @@
 
 #####  Date & Time
 
-24 Mar 2025  
+24 Mar 2025\
 
 #####  Location
 
-[Philologicum Library  
+[Philologicum Library\
 Ludwigstraße 25, 80539 Munich](https://maps.app.goo.gl/Rvq24yLKyRz92sjQ8)
 
 #####  Format
 
-In-Person  
+In-Person\
 
 #####  Language
 
-English  
+English\
 
 [ Materials](https://lmu-osc.github.io/2025-03-24-LMU-Humanities/)
 
-  
+\
 
 In this Software Carpentry Workshop you will learn the **Unix Shell, Git and R**.
 

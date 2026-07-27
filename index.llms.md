@@ -95,14 +95,6 @@ OSC member, Dr. Sabine Hoffmann, is the lead author of a newly published interna
 
 Events [View All Events](events/index.llms.md)
 
-###### Hybrid · Jun 10, 2026
-
-##### [OSPARK Bootcamp Munich - Promote your Open Research Passion!](events/events/2026-06-10-ospark-bootcamp.llms.md)
-
-The OSPARK bootcamp is a 6-week online course and a 2-day onsite workshop all about creating visibility through outreach and marketing. It's a learning opportunity for people working in or leading Open Research initiatives, services or infrastructures.
-
-[See Event →](events/events/2026-06-10-ospark-bootcamp.llms.md)
-
 ###### Hybrid · Sep 7, 2026
 
 ##### [LMU Open Science Summer School 2026](events/events/2026-09-07-lmu-open-science-summer-school.llms.md)
@@ -110,6 +102,14 @@ The OSPARK bootcamp is a 6-week online course and a 2-day onsite workshop all ab
 Apply to attend the workshops or register to attend the public lectures now! Our annual Summer School will take place on Sept 7-11 (Track 1) and Sept 14-15 (Track 2), 2026.
 
 [See Event →](events/events/2026-09-07-lmu-open-science-summer-school.llms.md)
+
+###### Past Event · Hybrid · Jun 10, 2026
+
+##### [OSPARK Bootcamp Munich - Promote your Open Research Passion!](events/events/2026-06-10-ospark-bootcamp.llms.md)
+
+The OSPARK bootcamp is a 6-week online course and a 2-day onsite workshop all about creating visibility through outreach and marketing. It's a learning opportunity for people working in or leading Open Research initiatives, services or infrastructures.
+
+[See Event →](events/events/2026-06-10-ospark-bootcamp.llms.md)
 
 ###### Past Event · In-Person · Mar 11, 2026
 

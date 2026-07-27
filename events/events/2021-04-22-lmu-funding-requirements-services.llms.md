@@ -2,25 +2,25 @@
 
 #####  Date & Time
 
-22 Apr 2021  
+22 Apr 2021\
 
 #####  Location
 
-  
+\
 
 #####  Format
 
-Online  
+Online\
 
 #####  Language
 
-English  
+English\
 
-  
+\
 
 The LMU Open Science Center, the Unit for Research Funding and the University Library cordially invite to the online workshop “Research Data Management & Open Science: Trends, Funding Requirements and Services at LMU”.
 
-Research data management is becoming increasingly relevant across different scientific disciplines and fields. While more and more researchers actively choose to make their research data open, dedicated strategies for data management are required by funding agencies such as the European Commission, the DFG and BMBF. In the EU’s new framework program Horizon Europe, Open Science is mandatory for all projects.  
+Research data management is becoming increasingly relevant across different scientific disciplines and fields. While more and more researchers actively choose to make their research data open, dedicated strategies for data management are required by funding agencies such as the European Commission, the DFG and BMBF. In the EU’s new framework program Horizon Europe, Open Science is mandatory for all projects.\
 In this interactive workshop, the LMU Open Science Center, the Unit for Research Funding and the University Library join forces to present an overview on recent trends, funding requirements and services available at LMU. The workshop will be kicked off with a primer on the current discussions surrounding open data by Felix Schönbrodt, followed by a presentation by the Research Funding Unit on the policies of funders such as the German Research Foundation (DFG), BMBF and the European Commission, with a special focus on presenting data management and open data in the application. It will close with a hands-on presentation of online resources and tools that support researchers from creating data management plans to implementing effective data management workflows for their projects, including possible storage and open access strategies by the LMU University Library.
 
 PS: After the workshop, the biannual members’ meeting of the LMU Open Science Center will take place (from 5pm to 6pm). Participants of the workshop who are interested in the work of the OSC are cordially invited to join the members meeting as guests.

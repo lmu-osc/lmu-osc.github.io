@@ -4,21 +4,21 @@ May 8, 2018
 
 #####  Date & Time
 
-08 May 2018  
+08 May 2018\
 18:00 - 20:00
 
 #####  Location
 
-[LMU Hauptgebäude, Senatssaal der LMU, Raum E110  
+[LMU Hauptgebäude, Senatssaal der LMU, Raum E110\
 Geschwister-Scholl-Platz 1, 80539 München](http://www.uni-muenchen.de/raumfinder/index.html#/building/bw0000/map?room=001901238_#/building/bw0000/map?room=001901238_)
 
 #####  Format
 
-In-person  
+In-person\
 
 #####  Language
 
-German  
+German\
 
 ## Overview
 
@@ -37,7 +37,7 @@ For planning and estimating the number of guests, we would be glad if you could 
 
 Speaking for the OSC, with best regards,
 
-[Prof. Dr. Katrin Auspurg](../../people/people/katrin-auspurg.llms.md) (Speaker)  
+[Prof. Dr. Katrin Auspurg](../../people/people/katrin-auspurg.llms.md) (Speaker)\
 [PD Dr. Felix Schönbrodt](../../people/people/felix-schoenbrodt.llms.md) (Managing Director)
 
 #### Presenters

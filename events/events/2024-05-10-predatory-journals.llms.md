@@ -2,20 +2,20 @@
 
 #####  Date & Time
 
-10 May 2024  
+10 May 2024\
 14:00 CET
 
 #####  Location
 
-  
+\
 
 #####  Format
 
-Hybrid  
+Hybrid\
 
 #####  Language
 
-English  
+English\
 
 [ Materials](https://osf.io/kyvut/files/rv5p7)
 

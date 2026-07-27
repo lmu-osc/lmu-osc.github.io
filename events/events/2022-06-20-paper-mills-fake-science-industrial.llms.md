@@ -2,23 +2,23 @@
 
 #####  Date & Time
 
-20 Jun 2022  
+20 Jun 2022\
 
 #####  Location
 
-Hybrid (Luisenstraße 37, Munich and via Zoom)  
+Hybrid (Luisenstraße 37, Munich and via Zoom)\
 
 #####  Format
 
-Hybrid  
+Hybrid\
 
 #####  Language
 
-English  
+English\
 
 [ Materials](https://osf.io/47utb/)
 
-  
+\
 
 *Our trust in the integrity of academic publishing is the very foundation of the advancement of the sciences and medicine. There are many ways scientific misconduct and questionable research practices undermine trust in science, including number nudging, cherry-picking, abstract spin, plagiarism, or pure data fabrication. During the last decade, however, we witnessed an unprecedented and concerning kind of misconduct: Industry-style, semi-automatic production of fake scientific publications by so-called “paper mills”, professional agencies that fake scientific data, figures, tables, and manuscripts including most recently artificial intelligence. While the number of publications with fake science is generally considered to be small, their number has scaled up and reaches concerning levels in some fields (medicine est. 200,000 annually), supporting a billion EURO paper mill business model. It should be considered a systematic criminal attack on the permanent scientific record (Sabel & Seifert 2021). The symposium sheds light on this new phenomenon and provides a discussion forum for the perspectives of researchers, editors, and publishers.*
 

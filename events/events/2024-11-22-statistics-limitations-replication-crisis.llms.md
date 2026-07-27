@@ -2,23 +2,23 @@
 
 #####  Date & Time
 
-22 Nov 2024  
+22 Nov 2024\
 
 #####  Location
 
-Munich  
+Munich\
 
 #####  Format
 
-In-Person  
+In-Person\
 
 #####  Language
 
-English  
+English\
 
 [ Materials](https://sites.google.com/view/epix-workshop/)
 
-  
+\
 
 The aim of the symposium is to bring together statisticians, philosophers of science, and other interested researchers to discuss aspects of **Open Science** and the **replication crisis** from an epistemic perspective on the foundations and limitations of statistics.
 
@@ -39,7 +39,7 @@ With keynotes by select speakers and ample time for discussion, we will address 
 
 **Registration:**
 
-**  **
+**\**
 
 Participation is open to everyone and free of charge. Seats will be given on a first-register, first-serve basis.
 

@@ -2,30 +2,30 @@
 
 #####  Date & Time
 
-05 Dec 2018  
+05 Dec 2018\
 
 #####  Location
 
-Schellingstr. 3 Room S005  
+Schellingstr. 3 Room S005\
 
 #####  Format
 
-In-Person  
+In-Person\
 
 #####  Language
 
-English  
+English\
 
-  
+\
 
 ![McShaneL2](../../images/mcshane.jpg)
 
 **The [IBE](https://www.ibe.med.uni-muenchen.de/index.html), LMU Open Science Center, [STRATOS](https://www.stratos-initiative.org/), and the [European Bioconductor Meeting](https://github.com/Bioconductor/EuroBioc2018) cordially invite to a guest talk:**
 
-*  *
+*\*
 
-*When: December 5, 2018 - 5 pm s.t.  
-Where: Schellingstr. 3, Room S005  *
+*When: December 5, 2018 - 5 pm s.t.\
+Where: Schellingstr. 3, Room S005\*
 
 ### Abstract:
 

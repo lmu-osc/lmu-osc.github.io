@@ -2,23 +2,23 @@
 
 #####  Date & Time
 
-08 Mar 2022  
+08 Mar 2022\
 
 #####  Location
 
-  
+\
 
 #####  Format
 
-Online  
+Online\
 
 #####  Language
 
-German  
+German\
 
 [ Materials](https://osf.io/wur7s/overview)
 
-  
+\
 
 **The workshop slides can be downloaded below.**
 

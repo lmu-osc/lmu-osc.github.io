@@ -2,24 +2,24 @@
 
 #####  Date & Time
 
-11 Sep - 15 Sep 2023  
+11 Sep - 15 Sep 2023\
 
 #####  Location
 
-[Philologicum Library  
+[Philologicum Library\
 Ludwigstraße 25, 80539 Munich](https://maps.app.goo.gl/Rvq24yLKyRz92sjQ8)
 
 #####  Format
 
-Hybrid  
+Hybrid\
 
 #####  Language
 
-English  
+English\
 
 [ Materials](https://osf.io/nymr5/)
 
-  
+\
 
 The LMU Open Science Center organizes this hybrid open research summer school to allow early-career researchers to gain more trust in the research that they do, and make it as credible as it can be in the eyes of their peers, the public, and funding agencies.
 

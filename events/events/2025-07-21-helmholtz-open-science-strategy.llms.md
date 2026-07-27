@@ -2,24 +2,24 @@
 
 #####  Date & Time
 
-21 Jul 2025  
+21 Jul 2025\
 
 #####  Location
 
-Math Institute of LMU  
+Math Institute of LMU\
 Theresienstr. 39, 80333 Munich
 
 #####  Format
 
-Hybrid  
+Hybrid\
 
 #####  Language
 
-English  
+English\
 
 [ Materials](https://osf.io/c826k)
 
-  
+\
 
 We will welcome the Head of Helmholtz Open Science Office, Dr. Mathijs Vleugel, to present the Helmholtz open science strategy and the activities of his office. This will be followed by discussions about possible strategies that can be implemented at the LMU.
 

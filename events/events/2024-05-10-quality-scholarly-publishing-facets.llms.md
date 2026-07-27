@@ -2,21 +2,21 @@
 
 #####  Date & Time
 
-10 May 2024  
+10 May 2024\
 
 #####  Location
 
-Zoom (online)  
+Zoom (online)\
 
 #####  Format
 
-Online  
+Online\
 
 #####  Language
 
-English  
+English\
 
-  
+\
 
 The relevance and validity of the sciences as well as the reputation of scholars are more and more questioned, at best, or put in disrepute, at worst. Upholding the highest quality standards in scholarly communication is thus of vital importance for scholarship as well as for safeguarding the integrity of the scholarly commons and the scholarly ecosystem. Predatory publishing has gained much prominence in recent years as one new persistent phenomenon that undermines the foundation of scholarly publishing and its principles and standards. On the 10th of May you are invited to a lively discussion and exchange on this matter. Veronika Reinertshofer (UB LMU) Susanne Luger (JKU Linz, Project ‘Predatory Publishing’, Austrians Transition to Open Access 2) and Clara Ginther (University of Veterinary Medicine, Vienna, Project ‘Predatory Publishing’, Austrians Transition to Open Access 2) will provide short inputs on quality and scholarly publishing as well as predatory publishing. This is interlaced with opportunities for discussion and exploration. The aim is to initiate an ongoing dialogue on how to address these questionable practices which are ever-evolving and changing.
 

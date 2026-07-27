@@ -84,7 +84,7 @@ In a version controlled workflow, you back up your local Git repositories on the
 
 > **NOTE:**
 >
-> - **Git** is a version control system that tracks changes in text files (e.g. CSV, plain text, R, Python). The Git software and your Git repositories should be, respectively, installed and located in your local environment (i.e. on your computer, not on a drive, see [Git tutorial](https://lmu-osc.github.io/Introduction-RStudio-Git-GitHub/)).  
+> - **Git** is a version control system that tracks changes in text files (e.g. CSV, plain text, R, Python). The Git software and your Git repositories should be, respectively, installed and located in your local environment (i.e. on your computer, not on a drive, see [Git tutorial](https://lmu-osc.github.io/Introduction-RStudio-Git-GitHub/)).\
 > - **GitHub** is the most popular, free but proprietary and US-based cloud-based platform for software development with Git, providing collaboration features like pull requests and issues (see [GitHub tutorial](https://lmu-osc.github.io/Collaborative-RStudio-GitHub/)). **You should not have any sensitive information on GitHub even in a private repository.**
 > - **LRZ GitLab** is a cloud-based hosting platform that works exactly the same as GitHub but is free and open source and is installed on the LRZ servers for LMU Munich and can therefore be considered secure when the repository is private.
 >

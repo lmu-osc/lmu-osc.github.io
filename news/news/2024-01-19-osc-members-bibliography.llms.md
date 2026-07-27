@@ -6,7 +6,7 @@ January 19, 2024
 
 We have created a **bibliography of OSC members’ open science and meta-research work**, which you can access as:
 
-- an [interactive webpage](https://www.resources.osc.lmu.de/bibliography/)  
+- an [interactive webpage](https://www.resources.osc.lmu.de/bibliography/)\
 - an online [Zotero library](https://www.zotero.org/groups/5213376/lmuopensciencecenter_memberspublications/library)
 
 We hope this will **inspire further collaborations** between our members, provide resources for journal clubs in your respective units, and showcase the emergence of the meta-research field.

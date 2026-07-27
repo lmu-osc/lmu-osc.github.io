@@ -226,9 +226,9 @@ In later sections, you will acquire skills in data management and reproducible w
 >
 > The ***FAIR principles*** are defined as:
 >
-> - **F**indable: ***metadata*** should be deposited in a searchable repository and be assigned a permanent identifier  
-> - **A**ccessible: the data is either open, or accessible upon some authentication process, or closed, but with open ***metadata***.  
-> - **I**nteroperable: the data is described with a standard terminology (so the dataset can be merged with other ones) and saved in a stable file format  
+> - **F**indable: ***metadata*** should be deposited in a searchable repository and be assigned a permanent identifier\
+> - **A**ccessible: the data is either open, or accessible upon some authentication process, or closed, but with open ***metadata***.\
+> - **I**nteroperable: the data is described with a standard terminology (so the dataset can be merged with other ones) and saved in a stable file format\
 > - **R**eusable: the data is richly documented (e.g. with a data dictionary) and is accompanied by a data usage license See <https://www.go-fair.org/fair-principles/> for more information.
 >
 > ***Metadata*** are data about your data, such as author, date, measurement device, unit of measurement, context of data collection, etc.
@@ -454,16 +454,16 @@ Preregistration templates, embargoes, file storage.
 
 In our context, a computer simulation is the generation of artificial data to build up an understanding of real data and the statistical models we use to analyze them. You can simulate data to:
 
-- **Test your statistical intuition or demonstrate mathematical properties you cannot easily anticipate**.  
+- **Test your statistical intuition or demonstrate mathematical properties you cannot easily anticipate**.\
   *Example: Check whether there are more than 5% significant effects (assuming \\\alpha = .05\\) when random data from \\H_0\\ are generated.*
 
-- **Understand sampling theory and probability distributions or test whether you understand the underlying processes of your system.**  
+- **Understand sampling theory and probability distributions or test whether you understand the underlying processes of your system.**\
   *Example: See whether simulated data drawn from specific distributions is comparable to real data.*
 
-- **Perform power analyses.**  
+- **Perform power analyses.**\
   *Example: Assess whether the sample size (within a simulation repetition) is high enough to detect a simulated effect in more than 80% of the cases. (see [1.4.3. Power analyses](#sec-explore-and-reuse))*
 
-- **Prepare a pre-analysis plan.**  
+- **Prepare a pre-analysis plan.**\
   *Example: To strengthen your planned confirmatory analyses before collecting data, consider sharing a simulated dataset with a statistician or mentor. This allows for specific feedback on suitable statistical tests. The resulting analysis code can accompany your preregistration or registered report (see [1.4.1. Pre-analysis planning](#sec-explore-and-reuse)) so reviewers can clearly see your intended approach. When real data are collected, they can be directly substituted into the code to generate results.*
 
 Generating an artificial dataset in R (see our [simulation tutorial](https://lmu-osc.github.io/Introduction-Simulations-in-R/)) is much easier than you might think and is often very helpful, even when you need to make assumptions about variable distribution or when the parameter space is not well known.

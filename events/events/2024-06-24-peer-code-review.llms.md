@@ -2,22 +2,22 @@
 
 #####  Date & Time
 
-24 Jun 2024  
+24 Jun 2024\
 
 #####  Location
 
-Wikipedia Munich  
+Wikipedia Munich\
 Angertorstraße 3, 80469 Munich
 
 #####  Format
 
-In-Person  
+In-Person\
 
 #####  Language
 
-English  
+English\
 
-  
+\
 
 In this session, Vera Karlbauer will walk us through an example of how to review the code of a colleague. We will then discuss best practices surrounding code review and brainstorm around the possibility of creating a code review network in Munich.
 

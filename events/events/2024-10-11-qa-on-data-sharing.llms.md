@@ -2,20 +2,20 @@
 
 #####  Date & Time
 
-11 Oct 2024  
+11 Oct 2024\
 14:00 CET
 
 #####  Location
 
-  
+\
 
 #####  Format
 
-Hybrid  
+Hybrid\
 
 #####  Language
 
-English  
+English\
 
 ## Event Details
 

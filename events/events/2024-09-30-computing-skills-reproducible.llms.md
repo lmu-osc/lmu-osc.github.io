@@ -2,22 +2,22 @@
 
 #####  Date & Time
 
-30 Sep 2024  
+30 Sep 2024\
 
 #####  Location
 
-Wikipedia Munich  
+Wikipedia Munich\
 Angertorstraße 3, 80469 Munich
 
 #####  Format
 
-In-Person  
+In-Person\
 
 #####  Language
 
-English  
+English\
 
-  
+\
 
 In this session, we will welcome newcomers (with pastries!) and revisit essential computing skills for reproducible workflow.
 
@@ -30,7 +30,7 @@ After our recent open science summer school, we shared several self-paced tutori
 - Introduction to Zotero as reproducible citation management system: <https://lmu-osc.github.io/introduction-to-zotero/>
 - Code publishing: <https://lmu-osc.github.io/code-publishing/>
 
-and more, on the LMU Open Science Center GitHub organization: <https://github.com/lmu-osc>  
+and more, on the LMU Open Science Center GitHub organization: <https://github.com/lmu-osc>\
 Whether you have followed these tutorials during one of our workshops, on your own, or learn about these topics elsewhere, you are invited to bring your questions or implementation problems along to get help from others!
 
 For instance,
