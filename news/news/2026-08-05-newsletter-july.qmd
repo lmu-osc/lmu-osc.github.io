@@ -1,0 +1,15 @@
+---
+title: "Newsletter July 2026"
+date: 2026-08-05
+categories: ["Newsletters"]
+description: "Read the latest news and updates from the LMU Open Science Center in our July 2026 newsletter."
+flyer:
+    - file: assets/newsletter_2026_july.pdf
+      title: LMU OSC Newsletter - July 2026
+
+template: templates/news-template.html
+filters:
+  - templates/process-news-yaml.lua
+---
+
+
