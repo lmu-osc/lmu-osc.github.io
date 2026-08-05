@@ -2,6 +2,7 @@
 
 | Date | Title | Categories |
 |----|----|----|
+| Aug 5, 2026 | [Newsletter July 2026](../news/news/2026-08-05-newsletter-july.llms.md) | Newsletters |
 | Jul 20, 2026 | [OSC Member Maximilian Frank Receives 2026 DGPs Quality Assurance Award](../news/news/2026-07-20-maximilian-frank-dpg-award.llms.md) | Awards/Recognition |
 | Jul 1, 2026 | [OSC Members Contribute to GUIDE-LLM Reporting Guidelines](../news/news/2026-07-01-llm-guidelines-publication.llms.md) | Publications |
 | Jun 12, 2026 | [International Guideline for Routinely Collected Health Data](../news/news/2026-06-12-guidelines-for-routinely-collected-health-data.llms.md) | Publications |
