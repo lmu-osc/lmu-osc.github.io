@@ -69,6 +69,14 @@ Keep up to date with our latest news releases, and upcoming events.
 
 News [View All News](news/index.llms.md)
 
+###### Aug 5, 2026
+
+##### [Newsletter July 2026](news/news/2026-08-05-newsletter-july.llms.md)
+
+Read the latest news and updates from the LMU Open Science Center in our July 2026 newsletter.
+
+[Read More →](news/news/2026-08-05-newsletter-july.llms.md)
+
 ###### Jul 20, 2026
 
 ##### [OSC Member Maximilian Frank Receives 2026 DGPs Quality Assurance Award](news/news/2026-07-20-maximilian-frank-dpg-award.llms.md)
@@ -84,14 +92,6 @@ OSC Member and Special Advisor Maximilian Frank receives the Award for Quality A
 New GUIDE-LLM reporting guidelines, co-authored by OSC members Stefan Feuerriegel and Barbara Plank, provide researchers with a framework for transparently reporting the use of LLMs in research.
 
 [Read More →](news/news/2026-07-01-llm-guidelines-publication.llms.md)
-
-###### Jun 12, 2026
-
-##### [International Guideline for Routinely Collected Health Data](news/news/2026-06-12-guidelines-for-routinely-collected-health-data.llms.md)
-
-OSC member, Dr. Sabine Hoffmann, is the lead author of a newly published international guideline in The BMJ for improving the quality, transparency, and reproducibility of research based on routinely collected health data.
-
-[Read More →](news/news/2026-06-12-guidelines-for-routinely-collected-health-data.llms.md)
 
 Events [View All Events](events/index.llms.md)
 
