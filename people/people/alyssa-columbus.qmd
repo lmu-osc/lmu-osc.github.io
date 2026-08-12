@@ -1,0 +1,65 @@
+---
+# Member parameters
+title: Alyssa Columbus
+academic_title: MSc.
+
+# Name fields — these replace the old single `name` + `surname` + `first_name` fields.
+# The full display name is automatically constructed from given-names + family-names.
+# family-names is used for alphabetical sorting across all listing pages.
+
+family-names: Columbus
+given-names: Alyssa
+
+# No separate "name" or "surname" or "first_name" fields should be used.
+
+categories:
+  - Math Informatics & Stats
+
+# There is no limit to the number of memberships a person can have. All memberships must have a type, status, and start year.
+# See documentation for more details on the different types of memberships and their status options.
+memberships:
+  - type: fellow
+    status: active
+    start: 2026
+    position: Ph.D. Candidate
+    faculty: Math, Informatics & Stats
+
+# if desired by the member, add a photo to the people/people/images folder and link to it here
+photo: "images/alyssa_columbus.jpg"
+email: alyssa.columbus@campus.lmu.de
+personal: |
+  Ph.D. Candidate at Faculty of Mathematics, Informatics and Statistics, Institut für Statistik (Fulbright Visiting Researcher, with Sabine Hoffmann); and Johns Hopkins Bloomberg School of Public Health, Department of Biostatistics
+
+# certain keywords for the label are recognized and the output is sorted in this priority: LMU Profile, Professional Profile, Personal Website, and Professional Website. see documentation for details on these labels. other links appear in the order they are listed in the YAML file.
+links:
+  - label: "Personal Website"
+    url: "https://alyssacolumbus.com"
+
+# Social media links - variable number
+social_media:
+  ORCID: "https://orcid.org/0000-0002-5510-8364"
+
+# Mission statement paragraphs - variable number
+mission_statement: |
+  My research is on trustworthy data science for education, health, and policy- how the many defensible choices in an analysis shape the conclusions we draw, and how to make that process transparent enough for others to check. Open science, to me, is what makes that checking possible. I work across several of its parts rather than one, from open-source software development and software peer review to the responsible handling of sensitive data, the last of these drawing on the years I spent in information security and data governance before returning to academia. I care most about the pieces that tend to get less attention than open access and open data, and about building training that carries across disciplines instead of staying inside any single field.
+
+# Research interests - variable number
+# research_interests:
+#   - "Open Science"
+
+# Publications - variable number
+# publications:
+#   - year: 2025
+#     title: Paper title
+#     authors: List of authors, likely in the format "LastName Initials, LastName Initials, ..."
+#     journal: Journal name
+#     doi_url: DOI link to the publication
+
+
+# these must be included always.
+template: templates/people-template.html
+filters: 
+    - templates/people_filter.lua
+---
+
+<!-- additional content **can** be included here, and appears after the Mission Statement but before the Research Interests. Any content that Quarto can render can be included here, namely R/Python/Julia code chunks, Markdown formatting, more HTML, etc. Main reasons to use this though: code blocks, and to include files. -->
