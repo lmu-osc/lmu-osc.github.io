@@ -12,6 +12,16 @@ B.Sc. Student
 
 Psychology & Education
 
+[](https://orcid.org/0000-0002-5510-8364)
+
+[![Profile](people/images/alyssa_columbus.jpg)](../people/people/alyssa-columbus.llms.md)
+
+[Alyssa Columbus](../people/people/alyssa-columbus.llms.md)
+
+Ph.D. Candidate
+
+Math, Informatics & Stats
+
 [](https://orcid.org/0000-0002-8140-3519)
 
 [![Profile](people/images/frank_maximilian.jpg)](../people/people/maximilian-frank.llms.md)
