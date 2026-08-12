@@ -41,14 +41,14 @@ Checkpoint: Manuscript submission with DOIs for preregistration, data, and code
 </span>
 <div class="accordion-title">
 
-### FAIR Data Sharing 
+### FAIR & Responsible Data Sharing
 </div>
 </div>
 <button class="accordion-button collapsed accordion-toggle-only" type="button"
   data-bs-toggle="collapse"
   data-bs-target="#collapseOne"
   aria-expanded="false"
-  aria-label="Toggle FAIR Data Sharing section"></button>
+  aria-label="Toggle FAIR & Responsible Data Sharing section"></button>
 </div>
 <div id="collapseOne" class="accordion-collapse collapse">
 <div class="accordion-body p-4">
@@ -86,6 +86,7 @@ When deciding whether data should be shared, consider the following:
 - Consider whether the data can be **anonymized** without losing scientific value (see [2.3.2. Anonymization](02-collect-and-manage.qmd#sec-ethics-and-privacy){.mark}).
 - If you work with **sensitive data**, you may consult the University's [data protection officer](https://www.lmu.de/en/about-lmu/structure/organizational-structure/officers-representatives-and-contact-persons/data-protection-officer.html). 
 - If your research outputs could have **dual-use** implications (e.g. that could also be applied for military or malicious purposes), consult the relevant regulations (e.g. European Commission's policy ([Dual-Use Regulation 2021/821](https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L:2021:206:FULL&from=EN))) and contact the University's [Export Control service](mailto:Exportkontrolle@Verwaltung.Uni-Muenchen.DE).
+- If your data involves **people or communities**, review whether your sharing approach aligns with the [CARE Principles](https://www.gida-global.org/careprinciples) for responsible data use (see [1.2.3. Ethics](01-plan-and-design.qmd#sec-legal-requirements){.mark}).
 - If your research may lead to **patents or commercialization**, contact the the University's [IP Management team](https://www.lmu.de/en/research/research-transfer/inventions-patents-and-exploitation-rights/) before sharing data. Early consultation helps ensure that intellectual property rights are not compromised.
 
 
