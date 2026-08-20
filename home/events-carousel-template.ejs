@@ -26,7 +26,6 @@
     comparisonDate.setHours(0, 0, 0, 0);
     return comparisonDate >= today;
   }
-
   function isPast(item) {
     return !isUpcoming(item);
   }
@@ -49,6 +48,7 @@
     return db.getTime() - da.getTime();
   }
 
+  // String version, e.g. "Aug 12" — used in the subtitle line if needed
   function formatEventDate(item) {
     const startDate = parseEventDate(item && item.event && item.event.start_date);
     if (!startDate) return '';
@@ -57,6 +57,17 @@
       day: 'numeric',
       year: 'numeric'
     });
+  }
+
+  // Object version, e.g. { day: "12", month: "AUG" } 
+  function getEventDayMonth(item) {
+    const startDate = parseEventDate(item && item.event && item.event.start_date);
+    if (!startDate) return { day: '', month: '' };
+    const months = ['JAN','FEB','MAR','APR','MAY','JUN','JUL','AUG','SEP','OCT','NOV','DEC'];
+    return {
+      day: String(startDate.getDate()),
+      month: months[startDate.getMonth()]
+    };
   }
 
   function getEventType(item) {
@@ -71,7 +82,7 @@
     return 'Event';
   }
 
-  function getEventDescription(item) {
+    function getEventDescription(item) {
     if (!item) return '';
     if (item.event && item.event.card_description) return item.event.card_description;
     if (item.description) return item.description;
@@ -81,45 +92,67 @@
   const upcoming = sourceItems.filter(isUpcoming).sort(sortAscendingByDate);
   const past = sourceItems.filter((item) => !isUpcoming(item)).sort(sortDescendingByDate);
 
-  let carouselItems = upcoming.slice();
-  if (carouselItems.length < 3) {
-    const required = 3 - carouselItems.length;
-    carouselItems = carouselItems.concat(past.slice(0, required));
+  const MAX_ITEMS = 2;
+  let displayItems = upcoming.slice();
+  if (displayItems.length < MAX_ITEMS) {
+    const required = MAX_ITEMS - displayItems.length;
+    displayItems = displayItems.concat(past.slice(0, required));
+  } else {
+    displayItems = displayItems.slice(0, MAX_ITEMS);
   }
 %>
-<div class="card carousel-card h-100 border border-success-subtle">
-  <div class="card-header bg-transparent fw-semibold text-uppercase">
-    <span>Events</span>
-    <a href="events/index.qmd" class="carousel-header-link" aria-label="View all events">View All Events</a>
-  </div>
-  <div class="card-body">
-    <div id="eventsCardCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="10000" data-bs-pause="hover" role="region" aria-roledescription="carousel" aria-label="Upcoming events">
-      <div class="carousel-indicators">
-        <% carouselItems.forEach((item, index) => { %>
-        <button
-          type="button"
-          data-bs-target="#eventsCardCarousel"
-          data-bs-slide-to="<%= index %>"
-          class="<%= index === 0 ? 'active' : '' %>"
-          aria-current="<%= index === 0 ? 'true' : 'false' %>"
-          aria-label="Show event item <%= index + 1 %> of <%= carouselItems.length %>"></button>
-        <% }); %>
-      </div>
-      <div class="carousel-inner" aria-live="polite">
-        <% carouselItems.forEach((item, index) => { %>
-        <div class="carousel-item <%= index === 0 ? 'active' : '' %>">
-          <% if (isPast(item)) { %>
-          <h6 class="card-subtitle mb-2 text-body-secondary" style="font-size:0.87rem;background: rgba(134, 112, 112, 0.18); border-color: rgba(134, 112, 112, 0.36); color: #5a4747 !important;">Past Event &middot; <%- getEventType(item) %> &middot; <%= formatEventDate(item) %></h6>
-          <% } else { %>
-          <h6 class="card-subtitle mb-2 text-body-secondary" style="font-size:0.87rem;"><%- getEventType(item) %> &middot; <%= formatEventDate(item) %></h6>
-          <% } %>
-          <h5 class="card-title"><a href="<%- item.path %>" class="carousel-title-link" aria-label="Open event item: <%- item.title %>"><%- item.title %></a></h5>
-          <p class="card-text"><%- getEventDescription(item) %></p>
-          <a href="<%- item.path %>" class="btn btn-link p-0 fw-semibold small" aria-label="See details for <%- item.title %>">See Event →</a>
+
+<!--section header-->
+<div class="card-header bg-transparent fw-semibold justify-content-between d-flex align-items-center">
+    <span><strong>Events</strong></span>
+    <a href="events/index.qmd" class="events-header-link text-decoration-none text-black" aria-label="View all events">All Events <i class="bi bi-arrow-up-right-square-fill small"></i></a>
+</div>
+<!--actual cards-->
+<div class="card events-card mt-3 h-100 border-0" style="background:none;">
+  <div class="card-body d-flex flex-column gap-4">
+    <% displayItems.forEach((item) => {
+      const dm = getEventDayMonth(item);
+      const category = (item.categories && item.categories.length > 0)
+        ? item.categories[0]
+        : '';
+
+        const catImg = category
+        ? category.toLowerCase().replace(/ /g, '_').replace(/-/g, '_')
+        : 'default';
+
+        const hasCardImage = !!item.card_image;
+        const imgBase = `/events/images/${catImg}`;
+        const imgSrc = hasCardImage
+        ? item.card_image
+        : `${imgBase}.svg`;
+    %>
+    <div class="card events-card shadow-sm">
+        <div class="row g-0">
+            <div class="col-md-2 p-3 d-none d-md-block align-content-center">
+            <% if (hasCardImage) { %>
+                <img src="<%- imgSrc %>" onerror="this.onerror=null; this.src='/events/images/default.svg';"class="img-fluid rounded event-card-image" alt="<%- category %>">
+            <% } else { %>
+                <img src="<%- imgSrc %>" onerror="if(!this._tried){this._tried=1; this.src='<%- imgBase %>.png';}else if(this._tried==1){this._tried=2; this.src='<%- imgBase %>.jpg';}else if(this._tried==2){this._tried=3; this.src='<%- imgBase %>.jpeg';}else{this.onerror=null; this.src='/events/images/default.svg';}" 
+                class="img-fluid rounded event-card-image" alt="<%- category %>">
+            <% } %>
+            </div>
+            <div class="col-md-10">
+                <div class="card-body text-start position-relative pe-5">
+                    <% if (isPast(item)) { %>
+                    <h6 class="card-subtitle mb-2 text-body-secondary" style="font-size:0.87rem;">Past Event &middot; <%- getEventType(item) %> &middot; <%= formatEventDate(item) %></h6>
+                    <% } else { %>
+                    <h6 class="card-subtitle mb-2 text-body-secondary" style="font-size:0.87rem;"><%- getEventType(item) %> &middot; <%= formatEventDate(item) %></h6>
+                    <% } %>
+                    <h6 class="card-title fw-bold "><%- item.title %></h6>
+                    <p class="card-text d-none d-sm-block text-muted text-truncate"><%- getEventDescription(item) %></p>
+                    <i class="bi bi-arrow-right card-arrow" aria-hidden="true"></i>
+                </div>
+            </div>
         </div>
-        <% }); %>
-      </div>
+       <a href="<%- item.path %>" class="stretched-link" aria-label="See details for <%- item.title %>"></a>
     </div>
+    <% }); %>
   </div>
 </div>
+
 ```

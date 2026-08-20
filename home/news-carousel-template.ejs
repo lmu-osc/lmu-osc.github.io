@@ -1,6 +1,6 @@
 ```{=html}
 <%
-  const carouselItems = (items || []).slice(0, 3);
+  const carouselItems = (items || []).slice(0, 2);
 
   function formatNewsDate(value) {
     if (!value) return '';
@@ -20,35 +20,30 @@
     return 'Read the latest update from the LMU Open Science Center.';
   }
 %>
-<div class="card carousel-card h-100 border border-success-subtle">
-  <div class="card-header bg-transparent fw-semibold text-uppercase">
-    <span>News</span>
-    <a href="news/index.qmd" class="carousel-header-link" aria-label="View all news">View All News</a>
-  </div>
-  <div class="card-body">
-    <div id="newsCardCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="10000" data-bs-pause="hover" role="region" aria-roledescription="carousel" aria-label="Latest news">
-      <div class="carousel-indicators">
-        <% carouselItems.forEach((item, index) => { %>
-        <button
-          type="button"
-          data-bs-target="#newsCardCarousel"
-          data-bs-slide-to="<%= index %>"
-          class="<%= index === 0 ? 'active' : '' %>"
-          aria-current="<%= index === 0 ? 'true' : 'false' %>"
-          aria-label="Show news item <%= index + 1 %> of <%= carouselItems.length %>"></button>
-        <% }); %>
-      </div>
-      <div class="carousel-inner" aria-live="polite">
-        <% carouselItems.forEach((item, index) => { %>
-        <div class="carousel-item <%= index === 0 ? 'active' : '' %>">
-          <h6 class="card-subtitle mb-2 text-body-secondary" style="font-size:0.87rem;"><%= formatNewsDate(item.date) %></h6>
-          <h5 class="card-title"><a href="<%- item.path %>" class="carousel-title-link" aria-label="Open news item: <%- item.title %>"><%- item.title %></a></h5>
-          <p class="card-text"><%- getNewsDescription(item) %></p>
-          <a href="<%- item.path %>" class="btn btn-link p-0 fw-semibold small" aria-label="Read more about <%- item.title %>">Read More →</a>
-        </div>
-        <% }); %>
+<div class="card-header bg-transparent fw-semibold justify-content-between d-flex align-items-center">
+    <span><strong>News</strong></span>
+    <a href="news/index.qmd" class="news-header-link text-decoration-none text-black" aria-label="View all news">
+      All News <i class="bi bi-arrow-up-right-square-fill small"></i>
+    </a>
+</div>
+<!--actual cards-->
+<div class="card news-card mt-3 h-100 border-0" style="background:none;">
+  <div class="card-body d-flex flex-column gap-4">
+    <% carouselItems.forEach((item, index) => { %>
+    <div class="card news-card shadow-sm">
+      <div class="row g-0">
+          <div class="col-md-12 position-relative pe-5">
+              <div class="card-body text-start">
+                  <h6 class="card-subtitle mb-2 text-body-secondary" style="font-size:0.87rem;"><%= formatNewsDate(item.date) %></h6>
+                  <h6 class="card-title fw-bold "><%- item.title %></h6>
+                  <p class="card-text d-none d-sm-block text-muted text-truncate"><%- item.description %></p>
+                  <i class="bi bi-arrow-right card-arrow" aria-hidden="true"></i>
+                  <a href="<%- item.path %>" class="stretched-link" aria-label="See details for <%- item.title %>"></a>
+              </div>
+          </div>
       </div>
     </div>
+    <% }); %>
   </div>
 </div>
 ```
