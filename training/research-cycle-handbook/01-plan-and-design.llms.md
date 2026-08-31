@@ -106,7 +106,7 @@ These platforms either give you access to existing data or provide ***metadata**
 >
 > ***Confirmation bias***: The tendency to seek, interpret, and remember information that confirms one’s existing beliefs or expectations.
 >
-> ***Hinsight bias*** Seeing past events as predictable after the outcome is known (“I knew it all along”).
+> ***Hindsight bias*** Seeing past events as predictable after the outcome is known (“I knew it all along”).
 
 ####  TOOLS & RESOURCES
 
@@ -162,7 +162,7 @@ Use version control system Git from within RStudio. (2h)
 
 ![LMU OSC logo](../../assets/img/lmu_osc_logo.jpg)
 
-![Zotero logo](../../assets/img/zotero.svg)
+![GitHub logo](../../assets/img/github.svg)
 
 OSC Tutorial
 
@@ -235,7 +235,7 @@ In later sections, you will acquire skills in data management and reproducible w
 >
 > ***Reproducibility***: The ability of a researcher to re-derive the same results using the *same data and methods*; also known as computational reproducibility.
 >
-> ***Replicability***: The ability of an independent researcher to achieve results consistent with teh original study by following the same experimental or analytical approach but collecting *new data*.
+> ***Replicability***: The ability of an independent researcher to achieve results consistent with the original study by following the same experimental or analytical approach but collecting *new data*.
 
 ####  TOOLS & RESOURCES
 

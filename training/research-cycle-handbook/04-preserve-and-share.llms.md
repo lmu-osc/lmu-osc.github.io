@@ -312,7 +312,7 @@ Tool comparing open software licenses.
 
 ## 4.2.4. Archiving & DOIs
 
-To publish you code on Zenodo, we recommend to
+To publish your code on Zenodo, we recommend to
 
 - **Push your clean repository to GitHub** (see GitHub tutorial).
 - **Create an account on [Zenodo](https://zenodo.org/).**
@@ -400,7 +400,7 @@ Publishing open access articles (i.e. which are free to readers) **increases th
 
 ## 4.4.1. Pathways to Open Access
 
-They are several pathways to make your your articles free to read, e.g.:
+There are several pathways to make your articles free to read, e.g.:
 
 - **Diamond Open Access**: journals that provide immediate open access without charging authors any Article Processing Charges (APCs), as publication costs are covered by institutions, consortia, or public funding. Visit the [Directory of Open Access Journals (DOAJ)](https://doaj.org/) to find them.
 - **Gold Open Access**: the publication of the final version of record as immediately open access on the publisher’s platform, against payment of an Article Processing Charges (APCs) by the authors.
