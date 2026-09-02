@@ -69,6 +69,14 @@ Keep up to date with our latest news releases, and upcoming events.
 
 News [View All News](news/index.llms.md)
 
+###### Sep 2, 2026
+
+##### [Reproducibility in Business and Management Research](news/news/2026-09-02-reproducibility-in-business-research.llms.md)
+
+New editorial published in the Journal of the Academy of Marketing Science by OSC member Prof. Dr. Marko Sarstedt and his team discussing the role of reproducibility in business and management research.
+
+[Read More →](news/news/2026-09-02-reproducibility-in-business-research.llms.md)
+
 ###### Aug 5, 2026
 
 ##### [Newsletter July 2026](news/news/2026-08-05-newsletter-july.llms.md)
@@ -84,14 +92,6 @@ Read the latest news and updates from the LMU Open Science Center in our July 20
 OSC Member and Special Advisor Maximilian Frank receives the Award for Quality Assurance in Psychology by the German Psychological Society (DGPs)
 
 [Read More →](news/news/2026-07-20-maximilian-frank-dpg-award.llms.md)
-
-###### Jul 1, 2026
-
-##### [OSC Members Contribute to GUIDE-LLM Reporting Guidelines](news/news/2026-07-01-llm-guidelines-publication.llms.md)
-
-New GUIDE-LLM reporting guidelines, co-authored by OSC members Stefan Feuerriegel and Barbara Plank, provide researchers with a framework for transparently reporting the use of LLMs in research.
-
-[Read More →](news/news/2026-07-01-llm-guidelines-publication.llms.md)
 
 Events [View All Events](events/index.llms.md)
 

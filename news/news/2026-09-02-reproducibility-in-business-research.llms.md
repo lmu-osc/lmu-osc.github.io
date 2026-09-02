@@ -1,0 +1,9 @@
+# Reproducibility in Business and Management Research
+
+September 2, 2026
+
+LMU Open Science Center member [Prof. Dr. Marko Sarstedt](../../people/people/marko-sarstedt.llms.md) was part of the team that contributed an editorial to the Journal of the Academy of Marketing Science discussing the importance of reproducibility in the social sciences, specifically business and management. Because challenges such as software versions, algorithm settings, and undocumented analytical choices can make results difficult to reproduce, this editorial highlights the need for more transparent and well-documented research workflows. It introduces a new policy to strengthen data and code sharing in marketing research.
+
+## Read the editorial here
+
+Sarstedt, M., Noble, C.H. & Noble, S.M. A policy change at JAMS: The role of reproducibility in science. *J. of the Acad. Mark. Sci.* (2026). <https://doi.org/10.1007/s11747-026-01190-0>
