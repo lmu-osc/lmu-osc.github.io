@@ -8,7 +8,7 @@ Train-the-Trainer Program Coordinator
 
 [LMU Profile](https://www.lmu.de/psy/de/personen/kontaktseite/sarah-von-grebmer-zu-wolfsthurn-cb1fec68.html)
 
-[](https://github.com/SvonGrebmer) [](https://orcid.org/0000-0002-6413-3895)
+[](https://orcid.org/0000-0002-6413-3895) [](https://github.com/SvonGrebmer)
 
 ## Mission Statement
 
