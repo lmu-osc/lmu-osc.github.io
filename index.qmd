@@ -26,6 +26,81 @@ include-in-header:
   - text: |
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="assets/javascript/impact_counter.js" defer></script>
+        <script>
+        (function () {
+          function equalizeCards(selector) {
+            var cards = Array.prototype.slice.call(document.querySelectorAll(selector));
+
+            if (!cards.length) return;
+
+            // Reset previous heights before measuring
+            cards.forEach(function (card) {card.style.minHeight = '';});
+
+            // Find tallest card
+            var maxHeight = 0;
+
+            cards.forEach(function (card) {
+              maxHeight = Math.max(
+                maxHeight,
+                card.getBoundingClientRect().height
+              );
+            });
+
+            // Apply tallest height to all cards
+            var heightPx = Math.ceil(maxHeight) + 'px';
+
+            cards.forEach(function (card) {
+              card.style.minHeight = heightPx;
+            });
+          }
+
+          //same as previous logic: when the media width is greater than or equal to 992 (lg breakpoint bootstrap)i.e. when two sections are side by side,  each cards' height should stay same in both sections. When the screen gets smaller and the cards are stacked vertically, equalize or make the height of cards within each section the same height.
+
+          function runEqualization() {
+
+            window.requestAnimationFrame(function () {
+
+              var isSideBySide =
+                window.matchMedia('(min-width: 992px)').matches;
+
+              if (isSideBySide) {
+
+                // News + Events together
+                equalizeCards(
+                  '#newsCard > .card-body > .news-card, ' +
+                  '#eventsCard > .card-body > .events-card'
+                );
+
+              } else {
+
+                // Equalize each section independently
+                equalizeCards(
+                  '#newsCard > .card-body > .news-card'
+                );
+
+                equalizeCards(
+                  '#eventsCard > .card-body > .events-card'
+                );
+              }
+
+            });
+          }
+
+
+          document.addEventListener(
+            'DOMContentLoaded',runEqualization
+          );
+
+          window.addEventListener(
+            'load', runEqualization
+          );
+
+          window.addEventListener(
+            'resize',runEqualization
+          );
+
+        })();
+        </script>
         <style>
 
         /*Remove gap between navbar and main content*/
@@ -37,52 +112,95 @@ include-in-header:
         }
         main#quarto-document-content {
             margin-top: 0 !important;
-            padding-top: 0 !important;
             margin-bottom: 0 !important;
         }
 
         .page-rows-contents {
           grid-template-rows: [content-top] minmax(max-content, 1fr) [content-bottom] minmax(0, max-content) [page-bottom];
         }
-        .brand-banner-color {
+
+        // font size adjustments
+
+
+        /* Override Bootstrap's col-md-6 default 768px breakpoint —
+          both columns stay full-width (stacked) until 1100px */
+        @media (min-width: 768px) and (max-width: 1099.98px) {
+          .hero-row > .col-md-6 {
+            flex: 0 0 100%;
+            max-width: 100%;
+          }
+        }
+
+        /* Re-apply the 50/50 split starting at custom 1100px breakpoint */
+        @media (min-width: 1000px) {
+          .hero-row > .col-md-6 {
+            flex: 0 0 50%;
+            max-width: 50%;
+          }
+        }
+
+        .hero-row {
+          align-items: center;
+        }
+        .hero-row .banner-image {
+          width: 100%;
+          height: clamp(220px, 28vw, 340px);
+          object-fit: cover;
+          object-position: center;
+        }
+
+        @media (max-width: 575.98px) {
+          .hero-desc {
+            padding-right: 0 !important;
+            padding-left: 0 !important;
+          }
+          .explore-row > .col {
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+          }
+          .events-news-row > .col-lg-6{
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+          }
+        }
+
+        .bg-brand-banner{
           background-color: var(--osc-accent);
         }
 
-        .banner-image-container {
-          height: clamp(240px, 32vw, 400px);
-          overflow: hidden;
-        }
-        .banner-image {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-          object-position: center;
-          display: block;
+        .text-lmu-green {
+          color: var(--osc-accent) !important;
         }
 
-        .bg-banner-light {
-          background-color: #F6F7F4;
+        .text-lmu-dark {
+          color: var(--lmu-black) !important;
         }
 
-        .bg-banner-dark {
-          background-color: #043D1E;
+        .text-lmu-acc-blue {
+          color: #0F1987 !important;
         }
+     
+        .section-heading h2 {
+         font-weight: bold;
 
-        .text-green {
-          color: #BDF0D1 !important;
-        }
-        .metric-color {
-          color: #043D1E;
         }
         .testimonial-carousel .carousel-indicators {
             margin-bottom: -1.8rem;
           }
         .testimonial-carousel .carousel-indicators [data-bs-target] {   
-            height: 10px;
-            width: 10px;
-            border-radius: 50%;
-            background-color: var(--osc-accent);
+          height: 8px;
+          width: 8px;
+          border-radius: 50%;
+          background-color: transparent;
+          border: 1.5px solid #3f479f;
+          opacity: 1;
         }
+
+        .testimonial-carousel .carousel-indicators .active {
+          background-color: #0F1987;
+          border-color: #0F1987;
+        }
+
         .quote-icon {
             opacity: 0.1;
         }
@@ -101,107 +219,165 @@ include-in-header:
           right: 1.25rem;
           top: 50%;
           font-size: 1.25rem;
-          color: #333333e3;
+          color: var(--osc-accent);
+          transition: transform 0.25s ease;
+          transform: translateX(0);
+        }
 
+        .news-card:hover .card-arrow,
+        .events-card:hover .card-arrow{
+          transform: translateX(6px);
+        }
+
+        .news-card .card-title,
+        .events-card .card-title{
+          color: var(--bs-dark-rgb);
+          transition: color 0.25s ease;
+        }
+        .news-card:hover .card-title,
+        .events-card:hover .card-title{
+          color: var(--osc-accent);
+          
+        }
+        .news-header-link,
+        .events-header-link {
+          position: relative;
+          display: inline-block;
+          color: var(--bs-dark-rgb);
+          transition: transform 0.25s ease;
+        }
+
+        .news-header-link:hover,
+        .events-header-link:hover {
+          color: var(--osc-accent);
+        }
+
+
+        .news-header-link::after,
+        .events-header-link::after {
+          content: "";
+          position: absolute;
+          left: 0;
+          bottom: -2px; 
+          width: 100%;
+          height: 1px;
+          background-color: currentColor;
+          transform: scaleX(0);
+          transform-origin: left;
+          transition: transform 0.25s ease;
+        }
+
+        .news-header-link:hover::after,
+        .events-header-link:hover::after {
+          transform: scaleX(1);
+        }
+
+
+        #listing-news-card.quarto-listing,#listing-events-card.quarto-listing {
+          padding-top: 0;
+          padding-bottom: 0;
         }
         
-         .newsletter-button.btn-primary{
+        .newsletter-button.btn-primary{
             transition: transform .15s ease;
-          }
-          .newsletter-button.btn-primary:hover {
+        }
+        .newsletter-button.btn-primary:hover {
             transform: scale(1.05);
-          }
+        }
+
+
 
         </style>
 ---
 
-:::{.column-screen .brand-banner-color .py-5}
-:::{.column-page}
+::::::{.column-screen .py-5}
+:::::{.column-page}
 
-::: {.row}
-::: {.col-md-6 .d-none .d-sm-block}
-::: {.banner-image-container .rounded}
-![](puppyyyy.avif){.banner-image}
-:::
-:::
+:::: {.row .hero-row}
+::: {.col-md-6 .img-container .p-0 .p-sm-3}
 
-::: {.col-md-6}
-
-# LMU Open Science Center {.text-white }
-
-[The researcher-led LMU Open Science Center (OSC) advances research excellence at LMU Munich by promoting open, responsible, and reproducible practices.]{.fs-5}
-
-[Learn more about OSC](about/index.qmd){.btn .btn-outline-light .mt-2 .fw-bold .learn-more-button}
-:::
-:::
+![](assets/img/placeholder.avif){.banner-image .rounded .img-fluid}
 
 :::
+
+::: {.col-md-6 .hero-desc}
+
+[LMU Open Science Center]{.text-lmu-green .display-3 .fw-bold}
+
+[The researcher-led LMU Open Science Center (OSC) advances research excellence at LMU Munich by promoting open, responsible, and reproducible practices.]{.fs-5 .lh-lg .hero-subtitle}
+
+[Learn more about OSC](about/index.qmd){.btn .btn-primary .mt-2 .fw-bold .learn-more-button}
 :::
+::::
+
+:::::
+::::::
+
 
 <!--metrics-->
 
-:::{.column-screen .bg-banner-light .py-5}
+:::::::{.column-screen .bg-body-tertiary .py-5}
 
-:::{.column-page}
+::::::{.column-page}
 
-::: {.row .row .row-cols-1 .row-cols-sm-2 .row-cols-md-3 .text-center .justify-content-center .g-4}
+::::: {.row .row .row-cols-1 .row-cols-sm-2 .row-cols-md-3 .text-center .justify-content-center .g-4}
 
-::: {.col}
-::: {.metric-value .metric-color .fw-bold .fs-3 data-target="3000+"}
+:::: {.col}
+::: {.metric-value .text-lmu-acc-blue .fw-bold .display-6 data-target="3000+"}
 0
 :::
-::: {.metric-label .metric-color}
+::: {.metric-label  .fs-5}
 Researchers trained
 :::
-:::
+::::
 
-::: {.col}
-::: {.metric-value .metric-color .fw-bold .fs-3 data-target="150+"}
+:::: {.col}
+::: {.metric-value .text-lmu-acc-blue .fw-bold .display-6 data-target="150+"}
 0
 :::
-::: {.metric-label .metric-color}
+::: {.metric-label .fs-5}
 Professors & Students
 :::
-:::
+::::
 
-::: {.col}
-::: {.metric-value .metric-color .fw-bold .fs-3 data-target="460+"}
+:::: {.col}
+::: {.metric-value .text-lmu-acc-blue .fw-bold .display-6 data-target="460+"}
 0
 :::
-::: {.metric-label .metric-color}
+::: {.metric-label .fs-5}
 Articles on Open Science
 :::
-:::
+::::
 
-:::
+:::::
 
-:::
+::::::
 
-:::
+:::::::
 
 <!--what we offer-->
 
-:::{.column-screen .bg-banner-dark .py-5}
+:::{.column-screen .bg-brand-banner .py-5}
 
-:::{.column-page}
+:::{.column-page .text-center}
 
-## What We Offer {.text-white .text-center .border-0 .lh-base .fw-2}
+[What We Offer]{.section-heading .text-white .display-5 .fw-semibold}
 
-[Whether you are a student, early-career researcher, or professor — there's a place for you at the Open Science Center.]{.lh-lg}
+[Whether you are a student, early-career researcher, or professor — there's a place for you at the Open Science Center.]{.lh-lg .text-white .fs-5}
 
-::: {.row .row-cols-1 .row-cols-sm-2 .row-cols-md-3 .text-center  .g-4 .mt-3}
+::: {.row .explore-row .row-cols-1 .row-cols-sm-2 .row-cols-md-3 .text-center .g-4 .mt-3}
 
 ::: {.col}
 ```{=html}
-<div class="card explore-card h-100 border border-success-subtle rounded-3 shadow-sm">
+<div class="card explore-card h-100 border-0 rounded-3 shadow-lg">
   <div class="card-body d-flex flex-column p-4">
     <div class="d-flex align-items-center justify-content-between mb-2">
-      <h5 class="mb-0 card-title text-start fw-semibold" style="font-size: 1.15rem;">Community</h5>
-      <div class="bg-light rounded-3 d-inline-flex align-items-center justify-content-center" style="width:50px;height:50px;color:var(--osc-accent);">
+      <h5 class="mb-0 card-title text-start text-lmu-dark fw-semibold">Community</h5>
+      <div class="bg-light rounded-3 d-inline-flex align-items-center justify-content-center" style="width:50px;height:50px;color:#0F1987;">
         <i class="bi bi-people fs-5"></i>
       </div>
     </div>
-    <p class="card-text flex-grow-1 text-start">Meet the researchers, advocates, and partners shaping open science at LMU and beyond.</p>
+    <p class="card-text lh-lg flex-grow-1 text-start">Meet the researchers, advocates, and partners shaping open science at LMU and beyond.</p>
     <a href="/people/" class="stretched-link" aria-label="Meet the OSC Community"></a>
   </div>
 </div>
@@ -210,15 +386,15 @@ Articles on Open Science
 
 ::: {.col}
 ```{=html}
-<div class="card explore-card h-100 border border-success-subtle rounded-3 shadow-sm">
+<div class="card explore-card h-100 border-0 rounded-3 shadow-lg">
   <div class="card-body d-flex flex-column p-4">
     <div class="d-flex align-items-center justify-content-between mb-2">
-      <h5 class="mb-0 card-title text-start fw-semibold" style="font-size: 1.15rem;">Workshops & Self-Learning</h5>
-      <div class="bg-light rounded-3 d-inline-flex align-items-center justify-content-center" style="width:50px;height:50px;color:#00883A;">
+      <h5 class="mb-0 card-title text-start fw-semibold text-lmu-dark">Workshops & Self-Learning</h5>
+      <div class="bg-light rounded-3 d-inline-flex align-items-center justify-content-center" style="width:50px;height:50px;color:#0F1987;">
         <i class="bi bi-journal-bookmark fs-5"></i>
       </div>
     </div>
-    <p class="card-text flex-grow-1 text-start">Build hands-on skills in reproducible research through workshops, summer schools, and self-paced tutorials.</p>
+    <p class="card-text lh-lg flex-grow-1 text-start">Build hands-on skills in reproducible research through workshops, summer schools, and self-paced tutorials.</p>
     <a href="/training/" class="stretched-link"aria-label="Explore Training"></a>
   </div>
 </div>
@@ -227,15 +403,15 @@ Articles on Open Science
 
 ::: {.col}
 ```{=html}
-<div class="card explore-card h-100 border border-success-subtle rounded-3 shadow-sm">
+<div class="card explore-card h-100 border-0 rounded-3 shadow-lg">
   <div class="card-body d-flex flex-column p-4">
     <div class="d-flex align-items-center justify-content-between mb-2">
-      <h5 class="mb-0 card-title text-start fw-semibold" style="font-size: 1.15rem;">Partners & Networks</h5>
-      <div class="bg-light rounded-3 d-inline-flex align-items-center justify-content-center" style="width:50px;height:50px;color:#00883A;">
+      <h5 class="mb-0 card-title text-start fw-semibold text-lmu-dark">Partners & Networks</h5>
+      <div class="bg-light rounded-3 d-inline-flex align-items-center justify-content-center" style="width:50px;height:50px;color:#0F1987;">
         <i class="bi bi-globe2 fs-5"></i>
       </div>
     </div>
-    <p class="card-text flex-grow-1 text-start">Discover our institutional collaborators and the international networks we are part of.</p>
+    <p class="card-text lh-lg flex-grow-1 text-start">Discover our institutional collaborators and the international networks we are part of.</p>
     <a href="partners/institutional-members.qmd" class="stretched-link" aria-label="See OSC Partners"></a>
   </div>
 </div>
@@ -271,26 +447,26 @@ Articles on Open Science
 
 <!--stay in the loop-->
 
-:::{.column-screen .bg-banner-light .py-5}
+:::{.column-screen .bg-body-tertiary .py-5}
 
-:::{.column-page}
+:::{.column-page .text-center}
 
-## Stay in the Loop {.text-black .text-center .border-0}
+[Stay in the Loop]{.section-heading .text-lmu-green .fw-semibold .display-5}
 
-Keep up to date with our latest news releases, and upcoming events. 
+[Keep up to date with our latest news releases, and upcoming events.]{.lh-lg .fs-5}
 
-::: {.row .text-center .justify-content-center .g-4 .mt-3}
+::: {.row .events-news-row .text-center .justify-content-center .g-4 .mt-3}
 
-::: {.col-lg-6 .d-flex .flex-column .gap-3}
+::: {.col-lg-6}
 <!--News-->
-::: {#news-card}
-:::
-
-:::
-
-::: {.col-lg-6 .d-flex .flex-column .gap-3}
-<!--events-->
 ::: {#events-card}
+:::
+
+:::
+
+::: {.col-lg-6 }
+<!--events-->
+::: {#news-card}
 :::
 
 :::
@@ -302,13 +478,13 @@ Keep up to date with our latest news releases, and upcoming events.
 
 <!--newsletter-->
 
-:::{.column-screen .brand-banner-color .py-5 }
+:::{.column-screen .bg-brand-banner .py-5 }
 :::{.column-page .justify-content-center .text-center}
 
 ::: {.row}
-## Stay updated with the OSC {.text-white .border-0}
+[Stay updated with the OSC]{.text-white .border-0 .fw-semibold .display-6}
 
-Sign up to our mailing list for the latest workshops, events, and resources.
+[Sign up to our mailing list for the latest workshops, events, and resources.]{.text-white .lh-lg .fs-5 }
 
 [Subscribe](https://lists.lrz.de/mailman/listinfo/lmu-osc){.btn .btn-primary .newsletter-button .mt-2 .fw-semibold .bg-white .border-0}
 :::

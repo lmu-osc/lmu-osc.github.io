@@ -1,8 +1,20 @@
-/*-- scss:defaults --*/
+/*-- scss:defaults --*/       
+@import "assets/rfs/node_modules/rfs/scss";
+
+/*-- scss:rules --*/
+.card-title {
+  @include font-size(1.1rem);
+} 
+
+.card-text {
+  @include font-size(0.98rem);
+}
+
 // Base document colors
 $navbar-bg: #009933;
 $link-color: #006426;
 $sidebar-hl: #006426;
+$lmu-black: #232323;
 
 .dropdown-menu {
     right: 0 !important;
@@ -67,7 +79,8 @@ $sidebar-hl: #006426;
 
 // clear filter button styles
 
-#quarto-margin-sidebar .btn-primary{
+#quarto-margin-sidebar .btn-primary,
+.learn-more-button.btn-primary{
     --bs-btn-bg: var(--osc-accent);
     --bs-btn-border-color:var(--osc-accent);   
     --bs-btn-hover-bg: color-mix(in srgb, var(--osc-accent) 80%, black);
@@ -79,11 +92,6 @@ $sidebar-hl: #006426;
 // landing page styles
 
 //buttons
-
-.learn-more-button.btn-outline-light{
-    --bs-btn-hover-color: var(--osc-accent);
-    --bs-btn-active-color:  var(--osc-accent);
-}
 
 .newsletter-button.btn-primary {
     --bs-btn-color: var(--osc-accent);

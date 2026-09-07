@@ -1,6 +1,6 @@
 ```{=html}
 <%
-  const carouselItems = (items || []).slice(0, 2);
+  const carouselItems = (items || []).slice(0, 3);
 
   function formatNewsDate(value) {
     if (!value) return '';
@@ -20,24 +20,24 @@
     return 'Read the latest update from the LMU Open Science Center.';
   }
 %>
-<div class="card-header bg-transparent fw-semibold justify-content-between d-flex align-items-center">
-    <span><strong>News</strong></span>
-    <a href="news/index.qmd" class="news-header-link text-decoration-none text-black" aria-label="View all news">
-      All News <i class="bi bi-arrow-up-right-square-fill small"></i>
+<div class="card-header bg-transparent justify-content-between d-flex align-items-center">
+    <span class='fs-4 text-dark fw-semibold'>News</span>
+    <a href="news/index.qmd" class="news-header-link text-decoration-none fw-semibold small" aria-label="View all news"><i class="bi bi-box-arrow-up-right"></i> 
+      All News
     </a>
 </div>
 <!--actual cards-->
-<div class="card news-card mt-3 h-100 border-0" style="background:none;">
-  <div class="card-body d-flex flex-column gap-4">
+<div id = 'newsCard' class="card mt-3 border-0" style="background:inherit;">
+  <div class="card-body d-flex flex-column gap-3 gap-sm-4 p-0">
     <% carouselItems.forEach((item, index) => { %>
-    <div class="card news-card shadow-sm">
+    <div class="card news-card border-0 justify-content-center" style="border-bottom:2px solid #0F1987 !important;">
       <div class="row g-0">
-          <div class="col-md-12 position-relative pe-5">
+          <div class="col-md-12 position-relative pe-sm-5">
               <div class="card-body text-start">
-                  <h6 class="card-subtitle mb-2 text-body-secondary" style="font-size:0.87rem;"><%= formatNewsDate(item.date) %></h6>
-                  <h6 class="card-title fw-bold "><%- item.title %></h6>
+                  <h6 class="card-subtitle text-uppercase mb-2 text-body-secondary" style="font-size:0.8rem;letter-spacing: 0.01em;"><%= formatNewsDate(item.date) %></h6>
+                  <h6 class="card-title fw-semibold lh-base"><%- item.title %></h6>
                   <p class="card-text d-none d-sm-block text-muted text-truncate"><%- item.description %></p>
-                  <i class="bi bi-arrow-right card-arrow" aria-hidden="true"></i>
+                  <i class="bi bi-arrow-right card-arrow d-none d-sm-block" aria-hidden="true"></i>
                   <a href="<%- item.path %>" class="stretched-link" aria-label="See details for <%- item.title %>"></a>
               </div>
           </div>
