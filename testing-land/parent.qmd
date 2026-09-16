@@ -1,14 +1,16 @@
 ---
-title: Some title content
+pagetitle: Some title content
 description: "Explore existing resources, check legal requirements, write data management plans, design studies, and prepare preregistrations"
-# number-offset: [0,1,0]
 number-sections: true
 toc: true
 format:
-    docx: default
+    docx:
+        toc-depth: 4
     html: default
 ---
 
+
+# Some title content
 
 The title should be above this with an h1 header.
 
@@ -22,3 +24,12 @@ Any resource that inspires you or that you want to reuse and/or adapt must minim
 
 
 #### Learn More
+
+idk something here
+
+
+## Legal Requirements
+
+### LMU Guidelines
+
+The LMU Guidelines for Safeguarding Good Scientific Practice are legally binding for all academics, researchers, research support staff, teachers, and students at LMU Munich. Only the original text in German prevails, but we provide an English summary of relevant aspects for this guide:
