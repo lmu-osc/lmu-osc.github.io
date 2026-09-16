@@ -8,7 +8,7 @@ Faculty of Languages & Literatures
 
 [q.wuerschinger@lmu.de](mailto:q.wuerschinger@lmu.de)
 
-[LMU Profile](https://www.anglistik.uni-muenchen.de/personen/wiss_ma/wuerschinger/index.html)
+[LMU Profile](https://www.lmu.de/crossculturalphilology/de/personen/kontaktseite/quirin-wuerschinger-1b9d8473.html)
 
 [](https://orcid.org/0000-0003-3679-0190)
 
