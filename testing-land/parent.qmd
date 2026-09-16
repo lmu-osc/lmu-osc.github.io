@@ -14,6 +14,54 @@ format:
 
 
 
+```{=html}
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll(".nav-item").forEach(function (item) {
+    const link = item.querySelector(".nav-link");
+
+    link.addEventListener("click", function () {
+      document.querySelectorAll(".nav-item").forEach(function (other) {
+        other.classList.remove("active");
+        other.querySelector(".nav-link").classList.remove("active");
+      });
+
+      item.classList.add("active");
+      link.classList.add("active");
+    });
+  });
+});
+</script>
+<style>
+.nav-item > :not(.nav-link) {
+  display: none;
+}
+
+.nav-item.active > :not(.nav-link) {
+  display: block;
+}
+</style>
+```
+
+::: {.nav .nav-tabs .nav-fill}
+
+::: {.nav-item .active}
+::: {.nav-link}
+### Active
+:::
+
+More content here
+:::
+
+::: {.nav-item}
+::: {.nav-link}
+### Much longer nav link
+:::
+
+and something here
+:::
+
+:::
 
 
 # Chapter 1 title!
@@ -32,7 +80,7 @@ Any resource that inspires you or that you want to reuse and/or adapt must minim
 
 #### Learn More
 
-idk something here
+the auto-numbering no longer works correctly because the h3 header for Articles is actually taken over by the panel-tabset and no longer makes it into the table of contents/section numbering as expected
 
 ### Preregistrations {#sec-preregistrations}
 
