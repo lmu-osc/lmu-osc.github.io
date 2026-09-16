@@ -33,7 +33,7 @@ We will live-screen the movie, and have a **subsequent panel discussion**, featu
 
 The event will start by a short opening speech by our speaker, [Prof. Katrin Auspurg](../../people/people/katrin-auspurg.llms.md "Auspurg"), and will be moderated by OSC member [Dr. Sabine Hoffmann](https://www.stat.lmu.de/stablab/de/team/kontaktseite/sabine-hoffmann-1b1ce4c9.html).
 
-See the **trailer** here: <https://www.youtube.com/watch?v=YaHlcwyn2Jk&feature=youtu.be>
+See the **trailer** here: https://www.youtube.com/watch?v=YaHlcwyn2Jk&feature=youtu.be (link no longer available)
 
 The event will take place on **Friday, Dec 14, 2018 from 14:30 to 16:30 in Lecture Hall M 018, Geschwister-Scholl-Platz 1, LMU Munich**.
 

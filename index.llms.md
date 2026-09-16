@@ -95,7 +95,7 @@ OSC Member and Special Advisor Maximilian Frank receives the Award for Quality A
 
 Events [View All Events](events/index.llms.md)
 
-###### Hybrid · Sep 7, 2026
+###### Past Event · Hybrid · Sep 7, 2026
 
 ##### [LMU Open Science Summer School 2026](events/events/2026-09-07-lmu-open-science-summer-school.llms.md)
 

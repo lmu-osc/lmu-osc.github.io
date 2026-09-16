@@ -2,6 +2,10 @@
 
 ## Upcoming Events
 
+## Past Events
+
+### 2026
+
 [LMU Open Science Summer School 2026](../events/events/2026-09-07-lmu-open-science-summer-school.llms.md) [LMU Open Science Summer School 2026](../events/events/2026-09-07-lmu-open-science-summer-school.llms.md) Summer School
 
 [![Summer School](../events/images/summer_school.svg)](../events/events/2026-09-07-lmu-open-science-summer-school.llms.md)
@@ -10,11 +14,9 @@
 
 ###### 07-15 Sep, 2026
 
-######  9:00-17:30 \|  Philologicum Library \|  Hybrid \|  English
+######  Philologicum Library \|  Hybrid \|  English
 
-######  9:00-17:30 \|  Hybrid \|  English
-
-Apply to attend the workshops or register to attend the public lectures now! Our annual Summer School will take place on Sept 7-11 (Track 1) and Sept 14-15 (Track 2), 2026.
+######  Hybrid \|  English
 
 Organizers: Sarah von Grebmer zu Wolfsthurn
 
@@ -26,13 +28,9 @@ Helpers: Elizabeth Waterfield
 
 Hosts: LMU Open Science Center LMU University Library (UB) PROFiL FORRT
 
-Questions? Contact [Sarah Von Grebmer Zu Wolfsthurn](mailto:Sarah.Grebmer@psy.lmu.de)
+[Training Material](https://osf.io/r2j8h/overview)
 
 [Read More](../events/events/2026-09-07-lmu-open-science-summer-school.llms.md)
-
-## Past Events
-
-### 2026
 
 [OSPARK Bootcamp Munich - Promote your Open Research Passion!](../events/events/2026-06-10-ospark-bootcamp.llms.md) [OSPARK Bootcamp Munich - Promote your Open Research Passion!](../events/events/2026-06-10-ospark-bootcamp.llms.md) Event
 
