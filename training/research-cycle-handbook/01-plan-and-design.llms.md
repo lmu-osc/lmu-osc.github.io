@@ -10,7 +10,7 @@ Checkpoints: Study Plan Presentation & Preregistration Submission
 
 ### 1.1 Explore & Reuse
 
-Any resource that inspires you or that you want to reuse and/or adapt must minimally be **cited using their persistent identifiers** e.g. DOIs (Digital Object Identifiers) - and otherwise URL with author, date, and time of access - and you must **follow the license and/or usage agreement** provided by the authors. A research output (e.g. data, code) without a license or statement granting your permission for reuse cannot legally be reused even if they appear publicly online.
+Any resource that inspires you or that you want to reuse and/or adapt must minimally be **cited using their persistent identifiers** e.g. DOIs (Digital Object Identifiers) - and otherwise URL with author, date, and time of access - and you must **follow the license and/or usage agreement** provided by the authors. A research output (e.g. data, code) without a license or statement granting your permission for reuse cannot legally be redistributed, and reusing it in work you publish yourself requires the authors’ agreement, even if it appears publicly online.
 
 ## 1.1.1. Articles
 
@@ -146,7 +146,7 @@ General-purpose repository for data, software, reports.
 
 > **IMPORTANT:**
 >
-> Code publicly visible on GitHub without a license or equivalent text explicitly stating permission for reuse cannot be legally reused. It is best to ask the authors to add an **open license** to their repository to explicitly allow reuse (to do this, they can, for instance, add a file called LICENSE.txt with the [Apache 2.0 license text](https://www.apache.org/licenses/LICENSE-2.0.txt) - see our [code publishing tutorial](https://lmu-osc.github.io/code-publishing/choose-license.html) to learn more about licenses).
+> Code publicly visible on GitHub without a license or equivalent text explicitly stating permission for reuse cannot legally be redistributed, and reusing it in work you publish yourself requires the authors’ permission. It is best to ask the authors to add an **open license** to their repository to explicitly allow reuse (to do this, they can, for instance, add a file called LICENSE.txt with the [Apache 2.0 license text](https://www.apache.org/licenses/LICENSE-2.0.txt) - see our [code publishing tutorial](https://lmu-osc.github.io/code-publishing/choose-license.html) to learn more about licenses).
 
 ####  LEARN MORE
 

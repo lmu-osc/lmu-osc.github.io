@@ -16,9 +16,9 @@ This manual can be used by **individual researchers in any scientific field** bu
 
 Based on our material, it is easy to build a tailored research practice handbook for your own research group (see [example](https://doi.org/10.5281/zenodo.16262260)):
 
-- review the core discipline-agnostic sections by clicking on one of the quadrants in the figure above,
-- consult discipline-specific guidance (in development - ETA end 2026),
-- tailor the [overview checklist figure](https://doi.org/10.5281/zenodo.15630229) ,
+- review the core discipline-agnostic sections by clicking on one of the quadrants in the figure above
+- consult discipline-specific guidance (in development - ETA end 2026)
+- tailor the [overview checklist figure](https://doi.org/10.5281/zenodo.15630229)
 - use our lab-handbook template as a starting place (in development - ETA end 2026)
 
 You can request a consultation with the LMU Open Science Center: ranging from a 1h one-on-one consultation up to a 6-month training and consultation program for your entire research group (see [About this Project](#about-orc-project) below).
