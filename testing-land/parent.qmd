@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
 </style>
 ```
 
-::: {.nav .nav-tabs .nav-fill}
+::: {.nav .nav-tabs .nav-fill .flex-column .flex-sm-row}
 
 ::: {.nav-item .active}
 ::: {.nav-link}
