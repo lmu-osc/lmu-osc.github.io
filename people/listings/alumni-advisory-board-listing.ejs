@@ -11,6 +11,7 @@ const alumnaeItems = (items || []).filter((item) => {
 const memberships = Array.isArray(item.memberships) ? item.memberships : [];
 return memberships.some(isAlumniAdvisoryBoard);
 });
+const personName = (i) => i['given-names'] && i['family-names'] ? i['given-names'] + ' ' + i['family-names'] : '';
 %>
 
 <ul>
@@ -27,7 +28,7 @@ dateRange = end ? ' (' + start + ' - ' + end + ')' : ' (' + start + ')';
 %>
 <li>
 <a href="<%= item.links[0].url %>">
-<%= (item.academic_title ? item.academic_title.trim() : '') %><%= item.academic_title ? ' ' : '' %><%= item.name.trim() %><%= dateRange %>:
+<%= (item.academic_title ? item.academic_title.trim() : '') %><%= item.academic_title ? ' ' : '' %><%= personName(item) %><%= dateRange %>:
 <%= alumniAdvisoryMembership.title ? ' ' + alumniAdvisoryMembership.title.trim() : '' %><%= alumniAdvisoryMembership.affiliation ? ', ' + alumniAdvisoryMembership.affiliation.trim() : '' %>
 </a>
 </li>

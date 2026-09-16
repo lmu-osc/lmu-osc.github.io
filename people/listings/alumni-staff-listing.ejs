@@ -11,6 +11,7 @@ const alumnaeItems = (items || []).filter((item) => {
   const memberships = Array.isArray(item.memberships) ? item.memberships : [];
   return memberships.some(isAlumniStaff);
 });
+const personName = (i) => i['given-names'] && i['family-names'] ? i['given-names'] + ' ' + i['family-names'] : '';
 %>
 
 <ul>
@@ -23,7 +24,7 @@ const alumniStaffMemberships = memberships.filter(isAlumniStaff);
 
 <% if (alumniStaffMemberships.length === 0) { %>
 <li>
-<a href="<%= item.path %>"><%= item.name %></a>
+<a href="<%= item.path %>"><%= personName(item) %></a>
 </li>
 <% } else { %>
 <% for (const alumniStaffMembership of alumniStaffMemberships) { %>
@@ -39,7 +40,7 @@ const position = (typeof alumniStaffMembership.position === 'string' && alumniSt
   : '';
 %>
 <li>
-<a href="<%= item.path %>"><%= item.name %><%= dateRange %><%= position ? ': ' + position : '' %></a>
+<a href="<%= item.path %>"><%= personName(item) %><%= dateRange %><%= position ? ': ' + position : '' %></a>
 </li>
 <% } %>
 <% } %>

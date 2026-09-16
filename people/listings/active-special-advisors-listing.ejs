@@ -8,6 +8,7 @@ const activeSpecialAdvisorItems = (items || []).filter((item) => {
     return ['special advisor'].includes(membership.type) && membership.status === 'active';
   });
 });
+const personName = (i) => i['given-names'] && i['family-names'] ? i['given-names'] + ' ' + i['family-names'] : '';
 %>
 
 <div class="advisory-board-grid">
@@ -33,11 +34,11 @@ const specialAdvisorFaculty = (typeof activeSpecialAdvisorMembership?.faculty ==
 <div class="row g-0">
 <div class="d-flex justify-content-center align-items-center p-2 mt-3">
 <a href="<%= item.path %>" >
-<img src="people/<%= item.photo || '/images/default.svg' %>" class="profile-image" alt="Profile photo of <%= item.name %>">
+<img src="people/<%= item.photo || '/images/default.svg' %>" class="profile-image" alt="Profile photo of <%= personName(item) %>">
 </a>
 </div>
 <div class="card-body">
-<a class="card-title" href="<%= item.path %>" ><%= item.name %></a>
+<a class="card-title" href="<%= item.path %>" ><%= personName(item) %></a>
 <div class="card-subtitle card-subtitle-one mb-0 text-muted">
   <%= item.academic_title %>
 </div>

@@ -1,5 +1,53 @@
 -- testing_event_data.lua
 
+-- Validate that required fields are present and non-empty.
+-- Returns a list of error messages (empty list means no errors).
+local function validate_required_fields(meta)
+  local errors = pandoc.List({})
+
+  -- Validate title
+  local title = meta.title
+  if title == nil then
+    table.insert(errors, "Missing required field: 'title'")
+  else
+    local title_str = pandoc.utils.stringify(title)
+    if title_str == "" or title_str:match("^%s*$") then
+      table.insert(errors, "'title' must not be empty")
+    end
+  end
+
+  -- Validate categories (can be a scalar or a list)
+  local categories = meta.categories
+  if categories == nil then
+    table.insert(errors, "Missing required field: 'categories'")
+  elseif type(categories) == "table" and categories.t == "MetaList" then
+    -- List form, e.g. categories: [Workshop, Discussion]
+    if #categories == 0 then
+      table.insert(errors, "'categories' list must not be empty")
+    else
+      local has_non_empty = false
+      for _, cat in ipairs(categories) do
+        local cat_str = pandoc.utils.stringify(cat)
+        if cat_str ~= "" and not cat_str:match("^%s*$") then
+          has_non_empty = true
+          break
+        end
+      end
+      if not has_non_empty then
+        table.insert(errors, "'categories' must contain at least one non-empty value")
+      end
+    end
+  else
+    -- Scalar form, e.g. categories: Workshop
+    local cat_str = pandoc.utils.stringify(categories)
+    if cat_str == "" or cat_str:match("^%s*$") then
+      table.insert(errors, "'categories' must not be empty")
+    end
+  end
+
+  return errors
+end
+
 local month_abbr = {
   "Jan", "Feb", "Mar", "Apr", "May", "Jun",
   "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"
@@ -85,8 +133,8 @@ local function normalize_external_url(value)
   end
 
   if url:match("^[A-Za-z][A-Za-z0-9+.-]*://")
-    or url:match("^mailto:")
-    or url:match("^tel:") then
+      or url:match("^mailto:")
+      or url:match("^tel:") then
     return url
   end
 
@@ -176,7 +224,18 @@ local function build_event_data(meta)
 
   return event_data
 end
+
 function Meta(meta)
+  -- Validate required fields before any processing
+  local validation_errors = validate_required_fields(meta)
+  if #validation_errors > 0 then
+    local file_info = ""
+    if quarto and quarto.doc then
+      file_info = " in " .. tostring(quarto.doc.input_file)
+    end
+    error("Event YAML validation failed" .. file_info .. ":\n  " .. table.concat(validation_errors, "\n  "))
+  end
+
   meta.event_data = build_event_data(meta)
   local flyer_data = build_flyer_data(meta)
   if flyer_data then
@@ -205,5 +264,3 @@ function Meta(meta)
 
   return meta
 end
-
-

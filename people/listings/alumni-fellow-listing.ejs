@@ -11,6 +11,7 @@ const alumnaeItems = (items || []).filter((item) => {
   const memberships = Array.isArray(item.memberships) ? item.memberships : [];
   return memberships.some(isAlumniFellow);
 });
+const personName = (i) => i['given-names'] && i['family-names'] ? i['given-names'] + ' ' + i['family-names'] : '';
 %>
 
 <%
@@ -26,7 +27,7 @@ for (const item of alumnaeItems) {
     if (start) {
       dateRange = end ? ' (' + start + ' - ' + end + ')' : ' (' + start + ')';
     }
-    entries.push({ path: item.path, name: item.name, academic_title: item.academic_title || '', dateRange });
+    entries.push({ path: item.path, name: personName(item), academic_title: item.academic_title || '', dateRange });
   }
 }
 

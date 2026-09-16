@@ -44,6 +44,8 @@ const entryDetail = (membership, cycle) => {
   return notes;
 };
 
+const personName = (i) => i['given-names'] && i['family-names'] ? i['given-names'] + ' ' + i['family-names'] : '';
+
 const periodMap = new Map();
 
 for (const item of (items || [])) {
@@ -64,9 +66,9 @@ for (const item of (items || [])) {
 
     periodMap.get(cycle.label).entries.push({
       path: item.path,
-      name: item.name,
+      name: personName(item),
       academic_title: item.academic_title || '',
-      surname: item.surname || item.name || '',
+      family_names: item["family-names"] || personName(item) || '',
       detail: entryDetail(membership, cycle)
     });
   }
@@ -75,7 +77,7 @@ for (const item of (items || [])) {
 const periods = Array.from(periodMap.values())
   .sort((a, b) => b.start - a.start)
   .map((period) => {
-    period.entries.sort((a, b) => String(a.surname).localeCompare(String(b.surname)));
+    period.entries.sort((a, b) => String(a.family_names).localeCompare(String(b.family_names)));
     return period;
   });
 %>
