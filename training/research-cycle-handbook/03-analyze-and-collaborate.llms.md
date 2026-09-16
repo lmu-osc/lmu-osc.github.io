@@ -21,7 +21,7 @@ Data processing and analysis should be reproducible – independent of which sof
   - **Define your own functions** rather than copy pasting pieces of code which makes it hard to maintain error-free. Functions are ‘self-contained’ sets of commands that accomplish a specific task. They usually ‘take in’ data or parameter values (these inputs are called ‘function arguments’), process them, and ‘return’ a result. See our [R tutorial](https://lmu-osc.github.io/introduction-to-R/) and [data simulation tutorial](https://lmu-osc.github.io/Introduction-Simulations-in-R/) for examples.
   - **Set seeds for random processes** to enable exact replication. A seed is a number used to initialize a pseudorandom number generator algorithm. It serves as the starting point for a sequence of numbers that appear random but are actually produced by a deterministic, fixed algorithm. See e.g. our [data simulation tutorial](https://lmu-osc.github.io/Introduction-Simulations-in-R/) for examples.
   - **Follow accessibility standards when generating outputs** (e.g. use colorblind-friendly color scheme for figures)
-  - **Follow a style guide** to increase readability. Use automated styling tools (e.g. `styler`, `lintR`).
+  - **Follow a style guide** to increase readability. Use automated styling tools (e.g. [`styler`](https://styler.r-lib.org/), [`lintr`](https://lintr.r-lib.org/), and [`Air`](https://posit-dev.github.io/air/) for R).
 - **Use LRZ Compute Cloud for data-intensive analyses**. [LRZ Supercomputing](https://www.lrz.de/en/technologies/supercomputing) provide virtual machines, high-performance computing, and storage to researchers of LMU Munich.
 
 ####  LEARN MORE
@@ -441,7 +441,7 @@ Seeds set to create reproducible random computations
 
 Figures and other generated outputs are accessible (e.g. colorblind friendly)
 
-Style guide followed (e.g., styler, lintR)
+Style guide followed (e.g., styler, lintr)
 
 **2. Before presenting results to the research group: conduct internal code peer review**
 

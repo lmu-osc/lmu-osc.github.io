@@ -173,7 +173,7 @@ Institutional data repository.
 
 ## 4.1.4. Data Licenses
 
-A license tells others what they can do with your data. Licensing your data consists in adding a file called LICENSE.txt next to your data, that contains the appropriate legal text. Without one, or equivalent statements, others cannot legally reuse your research outputs, even if it is publicly available.
+A license tells others what they can do with your data. Licensing your data consists in adding a file called LICENSE.txt next to your data, that contains the appropriate legal text. Without one, or equivalent statements, others cannot legally redistribute your research outputs, or reuse them in work they publish themselves, even if they are publicly available.
 
 Common open licenses for data are:
 
