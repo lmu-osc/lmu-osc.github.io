@@ -266,7 +266,8 @@ When data comes from instruments, sensors, or APIs (Application Programming Inte
 Field and sometimes lab researchers have to work with analogue notebooks first, and use temporary storage solution for images and video-recordings.
 
 
-- **Digitalize your data soon after data collection**, e.g. using data entry form from a relational database such as [PostgreSQL](https://www.postgresql.org/)
+- **Digitalize your data soon after data collection**, e.g. using a data entry form from a relational database such as [PostgreSQL](https://www.postgresql.org/) or [SQLite](https://sqlite.org/). Any relational database would work, and Excel/CSV files are also common options
+- **Match the tool to the size of your project.** A relational database pays off for ongoing, multi-site, or long-term data entry, but for small or one-off projects a structured spreadsheet template is enough (see [2.2.3. File Formats](#sec-data-management){.mark} for the pitfalls to avoid)
 - **Create automatic validation checks** for data entry so e.g. values outside of expected range get immediately identified (see [2.4. Quality control](#sec-quality-control){.mark})
 - **Transfer digital data** (e.g. pictures, video recordings) from temporary storage solutions (e.g. camera storage) to permanent storage solutions (see [2.1.1. Storage](#sec-data-management){.mark})
 - **Check your data entries**, e.g. after a day, to correct possible mistakes in transcription 
