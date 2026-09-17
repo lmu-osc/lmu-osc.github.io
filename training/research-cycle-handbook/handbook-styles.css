@@ -250,6 +250,11 @@ customizations for the accordions
 customizations for the sub-section collapse buttons (Bootstrap collapse)
 */
 
+.collapse-buttons {
+  border-bottom: 2px solid #8C4091;
+  padding-bottom: 0.75rem;
+}
+
 h4.collapse-toggle {
   cursor: pointer;
   position: relative;
@@ -288,4 +293,9 @@ h4.collapse-toggle::after {
 
 h4.collapse-toggle:not(.collapsed)::after {
   transform: translateY(-30%) rotate(-135deg);
+}
+
+/* switch between collapse panels instantly instead of animating their height */
+#explore-reuse-collapse > .collapsing {
+  transition: none;
 }
