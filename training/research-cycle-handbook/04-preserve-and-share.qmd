@@ -2,7 +2,9 @@
 pagetitle: "4. Preserve & Share"
 description: "Archive research outputs, publish openly, obtain persistent identifiers, and maximize research impact"
 phase_order: 4
-number-offset: [3]
+format:
+  html:
+    number-offset: [3]
 ---
 
 # Preserve & Share

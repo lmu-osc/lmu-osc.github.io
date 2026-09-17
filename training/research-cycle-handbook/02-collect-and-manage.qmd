@@ -2,7 +2,9 @@
 pagetitle: "2. Collect & Manage"
 description: "Implement FAIR data management, organize research outputs, maintain privacy, and ensure quality"
 phase_order: 2
-number-offset: [1]
+format:
+  html:
+    number-offset: [1]
 ---
 
 # Collect & Manage
@@ -1325,7 +1327,7 @@ Exclusion criteria specify which data points will be removed from analysis and w
 
 ::: {.orc-gradient-box .collect-manage-checklist}
 
-# <i class="bi bi-card-checklist checklist-icon"></i> Collect & Manage Checklist {.unnumbered}
+## <i class="bi bi-card-checklist checklist-icon"></i> Collect & Manage Checklist {.unnumbered}
 
 To complete before conducting a data validation meeting with members of the project. Not all items are relevant for all fields of research or study types.
 

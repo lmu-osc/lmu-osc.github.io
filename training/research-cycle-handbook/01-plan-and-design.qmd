@@ -4,10 +4,8 @@ description: "Explore existing resources, check legal requirements, write data m
 body-class: orc-phase-1
 phase_order: 1
 format:
-  docx:
-    toc: true
-    toc-depth: 4
-    number-sections: true
+  html:
+    number-offset: [0]
 ---
 
 # Plan & Design
@@ -15,7 +13,7 @@ format:
 ```{=html}
 
 <div class="orc-phase-hero phase-1 container shadow rounded-4">
-<div class="row align-items-center p-3 p-lg-4 mt-4 mb-3">
+<div class="row align-items-center p-3 p-lg-4 mt-4 mb-3"
 <!-- Cycle image -->
 <div class="col-12 col-lg-3 orc-hero-cycle text-center phase-1">
 {{< include ../images/os-cycle.svg >}}
