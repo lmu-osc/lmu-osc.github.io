@@ -1,0 +1,89 @@
+---
+pagetitle: Some title content
+description: "Explore existing resources, check legal requirements, write data management plans, design studies, and prepare preregistrations"
+number-sections: true
+toc: true
+format:
+    html: default
+    docx:
+        toc-depth: 4
+---
+
+# Chapter 1 title!
+ 
+
+ f
+
+
+```{=html}
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll(".nav-item").forEach(function (item) {
+    const link = item.querySelector(".nav-link");
+
+    link.addEventListener("click", function () {
+      document.querySelectorAll(".nav-item").forEach(function (other) {
+        other.classList.remove("active");
+        other.querySelector(".nav-link").classList.remove("active");
+      });
+
+      item.classList.add("active");
+      link.classList.add("active");
+    });
+  });
+});
+</script>
+<style>
+.nav-item > :not(.nav-link) {
+  display: none;
+}
+
+.nav-item.active > :not(.nav-link) {
+  display: block;
+}
+
+.nav-tabs {
+  border-bottom: 2px solid var(--orc-gray-200);
+}
+
+.nav-tabs .nav-link.active {
+  color: var(--osc-accent);
+  border-bottom-color: var(--osc-accent);
+  background: transparent;
+  font-weight: 600;
+}
+
+.nav-tabs .nav-link {
+  color: var(--orc-gray-600);
+  border: none;
+    border-bottom-width: medium;
+    border-bottom-style: none;
+    border-bottom-color: currentcolor;
+  border-bottom: 3px solid transparent;
+  padding: .75rem 1.25rem;
+  font-weight: 500;
+  transition: var(--orc-transition);
+  margin-bottom: -2px;
+}
+</style>
+```
+
+::: {.nav .nav-tabs .nav-fill .flex-column .flex-sm-row}
+
+::: {.nav-item .active}
+::: {.nav-link}
+### Active
+:::
+
+More content here
+:::
+
+::: {.nav-item}
+::: {.nav-link}
+### Much longer nav link
+:::
+
+and something here
+:::
+
+:::
