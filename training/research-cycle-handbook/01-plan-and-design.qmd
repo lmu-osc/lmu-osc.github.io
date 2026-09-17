@@ -1,15 +1,16 @@
 ---
-title: "1. Plan & Design"
+pagetitle: "1. Plan & Design"
 description: "Explore existing resources, check legal requirements, write data management plans, design studies, and prepare preregistrations"
 body-class: orc-phase-1
 phase_order: 1
-number-offset: [0,1,0]
 format:
   docx:
     toc: true
     toc-depth: 4
     number-sections: true
 ---
+
+# Plan & Design
 
 ```{=html}
 
@@ -48,7 +49,7 @@ Checkpoints: Study Plan Presentation & Preregistration Submission
 </span>
 <div class="accordion-title">
 
-### Explore & Reuse
+## Explore & Reuse
 </div>
 </div>
 <button class="accordion-button collapsed accordion-toggle-only" type="button"
@@ -67,7 +68,7 @@ A research output (e.g. data, code) without a license or statement granting your
 
 <div class="collapse-heading">
 
-#### Articles {#sec-articles .no-anchor .collapse-toggle data-bs-toggle="collapse" data-bs-target="#collapse-articles" aria-expanded="true" aria-controls="collapse-articles"}
+### Articles {#sec-articles .no-anchor .collapse-toggle data-bs-toggle="collapse" data-bs-target="#collapse-articles" aria-expanded="true" aria-controls="collapse-articles"}
 
 </div>
 <div id="collapse-articles" class="collapse show" data-bs-parent="#explore-reuse-collapse">
@@ -151,7 +152,7 @@ A research output (e.g. data, code) without a license or statement granting your
 
 <div class="collapse-heading">
 
-#### Preregistrations {#sec-preregistrations .no-anchor .collapse-toggle .collapsed data-bs-toggle="collapse" data-bs-target="#collapse-preregistrations" aria-expanded="false" aria-controls="collapse-preregistrations"}
+### Preregistrations {#sec-preregistrations .no-anchor .collapse-toggle .collapsed data-bs-toggle="collapse" data-bs-target="#collapse-preregistrations" aria-expanded="false" aria-controls="collapse-preregistrations"}
 
 </div>
 <div id="collapse-preregistrations" class="collapse" data-bs-parent="#explore-reuse-collapse">
@@ -242,7 +243,7 @@ A **preregistration** typically consists of a hypothesis and predictions, a plan
 
 <div class="collapse-heading">
 
-#### Data {#sec-data .no-anchor .collapse-toggle .collapsed data-bs-toggle="collapse" data-bs-target="#collapse-data" aria-expanded="false" aria-controls="collapse-data"}
+### Data {#sec-data .no-anchor .collapse-toggle .collapsed data-bs-toggle="collapse" data-bs-target="#collapse-data" aria-expanded="false" aria-controls="collapse-data"}
 
 </div>
 <div id="collapse-data" class="collapse" data-bs-parent="#explore-reuse-collapse">
@@ -255,7 +256,7 @@ A **preregistration** typically consists of a hypothesis and predictions, a plan
 These platforms either give you access to existing data or provide [**metadata**]{.underline} and explanations on how to request access to the data. 
 
 ::: {.callout-note}
-## Definition
+# Definition
 [**Metadata**]{.underline} are data about your data, such as author, date, measurement device, unit of measurement, context of data collection, etc.
 :::
 
@@ -267,7 +268,7 @@ These platforms either give you access to existing data or provide [**metadata**
 - **Use the metadata to plan your analysis.** Review existing data dictionaries (or "codebooks") and other documentation describing the variables, range of values, etc. If you plan to do a confirmatory analysis, do not look at the data to minimize [**confirmation or hindsight bias**]{.underline}; instead, prepare a pre-analysis plan (see [1.4. Study Design & Analysis Plan](#sec-study-design-analysis-plan){.mark}).  
 
 ::: {.callout-note}
-## Definition
+# Definition
 [**Confirmation bias**]{.underline}: The tendency to seek, interpret, and remember information that confirms one’s existing beliefs or expectations.
 
 [**Hindsight bias**]{.underline} Seeing past events as predictable after the outcome is known (“I knew it all along”).
@@ -364,7 +365,7 @@ These platforms either give you access to existing data or provide [**metadata**
 
 <div class="collapse-heading">
 
-#### Code {#sec-code .no-anchor .collapse-toggle .collapsed data-bs-toggle="collapse" data-bs-target="#collapse-code" aria-expanded="false" aria-controls="collapse-code"}
+### Code {#sec-code .no-anchor .collapse-toggle .collapsed data-bs-toggle="collapse" data-bs-target="#collapse-code" aria-expanded="false" aria-controls="collapse-code"}
 
 </div>
 <div id="collapse-code" class="collapse" data-bs-parent="#explore-reuse-collapse">
@@ -523,7 +524,7 @@ Code publicly visible on GitHub without a license or equivalent text explicitly 
 </span>
 <div class="accordion-title">
 
-### Legal Requirements
+## Legal Requirements
 </div>
 </div>
 <button class="accordion-button collapsed accordion-toggle-only" type="button"
@@ -539,7 +540,7 @@ Code publicly visible on GitHub without a license or equivalent text explicitly 
 
 <div class="collapse-heading">
 
-#### LMU guidelines {#sec-lmu-guidelines .no-anchor .collapse-toggle data-bs-toggle="collapse" data-bs-target="#collapse-lmu-guidelines" aria-expanded="true" aria-controls="collapse-lmu-guidelines"}
+### LMU guidelines {#sec-lmu-guidelines .no-anchor .collapse-toggle data-bs-toggle="collapse" data-bs-target="#collapse-lmu-guidelines" aria-expanded="true" aria-controls="collapse-lmu-guidelines"}
 
 </div>
 <div id="collapse-lmu-guidelines" class="collapse show" data-bs-parent="#legal-requirements-collapse">
@@ -566,7 +567,7 @@ The [LMU Guidelines for Safeguarding Good Scientific Practice](https://cms-cdn.l
  In later sections, you will acquire skills in data management and reproducible workflow that will enable you to comply with these guidelines and the **[FAIR principles]{.underline}**.
 
 :::{.callout-note}
-## Definitions
+# Definitions
 The **[FAIR principles]{.underline}** are defined as:  
 
 - **F**indable: [**metadata**]{.underline} should be deposited in a searchable repository and be assigned a permanent identifier\
@@ -612,7 +613,7 @@ See [https://www.go-fair.org/fair-principles/](https://www.go-fair.org/fair-prin
 
 <div class="collapse-heading">
 
-#### Funders {#sec-funders .no-anchor .collapse-toggle .collapsed data-bs-toggle="collapse" data-bs-target="#collapse-funders" aria-expanded="false" aria-controls="collapse-funders"}
+### Funders {#sec-funders .no-anchor .collapse-toggle .collapsed data-bs-toggle="collapse" data-bs-target="#collapse-funders" aria-expanded="false" aria-controls="collapse-funders"}
 
 </div>
 <div id="collapse-funders" class="collapse" data-bs-parent="#legal-requirements-collapse">
@@ -626,7 +627,7 @@ See [https://www.go-fair.org/fair-principles/](https://www.go-fair.org/fair-prin
 
 <div class="collapse-heading">
 
-#### Ethics {#sec-ethics .no-anchor .collapse-toggle .collapsed data-bs-toggle="collapse" data-bs-target="#collapse-ethics" aria-expanded="false" aria-controls="collapse-ethics"}
+### Ethics {#sec-ethics .no-anchor .collapse-toggle .collapsed data-bs-toggle="collapse" data-bs-target="#collapse-ethics" aria-expanded="false" aria-controls="collapse-ethics"}
 
 </div>
 <div id="collapse-ethics" class="collapse" data-bs-parent="#legal-requirements-collapse">
@@ -646,7 +647,7 @@ For data protection guidance, contact the [LMU Data Protection Officer](https://
 
 
 :::{.callout-tip}
-## Tips for research groups to streamline this process
+# Tips for research groups to streamline this process
 - **Share templates and example resources amongst team members.** For example, include previously approved ethics proposals, approved Data Protection Impact Assessment forms, or Data Management Plans on a common server space.
 - **Create Standard Operating Procedures (SOPs) for the team** for processes such as appropriate anonymization technique for a specific data type, power analyses script for common analyses, define when a data management plan must be updated, who is responsible, and how updates are reviewed/approved and communicated.
 :::
@@ -736,7 +737,7 @@ For data protection guidance, contact the [LMU Data Protection Officer](https://
 </span>
 <div class="accordion-title">
 
-### Research Data Management Plans
+## Research Data Management Plans
 </div>
 </div>
 <button class="accordion-button collapsed accordion-toggle-only" type="button"
@@ -758,7 +759,7 @@ A **Data Management Plan (DMP)** documents how you will handle research data thr
 - **Start with what you know, and refine the details as your project develops.** Your DMP is a living document that you will refine to match the reality of your project while ensuring data protection and streamline collaborations (see [2.2. Data Management](02-collect-and-manage.qmd#sec-data-management){.mark}, [3.1. Data Processing & Analysis](03-analyze-and-collaborate.qmd#sec-data-processing-analysis){.mark}, and [4.1. FAIR Data Sharing](04-preserve-and-share.qmd#sec-fair-data-sharing){.mark}).
 :::
 
-##### <i class="bi bi-list-check"></i> Your DMP will ask:
+#### <i class="bi bi-list-check"></i> Your DMP will ask: {.fs-5}
 
 - **What data** will you collect or generate (types, formats, volume, sources)? See [2.1. Data Collection](02-collect-and-manage.qmd#sec-data-collection){.mark}.
 - **How will you describe it** (metadata standards, documentation practices)? See [2.2. Data Management](02-collect-and-manage.qmd#sec-data-management){.mark} for these and the next questions.
@@ -773,7 +774,7 @@ The specific questions vary by discipline, data type, and funder requirements. D
 
 
 :::{.callout-tip}
-## Tips for research groups to streamline this process
+# Tips for research groups to streamline this process
 - **Share templates and example DMP amongst team members** on a common server space.
 - **Create Standard Operating Procedures for the team.** Define when a data management plan must be updated, who is responsible, and how updates are reviewed/approved and communicated.
 :::
@@ -899,7 +900,7 @@ The specific questions vary by discipline, data type, and funder requirements. D
 </span>
 <div class="accordion-title">
 
-### Study Design & Analysis Plan
+## Study Design & Analysis Plan
 </div>
 </div>
 <button class="accordion-button collapsed accordion-toggle-only" type="button"
@@ -915,7 +916,7 @@ The specific questions vary by discipline, data type, and funder requirements. D
 
 <div class="collapse-heading">
 
-#### Pre-analysis planning {#sec-pre-analysis-planning .no-anchor .collapse-toggle data-bs-toggle="collapse" data-bs-target="#collapse-pre-analysis-planning" aria-expanded="true" aria-controls="collapse-pre-analysis-planning"}
+### Pre-analysis planning {#sec-pre-analysis-planning .no-anchor .collapse-toggle data-bs-toggle="collapse" data-bs-target="#collapse-pre-analysis-planning" aria-expanded="true" aria-controls="collapse-pre-analysis-planning"}
 
 </div>
 <div id="collapse-pre-analysis-planning" class="collapse show" data-bs-parent="#study-design-collapse">
@@ -1066,7 +1067,7 @@ Preregistration templates, embargoes, file storage.
 
 <div class="collapse-heading">
 
-#### Simulation of Data {#sec-simulation-of-data .no-anchor .collapse-toggle .collapsed data-bs-toggle="collapse" data-bs-target="#collapse-simulation-of-data" aria-expanded="false" aria-controls="collapse-simulation-of-data"}
+### Simulation of Data {#sec-simulation-of-data .no-anchor .collapse-toggle .collapsed data-bs-toggle="collapse" data-bs-target="#collapse-simulation-of-data" aria-expanded="false" aria-controls="collapse-simulation-of-data"}
 
 </div>
 <div id="collapse-simulation-of-data" class="collapse" data-bs-parent="#study-design-collapse">
@@ -1147,7 +1148,7 @@ Generating an artificial dataset in R (see our [simulation tutorial](https://lmu
 
 <div class="collapse-heading">
 
-#### Power analyses {#sec-power-analyses .no-anchor .collapse-toggle .collapsed data-bs-toggle="collapse" data-bs-target="#collapse-power-analyses" aria-expanded="false" aria-controls="collapse-power-analyses"}
+### Power analyses {#sec-power-analyses .no-anchor .collapse-toggle .collapsed data-bs-toggle="collapse" data-bs-target="#collapse-power-analyses" aria-expanded="false" aria-controls="collapse-power-analyses"}
 
 </div>
 <div id="collapse-power-analyses" class="collapse" data-bs-parent="#study-design-collapse">
@@ -1244,7 +1245,7 @@ The **flawed version of post-hoc power** is called **“observed power”**: If 
 
 ::: {.orc-gradient-box .plan-design-checklist }
 
-## <i class="bi bi-card-checklist checklist-icon"></i> Plan & Design Checklist {.unnumbered}
+# <i class="bi bi-card-checklist checklist-icon"></i> Plan & Design Checklist {.unnumbered}
 
 To complete before presenting your final study plan to your research group and, if applicable, submitting your ethics proposal and/or preregistration. Not all items are relevant for all fields of research or study types.
 
