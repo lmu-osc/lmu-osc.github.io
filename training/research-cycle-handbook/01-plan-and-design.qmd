@@ -4,6 +4,11 @@ description: "Explore existing resources, check legal requirements, write data m
 body-class: orc-phase-1
 phase_order: 1
 number-offset: [0,1,0]
+format:
+  docx:
+    toc: true
+    toc-depth: 4
+    number-sections: true
 ---
 
 ```{=html}
@@ -60,15 +65,9 @@ A research output (e.g. data, code) without a license or statement granting your
 
 ::: {#explore-reuse-collapse .content}
 
-<div class="collapse-buttons d-flex flex-wrap gap-2 mb-3">
+<div class="collapse-heading">
 
 #### Articles {#sec-articles .no-anchor .collapse-toggle data-bs-toggle="collapse" data-bs-target="#collapse-articles" aria-expanded="true" aria-controls="collapse-articles"}
-
-#### Preregistrations {#sec-preregistrations .no-anchor .collapse-toggle .collapsed data-bs-toggle="collapse" data-bs-target="#collapse-preregistrations" aria-expanded="false" aria-controls="collapse-preregistrations"}
-
-#### Data {#sec-data .no-anchor .collapse-toggle .collapsed data-bs-toggle="collapse" data-bs-target="#collapse-data" aria-expanded="false" aria-controls="collapse-data"}
-
-#### Code {#sec-code .no-anchor .collapse-toggle .collapsed data-bs-toggle="collapse" data-bs-target="#collapse-code" aria-expanded="false" aria-controls="collapse-code"}
 
 </div>
 <div id="collapse-articles" class="collapse show" data-bs-parent="#explore-reuse-collapse">
@@ -150,6 +149,11 @@ A research output (e.g. data, code) without a license or statement granting your
 
 </div>
 
+<div class="collapse-heading">
+
+#### Preregistrations {#sec-preregistrations .no-anchor .collapse-toggle .collapsed data-bs-toggle="collapse" data-bs-target="#collapse-preregistrations" aria-expanded="false" aria-controls="collapse-preregistrations"}
+
+</div>
 <div id="collapse-preregistrations" class="collapse" data-bs-parent="#explore-reuse-collapse">
 
 A **preregistration** typically consists of a hypothesis and predictions, a plan for data collection (when relevant), and a plan for data analysis, that researchers upload onto a registry before starting their projects, often in order to increase the rigor of confirmatory research (see [1.4.1. Pre-analysis planning](#sec-study-design-analysis-plan){.mark}). 
@@ -236,6 +240,11 @@ A **preregistration** typically consists of a hypothesis and predictions, a plan
 
 </div>
 
+<div class="collapse-heading">
+
+#### Data {#sec-data .no-anchor .collapse-toggle .collapsed data-bs-toggle="collapse" data-bs-target="#collapse-data" aria-expanded="false" aria-controls="collapse-data"}
+
+</div>
 <div id="collapse-data" class="collapse" data-bs-parent="#explore-reuse-collapse">
 
 <h5 class="fs-5 no-anchor">How to find existing datasets?</h5>
@@ -353,6 +362,11 @@ These platforms either give you access to existing data or provide [**metadata**
 
 </div>
 
+<div class="collapse-heading">
+
+#### Code {#sec-code .no-anchor .collapse-toggle .collapsed data-bs-toggle="collapse" data-bs-target="#collapse-code" aria-expanded="false" aria-controls="collapse-code"}
+
+</div>
 <div id="collapse-code" class="collapse" data-bs-parent="#explore-reuse-collapse">
 
 **Find code available for reuse** archived on [Zenodo](https://zenodo.org/), [Software Heritage](https://www.softwareheritage.org) or actively developed on [GitHub](https://github.com/) and other code repositories. Start learning Git version control now or learn to take advantage of more collaborative features on the GitHub platform in more details in [3. Analyze & Collaborate](03-analyze-and-collaborate.qmd){.mark}. 

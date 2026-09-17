@@ -250,9 +250,34 @@ customizations for the accordions
 customizations for the sub-section collapse buttons (Bootstrap collapse)
 */
 
-.collapse-buttons {
+/*
+  The source keeps each heading directly followed by its panel so that the Word
+  output reads heading -> content. Flex `order` restores the tab-like HTML
+  layout: headings in a row, then the divider, then the open panel.
+*/
+#explore-reuse-collapse {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  column-gap: 0.5rem;
+}
+
+#explore-reuse-collapse > .collapse-heading {
+  order: 1;
+}
+
+#explore-reuse-collapse::after {
+  content: "";
+  order: 2;
+  flex-basis: 100%;
+  height: 0;
+  margin: 0.75rem 0 1rem;
   border-bottom: 2px solid #8C4091;
-  padding-bottom: 0.75rem;
+}
+
+#explore-reuse-collapse > .collapse {
+  order: 3;
+  flex-basis: 100%;
 }
 
 h4.collapse-toggle {
