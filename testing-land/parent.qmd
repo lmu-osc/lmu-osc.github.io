@@ -89,6 +89,9 @@ A preregistration typically consists of a hypothesis and predictions, a plan for
 :::
 
 
+I want to reference [Explore & Reuse](#sec-explore-and-reuse) in the text and this works because the header and link are both in this page.
+
+Let me try to reference something from the content-two.qmd file: [The Data Collection section](#sec-data-collection) and this works on the parent.html output because both documents are incorporated into the same parent document (hence the name of the file)
 
 
 
