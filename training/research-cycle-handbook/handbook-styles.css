@@ -245,3 +245,47 @@ customizations for the accordions
 .accordion-button:not(.collapsed) {
   background-color: var(--bs-accordion-active-bg);
 }
+
+/* 
+customizations for the sub-section collapse buttons (Bootstrap collapse)
+*/
+
+h4.collapse-toggle {
+  cursor: pointer;
+  position: relative;
+  margin-bottom: 0;
+  padding: 0.5rem 2.5rem 0.5rem 1rem;
+  border: 1px solid var(--bs-border-color);
+  border-radius: 0.5rem;
+  background-color: var(--bs-tertiary-bg);
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, color 0.15s ease-in-out;
+}
+
+h4.collapse-toggle:hover {
+  background-color: var(--bs-secondary-bg);
+}
+
+h4.collapse-toggle:not(.collapsed) {
+  background-color: var(--bs-success-bg-subtle);
+  border-color: var(--osc-accent);
+  color: var(--osc-accent);
+}
+
+h4.collapse-toggle::after {
+  content: "";
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: translateY(-70%) rotate(45deg);
+  transition: transform 0.2s ease;
+}
+
+h4.collapse-toggle:not(.collapsed)::after {
+  transform: translateY(-30%) rotate(-135deg);
+}
