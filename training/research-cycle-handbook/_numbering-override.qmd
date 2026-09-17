@@ -1,0 +1,14 @@
+---
+pagetitle: Some title content
+description: "Explore existing resources, check legal requirements, write data management plans, design studies, and prepare preregistrations"
+number-sections: true
+toc: true
+format:
+  html:
+    number-offset: [0]
+  docx:
+    toc: true
+    toc-depth: 4
+    number-sections: true
+    number-offset: [0]
+---
