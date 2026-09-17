@@ -9,3 +9,5 @@ Learn the ins and outs of reliable, reproducible, and open research
 The Open Science Framework page for this video and the associated slides are available at <https://osf.io/rhtgn/>.
 
 # Presentation
+
+Your browser does not support the video tag.

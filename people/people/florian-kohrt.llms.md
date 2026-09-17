@@ -6,8 +6,6 @@ Ph.D. Candidate
 
 Faculty of Psychology & Education
 
-[fkohrt@anche.no](mailto:fkohrt@anche.no)
-
 [LMU Profile](https://www.lmu.de/psy/de/personen/kontaktseite/florian-kohrt-9c878316.html)
 
 [](https://orcid.org/0000-0003-0374-5625)
