@@ -1,9 +1,11 @@
 ---
-title: "4. Preserve & Share"
+pagetitle: "4. Preserve & Share"
 description: "Archive research outputs, publish openly, obtain persistent identifiers, and maximize research impact"
 phase_order: 4
-number-offset: [0,4,0]
+number-offset: [3]
 ---
+
+# Preserve & Share
 
 
 ```{=html}
@@ -41,7 +43,7 @@ Checkpoint: Manuscript submission with DOIs for preregistration, data, and code
 </span>
 <div class="accordion-title">
 
-### FAIR Data Sharing 
+## FAIR Data Sharing
 </div>
 </div>
 <button class="accordion-button collapsed accordion-toggle-only" type="button"
@@ -66,9 +68,14 @@ In [1. Plan & Design](01-plan-and-design.qmd){.mark}, you wrote a Data Managemen
 
 These steps are straightforward if you followed previous recommendations: by this stage, you should already have a README, a data dictionary (codebook), organized files, and clear metadata.
 
-::: {.panel-tabset}
+::: {#fair-data-sharing-collapse .collapse-tabs}
 
-#### 4.1.1. Open vs Restricted 
+<div class="collapse-heading">
+
+### Open vs Restricted {#sec-open-vs-restricted .no-anchor .collapse-toggle data-bs-toggle="collapse" data-bs-target="#collapse-open-vs-restricted" aria-expanded="true" aria-controls="collapse-open-vs-restricted"}
+
+</div>
+<div id="collapse-open-vs-restricted" class="collapse show" data-bs-parent="#fair-data-sharing-collapse">
 <!-- I edited this a bit Reema, is this correct? overall I think this section could use more information and clarity. How about embargo?-->
 
 Not all data can or should be shared openly. Your sharing options depend on what consent participants gave and what your ethics approval permits (see [1.2.3. Ethics](01-plan-and-design.qmd#sec-legal-requirements){.mark}).
@@ -192,7 +199,14 @@ When deciding whether data should be shared, consider the following:
 :::
 
 
-#### 4.1.2. Preparing Your Data
+</div>
+
+<div class="collapse-heading">
+
+### Preparing Your Data {#sec-preparing-your-data .no-anchor .collapse-toggle .collapsed data-bs-toggle="collapse" data-bs-target="#collapse-preparing-your-data" aria-expanded="false" aria-controls="collapse-preparing-your-data"}
+
+</div>
+<div id="collapse-preparing-your-data" class="collapse" data-bs-parent="#fair-data-sharing-collapse">
 
 During the course of data collection and analyses, you created a README and data dictionary for yourself and collaborators. Before sharing publicly, review them from the perspective of someone who knows nothing about your project.
 
@@ -308,7 +322,14 @@ During the course of data collection and analyses, you created a README and data
 :::
 
 
-#### 4.1.3. Where to Deposit
+</div>
+
+<div class="collapse-heading">
+
+### Where to Deposit {#sec-where-to-deposit .no-anchor .collapse-toggle .collapsed data-bs-toggle="collapse" data-bs-target="#collapse-where-to-deposit" aria-expanded="false" aria-controls="collapse-where-to-deposit"}
+
+</div>
+<div id="collapse-where-to-deposit" class="collapse" data-bs-parent="#fair-data-sharing-collapse">
 
 Choose a repository that suits your data type, your field's expectations, and your access requirements.
 
@@ -393,7 +414,14 @@ Whichever you choose, ensure the repository provides a **DOI** (Digital Object I
 
 :::
 
-#### 4.1.4. Data Licenses
+</div>
+
+<div class="collapse-heading">
+
+### Data Licenses {#sec-data-licenses .no-anchor .collapse-toggle .collapsed data-bs-toggle="collapse" data-bs-target="#collapse-data-licenses" aria-expanded="false" aria-controls="collapse-data-licenses"}
+
+</div>
+<div id="collapse-data-licenses" class="collapse" data-bs-parent="#fair-data-sharing-collapse">
 
 
 A license tells others what they can do with your data. Licensing your data consists in adding a file called LICENSE.txt next to your data, that contains the appropriate legal text. Without one, or equivalent statements, others cannot legally redistribute your research outputs, or reuse them in work they publish themselves, even if they are publicly available.
@@ -441,7 +469,14 @@ For restricted-access data, a **Data Use Agreement** specifies conditions beyond
 :::
 
 
-#### 4.1.5. Data Use Agreements
+</div>
+
+<div class="collapse-heading">
+
+### Data Use Agreements {#sec-data-use-agreements .no-anchor .collapse-toggle .collapsed data-bs-toggle="collapse" data-bs-target="#collapse-data-use-agreements" aria-expanded="false" aria-controls="collapse-data-use-agreements"}
+
+</div>
+<div id="collapse-data-use-agreements" class="collapse" data-bs-parent="#fair-data-sharing-collapse">
 
 _in construction_<!-- Reema? -->
 
@@ -449,6 +484,8 @@ _in construction_<!-- Reema? -->
 * LMU contact for legal department 
 * Examples DUA
 
+
+</div>
 
 :::
 :::
@@ -468,7 +505,7 @@ _in construction_<!-- Reema? -->
 </span>
 <div class="accordion-title">
 
-### Open Source Code 
+## Open Source Code
 </div>
 </div>
 <button class="accordion-button collapsed accordion-toggle-only" type="button"
@@ -500,9 +537,14 @@ If you work with **sensitive data that cannot be anonymized** and shared:
 - **create a synthetic dataset with the same properties as the original dataset** to allow others to re-derive an approximation of the original results and conduct further exploratory analyses.
 :::
 
-::: {.panel-tabset}
+::: {#open-source-code-collapse .collapse-tabs}
 
-#### 4.2.1. Preparing Your Code Repository
+<div class="collapse-heading">
+
+### Preparing Your Code Repository {#sec-preparing-your-code-repository .no-anchor .collapse-toggle data-bs-toggle="collapse" data-bs-target="#collapse-preparing-your-code-repository" aria-expanded="true" aria-controls="collapse-preparing-your-code-repository"}
+
+</div>
+<div id="collapse-preparing-your-code-repository" class="collapse show" data-bs-parent="#open-source-code-collapse">
 
 During the course of data analyses, you created scripts and documentation such as README and data dictionary for yourself and collaborators. Before sharing publicly, review them from the perspective of someone who knows nothing about your project.
 
@@ -552,7 +594,14 @@ Importantly, if data are removed from an existing repository, they may still rem
 
 :::
 
-#### 4.2.2. Real, Simulated, or Synthetic Data
+</div>
+
+<div class="collapse-heading">
+
+### Real, Simulated, or Synthetic Data {#sec-real-simulated-or-synthetic-data .no-anchor .collapse-toggle .collapsed data-bs-toggle="collapse" data-bs-target="#collapse-real-simulated-or-synthetic-data" aria-expanded="false" aria-controls="collapse-real-simulated-or-synthetic-data"}
+
+</div>
+<div id="collapse-real-simulated-or-synthetic-data" class="collapse" data-bs-parent="#open-source-code-collapse">
 
 <!-- TODO: This does not fit so well under 4.2 Open Source Code? -->
 
@@ -634,7 +683,14 @@ You can provide the data required to run the code in several ways:
 :::
 
 
-#### 4.2.3. Code Licenses
+</div>
+
+<div class="collapse-heading">
+
+### Code Licenses {#sec-code-licenses .no-anchor .collapse-toggle .collapsed data-bs-toggle="collapse" data-bs-target="#collapse-code-licenses" aria-expanded="false" aria-controls="collapse-code-licenses"}
+
+</div>
+<div id="collapse-code-licenses" class="collapse" data-bs-parent="#open-source-code-collapse">
 
 A license tells others what they can do with your code. Licensing your code consists in adding a file called LICENSE.txt next to your code, that contains the appropriate legal text. Without one, or equivalent statements, others cannot legally reuse your code, even if it is publicly available e.g. on [GitHub](https://github.com/). Common open licenses for code are:
 
@@ -686,7 +742,14 @@ Learn more about open licenses for data and code in our [code publishing tutoria
 
 :::
 
-#### 4.2.4. Archiving & DOIs
+</div>
+
+<div class="collapse-heading">
+
+### Archiving & DOIs {#sec-archiving-dois .no-anchor .collapse-toggle .collapsed data-bs-toggle="collapse" data-bs-target="#collapse-archiving-dois" aria-expanded="false" aria-controls="collapse-archiving-dois"}
+
+</div>
+<div id="collapse-archiving-dois" class="collapse" data-bs-parent="#open-source-code-collapse">
 
 To publish your code on Zenodo, we recommend to<!-- these instructions contradict https://lmu-osc.github.io/code-publishing/archive.html but see https://github.com/lmu-osc/code-publishing/issues/86 -->
 
@@ -699,7 +762,7 @@ To publish your code on Zenodo, we recommend to<!-- these instructions contradic
 
 
 :::{.callout-tip}
-## Tips for research groups:
+# Tips for research groups:
 **Create a Zenodo "community" for the team.** After team members connect their repositories from their personal GitHub account to Zenodo, and archive releases with a DOI, these records can be added to a shared Zenodo _community_. A community provides a central space where all software and other research outputs produced by the group can be collected and displayed, making them easier to find, cite, and showcase at the team level.  
 :::
 
@@ -752,6 +815,8 @@ To publish your code on Zenodo, we recommend to<!-- these instructions contradic
 :::
 :::
 
+</div>
+
 :::
 :::
 </div>
@@ -771,7 +836,7 @@ To publish your code on Zenodo, we recommend to<!-- these instructions contradic
 </span>
 <div class="accordion-title">
 
-### Open Materials
+## Open Materials
 </div>
 </div>
 <button class="accordion-button collapsed accordion-toggle-only" type="button"
@@ -788,9 +853,14 @@ To publish your code on Zenodo, we recommend to<!-- these instructions contradic
 
 Any material needed to reproduce or replicate your study should also be shared openly unless there are dual-use, patent, or privacy concerns. 
 
-::: {.panel-tabset}
+::: {#open-materials-collapse .collapse-tabs}
 
-#### 4.3.1. Digital materials 
+<div class="collapse-heading">
+
+### Digital materials {#sec-digital-materials .no-anchor .collapse-toggle data-bs-toggle="collapse" data-bs-target="#collapse-digital-materials" aria-expanded="true" aria-controls="collapse-digital-materials"}
+
+</div>
+<div id="collapse-digital-materials" class="collapse show" data-bs-parent="#open-materials-collapse">
 
 For instance, you can share your:
 
@@ -851,7 +921,14 @@ See the [Creative Common license chooser](https://creativecommons.org/chooser/) 
 :::
 :::
 
-#### 4.3.2. Physical materials
+</div>
+
+<div class="collapse-heading">
+
+### Physical materials {#sec-physical-materials .no-anchor .collapse-toggle .collapsed data-bs-toggle="collapse" data-bs-target="#collapse-physical-materials" aria-expanded="false" aria-controls="collapse-physical-materials"}
+
+</div>
+<div id="collapse-physical-materials" class="collapse" data-bs-parent="#open-materials-collapse">
 
 Repositories for physical research materials (e.g., biological samples, chemicals, specimens, hardware, or other tangible resources) are usually called biobanks, material repositories, or research infrastructure collections and are domain specific or specialized to one kind of material (e.g. DNA). 
 
@@ -866,6 +943,8 @@ Regardless of your discipline:
 - **Check legal and ethical requirements** (biosafety, export control, patient consent).
 - **Document links between materials and associated datasets or publications.**
 
+
+</div>
 
 :::
 :::
@@ -886,7 +965,7 @@ Regardless of your discipline:
 </span>
 <div class="accordion-title">
 
-### Open Access Articles 
+## Open Access Articles
 </div>
 </div>
 <button class="accordion-button collapsed accordion-toggle-only" type="button"
@@ -903,9 +982,14 @@ Regardless of your discipline:
 
 Publishing open access articles (i.e. which are free to readers) **increases the visibility, citation, and impact** of research by removing paywall barriers, enabling scholars, practitioners, and policymakers worldwide to access and build upon the work without restriction. It also **accelerates knowledge dissemination and promotes equity** in scholarship by providing institutions and researchers - especially in low-resource settings - free and immediate access to scientific findings. Finally, tax-payer funded projects often have particular requirements for open access.
 
-::: {.panel-tabset}
+::: {#open-access-articles-collapse .collapse-tabs}
 
-#### 4.4.1. Pathways to Open Access
+<div class="collapse-heading">
+
+### Pathways to Open Access {#sec-pathways-to-open-access .no-anchor .collapse-toggle data-bs-toggle="collapse" data-bs-target="#collapse-pathways-to-open-access" aria-expanded="true" aria-controls="collapse-pathways-to-open-access"}
+
+</div>
+<div id="collapse-pathways-to-open-access" class="collapse show" data-bs-parent="#open-access-articles-collapse">
 
 There are several pathways to make your articles free to read, e.g.:
 
@@ -916,7 +1000,7 @@ There are several pathways to make your articles free to read, e.g.:
 Depending on the contract negotiated by the University and each publisher (see [4.4.2. Contract with Publishers](#sec-open-access-articles){.mark}), the payment of APCs can also be requested by publishers regardless of the article's accessibility status.
 
 :::{.callout-note}
-## Definitions
+# Definitions
 [**preprint**]{.underline}: article, book chapter, book, or other scholarly work that is deposited in a repository with unrestricted access (i.e. available to the public to view online, or download, without registration, payment, or approval) ahead of peer review. Equivalent terms used in some disciplines are ‘working paper’ and ‘unpublished manuscript’.
 
 [**postprint**]{.underline}: accepted version of an article, book chapter, book, or other scholarly work that is released by the author(s) on a repository with unrestricted access (i.e. available to the public to view online, or download, without registration, payment, or approval)
@@ -964,7 +1048,14 @@ Depending on the contract negotiated by the University and each publisher (see [
 
 
 
-#### 4.4.2. Contracts with Publishers
+</div>
+
+<div class="collapse-heading">
+
+### Contracts with Publishers {#sec-contracts-with-publishers .no-anchor .collapse-toggle .collapsed data-bs-toggle="collapse" data-bs-target="#collapse-contracts-with-publishers" aria-expanded="false" aria-controls="collapse-contracts-with-publishers"}
+
+</div>
+<div id="collapse-contracts-with-publishers" class="collapse" data-bs-parent="#open-access-articles-collapse">
 
 Until 2024, authors publishing in legacy (subscription-based) journals were required to pay an **Article Processing Charge (APC)** to make their work immediately open access upon publication, the model commonly referred to as '_gold open access_'. 
 To **avoid these fees** while still ensuring public accessibility, authors were encouraged to disseminate a **preprint and/or postprint**, or to deposit the publisher’s version in an institutional repository after the embargo period had expired. 
@@ -1003,7 +1094,14 @@ The current contract conditions for LMU Munich can be accessed on the [Universit
 
 :::
 
-#### 4.4.3. Publishing Preprints and Retaining Rights 
+</div>
+
+<div class="collapse-heading">
+
+### Publishing Preprints and Retaining Rights {#sec-publishing-preprints-and-retaining-rights .no-anchor .collapse-toggle .collapsed data-bs-toggle="collapse" data-bs-target="#collapse-publishing-preprints-and-retaining-rights" aria-expanded="false" aria-controls="collapse-publishing-preprints-and-retaining-rights"}
+
+</div>
+<div id="collapse-publishing-preprints-and-retaining-rights" class="collapse" data-bs-parent="#open-access-articles-collapse">
 
 To increase the accessibility and impact of your article we recommend you to:
 
@@ -1151,6 +1249,8 @@ To get support for [Open Access LMU](https://epub.ub.uni-muenchen.de/), the LMU 
 
 :::
 
+</div>
+
 :::
 :::
 </div>
@@ -1169,7 +1269,7 @@ To get support for [Open Access LMU](https://epub.ub.uni-muenchen.de/), the LMU 
 </span>
 <div class="accordion-title">
 
-### Attributions & Persistent Identifiers 
+## Attributions & Persistent Identifiers
 </div>
 </div>
 <button class="accordion-button collapsed accordion-toggle-only" type="button"
@@ -1185,10 +1285,15 @@ To get support for [Open Access LMU](https://epub.ub.uni-muenchen.de/), the LMU 
 ::: {.content}
 All research outputs and their specific versions should be linked to their authors, organizations, and funders through persistent identifiers.
 
-::: {.panel-tabset}
+::: {#attributions-persistent-identifiers-collapse .collapse-tabs}
 
 
-####  4.5.1. Authorship, Contributorship, and ORCID
+<div class="collapse-heading">
+
+### Authorship, Contributorship, and ORCID {#sec-authorship-contributorship-and-orcid .no-anchor .collapse-toggle data-bs-toggle="collapse" data-bs-target="#collapse-authorship-contributorship-and-orcid" aria-expanded="true" aria-controls="collapse-authorship-contributorship-and-orcid"}
+
+</div>
+<div id="collapse-authorship-contributorship-and-orcid" class="collapse show" data-bs-parent="#attributions-persistent-identifiers-collapse">
 
 <h5>Authorship</h5>
 
@@ -1270,7 +1375,14 @@ We recommend to **start discussions on authorship, roles, and responsibilities a
 :::
 
 
-####  4.5.2. Institution, Funders, and ROR
+</div>
+
+<div class="collapse-heading">
+
+### Institution, Funders, and ROR {#sec-institution-funders-and-ror .no-anchor .collapse-toggle .collapsed data-bs-toggle="collapse" data-bs-target="#collapse-institution-funders-and-ror" aria-expanded="false" aria-controls="collapse-institution-funders-and-ror"}
+
+</div>
+<div id="collapse-institution-funders-and-ror" class="collapse" data-bs-parent="#attributions-persistent-identifiers-collapse">
 
 - **Disclose your institutional affiliations and funders** as part of the metadata of all your research outputs. To be machine-readable and automatically connected to people's profile or their organization, this must include the official name of the organization and ideally (one of) its persistent identifier.
 - **Use your institution and funders' ROR**. The [Research Organization Registry (ROR)](https://ror.org/) is a global, community-led registry of open persistent identifiers for research and funding organizations.
@@ -1311,7 +1423,14 @@ The LMU Open Science Center is one of the many child organizations of LMU Munich
 
 :::
 
-####  4.5.3. Connecting Your Work
+</div>
+
+<div class="collapse-heading">
+
+### Connecting Your Work {#sec-connecting-your-work .no-anchor .collapse-toggle .collapsed data-bs-toggle="collapse" data-bs-target="#collapse-connecting-your-work" aria-expanded="false" aria-controls="collapse-connecting-your-work"}
+
+</div>
+<div id="collapse-connecting-your-work" class="collapse" data-bs-parent="#attributions-persistent-identifiers-collapse">
 
 - **Request a Digital Object Identifiers (DOI) for each of your research outputs** (data, code, preprint, preregistration)
     - you automatically get a DOI from professional repository for outputs you make public 
@@ -1328,6 +1447,8 @@ The LMU Open Science Center is one of the many child organizations of LMU Munich
 
 <!-- image of an example where all connections of DOIs are shown for an article?-->
 
+
+</div>
 
 :::
 

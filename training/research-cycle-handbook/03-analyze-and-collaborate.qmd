@@ -1,9 +1,11 @@
 ---
-title: "3. Analyze & Collaborate"
+pagetitle: "3. Analyze & Collaborate"
 description: "Create reproducible analyses, document workflows, collaborate effectively, and ensure computational reproducibility"
 phase_order: 3
-number-offset: [0,3,0]
+number-offset: [2]
 ---
+
+# Analyze & Collaborate
 
 ```{=html}
 <div class="orc-phase-hero phase-3 container shadow rounded-4">
@@ -41,7 +43,7 @@ Checkpoints: Repository & Code Peer-Review + Result Presentation
 </span>
 <div class="accordion-title">
 
-### Data Processing & Analysis 
+## Data Processing & Analysis
 </div>
 </div>
 <button class="accordion-button collapsed accordion-toggle-only" type="button"
@@ -59,9 +61,14 @@ This is best achieved by choosing automated **script-based workflows** (over man
 Because analysis scripts are run repeatedly, due to iterative development through corrections and refinements, automation is **essential for both reproducibility and efficiency**. 
 This section outlines a recommended workflow for R users.
 
-::: {.panel-tabset}
+::: {#data-processing-analysis-collapse .collapse-tabs}
 
-#### 3.1.1. Programming
+<div class="collapse-heading">
+
+### Programming {#sec-programming .no-anchor .collapse-toggle data-bs-toggle="collapse" data-bs-target="#collapse-programming" aria-expanded="true" aria-controls="collapse-programming"}
+
+</div>
+<div id="collapse-programming" class="collapse show" data-bs-parent="#data-processing-analysis-collapse">
 
 - **Create a self-contained project folder**. Include data, code, documentation, and outputs in a single structured environment, ensuring the project remains understandable, reproducible, and portable across systems and collaborators. If you use the free and open source software RStudio to manage your R project, your project directory (or folder) should contain a .Rproj file (see [R tutorial](https://lmu-osc.github.io/introduction-to-R/)). **Use relative paths** (i.e. `“./subfolder”`, where `.` represents the root of your .Rproj directory) or the library `here`, so the project stays portable to another environment
 - **Use a standard folder structure**. Your code repository should include a standard folder structure that make sense for your type of research, ideally shared across your team members. You can for instance use our [research project template](https://github.com/lmu-osc/research-project-template). 
@@ -194,7 +201,14 @@ This section outlines a recommended workflow for R users.
 :::
 
 
-#### 3.1.2. Version Control
+</div>
+
+<div class="collapse-heading">
+
+### Version Control {#sec-version-control .no-anchor .collapse-toggle .collapsed data-bs-toggle="collapse" data-bs-target="#collapse-version-control" aria-expanded="false" aria-controls="collapse-version-control"}
+
+</div>
+<div id="collapse-version-control" class="collapse" data-bs-parent="#data-processing-analysis-collapse">
 
 Version control tracks changes to files over time. You can see what changed, when, and why. You can revert to previous versions. Collaborators can work without overwriting each other.
 
@@ -205,7 +219,7 @@ In a version controlled workflow, you back up your local Git repositories on the
 - **Maintain efficient communication to coordinate collaborative work.** GitHub or GitLab facilitate collaboration through "issues" (a precise description of something to fix), "discussions" (asynchronous thinking through figuring out how to resolve a problem), and can still very well resolve "conflicts" (i.e. collaborators wanting to merge changes on the exact same line of script). To complement this, LMU Munich offers [LMU chat (Matrix)](https://www.lmu.de/de/die-lmu/struktur/zentrale-universitaetsverwaltung/informations-und-kommunikationstechnik-dezernat-vi/it-servicedesk/zentrale-it-angebote/lmu-chat-matrix/), a secured open source chat service with all LMU members on which you can also invite external collaborators. 
 
 :::{.callout-note} 
-## Difference between Git, GitHub and GitLab 
+# Difference between Git, GitHub and GitLab
 <!-- copied to 2.2.6 manually -->
 - **Git** is a version control system that tracks changes in text files (e.g. CSV, plain text, R, Python). The Git software and your Git repositories should be, respectively, installed and located in your local environment (i.e. on your computer, not on a drive, see [Git tutorial](https://lmu-osc.github.io/Introduction-RStudio-Git-GitHub/)).   
 - **GitHub** is the most popular, free but proprietary and US-based cloud-based platform for software development with Git, providing collaboration features like pull requests and issues (see [GitHub tutorial](https://lmu-osc.github.io/Collaborative-RStudio-GitHub/)). **You should not have any sensitive information on GitHub even in a private repository.**
@@ -225,7 +239,7 @@ Importantly, if data are removed from an existing repository, they may still rem
 :::
 
 :::{.callout-tip}
-## Tips for research groups:
+# Tips for research groups:
 **Create a LRZ GitLab "organization" for the team.**  This allows repositories, permissions, and project resources to be managed centrally rather than under individual accounts. This ensures continuity when team members leave, as ownership can be transferred to e.g. the PI and other administrators of the organization. 
 :::
 
@@ -337,7 +351,14 @@ Importantly, if data are removed from an existing repository, they may still rem
 :::
 
 
-#### 3.1.3. Computational Environment Management
+</div>
+
+<div class="collapse-heading">
+
+### Computational Environment Management {#sec-computational-environment-management .no-anchor .collapse-toggle .collapsed data-bs-toggle="collapse" data-bs-target="#collapse-computational-environment-management" aria-expanded="false" aria-controls="collapse-computational-environment-management"}
+
+</div>
+<div id="collapse-computational-environment-management" class="collapse" data-bs-parent="#data-processing-analysis-collapse">
 
 Manage your computational environment by explicitly recording the software, package versions, and dependencies required for your analyses, ensuring results can be reproduced across systems and over time. Tools such as packages managers (e.g. [Renv](https://rstudio.github.io/renv/) for R packages, [Conda](https://anaconda.org/channels/anaconda/packages/conda/overview) for Python packages) or broader containers (e.g. [Docker](https://www.docker.com/) or [Binder](https://mybinder.org/)) help stabilize workflows and prevent inconsistencies caused by packages or software updates.
 
@@ -458,7 +479,14 @@ Before publishing your project (see [4. Preserve & share](04-preserve-and-share.
 
 
 
-#### 3.1.4. Documentation
+</div>
+
+<div class="collapse-heading">
+
+### Documentation {#sec-documentation .no-anchor .collapse-toggle .collapsed data-bs-toggle="collapse" data-bs-target="#collapse-documentation" aria-expanded="false" aria-controls="collapse-documentation"}
+
+</div>
+<div id="collapse-documentation" class="collapse" data-bs-parent="#data-processing-analysis-collapse">
 
 As with all documentation, your project repository’s documentation should be written early - initially for your near-future self to support efficient re-engagement after interruptions, then revised for internal team review, and ultimately expanded and refined for public sharing (see [4.2. Open Source Code](04-preserve-and-share.qmd#sec-open-source-code){.mark}).  
 
@@ -552,6 +580,8 @@ Example README to allow team members to review your code:
 :::
 
 :::
+</div>
+
 :::
 :::
 </div>
@@ -570,7 +600,7 @@ Example README to allow team members to review your code:
 </span>
 <div class="accordion-title">
 
-### Reporting Results
+## Reporting Results
 </div>
 </div>
 <button class="accordion-button collapsed accordion-toggle-only" type="button"
@@ -586,9 +616,14 @@ Example README to allow team members to review your code:
 
 Your results should be **computationally reproducible** to ensure that the analysis can be independently verified. They should also be **reported comprehensively and in line with reporting guidelines** to facilitate statistical checks and future meta-analyses.
 
-::: {.panel-tabset}
+::: {#reporting-results-collapse .collapse-tabs}
 
-#### 3.2.1. Results reproducibility 
+<div class="collapse-heading">
+
+### Results reproducibility {#sec-results-reproducibility .no-anchor .collapse-toggle data-bs-toggle="collapse" data-bs-target="#collapse-results-reproducibility" aria-expanded="true" aria-controls="collapse-results-reproducibility"}
+
+</div>
+<div id="collapse-results-reproducibility" class="collapse show" data-bs-parent="#reporting-results-collapse">
 
 A practical way to make results and analysis decisions transparent and traceable is to use **literate programming**, which **combines narrative text** explaining the logic of the analysis with **executable code** that performs data processing and statistical procedures. **When the document is compiled, outputs such as tables, figures, and references are generated directly from the code and updated automatically whenever the code changes, ensuring that the reported methods and results remain consistent with the analysis.** This eliminates repeated copy-and-paste and reduces the risk of uncertainty about which version of, for example, a figure is actually included in the manuscript.
 
@@ -821,7 +856,14 @@ Using the same Quarto environment, you can also:
 
 :::
 
-#### 3.2.2. Reporting guidelines
+</div>
+
+<div class="collapse-heading">
+
+### Reporting guidelines {#sec-reporting-guidelines .no-anchor .collapse-toggle .collapsed data-bs-toggle="collapse" data-bs-target="#collapse-reporting-guidelines" aria-expanded="false" aria-controls="collapse-reporting-guidelines"}
+
+</div>
+<div id="collapse-reporting-guidelines" class="collapse" data-bs-parent="#reporting-results-collapse">
 
 Transparent and complete reporting is essential for the interpretation, verification, and reuse of scientific results. To support this, many disciplines have developed reporting guidelines that specify the **minimum information that should be included when describing study design, data collection, analysis, and results**. These guidelines help ensure that studies can be critically evaluated, replicated, and included in evidence syntheses such as systematic reviews and meta-analyses.
 
@@ -829,7 +871,7 @@ Transparent and complete reporting is essential for the interpretation, verifica
  A central resource for such guidelines is the [EQUATOR Network](https://www.equator-network.org/reporting-guidelines/), an international initiative collecting and promoting reporting standards across many study types and disciplines. 
  
 
-##### <i class="bi bi-list-check"></i> Typical items that should be reported include:
+#### <i class="bi bi-list-check"></i> Typical items that should be reported include:
 
 - **Study design and setting** – the type of study (e.g., randomized trial, cohort study), where and when it was conducted, and relevant contextual factors.
 - **Participants or data sources** – eligibility criteria, recruitment or sampling procedures, sample size, and reasons for exclusions or dropouts.
@@ -870,6 +912,8 @@ Some of these elements will be refined depending on your study type. Widely used
 :::
 
 :::
+</div>
+
 :::
 :::
 </div>

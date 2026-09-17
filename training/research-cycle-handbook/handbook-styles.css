@@ -190,7 +190,7 @@ svg :is(text, tspan) { font-family: inherit !important; font-weight: bold; point
 .orc-phase-hero.phase-2 { background: #fff5f9;}
 .orc-hero-pills.phase-2, .orc-hero-checkpoint.phase-2 { background: #c90a6a83; border:1px solid#cc006695; color:#000;}
 .orc-gradient-box.collect-manage-checklist { background: #fff5f9; border-left-color:#cc006695;}
-.orc-gradient-box.collect-manage-checklist h2, .orc-gradient-box.collect-manage-checklist .checklist-icon{color:#000;}
+.orc-gradient-box.collect-manage-checklist h1, .orc-gradient-box.collect-manage-checklist h2, .orc-gradient-box.collect-manage-checklist .checklist-icon{color:#000;}
 .orc-checklist-download.phase-2 .btn.btn-outline-secondary.btn-sm{border-color: #cc006695; color:#cc006695;}
 .orc-checklist-download.phase-2 .btn.btn-outline-secondary.btn-sm:hover{
   border-color: #cc006695 !important;
@@ -201,7 +201,7 @@ svg :is(text, tspan) { font-family: inherit !important; font-weight: bold; point
 .orc-phase-hero.phase-3 { background:#fffbee;}
 .orc-hero-pills.phase-3, .orc-hero-checkpoint.phase-3 { background: #ffbf0091; border:1px solid #ffbf0091;color:#000;}
 .orc-gradient-box.analyze-collaborate-checklist { background: #fffbee; border-left-color: #ffbf0091;}
-.orc-gradient-box.analyze-collaborate-checklist h2, .orc-gradient-box.analyze-collaborate-checklist .checklist-icon{color:#000;}
+.orc-gradient-box.analyze-collaborate-checklist h1, .orc-gradient-box.analyze-collaborate-checklist h2, .orc-gradient-box.analyze-collaborate-checklist .checklist-icon{color:#000;}
 .orc-checklist-download.phase-3 .btn.btn-outline-secondary.btn-sm{border-color:#ffbf0091; color:#ffbf0091;}
 .orc-checklist-download.phase-3 .btn.btn-outline-secondary.btn-sm:hover{
   border-color: #ffbf0091!important;
@@ -212,7 +212,7 @@ svg :is(text, tspan) { font-family: inherit !important; font-weight: bold; point
 .orc-phase-hero.phase-4 { background:#edfff5;}
 .orc-hero-pills.phase-4, .orc-hero-checkpoint.phase-4 { background: #00c057a6; border:1px solid #00c057a6;color:#000;}
 .orc-gradient-box.preserve-share-checklist { background: #edfff5; border-left-color: #00c057a6;}
-.orc-gradient-box.preserve-share-checklist h2, .orc-gradient-box.preserve-share-checklist .checklist-icon{color: #000;}
+.orc-gradient-box.preserve-share-checklist h1, .orc-gradient-box.preserve-share-checklist h2, .orc-gradient-box.preserve-share-checklist .checklist-icon{color: #000;}
 .orc-checklist-download.phase-4 .btn.btn-outline-secondary.btn-sm{border-color:#00c057a6; color:#00c057a6;}
 .orc-checklist-download.phase-4 .btn.btn-outline-secondary.btn-sm:hover{
   border-color:#00c057a6 !important;
