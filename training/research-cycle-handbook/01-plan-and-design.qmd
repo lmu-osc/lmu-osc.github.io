@@ -63,7 +63,7 @@ Checkpoints: Study Plan Presentation & Preregistration Submission
 Any resource that inspires you or that you want to reuse and/or adapt must minimally be **cited using their persistent identifiers** e.g. DOIs (Digital Object Identifiers) - and otherwise URL with author, date, and time of access - and you must **follow the license and/or usage agreement** provided by the authors. 
 A research output (e.g. data, code) without a license or statement granting your permission for reuse cannot legally be redistributed, and reusing it in work you publish yourself requires the authors' agreement, even if it appears publicly online.
 
-::: {#explore-reuse-collapse .content}
+::: {#explore-reuse-collapse .collapse-tabs}
 
 <div class="collapse-heading">
 
@@ -535,10 +535,14 @@ Code publicly visible on GitHub without a license or equivalent text explicitly 
 <div id="collapseTwo" class="accordion-collapse collapse">
 <div class="accordion-body p-4">
 
-:::{.content}
-:::{.panel-tabset}
+:::{#legal-requirements-collapse .collapse-tabs}
 
-#### 1.2.1. LMU guidelines
+<div class="collapse-heading">
+
+#### LMU guidelines {#sec-lmu-guidelines .no-anchor .collapse-toggle data-bs-toggle="collapse" data-bs-target="#collapse-lmu-guidelines" aria-expanded="true" aria-controls="collapse-lmu-guidelines"}
+
+</div>
+<div id="collapse-lmu-guidelines" class="collapse show" data-bs-parent="#legal-requirements-collapse">
 
 The [LMU Guidelines for Safeguarding Good Scientific Practice](https://cms-cdn.lmu.de/media/contenthub/amtliche-veroeffentlichungen/gwp-ordnung.pdf) are legally binding for all academics, researchers, research support staff, teachers, and students at LMU Munich. Only the original text in German prevails, but we provide an English summary of relevant aspects for this guide: 
 
@@ -604,14 +608,28 @@ See [https://www.go-fair.org/fair-principles/](https://www.go-fair.org/fair-prin
 
 :::
 
-#### 1.2.2. Funders
+</div>
+
+<div class="collapse-heading">
+
+#### Funders {#sec-funders .no-anchor .collapse-toggle .collapsed data-bs-toggle="collapse" data-bs-target="#collapse-funders" aria-expanded="false" aria-controls="collapse-funders"}
+
+</div>
+<div id="collapse-funders" class="collapse" data-bs-parent="#legal-requirements-collapse">
 
 - **Check all funders' open science requirements.** Funders may have additional requirements on top of those indicated in the LMU guidelines. For instance, some funding lines request a Research Data Management plan before making their second payment, some specify the extent and timing of data sharing and provide funds for such activity. 
 
 
 - **Contact the [LMU Research Funding Unit](https://www.lmu.de/en/research/research-services/contact.html) to review your grant proposal** and assess if your proposal is meeting your funders' open science requirements. 
 
-#### 1.2.3. Ethics
+</div>
+
+<div class="collapse-heading">
+
+#### Ethics {#sec-ethics .no-anchor .collapse-toggle .collapsed data-bs-toggle="collapse" data-bs-target="#collapse-ethics" aria-expanded="false" aria-controls="collapse-ethics"}
+
+</div>
+<div id="collapse-ethics" class="collapse" data-bs-parent="#legal-requirements-collapse">
 
 Data collection and analyses involving human participants or animal subjects typically require approval from ethics committees to ensure responsible conduct and the protection of data.
 
@@ -699,8 +717,8 @@ For data protection guidance, contact the [LMU Data Protection Officer](https://
 
 :::
 
+</div>
 
-:::
 :::
 </div>
 </div>
@@ -893,11 +911,14 @@ The specific questions vary by discipline, data type, and funder requirements. D
 <div id="collapseFour" class="accordion-collapse collapse">
 <div class="accordion-body p-4">
 
-:::{.content}
+:::{#study-design-collapse .collapse-tabs}
 
-::: {.panel-tabset}
+<div class="collapse-heading">
 
-#### 1.4.1. Pre-analysis planning 
+#### Pre-analysis planning {#sec-pre-analysis-planning .no-anchor .collapse-toggle data-bs-toggle="collapse" data-bs-target="#collapse-pre-analysis-planning" aria-expanded="true" aria-controls="collapse-pre-analysis-planning"}
+
+</div>
+<div id="collapse-pre-analysis-planning" class="collapse show" data-bs-parent="#study-design-collapse">
 
 <h5 class="fs-5 no-anchor">Why should you plan your statistical plan prior to collecting data?</h5>
 
@@ -1041,7 +1062,14 @@ Preregistration templates, embargoes, file storage.
 
 :::
 
-#### 1.4.2. Simulation of Data
+</div>
+
+<div class="collapse-heading">
+
+#### Simulation of Data {#sec-simulation-of-data .no-anchor .collapse-toggle .collapsed data-bs-toggle="collapse" data-bs-target="#collapse-simulation-of-data" aria-expanded="false" aria-controls="collapse-simulation-of-data"}
+
+</div>
+<div id="collapse-simulation-of-data" class="collapse" data-bs-parent="#study-design-collapse">
 
 In our context, a computer simulation is the generation of artificial data to build up an understanding of real data and the statistical models we use to analyze them. You can simulate data to:
 
@@ -1115,7 +1143,14 @@ Generating an artificial dataset in R (see our [simulation tutorial](https://lmu
 
 
 
-#### 1.4.3. Power analyses 
+</div>
+
+<div class="collapse-heading">
+
+#### Power analyses {#sec-power-analyses .no-anchor .collapse-toggle .collapsed data-bs-toggle="collapse" data-bs-target="#collapse-power-analyses" aria-expanded="false" aria-controls="collapse-power-analyses"}
+
+</div>
+<div id="collapse-power-analyses" class="collapse" data-bs-parent="#study-design-collapse">
 
 Power analysis is relevant whether you are designing a project from scratch or running an analysis on already existing data. There are two main types of power analyses: 
 
@@ -1197,7 +1232,7 @@ The **flawed version of post-hoc power** is called **“observed power”**: If 
 :::
 
 
-:::
+</div>
 
 :::
 </div>
