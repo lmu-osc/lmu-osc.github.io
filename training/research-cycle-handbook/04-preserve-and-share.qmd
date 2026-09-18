@@ -1,9 +1,13 @@
 ---
-title: "4. Preserve & Share"
+pagetitle: "4. Preserve & Share"
 description: "Archive research outputs, publish openly, obtain persistent identifiers, and maximize research impact"
 phase_order: 4
-number-offset: [0,4,0]
+format:
+  html:
+    number-offset: [3]
 ---
+
+# Preserve & Share {#sec-preserve-and-share-chapter}
 
 
 ```{=html}
@@ -32,31 +36,31 @@ Checkpoint: Manuscript submission with DOIs for preregistration, data, and code
 </div>
 ```
 
-<div class="accordion rh-accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle">
+<div class="accordion rh-accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle" id="accordion-fair-data-sharing">
 <div class="accordion-item">
-<div class="accordion-header no-anchor" id="sec-fair-data-sharing">
+<div class="accordion-header no-anchor">
 <div class="accordion-header-content">
 <span class="icon-wrapper rounded-4 bg-success-subtle text-success p-3">
 <i class="bi bi-database-up m-0 fs-4"></i> 
 </span>
 <div class="accordion-title">
 
-### FAIR Data Sharing 
+## FAIR Data Sharing {#sec-fair-data-sharing}
 </div>
 </div>
 <button class="accordion-button collapsed accordion-toggle-only" type="button"
   data-bs-toggle="collapse"
-  data-bs-target="#collapseOne"
+  data-bs-target="#collapse-fair-data-sharing"
   aria-expanded="false"
   aria-label="Toggle FAIR Data Sharing section"></button>
 </div>
-<div id="collapseOne" class="accordion-collapse collapse">
+<div id="collapse-fair-data-sharing" class="accordion-collapse collapse">
 <div class="accordion-body p-4">
 
 ::: {.container}
 Sharing your data allows others to verify your findings, build on your work, and increase the impact of your research. But sharing does not always mean making everything publicly available. What you can share depends on the consent you obtained, the sensitivity of your data, and your ethics approval.
 
-In [1. Plan & Design](01-plan-and-design.qmd){.mark}, you wrote a Data Management Plan, in [2. Collect & Manage](02-collect-and-manage.qmd){.mark}, you created documentation for yourself, and in [3. Analyze & Collaborate](03-analyze-and-collaborate.qmd){.mark} you updated that documentation for your collaborators. Now you prepare that documentation for people who have no prior knowledge of your project and reassess you plan:
+In [[1. Plan & Design](01-plan-and-design.qmd){.mark}]{.content-visible when-format="html"}[ @sec-plan-and-design-chapter]{.content-hidden when-format="html"}, you wrote a Data Management Plan, in [[2. Collect & Manage](02-collect-and-manage.qmd){.mark}]{.content-visible when-format="html"}[ @sec-collect-and-manage-chapter]{.content-hidden when-format="html"}, you created documentation for yourself, and in [[3. Analyze & Collaborate](03-analyze-and-collaborate.qmd){.mark}]{.content-visible when-format="html"}[ @sec-analyze-and-collaborate-chapter]{.content-hidden when-format="html"} you updated that documentation for your collaborators. Now you prepare that documentation for people who have no prior knowledge of your project and reassess you plan:
 
 ::: {.ms-1} 
 - **Make a final decision on how openly your data will be shared.**
@@ -66,24 +70,29 @@ In [1. Plan & Design](01-plan-and-design.qmd){.mark}, you wrote a Data Managemen
 
 These steps are straightforward if you followed previous recommendations: by this stage, you should already have a README, a data dictionary (codebook), organized files, and clear metadata.
 
-::: {.panel-tabset}
+::: {#fair-data-sharing-collapse .collapse-tabs}
 
-#### 4.1.1. Open vs Restricted 
+<div class="collapse-heading">
+
+### Open vs Restricted {#sec-open-vs-restricted .no-anchor .collapse-toggle data-bs-toggle="collapse" data-bs-target="#collapse-open-vs-restricted" aria-expanded="true" aria-controls="collapse-open-vs-restricted"}
+
+</div>
+<div id="collapse-open-vs-restricted" class="collapse show" data-bs-parent="#fair-data-sharing-collapse">
 <!-- I edited this a bit Reema, is this correct? overall I think this section could use more information and clarity. How about embargo?-->
 
-Not all data can or should be shared openly. Your sharing options depend on what consent participants gave and what your ethics approval permits (see [1.2.3. Ethics](01-plan-and-design.qmd#sec-legal-requirements){.mark}).
+Not all data can or should be shared openly. Your sharing options depend on what consent participants gave and what your ethics approval permits (see [[1.2.3. Ethics](01-plan-and-design.qmd#sec-legal-requirements){.mark}]{.content-visible when-format="html"}[ @sec-legal-requirements]{.content-hidden when-format="html"}).
 
 - **Open data** can be downloaded by anyone without restrictions. This maximizes reuse but is only appropriate when data contains no personal information or has been fully anonymized.
 
-- **Restricted access** means the metadata is available on a professional repository and clear instructions of the conditions of access to the data are provided. Requesting the data often requires describing the purpose of reuse (sometimes in the form of a preregistration, see [1.4.1. Pre-analysis planning](01-plan-and-design.qmd#sec-study-design-analysis-plan){.mark}), signing a Data Use Agreement, and agreeing to further conditions. This can be organized automatically through the repository or through contacting the authors<!--if so what's the difference with the option below?-->. This balances reuse with protection. 
+- **Restricted access** means the metadata is available on a professional repository and clear instructions of the conditions of access to the data are provided. Requesting the data often requires describing the purpose of reuse (sometimes in the form of a preregistration, see [[1.4.1. Pre-analysis planning](01-plan-and-design.qmd#sec-study-design-analysis-plan){.mark}]{.content-visible when-format="html"}[ @sec-study-design-analysis-plan]{.content-hidden when-format="html"}), signing a Data Use Agreement, and agreeing to further conditions. This can be organized automatically through the repository or through contacting the authors<!--if so what's the difference with the option below?-->. This balances reuse with protection. 
 
-- **Metadata only** describes what data exists without sharing the data itself. Others can discover your work and contact you to discuss access. This is appropriate when data cannot be shared due to legal or ethical constraints.<!--would that be considered Accessible though?--> Making your data Findable by sharing your metadata on a professional repository is the first step to making your data FAIR, as emphasized by the [LMU Guidelines for Safeguarding Good Scientific Practice](https://cms-cdn.lmu.de/media/contenthub/amtliche-veroeffentlichungen/gwp-ordnung.pdf) (see also [1.2. Legal Requirements](01-plan-and-design.qmd#sec-legal-requirements){.mark})
+- **Metadata only** describes what data exists without sharing the data itself. Others can discover your work and contact you to discuss access. This is appropriate when data cannot be shared due to legal or ethical constraints.<!--would that be considered Accessible though?--> Making your data Findable by sharing your metadata on a professional repository is the first step to making your data FAIR, as emphasized by the [LMU Guidelines for Safeguarding Good Scientific Practice](https://cms-cdn.lmu.de/media/contenthub/amtliche-veroeffentlichungen/gwp-ordnung.pdf) (see also [[1.2. Legal Requirements](01-plan-and-design.qmd#sec-legal-requirements){.mark}]{.content-visible when-format="html"}[ @sec-legal-requirements]{.content-hidden when-format="html"})
 
 When deciding whether data should be shared, consider the following:
 
 - Ensure that data sharing is compatible with the **informed consent** provided by participants. 
 - Check what your **ethics approval** allows.
-- Consider whether the data can be **anonymized** without losing scientific value (see [2.3.2. Anonymization](02-collect-and-manage.qmd#sec-ethics-and-privacy){.mark}).
+- Consider whether the data can be **anonymized** without losing scientific value (see [[2.3.2. Anonymization](02-collect-and-manage.qmd#sec-ethics-and-privacy){.mark}]{.content-visible when-format="html"}[ @sec-ethics-and-privacy]{.content-hidden when-format="html"}).
 - If you work with **sensitive data**, you may consult the University's [data protection officer](https://www.lmu.de/en/about-lmu/structure/organizational-structure/officers-representatives-and-contact-persons/data-protection-officer.html). 
 - If your research outputs could have **dual-use** implications (e.g. that could also be applied for military or malicious purposes), consult the relevant regulations (e.g. European Commission's policy ([Dual-Use Regulation 2021/821](https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L:2021:206:FULL&from=EN))) and contact the University's [Export Control service](mailto:Exportkontrolle@Verwaltung.Uni-Muenchen.DE).
 - If your research may lead to **patents or commercialization**, contact the the University's [IP Management team](https://www.lmu.de/en/research/research-transfer/inventions-patents-and-exploitation-rights/) before sharing data. Early consultation helps ensure that intellectual property rights are not compromised.
@@ -94,7 +103,7 @@ When deciding whether data should be shared, consider the following:
 
 ::: {.container .my-4 }
 
-<h4 class="fs-5"><i class="bi bi-mortarboard"></i> LEARN MORE</h4>
+#### <i class="bi bi-mortarboard"></i> LEARN MORE {#sec-open-vs-restricted-lm .fs-5 .unnumbered}
 
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
 
@@ -114,6 +123,11 @@ When deciding whether data should be shared, consider the following:
 <a href="https://lmu-osc.github.io/training/data-management/open-data.html" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [Why share data openly?](https://lmu-osc.github.io/training/data-management/open-data.html): An introduction to the what, why, and how to make data open (30 min)
+:::
+
 :::
 
 ::: {.col}
@@ -132,6 +146,11 @@ When deciding whether data should be shared, consider the following:
 <a href="https://lmu-osc.github.io/training/data-management/maintaining-privacy-with-open-data.html" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [Maintaining Privacy with Open Data](https://lmu-osc.github.io/training/data-management/maintaining-privacy-with-open-data.html): How to make data open without revealing sensitive information (1h)
+:::
+
 :::
 
 
@@ -146,16 +165,21 @@ When deciding whether data should be shared, consider the following:
   </div>
   <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
 </div>
-<h4 class="card-title">TBA: Data Anonymization</h4> <!-- edit when available -->
-<p class="card-text">Implement data anonymization techniques in R. (X h)</p> <!-- edit when available -->
-<a href="#" class="stretched-link" rel="noopener"></a><!-- Add link when available -->
+<h4 class="card-title">Data Anonymization</h4>
+<p class="card-text">Implement data anonymization techniques in R. (3h)</p>
+<a href="https://lmu-osc.github.io/data-anonymization/" class="stretched-link" rel="noopener"></a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [Data Anonymization](https://lmu-osc.github.io/data-anonymization/): Implement data anonymization techniques in R. (3h)
 :::
 
 :::
 
-<h4 class="fs-5 mt-3"><i class="bi bi-tools"></i> TOOLS & RESOURCES</h4>
+:::
+
+#### <i class="bi bi-tools"></i> TOOLS & RESOURCES {#sec-open-vs-restricted-tr .fs-5 .mt-3 .unnumbered}
 
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
 
@@ -171,6 +195,11 @@ When deciding whether data should be shared, consider the following:
 <a href="https://cms-cdn.lmu.de/media/contenthub/amtliche-veroeffentlichungen/gwp-ordnung.pdf" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [LMU Guidelines for Safeguarding Good Scientific Practice](https://cms-cdn.lmu.de/media/contenthub/amtliche-veroeffentlichungen/gwp-ordnung.pdf): Implementation of the German Research Foundation's (DFG) Code of Conduct
+:::
+
 :::
 
 ::: {.col}
@@ -184,6 +213,11 @@ When deciding whether data should be shared, consider the following:
 <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L:2021:206:FULL&from=EN" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [EU Dual-Use Regulation 2021/821](https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L:2021:206:FULL&from=EN): List of regulated research outputs that could lead to military or malicious purposes.
+:::
+
 :::
 
 
@@ -192,7 +226,14 @@ When deciding whether data should be shared, consider the following:
 :::
 
 
-#### 4.1.2. Preparing Your Data
+</div>
+
+<div class="collapse-heading">
+
+### Preparing Your Data {#sec-preparing-your-data .no-anchor .collapse-toggle .collapsed data-bs-toggle="collapse" data-bs-target="#collapse-preparing-your-data" aria-expanded="false" aria-controls="collapse-preparing-your-data"}
+
+</div>
+<div id="collapse-preparing-your-data" class="collapse" data-bs-parent="#fair-data-sharing-collapse">
 
 During the course of data collection and analyses, you created a README and data dictionary for yourself and collaborators. Before sharing publicly, review them from the perspective of someone who knows nothing about your project.
 
@@ -200,14 +241,14 @@ During the course of data collection and analyses, you created a README and data
 
 - **Review your data dictionary** to ensure every variable is fully described. What was obvious to you during analysis may need explanation for others.
 
-- **Confirm you follow community standards.** Many fields have established formats for sharing data (e.g., [BIDS](https://bids.neuroimaging.io/index.html) for neuroimaging, see [FAIRsharing](https://fairsharing.org/) and [RDMkit](https://rdmkit.elixir-europe.org/your_domain) to review discipline specific organizational and metadata standards). Using these makes your data immediately usable with existing tools (see also [2.2.5. Standards](02-collect-and-manage.qmd#sec-data-management){.mark}).<!-- link to discipline specific guidance when exist--> 
+- **Confirm you follow community standards.** Many fields have established formats for sharing data (e.g., [BIDS](https://bids.neuroimaging.io/index.html) for neuroimaging, see [FAIRsharing](https://fairsharing.org/) and [RDMkit](https://rdmkit.elixir-europe.org/your_domain) to review discipline specific organizational and metadata standards). Using these makes your data immediately usable with existing tools (see also [[2.2.5. Standards](02-collect-and-manage.qmd#sec-data-management){.mark}]{.content-visible when-format="html"}[ @sec-data-management]{.content-hidden when-format="html"}).<!-- link to discipline specific guidance when exist--> 
 
 - **Verify anonymization.** Check that no personal information remains in the data files, metadata, or filenames.
 
 
 ::: {.container .my-4 }
 
-<h4 class="fs-5"><i class="bi bi-mortarboard"></i> LEARN MORE</h4>
+#### <i class="bi bi-mortarboard"></i> LEARN MORE {#sec-preparing-your-data-lm .fs-5 .unnumbered}
 
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
 
@@ -228,6 +269,11 @@ During the course of data collection and analyses, you created a README and data
 <a href="https://lmu-osc.github.io/FAIR-Data-Management/" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [FAIR Data Management](https://lmu-osc.github.io/FAIR-Data-Management/): Manage data following FAIR principles. Covers READMEs, data dictionaries, file formats, and standards. (2h)
+:::
+
 :::
 
 <!-- card  -->
@@ -247,6 +293,11 @@ During the course of data collection and analyses, you created a README and data
 <a href="https://lmu-osc.github.io/data-documentation-validation-R/" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [Data Documentation & Validation](https://lmu-osc.github.io/data-documentation-validation-R/): Create data dictionaries and READMEs for your data. (1h)
+:::
+
 :::
 
 
@@ -261,17 +312,22 @@ During the course of data collection and analyses, you created a README and data
   </div>
   <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
 </div>
-<h4 class="card-title">TBA: Data Anonymization</h4> <!-- edit when available -->
-<p class="card-text">Implement data anonymization techniques in R. (X h)</p> <!-- edit when available -->
-<a href="#" class="stretched-link" rel="noopener"></a><!-- Add link when available -->
+<h4 class="card-title">Data Anonymization</h4>
+<p class="card-text">Implement data anonymization techniques in R. (3h)</p>
+<a href="https://lmu-osc.github.io/data-anonymization/" class="stretched-link" rel="noopener"></a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [Data Anonymization](https://lmu-osc.github.io/data-anonymization/): Implement data anonymization techniques in R. (3h)
 :::
 
 :::
 
+:::
 
-<h4 class="fs-5 mt-3"><i class="bi bi-tools"></i> TOOLS & RESOURCES</h4>
+
+#### <i class="bi bi-tools"></i> TOOLS & RESOURCES {#sec-preparing-your-data-tr .fs-5 .mt-3 .unnumbered}
 <!-- row for Tools & Resources section -->
 
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
@@ -288,6 +344,11 @@ During the course of data collection and analyses, you created a README and data
 <a href="https://fairsharing.org/" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [FAIRsharing](https://fairsharing.org/): Search by discipline to find metadata standards, reporting guidelines, and data policies for your field.
+:::
+
 :::
 
 ::: {.col}
@@ -301,14 +362,26 @@ During the course of data collection and analyses, you created a README and data
 <a href="https://rdmkit.elixir-europe.org/your_domain" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [RDMkit](https://rdmkit.elixir-europe.org/your_domain): Domain-specific metadata standards
 :::
 
 :::
 
 :::
 
+:::
 
-#### 4.1.3. Where to Deposit
+
+</div>
+
+<div class="collapse-heading">
+
+### Where to Deposit {#sec-where-to-deposit .no-anchor .collapse-toggle .collapsed data-bs-toggle="collapse" data-bs-target="#collapse-where-to-deposit" aria-expanded="false" aria-controls="collapse-where-to-deposit"}
+
+</div>
+<div id="collapse-where-to-deposit" class="collapse" data-bs-parent="#fair-data-sharing-collapse">
 
 Choose a repository that suits your data type, your field's expectations, and your access requirements.
 
@@ -324,7 +397,7 @@ Whichever you choose, ensure the repository provides a **DOI** (Digital Object I
 
 ::: {.container .my-4 }
 
-<h4 class="fs-5 mt-3"><i class="bi bi-tools"></i> TOOLS & RESOURCES</h4>
+#### <i class="bi bi-tools"></i> TOOLS & RESOURCES {#sec-where-to-deposit-tr .fs-5 .mt-3 .unnumbered}
 
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
 
@@ -340,6 +413,11 @@ Whichever you choose, ensure the repository provides a **DOI** (Digital Object I
 <a href="https://www.re3data.org/" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [re3data](https://www.re3data.org/): Registry of research data repositories.
+:::
+
 :::
 
 
@@ -354,6 +432,11 @@ Whichever you choose, ensure the repository provides a **DOI** (Digital Object I
     <a href="https://osf.io/registries/" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [Open Science Framework](https://osf.io/registries/): General-purpose repository for data, materials, reports.
+:::
+
 :::
 
 
@@ -369,6 +452,11 @@ Whichever you choose, ensure the repository provides a **DOI** (Digital Object I
 <a href="https://zenodo.org" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [Zenodo](https://zenodo.org): General-purpose repository for data, software, reports.
+:::
+
 :::
 
 ::: {.col}
@@ -387,13 +475,25 @@ Whichever you choose, ensure the repository provides a **DOI** (Digital Object I
 <a href="https://data.ub.uni-muenchen.de/" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [Open Data LMU](https://data.ub.uni-muenchen.de/): Institutional data repository.
 :::
 
 :::
 
 :::
 
-#### 4.1.4. Data Licenses
+:::
+
+</div>
+
+<div class="collapse-heading">
+
+### Data Licenses {#sec-data-licenses .no-anchor .collapse-toggle .collapsed data-bs-toggle="collapse" data-bs-target="#collapse-data-licenses" aria-expanded="false" aria-controls="collapse-data-licenses"}
+
+</div>
+<div id="collapse-data-licenses" class="collapse" data-bs-parent="#fair-data-sharing-collapse">
 
 
 A license tells others what they can do with your data. Licensing your data consists in adding a file called LICENSE.txt next to your data, that contains the appropriate legal text. Without one, or equivalent statements, others cannot legally redistribute your research outputs, or reuse them in work they publish themselves, even if they are publicly available.
@@ -413,7 +513,7 @@ For restricted-access data, a **Data Use Agreement** specifies conditions beyond
 
 ::: {.container .my-4 }
 
-<h4 class="fs-5"><i class="bi bi-mortarboard"></i> LEARN MORE</h4>
+#### <i class="bi bi-mortarboard"></i> LEARN MORE {#sec-data-licenses-lm .fs-5 .unnumbered}
 
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
 
@@ -434,14 +534,26 @@ For restricted-access data, a **Data Use Agreement** specifies conditions beyond
 <a href="https://lmu-osc.github.io/code-publishing/choose-license.html" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [Choose a License](https://lmu-osc.github.io/code-publishing/choose-license.html): License decision flowchart for data and code.
 :::
 
 :::
 
 :::
 
+:::
 
-#### 4.1.5. Data Use Agreements
+
+</div>
+
+<div class="collapse-heading">
+
+### Data Use Agreements {#sec-data-use-agreements .no-anchor .collapse-toggle .collapsed data-bs-toggle="collapse" data-bs-target="#collapse-data-use-agreements" aria-expanded="false" aria-controls="collapse-data-use-agreements"}
+
+</div>
+<div id="collapse-data-use-agreements" class="collapse" data-bs-parent="#fair-data-sharing-collapse">
 
 _in construction_<!-- Reema? -->
 
@@ -449,6 +561,8 @@ _in construction_<!-- Reema? -->
 * LMU contact for legal department 
 * Examples DUA
 
+
+</div>
 
 :::
 :::
@@ -459,35 +573,35 @@ _in construction_<!-- Reema? -->
 
 <!--second accordion-->
 
-<div class="accordion rh-accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle" id="accordionExample">
+<div class="accordion rh-accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle" id="accordion-open-source-code">
 <div class="accordion-item">
-<div class="accordion-header no-anchor" id="sec-open-source-code">
+<div class="accordion-header no-anchor">
 <div class="accordion-header-content">
 <span class="icon-wrapper rounded-4 bg-success-subtle text-success p-3">
 <i class="bi bi-file-code m-0 fs-4"></i> 
 </span>
 <div class="accordion-title">
 
-### Open Source Code 
+## Open Source Code {#sec-open-source-code}
 </div>
 </div>
 <button class="accordion-button collapsed accordion-toggle-only" type="button"
   data-bs-toggle="collapse"
-  data-bs-target="#collapseTwo"
+  data-bs-target="#collapse-open-source-code"
   aria-expanded="false"
   aria-label="Toggle Open Source Code section"></button>
 </div>
-<div id="collapseTwo" class="accordion-collapse collapse">
+<div id="collapse-open-source-code" class="accordion-collapse collapse">
 <div class="accordion-body p-4">
 
 ::: {.content}
 
 Making code publicly available demonstrates the reproducibility of your results and enables others to understand, verify, and build upon your analytical methods.
 
-So far, your code was either backed up on the secured [LRZ Gitlab](https://gitlab.lrz.de/) (e.g. if your data and/or code are sensitive), or on [GitHub](https://github.com/)  (see [3. Analyze & Collaborate](03-analyze-and-collaborate.qmd){.mark}). Before the submission of a manuscript to a journal and/or upon the acceptance of a manuscript, there are small additional steps that need to be done to publish your code.
+So far, your code was either backed up on the secured [LRZ Gitlab](https://gitlab.lrz.de/) (e.g. if your data and/or code are sensitive), or on [GitHub](https://github.com/)  (see [[3. Analyze & Collaborate](03-analyze-and-collaborate.qmd){.mark}]{.content-visible when-format="html"}[ @sec-analyze-and-collaborate-chapter]{.content-hidden when-format="html"}). Before the submission of a manuscript to a journal and/or upon the acceptance of a manuscript, there are small additional steps that need to be done to publish your code.
 
 ::: {.ms-1} 
-- **verify** the structure of your repository, the readability of your scripts, the completeness of the documentation (see [Analyze & Collaborate Checklist](03-analyze-and-collaborate.qmd#analyze-collaborate-checklist){.mark}).
+- **verify** the structure of your repository, the readability of your scripts, the completeness of the documentation (see [[Analyze & Collaborate Checklist](03-analyze-and-collaborate.qmd#sec-analyze-and-collaborate-checklist){.mark}]{.content-visible when-format="html"}[Analyze & Collaborate Checklist]{.content-hidden when-format="html"}).
 - **make a clean version public**, e.g. on [GitHub](https://github.com/)
 - **add a license**
 - **get a DOI**, e.g. through [Zenodo](https://zenodo.org/)
@@ -496,13 +610,18 @@ So far, your code was either backed up on the secured [LRZ Gitlab](https://gitla
 If you work with **sensitive data that cannot be anonymized** and shared:
 
 ::: {.ms-1} 
-- **generate a simulated random dataset** to allow for the published code to run (which you may have already done if you simulated data in order to prepare a preregistration, see [1.4. Study Design & Analysis Plan](01-plan-and-design.qmd#sec-study-design-analysis-plan){.mark}), _or_ 
+- **generate a simulated random dataset** to allow for the published code to run (which you may have already done if you simulated data in order to prepare a preregistration, see [[1.4. Study Design & Analysis Plan](01-plan-and-design.qmd#sec-study-design-analysis-plan){.mark}]{.content-visible when-format="html"}[ @sec-study-design-analysis-plan]{.content-hidden when-format="html"}), _or_ 
 - **create a synthetic dataset with the same properties as the original dataset** to allow others to re-derive an approximation of the original results and conduct further exploratory analyses.
 :::
 
-::: {.panel-tabset}
+::: {#open-source-code-collapse .collapse-tabs}
 
-#### 4.2.1. Preparing Your Code Repository
+<div class="collapse-heading">
+
+### Preparing Your Code Repository {#sec-preparing-your-code-repository .no-anchor .collapse-toggle data-bs-toggle="collapse" data-bs-target="#collapse-preparing-your-code-repository" aria-expanded="true" aria-controls="collapse-preparing-your-code-repository"}
+
+</div>
+<div id="collapse-preparing-your-code-repository" class="collapse show" data-bs-parent="#open-source-code-collapse">
 
 During the course of data analyses, you created scripts and documentation such as README and data dictionary for yourself and collaborators. Before sharing publicly, review them from the perspective of someone who knows nothing about your project.
 
@@ -525,7 +644,7 @@ Importantly, if data are removed from an existing repository, they may still rem
 
 ::: {.container .my-4 }
 
-<h4 class="fs-5"><i class="bi bi-mortarboard"></i> LEARN MORE</h4>
+#### <i class="bi bi-mortarboard"></i> LEARN MORE {#sec-preparing-your-code-repository-lm .fs-5 .unnumbered}
 
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
 
@@ -546,13 +665,25 @@ Importantly, if data are removed from an existing repository, they may still rem
 <a href="https://lmu-osc.github.io/code-publishing/" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [Code Publishing](https://lmu-osc.github.io/code-publishing/): Add all elements of a reproducible project to your repository.
 :::
 
 :::
 
 :::
 
-#### 4.2.2. Real, Simulated, or Synthetic Data
+:::
+
+</div>
+
+<div class="collapse-heading">
+
+### Real, Simulated, or Synthetic Data {#sec-real-simulated-or-synthetic-data .no-anchor .collapse-toggle .collapsed data-bs-toggle="collapse" data-bs-target="#collapse-real-simulated-synthetic-data" aria-expanded="false" aria-controls="collapse-real-simulated-synthetic-data"}
+
+</div>
+<div id="collapse-real-simulated-synthetic-data" class="collapse" data-bs-parent="#open-source-code-collapse">
 
 <!-- TODO: This does not fit so well under 4.2 Open Source Code? -->
 
@@ -568,7 +699,7 @@ You can provide the data required to run the code in several ways:
 
 ::: {.container .my-4 }
 
-<h4 class="fs-5"><i class="bi bi-mortarboard"></i> LEARN MORE</h4>
+#### <i class="bi bi-mortarboard"></i> LEARN MORE {#sec-real-simulated-or-synthetic-data-lm .fs-5 .unnumbered}
 
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
 
@@ -589,6 +720,11 @@ You can provide the data required to run the code in several ways:
 <a href="https://lmu-osc.github.io/FAIR-Data-Management/" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [FAIR Data Management](https://lmu-osc.github.io/FAIR-Data-Management/): Manage data following FAIR principles. Covers READMEs, data dictionaries, file formats, and standards. (2h)
+:::
+
 :::
 
 
@@ -608,6 +744,11 @@ You can provide the data required to run the code in several ways:
 <a href="https://lmu-osc.github.io/Introduction-Simulations-in-R/" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [Data simulation in R](https://lmu-osc.github.io/Introduction-Simulations-in-R/): Easy data simulations in R. (2h)
+:::
+
 :::
 
 ::: {.col}
@@ -626,15 +767,27 @@ You can provide the data required to run the code in several ways:
 <a href="https://lmu-osc.github.io/synthetic-data-tutorial/" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [Synthetic Data](https://lmu-osc.github.io/synthetic-data-tutorial/): Synthetic data creation in R to balance utility and privacy when sharing data. (3h)
 :::
 
 :::
 
+:::
+
 
 :::
 
 
-#### 4.2.3. Code Licenses
+</div>
+
+<div class="collapse-heading">
+
+### Code Licenses {#sec-code-licenses .no-anchor .collapse-toggle .collapsed data-bs-toggle="collapse" data-bs-target="#collapse-code-licenses" aria-expanded="false" aria-controls="collapse-code-licenses"}
+
+</div>
+<div id="collapse-code-licenses" class="collapse" data-bs-parent="#open-source-code-collapse">
 
 A license tells others what they can do with your code. Licensing your code consists in adding a file called LICENSE.txt next to your code, that contains the appropriate legal text. Without one, or equivalent statements, others cannot legally reuse your code, even if it is publicly available e.g. on [GitHub](https://github.com/). Common open licenses for code are:
 
@@ -646,7 +799,7 @@ Learn more about open licenses for data and code in our [code publishing tutoria
 
 ::: {.container .my-4 }
 
-<h4 class="fs-5"><i class="bi bi-mortarboard"></i> LEARN MORE</h4>
+#### <i class="bi bi-mortarboard"></i> LEARN MORE {#sec-code-licenses-lm .fs-5 .unnumbered}
 
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
 
@@ -667,6 +820,11 @@ Learn more about open licenses for data and code in our [code publishing tutoria
 <a href="https://lmu-osc.github.io/code-publishing/choose-license.html" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [Choose a License](https://lmu-osc.github.io/code-publishing/choose-license.html): License decision flowchart for data and code.
+:::
+
 :::
 
 ::: {.col}
@@ -680,13 +838,25 @@ Learn more about open licenses for data and code in our [code publishing tutoria
 <a href="https://choosealicense.com/" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [Choose an open source license](https://choosealicense.com/): Tool comparing open software licenses.
 :::
 
 :::
 
 :::
 
-#### 4.2.4. Archiving & DOIs
+:::
+
+</div>
+
+<div class="collapse-heading">
+
+### Archiving & DOIs {#sec-archiving-dois .no-anchor .collapse-toggle .collapsed data-bs-toggle="collapse" data-bs-target="#collapse-archiving-dois" aria-expanded="false" aria-controls="collapse-archiving-dois"}
+
+</div>
+<div id="collapse-archiving-dois" class="collapse" data-bs-parent="#open-source-code-collapse">
 
 To publish your code on Zenodo, we recommend to<!-- these instructions contradict https://lmu-osc.github.io/code-publishing/archive.html but see https://github.com/lmu-osc/code-publishing/issues/86 -->
 
@@ -699,13 +869,13 @@ To publish your code on Zenodo, we recommend to<!-- these instructions contradic
 
 
 :::{.callout-tip}
-## Tips for research groups:
+# Tips for research groups:
 **Create a Zenodo "community" for the team.** After team members connect their repositories from their personal GitHub account to Zenodo, and archive releases with a DOI, these records can be added to a shared Zenodo _community_. A community provides a central space where all software and other research outputs produced by the group can be collected and displayed, making them easier to find, cite, and showcase at the team level.  
 :::
 
 ::: {.container .my-4 }
 
-<h4 class="fs-5"><i class="bi bi-mortarboard"></i> LEARN MORE</h4>
+#### <i class="bi bi-mortarboard"></i> LEARN MORE {#sec-archiving-dois-lm .fs-5 .unnumbered}
 
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
 
@@ -726,11 +896,16 @@ To publish your code on Zenodo, we recommend to<!-- these instructions contradic
 <a href="https://lmu-osc.github.io/code-publishing/" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [Code Publishing](https://lmu-osc.github.io/code-publishing/): Add all elements of a reproducible project to your repository.
 :::
 
 :::
 
-<h4 class="fs-5 mt-3"><i class="bi bi-tools"></i> TOOLS & RESOURCES</h4>
+:::
+
+#### <i class="bi bi-tools"></i> TOOLS & RESOURCES {#sec-archiving-dois-tr .fs-5 .mt-3 .unnumbered}
 <!-- row for Tools & Resources section -->
 
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
@@ -748,9 +923,16 @@ To publish your code on Zenodo, we recommend to<!-- these instructions contradic
 
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [Zenodo](https://zenodo.org): General-purpose repository for data, software, reports.
+:::
+
 :::
 :::
 :::
+
+</div>
 
 :::
 :::
@@ -762,39 +944,44 @@ To publish your code on Zenodo, we recommend to<!-- these instructions contradic
 
 <!--third accordion-->
 
-<div class="accordion rh-accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle" id="accordionExample">
+<div class="accordion rh-accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle" id="accordion-open-materials">
 <div class="accordion-item">
-<div class="accordion-header no-anchor" id="sec-open-materials">
+<div class="accordion-header no-anchor">
 <div class="accordion-header-content">
 <span class="icon-wrapper rounded-4 bg-success-subtle text-success p-3">
 <i class="bi bi-journal-arrow-up m-0 fs-4"></i> 
 </span>
 <div class="accordion-title">
 
-### Open Materials
+## Open Materials {#sec-open-materials}
 </div>
 </div>
 <button class="accordion-button collapsed accordion-toggle-only" type="button"
   data-bs-toggle="collapse"
-  data-bs-target="#collapseThree"
+  data-bs-target="#collapse-open-materials"
   aria-expanded="false"
   aria-label="Toggle Open Materials section"></button>
 </div>
 
-<div id="collapseThree" class="accordion-collapse collapse">
+<div id="collapse-open-materials" class="accordion-collapse collapse">
 <div class="accordion-body p-4">
 
 ::: {.content}
 
 Any material needed to reproduce or replicate your study should also be shared openly unless there are dual-use, patent, or privacy concerns. 
 
-::: {.panel-tabset}
+::: {#open-materials-collapse .collapse-tabs}
 
-#### 4.3.1. Digital materials 
+<div class="collapse-heading">
+
+### Digital materials {#sec-digital-materials .no-anchor .collapse-toggle data-bs-toggle="collapse" data-bs-target="#collapse-digital-materials" aria-expanded="true" aria-controls="collapse-digital-materials"}
+
+</div>
+<div id="collapse-digital-materials" class="collapse show" data-bs-parent="#open-materials-collapse">
 
 For instance, you can share your:
 
-- **Share wet-lab protocols** on e.g. [protocols.io](https://www.protocols.io/), see [2.1.1. Lab Protocols](02-collect-and-manage.qmd#sec-data-collection){.mark}.
+- **Share wet-lab protocols** on e.g. [protocols.io](https://www.protocols.io/), see [[2.1.1. Lab Protocols](02-collect-and-manage.qmd#sec-data-collection){.mark}]{.content-visible when-format="html"}[ @sec-data-collection]{.content-hidden when-format="html"}.
 - **Share survey text, instructions, or scoring sheets** on e.g. [OSF](https://osf.io/)
 
 We recommend to use a creative Common license such as
@@ -807,7 +994,7 @@ See the [Creative Common license chooser](https://creativecommons.org/chooser/) 
 ::: {.container .my-4 }
 
 <!-- row for Tools & Resources section -->
-<h4 class="fs-5 mt-3"><i class="bi bi-tools"></i> TOOLS & RESOURCES</h4>
+#### <i class="bi bi-tools"></i> TOOLS & RESOURCES {#sec-digital-materials-tr .fs-5 .mt-3 .unnumbered}
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
 
 ::: {.col}
@@ -821,6 +1008,11 @@ See the [Creative Common license chooser](https://creativecommons.org/chooser/) 
 <a href="https://www.protocols.io/" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [Protocols.io](https://www.protocols.io/): Share, discover, cite, and improve research protocols.
+:::
+
 :::
 
 ::: {.col}
@@ -834,6 +1026,11 @@ See the [Creative Common license chooser](https://creativecommons.org/chooser/) 
 <a href="https://osf.io/" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [OSF](https://osf.io/): Project management platform including storage and DOI.
+:::
+
 :::
 
 ::: {.col}
@@ -847,11 +1044,23 @@ See the [Creative Common license chooser](https://creativecommons.org/chooser/) 
 <a href="https://creativecommons.org/chooser/" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [Creative Commons licenses](https://creativecommons.org/chooser/): Tool comparing licenses for diverse creative work.
+:::
+
 :::
 :::
 :::
 
-#### 4.3.2. Physical materials
+</div>
+
+<div class="collapse-heading">
+
+### Physical materials {#sec-physical-materials .no-anchor .collapse-toggle .collapsed data-bs-toggle="collapse" data-bs-target="#collapse-physical-materials" aria-expanded="false" aria-controls="collapse-physical-materials"}
+
+</div>
+<div id="collapse-physical-materials" class="collapse" data-bs-parent="#open-materials-collapse">
 
 Repositories for physical research materials (e.g., biological samples, chemicals, specimens, hardware, or other tangible resources) are usually called biobanks, material repositories, or research infrastructure collections and are domain specific or specialized to one kind of material (e.g. DNA). 
 
@@ -867,6 +1076,8 @@ Regardless of your discipline:
 - **Document links between materials and associated datasets or publications.**
 
 
+</div>
+
 :::
 :::
 </div>
@@ -877,35 +1088,40 @@ Regardless of your discipline:
 
 <!--forth accordion-->
 
-<div class="accordion rh-accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle" id="accordionExample">
+<div class="accordion rh-accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle" id="accordion-open-access-articles">
 <div class="accordion-item">
-<div class="accordion-header no-anchor" id="sec-open-access-articles">
+<div class="accordion-header no-anchor">
 <div class="accordion-header-content">
 <span class="icon-wrapper rounded-4 bg-success-subtle text-success p-3">
 <i class="bi bi-unlock2 m-0 fs-4"></i> 
 </span>
 <div class="accordion-title">
 
-### Open Access Articles 
+## Open Access Articles {#sec-open-access-articles}
 </div>
 </div>
 <button class="accordion-button collapsed accordion-toggle-only" type="button"
   data-bs-toggle="collapse"
-  data-bs-target="#collapseFour"
+  data-bs-target="#collapse-open-access-articles"
   aria-expanded="false"
   aria-label="Toggle Open Access Articles section"></button>
 </div>
 
-<div id="collapseFour" class="accordion-collapse collapse">
+<div id="collapse-open-access-articles" class="accordion-collapse collapse">
 <div class="accordion-body p-4">
 
 ::: {.content}
 
 Publishing open access articles (i.e. which are free to readers) **increases the visibility, citation, and impact** of research by removing paywall barriers, enabling scholars, practitioners, and policymakers worldwide to access and build upon the work without restriction. It also **accelerates knowledge dissemination and promotes equity** in scholarship by providing institutions and researchers - especially in low-resource settings - free and immediate access to scientific findings. Finally, tax-payer funded projects often have particular requirements for open access.
 
-::: {.panel-tabset}
+::: {#open-access-articles-collapse .collapse-tabs}
 
-#### 4.4.1. Pathways to Open Access
+<div class="collapse-heading">
+
+### Pathways to Open Access {#sec-pathways-to-open-access .no-anchor .collapse-toggle data-bs-toggle="collapse" data-bs-target="#collapse-pathways-to-open-access" aria-expanded="true" aria-controls="collapse-pathways-to-open-access"}
+
+</div>
+<div id="collapse-pathways-to-open-access" class="collapse show" data-bs-parent="#open-access-articles-collapse">
 
 There are several pathways to make your articles free to read, e.g.:
 
@@ -916,7 +1132,7 @@ There are several pathways to make your articles free to read, e.g.:
 Depending on the contract negotiated by the University and each publisher (see [4.4.2. Contract with Publishers](#sec-open-access-articles){.mark}), the payment of APCs can also be requested by publishers regardless of the article's accessibility status.
 
 :::{.callout-note}
-## Definitions
+# Definitions
 [**preprint**]{.underline}: article, book chapter, book, or other scholarly work that is deposited in a repository with unrestricted access (i.e. available to the public to view online, or download, without registration, payment, or approval) ahead of peer review. Equivalent terms used in some disciplines are ‘working paper’ and ‘unpublished manuscript’.
 
 [**postprint**]{.underline}: accepted version of an article, book chapter, book, or other scholarly work that is released by the author(s) on a repository with unrestricted access (i.e. available to the public to view online, or download, without registration, payment, or approval)
@@ -925,7 +1141,7 @@ Depending on the contract negotiated by the University and each publisher (see [
 
 ::: {.container .my-4 }
 
-<h4 class="fs-5 mt-3"><i class="bi bi-tools"></i> TOOLS & RESOURCES</h4>
+#### <i class="bi bi-tools"></i> TOOLS & RESOURCES {#sec-pathways-to-open-access-tr .fs-5 .mt-3 .unnumbered}
 
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
 
@@ -942,6 +1158,11 @@ Depending on the contract negotiated by the University and each publisher (see [
 <a href="https://doaj.org/" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [Directory of Open Access Journals (DOAJ)](https://doaj.org/): Index of trusted open access journals.
+:::
+
 :::
 
 ::: {.col}
@@ -956,15 +1177,27 @@ Depending on the contract negotiated by the University and each publisher (see [
 <a href="https://openpolicyfinder.jisc.ac.uk/" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [Jisc' Open Policy Finder](https://openpolicyfinder.jisc.ac.uk/): Clear summary of journals' open access policies.
 :::
 
 :::
 
 :::
 
+:::
 
 
-#### 4.4.2. Contracts with Publishers
+
+</div>
+
+<div class="collapse-heading">
+
+### Contracts with Publishers {#sec-contracts-with-publishers .no-anchor .collapse-toggle .collapsed data-bs-toggle="collapse" data-bs-target="#collapse-contracts-with-publishers" aria-expanded="false" aria-controls="collapse-contracts-with-publishers"}
+
+</div>
+<div id="collapse-contracts-with-publishers" class="collapse" data-bs-parent="#open-access-articles-collapse">
 
 Until 2024, authors publishing in legacy (subscription-based) journals were required to pay an **Article Processing Charge (APC)** to make their work immediately open access upon publication, the model commonly referred to as '_gold open access_'. 
 To **avoid these fees** while still ensuring public accessibility, authors were encouraged to disseminate a **preprint and/or postprint**, or to deposit the publisher’s version in an institutional repository after the embargo period had expired. 
@@ -977,7 +1210,7 @@ The current contract conditions for LMU Munich can be accessed on the [Universit
 
 ::: {.container .my-4 }
 
-<h4 class="fs-5 mt-3"><i class="bi bi-tools"></i> TOOLS & RESOURCES</h4>
+#### <i class="bi bi-tools"></i> TOOLS & RESOURCES {#sec-contracts-with-publishers-tr .fs-5 .mt-3 .unnumbered}
 
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
 
@@ -997,13 +1230,25 @@ The current contract conditions for LMU Munich can be accessed on the [Universit
 <a href="https://www.ub.lmu.de/en/open-access-publishing/financing-open-access/" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [LMU University Library](https://www.ub.lmu.de/en/open-access-publishing/financing-open-access/): Publisher contracts and publication fees.
 :::
 
 :::
 
 :::
 
-#### 4.4.3. Publishing Preprints and Retaining Rights 
+:::
+
+</div>
+
+<div class="collapse-heading">
+
+### Publishing Preprints and Retaining Rights {#sec-preprints-and-retaining-rights .no-anchor .collapse-toggle .collapsed data-bs-toggle="collapse" data-bs-target="#collapse-preprints-and-retaining-rights" aria-expanded="false" aria-controls="collapse-preprints-and-retaining-rights"}
+
+</div>
+<div id="collapse-preprints-and-retaining-rights" class="collapse" data-bs-parent="#open-access-articles-collapse">
 
 To increase the accessibility and impact of your article we recommend you to:
 
@@ -1059,7 +1304,7 @@ To get support for [Open Access LMU](https://epub.ub.uni-muenchen.de/), the LMU 
 
 ::: {.container .my-4 }
 
-<h4 class="fs-5 mt-3"><i class="bi bi-tools"></i> TOOLS & RESOURCES</h4>
+#### <i class="bi bi-tools"></i> TOOLS & RESOURCES {#sec-preprints-and-retaining-rights-tr .fs-5 .mt-3 .unnumbered}
 
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
 
@@ -1075,6 +1320,11 @@ To get support for [Open Access LMU](https://epub.ub.uni-muenchen.de/), the LMU 
 <a href="https://openpolicyfinder.jisc.ac.uk/" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [Jisc' Open Policy Finder](https://openpolicyfinder.jisc.ac.uk/): Clear summary of journals' open access policies.
+:::
+
 :::
 
 ::: {.col}
@@ -1093,6 +1343,11 @@ To get support for [Open Access LMU](https://epub.ub.uni-muenchen.de/), the LMU 
 <a href="https://epub.ub.uni-muenchen.de/" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [Open Access LMU](https://epub.ub.uni-muenchen.de/): Institutional publication repository.
+:::
+
 :::
 
 ::: {.col}
@@ -1106,6 +1361,11 @@ To get support for [Open Access LMU](https://epub.ub.uni-muenchen.de/), the LMU 
 <a href="https://osf.io/preprints/" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [OSF Preprints](https://osf.io/preprints/): Multidisciplinary preprint service.
+:::
+
 :::
 
 ::: {.col}
@@ -1119,6 +1379,11 @@ To get support for [Open Access LMU](https://epub.ub.uni-muenchen.de/), the LMU 
 <a href="https://www.biorxiv.org/" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [bioRxiv](https://www.biorxiv.org/): Biological sciences preprints.
+:::
+
 :::
 
 ::: {.col}
@@ -1132,6 +1397,11 @@ To get support for [Open Access LMU](https://epub.ub.uni-muenchen.de/), the LMU 
 <a href="https://www.medrxiv.org/" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [medRxiv](https://www.medrxiv.org/): Medical and health sciences preprints.
+:::
+
 :::
 
 ::: {.col}
@@ -1140,16 +1410,23 @@ To get support for [Open Access LMU](https://epub.ub.uni-muenchen.de/), the LMU 
 <div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
 <i class="bi bi-calculator"></i>
 </div>
-<h4 class="card-title">medRxiv</h4>
+<h4 class="card-title">arXiv</h4>
 <p class="card-text">Physics, mathematics, computer science preprints.</p>
 <a href="https://arxiv.org/" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [arXiv](https://arxiv.org/): Physics, mathematics, computer science preprints.
 :::
 
 :::
 
 :::
+
+:::
+
+</div>
 
 :::
 :::
@@ -1160,35 +1437,40 @@ To get support for [Open Access LMU](https://epub.ub.uni-muenchen.de/), the LMU 
 
 <!--fifth accordion-->
 
-<div class="accordion rh-accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle" id="accordionExample">
+<div class="accordion rh-accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle" id="accordion-attributions">
 <div class="accordion-item">
-<div class="accordion-header no-anchor" id="sec-attributions-and-persistent-identifiers">
+<div class="accordion-header no-anchor">
 <div class="accordion-header-content">
 <span class="icon-wrapper rounded-4 bg-success-subtle text-success p-3">
 <i class="bi bi-person-badge m-0 fs-4"></i> 
 </span>
 <div class="accordion-title">
 
-### Attributions & Persistent Identifiers 
+## Attributions & Persistent Identifiers {#sec-attributions-and-persistent-ids}
 </div>
 </div>
 <button class="accordion-button collapsed accordion-toggle-only" type="button"
   data-bs-toggle="collapse"
-  data-bs-target="#collapseFive"
+  data-bs-target="#collapse-attributions-and-persistent-ids"
   aria-expanded="false"
   aria-label="Toggle Attributions & Persistent Identifiers section"></button>
 </div>
 
-<div id="collapseFive" class="accordion-collapse collapse">
+<div id="collapse-attributions-and-persistent-ids" class="accordion-collapse collapse">
 <div class="accordion-body p-4">
 
 ::: {.content}
 All research outputs and their specific versions should be linked to their authors, organizations, and funders through persistent identifiers.
 
-::: {.panel-tabset}
+::: {#attributions-persistent-ids-collapse .collapse-tabs}
 
 
-####  4.5.1. Authorship, Contributorship, and ORCID
+<div class="collapse-heading">
+
+### Authorship, Contributorship, and ORCID {#sec-authorship-and-orcid .no-anchor .collapse-toggle data-bs-toggle="collapse" data-bs-target="#collapse-authorship-and-orcid" aria-expanded="true" aria-controls="collapse-authorship-and-orcid"}
+
+</div>
+<div id="collapse-authorship-and-orcid" class="collapse show" data-bs-parent="#attributions-persistent-ids-collapse">
 
 <h5>Authorship</h5>
 
@@ -1200,7 +1482,7 @@ According to §14 of the [LMU Guidelines for Safeguarding Good Scientific Practi
 Publishers can provide additional guidance on authorship decisions (often based on the recommendations of the [International Committee of Medical Journal Editors](https://www.icmje.org/recommendations/browse/roles-and-responsibilities/defining-the-role-of-authors-and-contributors.html).
 
 
-We recommend to **start discussions on authorship, roles, and responsibilities as early as possible**. First discussions can for instance take place at the end of [1. Plan & Design](01-plan-and-design.qmd){.mark}, e.g. during the presentation of the study plan to the research group (see [Plan & Design Checklist](01-plan-and-design.qmd#plan-design-checklist){.mark}). As roles may shift in the course of a project, a review is warranted at the write-up stage. 
+We recommend to **start discussions on authorship, roles, and responsibilities as early as possible**. First discussions can for instance take place at the end of [[1. Plan & Design](01-plan-and-design.qmd){.mark}]{.content-visible when-format="html"}[ @sec-plan-and-design-chapter]{.content-hidden when-format="html"}, e.g. during the presentation of the study plan to the research group (see [[Plan & Design Checklist](01-plan-and-design.qmd#sec-plan-and-design-checklist){.mark}]{.content-visible when-format="html"}[Plan & Design Checklist]{.content-hidden when-format="html"}). As roles may shift in the course of a project, a review is warranted at the write-up stage. 
 
 <h5>Contributorship</h5>
 
@@ -1219,7 +1501,7 @@ We recommend to **start discussions on authorship, roles, and responsibilities a
 
 ::: {.container .my-4}
 
-<h4 class="fs-5"><i class="bi bi-tools"></i> TOOLS & RESOURCES</h4>
+#### <i class="bi bi-tools"></i> TOOLS & RESOURCES {#sec-authorship-and-orcid-tr .fs-5 .unnumbered}
 
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
 
@@ -1235,6 +1517,11 @@ We recommend to **start discussions on authorship, roles, and responsibilities a
 <a href="https://cms-cdn.lmu.de/media/contenthub/amtliche-veroeffentlichungen/gwp-ordnung.pdf" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [LMU Guidelines for Safeguarding Good Scientific Practice](https://cms-cdn.lmu.de/media/contenthub/amtliche-veroeffentlichungen/gwp-ordnung.pdf): Implementation of the German Research Foundation's (DFG) Code of Conduct
+:::
+
 :::
 
 ::: {.col}
@@ -1249,6 +1536,11 @@ We recommend to **start discussions on authorship, roles, and responsibilities a
 <a href="https://credit.niso.org/" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [CRediT](https://credit.niso.org/): Contributor Role Taxonomy.
+:::
+
 :::
 
 ::: {.col}
@@ -1263,14 +1555,26 @@ We recommend to **start discussions on authorship, roles, and responsibilities a
 <a href="https://orcid.org/" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [ORCID](https://orcid.org/): Free, unique, persistent identifier for researchers.
 :::
 
 :::
 
 :::
 
+:::
 
-####  4.5.2. Institution, Funders, and ROR
+
+</div>
+
+<div class="collapse-heading">
+
+### Institution, Funders, and ROR {#sec-institution-funders-and-ror .no-anchor .collapse-toggle .collapsed data-bs-toggle="collapse" data-bs-target="#collapse-institution-funders-and-ror" aria-expanded="false" aria-controls="collapse-institution-funders-and-ror"}
+
+</div>
+<div id="collapse-institution-funders-and-ror" class="collapse" data-bs-parent="#attributions-persistent-ids-collapse">
 
 - **Disclose your institutional affiliations and funders** as part of the metadata of all your research outputs. To be machine-readable and automatically connected to people's profile or their organization, this must include the official name of the organization and ideally (one of) its persistent identifier.
 - **Use your institution and funders' ROR**. The [Research Organization Registry (ROR)](https://ror.org/) is a global, community-led registry of open persistent identifiers for research and funding organizations.
@@ -1290,7 +1594,7 @@ The LMU Open Science Center is one of the many child organizations of LMU Munich
 
 ::: {.container .my-4}
 
-<h4 class="fs-5"><i class="bi bi-tools"></i> TOOLS & RESOURCES</h4>
+#### <i class="bi bi-tools"></i> TOOLS & RESOURCES {#sec-institution-funders-and-ror-tr .fs-5 .unnumbered}
 
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
 
@@ -1305,13 +1609,25 @@ The LMU Open Science Center is one of the many child organizations of LMU Munich
 <a href="https://ror.org/" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [Research Organization Registry (ROR)](https://ror.org/): Persistent identifiers for research and funding organizations
 :::
 
 :::
 
 :::
 
-####  4.5.3. Connecting Your Work
+:::
+
+</div>
+
+<div class="collapse-heading">
+
+### Connecting Your Work {#sec-connecting-your-work .no-anchor .collapse-toggle .collapsed data-bs-toggle="collapse" data-bs-target="#collapse-connecting-your-work" aria-expanded="false" aria-controls="collapse-connecting-your-work"}
+
+</div>
+<div id="collapse-connecting-your-work" class="collapse" data-bs-parent="#attributions-persistent-ids-collapse">
 
 - **Request a Digital Object Identifiers (DOI) for each of your research outputs** (data, code, preprint, preregistration)
     - you automatically get a DOI from professional repository for outputs you make public 
@@ -1329,6 +1645,8 @@ The LMU Open Science Center is one of the many child organizations of LMU Munich
 <!-- image of an example where all connections of DOIs are shown for an article?-->
 
 
+</div>
+
 :::
 
 :::
@@ -1344,7 +1662,7 @@ The LMU Open Science Center is one of the many child organizations of LMU Munich
 ::: {.orc-gradient-box .preserve-share-checklist}
 
 
-## <i class="bi bi-card-checklist checklist-icon"></i> Preserve & Share Checklist {.unnumbered}
+## <i class="bi bi-card-checklist checklist-icon"></i> Preserve & Share Checklist {#sec-preserve-and-share-checklist .unnumbered}
 
 Not all items are relevant for all fields of research or study types.
 
