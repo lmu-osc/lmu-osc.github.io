@@ -8,7 +8,7 @@ format:
     number-offset: [0]
 ---
 
-# Plan & Design
+# Plan & Design {#sec-plan-and-design-chapter}
 
 ```{=html}
 
@@ -40,14 +40,14 @@ Checkpoints: Study Plan Presentation & Preregistration Submission
 <!-- first accordion -->
 <div class="accordion rh-accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle" id="accordion-explore-reuse">
 <div class="accordion-item">
-<div class="accordion-header no-anchor" id="sec-explore-reuse">
+<div class="accordion-header no-anchor">
 <div class="accordion-header-content">
 <span class="icon-wrapper rounded-4 text-success bg-success-subtle p-3">
 <i class="bi bi-search m-0 fs-4"></i>
 </span>
 <div class="accordion-title">
 
-## Explore & Reuse
+## Explore & Reuse {#sec-explore-and-reuse}
 </div>
 </div>
 <button class="accordion-button collapsed accordion-toggle-only" type="button"
@@ -79,7 +79,7 @@ A research output (e.g. data, code) without a license or statement granting your
 <!-- main container div -->
 ::: {.container .my-4 }
 
-#### <i class="bi bi-mortarboard"></i> LEARN MORE {.fs-5 .no-anchor .unnumbered}
+#### <i class="bi bi-mortarboard"></i> LEARN MORE {#sec-articles-lm .fs-5 .no-anchor .unnumbered}
 
 <!-- row for Learn More section -->
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
@@ -109,7 +109,7 @@ A research output (e.g. data, code) without a license or statement granting your
 :::
 
 
-#### <i class="bi bi-tools"></i> TOOLS & RESOURCES {.fs-5 .mt-3 .no-anchor .unnumbered}
+#### <i class="bi bi-tools"></i> TOOLS & RESOURCES {#sec-articles-tr .fs-5 .mt-3 .no-anchor .unnumbered}
 <!-- row for Tools & Resources section -->
 
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
@@ -161,7 +161,7 @@ A **preregistration** typically consists of a hypothesis and predictions, a plan
 
 ::: {.container .my-4 }
 
-#### <i class="bi bi-tools"></i> TOOLS & RESOURCES {.fs-5 .mt-3 .unnumbered}
+#### <i class="bi bi-tools"></i> TOOLS & RESOURCES {#sec-preregistrations-tr .fs-5 .mt-3 .unnumbered}
 
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
 
@@ -276,7 +276,7 @@ These platforms either give you access to existing data or provide [**metadata**
 
 ::: {.container .my-4 }
 
-#### <i class="bi bi-tools"></i> TOOLS & RESOURCES {.fs-5 .mt-3 .unnumbered}
+#### <i class="bi bi-tools"></i> TOOLS & RESOURCES {#sec-data-tr .fs-5 .mt-3 .unnumbered}
 
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
 
@@ -378,7 +378,7 @@ Code publicly visible on GitHub without a license or equivalent text explicitly 
 
 ::: {.container .my-4 }
 
-#### <i class="bi bi-mortarboard"></i> LEARN MORE {.fs-5 .unnumbered}
+#### <i class="bi bi-mortarboard"></i> LEARN MORE {#sec-code-lm .fs-5 .unnumbered}
 
 <!-- row for Learn More section -->
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
@@ -447,7 +447,7 @@ Code publicly visible on GitHub without a license or equivalent text explicitly 
 
 :::
 
-#### <i class="bi bi-tools"></i> TOOLS & RESOURCES {.fs-5 .mt-3 .unnumbered}
+#### <i class="bi bi-tools"></i> TOOLS & RESOURCES {#sec-code-tr .fs-5 .mt-3 .unnumbered}
 <!-- row for Tools & Resources section -->
 
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
@@ -515,14 +515,14 @@ Code publicly visible on GitHub without a license or equivalent text explicitly 
 
 <div class="accordion rh-accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle" id="accordion-legal-requirements">
 <div class="accordion-item">
-<div class="accordion-header no-anchor" id="sec-legal-requirements">
+<div class="accordion-header no-anchor">
 <div class="accordion-header-content">
 <span class="icon-wrapper rounded-4 bg-success-subtle text-success p-3">
 <i class="bi bi-shield-check m-0 fs-4"></i>
 </span>
 <div class="accordion-title">
 
-## Legal Requirements
+## Legal Requirements {#sec-legal-requirements}
 </div>
 </div>
 <button class="accordion-button collapsed accordion-toggle-only" type="button"
@@ -585,7 +585,7 @@ See [https://www.go-fair.org/fair-principles/](https://www.go-fair.org/fair-prin
 
 ::: {.container .my-4}
 
-#### <i class="bi bi-tools"></i> TOOLS & RESOURCES {.fs-5 .unnumbered}
+#### <i class="bi bi-tools"></i> TOOLS & RESOURCES {#sec-lmu-guidelines-tr .fs-5 .unnumbered}
 
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
 
@@ -652,7 +652,7 @@ For data protection guidance, contact the [LMU Data Protection Officer](https://
 
 ::: {.container .my-4}
 
-#### <i class="bi bi-mortarboard"></i> LEARN MORE {.fs-5 .unnumbered}
+#### <i class="bi bi-mortarboard"></i> LEARN MORE {#sec-ethics-lm .fs-5 .unnumbered}
 
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
 
@@ -728,14 +728,14 @@ For data protection guidance, contact the [LMU Data Protection Officer](https://
 
 <div class="accordion rh-accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle" id="accordion-research-data-management">
 <div class="accordion-item">
-<div class="accordion-header no-anchor" id="sec-research-data-management">
+<div class="accordion-header no-anchor">
 <div class="accordion-header-content">
 <span class="icon-wrapper rounded-4 bg-success-subtle text-success p-3">
 <i class="bi bi-folder2-open fs-4 m-0"></i>
 </span>
 <div class="accordion-title">
 
-## Research Data Management Plans
+## Research Data Management Plans {#sec-research-data-management}
 </div>
 </div>
 <button class="accordion-button collapsed accordion-toggle-only" type="button"
@@ -757,7 +757,7 @@ A **Data Management Plan (DMP)** documents how you will handle research data thr
 - **Start with what you know, and refine the details as your project develops.** Your DMP is a living document that you will refine to match the reality of your project while ensuring data protection and streamline collaborations (see [2.2. Data Management](02-collect-and-manage.qmd#sec-data-management){.mark}, [3.1. Data Processing & Analysis](03-analyze-and-collaborate.qmd#sec-data-processing-analysis){.mark}, and [4.1. FAIR Data Sharing](04-preserve-and-share.qmd#sec-fair-data-sharing){.mark}).
 :::
 
-#### <i class="bi bi-list-check"></i> Your DMP will ask: {.fs-5}
+#### <i class="bi bi-list-check"></i> Your DMP will ask: {#sec-your-dmp-will-ask .fs-5}
 
 - **What data** will you collect or generate (types, formats, volume, sources)? See [2.1. Data Collection](02-collect-and-manage.qmd#sec-data-collection){.mark}.
 - **How will you describe it** (metadata standards, documentation practices)? See [2.2. Data Management](02-collect-and-manage.qmd#sec-data-management){.mark} for these and the next questions.
@@ -779,7 +779,7 @@ The specific questions vary by discipline, data type, and funder requirements. D
 
 
 ::: {.container .my-4}
-#### <i class="bi bi-mortarboard"></i> LEARN MORE {.fs-5 .unnumbered}
+#### <i class="bi bi-mortarboard"></i> LEARN MORE {#sec-research-data-management-lm .fs-5 .unnumbered}
 
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4 .mb-4}
 
@@ -839,7 +839,7 @@ The specific questions vary by discipline, data type, and funder requirements. D
 
 :::
 
-#### <i class="bi bi-tools"></i> TOOLS & RESOURCES {.fs-5 .unnumbered}
+#### <i class="bi bi-tools"></i> TOOLS & RESOURCES {#sec-research-data-management-tr .fs-5 .unnumbered}
 
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
 
@@ -891,14 +891,14 @@ The specific questions vary by discipline, data type, and funder requirements. D
 <!-- fourth accordion -->
 <div class="accordion rh-accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle" id="accordion-study-design-analysis-plan">
 <div class="accordion-item">
-<div class="accordion-header no-anchor" id="sec-study-design-analysis-plan">
+<div class="accordion-header no-anchor">
 <div class="accordion-header-content">
 <span class="icon-wrapper rounded-4 bg-success-subtle text-success p-3">
 <i class="bi bi-clipboard-check m-0 fs-4"></i>
 </span>
 <div class="accordion-title">
 
-## Study Design & Analysis Plan
+## Study Design & Analysis Plan {#sec-study-design-analysis-plan}
 </div>
 </div>
 <button class="accordion-button collapsed accordion-toggle-only" type="button"
@@ -982,7 +982,7 @@ After completing the study, authors add results and discussion sections, clearly
 
 ::: {.container .my-4}
 
-#### <i class="bi bi-mortarboard"></i> LEARN MORE {.fs-5 .unnumbered}
+#### <i class="bi bi-mortarboard"></i> LEARN MORE {#sec-pre-analysis-planning-lm .fs-5 .unnumbered}
 
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4 .mb-4}
 
@@ -1006,7 +1006,7 @@ After completing the study, authors add results and discussion sections, clearly
 
 :::
 
-#### <i class="bi bi-tools"></i> TOOLS & RESOURCES {.fs-5 .unnumbered}
+#### <i class="bi bi-tools"></i> TOOLS & RESOURCES {#sec-pre-analysis-planning-tr .fs-5 .unnumbered}
 
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
 
@@ -1092,7 +1092,7 @@ Generating an artificial dataset in R (see our [simulation tutorial](https://lmu
 
 ::: {.container .my-4}
 
-#### <i class="bi bi-mortarboard"></i> LEARN MORE {.fs-5 .unnumbered}
+#### <i class="bi bi-mortarboard"></i> LEARN MORE {#sec-simulation-of-data-lm .fs-5 .unnumbered}
 
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4 .mb-4}
 
@@ -1182,7 +1182,7 @@ The **flawed version of post-hoc power** is called **“observed power”**: If 
 
 ::: {.container .my-4}
 
-#### <i class="bi bi-mortarboard"></i> LEARN MORE {.fs-5 .unnumbered}
+#### <i class="bi bi-mortarboard"></i> LEARN MORE {#sec-power-analyses-lm .fs-5 .unnumbered}
 
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4 .mb-4}
 
@@ -1243,7 +1243,7 @@ The **flawed version of post-hoc power** is called **“observed power”**: If 
 
 ::: {.orc-gradient-box .plan-design-checklist }
 
-## <i class="bi bi-card-checklist checklist-icon"></i> Plan & Design Checklist {.unnumbered}
+## <i class="bi bi-card-checklist checklist-icon"></i> Plan & Design Checklist {#sec-plan-and-design-checklist .unnumbered}
 
 To complete before presenting your final study plan to your research group and, if applicable, submitting your ethics proposal and/or preregistration. Not all items are relevant for all fields of research or study types.
 

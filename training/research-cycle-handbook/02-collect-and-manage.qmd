@@ -7,7 +7,7 @@ format:
     number-offset: [1]
 ---
 
-# Collect & Manage
+# Collect & Manage {#sec-collect-and-manage-chapter}
 
 ```{=html}
 <div class="orc-phase-hero phase-2 container shadow rounded-4">
@@ -37,26 +37,26 @@ Checkpoint: Data quality validation meeting
 ```
 
 <!--first accordion -->
-<div class="accordion rh-accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle" id="accordionExample">
+<div class="accordion rh-accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle" id="accordion-data-collection">
 <div class="accordion-item">
-<div class="accordion-header no-anchor" id="sec-data-collection">
+<div class="accordion-header no-anchor">
 <div class="accordion-header-content">
 <span class="icon-wrapper rounded-4 bg-success-subtle text-success p-3">
 <i class="bi bi-journal-code m-0 fs-4"></i>
 </span>
 <div class="accordion-title">
 
-## Data Collection
+## Data Collection {#sec-data-collection}
 </div>
 </div>
 <button class="accordion-button collapsed accordion-toggle-only" type="button"
   data-bs-toggle="collapse"
-  data-bs-target="#collapseOne"
+  data-bs-target="#collapse-data-collection"
   aria-expanded="false"
   aria-label="Toggle Data Collection section"></button>
 </div>
 
-<div id="collapseOne" class="accordion-collapse collapse">
+<div id="collapse-data-collection" class="accordion-collapse collapse">
 <div class="accordion-body p-4">
 
 ::: {.content}
@@ -104,7 +104,7 @@ Your protocol should specify materials with identifying details (e.g. lot number
 ::: {.container .my-4 }
 
 
-#### <i class="bi bi-mortarboard"></i> LEARN MORE {.fs-5 .unnumbered}
+#### <i class="bi bi-mortarboard"></i> LEARN MORE {#sec-lab-protocols-lm .fs-5 .unnumbered}
 <!-- row for learn more section  -->
 
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
@@ -127,7 +127,7 @@ Your protocol should specify materials with identifying details (e.g. lot number
 :::
 
 
-#### <i class="bi bi-tools"></i> TOOLS & RESOURCES {.fs-5 .mt-3 .unnumbered}
+#### <i class="bi bi-tools"></i> TOOLS & RESOURCES {#sec-lab-protocols-tr .fs-5 .mt-3 .unnumbered}
 <!-- row for Tools & Resources section -->
 
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
@@ -231,7 +231,7 @@ When data comes from instruments, sensors, or APIs (Application Programming Inte
 
 ::: {.container .my-4 }
 
-#### <i class="bi bi-mortarboard"></i> LEARN MORE {.fs-5 .unnumbered}
+#### <i class="bi bi-mortarboard"></i> LEARN MORE {#sec-software-based-data-acquisition-lm .fs-5 .unnumbered}
 <!-- row for learn more section  -->
 
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
@@ -305,7 +305,7 @@ Field and sometimes lab researchers have to work with analogue notebooks first, 
 
 ::: {.container .my-4 }
 
-#### <i class="bi bi-tools"></i> TOOLS & RESOURCES {.fs-5 .mt-3 .unnumbered}
+#### <i class="bi bi-tools"></i> TOOLS & RESOURCES {#sec-field-and-lab-work-tr .fs-5 .mt-3 .unnumbered}
 <!-- row for Tools & Resources section -->
 
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
@@ -361,7 +361,7 @@ Data collection, in this context, consists in developing a judicious reproducibl
 
 ::: {.container .my-4 }
 
-#### <i class="bi bi-mortarboard"></i> LEARN MORE {.fs-5 .unnumbered}
+#### <i class="bi bi-mortarboard"></i> LEARN MORE {#sec-systematic-reviews-lm .fs-5 .unnumbered}
 <!-- row for learn more section  -->
 
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
@@ -387,7 +387,7 @@ Data collection, in this context, consists in developing a judicious reproducibl
 
 :::
 
-#### <i class="bi bi-tools"></i> TOOLS & RESOURCES {.fs-5 .mt-3 .unnumbered}
+#### <i class="bi bi-tools"></i> TOOLS & RESOURCES {#sec-systematic-reviews-tr .fs-5 .mt-3 .unnumbered}
 <!-- row for Tools & Resources section -->
 
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
@@ -443,25 +443,25 @@ Data collection, in this context, consists in developing a judicious reproducibl
 
 <!--second accordion -->
 
-<div class="accordion rh-accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle" id="accordionExample">
+<div class="accordion rh-accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle" id="accordion-data-management">
 <div class="accordion-item">
-<div class="accordion-header no-anchor" id="sec-data-management">
+<div class="accordion-header no-anchor">
 <div class="accordion-header-content">
 <span class="icon-wrapper rounded-4 bg-success-subtle text-success p-3">
 <i class="bi bi-folder-check m-0 fs-4"></i>
 </span>
 <div class="accordion-title">
 
-## Data Management
+## Data Management {#sec-data-management}
 </div>
 </div>
 <button class="accordion-button collapsed accordion-toggle-only" type="button"
   data-bs-toggle="collapse"
-  data-bs-target="#collapseTwo"
+  data-bs-target="#collapse-data-management"
   aria-expanded="false"
   aria-label="Toggle Data Management section"></button>
 </div>
-<div id="collapseTwo" class="accordion-collapse collapse">
+<div id="collapse-data-management" class="accordion-collapse collapse">
 <div class="accordion-body p-4">
 
 ::: {.content}
@@ -482,7 +482,7 @@ What follows are general practices. Your domain has specific conventions for fil
 ::: {.callout-tip .mx-4}
 # Tips for research groups to streamline this process
 - **Create standard operating procedures (SOPs) within the team.** For instance: where and when data back up should be made and in which file format, what project folder structure and conventions for naming files should be adopted, which metadata should routinely be acquired, what documentation should be created and when, and how and where a history of versions should be preserved. 
-- **Assign responsibilities.** For developing such SOPs for a specific kind of project and for checking all members have implemented those SOPs at a specified time point in their project (e.g. hold a data quality validation meeting prior to starting data analyses, see [Collect & Manage Checklist](#collect-manage-checklist){.mark}).
+- **Assign responsibilities.** For developing such SOPs for a specific kind of project and for checking all members have implemented those SOPs at a specified time point in their project (e.g. hold a data quality validation meeting prior to starting data analyses, see [Collect & Manage Checklist](#sec-collect-and-manage-checklist){.mark}).
 :::
 
 
@@ -510,7 +510,7 @@ Personal laptops as primary storage, external drives as only copy, consumer clou
 
 ::: {.container .my-4 }
 
-#### <i class="bi bi-mortarboard"></i> LEARN MORE {.fs-5 .unnumbered}
+#### <i class="bi bi-mortarboard"></i> LEARN MORE {#sec-storage-lm .fs-5 .unnumbered}
 <!-- row for Learn More section -->
 
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
@@ -596,7 +596,7 @@ A pattern like `YYYY-MM-DD_project_condition_type_v01.ext` places files in chron
 
 ::: {.container .my-4 }
 
-#### <i class="bi bi-mortarboard"></i> LEARN MORE {.fs-5 .unnumbered}
+#### <i class="bi bi-mortarboard"></i> LEARN MORE {#sec-organization-lm .fs-5 .unnumbered}
 
 <!-- row for Learn More section -->
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
@@ -622,7 +622,7 @@ A pattern like `YYYY-MM-DD_project_condition_type_v01.ext` places files in chron
 
 :::
 
-#### <i class="bi bi-tools"></i> TOOLS & RESOURCES {.fs-5 .mt-3 .unnumbered}
+#### <i class="bi bi-tools"></i> TOOLS & RESOURCES {#sec-organization-tr .fs-5 .mt-3 .unnumbered}
 <!-- row for Tools & Resources section -->
 
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
@@ -691,7 +691,7 @@ Format issues often surface during quality control. The [2.4. Quality Control](#
 
 ::: {.container .my-4 }
 
-#### <i class="bi bi-tools"></i> TOOLS & RESOURCES {.fs-5 .mt-3 .unnumbered}
+#### <i class="bi bi-tools"></i> TOOLS & RESOURCES {#sec-file-formats-tr .fs-5 .mt-3 .unnumbered}
 
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
 
@@ -717,10 +717,10 @@ Format issues often surface during quality control. The [2.4. Quality Control](#
 
 <div class="collapse-heading">
 
-### Documentation {#sec-documentation-02 .no-anchor .collapse-toggle .collapsed data-bs-toggle="collapse" data-bs-target="#collapse-documentation" aria-expanded="false" aria-controls="collapse-documentation"}
+### Documentation {#sec-documentation-02 .no-anchor .collapse-toggle .collapsed data-bs-toggle="collapse" data-bs-target="#collapse-documentation-02" aria-expanded="false" aria-controls="collapse-documentation-02"}
 
 </div>
-<div id="collapse-documentation" class="collapse" data-bs-parent="#data-management-collapse">
+<div id="collapse-documentation-02" class="collapse" data-bs-parent="#data-management-collapse">
 
 Without documentation, a dataset is just a collection of files. Six months from now, you will not remember what each column means, why certain values are missing, or how files relate to each other. Documentation makes your data usable by your future self, your collaborators, and any other researchers.
 
@@ -730,7 +730,7 @@ Without documentation, a dataset is just a collection of files. Six months from 
 
 ::: {.container .my-4}
 
-#### <i class="bi bi-mortarboard"></i> LEARN MORE {.fs-5 .unnumbered}
+#### <i class="bi bi-mortarboard"></i> LEARN MORE {#sec-documentation-02-lm .fs-5 .unnumbered}
 
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
 
@@ -798,7 +798,7 @@ Standards are community agreements on how to organize and describe research data
 
 ::: {.container .my-4}
 
-#### <i class="bi bi-tools"></i> TOOLS & RESOURCES {.fs-5 .mt-3 .unnumbered}
+#### <i class="bi bi-tools"></i> TOOLS & RESOURCES {#sec-standards-tr .fs-5 .mt-3 .unnumbered}
 
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
 
@@ -874,10 +874,10 @@ Standards are community agreements on how to organize and describe research data
 
 <div class="collapse-heading">
 
-### Version Control {#sec-version-control-02 .no-anchor .collapse-toggle .collapsed data-bs-toggle="collapse" data-bs-target="#collapse-version-control" aria-expanded="false" aria-controls="collapse-version-control"}
+### Version Control {#sec-version-control-02 .no-anchor .collapse-toggle .collapsed data-bs-toggle="collapse" data-bs-target="#collapse-version-control-02" aria-expanded="false" aria-controls="collapse-version-control-02"}
 
 </div>
-<div id="collapse-version-control" class="collapse" data-bs-parent="#data-management-collapse">
+<div id="collapse-version-control-02" class="collapse" data-bs-parent="#data-management-collapse">
 
 Version control system like Git tracks changes to files over time. You can see what changed, when, and why. You can revert to previous versions. Collaborators can work without overwriting each other.
 
@@ -906,7 +906,7 @@ In a version controlled workflow, you back up your local Git repositories on eit
 
 ::: {.container .my-4 }
 
-#### <i class="bi bi-mortarboard"></i> LEARN MORE {.fs-5 .unnumbered}
+#### <i class="bi bi-mortarboard"></i> LEARN MORE {#sec-version-control-02-lm .fs-5 .unnumbered}
 
 <!-- row for Learn More section -->
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
@@ -958,7 +958,7 @@ In a version controlled workflow, you back up your local Git repositories on eit
 :::
 
 
-#### <i class="bi bi-tools"></i> TOOLS & RESOURCES {.fs-5 .mt-3 .unnumbered}
+#### <i class="bi bi-tools"></i> TOOLS & RESOURCES {#sec-version-control-02-tr .fs-5 .mt-3 .unnumbered}
 <!-- row for Tools & Resources section -->
 
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
@@ -1014,25 +1014,25 @@ In a version controlled workflow, you back up your local Git repositories on eit
 <!--third accordion -->
 
 
-<div class="accordion rh-accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle" id="accordionExample">
+<div class="accordion rh-accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle" id="accordion-ethics-and-privacy">
 <div class="accordion-item">
-<div class="accordion-header no-anchor" id="sec-ethics-and-privacy">
+<div class="accordion-header no-anchor">
 <div class="accordion-header-content">
 <span class="icon-wrapper rounded-4 bg-success-subtle text-success p-3">
 <i class="bi bi-shield-lock m-0 fs-4"></i>
 </span>
 <div class="accordion-title">
 
-## Ethics & Privacy
+## Ethics & Privacy {#sec-ethics-and-privacy}
 </div>
 </div>
 <button class="accordion-button collapsed accordion-toggle-only" type="button"
   data-bs-toggle="collapse"
-  data-bs-target="#collapseThree"
+  data-bs-target="#collapse-ethics-and-privacy"
   aria-expanded="false"
   aria-label="Toggle Ethics & Privacy section"></button>
 </div>
-<div id="collapseThree" class="accordion-collapse collapse">
+<div id="collapse-ethics-and-privacy" class="accordion-collapse collapse">
 <div class="accordion-body p-4">
 
 ::: {.content}
@@ -1064,7 +1064,7 @@ Participants have the right to understand what they are agreeing to. Your consen
 
 ::: {.container .my-4 }
 
-#### <i class="bi bi-tools"></i> TOOLS & RESOURCES {.fs-5 .mt-3 .unnumbered}
+#### <i class="bi bi-tools"></i> TOOLS & RESOURCES {#sec-informed-consent-tr .fs-5 .mt-3 .unnumbered}
 <!-- row for Tools & Resources section -->
 
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
@@ -1118,7 +1118,7 @@ Anonymization protects privacy and determines what you can share.
 
 ::: {.container .my-4 }
 
-#### <i class="bi bi-mortarboard"></i> LEARN MORE {.fs-5 .unnumbered}
+#### <i class="bi bi-mortarboard"></i> LEARN MORE {#sec-anonymization-lm .fs-5 .unnumbered}
 
 <!-- row for Learn More section -->
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
@@ -1196,25 +1196,25 @@ For data protection guidance, contact the [LMU Data Protection Officer](https://
 <!--forth accordion -->
 
 
-<div class="accordion rh-accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle" id="accordionExample">
+<div class="accordion rh-accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle" id="accordion-quality-control">
 <div class="accordion-item">
-<div class="accordion-header no-anchor" id="sec-quality-control">
+<div class="accordion-header no-anchor">
 <div class="accordion-header-content">
 <span class="icon-wrapper rounded-4 bg-success-subtle text-success p-3">
 <i class="bi bi-check2-square m-0 fs-4"></i>
 </span>
 <div class="accordion-title">
 
-## Quality Control
+## Quality Control {#sec-quality-control}
 </div>
 </div>
 <button class="accordion-button collapsed accordion-toggle-only" type="button"
   data-bs-toggle="collapse"
-  data-bs-target="#collapseFour"
+  data-bs-target="#collapse-quality-control"
   aria-expanded="false"
   aria-label="Toggle Quality Control section"></button>
 </div>
-<div id="collapseFour" class="accordion-collapse collapse">
+<div id="collapse-quality-control" class="accordion-collapse collapse">
 <div class="accordion-body p-4">
 
 ::: {.content}
@@ -1244,7 +1244,7 @@ Validation checks whether your data meets specifications. For example, values ca
 
 ::: {.container .my-4 }
 
-#### <i class="bi bi-mortarboard"></i> LEARN MORE {.fs-5 .unnumbered}
+#### <i class="bi bi-mortarboard"></i> LEARN MORE {#sec-validation-lm .fs-5 .unnumbered}
 
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
 
@@ -1327,7 +1327,7 @@ Exclusion criteria specify which data points will be removed from analysis and w
 
 ::: {.orc-gradient-box .collect-manage-checklist}
 
-## <i class="bi bi-card-checklist checklist-icon"></i> Collect & Manage Checklist {.unnumbered}
+## <i class="bi bi-card-checklist checklist-icon"></i> Collect & Manage Checklist {#sec-collect-and-manage-checklist .unnumbered}
 
 To complete before conducting a data validation meeting with members of the project. Not all items are relevant for all fields of research or study types.
 

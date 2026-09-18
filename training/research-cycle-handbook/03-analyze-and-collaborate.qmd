@@ -7,7 +7,7 @@ format:
     number-offset: [2]
 ---
 
-# Analyze & Collaborate
+# Analyze & Collaborate {#sec-analyze-and-collaborate-chapter}
 
 ```{=html}
 <div class="orc-phase-hero phase-3 container shadow rounded-4">
@@ -36,25 +36,25 @@ Checkpoints: Repository & Code Peer-Review + Result Presentation
 ```
 <!--first accordion-->
 
-<div class="accordion rh-accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle" id="accordionExample">
+<div class="accordion rh-accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle" id="accordion-data-processing-analysis">
 <div class="accordion-item">
-<div class="accordion-header no-anchor" id="sec-data-processing-analysis">
+<div class="accordion-header no-anchor">
 <div class="accordion-header-content">
 <span class="icon-wrapper rounded-4 bg-success-subtle text-success p-3">
 <i class="bi bi-gear-wide-connected m-0 fs-4"></i> 
 </span>
 <div class="accordion-title">
 
-## Data Processing & Analysis
+## Data Processing & Analysis {#sec-data-processing-analysis}
 </div>
 </div>
 <button class="accordion-button collapsed accordion-toggle-only" type="button"
   data-bs-toggle="collapse"
-  data-bs-target="#collapseOne"
+  data-bs-target="#collapse-data-processing-analysis"
   aria-expanded="false"
   aria-label="Toggle Data Processing & Analysis section"></button>
 </div>
-<div id="collapseOne" class="accordion-collapse collapse">
+<div id="collapse-data-processing-analysis" class="accordion-collapse collapse">
 <div class="accordion-body p-4">
 
 ::: {.content}
@@ -74,7 +74,7 @@ This section outlines a recommended workflow for R users.
 
 - **Create a self-contained project folder**. Include data, code, documentation, and outputs in a single structured environment, ensuring the project remains understandable, reproducible, and portable across systems and collaborators. If you use the free and open source software RStudio to manage your R project, your project directory (or folder) should contain a .Rproj file (see [R tutorial](https://lmu-osc.github.io/introduction-to-R/)). **Use relative paths** (i.e. `“./subfolder”`, where `.` represents the root of your .Rproj directory) or the library `here`, so the project stays portable to another environment
 - **Use a standard folder structure**. Your code repository should include a standard folder structure that make sense for your type of research, ideally shared across your team members. You can for instance use our [research project template](https://github.com/lmu-osc/research-project-template). 
-- **Stop clicking, start coding**. Automatize all possible steps, including data acquisition (see [2.1. Data Collection](02-collect-and-manage.qmd#sec-data-collection){.mark}), data processing and transformation, data analyses, data visualization, and results reporting (see [3.2. Reporting Results](#sec-reproducible-reporting){.mark})
+- **Stop clicking, start coding**. Automatize all possible steps, including data acquisition (see [2.1. Data Collection](02-collect-and-manage.qmd#sec-data-collection){.mark}), data processing and transformation, data analyses, data visualization, and results reporting (see [3.2. Reporting Results](#sec-reporting-results){.mark})
 - **Structure, comment, and standardize your scripts.** R scripts themselves should follow current standards to increase their readability (see [Readable Code Lecture](https://lmu-osc.github.io/training/reproducible-processes/readable-code.html)). Use meaningful names for variables, functions, and scripts. Add comments to your code explaining _why_ you made a decision, any known limitations to your code, and citations of methods. **Do not include sensitive information such as credentials or name of excluded patient as comments in your code!**
     - **Define your own functions** rather than copy pasting pieces of code which makes it hard to maintain error-free. Functions are ‘self-contained’ sets of commands that accomplish a specific task. They usually ‘take in’ data or parameter values (these inputs are called ‘function arguments’), process them, and ‘return’ a result. See our [R tutorial](https://lmu-osc.github.io/introduction-to-R/) and [data simulation tutorial](https://lmu-osc.github.io/Introduction-Simulations-in-R/) for examples.
     - **Set seeds for random processes** to enable exact replication. A seed is a number used to initialize a pseudorandom number generator algorithm. It serves as the starting point for a sequence of numbers that appear random but are actually produced by a deterministic, fixed algorithm. See e.g. our [data simulation tutorial](https://lmu-osc.github.io/Introduction-Simulations-in-R/) for examples.
@@ -85,7 +85,7 @@ This section outlines a recommended workflow for R users.
 
 ::: {.container .my-4}
 
-#### <i class="bi bi-mortarboard"></i> LEARN MORE {.fs-5 .unnumbered}
+#### <i class="bi bi-mortarboard"></i> LEARN MORE {#sec-programming-lm .fs-5 .unnumbered}
 
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
 
@@ -153,7 +153,7 @@ This section outlines a recommended workflow for R users.
 
 :::
 
-#### <i class="bi bi-tools"></i> TOOLS & RESOURCES {.fs-5 .mt-3 .unnumbered}
+#### <i class="bi bi-tools"></i> TOOLS & RESOURCES {#sec-programming-tr .fs-5 .mt-3 .unnumbered}
 
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
 
@@ -207,10 +207,10 @@ This section outlines a recommended workflow for R users.
 
 <div class="collapse-heading">
 
-### Version Control {#sec-version-control-03 .no-anchor .collapse-toggle .collapsed data-bs-toggle="collapse" data-bs-target="#collapse-version-control" aria-expanded="false" aria-controls="collapse-version-control"}
+### Version Control {#sec-version-control-03 .no-anchor .collapse-toggle .collapsed data-bs-toggle="collapse" data-bs-target="#collapse-version-control-03" aria-expanded="false" aria-controls="collapse-version-control-03"}
 
 </div>
-<div id="collapse-version-control" class="collapse" data-bs-parent="#data-processing-analysis-collapse">
+<div id="collapse-version-control-03" class="collapse" data-bs-parent="#data-processing-analysis-collapse">
 
 Version control tracks changes to files over time. You can see what changed, when, and why. You can revert to previous versions. Collaborators can work without overwriting each other.
 
@@ -248,7 +248,7 @@ Importantly, if data are removed from an existing repository, they may still rem
 
 ::: {.container .my-4 }
 
-#### <i class="bi bi-mortarboard"></i> LEARN MORE {.fs-5 .unnumbered}
+#### <i class="bi bi-mortarboard"></i> LEARN MORE {#sec-version-control-03-lm .fs-5 .unnumbered}
 
 <!-- row for Learn More section -->
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
@@ -299,7 +299,7 @@ Importantly, if data are removed from an existing repository, they may still rem
 
 :::
 
-#### <i class="bi bi-tools"></i> TOOLS & RESOURCES {.fs-5 .mt-3 .unnumbered}
+#### <i class="bi bi-tools"></i> TOOLS & RESOURCES {#sec-version-control-03-tr .fs-5 .mt-3 .unnumbered}
 <!-- row for Tools & Resources section -->
 
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
@@ -357,10 +357,10 @@ Importantly, if data are removed from an existing repository, they may still rem
 
 <div class="collapse-heading">
 
-### Computational Environment Management {#sec-computational-environment-management .no-anchor .collapse-toggle .collapsed data-bs-toggle="collapse" data-bs-target="#collapse-computational-environment-management" aria-expanded="false" aria-controls="collapse-computational-environment-management"}
+### Computational Environment Management {#sec-computational-env-management .no-anchor .collapse-toggle .collapsed data-bs-toggle="collapse" data-bs-target="#collapse-computational-env-management" aria-expanded="false" aria-controls="collapse-computational-env-management"}
 
 </div>
-<div id="collapse-computational-environment-management" class="collapse" data-bs-parent="#data-processing-analysis-collapse">
+<div id="collapse-computational-env-management" class="collapse" data-bs-parent="#data-processing-analysis-collapse">
 
 Manage your computational environment by explicitly recording the software, package versions, and dependencies required for your analyses, ensuring results can be reproduced across systems and over time. Tools such as packages managers (e.g. [Renv](https://rstudio.github.io/renv/) for R packages, [Conda](https://anaconda.org/channels/anaconda/packages/conda/overview) for Python packages) or broader containers (e.g. [Docker](https://www.docker.com/) or [Binder](https://mybinder.org/)) help stabilize workflows and prevent inconsistencies caused by packages or software updates.
 
@@ -377,7 +377,7 @@ Before publishing your project (see [4. Preserve & share](04-preserve-and-share.
 
 ::: {.container .my-4 }
 
-#### <i class="bi bi-mortarboard"></i> LEARN MORE {.fs-5 .unnumbered}
+#### <i class="bi bi-mortarboard"></i> LEARN MORE {#sec-computational-env-management-lm .fs-5 .unnumbered}
 
 <!-- row for Learn More section -->
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
@@ -428,7 +428,7 @@ Before publishing your project (see [4. Preserve & share](04-preserve-and-share.
 
 :::
 
-#### <i class="bi bi-tools"></i> TOOLS & RESOURCES {.fs-5 .mt-3 .unnumbered}
+#### <i class="bi bi-tools"></i> TOOLS & RESOURCES {#sec-computational-env-management-tr .fs-5 .mt-3 .unnumbered}
 <!-- row for Tools & Resources section -->
 
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
@@ -485,10 +485,10 @@ Before publishing your project (see [4. Preserve & share](04-preserve-and-share.
 
 <div class="collapse-heading">
 
-### Documentation {#sec-documentation-03 .no-anchor .collapse-toggle .collapsed data-bs-toggle="collapse" data-bs-target="#collapse-documentation" aria-expanded="false" aria-controls="collapse-documentation"}
+### Documentation {#sec-documentation-03 .no-anchor .collapse-toggle .collapsed data-bs-toggle="collapse" data-bs-target="#collapse-documentation-03" aria-expanded="false" aria-controls="collapse-documentation-03"}
 
 </div>
-<div id="collapse-documentation" class="collapse" data-bs-parent="#data-processing-analysis-collapse">
+<div id="collapse-documentation-03" class="collapse" data-bs-parent="#data-processing-analysis-collapse">
 
 As with all documentation, your project repository’s documentation should be written early - initially for your near-future self to support efficient re-engagement after interruptions, then revised for internal team review, and ultimately expanded and refined for public sharing (see [4.2. Open Source Code](04-preserve-and-share.qmd#sec-open-source-code){.mark}).  
 
@@ -513,7 +513,7 @@ Example README to allow team members to review your code:
 
 ::: {.container .my-4 }
 
-#### <i class="bi bi-mortarboard"></i> LEARN MORE {.fs-5 .unnumbered}
+#### <i class="bi bi-mortarboard"></i> LEARN MORE {#sec-documentation-03-lm .fs-5 .unnumbered}
 
 <!-- row for Learn More section -->
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
@@ -593,25 +593,25 @@ Example README to allow team members to review your code:
 
 <!--second accordion-->
 
-<div class="accordion rh-accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle" id="accordionExample">
+<div class="accordion rh-accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle" id="accordion-reporting-results">
 <div class="accordion-item">
-<div class="accordion-header no-anchor fs-6" id="sec-reporting-results">
+<div class="accordion-header no-anchor fs-6">
 <div class="accordion-header-content">
 <span class="icon-wrapper rounded-4 bg-success-subtle text-success p-3">
 <i class="bi bi-file-earmark-richtext m-0 fs-4"></i> 
 </span>
 <div class="accordion-title">
 
-## Reporting Results
+## Reporting Results {#sec-reporting-results}
 </div>
 </div>
 <button class="accordion-button collapsed accordion-toggle-only" type="button"
   data-bs-toggle="collapse"
-  data-bs-target="#collapseTwo"
+  data-bs-target="#collapse-reporting-results"
   aria-expanded="false"
   aria-label="Toggle Reporting Results section"></button>
 </div>
-<div id="collapseTwo" class="accordion-collapse collapse">
+<div id="collapse-reporting-results" class="accordion-collapse collapse">
 <div class="accordion-body p-4">
 
 ::: {.content}
@@ -673,7 +673,7 @@ Using the same Quarto environment, you can also:
 
 ::: {.container .my-4 }
 
-#### <i class="bi bi-mortarboard"></i> LEARN MORE {.fs-5 .unnumbered}
+#### <i class="bi bi-mortarboard"></i> LEARN MORE {#sec-results-reproducibility-lm .fs-5 .unnumbered}
 
 <!-- row for Learn More section -->
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
@@ -784,7 +784,7 @@ Using the same Quarto environment, you can also:
 
 :::
 
-#### <i class="bi bi-tools"></i> TOOLS & RESOURCES {.fs-5 .mt-3 .unnumbered}
+#### <i class="bi bi-tools"></i> TOOLS & RESOURCES {#sec-results-reproducibility-tr .fs-5 .mt-3 .unnumbered}
 <!-- row for Tools & Resources section -->
 
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
@@ -873,7 +873,7 @@ Transparent and complete reporting is essential for the interpretation, verifica
  A central resource for such guidelines is the [EQUATOR Network](https://www.equator-network.org/reporting-guidelines/), an international initiative collecting and promoting reporting standards across many study types and disciplines. 
  
 
-#### <i class="bi bi-list-check"></i> Typical items that should be reported include:
+#### <i class="bi bi-list-check"></i> Typical items that should be reported include: {#sec-typical-reporting-items}
 
 - **Study design and setting** – the type of study (e.g., randomized trial, cohort study), where and when it was conducted, and relevant contextual factors.
 - **Participants or data sources** – eligibility criteria, recruitment or sampling procedures, sample size, and reasons for exclusions or dropouts.
@@ -893,7 +893,7 @@ Some of these elements will be refined depending on your study type. Widely used
 
 ::: {.container .my-4 }
 
-#### <i class="bi bi-tools"></i> TOOLS & RESOURCES {.fs-5 .mt-3 .unnumbered}
+#### <i class="bi bi-tools"></i> TOOLS & RESOURCES {#sec-reporting-guidelines-tr .fs-5 .mt-3 .unnumbered}
 
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
 
@@ -927,7 +927,7 @@ Some of these elements will be refined depending on your study type. Widely used
 
 ::: {.orc-gradient-box .analyze-collaborate-checklist} 
 
-## <i class="bi bi-card-checklist checklist-icon"></i> Analyze & Collaborate Checklist {.unnumbered}
+## <i class="bi bi-card-checklist checklist-icon"></i> Analyze & Collaborate Checklist {#sec-analyze-and-collaborate-checklist .unnumbered}
 
 This assumes a reproducible workflow using R. Not all items are relevant for all fields of research or study types.
 

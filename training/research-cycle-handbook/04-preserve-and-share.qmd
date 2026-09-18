@@ -7,7 +7,7 @@ format:
     number-offset: [3]
 ---
 
-# Preserve & Share
+# Preserve & Share {#sec-preserve-and-share-chapter}
 
 
 ```{=html}
@@ -36,25 +36,25 @@ Checkpoint: Manuscript submission with DOIs for preregistration, data, and code
 </div>
 ```
 
-<div class="accordion rh-accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle">
+<div class="accordion rh-accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle" id="accordion-fair-data-sharing">
 <div class="accordion-item">
-<div class="accordion-header no-anchor" id="sec-fair-data-sharing">
+<div class="accordion-header no-anchor">
 <div class="accordion-header-content">
 <span class="icon-wrapper rounded-4 bg-success-subtle text-success p-3">
 <i class="bi bi-database-up m-0 fs-4"></i> 
 </span>
 <div class="accordion-title">
 
-## FAIR Data Sharing
+## FAIR Data Sharing {#sec-fair-data-sharing}
 </div>
 </div>
 <button class="accordion-button collapsed accordion-toggle-only" type="button"
   data-bs-toggle="collapse"
-  data-bs-target="#collapseOne"
+  data-bs-target="#collapse-fair-data-sharing"
   aria-expanded="false"
   aria-label="Toggle FAIR Data Sharing section"></button>
 </div>
-<div id="collapseOne" class="accordion-collapse collapse">
+<div id="collapse-fair-data-sharing" class="accordion-collapse collapse">
 <div class="accordion-body p-4">
 
 ::: {.container}
@@ -103,7 +103,7 @@ When deciding whether data should be shared, consider the following:
 
 ::: {.container .my-4 }
 
-#### <i class="bi bi-mortarboard"></i> LEARN MORE {.fs-5 .unnumbered}
+#### <i class="bi bi-mortarboard"></i> LEARN MORE {#sec-open-vs-restricted-lm .fs-5 .unnumbered}
 
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
 
@@ -164,7 +164,7 @@ When deciding whether data should be shared, consider the following:
 
 :::
 
-#### <i class="bi bi-tools"></i> TOOLS & RESOURCES {.fs-5 .mt-3 .unnumbered}
+#### <i class="bi bi-tools"></i> TOOLS & RESOURCES {#sec-open-vs-restricted-tr .fs-5 .mt-3 .unnumbered}
 
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
 
@@ -223,7 +223,7 @@ During the course of data collection and analyses, you created a README and data
 
 ::: {.container .my-4 }
 
-#### <i class="bi bi-mortarboard"></i> LEARN MORE {.fs-5 .unnumbered}
+#### <i class="bi bi-mortarboard"></i> LEARN MORE {#sec-preparing-your-data-lm .fs-5 .unnumbered}
 
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
 
@@ -287,7 +287,7 @@ During the course of data collection and analyses, you created a README and data
 :::
 
 
-#### <i class="bi bi-tools"></i> TOOLS & RESOURCES {.fs-5 .mt-3 .unnumbered}
+#### <i class="bi bi-tools"></i> TOOLS & RESOURCES {#sec-preparing-your-data-tr .fs-5 .mt-3 .unnumbered}
 <!-- row for Tools & Resources section -->
 
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
@@ -347,7 +347,7 @@ Whichever you choose, ensure the repository provides a **DOI** (Digital Object I
 
 ::: {.container .my-4 }
 
-#### <i class="bi bi-tools"></i> TOOLS & RESOURCES {.fs-5 .mt-3 .unnumbered}
+#### <i class="bi bi-tools"></i> TOOLS & RESOURCES {#sec-where-to-deposit-tr .fs-5 .mt-3 .unnumbered}
 
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
 
@@ -443,7 +443,7 @@ For restricted-access data, a **Data Use Agreement** specifies conditions beyond
 
 ::: {.container .my-4 }
 
-#### <i class="bi bi-mortarboard"></i> LEARN MORE {.fs-5 .unnumbered}
+#### <i class="bi bi-mortarboard"></i> LEARN MORE {#sec-data-licenses-lm .fs-5 .unnumbered}
 
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
 
@@ -498,25 +498,25 @@ _in construction_<!-- Reema? -->
 
 <!--second accordion-->
 
-<div class="accordion rh-accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle" id="accordionExample">
+<div class="accordion rh-accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle" id="accordion-open-source-code">
 <div class="accordion-item">
-<div class="accordion-header no-anchor" id="sec-open-source-code">
+<div class="accordion-header no-anchor">
 <div class="accordion-header-content">
 <span class="icon-wrapper rounded-4 bg-success-subtle text-success p-3">
 <i class="bi bi-file-code m-0 fs-4"></i> 
 </span>
 <div class="accordion-title">
 
-## Open Source Code
+## Open Source Code {#sec-open-source-code}
 </div>
 </div>
 <button class="accordion-button collapsed accordion-toggle-only" type="button"
   data-bs-toggle="collapse"
-  data-bs-target="#collapseTwo"
+  data-bs-target="#collapse-open-source-code"
   aria-expanded="false"
   aria-label="Toggle Open Source Code section"></button>
 </div>
-<div id="collapseTwo" class="accordion-collapse collapse">
+<div id="collapse-open-source-code" class="accordion-collapse collapse">
 <div class="accordion-body p-4">
 
 ::: {.content}
@@ -526,7 +526,7 @@ Making code publicly available demonstrates the reproducibility of your results 
 So far, your code was either backed up on the secured [LRZ Gitlab](https://gitlab.lrz.de/) (e.g. if your data and/or code are sensitive), or on [GitHub](https://github.com/)  (see [3. Analyze & Collaborate](03-analyze-and-collaborate.qmd){.mark}). Before the submission of a manuscript to a journal and/or upon the acceptance of a manuscript, there are small additional steps that need to be done to publish your code.
 
 ::: {.ms-1} 
-- **verify** the structure of your repository, the readability of your scripts, the completeness of the documentation (see [Analyze & Collaborate Checklist](03-analyze-and-collaborate.qmd#analyze-collaborate-checklist){.mark}).
+- **verify** the structure of your repository, the readability of your scripts, the completeness of the documentation (see [Analyze & Collaborate Checklist](03-analyze-and-collaborate.qmd#sec-analyze-and-collaborate-checklist){.mark}).
 - **make a clean version public**, e.g. on [GitHub](https://github.com/)
 - **add a license**
 - **get a DOI**, e.g. through [Zenodo](https://zenodo.org/)
@@ -569,7 +569,7 @@ Importantly, if data are removed from an existing repository, they may still rem
 
 ::: {.container .my-4 }
 
-#### <i class="bi bi-mortarboard"></i> LEARN MORE {.fs-5 .unnumbered}
+#### <i class="bi bi-mortarboard"></i> LEARN MORE {#sec-preparing-your-code-repository-lm .fs-5 .unnumbered}
 
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
 
@@ -600,10 +600,10 @@ Importantly, if data are removed from an existing repository, they may still rem
 
 <div class="collapse-heading">
 
-### Real, Simulated, or Synthetic Data {#sec-real-simulated-or-synthetic-data .no-anchor .collapse-toggle .collapsed data-bs-toggle="collapse" data-bs-target="#collapse-real-simulated-or-synthetic-data" aria-expanded="false" aria-controls="collapse-real-simulated-or-synthetic-data"}
+### Real, Simulated, or Synthetic Data {#sec-real-simulated-or-synthetic-data .no-anchor .collapse-toggle .collapsed data-bs-toggle="collapse" data-bs-target="#collapse-real-simulated-synthetic-data" aria-expanded="false" aria-controls="collapse-real-simulated-synthetic-data"}
 
 </div>
-<div id="collapse-real-simulated-or-synthetic-data" class="collapse" data-bs-parent="#open-source-code-collapse">
+<div id="collapse-real-simulated-synthetic-data" class="collapse" data-bs-parent="#open-source-code-collapse">
 
 <!-- TODO: This does not fit so well under 4.2 Open Source Code? -->
 
@@ -619,7 +619,7 @@ You can provide the data required to run the code in several ways:
 
 ::: {.container .my-4 }
 
-#### <i class="bi bi-mortarboard"></i> LEARN MORE {.fs-5 .unnumbered}
+#### <i class="bi bi-mortarboard"></i> LEARN MORE {#sec-real-simulated-or-synthetic-data-lm .fs-5 .unnumbered}
 
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
 
@@ -704,7 +704,7 @@ Learn more about open licenses for data and code in our [code publishing tutoria
 
 ::: {.container .my-4 }
 
-#### <i class="bi bi-mortarboard"></i> LEARN MORE {.fs-5 .unnumbered}
+#### <i class="bi bi-mortarboard"></i> LEARN MORE {#sec-code-licenses-lm .fs-5 .unnumbered}
 
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
 
@@ -770,7 +770,7 @@ To publish your code on Zenodo, we recommend to<!-- these instructions contradic
 
 ::: {.container .my-4 }
 
-#### <i class="bi bi-mortarboard"></i> LEARN MORE {.fs-5 .unnumbered}
+#### <i class="bi bi-mortarboard"></i> LEARN MORE {#sec-archiving-dois-lm .fs-5 .unnumbered}
 
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
 
@@ -795,7 +795,7 @@ To publish your code on Zenodo, we recommend to<!-- these instructions contradic
 
 :::
 
-#### <i class="bi bi-tools"></i> TOOLS & RESOURCES {.fs-5 .mt-3 .unnumbered}
+#### <i class="bi bi-tools"></i> TOOLS & RESOURCES {#sec-archiving-dois-tr .fs-5 .mt-3 .unnumbered}
 <!-- row for Tools & Resources section -->
 
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
@@ -829,26 +829,26 @@ To publish your code on Zenodo, we recommend to<!-- these instructions contradic
 
 <!--third accordion-->
 
-<div class="accordion rh-accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle" id="accordionExample">
+<div class="accordion rh-accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle" id="accordion-open-materials">
 <div class="accordion-item">
-<div class="accordion-header no-anchor" id="sec-open-materials">
+<div class="accordion-header no-anchor">
 <div class="accordion-header-content">
 <span class="icon-wrapper rounded-4 bg-success-subtle text-success p-3">
 <i class="bi bi-journal-arrow-up m-0 fs-4"></i> 
 </span>
 <div class="accordion-title">
 
-## Open Materials
+## Open Materials {#sec-open-materials}
 </div>
 </div>
 <button class="accordion-button collapsed accordion-toggle-only" type="button"
   data-bs-toggle="collapse"
-  data-bs-target="#collapseThree"
+  data-bs-target="#collapse-open-materials"
   aria-expanded="false"
   aria-label="Toggle Open Materials section"></button>
 </div>
 
-<div id="collapseThree" class="accordion-collapse collapse">
+<div id="collapse-open-materials" class="accordion-collapse collapse">
 <div class="accordion-body p-4">
 
 ::: {.content}
@@ -879,7 +879,7 @@ See the [Creative Common license chooser](https://creativecommons.org/chooser/) 
 ::: {.container .my-4 }
 
 <!-- row for Tools & Resources section -->
-#### <i class="bi bi-tools"></i> TOOLS & RESOURCES {.fs-5 .mt-3 .unnumbered}
+#### <i class="bi bi-tools"></i> TOOLS & RESOURCES {#sec-digital-materials-tr .fs-5 .mt-3 .unnumbered}
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
 
 ::: {.col}
@@ -958,26 +958,26 @@ Regardless of your discipline:
 
 <!--forth accordion-->
 
-<div class="accordion rh-accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle" id="accordionExample">
+<div class="accordion rh-accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle" id="accordion-open-access-articles">
 <div class="accordion-item">
-<div class="accordion-header no-anchor" id="sec-open-access-articles">
+<div class="accordion-header no-anchor">
 <div class="accordion-header-content">
 <span class="icon-wrapper rounded-4 bg-success-subtle text-success p-3">
 <i class="bi bi-unlock2 m-0 fs-4"></i> 
 </span>
 <div class="accordion-title">
 
-## Open Access Articles
+## Open Access Articles {#sec-open-access-articles}
 </div>
 </div>
 <button class="accordion-button collapsed accordion-toggle-only" type="button"
   data-bs-toggle="collapse"
-  data-bs-target="#collapseFour"
+  data-bs-target="#collapse-open-access-articles"
   aria-expanded="false"
   aria-label="Toggle Open Access Articles section"></button>
 </div>
 
-<div id="collapseFour" class="accordion-collapse collapse">
+<div id="collapse-open-access-articles" class="accordion-collapse collapse">
 <div class="accordion-body p-4">
 
 ::: {.content}
@@ -1011,7 +1011,7 @@ Depending on the contract negotiated by the University and each publisher (see [
 
 ::: {.container .my-4 }
 
-#### <i class="bi bi-tools"></i> TOOLS & RESOURCES {.fs-5 .mt-3 .unnumbered}
+#### <i class="bi bi-tools"></i> TOOLS & RESOURCES {#sec-pathways-to-open-access-tr .fs-5 .mt-3 .unnumbered}
 
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
 
@@ -1070,7 +1070,7 @@ The current contract conditions for LMU Munich can be accessed on the [Universit
 
 ::: {.container .my-4 }
 
-#### <i class="bi bi-tools"></i> TOOLS & RESOURCES {.fs-5 .mt-3 .unnumbered}
+#### <i class="bi bi-tools"></i> TOOLS & RESOURCES {#sec-contracts-with-publishers-tr .fs-5 .mt-3 .unnumbered}
 
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
 
@@ -1100,10 +1100,10 @@ The current contract conditions for LMU Munich can be accessed on the [Universit
 
 <div class="collapse-heading">
 
-### Publishing Preprints and Retaining Rights {#sec-publishing-preprints-and-retaining-rights .no-anchor .collapse-toggle .collapsed data-bs-toggle="collapse" data-bs-target="#collapse-publishing-preprints-and-retaining-rights" aria-expanded="false" aria-controls="collapse-publishing-preprints-and-retaining-rights"}
+### Publishing Preprints and Retaining Rights {#sec-preprints-and-retaining-rights .no-anchor .collapse-toggle .collapsed data-bs-toggle="collapse" data-bs-target="#collapse-preprints-and-retaining-rights" aria-expanded="false" aria-controls="collapse-preprints-and-retaining-rights"}
 
 </div>
-<div id="collapse-publishing-preprints-and-retaining-rights" class="collapse" data-bs-parent="#open-access-articles-collapse">
+<div id="collapse-preprints-and-retaining-rights" class="collapse" data-bs-parent="#open-access-articles-collapse">
 
 To increase the accessibility and impact of your article we recommend you to:
 
@@ -1159,7 +1159,7 @@ To get support for [Open Access LMU](https://epub.ub.uni-muenchen.de/), the LMU 
 
 ::: {.container .my-4 }
 
-#### <i class="bi bi-tools"></i> TOOLS & RESOURCES {.fs-5 .mt-3 .unnumbered}
+#### <i class="bi bi-tools"></i> TOOLS & RESOURCES {#sec-preprints-and-retaining-rights-tr .fs-5 .mt-3 .unnumbered}
 
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
 
@@ -1262,40 +1262,40 @@ To get support for [Open Access LMU](https://epub.ub.uni-muenchen.de/), the LMU 
 
 <!--fifth accordion-->
 
-<div class="accordion rh-accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle" id="accordionExample">
+<div class="accordion rh-accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle" id="accordion-attributions">
 <div class="accordion-item">
-<div class="accordion-header no-anchor" id="sec-attributions-and-persistent-identifiers">
+<div class="accordion-header no-anchor">
 <div class="accordion-header-content">
 <span class="icon-wrapper rounded-4 bg-success-subtle text-success p-3">
 <i class="bi bi-person-badge m-0 fs-4"></i> 
 </span>
 <div class="accordion-title">
 
-## Attributions & Persistent Identifiers
+## Attributions & Persistent Identifiers {#sec-attributions-and-persistent-ids}
 </div>
 </div>
 <button class="accordion-button collapsed accordion-toggle-only" type="button"
   data-bs-toggle="collapse"
-  data-bs-target="#collapseFive"
+  data-bs-target="#collapse-attributions-and-persistent-ids"
   aria-expanded="false"
   aria-label="Toggle Attributions & Persistent Identifiers section"></button>
 </div>
 
-<div id="collapseFive" class="accordion-collapse collapse">
+<div id="collapse-attributions-and-persistent-ids" class="accordion-collapse collapse">
 <div class="accordion-body p-4">
 
 ::: {.content}
 All research outputs and their specific versions should be linked to their authors, organizations, and funders through persistent identifiers.
 
-::: {#attributions-persistent-identifiers-collapse .collapse-tabs}
+::: {#attributions-persistent-ids-collapse .collapse-tabs}
 
 
 <div class="collapse-heading">
 
-### Authorship, Contributorship, and ORCID {#sec-authorship-contributorship-and-orcid .no-anchor .collapse-toggle data-bs-toggle="collapse" data-bs-target="#collapse-authorship-contributorship-and-orcid" aria-expanded="true" aria-controls="collapse-authorship-contributorship-and-orcid"}
+### Authorship, Contributorship, and ORCID {#sec-authorship-and-orcid .no-anchor .collapse-toggle data-bs-toggle="collapse" data-bs-target="#collapse-authorship-and-orcid" aria-expanded="true" aria-controls="collapse-authorship-and-orcid"}
 
 </div>
-<div id="collapse-authorship-contributorship-and-orcid" class="collapse show" data-bs-parent="#attributions-persistent-identifiers-collapse">
+<div id="collapse-authorship-and-orcid" class="collapse show" data-bs-parent="#attributions-persistent-ids-collapse">
 
 <h5>Authorship</h5>
 
@@ -1307,7 +1307,7 @@ According to §14 of the [LMU Guidelines for Safeguarding Good Scientific Practi
 Publishers can provide additional guidance on authorship decisions (often based on the recommendations of the [International Committee of Medical Journal Editors](https://www.icmje.org/recommendations/browse/roles-and-responsibilities/defining-the-role-of-authors-and-contributors.html).
 
 
-We recommend to **start discussions on authorship, roles, and responsibilities as early as possible**. First discussions can for instance take place at the end of [1. Plan & Design](01-plan-and-design.qmd){.mark}, e.g. during the presentation of the study plan to the research group (see [Plan & Design Checklist](01-plan-and-design.qmd#plan-design-checklist){.mark}). As roles may shift in the course of a project, a review is warranted at the write-up stage. 
+We recommend to **start discussions on authorship, roles, and responsibilities as early as possible**. First discussions can for instance take place at the end of [1. Plan & Design](01-plan-and-design.qmd){.mark}, e.g. during the presentation of the study plan to the research group (see [Plan & Design Checklist](01-plan-and-design.qmd#sec-plan-and-design-checklist){.mark}). As roles may shift in the course of a project, a review is warranted at the write-up stage. 
 
 <h5>Contributorship</h5>
 
@@ -1326,7 +1326,7 @@ We recommend to **start discussions on authorship, roles, and responsibilities a
 
 ::: {.container .my-4}
 
-#### <i class="bi bi-tools"></i> TOOLS & RESOURCES {.fs-5 .unnumbered}
+#### <i class="bi bi-tools"></i> TOOLS & RESOURCES {#sec-authorship-and-orcid-tr .fs-5 .unnumbered}
 
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
 
@@ -1384,7 +1384,7 @@ We recommend to **start discussions on authorship, roles, and responsibilities a
 ### Institution, Funders, and ROR {#sec-institution-funders-and-ror .no-anchor .collapse-toggle .collapsed data-bs-toggle="collapse" data-bs-target="#collapse-institution-funders-and-ror" aria-expanded="false" aria-controls="collapse-institution-funders-and-ror"}
 
 </div>
-<div id="collapse-institution-funders-and-ror" class="collapse" data-bs-parent="#attributions-persistent-identifiers-collapse">
+<div id="collapse-institution-funders-and-ror" class="collapse" data-bs-parent="#attributions-persistent-ids-collapse">
 
 - **Disclose your institutional affiliations and funders** as part of the metadata of all your research outputs. To be machine-readable and automatically connected to people's profile or their organization, this must include the official name of the organization and ideally (one of) its persistent identifier.
 - **Use your institution and funders' ROR**. The [Research Organization Registry (ROR)](https://ror.org/) is a global, community-led registry of open persistent identifiers for research and funding organizations.
@@ -1404,7 +1404,7 @@ The LMU Open Science Center is one of the many child organizations of LMU Munich
 
 ::: {.container .my-4}
 
-#### <i class="bi bi-tools"></i> TOOLS & RESOURCES {.fs-5 .unnumbered}
+#### <i class="bi bi-tools"></i> TOOLS & RESOURCES {#sec-institution-funders-and-ror-tr .fs-5 .unnumbered}
 
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
 
@@ -1432,7 +1432,7 @@ The LMU Open Science Center is one of the many child organizations of LMU Munich
 ### Connecting Your Work {#sec-connecting-your-work .no-anchor .collapse-toggle .collapsed data-bs-toggle="collapse" data-bs-target="#collapse-connecting-your-work" aria-expanded="false" aria-controls="collapse-connecting-your-work"}
 
 </div>
-<div id="collapse-connecting-your-work" class="collapse" data-bs-parent="#attributions-persistent-identifiers-collapse">
+<div id="collapse-connecting-your-work" class="collapse" data-bs-parent="#attributions-persistent-ids-collapse">
 
 - **Request a Digital Object Identifiers (DOI) for each of your research outputs** (data, code, preprint, preregistration)
     - you automatically get a DOI from professional repository for outputs you make public 
@@ -1467,7 +1467,7 @@ The LMU Open Science Center is one of the many child organizations of LMU Munich
 ::: {.orc-gradient-box .preserve-share-checklist}
 
 
-## <i class="bi bi-card-checklist checklist-icon"></i> Preserve & Share Checklist {.unnumbered}
+## <i class="bi bi-card-checklist checklist-icon"></i> Preserve & Share Checklist {#sec-preserve-and-share-checklist .unnumbered}
 
 Not all items are relevant for all fields of research or study types.
 
