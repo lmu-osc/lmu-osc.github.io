@@ -9,21 +9,17 @@
     <% items.forEach((item, index) => { %>
     <div class="carousel-item <%= index === 0 ? 'active' : '' %>">
       <div class="row d-flex justify-content-center align-items-center">
-        <div class="col-lg-11">
-          <div class="testimonial-inner">
-            <blockquote>
-              <p><%= item.quote %></p>
-              <footer><strong>— <%= item.name %></strong></footer>
-            </blockquote>
+        <div class="col-lg-10">
+          <div class="testimonial-inner ">
+              <i class="bi bi-quote fs-1 quote-icon text-start"></i>
+              <p class="fst-italic lh-lg text-center"><%= item.quote %></p>
+              <footer class="text-center"><strong>— <%= item.name %></strong></footer>
           </div>
         </div>
       </div>
     </div>
     <% }); %>
   </div>
-  <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next" aria-label="Next testimonial">
-    <i class="bi bi-chevron-right text-success" aria-hidden="true"></i>
-  </button>
 </div>
 
 <script>
