@@ -122,6 +122,11 @@ Your protocol should specify materials with identifying details (e.g. lot number
 <a href="https://youtu.be/aKiXFzj15dg?si=ilB8aOsXArphMpfm" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [Write reusable protocols](https://youtu.be/aKiXFzj15dg?si=ilB8aOsXArphMpfm): Understand the level of details needed for your protocols.
+:::
+
 :::
 
 :::
@@ -149,6 +154,11 @@ Your protocol should specify materials with identifying details (e.g. lot number
 <a href="https://elab.ub.lmu.de/login.php" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [eLabFTW](https://elab.ub.lmu.de/login.php): Electronic Lab Notebook hosted by LMU Munich.
+:::
+
 :::
 
 <!--  card -->
@@ -168,6 +178,11 @@ Your protocol should specify materials with identifying details (e.g. lot number
 <a href="https://chemlab.cup.uni-muenchen.de/home" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [Chemotion](https://chemlab.cup.uni-muenchen.de/home): ELN hosted by the Faculty for Chemistry and Pharmacy.
+:::
+
 :::
 
 <!-- card -->
@@ -182,6 +197,11 @@ Your protocol should specify materials with identifying details (e.g. lot number
 <a href="https://www.protocols.io/" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [Protocols.io](https://www.protocols.io/): Share, discover, cite, and improve research protocols.
+:::
+
 :::
 
 :::
@@ -256,6 +276,11 @@ When data comes from instruments, sensors, or APIs (Application Programming Inte
 <a href="https://lmu-osc.github.io/introduction-to-R/" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [Introduction to R](https://lmu-osc.github.io/introduction-to-R/): Programming fundamentals for research data processing (3h)
+:::
+
 :::
 
 <!--  card -->
@@ -278,6 +303,11 @@ When data comes from instruments, sensors, or APIs (Application Programming Inte
 <a href="https://lmu-osc.github.io/Introduction-RStudio-Git-GitHub/" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [Introduction to Git](https://lmu-osc.github.io/Introduction-RStudio-Git-GitHub/): Learn Git basics integrated with RStudio (2h).
+:::
+
 :::
 
 :::
@@ -326,6 +356,11 @@ Field and sometimes lab researchers have to work with analogue notebooks first, 
 <a href="https://www.postgresql.org/" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [PostgreSQL](https://www.postgresql.org/): Open source relational database software
+:::
+
 :::
 
 :::
@@ -383,6 +418,11 @@ Data collection, in this context, consists in developing a judicious reproducibl
 <a href="" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* Systematic review: Slides and additional resources of workshop delivered at OSSS23.
+:::
+
 :::
 
 :::
@@ -408,6 +448,11 @@ Data collection, in this context, consists in developing a judicious reproducibl
 <a href="https://www.prisma-statement.org/" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [PRISMA](https://www.prisma-statement.org/): Preferred Reporting Items for Systematic review and Meta-Analysis Protocols
+:::
+
 :::
 
 <!-- card -->
@@ -426,6 +471,11 @@ Data collection, in this context, consists in developing a judicious reproducibl
 <a href="https://camarades.de/" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [CAMARADES](https://camarades.de/): Step-by-step guide to Preclinical Systematic Review.
+:::
+
 :::
 
 :::
@@ -532,6 +582,11 @@ Personal laptops as primary storage, external drives as only copy, consumer clou
     <a href="https://syncandshare.lrz.de/login" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [LRZ Sync & Share](https://syncandshare.lrz.de/login): Cloud storage service for LMU Munich
+:::
+
 :::
 
 ::: {.col}
@@ -550,6 +605,11 @@ Personal laptops as primary storage, external drives as only copy, consumer clou
     <a href="https://doku.lrz.de/data-science-storage-10745685.html" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [LRZ DSS](https://doku.lrz.de/data-science-storage-10745685.html): Long-term archival storage for LMU Munich
+:::
+
 :::
 
 ::: {.col}
@@ -563,6 +623,11 @@ Personal laptops as primary storage, external drives as only copy, consumer clou
 <a href="https://osf.io/" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [OSF](https://osf.io/): Research project management platform including storage.
+:::
+
 :::
 
 :::
@@ -618,6 +683,11 @@ A pattern like `YYYY-MM-DD_project_condition_type_v01.ext` places files in chron
     <a href="https://lmu-osc.github.io/FAIR-Data-Management/data-organisation.html" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [Data Organization](https://lmu-osc.github.io/FAIR-Data-Management/data-organisation.html): Folder structure and naming conventions. (30 min)
+:::
+
 :::
 
 :::
@@ -646,6 +716,11 @@ A pattern like `YYYY-MM-DD_project_condition_type_v01.ext` places files in chron
     <a href="https://github.com/lmu-osc/research-project-template" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [Research Project Template](https://github.com/lmu-osc/research-project-template): Project folder separating raw & processed data, code, and outputs.
+:::
+
 :::
 
 ::: {.col}
@@ -659,6 +734,11 @@ A pattern like `YYYY-MM-DD_project_condition_type_v01.ext` places files in chron
     <a href="https://rdmkit.elixir-europe.org/your_domain" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [RDMkit](https://rdmkit.elixir-europe.org/your_domain): Domain-specific data management standards
+:::
+
 :::
 
 :::
@@ -706,6 +786,11 @@ Format issues often surface during quality control. The [2.4. Quality Control](#
     <a href="https://rdmkit.elixir-europe.org/your_domain" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [RDMkit](https://rdmkit.elixir-europe.org/your_domain): Domain-specific file formats and conventions
+:::
+
 :::
 
 :::
@@ -750,6 +835,11 @@ Without documentation, a dataset is just a collection of files. Six months from 
     <a href="https://lmu-osc.github.io/FAIR-Data-Management/documentation.html" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [Principles of Data Documentation](https://lmu-osc.github.io/FAIR-Data-Management/documentation.html): Principles of README files and data dictionaries.
+:::
+
 :::
 
 ::: {.col}
@@ -768,6 +858,11 @@ Without documentation, a dataset is just a collection of files. Six months from 
 <a href="https://lmu-osc.github.io/data-documentation-validation-R/" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [Data Documentation & Validation](https://lmu-osc.github.io/data-documentation-validation-R/): Create READMEs, data dictionaries, and validation checks for your data. (1h)
+:::
+
 :::
 
 :::
@@ -814,6 +909,11 @@ Standards are community agreements on how to organize and describe research data
     <a href="https://www.equator-network.org/reporting-guidelines/" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [EQUATOR Network](https://www.equator-network.org/reporting-guidelines/): Comprehensive database of reporting guidelines.
+:::
+
 :::
 
 ::: {.col}
@@ -827,6 +927,11 @@ Standards are community agreements on how to organize and describe research data
     <a href="https://fairsharing.org/" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [FAIRsharing](https://fairsharing.org/): Search by discipline to find metadata standards, reporting guidelines, and data policies for your field.
+:::
+
 :::
 
 ::: {.col}
@@ -840,6 +945,11 @@ Standards are community agreements on how to organize and describe research data
     <a href="https://rdmkit.elixir-europe.org/your_domain" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [RDMkit](https://rdmkit.elixir-europe.org/your_domain): Domain-specific metadata standards
+:::
+
 :::
 
 
@@ -863,6 +973,11 @@ Standards are community agreements on how to organize and describe research data
 <a href="https://github.com/lmu-osc/research-project-template" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [Research Project Template](https://github.com/lmu-osc/research-project-template): Project folder separating raw & processed data, code, and outputs.
+:::
+
 :::
 
 :::
@@ -931,6 +1046,11 @@ In a version controlled workflow, you back up your local Git repositories on eit
 <a href="https://lmu-osc.github.io/Introduction-RStudio-Git-GitHub/" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [Introduction to Git](https://lmu-osc.github.io/Introduction-RStudio-Git-GitHub/): Learn Git basics integrated with RStudio (2h).
+:::
+
 :::
 
 ::: {.col}
@@ -952,6 +1072,11 @@ In a version controlled workflow, you back up your local Git repositories on eit
 <a href="https://lmu-osc.github.io/Collaborative-RStudio-GitHub/" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [Introduction to GitHub](https://lmu-osc.github.io/Collaborative-RStudio-GitHub/): Connect to GitHub from Git within RStudio (1h).
+:::
+
 :::
 
 
@@ -983,6 +1108,11 @@ In a version controlled workflow, you back up your local Git repositories on eit
 <a href="https://gitlab.lrz.de/" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [LRZ Gitlab](https://gitlab.lrz.de/): Institutional Git hosting for LMU Munich.
+:::
+
 :::
 
 ::: {.col} 
@@ -996,6 +1126,11 @@ In a version controlled workflow, you back up your local Git repositories on eit
     <a href="https://www.datalad.org/" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [DataLad](https://www.datalad.org/): Version control for large datasets
+:::
+
 :::
 
 :::
@@ -1081,6 +1216,11 @@ Participants have the right to understand what they are agreeing to. Your consen
     <a href="https://www.uu.nl/en/research/research-data-management/guides/legal-considerations/how-to-write-an-informed-consent-form" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [How to write an informed consent form](https://www.uu.nl/en/research/research-data-management/guides/legal-considerations/how-to-write-an-informed-consent-form): University of Utrecht RDM guide.
+:::
+
 :::
 
 :::
@@ -1135,11 +1275,16 @@ Anonymization protects privacy and determines what you can share.
   </div>
   <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
 </div>
-<h4 class="card-title">TBA: Data Anonymization</h4> <!-- edit when available -->
-<p class="card-text">Implement data anonymization techniques in R. (X h)</p> <!-- edit when available -->
-<a href="#" class="stretched-link" rel="noopener"></a><!-- Add link when available -->
+<h4 class="card-title">Data Anonymization</h4>
+<p class="card-text">Implement data anonymization techniques in R. (3h)</p>
+<a href="https://lmu-osc.github.io/data-anonymization/" class="stretched-link" rel="noopener"></a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [Data Anonymization](https://lmu-osc.github.io/data-anonymization/): Implement data anonymization techniques in R. (3h)
+:::
+
 :::
 
 ::: {.col}
@@ -1158,6 +1303,11 @@ Anonymization protects privacy and determines what you can share.
 <a href="https://lmu-osc.github.io/synthetic-data-tutorial/" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [Synthetic Data](https://lmu-osc.github.io/synthetic-data-tutorial/): Synthetic data creation in R to balance utility and privacy when sharing data. (3h)
+:::
+
 :::
 
 :::
@@ -1265,6 +1415,11 @@ Validation checks whether your data meets specifications. For example, values ca
 <a href="https://lmu-osc.github.io/data-documentation-validation-R/" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [Data Documentation & Validation](https://lmu-osc.github.io/data-documentation-validation-R/): Create validation rules and automated checks for your research data. (1h)
+:::
+
 :::
 
 :::

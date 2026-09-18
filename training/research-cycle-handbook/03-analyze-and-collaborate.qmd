@@ -109,6 +109,11 @@ This section outlines a recommended workflow for R users.
     <a href="https://lmu-osc.github.io/introduction-to-R/" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [R Tutorial](https://lmu-osc.github.io/introduction-to-R/): Process your data reproducibly in R. (3h)
+:::
+
 :::
 
 <!-- card -->
@@ -128,6 +133,11 @@ This section outlines a recommended workflow for R users.
 <a href="https://lmu-osc.github.io/Introduction-Simulations-in-R/" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [Data simulation in R](https://lmu-osc.github.io/Introduction-Simulations-in-R/): Set seeds and define functions to generate random data (2h)
+:::
+
 :::
 
 
@@ -148,6 +158,11 @@ This section outlines a recommended workflow for R users.
 <a href="https://lmu-osc.github.io/training/reproducible-processes/readable-code.html" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [Readable code lecture](https://lmu-osc.github.io/training/reproducible-processes/readable-code.html): Tips to write clear, understandable, and maintainable code. (1h)
+:::
+
 :::
 
 
@@ -177,6 +192,11 @@ This section outlines a recommended workflow for R users.
 <a href="https://github.com/lmu-osc/research-project-template" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [Research Project Template](https://github.com/lmu-osc/research-project-template): Project folder separating raw & processed data, code, and outputs.
+:::
+
 :::
 
 <!-- card -->
@@ -196,6 +216,11 @@ This section outlines a recommended workflow for R users.
 <a href="https://www.lrz.de/en/technologies/supercomputing" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [LRZ Supercomputing](https://www.lrz.de/en/technologies/supercomputing): Virtual machines and HPC for LMU Munich
+:::
+
 :::
 
 :::
@@ -273,6 +298,11 @@ Importantly, if data are removed from an existing repository, they may still rem
 <a href="https://lmu-osc.github.io/Introduction-RStudio-Git-GitHub/" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [Git Tutorial](https://lmu-osc.github.io/Introduction-RStudio-Git-GitHub/): Use version control system Git from within RStudio. (2h)
+:::
+
 :::
 
 <!-- card -->
@@ -295,6 +325,11 @@ Importantly, if data are removed from an existing repository, they may still rem
 <a href="https://lmu-osc.github.io/Collaborative-RStudio-GitHub/" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [GitHub Tutorial](https://lmu-osc.github.io/Collaborative-RStudio-GitHub/): Collaborative coding with GitHub and RStudio (1h)
+:::
+
 :::
 
 :::
@@ -324,6 +359,11 @@ Importantly, if data are removed from an existing repository, they may still rem
 <a href="https://gitlab.lrz.de/" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [LRZ Gitlab](https://gitlab.lrz.de/): Institutional Git hosting for LMU Munich.
+:::
+
 :::
 
 <!-- card -->
@@ -346,6 +386,11 @@ Importantly, if data are removed from an existing repository, they may still rem
 <a href="https://www.lmu.de/en/about-lmu/structure/central-university-administration/it-services-division/it-service-desk/central-it-services/lmu-chat-matrix/" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [LMU Chat (Matrix)](https://www.lmu.de/en/about-lmu/structure/central-university-administration/it-services-division/it-service-desk/central-it-services/lmu-chat-matrix/): Institutional open source chat service for LMU Munich.
+:::
+
 :::
 
 :::
@@ -402,6 +447,11 @@ Before publishing your project (see [[4. Preserve & share](04-preserve-and-share
 <a href="https://lmu-osc.github.io/introduction-to-renv/" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [Renv Tutorial](https://lmu-osc.github.io/introduction-to-renv/): Manage the version of your R packages (1h)
+:::
+
 :::
 
 <!-- card -->
@@ -424,6 +474,11 @@ Before publishing your project (see [[4. Preserve & share](04-preserve-and-share
 <a href="https://lmu-osc.github.io/code-publishing/" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [Code Publishing Tutorial](https://lmu-osc.github.io/code-publishing/): Publish your reproducible project on Zenodo (2h)
+:::
+
 :::
 
 :::
@@ -445,6 +500,11 @@ Before publishing your project (see [[4. Preserve & share](04-preserve-and-share
 <a href="https://mybinder.org/" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [Binder](https://mybinder.org/): Create online executable environments.
+:::
+
 :::
 
 <!-- card -->
@@ -459,6 +519,11 @@ Before publishing your project (see [[4. Preserve & share](04-preserve-and-share
 <a href="https://www.docker.com/" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [Docker](https://www.docker.com/): Containerization for full reproducibility.
+:::
+
 :::
 
 <!-- card -->
@@ -470,9 +535,14 @@ Before publishing your project (see [[4. Preserve & share](04-preserve-and-share
   </div>
 <h4 class="card-title">repo2docker</h4>
 <p class="card-text">Build and run user environment containers.</p>
-<a href="https://repo2docker.readthedocs.io/en/latest/ " class="stretched-link" target="_blank" rel="noopener"> </a>
+<a href="https://repo2docker.readthedocs.io/en/latest/" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [repo2docker](https://repo2docker.readthedocs.io/en/latest/): Build and run user environment containers.
+:::
+
 :::
 
 :::
@@ -535,6 +605,11 @@ Example README to allow team members to review your code:
     <a href="https://lmu-osc.github.io/training/reproducible-processes/readable-code.html" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [Readable code lecture](https://lmu-osc.github.io/training/reproducible-processes/readable-code.html): Tips to write clear, understandable, and maintainable code.(1h)
+:::
+
 :::
 
 <!-- card  -->
@@ -554,6 +629,11 @@ Example README to allow team members to review your code:
 <a href="https://lmu-osc.github.io/data-documentation-validation-R/" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [Data Documentation & Validation](https://lmu-osc.github.io/data-documentation-validation-R/): Create validation rules and automated checks for your research data. (1h)
+:::
+
 :::
 
 <!-- card -->
@@ -576,6 +656,11 @@ Example README to allow team members to review your code:
 <a href="https://lmu-osc.github.io/code-publishing/" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [Code Publishing Tutorial](https://lmu-osc.github.io/code-publishing/): Publish your reproducible project on Zenodo (2h)
+:::
+
 :::
 
 
@@ -698,6 +783,11 @@ Using the same Quarto environment, you can also:
 <a href="https://lmu-osc.github.io/introduction-to-Quarto/" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [Quarto Tutorial](https://lmu-osc.github.io/introduction-to-Quarto/): Reproducible documents combining code and narrative (2h)
+:::
+
 :::
 
 <!-- card -->
@@ -720,6 +810,11 @@ Using the same Quarto environment, you can also:
 <a href="https://lmu-osc.github.io/introduction-to-zotero/" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [Introduction to Zotero](https://lmu-osc.github.io/introduction-to-zotero/): Use a reference manager that integrates to RStudio. (1h)
+:::
+
 :::
 
 
@@ -743,6 +838,11 @@ Using the same Quarto environment, you can also:
 <a href="https://lmu-osc.github.io/Introduction-RStudio-Git-GitHub/" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [Git Tutorial](https://lmu-osc.github.io/Introduction-RStudio-Git-GitHub/): Use version control system Git from within RStudio. (2h)
+:::
+
 :::
 
 <!-- card -->
@@ -765,6 +865,11 @@ Using the same Quarto environment, you can also:
 <a href="https://lmu-osc.github.io/Collaborative-RStudio-GitHub/" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [GitHub Tutorial](https://lmu-osc.github.io/Collaborative-RStudio-GitHub/): Collaborative coding with GitHub and RStudio (1h)
+:::
+
 :::
 
 <!-- card -->
@@ -780,6 +885,11 @@ Using the same Quarto environment, you can also:
 <a href="https://lmu-osc.github.io/training/reproducible-processes/advanced-git.html" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [Advanced Git Tutorial](https://lmu-osc.github.io/training/reproducible-processes/advanced-git.html): Use Git branches and further collaborative features (2h)
+:::
+
 :::
 
 :::
@@ -809,6 +919,11 @@ Using the same Quarto environment, you can also:
 <a href="https://gitlab.lrz.de/" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [LRZ Gitlab](https://gitlab.lrz.de/): Institutional Git hosting for LMU Munich.
+:::
+
 :::
 
 <!-- card -->
@@ -828,6 +943,11 @@ Using the same Quarto environment, you can also:
 <a href="https://syncandshare.lrz.de/login" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [LRZ Sync & Share](https://syncandshare.lrz.de/login): Cloud storage service for LMU Munich
+:::
+
 :::
 
 
@@ -852,6 +972,11 @@ Using the same Quarto environment, you can also:
 <a href="https://www.lmu.de/en/about-lmu/structure/central-university-administration/it-services-division/it-service-desk/central-it-services/lmu-chat-matrix/" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [LMU Chat (Matrix)](https://www.lmu.de/en/about-lmu/structure/central-university-administration/it-services-division/it-service-desk/central-it-services/lmu-chat-matrix/): Institutional open source chat service for LMU Munich.
+:::
+
 :::
 
 :::
@@ -909,6 +1034,11 @@ Some of these elements will be refined depending on your study type. Widely used
 <a href="https://www.equator-network.org/reporting-guidelines/" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [EQUATOR Network](https://www.equator-network.org/reporting-guidelines/): Comprehensive database of reporting guidelines.
+:::
+
 :::
 
 :::

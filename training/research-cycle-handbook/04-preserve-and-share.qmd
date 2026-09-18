@@ -123,6 +123,11 @@ When deciding whether data should be shared, consider the following:
 <a href="https://lmu-osc.github.io/training/data-management/open-data.html" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [Why share data openly?](https://lmu-osc.github.io/training/data-management/open-data.html): An introduction to the what, why, and how to make data open (30 min)
+:::
+
 :::
 
 ::: {.col}
@@ -141,6 +146,11 @@ When deciding whether data should be shared, consider the following:
 <a href="https://lmu-osc.github.io/training/data-management/maintaining-privacy-with-open-data.html" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [Maintaining Privacy with Open Data](https://lmu-osc.github.io/training/data-management/maintaining-privacy-with-open-data.html): How to make data open without revealing sensitive information (1h)
+:::
+
 :::
 
 
@@ -155,11 +165,16 @@ When deciding whether data should be shared, consider the following:
   </div>
   <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
 </div>
-<h4 class="card-title">TBA: Data Anonymization</h4> <!-- edit when available -->
-<p class="card-text">Implement data anonymization techniques in R. (X h)</p> <!-- edit when available -->
-<a href="#" class="stretched-link" rel="noopener"></a><!-- Add link when available -->
+<h4 class="card-title">Data Anonymization</h4>
+<p class="card-text">Implement data anonymization techniques in R. (3h)</p>
+<a href="https://lmu-osc.github.io/data-anonymization/" class="stretched-link" rel="noopener"></a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [Data Anonymization](https://lmu-osc.github.io/data-anonymization/): Implement data anonymization techniques in R. (3h)
+:::
+
 :::
 
 :::
@@ -180,6 +195,11 @@ When deciding whether data should be shared, consider the following:
 <a href="https://cms-cdn.lmu.de/media/contenthub/amtliche-veroeffentlichungen/gwp-ordnung.pdf" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [LMU Guidelines for Safeguarding Good Scientific Practice](https://cms-cdn.lmu.de/media/contenthub/amtliche-veroeffentlichungen/gwp-ordnung.pdf): Implementation of the German Research Foundation's (DFG) Code of Conduct
+:::
+
 :::
 
 ::: {.col}
@@ -193,6 +213,11 @@ When deciding whether data should be shared, consider the following:
 <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L:2021:206:FULL&from=EN" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [EU Dual-Use Regulation 2021/821](https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L:2021:206:FULL&from=EN): List of regulated research outputs that could lead to military or malicious purposes.
+:::
+
 :::
 
 
@@ -244,6 +269,11 @@ During the course of data collection and analyses, you created a README and data
 <a href="https://lmu-osc.github.io/FAIR-Data-Management/" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [FAIR Data Management](https://lmu-osc.github.io/FAIR-Data-Management/): Manage data following FAIR principles. Covers READMEs, data dictionaries, file formats, and standards. (2h)
+:::
+
 :::
 
 <!-- card  -->
@@ -263,6 +293,11 @@ During the course of data collection and analyses, you created a README and data
 <a href="https://lmu-osc.github.io/data-documentation-validation-R/" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [Data Documentation & Validation](https://lmu-osc.github.io/data-documentation-validation-R/): Create data dictionaries and READMEs for your data. (1h)
+:::
+
 :::
 
 
@@ -277,11 +312,16 @@ During the course of data collection and analyses, you created a README and data
   </div>
   <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
 </div>
-<h4 class="card-title">TBA: Data Anonymization</h4> <!-- edit when available -->
-<p class="card-text">Implement data anonymization techniques in R. (X h)</p> <!-- edit when available -->
-<a href="#" class="stretched-link" rel="noopener"></a><!-- Add link when available -->
+<h4 class="card-title">Data Anonymization</h4>
+<p class="card-text">Implement data anonymization techniques in R. (3h)</p>
+<a href="https://lmu-osc.github.io/data-anonymization/" class="stretched-link" rel="noopener"></a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [Data Anonymization](https://lmu-osc.github.io/data-anonymization/): Implement data anonymization techniques in R. (3h)
+:::
+
 :::
 
 :::
@@ -304,6 +344,11 @@ During the course of data collection and analyses, you created a README and data
 <a href="https://fairsharing.org/" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [FAIRsharing](https://fairsharing.org/): Search by discipline to find metadata standards, reporting guidelines, and data policies for your field.
+:::
+
 :::
 
 ::: {.col}
@@ -317,6 +362,11 @@ During the course of data collection and analyses, you created a README and data
 <a href="https://rdmkit.elixir-europe.org/your_domain" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [RDMkit](https://rdmkit.elixir-europe.org/your_domain): Domain-specific metadata standards
+:::
+
 :::
 
 :::
@@ -363,6 +413,11 @@ Whichever you choose, ensure the repository provides a **DOI** (Digital Object I
 <a href="https://www.re3data.org/" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [re3data](https://www.re3data.org/): Registry of research data repositories.
+:::
+
 :::
 
 
@@ -377,6 +432,11 @@ Whichever you choose, ensure the repository provides a **DOI** (Digital Object I
     <a href="https://osf.io/registries/" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [Open Science Framework](https://osf.io/registries/): General-purpose repository for data, materials, reports.
+:::
+
 :::
 
 
@@ -392,6 +452,11 @@ Whichever you choose, ensure the repository provides a **DOI** (Digital Object I
 <a href="https://zenodo.org" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [Zenodo](https://zenodo.org): General-purpose repository for data, software, reports.
+:::
+
 :::
 
 ::: {.col}
@@ -410,6 +475,11 @@ Whichever you choose, ensure the repository provides a **DOI** (Digital Object I
 <a href="https://data.ub.uni-muenchen.de/" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [Open Data LMU](https://data.ub.uni-muenchen.de/): Institutional data repository.
+:::
+
 :::
 
 :::
@@ -464,6 +534,11 @@ For restricted-access data, a **Data Use Agreement** specifies conditions beyond
 <a href="https://lmu-osc.github.io/code-publishing/choose-license.html" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [Choose a License](https://lmu-osc.github.io/code-publishing/choose-license.html): License decision flowchart for data and code.
+:::
+
 :::
 
 :::
@@ -590,6 +665,11 @@ Importantly, if data are removed from an existing repository, they may still rem
 <a href="https://lmu-osc.github.io/code-publishing/" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [Code Publishing](https://lmu-osc.github.io/code-publishing/): Add all elements of a reproducible project to your repository.
+:::
+
 :::
 
 :::
@@ -640,6 +720,11 @@ You can provide the data required to run the code in several ways:
 <a href="https://lmu-osc.github.io/FAIR-Data-Management/" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [FAIR Data Management](https://lmu-osc.github.io/FAIR-Data-Management/): Manage data following FAIR principles. Covers READMEs, data dictionaries, file formats, and standards. (2h)
+:::
+
 :::
 
 
@@ -659,6 +744,11 @@ You can provide the data required to run the code in several ways:
 <a href="https://lmu-osc.github.io/Introduction-Simulations-in-R/" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [Data simulation in R](https://lmu-osc.github.io/Introduction-Simulations-in-R/): Easy data simulations in R. (2h)
+:::
+
 :::
 
 ::: {.col}
@@ -677,6 +767,11 @@ You can provide the data required to run the code in several ways:
 <a href="https://lmu-osc.github.io/synthetic-data-tutorial/" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [Synthetic Data](https://lmu-osc.github.io/synthetic-data-tutorial/): Synthetic data creation in R to balance utility and privacy when sharing data. (3h)
+:::
+
 :::
 
 :::
@@ -725,6 +820,11 @@ Learn more about open licenses for data and code in our [code publishing tutoria
 <a href="https://lmu-osc.github.io/code-publishing/choose-license.html" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [Choose a License](https://lmu-osc.github.io/code-publishing/choose-license.html): License decision flowchart for data and code.
+:::
+
 :::
 
 ::: {.col}
@@ -738,6 +838,11 @@ Learn more about open licenses for data and code in our [code publishing tutoria
 <a href="https://choosealicense.com/" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [Choose an open source license](https://choosealicense.com/): Tool comparing open software licenses.
+:::
+
 :::
 
 :::
@@ -791,6 +896,11 @@ To publish your code on Zenodo, we recommend to<!-- these instructions contradic
 <a href="https://lmu-osc.github.io/code-publishing/" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [Code Publishing](https://lmu-osc.github.io/code-publishing/): Add all elements of a reproducible project to your repository.
+:::
+
 :::
 
 :::
@@ -813,6 +923,11 @@ To publish your code on Zenodo, we recommend to<!-- these instructions contradic
 
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [Zenodo](https://zenodo.org): General-purpose repository for data, software, reports.
+:::
+
 :::
 :::
 :::
@@ -893,6 +1008,11 @@ See the [Creative Common license chooser](https://creativecommons.org/chooser/) 
 <a href="https://www.protocols.io/" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [Protocols.io](https://www.protocols.io/): Share, discover, cite, and improve research protocols.
+:::
+
 :::
 
 ::: {.col}
@@ -906,6 +1026,11 @@ See the [Creative Common license chooser](https://creativecommons.org/chooser/) 
 <a href="https://osf.io/" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [OSF](https://osf.io/): Project management platform including storage and DOI.
+:::
+
 :::
 
 ::: {.col}
@@ -919,6 +1044,11 @@ See the [Creative Common license chooser](https://creativecommons.org/chooser/) 
 <a href="https://creativecommons.org/chooser/" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [Creative Commons licenses](https://creativecommons.org/chooser/): Tool comparing licenses for diverse creative work.
+:::
+
 :::
 :::
 :::
@@ -1028,6 +1158,11 @@ Depending on the contract negotiated by the University and each publisher (see [
 <a href="https://doaj.org/" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [Directory of Open Access Journals (DOAJ)](https://doaj.org/): Index of trusted open access journals.
+:::
+
 :::
 
 ::: {.col}
@@ -1042,6 +1177,11 @@ Depending on the contract negotiated by the University and each publisher (see [
 <a href="https://openpolicyfinder.jisc.ac.uk/" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [Jisc' Open Policy Finder](https://openpolicyfinder.jisc.ac.uk/): Clear summary of journals' open access policies.
+:::
+
 :::
 
 :::
@@ -1090,6 +1230,11 @@ The current contract conditions for LMU Munich can be accessed on the [Universit
 <a href="https://www.ub.lmu.de/en/open-access-publishing/financing-open-access/" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [LMU University Library](https://www.ub.lmu.de/en/open-access-publishing/financing-open-access/): Publisher contracts and publication fees.
+:::
+
 :::
 
 :::
@@ -1175,6 +1320,11 @@ To get support for [Open Access LMU](https://epub.ub.uni-muenchen.de/), the LMU 
 <a href="https://openpolicyfinder.jisc.ac.uk/" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [Jisc' Open Policy Finder](https://openpolicyfinder.jisc.ac.uk/): Clear summary of journals' open access policies.
+:::
+
 :::
 
 ::: {.col}
@@ -1193,6 +1343,11 @@ To get support for [Open Access LMU](https://epub.ub.uni-muenchen.de/), the LMU 
 <a href="https://epub.ub.uni-muenchen.de/" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [Open Access LMU](https://epub.ub.uni-muenchen.de/): Institutional publication repository.
+:::
+
 :::
 
 ::: {.col}
@@ -1206,6 +1361,11 @@ To get support for [Open Access LMU](https://epub.ub.uni-muenchen.de/), the LMU 
 <a href="https://osf.io/preprints/" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [OSF Preprints](https://osf.io/preprints/): Multidisciplinary preprint service.
+:::
+
 :::
 
 ::: {.col}
@@ -1219,6 +1379,11 @@ To get support for [Open Access LMU](https://epub.ub.uni-muenchen.de/), the LMU 
 <a href="https://www.biorxiv.org/" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [bioRxiv](https://www.biorxiv.org/): Biological sciences preprints.
+:::
+
 :::
 
 ::: {.col}
@@ -1232,6 +1397,11 @@ To get support for [Open Access LMU](https://epub.ub.uni-muenchen.de/), the LMU 
 <a href="https://www.medrxiv.org/" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [medRxiv](https://www.medrxiv.org/): Medical and health sciences preprints.
+:::
+
 :::
 
 ::: {.col}
@@ -1240,11 +1410,16 @@ To get support for [Open Access LMU](https://epub.ub.uni-muenchen.de/), the LMU 
 <div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
 <i class="bi bi-calculator"></i>
 </div>
-<h4 class="card-title">medRxiv</h4>
+<h4 class="card-title">arXiv</h4>
 <p class="card-text">Physics, mathematics, computer science preprints.</p>
 <a href="https://arxiv.org/" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [arXiv](https://arxiv.org/): Physics, mathematics, computer science preprints.
+:::
+
 :::
 
 :::
@@ -1342,6 +1517,11 @@ We recommend to **start discussions on authorship, roles, and responsibilities a
 <a href="https://cms-cdn.lmu.de/media/contenthub/amtliche-veroeffentlichungen/gwp-ordnung.pdf" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [LMU Guidelines for Safeguarding Good Scientific Practice](https://cms-cdn.lmu.de/media/contenthub/amtliche-veroeffentlichungen/gwp-ordnung.pdf): Implementation of the German Research Foundation's (DFG) Code of Conduct
+:::
+
 :::
 
 ::: {.col}
@@ -1356,6 +1536,11 @@ We recommend to **start discussions on authorship, roles, and responsibilities a
 <a href="https://credit.niso.org/" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [CRediT](https://credit.niso.org/): Contributor Role Taxonomy.
+:::
+
 :::
 
 ::: {.col}
@@ -1370,6 +1555,11 @@ We recommend to **start discussions on authorship, roles, and responsibilities a
 <a href="https://orcid.org/" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [ORCID](https://orcid.org/): Free, unique, persistent identifier for researchers.
+:::
+
 :::
 
 :::
@@ -1419,6 +1609,11 @@ The LMU Open Science Center is one of the many child organizations of LMU Munich
 <a href="https://ror.org/" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [Research Organization Registry (ROR)](https://ror.org/): Persistent identifiers for research and funding organizations
+:::
+
 :::
 
 :::
