@@ -73,7 +73,7 @@ A research output (e.g. data, code) without a license or statement granting your
 
 * **Review existing literature** to come up with a well-founded research question. We recommend to use open source discipline-agnostic registries like [OpenAlex](https://openalex.org/) which contains published articles, thesis, and preprints (scholarly work that are not (yet) peer-reviewed) of all disciplines, or discipline-specific open source registries such as [Europe PubMed Central](https://europepmc.org/) for life sciences preprints and published articles.
 
-* **Use a reference manager** to keep track of your bibliography. [Zotero](https://www.zotero.org/) is an open source software formatting your bibliography in any desired format and that can be integrated within e.g. Microsoft Word, Google Doc, or RStudio for writing reproducible manuscripts (see [3. Analyze & Collaborate](03-analyze-and-collaborate.qmd){.mark}).
+* **Use a reference manager** to keep track of your bibliography. [Zotero](https://www.zotero.org/) is an open source software formatting your bibliography in any desired format and that can be integrated within e.g. Microsoft Word, Google Doc, or RStudio for writing reproducible manuscripts [see ([3. Analyze & Collaborate](03-analyze-and-collaborate.qmd){.mark})]{.content-visible when-format="html"}[see @sec-analyze-and-collaborate-chapter]{.content-hidden when-format="html"}.
 
 
 <!-- main container div -->
@@ -368,7 +368,7 @@ These platforms either give you access to existing data or provide [**metadata**
 </div>
 <div id="collapse-code" class="collapse" data-bs-parent="#explore-reuse-collapse">
 
-**Find code available for reuse** archived on [Zenodo](https://zenodo.org/), [Software Heritage](https://www.softwareheritage.org) or actively developed on [GitHub](https://github.com/) and other code repositories. Start learning Git version control now or learn to take advantage of more collaborative features on the GitHub platform in more details in [3. Analyze & Collaborate](03-analyze-and-collaborate.qmd){.mark}. 
+**Find code available for reuse** archived on [Zenodo](https://zenodo.org/), [Software Heritage](https://www.softwareheritage.org) or actively developed on [GitHub](https://github.com/) and other code repositories. Start learning Git version control now or learn to take advantage of more collaborative features on the GitHub platform in more details in [[3. Analyze & Collaborate](03-analyze-and-collaborate.qmd){.mark}]{.content-visible when-format="html"}[ @sec-analyze-and-collaborate-chapter]{.content-hidden when-format="html"}. 
  
 
 :::{.callout-important}
@@ -637,8 +637,8 @@ Data collection and analyses involving human participants or animal subjects typ
 
 - **Data storage and retention** – outlining how data will be securely stored, backed up, and retained over time. This information can be extracted from a more detailed Research Data Management plan (see [1.3. Research Data Management Plans](#sec-research-data-management){.mark}).
 - **Risks if the data were leaked** – identifying potential consequences for participants or the research project if confidentiality is breached.
-- **Data anonymization** – describing procedures to remove or obscure personally identifiable information to protect participant privacy (see [2.3.2. Anonymization](02-collect-and-manage.qmd#sec-ethics-and-privacy){.mark} for options, from simple techniques of anonymization to the creation of synthetic data).
-- **Informed consent forms language** – ensuring that participants clearly understand the purpose, procedures, and any potential risks of the study. Conditions for sharing their data should be clearly explained here (see [2.3.1. Informed Consent](02-collect-and-manage.qmd#sec-ethics-and-privacy){.mark}). 
+- **Data anonymization** – describing procedures to remove or obscure personally identifiable information to protect participant privacy (see [[2.3.2. Anonymization](02-collect-and-manage.qmd#sec-ethics-and-privacy){.mark}]{.content-visible when-format="html"}[ @sec-ethics-and-privacy]{.content-hidden when-format="html"} for options, from simple techniques of anonymization to the creation of synthetic data).
+- **Informed consent forms language** – ensuring that participants clearly understand the purpose, procedures, and any potential risks of the study. Conditions for sharing their data should be clearly explained here (see [[2.3.1. Informed Consent](02-collect-and-manage.qmd#sec-ethics-and-privacy){.mark}]{.content-visible when-format="html"}[ @sec-ethics-and-privacy]{.content-hidden when-format="html"}). 
 - **Power analysis** to justify sample size – providing a statistical rationale for the number of participants, which supports the validity and ethical justification of the study. This, and more detailed information on the statistical plan, can be extracted from your pre-analysis plan (see [1.4.1. Pre-analysis planning](#sec-study-design-analysis-plan){.mark} and [1.4.3. Power analyses](#sec-study-design-analysis-plan){.mark}). 
 
 For data protection guidance, contact the [LMU Data Protection Officer](https://www.lmu.de/en/about-lmu/structure/organizational-structure/officers-representatives-and-contact-persons/data-protection-officer.html) or the [Research Data Management team of the University Library ](https://www.en.ub.uni-muenchen.de/writing/research_data/research-data-management/index.html).
@@ -754,18 +754,18 @@ A **Data Management Plan (DMP)** documents how you will handle research data thr
 
 ::: {.ms-1} 
 - **Decide _before_ data collection whether you will eventually share your data publicly (and where)**, in order to (i) get ethics approval on the right plan, (ii) design consent forms for participants, (iii) collect appropriate metadata for the target repository, etc.
-- **Start with what you know, and refine the details as your project develops.** Your DMP is a living document that you will refine to match the reality of your project while ensuring data protection and streamline collaborations (see [2.2. Data Management](02-collect-and-manage.qmd#sec-data-management){.mark}, [3.1. Data Processing & Analysis](03-analyze-and-collaborate.qmd#sec-data-processing-analysis){.mark}, and [4.1. FAIR Data Sharing](04-preserve-and-share.qmd#sec-fair-data-sharing){.mark}).
+- **Start with what you know, and refine the details as your project develops.** Your DMP is a living document that you will refine to match the reality of your project while ensuring data protection and streamline collaborations (see [[2.2. Data Management](02-collect-and-manage.qmd#sec-data-management){.mark}]{.content-visible when-format="html"}[ @sec-data-management]{.content-hidden when-format="html"}, [[3.1. Data Processing & Analysis](03-analyze-and-collaborate.qmd#sec-data-processing-analysis){.mark}]{.content-visible when-format="html"}[ @sec-data-processing-analysis]{.content-hidden when-format="html"}, and [[4.1. FAIR Data Sharing](04-preserve-and-share.qmd#sec-fair-data-sharing){.mark}]{.content-visible when-format="html"}[ @sec-fair-data-sharing]{.content-hidden when-format="html"}).
 :::
 
 ### <i class="bi bi-list-check"></i> Your DMP will ask: {#sec-your-dmp-will-ask .fs-5 .unnumbered}
 
-- **What data** will you collect or generate (types, formats, volume, sources)? See [2.1. Data Collection](02-collect-and-manage.qmd#sec-data-collection){.mark}.
-- **How will you describe it** (metadata standards, documentation practices)? See [2.2. Data Management](02-collect-and-manage.qmd#sec-data-management){.mark} for these and the next questions.
+- **What data** will you collect or generate (types, formats, volume, sources)? See [[2.1. Data Collection](02-collect-and-manage.qmd#sec-data-collection){.mark}]{.content-visible when-format="html"}[ @sec-data-collection]{.content-hidden when-format="html"}.
+- **How will you describe it** (metadata standards, documentation practices)? See [[2.2. Data Management](02-collect-and-manage.qmd#sec-data-management){.mark}]{.content-visible when-format="html"}[ @sec-data-management]{.content-hidden when-format="html"} for these and the next questions.
 - **How will you organize files** (naming conventions, folder structure, versioning)?
 - **Where will you store it** (locations, backups, access controls)?
 - **How will you ensure quality** (validation checks, error-handling)?
-- **How will you share outputs** (repositories, licenses, embargo periods)? See our lecture "[Why share data openly?](https://lmu-osc.github.io/training/data-management/open-data.html)" and [4.1. FAIR Data Sharing](04-preserve-and-share.qmd#sec-fair-data-sharing){.mark}
-- **What constraints apply** (consent, anonymization, GDPR, data use agreements)? See our lecture "[Maintaining privacy with open data](https://lmu-osc.github.io/training/data-management/maintaining-privacy-with-open-data.html)", [1.2.3. Ethics](#sec-legal-requirements){.mark} and [2.3. Ethics & Privacy](02-collect-and-manage.qmd#sec-ethics-and-privacy){.mark}.
+- **How will you share outputs** (repositories, licenses, embargo periods)? See our lecture "[Why share data openly?](https://lmu-osc.github.io/training/data-management/open-data.html)" and [[4.1. FAIR Data Sharing](04-preserve-and-share.qmd#sec-fair-data-sharing){.mark}]{.content-visible when-format="html"}[ @sec-fair-data-sharing]{.content-hidden when-format="html"}
+- **What constraints apply** (consent, anonymization, GDPR, data use agreements)? See our lecture "[Maintaining privacy with open data](https://lmu-osc.github.io/training/data-management/maintaining-privacy-with-open-data.html)", [1.2.3. Ethics](#sec-legal-requirements){.mark} and [[2.3. Ethics & Privacy](02-collect-and-manage.qmd#sec-ethics-and-privacy){.mark}]{.content-visible when-format="html"}[ @sec-ethics-and-privacy]{.content-hidden when-format="html"}.
 
 
 The specific questions vary by discipline, data type, and funder requirements. DMP tools like [RDMO](https://rdmo.ub.lmu.de/) guide you through the relevant questions with funder-specific templates. 

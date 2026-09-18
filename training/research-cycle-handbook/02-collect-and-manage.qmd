@@ -466,11 +466,11 @@ Data collection, in this context, consists in developing a judicious reproducibl
 
 ::: {.content}
 
-In [1. Plan & Design](01-plan-and-design.qmd){.mark} you created a Research Data Management Plan. It's now time to put this plan into practice, refining it as you learn what actually works for your project.
+In [[1. Plan & Design](01-plan-and-design.qmd){.mark}]{.content-visible when-format="html"}[ @sec-plan-and-design-chapter]{.content-hidden when-format="html"} you created a Research Data Management Plan. It's now time to put this plan into practice, refining it as you learn what actually works for your project.
 
 ::: {.ms-1} 
 
-- **Keep your raw data as read-only files.** The unmodified output of your instruments, surveys, or observations should never be modified directly. You should provide enough documentation to recreate your processed datasets and results from your raw data (see [3.1. Data Processing & Analyses](03-analyze-and-collaborate.qmd#sec-data-processing-analysis){.mark}).
+- **Keep your raw data as read-only files.** The unmodified output of your instruments, surveys, or observations should never be modified directly. You should provide enough documentation to recreate your processed datasets and results from your raw data (see [[3.1. Data Processing & Analyses](03-analyze-and-collaborate.qmd#sec-data-processing-analysis){.mark}]{.content-visible when-format="html"}[ @sec-data-processing-analysis]{.content-hidden when-format="html"}).
 
 - **Organize, document, and store your research files so they remain usable, and become FAIR upon sharing.** Beyond raw data, you will generate processed data, code, documentation, and metadata. How you organize, describe, and store these determines whether your work remains usable and reproducible. The [FAIR principles](https://www.go-fair.org/fair-principles/) guide these decisions: making outputs Findable, Accessible, Interoperable, and Reusable.
 
@@ -495,7 +495,7 @@ What follows are general practices. Your domain has specific conventions for fil
 </div>
 <div id="collapse-storage" class="collapse show" data-bs-parent="#data-management-collapse">
 
-This section covers storage for data you are actively collecting. Long-term archiving for sharing is covered in [4. Preserve & Share](04-preserve-and-share.qmd){.mark}.
+This section covers storage for data you are actively collecting. Long-term archiving for sharing is covered in [[4. Preserve & Share](04-preserve-and-share.qmd){.mark}]{.content-visible when-format="html"}[ @sec-preserve-and-share-chapter]{.content-hidden when-format="html"}.
 
 - **Use institutional storage.** LMU Munich provides storage such as [LRZ Sync and Share](https://syncandshare.lrz.de/login) or [LRZ DSS](https://doku.lrz.de/data-science-storage-10745685.html) with automated backups, access controls, and GDPR compliance. Additional options vary by department. Contact the [Research Data Management team of the University Library ](https://www.en.ub.uni-muenchen.de/writing/research_data/research-data-management/index.html) to find what is available to you. When choosing, consider how much data you will generate, who needs access, and whether your data includes personal information requiring stricter controls.
 - **Follow the 3-2-1 backup rule.** Keep three copies on two media types with one off-site. Designate one location as the master copy, the authoritative version everything else syncs from. Working with multiple "equal" copies creates version conflicts. Remember that syncing is not backup: if you delete a file from a synced folder, the deletion propagates everywhere. True backups preserve previous versions independently.
@@ -791,7 +791,7 @@ Standards are community agreements on how to organize and describe research data
 
 - **Reporting guidelines** specify what methodological details to document for different study types. The [EQUATOR Network](https://www.equator-network.org/) maintains a searchable database of guidelines for clinical trials, observational studies, animal research, and many other study types. Following these ensures you capture everything others need to understand or replicate your work.
 
-- **Metadata standards** define what descriptive information to record and how to structure it. Scientific metadata describes how your data was produced: equipment specifications, acquisition parameters, protocols followed. This is distinct from discovery metadata (titles, keywords, descriptions) which you will prepare when sharing in [4. Preserve & Share](04-preserve-and-share.qmd){.mark}. Your field has conventions for which parameters matter. [FAIRsharing](https://fairsharing.org/) catalogs metadata standards by discipline.<!-- include ref to discipline specific section when available -->
+- **Metadata standards** define what descriptive information to record and how to structure it. Scientific metadata describes how your data was produced: equipment specifications, acquisition parameters, protocols followed. This is distinct from discovery metadata (titles, keywords, descriptions) which you will prepare when sharing in [[4. Preserve & Share](04-preserve-and-share.qmd){.mark}]{.content-visible when-format="html"}[ @sec-preserve-and-share-chapter]{.content-hidden when-format="html"}. Your field has conventions for which parameters matter. [FAIRsharing](https://fairsharing.org/) catalogs metadata standards by discipline.<!-- include ref to discipline specific section when available -->
 
 
 **Think of your data as a first-class research output.** Comprehensive metadata transforms a project artifact into a reusable resource. Someone reanalyzing your data years later needs to understand exactly how it was produced.
@@ -896,7 +896,7 @@ Version control system like Git tracks changes to files over time. You can see w
 
 - **LRZ GitLab** is a cloud-based hosting platform that provides essentially the same features as GitHub but is open source and is installed on the LRZ servers for LMU Munich and can therefore be considered secure when the repository is private. 
 
-While your LRZ GitLab account is associated with your LMU Munich affiliation, your GitHub account can be associated with your private email, be included in your CV, and be used for public sharing of your data and code (see [3. Analyze & Collaborate](03-analyze-and-collaborate.qmd){.mark} and [4. Preserve & Share](04-preserve-and-share.qmd){.mark}).  
+While your LRZ GitLab account is associated with your LMU Munich affiliation, your GitHub account can be associated with your private email, be included in your CV, and be used for public sharing of your data and code (see [[3. Analyze & Collaborate](03-analyze-and-collaborate.qmd){.mark}]{.content-visible when-format="html"}[ @sec-analyze-and-collaborate-chapter]{.content-hidden when-format="html"} and [[4. Preserve & Share](04-preserve-and-share.qmd){.mark}]{.content-visible when-format="html"}[ @sec-preserve-and-share-chapter]{.content-hidden when-format="html"}).  
 
 
 In a version controlled workflow, you back up your local Git repositories on either GitHub or LRZ GitLab through a secure SSH connection (see [GitHub tutorial](https://lmu-osc.github.io/Collaborative-RStudio-GitHub/)) and share access to your repositories with your collaborators through the cloud-based platform GitHub or LRZ GitLab.
@@ -1037,7 +1037,7 @@ In a version controlled workflow, you back up your local Git repositories on eit
 
 ::: {.content}
 
-Research involving human participants requires ethics approval and data protection compliance. In your ethics proposal (see [1.2.3. Ethics](01-plan-and-design.qmd#sec-legal-requirements){.mark}) you planned for safeguards for the people contributing to your research and you now need to implement them before or while collecting your data.
+Research involving human participants requires ethics approval and data protection compliance. In your ethics proposal (see [[1.2.3. Ethics](01-plan-and-design.qmd#sec-legal-requirements){.mark}]{.content-visible when-format="html"}[ @sec-legal-requirements]{.content-hidden when-format="html"}) you planned for safeguards for the people contributing to your research and you now need to implement them before or while collecting your data.
 
 
 ::: {#ethics-privacy-collapse .collapse-tabs}
@@ -1105,7 +1105,7 @@ Anonymization protects privacy and determines what you can share.
 
 - **Assess indirect identifiers carefully.** A combination of age, location, profession, and a rare condition might identify someone even without their name. Timestamps reveal patterns. Free-text responses often contain identifying details participants did not intend to share. Follow our [data anonymization tutorial](https://lmu-osc.github.io/data-anonymization/) to learn to evaluate and implement anonymization techniques in R.
 
-- **Generate synthetic data when full anonymization or real data sharing is not possible.** Synthetic data is artificially generated data that can serve as a privacy-preserving alternative to sensitive datasets, enabling researchers to reproduce analyses, verify findings, and initiate model development when access to real data is restricted. Sharing synthetic data together with code, rather than sharing no data at all, increases the utility of your research (see [4. Preserve & Share](04-preserve-and-share.qmd){.mark}).
+- **Generate synthetic data when full anonymization or real data sharing is not possible.** Synthetic data is artificially generated data that can serve as a privacy-preserving alternative to sensitive datasets, enabling researchers to reproduce analyses, verify findings, and initiate model development when access to real data is restricted. Sharing synthetic data together with code, rather than sharing no data at all, increases the utility of your research (see [[4. Preserve & Share](04-preserve-and-share.qmd){.mark}]{.content-visible when-format="html"}[ @sec-preserve-and-share-chapter]{.content-hidden when-format="html"}).
 
 :::{.callout-note}
 # Distinction between pseudonymization and anonymization
@@ -1224,7 +1224,7 @@ For data protection guidance, contact the [LMU Data Protection Officer](https://
 
 Quality control catches problems before they propagate into your analysis. The practices here ensure your data is trustworthy and your exclusions are well-founded.
 
-**Define criteria before looking at your data.** This prevents unconscious bias in what you keep and exclude, and demonstrates that your decisions are principled rather than convenient (see [1.4. Study Design & Analysis Plan](01-plan-and-design.qmd#sec-study-design-analysis-plan){.mark}).
+**Define criteria before looking at your data.** This prevents unconscious bias in what you keep and exclude, and demonstrates that your decisions are principled rather than convenient (see [[1.4. Study Design & Analysis Plan](01-plan-and-design.qmd#sec-study-design-analysis-plan){.mark}]{.content-visible when-format="html"}[ @sec-study-design-analysis-plan]{.content-hidden when-format="html"}).
 
 ::: {#quality-control-collapse .collapse-tabs}
 
@@ -1301,7 +1301,7 @@ Data cleaning handles errors, inconsistencies, and missing values. The cardinal 
 </div>
 <div id="collapse-exclusions" class="collapse" data-bs-parent="#quality-control-collapse">
 
-Exclusion criteria specify which data points will be removed from analysis and why. Define these before you see your results (see [1.4. Study Design & Analysis Plan](01-plan-and-design.qmd#sec-study-design-analysis-plan){.mark}).
+Exclusion criteria specify which data points will be removed from analysis and why. Define these before you see your results (see [[1.4. Study Design & Analysis Plan](01-plan-and-design.qmd#sec-study-design-analysis-plan){.mark}]{.content-visible when-format="html"}[ @sec-study-design-analysis-plan]{.content-hidden when-format="html"}).
 
 
 - **Review common exclusion criteria.** Technical failures (equipment malfunction, incomplete recording), protocol violations (wrong procedure followed, participant did not comply), quality thresholds (too much missing data, failed attention checks), and participant criteria (did not meet stated inclusion criteria).
