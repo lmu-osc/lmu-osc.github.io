@@ -7,17 +7,27 @@
   </div>
   <div class="carousel-inner">
     <% items.forEach((item, index) => { %>
-    <div class="carousel-item <%= index === 0 ? 'active' : '' %>">
-      <div class="row d-flex justify-content-center align-items-center">
-        <div class="col-lg-10">
-          <div class="testimonial-inner ">
-              <i class="bi bi-quote fs-1 quote-icon text-start"></i>
-              <p class="fst-italic lh-lg text-center"><%= item.quote %></p>
-              <footer class="text-center"><strong>— <%= item.name %></strong></footer>
+      <div class="carousel-item <%= index === 0 ? 'active' : '' %>">
+        <div class="row d-flex justify-content-center align-items-center">
+          <div class="col-12 col-lg-8">
+            <div class="testimonial-inner">
+              <p class="h-lg fs-5 testimonial-quote">
+                <%= item.quote %>
+              </p>
+              <footer class="fs-6 testimonial-author">
+                <strong>
+                - <%= item.name %>
+                </strong>
+              </footer>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 d-none d-md-block ">
+            <div class="testimonial-decoration" aria-hidden="true">
+              <i class="bi bi-quote testimonial-quote-large text-lmu-acc-blue"></i>
+            </div>
           </div>
         </div>
       </div>
-    </div>
     <% }); %>
   </div>
 </div>

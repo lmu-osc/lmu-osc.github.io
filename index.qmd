@@ -30,7 +30,7 @@ include-in-header:
         <script src="assets/javascript/equalize_cards.js" defer></script>
 ---
 
-::::::{.column-screen .py-5}
+::::::{.column-screen .bg-body-tertiary .py-5}
 :::::{.column-page}
 
 :::: {.row .hero-row}
@@ -42,11 +42,12 @@ include-in-header:
 
 ::: {.col-md-6 .hero-desc .px-0 .px-sm-3}
 
-[LMU Open Science Center]{.text-lmu-green .display-3 .fw-bold}
+[LMU Open Science Center]{.text-lmu-green .display-5 .fw-bold}
 
 [The researcher-led LMU Open Science Center (OSC) advances research excellence at LMU Munich by promoting open, responsible, and reproducible practices.]{.fs-5 .lh-lg .hero-subtitle}
 
 [Learn more about OSC](about/index.qmd){.btn .btn-primary .mt-2 .fw-bold .learn-more-button}
+
 :::
 ::::
 
@@ -56,7 +57,7 @@ include-in-header:
 
 <!--metrics-->
 
-:::::::{.column-screen .bg-body-tertiary .py-5}
+:::::::{.column-screen .py-5}
 
 ::::::{.column-page}
 
@@ -66,7 +67,7 @@ include-in-header:
 ::: {.metric-value .text-lmu-acc-blue .fw-bold .display-6 data-target="3000+"}
 0
 :::
-::: {.metric-label  .fs-5}
+::: {.metric-label  .fs-6}
 Researchers trained
 :::
 ::::
@@ -75,7 +76,7 @@ Researchers trained
 ::: {.metric-value .text-lmu-acc-blue .fw-bold .display-6 data-target="150+"}
 0
 :::
-::: {.metric-label .fs-5}
+::: {.metric-label .fs-6}
 Professors & Students
 :::
 ::::
@@ -84,7 +85,7 @@ Professors & Students
 ::: {.metric-value .text-lmu-acc-blue .fw-bold .display-6 data-target="460+"}
 0
 :::
-::: {.metric-label .fs-5}
+::: {.metric-label .fs-6}
 Articles on Open Science
 :::
 ::::
@@ -101,7 +102,7 @@ Articles on Open Science
 
 :::{.column-page .text-center}
 
-[What We Offer]{.section-heading .text-white .display-5 .fw-semibold}
+[What We Offer]{.section-heading .text-white .fw-semibold}
 
 [Whether you are a student, early-career researcher, or professor — there's a place for you at the Open Science Center.]{.lh-lg .text-white .fs-5}
 
@@ -109,10 +110,10 @@ Articles on Open Science
 
 ::: {.col .px-0 .px-sm-3}
 ```{=html}
-<div class="card explore-card h-100 border-0 rounded-3 shadow-lg">
+<div class="card explore-card h-100 border-0 rounded-3 shadow">
   <div class="card-body d-flex flex-column p-4">
     <div class="d-flex align-items-center justify-content-between mb-2">
-      <h5 class="mb-0 card-title text-start text-lmu-dark fw-semibold">Community</h5>
+      <h5 class="mb-0 text-start card-title fw-semibold lh-sm fs-5">Community</h5>
       <div class="bg-light rounded-3 d-inline-flex align-items-center justify-content-center" style="width:50px;height:50px;color:#0F1987;">
         <i class="bi bi-people fs-5"></i>
       </div>
@@ -126,10 +127,10 @@ Articles on Open Science
 
 ::: {.col .px-0 .px-sm-3}
 ```{=html}
-<div class="card explore-card h-100 border-0 rounded-3 shadow-lg">
+<div class="card explore-card h-100 border-0 rounded-3 shadow">
   <div class="card-body d-flex flex-column p-4">
     <div class="d-flex align-items-center justify-content-between mb-2">
-      <h5 class="mb-0 card-title text-start fw-semibold text-lmu-dark">Workshops & Self-Learning</h5>
+      <h5 class="mb-0 text-start card-title fw-semibold lh-sm fs-5">Workshops & Self-Learning</h5>
       <div class="bg-light rounded-3 d-inline-flex align-items-center justify-content-center" style="width:50px;height:50px;color:#0F1987;">
         <i class="bi bi-journal-bookmark fs-5"></i>
       </div>
@@ -143,10 +144,10 @@ Articles on Open Science
 
 ::: {.col .px-0 .px-sm-3}
 ```{=html}
-<div class="card explore-card h-100 border-0 rounded-3 shadow-lg">
+<div class="card explore-card h-100 border-0 rounded-3 shadow">
   <div class="card-body d-flex flex-column p-4">
     <div class="d-flex align-items-center justify-content-between mb-2">
-      <h5 class="mb-0 card-title text-start fw-semibold text-lmu-dark">Partners & Networks</h5>
+      <h5 class="mb-0 text-start card-title fs-5 fw-semibold lh-sm ">Partners & Networks</h5>
       <div class="bg-light rounded-3 d-inline-flex align-items-center justify-content-center" style="width:50px;height:50px;color:#0F1987;">
         <i class="bi bi-globe2 fs-5"></i>
       </div>
@@ -191,9 +192,9 @@ Articles on Open Science
 
 :::{.column-page .text-center}
 
-[Stay in the Loop]{.section-heading .text-lmu-green .fw-semibold .display-5}
+[News & Events]{.section-heading .text-lmu-green .fw-semibold}
 
-[Keep up to date with our latest news releases, and upcoming events.]{.lh-lg .fs-5}
+[Keep up to date with our latest news releases, and upcoming events.]{.lh-lg .fs-5 .text-dark}
 
 ::: {.row .events-news-row .text-center .justify-content-center .g-4 .mt-3}
 
@@ -224,9 +225,10 @@ Articles on Open Science
 ::: {.row}
 [Stay updated with the OSC]{.text-white .border-0 .fw-semibold .display-6}
 
-[Sign up to our mailing list for the latest workshops, events, and resources.]{.text-white .lh-lg .fs-5 }
+[Sign up to our mailing list for the latest workshops, events, and resources.]{.text-white .lh-lg .fs-5}
 
-[Subscribe](https://lists.lrz.de/mailman/listinfo/lmu-osc){.btn .btn-primary .newsletter-button .mt-2 .fw-semibold .bg-white .border-0}
+[Subscribe](https://lists.lrz.de/mailman/listinfo/lmu-osc){.btn .btn-primary .newsletter-button .bg-white .fw-semibold .border-0}
+
 :::
 
 :::
