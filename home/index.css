@@ -162,3 +162,9 @@ main#quarto-document-content {
   display: block;
   transform: translateY(-10px);
 }
+
+
+/*Remove padding above the banner title block*/
+main.content.quarto-banner-title-block.page-columns.page-full {
+    padding-top: 0 !important;
+}
