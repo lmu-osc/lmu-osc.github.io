@@ -28,19 +28,26 @@ main#quarto-document-content {
     }
 
 .text-lmu-green {
-    color: var(--osc-accent) !important;
+    color: var(--osc-accent);
     }
 
 .text-lmu-dark {
-    color: var(--lmu-black) !important;
+    color: var(--lmu-black);
     }
 
 .text-lmu-acc-blue {
-    color: var(--osc-accent-blue) !important;
+    color: var(--osc-accent-blue);
     }
 
-.testimonial-carousel .carousel-indicators {
+/*specify the negative margins for carousel indicators*/
+.mb-n4-custom{
     margin-bottom: -1.8rem;
+}
+
+@media (min-width: 767.98px) {
+  .mb-n2-custom {
+    margin-bottom: -0.6rem;
+  }
 }
 
 .testimonial-carousel .carousel-indicators [data-bs-target] {   
