@@ -1,34 +1,11 @@
 /*
   Open Research Cycle - Stylesheet
-  Uses `orc-` prefix for namespacing.
+  Layout and component styles only; design tokens live in `lmu-osc-custom.scss`
+  (the Quarto theme layer). Uses the `orc-` prefix for namespacing.
 */
 
 /* ========================================
-   1. CSS VARIABLES
-   ======================================== */
-
-:root {
-  --orc-green-dark: #006426;
-  --orc-green-darker: #004d1d;
-  --orc-green-light: #f0f9f6;
-  --orc-gray-100: #f1f5f9;
-  --orc-gray-200: #e2e8f0;
-  --orc-gray-300: var(--osc-divider);
-  --orc-gray-400: #718096;
-  --orc-gray-500: var(--osc-muted);
-  --orc-gray-600: #4a5568;
-  --orc-gray-700: var(--osc-text);
-  --orc-shadow-sm: 0 1px 3px rgba(0,0,0,.08);
-  --orc-shadow-md: 0 4px 12px rgba(0,0,0,.1);
-  --orc-transition: all .2s ease;
-  --orc-radius: 10px;
-  --orc-radius-lg: 12px;
-  --orc-radius-md: 8px;
-  --orc-radius-full: 9999px;
-}
-
-/* ========================================
-   2. BASE & LAYOUT
+   1. BASE & LAYOUT
    ======================================== */
 
 h1 i, h2 i, h3 i{ color: var(--osc-accent); margin-right: .5rem; }
@@ -39,7 +16,7 @@ h1 i, h2 i, h3 i{ color: var(--osc-accent); margin-right: .5rem; }
 
 
 /* ========================================
-   3. CARDS
+   2. CARDS
    ======================================== */
 
 .orc-card-tool{
@@ -61,7 +38,30 @@ h1 i, h2 i, h3 i{ color: var(--osc-accent); margin-right: .5rem; }
 .orc-card-tool h4 { font-size: 1.125rem; font-weight: 600; color: var(--orc-gray-700); line-height: 1.3; }
 .orc-card-tool p { font-size: 1rem; color: var(--orc-gray-400);line-height: 1.5; }
 
-/* accordion button header*/
+/* ========================================
+   3. CARD-SECTION HEADINGS
+   ======================================== */
+
+/*
+  "LEARN MORE" / "TOOLS & RESOURCES" labels inside a card section. Quarto copies
+  a markdown heading's classes onto its wrapping <section>, so the size is applied
+  to the heading element only and never leaks onto the section's content.
+  Values match what the previous `.fs-5` / `.mt-3` utilities rendered.
+*/
+.orc-card-section { margin-top: 1rem; }
+.orc-card-section:first-child { margin-top: 0; }
+
+.orc-card-section > h3,
+.orc-card-section > h4 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+/* ========================================
+   4. ACCORDION HEADERS
+   ======================================== */
+
 .accordion-title h2,
 .accordion-title h3 {
   font-size: 1.2rem;
@@ -75,7 +75,10 @@ h1 i, h2 i, h3 i{ color: var(--osc-accent); margin-right: .5rem; }
 .header-section-number{ margin-top: 0; color:inherit; font: inherit}
 
 
-/* Gradient highlight box - checklist section*/
+/* ========================================
+   5. GRADIENT HIGHLIGHT BOX (CHECKLISTS)
+   ======================================== */
+
 .orc-gradient-box {
   background: linear-gradient(135deg, rgba(0, 136, 58, 0.08) 0%, rgba(0, 100, 38, 0.08) 100%);
   padding: 2rem;
@@ -93,36 +96,7 @@ h1 i, h2 i, h3 i{ color: var(--osc-accent); margin-right: .5rem; }
 }
 
 /* ========================================
-   6. PANEL TABSETS (Quarto)
-   ======================================== */
-
-.panel-tabset .nav-tabs { border-bottom: 2px solid var(--orc-gray-200); }
-
-.panel-tabset .nav-tabs .nav-link {
-  color: var(--orc-gray-600);
-  border: none;
-  border-bottom: 3px solid transparent;
-  padding: .75rem 1.25rem;
-  font-weight: 500;
-  transition: var(--orc-transition);
-  margin-bottom: -2px;
-}
-
-.panel-tabset .nav-tabs .nav-link:hover { color: var(--osc-accent); border-bottom-color: var(--orc-green-light); background: transparent; }
-.panel-tabset .nav-tabs .nav-link.active { color: var(--osc-accent); border-bottom-color: var(--osc-accent); background: transparent; font-weight: 600; }
-.panel-tabset .tab-content { padding: 1.25rem 0; margin-top: .5rem; border: none; }
-.panel-tabset .tab-pane { border: none; }
-
-/* ========================================
-   7. PHASE MENU & BUTTONS
-   ======================================== */
-
-.cycle-container { text-align: center; margin: 2rem auto; max-width: 600px; }
-.cycle-container svg { max-width: 100%; height: auto; }
-.cycle-container em { display: block; margin-top: 1rem; font-size: 1rem; color: var(--orc-gray-500); }
-
-/* ========================================
-   8. SVG DIAGRAM
+   6. SVG DIAGRAM
    ======================================== */
 
 svg a { text-decoration: none; cursor: pointer; }
@@ -141,7 +115,7 @@ svg:has(.phase-group:hover) .phase-group:not(:hover) { opacity: .6; filter: brig
 svg :is(text, tspan) { font-family: inherit !important; font-weight: bold; pointer-events: none; }
 
 /* ========================================
-   9. BOOTSTRAP MODALS
+   7. BOOTSTRAP MODALS
    ======================================== */
 /* Define heading colors for each modal to match corresponding svg quadrants */
 #modalPhase1 { --phase-color: #0066ff; --phase-color-hover: #045bdc; }   
@@ -159,7 +133,7 @@ svg :is(text, tspan) { font-family: inherit !important; font-weight: bold; point
 [id^="modalPhase"] .modal-footer .btn-primary:hover { background: var(--phase-color-hover); border-color: var(--phase-color-hover); }
 
 /* ========================================
-   10. PHASE HERO
+   8. PHASE HERO
    ======================================== */
 
 .orc-hero-cycle[class*="phase-"] [id^="phase-"] { opacity: .20; }

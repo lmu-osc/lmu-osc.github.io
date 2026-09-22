@@ -104,7 +104,7 @@ Your protocol should specify materials with identifying details (e.g. lot number
 ::: {.container .my-4 }
 
 
-#### <i class="bi bi-mortarboard"></i> LEARN MORE {#sec-lab-protocols-lm .fs-5 .unnumbered}
+#### <i class="bi bi-mortarboard"></i> LEARN MORE {#sec-lab-protocols-lm .orc-card-section .unnumbered}
 <!-- row for learn more section  -->
 
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
@@ -132,7 +132,7 @@ Your protocol should specify materials with identifying details (e.g. lot number
 :::
 
 
-#### <i class="bi bi-tools"></i> TOOLS & RESOURCES {#sec-lab-protocols-tr .fs-5 .mt-3 .unnumbered}
+#### <i class="bi bi-tools"></i> TOOLS & RESOURCES {#sec-lab-protocols-tr .orc-card-section .unnumbered}
 <!-- row for Tools & Resources section -->
 
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
@@ -251,7 +251,7 @@ When data comes from instruments, sensors, or APIs (Application Programming Inte
 
 ::: {.container .my-4 }
 
-#### <i class="bi bi-mortarboard"></i> LEARN MORE {#sec-software-based-data-acquisition-lm .fs-5 .unnumbered}
+#### <i class="bi bi-mortarboard"></i> LEARN MORE {#sec-software-based-data-acquisition-lm .orc-card-section .unnumbered}
 <!-- row for learn more section  -->
 
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
@@ -335,7 +335,7 @@ Field and sometimes lab researchers have to work with analogue notebooks first, 
 
 ::: {.container .my-4 }
 
-#### <i class="bi bi-tools"></i> TOOLS & RESOURCES {#sec-field-and-lab-work-tr .fs-5 .mt-3 .unnumbered}
+#### <i class="bi bi-tools"></i> TOOLS & RESOURCES {#sec-field-and-lab-work-tr .orc-card-section .unnumbered}
 <!-- row for Tools & Resources section -->
 
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
@@ -396,7 +396,7 @@ Data collection, in this context, consists in developing a judicious reproducibl
 
 ::: {.container .my-4 }
 
-#### <i class="bi bi-mortarboard"></i> LEARN MORE {#sec-systematic-reviews-lm .fs-5 .unnumbered}
+#### <i class="bi bi-mortarboard"></i> LEARN MORE {#sec-systematic-reviews-lm .orc-card-section .unnumbered}
 <!-- row for learn more section  -->
 
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
@@ -427,7 +427,7 @@ Data collection, in this context, consists in developing a judicious reproducibl
 
 :::
 
-#### <i class="bi bi-tools"></i> TOOLS & RESOURCES {#sec-systematic-reviews-tr .fs-5 .mt-3 .unnumbered}
+#### <i class="bi bi-tools"></i> TOOLS & RESOURCES {#sec-systematic-reviews-tr .orc-card-section .unnumbered}
 <!-- row for Tools & Resources section -->
 
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
@@ -560,7 +560,7 @@ Personal laptops as primary storage, external drives as only copy, consumer clou
 
 ::: {.container .my-4 }
 
-#### <i class="bi bi-mortarboard"></i> LEARN MORE {#sec-storage-lm .fs-5 .unnumbered}
+#### <i class="bi bi-mortarboard"></i> LEARN MORE {#sec-storage-lm .orc-card-section .unnumbered}
 <!-- row for Learn More section -->
 
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
@@ -661,7 +661,7 @@ A pattern like `YYYY-MM-DD_project_condition_type_v01.ext` places files in chron
 
 ::: {.container .my-4 }
 
-#### <i class="bi bi-mortarboard"></i> LEARN MORE {#sec-organization-lm .fs-5 .unnumbered}
+#### <i class="bi bi-mortarboard"></i> LEARN MORE {#sec-organization-lm .orc-card-section .unnumbered}
 
 <!-- row for Learn More section -->
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
@@ -692,7 +692,7 @@ A pattern like `YYYY-MM-DD_project_condition_type_v01.ext` places files in chron
 
 :::
 
-#### <i class="bi bi-tools"></i> TOOLS & RESOURCES {#sec-organization-tr .fs-5 .mt-3 .unnumbered}
+#### <i class="bi bi-tools"></i> TOOLS & RESOURCES {#sec-organization-tr .orc-card-section .unnumbered}
 <!-- row for Tools & Resources section -->
 
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
@@ -771,7 +771,7 @@ Format issues often surface during quality control. The [2.4. Quality Control](#
 
 ::: {.container .my-4 }
 
-#### <i class="bi bi-tools"></i> TOOLS & RESOURCES {#sec-file-formats-tr .fs-5 .mt-3 .unnumbered}
+#### <i class="bi bi-tools"></i> TOOLS & RESOURCES {#sec-file-formats-tr .orc-card-section .unnumbered}
 
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
 
@@ -815,7 +815,7 @@ Without documentation, a dataset is just a collection of files. Six months from 
 
 ::: {.container .my-4}
 
-#### <i class="bi bi-mortarboard"></i> LEARN MORE {#sec-documentation-02-lm .fs-5 .unnumbered}
+#### <i class="bi bi-mortarboard"></i> LEARN MORE {#sec-documentation-02-lm .orc-card-section .unnumbered}
 
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
 
@@ -893,7 +893,7 @@ Standards are community agreements on how to organize and describe research data
 
 ::: {.container .my-4}
 
-#### <i class="bi bi-tools"></i> TOOLS & RESOURCES {#sec-standards-tr .fs-5 .mt-3 .unnumbered}
+#### <i class="bi bi-tools"></i> TOOLS & RESOURCES {#sec-standards-tr .orc-card-section .unnumbered}
 
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
 
@@ -1021,7 +1021,7 @@ In a version controlled workflow, you back up your local Git repositories on eit
 
 ::: {.container .my-4 }
 
-#### <i class="bi bi-mortarboard"></i> LEARN MORE {#sec-version-control-02-lm .fs-5 .unnumbered}
+#### <i class="bi bi-mortarboard"></i> LEARN MORE {#sec-version-control-02-lm .orc-card-section .unnumbered}
 
 <!-- row for Learn More section -->
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
@@ -1083,7 +1083,7 @@ In a version controlled workflow, you back up your local Git repositories on eit
 :::
 
 
-#### <i class="bi bi-tools"></i> TOOLS & RESOURCES {#sec-version-control-02-tr .fs-5 .mt-3 .unnumbered}
+#### <i class="bi bi-tools"></i> TOOLS & RESOURCES {#sec-version-control-02-tr .orc-card-section .unnumbered}
 <!-- row for Tools & Resources section -->
 
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
@@ -1199,7 +1199,7 @@ Participants have the right to understand what they are agreeing to. Your consen
 
 ::: {.container .my-4 }
 
-#### <i class="bi bi-tools"></i> TOOLS & RESOURCES {#sec-informed-consent-tr .fs-5 .mt-3 .unnumbered}
+#### <i class="bi bi-tools"></i> TOOLS & RESOURCES {#sec-informed-consent-tr .orc-card-section .unnumbered}
 <!-- row for Tools & Resources section -->
 
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
@@ -1258,7 +1258,7 @@ Anonymization protects privacy and determines what you can share.
 
 ::: {.container .my-4 }
 
-#### <i class="bi bi-mortarboard"></i> LEARN MORE {#sec-anonymization-lm .fs-5 .unnumbered}
+#### <i class="bi bi-mortarboard"></i> LEARN MORE {#sec-anonymization-lm .orc-card-section .unnumbered}
 
 <!-- row for Learn More section -->
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
@@ -1394,7 +1394,7 @@ Validation checks whether your data meets specifications. For example, values ca
 
 ::: {.container .my-4 }
 
-#### <i class="bi bi-mortarboard"></i> LEARN MORE {#sec-validation-lm .fs-5 .unnumbered}
+#### <i class="bi bi-mortarboard"></i> LEARN MORE {#sec-validation-lm .orc-card-section .unnumbered}
 
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
 
