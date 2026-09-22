@@ -2,7 +2,7 @@
 title: "Research Cycle Handbook"
 page-navigation: false
 toc: false
-css: research-cycle-handbook/handbook-styles.css
+css: /training/research-cycle-handbook/handbook-styles.css
 format:
   html:
     page-layout: article
@@ -58,7 +58,7 @@ format:
           <h5 class="card-title fw-semibold mb-0" style="color:#00883A;">Navigate our open research cycle handbook</h5>
         </div>
         <div class="d-flex justify-content-center">
-          {{< include images/os-cycle.svg >}}
+          {{< include /training/images/os-cycle.svg >}}
         </div>
       </div>
     </div>
