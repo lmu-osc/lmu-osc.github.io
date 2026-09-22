@@ -95,21 +95,6 @@ I am a Master’s student in Epidemiology at the Institute for Medical Informati
 
 [Read More!](../people/people/riya-lamichhane.llms.md)
 
-#### Research Assistant - Training Development , Event Logistics & Public Outreach
-
-[![Profile photo of Elizabeth Waterfield](people/images/waterfield_elizabeth.png)](../people/people/elizabeth-waterfield.llms.md)
-
-- [](https://orcid.org/0009-0006-3725-6730)
-- [](https://github.com/bethwater1)
-
-#### Elizabeth Waterfield
-
-M.Sc. Student \| Psychology & Education
-
-I am an M.Sc. student in Psychology- Learning Sciences at LMU Munich with a background in Psychology and Gender and Development. I value Open and Reproducible Science as a foundation for collaborative research and sustainable knowledge building. My interests focus on education, teaching, and creating environments and resources that empower learners. At the LMU Open Science Center, I support administration, public outreach, and the development of learning materials for the Train-the-Trainer programme.
-
-[Read More!](../people/people/elizabeth-waterfield.llms.md)
-
 ## Former Staff
 
 - [Ben Abrahams (2025 - 2025): Research Assistant - Software Developer](../people/people/ben-abrahams.llms.md)
@@ -122,6 +107,7 @@ I am an M.Sc. student in Psychology- Learning Sciences at LMU Munich with a back
 - [Caterina Sanchez Steinhagen (2025 - 2025): Research Assistant - Training Material Developer](../people/people/caterina-sanchez-steinhagen.llms.md)
 - [Leonhard Schramm (2019 - 2022): Research Assistant - Members Onboarding, Guidelines Creator](../people/people/leonhard-schramm.llms.md)
 - [Tejaswini Sharma (2025 - 2026): Research Assistant - Training Development](../people/people/tejaswini-sharma.llms.md)
+- [Elizabeth Waterfield (2025 - 2026): Research Assistant - Training Development , Event Logistics & Public Outreach](../people/people/elizabeth-waterfield.llms.md)
 - [Martin Wiehr (2023 - 2024): Research Assistant - Members Onboarding, Event Logistics](../people/people/martin-wiehr.llms.md)
 
 &nbsp;

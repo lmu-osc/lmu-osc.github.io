@@ -214,16 +214,6 @@ Researcher
 
 Medicine
 
-[](https://orcid.org/0009-0006-3725-6730)
-
-[![Profile](people/images/waterfield_elizabeth.png)](../people/people/elizabeth-waterfield.llms.md)
-
-[Elizabeth Waterfield](../people/people/elizabeth-waterfield.llms.md)
-
-M.Sc. Student
-
-Psychology & Education
-
 ## Former Fellows
 
 - [Ben Abrahams (2025 - 2025), M.Sc.](../people/people/ben-abrahams.llms.md)
@@ -234,12 +224,13 @@ Psychology & Education
 - [Lutz Heil (2018 - 2019), M.Sc.](../people/people/lutz-heil.llms.md)
 - [Leyla Larsson, M.Sc.](../people/people/leyla-larsson.llms.md)
 - [Gracia Prüm, B.Sc.](../people/people/gracia-pruem.llms.md)
-
 - [Leonhard Schramm, M.Sc.](../people/people/leonhard-schramm.llms.md)
+
 - [Caspar Schumacher, B.Sc.](../people/people/caspar-schumacher.llms.md)
 - [Jan Simson, M.Sc.](../people/people/jan-simson.llms.md)
 - [Po-Chun Tseng, DDS, MSc](../people/people/po-chun-tseng.llms.md)
 - [Yijing Wang, M.Sc.](../people/people/yijing-wang.llms.md)
+- [Elizabeth Waterfield (2025 - 2026), M.Sc. Student](../people/people/elizabeth-waterfield.llms.md)
 - [Viktoria Wiegelmann, B.Sc.](../people/people/viktoria-wiegelmann.llms.md)
 - [Martin Wiehr, B.Sc. Student](../people/people/martin-wiehr.llms.md)
 - [Lisa Wimmer, Dr.](../people/people/lisa-wimmer.llms.md)
