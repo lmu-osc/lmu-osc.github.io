@@ -1,9 +1,13 @@
 ---
-title: "3. Analyze & Collaborate"
+pagetitle: "3. Analyze & Collaborate"
 description: "Create reproducible analyses, document workflows, collaborate effectively, and ensure computational reproducibility"
 phase_order: 3
-number-offset: [0,3,0]
+format:
+  html:
+    number-offset: [2]
 ---
+
+# Analyze & Collaborate {#sec-analyze-and-collaborate-chapter}
 
 ```{=html}
 <div class="orc-phase-hero phase-3 container shadow rounded-4">
@@ -32,25 +36,25 @@ Checkpoints: Repository & Code Peer-Review + Result Presentation
 ```
 <!--first accordion-->
 
-<div class="accordion rh-accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle" id="accordionExample">
+<div class="accordion rh-accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle" id="accordion-data-processing-analysis">
 <div class="accordion-item">
-<div class="accordion-header no-anchor" id="sec-data-processing-analysis">
+<div class="accordion-header no-anchor">
 <div class="accordion-header-content">
 <span class="icon-wrapper rounded-4 bg-success-subtle text-success p-3">
 <i class="bi bi-gear-wide-connected m-0 fs-4"></i> 
 </span>
 <div class="accordion-title">
 
-### Data Processing & Analysis 
+## Data Processing & Analysis {#sec-data-processing-analysis}
 </div>
 </div>
 <button class="accordion-button collapsed accordion-toggle-only" type="button"
   data-bs-toggle="collapse"
-  data-bs-target="#collapseOne"
+  data-bs-target="#collapse-data-processing-analysis"
   aria-expanded="false"
   aria-label="Toggle Data Processing & Analysis section"></button>
 </div>
-<div id="collapseOne" class="accordion-collapse collapse">
+<div id="collapse-data-processing-analysis" class="accordion-collapse collapse">
 <div class="accordion-body p-4">
 
 ::: {.content}
@@ -59,13 +63,18 @@ This is best achieved by choosing automated **script-based workflows** (over man
 Because analysis scripts are run repeatedly, due to iterative development through corrections and refinements, automation is **essential for both reproducibility and efficiency**. 
 This section outlines a recommended workflow for R users.
 
-::: {.panel-tabset}
+::: {#data-processing-analysis-collapse .collapse-tabs}
 
-#### 3.1.1. Programming
+<div class="collapse-heading">
+
+### Programming {#sec-programming .no-anchor .collapse-toggle data-bs-toggle="collapse" data-bs-target="#collapse-programming" aria-expanded="true" aria-controls="collapse-programming"}
+
+</div>
+<div id="collapse-programming" class="collapse show" data-bs-parent="#data-processing-analysis-collapse">
 
 - **Create a self-contained project folder**. Include data, code, documentation, and outputs in a single structured environment, ensuring the project remains understandable, reproducible, and portable across systems and collaborators. If you use the free and open source software RStudio to manage your R project, your project directory (or folder) should contain a .Rproj file (see [R tutorial](https://lmu-osc.github.io/introduction-to-R/)). **Use relative paths** (i.e. `“./subfolder”`, where `.` represents the root of your .Rproj directory) or the library `here`, so the project stays portable to another environment
 - **Use a standard folder structure**. Your code repository should include a standard folder structure that make sense for your type of research, ideally shared across your team members. You can for instance use our [research project template](https://github.com/lmu-osc/research-project-template). 
-- **Stop clicking, start coding**. Automatize all possible steps, including data acquisition (see [2.1. Data Collection](02-collect-and-manage.qmd#sec-data-collection){.mark}), data processing and transformation, data analyses, data visualization, and results reporting (see [3.2. Reporting Results](#sec-reproducible-reporting){.mark})
+- **Stop clicking, start coding**. Automatize all possible steps, including data acquisition (see [[2.1. Data Collection](02-collect-and-manage.qmd#sec-data-collection){.mark}]{.content-visible when-format="html"}[ @sec-data-collection]{.content-hidden when-format="html"}), data processing and transformation, data analyses, data visualization, and results reporting (see [3.2. Reporting Results](#sec-reporting-results){.mark})
 - **Structure, comment, and standardize your scripts.** R scripts themselves should follow current standards to increase their readability (see [Readable Code Lecture](https://lmu-osc.github.io/training/reproducible-processes/readable-code.html)). Use meaningful names for variables, functions, and scripts. Add comments to your code explaining _why_ you made a decision, any known limitations to your code, and citations of methods. **Do not include sensitive information such as credentials or name of excluded patient as comments in your code!**
     - **Define your own functions** rather than copy pasting pieces of code which makes it hard to maintain error-free. Functions are ‘self-contained’ sets of commands that accomplish a specific task. They usually ‘take in’ data or parameter values (these inputs are called ‘function arguments’), process them, and ‘return’ a result. See our [R tutorial](https://lmu-osc.github.io/introduction-to-R/) and [data simulation tutorial](https://lmu-osc.github.io/Introduction-Simulations-in-R/) for examples.
     - **Set seeds for random processes** to enable exact replication. A seed is a number used to initialize a pseudorandom number generator algorithm. It serves as the starting point for a sequence of numbers that appear random but are actually produced by a deterministic, fixed algorithm. See e.g. our [data simulation tutorial](https://lmu-osc.github.io/Introduction-Simulations-in-R/) for examples.
@@ -76,7 +85,7 @@ This section outlines a recommended workflow for R users.
 
 ::: {.container .my-4}
 
-<h4 class="fs-5"><i class="bi bi-mortarboard"></i> LEARN MORE</h4>
+#### <i class="bi bi-mortarboard"></i> LEARN MORE {#sec-programming-lm .orc-card-section .unnumbered}
 
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
 
@@ -100,6 +109,11 @@ This section outlines a recommended workflow for R users.
     <a href="https://lmu-osc.github.io/introduction-to-R/" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [R Tutorial](https://lmu-osc.github.io/introduction-to-R/): Process your data reproducibly in R. (3h)
+:::
+
 :::
 
 <!-- card -->
@@ -119,6 +133,11 @@ This section outlines a recommended workflow for R users.
 <a href="https://lmu-osc.github.io/Introduction-Simulations-in-R/" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [Data simulation in R](https://lmu-osc.github.io/Introduction-Simulations-in-R/): Set seeds and define functions to generate random data (2h)
+:::
+
 :::
 
 
@@ -139,12 +158,17 @@ This section outlines a recommended workflow for R users.
 <a href="https://lmu-osc.github.io/training/reproducible-processes/readable-code.html" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [Readable code lecture](https://lmu-osc.github.io/training/reproducible-processes/readable-code.html): Tips to write clear, understandable, and maintainable code. (1h)
+:::
+
 :::
 
 
 :::
 
-<h4 class="fs-5 mt-3"><i class="bi bi-tools"></i> TOOLS & RESOURCES</h4>
+#### <i class="bi bi-tools"></i> TOOLS & RESOURCES {#sec-programming-tr .orc-card-section .unnumbered}
 
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
 
@@ -168,6 +192,11 @@ This section outlines a recommended workflow for R users.
 <a href="https://github.com/lmu-osc/research-project-template" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [Research Project Template](https://github.com/lmu-osc/research-project-template): Project folder separating raw & processed data, code, and outputs.
+:::
+
 :::
 
 <!-- card -->
@@ -187,14 +216,26 @@ This section outlines a recommended workflow for R users.
 <a href="https://www.lrz.de/en/technologies/supercomputing" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [LRZ Supercomputing](https://www.lrz.de/en/technologies/supercomputing): Virtual machines and HPC for LMU Munich
 :::
 
 :::
 
 :::
 
+:::
 
-#### 3.1.2. Version Control
+
+</div>
+
+<div class="collapse-heading">
+
+### Version Control {#sec-version-control-03 .no-anchor .collapse-toggle .collapsed data-bs-toggle="collapse" data-bs-target="#collapse-version-control-03" aria-expanded="false" aria-controls="collapse-version-control-03"}
+
+</div>
+<div id="collapse-version-control-03" class="collapse" data-bs-parent="#data-processing-analysis-collapse">
 
 Version control tracks changes to files over time. You can see what changed, when, and why. You can revert to previous versions. Collaborators can work without overwriting each other.
 
@@ -205,13 +246,13 @@ In a version controlled workflow, you back up your local Git repositories on the
 - **Maintain efficient communication to coordinate collaborative work.** GitHub or GitLab facilitate collaboration through "issues" (a precise description of something to fix), "discussions" (asynchronous thinking through figuring out how to resolve a problem), and can still very well resolve "conflicts" (i.e. collaborators wanting to merge changes on the exact same line of script). To complement this, LMU Munich offers [LMU chat (Matrix)](https://www.lmu.de/de/die-lmu/struktur/zentrale-universitaetsverwaltung/informations-und-kommunikationstechnik-dezernat-vi/it-servicedesk/zentrale-it-angebote/lmu-chat-matrix/), a secured open source chat service with all LMU members on which you can also invite external collaborators. 
 
 :::{.callout-note} 
-## Difference between Git, GitHub and GitLab 
+# Difference between Git, GitHub and GitLab
 <!-- copied to 2.2.6 manually -->
 - **Git** is a version control system that tracks changes in text files (e.g. CSV, plain text, R, Python). The Git software and your Git repositories should be, respectively, installed and located in your local environment (i.e. on your computer, not on a drive, see [Git tutorial](https://lmu-osc.github.io/Introduction-RStudio-Git-GitHub/)).   
 - **GitHub** is the most popular, free but proprietary and US-based cloud-based platform for software development with Git, providing collaboration features like pull requests and issues (see [GitHub tutorial](https://lmu-osc.github.io/Collaborative-RStudio-GitHub/)). **You should not have any sensitive information on GitHub even in a private repository.**
 - **LRZ GitLab** is a cloud-based hosting platform that works exactly the same as GitHub but is free and open source and is installed on the LRZ servers for LMU Munich and can therefore be considered secure when the repository is private. 
 
-While your LRZ GitLab account is associated with your LMU Munich affiliation, your GitHub account can be associated with your private email, be included in your CV, and be used for public sharing of your data and code (see [4. Preserve & Share](04-preserve-and-share.qmd){.mark}). 
+While your LRZ GitLab account is associated with your LMU Munich affiliation, your GitHub account can be associated with your private email, be included in your CV, and be used for public sharing of your data and code (see [[4. Preserve & Share](04-preserve-and-share.qmd){.mark}]{.content-visible when-format="html"}[ @sec-preserve-and-share-chapter]{.content-hidden when-format="html"}). 
 
 In a version controlled workflow, you back up your local Git repositories on either GitHub or LRZ GitLab through a secure SSH connection (see GitHub tutorial) and share access to your repositories with your collaborators through the cloud-based platform GitHub or LRZ GitLab.
 :::
@@ -225,14 +266,14 @@ Importantly, if data are removed from an existing repository, they may still rem
 :::
 
 :::{.callout-tip}
-## Tips for research groups:
+# Tips for research groups:
 **Create a LRZ GitLab "organization" for the team.**  This allows repositories, permissions, and project resources to be managed centrally rather than under individual accounts. This ensures continuity when team members leave, as ownership can be transferred to e.g. the PI and other administrators of the organization. 
 :::
 
 
 ::: {.container .my-4 }
 
-<h4 class="fs-5"><i class="bi bi-mortarboard"></i> LEARN MORE</h4>
+#### <i class="bi bi-mortarboard"></i> LEARN MORE {#sec-version-control-03-lm .orc-card-section .unnumbered}
 
 <!-- row for Learn More section -->
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
@@ -257,6 +298,11 @@ Importantly, if data are removed from an existing repository, they may still rem
 <a href="https://lmu-osc.github.io/Introduction-RStudio-Git-GitHub/" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [Git Tutorial](https://lmu-osc.github.io/Introduction-RStudio-Git-GitHub/): Use version control system Git from within RStudio. (2h)
+:::
+
 :::
 
 <!-- card -->
@@ -279,11 +325,16 @@ Importantly, if data are removed from an existing repository, they may still rem
 <a href="https://lmu-osc.github.io/Collaborative-RStudio-GitHub/" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [GitHub Tutorial](https://lmu-osc.github.io/Collaborative-RStudio-GitHub/): Collaborative coding with GitHub and RStudio (1h)
 :::
 
 :::
 
-<h4 class="fs-5 mt-3"><i class="bi bi-tools"></i> TOOLS & RESOURCES</h4>
+:::
+
+#### <i class="bi bi-tools"></i> TOOLS & RESOURCES {#sec-version-control-03-tr .orc-card-section .unnumbered}
 <!-- row for Tools & Resources section -->
 
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
@@ -308,6 +359,11 @@ Importantly, if data are removed from an existing repository, they may still rem
 <a href="https://gitlab.lrz.de/" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [LRZ Gitlab](https://gitlab.lrz.de/): Institutional Git hosting for LMU Munich.
+:::
+
 :::
 
 <!-- card -->
@@ -330,14 +386,26 @@ Importantly, if data are removed from an existing repository, they may still rem
 <a href="https://www.lmu.de/en/about-lmu/structure/central-university-administration/it-services-division/it-service-desk/central-it-services/lmu-chat-matrix/" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [LMU Chat (Matrix)](https://www.lmu.de/en/about-lmu/structure/central-university-administration/it-services-division/it-service-desk/central-it-services/lmu-chat-matrix/): Institutional open source chat service for LMU Munich.
 :::
 
 :::
 
 :::
 
+:::
 
-#### 3.1.3. Computational Environment Management
+
+</div>
+
+<div class="collapse-heading">
+
+### Computational Environment Management {#sec-computational-env-management .no-anchor .collapse-toggle .collapsed data-bs-toggle="collapse" data-bs-target="#collapse-computational-env-management" aria-expanded="false" aria-controls="collapse-computational-env-management"}
+
+</div>
+<div id="collapse-computational-env-management" class="collapse" data-bs-parent="#data-processing-analysis-collapse">
 
 Manage your computational environment by explicitly recording the software, package versions, and dependencies required for your analyses, ensuring results can be reproduced across systems and over time. Tools such as packages managers (e.g. [Renv](https://rstudio.github.io/renv/) for R packages, [Conda](https://anaconda.org/channels/anaconda/packages/conda/overview) for Python packages) or broader containers (e.g. [Docker](https://www.docker.com/) or [Binder](https://mybinder.org/)) help stabilize workflows and prevent inconsistencies caused by packages or software updates.
 
@@ -345,7 +413,7 @@ For a R project repository:
 
 - **Activate Renv to keep track of all packages versions** (see our [renv tutorial](https://lmu-osc.github.io/introduction-to-renv/)). This way, you or someone else can  reproduce your results on another computer or at a later time using the same R packages versions.
 
-Before publishing your project (see [4. Preserve & share](04-preserve-and-share.qmd){.mark}):
+Before publishing your project (see [[4. Preserve & share](04-preserve-and-share.qmd){.mark}]{.content-visible when-format="html"}[ @sec-preserve-and-share-chapter]{.content-hidden when-format="html"}):
 
 - **Record your dependencies** in your README file for possible reconstruction with [repo2docker](https://repo2docker.readthedocs.io/en/latest/) or binder (see [Code Publishing tutorial](https://lmu-osc.github.io/code-publishing/make-readme.html)).
 
@@ -354,7 +422,7 @@ Before publishing your project (see [4. Preserve & share](04-preserve-and-share.
 
 ::: {.container .my-4 }
 
-<h4 class="fs-5"><i class="bi bi-mortarboard"></i> LEARN MORE</h4>
+#### <i class="bi bi-mortarboard"></i> LEARN MORE {#sec-computational-env-management-lm .orc-card-section .unnumbered}
 
 <!-- row for Learn More section -->
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
@@ -379,6 +447,11 @@ Before publishing your project (see [4. Preserve & share](04-preserve-and-share.
 <a href="https://lmu-osc.github.io/introduction-to-renv/" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [Renv Tutorial](https://lmu-osc.github.io/introduction-to-renv/): Manage the version of your R packages (1h)
+:::
+
 :::
 
 <!-- card -->
@@ -401,11 +474,16 @@ Before publishing your project (see [4. Preserve & share](04-preserve-and-share.
 <a href="https://lmu-osc.github.io/code-publishing/" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [Code Publishing Tutorial](https://lmu-osc.github.io/code-publishing/): Publish your reproducible project on Zenodo (2h)
 :::
 
 :::
 
-<h4 class="fs-5 mt-3"><i class="bi bi-tools"></i> TOOLS & RESOURCES</h4>
+:::
+
+#### <i class="bi bi-tools"></i> TOOLS & RESOURCES {#sec-computational-env-management-tr .orc-card-section .unnumbered}
 <!-- row for Tools & Resources section -->
 
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
@@ -422,6 +500,11 @@ Before publishing your project (see [4. Preserve & share](04-preserve-and-share.
 <a href="https://mybinder.org/" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [Binder](https://mybinder.org/): Create online executable environments.
+:::
+
 :::
 
 <!-- card -->
@@ -436,6 +519,11 @@ Before publishing your project (see [4. Preserve & share](04-preserve-and-share.
 <a href="https://www.docker.com/" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [Docker](https://www.docker.com/): Containerization for full reproducibility.
+:::
+
 :::
 
 <!-- card -->
@@ -447,24 +535,36 @@ Before publishing your project (see [4. Preserve & share](04-preserve-and-share.
   </div>
 <h4 class="card-title">repo2docker</h4>
 <p class="card-text">Build and run user environment containers.</p>
-<a href="https://repo2docker.readthedocs.io/en/latest/ " class="stretched-link" target="_blank" rel="noopener"> </a>
+<a href="https://repo2docker.readthedocs.io/en/latest/" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [repo2docker](https://repo2docker.readthedocs.io/en/latest/): Build and run user environment containers.
 :::
 
 :::
 
 :::
 
+:::
 
 
-#### 3.1.4. Documentation
 
-As with all documentation, your project repository’s documentation should be written early - initially for your near-future self to support efficient re-engagement after interruptions, then revised for internal team review, and ultimately expanded and refined for public sharing (see [4.2. Open Source Code](04-preserve-and-share.qmd#sec-open-source-code){.mark}).  
+</div>
+
+<div class="collapse-heading">
+
+### Documentation {#sec-documentation-03 .no-anchor .collapse-toggle .collapsed data-bs-toggle="collapse" data-bs-target="#collapse-documentation-03" aria-expanded="false" aria-controls="collapse-documentation-03"}
+
+</div>
+<div id="collapse-documentation-03" class="collapse" data-bs-parent="#data-processing-analysis-collapse">
+
+As with all documentation, your project repository’s documentation should be written early - initially for your near-future self to support efficient re-engagement after interruptions, then revised for internal team review, and ultimately expanded and refined for public sharing (see [[4.2. Open Source Code](04-preserve-and-share.qmd#sec-open-source-code){.mark}]{.content-visible when-format="html"}[ @sec-open-source-code]{.content-hidden when-format="html"}).  
 
 - **Create a README (e.g. a .md or .txt file) early and update it as you go.** Your README is the entry point to your project. A good README answers the essential questions: who created the script, what it contains, how they relate to other scripts and in which order scripts should be run, what the dependencies of the project are, how to obtain/access the input data, whether the code can be reused. 
 - **Annotate your code explaining _why_ you made a decision.** All parameter values used as input for a function, or other decisions, should be justified minimally as comments in your code to later be included in your manuscript. **Do not include sensitive information such as credentials or name of excluded patient as comments in your code!**
-- **Update your data dictionary and README files.** Your data documentation should be updated to include all data exclusion, change in range of possible values, etc. (see [2.2.4. Documentation](02-collect-and-manage.qmd#sec-data-management){.mark}).
+- **Update your data dictionary and README files.** Your data documentation should be updated to include all data exclusion, change in range of possible values, etc. (see [[2.2.4. Documentation](02-collect-and-manage.qmd#sec-data-management){.mark}]{.content-visible when-format="html"}[ @sec-data-management]{.content-hidden when-format="html"}).
 
 
 Example README to allow team members to review your code:
@@ -483,7 +583,7 @@ Example README to allow team members to review your code:
 
 ::: {.container .my-4 }
 
-<h4 class="fs-5"><i class="bi bi-mortarboard"></i> LEARN MORE</h4>
+#### <i class="bi bi-mortarboard"></i> LEARN MORE {#sec-documentation-03-lm .orc-card-section .unnumbered}
 
 <!-- row for Learn More section -->
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
@@ -505,6 +605,11 @@ Example README to allow team members to review your code:
     <a href="https://lmu-osc.github.io/training/reproducible-processes/readable-code.html" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [Readable code lecture](https://lmu-osc.github.io/training/reproducible-processes/readable-code.html): Tips to write clear, understandable, and maintainable code.(1h)
+:::
+
 :::
 
 <!-- card  -->
@@ -524,6 +629,11 @@ Example README to allow team members to review your code:
 <a href="https://lmu-osc.github.io/data-documentation-validation-R/" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [Data Documentation & Validation](https://lmu-osc.github.io/data-documentation-validation-R/): Create validation rules and automated checks for your research data. (1h)
+:::
+
 :::
 
 <!-- card -->
@@ -546,12 +656,19 @@ Example README to allow team members to review your code:
 <a href="https://lmu-osc.github.io/code-publishing/" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [Code Publishing Tutorial](https://lmu-osc.github.io/code-publishing/): Publish your reproducible project on Zenodo (2h)
+:::
+
 :::
 
 
 :::
 
 :::
+</div>
+
 :::
 :::
 </div>
@@ -561,34 +678,39 @@ Example README to allow team members to review your code:
 
 <!--second accordion-->
 
-<div class="accordion rh-accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle" id="accordionExample">
+<div class="accordion rh-accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle" id="accordion-reporting-results">
 <div class="accordion-item">
-<div class="accordion-header no-anchor fs-6" id="sec-reporting-results">
+<div class="accordion-header no-anchor fs-6">
 <div class="accordion-header-content">
 <span class="icon-wrapper rounded-4 bg-success-subtle text-success p-3">
 <i class="bi bi-file-earmark-richtext m-0 fs-4"></i> 
 </span>
 <div class="accordion-title">
 
-### Reporting Results
+## Reporting Results {#sec-reporting-results}
 </div>
 </div>
 <button class="accordion-button collapsed accordion-toggle-only" type="button"
   data-bs-toggle="collapse"
-  data-bs-target="#collapseTwo"
+  data-bs-target="#collapse-reporting-results"
   aria-expanded="false"
   aria-label="Toggle Reporting Results section"></button>
 </div>
-<div id="collapseTwo" class="accordion-collapse collapse">
+<div id="collapse-reporting-results" class="accordion-collapse collapse">
 <div class="accordion-body p-4">
 
 ::: {.content}
 
 Your results should be **computationally reproducible** to ensure that the analysis can be independently verified. They should also be **reported comprehensively and in line with reporting guidelines** to facilitate statistical checks and future meta-analyses.
 
-::: {.panel-tabset}
+::: {#reporting-results-collapse .collapse-tabs}
 
-#### 3.2.1. Results reproducibility 
+<div class="collapse-heading">
+
+### Results reproducibility {#sec-results-reproducibility .no-anchor .collapse-toggle data-bs-toggle="collapse" data-bs-target="#collapse-results-reproducibility" aria-expanded="true" aria-controls="collapse-results-reproducibility"}
+
+</div>
+<div id="collapse-results-reproducibility" class="collapse show" data-bs-parent="#reporting-results-collapse">
 
 A practical way to make results and analysis decisions transparent and traceable is to use **literate programming**, which **combines narrative text** explaining the logic of the analysis with **executable code** that performs data processing and statistical procedures. **When the document is compiled, outputs such as tables, figures, and references are generated directly from the code and updated automatically whenever the code changes, ensuring that the reported methods and results remain consistent with the analysis.** This eliminates repeated copy-and-paste and reduces the risk of uncertainty about which version of, for example, a figure is actually included in the manuscript.
 
@@ -600,7 +722,7 @@ For users of R, Python, and Julia, **Quarto** has become the standard tool for c
 
 - **Create an analysis report with Quarto.** To make your results reproducible, you should provide the analysis code that creates the results of the manuscript with explanations for each of the steps. Quarto is an ideal tool for this (see [Quarto tutorial](https://lmu-osc.github.io/introduction-to-Quarto/)). Your analysis report should contain your research question, data loading instructions, preprocessing steps, statistical procedures, tables and figures, session info and software versions (in the report itself or in your README).
 
-This will facilitate your own revisions, code-review by your team, **reproducibility checks** that some journals conduct as part of peer-review, and verification of results reproducibility by other researchers. The code repository can be published with simulated, synthetic, or real data, depending on the project, together with the respective article (see [4.2. Open Source Code](04-preserve-and-share.qmd#sec-open-source-code){.mark}).
+This will facilitate your own revisions, code-review by your team, **reproducibility checks** that some journals conduct as part of peer-review, and verification of results reproducibility by other researchers. The code repository can be published with simulated, synthetic, or real data, depending on the project, together with the respective article (see [[4.2. Open Source Code](04-preserve-and-share.qmd#sec-open-source-code){.mark}]{.content-visible when-format="html"}[ @sec-open-source-code]{.content-hidden when-format="html"}).
 
 
 Creating a reproducible analysis report in Quarto currently represents **state-of-the-art practice for demonstrating the computational reproducibility of a study**, and we recommend adopting this approach as a minimum standard.
@@ -636,7 +758,7 @@ Using the same Quarto environment, you can also:
 
 ::: {.container .my-4 }
 
-<h4 class="fs-5"><i class="bi bi-mortarboard"></i> LEARN MORE</h4>
+#### <i class="bi bi-mortarboard"></i> LEARN MORE {#sec-results-reproducibility-lm .orc-card-section .unnumbered}
 
 <!-- row for Learn More section -->
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
@@ -661,6 +783,11 @@ Using the same Quarto environment, you can also:
 <a href="https://lmu-osc.github.io/introduction-to-Quarto/" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [Quarto Tutorial](https://lmu-osc.github.io/introduction-to-Quarto/): Reproducible documents combining code and narrative (2h)
+:::
+
 :::
 
 <!-- card -->
@@ -683,6 +810,11 @@ Using the same Quarto environment, you can also:
 <a href="https://lmu-osc.github.io/introduction-to-zotero/" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [Introduction to Zotero](https://lmu-osc.github.io/introduction-to-zotero/): Use a reference manager that integrates to RStudio. (1h)
+:::
+
 :::
 
 
@@ -706,6 +838,11 @@ Using the same Quarto environment, you can also:
 <a href="https://lmu-osc.github.io/Introduction-RStudio-Git-GitHub/" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [Git Tutorial](https://lmu-osc.github.io/Introduction-RStudio-Git-GitHub/): Use version control system Git from within RStudio. (2h)
+:::
+
 :::
 
 <!-- card -->
@@ -728,6 +865,11 @@ Using the same Quarto environment, you can also:
 <a href="https://lmu-osc.github.io/Collaborative-RStudio-GitHub/" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [GitHub Tutorial](https://lmu-osc.github.io/Collaborative-RStudio-GitHub/): Collaborative coding with GitHub and RStudio (1h)
+:::
+
 :::
 
 <!-- card -->
@@ -743,11 +885,16 @@ Using the same Quarto environment, you can also:
 <a href="https://lmu-osc.github.io/training/reproducible-processes/advanced-git.html" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [Advanced Git Tutorial](https://lmu-osc.github.io/training/reproducible-processes/advanced-git.html): Use Git branches and further collaborative features (2h)
 :::
 
 :::
 
-<h4 class="fs-5 mt-3"><i class="bi bi-tools"></i> TOOLS & RESOURCES</h4>
+:::
+
+#### <i class="bi bi-tools"></i> TOOLS & RESOURCES {#sec-results-reproducibility-tr .orc-card-section .unnumbered}
 <!-- row for Tools & Resources section -->
 
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
@@ -772,6 +919,11 @@ Using the same Quarto environment, you can also:
 <a href="https://gitlab.lrz.de/" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [LRZ Gitlab](https://gitlab.lrz.de/): Institutional Git hosting for LMU Munich.
+:::
+
 :::
 
 <!-- card -->
@@ -791,6 +943,11 @@ Using the same Quarto environment, you can also:
 <a href="https://syncandshare.lrz.de/login" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [LRZ Sync & Share](https://syncandshare.lrz.de/login): Cloud storage service for LMU Munich
+:::
+
 :::
 
 
@@ -815,13 +972,25 @@ Using the same Quarto environment, you can also:
 <a href="https://www.lmu.de/en/about-lmu/structure/central-university-administration/it-services-division/it-service-desk/central-it-services/lmu-chat-matrix/" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [LMU Chat (Matrix)](https://www.lmu.de/en/about-lmu/structure/central-university-administration/it-services-division/it-service-desk/central-it-services/lmu-chat-matrix/): Institutional open source chat service for LMU Munich.
 :::
 
 :::
 
 :::
 
-#### 3.2.2. Reporting guidelines
+:::
+
+</div>
+
+<div class="collapse-heading">
+
+### Reporting guidelines {#sec-reporting-guidelines .no-anchor .collapse-toggle .collapsed data-bs-toggle="collapse" data-bs-target="#collapse-reporting-guidelines" aria-expanded="false" aria-controls="collapse-reporting-guidelines"}
+
+</div>
+<div id="collapse-reporting-guidelines" class="collapse" data-bs-parent="#reporting-results-collapse">
 
 Transparent and complete reporting is essential for the interpretation, verification, and reuse of scientific results. To support this, many disciplines have developed reporting guidelines that specify the **minimum information that should be included when describing study design, data collection, analysis, and results**. These guidelines help ensure that studies can be critically evaluated, replicated, and included in evidence syntheses such as systematic reviews and meta-analyses.
 
@@ -829,7 +998,7 @@ Transparent and complete reporting is essential for the interpretation, verifica
  A central resource for such guidelines is the [EQUATOR Network](https://www.equator-network.org/reporting-guidelines/), an international initiative collecting and promoting reporting standards across many study types and disciplines. 
  
 
-##### <i class="bi bi-list-check"></i> Typical items that should be reported include:
+#### <i class="bi bi-list-check"></i> Typical items that should be reported include: {#sec-typical-reporting-items}
 
 - **Study design and setting** – the type of study (e.g., randomized trial, cohort study), where and when it was conducted, and relevant contextual factors.
 - **Participants or data sources** – eligibility criteria, recruitment or sampling procedures, sample size, and reasons for exclusions or dropouts.
@@ -842,14 +1011,14 @@ Transparent and complete reporting is essential for the interpretation, verifica
 - **Limitations and potential sources of bias** – issues such as confounding, measurement error, or selection bias.
 - **Data, code, and materials availability** – where readers can access datasets, analysis scripts, or supplementary materials to reproduce the analysis.
 
-A lot of these elements are those of a preregistration (see [1.4.1. Pre-analysis planning](01-plan-and-design.qmd#sec-study-design-analysis-plan){.mark}). Describe them in your methods section, adding they were **planned a priori in your preregistration** and citing its DOI, and **separate results into e.g. preregistered confirmatory analyses and non-preregistered exploratory analyses**.
+A lot of these elements are those of a preregistration (see [[1.4.1. Pre-analysis planning](01-plan-and-design.qmd#sec-study-design-analysis-plan){.mark}]{.content-visible when-format="html"}[ @sec-study-design-analysis-plan]{.content-hidden when-format="html"}). Describe them in your methods section, adding they were **planned a priori in your preregistration** and citing its DOI, and **separate results into e.g. preregistered confirmatory analyses and non-preregistered exploratory analyses**.
 
 Some of these elements will be refined depending on your study type. Widely used examples of guidelines include [CONSORT](https://www.equator-network.org/reporting-guidelines/consort/) for randomized controlled trials, [ARRIVE](https://www.equator-network.org/reporting-guidelines/improving-bioscience-research-reporting-the-arrive-guidelines-for-reporting-animal-research/) for animal studies, and [PRISMA](https://www.equator-network.org/reporting-guidelines/prisma/) for systematic reviews.
 
 
 ::: {.container .my-4 }
 
-<h4 class="fs-5 mt-3"><i class="bi bi-tools"></i> TOOLS & RESOURCES</h4>
+#### <i class="bi bi-tools"></i> TOOLS & RESOURCES {#sec-reporting-guidelines-tr .orc-card-section .unnumbered}
 
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
 
@@ -865,11 +1034,18 @@ Some of these elements will be refined depending on your study type. Widely used
 <a href="https://www.equator-network.org/reporting-guidelines/" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [EQUATOR Network](https://www.equator-network.org/reporting-guidelines/): Comprehensive database of reporting guidelines.
 :::
 
 :::
 
 :::
+
+:::
+</div>
+
 :::
 :::
 </div>
@@ -881,7 +1057,7 @@ Some of these elements will be refined depending on your study type. Widely used
 
 ::: {.orc-gradient-box .analyze-collaborate-checklist} 
 
-## <i class="bi bi-card-checklist checklist-icon"></i> Analyze & Collaborate Checklist {.unnumbered}
+## <i class="bi bi-card-checklist checklist-icon"></i> Analyze & Collaborate Checklist {#sec-analyze-and-collaborate-checklist .unnumbered}
 
 This assumes a reproducible workflow using R. Not all items are relevant for all fields of research or study types.
 

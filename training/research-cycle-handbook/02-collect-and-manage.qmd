@@ -1,9 +1,13 @@
 ---
-title: "2. Collect & Manage"
+pagetitle: "2. Collect & Manage"
 description: "Implement FAIR data management, organize research outputs, maintain privacy, and ensure quality"
 phase_order: 2
-number-offset: [0,2,0]
+format:
+  html:
+    number-offset: [1]
 ---
+
+# Collect & Manage {#sec-collect-and-manage-chapter}
 
 ```{=html}
 <div class="orc-phase-hero phase-2 container shadow rounded-4">
@@ -33,26 +37,26 @@ Checkpoint: Data quality validation meeting
 ```
 
 <!--first accordion -->
-<div class="accordion rh-accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle" id="accordionExample">
+<div class="accordion rh-accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle" id="accordion-data-collection">
 <div class="accordion-item">
-<div class="accordion-header no-anchor" id="sec-data-collection">
+<div class="accordion-header no-anchor">
 <div class="accordion-header-content">
 <span class="icon-wrapper rounded-4 bg-success-subtle text-success p-3">
 <i class="bi bi-journal-code m-0 fs-4"></i>
 </span>
 <div class="accordion-title">
 
-### Data Collection
+## Data Collection {#sec-data-collection}
 </div>
 </div>
 <button class="accordion-button collapsed accordion-toggle-only" type="button"
   data-bs-toggle="collapse"
-  data-bs-target="#collapseOne"
+  data-bs-target="#collapse-data-collection"
   aria-expanded="false"
   aria-label="Toggle Data Collection section"></button>
 </div>
 
-<div id="collapseOne" class="accordion-collapse collapse">
+<div id="collapse-data-collection" class="accordion-collapse collapse">
 <div class="accordion-body p-4">
 
 ::: {.content}
@@ -69,19 +73,24 @@ State-of-the-art practices for reproducible data acquisition include:
 :::
 
 ::: {.callout-note}
-## Definition
+# Definition
 [**Metadata**]{.underline} are data about data; they provide context to your data. Metadata such as equipment settings, environmental conditions, software versions, and calibration records should be recorded contemporaneously, not reconstructed afterward. Electronic lab notebooks, instrument logs, and automated logging all help to document your metadata.
 :::
 
 ::: {.callout-tip}
-## Tips for research groups to streamline this process
+# Tips for research groups to streamline this process
 - **Create standard data acquisition procedures within the team.** From step-by-step wet-lab procedure, to the settings of measuring devices and the reproducible data pre-processing using script, all regularly repeated steps should be documented and standardized to be replicated precisely by all team members. 
 - **Share standard operating procedures** through common server space such as [LRZ Sync & Share](https://syncandshare.lrz.de/login), specialized online tools like [protocols.io](https://www.protocols.io/) or electronic lab notebooks, or [LRZ GitLab](https://gitlab.lrz.de/users/sign_in) for scripts.
 :::
 
-::: {.panel-tabset}
+::: {#data-collection-collapse .collapse-tabs}
 
-#### 2.1.1. Lab Protocols
+<div class="collapse-heading">
+
+### Lab Protocols {#sec-lab-protocols .no-anchor .collapse-toggle data-bs-toggle="collapse" data-bs-target="#collapse-lab-protocols" aria-expanded="true" aria-controls="collapse-lab-protocols"}
+
+</div>
+<div id="collapse-lab-protocols" class="collapse show" data-bs-parent="#data-collection-collapse">
 
 Your protocol should specify materials with identifying details (e.g. lot numbers, versions, sources), equipment settings, step-by-step instructions with timing, and expected outcomes at each stage. What counts as "materials" varies by field: reagent concentrations in wet lab work, scanner parameters in neuroimaging, sampling coordinates in field ecology. But the principle is the same: enough detail that someone else could replicate your procedure exactly.
 
@@ -95,7 +104,7 @@ Your protocol should specify materials with identifying details (e.g. lot number
 ::: {.container .my-4 }
 
 
-<h4 class="fs-5"><i class="bi bi-mortarboard"></i> LEARN MORE</h4>
+#### <i class="bi bi-mortarboard"></i> LEARN MORE {#sec-lab-protocols-lm .orc-card-section .unnumbered}
 <!-- row for learn more section  -->
 
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
@@ -113,12 +122,17 @@ Your protocol should specify materials with identifying details (e.g. lot number
 <a href="https://youtu.be/aKiXFzj15dg?si=ilB8aOsXArphMpfm" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [Write reusable protocols](https://youtu.be/aKiXFzj15dg?si=ilB8aOsXArphMpfm): Understand the level of details needed for your protocols.
 :::
 
 :::
 
+:::
 
-<h4 class="fs-5 mt-3"><i class="bi bi-tools"></i> TOOLS & RESOURCES</h4>
+
+#### <i class="bi bi-tools"></i> TOOLS & RESOURCES {#sec-lab-protocols-tr .orc-card-section .unnumbered}
 <!-- row for Tools & Resources section -->
 
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
@@ -140,6 +154,11 @@ Your protocol should specify materials with identifying details (e.g. lot number
 <a href="https://elab.ub.lmu.de/login.php" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [eLabFTW](https://elab.ub.lmu.de/login.php): Electronic Lab Notebook hosted by LMU Munich.
+:::
+
 :::
 
 <!--  card -->
@@ -159,6 +178,11 @@ Your protocol should specify materials with identifying details (e.g. lot number
 <a href="https://chemlab.cup.uni-muenchen.de/home" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [Chemotion](https://chemlab.cup.uni-muenchen.de/home): ELN hosted by the Faculty for Chemistry and Pharmacy.
+:::
+
 :::
 
 <!-- card -->
@@ -173,14 +197,26 @@ Your protocol should specify materials with identifying details (e.g. lot number
 <a href="https://www.protocols.io/" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [Protocols.io](https://www.protocols.io/): Share, discover, cite, and improve research protocols.
 :::
 
 :::
 
 :::
 
+:::
 
-#### 2.1.2. Questionnaires
+
+</div>
+
+<div class="collapse-heading">
+
+### Questionnaires {#sec-questionnaires .no-anchor .collapse-toggle .collapsed data-bs-toggle="collapse" data-bs-target="#collapse-questionnaires" aria-expanded="false" aria-controls="collapse-questionnaires"}
+
+</div>
+<div id="collapse-questionnaires" class="collapse" data-bs-parent="#data-collection-collapse">
 
 **Document both the instrument and the administration procedure completely.** The data dictionary (or 'codebook') should record the exact version of the questionnaire used; if copyright allows it, document the item wording itself. 
 
@@ -195,7 +231,14 @@ Questionnaires should be objective, reliable, and valid:
 For well-validated instruments, published studies extensively assess reliability and validity across several populations and contexts. If these quality criteria of measurement instruments are met, your effect size and statistical power will be increased.
 
 
-#### 2.1.3. Software-based data acquisition
+</div>
+
+<div class="collapse-heading">
+
+### Software-based data acquisition {#sec-software-based-data-acquisition .no-anchor .collapse-toggle .collapsed data-bs-toggle="collapse" data-bs-target="#collapse-software-based-data-acquisition" aria-expanded="false" aria-controls="collapse-software-based-data-acquisition"}
+
+</div>
+<div id="collapse-software-based-data-acquisition" class="collapse" data-bs-parent="#data-collection-collapse">
 
 When data comes from instruments, sensors, or APIs (Application Programming Interface), scripting the acquisition creates a reproducible record of exactly what was collected and how. Programming languages like R or Python work well for straightforward pipelines. For more complex multi-step workflows which are common in e.g. in bioinformatics and neuroimaging, workflow managers like [Snakemake](https://snakemake.readthedocs.io/) ensure steps run in the correct order and can resume after failures.
 
@@ -208,7 +251,7 @@ When data comes from instruments, sensors, or APIs (Application Programming Inte
 
 ::: {.container .my-4 }
 
-<h4 class="fs-5"><i class="bi bi-mortarboard"></i> LEARN MORE</h4>
+#### <i class="bi bi-mortarboard"></i> LEARN MORE {#sec-software-based-data-acquisition-lm .orc-card-section .unnumbered}
 <!-- row for learn more section  -->
 
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
@@ -233,6 +276,11 @@ When data comes from instruments, sensors, or APIs (Application Programming Inte
 <a href="https://lmu-osc.github.io/introduction-to-R/" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [Introduction to R](https://lmu-osc.github.io/introduction-to-R/): Programming fundamentals for research data processing (3h)
+:::
+
 :::
 
 <!--  card -->
@@ -255,13 +303,25 @@ When data comes from instruments, sensors, or APIs (Application Programming Inte
 <a href="https://lmu-osc.github.io/Introduction-RStudio-Git-GitHub/" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [Introduction to Git](https://lmu-osc.github.io/Introduction-RStudio-Git-GitHub/): Learn Git basics integrated with RStudio (2h).
 :::
 
 :::
 
 :::
 
-#### 2.1.4. Field and lab work
+:::
+
+</div>
+
+<div class="collapse-heading">
+
+### Field and lab work {#sec-field-and-lab-work .no-anchor .collapse-toggle .collapsed data-bs-toggle="collapse" data-bs-target="#collapse-field-and-lab-work" aria-expanded="false" aria-controls="collapse-field-and-lab-work"}
+
+</div>
+<div id="collapse-field-and-lab-work" class="collapse" data-bs-parent="#data-collection-collapse">
 
 Field and sometimes lab researchers have to work with analogue notebooks first, and use temporary storage solution for images and video-recordings.
 
@@ -275,7 +335,7 @@ Field and sometimes lab researchers have to work with analogue notebooks first, 
 
 ::: {.container .my-4 }
 
-<h4 class="fs-5 mt-3"><i class="bi bi-tools"></i> TOOLS & RESOURCES</h4>
+#### <i class="bi bi-tools"></i> TOOLS & RESOURCES {#sec-field-and-lab-work-tr .orc-card-section .unnumbered}
 <!-- row for Tools & Resources section -->
 
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
@@ -296,13 +356,25 @@ Field and sometimes lab researchers have to work with analogue notebooks first, 
 <a href="https://www.postgresql.org/" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [PostgreSQL](https://www.postgresql.org/): Open source relational database software
 :::
 
 :::
 
 :::
 
-#### 2.1.5. Systematic reviews
+:::
+
+</div>
+
+<div class="collapse-heading">
+
+### Systematic reviews {#sec-systematic-reviews .no-anchor .collapse-toggle .collapsed data-bs-toggle="collapse" data-bs-target="#collapse-systematic-reviews" aria-expanded="false" aria-controls="collapse-systematic-reviews"}
+
+</div>
+<div id="collapse-systematic-reviews" class="collapse" data-bs-parent="#data-collection-collapse">
 
 A high-quality systematic review, whether it includes a meta-analysis or not, uses a **rigorous, transparent, and reproducible methodology to select the relevant literature** and later provide a thorough summary and critical evaluation of research within a given field. Its defining features include:
 
@@ -324,7 +396,7 @@ Data collection, in this context, consists in developing a judicious reproducibl
 
 ::: {.container .my-4 }
 
-<h4 class="fs-5"><i class="bi bi-mortarboard"></i> LEARN MORE</h4>
+#### <i class="bi bi-mortarboard"></i> LEARN MORE {#sec-systematic-reviews-lm .orc-card-section .unnumbered}
 <!-- row for learn more section  -->
 
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
@@ -346,11 +418,16 @@ Data collection, in this context, consists in developing a judicious reproducibl
 <a href="" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* Systematic review: Slides and additional resources of workshop delivered at OSSS23.
 :::
 
 :::
 
-<h4 class="fs-5 mt-3"><i class="bi bi-tools"></i> TOOLS & RESOURCES</h4>
+:::
+
+#### <i class="bi bi-tools"></i> TOOLS & RESOURCES {#sec-systematic-reviews-tr .orc-card-section .unnumbered}
 <!-- row for Tools & Resources section -->
 
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
@@ -371,6 +448,11 @@ Data collection, in this context, consists in developing a judicious reproducibl
 <a href="https://www.prisma-statement.org/" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [PRISMA](https://www.prisma-statement.org/): Preferred Reporting Items for Systematic review and Meta-Analysis Protocols
+:::
+
 :::
 
 <!-- card -->
@@ -389,11 +471,18 @@ Data collection, in this context, consists in developing a judicious reproducibl
 <a href="https://camarades.de/" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [CAMARADES](https://camarades.de/): Step-by-step guide to Preclinical Systematic Review.
 :::
 
 :::
 
 :::
+
+:::
+</div>
+
 :::
 :::
 </div>
@@ -404,34 +493,34 @@ Data collection, in this context, consists in developing a judicious reproducibl
 
 <!--second accordion -->
 
-<div class="accordion rh-accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle" id="accordionExample">
+<div class="accordion rh-accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle" id="accordion-data-management">
 <div class="accordion-item">
-<div class="accordion-header no-anchor" id="sec-data-management">
+<div class="accordion-header no-anchor">
 <div class="accordion-header-content">
 <span class="icon-wrapper rounded-4 bg-success-subtle text-success p-3">
 <i class="bi bi-folder-check m-0 fs-4"></i>
 </span>
 <div class="accordion-title">
 
-### Data Management 
+## Data Management {#sec-data-management}
 </div>
 </div>
 <button class="accordion-button collapsed accordion-toggle-only" type="button"
   data-bs-toggle="collapse"
-  data-bs-target="#collapseTwo"
+  data-bs-target="#collapse-data-management"
   aria-expanded="false"
   aria-label="Toggle Data Management section"></button>
 </div>
-<div id="collapseTwo" class="accordion-collapse collapse">
+<div id="collapse-data-management" class="accordion-collapse collapse">
 <div class="accordion-body p-4">
 
 ::: {.content}
 
-In [1. Plan & Design](01-plan-and-design.qmd){.mark} you created a Research Data Management Plan. It's now time to put this plan into practice, refining it as you learn what actually works for your project.
+In [[1. Plan & Design](01-plan-and-design.qmd){.mark}]{.content-visible when-format="html"}[ @sec-plan-and-design-chapter]{.content-hidden when-format="html"} you created a Research Data Management Plan. It's now time to put this plan into practice, refining it as you learn what actually works for your project.
 
 ::: {.ms-1} 
 
-- **Keep your raw data as read-only files.** The unmodified output of your instruments, surveys, or observations should never be modified directly. You should provide enough documentation to recreate your processed datasets and results from your raw data (see [3.1. Data Processing & Analyses](03-analyze-and-collaborate.qmd#sec-data-processing-analysis){.mark}).
+- **Keep your raw data as read-only files.** The unmodified output of your instruments, surveys, or observations should never be modified directly. You should provide enough documentation to recreate your processed datasets and results from your raw data (see [[3.1. Data Processing & Analyses](03-analyze-and-collaborate.qmd#sec-data-processing-analysis){.mark}]{.content-visible when-format="html"}[ @sec-data-processing-analysis]{.content-hidden when-format="html"}).
 
 - **Organize, document, and store your research files so they remain usable, and become FAIR upon sharing.** Beyond raw data, you will generate processed data, code, documentation, and metadata. How you organize, describe, and store these determines whether your work remains usable and reproducible. The [FAIR principles](https://www.go-fair.org/fair-principles/) guide these decisions: making outputs Findable, Accessible, Interoperable, and Reusable.
 
@@ -441,17 +530,22 @@ What follows are general practices. Your domain has specific conventions for fil
 
 <!-- why is there a weird white space between the frame and the text in this call outbox?-->
 ::: {.callout-tip .mx-4}
-## Tips for research groups to streamline this process
+# Tips for research groups to streamline this process
 - **Create standard operating procedures (SOPs) within the team.** For instance: where and when data back up should be made and in which file format, what project folder structure and conventions for naming files should be adopted, which metadata should routinely be acquired, what documentation should be created and when, and how and where a history of versions should be preserved. 
-- **Assign responsibilities.** For developing such SOPs for a specific kind of project and for checking all members have implemented those SOPs at a specified time point in their project (e.g. hold a data quality validation meeting prior to starting data analyses, see [Collect & Manage Checklist](#collect-manage-checklist){.mark}).
+- **Assign responsibilities.** For developing such SOPs for a specific kind of project and for checking all members have implemented those SOPs at a specified time point in their project (e.g. hold a data quality validation meeting prior to starting data analyses, see [Collect & Manage Checklist](#sec-collect-and-manage-checklist){.mark}).
 :::
 
 
-::: {.panel-tabset}
+::: {#data-management-collapse .collapse-tabs}
 
-#### 2.2.1. Storage
+<div class="collapse-heading">
 
-This section covers storage for data you are actively collecting. Long-term archiving for sharing is covered in [4. Preserve & Share](04-preserve-and-share.qmd){.mark}.
+### Storage {#sec-storage .no-anchor .collapse-toggle data-bs-toggle="collapse" data-bs-target="#collapse-storage" aria-expanded="true" aria-controls="collapse-storage"}
+
+</div>
+<div id="collapse-storage" class="collapse show" data-bs-parent="#data-management-collapse">
+
+This section covers storage for data you are actively collecting. Long-term archiving for sharing is covered in [[4. Preserve & Share](04-preserve-and-share.qmd){.mark}]{.content-visible when-format="html"}[ @sec-preserve-and-share-chapter]{.content-hidden when-format="html"}.
 
 - **Use institutional storage.** LMU Munich provides storage such as [LRZ Sync and Share](https://syncandshare.lrz.de/login) or [LRZ DSS](https://doku.lrz.de/data-science-storage-10745685.html) with automated backups, access controls, and GDPR compliance. Additional options vary by department. Contact the [Research Data Management team of the University Library ](https://www.en.ub.uni-muenchen.de/writing/research_data/research-data-management/index.html) to find what is available to you. When choosing, consider how much data you will generate, who needs access, and whether your data includes personal information requiring stricter controls.
 - **Follow the 3-2-1 backup rule.** Keep three copies on two media types with one off-site. Designate one location as the master copy, the authoritative version everything else syncs from. Working with multiple "equal" copies creates version conflicts. Remember that syncing is not backup: if you delete a file from a synced folder, the deletion propagates everywhere. True backups preserve previous versions independently.
@@ -459,14 +553,14 @@ This section covers storage for data you are actively collecting. Long-term arch
 - **Test your backups.** A backup you cannot restore is not a backup. Test restoration at least once. Archive inactive data periodically and review access lists when team composition changes.
 
 ::: {.callout-important}
-## Avoid for Research Data
+# Avoid for Research Data
 Personal laptops as primary storage, external drives as only copy, consumer cloud services (Dropbox, Google Drive) for sensitive data, and USB drives except for temporary transport.
 :::
 
 
 ::: {.container .my-4 }
 
-<h4 class="fs-5"><i class="bi bi-mortarboard"></i> LEARN MORE</h4>
+#### <i class="bi bi-mortarboard"></i> LEARN MORE {#sec-storage-lm .orc-card-section .unnumbered}
 <!-- row for Learn More section -->
 
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
@@ -488,6 +582,11 @@ Personal laptops as primary storage, external drives as only copy, consumer clou
     <a href="https://syncandshare.lrz.de/login" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [LRZ Sync & Share](https://syncandshare.lrz.de/login): Cloud storage service for LMU Munich
+:::
+
 :::
 
 ::: {.col}
@@ -506,6 +605,11 @@ Personal laptops as primary storage, external drives as only copy, consumer clou
     <a href="https://doku.lrz.de/data-science-storage-10745685.html" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [LRZ DSS](https://doku.lrz.de/data-science-storage-10745685.html): Long-term archival storage for LMU Munich
+:::
+
 :::
 
 ::: {.col}
@@ -519,14 +623,26 @@ Personal laptops as primary storage, external drives as only copy, consumer clou
 <a href="https://osf.io/" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [OSF](https://osf.io/): Research project management platform including storage.
 :::
 
 :::
 
 :::
 
+:::
 
-#### 2.2.2. Organization
+
+</div>
+
+<div class="collapse-heading">
+
+### Organization {#sec-organization .no-anchor .collapse-toggle .collapsed data-bs-toggle="collapse" data-bs-target="#collapse-organization" aria-expanded="false" aria-controls="collapse-organization"}
+
+</div>
+<div id="collapse-organization" class="collapse" data-bs-parent="#data-management-collapse">
 
 Your folder structure and file naming conventions determine whether you and others can navigate your project months or years later. Establish these conventions at the start of your project and document them. When collaborating, ensure everyone follows the same system.
 
@@ -545,7 +661,7 @@ A pattern like `YYYY-MM-DD_project_condition_type_v01.ext` places files in chron
 
 ::: {.container .my-4 }
 
-<h4 class="fs-5"><i class="bi bi-mortarboard"></i> LEARN MORE</h4>
+#### <i class="bi bi-mortarboard"></i> LEARN MORE {#sec-organization-lm .orc-card-section .unnumbered}
 
 <!-- row for Learn More section -->
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
@@ -567,11 +683,16 @@ A pattern like `YYYY-MM-DD_project_condition_type_v01.ext` places files in chron
     <a href="https://lmu-osc.github.io/FAIR-Data-Management/data-organisation.html" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [Data Organization](https://lmu-osc.github.io/FAIR-Data-Management/data-organisation.html): Folder structure and naming conventions. (30 min)
 :::
 
 :::
 
-<h4 class="fs-5 mt-3"><i class="bi bi-tools"></i> TOOLS & RESOURCES</h4>
+:::
+
+#### <i class="bi bi-tools"></i> TOOLS & RESOURCES {#sec-organization-tr .orc-card-section .unnumbered}
 <!-- row for Tools & Resources section -->
 
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
@@ -595,6 +716,11 @@ A pattern like `YYYY-MM-DD_project_condition_type_v01.ext` places files in chron
     <a href="https://github.com/lmu-osc/research-project-template" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [Research Project Template](https://github.com/lmu-osc/research-project-template): Project folder separating raw & processed data, code, and outputs.
+:::
+
 :::
 
 ::: {.col}
@@ -608,14 +734,26 @@ A pattern like `YYYY-MM-DD_project_condition_type_v01.ext` places files in chron
     <a href="https://rdmkit.elixir-europe.org/your_domain" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [RDMkit](https://rdmkit.elixir-europe.org/your_domain): Domain-specific data management standards
 :::
 
 :::
 
 :::
 
+:::
 
-#### 2.2.3. File Formats
+
+</div>
+
+<div class="collapse-heading">
+
+### File Formats {#sec-file-formats .no-anchor .collapse-toggle .collapsed data-bs-toggle="collapse" data-bs-target="#collapse-file-formats" aria-expanded="false" aria-controls="collapse-file-formats"}
+
+</div>
+<div id="collapse-file-formats" class="collapse" data-bs-parent="#data-management-collapse">
 
 File format choices affect who can work with your data now and whether it remains readable in the future. Open formats have publicly documented specifications that anyone can implement, so many programs can read them and they remain accessible even if the original software disappears. Proprietary formats lock you into specific tools, complicate collaboration, and risk becoming unreadable if the company stops supporting them.
 
@@ -633,7 +771,7 @@ Format issues often surface during quality control. The [2.4. Quality Control](#
 
 ::: {.container .my-4 }
 
-<h4 class="fs-5 mt-3"><i class="bi bi-tools"></i> TOOLS & RESOURCES</h4>
+#### <i class="bi bi-tools"></i> TOOLS & RESOURCES {#sec-file-formats-tr .orc-card-section .unnumbered}
 
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
 
@@ -648,14 +786,26 @@ Format issues often surface during quality control. The [2.4. Quality Control](#
     <a href="https://rdmkit.elixir-europe.org/your_domain" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [RDMkit](https://rdmkit.elixir-europe.org/your_domain): Domain-specific file formats and conventions
 :::
 
 :::
 
 :::
 
+:::
 
-#### 2.2.4. Documentation
+
+</div>
+
+<div class="collapse-heading">
+
+### Documentation {#sec-documentation-02 .no-anchor .collapse-toggle .collapsed data-bs-toggle="collapse" data-bs-target="#collapse-documentation-02" aria-expanded="false" aria-controls="collapse-documentation-02"}
+
+</div>
+<div id="collapse-documentation-02" class="collapse" data-bs-parent="#data-management-collapse">
 
 Without documentation, a dataset is just a collection of files. Six months from now, you will not remember what each column means, why certain values are missing, or how files relate to each other. Documentation makes your data usable by your future self, your collaborators, and any other researchers.
 
@@ -665,7 +815,7 @@ Without documentation, a dataset is just a collection of files. Six months from 
 
 ::: {.container .my-4}
 
-<h4 class="fs-5"><i class="bi bi-mortarboard"></i> LEARN MORE</h4>
+#### <i class="bi bi-mortarboard"></i> LEARN MORE {#sec-documentation-02-lm .orc-card-section .unnumbered}
 
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
 
@@ -685,6 +835,11 @@ Without documentation, a dataset is just a collection of files. Six months from 
     <a href="https://lmu-osc.github.io/FAIR-Data-Management/documentation.html" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [Principles of Data Documentation](https://lmu-osc.github.io/FAIR-Data-Management/documentation.html): Principles of README files and data dictionaries.
+:::
+
 :::
 
 ::: {.col}
@@ -703,14 +858,26 @@ Without documentation, a dataset is just a collection of files. Six months from 
 <a href="https://lmu-osc.github.io/data-documentation-validation-R/" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [Data Documentation & Validation](https://lmu-osc.github.io/data-documentation-validation-R/): Create READMEs, data dictionaries, and validation checks for your data. (1h)
 :::
 
 :::
 
 :::
 
+:::
 
-#### 2.2.5. Standards
+
+</div>
+
+<div class="collapse-heading">
+
+### Standards {#sec-standards .no-anchor .collapse-toggle .collapsed data-bs-toggle="collapse" data-bs-target="#collapse-standards" aria-expanded="false" aria-controls="collapse-standards"}
+
+</div>
+<div id="collapse-standards" class="collapse" data-bs-parent="#data-management-collapse">
 
 Standards are community agreements on how to organize and describe research data. Using them means others in your field immediately understand your data. Three types of standards matter here:
 
@@ -719,14 +886,14 @@ Standards are community agreements on how to organize and describe research data
 
 - **Reporting guidelines** specify what methodological details to document for different study types. The [EQUATOR Network](https://www.equator-network.org/) maintains a searchable database of guidelines for clinical trials, observational studies, animal research, and many other study types. Following these ensures you capture everything others need to understand or replicate your work.
 
-- **Metadata standards** define what descriptive information to record and how to structure it. Scientific metadata describes how your data was produced: equipment specifications, acquisition parameters, protocols followed. This is distinct from discovery metadata (titles, keywords, descriptions) which you will prepare when sharing in [4. Preserve & Share](04-preserve-and-share.qmd){.mark}. Your field has conventions for which parameters matter. [FAIRsharing](https://fairsharing.org/) catalogs metadata standards by discipline.<!-- include ref to discipline specific section when available -->
+- **Metadata standards** define what descriptive information to record and how to structure it. Scientific metadata describes how your data was produced: equipment specifications, acquisition parameters, protocols followed. This is distinct from discovery metadata (titles, keywords, descriptions) which you will prepare when sharing in [[4. Preserve & Share](04-preserve-and-share.qmd){.mark}]{.content-visible when-format="html"}[ @sec-preserve-and-share-chapter]{.content-hidden when-format="html"}. Your field has conventions for which parameters matter. [FAIRsharing](https://fairsharing.org/) catalogs metadata standards by discipline.<!-- include ref to discipline specific section when available -->
 
 
 **Think of your data as a first-class research output.** Comprehensive metadata transforms a project artifact into a reusable resource. Someone reanalyzing your data years later needs to understand exactly how it was produced.
 
 ::: {.container .my-4}
 
-<h4 class="fs-5 mt-3"><i class="bi bi-tools"></i> TOOLS & RESOURCES</h4>
+#### <i class="bi bi-tools"></i> TOOLS & RESOURCES {#sec-standards-tr .orc-card-section .unnumbered}
 
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
 
@@ -742,6 +909,11 @@ Standards are community agreements on how to organize and describe research data
     <a href="https://www.equator-network.org/reporting-guidelines/" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [EQUATOR Network](https://www.equator-network.org/reporting-guidelines/): Comprehensive database of reporting guidelines.
+:::
+
 :::
 
 ::: {.col}
@@ -755,6 +927,11 @@ Standards are community agreements on how to organize and describe research data
     <a href="https://fairsharing.org/" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [FAIRsharing](https://fairsharing.org/): Search by discipline to find metadata standards, reporting guidelines, and data policies for your field.
+:::
+
 :::
 
 ::: {.col}
@@ -768,6 +945,11 @@ Standards are community agreements on how to organize and describe research data
     <a href="https://rdmkit.elixir-europe.org/your_domain" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [RDMkit](https://rdmkit.elixir-europe.org/your_domain): Domain-specific metadata standards
+:::
+
 :::
 
 
@@ -791,14 +973,26 @@ Standards are community agreements on how to organize and describe research data
 <a href="https://github.com/lmu-osc/research-project-template" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [Research Project Template](https://github.com/lmu-osc/research-project-template): Project folder separating raw & processed data, code, and outputs.
 :::
 
 :::
 
 :::
 
+:::
 
-#### 2.2.6. Version Control
+
+</div>
+
+<div class="collapse-heading">
+
+### Version Control {#sec-version-control-02 .no-anchor .collapse-toggle .collapsed data-bs-toggle="collapse" data-bs-target="#collapse-version-control-02" aria-expanded="false" aria-controls="collapse-version-control-02"}
+
+</div>
+<div id="collapse-version-control-02" class="collapse" data-bs-parent="#data-management-collapse">
 
 Version control system like Git tracks changes to files over time. You can see what changed, when, and why. You can revert to previous versions. Collaborators can work without overwriting each other.
 
@@ -808,7 +1002,7 @@ Version control system like Git tracks changes to files over time. You can see w
 - **Use specialized tools for large or frequently changing binary files.** Standard Git stores each version in full, so repositories become unwieldy with large datasets. Git LFS (Large File Storage) stores large files separately while keeping them tracked. Git-annex manages files across multiple storage locations. [DataLad](https://www.datalad.org/) builds on git-annex and works with standard Git workflows.
 
 :::{.callout-note}
-## Difference between Git, GitHub and GitLab  
+# Difference between Git, GitHub and GitLab
 <!-- copied to 3.1.2. manually -->
 
 - **Git** is a version control system that tracks changes in text files (e.g. CSV, plain text, R, Python). The Git software and your Git repositories should be, respectively, installed and located in your local environment (i.e. on your computer, not on a drive, see [Git tutorial](https://lmu-osc.github.io/Introduction-RStudio-Git-GitHub/)). 
@@ -817,7 +1011,7 @@ Version control system like Git tracks changes to files over time. You can see w
 
 - **LRZ GitLab** is a cloud-based hosting platform that provides essentially the same features as GitHub but is open source and is installed on the LRZ servers for LMU Munich and can therefore be considered secure when the repository is private. 
 
-While your LRZ GitLab account is associated with your LMU Munich affiliation, your GitHub account can be associated with your private email, be included in your CV, and be used for public sharing of your data and code (see [3. Analyze & Collaborate](03-analyze-and-collaborate.qmd){.mark} and [4. Preserve & Share](04-preserve-and-share.qmd){.mark}).  
+While your LRZ GitLab account is associated with your LMU Munich affiliation, your GitHub account can be associated with your private email, be included in your CV, and be used for public sharing of your data and code (see [[3. Analyze & Collaborate](03-analyze-and-collaborate.qmd){.mark}]{.content-visible when-format="html"}[ @sec-analyze-and-collaborate-chapter]{.content-hidden when-format="html"} and [[4. Preserve & Share](04-preserve-and-share.qmd){.mark}]{.content-visible when-format="html"}[ @sec-preserve-and-share-chapter]{.content-hidden when-format="html"}).  
 
 
 In a version controlled workflow, you back up your local Git repositories on either GitHub or LRZ GitLab through a secure SSH connection (see [GitHub tutorial](https://lmu-osc.github.io/Collaborative-RStudio-GitHub/)) and share access to your repositories with your collaborators through the cloud-based platform GitHub or LRZ GitLab.
@@ -827,7 +1021,7 @@ In a version controlled workflow, you back up your local Git repositories on eit
 
 ::: {.container .my-4 }
 
-<h4 class="fs-5"><i class="bi bi-mortarboard"></i> LEARN MORE</h4>
+#### <i class="bi bi-mortarboard"></i> LEARN MORE {#sec-version-control-02-lm .orc-card-section .unnumbered}
 
 <!-- row for Learn More section -->
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
@@ -852,6 +1046,11 @@ In a version controlled workflow, you back up your local Git repositories on eit
 <a href="https://lmu-osc.github.io/Introduction-RStudio-Git-GitHub/" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [Introduction to Git](https://lmu-osc.github.io/Introduction-RStudio-Git-GitHub/): Learn Git basics integrated with RStudio (2h).
+:::
+
 :::
 
 ::: {.col}
@@ -873,13 +1072,18 @@ In a version controlled workflow, you back up your local Git repositories on eit
 <a href="https://lmu-osc.github.io/Collaborative-RStudio-GitHub/" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [Introduction to GitHub](https://lmu-osc.github.io/Collaborative-RStudio-GitHub/): Connect to GitHub from Git within RStudio (1h).
+:::
+
 :::
 
 
 :::
 
 
-<h4 class="fs-5 mt-3"><i class="bi bi-tools"></i> TOOLS & RESOURCES</h4>
+#### <i class="bi bi-tools"></i> TOOLS & RESOURCES {#sec-version-control-02-tr .orc-card-section .unnumbered}
 <!-- row for Tools & Resources section -->
 
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
@@ -904,6 +1108,11 @@ In a version controlled workflow, you back up your local Git repositories on eit
 <a href="https://gitlab.lrz.de/" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [LRZ Gitlab](https://gitlab.lrz.de/): Institutional Git hosting for LMU Munich.
+:::
+
 :::
 
 ::: {.col} 
@@ -917,11 +1126,18 @@ In a version controlled workflow, you back up your local Git repositories on eit
     <a href="https://www.datalad.org/" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [DataLad](https://www.datalad.org/): Version control for large datasets
 :::
 
 :::
 
 :::
+
+:::
+</div>
+
 :::
 :::
 </div>
@@ -933,35 +1149,40 @@ In a version controlled workflow, you back up your local Git repositories on eit
 <!--third accordion -->
 
 
-<div class="accordion rh-accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle" id="accordionExample">
+<div class="accordion rh-accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle" id="accordion-ethics-and-privacy">
 <div class="accordion-item">
-<div class="accordion-header no-anchor" id="sec-ethics-and-privacy">
+<div class="accordion-header no-anchor">
 <div class="accordion-header-content">
 <span class="icon-wrapper rounded-4 bg-success-subtle text-success p-3">
 <i class="bi bi-shield-lock m-0 fs-4"></i>
 </span>
 <div class="accordion-title">
 
-### Ethics & Privacy
+## Ethics & Privacy {#sec-ethics-and-privacy}
 </div>
 </div>
 <button class="accordion-button collapsed accordion-toggle-only" type="button"
   data-bs-toggle="collapse"
-  data-bs-target="#collapseThree"
+  data-bs-target="#collapse-ethics-and-privacy"
   aria-expanded="false"
   aria-label="Toggle Ethics & Privacy section"></button>
 </div>
-<div id="collapseThree" class="accordion-collapse collapse">
+<div id="collapse-ethics-and-privacy" class="accordion-collapse collapse">
 <div class="accordion-body p-4">
 
 ::: {.content}
 
-Research involving human participants requires ethics approval and data protection compliance. In your ethics proposal (see [1.2.3. Ethics](01-plan-and-design.qmd#sec-legal-requirements){.mark}) you planned for safeguards for the people contributing to your research and you now need to implement them before or while collecting your data.
+Research involving human participants requires ethics approval and data protection compliance. In your ethics proposal (see [[1.2.3. Ethics](01-plan-and-design.qmd#sec-legal-requirements){.mark}]{.content-visible when-format="html"}[ @sec-legal-requirements]{.content-hidden when-format="html"}) you planned for safeguards for the people contributing to your research and you now need to implement them before or while collecting your data.
 
 
-::: {.panel-tabset}
+::: {#ethics-privacy-collapse .collapse-tabs}
 
-#### 2.3.1. Informed Consent
+<div class="collapse-heading">
+
+### Informed Consent {#sec-informed-consent .no-anchor .collapse-toggle data-bs-toggle="collapse" data-bs-target="#collapse-informed-consent" aria-expanded="true" aria-controls="collapse-informed-consent"}
+
+</div>
+<div id="collapse-informed-consent" class="collapse show" data-bs-parent="#ethics-privacy-collapse">
 
 Participants have the right to understand what they are agreeing to. Your consent form should explain the research purpose in plain language, describe what data you will collect and how you will protect it, specify who will have access and for how long, and make clear that participation is voluntary. See "[How to write an informed consent form](https://www.uu.nl/en/research/research-data-management/guides/legal-considerations/how-to-write-an-informed-consent-form)" from the University to Utrecht and an [example template from the LMU Psychology Department](https://osf.io/mgwk8/files/fvgsx).
 
@@ -972,13 +1193,13 @@ Participants have the right to understand what they are agreeing to. Your consen
 
 
 :::{.callout-tip}
-## Tips for research groups:
+# Tips for research groups:
 **Maintain a centralized log of all ethics approvals, consent forms, and compliance certifications for easy reference by team members.**
 :::
 
 ::: {.container .my-4 }
 
-<h4 class="fs-5 mt-3"><i class="bi bi-tools"></i> TOOLS & RESOURCES</h4>
+#### <i class="bi bi-tools"></i> TOOLS & RESOURCES {#sec-informed-consent-tr .orc-card-section .unnumbered}
 <!-- row for Tools & Resources section -->
 
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
@@ -995,6 +1216,11 @@ Participants have the right to understand what they are agreeing to. Your consen
     <a href="https://www.uu.nl/en/research/research-data-management/guides/legal-considerations/how-to-write-an-informed-consent-form" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [How to write an informed consent form](https://www.uu.nl/en/research/research-data-management/guides/legal-considerations/how-to-write-an-informed-consent-form): University of Utrecht RDM guide.
+:::
+
 :::
 
 :::
@@ -1003,7 +1229,14 @@ Participants have the right to understand what they are agreeing to. Your consen
 
 <!-- @Felix: can we add example consent form as resources or other resources on how to prepare such language ?-->
 
-#### 2.3.2. Anonymization
+</div>
+
+<div class="collapse-heading">
+
+### Anonymization {#sec-anonymization .no-anchor .collapse-toggle .collapsed data-bs-toggle="collapse" data-bs-target="#collapse-anonymization" aria-expanded="false" aria-controls="collapse-anonymization"}
+
+</div>
+<div id="collapse-anonymization" class="collapse" data-bs-parent="#ethics-privacy-collapse">
 
 Anonymization protects privacy and determines what you can share. 
 
@@ -1012,10 +1245,10 @@ Anonymization protects privacy and determines what you can share.
 
 - **Assess indirect identifiers carefully.** A combination of age, location, profession, and a rare condition might identify someone even without their name. Timestamps reveal patterns. Free-text responses often contain identifying details participants did not intend to share. Follow our [data anonymization tutorial](https://lmu-osc.github.io/data-anonymization/) to learn to evaluate and implement anonymization techniques in R.
 
-- **Generate synthetic data when full anonymization or real data sharing is not possible.** Synthetic data is artificially generated data that can serve as a privacy-preserving alternative to sensitive datasets, enabling researchers to reproduce analyses, verify findings, and initiate model development when access to real data is restricted. Sharing synthetic data together with code, rather than sharing no data at all, increases the utility of your research (see [4. Preserve & Share](04-preserve-and-share.qmd){.mark}).
+- **Generate synthetic data when full anonymization or real data sharing is not possible.** Synthetic data is artificially generated data that can serve as a privacy-preserving alternative to sensitive datasets, enabling researchers to reproduce analyses, verify findings, and initiate model development when access to real data is restricted. Sharing synthetic data together with code, rather than sharing no data at all, increases the utility of your research (see [[4. Preserve & Share](04-preserve-and-share.qmd){.mark}]{.content-visible when-format="html"}[ @sec-preserve-and-share-chapter]{.content-hidden when-format="html"}).
 
 :::{.callout-note}
-## Distinction between pseudonymization and anonymization
+# Distinction between pseudonymization and anonymization
 
 - **Pseudonymization** replaces identifiers with codes while retaining a key that links back to individuals. Pseudonymized data is still personal data under GDPR because re-identification is possible, at least by some persons.
 
@@ -1025,7 +1258,7 @@ Anonymization protects privacy and determines what you can share.
 
 ::: {.container .my-4 }
 
-<h4 class="fs-5"><i class="bi bi-mortarboard"></i> LEARN MORE</h4>
+#### <i class="bi bi-mortarboard"></i> LEARN MORE {#sec-anonymization-lm .orc-card-section .unnumbered}
 
 <!-- row for Learn More section -->
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
@@ -1042,11 +1275,16 @@ Anonymization protects privacy and determines what you can share.
   </div>
   <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
 </div>
-<h4 class="card-title">TBA: Data Anonymization</h4> <!-- edit when available -->
-<p class="card-text">Implement data anonymization techniques in R. (X h)</p> <!-- edit when available -->
-<a href="#" class="stretched-link" rel="noopener"></a><!-- Add link when available -->
+<h4 class="card-title">Data Anonymization</h4>
+<p class="card-text">Implement data anonymization techniques in R. (3h)</p>
+<a href="https://lmu-osc.github.io/data-anonymization/" class="stretched-link" rel="noopener"></a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [Data Anonymization](https://lmu-osc.github.io/data-anonymization/): Implement data anonymization techniques in R. (3h)
+:::
+
 :::
 
 ::: {.col}
@@ -1065,15 +1303,27 @@ Anonymization protects privacy and determines what you can share.
 <a href="https://lmu-osc.github.io/synthetic-data-tutorial/" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [Synthetic Data](https://lmu-osc.github.io/synthetic-data-tutorial/): Synthetic data creation in R to balance utility and privacy when sharing data. (3h)
 :::
 
 :::
 
+:::
+
 
 :::
 
 
-#### 2.3.3. GDPR Compliance
+</div>
+
+<div class="collapse-heading">
+
+### GDPR Compliance {#sec-gdpr-compliance .no-anchor .collapse-toggle .collapsed data-bs-toggle="collapse" data-bs-target="#collapse-gdpr-compliance" aria-expanded="false" aria-controls="collapse-gdpr-compliance"}
+
+</div>
+<div id="collapse-gdpr-compliance" class="collapse" data-bs-parent="#ethics-privacy-collapse">
 
 Research at LMU Munich must comply with EU data protection regulations. The core principles: have a lawful basis for processing personal data (usually consent or legitimate research interest), use data only for stated purposes, collect only what you need, delete data when you no longer need it, and protect it against unauthorized access.
 
@@ -1082,6 +1332,8 @@ Research at LMU Munich must comply with EU data protection regulations. The core
 
 
 For data protection guidance, contact the [LMU Data Protection Officer](https://www.lmu.de/en/about-lmu/structure/organizational-structure/officers-representatives-and-contact-persons/data-protection-officer.html) or the [Research Data Management team of the University Library ](https://www.en.ub.uni-muenchen.de/writing/research_data/research-data-management/index.html).
+
+</div>
 
 :::
 :::
@@ -1094,25 +1346,25 @@ For data protection guidance, contact the [LMU Data Protection Officer](https://
 <!--forth accordion -->
 
 
-<div class="accordion rh-accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle" id="accordionExample">
+<div class="accordion rh-accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle" id="accordion-quality-control">
 <div class="accordion-item">
-<div class="accordion-header no-anchor" id="sec-quality-control">
+<div class="accordion-header no-anchor">
 <div class="accordion-header-content">
 <span class="icon-wrapper rounded-4 bg-success-subtle text-success p-3">
 <i class="bi bi-check2-square m-0 fs-4"></i>
 </span>
 <div class="accordion-title">
 
-### Quality Control
+## Quality Control {#sec-quality-control}
 </div>
 </div>
 <button class="accordion-button collapsed accordion-toggle-only" type="button"
   data-bs-toggle="collapse"
-  data-bs-target="#collapseFour"
+  data-bs-target="#collapse-quality-control"
   aria-expanded="false"
   aria-label="Toggle Quality Control section"></button>
 </div>
-<div id="collapseFour" class="accordion-collapse collapse">
+<div id="collapse-quality-control" class="accordion-collapse collapse">
 <div class="accordion-body p-4">
 
 ::: {.content}
@@ -1122,11 +1374,16 @@ For data protection guidance, contact the [LMU Data Protection Officer](https://
 
 Quality control catches problems before they propagate into your analysis. The practices here ensure your data is trustworthy and your exclusions are well-founded.
 
-**Define criteria before looking at your data.** This prevents unconscious bias in what you keep and exclude, and demonstrates that your decisions are principled rather than convenient (see [1.4. Study Design & Analysis Plan](01-plan-and-design.qmd#sec-study-design-analysis-plan){.mark}).
+**Define criteria before looking at your data.** This prevents unconscious bias in what you keep and exclude, and demonstrates that your decisions are principled rather than convenient (see [[1.4. Study Design & Analysis Plan](01-plan-and-design.qmd#sec-study-design-analysis-plan){.mark}]{.content-visible when-format="html"}[ @sec-study-design-analysis-plan]{.content-hidden when-format="html"}).
 
-::: {.panel-tabset}
+::: {#quality-control-collapse .collapse-tabs}
 
-#### 2.4.1. Validation 
+<div class="collapse-heading">
+
+### Validation {#sec-validation .no-anchor .collapse-toggle data-bs-toggle="collapse" data-bs-target="#collapse-validation" aria-expanded="true" aria-controls="collapse-validation"}
+
+</div>
+<div id="collapse-validation" class="collapse show" data-bs-parent="#quality-control-collapse">
 
 Validation checks whether your data meets specifications. For example, values can be verified to fall within valid ranges (e.g., age ≥ 0), required fields can be checked for missing entries, categorical variables can be restricted to allowed levels (e.g., "yes/no"), dates can be validated for proper format, and cross-variable constraints can be enforced (e.g., discharge date ≥ admission date). Run checks during collection to catch problems immediately, after collection for systematic review, and after any processing to verify transformations worked correctly.
 
@@ -1137,7 +1394,7 @@ Validation checks whether your data meets specifications. For example, values ca
 
 ::: {.container .my-4 }
 
-<h4 class="fs-5"><i class="bi bi-mortarboard"></i> LEARN MORE</h4>
+#### <i class="bi bi-mortarboard"></i> LEARN MORE {#sec-validation-lm .orc-card-section .unnumbered}
 
 ::: {.row .row-cols-1 .row-cols-md-2 .row-cols-lg-3 .g-4}
 
@@ -1158,14 +1415,26 @@ Validation checks whether your data meets specifications. For example, values ca
 <a href="https://lmu-osc.github.io/data-documentation-validation-R/" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
 ```
+
+::: {.content-visible unless-format="html"}
+* [Data Documentation & Validation](https://lmu-osc.github.io/data-documentation-validation-R/): Create validation rules and automated checks for your research data. (1h)
 :::
 
 :::
 
 :::
 
+:::
 
-#### 2.4.2. Cleaning
+
+</div>
+
+<div class="collapse-heading">
+
+### Cleaning {#sec-cleaning .no-anchor .collapse-toggle .collapsed data-bs-toggle="collapse" data-bs-target="#collapse-cleaning" aria-expanded="false" aria-controls="collapse-cleaning"}
+
+</div>
+<div id="collapse-cleaning" class="collapse" data-bs-parent="#quality-control-collapse">
 
 Data cleaning handles errors, inconsistencies, and missing values. The cardinal rule: never modify your raw data. All cleaning happens on copies, ideally by scripts and not through manual changes.
 
@@ -1178,14 +1447,23 @@ Data cleaning handles errors, inconsistencies, and missing values. The cardinal 
 
 - **Write cleaning as a script.** A script documents exactly what you did and lets you reproduce it. Keep a decision log for choices that cannot be automated.
 
-#### 2.4.3. Exclusions
+</div>
 
-Exclusion criteria specify which data points will be removed from analysis and why. Define these before you see your results (see [1.4. Study Design & Analysis Plan](01-plan-and-design.qmd#sec-study-design-analysis-plan){.mark}).
+<div class="collapse-heading">
+
+### Exclusions {#sec-exclusions .no-anchor .collapse-toggle .collapsed data-bs-toggle="collapse" data-bs-target="#collapse-exclusions" aria-expanded="false" aria-controls="collapse-exclusions"}
+
+</div>
+<div id="collapse-exclusions" class="collapse" data-bs-parent="#quality-control-collapse">
+
+Exclusion criteria specify which data points will be removed from analysis and why. Define these before you see your results (see [[1.4. Study Design & Analysis Plan](01-plan-and-design.qmd#sec-study-design-analysis-plan){.mark}]{.content-visible when-format="html"}[ @sec-study-design-analysis-plan]{.content-hidden when-format="html"}).
 
 
 - **Review common exclusion criteria.** Technical failures (equipment malfunction, incomplete recording), protocol violations (wrong procedure followed, participant did not comply), quality thresholds (too much missing data, failed attention checks), and participant criteria (did not meet stated inclusion criteria).
 
 - **Document everything.** Record criteria before analysis begins. Report how many data points were excluded for each criterion in a log with the date and reviewer's identity. Plan sensitivity analyses comparing results with and without exclusions to show your findings are robust.
+
+</div>
 
 :::
 
@@ -1204,7 +1482,7 @@ Exclusion criteria specify which data points will be removed from analysis and w
 
 ::: {.orc-gradient-box .collect-manage-checklist}
 
-## <i class="bi bi-card-checklist checklist-icon"></i> Collect & Manage Checklist {.unnumbered}
+## <i class="bi bi-card-checklist checklist-icon"></i> Collect & Manage Checklist {#sec-collect-and-manage-checklist .unnumbered}
 
 To complete before conducting a data validation meeting with members of the project. Not all items are relevant for all fields of research or study types.
 

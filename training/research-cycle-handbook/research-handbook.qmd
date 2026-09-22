@@ -1,0 +1,15 @@
+
+
+{{< include "/training/research-cycle-handbook.qmd" >}}
+
+{{< include "01-plan-and-design.qmd" >}}
+
+{{< include "02-collect-and-manage.qmd" >}}
+
+{{< include "03-analyze-and-collaborate.qmd" >}}
+
+{{< include "04-preserve-and-share.qmd" >}}
+
+<!-- this is a hacky way to make sure that any yaml I explicitly want to declare takes precedence because the last one wins in case of duplications -->
+
+{{< include "_numbering-override.qmd" >}}
