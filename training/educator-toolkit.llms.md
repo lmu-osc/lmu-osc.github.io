@@ -11,7 +11,7 @@ Simply select your intended target audience below and off you go! All materials 
 
 ##### Navigate our educator toolkit
 
-[Develop your pedagogical **skills**!](https://lmu-osc.github.io/train-the-trainer-student-track-pedagogy/)
+[Develop your pedagogical **skills**!](https://lmu-osc.github.io/train-the-trainer-open-research/)
 
 [View teaching materials for **students**!](https://lmu-osc.github.io/train-the-trainer-student-track-OS/)
 
