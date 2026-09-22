@@ -1,37 +1,14 @@
 /*
   Open Research Cycle - Stylesheet
-  Uses `orc-` prefix for namespacing.
+  Layout and component styles only; design tokens live in `lmu-osc-custom.scss`
+  (the Quarto theme layer). Uses the `orc-` prefix for namespacing.
 */
 
 /* ========================================
-   1. CSS VARIABLES
+   1. BASE & LAYOUT
    ======================================== */
 
-:root {
-  --orc-green-dark: #006426;
-  --orc-green-darker: #004d1d;
-  --orc-green-light: #f0f9f6;
-  --orc-gray-100: #f1f5f9;
-  --orc-gray-200: #e2e8f0;
-  --orc-gray-300: var(--osc-divider);
-  --orc-gray-400: #718096;
-  --orc-gray-500: var(--osc-muted);
-  --orc-gray-600: #4a5568;
-  --orc-gray-700: var(--osc-text);
-  --orc-shadow-sm: 0 1px 3px rgba(0,0,0,.08);
-  --orc-shadow-md: 0 4px 12px rgba(0,0,0,.1);
-  --orc-transition: all .2s ease;
-  --orc-radius: 10px;
-  --orc-radius-lg: 12px;
-  --orc-radius-md: 8px;
-  --orc-radius-full: 9999px;
-}
-
-/* ========================================
-   2. BASE & LAYOUT
-   ======================================== */
-
-h2 i, h3 i{ color: var(--osc-accent); margin-right: .5rem; }
+h1 i, h2 i, h3 i{ color: var(--osc-accent); margin-right: .5rem; }
 
 * a { color: var(--osc-accent); }
 
@@ -39,7 +16,7 @@ h2 i, h3 i{ color: var(--osc-accent); margin-right: .5rem; }
 
 
 /* ========================================
-   3. CARDS
+   2. CARDS
    ======================================== */
 
 .orc-card-tool{
@@ -61,17 +38,47 @@ h2 i, h3 i{ color: var(--osc-accent); margin-right: .5rem; }
 .orc-card-tool h4 { font-size: 1.125rem; font-weight: 600; color: var(--orc-gray-700); line-height: 1.3; }
 .orc-card-tool p { font-size: 1rem; color: var(--orc-gray-400);line-height: 1.5; }
 
-/* accordion button header*/
+/* ========================================
+   3. CARD-SECTION HEADINGS
+   ======================================== */
+
+/*
+  "LEARN MORE" / "TOOLS & RESOURCES" labels inside a card section. Quarto copies
+  a markdown heading's classes onto its wrapping <section>, so the size is applied
+  to the heading element only and never leaks onto the section's content.
+  Values match what the previous `.fs-5` / `.mt-3` utilities rendered.
+*/
+.orc-card-section { margin-top: 1rem; }
+.orc-card-section:first-child { margin-top: 0; }
+
+.orc-card-section > h3,
+.orc-card-section > h4 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+/* ========================================
+   4. ACCORDION HEADERS
+   ======================================== */
+
+.accordion-title h2,
 .accordion-title h3 {
   font-size: 1.2rem;
   font-weight: 700;
   color: inherit;
+  /* the theme underlines h2 by default; the section titles must not have that line */
+  border-bottom: 0;
+  padding-bottom: 0;
 }
 
 .header-section-number{ margin-top: 0; color:inherit; font: inherit}
 
 
-/* Gradient highlight box - checklist section*/
+/* ========================================
+   5. GRADIENT HIGHLIGHT BOX (CHECKLISTS)
+   ======================================== */
+
 .orc-gradient-box {
   background: linear-gradient(135deg, rgba(0, 136, 58, 0.08) 0%, rgba(0, 100, 38, 0.08) 100%);
   padding: 2rem;
@@ -81,6 +88,7 @@ h2 i, h3 i{ color: var(--osc-accent); margin-right: .5rem; }
   line-height: 1.7rem;
 }
 
+.orc-gradient-box h1,
 .orc-gradient-box h2 {
   font-weight: 700;
   font-size: 1.25rem;
@@ -88,36 +96,7 @@ h2 i, h3 i{ color: var(--osc-accent); margin-right: .5rem; }
 }
 
 /* ========================================
-   6. PANEL TABSETS (Quarto)
-   ======================================== */
-
-.panel-tabset .nav-tabs { border-bottom: 2px solid var(--orc-gray-200); }
-
-.panel-tabset .nav-tabs .nav-link {
-  color: var(--orc-gray-600);
-  border: none;
-  border-bottom: 3px solid transparent;
-  padding: .75rem 1.25rem;
-  font-weight: 500;
-  transition: var(--orc-transition);
-  margin-bottom: -2px;
-}
-
-.panel-tabset .nav-tabs .nav-link:hover { color: var(--osc-accent); border-bottom-color: var(--orc-green-light); background: transparent; }
-.panel-tabset .nav-tabs .nav-link.active { color: var(--osc-accent); border-bottom-color: var(--osc-accent); background: transparent; font-weight: 600; }
-.panel-tabset .tab-content { padding: 1.25rem 0; margin-top: .5rem; border: none; }
-.panel-tabset .tab-pane { border: none; }
-
-/* ========================================
-   7. PHASE MENU & BUTTONS
-   ======================================== */
-
-.cycle-container { text-align: center; margin: 2rem auto; max-width: 600px; }
-.cycle-container svg { max-width: 100%; height: auto; }
-.cycle-container em { display: block; margin-top: 1rem; font-size: 1rem; color: var(--orc-gray-500); }
-
-/* ========================================
-   8. SVG DIAGRAM
+   6. SVG DIAGRAM
    ======================================== */
 
 svg a { text-decoration: none; cursor: pointer; }
@@ -136,7 +115,7 @@ svg:has(.phase-group:hover) .phase-group:not(:hover) { opacity: .6; filter: brig
 svg :is(text, tspan) { font-family: inherit !important; font-weight: bold; pointer-events: none; }
 
 /* ========================================
-   9. BOOTSTRAP MODALS
+   7. BOOTSTRAP MODALS
    ======================================== */
 /* Define heading colors for each modal to match corresponding svg quadrants */
 #modalPhase1 { --phase-color: #0066ff; --phase-color-hover: #045bdc; }   
@@ -154,7 +133,7 @@ svg :is(text, tspan) { font-family: inherit !important; font-weight: bold; point
 [id^="modalPhase"] .modal-footer .btn-primary:hover { background: var(--phase-color-hover); border-color: var(--phase-color-hover); }
 
 /* ========================================
-   10. PHASE HERO
+   8. PHASE HERO
    ======================================== */
 
 .orc-hero-cycle[class*="phase-"] [id^="phase-"] { opacity: .20; }
@@ -174,7 +153,7 @@ svg :is(text, tspan) { font-family: inherit !important; font-weight: bold; point
 .orc-phase-hero.phase-1{ background: #eef2fb;}
 .orc-hero-pills.phase-1, .orc-hero-checkpoint.phase-1 {background:#0066ff74; border:1px solid #0066ff74; color:#000;}
 .orc-gradient-box.plan-design-checklist { background:#eef2fb; border-left-color:#0066ff74;}
-.orc-gradient-box.plan-design-checklist h2, .orc-gradient-box.plan-design-checklist .checklist-icon{color:#000;}
+.orc-gradient-box.plan-design-checklist h1, .orc-gradient-box.plan-design-checklist h2, .orc-gradient-box.plan-design-checklist .checklist-icon{color:#000;}
 .orc-checklist-download.phase-1 .btn.btn-outline-secondary.btn-sm{border-color: #0066ff74; color: #0066ff74;}
 .orc-checklist-download.phase-1 .btn.btn-outline-secondary.btn-sm:hover{
   border-color: #0066ff74!important;
@@ -185,7 +164,7 @@ svg :is(text, tspan) { font-family: inherit !important; font-weight: bold; point
 .orc-phase-hero.phase-2 { background: #fff5f9;}
 .orc-hero-pills.phase-2, .orc-hero-checkpoint.phase-2 { background: #c90a6a83; border:1px solid#cc006695; color:#000;}
 .orc-gradient-box.collect-manage-checklist { background: #fff5f9; border-left-color:#cc006695;}
-.orc-gradient-box.collect-manage-checklist h2, .orc-gradient-box.collect-manage-checklist .checklist-icon{color:#000;}
+.orc-gradient-box.collect-manage-checklist h1, .orc-gradient-box.collect-manage-checklist h2, .orc-gradient-box.collect-manage-checklist .checklist-icon{color:#000;}
 .orc-checklist-download.phase-2 .btn.btn-outline-secondary.btn-sm{border-color: #cc006695; color:#cc006695;}
 .orc-checklist-download.phase-2 .btn.btn-outline-secondary.btn-sm:hover{
   border-color: #cc006695 !important;
@@ -196,7 +175,7 @@ svg :is(text, tspan) { font-family: inherit !important; font-weight: bold; point
 .orc-phase-hero.phase-3 { background:#fffbee;}
 .orc-hero-pills.phase-3, .orc-hero-checkpoint.phase-3 { background: #ffbf0091; border:1px solid #ffbf0091;color:#000;}
 .orc-gradient-box.analyze-collaborate-checklist { background: #fffbee; border-left-color: #ffbf0091;}
-.orc-gradient-box.analyze-collaborate-checklist h2, .orc-gradient-box.analyze-collaborate-checklist .checklist-icon{color:#000;}
+.orc-gradient-box.analyze-collaborate-checklist h1, .orc-gradient-box.analyze-collaborate-checklist h2, .orc-gradient-box.analyze-collaborate-checklist .checklist-icon{color:#000;}
 .orc-checklist-download.phase-3 .btn.btn-outline-secondary.btn-sm{border-color:#ffbf0091; color:#ffbf0091;}
 .orc-checklist-download.phase-3 .btn.btn-outline-secondary.btn-sm:hover{
   border-color: #ffbf0091!important;
@@ -207,7 +186,7 @@ svg :is(text, tspan) { font-family: inherit !important; font-weight: bold; point
 .orc-phase-hero.phase-4 { background:#edfff5;}
 .orc-hero-pills.phase-4, .orc-hero-checkpoint.phase-4 { background: #00c057a6; border:1px solid #00c057a6;color:#000;}
 .orc-gradient-box.preserve-share-checklist { background: #edfff5; border-left-color: #00c057a6;}
-.orc-gradient-box.preserve-share-checklist h2, .orc-gradient-box.preserve-share-checklist .checklist-icon{color: #000;}
+.orc-gradient-box.preserve-share-checklist h1, .orc-gradient-box.preserve-share-checklist h2, .orc-gradient-box.preserve-share-checklist .checklist-icon{color: #000;}
 .orc-checklist-download.phase-4 .btn.btn-outline-secondary.btn-sm{border-color:#00c057a6; color:#00c057a6;}
 .orc-checklist-download.phase-4 .btn.btn-outline-secondary.btn-sm:hover{
   border-color:#00c057a6 !important;
@@ -244,4 +223,89 @@ customizations for the accordions
 
 .accordion-button:not(.collapsed) {
   background-color: var(--bs-accordion-active-bg);
+}
+
+/* 
+customizations for the sub-section collapse buttons (Bootstrap collapse)
+*/
+
+/*
+  Collapse-button groups (Bootstrap collapse used as a tab-like selector).
+
+  The source keeps each heading directly followed by its panel so that the Word
+  output reads heading -> content. Flex `order` restores the tab-like HTML
+  layout: headings in a row, then the divider, then the open panel.
+
+  Each group gets a unique id so that `data-bs-parent` keeps one panel open
+  at a time within that group only.
+*/
+.collapse-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  column-gap: 0.5rem;
+}
+
+.collapse-tabs > .collapse-heading {
+  order: 1;
+}
+
+.collapse-tabs::after {
+  content: "";
+  order: 2;
+  flex-basis: 100%;
+  height: 0;
+  margin: 0.75rem 0 1rem;
+  border-bottom: 2px solid #8C4091;
+}
+
+.collapse-tabs > .collapse {
+  order: 3;
+  flex-basis: 100%;
+}
+
+:is(h1, h2, h3, h4, h5, h6).collapse-toggle {
+  cursor: pointer;
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0.5rem 2.5rem 0.5rem 1rem;
+  border: 1px solid var(--bs-border-color);
+  border-radius: 0.5rem;
+  background-color: var(--bs-tertiary-bg);
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, color 0.15s ease-in-out;
+}
+
+:is(h1, h2, h3, h4, h5, h6).collapse-toggle:hover {
+  background-color: var(--bs-secondary-bg);
+}
+
+:is(h1, h2, h3, h4, h5, h6).collapse-toggle:not(.collapsed) {
+  background-color: var(--bs-success-bg-subtle);
+  border-color: var(--osc-accent);
+  color: var(--osc-accent);
+}
+
+:is(h1, h2, h3, h4, h5, h6).collapse-toggle::after {
+  content: "";
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: translateY(-70%) rotate(45deg);
+  transition: transform 0.2s ease;
+}
+
+:is(h1, h2, h3, h4, h5, h6).collapse-toggle:not(.collapsed)::after {
+  transform: translateY(-30%) rotate(-135deg);
+}
+
+/* switch between collapse panels instantly instead of animating their height */
+.collapse-tabs > .collapsing {
+  transition: none;
 }
