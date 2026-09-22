@@ -72,7 +72,6 @@ repo-actions: false
 include-in-header:
   - text: |
       <script src="/assets/javascript/clear_filter_button.js" defer></script>
-      <script src="/assets/bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js" defer></script>
 ---
 
 
