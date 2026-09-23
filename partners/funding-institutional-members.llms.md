@@ -42,6 +42,20 @@ As a DFG-funded Collaborative Research Centre, TRR419 SHARP is committed to adva
 
 ------------------------------------------------------------------------
 
+![Department of Educational Sciences](images/lmu_logo.jpg)
+
+##### Department of Educational Sciences
+
+Contact Person:
+
+[Markus Gebhardt](../people/people/markus-gebhardt.llms.md)
+
+[ Website](https://www.lmu.de/edu/en/)
+
+At the Department of Educational Sciences, we are committed to advancing high-quality, evidence-based research and teaching that improves learning, education, and inclusion across diverse contexts. Our research covers the entire spectrum of educational sciences, ranging from basic research in education to pedagogical theories, lifelong learning, teacher education, and inclusive education research. As an institutional member of the LMU Open Science Center, we support the adoption of open, transparent, and reproducible research practices in educational research and beyond. Our partnership reflects our shared commitment to methodological rigor, responsible research, and fostering a culture of openness that strengthens both scientific progress and educational practice.
+
+------------------------------------------------------------------------
+
 ![Department of Psychology](images/lmu_logo.jpg)
 
 ##### Department of Psychology
