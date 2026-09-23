@@ -68,16 +68,6 @@ Max Planck Institute for Evolutionary Anthropology
 
 We benefit from the expertise of additional advisors on specific topics such as politics and didactics.
 
-[![Profile photo of Peter Edelsbrunner](people/images/edelsbrunner_peter.png)](../people/people/peter-edelsbrunner.llms.md)
-
-[Peter Edelsbrunner](../people/people/peter-edelsbrunner.llms.md)
-
-Prof. Dr.
-
-Instructional Design Advisor
-
-Psychology & Education
-
 [![Profile photo of Maximilian Frank](people/images/frank_maximilian.jpg)](../people/people/maximilian-frank.llms.md)
 
 [Maximilian Frank](../people/people/maximilian-frank.llms.md)
@@ -85,6 +75,16 @@ Psychology & Education
 M.Sc.
 
 Strategy Advisor
+
+Psychology & Education
+
+[![Profile photo of Peter Edelsbrunner](people/images/edelsbrunner_peter.png)](../people/people/peter-edelsbrunner.llms.md)
+
+[Peter Edelsbrunner](../people/people/peter-edelsbrunner.llms.md)
+
+Prof. Dr.
+
+Instructional Design Advisor
 
 Psychology & Education
 

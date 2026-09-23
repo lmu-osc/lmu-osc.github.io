@@ -53,3 +53,15 @@ Funding institutional members such as LMU Faculties and Clusters of Excellence p
 Departmental Study Grant 2026 €5K+
 
 Integration of Open Science training material into the Psychology curriculum
+
+------------------------------------------------------------------------
+
+![Münchener Universitätsgesellschaft e.V.](https://unigesellschaft.de/wp-content/uploads/MUG_Logo_21_ohne_SZ.svg)
+
+##### Münchener Universitätsgesellschaft e.V.
+
+[ Website](https://unigesellschaft.de/ueber-uns/)
+
+Förderantrag 2026 €3K
+
+LMU-wide survey "Responsible and reproducible research practices"
