@@ -52,4 +52,14 @@ listing:
         date: "2026"
         amount: "€5K+"
         project: "Integration of Open Science training material into the Psychology curriculum"
+
+  - name: "Münchener Universitätsgesellschaft e.V."
+    image_url: "https://unigesellschaft.de/wp-content/uploads/MUG_Logo_21_ohne_SZ.svg"
+    website_url: "https://unigesellschaft.de/ueber-uns/"
+    funding:
+      - name: "Förderantrag"
+        date: "2026"
+        amount: "€3K"
+        project: 'LMU-wide survey "Responsible and reproducible research practices"'
+  
 ---
