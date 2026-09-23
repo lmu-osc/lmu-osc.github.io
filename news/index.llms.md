@@ -2,6 +2,7 @@
 
 | Date | Title | Categories |
 |----|----|----|
+| Sep 23, 2026 | [The Department of Educational Sciences joins the OSC](../news/news/2026-09-23-educational-sciences-dept-institutional-member.llms.md) | New Members |
 | Sep 2, 2026 | [Reproducibility in Business and Management Research](../news/news/2026-09-02-reproducibility-in-business-research.llms.md) | Publications |
 | Aug 5, 2026 | [Newsletter July 2026](../news/news/2026-08-05-newsletter-july.llms.md) | Newsletters |
 | Jul 20, 2026 | [OSC Member Maximilian Frank Receives 2026 DGPs Quality Assurance Award](../news/news/2026-07-20-maximilian-frank-dpg-award.llms.md) | Awards/Recognition |

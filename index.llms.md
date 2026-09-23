@@ -69,6 +69,14 @@ Keep up to date with our latest news releases, and upcoming events.
 
 News [View All News](news/index.llms.md)
 
+###### Sep 23, 2026
+
+##### [The Department of Educational Sciences joins the OSC](news/news/2026-09-23-educational-sciences-dept-institutional-member.llms.md)
+
+The OSC welcomes the Department of Educational Sciences as our new funding institutional member!
+
+[Read More →](news/news/2026-09-23-educational-sciences-dept-institutional-member.llms.md)
+
 ###### Sep 2, 2026
 
 ##### [Reproducibility in Business and Management Research](news/news/2026-09-02-reproducibility-in-business-research.llms.md)
@@ -84,14 +92,6 @@ New editorial published in the Journal of the Academy of Marketing Science by OS
 Read the latest news and updates from the LMU Open Science Center in our July 2026 newsletter.
 
 [Read More →](news/news/2026-08-05-newsletter-july.llms.md)
-
-###### Jul 20, 2026
-
-##### [OSC Member Maximilian Frank Receives 2026 DGPs Quality Assurance Award](news/news/2026-07-20-maximilian-frank-dpg-award.llms.md)
-
-OSC Member and Special Advisor Maximilian Frank receives the Award for Quality Assurance in Psychology by the German Psychological Society (DGPs)
-
-[Read More →](news/news/2026-07-20-maximilian-frank-dpg-award.llms.md)
 
 Events [View All Events](events/index.llms.md)
 
