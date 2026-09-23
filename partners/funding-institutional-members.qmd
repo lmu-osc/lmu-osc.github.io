@@ -37,6 +37,15 @@ listing:
         As a DFG-funded Collaborative Research Centre, TRR419 SHARP is committed to advancing rigorous, transparent, and reproducible research in the learning sciences. Our work brings together interdisciplinary expertise from LMU Munich, TUM, the University of Augsburg, and the Leibniz Supercomputing Centre to investigate simulation-based learning, process diagnostics, and AI-supported personalized interventions in higher education.
         As an institutional member of the LMU Open Science Center, we support the development of open research practices, sustainable research data management, and reproducible workflows across collaborative projects. Our involvement reflects our commitment to methodological rigor, shared infrastructures, and the transparent dissemination of scientific knowledge in interdisciplinary and data-intensive research.
 
+    - name: "Department of Educational Sciences"
+      image_url: "images/lmu_logo.jpg"
+      contact:
+        - name: "Markus Gebhardt"
+          link: "/people/people/markus-gebhardt.qmd"
+      website_url: "https://www.lmu.de/edu/en/"
+      description: |
+        At the Department of Educational Sciences, we are committed to advancing high-quality, evidence-based research and teaching that improves learning, education, and inclusion across diverse contexts. Our research covers the entire spectrum of educational sciences, ranging from basic research in education to pedagogical theories, lifelong learning, teacher education, and inclusive education research. As an institutional member of the LMU Open Science Center, we support the adoption of open, transparent, and reproducible research practices in educational research and beyond. Our partnership reflects our shared commitment to methodological rigor, responsible research, and fostering a culture of openness that strengthens both scientific progress and educational practice.
+
     - name: "Department of Psychology"
       image_url: "images/lmu_logo.jpg"
       contact:
@@ -63,6 +72,4 @@ listing:
       website_url: "https://www.som.lmu.de/en/"
       description: |
         The LMU Munich School of Management is committed to advancing the principles of open science and research transparency. By becoming an institutional member of the LMU's Open Science Center, we aim to foster a culture of openness, collaboration, and integrity in our research community. We believe that promoting open access to data, methodologies, and findings will enhance the quality and reproducibility of research in business studies, ultimately contributing to innovative and impactful solutions for global business challenges.
-
-
 ---
