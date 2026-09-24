@@ -419,6 +419,30 @@ These platforms either give you access to existing data or provide [**metadata**
 
 :::
 
+<!-- card-->
+::: {.col}
+```{=html}
+<div class="card orc-card-tool p-3 bg-light-subtle h-100">
+<div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
+  <div class="d-flex gap-2">
+    <div class="orc-card-tool-icon p-2 rounded">
+        <img src="/assets/img/lmu-favicon.ico" class="img-fluid" alt="LMU logo">
+    </div>
+  </div>
+  <span class="badge rounded-5 bg-success-subtle text-success align-self-start">Supported at LMU</span>
+</div>
+<h4 class="card-title">Open Data LMU</h4>
+<p class="card-text">Institutional data repository, provided by the University Library.</p>
+<a href="https://data.ub.uni-muenchen.de/" class="stretched-link" target="_blank" rel="noopener"></a>
+</div>
+```
+
+::: {.content-visible unless-format="html"}
+* [Open Data LMU](https://data.ub.uni-muenchen.de/): Institutional data repository, provided by the University Library.
+:::
+
+:::
+
 :::
 
 :::
@@ -882,7 +906,7 @@ A **Data Management Plan (DMP)** documents how you will handle research data thr
 - **What constraints apply** (consent, anonymization, GDPR, data use agreements)? See our lecture "[Maintaining privacy with open data](https://lmu-osc.github.io/training/data-management/maintaining-privacy-with-open-data.html)", [1.2.3. Ethics](#sec-legal-requirements){.mark} and [[2.3. Ethics & Privacy](02-collect-and-manage.qmd#sec-ethics-and-privacy){.mark}]{.content-visible when-format="html"}[ @sec-ethics-and-privacy]{.content-hidden when-format="html"}.
 
 
-The specific questions vary by discipline, data type, and funder requirements. DMP tools like [RDMO](https://rdmo.ub.lmu.de/) guide you through the relevant questions with funder-specific templates. 
+The specific questions vary by discipline, data type, and funder requirements. DMP tools like [RDMO](https://rdmo.ub.lmu.de/), provided by the University Library, guide you through the relevant questions with funder-specific templates. 
 
 
 :::{.callout-tip}
@@ -987,13 +1011,13 @@ The specific questions vary by discipline, data type, and funder requirements. D
   <span class="badge rounded-5 bg-success-subtle text-success align-self-start">Supported at LMU</span>
 </div>
 <h4 class="card-title">RDMO</h4>
-<p class="card-text">Funder-compliant DMP templates (e.g. DFG, ERC).</p>
+<p class="card-text">Funder-compliant DMP templates (e.g. DFG, ERC), provided by the University Library.</p>
 <a href="https://rdmo.ub.lmu.de/" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
 ```
 
 ::: {.content-visible unless-format="html"}
-* [RDMO](https://rdmo.ub.lmu.de/): Funder-compliant DMP templates (e.g. DFG, ERC).
+* [RDMO](https://rdmo.ub.lmu.de/): Funder-compliant DMP templates (e.g. DFG, ERC), provided by the University Library.
 :::
 
 :::
