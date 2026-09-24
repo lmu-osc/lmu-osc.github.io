@@ -100,7 +100,10 @@ jobs:
         env:
           QUARTO_PROFILE: production
         with:
-          to: html
+          # "all" renders every format declared in the config (html for the site,
+          # plus docx where a page opts in, e.g. research-handbook.qmd).
+          # Using "html" here silently skipped the handbook's docx output.
+          to: all
 
       - name: Deploy to prod-pages
         uses: peaceiris/actions-gh-pages@v4
