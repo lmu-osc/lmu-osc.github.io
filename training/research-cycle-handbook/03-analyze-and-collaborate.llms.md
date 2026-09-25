@@ -128,7 +128,7 @@ Collaborative coding with GitHub and RStudio (1h)
 
 ####  TOOLS & RESOURCES
 
-![LMU OSC logo](../../assets/img/lmu_osc_logo.jpg)
+![LRZ logo](../../assets/img/lrz-logo.png)
 
 ![GitLab logo](../../assets/img/gitlab.svg)
 
@@ -340,7 +340,7 @@ Use Git branches and further collaborative features (2h)
 
 ####  TOOLS & RESOURCES
 
-![LMU OSC logo](../../assets/img/lmu_osc_logo.jpg)
+![LRZ logo](../../assets/img/lrz-logo.png)
 
 ![GitLab logo](../../assets/img/gitlab.svg)
 

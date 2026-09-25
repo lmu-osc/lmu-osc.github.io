@@ -67,7 +67,7 @@ Implement data anonymization techniques in R. (3h)
 
 ####  TOOLS & RESOURCES
 
-![LMU OSC logo](../../assets/img/lmu_osc_logo.jpg)
+![LMU logo](../../assets/img/lmu-favicon.ico)
 
 #### LMU Guidelines for Safeguarding Good Scientific Practice
 
@@ -242,6 +242,8 @@ See our [code publishing tutorial](https://lmu-osc.github.io/code-publishing/) f
 
 ![LMU OSC logo](../../assets/img/lmu_osc_logo.jpg)
 
+![Zenodo logo](../../assets/img/zenodo-icon-blue.svg)
+
 OSC Tutorial
 
 #### Code Publishing
@@ -328,6 +330,8 @@ To publish your code on Zenodo, we recommend to
 ####  LEARN MORE
 
 ![LMU OSC logo](../../assets/img/lmu_osc_logo.jpg)
+
+![Zenodo logo](../../assets/img/zenodo-icon-blue.svg)
 
 OSC Tutorial
 
@@ -438,7 +442,7 @@ The current contract conditions for LMU Munich can be accessed on the [Universit
 
 ####  TOOLS & RESOURCES
 
-![LMU OSC logo](../../assets/img/lmu_osc_logo.jpg)
+![LMU logo](../../assets/img/lmu-favicon.ico)
 
 Supported at LMU
 

@@ -404,7 +404,7 @@ Connect to GitHub from Git within RStudio (1h).
 
 ####  TOOLS & RESOURCES
 
-![LMU OSC logo](../../assets/img/lmu_osc_logo.jpg)
+![LRZ logo](../../assets/img/lrz-logo.png)
 
 ![GitLab logo](../../assets/img/gitlab.svg)
 
