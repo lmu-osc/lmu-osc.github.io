@@ -188,7 +188,7 @@ When deciding whether data should be shared, consider the following:
 ```{=html}
 <div class="card orc-card-tool p-3 bg-light-subtle h-100">
 <div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
-<img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+<img src="/assets/img/lmu-favicon.ico" class="img-fluid" alt="LMU logo">
 </div>
 <h4 class="card-title">LMU Guidelines for Safeguarding Good Scientific Practice</h4>
 <p class="card-text">Implementation of the German Research Foundation's (DFG) Code of Conduct</p>
@@ -657,6 +657,9 @@ Importantly, if data are removed from an existing repository, they may still rem
     <div class="orc-card-tool-icon p-2 rounded">
       <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
     </div>
+    <div class="orc-card-tool-icon p-2 rounded">
+      <img src="/assets/img/zenodo-icon-blue.svg" class="img-fluid" alt="Zenodo logo">
+    </div>
   </div>
   <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
 </div>
@@ -887,6 +890,9 @@ To publish your code on Zenodo, we recommend to<!-- these instructions contradic
   <div class="d-flex gap-2">
     <div class="orc-card-tool-icon p-2 rounded">
       <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+    </div>
+    <div class="orc-card-tool-icon p-2 rounded">
+      <img src="/assets/img/zenodo-icon-blue.svg" class="img-fluid" alt="Zenodo logo">
     </div>
   </div>
   <span class="badge rounded-5 bg-success-subtle text-success align-self-start">OSC Tutorial</span>
@@ -1220,7 +1226,7 @@ The current contract conditions for LMU Munich can be accessed on the [Universit
 <div class="d-flex flex-wrap gap-3 align-items-center justify-content-between mb-3">
   <div class="d-flex gap-2">
     <div class="orc-card-tool-icon p-2 rounded">
-      <img src="/assets/img/lmu_osc_logo.jpg" class="img-fluid" alt="LMU OSC logo">
+      <img src="/assets/img/lmu-favicon.ico" class="img-fluid" alt="LMU logo">
     </div>
   </div>
   <span class="badge rounded-5 bg-success-subtle text-success align-self-start">Supported at LMU</span>
