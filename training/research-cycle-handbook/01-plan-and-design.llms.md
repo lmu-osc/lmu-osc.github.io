@@ -172,6 +172,8 @@ Collaborative coding with GitHub and RStudio (1h)
 
 ![LMU OSC logo](../../assets/img/lmu_osc_logo.jpg)
 
+![Zenodo logo](../../assets/img/zenodo-icon-blue.svg)
+
 OSC Tutorial
 
 #### Code Publishing
@@ -348,7 +350,7 @@ Overview of components, tips, and tools. (30 min)
 
 ####  TOOLS & RESOURCES
 
-![LMU OSC logo](../../assets/img/lmu_osc_logo.jpg)
+![LMU logo](../../assets/img/lmu-favicon.ico)
 
 ![RDMO logo](../../assets/img/rdmo-logo.png)
 
