@@ -1,0 +1,38 @@
+---
+title: Dr. Markus Gödker
+academic_title: Dr. 
+family-names: Gödker
+given-names: Markus
+categories:
+  - Psychology & Education
+memberships:
+  - type: lmu-individual
+    status: active
+    start_year: 2026
+    position: Researcher
+    faculty: Psychology & Education
+    
+# if desired by the member, add a photo to the people/people/images folder and link to it here
+photo: "images/markus-goedker.jpg"
+email: m.goedker@lmu.de
+links:
+  - label: "LMU Profile"
+    url: "https://www.lmu.de/psy/en/persons/contact-page/markus-goedker-f7680f7a.html"
+
+# Mission statement paragraphs - variable number
+mission_statement: |
+    In my own research, I implement practices such as preregistration and Open Access publishing. Open and FAIR data is essential for me, particularly for my current work with meta-analyses. I believe that the Open Science community can extend more towards Open and FAIR theory building. I am interested in advancing infrastructures and practices that make theories, definitions, and hypotheses more transparent, reusable, and interoperable.
+
+    In the immediate future, I would be happy to contribute to workshops and training activities on R, GitHub, and Quarto. As a longer-term goal, I am particularly interested in developing lectures, workshops, and community initiatives around Open and FAIR theory building, including transparent definitions, theoretical frameworks, and theory-driven cumulative science.
+
+
+# Research interests - variable number
+research_interests:
+  - "Education and Meta-Research"
+
+
+# these must be included always.
+template: templates/people-template.html
+filters: 
+    - templates/people_filter.lua
+---
