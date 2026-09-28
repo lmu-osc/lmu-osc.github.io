@@ -220,12 +220,6 @@ Supported at LMU
 
 Long-term archival storage for LMU Munich
 
-![OSF logo](../../assets/img/open-science-framework-and-open-science-center.png)
-
-#### OSF
-
-Research project management platform including storage.
-
 ### 2.2.2 Organization
 
 Your folder structure and file naming conventions determine whether you and others can navigate your project months or years later. Establish these conventions at the start of your project and document them. When collaborating, ensure everyone follows the same system.

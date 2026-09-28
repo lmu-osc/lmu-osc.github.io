@@ -87,7 +87,7 @@ Registry of clinical trial protocols.
 ##### How to find existing datasets?
 
 - **Search for discipline-specific repositories on [re3data](https://www.re3data.org/)** which is a central registry of many repositories
-- **Explore subject agnostic repositories** such as [DataCite](https://datacite.org/), [FigShare](https://figshare.com/browse), [Open Science Framework (OSF)](https://osf.io/search), or [Zenodo](https://zenodo.org/).
+- **Explore subject agnostic repositories** such as [DataCite](https://datacite.org/), [FigShare](https://figshare.com/browse), [Open Science Framework (OSF) 2012-2026](https://osf.io/search), or [Zenodo](https://zenodo.org/).
 
 These platforms either give you access to existing data or provide ***metadata*** and explanations on how to request access to the data.
 
@@ -130,7 +130,7 @@ General-purpose repository for data, software, reports.
 
 ![OSF icon](../../assets/img/open-science-framework-and-open-science-center.png)
 
-#### Open Science Framework
+#### Open Science Framework (2012-2026)
 
 General-purpose repository for data, materials, reports.
 
@@ -450,7 +450,7 @@ List of journals offering Registered Reports.
 
 #### Open Science Framework
 
-Preregistration templates, embargoes, file storage.
+Preregistration templates & embargoes.
 
 ### 1.4.2 Simulation of Data
 
