@@ -137,7 +137,7 @@ Choose a repository that suits your data type, your field’s expectations, and 
 
 - **Discipline-specific repositories** are often the best choice. They use metadata standards your community expects, making your data findable by researchers in your field. Search [re3data](https://www.re3data.org/) to find repositories for your domain.
 
-- **General-purpose repositories** like [Zenodo](https://zenodo.org/) or [OSF](https://osf.io/) accept any data type. They provide DOIs and long-term preservation, but may lack the specialized metadata fields of discipline-specific options.
+- **General-purpose repositories** like [Zenodo](https://zenodo.org/) accept any data type. They provide DOIs and long-term preservation, but may lack the specialized metadata fields of discipline-specific options.
 
 - **Institutional repositories** may be required by your funder. Choosing the LMU repository [Open Data LMU](https://data.ub.uni-muenchen.de/) also ensures you can get the support of the [Research Data Management team of the University Library](https://www.en.ub.uni-muenchen.de/writing/research_data/research-data-management/index.html).
 
@@ -150,12 +150,6 @@ Whichever you choose, ensure the repository provides a **DOI** (Digital Object I
 #### re3data
 
 Registry of research data repositories.
-
-![OSF icon](../../assets/img/open-science-framework-and-open-science-center.png)
-
-#### Open Science Framework
-
-General-purpose repository for data, materials, reports.
 
 ![Zenodo icon](../../assets/img/zenodo-icon-blue.svg)
 
@@ -356,7 +350,7 @@ Any material needed to reproduce or replicate your study should also be shared o
 For instance, you can share your:
 
 - **Share wet-lab protocols** on e.g. [protocols.io](https://www.protocols.io/), see [2.1.1. Lab Protocols](../../training/research-cycle-handbook/02-collect-and-manage.llms.md#sec-data-collection).
-- **Share survey text, instructions, or scoring sheets** on e.g. [OSF](https://osf.io/)
+- **Share survey text, instructions, or scoring sheets** on e.g. [Zenodo](https://zenodo.org)
 
 We recommend to use a creative Common license such as
 
@@ -373,11 +367,11 @@ See the [Creative Common license chooser](https://creativecommons.org/chooser/) 
 
 Share, discover, cite, and improve research protocols.
 
-![OSF logo](../../assets/img/open-science-framework-and-open-science-center.png)
+![zenodo logo](../../assets/img/zenodo-icon-blue.svg)
 
-#### OSF
+#### Zenodo
 
-Project management platform including storage and DOI.
+General-purpose repository for data, software, reports.
 
 ![Creative Commons logo](../../assets/img/creative-commons-logo.png)
 
