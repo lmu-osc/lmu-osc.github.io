@@ -6,12 +6,12 @@ Learn how to write and publish a reusable, step-by-step protocol.
 
 ## Lecture: reproducible protocols (1) \| Report detailed methods & protocols - ReproducibiliTeach
 
-# Se produjo un error.
+# An error occurred.
 
-No se puede ejecutar JavaScript.
+Unable to execute JavaScript.
 
 ## Lecture: reproducible protocols (2) \| How to write a reusable, step-by-step protocol - ReproducibiliTeach
 
-# Se produjo un error.
+# An error occurred.
 
-No se puede ejecutar JavaScript.
+Unable to execute JavaScript.
