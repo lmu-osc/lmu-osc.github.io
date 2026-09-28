@@ -6,7 +6,6 @@ css: /training/research-cycle-handbook/handbook-styles.css
 format:
   html:
     page-layout: article
-    anchor-sections: false
 ---
 
 ```{=html}
@@ -20,7 +19,7 @@ format:
                 style="width:44px; height:44px; background-color:#eaf5ee;">
             <i class="bi bi-book" style="font-size:1.2rem; color:#00883A;"></i>
           </span>
-          <h5 class="card-title fw-semibold mb-0" style="color:#00883A;">What is this handbook?</h5>
+          <h5 class="card-title fw-semibold mb-0 no-anchor" style="color:#00883A;">What is this handbook?</h5>
         </div>
         <p class="card-text" style="line-height:1.75; text-align:justify;">
           This open research cycle handbook provides <strong class="text-black">detailed practical guidance for making research open, responsible, and reproducible by design</strong>. It covers the full research life cycle, from formulating questions and preregistering studies to publishing articles, data, and code. It links to our self-paced tutorials, LMU support services, and essential tools to support open research in everyday practice.
@@ -36,7 +35,7 @@ format:
                 style="width:44px; height:44px; background-color:#eaf5ee;">
             <i class="bi bi-people" style="font-size:1.2rem; color:#00883A;"></i>
           </span>
-          <h5 class="card-title fw-semibold mb-0" style="color:#00883A;">Who is it for?</h5>
+          <h5 class="card-title fw-semibold mb-0 no-anchor" style="color:#00883A;">Who is it for?</h5>
         </div>
         <p class="card-text" style="line-height:1.75;text-align:justify;">
           This manual can be used by <strong class="text-black">individual researchers in any scientific field </strong> but is primarily designed to be adapted and adopted by  <strong class="text-black">research groups</strong> as a whole. Each section outlines concrete actions for ongoing projects and concludes with a team checkpoint.
@@ -55,7 +54,7 @@ format:
           style="width:44px; height:44px; background-color:#eaf5ee;">
             <i class="bi bi-arrow-clockwise" style="font-size:1.2rem; color:#00883A;"></i>
           </span>
-          <h5 class="card-title fw-semibold mb-0" style="color:#00883A;">Navigate our open research cycle handbook</h5>
+          <h5 class="card-title fw-semibold mb-0 no-anchor" style="color:#00883A;">Navigate our open research cycle handbook</h5>
         </div>
         <div class="d-flex justify-content-center">
           {{< include /training/images/os-cycle.svg >}}
@@ -74,7 +73,7 @@ format:
                 style="width:44px; height:44px; background-color:#eaf5ee;">
             <i class="bi bi-tools" style="font-size:1.2rem; color:#00883A;"></i>
           </span>
-          <h5 class="card-title fw-semibold mb-0" style="color:#00883A;">How to build your own lab handbook?</h5>
+          <h5 class="card-title fw-semibold mb-0 no-anchor" style="color:#00883A;">How to build your own lab handbook?</h5>
         </div>
         <div class="justify-content-center" style="line-height:1.75;">
         Based on our material, it is easy to build a tailored research practice handbook for your own research group (see <a href="https://doi.org/10.5281/zenodo.16262260">example</a>):
@@ -95,7 +94,7 @@ format:
 
 <div class="accordion orc-accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle" id="accordionExample">
   <div class="accordion-item">
-    <h2 class="accordion-header" id="headingOne">
+    <h2 class="accordion-header" id="about-this-project">
       <button class="accordion-button collapsed fw-semibold fs-5" type="button" 
               data-bs-toggle="collapse" 
               data-bs-target="#collapseOne" 

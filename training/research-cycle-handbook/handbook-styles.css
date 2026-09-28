@@ -14,6 +14,23 @@ h1 i, h2 i, h3 i{ color: var(--osc-accent); margin-right: .5rem; }
 
 .mark,.quarto-xref { background: white; color:var(--orc-gray-400); font-weight:600; font-style: italic; text-decoration: none;}
 
+/* align the anchor link besides the text rather than underneath */
+.orc-accordion .accordion-header {
+    position: relative;
+}
+
+.orc-accordion .accordion-header > .anchorjs-link {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(92px, -50%);
+    z-index: 10;
+}
+
+.orc-accordion .accordion-header > .anchorjs-link {
+    display: inline-flex;
+    align-items: center;
+}
 
 /* ========================================
    2. CARDS
