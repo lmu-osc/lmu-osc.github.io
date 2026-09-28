@@ -1,6 +1,6 @@
 # Janna Hämpke
 
-![Profile photo of ](images/default.svg)
+![Profile photo of ](images/janna_haempke.png)
 
 Ph.D. Candidate
 

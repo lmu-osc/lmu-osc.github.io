@@ -80,7 +80,7 @@ Researcher
 
 Math, Informatics & Stats
 
-[![Profile](people//images/default.svg)](../people/people/janna-haempke.llms.md)
+[![Profile](people/images/janna_haempke.png)](../people/people/janna-haempke.llms.md)
 
 [Janna Hämpke](../people/people/janna-haempke.llms.md)
 
