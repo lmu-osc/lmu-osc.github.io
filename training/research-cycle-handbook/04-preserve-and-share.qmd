@@ -387,7 +387,7 @@ Choose a repository that suits your data type, your field's expectations, and yo
 
 - **Discipline-specific repositories** are often the best choice. They use metadata standards your community expects, making your data findable by researchers in your field. Search [re3data](https://www.re3data.org/) to find repositories for your domain.
 
-- **General-purpose repositories** like [Zenodo](https://zenodo.org/) or [OSF](https://osf.io/) accept any data type. They provide DOIs and long-term preservation, but may lack the specialized metadata fields of discipline-specific options.
+- **General-purpose repositories** like [Zenodo](https://zenodo.org/) accept any data type. They provide DOIs and long-term preservation, but may lack the specialized metadata fields of discipline-specific options.
 
 - **Institutional repositories** may be required by your funder. Choosing the LMU repository [Open Data LMU](https://data.ub.uni-muenchen.de/) also ensures you can get the support of the [Research Data Management team of the University Library](https://www.en.ub.uni-muenchen.de/writing/research_data/research-data-management/index.html).
 
@@ -419,26 +419,6 @@ Whichever you choose, ensure the repository provides a **DOI** (Digital Object I
 :::
 
 :::
-
-
-::: {.col}
-```{=html}
-<div class="card orc-card-tool p-3 bg-light-subtle h-100">
-    <div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
-        <img src="/assets/img/open-science-framework-and-open-science-center.png" class="img-fluid" alt="OSF icon">
-    </div>
-    <h4 class="card-title">Open Science Framework</h4>
-    <p class="card-text">General-purpose repository for data, materials, reports.</p>
-    <a href="https://osf.io/registries/" class="stretched-link" target="_blank" rel="noopener"></a>
-</div>
-```
-
-::: {.content-visible unless-format="html"}
-* [Open Science Framework](https://osf.io/registries/): General-purpose repository for data, materials, reports.
-:::
-
-:::
-
 
 <!-- card-->
 ::: {.col}
@@ -988,7 +968,7 @@ Any material needed to reproduce or replicate your study should also be shared o
 For instance, you can share your:
 
 - **Share wet-lab protocols** on e.g. [protocols.io](https://www.protocols.io/), see [[2.1.1. Lab Protocols](02-collect-and-manage.qmd#sec-data-collection){.mark}]{.content-visible when-format="html"}[ @sec-data-collection]{.content-hidden when-format="html"}.
-- **Share survey text, instructions, or scoring sheets** on e.g. [OSF](https://osf.io/)
+- **Share survey text, instructions, or scoring sheets** on e.g. [Zenodo](https://zenodo.org)
 
 We recommend to use a creative Common license such as
 
@@ -1025,10 +1005,10 @@ See the [Creative Common license chooser](https://creativecommons.org/chooser/) 
 ```{=html}
 <div class="card orc-card-tool p-3 bg-light-subtle h-100">
 <div class="orc-card-tool-icon p-2 rounded mb-3" style="width:fit-content;"> 
-<img src="/assets/img/open-science-framework-and-open-science-center.png" class="img-fluid" alt="OSF logo">
+<img src="/assets/img/zenodo-icon-blue.svg" class="img-fluid" alt="zenodo logo">
 </div>
-<h4 class="card-title">OSF</h4>
-<p class="card-text">Project management platform including storage and DOI.</p>
+<h4 class="card-title">Zenodo</h4>
+<p class="card-text">General-purpose repository for data, software, reports.</p>
 <a href="https://osf.io/" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
 ```
