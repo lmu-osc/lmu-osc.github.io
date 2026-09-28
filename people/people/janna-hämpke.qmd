@@ -1,0 +1,25 @@
+---
+title: Janna Hämpke
+academic_title: M.Sc. in Psychology
+family-names: Hämpke
+given-names: Janna
+categories:
+  - Psychology & Education
+memberships:
+  - type: fellow
+    status: active
+    position: Ph.D. Candidate
+    faculty: Psychology & Education
+email: janna.haempke@psy.lmu.de
+links:
+  - label: 'LMU Profile'
+    url: https://www.lmu.de/psy/de/personen/kontaktseite/janna-haempke-bf9a1f3c.html
+mission_statement: |
+    I am a PhD candidate in personality psychology at LMU Munich, exploring the structure, psychological relevance, and dynamics of worldviews. Personality and social psychology have been central to the replication crisis, with many findings proving difficult to replicate. This makes open science practices all the more important for enabling credible, replicable research based on shared standards. In my work, I particularly emphasise preregistration, the sharing of data, materials, and code where appropriate, and reproducible workflows.
+
+
+template: templates/people-template.html
+filters: 
+    - templates/people_filter.lua
+---
+
