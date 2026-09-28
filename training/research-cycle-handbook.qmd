@@ -95,11 +95,12 @@ format:
 <div class="accordion orc-accordion my-4 mx-2 rounded-3 shadow-sm bg-light-subtle" id="accordionExample">
   <div class="accordion-item">
     <h2 class="accordion-header" id="about-this-project">
-      <button class="accordion-button collapsed fw-semibold fs-5" type="button" 
-              data-bs-toggle="collapse" 
-              data-bs-target="#collapseOne" 
+      <button class="accordion-button collapsed fw-semibold fs-5"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
               aria-expanded="false">
-        About this project
+        <span class="accordion-title">About this project</span>
       </button>
     </h2>
 
