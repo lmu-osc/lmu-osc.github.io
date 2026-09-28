@@ -80,6 +80,14 @@ Researcher
 
 Math, Informatics & Stats
 
+[![Profile](people//images/default.svg)](../people/people/janna-haempke.llms.md)
+
+[Janna Hämpke](../people/people/janna-haempke.llms.md)
+
+Ph.D. Candidate
+
+Psychology & Education
+
 [](https://orcid.org/0000-0003-0374-5625)
 
 [![Profile](people//images/default.svg)](../people/people/florian-kohrt.llms.md)
