@@ -19,17 +19,21 @@ h1 i, h2 i, h3 i{ color: var(--osc-accent); margin-right: .5rem; }
     position: relative;
 }
 
-.orc-accordion .accordion-header > .anchorjs-link {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(92px, -50%);
-    z-index: 10;
+.orc-accordion .accordion-button {
+    justify-content: center;
 }
 
+.orc-accordion .accordion-title {
+    display: inline-block;
+}
+
+
 .orc-accordion .accordion-header > .anchorjs-link {
-    display: inline-flex;
-    align-items: center;
+    position: absolute !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    left: calc(50% + 90px);
+    z-index: 10;
 }
 
 /* ========================================
