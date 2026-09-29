@@ -14,7 +14,7 @@ Faculty of Psychology & Education
 
 [Department of Psychology](https://www.psy.lmu.de/)
 
-[](https://github.com/nicebread) [](https://orcid.org/0000-0002-8282-3910) [](https://scicomm.xyz/@nicebread)
+[](https://scicomm.xyz/@nicebread) [](https://github.com/nicebread) [](https://orcid.org/0000-0002-8282-3910)
 
 ## Mission Statement
 
