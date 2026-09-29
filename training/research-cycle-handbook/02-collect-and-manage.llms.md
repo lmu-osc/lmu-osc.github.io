@@ -53,7 +53,7 @@ Supported at LMU
 
 #### eLabFTW
 
-Electronic Lab Notebook hosted by LMU Munich.
+Electronic Lab Notebook, provided by the University Library.
 
 ![Chemotion icon](../../assets/img/chemotion-icon.png)
 
@@ -61,7 +61,7 @@ Supported at LMU
 
 #### Chemotion
 
-ELN hosted by the Faculty for Chemistry and Pharmacy.
+Electronic Lab Notebook, provided by the Faculty for Chemistry and Pharmacy.
 
 ![Protocols.io icon](../../assets/img/protocols-io-favicon.ico)
 

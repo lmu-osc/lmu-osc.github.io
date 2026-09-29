@@ -164,7 +164,7 @@ Supported at LMU
 
 #### Open Data LMU
 
-Institutional data repository.
+Institutional data repository, provided by the University Library.
 
 ### 4.1.4 Data Licenses
 
@@ -489,7 +489,7 @@ Supported at LMU
 
 #### Open Access LMU
 
-Institutional publication repository.
+Institutional publication repository, provided by the University Library.
 
 ![OSF logo](../../assets/img/open-science-framework-and-open-science-center.png)
 
