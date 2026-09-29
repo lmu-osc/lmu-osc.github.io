@@ -14,7 +14,8 @@ Data processing and analysis should be reproducible – independent of which sof
 
 ### 3.1.1 Programming
 
-- **Create a self-contained project folder**. Include data, code, documentation, and outputs in a single structured environment, ensuring the project remains understandable, reproducible, and portable across systems and collaborators. If you use the free and open source software RStudio to manage your R project, your project directory (or folder) should contain a .Rproj file (see [R tutorial](https://lmu-osc.github.io/introduction-to-R/)). **Use relative paths** (i.e. `“./subfolder”`, where `.` represents the root of your .Rproj directory) or the library `here`, so the project stays portable to another environment
+- **Create a self-contained project folder**. Include data, code, documentation, and outputs in a single structured environment, ensuring the project remains understandable, reproducible, and portable across systems and collaborators. If you use the free and open source software RStudio to manage your R project, your project directory (or folder) should contain a .Rproj file (see [R tutorial](https://lmu-osc.github.io/introduction-to-R/)).
+- **Use relative paths so the project stays portable.** In an RStudio project, the working directory of an R script is the project root by default, so `read.csv("01_data/raw/data.csv")` works from any script. For a Quarto file the working directory is the folder of that file, so the same line would need `"../01_data/raw/data.csv"`, and would break if you move the file within the project. The [`here`](https://here.r-lib.org/) package avoids this: `read.csv(here::here("01_data", "raw", "data.csv"))` works the same in R scripts and Quarto files and always starts from the project root (see our [R tutorial](https://lmu-osc.github.io/introduction-to-R/qmd/load-data/load-data.html)).
 - **Use a standard folder structure**. Your code repository should include a standard folder structure that make sense for your type of research, ideally shared across your team members. You can for instance use our [research project template](https://github.com/lmu-osc/research-project-template).
 - **Stop clicking, start coding**. Automatize all possible steps, including data acquisition (see [2.1. Data Collection](../../training/research-cycle-handbook/02-collect-and-manage.llms.md#sec-data-collection)), data processing and transformation, data analyses, data visualization, and results reporting (see [3.2. Reporting Results](#sec-reporting-results))
 - **Structure, comment, and standardize your scripts.** R scripts themselves should follow current standards to increase their readability (see [Readable Code Lecture](https://lmu-osc.github.io/training/reproducible-processes/readable-code.html)). Use meaningful names for variables, functions, and scripts. Add comments to your code explaining *why* you made a decision, any known limitations to your code, and citations of methods. **Do not include sensitive information such as credentials or name of excluded patient as comments in your code!**
@@ -70,7 +71,7 @@ Supported at LMU
 
 #### LRZ Supercomputing
 
-Virtual machines and HPC for LMU Munich
+Virtual machines and HPC for LMU Munich.
 
 ### 3.1.2 Version Control
 
@@ -146,7 +147,7 @@ Supported at LMU
 
 #### LMU Chat (Matrix)
 
-Institutional open source chat service for LMU Munich.
+Institutional chat service for LMU Munich.
 
 ### 3.1.3 Computational Environment Management
 
@@ -356,7 +357,7 @@ Supported at LMU
 
 #### LRZ Sync & Share
 
-Cloud storage service for LMU Munich
+File sync and share service for LMU Munich.
 
 ![LMU OSC logo](https://cms-cdn.lmu.de/assets/img/favicon.ico)
 
@@ -366,7 +367,7 @@ Supported at LMU
 
 #### LMU Chat (Matrix)
 
-Institutional open source chat service for LMU Munich.
+Institutional chat service for LMU Munich.
 
 ### 3.2.2 Reporting guidelines
 

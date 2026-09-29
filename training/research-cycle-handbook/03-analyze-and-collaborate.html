@@ -512,7 +512,8 @@ Checkpoints: Repository &amp; Code Peer-Review + Result Presentation
 </section>
 <div id="collapse-programming" class="collapse show" data-bs-parent="#data-processing-analysis-collapse">
 <ul>
-<li><strong>Create a self-contained project folder</strong>. Include data, code, documentation, and outputs in a single structured environment, ensuring the project remains understandable, reproducible, and portable across systems and collaborators. If you use the free and open source software RStudio to manage your R project, your project directory (or folder) should contain a .Rproj file (see <a href="https://lmu-osc.github.io/introduction-to-R/">R tutorial</a>). <strong>Use relative paths</strong> (i.e.&nbsp;<code>“./subfolder”</code>, where <code>.</code> represents the root of your .Rproj directory) or the library <code>here</code>, so the project stays portable to another environment</li>
+<li><strong>Create a self-contained project folder</strong>. Include data, code, documentation, and outputs in a single structured environment, ensuring the project remains understandable, reproducible, and portable across systems and collaborators. If you use the free and open source software RStudio to manage your R project, your project directory (or folder) should contain a .Rproj file (see <a href="https://lmu-osc.github.io/introduction-to-R/">R tutorial</a>).</li>
+<li><strong>Use relative paths so the project stays portable.</strong> In an RStudio project, the working directory of an R script is the project root by default, so <code>read.csv("01_data/raw/data.csv")</code> works from any script. For a Quarto file the working directory is the folder of that file, so the same line would need <code>"../01_data/raw/data.csv"</code>, and would break if you move the file within the project. The <a href="https://here.r-lib.org/"><code>here</code></a> package avoids this: <code>read.csv(here::here("01_data", "raw", "data.csv"))</code> works the same in R scripts and Quarto files and always starts from the project root (see our <a href="https://lmu-osc.github.io/introduction-to-R/qmd/load-data/load-data.html">R tutorial</a>).</li>
 <li><strong>Use a standard folder structure</strong>. Your code repository should include a standard folder structure that make sense for your type of research, ideally shared across your team members. You can for instance use our <a href="https://github.com/lmu-osc/research-project-template">research project template</a>.</li>
 <li><strong>Stop clicking, start coding</strong>. Automatize all possible steps, including data acquisition (see <span><a href="../../training/research-cycle-handbook/02-collect-and-manage.html#sec-data-collection" class="mark">2.1. Data Collection</a></span>), data processing and transformation, data analyses, data visualization, and results reporting (see <a href="#sec-reporting-results" class="mark">3.2. Reporting Results</a>)</li>
 <li><strong>Structure, comment, and standardize your scripts.</strong> R scripts themselves should follow current standards to increase their readability (see <a href="https://lmu-osc.github.io/training/reproducible-processes/readable-code.html">Readable Code Lecture</a>). Use meaningful names for variables, functions, and scripts. Add comments to your code explaining <em>why</em> you made a decision, any known limitations to your code, and citations of methods. <strong>Do not include sensitive information such as credentials or name of excluded patient as comments in your code!</strong>
@@ -615,7 +616,7 @@ Checkpoints: Repository &amp; Code Peer-Review + Result Presentation
         <span class="badge rounded-5 bg-success-subtle text-success align-self-start">Supported at LMU</span>
     </div>
 <h4 class="card-title anchored">LRZ Supercomputing</h4>
-<p class="card-text">Virtual machines and HPC for LMU Munich</p>
+<p class="card-text">Virtual machines and HPC for LMU Munich.</p>
 <a href="https://www.lrz.de/en/technologies/supercomputing" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
 </div>
@@ -765,7 +766,7 @@ Important
     <span class="badge rounded-5 bg-success-subtle text-success align-self-start">Supported at LMU</span>
   </div>
 <h4 class="card-title anchored">LMU Chat (Matrix)</h4>
-<p class="card-text">Institutional open source chat service for LMU Munich.</p>
+<p class="card-text">Institutional chat service for LMU Munich.</p>
 <a href="https://www.lmu.de/en/about-lmu/structure/central-university-administration/it-services-division/it-service-desk/central-it-services/lmu-chat-matrix/" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
 </div>
@@ -1135,7 +1136,7 @@ Reproducible Presentations &amp; Websites: Further Reproducible Outputs for Outr
   <span class="badge rounded-5 bg-success-subtle text-success align-self-start">Supported at LMU</span>
 </div>
 <h4 class="card-title anchored">LRZ Sync &amp; Share</h4>
-<p class="card-text">Cloud storage service for LMU Munich</p>
+<p class="card-text">File sync and share service for LMU Munich.</p>
 <a href="https://syncandshare.lrz.de/login" class="stretched-link" target="_blank" rel="noopener"> </a>
 </div>
 </div>
@@ -1154,7 +1155,7 @@ Reproducible Presentations &amp; Websites: Further Reproducible Outputs for Outr
   <span class="badge rounded-5 bg-success-subtle text-success align-self-start">Supported at LMU</span>
 </div>
 <h4 class="card-title anchored">LMU Chat (Matrix)</h4>
-<p class="card-text">Institutional open source chat service for LMU Munich.</p>
+<p class="card-text">Institutional chat service for LMU Munich.</p>
 <a href="https://www.lmu.de/en/about-lmu/structure/central-university-administration/it-services-division/it-service-desk/central-it-services/lmu-chat-matrix/" class="stretched-link" target="_blank" rel="noopener"></a>
 </div>
 </div>

@@ -141,6 +141,14 @@ General-purpose repository for data, materials, reports.
 
 General-purpose repository for data, software, reports.
 
+![LMU logo](../../assets/img/lmu-favicon.ico)
+
+Supported at LMU
+
+#### Open Data LMU
+
+Institutional data repository, provided by the University Library.
+
 ### 1.1.4 Code
 
 **Find code available for reuse** archived on [Zenodo](https://zenodo.org/), [Software Heritage](https://www.softwareheritage.org) or actively developed on [GitHub](https://github.com/) and other code repositories. Start learning Git version control now or learn to take advantage of more collaborative features on the GitHub platform in more details in [3. Analyze & Collaborate](../../training/research-cycle-handbook/03-analyze-and-collaborate.llms.md).
@@ -322,7 +330,7 @@ A **Data Management Plan (DMP)** documents how you will handle research data thr
 - **How will you share outputs** (repositories, licenses, embargo periods)? See our lecture “[Why share data openly?](https://lmu-osc.github.io/training/data-management/open-data.html)” and [4.1. FAIR & Responsible Data Sharing](../../training/research-cycle-handbook/04-preserve-and-share.llms.md#sec-fair-data-sharing)
 - **What constraints apply** (consent, anonymization, GDPR, data use agreements)? See our lecture “[Maintaining privacy with open data](https://lmu-osc.github.io/training/data-management/maintaining-privacy-with-open-data.html)”, [1.2.3. Ethics](#sec-legal-requirements) and [2.3. Ethics & Privacy](../../training/research-cycle-handbook/02-collect-and-manage.llms.md#sec-ethics-and-privacy).
 
-The specific questions vary by discipline, data type, and funder requirements. DMP tools like [RDMO](https://rdmo.ub.lmu.de/) guide you through the relevant questions with funder-specific templates.
+The specific questions vary by discipline, data type, and funder requirements. DMP tools like [RDMO](https://rdmo.ub.lmu.de/), provided by the University Library, guide you through the relevant questions with funder-specific templates.
 
 > **TIP:**
 >
@@ -365,7 +373,7 @@ Supported at LMU
 
 #### RDMO
 
-Funder-compliant DMP templates (e.g. DFG, ERC).
+Funder-compliant DMP templates (e.g. DFG, ERC), provided by the University Library.
 
 ![RIOjournal icon](../../assets/img/rio-journal-icon.ico)
 

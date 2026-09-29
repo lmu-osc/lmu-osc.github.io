@@ -42,7 +42,7 @@ This program is designed to:
 ##### How to cite our handbook
 
 Our handbook and other material are licensed [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.en). Please feel free to reuse, adapt, and share openly by citing\
-**Ihle Malika, Gupta Reema, Schönbrodt Felix, April 2026, Open Research Cycle Handbook <https://lmu-osc.github.io/training/research-cycle-handbook.html> CC-BY-SA 4.0 LMU Open Science Center**
+**Ihle Malika, Gupta Reema, Schönbrodt Felix, April 2026, Open Research Cycle Handbook <https://osc.lmu.de/training/research-cycle-handbook.html> CC-BY-SA 4.0 LMU Open Science Center**
 
 ##### Acknowledgements
 
@@ -250,6 +250,14 @@ General-purpose repository for data, materials, reports.
 
 General-purpose repository for data, software, reports.
 
+![LMU logo](../../assets/img/lmu-favicon.ico)
+
+Supported at LMU
+
+#### Open Data LMU
+
+Institutional data repository, provided by the University Library.
+
 ### 1.1.4 Code
 
 **Find code available for reuse** archived on [Zenodo](https://zenodo.org/), [Software Heritage](https://www.softwareheritage.org) or actively developed on [GitHub](https://github.com/) and other code repositories. Start learning Git version control now or learn to take advantage of more collaborative features on the GitHub platform in more details in [3. Analyze & Collaborate](../../training/research-cycle-handbook/03-analyze-and-collaborate.llms.md).
@@ -431,7 +439,7 @@ A **Data Management Plan (DMP)** documents how you will handle research data thr
 - **How will you share outputs** (repositories, licenses, embargo periods)? See our lecture “[Why share data openly?](https://lmu-osc.github.io/training/data-management/open-data.html)” and [4.1. FAIR & Responsible Data Sharing](../../training/research-cycle-handbook/04-preserve-and-share.llms.md#sec-fair-data-sharing)
 - **What constraints apply** (consent, anonymization, GDPR, data use agreements)? See our lecture “[Maintaining privacy with open data](https://lmu-osc.github.io/training/data-management/maintaining-privacy-with-open-data.html)”, [1.2.3. Ethics](#sec-legal-requirements) and [2.3. Ethics & Privacy](../../training/research-cycle-handbook/02-collect-and-manage.llms.md#sec-ethics-and-privacy).
 
-The specific questions vary by discipline, data type, and funder requirements. DMP tools like [RDMO](https://rdmo.ub.lmu.de/) guide you through the relevant questions with funder-specific templates.
+The specific questions vary by discipline, data type, and funder requirements. DMP tools like [RDMO](https://rdmo.ub.lmu.de/), provided by the University Library, guide you through the relevant questions with funder-specific templates.
 
 > **TIP:**
 >
@@ -474,7 +482,7 @@ Supported at LMU
 
 #### RDMO
 
-Funder-compliant DMP templates (e.g. DFG, ERC).
+Funder-compliant DMP templates (e.g. DFG, ERC), provided by the University Library.
 
 ![RIOjournal icon](../../assets/img/rio-journal-icon.ico)
 
@@ -768,7 +776,7 @@ Supported at LMU
 
 #### eLabFTW
 
-Electronic Lab Notebook hosted by LMU Munich.
+Electronic Lab Notebook, provided by the University Library.
 
 ![Chemotion icon](../../assets/img/chemotion-icon.png)
 
@@ -776,7 +784,7 @@ Supported at LMU
 
 #### Chemotion
 
-ELN hosted by the Faculty for Chemistry and Pharmacy.
+Electronic Lab Notebook, provided by the Faculty for Chemistry and Pharmacy.
 
 ![Protocols.io icon](../../assets/img/protocols-io-favicon.ico)
 
@@ -925,7 +933,7 @@ Supported at LMU
 
 #### LRZ Sync & Share
 
-Cloud storage service for LMU Munich
+File sync and share service for LMU Munich.
 
 ![LRZ logo](../../assets/img/lrz-logo.png)
 
@@ -933,7 +941,7 @@ Supported at LMU
 
 #### LRZ DSS
 
-Long-term archival storage for LMU Munich
+Data-intensive research storage for LMU Munich.
 
 ### 2.2.2 Organization
 
@@ -1295,7 +1303,8 @@ Data processing and analysis should be reproducible – independent of which sof
 
 ### 3.1.1 Programming
 
-- **Create a self-contained project folder**. Include data, code, documentation, and outputs in a single structured environment, ensuring the project remains understandable, reproducible, and portable across systems and collaborators. If you use the free and open source software RStudio to manage your R project, your project directory (or folder) should contain a .Rproj file (see [R tutorial](https://lmu-osc.github.io/introduction-to-R/)). **Use relative paths** (i.e. `“./subfolder”`, where `.` represents the root of your .Rproj directory) or the library `here`, so the project stays portable to another environment
+- **Create a self-contained project folder**. Include data, code, documentation, and outputs in a single structured environment, ensuring the project remains understandable, reproducible, and portable across systems and collaborators. If you use the free and open source software RStudio to manage your R project, your project directory (or folder) should contain a .Rproj file (see [R tutorial](https://lmu-osc.github.io/introduction-to-R/)).
+- **Use relative paths so the project stays portable.** In an RStudio project, the working directory of an R script is the project root by default, so `read.csv("01_data/raw/data.csv")` works from any script. For a Quarto file the working directory is the folder of that file, so the same line would need `"../01_data/raw/data.csv"`, and would break if you move the file within the project. The [`here`](https://here.r-lib.org/) package avoids this: `read.csv(here::here("01_data", "raw", "data.csv"))` works the same in R scripts and Quarto files and always starts from the project root (see our [R tutorial](https://lmu-osc.github.io/introduction-to-R/qmd/load-data/load-data.html)).
 - **Use a standard folder structure**. Your code repository should include a standard folder structure that make sense for your type of research, ideally shared across your team members. You can for instance use our [research project template](https://github.com/lmu-osc/research-project-template).
 - **Stop clicking, start coding**. Automatize all possible steps, including data acquisition (see [2.1. Data Collection](../../training/research-cycle-handbook/02-collect-and-manage.llms.md#sec-data-collection)), data processing and transformation, data analyses, data visualization, and results reporting (see [3.2. Reporting Results](#sec-reporting-results))
 - **Structure, comment, and standardize your scripts.** R scripts themselves should follow current standards to increase their readability (see [Readable Code Lecture](https://lmu-osc.github.io/training/reproducible-processes/readable-code.html)). Use meaningful names for variables, functions, and scripts. Add comments to your code explaining *why* you made a decision, any known limitations to your code, and citations of methods. **Do not include sensitive information such as credentials or name of excluded patient as comments in your code!**
@@ -1351,7 +1360,7 @@ Supported at LMU
 
 #### LRZ Supercomputing
 
-Virtual machines and HPC for LMU Munich
+Virtual machines and HPC for LMU Munich.
 
 ### 3.1.2 Version Control
 
@@ -1427,7 +1436,7 @@ Supported at LMU
 
 #### LMU Chat (Matrix)
 
-Institutional open source chat service for LMU Munich.
+Institutional chat service for LMU Munich.
 
 ### 3.1.3 Computational Environment Management
 
@@ -1637,7 +1646,7 @@ Supported at LMU
 
 #### LRZ Sync & Share
 
-Cloud storage service for LMU Munich
+File sync and share service for LMU Munich.
 
 ![LMU OSC logo](https://cms-cdn.lmu.de/assets/img/favicon.ico)
 
@@ -1647,7 +1656,7 @@ Supported at LMU
 
 #### LMU Chat (Matrix)
 
-Institutional open source chat service for LMU Munich.
+Institutional chat service for LMU Munich.
 
 ### 3.2.2 Reporting guidelines
 
@@ -1924,7 +1933,7 @@ Supported at LMU
 
 #### Open Data LMU
 
-Institutional data repository.
+Institutional data repository, provided by the University Library.
 
 ### 4.1.4 Data Licenses
 
@@ -2249,7 +2258,7 @@ Supported at LMU
 
 #### Open Access LMU
 
-Institutional publication repository.
+Institutional publication repository, provided by the University Library.
 
 ![OSF logo](../../assets/img/open-science-framework-and-open-science-center.png)
 
