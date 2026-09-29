@@ -42,7 +42,7 @@ This program is designed to:
 ##### How to cite our handbook
 
 Our handbook and other material are licensed [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.en). Please feel free to reuse, adapt, and share openly by citing\
-**Ihle Malika, Gupta Reema, Schönbrodt Felix, April 2026, Open Research Cycle Handbook <https://lmu-osc.github.io/training/research-cycle-handbook.html> CC-BY-SA 4.0 LMU Open Science Center**
+**Ihle Malika, Gupta Reema, Schönbrodt Felix, April 2026, Open Research Cycle Handbook <https://osc.lmu.de/training/research-cycle-handbook.html> CC-BY-SA 4.0 LMU Open Science Center**
 
 ##### Acknowledgements
 
@@ -933,7 +933,7 @@ Supported at LMU
 
 #### LRZ Sync & Share
 
-Cloud storage service for LMU Munich
+File sync and share service for LMU Munich.
 
 ![LRZ logo](../../assets/img/lrz-logo.png)
 
@@ -941,7 +941,7 @@ Supported at LMU
 
 #### LRZ DSS
 
-Long-term archival storage for LMU Munich
+Data-intensive research storage for LMU Munich.
 
 ### 2.2.2 Organization
 
@@ -1359,7 +1359,7 @@ Supported at LMU
 
 #### LRZ Supercomputing
 
-Virtual machines and HPC for LMU Munich
+Virtual machines and HPC for LMU Munich.
 
 ### 3.1.2 Version Control
 
@@ -1435,7 +1435,7 @@ Supported at LMU
 
 #### LMU Chat (Matrix)
 
-Institutional open source chat service for LMU Munich.
+Institutional chat service for LMU Munich.
 
 ### 3.1.3 Computational Environment Management
 
@@ -1645,7 +1645,7 @@ Supported at LMU
 
 #### LRZ Sync & Share
 
-Cloud storage service for LMU Munich
+File sync and share service for LMU Munich.
 
 ![LMU OSC logo](https://cms-cdn.lmu.de/assets/img/favicon.ico)
 
@@ -1655,7 +1655,7 @@ Supported at LMU
 
 #### LMU Chat (Matrix)
 
-Institutional open source chat service for LMU Munich.
+Institutional chat service for LMU Munich.
 
 ### 3.2.2 Reporting guidelines
 

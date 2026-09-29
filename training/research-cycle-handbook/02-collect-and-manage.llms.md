@@ -210,7 +210,7 @@ Supported at LMU
 
 #### LRZ Sync & Share
 
-Cloud storage service for LMU Munich
+File sync and share service for LMU Munich.
 
 ![LRZ logo](../../assets/img/lrz-logo.png)
 
@@ -218,7 +218,7 @@ Supported at LMU
 
 #### LRZ DSS
 
-Long-term archival storage for LMU Munich
+Data-intensive research storage for LMU Munich.
 
 ### 2.2.2 Organization
 

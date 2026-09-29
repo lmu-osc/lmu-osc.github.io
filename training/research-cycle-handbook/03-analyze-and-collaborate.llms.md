@@ -70,7 +70,7 @@ Supported at LMU
 
 #### LRZ Supercomputing
 
-Virtual machines and HPC for LMU Munich
+Virtual machines and HPC for LMU Munich.
 
 ### 3.1.2 Version Control
 
@@ -146,7 +146,7 @@ Supported at LMU
 
 #### LMU Chat (Matrix)
 
-Institutional open source chat service for LMU Munich.
+Institutional chat service for LMU Munich.
 
 ### 3.1.3 Computational Environment Management
 
@@ -356,7 +356,7 @@ Supported at LMU
 
 #### LRZ Sync & Share
 
-Cloud storage service for LMU Munich
+File sync and share service for LMU Munich.
 
 ![LMU OSC logo](https://cms-cdn.lmu.de/assets/img/favicon.ico)
 
@@ -366,7 +366,7 @@ Supported at LMU
 
 #### LMU Chat (Matrix)
 
-Institutional open source chat service for LMU Munich.
+Institutional chat service for LMU Munich.
 
 ### 3.2.2 Reporting guidelines
 
