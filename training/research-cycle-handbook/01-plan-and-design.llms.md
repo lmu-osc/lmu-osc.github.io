@@ -99,6 +99,7 @@ These platforms either give you access to existing data or provide ***metadata**
 
 - **Review the license and data use agreement.** Make sure you understand what you are allowed to do with the data and under what conditions. Even if the license does not request attribution of the authors, scholarly norms require you to cite the source of the data for any of your work based on it.
 - **Review metadata and documentation.** Make sure you know where your data comes from, how the data was collected and processed, and reflect on whether any of it poses problems for your research question.
+- **Consider the broader context of the data.** Beyond legal permissions, the data may carry additional expectations about how it should be used. For instance, data from specific communities may come with expectations that reuse serves collective benefit and does not cause harm.
 - **Check what additional requirements the data sources have.** Sometimes, data providers request prospective data users to submit a preregistration prior to giving access to the data (see [1.4. Study Design & Analysis Plan](#sec-study-design-analysis-plan)).
 - **Use the metadata to plan your analysis.** Review existing data dictionaries (or “codebooks”) and other documentation describing the variables, range of values, etc. If you plan to do a confirmatory analysis, do not look at the data to minimize ***confirmation or hindsight bias***; instead, prepare a pre-analysis plan (see [1.4. Study Design & Analysis Plan](#sec-study-design-analysis-plan)).
 
@@ -257,6 +258,12 @@ Implementation of the German Research Foundation's (DFG) Code of Conduct
 
 Data collection and analyses involving human participants or animal subjects typically require approval from ethics committees to ensure responsible conduct and the protection of data.
 
+The ***FAIR principles***, outlined in the LMU guidelines, describe how data should be prepared for sharing and reuse. The ***CARE Principles for Indigenous Data Governance*** complement them by considering who benefits from data use and who has authority over it. Originally developed for Indigenous data, they offer a useful perspective for any research involving human participants or communities.
+
+> **NOTE:**
+>
+> The ***CARE Principles*** stand for **C**ollective Benefit, **A**uthority to Control, **R**esponsibility, and **E**thics. See <https://www.gida-global.org/careprinciples> for more information.
+
 #####  Your ethics proposal will typically include information on:
 
 - **Data storage and retention** – outlining how data will be securely stored, backed up, and retained over time. This information can be extracted from a more detailed Research Data Management plan (see [1.3. Research Data Management Plans](#sec-research-data-management)).
@@ -303,7 +310,7 @@ Data simulations for GLMs, LMEs, and SEMs in R. (6h)
 A **Data Management Plan (DMP)** documents how you will handle research data throughout your project. Writing a DMP prompts you to think and document decisions you might otherwise leave implicit.
 
 - **Decide *before* data collection whether you will eventually share your data publicly (and where)**, in order to (i) get ethics approval on the right plan, (ii) design consent forms for participants, (iii) collect appropriate metadata for the target repository, etc.
-- **Start with what you know, and refine the details as your project develops.** Your DMP is a living document that you will refine to match the reality of your project while ensuring data protection and streamline collaborations (see [2.2. Data Management](../../training/research-cycle-handbook/02-collect-and-manage.llms.md#sec-data-management), [3.1. Data Processing & Analysis](../../training/research-cycle-handbook/03-analyze-and-collaborate.llms.md#sec-data-processing-analysis), and [4.1. FAIR Data Sharing](../../training/research-cycle-handbook/04-preserve-and-share.llms.md#sec-fair-data-sharing)).
+- **Start with what you know, and refine the details as your project develops.** Your DMP is a living document that you will refine to match the reality of your project while ensuring data protection and streamline collaborations (see [2.2. Data Management](../../training/research-cycle-handbook/02-collect-and-manage.llms.md#sec-data-management), [3.1. Data Processing & Analysis](../../training/research-cycle-handbook/03-analyze-and-collaborate.llms.md#sec-data-processing-analysis), and [4.1. FAIR & Responsible Data Sharing](../../training/research-cycle-handbook/04-preserve-and-share.llms.md#sec-fair-data-sharing)).
 
 ###  Your DMP will ask:
 
@@ -312,7 +319,7 @@ A **Data Management Plan (DMP)** documents how you will handle research data thr
 - **How will you organize files** (naming conventions, folder structure, versioning)?
 - **Where will you store it** (locations, backups, access controls)?
 - **How will you ensure quality** (validation checks, error-handling)?
-- **How will you share outputs** (repositories, licenses, embargo periods)? See our lecture “[Why share data openly?](https://lmu-osc.github.io/training/data-management/open-data.html)” and [4.1. FAIR Data Sharing](../../training/research-cycle-handbook/04-preserve-and-share.llms.md#sec-fair-data-sharing)
+- **How will you share outputs** (repositories, licenses, embargo periods)? See our lecture “[Why share data openly?](https://lmu-osc.github.io/training/data-management/open-data.html)” and [4.1. FAIR & Responsible Data Sharing](../../training/research-cycle-handbook/04-preserve-and-share.llms.md#sec-fair-data-sharing)
 - **What constraints apply** (consent, anonymization, GDPR, data use agreements)? See our lecture “[Maintaining privacy with open data](https://lmu-osc.github.io/training/data-management/maintaining-privacy-with-open-data.html)”, [1.2.3. Ethics](#sec-legal-requirements) and [2.3. Ethics & Privacy](../../training/research-cycle-handbook/02-collect-and-manage.llms.md#sec-ethics-and-privacy).
 
 The specific questions vary by discipline, data type, and funder requirements. DMP tools like [RDMO](https://rdmo.ub.lmu.de/) guide you through the relevant questions with funder-specific templates.
