@@ -1006,6 +1006,7 @@ How to reuse a dataset?
 <ul>
 <li><strong>Review the license and data use agreement.</strong> Make sure you understand what you are allowed to do with the data and under what conditions. Even if the license does not request attribution of the authors, scholarly norms require you to cite the source of the data for any of your work based on it.</li>
 <li><strong>Review metadata and documentation.</strong> Make sure you know where your data comes from, how the data was collected and processed, and reflect on whether any of it poses problems for your research question.</li>
+<li><strong>Consider the broader context of the data.</strong> Beyond legal permissions, the data may carry additional expectations about how it should be used. For instance, data from specific communities may come with expectations that reuse serves collective benefit and does not cause harm.</li>
 <li><strong>Check what additional requirements the data sources have.</strong> Sometimes, data providers request prospective data users to submit a preregistration prior to giving access to the data (see <a href="#sec-study-design-analysis-plan" class="mark">1.4. Study Design &amp; Analysis Plan</a>).</li>
 <li><strong>Use the metadata to plan your analysis.</strong> Review existing data dictionaries (or “codebooks”) and other documentation describing the variables, range of values, etc. If you plan to do a confirmatory analysis, do not look at the data to minimize <u><strong>confirmation or hindsight bias</strong></u>; instead, prepare a pre-analysis plan (see <a href="#sec-study-design-analysis-plan" class="mark">1.4. Study Design &amp; Analysis Plan</a>).</li>
 </ul>
@@ -1317,6 +1318,20 @@ Public access to research results:
 </section>
 <div id="collapse-ethics" class="collapse" data-bs-parent="#legal-requirements-collapse">
 <p>Data collection and analyses involving human participants or animal subjects typically require approval from ethics committees to ensure responsible conduct and the protection of data.</p>
+<p>The <strong><u>FAIR principles</u></strong>, outlined in the LMU guidelines, describe how data should be prepared for sharing and reuse. The <strong><u>CARE Principles for Indigenous Data Governance</u></strong> complement them by considering who benefits from data use and who has authority over it. Originally developed for Indigenous data, they offer a useful perspective for any research involving human participants or communities.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Definition
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The <strong><u>CARE Principles</u></strong> stand for <strong>C</strong>ollective Benefit, <strong>A</strong>uthority to Control, <strong>R</strong>esponsibility, and <strong>E</strong>thics. See <a href="https://www.gida-global.org/careprinciples">https://www.gida-global.org/careprinciples</a> for more information.</p>
+</div>
+</div>
 <h5 class="fs-5 no-anchor">
 <i class="bi bi-list-check"></i> Your ethics proposal will typically include information on:
 </h5>
@@ -1421,7 +1436,7 @@ Public access to research results:
 <div class="ms-1">
 <ul>
 <li><strong>Decide <em>before</em> data collection whether you will eventually share your data publicly (and where)</strong>, in order to (i) get ethics approval on the right plan, (ii) design consent forms for participants, (iii) collect appropriate metadata for the target repository, etc.</li>
-<li><strong>Start with what you know, and refine the details as your project develops.</strong> Your DMP is a living document that you will refine to match the reality of your project while ensuring data protection and streamline collaborations (see <span><a href="../../training/research-cycle-handbook/02-collect-and-manage.html#sec-data-management" class="mark">2.2. Data Management</a></span>, <span><a href="../../training/research-cycle-handbook/03-analyze-and-collaborate.html#sec-data-processing-analysis" class="mark">3.1. Data Processing &amp; Analysis</a></span>, and <span><a href="../../training/research-cycle-handbook/04-preserve-and-share.html#sec-fair-data-sharing" class="mark">4.1. FAIR Data Sharing</a></span>).</li>
+<li><strong>Start with what you know, and refine the details as your project develops.</strong> Your DMP is a living document that you will refine to match the reality of your project while ensuring data protection and streamline collaborations (see <span><a href="../../training/research-cycle-handbook/02-collect-and-manage.html#sec-data-management" class="mark">2.2. Data Management</a></span>, <span><a href="../../training/research-cycle-handbook/03-analyze-and-collaborate.html#sec-data-processing-analysis" class="mark">3.1. Data Processing &amp; Analysis</a></span>, and <span><a href="../../training/research-cycle-handbook/04-preserve-and-share.html#sec-fair-data-sharing" class="mark">4.1. FAIR &amp; Responsible Data Sharing</a></span>).</li>
 </ul>
 </div>
 <section id="sec-your-dmp-will-ask" class="level3 orc-card-section unnumbered">
@@ -1432,7 +1447,7 @@ Public access to research results:
 <li><strong>How will you organize files</strong> (naming conventions, folder structure, versioning)?</li>
 <li><strong>Where will you store it</strong> (locations, backups, access controls)?</li>
 <li><strong>How will you ensure quality</strong> (validation checks, error-handling)?</li>
-<li><strong>How will you share outputs</strong> (repositories, licenses, embargo periods)? See our lecture “<a href="https://lmu-osc.github.io/training/data-management/open-data.html">Why share data openly?</a>” and <span><a href="../../training/research-cycle-handbook/04-preserve-and-share.html#sec-fair-data-sharing" class="mark">4.1. FAIR Data Sharing</a></span></li>
+<li><strong>How will you share outputs</strong> (repositories, licenses, embargo periods)? See our lecture “<a href="https://lmu-osc.github.io/training/data-management/open-data.html">Why share data openly?</a>” and <span><a href="../../training/research-cycle-handbook/04-preserve-and-share.html#sec-fair-data-sharing" class="mark">4.1. FAIR &amp; Responsible Data Sharing</a></span></li>
 <li><strong>What constraints apply</strong> (consent, anonymization, GDPR, data use agreements)? See our lecture “<a href="https://lmu-osc.github.io/training/data-management/maintaining-privacy-with-open-data.html">Maintaining privacy with open data</a>”, <a href="#sec-legal-requirements" class="mark">1.2.3. Ethics</a> and <span><a href="../../training/research-cycle-handbook/02-collect-and-manage.html#sec-ethics-and-privacy" class="mark">2.3. Ethics &amp; Privacy</a></span>.</li>
 </ul>
 <p>The specific questions vary by discipline, data type, and funder requirements. DMP tools like <a href="https://rdmo.ub.lmu.de/">RDMO</a> guide you through the relevant questions with funder-specific templates.</p>
@@ -2771,6 +2786,7 @@ Checkpoint: Data quality validation meeting
 <div id="collapse-gdpr-compliance" class="collapse" data-bs-parent="#ethics-privacy-collapse">
 <p>Research at LMU Munich must comply with EU data protection regulations. The core principles: have a lawful basis for processing personal data (usually consent or legitimate research interest), use data only for stated purposes, collect only what you need, delete data when you no longer need it, and protect it against unauthorized access.</p>
 <p><strong>In practice:</strong> document your lawful basis, include data protection language in consent forms, use institutional storage rather than personal cloud services, restrict access to those who need it, and plan when and how you will delete data.</p>
+<p>International collaborations may require additional safeguards when personal data is transferred outside the EU/EEA.</p>
 <p>For data protection guidance, contact the <a href="https://www.lmu.de/en/about-lmu/structure/organizational-structure/officers-representatives-and-contact-persons/data-protection-officer.html">LMU Data Protection Officer</a> or the <a href="https://www.en.ub.uni-muenchen.de/writing/research_data/research-data-management/index.html">Research Data Management team of the University Library</a>.</p>
 </div>
 </div>
@@ -3740,10 +3756,10 @@ Checkpoint: Manuscript submission with DOIs for preregistration, data, and code
 <div class="accordion-header-content">
 <span class="icon-wrapper rounded-4 bg-success-subtle text-success p-3"> <i class="bi bi-database-up m-0 fs-4"></i> </span>
 <section id="sec-fair-data-sharing" class="level2 accordion-title" data-number="4.1">
-<h2 data-number="4.1" class="anchored" data-anchor-id="sec-fair-data-sharing"><span class="header-section-number">4.1</span> FAIR Data Sharing</h2>
+<h2 data-number="4.1" class="anchored" data-anchor-id="sec-fair-data-sharing"><span class="header-section-number">4.1</span> FAIR &amp; Responsible Data Sharing</h2>
 </section>
 </div>
-<button class="accordion-button collapsed accordion-toggle-only" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-fair-data-sharing" aria-expanded="false" aria-label="Toggle FAIR Data Sharing section">
+<button class="accordion-button collapsed accordion-toggle-only" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-fair-data-sharing" aria-expanded="false" aria-label="Toggle FAIR &amp; Responsible Data Sharing section">
 </button>
 </div>
 <div id="collapse-fair-data-sharing" class="accordion-collapse collapse">
@@ -3778,6 +3794,7 @@ Checkpoint: Manuscript submission with DOIs for preregistration, data, and code
 <li>Consider whether the data can be <strong>anonymized</strong> without losing scientific value (see <span><a href="../../training/research-cycle-handbook/02-collect-and-manage.html#sec-ethics-and-privacy" class="mark">2.3.2. Anonymization</a></span>).</li>
 <li>If you work with <strong>sensitive data</strong>, you may consult the University’s <a href="https://www.lmu.de/en/about-lmu/structure/organizational-structure/officers-representatives-and-contact-persons/data-protection-officer.html">data protection officer</a>.</li>
 <li>If your research outputs could have <strong>dual-use</strong> implications (e.g.&nbsp;that could also be applied for military or malicious purposes), consult the relevant regulations (e.g.&nbsp;European Commission’s policy (<a href="https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L:2021:206:FULL&amp;from=EN">Dual-Use Regulation 2021/821</a>)) and contact the University’s <a href="mailto:Exportkontrolle@Verwaltung.Uni-Muenchen.DE">Export Control service</a>.</li>
+<li>If your data involves <strong>people or communities</strong>, review whether your sharing approach aligns with the <a href="https://www.gida-global.org/careprinciples">CARE Principles</a> for responsible data use (see <span><a href="../../training/research-cycle-handbook/01-plan-and-design.html#sec-ethics" class="mark">1.2.3. Ethics</a></span>).</li>
 <li>If your research may lead to <strong>patents or commercialization</strong>, contact the the University’s <a href="https://www.lmu.de/en/research/research-transfer/inventions-patents-and-exploitation-rights/">IP Management team</a> before sharing data. Early consultation helps ensure that intellectual property rights are not compromised.</li>
 </ul>
 <!-- TODO Reema: tool card for decision tree ; MI: not sure if feasible in enough details to be useful? but perhaps ;)-->
