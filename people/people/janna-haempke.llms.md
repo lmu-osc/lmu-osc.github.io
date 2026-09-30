@@ -12,4 +12,4 @@ Faculty of Psychology & Education
 
 ## Mission Statement
 
-I am a PhD candidate in personality psychology at LMU Munich, exploring the structure, psychological relevance, and dynamics of worldviews. Personality and social psychology have been central to the replication crisis, with many findings proving difficult to replicate. This makes open science practices all the more important for enabling credible, replicable research based on shared standards. In my work, I particularly emphasise preregistration, the sharing of data, materials, and code where appropriate, and reproducible workflows.
+I am a PhD candidate in personality psychology at LMU Munich, exploring the structure, psychological relevance, and dynamics of worldviews. Personality and social psychology have been central to the replication crisis, with many findings proving difficult to replicate. This makes open science practices all the more important for enabling credible, replicable research based on shared standards. In my work, I particularly emphasize preregistration, the sharing of data, materials, and code where appropriate, and reproducible workflows.
