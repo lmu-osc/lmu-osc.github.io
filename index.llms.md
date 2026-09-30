@@ -69,6 +69,14 @@ Keep up to date with our latest news releases, and upcoming events.
 
 News [View All News](news/index.llms.md)
 
+###### Sep 29, 2026
+
+##### [OSF project functionality - alternatives for organizing and sharing research materials](news/news/2026-09-29-osf-project-functionality.llms.md)
+
+OSF Projects are being phased out as active workspaces. Here’s what researchers need to know and what alternatives are available.
+
+[Read More →](news/news/2026-09-29-osf-project-functionality.llms.md)
+
 ###### Sep 23, 2026
 
 ##### [The Department of Educational Sciences joins the OSC](news/news/2026-09-23-educational-sciences-dept-institutional-member.llms.md)
@@ -84,14 +92,6 @@ The OSC welcomes the Department of Educational Sciences as our new funding insti
 New editorial published in the Journal of the Academy of Marketing Science by OSC member Prof. Dr. Marko Sarstedt and his team discussing the role of reproducibility in business and management research.
 
 [Read More →](news/news/2026-09-02-reproducibility-in-business-research.llms.md)
-
-###### Aug 5, 2026
-
-##### [Newsletter July 2026](news/news/2026-08-05-newsletter-july.llms.md)
-
-Read the latest news and updates from the LMU Open Science Center in our July 2026 newsletter.
-
-[Read More →](news/news/2026-08-05-newsletter-july.llms.md)
 
 Events [View All Events](events/index.llms.md)
 
