@@ -8,3 +8,8 @@ Why have a separate folder for mermaid diagrams when Quarto natively supports th
 4. Mermaid is essentially no longer supported/usable on Macs which is good half of our team.
 
 So the solution for now is to store the original Mermaid code in this folder, generate somewhere else like the Mermaid generator website, and then place the output file here i.e. `/assets/diagrams/*`
+
+```bash
+mmdc -i preprint-flow.mmd -o preprint-flow.svg
+mmdc -i preprint-flow.mmd -o preprint-flow.png
+```
