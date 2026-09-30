@@ -22,9 +22,9 @@ The [Learn Git](https://www.boot.dev/courses/learn-git) and [Learn Git 2](https:
 
 The full walkthrough of the Learn Git course is also available on YouTube:
 
-# Se produjo un error.
+# An error occurred.
 
-No se puede ejecutar JavaScript.
+Unable to execute JavaScript.
 
 ## Footnotes
 
