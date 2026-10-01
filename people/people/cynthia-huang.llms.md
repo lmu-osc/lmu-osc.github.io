@@ -10,7 +10,7 @@ Faculty of Math, Informatics & Stats
 
 [Personal Website](https://www.cynthiahqy.com/)
 
-[](https://orcid.org/0000-0002-9218-987X) [](https://github.com/cynthiahqy)
+[](https://github.com/cynthiahqy) [](https://orcid.org/0000-0002-9218-987X)
 
 ## Mission Statement
 
