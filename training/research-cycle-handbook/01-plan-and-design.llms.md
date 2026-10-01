@@ -609,3 +609,5 @@ Consent forms prepared
 Preregistration submitted
 
 Ethical approval obtained
+
+[Download checklist ](assets/checklists/01-Plan-Design-Checklist.docx)

@@ -641,3 +641,5 @@ Link the DOI of the published article to the preprint/postprint
 Handle data access requests if only metadata were shared
 
 Monitor citations and usage metrics of all research outputs
+
+[Download checklist ](assets/checklists/04-Preserve-Share-Checklist.docx)

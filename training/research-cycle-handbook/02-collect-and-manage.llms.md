@@ -561,3 +561,5 @@ Data dictionary defines all variables
 Version control repository up to date
 
 Data quality control completed and documented
+
+[Download checklist ](assets/checklists/02-Collect-Manage-Checklist.docx)

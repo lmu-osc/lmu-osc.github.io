@@ -475,3 +475,5 @@ Code peer-reviewed by co-authors
 Reporting of results follow relevant guidelines (e.g. effect size, confidence intervals, model specification)
 
 Results are separated in preregistered confirmatory vs non preregistered exploratory analyses
+
+[Download checklist ](assets/checklists/03-Analyze-Collaborate-Checklist.docx)
