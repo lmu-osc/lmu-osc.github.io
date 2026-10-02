@@ -36,7 +36,7 @@ include-in-header:
 :::: {.row .hero-row}
 ::: {.col-md-6 .img-container .px-0 .px-sm-3}
 
-![](assets/img/placeholder.avif){.banner-image .rounded .img-fluid}
+![](assets/img/lmu_picture_2.jpg){.banner-image .rounded .img-fluid}
 
 :::
 
@@ -46,7 +46,7 @@ include-in-header:
 
 [The researcher-led LMU Open Science Center (OSC) advances research excellence at LMU Munich by promoting open, responsible, and reproducible practices.]{.fs-5 .lh-lg .hero-subtitle}
 
-[Learn more about OSC](about/index.qmd){.btn .btn-primary .mt-2 .fw-bold .learn-more-button}
+[Learn More About OSC](about/index.qmd){.btn .btn-primary .mt-2 .fw-bold .learn-more-button}
 
 :::
 ::::
@@ -67,7 +67,7 @@ include-in-header:
 ::: {.metric-value .text-lmu-acc-blue .fw-bold .display-6 data-target="3000+"}
 0
 :::
-::: {.metric-label  .fs-6}
+::: {.metric-label  .fs-5}
 Researchers trained
 :::
 ::::
@@ -76,7 +76,7 @@ Researchers trained
 ::: {.metric-value .text-lmu-acc-blue .fw-bold .display-6 data-target="150+"}
 0
 :::
-::: {.metric-label .fs-6}
+::: {.metric-label .fs-5}
 Professors & Students
 :::
 ::::
@@ -85,7 +85,7 @@ Professors & Students
 ::: {.metric-value .text-lmu-acc-blue .fw-bold .display-6 data-target="460+"}
 0
 :::
-::: {.metric-label .fs-6}
+::: {.metric-label .fs-5}
 Articles on Open Science
 :::
 ::::
@@ -104,7 +104,7 @@ Articles on Open Science
 
 [What We Offer]{.section-heading .text-white .fw-semibold}
 
-[Whether you are a student, early-career researcher, or professor — there's a place for you at the Open Science Center.]{.lh-lg .text-white .fs-5}
+[Whether you are a student, early-career researcher, or professor — there's a place for you at the Open Science Center.]{.lh-lg .text-white .fs-4}
 
 ::: {.row .explore-row .row-cols-1 .row-cols-sm-2 .row-cols-md-3 .text-center .g-4 .mt-3}
 
@@ -194,7 +194,7 @@ Articles on Open Science
 
 [News & Events]{.section-heading .text-lmu-green .fw-semibold}
 
-[Keep up to date with our latest news releases, and upcoming events.]{.lh-lg .fs-5 .text-dark}
+[Keep up to date with our latest news releases, and upcoming events.]{.lh-lg .fs-4 .text-dark}
 
 ::: {.row .events-news-row .text-center .justify-content-center .g-4 .mt-3}
 
@@ -223,11 +223,11 @@ Articles on Open Science
 :::{.column-page .justify-content-center .text-center}
 
 ::: {.row}
-[Stay updated with the OSC]{.text-white .border-0 .fw-semibold .display-6}
+[Stay Updated With the OSC]{.text-white .border-0 .fw-semibold .display-6}
 
-[Sign up to our mailing list for the latest workshops, events, and resources.]{.text-white .lh-lg .fs-5}
+[Sign up to our mailing list for the latest workshops, events, and resources.]{.text-white .lh-lg .fs-4}
 
-[Subscribe](https://lists.lrz.de/mailman/listinfo/lmu-osc){.btn .btn-primary .newsletter-button .bg-white .fw-semibold .border-0}
+[Subscribe](https://lists.lrz.de/mailman/listinfo/lmu-osc){.btn .btn-primary .btn-lg .newsletter-button .bg-white .fw-semibold .border-0}
 
 :::
 
