@@ -8,7 +8,7 @@ FAIR Research Data Management Consultant
 
 [LMU Profile](https://www.bio.lmu.de/de/personen/kontaktseite/reema-gupta-e6edbe3f.html)
 
-[](https://www.linkedin.com/in/ree-gupta/) [](https://orcid.org/0000-0003-4509-6969) [](https://github.com/ree-gupta)
+[](https://www.linkedin.com/in/ree-gupta/) [](https://github.com/ree-gupta) [](https://orcid.org/0000-0003-4509-6969)
 
 ## Mission Statement
 
