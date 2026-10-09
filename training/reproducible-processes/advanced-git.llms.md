@@ -12,7 +12,9 @@ Our initial Introduction to Git tutorial covers the basics of version control an
 
 ### Git Branching and Merging - Detailed Tutorial
 
-The owner of this video has disabled playback on other websites so we are not able to embed the video here, but you can watch the full tutorial on YouTube: [Git Branching and Merging - Detailed Tutorial by SuperSimpleDev](https://www.youtube.com/watch?v=SWYqp7iY_Tc).[^1]
+The owner of this video has disabled playback on other websites so we are not able to embed the video here, but you can watch the full tutorial on YouTube:
+
+- [Git Branching and Merging - Detailed Tutorial by SuperSimpleDev](https://www.youtube.com/watch?v=Q1kHG842HoI).[^1]
 
 ### Boot.dev
 
