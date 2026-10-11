@@ -1,115 +1,51 @@
-:root{
-  --osc-accent: #00883A;
-  --osc-muted: #646463;
-  --osc-bg: #fff;
-  --osc-text: #323232;
-  --osc-divider: #d6d6d5;
-}
 /* Layout */
-.section { padding-block: clamp(var(--space-6), 6vw, var(--space-8)); }
+.about-page .about-section {
+  margin-block: 2rem;
+}
 
-.text-align-justify { text-align: justify; }
+.about-page .about-section > .bg-body-tertiary {
+  padding-block: clamp(1rem, 2vw, 1.5rem);
+  padding-inline: clamp(1.5rem, 3vw, 2rem);
+}
 
-.about-us-text {
+.about-page .text-align-justify { text-align: justify;}
+
+.about-page .about-us-text {
   line-height: 1.6;
   color: var(--osc-text);
 }
 
-.btn-outline-primary.btn-pop{
-  border:1px solid var(--osc-accent);
-  color:var(--osc-accent);
-  background: var(--osc-bg);
-}
-
-.btn-outline-primary.btn-pop:hover,
-.btn-outline-primary.btn-pop:focus,
-.btn-outline-primary.btn-pop:active {
-  color:var(--osc-bg);
-  border: solid 1px var(--osc-accent);
-  background: var(--osc-accent);
-}
-
-.hero { padding-block: clamp(var(--space-7), 8vw, calc(var(--space-8) + 1rem)); background: #fff; }
-
-.staff-governance-rail {
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-}
-.staff-governance-rail::-webkit-scrollbar {
-  height: .6rem;
-}
-.staff-governance-rail .card {
-  flex: 0 0 auto;
-  min-width: 18rem;
-  max-width: 22rem;
-  overflow: hidden;
-}
-.staff-governance-rail .card-body {
-  padding: 1.25rem 1.25rem 1.5rem;
-}
-.staff-governance-rail .actions .btn {
-  white-space: nowrap;
-}
-
-/* PDF thumbnail card  */
-.card-img-top { width: 100%; display: block; }
-.card-body { padding: var(--space-4); }
-.card-title { margin-bottom: var(--space-3); font-size: 1.25rem; }
-.card-text { margin-bottom: var(--space-4); }
-
-.bg-body-tertiary h2{ 
+.about-page .bg-body-tertiary h2 {
   color:#4d4c4c;
 }
 
-/* css styles */
-.bg-brand-green {
-  background-color: var(--osc-accent)!important;
-}
-
-
-.btn.border-brand-green {
-  border: 1px solid var(--osc-accent) !important;
-}
-
-.arrow-hover {
-  transition: transform 0.3s ease;
-}
-
-.arrow-hover:hover {
-    transform: translateX(4px);
-}
-
 /* Card pop on hover */
-.hover-pop {
+.about-page .hover-pop {
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-.hover-pop:hover {
+.about-page .hover-pop:hover {
   transform: translateY(-3px);
   box-shadow: 0 8px 18px rgba(0,0,0,0.12);
 }
 
-.about-joinus .container .bg-body-tertiary{
-  background-color: rgba(43, 134, 75, 0.1);
-}
-
 /* remove extra margin above desc*/
-#title-block-header{
+.about-page #title-block-header {
   margin-block-end: 0;
 }
 
-/*title*/
-.about-page h1.title{
-  padding-left: 1.5rem;  
+/* Shared layout and typography for Join Us and Statute. */
+.about-detail-page .about-detail-container p,
+.about-detail-page .about-detail-container li {
+  text-align: justify;
+  line-height: 1.85;
 }
 
-@media (min-width: 992px) {
-  .about-page h1.title {
-    padding-left: 3rem;  
-  }
-
+.about-join-page .joinus-container > section + section {
+  margin-block-start: 2rem;
 }
 
-
-
-
+.about-join-page .joinus-container a:not(.btn) {
+  color: var(--osc-accent);
+  text-decoration: none;
+}

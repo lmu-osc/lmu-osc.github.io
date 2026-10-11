@@ -6,6 +6,7 @@ $sidebar-hl: #006426;
 
 :root {
   --osc-accent: #00883A;
+  --osc-bg: #fff;
   // Open Research Cycle handbook design tokens (consumed by handbook-styles.css)
   --orc-green-light: #f0f9f6;
   --orc-gray-200: #e2e8f0;
@@ -40,7 +41,9 @@ $sidebar-hl: #006426;
   --bs-accordion-active-color: var(--osc-accent);
 }
 .orc-accordion .accordion-body,
-.members-accordion .accordion-body {
+.members-accordion .accordion-body,
+.about-page,
+.about-join-page {
   .btn-primary {
     --bs-btn-bg: var(--osc-accent);
     --bs-btn-border-color:var(--osc-accent);   
@@ -49,6 +52,28 @@ $sidebar-hl: #006426;
     --bs-btn-active-bg: color-mix(in srgb, var(--osc-accent) 80%, black);
     --bs-btn-active-border-color: color-mix(in srgb, var(--osc-accent) 80%, black);
   }
+}
+
+// Accent border for Bootstrap membership cards
+.about-join-page .members-category {
+  --bs-border-color: var(--osc-accent);
+}
+
+// Outline buttons on the About landing and Join Us pages
+.about-page .btn-outline-primary,
+.about-join-page .btn-outline-primary {
+  --bs-btn-color: var(--osc-accent);
+  --bs-btn-bg: var(--osc-bg);
+  --bs-btn-border-color: var(--osc-accent);
+  --bs-btn-hover-color: var(--osc-bg);
+  --bs-btn-hover-bg: var(--osc-accent);
+  --bs-btn-hover-border-color: var(--osc-accent);
+  --bs-btn-active-color: var(--osc-bg);
+  --bs-btn-active-bg: var(--osc-accent);
+  --bs-btn-active-border-color: var(--osc-accent);
+  --bs-btn-disabled-color: var(--osc-accent);
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: var(--osc-accent);
 }
 
 // Center the accordion button text and position the toggle icon to the right
