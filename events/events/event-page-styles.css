@@ -12,14 +12,6 @@
   transition: transform 0.2s ease, color 0.2s ease;
 }
 
-
-.btn-pop {
-  transition: transform .15s ease;
-}
-.btn-pop:hover {
-  transform: scale(1.05);
-}
-
 .instructor-links a:hover {
   color: #0077cc;
   text-decoration: underline;

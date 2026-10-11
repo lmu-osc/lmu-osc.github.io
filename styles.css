@@ -38,3 +38,12 @@ ul#quarto-sidebar-section-1.collapse.list-unstyled.sidebar-section.depth1.show >
 .collapse.list-unstyled.sidebar-section.depth2.show > li.sidebar-item > div.sidebar-item-container > a.sidebar-item-text.sidebar-link > span.menu-text {
   font-size: 1.1em;
 }
+
+/* button pop on hover */
+
+.btn-pop {
+  transition: transform .15s ease;
+}
+.btn-pop:hover {
+  transform: scale(1.05);
+}

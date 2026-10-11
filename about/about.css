@@ -14,13 +14,6 @@
   line-height: 1.6;
   color: var(--osc-text);
 }
-/* Buttons */
-.btn-pop {
-  transition: transform .15s ease;
-}
-.btn-pop:hover {
-  transform: scale(1.05);
-}
 
 .btn-outline-primary.btn-pop{
   border:1px solid var(--osc-accent);
