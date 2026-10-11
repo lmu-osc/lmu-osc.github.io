@@ -7,18 +7,19 @@
   text-decoration: underline;
 }
 
-.events-list .card-text-clamp {
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 4;
-  overflow: hidden;
-}
-
+.events-list .card-text-clamp,
 .events-list .card-title-clamp {
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
   overflow: hidden;
+}
+
+.events-list .card-text-clamp {
+  -webkit-line-clamp: 4;
+}
+
+.events-list .card-title-clamp {
+  -webkit-line-clamp: 2;
 }
 
 .events-list .trainingurl {
@@ -38,7 +39,8 @@
   color: #000000;
   text-decoration: none;
 }
-.events-list .card:hover .trainingurl {
+.events-list .trainingurl:hover,
+.events-list .trainingurl:focus-within {
   color:var(--osc-accent);
 }
 
