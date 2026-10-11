@@ -1,0 +1,9 @@
+# Better antibodies, better science
+
+October 9, 2026
+
+Discussions around antibody validation in biomedical research continue to intensify. OSC member Johan Duchêne recently published a comment highlighting the need for validation and the implications of unreliable antibodies for reproducibility. To ensure reliable and reproducible findings, this piece proposes to establish a standardized, community-wide framework that distributes validation responsibilities across researchers, manufacturers, and publishers. [Johan Duchêne](../../people/people/johan-duchene.llms.md) advocates for centralized, open-access repositories where individual laboratories publish both positive and negative antibody validation outcomes to eliminate redundant testing.
+
+## Read the commentary here:
+
+Duchêne, J. (2026). Better antibodies, better science. PLOS Biology, 24(10), Article e3004001. <https://doi.org/10.1371/journal.pbio.3004001>
