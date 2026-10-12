@@ -1,13 +1,10 @@
 ---
 pagetitle: "Hacky Hour"
-format: 
-  html:
-    css: styles.css
 page-layout: full
 ---
 ```{=html}
 <div>
-    <h2 class="mb-0" style="border-bottom: none;">
+    <h2 class="mb-0 border-bottom-0">
         <span class="fw-bold">Hacky</span>
         <span class="fw-light"> Hour</span>
     </h2>
@@ -15,7 +12,7 @@ page-layout: full
 <div class="container px-0 mb-2">
     <div class="row align-items-center">
         <div class="col-md-9 p-0">
-            <p style="line-height: 1.6; text-align: justify;">
+            <p class="osc-init-paragraph osc-init-description">
                 Come along to talk about code, research tools, and open science in a social environment!
                 We hold sessions on the last Monday of the month, in person at Wikipedia Munich,
                 Angertorstraße 3, Munich, from 16:30 to 18:00. Each session has a theme. If you have
@@ -37,21 +34,27 @@ page-layout: full
             </p>
         </div>
         <div class="col-md-3 text-center">
-            <img src="images/hackyhour.svg" class="img-fluid" style="max-height:150px;" alt="Hacky Hour logo">
+            <img src="images/hackyhour.svg" class="img-fluid osc-init-logo" alt="Hacky Hour logo">
         </div>
     </div>
 </div>
 
 <!-- Past activity note -->
-<div class="alert alert-success text-success" role="alert" style="font-style:italic; font-size:0.95rem;">
-    Hacky Hour was active in 2024. Any interested parties wanting support to revive it or support for a one-off event can contact the LMU Open Science Center coordinator, <a href="mailto:malika.ihle@lmu.de" class="text-success">Dr. Malika Ihle</a>
-</div>
+```
+
+::: {.callout-note appearance="simple"}
+
+Hacky Hour was active in 2024. Any interested parties wanting support to revive it or support for a one-off event can contact the LMU Open Science Center coordinator, [Dr. Malika Ihle](mailto:malika.ihle@lmu.de)
+
+:::
+
+```{=html}
 
 <div class="container px-0">
-    <h4 class="mb-2" style="border-bottom: none; color: var(--osc-accent);">
+    <h4 class="mb-2 border-bottom-0">
         Get Involved
     </h4>
-    <p style="line-height: 1.6;" class="mb-3">
+    <p class="osc-init-paragraph mb-3">
         You can contact <a href="mailto:malika.ihle@lmu.de" class="text-success">
         Dr. Malika Ihle </a> or subscribe to our mailing list to get reminders or suggest themes. You can also join the <a href="https://www.lmu.de/en/about-lmu/structure/central-university-administration/it-services-division-vi/it-service-desk/central-it-services/lmu-chat-matrix/" class="text-success">LMU Chat</a>, under the Open-Science-Center Team's OSC-hacky-hour channel.
     </p>

@@ -1,14 +1,11 @@
 ---
 pagetitle: "Open Science Initiative in Psychology"
-format: 
-  html:
-    css: styles.css
 page-layout: full
 ---
 ```{=html}
 
 <div>
-    <h2 class="mb-0" style="border-bottom: none;">
+    <h2 class="mb-0 border-bottom-0">
         <span class="fw-bold">LMU</span>
         <span class="fw-light"> Open Science Initiative in Psychology</span>
     </h2>
@@ -16,7 +13,7 @@ page-layout: full
 <div class="container px-0 mb-4">
     <div class="row align-items-center">
         <div class="col-md-9 p-0">
-            <p style="line-height: 1.6; text-align: justify;" class="m-0">
+            <p class="osc-init-paragraph osc-init-description m-0">
                 The LMU Open Science Initiative in Psychology (OSIP) aims to promote Open Science at the
                 Department Psychology and beyond by monitoring international developments, organizing workshops,
                 adapting hiring policies and channeling the discussion about standards of research quality
@@ -27,25 +24,31 @@ page-layout: full
             </p>
         </div>
         <div class="col-md-3 text-center">
-            <img src="images/osip.png" class="img-fluid" style="max-height:150px;" alt="OSIP logo">
+            <img src="images/osip.png" class="img-fluid osc-init-logo" alt="OSIP logo">
         </div>
     </div>
 </div>
 <!-- Past activity note -->
-<div class="alert alert-success text-success" role="alert" style="font-style:italic;">
-    OSIP was active from July 2015 to July 2024. Any interested parties wanting support to revive it or support for a one-off event can contact the LMU Open Science Center coordinator, <a href="mailto:malika.ihle@lmu.de" class="text-success">Dr. Malika Ihle</a>
-</div>
+```
+
+::: {.callout-note appearance="simple"}
+
+OSIP was active from July 2015 to July 2024. Any interested parties wanting support to revive it or support for a one-off event can contact the LMU Open Science Center coordinator, [Dr. Malika Ihle](mailto:malika.ihle@lmu.de)
+
+:::
+
+```{=html}
 <div class="container px-0 mb-4">
-    <h4 class="mb-2" style="border-bottom: none; color: var(--osc-accent);">
+    <h4 class="mb-2 border-bottom-0">
         Resources
     </h4>
     <ul class="list-unstyled mt-0 d-flex flex-column gap-3">
         <li>
             <a href="https://osf.io/mgwk8/" rel="noopener"
-               class="d-flex align-items-center gap-3 text-decoration-none" style="cursor: pointer; width:fit-content;">
+               class="d-inline-flex align-items-center gap-3 text-decoration-none">
                 <img src="https://osf.io/static/img/institutions/shields/cos-shield.png"
-                     alt="OSF" class="rounded-3 flex-shrink-0 shadow-sm"
-                     style="width:56px; height:56px; object-fit:contain; background-color:#e2f0fe; padding:8px;">
+                     alt="OSF" class="rounded-3 flex-shrink-0 shadow-sm object-fit-contain p-2"
+                     style="width:56px; height:56px; background-color:#e2f0fe;">
                 <span>
                     <span class="d-block fw-semibold text-black">OSF Repository</span>
                     <span class="d-block text-muted small">Workshops and meetup materials</span>
@@ -55,10 +58,10 @@ page-layout: full
     </ul>
 </div>
 <div class="container px-0">
-    <h4 class="mb-2" style="border-bottom: none; color: var(--osc-accent);">
+    <h4 class="mb-2 border-bottom-0">
         Get Involved
     </h4>
-    <p style="line-height: 1.6;" class="mb-3">
+    <p class="osc-init-paragraph mb-3">
      If you are a member of the psychology department and want to join the initiative, do not hesitate 
     to contact us. We gladly welcome all psychologists interested in making research at our department 
     more transparent.
