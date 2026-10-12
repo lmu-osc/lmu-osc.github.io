@@ -2,7 +2,7 @@
 
 | Date | Title | Categories |
 |----|----|----|
-| Oct 9, 2026 | [Better antibodies, better science](../news/news/2026-10-09-better-antibodies-duchene.llms.md) | Announcement |
+| Oct 9, 2026 | [Better antibodies, better science](../news/news/2026-10-09-better-antibodies-duchene.llms.md) | Publications |
 | Sep 29, 2026 | [OSF project functionality - alternatives for organizing and sharing research materials](../news/news/2026-09-29-osf-project-functionality.llms.md) | Announcement |
 | Sep 23, 2026 | [The Department of Educational Sciences joins the OSC](../news/news/2026-09-23-educational-sciences-dept-institutional-member.llms.md) | New Members |
 | Sep 2, 2026 | [Reproducibility in Business and Management Research](../news/news/2026-09-02-reproducibility-in-business-research.llms.md) | Publications |
