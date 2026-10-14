@@ -6,14 +6,12 @@ format:
       margin-width: 300px
       gutter-width: 1.5rem
     css: 
-      - ../styles.css
       - people.css
     page-layout: full
     toc: false
     include-in-header: 
       - text: |
           <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
-
 execute: 
   echo: false
   freeze: auto

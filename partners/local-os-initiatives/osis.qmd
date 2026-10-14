@@ -1,13 +1,10 @@
 ---
 pagetitle: "Open Science Initiative in Statistics"
-format: 
-  html:
-    css: styles.css
 page-layout: full
 ---
 ```{=html}
 <div>
-    <h2 class="mb-0" style="border-bottom: none;">
+    <h2 class="mb-0 border-bottom-0">
         <span class="fw-bold">LMU</span>
         <span class="fw-light"> Open Science Initiative in Statistics</span>
     </h2>
@@ -15,7 +12,7 @@ page-layout: full
 <div class="container px-0 mb-4">
     <div class="row align-items-center">
         <div class="col-md-9 p-0">
-            <p style="line-height: 1.6; text-align: justify;" class="m-0">
+            <p class="osc-init-paragraph osc-init-description m-0">
                     Founded in June 2021, the LMU Open Science Initiative in Statistics (OSIS) at the Department of Statistics 
                     supports the goals of the OSC and wants to take on a leading role in fostering good research practices 
                     and promoting open science. The department believes that statistics as a subject plays a major role in 
@@ -26,41 +23,41 @@ page-layout: full
             </p>
         </div>
         <div class="col-md-3 text-center">
-            <img src="images/osis.png" class="img-fluid" style="max-height:150px;" alt="OSIS logo">
+            <img src="images/osis.png" class="img-fluid osc-init-logo" alt="OSIS logo">
         </div>
     </div>
 </div>
 <div class="container px-0 mb-4">
-    <h4 class="mb-2" style="border-bottom: none; color: var(--osc-accent);">
+    <h4 class="mb-2 border-bottom-0">
         Members
     </h4>
-    <ul class="mt-0 osc-init-organizer-list">
-        <li>
+    <ul class="mt-0 row row-cols-1 row-cols-sm-2 gx-4 gy-2 text-body-secondary">
+        <li class="col">
             <a href="/people/people/andreas-bender.qmd" class="text-decoration-none text-black osc-init-people-link">
                 Dr. Andreas Bender
             </a>
         </li>
-        <li>
+        <li class="col">
             <a href="/people/people/moritz-herrmann.qmd" class="text-decoration-none text-black osc-init-people-link">
                 Dr. Moritz Herrmann
             </a>
         </li>
-        <li>
+        <li class="col">
             <a href="/people/people/matthias-assenmacher.qmd" class="text-decoration-none text-black osc-init-people-link">
                 Dr. Matthias Assenmacher
             </a>
         </li>
-        <li>
+        <li class="col">
             <a href="/people/people/lisa-wimmer.qmd" class="text-decoration-none text-black osc-init-people-link">
                 Dr. Lisa Wimmer
             </a>
         </li>
-        <li>
+        <li class="col">
             <a href="/people/people/patrick-oliver-schenk.qmd" class="text-decoration-none text-black osc-init-people-link">
                 Patrick Oliver Schenk
             </a>
         </li>
-        <li>
+        <li class="col">
             <a href="/people/people/felix-henninger.qmd" class="text-decoration-none text-black osc-init-people-link">
                 Felix Henninger
             </a>
@@ -69,10 +66,10 @@ page-layout: full
     </ul>
 </div>
 <div class="container px-0">
-    <h4 class="mb-2" style="border-bottom: none; color: var(--osc-accent);">
+    <h4 class="mb-2 border-bottom-0">
         Get Involved
     </h4>
-    <p style="line-height: 1.6;" class="mb-3">
+    <p class="osc-init-paragraph mb-3">
         Core members of the OSIS currently meet once a month. If you are a member of the Department of Statistics 
         and are interested in joining the initiative, do not hesitate to contact us.
     </p>

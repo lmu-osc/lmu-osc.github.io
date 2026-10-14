@@ -4,9 +4,16 @@ $navbar-bg: #009933;
 $link-color: #006426;
 $sidebar-hl: #006426;
 
-:root {
-  --osc-green: #00883A;
+/*-- scss:rules --*/
 
+:root {
+  --osc-accent: #00883A;
+  --osc-bg: #fff;
+  --osc-black:#232323;
+  --osc-muted:#626468;
+  --osc-medium-grey:#C0C1C3;
+  --osc-text: #222;
+  --osc-divider: #d6d6d5;
   // Open Research Cycle handbook design tokens (consumed by handbook-styles.css)
   --orc-green-light: #f0f9f6;
   --orc-gray-200: #e2e8f0;
@@ -41,7 +48,9 @@ $sidebar-hl: #006426;
   --bs-accordion-active-color: var(--osc-accent);
 }
 .orc-accordion .accordion-body,
-.members-accordion .accordion-body {
+.members-accordion .accordion-body,
+.about-page,
+.about-join-page {
   .btn-primary {
     --bs-btn-bg: var(--osc-accent);
     --bs-btn-border-color:var(--osc-accent);   
@@ -50,6 +59,28 @@ $sidebar-hl: #006426;
     --bs-btn-active-bg: color-mix(in srgb, var(--osc-accent) 80%, black);
     --bs-btn-active-border-color: color-mix(in srgb, var(--osc-accent) 80%, black);
   }
+}
+
+// Accent border for Bootstrap membership cards
+.about-join-page .members-category {
+  --bs-border-color: var(--osc-accent);
+}
+
+// Outline buttons on the About landing and Join Us pages
+.about-page .btn-outline-primary,
+.about-join-page .btn-outline-primary {
+  --bs-btn-color: var(--osc-accent);
+  --bs-btn-bg: var(--osc-bg);
+  --bs-btn-border-color: var(--osc-accent);
+  --bs-btn-hover-color: var(--osc-bg);
+  --bs-btn-hover-bg: var(--osc-accent);
+  --bs-btn-hover-border-color: var(--osc-accent);
+  --bs-btn-active-color: var(--osc-bg);
+  --bs-btn-active-bg: var(--osc-accent);
+  --bs-btn-active-border-color: var(--osc-accent);
+  --bs-btn-disabled-color: var(--osc-accent);
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: var(--osc-accent);
 }
 
 // Center the accordion button text and position the toggle icon to the right
@@ -87,4 +118,74 @@ $sidebar-hl: #006426;
     --bs-btn-hover-border-color: color-mix(in srgb, var(--osc-accent) 80%, black);
     --bs-btn-active-bg: color-mix(in srgb, var(--osc-accent) 80%, black);
     --bs-btn-active-border-color: color-mix(in srgb, var(--osc-accent) 80%, black);
+}
+
+// Partners: Bootstrap component variables
+// Include .card so the background takes precedence over the separately loaded Bootstrap CSS.
+.member-grid-item.card {
+  --bs-card-bg: #d2e9d61a;
+}
+
+.member-grid-item .social-link.btn.btn-outline-secondary {
+  --bs-btn-color: var(--osc-accent);
+  --bs-btn-hover-bg: var(--osc-accent);
+  --bs-btn-hover-color: var(--osc-bg);
+  --bs-btn-hover-border-color: var(--osc-accent);
+  --bs-btn-active-bg: color-mix(in srgb, var(--osc-accent) 80%, black);
+  --bs-btn-active-color: var(--osc-bg);
+  --bs-btn-active-border-color: var(--bs-btn-active-bg);
+  --bs-btn-disabled-color: var(--osc-accent);
+  --bs-btn-focus-shadow-rgb: 0, 136, 58;
+}
+
+/* bootstrap color values for hover, focus, active, and disabled states for partner cards */
+.initiative-card .btn.btn-primary,
+.primary-social-link.btn.btn-primary,
+a.btn.btn-primary.osc-init-contact-btn,
+.inst-member-container a.btn.btn-primary {
+  --bs-btn-bg: var(--osc-accent);
+  --bs-btn-color: var(--osc-bg);
+  --bs-btn-border-color: var(--osc-accent);
+  --bs-btn-hover-bg: color-mix(in srgb, var(--osc-accent) 80%, black);
+  --bs-btn-hover-color: var(--osc-bg);
+  --bs-btn-hover-border-color: var(--bs-btn-hover-bg);
+  --bs-btn-active-bg: var(--bs-btn-hover-bg);
+  --bs-btn-active-color: var(--bs-btn-hover-color);
+  --bs-btn-active-border-color: var(--bs-btn-hover-border-color);
+  --bs-btn-disabled-bg: var(--osc-accent);
+  --bs-btn-disabled-color: var(--osc-bg);
+  --bs-btn-disabled-border-color: var(--osc-accent);
+  --bs-btn-focus-shadow-rgb: 0, 136, 58;
+}
+
+.initiative-card .btn.btn-primary {
+  --bs-btn-border-width: 2px;
+}
+
+.inst-member-container a.btn.btn-primary {
+  --bs-btn-border-width: 2px;
+  --bs-btn-border-color: transparent;
+  --bs-btn-hover-bg: var(--osc-bg);
+  --bs-btn-hover-color: var(--osc-accent);
+  --bs-btn-hover-border-color: var(--osc-accent);
+}
+
+// Contact buttons on the local Open Science Initiative pages.
+a.btn.btn-primary.osc-init-contact-btn {
+  --bs-btn-hover-bg: color-mix(in srgb, var(--osc-accent) 80%, black);
+  --bs-btn-hover-border-color: color-mix(in srgb, var(--osc-accent) 80%, black);
+}
+
+a.btn.btn-outline-primary.osc-init-contact-btn {
+  --bs-btn-color: var(--osc-accent);
+  --bs-btn-border-color: var(--osc-accent);
+  --bs-btn-hover-color: var(--osc-bg);
+  --bs-btn-hover-bg: var(--osc-accent);
+  --bs-btn-hover-border-color: var(--osc-accent);
+  --bs-btn-active-color: var(--osc-bg);
+  --bs-btn-active-bg: var(--osc-accent);
+  --bs-btn-active-border-color: var(--osc-accent);
+  --bs-btn-disabled-color: var(--osc-accent);
+  --bs-btn-disabled-border-color: var(--osc-accent);
+  --bs-btn-focus-shadow-rgb: 0, 136, 58;
 }
