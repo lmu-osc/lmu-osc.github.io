@@ -41,12 +41,12 @@ main#quarto-document-content {
 
 /*specify the negative margins for carousel indicators*/
 .mb-n4-custom{
-    margin-bottom: -1.8rem;
+    margin-bottom: -1.3rem;
 }
 
 @media (min-width: 767.98px) {
   .mb-n2-custom {
-    margin-bottom: -0.6rem;
+    margin-bottom: -0.1rem;
   }
 }
 
@@ -146,21 +146,35 @@ main#quarto-document-content {
     transform: scale(1.05);
 }
 
+.testimonial-stage {
+  min-height: 280px;
+  isolation: isolate;
+}
+
+.testimonial-content {
+  position: relative;
+  z-index: 1;
+}
+
+.testimonial-author {
+  margin-top: 1.5rem;
+}
+
 .testimonial-decoration {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100%;
-  min-height: 280px;
   pointer-events: none;
 }
 
 .testimonial-quote-large {
   font-size: 16rem;
   line-height: 0.7;
-  opacity: 0.12;
+  opacity: 0.06;
   display: block;
-  transform: translateY(-10px);
 }
 
 

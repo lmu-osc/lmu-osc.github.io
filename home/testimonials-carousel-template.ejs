@@ -5,8 +5,11 @@
     <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="<%= index %>" class="<%= index === 0 ? 'active' : '' %>" aria-current="<%= index === 0 ? 'true' : 'false' %>" aria-label="Testimonial <%= index + 1 %> from <%= item.name %>"></button>
     <% }); %>
   </div>
-  <div class="row d-flex justify-content-center align-items-center position-relative">
-    <div class="col-12 col-lg-8">
+  <div class="row d-flex justify-content-center align-items-center position-relative testimonial-stage">
+    <div class="testimonial-decoration" aria-hidden="true">
+      <i class="bi bi-quote testimonial-quote-large text-lmu-acc-blue"></i>
+    </div>
+    <div class="col-12 col-lg-10 testimonial-content text-center">
       <div class="carousel-inner">
         <% items.forEach((item, index) => { %>
           <div class="carousel-item <%= index === 0 ? 'active' : '' %>">
@@ -22,11 +25,6 @@
                 </div>       
           </div>
         <% }); %>
-      </div>
-    </div>
-    <div class="col-12 col-lg-3 d-none d-md-block ">
-      <div class="testimonial-decoration" aria-hidden="true">
-        <i class="bi bi-quote testimonial-quote-large text-lmu-acc-blue"></i>
       </div>
     </div>
   </div>
