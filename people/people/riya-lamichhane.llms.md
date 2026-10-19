@@ -8,7 +8,7 @@ Faculty of Medicine
 
 [riya.lamichhane@campus.lmu.de](mailto:riya.lamichhane@campus.lmu.de)
 
-[](https://github.com/Riyaaa1) [](https://orcid.org/0009-0006-3089-2857)
+[](https://orcid.org/0009-0006-3089-2857) [](https://github.com/Riyaaa1)
 
 ## Mission Statement
 
