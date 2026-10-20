@@ -1,0 +1,33 @@
+---
+title: Vanshika Gautam
+academic_title: M.Sc. Student
+family-names: Gautam
+given-names: Vanshika
+categories:
+  - Psychology & Education
+memberships:
+  - type: fellow
+    status: active
+    position: M.Sc. Student
+    faculty: Psychology & Education
+    start: 2026
+  - type: staff
+    status: active
+    position: Research Assistant - Training Development , Event Logistics & Public Outreach
+    faculty: Psychology & Education
+    start: 2026
+display_weight_staff: 99
+osc_staff_title: Research Assistant - Training Development , Event Logistics & Public Outreach
+personal: 
+email: vanshika.gautam@campus.lmu.de
+social_media:
+  GitHub: "https://github.com/vanshikagautam"
+  ORCID: 
+mission_statement: |
+  hello
+
+template: templates/people-template.html
+filters: 
+    - templates/people_filter.lua
+---
+
