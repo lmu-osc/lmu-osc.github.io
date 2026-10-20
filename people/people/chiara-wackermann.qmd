@@ -1,0 +1,34 @@
+---
+title: Chiara Wackermann
+academic_title: B.Sc. Student
+family-names: Wackermann
+given-names: Chiara
+categories:
+  - Psychology & Education
+memberships:
+  - type: fellow
+    status: active
+    position: B.Sc. Student
+    faculty: Psychology & Education
+    start: 2026
+  - type: staff
+    status: active
+    position: Research Assistant - Training Development , Event Logistics & Public Outreach
+    faculty: Psychology & Education
+    start: 2026
+display_weight_staff: 99
+osc_staff_title: Research Assistant - Training Development , Event Logistics & Public Outreach
+personal: |
+  I am a B.Sc. student in Psychology at LMU Munich, driven by the belief that Open Science practices and reproducibility are fundamental to transparency, trust in research, and collaborative knowledge building. My primary interests lie in secure data management, the broader impacts of open science on the scientific community, and making scientific education accessible to all future researchers. At the LMU Open Science Center, I actively support these goals through public outreach, event organization, and the development of educational training materials.
+email: chiara.wackermann@lmu.de
+photo: 'images/chiara_wackermann.jpeg'
+social_media:
+  GitHub: "https://github.com/Sandmaennchen7"
+  ORCID: https://orcid.org/0009-0007-6998-4430
+mission_statement: |
+  I am a B.Sc. student in Psychology at LMU Munich, driven by the belief that Open Science practices and reproducibility are fundamental to transparency, trust in research, and collaborative knowledge building. My primary interests lie in secure data management, the broader impacts of open science on the scientific community, and making scientific education accessible to all future researchers. At the LMU Open Science Center, I actively support these goals through public outreach, event organization, and the development of educational training materials.
+template: templates/people-template.html
+filters: 
+    - templates/people_filter.lua
+---
+
