@@ -80,21 +80,6 @@ I’m a scientific research programmer with a Master’s degree in epidemiology,
 
 [Read More!](../people/people/pat-callahan.llms.md)
 
-#### Research Assistant - Software Development
-
-[![Profile photo of Riya Lamichhane](people//images/default.svg)](../people/people/riya-lamichhane.llms.md)
-
-- [](https://orcid.org/0009-0006-3089-2857)
-- [](https://github.com/Riyaaa1)
-
-#### Riya Lamichhane
-
-M.Sc. Student \| Medicine
-
-I am a Master’s student in Epidemiology at the Institute for Medical Information Processing, Biometry, and Epidemiology (IBE). At the OSC, I primarily support our website development work. As a firm believer in transparency, open access, and reliability in all things science, I aim to both promote and practice open science through my work.
-
-[Read More!](../people/people/riya-lamichhane.llms.md)
-
 ## Former Staff
 
 - [Ben Abrahams (2025 - 2025): Research Assistant - Software Developer](../people/people/ben-abrahams.llms.md)
@@ -103,6 +88,7 @@ I am a Master’s student in Epidemiology at the Institute for Medical Informati
 - [Franka Etzel (2022 - 2023): Research Assistant - Members Onboarding, Public Outreach](../people/people/franka-etzel.llms.md)
 - [Lutz Heil (2018 - 2019): Research Assistant - Original Website Content Creator](../people/people/lutz-heil.llms.md)
 - [Florian Kohrt (2024 - 2025): Training Material, Software, and Guidelines Developer](../people/people/florian-kohrt.llms.md)
+- [Riya Lamichhane (2025 - 2026): Research Assistant - Software Development](../people/people/riya-lamichhane.llms.md)
 - [Gracia Prüm (2023 - 2025): Research Assistant - Public outreach, Event Logistics](../people/people/gracia-pruem.llms.md)
 - [Caterina Sanchez Steinhagen (2025 - 2025): Research Assistant - Training Material Developer](../people/people/caterina-sanchez-steinhagen.llms.md)
 - [Leonhard Schramm (2019 - 2022): Research Assistant - Members Onboarding, Guidelines Creator](../people/people/leonhard-schramm.llms.md)
