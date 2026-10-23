@@ -222,6 +222,16 @@ Researcher
 
 Medicine
 
+[](https://orcid.org/0009-0007-6998-4430)
+
+[![Profile](people/images/chiara_wackermann.jpeg)](../people/people/chiara-wackermann.llms.md)
+
+[Chiara Wackermann](../people/people/chiara-wackermann.llms.md)
+
+B.Sc. Student
+
+Psychology & Education
+
 ## Former Fellows
 
 - [Ben Abrahams (2025 - 2025), M.Sc.](../people/people/ben-abrahams.llms.md)

@@ -80,6 +80,21 @@ I’m a scientific research programmer with a Master’s degree in epidemiology,
 
 [Read More!](../people/people/pat-callahan.llms.md)
 
+#### Research Assistant - Members Onboarding, Event Logistics & Public Outreach
+
+[![Profile photo of Chiara Wackermann](people/images/chiara_wackermann.jpeg)](../people/people/chiara-wackermann.llms.md)
+
+- [](https://orcid.org/0009-0007-6998-4430)
+- [](https://github.com/Sandmaennchen7)
+
+#### Chiara Wackermann
+
+B.Sc. Student \| Psychology & Education
+
+I am a B.Sc. student in Psychology at LMU Munich, driven by the belief that Open Science practices and reproducibility are fundamental to transparency, trust in research, and collaborative knowledge building. My primary interests lie in secure data management, the broader impacts of open science on the scientific community, and making scientific education accessible to all future researchers. At the LMU Open Science Center, I actively support these goals through public outreach, event organization, and the development of educational training materials.
+
+[Read More!](../people/people/chiara-wackermann.llms.md)
+
 ## Former Staff
 
 - [Ben Abrahams (2025 - 2025): Research Assistant - Software Developer](../people/people/ben-abrahams.llms.md)
