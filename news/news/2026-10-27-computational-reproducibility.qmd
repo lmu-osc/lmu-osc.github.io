@@ -17,13 +17,13 @@ Eventually, they argue, reproducible workflows should lead to a stronger trust i
 
 The authors put forward a number of recommendations for reproducible workflows focusing on the **SEED** method, which includes 
 
-   * **S**cripting the entire workflow and data analysis  in executable code,
+   * **Scripting** the entire workflow and data analysis  in executable code,
 
-   * **E**ncapsulating, using relative paths and capturing the working environment, while minimizing dependencies of packages,
+   * **Encapsulating**, using relative paths and capturing the working environment, while minimizing dependencies of packages,
 
-   * **E**xplaining the script and the variables it contains to human readers,
+   * **Explaining** the script and the variables it contains to human readers,
 
-   * **D**epositing code and data in dedicated research repositories, while anonymizing data  and making the data organisation easily understandable to others.
+   * **Depositing** code and data in dedicated research repositories, while anonymizing data  and making the data organisation easily understandable to others.
 
 
 ## Read the article here:
