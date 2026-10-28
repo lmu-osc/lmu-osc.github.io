@@ -1,6 +1,6 @@
 # Members
 
-Our 120 members actively support the goals of the OSC and contribute to our activities such as training, community building, meta-research, and liaison with stakeholders. [Join us](../about/join-us.llms.md) .
+Our 121 members actively support the goals of the OSC and contribute to our activities such as training, community building, meta-research, and liaison with stakeholders. [Join us](../about/join-us.llms.md) .
 
 ## LMU Members
 
@@ -343,6 +343,16 @@ Eva Grill
 Prof. Dr.
 
 Medicine
+
+[](https://orcid.org/0000-0002-8255-8088)
+
+![Profile of Markus Gödker](people/images/markus-goedker.jpg)
+
+Markus Gödker
+
+Dr.
+
+Psychology & Education
 
 [](https://orcid.org/0000-0001-6772-0393)
 
@@ -1451,6 +1461,16 @@ Title: Prof. Dr.
 Faculty: Medicine
 
 [View Profile](../people/people/eva-grill.llms.md)
+
+![Profile of Markus Gödker](people/images/markus-goedker.jpg) Markus Gödker
+
+[](https://orcid.org/0000-0002-8255-8088)
+
+Title: Dr.
+
+Faculty: Psychology & Education
+
+[View Profile](../people/people/markus-goedker.llms.md)
 
 ![Profile of Anna-Carolina Haensch](people/images/haensch_anna-carolina.png) Anna-Carolina Haensch
 
