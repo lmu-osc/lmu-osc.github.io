@@ -82,6 +82,21 @@ I’m a scientific research programmer with a Master’s degree in epidemiology,
 
 #### Research Assistant - Members Onboarding, Event Logistics & Public Outreach
 
+[![Profile photo of Vanshika Gautam](people/images/vanshika-gautam.jpg)](../people/people/vanshika-gautam.llms.md)
+
+- [](https://orcid.org/0009-0007-3510-5063)
+- [](https://github.com/vanshikagautam)
+
+#### Vanshika Gautam
+
+M.Sc. Student \| Psychology & Education
+
+I am an M.Sc. student in Psychology – Learning Sciences and Human Development at LMU Munich, with a background in Applied Psychology. I strongly value the principles of Open and Reproducible Science and their role in fostering collaboration, transparency, and the sustainable advancement of scientific knowledge. At the OSC, I contribute to updating and managing the OSC website content and member profiles to strengthen community engagement. Additionally, I also aid in the creation of content for blogs, newsletters, social media, and website updates to promote Open Science initiatives.
+
+[Read More!](../people/people/vanshika-gautam.llms.md)
+
+#### Research Assistant - Members Onboarding, Event Logistics & Public Outreach
+
 [![Profile photo of Chiara Wackermann](people/images/chiara_wackermann.jpeg)](../people/people/chiara-wackermann.llms.md)
 
 - [](https://orcid.org/0009-0007-6998-4430)

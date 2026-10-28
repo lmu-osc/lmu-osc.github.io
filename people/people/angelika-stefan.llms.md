@@ -8,7 +8,7 @@ Faculty of Psychology & Education
 
 [angelika.m.stefan@gmail.com](mailto:angelika.m.stefan@gmail.com)
 
-[LMU Profile](https://www.lmu.de/psy/de/lehrstuehle/computational-modeling-in-psychology/people/)
+[Professional Profile](https://www.liverpool.ac.uk/people/angelika-stefan)
 
 [](https://orcid.org/0000-0003-3382-4746)
 

@@ -8,7 +8,7 @@ Faculty of Math, Informatics & Stats
 
 [m.herklotz@lmu.de](mailto:m.herklotz@lmu.de)
 
-[LMU Profile](https://www.stat.lmu.de/soda/en/team/contact-page/markus-herklotz-bc341ad7.html)
+[LMU Profile](https://www.stat.lmu.de/en/people/contact-page/markus-herklotz-bc341ad7.html)
 
 [](https://orcid.org/0000-0002-6093-293X)
 

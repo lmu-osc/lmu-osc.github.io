@@ -8,7 +8,7 @@ Faculty of Math, Informatics & Stats
 
 [marcel.neunhoeffer@stat.uni-muenchen.de](mailto:marcel.neunhoeffer@stat.uni-muenchen.de)
 
-[LMU Profile](https://www.stat.lmu.de/soda/en/team/contact-page/marcel-neunhoeffer-2cbaa704.html)
+[LMU Profile](https://www.stat.lmu.de/soda/en/about-us/contact-page/marcel-neunhoeffer-2cbaa704.html)
 
 [Personal Website](https://www.marcel-neunhoeffer.com)
 

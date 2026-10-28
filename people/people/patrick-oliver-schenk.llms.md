@@ -8,7 +8,7 @@ Faculty of Social Sciences
 
 [patrick.schenk@lmu.de](mailto:patrick.schenk@lmu.de)
 
-[LMU Profile](https://www.stat.lmu.de/soda/en/team/contact-page/patrick-oliver-schenk-a41e7ef3.html)
+[LMU Profile](https://www.stat.lmu.de/soda/en/about-us/contact-page/patrick-oliver-schenk-a41e7ef3.html)
 
 [](https://orcid.org/0000-0003-3840-7298)
 
