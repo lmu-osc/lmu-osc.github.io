@@ -8,7 +8,7 @@ Faculty of Math, Informatics & Stats
 
 [jan.simson@lmu.de](mailto:jan.simson@lmu.de)
 
-[LMU Profile](https://www.stat.lmu.de/soda/en/team/contact-page/jan-simson-4e11e880.html)
+[LMU Profile](https://www.stat.lmu.de/soda/en/about-us/contact-page/jan-simson-4e11e880.html)
 
 [Personal Website](https://simson.io)
 

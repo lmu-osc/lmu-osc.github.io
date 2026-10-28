@@ -8,7 +8,7 @@ Faculty of Math, Informatics & Stats
 
 [anna-carolina.haensch@stat.uni-muenchen.de](mailto:anna-carolina.haensch@stat.uni-muenchen.de)
 
-[LMU Profile](https://www.stat.lmu.de/soda/en/team/contact-page/anna-carolina-haensch-10689cb3.html)
+[LMU Profile](https://www.stat.lmu.de/en/people/contact-page/anna-carolina-haensch-10689cb3.html)
 
 [](https://orcid.org/0000-0001-6772-0393)
 

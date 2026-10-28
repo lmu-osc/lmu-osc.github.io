@@ -8,7 +8,7 @@ Faculty of Math, Informatics & Stats
 
 [soda@stat.uni-muenchen.de](mailto:soda@stat.uni-muenchen.de)
 
-[LMU Profile](https://www.stat.lmu.de/soda/en/team/contact-page/frauke-kreuter-825909f7.html)
+[LMU Profile](https://www.stat.lmu.de/soda/en/about-us/contact-page/frauke-kreuter-825909f7.html)
 
 [](https://orcid.org/0000-0002-7339-2645)
 
