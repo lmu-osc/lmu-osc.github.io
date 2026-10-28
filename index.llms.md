@@ -69,6 +69,14 @@ Keep up to date with our latest news releases, and upcoming events.
 
 News [View All News](news/index.llms.md)
 
+###### Oct 27, 2026
+
+##### [Improving Computational Reproducibility](news/news/2026-10-27-computational-reproducibility.llms.md)
+
+OSC Members co-authored an article highlighting the significance of computational reproducibility for scientists and the scientific community and giving recommendations for effective workflows.
+
+[Read More →](news/news/2026-10-27-computational-reproducibility.llms.md)
+
 ###### Oct 9, 2026
 
 ##### [Better antibodies, better science](news/news/2026-10-09-better-antibodies-duchene.llms.md)
@@ -84,14 +92,6 @@ Johan Duchêne advocates for stricter antibody validation processes to increase 
 OSF Projects are being phased out as active workspaces. Here’s what researchers need to know and what alternatives are available.
 
 [Read More →](news/news/2026-09-29-osf-project-functionality.llms.md)
-
-###### Sep 23, 2026
-
-##### [The Department of Educational Sciences joins the OSC](news/news/2026-09-23-educational-sciences-dept-institutional-member.llms.md)
-
-The OSC welcomes the Department of Educational Sciences as our new funding institutional member!
-
-[Read More →](news/news/2026-09-23-educational-sciences-dept-institutional-member.llms.md)
 
 Events [View All Events](events/index.llms.md)
 
