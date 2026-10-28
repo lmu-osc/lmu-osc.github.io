@@ -32,6 +32,16 @@ Ph.D. Candidate
 
 Psychology & Education
 
+[](https://orcid.org/0009-0007-3510-5063)
+
+[![Profile](people/images/vanshika-gautam.jpg)](../people/people/vanshika-gautam.llms.md)
+
+[Vanshika Gautam](../people/people/vanshika-gautam.llms.md)
+
+M.Sc. Student
+
+Psychology & Education
+
 [![Profile](people/images/goetz_laura.jpg)](../people/people/laura-goetz.llms.md)
 
 [Laura Goetz](../people/people/laura-goetz.llms.md)

@@ -8,7 +8,7 @@ Faculty of Psychology & Education
 
 [chiara.wackermann@lmu.de](mailto:chiara.wackermann@lmu.de)
 
-[](https://orcid.org/0009-0007-6998-4430) [](https://github.com/Sandmaennchen7)
+[](https://github.com/Sandmaennchen7) [](https://orcid.org/0009-0007-6998-4430)
 
 ## Mission Statement
 
