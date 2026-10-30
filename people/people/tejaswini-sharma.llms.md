@@ -2,7 +2,7 @@
 
 ![Profile photo of ](images/tejaswini-sharma_25-09-26_164-web.jpg)
 
-M.Sc. Student
+Research Assistant - Training Development
 
 Faculty of Psychology & Education
 
