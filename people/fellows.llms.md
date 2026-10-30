@@ -212,16 +212,6 @@ Ph.D. Candidate
 
 Social Sciences
 
-[](https://orcid.org/0009-0000-0305-9751)
-
-[![Profile](people/images/tejaswini-sharma_25-09-26_164-web.jpg)](../people/people/tejaswini-sharma.llms.md)
-
-[Tejaswini Sharma](../people/people/tejaswini-sharma.llms.md)
-
-M.Sc. Student
-
-Psychology & Education
-
 [](https://orcid.org/0000-0003-4706-3634)
 
 [![Profile](people/images/villagran_alberto_g..jpg)](../people/people/alberto-villagran.llms.md)
@@ -255,6 +245,7 @@ Psychology & Education
 - [Leonhard Schramm, M.Sc.](../people/people/leonhard-schramm.llms.md)
 
 - [Caspar Schumacher, B.Sc.](../people/people/caspar-schumacher.llms.md)
+- [Tejaswini Sharma (2025 - 2026), M.Sc. Student](../people/people/tejaswini-sharma.llms.md)
 - [Jan Simson, M.Sc.](../people/people/jan-simson.llms.md)
 - [Po-Chun Tseng, DDS, MSc](../people/people/po-chun-tseng.llms.md)
 - [Yijing Wang, M.Sc.](../people/people/yijing-wang.llms.md)
