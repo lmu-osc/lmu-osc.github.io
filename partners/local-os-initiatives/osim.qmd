@@ -1,14 +1,11 @@
 ---
 pagetitle: "Open Science Initiative in Medicine"
-format: 
-  html:
-    css: styles.css
 page-layout: full
 ---
 ```{=html}
 
 <div>
-    <h2 class="mb-0" style="border-bottom: none;">
+    <h2 class="mb-0 border-bottom-0">
         <span class="fw-bold">LMU</span>
         <span class="fw-light"> Open Science Initiative in Medicine</span>
     </h2>
@@ -16,7 +13,7 @@ page-layout: full
 <div class="container px-0 mb-2">
     <div class="row align-items-center">
         <div class="col-md-9 p-0">
-            <p style="line-height: 1.6; text-align: justify;">
+            <p class="osc-init-paragraph osc-init-description">
                 Founded in January 2019, the LMU Open Science Initiative in Medicine (OSIM) aims to promote open science 
                 in medicine by developing training programs and offering strategies on how to improve effectiveness and 
                 reproducibility of basic and clinical medical research.
@@ -25,21 +22,21 @@ page-layout: full
             </p>
         </div>
         <div class="col-md-3 text-center">
-            <img src="images/osim.png" class="img-fluid" style="max-height:150px;" alt="OSIM logo">
+            <img src="images/osim.png" class="img-fluid osc-init-logo" alt="OSIM logo">
         </div>
     </div>
 </div>
 <div class="container px-0 mb-3">
-    <h4 class="mb-2" style="border-bottom: none; color: var(--osc-accent);">
+    <h4 class="mb-2 border-bottom-0">
         Current Organizers
     </h4>
-    <ul class="mt-0 osc-init-organizer-list">
-        <li>
+    <ul class="mt-0 row row-cols-1 row-cols-sm-2 gx-4 gy-2 text-body-secondary">
+        <li class="col">
             <a href="/people/people/luisa-jimenez-soto.html" class="text-decoration-none text-black osc-init-people-link">
                 PD. Dr. Luisa F. Jiménez-Soto (Chair)
             </a>
         </li>
-        <li>
+        <li class="col">
             <a href="/people/people/julian-lange.html" class="text-decoration-none text-black osc-init-people-link">
                 Julian Lange, M.Sc. (Coordinator)
             </a>
@@ -47,21 +44,21 @@ page-layout: full
     </ul>
 </div>
 <div class="container px-0 mb-3">
-    <h4 class="mb-2" style="border-bottom: none; color: var(--osc-accent);">
+    <h4 class="mb-2 border-bottom-0">
         Senior Members
     </h4>
-    <ul class="mt-0 osc-init-organizer-list">
-        <li>
+    <ul class="mt-0 row row-cols-1 row-cols-sm-2 gx-4 gy-2 text-body-secondary">
+        <li class="col">
             <a href="/people/people/anne-laure-boulesteix.html" class="text-decoration-none text-black osc-init-people-link">
                 Prof. Dr. Anne-Laure Boulesteix
             </a>
         </li>
-        <li>
+        <li class="col">
             <a href="/people/people/eva-hoster.html" class="text-decoration-none text-black osc-init-people-link">
                 Prof. Dr. Eva Hoster
             </a>
         </li>
-        <li>
+        <li class="col">
             <a href="/people/people/nikolaus-plesnila.html" class="text-decoration-none text-black osc-init-people-link">
                 Prof. Dr. Nikolaus Plesnila
             </a>
@@ -69,13 +66,13 @@ page-layout: full
     </ul>
 </div>
 <div class="container px-0 mb-3">
-    <h4 class="mb-2" style="border-bottom: none; color: var(--osc-accent);">
+    <h4 class="mb-2 border-bottom-0">
       Resources
     </h4>
     <ul class="list-unstyled mt-0 d-flex flex-column gap-3">
         <li>
             <a href="https://www.youtube.com/@lmuopenscienceinitiativein447/videos" rel="noopener"
-               class="d-flex align-items-center gap-3 text-decoration-none" style="cursor: pointer; width:fit-content;">
+               class="d-inline-flex align-items-center gap-3 text-decoration-none">
                 <span class="d-flex align-items-center justify-content-center rounded-3 flex-shrink-0 shadow-sm"
                       style="width:56px; height:56px; background-color:#fde8e8;">
                     <i class="bi bi-youtube" style="font-size:1.6rem; color:#c0392b;"></i>
@@ -88,10 +85,10 @@ page-layout: full
         </li>
         <li>
             <a href="https://osf.io/kyvut/overview" rel="noopener"
-               class="d-flex align-items-center gap-3 text-decoration-none" style="cursor: pointer; width:fit-content;">
+               class="d-inline-flex align-items-center gap-3 text-decoration-none">
                 <img src="https://osf.io/static/img/institutions/shields/cos-shield.png"
-                     alt="OSF" class="rounded-3 flex-shrink-0 shadow-sm"
-                     style="width:56px; height:56px; object-fit:contain; background-color:#e2f0fe; padding:8px;">
+                     alt="OSF" class="rounded-3 flex-shrink-0 shadow-sm object-fit-contain p-2"
+                     style="width:56px; height:56px; background-color:#e2f0fe;">
                 <span>
                     <span class="d-block fw-semibold text-black">OSF Repository</span>
                     <span class="d-block text-muted small">Workshops and meetup materials</span>
@@ -101,10 +98,10 @@ page-layout: full
     </ul>
 </div>
 <div class="container px-0">
-    <h4 class="mb-2" style="border-bottom: none; color: var(--osc-accent);">
+    <h4 class="mb-2 border-bottom-0">
         Get Involved
     </h4>
-    <p style="line-height: 1.6;" class="mb-3">
+    <p class="osc-init-paragraph mb-3">
         If you are a faculty member of LMU medical science and want to join the initiative, 
         do not hesitate to contact us. Questions or any ideas regarding the initiative or its 
         meetings/workshops are welcome!

@@ -13,14 +13,16 @@ Rendering for those blocks is handled by:
 
 Styling is handled by:
 
-- `upcoming-events-styles.css`
-- `past-events-styles.css`
+- [`events.css`](events.css): styles both listing templates, including card links, text clamping, training-material badges, and the listing sidebar. Card styles are scoped to the `.events-list` wrapper used by both templates.
+- [`events/event-page-styles.css`](events/event-page-styles.css): styles individual event detail pages rendered with [`events/templates/event-template.html`](events/templates/event-template.html).
 
-Section-level Quarto defaults are in `_metadata.yml`.
+Section-level Quarto defaults are in `_metadata.yml`. Event detail pages inherit their stylesheet through `events/_metadata.yml`.
 
 ## How It Fits Together
 
-`index.qmd` defines the listing IDs and points each listing to an EJS template. The templates are responsible for filtering/sorting behavior and card markup. The CSS files then style each section separately.
+`index.qmd` defines the listing IDs and points each listing to an EJS template. The templates are responsible for filtering/sorting behavior and card markup. Both listings use `events.css`, loaded through the page's `format: html: css:` configuration.
+
+Site-wide styles are configured in `../_quarto.yml`. The shared `--osc-accent` variable is defined on `:root` in `../lmu-osc-custom.scss`, and shared utilities such as `.btn-pop` are defined in `../styles.css`. Reuse these shared styles when updating event components.
 
 ## Maintenance Workflow
 
@@ -57,7 +59,7 @@ event:
   description: |
     LONGER OVERVIEW TEXT FOR THE EVENT DETAIL PAGE. This appears on the event detail page and may include markdown, links, and images.
   card_description: |
-    SHORT DESCRIPTION FOR THE EVENT CARD AND EVENT CAROUSEL. Keep this to 1–2 short sentences for display on the /events listing. If no value is provided here, the description value will be used in the card instead (up to 5 lines of text). You should not use any Markdown here as it will be displayed as raw text in the card and carousel.
+    SHORT DESCRIPTION FOR THE EVENT CARD AND EVENT CAROUSEL. Keep this to 1–2 short sentences. Upcoming cards on the /events listing display up to 4 lines of description text and fall back to event.description when card_description is omitted. Past cards do not display descriptions. Do not use Markdown in card_description.
   time: "09:00-17:00"
   location:
     name: "Venue name"
