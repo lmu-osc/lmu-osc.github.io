@@ -87,7 +87,6 @@ The Summer School is financed by the **Max Planck Digital Library**.
 - Jonas Hagenberg
 - Dr. Angela Holzer
 - Dr. Miriam Kip
-- Dr. Angela Holzer
 - Dr. Irene Haslinger
 
 #### Instructors
