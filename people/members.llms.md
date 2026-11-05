@@ -1,6 +1,6 @@
 # Members
 
-Our 121 members actively support the goals of the OSC and contribute to our activities such as training, community building, meta-research, and liaison with stakeholders. [Join us](../about/join-us.llms.md) .
+Our 120 members actively support the goals of the OSC and contribute to our activities such as training, community building, meta-research, and liaison with stakeholders. [Join us](../about/join-us.llms.md) .
 
 ## LMU Members
 
@@ -113,16 +113,6 @@ Anne-Laure Boulesteix
 Prof. Dr.
 
 Medicine
-
-[](https://orcid.org/0000-0001-7544-398X)
-
-![Profile of Hans-Bernd Brosius](people/images/brosius_hans-bernd.jpg)
-
-Hans-Bernd Brosius
-
-Prof. Dr.
-
-Social Sciences
 
 [](https://orcid.org/0000-0001-8636-9922)
 
@@ -1231,16 +1221,6 @@ Title: Prof. Dr.
 Faculty: Medicine
 
 [View Profile](../people/people/anne-laure-boulesteix.llms.md)
-
-![Profile of Hans-Bernd Brosius](people/images/brosius_hans-bernd.jpg) Hans-Bernd Brosius
-
-[](https://orcid.org/0000-0001-7544-398X)
-
-Title: Prof. Dr.
-
-Faculty: Social Sciences
-
-[View Profile](../people/people/hans-bernd-brosius.llms.md)
 
 ![Profile of Josef Brüderl](people/images/bruederl_josef.jpg) Josef Brüderl
 
@@ -2425,6 +2405,7 @@ Affiliation: Helmholtz Zentrum Munich
 ## Former Members
 
 - [Dr. Marlene Altenmüller](../people/people/marlene-altenmueller.llms.md)
+- [Prof. Dr. Hans-Bernd Brosius](../people/people/hans-bernd-brosius.llms.md)
 - [Dr. Stefano Coretta](../people/people/coretta-stefano.llms.md)
 - [Prof. Dr. Ivett Guntersdorfer](../people/people/ivett-guntersdorfer.llms.md)
 - [Dr. Larissa Neumann](../people/people/larissa-neumann.llms.md)
