@@ -1,4 +1,3 @@
-
 # Folder Structure
 
 The structure of the `people/` folder is as such:
@@ -112,7 +111,6 @@ The Lua filter, `people/people/templates/people_filter.lua`, preprocesses metada
 - Sorts `links` so certain labels such as `LMU Profile` and `Personal Website` appear in a consistent order.
 - Transforms `social_media` entries into a format the HTML template can render as icon links.
 
-
 The file `people/people/templates/_people_template.qmd` serves as a contributor template and reference document for creating a new person page. It documents the expected fields, provides example YAML, and notes where additional body content can be inserted.
 
 ## How the Pieces Fit Together
@@ -178,6 +176,32 @@ Most internal OSC and LMU roles use the same basic shape: `position` plus `facul
 If a profile ever needs to suppress the `Faculty of` label in the rendered profile, an optional `strip-faculty-label` flag can be added to the most important membership entry. This flag defaults to `false` and should normally be omitted. When it is `true`, the template shows the raw `faculty` value instead of prefixing it.
 
 Entries whose faculty is `University Library` are handled automatically and will also render without the `Faculty of` text. The excluded-label list for this behavior lives in `people/people/templates/people_filter.lua` and can be expanded there if needed.
+
+Use one of these standard short names for the `faculty` field:
+
+| Short name               | Official LMU faculty name or affiliation                           |
+| ------------------------ | ------------------------------------------------------------------ |
+| Biology                  | Faculty of Biology                                                 |
+| Business Administration  | Faculty of Business Administration – Munich School of Management   |
+| Catholic Theology        | Faculty of Catholic Theology                                       |
+| Chemistry & Pharmacy     | Faculty of Chemistry and Pharmacy                                  |
+| Economics                | Faculty of Economics                                               |
+| Geosciences              | Faculty of Geosciences                                             |
+| History & Arts           | Faculty of History and the Arts                                    |
+| Languages & Literatures  | Faculty of Languages and Literatures                               |
+| Law                      | Faculty of Law                                                     |
+| Math Informatics & Stats | Faculty of Mathematics, Informatics and Statistics                 |
+| Medicine                 | Faculty of Medicine                                                |
+| Philosophy               | Faculty of Philosophy, Philosophy of Science and Religious Studies |
+| Physics                  | Faculty of Physics                                                 |
+| Psychology & Education   | Faculty of Psychology and Educational Sciences                     |
+| Protestant Theology      | Faculty of Protestant Theology                                     |
+| Social Sciences          | Faculty of Social Sciences                                         |
+| Study of Culture         | Faculty for the Study of Culture                                   |
+| Veterinary Medicine      | Faculty of Veterinary Medicine                                     |
+| Affiliate                | Other (Non-LMU members, mostly TUM)                                |
+| University Hospital      | Other                                                              |
+| University Library       | Other                                                              |
 
 ```yaml
 memberships:
