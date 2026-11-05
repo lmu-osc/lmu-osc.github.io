@@ -8,7 +8,7 @@ Software Developer & Research Support
 
 [Personal Website](https://neuroshepherd.github.io/)
 
-[](https://github.com/NeuroShepherd) [](https://orcid.org/0000-0003-1769-7580)
+[](https://orcid.org/0000-0003-1769-7580) [](https://github.com/NeuroShepherd)
 
 ## Mission Statement
 

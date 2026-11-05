@@ -581,7 +581,7 @@ Preregistration templates & embargoes.
 In our context, a computer simulation is the generation of artificial data to build up an understanding of real data and the statistical models we use to analyze them. You can simulate data to:
 
 - **Test your statistical intuition or demonstrate mathematical properties you cannot easily anticipate**.\
-  *Example: Check whether there are more than 5% significant effects (assuming \\\alpha = .05\\) when random data from \\H_0\\ are generated.*
+  *Example: Check whether there are more than 5% significant effects (assuming* $\alpha = .05$) when random data from $H_0$ are generated.
 
 - **Understand sampling theory and probability distributions or test whether you understand the underlying processes of your system.**\
   *Example: See whether simulated data drawn from specific distributions is comparable to real data.*
