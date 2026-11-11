@@ -10,29 +10,22 @@ filters:
 
 ---
 How to deal with sensitive data sharing: it’s not an all or nothing decision!
+
 Providing code to reproduce a specific figure, sharing a full pipeline, and granting access to participant data for secondary research are distinct activities. Yet, clinical trial data sharing is often treated as a single, uniform requirement.
 
 OSC member [Ulrich Mansmann](https://www.osc.lmu.de/people/people/ulrich-mansmann.html), along with colleagues from the SHARE-CTD doctoral network, published a debate article in *BMC Medicine* advocating for a more granular approach to open data in clinical research.
 
 The authors argue that open science works best when data transparency aligns with specific research goals, requiring distinct data objects, documentation, and access controls.
 
-## A Three-Tier Framework for Clinical Trial Data Sharing
-
 To operationalize this approach, the authors propose a three-tier framework:
 
-### Tier 1: Publication-Time Reduced Dataset
+- **Tier 1: Publication-Time Reduced Dataset** – Minimal, non-sensitive observation data released at the time of publication to verify main numerical results and conduct immediate related analyses.
 
-Minimal, non-sensitive observation data released at the time of publication to verify main numerical results and conduct immediate related analyses.
+- **Tier 2: Reproducibility Package** – Analysis-ready datasets combined with analysis code, data derivation logic, and documentation to fully reproduce the reported analytical process.
 
-### Tier 2: Reproducibility Package
+- **Tier 3: Governed Access to Broader Data** – Managed access to de-identified individual participant data (IPD) to support new research questions and deep reassessments of analytical decisions.
 
-Analysis-ready datasets combined with analysis code, data derivation logic, and documentation to fully reproduce the reported analytical process.
-
-### Tier 3: Governed Access to Broader Data
-
-Managed access to de-identified individual participant data (IPD) to support new research questions and deep reassessments of analytical decisions.
-
-## ## Read the debate article here:
+## Read the debate article here:
 
 Mansmann, U., Tai, K. H., Varvarà, G., & Naudet, F. (2026). Clinical trial data transparency should match data access to scientific purpose: A tiered framework for reproducibility and reuse. *BMC Medicine, 24*, Article 588.
 
