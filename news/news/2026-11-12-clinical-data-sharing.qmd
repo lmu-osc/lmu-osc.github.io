@@ -1,28 +1,41 @@
 ---
-title: Improving Computational Reproducibility
-date: 2026-10-27
+title: There Is More Than One Way to Share Clinical Trial Data
+date: 2026-11-12
 categories: [ "Publications"]
-description: OSC Members co-authored an article highlighting the significance of computational reproducibility for scientists and the scientific community and giving recommendations for effective workflows.
+description: OSC Member Ulrich Mansmann and other members of the SHARE-CTD doctoral network published a debate article in in BMC Medicine which argues that clinical trial data sharing encompasses several distinct activities. Each requires different data, documentation and access arrangements.
 template: templates/news-template.html
 filters:
   - templates/process-news-yaml.lua
 ---
-Computational Reproducibility of research findings may be just as important as their replicability.  LMU Open Science Center members [Susanne J. Adler](https://www.osc.lmu.de/people/people/susanne-adler.html), [Mario Haim](https://www.osc.lmu.de/people/people/mario-haim.html) , [Frauke Kreuter](https://www.osc.lmu.de/people/people/frauke-kreuter.html), [Felix D. Schönbrodt](https://www.osc.lmu.de/people/people/felix-schoenbrodt.html) and [Stefan Feuerriegel](https://www.osc.lmu.de/people/people/stefan-feuerriegel.html) contributed to an article in Nature Human Behaviour, where they highlight the significance of computational reproducibility as early validation of scientific claims, leading to a minimization of erroneous conclusions in the collective research field, e.g. in meta-analyses. 
 
-Eventually, they argue, reproducible workflows should lead to a stronger trust in science. At the same time individual researchers will become more efficient, by being able to retrace every step of their own work.
+---
+How to deal with sensitive data sharing: it’s not an all or nothing decision!
+Providing code to reproduce a specific figure, sharing a full pipeline, and granting access to participant data for secondary research are distinct activities. Yet, clinical trial data sharing is often treated as a single, uniform requirement.
 
-The authors put forward a number of recommendations for reproducible workflows focusing on the **SEED** method, which includes 
+OSC member [Ulrich Mansmann](https://www.osc.lmu.de/people/people/ulrich-mansmann.html), along with colleagues from the SHARE-CTD doctoral network, published a debate article in *BMC Medicine* advocating for a more granular approach to open data in clinical research.
 
-   * **Scripting** the entire workflow and data analysis  in executable code,
+The authors argue that open science works best when data transparency aligns with specific research goals, requiring distinct data objects, documentation, and access controls.
 
-   * **Encapsulating**, using relative paths and capturing the working environment, while minimizing dependencies of packages,
+## A Three-Tier Framework for Clinical Trial Data Sharing
 
-   * **Explaining** the script and the variables it contains to human readers,
+To operationalize this approach, the authors propose a three-tier framework:
 
-   * **Depositing** code and data in dedicated research repositories, while anonymizing data  and making the data organization easily understandable to others.
+### Tier 1: Publication-Time Reduced Dataset
 
+Minimal, non-sensitive observation data released at the time of publication to verify main numerical results and conduct immediate related analyses.
 
-## Read the article here:
+### Tier 2: Reproducibility Package
 
-Reiss, M.V., Adler, S.J., Barrie, C. et al. Improving computational reproducibility in the social sciences. Nat Hum Behav (2026). [https://doi.org/10.1038/s41562-026-02570-w](https://doi.org/10.1038/s41562-026-02570-w)
+Analysis-ready datasets combined with analysis code, data derivation logic, and documentation to fully reproduce the reported analytical process.
+
+### Tier 3: Governed Access to Broader Data
+
+Managed access to de-identified individual participant data (IPD) to support new research questions and deep reassessments of analytical decisions.
+
+## ## Read the debate article here:
+
+Mansmann, U., Tai, K. H., Varvarà, G., & Naudet, F. (2026). Clinical trial data transparency should match data access to scientific purpose: A tiered framework for reproducibility and reuse. *BMC Medicine, 24*, Article 588.
+
+[https://doi.org/10.1186/s12916-026-05349-y](https://doi.org/10.1186/s12916-026-05349-y)
+
  
