@@ -1,7 +1,10 @@
 ---
 title: Events
 page-navigation: false
-
+format:
+  html:
+    css:
+      - events.css
 listing:
   - id: upcoming-events
     template: upcoming-events-template.ejs
@@ -84,78 +87,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 })
 </script>
-
-<style>
-.card-header a {
-  text-decoration: none;
-  color: var(--osc-green);
-}
-
-.card-header a:hover {
-  text-decoration: underline;
-}
-
-.card-text-clamp {
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 4;
-  overflow: hidden;
-}
-
-.card-title-clamp {
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
-  overflow: hidden;
-}
-
-
-
-.trainingurl{
-  display: inline-flex;
-  align-items: center;
-  gap: 5px;
-  margin: 0.2em 0 0.3em 0;
-  border: 1px var(--osc-accent-secondary);
-  width: fit-content;
-  padding: 0 0.30em;
-  border-radius: 5px;
-  background:rgba(166, 200, 113,0.8);
-  color: white;
-}
-
-.trainingurl a {
-  color: #000000;
-  text-decoration: none;
-}
-.card:hover .trainingurl{
-  color:var(--osc-accent);
-}
-
-#toc-title {
-  font-size: 1.1em;
-}
-
-#quarto-margin-sidebar .quarto-listing-category-title {
-  font-size: 1.1em;
-}
-
-#quarto-margin-sidebar .quarto-listing-category {
-  margin-left: 0.3rem;
-  padding-left: 0.7rem;
-  border-left: 1px solid var(--osc-accent-secondary);
-  line-height: 1;
-  font-size: 0.9em;
-  font-weight: 300;
-}
-
-</style>
-
-
-
 ```
-
-
 
 
 ## Upcoming Events

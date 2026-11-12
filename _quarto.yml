@@ -209,7 +209,6 @@ format:
       - assets/fontawesome-free-7.1.0-web/css/all.min.css
       - styles.css
       - footer/footer-style.css
-      - custom-navbar.css
     toc: true
     include-in-header:
       - file: matomo-analytics.html

@@ -70,24 +70,24 @@
 
 
 
-  <div class="people-profile">
+  <div class="people-profile mx-auto p-5">
 
-    <div class="people-header">
+    <div class="people-header d-flex">
       <div class="people-photo">
-        <img src="$if(photo)$$photo$$else$images/default.svg$endif$" alt="Profile photo of $name$" />
+        <img src="$if(photo)$$photo$$else$images/default.svg$endif$" alt="Profile photo of $name$" class="w-100 h-auto" />
       </div>
       <div class="people-info">
-        <p class="people-position">$position$</p>
+        <p class="people-position fs-5 mb-3">$position$</p>
         $if(faculty)$
         $if(strip_faculty_label)$
-        <p class="people-faculty">$faculty$</p>
+        <p class="people-faculty mb-3">$faculty$</p>
         $else$
-        <p class="people-faculty">Faculty of $faculty$</p>
+        <p class="people-faculty mb-3">Faculty of $faculty$</p>
         $endif$
         $endif$
-        <div class="people-contact">
+        <div class="people-contact mt-4">
           $if(email)$
-          <div class="contact-item">
+          <div class="contact-item d-flex align-items-center gap-2 mb-2">
             <i class="bi bi-envelope"></i>
             <a href="mailto:$email$" aria-label="Email to $name$">$email$</a>
           </div>
@@ -95,7 +95,7 @@
 
           $if(links)$
           $for(links)$
-          <div class="contact-item">
+          <div class="contact-item d-flex align-items-center gap-2 mb-2">
             <i class="bi bi-globe"></i>
             <a href="$it.url$" target="_blank" rel="noopener noreferrer"
               aria-label="Link to $name$'s $if(it.label)$$it.label$$else$Website$endif$">$if(it.label)$$it.label$$else$Website$endif$</a>
@@ -105,11 +105,11 @@
 
 
           $if(social_media)$
-          <div class="people-socials">
+          <div class="people-socials d-flex flex-wrap gap-3">
             $for(social_media)$
-            <a href="$it.url$" class="social-link" target="_blank" rel="noopener noreferrer"
+            <a href="$it.url$" class="social-link d-flex align-items-center justify-content-center rounded-circle text-decoration-none" target="_blank" rel="noopener noreferrer"
               aria-label="Link to $it.platform$">
-              <i class="fa-brands fa-$it.platform$"></i>
+              <i class="fa-brands fa-$it.platform$ d-block lh-1 m-0 align-middle"></i>
             </a>
             $endfor$
           </div>
@@ -142,9 +142,9 @@
 
     $if(research_interests)$
     <h2>Research Interests</h2>
-    <div class="interests-container">
+    <div class="interests-container d-flex flex-wrap">
       $for(research_interests)$
-      <div class="interest-tag">$it$</div>
+      <div class="interest-tag py-2 px-3">$it$</div>
       $endfor$
     </div>
     $endif$
@@ -153,14 +153,14 @@
 
     $if(publications)$
     <h2>Selected Publications</h2>
-    <div class="publications-list">
+    <div class="publications-list d-flex flex-column gap-4">
       $for(publications)$
-      <div class="publication-item">
-        <p class="publication-year">$it.year$</p>
+      <div class="publication-item d-flex pb-4">
+        <p class="publication-year fs-5 fw-bold">$it.year$</p>
         <div class="publication-content">
-          <h3 class="publication-title">$it.title$</h3>
-          <p class="publication-authors">$it.authors$</p>
-          <p class="publication-journal">$it.journal$</p>
+          <h3 class="publication-title mt-0 mb-2">$it.title$</h3>
+          <p class="publication-authors mt-0 mb-1">$it.authors$</p>
+          <p class="publication-journal mt-0">$it.journal$</p>
           $if(it.doi_url)$
           <a href="$it.doi_url$" target="_blank" rel="noopener noreferrer" class="publication-doi"
             aria-label="DOI for $it.title$">DOI</a>

@@ -1,10 +1,3 @@
-
-
-:root{
-  --osc-accent: #00883A;
-}
-
-
 .navbar-logo {
   border-radius: 4px;
   object-fit: cover;
@@ -17,7 +10,7 @@ h1 {
 }
 
 h2, h3, h4, h5, h6 {
-  color: #00883A;
+  color: var(--osc-accent); 
 }
 
 /* Ensure links inside strong/bold text remain bold */
@@ -44,4 +37,128 @@ ul#quarto-sidebar-section-1.collapse.list-unstyled.sidebar-section.depth1.show >
 
 .collapse.list-unstyled.sidebar-section.depth2.show > li.sidebar-item > div.sidebar-item-container > a.sidebar-item-text.sidebar-link > span.menu-text {
   font-size: 1.1em;
+}
+
+/* button pop on hover */
+
+.btn-pop {
+  transition: transform .15s ease;
+}
+.btn-pop:hover {
+  transform: scale(1.05);
+}
+
+/* --- Custom Navbar Styling for OSC --- */
+
+/* Make navbar sticky and add subtle shadow */
+.navbar, .quarto-navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 12px rgba(44, 134, 75, 0.08);
+  background: var(--osc-accent);
+  color: var(--osc-bg)!important;
+  transition: background 0.3s;
+}
+
+/* Logo sizing and spacing */
+.navbar-brand img, .quarto-navbar .navbar-logo {
+  height: 300px;
+  min-height: 40px;
+  width: auto;
+  margin-right: 1rem;
+  /*border-radius: 8px;*/
+  background: var(--osc-bg);
+  padding: 2px 6px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+}
+
+/* Navbar links */
+.navbar-nav .nav-link, .quarto-navbar .nav-link {
+  color: var(--osc-bg)!important;
+  font-weight: 500;
+  font-size: 1.08rem;
+  letter-spacing: 0.01em;
+  padding: 0.7rem 1.1rem;
+  border-radius: 6px;
+  transition: background 0.2s, color 0.2s;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 0.1em;
+}
+
+.navbar-nav .nav-link:hover, .quarto-navbar .nav-link:hover,
+.navbar-nav .nav-link.active, .quarto-navbar .nav-link.active {
+  background: #027232 !important;
+  color: var(--osc-bg) !important;
+  text-decoration: none;
+}
+
+/* Dropdown menu styling */
+.dropdown-menu, .quarto-navbar .dropdown-menu {
+  background: #f7fcf8;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  min-width: 200px;
+  box-shadow: 0 4px 16px rgba(44, 134, 75, 0.10);
+}
+
+.dropdown-item, .quarto-navbar .dropdown-item {
+  color: var(--osc-accent) !important;
+  font-weight: 500;
+  padding: 0.7rem 1.2rem;
+  border-radius: 6px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.dropdown-item:hover, .quarto-navbar .dropdown-item:hover {
+  background: #e6f4ea;
+  color: #027232 !important;
+}
+
+/* Navbar icons */
+.navbar-nav .nav-link > i, .quarto-navbar .nav-link > i {
+  margin-right: 0.5em;
+  font-size: 1.1em;
+  vertical-align: middle;
+}
+
+/* Responsive tweaks */
+@media (max-width: 991px) {
+  .navbar, .quarto-navbar {
+    padding: 0.5rem 1rem;
+  }
+  .navbar-brand img, .quarto-navbar .navbar-logo {
+    height: 38px;
+    margin-right: 0.5rem;
+  }
+  .navbar-nav .nav-link, .quarto-navbar .nav-link {
+    font-size: 1rem;
+    padding: 0.6rem 0.9rem;
+  }
+}
+
+/* Optional: highlight the active page */
+.navbar-nav .nav-link.active, .quarto-navbar .nav-link.active {
+  background: var(--osc-bg) !important;
+  color:var(--osc-accent)!important;
+  font-weight: 700;
+}
+
+/* Optional: subtle divider between left and right nav */
+.quarto-navbar .navbar-nav:last-child {
+  border-left: 1px solid #e0e0e0;
+  margin-left: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+.navbar-nav {
+  --bs-nav-link-padding-x: 0;
+  --bs-nav-link-padding-y: 0.5rem;
+  --bs-nav-link-font-weight: ;
+  --bs-nav-link-color: var(--bs-navbar-color);
+  --bs-nav-link-hover-color: var(--bs-navbar-hover-color);
+  --bs-nav-link-disabled-color: var(--bs-navbar-disabled-color);
+  list-style: none;
 }
