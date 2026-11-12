@@ -8,8 +8,6 @@ Faculty of Social Sciences
 
 [Julia.Schulte-Cloos@gsi.uni-muenchen.de](mailto:Julia.Schulte-Cloos@gsi.uni-muenchen.de)
 
-[LMU Profile](https://www.gsi.uni-muenchen.de/personen/wiss_mitarbeiter/julia_schulte-cloos_dr/index.html)
-
 [](https://orcid.org/0000-0001-7223-3602)
 
 ## Mission Statement

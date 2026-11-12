@@ -8,7 +8,7 @@ Faculty of Social Sciences
 
 [a.wuttke@lmu.de](mailto:a.wuttke@lmu.de)
 
-[LMU Profile](https://www.gsi.uni-muenchen.de/personen/professoren/wuttke/index.html)
+[LMU Profile](https://www.gsi.lmu.de/de/personen/kontaktseite/alexander-wuttke-853ff065.html)
 
 [](https://orcid.org/0000-0002-9579-5357)
 
