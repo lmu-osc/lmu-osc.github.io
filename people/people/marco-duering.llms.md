@@ -8,8 +8,6 @@ Faculty of Medicine
 
 [marco.duering@med.uni-muenchen.de](mailto:marco.duering@med.uni-muenchen.de)
 
-[LMU Profile](https://www.isd-research.de/duering-lab)
-
 [](https://orcid.org/0000-0003-2302-3136)
 
 ## Mission Statement

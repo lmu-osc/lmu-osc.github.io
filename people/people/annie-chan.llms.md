@@ -8,8 +8,6 @@ Faculty of Study of Culture
 
 [a.chan@lmu.de](mailto:a.chan@lmu.de)
 
-[LMU Profile](https://www.sinologie.uni-muenchen.de/personen/wiss_ma/anniechan/index.html)
-
 [](https://orcid.org/0000-0002-4435-3209)
 
 ## Mission Statement

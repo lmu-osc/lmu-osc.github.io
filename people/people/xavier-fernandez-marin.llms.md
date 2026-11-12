@@ -8,8 +8,6 @@ Faculty of Social Sciences
 
 [xavier.fernandez-i-marin@gsi.uni-muenchen.de](mailto:xavier.fernandez-i-marin@gsi.uni-muenchen.de)
 
-[LMU Profile](https://www.gsi.uni-muenchen.de/personen/gastdoktoranden1/fernandez/index.html)
-
 [Personal Website](https://xavier-fim.net/)
 
 [](https://orcid.org/0000-0002-9522-8870)

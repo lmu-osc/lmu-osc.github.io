@@ -8,7 +8,7 @@ Faculty of Social Sciences
 
 [paul.thurner@gsi.uni-muenchen.de](mailto:paul.thurner@gsi.uni-muenchen.de)
 
-[LMU Profile](https://www.gsi.uni-muenchen.de/personen/professoren/thurner/index.html)
+[LMU Profile](https://www.gsi.lmu.de/de/personen/kontaktseite/paul-w-thurner-cddeb68d.html)
 
 [](https://orcid.org/0000-0001-7336-9878)
 

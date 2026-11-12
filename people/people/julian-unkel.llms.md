@@ -6,8 +6,6 @@ Department of Media and Communication
 
 [julian.unkel@ifkw.lmu.de](mailto:julian.unkel@ifkw.lmu.de)
 
-[LMU Profile](https://www.en.ls1.ifkw.uni-muenchen.de/staff/team/unkel_julian/index.html)
-
 [](https://orcid.org/0000-0001-9568-7041)
 
 ## Mission Statement

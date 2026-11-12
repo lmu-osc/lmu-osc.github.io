@@ -8,7 +8,7 @@ Faculty of Social Sciences
 
 [Laura.Seelkopf@gsi.uni-muenchen.de](mailto:Laura.Seelkopf@gsi.uni-muenchen.de)
 
-[LMU Profile](https://www.gsi.uni-muenchen.de/personen/professoren/laura-seelkopf/index.html)
+[LMU Profile](https://www.gsi.lmu.de/de/personen/kontaktseite/laura-seelkopf-1da2703c.html)
 
 [](https://orcid.org/0000-0002-2251-3830)
 
