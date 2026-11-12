@@ -19,7 +19,7 @@ Based on our material, it is easy to build a tailored research practice handbook
 - review the core discipline-agnostic sections by clicking on one of the quadrants in the figure above
 - consult discipline-specific guidance (in development - ETA end 2026)
 - tailor the [overview checklist figure](https://doi.org/10.5281/zenodo.15630229)
-- use our lab-handbook template as a starting place (in development - ETA end 2026)
+- use our [lab-handbook template](../../training/research-cycle-handbook/research-handbook.docx) as a starting place
 
 You can request a consultation with the LMU Open Science Center: ranging from a 1h one-on-one consultation up to a 6-month training and consultation program for your entire research group (see [About this Project](#about-this-project) below).
 
