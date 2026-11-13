@@ -2,14 +2,13 @@
 title: There Is More Than One Way to Share Clinical Trial Data
 date: 2026-11-12
 categories: [ "Publications"]
-description: OSC Member Ulrich Mansmann and other members of the SHARE-CTD doctoral network published a debate article in in BMC Medicine which argues that clinical trial data sharing encompasses several distinct activities. Each requires different data, documentation and access arrangements.
+description: How to deal with sensitive data sharing? it’s not an all or nothing decision! OSC member Ulrich Mansmann advocates for a more granular approach.
 template: templates/news-template.html
 filters:
   - templates/process-news-yaml.lua
 ---
 
 ---
-How to deal with sensitive data sharing: it’s not an all or nothing decision!
 
 Providing code to reproduce a specific figure, sharing a full pipeline, and granting access to participant data for secondary research are distinct activities. Yet, clinical trial data sharing is often treated as a single, uniform requirement.
 
