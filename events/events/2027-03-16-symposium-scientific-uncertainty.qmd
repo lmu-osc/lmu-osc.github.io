@@ -1,0 +1,73 @@
+---
+title: >
+  Symposium: Modelling and Communicating Scientific Uncertainty
+date: 2026-11-13        # e.g. "2026-09-24"
+categories: ['Symposium']
+
+# Event Information
+event:
+  start_date: 2027-03-16        # e.g. "2026-09-24"
+  end_date: 2027-03-16     # e.g. "2026-09-24", non-mandatory field
+  time: "all day, time tba"           # e.g. "14:00 - 17:00 CET"
+  card_description:  |
+    Open scientific comminication vs. trustworthiness of scientific research? Join the symposium at the LMU Center for Advanced Studies (CAS), exploring this paradox at the intersection between Open Science and science communication and discusses how Bayesian approaches can improve the modelling and communication of scientific evidence and uncertainty.
+  description: |
+    One of the fundamental roles of science is to serve as a neutral and independent source of information. To address the challenges and crises of the 21st century, scientific evidence needs to be presented in a way that is accessible and understandable and that allows the general public and policymakers to weigh costs, benefits and uncertainties in evidence-based decision-making. At the same time, scientific findings are often presented using statistical quantities that are inherently difficult to interpret. Communicating scientific uncertainty is even more challenging than communicating scientific evidence.
+
+    Open Science is grounded in the principle that scientific uncertainty should not be hidden but transparently acknowledged and communicated. However, paradoxically, an open communication of scientific uncertainty can also be used by bad-faith actors to undermine trust in science. By exposing the sometimes messy and uncertain nature of research, Open Science and meta-research could inadvertently erode public trust by casting doubt on the entire scientific process. 
+    
+    **The symposium explores this paradox at the intersection between Open Science and science communication and discusses how Bayesian approaches can improve the modelling and communication of scientific evidence and uncertainty.**
+    
+    Please register by emailing [info@cas.lmu.de](mailto:info@cas.lmu.de)
+
+  
+  location:
+    name: "Center for Advanced Studies LMU"    # e.g. "LMU Main Building, Room 123"
+    address: "Seestraße 13, 80802 München-Schwabing-Freimann"                  # e.g. "Ludwigstraße 25, 80539 München, Germany"
+    map_url: "https://maps.app.goo.gl/QATXT4SEoEbdXY8u7"          # e.g. "https://goo.gl/maps/xyz"
+  format:
+    type: "In-Person"               # Primary type e.g. "In-person", "Online", "Hybrid"  
+
+  language:
+    primary: "English"
+    primary-code: "en"
+ 
+# Registration and Materials
+links: 
+  workshop_website: "https://www.cas.lmu.de/de/veranstaltungen/veranstaltung/modelling-and-communicating-scientific-uncertainty-how-to-improve-the-trustworthiness-of-scientific-research-without-und-9205da9c.html"   # e.g. "https://lmu-osc.github.io/introduction-to-renv/"
+
+# Event Description: appears in the Event card an optionally in the Event page itself
+# Add as many instructors as needed in the format below
+presenters:
+  - name: "Eric-Jan Wagenmakers"
+    url: "https://www.ejwagenmakers.com/"
+  - name: "Gerd Gigerenzer"
+    url: "https://www.gerd-gigerenzer.com/"
+  - name: "Friederike Hendriks" 
+    url: "https://www.leibniz-ipn.de/en/the-ipn/about-us/staff/friederike-hendriks"
+  - name: "Chelsea Ratcliff"
+    url: "https://comm.uga.edu/directory/people/chelsea-ratcliff"
+
+# Contact Information
+contact:
+  name: "Center for Advanced Studies LMU"
+  email: "info@cas.lmu.de"
+
+# Organizers can be individuals or institutions
+organizers:
+  - name: "Sabine Hoffmann"   
+    url: "https://www.osc.lmu.de/people/people/sabine-hoffmann.html"
+    
+template: templates/event-template.html
+filters:
+    - templates/process-event-yaml.lua
+---
+
+
+
+ 
+
+
+
+
+ 

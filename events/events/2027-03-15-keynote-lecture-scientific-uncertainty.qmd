@@ -1,0 +1,61 @@
+---
+title: >
+  Keynote opening lecture: Modelling and Communicating Scientific Uncertainty
+date: 2026-11-13      # e.g. "2026-09-24"
+categories: ['Lecture']
+
+# Event Information
+event:
+  start_date: 2027-03-15        # e.g. "2026-09-24"
+  end_date: 2027-03-15     # e.g. "2026-09-24", non-mandatory field
+  time: "Evening, time tba"           # e.g. "14:00 - 17:00 CET"
+  card_description:  |
+    Open scientific comminication vs. trustworthiness of scientific research? Join the lecture given by Gerd Gigerenzer on communication of scientific evidence and uncertainty.
+  description: |
+    Join an **Evening Lecture** given by **Gerd Gigerenzer**  (MPI für Bildungsforschung) - a renowned German psychologist, known for his work around bound rationality, heuristics and decision-making in times of uncertainty. It is the starting point for a Symposium at CAS the next day, which explores the paradox at the intersection between Open Science and science communication and discusses how Bayesian approaches can improve the modelling and communication of scientific evidence and uncertainty.
+    
+    Please register by emailing [info@cas.lmu.de](mailto:info@cas.lmu.de)
+
+  location:
+    name: "Center for Advanced Studies LMU"    # e.g. "LMU Main Building, Room 123"
+    address: "Seestraße 13, 80802 München-Schwabing-Freimann"                  # e.g. "Ludwigstraße 25, 80539 München, Germany"
+    map_url: "https://maps.app.goo.gl/QATXT4SEoEbdXY8u7"          # e.g. "https://goo.gl/maps/xyz"
+  format:
+    type: "In-Person"               # Primary type e.g. "In-person", "Online", "Hybrid"  
+
+  language:
+    primary: "English"
+    primary-code: "en"
+ 
+# Registration and Materials
+links: 
+  workshop_website: "https://www.cas.lmu.de/de/veranstaltungen/veranstaltung/modelling-and-communicating-scientific-uncertainty-how-to-improve-the-trustworthiness-of-scientific-research-without-und-9205da9c.html"   # e.g. "https://lmu-osc.github.io/introduction-to-renv/"
+
+# Event Description: appears in the Event card an optionally in the Event page itself
+# Add as many instructors as needed in the format below
+presenters:
+  - name: "Gerd Gigerenzer"
+    url: "https://www.gerd-gigerenzer.com/"
+
+# Contact Information
+contact:
+  name: "Center for Advanced Studies LMU"
+  email: "info@cas.lmu.de"
+
+# Organizers can be individuals or institutions
+organizers:
+  - name: "Sabine Hoffmann"   
+    url: "https://www.osc.lmu.de/people/people/sabine-hoffmann.html"
+template: templates/event-template.html
+filters:
+    - templates/process-event-yaml.lua
+---
+
+
+
+ 
+
+
+
+
+ 
