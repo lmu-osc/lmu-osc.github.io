@@ -9,10 +9,10 @@ event:
   end_date: 2027-08-31
   time: "08:30 - 17:00"           # e.g. "14:00 - 17:00 CET"
   description: |
-	The aim of this event is to bring together researchers from different fields of methodological research (including, but not limited to (bio)statistics, quantitative psychology, econometrics, bioinformatics, machine learning, quantitative methods for ecology, linguistics, etc.) who are interested in meta science on methods research, discuss how new quantitative methods are developed, evaluated and published in our respective fields, and how this process can be improved by sharing our thoughts and experiences across disciplines.
+    The aim of this event is to bring together researchers from different fields of methodological research (including, but not limited to (bio)statistics, quantitative psychology, econometrics, bioinformatics, machine learning, quantitative methods for ecology, linguistics, etc.) who are interested in meta science on methods research, discuss how new quantitative methods are developed, evaluated and published in our respective fields, and how this process can be improved by sharing our thoughts and experiences across disciplines.
+
 # Longer overview text for the event detail page. That is, the content here displays on the event page. You can use markdown formatting here to structure the content, add links, images, etc.   
-  card_description: |
-	"Save the date"
+  card_description: "Save the date"
 # "SHORT DESCRIPTION OF THE EVENT. This will appear in the event card on the main Events page. Keep it concise and engaging to attract attendees. MAX 2-3 SENTENCES."
   location:
     name: "TBA"    # e.g. "LMU Main Building, Room 123"
@@ -51,7 +51,7 @@ links:
 
 # Contact Information
 contact:
-  name: "Local Organizing committee"
+  name: "the Local Organizing committee"
   email: "msmr2027@ibe.med.uni-muenchen.de"
 
 # Organizers can be individuals or institutions
@@ -60,8 +60,15 @@ organizers:
   - name: "Moritz Herrmann"
   - name: "Marieke Stolte"
   - name: "Edouard Bonneville"
-  - name: "Munich Center for Machine Learning"
-  - name: "LMU Open Science Center"
+  
+host:
+  - name: Boulesteix lab
+    url: https://www.en.ibe.med.uni-muenchen.de/lehrstuehle/pr-molecular-medicine/index.html
+  - name: Munich Center for Machine Learning
+    url: https://mcml.ai/
+  - name: LMU Open Science Center
+    url: https://lmu-osc.github.io/
+
 template: templates/event-template.html
 filters:
     - templates/process-event-yaml.lua
