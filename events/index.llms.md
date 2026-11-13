@@ -46,6 +46,28 @@ Questions? Contact [Center for Advanced Studies LMU](mailto:info@cas.lmu.de)
 
 [Read More](../events/events/2027-03-16-symposium-scientific-uncertainty.llms.md)
 
+[2nd Interdisciplinary Symposium on Meta Science for Methods Research](../events/events/2027-08-30-conference-metascience-methods-research.llms.md) [2nd Interdisciplinary Symposium on Meta Science for Methods Research](../events/events/2027-08-30-conference-metascience-methods-research.llms.md) Conference
+
+[![Conference](../events/images/conference.svg)](../events/events/2027-08-30-conference-metascience-methods-research.llms.md)
+
+###### 30 Aug, 2027
+
+###### 30-31 Aug, 2027
+
+######  08:30 - 17:00 \|  TBA \|  Hybrid \|  English
+
+######  08:30 - 17:00 \|  Hybrid \|  English
+
+Save the date
+
+Organizers: Anne-Laure Boulesteix Moritz Herrmann Marieke Stolte Edouard Bonneville
+
+Hosts: Boulesteix lab Munich Center for Machine Learning LMU Open Science Center
+
+Questions? Contact [the Local Organizing committee](mailto:msmr2027@ibe.med.uni-muenchen.de)
+
+[Read More](../events/events/2027-08-30-conference-metascience-methods-research.llms.md)
+
 ## Past Events
 
 ### 2026

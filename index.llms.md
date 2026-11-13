@@ -111,10 +111,10 @@ Open scientific comminication vs. trustworthiness of scientific research? Join t
 
 [See Event →](events/events/2027-03-16-symposium-scientific-uncertainty.llms.md)
 
-###### Past Event · Hybrid · Sep 7, 2026
+###### Hybrid · Aug 30, 2027
 
-##### [LMU Open Science Summer School 2026](events/events/2026-09-07-lmu-open-science-summer-school.llms.md)
+##### [2nd Interdisciplinary Symposium on Meta Science for Methods Research](events/events/2027-08-30-conference-metascience-methods-research.llms.md)
 
-Apply to attend the workshops or register to attend the public lectures now! Our annual Summer School will take place on Sept 7-11 (Track 1) and Sept 14-15 (Track 2), 2026.
+Save the date
 
-[See Event →](events/events/2026-09-07-lmu-open-science-summer-school.llms.md)
+[See Event →](events/events/2027-08-30-conference-metascience-methods-research.llms.md)
