@@ -1,0 +1,76 @@
+---
+title: Data Anonymisation and Synthetic Data Workshop
+date: 2027-04-08        # e.g. "2026-09-24"
+categories: ['Workshop']
+
+# Event Information
+event:
+  start_date: 2027-04-08        # e.g. "2026-09-24"
+  end_date: 2027-04-09     # e.g. "2026-09-24", non-mandatory field
+  time: "START-END CET"           # e.g. "14:00 - 17:00 CET"
+  description: |
+    This two-day hands-on workshop will introduce participants to legal and practical aspects of sharing research data while protecting privacy and confidentiality. It will cover GDPR compliance and related legal considerations, followed by practical introductions to two approaches: **data anonymisation** and **synthetic data generation**. 
+  
+  card_description: |
+    Learn to share sensitive research data safely and legally at this two-day hands-on workshop at LMU Munich. Through guided tutorials in R, you will master GDPR compliance, **data anonymisation**, and **synthetic data generation**, ending with dedicated support to apply these methods to your own project.
+  location:
+    name: "BUILDING NAME, ROOM NAME"    # e.g. "LMU Main Building, Room 123"
+    address: "ADDRESS"                  # e.g. "Ludwigstraße 25, 80539 München, Germany"
+    map_url: "GOOGLE MAPS URL"          # e.g. "https://goo.gl/maps/xyz"
+  format:
+    type: "In-person"               # Primary type e.g. "In-person", "Online", "Hybrid"  
+    detail: "FORMATDETAILS"    # e.g. "In-person & Online", non-mandatory field
+  language:
+    primary: "English"
+    primary-code: "en"
+    detail: "(German Transcript)"    # other language details, non-mandatory field
+  flyer:
+    - file: "FLYER FILE PATH"   # e.g. "images/event_flyer.pdf"
+      title: "FLYER TITLE"  # This should be a descriptive title--it will be used for screenreaders and as the link text for the flyer. e.g. "Event Flyer PDF"
+  
+# Registration and Materials
+links:
+  registration: "REGISTRATION LINK URL"   # e.g. "https://www.pretix.osc.lmu.de/lmu-osc/swc-20250324-Hum/"
+  materials: "WORKSHOP MATERIALS URL"    
+  workshop_website: "WORKSHOP WEBSITE URL"   # e.g. "https://lmu-osc.github.io/introduction-to-renv/"
+
+# Event Description:|
+
+# Add as many instructors as needed in the format below
+instructors:
+  - name: "Luisa Jansen"
+    url: "https://luisajansen.github.io/"
+  - name: "Thom Volker"
+    url: "https://thomvolker.github.io/"
+  - name: "Alyssa Columbus"
+    url: "https://alyssacolumbus.com/"
+  - name: "Felix Schönbrodt"
+    url: "https://www.nicebread.de/"
+
+# Add as many helpers as needed in the format below
+helpers: 
+  - name: "HELPER 1 NAME"
+  - name: "HELPER 2 NAME"
+
+# Contact Information
+contact:
+  name: "CONTACT PERSON OR GROUP NAME"
+  email: "CONTACT EMAIL ADDRESS"
+
+# Organizers can be individuals or institutions
+organizers:
+  - name: "ORGANIZER 1 NAME"
+  - name: "ORGANIZER 2 NAME"
+template: templates/event-template.html
+filters:
+    - templates/process-event-yaml.lua
+---
+
+
+
+ 
+
+
+
+
+ 
