@@ -1,6 +1,6 @@
 ---
 title: >
-  Modelling and Communicating Scientific Uncertainty
+  Symposium: Modelling and Communicating Scientific Uncertainty
 date: 2026-11-13        # e.g. "2026-09-24"
 categories: ['Symposium']
 
@@ -16,7 +16,9 @@ event:
 
     Open Science is grounded in the principle that scientific uncertainty should not be hidden but transparently acknowledged and communicated. However, paradoxically, an open communication of scientific uncertainty can also be used by bad-faith actors to undermine trust in science. By exposing the sometimes messy and uncertain nature of research, Open Science and meta-research could inadvertently erode public trust by casting doubt on the entire scientific process. 
     
-    **The workshop explores this paradox at the intersection between Open Science and science communication and discusses how Bayesian approaches can improve the modelling and communication of scientific evidence and uncertainty.**
+    **The symposium explores this paradox at the intersection between Open Science and science communication and discusses how Bayesian approaches can improve the modelling and communication of scientific evidence and uncertainty.**
+    
+    Please register by emailing [info@cas.lmu.de](mailto:info@cas.lmu.de)
 
   
   location:
@@ -42,7 +44,9 @@ presenters:
   - name: "Gerd Gigerenzer"
     url: "https://www.gerd-gigerenzer.com/"
   - name: "Friederike Hendriks" 
+    url: "https://www.leibniz-ipn.de/en/the-ipn/about-us/staff/friederike-hendriks"
   - name: "Chelsea Ratcliff"
+    url: "https://comm.uga.edu/directory/people/chelsea-ratcliff"
 
 # Contact Information
 contact:
@@ -53,6 +57,7 @@ contact:
 organizers:
   - name: "Sabine Hoffmann"   
     url: "https://www.osc.lmu.de/people/people/sabine-hoffmann.html"
+    
 template: templates/event-template.html
 filters:
     - templates/process-event-yaml.lua
