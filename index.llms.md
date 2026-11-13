@@ -95,6 +95,22 @@ Johan Duchêne advocates for stricter antibody validation processes to increase 
 
 Events [View All Events](events/index.llms.md)
 
+###### In-Person · Mar 15, 2027
+
+##### [Keynote opening lecture: Modelling and Communicating Scientific Uncertainty](events/events/2027-03-15-keynote-lecture-scientific-uncertainty.llms.md)
+
+Open scientific comminication vs. trustworthiness of scientific research? Join the lecture given by Gerd Gigerenzer on communication of scientific evidence and uncertainty.
+
+[See Event →](events/events/2027-03-15-keynote-lecture-scientific-uncertainty.llms.md)
+
+###### In-Person · Mar 16, 2027
+
+##### [Symposium: Modelling and Communicating Scientific Uncertainty](events/events/2027-03-16-symposium-scientific-uncertainty.llms.md)
+
+Open scientific comminication vs. trustworthiness of scientific research? Join the symposium at the LMU Center for Advanced Studies (CAS), exploring this paradox at the intersection between Open Science and science communication and discusses how Bayesian approaches can improve the modelling and communication of scientific evidence and uncertainty.
+
+[See Event →](events/events/2027-03-16-symposium-scientific-uncertainty.llms.md)
+
 ###### Past Event · Hybrid · Sep 7, 2026
 
 ##### [LMU Open Science Summer School 2026](events/events/2026-09-07-lmu-open-science-summer-school.llms.md)
@@ -102,19 +118,3 @@ Events [View All Events](events/index.llms.md)
 Apply to attend the workshops or register to attend the public lectures now! Our annual Summer School will take place on Sept 7-11 (Track 1) and Sept 14-15 (Track 2), 2026.
 
 [See Event →](events/events/2026-09-07-lmu-open-science-summer-school.llms.md)
-
-###### Past Event · Hybrid · Jun 10, 2026
-
-##### [OSPARK Bootcamp Munich - Promote your Open Research Passion!](events/events/2026-06-10-ospark-bootcamp.llms.md)
-
-The OSPARK bootcamp is a 6-week online course and a 2-day onsite workshop all about creating visibility through outreach and marketing. It's a learning opportunity for people working in or leading Open Research initiatives, services or infrastructures.
-
-[See Event →](events/events/2026-06-10-ospark-bootcamp.llms.md)
-
-###### Past Event · In-Person · Mar 11, 2026
-
-##### [Software Carpentry: Essential Computing Skill Training (Shell, Git, Python)](events/events/2026-03-11-software-carpentry-computing-skills.llms.md)
-
-Software Carpentry is a global organization that provides training in essential computing skills for researchers. The workshop covers topics such as the command line (Shell), version control with Git, and programming with Python. It is designed to help researchers improve their computational skills and enhance their research productivity.
-
-[See Event →](events/events/2026-03-11-software-carpentry-computing-skills.llms.md)

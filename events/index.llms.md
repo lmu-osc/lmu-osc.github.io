@@ -2,6 +2,50 @@
 
 ## Upcoming Events
 
+[Keynote opening lecture: Modelling and Communicating Scientific Uncertainty](../events/events/2027-03-15-keynote-lecture-scientific-uncertainty.llms.md) [Keynote opening lecture: Modelling and Communicating Scientific Uncertainty](../events/events/2027-03-15-keynote-lecture-scientific-uncertainty.llms.md) Lecture
+
+[![Lecture](../events/images/lecture.svg)](../events/events/2027-03-15-keynote-lecture-scientific-uncertainty.llms.md)
+
+###### 15 Mar, 2027
+
+###### 15 Mar, 2027
+
+######  Evening, time tba \|  Center for Advanced Studies LMU \|  In-Person \|  English
+
+######  Evening, time tba \|  In-Person \|  English
+
+Open scientific comminication vs. trustworthiness of scientific research? Join the lecture given by Gerd Gigerenzer on communication of scientific evidence and uncertainty.
+
+Organizers: Sabine Hoffmann
+
+Presenters: Gerd Gigerenzer
+
+Questions? Contact [Center for Advanced Studies LMU](mailto:info@cas.lmu.de)
+
+[Read More](../events/events/2027-03-15-keynote-lecture-scientific-uncertainty.llms.md)
+
+[Symposium: Modelling and Communicating Scientific Uncertainty](../events/events/2027-03-16-symposium-scientific-uncertainty.llms.md) [Symposium: Modelling and Communicating Scientific Uncertainty](../events/events/2027-03-16-symposium-scientific-uncertainty.llms.md) Symposium
+
+[![Symposium](../events/images/symposium.svg)](../events/events/2027-03-16-symposium-scientific-uncertainty.llms.md)
+
+###### 16 Mar, 2027
+
+###### 16 Mar, 2027
+
+######  all day, time tba \|  Center for Advanced Studies LMU \|  In-Person \|  English
+
+######  all day, time tba \|  In-Person \|  English
+
+Open scientific comminication vs. trustworthiness of scientific research? Join the symposium at the LMU Center for Advanced Studies (CAS), exploring this paradox at the intersection between Open Science and science communication and discusses how Bayesian approaches can improve the modelling and communication of scientific evidence and uncertainty.
+
+Organizers: Sabine Hoffmann
+
+Presenters: Eric-Jan Wagenmakers Gerd Gigerenzer Friederike Hendriks Chelsea Ratcliff
+
+Questions? Contact [Center for Advanced Studies LMU](mailto:info@cas.lmu.de)
+
+[Read More](../events/events/2027-03-16-symposium-scientific-uncertainty.llms.md)
+
 ## Past Events
 
 ### 2026

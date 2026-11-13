@@ -59,16 +59,16 @@
 | Mar 18, 2022 | [Interview with Anne-Laure Boulesteix](../news/news/2022-03-18-boulesteix-interview.llms.md) | Interviews |
 | Mar 18, 2022 | [LMU Open Access Fund](../news/news/2022-03-18-lmu-open-access-fund.llms.md) | Announcement |
 | Nov 21, 2021 | [Stellenausschreibung: Open Science Koordinator\*in](../news/news/2021-11-21-stellenausschreibung-koordinator.llms.md) | Job Ads |
-| Jun 15, 2021 | [The Help Desk for Research data management (RDM) at the LMU University Library](../news/news/2021-06-15-rdm-help-desk.llms.md) | Announcement |
 | Jun 15, 2021 | [Data tracking in research: Aggregation and use or sale of usage data by academic publishers](../news/news/2021-06-15-data-tracking-publishers.llms.md) | Announcement |
+| Jun 15, 2021 | [The Help Desk for Research data management (RDM) at the LMU University Library](../news/news/2021-06-15-rdm-help-desk.llms.md) | Announcement |
 | Apr 21, 2021 | [Joint interdisciplinary work by OSC members now published](../news/news/2021-04-21-multiplicity-paper-published.llms.md) | Publications |
 | Feb 1, 2021 | [German Reproducibility Network was launched recently!](../news/news/2021-02-01-german-reproducibility-network-launch.llms.md) | Announcement |
 | Jan 21, 2021 | [Election of the ‘Hochschulperle’ (‘University Pearl’) of the Year 2020 by the Stifterverband](../news/news/2021-01-21-hochschulperle-election.llms.md) | Awards/Recognition |
 | Nov 2, 2020 | [Open Science experts invited to the Berlin regional parliament](../news/news/2020-11-02-berlin-parliament-open-science.llms.md) | Event Highlights |
 | Mar 28, 2020 | [Joint interdisciplinary work by OSC members now available as preprint from Meta-Arxiv](../news/news/2020-03-28-multiplicity-paper-preprint.llms.md) | Publications |
 | Mar 9, 2020 | [OSC has been awarded the title of ‘Hochschulperle’ (‘University Pearl’) by the Stifterverband](../news/news/2020-03-09-hochschulperle-award.llms.md) | Awards/Recognition |
-| Mar 3, 2020 | [The Department of Statistics joins the OSC](../news/news/2020-03-03-statistics-dept-joins-osc.llms.md) | New Members |
 | Mar 3, 2020 | [We welcome 4 new individual members](../news/news/2020-03-03-four-new-members.llms.md) | New Members |
+| Mar 3, 2020 | [The Department of Statistics joins the OSC](../news/news/2020-03-03-statistics-dept-joins-osc.llms.md) | New Members |
 | Jan 12, 2020 | [Welcome to the OSC: 5 new individual members](../news/news/2020-01-12-five-new-members.llms.md) | New Members |
 | Nov 21, 2018 | [Many Labs 2: Massive replication project released in psychology](../news/news/2018-11-21-many-labs-replication.llms.md) | Publications |
 | Aug 17, 2018 | [We welcome 5 new individual members](../news/news/2018-08-17-five-new-members-hospital.llms.md) | New Members |
