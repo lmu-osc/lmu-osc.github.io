@@ -8,7 +8,7 @@ Faculty of Psychology & Education
 
 [vanshika.gautam@campus.lmu.de](mailto:vanshika.gautam@campus.lmu.de)
 
-[](https://orcid.org/0009-0007-3510-5063) [](https://github.com/vanshikagautam)
+[](https://github.com/vanshikagautam) [](https://orcid.org/0009-0007-3510-5063)
 
 ## Mission Statement
 

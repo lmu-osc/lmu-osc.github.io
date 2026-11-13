@@ -69,6 +69,14 @@ Keep up to date with our latest news releases, and upcoming events.
 
 News [View All News](news/index.llms.md)
 
+###### Nov 12, 2026
+
+##### [There Is More Than One Way to Share Clinical Trial Data](news/news/2026-11-12-clinical-data-sharing.llms.md)
+
+How to deal with sensitive data sharing? it’s not an all or nothing decision! OSC member Ulrich Mansmann advocates for a more granular approach.
+
+[Read More →](news/news/2026-11-12-clinical-data-sharing.llms.md)
+
 ###### Oct 27, 2026
 
 ##### [Improving Computational Reproducibility](news/news/2026-10-27-computational-reproducibility.llms.md)
@@ -84,14 +92,6 @@ OSC Members co-authored an article highlighting the significance of computationa
 Johan Duchêne advocates for stricter antibody validation processes to increase reproducibility in biomedical research.
 
 [Read More →](news/news/2026-10-09-better-antibodies-duchene.llms.md)
-
-###### Sep 29, 2026
-
-##### [OSF project functionality - alternatives for organizing and sharing research materials](news/news/2026-09-29-osf-project-functionality.llms.md)
-
-OSF Projects are being phased out as active workspaces. Here’s what researchers need to know and what alternatives are available.
-
-[Read More →](news/news/2026-09-29-osf-project-functionality.llms.md)
 
 Events [View All Events](events/index.llms.md)
 

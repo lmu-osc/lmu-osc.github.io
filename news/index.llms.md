@@ -2,6 +2,7 @@
 
 | Date | Title | Categories |
 |----|----|----|
+| Nov 12, 2026 | [There Is More Than One Way to Share Clinical Trial Data](../news/news/2026-11-12-clinical-data-sharing.llms.md) | Publications |
 | Oct 27, 2026 | [Improving Computational Reproducibility](../news/news/2026-10-27-computational-reproducibility.llms.md) | Publications |
 | Oct 9, 2026 | [Better antibodies, better science](../news/news/2026-10-09-better-antibodies-duchene.llms.md) | Publications |
 | Sep 29, 2026 | [OSF project functionality - alternatives for organizing and sharing research materials](../news/news/2026-09-29-osf-project-functionality.llms.md) | Announcement |
