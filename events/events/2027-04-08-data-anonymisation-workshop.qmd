@@ -1,24 +1,24 @@
 ---
-title: Event Title Here
-date: YYYY-MM-DD        # e.g. "2026-09-24"
-categories: ['Discussion', 'Hacky Hour', 'ReproducibiliTea Journal Club', 'Workshop', 'Lecture', 'Symposium', 'Conference', 'Summer School', 'Panel Discussion Series', 'Application call']
+title: Data Anonymisation and Synthetic Data Workshop
+date: 2027-04-08        # e.g. "2026-09-24"
+categories: ['Workshop']
 
 # Event Information
 event:
-  start_date: YYYY-MM-DD        # e.g. "2026-09-24"
-  end_date: YYYY-MM-DD     # e.g. "2026-09-24", non-mandatory field
+  start_date: 2027-04-08        # e.g. "2026-09-24"
+  end_date: 2027-04-09     # e.g. "2026-09-24", non-mandatory field
   time: "START-END CET"           # e.g. "14:00 - 17:00 CET"
   description: |
-    Longer overview text for the event detail page. That is, the content here displays on the event page. You can use markdown formatting here to structure the content, add links, images, etc. 
+    This two-day hands-on workshop will introduce participants to legal and practical aspects of sharing research data while protecting privacy and confidentiality. It will cover GDPR compliance and related legal considerations, followed by practical introductions to two approaches: **data anonymisation** and **synthetic data generation**. 
   
   card_description: |
-    "SHORT DESCRIPTION OF THE EVENT. This will appear in the event card on the main Events page. Keep it concise and engaging to attract attendees. MAX 2-3 SENTENCES."
+    Learn to share sensitive research data safely and legally at this two-day hands-on workshop at LMU Munich. Through guided tutorials in R, you will master GDPR compliance, **data anonymisation**, and **synthetic data generation**, ending with dedicated support to apply these methods to your own project.
   location:
     name: "BUILDING NAME, ROOM NAME"    # e.g. "LMU Main Building, Room 123"
     address: "ADDRESS"                  # e.g. "Ludwigstraße 25, 80539 München, Germany"
     map_url: "GOOGLE MAPS URL"          # e.g. "https://goo.gl/maps/xyz"
   format:
-    type: "EVENTTYPE"               # Primary type e.g. "In-person", "Online", "Hybrid"  
+    type: "In-person"               # Primary type e.g. "In-person", "Online", "Hybrid"  
     detail: "FORMATDETAILS"    # e.g. "In-person & Online", non-mandatory field
   language:
     primary: "English"
@@ -34,14 +34,18 @@ links:
   materials: "WORKSHOP MATERIALS URL"    
   workshop_website: "WORKSHOP WEBSITE URL"   # e.g. "https://lmu-osc.github.io/introduction-to-renv/"
 
-# Event Description: appears in the Event card an optionally in the Event page itself
+# Event Description:|
+
 # Add as many instructors as needed in the format below
 instructors:
-  - name: "INSTRUCTOR 1 NAME"
-    url: "LMU OSC PROFILE OR PERSONAL WEBSITE URL"
-  - name: "INSTRUCTOR 2 NAME"
-    url: "LMU OSC PROFILE OR PERSONAL WEBSITE URL"
-
+  - name: "Luisa Jansen"
+    url: "https://luisajansen.github.io/"
+  - name: "Thom Volker"
+    url: "https://thomvolker.github.io/"
+  - name: "Alyssa Columbus"
+    url: "https://alyssacolumbus.com/"
+  - name: "Felix Schönbrodt"
+    url: "https://www.nicebread.de/"
 
 # Add as many helpers as needed in the format below
 helpers: 
