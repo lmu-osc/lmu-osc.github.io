@@ -95,6 +95,14 @@ Johan Duchêne advocates for stricter antibody validation processes to increase 
 
 Events [View All Events](events/index.llms.md)
 
+###### In-person · Dec 17, 2026
+
+##### [Connecting Science and Society: Effective Strategies for Science Communication and Public Engagement of Psychological Science](events/events/2026-12-17-metarep-science-communication.llms.md)
+
+Explore how to communicate research clearly and responsibly, engage different audiences, and work with journalists and the public. In this two-day interactive workshop with Dr. Marie Luise Schreiter, participants develop a science communication or public-engagement idea based on their own research.
+
+[See Event →](events/events/2026-12-17-metarep-science-communication.llms.md)
+
 ###### In-Person · Mar 15, 2027
 
 ##### [Keynote opening lecture: Modelling and Communicating Scientific Uncertainty](events/events/2027-03-15-keynote-lecture-scientific-uncertainty.llms.md)

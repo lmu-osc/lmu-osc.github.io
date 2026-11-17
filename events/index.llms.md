@@ -2,6 +2,28 @@
 
 ## Upcoming Events
 
+[Connecting Science and Society: Effective Strategies for Science Communication and Public Engagement of Psychological Science](../events/events/2026-12-17-metarep-science-communication.llms.md) [Connecting Science and Society: Effective Strategies for Science Communication and Public Engagement of Psychological Science](../events/events/2026-12-17-metarep-science-communication.llms.md) Workshop
+
+[![Workshop](../events/images/workshop.svg)](../events/events/2026-12-17-metarep-science-communication.llms.md)
+
+###### 17 Dec, 2026
+
+###### 17-18 Dec, 2026
+
+######  09:00–17:00 CET (both days) \|  LMU Munich \|  In-person \|  English
+
+######  09:00–17:00 CET (both days) \|  In-person \|  English
+
+Explore how to communicate research clearly and responsibly, engage different audiences, and work with journalists and the public. In this two-day interactive workshop with Dr. Marie Luise Schreiter, participants develop a science communication or public-engagement idea based on their own research.
+
+Organizers: META-REP Priority Program
+
+Instructors: Dr. Marie Luise Schreiter
+
+Questions? Contact [Moritz Schiltenwolf](mailto:meta-rep.coordination@psy.lmu.de)
+
+[Read More](../events/events/2026-12-17-metarep-science-communication.llms.md)
+
 [Keynote opening lecture: Modelling and Communicating Scientific Uncertainty](../events/events/2027-03-15-keynote-lecture-scientific-uncertainty.llms.md) [Keynote opening lecture: Modelling and Communicating Scientific Uncertainty](../events/events/2027-03-15-keynote-lecture-scientific-uncertainty.llms.md) Lecture
 
 [![Lecture](../events/images/lecture.svg)](../events/events/2027-03-15-keynote-lecture-scientific-uncertainty.llms.md)
