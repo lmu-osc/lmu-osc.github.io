@@ -862,16 +862,6 @@ Dr.
 
 Social Sciences
 
-[](https://orcid.org/0000-0002-8149-0747)
-
-![Profile of Christian Schulz](people/images/schulz_christian.jpg)
-
-Christian Schulz
-
-Prof. Dr.
-
-University Hospital
-
 [](https://orcid.org/0000-0001-8188-380X)
 
 ![Profile of Enrico Schulz](people/images/schulz_enrico.jpg)
@@ -879,6 +869,16 @@ University Hospital
 Enrico Schulz
 
 Dr.
+
+University Hospital
+
+[](https://orcid.org/0000-0002-8149-0747)
+
+![Profile of Christian Schulz](people/images/schulz_christian.jpg)
+
+Christian Schulz
+
+Prof. Dr.
 
 University Hospital
 
@@ -1970,16 +1970,6 @@ Faculty: Social Sciences
 
 [View Profile](../people/people/julia-schulte-cloos.llms.md)
 
-![Profile of Christian Schulz](people/images/schulz_christian.jpg) Christian Schulz
-
-[](https://orcid.org/0000-0002-8149-0747)
-
-Title: Prof. Dr.
-
-Faculty: University Hospital
-
-[View Profile](../people/people/christian-schulz.llms.md)
-
 ![Profile of Enrico Schulz](people/images/schulz_enrico.jpg) Enrico Schulz
 
 [](https://orcid.org/0000-0001-8188-380X)
@@ -1989,6 +1979,16 @@ Title: Dr.
 Faculty: University Hospital
 
 [View Profile](../people/people/enrico-schulz.llms.md)
+
+![Profile of Christian Schulz](people/images/schulz_christian.jpg) Christian Schulz
+
+[](https://orcid.org/0000-0002-8149-0747)
+
+Title: Prof. Dr.
+
+Faculty: University Hospital
+
+[View Profile](../people/people/christian-schulz.llms.md)
 
 ![Profile of Carsten Schwemmer](people/images/schwemmer_carsten.jpg) Carsten Schwemmer
 
