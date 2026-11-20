@@ -44,12 +44,13 @@ instructors:
   - #name: "HELPER 2 NAME"
 
 # Contact Information
-#contact:
-  #name: "CONTACT PERSON OR GROUP NAME"
-  #email: "CONTACT EMAIL ADDRESS"
+contact:
+  name: "Malika Ihle"
+  email: "malika.ihle@psy.lmu.de"
 
-# Organizers can be individuals or institutions
-organizers:
+
+
+host:
   - name: "LMU Open Science Center"
   - name: "SHARP"
 template: templates/event-template.html
