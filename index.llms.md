@@ -103,6 +103,14 @@ Explore how to communicate research clearly and responsibly, engage different au
 
 [See Event →](events/events/2026-12-17-metarep-science-communication.llms.md)
 
+###### Hybrid · Feb 26, 2027
+
+##### [Get started with Preregistration - What, Why and How?](events/events/2027-02-26-preregistratation-workshop.llms.md)
+
+What is preregistration? How do I do that well? Learn how to preregister and why, and debate the benefits and limitations of this practice. -- save the date. registration tba --
+
+[See Event →](events/events/2027-02-26-preregistratation-workshop.llms.md)
+
 ###### In-Person · Mar 15, 2027
 
 ##### [Keynote opening lecture: Modelling and Communicating Scientific Uncertainty](events/events/2027-03-15-keynote-lecture-scientific-uncertainty.llms.md)
