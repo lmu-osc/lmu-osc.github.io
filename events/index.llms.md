@@ -24,6 +24,26 @@ Questions? Contact [Moritz Schiltenwolf](mailto:meta-rep.coordination@psy.lmu.de
 
 [Read More](../events/events/2026-12-17-metarep-science-communication.llms.md)
 
+[Get started with Preregistration - What, Why and How?](../events/events/2027-02-26-preregistratation-workshop.llms.md) [Get started with Preregistration - What, Why and How?](../events/events/2027-02-26-preregistratation-workshop.llms.md) Workshop
+
+[![Workshop](../events/images/workshop.svg)](../events/events/2027-02-26-preregistratation-workshop.llms.md)
+
+###### 26 Feb, 2027
+
+###### 26 Feb, 2027
+
+######  14:00-17:00 CET \|  Leo 13, 3322 \|  Hybrid \|  English
+
+######  14:00-17:00 CET \|  Hybrid \|  English
+
+What is preregistration? How do I do that well? Learn how to preregister and why, and debate the benefits and limitations of this practice. -- save the date. registration tba --
+
+Organizers: LMU Open Science Center SHARP
+
+Instructors: Malika Ihle
+
+[Read More](../events/events/2027-02-26-preregistratation-workshop.llms.md)
+
 [Keynote opening lecture: Modelling and Communicating Scientific Uncertainty](../events/events/2027-03-15-keynote-lecture-scientific-uncertainty.llms.md) [Keynote opening lecture: Modelling and Communicating Scientific Uncertainty](../events/events/2027-03-15-keynote-lecture-scientific-uncertainty.llms.md) Lecture
 
 [![Lecture](../events/images/lecture.svg)](../events/events/2027-03-15-keynote-lecture-scientific-uncertainty.llms.md)
