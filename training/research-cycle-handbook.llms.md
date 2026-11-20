@@ -42,7 +42,7 @@ This program is designed to:
 ##### How to cite our handbook
 
 Our handbook and other material are licensed [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.en). Please feel free to reuse, adapt, and share openly by citing\
-**Ihle Malika, Gupta Reema, Schönbrodt Felix, April 2026, Open Research Cycle Handbook <https://osc.lmu.de/training/research-cycle-handbook.html> CC-BY-SA 4.0 LMU Open Science Center**
+**Ihle Malika, Gupta Reema, Schönbrodt Felix, October 2026, Open Research Cycle Handbook <https://doi.org/10.5281/zenodo.23591648> CC-BY-SA 4.0 LMU Open Science Center**
 
 ##### Acknowledgements
 
