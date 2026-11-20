@@ -27,3 +27,7 @@ This workshop introduces preregistration and registered reports, covering their 
 #### Instructors
 
 - [Malika Ihle](https://www.osc.lmu.de/people/people/malika-ihle.html)
+
+#### Questions?
+
+If you have any questions, please contact [Malika Ihle](mailto:malika.ihle@psy.lmu.de).
