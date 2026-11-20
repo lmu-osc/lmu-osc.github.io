@@ -2,6 +2,7 @@
 
 | Date | Title | Categories |
 |----|----|----|
+| Nov 20, 2026 | [From Open Access to Open Science](../news/news/2026-11-20-open-access-analysis.llms.md) | Publications |
 | Nov 12, 2026 | [There Is More Than One Way to Share Clinical Trial Data](../news/news/2026-11-12-clinical-data-sharing.llms.md) | Publications |
 | Oct 27, 2026 | [Improving Computational Reproducibility](../news/news/2026-10-27-computational-reproducibility.llms.md) | Publications |
 | Oct 9, 2026 | [Better antibodies, better science](../news/news/2026-10-09-better-antibodies-duchene.llms.md) | Publications |
