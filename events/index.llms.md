@@ -38,9 +38,11 @@ Questions? Contact [Moritz Schiltenwolf](mailto:meta-rep.coordination@psy.lmu.de
 
 What is preregistration? How do I do that well? Learn how to preregister and why, and debate the benefits and limitations of this practice. -- save the date. registration tba --
 
-Organizers: LMU Open Science Center SHARP
-
 Instructors: Malika Ihle
+
+Hosts: LMU Open Science Center SHARP
+
+Questions? Contact [Malika Ihle](mailto:malika.ihle@psy.lmu.de)
 
 [Read More](../events/events/2027-02-26-preregistratation-workshop.llms.md)
 
