@@ -28,7 +28,7 @@ event:
     **Prerequisites:** R proficiency
   
   card_description: |
-    Learn to share sensitive research data safely and legally at this two-day hands-on workshop. Through guided tutorials in R, you will master GDPR compliance, data anonymization, and synthetic data generation, ending with dedicated support to apply these methods to your own project.
+    -- save the date -- Learn to share sensitive research data safely and legally at this two-day hands-on workshop. Through guided tutorials in R, you will master GDPR compliance, data anonymization, and synthetic data generation, ending with dedicated support to apply these methods to your own project.
   location:
     name: "LMU Munich"    # e.g. "LMU Main Building, Room 123"
     address: ""                  # e.g. "Ludwigstraße 25, 80539 München, Germany"
@@ -51,6 +51,18 @@ instructors:
     url: "https://alyssacolumbus.com/"
   - name: "Felix Schönbrodt"
     url: "https://www.nicebread.de/"
+    
+    
+# Organizers can be individuals or institutions
+organizers:
+  - name: "Malika Ihle"
+
+host:
+- name: LMU Open Science Center
+
+contact:
+  name: Malika Ihle
+  email: malika.ihle@lmu.de
 
 template: templates/event-template.html
 filters:
