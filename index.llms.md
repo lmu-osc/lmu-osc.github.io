@@ -69,6 +69,14 @@ Keep up to date with our latest news releases, and upcoming events.
 
 News [View All News](news/index.llms.md)
 
+###### Nov 20, 2026
+
+##### [From Open Access to Open Science](news/news/2026-11-20-open-access-analysis.llms.md)
+
+Isn't Open Access enough? OSC members Markus Gebhardt and Nikola Ebenbeck urge and instruct their research field to take the next steps towards Open Science.
+
+[Read More →](news/news/2026-11-20-open-access-analysis.llms.md)
+
 ###### Nov 12, 2026
 
 ##### [There Is More Than One Way to Share Clinical Trial Data](news/news/2026-11-12-clinical-data-sharing.llms.md)
@@ -84,14 +92,6 @@ How to deal with sensitive data sharing? it’s not an all or nothing decision! 
 OSC Members co-authored an article highlighting the significance of computational reproducibility for scientists and the scientific community and giving recommendations for effective workflows.
 
 [Read More →](news/news/2026-10-27-computational-reproducibility.llms.md)
-
-###### Oct 9, 2026
-
-##### [Better antibodies, better science](news/news/2026-10-09-better-antibodies-duchene.llms.md)
-
-Johan Duchêne advocates for stricter antibody validation processes to increase reproducibility in biomedical research.
-
-[Read More →](news/news/2026-10-09-better-antibodies-duchene.llms.md)
 
 Events [View All Events](events/index.llms.md)
 

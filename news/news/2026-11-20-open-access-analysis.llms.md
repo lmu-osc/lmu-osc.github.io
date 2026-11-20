@@ -1,0 +1,23 @@
+# From Open Access to Open Science
+
+November 20, 2026
+
+------------------------------------------------------------------------
+
+Making articles openly publicly accessible to read is only a small step on the path towards open science.
+
+LMU Open Science Center Members [Markus Gebhardt](https://www.osc.lmu.de/people/people/markus-gebhardt.html) and [Nikola Ebenbeck](https://www.osc.lmu.de/people/people/nikola-ebenbeck.html) recently co-authored a paper, underscoring the importance of open research practices and the current deficiencies of implementation in **Educational Research**. They examined thousands of Open Access articles, analyzing how many implemented Open Science standards, such as **open data, open code and open material**, which are necessary to fully understand and to reproduce or replicate studies. The authors structured their findings into fields of research and differed between qualitative, mixed and quantitative educational research. Finding that only ~1.4% of the articles are linked to associated open research outputs, the authors urge educational researchers to take a step further **from Open Access to Open Science**.
+
+This includes careful implementation of Open Sciences practices in every step of research, in order to make research accessible, understandable, and replicable to others.
+
+### Read the article here:
+
+[The Gap Between Open Access and Open Science in Education Research. A Repository-Based Analysis of Data, Code, and Materials Sharing in Open-Access Papers \| Journal of Open Research in Education](https://openjournals.fachportal-paedagogik.de/jore/article/view/174)
+
+## Guidelines
+
+Gebhardt and Ebenbeck also published a practical guide on how to integrate Open Science throughout the empirical quantitative education research process, using reproducible workflows and tools such as R, Quarto, and GitHub, while addressing transparency, data management, ethical considerations and data protection.
+
+### Access the guideline here:
+
+[Ein Praxisleitfaden für Open Research in Pädagogik](https://epub.ub.uni-muenchen.de/138512/)

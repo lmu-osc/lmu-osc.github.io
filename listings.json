@@ -2,6 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
+      "/news/news/2026-11-20-open-access-analysis.html",
       "/news/news/2026-11-12-clinical-data-sharing.html",
       "/news/news/2026-10-27-computational-reproducibility.html",
       "/news/news/2026-10-09-better-antibodies-duchene.html",
@@ -625,21 +626,38 @@
     ]
   },
   {
-    "listing": "/partners/other-lmu-support-services.html",
+    "listing": "/partners/external-partners.html",
     "items": []
   },
   {
-    "listing": "/partners/funders.html",
+    "listing": "/partners/funding-institutional-members.html",
     "items": []
   },
   {
-    "listing": "/partners/affiliate-institutional-members.html",
-    "items": []
-  },
-  {
-    "listing": "/training/publishing-outputs/index.html",
+    "listing": "/training/principles/index.html",
     "items": [
-      "/training/publishing-outputs/open-access-preprints-postprints.html"
+      "/training/principles/replicability-crisis.html",
+      "/training/principles/credible-science.html",
+      "/training/principles/assessing-research-replicability.html"
+    ]
+  },
+  {
+    "listing": "/training/reproducible-processes/index.html",
+    "items": [
+      "/training/reproducible-processes/reproducible-protocols.html",
+      "/training/reproducible-processes/advanced-git.html",
+      "/training/reproducible-processes/readable-code.html"
+    ]
+  },
+  {
+    "listing": "/training/study-planning/index.html",
+    "items": []
+  },
+  {
+    "listing": "/training/data-management/index.html",
+    "items": [
+      "/training/data-management/open-data.html",
+      "/training/data-management/maintaining-privacy-with-open-data.html"
     ]
   },
   {
@@ -662,43 +680,27 @@
     ]
   },
   {
-    "listing": "/training/data-management/index.html",
+    "listing": "/training/publishing-outputs/index.html",
     "items": [
-      "/training/data-management/open-data.html",
-      "/training/data-management/maintaining-privacy-with-open-data.html"
+      "/training/publishing-outputs/open-access-preprints-postprints.html"
     ]
   },
   {
-    "listing": "/training/study-planning/index.html",
+    "listing": "/partners/affiliate-institutional-members.html",
     "items": []
   },
   {
-    "listing": "/training/reproducible-processes/index.html",
-    "items": [
-      "/training/reproducible-processes/reproducible-protocols.html",
-      "/training/reproducible-processes/advanced-git.html",
-      "/training/reproducible-processes/readable-code.html"
-    ]
-  },
-  {
-    "listing": "/training/principles/index.html",
-    "items": [
-      "/training/principles/replicability-crisis.html",
-      "/training/principles/credible-science.html",
-      "/training/principles/assessing-research-replicability.html"
-    ]
-  },
-  {
-    "listing": "/partners/funding-institutional-members.html",
+    "listing": "/partners/funders.html",
     "items": []
   },
   {
-    "listing": "/partners/external-partners.html",
+    "listing": "/partners/other-lmu-support-services.html",
     "items": []
   },
   {
     "listing": "/news/index.html",
     "items": [
+      "/news/news/2026-11-20-open-access-analysis.html",
       "/news/news/2026-11-12-clinical-data-sharing.html",
       "/news/news/2026-10-27-computational-reproducibility.html",
       "/news/news/2026-10-09-better-antibodies-duchene.html",
