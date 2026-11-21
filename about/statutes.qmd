@@ -1,128 +1,21 @@
 ---
 title: "Statute"
+body-classes: about-detail-page about-statutes-page
 format: 
   html:
-    grid:
-      sidebar-width: 100px
-      body-width: 1050px
-      margin-width: 200px
+    css: about.css
     toc: false
     page-layout: full
 ---
 
-<style>
-  /* css styles */
-:root {
-    --primary-color: #00883A;
-    --primary-light: rgba(43, 134, 75, 0.1);
-    --text-dark: #333333;
-    --text-light: #ffffff;
-    --osc-white: #ffffff;
-    --text-light: #5f5f5f;
-    --lmu-black: #232323;
-  }
-  
-#quarto-content.page-columns main.column-page{
-    margin:0 auto;
-    max-width: 1200px;
-    padding: 2rem;
-    width:100%;
-    /*background-color: #f9fcf9*/
-}
 
+:::{.statute-container .about-detail-container}
 
-.statute-container {
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin-bottom: 1rem;
-    background-color:var(--osc-white);
-}
+::: {.callout-note appearance="simple"}
 
-.statute-title h3{
-    font-size: 2.3rem;
-    font-weight: 900;
-    line-height: 1.5;
-    color:var(--primary-color);
-}
-
-h4{
-    font-size: 1.1rem;
-    line-height: 1.5;
-    font-weight: 600; 
-    color: #525252;
-}
-
-.statute-container p,
-.statute-container li {
-    text-align: justify;
-    font-size: 1rem;
-    line-height: 1.85;
-    font-weight:400;
-    color: var(--text-light);
-}
-.statute-container p{
-    padding: 0 1rem;
-}
-
-.osc-stat-note {
-    background-color: #00883A10;
-    position: relative;
-    padding: 0.3rem;
-    border: 1px solid #277c4542;
-    border-radius: 6px;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    width:50%;
-}
-
-.osc-stat-note__icon {
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    position: absolute;
-    top: -16px;
-    right: 3px;
-    color: #277c45;
-    background-color: #47b66d33;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.osc-stat-note__icon i {
-    font-size: 20px;
-}
-
-.osc-stat-note__text {
-    margin-top: 0;
-    font-size: 0.9rem;
-    font-weight: 400;
-    color: var(--primary-color);
-}
-
-
-</style>
-
-:::{.statute-container}
-
-:::{.statute-title}
-### OSC Statute
+This statute only exists in German.
 :::
 
-```{=html}
-<div class="osc-stat-note">
-    <div class="osc-stat-note__text">
-        <i>
-        This statute only exists in German.
-        </i>
-    </div>
-        <div class="osc-stat-note__icon">
-        <i class="bi bi-info-circle"></i>
-    </div>
-</div>
-```
 #### § 1 Organisationsform und Sitz
  1. Gemäß Beschluss der Hochschulleitung vom 22.11.2017 wird auf Vorschlag der Versammlung der Gründungsmitglieder an der Ludwig-Maximilians-Universität München (LMU) das LMU Open Science Center (OSC) errichtet.
  2. Das OSC ist eine von der LMU getragene, nicht rechtsfähige Arbeitsgemeinschaft von Wissenschaftlerinnen und Wissenschaftlern, insbesondere der LMU. Haushaltstechnisch ist das OSC dem Department Psychologie zugeordnet.

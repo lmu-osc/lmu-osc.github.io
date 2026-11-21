@@ -1,0 +1,62 @@
+.events-list .card-header a {
+  text-decoration: none;
+  color: var(--osc-accent);
+}
+
+.events-list .card-header a:hover {
+  text-decoration: underline;
+}
+
+.events-list .card-text-clamp,
+.events-list .card-title-clamp {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.events-list .card-text-clamp {
+  -webkit-line-clamp: 4;
+}
+
+.events-list .card-title-clamp {
+  -webkit-line-clamp: 2;
+}
+
+.events-list .trainingurl {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  margin: 0.2em 0 0.3em 0;
+  border: 1px solid var(--osc-accent-secondary);
+  width: fit-content;
+  padding: 0 0.30em;
+  border-radius: 5px;
+  background:rgba(166, 200, 113,0.8);
+  color: white;
+}
+
+.events-list .trainingurl a {
+  color: #000000;
+  text-decoration: none;
+}
+.events-list .trainingurl:hover,
+.events-list .trainingurl:focus-within {
+  color:var(--osc-accent);
+}
+
+#toc-title {
+  font-size: 1.1em;
+}
+
+#quarto-margin-sidebar .quarto-listing-category-title {
+  font-size: 1.1em;
+}
+
+#quarto-margin-sidebar .quarto-listing-category {
+  margin-left: 0.3rem;
+  padding-left: 0.7rem;
+  border-left: 1px solid var(--osc-accent-secondary);
+  line-height: 1;
+  font-size: 0.9em;
+  font-weight: 300;
+}

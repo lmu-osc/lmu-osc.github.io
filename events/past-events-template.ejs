@@ -126,7 +126,7 @@
 
     <div class="col-md-10">
       <div class="card-body">
-        <h6 class="card-subtitle mb-2 listing-date" style="display:none;"><%- item.event && item.event.start_date ? formatDate(item.event.start_date) : '' %></h6>
+        <h6 class="card-subtitle mb-2 listing-date d-none"><%- item.event && item.event.start_date ? formatDate(item.event.start_date) : '' %></h6>
         <h6 class="card-subtitle mb-2"><%- dateText %></h6>
         <% if (item.event) { 
              let infosFull = [];
@@ -171,7 +171,7 @@
 
         <div class="card-text">
           <% if (validOrganizers.length > 0) { %>
-            <div class="d-flex flex-wrap align-items-center gap-2 mt-2 d-none d-md-block">
+            <div class="flex-wrap align-items-center gap-2 mt-2 d-none d-md-flex">
               <span class="small text-body-secondary fw-semibold text-nowrap">Organizers:</span>
               <% for (const org of validOrganizers) { %>
                 <span class="badge rounded-pill text-bg-light border text-dark text-wrap"><%- typeof org === 'string' ? org : (org.name || org.abbreviation) %></span>
@@ -180,7 +180,7 @@
           <% } %>
           
           <% if (validPresenters.length > 0) { %>
-            <div class="d-flex flex-wrap align-items-center gap-2 mt-2 d-none d-md-block">
+            <div class="flex-wrap align-items-center gap-2 mt-2 d-none d-md-flex">
               <span class="small text-body-secondary fw-semibold text-nowrap">Presenters:</span>
               <% for (const pres of validPresenters) { %>
                 <span class="badge rounded-pill text-bg-light border text-dark text-wrap"><%- typeof pres === 'string' ? pres : (pres.name || pres.abbreviation) %></span>
@@ -189,7 +189,7 @@
           <% } %>
 
           <% if (validInstructors.length > 0) { %>
-            <div class="d-flex flex-wrap align-items-center gap-2 mt-2 d-none d-md-block">
+            <div class="flex-wrap align-items-center gap-2 mt-2 d-none d-md-flex">
               <span class="small text-body-secondary fw-semibold text-nowrap">Instructors:</span>
               <% for (const inst of validInstructors) { %>
                 <span class="badge rounded-pill text-bg-light border text-dark text-wrap"><%- typeof inst === 'string' ? inst : (inst.name || inst.abbreviation) %></span>
@@ -198,7 +198,7 @@
           <% } %>
 
           <% if (validHelpers.length > 0) { %>
-            <div class="d-flex flex-wrap align-items-center gap-2 mt-2 d-none d-md-block">
+            <div class="flex-wrap align-items-center gap-2 mt-2 d-none d-md-flex">
               <span class="small text-body-secondary fw-semibold text-nowrap">Helpers:</span>
               <% for (const helper of validHelpers) { %>
                 <span class="badge rounded-pill text-bg-light border text-dark text-wrap"><%- typeof helper === 'string' ? helper : (helper.name || helper.abbreviation) %></span>

@@ -3,8 +3,8 @@
     <% items.forEach((item, index)=> { %>
         <div class="row g-4 align-items-stretch pt-3 pb-1">
             <div class="col-lg-4 d-flex">
-                <div class="card border-light-subtle shadow-sm p-3 rounded text-center w-100 member-grid-item">
-                    <img src="<%= item.image_url %>" alt="<%= item.name %>" class="member-grid-image mb-2">
+                <div class="card border-light-subtle shadow-sm p-3 rounded text-center w-100 overflow-hidden member-grid-item">
+                    <img src="<%= item.image_url %>" alt="<%= item.name %>" class="member-grid-image mb-2 rounded-0 border-0 flex-shrink-0">
                     <div class="card-body flex-grow-1">
                         <h5 class="card-title">
                             <%= item.name %>
@@ -63,7 +63,7 @@
                                         <% }) %>
                                             <% } %>
                                                 <% if(item.description) { %>
-                                                    <div class="description-text mt-2">
+                                                    <div class="description-text mt-2 overflow-hidden">
                                                         <%= item.description %>
                                                     </div>
                                                     <% } %>
