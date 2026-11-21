@@ -109,9 +109,9 @@
         <% carouselItems.forEach((item, index) => { %>
         <div class="carousel-item <%= index === 0 ? 'active' : '' %>">
           <% if (isPast(item)) { %>
-          <h6 class="card-subtitle mb-2 text-body-secondary" style="font-size:0.87rem;background: rgba(134, 112, 112, 0.18); border-color: rgba(134, 112, 112, 0.36); color: #5a4747 !important;">Past Event &middot; <%- getEventType(item) %> &middot; <%= formatEventDate(item) %></h6>
+          <h6 class="card-subtitle mb-2 text-body-secondary" style="font-size:0.87rem;background: rgba(134, 112, 112, 0.18); border-color: rgba(134, 112, 112, 0.36); color: #5a4747 !important;">Past Event • <%- getEventType(item) %> • <%= formatEventDate(item) %></h6>
           <% } else { %>
-          <h6 class="card-subtitle mb-2 text-body-secondary" style="font-size:0.87rem;"><%- getEventType(item) %> &middot; <%= formatEventDate(item) %></h6>
+          <h6 class="card-subtitle mb-2 text-body-secondary" style="font-size:0.87rem;"><%- getEventType(item) %> • <%= formatEventDate(item) %></h6>
           <% } %>
           <h5 class="card-title"><a href="<%- item.path %>" class="carousel-title-link" aria-label="Open event item: <%- item.title %>"><%- item.title %></a></h5>
           <p class="card-text"><%- getEventDescription(item) %></p>
