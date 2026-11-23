@@ -90,6 +90,30 @@ Questions? Contact [Center for Advanced Studies LMU](mailto:info@cas.lmu.de)
 
 [Read More](../events/events/2027-03-16-symposium-scientific-uncertainty.llms.md)
 
+[Data Anonymization and Synthetic Data Workshop](../events/events/2027-04-08-data-anonymisation-workshop.llms.md) [Data Anonymization and Synthetic Data Workshop](../events/events/2027-04-08-data-anonymisation-workshop.llms.md) Workshop
+
+[![Workshop](../events/images/workshop.svg)](../events/events/2027-04-08-data-anonymisation-workshop.llms.md)
+
+###### 08 Apr, 2027
+
+###### 08-09 Apr, 2027
+
+######  LMU Munich \|  In-person \|  English
+
+######  In-person \|  English
+
+-- save the date -- Learn to share sensitive research data safely and legally at this two-day hands-on workshop. Through guided tutorials in R, you will master GDPR compliance, data anonymization, and synthetic data generation, ending with dedicated support to apply these methods to your own project.
+
+Organizers: Malika Ihle
+
+Instructors: Luisa Jansen Thom Volker Alyssa Columbus Felix Schönbrodt
+
+Hosts: LMU Open Science Center
+
+Questions? Contact [Malika Ihle](mailto:malika.ihle@lmu.de)
+
+[Read More](../events/events/2027-04-08-data-anonymisation-workshop.llms.md)
+
 [2nd Interdisciplinary Symposium on Meta Science for Methods Research](../events/events/2027-08-30-conference-metascience-methods-research.llms.md) [2nd Interdisciplinary Symposium on Meta Science for Methods Research](../events/events/2027-08-30-conference-metascience-methods-research.llms.md) Conference
 
 [![Conference](../events/images/conference.svg)](../events/events/2027-08-30-conference-metascience-methods-research.llms.md)

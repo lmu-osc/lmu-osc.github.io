@@ -127,6 +127,14 @@ Open scientific comminication vs. trustworthiness of scientific research? Join t
 
 [See Event →](events/events/2027-03-16-symposium-scientific-uncertainty.llms.md)
 
+###### In-person · Apr 8, 2027
+
+##### [Data Anonymization and Synthetic Data Workshop](events/events/2027-04-08-data-anonymisation-workshop.llms.md)
+
+-- save the date -- Learn to share sensitive research data safely and legally at this two-day hands-on workshop. Through guided tutorials in R, you will master GDPR compliance, data anonymization, and synthetic data generation, ending with dedicated support to apply these methods to your own project.
+
+[See Event →](events/events/2027-04-08-data-anonymisation-workshop.llms.md)
+
 ###### Hybrid · Aug 30, 2027
 
 ##### [2nd Interdisciplinary Symposium on Meta Science for Methods Research](events/events/2027-08-30-conference-metascience-methods-research.llms.md)
