@@ -1,6 +1,6 @@
 # Members
 
-Our 120 members actively support the goals of the OSC and contribute to our activities such as training, community building, meta-research, and liaison with stakeholders. [Join us](../about/join-us.llms.md) .
+Our 121 members actively support the goals of the OSC and contribute to our activities such as training, community building, meta-research, and liaison with stakeholders. [Join us](../about/join-us.llms.md) .
 
 ## LMU Members
 
@@ -672,6 +672,16 @@ Dr.
 
 Math, Informatics & Stats
 
+[](https://orcid.org/0000-0001-7990-3437)
+
+![Profile of Tobias Niedermaier](people/images/tobias-niedermaier.png)
+
+Tobias Niedermaier
+
+Dr.
+
+Medicine
+
 [](https://orcid.org/0000-0001-7638-8310)
 
 ![Profile of Frank Padberg](people/images/padberg_frank.jpg)
@@ -862,16 +872,6 @@ Dr.
 
 Social Sciences
 
-[](https://orcid.org/0000-0001-8188-380X)
-
-![Profile of Enrico Schulz](people/images/schulz_enrico.jpg)
-
-Enrico Schulz
-
-Dr.
-
-University Hospital
-
 [](https://orcid.org/0000-0002-8149-0747)
 
 ![Profile of Christian Schulz](people/images/schulz_christian.jpg)
@@ -879,6 +879,16 @@ University Hospital
 Christian Schulz
 
 Prof. Dr.
+
+University Hospital
+
+[](https://orcid.org/0000-0001-8188-380X)
+
+![Profile of Enrico Schulz](people/images/schulz_enrico.jpg)
+
+Enrico Schulz
+
+Dr.
 
 University Hospital
 
@@ -1780,6 +1790,16 @@ Faculty: Math, Informatics & Stats
 
 [View Profile](../people/people/marcel-neunhoeffer.llms.md)
 
+![Profile of Tobias Niedermaier](people/images/tobias-niedermaier.png) Tobias Niedermaier
+
+[](https://orcid.org/0000-0001-7990-3437)
+
+Title: Dr.
+
+Faculty: Medicine
+
+[View Profile](../people/people/tobias-niedermaier.llms.md)
+
 ![Profile of Frank Padberg](people/images/padberg_frank.jpg) Frank Padberg
 
 [](https://orcid.org/0000-0001-7638-8310)
@@ -1970,16 +1990,6 @@ Faculty: Social Sciences
 
 [View Profile](../people/people/julia-schulte-cloos.llms.md)
 
-![Profile of Enrico Schulz](people/images/schulz_enrico.jpg) Enrico Schulz
-
-[](https://orcid.org/0000-0001-8188-380X)
-
-Title: Dr.
-
-Faculty: University Hospital
-
-[View Profile](../people/people/enrico-schulz.llms.md)
-
 ![Profile of Christian Schulz](people/images/schulz_christian.jpg) Christian Schulz
 
 [](https://orcid.org/0000-0002-8149-0747)
@@ -1989,6 +1999,16 @@ Title: Prof. Dr.
 Faculty: University Hospital
 
 [View Profile](../people/people/christian-schulz.llms.md)
+
+![Profile of Enrico Schulz](people/images/schulz_enrico.jpg) Enrico Schulz
+
+[](https://orcid.org/0000-0001-8188-380X)
+
+Title: Dr.
+
+Faculty: University Hospital
+
+[View Profile](../people/people/enrico-schulz.llms.md)
 
 ![Profile of Carsten Schwemmer](people/images/schwemmer_carsten.jpg) Carsten Schwemmer
 
