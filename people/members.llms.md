@@ -1,6 +1,6 @@
 # Members
 
-Our 120 members actively support the goals of the OSC and contribute to our activities such as training, community building, meta-research, and liaison with stakeholders. [Join us](../about/join-us.llms.md) .
+Our 121 members actively support the goals of the OSC and contribute to our activities such as training, community building, meta-research, and liaison with stakeholders. [Join us](../about/join-us.llms.md) .
 
 ## LMU Members
 
@@ -671,6 +671,16 @@ Marcel Neunhoeffer
 Dr.
 
 Math, Informatics & Stats
+
+[](https://orcid.org/0000-0001-7990-3437)
+
+![Profile of Tobias Niedermaier](people/images/tobias-niedermaier.png)
+
+Tobias Niedermaier
+
+Dr.
+
+Medicine
 
 [](https://orcid.org/0000-0001-7638-8310)
 
@@ -1779,6 +1789,16 @@ Title: Dr.
 Faculty: Math, Informatics & Stats
 
 [View Profile](../people/people/marcel-neunhoeffer.llms.md)
+
+![Profile of Tobias Niedermaier](people/images/tobias-niedermaier.png) Tobias Niedermaier
+
+[](https://orcid.org/0000-0001-7990-3437)
+
+Title: Dr.
+
+Faculty: Medicine
+
+[View Profile](../people/people/tobias-niedermaier.llms.md)
 
 ![Profile of Frank Padberg](people/images/padberg_frank.jpg) Frank Padberg
 
