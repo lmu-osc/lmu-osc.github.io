@@ -69,6 +69,14 @@ Keep up to date with our latest news releases, and upcoming events.
 
 News [View All News](news/index.llms.md)
 
+###### Nov 27, 2026
+
+##### [Reproducibility Recognized In Academic Recruitment At LMU](news/news/2026-11-27-evaluation-criteria-lmu.llms.md)
+
+Reward for Open Science Practices? LMU Department of Psychology considers research transparency and reproducibility when evaluating academic positions.
+
+[Read More →](news/news/2026-11-27-evaluation-criteria-lmu.llms.md)
+
 ###### Nov 20, 2026
 
 ##### [From Open Access to Open Science](news/news/2026-11-20-open-access-analysis.llms.md)
@@ -84,14 +92,6 @@ Isn't Open Access enough? OSC members Markus Gebhardt and Nikola Ebenbeck urge a
 How to deal with sensitive data sharing? it’s not an all or nothing decision! OSC member Ulrich Mansmann advocates for a more granular approach.
 
 [Read More →](news/news/2026-11-12-clinical-data-sharing.llms.md)
-
-###### Oct 27, 2026
-
-##### [Improving Computational Reproducibility](news/news/2026-10-27-computational-reproducibility.llms.md)
-
-OSC Members co-authored an article highlighting the significance of computational reproducibility for scientists and the scientific community and giving recommendations for effective workflows.
-
-[Read More →](news/news/2026-10-27-computational-reproducibility.llms.md)
 
 Events [View All Events](events/index.llms.md)
 
